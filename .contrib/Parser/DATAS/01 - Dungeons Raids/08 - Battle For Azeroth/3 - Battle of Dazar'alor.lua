@@ -428,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						ach(13430),	-- De Lurker Be'loa
 					},
-				}),
+				})),
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {

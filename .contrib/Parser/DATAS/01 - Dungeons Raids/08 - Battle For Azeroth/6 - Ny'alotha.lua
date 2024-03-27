@@ -109,16 +109,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
-				e(2375, {	-- N'Zoth, the Corruptor
-					["crs"] = { 158041 },
-					["g"] = {
-						i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
-							["timeline"] = { ADDED_10_1_5 },
-						}),
-					},
-				}),
-			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
@@ -361,9 +351,108 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 							i(174533),	-- Ring of Cosmic Potential
 							i(174277),	-- Lingering Psychic Shell
 							i(174103),	-- Manifesto of Madness
+							i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
+								["timeline"] = { ADDED_10_1_5 },
+							}),
 							i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
 						},
 					}),
+				}),
+			}),
+			d(NORMAL_PLUS_RAID, {
+				e(2368, {	-- Wrathion, the Black Emperor
+					["crs"] = { 156818 },
+					["g"] = {
+						ach(14019),	-- Smoke Test
+					},
+				}),
+				e(2365, {	-- Maut
+					["crs"] = { 156523 },
+					["g"] = {
+						ach(14008),	-- Mana Sponge
+						i(174446),	-- Muar (PET!)
+					},
+				}),
+				e(2369, {	-- The Prophet Skitra
+					["crs"] = { 157238 },
+					["g"] = {
+						ach(14037),	-- Phase 3: Prophet
+						i(174279),	-- Encrypted Ny'alothan Text
+					},
+				}),
+				e(2377, {	-- Dark Inquisitor Xanesh
+					["crs"] = { 160229, 156575 },
+					["g"] = {
+						ach(14024),	-- Buzzer Beater
+					},
+				}),
+				e(2372, {	-- The Hivemind
+					["crs"] = {
+						157253,	-- Ka'zir
+						157254,	-- Tek'ris
+					},
+					["g"] = {
+						ach(14023),	-- Realizing Your Potential
+						i(174448),	-- Aqir Hivespawn (PET!)
+						i(174449),	-- Ra'kim (PET!)
+					},
+				}),
+				e(2367, {	-- Shad'har the Insatiable
+					["crs"] = { 157231 },
+					["g"] = {
+						ach(13990),	-- You Can Pet the Dog, But...
+					},
+				}),
+				e(2373, {	-- Drest'agath
+					["crs"] = { 157602 },
+					["g"] = {
+						ach(14026),	-- Temper Tantrum
+					},
+				}),
+				e(2370, {	-- Vexiona
+					["crs"] = { 157354 },
+					["g"] = {
+						ach(14139),	-- Total Annihilation
+						i(174279),	-- Encrypted Ny'alothan Text
+					},
+				}),
+				e(2364, {	-- Ra-den the Despoiled
+					["crs"] = { 156866 },
+					["g"] = {
+						ach(13999),	-- Clean up, Aisle 9
+						i(174447),	-- Void-Scarred Anubisath (PET!)
+					},
+				}),
+				e(2364, {	-- Ra-den the Despoiled
+					["crs"] = { 156866 },
+					["g"] = {
+						i(174279),	-- Encrypted Ny'alothan Text
+					},
+				}),
+				e(2374, {	-- Il'gynoth, Corruption Reborn
+					["crs"] = { 158328 },
+					["g"] = {
+						ach(14038),	-- Bloody Mess
+						i(174279),	-- Encrypted Ny'alothan Text
+					},
+				}),
+				e(2366, {	-- Carapace of N'Zoth
+					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
+					["g"] = {
+						ach(14147),	-- Cleansing Treatment
+					},
+				}),
+				e(2375, {	-- N'Zoth, the Corruptor
+					["crs"] = { 158041 },
+					["g"] = {
+						ach(14148),	-- Peer Pressure
+						i(175062),	-- Malefic Core
+						i(174452),	-- Eye of Corruption (PET!)
+						i(174279),	-- Encrypted Ny'alothan Text
+						i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					},
 				}),
 			}),
 			d(NORMAL_RAID, {
@@ -389,7 +478,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
 					["g"] = {
-						ach(14019),	-- Smoke Test
 						i(172185),	-- Destroyer's Shadowblade
 						i(172199),	-- Faralos, Empire's Dream
 						i(174105),	-- Mish'un, Blade of Tyrants
@@ -403,8 +491,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2365, {	-- Maut
 					["crs"] = { 156523 },
 					["g"] = {
-						ach(14008),	-- Mana Sponge
-						i(174446),	-- Muar (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -420,8 +506,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2369, {	-- The Prophet Skitra
 					["crs"] = { 157238 },
 					["g"] = {
-						ach(14037),	-- Phase 3: Prophet
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
 						i(174165),	-- Writhing Spaulders of Madness
@@ -437,7 +521,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2377, {	-- Dark Inquisitor Xanesh
 					["crs"] = { 160229, 156575 },
 					["g"] = {
-						ach(14024),	-- Buzzer Beater
 						i(172196),	-- Vorzz Yoq'al
 						i(172190),	-- Uhnish Vwah
 						i(174169),	-- Gauntlets of Foul Inquisition
@@ -454,9 +537,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						157254,	-- Tek'ris
 					},
 					["g"] = {
-						ach(14023),	-- Realizing Your Potential
-						i(174448),	-- Aqir Hivespawn (PET!)
-						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -470,7 +550,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2367, {	-- Shad'har the Insatiable
 					["crs"] = { 157231 },
 					["g"] = {
-						ach(13990),	-- You Can Pet the Dog, But...
 						i(172186),	-- Warmace of Waking Nightmares
 						i(174107),	-- Insidious Writhing Longbow
 						i(174177),	-- Bracers of Phantom Pains
@@ -484,7 +563,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2373, {	-- Drest'agath
 					["crs"] = { 157602 },
 					["g"] = {
-						ach(14026),	-- Temper Tantrum
 						i(172195),	-- Halsheth, Slumberer's Spear
 						i(172198),	-- Mar'kowa, the Mindpiercer
 						i(174146),	-- Gloves of Abyssal Authority
@@ -499,8 +577,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2370, {	-- Vexiona
 					["crs"] = { 157354 },
 					["g"] = {
-						ach(14139),	-- Total Annihilation
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
 						i(174120),	-- Void Ascendant's Mantle
@@ -512,9 +588,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2364, {	-- Ra-den the Despoiled
 					["crs"] = { 156866 },
 					["g"] = {
-						ach(13999),	-- Clean up, Aisle 9
-						i(174447),	-- Void-Scarred Anubisath (PET!)
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
 						i(174134),	-- Gibbering Maw
@@ -530,8 +603,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2374, {	-- Il'gynoth, Corruption Reborn
 					["crs"] = { 158328 },
 					["g"] = {
-						ach(14038),	-- Bloody Mess
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
 						i(174116),	-- Cowl of Unspeakable Horrors
@@ -548,7 +619,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2366, {	-- Carapace of N'Zoth
 					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 					["g"] = {
-						ach(14147),	-- Cleansing Treatment
 						i(174109),	-- Lurker's Piercing Gaze
 						i(172227),	-- Shard of the Black Empire
 						i(174108),	-- Shgla'yos, Astral Malignity
@@ -565,10 +635,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2375, {	-- N'Zoth, the Corruptor
 					["crs"] = { 158041 },
 					["g"] = {
-						ach(14148),	-- Peer Pressure
-						i(175062),	-- Malefic Core
-						i(174452),	-- Eye of Corruption (PET!)
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
 						i(174167),	-- Greathelm of Phantasmic Reality
@@ -618,7 +684,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2365, {	-- Maut
 					["crs"] = { 156523 },
 					["g"] = {
-						i(174446),	-- Muar (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -634,7 +699,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2369, {	-- The Prophet Skitra
 					["crs"] = { 157238, 157620 },
 					["g"] = {
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
 						i(174165),	-- Writhing Spaulders of Madness
@@ -666,8 +730,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						157254,	-- Tek'ris
 					},
 					["g"] = {
-						i(174448),	-- Aqir Hivespawn (PET!)
-						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -708,7 +770,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2370, {	-- Vexiona
 					["crs"] = { 157354 },
 					["g"] = {
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
 						i(174120),	-- Void Ascendant's Mantle
@@ -720,8 +781,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2364, {	-- Ra-den the Despoiled
 					["crs"] = { 156866 },
 					["g"] = {
-						i(174447),	-- Void-Scarred Anubisath (PET!)
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
 						i(174134),	-- Gibbering Maw
@@ -737,7 +796,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2374, {	-- Il'gynoth, Corruption Reborn
 					["crs"] = { 158328 },
 					["g"] = {
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
 						i(174116),	-- Cowl of Unspeakable Horrors
@@ -776,9 +834,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174863, {	-- Spawn of Vexiona
 							["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
 						}),
-						i(175062),	-- Malefic Core
-						i(174452),	-- Eye of Corruption (PET!)
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
 						i(174167),	-- Greathelm of Phantasmic Reality
@@ -830,7 +885,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 156523 },
 					["g"] = {
 						ach(14043),	-- Mythic: Maut
-						i(174446),	-- Muar (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -847,7 +901,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 157620 },
 					["g"] = {
 						ach(14044),	-- Mythic: The Prophet Skitra
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
 						i(174165),	-- Writhing Spaulders of Madness
@@ -881,8 +934,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 					["g"] = {
 						ach(14046),	-- Mythic: The Hivemind
-						i(174448),	-- Aqir Hivespawn (PET!)
-						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -926,7 +977,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 157354 },
 					["g"] = {
 						ach(14050),	-- Mythic: Vexiona
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
 						i(174120),	-- Void Ascendant's Mantle
@@ -939,8 +989,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 156866 },
 					["g"] = {
 						ach(14051),	-- Mythic: Ra-den the Despoiled
-						i(174447),	-- Void-Scarred Anubisath (PET!)
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
 						i(174134),	-- Gibbering Maw
@@ -957,7 +1005,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 158328 },
 					["g"] = {
 						ach(14052),	-- Mythic: Il'gynoth, Corruption Reborn
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
 						i(174116),	-- Cowl of Unspeakable Horrors
@@ -1012,9 +1059,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						})),
 						i(173886, bubbleDownSelf({["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Bursting Void Droplet
 						})),
-						i(175062),	-- Malefic Core
-						i(174452),	-- Eye of Corruption (PET!)
-						i(174279),	-- Encrypted Ny'alothan Text
 						i(174872),	-- Ny'alotha Allseer (MOUNT!)
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
