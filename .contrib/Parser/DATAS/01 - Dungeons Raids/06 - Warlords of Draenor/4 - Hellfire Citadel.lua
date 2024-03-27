@@ -107,22 +107,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(ALL_DIFFICULTIES_RAID, {
 				cr(90284, e(1425, {	-- Iron Reaver
-					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-					}),
 				})),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
-					ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
-					ig(127749),	-- Corrupted Nest Guardian (PET!)
-					i(127771, {	-- Gemcutter Module: Critical Strike
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = MISC,
-					}),
 				})),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
@@ -159,6 +147,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(128075),	-- Double-Padded Slippers
 						i(128168),	-- Shrapnel-Studded Boots
 						i(128141),	-- Crackling Fel-Spark Plug
+						i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+							["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						}),
 					})),
 					cr(90435, e(1392, {	-- Kormrok
 						i(128134),	-- Demonbreaker Helm
@@ -217,6 +208,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(128113),	-- Ring of Fortuitous Foresight
 						i(128147),	-- Teardrop of Blood
 						i(128144),	-- Vial of Vile Viscera
+						ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 					})),
 					cr(90199, e(1372, {	-- Gorefiend
 						i(128101),	-- Soulcult Ritual Staff
@@ -247,6 +241,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(128296),	-- Soul Prison Solitaire
 						i(128179),	-- Talon-Link Loop
 						i(128146),	-- Ensnared Orb of the Sky
+						ig(127749),	-- Corrupted Nest Guardian (PET!)
+						i(127771, {	-- Gemcutter Module: Critical Strike
+							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+							["requireSkill"] = JEWELCRAFTING,
+							["f"] = MISC,
+						}),
 					})),
 					cr(92330, e(1427, {	-- Socrethar the Eternal
 						i(128197),	-- Felgore Double Blade
@@ -347,6 +347,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(10026, {	-- Nearly Indestructible
 						["crs"] = { 90018 },	-- Hellfire Cannon
 					}),
+					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+					}),
 				})),
 				cr(90284, e(1425, {	-- Iron Reaver
 					ach(10057, {	-- Turning the Tide
@@ -374,6 +377,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							follower(474),	-- Ariok
 						},
 					}),
+					ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 				})),
 				cr(90199, e(1372, {	-- Gorefiend
 					ach(9979, {	-- Get In My Belly!
@@ -383,6 +389,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					ach(9988, {	-- Pro Toss
 						["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
+					}),
+					ig(127749),	-- Corrupted Nest Guardian (PET!)
+					i(127771, {	-- Gemcutter Module: Critical Strike
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["requireSkill"] = JEWELCRAFTING,
+						["f"] = MISC,
 					}),
 				})),
 				cr(92330, e(1427, {	-- Socrethar the Eternal
