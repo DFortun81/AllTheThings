@@ -396,13 +396,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				cr(104881, e(1751, {	-- Spellblade Aluriel
 					ach(10817, {	-- A Change In Scenery
 						crit(31807, {	-- The Shal'dorei Terrace
-							["_encounter"] = { 1751, LFR_RAID },
+							["_noautomation"] = true,
 						}),
 						crit(31806, {	-- The Shattered Walkway
-							["_encounter"] = { 1751, LFR_RAID },
+							["_noautomation"] = true,
 						}),
 						crit(31808, {	-- Astromancer's Rise
-							["_encounter"] = { 1751, LFR_RAID },
+							["_noautomation"] = true,
 						}),
 					}),
 					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
