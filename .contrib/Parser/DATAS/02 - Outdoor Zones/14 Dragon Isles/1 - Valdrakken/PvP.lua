@@ -556,6 +556,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
+						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+							i(217101, {	-- Draconic Warmonger's Cape
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217103, {	-- Draconic Warmonger's Cloak
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217104, {	-- Draconic Warmonger's Drape
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217102, {	-- Draconic Warmonger's Shawl
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+						})),
 						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198566, {	-- Drakebreaker's Boots
 								["cost"] = {
@@ -614,11 +636,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 300 },
 								},
 							}),
-							i(211214, {	-- Hellbloom Crown
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
 							i(211211, {	-- Hellbloom Garb
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 300 },
@@ -640,6 +657,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(211212, {	-- Hellbloom Slippers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+						})),
+						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	
+							i(217075, {	-- Draconic Warmonger's Bindings
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217074, {	-- Draconic Warmonger's Cord
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217072, {	-- Draconic Warmonger's Crown
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217069, {	-- Draconic Warmonger's Garb
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217071, {	-- Draconic Warmonger's Gloves
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217076, {	-- Draconic Warmonger's Mantle
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217073, {	-- Draconic Warmonger's Pants
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217070, {	-- Draconic Warmonger's Slippers
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
 								},
@@ -729,6 +788,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
+						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+							i(217081, {	-- Draconic Warmonger's Belt
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217077, {	-- Draconic Warmonger's Boots
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217080, {	-- Draconic Warmonger's Breeches
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217078, {	-- Draconic Warmonger's Handwraps
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217079, {	-- Draconic Warmonger's Hood
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217083, {	-- Draconic Warmonger's Jerkin
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217084, {	-- Draconic Warmonger's Shoulderguard
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217082, {	-- Draconic Warmonger's Wraps
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+						})),
 						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198596, {	-- Drakebreaker's Bracers
 								["cost"] = {
@@ -813,6 +914,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
+						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+							i(217100, {	-- Draconic Warmonger's Armguards
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217093, {	-- Draconic Warmonger's Chainmail
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217099, {	-- Draconic Warmonger's Cinch
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217098, {	-- Draconic Warmonger's Epaulets
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217094, {	-- Draconic Warmonger's Greaves
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217095, {	-- Draconic Warmonger's Grips
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217096, {	-- Draconic Warmonger's Helm
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217097, {	-- Draconic Warmonger's Leggings
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+						})),
 						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198588, {	-- Drakebreaker's Armplates
 								["cost"] = {
@@ -892,6 +1035,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(211232, {	-- Hellbloom Spaulders
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+						})),
+						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+							i(217092, {	-- Draconic Warmonger's Bracers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217091, {	-- Draconic Warmonger's Clasp
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(217086, {	-- Draconic Warmonger's Cuirass
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217085, {	-- Draconic Warmonger's Faceplate
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217088, {	-- Draconic Warmonger's Gauntlets
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217089, {	-- Draconic Warmonger's Legguards
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217087, {	-- Draconic Warmonger's Sabatons
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(217090, {	-- Draconic Warmonger's Spaulders
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
 								},
@@ -1131,6 +1316,133 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(211197, {	-- Hellbloom Wand
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+						})),
+						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+							i(217059, {	-- Draconic Warmonger's Aegis
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 150 },
+								},
+							}),
+							i(217044, {	-- Draconic Warmonger's Battleaxe
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217053, {	-- Draconic Warmonger's Battlestaff
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(217051, {	-- Draconic Warmonger's Branch
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 150 },
+								},
+							}),
+							i(217055, {	-- Draconic Warmonger's Broadsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(217046, {	-- Draconic Warmonger's Carver
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217056, {	-- Draconic Warmonger's Club
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217064, {	-- Draconic Warmonger's Crusher
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217058, {	-- Draconic Warmonger's Cudgel
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217067, {	-- Draconic Warmonger's Dagger
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217068, {	-- Draconic Warmonger's Dirk
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217047, {	-- Draconic Warmonger's Flameshot
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(217054, {	-- Draconic Warmonger's Greatsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(217057, {	-- Draconic Warmonger's Hammer
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217045, {	-- Draconic Warmonger's Hatchet
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217060, {	-- Draconic Warmonger's Impaler
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(217063, {	-- Draconic Warmonger's Mace
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217066, {	-- Draconic Warmonger's Sabre
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217065, {	-- Draconic Warmonger's Scepter
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217050, {	-- Draconic Warmonger's Shortsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217061, {	-- Draconic Warmonger's Spear
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(217049, {	-- Draconic Warmonger's Spellblade
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(217052, {	-- Draconic Warmonger's Spire
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(217048, {	-- Draconic Warmonger's Twinblade
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(217062, {	-- Draconic Warmonger's Wand
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 300 },
 								},

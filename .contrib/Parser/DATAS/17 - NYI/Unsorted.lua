@@ -123,67 +123,6 @@ root(ROOTS.Unsorted, {
 				i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
 			}),
 			n(PVP, {	-- SEASON 4 PvP
-				i(217044),	-- Draconic Warmonger's Battleaxe
-				i(217045),	-- Draconic Warmonger's Hatchet
-				i(217046),	-- Draconic Warmonger's Carver
-				i(217047),	-- Draconic Warmonger's Flameshot
-				i(217048),	-- Draconic Warmonger's Twinblade
-				i(217049),	-- Draconic Warmonger's Spellblade
-				i(217050),	-- Draconic Warmonger's Shortsword
-				i(217051),	-- Draconic Warmonger's Branch
-				i(217052),	-- Draconic Warmonger's Spire
-				i(217053),	-- Draconic Warmonger's Battlestaff
-				i(217054),	-- Draconic Warmonger's Greatsword
-				i(217055),	-- Draconic Warmonger's Broadsword
-				i(217056),	-- Draconic Warmonger's Club
-				i(217057),	-- Draconic Warmonger's Hammer
-				i(217058),	-- Draconic Warmonger's Cudgel
-				i(217059),	-- Draconic Warmonger's Aegis
-				i(217060),	-- Draconic Warmonger's Impaler
-				i(217061),	-- Draconic Warmonger's Spear
-				i(217062),	-- Draconic Warmonger's Wand
-				i(217063),	-- Draconic Warmonger's Mace
-				i(217064),	-- Draconic Warmonger's Crusher
-				i(217065),	-- Draconic Warmonger's Scepter
-				i(217066),	-- Draconic Warmonger's Sabre
-				i(217067),	-- Draconic Warmonger's Dagger
-				i(217068),	-- Draconic Warmonger's Dirk
-				i(217069),	-- Draconic Warmonger's Garb
-				i(217070),	-- Draconic Warmonger's Slippers
-				i(217071),	-- Draconic Warmonger's Gloves
-				i(217072),	-- Draconic Warmonger's Crown
-				i(217073),	-- Draconic Warmonger's Pants
-				i(217074),	-- Draconic Warmonger's Cord
-				i(217075),	-- Draconic Warmonger's Bindings
-				i(217076),	-- Draconic Warmonger's Mantle
-				i(217077),	-- Draconic Warmonger's Boots
-				i(217078),	-- Draconic Warmonger's Handwraps
-				i(217079),	-- Draconic Warmonger's Hood
-				i(217080),	-- Draconic Warmonger's Breeches
-				i(217081),	-- Draconic Warmonger's Belt
-				i(217082),	-- Draconic Warmonger's Wraps
-				i(217083),	-- Draconic Warmonger's Jerkin
-				i(217084),	-- Draconic Warmonger's Shoulderguard
-				i(217085),	-- Draconic Warmonger's Faceplate
-				i(217086),	-- Draconic Warmonger's Cuirass
-				i(217087),	-- Draconic Warmonger's Sabatons
-				i(217088),	-- Draconic Warmonger's Gauntlets
-				i(217089),	-- Draconic Warmonger's Legguards
-				i(217090),	-- Draconic Warmonger's Spaulders
-				i(217091),	-- Draconic Warmonger's Clasp
-				i(217092),	-- Draconic Warmonger's Bracers
-				i(217093),	-- Draconic Warmonger's Chainmail
-				i(217094),	-- Draconic Warmonger's Greaves
-				i(217095),	-- Draconic Warmonger's Grips
-				i(217096),	-- Draconic Warmonger's Helm
-				i(217097),	-- Draconic Warmonger's Leggings
-				i(217098),	-- Draconic Warmonger's Epaulets
-				i(217099),	-- Draconic Warmonger's Cinch
-				i(217100),	-- Draconic Warmonger's Armguards
-				i(217101),	-- Draconic Warmonger's Cape
-				i(217102),	-- Draconic Warmonger's Shawl
-				i(217103),	-- Draconic Warmonger's Cloak
-				i(217104),	-- Draconic Warmonger's Drape
 				i(211690),	-- Artisan's Consortium Brochure
 				i(211770),	-- Medal of Honor
 				i(211771),	-- Medal of Honor
@@ -520,8 +459,6 @@ root(ROOTS.Unsorted, {
 					i(217700),	-- Scale of Awakening
 					-- Unknown
 					i(217408),	-- Awakened Tempostone
-					i(217110),	-- Cache of Awakened Embers
-					i(217109),	-- Cache of Awakened Storms
 					i(215363),	-- Cache of Embers
 					i(215362),	-- Cache of Storms
 				}),

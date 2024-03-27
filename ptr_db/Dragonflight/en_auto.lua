@@ -127,7 +127,6 @@ local keys = {
 [3624]="<UNUSED>",
 [3885]="<NYI> <TXT> The Gadgetzan Run",
 [3910]="<NYI> <TXT> The Un'Goro Run",
-[3911]="The Last Element",
 [4299]="<NYI> <TXT>The Tomb of the Seven",
 [4323]="<NYI> <TXT> Get those Hyenas!!!",
 [4541]="<NYI> <TXT>",

@@ -54,6 +54,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(217111),	-- Cache of Awakened Dreams
 					},
 				}),
+				q(80386, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+					["g"] = {
+						--spell(440047),	-- Weekly Awakened Activity
+						i(217110),	-- Cache of Awakened Embers
+					},
+				}),
+				q(80385, {	-- Last Hurrah: Dragon Isles
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+					["g"] = {
+						--spell(440047),	-- Weekly Awakened Activity
+						i(217109),	-- Cache of Awakened Storms
+					},
+				}),
 			})),
 			n(REWARDS, {
 				i(218269, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Draconic Tome of Awakening (RECIPE!)
@@ -137,5 +151,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78450),	-- Aiding the Accord - Emerald Bounty - Quest Complete (spellID 426078)
 		q(78861),	-- Aiding the Accord - Emerald Bounty
 		q(78449),	-- Aiding the Accord - Superbloom - Quest Complete (spellID 426077)
+		--q(80389),	-- (probably) uppon completion "Last Hurrah" series
 	}),
 }));
