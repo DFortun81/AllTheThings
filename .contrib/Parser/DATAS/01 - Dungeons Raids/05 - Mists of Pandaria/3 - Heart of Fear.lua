@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(NORMAL_HEROIC_RAID, {
+			d(NORMAL_HEROIC_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
 					i(86272),	-- Pattern: Fists of Lightning (RECIPE!)

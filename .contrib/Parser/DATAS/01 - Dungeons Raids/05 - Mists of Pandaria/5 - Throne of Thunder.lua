@@ -622,7 +622,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			d(NORMAL_HEROIC_RAID, {
+			d(NORMAL_HEROIC_DUNGEON, {
 				e(827, {	-- Jin'rokh the Breaker
 					["crs"] = { 69465 },	-- Jin'rokh the Breaker
 					["g"] = {
