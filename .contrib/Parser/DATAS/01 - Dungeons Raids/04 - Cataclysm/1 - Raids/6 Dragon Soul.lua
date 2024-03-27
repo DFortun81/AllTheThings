@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 			}),
-			--[[d(ALL_DIFFICULTIES_RAID, {
+			d(ALL_DIFFICULTIES_RAID, {
 				cr(55265, e(311, {	-- Morchok
 					-- Placeholder for criteria
 				})),
@@ -270,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				--	}),
 				--	currency(615),	-- Essence of Corrupted Deathwing
 				})),
-			}),--]]
+			}),
 			d(RAID_FINDER, {
 				-- #if AFTER 6.0.1.18322
 				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
@@ -431,7 +431,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(NORMAL_PLUS_RAID, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["ignoreBonus"] = true,
 				["groups"] = {
