@@ -62,17 +62,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			d(ALL_DIFFICULTIES_RAID, {
-				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
-					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
-				})),
-				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-						["classes"] = { SHAMAN },
-						["timeline"] = { ADDED_7_0_3 },
-					}),
-				})),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
@@ -94,6 +83,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(116003),	-- Spectator's Sandals of Carnage
 						i(116282),	-- Grunt's Rusty Ring
 						i(116289),	-- Bloodmaw's Tooth
+						i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 					})),
 					cr(77404, e(971, {	-- The Butcher
 						i(116361),	-- Butcher's Cruel Chopper
@@ -126,6 +118,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(116032),	-- Legguards of Ravenous Assault
 						i(116279),	-- Frostcap Band
 						i(116292),	-- Mote of the Mountain
+						i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
+							["classes"] = { SHAMAN },
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 					})),
 					e(1148, {	-- Twin Ogron
 						["crs"] = {
@@ -170,6 +166,49 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					})),
 				}),
 			}),
+			d(NORMAL_PLUS_RAID, {
+				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
+					ach(8948, {	-- Flame On!
+						["crs"] = { 88123 },	-- Fire Pillar
+					}),
+					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+				})),
+				cr(77404, e(971, {	-- The Butcher
+					ach(8947, {	-- Hurry Up, Maggot!
+						["crs"] = { 80728 },	-- Maggot
+					}),
+				})),
+				cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
+					ach(8975),	-- A Fungus Among Us
+				})),
+				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
+					ach(8974, {	-- More Like Wrecked-us
+						["crs"] = { 80557 },	-- Mote of Tectus <Mote of the Mountain>
+					}),
+					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
+						["classes"] = { SHAMAN },
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+				})),
+				e(1148, {	-- Twin Ogron
+					["crs"] = {
+						78237,	-- Twin Ogron (Phemos)
+						78238,	-- Twin Ogron (Pol)
+					},
+					["g"] = {
+						ach(8958),	-- Brothers in Arms
+					},
+				})),
+				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
+					ach(8976),	-- Pair Annihilation
+				})),
+				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
+					ach(8977, {	-- Lineage of Power
+						["crs"] = { 78121 },	-- Gorian Warmage
+					}),
+				})),
 			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(119343),	-- Eye-Blinder Greatcloak
@@ -183,9 +222,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(119337),	-- Ripswallow Plate Belt
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
-					ach(8948, {	-- Flame On!
-						["crs"] = { 88123 },	-- Fire Pillar
-					}),
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
 					i(113600),	-- Casque of the Iron Bomber
@@ -200,9 +236,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(113604),	-- Kargath's Last Link
 				})),
 				cr(77404, e(971, {	-- The Butcher
-					ach(8947, {	-- Hurry Up, Maggot!
-						["crs"] = { 80728 },	-- Maggot
-					}),
 					i(113606),	-- Butcher's Bloody Cleaver
 					i(113607),	-- Butcher's Terrible Tenderizer
 					i(113608),	-- Hood of Dispassionate Execution
@@ -218,7 +251,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(113612),	-- Scales of Doom
 				})),
 				cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
-					ach(8975),	-- A Fungus Among Us
 					i(113652),	-- Crystalline Branch of the Brackenspore
 					i(113653),	-- Maw of Souls
 					i(113662),	-- Collar of Wailing Mouths
@@ -233,9 +265,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(113658),	-- Bottle of Infesting Spores
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-					ach(8974, {	-- More Like Wrecked-us
-						["crs"] = { 80557 },	-- Mote of Tectus <Mote of the Mountain>
-					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
 					i(113647),	-- Flechette-Riddled Chain
@@ -256,7 +285,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						78238,	-- Twin Ogron (Pol)
 					},
 					["g"] = {
-						ach(8958),	-- Brothers in Arms
 						i(113667),	-- Phemos' Double Slasher
 						i(113666),	-- Absalom's Bloody Bulwark
 						i(113833),	-- Odyssian Choker
@@ -272,7 +300,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
-					ach(8976),	-- Pair Annihilation
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
 					i(113837),	-- Rod of Fel Nullification
@@ -287,9 +314,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(113842),	-- Emblem of Caustic Healing
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
-					ach(8977, {	-- Lineage of Power
-						["crs"] = { 78121 },	-- Gorian Warmage
-					}),
 					i(113848),	-- Gor'gah, High Blade of the Gorians
 					i(113857),	-- Staff of the Grand Imperator
 					i(113858),	-- Choker of Violent Displacement
