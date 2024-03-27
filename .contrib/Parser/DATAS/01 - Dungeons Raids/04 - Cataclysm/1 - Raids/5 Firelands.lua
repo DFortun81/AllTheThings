@@ -429,7 +429,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(68915),	-- Scales of Life
 				i(71367),	-- Theck's Emberseal
 			}),
-			d(NORMAL_HEROIC_RAID, {
+			d(
+			-- #if AFTER 8.2.5
+			NORMAL_HEROIC_RAID,
+			-- #else
+			NORMAL_HEROIC_DUNGEON,
+			-- #endif
+			{
 				e(192, {	-- Beth'tilac
 					["creatureID"] = 52498,
 					["groups"] = {
@@ -507,7 +513,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(
+			-- #if AFTER 8.2.5
+			NORMAL_RAID,
+			-- #else
+			NORMAL_DUNGEON,
+			-- #endif
+			{
 				["difficulties"] = { 1, 3, 4 },
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -666,7 +678,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(HEROIC_RAID, {
+			
+			d(
+			-- #if AFTER 8.2.5
+			HEROIC_RAID,
+			-- #else
+			HEROIC_DUNGEON,
+			-- #endif
+			{
 				["difficulties"] = { 2, 5, 6 },
 				["groups"] = {
 					n(VENDORS, {
