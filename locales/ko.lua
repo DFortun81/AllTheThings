@@ -292,7 +292,6 @@ local L = app.L;
 		--TODO: L.WARN_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.";
 		--TODO: L.BEHAVIOR_LABEL = "List Behavior";
 		--TODO: L.DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
-		--TODO: L.DYNAMIC_CATEGORY_OFF_TOOLTIP = "Do not generate any Dynamic Categories.";
 		--TODO: L.DYNAMIC_CATEGORY_SIMPLE = "Simple";
 		--TODO: L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
 		--TODO: L.DYNAMIC_CATEGORY_NESTED = "Nested";

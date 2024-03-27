@@ -294,7 +294,6 @@ local L = app.L;
 		L.WARN_DIFFICULTY_CHECKBOX_TOOLTIP = "如果希望在进入一个难度副本时被警告无法获得新的收藏，而你可以进入另一个未保存的难度，则启用此选项。";
 		L.BEHAVIOR_LABEL = "列表行为";
 		L.DYNAMIC_CATEGORY_LABEL = "动态类别";
-		L.DYNAMIC_CATEGORY_OFF_TOOLTIP = "不生成任何动态类别。 ";
 		L.DYNAMIC_CATEGORY_SIMPLE = "简单";
 		L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "仅根据最高的类别生成动态类别。 ";
 		L.DYNAMIC_CATEGORY_NESTED = "嵌套";

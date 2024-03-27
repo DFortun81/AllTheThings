@@ -774,26 +774,6 @@ local textDynamicCategories = child:CreateTextLabel("|cffFFFFFF"..L.DYNAMIC_CATE
 textDynamicCategories:SetPoint("LEFT", checkboxShowPercentageCount, "LEFT", 4, 0)
 textDynamicCategories:SetPoint("TOP", sliderPercentagePrecision, "BOTTOM", 0, -15)
 
-local checkboxDynamicOff = child:CreateCheckBox(L.DYNAMIC_CATEGORY_OFF,
-function(self)
-	-- Only check self if the setting is set to this option
-	self:SetChecked(settings:Get("Dynamic:Style") == 0)
-end,
-function(self)
-	-- Don't uncheck self if checked again
-	if settings:Get("Dynamic:Style") == 0 then
-		self:SetChecked(true)
-		return
-	end
-	-- Set the setting to this option if checked
-	if self:GetChecked() then
-		settings:Set("Dynamic:Style", 0)
-	end
-end)
-checkboxDynamicOff:SetPoint("TOP", textDynamicCategories, "BOTTOM", 0, 0)
-checkboxDynamicOff:SetPoint("LEFT", textDynamicCategories, "LEFT", 0, 0)
-checkboxDynamicOff:SetATTTooltip(L.DYNAMIC_CATEGORY_OFF_TOOLTIP..L.DYNAMIC_CATEGORY_TOOLTIP_NOTE)
-
 local checkboxDynamicSimple = child:CreateCheckBox(L.DYNAMIC_CATEGORY_SIMPLE,
 function(self)
 	-- Only check self if the setting is set to this option
@@ -810,7 +790,8 @@ function(self)
 		settings:Set("Dynamic:Style", 1)
 	end
 end)
-checkboxDynamicSimple:AlignAfter(checkboxDynamicOff)
+checkboxDynamicSimple:SetPoint("TOP", textDynamicCategories, "BOTTOM", 0, 0)
+checkboxDynamicSimple:SetPoint("LEFT", textDynamicCategories, "LEFT", 0, 0)
 checkboxDynamicSimple:SetATTTooltip(L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP..L.DYNAMIC_CATEGORY_TOOLTIP_NOTE)
 
 local checkboxDynamicNested = child:CreateCheckBox(L.DYNAMIC_CATEGORY_NESTED,
