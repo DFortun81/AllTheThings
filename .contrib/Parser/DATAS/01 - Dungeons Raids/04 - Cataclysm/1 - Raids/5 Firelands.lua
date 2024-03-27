@@ -429,7 +429,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(68915),	-- Scales of Life
 				i(71367),	-- Theck's Emberseal
 			}),
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(NORMAL_HEROIC_RAID, {
 				e(192, {	-- Beth'tilac
 					["creatureID"] = 52498,
 					["groups"] = {
