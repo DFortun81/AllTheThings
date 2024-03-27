@@ -1666,7 +1666,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 3,
 							["groups"] = {
 								objective(1, {	-- 0/1 Thazz'ril's Pick
-									["provider"] = { "i", 16332},
 									["providers"] = {
 										{ "i",  16332 },	-- Thazz'ril's Pick
 										{ "o", 178087 },	-- Thazz'ril's Pick
