@@ -4,8 +4,8 @@ local appName,app = ...;
 local L, contains, GetRelativeValue = app.L, app.contains, app.GetRelativeValue;
 
 -- Global locals
-local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo
-	= date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo;
+local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN
+	= date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN;
 
 -- Class Locals
 local DifficultyColors = {
@@ -61,8 +61,17 @@ if not GetDifficultyInfo(3) then
 		[3] = "10-Player",
 		[198] = "10-Player",
 	};
+	local oldGetDifficultyInfo = GetDifficultyInfo;
 	GetDifficultyInfo = function(difficultyID)
-		return difficultyData[difficultyID] or UNKNOWN;
+		return difficultyData[difficultyID] or oldGetDifficultyInfo(difficultyID) or UNKNOWN;
+	end
+elseif not GetDifficultyInfo(7) then
+	local difficultyData = {
+		[7] = "Raid Finder",
+	};
+	local oldGetDifficultyInfo = GetDifficultyInfo;
+	GetDifficultyInfo = function(difficultyID)
+		return oldGetDifficultyInfo(difficultyID) or difficultyData[difficultyID] or UNKNOWN;
 	end
 end
 local function GetDifficultyName(difficultyID)
@@ -141,18 +150,25 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["name"] = function(t)
 		local difficultyID = t.difficultyID;
 		local name = GetDifficultyInfo(difficultyID);
-		if not name then
+		if not name or name == UNKNOWN then
 			local difficulties = t.difficulties;
 			if not difficulties then
 				return UNKNOWN;
 			else
-				name = GetDifficultyName(difficulties[1])
-				for i=2,#difficulties do
-					name = name.." / "..GetDifficultyName(difficulties[i]);
-				end
+				return GetDifficultyName(difficulties[1]) .. "+";
 			end
 		end
 		return name;
+	end,
+	["title"] = function(t)
+		local difficulties = t.difficulties;
+		if difficulties then
+			local title = GetDifficultyName(difficulties[1])
+			for i=2,#difficulties do
+				title = title.." / "..GetDifficultyName(difficulties[i]);
+			end
+			return title;
+		end
 	end,
 }, (function(t) return t.difficulties; end));
 

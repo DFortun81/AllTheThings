@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local CUSTOM_DIFFICULTY_ID = GetOrCreateMultiDifficulty({RAID_FINDER,NORMAL_DUNGEON,HEROIC_DUNGEON});
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_FOUR, inst(187, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
@@ -23,30 +24,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(6106, {	-- Siege of Wyrmrest Temple
 					crit(18445, {	-- Morchok
-						["_encounter"] = { 311, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 311, CUSTOM_DIFFICULTY_ID },
 					}),
 					crit(18446, {	-- Warlord Zon'ozz
-						["_encounter"] = { 324, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 324, CUSTOM_DIFFICULTY_ID },
 					}),
 					crit(18447, {	-- Yor'sahj the Unsleeping
-						["_encounter"] = { 325, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 325, CUSTOM_DIFFICULTY_ID },
 					}),
 					crit(18448, {	-- Hagara the Stormbinder
-						["_encounter"] = { 317, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 317, CUSTOM_DIFFICULTY_ID },
 					}),
 				}),
 				ach(6107, {	-- Fall of Deathwing
 					crit(18449, {	-- Ultraxion
-						["_encounter"] = { 331, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 331, CUSTOM_DIFFICULTY_ID },
 					}),
 					crit(18450, {	-- Warmaster Blackthorn
-						["_encounter"] = { 332, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 332, CUSTOM_DIFFICULTY_ID },
 					}),
 					crit(18451, {	-- Spine of Deathwing
-						["_encounter"] = { 318, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 318, CUSTOM_DIFFICULTY_ID },
 					}),
 					crit(18452, {	-- Madness of Deathwing
-						["_encounter"] = { 333, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 333, CUSTOM_DIFFICULTY_ID },
 					}),
 				}),
 				ach(6169, {	-- Glory of the Dragon Soul Raider
@@ -232,7 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
+			d(CUSTOM_DIFFICULTY_ID, {
 				cr(55265, e(311, {	-- Morchok
 					-- Placeholder for criteria
 				})),
@@ -431,7 +432,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(NORMAL_HEROIC_DUNGEON, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["ignoreBonus"] = true,
 				["groups"] = {

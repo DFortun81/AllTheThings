@@ -720,7 +720,7 @@ end
 d = function(id, t)										-- Create a DIFFICULTY Object
 	local difficultyID, ids = GetOrCreateMultiDifficulty(id);
 	t = struct("difficultyID", difficultyID, t);
-	if ids and not t.difficulties then t.difficulties = ids; end
+	if ids then t.difficulties = ids; end
 	
 	-- #if AFTER MOP
 	local db = DifficultyDB[difficultyID];
