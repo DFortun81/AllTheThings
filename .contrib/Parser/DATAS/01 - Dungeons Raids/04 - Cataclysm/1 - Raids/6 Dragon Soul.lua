@@ -222,14 +222,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(VENDORS, {
 				n(58153, {	-- Dasnurimi <Geologist & Conservator>
 					i(78890, {	-- Crystalline Geode
-						["cost"] = {
-							{ "c", 614, 1 },	-- Mote of Darkness
-						},
+						["cost"] = {{ "c", 614, 1 }},	-- Mote of Darkness
 					}),
 					i(78891, {	-- Elementium-coated Geode
-						["cost"] = {
-							{ "c", 615, 1 },	-- Essence of Corrupted Deathwing
-						},
+						["cost"] = {{ "c", 615, 1 }},	-- Essence of Corrupted Deathwing
 					}),
 				}),
 			}),
@@ -271,7 +267,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					--	i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
 					--		["timeline"] = { ADDED_6_1_0 },
 					--	}),
-					--	currency(615),	-- Essence of Corrupted Deathwing
+						-- #if AFTER 9.1.5
+						currency(615),	-- Essence of Corrupted Deathwing
+						-- #endif
 					})),
 				},
 			}),
@@ -430,7 +428,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
 								["timeline"] = { ADDED_6_1_0 },
 							}),
-							currency(615),	-- Essence of Corrupted Deathwing
 						})),
 					}),
 				},
@@ -561,7 +558,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
 							["timeline"] = { ADDED_6_1_0 },
 						}),
+						-- #if BEFORE 9.1.5
 						currency(615),	-- Essence of Corrupted Deathwing
+						-- #endif
 					})),
 				},
 			}),
