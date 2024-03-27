@@ -243,104 +243,104 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(15122, {	-- The Jailer's Vanguard
 					crit(52470, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TARRAGRUE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52472, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { EYE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52474, {	-- The Nine
-						["_encounter"] = { NINE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NINE, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(15123, {	-- The Dark Bastille
 					crit(52476, {	-- Remnant of Ner'zhul
-						["_encounter"] = { NERZHUL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NERZHUL, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52478, {	-- Soulrender Dormazain
-						["_encounter"] = { DORMAZAIN, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DORMAZAIN, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52480, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { PAINSMITH, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(15124, {	-- Shackles of Fate
 					crit(52482, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { GUARDIAN, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52484, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { FATESCRIBE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52486, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KELTHUZAD, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(15125, {	-- The Reckoning
 					crit(52488, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SYLVANAS, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(15126, {	-- Sanctum of Domination
 					crit(52471, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TARRAGRUE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52473, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { EYE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52475, {	-- The Nine
-						["_encounter"] = { NINE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NINE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52477, {	-- Remnant of Ner'zhul
-						["_encounter"] = { NERZHUL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NERZHUL, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52479, {	-- Soulrender Dormazain
-						["_encounter"] = { DORMAZAIN, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DORMAZAIN, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52481, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { PAINSMITH, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52483, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { GUARDIAN, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52485, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { FATESCRIBE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52487, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KELTHUZAD, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(52489, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SYLVANAS, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(15127, {	-- Heroic: Sanctum of Domination
 					crit(52344, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { TARRAGRUE, HEROIC_PLUS_RAID },
 					}),
 					crit(52345, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { EYE, HEROIC_PLUS_RAID },
 					}),
 					crit(52346, {	-- The Nine
-						["_encounter"] = { NINE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { NINE, HEROIC_PLUS_RAID },
 					}),
 					crit(52348, {	-- Remnant of Ner'zhul
-						["_encounter"] = { DORMAZAIN, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DORMAZAIN, HEROIC_PLUS_RAID },
 					}),
 					crit(52347, {	-- Soulrender Dormazain
-						["_encounter"] = { NERZHUL, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { NERZHUL, HEROIC_PLUS_RAID },
 					}),
 					crit(52349, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { PAINSMITH, HEROIC_PLUS_RAID },
 					}),
 					crit(52350, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { GUARDIAN, HEROIC_PLUS_RAID },
 					}),
 					crit(52351, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { FATESCRIBE, HEROIC_PLUS_RAID },
 					}),
 					crit(52352, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { KELTHUZAD, HEROIC_PLUS_RAID },
 					}),
 					crit(52353, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { SYLVANAS, HEROIC_PLUS_RAID },
 					}),
 				}),
 				ach(15128, {	-- Mythic: Sanctum of Domination
@@ -385,67 +385,67 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				ach(15667,	-- Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
 					crit(53547, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TARRAGRUE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53548, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { EYE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53549, {	-- The Nine
-						["_encounter"] = { NINE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NINE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53550, {	-- Remnant of Ner'zhul
-						["_encounter"] = { NERZHUL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NERZHUL, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53551, {	-- Soulrender Dormazain
-						["_encounter"] = { DORMAZAIN, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DORMAZAIN, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53552, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { PAINSMITH, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53553, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { GUARDIAN, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53554, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { FATESCRIBE, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53555, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KELTHUZAD, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(53556, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SYLVANAS, ALL_DIFFICULTIES_RAID },
 					}),
 				})),
 				ach(15668,	-- Heroic: Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
 					crit(53558, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { TARRAGRUE, HEROIC_PLUS_RAID },
 					}),
 					crit(53559, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { EYE, HEROIC_PLUS_RAID },
 					}),
 					crit(53560, {	-- The Nine
-						["_encounter"] = { NINE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { NINE, HEROIC_PLUS_RAID },
 					}),
 					crit(53612, {	-- Soulrender Dormazain
-						["_encounter"] = { DORMAZAIN, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DORMAZAIN, HEROIC_PLUS_RAID },
 					}),
 					crit(53562, {	-- Remnant of Ner'zhul
-						["_encounter"] = { NERZHUL, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { NERZHUL, HEROIC_PLUS_RAID },
 					}),
 					crit(53563, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { PAINSMITH, HEROIC_PLUS_RAID },
 					}),
 					crit(53564, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { GUARDIAN, HEROIC_PLUS_RAID },
 					}),
 					crit(53565, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { FATESCRIBE, HEROIC_PLUS_RAID },
 					}),
 					crit(53566, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { KELTHUZAD, HEROIC_PLUS_RAID },
 					}),
 					crit(53567, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { SYLVANAS, HEROIC_PLUS_RAID },
 					}),
 				})),
 				ach(15669,	-- Mythic: Fate of Domination

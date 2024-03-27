@@ -308,84 +308,84 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
 					crit(55109, {	-- Eranog
-						["_encounter"] = { ERANOG, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { ERANOG, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55110, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55111, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DATHEA, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
 					crit(55113, {	-- Terros
-						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TERROS, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55114, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SENNARTH, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55115, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KUROG, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
 					crit(55116, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DIURNA, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55117, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { RASZAGETH, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
 					crit(55109, {	-- Eranog
-						["_encounter"] = { ERANOG, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { ERANOG, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55110, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55111, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DATHEA, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55113, {	-- Terros
-						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TERROS, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55114, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SENNARTH, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55115, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KUROG, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55116, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DIURNA, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(55117, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { RASZAGETH, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
 					crit(55121, {	-- Eranog
-						["_encounter"] = { ERANOG, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { ERANOG, HEROIC_PLUS_RAID },
 					}),
 					crit(55122, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_RAID },
 					}),
 					crit(55123, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DATHEA, HEROIC_PLUS_RAID },
 					}),
 					crit(55124, {	-- Terros
-						["_encounter"] = { TERROS, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { TERROS, HEROIC_PLUS_RAID },
 					}),
 					crit(55125, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { SENNARTH, HEROIC_PLUS_RAID },
 					}),
 					crit(55127, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { KUROG, HEROIC_PLUS_RAID },
 					}),
 					crit(55126, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DIURNA, HEROIC_PLUS_RAID },
 					}),
 					crit(55128, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { RASZAGETH, HEROIC_PLUS_RAID },
 					}),
 				}),
 				ach(16354, {	-- Mythic: Vault of the Incarnates
@@ -420,54 +420,54 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19564, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Storms
 					crit(64929, {	-- Eranog
-						["_encounter"] = { ERANOG, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { ERANOG, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64930, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64931, {	-- Terros
-						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TERROS, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64932, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SENNARTH, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64933, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DATHEA, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64934, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KUROG, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64935, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DIURNA, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64936, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { RASZAGETH, ALL_DIFFICULTIES_RAID },
 					}),
 				})),
 				ach(19565, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Storms
 					crit(64937, {	-- Eranog
-						["_encounter"] = { ERANOG, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { ERANOG, HEROIC_PLUS_RAID },
 					}),
 					crit(64938, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_RAID },
 					}),
 					crit(64939, {	-- Terros
-						["_encounter"] = { TERROS, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { TERROS, HEROIC_PLUS_RAID },
 					}),
 					crit(64940, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { SENNARTH, HEROIC_PLUS_RAID },
 					}),
 					crit(64941, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DATHEA, HEROIC_PLUS_RAID },
 					}),
 					crit(64942, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { KUROG, HEROIC_PLUS_RAID },
 					}),
 					crit(64943, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DIURNA, HEROIC_PLUS_RAID },
 					}),
 					crit(64944, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { RASZAGETH, HEROIC_PLUS_RAID },
 					}),
 				})),
 				ach(19566, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Storms

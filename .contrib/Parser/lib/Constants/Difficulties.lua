@@ -8,12 +8,38 @@ LFR_RAID = 17;
 NORMAL_RAID = 14;
 HEROIC_RAID = 15;
 MYTHIC_RAID = 16;
-ALL_DIFFICULTIES_RAID = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-ALL_DIFFICULTIES_DUNGEON = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-NORMAL_HEROIC_DUNGEON = {NORMAL_DUNGEON,HEROIC_DUNGEON};
-NORMAL_HEROIC_RAID = {NORMAL_RAID,HEROIC_RAID};
-NORMAL_PLUS_RAID = {NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-HEROIC_PLUS_RAID = {HEROIC_RAID,MYTHIC_RAID};
+
+-- Helper Functions
+local multiDifficulties,uniqueDifficultyID = {}, -1;
+function GetOrCreateMultiDifficulty(ids)
+	if type(ids) == "table" then
+		-- Returns a unique DifficultyID and the original ids table as the second argument.
+		-- If the ids (pointer) is already in the table, then return that.
+		for difficultyID,difficulties in pairs(multiDifficulties) do
+			if ids == difficulties then
+				return difficultyID, ids;
+			end
+		end
+		
+		-- Cache a new difficultyID.
+		local difficultyID = uniqueDifficultyID;
+		uniqueDifficultyID = difficultyID - 1;
+		
+		-- Assign the difficulties.
+		multiDifficulties[difficultyID] = ids;
+		return difficultyID, ids;
+	else
+		return ids, multiDifficulties[ids];
+	end
+end
+
+-- Difficulties that represent multiple difficulties.
+ALL_DIFFICULTIES_RAID = GetOrCreateMultiDifficulty({LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID});
+ALL_DIFFICULTIES_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON});
+NORMAL_HEROIC_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON});
+NORMAL_HEROIC_RAID = GetOrCreateMultiDifficulty({NORMAL_RAID,HEROIC_RAID});
+NORMAL_PLUS_RAID = GetOrCreateMultiDifficulty({NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID});
+HEROIC_PLUS_RAID = GetOrCreateMultiDifficulty({HEROIC_RAID,MYTHIC_RAID});
 
 -- Helper Tables
 DifficultyDB = {
@@ -33,16 +59,3 @@ DifficultyDB = {
 	[TIMEWALKING_DUNGEON] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },	-- unused?
 };
-
--- Helper Functions
--- Returns a unique DifficultyID to represent multiple Difficulties as a single seprate header
-function MultiDifficultyID(ids)
-	local hash = 100;
-	for _,diff in ipairs(ids) do
-		hash = hash + diff;
-	end
-	return hash;
-end
-
-ANY_DIFFICULTY_ID_RAID = MultiDifficultyID(ALL_DIFFICULTIES_RAID);
-HEROIC_PLUS_ID_RAID = MultiDifficultyID(HEROIC_PLUS_RAID);

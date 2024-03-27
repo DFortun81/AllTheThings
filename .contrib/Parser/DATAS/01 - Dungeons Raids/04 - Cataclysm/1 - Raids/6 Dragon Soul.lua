@@ -23,30 +23,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(6106, {	-- Siege of Wyrmrest Temple
 					crit(18445, {	-- Morchok
-						["_encounter"] = { 311, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 311, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(18446, {	-- Warlord Zon'ozz
-						["_encounter"] = { 324, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 324, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(18447, {	-- Yor'sahj the Unsleeping
-						["_encounter"] = { 325, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 325, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(18448, {	-- Hagara the Stormbinder
-						["_encounter"] = { 317, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 317, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(6107, {	-- Fall of Deathwing
 					crit(18449, {	-- Ultraxion
-						["_encounter"] = { 331, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 331, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(18450, {	-- Warmaster Blackthorn
-						["_encounter"] = { 332, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 332, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(18451, {	-- Spine of Deathwing
-						["_encounter"] = { 318, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 318, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(18452, {	-- Madness of Deathwing
-						["_encounter"] = { 333, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 333, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(6169, {	-- Glory of the Dragon Soul Raider

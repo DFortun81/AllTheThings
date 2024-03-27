@@ -355,95 +355,95 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
 					crit(58866, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2522, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58867, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2529, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58868, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2530, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(18164, {	-- Fury of Giants
 					crit(58869, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2524, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58870, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2525, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58871, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2532, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(18165, {	-- Neltharion's Shadow
 					crit(58881, {	-- Magmorax
-						["_encounter"] = { 2527, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2527, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58882, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2523, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(18167, {	-- Edge of the Void
 					crit(58883, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2520, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(18160, {	-- Aberrus, the Shadowed Crucible
 					crit(58866, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2522, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58867, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2529, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58868, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2530, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58869, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2524, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58870, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2525, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58871, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2532, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58881, {	-- Magmorax
-						["_encounter"] = { 2527, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2527, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58882, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2523, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(58883, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2520, ALL_DIFFICULTIES_RAID },
 					}),
 				}),
 				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
 					crit(59573, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2522, HEROIC_PLUS_RAID },
 					}),
 					crit(59574, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2529, HEROIC_PLUS_RAID },
 					}),
 					crit(59575, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2530, HEROIC_PLUS_RAID },
 					}),
 					crit(59576, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2524, HEROIC_PLUS_RAID },
 					}),
 					crit(59577, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2525, HEROIC_PLUS_RAID },
 					}),
 					crit(59578, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2532, HEROIC_PLUS_RAID },
 					}),
 					crit(59579, {	-- Magmorax
-						["_encounter"] = { 2527, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2527, HEROIC_PLUS_RAID },
 					}),
 					crit(59580, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2523, HEROIC_PLUS_RAID },
 					}),
 					crit(59581, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2520, HEROIC_PLUS_RAID },
 					}),
 				}),
 				ach(18162, {	-- Mythic: Aberrus, the Shadowed Crucible
@@ -483,60 +483,60 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19567, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Shadows
 					crit(64957, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2522, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64958, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2529, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64959, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2530, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64960, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2524, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64961, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2525, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64962, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2532, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64963, {	-- Magmorax
-						["_encounter"] = { 2527, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2527, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64964, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2523, ALL_DIFFICULTIES_RAID },
 					}),
 					crit(64965, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { 2520, ALL_DIFFICULTIES_RAID },
 					}),
 				})),
 				ach(19568, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Shadows
 					crit(64966, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2522, HEROIC_PLUS_RAID },
 					}),
 					crit(64967, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2529, HEROIC_PLUS_RAID },
 					}),
 					crit(64968, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2530, HEROIC_PLUS_RAID },
 					}),
 					crit(64969, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2524, HEROIC_PLUS_RAID },
 					}),
 					crit(64970, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2525, HEROIC_PLUS_RAID },
 					}),
 					crit(64971, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2532, HEROIC_PLUS_RAID },
 					}),
 					crit(64972, {	-- Magmorax
-						["_encounter"] = { 2527, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2527, HEROIC_PLUS_RAID },
 					}),
 					crit(64973, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2523, HEROIC_PLUS_RAID },
 					}),
 					crit(64974, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { 2520, HEROIC_PLUS_RAID },
 					}),
 				})),
 				ach(19569, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Shadows
