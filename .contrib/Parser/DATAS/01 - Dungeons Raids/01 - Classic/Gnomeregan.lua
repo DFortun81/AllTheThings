@@ -970,6 +970,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			MATRIX_PUNCHOGRAPH_B,
 			MATRIX_PUNCHOGRAPH_C,
 			-- #endif
+			-- #if AFTER 4.0.3
+			n(7850, {	-- Kernobee
+				["description"] = "Kernobee was the quest giver of the now removed quest 'A Fine Mess', and remains abandoned on the ground without any purpose.",
+			}),
+			-- #endif
 			e(420, {	-- Viscous Fallout
 				["creatureID"] = 7079,
 				["groups"] = {
@@ -991,7 +996,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 6235,
 				["groups"] = {
 					i(6893, {	-- Workshop Key
+						--#if BEFORE 4.0.3
 						["description"] = "This key allows you to get into the back door of Gnomeregan.",
+						--#elseif AFTER 5.2.0
+						["description"] = "This key no longer have any practical use, and disappears from the inventory like a conjured item. Entering through the Workshop entrance will zone you into the main entrance.", -- Removed with 4.0.3, and started dropping again with 5.2.0 for no apparent reason.
+						--#endif
 					}),
 					i(9446),	-- Electrocutioner Leg
 					i(9448),	-- Spidertank Oilrag
