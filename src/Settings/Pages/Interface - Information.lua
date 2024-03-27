@@ -885,29 +885,31 @@ settings.CreateInformationType = function(key, t)
 end
 
 -- Debugging Information Types
-if app.Debugging then
-	settings.CreateInformationType("ExclusionFilters", {
-		priority = 99999,
-		text = "DEBUG: Exclusion Filters",
-		Process = function(t, reference, tooltipInfo)
-			local excludes = {}
-			local Filter = app.Modules.Filter
-			for filterName,filterFunc in pairs(Filter.Filters) do
-				if not filterFunc(reference) then
-					excludes[#excludes + 1] = Colorize(filterName, app.Colors.ChatLinkError)
-				else
-					excludes[#excludes + 1] = Colorize(filterName, app.Colors.ChatLinkHQT)
-				end
-			end
-			if #excludes > 0 then
-				tinsert(tooltipInfo, {
-					left = "Filter Checks",
-					right = app.TableConcat(excludes, nil, nil, ","),
-				});
+settings.CreateInformationType("ExclusionFilters", {
+	priority = 99999,
+	text = "DEBUG: Exclusion Filters",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, reference, tooltipInfo)
+		local excludes = {}
+		local Filter = app.Modules.Filter
+		for filterName,filterFunc in pairs(Filter.Filters) do
+			if not filterFunc(reference) then
+				excludes[#excludes + 1] = Colorize(filterName, app.Colors.ChatLinkError)
+			else
+				excludes[#excludes + 1] = Colorize(filterName, app.Colors.ChatLinkHQT)
 			end
 		end
-	})
-end
+		if #excludes > 0 then
+			tinsert(tooltipInfo, {
+				left = "Filter Checks",
+			});
+			tinsert(tooltipInfo, {
+				left = app.TableConcat(excludes, nil, nil, ", "),
+				wrap = true
+			});
+		end
+	end
+})
 
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
