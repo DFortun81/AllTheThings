@@ -24,16 +24,16 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				ach(13420),	-- Crucible of Storms Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {	
-					["crs"] = {
-						144754,	-- Fa'thuul the Feared
-						144755,	-- Zaxasj the Speaker
-						145371,	-- Uu'nat, Harbinger of the Void
-					},
-					["g"] = {
-						i(165735),	-- Vantus Rune Technique: Crucible of Storms [Rank 1] (RECIPE!)
-						i(165736),	-- Vantus Rune Technique: Crucible of Storms [Rank 2] (RECIPE!)
-						i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
-					},
+				["crs"] = {
+					144754,	-- Fa'thuul the Feared
+					144755,	-- Zaxasj the Speaker
+					145371,	-- Uu'nat, Harbinger of the Void
+				},
+				["g"] = {
+					i(165735),	-- Vantus Rune Technique: Crucible of Storms [Rank 1] (RECIPE!)
+					i(165736),	-- Vantus Rune Technique: Crucible of Storms [Rank 2] (RECIPE!)
+					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
+				},
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					}),
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(NORMAL_PLUS_RAID, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
@@ -88,6 +88,22 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 					["g"] = {
 						ach(13501),	-- Gotta Bounce
+					},
+				}),
+				e(2332, {	-- Uu'nat, Harbinger of the Void
+					["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
+					["g"] = {
+						ach(13506),	-- A Good Eye-dea
+					},
+				}),
+			}),
+			d(NORMAL_RAID, {
+				e(2328, {	-- The Restless Cabal
+					["crs"] = {
+						144754,	-- Fa'thuul the Feared
+						144755,	-- Zaxasj the Speaker
+					},
+					["g"] = {
 						i(167863),	-- Pillar of the Drowned Cabal
 						i(167841),	-- Abyssal Speaker's Gauntlets
 						i(167833),	-- Fathom Dredgers
@@ -102,7 +118,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2332, {	-- Uu'nat, Harbinger of the Void
 					["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
-						ach(13506),	-- A Good Eye-dea
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
 						i(167217),	-- Legplates of Unbound Anguish
