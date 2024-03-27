@@ -179,12 +179,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			-- Repeatable Treasure Chests?
 			o_repeated({	-- Ritual Offerings
-				["sym"] = {{"select","itemID",
-					205340,	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
-					205338,	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
-					205339,	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
-					205337,	-- Formula: Titan Training Matrix V (RECIPE!)
-				}},
+				["sym"] = {
+					{"select","itemID",
+						205340,	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
+						205338,	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
+						205339,	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
+						205337,	-- Formula: Titan Training Matrix V (RECIPE!)
+					},{"finalize"},
+					{"select","mapID",ZARALEK_CAVERN},
+					{"find","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Obtained Weapons/Armor confirmed by Wowhead/Runaway
+				},
 				["g"] = appendAllGroups({
 					-- Shared Drops
 					i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
