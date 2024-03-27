@@ -316,15 +316,23 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(NORMAL_PLUS_RAID, {
 				["groups"] = {
+					e(2352, {	-- Abyssal Commander Sivara
+						["crs"] = { 151881 },	-- Abyssal Commander Sivara	-- Abyssal Commander Sivara
+						["g"] = {
+							ach(13684),	-- You and What Army?
+						},
+					}),
 					e(2347, {	-- Blackwater Behemoth
 						["crs"] = { 150653 },	-- Blackwater Behemoth
 						["g"] = {
+							ach(13628),	-- Intro to Marine Biology
 							i(169360),	-- Mindlost Bloodfrenzy (PET!)
 						},
 					}),
 					e(2353, {	-- Radiance of Azshara
 						["crs"] = { 152364 },	-- Radiance of Azshara
 						["g"] = {
+							ach(13767),	-- Fun Run
 							i(169694),	-- Aqueous Reliquary
 							i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						},
@@ -332,27 +340,37 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					e(2354, {	-- Lady Ashvane
 						["crs"] = { 152236 },	-- Lady Ashvane
 						["g"] = {
+							ach(13629),	-- Simple Geometry
 							i(169358),	-- Lightless Ambusher (PET!)
 						},
-					}),	
+					}),
+					e(2351, {	-- Orgozoa
+						["crs"] = { 152128 },	-- Orgozoa
+						["g"] = {
+							ach(13724),	-- A Smack of Jellyfish
+						},
+					}),
 					e(2359, {	-- The Queen's Court
 						["crs"] = {
 							152852,	-- Pashmar the Fanatical
 							152853,	-- Silivaz the Zealous
 						},
 						["g"] = {
+							ach(13633),	-- If It Please the Court
 							i(169694),	-- Aqueous Reliquary
 						},
 					}),
 					e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 						["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
 						["g"] = {	
+							ach(13716),	-- Lactose Intolerant
 							i(169362),	-- Nameless Octopode (PET!)
 						},
 					}),			
 					e(2361, {	-- Queen Azshara
 						["crs"] = { 152910 },	-- Queen Azshara
 						["g"] = {
+							ach(13768),	-- The Best of Us
 							i(169694),	-- Aqueous Reliquary
 							i(169348),	-- Zanj'ir Poker (PET!)
 						},
@@ -374,7 +392,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2352, {	-- Abyssal Commander Sivara
 					["crs"] = { 151881 },	-- Abyssal Commander Sivara	-- Abyssal Commander Sivara
 					["g"] = {
-						ach(13684),	-- You and What Army?
 						i(168306),	-- Shiver Venom Lance
 						i(168276),	-- Claw of the Myrmidon
 						i(168901),	-- Royal Scaleguard's Battleaxe
@@ -398,7 +415,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2347, {	-- Blackwater Behemoth
 					["crs"] = { 150653 },	-- Blackwater Behemoth
 					["g"] = {
-						ach(13628),	-- Intro to Marine Biology
 						i(168900),	-- Diver's Folly
 						i(168397),	-- Fang of the Behemoth
 						i(168353),	-- Hood of Lightless Depths
@@ -419,7 +435,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2353, {	-- Radiance of Azshara
 					["crs"] = { 152364 },	-- Radiance of Azshara
 					["g"] = {
-						ach(13767),	-- Fun Run
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
 						i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -440,7 +455,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2354, {	-- Lady Ashvane
 					["crs"] = { 152236 },	-- Lady Ashvane
 					["g"] = {
-						ach(13629),	-- Simple Geometry
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
 						i(168354),	-- Shoulderguards of Crushing Depths
@@ -459,7 +473,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2351, {	-- Orgozoa
 					["crs"] = { 152128 },	-- Orgozoa
 					["g"] = {
-						ach(13724),	-- A Smack of Jellyfish
 						i(168274),	-- Aqua-Pulse Trident
 						i(168897),	-- Tentacle Crusher
 						i(168893),	-- Hatchery Scraper
@@ -483,7 +496,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						152853,	-- Silivaz the Zealous
 					},
 					["g"] = {
-						ach(13633),	-- If It Please the Court
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
 						i(168896),	-- Stormtamer's Orb
@@ -502,7 +514,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 					["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
 					["g"] = {
-						ach(13716),	-- Lactose Intolerant
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
 						i(168349),	-- Shroud of Unmooring Whispers
@@ -520,7 +531,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2361, {	-- Queen Azshara
 					["crs"] = { 152910 },	-- Queen Azshara
 					["g"] = {
-						ach(13768),	-- The Best of Us
 						i(168854),	-- Animated Elemental Heart
 						i(168941),	-- Vitality Redistribution Lattice
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
