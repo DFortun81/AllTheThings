@@ -199,6 +199,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #else
 		["coord"] = { 30.11, 74.64, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
 		-- #endif
+		-- #if AFTER 4.0.6
+		["description"] = "Horde players can access Gnomeregan from the teleporter in Grom'gol Base Camp, Northen Stranglethorn.", -- The teleporter was removed from Booty Bay with 4.0.3, and returned to the game with 4.0.6.
+		-- #endif
 		-- #if BEFORE CATA
 		["zone-text-areaID"] = 133,	-- Gnomeregan
 		-- #elseif BEFORE MOP
