@@ -40,6 +40,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		i(209839, {	-- Tangible Whispers of Dreaming
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		i(217243, {	-- Awakening Ruby Wing
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+		}),
+		i(217242, {	-- Awakening Stone WingDreaming
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+		}),
 		filter(CLOTH, {
 			i(191989),	-- Cobalt Watcher's Cord
 			i(191987),	-- Cobalt Watcher's Cowl

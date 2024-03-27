@@ -117,6 +117,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 							["cost"] = {{ "c", CONQUEST, 375 }},
 						}),
+						i(217018, {	-- Draconic Equipment Chest
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+							["cost"] = {{ "c", CONQUEST, 375 }},
+						}),
 					},
 				}),
 				n(196191, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Malicia

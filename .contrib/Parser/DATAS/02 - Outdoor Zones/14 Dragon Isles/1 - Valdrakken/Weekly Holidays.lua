@@ -95,6 +95,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					-]]
 				}),
+				i(217728, {	-- Cache of Awakened Treasures (N)
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+					--[[
+					["sym"] = {
+						-- TODO: need symlink?
+					},
+					-]]
+				}),
+				i(217729, {	-- Cache of Awakened Treasures (H)
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+					--[[
+					["sym"] = {
+						-- TODO: need symlink?
+					},
+					-]]
+				}),
 				i(202091, {	-- Dragonscale Expedition Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",

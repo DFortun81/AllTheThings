@@ -91,6 +91,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["g"] = {
 					ach(19008),	-- Dream Shaper
 					i(DREAMSURGE_CHRYSALIS),
+					-- #if AFTER 10.2.6.60000
+					i(215364),	-- Cache of Dreams
 				},
 			}),
 		}),

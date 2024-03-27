@@ -4,6 +4,7 @@
 local ASPECTS_TOKEN_OF_MERIT_S1 = 201836;
 local ASPECTS_TOKEN_OF_MERIT_S2 = 205225;
 local ASPECTS_TOKEN_OF_MERIT_S3 = 208821;
+local ASPECTS_TOKEN_OF_MERIT_S4 = 217409;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
@@ -72,21 +73,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					})),
 					i(206028, {	-- Chest of Gold
 						["cost"] = {
-							-- #if BEFORE 10.2.0
+							-- #if BEFORE 10.2.6.60000
+							{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 },
+							-- #elseif BEFORE 10.2.0
 							{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 2 },
 							-- #else
-							{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 },
+							{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 2 },
 							-- #endif
 						},
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_6_SEASON_FOUR }
+						["timeline"] = { ADDED_10_1_0, REMOVED_11_0_0 },
 					}),
 					i(204195, {	-- Drake's Shadowflame Crest
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
 					}),
+					i(218114, {	-- Eye of Awakening
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 3 }},
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }
+					}),
 					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 }},
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
+					}),
+					i(211950, {	-- Lively Clutch of Wyrm's Awakened Crests
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 2 }},
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }
 					}),
 					i(210436, {	-- Nature's Cradle
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
@@ -98,6 +109,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(190454),	-- Depleted Primal Chaos
 						},
 					})),
+					i(212384, {	-- Restless Satchel of Drake's Awakened Crests
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 1 }},
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }
+					}),
 					i(206037, {	-- Ruby Flightstone
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
@@ -106,9 +121,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 }},
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
+					i(217382, {	-- Ruby Flightstone
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 1 }},
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }
+					}),
 					i(210762, {	-- Shimmering Clutch of Wyrm's Dreaming Crests
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 }},
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
+					}),
+					i(211515, {	-- Splintered Spark of Awakening
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 6 }},
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }
 					}),
 					i(208396, {	-- Splintered Spark of Dreams
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
@@ -165,9 +188,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(197711, {	-- Lindormi
 				["coord"] = { 53.2, 56.0, VALDRAKKEN },
-				["timeline"] = { "added 10.2.5.53040" },
 				["g"] = {
-					i(210595),	-- Dreaming Equipment Chest
+					i(210595, {	-- Dreaming Equipment Chest
+						["timeline"] = { "added 10.2.5.53040", REMOVED_10_2_6_SEASON_FOUR },
+					}),
+					i(217241, {	-- Awakened Equipment Chest
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+					}),
 				},
 			}),
 			n(193029, {	-- Lysindra

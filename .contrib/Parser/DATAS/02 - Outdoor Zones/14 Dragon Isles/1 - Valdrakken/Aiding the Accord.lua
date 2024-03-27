@@ -46,6 +46,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(78446, {	-- Aiding the Accord: Superbloom
 					["timeline"] = { ADDED_10_2_0 },
 				}),
+				--^ probably unavailable with 10.2.6 s4?
+				q(80388, {	-- Last Hurrah: Emerald Dream
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+					["g"] = {
+						--spell(440047),	-- Weekly Awakened Activity
+						i(217111),	-- Cache of Awakened Dreams
+					},
+				}),
 			})),
 			n(REWARDS, {
 				i(218269, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Draconic Tome of Awakening (RECIPE!)

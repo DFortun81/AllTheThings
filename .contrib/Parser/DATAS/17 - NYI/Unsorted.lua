@@ -100,11 +100,8 @@ root(ROOTS.Unsorted, {
 				i(217415),	-- Depleted Ruby Flightstone
 				i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
 				i(217420),	-- Large Pouch of Whelpling's Awakened Crests
-				i(211950),	-- Lively Clutch of Wyrm's Awakened Crests
 				i(211951),	-- Pouch of Whelpling's Awakened Crests
 				i(220204),	-- Pouch of Whelpling's Dreaming Crests
-				i(212384),	-- Restless Satchel of Drake's Awakened Crests
-				i(217382),	-- Ruby Flightstone
 				i(211952),	-- Satchel of Drake's Awakened Crests
 				i(220205),	-- Satchel of Drake's Dreaming Crests
 				i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
@@ -127,7 +124,6 @@ root(ROOTS.Unsorted, {
 				i(212175),	-- Draconic Commendation
 			}),
 			n(PROFESSIONS, {
-				i(211515),	-- Splintered Spark of Awakening
 				------ NYI?? ------
 				i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
 				i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest
@@ -600,7 +596,6 @@ root(ROOTS.Unsorted, {
 				i(211772),	-- Glorious Medal of Honor
 				i(211773),	-- Medal of Conquest
 				i(210326),	-- Cracked Medal of Conquest
-				i(217018),	-- Draconic Equipment Chest
 			}),
 			n(SPECIAL, {	-- SEASON 4 PvE
 				n(SETS, {	-- Tier Sets
@@ -929,20 +924,10 @@ root(ROOTS.Unsorted, {
 					-- Legendary
 					i(217698),	-- Scale of Awakening
 					i(217700),	-- Scale of Awakening
-					-- Vault
-					i(217409),	-- Aspects' Token of Merit
-					i(218114),	-- Eye of Awakening
 					-- Unknown
-					i(217241),	-- Awakened Equipment Chest
 					i(217408),	-- Awakened Tempostone
-					i(217243),	-- Awakening Ruby Wing
-					i(217242),	-- Awakening Stone Wing
-					i(217111),	-- Cache of Awakened Dreams
 					i(217110),	-- Cache of Awakened Embers
 					i(217109),	-- Cache of Awakened Storms
-					i(217728),	-- Cache of Awakened Treasures
-					i(217729),	-- Cache of Awakened Treasures
-					i(215364),	-- Cache of Dreams
 					i(215363),	-- Cache of Embers
 					i(215362),	-- Cache of Storms
 				}),
