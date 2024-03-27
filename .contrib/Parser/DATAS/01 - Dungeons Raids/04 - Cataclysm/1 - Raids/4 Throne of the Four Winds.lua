@@ -21,16 +21,37 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 				ach(4987),	-- Throne of the Four Winds Guild Run
 			}),
+			d(NORMAL_PLUS_RAID, {
+				e(154, {	-- The Conclave of Wind
+					["creatureID"] = 45871,
+					["groups"] = {
+						ach(5304),	-- Stay Chill
+						i(152974,	{	-- Drafty (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+					},
+				}),
+				e(155, {	-- Al'Akir
+					["creatureID"] = 46753,
+					["groups"] = {
+						ach(5305),	-- Four Play
+						i(138836, {	-- Illusion: Windfury (ILLUSION!)
+							["classes"] = { SHAMAN },
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(63041),	-- Drake of the South Wind (MOUNT!)
+						i(152973, {	-- Zephyrian Prince (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+					},
+				}),
+			}),
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind
 						["creatureID"] = 45871,
 						["groups"] = {
-							ach(5304),	-- Stay Chill
-							i(152974,	{	-- Drafty (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(63497),	-- Gale Rouser Belt
 							i(63496),	-- Lightning Well Belt
 							i(63490),	-- Sky Strider Belt
@@ -47,21 +68,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(155, {	-- Al'Akir
 						["creatureID"] = 46753,
 						["groups"] = {
-							ach(5305),	-- Four Play
 							i(63683),	-- Helm of the Forlorn Conqueror
 							i(63684),	-- Helm of the Forlorn Protector
 							i(63682),	-- Helm of the Forlorn Vanquisher
-							i(138836, {	-- Illusion: Windfury (ILLUSION!)
-								["classes"] = { SHAMAN },
-								["timeline"] = { ADDED_7_0_3 },
-							}),
 							i(64315),	-- Mantle of the Forlorn Conqueror
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
-							i(63041),	-- Drake of the South Wind (MOUNT!)
-							i(152973, {	-- Zephyrian Prince (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(68127),	-- Stormwake, the Tempest's Reach
 							i(68128),	-- Stormwake, the Tempest's Reach
 							i(68129),	-- Stormwake, the Tempest's Reach
@@ -93,9 +105,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["creatureID"] = 45871,
 						["groups"] = {
 							ach(5122),	-- Heroic: Conclave of Wind
-							i(152974,	{	-- Drafty (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(65374),	-- Gale Rouser Belt
 							i(65377),	-- Lightning Well Belt
 							i(65369),	-- Sky Strider Belt
@@ -121,17 +130,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher
 							i(66998),	-- Essence of the Forlorn
-							i(138836, {	-- Illusion: Windfury (ILLUSION!)
-								["classes"] = { SHAMAN },
-								["timeline"] = { ADDED_7_0_3 },
-							}),
 							i(63041),	-- Drake of the South Wind (MOUNT!)
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
-							i(152973, {	-- Zephyrian Prince (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(68132),	-- Stormwake, the Tempest's Reach
 							i(68130),	-- Stormwake, the Tempest's Reach
 							i(68131),	-- Stormwake, the Tempest's Reach
