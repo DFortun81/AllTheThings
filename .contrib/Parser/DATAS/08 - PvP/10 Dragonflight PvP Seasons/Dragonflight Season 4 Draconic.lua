@@ -86,332 +86,331 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(529),	-- Battle Mender <Name>
 				title(491),	-- Legend <Name>
 			})),
-			--[[
 			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
 						filter(CLOAKS, {
-							i(209776, {	-- Verdant Aspirant's Cape
+							i(216381, {	-- Draconic Aspirant's Cape
 								["cost"] = { { "c", HONOR, 525 }, },
 							}),
-							i(209774, {	-- Verdant Aspirant's Cloak
+							i(216379, {	-- Draconic Aspirant's Cloak
 								["cost"] = { { "c", HONOR, 525 }, },
 							}),
-							i(209775, {	-- Verdant Aspirant's Drape
+							i(216380, {	-- Draconic Aspirant's Drape
 								["cost"] = { { "c", HONOR, 525 }, },
 							}),
-							i(209777, {	-- Verdant Aspirant's Greatcloak
+							i(216382, {	-- Draconic Aspirant's Greatcloak
 								["cost"] = { { "c", HONOR, 525 }, },
 							}),
 						}),
 						filter(CLOTH, {
-							i(209756, {	-- Verdant Aspirant's Silk Belt
+							i(216361, {	-- Draconic Aspirant's Silk Belt
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209759, {	-- Verdant Aspirant's Silk Bindings
+							i(216364, {	-- Draconic Aspirant's Silk Bindings
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209723, {	-- Verdant Aspirant's Silk Cord
+							i(216329, {	-- Draconic Aspirant's Silk Cord
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209743, {	-- Verdant Aspirant's Silk Cover
+							i(216349, {	-- Draconic Aspirant's Silk Cover
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209736, {	-- Verdant Aspirant's Silk Footwraps
+							i(216342, {	-- Draconic Aspirant's Silk Footwraps
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209709, {	-- Verdant Aspirant's Silk Gloves
+							i(216315, {	-- Draconic Aspirant's Silk Gloves
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209741, {	-- Verdant Aspirant's Silk Handwraps
+							i(216347, {	-- Draconic Aspirant's Silk Handwraps
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209711, {	-- Verdant Aspirant's Silk Hood
+							i(216317, {	-- Draconic Aspirant's Silk Hood
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209715, {	-- Verdant Aspirant's Silk Leggings
+							i(216321, {	-- Draconic Aspirant's Silk Leggings
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209747, {	-- Verdant Aspirant's Silk Legwraps
+							i(216353, {	-- Draconic Aspirant's Silk Legwraps
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209720, {	-- Verdant Aspirant's Silk Mantle
+							i(216326, {	-- Draconic Aspirant's Silk Mantle
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209699, {	-- Verdant Aspirant's Silk Robe
+							i(216305, {	-- Draconic Aspirant's Silk Robe
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209753, {	-- Verdant Aspirant's Silk Shawl
+							i(216358, {	-- Draconic Aspirant's Silk Shawl
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209704, {	-- Verdant Aspirant's Silk Treads
+							i(216310, {	-- Draconic Aspirant's Silk Treads
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209731, {	-- Verdant Aspirant's Silk Vestments
+							i(216337, {	-- Draconic Aspirant's Silk Vestments
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209726, {	-- Verdant Aspirant's Silk Wristwraps
+							i(216332, {	-- Draconic Aspirant's Silk Wristwraps
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
 						}),
 						filter(FINGER_F, {
-							i(209769, {	-- Verdant Aspirant's Band
+							i(216374, {	-- Draconic Aspirant's Band
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209768, {	-- Verdant Aspirant's Ring
+							i(216373, {	-- Draconic Aspirant's Ring
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209770, {	-- Verdant Aspirant's Signet
+							i(216375, {	-- Draconic Aspirant's Signet
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
 						}),
 						filter(LEATHER, {
-							i(209762, {	-- Verdant Aspirant's Leather Armguards
+							i(216367, {	-- Draconic Aspirant's Leather Armguards
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209725, {	-- Verdant Aspirant's Leather Belt
+							i(216331, {	-- Draconic Aspirant's Leather Belt
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209706, {	-- Verdant Aspirant's Leather Boots
+							i(216312, {	-- Draconic Aspirant's Leather Boots
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209717, {	-- Verdant Aspirant's Leather Breeches
+							i(216323, {	-- Draconic Aspirant's Leather Breeches
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209758, {	-- Verdant Aspirant's Leather Cord
+							i(216363, {	-- Draconic Aspirant's Leather Cord
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209738, {	-- Verdant Aspirant's Leather Footpads
+							i(216344, {	-- Draconic Aspirant's Leather Footpads
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209707, {	-- Verdant Aspirant's Leather Gloves
+							i(216313, {	-- Draconic Aspirant's Leather Gloves
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209739, {	-- Verdant Aspirant's Leather Grips
+							i(216345, {	-- Draconic Aspirant's Leather Grips
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209713, {	-- Verdant Aspirant's Leather Helm
+							i(216319, {	-- Draconic Aspirant's Leather Helm
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209750, {	-- Verdant Aspirant's Leather Leggings
+							i(216355, {	-- Draconic Aspirant's Leather Leggings
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209751, {	-- Verdant Aspirant's Leather Mantle
+							i(216356, {	-- Draconic Aspirant's Leather Mantle
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209745, {	-- Verdant Aspirant's Leather Mask
+							i(216351, {	-- Draconic Aspirant's Leather Mask
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209718, {	-- Verdant Aspirant's Leather Spaulders
+							i(216324, {	-- Draconic Aspirant's Leather Spaulders
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209734, {	-- Verdant Aspirant's Leather Tunic
+							i(216340, {	-- Draconic Aspirant's Leather Tunic
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209702, {	-- Verdant Aspirant's Leather Vest
+							i(216308, {	-- Draconic Aspirant's Leather Vest
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209729, {	-- Verdant Aspirant's Leather Wristwraps
+							i(216335, {	-- Draconic Aspirant's Leather Wristwraps
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
 						}),
 						filter(MAIL, {
-							i(209724, {	-- Verdant Aspirant's Chain Belt
+							i(216330, {	-- Draconic Aspirant's Chain Belt
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209761, {	-- Verdant Aspirant's Chain Bracer
+							i(216366, {	-- Draconic Aspirant's Chain Bracer
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209757, {	-- Verdant Aspirant's Chain Clasp
+							i(216362, {	-- Draconic Aspirant's Chain Clasp
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209710, {	-- Verdant Aspirant's Chain Gauntlets
+							i(216316, {	-- Draconic Aspirant's Chain Gauntlets
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209742, {	-- Verdant Aspirant's Chain Handguards
+							i(216348, {	-- Draconic Aspirant's Chain Handguards
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209744, {	-- Verdant Aspirant's Chain Headguard
+							i(216350, {	-- Draconic Aspirant's Chain Headguard
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209712, {	-- Verdant Aspirant's Chain Helm
+							i(216318, {	-- Draconic Aspirant's Chain Helm
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209716, {	-- Verdant Aspirant's Chain Leggings
+							i(216322, {	-- Draconic Aspirant's Chain Leggings
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209705, {	-- Verdant Aspirant's Chain Sabatons
+							i(216311, {	-- Draconic Aspirant's Chain Sabatons
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209754, {	-- Verdant Aspirant's Chain Shoulderguards
+							i(216359, {	-- Draconic Aspirant's Chain Shoulderguards
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209721, {	-- Verdant Aspirant's Chain Spaulders
+							i(216327, {	-- Draconic Aspirant's Chain Spaulders
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209737, {	-- Verdant Aspirant's Chain Stompers
+							i(216343, {	-- Draconic Aspirant's Chain Stompers
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209733, {	-- Verdant Aspirant's Chain Tunic
+							i(216339, {	-- Draconic Aspirant's Chain Tunic
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209701, {	-- Verdant Aspirant's Chain Vest
+							i(216307, {	-- Draconic Aspirant's Chain Vest
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209749, {	-- Verdant Aspirant's Chain Wargreaves
+							i(216354, {	-- Draconic Aspirant's Chain Wargreaves
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209728, {	-- Verdant Aspirant's Chain Wristwraps
+							i(216334, {	-- Draconic Aspirant's Chain Wristwraps
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
 						}),
 						filter(NECK_F, {
-							i(209772, {	-- Verdant Aspirant's Choker
+							i(216377, {	-- Draconic Aspirant's Choker
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209771, {	-- Verdant Aspirant's Necklace
+							i(216376, {	-- Draconic Aspirant's Necklace
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209773, {	-- Verdant Aspirant's Pendant
+							i(216378, {	-- Draconic Aspirant's Pendant
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
 						}),
 						filter(PLATE, {
-							i(209760, {	-- Verdant Aspirant's Plate Armguards
+							i(216365, {	-- Draconic Aspirant's Plate Armguards
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209732, {	-- Verdant Aspirant's Plate Armor
+							i(216338, {	-- Draconic Aspirant's Plate Armor
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209700, {	-- Verdant Aspirant's Plate Chestplate
+							i(216306, {	-- Draconic Aspirant's Plate Chestplate
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209727, {	-- Verdant Aspirant's Plate Cuffs
+							i(216333, {	-- Draconic Aspirant's Plate Cuffs
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209708, {	-- Verdant Aspirant's Plate Gauntlets
+							i(216314, {	-- Draconic Aspirant's Plate Gauntlets
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209722, {	-- Verdant Aspirant's Plate Girdle
+							i(216328, {	-- Draconic Aspirant's Plate Girdle
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209755, {	-- Verdant Aspirant's Plate Greatbelt
+							i(216360, {	-- Draconic Aspirant's Plate Greatbelt
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209740, {	-- Verdant Aspirant's Plate Handguards
+							i(216346, {	-- Draconic Aspirant's Plate Handguards
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209730, {	-- Verdant Aspirant's Plate Headguard
+							i(216336, {	-- Draconic Aspirant's Plate Headguard
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209698, {	-- Verdant Aspirant's Plate Helm
+							i(216304, {	-- Draconic Aspirant's Plate Helm
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209714, {	-- Verdant Aspirant's Plate Legguards
+							i(216320, {	-- Draconic Aspirant's Plate Legguards
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(209752, {	-- Verdant Aspirant's Plate Pauldrons
+							i(216357, {	-- Draconic Aspirant's Plate Pauldrons
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209719, {	-- Verdant Aspirant's Plate Shoulders
+							i(216325, {	-- Draconic Aspirant's Plate Shoulders
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209735, {	-- Verdant Aspirant's Plate Stompers
+							i(216341, {	-- Draconic Aspirant's Plate Stompers
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209703, {	-- Verdant Aspirant's Plate Warboots
+							i(216309, {	-- Draconic Aspirant's Plate Warboots
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209746, {	-- Verdant Aspirant's Plate Wargreaves
+							i(216352, {	-- Draconic Aspirant's Plate Wargreaves
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
 						}),
 						filter(REAGENTS, {
-							i(212541, {	-- Greater Verdant Crest of Honor
+							i(211689, {	-- Greater Draconic Crest of Honor
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(212540, {	-- Verdant Crest of Honor
+							i(211688, {	-- Draconic Crest of Honor
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(212539, {	-- Lesser Verdant Crest of Honor
+							i(211687, {	-- Lesser Draconic Crest of Honor
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
 						}),
 						filter(TRINKET_F, {
-							i(209763, {	-- Verdant Aspirant's Badge of Ferocity
+							i(216368, {	-- Draconic Aspirant's Badge of Ferocity
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209766, {	-- Verdant Aspirant's Emblem
+							i(216371, {	-- Draconic Aspirant's Emblem
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209765, {	-- Verdant Aspirant's Insignia of Alacrity
+							i(216370, {	-- Draconic Aspirant's Insignia of Alacrity
 								["cost"] = { { "c", HONOR, 700 } },
 							}),
-							i(209764, {	-- Verdant Aspirant's Medallion
+							i(216369, {	-- Draconic Aspirant's Medallion
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
-							i(209767, {	-- Verdant Aspirant's Sigil of Adaptation
+							i(216372, {	-- Draconic Aspirant's Sigil of Adaptation
 								["cost"] = { { "c", HONOR, 525 } },
 							}),
 						}),
 						n(WEAPONS, {
-							i(210149, {	-- Verdant Aspirant's Battleaxe
+							i(216383, {	-- Draconic Aspirant's Battleaxe
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(210166, {	-- Verdant Aspirant's Blade
+							i(216398, {	-- Draconic Aspirant's Blade
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(210150, {	-- Verdant Aspirant's Dagger
+							i(216384, {	-- Draconic Aspirant's Dagger
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(210154, {	-- Verdant Aspirant's Greatsword
+							i(216388, {	-- Draconic Aspirant's Greatsword
 								["cost"] = { { "c", HONOR, 1750 } },
 							}),
-							i(210161, {	-- Verdant Aspirant's Halberd
-								-- ["cost"] = { { "c", HONOR, } },
+							i(216394, {	-- Draconic Aspirant's Halberd
+								["cost"] = { { "c", HONOR, 1750 } },
 							}),
-							i(210162, {	-- Verdant Aspirant's Hammer
+							i(216395, {	-- Draconic Aspirant's Hammer
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(210163, {	-- Verdant Aspirant's Knife
+							i(216396, {	-- Draconic Aspirant's Knife
 								["cost"] = { { "c", HONOR, 1325 } },
 							}),
-							i(210151, {	-- Verdant Aspirant's Mace
+							i(216385, {	-- Draconic Aspirant's Mace
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
-							i(210152, {	-- Verdant Aspirant's Polearm
+							i(216386, {	-- Draconic Aspirant's Polearm
 								["cost"] = { { "c", HONOR, 1750 } },
 							}),
-							i(210160, {	-- Verdant Aspirant's Recurve
+							i(216393, {	-- Draconic Aspirant's Recurve
 								["cost"] = { { "c", HONOR, 1750 } },
 							}),
-							i(210157, {	-- Verdant Aspirant's Scepter
-								-- ["cost"] = { { "c", HONOR, } },
-							}),
-							i(210158, {	-- Verdant Aspirant's Shield
-								["cost"] = { { "c", HONOR, 425 } },
-							}),
-							i(210153, {	-- Verdant Aspirant's Staff
-								["cost"] = { { "c", HONOR, 1750 } },
-							}),
-							i(210164, {	-- Verdant Aspirant's Sword
-								["cost"] = { { "c", HONOR, 875 } },
-							}),
-							i(210155, {	-- Verdant Aspirant's Torch
-								["cost"] = { { "c", HONOR, 425 } },
-							}),
-							i(210317, {	-- Verdant Aspirant's Wand
+							i(216391, {	-- Draconic Aspirant's Scepter
 								["cost"] = { { "c", HONOR, 1325 } },
-								["timeline"] = { ADDED_10_2_5 },
 							}),
-							i(210156, {	-- Verdant Aspirant's Warglaive
+							i(216392, {	-- Draconic Aspirant's Shield
+								["cost"] = { { "c", HONOR, 425 } },
+							}),
+							i(216387, {	-- Draconic Aspirant's Staff
+								["cost"] = { { "c", HONOR, 1750 } },
+							}),
+							i(216397, {	-- Draconic Aspirant's Sword
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(216389, {	-- Draconic Aspirant's Torch
+								["cost"] = { { "c", HONOR, 425 } },
+							}),
+							i(216399, {	-- Draconic Aspirant's Wand
+								["cost"] = { { "c", HONOR, 1325 } },
+							}),
+							i(216390, {	-- Draconic Aspirant's Warglaive
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
 						}),
 					},
 				}),
 			})),
+			--[[
 			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },

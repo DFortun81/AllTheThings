@@ -408,102 +408,6 @@ root(ROOTS.Unsorted, {
 				i(216301),	-- Draconic Gladiator's Sword
 				i(216302),	-- Draconic Gladiator's Shotel
 				i(216303),	-- Draconic Gladiator's Axestaff
-				i(216304),	-- Draconic Aspirant's Plate Helm
-				i(216305),	-- Draconic Aspirant's Silk Robe
-				i(216306),	-- Draconic Aspirant's Plate Chestplate
-				i(216307),	-- Draconic Aspirant's Chain Vest
-				i(216308),	-- Draconic Aspirant's Leather Vest
-				i(216309),	-- Draconic Aspirant's Plate Warboots
-				i(216310),	-- Draconic Aspirant's Silk Treads
-				i(216311),	-- Draconic Aspirant's Chain Sabatons
-				i(216312),	-- Draconic Aspirant's Leather Boots
-				i(216313),	-- Draconic Aspirant's Leather Gloves
-				i(216314),	-- Draconic Aspirant's Plate Gauntlets
-				i(216315),	-- Draconic Aspirant's Silk Gloves
-				i(216316),	-- Draconic Aspirant's Chain Gauntlets
-				i(216317),	-- Draconic Aspirant's Silk Hood
-				i(216318),	-- Draconic Aspirant's Chain Helm
-				i(216319),	-- Draconic Aspirant's Leather Helm
-				i(216320),	-- Draconic Aspirant's Plate Legguards
-				i(216321),	-- Draconic Aspirant's Silk Leggings
-				i(216322),	-- Draconic Aspirant's Chain Leggings
-				i(216323),	-- Draconic Aspirant's Leather Breeches
-				i(216324),	-- Draconic Aspirant's Leather Spaulders
-				i(216325),	-- Draconic Aspirant's Plate Shoulders
-				i(216326),	-- Draconic Aspirant's Silk Mantle
-				i(216327),	-- Draconic Aspirant's Chain Spaulders
-				i(216328),	-- Draconic Aspirant's Plate Girdle
-				i(216329),	-- Draconic Aspirant's Silk Cord
-				i(216330),	-- Draconic Aspirant's Chain Belt
-				i(216331),	-- Draconic Aspirant's Leather Belt
-				i(216332),	-- Draconic Aspirant's Silk Wristwraps
-				i(216333),	-- Draconic Aspirant's Plate Cuffs
-				i(216334),	-- Draconic Aspirant's Chain Wristwraps
-				i(216335),	-- Draconic Aspirant's Leather Wristwraps
-				i(216336),	-- Draconic Aspirant's Plate Headguard
-				i(216337),	-- Draconic Aspirant's Silk Vestments
-				i(216338),	-- Draconic Aspirant's Plate Armor
-				i(216339),	-- Draconic Aspirant's Chain Tunic
-				i(216340),	-- Draconic Aspirant's Leather Tunic
-				i(216341),	-- Draconic Aspirant's Plate Stompers
-				i(216342),	-- Draconic Aspirant's Silk Footwraps
-				i(216343),	-- Draconic Aspirant's Chain Stompers
-				i(216344),	-- Draconic Aspirant's Leather Footpads
-				i(216345),	-- Draconic Aspirant's Leather Grips
-				i(216346),	-- Draconic Aspirant's Plate Handguards
-				i(216347),	-- Draconic Aspirant's Silk Handwraps
-				i(216348),	-- Draconic Aspirant's Chain Handguards
-				i(216349),	-- Draconic Aspirant's Silk Cover
-				i(216350),	-- Draconic Aspirant's Chain Headguard
-				i(216351),	-- Draconic Aspirant's Leather Mask
-				i(216352),	-- Draconic Aspirant's Plate Wargreaves
-				i(216353),	-- Draconic Aspirant's Silk Legwraps
-				i(216354),	-- Draconic Aspirant's Chain Wargreaves
-				i(216355),	-- Draconic Aspirant's Leather Leggings
-				i(216356),	-- Draconic Aspirant's Leather Mantle
-				i(216357),	-- Draconic Aspirant's Plate Pauldrons
-				i(216358),	-- Draconic Aspirant's Silk Shawl
-				i(216359),	-- Draconic Aspirant's Chain Shoulderguards
-				i(216360),	-- Draconic Aspirant's Plate Greatbelt
-				i(216361),	-- Draconic Aspirant's Silk Belt
-				i(216362),	-- Draconic Aspirant's Chain Clasp
-				i(216363),	-- Draconic Aspirant's Leather Cord
-				i(216364),	-- Draconic Aspirant's Silk Bindings
-				i(216365),	-- Draconic Aspirant's Plate Armguards
-				i(216366),	-- Draconic Aspirant's Chain Bracer
-				i(216367),	-- Draconic Aspirant's Leather Armguards
-				i(216368),	-- Draconic Aspirant's Badge of Ferocity
-				i(216369),	-- Draconic Aspirant's Medallion
-				i(216370),	-- Draconic Aspirant's Insignia of Alacrity
-				i(216371),	-- Draconic Aspirant's Emblem
-				i(216372),	-- Draconic Aspirant's Sigil of Adaptation
-				i(216373),	-- Draconic Aspirant's Ring
-				i(216374),	-- Draconic Aspirant's Band
-				i(216375),	-- Draconic Aspirant's Signet
-				i(216376),	-- Draconic Aspirant's Necklace
-				i(216377),	-- Draconic Aspirant's Choker
-				i(216378),	-- Draconic Aspirant's Pendant
-				i(216379),	-- Draconic Aspirant's Cloak
-				i(216380),	-- Draconic Aspirant's Drape
-				i(216381),	-- Draconic Aspirant's Cape
-				i(216382),	-- Draconic Aspirant's Greatcloak
-				i(216383),	-- Draconic Aspirant's Battleaxe
-				i(216384),	-- Draconic Aspirant's Dagger
-				i(216385),	-- Draconic Aspirant's Mace
-				i(216386),	-- Draconic Aspirant's Polearm
-				i(216387),	-- Draconic Aspirant's Staff
-				i(216388),	-- Draconic Aspirant's Greatsword
-				i(216389),	-- Draconic Aspirant's Torch
-				i(216390),	-- Draconic Aspirant's Warglaive
-				i(216391),	-- Draconic Aspirant's Scepter
-				i(216392),	-- Draconic Aspirant's Shield
-				i(216393),	-- Draconic Aspirant's Recurve
-				i(216394),	-- Draconic Aspirant's Halberd
-				i(216395),	-- Draconic Aspirant's Hammer
-				i(216396),	-- Draconic Aspirant's Knife
-				i(216397),	-- Draconic Aspirant's Sword
-				i(216398),	-- Draconic Aspirant's Blade
-				i(216399),	-- Draconic Aspirant's Wand
 				i(217044),	-- Draconic Warmonger's Battleaxe
 				i(217045),	-- Draconic Warmonger's Hatchet
 				i(217046),	-- Draconic Warmonger's Carver
@@ -587,9 +491,6 @@ root(ROOTS.Unsorted, {
 				i(211684),	-- Lesser Draconic Trophy of Conquest
 				i(211685),	-- Draconic Trophy of Conquest
 				i(211686),	-- Greater Draconic Trophy of Conquest
-				i(211687),	-- Lesser Draconic Crest of Honor
-				i(211688),	-- Draconic Crest of Honor
-				i(211689),	-- Greater Draconic Crest of Honor
 				i(211690),	-- Artisan's Consortium Brochure
 				i(211770),	-- Medal of Honor
 				i(211771),	-- Medal of Honor
