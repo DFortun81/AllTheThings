@@ -358,6 +358,78 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					}),
 				}),
 			}),
+			d(NORMAL_PLUS_RAID, {
+				e(2168, {	-- Taloc
+					["crs"] = {
+						137119,	-- Taloc
+						138959,	-- Coalesced Blood
+						138530,	-- Volatile Droplet
+					},
+					["g"] = {
+						ach(12937),	-- Elevator Music
+						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
+					},
+				}),
+				e(2167, {	-- MOTHER
+					["crs"] = {
+						135452,	-- MOTHER
+						136429,	-- Chamber 01 (MOTHER)
+						137022,	-- Chamber 02 (MOTHER)
+						137023,	-- Chamber 03 (MOTHER)
+					},
+					["g"] = {
+						ach(12938),	-- Parental Controls
+					},
+				}),
+				e(2146, {	-- Fetid Devourer
+					["crs"] = {
+						133298,	-- Fetid Devourer
+						133492,	-- Corruption Corpuscle
+					},
+					["g"] = {
+						ach(12823),	-- Thrash Mouth - All Stars
+					},
+				}),
+				e(2169, {	-- Zek'voz, Herald of N'zoth
+					["crs"] = {
+						134445,	-- Zek'voz <Herald of N'zoth>
+						135824,	-- Nerubian Voidweaver
+						134503,	-- Silithid Warrior
+					},
+					["g"] = {
+						ach(12828),	-- What's in the Box?
+					},
+				}),
+				e(2166, {	-- Vectis
+					["crs"] = { 134442 },	-- Vectis
+					["g"] = {
+						ach(12772),	--  Now We Got Bad Blood
+					},
+				}),
+				e(2195, {	-- Zul, Reborn
+					["crs"] = { 138967 },	-- Zul
+					["g"] = {
+						ach(12830),	-- Edgelords
+						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+						i(166502),	-- Blood-Soaked Tome of Dark Whispers (CI!)
+					},
+				}),
+				e(2194, {	-- Mythrax the Unraveler
+					["crs"] = { 134546 },	-- Mythrax the Unraveler
+					["g"] = {
+						ach(12836),	-- Existential Crisis
+					},
+				}),
+				e(2147, {	-- G'huun
+					["crs"] = {
+						132998,	-- G'huun
+						138529,	-- Dark Young
+					},
+					["g"] = {
+						ach(12551),	-- Double Dribble
+					},
+				}),
+			}),
 			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
@@ -376,8 +448,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						138530,	-- Volatile Droplet
 					},
 					["g"] = {
-						ach(12937),	-- Elevator Music
-						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
 						i(160637),	-- Crimson Colossus Armguards
@@ -399,7 +469,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						137023,	-- Chamber 03 (MOTHER)
 					},
 					["g"] = {
-						ach(12938),	-- Parental Controls
 						i(160681),	-- Glaive of the Keepers
 						i(160683),	-- Latticework Scalpel
 						i(160682),	-- Mother's Twin Gaze
@@ -419,7 +488,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						133492,	-- Corruption Corpuscle
 					},
 					["g"] = {
-						ach(12823),	-- Thrash Mouth - All Stars
 						i(160689),	-- Regurgitated Purifier's Flamestaff
 						i(160685),	-- Biomelding Cleaver
 						i(160616),	-- Horrific Amalgam's Hood
@@ -437,7 +505,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						134503,	-- Silithid Warrior
 					},
 					["g"] = {
-						ach(12828),	-- What's in the Box?
 						i(160688),	-- Void-Binder
 						i(160687),	-- Containment Analysis Baton
 						i(160613),	-- Mantle of Contained Corruption
@@ -455,7 +522,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
 					["g"] = {
-						ach(12772),	--  Now We Got Bad Blood
 						i(160678),	-- Bow of Virulent Infection
 						i(160698),	-- Vector Deflector
 						i(160623),	-- Hood of Pestilent Ichor
@@ -472,8 +538,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
 					["g"] = {
-						ach(12830),	-- Edgelords
-						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
 						i(160630),	-- Crest of the Undying Visionary
@@ -484,13 +548,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(160720),	-- Armbands of Sacrosanct Acts
 						i(160723),	-- Imperious Vambraces
 						i(160724),	-- Cincture of Profane Deeds
-						i(166502),	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					},
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
 					["g"] = {
-						ach(12836),	-- Existential Crisis
 						i(160686),	-- Voror, Gleaming Blade of the Stalwart
 						i(160692),	-- Luminous Edge of Virtue
 						i(160696),	-- Codex of Imminent Ruin
@@ -510,7 +572,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						138529,	-- Dark Young
 					},
 					["g"] = {
-						ach(12551),	-- Double Dribble
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
 						i(160693),	-- Lancet of the Deft Hand
 						i(160694),	-- Re-Origination Pulse Rifle
@@ -544,7 +605,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						138530,	-- Volatile Droplet
 					},
 					["g"] = {
-						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
 						i(160637),	-- Crimson Colossus Armguards
@@ -634,9 +694,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["sym"] = {{"select","itemID",166502}},	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					["g"] = {
-						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
 						i(160630),	-- Crest of the Undying Visionary
@@ -712,7 +770,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 					["g"] = {
 						ach(12524),	-- Mythic: Taloc
-						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
 						i(160637),	-- Crimson Colossus Armguards
@@ -806,10 +863,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["sym"] = {{"select","itemID",166502}},	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					["g"] = {
 						ach(12531),	-- Mythic: Zul, Reborn
-						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
 						i(160630),	-- Crest of the Undying Visionary
