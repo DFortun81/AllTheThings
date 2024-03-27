@@ -52,13 +52,73 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(59461),	-- Fury of Angerforge
 				},
 			}),
+			d(NORMAL_HEROIC_RAID, {
+				e(170, {	-- Magmaw
+					["creatureID"] = 41570,
+					["groups"] = {
+						ach(5306),	-- Parasite Evening
+					},
+				}),
+				e(169, {	-- Omnotron Defense System
+					["creatureID"] = 42179,
+					["groups"] = {
+						ach(5307, {	-- Achieve-a-tron
+							crit(15651),	-- No player hit by Static Shock
+							crit(15652),	-- No player hit by Poison Bomb
+							crit(15653),	-- No player hit by Arcane Annihilator
+							crit(15654),	-- No more than one player hit by each Flamethrower
+						}),
+						i(152966, {	-- Tinytron (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+					},
+				}),
+				e(173, {	-- Maloriak
+					["creatureID"] = 41378,
+					["groups"] = {
+						ach(5310),	-- Aberrant Behavior
+						title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
+							["collectible"] = false,
+						}),
+						i(152967, {	-- Discarded Experiment (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+					},
+				}),
+				e(171, {	-- Atramedes
+					["creatureID"] = 41442,
+					["groups"] = {
+						ach(5308),	-- Silence is Golden
+					},
+				}),
+				e(172, {	-- Chimaeron
+					["creatureID"] = 43296,
+					["groups"] = {
+						ach(5309),	-- Full of Sound and Fury
+					},
+				}),
+				e(174, {	-- Nefarian's End
+					["creatureID"] = 41376,
+					["groups"] = {
+						ach(4849),	-- Keeping it in the Family
+						i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(152968, {	-- Rattlejaw (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+						i(122195, {	-- Music Roll: Legends of Azeroth
+							["timeline"] = { ADDED_6_1_0 },
+						})
+					},
+				}),
+			}),
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					e(170, {	-- Magmaw
 						["creatureID"] = 41570,
 						["groups"] = {
-							ach(5306),	-- Parasite Evening
 							i(59492),	-- Akirus the Worm-Breaker
 							i(59341),	-- Incineratus
 							i(59333),	-- Lava Spine
@@ -76,15 +136,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(169, {	-- Omnotron Defense System
 						["creatureID"] = 42179,
 						["groups"] = {
-							ach(5307, {	-- Achieve-a-tron
-								crit(15651),	-- No player hit by Static Shock
-								crit(15652),	-- No player hit by Poison Bomb
-								crit(15653),	-- No player hit by Arcane Annihilator
-								crit(15654),	-- No more than one player hit by each Flamethrower
-							}),
-							i(152966, {	-- Tinytron (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(59122),	-- Organic Lifeform Inverter
 							i(59219),	-- Power Generator Hood
 							i(59218),	-- Passive Resistor Spaulders
@@ -102,13 +153,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(173, {	-- Maloriak
 						["creatureID"] = 41378,
 						["groups"] = {
-							ach(5310),	-- Aberrant Behavior
-							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
-								["collectible"] = false,
-							}),
-							i(152967, {	-- Discarded Experiment (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(59347),	-- Mace of Acrid Death
 							i(59344),	-- Dragon Bone Warhelm
 							i(59348),	-- Cloak of Biting Chill
@@ -126,7 +170,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(171, {	-- Atramedes
 						["creatureID"] = 41442,
 						["groups"] = {
-							ach(5308),	-- Silence is Golden
 							i(59320),	-- Themios the Darkbringer
 							i(59327),	-- Kingdom's Heart
 							i(59312),	-- Helm of the Blind Seer
@@ -144,7 +187,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(172, {	-- Chimaeron
 						["creatureID"] = 43296,
 						["groups"] = {
-							ach(5309),	-- Full of Sound and Fury
 							i(59314),	-- Pip's Solution Agitator
 							i(59311),	-- Burden of Mortality
 							i(59310),	-- Chaos Beast Bracers
@@ -162,16 +204,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(174, {	-- Nefarian's End
 						["creatureID"] = 41376,
 						["groups"] = {
-							ach(4849),	-- Keeping it in the Family
 							i(63683),	-- Helm of the Forlorn Conqueror
 							i(63684),	-- Helm of the Forlorn Protector
 							i(63682),	-- Helm of the Forlorn Vanquisher
-							i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-							i(152968, {	-- Rattlejaw (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 							i(59459),	-- Andoros, Fist of the Dragon King
 							i(59443),	-- Crul'korak, the Lightning's Arc
@@ -185,9 +220,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(59450),	-- Belt of the Blackhand
 							i(59321),	-- Belt of the Nightmare
 							i(59441),	-- Prestor's Talisman of Machination
-							i(122195, {	-- Music Roll: Legends of Azeroth
-								["timeline"] = { ADDED_6_1_0 },
-							}),
 						},
 					}),
 				},
@@ -220,9 +252,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["creatureID"] = 42179,
 						["groups"] = {
 							ach(5107),	-- Heroic: Omnotron Defense System
-							i(152966, {	-- Tinytron (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(65081),	-- Organic Lifeform Inverter
 							i(65077),	-- Power Generator Hood
 							i(65078),	-- Passive Resistor Spaulders
@@ -241,12 +270,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["creatureID"] = 41378,
 						["groups"] = {
 							ach(5108),	-- Heroic: Maloriak
-							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
-								["collectible"] = false,
-							}),
-							i(152967, {	-- Discarded Experiment (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(67428),	-- Leggings of the Forlorn Conqueror
 							i(67427),	-- Leggings of the Forlorn Protector
 							i(67426),	-- Leggings of the Forlorn Vanquisher
@@ -311,12 +334,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(65001),	-- Crown of the Forlorn Conqueror
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher
-							i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-							i(152968, {	-- Rattlejaw (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(65003),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 							i(65017),	-- Andoros, Fist of the Dragon King
 							i(65024),	-- Crul'korak, the Lightning's Arc
@@ -330,9 +347,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(65022),	-- Belt of the Blackhand
 							i(65057),	-- Belt of the Nightmare
 							i(65026),	-- Prestor's Talisman of Machination
-							i(122195, {	-- Music Roll: Legends of Azeroth
-								["timeline"] = { ADDED_6_1_0 },
-							}),
 						},
 					}),
 				},

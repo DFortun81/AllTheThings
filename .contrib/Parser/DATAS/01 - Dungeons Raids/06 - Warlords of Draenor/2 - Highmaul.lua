@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						ach(8958),	-- Brothers in Arms
 					},
-				})),
+				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					ach(8976),	-- Pair Annihilation
 				})),
@@ -209,6 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = { 78121 },	-- Gorian Warmage
 					}),
 				})),
+			}),
 			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(119343),	-- Eye-Blinder Greatcloak
