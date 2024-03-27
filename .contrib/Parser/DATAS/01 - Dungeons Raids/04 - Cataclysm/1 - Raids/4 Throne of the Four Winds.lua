@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 				ach(4987),	-- Throne of the Four Winds Guild Run
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(NORMAL_HEROIC_DUNGEON, {
 				e(154, {	-- The Conclave of Wind
 					["creatureID"] = 45871,
 					["groups"] = {

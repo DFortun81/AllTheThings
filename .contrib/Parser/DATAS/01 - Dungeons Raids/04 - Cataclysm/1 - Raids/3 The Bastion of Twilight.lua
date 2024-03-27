@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(60210),	-- Crossfire Carbine
 				i(59520),	-- Unheeded Warning
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(NORMAL_HEROIC_DUNGEON, {
 				e(156, {	-- Halfus Wyrmbreaker
 					["creatureID"] = 44600,
 					["groups"] = {
