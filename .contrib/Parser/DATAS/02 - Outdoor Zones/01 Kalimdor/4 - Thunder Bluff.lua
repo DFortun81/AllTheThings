@@ -347,9 +347,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 26,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostmaw's Mane
-							["provider"] = { "i", 5811 },	-- Frostmaw's Mane
+							["providers"] = {
+								{ "i", 5811 },	-- Frostmaw's Mane
+								{ "o", 1770 },	-- Flame of Uzel
+								{ "i", 5810 },	-- Fresh Carcass
+							},
 							["coord"] = { 37, 68, ALTERAC_MOUNTAINS },
-							["cost"] = {{ "i", 5810, 1 }},	-- Fresh Carcass
 							["cr"] = 4504,	-- Frostmaw
 						}),
 						-- #if BEFORE 4.0.3
