@@ -22,29 +22,32 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				ach(4987),	-- Throne of the Four Winds Guild Run
 			}),
 			d(NORMAL_HEROIC_DUNGEON, {
-				e(154, {	-- The Conclave of Wind
-					["creatureID"] = 45871,
-					["groups"] = {
-						ach(5304),	-- Stay Chill
-						i(152974,	{	-- Drafty (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-					},
-				}),
-				e(155, {	-- Al'Akir
-					["creatureID"] = 46753,
-					["groups"] = {
-						ach(5305),	-- Four Play
-						i(138836, {	-- Illusion: Windfury (ILLUSION!)
-							["classes"] = { SHAMAN },
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(63041),	-- Drake of the South Wind (MOUNT!)
-						i(152973, {	-- Zephyrian Prince (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-					},
-				}),
+				["difficulties"] = { 3, 4, 5, 6 },
+				["groups"] = {
+					e(154, {	-- The Conclave of Wind
+						["creatureID"] = 45871,
+						["groups"] = {
+							ach(5304),	-- Stay Chill
+							i(152974,	{	-- Drafty (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+						},
+					}),
+					e(155, {	-- Al'Akir
+						["creatureID"] = 46753,
+						["groups"] = {
+							ach(5305),	-- Four Play
+							i(138836, {	-- Illusion: Windfury (ILLUSION!)
+								["classes"] = { SHAMAN },
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+							i(63041),	-- Drake of the South Wind (MOUNT!)
+							i(152973, {	-- Zephyrian Prince (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+						},
+					}),
+				},
 			}),
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },

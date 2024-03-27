@@ -433,7 +433,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			-- #if AFTER 8.2.5
 			NORMAL_HEROIC_RAID,
 			-- #else
-			NORMAL_HEROIC_DUNGEON,
+			NORMAL_HEROIC_DUNGEON, {
+			["difficulties"] = { 3, 4, 5, 6 },
+			["groups"] = 
 			-- #endif
 			{
 				e(192, {	-- Beth'tilac
@@ -512,7 +514,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						}),
 					},
 				}),
-			}),
+			}
+			-- #if BEFORE 8.2.5
+			}
+			-- #endif
+			),
 			d(
 			-- #if AFTER 8.2.5
 			NORMAL_RAID,
@@ -520,7 +526,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			NORMAL_DUNGEON,
 			-- #endif
 			{
-				["difficulties"] = { 1, 3, 4 },
+				["difficulties"] = {
+					-- #if AFTER 8.2.5
+					NORMAL_DUNGEON,
+					-- #endif
+					3, 4
+				},
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
@@ -686,7 +697,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			HEROIC_DUNGEON,
 			-- #endif
 			{
-				["difficulties"] = { 2, 5, 6 },
+				["difficulties"] = {
+					-- #if AFTER 8.2.5
+					HEROIC_DUNGEON,
+					-- #endif
+					5, 6
+				},
 				["groups"] = {
 					n(VENDORS, {
 						n(54402, {	-- Lurah Wrathvine

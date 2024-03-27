@@ -720,7 +720,35 @@ end
 d = function(id, t)										-- Create a DIFFICULTY Object
 	local difficultyID, ids = GetOrCreateMultiDifficulty(id);
 	t = struct("difficultyID", difficultyID, t);
-	if ids then t.difficulties = ids; end
+	if ids then
+		local oldDifficulties = t.difficulties;
+		if oldDifficulties then
+			local merged,dict,count = {},{},1;
+			for i,d in ipairs(oldDifficulties) do
+				if not dict[d] then
+					dict[d] = count;
+					merged[count] = d;
+					count = count + 1;
+				end
+			end
+			local firstID = ids[1];
+			for i=2,#ids,1 do
+				local d = ids[i];
+				if not dict[d] then
+					dict[d] = count;
+					merged[count] = d;
+					count = count + 1;
+				end
+			end
+			if dict[firstID] then
+				table.remove(merged, dict[firstID]);
+			end
+			table.insert(merged, 1, firstID);
+			t.difficulties = merged;
+		else
+			t.difficulties = ids;
+		end
+	end
 	
 	-- #if AFTER MOP
 	local db = DifficultyDB[difficultyID];

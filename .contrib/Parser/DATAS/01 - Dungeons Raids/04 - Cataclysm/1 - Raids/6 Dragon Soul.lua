@@ -234,43 +234,46 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 			}),
 			d(CUSTOM_DIFFICULTY_ID, {
-				cr(55265, e(311, {	-- Morchok
-					-- Placeholder for criteria
-				})),
-				cr(55308, e(324, {	-- Warlord Zon'ozz
-					-- Placeholder for criteria
-				})),
-				cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-				--	i(152979, {	-- Faceless Mindlasher (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
-				})),
-				cr(55689, e(317, {	-- Hagara the Stormbinder
-					-- Placeholder for criteria
-				})),
-				cr(55294, e(331, {	-- Ultraxion
-					-- Placeholder for criteria
-				})),
-				cr(56427, e(332, {	-- Warmaster Blackthorn
-					-- Placeholder for criteria
-				})),
-				cr(53879, e(318, {	-- Spine of Deathwing
-				--	i(152980, {	-- Corrupted Blood (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
-				--	i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
-				--		["timeline"] = { ADDED_6_1_0 },
-				--	}),
-				})),
-				cr(56173, e(333, {	-- Madness of Deathwing
-				--	i(152981, {	-- Unstable Tendril (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
-				--	i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
-				--		["timeline"] = { ADDED_6_1_0 },
-				--	}),
-				--	currency(615),	-- Essence of Corrupted Deathwing
-				})),
+				["difficulties"] = { 3, 4, 5, 6 },
+				["groups"] = {
+					cr(55265, e(311, {	-- Morchok
+						-- Placeholder for criteria
+					})),
+					cr(55308, e(324, {	-- Warlord Zon'ozz
+						-- Placeholder for criteria
+					})),
+					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+					--	i(152979, {	-- Faceless Mindlasher (PET!)
+					--		["timeline"] = { ADDED_7_3_0 },
+					--	}),
+					})),
+					cr(55689, e(317, {	-- Hagara the Stormbinder
+						-- Placeholder for criteria
+					})),
+					cr(55294, e(331, {	-- Ultraxion
+						-- Placeholder for criteria
+					})),
+					cr(56427, e(332, {	-- Warmaster Blackthorn
+						-- Placeholder for criteria
+					})),
+					cr(53879, e(318, {	-- Spine of Deathwing
+					--	i(152980, {	-- Corrupted Blood (PET!)
+					--		["timeline"] = { ADDED_7_3_0 },
+					--	}),
+					--	i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
+					--		["timeline"] = { ADDED_6_1_0 },
+					--	}),
+					})),
+					cr(56173, e(333, {	-- Madness of Deathwing
+					--	i(152981, {	-- Unstable Tendril (PET!)
+					--		["timeline"] = { ADDED_7_3_0 },
+					--	}),
+					--	i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
+					--		["timeline"] = { ADDED_6_1_0 },
+					--	}),
+					--	currency(615),	-- Essence of Corrupted Deathwing
+					})),
+				},
 			}),
 			d(RAID_FINDER, {
 				-- #if AFTER 6.0.1.18322

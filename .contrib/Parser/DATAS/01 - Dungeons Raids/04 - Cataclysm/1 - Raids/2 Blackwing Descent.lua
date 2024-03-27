@@ -53,65 +53,68 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(NORMAL_HEROIC_DUNGEON, {
-				e(170, {	-- Magmaw
-					["creatureID"] = 41570,
-					["groups"] = {
-						ach(5306),	-- Parasite Evening
-					},
-				}),
-				e(169, {	-- Omnotron Defense System
-					["creatureID"] = 42179,
-					["groups"] = {
-						ach(5307, {	-- Achieve-a-tron
-							crit(15651),	-- No player hit by Static Shock
-							crit(15652),	-- No player hit by Poison Bomb
-							crit(15653),	-- No player hit by Arcane Annihilator
-							crit(15654),	-- No more than one player hit by each Flamethrower
-						}),
-						i(152966, {	-- Tinytron (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-					},
-				}),
-				e(173, {	-- Maloriak
-					["creatureID"] = 41378,
-					["groups"] = {
-						ach(5310),	-- Aberrant Behavior
-						title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
-							["collectible"] = false,
-						}),
-						i(152967, {	-- Discarded Experiment (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-					},
-				}),
-				e(171, {	-- Atramedes
-					["creatureID"] = 41442,
-					["groups"] = {
-						ach(5308),	-- Silence is Golden
-					},
-				}),
-				e(172, {	-- Chimaeron
-					["creatureID"] = 43296,
-					["groups"] = {
-						ach(5309),	-- Full of Sound and Fury
-					},
-				}),
-				e(174, {	-- Nefarian's End
-					["creatureID"] = 41376,
-					["groups"] = {
-						ach(4849),	-- Keeping it in the Family
-						i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(152968, {	-- Rattlejaw (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-						i(122195, {	-- Music Roll: Legends of Azeroth
-							["timeline"] = { ADDED_6_1_0 },
-						})
-					},
-				}),
+				["difficulties"] = { 3, 4, 5, 6 },
+				["groups"] = {
+					e(170, {	-- Magmaw
+						["creatureID"] = 41570,
+						["groups"] = {
+							ach(5306),	-- Parasite Evening
+						},
+					}),
+					e(169, {	-- Omnotron Defense System
+						["creatureID"] = 42179,
+						["groups"] = {
+							ach(5307, {	-- Achieve-a-tron
+								crit(15651),	-- No player hit by Static Shock
+								crit(15652),	-- No player hit by Poison Bomb
+								crit(15653),	-- No player hit by Arcane Annihilator
+								crit(15654),	-- No more than one player hit by each Flamethrower
+							}),
+							i(152966, {	-- Tinytron (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+						},
+					}),
+					e(173, {	-- Maloriak
+						["creatureID"] = 41378,
+						["groups"] = {
+							ach(5310),	-- Aberrant Behavior
+							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
+								["collectible"] = false,
+							}),
+							i(152967, {	-- Discarded Experiment (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+						},
+					}),
+					e(171, {	-- Atramedes
+						["creatureID"] = 41442,
+						["groups"] = {
+							ach(5308),	-- Silence is Golden
+						},
+					}),
+					e(172, {	-- Chimaeron
+						["creatureID"] = 43296,
+						["groups"] = {
+							ach(5309),	-- Full of Sound and Fury
+						},
+					}),
+					e(174, {	-- Nefarian's End
+						["creatureID"] = 41376,
+						["groups"] = {
+							ach(4849),	-- Keeping it in the Family
+							i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+							i(152968, {	-- Rattlejaw (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+							i(122195, {	-- Music Roll: Legends of Azeroth
+								["timeline"] = { ADDED_6_1_0 },
+							})
+						},
+					}),
+				},
 			}),
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },

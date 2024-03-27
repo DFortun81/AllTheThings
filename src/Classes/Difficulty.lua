@@ -152,9 +152,7 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 		local name = GetDifficultyInfo(difficultyID);
 		if not name or name == UNKNOWN then
 			local difficulties = t.difficulties;
-			if not difficulties then
-				return UNKNOWN;
-			else
+			if difficulties then
 				return GetDifficultyName(difficulties[1]) .. "+";
 			end
 		end

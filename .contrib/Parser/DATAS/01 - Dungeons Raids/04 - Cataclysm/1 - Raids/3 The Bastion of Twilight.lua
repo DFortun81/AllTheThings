@@ -39,59 +39,62 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(59520),	-- Unheeded Warning
 			}),
 			d(NORMAL_HEROIC_DUNGEON, {
-				e(156, {	-- Halfus Wyrmbreaker
-					["creatureID"] = 44600,
-					["groups"] = {
-						ach(5300),	-- The Only Escape
-					},
-				}),
-				e(157, {	-- Theralion and Valiona
-					["crs"] = {
-						45992,	-- Valiona
-						45993,	-- Theralion
-					},
-					["groups"] = {
-						ach(4852, {	-- Double Dragon
-							crit(13576),	-- Valiona and Theralion
-							crit(16015, {	-- Twilight Fiends killed
-								["cr"] = 49864,	-- Twilight Fiend
+				["difficulties"] = { 3, 4, 5, 6 },
+				["groups"] = {
+					e(156, {	-- Halfus Wyrmbreaker
+						["creatureID"] = 44600,
+						["groups"] = {
+							ach(5300),	-- The Only Escape
+						},
+					}),
+					e(157, {	-- Theralion and Valiona
+						["crs"] = {
+							45992,	-- Valiona
+							45993,	-- Theralion
+						},
+						["groups"] = {
+							ach(4852, {	-- Double Dragon
+								crit(13576),	-- Valiona and Theralion
+								crit(16015, {	-- Twilight Fiends killed
+									["cr"] = 49864,	-- Twilight Fiend
+								}),
 							}),
-						}),
-						i(152969, {	-- Twilight Clutch-Sister (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-					},
-				}),
-				e(158, {	-- Ascendant Council
-					["crs"] = {
-						43735,	-- Elementium Monstrosity
-						43686,	-- Ignacious
-						43687,	-- Feludius
-						43688,	-- Arion
-						43689,	-- Terrastra
-					},
-					["groups"] = {
-						ach(5311),	-- Elementary
-						i(152970,	{	-- Bound Stream (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-					},
-				}),
-				e(167, {	-- Cho'gall
-					["creatureID"] = 43324,
-					["groups"] = {
-						ach(5312),	-- The Abyss Will Gaze Back Into You
-						i(64315),	-- Mantle of the Forlorn Conqueror
-						i(64316),	-- Mantle of the Forlorn Protector
-						i(64314),	-- Mantle of the Forlorn Vanquisher
-						i(152972, {	-- Faceless Minion (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
-						ig(175159, {	-- Sinister Shadows (RI!)
-							["timeline"] = { ADDED_8_3_0 },
-						}),
-					},
-				}),
+							i(152969, {	-- Twilight Clutch-Sister (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+						},
+					}),
+					e(158, {	-- Ascendant Council
+						["crs"] = {
+							43735,	-- Elementium Monstrosity
+							43686,	-- Ignacious
+							43687,	-- Feludius
+							43688,	-- Arion
+							43689,	-- Terrastra
+						},
+						["groups"] = {
+							ach(5311),	-- Elementary
+							i(152970,	{	-- Bound Stream (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+						},
+					}),
+					e(167, {	-- Cho'gall
+						["creatureID"] = 43324,
+						["groups"] = {
+							ach(5312),	-- The Abyss Will Gaze Back Into You
+							i(64315),	-- Mantle of the Forlorn Conqueror
+							i(64316),	-- Mantle of the Forlorn Protector
+							i(64314),	-- Mantle of the Forlorn Vanquisher
+							i(152972, {	-- Faceless Minion (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+							ig(175159, {	-- Sinister Shadows (RI!)
+								["timeline"] = { ADDED_8_3_0 },
+							}),
+						},
+					}),
+				},
 			}),
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
