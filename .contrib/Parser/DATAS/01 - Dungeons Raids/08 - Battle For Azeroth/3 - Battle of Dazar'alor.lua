@@ -349,6 +349,45 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			d(NORMAL_PLUS_RAID, {
+				e(2344, {	-- Champion of the Light	-- 2333 Horde
+					["crs"] = {
+						144683,	-- Ra'wani Kanae (A)
+						144680,	-- Frida Ironbellows (H)
+					},
+					["g"] = {
+						ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
+					},
+				}),
+				e(2323, {	-- Jadefire Masters	-- 2341 Horde
+					["crs"] = {
+						144692,	-- Anathos Firecaller (A)
+						144691,	-- Ma'ra Grimfang (A)
+						144693,	-- Manceroy Flamefist (H)
+						144690,	-- Mestrah <The Illuminated> (H)
+					},
+					["g"] = {
+						ach(13431),	-- Hidden Dragon
+					},
+				}),
+				e(2340, {	-- Grong, the Revenant	-- 2325 Horde
+					["crs"] = {
+						144638,	-- Grong the Revenant (A)
+						148117,	-- Grong the Revenant (H)
+					},
+					["g"] = {
+						ach(13383),	-- Barrel of Monkeys
+					},
+				}),
+				e(2342, {	-- Opulence
+					["crs"] = {
+						145261,	-- Opulence
+						145274,	-- Yalat's Bulwark
+						145273,	-- The Hand of In'zashi
+					},
+					["g"] = {
+						ach(13345),	-- Praise the Sunflower
+					},
+				}),
 				e(2330, {	-- Loa Council / Conclave of the Chosen
 					["crs"] = {
 						144941,	-- Akunda's Aspect
@@ -357,20 +396,43 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144747,	-- Pa'ku's Aspect
 					},
 					["g"] = {
+						ach(13325),	-- Walk the Dinosaur
 						i(165846),	-- Child of Pa'ku (PET!)
 						i(165847),	-- Thunder Lizard Runt (PET!)
+					},
+				}),
+				e(2335, {	-- King Rastakhan
+					["crs"] = {
+						145644,	-- Bwonsamdi
+						145616,	-- King Rastakhan
+						146492,	-- Phantom of Rage
+						146322,	-- Siegebreaker Roka
+					},
+					["g"] = {
+						ach(13425),	-- We Got Spirit, How About You?
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
+						ach(13401),	-- I Got Next!
 						i(166518),	-- G.M.O.D. (MOUNT!)
 						i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
+					},
+				}),
+				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
+					["crs"] = {
+						146253,	-- Brother Joseph
+						146251,	-- Sister Katherine
+					},
+					["g"] = {
+						ach(13430),	-- De Lurker Be'loa
 					},
 				}),
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
+						ach(13410),	-- Snow Fun Allowed
 						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 					},
 				}),
@@ -393,7 +455,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144680,	-- Frida Ironbellows (H)
 					},
 					["g"] = {
-						ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
 						i(165584),	-- Sunburst Crest
@@ -417,7 +478,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
 					["g"] = {
-						ach(13431),	-- Hidden Dragon
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
 						i(165548),	-- Helm of Tempered Jade
@@ -439,7 +499,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						148117,	-- Grong the Revenant (H)
 					},
 					["g"] = {
-						ach(13383),	-- Barrel of Monkeys
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
 						i(165588),	-- Bonelash Paw
@@ -463,7 +522,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						145273,	-- The Hand of In'zashi
 					},
 					["g"] = {
-						ach(13345),	-- Praise the Sunflower
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
 						i(165593),	-- Greed's Folly
@@ -488,7 +546,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144747,	-- Pa'ku's Aspect
 					},
 					["g"] = {
-						ach(13325),	-- Walk the Dinosaur
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -512,7 +569,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146322,	-- Siegebreaker Roka
 					},
 					["g"] = {
-						ach(13425),	-- We Got Spirit, How About You?
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
 						i(165537),	-- Mantle of the Soulbinder's Caress
@@ -531,7 +587,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
-						ach(13401),	-- I Got Next!
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -551,7 +606,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146251,	-- Sister Katherine
 					},
 					["g"] = {
-						ach(13430),	-- De Lurker Be'loa
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
 						i(165601),	-- Storm-Toothed Kasuyu
@@ -570,7 +624,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
-						ach(13410),	-- Snow Fun Allowed
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm
