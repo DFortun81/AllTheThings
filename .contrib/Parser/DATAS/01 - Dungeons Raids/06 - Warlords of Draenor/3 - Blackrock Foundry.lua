@@ -484,12 +484,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(BLACKHAND, {	-- Blackhand
 					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
-					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
-					i(122200, {	-- Music Roll: A Siege of Worlds
-						["timeline"] = { ADDED_6_1_0 },
-					}),
 				}),
 			}),
 			Difficulty(LFR_RAID, {	-- Queue NPC
@@ -652,6 +646,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(116251),	-- Ironshatter Legplates
 						i(116042),	-- Ram-Carrier's Treads
 						i(116317),	-- Storage House Key
+						i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(122200, {	-- Music Roll: A Siege of Worlds
+							["timeline"] = { ADDED_6_1_0 },
+						}),
 					}),
 				}),
 			}),
@@ -710,6 +710,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(BLACKHAND, {	-- Blackhand
 					ach(8952),	-- Ashes, Ashes...
+					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+					i(122200, {	-- Music Roll: A Siege of Worlds
+						["timeline"] = { ADDED_6_1_0 },
+					}),
 				}),
 			}),
 			Difficulty(NORMAL_RAID).AddGroups({
