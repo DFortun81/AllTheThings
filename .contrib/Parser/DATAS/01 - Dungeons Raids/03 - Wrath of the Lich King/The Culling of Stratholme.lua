@@ -182,11 +182,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(ZONE_DROPS, {
 				i(37115),	-- Crusader's Square Pauldrons
-				i(37697),	-- Trade District Knife
+				i(37697, {	-- Trade District Knife
+					["timeline"] = { "created 3.0.3", "added 7.3.5" },
+				}),
 				i(37116),	-- Epaulets of Market Row
-				i(37699),	-- Festival Lane Girdle
+				i(37699, {	-- Festival Lane Girdle
+					["timeline"] = { "created 3.0.3", "added 7.3.5" },
+				}),
 				i(37117),	-- King's Square Bracers
-				i(37698),	-- Spaulders of Elder's Square
+				i(37698, {	-- Spaulders of Elder's Square
+					["timeline"] = { "created 3.0.3", "added 7.3.5" },
+				}),
 			}),
 			d(NORMAL_DUNGEON, {
 				e(611, {	-- Meathook
