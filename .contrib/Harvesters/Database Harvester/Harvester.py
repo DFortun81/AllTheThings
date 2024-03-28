@@ -556,13 +556,11 @@ def create_missing_files() -> None:
 
 """How to add latest data from a new Build"""
 """Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
-# add_latest_data("10.2.6.53877")
+# add_latest_data("10.2.6.53913")
 """Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 3a: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
-"""Step 2b: If new items has been detected. Please add them in Fast.txt in raw format and run give_name_item()"""
-# give_name_item()
-"""Step 3b: Add the new items to Unsorted.lua and empty Fast.txt"""
+"""Step 2b: If new items has been detected. They will be in FastItem.txt please add them to unsorted."""
 
 """How to generate Missing Files"""
 """Step 1: Delete itemDB.json and questDB.json in DATAS/00 - Item Database folder"""
