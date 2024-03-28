@@ -362,3 +362,22 @@ L.SETTINGS_MENU = {
 		PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
 		SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 };
+
+-- All of the locales related to the Player Tooltips module.
+L.TOOLTIP_MODULE = {
+	RANKS = {
+		AUTHOR = "Author";
+		CONTRIBUTOR = "Contributor";
+		COLLECTOR = "Collector";
+	},
+	TITLES = {
+		XX_THE_COMPLETIONIST = "%s the Completionist";
+		XX_THE_CONTRIBUTOR = "%s";	-- NOTE: Contributors didn't want a different title.
+		XX_THE_EXTERMINATOR = "%s the Exterminator";
+		XX_THE_GOLD_TYCOON = "Gold Tycoon %s";
+		XX_THE_LORD_KING = "Lord King %s";
+		XX_THE_LORD_QUEEN = "Lord Queen %s";
+		XX_THE_SCARAB_LORD = "Scarab Lord %s";
+		XX_THE_HUGGLER = "%s the Huggler";
+	},
+};

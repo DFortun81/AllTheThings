@@ -1,6 +1,7 @@
 
 -- Tooltip Module
 local _, app = ...;
+local L = app.L;
 
 -- Concepts:
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
@@ -16,7 +17,7 @@ timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
-local SearchForLink, L
+local SearchForLink
 
 -- Object Name Lookups
 local objectNamesToIDs = {};
@@ -155,20 +156,22 @@ local PLAYER_TOOLTIPS = {
 };
 
 -- AUTHOR GUIDs
+local AUTHOR_TEXT = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.RANKS.AUTHOR, app.Colors.White);
+local AUTHOR_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_COMPLETIONIST, app.Colors.Raid);
 local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
-		leftSide:SetText("|c" .. app.Colors.Raid .. name .. " the Completionist|r");
+		leftSide:SetText(AUTHOR_TITLE:format(name));
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();
-		rightSide:SetText(app.Modules.Color.Colorize("Author", app.Colors.White));
+		rightSide:SetText(AUTHOR_TEXT);
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L.TITLE, app.Modules.Color.Colorize("Author", app.Colors.White));
+		self:AddDoubleLine(L.TITLE, AUTHOR_TEXT);
 	end
 end
 for i,guid in ipairs({
@@ -180,20 +183,24 @@ for i,guid in ipairs({
 end
 
 -- CONTRIBUTOR GUIDS
+local CONTRIBUTOR_TEXT = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.RANKS.CONTRIBUTOR, app.Colors.White);
+local CONTRIBUTOR_TITLE = L.TOOLTIP_MODULE.TITLES.XX_THE_CONTRIBUTOR;
+local ShouldKeepTitle = CONTRIBUTOR_TITLE == "%s";
+CONTRIBUTOR_TITLE = app.Modules.Color.Colorize(CONTRIBUTOR_TITLE, "ffa335ee");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
-		leftSide:SetText("|cffa335ee" .. leftSide:GetText() .. "|r");
+		leftSide:SetText(CONTRIBUTOR_TITLE:format(ShouldKeepTitle and leftSide:GetText() or name));
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
-	local leftSide = _G[self:GetName() .. "TextLeft2"];
+	leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();
-		rightSide:SetText(app.Modules.Color.Colorize("Contributor", app.Colors.White));
+		rightSide:SetText(CONTRIBUTOR_TEXT);
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L.TITLE, app.Modules.Color.Colorize("Contributor", app.Colors.White));
+		self:AddDoubleLine(L.TITLE, CONTRIBUTOR_TEXT);
 	end
 end
 for i,guid in ipairs({
@@ -278,9 +285,10 @@ for i,guid in ipairs({
 end
 
 -- EXTERMINATOR GUIDs
+local EXTERMINATOR_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_EXTERMINATOR, "ffa335ee");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|cffa335ee" .. name .. " the Exterminator|r"); end
+	if leftSide then leftSide:SetText(EXTERMINATOR_TITLE:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-00B131BB",	-- Aivet
@@ -344,11 +352,13 @@ for i,guid in ipairs({
 end
 
 -- GOLD_TYCOON GUIDs
+local GOLD_TYCOON_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_GOLD_TYCOON, app.Colors.Raid);
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Gold Tycoon " .. name .. "|r"); end
+	if leftSide then leftSide:SetText(GOLD_TYCOON_TITLE:format(name)); end
 end
 for i,guid in ipairs({
+	"Player-4372-014E6539",	-- Complaindept-Atiesh
 	"Player-4372-004A0418",	-- Jubilee
 	"Player-4372-00273DCA",	-- Havadin
 	"Player-4372-0068D548",	-- Headphones
@@ -358,7 +368,32 @@ for i,guid in ipairs({
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
+-- LORD_KING GUIDs
+local LORD_KING_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_LORD_KING, "ffa335ee");
+local LORD_QUEEN_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_LORD_QUEEN, "ffa335ee");
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText(LORD_KING_TITLE:format(name)); end
+end
+for i,guid in ipairs({
+	--"Player-4372-",	-- Boomps-Atiesh
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
+-- LORD_QUEEN GUIDs
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText(LORD_QUEEN_TITLE:format(name)); end
+end
+for i,guid in ipairs({
+	--"Player-4372-",	-- Frax-Atiesh
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
 -- SCARAB_LORD GUIDs
+local SCARAB_LORD_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_SCARAB_LORD, app.Colors.Raid);
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. name .. "|r"); end
@@ -371,9 +406,10 @@ for i,guid in ipairs({
 end
 
 -- THE_HUGGLER GUIDs
+local THE_HUGGLER_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_HUGGLER, "ffF58CBA");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|cffF58CBA" .. name .. " the Huggler|r"); end
+	if leftSide then leftSide:SetText(THE_HUGGLER_TITLE:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-00006B41",	-- Tahiti-Atiesh
@@ -1126,7 +1162,6 @@ api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
 app.AddEventHandler("OnLoad", function()
 	SearchForLink = app.SearchForLink;
-	L = app.L;
 	OnLoad_CacheObjectNames();
 end);
 
