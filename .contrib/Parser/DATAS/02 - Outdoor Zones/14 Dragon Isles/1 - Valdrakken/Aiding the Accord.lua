@@ -16,65 +16,66 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["isWeekly"] = true,
 				["_drop"] = { "g" },
+				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR }
 			},{
 				q(70750),	-- Aiding the Accord
 				q(72068),	-- Aiding the Accord: A Feast For All
 				q(72374),	-- Aiding the Accord: Dragonbane Keep
 				q(75860, {	-- Aiding the Accord: Researchers Under Fire
-					["timeline"] = { ADDED_10_1_0 },
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(75859, {	-- Aiding the Accord: Sniffenseeking
-					["timeline"] = { ADDED_10_1_0 },
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(75861, {	-- Aiding the Accord: Suffusion Camp
-					["timeline"] = { ADDED_10_1_0 },
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(72373),	-- Aiding the Accord: The Hunt is On
 				q(72375),	-- Aiding the Accord: The Isles Call
 				q(75259, {	-- Aiding the Accord: Zskera Vaults
-					["timeline"] = { ADDED_10_0_7 },
+					["timeline"] = { ADDED_10_0_7, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(77254, {	-- Aiding the Accord: Time Rift
-					["timeline"] = { ADDED_10_1_5 },
+					["timeline"] = { ADDED_10_1_5, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(77976, {	-- Aiding the Accord: Dreamsurge
-					["timeline"] = { ADDED_10_1_7 },
+					["timeline"] = { ADDED_10_1_7, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(78447, {	-- Aiding the Accord: Emerald Bounty
-					["timeline"] = { ADDED_10_2_0 },
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(78446, {	-- Aiding the Accord: Superbloom
-					["timeline"] = { ADDED_10_2_0 },
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
-				--^ probably unavailable with 10.2.6 s4?
-				q(80388, {	-- Last Hurrah: Emerald Dream
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
-					["g"] = {
-						--spell(440047),	-- Weekly Awakened Activity
-						i(217111),	-- Cache of Awakened Dreams
-					},
-				}),
-				q(80386, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
-					["g"] = {
-						--spell(440047),	-- Weekly Awakened Activity
-						i(217110),	-- Cache of Awakened Embers
-					},
-				}),
-				q(80385, {	-- Last Hurrah: Dragon Isles
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
-					["g"] = {
-						--spell(440047),	-- Weekly Awakened Activity
-						i(217109),	-- Cache of Awakened Storms
-					},
-				}),
-			})),
-			n(REWARDS, {
-				i(218269, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Draconic Tome of Awakening (RECIPE!)
-					r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-					r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-					r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+				q(80388, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Emerald Dream
+					i(217111),	-- Cache of Awakened Dreams
+					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+					}),
+					i(211515),	-- Splintered Spark of Awakening
 				})),
+				q(80386, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
+					i(217110),	-- Cache of Awakened Embers
+					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+					}),
+					i(211515),	-- Splintered Spark of Awakening
+				})),
+				q(80385, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Dragon Isles
+					i(217109),	-- Cache of Awakened Storms
+					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+					}),
+					i(211515),	-- Splintered Spark of Awakening
+				})),
+			})),
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(200073, {	-- Valdrakken Treasures
 					["sym"] = {
 						{"select", "itemID",
@@ -133,7 +134,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-			}),
+			})),
 		}),
 	}),
 })));
