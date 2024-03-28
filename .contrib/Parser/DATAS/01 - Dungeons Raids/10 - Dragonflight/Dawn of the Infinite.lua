@@ -105,6 +105,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105797),	-- Shay-Nii's Popping Shoulderpads	(Ordos)
 		}),
 		filter(LEATHER, {
+			q(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
+				["name"] = "Quantum Shoulders (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114272),	-- Bloodthorn Spaulders				(NYI)
 			ig(3983),	-- Strapped Shoulderpads			(NYI)
 
@@ -778,6 +782,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
 					["name"] = "Quantum Headpiece (Mail) completed.",
 				}),
+				q(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
+					["name"] = "Quantum Shoulders (Leather) completed.",
+				}),
 				q(77639 , {	-- when you learn everything from Quantum Shoulders (Mail)
 					["name"] = "Quantum Shoulders (Mail) completed.",
 				}),
@@ -1353,7 +1360,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77634),	-- when you learn everything from Quantum ?
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
-		-- q(77640),	-- when you learn everything from Quantum ?
 		-- q(77641),	-- when you learn everything from Quantum ?
 	}),
 });

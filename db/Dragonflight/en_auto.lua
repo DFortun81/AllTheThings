@@ -3282,6 +3282,7 @@ local keys = {
 [77635]="Quantum Chestpiece (Mail) completed.",
 [77636]="Quantum Chestpiece (Leather) completed.",
 [77639]="Quantum Shoulders (Mail) completed.",
+[77640]="Quantum Shoulders (Leather) completed.",
 [77973]="Third Lock",
 [77974]="First Lock",
 [78912]="When donating to the Gala (daily)",
