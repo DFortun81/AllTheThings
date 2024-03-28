@@ -2868,14 +2868,50 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
-						objective(1, {	-- 0/1 Warsong Scout Update
-							["provider"] = { "i", 16764 },	-- Warsong Scout Update
+						q(6546, {	-- Warsong Outrider Update
+							["providers"] = {
+								{ "n", 12864 },	-- Warsong Outrider
+								{ "i", 16746 },	-- Warsong Report
+							},
+							["coord"] = { 83.6, 51.4, ASHENVALE },
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(3, {	-- 0/1 Warsong Outrider Update
+									["questID"] = 6543,	-- The Warsong Reports
+									["provider"] = { "i", 16765 },	-- Warsong Outrider Update
+								}),
+							},
 						}),
-						objective(2, {	-- 0/1 Warsong Runner Update
-							["provider"] = { "i", 16763 },	-- Warsong Runner Update
+						q(6545, {	-- Warsong Runner Update
+							["providers"] = {
+								{ "n", 12863 },	-- Warsong Runner
+								{ "i", 16746 },	-- Warsong Report
+							},
+							["coord"] = { 12.2, 34.2, ASHENVALE },
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(2, {	-- 0/1 Warsong Runner Update
+									["questID"] = 6543,	-- The Warsong Reports
+									["provider"] = { "i", 16763 },	-- Warsong Runner Update
+								}),
+							},
 						}),
-						objective(3, {	-- 0/1 Warsong Outrider Update
-							["provider"] = { "i", 16765 },	-- Warsong Outrider Update
+						q(6547, {	-- Warsong Scout Update
+							["providers"] = {
+								{ "n", 12862 },	-- Warsong Scout
+								{ "i", 16746 },	-- Warsong Report
+							},
+							["coord"] = { 71.04, 68.22, ASHENVALE },
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Warsong Scout Update
+									["questID"] = 6543,	-- The Warsong Reports
+									["provider"] = { "i", 16764 },	-- Warsong Scout Update
+								}),
+							},
 						}),
 					},
 				}),
@@ -3157,32 +3193,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(6546, {	-- Warsong Outrider Update
-					["qg"] = 12864,	-- Warsong Outrider
-					["coord"] = { 83.6, 51.4, ASHENVALE },
-					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
-					["timeline"] = { "removed 4.0.3" },
-					["cost"] = {{ "i", 16746, 1 }},	-- Warsong Report
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 17,
-					["groups"] = {
-						i(16765),	-- Warsong Scout Update
-					},
-				}),
-				q(6545, {	-- Warsong Runner Update
-					["qg"] = 12863,	-- Warsong Runner
-					["coord"] = { 12.2, 34.2, ASHENVALE },
-					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
-					["timeline"] = { "removed 4.0.3" },
-					["cost"] = {{ "i", 16746, 1 }},	-- Warsong Report
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 17,
-					["groups"] = {
-						i(16763),	-- Warsong Runner Update
-					},
-				}),
 				q(6581, {	-- Warsong Saw Blades
 					["qg"] = 12724,	-- Pixel
 					["coord"] = { 73, 61.4, ASHENVALE },
@@ -3194,19 +3204,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 22,
 					["groups"] = {
 						i(16742),	-- Warsong Saw Blades
-					},
-				}),
-				q(6547, {	-- Warsong Scout Update
-					["qg"] = 12862,	-- Warsong Scout
-					["coord"] = { 71.04, 68.22, ASHENVALE },
-					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
-					["timeline"] = { "removed 4.0.3" },
-					["cost"] = {{ "i", 16746, 1 }},	-- Warsong Report
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 17,
-					["groups"] = {
-						i(16764),	-- Warsong Scout Update
 					},
 				}),
 				q(6571, {	-- Warsong Supplies

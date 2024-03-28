@@ -107,7 +107,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(1489, {	-- Hamuul Runetotem
-						["qg"] = 3448,	-- Tonga Runetotem
+						["providers"] = {
+							{ "n", 3448 },	-- Tonga Runetotem
+							{ "i", 10414 },	-- Sample Snapjaw Shell
+						},
 						["sourceQuest"] = 880,	-- Altered Beings
 						["coord"] = { 52.3, 31.9, THE_BARRENS },
 						["timeline"] = { "removed 4.0.3.13277" },

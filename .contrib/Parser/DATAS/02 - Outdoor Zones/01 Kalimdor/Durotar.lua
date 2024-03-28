@@ -2324,25 +2324,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(98, 98, 10),
 				}),
-				q(813, {	-- Finding the Antidote
-					["qg"] = 3189,	-- Kor'ghan
-					["coord"] = { 47, 53.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 7,
-					["groups"] = {
-						objective(1, {	-- 0/4 Venomtail Poison Sac
-							["provider"] = { "i", 4886, 4 },	-- Venomtail Poison Sac
-							["crs"] = {
-								3226,	-- Corrupted Scorpid
-								5823,	-- Death Flayer
-								3127,	-- Venomtail Scorpid
-							},
-						}),
-						i(4904),	-- Venomtail Antidote
-					},
-				}),
 				q(1464, {	-- Fire Sapta
 					["qg"] = 5900,	-- Telf Joolam
 					["sourceQuest"] = 1525,	-- Call of Fire (3/5)
@@ -2378,19 +2359,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131413, {	-- Gor's Re-Inforced Gloves
 							["timeline"] = { "added 7.0.3.22248" },
-						}),
-					},
-				}),
-				q(926, {	-- Flawed Power Stone
-					["provider"] = { "o", 5620 },	-- Flawed Power Stones
-					["sourceQuest"] = 924,	-- The Demon Seed
-					["coord"] = { 62.4, 20, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["groups"] = {
-						i(4986, {	-- Flawed Power Stone
-							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -2816,11 +2784,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3190,	-- Rhinag
 					["coord"] = { 41.54, 18.61, DUROTAR },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
-						objective(1, {	-- 0/1 Venomtail Antidote
-							["provider"] = { "i", 4904 },	-- Venomtail Antidote
+						q(813, {	-- Finding the Antidote
+							["qg"] = 3189,	-- Kor'ghan
+							["coord"] = { 47, 53.4, ORGRIMMAR },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["lvl"] = 7,
+							["groups"] = {
+								objective(1, {	-- 0/4 Venomtail Poison Sac
+									["provider"] = { "i", 4886, 4 },	-- Venomtail Poison Sac
+									["crs"] = {
+										3226,	-- Corrupted Scorpid
+										5823,	-- Death Flayer
+										3127,	-- Venomtail Scorpid
+									},
+								}),
+								objective(1, {	-- 0/1 Venomtail Antidote
+									["questID"] = 812,	-- Need for a Cure
+									["provider"] = { "i", 4904 },	-- Venomtail Antidote
+								}),
+							},
 						}),
 						i(4937, {	-- Charging Buckler
 							["timeline"] = { "removed 4.0.3" },
@@ -3321,12 +3309,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
-						objective(1, {	-- Destroy the Demon Seed
-							["providers"] = {
-								{ "o", 3525 },	-- The Altar of Fire
-								{ "i", 4986 },	-- Flawed Power Stone
+						q(926, {	-- Flawed Power Stone
+							["provider"] = { "o", 5620 },	-- Flawed Power Stones
+							["sourceQuest"] = 924,	-- The Demon Seed
+							["coord"] = { 62.4, 20, THE_BARRENS },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- Destroy the Demon Seed
+									["questID"] = 924,	-- The Demon Seed
+									["providers"] = {
+										{ "o", 3525 },	-- The Altar of Fire
+										{ "i", 4986 },	-- Flawed Power Stone
+									},
+									["coord"] = { 47, 19, THE_BARRENS },
+								}),
 							},
-							["coord"] = { 47, 19, THE_BARRENS },
 						}),
 						i(5420, {	-- Banshee Armor
 							["timeline"] = { "removed 4.1.0" },

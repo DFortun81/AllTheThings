@@ -92,13 +92,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/6 Blueleaf Tuber
-							["provider"] = { "i", 5876 },	-- Blueleaf Tuber
-							["cr"] = 4781,	-- Snufflenose Gopher
-							["cost"] = {
-								{ "i", 5880, 1 },	-- Crate With Holes
-								{ "i", 5897, 1 },	-- Snufflenose Owner's Manual
-								{ "i", 6684, 1 },	-- Snufflenose Command Stick
+							["providers"] = {
+								{ "i", 5876 },	-- Blueleaf Tuber
+								{ "o", 20920 },	-- Blueleaf Tuber
+								{ "i", 5880 },	-- Crate With Holes
+								{ "i", 6684 },	-- Snufflenose Command Stick
 							},
+							["cr"] = 4781,	-- Snufflenose Gopher
+						}),
+						objective(2, {	-- 0/1 Crate With Holes
+							["providers"] = {
+								{ "i", 5880 },	-- Crate With Holes
+								{ "o", 21277 },	-- Crate With Holes
+							},
+							["coord"] = { 62.3, 37.6, THE_BARRENS },
+						}),
+						objective(3, {	-- 0/1 Snufflenose Owner's Manual
+							["providers"] = {
+								{ "i", 5897 },	-- Snufflenose Owner's Manual
+								{ "o", 21530 },	-- Snufflenose Owner's Manual
+							},
+							["coord"] = { 62.3, 37.6, THE_BARRENS },
+						}),
+						objective(4, {	-- 0/1 Snufflenose Command Stick
+							["providers"] = {
+								{ "i", 6684 },	-- Snufflenose Command Stick
+								{ "o", 68865 },	-- Snufflenose Command Stick
+							},
+							["coord"] = { 62.3, 37.6, THE_BARRENS },
 						}),
 						i(6755, {	-- A Small Container of Gems
 							i(6756),	-- Jewelry Box
