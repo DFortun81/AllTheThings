@@ -425,7 +425,7 @@ i(42183, 56004);	-- Abyssal Bag
 i(42173, 55994);	-- Blue Lumberjack Shirt
 i(42176, 55998);	-- Blue Workman's Shirt
 i(42187, 56009);	-- Brilliant Spellthread
-i(43876, 59390);	-- Cloth Scavenging \\ Northern Cloth Scavenging
+-- i(43876, 59390);	-- Cloth Scavenging \\ Northern Cloth Scavenging (This has a few sources and needs looked at further.)
 i(42184, 56005);	-- Glacial Bag
 i(42175, 55996);	-- Green Lumberjack Shirt
 i(42185, 56006);	-- Mysterious Bag
@@ -575,6 +575,164 @@ i(72000, 101920);	-- World Mender's Pants
 --- NYI ---
 i(0, 75287);	--
 i(0, 102171);	--
+
+-------------------
+--- PATCH 5.0.4 ---
+-------------------
+--- TRAINER ---
+i(0, 125551);	-- Bolt of Windwool Cloth
+i(0, 125553);	-- Cerulean Spellthread
+i(0, 125557);	-- Imperial Silk
+i(0, 125496);	-- Master's Spellthread [Rank 3]
+i(0, 125552);	-- Pearlescent Spellthread
+i(0, 125497);	-- Sanctified Spellthread [Rank 3]
+i(0, 130325);	-- Song of Harmony
+i(0, 110426);	-- Tailoring (Zen Master) [REMOVED 8.0.1]
+i(0, 125530);	-- Windwool Belt
+i(0, 125529);	-- Windwool Boots
+i(0, 125528);	-- Windwool Bracers
+i(0, 125526);	-- Windwool Gloves
+i(0, 125523);	-- Windwool Hood
+i(0, 125527);	-- Windwool Pants
+i(0, 125524);	-- Windwool Shoulders
+i(0, 125525);	-- Windwool Tunic
+--- ITEM ---
+i(82430, 125540);	-- Contender's Satin Amice
+i(86367, 125546);	-- Contender's Satin Belt
+i(86360, 125539);	-- Contender's Satin Cowl
+i(86365, 125544);	-- Contender's Satin Cuffs
+i(86366, 125545);	-- Contender's Satin Footwraps
+i(86363, 125542);	-- Contender's Satin Handwraps
+i(86364, 125543);	-- Contender's Satin Pants
+i(86362, 125541);	-- Contender's Satin Raiment
+i(86353, 125532);	-- Contender's Silk Amice
+i(86359, 125538);	-- Contender's Silk Belt
+i(86352, 125531);	-- Contender's Silk Cowl
+i(86357, 125536);	-- Contender's Silk Cuffs
+i(86358, 125537);	-- Contender's Silk Footwraps
+i(82424, 125534);	-- Contender's Silk Handwraps
+i(86356, 125535);	-- Contender's Silk Pants
+i(86354, 125533);	-- Contender's Silk Raiment
+i(86371, 125550);	-- Gloves of Creation
+i(86376, 125555);	-- Greater Cerulean Spellthread
+i(86375, 125554);	-- Greater Pearlescent Spellthread
+i(86380, 125559);	-- Imperial Silk Gloves
+i(86381, 125560);	-- Legacy of the Emperor
+i(86379, 125558);	-- Robe of Eternal Rule
+i(86370, 125549);	-- Robes of Creation
+i(86377, 125556);	-- Royal Satchel
+i(86369, 125548);	-- Spelltwister's Gloves
+i(86368, 125547);	-- Spelltwister's Grand Robe
+i(86382, 125561);	-- Touch of the Light
+--- NYI ---
+i(0, 125481);	--
+i(0, 125482);	--
+i(0, 125483);	--
+
+-------------------
+--- PATCH 5.1.0 ---
+-------------------
+--- TRAINER ---
+i(0, 134585);	-- Bipsi's Gloves
+
+-------------------
+--- PATCH 5.2.0 ---
+-------------------
+--- DISCOVERY ---
+i(0, 137907);	-- Crafted Dreadful Gladiator's Cape of Cruelty
+i(0, 137908);	-- Crafted Dreadful Gladiator's Cape of Prowess
+i(0, 137936);	-- Crafted Dreadful Gladiator's Cloak of Alacrity
+i(0, 137937);	-- Crafted Dreadful Gladiator's Cloak of Prowess
+i(0, 137910);	-- Crafted Dreadful Gladiator's Cord of Accuracy
+i(0, 137909);	-- Crafted Dreadful Gladiator's Cord of Cruelty
+i(0, 137911);	-- Crafted Dreadful Gladiator's Cord of Meditation
+i(0, 137915);	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
+i(0, 137917);	-- Crafted Dreadful Gladiator's Cuffs of Meditation
+i(0, 137916);	-- Crafted Dreadful Gladiator's Cuffs of Prowess
+i(0, 137918);	-- Crafted Dreadful Gladiator's Drape of Cruelty
+i(0, 137920);	-- Crafted Dreadful Gladiator's Drape of Meditation
+i(0, 137919);	-- Crafted Dreadful Gladiator's Drape of Prowess
+i(0, 137942);	-- Crafted Dreadful Gladiator's Felweave Amice
+i(0, 137939);	-- Crafted Dreadful Gladiator's Felweave Cowl
+i(0, 137938);	-- Crafted Dreadful Gladiator's Felweave Handguards
+i(0, 137941);	-- Crafted Dreadful Gladiator's Felweave Raiment
+i(0, 137940);	-- Crafted Dreadful Gladiator's Felweave Trousers
+i(0, 137926);	-- Crafted Dreadful Gladiator's Mooncloth Gloves
+i(0, 137927);	-- Crafted Dreadful Gladiator's Mooncloth Helm
+i(0, 137928);	-- Crafted Dreadful Gladiator's Mooncloth Leggings
+i(0, 137930);	-- Crafted Dreadful Gladiator's Mooncloth Mantle
+i(0, 137929);	-- Crafted Dreadful Gladiator's Mooncloth Robe
+i(0, 137931);	-- Crafted Dreadful Gladiator's Satin Gloves
+i(0, 137932);	-- Crafted Dreadful Gladiator's Satin Hood
+i(0, 137933);	-- Crafted Dreadful Gladiator's Satin Leggings
+i(0, 137935);	-- Crafted Dreadful Gladiator's Satin Mantle
+i(0, 137934);	-- Crafted Dreadful Gladiator's Satin Robe
+i(0, 137925);	-- Crafted Dreadful Gladiator's Silk Amice
+i(0, 137922);	-- Crafted Dreadful Gladiator's Silk Cowl
+i(0, 137921);	-- Crafted Dreadful Gladiator's Silk Handguards
+i(0, 137924);	-- Crafted Dreadful Gladiator's Silk Robe
+i(0, 137923);	-- Crafted Dreadful Gladiator's Silk Trousers
+i(0, 137913);	-- Crafted Dreadful Gladiator's Treads of Alacrity
+i(0, 137912);	-- Crafted Dreadful Gladiator's Treads of Cruelty
+i(0, 137914);	-- Crafted Dreadful Gladiator's Treads of Meditation
+i(0, 138598);	-- Falling Blossom Cowl
+i(0, 138600);	-- Falling Blossom Hood
+i(0, 138599);	-- Falling Blossom Sandals
+i(0, 138597);	-- Falling Blossom Treads
+
+-------------------
+--- PATCH 5.4.0 ---
+-------------------
+--- ITEM ---
+i(100863, 146925);	-- Accelerated Celestial Cloth
+i(100863, 143011);	-- Celestial Cloth
+--- DISCOVERY ---
+i(0, 142964);	-- Belt of the Night Sky
+i(0, 143053);	-- Crafted Malevolent Gladiator's Cape of Cruelty
+i(0, 143054);	-- Crafted Malevolent Gladiator's Cape of Prowess
+i(0, 143082);	-- Crafted Malevolent Gladiator's Cloak of Alacrity
+i(0, 143083);	-- Crafted Malevolent Gladiator's Cloak of Prowess
+i(0, 143056);	-- Crafted Malevolent Gladiator's Cord of Accuracy
+i(0, 143055);	-- Crafted Malevolent Gladiator's Cord of Cruelty
+i(0, 143057);	-- Crafted Malevolent Gladiator's Cord of Meditation
+i(0, 143061);	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+i(0, 143063);	-- Crafted Malevolent Gladiator's Cuffs of Meditation
+i(0, 143062);	-- Crafted Malevolent Gladiator's Cuffs of Prowess
+i(0, 143064);	-- Crafted Malevolent Gladiator's Drape of Cruelty
+i(0, 143066);	-- Crafted Malevolent Gladiator's Drape of Meditation
+i(0, 143065);	-- Crafted Malevolent Gladiator's Drape of Prowess
+i(0, 143088);	-- Crafted Malevolent Gladiator's Felweave Amice
+i(0, 143085);	-- Crafted Malevolent Gladiator's Felweave Cowl
+i(0, 143084);	-- Crafted Malevolent Gladiator's Felweave Handguards
+i(0, 143087);	-- Crafted Malevolent Gladiator's Felweave Raiment
+i(0, 143086);	-- Crafted Malevolent Gladiator's Felweave Trousers
+i(0, 143072);	-- Crafted Malevolent Gladiator's Mooncloth Gloves
+i(0, 143073);	-- Crafted Malevolent Gladiator's Mooncloth Helm
+i(0, 143074);	-- Crafted Malevolent Gladiator's Mooncloth Leggings
+i(0, 143076);	-- Crafted Malevolent Gladiator's Mooncloth Mantle
+i(0, 143075);	-- Crafted Malevolent Gladiator's Mooncloth Robe
+i(0, 143077);	-- Crafted Malevolent Gladiator's Satin Gloves
+i(0, 143078);	-- Crafted Malevolent Gladiator's Satin Hood
+i(0, 143079);	-- Crafted Malevolent Gladiator's Satin Leggings
+i(0, 143081);	-- Crafted Malevolent Gladiator's Satin Mantle
+i(0, 143080);	-- Crafted Malevolent Gladiator's Satin Robe
+i(0, 143071);	-- Crafted Malevolent Gladiator's Silk Amice
+i(0, 143068);	-- Crafted Malevolent Gladiator's Silk Cowl
+i(0, 143067);	-- Crafted Malevolent Gladiator's Silk Handguards
+i(0, 143070);	-- Crafted Malevolent Gladiator's Silk Robe
+i(0, 143069);	-- Crafted Malevolent Gladiator's Silk Trousers
+i(0, 143059);	-- Crafted Malevolent Gladiator's Treads of Alacrity
+i(0, 143058);	-- Crafted Malevolent Gladiator's Treads of Cruelty
+i(0, 143060);	-- Crafted Malevolent Gladiator's Treads of Meditation
+i(0, 142955);	-- Leggings of the Night Sky
+i(0, 142960);	-- White Cloud Belt
+i(0, 142951);	-- White Cloud Leggings
+
+-------------------
+--- PATCH 6.0.1 ---
+-------------------
+--- ITEM ---
+i(115357, 158758);	-- Tailoring (Draenor)
 
 -----------------
 -- PATCH 3.0.3 --
