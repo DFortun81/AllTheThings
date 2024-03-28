@@ -260,7 +260,10 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 				["provider"] = { "n", 192121 },	-- Falron Greygold
 				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366250 },	-- Dragon Isles Jewelcrafting
+				["lockCriteria"] = { 1,
+					"spellID", 366250,	-- Dragon Isles Jewelcrafting
+					"questID", 72247,	-- Dragon Isles Jewelcrafting
+				},
 			}),
 			q(72247, {	-- To the Dragon Isles: Jewelcrafting
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
@@ -270,7 +273,10 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 				["provider"] = { "n", 198398 },	-- Misty Catseye
 				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366250 },	-- Dragon Isles Jewelcrafting
+				["lockCriteria"] = { 1,
+					"spellID", 366250,	-- Dragon Isles Jewelcrafting
+					"questID", 70365,	-- Dragon Isles Jewelcrafting
+				},
 			}),
 			q(70032, {	-- Artisan's Supply: Jeweler's Specs
 				["provider"] = { "n", 192121 },	-- Falron Greygold

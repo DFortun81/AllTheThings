@@ -809,7 +809,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366254 },	-- Dragon Isles Engineering
+				["lockCriteria"] = { 1,
+					"spellID", 366254,	-- Dragon Isles Engineering
+					"questID", 70359,	-- Dragon Isles Engineering
+				},
 			}),
 			q(70359, {	-- Dragon Isles Engineering
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
@@ -819,7 +822,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366254 },	-- Dragon Isles Engineering
+				["lockCriteria"] = { 1,
+					"spellID", 366254,	-- Dragon Isles Engineering
+					"questID", 72242,	-- Dragon Isles Engineering
+				},
 			}),
 			q(70030, {	-- Artisan's Supply: Quality-Assured Optics
 				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>

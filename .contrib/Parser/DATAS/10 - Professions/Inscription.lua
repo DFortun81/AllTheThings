@@ -3879,7 +3879,10 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				},
 				["provider"] = { "n", 198125 },	-- Isarian Shadowplume <Inscription Trainer>
 				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366251 },	-- Dragon Isles Inscription
+				["lockCriteria"] = { 1,
+					"spellID", 366251,	-- Dragon Isles Inscription
+					"questID", 72244,	-- Dragon Isles Inscription
+				},
 			}),
 			q(72244, {	-- Dragon Isles Inscription
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
@@ -3889,7 +3892,10 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				},
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366251 },	-- Dragon Isles Inscription
+				["lockCriteria"] = { 1,
+					"spellID", 366251,	-- Dragon Isles Inscription
+					"questID", 70361,	-- Dragon Isles Inscription
+				},
 			}),
 			q(70031, {	-- Artisan's Supply: Chef's Smooth Rolling Pin
 				["provider"] = { "n", 198125 },	-- Isarian Shadowplume

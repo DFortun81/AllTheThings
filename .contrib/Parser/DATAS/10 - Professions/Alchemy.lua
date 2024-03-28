@@ -783,7 +783,10 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
+				["lockCriteria"] = { 1,
+					"spellID", 366261,	-- Dragon Isles Alchemy
+					"questID", 72245,	-- Dragon Isles Alchemy
+				},
 			}),
 			q(72245, {	-- Dragon Isles Alchemy
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
@@ -793,7 +796,10 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 				["provider"] = { "n", 198392 },	-- An'timon
 				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
+				["lockCriteria"] = { 1,
+					"spellID", 366261,	-- Dragon Isles Alchemy
+					"questID", 70355,	-- Dragon Isles Alchemy
+				},
 			}),
 			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
 				["provider"] = { "n", 191893 },	-- Zherrak

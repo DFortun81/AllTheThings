@@ -1335,7 +1335,10 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				},
 				["provider"] = { "n", 192010 },	-- Szarostrasza <Herbalism Trainer>
 				["coord"] = { 57.4, 65.8, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366242 },	-- Dragon Isles Herbalism
+				["lockCriteria"] = { 1,
+					"spellID", 366242,	-- Dragon Isles Herbalism
+					"questID", 72243,	-- Dragon Isles Herbalism
+				},
 			}),
 			q(72243, {	-- Dragon Isles Herbalism
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
@@ -1345,7 +1348,10 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				},
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366242 },	-- Dragon Isles Herbalism
+				["lockCriteria"] = { 1,
+					"spellID", 366242,	-- Dragon Isles Herbalism
+					"questID", 70364,	-- Dragon Isles Herbalism
+				},
 			}),
 			q(70026, {	-- Artisan's Supply: Lava Beetles
 				["provider"] = { "n", 192549 },	-- Feilin Kuan

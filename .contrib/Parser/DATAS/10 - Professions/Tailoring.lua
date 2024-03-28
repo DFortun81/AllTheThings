@@ -501,7 +501,10 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 				["provider"] = { "n", 192565 },	-- Zayn Starmaker <Tailoring Trainer>
 				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366258 },	-- Dragon Isles Tailoring
+				["lockCriteria"] = { 1,
+					"spellID", 366258,	-- Dragon Isles Tailoring
+					"questID", 70366,	-- Dragon Isles Tailoring
+				},
 			}),
 			q(70366, {	-- Dragon Isles Tailoring
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
@@ -511,7 +514,10 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 				["provider"] = { "n", 191894 },	-- Krillonn
 				["coord"] = { 61.3, 70.1, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366258 },	-- Dragon Isles Tailoring
+				["lockCriteria"] = { 1,
+					"spellID", 366258,	-- Dragon Isles Tailoring
+					"questID", 72249,	-- Dragon Isles Tailoring
+				},
 			}),
 			q(70027, {	-- Artisan's Supply: Surveyor's Cloth Bands
 				["provider"] = { "n", 191894 },	-- Krillonn <Tailoring Trainer>
