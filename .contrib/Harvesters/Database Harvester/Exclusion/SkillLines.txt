@@ -547,3 +547,5 @@
 2870@@@Shipment Prototype
 2887@@@Pet - Felguard
 2816@@@Adventurer
+2897@@@Pet - Core Hound
+2898@@@Explorer Imp

@@ -28,6 +28,14 @@
 20138@@@[DNT] Self-Found Soul (Level 50)
 20139@@@[DNT] Self-Found Soul (Level 60)
 20193@@@[DNT] Self-Found Soul (Removed Self-Found)
+1.15.2.53941
+2716@@@Dual Talent Specialization
+20131@@@[DNT] Discoverer's Delight - Reach Level 60 in Phase 4 (hidden)
+40131@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)
+40132@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)
+40133@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
+40135@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
+40137@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
@@ -1913,7 +1921,6 @@
 2576@@@Blushing Bride
 2596@@@Mr. Bigglesworth kills
 2676@@@I Found One!
-2716@@@Dual Talent Specialization
 2756@@@Argent Aspiration
 2758@@@Argent Valor
 2760@@@Exalted Champion of Darnassus

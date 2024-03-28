@@ -2447,6 +2447,25 @@
 7242@@@Fan of Knives
 1.15.1.53247
 7210@@@Dismantle
+1.15.2.53941
+7254@@@Sebacious Poison
+7255@@@Numbing Poison
+7256@@@Atrophic Poison
+7324@@@+20 Attack Power
+7325@@@+9 Spell Damage and Healing
+7326@@@+18 Healing Spells
+7327@@@Cleaned
+7328@@@+15 Attack Power
+7480@@@+3 Stamina
+7481@@@+3 Intellect
+7482@@@+4 Damage and Healing Spells
+7483@@@+7 Healing Spells
+7484@@@+3 Strength
+7485@@@+3 Agility
+7486@@@+16 Damage and Healing Spells
+7487@@@+14 Damage and Healing Spells
+7488@@@+31 Healing Spells
+7489@@@+19 Damage and Healing Spells
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
