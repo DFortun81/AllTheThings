@@ -42,7 +42,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(205676, {	-- Norzko the Proud
 				["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
-				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
+				["g"] = bubbleDownFiltered({
+					["cost"] = {{ "i", 204843, 1 }},	-- Draconic Mark of Mastery
+					["bonusID"] = 7532,
+				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets

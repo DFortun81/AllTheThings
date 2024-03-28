@@ -93,6 +93,27 @@ local EncounterToLoot = {
 			i(202498),	-- Lurking Specter's Handgrips
 			i(202444),	-- Handguards of the Onyx Crucible
 		}),
+		i(217320, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Dreadful Quickened Bronzestone
+			i(217222),	-- Thorns of the Risen Nightmare
+			i(217227),	-- Screaming Torchfiend's Grasp
+			i(217211),	-- Grips of the Sinister Savant
+		})),
+		i(217321, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mystic Quickened Bronzestone
+			i(217192),	-- Handguards of the Autumn Blaze
+			i(217182),	-- Stormwing Harrier's Handguards
+			i(217231),	-- Wayward Chronomancer's Gloves
+		})),
+		i(217322, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Venerated Quickened Bronzestone
+			i(217197),	-- Heartfire Sentinel's Protectors
+			i(217201),	-- Grasp of the Furnace Seraph
+			i(217237),	-- Greatwolf Outcast's Grips
+		})),
+		i(217323, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Zenith Quickened Bronzestone
+			i(217177),	-- Gauntlets of the Awakened
+			i(217187),	-- Palms of the Waking Fist
+			i(217207),	-- Lurking Specter's Handgrips
+			i(217217),	-- Handguards of the Onyx Crucible
+		})),
 		i(202652),	-- Discarded Creation's Restraint
 		i(202588),	-- Exacting Augmenter's Sabatons
 		i(202571),	-- Experiment 1, Kitewing
@@ -138,6 +159,27 @@ local EncounterToLoot = {
 			i(202496),	-- Lurking Specter's Tights
 			i(202442),	-- Legplates of the Onyx Crucible
 		}),
+		i(217328, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Dreadful Ephemeral Hypersphere
+			i(217224),	-- Greaves of the Risen Nightmare
+			i(217229),	-- Screaming Torchfiend's Blazewraps
+			i(217213),	-- Leggings of the Sinister Savant
+		})),
+		i(217329, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mystic Ephemeral Hypersphere
+			i(217194),	-- Pants of the Autumn Blaze
+			i(217184),	-- Stormwing Harrier's Greaves
+			i(217233),	-- Wayward Chronomancer's Pantaloons
+		})),
+		i(217330, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Venerated Ephemeral Hypersphere
+			i(217199),	-- Heartfire Sentinel's Faulds
+			i(217203),	-- Breeches of the Furnace Seraph
+			i(217239),	-- Greatwolf Outcast's Fur-Lined Kilt
+		})),
+		i(217331, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Zenith Ephemeral Hypersphere
+			i(217179),	-- Legguards of the Awakened
+			i(217189),	-- Legguards of the Waking Fist
+			i(217209),	-- Lurking Specter's Tights
+			i(217219),	-- Legplates of the Onyx Crucible
+		})),
 		i(204319),	-- Bloodfire Extraction Conduit
 		i(202569),	-- Djaruun, Pillar of the Elder Flame
 		i(202655),	-- Elder's Volcanic Binding
@@ -169,6 +211,27 @@ local EncounterToLoot = {
 			i(202500),	-- Lurking Specter's Brigandine
 			i(202446),	-- Battlechest of the Onyx Crucible
 		}),
+		i(217316, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Dreadful Fleeting Hourglass
+			i(217221),	-- Casket of the Risen Nightmare
+			i(217226),	-- Screaming Torchfiend's Binding
+			i(217215),	-- Cursed Robes of the Sinister Savant
+		})),
+		i(217317, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mystic Fleeting Hourglass
+			i(217191),	-- Chestroots of the Autumn Blaze
+			i(217181),	-- Stormwing Harrier's Cuirass
+			i(217235),	-- Wayward Chronomancer's Patchwork
+		})),
+		i(217318, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Venerated Fleeting Hourglass
+			i(217196),	-- Heartfire Sentinel's Brigandine
+			i(217205),	-- Command of the Furnace Seraph
+			i(217236),	-- Greatwolf Outcast's Harness
+		})),
+		i(217319, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Zenith Fleeting Hourglass
+			i(217176),	-- Hauberk of the Awakened
+			i(217186),	-- Chestwrap of the Waking Fist
+			i(217206),	-- Lurking Specter's Brigandine
+			i(217216),	-- Battlechest of the Onyx Crucible
+		})),
 		i(204393),	-- Clasps of the Diligent Steward
 		i(202610),	-- Dragonfire Bomb Dispenser
 		i(204467),	-- Drape of the Dracthyr Trials
@@ -200,6 +263,27 @@ local EncounterToLoot = {
 			i(202497),	-- Lurking Specter's Visage
 			i(202443),	-- Thraexhelm of the Onyx Crucible
 		}),
+		i(217324, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Dreadful Decelerating Chronograph
+			i(217223),	-- Piercing Gaze of the Risen Nightmare
+			i(217228),	-- Screaming Torchfiend's Burning Scowl
+			i(217212),	-- Grimhorns of the Sinister Savant
+		})),
+		i(217325, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mystic Decelerating Chronograph
+			i(217193),	-- Bough of the Autumn Blaze
+			i(217183),	-- Stormwing Harrier's Skullmask
+			i(217232),	-- Wayward Chronomancer's Chronocap
+		})),
+		i(217326, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Venerated Decelerating Chronograph
+			i(217198),	-- Heartfire Sentinel's Forgehelm
+			i(217202),	-- Mask of the Furnace Seraph
+			i(217238),	-- Greatwolf Outcast's Jaws
+		})),
+		i(217327, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Zenith Decelerating Chronograph
+			i(217178),	-- Crown of the Awakened
+			i(217188),	-- Gaze of the Waking Fist
+			i(217208),	-- Lurking Specter's Visage
+			i(217218),	-- Thraexhelm of the Onyx Crucible
+		})),
 		i(202560),	-- Claws of the Blazing Behemoth
 		i(204394),	-- Cuffs of the Savage Serpent
 		i(204395),	-- Hydratooth Girdle
@@ -230,6 +314,27 @@ local EncounterToLoot = {
 			i(202495),	-- Lurking Specter's Shoulderblades
 			i(202441),	-- Pauldrons of the Onyx Crucible
 		}),
+		i(217332, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Dreadful Synchronous Timestrand
+			i(217225),	-- Skewers of the Risen Nightmare
+			i(217230),	-- Screaming Torchfiend's Horned Memento
+			i(217214),	-- Amice of the Sinister Savant
+		})),
+		i(217333, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mystic Synchronous Timestrand
+			i(217195),	-- Mantle of the Autumn Blaze
+			i(217185),	-- Stormwing Harrier's Pinions
+			i(217234),	-- Wayward Chronomancer's Metronomes
+		})),
+		i(217334, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Venerated Synchronous Timestrand
+			i(217200),	-- Heartfire Sentinel's Steelwings
+			i(217204),	-- Devotion of the Furnace Seraph
+			i(217240),	-- Greatwolf Outcast's Companions
+		})),
+		i(217335, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Zenith Synchronous Timestrand
+			i(217180),	-- Talons of the Awakened
+			i(217190),	-- Mantle of the Waking Fist
+			i(217210),	-- Lurking Specter's Shoulderblades
+			i(217220),	-- Pauldrons of the Onyx Crucible
+		})),
 		i(202606),	-- Ashkandur, Fall of the Brotherhood
 		i(202558),	-- Calamity's Herald
 		i(204324),	-- Echo's Maddening Volume
@@ -659,6 +764,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							["sym"] = {{"sub","instance_tier",1208,LFR_RAID}},
 							["up"] = IGNORED_VALUE,
 						}),
+						i(217408, {	-- Awakened Tempostone
+							["sym"] = {{"sub","instance_tier",1208,LFR_RAID}},
+							["up"] = IGNORED_VALUE,
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+						}),
 					}),
 				}),
 			}),
@@ -751,6 +861,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sym"] = {{"sub","instance_tier",1208,NORMAL_RAID}},
 						["up"] = IGNORED_VALUE,
 					}),
+					i(217408, {	-- Awakened Tempostone
+						["sym"] = {{"sub","instance_tier",1208,NORMAL_RAID}},
+						["up"] = IGNORED_VALUE,
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+					}),
 				}),
 			}),
 			-- This is needed for Achievement distribution
@@ -793,6 +908,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(206046, {	-- Void-Touched Curio
 						["sym"] = {{"sub","instance_tier",1208,HEROIC_RAID}},
 						["up"] = IGNORED_VALUE,
+					}),
+					i(217408, {	-- Awakened Tempostone
+						["sym"] = {{"sub","instance_tier",1208,HEROIC_RAID}},
+						["up"] = IGNORED_VALUE,
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
 				}),
 			}),
@@ -857,6 +977,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 					i(206046, {	-- Void-Touched Curio
 						["sym"] = {{"sub","instance_tier",1208,MYTHIC_RAID}},
+					}),
+					i(217408, {	-- Awakened Tempostone
+						["sym"] = {{"sub","instance_tier",1208,MYTHIC_RAID}},
+						["up"] = IGNORED_VALUE,
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
 				}),
 			}),

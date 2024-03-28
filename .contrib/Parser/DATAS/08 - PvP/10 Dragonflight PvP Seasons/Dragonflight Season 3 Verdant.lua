@@ -1664,7 +1664,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			})),
 			filter(RECIPES, {
 				-- #if AFTER 10.2.6.60000
-				n(214682,	-- (Mittzi Threadweave <Verdant Combatant Recipes>
+				n(214682,	-- Mittzi Threadweave <Verdant Combatant Recipes>
 				bubbleDownSelf({["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 					["coord"] = { 44.7, 42.7, VALDRAKKEN },
 					["g"] = sharedData({ ["cost"] = { { "i", MOH, 3 } } }, {

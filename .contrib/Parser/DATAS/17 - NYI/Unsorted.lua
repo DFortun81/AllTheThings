@@ -123,27 +123,8 @@ root(ROOTS.Unsorted, {
 				i(210326),	-- Cracked Medal of Conquest
 			}),
 			n(SPECIAL, {	-- SEASON 4 PvE
+				--[[
 				n(SETS, {	-- Tier Sets
-					i(217316),	-- Dreadful Fleeting Hourglass
-					i(217317),	-- Mystic Fleeting Hourglass
-					i(217318),	-- Venerated Fleeting Hourglass
-					i(217319),	-- Zenith Fleeting Hourglass
-					i(217320),	-- Dreadful Quickened Bronzestone
-					i(217321),	-- Mystic Quickened Bronzestone
-					i(217322),	-- Venerated Quickened Bronzestone
-					i(217323),	-- Zenith Quickened Bronzestone
-					i(217324),	-- Dreadful Decelerating Chronograph
-					i(217325),	-- Mystic Decelerating Chronograph
-					i(217326),	-- Venerated Decelerating Chronograph
-					i(217327),	-- Zenith Decelerating Chronograph
-					i(217328),	-- Dreadful Ephemeral Hypersphere
-					i(217329),	-- Mystic Ephemeral Hypersphere
-					i(217330),	-- Venerated Ephemeral Hypersphere
-					i(217331),	-- Zenith Ephemeral Hypersphere
-					i(217332),	-- Dreadful Synchronous Timestrand
-					i(217333),	-- Mystic Synchronous Timestrand
-					i(217334),	-- Venerated Synchronous Timestrand
-					i(217335),	-- Zenith Synchronous Timestrand
 					i(217176),	-- Hauberk of the Awakened
 					i(217177),	-- Gauntlets of the Awakened
 					i(217178),	-- Crown of the Awakened
@@ -210,6 +191,7 @@ root(ROOTS.Unsorted, {
 					i(217239),	-- Greatwolf Outcast's Fur-Lined Kilt
 					i(217240),	-- Greatwolf Outcast's Companions
 				}),
+				--]]
 				filter(MISC, {
 					-- Dinar
 					i(213089),	-- Antique Bronze Bullion
@@ -217,7 +199,6 @@ root(ROOTS.Unsorted, {
 					i(217698),	-- Scale of Awakening
 					i(217700),	-- Scale of Awakening
 					-- Unknown
-					i(217408),	-- Awakened Tempostone
 					i(215363),	-- Cache of Embers
 					i(215362),	-- Cache of Storms
 				}),
