@@ -2183,6 +2183,7 @@ end");
                             }
                             break;
                         }
+                    case "_wipe":
                     case "_drop":
                     case "_sitemID":
                         item[field] = value;
@@ -2384,8 +2385,6 @@ end");
             /// <summary>
             /// Takes the value of the "_drops" key and applies it to the given data
             /// </summary>
-            /// <param name="data"></param>
-            /// <param name="drops"></param>
             public static void PerformDrops(IDictionary<string, object> data, object drops)
             {
                 if (drops is List<object> dropStrs && dropStrs.Count > 0)
@@ -2400,8 +2399,30 @@ end");
                 }
                 else
                 {
-                    LogError($"Invalid format for '_drop'", drops);
-                    Console.ReadLine();
+                    LogError($"Invalid format for '_drop': {MiniJSON.Json.Serialize(drops)}", data);
+                }
+            }
+
+            /// <summary>
+            /// Takes the value of the "_wipes" key and applies it to the given data
+            /// </summary>
+            public static void PerformWipes(IDictionary<string, object> data)
+            {
+                if (!data.TryGetValue("_wipe", out object wipes)) { return; }
+
+                if (wipes is List<object> wipeStrs && wipeStrs.Count > 0)
+                {
+                    foreach (var wipeObj in wipeStrs)
+                    {
+                        if (data.Remove(wipeObj.ToString()))
+                        {
+                            LogDebug($"INFO: Wiped key: '{wipeObj}'", data);
+                        }
+                    }
+                }
+                else
+                {
+                    LogError($"Invalid format for '_wipe': {MiniJSON.Json.Serialize(wipes)}", data);
                 }
             }
 

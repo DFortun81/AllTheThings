@@ -729,6 +729,7 @@ namespace ATT
                         Objects.PerformDrops(item, value);
                         break;
 
+                    case "_wipe":
                     // Functions
                     case "OnInit":
                     case "OnClick":

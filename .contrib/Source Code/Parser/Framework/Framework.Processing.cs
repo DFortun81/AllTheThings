@@ -866,6 +866,8 @@ namespace ATT
             if (data.ContainsKey("_remove"))
                 return false;
 
+            Objects.PerformWipes(data);
+
             // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
             Objects.PostProcessMergeInto(data);
 
