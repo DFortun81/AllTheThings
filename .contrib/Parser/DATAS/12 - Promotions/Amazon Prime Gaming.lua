@@ -13,7 +13,7 @@ AMAZON_PRIME_GAMING = createHeader({
 });
 root(ROOTS.Promotions, {
 	n(AMAZON_PRIME_GAMING, {
-		["timeline"] = { ADDED_10_0_7 },
+		["timeline"] = { ADDED_10_0_7, "removed 10.2.6" },
 		["groups"] = {
 			i(49282, {	-- Big Battle Bear (MOUNT!)
 				["description"] = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
@@ -61,7 +61,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(23709, {	-- Tabard of Frost 
 				["description"] = "Amazon Prime Gaming reward from February 27th 2024 till March 26th 2024.",
-				["timeline"] = { "added 10.2.5.53441", "removed 10.2.5.99999" },
+				["timeline"] = { "added 10.2.5.53441", "removed 10.2.6" },
 			}),
 		},
 	}),
