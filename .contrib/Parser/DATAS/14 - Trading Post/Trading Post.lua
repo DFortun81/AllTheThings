@@ -1556,8 +1556,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495"} }, {
-			-- , "removed 10.2.6"}
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495", "removed 10.2.6" } }, {
 			-- removed 10.2.5.53913
 			n(MONTHLY_REWARD, {
 				i(211432),	-- Teele (PET!)
