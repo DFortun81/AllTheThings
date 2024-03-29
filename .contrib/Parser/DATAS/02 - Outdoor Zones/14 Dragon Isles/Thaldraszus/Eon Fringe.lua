@@ -214,7 +214,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
-						i(206695),	-- Pale Duskblossom (QI!)
+						o(404232, {	-- Pale Duskblossom
+							i(206695),	-- Pale Duskblossom (QI!)
+						}),
 					},
 				}),
 				q(75971, {	-- Squeaky Toy of Time and Space
