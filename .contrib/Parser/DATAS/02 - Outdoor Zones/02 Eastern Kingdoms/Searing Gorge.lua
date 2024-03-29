@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4910, {	-- Searing Gorge Quests
 					["timeline"] = { "added 4.0.1" },
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38257, {	-- Thorium Advance
 							["sourceQuest"] = 27964,	-- Dig-Boss Dinwhisker
@@ -33,6 +34,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27964,	-- Dig-Boss Dinwhisker
+						27979,	-- Dark Ministry
+						28099,	-- Rasha'krak
+						28035,	-- The Mountain-Lord's Support
+						28064,	-- Welcome to the Brotherhood
+					},
+					-- #endif
 				}),
 			}),
 			battlepets({
@@ -98,6 +108,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Margol's Gigantic Horn
 							["provider"] = { "i", 10005 },	-- Margol's Gigantic Horn
+							["coord"] = { 73.2, 81.6, SEARING_GORGE },
+							["cr"] = 5833,	-- Margol the Rager
 						}),
 					},
 				}),
@@ -113,6 +125,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Dark Iron Memo
 							["provider"] = { "i", 62807 },	-- Dark Iron Memo
+							["coord"] = { 63.6, 59.0, SEARING_GORGE },
 							["cr"] = 47270,	-- Gravius Grimesilt
 						}),
 						i(63218, {	-- Rockhead Helm
@@ -144,6 +157,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(63209, {	-- Glassweb Robes
 							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(3201, {	-- At Last!
+					["providers"] = {
+						{ "n", 8256 },	-- Curator Thorius
+						{ "i", 10022 },	-- Proof of Deed
+					},
+					["sourceQuest"] = 3182,	-- Proof of Deed
+					["coord"] = { 71.4, 16.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+					["groups"] = {
+						i(5396, {	-- Key to Searing Gorge
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -179,6 +209,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.4, 27.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/12 Heavy War Golem
+							["provider"] = { "n", 5854 },	-- Heavy War Golem
+						}),
 						i(63226, {	-- Fat Finger Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -201,6 +234,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 38.4, 27.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Tripetricine
+							["providers"] = {
+								{ "i", 62828 },	-- Twilight Tripetricine
+								{ "i", 62824 },	-- Finister's Spherule
+								{ "i", 62825 },	-- Kiyuubi's Spherule
+								{ "i", 62823 },	-- Letherio's Spherule
+							},
+						}),
+						i(62824, {	-- Finister's Spherule
+							["coord"] = { 25.0, 25.8, SEARING_GORGE },
+							["cr"] = 47311,	-- Minister Finister
+						}),
+						i(62825, {	-- Kiyuubi's Spherule
+							["coord"] = { 18.0, 42.2, SEARING_GORGE },
+							["cr"] = 47309,	-- Minister Kiyuubi
+						}),
+						i(62823, {	-- Letherio's Spherule
+							["coord"] = { 14.6, 37.6, SEARING_GORGE },
+							["cr"] = 47310,	-- Minister Letherio
+						}),
+					},
 				}),
 				q(28033, {	-- Deceit
 					["qg"] = 47393,	-- Mountain-Lord Rendan
@@ -217,12 +272,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27963,	-- A New Master...But Who?
 					["coord"] = { 68.5, 53.3, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Dark Ember
+							["providers"] = {
+								{ "i",  62806 },	-- Dark Ember
+								{ "o", 206573 },	-- Dark Ember
+							},
+							["coord"] = { 56.3, 46.3, SEARING_GORGE },
+							["cr"] = 47271,	-- Dig-Boss Dinwhisker
+						}),
+					},
 				}),
 				q(3441, {	-- Divine Retribution
 					["qg"] = 8479,	-- Kalaran Windblade
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
 					["timeline"] = { "removed 4.0.3.13277" },
 					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- Velarok Story
+							["provider"] = { "n", 8479 },	-- Velarok Windblade
+							["coord"] = { 39.0, 39.0, SEARING_GORGE },
+						}),
+					},
 				}),
 				q(3371, {	-- Dwarven Justice
 					["qg"] = 8256,	-- Curator Thorius
@@ -275,6 +346,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28060,	-- Twisted Twilight Ties
 					["coord"] = { 50.0, 39.0, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Archduke Calcinder banished
+							["providers"] = {
+								{ "n", 47462 },	-- Archduke Calcinder
+								{ "i", 62925 },	-- Consecrated Tripetricine
+							},
+							["coord"] = { 42.8, 29.4, SEARING_GORGE },
+						}),
+					},
 				}),
 				q(13662, {	-- Gaining Acceptance
 					["qg"] = 14624,	-- Master Smith Burninate
@@ -324,6 +404,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27965, -- Thorium Point: The Seat of the Brotherhood
 					["coord"] = { 38.4, 27.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Filled Furnace Flask
+							["providers"] = {
+								{ "i", 62827 },	-- Filled Furnace Flask
+								{ "i", 62826 },	-- Furnace Flasks
+							},
+							["crs"] = {
+								5852,	-- Inferno Elemental
+								5855,	-- Magma Elemental
+							},
+						}),
+					},
 				}),
 				q(27986, {	-- In the Hall of the Mountain-Lord
 					["qg"] = 14627,	-- Hansel Heavyhands
@@ -390,6 +482,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.7, 28.7, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/16 Dark Iron Pillow
+							["providers"] = {
+								{ "i",  18943 },	-- Dark Iron Pillow
+								{ "o", 179828 },	-- Dark Iron Pillow
+							},
+							["cr"] = 14635,	-- Sleepy Dark Iron Worker
+						}),
 						i(63241, {	-- Very Soft Pillow
 							["timeline"] = { "added 4.0.3.13277", "removed 4.0.3.13288" },
 						}),
@@ -411,7 +510,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 5856,	-- Glassweb Spider
 						}),
 						objective(3, {	-- 0/1 Overdue Package
-							["provider"] = { "i", 11724 },	-- Overdue Package
+							["providers"] = {
+								{ "i",  11724 },	-- Overdue Package
+								{ "o", 174728 },	-- Damaged Crate
+							},
 							["coord"] = { 54.1, 55.8, DUSTWALLOW_MARSH },
 						}),
 						objective(4, {	-- 0/1 Goodsteel's Balanced Flameberge
@@ -448,6 +550,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "i",  62933 },	-- Chambermaid Pillaclencher's Pillow
 						{ "o", 179832 },	-- Pillaclencher's Ornate Pillow
+						{ "n",  14636 },	-- Chambermaid Pillaclencher
 					},
 					["sourceQuests"] = {
 						28054,	-- Slavery Is Bad
@@ -459,7 +562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
-							["timeline"] = { "added 3.3.0" },
+							["timeline"] = { "created 1.12.1.10958", "added 3.3.0" },
 						}),
 					},
 				}),
@@ -485,23 +588,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27965, -- Thorium Point: The Seat of the Brotherhood
 					["description"] = "Must be on |cFFFFD700Recon Essentials|r to get this quest.",
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/7 Dark Iron Steamsmiths put to sleep
+							["provider"] = { "n", 5840 },	-- Dark Iron Steamsmith
+						}),
+					},
 				}),
 				q(28034, {	-- Lunk's Adventure: Rendan's Weakness
 					["qg"] = 47429,	-- Lunk
 					["sourceQuest"] = 28033,	-- Deceit
 					["coord"] = { 39.8, 67.9, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Build up a three-dwarf conga line
+							["provider"] = { "n", 47434 },	-- Iron Summit Guard
+						}),
+					},
 				}),
 				q(27959, {	-- Lunk's Adventure: Spider Rider
 					["qg"] = 47429,	-- Lunk
 					["sourceQuest"] = 27957,	-- Lunk No Kill
 					["description"] = "Must be on |cFFFFD700A Proper Antivenom|r to get this quest.",
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/7 Spiders riden
+							["provider"] = { "n", 5856 },	-- Glassweb Spider
+						}),
+					},
 				}),
 				q(27956, {	-- Lunk's Task
 					["qg"] = 47429,	-- Lunk
 					["coord"] = { 68.9, 53.2, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/15 Tempered Flywheel
+							["provider"] = { "i", 62805 },	-- Tempered Flywheel
+							["cr"] = 5853,	-- Tempered War Golem
+						}),
+					},
 				}),
 				q(27984, {	-- Lunthistle's Tale
 					["qg"] = 8436,	-- Zamael Lunthistle
@@ -517,6 +641,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28060,	-- Twisted Twilight Ties
 					["coord"] = { 50.0, 39.0, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/6 Searing Flamewraith slain
+							["provider"] = { "n", 47463 },	-- Searing Flamewraith <Minion of Calcinder>
+						}),
+					},
 				}),
 				q(28514, {	-- Mouton Flamestar (A)
 					["qg"] = 14625,	-- Overseer Oilfist
@@ -538,6 +667,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.1, 27.0, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- Secure entrance into the Slag Pit
+							["provider"] = { "n", 47467 },	-- Brotherhood Flying Machine
+						}),
 						i(63236, {	-- Mountain-Lord's Legguards
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -555,6 +687,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 68.4, 53.2, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/8 Ash Chicken
+							["provider"] = { "i", 62934 },	-- Ash Chicken
+							["cr"] = 47278,	-- Ash Chicken
+						}),
 						i(63215, {	-- Coalpart's Bracers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -604,12 +740,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27984,	-- Lunthistle's Tale
 					["coord"] = { 29.6, 26.2, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Prayer to Elune
+							["provider"] = { "i", 10458 },	-- Prayer to Elune
+							["crs"] = {
+								5860,	-- Twilight Dark Shaman
+								5861,	-- Twilight Fire Guard
+								5862,	-- Twilight Geomancer
+								8419,	-- Twilight Idolater
+							},
+						}),
+					},
+				}),
+				q(3182, {	-- Proof of Deed
+					["providers"] = {
+						{ "n", 3836 },	-- Mountaineer Pebblebitty
+						{ "i", 10005 },	-- Margol's Gigantic Horn
+					},
+					["sourceQuest"] = 3181,	-- The Horn of the Beast
+					["coord"] = { 18.2, 84.0, LOCH_MODAN },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(28099, {	-- Rasha'krak
 					["qg"] = 14625,	-- Overseer Oilfist
 					["sourceQuest"] = 27965, -- Thorium Point: The Seat of the Brotherhood
 					["coord"] = { 38.1, 26.9, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Rasha'krak's Bracers of Binding
+							["provider"] = { "i", 63028 },	-- Rasha'krak's Bracers of Binding
+							["cr"] = 47553,	-- Rasha'krak <Minion of Calcinder>
+						}),
+					},
 				}),
 				q(27977, {	-- Recon Essentials
 					["qg"] = 14626,	-- Taskmaster Scrange
@@ -617,6 +781,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.1, 28.2, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Smithing Tuyere
+							["provider"] = { "i", 18959 },	-- Smithing Tuyere
+							["cr"] = 5840,	-- Dark Iron Steamsmith
+						}),
+						objective(2, {	-- 0/1 Lookout's Spyglass
+							["provider"] = { "i", 18960 },	-- Lookout's Spyglass
+							["cr"] = 8566,	-- Dark Iron Lookout
+						}),
 						i(63222, {	-- Steamsmith Helm
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -640,7 +812,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mysterious Artifact
-							["provider"] = { "i", 10442 },	-- Mysterious Artifact
+							["providers"] = {
+								{ "i",  10442 },	-- Mysterious Artifact
+								{ "o", 148506 },	-- Twilight Artifact
+							},
 							["coord"] = { 29.2, 25.9, SEARING_GORGE },
 						}),
 					},
@@ -703,7 +878,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 41.6, 26.6, SEARING_GORGE },
 							["cr"] = 8391,	-- Lathoric the Black
 						}),
-						objective(2, {
+						objective(2, {	-- 0/1 Heart of Obsidion
 							["provider"] = { "i", 10446 },	-- Heart of Obsidion
 							["coord"] = { 42.6, 27.0, SEARING_GORGE },
 							["cr"] = 8400,	-- Obsidion
@@ -725,6 +900,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.8, 51.6, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Obsidion slain
+							["provider"] = { "n", 8400 },	-- Obsidion
+							["coord"] = { 41.4, 24.4, SEARING_GORGE },
+						}),
+						objective(2, {	-- 0/1 Lathoric the Black slain
+							["provider"] = { "n", 8391 },	-- Lathoric the Black
+							["coord"] = { 41.2, 25.6, SEARING_GORGE },
+						}),
 						i(63240, {  -- Dark Iron Axe
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -750,19 +933,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- Western Tower Ablaze
-							["provider"] = { "i", 10515 },	-- Torch of Retribution
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149025 },	-- Sentry Brazier
+							},
 							["coord"] = { 33, 60, SEARING_GORGE },
 						}),
 						objective(2, {	-- Southern Tower Ablaze
-							["provider"] = { "i", 10515 },	-- Torch of Retribution
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149030 },	-- Sentry Brazier
+							},
 							["coord"] = { 44, 60, SEARING_GORGE },
 						}),
 						objective(3, {	-- Eastern Tower Ablaze
-							["provider"] = { "i", 10515 },	-- Torch of Retribution
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149031 },	-- Sentry Brazier
+							},
 							["coord"] = { 50, 55, SEARING_GORGE },
 						}),
 						objective(4, {	-- Northern Tower Ablaze
-							["provider"] = { "i", 10515 },	-- Torch of Retribution
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149032 },	-- Sentry Brazier
+							},
 							["coord"] = { 33, 54, SEARING_GORGE },
 						}),
 						i(10742, {	-- Dragonflight Leggings
@@ -781,6 +976,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 					["coord"] = { 39.4, 67.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Western tower ablaze
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149032 },	-- Sentry Brazier
+							},
+							["coord"] = { 33.30, 54.48, SEARING_GORGE },
+						}),
+						objective(2, {	-- Southwestern tower ablaze
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149025 },	-- Sentry Brazier
+							},
+							["coord"] = { 35.66, 60.68, SEARING_GORGE },
+						}),
+						objective(3, {	-- Southeastern tower ablaze
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149030 },	-- Sentry Brazier
+							},
+							["coord"] = { 44.03, 60.93, SEARING_GORGE },
+						}),
+						objective(4, {	-- Eastern tower ablaze
+							["providers"] = {
+								{ "i",  10515 },	-- Torch of Retribution
+								{ "o", 149031 },	-- Sentry Brazier
+							},
+							["coord"] = { 50.60, 54.90, SEARING_GORGE },
+						}),
+					},
 				}),
 				q(3379, {	-- Shadoweaver
 					["qg"] = 8439,	-- Nilith Lokrav
@@ -789,8 +1014,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = TAILORING,
 					["lvl"] = 40,
 					["groups"] = {
-						objective(1, {	-- 0/5 Shadowsilk Poacher <The Undermarket>
-							["provider"] = { "n", 8442 },	-- Shadowsilk Poacher
+						objective(1, {	-- 0/5 Shadowsilk Poacher slain
+							["provider"] = { "n", 8442 },	-- Shadowsilk Poacher <The Undermarket>
 						}),
 						i(10461, {	-- Shadowy Bracers
 							["timeline"] = { "removed 4.0.3" },
@@ -802,12 +1027,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 					["coord"] = { 39.4, 67.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/9 Dark Iron Marksman slain
+							["provider"] = { "n", 8338 },	-- Dark Iron Marksman
+						}),
+					},
 				}),
 				q(28054, {	-- Slavery is Bad
 					["qg"] = 47393,	-- Mountain-Lord Rendan
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 					["coord"] = { 40.8, 51.6, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Dark Iron Taskmaster or Slaver slain
+							["providers"] = {
+								{ "n", 5844 },	-- Dark Iron Slaver
+								{ "n", 5846 },	-- Dark Iron Taskmaster
+								{ "n", 47533 },	-- Dark Iron Digmaster
+							},
+						}),
+					},
 				}),
 				q(3462, {	-- Squire Maltrake
 					["qg"] = 8479,	-- Kalaran Windblade
@@ -846,10 +1085,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(3368, {	-- Suntara Stones (2/2)
-					["provider"] = { "i", 10443 },	-- Singed Letter
+					["providers"] = {
+						{ "i",  10443 },	-- Singed Letter
+						{ "o", 175704 },	-- Singed Letter
+					},
 					["sourceQuest"] = 3367,	-- Suntara Stones (1/2)
 					-- #if BEFORE 4.0.3.13277
-					["description"] = "The Signed Letter will be on the ground after you finish escorting Dorius Stonetender.",
+					["description"] = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 					-- #endif
 					["coord"] = { 74.5, 19.3, SEARING_GORGE },
 					["timeline"] = { "removed 4.0.3.13277" },
@@ -861,11 +1103,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 					["coord"] = { 40.8, 51.6, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/12 Slave Workers freed or killed
+							["provider"] = { "n", 5843 },	-- Slave Worker
+						}),
+					},
 				}),
 				q(27960, {	-- The Fewer, the Better
 					["qg"] = 47267,	-- Burrian Coalpart
 					["coord"] = { 68.4, 53.2, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Dark Iron Geologist or Watchman slain
+							["providers"] = {
+								{ "n", 5839 },	-- Dark Iron Geologist
+								{ "n", 8637 },	-- Dark Iron Watchman
+								{ "n", 47275 },	-- Dark Iron Footman
+							},
+						}),
+					},
 				}),
 				q(3452, {	-- The Flame's Casing
 					["qg"] = 8479,	-- Kalaran Windblade
@@ -918,12 +1174,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 73.0, 77.2, SEARING_GORGE },
 					["timeline"] = { "removed 4.0.3.13277" },
+					["maps"] = { LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 5833,	-- Margol the Rager
 					["lvl"] = 40,
 				}),
 				q(4451, {	-- The Key to Freedom
 					["provider"] = { "i", 11818 },	-- Grimesilt Outhouse Key
 					["timeline"] = { "removed 4.0.3.13277" },
+					["crs"] = {
+						15692,	-- Dark Iron Kidnapper
+						8566,	-- Dark Iron Lookout
+						8504,	-- Dark Iron Sentry
+						5844,	-- Dark Iron Slaver
+						5840,	-- Dark Iron Steamsmith
+						5846,	-- Dark Iron Taskmaster
+					},
 					["lvl"] = 43,
 				}),
 				q(28035, {	-- The Mountain-Lord's Support
@@ -938,6 +1204,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.8, 68.9, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/6 Fire-Gizzard
+							["provider"] = { "i", 62914 },	-- Fire-Bizzard
+							["cr"] = 9318,	-- Incendosaur
+						}),
 						i(63233, {	-- Iron Summit Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -956,6 +1226,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
 					["coord"] = { 37.7, 26.5, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/9 Lava Spider slain
+							["providers"] = {
+								{ "n", 5857 },	-- Searing Lava Spider
+								{ "n", 5858 },	-- Greater Lava Spider
+							},
+						}),
+					},
 				}),
 				q(3453, {	-- The Torch of Retribution (1/2)
 					["qg"] = 8479,	-- Kalaran Windblade
@@ -965,14 +1243,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(3454, {	-- The Torch of Retribution (2/2)
-					["qg"] = 8479,	-- Kalaran Windblade
+					["providers"] = {
+						{ "n",   8479 },	-- Velarok Windblade
+						{ "o", 149047 },	-- Torch of Retribution
+						{ "i",  10515 },	-- Torch of Retribution
+					},
 					["sourceQuest"] = 3453,	-- The Torch of Retribution (1/2)
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
 					["timeline"] = { "removed 4.0.3.13277" },
 					["lvl"] = 40,
-					["groups"] = {
-						i(10515),	-- Torch of Retribution
-					},
 				}),
 				q(3385, {	-- The Undermarket (1/2)
 					["qg"] = 8439,	-- Nilith Lokrav
@@ -1024,6 +1303,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 39.4, 67.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/200 Dark Iron Bullet
+							["providers"] = {
+								{ "i",  62916 },	-- Dark Iron Bullet
+								{ "o", 206659 },	-- Dark Iron Bullets
+							},
+							["crs"] = {
+								8338,	-- Dark Iron Marksman
+								8566,	-- Dark Iron Lookout
+							},
+						}),
 						i(63229, {  -- K'Vlar Vest
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1054,19 +1343,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(3481, {	-- Trinkets...
-					["provider"] = { "o", 149502 },	-- Hoard of the Black Dragonflight
+					["providers"] = {
+						{ "o", 149502 },	-- Hoard of the Black Dragonflight
+						{ "i",  10569 },	-- Hoard of the Black Dragonflight
+					},
 					["sourceQuest"] = 3463,	-- Set Them Ablaze!
 					["coord"] = { 39.0, 38.9, SEARING_GORGE },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 40,
 					["groups"] = {
-						i(10569, {	-- Hoard of the Black Dragonflight
+						i(10575, {	-- Black Dragonflight Molt
 							["timeline"] = { "removed 4.0.3" },
-							["groups"] = {
-								i(10575, {	-- Black Dragonflight Molt
-									["timeline"] = { "removed 4.0.3" },
-								}),
-							},
 						}),
 					},
 				}),
@@ -1078,12 +1365,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 36.0, 28.4, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3" },
+					["groups"] = {
+						objective(1, {	-- 0/20 Twilight Collar
+							["provider"] = { "i", 62822 },	-- Twilight Collar
+							["crs"] = {
+								5860,	-- Twilight Dark Shaman
+								5861,	-- Twilight Fire Guard
+								5862,	-- Twilight Geomancer
+								8419,	-- Twilight Idolater
+							},
+						}),
+					},
 				}),
 				q(28060, {	-- Twisted Twilight Ties
 					["qg"] = 14626,	-- Taskmaster Scrange
 					["sourceQuest"] = 28057,	-- Kill 'em With Sleep Deprivation
 					["coord"] = { 42.3, 34.5, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Overseer Maltorius slain
+							["provider"] = { "n", 14621 },	-- Overseer Maltorius
+							["coord"] = { 41.2, 35.6, SEARING_GORGE },
+						}),
+						objective(2, {	-- 0/1 Twilight-Lord Arkkus slain
+							["provider"] = { "n", 47460 },	-- Twilight-Lord Arkkus
+							["coord"] = { 41.6, 35.6, SEARING_GORGE },
+						}),
+					},
 				}),
 				q(7701, {	-- WANTED: Overseer Maltorius
 					["provider"] = { "o", 179827 },	-- Wanted/Missing/Lost & Found
@@ -1340,17 +1648,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
-				i(11818, {	-- Grimesilt Outhouse Key
-					["timeline"] = { "removed 4.0.3" },
-					["crs"] = {
-						15692,	-- Dark Iron Kidnapper
-						8566,	-- Dark Iron Lookout
-						8504,	-- Dark Iron Sentry
-						5844,	-- Dark Iron Slaver
-						5840,	-- Dark Iron Steamsmith
-						5846,	-- Dark Iron Taskmaster
-					},
-				}),
 				i(18944, {	-- Incendosaur Scale
 					["cr"] = 9318,	-- Incendosaur
 				}),
@@ -1358,11 +1655,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 48.0, 42.3, SEARING_GORGE },
 					["timeline"] = { "added 7.1.5.23360" },
 					["cr"] = 47463,	-- Searing Flamewraith
-				}),
-				i(10000, {	-- Margol's Horn
-					["coord"] = { 73.6, 82.6, SEARING_GORGE },
-					["cr"] = 5833,	-- Margol the Rager
-					["races"] = ALLIANCE_ONLY,
 				}),
 				i(14476, {	-- Pattern: Cindercloth Gloves
 					-- Started dropping again in 8.2.  The new version (167887) is also available from Time-Lost Trader

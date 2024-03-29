@@ -357,22 +357,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(3201, {	-- At Last!
-					["providers"] = {
-						{ "n", 8256 },	-- Curator Thorius
-						{ "i", 10022 },	-- Proof of Deed
-					},
-					["sourceQuest"] = 3182,	-- Proof of Deed
-					["coord"] = { 71.4, 16.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 40,
-					["groups"] = {
-						i(5396, {	-- Key to Searing Gorge
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
 				q(26868, {	-- Axis of Awful
 					["qg"] = 44345,	-- Cannary Caskshot
 					["sourceQuest"] = 26928,	-- Smells Like a Plan
@@ -1013,17 +997,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
-				}),
-				q(3182, {	-- Proof of Deed
-					["providers"] = {
-						{ "n", 3836 },	-- Mountaineer Pebblebitty
-						{ "i", 10005 },	-- Margol's Gigantic Horn
-					},
-					["sourceQuest"] = 3181,	-- The Horn of the Beast
-					["coord"] = { 18.2, 84.0, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 40,
 				}),
 				q(309, {	-- Protecting the Shipment
 					-- #if AFTER CATA
