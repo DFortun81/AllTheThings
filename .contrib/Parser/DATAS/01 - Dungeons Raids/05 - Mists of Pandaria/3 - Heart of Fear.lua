@@ -14,24 +14,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(6718, {	-- The Dread Approach
 					crit(19628, {	-- Imperial Vizier Zor'lok
-						["_encounter"] = { 745, 7 },
+						["_encounter"] = { 745, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19629, {	-- Blade Lord Ta'yak
-						["_encounter"] = { 744, 7 },
+						["_encounter"] = { 744, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19632, {	-- Garalon
-						["_encounter"] = { 713, 7 },
+						["_encounter"] = { 713, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(6845, {	-- Nightmare of Shek'zeer
 					crit(19631, {	-- Wind Lord Mel'jarak
-						["_encounter"] = { 741, 7 },
+						["_encounter"] = { 741, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19633, {	-- Amber-Shaper Un'sok
-						["_encounter"] = { 737, 7 },
+						["_encounter"] = { 737, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19634, {	-- Grand Empress Shek'zeer
-						["_encounter"] = { 743, 7 },
+						["_encounter"] = { 743, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(6669),	-- Heart of Fear Guild Run
@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				n(ZONE_DROPS, {
 					i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
 					i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
@@ -267,12 +267,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-				},
 				["g"] = {
 					n(ZONE_DROPS, {
 						i(86192),	-- Darting Damselfly Cuffs
@@ -408,11 +404,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
 				["g"] = {
 					n(ZONE_DROPS, {

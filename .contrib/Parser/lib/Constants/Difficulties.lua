@@ -20,6 +20,9 @@ DIFFICULTY = {
 		PLAYER25_HEROIC = 6,
 		PLAYER40 = 9,
 	},
+	SOD = {
+		PLAYER10 = 198,
+	},
 };
 
 -- Helper Functions
@@ -95,6 +98,37 @@ DIFFICULTY.RAID.MULTI = {
 	}),
 };
 
+-- Legacy Raid Multi-Difficulties
+DIFFICULTY.LEGACY_RAID.MULTI = {
+	ALL = GetOrCreateMultiDifficulty({
+		DIFFICULTY.RAID.FINDER,
+		DIFFICULTY.DUNGEON.NORMAL,
+		DIFFICULTY.DUNGEON.HEROIC,
+		DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+		DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+		DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+		DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+	}),
+	NORMAL_HEROIC = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.NORMAL,
+		DIFFICULTY.DUNGEON.HEROIC,
+		DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+		DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+		DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+		DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+	}),
+	NORMAL = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.NORMAL,
+		DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+		DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+	}),
+	HEROIC = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.HEROIC,
+		DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+		DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+	}),
+};
+
 -- Helper Tables
 DifficultyDB = {
 	[DIFFICULTY.DUNGEON.NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
@@ -112,4 +146,9 @@ DifficultyDB = {
 	[DIFFICULTY.DUNGEON.MYTHIC] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
 	[DIFFICULTY.DUNGEON.TIMEWALKING] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },	-- unused?
+	
+	-- What this does is tell the shortcut to take the id from the first element and use the remaining elements as the difficulties list.
+	-- This will cause the display to appear as the original difficulty in the addon, but also provide the ability for it to encompass multiple. (Cata -> MOP raids)
+	[DIFFICULTY.LEGACY_RAID.MULTI.NORMAL] = { simplify = true },
+	[DIFFICULTY.LEGACY_RAID.MULTI.HEROIC] = { simplify = true },
 };

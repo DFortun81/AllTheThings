@@ -723,6 +723,24 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 	end
 	local difficultyID, ids = GetOrCreateMultiDifficulty(id);
 	t = struct("difficultyID", difficultyID, t);
+	local db = DifficultyDB[difficultyID];
+	if db then
+		if db.simplify then
+			difficultyID = ids[1];
+			local difficulties,count = {},1;
+			for i=2,#ids,1 do
+				difficulties[count] = ids[i];
+				count = count + 1;
+			end
+			t.difficultyID = difficultyID;
+			t.difficulties = difficulties;
+			ids = nil;
+		end
+		-- #if AFTER MOP
+		t.modID = db.modID;
+		-- #endif
+	end
+	
 	if ids then
 		local oldDifficulties = t.difficulties;
 		if oldDifficulties then
@@ -752,11 +770,6 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 			t.difficulties = ids;
 		end
 	end
-	
-	-- #if AFTER MOP
-	local db = DifficultyDB[difficultyID];
-	if db then t.modID = db.modID; end
-	-- #endif
 	return t;
 end
 -- #if AFTER WRATH

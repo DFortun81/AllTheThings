@@ -844,7 +844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}}),
 			applyclassicphase(SOD_PHASE_ONE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
-				["difficulties"] = { 198 },
+				["difficulties"] = { DIFFICULTY.SOD.PLAYER10 },
 				["lvl"] = 25,
 				["groups"] = {
 					n(QUESTS, {

@@ -15,24 +15,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(6458, {	-- Guardians of Mogu'shan
 					crit(19110, {	-- The Stone Guard
-						["_encounter"] = { 679, 7 },
+						["_encounter"] = { 679, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19111, {	-- Feng the Accursed
-						["_encounter"] = { 689, 7 },
+						["_encounter"] = { 689, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19112, {	-- Gara'jal the Spiritbinder
-						["_encounter"] = { 682, 7 },
+						["_encounter"] = { 682, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(6844, {	-- The Vault of Mysteries
 					crit(19113, {	-- The Spirit Kings
-						["_encounter"] = { 687, 7 },
+						["_encounter"] = { 687, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19767, {	-- Elegon
-						["_encounter"] = { 726, 7 },
+						["_encounter"] = { 726, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19115, {	-- Will of the Emperor
-						["_encounter"] = { 677, 7 },
+						["_encounter"] = { 677, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(6668),	-- Mogu'shan Vaults Guild Run
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				n(ZONE_DROPS, {
 					i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
 					i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
@@ -314,12 +314,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-				},
 				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(7933),	-- And... It's Good!
@@ -466,11 +462,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
 				["g"] = {
 					e(679, {	-- The Stone Guard

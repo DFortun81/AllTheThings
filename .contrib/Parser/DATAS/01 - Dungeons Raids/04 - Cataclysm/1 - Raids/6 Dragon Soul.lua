@@ -1,11 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local CUSTOM_DIFFICULTY_ID = GetOrCreateMultiDifficulty({
-	DIFFICULTY.RAID.FINDER,
-	DIFFICULTY.DUNGEON.NORMAL,
-	DIFFICULTY.DUNGEON.HEROIC
-});
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_FOUR, inst(187, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
@@ -28,30 +23,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(6106, {	-- Siege of Wyrmrest Temple
 					crit(18445, {	-- Morchok
-						["_encounter"] = { 311, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 311, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18446, {	-- Warlord Zon'ozz
-						["_encounter"] = { 324, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 324, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18447, {	-- Yor'sahj the Unsleeping
-						["_encounter"] = { 325, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 325, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18448, {	-- Hagara the Stormbinder
-						["_encounter"] = { 317, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 317, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 				}),
 				ach(6107, {	-- Fall of Deathwing
 					crit(18449, {	-- Ultraxion
-						["_encounter"] = { 331, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 331, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18450, {	-- Warmaster Blackthorn
-						["_encounter"] = { 332, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 332, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18451, {	-- Spine of Deathwing
-						["_encounter"] = { 318, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 318, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18452, {	-- Madness of Deathwing
-						["_encounter"] = { 333, CUSTOM_DIFFICULTY_ID },
+						["_encounter"] = { 333, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 				}),
 				ach(6169, {	-- Glory of the Dragon Soul Raider
@@ -233,13 +228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 			}),
-			d(CUSTOM_DIFFICULTY_ID, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.ALL, {
 				["groups"] = {
 					cr(55265, e(311, {	-- Morchok
 						-- Placeholder for criteria
@@ -441,13 +430,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -578,11 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -730,11 +709,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {

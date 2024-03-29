@@ -20,46 +20,46 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(8069, {	-- Last Stand of the Zandalari
 					crit(22912, {	-- Jin'rokh the Breaker
-						["_encounter"] = { 827, 7 },
+						["_encounter"] = { 827, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(22984, {	-- Horridon
-						["_encounter"] = { 819, 7 },
+						["_encounter"] = { 819, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(22963, {	-- Council of Elders
-						["_encounter"] = { 816, 7 },
+						["_encounter"] = { 816, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(8070, {	-- Forgotten Depths
 					crit(22985, {	-- Tortos
-						["_encounter"] = { 825, 7 },
+						["_encounter"] = { 825, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(22986, {	-- Megaera
-						["_encounter"] = { 821, 7 },
+						["_encounter"] = { 821, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(22987, {	-- Ji-Kun
-						["_encounter"] = { 828, 7 },
+						["_encounter"] = { 828, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(8071, {	-- Halls of Flesh-Shaping
 					crit(22988, {	-- Durumu the Forgotten
-						["_encounter"] = { 818, 7 },
+						["_encounter"] = { 818, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(22989, {	-- Primordius
-						["_encounter"] = { 820, 7 },
+						["_encounter"] = { 820, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(22990, {	-- Dark Animus
-						["_encounter"] = { 824, 7 },
+						["_encounter"] = { 824, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(8072, {	-- Pinnacle of Storms
 					crit(22991, {	-- Iron Qon
-						["_encounter"] = { 817, 7 },
+						["_encounter"] = { 817, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(22965, {	-- Twin Empyreans
-						["_encounter"] = { 829, 7 },
+						["_encounter"] = { 829, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(23317, {	-- Lei Shen
-						["_encounter"] = { 832, 7 },
+						["_encounter"] = { 832, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(8124, {		-- Glory of the Thundering Raider
@@ -452,8 +452,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95717),	-- Pinionfeather Greatcloak
 							i(95719),	-- Robe of Midnight Dawn
 							i(95724),	-- Talonrender Chestplate
-							i(94835, {	-- Ji-Kun Hatchling (PET!)
-							}),
+							i(94835),	-- Ji-Kun Hatchling (PET!)
 						},
 					}),
 				}),
@@ -542,8 +541,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95771),	-- Hood of the Crimson Wake
 							i(95777),	-- Matter-Swapped Legplates
 							i(95775),	-- Worldbinder Leggings
-							i(94152, {	-- Son of Animus (PET!)
-							}),
+							i(94152),	-- Son of Animus (PET!)
 						},
 					}),
 				}),
@@ -622,7 +620,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				e(827, {	-- Jin'rokh the Breaker
 					["crs"] = { 69465 },	-- Jin'rokh the Breaker
 					["g"] = {
@@ -835,12 +833,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-				},
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
@@ -1446,11 +1440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {

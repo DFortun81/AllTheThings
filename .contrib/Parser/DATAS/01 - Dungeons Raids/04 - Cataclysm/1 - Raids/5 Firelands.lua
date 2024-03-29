@@ -68,6 +68,16 @@ local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
 	}},
 });
 
+-- #if AFTER 8.2.5
+local NORMAL_HEROIC_DIFFICULTY_ID = DIFFICULTY.RAID.MULTI.NORMAL_HEROIC;
+local NORMAL_DIFFICULTY_ID = DIFFICULTY.RAID.NORMAL;
+local HEROIC_DIFFICULTY_ID = DIFFICULTY.RAID.HEROIC;
+-- #else
+local NORMAL_HEROIC_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC;
+local NORMAL_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL;
+local HEROIC_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.MULTI.HEROIC;
+-- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_THREE, inst(78, bubbleDownSelf({ ["timeline"] = { "added 4.2.0" }, }, {	-- Firelands
 		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },
@@ -99,25 +109,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				ach(11755, {["timeline"] = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
 				ach(5802, {	-- Firelands
 					crit(17430, {	-- Beth'tilac
-						["_encounter"] = { 192, DIFFICULTY.RAID.NORMAL },
+						["_encounter"] = { 192, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17431, {	-- Lord Rhyolith
-						["_encounter"] = { 193, DIFFICULTY.RAID.NORMAL },
+						["_encounter"] = { 193, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17435, {	-- Alysrazor
-						["_encounter"] = { 194, DIFFICULTY.RAID.NORMAL },
+						["_encounter"] = { 194, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17429, {	-- Shannox
-						["_encounter"] = { 195, DIFFICULTY.RAID.NORMAL },
+						["_encounter"] = { 195, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17432, {	-- Baleroc, the Gatekeeper
-						["_encounter"] = { 196, DIFFICULTY.RAID.NORMAL },
+						["_encounter"] = { 196, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17433, {	-- Majordomo Staghelm
-						["_encounter"] = { 197, DIFFICULTY.RAID.NORMAL },
+						["_encounter"] = { 197, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17434, {	-- Ragnaros
-						["_encounter"] = { 198, DIFFICULTY.RAID.NORMAL },
+						["_encounter"] = { 198, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 				}),
 				ach(5983),	-- Firelands Guild Run
@@ -429,20 +439,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(68915),	-- Scales of Life
 				i(71367),	-- Theck's Emberseal
 			}),
-			d(
-			-- #if AFTER 8.2.5
-			DIFFICULTY.RAID.MULTI.NORMAL_HEROIC,
-			-- #else
-			DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-			["difficulties"] = {
-				DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-				DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-				DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-				DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-			},
-			["groups"] = 
-			-- #endif
-			{
+			d(NORMAL_HEROIC_DIFFICULTY_ID, {
 				e(192, {	-- Beth'tilac
 					["creatureID"] = 52498,
 					["groups"] = {
@@ -519,18 +516,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						}),
 					},
 				}),
-			}
-			-- #if BEFORE 8.2.5
-			}
-			-- #endif
-			),
-			d(
-			-- #if AFTER 8.2.5
-			DIFFICULTY.RAID.NORMAL,
-			-- #else
-			DIFFICULTY.DUNGEON.NORMAL,
-			-- #endif
-			{
+			}),
+			d(NORMAL_DIFFICULTY_ID, {
 				["difficulties"] = {
 					-- #if AFTER 8.2.5
 					DIFFICULTY.DUNGEON.NORMAL,
@@ -695,14 +682,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			
-			d(
-			-- #if AFTER 8.2.5
-			DIFFICULTY.RAID.HEROIC,
-			-- #else
-			DIFFICULTY.DUNGEON.HEROIC,
-			-- #endif
-			{
+			d(HEROIC_DIFFICULTY_ID, {
 				["difficulties"] = {
 					-- #if AFTER 8.2.5
 					DIFFICULTY.DUNGEON.HEROIC,

@@ -11,16 +11,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(6689, {	-- Terrace of Endless Spring
 					crit(19518, {	-- Protectors of the Endless
-						["_encounter"] = { 683, 7 },
+						["_encounter"] = { 683, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19519, {	-- Tsulong
-						["_encounter"] = { 742, 7 },
+						["_encounter"] = { 742, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19520, {	-- Lei Shi
-						["_encounter"] = { 729, 7 },
+						["_encounter"] = { 729, DIFFICULTY.RAID.FINDER },
 					}),
 					crit(19521, {	-- Sha of Fear
-						["_encounter"] = { 709, 7 },
+						["_encounter"] = { 709, DIFFICULTY.RAID.FINDER },
 					}),
 				}),
 				ach(6670),	-- Terrace of Endless Spring Guild Run
@@ -161,7 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				n(ZONE_DROPS, {
 					i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
 					i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
@@ -225,12 +225,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
-				},
 				["g"] = {
 					e(683, {	-- Protectors of the Endless
 						["crs"] = {
@@ -361,11 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["difficulties"] = {
-					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
-					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
-				},
+			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
 				["g"] = {
 					e(683, {	-- Protectors of the Endless
