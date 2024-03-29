@@ -700,7 +700,6 @@ local QUANTUM_GROUP = sharedData({
 		},
 	}),
 });
-local HeroicPlus = HEROIC_PLUS_DUNGEON;
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 	inst(1209, {	-- Dawn of the Infinite
 		["coord"] = { 61.0, 84.3, THALDRASZUS },
@@ -853,7 +852,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			})),
 			-- #if AFTER 10.1.7
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_DUNGEON, {
 				n(COMMON_BOSS_DROPS, {
 					currency(PARACAUSAL_FLAKES),
 					currency(SORIDORMIS_RECOGNITION),
