@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				cr(95886, e(1468, {	-- Ash'golm
 					i(139468),	-- Bindings of the Windlord (rogue appearance)
 				})),
@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137549),	-- Shade of the Vault
 				})),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				cr(95888, e(1470, {	-- Cordana Felsong
 					ach(10802),	-- Heroic: Vault of the Wardens
 					i(137852),	-- Design: Vindictive Pandemonite Choker [Rank 3] (RECIPE!)

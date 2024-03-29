@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
 				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {

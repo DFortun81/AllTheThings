@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					},
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2109, {	-- Coin-Operated Crowd Pummeler
 					["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
 					["g"] = {

@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {

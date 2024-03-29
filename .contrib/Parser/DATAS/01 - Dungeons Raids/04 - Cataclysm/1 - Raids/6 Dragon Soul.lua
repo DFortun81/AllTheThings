@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["ignoreBonus"] = true,
 				["groups"] = {

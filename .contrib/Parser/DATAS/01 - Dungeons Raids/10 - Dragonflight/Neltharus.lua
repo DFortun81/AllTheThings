@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {

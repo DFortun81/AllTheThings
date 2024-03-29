@@ -16,7 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["coord"] = { 60.0, 76.0, THE_WAKING_SHORES },
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
@@ -60,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2503, {	-- Kyrakka and Erkhart Stormvein
 					["crs"] = {
 						190484,	-- Kyrakka

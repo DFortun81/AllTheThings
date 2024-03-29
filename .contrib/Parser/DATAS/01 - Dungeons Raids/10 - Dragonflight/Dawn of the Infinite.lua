@@ -852,7 +852,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			})),
 			-- #if AFTER 10.1.7
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				n(COMMON_BOSS_DROPS, {
 					currency(PARACAUSAL_FLAKES),
 					currency(SORIDORMIS_RECOGNITION),

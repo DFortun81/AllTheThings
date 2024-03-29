@@ -179,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			-- #else
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(110, {	-- Corborus
 					["crs"] = { 43438 },	-- Corborus
 					["groups"] = {

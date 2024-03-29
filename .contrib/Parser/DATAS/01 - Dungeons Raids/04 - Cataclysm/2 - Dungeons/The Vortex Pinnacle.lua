@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						},
 					}),
 				}),
-				d(NORMAL_HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 					i(55855, {	-- Darksky Treads
 						["crs"] = {
 							45915,	-- Armored Mistal
@@ -168,7 +168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				},
 			}),
 			-- #else
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(5289),	-- Extra Credit Bonus Stage

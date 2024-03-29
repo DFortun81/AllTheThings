@@ -36,7 +36,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone
 					["g"] = {
@@ -127,7 +127,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2396, {	-- Nalthor the Rimebinder
 					["crs"] = { 162693 },	-- Nalthor the Rimebinder
 					["g"] = {

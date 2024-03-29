@@ -186,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				i(143670),	-- Thin-Soled Fiend Slayer Boots
 				i(143667),	-- Worn Battlescar Boots
 			})),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(1837, {	-- Moroes
 					["creatureID"] = 114312,	-- Moroes
 					["g"] = {

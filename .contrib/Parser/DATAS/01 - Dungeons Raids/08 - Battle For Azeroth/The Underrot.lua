@@ -25,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				n(ZONE_DROPS, {
 					i(168142, {	-- Coagulated Miasma
 						["description"] = "Drops from Trolls before the first Boss.\n2-3 Runs is enough for 50 Miasma.",

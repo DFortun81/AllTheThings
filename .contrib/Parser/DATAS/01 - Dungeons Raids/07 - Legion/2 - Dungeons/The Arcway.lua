@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				cr(98207, e(1500, {	-- Nal'tira
 					i(136969),	-- Tome of Hex: Spider (CI!)
 				})),

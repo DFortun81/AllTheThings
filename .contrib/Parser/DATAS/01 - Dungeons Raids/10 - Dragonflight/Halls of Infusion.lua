@@ -17,7 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["coord"] = { 54.4, 40.9, VALDRAKKEN },
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2504, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
 					["g"] = {
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2511, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {

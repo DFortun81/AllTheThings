@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 				ach(4987),	-- Throne of the Four Winds Guild Run
 			}),
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind

@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			-- #else
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(105, {  -- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {

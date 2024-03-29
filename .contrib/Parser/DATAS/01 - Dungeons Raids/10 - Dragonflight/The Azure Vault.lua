@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
 				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
 					["g"] = {
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2508, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {

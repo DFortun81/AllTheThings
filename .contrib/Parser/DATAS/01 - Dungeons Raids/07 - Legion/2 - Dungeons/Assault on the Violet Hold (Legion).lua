@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
 		["g"] = {
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				cr(102387, e(1697, {	-- Sael'orn
 					ach(10798),	-- Assault on Violet Hold
 					i(137824),	-- Design: Maelstrom Band [Rank 2] (RECIPE!)

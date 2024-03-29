@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(59461),	-- Fury of Angerforge
 				},
 			}),
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["groups"] = {
 					e(170, {	-- Magmaw

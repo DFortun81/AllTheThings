@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				cr(104218, e(1720, {	-- Advisor Melandrus
 					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
 					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)

@@ -170,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			-- #else
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(101, {	-- Lady Naz'jar
 					["crs"] = { 40586 },	-- Lady Naz'jar
 					["groups"] = {

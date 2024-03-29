@@ -23,7 +23,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["_drop"] = { "g" },	-- Anima Trash
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2408, {	-- Hakkar the Soulflayer
 					["crs"] = { 164558 },	-- Hakkar the Soulflayer
 					["g"] = {
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2410, {	-- Mueh'zala
 					["crs"] = { 166608 },	--	Mueh'zala
 					["g"] = {

@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				n(ZONE_DROPS, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 				}),
@@ -148,7 +148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(1489, {	-- Odyn
 					["creatureID"] = 95676,	-- Odyn
 					["g"] = {

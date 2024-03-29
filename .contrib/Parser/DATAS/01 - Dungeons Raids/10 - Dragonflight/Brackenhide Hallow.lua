@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2471, {	-- Hackclaw's War-Band
 					["crs"] = {
 						186124,	-- Gashtooth
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2474, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {

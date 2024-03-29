@@ -191,7 +191,7 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter (TOY!)
 					i(152982, {		-- Vixx's Chest of Tricks (TOY!)

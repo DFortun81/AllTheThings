@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(1672, {	-- Lord Kur'talos Ravencrest
 					["crs"] = {
 						98970,	-- Dantalionax
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(1672, {	-- Lord Kur'talos Ravencrest
 					["crs"] = {
 						98970,	-- Dantalionax

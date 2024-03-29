@@ -24,7 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
 					["g"] = {
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				n(SPECIAL, {
 					mount(346141, {	-- Slime Serpent (MOUNT!)
 						["description"] = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",

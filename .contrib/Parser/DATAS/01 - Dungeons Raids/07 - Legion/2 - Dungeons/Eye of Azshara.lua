@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				cr(91784, e(1480, {	-- Warlord Parjesh
 					i(139574), -- Coil of the Drowned Queen (shaman appearance)
 				})),

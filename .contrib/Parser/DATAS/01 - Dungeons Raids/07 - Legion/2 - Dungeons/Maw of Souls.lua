@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["isWorldQuest"] = true,
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
@@ -79,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				cr(96759, e(1663, {	-- Helya
 					ach(10808),	-- Heroic: Maw of Souls
 					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)

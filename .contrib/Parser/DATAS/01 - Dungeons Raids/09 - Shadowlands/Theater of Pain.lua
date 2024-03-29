@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["_drop"] = { "g" },	-- Anima Trash
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator
@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2417, {	-- Mordretha, the Endless Empress
 					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
 					["g"] = {

@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		},
 		["g"] = {
 			n(QUESTS, {}),	-- Do Not Remove
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2406, {	-- Halkias
 					["crs"] = { 165408 },	-- Halkias
 					["g"] = {
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2413, {	-- Lord Chamberlain
 					["crs"] = { 164218 },	--	Lord Chamberlain
 					["g"] = {

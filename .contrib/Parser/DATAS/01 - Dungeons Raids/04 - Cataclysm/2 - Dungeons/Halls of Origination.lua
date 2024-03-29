@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				},
 			}),
 			-- #else
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(124, {	-- Temple Guardian Anhuur
 					["crs"] = { 39425 },	-- Temple Guardian Anhuur
 					["groups"] = {

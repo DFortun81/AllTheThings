@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2479, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {

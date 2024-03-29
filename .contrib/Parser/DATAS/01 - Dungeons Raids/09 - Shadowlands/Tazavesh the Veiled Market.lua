@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				},
 			}),
 			-- #if AFTER 9.2.0
-			d(HEROIC_PLUS_DUNGEON, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {

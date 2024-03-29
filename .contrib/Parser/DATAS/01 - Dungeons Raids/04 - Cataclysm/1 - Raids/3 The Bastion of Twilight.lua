@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(60210),	-- Crossfire Carbine
 				i(59520),	-- Unheeded Warning
 			}),
-			d(NORMAL_HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["groups"] = {
 					e(156, {	-- Halfus Wyrmbreaker

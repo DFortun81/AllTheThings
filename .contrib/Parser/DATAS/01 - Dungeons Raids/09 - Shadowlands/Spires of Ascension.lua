@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2399, {	-- Kin-Tara
 					["crs"] = {
 						163077,	-- Azules
@@ -132,7 +132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2412, {	-- Devos, Paragon of Doubt
 					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 					["g"] = {

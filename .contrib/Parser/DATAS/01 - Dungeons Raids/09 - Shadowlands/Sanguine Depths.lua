@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["provider"] = { "n", 166689 },	-- General Draven
 				}),
 			}),
-			d(NORMAL_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2388, {	-- Kryxis the Voracious
 					["crs"] = { 162100 },	-- Kryxis the Voracious
 					["g"] = {
@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HEROIC_PLUS_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2407, {	-- General Kaal
 					["crs"] = {
 						162133,	-- General Kaal (during gauntlet)
