@@ -636,16 +636,28 @@ for key, value in pairs({
 		["25 Player (Heroic)"] = "25M (H)",
 		[BATTLEGROUNDS] = "BGs",
 		-- Dungeon&Raids Names
+		-- BFA
+		["Ny'alotha, the Waking City"] = "Ny'alotha",
+		-- Cata
+		["Baleroc, the Gatekeeper"] = "Baleroc",
+		["The Conclave of Wind"] = "Conclave",
+		["Hagara the Stormbinder"] = "Hagara",
+		["Majordomo Staghelm"] = "Majordomo",
+		["Omnotron Defense System"] = "Omnotron",
+		["Theralion and Valiona"] = "Theralion&Valiona",
+		["Yor'sahj the Unsleeping"] = "Yor'sahj",
+		-- DF
 		["Aberrus, the Shadowed Crucible"] = "Aberrus",
 		["Antorus, the Burning Throne"] = "Antorus",
 		["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
 		["Kazzara, the Hellforged"] = "Kazzara",
 		["Larodar, Keeper of the Flame"] = "Larodar",
-		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
 		["Nymue, Weaver of the Cycle"] = "Nymue",
-		["Ny'alotha, the Waking City"] = "Ny'alotha",
-		["Tazavesh, the Veiled Market"] = "Tazavesh",
 		["Tindral Sageswift, Seer of the Flame"] = "Tindral Sageswift",
+		-- Legion
+		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
+		-- SL
+		["Tazavesh, the Veiled Market"] = "Tazavesh",
 		-- Outdoor Zones
 		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
 		["Season "] = "S",
