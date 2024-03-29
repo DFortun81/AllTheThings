@@ -39,10 +39,23 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		-- info to determine the sub-type
 		local spg = t._g
 		if spg then return spg end
+
+		-- only load this if we're in a tooltip-level build
+		if app.GetSkipLevel() ~= 1 then return end
+
+		-- local parent = rawget(t,"parent")
+		-- local window = app.GetRelativeValue(t, "window")
+		-- local sp = t.sourceParent
+		-- app.PrintDebug("spg?",app:SearchLink(t),
+		-- 	"p",parent and app:SearchLink(parent),
+		-- 	"sp",sp and app:SearchLink(sp),
+		-- 	"w",window and window.Suffix)
+
 		-- direct object which is a child of a 'generic object container' can instead show the generic parent object content
 		-- when the direct object is the root of a window/tooltip
-		if rawget(t,"parent") or app.GetRelativeValue(t, "window") then return end
+		if rawget(t,"parent") then return end
 		local sp = t.sourceParent
+		-- app.PrintDebug("spg.sp",sp)
 		if not sp or sp.__type ~= "ObjectAsGenericObjectContainer" then return end
 		spg = {}
 		-- make a copy of the non-object groups for this object to display
@@ -51,9 +64,14 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 				spg[#spg + 1] = o
 			end
 		end
+		-- add symlink from generic container if any
+		local sym = app.ResolveSymbolicLink(sp)
+		if sym then
+			app.ArrayAppend(spg, sym)
+		end
 		-- for cached reference
 		t._g = spg
-		-- app.PrintDebug("spg",#spg,t.hash,app:SearchLink(t))
+		-- app.PrintDebug("spg",#spg)
 		return spg
 	end,
 },
