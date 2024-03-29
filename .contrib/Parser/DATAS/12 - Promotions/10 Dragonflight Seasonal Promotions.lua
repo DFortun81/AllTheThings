@@ -131,12 +131,12 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 10.1.7", "removed 10.1.7.51536" },
 			}),
 			mount(419567, {	-- Ginormous Grrloc (MOUNT!)
-				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
-				["timeline"] = { "added 10.1.7.51886", "removed 10.2.0.52649" },
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
+				["timeline"] = { "added 10.1.7.51886" },
 			}),
 			i(203727, {	-- Gleaming Moonbeast (MOUNT!)
-				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
-				["timeline"] = { "added 10.1.7.51886", "removed 10.2.0.52649" },
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
+				["timeline"] = { "added 10.1.7.51886" },
 			}),
 			-- Season 3
 			pet(2623, {	-- Dottie (PET!)
@@ -162,6 +162,10 @@ root(ROOTS.Promotions, {
 			pet(4437, {	-- Fathom (PET!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between March 22, 10:00 a.m. & April 5, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.2.6", "removed 10.2.6.99999" },
+			}),
+			i(211424, {	-- Dreaming Banner of the Aspects (TOY!)
+				["description"] = "Break the Meta: DF Season 3\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 3 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/break-the-meta-df-season-3/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +17|r or higher during the Competition Period, and the Dreaming Banner of the Aspects will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on April 3rd for US, April 4th for EU & April 5th for KR/TW & lasts for 2 resets of your region.",
+				["timeline"] = { "added 10.2.6" },
 			}),
 		},
 	}),
