@@ -1321,7 +1321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["timeline"] = { ADDED_10_1_5 },
 				}),
 			})),
-			d(3, {	-- 10-Man
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ACHIEVEMENTS, {

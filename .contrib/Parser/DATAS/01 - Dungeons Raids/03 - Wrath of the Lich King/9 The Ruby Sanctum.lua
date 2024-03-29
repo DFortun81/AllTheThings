@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			n(39746, {	-- General Zarithrian
 				["description"] = "Must be killed before you can fight Halion."
 			}),
-			d(3, {	-- 10-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				e(1652, {	-- Halion
 					["creatureID"] = 39863,	-- Halion
 					["groups"] = {

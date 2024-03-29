@@ -353,7 +353,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(15410),	-- Scale of Onyxia
 			}),
 			-- #if AFTER WRATH
-			applyclassicphase(WRATH_PHASE_THREE, d(3, {	-- 10 Player
+			applyclassicphase(WRATH_PHASE_THREE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				["lvl"] = 80,
 				["groups"] = {
 					e(1651, {	-- Onyxia
@@ -411,7 +411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			})),
-			applyclassicphase(WRATH_PHASE_THREE, d(4, {	-- 25 Player
+			applyclassicphase(WRATH_PHASE_THREE, d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				["lvl"] = 80,
 				["groups"] = {
 					e(1651, {	-- Onyxia
@@ -469,7 +469,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					})
 				},
 			})),
-			d(9, {	-- 40 Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER40, {
 				["sourceQuests"] = {
 					6502,	-- Alliance Attunement Quest
 					6602,	-- Horde Attunement Quest

@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {
-			d(3, {	-- 10-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				n(ACHIEVEMENTS, {
 					ach(624, {	-- Less Is More [10 player]
 						crit(522, {	-- Sartharion

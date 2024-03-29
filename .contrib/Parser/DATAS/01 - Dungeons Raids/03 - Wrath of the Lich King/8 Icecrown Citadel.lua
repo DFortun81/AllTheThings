@@ -1094,7 +1094,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 				},
 			}),
-			d(3, {	-- 10-Player (Normal)
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)
 						crit(12770, {	-- Lord Marrowgar

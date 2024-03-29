@@ -31,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					h(i(44083)),	-- Grand Black War Mammoth (H) (MOUNT!)
 				},
 			}),
-			d(3, {	-- 10-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				applyclassicphase(WRATH_PHASE_THREE, ach(4016, {	-- Earth, Wind & Fire (10 player)
 					["crs"] = {
 						35013,	-- Koralon the Flame Watcher

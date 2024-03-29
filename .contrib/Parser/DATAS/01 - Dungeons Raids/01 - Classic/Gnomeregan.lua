@@ -1087,7 +1087,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			}}),
-			applyclassicphase(SOD_PHASE_TWO, d(3, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {	-- 10-Player
+			applyclassicphase(SOD_PHASE_TWO, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
 				["difficulties"] = { 198 },
 				["lvl"] = 40,

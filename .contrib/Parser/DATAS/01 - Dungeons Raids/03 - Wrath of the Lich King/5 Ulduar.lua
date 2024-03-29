@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				},
 			}),
 			-- #endif
-			d(3, {	-- 10-Man
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {

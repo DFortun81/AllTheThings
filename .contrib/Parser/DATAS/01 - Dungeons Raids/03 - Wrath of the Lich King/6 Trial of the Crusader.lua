@@ -1337,7 +1337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 				},
 			}),
-			d(3, {	-- 10-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
 						34797,	-- Icehowl

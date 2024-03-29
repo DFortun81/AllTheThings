@@ -13,6 +13,13 @@ DIFFICULTY = {
 		HEROIC = 15,
 		MYTHIC = 16,
 	},
+	LEGACY_RAID = {
+		PLAYER10_NORMAL = 3,
+		PLAYER25_NORMAL = 4,
+		PLAYER10_HEROIC = 5,
+		PLAYER25_HEROIC = 6,
+		PLAYER40 = 9,
+	},
 };
 
 -- Helper Functions
@@ -92,10 +99,10 @@ DIFFICULTY.RAID.MULTI = {
 DifficultyDB = {
 	[DIFFICULTY.DUNGEON.NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
 	[DIFFICULTY.DUNGEON.HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
-	[3] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[4] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[5] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[6] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
 	[DIFFICULTY.RAID.FINDER] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
 	[DIFFICULTY.RAID.NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
 	[DIFFICULTY.RAID.HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
