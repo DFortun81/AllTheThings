@@ -192,7 +192,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 				["coord"] = { 55.0, 59.9, VALSHARAH },
 			}),
 			i(141049),	-- Technique: Glyph of the Hook (RECIPE!)
-			i(141051,	-- Technique: Glyph of the Trident (RECIPE!)
+			i(141051, {	-- Technique: Glyph of the Trident (RECIPE!)
 				["description"] = "Drops Naga's in any Broken Isles zone. Recommened to farm the Naga's before the first Boss in the Eye of Azshara Dungeon.",
 			}),
 			i(141064),	-- Technique: Grimoire of the Shivarra (RECIPE!)

@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(800, {	-- Court of Stars
@@ -28,6 +30,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+			}),
+			d(HeroicPlus, {
+				cr(104218, e(1720, {	-- Advisor Melandrus
+					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
+					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)
+					i(137929),	-- Pattern: Gravenscale Grips [Rank 3] (RECIPE!)
+					i(127926),	-- Recipe: Potion of Deadly Grace [Rank 2] (RECIPE!)
+				})),
 			}),
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(201995),	-- Crux of Blind Faith
@@ -63,10 +73,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137492),	-- Flamewreath Spark
 				})),
 				cr(104218, e(1720, {	-- Advisor Melandrus
-					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
-					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)
-					i(137929),	-- Pattern: Gravenscale Grips [Rank 3] (RECIPE!)
-					i(127926),	-- Recipe: Potion of Deadly Grace [Rank 2] (RECIPE!)
 					i(134432),	-- Amice of the Unfurling Tempest
 					i(134271),	-- Arcane Defender's Pants
 					i(137489),	-- Arcane-Bound Gale Chain
@@ -123,10 +129,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				cr(104218, e(1720, {	-- Advisor Melandrus
 					ach(10816),	-- Mythic: Court of Stars
 					ach(10865),	-- Mythic: Court of Stars Guild Run
-					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
-					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)
-					i(137929),	-- Pattern: Gravenscale Grips [Rank 3] (RECIPE!)
-					i(127926),	-- Recipe: Potion of Deadly Grace [Rank 2] (RECIPE!)
 					i(134432),	-- Amice of the Unfurling Tempest
 					i(134271),	-- Arcane Defender's Pants
 					i(137489),	-- Arcane-Bound Gale Chain

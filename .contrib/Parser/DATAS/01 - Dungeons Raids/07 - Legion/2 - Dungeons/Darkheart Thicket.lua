@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(762, {	-- Darkheart Thicket
@@ -30,12 +32,27 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
+			d(NormalPlus, {
+				cr(96512, e(1654, {	-- Archdruid Glaidalis
+					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
+				})),
+				cr(99192, e(1657, {	-- Shade of Xavius
+					ach(10783),	-- Darkheart Thicket
+					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
+					i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
+				})),
+			}),
+			d(HeroicPlus, {
+				cr(99192, e(1657, {	-- Shade of Xavius
+					ach(10784),	-- Heroic: Darkheart Thicket
+					i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
+				})),
+			}),
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(211473),	-- Corrupted Knot
 			})),
 			d(NORMAL_DUNGEON, {
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
-					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 					i(134487),	-- Arch-Druid's Tainted Seal
 					i(139077),	-- Bramblemail Belt
 					i(137301),	-- Corrupted Starlight
@@ -77,9 +94,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137313),	-- Roiling Fog
 				})),
 				cr(99192, e(1657, {	-- Shade of Xavius
-					ach(10783),	-- Darkheart Thicket
-					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
-					i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 					i(134448),	-- Ashen Satyr Leggings
 					i(137321),	-- Burning Sky Pauldrons
 					i(134405),	-- Cloak of Fading Echoes
@@ -103,7 +117,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
-						i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 						i(134487),	-- Arch-Druid's Tainted Seal
 						i(139077),	-- Bramblemail Belt
 						i(137301),	-- Corrupted Starlight
@@ -145,10 +158,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137313),	-- Roiling Fog
 					})),
 					cr(99192, e(1657, {	-- Shade of Xavius
-						ach(10784),	-- Heroic: Darkheart Thicket
-						i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
-						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
-						i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes
@@ -173,7 +182,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
-						i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 						i(134487),	-- Arch-Druid's Tainted Seal
 						i(139077),	-- Bramblemail Belt
 						i(137301),	-- Corrupted Starlight
@@ -221,9 +229,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						ach(10769),	-- Burning Down the House
 						ach(10785),	-- Mythic: Darkheart Thicket
 						ach(10857),	-- Mythic: Darkheart Thicket Guild Run
-						i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
-						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
-						i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes

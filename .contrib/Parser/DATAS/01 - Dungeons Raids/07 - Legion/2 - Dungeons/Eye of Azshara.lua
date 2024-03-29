@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(716, {	-- Eye of Azshara
@@ -11,8 +13,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(ZONE_DROPS, {
 				i(137726),	-- Schematic: Leystone Buoy
 				prof(INSCRIPTION, {
-				i(141051,	-- Technique: Glyph of the Trident (RECIPE!)
-					["description"] = "Drops Naga's in any Broken Isles zone. Recommened to farm the Naga's before the first Boss in the Eye of Azshara Dungeon.",
+					i(141051, {	-- Technique: Glyph of the Trident (RECIPE!)
+						["description"] = "Drops Naga's in any Broken Isles zone. Recommened to farm the Naga's before the first Boss in the Eye of Azshara Dungeon.",
+					}),
 				}),
 			}),
 			n(QUESTS, {

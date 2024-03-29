@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(740, {	-- Black Rook Hold
@@ -58,6 +60,30 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				q(43714, {	-- Black Rook Hold: Worst of the Worst
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
+				}),
+			}),
+			d(NormalPlus, {
+				e(1672, {	-- Lord Kur'talos Ravencrest
+					["crs"] = {
+						98970,	-- Dantalionax
+						98965,	-- Kur'talos Ravencrest
+					},
+					["g"] = {
+						ach(10804),	-- Black Rook Hold
+					},
+				}),
+			}),
+			d(HeroicPlus, {
+				e(1672, {	-- Lord Kur'talos Ravencrest
+					["crs"] = {
+						98970,	-- Dantalionax
+						98965,	-- Kur'talos Ravencrest
+					},
+					["g"] = {
+						ach(10805),	-- Heroic: Black Rook Hold
+						i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
+						i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
+					},
 				}),
 			}),
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
@@ -118,7 +144,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						98965,	-- Kur'talos Ravencrest
 					},
 					["g"] = {
-						ach(10804),	-- Black Rook Hold
 						i(136716),	-- Caged Horror
 						i(136770),	-- Drape of the Raven Lord
 						i(134370),	-- Felbat Leather Leggings
@@ -196,9 +221,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							98965,	-- Kur'talos Ravencrest
 						},
 						["g"] = {
-							ach(10805),	-- Heroic: Black Rook Hold
-							i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
-							i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord
 							i(134370),	-- Felbat Leather Leggings
@@ -284,8 +306,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						["g"] = {
 							ach(10806),	-- Mythic: Black Rook Hold
 							ach(10862),	-- Mythic: Black Rook Hold Guild Run
-							i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
-							i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
 							i(137931),	-- Pattern: Gravenscale Hauberk [Rank 3] (RECIPE!)
 							i(137694),	-- Schematic: Reaves Module: Repair Mode
 							i(136716),	-- Caged Horror
