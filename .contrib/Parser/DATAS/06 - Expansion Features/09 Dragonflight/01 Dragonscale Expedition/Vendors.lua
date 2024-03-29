@@ -145,7 +145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(194325, {	-- Researcher's Magnifier
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
+								{ "i", TALLSTRIDER_SINEW, 5 },
 							},
 						}),
 						i(194326, {	-- Trusty Sweeper
