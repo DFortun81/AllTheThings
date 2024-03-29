@@ -313,34 +313,34 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(15127, {	-- Heroic: Sanctum of Domination
 					crit(52344, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, HEROIC_PLUS_RAID },
+						["_encounter"] = { TARRAGRUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52345, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, HEROIC_PLUS_RAID },
+						["_encounter"] = { EYE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52346, {	-- The Nine
-						["_encounter"] = { NINE, HEROIC_PLUS_RAID },
+						["_encounter"] = { NINE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52348, {	-- Remnant of Ner'zhul
-						["_encounter"] = { DORMAZAIN, HEROIC_PLUS_RAID },
+						["_encounter"] = { DORMAZAIN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52347, {	-- Soulrender Dormazain
-						["_encounter"] = { NERZHUL, HEROIC_PLUS_RAID },
+						["_encounter"] = { NERZHUL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52349, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, HEROIC_PLUS_RAID },
+						["_encounter"] = { PAINSMITH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52350, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, HEROIC_PLUS_RAID },
+						["_encounter"] = { GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52351, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, HEROIC_PLUS_RAID },
+						["_encounter"] = { FATESCRIBE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52352, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, HEROIC_PLUS_RAID },
+						["_encounter"] = { KELTHUZAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(52353, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, HEROIC_PLUS_RAID },
+						["_encounter"] = { SYLVANAS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(15128, {	-- Mythic: Sanctum of Domination
@@ -418,34 +418,34 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				ach(15668,	-- Heroic: Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
 					crit(53558, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, HEROIC_PLUS_RAID },
+						["_encounter"] = { TARRAGRUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53559, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, HEROIC_PLUS_RAID },
+						["_encounter"] = { EYE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53560, {	-- The Nine
-						["_encounter"] = { NINE, HEROIC_PLUS_RAID },
+						["_encounter"] = { NINE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53612, {	-- Soulrender Dormazain
-						["_encounter"] = { DORMAZAIN, HEROIC_PLUS_RAID },
+						["_encounter"] = { DORMAZAIN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53562, {	-- Remnant of Ner'zhul
-						["_encounter"] = { NERZHUL, HEROIC_PLUS_RAID },
+						["_encounter"] = { NERZHUL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53563, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, HEROIC_PLUS_RAID },
+						["_encounter"] = { PAINSMITH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53564, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, HEROIC_PLUS_RAID },
+						["_encounter"] = { GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53565, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, HEROIC_PLUS_RAID },
+						["_encounter"] = { FATESCRIBE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53566, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, HEROIC_PLUS_RAID },
+						["_encounter"] = { KELTHUZAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53567, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, HEROIC_PLUS_RAID },
+						["_encounter"] = { SYLVANAS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
 				ach(15669,	-- Mythic: Fate of Domination
@@ -661,7 +661,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					Boss(SYLVANAS),
 				}),
 			})),
-			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(TARRAGRUE, {
 					ach(14998),	-- Name A Better Duo, I'll Wait
 				}),
@@ -728,7 +728,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(HEROIC_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(TARRAGRUE),
 				BossOnly(EYE),
 				BossOnly(NINE),

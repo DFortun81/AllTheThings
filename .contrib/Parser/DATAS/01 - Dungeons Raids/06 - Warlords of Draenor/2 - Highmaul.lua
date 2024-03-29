@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					})),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 					ach(8948, {	-- Flame On!
 						["crs"] = { 88123 },	-- Fire Pillar

@@ -655,7 +655,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(OREGORGER, {	-- Oregorger
 					ach(8979),	-- He Shoots, He Ores
 				}),

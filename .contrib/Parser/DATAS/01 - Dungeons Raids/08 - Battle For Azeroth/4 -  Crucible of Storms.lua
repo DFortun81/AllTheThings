@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					}),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared

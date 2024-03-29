@@ -359,7 +359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					}),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
 					["g"] = {

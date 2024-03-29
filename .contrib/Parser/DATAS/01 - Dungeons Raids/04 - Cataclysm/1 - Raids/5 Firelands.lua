@@ -431,7 +431,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			d(
 			-- #if AFTER 8.2.5
-			NORMAL_HEROIC_RAID,
+			DIFFICULTY.RAID.MULTI.NORMAL_HEROIC,
 			-- #else
 			NORMAL_HEROIC_DUNGEON, {
 			["difficulties"] = { 3, 4, 5, 6 },

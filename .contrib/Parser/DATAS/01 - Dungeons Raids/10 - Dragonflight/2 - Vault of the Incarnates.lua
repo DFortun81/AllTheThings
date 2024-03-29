@@ -469,28 +469,28 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
 					crit(55121, {	-- Eranog
-						["_encounter"] = { ERANOG, HEROIC_PLUS_RAID },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55122, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55123, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, HEROIC_PLUS_RAID },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55124, {	-- Terros
-						["_encounter"] = { TERROS, HEROIC_PLUS_RAID },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55125, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, HEROIC_PLUS_RAID },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55127, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, HEROIC_PLUS_RAID },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55126, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, HEROIC_PLUS_RAID },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55128, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, HEROIC_PLUS_RAID },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(16354, {	-- Mythic: Vault of the Incarnates
@@ -551,28 +551,28 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(19565, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Storms
 					crit(64937, {	-- Eranog
-						["_encounter"] = { ERANOG, HEROIC_PLUS_RAID },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64938, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64939, {	-- Terros
-						["_encounter"] = { TERROS, HEROIC_PLUS_RAID },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64940, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, HEROIC_PLUS_RAID },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64941, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, HEROIC_PLUS_RAID },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64942, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, HEROIC_PLUS_RAID },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64943, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, HEROIC_PLUS_RAID },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64944, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, HEROIC_PLUS_RAID },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
 				ach(19566, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Storms
@@ -681,7 +681,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(ERANOG, {
 					ach(16335),	-- What Frozen Things Do
 				}),
@@ -732,7 +732,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(HEROIC_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				CommonBossDrops({
 					ig(201740, {	-- Elemental Codex of Ultimate Power
 						["collectible"] = false,

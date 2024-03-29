@@ -314,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				["groups"] = {
 					e(2352, {	-- Abyssal Commander Sivara
 						["crs"] = { 151881 },	-- Abyssal Commander Sivara	-- Abyssal Commander Sivara

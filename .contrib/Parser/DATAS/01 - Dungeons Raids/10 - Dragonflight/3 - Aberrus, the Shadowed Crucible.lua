@@ -524,31 +524,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
 					crit(59573, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59574, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59575, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59576, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59577, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59578, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59579, {	-- Magmorax
-						["_encounter"] = { 2527, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59580, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59581, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(18162, {	-- Mythic: Aberrus, the Shadowed Crucible
@@ -617,31 +617,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(19568, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Shadows
 					crit(64966, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64967, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64968, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64969, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64970, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64971, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64972, {	-- Magmorax
-						["_encounter"] = { 2527, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64973, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64974, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
 				ach(19569, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Shadows
@@ -772,7 +772,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(KAZZARA, {
 					ach(18229, {	-- Cosplate
 						["crs"] = { 205674 },	-- Molten Vortex
@@ -869,7 +869,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			-- This is needed for Achievement distribution
-			Difficulty(HEROIC_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(KAZZARA),
 				BossOnly(AMALGAMATION),
 				BossOnly(EXPERIMENTS),

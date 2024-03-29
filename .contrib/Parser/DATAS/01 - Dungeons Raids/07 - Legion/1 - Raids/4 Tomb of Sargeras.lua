@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				e(1861, {	-- Mistress Sassz'ine
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {

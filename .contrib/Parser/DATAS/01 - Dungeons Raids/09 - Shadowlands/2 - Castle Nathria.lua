@@ -234,34 +234,34 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(14717, {	-- Heroic: Castle Nathria
 					crit(48970, {	-- Shriekwing
-						["_encounter"] = { 2393, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48971, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2429, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48974, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2422, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48973, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2418, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48972, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2428, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48975, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2420, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48976, {	-- The Council of Blood
-						["_encounter"] = { 2426, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2426, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48977, {	-- Sludgefist
-						["_encounter"] = { 2394, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2394, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48978, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2425, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(48979, {	-- Sire Denathrius
-						["_encounter"] = { 2424, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(14718, {	-- Mythic: Castle Nathria
@@ -333,34 +333,34 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Nathria
 					crit(53524, {	-- Shriekwing
-						["_encounter"] = { 2393, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53525, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2429, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53526, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2422, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53527, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2418, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53528, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2428, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53529, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2420, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53530, {	-- The Council of Blood
-						["_encounter"] = { 2426, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2426, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53531, {	-- Sludgefist
-						["_encounter"] = { 2394, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2394, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53532, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2425, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53533, {	-- Sire Denathrius
-						["_encounter"] = { 2424, HEROIC_PLUS_RAID },
+						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
 				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Nathria
@@ -708,7 +708,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					FatedItem(183899.83, LFR),	-- Zenith Anima Spherule (Fated)
 				}),
 			})),
-			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(SHRIEKWING, {
 					ach(14293),	-- Blind as a Bat
 				}),
@@ -799,7 +799,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					FatedItem(183899.82, NORMAL),	-- Zenith Anima Spherule (Fated)
 				}),
 			}),
-			Difficulty(HEROIC_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(SHRIEKWING),
 				BossOnly(HUNTSMAN),
 				BossOnly(SUN_KING),

@@ -342,7 +342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					})),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 					ach(10026, {	-- Nearly Indestructible
 						["crs"] = { 90018 },	-- Hellfire Cannon

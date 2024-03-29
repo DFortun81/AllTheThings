@@ -238,7 +238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				e(1703, {	-- Nythendra
 					["crs"] = { 102672 },	-- Nythendra
 					["g"] = {

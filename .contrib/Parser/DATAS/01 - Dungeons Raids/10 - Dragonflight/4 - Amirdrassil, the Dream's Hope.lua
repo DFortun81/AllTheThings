@@ -678,31 +678,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
 					crit(63104, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, HEROIC_PLUS_RAID },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63105, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, HEROIC_PLUS_RAID },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63106, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, HEROIC_PLUS_RAID },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63107, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, HEROIC_PLUS_RAID },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63108, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, HEROIC_PLUS_RAID },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63109, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, HEROIC_PLUS_RAID },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63110, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, HEROIC_PLUS_RAID },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63111, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, HEROIC_PLUS_RAID },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63112, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, HEROIC_PLUS_RAID },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(19334, {	-- Mythic: Amirdrassil, the Dream's Hope
@@ -768,31 +768,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Flames
 					crit(64995, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, HEROIC_PLUS_RAID },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64996, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, HEROIC_PLUS_RAID },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64997, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, HEROIC_PLUS_RAID },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64998, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, HEROIC_PLUS_RAID },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64999, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, HEROIC_PLUS_RAID },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65000, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, HEROIC_PLUS_RAID },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65001, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, HEROIC_PLUS_RAID },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65002, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, HEROIC_PLUS_RAID },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65003, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, HEROIC_PLUS_RAID },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
 				ach(19572, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Flames
@@ -979,7 +979,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(GNARLROOT, {
 					ach(19322),	-- Meaner Pastures
 				}),
@@ -1048,7 +1048,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(HEROIC_PLUS_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
 					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {	-- A Glowing Memento
 						["provider"] = { "i", 211375 },	-- Everglowing Ember

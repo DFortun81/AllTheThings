@@ -376,7 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}))
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				cr(102263, e(1706, {	-- Skorpyron
 					ach(10678),	-- Cage Rematch
 					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)

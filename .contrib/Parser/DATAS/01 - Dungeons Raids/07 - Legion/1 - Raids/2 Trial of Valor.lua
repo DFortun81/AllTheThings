@@ -236,7 +236,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				cr(114263, e(1819, {	-- Odyn
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
