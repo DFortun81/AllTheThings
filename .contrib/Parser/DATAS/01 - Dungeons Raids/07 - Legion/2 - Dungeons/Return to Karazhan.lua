@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(860, {	-- Return to Karazhan
@@ -187,6 +189,32 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				i(143670),	-- Thin-Soled Fiend Slayer Boots
 				i(143667),	-- Worn Battlescar Boots
 			})),
+			d(HeroicPlus, {
+				e(1837, {	-- Moroes
+					["creatureID"] = 114312,	-- Moroes
+					["g"] = {
+						i(138797),	-- Illusion: Mongoose (ILLUSION!)
+						i(142246, {	-- Broken Pocket Watch
+							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
+						}),
+					},
+				}),
+				e(1817, {	-- Shade of Medivh
+					["creatureID"] = 114350,	-- Shade of Medivh
+					["g"] = {
+						i(138798),	-- Illusion: Sunfire (ILLUSION!)
+					},
+				}),
+				e(1838, {	-- Viz'aduum the Watcher
+					["creatureID"] = 114790,	-- Viz'aduum the Watcher
+					["g"] = {
+						ach(11929),	-- Heroic: Return to Karazhan
+						i(213017, {	-- Grimoire of the Riftsmolder Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
+					},
+				}),
+			}),
 			d(HEROIC_DUNGEON, {
 				e(1820, {	-- Opera Hall: Wikket
 					["crs"] = {
@@ -279,10 +307,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1837, {	-- Moroes
 					["creatureID"] = 114312,	-- Moroes
 					["g"] = {
-						i(138797),	-- Illusion: Mongoose (ILLUSION!)
-						i(142246, {	-- Broken Pocket Watch
-							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
-						}),
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
 						i(142134),	-- Castellan's Blinders
@@ -311,7 +335,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1817, {	-- Shade of Medivh
 					["creatureID"] = 114350,	-- Shade of Medivh
 					["g"] = {
-						i(138798),	-- Illusion: Sunfire (ILLUSION!)
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
 						i(142131),	-- Frozen-Link Chestguard
@@ -340,10 +363,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1838, {	-- Viz'aduum the Watcher
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
 					["g"] = {
-						ach(11929),	-- Heroic: Return to Karazhan
-						i(213017, {	-- Grimoire of the Riftsmolder Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
 						i(142167),	-- Eye of Command
 						i(142132),	-- Doomstride Footguards
 						i(142151),	-- Leggings of Countless Worlds
@@ -486,10 +505,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["creatureID"] = 114312,	-- Moroes
 					["g"] = {
 						ach(11338),	-- Dine and Bash
-						i(138797),	-- Illusion: Mongoose (ILLUSION!)
-						i(142246, {	-- Broken Pocket Watch
-							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
-						}),
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
 						i(142134),	-- Castellan's Blinders
@@ -544,7 +559,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["creatureID"] = 114350,	-- Shade of Medivh
 					["g"] = {
 						ach(11432),	-- Scared Straight
-						i(138798),	-- Illusion: Sunfire (ILLUSION!)
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
 						i(142131),	-- Frozen-Link Chestguard
@@ -578,9 +592,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["g"] = {
 						ach(11429),	-- Mythic: Return to Karazhan
 						ach(11428),	-- Return to Karazhan Guild Run
-						i(213017, {	-- Grimoire of the Riftsmolder Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
 						i(142167),	-- Eye of Command
 						i(142132),	-- Doomstride Footguards
 						i(142151),	-- Leggings of Countless Worlds

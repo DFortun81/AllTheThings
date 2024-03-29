@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 	inst(945, {	-- Seat of the Triumvirate
@@ -192,7 +194,7 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(HeroicPlus, {
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter (TOY!)
 					i(152982, {		-- Vixx's Chest of Tricks (TOY!)
@@ -205,6 +207,17 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 					i(213015, {	-- Grimoire of the Eredathian Darkglare (CI!)
 						["timeline"] = { ADDED_10_2_5 },
 					}),
+				})),
+				cr(122314, e(1982, {	-- L'ura
+					["crs"] = { 124729 },	-- L'ura
+					["g"] = {
+						ach(12007),	-- Heroic: Seat of the Triumvirate
+						i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
+					},
+				})),
+			}),
+			d(HEROIC_DUNGEON, {
+				cr(122313, e(1979, {	-- Zuraal the Ascended
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding
 					i(151329),	-- Breastplate of the Dark Touch
@@ -249,8 +262,6 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 				cr(122314, e(1982, {	-- L'ura
 					["crs"] = { 124729 },	-- L'ura
 					["g"] = {
-						ach(12007),	-- Heroic: Seat of the Triumvirate
-						i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
 						i(151311),	-- Band of the Triumvirate
 						i(151302),	-- Cord of Unraveling Reality
 						i(151340),	-- Echo of L'ura
@@ -268,20 +279,9 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 				})),
 			}),
 			d(MYTHIC_DUNGEON, {
-				n(127882, {	-- Vixx the Collector
-					i(153004),	-- Unstable Portal Emitter (TOY!)
-					i(152982, {		-- Vixx's Chest of Tricks (TOY!)
-						title(365, {	-- %s the Collector
-							["collectible"] = false,
-						}),
-					}),
-				}),
 				cr(122313, e(1979, {	-- Zuraal the Ascended
 					ach(12004, {	-- Welcome the Void
 						["crs"] = { 126283 },	-- Urjad
-					}),
-					i(213015, {	-- Grimoire of the Eredathian Darkglare (CI!)
-						["timeline"] = { ADDED_10_2_5 },
 					}),
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding
@@ -330,7 +330,6 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 				cr(122314, e(1982, {	-- L'ura
 					ach(12009),	-- Darker Side
 					ach(12008),	-- Mythic: Seat of the Triumvirate
-					i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
 					i(151311),	-- Band of the Triumvirate
 					i(151302),	-- Cord of Unraveling Reality
 					i(151340),	-- Echo of L'ura

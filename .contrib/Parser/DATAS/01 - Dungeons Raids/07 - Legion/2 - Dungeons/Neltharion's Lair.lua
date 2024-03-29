@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(767, {	-- Neltharion's Lair
@@ -76,6 +78,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
+			d(NormalPlus, {
+				cr(91007, e(1687, {	-- Dargrul
+					ach(10795),	-- Neltharion's Lair
+					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
+					i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
+				})),
+			}),
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				i(205975),	-- Hate-Sculpted Magma
 				i(205974),	-- Monstrous GLuttony
@@ -122,9 +131,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137351),	-- Noxious Entrails
 				})),
 				cr(91007, e(1687, {	-- Dargrul
-					ach(10795),	-- Neltharion's Lair
-					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-					i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
 					i(134166),	-- Bitestone Boots
 					i(134495),	-- Chain of the Underking
 					i(137353),	-- Charskin Legguards
@@ -141,6 +147,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137352),	-- Tunic of Smoldering Ire
 					i(137358),	-- Hate-Sculpted Magma
 					i(137359),	-- Pebble of Ages
+				})),
+			}),
+			d(HeroicPlus, {
+				cr(91007, e(1687, {	-- Dargrul
+					ach(10796),	-- Heroic: Neltharion's Lair
+					i(137854),	-- Design: Intrepid Necklace of Prophecy [Rank 3] (RECIPE!)
+					i(137864),	-- Design: Shadowruby Band [Rank 2] (RECIPE!)
+					i(127928),	-- Recipe: Unbending Potion [Rank 2] (RECIPE!)
 				})),
 			}),
 			d(HEROIC_DUNGEON, {
@@ -186,12 +200,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137351),	-- Noxious Entrails
 					})),
 					cr(91007, e(1687, {	-- Dargrul
-						ach(10796),	-- Heroic: Neltharion's Lair
-						i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-						i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
-						i(137854),	-- Design: Intrepid Necklace of Prophecy [Rank 3] (RECIPE!)
-						i(137864),	-- Design: Shadowruby Band [Rank 2] (RECIPE!)
-						i(127928),	-- Recipe: Unbending Potion [Rank 2] (RECIPE!)
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards
@@ -259,11 +267,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					cr(91007, e(1687, {	-- Dargrul
 						ach(10797),	-- Mythic: Neltharion's Lair
 						ach(10859),	-- Mythic: Neltharion's Lair Guild Run
-						i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-						i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
-						i(137854),	-- Design: Intrepid Necklace of Prophecy [Rank 3] (RECIPE!)
-						i(137864),	-- Design: Shadowruby Band [Rank 2] (RECIPE!)
-						i(127928),	-- Recipe: Unbending Potion [Rank 2] (RECIPE!)
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards

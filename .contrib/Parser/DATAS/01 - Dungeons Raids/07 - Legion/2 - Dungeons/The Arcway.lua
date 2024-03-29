@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(726, {	-- The Arcway
@@ -34,6 +36,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						}),
 					},
 				}),
+			}),
+			d(HeroicPlus, {
+				cr(98207, e(1500, {	-- Nal'tira
+					i(136969),	-- Tome of Hex: Spider (CI!)
+				})),
+				cr(98208, e(1501, {	-- Advisor Vandros
+					i(137897),	-- Pattern: Dreadleather Gloves [Rank 3] (RECIPE!)
+					i(127927),	-- Recipe: Potion of the Old War [Rank 2] (RECIPE!)
+					i(137712),	-- Schematic: Tactical Headgun [Rank 3] (RECIPE!)
+				})),
 			}),
 			d(HEROIC_DUNGEON, {
 				cr(98203, e(1497, {	-- Ivanyr
@@ -75,7 +87,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137408),	-- Xakal's Determination
 				})),
 				cr(98207, e(1500, {	-- Nal'tira
-					i(136969),	-- Tome of Hex: Spider (CI!)
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
 					i(137410),	-- Greathelm of Barbed Chelicerae
@@ -87,9 +98,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137411),	-- Nal'tira's Venom Gland
 				})),
 				cr(98208, e(1501, {	-- Advisor Vandros
-					i(137897),	-- Pattern: Dreadleather Gloves [Rank 3] (RECIPE!)
-					i(127927),	-- Recipe: Potion of the Old War [Rank 2] (RECIPE!)
-					i(137712),	-- Schematic: Tactical Headgun [Rank 3] (RECIPE!)
 					i(134267),	-- Arcane Defender's Breastplate
 					i(137416),	-- Chain of Causal Links
 					i(137419),	-- Chrono Shard
@@ -150,7 +158,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137408),	-- Xakal's Determination
 				})),
 				cr(98207, e(1500, {	-- Nal'tira
-					i(136969),	-- Tome of Hex: Spider (CI)
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
 					i(137410),	-- Greathelm of Barbed Chelicerae
@@ -168,9 +175,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						["crs"] = { 103130 },	-- Timeless Wraith
 					}),
 					i(137851),	-- Design: Tranquil Necklace of Prophecy [Rank 3] (RECIPE!)
-					i(137897),	-- Pattern: Dreadleather Gloves [Rank 3] (RECIPE!)
-					i(127927),	-- Recipe: Potion of the Old War [Rank 2] (RECIPE!)
-					i(137712),	-- Schematic: Tactical Headgun [Rank 3] (RECIPE!)
 					i(134267),	-- Arcane Defender's Breastplate
 					i(137416),	-- Chain of Causal Links
 					i(137419),	-- Chrono Shard

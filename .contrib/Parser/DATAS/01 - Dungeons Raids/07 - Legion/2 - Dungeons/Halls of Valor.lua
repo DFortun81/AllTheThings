@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(721, {	-- Halls of Valor
@@ -38,15 +40,29 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
+			d(NormalPlus, {
+				n(ZONE_DROPS, {
+					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
+				}),
+				e(1486, {	-- Hyrja
+					["creatureID"] = 95833,	-- Hyrja
+					["g"] = {
+						i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
+					},
+				}),
+				e(1489, {	-- Odyn
+					["creatureID"] = 95676,	-- Odyn
+					["g"] = {
+						ach(10786),	-- Halls of Valor
+					},
+				}),
+			}),
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(201998),	-- Fenryr's Bloodstained Fang
 				i(201997),	-- Key to the Halls
 				i(201999),	-- Skovald's Resolve
 			})),
 			d(NORMAL_DUNGEON, {
-				n(ZONE_DROPS, {
-					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
-				}),
 				e(1485, {	-- Hymdall
 					["creatureID"] = 94960,	-- Hymdall
 					["g"] = {
@@ -66,7 +82,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1486, {	-- Hyrja
 					["creatureID"] = 95833,	-- Hyrja
 					["g"] = {
-						i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 						i(133620),	-- Amice of the Enlightened
 						i(134196),	-- Biornskin Hood
 						i(134219),	-- Bonespeaker Robes
@@ -115,7 +130,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1489, {	-- Odyn
 					["creatureID"] = 95676,	-- Odyn
 					["g"] = {
-						ach(10786),	-- Halls of Valor
 						i(134192),	-- Biornskin Bracer
 						i(136776),	-- Bjorn's Hunting Strap
 						i(134217),	-- Bonespeaker Gloves
@@ -137,12 +151,19 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
+			d(HeroicPlus, {
+				e(1489, {	-- Odyn
+					["creatureID"] = 95676,	-- Odyn
+					["g"] = {
+						ach(10788),	-- Heroic: Halls of Valor
+						i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
+						i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
+					},
+				}),
+			}),
 			d(HEROIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
-					n(ZONE_DROPS, {
-						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
-					}),
 					e(1485, {	-- Hymdall
 						["creatureID"] = 94960,	-- Hymdall
 						["g"] = {
@@ -162,7 +183,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					e(1486, {	-- Hyrja
 						["creatureID"] = 95833,	-- Hyrja
 						["g"] = {
-							i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 							i(133620),	-- Amice of the Enlightened
 							i(134196),	-- Biornskin Hood
 							i(134219),	-- Bonespeaker Robes
@@ -212,8 +232,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						["creatureID"] = 95676,	-- Odyn
 						["g"] = {
 							ach(10788),	-- Heroic: Halls of Valor
-							i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
-							i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap
 							i(134217),	-- Bonespeaker Gloves
@@ -247,9 +265,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							["crs"] = { 99891 },	-- Storm Drake
 						}),
 					}),
-					n(ZONE_DROPS, {
-						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
-					}),
 					e(1485, {	-- Hymdall
 						["creatureID"] = 94960,	-- Hymdall
 						["g"] = {
@@ -269,7 +284,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					e(1486, {	-- Hyrja
 						["creatureID"] = 95833,	-- Hyrja
 						["g"] = {
-							i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 							i(133620),	-- Amice of the Enlightened
 							i(134196),	-- Biornskin Hood
 							i(134219),	-- Bonespeaker Robes
@@ -323,9 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							ach(10543, {	-- Surge Protector
 								["crs"] = { 102019 },	-- Stormforged Obliterator
 							}),
-							i(137857),	-- Design: Raging Furystone Gorget [Rank 3] (RECIPE!)
 							i(137911),	-- Pattern: Battlebound Grips [Rank 3] (RECIPE!)
-							i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
 							i(137607),	-- Plans: Leystone Helm [Rank 3] (RECIPE!)
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap

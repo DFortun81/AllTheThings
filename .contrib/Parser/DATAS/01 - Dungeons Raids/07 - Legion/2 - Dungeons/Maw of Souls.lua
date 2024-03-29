@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(727, {	-- Maw of Souls
@@ -22,6 +24,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["isWorldQuest"] = true,
 				}),
 			}),
+			d(NormalPlus, {
+				cr(96756, e(1502, {	-- Ymiron, the Fallen King
+					i(139619),	-- Ymiron's Broken Blade (QUEST!)
+				})),
+				cr(96759, e(1663, {	-- Helya
+					ach(10807),	-- Maw of Souls
+				})),
+			}),
 			d(NORMAL_DUNGEON, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(134199),	-- Biornskin Belt
@@ -36,7 +46,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(133637),	-- Utgarde Royal Signet
 					i(137326),	-- Fragmented Meteorite Whetstone
 					i(133682),	-- Northern Gale
-					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
 				cr(96754, e(1512, {	-- Harbaron
 					i(137325),	-- Afterlife Manacles
@@ -53,7 +62,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137327),	-- Relinquishing Grip of Helheim
 				})),
 				cr(96759, e(1663, {	-- Helya
-					ach(10807),	-- Maw of Souls
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle
@@ -74,6 +82,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
+			d(HeroicPlus, {
+				cr(96759, e(1663, {	-- Helya
+					ach(10808),	-- Heroic: Maw of Souls
+					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)
+				--	i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!) (Not confirmed)
+					i(127932),	-- Recipe: Flask of the Countless Armies [Rank 2] (RECIPE!)
+					i(136696),	-- Plans: Terrorspike (RECIPE!)
+				})),
+			}),
 			d(HEROIC_DUNGEON, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(134199),	-- Biornskin Belt
@@ -88,7 +105,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(133637),	-- Utgarde Royal Signet
 					i(137326),	-- Fragmented Meteorite Whetstone
 					i(133682),	-- Northern Gale
-					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
 				cr(96754, e(1512, {	-- Harbaron
 					i(137325),	-- Afterlife Manacles
@@ -105,11 +121,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137327),	-- Relinquishing Grip of Helheim
 				})),
 				cr(96759, e(1663, {	-- Helya
-					ach(10808),	-- Heroic: Maw of Souls
-					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)
-				--	i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!) (Not confirmed)
-					i(127932),	-- Recipe: Flask of the Countless Armies [Rank 2] (RECIPE!)
-					i(136696),	-- Plans: Terrorspike (RECIPE!)
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle
@@ -147,7 +158,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(133637),	-- Utgarde Royal Signet
 					i(137326),	-- Fragmented Meteorite Whetstone
 					i(133682),	-- Northern Gale
-					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
 				cr(96754, e(1512, {	-- Harbaron
 					ach(10411, {	-- Helheim Hath No Fury
@@ -177,10 +187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(140323),	-- Lagan (PET!)
 						},
 					}),
-					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)
 					i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!)
-					i(127932),	-- Recipe: Flask of the Countless Armies [Rank 2] (RECIPE!)
-					i(136696),	-- Plans: Terrorspike (RECIPE!)
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle

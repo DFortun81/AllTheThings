@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(707, {	-- Vault of the Wardens
@@ -31,6 +33,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
+			d(NormalPlus, {
+				cr(95886, e(1468, {	-- Ash'golm
+					i(139468),	-- Bindings of the Windlord (rogue appearance)
+				})),
+				cr(95888, e(1470, {	-- Cordana Felsong
+					ach(10801),	-- Vault of the Wardens
+				})),
+			}),
 			d(NORMAL_DUNGEON, {
 				cr(95885, e(1467, {	-- Tirathon Saltheril
 					i(134369),	-- Felbat Leather Boots
@@ -56,7 +66,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137543),	-- Soulsap Shackles
 				})),
 				cr(95886, e(1468, {	-- Ash'golm
-					i(139468),	-- Bindings of the Windlord (rogue appearance)
 					i(137510),	-- Charskin Mantle
 					i(137526),	-- Crown of Ash
 					i(137539),	-- Faulty Countermeasure
@@ -81,7 +90,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137547),	-- Pulsing Prism
 				})),
 				cr(95888, e(1470, {	-- Cordana Felsong
-					ach(10801),	-- Vault of the Wardens
 					i(137522),	-- Bracers of Twisted Revelation
 					i(137514),	-- Chestguard of Insidious Desire
 					i(137531),	-- Cloak of Enthralling Darkness
@@ -99,6 +107,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137548),	-- Elune's Light
 					i(137550),	-- Moonglaive Dervish
 					i(137549),	-- Shade of the Vault
+				})),
+			}),
+			d(HeroicPlus, {
+				cr(95888, e(1470, {	-- Cordana Felsong
+					ach(10802),	-- Heroic: Vault of the Wardens
+					i(137852),	-- Design: Vindictive Pandemonite Choker [Rank 3] (RECIPE!)
+					i(127931),	-- Recipe: Flask of the Seventh Demon [Rank 2] (RECIPE!)
+					i(137930),	-- Pattern: Gravenscale Treads [Rank 3] (RECIPE!)
 				})),
 			}),
 			d(HEROIC_DUNGEON, {
@@ -128,7 +144,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137543),	-- Soulsap Shackles
 					})),
 					cr(95886, e(1468, {	-- Ash'golm
-						i(139468),	-- Bindings of the Windlord (rogue appearance)
 						i(137510),	-- Charskin Mantle
 						i(137526),	-- Crown of Ash
 						i(137539),	-- Faulty Countermeasure
@@ -153,10 +168,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137547),	-- Pulsing Prism
 					})),
 					cr(95888, e(1470, {	-- Cordana Felsong
-						ach(10802),	-- Heroic: Vault of the Wardens
-						i(137852),	-- Design: Vindictive Pandemonite Choker [Rank 3] (RECIPE!)
-						i(127931),	-- Recipe: Flask of the Seventh Demon [Rank 2] (RECIPE!)
-						i(137930),	-- Pattern: Gravenscale Treads [Rank 3] (RECIPE!)
 						i(137522),	-- Bracers of Twisted Revelation
 						i(137514),	-- Chestguard of Insidious Desire
 						i(137531),	-- Cloak of Enthralling Darkness
@@ -211,7 +222,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 					cr(95886, e(1468, {	-- Ash'golm
 						ach(10679),	-- I Ain't Even Cold
-						i(139468),	-- Bindings of the Windlord (rogue appearance)
 						i(137510),	-- Charskin Mantle
 						i(137526),	-- Crown of Ash
 						i(137539),	-- Faulty Countermeasure
@@ -239,10 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						ach(10803),	-- Mythic: Vault of the Wardens
 						ach(10861),	-- Mythic: Vault of the Wardens Guild Run
 						ach(10680),	-- Who's Afraid of the Dark?
-						i(137852),	-- Design: Vindictive Pandemonite Choker [Rank 3] (RECIPE!)
 						i(128607),	-- Formula: Enchant Cloak - Binding of Strength [Rank 3] (RECIPE!)
-						i(127931),	-- Recipe: Flask of the Seventh Demon [Rank 2] (RECIPE!)
-						i(137930),	-- Pattern: Gravenscale Treads [Rank 3] (RECIPE!)
 						i(137522),	-- Bracers of Twisted Revelation
 						i(137514),	-- Chestguard of Insidious Desire
 						i(137531),	-- Cloak of Enthralling Darkness
