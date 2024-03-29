@@ -15,113 +15,113 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			n(ACHIEVEMENTS, {
 				ach(3917, {	-- Call of the Crusade (10 player)
 					crit(13326, {	-- Northrend Beasts
-						["_encounter"] = { 1618, 3 },
+						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13327, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, 3 },
+						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- Blizzaaaaard why do you waste my time like this?
 					crit(13328, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, 3 },
+						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13328, {	-- Champions of the Horde
-						["_encounter"] = { 1621, 3 },
+						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13329, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, 3 },
+						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13308, {	-- Anub'arak
-						["_encounter"] = { 1623, 3 },
+						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					-- #else
 					crit(12236, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, 3 },
+						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(12236, {	-- Champions of the Horde
-						["_encounter"] = { 1621, 3 },
+						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(12240, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, 3 },
+						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(12244, {	-- Anub'arak
-						["_encounter"] = { 1623, 3 },
+						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					-- #endif
 				}),
 				ach(3918, {	-- Call of the Grand Crusade (10 player)
 					crit(12229, {	-- Northrend Beasts
-						["_encounter"] = { 1618, 5 },
+						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12233, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, 5 },
+						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12237, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, 5 },
+						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12237, {	-- Champions of the Horde
-						["_encounter"] = { 1621, 5 },
+						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12241, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, 5 },
+						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12245, {	-- Anub'arak
-						["_encounter"] = { 1623, 5 },
+						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 				}),
 				ach(3916, {	-- Call of the Crusade (25 player)
 					-- #if ANYCLASSIC
 					crit(13346, {	-- Northrend Beasts
-						["_encounter"] = { 1618, 4 },
+						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #else
 					crit(12230, {	-- Northrend Beasts
-						["_encounter"] = { 1618, 4 },
+						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #endif
 					crit(13347, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, 4 },
+						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(13348, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, 4 },
+						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(13348, {	-- Champions of the Horde
-						["_encounter"] = { 1621, 4 },
+						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					crit(13349, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, 4 },
+						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(13346, {	-- Anub'arak
-						["_encounter"] = { 1623, 4 },
+						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #else
 					crit(12242, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, 4 },
+						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(12246, {	-- Anub'arak
-						["_encounter"] = { 1623, 4 },
+						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #endif
 				}),
 				ach(3812, {	-- Call of the Grand Crusade (25 player)
 					crit(12231, {	-- Northrend Beasts
-						["_encounter"] = { 1618, 6 },
+						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12235, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, 6 },
+						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12239, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, 6 },
+						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12239, {	-- Champions of the Horde
-						["_encounter"] = { 1621, 6 },
+						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12243, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, 6 },
+						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12247, {	-- Anub'arak
-						["_encounter"] = { 1623, 6 },
+						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 				}),
 				ach(11752, {["timeline"] = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
@@ -1557,7 +1557,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 			}),
-			d(5, {	-- 10-Player Heroic
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
 						34797,	-- Icehowl
@@ -1848,7 +1848,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				})),
 			}),
-			d(4, {	-- 25-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
 						34797,	-- Icehowl
@@ -2100,7 +2100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 			}),
-			d(6, {	-- 25-Player Heroic
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC, {
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
 						34797,	-- Icehowl

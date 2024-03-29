@@ -563,7 +563,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(4, {	-- 25-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				applyclassicphase(WRATH_PHASE_THREE, ach(4017, {	-- Earth, Wind & Fire (25 player)
 					["crs"] = {
 						35013,	-- Koralon the Flame Watcher

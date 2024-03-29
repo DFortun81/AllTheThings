@@ -10,24 +10,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			n(ACHIEVEMENTS, {
 				ach(4518, {	-- The Halls of Reflection
 					crit(13320, {	-- Falric
-						["_encounter"] = { 601, 1 },
+						["_encounter"] = { 601, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13321, {	-- Marwyn
-						["_encounter"] = { 602, 1 },
+						["_encounter"] = { 602, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13323, {	-- Survive the encounter with the Lich King
-						["_encounter"] = { 603, 1 },
+						["_encounter"] = { 603, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 				}),
 				ach(4521, {	-- Heroic: The Halls of Reflection
 					crit(13177, {	-- Falric
-						["_encounter"] = { 601, 2 },
+						["_encounter"] = { 601, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13179, {	-- Marwyn
-						["_encounter"] = { 602, 2 },
+						["_encounter"] = { 602, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13181, {	-- Survive the encounter with the Lich King
-						["_encounter"] = { 603, 2 },
+						["_encounter"] = { 603, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),

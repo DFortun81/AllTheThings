@@ -133,16 +133,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(496,  {	-- Heroic: Halls of Stone
 					crit(6856, {	-- Maiden of Grief
-						["_encounter"] = { 605, 2 },
+						["_encounter"] = { 605, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5615, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, 2 },
+						["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6936, {	-- Tribunal of Ages
-						["_encounter"] = { 606, 2 },
+						["_encounter"] = { 606, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6857, {	-- Krystallus
-						["_encounter"] = { 604, 2 },
+						["_encounter"] = { 604, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),

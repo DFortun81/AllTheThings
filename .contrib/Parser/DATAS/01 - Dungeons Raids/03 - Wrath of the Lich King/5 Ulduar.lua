@@ -357,13 +357,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10580, {	-- Assembly of Iron
-									["_encounter"] = { 1641, 3 },
+									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9992, {	-- Auriaya
-									["_encounter"] = { 1643, 3 },
+									["_encounter"] = { 1643, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9978, {	-- Kologarn
-									["_encounter"] = { 1642, 3 },
+									["_encounter"] = { 1642, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
@@ -371,10 +371,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9948, {	-- General Vezax
-									["_encounter"] = { 1648, 3 },
+									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(5643, {	-- Yogg-Saron
-									["_encounter"] = { 1649, 3 },
+									["_encounter"] = { 1649, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
@@ -382,16 +382,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10560, {	-- Hodir
-									["_encounter"] = { 1644, 3 },
+									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(10558, {	-- Thorim
-									["_encounter"] = { 1645, 3 },
+									["_encounter"] = { 1645, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(10559, {	-- Freya
-									["_encounter"] = { 1646, 3 },
+									["_encounter"] = { 1646, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9947, {	-- Mimiron
-									["_encounter"] = { 1647, 3 },
+									["_encounter"] = { 1647, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
@@ -399,16 +399,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9968, {	-- Flame Leviathan
-									["_encounter"] = { 1637, 3 },
+									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9970, {	-- Razorscale
-									["_encounter"] = { 1639, 3 },
+									["_encounter"] = { 1639, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9972, {	-- Ignis the Furnace Master
-									["_encounter"] = { 1638, 3 },
+									["_encounter"] = { 1638, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9974, {	-- XT-002 Deconstructor
-									["_encounter"] = { 1640, 3 },
+									["_encounter"] = { 1640, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
@@ -1009,7 +1009,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #endif
 				},
 			}),
-			d(4, {	-- 25-Man
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
@@ -1182,13 +1182,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10581, {	-- Assembly of Iron
-									["_encounter"] = { 1641, 4 },
+									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9966, {	-- Auriaya
-									["_encounter"] = { 1643, 4 },
+									["_encounter"] = { 1643, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9979, {	-- Kologarn
-									["_encounter"] = { 1642, 4 },
+									["_encounter"] = { 1642, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),
@@ -1196,10 +1196,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9964, {	-- General Vezax
-									["_encounter"] = { 1648, 4 },
+									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9967, {	-- Yogg-Saron
-									["_encounter"] = { 1649, 4 },
+									["_encounter"] = { 1649, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),
@@ -1207,16 +1207,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10562, {	-- Hodir
-									["_encounter"] = { 1644, 4 },
+									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(10561, {	-- Thorim
-									["_encounter"] = { 1645, 4 },
+									["_encounter"] = { 1645, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(10563, {	-- Freya
-									["_encounter"] = { 1646, 4 },
+									["_encounter"] = { 1646, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9963, {	-- Mimiron
-									["_encounter"] = { 1647, 4 },
+									["_encounter"] = { 1647, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),
@@ -1224,16 +1224,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9969, {	-- Flame Leviathan
-									["_encounter"] = { 1637, 4 },
+									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9955, {	-- Razorscale
-									["_encounter"] = { 1639, 4 },
+									["_encounter"] = { 1639, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9956, {	-- Ignis the Furnace Master
-									["_encounter"] = { 1638, 4 },
+									["_encounter"] = { 1638, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9957, {	-- XT-002 Deconstructor
-									["_encounter"] = { 1640, 4 },
+									["_encounter"] = { 1640, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),

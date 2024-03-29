@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(4, {	-- 25-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				n(QUESTS, {
 					q(13385, {	-- Heroic Judgment at the Eye of Eternity
 						["qg"] = 27990,	-- Krasus <Consort of the Queen>

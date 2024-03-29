@@ -138,16 +138,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(497,  {	-- Heroic: Halls of Lightning
 					crit(6831, {	-- General Bjarngrim
-						["_encounter"] = { 597, 2 },
+						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6832, {	-- Ionar
-						["_encounter"] = { 599, 2 },
+						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6833, {	-- Volkhan
-						["_encounter"] = { 598, 2 },
+						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5616, {	-- Loken
-						["_encounter"] = { 600, 2 },
+						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),

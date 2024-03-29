@@ -22,7 +22,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				ach(4987),	-- Throne of the Four Winds Guild Run
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				["difficulties"] = { 3, 4, 5, 6 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+				},
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind
 						["creatureID"] = 45871,
@@ -50,7 +55,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["difficulties"] = { 3, 4 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+				},
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind
 						["creatureID"] = 45871,
@@ -102,7 +110,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["difficulties"] = { 5, 6 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+				},
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind
 						["creatureID"] = 45871,

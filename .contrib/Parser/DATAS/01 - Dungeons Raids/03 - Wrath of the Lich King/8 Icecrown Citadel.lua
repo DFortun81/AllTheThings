@@ -1098,16 +1098,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)
 						crit(12770, {	-- Lord Marrowgar
-							["_encounter"] = { 1624, 3 },
+							["_encounter"] = { 1624, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(12773, {	-- Lady Deathwhisper
-							["_encounter"] = { 1625, 3 },
+							["_encounter"] = { 1625, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(12771, {	-- Icecrown Gunship Battle
-							["_encounter"] = { 1626, 3 },
+							["_encounter"] = { 1626, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(12772, {	-- Deathbringer Saurfang
-							["_encounter"] = { 1628, 3 },
+							["_encounter"] = { 1628, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 					}),
 					e(1624, {	-- Lord Marrowgar
@@ -1216,13 +1216,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_PLAGUEWORKS, {
 					ach(4528, {	-- The Plagueworks (10 player)
 						crit(12759, {	-- Festergut
-							["_encounter"] = { 1629, 3 },
+							["_encounter"] = { 1629, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(12760, {	-- Rotface
-							["_encounter"] = { 1630, 3 },
+							["_encounter"] = { 1630, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(12761, {	-- Professor Putricide
-							["_encounter"] = { 1631, 3 },
+							["_encounter"] = { 1631, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 					}),
 					e(1629, {	-- Festergut
@@ -1288,10 +1288,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_CRIMSON_HALLS, {
 					ach(4529, {	-- The Crimson Hall (10 player)
 						crit(12762, {	-- Blood Prince Council
-							["_encounter"] = { 1632, 3 },
+							["_encounter"] = { 1632, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(12763, {	-- Blood-Queen Lana'thel
-							["_encounter"] = { 1633, 3 },
+							["_encounter"] = { 1633, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 					}),
 					e(1632, {	-- Blood Prince Council
@@ -1341,10 +1341,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_FROSTWING_HALLS, {
 					ach(4527, {	-- The Frostwing Halls (10 player)
 						crit(12757, {	-- Valithria Dreamwalker
-							["_encounter"] = { 1634, 3 },
+							["_encounter"] = { 1634, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(12758, {	-- Sindragosa
-							["_encounter"] = { 1635, 3 },
+							["_encounter"] = { 1635, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 					}),
 					e(1634, {	-- Valithria Dreamwalker
@@ -1421,20 +1421,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 				}),
 			}),
-			d(5, {	-- 10-Player (Heroic)
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
 				n(STORMING_THE_CITADEL, {
 					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
 						crit(13090, {	-- Lord Marrowgar
-							["_encounter"] = { 1624, 5 },
+							["_encounter"] = { 1624, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(13104, {	-- Lady Deathwhisper
-							["_encounter"] = { 1625, 5 },
+							["_encounter"] = { 1625, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(13110, {	-- Icecrown Gunship Battle
-							["_encounter"] = { 1626, 5 },
+							["_encounter"] = { 1626, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(13113, {	-- Deathbringer Saurfang
-							["_encounter"] = { 1628, 5 },
+							["_encounter"] = { 1628, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 					}),
 					e(1624, {	-- Lord Marrowgar
@@ -1546,13 +1546,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_PLAGUEWORKS, {
 					ach(4629, {	-- Heroic: The Plagueworks (10 player)
 						crit(13116, {	-- Festergut
-							["_encounter"] = { 1629, 5 },
+							["_encounter"] = { 1629, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(13119, {	-- Rotface
-							["_encounter"] = { 1630, 5 },
+							["_encounter"] = { 1630, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(13128, {	-- Professor Putricide
-							["_encounter"] = { 1631, 5 },
+							["_encounter"] = { 1631, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 					}),
 					e(1629, {	-- Festergut
@@ -1621,10 +1621,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_CRIMSON_HALLS, {
 					ach(4630, {	-- Heroic: The Crimson Hall (10 player)
 						crit(13122, {	-- Blood Prince Council
-							["_encounter"] = { 1632, 5 },
+							["_encounter"] = { 1632, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(13131, {	-- Blood-Queen Lana'thel
-							["_encounter"] = { 1633, 5 },
+							["_encounter"] = { 1633, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 					}),
 					e(1632, {	-- Blood Prince Council
@@ -1677,10 +1677,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_FROSTWING_HALLS, {
 					ach(4631, {	-- Heroic: The Frostwing Halls (10 player)
 						crit(13125, {	-- Valithria Dreamwalker
-							["_encounter"] = { 1634, 5 },
+							["_encounter"] = { 1634, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(13134, {	-- Sindragosa
-							["_encounter"] = { 1635, 5 },
+							["_encounter"] = { 1635, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 					}),
 					e(1634, {	-- Valithria Dreamwalker
@@ -1766,20 +1766,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 				}),
 			}),
-			d(4, {	-- 25-Player (Normal)
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				n(STORMING_THE_CITADEL, {
 					ach(4604, {	-- Storming the Citadel (25 player)
 						crit(12945, {	-- Lord Marrowgar
-							["_encounter"] = { 1624, 4 },
+							["_encounter"] = { 1624, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 						crit(12948, {	-- Lady Deathwhisper
-							["_encounter"] = { 1625, 4 },
+							["_encounter"] = { 1625, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 						crit(12947, {	-- Icecrown Gunship Battle
-							["_encounter"] = { 1626, 4 },
+							["_encounter"] = { 1626, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 						crit(12946, {	-- Deathbringer Saurfang
-							["_encounter"] = { 1628, 4 },
+							["_encounter"] = { 1628, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 					}),
 					e(1624, {	-- Lord Marrowgar
@@ -1893,13 +1893,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_PLAGUEWORKS, {
 					ach(4605, {	-- The Plagueworks (25 player)
 						crit(12949, {	-- Festergut
-							["_encounter"] = { 1629, 4 },
+							["_encounter"] = { 1629, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 						crit(12950, {	-- Rotface
-							["_encounter"] = { 1630, 4 },
+							["_encounter"] = { 1630, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 						crit(12951, {	-- Professor Putricide
-							["_encounter"] = { 1631, 4 },
+							["_encounter"] = { 1631, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 					}),
 					e(1629, {	-- Festergut
@@ -1974,10 +1974,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_CRIMSON_HALLS, {
 					ach(4606, {	-- The Crimson Hall (25 player)
 						crit(12952, {	-- Blood Prince Council
-							["_encounter"] = { 1632, 4 },
+							["_encounter"] = { 1632, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 						crit(12953, {	-- Blood-Queen Lana'thel
-							["_encounter"] = { 1633, 4 },
+							["_encounter"] = { 1633, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 					}),
 					e(1632, {	-- Blood Prince Council
@@ -2027,10 +2027,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_FROSTWING_HALLS, {
 					ach(4607, {	-- The Frostwing Halls (25 player)
 						crit(12954, {	-- Valithria Dreamwalker
-							["_encounter"] = { 1634, 4 },
+							["_encounter"] = { 1634, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 						crit(12955, {	-- Sindragosa
-							["_encounter"] = { 1635, 4 },
+							["_encounter"] = { 1635, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 						}),
 					}),
 					e(1634, {	-- Valithria Dreamwalker
@@ -2113,20 +2113,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 				}),
 			}),
-			d(6, {	-- 25-Player (Heroic)
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC, {
 				n(STORMING_THE_CITADEL, {
 					ach(4632, {	-- Heroic: Storming the Citadel (25 player)
 						crit(13091, {	-- Lord Marrowgar
-							["_encounter"] = { 1624, 6 },
+							["_encounter"] = { 1624, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 						crit(13106, {	-- Lady Deathwhisper
-							["_encounter"] = { 1625, 6 },
+							["_encounter"] = { 1625, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 						crit(13111, {	-- Icecrown Gunship Battle
-							["_encounter"] = { 1626, 6 },
+							["_encounter"] = { 1626, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 						crit(13114, {	-- Deathbringer Saurfang
-							["_encounter"] = { 1628, 6 },
+							["_encounter"] = { 1628, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 					}),
 					e(1624, {	-- Lord Marrowgar
@@ -2243,13 +2243,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_PLAGUEWORKS, {
 					ach(4633, {	-- Heroic: The Plagueworks (25 player)
 						crit(13117, {	-- Festergut
-							["_encounter"] = { 1629, 6 },
+							["_encounter"] = { 1629, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 						crit(13120, {	-- Rotface
-							["_encounter"] = { 1630, 6 },
+							["_encounter"] = { 1630, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 						crit(13129, {	-- Professor Putricide
-							["_encounter"] = { 1631, 6 },
+							["_encounter"] = { 1631, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 					}),
 					e(1629, {	-- Festergut
@@ -2327,10 +2327,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_CRIMSON_HALLS, {
 					ach(4634, {	-- Heroic: The Crimson Hall (25 player)
 						crit(13123, {	-- Blood Prince Council
-							["_encounter"] = { 1632, 6 },
+							["_encounter"] = { 1632, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 						crit(13132, {	-- Blood-Queen Lana'thel
-							["_encounter"] = { 1633, 6 },
+							["_encounter"] = { 1633, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 					}),
 					e(1632, {	-- Blood Prince Council
@@ -2383,10 +2383,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(THE_FROSTWING_HALLS, {
 					ach(4635, {	-- Heroic: The Frostwing Halls (25 player)
 						crit(13126, {	-- Valithria Dreamwalker
-							["_encounter"] = { 1634, 6 },
+							["_encounter"] = { 1634, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 						crit(13135, {	-- Sindragosa
-							["_encounter"] = { 1635, 6 },
+							["_encounter"] = { 1635, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 						}),
 					}),
 					e(1634, {	-- Valithria Dreamwalker

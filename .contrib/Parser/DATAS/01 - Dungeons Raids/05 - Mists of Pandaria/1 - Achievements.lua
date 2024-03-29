@@ -100,22 +100,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			},
 		},{
 			crit(19603, {	-- Commander Ri'mok
-				["_encounter"] = { 676, 2 },
+				["_encounter"] = { 676, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(19605, {	-- Liu Flameheart
-				["_encounter"] = { 658, 2 },
+				["_encounter"] = { 658, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(19606, {	-- Gu Cloudstrike
-				["_encounter"] = { 673, 2 },
+				["_encounter"] = { 673, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(19609, {	-- Trial of the King
-				["_encounter"] = { 708, 2 },
+				["_encounter"] = { 708, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(19608, {	-- Vizier Jin'bak
-				["_encounter"] = { 693, 2 },
+				["_encounter"] = { 693, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(19604, {	-- Yan-Zhu the Uncasked
-				["_encounter"] = { 670, 2 },
+				["_encounter"] = { 670, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 		})),
 		ach(13469, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Raiding with Leashes VI: Pets of Pandaria

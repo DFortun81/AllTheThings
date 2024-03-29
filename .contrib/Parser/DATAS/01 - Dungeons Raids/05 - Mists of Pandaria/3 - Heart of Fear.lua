@@ -269,7 +269,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["ignoreBonus"] = true,
-				["difficulties"] = { 3, 4 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+				},
 				["g"] = {
 					n(ZONE_DROPS, {
 						i(86192),	-- Darting Damselfly Cuffs
@@ -406,8 +409,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+				},
 				["ignoreBonus"] = true,
-				["difficulties"] = { 5, 6 },
 				["g"] = {
 					n(ZONE_DROPS, {
 						i(86192),	-- Darting Damselfly Cuffs

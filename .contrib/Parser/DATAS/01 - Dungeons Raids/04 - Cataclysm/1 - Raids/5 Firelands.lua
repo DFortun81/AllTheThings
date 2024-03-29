@@ -434,7 +434,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			DIFFICULTY.RAID.MULTI.NORMAL_HEROIC,
 			-- #else
 			DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-			["difficulties"] = { 3, 4, 5, 6 },
+			["difficulties"] = {
+				DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+				DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+				DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+				DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+			},
 			["groups"] = 
 			-- #endif
 			{
@@ -530,7 +535,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- #if AFTER 8.2.5
 					DIFFICULTY.DUNGEON.NORMAL,
 					-- #endif
-					3, 4
+					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
 				},
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -701,7 +707,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- #if AFTER 8.2.5
 					DIFFICULTY.DUNGEON.HEROIC,
 					-- #endif
-					5, 6
+					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
 				},
 				["groups"] = {
 					n(VENDORS, {

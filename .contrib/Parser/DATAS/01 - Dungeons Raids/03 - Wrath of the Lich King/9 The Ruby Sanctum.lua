@@ -63,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 			}),
-			d(5, {	-- 10-Player (Heroic)
+			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
 				e(1652, {	-- Halion
 					["creatureID"] = 39863,	-- Halion
 					["groups"] = {
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 			}),
-			d(4, {	-- 25-Player
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				e(1652, {	-- Halion
 					["creatureID"] = 39863,	-- Halion
 					["groups"] = {
@@ -110,7 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 			}),
-			d(6, {	-- 25-Player (Heroic)
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC, {
 				e(1652, {	-- Halion
 					["creatureID"] = 39863,	-- Halion
 					["groups"] = {

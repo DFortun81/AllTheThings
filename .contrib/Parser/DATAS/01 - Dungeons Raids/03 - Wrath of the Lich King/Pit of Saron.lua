@@ -10,24 +10,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			n(ACHIEVEMENTS, {
 				ach(4517, {	-- The Pit of Saron
 					crit(13317, {	-- Forgemaster Garfrost
-						["_encounter"] = { 608, 1 },
+						["_encounter"] = { 608, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13318, {	-- Ick and Krick
-						["_encounter"] = { 609, 1 },
+						["_encounter"] = { 609, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13319, {	-- Scourgelord Tyrannus and Rimefang
-						["_encounter"] = { 610, 1 },
+						["_encounter"] = { 610, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 				}),
 				ach(4520, {	-- Heroic: The Pit of Saron
 					crit(13182, {	-- Forgemaster Garfrost
-						["_encounter"] = { 608, 2 },
+						["_encounter"] = { 608, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13173, {	-- Ick and Krick
-						["_encounter"] = { 609, 2 },
+						["_encounter"] = { 609, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13175, {	-- Scourgelord Tyrannus and Rimefang
-						["_encounter"] = { 610, 2 },
+						["_encounter"] = { 610, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),

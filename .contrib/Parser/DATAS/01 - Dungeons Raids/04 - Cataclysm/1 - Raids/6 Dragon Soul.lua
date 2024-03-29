@@ -234,7 +234,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 			}),
 			d(CUSTOM_DIFFICULTY_ID, {
-				["difficulties"] = { 3, 4, 5, 6 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+				},
 				["groups"] = {
 					cr(55265, e(311, {	-- Morchok
 						-- Placeholder for criteria
@@ -437,7 +442,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				["difficulties"] = { 3, 4, 5, 6 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+				},
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -569,7 +579,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["difficulties"] = { 3, 4 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
+				},
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -718,7 +731,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["difficulties"] = { 5, 6 },
+				["difficulties"] = {
+					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
+					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
+				},
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {

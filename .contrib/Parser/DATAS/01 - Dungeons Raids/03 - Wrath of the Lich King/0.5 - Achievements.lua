@@ -41,13 +41,13 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Champion of the Frozen Wastes
 			title(97),	-- , Champion of the Frozen Wastes
 			crit(5888, {	-- Kel'Thuzad (10 or 25 player) slain
-				["_encounter"] = { 1615, 3, 1615, 4 },
+				["_encounter"] = { 1615, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, 1615, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 			}),
 			crit(5889, {	-- Sartharion (10 or 25 player) slain
-				["_encounter"] = { 1616, 3, 1616, 4 },
+				["_encounter"] = { 1616, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, 1616, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 			}),
 			crit(5890, {	-- Malygos (10 or 25 player) slain
-				["_encounter"] = { 1617, 3, 1617, 4 },
+				["_encounter"] = { 1617, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, 1617, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 			}),
 			crit(5611, {	-- Herald Volazj slain
 				["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC, },

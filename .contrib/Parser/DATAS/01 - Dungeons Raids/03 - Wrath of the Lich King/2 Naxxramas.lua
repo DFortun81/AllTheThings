@@ -2002,7 +2002,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
-			d(4, {	-- 25-Man
+			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ACHIEVEMENTS, {
