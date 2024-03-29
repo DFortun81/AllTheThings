@@ -26,6 +26,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4933, {	-- Northern Barrens Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38779, {	-- Far Watch
 							["sourceQuests"] = {
@@ -55,7 +56,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						crit(38785, {	-- Ratchet
 							["sourceQuests"] = {
-								14042,	--Ammo Kerblammo
+								14042,	-- Ammo Kerblammo
 							},
 						}),
 						crit(38786, {	-- Ratchet
@@ -84,6 +85,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						5041,	-- Supplies for the Crossroads
+						872,	-- The Far Watch Offensive
+						13971,	-- The Kodo's Return
+						4021,	-- Counterattack!
+						880,	-- Altered Beings
+						877,	-- The Stagnant Oasis
+						14042,	-- Ammo Kerblammo
+						14067,	-- The Stolen Silver
+						14063,	-- Mutiny, Mon!
+						14050,	-- Gazlowe's Fortune
+						29094,	-- The Short Way Home
+						29111,	-- Mor'shan Caravan Delivery
+					},
+					-- #endif
 				}),
 			}),
 			battlepets({

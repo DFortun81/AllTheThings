@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				ach(4940, {	-- Winterspring Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Winterfall Furbolg
@@ -180,8 +180,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 28842,	-- Umbranse's Deliverance
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						28472,	-- Words of the High Chief
+						28848,	-- Trailing the Spiritspeaker
+						28628,	-- Ice Delivery
+						28710,	-- Spray It One More Time
+						28782,	-- A Bird of Legend
+						28742,	-- Shy-Rotam
+						28639,	-- Ursius
+						28828,	-- You Gotta Have Eggs
+						28722,	-- Yetiphobia
+						28830,	-- Chips Off the Old Block
+						28831,	-- Damn You, Frostilicus
+						28842,	-- Umbranse's Deliverance
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Disgrace the Defectors
@@ -44,13 +44,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27411,	-- Challenge to the Black Flight
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27213,	-- The End of the Deserters
+						27190,	-- Cleansing Witch Hill
+						27247,	-- Captain Vimes (definitely required, this is the quest wowhead has attached to the criteria)
+						27191,	-- Hungry as an Ogre! (probably required, picked up and turned in at the same time)
+						27186,	-- Jarl Needs a Blade (definitely required, this quest procced the achievement for me)
+						27222,	-- Take Down Tethyr!
+						27241,	-- Return to Jaina
+						27245,	-- Prisoners of the Grimtotems
+						27291,	-- Peace at Last
+						27411,	-- Challenge to the Black Flight
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				ach(4978, {	-- Dustwallow Marsh Quests (Horde)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Wild Threats
@@ -95,8 +108,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27411,	-- Challenge to the Black Dragonflight
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26682,	-- A Shambling Threat
+						25051,	-- Darkmist Extermination
+						27229,	-- Smash Broodqueen
+						1202,	-- The Theramore Docks
+						9437,	-- Twilight of the Dawn Runner
+						27190,	-- Cleansing Witch Hill
+						27191,	-- Hungry as an Ogre!
+						27186,	-- Jarl Needs a Blade
+						27244,	-- The Lost Report
+						27297,	-- Justice Dispensed
+						27257,	-- The Black Shield (4/5) [H]
+						27258,	-- The Black Shield (5/5) [H]
+						27419,	-- Army of the Black Dragon
+						27417,	-- The Brood of Onyxia (2/3)
+						27415,	-- The Brood of Onyxia (3/3)
+						27418,	-- Challenge Overlord Mok'Morokk
+						27411,	-- Challenge to the Black Dragonflight
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(850, {	-- Explore Dustwallow Marsh
 					-- #if BEFORE WRATH

@@ -44,6 +44,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 13897,	-- The Battle for Darkshore
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						13568,	-- Spirit of the Moonstalker
+						13567,	-- Spirit of the Stag
+						13597,	-- Spirit of the Thistle Bear
+						13515,	-- Ending the Threat
+						13588,	-- The Eye of All Storms
+						13891,	-- The Devourer of Darkshore
+						13546,	-- The Defiler
+						13897,	-- The Battle for Darkshore
+					},
 					-- #endif
 				}),
 				explorationAch(844, {	-- Explore Darkshore

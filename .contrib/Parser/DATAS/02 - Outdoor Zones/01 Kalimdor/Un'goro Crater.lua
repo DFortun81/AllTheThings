@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4939, {	-- Un'Goro Crater Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Pylons of Un'Goro
@@ -35,8 +35,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 24707,	-- The Ballad of Maximillian
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						24720,	-- Crystals of Power
+						24721,	-- The Eastern Pylon
+						24722,	-- The Northern Pylon
+						24723,	-- The Western Pylon
+						24695,	-- Ever Watching From Above
+						24707,	-- The Ballad of Maximillian
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

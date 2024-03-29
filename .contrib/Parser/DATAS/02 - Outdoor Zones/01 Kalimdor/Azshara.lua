@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4927, {	-- Azshara Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Defending Orgrimmar
@@ -51,8 +51,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						14155,	-- Arborcide
+						14216,	-- Mystery of the Sarcen Stone
+						14295,	-- Sisters of the Sea
+						14422,	-- Raptor Raptor Rocket
+						14388,	-- Azsharite Experiment Number Two
+						14383,	-- The Terrible Tinkers of the Ruined Reaches
+						24449,	-- Shore Leave
+						14392,	-- Farewell, Minnow
+						24434,	-- Commando Drop
+						14464,	-- Lightning Strike Assassination
+						24439,	-- The Conquest of Azshara
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(852, {	-- Explore Azshara
 					-- #if BEFORE WRATH

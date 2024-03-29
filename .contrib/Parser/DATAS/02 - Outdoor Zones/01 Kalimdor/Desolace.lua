@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Naga Threat
@@ -56,8 +56,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						14302,	-- Official Assessment
+						14309,	-- Calming the Kodo
+						14327,	-- My Word is My Bond (verify if this chain is part of this criteria or Uniting The Tribes)
+						14307,	-- Stubborn Winds
+						14381,	-- Cleaning Our Crevasse
+						14346,	-- Cleansing Our Crevasse
+						14394,	-- Death to Agogridon
+						1456,	-- The Karnitol Shipwreck (3/4)
+						14335,	-- Chipping In
+						14342,	-- Infernal Encroachment
+						5581,	-- Portals of the Legion
+						14227,	-- Putting Their Heads Together
+						14198,	-- Rider on the Storm
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(848, {	-- Explore Desolace
 					-- #if BEFORE WRATH

@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				ach(4926, {	-- Bloodmyst Isle Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Triumvirate's First, Boros
@@ -47,8 +47,22 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["sourceQuest"] = 9759,	-- Ending Their World
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						9700,	-- I Shoot Magic Into the Darkness
+						9711,	-- Matis the Cruel
+						9740,	-- The Sun Gate
+						9579,	-- Galaen's Fate
+						9741,	-- Critters of the Void
+						10065,	-- Cutting a Path
+						10067,	-- Fouled Water Spirits
+						10066,	-- Oh, the Tangled Webs They Weave
+						9683,	-- Ending the Bloodcurse
+						9689,	-- Razormaw
+						9759,	-- Ending Their World
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(861, {	-- Explore Bloodmyst Isle
 					-- #if BEFORE WRATH

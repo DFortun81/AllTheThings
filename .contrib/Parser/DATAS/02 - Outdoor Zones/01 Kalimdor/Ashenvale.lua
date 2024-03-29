@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4925, {	-- Ashenvale Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Maestra's Post
@@ -48,13 +48,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						13626,	-- Respect for the Fallen
+						13853,	-- Return Fire
+						13979,	-- The Goblin Braintrust
+						13987,	-- The Last Stand
+						25607,	-- Ze Gnomecorder -- TODO:: verify if actually needed
+						26482,	-- True Power of the Rod
+						13886,	-- Vortex
+						13869,	-- Recover the Remains
+						26469,	-- Satyr Slaying!
+						13683,	-- Stopping the Rituals
+						26472,	-- Insane Druids
+						13796,	-- The Forest Heart
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				ach(4976, {	-- Ashenvale Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Corrupted Heart of the Forest
@@ -92,8 +107,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 13888,	-- Vortex
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						13653,	-- Crisis at Splintertree
+						13619,	-- Final Report
+						13805,	-- Pierce the Heart
+						13873,	-- Sheelah's Last Wish
+						13842,	-- Dread Head Redemption -- in orgrimmar
+						13920,	-- Before You Go...
+						13901,	-- Deep Despair
+						13883,	-- Lousy Pieces of Ship
+						26890,	-- The Essence of Aku'Mai
+						6641,	-- Vorsha the Lasher
+						13947,	-- Blastranaar!
+						13983,	-- Building Your Own Coffin
+						13980,	-- They're Out There!
+						13888,	-- Vortex
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(845, {	-- Explore Ashenvale
 					-- #if BEFORE WRATH

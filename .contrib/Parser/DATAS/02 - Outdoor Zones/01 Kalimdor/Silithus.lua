@@ -80,6 +80,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4934, {	-- Silithus Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38738, {	-- Twilight's Run
 							["sourceQuest"] = 8321,	-- Vyral the Vile
@@ -97,6 +98,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 8323,	-- True Believers
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						8321,	-- Vyral the Vile
+						8306,	-- Into The Maw of Madness
+						8314,	-- Unraveling the Mystery
+						8287,	-- A Terrible Purpose
+						8323,	-- True Believers
+					},
+					-- #endif
 				}),
 			}),
 			battlepets({

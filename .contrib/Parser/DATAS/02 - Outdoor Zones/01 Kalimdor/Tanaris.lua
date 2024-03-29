@@ -2795,7 +2795,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4935, {	-- Tanaris Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Southsea Pirates (A)
@@ -2834,8 +2834,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25107,	-- The Grand Goblet (H)
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						25166,	-- Captain Dreadbeard (A)
+						24950,	-- Captain Dreadbeard (H)
+						24953,	-- Just Trying to Kill Some Bugs
+						25065,	-- You Too, Brute?
+						25001,	-- Sandscraper
+						25513,	-- Thunderdrome: Grudge Match! (A)
+						25591,	-- Thunderdrome: Grudge Match! (H)
+						25421,	-- The Grand Goblet (A)
+						25107,	-- The Grand Goblet (H)
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

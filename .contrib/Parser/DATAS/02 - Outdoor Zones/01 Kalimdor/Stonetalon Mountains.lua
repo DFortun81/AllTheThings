@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4936, {	-- Stonetalon Mountains Quests (A)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Clearing a Path
@@ -39,13 +39,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25851,	-- Dances with Grimtotem
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						25642,	-- Don't Look Them in the Eyes
+						25646,	-- Windshear Mine Cleanup
+						25931,	-- Brood of Seldarria
+						25851,	-- Dances with Grimtotem
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				ach(4980, {	-- Stonetalon Mountains Quests (H)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- A Short-Lived Victory
@@ -64,8 +71,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 26115,	-- To Be Horde...
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26010,	-- Ashes to Ashes
+						26058,	-- In Defense of Krom'Gar Fortress
+						26067,	-- Jin'Zil's Blessing
+						26068,	-- Kobold Fury!
+						26115,	-- To Be Horde...
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

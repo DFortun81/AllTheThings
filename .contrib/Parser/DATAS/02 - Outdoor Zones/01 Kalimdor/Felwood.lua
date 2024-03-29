@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4931, {	-- Felwood Quests
 					["timeline"] = { "added 4.0.3"},
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Emerald Sanctuary
@@ -76,8 +76,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27997,	-- The Corruption of the Jadefire
+						28148,	-- Culling the Corrupted
+						27995,	-- Dance for Ruumbo!
+						28288,	-- Open Their Eyes
+						28126,	-- Dousing the Flames of Protection (verify)
+						28129,	-- The Demon Prince
+						28128,	-- The Inner Circle (verify)
+						28214,	-- Cleanup at Bloodvenom Post
+						28213,	-- Hazzard Disposal
+						28341,	-- Collecting Corruption
+						28342,	-- Fel To Pieces
+						28358,	-- Hunting the Damned
+						28359,	-- The Core of Kroshius
+						28374,	-- Weeding the Lawn
+						28228,	-- Rejoining the Forest
+						28264,	-- Navarax's Gambit
+						28389,	-- Report to the Denmother
+						28340,	-- A Bomb Deal
+						28368,	-- Fire in the Hole!
+						28338,	-- Deadwood of the North
+						28366,	-- Disarming Bears
+						28364,	-- The Chieftain's Key
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

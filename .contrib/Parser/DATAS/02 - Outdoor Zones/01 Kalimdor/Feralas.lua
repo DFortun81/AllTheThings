@@ -38,6 +38,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25438,	-- Ysondre's Farewell
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						25398,	-- Sealing the Dream
+						25333,	-- Might of the Sentinels
+						26401,	-- Return to Vestia
+						25468,	-- Forces of Nature: Faerie Dragons
+						25469,	-- Forces of Nature: Mountain Giants
+						25438,	-- Ysondre's Farewell
+					},
 					-- #endif
 				}),
 				ach(4979, {	-- Feralas Quests
@@ -60,6 +69,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						crit(38923, {	-- The Dragons of Nightmare
 							["sourceQuest"] = 25383,	-- Ysondre's Farewell
 						}),
+					},
+					-- #else
+					["sourceQuests"] = {
+						25250,	-- Sealing the Dream
+						25329,	-- Might of the Stonemaul
+						25391,	-- Weapons of Spirit
+						25645,	-- Return to Sage Palerunner
+						25383,	-- Ysondre's Farewell
 					},
 					-- #endif
 				}),

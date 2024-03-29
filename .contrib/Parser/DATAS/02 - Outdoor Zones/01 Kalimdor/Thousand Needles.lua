@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4938, {	-- Thousand Needles Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Treasure Trove [A]
@@ -54,8 +54,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 28161,	-- Spread the Word [H]
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						25627,	-- Two-Tusk Takedown [A]
+						25628,	-- Two-Tusk Takedown [H]
+						28048,	-- That Smart One's Gotta Go
+						27327,	-- Grimtotem Chiefs: The Chief of Chiefs [A]
+						27328,	-- Grimtotem Chiefs: The Chief of Chiefs [H]
+						28098,	-- The Twilight Skymaster
+						28160,	-- Spread the Word [A]
+						28161,	-- Spread the Word [H]
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({
