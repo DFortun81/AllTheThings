@@ -188,11 +188,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 			i(141054),	-- Technique: Glyph of Smolder (RECIPE!)
 			i(141032),	-- Technique: Glyph of the Chilled Shell (RECIPE!)
 			i(141039, {	-- Technique: Glyph of the Doe (RECIPE!)
-				["description"] = "Drops from doe's and stags in any Broken Isles zone. Best farmed around the Grove of Cenarius in Val'Sharah.",
+				["description"] = "Drops from doe's and stags in any Broken Isles zone. Recommended to farm around the Grove of Cenarius in Val'Sharah.",
 				["coord"] = { 55.0, 59.9, VALSHARAH },
 			}),
 			i(141049),	-- Technique: Glyph of the Hook (RECIPE!)
-			i(141051),	-- Technique: Glyph of the Trident (RECIPE!)
+			i(141051,	-- Technique: Glyph of the Trident (RECIPE!)
+				["description"] = "Drops Naga's in any Broken Isles zone. Recommened to farm the Naga's before the first Boss in the Eye of Azshara Dungeon.",
+			}),
 			i(141064),	-- Technique: Grimoire of the Shivarra (RECIPE!)
 		}),
 		prof(TAILORING, {
