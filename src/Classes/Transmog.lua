@@ -317,8 +317,7 @@ local function CompletionistItemCollectionHelper(sourceID, oldState)
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
 			end
-			Callback(app.Audio.PlayFanfare);
-			Callback(app.TakeScreenShot, "Transmog");
+			app.HandleEvent("OnThingCollected", "Transmog")
 		end
 
 		-- Update the groups for the sourceID results
@@ -366,8 +365,7 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				app.Audio:PlayReportSound();
 			end
 			if newCollected then
-				Callback(app.Audio.PlayFanfare);
-				Callback(app.TakeScreenShot, "Transmog");
+				app.HandleEvent("OnThingCollected", "Transmog")
 			end
 		end
 
@@ -1103,7 +1101,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 
 		-- Refresh the Data and Cry!
 		app.UpdateRawIDs("sourceID", unlearnedSourceIDs);
-		Callback(app.Audio.PlayRemoveSound);
+		app.HandleEvent("OnThingRemoved", "Transmog")
 		app.WipeSearchCache();
 	end
 end

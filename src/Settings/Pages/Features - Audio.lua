@@ -117,13 +117,6 @@ checkboxCelebrateCollectedThings:SetATTTooltip(L.CELEBRATE_COLLECTED_CHECKBOX_TO
 checkboxCelebrateCollectedThings:AlignBelow(checkboxEffectsChannel, -1)
 checkboxCelebrateCollectedThings:SetPoint("TOP", checkboxEffectsChannel, "BOTTOM", 0, -8)
 
--- Screenshot
-function app:TakeScreenShot(type)
-	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
-		Screenshot();
-	end
-end
-
 local checkboxScreenshotCollectedThings = child:CreateCheckBox(L.SCREENSHOT_COLLECTED_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Screenshot"))
@@ -181,7 +174,7 @@ function WPDropDownDemo_Menu(frame, level, menuList)
 		tinsert(soundPacks, soundPack.name);
 	end
 	table.sort(soundPacks);
-	
+
 	local info = UIDropDownMenu_CreateInfo()
 	info.func = WPDropDownDemo_OnClick
 	for i, name in ipairs(soundPacks) do

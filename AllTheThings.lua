@@ -6379,8 +6379,7 @@ local RefreshMounts = function(newMountID)
 	end
 	UpdateRawIDs("spellID", newMounts);
 	if newMounts and #newMounts > 0 then
-		app.Audio:PlayMountFanfare();
-		app:TakeScreenShot("Mounts");
+		app.HandleEvent("OnThingCollected", "Mounts")
 	end
 end
 app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
@@ -13067,8 +13066,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 				-- app.PrintDebug("Done. learned",#learned)
 				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
-					app.Audio:PlayFanfare();
-					app:TakeScreenShot("Recipes");
+					app.HandleEvent("OnThingCollected", "Recipes")
 					self.force = true;
 				end
 				-- In Debugging, pop a dialog of all found missing recipes
@@ -13224,8 +13222,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 						app.CurrentCharacter.Spells[spellID] = 1;
 						UpdateRawID("spellID",spellID);
 						if not previousState or not app.Settings.AccountWide.Recipes then
-							app.Audio:PlayFanfare();
-							app:TakeScreenShot("Recipes");
+							app.HandleEvent("OnThingCollected", "Recipes")
 							if app.Settings:GetTooltipSetting("Report:Collected") then
 								local link = app:Linkify(spellID, app.Colors.ChatLink, "search:spellID:"..spellID);
 								print(NEW_RECIPE_LEARNED_TITLE, link);
@@ -14677,100 +14674,6 @@ app.SetupProfiles = function()
 end
 
 
-local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
-local function PendingCollectionCoroutine()
-	while not app.IsReady do coroutine.yield(); end
-	while pendingCollectionCooldown > 0 do
-		-- app.PrintDebug("PCC",pendingCollectionCooldown)
-		pendingCollectionCooldown = pendingCollectionCooldown - 1;
-		coroutine.yield();
-
-		-- If any of the collection objects is retrieving data, try again.
-		local anyRetrieving = false;
-		for hash,thing in pairs(retrievingCollection) do
-			local retries = thing[1];
-			if retries > 0 then
-				retries = retries - 1;
-				thing[1] = retries;
-				if IsRetrieving(thing[2].text) then
-					retrievingCollection[hash] = nil;
-					anyRetrieving = true;
-				end
-			end
-		end
-		if anyRetrieving then
-			pendingCollectionCooldown = pendingCollectionCooldown + 1;
-		end
-	end
-
-	-- Report new things to your collection!
-	local any,allTypes = false,{};
-	local reportCollected = app.Settings:GetTooltipSetting("Report:Collected");
-	for hash,t in pairs(pendingCollection) do
-		local f = t.f;
-		if f then allTypes[f] = true; end
-		if reportCollected then
-			print(L.ITEM_ID_ADDED:format((t.text or UNKNOWN), t[t.key] or "???"));
-		end
-		any = true;
-	end
-	if any then
-		wipe(pendingCollection);
-
-		-- Check if there was a mount.
-		if allTypes[app.FilterConstants.MOUNTS] then
-			app.Audio:PlayMountFanfare();
-		else
-			app.Audio:PlayFanfare();
-		end
-	end
-
-	-- Report removed things from your collection...
-	any = false;
-	for hash,t in pairs(pendingRemovals) do
-		if reportCollected then
-			print(L.ITEM_ID_REMOVED:format((t.text or UNKNOWN), t[t.key] or "???"));
-		end
-		any = true;
-	end
-	if any then
-		wipe(pendingRemovals);
-		app.Audio:PlayRemoveSound();
-	end
-end
-local function AddToCollection(group)
-	if not group then return; end
-	local hash = group.hash;
-	if IsRetrieving(group.text) then
-		retrievingCollection[hash] = { 5, group };
-	end
-
-	if pendingRemovals[hash] then
-		pendingRemovals[hash] = nil;
-	-- Do not add the item to the pending list if it was already in it.
-	elseif not pendingCollection[hash] then
-		pendingCollection[hash] = group;
-		pendingCollectionCooldown = 10;
-		StartCoroutine("Pending Collection", PendingCollectionCoroutine);
-	end
-end
-local function RemoveFromCollection(group)
-	if not group then return; end
-	local hash = group.hash;
-	if IsRetrieving(group.text) then
-		retrievingCollection[hash] = { 5, group };
-	end
-
-	if pendingCollection[hash] then
-		pendingCollection[hash] = nil;
-	-- Do not add the item to the pending list if it was already in it.
-	elseif not pendingRemovals[hash] then
-		pendingRemovals[hash] = group;
-		pendingCollectionCooldown = 10;
-		StartCoroutine("Pending Collection", PendingCollectionCoroutine);
-	end
-end
-
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
@@ -14854,138 +14757,6 @@ app.Startup = function()
 
 	-- Account Wide Settings
 	local accountWideSettings = app.Settings.AccountWide;
-	-- Returns the cached status for this Account for a given field ID
-	local function IsAccountCached(field, id)
-		return accountWideData[field][id] or nil
-	end
-	-- Returns the cached status for this Character for a given field ID
-	local function IsCached(field, id)
-		return currentCharacter[field][id] or nil
-	end
-	-- Returns the tracked status for this Account for a given field ID
-	local function IsAccountTracked(field, id)
-		return accountWideSettings[field] and accountWideData[field][id] or nil
-	end
-	-- Allows directly saving a cached state for a table of ids for a given field at the Account level
-	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
-	local function SetBatchAccountCached(field, ids, state)
-		-- app.PrintDebug("SBC:A",field,state)
-		local container = accountWideData[field]
-		for id,_ in pairs(ids) do
-			container[id] = state
-		end
-	end
-	-- Allows directly saving a cached state for a table of ids for a given field.
-	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
-	local function SetBatchCached(field, ids, state)
-		-- app.PrintDebug("SBC",field,state)
-		local container = currentCharacter[field]
-		for id,_ in pairs(ids) do
-			container[id] = state
-		end
-	end
-	local function SetAccountCollected(t, field, id, collected)
-		-- app.PrintDebug("SC:A",t and t.hash,field,id,collected)
-		local container = accountWideData[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				AddToCollection(t);
-				container[id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			RemoveFromCollection(t);
-			container[id] = nil;
-		end
-	end
-	local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
-		-- app.PrintDebug("SCS:A",t and t.hash,field,subtype,id,collected)
-		local container = accountWideData[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				AddToCollection(t);
-				container[id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			RemoveFromCollection(t);
-			container[id] = nil;
-		end
-	end
-	local function SetCollected(t, field, id, collected)
-		-- app.PrintDebug("SC",t and t.hash,field,id,collected)
-		local container = currentCharacter[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				if t and accountWideSettings[field] and not accountWideData[field][id] then
-					AddToCollection(t);
-				end
-				container[id] = 1;
-				accountWideData[field][id] = 1;
-			else
-				accountWideData[field][id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			container[id] = nil;
-			for guid,other in pairs(characterData) do
-				local otherContainer = other[field];
-				if otherContainer and otherContainer[id] then
-					accountWideData[field][id] = 1;
-					return accountWideSettings[field] and 2;
-				end
-			end
-			if accountWideData[field][id] then
-				RemoveFromCollection(t);
-				accountWideData[field][id] = nil;
-			end
-		end
-		return accountWideData[field][id] and 2 or nil
-	end
-	local function SetCollectedForSubType(t, field, subtype, id, collected)
-		-- app.PrintDebug("SCS",t and t.hash,field,subtype,id,collected)
-		local container = currentCharacter[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				if t and accountWideSettings[subtype] and not accountWideData[field][id] then
-					AddToCollection(t);
-				end
-				container[id] = 1;
-				accountWideData[field][id] = 1;
-			else
-				accountWideData[field][id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			container[id] = nil;
-			for guid,other in pairs(characterData) do
-				local otherContainer = other[field];
-				if otherContainer and otherContainer[id] then
-					accountWideData[field][id] = 1;
-					return accountWideSettings[subtype] and 2;
-				end
-			end
-			if accountWideData[field][id] then
-				RemoveFromCollection(t);
-				accountWideData[field][id] = nil;
-			end
-		end
-		return accountWideData[subtype][id] and 2 or nil
-	end
-	app.SetAccountCollected = SetAccountCollected;
-	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
-	app.SetCollected = SetCollected;
-	app.SetCollectedForSubType = SetCollectedForSubType;
-	app.IsCached = IsCached
-	app.IsAccountCached = IsAccountCached
-	app.IsAccountTracked = IsAccountTracked
-	app.SetBatchAccountCached = SetBatchAccountCached
-	app.SetBatchCached = SetBatchCached
-
 	-- Notify Event Handlers that Saved Variable Data is available.
 	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
 
@@ -15531,8 +15302,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	if itemID then
 		UpdateRawID("itemID", itemID);
-		app.Audio:PlayFanfare();
-		app:TakeScreenShot("Heirlooms");
+		app.HandleEvent("OnThingCollected", "Heirlooms")
 		app.WipeSearchCache();
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then

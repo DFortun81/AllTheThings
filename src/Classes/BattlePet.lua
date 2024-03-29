@@ -170,8 +170,6 @@ do
 					CollectedSpeciesHelper[speciesID] = 1;
 					app.SetAccountCollected(nil, CACHE, speciesID, true)
 					app.UpdateRawID(KEY, speciesID);
-					app.Audio:PlayFanfare();
-					app:TakeScreenShot(CACHE);
 				end
 			end)
 			app:RegisterFuncEvent("PET_JOURNAL_PET_DELETED", function(petID)
@@ -184,7 +182,6 @@ do
 					CollectedSpeciesHelper[speciesID] = nil;
 					app.SetAccountCollected(nil, CACHE, speciesID)
 					app.UpdateRawID(KEY, speciesID);
-					app.Audio:PlayRemoveSound();
 				end
 			end)
 		end)
