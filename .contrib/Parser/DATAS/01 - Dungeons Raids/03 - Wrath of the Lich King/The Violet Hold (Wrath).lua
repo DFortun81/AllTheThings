@@ -10,22 +10,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(1865, {	-- Lockdown!
 					crit(7137, {	-- Xevozz
-						["_encounter"] = { 629, HEROIC_DUNGEON },
+						["_encounter"] = { 629, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(7138, {	-- Levanthor
-						["_encounter"] = { 630, HEROIC_DUNGEON },
+						["_encounter"] = { 630, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(7139, {	-- Ichoron
-						["_encounter"] = { 628, HEROIC_DUNGEON },
+						["_encounter"] = { 628, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(7140, {	-- Zuramat the Obliterator
-						["_encounter"] = { 631, HEROIC_DUNGEON },
+						["_encounter"] = { 631, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(7141, {	-- Erekem
-						["_encounter"] = { 626, HEROIC_DUNGEON },
+						["_encounter"] = { 626, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(7142, {	-- Moragg
-						["_encounter"] = { 627, HEROIC_DUNGEON },
+						["_encounter"] = { 627, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["lvl"] = lvlsquish(75, 75, 15),
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(ZONE_DROPS, {
 					i(35654),	-- Bindings of the Bastille
 					i(35653),	-- Girdle of the Mystical Prison
@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {

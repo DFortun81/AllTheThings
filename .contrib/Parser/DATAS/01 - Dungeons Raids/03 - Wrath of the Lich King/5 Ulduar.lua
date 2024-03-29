@@ -1984,7 +1984,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				},
 			}),
 			-- #if AFTER 7.3.5.25600
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(13614, {	-- Algalon
 						["qg"] = 33957,	-- Prospector Loren
@@ -2090,7 +2090,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45878, {	-- Large Sack of Ulduar Spoils
 								["sym"] = {
 									{ "select", "instanceID", 759 },	-- Ulduar
-									{ "find", "difficultyID", NORMAL_RAID },	-- Normal Raid
+									{ "find", "difficultyID", DIFFICULTY.RAID.NORMAL },	-- Normal Raid
 									{ "find", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
 									{ "pop" },	-- Get the Rewards.
 									{ "exclude", "itemID", 46027, 46348, 45038 },	-- Exclude the Enchanting Recipes & Fragment

@@ -203,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				i(32897),	-- Mark of the Illidari
 			}),
 			-- #if AFTER 7.2.5.23910
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				["lvl"] = 68,
 				["ignoreBonus"] = 1,
 				["groups"] = {

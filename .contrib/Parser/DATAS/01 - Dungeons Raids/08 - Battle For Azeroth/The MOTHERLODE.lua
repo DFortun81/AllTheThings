@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2109, {	-- Coin-Operated Crowd Pummeler
 					["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
 					["g"] = bubbleDown({["bonusID"] = 4776}, {
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["g"] = {
 					e(2109, {	-- Coin-Operated Crowd Pummeler
 						["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
@@ -193,8 +193,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["g"] = {
 					n(ZONE_DROPS, {
 						ig(161138, {	-- Azerite Inspir-A-Geneering Elixir

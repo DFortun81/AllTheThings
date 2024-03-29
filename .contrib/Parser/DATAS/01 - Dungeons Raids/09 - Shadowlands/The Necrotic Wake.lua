@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2391, {	-- Amarth, The Harvester
 					["crs"] = { 166855 },	-- Amarth, The Harvester
 					["g"] = {

@@ -15,10 +15,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 			n(ACHIEVEMENTS, {
 				ach(13414, {	-- Crucible of Storms
                     crit(44051, {    -- The Restless Cabal
-                        ["_encounter"] = { 2328, LFR_RAID },
+                        ["_encounter"] = { 2328, DIFFICULTY.RAID.LFR },
                     }),
                     crit(44052, {    -- Uu'nat, Harbinger of the Void
-                        ["_encounter"] = { 2332, LFR_RAID },
+                        ["_encounter"] = { 2332, DIFFICULTY.RAID.LFR },
                     }),
 				}),
 				ach(13420),	-- Crucible of Storms Guild Run
@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 				},
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				header(HEADERS.Achievement, 13414, {	-- Crucible of Storms
 					e(2328, {	-- The Restless Cabal
 						["crs"] = {
@@ -97,7 +97,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
@@ -130,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 				}),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 				}),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared

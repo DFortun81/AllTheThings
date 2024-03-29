@@ -1815,7 +1815,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			-- #if AFTER CATA
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 			-- #endif
 				n(ZONE_DROPS, {
 					i(60874, {	-- Deathless Sinew
@@ -2102,7 +2102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER CATA
 			}),
 			-- #endif
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["timeline"] = { "added 4.0.3" },
 				["lvl"] = 85,
 				["groups"] = {

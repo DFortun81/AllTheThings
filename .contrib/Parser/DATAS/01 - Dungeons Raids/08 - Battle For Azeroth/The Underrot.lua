@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2157, {	-- Elder Leaxa
 					["crs"] = {
 						131318,	-- Elder Leaxa <Voice of G'huun>
@@ -99,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2157, {	-- Elder Leaxa
@@ -168,8 +168,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
 				["g"] = {
 					e(2157, {	-- Elder Leaxa

@@ -45,11 +45,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 				}),
 			}),
-			d(RAID_FINDER, {	-- Queue NPC
+			d(DIFFICULTY.RAID.FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(RAID_FINDER, {
+			d(DIFFICULTY.RAID.FINDER, {
 				["ignoreBonus"] = true,
 				["g"] = {
 					i(95618, {	-- Cache of Mogu Riches
@@ -314,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["g"] = {
@@ -463,7 +463,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["g"] = {

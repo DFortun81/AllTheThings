@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 	n(COMMON_BOSS_DROPS, {
-		d(HEROIC_RAID, {
+		d(DIFFICULTY.RAID.HEROIC, {
 			i(191910, {	-- Confounding Antique Cypher
 				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
 			}),
@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				["cost"] = { { "i", 191910, 20 } },	-- 20x Confounding Antique Cypher
 			}),
 		}),
-		d(MYTHIC_RAID, {
+		d(DIFFICULTY.RAID.MYTHIC, {
 			i(191926, {	-- Confounding Ancient Cypher
 				["description"] = "Drops from Fated Mythic Shadowlands Raid bosses.",
 			}),

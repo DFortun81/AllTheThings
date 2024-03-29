@@ -143,10 +143,10 @@ InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, Instanc
 -- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
 -- Blizzard seems to have actually fixed needing these...
 -- local DifficultyToBonusID = {
--- 	[LFR_RAID] = 7982,
--- 	[NORMAL_RAID] = 7979,
--- 	[HEROIC_RAID] = 7980,
--- 	[MYTHIC_RAID] = 7981,
+-- 	[DIFFICULTY.RAID.LFR] = 7982,
+-- 	[DIFFICULTY.RAID.NORMAL] = 7979,
+-- 	[DIFFICULTY.RAID.HEROIC] = 7980,
+-- 	[DIFFICULTY.RAID.MYTHIC] = 7981,
 -- };
 
 InstanceHelper.ExtraLoots = {
@@ -413,58 +413,58 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
 					crit(55109, {	-- Eranog
-						["_encounter"] = { ERANOG, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55110, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55111, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
 					crit(55113, {	-- Terros
-						["_encounter"] = { TERROS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55114, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55115, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
 					crit(55116, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55117, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
 					crit(55109, {	-- Eranog
-						["_encounter"] = { ERANOG, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55110, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55111, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55113, {	-- Terros
-						["_encounter"] = { TERROS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55114, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55115, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55116, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55117, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
@@ -525,28 +525,28 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19564, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Storms
 					crit(64929, {	-- Eranog
-						["_encounter"] = { ERANOG, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64930, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64931, {	-- Terros
-						["_encounter"] = { TERROS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64932, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64933, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64934, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64935, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64936, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				})),
 				ach(19565, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Storms
@@ -577,28 +577,28 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(19566, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Storms
 					crit(64945, {	-- Eranog
-						["_encounter"] = { ERANOG, MYTHIC_RAID },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64946, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, MYTHIC_RAID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64947, {	-- Terros
-						["_encounter"] = { TERROS, MYTHIC_RAID },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64948, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, MYTHIC_RAID },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64949, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, MYTHIC_RAID },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64950, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, MYTHIC_RAID },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64951, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, MYTHIC_RAID },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64952, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, MYTHIC_RAID },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
 				ach(16395),		-- Vaulternative Fashion
@@ -644,7 +644,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
 			}),
-			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(ERANOG),
 				BossOnly(TERROS),
 				BossOnly(THE_PRIMAL_COUNCIL),
@@ -658,7 +658,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 				}),
 			}),
-			Difficulty(LFR_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
@@ -674,7 +674,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					Boss(DIURNA),
 					Boss(RASZAGETH, {
 						i(217408, {	-- Awakened Tempostone
-							["sym"] = {{"sub","instance_tier",1200,LFR_RAID}},
+							["sym"] = {{"sub","instance_tier",1200,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 						}),
@@ -707,7 +707,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(16451),	-- The Ol Raszle Daszle
 				}),
 			}),
-			Difficulty(NORMAL_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
@@ -726,7 +726,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				Boss(DIURNA),
 				Boss(RASZAGETH, {
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1200,NORMAL_RAID}},
+						["sym"] = {{"sub","instance_tier",1200,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
@@ -753,7 +753,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
-			Difficulty(HEROIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				CommonBossDrops({
 					ig(200686),	-- Primal Focus
 				}),
@@ -775,13 +775,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				Boss(DIURNA),
 				Boss(RASZAGETH, {
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1200,HEROIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1200,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
 				}),
 			}),
-			Difficulty(MYTHIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					ig(190455),	-- Concentrated Primal Focus
 				}),
@@ -846,7 +846,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					})),
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1200,MYTHIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1200,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),

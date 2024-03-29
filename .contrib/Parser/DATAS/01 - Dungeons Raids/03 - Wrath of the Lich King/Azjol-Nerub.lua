@@ -11,26 +11,26 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(480, {	-- Azjol-Nerub
 					crit(5436, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, NORMAL_DUNGEON },
+						["_encounter"] = { 585, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5437, {	-- Hadronox
-						["_encounter"] = { 586, NORMAL_DUNGEON },
+						["_encounter"] = { 586, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5623, {	-- Anub'arak
-						["_encounter"] = { 587, NORMAL_DUNGEON },
+						["_encounter"] = { 587, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5438, {	-- Anub'arak
-						["_encounter"] = { 587, NORMAL_DUNGEON },
+						["_encounter"] = { 587, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17285, {	-- Defense Protocol Alpha: Azjol-Nerub
 					crit(57699, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, HEROIC_DUNGEON },
+						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39257),	-- Loatheb's Shadow
 							i(39267),	-- Abomination Shoulderblades
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57697, {	-- Hadronox
-						["_encounter"] = { 586, HEROIC_DUNGEON },
+						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39256),	-- Sulfur Stave
 							i(39252),	-- Preceptor's Bindings
@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57698, {	-- Anub'arak
-						["_encounter"] = { 587, HEROIC_DUNGEON },
+						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39419),	-- Nerubian Conquerer
 							i(43994),	-- Belabored Legplates
@@ -65,21 +65,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18592, {	-- Defense Protocol Beta: Azjol-Nerub
 					crit(60581, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, HEROIC_DUNGEON },
+						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45464),	-- Cowl of Icy Breaths
 							i(45874),	-- Signet of Winter
 						},
 					}),
 					crit(60579, {	-- Hadronox
-						["_encounter"] = { 586, HEROIC_DUNGEON },
+						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45316),	-- Armbraces of the Vibrant Flame
 							i(45458),	-- Stormedge
 						},
 					}),
 					crit(60580, {	-- Anub'arak
-						["_encounter"] = { 587, HEROIC_DUNGEON },
+						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45318),	-- Drape of Fuming Anger
@@ -89,19 +89,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19429, {	-- Defense Protocol Gamma: Azjol-Nerub
 					crit(63328, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, HEROIC_DUNGEON },
+						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63326, {	-- Hadronox
-						["_encounter"] = { 586, HEROIC_DUNGEON },
+						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63327, {	-- Anub'arak
-						["_encounter"] = { 587, HEROIC_DUNGEON },
+						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -110,13 +110,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(491, {	-- Heroic: Azjol-Nerub
 					crit(6848, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, HEROIC_DUNGEON },
+						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6849, {	-- Hadronox
-						["_encounter"] = { 586, HEROIC_DUNGEON },
+						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5610, {	-- Anub'arak
-						["_encounter"] = { 587, HEROIC_DUNGEON },
+						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(ZONE_DROPS, {
 					i(35664, {	-- Unknown Archaeologist's Hammer
 						-- #if AFTER 8.0.1
@@ -272,7 +272,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {

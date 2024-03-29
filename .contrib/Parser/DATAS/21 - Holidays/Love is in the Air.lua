@@ -3248,7 +3248,7 @@ for i,o in ipairs({
 		inst(277, {	-- Halls of Stone
 			["maps"] = { HALLS_OF_STONE },
 			["groups"] = {
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(27975, {	-- Maiden of Grief
 						BOUQUET_EBON
 					}),
@@ -3258,7 +3258,7 @@ for i,o in ipairs({
 		inst(285, {	-- Utgarde Keep
 			["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 			["groups"] = {
-				d(NORMAL_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.NORMAL, {
 					n(23953, {	-- Prince Keleseth
 						BOUQUET_RED,
 					}),
@@ -3271,13 +3271,13 @@ for i,o in ipairs({
 		inst(66, {	-- Blackrock Caverns
 			["maps"] = { 283, 284 },
 			["groups"] = {
-				d(NORMAL_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.NORMAL, {
 					n(39679, {	-- Corla, Herald of Twilight
 						BOUQUET_RED,
 						POUCH_OF_RED_ROSE_PETALS,
 					}),
 				}),
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(39679, {	-- Corla, Herald of Twilight
 						BOUQUET_RED,
 						POUCH_OF_RED_ROSE_PETALS,
@@ -3288,7 +3288,7 @@ for i,o in ipairs({
 		inst(184, {	-- End Time
 			["maps"] = { 401, 402, 403, 404, 405, 406 },
 			["groups"] = {
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(54445, {	-- Echo of Jaina
 						BOUQUET_RED,
 					}),
@@ -3301,12 +3301,12 @@ for i,o in ipairs({
 		inst(71, {	-- Grim Batol
 			["maps"] = { 293 },
 			["groups"] = {
-				d(NORMAL_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.NORMAL, {
 					n(40319, {	-- Drahga Shadowburner
 						BOUQUET_RED,
 					}),
 				}),
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(40319, {	-- Drahga Shadowburner
 						BOUQUET_RED,
 					}),
@@ -3316,7 +3316,7 @@ for i,o in ipairs({
 		inst(186, {	-- Hour of Twilight
 			["maps"] = { 399, 400 },
 			["groups"] = {
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(54968, {	-- Asira Dawnslayer
 						BOUQUET_RED,
 					}),
@@ -3334,7 +3334,7 @@ for i,o in ipairs({
 				SHADOWFANG_KEEP_LEVEL7
 			},
 			["groups"] = {
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(46964, {	-- Lord Godfrey
 						BOUQUET_EBON,
 						BOUQUET_RED,
@@ -3345,7 +3345,7 @@ for i,o in ipairs({
 		inst(63, {	-- The Deadmines
 			["maps"] = { 292 },
 			["groups"] = {
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(47626, {	-- Admiral Ripsnarl
 						BOUQUET_EBON,
 						BOUQUET_RED,
@@ -3356,12 +3356,12 @@ for i,o in ipairs({
 		inst(67, {	-- The Stonecore
 			["maps"] = { 324 },
 			["groups"] = {
-				d(NORMAL_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.NORMAL, {
 					n(42333, {	-- High Priestess Azil
 						BOUQUET_RED,
 					}),
 				}),
-				d(HEROIC_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.HEROIC, {
 					n(42333, {	-- High Priestess Azil
 						BOUQUET_RED,
 					}),
@@ -3375,12 +3375,12 @@ for i,o in ipairs({
 		inst(537, {	-- Shadowmoon Burial Grounds
 			["maps"] = { 574, 575, 576 },
 			["groups"] = {
-				d(NORMAL_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.NORMAL, {
 					cr(75509, e(1139, {	-- Sadana Bloodfury
 						BOUQUET_EBON
 					})),
 				}),
-				--[[d(MYTHIC_DUNGEON, {
+				--[[d(DIFFICULTY.DUNGEON.MYTHIC, {
 					cr(75509, e(1139, {	-- Sadana Bloodfury
 						BOUQUET_EBON
 					})),
@@ -3392,7 +3392,7 @@ for i,o in ipairs({
 	-- #if AFTER 9.1.5
 	expansion(EXPANSION.SL, {
 		inst(1194, {	-- Tazavesh, the Veiled Market
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
 					["groups"] = {
@@ -3400,7 +3400,7 @@ for i,o in ipairs({
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
 					["groups"] = {
@@ -3410,7 +3410,7 @@ for i,o in ipairs({
 			}),
 		}),
 		inst(1183, {	-- Plaguefall
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2423, {	-- Domina Venomblade
 					["crs"] = { 164266 },	-- Domina Venomblade
 					["groups"] = {
@@ -3418,7 +3418,7 @@ for i,o in ipairs({
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(2423, {	-- Domina Venomblade
 					["crs"] = { 164266 },	-- Domina Venomblade
 					["groups"] = {
@@ -3426,7 +3426,7 @@ for i,o in ipairs({
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2423, {	-- Domina Venomblade
 					["crs"] = { 164266 },	-- Domina Venomblade
 					["groups"] = {

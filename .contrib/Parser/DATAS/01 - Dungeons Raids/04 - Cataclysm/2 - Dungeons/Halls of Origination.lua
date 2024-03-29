@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				i(56110),	-- Charm of the Muse
 				i(56111),	-- Temple Band
 			}),
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(124, {	-- Temple Guardian Anhuur
 					["crs"] = { 39425 },	-- Temple Guardian Anhuur
 					["groups"] = {
@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			})),
 			-- #if BEFORE 7.3.5
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(5296),	-- Faster Than the Speed of Light
@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(5296),	-- Faster Than the Speed of Light

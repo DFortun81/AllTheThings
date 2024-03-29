@@ -25,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					["lvl"] = 120,
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2142, {	-- Adderis and Aspix
 					["crs"] = {
 						133379,	-- Adderis
@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2142, {	-- Adderis and Aspix
@@ -160,8 +160,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
 				["g"] = {
 					ach(12503),	-- Snake Eyes

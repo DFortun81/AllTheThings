@@ -101,7 +101,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2406, {	-- Halkias
 					["crs"] = { 165408 },	-- Halkias
 					["g"] = {

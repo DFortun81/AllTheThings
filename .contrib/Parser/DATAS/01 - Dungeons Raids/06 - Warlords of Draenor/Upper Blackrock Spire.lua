@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
 		["lvl"] = 100,
 		["g"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(ACHIEVEMENTS, {
 					ach(9058, {	-- Leeeeeeeeeeeeeroy...?
 						["crs"] = { 77075 },	-- Leeroy Jenkins
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {

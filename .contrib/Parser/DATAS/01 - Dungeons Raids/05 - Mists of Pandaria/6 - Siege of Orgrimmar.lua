@@ -100,52 +100,52 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			n(ACHIEVEMENTS, {
 				ach(8458, {	-- Vale of Eternal Sorrows
 					crit(23651, {	-- Immerseus
-						["_encounter"] = { 852, LFR_RAID },
+						["_encounter"] = { 852, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23653, {	-- The Fallen Protectors
-						["_encounter"] = { 849, LFR_RAID },
+						["_encounter"] = { 849, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23654, {	-- Norushen
-						["_encounter"] = { 866, LFR_RAID },
+						["_encounter"] = { 866, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23652, {	-- Sha of Pride
-						["_encounter"] = { 867, LFR_RAID },
+						["_encounter"] = { 867, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8459, {	-- Gates of Retribution
 					crit(23655, {	-- Galakras
-						["_encounter"] = { 881, LFR_RAID },
+						["_encounter"] = { 881, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23656, {	-- Iron Juggernaut
-						["_encounter"] = { 864, LFR_RAID },
+						["_encounter"] = { 864, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23657, {	-- Kor'kron Dark Shaman
-						["_encounter"] = { 856, LFR_RAID },
+						["_encounter"] = { 856, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23658, {	-- General Nazgrim
-						["_encounter"] = { 850, LFR_RAID },
+						["_encounter"] = { 850, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8461, {	-- The Underhold
 					crit(23659, {	-- Malkorok
-						["_encounter"] = { 846, LFR_RAID },
+						["_encounter"] = { 846, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23660, {	-- Spoils of Pandaria
-						["_encounter"] = { 870, LFR_RAID },
+						["_encounter"] = { 870, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23661, {	-- Thok the Bloodthirsty
-						["_encounter"] = { 851, LFR_RAID },
+						["_encounter"] = { 851, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8462, {	-- Downfall
 					crit(23662, {	-- Siegecrafter Blackfuse
-						["_encounter"] = { 865, LFR_RAID },
+						["_encounter"] = { 865, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23906, {	-- Paragons of the Klaxxi
-						["_encounter"] = { 853, LFR_RAID },
+						["_encounter"] = { 853, DIFFICULTY.RAID.LFR },
 					}),
 					crit(23664, {	-- Garrosh Hellscream
-						["_encounter"] = { 869, LFR_RAID },
+						["_encounter"] = { 869, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8454, {	-- Glory of the Orgrimmar Raider
@@ -1912,11 +1912,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(105644),	-- Xal'atoh, Desecrated Image of Gorehowl Mythic WF
 				}),
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				header(HEADERS.Item, 104275, {	-- Twisted Treasures of the Vale
 					["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Siege of Orgrimmar.",
 					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
@@ -2361,7 +2361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					})),
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
@@ -2786,7 +2786,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112924),	-- Curse of Hubris
 				})),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
@@ -3190,7 +3190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112924),	-- Curse of Hubris
 				})),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak

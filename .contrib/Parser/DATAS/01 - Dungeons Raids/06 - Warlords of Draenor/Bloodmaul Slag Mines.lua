@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["mapID"] = 573,
 		["coord"] = { 49.93, 24.8, FROSTFIRE_RIDGE },
 		["g"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(888, {	-- Slave Watcher Crushto
 					["crs"] = { 74787 },	-- Slave Watcher Crushto
 					["sym"] = {
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(888, {	-- Slave Watcher Crushto
 					["crs"] = { 74787 },	-- Slave Watcher Crushto
 					["sym"] = {
@@ -137,7 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(888, {	-- Slave Watcher Crushto
 					["crs"] = { 74787 },	-- Slave Watcher Crushto
 					["sym"] = {

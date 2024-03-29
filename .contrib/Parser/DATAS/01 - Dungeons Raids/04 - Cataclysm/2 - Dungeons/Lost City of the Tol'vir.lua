@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(117, {	-- General Husam
 					["crs"] = { 44577 },	-- General Husam
 					["groups"] = {
@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			})),
 			-- #if BEFORE 7.3.5
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(117, {	-- General Husam
 					["crs"] = { 44577 },	-- General Husam
 					["groups"] = {
@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(118, {	-- Lockmaw
 					["crs"] = {
 						43614,	-- Lockmaw

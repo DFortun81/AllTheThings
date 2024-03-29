@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -63,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165564),	-- Last Stand Greatbelt
@@ -437,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
@@ -639,7 +639,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
@@ -844,7 +844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch

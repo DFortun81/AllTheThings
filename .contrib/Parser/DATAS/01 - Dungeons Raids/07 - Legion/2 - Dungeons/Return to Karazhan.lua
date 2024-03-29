@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(1820, {	-- Opera Hall: Wikket
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
@@ -371,7 +371,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(11433, {	-- Burn After Reading
 						["provider"] = { "o", 265602 },	-- Sealed Tome
@@ -399,13 +399,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					ach(11335, {	-- Season Tickets
 						crit(34615, {	-- Beautiful Beast
-							["_encounter"] = { 1827, MYTHIC_DUNGEON },
+							["_encounter"] = { 1827, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(34614, {	-- Westfall Story
-							["_encounter"] = { 1826, MYTHIC_DUNGEON },
+							["_encounter"] = { 1826, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(34613, {	-- Wikket
-							["_encounter"] = { 1820, MYTHIC_DUNGEON },
+							["_encounter"] = { 1820, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 					}),
 				}),

@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["groups"] = {
 			-- #if AFTER MOP
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 			-- #endif
 				-- #if BEFORE 5.0.4
 				-- #if AFTER 3.0.1
@@ -966,7 +966,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER MOP
 			}),
 			-- #endif
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["timeline"] = { "added 5.0.4" },
 				["lvl"] = lvlsquish(90, 90, 35),
 				["groups"] = {

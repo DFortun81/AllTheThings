@@ -128,7 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			n(ZONE_DROPS, {
 				i(35516),	-- Sun Touched Satchel
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(530, {	-- Selin Fireheart
 					["creatureID"] = 24723,
 					["groups"] = {
@@ -240,7 +240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					},
 				})
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
 				["sourceQuest"] = 11492,	-- Hard to Kill

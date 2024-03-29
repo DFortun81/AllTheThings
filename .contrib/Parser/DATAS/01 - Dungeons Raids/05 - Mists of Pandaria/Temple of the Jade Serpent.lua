@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					i(87522),	-- Star Carrier Bracers
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(672, {	-- Wise Mari
 					["crs"] = { 56448 },	-- Wise Mari
 					["g"] = {
@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(672, {	-- Wise Mari
 					["crs"] = { 56448 },	-- Wise Mari
 					["g"] = {

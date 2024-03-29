@@ -99,25 +99,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				ach(11755, {["timeline"] = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
 				ach(5802, {	-- Firelands
 					crit(17430, {	-- Beth'tilac
-						["_encounter"] = { 192, NORMAL_RAID },
+						["_encounter"] = { 192, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(17431, {	-- Lord Rhyolith
-						["_encounter"] = { 193, NORMAL_RAID },
+						["_encounter"] = { 193, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(17435, {	-- Alysrazor
-						["_encounter"] = { 194, NORMAL_RAID },
+						["_encounter"] = { 194, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(17429, {	-- Shannox
-						["_encounter"] = { 195, NORMAL_RAID },
+						["_encounter"] = { 195, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(17432, {	-- Baleroc, the Gatekeeper
-						["_encounter"] = { 196, NORMAL_RAID },
+						["_encounter"] = { 196, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(17433, {	-- Majordomo Staghelm
-						["_encounter"] = { 197, NORMAL_RAID },
+						["_encounter"] = { 197, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(17434, {	-- Ragnaros
-						["_encounter"] = { 198, NORMAL_RAID },
+						["_encounter"] = { 198, DIFFICULTY.RAID.NORMAL },
 					}),
 				}),
 				ach(5983),	-- Firelands Guild Run
@@ -521,14 +521,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			),
 			d(
 			-- #if AFTER 8.2.5
-			NORMAL_RAID,
+			DIFFICULTY.RAID.NORMAL,
 			-- #else
-			NORMAL_DUNGEON,
+			DIFFICULTY.DUNGEON.NORMAL,
 			-- #endif
 			{
 				["difficulties"] = {
 					-- #if AFTER 8.2.5
-					NORMAL_DUNGEON,
+					DIFFICULTY.DUNGEON.NORMAL,
 					-- #endif
 					3, 4
 				},
@@ -692,14 +692,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			
 			d(
 			-- #if AFTER 8.2.5
-			HEROIC_RAID,
+			DIFFICULTY.RAID.HEROIC,
 			-- #else
-			HEROIC_DUNGEON,
+			DIFFICULTY.DUNGEON.HEROIC,
 			-- #endif
 			{
 				["difficulties"] = {
 					-- #if AFTER 8.2.5
-					HEROIC_DUNGEON,
+					DIFFICULTY.DUNGEON.HEROIC,
 					-- #endif
 					5, 6
 				},

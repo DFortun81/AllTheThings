@@ -11,29 +11,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(477, {	-- Utgarde Keep
 					crit(5377, {	-- Prince Keleseth
-						["_encounter"] = { 638, NORMAL_DUNGEON },
+						["_encounter"] = { 638, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5378, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, NORMAL_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5379, {	-- Dalronn the Controller
-						["_encounter"] = { 639, NORMAL_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5621, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, NORMAL_DUNGEON },
+						["_encounter"] = { 640, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5380, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, NORMAL_DUNGEON },
+						["_encounter"] = { 640, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17213, {	-- Defense Protocol Alpha: Utgarde Keep
 					crit(57666, {	-- Prince Keleseth
-						["_encounter"] = { 638, HEROIC_DUNGEON },
+						["_encounter"] = { 638, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39345),	-- Girdle of the Ascended Phantom
 							i(39379),	-- Spectral Rider's Girdle
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57665, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39309),	-- Leggings of the Instructor
 							i(39344),	-- Slayer of the Lifeless
@@ -49,10 +49,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57667, {	-- Dalronn the Controller
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(57668, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, HEROIC_DUNGEON },
+						["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(40519),	-- Footsteps of Malygos
 							i(40474),	-- Surge Needle Ring
@@ -71,23 +71,23 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18590, {	-- Defense Protocol Beta: Utgarde Keep
 					crit(60571, {	-- Prince Keleseth
-						["_encounter"] = { 638, HEROIC_DUNGEON },
+						["_encounter"] = { 638, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45378),	-- Boots of the Petrified Forest
 						},
 					}),
 					crit(60570, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45322),	-- Cloak of the Iron Council
 							i(45329),	-- Circlet of True Sight
 						},
 					}),
 					crit(60572, {	-- Dalronn the Controller
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(60573, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, HEROIC_DUNGEON },
+						["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45330),	-- Greaves of Iron Intensity
@@ -98,22 +98,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19427, {	-- Defense Protocol Gamma: Utgarde Keep
 					crit(63319, {	-- Prince Keleseth
-						["_encounter"] = { 638, HEROIC_DUNGEON },
+						["_encounter"] = { 638, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63318, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63321, {	-- Dalronn the Controller
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(63320, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, HEROIC_DUNGEON },
+						["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -122,16 +122,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(489,  {	-- Heroic: Utgarde Keep
 					crit(3701, {	-- Prince Keleseth
-						["_encounter"] = { 638, HEROIC_DUNGEON },
+						["_encounter"] = { 638, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(3702, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(3703, {	-- Dalronn the Controller
-						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5608, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, HEROIC_DUNGEON },
+						["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(ZONE_DROPS, {
 					i(35580),	-- Skein Woven Mantle
 					i(35579),	-- Vrykul Shackles
@@ -352,7 +352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {

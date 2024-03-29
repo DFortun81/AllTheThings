@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 			["modelScale"] = 3,
 			["sourceQuests"] = { 64842 },	-- Flora Frenzy
 			["g"] = {
-				d(LFR_RAID, {
+				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "The Creation Catalyst is a system that lets you convert Non-set items into your class' Transmog Set.\nDungeon, Sandworn & Sepulcher LFR Items will grant LFR appearances.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 					["g"] = bubbleDown({ ["modID"] = 4 },
 							sharedData({["cost"] = {{"i",190189,2070}}},{	-- 2070 Sandworn Relic, Full set cost from Vendor
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 							}),
 					})),
 				}),
-				d(NORMAL_RAID, {
+				d(DIFFICULTY.RAID.NORMAL, {
 					["description"] = "Items between 252 and 262 item level will take the Normal appearance.\nSeason 4 (speculated): between item level 278 and 288.",
 					["g"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						}),
 					}),
 				}),
-				d(HEROIC_RAID, {
+				d(DIFFICULTY.RAID.HEROIC, {
 					["description"] = "Items between 265 and 275 item level will take the Heroic appearance.\nSeason 4 (speculated): between item level 291 and 301.",
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						}),
 					}),
 				}),
-				d(MYTHIC_RAID, {
+				d(DIFFICULTY.RAID.MYTHIC, {
 					["description"] = "Items at 278 item level or above will take the Mythic Appearance.\nSeason 4 (speculated): item level 304 and higher.",
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {

@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["maps"] = { 431, 432 },
 		["lvl"] = lvlsquish(21, 21, 10),
 		["groups"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(QUESTS, {
 					q(31493, {	-- Just for Safekeeping, Of Course
 						["qg"] = 64738,	-- Hooded Crusader
@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(90, 90, 35),
 				["groups"] = {
 					n(QUESTS, {

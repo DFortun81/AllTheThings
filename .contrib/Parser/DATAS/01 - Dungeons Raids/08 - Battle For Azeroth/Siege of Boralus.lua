@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 					-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 					["races"] = ALLIANCE_ONLY,
@@ -111,8 +111,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["g"] = {
 					ach(12489, {	-- Losing My Profession
 						["collectible"] = false,

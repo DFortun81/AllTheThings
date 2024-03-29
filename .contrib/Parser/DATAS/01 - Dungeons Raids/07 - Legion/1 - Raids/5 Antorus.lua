@@ -25,43 +25,43 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 				ach(11988, {	-- Light's Breach
                     crit(37232, {    -- Garothi Worldbreaker
-                        ["_encounter"] = { 1992, LFR_RAID },
+                        ["_encounter"] = { 1992, DIFFICULTY.RAID.LFR },
                     }),
                     crit(37233, {    -- Felhounds of Sargeras
-                        ["_encounter"] = { 1987, LFR_RAID },
+                        ["_encounter"] = { 1987, DIFFICULTY.RAID.LFR },
                     }),
                     crit(37234, {    -- Antoran High Command
-                        ["_encounter"] = { 1997, LFR_RAID },
+                        ["_encounter"] = { 1997, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11989, {	-- Hope's End
                     crit(37236, {    -- Eonar the Life-Bender
-                        ["_encounter"] = { 2025, LFR_RAID },
+                        ["_encounter"] = { 2025, DIFFICULTY.RAID.LFR },
                     }),
                     crit(37235, {    -- Portal Keeper Hasabel
-                        ["_encounter"] = { 1985, LFR_RAID },
+                        ["_encounter"] = { 1985, DIFFICULTY.RAID.LFR },
                     }),
                     crit(37237, {    -- Imonar the Soulhunter
-                        ["_encounter"] = { 2009, LFR_RAID },
+                        ["_encounter"] = { 2009, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11990, {	-- Forbidden Descent
                     crit(37238, {    -- Kin'garoth
-                        ["_encounter"] = { 2004, LFR_RAID },
+                        ["_encounter"] = { 2004, DIFFICULTY.RAID.LFR },
                     }),
                     crit(37239, {    -- Varimathras
-                        ["_encounter"] = { 1983, LFR_RAID },
+                        ["_encounter"] = { 1983, DIFFICULTY.RAID.LFR },
                     }),
                     crit(37240, {    -- The Coven of Shivarra
-                        ["_encounter"] = { 1986, LFR_RAID },
+                        ["_encounter"] = { 1986, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11991, {	-- Seat of the Pantheon
                     crit(37241, {    -- Aggramar
-                        ["_encounter"] = { 1984, LFR_RAID },
+                        ["_encounter"] = { 1984, DIFFICULTY.RAID.LFR },
                     }),
                     crit(37242, {    -- Argus the Unmaker
-                        ["_encounter"] = { 2031, LFR_RAID },
+                        ["_encounter"] = { 2031, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
@@ -135,11 +135,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3] (RECIPE!)
 				},
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
@@ -528,7 +528,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(153115),	-- Scythe of the Unmaker [BLUE]
 				})),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(49032, {	-- Antorus, the Burning Throne: Dark Passage (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -881,7 +881,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(155852),	-- Volatile Soul Fragment
 				})),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(49075, {	-- Antorus, the Burning Throne: Dark Passage (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
@@ -1220,7 +1220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(155852),	-- Volatile Soul Fragment
 				})),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(49076, {	-- Antorus, the Burning Throne: Dark Passage (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",

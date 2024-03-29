@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				pet(2668),	-- Copper Hopper (PET!)
 				pet(2674),	-- H4ND-EE (PET!)
 			})),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
 				["g"] = {
 					n(MECHAGON_JUNKYARD, {
@@ -222,8 +222,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
 				["g"] = {
 					ach(13789, {	-- Hertz Locker

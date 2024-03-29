@@ -763,13 +763,13 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 		ach(6926, {	-- Tranquil Master
 			title(203),	-- the Tranquil Master
 			crit(19668, {	-- Sha of Doubt
-				["_encounter"] = { 335, HEROIC_DUNGEON },
+				["_encounter"] = { 335, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(18829, {	-- Sha of Despair
 				["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
 			}),
 			crit(22274, {	-- Sha of Violence
-				["_encounter"] = { 685, HEROIC_DUNGEON },
+				["_encounter"] = { 685, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(19374, {	-- Sha of Hatred
 				["sourceQuests"] = { 30968 },	-- The Sha of Hatred
@@ -778,7 +778,7 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["_encounter"] = { 691 },
 			}),
 			crit(19913, {	-- Sha of Fear
-				["_encounter"] = { 709, NORMAL_DUNGEON },
+				["_encounter"] = { 709, DIFFICULTY.DUNGEON.NORMAL },
 			}),
 		}),
 		ach(6858, {	-- What Is Worth Fighting For

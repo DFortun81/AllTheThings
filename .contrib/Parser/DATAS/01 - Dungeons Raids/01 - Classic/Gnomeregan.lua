@@ -441,7 +441,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			MATRIX_PUNCHOGRAPH_C,
 			MATRIX_PUNCHOGRAPH_D,
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["OnUpdate"] = SOD_DISABLE_NORMAL_MODE,
 				["groups"] = {
 			-- #endif

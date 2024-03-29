@@ -357,7 +357,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			},
 			["cr"] = 154233,	-- Chromie
 			["groups"] = {
-				d(TIMEWALKING_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.TIMEWALKING, {
 					ach(13931, {	-- Memories of Fel, Frost and Fire
 						i(172012),	-- Obsidian Worldbreaker (MOUNT!)
 					}),

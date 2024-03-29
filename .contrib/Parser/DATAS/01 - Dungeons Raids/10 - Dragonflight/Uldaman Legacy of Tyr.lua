@@ -120,7 +120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2487, {	-- Bromach
 					["crs"] = { 184018 },	-- Bromach
 					["g"] = {

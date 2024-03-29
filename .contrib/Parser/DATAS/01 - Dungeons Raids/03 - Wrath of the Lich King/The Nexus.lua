@@ -10,29 +10,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(478, {	-- The Nexus
 					crit(5381, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, NORMAL_DUNGEON },
+						["_encounter"] = { 618, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5382, {	-- Anomalus
-						["_encounter"] = { 619, NORMAL_DUNGEON },
+						["_encounter"] = { 619, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5383, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, NORMAL_DUNGEON },
+						["_encounter"] = { 620, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5622, {	-- Keristrasza
-						["_encounter"] = { 621, NORMAL_DUNGEON },
+						["_encounter"] = { 621, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5384, {	-- Keristrasza
-						["_encounter"] = { 621, NORMAL_DUNGEON },
+						["_encounter"] = { 621, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17283, {	-- Defense Protocol Alpha: The Nexus
 					crit(57690, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, HEROIC_DUNGEON },
+						["_encounter"] = { 618, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39393),	-- Claymore of Ancient Power
 							i(39388),	-- Spirit-World Glass
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57688, {	-- Anomalus
-						["_encounter"] = { 619, HEROIC_DUNGEON },
+						["_encounter"] = { 619, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39407),	-- Circle of Life
 							i(39396),	-- Gown of Blaumeux
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57687, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, HEROIC_DUNGEON },
+						["_encounter"] = { 620, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39389),	-- Signet of the Malevolent
 							i(39395),	-- Thane's Tainted Greathelm
@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57689, {	-- Keristrasza
-						["_encounter"] = { 621, HEROIC_DUNGEON },
+						["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39306),	-- Plated Gloves of Relief
 							i(39422),	-- Staff of the Plaguehound
@@ -75,28 +75,28 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18591, {	-- Defense Protocol Beta: The Nexus
 					crit(60578, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, HEROIC_DUNGEON },
+						["_encounter"] = { 618, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45865),	-- Raiments of the Corrupted
 							i(45707),	-- Shieldwall of the Breaker
 						},
 					}),
 					crit(60576, {	-- Anomalus
-						["_encounter"] = { 619, HEROIC_DUNGEON },
+						["_encounter"] = { 619, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45291),	-- Combustion Bracers
 							i(45292),	-- Energy Siphon
 						},
 					}),
 					crit(60575, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, HEROIC_DUNGEON },
+						["_encounter"] = { 620, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45287),	-- Firesoul
 							i(45288),	-- Firestrider Chestguard
 						},
 					}),
 					crit(60577, {	-- Keristrasza
-						["_encounter"] = { 621, HEROIC_DUNGEON },
+						["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45283),	-- Flamewatch Armguards
@@ -107,25 +107,25 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19428, {	-- Defense Protocol Gamma: The Nexus
 					crit(63325, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, HEROIC_DUNGEON },
+						["_encounter"] = { 618, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63323, {	-- Anomalus
-						["_encounter"] = { 619, HEROIC_DUNGEON },
+						["_encounter"] = { 619, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63322, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, HEROIC_DUNGEON },
+						["_encounter"] = { 620, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63324, {	-- Keristrasza
-						["_encounter"] = { 621, HEROIC_DUNGEON },
+						["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -134,16 +134,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(490,  {	-- Heroic: The Nexus
 					crit(5245, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, HEROIC_DUNGEON },
+						["_encounter"] = { 618, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5246, {	-- Anomalus
-						["_encounter"] = { 619, HEROIC_DUNGEON },
+						["_encounter"] = { 619, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5247, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, HEROIC_DUNGEON },
+						["_encounter"] = { 620, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5609, {	-- Keristrasza
-						["_encounter"] = { 621, HEROIC_DUNGEON },
+						["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -246,7 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(618, {	-- Grand Magus Telestra
 					["creatureID"] = 26731,	-- Grand Magus Telestra
 					["groups"] = {
@@ -326,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					-- #if BEFORE CATA

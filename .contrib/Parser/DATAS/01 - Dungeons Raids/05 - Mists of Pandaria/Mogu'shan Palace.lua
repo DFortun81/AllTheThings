@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					["cost"] = { { "i", 87806, 1 } },	-- 1x Ancient Mogu Key
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(708, {	-- Trial of the King
 					["crs"] = {
 						61445,	-- Haiyan the Unstoppable
@@ -198,7 +198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(ACHIEVEMENTS, {
 					ach(6713),	-- Quarrelsome Quilen Quintet
 				}),

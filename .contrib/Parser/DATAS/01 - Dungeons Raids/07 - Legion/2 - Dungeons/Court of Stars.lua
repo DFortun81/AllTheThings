@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				i(201996),	-- Edge of the First Blade
 				i(201994),	-- Felsworn Covenant Crossbow
 			})),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				cr(104215, e(1718, {	-- Patrol Captain Gerdo
 					i(134268),	-- Arcane Defender's Gauntlets
 					i(134415),	-- Arcanist's Resonant Robes
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137493),	-- Edge of the First Blade
 				})),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(10611, {	-- Dropping Some Eaves
 						["description"] = "Don't let any of the 5 Sentries complete their Sound Alarm cast, disable the 5 beacons before engaging the first boss, kill all 3 demons separately before pulling Talixae and then guess spy on the first try.",

@@ -47,7 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(673, {	-- Gu Cloudstrike
 					["crs"] = { 56747 },	-- Gu Cloudstrike
 					["g"] = {
@@ -205,7 +205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(673, {	-- Gu Cloudstrike
 					["crs"] = { 56747 },	-- Gu Cloudstrike
 					["g"] = {

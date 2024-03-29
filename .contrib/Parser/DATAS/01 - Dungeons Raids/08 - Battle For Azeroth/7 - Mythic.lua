@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root("Instances", expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } }, {
-	d(MYTHIC_DUNGEON, {
+	d(DIFFICULTY.DUNGEON.MYTHIC, {
 		n(AZERITE_ESSENCES, {
 			i(169491),	-- Focused Life Anima
 			-- Requires Tank Loot Spec

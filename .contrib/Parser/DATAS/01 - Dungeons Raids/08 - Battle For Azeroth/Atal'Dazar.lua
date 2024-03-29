@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				i(211404),	-- Spymaster's Wrap
 				i(211403),	-- Soulspun Casque
 			})),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2082, {	-- Priestess Alun'za
 					["crs"] = { 122967 },	-- Priestess Alun'za
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2082, {	-- Priestess Alun'za
@@ -169,23 +169,23 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
 				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(12270, {	-- Bringing Hexy Back
 							crit(38504, {	-- Vol'kaal defeated
-								["_encounter"] = { 2036, MYTHIC_DUNGEON },
+								["_encounter"] = { 2036, DIFFICULTY.DUNGEON.MYTHIC },
 							}),
 							crit(38505, {	-- Priestess Alun'za defeated
-								["_encounter"] = { 2082, MYTHIC_DUNGEON },
+								["_encounter"] = { 2082, DIFFICULTY.DUNGEON.MYTHIC },
 							}),
 							crit(38506, {	-- Rezan defeated
-								["_encounter"] = { 2083, MYTHIC_DUNGEON },
+								["_encounter"] = { 2083, DIFFICULTY.DUNGEON.MYTHIC },
 							}),
 							crit(38507, {	-- Yazma defeated
-								["_encounter"] = { 2030, MYTHIC_DUNGEON },
+								["_encounter"] = { 2030, DIFFICULTY.DUNGEON.MYTHIC },
 							}),
 						}),
 					}),

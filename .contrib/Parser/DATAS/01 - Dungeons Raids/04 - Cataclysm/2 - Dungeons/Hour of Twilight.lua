@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			})),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(322, {	-- Arcurion
 					["crs"] = { 54590 },	-- Arcurion
 					["groups"] = {

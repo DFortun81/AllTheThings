@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			n(ZONE_DROPS, {
-				d(NORMAL_DUNGEON, {
+				d(DIFFICULTY.DUNGEON.NORMAL, {
 					i(55854, {	-- Rainsong
 						["crs"] = {
 							45912,	-- Wild Vortex
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					}),
 				}),
 			}),
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(114, {	-- Grand Vizier Ertan
 					["crs"] = { 43878 },	-- Grand Vizier Ertan
 					["groups"] = {
@@ -121,7 +121,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			})),
 			-- #if BEFORE 7.3.5
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(5289),	-- Extra Credit Bonus Stage
@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					}),
 				},
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(116, {	-- Asaad, Caliph of Zephyrs
 					["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
 					["groups"] = {

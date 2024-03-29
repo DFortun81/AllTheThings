@@ -3841,7 +3841,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		-- 9.2.0
 		expansion(EXPANSION.SL, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 			header(HEADERS.LFGDungeon, 2288, {	-- Sepulcher of the First Ones
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 6896 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -3975,7 +3975,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
-				d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 8107 }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -4109,7 +4109,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
-				d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6898 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -4243,7 +4243,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
-				d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -4603,7 +4603,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		-- 10.0.2
 		expansion(EXPANSION.DF, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 			header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 451 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 451 }, {
 					cl(DEATHKNIGHT, {
 						i(203507),	-- Breastplate of the Haunted Frostbrood
 						i(203509),	-- Grasps of the Haunted Frostbrood
@@ -4706,7 +4706,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(202149),	-- Primalist Warden's Bracers [BoP]
 					i(202143),	-- Woven Stone Bracelets [BoP]
 				})),
-				d(NORMAL_RAID, {
+				d(DIFFICULTY.RAID.NORMAL, {
 					cl(DEATHKNIGHT, {
 						i(203507),	-- Breastplate of the Haunted Frostbrood
 						i(203509),	-- Grasps of the Haunted Frostbrood
@@ -4809,7 +4809,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(202149),	-- Primalist Warden's Bracers [BoP]
 					i(202143),	-- Woven Stone Bracelets [BoP]
 				}),
-				d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 1 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
 					cl(DEATHKNIGHT, {
 						i(203507),	-- Breastplate of the Haunted Frostbrood
 						i(203509),	-- Grasps of the Haunted Frostbrood
@@ -4912,7 +4912,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(202149),	-- Primalist Warden's Bracers [BoP]
 					i(202143),	-- Woven Stone Bracelets [BoP]
 				})),
-				d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 450 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
 					cl(DEATHKNIGHT, {
 						i(203507),	-- Breastplate of the Haunted Frostbrood
 						i(203509),	-- Grasps of the Haunted Frostbrood
@@ -5010,7 +5010,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(194710),	--
 			}),
 			o(382621, {	-- Revival Catalyst Console
-				d(LFR_RAID, {
+				d(DIFFICULTY.RAID.LFR, {
 					cl(DEATHKNIGHT, {
 						i(203515),	-- Drape of the Haunted Frostbrood
 						i(203513),	-- Girdle of the Haunted Frostbrood
@@ -5093,7 +5093,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203506),	-- Drape of the Walking Mountain
 					}),
 				}),
-				d(NORMAL_RAID, {
+				d(DIFFICULTY.RAID.NORMAL, {
 					cl(DEATHKNIGHT, {
 						i(203515),	-- Drape of the Haunted Frostbrood
 						i(203513),	-- Girdle of the Haunted Frostbrood
@@ -5173,7 +5173,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203506),	-- Drape of the Walking Mountain
 					}),
 				}),
-				d(HEROIC_RAID, {
+				d(DIFFICULTY.RAID.HEROIC, {
 					cl(DEATHKNIGHT, {
 						i(203515),	-- Drape of the Haunted Frostbrood
 						i(203513),	-- Girdle of the Haunted Frostbrood
@@ -5256,7 +5256,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203506),	-- Drape of the Walking Mountain
 					}),
 				}),
-				d(MYTHIC_RAID, {
+				d(DIFFICULTY.RAID.MYTHIC, {
 					cl(DEATHKNIGHT, {
 						i(203515),	-- Drape of the Haunted Frostbrood
 						i(203513),	-- Girdle of the Haunted Frostbrood
@@ -5341,7 +5341,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 			}),
 			header(HEADERS.Item, 202047, {	-- Gleaming Incarnate Thunderstone
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -5395,7 +5395,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6895 }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -5449,7 +5449,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6896 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -5502,7 +5502,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -5667,7 +5667,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		-- 10.1.0
 		expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 451 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 451 }, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -5769,7 +5769,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(204428),	-- Sanctum Guard's Forgewalkers
 					i(204420),	-- Sundered Edgelord's Breastplate
 				})),
-				d(NORMAL_RAID, {
+				d(DIFFICULTY.RAID.NORMAL, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -5871,7 +5871,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(204428),	-- Sanctum Guard's Forgewalkers
 					i(204420),	-- Sundered Edgelord's Breastplate
 				}),
-				d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 1 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -5973,7 +5973,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(204428),	-- Sanctum Guard's Forgewalkers
 					i(204420),	-- Sundered Edgelord's Breastplate
 				})),
-				d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 450 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -6164,7 +6164,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			header(HEADERS.Item, 205878, {	-- Obsidian Aspectral Earthstone
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6210,7 +6210,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6256,7 +6256,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6301,7 +6301,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6476,7 +6476,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 			header(HEADERS.Item, 210468, {	-- Emerald Blossom Dreamstone
 				-- Actual items awarded by Emerald Blossom Dreamstone are commented out here
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203), -- Casket of the Risen Nightmare
 						i(207202), -- Graveboots of the Risen Nightmare
@@ -6621,7 +6621,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176), -- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203), -- Casket of the Risen Nightmare
 						i(207202), -- Graveboots of the Risen Nightmare
@@ -6766,7 +6766,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176), -- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203), -- Casket of the Risen Nightmare
 						i(207202), -- Graveboots of the Risen Nightmare
@@ -6911,7 +6911,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176), -- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203), -- Casket of the Risen Nightmare
 						i(207202), -- Graveboots of the Risen Nightmare

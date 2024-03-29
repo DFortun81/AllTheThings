@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["maps"] = { 574, 575, 576 },
 		["coord"] = { 31.91, 42.55, DRAENOR_SHADOWMOON_VALLEY },
 		["groups"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
 					["sym"] = {
@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
 					["sym"] = {
@@ -130,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
 					["sym"] = {

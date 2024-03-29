@@ -373,9 +373,9 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
-	[LFR_RAID] = 3,
-	[NORMAL_RAID] = 5,
-	[HEROIC_RAID] = 6,
+	[DIFFICULTY.RAID.LFR] = 3,
+	[DIFFICULTY.RAID.NORMAL] = 5,
+	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
@@ -614,66 +614,66 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(19344, {	-- Incarnate's Wake
 					crit(63095, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63096, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63101, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19345, {	-- Molten Incursion
 					crit(63097, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63098, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19346, {	-- The Viridian Weave
 					crit(63099, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63100, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19347, {	-- Fate of Amirdrassil
 					crit(63102, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63103, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19331, {	-- Amirdrassil, the Dream's Hope
 					crit(63095, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63096, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63097, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63098, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63099, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63100, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63101, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63102, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63103, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
@@ -739,31 +739,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19570, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Flames
 					crit(64986, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64987, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64988, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64989, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64990, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64991, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64992, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64993, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64994, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				})),
 				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Flames
@@ -797,31 +797,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(19572, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Flames
 					crit(65004, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, MYTHIC_RAID },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65005, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, MYTHIC_RAID },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65006, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, MYTHIC_RAID },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65007, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, MYTHIC_RAID },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65008, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, MYTHIC_RAID },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65009, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, MYTHIC_RAID },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65010, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, MYTHIC_RAID },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65011, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, MYTHIC_RAID },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65012, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, MYTHIC_RAID },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
 				ach(19442),	-- Fire Catwalk With Me
@@ -847,7 +847,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				CommonBossDrops({
 					i(210780),	-- Lesser Ember of Fyr'alath
 				}),
@@ -943,7 +943,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
 				ZoneDrops({
 				}),
 				CommonBossDrops({
@@ -968,11 +968,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					Boss(TINDRAL),
 					Boss(FYRAKK, {
 						i(210947, {	-- Flame-Warped Curio
-							["sym"] = {{"sub","instance_tier",1207,LFR_RAID}},
+							["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
 						i(217408, {	-- Awakened Tempostone
-							["sym"] = {{"sub","instance_tier",1207,LFR_RAID}},
+							["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 						}),
@@ -1012,7 +1012,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(19390),	-- Memories of Teldrassil
 				}),
 			}),
-			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
+			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(DRAKES_DREAMING_CREST, {
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
@@ -1038,11 +1038,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				Boss(TINDRAL),
 				Boss(FYRAKK, {
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,NORMAL_RAID}},
+						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1207,NORMAL_RAID}},
+						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
@@ -1070,7 +1070,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(211375),	-- Everglowing Ember (QS!)
 				}),
 			}),
-			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
+			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(WYRMS_DREAMING_CREST, {
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
@@ -1096,17 +1096,17 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				Boss(TINDRAL),
 				Boss(FYRAKK, {
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,HEROIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1207,HEROIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
 				}),
 			}),
-			Difficulty(MYTHIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(ASPECTS_DREAMING_CREST, {
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
@@ -1173,11 +1173,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					i(211314),	-- Cinder of Companionship (CI!)
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,MYTHIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1207,MYTHIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),

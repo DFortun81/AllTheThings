@@ -341,7 +341,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			})),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {
@@ -400,7 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			-- #else
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {

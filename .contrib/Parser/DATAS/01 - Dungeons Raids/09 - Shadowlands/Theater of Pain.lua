@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator

@@ -19,32 +19,32 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(13718, {	-- The Grand Reception
                     crit(45786, {    -- Abyssal Commander Sivara
-                        ["_encounter"] = { 2352, LFR_RAID },
+                        ["_encounter"] = { 2352, DIFFICULTY.RAID.LFR },
                     }),
                     crit(45787, {    -- Blackwater Behemoth
-                        ["_encounter"] = { 2347, LFR_RAID },
+                        ["_encounter"] = { 2347, DIFFICULTY.RAID.LFR },
                     }),
                     crit(45788, {    -- Radiance of Azshara
-                        ["_encounter"] = { 2353, LFR_RAID },
+                        ["_encounter"] = { 2353, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(13719, {	-- Depths of the Devoted
                     crit(45794, {    -- Lady Ashvane
-                        ["_encounter"] = { 2354, LFR_RAID },
+                        ["_encounter"] = { 2354, DIFFICULTY.RAID.LFR },
                     }),
                     crit(45795, {    -- Orgozoa
-                        ["_encounter"] = { 2351, LFR_RAID },
+                        ["_encounter"] = { 2351, DIFFICULTY.RAID.LFR },
                     }),
                     crit(45796, {    -- The Queen's Court
-                        ["_encounter"] = { 2359, LFR_RAID },
+                        ["_encounter"] = { 2359, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(13725, {	-- The Circle of Stars
                     crit(45797, {    -- Za'qul, Harbinger of Ny'alotha
-                        ["_encounter"] = { 2349, LFR_RAID },
+                        ["_encounter"] = { 2349, DIFFICULTY.RAID.LFR },
                     }),
                     crit(45798, {    -- Queen Azshara
-                        ["_encounter"] = { 2361, LFR_RAID },
+                        ["_encounter"] = { 2361, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(13687, {	-- Glory of the Eternal Raider
@@ -120,7 +120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
 				},
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -130,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
@@ -377,7 +377,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
@@ -547,7 +547,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
@@ -721,7 +721,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents

@@ -718,6 +718,9 @@ currency = function(id, t)								-- Create a CURRENCY Object
 	return struct("currencyID", id, t);
 end
 d = function(id, t)										-- Create a DIFFICULTY Object
+	if not id then
+		error("INVALID DIFFICULTY", id);
+	end
 	local difficultyID, ids = GetOrCreateMultiDifficulty(id);
 	t = struct("difficultyID", difficultyID, t);
 	if ids then

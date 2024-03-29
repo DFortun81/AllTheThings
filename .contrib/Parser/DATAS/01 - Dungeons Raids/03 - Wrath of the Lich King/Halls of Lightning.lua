@@ -15,29 +15,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(486, {	-- Halls of Lightning
 					crit(5455, {	-- General Bjarngrim
-						["_encounter"] = { 597, NORMAL_DUNGEON },
+						["_encounter"] = { 597, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5456, {	-- Ionar
-						["_encounter"] = { 599, NORMAL_DUNGEON },
+						["_encounter"] = { 599, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5457, {	-- Volkhan
-						["_encounter"] = { 598, NORMAL_DUNGEON },
+						["_encounter"] = { 598, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5629, {	-- Loken
-						["_encounter"] = { 600, NORMAL_DUNGEON },
+						["_encounter"] = { 600, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5458, {	-- Loken
-						["_encounter"] = { 600, NORMAL_DUNGEON },
+						["_encounter"] = { 600, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17299, {	-- Defense Protocol Alpha: Halls of Lightning
 					crit(57761, {	-- General Bjarngrim
-						["_encounter"] = { 597, HEROIC_DUNGEON },
+						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39189),	-- Boots of Persistence
 							i(39192),	-- Gloves of Dark Gestures
@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57759, {	-- Volkhan
-						["_encounter"] = { 598, HEROIC_DUNGEON },
+						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39188),	-- Chivalric Chestguard
 							i(39140),	-- Knife of Incision
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57760, {	-- Ionar
-						["_encounter"] = { 599, HEROIC_DUNGEON },
+						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39139),	-- Ravaging Sabatons
 							i(39190),	-- Agonal Sash
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57756, {	-- Loken
-						["_encounter"] = { 600, HEROIC_DUNGEON },
+						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(40526),	-- Gown of the Spell-Weaver
 							i(40426),	-- Signet of the Accord
@@ -80,28 +80,28 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18598, {	-- Defense Protocol Beta: Halls of Lightning
 					crit(60604, {	-- General Bjarngrim
-						["_encounter"] = { 597, HEROIC_DUNGEON },
+						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(46347),	-- Cloak of the Dormant Blaze
 							i(46341),	-- Drape of the Spellweaver
 						},
 					}),
 					crit(60602, {	-- Volkhan
-						["_encounter"] = { 598, HEROIC_DUNGEON },
+						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(46342),	-- Golemheart Longbow
 							i(46343),	-- Fervor of the Protectorate
 						},
 					}),
 					crit(60603, {	-- Ionar
-						["_encounter"] = { 599, HEROIC_DUNGEON },
+						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(46344),	-- Iceshear Mantle
 							i(45677),	-- Treacherous Shoulderpads
 						},
 					}),
 					crit(60601, {	-- Loken
-						["_encounter"] = { 600, HEROIC_DUNGEON },
+						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45676),	-- Chestplate of Vicious Potency
@@ -111,25 +111,25 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19435, {	-- Defense Protocol Gamma: Halls of Lightning
 					crit(63353, {	-- General Bjarngrim
-						["_encounter"] = { 597, HEROIC_DUNGEON },
+						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63349, {	-- Volkhan
-						["_encounter"] = { 598, HEROIC_DUNGEON },
+						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63350, {	-- Ionar
-						["_encounter"] = { 599, HEROIC_DUNGEON },
+						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63348, {	-- Loken
-						["_encounter"] = { 600, HEROIC_DUNGEON },
+						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -243,7 +243,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ZONE_DROPS, {
 				i(42780),	-- Relics of Ulduar
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(ZONE_DROPS, {
 					i(36999),	-- Boots of the Terrestrial Guardian
 					i(36997),	-- Sash of the Hardened Watcher
@@ -346,7 +346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {

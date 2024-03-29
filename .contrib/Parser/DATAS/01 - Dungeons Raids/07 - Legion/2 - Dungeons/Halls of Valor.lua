@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				i(201997),	-- Key to the Halls
 				i(201999),	-- Skovald's Resolve
 			})),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1485, {	-- Hymdall
 					["creatureID"] = 94960,	-- Hymdall
 					["g"] = {
@@ -158,7 +158,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
 				["g"] = {
 					e(1485, {	-- Hymdall
@@ -251,7 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["lvl"] = 110,
 				["g"] = {
 					n(ACHIEVEMENTS, {

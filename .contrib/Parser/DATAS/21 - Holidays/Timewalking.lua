@@ -21,7 +21,7 @@ TIMEWALKING_HEADER = createHeader({
 local TIMEWALKING_DUNGEON_CREATURE_IDS = {};
 function inst_tw(id, t)
 	t = inst(id, t);
-	t.difficultyID = TIMEWALKING_DUNGEON;
+	t.difficultyID = DIFFICULTY.DUNGEON.TIMEWALKING;
 
 	-- Look for the CreatureID's
 	local groups = t.groups or t.g;
@@ -46,7 +46,7 @@ function AddInstancesToRotation(expansionTier, argument1, ...)
 	for i,instanceID in ipairs(type(argument1) == "table" and argument1 or { argument1, ... }) do
 		if instanceID then
 			table.insert(instances, inst(instanceID, {
-				d(TIMEWALKING_DUNGEON, { ["sym"] = {{"sub", "tw_instance", instanceID }}, }),
+				d(DIFFICULTY.DUNGEON.TIMEWALKING, { ["sym"] = {{"sub", "tw_instance", instanceID }}, }),
 			}));
 		end
 	end
@@ -55,7 +55,7 @@ end
 
 root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 	["modID"] = 22,	-- Timewalking
-	["difficultyID"] = TIMEWALKING_DUNGEON;
+	["difficultyID"] = DIFFICULTY.DUNGEON.TIMEWALKING;
 	["groups"] = {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(19079, {	-- Master of the Turbulent Timeways

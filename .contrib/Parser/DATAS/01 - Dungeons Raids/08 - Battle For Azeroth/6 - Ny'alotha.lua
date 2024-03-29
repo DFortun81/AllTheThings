@@ -46,46 +46,46 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				}),
 				ach(14193, {	-- Vision of Destiny
                     crit(46693, {    -- Wrathion, the Black Emperor
-                        ["_encounter"] = { 2368, LFR_RAID },
+                        ["_encounter"] = { 2368, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46694, {    -- Maut
-                        ["_encounter"] = { 2365, LFR_RAID },
+                        ["_encounter"] = { 2365, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46695, {    -- The Prophet Skitra
-                        ["_encounter"] = { 2369, LFR_RAID },
+                        ["_encounter"] = { 2369, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(14194, {	-- Halls of Devotion
                     crit(46696, {    -- Dark Inquisitor Xanesh
-                        ["_encounter"] = { 2377, LFR_RAID },
+                        ["_encounter"] = { 2377, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46697, {    -- Vexiona
-                        ["_encounter"] = { 2370, LFR_RAID },
+                        ["_encounter"] = { 2370, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46698, {    -- The Hivemind
-                        ["_encounter"] = { 2372, LFR_RAID },
+                        ["_encounter"] = { 2372, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46699, {    -- Ra-den the Despoiled
-                        ["_encounter"] = { 2364, LFR_RAID },
+                        ["_encounter"] = { 2364, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(14195, {	-- Gift of Flesh
                     crit(46700, {    -- Shad'har the Insatiable
-                        ["_encounter"] = { 2367, LFR_RAID },
+                        ["_encounter"] = { 2367, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46701, {    -- Drest'agath
-                        ["_encounter"] = { 2373, LFR_RAID },
+                        ["_encounter"] = { 2373, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46702, {    -- Il'gynoth, Corruption Reborn
-                        ["_encounter"] = { 2374, LFR_RAID },
+                        ["_encounter"] = { 2374, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(14196, {	-- The Waking Dream
                     crit(46703, {    -- Carapace of N'Zoth
-                        ["_encounter"] = { 2366, LFR_RAID },
+                        ["_encounter"] = { 2366, DIFFICULTY.RAID.LFR },
                     }),
                     crit(46704, {    -- N'Zoth, the Corruptor
-                        ["_encounter"] = { 2375, LFR_RAID },
+                        ["_encounter"] = { 2375, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(14146, {	-- Glory of the Ny'alotha Raider
@@ -109,7 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(175005),	-- Belt of Concealed Intent
 					i(175007),	-- Footpads of Terrible Delusions
@@ -455,7 +455,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
@@ -648,7 +648,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 				}),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
@@ -847,7 +847,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 				}),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(58375, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion

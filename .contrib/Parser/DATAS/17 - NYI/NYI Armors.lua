@@ -1199,7 +1199,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		d(TIMEWALKING_DUNGEON, {
+		d(DIFFICULTY.DUNGEON.TIMEWALKING, {
 			expansion(EXPANSION.LEGION, 2.5, {
 				i(150450),	-- Nether Shadow Tunic
 				i(150448),	-- Pauldrons of Abyssal Fury
@@ -2441,19 +2441,19 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
-					d(LFR_RAID, {
+					d(DIFFICULTY.RAID.LFR, {
 						i(207160, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Inflammable Drapeleaf [LFR]
 						i(207161, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [LFR]
 					}),
-					d(NORMAL_RAID, {
+					d(DIFFICULTY.RAID.NORMAL, {
 						i(207160, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Inflammable Drapeleaf [Normal]
 						i(207161, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [Normal]
 					}),
-					d(HEROIC_RAID, {
+					d(DIFFICULTY.RAID.HEROIC, {
 						i(207160, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Inflammable Drapeleaf [Heroic]
 						i(207161, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [Heroic]
 					}),
-					d(MYTHIC_RAID, {
+					d(DIFFICULTY.RAID.MYTHIC, {
 						i(207160, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Inflammable Drapeleaf [Mythic]
 						i(207161, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [Mythic]
 					}),
@@ -2522,7 +2522,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
-					d(LFR_RAID, {
+					d(DIFFICULTY.RAID.LFR, {
 						i(207124, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [LFR]
 						i(207118, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [LFR]
 						i(210204, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Fading Flame Wristbands [LFR]
@@ -2536,7 +2536,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207121, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Vesture of the Smoldering Serpent [LFR]
 						i(208430, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Whispering Fanged Cord [LFR]
 					}),
-					d(NORMAL_RAID, {
+					d(DIFFICULTY.RAID.NORMAL, {
 						i(207124, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [Normal]
 						i(207118, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [Normal]
 						i(210204, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Fading Flame Wristbands [Normal]
@@ -2550,7 +2550,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207121, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Vesture of the Smoldering Serpent [Normal]
 						i(208430, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Whispering Fanged Cord [Normal]
 					}),
-					d(HEROIC_RAID, {
+					d(DIFFICULTY.RAID.HEROIC, {
 						i(207124, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [Heroic]
 						i(207118, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [Heroic]
 						i(210204, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Fading Flame Wristbands [Heroic]
@@ -2564,7 +2564,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207121, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Vesture of the Smoldering Serpent [Heroic]
 						i(208430, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Whispering Fanged Cord [Heroic]
 					}),
-					d(MYTHIC_RAID, {
+					d(DIFFICULTY.RAID.MYTHIC, {
 						i(207124, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [Mythic]
 						i(207118, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [Mythic]
 						i(210204, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Fading Flame Wristbands [Mythic]
@@ -2630,7 +2630,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
-					d(LFR_RAID, {
+					d(DIFFICULTY.RAID.LFR, {
 						i(207131, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [LFR]
 						i(207135, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [LFR]
 						i(207130, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Flamewaker's Grips [LFR]
@@ -2644,7 +2644,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210206, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Verdant Sanctuary Bands [LFR]
 						i(208420, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Visage of the Devouring Flame [LFR]
 					}),
-					d(NORMAL_RAID, {
+					d(DIFFICULTY.RAID.NORMAL, {
 						i(207131, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [Normal]
 						i(207135, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [Normal]
 						i(207130, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Flamewaker's Grips [Normal]
@@ -2658,7 +2658,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210206, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Verdant Sanctuary Bands [Normal]
 						i(208420, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Visage of the Devouring Flame [Normal]
 					}),
-					d(HEROIC_RAID, {
+					d(DIFFICULTY.RAID.HEROIC, {
 						i(207131, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [Heroic]
 						i(207135, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [Heroic]
 						i(207130, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Flamewaker's Grips [Heroic]
@@ -2672,7 +2672,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210206, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Verdant Sanctuary Bands [Heroic]
 						i(208420, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Visage of the Devouring Flame [Heroic]
 					}),
-					d(MYTHIC_RAID, {
+					d(DIFFICULTY.RAID.MYTHIC, {
 						i(207131, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [Mythic]
 						i(207135, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [Mythic]
 						i(207130, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Flamewaker's Grips [Mythic]
@@ -2738,7 +2738,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
-					d(LFR_RAID, {
+					d(DIFFICULTY.RAID.LFR, {
 						i(207138, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [LFR]
 						i(207142, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Ancient Haubark [LFR]
 						i(207145, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Boots of the Molten Hoard [LFR]
@@ -2753,7 +2753,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207143, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Twisted Flamecuffs [LFR]
 						i(210203, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Wellspring Wristlets [LFR]
 					}),
-					d(NORMAL_RAID, {
+					d(DIFFICULTY.RAID.NORMAL, {
 						i(207138, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [Normal]
 						i(207142, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Ancient Haubark [Normal]
 						i(207145, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Boots of the Molten Hoard [Normal]
@@ -2768,7 +2768,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207143, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Twisted Flamecuffs [Normal]
 						i(210203, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Wellspring Wristlets [Normal]
 					}),
-					d(HEROIC_RAID, {
+					d(DIFFICULTY.RAID.HEROIC, {
 						i(207138, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [Heroic]
 						i(207142, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Ancient Haubark [Heroic]
 						i(207145, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Boots of the Molten Hoard [Heroic]
@@ -2783,7 +2783,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207143, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Twisted Flamecuffs [Heroic]
 						i(210203, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Wellspring Wristlets [Heroic]
 					}),
-					d(MYTHIC_RAID, {
+					d(DIFFICULTY.RAID.MYTHIC, {
 						i(207138, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [Mythic]
 						i(207142, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Ancient Haubark [Mythic]
 						i(207145, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Boots of the Molten Hoard [Mythic]
@@ -2883,7 +2883,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
-					d(LFR_RAID, {
+					d(DIFFICULTY.RAID.LFR, {
 						i(207150, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Agonizing Manacles [LFR]
 						i(207154, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [LFR]
 						i(207155, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Eldermoss Gauntlets [LFR]
@@ -2898,7 +2898,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210205, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Vigilant Protector's Bracers [LFR]
 						i(207152, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [LFR]
 					}),
-					d(NORMAL_RAID, {
+					d(DIFFICULTY.RAID.NORMAL, {
 						i(207150, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Agonizing Manacles [Normal]
 						i(207154, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [Normal]
 						i(207155, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Eldermoss Gauntlets [Normal]
@@ -2913,7 +2913,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210205, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Vigilant Protector's Bracers [Normal]
 						i(207152, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [Normal]
 					}),
-					d(HEROIC_RAID, {
+					d(DIFFICULTY.RAID.HEROIC, {
 						i(207150, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Agonizing Manacles [Heroic]
 						i(207154, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [Heroic]
 						i(207155, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Eldermoss Gauntlets [Heroic]
@@ -2928,7 +2928,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210205, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Vigilant Protector's Bracers [Heroic]
 						i(207152, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [Heroic]
 					}),
-					d(MYTHIC_RAID, {
+					d(DIFFICULTY.RAID.MYTHIC, {
 						i(207150, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Agonizing Manacles [Mythic]
 						i(207154, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [Mythic]
 						i(207155, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Eldermoss Gauntlets [Mythic]

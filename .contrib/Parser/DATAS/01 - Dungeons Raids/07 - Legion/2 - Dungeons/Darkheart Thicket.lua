@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(211473),	-- Corrupted Knot
 			})),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
 					i(134487),	-- Arch-Druid's Tainted Seal
 					i(139077),	-- Bramblemail Belt
@@ -110,7 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137317),	-- Xavius' Mad Whispers
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis

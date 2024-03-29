@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 45.36, 13.52, GORGROND },
 		["lvl"] = 92,
 		["g"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1235, {	-- Fleshrender Nok'gar
 					["crs"] = {
 						81297,	-- Dreadfang
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(ACHIEVEMENTS, {
 					ach(9081),	-- Expert Timing
 				}),
@@ -156,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(1235, {	-- Fleshrender Nok'gar
 					["crs"] = {
 						81297,	-- Dreadfang

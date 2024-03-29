@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(105, {  -- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
@@ -172,7 +172,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			})),
 			-- #if BEFORE 7.3.5
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(105, {  -- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
@@ -301,7 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(105, {  -- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {

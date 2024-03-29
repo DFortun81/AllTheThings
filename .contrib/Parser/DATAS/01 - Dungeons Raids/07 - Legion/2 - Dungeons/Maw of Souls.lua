@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					ach(10807),	-- Maw of Souls
 				})),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(134199),	-- Biornskin Belt
 					i(134217),	-- Bonespeaker Gloves
@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(136696),	-- Plans: Terrorspike (RECIPE!)
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(134199),	-- Biornskin Belt
 					i(134217),	-- Bonespeaker Gloves
@@ -138,7 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					ach(10413, {	-- Instant Karma
 						["crs"] = { 98246 },	-- Risen Warrior

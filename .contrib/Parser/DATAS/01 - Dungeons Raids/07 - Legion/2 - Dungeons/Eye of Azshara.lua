@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(136705),	-- Technique: Aqual Mark (RECIPE!)
 				})),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				cr(91784, e(1480, {	-- Warlord Parjesh
 					i(134240),	-- Brinewashed Leather Cowl
 					i(134223),	-- Coralplate Chestguard
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137379),	-- Tempestbinder's Crystal
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}))
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh

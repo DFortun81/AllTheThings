@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["maps"] = { 606, 607, 608, 609 },
 		["lvl"] = 100,
 		["g"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1138, {	-- Rocketspark and Borka
 					["crs"] = {
 						77816,	-- Borka the Brute
@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(1138, {	-- Rocketspark and Borka
 					["crs"] = {
 						77816,	-- Borka the Brute
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(1138, {	-- Rocketspark and Borka
 					["crs"] = {
 						77816,	-- Borka the Brute

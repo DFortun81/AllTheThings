@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					["lvl"] = 120,
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2097, {	-- The Sand Queen
 					["crs"] = { 127479 },	-- The Sand Queen
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2097, {	-- The Sand Queen
@@ -148,8 +148,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
 				["g"] = {
 					n(135451, {	-- Filthy Bucket

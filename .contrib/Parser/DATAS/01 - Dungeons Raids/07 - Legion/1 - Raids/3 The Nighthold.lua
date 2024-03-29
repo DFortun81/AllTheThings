@@ -15,40 +15,40 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(ACHIEVEMENTS, {
 				ach(10829, {    -- Arcing Aqueducts
                     crit(31445, {    -- Skorpyron
-                        ["_encounter"] = { 1706, LFR_RAID },
+                        ["_encounter"] = { 1706, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31444, {    -- Chronomatic Anomaly
-                        ["_encounter"] = { 1725, LFR_RAID },
+                        ["_encounter"] = { 1725, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31443, {    -- Trilliax
-                        ["_encounter"] = { 1731, LFR_RAID },
+                        ["_encounter"] = { 1731, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(10837, {    -- Royal Athenaeum
                     crit(31447, {    -- Spellblade Aluriel
-                        ["_encounter"] = { 1751, LFR_RAID },
+                        ["_encounter"] = { 1751, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31448, {    -- Star Augur Etraeus
-                        ["_encounter"] = { 1732, LFR_RAID },
+                        ["_encounter"] = { 1732, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31449, {    -- High Botanist Tel'arn
-                        ["_encounter"] = { 1761, LFR_RAID },
+                        ["_encounter"] = { 1761, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(10838, {    -- Nightspire
                     crit(31452, {    -- Tichondrius
-                        ["_encounter"] = { 1762, LFR_RAID },
+                        ["_encounter"] = { 1762, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31451, {    -- Krosus
-                        ["_encounter"] = { 1713, LFR_RAID },
+                        ["_encounter"] = { 1713, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31450, {    -- Elisande
-                        ["_encounter"] = { 1743, LFR_RAID },
+                        ["_encounter"] = { 1743, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(10839, {    -- Betrayer's Rise
                     crit(31453, {    -- Gul'dan
-                        ["_encounter"] = { 1737, LFR_RAID },
+                        ["_encounter"] = { 1737, DIFFICULTY.RAID.LFR },
 						["provider"] = { "n", 104154 },	-- Gul'dan
                     }),
                 }),
@@ -104,11 +104,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
@@ -468,7 +468,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(45381, {	-- The Nighthold: Talisman of the Shal'dorei (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -755,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140823),	-- Warchief's Shattered Tusk
 				}))
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(45382, {	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
@@ -1042,7 +1042,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140823),	-- Warchief's Shattered Tusk
 				}))
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(45383, {	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",

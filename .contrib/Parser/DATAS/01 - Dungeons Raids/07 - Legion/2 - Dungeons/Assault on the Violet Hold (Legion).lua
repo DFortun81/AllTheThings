@@ -23,7 +23,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140037),	-- Technique: Unwritten Legend (RECIPE!)
 				})),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				cr(101995, e(1693, {	-- Festerface
 					i(137438),	-- Band of Decaying Rubies
 					i(137435),	-- Blightbile Waistband
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137476),	-- Brand of Tyranny
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
 				["groups"] = {
 					cr(101995, e(1693, {	-- Festerface
@@ -252,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["lvl"] = 110,
 				["groups"] = {
 					cr(101995, e(1693, {	-- Festerface

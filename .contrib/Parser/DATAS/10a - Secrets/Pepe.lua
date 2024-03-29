@@ -49,79 +49,79 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 				["groups"] = {
 					i(122293),	-- Trans-Dimensional Bird Whistle (TOY!)
 					crit(27625, {	-- Gug'rokk (Bloodmaul Slag Mines)
-						["_encounter"] = { 889, NORMAL_DUNGEON },
+						["_encounter"] = { 889, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27626, {	-- Skulloc, Son of Gruul (Iron Docks)
-						["_encounter"] = { 1238, NORMAL_DUNGEON },
+						["_encounter"] = { 1238, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27627, {	-- Warlord Zaela (Upper Blackrock Spire)
-						["_encounter"] = { 1234, NORMAL_DUNGEON },
+						["_encounter"] = { 1234, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27628, {	-- Yalnu (The Everbloom)
-						["_encounter"] = { 1210, NORMAL_DUNGEON },
+						["_encounter"] = { 1210, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27629, {	-- Skylord Tovra (Grimrail Depot)
-						["_encounter"] = { 1133, NORMAL_DUNGEON },
+						["_encounter"] = { 1133, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27630, {	-- High Sage Viryx (Skyreach)
-						["_encounter"] = { 968, NORMAL_DUNGEON },
+						["_encounter"] = { 968, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27631, {	-- Ner'zhul (Shadowmoon Burial Grounds)
-						["_encounter"] = { 1160, NORMAL_DUNGEON },
+						["_encounter"] = { 1160, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27632, {	-- Teron'gor (Auchindoun)
-						["_encounter"] = { 1225, NORMAL_DUNGEON },
+						["_encounter"] = { 1225, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(27635, {	-- Kargath Bladefist (Highmaul)
-						["_encounter"] = { 1128, NORMAL_RAID },
+						["_encounter"] = { 1128, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27636, {	-- The Butcher (Highmaul)
-						["_encounter"] = { 971, NORMAL_RAID },
+						["_encounter"] = { 971, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27637, {	-- Brackenspore (Highmaul)
-						["_encounter"] = { 1196, NORMAL_RAID },
+						["_encounter"] = { 1196, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27638, {	-- Tectus, The Living Mountain (Highmaul)
-						["_encounter"] = { 1195, NORMAL_RAID },
+						["_encounter"] = { 1195, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27639, {	-- Twin Ogron (Highmaul)
-						["_encounter"] = { 1148, NORMAL_RAID },
+						["_encounter"] = { 1148, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27640, {	-- Ko'ragh (Highmaul)
-						["_encounter"] = { 1153, NORMAL_RAID },
+						["_encounter"] = { 1153, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27633, {	-- Imperator Mar'gok (Highmaul)
-						["_encounter"] = { 1197, NORMAL_RAID },
+						["_encounter"] = { 1197, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27642, {	-- Oregorger the Devourer (Blackrock Foundry)
-						["_encounter"] = { 1202, NORMAL_RAID },
+						["_encounter"] = { 1202, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27641, {	-- Gruul (Blackrock Foundry)
-						["_encounter"] = { 1161, NORMAL_RAID },
+						["_encounter"] = { 1161, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27643, {	-- Hans'gar & Franzok (Blackrock Foundry)
-						["_encounter"] = { 1155, NORMAL_RAID },
+						["_encounter"] = { 1155, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27644, {	-- Flamebender Ka'graz (Blackrock Foundry)
-						["_encounter"] = { 1123, NORMAL_RAID },
+						["_encounter"] = { 1123, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27645, {	-- Beastlord Darmac (Blackrock Foundry)
-						["_encounter"] = { 1122, NORMAL_RAID },
+						["_encounter"] = { 1122, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27646, {	-- Operator Thogar (Blackrock Foundry)
-						["_encounter"] = { 1147, NORMAL_RAID },
+						["_encounter"] = { 1147, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27647, {	-- Blast Furnace (Blackrock Foundry)
-						["_encounter"] = { 1154, NORMAL_RAID },
+						["_encounter"] = { 1154, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27648, {	-- Kromog, Legend of the Mountain (Blackrock Foundry)
-						["_encounter"] = { 1162, NORMAL_RAID },
+						["_encounter"] = { 1162, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27649, {	-- The Iron Maidens (Blackrock Foundry)
-						["_encounter"] = { 1203, NORMAL_RAID },
+						["_encounter"] = { 1203, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27634, {	-- Blackhand (Blackrock Foundry)
-						["_encounter"] = { 959, NORMAL_RAID },
+						["_encounter"] = { 959, DIFFICULTY.RAID.NORMAL },
 					}),
 					crit(27651, {	-- Tarlna the Ageless (World Boss - Gorgrond)
 						["_npcs"] = { 81535 },	-- Tarlna the Ageless

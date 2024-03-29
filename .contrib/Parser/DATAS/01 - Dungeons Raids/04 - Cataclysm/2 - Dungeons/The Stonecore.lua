@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(110, {	-- Corborus
 					["crs"] = { 43438 },	-- Corborus
 					["groups"] = {
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			})),
 			-- #if BEFORE 7.3.5
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(110, {	-- Corborus
 					["crs"] = { 43438 },	-- Corborus
 					["groups"] = {
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(113, {	-- High Priestess Azil
 					["crs"] = { 42333 },	-- High Priestess Azil
 					["groups"] = {

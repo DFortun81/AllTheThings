@@ -11,29 +11,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(488, {	-- Utgarde Pinnacle
 					crit(5463, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, NORMAL_DUNGEON },
+						["_encounter"] = { 643, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5465, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, NORMAL_DUNGEON },
+						["_encounter"] = { 641, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5466, {	-- Gortok Palehoof
-						["_encounter"] = { 642, NORMAL_DUNGEON },
+						["_encounter"] = { 642, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5631, {	-- King Ymiron
-						["_encounter"] = { 644, NORMAL_DUNGEON },
+						["_encounter"] = { 644, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5464, {	-- King Ymiron
-						["_encounter"] = { 644, NORMAL_DUNGEON },
+						["_encounter"] = { 644, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17301, {	-- Defense Protocol Alpha: Utgarde Pinnacle
 					crit(57767, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, HEROIC_DUNGEON },
+						["_encounter"] = { 641, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39296),	-- Accursed Bow of the Elite
 							i(39308),	-- Girdle of Lenience
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57769, {	-- Gortok Palehoof
-						["_encounter"] = { 642, HEROIC_DUNGEON },
+						["_encounter"] = { 642, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39284),	-- Miasma Mantle
 							i(39298),	-- Waistguard of the Tutor
@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57768, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, HEROIC_DUNGEON },
+						["_encounter"] = { 643, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39294),	-- Arc-Scorched Helmet
 							i(39297),	-- Cloak of Darkening
@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57766, {	-- King Ymiron
-						["_encounter"] = { 644, HEROIC_DUNGEON },
+						["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39421),	-- Gem of Imprisoned Vassals
 							i(39423),	-- Hammer of the Astral Plane
@@ -76,26 +76,26 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18600, {	-- Defense Protocol Beta: Utgarde Pinnacle
 					crit(60610, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, HEROIC_DUNGEON },
+						["_encounter"] = { 641, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45423),	-- Runetouch Wristwraps
 						},
 					}),
 					crit(60612, {	-- Gortok Palehoof
-						["_encounter"] = { 642, HEROIC_DUNGEON },
+						["_encounter"] = { 642, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45332),	-- Stormtip
 						},
 					}),
 					crit(60611, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, HEROIC_DUNGEON },
+						["_encounter"] = { 643, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45864),	-- Cover of the Keepers
 							i(45712),	-- Chestplate of Titanic Fury
 						},
 					}),
 					crit(60609, {	-- King Ymiron
-						["_encounter"] = { 644, HEROIC_DUNGEON },
+						["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45711),	-- Ironaya's Discarded Mantle
@@ -105,25 +105,25 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19437, {	-- Defense Protocol Gamma: Utgarde Pinnacle
 					crit(63367, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, HEROIC_DUNGEON },
+						["_encounter"] = { 641, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63371, {	-- Gortok Palehoof
-						["_encounter"] = { 642, HEROIC_DUNGEON },
+						["_encounter"] = { 642, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63369, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, HEROIC_DUNGEON },
+						["_encounter"] = { 643, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63366, {	-- King Ymiron
-						["_encounter"] = { 644, HEROIC_DUNGEON },
+						["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -132,16 +132,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(499, {	-- Heroic: Utgarde Pinnacle
 					crit(6864, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, HEROIC_DUNGEON },
+						["_encounter"] = { 641, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6865, {	-- Gortok Palehoof
-						["_encounter"] = { 642, HEROIC_DUNGEON },
+						["_encounter"] = { 642, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6863, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, HEROIC_DUNGEON },
+						["_encounter"] = { 643, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5618, {	-- King Ymiron
-						["_encounter"] = { 644, HEROIC_DUNGEON },
+						["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["cr"] = 26692,	-- Ymirjar Harpooner
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				-- #if BEFORE 7.3.5
 				n(ZONE_DROPS, {
 					i(37068),	-- Berserker's Sabatons
@@ -310,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					-- #if BEFORE 7.3.5

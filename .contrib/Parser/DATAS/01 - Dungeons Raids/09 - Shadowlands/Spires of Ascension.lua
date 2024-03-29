@@ -140,7 +140,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(14327),	-- I Can See My House From Here
 				}),

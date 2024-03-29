@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["isRaid"] = false,	-- prevent merging isRaid from BC version
 		["groups"] = {
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["groups"] = {
 					n(QUESTS, {
 						q(29188, {	-- A Troll Among Trolls

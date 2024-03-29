@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					i(55261),	-- Ring of the Great Whale
 				},
 			}),
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(101, {	-- Lady Naz'jar
 					["crs"] = { 40586 },	-- Lady Naz'jar
 					["groups"] = {
@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			})),
 			-- #if BEFORE 7.3.5
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(101, {	-- Lady Naz'jar
 					["crs"] = { 40586 },	-- Lady Naz'jar
 					["groups"] = {
@@ -229,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(101, {	-- Lady Naz'jar
 					["crs"] = { 40586 },	-- Lady Naz'jar
 					["groups"] = {

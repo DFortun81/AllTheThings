@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(668, {	-- Ook-Ook
 					["crs"] = { 56637 },	-- Ook-Ook
 					["g"] = {
@@ -177,7 +177,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(ACHIEVEMENTS, {
 					ach(6420),	-- Hopocalypse Now!
 				}),

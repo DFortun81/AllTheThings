@@ -422,40 +422,40 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				ach(11740, {["timeline"] = {ADDED_7_2_0}}),	-- Make it W-orc W-orc (Blackrock Foundry)
 				ach(8989, {	-- Slagworks
 					crit(25019, {	-- Gruul
-						["_encounter"] = { 1161, LFR_RAID },
+						["_encounter"] = { 1161, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25020, {	-- Oregorger
-						["_encounter"] = { 1202, LFR_RAID },
+						["_encounter"] = { 1202, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25021, {	-- The Blast Furnace
-						["_encounter"] = { 1154, LFR_RAID },
+						["_encounter"] = { 1154, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8990, {	-- Black Forge
 					crit(25022, {	-- Hans'gar and Franzok
-						["_encounter"] = { 1155, LFR_RAID },
+						["_encounter"] = { 1155, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25023, {	-- Flamebender Ka'graz
-						["_encounter"] = { 1123, LFR_RAID },
+						["_encounter"] = { 1123, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25024, {	-- Kromog
-						["_encounter"] = { 1162, LFR_RAID },
+						["_encounter"] = { 1162, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8991, {	-- Iron Assembly
 					crit(25025, {	-- Beastlord Darmac
-						["_encounter"] = { 1122, LFR_RAID },
+						["_encounter"] = { 1122, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25026, {	-- Operator Thogar
-						["_encounter"] = { 1147, LFR_RAID },
+						["_encounter"] = { 1147, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25027, {	-- The Iron Maidens
-						["_encounter"] = { 1203, LFR_RAID },
+						["_encounter"] = { 1203, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8992, {	-- Blackhand's Crucible
 					crit(24982, {	-- Blackhand
-						["_encounter"] = { 959, LFR_RAID },
+						["_encounter"] = { 959, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(9417),	-- Blackrock Foundry Guild Run
@@ -465,7 +465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
 				})),
 			}),
-			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(BLAST_FURNACE, {	-- The Blast Furnace
 					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 				}),
@@ -486,11 +486,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 				}),
 			}),
-			Difficulty(LFR_RAID, {	-- Queue NPC
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
 			-- LFR has unique items for whatever reason
-			Difficulty(LFR_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				header(HEADERS.Achievement, 8989, {	-- Slagworks
 					BossOnly(OREGORGER, {
 						i(116381),	-- Oregorger's Blackrock Shanker
@@ -718,7 +718,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			Difficulty(NORMAL_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
@@ -886,7 +886,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			Difficulty(HEROIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(37030, {	-- Sigil of the Black Hand (Heroic)
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
@@ -1054,7 +1054,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			Difficulty(MYTHIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack

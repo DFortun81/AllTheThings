@@ -13,24 +13,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				ach(11762, {["timeline"] = {ADDED_7_2_0}}),	-- Can I Get A Helya (Trial of Valor)
 				ach(11394, {	-- Trial of Valor
 					crit(34578, {	-- Odyn
-						["_encounter"] = { 1819, LFR_RAID },
+						["_encounter"] = { 1819, DIFFICULTY.RAID.LFR },
 					}),
 					crit(34800, {	-- Guarm
-						["_encounter"] = { 1830, LFR_RAID },
+						["_encounter"] = { 1830, DIFFICULTY.RAID.LFR },
 					}),
 					crit(34799, {	-- Helya
-						["_encounter"] = { 1829, LFR_RAID },
+						["_encounter"] = { 1829, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(11426, {	-- Heroic: Trial of Valor
 					crit(34839, {	-- Odyn
-						["_encounter"] = { 1819, HEROIC_RAID },
+						["_encounter"] = { 1819, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(34841, {	-- Guarm
-						["_encounter"] = { 1830, HEROIC_RAID },
+						["_encounter"] = { 1830, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(34840, {	-- Helya
-						["_encounter"] = { 1829, HEROIC_RAID },
+						["_encounter"] = { 1829, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(11403),	-- Trial of Valor Guild Run
@@ -171,11 +171,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -256,7 +256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 				})),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -320,7 +320,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(142513),	-- Token of the Lightning Keeper
 				}))
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -447,7 +447,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(142517),	-- Swell of the Tides
 				}))
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),

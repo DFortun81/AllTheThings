@@ -986,34 +986,34 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
 						crit(60810, {	-- Chronikar
-							["_encounter"] = { 2521, MYTHIC_DUNGEON },
+							["_encounter"] = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60811, {	-- Manifested Timeways
-							["_encounter"] = { 2528, MYTHIC_DUNGEON },
+							["_encounter"] = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60812, {	-- Blight of Galakrond
-							["_encounter"] = { 2535, MYTHIC_DUNGEON },
+							["_encounter"] = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60813, {	-- Iridikron the Stonescaled
-							["_encounter"] = { 2537, MYTHIC_DUNGEON },
+							["_encounter"] = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60814, {	-- Tyr, the Infinite Keeper
-							["_encounter"] = { 2526, MYTHIC_DUNGEON },
+							["_encounter"] = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60815, {	-- Morchie
-							["_encounter"] = { 2536, MYTHIC_DUNGEON },
+							["_encounter"] = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60816, {	-- Time-Lost Battlefield
-							["_encounter"] = { 2533, MYTHIC_DUNGEON },	-- [A]
-							-- ["_encounter"] = { 2534, MYTHIC_DUNGEON },	-- [H]
+							["_encounter"] = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
+							-- ["_encounter"] = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
 						}),
 						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-							["_encounter"] = { 2538, MYTHIC_DUNGEON },
+							["_encounter"] = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 					}),
 					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
@@ -1111,34 +1111,34 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			-- #else
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
 						crit(60810, {	-- Chronikar
-							["_encounter"] = { 2521, MYTHIC_DUNGEON },
+							["_encounter"] = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60811, {	-- Manifested Timeways
-							["_encounter"] = { 2528, MYTHIC_DUNGEON },
+							["_encounter"] = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60812, {	-- Blight of Galakrond
-							["_encounter"] = { 2535, MYTHIC_DUNGEON },
+							["_encounter"] = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60813, {	-- Iridikron the Stonescaled
-							["_encounter"] = { 2537, MYTHIC_DUNGEON },
+							["_encounter"] = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60814, {	-- Tyr, the Infinite Keeper
-							["_encounter"] = { 2526, MYTHIC_DUNGEON },
+							["_encounter"] = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60815, {	-- Morchie
-							["_encounter"] = { 2536, MYTHIC_DUNGEON },
+							["_encounter"] = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60816, {	-- Time-Lost Battlefield
-							["_encounter"] = { 2533, MYTHIC_DUNGEON },	-- [A]
-							-- ["_encounter"] = { 2534, MYTHIC_DUNGEON },	-- [H]
+							["_encounter"] = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
+							-- ["_encounter"] = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
 						}),
 						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-							["_encounter"] = { 2538, MYTHIC_DUNGEON },
+							["_encounter"] = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 					}),
 					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From

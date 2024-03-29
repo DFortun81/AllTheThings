@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 		["lvl"] = lvlsquish(68, 68, 30),
 		["groups"] = {
 			-- #if AFTER CATA
-			d(NORMAL_DUNGEON , {	-- Legacy
+			d(DIFFICULTY.DUNGEON.NORMAL , {	-- Legacy
 			-- #endif
 				n(QUESTS, {
 					q(11165, {	-- A Troll Among Trolls

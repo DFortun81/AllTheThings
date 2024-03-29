@@ -87,7 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				i(211513),	-- Howling Echoes
 				i(211470),	-- Ravencrest's Wrath
 			})),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1518, {	-- Amalgam of Souls
 					["creatureID"] = 98542,	-- Amalgam of Souls
 					["g"] = {
@@ -162,7 +162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
 				["g"] = {
 					e(1518, {	-- Amalgam of Souls
@@ -240,7 +240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["lvl"] = 110,
 				["g"] = {
 					e(1518, {	-- Amalgam of Souls

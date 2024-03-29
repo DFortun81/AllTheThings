@@ -362,78 +362,78 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(15493, {	-- Ephemeral Plains
 					crit(53151, {	-- Vigilant Guardian
-						["_encounter"] = { VIGILANT_GUARDIAN, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53152, {	-- Skolex, the Insatiable Ravener
-						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53153, {	-- Artificer Xy'mox
-						["_encounter"] = { ARTIFICER_XYMOX, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53157, {	-- Halondrus the Reclaimer
-						["_encounter"] = { HALONDRUS_THE_RECLAIMER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(15492, {	-- Cornerstone of Creation
 					crit(53154, {	-- Dausegne, the Fallen Oracle
-						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53155, {	-- Prototype Pantheon
-						["_encounter"] = { PROTOTYPE_PANTHEON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53156, {	-- Lihuvim, Principal Architect
-						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(15416, {	-- Domination's Grasp
 					crit(53158, {	-- Anduin Wrynn
-						["_encounter"] = { ANDUIN_WRYNN, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53148, {	-- Lords of Dread
-						["_encounter"] = { LORDS_OF_DREAD, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53149, {	-- Rygelon
-						["_encounter"] = { RYGELON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { RYGELON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(15418, {	-- The Grand Design
 					crit(53150, {	-- The Jailer
-						["_encounter"] = { THE_JAILER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(15417, {	-- Sepulcher of the First Ones
 					crit(53151, {	-- Vigilant Guardian
-						["_encounter"] = { VIGILANT_GUARDIAN, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53152, {	-- Skolex, the Insatiable Ravener
-						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53153, {	-- Artificer Xy'mox
-						["_encounter"] = { ARTIFICER_XYMOX, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53154, {	-- Dausegne, the Fallen Oracle
-						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53155, {	-- Prototype Pantheon
-						["_encounter"] = { PROTOTYPE_PANTHEON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53156, {	-- Lihuvim, Principal Architect
-						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53157, {	-- Halondrus the Reclaimer
-						["_encounter"] = { HALONDRUS_THE_RECLAIMER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53158, {	-- Anduin Wrynn
-						["_encounter"] = { ANDUIN_WRYNN, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53148, {	-- Lords of Dread
-						["_encounter"] = { LORDS_OF_DREAD, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53149, {	-- Rygelon
-						["_encounter"] = { RYGELON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { RYGELON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53150, {	-- The Jailer
-						["_encounter"] = { THE_JAILER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(15478, {	-- Heroic: Sepulcher of the First Ones
@@ -510,37 +510,37 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				-- Fated
 				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of the Sepulcher
 					crit(53579, {	-- Vigilant Guardian
-						["_encounter"] = { VIGILANT_GUARDIAN, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53580, {	-- Skolex, the Insatiable Ravener
-						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53581, {	-- Artificer Xy'mox
-						["_encounter"] = { ARTIFICER_XYMOX, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53582, {	-- Dausegne, the Fallen Oracle
-						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53583, {	-- Prototype Pantheon
-						["_encounter"] = { PROTOTYPE_PANTHEON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53584, {	-- Lihuvim, Principal Architect
-						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53585, {	-- Halondrus the Reclaimer
-						["_encounter"] = { HALONDRUS_THE_RECLAIMER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53586, {	-- Anduin Wrynn
-						["_encounter"] = { ANDUIN_WRYNN, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53587, {	-- Lords of Dread
-						["_encounter"] = { LORDS_OF_DREAD, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53588, {	-- Rygelon
-						["_encounter"] = { RYGELON, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { RYGELON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53589, {	-- The Jailer
-						["_encounter"] = { THE_JAILER, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				})),
 				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of the Sepulcher
@@ -580,37 +580,37 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of the Sepulcher
 					crit(153601, {	-- Vigilant Guardian
-						["_encounter"] = { VIGILANT_GUARDIAN, MYTHIC_RAID },
+						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(253602, {	-- Skolex, the Insatiable Ravener
-						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, MYTHIC_RAID },
+						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(353603, {	-- Artificer Xy'mox
-						["_encounter"] = { ARTIFICER_XYMOX, MYTHIC_RAID },
+						["_encounter"] = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(453604, {	-- Dausegne, the Fallen Oracle
-						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, MYTHIC_RAID },
+						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(553605, {	-- Prototype Pantheon
-						["_encounter"] = { PROTOTYPE_PANTHEON, MYTHIC_RAID },
+						["_encounter"] = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(653606, {	-- Lihuvim, Principal Architect
-						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, MYTHIC_RAID },
+						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(753607, {	-- Halondrus the Reclaimer
-						["_encounter"] = { HALONDRUS_THE_RECLAIMER, MYTHIC_RAID },
+						["_encounter"] = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(853608, {	-- Anduin Wrynn
-						["_encounter"] = { ANDUIN_WRYNN, MYTHIC_RAID },
+						["_encounter"] = { ANDUIN_WRYNN, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(953609, {	-- Lords of Dread
-						["_encounter"] = { LORDS_OF_DREAD, MYTHIC_RAID },
+						["_encounter"] = { LORDS_OF_DREAD, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53610, {	-- Rygelon
-						["_encounter"] = { RYGELON, MYTHIC_RAID },
+						["_encounter"] = { RYGELON, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53611, {	-- The Jailer
-						["_encounter"] = { THE_JAILER, MYTHIC_RAID },
+						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
 				-- Guild Achievements
@@ -682,7 +682,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
 						["isWorldQuest"] = true,
@@ -858,12 +858,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			-- #if AFTER 10.1.5
-			Difficulty(LFR_RAID, {	-- Queue NPC
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
 				["coord"] = { 41.3, 71.0, ORIBOS },
 			}),
 			-- #endif
-			Difficulty(LFR_RAID).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
 					Boss(VIGILANT_GUARDIAN),
@@ -920,7 +920,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					ach(15494),	-- Damnation Aviation
 				}),
 			}),
-			Difficulty(NORMAL_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown [N]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -973,7 +973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					ig(189982),	-- Silithid Soul (SS!)
 				}),
 			}),
-			Difficulty(HEROIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown [H]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -995,7 +995,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				Boss(RYGELON),
 				Boss(THE_JAILER),
 			}),
-			Difficulty(MYTHIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown [M]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon

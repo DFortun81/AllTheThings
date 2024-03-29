@@ -27,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 				e(693, {	-- Vizier Jin'bak
 					["crs"] = { 61567 },	-- Vizier Jin'bak
 					["g"] = {
@@ -217,7 +217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			})),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(693, {	-- Vizier Jin'bak
 					["crs"] = { 61567 },	-- Vizier Jin'bak
 					["g"] = {

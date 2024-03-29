@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			})),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						54431,	-- Echo of Baine

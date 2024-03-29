@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 	}),
-	d(MYTHIC_DUNGEON, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		i(182173),	-- Hyena Soul
 	})),
 })));

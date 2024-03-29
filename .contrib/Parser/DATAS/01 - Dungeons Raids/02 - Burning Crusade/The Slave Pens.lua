@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(ZONE_DROPS, {
 				i(24368),	-- Coilfang Armaments
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(570, {	-- Mennu the Betrayer
 					["creatureID"] = 17941,
 					["groups"] = {
@@ -240,7 +240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {

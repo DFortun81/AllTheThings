@@ -11,29 +11,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(484, {	-- Gundrak
 					crit(5448, {	-- Slad'ran
-						["_encounter"] = { 592, NORMAL_DUNGEON },
+						["_encounter"] = { 592, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5449, {	-- Moorabi
-						["_encounter"] = { 594, NORMAL_DUNGEON },
+						["_encounter"] = { 594, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5450, {	-- Drakkari Colossus
-						["_encounter"] = { 593, NORMAL_DUNGEON },
+						["_encounter"] = { 593, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5627, {	-- Gal'darah
-						["_encounter"] = { 596, NORMAL_DUNGEON },
+						["_encounter"] = { 596, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5451, {	-- Gal'darah
-						["_encounter"] = { 596, NORMAL_DUNGEON },
+						["_encounter"] = { 596, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17295, {	-- Defense Protocol Alpha: Gundrak
 					crit(57743, {	-- Slad'ran
-						["_encounter"] = { 592, HEROIC_DUNGEON },
+						["_encounter"] = { 592, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39229),	-- Embrace of the Spider
 							i(39234),	-- Plague-Impervious Boots
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57746, {	-- Drakkari Colossus
-						["_encounter"] = { 593, HEROIC_DUNGEON },
+						["_encounter"] = { 593, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39233),	-- Aegis of Damnation
 							i(39225),	-- Cloak of Armed Strife
@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57744, {	-- Moorabi
-						["_encounter"] = { 594, HEROIC_DUNGEON },
+						["_encounter"] = { 594, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39232),	-- Pendant of Lost Vocations
 							i(39228),	-- Web Cocoon Grips
@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57745, {	-- Eck the Ferocious
-						["_encounter"] = { 595, HEROIC_DUNGEON },
+						["_encounter"] = { 595, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39217),	-- Avenging Combat Leggings
 							i(39231),	-- Timeworn Silken Band
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57747, {	-- Gal'darah
-						["_encounter"] = { 596, HEROIC_DUNGEON },
+						["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(40491),	-- Hailstorm
 							i(39283),	-- Putrescent Bands
@@ -84,20 +84,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18596, {	-- Defense Protocol Beta: Gundrak
 					crit(60592, {	-- Slad'ran
-						["_encounter"] = { 592, HEROIC_DUNGEON },
+						["_encounter"] = { 592, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45687),	-- Helm of Veiled Energies
 							i(45976),	-- Static Charge Handwraps
 						},
 					}),
 					crit(60595, {	-- Drakkari Colossus
-						["_encounter"] = { 593, HEROIC_DUNGEON },
+						["_encounter"] = { 593, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45301),	-- Bracers of the Smothering Inferno
 						},
 					}),
 					crit(60593, {	-- Moorabi
-						["_encounter"] = { 594, HEROIC_DUNGEON },
+						["_encounter"] = { 594, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45305),	-- Breastplate of the Afterlife
 							i(45306),	-- Binding of the Dragon Matriarch
@@ -105,14 +105,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(60594, {	-- Eck the Ferocious
-						["_encounter"] = { 595, HEROIC_DUNGEON },
+						["_encounter"] = { 595, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45308),	-- Eye of the Broodmother
 							i(45307),	-- Ironscale Leggings
 						},
 					}),
 					crit(60596, {	-- Gal'darah
-						["_encounter"] = { 596, HEROIC_DUNGEON },
+						["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45298),	-- Razorscale Talon
@@ -123,31 +123,31 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19433, {	-- Defense Protocol Gamma: Gundrak
 					crit(63339, {	-- Slad'ran
-						["_encounter"] = { 592, HEROIC_DUNGEON },
+						["_encounter"] = { 592, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63342, {	-- Drakkari Colossus
-						["_encounter"] = { 593, HEROIC_DUNGEON },
+						["_encounter"] = { 593, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63340, {	-- Moorabi
-						["_encounter"] = { 594, HEROIC_DUNGEON },
+						["_encounter"] = { 594, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63341, {	-- Eck the Ferocious
-						["_encounter"] = { 595, HEROIC_DUNGEON },
+						["_encounter"] = { 595, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63343, {	-- Gal'darah
-						["_encounter"] = { 596, HEROIC_DUNGEON },
+						["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -156,19 +156,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(495,  {	-- Heroic: Gundrak
 					crit(6839, {	-- Slad'ran
-						["_encounter"] = { 592, HEROIC_DUNGEON },
+						["_encounter"] = { 592, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6840, {	-- Moorabi
-						["_encounter"] = { 594, HEROIC_DUNGEON },
+						["_encounter"] = { 594, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6841, {	-- Drakkari Colossus
-						["_encounter"] = { 593, HEROIC_DUNGEON },
+						["_encounter"] = { 593, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5614, {	-- Gal'darah
-						["_encounter"] = { 596, HEROIC_DUNGEON },
+						["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5053, {	-- Eck the Ferocious
-						["_encounter"] = { 595, HEROIC_DUNGEON },
+						["_encounter"] = { 595, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -312,7 +312,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(ZONE_DROPS, {
 					i(35593),	-- Steel Bear Trap Bracers
 					i(35594),	-- Snowmelt Silken Cinch
@@ -396,7 +396,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {

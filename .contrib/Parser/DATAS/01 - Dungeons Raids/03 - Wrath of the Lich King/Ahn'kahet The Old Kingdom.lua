@@ -10,29 +10,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(481, {	-- Ahn'kahet: The Old Kingdom
 					crit(5439, {	-- Prince Taldaram
-						["_encounter"] = { 581, NORMAL_DUNGEON },
+						["_encounter"] = { 581, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5440, {	-- Elder Nadox
-						["_encounter"] = { 580, NORMAL_DUNGEON },
+						["_encounter"] = { 580, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5441, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, NORMAL_DUNGEON },
+						["_encounter"] = { 582, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5624, {	-- Herald Volazj
-						["_encounter"] = { 584, NORMAL_DUNGEON },
+						["_encounter"] = { 584, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5442, {	-- Herald Volazj
-						["_encounter"] = { 584, NORMAL_DUNGEON },
+						["_encounter"] = { 584, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17291, {	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
 					crit(57731, {	-- Elder Nadox
-						["_encounter"] = { 580, HEROIC_DUNGEON },
+						["_encounter"] = { 580, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39249),	-- Shoulderplates of Bloodshed
 							i(39255),	-- Staff of the Plague Beast
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57733, {	-- Prince Taldaram
-						["_encounter"] = { 581, HEROIC_DUNGEON },
+						["_encounter"] = { 581, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39260),	-- Helm of the Corrupted Mind
 							i(39247),	-- Cuffs of Dark Shadows
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57734, {	-- Amanitar
-						["_encounter"] = { 583, HEROIC_DUNGEON },
+						["_encounter"] = { 583, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39247),	-- Cuffs of Dark Shadows
 							i(39260),	-- Helm of the Corrupted Mind
@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57732, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, HEROIC_DUNGEON },
+						["_encounter"] = { 582, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39246),	-- Amulet of Autopsy
 							i(39250),	-- Ring of Holy Cleansing
@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57730, {	-- Herald Volazj
-						["_encounter"] = { 584, HEROIC_DUNGEON },
+						["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(43998),	-- Chestguard of Flagrant Prowess
 							i(39417),	-- Death's Bite
@@ -83,32 +83,32 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18593, {	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
 					crit(60583, {	-- Elder Nadox
-						["_encounter"] = { 580, HEROIC_DUNGEON },
+						["_encounter"] = { 580, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45314),	-- Igniter Rod
 						},
 					}),
 					crit(60586, {	-- Prince Taldaram
-						["_encounter"] = { 581, HEROIC_DUNGEON },
+						["_encounter"] = { 581, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45321),	-- Pauldrons of Tempered Will
 							i(46019),	-- Leggings of the Insatiable
 						},
 					}),
 					crit(60585, {	-- Amanitar
-						["_encounter"] = { 583, HEROIC_DUNGEON },
+						["_encounter"] = { 583, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(60584, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, HEROIC_DUNGEON },
+						["_encounter"] = { 582, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45702),	-- Emerald Signet Ring
 						},
 					}),
 					crit(60582, {	-- Herald Volazj
-						["_encounter"] = { 584, HEROIC_DUNGEON },
+						["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45699),	-- Pendant of the Piercing Glare
@@ -118,31 +118,31 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19430, {	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
 					crit(63330, {	-- Elder Nadox
-						["_encounter"] = { 580, HEROIC_DUNGEON },
+						["_encounter"] = { 580, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63332, {	-- Prince Taldaram
-						["_encounter"] = { 581, HEROIC_DUNGEON },
+						["_encounter"] = { 581, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63333, {	-- Amanitar
-						["_encounter"] = { 583, HEROIC_DUNGEON },
+						["_encounter"] = { 583, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63331, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, HEROIC_DUNGEON },
+						["_encounter"] = { 582, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63329, {	-- Herald Volazj
-						["_encounter"] = { 584, HEROIC_DUNGEON },
+						["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -151,19 +151,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(492, {	-- Heroic: Ahn'kahet: The Old Kingdom
 					crit(6851, {	-- Prince Taldaram
-						["_encounter"] = { 581, HEROIC_DUNGEON },
+						["_encounter"] = { 581, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6852, {	-- Elder Nadox
-						["_encounter"] = { 580, HEROIC_DUNGEON },
+						["_encounter"] = { 580, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6853, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, HEROIC_DUNGEON },
+						["_encounter"] = { 582, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5611, {	-- Herald Volazj
-						["_encounter"] = { 584, HEROIC_DUNGEON },
+						["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5054, {	-- Amanitar
-						["_encounter"] = { 583, HEROIC_DUNGEON },
+						["_encounter"] = { 583, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 			}),
 			-- #endif
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(ZONE_DROPS, {
 					i(35615),	-- Glowworm Cavern Bindings
 					-- #if BEFORE 7.3.5
@@ -329,7 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {

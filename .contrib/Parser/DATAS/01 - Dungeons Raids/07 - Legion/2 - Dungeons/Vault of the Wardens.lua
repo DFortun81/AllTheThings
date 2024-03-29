@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					ach(10801),	-- Vault of the Wardens
 				})),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				cr(95885, e(1467, {	-- Tirathon Saltheril
 					i(134369),	-- Felbat Leather Boots
 					i(137509),	-- Glaivemaster's Studded Grips
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137930),	-- Pattern: Gravenscale Treads [Rank 3] (RECIPE!)
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(95885, e(1467, {	-- Tirathon Saltheril
@@ -185,7 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["lvl"] = 110,
 				["g"] = {
 					n(ACHIEVEMENTS, {

@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				cr(117193, e(1905, {	-- Agronox
 					i(144469),	-- Caretaker's Budding Mantle
 					i(144491),	-- Choking Vine Bindings
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(144463),	-- Shard of Kaldorei Stained Glass
 				})),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				cr(117193, e(1905, {	-- Agronox
 					ach(11768, {	-- Boom Bloom
 						["crs"] = { 121695 },	-- Budding Flower

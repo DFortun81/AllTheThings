@@ -167,7 +167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(527, {	-- Watchkeeper Gargolmar
 					["creatureID"] = 17306,
 					["groups"] = {
@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
@@ -301,10 +301,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["groups"] = {
 					ach(667, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Heroic: Hellfire Ramparts
 						crit(3705, {	-- Omor the Unscarred
-							["_encounter"] = { 528, HEROIC_DUNGEON },
+							["_encounter"] = { 528, DIFFICULTY.DUNGEON.HEROIC },
 						}),
 						crit(3816, {	-- Vazruden
-							["_encounter"] = { 529, HEROIC_DUNGEON },
+							["_encounter"] = { 529, DIFFICULTY.DUNGEON.HEROIC },
 						}),
 					})),
 					ach(5067, {	-- Heroic: Hellfire Ramparts Guild Run

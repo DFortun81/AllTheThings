@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["mapID"] = 593,
 		["coord"] = { 46.27, 73.92, TALADOR },
 		["groups"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
 					["sym"] = {
@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
 					["sym"] = {
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
 					["sym"] = {

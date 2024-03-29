@@ -460,66 +460,66 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
 					crit(58866, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58867, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58868, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18164, {	-- Fury of Giants
 					crit(58869, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58870, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58871, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18165, {	-- Neltharion's Shadow
 					crit(58881, {	-- Magmorax
-						["_encounter"] = { 2527, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58882, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18167, {	-- Edge of the Void
 					crit(58883, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18160, {	-- Aberrus, the Shadowed Crucible
 					crit(58866, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58867, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58868, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58869, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58870, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58871, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58881, {	-- Magmorax
-						["_encounter"] = { 2527, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58882, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58883, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
@@ -588,31 +588,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19567, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Shadows
 					crit(64957, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64958, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64959, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64960, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64961, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64962, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64963, {	-- Magmorax
-						["_encounter"] = { 2527, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64964, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(64965, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, ALL_DIFFICULTIES_RAID },
+						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				})),
 				ach(19568, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Shadows
@@ -646,31 +646,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				})),
 				ach(19569, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Shadows
 					crit(64975, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, MYTHIC_RAID },
+						["_encounter"] = { 2522, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64976, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, MYTHIC_RAID },
+						["_encounter"] = { 2529, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64977, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, MYTHIC_RAID },
+						["_encounter"] = { 2530, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64978, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, MYTHIC_RAID },
+						["_encounter"] = { 2524, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64979, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, MYTHIC_RAID },
+						["_encounter"] = { 2525, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64980, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, MYTHIC_RAID },
+						["_encounter"] = { 2532, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64981, {	-- Magmorax
-						["_encounter"] = { 2527, MYTHIC_RAID },
+						["_encounter"] = { 2527, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64982, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, MYTHIC_RAID },
+						["_encounter"] = { 2523, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64983, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, MYTHIC_RAID },
+						["_encounter"] = { 2520, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
 				ach(17765),	-- What We Wear In The Shadowflame
@@ -682,7 +682,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(204857),	-- Ancient Elementium Fragment
 				i(204464),	-- Shadowflame Essence
 			}),
-			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(KAZZARA, {
 					i(205145),	-- Plans: Shadowed Impact Buckler (RECIPE!)
 				}),
@@ -732,12 +732,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(204255),	-- Cracked Titan Gem
 				}),
 			}),
-			Difficulty({LFR_RAID,NORMAL_RAID,HEROIC_RAID}).AddGroups({
+			Difficulty({DIFFICULTY.RAID.LFR,DIFFICULTY.RAID.NORMAL,DIFFICULTY.RAID.HEROIC}).AddGroups({
 				BossOnly(SARKARETH, {
 					i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!)
 				}),
 			}),
-			Difficulty(LFR_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -761,11 +761,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				header(HEADERS.Achievement, 18167, {	-- Edge of the Void
 					Boss(SARKARETH, {
 						i(206046, {	-- Void-Touched Curio
-							["sym"] = {{"sub","instance_tier",1208,LFR_RAID}},
+							["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
 						i(217408, {	-- Awakened Tempostone
-							["sym"] = {{"sub","instance_tier",1208,LFR_RAID}},
+							["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 						}),
@@ -833,7 +833,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(17877),	-- We'll Never See That Again, Surely
 				}),
 			}),
-			Difficulty(NORMAL_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
 						["provider"] = { "n", 201574 },	-- Wrathion
@@ -858,11 +858,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				Boss(NELTHARION),
 				Boss(SARKARETH, {
 					i(206046, {	-- Void-Touched Curio
-						["sym"] = {{"sub","instance_tier",1208,NORMAL_RAID}},
+						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1208,NORMAL_RAID}},
+						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
@@ -880,7 +880,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(NELTHARION),
 				BossOnly(SARKARETH),
 			}),
-			Difficulty(HEROIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
 						["provider"] = { "n", 201574 },	-- Wrathion
@@ -906,17 +906,17 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				Boss(SARKARETH, {
 					ach(18253, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Ahead of the Curve: Scalecommander Sarkareth
 					i(206046, {	-- Void-Touched Curio
-						["sym"] = {{"sub","instance_tier",1208,HEROIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1208,HEROIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),
 				}),
 			}),
-			Difficulty(MYTHIC_RAID).AddGroups({
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
 						["provider"] = { "n", 201574 },	-- Wrathion
@@ -976,10 +976,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
 					ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 					i(206046, {	-- Void-Touched Curio
-						["sym"] = {{"sub","instance_tier",1208,MYTHIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.MYTHIC}},
 					}),
 					i(217408, {	-- Awakened Tempostone
-						["sym"] = {{"sub","instance_tier",1208,MYTHIC_RAID}},
+						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 					}),

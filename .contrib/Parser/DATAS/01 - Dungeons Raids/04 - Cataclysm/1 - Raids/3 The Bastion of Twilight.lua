@@ -14,16 +14,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(4850, {	-- The Bastion of Twilight
 					crit(13577, {	-- Halfus Wyrmbreaker
-						["_encounter"] = { 156, NORMAL_DUNGEON },
+						["_encounter"] = { 156, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13576, {	-- Valiona and Theralion
-						["_encounter"] = { 157, NORMAL_DUNGEON },
+						["_encounter"] = { 157, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13578, {	-- Ascendant Council
-						["_encounter"] = { 158, NORMAL_DUNGEON },
+						["_encounter"] = { 158, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13579, {	-- Cho'gall
-						["_encounter"] = { 167, NORMAL_DUNGEON },
+						["_encounter"] = { 167, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 				}),
 				ach(4986),	-- The Bastion of Twilight Guild Run
@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					e(156, {	-- Halfus Wyrmbreaker
@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
 					e(156, {	-- Halfus Wyrmbreaker

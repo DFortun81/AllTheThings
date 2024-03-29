@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(655, {	-- Saboteur Kip'tilak
 					["crs"] = { 56906 },	-- Saboteur Kip'tilak
 					["g"] = {
@@ -187,7 +187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(ACHIEVEMENTS, {
 					ach(6476),	-- Conscriptinator
 				}),

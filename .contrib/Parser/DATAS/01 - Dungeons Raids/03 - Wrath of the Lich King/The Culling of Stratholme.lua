@@ -11,29 +11,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(479, {	-- The Culling of Stratholme
 					crit(5467, {	-- Meathook
-						["_encounter"] = { 611, NORMAL_DUNGEON },
+						["_encounter"] = { 611, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5468, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, NORMAL_DUNGEON },
+						["_encounter"] = { 613, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5469, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, NORMAL_DUNGEON },
+						["_encounter"] = { 612, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(6432, {	-- Mal'Ganis
-						["_encounter"] = { 614, NORMAL_DUNGEON },
+						["_encounter"] = { 614, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(6433, {	-- Mal'Ganis
-						["_encounter"] = { 614, NORMAL_DUNGEON },
+						["_encounter"] = { 614, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17302, {	-- Defense Protocol Alpha: The Culling of Stratholme
 					crit(57771, {	-- Meathook
-						["_encounter"] = { 611, HEROIC_DUNGEON },
+						["_encounter"] = { 611, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(43992),	-- Volitant Amulet
 							i(40429),	-- Crimson Steel
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57773, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, HEROIC_DUNGEON },
+						["_encounter"] = { 612, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(43991),	-- Legguards of Composure
 							i(43989),	-- Remembrance Girdle
@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57772, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, HEROIC_DUNGEON },
+						["_encounter"] = { 613, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(43990),	-- Blade-Scarred Tunic
 							i(40430),	-- Majestic Dragon Figurine
@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57770, {	-- Mal'Ganis
-						["_encounter"] = { 614, HEROIC_DUNGEON },
+						["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(40475),	-- Barricade of Eternity
 							i(39235),	-- Bone-Framed Bracers
@@ -76,27 +76,27 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18601, {	-- Defense Protocol Beta: The Culling of Stratholme
 					crit(60614, {	-- Meathook
-						["_encounter"] = { 611, HEROIC_DUNGEON },
+						["_encounter"] = { 611, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45694),	-- Conductive Cord
 							i(46339),	-- Mimiron's Repeater
 						},
 					}),
 					crit(60616, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, HEROIC_DUNGEON },
+						["_encounter"] = { 612, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45695),	-- Spire of Withering Dreams
 						},
 					}),
 					crit(60615, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, HEROIC_DUNGEON },
+						["_encounter"] = { 613, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45685),	-- Plasma Foil
 							i(45675),	-- Power Enhancing Loop
 						},
 					}),
 					crit(60613, {	-- Mal'Ganis
-						["_encounter"] = { 614, HEROIC_DUNGEON },
+						["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(46016),	-- Abaddon
@@ -107,25 +107,25 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19438, {	-- Defense Protocol Gamma: The Culling of Stratholme
 					crit(63374, {	-- Meathook
-						["_encounter"] = { 611, HEROIC_DUNGEON },
+						["_encounter"] = { 611, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63377, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, HEROIC_DUNGEON },
+						["_encounter"] = { 612, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63376, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, HEROIC_DUNGEON },
+						["_encounter"] = { 613, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63374, {	-- Mal'Ganis
-						["_encounter"] = { 614, HEROIC_DUNGEON },
+						["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -134,16 +134,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(500,  {	-- Heroic: The Culling of Stratholme
 					crit(6805, {	-- Meathook
-						["_encounter"] = { 611, HEROIC_DUNGEON },
+						["_encounter"] = { 611, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6806, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, HEROIC_DUNGEON },
+						["_encounter"] = { 613, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6807, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, HEROIC_DUNGEON },
+						["_encounter"] = { 612, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6434, {	-- Mal'Ganis
-						["_encounter"] = { 614, HEROIC_DUNGEON },
+						["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -194,7 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["timeline"] = { "created 3.0.3", "added 7.3.5" },
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(611, {	-- Meathook
 					["creatureID"] = 26529,	-- Meathook
 					["groups"] = {
@@ -286,7 +286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ACHIEVEMENTS, {

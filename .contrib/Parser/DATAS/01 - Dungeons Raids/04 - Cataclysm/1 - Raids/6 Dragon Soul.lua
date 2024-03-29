@@ -1,7 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local CUSTOM_DIFFICULTY_ID = GetOrCreateMultiDifficulty({RAID_FINDER,NORMAL_DUNGEON,HEROIC_DUNGEON});
+local CUSTOM_DIFFICULTY_ID = GetOrCreateMultiDifficulty({
+	DIFFICULTY.RAID.FINDER,
+	DIFFICULTY.DUNGEON.NORMAL,
+	DIFFICULTY.DUNGEON.HEROIC
+});
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_FOUR, inst(187, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
@@ -273,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 				},
 			}),
-			d(RAID_FINDER, {
+			d(DIFFICULTY.RAID.FINDER, {
 				-- #if AFTER 6.0.1.18322
 				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
 				["coord"] = { 63.0, 27.6, CAVERNS_OF_TIME },
@@ -564,7 +568,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 				},
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["difficulties"] = { 3, 4 },
 				["ignoreBonus"] = true,
 				["groups"] = {
@@ -713,7 +717,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 				},
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["difficulties"] = { 5, 6 },
 				["ignoreBonus"] = true,
 				["groups"] = {

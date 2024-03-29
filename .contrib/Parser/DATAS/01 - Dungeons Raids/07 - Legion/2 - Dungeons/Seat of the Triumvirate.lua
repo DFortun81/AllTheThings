@@ -213,7 +213,7 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 					},
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				cr(122313, e(1979, {	-- Zuraal the Ascended
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding
@@ -275,7 +275,7 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 					},
 				})),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				cr(122313, e(1979, {	-- Zuraal the Ascended
 					ach(12004, {	-- Welcome the Void
 						["crs"] = { 126283 },	-- Urjad

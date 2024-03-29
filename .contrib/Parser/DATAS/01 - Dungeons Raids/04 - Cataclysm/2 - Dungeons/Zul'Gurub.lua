@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
 		["isRaid"] = false,	-- prevent merging isRaid from Classic version
 		["groups"] = {
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(ACHIEVEMENTS, {
 					ach(17367, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Deadliest Cache
 						crit(58126, {	-- Jostled Gurubashi Cache

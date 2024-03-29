@@ -12,31 +12,31 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(8986, {	-- The Walled City
 					crit(25010, {	-- Kargath Bladefist
-						["_encounter"] = { 1128, LFR_RAID },
+						["_encounter"] = { 1128, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25012, {	-- The Butcher
-						["_encounter"] = { 971, LFR_RAID },
+						["_encounter"] = { 971, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25016, {	-- Brackenspore
-						["_encounter"] = { 1196, LFR_RAID },
+						["_encounter"] = { 1196, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8987, {	-- Arcane Sanctum
 					crit(25011, {	-- Tectus
-						["_encounter"] = { 1195, LFR_RAID },
+						["_encounter"] = { 1195, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25014, {	-- Twin Ogron
-						["_encounter"] = { 1148, LFR_RAID },
+						["_encounter"] = { 1148, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25015, {	-- Ko'ragh
-						["_encounter"] = { 1153, LFR_RAID },
+						["_encounter"] = { 1153, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8988, {	-- Imperator's Fall
 					crit(25018, {	-- Imperator Mar'gok
 						-- CRIEVE NOTE: If we want to keep this criteria, keep the provider so it has a proper name.
 						["provider"] = { "n", 77428 },	-- Imperator Mar'gok <Sorcerer King>
-						["_encounter"] = { 1197, LFR_RAID },
+						["_encounter"] = { 1197, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(9416),	-- Highmaul Guild Run
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					})),
 				},
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
+			d(DIFFICULTY.RAID.MULTI.ALL, {
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
@@ -69,10 +69,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 				})),
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				header(HEADERS.Achievement, 8986, {	-- The Walled City
 					cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 						i(116360),	-- Blade Dancer's Claws
@@ -210,7 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 				})),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(ZONE_DROPS, {
 					i(119343),	-- Eye-Blinder Greatcloak
 					i(119347),	-- Gill's Glorious Windcloak
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(113859),	-- Quiescent Runestone
 				})),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(ZONE_DROPS, {
 					i(119343),	-- Eye-Blinder Greatcloak
 					i(119347),	-- Gill's Glorious Windcloak
@@ -453,7 +453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(113859),	-- Quiescent Runestone
 				})),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(ZONE_DROPS, {
 					i(119343),	-- Eye-Blinder Greatcloak
 					i(119347),	-- Gill's Glorious Windcloak

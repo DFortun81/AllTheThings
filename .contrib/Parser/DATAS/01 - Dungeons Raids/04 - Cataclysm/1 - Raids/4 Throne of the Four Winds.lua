@@ -13,10 +13,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(4851, {		-- Throne of the Four Winds
 					crit(14097, {	-- Conclave of Wind
-						["_encounter"] = { 154, NORMAL_DUNGEON },
+						["_encounter"] = { 154, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13581, {	-- Al'Akir
-						["_encounter"] = { 155, NORMAL_DUNGEON },
+						["_encounter"] = { 155, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 				}),
 				ach(4987),	-- Throne of the Four Winds Guild Run
@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind
@@ -101,7 +101,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind

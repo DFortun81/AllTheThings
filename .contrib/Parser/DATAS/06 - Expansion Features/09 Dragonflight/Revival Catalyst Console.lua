@@ -21,11 +21,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		["sourceQuests"] = { 72360 },	-- Reviving the Machine
 		["g"] = {
 			header(HEADERS.LFGDungeon, VAULT_OF_THE_INCARNATES, {
-				d(LFR_RAID, {
+				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["bonusID"] = 451 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, LFR_RAID),
+							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200413),	-- Drape of the Haunted Frostbrood
 								i(200411),	-- Girdle of the Haunted Frostbrood
@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, LFR_RAID),
+							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200343),	-- Skybound Avenger's Boots
 								i(200350),	-- Skybound Avenger's Cape
@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, LFR_RAID),
+							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200358),	-- Lost Landcaller's Bindings
 								i(200359),	-- Lost Landcaller's Laena
@@ -52,7 +52,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, LFR_RAID),
+							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200385),	-- Bracers of the Awakened
 								i(200384),	-- Chain of the Awakened
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, LFR_RAID),
+							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200393),	-- Stormwing Harrier's Belt
 								i(200395),	-- Stormwing Harrier's Plumage
@@ -70,7 +70,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, LFR_RAID),
+							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200323),	-- Crystal Scholar's Cape
 								i(200321),	-- Crystal Scholar's Cinch
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, LFR_RAID),
+							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200367),	-- Cuffs of the Waking Fist
 								i(200368),	-- Drape of the Waking Fist
@@ -88,7 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, LFR_RAID),
+							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200421),	-- Virtuous Silver Bracers
 								i(200422),	-- Virtuous Silver Cloak
@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, LFR_RAID),
+							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200332),	-- Draconic Hierophant's Drape
 								i(200330),	-- Draconic Hierophant's Sash
@@ -106,7 +106,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, LFR_RAID),
+							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200377),	-- Vault Delver's Camouflage
 								i(200370),	-- Vault Delver's Shinguards
@@ -115,7 +115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, LFR_RAID),
+							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200403),	-- Cuffs of Infused Earth
 								i(200402),	-- Faulds of Infused Earth
@@ -124,7 +124,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, LFR_RAID),
+							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200339),	-- Scalesworn Cultist's Girdle
 								i(200341),	-- Scalesworn Cultist's Runedrape
@@ -133,7 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, LFR_RAID),
+							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(200424),	-- Boots of the Walking Mountain
 								i(200430),	-- Bracers of the Walking Mountain
@@ -143,11 +143,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(NORMAL_RAID, {
+				d(DIFFICULTY.RAID.NORMAL, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, NORMAL_RAID),
+							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200413),	-- Drape of the Haunted Frostbrood
 								i(200411),	-- Girdle of the Haunted Frostbrood
@@ -156,7 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, NORMAL_RAID),
+							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200343),	-- Skybound Avenger's Boots
 								i(200350),	-- Skybound Avenger's Cape
@@ -165,7 +165,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, NORMAL_RAID),
+							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200358),	-- Lost Landcaller's Bindings
 								i(200359),	-- Lost Landcaller's Laena
@@ -174,7 +174,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, NORMAL_RAID),
+							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200385),	-- Bracers of the Awakened
 								i(200384),	-- Chain of the Awakened
@@ -183,7 +183,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, NORMAL_RAID),
+							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200393),	-- Stormwing Harrier's Belt
 								i(200395),	-- Stormwing Harrier's Plumage
@@ -192,7 +192,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, NORMAL_RAID),
+							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200323),	-- Crystal Scholar's Cape
 								i(200321),	-- Crystal Scholar's Cinch
@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, NORMAL_RAID),
+							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200367),	-- Cuffs of the Waking Fist
 								i(200368),	-- Drape of the Waking Fist
@@ -210,7 +210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, NORMAL_RAID),
+							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200421),	-- Virtuous Silver Bracers
 								i(200422),	-- Virtuous Silver Cloak
@@ -219,7 +219,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, NORMAL_RAID),
+							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200332),	-- Draconic Hierophant's Drape
 								i(200330),	-- Draconic Hierophant's Sash
@@ -228,7 +228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, NORMAL_RAID),
+							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200377),	-- Vault Delver's Camouflage
 								i(200370),	-- Vault Delver's Shinguards
@@ -237,7 +237,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, NORMAL_RAID),
+							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200403),	-- Cuffs of Infused Earth
 								i(200402),	-- Faulds of Infused Earth
@@ -246,7 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, NORMAL_RAID),
+							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200339),	-- Scalesworn Cultist's Girdle
 								i(200341),	-- Scalesworn Cultist's Runedrape
@@ -255,7 +255,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, NORMAL_RAID),
+							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(200424),	-- Boots of the Walking Mountain
 								i(200430),	-- Bracers of the Walking Mountain
@@ -265,11 +265,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(HEROIC_RAID, {
+				d(DIFFICULTY.RAID.HEROIC, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["bonusID"] = 1 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, HEROIC_RAID),
+							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200413),	-- Drape of the Haunted Frostbrood
 								i(200411),	-- Girdle of the Haunted Frostbrood
@@ -278,7 +278,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, HEROIC_RAID),
+							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200343),	-- Skybound Avenger's Boots
 								i(200350),	-- Skybound Avenger's Cape
@@ -287,7 +287,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, HEROIC_RAID),
+							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200358),	-- Lost Landcaller's Bindings
 								i(200359),	-- Lost Landcaller's Laena
@@ -296,7 +296,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, HEROIC_RAID),
+							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200385),	-- Bracers of the Awakened
 								i(200384),	-- Chain of the Awakened
@@ -305,7 +305,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, HEROIC_RAID),
+							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200393),	-- Stormwing Harrier's Belt
 								i(200395),	-- Stormwing Harrier's Plumage
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, HEROIC_RAID),
+							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200323),	-- Crystal Scholar's Cape
 								i(200321),	-- Crystal Scholar's Cinch
@@ -323,7 +323,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, HEROIC_RAID),
+							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200367),	-- Cuffs of the Waking Fist
 								i(200368),	-- Drape of the Waking Fist
@@ -332,7 +332,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, HEROIC_RAID),
+							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200421),	-- Virtuous Silver Bracers
 								i(200422),	-- Virtuous Silver Cloak
@@ -341,7 +341,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, HEROIC_RAID),
+							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200332),	-- Draconic Hierophant's Drape
 								i(200330),	-- Draconic Hierophant's Sash
@@ -350,7 +350,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, HEROIC_RAID),
+							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200377),	-- Vault Delver's Camouflage
 								i(200370),	-- Vault Delver's Shinguards
@@ -359,7 +359,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, HEROIC_RAID),
+							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200403),	-- Cuffs of Infused Earth
 								i(200402),	-- Faulds of Infused Earth
@@ -368,7 +368,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, HEROIC_RAID),
+							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200339),	-- Scalesworn Cultist's Girdle
 								i(200341),	-- Scalesworn Cultist's Runedrape
@@ -377,7 +377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, HEROIC_RAID),
+							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(200424),	-- Boots of the Walking Mountain
 								i(200430),	-- Bracers of the Walking Mountain
@@ -387,11 +387,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(MYTHIC_RAID, {
+				d(DIFFICULTY.RAID.MYTHIC, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["bonusID"] = 450 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, MYTHIC_RAID),
+							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200413),	-- Drape of the Haunted Frostbrood
 								i(200411),	-- Girdle of the Haunted Frostbrood
@@ -400,7 +400,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, MYTHIC_RAID),
+							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200343),	-- Skybound Avenger's Boots
 								i(200350),	-- Skybound Avenger's Cape
@@ -409,7 +409,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, MYTHIC_RAID),
+							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200358),	-- Lost Landcaller's Bindings
 								i(200359),	-- Lost Landcaller's Laena
@@ -418,7 +418,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, MYTHIC_RAID),
+							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200385),	-- Bracers of the Awakened
 								i(200384),	-- Chain of the Awakened
@@ -427,7 +427,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, MYTHIC_RAID),
+							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200393),	-- Stormwing Harrier's Belt
 								i(200395),	-- Stormwing Harrier's Plumage
@@ -436,7 +436,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, MYTHIC_RAID),
+							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200323),	-- Crystal Scholar's Cape
 								i(200321),	-- Crystal Scholar's Cinch
@@ -445,7 +445,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, MYTHIC_RAID),
+							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200367),	-- Cuffs of the Waking Fist
 								i(200368),	-- Drape of the Waking Fist
@@ -454,7 +454,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, MYTHIC_RAID),
+							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200421),	-- Virtuous Silver Bracers
 								i(200422),	-- Virtuous Silver Cloak
@@ -463,7 +463,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, MYTHIC_RAID),
+							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200332),	-- Draconic Hierophant's Drape
 								i(200330),	-- Draconic Hierophant's Sash
@@ -472,7 +472,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, MYTHIC_RAID),
+							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200377),	-- Vault Delver's Camouflage
 								i(200370),	-- Vault Delver's Shinguards
@@ -481,7 +481,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, MYTHIC_RAID),
+							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200403),	-- Cuffs of Infused Earth
 								i(200402),	-- Faulds of Infused Earth
@@ -490,7 +490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, MYTHIC_RAID),
+							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200339),	-- Scalesworn Cultist's Girdle
 								i(200341),	-- Scalesworn Cultist's Runedrape
@@ -499,7 +499,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, MYTHIC_RAID),
+							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(200424),	-- Boots of the Walking Mountain
 								i(200430),	-- Bracers of the Walking Mountain
@@ -511,11 +511,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			}),
 			header(HEADERS.LFGDungeon, ABERRUS_THE_SHADOWED_CRUCIBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-				d(LFR_RAID, {
+				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, LFR_RAID),
+							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
@@ -524,7 +524,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, LFR_RAID),
+							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
@@ -533,7 +533,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, LFR_RAID),
+							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
@@ -542,7 +542,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, LFR_RAID),
+							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
@@ -551,7 +551,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, LFR_RAID),
+							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
@@ -560,7 +560,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, LFR_RAID),
+							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
@@ -569,7 +569,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, LFR_RAID),
+							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
@@ -578,7 +578,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, LFR_RAID),
+							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
@@ -587,7 +587,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, LFR_RAID),
+							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
@@ -596,7 +596,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, LFR_RAID),
+							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
@@ -605,7 +605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, LFR_RAID),
+							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
@@ -614,7 +614,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, LFR_RAID),
+							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
@@ -623,7 +623,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, LFR_RAID),
+							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
@@ -633,11 +633,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(NORMAL_RAID, {
+				d(DIFFICULTY.RAID.NORMAL, {
 					["description"] = "",
 					["g"] = {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
@@ -646,7 +646,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
@@ -655,7 +655,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
@@ -664,7 +664,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
@@ -673,7 +673,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
@@ -682,7 +682,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
@@ -691,7 +691,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
@@ -700,7 +700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
@@ -709,7 +709,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
@@ -718,7 +718,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
@@ -727,7 +727,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
@@ -736,7 +736,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
@@ -745,7 +745,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, NORMAL_RAID),
+							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
@@ -755,11 +755,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					},
 				}),
-				d(HEROIC_RAID, {
+				d(DIFFICULTY.RAID.HEROIC, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
@@ -768,7 +768,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
@@ -777,7 +777,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
@@ -786,7 +786,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
@@ -795,7 +795,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
@@ -804,7 +804,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
@@ -813,7 +813,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
@@ -822,7 +822,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
@@ -831,7 +831,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
@@ -840,7 +840,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
@@ -849,7 +849,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
@@ -858,7 +858,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
@@ -867,7 +867,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, HEROIC_RAID),
+							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
@@ -877,11 +877,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(MYTHIC_RAID, {
+				d(DIFFICULTY.RAID.MYTHIC, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
@@ -890,7 +890,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
@@ -899,7 +899,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
@@ -908,7 +908,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
@@ -917,7 +917,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
@@ -926,7 +926,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
@@ -935,7 +935,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
@@ -944,7 +944,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
@@ -953,7 +953,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
@@ -962,7 +962,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
@@ -971,7 +971,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
@@ -980,7 +980,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
@@ -989,7 +989,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, MYTHIC_RAID),
+							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
@@ -1001,11 +1001,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			})),
 			header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				d(LFR_RAID, {
+				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
@@ -1014,7 +1014,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
@@ -1023,7 +1023,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
@@ -1032,7 +1032,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
@@ -1041,7 +1041,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
@@ -1050,7 +1050,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
@@ -1059,7 +1059,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
@@ -1068,7 +1068,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
@@ -1077,7 +1077,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
@@ -1086,7 +1086,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
@@ -1095,7 +1095,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
@@ -1104,7 +1104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
@@ -1113,7 +1113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, LFR_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.LFR),
 							["g"] = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots
@@ -1123,11 +1123,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(NORMAL_RAID, {
+				d(DIFFICULTY.RAID.NORMAL, {
 					["description"] = "",
 					["g"] = {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
@@ -1136,7 +1136,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
@@ -1145,7 +1145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
@@ -1154,7 +1154,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
@@ -1163,7 +1163,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
@@ -1172,7 +1172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
@@ -1181,7 +1181,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
@@ -1190,7 +1190,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
@@ -1199,7 +1199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
@@ -1208,7 +1208,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
@@ -1217,7 +1217,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
@@ -1226,7 +1226,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
@@ -1235,7 +1235,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, NORMAL_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.NORMAL),
 							["g"] = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots
@@ -1245,11 +1245,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					},
 				}),
-				d(HEROIC_RAID, {
+				d(DIFFICULTY.RAID.HEROIC, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
@@ -1258,7 +1258,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
@@ -1267,7 +1267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
@@ -1276,7 +1276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
@@ -1285,7 +1285,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
@@ -1294,7 +1294,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
@@ -1303,7 +1303,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
@@ -1312,7 +1312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
@@ -1321,7 +1321,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
@@ -1330,7 +1330,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
@@ -1339,7 +1339,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
@@ -1348,7 +1348,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
@@ -1357,7 +1357,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, HEROIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.HEROIC),
 							["g"] = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots
@@ -1367,11 +1367,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(MYTHIC_RAID, {
+				d(DIFFICULTY.RAID.MYTHIC, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
@@ -1380,7 +1380,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
@@ -1389,7 +1389,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
@@ -1398,7 +1398,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
@@ -1407,7 +1407,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
@@ -1416,7 +1416,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
@@ -1425,7 +1425,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
@@ -1434,7 +1434,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
@@ -1443,7 +1443,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
@@ -1452,7 +1452,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
@@ -1461,7 +1461,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
@@ -1470,7 +1470,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
@@ -1479,7 +1479,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, MYTHIC_RAID),
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.MYTHIC),
 							["g"] = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots

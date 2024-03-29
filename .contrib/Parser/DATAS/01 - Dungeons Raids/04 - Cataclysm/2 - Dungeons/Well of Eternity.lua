@@ -92,7 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, sharedData({ ["modID"] = 0, }, {
+			d(DIFFICULTY.DUNGEON.HEROIC, sharedData({ ["modID"] = 0, }, {
 				e(290, {	-- Peroth'arn
 					["crs"] = { 55085 },	-- Peroth'arn
 					["groups"] = {

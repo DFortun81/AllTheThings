@@ -568,7 +568,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 		}),
 		-- #if AFTER CATA
-		d(NORMAL_DUNGEON, {
+		d(DIFFICULTY.DUNGEON.NORMAL, {
 		-- #endif
 			n(3586, {	-- Miner Johnson
 				["description"] = "This is a rare that is not always present.",
@@ -761,7 +761,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		-- #if AFTER CATA
 		}),
 		-- #endif
-		d(HEROIC_DUNGEON, {
+		d(DIFFICULTY.DUNGEON.HEROIC, {
 			["timeline"] = { "added 4.0.3" },
 			["lvl"] = 85,
 			["groups"] = {

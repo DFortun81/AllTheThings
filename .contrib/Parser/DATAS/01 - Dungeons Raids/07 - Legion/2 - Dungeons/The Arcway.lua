@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137712),	-- Schematic: Tactical Headgun [Rank 3] (RECIPE!)
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				cr(98203, e(1497, {	-- Ivanyr
 					i(134269),	-- Arcane Defender's Belt
 					i(134501),	-- Crackling Overcharge Chestguard
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137420),	-- Split Second
 				})),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				cr(98203, e(1497, {	-- Ivanyr
 					ach(10773),	-- Arcanic Cling
 					i(134269),	-- Arcane Defender's Belt

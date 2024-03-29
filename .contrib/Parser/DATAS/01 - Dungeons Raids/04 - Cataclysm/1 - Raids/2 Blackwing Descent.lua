@@ -16,22 +16,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(4842, {	-- Blackwing Descent
 					crit(13537, {
-						["_encounter"] = { 170, NORMAL_DUNGEON },	-- Magmaw
+						["_encounter"] = { 170, DIFFICULTY.DUNGEON.NORMAL },	-- Magmaw
 					}),
 					crit(13538, {
-						["_encounter"] = { 169, NORMAL_DUNGEON },	-- Omnotron Defense System
+						["_encounter"] = { 169, DIFFICULTY.DUNGEON.NORMAL },	-- Omnotron Defense System
 					}),
 					crit(13539, {
-						["_encounter"] = { 173, NORMAL_DUNGEON },	-- Maloriak
+						["_encounter"] = { 173, DIFFICULTY.DUNGEON.NORMAL },	-- Maloriak
 					}),
 					crit(13540, {
-						["_encounter"] = { 171, NORMAL_DUNGEON },	-- Atramedes
+						["_encounter"] = { 171, DIFFICULTY.DUNGEON.NORMAL },	-- Atramedes
 					}),
 					crit(13541, {
-						["_encounter"] = { 172, NORMAL_DUNGEON },	-- Chimaeron
+						["_encounter"] = { 172, DIFFICULTY.DUNGEON.NORMAL },	-- Chimaeron
 					}),
 					crit(13542, {
-						["_encounter"] = { 174, NORMAL_DUNGEON },	-- Nefarian's End
+						["_encounter"] = { 174, DIFFICULTY.DUNGEON.NORMAL },	-- Nefarian's End
 					}),
 				}),
 				ach(4985),	-- Blackwing Descent Guild Run
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					e(170, {	-- Magmaw
@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
 					e(170, {	-- Magmaw

@@ -11,22 +11,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(482, {	-- Drak'Tharon Keep
 					crit(5443, {	-- Trollgore
-						["_encounter"] = { 588, NORMAL_DUNGEON },
+						["_encounter"] = { 588, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5444, {	-- Novos the Summoner
-						["_encounter"] = { 589, NORMAL_DUNGEON },
+						["_encounter"] = { 589, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5445, {	-- King Dred
-						["_encounter"] = { 590, NORMAL_DUNGEON },
+						["_encounter"] = { 590, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(9098, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, NORMAL_DUNGEON },
+						["_encounter"] = { 591, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17292, {	-- Defense Protocol Alpha: Drak'Tharon Keep
 					crit(57735, {	-- Trollgore
-						["_encounter"] = { 588, HEROIC_DUNGEON },
+						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39241),	-- Dark Shroud of the Scourge
 							i(39245),	-- Demise
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57736, {	-- Novos the Summoner
-						["_encounter"] = { 589, HEROIC_DUNGEON },
+						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39244),	-- Ring of the Fated
 							i(39236),	-- Trespasser's Boots
@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57737, {	-- King Dred
-						["_encounter"] = { 590, HEROIC_DUNGEON },
+						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39239),	-- Chestplate of the Risen Soldier
 							i(39240),	-- Noth's Curse
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57738, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, HEROIC_DUNGEON },
+						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(43995),	-- Enamored Cowl
 							i(39416),	-- Kel'Thuzad's Reach
@@ -69,27 +69,27 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18594, {	-- Defense Protocol Beta: Drak'Tharon Keep
 					crit(60587, {	-- Trollgore
-						["_encounter"] = { 588, HEROIC_DUNGEON },
+						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45697),	-- Shoulderguards of the Solemn Watch
 							i(45698),	-- Sabatons of the Iron Watcher
 						},
 					}),
 					crit(60588, {	-- Novos the Summoner
-						["_encounter"] = { 589, HEROIC_DUNGEON },
+						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45703),	-- Spark of Hope
 						},
 					}),
 					crit(60589, {	-- King Dred
-						["_encounter"] = { 590, HEROIC_DUNGEON },
+						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45975),	-- Cable of the Metrognome
 							i(45700),	-- Stoneguard
 						},
 					}),
 					crit(60590, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, HEROIC_DUNGEON },
+						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(45303),	-- Band of Draconic Guile
@@ -100,25 +100,25 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19431, {	-- Defense Protocol Gamma: Drak'Tharon Keep
 					crit(63334, {	-- Trollgore
-						["_encounter"] = { 588, HEROIC_DUNGEON },
+						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63335, {	-- Novos the Summoner
-						["_encounter"] = { 589, HEROIC_DUNGEON },
+						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63334, {	-- King Dred
-						["_encounter"] = { 590, HEROIC_DUNGEON },
+						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63337, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, HEROIC_DUNGEON },
+						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -127,16 +127,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #endif
 				ach(493,  {	-- Heroic: Drak'Tharon Keep
 					crit(6813, {	-- Trollgore
-						["_encounter"] = { 588, HEROIC_DUNGEON },
+						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6814, {	-- Novos the Summoner
-						["_encounter"] = { 589, HEROIC_DUNGEON },
+						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6815, {	-- King Dred
-						["_encounter"] = { 590, HEROIC_DUNGEON },
+						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(9261, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, HEROIC_DUNGEON },
+						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -228,7 +228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				-- #if BEFORE 7.3.5
 				n(ZONE_DROPS, {
 					-- #if AFTER 7.3.5
@@ -328,7 +328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					-- #if BEFORE 7.3.5

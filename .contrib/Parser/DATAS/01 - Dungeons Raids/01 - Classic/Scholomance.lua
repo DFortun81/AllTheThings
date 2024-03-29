@@ -1214,7 +1214,7 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 }));
 -- #endif
 
-table.insert(SCHOLOMANCE_GROUPS, d(NORMAL_DUNGEON, {
+table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	n(QUESTS, sharedData({["modID"] = 0},{
 		q(28756, {	-- Aberrations of Bone
 			["qg"] = 49856,	-- Lord Raymond George
@@ -1376,7 +1376,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(NORMAL_DUNGEON, {
 		},
 	})),
 }));
-table.insert(SCHOLOMANCE_GROUPS, d(HEROIC_DUNGEON, {
+table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	["timeline"] = { "added 5.0.4" },
 	["lvl"] = 90,
 	["groups"] = {

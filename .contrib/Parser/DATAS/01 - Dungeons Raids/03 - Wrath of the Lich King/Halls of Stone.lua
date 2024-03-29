@@ -10,29 +10,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ACHIEVEMENTS, {
 				ach(485, {	-- Halls of Stone
 					crit(5452, {	-- Maiden of Grief
-						["_encounter"] = { 605, NORMAL_DUNGEON },
+						["_encounter"] = { 605, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(6935, {	-- Tribunal of Ages
-						["_encounter"] = { 606, NORMAL_DUNGEON },
+						["_encounter"] = { 606, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5453, {	-- Krystallus
-						["_encounter"] = { 604, NORMAL_DUNGEON },
+						["_encounter"] = { 604, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5628, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, NORMAL_DUNGEON },
+						["_encounter"] = { 607, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5454, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, NORMAL_DUNGEON },
+						["_encounter"] = { 607, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17297, {	-- Defense Protocol Alpha: Halls of Stone
 					crit(57752, {	-- Maiden of Grief
-						["_encounter"] = { 605, HEROIC_DUNGEON },
+						["_encounter"] = { 605, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39215),	-- Boots of the Follower
 							i(39216),	-- Sash of Mortal Desire
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57749, {	-- Krystallus
-						["_encounter"] = { 604, HEROIC_DUNGEON },
+						["_encounter"] = { 604, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39195),	-- Bracers of Lost Sentiments
 							i(39199),	-- Watchful Eye
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57751, {	-- Tribunal of Ages
-						["_encounter"] = { 606, HEROIC_DUNGEON },
+						["_encounter"] = { 606, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(39197),	-- Gauntlets of the Master
 							i(39200),	-- Grieving Spellblade
@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						},
 					}),
 					crit(57748, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, HEROIC_DUNGEON },
+						["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(43993),	-- Greatring of Collision
 							i(40489),	-- Greatstaff of the Nexus
@@ -75,27 +75,27 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18597, {	-- Defense Protocol Beta: Halls of Stone
 					crit(60600, {	-- Maiden of Grief
-						["_encounter"] = { 605, HEROIC_DUNGEON },
+						["_encounter"] = { 605, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45895),	-- Belt of the Blood Pit
 						},
 					}),
 					crit(60598, {	-- Krystallus
-						["_encounter"] = { 604, HEROIC_DUNGEON },
+						["_encounter"] = { 604, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(45927),	-- Handwraps of Resonance
 							i(45892),	-- Legacy of Thunder
 						},
 					}),
 					crit(60599, {	-- Tribunal of Ages
-						["_encounter"] = { 606, HEROIC_DUNGEON },
+						["_encounter"] = { 606, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							i(46340),	-- Adamant Handguards
 							i(45894),	-- Leggings of Unstable Discharge
 						},
 					}),
 					crit(60597, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, HEROIC_DUNGEON },
+						["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
 							i(46345),	-- Bracers of Righteous Reformation
@@ -106,25 +106,25 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19434, {	-- Defense Protocol Gamma: Halls of Stone
 					crit(63347, {	-- Maiden of Grief
-						["_encounter"] = { 605, HEROIC_DUNGEON },
+						["_encounter"] = { 605, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63345, {	-- Krystallus
-						["_encounter"] = { 604, HEROIC_DUNGEON },
+						["_encounter"] = { 604, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63346, {	-- Tribunal of Ages
-						["_encounter"] = { 606, HEROIC_DUNGEON },
+						["_encounter"] = { 606, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
 					}),
 					crit(63347, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, HEROIC_DUNGEON },
+						["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
 						["groups"] = {
 
 						},
@@ -174,7 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ZONE_DROPS, {
 				i(42780),	-- Relics of Ulduar
 			}),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(ZONE_DROPS, {
 					i(35683),	-- Palladium Ring
 					i(35682),	-- Rune Giant Bindings
@@ -258,7 +258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {

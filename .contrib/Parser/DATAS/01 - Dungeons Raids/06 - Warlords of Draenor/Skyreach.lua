@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["maps"] = { 601, 602 },
 		["coord"] = { 35.5, 33.6, SPIRES_OF_ARAK },
 		["groups"] = {
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(965, {	-- Ranjit
 					["crs"] = { 75964 },
 					["sym"] = {
@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(965, {	-- Ranjit
 					["crs"] = { 75964 },
 					["sym"] = {
@@ -132,7 +132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(965, {	-- Ranjit
 					["crs"] = { 75964 },
 					["sym"] = {

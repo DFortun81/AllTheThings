@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {

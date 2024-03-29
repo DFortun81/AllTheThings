@@ -1,13 +1,30 @@
 -- Difficulties
-NORMAL_DUNGEON = 1;
-HEROIC_DUNGEON = 2;
-RAID_FINDER = 7;
-MYTHIC_DUNGEON = 23;
-TIMEWALKING_DUNGEON = 24;
-LFR_RAID = 17;
-NORMAL_RAID = 14;
-HEROIC_RAID = 15;
-MYTHIC_RAID = 16;
+DIFFICULTY = {
+	DUNGEON = {
+		NORMAL = 1,
+		HEROIC = 2,
+		MYTHIC = 23,
+		TIMEWALKING = 24,
+	},
+	RAID = {
+		FINDER = 7,
+		LFR = 17,
+		NORMAL = 14,
+		HEROIC = 15,
+		MYTHIC = 16,
+	},
+};
+
+-- Deprecated constants
+NORMAL_DUNGEON = DIFFICULTY.DUNGEON.NORMAL;
+HEROIC_DUNGEON = DIFFICULTY.DUNGEON.HEROIC;
+RAID_FINDER = DIFFICULTY.RAID.FINDER;
+MYTHIC_DUNGEON = DIFFICULTY.DUNGEON.MYTHIC;
+TIMEWALKING_DUNGEON = DIFFICULTY.DUNGEON.TIMEWALKING;
+LFR_RAID = DIFFICULTY.RAID.LFR;
+NORMAL_RAID = DIFFICULTY.RAID.NORMAL;
+HEROIC_RAID = DIFFICULTY.RAID.HEROIC;
+MYTHIC_RAID = DIFFICULTY.RAID.MYTHIC;
 
 -- Helper Functions
 local multiDifficulties,uniqueDifficultyID = {}, -1;
@@ -34,32 +51,66 @@ function GetOrCreateMultiDifficulty(ids)
 end
 
 -- Raid Multi-Difficulties
-ALL_DIFFICULTIES_RAID = GetOrCreateMultiDifficulty({LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID});
-NORMAL_HEROIC_RAID = GetOrCreateMultiDifficulty({NORMAL_RAID,HEROIC_RAID});
-NORMAL_PLUS_RAID = GetOrCreateMultiDifficulty({NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID});
-HEROIC_PLUS_RAID = GetOrCreateMultiDifficulty({HEROIC_RAID,MYTHIC_RAID});
+NORMAL_HEROIC_RAID = GetOrCreateMultiDifficulty({DIFFICULTY.RAID.NORMAL,DIFFICULTY.RAID.HEROIC});
+NORMAL_PLUS_RAID = GetOrCreateMultiDifficulty({DIFFICULTY.RAID.NORMAL,DIFFICULTY.RAID.HEROIC,DIFFICULTY.RAID.MYTHIC});
+HEROIC_PLUS_RAID = GetOrCreateMultiDifficulty({DIFFICULTY.RAID.HEROIC,DIFFICULTY.RAID.MYTHIC});
 
 -- Dungeon Multi-Difficulties
-NORMAL_PLUS_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON});
-NORMAL_HEROIC_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON});
-NORMAL_MYTHIC_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,MYTHIC_DUNGEON});
-HEROIC_PLUS_DUNGEON = GetOrCreateMultiDifficulty({HEROIC_DUNGEON,MYTHIC_DUNGEON});
+NORMAL_PLUS_DUNGEON = GetOrCreateMultiDifficulty({
+	DIFFICULTY.DUNGEON.NORMAL,
+	DIFFICULTY.DUNGEON.HEROIC,
+	DIFFICULTY.DUNGEON.MYTHIC
+});
+NORMAL_HEROIC_DUNGEON = GetOrCreateMultiDifficulty({
+	DIFFICULTY.DUNGEON.NORMAL,
+	DIFFICULTY.DUNGEON.HEROIC
+});
+NORMAL_MYTHIC_DUNGEON = GetOrCreateMultiDifficulty({
+	DIFFICULTY.DUNGEON.NORMAL,
+	DIFFICULTY.DUNGEON.MYTHIC
+});
+HEROIC_PLUS_DUNGEON = GetOrCreateMultiDifficulty({
+	DIFFICULTY.DUNGEON.HEROIC,
+	DIFFICULTY.DUNGEON.MYTHIC
+});
+
+DIFFICULTY.DUNGEON.MULTI = {
+	ALL = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.NORMAL,
+		DIFFICULTY.DUNGEON.HEROIC,
+		DIFFICULTY.DUNGEON.MYTHIC
+	}),
+	NORMAL_PLUS = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.NORMAL,
+		DIFFICULTY.DUNGEON.HEROIC,
+		DIFFICULTY.DUNGEON.MYTHIC
+	}),
+};
+
+DIFFICULTY.RAID.MULTI = {
+	ALL = GetOrCreateMultiDifficulty({
+		DIFFICULTY.RAID.LFR,
+		DIFFICULTY.RAID.NORMAL,
+		DIFFICULTY.RAID.HEROIC,
+		DIFFICULTY.RAID.MYTHIC
+	}),
+};
 
 -- Helper Tables
 DifficultyDB = {
-	[NORMAL_DUNGEON] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[HEROIC_DUNGEON] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
+	[DIFFICULTY.DUNGEON.NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[DIFFICULTY.DUNGEON.HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
 	[3] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
 	[4] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
 	[5] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
 	[6] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[RAID_FINDER] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
-	[NORMAL_RAID] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
-	[HEROIC_RAID] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
-	[MYTHIC_RAID] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
-	[LFR_RAID] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
+	[DIFFICULTY.RAID.FINDER] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
+	[DIFFICULTY.RAID.NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
+	[DIFFICULTY.RAID.HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
+	[DIFFICULTY.RAID.MYTHIC] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
+	[DIFFICULTY.RAID.LFR] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
 	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event unused?
-	[MYTHIC_DUNGEON] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
-	[TIMEWALKING_DUNGEON] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
+	[DIFFICULTY.DUNGEON.MYTHIC] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
+	[DIFFICULTY.DUNGEON.TIMEWALKING] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },	-- unused?
 };

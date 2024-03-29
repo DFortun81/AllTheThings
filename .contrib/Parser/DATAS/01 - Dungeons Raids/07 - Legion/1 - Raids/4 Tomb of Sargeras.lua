@@ -19,37 +19,37 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(ACHIEVEMENTS, {
 				ach(11787, {    -- The Gates of Hell
                     crit(36469, {    -- Goroth
-                        ["_encounter"] = { 1862, LFR_RAID },
+                        ["_encounter"] = { 1862, DIFFICULTY.RAID.LFR },
                     }),
                     crit(36470, {    -- Harjatan
-                        ["_encounter"] = { 1856, LFR_RAID },
+                        ["_encounter"] = { 1856, DIFFICULTY.RAID.LFR },
                     }),
                     crit(36471, {    -- Mistress Sassz'ine
-                        ["_encounter"] = { 1861, LFR_RAID },
+                        ["_encounter"] = { 1861, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11788, {    -- Wailing Halls
                     crit(36472, {    -- Demonic Inquisition
-                        ["_encounter"] = { 1867, LFR_RAID },
+                        ["_encounter"] = { 1867, DIFFICULTY.RAID.LFR },
                     }),
                     crit(36473, {    -- Sisters of the Moon
-                        ["_encounter"] = { 1903, LFR_RAID },
+                        ["_encounter"] = { 1903, DIFFICULTY.RAID.LFR },
                     }),
                     crit(36474, {    -- The Desolate Host
-                        ["_encounter"] = { 1896, LFR_RAID },
+                        ["_encounter"] = { 1896, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11789, {    -- Chamber of the Avatar
                     crit(36475, {    -- Maiden of Vigilance
-                        ["_encounter"] = { 1897, LFR_RAID },
+                        ["_encounter"] = { 1897, DIFFICULTY.RAID.LFR },
                     }),
                     crit(36476, {    -- Fallen Avatar
-                        ["_encounter"] = { 1873, LFR_RAID },
+                        ["_encounter"] = { 1873, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11790, {    -- Deceiver's Fall
                     crit(36477, {    -- Kil'jaeden
-                        ["_encounter"] = { 1898, LFR_RAID },
+                        ["_encounter"] = { 1898, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11763, {	-- Glory of the Tomb Raider
@@ -142,11 +142,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(146413),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 3]
 				},
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
@@ -455,7 +455,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(47725, {	-- Tomb of Sargeras: Aegwynn's Path (Normal)
 						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -755,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(47726, {	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
 						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
@@ -1040,7 +1040,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(47727, {	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",

@@ -34,52 +34,52 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				ach(10023, {	-- Hellbreach
 					crit(28075, {	-- Hellfire Assault
-						["_encounter"] = { 1426, LFR_RAID },
+						["_encounter"] = { 1426, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28076, {	-- Iron Reaver
-						["_encounter"] = { 1425, LFR_RAID },
+						["_encounter"] = { 1425, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28077, {	-- Kormrok
-						["_encounter"] = { 1392, LFR_RAID },
+						["_encounter"] = { 1392, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(10024, {	-- Halls of Blood
 					crit(28078, {	-- Hellfire High Council
-						["_encounter"] = { 1432, LFR_RAID },
+						["_encounter"] = { 1432, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28079, {	-- Kilrogg Deadeye
-						["_encounter"] = { 1396, LFR_RAID },
+						["_encounter"] = { 1396, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28080, {	-- Gorefiend
-						["_encounter"] = { 1372, LFR_RAID },
+						["_encounter"] = { 1372, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(10025, {	-- Bastion of Shadows
 					crit(28081, {	-- Shadow-Lord Iskar
-						["_encounter"] = { 1433, LFR_RAID },
+						["_encounter"] = { 1433, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28082, {	-- Socrethar the Eternal
-						["_encounter"] = { 1427, LFR_RAID },
+						["_encounter"] = { 1427, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28083, {	-- Tyrant Velhari
-						["_encounter"] = { 1394, LFR_RAID },
+						["_encounter"] = { 1394, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(10020, {	-- Destructor's Rise
 					crit(28067, {	-- Fel Lord Zakuun
-						["_encounter"] = { 1391, LFR_RAID },
+						["_encounter"] = { 1391, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28068, {	-- Xhul'horac
-						["_encounter"] = { 1447, LFR_RAID },
+						["_encounter"] = { 1447, DIFFICULTY.RAID.LFR },
 					}),
 					crit(28069, {	-- Mannoroth
-						["_encounter"] = { 1395, LFR_RAID },
+						["_encounter"] = { 1395, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(10019, {	-- The Black Gate
 					crit(28066, {	-- Archimonde
 						["provider"] = { "n", 91331 },	-- Archimonde
-						["_encounter"] = { 1438, LFR_RAID },
+						["_encounter"] = { 1438, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 			}),
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					})),
 				},
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
+			d(DIFFICULTY.RAID.MULTI.ALL, {
 				cr(90284, e(1425, {	-- Iron Reaver
 				})),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
@@ -113,10 +113,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 				})),
 			}),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				header(HEADERS.Achievement, 10023, {	-- Hellbreach
 					cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 						i(128092),	-- Wicked Bonecarver's Knife
@@ -429,7 +429,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(39502, {	-- The Fel Spire
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -925,7 +925,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(124516),	-- Tome of Shifting Words
 				})),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(40962, {	-- Dark Waters
 						["qg"] = 102432,	-- Malfurion Stormrage
@@ -1436,7 +1436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(124516),	-- Tome of Shifting Words
 				})),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(39505, {	-- The Fel Spire (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar

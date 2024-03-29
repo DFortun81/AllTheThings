@@ -25,29 +25,29 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(ACHIEVEMENTS, {
 				ach(10818, {    -- Darkbough
                     crit(31428, {    -- Nythendra
-                        ["_encounter"] = { 1703, LFR_RAID },
+                        ["_encounter"] = { 1703, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31429, {    -- Elerethe Renferal
-                        ["_encounter"] = { 1744, LFR_RAID },
+                        ["_encounter"] = { 1744, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31430, {    -- Il'gynoth, Heart of Corruption
-                        ["_encounter"] = { 1738, LFR_RAID },
+                        ["_encounter"] = { 1738, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(10819, {    -- Tormented Guardians
                     crit(31431, {    -- Ursoc
-                        ["_encounter"] = { 1667, LFR_RAID },
+                        ["_encounter"] = { 1667, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31433, {    -- Dragons of Nightmare
-                        ["_encounter"] = { 1704, LFR_RAID },
+                        ["_encounter"] = { 1704, DIFFICULTY.RAID.LFR },
                     }),
                     crit(31432, {    -- Cenarius
-                        ["_encounter"] = { 1750, LFR_RAID },
+                        ["_encounter"] = { 1750, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(10820, {    -- Rift of Aln
                     crit(31434, {    -- Xavius
-                        ["_encounter"] = { 1726, LFR_RAID },
+                        ["_encounter"] = { 1726, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(10866),	-- The Emerald Nightmare Guild Run
@@ -57,11 +57,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["description"] = "Once you defeat Xavius these will spawn in the room after him."
 				}),
 			})),
-			d(LFR_RAID, {	-- Queue NPC
+			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(LFR_RAID, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
@@ -298,7 +298,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(NORMAL_RAID, {
+			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(44283, {	-- The Emerald Nightmare: Piercing the Veil (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -500,7 +500,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(139268),	-- Nightmarish Elm Branch
 				})),
 			}),
-			d(HEROIC_RAID, {
+			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
 						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
@@ -670,7 +670,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(139268),	-- Nightmarish Elm Branch
 				})),
 			}),
-			d(MYTHIC_RAID, {
+			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
 						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",

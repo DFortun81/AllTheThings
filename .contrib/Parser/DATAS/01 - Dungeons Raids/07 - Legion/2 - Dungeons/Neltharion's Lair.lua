@@ -87,7 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				i(205974),	-- Monstrous GLuttony
 				i(205973),	-- Rod of Crystalline Energies
 			})),
-			d(NORMAL_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.NORMAL, {
 				cr(91003, e(1662, {	-- Rokmora
 					i(134481),	-- Boulderbuckle Strap
 					i(137337),	-- Deepfurrow Bracers
@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(127928),	-- Recipe: Unbending Potion [Rank 2] (RECIPE!)
 				})),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(91003, e(1662, {	-- Rokmora
@@ -216,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 				},
 			}),
-			d(MYTHIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(91003, e(1662, {	-- Rokmora

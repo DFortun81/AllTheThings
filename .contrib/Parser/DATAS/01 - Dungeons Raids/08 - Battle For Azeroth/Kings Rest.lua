@@ -24,7 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					["lvl"] = 120,
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
+			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(2165, {	-- The Golden Serpent
 					["crs"] = { 135322 },	-- The Golden Serpent
 					["g"] = {
@@ -88,8 +88,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					},
 				}),
 			}),
-			d(MYTHIC_DUNGEON, {
-				["difficulties"] = { 8, MYTHIC_DUNGEON },
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
 				["g"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
 						crit(41269, {	-- First trinket found
