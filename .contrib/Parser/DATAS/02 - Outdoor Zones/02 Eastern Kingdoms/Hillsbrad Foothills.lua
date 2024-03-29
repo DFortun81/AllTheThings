@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4895, {	-- Hillsbrad Foothills Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Sludge Fields
@@ -58,8 +58,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						28237,	-- A Blight Upon the Land
+						28616,	-- Stormpike Apocalypse
+						28634,	-- Extinction
+						28636,	-- Silent of the Dwarves
+						28647,	-- The Durnholde Challenge: D-1000
+						28146,	-- Coastal Delicacies!
+						28156,	-- Deep Mine Rescue
+						28138,	-- Human Infestation
+						-- 28154,	-- Muckgill's Flipper or Something... (TODO: verify if needed)
+						28144,	-- Thieving Little Monsters!
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({
@@ -115,8 +128,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.Ravenholdt,
 				}),
 				faction(70, {	-- Syndicate
-					["description"] = "Neutral is the highest you can currently reach with the Syndicate.",
-					["collectible"] = false,
+					["description"] = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
+					["minReputation"] = { 70, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
+					["maxReputation"] = { 70, NEUTRAL },	-- Syndicate, Neutral.
 				}),
 			}),
 			-- #endif

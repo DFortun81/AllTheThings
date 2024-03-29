@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Bogpaddle
@@ -45,8 +45,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27600,	-- In With a Bang
+						27849,	-- Assault on Stonard
+						27851,	-- Cutting Supply
+						27857,	-- We're Under Attack!
+						24913,	-- Remember the Light
+						27911,	-- With Dying Breath
+						27914,	-- Blessing of the Green Dragonflight
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

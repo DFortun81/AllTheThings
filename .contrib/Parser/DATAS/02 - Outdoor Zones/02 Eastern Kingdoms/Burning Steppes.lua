@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Preparation
@@ -44,8 +44,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						28183,	-- Return to Keeshan (alliance)
+						28425,	-- Return to Ariok (horde)
+						28322,	-- The Spoils of War (alliance)
+						28456,	-- The Spoils of War (horde)
+						28286,	-- Enough Damage For One Day (alliance)
+						28441,	-- Enough Damage For One Day (horde)
+						28326,	-- Placing the Pawns (alliance)
+						28449,	-- Placing the Pawns (horde)
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

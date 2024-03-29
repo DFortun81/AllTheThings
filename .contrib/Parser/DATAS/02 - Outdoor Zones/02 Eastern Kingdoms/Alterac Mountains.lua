@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						objective(1, {
+						objective(1, {	-- 0/1 Head of Baron Vardus
 							["provider"] = { "i", 3626 },	-- Head of Baron Vardus
 							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
 							["cr"] = 2306,	-- Baron Vardus

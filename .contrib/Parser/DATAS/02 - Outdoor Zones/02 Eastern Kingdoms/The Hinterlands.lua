@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4897, {	-- Hinterlands Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38375, {	-- Quel'Danil Lodge
 							["races"] = ALLIANCE_ONLY,
@@ -198,6 +199,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26532,	-- Shadra the Venom Queen
+						26643,	-- Starvation Diet
+						26525,	-- Venomous Secrets
+						26526,	-- Hunt the Keeper
+						26516,	-- It's Ours Now
+						26521,	-- Faces of Evil
+						26524,	-- Dark Vessels
+						26492,	-- Skulk Rock Supplies
+						26491,	-- Skulk Rock Clean-Up
+						26490,	-- Prime Slime
+						26486,	-- 99 Bottles of Booze on the Beach
+						26485,	-- Snapjaws, Lad!
+						26462,	-- The Wicked Revantusk
+						26387,	-- Starvation Diet
+						26419,	-- Shadra the Venom Queen
+						26308,	-- It's Ours Now
+						26369,	-- Hunt the Keeper
+						26357,	-- Faces of Evil
+						26368,	-- Venomous Secrets
+						26309,	-- Dark Vessels
+						26238,	-- The Savage Dwarves
+						26240,	-- Stomp To My Beat
+						26212,	-- Lard Lost His Lunch
+						26225,	-- Pupellyverbos Port
+						26224,	-- Hunt the Savages
+						26211,	-- Snapjaws, Mon!
+						26210,	-- Gammerita, Mon!
+						26267,	-- Skulk Rock Clean-Up
+						26283,	-- Prime Slime
+						26268,	-- Skulk Rock Supplies
+					},
+					-- #endif
 				}),
 			}),
 			battlepets({

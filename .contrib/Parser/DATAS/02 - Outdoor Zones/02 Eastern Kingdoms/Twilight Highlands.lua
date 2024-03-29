@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4873, {	-- Fading into Twilight (Alliance)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Good News, For Once
@@ -95,13 +95,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27787,	-- Skullcrusher the Mountain
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27468,	-- Siege Tank Rescue
+						27545,	-- The Way is Open
+						27817,	-- Dropping the Hammer
+						27649,	-- A Steady Supply
+						27651,	-- Doing It Like a Dunwald
+						27642,	-- Sifting Through The Wreckage
+						27641,	-- While Meeting The Family
+						28244,	-- Eye Spy
+						28655,	-- Wild, Wild, Wildhammer Wedding
+						28413,	-- Words and Music By...
+						28247,	-- Last of Her Kind
+						27787,	-- Skullcrusher the Mountain
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Goblin Work Ethic
@@ -129,8 +144,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27788,	-- Skullcrusher the Mountain
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26337,	-- Beating the Market
+						26840,	-- Return to the Highlands
+						28595,	-- Krazz Works!
+						28133,	-- Fury Unbound
+						27945,	-- Paint it Black
+						27955,	-- Eye Spy
+						28247,	-- Last of Her Kind
+						27788,	-- Skullcrusher the Mountain
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				ach(4960, {	-- Round Three. Fight!
 					["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!

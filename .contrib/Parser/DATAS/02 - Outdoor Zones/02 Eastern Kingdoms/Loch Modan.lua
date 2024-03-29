@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4899, {	-- Loch Modan Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Road to Thelsamar
@@ -49,8 +49,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26148,	-- A Decisive Strike
+						26147,	-- Bigger and Uglier
+						25118,	-- Looking for Lurkers
+						13648,	-- WANTED: The Dark Iron Spy
+						--	two above are definitely required; unclear if these are
+						--	26145,	-- The Trogg Threat
+						--	26842,	-- Out of Gnoll-where
+						--	26860,	-- Thelsamar Blood Sausages
+						26868,	-- Axis of Awful
+						27116,	-- The Winds of Loch Modan
+						27033,	-- Skystrider's Heart
+						27037,	-- Vyrin's Revenge (#2)
+						27026,	-- Defcon: Bobcat
+						--	above definitely required; unclear if these are
+						--	27028,	-- Hornet Hunting
+						--	27030,	-- Foxtails by the Handful
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({

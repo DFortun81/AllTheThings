@@ -17,6 +17,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4907, {	-- Duskwood Quests
 					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 					["races"] = ALLIANCE_ONLY,
+					-- #if ANYCLASSIC
+					-- #if AFTER MOP
+					["groups"] = {
+						crit(1, {	-- The Legend of Stalvan
+							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
+						}),
+						crit(2, {	-- Morbent Fel
+							["sourceQuest"] = 26754,	-- Morbent's Bane
+						}),
+						crit(3, {	-- A Hermit's Errand
+							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
+						}),
+						crit(4, {	-- Mor'ladim
+							["sourceQuest"] = 26797,	-- A Daughter's Love
+						}),
+						crit(5, {	-- Citizens of Darkshire
+							["sourceQuests"] = {
+								26686,	-- Bones That Walk
+								26623,	-- Dusky Crab Cakes
+								26620,	-- Seasoned Wolf Kabobs
+								26691,	-- Worgen in the Woods
+							},
+						}),
+					},
+					-- #else
+					["sourceQuests"] = {
+						26674,	-- Mistmantle's Revenge
+						26754,	-- Morbent's Bane
+						26727,	-- The Embalmer's Revenge
+						26797,	-- A Daughter's Love
+						26686,	-- Bones That Walk
+						26623,	-- Dusky Crab Cakes
+						26620,	-- Seasoned Wolf Kabobs
+						26691,	-- Worgen in the Woods
+					},
+					-- #endif
+					-- #endif
 				}),
 				ach(12430, {	-- Duskwood Quests
 					["timeline"] = { "added 7.3.5.25727" },

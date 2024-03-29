@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4894, {	-- Silverpine Forest Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38361, {	-- Forsaken High Command
 							["sourceQuest"] = 27056,	-- Belmont's Report
@@ -37,6 +38,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27601,	-- Cities in Dust
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27056,	-- Belmont's Report
+						27096,	-- Orcs are in Order
+						27290,	-- To Forsaken Forward Command
+						27438,	-- The Great Escape
+						27518,	-- Transdimensional Warfare: Chapter III
+						27601,	-- Cities in Dust
+					},
+					-- #endif
 				}),
 			}),
 			battlepets({

@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4869, {	-- Sinking into Vashj'ir (A)
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Defense of The Briny Cutter
@@ -78,12 +78,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["_quests"] = { 26193 },	-- Defending the Rift
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						25558,	-- All or Nothing
+						25638,	-- A Desperate Plea
+						25743,	-- Decisions, Decisions
+						25888,	-- Decompression
+						27708,	-- The Warden's Time
+						25885,	-- What? What? In My Gut...?
+						25456,	-- Back in One Piece
+						25922,	-- Waking the Beast
+						25626,	-- Visions of the Past: Rise from the Deep
+						25987,	-- Put It On
+						26143,	-- All That Rises
+						26193,	-- Defending the Rift
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				ach(4982, {	-- Sinking into Vashj'ir (H)
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Defense of The Immortal Coil
@@ -121,8 +136,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["_quests"] = { 26194 },	-- Defending the Rift
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						25949,	-- Blood and Thunder!
+						25638,	-- A Desperate Plea
+						25743,	-- Decisions, Decisions
+						26008,	-- Decompression
+						27708,	-- The Warden's Time
+						26040,	-- What? What? In My Gut...?
+						25456,	-- Back in One Piece
+						25996,	-- Waking the Beast
+						26135,	-- Visions of the Past: Rise from the Deep
+						25988,	-- Put It On
+						26143,	-- All That Rises
+						26194,	-- Defending the Rift
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				achWithRep(4881, 1135),	-- The Earthen Ring
 			}),
