@@ -4012,6 +4012,7 @@ function app:RecalculateAccountWideData()
 	end
 	ATTAccountWideData.Deaths = deaths;
 end
+app.AddEventHandler("OnRefreshCollections", app.RecalculateAccountWideData)
 function app:ReceiveSyncRequest(sender, battleTag)
 	if battleTag ~= select(2, BNGetInfo()) then
 		-- Check to see if the character/account is linked.

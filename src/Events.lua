@@ -68,6 +68,7 @@ if app.IsRetail then
 				Runner.Run(handler, ...)
 			end
 			-- Runner.Run(app.PrintDebug,"HandleEvent:Done",eventName)
+			Runner.Run(app.HandleEvent, eventName.."Done")
 		else
 			for i,handler in ipairs(EventHandlers[eventName]) do
 				handler(...);

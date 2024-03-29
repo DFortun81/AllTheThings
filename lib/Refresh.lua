@@ -247,6 +247,10 @@ local function FixWrongAccountWideQuests(accountWideData)
 	end
 end
 
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideCompleteViaAchievement)
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideSharedQuests)
+app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
 
 RefreshCollections = function()
 	local currentCharacter = app.CurrentCharacter;
@@ -283,10 +287,6 @@ RefreshCollections = function()
 	end
 	coroutine.yield();
 
-	-- Harvest Item Collections that are used by the addon.
-	app:GetDataCache();
-	coroutine.yield();
-
 	-- Refresh Achievements
 	app.RefreshAchievementCollection();
 	coroutine.yield();
@@ -309,22 +309,14 @@ RefreshCollections = function()
 	end
 	coroutine.yield();
 
-	CacheAccountWideCompleteViaAchievement(ATTAccountWideData);
-	coroutine.yield();
-	CacheAccountWideMiscQuests(ATTAccountWideData);
-	coroutine.yield();
-	CacheAccountWideSharedQuests(ATTAccountWideData);
-	coroutine.yield();
-	FixWrongAccountWideQuests(ATTAccountWideData);
-	coroutine.yield();
-
 	-- Execute the OnRefreshCollections handlers.
 	-- TODO: Take all the bulk of this function and make them use the event handler.
 	-- The function used in the Classic section is what I want to see when this is completed.
-	app.HandleEvent("OnRefreshCollections")
+	app.HandleEvent("OnRefreshCollections", ATTAccountWideData)
+end
 
-	app:RecalculateAccountWideData();
-	coroutine.yield();
+-- [Event]Done is called automatically when processed by a Runner and it completes the set of functions
+app.AddEventHandler("OnRefreshCollectionsDone", function()
 
 	-- Need to update the Settings window as well if User does not have auto-refresh for Settings
 	if app.Settings:Get("Skip:AutoRefresh") or app.Settings.NeedsRefresh then
@@ -333,16 +325,13 @@ RefreshCollections = function()
 		app:RefreshData(false, false, true);
 	end
 
-	-- Wait for refresh to actually finish
-	while app.Processing_RefreshData do coroutine.yield(); end
-
 	-- Report success once refresh is done
 	print(app.L.DONE_REFRESHING);
 	if __FirstRefresh then
 		__FirstRefresh = nil;
 		print = app.print;
 	end
-end
+end)
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 end)
