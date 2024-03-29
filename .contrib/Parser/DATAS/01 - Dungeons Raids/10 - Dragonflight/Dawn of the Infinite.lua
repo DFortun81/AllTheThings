@@ -454,6 +454,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
 	}),
 	i(208119, {	-- Quantum Firearm
+		q(77605, {	-- when you learn everything from Quantum Firearm/Gun
+			["name"] = "Quantum Firearm/Gun completed.",
+			["collectible"] = false,
+		}),
 		i(110591),	-- Flintlocke's Blasthammer				(NYI)
 
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
@@ -610,6 +614,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134782),	-- Seasoned Pike						(Removed)
 	}),
 	i(208126, {	-- Quantum Shield
+		q(77611, {	-- when you learn everything from Quantum Shield
+			["name"] = "Quantum Shield completed.",
+			["collectible"] = false,
+		}),
 		ig(108062),	-- Draenic Steel Bulwark				(NYI)
 		ig(108158),	-- Hardened Draenic Steel Bulwark		(NYI)
 		ig(18303),	-- Nimble Buckler						(NYI)
@@ -817,6 +825,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				q(77604, {	-- when you learn everything from Quantum Crossbow
 					["name"] = "Quantum Crossbow completed.",
 				}),
+				q(77605, {	-- when you learn everything from Quantum Firearm/Gun
+					["name"] = "Quantum Firearm/Gun completed.",
+				}),
 				q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
 					["name"] = "Quantum Focus/Off-hand completed.",
 				}),
@@ -840,6 +851,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				q(77602, {	-- when you learn everything from Quantum Polearm
 					["name"] = "Quantum Polearm completed.",
+				}),
+				q(77611, {	-- when you learn everything from Quantum Shield
+					["name"] = "Quantum Shield completed.",
 				}),
 				q(77601, {	-- when you learn everything from Quantum Staff
 					["name"] = "Quantum Staff completed.",
@@ -1348,9 +1362,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77853),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421487)
 
 		-- Quantum Items
-		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77608),	-- when you learn everything from Quantum ?
-		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
