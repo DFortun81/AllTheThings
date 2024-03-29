@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					-- 177370, Grievous Soul Crusher
 					n(178897, {	-- Algel the Haunter
 						["questID"] = 64107,	-- confirmed 2022-10-10
-						["isDaily"] = true,
+						["repeatable"] = true,
 						["g"] = {
 							i(186239),	-- Drape of the Phantasm
 							i(186227),	-- Jangling Chain Manacles
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(178898, {	-- Golmak The Monstrosity
 						-- ["questID"] = 64114,	-- carb got 64114 from golmak, but i got 64697 and 64114 returns false (first tormentor of the day for both of us)
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186229),	-- Lavafused Breastplate
 							i(186221),	-- Seared-Link Sabatons
@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(177979, {	-- Gralebboih
 						-- ["questID"] = 64113,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186237),	-- Gormhide Pauldrons
 							i(186449),	-- Amaranthine Stinger (PET!)
@@ -155,15 +155,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(177370, {	-- Grievous Soul Crusher
 						["description"] = "This tormentor can sometimes spawn instead of another tormentor ( which are on the achievement ). Shares loot table with Malleus Grakizz",
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186218),	-- Fire-Tempered Armor Cinch
 							i(186012),	-- Inferno Blast Shield
 						},
 					}),
 					n(177980, {	-- Gruukuuek the Elder
-						-- ["questID"] = 64112,
-						-- ["isDaily"] = true,
+						["questID"] = 64112,	-- confirmed 2024-03-28
+						["repeatable"] = true,
 						["g"] = {
 							i(186226),	-- Cinch of Petrified Vines
 							i(186009),	-- Corrupted Elder Branch
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(178004, {	-- Intercessor Razzra
 						["questID"] = 64111,	-- confirmed 2022-10-31
-						["isDaily"] = true,
+						["repeatable"] = true,
 						["g"] = {
 							i(186231),	-- Gloves of Fervent Intercession
 							i(186004),	-- Kris of Dark Temptation
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(178882, {	-- Kazj The Sentinel
 						-- ["questID"] = 64110,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186450),	-- Crude Stygian Fastener
 							i(186006),	-- Kazj's Stygian Splitter
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(177972, {	-- Malleus Grakizz
 						-- ["questID"] = 64119,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186218),	-- Fire-Tempered Armor Cinch
 							i(186012),	-- Inferno Blast Shield
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(178899, {	-- Manifestation of Pain
 						-- ["questID"] = 64118,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186213),	-- Bindings of Manifest Pain
 							i(186005),	-- Stygian Pain Borer
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(178002, {	-- Mugrem the Soul Devourer
 						-- ["questID"] = 64116,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186010),	-- Lost Attendant's Scepter
 							i(186560),	-- Semi-Permeable Gelatinous Storage Pouch
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(177330, {	-- Promathiz
 						-- ["questID"] = 64115,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186007),	-- Cudgel of the Tin Sentinel
 							i(186208),	-- Padded Insouls
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(177331, {	-- Sentinel Pyrophus
 						-- ["questID"] = 64127,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186241),	-- Insulated Thermal Leggings
 							i(186219),	-- Pyrophus' Wrist Ties
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(178883, {	-- Sentinel Shakorzeth
 						-- ["questID"] = 64121,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186244),	-- Shakorzeth's Gorget
 							i(186225),	-- Shoulder Joint Spindles
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(177427, {	-- The Mass of Souls
 						-- ["questID"] = 64117,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186210),	-- Diabolic Soul Veil
 							i(186215),	-- Soul Stranglers
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(177981, {	-- Versya the Damned
 						-- ["questID"] = ,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186233),	-- Spaulders of the Skyborn Damned
 							i(186003),	-- Versya's Stygian Longbow
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(178886, {	-- Zul'gath the Flayer
 						-- ["questID"] = 64122,
-						-- ["isDaily"] = true,
+						-- ["repeatable"] = true,
 						["g"] = {
 							i(186235),	-- Shadow-Wreathed Vambraces
 							i(186242),	-- Zul'gath's Chain Coif
