@@ -5,6 +5,7 @@ DIFFICULTY = {
 		HEROIC = 2,
 		MYTHIC = 23,
 		TIMEWALKING = 24,
+		KEYSTONE = 8,
 	},
 	RAID = {
 		FINDER = 7,

@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["g"] = {
 					ach(12489, {	-- Losing My Profession
 						["collectible"] = false,

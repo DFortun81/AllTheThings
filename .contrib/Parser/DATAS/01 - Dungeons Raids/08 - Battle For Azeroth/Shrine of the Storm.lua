@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
 				["g"] = {
 					ach(12600),	-- Breath of the Shrine

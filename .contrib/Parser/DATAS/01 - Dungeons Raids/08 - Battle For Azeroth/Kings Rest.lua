@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["difficulties"] = { 8, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["g"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
 						crit(41269, {	-- First trinket found
