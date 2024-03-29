@@ -23,10 +23,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 	m(ZERETH_MORTIS, {
 		prof(PROTOFORM_SYNTHESIS, {
 			n(ACHIEVEMENTS, {
-				ach(15406),	-- Synthesized!
-				ach(15407),	-- Synthe-fived!
-				ach(15410),	-- Synthe-superfived!
-				ach(15411),	-- Synthe-supersized!
+				ach(15406, {	-- Synthesized!
+					["_noautomation"] = true,
+				}),
+				ach(15407, {	-- Synthe-fived!
+					["_noautomation"] = true,
+				}),
+				ach(15410, {	-- Synthe-superfived!
+					["_noautomation"] = true,
+				}),
+				ach(15411, {	-- Synthe-supersized!
+					["_noautomation"] = true,
+				}),
 			}),
 			n(QUESTS, {
 				-- Unlock Pet Forge Available with Dealic Understanding
