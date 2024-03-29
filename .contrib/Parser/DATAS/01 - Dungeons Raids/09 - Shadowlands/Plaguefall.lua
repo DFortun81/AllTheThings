@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1183, {	-- Plaguefall
 		["coord"] = { 59.3, 64.8, MALDRAXXUS },
@@ -26,7 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_DUNGEON, {
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
 					["g"] = {
@@ -107,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_DUNGEON, {
 				n(SPECIAL, {
 					mount(346141, {	-- Slime Serpent (MOUNT!)
 						["description"] = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",

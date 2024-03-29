@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1199, {	-- Neltharus
 		["coord"] = { 25.5, 56.9, THE_WAKING_SHORES },
@@ -33,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
 				}),
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_DUNGEON, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
@@ -81,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_DUNGEON, {
 				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {

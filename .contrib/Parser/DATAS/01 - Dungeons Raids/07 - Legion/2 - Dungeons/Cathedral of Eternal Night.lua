@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(900, {	-- Cathedral of Eternal Night
 		["coord"] = { 64.7, 16.6, BROKEN_SHORE },

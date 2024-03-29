@@ -33,13 +33,16 @@ function GetOrCreateMultiDifficulty(ids)
 	end
 end
 
--- Difficulties that represent multiple difficulties.
+-- Raid Multi-Difficulties
 ALL_DIFFICULTIES_RAID = GetOrCreateMultiDifficulty({LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID});
-ALL_DIFFICULTIES_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON});
-NORMAL_HEROIC_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON});
 NORMAL_HEROIC_RAID = GetOrCreateMultiDifficulty({NORMAL_RAID,HEROIC_RAID});
 NORMAL_PLUS_RAID = GetOrCreateMultiDifficulty({NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID});
 HEROIC_PLUS_RAID = GetOrCreateMultiDifficulty({HEROIC_RAID,MYTHIC_RAID});
+
+-- Dungeon Multi-Difficulties
+NORMAL_PLUS_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON});
+NORMAL_HEROIC_DUNGEON = GetOrCreateMultiDifficulty({NORMAL_DUNGEON,HEROIC_DUNGEON});
+HEROIC_PLUS_DUNGEON = GetOrCreateMultiDifficulty({HEROIC_DUNGEON,MYTHIC_DUNGEON});
 
 -- Helper Tables
 DifficultyDB = {

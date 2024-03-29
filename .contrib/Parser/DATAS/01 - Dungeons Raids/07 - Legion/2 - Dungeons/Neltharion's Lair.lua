@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(767, {	-- Neltharion's Lair
 		["lvl"] = 98,
@@ -78,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_DUNGEON, {
 				cr(91007, e(1687, {	-- Dargrul
 					ach(10795),	-- Neltharion's Lair
 					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
@@ -149,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137359),	-- Pebble of Ages
 				})),
 			}),
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_DUNGEON, {
 				cr(91007, e(1687, {	-- Dargrul
 					ach(10796),	-- Heroic: Neltharion's Lair
 					i(137854),	-- Design: Intrepid Necklace of Prophecy [Rank 3] (RECIPE!)

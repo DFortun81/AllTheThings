@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(727, {	-- Maw of Souls
 		["lvl"] = 110,
@@ -24,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["isWorldQuest"] = true,
 				}),
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_DUNGEON, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
@@ -82,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_DUNGEON, {
 				cr(96759, e(1663, {	-- Helya
 					ach(10808),	-- Heroic: Maw of Souls
 					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)

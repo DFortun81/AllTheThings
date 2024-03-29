@@ -700,7 +700,7 @@ local QUANTUM_GROUP = sharedData({
 		},
 	}),
 });
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = HEROIC_PLUS_DUNGEON;
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 	inst(1209, {	-- Dawn of the Infinite
 		["coord"] = { 61.0, 84.3, THALDRASZUS },

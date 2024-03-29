@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	applyclassicphase(CATA_PHASE_ONE, inst(67, {	-- The Stonecore
 		["mapID"] = 324,
@@ -180,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			-- #else
-			d(NormalPlus, {
+			d(NORMAL_HEROIC_DUNGEON, {
 				e(110, {	-- Corborus
 					["crs"] = { 43438 },	-- Corborus
 					["groups"] = {

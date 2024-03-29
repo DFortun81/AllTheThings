@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(762, {	-- Darkheart Thicket
 		["mapID"] = 733,
@@ -32,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_DUNGEON, {
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
 					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 				})),
@@ -42,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 				})),
 			}),
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_DUNGEON, {
 				cr(99192, e(1657, {	-- Shade of Xavius
 					ach(10784),	-- Heroic: Darkheart Thicket
 					i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)

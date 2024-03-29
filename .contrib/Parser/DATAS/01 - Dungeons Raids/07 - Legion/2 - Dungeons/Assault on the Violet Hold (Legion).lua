@@ -1,16 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(777, {	-- Assault of Violet Hold (Legion)
 		["lvl"] = 105,
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
 		["g"] = {
-			d(NormalPlus, {
+			d(NORMAL_PLUS_DUNGEON, {
 				cr(102387, e(1697, {	-- Sael'orn
 					ach(10798),	-- Assault on Violet Hold
 					i(137824),	-- Design: Maelstrom Band [Rank 2] (RECIPE!)

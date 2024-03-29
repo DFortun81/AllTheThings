@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
-local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(707, {	-- Vault of the Wardens
 		["coord"] = { 48.0, 82.1, AZSUNA },
@@ -33,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_DUNGEON, {
 				cr(95886, e(1468, {	-- Ash'golm
 					i(139468),	-- Bindings of the Windlord (rogue appearance)
 				})),
@@ -109,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137549),	-- Shade of the Vault
 				})),
 			}),
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_DUNGEON, {
 				cr(95888, e(1470, {	-- Cordana Felsong
 					ach(10802),	-- Heroic: Vault of the Wardens
 					i(137852),	-- Design: Vindictive Pandemonite Choker [Rank 3] (RECIPE!)
