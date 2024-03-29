@@ -141,6 +141,7 @@ end);
 
 -- MinReputation
 local ExclusiveFactions = {
+	[70]=1,		-- Syndicate
 	[932]=1,	-- The Aldor
 	[934]=1,	-- The Scryers
 	[1104]=1,	-- Frenzyheart Tribe

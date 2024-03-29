@@ -50,8 +50,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.Ravenholdt,
 				}),
 				faction(70, {	-- Syndicate
-					["description"] = "Neutral is the highest you can currently reach with the Syndicate.",
-					["collectible"] = false,
+					["description"] = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
+					["minReputation"] = { 70, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
+					["maxReputation"] = { 70, NEUTRAL },	-- Syndicate, Neutral.
 				}),
 			}),
 			n(QUESTS, {
