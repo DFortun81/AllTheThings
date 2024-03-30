@@ -96,12 +96,23 @@ root(ROOTS.Zones, {
 					pet(638),	-- Nether Roach (PET!)
 				}),
 				explorationHeader({
-					exploration(3723, "256:256:328:397"),		-- Arklon Ruins
 					exploration(3712, "256:128:241:388"),		-- Area 52
+					exploration(3723, "256:256:328:397"),		-- Arklon Ruins
 					exploration(3737, "256:256:644:173"),		-- Celestial Ridge
+					-- #if AFTER CATA
+					exploration(3879),	-- Chapel Yard
+					exploration(3724),	-- Cosmowrench
+					-- #endif
 					exploration(3874, "256:256:396:10"),		-- Eco-Dome Farfield
 					exploration(3877, "256:256:356:261"),		-- Eco-Dome Midrealm
+					-- #if AFTER CATA
+					exploration(3875),	-- Eco-Dome Skyperch
+					exploration(3876),	-- Eco-Dome Sutheron
+					-- #endif
 					exploration(3878, "256:256:481:208"),		-- Ethereum Staging Grounds
+					-- #if AFTER CATA
+					exploration(3740),	-- Forge Base: Gehenna
+					-- #endif
 					exploration(3739, "256:256:237:22"),		-- Forge Base: Oblivion
 					exploration(3868, "256:256:132:294"),		-- Gyro-Plank Bridge
 					exploration(3732, "256:145:490:523"),		-- Kirin'Var Village
@@ -117,7 +128,15 @@ root(ROOTS.Zones, {
 					exploration(3837, "256:217:454:451"),		-- Sunfury Hold
 					exploration(3842, "409:384:593:284"),		-- Tempest Keep
 					exploration(3729, "256:213:239:455"),		-- The Heap
+					-- #if AFTER CATA
+					exploration(3727),	-- The Scrap Field
+					-- #endif
 					exploration(3738, "256:256:298:134"),		-- The Stormspire
+					-- #if AFTER CATA
+					exploration(3731),	-- The Tempest Rift
+					exploration(3934),	-- Town Square
+					exploration(3935),	-- Wizard Row
+					-- #endif
 				}),
 				n(FLIGHT_PATHS, {
 					fp(122, {	-- Area 52, Netherstorm
