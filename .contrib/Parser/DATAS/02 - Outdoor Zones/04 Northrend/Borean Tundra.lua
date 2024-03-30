@@ -282,7 +282,7 @@ root(ROOTS.Zones, {
 					exploration(4121),	-- Transitus Shield
 					exploration(4113),	-- Unu'pe
 					exploration(4032),	-- Valiance Keep
-					exploration(4144),	-- Warsong Farms
+					exploration(4144),	-- Warsong Farms / Warsong Farms Outpost
 					exploration(4142),	-- Warsong Granary
 					exploration(4129),	-- Warsong Hold
 				}),
