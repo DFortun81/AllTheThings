@@ -102,32 +102,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["100:100:241:6"] = 2406,	-- Ranazjar Isle
-				["170:160:555:181"] = 2407,	-- Kormek's Hut
-				["190:220:447:102"] = 599,	-- Thunder Axe Fortress
-				["195:242:293:426"] = 606,	-- Gelkis Village
-				["200:250:554:0"] = 608,	-- Nijel's Point
-				["205:145:431:0"] = 2404,	-- Tethris Aran
-				["205:195:690:444"] = 2198,	-- Shadowbreak Ravine
-				["205:250:311:61"] = 2405,	-- Ethel Rethor
-				["205:285:590:365"] = 604,	-- Magram Village
-				["220:220:607:215"] = 609,	-- Kolkar Village
-				["230:230:167:389"] = 2408,	-- Shadowprey Village
-				["245:285:212:215"] = 607,	-- Valley of Spears
-				["275:250:387:244"] = 596,	-- Kodo Graveyard
-				["285:245:625:33"] = 603,	-- Sargeron
-				["285:280:399:380"] = 602,	-- Mannoroc Coven
+			n(EXPLORATION, {
+				exploration(2405, "205:250:311:61"),	-- Ethel Rethor
+				exploration(596, "275:250:387:244"),	-- Kodo Graveyard
+				exploration(609, "220:220:607:215"),	-- Kolkar Village
+				exploration(2407, "170:160:555:181"),	-- Kormek's Hut
+				exploration(606, "195:242:293:426"),	-- Gelkis Village
+				exploration(604, "205:285:590:365"),	-- Magram Village
+				exploration(602, "285:280:399:380"),	-- Mannoroc Coven
+				exploration(608, "200:250:554:0"),		-- Nijel's Point
+				exploration(2406, "100:100:241:6"),		-- Ranazjar Isle
+				exploration(603, "285:245:625:33"),		-- Sargeron
+				exploration(2198, "205:195:690:444"),	-- Shadowbreak Ravine
+				exploration(2408, "230:230:167:389"),	-- Shadowprey Village
+				exploration(2404, "205:145:431:0"),		-- Tethris Aran
+				exploration(599, "190:220:447:102"),	-- Thunder Axe Fortress
+				exploration(607, "245:285:212:215"),	-- Valley of Spears
 				--[[
-				[597] = 2,                               -- Ghost Walker Post
-				[598] = 3,                               -- Sar'theris Strand
-				[600] = 5,                               -- Bolgan's Hole
-				[2217] = 14,                             -- Broken Spear Village
-				[2324] = 15,                             -- The Veiled Sea
-				[2617] = 21,                             -- Scrabblescrew's Camp
-				[2657] = 22,                             -- Valley of Bones
+				exploration(600),	-- Bolgan's Hole
+				exploration(2217),	-- Broken Spear Village
+				exploration(597),	-- Ghost Walker Post
+				exploration(598),	-- Sar'theris Strand
+				exploration(2617),	-- Scrabblescrew's Camp
+				exploration(2324),	-- The Veiled Sea
+				exploration(2657),	-- Valley of Bones
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FACTIONS, {
 				faction(92, {	-- Gelkis Clan Centaur

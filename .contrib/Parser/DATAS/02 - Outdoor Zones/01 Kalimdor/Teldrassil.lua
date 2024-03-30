@@ -664,28 +664,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["128:100:494:548"] = 702,	-- Rut'theran Village
-				["128:190:335:313"] = 478,	-- Pools of Arlithrien
-				["160:210:382:281"] = 736,	-- Ban'ethil Hollow
-				["170:240:272:127"] = 264,	-- The Oracle Glade
-				["180:256:377:93"] = 266,	-- Wellspring Lake
-				["185:128:368:443"] = 261,	-- Gnarlpine Hold
-				["190:128:462:323"] = 186,	-- Dolanaar
-				["200:200:561:292"] = 260,	-- Starbreeze Village
-				["225:225:491:153"] = 188,	-- Shadowglen
-				["256:185:436:380"] = 259,	-- Lake Al'Ameth
-				["315:256:101:247"] = 1657,	-- Darnassus
+			n(EXPLORATION, {
+				exploration(736, "160:210:382:281"),	-- Ban'ethil Hollow
+				exploration(1657, "315:256:101:247"),	-- Darnassus
+				exploration(186, "190:128:462:323"),	-- Dolanaar
+				exploration(261, "185:128:368:443"),	-- Gnarlpine Hold
+				exploration(259, "256:185:436:380"),	-- Lake Al'Ameth
+				exploration(478, "128:190:335:313"),	-- Pools of Arlithrien
+				exploration(702, "128:100:494:548"),	-- Rut'theran Village
+				exploration(188, "225:225:491:153"),	-- Shadowglen
+				exploration(260, "200:200:561:292"),	-- Starbreeze Village
+				exploration(264, "170:240:272:127"),	-- The Oracle Glade
+				exploration(266, "180:256:377:93"),		-- Wellspring Lake
 				--[[
-				[256] = 4,                               -- Aldrassil
-				[257] = 5,                               -- Shadowthread Cave
-				[258] = 6,                               -- Fel Rock
-				[262] = 10,                              -- Ban'ethil Barrow Den
-				[263] = 11,                              -- The Cleft
-				[265] = 13,                              -- Wellspring River
-				[2322] = 24,                             -- The Veiled Sea
+				exploration(256),	-- Aldrassil
+				exploration(262),	-- Ban'ethil Barrow Den
+				exploration(258),	-- Fel Rock
+				exploration(257),	-- Shadowthread Cave
+				exploration(263),	-- The Cleft
+				exploration(2322),	-- The Veiled Sea
+				exploration(265),	-- Wellspring River
 				]]
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(456, {	-- Dolanaar, Teldrassil

@@ -65,34 +65,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["140:125:391:446"] = 204,	-- Pyrewood Village
-				["160:170:470:261"] = 213,	-- Deep Elem Mine
-				["165:185:382:252"] = 229,	-- Olsen's Farthing
-				["175:165:402:65"] = 240,	-- The Dead Field
-				["180:128:323:128"] = 928,	-- North Tide's Hollow
-				["180:185:457:144"] = 237,	-- The Decrepit Ferry
-				["185:165:286:37"] = 226,	-- The Skittering Dark
-				["210:160:352:168"] = 228,	-- The Sepulcher
-				["210:215:379:447"] = 230,	-- The Greymane Wall
-				["220:160:364:359"] = 236,	-- Shadowfang Keep
-				["240:180:491:417"] = 231,	-- Beren's Peril
-				["240:240:494:262"] = 233,	-- Ambermill
-				["250:215:593:74"] = 172,	-- Fenris Isle
-				["256:160:465:0"] = 238,	-- Malden's Orchard
-				["256:220:459:13"] = 927,	-- The Shining Strand
+			n(EXPLORATION, {
+				exploration(233, "240:240:494:262"),	-- Ambermill
+				exploration(231, "240:180:491:417"),	-- Beren's Peril
+				exploration(213, "160:170:470:261"),	-- Deep Elem Mine
+				exploration(172, "250:215:593:74"),		-- Fenris Isle
+				exploration(238, "256:160:465:0"),		-- Malden's Orchard
+				exploration(928, "180:128:323:128"),	-- North Tide's Hollow
+				exploration(229, "165:185:382:252"),	-- Olsen's Farthing
+				exploration(204, "140:125:391:446"),	-- Pyrewood Village
+				exploration(236, "220:160:364:359"),	-- Shadowfang Keep
+				exploration(240, "175:165:402:65"),		-- The Dead Field
+				exploration(237, "180:185:457:144"),	-- The Decrepit Ferry
+				exploration(230, "210:215:379:447"),	-- The Greymane Wall
+				exploration(228, "210:160:352:168"),	-- The Sepulcher
+				exploration(927, "256:220:459:13"),		-- The Shining Strand
+				exploration(226, "185:165:286:37"),		-- The Skittering Dark
 				--[[
-				[235] = 1,                               -- Fenris Keep
-				[227] = 5,                               -- Valgan's Field
-				[232] = 10,                              -- The Dawning Isles
-				[239] = 16,                              -- The Ivar Patch
-				[305] = 18,                              -- North Tide's Run
-				[306] = 19,                              -- South Tide's Run
-				[926] = 20,                              -- Bucklebree Farm
-				[1338] = 23,                             -- Lordamere Lake
-				[2398] = 24,                             -- The Great Sea
+				exploration(926),	-- Bucklebree Farm
+				exploration(235),	-- Fenris Keep
+				exploration(1338),	-- Lordamere Lake
+				exploration(305),	-- North Tide's Run
+				exploration(306),	-- South Tide's Run
+				exploration(232),	-- The Dawning Isles
+				exploration(2398),	-- The Great Sea
+				exploration(239),	-- The Ivar Patch
+				exploration(227),	-- Valgan's Field
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest

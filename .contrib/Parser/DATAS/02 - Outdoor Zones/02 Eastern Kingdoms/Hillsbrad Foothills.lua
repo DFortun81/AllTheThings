@@ -101,25 +101,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["125:100:109:482"] = 896,	-- Purgation Isle
-				["165:200:175:275"] = 288,	-- Azurelode Mine
-				["205:155:414:154"] = 1056,	-- Darrow Hill
-				["215:240:541:236"] = 289,	-- Nethander Stead
-				["220:310:509:0"] = 272,	-- Tarren Mill
-				["230:320:524:339"] = 294,	-- Eastern Strand
-				["235:270:418:201"] = 271,	-- Southshore
-				["240:275:637:294"] = 290,	-- Dun Garok
-				["285:155:208:368"] = 295,	-- Western Strand
-				["288:225:2:192"] = 285,	-- Southpoint Tower
-				["305:275:198:155"] = 286,	-- Hillsbrad Fields
-				["384:365:605:75"] = 275,	-- Durnholde Keep
+			n(EXPLORATION, {
+				exploration(288, "165:200:175:275"),	-- Azurelode Mine
+				exploration(1056, "205:155:414:154"),	-- Darrow Hill
+				exploration(290, "240:275:637:294"),	-- Dun Garok
+				exploration(275, "384:365:605:75"),		-- Durnholde Keep
+				exploration(294, "230:320:524:339"),	-- Eastern Strand
+				exploration(286, "305:275:198:155"),	-- Hillsbrad Fields
+				exploration(289, "215:240:541:236"),	-- Nethander Stead
+				exploration(896, "125:100:109:482"),	-- Purgation Isle
+				exploration(285, "288:225:2:192"),		-- Southpoint Tower
+				exploration(271, "235:270:418:201"),	-- Southshore
+				exploration(272, "220:310:509:0"),		-- Tarren Mill
+				exploration(295, "285:155:208:368"),	-- Western Strand
 				--[[
-				[287] = 6,                               -- Hillsbrad
-				[1057] = 14,                             -- Thoradin's Wall
-				[2397] = 15,                             -- The Great Sea
+				exploration(287),	-- Hillsbrad
+				exploration(2397),	-- The Great Sea
+				exploration(1057),	-- Thoradin's Wall
 				]]--
-			})),
+			}),
 			-- #endif
 			-- #if AFTER CATA
 			n(FACTIONS, {

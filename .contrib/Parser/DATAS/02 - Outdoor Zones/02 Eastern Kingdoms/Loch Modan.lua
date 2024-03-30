@@ -86,26 +86,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["195:250:109:370"] = 924,	-- Valley of Kings
-				["230:300:125:12"] = 838,	-- North Gate Pass
-				["235:270:229:11"] = 149,	-- Silver Stream Mine
-				["255:285:215:348"] = 923,	-- Stonesplinter Valley
-				["256:230:217:203"] = 144,	-- Thelsamar
-				["290:175:339:11"] = 146,	-- Stonewrought Dam
-				["295:358:309:310"] = 936,	-- Grizzlepaw Ridge
-				["315:235:542:48"] = 143,	-- Mo'grosh Stronghold
-				["320:410:352:87"] = 556,	-- The Loch
-				["345:256:482:321"] = 142,	-- Ironband's Excavation Site
-				["370:295:546:199"] = 147,	-- The Farstrider Lodge
+			n(EXPLORATION, {
+				exploration(936, "295:358:309:310"),	-- Grizzlepaw Ridge
+				exploration(142, "345:256:482:321"),	-- Ironband's Excavation Site
+				exploration(143, "315:235:542:48"),		-- Mo'grosh Stronghold
+				exploration(838, "230:300:125:12"),		-- North Gate Pass
+				exploration(149, "235:270:229:11"),		-- Silver Stream Mine
+				exploration(923, "255:285:215:348"),	-- Stonesplinter Valley
+				exploration(146, "290:175:339:11"),		-- Stonewrought Dam
+				exploration(147, "370:295:546:199"),	-- The Farstrider Lodge
+				exploration(556, "320:410:352:87"),		-- The Loch
+				exploration(144, "256:230:217:203"),	-- Thelsamar
+				exploration(924, "195:250:109:370"),	-- Valley of Kings
 				--[[
-				[145] = 4,                               -- Algaz Gate
-				[837] = 9,                               -- Dun Algaz
-				[839] = 11,                              -- South Gate Pass
-				[925] = 14,                              -- Algaz Station
-				[2101] = 16,                             -- Stoutlager Inn
+				exploration(145),	-- Algaz Gate
+				exploration(925),	-- Algaz Station
+				exploration(837),	-- Dun Algaz
+				exploration(839),	-- South Gate Pass
+				exploration(2101),	-- Stoutlager Inn
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(555, {	-- Farstrider Lodge, Loch Modan

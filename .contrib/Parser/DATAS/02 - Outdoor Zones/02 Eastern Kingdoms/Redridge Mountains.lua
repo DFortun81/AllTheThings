@@ -55,26 +55,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["235:270:399:129"] = 97,	-- Alther's Mill
-				["250:250:654:161"] = 1000,	-- Galardell Valley
-				["255:300:500:215"] = 70,	-- Stonewatch
-				["275:256:277:0"] = 996,	-- Render's Camp
-				["320:210:595:320"] = 71,	-- Stonewatch Falls
-				["340:195:83:197"] = 69,	-- Lakeshire
-				["365:245:121:72"] = 95,	-- Redridge Canyons
-				["365:350:0:284"] = 1002,	-- Three Corners
-				["430:290:187:333"] = 1001,	-- Lakeridge Highway
-				["465:255:484:361"] = 997,	-- Render's Valley
-				["535:275:133:240"] = 68,	-- Lake Everstill
+			n(EXPLORATION, {
+				exploration(97, "235:270:399:129"),		-- Alther's Mill
+				exploration(1000, "250:250:654:161"),	-- Galardell Valley
+				exploration(68, "535:275:133:240"),		-- Lake Everstill
+				exploration(1001, "430:290:187:333"),	-- Lakeridge Highway
+				exploration(69, "340:195:83:197"),		-- Lakeshire
+				exploration(95, "365:245:121:72"),		-- Redridge Canyons
+				exploration(996, "275:256:277:0"),		-- Render's Camp
+				exploration(997, "465:255:484:361"),	-- Render's Valley
+				exploration(70, "255:300:500:215"),		-- Stonewatch
+				exploration(71, "320:210:595:320"),		-- Stonewatch Falls
+				exploration(1002, "365:350:0:284"),		-- Three Corners
 				--[[
-				[96] = 6,                                -- Tower of Ilgalar
-				[98] = 8,                                -- Rethban Caverns
-				[998] = 11,                              -- Render's Rock
-				[999] = 12,                              -- Stonewatch Tower
-				[2099] = 16,                             -- Stonewatch Keep
+				exploration(998),	-- Render's Rock
+				exploration(98),	-- Rethban Caverns
+				exploration(2099),	-- Stonewatch Keep
+				exploration(999),	-- Stonewatch Tower
+				exploration(96),	-- Tower of Ilgalar
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(615, {	-- Camp Everstill, Redridge

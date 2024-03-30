@@ -1965,36 +1965,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["225:220:422:332"] = 18,	-- Crystal Lake
-				["240:220:250:270"] = 87,	-- Goldshire
-				["255:250:551:292"] = 91,	-- Tower of Azora
-				["256:210:704:330"] = 88,	-- Eastvale Logging Camp
-				["256:237:425:431"] = 797,	-- Jerod's Landing
-				["256:240:238:428"] = 57,	-- Fargodeep Mine
-				["256:249:577:419"] = 62,	-- Brackwell Pumpkin Patch
-				["256:256:381:147"] = 9,	-- Northshire Valley
-				["256:341:124:327"] = 60,	-- Forest's Edge
-				["306:233:696:435"] = 798,	-- Ridgepoint Tower
-				["310:256:587:190"] = 86,	-- Stone Cairn Lake
-				["485:405:0:0"] = 1519,	-- Stormwind City
+			n(EXPLORATION, {
+				exploration(62, "256:249:577:419"),		-- Brackwell Pumpkin Patch
+				exploration(18, "225:220:422:332"),		-- Crystal Lake
+				exploration(88, "256:210:704:330"),		-- Eastvale Logging Camp
+				exploration(57, "256:240:238:428"),		-- Fargodeep Mine
+				exploration(60, "256:341:124:327"),		-- Forest's Edge
+				exploration(87, "240:220:250:270"),		-- Goldshire
+				exploration(797, "256:237:425:431"),	-- Jerod's Landing
+				exploration(9, "256:256:381:147"),		-- Northshire Valley
+				exploration(798, "306:233:696:435"),	-- Ridgepoint Tower
+				exploration(86, "310:256:587:190"),		-- Stone Cairn Lake
+				exploration(1519, "485:405:0:0"),		-- Stormwind City
+				exploration(91, "255:250:551:292"),		-- Tower of Azora
 				--[[
-				[23] = 3,                                -- Northshire River
-				[24] = 4,                                -- Northshire Abbey
-				[34] = 5,                                -- Echo Ridge Mine
-				[53] = 6,                                -- Thieves Camp
-				[54] = 7,                                -- Jasperlode Mine
-				[56] = 9,                                -- Heroes' Vigil
-				[59] = 11,                               -- Northshire Vineyards
-				[61] = 13,                               -- Thunder Falls
-				[63] = 15,                               -- The Stonefield Farm
-				[64] = 16,                               -- The Maclure Vineyards
-				[80] = 17,                               -- Stormwind Mountains
-				[89] = 21,                               -- Mirror Lake Orchard
-				[92] = 23,                               -- Mirror Lake
-				[120] = 24,                              -- Westbrook Garrison
+				exploration(34),	-- Echo Ridge Mine
+				exploration(56),	-- Heroes' Vigil
+				exploration(54),	-- Jasperlode Mine
+				exploration(92),	-- Mirror Lake
+				exploration(89),	-- Mirror Lake Orchard
+				exploration(24),	-- Northshire Abbey
+				exploration(23),	-- Northshire River
+				exploration(59),	-- Northshire Vineyards
+				exploration(80),	-- Stormwind Mountains
+				exploration(64),	-- The Maclure Vineyards
+				exploration(63),	-- The Stonefield Farm
+				exploration(53),	-- Thieves Camp
+				exploration(61),	-- Thunder Falls
+				exploration(120),	-- Westbrook Garrison
 				]]--
-			})),
+			}),
 			-- #endif
 			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {

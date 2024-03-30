@@ -89,27 +89,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["150:215:318:162"] = 442,	-- Auberdine
-				["170:195:468:85"] = 444,	-- Tower of Althalaxx
-				["175:158:329:510"] = 449,	-- The Master's Glaive
-				["175:183:229:485"] = 450,	-- Remtravel's Excavation
-				["180:195:365:181"] = 446,	-- Bashal'Aran
-				["190:205:324:306"] = 447,	-- Ameth'Aran
-				["195:215:510:0"] = 443,	-- Ruins of Mathystra
-				["200:170:305:412"] = 448,	-- Grove of the Ancients
-				["230:190:375:94"] = 456,	-- Cliffspring River
+			n(EXPLORATION, {
+				exploration(447, "190:205:324:306"),	-- Ameth'Aran
+				exploration(442, "150:215:318:162"),	-- Auberdine
+				exploration(446, "180:195:365:181"),	-- Bashal'Aran
+				exploration(456, "230:190:375:94"),		-- Cliffspring River
+				exploration(448, "200:170:305:412"),	-- Grove of the Ancients
+				exploration(450, "175:183:229:485"),	-- Remtravel's Excavation
+				exploration(443, "195:215:510:0"),		-- Ruins of Mathystra
+				exploration(449, "175:158:329:510"),	-- The Master's Glaive
+				exploration(444, "170:195:468:85"),		-- Tower of Althalaxx
 				--[[
-				[445] = 4,                               -- Cliffspring Falls
-				[452] = 10,                              -- Mist's Edge
-				[453] = 11,                              -- The Long Wash
-				[454] = 12,                              -- Wildbend River
-				[455] = 13,                              -- Blackwood Den
-				[2077] = 15,                             -- Twilight Vale
-				[2078] = 16,                             -- Twilight Shore
-				[2326] = 17,                             -- The Veiled Sea
+				exploration(455),	-- Blackwood Den
+				exploration(445),	-- Cliffspring Falls
+				exploration(452),	-- Mist's Edge
+				exploration(453),	-- The Long Wash
+				exploration(2326),	-- The Veiled Sea
+				exploration(2078),	-- Twilight Shore
+				exploration(2077),	-- Twilight Vale
+				exploration(454),	-- Wildbend River
 				]]--
-			})),
+			}),
 			-- #endif
 			prof(FISHING, {
 				i(12238),	-- Darkshore Grouper

@@ -221,27 +221,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["125:165:611:242"] = 2247,	-- Ice Thistle Hills
-				["145:125:617:158"] = 2244,	-- Winterfall Village
-				["165:140:593:340"] = 2250,	-- Owl Wing Thicket
-				["165:200:509:107"] = 2255,	-- Everlook
-				["175:185:555:27"] = 2242,	-- The Hidden Grove
-				["185:160:392:137"] = 2253,	-- Starfall Village
-				["185:180:493:258"] = 2245,	-- Mazthoril
-				["200:160:523:376"] = 2249,	-- Frostwhisper Gorge
-				["215:185:401:198"] = 2251,	-- Lake Kel'Theril
-				["230:120:229:243"] = 2243,	-- Timbermaw Post
-				["240:140:222:172"] = 2246,	-- Frostfire Hot Springs
-				["250:180:368:7"] = 2241,	-- Frostsaber Rock
-				["255:205:447:441"] = 2256,	-- Darkwhisper Gorge
+			n(EXPLORATION, {
+				exploration(2256, "255:205:447:441"),	-- Darkwhisper Gorge
+				exploration(2255, "165:200:509:107"),	-- Everlook
+				exploration(2246, "240:140:222:172"),	-- Frostfire Hot Springs
+				exploration(2241, "250:180:368:7"),		-- Frostsaber Rock
+				exploration(2249, "200:160:523:376"),	-- Frostwhisper Gorge
+				exploration(2247, "125:165:611:242"),	-- Ice Thistle Hills
+				exploration(2251, "215:185:401:198"),	-- Lake Kel'Theril
+				exploration(2245, "185:180:493:258"),	-- Mazthoril
+				exploration(2250, "165:140:593:340"),	-- Owl Wing Thicket
+				exploration(2253, "185:160:392:137"),	-- Starfall Village
+				exploration(2242, "175:185:555:27"),	-- The Hidden Grove
+				exploration(2243, "230:120:229:243"),	-- Timbermaw Post
+				exploration(2244, "145:125:617:158"),	-- Winterfall Village
 				--[[
-				[2248] = 8,                              -- Dun Mandarr
-				[2252] = 12,                             -- The Ruins of Kel'Theril
-				[2254] = 14,                             -- Ban'Thallow Barrow Den
-				[3139] = 17,                             -- Moon Horror Den
+				exploration(2254),	-- Ban'Thallow Barrow Den
+				exploration(2248),	-- Dun Mandarr
+				exploration(3139),	-- Moon Horror Den
+				exploration(2252),	-- The Ruins of Kel'Theril
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FACTIONS, {
 				faction(577, {	-- Everlook

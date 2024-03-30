@@ -183,35 +183,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["175:128:13:314"] = 150,	-- Menethil Harbor
-				["185:240:456:125"] = 1025,	-- The Green Belt
-				["190:160:628:176"] = 1017,	-- Raptor Ridge
-				["195:185:247:205"] = 118,	-- Whelgar's Excavation Site
-				["200:185:349:115"] = 309,	-- Ironbeard's Tomb
-				["200:240:237:41"] = 1023,	-- Saltspray Glen
-				["205:180:401:21"] = 205,	-- Dun Modr
-				["205:245:527:264"] = 1020,	-- Mosshide Fen
-				["225:185:347:218"] = 1036,	-- Angerfang Encampment
-				["225:190:89:142"] = 1022,	-- Bluegill Marsh
-				["230:190:470:371"] = 1021,	-- Thelgen Rock
-				["240:175:77:245"] = 1018,	-- Black Channel Marsh
-				["256:250:507:115"] = 1016,	-- Direforge Hill
-				["300:240:92:82"] = 1024,	-- Sundown Marsh
-				["350:360:611:230"] = 1038,	-- Dragonmaw Gates
+			n(EXPLORATION, {
+				exploration(1036, "225:185:347:218"),	-- Angerfang Encampment
+				exploration(1018, "240:175:77:245"),	-- Black Channel Marsh
+				exploration(1022, "225:190:89:142"),	-- Bluegill Marsh
+				exploration(1016, "256:250:507:115"),	-- Direforge Hill
+				exploration(1038, "350:360:611:230"),	-- Dragonmaw Gates
+				exploration(205, "205:180:401:21"),		-- Dun Modr
+				exploration(309, "200:185:349:115"),	-- Ironbeard's Tomb
+				exploration(150, "175:128:13:314"),		-- Menethil Harbor
+				exploration(1020, "205:245:527:264"),	-- Mosshide Fen
+				exploration(1017, "190:160:628:176"),	-- Raptor Ridge
+				exploration(1023, "200:240:237:41"),	-- Saltspray Glen
+				exploration(1024, "300:240:92:82"),		-- Sundown Marsh
+				exploration(1025, "185:240:456:125"),	-- The Green Belt
+				exploration(1021, "230:190:470:371"),	-- Thelgen Rock
+				exploration(118, "195:185:247:205"),	-- Whelgar's Excavation Site
 				--[[
-				[298] = 4,                               -- Baradin Bay
-				[299] = 5,                               -- Menethil Bay
-				[836] = 7,                               -- Dun Algaz
-				[881] = 8,                               -- Thandol Span
-				[1037] = 19,                             -- Grim Batol
-				[1039] = 21,                             -- The Lost Fleet
-				[2103] = 22,                             -- Menethil Keep
-				[2104] = 23,                             -- Deepwater Tavern
-				[2365] = 24,                             -- The Great Sea
-				[2402] = 25,                             -- The Forbidding Sea
+				exploration(298),	-- Baradin Bay
+				exploration(2104),	-- Deepwater Tavern
+				exploration(836),	-- Dun Algaz
+				exploration(1037),	-- Grim Batol
+				exploration(299),	-- Menethil Bay
+				exploration(2103),	-- Menethil Keep
+				exploration(881),	-- Thandol Span
+				exploration(2402),	-- The Forbidding Sea
+				exploration(2365),	-- The Great Sea
+				exploration(1039),	-- The Lost Fleet
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(553, {	-- Dun Modr, Wetlands

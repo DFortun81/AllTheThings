@@ -153,55 +153,55 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			})),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["105:110:311:131"] = 129,	-- Mizjah Ruins
-				["105:125:387:64"] = 1740,	-- Venture Co. Base Camp
-				["110:105:260:132"] = 117,	-- Grom'gol Base Camp
-				["110:110:306:301"] = 477,	-- Ruins of Jubuwal
-				["110:140:371:129"] = 127,	-- Balia'mah Ruins
-				["115:115:156:42"] = 122,	-- Zuuldaia Ruins
-				["120:120:345:276"] = 310,	-- Crystalvein Mine
-				["125:120:314:493"] = 297,	-- Jaguero Isle
-				["125:125:280:368"] = 1737,	-- Mistvale Valley
-				["125:140:196:3"] = 102,	-- Ruins of Zul'Kunda
-				["128:125:331:59"] = 37,	-- Lake Nazferiti
-				["128:125:364:231"] = 128,	-- Ziata'jai Ruins
-				["128:175:432:94"] = 105,	-- Mosh'Ogg Ogre Mound
-				["140:110:269:26"] = 100,	-- Nesingwary's Expedition
-				["145:128:203:433"] = 35,	-- Booty Bay
-				["155:150:388:0"] = 101,	-- Kurzen's Compound
-				["165:175:194:284"] = 1739,	-- Bloodsail Compound
-				["165:190:229:422"] = 43,	-- Wild Shore
-				["170:125:394:212"] = 103,	-- Ruins of Zul'Mamwe
-				["170:90:284:0"] = 99,		-- Rebel Camp
-				["190:175:152:90"] = 104,	-- The Vile Reef
-				["200:185:235:189"] = 1741,	-- Gurubashi Arena
-				["245:220:483:8"] = 19,		-- Zul'Gurub
-				["90:115:211:359"] = 1738,	-- Nek'mani Wellspring
-				["90:80:241:92"] = 123,		-- Bal'lal Ruins
-				["95:95:299:88"] = 125,		-- Kal'ai Ruins
-				["95:95:350:335"] = 311,	-- Ruins of Aboraz
+			n(EXPLORATION, {
+				exploration(123, "90:80:241:92"),		-- Bal'lal Ruins
+				exploration(127, "110:140:371:129"),	-- Balia'mah Ruins
+				exploration(1739, "165:175:194:284"),	-- Bloodsail Compound
+				exploration(35, "145:128:203:433"),		-- Booty Bay
+				exploration(310, "120:120:345:276"),	-- Crystalvein Mine
+				exploration(117, "110:105:260:132"),	-- Grom'gol Base Camp
+				exploration(1741, "200:185:235:189"),	-- Gurubashi Arena
+				exploration(297, "125:120:314:493"),	-- Jaguero Isle
+				exploration(125, "95:95:299:88"),		-- Kal'ai Ruins
+				exploration(101, "155:150:388:0"),		-- Kurzen's Compound
+				exploration(37, "128:125:331:59"),		-- Lake Nazferiti
+				exploration(1737, "125:125:280:368"),	-- Mistvale Valley
+				exploration(129, "105:110:311:131"),	-- Mizjah Ruins
+				exploration(105, "128:175:432:94"),		-- Mosh'Ogg Ogre Mound
+				exploration(1738, "90:115:211:359"),	-- Nek'mani Wellspring
+				exploration(100, "140:110:269:26"),		-- Nesingwary's Expedition
+				exploration(99, "170:90:284:0"),		-- Rebel Camp
+				exploration(311, "95:95:350:335"),		-- Ruins of Aboraz
+				exploration(477, "110:110:306:301"),	-- Ruins of Jubuwal
+				exploration(102, "125:140:196:3"),		-- Ruins of Zul'Kunda
+				exploration(103, "170:125:394:212"),	-- Ruins of Zul'Mamwe
+				exploration(104, "190:175:152:90"),		-- The Vile Reef
+				exploration(1740, "105:125:387:64"),	-- Venture Co. Base Camp
+				exploration(43, "165:190:229:422"),		-- Wild Shore
+				exploration(128, "128:125:364:231"),	-- Ziata'jai Ruins
+				exploration(19, "245:220:483:8"),		-- Zul'Gurub
+				exploration(122, "115:115:156:42"),		-- Zuuldaia Ruins
 				--[[
-				[7] = 1,					-- Blackwater Cove
-				[106] = 13,					-- The Stockpile
-				[126] = 18,					-- Tkashi Ruins
-				[301] = 23,					-- The Savage Coast
-				[302] = 24,					-- The Crystal Shore
-				[303] = 25,					-- Shell Beach
-				[312] = 28,					-- Janeiro's Point
-				[1577] = 30,				-- The Cape of Stranglethorn
-				[1578] = 31,				-- Southern Savage Coast
-				[1742] = 37,				-- Spirit Den
-				[1757] = 38,				-- The Crimson Veil
-				[1758] = 39,				-- The Riptide
-				[1759] = 40,				-- The Damsel's Luck
-				[1760] = 41,				-- Venture Co. Operations Center
-				[2177] = 42,				-- Battle Ring
-				[2338] = 43,				-- South Seas
-				[2339] = 44,				-- The Great Sea
-				[3357] = 45,				-- Yojamba Isle
+				exploration(2177),	-- Battle Ring
+				exploration(7),		-- Blackwater Cove
+				exploration(312),	-- Janeiro's Point
+				exploration(303),	-- Shell Beach
+				exploration(2338),	-- South Seas
+				exploration(1578),	-- Southern Savage Coast
+				exploration(1742),	-- Spirit Den
+				exploration(1577),	-- The Cape of Stranglethorn
+				exploration(1757),	-- The Crimson Veil
+				exploration(302),	-- The Crystal Shore
+				exploration(1759),	-- The Damsel's Luck
+				exploration(2339),	-- The Great Sea
+				exploration(1758),	-- The Riptide
+				exploration(301),	-- The Savage Coast
+				exploration(106),	-- The Stockpile
+				exploration(126),	-- Tkashi Ruins
+				exploration(1760),	-- Venture Co. Operations Center
+				exploration(3357),	-- Yojamba Isle
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers

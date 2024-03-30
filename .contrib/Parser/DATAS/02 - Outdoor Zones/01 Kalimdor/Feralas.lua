@@ -98,43 +98,43 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["110:110:493:70"] = 1113,	-- Oneiros
-				["110:170:478:386"] = 1106,	-- Frayfeather Highlands
-				["115:115:486:329"] = 1105,	-- Feral Scar Vale
-				["120:195:623:167"] = 1100,	-- Grimtotem Compound
-				["140:165:690:141"] = 1103,	-- Gordunni Outpost
-				["145:320:404:256"] = 1108,	-- The Forgotten Coast
-				["150:125:454:0"] = 1111,	-- Dream Bough
-				["155:160:689:233"] = 1099,	-- Camp Mojache
-				["180:180:208:234"] = 1120,	-- Sardor Isle
-				["190:155:305:0"] = 1114,	-- Ruins of Ravenwind
-				["190:250:540:320"] = 2522,	-- Ruins of Isildien
-				["215:293:192:375"] = 1121,	-- Isle of Dread
-				["225:180:751:198"] = 1137,	-- Lower Wilds
-				["230:195:454:201"] = 2577,	-- Dire Maul
-				["240:220:618:298"] = 1101,	-- The Writhing Deep
-				["285:245:319:75"] = 1119,	-- The Twin Colossals
+			n(EXPLORATION, {
+				exploration(1099, "155:160:689:233"),	-- Camp Mojache
+				exploration(2577, "230:195:454:201"),	-- Dire Maul
+				exploration(1111, "150:125:454:0"),		-- Dream Bough
+				exploration(1105, "115:115:486:329"),	-- Feral Scar Vale
+				exploration(1106, "110:170:478:386"),	-- Frayfeather Highlands
+				exploration(1103, "140:165:690:141"),	-- Gordunni Outpost
+				exploration(1100, "120:195:623:167"),	-- Grimtotem Compound
+				exploration(1121, "215:293:192:375"),	-- Isle of Dread
+				exploration(1137, "225:180:751:198"),	-- Lower Wilds
+				exploration(1113, "110:110:493:70"),	-- Oneiros
+				exploration(1114, "190:155:305:0"),		-- Ruins of Ravenwind
+				exploration(2522, "190:250:540:320"),	-- Ruins of Isildien
+				exploration(1120, "180:180:208:234"),	-- Sardor Isle
+				exploration(1108, "145:320:404:256"),	-- The Forgotten Coast
+				exploration(1119, "285:245:319:75"),	-- The Twin Colossals
+				exploration(1101, "240:220:618:298"),	-- The Writhing Deep
 				--[[
-				[489] = 1,                               -- Thalanaar
-				[1102] = 5,                              -- Wildwind Lake
-				[1104] = 7,                              -- Mok'Gordun
-				[1107] = 10,                             -- Idlewind Lake
-				[1109] = 12,                             -- East Pillar
-				[1110] = 13,                             -- West Pillar
-				[1112] = 15,                             -- Jademir Lake
-				[1115] = 18,                             -- Rage Scar Hold
-				[1116] = 19,                             -- Feathermoon Stronghold
-				[1117] = 20,                             -- Ruins of Solarsal
-				[1136] = 25,                             -- High Wilderness
-				[2323] = 27,                             -- The Veiled Sea
-				[2518] = 28,                             -- Lariss Pavilion
-				[2519] = 29,                             -- Woodpaw Hills
-				[2520] = 30,                             -- Woodpaw Den
-				[2521] = 31,                             -- Verdantis River
-				[3117] = 34,                             -- Shalzaru's Lair
+				exploration(1109),	-- East Pillar
+				exploration(1116),	-- Feathermoon Stronghold
+				exploration(1136),	-- High Wilderness
+				exploration(1107),	-- Idlewind Lake
+				exploration(1112),	-- Jademir Lake
+				exploration(2518),	-- Lariss Pavilion
+				exploration(1104),	-- Mok'Gordun
+				exploration(1115),	-- Rage Scar Hold
+				exploration(1117),	-- Ruins of Solarsal
+				exploration(3117),	-- Shalzaru's Lair
+				exploration(489),	-- Thalanaar
+				exploration(2323),	-- The Veiled Sea
+				exploration(2521),	-- Verdantis River
+				exploration(1110),	-- West Pillar
+				exploration(1102),	-- Wildwind Lake
+				exploration(2520),	-- Woodpaw Den
+				exploration(2519),	-- Woodpaw Hills
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(568, {	-- Camp Ataya, Feralas

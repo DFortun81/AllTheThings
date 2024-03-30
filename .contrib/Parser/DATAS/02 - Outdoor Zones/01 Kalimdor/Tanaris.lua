@@ -2872,35 +2872,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["110:140:611:147"] = 986,	-- Zalashji's Den
-				["110:180:473:234"] = 1938,	-- Broken Pillar
-				["120:135:533:104"] = 1937,	-- Noonshade Ruins
-				["150:160:291:434"] = 990,	-- Valley of the Watchers
-				["155:150:561:256"] = 2300,	-- Caverns of Time
-				["155:150:592:75"] = 977,	-- Steamwheedle Port
-				["160:150:395:346"] = 984,	-- Eastmoon Ruins
-				["160:190:629:220"] = 1336,	-- Lost Rigger Cove
-				["165:180:509:168"] = 985,	-- Waterspring Field
-				["175:165:421:91"] = 976,	-- Gadgetzan
-				["180:200:252:199"] = 982,	-- The Noxious Lair
-				["185:250:203:286"] = 980,	-- Thistleshrub Valley
-				["195:175:299:100"] = 979,	-- Sandsorrow Watch
-				["195:210:323:359"] = 992,	-- Southmoon Ruins
-				["205:145:325:289"] = 983,	-- Dunemaul Compound
-				["205:157:445:511"] = 987,	-- Land's End Beach
-				["210:175:254:0"] = 978,	-- Zul'Farrak
-				["215:175:499:293"] = 1940,	-- Southbreak Shore
-				["215:180:363:194"] = 1939,	-- Abyssal Sands
-				["220:210:449:372"] = 981,	-- The Gaping Chasm
+			n(EXPLORATION, {
+				exploration(1939, "215:180:363:194"),	-- Abyssal Sands
+				exploration(1938, "110:180:473:234"),	-- Broken Pillar
+				exploration(2300, "155:150:561:256"),	-- Caverns of Time
+				exploration(983, "205:145:325:289"),	-- Dunemaul Compound
+				exploration(984, "160:150:395:346"),	-- Eastmoon Ruins
+				exploration(976, "175:165:421:91"),		-- Gadgetzan
+				exploration(987, "205:157:445:511"),	-- Land's End Beach
+				exploration(1336, "160:190:629:220"),	-- Lost Rigger Cove
+				exploration(1937, "120:135:533:104"),	-- Noonshade Ruins
+				exploration(979, "195:175:299:100"),	-- Sandsorrow Watch
+				exploration(1940, "215:175:499:293"),	-- Southbreak Shore
+				exploration(992, "195:210:323:359"),	-- Southmoon Ruins
+				exploration(977, "155:150:592:75"),		-- Steamwheedle Port
+				exploration(981, "220:210:449:372"),	-- The Gaping Chasm
+				exploration(982, "180:200:252:199"),	-- The Noxious Lair
+				exploration(980, "185:250:203:286"),	-- Thistleshrub Valley
+				exploration(990, "150:160:291:434"),	-- Valley of the Watchers
+				exploration(985, "165:180:509:168"),	-- Waterspring Field
+				exploration(986, "110:140:611:147"),	-- Zalashji's Den
+				exploration(978, "210:175:254:0"),		-- Zul'Farrak
 				--[[
-				[988] = 13,                              -- Wavestrider Beach
-				[989] = 14,                              -- Uldum
-				[991] = 16,                              -- Gunstan's Post
-				[2317] = 24,                             -- South Seas
-				[2857] = 25,                             -- The Rumble Cage
+				exploration(991),	-- Gunstan's Post
+				exploration(2317),	-- South Seas
+				exploration(2857),	-- The Rumble Cage
+				exploration(989),	-- Uldum
+				exploration(988),	-- Wavestrider Beach
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FACTIONS, {
 				faction(369, {	-- Gadgetzan

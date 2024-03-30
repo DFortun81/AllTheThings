@@ -73,25 +73,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["215:365:724:120"] = 1778,	-- Sorrowmurk
-				["235:205:171:145"] = 657,	-- The Harborage
-				["240:245:0:262"] = 1777,	-- Itharius's Cave
-				["245:305:0:140"] = 116,	-- Misty Valley
-				["256:668:746:0"] = 300,	-- Misty Reed Strand
-				["275:240:129:236"] = 1780,	-- Splinterspear Junction
-				["300:275:565:218"] = 74,	-- Pool of Tears
-				["315:235:286:110"] = 1798,	-- The Shifting Mire
-				["345:250:552:378"] = 1797,	-- Stagalbog
-				["360:315:279:237"] = 75,	-- Stonard
-				["365:305:492:0"] = 76,		-- Fallow Sanctuary
+			n(EXPLORATION, {
+				exploration(76, "365:305:492:0"),		-- Fallow Sanctuary
+				exploration(1777, "240:245:0:262"),		-- Itharius's Cave
+				exploration(1778, "215:365:724:120"),	-- Sorrowmurk
+				exploration(657, "235:205:171:145"),	-- The Harborage
+				exploration(300, "256:668:746:0"),		-- Misty Reed Strand
+				exploration(116, "245:305:0:140"),		-- Misty Valley
+				exploration(74, "300:275:565:218"),		-- Pool of Tears
+				exploration(1780, "275:240:129:236"),	-- Splinterspear Junction
+				exploration(1797, "345:250:552:378"),	-- Stagalbog
+				exploration(75, "360:315:279:237"),		-- Stonard
+				exploration(1798, "315:235:286:110"),	-- The Shifting Mire
 				--[[
-				[1779] = 9,                              -- Draenil'dur Village
-				[1817] = 13,                             -- Stagalbog Cave
-				[1978] = 14,                             -- Misty Reed Post
-				[2403] = 15,                             -- The Forbidding Sea
+				exploration(1779),	-- Draenil'dur Village
+				exploration(1978),	-- Misty Reed Post
+				exploration(1817),	-- Stagalbog Cave
+				exploration(2403),	-- The Forbidding Sea
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(599, {	-- Bogpaddle, Swamp of Sorrows

@@ -114,39 +114,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["120:155:818:107"] = 1229,	-- Tower of Eldara
-				["145:215:422:95"] = 1225,	-- Ursolan
-				["160:210:404:194"] = 1228,	-- The Shattered Strand
-				["190:200:681:153"] = 1226,	-- Temple of Arkkoran
-				["200:150:77:331"] = 1236,	-- Haldarr Encampment
-				["215:175:84:229"] = 1237,	-- Valormok
-				["220:255:191:369"] = 1233,	-- Forlorn Ridge
-				["225:180:35:422"] = 1235,	-- Shadowsong Shrine
-				["235:140:478:44"] = 1219,	-- Legash Encampment
-				["235:270:250:106"] = 1216,	-- Timbermaw Hold
-				["240:125:552:499"] = 1232,	-- Ravencrest Monument
-				["240:155:499:119"] = 1220,	-- Thalassian Base Camp
-				["245:185:644:40"] = 2497,	-- Bitter Reaches
-				["265:280:238:221"] = 1221,	-- Ruins of Eldarath
-				["270:300:479:201"] = 1227,	-- Bay of Storms
-				["315:200:296:429"] = 1234,	-- Lake Mennar
-				["370:220:389:353"] = 1231,	-- Southridge Beach
-				["395:128:396:540"] = 1256,	-- The Ruined Reaches
-				["570:170:366:0"] = 1230,	-- Jagged Reef
+			n(EXPLORATION, {
+				exploration(1227, "270:300:479:201"),	-- Bay of Storms
+				exploration(2497, "245:185:644:40"),	-- Bitter Reaches
+				exploration(1233, "220:255:191:369"),	-- Forlorn Ridge
+				exploration(1236, "200:150:77:331"),	-- Haldarr Encampment
+				exploration(1230, "570:170:366:0"),		-- Jagged Reef
+				exploration(1234, "315:200:296:429"),	-- Lake Mennar
+				exploration(1219, "235:140:478:44"),	-- Legash Encampment
+				exploration(1232, "240:125:552:499"),	-- Ravencrest Monument
+				exploration(1221, "265:280:238:221"),	-- Ruins of Eldarath
+				exploration(1235, "225:180:35:422"),	-- Shadowsong Shrine
+				exploration(1231, "370:220:389:353"),	-- Southridge Beach
+				exploration(1226, "190:200:681:153"),	-- Temple of Arkkoran
+				exploration(1220, "240:155:499:119"),	-- Thalassian Base Camp
+				exploration(1256, "395:128:396:540"),	-- The Ruined Reaches
+				exploration(1228, "160:210:404:194"),	-- The Shattered Strand
+				exploration(1216, "235:270:250:106"),	-- Timbermaw Hold
+				exploration(1229, "120:155:818:107"),	-- Tower of Eldara
+				exploration(1225, "145:215:422:95"),	-- Ursolan
+				exploration(1237, "215:175:84:229"),	-- Valormok
 				--[[
-				[878] = 1,                               -- Southfury River
-				[1217] = 3,                              -- Vanndir Encampment
-				[1218] = 4,                              -- TESTAzshara
-				[1222] = 8,                              -- Hetaera's Clutch
-				[1223] = 9,                              -- Temple of Zin-Malor
-				[1224] = 10,                             -- Bear's Head
-				[2321] = 25,                             -- The Great Sea
-				[3137] = 27,                             -- Talrendis Point
-				[3138] = 28,                             -- Rethress Sanctum
-				[3140] = 29,                             -- Scalebeard's Cave
+				exploration(1224),	-- Bear's Head
+				exploration(1222),	-- Hetaera's Clutch
+				exploration(3138),	-- Rethress Sanctum
+				exploration(3140),	-- Scalebeard's Cave
+				exploration(878),	-- Southfury River
+				exploration(1218),	-- TESTAzshara
+				exploration(3137),	-- Talrendis Point
+				exploration(1223),	-- Temple of Zin-Malor
+				exploration(2321),	-- The Great Sea
+				exploration(1217),	-- Vanndir Encampment
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				-- #if AFTER CATA

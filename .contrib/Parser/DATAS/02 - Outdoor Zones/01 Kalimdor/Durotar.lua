@@ -1877,38 +1877,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				pet(418),	-- Water Snake (PET!)
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["128:110:464:33"] = 817,	-- Skull Rock
-				["160:120:413:476"] = 366,	-- Kolkar Crag
-				["160:190:474:384"] = 367,	-- Sen'jin Village
-				["190:180:462:286"] = 372,	-- Tiragarde Keep
-				["190:200:327:60"] = 369,	-- Thunder Ridge
-				["200:240:549:427"] = 368,	-- Echo Isles
-				["210:160:427:78"] = 370,	-- Drygulch Ravine
-				["215:215:355:320"] = 363,	-- Valley of Trials
-				["220:230:432:170"] = 362,	-- Razor Hill
-				["230:230:301:189"] = 816,	-- Razormane Grounds
-				["445:160:244:0"] = 1637,	-- Orgrimmar
+			n(EXPLORATION, {
+				exploration(370, "210:160:427:78"),		-- Drygulch Ravine
+				exploration(368, "200:240:549:427"),	-- Echo Isles
+				exploration(366, "160:120:413:476"),	-- Kolkar Crag
+				exploration(1637, "445:160:244:0"),		-- Orgrimmar
+				exploration(362, "220:230:432:170"),	-- Razor Hill
+				exploration(816, "230:230:301:189"),	-- Razormane Grounds
+				exploration(367, "160:190:474:384"),	-- Sen'jin Village
+				exploration(817, "128:110:464:33"),		-- Skull Rock
+				exploration(369, "190:200:327:60"),		-- Thunder Ridge
+				exploration(372, "190:180:462:286"),	-- Tiragarde Keep
+				exploration(363, "215:215:355:320"),	-- Valley of Trials
 				--[[
-				[364] = 3,                               -- The Den
-				[365] = 4,                               -- Burning Blade Coven
-				[371] = 10,                              -- Dustwind Cave
-				[373] = 12,                              -- Scuttle Coast
-				[374] = 13,                              -- Bladefist Bay
-				[375] = 14,                              -- Deadeye Shore
-				[393] = 15,                              -- Darkspear Strand
-				[410] = 17,                              -- Razorwind Canyon
-				[638] = 18,                              -- Hidden Path
-				[639] = 19,                              -- Spirit Rock
-				[640] = 20,                              -- Shrine of the Dormant Flame
-				[814] = 21,                              -- Southfury River
-				[1296] = 24,                             -- Rocktusk Farm
-				[1297] = 25,                             -- Jaggedswine Farm
-				[2320] = 26,                             -- The Great Sea
-				[2337] = 27,                             -- Razor Hill Barracks
-				[2979] = 28,                             -- Tor'kren Farm
+				exploration(374),	-- Bladefist Bay
+				exploration(365),	-- Burning Blade Coven
+				exploration(393),	-- Darkspear Strand
+				exploration(375),	-- Deadeye Shore
+				exploration(371),	-- Dustwind Cave
+				exploration(638),	-- Hidden Path
+				exploration(1297),	-- Jaggedswine Farm
+				exploration(2337),	-- Razor Hill Barracks
+				exploration(410),	-- Razorwind Canyon
+				exploration(1296),	-- Rocktusk Farm
+				exploration(373),	-- Scuttle Coast
+				exploration(640),	-- Shrine of the Dormant Flame
+				exploration(814),	-- Southfury River
+				exploration(639),	-- Spirit Rock
+				exploration(364),	-- The Den
+				exploration(2320),	-- The Great Sea
+				exploration(2979),	-- Tor'kren Farm
 				]]--
-			})),
+			}),
 			-- #endif
 			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {

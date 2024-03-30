@@ -86,31 +86,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["190:190:31:155"] = 482,	-- Highperch
-				["205:195:259:131"] = 2097,	-- Darkcloud Pinnacle
-				["210:180:205:70"] = 485,	-- The Great Lift
-				["210:190:357:264"] = 484,	-- Freewind Post
-				["210:195:391:192"] = 481,	-- Splithoof Crag
-				["240:220:492:250"] = 2303,	-- Windbreak Canyon
-				["250:240:179:200"] = 483,	-- The Screeching Canyon
-				["305:310:0:0"] = 480,		-- Camp E'thok
-				["320:365:610:300"] = 439,	-- The Shimmering Flats
+			n(EXPLORATION, {
+				exploration(480, "305:310:0:0"),		-- Camp E'thok
+				exploration(2097, "205:195:259:131"),	-- Darkcloud Pinnacle
+				exploration(484, "210:190:357:264"),	-- Freewind Post
+				exploration(482, "190:190:31:155"),		-- Highperch
+				exploration(481, "210:195:391:192"),	-- Splithoof Crag
+				exploration(485, "210:180:205:70"),		-- The Great Lift
+				exploration(483, "250:240:179:200"),	-- The Screeching Canyon
+				exploration(439, "320:365:610:300"),	-- The Shimmering Flats
+				exploration(2303, "240:220:492:250"),	-- Windbreak Canyon
 				--[[
-				[479] = 2,                               -- The Rustmaul Dig Site
-				[486] = 9,                               -- Galak Hold
-				[487] = 10,                              -- Roguefeather Den/
-				[488] = 11,                              -- The Weathered Nook
-				[1557] = 12,                             -- Splithoof Hold
-				[2237] = 14,                             -- Whitereach Post
-				[2238] = 15,                             -- Gornia
-				[2239] = 16,                             -- Zane's Eye Crater
-				[2240] = 17,                             -- Mirage Raceway
-				[3037] = 19,                             -- Ironstone Camp
-				[3038] = 20,                             -- Weazel's Crater
-				[3039] = 21,                             -- Tahonda Ruins
+				exploration(486),	-- Galak Hold
+				exploration(2238),	-- Gornia
+				exploration(3037),	-- Ironstone Camp
+				exploration(2240),	-- Mirage Raceway
+				exploration(487),	-- Roguefeather Den
+				exploration(1557),	-- Splithoof Hold
+				exploration(3039),	-- Tahonda Ruins
+				exploration(479),	-- The Rustmaul Dig Site
+				exploration(488),	-- The Weathered Nook
+				exploration(3038),	-- Weazel's Crater
+				exploration(2237),	-- Whitereach Post
+				exploration(2239),	-- Zane's Eye Crater
 				]]
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles

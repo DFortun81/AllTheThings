@@ -103,29 +103,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["125:125:475:433"] = 2541,	-- Sishir Canyon
-				["125:86:663:582"] = 2539,	-- Malaka'jin
-				["145:107:572:561"] = 2540,	-- Boulderslide Ravine
-				["150:150:389:320"] = 460,	-- Sun Rock Retreat
-				["190:97:718:571"] = 2538,	-- Camp Aparaje
-				["200:215:390:145"] = 464,	-- Mirkfallon Lake
-				["225:120:668:515"] = 2537,	-- Grimtotem Post
-				["230:355:210:234"] = 465,	-- The Charred Vale
-				["270:205:247:0"] = 467,	-- Stonetalon Peak
-				["288:355:457:282"] = 1076,	-- Webwinder Path
-				["320:275:553:197"] = 461,	-- Windshear Crag
+			n(EXPLORATION, {
+				exploration(2540, "145:107:572:561"),	-- Boulderslide Ravine
+				exploration(2538, "190:97:718:571"),	-- Camp Aparaje
+				exploration(2537, "225:120:668:515"),	-- Grimtotem Post
+				exploration(2539, "125:86:663:582"),	-- Malaka'jin
+				exploration(464, "200:215:390:145"),	-- Mirkfallon Lake
+				exploration(2541, "125:125:475:433"),	-- Sishir Canyon
+				exploration(467, "270:205:247:0"),		-- Stonetalon Peak
+				exploration(460, "150:150:389:320"),	-- Sun Rock Retreat
+				exploration(465, "230:355:210:234"),	-- The Charred Vale
+				exploration(1076, "288:355:457:282"),	-- Webwinder Path
+				exploration(461, "320:275:553:197"),	-- Windshear Crag
 				--[[
-				[463] = 3,                               -- Cragpool Lake
-				[466] = 6,                               -- Valley of the Bloodfuries
-				[468] = 8,                               -- The Talon Den
-				[469] = 9,                               -- Greatwood Vale
-				[636] = 10,                              -- Blackwolf River
-				[1277] = 12,                             -- The Talondeep Path
-				[2160] = 13,                             -- Windshear Mine
-				[3157] = 19,                             -- Boulderslide Cavern
+				exploration(636),	-- Blackwolf River
+				exploration(3157),	-- Boulderslide Cavern
+				exploration(463),	-- Cragpool Lake
+				exploration(469),	-- Greatwood Vale
+				exploration(468),	-- The Talon Den
+				exploration(1277),	-- The Talondeep Path
+				exploration(466),	-- Valley of the Bloodfuries
+				exploration(2160),	-- Windshear Mine
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(360, {	-- Cliffwalker Post, Stonetalon Mountains

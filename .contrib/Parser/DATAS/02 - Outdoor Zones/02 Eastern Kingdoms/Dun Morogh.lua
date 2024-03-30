@@ -2158,34 +2158,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["115:115:252:249"] = 137,	-- Brewnall Village
-				["125:125:217:287"] = 135,	-- Frostmane Hold
-				["128:120:792:279"] = 806,	-- South Gate Outpost
-				["128:128:573:280"] = 803,	-- Amberstill Ranch
-				["128:165:502:221"] = 138,	-- Misty Pine Refuge
-				["128:165:759:173"] = 808,	-- North Gate Outpost
-				["128:180:281:167"] = 211,	-- Iceflow Lake
-				["128:190:347:163"] = 802,	-- Shimmer Ridge
-				["150:128:295:385"] = 800,	-- Coldridge Pass
-				["155:128:522:322"] = 804,	-- The Tundrid Hills
-				["155:170:694:273"] = 212,	-- Helm's Bed Lake
-				["165:165:608:291"] = 134,	-- Gol'Bolar Quarry
-				["180:128:274:296"] = 801,	-- Chill Breeze Valley
-				["180:165:166:184"] = 133,	-- Gnomeregan
-				["200:185:314:311"] = 136,	-- The Grizzled Den
-				["200:200:386:294"] = 131,	-- Kharanos
-				["240:185:155:403"] = 132,	-- Coldridge Valley
-				["315:200:397:163"] = 809,	-- Gates of Ironforge
+			n(EXPLORATION, {
+				exploration(803, "128:128:573:280"),	-- Amberstill Ranch
+				exploration(137, "115:115:252:249"),	-- Brewnall Village
+				exploration(801, "180:128:274:296"),	-- Chill Breeze Valley
+				exploration(800, "150:128:295:385"),	-- Coldridge Pass
+				exploration(132, "240:185:155:403"),	-- Coldridge Valley
+				exploration(135, "125:125:217:287"),	-- Frostmane Hold
+				exploration(809, "315:200:397:163"),	-- Gates of Ironforge
+				exploration(133, "180:165:166:184"),	-- Gnomeregan
+				exploration(134, "165:165:608:291"),	-- Gol'Bolar Quarry
+				exploration(212, "155:170:694:273"),	-- Helm's Bed Lake
+				exploration(211, "128:180:281:167"),	-- Iceflow Lake
+				exploration(131, "200:200:386:294"),	-- Kharanos
+				exploration(138, "128:165:502:221"),	-- Misty Pine Refuge
+				exploration(808, "128:165:759:173"),	-- North Gate Outpost
+				exploration(802, "128:190:347:163"),	-- Shimmer Ridge
+				exploration(806, "128:120:792:279"),	-- South Gate Outpost
+				exploration(136, "200:185:314:311"),	-- The Grizzled Den
+				exploration(804, "155:128:522:322"),	-- The Tundrid Hills
 				--[[
-				[77] = 1,								-- Anvilmar
-				[189] = 10,								-- Steelgrill's Depot
-				[716] = 13,								-- Ironband's Compound
-				[805] = 19,								-- South Gate Pass
-				[807] = 21,								-- North Gate Pass
-				[2102] = 24,							-- Thunderbrew Distillery
+				exploration(77),	-- Anvilmar
+				exploration(716),	-- Ironband's Compound
+				exploration(807),	-- North Gate Pass
+				exploration(805),	-- South Gate Pass
+				exploration(189),	-- Steelgrill's Depot
+				exploration(2102),	-- Thunderbrew Distillery
 				]]--
-			})),
+			}),
 			-- #endif
 			-- #if AFTER 4.0.3.13277
 			n(FLIGHT_PATHS, {

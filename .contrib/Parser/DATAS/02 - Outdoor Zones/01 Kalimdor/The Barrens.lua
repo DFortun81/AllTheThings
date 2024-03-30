@@ -27,47 +27,47 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["200:185:340:234"] = 1700,	-- Agama'gor
-				["128:128:431:479"] = 359,	-- Bael Modan
-				["155:128:335:462"] = 1701,	-- Blackthorn Ridge
-				["120:110:555:0"] = 381,	-- Boulder Lode Mine
-				["125:165:442:298"] = 1698,	-- Bramblescar
-				["145:125:365:350"] = 378,	-- Camp Taurajo
-				["128:105:419:63"] = 384,	-- Dreadmist Peak
-				["100:165:564:52"] = 379,	-- Far Watch Post
-				["210:150:355:402"] = 390,	-- Field of Giants
-				["125:115:492:63"] = 1704,	-- Grol'dom Farm
-				["128:128:306:130"] = 1702,	-- Honor's Stand
-				["175:185:365:177"] = 387,	-- Lushwater Oasis
-				["150:120:527:307"] = 385,	-- Northwatch Hold
-				["115:110:507:294"] = 1697,	-- Raptor Grounds
-				["125:125:556:189"] = 392,	-- Ratchet
-				["155:115:407:553"] = 1316,	-- Razorfen Downs
-				["128:128:341:537"] = 1717,	-- Razorfen Kraul
-				["155:155:431:118"] = 380,	-- The Crossroads
-				["200:145:317:29"] = 383,	-- The Dry Hills
-				["120:125:384:115"] = 386,	-- The Forgotten Pools
-				["95:100:581:247"] = 391,	-- The Merchant Coast
-				["128:100:412:0"] = 1703,	-- The Mor'shan Rampart
-				["170:120:456:0"] = 382,	-- The Sludge Fen
-				["155:128:481:211"] = 388,	-- The Stagnant Oasis
-				["140:128:498:119"] = 1699,	-- Thorn Hill
+			n(EXPLORATION, {
+				exploration(1700, "200:185:340:234"),	-- Agama'gor
+				exploration(359, "128:128:431:479"),	-- Bael Modan
+				exploration(1701, "155:128:335:462"),	-- Blackthorn Ridge
+				exploration(381, "120:110:555:0"),		-- Boulder Lode Mine
+				exploration(1698, "125:165:442:298"),	-- Bramblescar
+				exploration(378, "145:125:365:350"),	-- Camp Taurajo
+				exploration(384, "128:105:419:63"),		-- Dreadmist Peak
+				exploration(379, "100:165:564:52"),		-- Far Watch Post
+				exploration(390, "210:150:355:402"),	-- Field of Giants
+				exploration(1704, "125:115:492:63"),	-- Grol'dom Farm
+				exploration(1702, "128:128:306:130"),	-- Honor's Stand
+				exploration(387, "175:185:365:177"),	-- Lushwater Oasis
+				exploration(385, "150:120:527:307"),	-- Northwatch Hold
+				exploration(1697, "115:110:507:294"),	-- Raptor Grounds
+				exploration(392, "125:125:556:189"),	-- Ratchet
+				exploration(1316, "155:115:407:553"),	-- Razorfen Downs
+				exploration(1717, "128:128:341:537"),	-- Razorfen Kraul
+				exploration(380, "155:155:431:118"),	-- The Crossroads
+				exploration(383, "200:145:317:29"),		-- The Dry Hills
+				exploration(386, "120:125:384:115"),	-- The Forgotten Pools
+				exploration(391, "95:100:581:247"),		-- The Merchant Coast
+				exploration(1703, "128:100:412:0"),		-- The Mor'shan Rampart
+				exploration(382, "170:120:456:0"),		-- The Sludge Fen
+				exploration(388, "155:128:481:211"),	-- The Stagnant Oasis
+				exploration(1699, "140:128:498:119"),	-- Thorn Hill
 				--[[
-				[401] = 16,                              -- The Tidus Stair
-				[458] = 17,                              -- Gold Road
-				[720] = 18,                              -- Fray Island
-				[815] = 19,                              -- Southfury River
-				[1156] = 21,                             -- Southern Barrens
-				[1157] = 22,                             -- Southern Gold Road
-				[1599] = 26,                             -- Mor'shan Base Camp
-				[1718] = 40,                             -- The Great Lift
-				[2138] = 41,                             -- Dreadmist Den
-				[2157] = 42,                             -- Bael'dun Keep
-				[2319] = 43,                             -- The Great Sea
-				[2757] = 44,                             -- Shrine of the Fallen Warrior
+				exploration(2157),	-- Bael'dun Keep
+				exploration(2138),	-- Dreadmist Den
+				exploration(458),	-- Gold Road
+				exploration(720),	-- Fray Island
+				exploration(1599),	-- Mor'shan Base Camp
+				exploration(2757),	-- Shrine of the Fallen Warrior
+				exploration(1156),	-- Southern Barrens
+				exploration(1157),	-- Southern Gold Road
+				exploration(815),	-- Southfury River
+				exploration(1718),	-- The Great Lift
+				exploration(2319),	-- The Great Sea
+				exploration(401),	-- The Tidus Stair
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet

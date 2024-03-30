@@ -150,52 +150,52 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["128:195:131:137"] = 441,	-- Lake Falathim
-				["146:200:856:151"] = 438,	-- Bough Shadow
-				["155:150:260:373"] = 418,	-- The Ruins of Stardust
-				["165:175:189:324"] = 417,	-- Fire Scar Shrine
-				["180:245:520:238"] = 426,	-- Raynewood Retreat
-				["200:160:796:311"] = 437,	-- Warsong Lumber Camp
-				["200:205:392:218"] = 424,	-- Iris Lake
-				["205:185:272:251"] = 415,	-- Astranaar
-				["210:185:463:141"] = 419,	-- The Howling Vale
-				["215:305:205:38"] = 413,	-- Maestra's Post
-				["220:195:104:259"] = 416,	-- The Shrine of Aessina
-				["225:255:597:258"] = 428,	-- Night Run
-				["235:205:547:426"] = 422,	-- Fallen Sky Lake
-				["245:245:19:28"] = 414,	-- The Zoram Strand
-				["245:255:713:344"] = 434,	-- Felfire Hill
-				["255:195:203:158"] = 2301,	-- Thistlefur Village
-				["275:240:356:347"] = 421,	-- Mystral Lake
-				["285:185:694:225"] = 430,	-- Satyrnaar
+			n(EXPLORATION, {
+				exploration(415, "205:185:272:251"),	-- Astranaar
+				exploration(438, "146:200:856:151"),	-- Bough Shadow
+				exploration(422, "235:205:547:426"),	-- Fallen Sky Lake
+				exploration(434, "245:255:713:344"),	-- Felfire Hill
+				exploration(417, "165:175:189:324"),	-- Fire Scar Shrine
+				exploration(424, "200:205:392:218"),	-- Iris Lake
+				exploration(441, "128:195:131:137"),	-- Lake Falathim
+				exploration(413, "215:305:205:38"),		-- Maestra's Post
+				exploration(421, "275:240:356:347"),	-- Mystral Lake
+				exploration(428, "225:255:597:258"),	-- Night Run
+				exploration(426, "180:245:520:238"),	-- Raynewood Retreat
+				exploration(430, "285:185:694:225"),	-- Satyrnaar
+				exploration(419, "210:185:463:141"),	-- The Howling Vale
+				exploration(418, "155:150:260:373"),	-- The Ruins of Stardust
+				exploration(416, "220:195:104:259"),	-- The Shrine of Aessina
+				exploration(414, "245:245:19:28"),		-- The Zoram Strand
+				exploration(2301, "255:195:203:158"),	-- Thistlefur Village
+				exploration(437, "200:160:796:311"),	-- Warsong Lumber Camp
 				--[[
-				[411] = 1,                               -- Bathran's Haunt
-				[412] = 2,                               -- The Ruins of Ordil'Aran
-				[420] = 10,                              -- Silverwind Refuge
-				[425] = 14,                              -- Moonwell
-				[427] = 16,                              -- The Shady Nook
-				[429] = 18,                              -- Xavian
-				[431] = 20,                              -- Splintertree Post
-				[432] = 21,                              -- The Dor'Danil Barrow Den
-				[433] = 22,                              -- Falfarren River
-				[435] = 24,                              -- Demon Fall Canyon
-				[436] = 25,                              -- Demon Fall Ridge
-				[879] = 29,                              -- Southfury River
-				[1276] = 30,                             -- The Talondeep Path
-				[2325] = 32,                             -- The Veiled Sea
-				[2357] = 33,                             -- Bloodtooth Camp
-				[2358] = 34,                             -- Forest Song
-				[2359] = 35,                             -- Greenpaw Village
-				[2360] = 36,                             -- Silverwing Outpost
-				[2457] = 37,                             -- Nightsong Woods
-				[2637] = 38,                             -- Kargathia Keep
-				[2797] = 39,                             -- Blackfathom Deeps
-				[2897] = 40,                             -- Zoram'gar Outpost
-				[3177] = 41,                             -- Warsong Labor Camp
-				[3319] = 42,                             -- Silverwing Grove
+				exploration(411),	-- Bathran's Haunt
+				exploration(2797),	-- Blackfathom Deeps
+				exploration(2357),	-- Bloodtooth Camp
+				exploration(435),	-- Demon Fall Canyon
+				exploration(436),	-- Demon Fall Ridge
+				exploration(433),	-- Falfarren River
+				exploration(2358),	-- Forest Song
+				exploration(2359),	-- Greenpaw Village
+				exploration(2637),	-- Kargathia Keep
+				exploration(425),	-- Moonwell
+				exploration(2457),	-- Nightsong Woods
+				exploration(420),	-- Silverwind Refuge
+				exploration(3319),	-- Silverwing Grove
+				exploration(2360),	-- Silverwing Outpost
+				exploration(879), 	-- Southfury River
+				exploration(431),	-- Splintertree Post
+				exploration(432),	-- The Dor'Danil Barrow Den
+				exploration(412),	-- The Ruins of Ordil'Aran
+				exploration(427),	-- The Shady Nook
+				exploration(1276),	-- The Talondeep Path
+				exploration(2325),	-- The Veiled Sea
+				exploration(3177),	-- Warsong Labor Camp
+				exploration(429),	-- Xavian
+				exploration(2897),	-- Zoram'gar Outpost
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(28, {	-- Astranaar, Ashenvale

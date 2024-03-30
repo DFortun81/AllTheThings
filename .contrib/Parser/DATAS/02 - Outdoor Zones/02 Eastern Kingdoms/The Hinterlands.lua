@@ -250,31 +250,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["145:220:158:149"] = 1882,	-- Plaguemist Ravine
-				["160:145:512:232"] = 351,	-- Skulk Rock
-				["170:170:319:302"] = 1883,	-- Valorwind Lake
-				["170:310:693:303"] = 307,	-- The Overlook Cliffs
-				["180:170:408:260"] = 1886,	-- The Creeping Ruin
-				["185:195:237:185"] = 350,	-- Quel'Danil Lodge
-				["195:185:240:387"] = 353,	-- Shadra'Alor
-				["200:165:373:365"] = 355,	-- The Altar of Zul
-				["205:195:374:164"] = 1884,	-- Agol'watha
-				["225:200:171:306"] = 1885,	-- Hiri'watha
-				["235:285:505:333"] = 354,	-- Jintha'Alor
-				["255:205:13:245"] = 348,	-- Aerie Peak
-				["275:275:509:19"] = 356,	-- Seradane
-				["280:205:571:239"] = 1917,	-- Shaol'watha
+			n(EXPLORATION, {
+				exploration(348, "255:205:13:245"),		-- Aerie Peak
+				exploration(1884, "205:195:374:164"),	-- Agol'watha
+				exploration(1885, "225:200:171:306"),	-- Hiri'watha
+				exploration(354, "235:285:505:333"),	-- Jintha'Alor
+				exploration(1882, "145:220:158:149"),	-- Plaguemist Ravine
+				exploration(350, "185:195:237:185"),	-- Quel'Danil Lodge
+				exploration(356, "275:275:509:19"),		-- Seradane
+				exploration(353, "195:185:240:387"),	-- Shadra'Alor
+				exploration(1917, "280:205:571:239"),	-- Shaol'watha
+				exploration(351, "160:145:512:232"),	-- Skulk Rock
+				exploration(355, "200:165:373:365"),	-- The Altar of Zul
+				exploration(1886, "180:170:408:260"),	-- The Creeping Ruin
+				exploration(307, "170:310:693:303"),	-- The Overlook Cliffs
+				exploration(1883, "170:170:319:302"),	-- Valorwind Lake
 				--[[
-				[349] = 3,                               -- Wildhammer Keep
-				[352] = 6,                               -- Zun'watha
-				[1880] = 11,                             -- Featherbeard's Hovel
-				[1881] = 12,                             -- Shindigger's Camp
-				[1887] = 18,                             -- Bogen's Ledge
-				[2400] = 20,                             -- The Forbidding Sea
-				[3317] = 21,                             -- Revantusk Village
+				exploration(1887),	-- Bogen's Ledge
+				exploration(1880),	-- Featherbeard's Hovel
+				exploration(3317),	-- Revantusk Village
+				exploration(1881),	-- Shindigger's Camp
+				exploration(2400),	-- The Forbidding Sea
+				exploration(349),	-- Wildhammer Keep
+				exploration(352),	-- Zun'watha
 				]]--
-			})),
+			}),
 			-- #endif
 			-- #if BEFORE TBC
 			n(FACTIONS, {

@@ -56,21 +56,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["275:235:77:366"] = 1957,	-- Blackchar Cave
-				["305:220:494:300"] = 247,	-- Grimesilt Dig Site
-				["305:230:545:407"] = 1958,	-- Tanner Camp
-				["360:280:247:388"] = 1444,	-- The Sea of Cinders
-				["405:430:85:30"] = 1442,	-- Firewatch Ridge
-				["425:325:250:170"] = 246,	-- The Cauldron
-				["460:365:422:8"] = 1959,	-- Dustfire Valley
+			n(EXPLORATION, {
+				exploration(1957, "275:235:77:366"),	-- Blackchar Cave
+				exploration(1959, "460:365:422:8"),		-- Dustfire Valley
+				exploration(1442, "405:430:85:30"),		-- Firewatch Ridge
+				exploration(247, "305:220:494:300"),	-- Grimesilt Dig Site
+				exploration(1958, "305:230:545:407"),	-- Tanner Camp
+				exploration(246, "425:325:250:170"),	-- The Cauldron
+				exploration(1444, "360:280:247:388"),	-- The Sea of Cinders
 				--[[
-				[1443] = 4,                              -- The Slag Pit
-				[1445] = 6,                              -- Blackrock Mountain
-				[1446] = 7,                              -- Thorium Point
-				[2838] = 11,                             -- Stonewrought Pass
+				exploration(1445),	-- Blackrock Mountain
+				exploration(1443),	-- The Slag Pit
+				exploration(2838),	-- Stonewrought Pass
+				exploration(1446),	-- Thorium Point
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(673, {	-- Iron Summit, Searing Gorge

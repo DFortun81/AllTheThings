@@ -24,14 +24,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			-- #if ANYCLASSIC
-			n(EXPLORATION, explorationBatch({
-				["555:510:244:89"] = 656,	-- Lake Elune'ara
+			n(EXPLORATION, {
+				exploration(656, "555:510:244:89"),	-- Lake Elune'ara
 				--[[
-				[2361] = 2,                              -- Nighthaven
-				[2362] = 3,                              -- Shrine of Remulos
-				[2363] = 4,                              -- Stormrage Barrow Dens
+				exploration(2361),	-- Nighthaven
+				exploration(2362),	-- Shrine of Remulos
+				exploration(2363),	-- Stormrage Barrow Dens
 				]]--
-			})),
+			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(49, {	-- Moonglade
