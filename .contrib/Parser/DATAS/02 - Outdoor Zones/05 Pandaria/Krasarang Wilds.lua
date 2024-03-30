@@ -44,6 +44,30 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
+				explorationHeader({
+					exploration(6106),	-- Anglers Wharf
+					exploration(6155),	-- Cradle of Chi-Ji
+					exploration(6049),	-- Crane Wing Refuge
+					exploration(6013),	-- Dawnchaser Retreat
+					exploration(6010),	-- Dojani River
+					exploration(6017),	-- Fallsong Village
+					exploration(6369),	-- Krasarang Cove
+					exploration(6146),	-- Marista
+					exploration(6135),	-- Nayeli Lagoon
+					exploration(6008),	-- Ruins of Dojan
+					exploration(6015),	-- Ruins of Korja
+					exploration(6016),	-- Sentinel Basecamp
+					exploration(6058),	-- Shattered Convoy
+					exploration(6048),	-- Temple of the Red Crane
+					exploration(6004),	-- The Deepwild
+					exploration(6019),	-- The Forbidden Jungle
+					exploration(6020),	-- The Southern Wall
+					exploration(6007),	-- Thunder Cleft
+					exploration(6370),	-- Turtle Beach
+					exploration(6148),	-- Unga Ingoo
+					exploration(6005),	-- Zhu Province
+					exploration(6000),	-- Zhu's Watch
+				}),
 				n(FACTIONS, {
 					faction(1375, {	-- Dominance Offensive
 						["races"] = HORDE_ONLY,

@@ -169,6 +169,36 @@ root(ROOTS.Zones, {
 						pet(1456),	-- Thicket Skitterer (PET!)
 					},
 				})),
+				explorationHeader({
+					exploration(6999),	-- Admiral Taylor's Garrison
+					exploration(7199),	-- Apexis Excavation
+					exploration(7197),	-- Axefall
+					exploration(7317),	-- Bladefist Hold
+					exploration(7277),	-- Bloodmane Pridelands
+					exploration(7140),	-- Bloodmane Valley
+					exploration(7126),	-- Camp Thornscar
+					exploration(7034),	-- Dreadtalon Peak
+					exploration(7308),	-- Harvesting Pits
+					exploration(7046),	-- Lost Veil Anzu
+					exploration(7272),	-- Murkbog
+					exploration(7142),	-- Nest of the Ravenspeakers
+					exploration(7162),	-- Pinchwhistle Gearworks
+					exploration(7163),	-- Pinchwhistle Point
+					exploration(7035),	-- Ravenskar
+					exploration(7145),	-- Sethekk Hollow
+					exploration(7125),	-- Shadowglade
+					exploration(7031),	-- Skettis
+					exploration(7316),	-- Skettis
+					exploration(7198),	-- Southport
+					exploration(7182),	-- Talon Altar
+					exploration(7305),	-- Terrace of Dawn
+					exploration(7147),	-- The Broken Spire
+					exploration(7270),	-- The Howling Crag
+					exploration(7110),	-- The Undergrowth
+					exploration(7202),	-- The Writhing Mire
+					exploration(7127),	-- Veil Akraz
+					exploration(7306),	-- Windswept Terrace
+				}),
 				n(FACTIONS, {
 					faction(1515),	-- Arakkoa Outcasts
 				}),

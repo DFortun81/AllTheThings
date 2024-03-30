@@ -259,6 +259,31 @@ root(ROOTS.Zones, {
 						pet(1591),	--  Violet Firefly (PET!)
 					},
 				})),
+				explorationHeader({
+					exploration(7536),	-- Aktar's Post
+					exploration(7717),	-- Bleeding Hollow Hunting Grounds
+					exploration(7641),	-- Fang'rila
+					exploration(7525),	-- Farlight Terrace
+					exploration(7716),	-- Hellfire Citadel
+					exploration(7723),	-- Ironhold Approach
+					exploration(7515),	-- Ironhold Harbor
+					exploration(7522),	-- Lion's Watch
+					exploration(7655),	-- Rangari Refuge
+					exploration(7524),	-- Ruins of Kra'nak
+					exploration(7718),	-- Scuttler's Coast
+					exploration(7526),	-- Temple of Sha'naar
+					exploration(7722),	-- The Broken Rampart
+					exploration(7615),	-- The Fel Forge
+					exploration(7719),	-- The Felblight
+					exploration(7527),	-- The Iron Front
+					exploration(7538),	-- Throne of Kil'jaeden
+					exploration(7721),	-- Thundertail Wallow
+					exploration(7523),	-- Vol'mar
+					exploration(7720),	-- Warcamp Gromdar
+					exploration(7539),	-- Zeth'Gol
+					exploration(7514),	-- Zeth'Kur
+					exploration(7604),	-- Zorammarsh
+				}),
 				n(FACTIONS, {
 					faction(1847, {["races"] = ALLIANCE_ONLY}),	-- Hand of The Prophet
 					faction(1849),	-- Order of the Awakened

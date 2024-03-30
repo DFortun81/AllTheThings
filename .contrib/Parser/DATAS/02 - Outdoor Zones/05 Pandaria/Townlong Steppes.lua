@@ -90,6 +90,23 @@ root(ROOTS.Zones, {
 						pet(740),	-- Yakrat (PET!)
 					},
 				}),
+				explorationHeader({
+					exploration(6192),	-- Dusklight Bridge
+					exploration(6191),	-- Dusklight Hollow
+					exploration(6312),	-- Fire Camp Gai-Cho
+					exploration(6163),	-- Fire Camp Osul
+					exploration(6187),	-- Gao-Ran Battlefront
+					exploration(6171),	-- Hatred's Vice
+					exploration(6205),	-- Kri'vess
+					exploration(6166),	-- Longying Outpost
+					exploration(6213),	-- Niuzao Temple
+					exploration(6193),	-- Rensai's Watchpost
+					exploration(6307),	-- Shan'ze Dao
+					exploration(6195),	-- Sik'vess
+					exploration(6212),	-- Sra'thik Incursion
+					exploration(6314),	-- Sra'vess
+					exploration(6165),	-- Upper Sumprushes
+				}),
 				n(FACTIONS, {
 					faction(1270),	-- Shado-Pan
 					faction(1341, {	-- The August Celestials

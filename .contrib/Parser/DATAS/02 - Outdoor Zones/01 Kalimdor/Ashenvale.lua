@@ -151,48 +151,72 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			explorationHeader({
 				exploration(415, "205:185:272:251"),	-- Astranaar
+				-- #if AFTER CATA
+				exploration(2797),	-- Blackfathom Deeps
+				-- #endif
 				exploration(438, "146:200:856:151"),	-- Bough Shadow
+				-- #if AFTER CATA
+				exploration(435),	-- Demon Fall Canyon
+				-- #endif
 				exploration(422, "235:205:547:426"),	-- Fallen Sky Lake
+				-- #if BEFORE CATA
 				exploration(434, "245:255:713:344"),	-- Felfire Hill
+				-- #endif
 				exploration(417, "165:175:189:324"),	-- Fire Scar Shrine
+				-- #if AFTER CATA
+				exploration(2358),	-- Forest Song
+				exploration(4691),	-- Hellscream's Watch
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(424, "200:205:392:218"),	-- Iris Lake
+				-- #endif
 				exploration(441, "128:195:131:137"),	-- Lake Falathim
 				exploration(413, "215:305:205:38"),		-- Maestra's Post
+				-- #if AFTER CATA
+				exploration(425),	-- Moonwell of Purity
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(421, "275:240:356:347"),	-- Mystral Lake
+				-- #endif
 				exploration(428, "225:255:597:258"),	-- Night Run
 				exploration(426, "180:245:520:238"),	-- Raynewood Retreat
 				exploration(430, "285:185:694:225"),	-- Satyrnaar
+				-- #if AFTER CATA
+				exploration(420),	-- Silverwind Refuge
+				exploration(2360),	-- Silverwing Outpost
+				exploration(431),	-- Splintertree Post
+				exploration(432),	-- The Dor'Danil Barrow Den
+				-- #endif
 				exploration(419, "210:185:463:141"),	-- The Howling Vale
+				-- #if AFTER CATA
+				exploration(1703),	-- The Mor'shan Rampart
+				-- #endif
 				exploration(418, "155:150:260:373"),	-- The Ruins of Stardust
 				exploration(416, "220:195:104:259"),	-- The Shrine of Aessina
 				exploration(414, "245:245:19:28"),		-- The Zoram Strand
 				exploration(2301, "255:195:203:158"),	-- Thistlefur Village
+				-- #if AFTER CATA
+				exploration(3177),	-- Warsong Labor Camp
+				-- #endif
 				exploration(437, "200:160:796:311"),	-- Warsong Lumber Camp
+				-- #if AFTER CATA
+				exploration(2897),	-- Zoram'gar Outpost
+				-- #endif
 				--[[
 				exploration(411),	-- Bathran's Haunt
-				exploration(2797),	-- Blackfathom Deeps
 				exploration(2357),	-- Bloodtooth Camp
-				exploration(435),	-- Demon Fall Canyon
 				exploration(436),	-- Demon Fall Ridge
 				exploration(433),	-- Falfarren River
-				exploration(2358),	-- Forest Song
 				exploration(2359),	-- Greenpaw Village
 				exploration(2637),	-- Kargathia Keep
-				exploration(425),	-- Moonwell
 				exploration(2457),	-- Nightsong Woods
-				exploration(420),	-- Silverwind Refuge
 				exploration(3319),	-- Silverwing Grove
-				exploration(2360),	-- Silverwing Outpost
 				exploration(879), 	-- Southfury River
-				exploration(431),	-- Splintertree Post
-				exploration(432),	-- The Dor'Danil Barrow Den
 				exploration(412),	-- The Ruins of Ordil'Aran
 				exploration(427),	-- The Shady Nook
 				exploration(1276),	-- The Talondeep Path
 				exploration(2325),	-- The Veiled Sea
-				exploration(3177),	-- Warsong Labor Camp
 				exploration(429),	-- Xavian
-				exploration(2897),	-- Zoram'gar Outpost
 				]]--
 			}),
 			n(FLIGHT_PATHS, {

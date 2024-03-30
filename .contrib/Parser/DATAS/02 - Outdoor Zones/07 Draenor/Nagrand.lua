@@ -151,6 +151,43 @@ root(ROOTS.Zones, {
 						pet(1435),	-- Leatherhide Runt (PET!)
 					},
 				})),
+				explorationHeader({
+					exploration(7072),	-- Ancestral Grounds
+					exploration(7303),	-- Broken Precipice
+					exploration(7331),	-- Cerulean Lagoon
+					exploration(7139),	-- Elemental Plateau
+					exploration(7069),	-- Gates of Grommashar
+					exploration(7375),	-- Gorian Proving Grounds
+					exploration(7188),	-- Gra'ah
+					exploration(7068),	-- Grommashar
+					exploration(7123),	-- Hallvalor
+					exploration(7060),	-- Hemet's Happy Hunting Grounds
+					exploration(7367),	-- Highmaul
+					exploration(7405),	-- Highmaul Harbor
+					exploration(7070),	-- Ironfist Harbor
+					exploration(7065),	-- Lok-rath
+					exploration(7067),	-- Mar'gok's Overwatch
+					exploration(7150),	-- Oshu'gun
+					exploration(7063),	-- Riverside Post
+					exploration(7297),	-- Ruins of Na'gwa
+					exploration(7052),	-- Sabermaw
+					exploration(7172),	-- Shadowfall Canyon
+					exploration(7071),	-- Snarlpaw Ledge
+					exploration(7151),	-- Spirit Woods
+					exploration(7386),	-- Spiteleaf Thicket
+					exploration(7094),	-- Stonecrag Gorge
+					exploration(7074),	-- Telaar
+					exploration(7406),	-- The Cliffs of Highmaul
+					exploration(7395),	-- The Coliseum
+					exploration(7376),	-- The Ring of Blood
+					exploration(7073),	-- The Ring of Trials
+					exploration(7280),	-- Throne of the Elements
+					exploration(7059),	-- Wor'var
+					exploration(7271),	-- Worgskin's Camp
+					exploration(7095),	-- Wrecked Caravan
+					exploration(7061),	-- Yrel's Watch
+					exploration(7385),	-- Zangar Shore
+				}),
 				n(FACTIONS, {
 					faction(1711, {	-- Steamwheedle Preservation Society
 						["crs"] = { 87394 },	-- Kwilax Fuseshiv <Reputation Vendor>

@@ -66,6 +66,44 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
+				explorationHeader({
+					exploration(5943),	-- Amberfly Bog
+					exploration(5930),	-- Dawn's Blossom
+					exploration(5951),	-- Dookin' Grounds
+					exploration(5940),	-- Dreamer's Pavilion
+					exploration(5962),	-- Emperor's Omen
+					exploration(5890),	-- Fox Grove
+					exploration(5853),	-- Garrosh'ar Point
+					exploration(5955),	-- Greenstone Quarry
+					exploration(6204),	-- Greenstone Village
+					exploration(5950),	-- Grookin Hill
+					exploration(6522),	-- Honeydew Glade
+					exploration(6521),	-- Honeydew Village
+					exploration(5974),	-- Jade Temple Grounds
+					exploration(6063),	-- Moonwater Retreat
+					exploration(5854),	-- Nectarbreeze Orchard
+					exploration(5878),	-- Orchid Hollow
+					exploration(5851),	-- Paw'don Glade
+					exploration(5934),	-- Pearl Lake
+					exploration(5876),	-- Serpent's Heart
+					exploration(5932),	-- Shrine of the Dawn
+					exploration(5872),	-- Slingtail Pits
+					exploration(6077),	-- Sri-La Village
+					exploration(5867),	-- Strongarm Airstrip
+					exploration(5975),	-- Temple of the Jade Serpent
+					exploration(5879),	-- Terrace of Ten Thunders
+					exploration(5931),	-- The Arboretum
+					exploration(5964),	-- The Bamboo Wilds
+					exploration(5897),	-- The Fertile Copse
+					exploration(5929),	-- The Silkwood
+					exploration(6110),	-- The Thunderwood
+					exploration(6524),	-- Thunder Hold
+					exploration(5855),	-- Tian Monastery
+					exploration(5912),	-- Tideview Thicket
+					exploration(5874),	-- Waxwood
+					exploration(6012),	-- Windward Isle
+					exploration(5966),	-- Woods of the Lost
+				}),
 				n(FACTIONS, {
 					faction(1271, {	-- Order of the Cloud Serpent
 						["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount.  More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",

@@ -14,6 +14,10 @@ root(ROOTS.Zones, {
 						709,	-- Malayan Quillrat Pup (PET!)
 					}},
 				}),
+				explorationHeader({
+					exploration(6375),	-- Tavern in the Mists
+					exploration(6373),	-- The Secret Aerie
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1029, {	-- Tavern in the Mists
 						["coord"] = { 56.6, 75.8, THE_VEILED_STAIR },

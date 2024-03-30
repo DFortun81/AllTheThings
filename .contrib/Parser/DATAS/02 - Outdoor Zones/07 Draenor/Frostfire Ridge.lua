@@ -102,6 +102,26 @@ root(ROOTS.Zones, {
 						}),
 					},
 				})),
+				explorationHeader({
+					exploration(6864),	-- Bladespire Citadel
+					exploration(6962),	-- Bladespire Ravine
+					exploration(6875),	-- Bladespire Throne
+					exploration(7013),	-- Bloodmaul Stronghold
+					exploration(6994),	-- Bones of Agurak
+					exploration(6775),	-- Colossal's Fall
+					exploration(6744),	-- Daggermaw Ravine
+					exploration(6742),	-- Frostwind Crag
+					exploration(6817),	-- Grimfrost Hill
+					exploration(6779),	-- Grom'gar
+					exploration(6983),	-- Iron Siegeworks
+					exploration(6784),	-- Magnarok
+					exploration(6777),	-- Stonefang Outpost
+					exploration(6964),	-- Stonefang Ridge
+					exploration(6968),	-- Stonefury Cliffs
+					exploration(6776),	-- The Boneslag
+					exploration(6774),	-- The Cracking Plains
+					exploration(6869),	-- Wor'gol
+				}),
 				n(FACTIONS, {
 					faction(1445, {["races"] = HORDE_ONLY}),	-- Frostwolf Orcs
 				}),

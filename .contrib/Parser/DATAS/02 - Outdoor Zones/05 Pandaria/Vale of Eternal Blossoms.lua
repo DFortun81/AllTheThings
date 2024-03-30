@@ -61,6 +61,27 @@ root(ROOTS.Zones, {
 					pet(750),	-- Golden Civet Kitten (PET!)
 					pet(752),	-- Yellow-Bellied Bullfrog (PET!)
 				}),
+				explorationHeader({
+					exploration(6149),	-- Ancestral Rise
+					exploration(6074),	-- Guo-Lai Halls
+					exploration(6144),	-- Jin Yang Road
+					exploration(6031),	-- Mistfall Village
+					exploration(6143),	-- Mogu'shan Palace
+					exploration(6032),	-- Ruins of Guo-Lai
+					exploration(6035),	-- Setting Sun Garrison
+					exploration(6553),	-- Shrine of Seven Stars
+					exploration(6142),	-- Shrine of Seven Stars
+					exploration(6141),	-- Shrine of Two Moons
+					exploration(6554),	-- Shrine of Two Moons
+					exploration(6055),	-- The Five Sisters
+					exploration(6036),	-- The Golden Pagoda
+					exploration(6033),	-- The Golden Stair
+					exploration(6560),	-- The Golden Terrace
+					exploration(6145),	-- The Summer Fields
+					exploration(6482),	-- The Summer Terrace
+					exploration(6037),	-- Tu Shen Burial Ground
+					exploration(6034),	-- Whitepetal Lake
+				}),
 				n(FACTIONS, {
 					faction(1269),	-- Golden Lotus
 					faction(1345),	-- The Lorewalkers

@@ -43,6 +43,31 @@ root(ROOTS.Zones, {
 						pet(713),	-- Softshell Snapling (PET!)
 					},
 				}),
+				explorationHeader({
+					exploration(6028),	-- Dustback Gorge
+					exploration(5984),	-- Gilded Fan
+					exploration(6097),	-- Kunzen Cave
+					exploration(6065),	-- Kunzen Village
+					exploration(5957),	-- Mudmug's Place
+					exploration(6025),	-- Nesingwary's Safari
+					exploration(5967),	-- Paoquan Hollow
+					exploration(5972),	-- Pools of Purity
+					exploration(6387),	-- Rumbling Terrace
+					exploration(5986),	-- Silken Fields
+					exploration(6064),	-- Skyrange
+					exploration(5968),	-- Stoneplow
+					exploration(5969),	-- Stoneplow Fields
+					exploration(5958),	-- Sunsoaked Meadow
+					exploration(5992),	-- The Heartland
+					exploration(5982),	-- The Imperial Granary
+					exploration(6029),	-- The Torjari Pit
+					exploration(6030),	-- The Wild Plains
+					exploration(5939),	-- Thunderfoot Farm
+					exploration(5937),	-- Thunderfoot Fields
+					exploration(5938),	-- Thunderfoot Ranch
+					exploration(5985),	-- Winds' Edge
+					exploration(6388),	-- Zhu's Descent
+				}),
 				n(FACTIONS, {
 					faction(1272, {	-- The Tillers
 						["icon"] = "Interface\\Icons\\achievement_faction_tillers",

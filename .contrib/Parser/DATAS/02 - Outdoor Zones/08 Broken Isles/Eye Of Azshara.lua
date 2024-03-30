@@ -14,6 +14,9 @@ root(ROOTS.Zones, {
 						1728,	-- Juvenile Scuttleback (PET!)
 					}},
 				})),
+				explorationHeader({
+					exploration(8373),	-- Eye of Azshara
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1870, {	-- Eye of Azshara, Azsuna
 						["coord"] = { 38.2, 46.0, EYE_OF_AZSHARA },

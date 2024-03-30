@@ -150,6 +150,37 @@ root(ROOTS.Zones, {
 						}),
 					},
 				})),
+				explorationHeader({
+					exploration(6873),	-- Anguish Fortress
+					exploration(7144),	-- Blademoon Bloom
+					exploration(6910),	-- Darktide Roost
+					exploration(7232),	-- Drybone Hollow
+					exploration(7051),	-- Dyvari Overgrowth
+					exploration(7116),	-- Elodor
+					exploration(7117),	-- Elodor Fields
+					exploration(6923),	-- Embaari Village
+					exploration(6957),	-- Exile's Rise
+					exploration(6855),	-- Gloomshade Grove
+					exploration(7216),	-- Great Tree Valuundira
+					exploration(6797),	-- Gul'var
+					exploration(7221),	-- Isle of Shadows
+					exploration(6930),	-- Karabor
+					exploration(6793),	-- Light's Fall
+					exploration(6922),	-- Moonflower Valley
+					exploration(6931),	-- Path of the Light
+					exploration(7392),	-- Pillars of Fate
+					exploration(6921),	-- Plains of Serenity
+					exploration(6792),	-- Shaz'gul
+					exploration(6909),	-- Socrethar's Rise
+					exploration(7231),	-- Swamplight Trail
+					exploration(6791),	-- The Burial Fields
+					exploration(6772),	-- The Cursed Woods
+					exploration(7161),	-- The Draakorium
+					exploration(7049),	-- The Nightmarsh
+					exploration(7091),	-- The Shimmer Moor
+					exploration(6944),	-- Tranquil Court
+					exploration(7225),	-- Umbrafen
+				}),
 				n(FACTIONS, {
 					faction(1731, {["races"] = ALLIANCE_ONLY}),	-- Council of Exarchs
 				}),

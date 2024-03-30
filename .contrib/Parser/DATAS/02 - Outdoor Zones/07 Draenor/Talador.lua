@@ -187,6 +187,35 @@ root(ROOTS.Zones, {
 						}),
 					},
 				})),
+				explorationHeader({
+					exploration(6925),	-- Anchorite's Sojourn
+					exploration(6948),	-- Archenon Siegeyard
+					exploration(6924),	-- Aruuna
+					exploration(7084),	-- Aruuna's Desolation
+					exploration(7200),	-- Auchindoun
+					exploration(7389),	-- Bladefury's Command
+					exploration(6916),	-- Court of Souls
+					exploration(6918),	-- Deathweb Hollow
+					exploration(6927),	-- Duskfall Island
+					exploration(7097),	-- Fort Wrynn
+					exploration(7112),	-- Frostwolf Overlook
+					exploration(7176),	-- Gordal Foothills
+					exploration(7131),	-- Gordal Fortress
+					exploration(6761),	-- Gul'rok
+					exploration(6950),	-- Mor'gran Logworks
+					exploration(7251),	-- Orunai Bay
+					exploration(6947),	-- Orunai Coast
+					exploration(6762),	-- Shattrath City Center
+					exploration(7421),	-- Shattrath Commons
+					exploration(7418),	-- Shattrath Port Authority
+					exploration(7455),	-- Shattrath Residential District
+					exploration(6920),	-- Telmor
+					exploration(7391),	-- The Path of Glory
+					exploration(6926),	-- Veil Shadar
+					exploration(7098),	-- Vol'jin's Pride
+					exploration(7115),	-- Zangarra
+					exploration(7090),	-- Zorkra's Fall
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1451, {	-- Anchorite's Sojourn, Talador
 						["coord"] = { 80.0, 56.6, TALADOR },

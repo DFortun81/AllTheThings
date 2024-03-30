@@ -439,6 +439,16 @@ local simplifyExplorationData = function()
 	app.ExplorationAreaPositionDB = explorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
 end
+local onClickForExplorationHeader = function(row, button)
+	if button == "RightButton" and IsControlKeyDown() then
+		local ExplorationData = {};
+		for i,exploration in ipairs(row.ref.g) do
+			tinsert(ExplorationData, "exploration(" .. exploration.explorationID .. "),\t-- " .. exploration.text);
+		end
+		app:ShowPopupDialogWithMultiLineEditBox(app.TableConcat(ExplorationData, nil, nil, "\n"), nil, "Exploration Data")
+		return true;
+	end
+end
 local onMapUpdate = function(t)
 	local explorationByAreaID = {};
 	local explorationHeader = nil;
@@ -638,6 +648,9 @@ app.CreateMap = app.IsRetail and createMap or function(id, t)
 		end
 		if not explorationHeader.g then
 			explorationHeader.g = {};
+		end
+		if not explorationHeader.OnClick then
+			explorationHeader.OnClick = onClickForExplorationHeader;
 		end
 		explorationHeader.SortType = "text";
 

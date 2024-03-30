@@ -128,6 +128,30 @@ root(ROOTS.Zones, {
 						pet(741),	-- Silent Hedgehog (PET!)
 					},
 				}),
+				explorationHeader({
+					exploration(6429),	-- Chittering Coast
+					exploration(6437),	-- Fear Clutch
+					exploration(6435),	-- Heart of Fear
+					exploration(6315),	-- Klaxxi'vess
+					exploration(6329),	-- Kor'vess
+					exploration(6440),	-- Kypari Ik
+					exploration(6343),	-- Kypari Vor
+					exploration(6300),	-- Kypari Zar
+					exploration(6293),	-- Lake of Stars
+					exploration(6433),	-- Lonesome Cove
+					exploration(6404),	-- Muckscale Shallows
+					exploration(6439),	-- Panic Clutch
+					exploration(6339),	-- Rikkilea
+					exploration(6336),	-- Rikkitun Village
+					exploration(6368),	-- Soggy's Gamble
+					exploration(6306),	-- Terrace of Gurthan
+					exploration(6391),	-- The Briny Muck
+					exploration(6442),	-- The Clutches of Shek'zeer
+					exploration(6334),	-- The Sunset Brewgarden
+					exploration(6418),	-- Venomous Ledge
+					exploration(6443),	-- Writhingwood
+					exploration(6444),	-- Zan'vess
+				}),
 				n(FACTIONS, {
 					faction(1337),	-- The Klaxxi
 				}),

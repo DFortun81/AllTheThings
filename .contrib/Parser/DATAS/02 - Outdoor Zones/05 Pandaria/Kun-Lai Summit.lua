@@ -289,6 +289,35 @@ root(ROOTS.Zones, {
 						pet(731),	-- Zooey Snake (PET)
 					},
 				}),
+				explorationHeader({
+					exploration(6076),	-- Auburn Bluffs
+					exploration(6059),	-- Binan Village
+					exploration(6098),	-- Chow Farmstead
+					exploration(6094),	-- Eastwind Rest
+					exploration(6121),	-- Fire Camp Ruqin
+					exploration(6152),	-- Fire Camp Yongqi
+					exploration(6129),	-- Firebough Nook
+					exploration(6498),	-- Gate of the August Celestials
+					exploration(6406),	-- Isle of Reckoning
+					exploration(6157),	-- Kota Basecamp
+					exploration(6156),	-- Kota Peak
+					exploration(6062),	-- Kun-Lai Pass
+					exploration(6114),	-- Mogujia
+					exploration(6185),	-- Mount Neverest
+					exploration(6100),	-- Muskpaw Ranch
+					exploration(6085),	-- One Keg
+					exploration(6081),	-- Peak of Serenity
+					exploration(6294),	-- Shado-Li Basin
+					exploration(6128),	-- Shado-Pan Fallback
+					exploration(6173),	-- Shado-Pan Monastery
+					exploration(6174),	-- Temple of the White Tiger
+					exploration(6090),	-- The Burlap Trail
+					exploration(6087),	-- The Dooker Dome
+					exploration(6207),	-- The Zandalari Vanguard
+					exploration(6095),	-- Westwind Rest
+					exploration(6154),	-- Yinying Village
+					exploration(6169),	-- Zouchin Village
+				}),
 				n(FACTIONS, {
 					faction(1341, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",

@@ -217,6 +217,37 @@ root(ROOTS.Zones, {
 						}),
 					},
 				})),
+				explorationHeader({
+					exploration(6876),	-- Bastion Rise
+					exploration(6881),	-- Beastwatch
+					exploration(6889),	-- Brimstone Springs
+					exploration(6885),	-- Cragplume Cauldron
+					exploration(7149),	-- Crimson Fen
+					exploration(6877),	-- Deadgrin
+					exploration(6914),	-- Deeproot
+					exploration(7320),	-- Everbloom Wilds
+					exploration(7402),	-- Evermorn Rise
+					exploration(6880),	-- Evermorn Springs
+					exploration(7319),	-- Gorgorek's Fall
+					exploration(6901),	-- Grimrail Depot
+					exploration(6891),	-- Gronn Canyon
+					exploration(7158),	-- Highpass
+					exploration(6893),	-- Iyun Weald
+					exploration(6884),	-- Mistcreep Mire
+					exploration(7298),	-- Overlook Ruins
+					exploration(6935),	-- Razorbloom
+					exploration(7394),	-- Steamburst Cauldron
+					exploration(7304),	-- Steamscar Rise
+					exploration(6887),	-- Stonemaul Arena
+					exploration(6900),	-- Sulfur Basin
+					exploration(6878),	-- Tailthrasher Basin
+					exploration(7224),	-- Tangleheart
+					exploration(6915),	-- The Fertile Ground
+					exploration(7415),	-- The Iron Approach
+					exploration(7411),	-- The Iron Approach
+					exploration(6892),	-- The Pit
+					exploration(7153),	-- Wildwood Wash
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1511, {	-- Bastion Rise, Gorgrond
 						["coord"] = { 46.4, 92.4, GORGROND },
