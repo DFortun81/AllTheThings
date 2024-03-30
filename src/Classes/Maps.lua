@@ -746,6 +746,7 @@ end));
 
 if app.IsClassic then
 -- Register for Map Exploration Events
+local checkedAreas = {};
 app:RegisterEvent("MAP_EXPLORATION_UPDATED");
 app:RegisterEvent("UI_INFO_MESSAGE");
 app.events.MAP_EXPLORATION_UPDATED = function()
@@ -764,9 +765,11 @@ app.events.MAP_EXPLORATION_UPDATED = function()
 					if not app.CurrentCharacter.Exploration[areaID] then
 						app.SetCollected(nil, "Exploration", areaID, true);
 						newArea = true;
-						if not app.ExplorationAreaPositionDB[areaID] then
-							print("New Coordinate: ", C_Map_GetAreaInfo(areaID), px, py, CurrentMapID);
-							app.ExplorationAreaPositionDB[areaID] = { { px, py, CurrentMapID } };
+					end
+					if not checkedAreas[areaID] then
+						checkedAreas[areaID] = true;
+						if #app.SearchForField("explorationID", areaID) < 1 then
+							PrintDiscordInformationForAreaID(CurrentMapID, areaID, createMap(CurrentMapID), app.CreateExploration(areaID), pos);
 						end
 					end
 				end
