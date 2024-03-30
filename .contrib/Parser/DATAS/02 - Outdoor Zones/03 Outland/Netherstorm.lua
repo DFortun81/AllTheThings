@@ -95,8 +95,7 @@ root(ROOTS.Zones, {
 					}),
 					pet(638),	-- Nether Roach (PET!)
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(3723, "256:256:328:397"),		-- Arklon Ruins
 					exploration(3712, "256:128:241:388"),		-- Area 52
 					exploration(3737, "256:256:644:173"),		-- Celestial Ridge
@@ -120,7 +119,6 @@ root(ROOTS.Zones, {
 					exploration(3729, "256:213:239:455"),		-- The Heap
 					exploration(3738, "256:256:298:134"),		-- The Stormspire
 				}),
-				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(122, {	-- Area 52, Netherstorm
 						["cr"] = 18938,	-- Krexcil <Flight Master>

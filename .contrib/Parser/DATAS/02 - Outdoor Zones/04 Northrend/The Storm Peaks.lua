@@ -245,8 +245,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4452),	-- Bor's Breath
 					exploration(4484),	-- Bouldercrag's Refuge
 					exploration(4442),	-- Brann's Base-Camp
@@ -285,7 +284,6 @@ root(ROOTS.Zones, {
 					exploration(4424),	-- Valkyrion
 					exploration(4437),	-- Valley of Ancient Winters
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(1126, {	-- The Frostborn
 						["races"] = ALLIANCE_ONLY,

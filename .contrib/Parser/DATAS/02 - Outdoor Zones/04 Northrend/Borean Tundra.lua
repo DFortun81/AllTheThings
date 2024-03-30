@@ -242,8 +242,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4023),	-- Amber Ledge
 					exploration(4105),	-- Beryl Point
 					exploration(4021),	-- Bloodspore Plains
@@ -287,7 +286,6 @@ root(ROOTS.Zones, {
 					exploration(4142),	-- Warsong Granary
 					exploration(4129),	-- Warsong Hold
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(1037, {	-- Alliance Vanguard
 						["races"] = ALLIANCE_ONLY,

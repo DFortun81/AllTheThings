@@ -71,8 +71,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(438),	-- King Snake (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(345, "265:270:345:389"),	-- Agmond's End
 				exploration(338, "195:200:325:148"),	-- Angor Fortress
 				-- #if AFTER TBC
@@ -104,12 +103,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1897, "245:205:389:7"),		-- The Maker's Terrace
 				exploration(1877, "230:230:349:256"),	-- Valley of Fangs
 				--[[
-				exploration(343, ""),	-- Camp Wurg
-				exploration(347, ""),	-- Dustbelch Grotto
-				exploration(1517, ""),	-- Uldaman
+				exploration(343),	-- Camp Wurg
+				exploration(347),	-- Dustbelch Grotto
+				exploration(1517),	-- Uldaman
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands
 					["coord"] = { 52.4, 50.6, BADLANDS },

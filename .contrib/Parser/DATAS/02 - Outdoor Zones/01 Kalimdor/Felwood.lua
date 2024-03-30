@@ -119,8 +119,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(499),	-- Tainted Rat (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1765, "235:145:292:263"),	-- Bloodvenom Falls
 				exploration(1761, "175:135:408:533"),	-- Deadwood Village
 				exploration(2479, "185:160:405:429"),	-- Emerald Sanctuary
@@ -142,7 +141,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1769),	-- Timbermaw Hold
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(48, {	-- Bloodvenom Post, Felwood
 					["cr"] = 11900,	-- Brakkar <Wind Rider Master>

@@ -96,8 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1858, "245:245:232:145"),	-- Boulder'gor
 				exploration(316, "215:235:432:362"),	-- Boulderfist Hall
 				exploration(333, "160:230:558:112"),	-- Circle of East Binding
@@ -115,17 +114,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1857, "190:240:87:138"),	-- Thoradin's Wall
 				exploration(317, "215:210:559:333"),	-- Witherbark Village
 				--[[
-				exploration(318, ""),	-- Drywhisker Gorge
-				exploration(322, ""),	-- Blackwater Shipwrecks
-				exploration(323, ""),	-- O'Breen's Camp
-				exploration(325, ""),	-- The Tower of Arathor
-				exploration(326, ""),	-- The Sanctum
-				exploration(328, ""),	-- The Drowned Reef
-				exploration(1837, ""),	-- Witherbark Caverns
-				exploration(2401, ""),	-- The Forbidding Sea
+				exploration(318),	-- Drywhisker Gorge
+				exploration(322),	-- Blackwater Shipwrecks
+				exploration(323),	-- O'Breen's Camp
+				exploration(325),	-- The Tower of Arathor
+				exploration(326),	-- The Sanctum
+				exploration(328),	-- The Drowned Reef
+				exploration(1837),	-- Witherbark Caverns
+				exploration(2401),	-- The Forbidding Sea
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(601, {	-- Galen's Fall, Arathi
 					["cr"] = 43104,	-- Rhoda Bowers <Bat Handler>

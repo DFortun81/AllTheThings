@@ -54,8 +54,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(424),	-- Roach (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(97, "235:270:399:129"),		-- Alther's Mill
 				exploration(1000, "250:250:654:161"),	-- Galardell Valley
 				exploration(68, "535:275:133:240"),		-- Lake Everstill
@@ -75,7 +74,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(96),	-- Tower of Ilgalar
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(615, {	-- Camp Everstill, Redridge
 					["cr"] = 43371,	-- Arlen Marsters <Gryphon Master>

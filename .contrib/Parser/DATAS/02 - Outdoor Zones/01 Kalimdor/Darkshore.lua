@@ -88,8 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(447, "190:205:324:306"),	-- Ameth'Aran
 				exploration(442, "150:215:318:162"),	-- Auberdine
 				exploration(446, "180:195:365:181"),	-- Bashal'Aran
@@ -110,7 +109,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(454),	-- Wildbend River
 				]]--
 			}),
-			-- #endif
 			prof(FISHING, {
 				i(12238),	-- Darkshore Grouper
 			}),

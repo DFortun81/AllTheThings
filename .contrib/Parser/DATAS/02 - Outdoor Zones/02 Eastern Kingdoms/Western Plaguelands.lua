@@ -101,8 +101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(2298, "170:165:600:412"),	-- Caer Darrow
 				exploration(200, "220:150:381:265"),	-- Dalson's Tears
 				exploration(2297, "370:270:504:343"),	-- Darrowmere Lake
@@ -123,7 +122,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(196),	-- Uther's Tomb
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(649, {	-- Andorhal, Western Plaguelands
 					["cr"] = 46004,	-- Rhonda Molver <Bat Handler>

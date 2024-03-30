@@ -659,8 +659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(477),	-- Gazelle Fawn (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(404, "210:180:255:214"),	-- Bael'dun Digsite
 				exploration(222, "256:200:367:303"),	-- Bloodhoof Village
 				exploration(818, "128:205:303:307"),	-- Palemane Rock
@@ -686,7 +685,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(223),	-- Stonebull Lake
 				]]--
 			}),
-			-- #endif
 			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {
 				fp(402, {	-- Bloodhoof Village, Mulgore

@@ -81,8 +81,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					pet(465),	-- Ravager Hatchling (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(3597, "256:512:44:62"),		-- Amberweb Pass
 				exploration(3593, "256:256:297:136"),	-- Axxarien
 				exploration(3594, "512:242:177:426"),	-- Blacksilt Shore
@@ -112,7 +111,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3590, "256:256:598:338"),	-- Wrathscale Lair
 				exploration(3598, "256:256:613:82"),	-- Wyrmscar Island
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(93, {	-- Blood Watch, Bloodmyst Isle [Alliance]
 					["cr"] = 17554,	-- Laando <Hippogryph Master>

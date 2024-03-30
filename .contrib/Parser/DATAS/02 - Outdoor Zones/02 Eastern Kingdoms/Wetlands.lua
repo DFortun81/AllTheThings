@@ -182,8 +182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1036, "225:185:347:218"),	-- Angerfang Encampment
 				exploration(1018, "240:175:77:245"),	-- Black Channel Marsh
 				exploration(1022, "225:190:89:142"),	-- Bluegill Marsh
@@ -212,7 +211,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1039),	-- The Lost Fleet
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(553, {	-- Dun Modr, Wetlands
 					["cr"] = 41325,	-- Caleb Baelor <Gryphon Master>

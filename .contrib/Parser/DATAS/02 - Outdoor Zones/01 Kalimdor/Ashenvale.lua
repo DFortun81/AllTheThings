@@ -149,8 +149,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(415, "205:185:272:251"),	-- Astranaar
 				exploration(438, "146:200:856:151"),	-- Bough Shadow
 				exploration(422, "235:205:547:426"),	-- Fallen Sky Lake
@@ -196,7 +195,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2897),	-- Zoram'gar Outpost
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(28, {	-- Astranaar, Ashenvale
 					["cr"] = 4267,	-- Daelyshia <Hippogryph Master>

@@ -123,8 +123,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4322),	-- Altar of Har'koa
 					exploration(4329),	-- Altar of Mam'toth
 					exploration(4325),	-- Altar of Quetz'lun
@@ -159,7 +158,6 @@ root(ROOTS.Zones, {
 					exploration(4323),	-- Zim'Torga
 					exploration(4372),	-- Zol'Maz Stronghold
 				}),
-				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(305, {	-- Ebon Watch
 						["cr"] = 28615,	-- Baneflight <Flight Master>

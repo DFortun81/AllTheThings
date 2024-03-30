@@ -133,8 +133,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(3754, "256:256:520:93"),	-- Altar of Sha'tar
 					exploration(3750, "512:512:348:8"),		-- Coilskar Point
 					exploration(3822, "512:358:343:310"),	-- Eclipse Point
@@ -150,7 +149,6 @@ root(ROOTS.Zones, {
 					exploration(3821, "512:410:469:258"),	-- Warden's Cage
 					exploration(3745, "512:439:168:229"),	-- Wildhammer Stronghold
 				}),
-				-- #endif
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(1015, {	-- Netherwing
 						["OnTooltip"] = OnTooltipForNetherwing,

@@ -97,8 +97,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1099, "155:160:689:233"),	-- Camp Mojache
 				exploration(2577, "230:195:454:201"),	-- Dire Maul
 				exploration(1111, "150:125:454:0"),		-- Dream Bough
@@ -135,7 +134,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2519),	-- Woodpaw Hills
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(568, {	-- Camp Ataya, Feralas
 					["cr"] = 40473,	-- Tono <Wind Rider Master>

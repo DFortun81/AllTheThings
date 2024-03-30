@@ -67,8 +67,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1441, "185:155:310:133"),	-- Altar of Storms
 				exploration(1437, "195:180:361:15"),	-- Dreadmaul Hold
 				exploration(1439, "245:195:361:195"),	-- Dreadmaul Post
@@ -79,7 +78,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(72, "265:220:453:259"),		-- The Dark Portal
 				exploration(73, "384:450:212:178"),		-- The Tainted Scar
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(604, {	-- Dreadmaul Hold, Blasted Lands
 					["cr"] = 43121,	-- Preda <Wind Rider Master>

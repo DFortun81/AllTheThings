@@ -150,8 +150,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(3864, "256:256:422:0"),			-- Bash'ir Landing
 					exploration(3867, "256:256:623:147"),		-- Bladed Gulch
 					exploration(3773, "256:507:314:161"),		-- Bladespire Hold
@@ -180,7 +179,6 @@ root(ROOTS.Zones, {
 					exploration(3827, "256:256:629:406"),		-- Vekhaar Stand
 					exploration(3832, "256:462:166:206"),		-- Vortex Pinnacle [Renamed to Vortex Summit after Cata.]
 				}),
-				-- #endif
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(1038, {	-- Ogri'la
 						["OnTooltip"] = OnTooltipForOgrila,

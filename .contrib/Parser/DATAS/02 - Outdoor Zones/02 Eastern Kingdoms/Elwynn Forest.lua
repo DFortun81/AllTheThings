@@ -1964,8 +1964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(675),	-- Stormwind Rat (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(62, "256:249:577:419"),		-- Brackwell Pumpkin Patch
 				exploration(18, "225:220:422:332"),		-- Crystal Lake
 				exploration(88, "256:210:704:330"),		-- Eastvale Logging Camp
@@ -1995,7 +1994,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(120),	-- Westbrook Garrison
 				]]--
 			}),
-			-- #endif
 			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {
 				fp(589, {	-- Eastvale Logging Camp, Elwynn

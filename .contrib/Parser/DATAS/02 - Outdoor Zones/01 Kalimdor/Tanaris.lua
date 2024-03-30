@@ -2871,8 +2871,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(432),	-- Stripe-Tailed Scorpid (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1939, "215:180:363:194"),	-- Abyssal Sands
 				exploration(1938, "110:180:473:234"),	-- Broken Pillar
 				exploration(2300, "155:150:561:256"),	-- Caverns of Time
@@ -2901,7 +2900,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(988),	-- Wavestrider Beach
 				]]--
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(369, {	-- Gadgetzan
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",

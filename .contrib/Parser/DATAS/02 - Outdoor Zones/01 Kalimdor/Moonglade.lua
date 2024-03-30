@@ -23,8 +23,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					379,	-- Squirrel (PET!)
 				}},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(656, "555:510:244:89"),	-- Lake Elune'ara
 				--[[
 				exploration(2361),	-- Nighthaven
@@ -32,7 +31,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2363),	-- Stormrage Barrow Dens
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(49, {	-- Moonglade
 					["cr"] = 10897,	-- Sindrayl <Hippogryph Master>

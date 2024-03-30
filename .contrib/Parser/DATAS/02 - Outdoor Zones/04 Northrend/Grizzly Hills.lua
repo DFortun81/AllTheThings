@@ -170,8 +170,7 @@ root(ROOTS.Zones, {
 						pet(633),	-- Mountain Skunk (PET!)
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4204),	-- Amberpine Lodge
 					exploration(4482),	-- Arriga Footbridge
 					exploration(4262),	-- Ashwood Post
@@ -211,7 +210,6 @@ root(ROOTS.Zones, {
 					exploration(4238),	-- White Pine Trading Post
 					exploration(4209),	-- Zeb'Halak
 				}),
-				-- #endif
 				prof(FISHING, {
 					ach(1517, {	-- Northrend Angler
 						["provider"] = { "o", 192050 },	-- Glacial Salmon School

@@ -821,8 +821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(627),	-- Infected Squirrel (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				-- #if AFTER WRATH
 				exploration(2624, "256:256:412:177"),	-- Blackwood Lake
 				exploration(2264, "256:256:471:345"),	-- Corin's Crossing
@@ -872,18 +871,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2273, "205:165:614:30"),	-- Zul'Mashar
 				-- #endif
 				--[[
-				exploration(1019, ""),	-- The Green Belt
-				exploration(2265, ""),	-- Scarlet Base Camp
-				exploration(2267, ""),	-- The Scarlet Basilica
-				exploration(2269, ""),	-- Browman Mill
-				exploration(2274, ""),	-- Mazra'Alor
-				exploration(2278, ""),	-- Scourgehold
-				exploration(2299, ""),	-- Darrowmere Lake
-				exploration(2625, ""),	-- Eastwall Gate
-				exploration(2626, ""),	-- Terrorweb Tunnel
+				exploration(1019),	-- The Green Belt
+				exploration(2265),	-- Scarlet Base Camp
+				exploration(2267),	-- The Scarlet Basilica
+				exploration(2269),	-- Browman Mill
+				exploration(2274),	-- Mazra'Alor
+				exploration(2278),	-- Scourgehold
+				exploration(2299),	-- Darrowmere Lake
+				exploration(2625),	-- Eastwall Gate
+				exploration(2626),	-- Terrorweb Tunnel
 				]]--
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn
 					["icon"] = "Interface\\Icons\\INV_Misc_Token_ArgentDawn3",

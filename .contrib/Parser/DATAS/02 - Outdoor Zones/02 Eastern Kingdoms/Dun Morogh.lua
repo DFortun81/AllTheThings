@@ -2157,8 +2157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(803, "128:128:573:280"),	-- Amberstill Ranch
 				exploration(137, "115:115:252:249"),	-- Brewnall Village
 				exploration(801, "180:128:274:296"),	-- Chill Breeze Valley
@@ -2186,7 +2185,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2102),	-- Thunderbrew Distillery
 				]]--
 			}),
-			-- #endif
 			-- #if AFTER 4.0.3.13277
 			n(FLIGHT_PATHS, {
 				fp(620, {	-- Gol'Bolar Quarry, Dun Morogh

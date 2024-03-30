@@ -120,8 +120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(386),	-- Prairie Dog (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(381),	-- Boulder Lode Mine
 				exploration(384),	-- Dreadmist Peak
 				exploration(379),	-- Far Watch Post
@@ -137,7 +136,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(388),	-- The Stagnant Oasis
 				exploration(1699),	-- Thorn Hill
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",

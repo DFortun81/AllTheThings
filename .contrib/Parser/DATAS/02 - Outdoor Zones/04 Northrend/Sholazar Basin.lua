@@ -228,8 +228,7 @@ root(ROOTS.Zones, {
 						pet(532),	-- Stunted Shardhorn (PET!)
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4369),	-- Dorian's Outpost
 					exploration(4292),	-- Frenzyheart Hill
 					exploration(4287),	-- Kartak's Hold
@@ -258,7 +257,6 @@ root(ROOTS.Zones, {
 					exploration(4300),	-- Waygate
 					exploration(4293),	-- Wildgrowth Mangal
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(1117, {	-- Sholazar Basin
 						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",

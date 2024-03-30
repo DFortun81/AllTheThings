@@ -18,8 +18,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 				}),
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1684, "350:370:626:253"),	-- Chillwind Point
 				exploration(1679, "195:288:399:380"),	-- Corrahn's Dagger
 				exploration(282, "280:240:334:162"),	-- Crushridge Hold
@@ -36,14 +35,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1680, "165:197:314:471"),	-- The Headland
 				exploration(284, "235:200:462:77"),		-- The Uplands
 				--[[
-				exploration(277, ""),	-- The Foothill Caverns
-				exploration(283, ""),	-- Slaughter Hollow
-				exploration(1339, ""),	-- Lordamere Lake
-				exploration(2839, ""),	-- Alterac Valley
-				exploration(3486, ""),	-- Ravenholdt Manor
+				exploration(277),	-- The Foothill Caverns
+				exploration(283),	-- Slaughter Hollow
+				exploration(1339),	-- Lordamere Lake
+				exploration(2839),	-- Alterac Valley
+				exploration(3486),	-- Ravenholdt Manor
 				]]--
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(349, {	-- Ravenholdt
 					["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",

@@ -911,8 +911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					pet(460),	-- Ruby Sapling (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(3472, "256:256:669:228"),	-- Azurebreeze Coast [TBC]
 				-- #if AFTER WRATH
 				exploration(3532),	-- Dawning Lane [WRATH]
@@ -950,7 +949,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3466, "128:256:292:319"),	-- West Sanctum [TBC]
 				exploration(3475, "128:193:554:475"),	-- Zeb'Watha [TBC]
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(625, {	-- Fairbreeze Village, Eversong Woods [Horde]
 					["cr"] = 44036,	-- Skymaster Brightdawn <Dragonhawk Master>

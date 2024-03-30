@@ -151,8 +151,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(2079, "200:195:660:21"),	-- Alcaz Island
 				exploration(512, {		-- Blackhoof Village
 					["coord"] = { 41.8, 13.7, DUSTWALLOW_MARSH },
@@ -169,28 +168,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(502, "250:315:422:0"),		-- Witch Hill
 				exploration(511, "285:240:367:381"),	-- Wyrmbog
 				--[[
-				[403] = 1,                               -- Shady Rest Inn
-				[497] = 3,                               -- Swamplight Manor
-				[499] = 5,                               -- Darkmist Cavern
-				[500] = 6,                               -- Moggle Point
-				[501] = 7,                               -- Beezil's Wreck
-				[503] = 9,                               -- Sentry Point
-				[504] = 10,                              -- North Point Tower
-				[505] = 11,                              -- West Point Tower
-				[506] = 12,                              -- Lost Point
-				[507] = 13,                              -- Bluefen
-				[508] = 14,                              -- Stonemaul Ruins
-				[510] = 16,                              -- The Dragonmurk
-				[514] = 20,                              -- Foothold Citadel
-				[515] = 21,                              -- Ironclad Prison
-				[516] = 22,                              -- Dustwallow Bay
-				[517] = 23,                              -- Tidefury Cove
-				[518] = 24,                              -- Dreadmurk Shore
-				[2158] = 26,                             -- Emberstrife's Den
-				[2318] = 28,                             -- The Great Sea
+				exploration(501),	-- Beezil's Wreck
+				exploration(507),	-- Bluefen
+				exploration(499),	-- Darkmist Cavern
+				exploration(518),	-- Dreadmurk Shore
+				exploration(516),	-- Dustwallow Bay
+				exploration(2158),	-- Emberstrife's Den
+				exploration(514),	-- Foothold Citadel
+				exploration(515),	-- Ironclad Prison
+				exploration(506),	-- Lost Point
+				exploration(500),	-- Moggle Point
+				exploration(504),	-- North Point Tower
+				exploration(503),	-- Sentry Point
+				exploration(403),	-- Shady Rest Inn
+				exploration(508),	-- Stonemaul Ruins
+				exploration(497),	-- Swamplight Manor
+				exploration(510),	-- The Dragonmurk
+				exploration(2318),	-- The Great Sea
+				exploration(517),	-- Tidefury Cove
+				exploration(505),	-- West Point Tower
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(55, {	-- Brackenwall Village, Dustwallow Marsh
 					["cr"] = 11899,	-- Shardi <Wind Rider Master>

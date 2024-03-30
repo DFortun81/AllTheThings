@@ -830,8 +830,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					458,	-- Lost of Lordaeron (PET!)
 				}},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(157, "256:210:335:139"),	-- Agamand Mills
 				exploration(165, "216:179:630:326"),	-- Balnir Farmstead
 				exploration(162, "201:288:587:139"),	-- Brightwater Lake
@@ -853,21 +852,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(160, "211:189:746:125"),	-- Whispering Gardens
 				exploration(1497, "315:235:463:361"),	-- Undercity
 				--[[
-				exploration(158, ""),	-- Agamand Family Crypt
-				exploration(153, ""),	-- Ruins of Lordaeron
-				exploration(155, ""),	-- Night Web's Hollow
-				exploration(161, ""),	-- Terrace of Repose
-				exploration(163, ""),	-- Gunther's Retreat
-				exploration(168, ""),	-- The North Coast
-				exploration(169, ""),	-- Whispering Shore
-				exploration(173, ""),	-- Faol's Rest
-				exploration(2117, ""),	-- Shadow Grave
-				exploration(2118, ""),	-- Brill Town Hall
-				exploration(2119, ""),	-- Gallows' End Tavern
-				exploration(2399, ""),	-- The Great Sea
+				exploration(158),	-- Agamand Family Crypt
+				exploration(153),	-- Ruins of Lordaeron
+				exploration(155),	-- Night Web's Hollow
+				exploration(161),	-- Terrace of Repose
+				exploration(163),	-- Gunther's Retreat
+				exploration(168),	-- The North Coast
+				exploration(169),	-- Whispering Shore
+				exploration(173),	-- Faol's Rest
+				exploration(2117),	-- Shadow Grave
+				exploration(2118),	-- Brill Town Hall
+				exploration(2119),	-- Gallows' End Tavern
+				exploration(2399),	-- The Great Sea
 				]]--
 			}),
-			-- #endif
 			-- #if AFTER 3.3.0.10554
 			n(FLIGHT_PATHS, {
 				fp(460, {	-- Brill, Tirisfal Glades

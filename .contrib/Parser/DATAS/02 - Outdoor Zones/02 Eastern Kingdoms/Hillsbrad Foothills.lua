@@ -100,8 +100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(288, "165:200:175:275"),	-- Azurelode Mine
 				exploration(1056, "205:155:414:154"),	-- Darrow Hill
 				exploration(290, "240:275:637:294"),	-- Dun Garok
@@ -120,7 +119,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1057),	-- Thoradin's Wall
 				]]--
 			}),
-			-- #endif
 			-- #if AFTER CATA
 			n(FACTIONS, {
 				faction(349, {	-- Ravenholdt

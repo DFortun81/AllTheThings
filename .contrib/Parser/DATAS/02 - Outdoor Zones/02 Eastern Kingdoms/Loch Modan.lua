@@ -85,8 +85,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(437),	-- Little Black Ram (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(936, "295:358:309:310"),	-- Grizzlepaw Ridge
 				exploration(142, "345:256:482:321"),	-- Ironband's Excavation Site
 				exploration(143, "315:235:542:48"),		-- Mo'grosh Stronghold
@@ -106,7 +105,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2101),	-- Stoutlager Inn
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(555, {	-- Farstrider Lodge, Loch Modan
 					["cr"] = 41332,	-- Eeryven Grayer <Gryphon Master>

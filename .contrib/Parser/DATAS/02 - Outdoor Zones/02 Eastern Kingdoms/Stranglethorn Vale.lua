@@ -152,8 +152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			})),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(123, "90:80:241:92"),		-- Bal'lal Ruins
 				exploration(127, "110:140:371:129"),	-- Balia'mah Ruins
 				exploration(1739, "165:175:194:284"),	-- Bloodsail Compound
@@ -202,7 +201,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(3357),	-- Yojamba Isle
 				]]--
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
 					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",

@@ -55,8 +55,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(428),	-- Molten Hatchling (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1957, "275:235:77:366"),	-- Blackchar Cave
 				exploration(1959, "460:365:422:8"),		-- Dustfire Valley
 				exploration(1442, "405:430:85:30"),		-- Firewatch Ridge
@@ -71,7 +70,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1446),	-- Thorium Point
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(673, {	-- Iron Summit, Searing Gorge
 					["cr"] = 47927,	-- Doug Deepdown <Flight Master>

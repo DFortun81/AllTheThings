@@ -291,8 +291,7 @@ root(ROOTS.Zones, {
 						pet(414),	-- Scorpid (PET!)
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(3556, "256:256:182:412"),	-- Den of Haal'esh
 					exploration(3546, "512:255:261:413"),	-- Expedition Armory
 					exploration(3554, "512:342:183:326"),	-- Falcon Watch
@@ -312,7 +311,6 @@ root(ROOTS.Zones, {
 					exploration(3802, "256:256:705:368"),	-- Void Ridge
 					exploration(3582, "422:238:580:430"),	-- Zeth'Gor
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(946, {	-- Honor Hold
 						["maps"] = { HELLFIRE_CITADEL_BLOOD_FURNACE, HELLFIRE_CITADEL_RAMPARTS, HELLFIRE_CITADEL_SHATTERED_HALLS },

@@ -277,8 +277,7 @@ root(ROOTS.Zones, {
 						pet(517),	-- Warpstalker Hatchling (PET!)
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(3684, "256:256:480:277"),	-- Allerian Stronghold
 					exploration(3894, "256:234:247:434"),	-- Auchenai Grounds
 					exploration(3719, "256:367:103:301"),	-- Bleeding Hollow Ruins
@@ -307,7 +306,6 @@ root(ROOTS.Zones, {
 					exploration(3889, "256:256:222:362"),	-- Veil Rhaze
 					exploration(3892, "256:256:417:327"),	-- Writhing Mound
 				}),
-				-- #endif
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031, {	-- Sha'tari Skyguard
 						["icon"] = "Interface\\Icons\\ability_hunter_pet_netherray",

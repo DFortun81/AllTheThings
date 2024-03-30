@@ -18,8 +18,7 @@ root(ROOTS.Zones, {
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4553),	-- Forlorn Woods
 					exploration(4554),	-- Ruins of Shandaral
 					exploration(4558),	-- Sunreaver's Command
@@ -30,7 +29,6 @@ root(ROOTS.Zones, {
 					exploration(4556),	-- Violet Stand
 					exploration(4559),	-- Windrunner's Overlook
 				}),
-				-- #endif
 				prof(COOKING, {
 					i(43148, {	-- Crystalsong Carrot
 						["provider"] = { "o", 192828 },	-- Crystalsong Carrot

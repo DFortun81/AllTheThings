@@ -69,8 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(537, "295:270:367:178"),	-- Fire Plume Ridge
 				exploration(543, "315:345:121:151"),	-- Golakka Hot Springs
 				exploration(1943, "285:285:582:67"),	-- Ironstone Plateau
@@ -83,7 +82,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(541),	-- Marshal's Refuge
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(79, {	-- Marshal's Refuge, Un'Goro Crater / Marshal's Stand, Un'Goro Crater [CATA+]
 					["cr"] = 10583,	-- Gryfe <Flight Master>

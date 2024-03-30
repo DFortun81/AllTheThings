@@ -120,8 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(3508, "404:436:598:232"),	-- Amani Pass [TBC]
 				exploration(3501, "256:256:184:238"),	-- Bleeding Ziggurat [TBC]
 				exploration(3495, "427:256:575:0"),		-- Dawnstar Spire [TBC]
@@ -140,7 +139,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3491, "256:512:60:117"),	-- Windrunner Village [TBC]
 				exploration(3517, "512:431:466:237"),	-- Zeb'Nowa [TBC]
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(922, {	-- Tranquillien
 					["races"] = HORDE_ONLY,

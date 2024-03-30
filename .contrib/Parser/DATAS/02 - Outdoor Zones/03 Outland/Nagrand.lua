@@ -285,8 +285,7 @@ root(ROOTS.Zones, {
 						pet(518),	-- Clefthoof Runt (PET!)
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(3610, "256:334:660:334"),	-- Burning Blade Ruins
 					exploration(3611, "256:256:532:363"),	-- Clan Watch
 					exploration(3624, "512:420:36:248"),	-- Forge Camp: Fear
@@ -307,7 +306,6 @@ root(ROOTS.Zones, {
 					exploration(3634, "256:256:666:233"),	-- Windyreed Village
 					exploration(3763, "256:256:277:54"),	-- Zangar Ridge
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(978, {	-- Kurenai
 						["OnTooltip"] = OnTooltipForKurenai,

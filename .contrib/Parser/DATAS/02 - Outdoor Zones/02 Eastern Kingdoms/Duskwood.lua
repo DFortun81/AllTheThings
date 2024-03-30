@@ -117,8 +117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(400),	-- Widow Spiderling (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(536, "275:250:55:342"),		-- Addle's Stead
 				exploration(242, "220:340:504:117"),	-- Brightwood Grove
 				exploration(42, "315:280:631:162"),		-- Darkshire
@@ -142,7 +141,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(13),	-- The World Tree
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(12, {	-- Darkshire, Duskwood
 					["cr"] = 2409,	-- Felicia Maline <Gryphon Master>

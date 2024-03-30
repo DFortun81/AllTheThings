@@ -249,8 +249,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(348, "255:205:13:245"),		-- Aerie Peak
 				exploration(1884, "205:195:374:164"),	-- Agol'watha
 				exploration(1885, "225:200:171:306"),	-- Hiri'watha
@@ -275,7 +274,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(352),	-- Zun'watha
 				]]--
 			}),
-			-- #endif
 			-- #if BEFORE TBC
 			n(FACTIONS, {
 				faction(471, {	-- Wildhammer Clan

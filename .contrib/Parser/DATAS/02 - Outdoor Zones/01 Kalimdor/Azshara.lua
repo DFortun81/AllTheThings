@@ -113,8 +113,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1227, "270:300:479:201"),	-- Bay of Storms
 				exploration(2497, "245:185:644:40"),	-- Bitter Reaches
 				exploration(1233, "220:255:191:369"),	-- Forlorn Ridge
@@ -147,7 +146,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1217),	-- Vanndir Encampment
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				-- #if AFTER CATA
 				fp(44, {	-- Bilgewater Harbor, Azshara [CATA+] / Valormok, Azshara

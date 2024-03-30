@@ -229,7 +229,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			-- #if BEFORE TBC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(2959, "270:240:348:13"),	-- Dun Baldar
 				exploration(3299),	-- Dun Baldar Pass
 				exploration(3057, "300:300:335:172"),	-- Field of Strife

@@ -102,8 +102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(2540, "145:107:572:561"),	-- Boulderslide Ravine
 				exploration(2538, "190:97:718:571"),	-- Camp Aparaje
 				exploration(2537, "225:120:668:515"),	-- Grimtotem Post
@@ -126,7 +125,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2160),	-- Windshear Mine
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(360, {	-- Cliffwalker Post, Stonetalon Mountains
 					["cr"] = 35141,	-- Orna Skywatcher <Flight Master>

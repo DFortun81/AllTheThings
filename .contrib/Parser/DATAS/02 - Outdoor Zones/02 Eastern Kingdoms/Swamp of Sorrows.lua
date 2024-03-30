@@ -72,8 +72,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(402),	-- Swamp Moth (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(76, "365:305:492:0"),		-- Fallow Sanctuary
 				exploration(1777, "240:245:0:262"),		-- Itharius's Cave
 				exploration(1778, "215:365:724:120"),	-- Sorrowmurk
@@ -92,7 +91,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2403),	-- The Forbidding Sea
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(599, {	-- Bogpaddle, Swamp of Sorrows
 					["cr"] = 43086,	-- Skeezie <Gryphon Master>

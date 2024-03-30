@@ -26,8 +26,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(1700, "200:185:340:234"),	-- Agama'gor
 				exploration(359, "128:128:431:479"),	-- Bael Modan
 				exploration(1701, "155:128:335:462"),	-- Blackthorn Ridge
@@ -68,7 +67,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(401),	-- The Tidus Stair
 				]]--
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",

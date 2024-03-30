@@ -1876,8 +1876,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				pet(420),	-- Toad (PET!)
 				pet(418),	-- Water Snake (PET!)
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(370, "210:160:427:78"),		-- Drygulch Ravine
 				exploration(368, "200:240:549:427"),	-- Echo Isles
 				exploration(366, "160:120:413:476"),	-- Kolkar Crag
@@ -1909,7 +1908,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2979),	-- Tor'kren Farm
 				]]--
 			}),
-			-- #endif
 			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {
 				fp(537, {	-- Razor Hill

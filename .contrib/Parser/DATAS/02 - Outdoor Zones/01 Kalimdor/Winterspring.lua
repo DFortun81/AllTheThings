@@ -220,8 +220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(2256, "255:205:447:441"),	-- Darkwhisper Gorge
 				exploration(2255, "165:200:509:107"),	-- Everlook
 				exploration(2246, "240:140:222:172"),	-- Frostfire Hot Springs
@@ -242,7 +241,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2252),	-- The Ruins of Kel'Theril
 				]]--
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(577, {	-- Everlook
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",

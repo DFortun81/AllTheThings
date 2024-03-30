@@ -651,8 +651,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					pet(464),	-- Grey Moth (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(3857, "256:256:515:279"),	-- Ammen Ford
 				exploration(3526, "475:512:527:104"),	-- Ammen Vale
 				exploration(3576, "256:256:383:249"),	-- Azure Watch
@@ -671,7 +670,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3574, "256:256:176:303"),	-- Valaar's Berth
 				exploration(3570, "256:247:220:421"),	-- Wrathscale Point
 			}),
-			-- #endif
 			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {
 				fp(624, {	-- Azure Watch, Azuremyst Isle [Alliance]

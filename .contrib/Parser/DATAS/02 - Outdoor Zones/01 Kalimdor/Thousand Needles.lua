@@ -85,8 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(480, "305:310:0:0"),		-- Camp E'thok
 				exploration(2097, "205:195:259:131"),	-- Darkcloud Pinnacle
 				exploration(484, "210:190:357:264"),	-- Freewind Post
@@ -111,7 +110,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2239),	-- Zane's Eye Crater
 				]]
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles
 					["cr"] = 40769,	-- Zazzix Boomride <Flight Master>

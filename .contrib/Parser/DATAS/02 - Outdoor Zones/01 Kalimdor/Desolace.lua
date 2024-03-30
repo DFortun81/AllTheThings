@@ -101,8 +101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(480),	-- Topaz Shale Hatchling (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(2405, "205:250:311:61"),	-- Ethel Rethor
 				exploration(596, "275:250:387:244"),	-- Kodo Graveyard
 				exploration(609, "220:220:607:215"),	-- Kolkar Village
@@ -128,7 +127,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2657),	-- Valley of Bones
 				]]--
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(92, {	-- Gelkis Clan Centaur
 					-- #if AFTER 8.0.1

@@ -125,8 +125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(433),	-- Spiky Lizard (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(3427, {	-- Bronzebeard Encampment
 					["maphash"] = "128:128:0:0",
 					["coord"] = { 41.2, 89.2, SILITHUS },
@@ -140,22 +139,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2740, "320:289:104:24"),	-- The Crystal Vale
 				exploration(2737, "288:256:116:413"),	-- The Scarab Wall
 				--[[
-				exploration(2477, ""),	-- The Veiled Sea
-				exploration(2739, ""),	-- Twilight Base Camp
-				exploration(2741, ""),	-- The Scarab Dais
-				exploration(3077, ""),	-- Valor's Rest
-				exploration(3097, ""),	-- The Swarming Pillar
-				exploration(3098, ""),	-- Twilight Post
-				exploration(3099, ""),	-- Twilight Outpost
-				exploration(3100, ""),	-- Ravaged Twilight Camp
-				exploration(3257, ""),	-- Bones of Grakkarond
-				exploration(3426, ""),	-- Staghelm Point
-				exploration(3446, ""),	-- Twilight's Run
-				exploration(3447, ""),	-- Ortell's Hideout
-				exploration(3454, ""),	-- Ruins of Ahn'Qiraj
+				exploration(2477),	-- The Veiled Sea
+				exploration(2739),	-- Twilight Base Camp
+				exploration(2741),	-- The Scarab Dais
+				exploration(3077),	-- Valor's Rest
+				exploration(3097),	-- The Swarming Pillar
+				exploration(3098),	-- Twilight Post
+				exploration(3099),	-- Twilight Outpost
+				exploration(3100),	-- Ravaged Twilight Camp
+				exploration(3257),	-- Bones of Grakkarond
+				exploration(3426),	-- Staghelm Point
+				exploration(3446),	-- Twilight's Run
+				exploration(3447),	-- Ortell's Hideout
+				exploration(3454),	-- Ruins of Ahn'Qiraj
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(73, {	-- Cenarion Hold, Silithus (A)
 					["cr"] = 15177,	-- Cloud Skydancer <Hippogryph Master>

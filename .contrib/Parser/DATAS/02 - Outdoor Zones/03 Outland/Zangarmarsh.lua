@@ -224,8 +224,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(3650, "256:256:88:50"),		-- Ango'rosh Grounds
 					exploration(3651, "256:128:124:0"),		-- Ango'rosh Stronghold
 					exploration(3818, "256:512:462:90"),	-- Bloodscale Grounds
@@ -245,7 +244,6 @@ root(ROOTS.Zones, {
 					exploration(3641, "256:207:720:461"),	-- Umbrafen Village
 					exploration(3645, "256:256:175:232"),	-- Zabra'jin
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(942, {	-- Cenarion Expedition
 						["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS, COILFANG_RESERVOIR_STEAMVAULT, COILFANG_RESERVOIR_UNDERBOG },

@@ -162,8 +162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(359),	-- Bael Modan
 				--exploration(),	-- Battlescar
 				--exploration(),	-- Forward Command
@@ -176,7 +175,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				--exploration(),	-- The Overgrowth
 				--exploration(),	-- Vendetta Point
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(391, {	-- Desolation Hold, Southern Barrens
 					["cr"] = 39330,	-- Crador <Flight Master>

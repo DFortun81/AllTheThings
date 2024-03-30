@@ -200,8 +200,7 @@ root(ROOTS.Zones, {
 						pet(537),-- Dragonbone Hatchling (PET!)
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4253),	-- 7th Legion Front
 					exploration(4165),	-- Agmar's Hammer
 					exploration(4172),	-- Angrathar the Wrathgate
@@ -243,7 +242,6 @@ root(ROOTS.Zones, {
 					exploration(4177),	-- Wintergarde Keep
 					exploration(4161),	-- Wyrmrest Temple
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(1073, {	-- The Kalu'ak
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },

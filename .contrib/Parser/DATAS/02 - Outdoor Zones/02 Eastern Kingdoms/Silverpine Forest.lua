@@ -64,8 +64,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(455),	-- Blighted Squirrel (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(233, "240:240:494:262"),	-- Ambermill
 				exploration(231, "240:180:491:417"),	-- Beren's Peril
 				exploration(213, "160:170:470:261"),	-- Deep Elem Mine
@@ -93,7 +92,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(227),	-- Valgan's Field
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest
 					["cr"] = 44825,	-- Bat Handler Maggotbreath <Flight Master>

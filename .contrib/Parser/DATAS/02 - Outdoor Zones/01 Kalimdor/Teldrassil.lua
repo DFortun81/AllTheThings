@@ -663,8 +663,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					419,	-- Small Frog (PET!)
 				}},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(736, "160:210:382:281"),	-- Ban'ethil Hollow
 				exploration(1657, "315:256:101:247"),	-- Darnassus
 				exploration(186, "190:128:462:323"),	-- Dolanaar
@@ -686,7 +685,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(265),	-- Wellspring River
 				]]
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(456, {	-- Dolanaar, Teldrassil
 					["cr"] = 40553,	-- Fidelio <Hippogryph Master>

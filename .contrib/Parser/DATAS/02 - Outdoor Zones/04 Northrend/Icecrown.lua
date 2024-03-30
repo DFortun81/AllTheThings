@@ -131,8 +131,7 @@ root(ROOTS.Zones, {
 						pet(538),	-- Scourged Whelpling (PET!)
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4510),	-- Aldur'thar: The Desolation Gate
 					applyclassicphase(WRATH_PHASE_TWO, exploration(4658)),	-- Argent Tournament Grounds
 					exploration(4527),	-- Balargarde Fortress
@@ -167,7 +166,6 @@ root(ROOTS.Zones, {
 					exploration(4517),	-- Weeping Quarry
 					exploration(4513),	-- Ymirheim
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(1106, {	-- Argent Crusade
 						["maps"] = { ZULDRAK },

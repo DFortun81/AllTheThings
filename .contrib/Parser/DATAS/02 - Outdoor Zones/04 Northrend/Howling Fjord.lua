@@ -226,8 +226,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				n(EXPLORATION, {
+				explorationHeader({
 					exploration(4062),	-- Apothecary Camp
 					exploration(3996),	-- Baelgun's Excavation Site
 					exploration(4001),	-- Baleheim
@@ -276,7 +275,6 @@ root(ROOTS.Zones, {
 					exploration(4479),	-- Winter's Breath Lake
 					exploration(3982),	-- Wyrmskull Village
 				}),
-				-- #endif
 				n(FACTIONS, {
 					faction(1068, {	-- Explorer's League
 						["maps"] = { THE_STORM_PEAKS },

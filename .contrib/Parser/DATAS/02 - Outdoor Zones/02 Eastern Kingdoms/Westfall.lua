@@ -61,8 +61,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(389),	-- Tiny Harvester (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(219, "305:210:204:260"),	-- Alexston Farmstead
 				exploration(921, "200:185:208:375"),	-- Demont's Place
 				exploration(109, "210:215:387:11"),		-- Furlbrow's Pumpkin Farm
@@ -84,7 +83,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2364),	-- The Great Sea
 				]]--
 			}),
-			-- #endif
 			-- #if AFTER 4.1.0.13726
 			prof(FISHING, {
 				i(68795, {	-- Stendel's Bane

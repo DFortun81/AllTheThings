@@ -71,8 +71,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(429),	-- Lava Beetle (PET!)
 				},
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
+			explorationHeader({
 				exploration(255, "225:220:36:109"),		-- Altar of Storms
 				exploration(254, "256:280:173:101"),	-- Blackrock Mountain
 				exploration(2417, "270:310:589:279"),	-- Blackrock Pass
@@ -84,11 +83,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2420, "280:355:722:46"),	-- Terror Wing Path
 				exploration(253, "320:270:377:285"),	-- The Pillar of Ash
 				--[[
-				exploration(251, ""),	-- Flame Crest
-				exploration(2419, ""),	-- Slither Rock
+				exploration(251),	-- Flame Crest
+				exploration(2419),	-- Slither Rock
 				]]--
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(676, {	-- Chiselgrip, Burning Steppes
 					["cr"] = 48321,	-- Grimly Singefeather <Flight Master>
