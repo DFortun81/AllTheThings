@@ -57,22 +57,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(97, "235:270:399:129"),		-- Alther's Mill
 				exploration(1000, "250:250:654:161"),	-- Galardell Valley
+				-- #if AFTER CATA
+				exploration(5325),	-- Keeshan's Post
+				-- #endif
 				exploration(68, "535:275:133:240"),		-- Lake Everstill
 				exploration(1001, "430:290:187:333"),	-- Lakeridge Highway
 				exploration(69, "340:195:83:197"),		-- Lakeshire
 				exploration(95, "365:245:121:72"),		-- Redridge Canyons
 				exploration(996, "275:256:277:0"),		-- Render's Camp
-				exploration(997, "465:255:484:361"),	-- Render's Valley
-				exploration(70, "255:300:500:215"),		-- Stonewatch
-				exploration(71, "320:210:595:320"),		-- Stonewatch Falls
-				exploration(1002, "365:350:0:284"),		-- Three Corners
-				--[[
+				-- #if AFTER CATA
 				exploration(998),	-- Render's Rock
+				-- #endif
+				exploration(997, "465:255:484:361"),	-- Render's Valley
+				-- #if AFTER CATA
 				exploration(98),	-- Rethban Caverns
+				exploration(5324),	-- Shalewind Canyon
+				-- #endif
+				-- #if BEFORE CATA
+				exploration(70, "255:300:500:215"),		-- Stonewatch
+				-- #endif
+				exploration(71, "320:210:595:320"),		-- Stonewatch Falls
+				-- #if AFTER CATA
 				exploration(2099),	-- Stonewatch Keep
 				exploration(999),	-- Stonewatch Tower
+				-- #endif
+				exploration(1002, "365:350:0:284"),		-- Three Corners
+				-- #if AFTER CATA
 				exploration(96),	-- Tower of Ilgalar
-				]]--
+				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
 				fp(615, {	-- Camp Everstill, Redridge

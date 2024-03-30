@@ -839,31 +839,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				exploration(159, "128:158:537:299"),	-- Brill [Classic]
 				-- #endif
+				-- #if AFTER CATA
+				exploration(4916),	-- Calston Estate
+				-- #endif
 				exploration(166, "150:128:474:327"),	-- Cold Hearth Manor
 				exploration(167, "173:128:694:289"),	-- Crusader Outpost
 				exploration(154, "245:205:227:328"),	-- Deathknell
 				exploration(164, "174:220:497:145"),	-- Garren's Haunt
+				-- #if AFTER CATA
+				exploration(163),	-- Gunther's Retreat
+				-- #endif
 				exploration(811, "243:199:363:349"),	-- Nightmare Vale
+				-- #if AFTER CATA
+				exploration(153),	-- Ruins of Lordaeron
+				exploration(796),	-- Scarlet Monastery
+				exploration(5511),	-- Scarlet Monastery Entrance
+				-- #endif
 				exploration(459, "175:247:689:104"),	-- Scarlet Watch Post
+				-- #if AFTER CATA
+				exploration(4921),	-- Scarlet Watchtower
+				-- #endif
 				exploration(156, "256:156:239:250"),	-- Solliden Farmstead
+				-- #if BEFORE CATA
 				exploration(810, "186:128:395:277"),	-- Stillwater Pond
+				-- #endif
+				-- #if AFTER CATA
+				exploration(161),	-- Terrace of Repose
+				-- #endif
 				exploration(152, "230:205:698:362"),	-- The Bulwark
 				exploration(812, "237:214:757:205"),	-- Venomweb Vale
 				exploration(160, "211:189:746:125"),	-- Whispering Gardens
+				-- #if BEFORE CATA
 				exploration(1497, "315:235:463:361"),	-- Undercity
+				-- #endif
 				--[[
 				exploration(158),	-- Agamand Family Crypt
-				exploration(153),	-- Ruins of Lordaeron
+				exploration(2118),	-- Brill Town Hall
+				exploration(173),	-- Faol's Rest
+				exploration(2119),	-- Gallows' End Tavern
 				exploration(155),	-- Night Web's Hollow
-				exploration(161),	-- Terrace of Repose
-				exploration(163),	-- Gunther's Retreat
+				exploration(2117),	-- Shadow Grave
+				exploration(2399),	-- The Great Sea
 				exploration(168),	-- The North Coast
 				exploration(169),	-- Whispering Shore
-				exploration(173),	-- Faol's Rest
-				exploration(2117),	-- Shadow Grave
-				exploration(2118),	-- Brill Town Hall
-				exploration(2119),	-- Gallows' End Tavern
-				exploration(2399),	-- The Great Sea
 				]]--
 			}),
 			-- #if AFTER 3.3.0.10554

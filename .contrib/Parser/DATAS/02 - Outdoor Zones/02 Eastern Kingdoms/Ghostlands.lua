@@ -121,23 +121,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(3510),	-- Amani Catacombs
+				-- #endif
 				exploration(3508, "404:436:598:232"),	-- Amani Pass [TBC]
+				-- #if AFTER CATA
+				exploration(3497),	-- An'daroth
+				exploration(3499),	-- An'owyn
+				exploration(3498),	-- An'telas
+				exploration(3506),	-- Andilien Estate
+				-- #endif
 				exploration(3501, "256:256:184:238"),	-- Bleeding Ziggurat [TBC]
 				exploration(3495, "427:256:575:0"),		-- Dawnstar Spire [TBC]
 				exploration(3500, "512:293:95:375"),	-- Deatholme [TBC]
+				-- #if BEFORE CATA
 				exploration(3856, "512:256:326:0"),		-- Elrendar Crossing [TBC]
+				-- #endif
+				-- #if AFTER CATA
+				exploration(3515),	-- Elrendar River
+				-- #endif
 				exploration(3496, "429:256:573:136"),	-- Farstrider Enclave [TBC]
 				exploration(3490, "512:512:44:0"),		-- Goldenmist Village [TBC]
+				-- #if AFTER CATA
+				exploration(3507),	-- Hatchet Hills
+				-- #endif
 				exploration(3502, "256:449:340:219"),	-- Howling Ziggurat [TBC]
 				exploration(3823, "256:256:585:0"),		-- Isle of Tribulations [TBC]
+				-- #if AFTER CATA
+				exploration(3513),	-- Lake Elrendar
+				-- #endif
 				exploration(3494, "256:256:210:126"),	-- Sanctum of the Moon [TBC]
 				exploration(3493, "256:512:448:150"),	-- Sanctum of the Sun [TBC]
+				-- #if AFTER CATA
+				exploration(3503),	-- Shalandis Isle
+				-- #endif
 				exploration(3489, "512:256:460:0"),		-- Suncrown Village [TBC]
+				-- #if AFTER CATA
+				exploration(3509),	-- Sungraze Peak
+				-- #endif
 				exploration(3861, "256:262:364:406"),	-- Thalassian Pass [TBC]
 				exploration(3488, "256:512:365:2"),		-- Tranquillien [TBC]
+				-- #if AFTER CATA
+				exploration(3505),	-- Underlight Mines
+				-- #endif
 				exploration(3492, "256:256:40:287"),	-- Windrunner Spire [TBC]
 				exploration(3491, "256:512:60:117"),	-- Windrunner Village [TBC]
 				exploration(3517, "512:431:466:237"),	-- Zeb'Nowa [TBC]
+				-- #if AFTER CATA
+				exploration(3512),	-- Zeb'Sora
+				exploration(3516),	-- Zeb'Tela
+				-- #endif
 			}),
 			n(FACTIONS, {
 				faction(922, {	-- Tranquillien

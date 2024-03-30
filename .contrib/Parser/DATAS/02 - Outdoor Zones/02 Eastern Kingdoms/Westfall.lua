@@ -70,16 +70,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(20, "220:200:317:331"),		-- Moonbrook
 				exploration(107, "225:210:459:105"),	-- Saldean's Farm
 				exploration(108, "195:240:442:241"),	-- Sentinel Hill
+				-- #if AFTER CATA
+				exploration(919),	-- Stendel's Pond
+				-- #endif
 				exploration(920, "256:175:339:418"),	-- The Dagger Hills
 				exploration(917, "200:240:524:252"),	-- The Dead Acre
+				-- #if AFTER CATA
+				exploration(1581),	-- The Deadmines
+				-- #endif
 				exploration(922, "288:235:523:377"),	-- The Dust Plains
 				exploration(916, "165:200:488:0"),		-- The Jansen Stead
 				exploration(918, "225:205:328:148"),	-- The Molsen Farm
+				-- #if AFTER CATA
+				exploration(5290),	-- The Raging Chasm
+				-- #endif
 				exploration(115, "280:190:205:467"),	-- Westfall Lighthouse
 				--[[
 				exploration(26),	-- Lighthouse
 				exploration(2),		-- Longshore
-				exploration(919),	-- Stendel's Pond
 				exploration(2364),	-- The Great Sea
 				]]--
 			}),

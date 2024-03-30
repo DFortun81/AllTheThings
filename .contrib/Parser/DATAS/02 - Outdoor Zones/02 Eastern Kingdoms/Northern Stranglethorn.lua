@@ -93,6 +93,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(405),	-- Tree Python (PET!)
 				},
 			}),
+			explorationHeader({
+				exploration(123),	-- Bal'lal Ruins
+				exploration(127),	-- Balia'mah Ruins
+				exploration(5320),	-- Fort Livingston
+				exploration(117),	-- Grom'gol Base Camp
+				exploration(125),	-- Kal'ai Ruins
+				exploration(101),	-- Kurzen's Compound
+				exploration(37),	-- Lake Nazferiti
+				exploration(129),	-- Mizjah Ruins
+				exploration(105),	-- Mosh'Ogg Ogre Mound
+				exploration(100),	-- Nesingwary's Expedition
+				exploration(99),	-- Rebel Camp
+				exploration(102),	-- Ruins of Zul'Kunda
+				exploration(103),	-- Ruins of Zul'Mamwe
+				exploration(301),	-- The Savage Coast
+				exploration(104),	-- The Vile Reef
+				exploration(126),	-- Tkashi Ruins
+				exploration(1740),	-- Venture Co. Base Camp
+				exploration(3357),	-- Yojamba Isle
+				exploration(19),	-- Zul'Gurub
+				exploration(122),	-- Zuuldaia Ruins
+			}),
 			n(FLIGHT_PATHS, {
 				fp(593, {	-- Bambala, Stranglethorn
 					["cr"] = 43052,	-- Raskha <Flight Master>

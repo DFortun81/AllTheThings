@@ -165,6 +165,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["lore"] = "Abyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.",
 				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 				["groups"] = {
+					explorationHeader({
+						exploration(5135),	-- Abandoned Reef
+						exploration(5047),	-- Abyssal Breach
+						exploration(4976),	-- Darkbreak Cove
+						exploration(5101),	-- Deepfin Ridge
+						exploration(4977),	-- Korthun's End
+						exploration(4971),	-- L'ghorek
+						exploration(4975),	-- Tenebrous Cavern
+						exploration(4974),	-- Underlight Canyon
+					}),
 					n(FLIGHT_PATHS, {
 						fp(524, {	-- Daybreak Cove, Vashj'ir
 							["coord"] = { 56.8, 75.4, 204 },
@@ -720,6 +730,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["lore"] = "Kelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.",
 				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 				["groups"] = {
+					explorationHeader({
+						exploration(5055),	-- Gnaws' Boneyard
+						exploration(5053),	-- Gurboggle's Ledge
+						exploration(5052),	-- Legion's Fate
+						exploration(5051),	-- Seafarer's Tomb
+						exploration(5030),	-- Shallow's End
+						exploration(5057),	-- Smuggler's Scar
+						exploration(5059),	-- The Clutch
+						exploration(5054),	-- The Skeletal Reef
+					}),
 					n(FLIGHT_PATHS, {
 						fp(607, {	-- Sandy Beach, Vashj'ir
 							["description"] = "Underwater.",
@@ -1198,6 +1218,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["lore"] = "The Shimmering Expanse is a subzone of Vash'jir. It contains The Earthen Ring quartermaster in Silver Tide Hollow, the only flight points in the zone, and tons of  Azshara's Veil. In this section, players learn about the highborne's past and the threat of the naga through the eyes of Battlemaidens.",
 				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 				["groups"] = {
+					explorationHeader({
+						exploration(4966),	-- Biel'aran Ridge
+						exploration(4963),	-- Glimmerdeep Gorge
+						exploration(4962),	-- Nespirah
+						exploration(5007),	-- Ruins of Thelserai Temple
+						exploration(4967),	-- Ruins of Vashj'ir
+						exploration(5008),	-- Shimmering Grotto
+						exploration(5005),	-- Silver Tide Hollow
+						exploration(4961),	-- Silver Tide Trench
+					}),
 					n(FLIGHT_PATHS, {
 						fp(525, {	-- Legion's Rest, Vashj'ir
 							["coord"] = { 50.8, 63.4, 205 },

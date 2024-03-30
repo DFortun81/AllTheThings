@@ -10,6 +10,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["timeline"] = { "added 4.0.3" },
 		["groups"] = {
+			explorationHeader({
+				exploration(5442),	-- Emberstone Mine
+				exploration(5440),	-- Northern Headlands
+				exploration(5436),	-- Tempest's Reach
+			}),
 			n(FLIGHT_PATHS, {
 				fp(646, {	-- Forsaken Forward Command, Gilneas
 					["altQuests"] = { 27438 },	-- The Great Escape

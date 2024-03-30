@@ -119,8 +119,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			explorationHeader({
 				exploration(536, "275:250:55:342"),		-- Addle's Stead
+				-- #if AFTER CATA
+				exploration(576),	-- Beggar's Haunt
+				-- #endif
 				exploration(242, "220:340:504:117"),	-- Brightwood Grove
 				exploration(42, "315:280:631:162"),		-- Darkshire
+				-- #if AFTER CATA
+				exploration(243),	-- Forlorn Rowe
+				-- #endif
 				exploration(1098, "200:175:653:120"),	-- Manor Mistmantle
 				exploration(94, "195:145:102:302"),		-- Raven Hill
 				exploration(492, "350:300:85:149"),		-- Raven Hill Cemetery
@@ -132,9 +138,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(856, "360:420:298:79"),		-- Twilight Grove
 				exploration(93, "255:285:243:348"),		-- Vul'Gol Ogre Mound
 				--[[
-				exploration(576),	-- Beggar's Haunt
 				exploration(2098),	-- Dawning Wood Catacombs
-				exploration(243),	-- Forlorn Rowe
 				exploration(2161),	-- Roland's Doom
 				exploration(32),	-- The Cemetary
 				exploration(244),	-- The Whipple Estate

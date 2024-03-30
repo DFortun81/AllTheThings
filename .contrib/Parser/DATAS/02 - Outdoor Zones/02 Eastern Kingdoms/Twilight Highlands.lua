@@ -242,6 +242,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(549),	-- Yellow-Bellied Marmot (PET!)
 				},
 			}),
+			explorationHeader({
+				exploration(5138),	-- Bloodgulch
+				exploration(5527),	-- Crucible of Carnage
+				exploration(5471),	-- Crushblow
+				exploration(5461),	-- Dragonmaw Pass
+				exploration(5136),	-- Dragonmaw Port
+				exploration(5483),	-- Dunwald Ruins
+				exploration(5141),	-- Firebeard's Patrol
+				exploration(5639),	-- Glopgut's Hollow
+				exploration(5488),	-- Gorshak War Camp
+				exploration(1037),	-- Grim Batol
+				exploration(5140),	-- Highbank
+				exploration(5594),	-- Highland Forest
+				exploration(5640),	-- Humboldt Conflagration
+				exploration(5143),	-- Kirthaven
+				exploration(5595),	-- Obsidian Forest
+				exploration(5439),	-- Ruins of Drakgor
+				exploration(5479),	-- Slithering Cove
+				exploration(5489),	-- The Boneyard
+				exploration(5139),	-- The Gullet
+				exploration(5137),	-- The Krazworks
+				exploration(5641),	-- The Twilight Breach
+				exploration(5473),	-- The Twilight Citadel
+				exploration(5155),	-- Vermillion Redoubt
+			}),
 			n(FACTIONS, {
 				faction(1172, {	-- Dragonmaw Clan
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_dragonmawclan",

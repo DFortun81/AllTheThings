@@ -921,6 +921,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3467, "256:256:460:373"),	-- East Sanctum [TBC]
 				exploration(3558, "128:256:580:399"),	-- Elrendar Falls [TBC]
 				exploration(3462, "256:256:386:386"),	-- Fairbreeze Village [TBC]
+				-- #if AFTER CATA
+				exploration(3485),	-- Falthrien Academy
+				-- #endif
 				exploration(3464, "256:128:524:359"),	-- Farstrider Retreat [TBC]
 				-- #if AFTER WRATH
 				exploration(3534),	-- Feth's Way [WRATH]
@@ -934,6 +937,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3913, "256:172:378:496"),	-- Runestone Falithas [TBC]
 				exploration(3914, "256:174:464:494"),	-- Runestone Shan'dor [TBC]
 				exploration(3468, "256:256:324:384"),	-- Saltheril's Haven [TBC]
+				-- #if AFTER CATA
+				exploration(3432),	-- Shrine of Dath'Remar
+				-- #endif
 				exploration(3487, "512:512:440:87"),	-- Silvermoon City [TBC]
 				-- #if AFTER WRATH
 				exploration(3531),	-- Skulking Row [WRATH]
@@ -941,6 +947,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3470, "256:256:474:314"),	-- Stillwhisper Pond [TBC]
 				exploration(3461, "256:128:231:404"),	-- Sunsail Anchorage [TBC]
 				exploration(3431, "512:512:195:5"),		-- Sunstrider Isle [TBC]
+				-- #if AFTER CATA
+				exploration(3482),	-- The Dead Scar
+				-- #endif
 				exploration(3471, "128:248:511:420"),	-- The Living Wood [TBC]
 				exploration(3474, "256:128:255:507"),	-- The Scorched Grove [TBC]
 				exploration(3469, "256:128:539:305"),	-- Thuron's Livery [TBC]

@@ -86,11 +86,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(925),	-- Algaz Station
+				exploration(837),	-- Dun Algaz
+				-- #endif
 				exploration(936, "295:358:309:310"),	-- Grizzlepaw Ridge
 				exploration(142, "345:256:482:321"),	-- Ironband's Excavation Site
 				exploration(143, "315:235:542:48"),		-- Mo'grosh Stronghold
 				exploration(838, "230:300:125:12"),		-- North Gate Pass
 				exploration(149, "235:270:229:11"),		-- Silver Stream Mine
+				-- #if AFTER CATA
+				exploration(806),	-- South Gate Outpost
+				exploration(839),	-- South Gate Pass
+				-- #endif
 				exploration(923, "255:285:215:348"),	-- Stonesplinter Valley
 				exploration(146, "290:175:339:11"),		-- Stonewrought Dam
 				exploration(147, "370:295:546:199"),	-- The Farstrider Lodge
@@ -99,9 +107,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(924, "195:250:109:370"),	-- Valley of Kings
 				--[[
 				exploration(145),	-- Algaz Gate
-				exploration(925),	-- Algaz Station
-				exploration(837),	-- Dun Algaz
-				exploration(839),	-- South Gate Pass
 				exploration(2101),	-- Stoutlager Inn
 				]]--
 			}),

@@ -69,27 +69,59 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(231, "240:180:491:417"),	-- Beren's Peril
 				exploration(213, "160:170:470:261"),	-- Deep Elem Mine
 				exploration(172, "250:215:593:74"),		-- Fenris Isle
+				-- #if AFTER CATA
+				exploration(5369),	-- Forsaken High Command
+				exploration(5386),	-- Forsaken Rear Guard
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(238, "256:160:465:0"),		-- Malden's Orchard
+				-- #endif
+				-- #if AFTER CATA
+				exploration(928),	-- North Tide's Beachhead
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(928, "180:128:323:128"),	-- North Tide's Hollow
+				-- #endif
+				-- #if AFTER CATA
+				exploration(305),	-- North Tide's Run
+				-- #endif
 				exploration(229, "165:185:382:252"),	-- Olsen's Farthing
+				-- #if AFTER CATA
+				exploration(5476),	-- Pyrewood Chapel
+				exploration(5478),	-- Pyrewood Town Hall
+				-- #endif
 				exploration(204, "140:125:391:446"),	-- Pyrewood Village
 				exploration(236, "220:160:364:359"),	-- Shadowfang Keep
+				-- #if AFTER CATA
+				exploration(5456),	-- The Battlefront
+				exploration(232),	-- The Dawning Isles
+				exploration(237),	-- The Decrepit Fields
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(240, "175:165:402:65"),		-- The Dead Field
 				exploration(237, "180:185:457:144"),	-- The Decrepit Ferry
+				-- #endif
+				-- #if AFTER CATA
+				exploration(5387),	-- The Forsaken Front
+				-- #endif
 				exploration(230, "210:215:379:447"),	-- The Greymane Wall
+				-- #if AFTER CATA
+				exploration(239),	-- The Ivar Patch
+				-- #endif
 				exploration(228, "210:160:352:168"),	-- The Sepulcher
+				-- #if BEFORE CATA
 				exploration(927, "256:220:459:13"),		-- The Shining Strand
+				-- #endif
 				exploration(226, "185:165:286:37"),		-- The Skittering Dark
+				-- #if AFTER CATA
+				exploration(227),	-- Valgan's Field
+				-- #endif
 				--[[
 				exploration(926),	-- Bucklebree Farm
 				exploration(235),	-- Fenris Keep
 				exploration(1338),	-- Lordamere Lake
-				exploration(305),	-- North Tide's Run
 				exploration(306),	-- South Tide's Run
-				exploration(232),	-- The Dawning Isles
 				exploration(2398),	-- The Great Sea
-				exploration(239),	-- The Ivar Patch
-				exploration(227),	-- Valgan's Field
 				]]--
 			}),
 			n(FLIGHT_PATHS, {

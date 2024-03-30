@@ -73,16 +73,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(5458),	-- Bogpaddle
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(76, "365:305:492:0"),		-- Fallow Sanctuary
 				exploration(1777, "240:245:0:262"),		-- Itharius's Cave
-				exploration(1778, "215:365:724:120"),	-- Sorrowmurk
-				exploration(657, "235:205:171:145"),	-- The Harborage
+				-- #endif
+				-- #if AFTER CATA
+				exploration(5459),	-- Marshtide Watch
+				-- #endif
 				exploration(300, "256:668:746:0"),		-- Misty Reed Strand
 				exploration(116, "245:305:0:140"),		-- Misty Valley
 				exploration(74, "300:275:565:218"),		-- Pool of Tears
+				-- #if AFTER CATA
+				exploration(1777),	-- Purespring Cavern
+				-- #endif
+				exploration(1778, "215:365:724:120"),	-- Sorrowmurk
 				exploration(1780, "275:240:129:236"),	-- Splinterspear Junction
 				exploration(1797, "345:250:552:378"),	-- Stagalbog
 				exploration(75, "360:315:279:237"),		-- Stonard
+				-- #if AFTER CATA
+				exploration(5460),	-- The Bloodmire
+				-- #endif
+				exploration(657, "235:205:171:145"),	-- The Harborage
 				exploration(1798, "315:235:286:110"),	-- The Shifting Mire
 				--[[
 				exploration(1779),	-- Draenil'dur Village

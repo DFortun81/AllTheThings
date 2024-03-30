@@ -95,6 +95,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
+			explorationHeader({
+				exploration(35),	-- Booty Bay
+				exploration(310),	-- Crystalvein Mine
+				exploration(1741),	-- Gurubashi Arena
+				exploration(1739),	-- Hardwrench Hideaway
+				exploration(297),	-- Jaguero Isle
+				exploration(312),	-- Janeiro's Point
+				exploration(1737),	-- Mistvale Valley
+				exploration(1738),	-- Nek'mani Wellspring
+				exploration(311),	-- Ruins of Aboraz
+				exploration(477),	-- Ruins of Jubuwal
+				exploration(1578),	-- Southern Savage Coast
+				exploration(5318),	-- The Sundering
+				exploration(43),	-- Wild Shore
+			}),
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
 					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",

@@ -823,6 +823,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			explorationHeader({
 				-- #if AFTER WRATH
+				-- #if AFTER CATA
+				exploration(4281),	-- Acherus: The Ebon Hold
+				-- #endif
 				exploration(2624, "256:256:412:177"),	-- Blackwood Lake
 				exploration(2264, "256:256:471:345"),	-- Corin's Crossing
 				exploration(2263, "256:256:261:379"),	-- Crown Guard Tower
@@ -830,10 +833,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2271, "256:256:562:219"),	-- Eastwall Tower
 				exploration(2621, "256:205:474:412"),	-- Lake Mereldar
 				exploration(2268, "256:256:656:277"),	-- Light's Hope Chapel
+				-- #if AFTER CATA
+				exploration(5448),	-- Light's Shield Tower
+				-- #endif
 				exploration(2272, "256:256:590:106"),	-- Northdale
 				exploration(2275, "256:256:427:87"),	-- Northpass Tower
 				exploration(2622, "256:288:590:269"),	-- Pestilent Scar
 				exploration(2277, "384:288:139:61"),	-- Plaguewood
+				-- #if AFTER CATA
+				exploration(4067),	-- Plaguewood Tower
+				-- #endif
 				exploration(2276, "256:256:392:14"),	-- Quel'Lithien Lodge
 				applyclassicphase(WRATH_PHASE_ONE, exploration(4546, "284:450:718:218")),	-- Ruins of the Scarlet Enclave
 				exploration(2279, "256:243:164:0"),	-- Stratholme
