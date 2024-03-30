@@ -190,6 +190,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1038, "350:360:611:230"),	-- Dragonmaw Gates
 				exploration(836),	-- Dun Algaz
 				exploration(205, "205:180:401:21"),		-- Dun Modr
+				-- #if BEFORE CATA
+				exploration(1037),    -- Grim Batol
+				-- #endif
 				exploration(309, "200:185:349:115"),	-- Ironbeard's Tomb
 				exploration(150, "175:128:13:314"),		-- Menethil Harbor
 				exploration(1020, "205:245:527:264"),	-- Mosshide Fen
