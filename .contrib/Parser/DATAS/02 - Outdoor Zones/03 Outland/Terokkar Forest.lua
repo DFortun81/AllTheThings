@@ -278,17 +278,13 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
-					-- #if AFTER CATA
 					exploration(3901),	-- Allerian Post
-					-- #endif
 					exploration(3684, "256:256:480:277"),	-- Allerian Stronghold
 					exploration(3894, "256:234:247:434"),	-- Auchenai Grounds
-					-- #if AFTER CATA
 					exploration(3688),	-- Auchindoun
 					exploration(3690),	-- Blackwind Lake
 					exploration(3973),	-- Blackwind Landing
 					exploration(3680),	-- Blackwind Valley
-					-- #endif
 					exploration(3719, "256:367:103:301"),	-- Bleeding Hollow Ruins
 					exploration(3685, "256:256:521:275"),	-- Bonechewer Ruins
 					exploration(3891, "256:256:377:272"),	-- Carrion Hill
@@ -296,9 +292,9 @@ root(ROOTS.Zones, {
 					exploration(3886, "256:208:321:460"),	-- Derelict Caravan
 					exploration(3681, "385:512:617:149"),	-- Firewing Point
 					exploration(3682, "512:256:143:171"),	-- Grangol'var Village
-					-- #if AFTER CATA
 					exploration(3691),	-- Lake Ere'Noru
 					exploration(3692),	-- Lake Jorune
+					-- #if AFTER CATA
 					exploration(3978),	-- Lower Veil Shil'ak
 					-- #endif
 					exploration(3860, "256:256:505:154"),	-- Raastok Glade
@@ -308,37 +304,27 @@ root(ROOTS.Zones, {
 					-- #if AFTER WRATH
 					exploration(3958),	-- Sha'tari Base Camp [NOTE: This might not be completable either...?]
 					-- #endif
+					-- #if ANYCLASSIC
 					exploration(3957, { ["timeline"] = { "created 2.0.1" } }),	-- Sha'tari Outpost [NOTE: Only Crieve could complete this, using Exploration Restoration, but not reliably achievable.]
+					-- #endif
 					exploration(3888, "256:256:245:289"),	-- Shadow Tomb
 					exploration(3703, "512:512:104:4"),		-- Shattrath City
-					-- #if AFTER CATA
 					exploration(3859),	-- Silmyr Lake
-					-- #endif
-					-- #if AFTER CATA
 					exploration(3693),	-- Skethyl Mountains
-					-- #endif
 					exploration(3679, "512:320:449:348"),	-- Skettis
-					-- #if AFTER CATA
 					exploration(3902),	-- Stonebreaker Camp
-					-- #endif
 					exploration(3683, "256:256:397:165"),	-- Stonebreaker Hold
 					exploration(3696, "256:256:116:4"),		-- The Barrier Hills
 					exploration(3760),		-- The Barrier Hills (Nagrand)
 					exploration(3697, "128:128:0:0"),		-- The Bone Wastes
-					-- #if AFTER CATA
 					exploration(3890),	-- Tomb of Lights
-					-- #endif
 					exploration(3675, "256:512:455:34"),	-- Tuurem
-					-- #if AFTER CATA
 					exploration(3686),	-- Veil Lithic
 					exploration(3689),	-- Veil Reskk
-					-- #endif
 					exploration(3889, "256:256:222:362"),	-- Veil Rhaze
-					-- #if AFTER CATA
 					exploration(3678),	-- Veil Shalas
 					exploration(3676),	-- Veil Shienor
 					exploration(3677),	-- Veil Skith
-					-- #endif
 					exploration(3892, "256:256:417:327"),	-- Writhing Mound
 				}),
 				n(FACTIONS, {

@@ -286,43 +286,31 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
-					-- #if AFTER CATA
 					exploration(3839),	-- Abandoned Armory
-					-- #endif
 					exploration(3610, "256:334:660:334"),	-- Burning Blade Ruins
 					exploration(3611, "256:256:532:363"),	-- Clan Watch
-					-- #if AFTER CATA
 					exploration(3636),	-- Elemental Plateau
-					-- #endif
 					exploration(3624, "512:420:36:248"),	-- Forge Camp: Fear
 					exploration(3625, "256:256:162:154"),	-- Forge Camp: Hate
 					exploration(3613, "256:256:431:143"),	-- Garadar
 					exploration(3628, "256:256:335:193"),	-- Halaa
-					-- #if AFTER CATA
 					exploration(3666),	-- Halaani Basin
-					-- #endif
 					exploration(3637, "256:241:558:427"),	-- Kil'sorrow Fortress
-					-- #if AFTER CATA
 					exploration(3621),	-- Lake Sunspring
 					exploration(3699),	-- Laughing Skill Courtyard
-					-- #endif
 					exploration(3616, "256:256:351:52"),	-- Laughing Skull Ruins
-					-- #if AFTER CATA
 					exploration(3672),	-- Mag'hari Procession
 					exploration(3673),	-- Nesingwary Safari
 					exploration(3627),	-- Northwind Cleft
 					exploration(3630),	-- Oshu'gun
 					exploration(3614),	-- Skysong Lake
-					-- #endif
 					exploration(3629, "256:256:391:258"),	-- Southwind Cleft
 					exploration(3631, "512:334:168:334"),	-- Spirit Fields
 					exploration(3622, "256:256:219:199"),	-- Sunspring Post
 					exploration(3626, "256:256:387:390"),	-- Telaar
-					-- #if AFTER CATA
 					exploration(3760),	-- The Barrier Hills
 					exploration(3788),	-- The Low Path
 					exploration(3700),	-- The Ring of Blood
-					-- #endif
 					exploration(3638, "256:256:533:267"),	-- The Ring of Trials
 					exploration(3764, "256:512:10:107"),	-- The Twilight Ridge
 					exploration(3615, "256:256:504:53"),	-- Throne of the Elements
