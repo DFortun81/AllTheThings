@@ -844,7 +844,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(4067),	-- Plaguewood Tower
 				-- #endif
 				exploration(2276, "256:256:392:14"),	-- Quel'Lithien Lodge
-				applyclassicphase(WRATH_PHASE_ONE, exploration(4546, "284:450:718:218")),	-- Ruins of the Scarlet Enclave
+				-- #if AFTER CATA
+				exploration(4546),	-- Ruins of the Scarlet Enclave
+				-- #endif
 				exploration(2279, "256:243:164:0"),	-- Stratholme
 				exploration(2627, "256:256:49:76"),	-- Terrordale
 				exploration(2258, "256:256:241:239"),	-- The Fungal Vale
