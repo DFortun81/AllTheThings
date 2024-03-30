@@ -466,12 +466,6 @@ local onMapUpdate = function(t)
 				if not coords then
 					coords = {};
 					app.ExplorationAreaPositionDB[areaID] = coords;
-					local missing = AllTheThingsAD.ExplorationAreaPositionDB;
-					if not missing then
-						missing = {};
-						--AllTheThingsAD.ExplorationAreaPositionDB = missing;
-					end
-					missing[areaID] = coords;
 				end
 				tinsert(coords, {pos.x * 100, pos.y * 100, id});
 			end
@@ -486,20 +480,6 @@ local onMapUpdate = function(t)
 	rawset(t, "OnUpdate", nil);
 	--app:StartATTCoroutine("Simplifying Exploration Data", simplifyExplorationData);
 end;
-app.SortExplorationDB = function()
-	local e,t=ATTC.ExplorationDB,{};
-	for mapID,areas in pairs(e) do
-		local mapData = {};
-		t[mapID] = mapData;
-		for i,areaID in ipairs(areas) do
-			tinsert(mapData, { areaID, C_Map_GetAreaInfo(areaID) });
-		end
-		app.Sort(mapData, function(a, b)
-			return a[2] < b[2];
-		end);
-	end
-	AllTheThingsAD.NamedExplorationDB = t;
-end
 
 -- Maps
 local createMap = app.CreateClass("Map", "mapID", {
@@ -607,7 +587,6 @@ app.CreateMap = app.IsRetail and createMap or function(id, t)
 		if not areaIDs then
 			areaIDs = {};
 			app.ExplorationDB[id] = areaIDs;
-			--AllTheThingsAD.ExplorationDB = ATTC.ExplorationDB;
 		else
 			for _,areaID in ipairs(areaIDs) do
 				if not explorationByAreaID[areaID] then
