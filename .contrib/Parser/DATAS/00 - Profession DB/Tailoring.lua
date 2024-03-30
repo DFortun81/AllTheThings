@@ -732,7 +732,7 @@ i(0, 142951);	-- White Cloud Leggings
 --- PATCH 6.0.1 ---
 -------------------
 --- ITEM ---
-i(115357, 158758);	-- Tailoring (Draenor)
+i(0, 158758);	-- Tailoring (Draenor)
 
 -----------------
 -- PATCH 3.0.3 --
