@@ -817,9 +817,8 @@ app.events.MAP_EXPLORATION_UPDATED = function()
 						app.SetCollected(nil, "Exploration", areaID, true);
 						newArea = true;
 						if not app.ExplorationAreaPositionDB[areaID] then
-							local coord = {px, py, CurrentMapID};
-							print("New Coordinate: ", C_Map_GetAreaInfo(areaID), coord);
-							app.ExplorationAreaPositionDB[areaID] = { coord };
+							print("New Coordinate: ", C_Map_GetAreaInfo(areaID), px, py, CurrentMapID);
+							app.ExplorationAreaPositionDB[areaID] = { { px, py, CurrentMapID } };
 						end
 					end
 				end
