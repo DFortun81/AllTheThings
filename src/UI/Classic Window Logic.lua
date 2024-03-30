@@ -1415,13 +1415,13 @@ local function RefreshData(source, trigger)
 			refreshDataCooldown = refreshDataCooldown - 1;
 			coroutine.yield();
 		end
+		
+		-- Execute the OnRecalculate handlers.
+		app.HandleEvent("OnRecalculate");
 
 		-- Send an Update to the Windows to Rebuild their Row Data
 		if app.forceFullDataRefresh then
 			app.forceFullDataRefresh = nil;
-
-			-- Execute the OnRecalculate handlers.
-			app.HandleEvent("OnRecalculate");
 
 			if LastSettingsChangeUpdate ~= app._SettingsRefresh then
 				LastSettingsChangeUpdate = app._SettingsRefresh;
