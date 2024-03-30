@@ -292,62 +292,48 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
-					-- #if AFTER CATA
 					exploration(3671),	-- Broken Hill
 					exploration(3808),	-- Cenarion Post
-					-- #endif
-					exploration(3556, "256:256:182:412"),	-- Den of Haal'esh
+					exploration(3556),	-- Den of Haal'esh
 					exploration(3814),	-- East Supply Caravan
-					exploration(3546, "512:255:261:413"),	-- Expedition Armory
-					-- #if AFTER CATA
+					exploration(3546),	-- Expedition Armory
 					exploration(3815),	-- Expedition Point
-					-- #endif
-					exploration(3554, "512:342:183:326"),	-- Falcon Watch
-					exploration(3797, "256:256:34:142"),	-- Fallen Sky Ridge
-					exploration(3541, "512:512:478:25"),	-- Forge Camp: Mageddon
+					exploration(3554),	-- Falcon Watch
+					exploration(3797),	-- Fallen Sky Ridge
+					exploration(3541),	-- Forge Camp: Mageddon
 					exploration(3548),	-- Forge Camp: Rage
-					exploration(3545, "256:458:338:210"),	-- Hellfire Citadel
-					exploration(3538, "256:256:469:298"),	-- Honor Hold
+					exploration(3811),	-- Gor'gaz Outpost
+					exploration(3798),	-- Haal'eshi Gorge
+					exploration(3545),	-- Hellfire Citadel
+					exploration(3538),	-- Honor Hold
 					exploration(3549),	-- Invasion Point: Annihilator
-					-- #if AFTER CATA
 					exploration(3801),	-- Mag'har Grounds
-					-- #endif
-					exploration(3555, "256:256:206:110"),	-- Mag'har Post
-					-- #if AFTER CATA
+					exploration(3555),	-- Mag'har Post
 					exploration(3810),	-- Northern Rampart
-					-- #endif
-					exploration(3553, "256:512:326:45"),	-- Pools of Aggonar
+					exploration(3553),	-- Pools of Aggonar
 					exploration(3807),	-- Reaver's Fall
-					exploration(3551, "256:378:25:290"),	-- Ruins of Sha'naar
-					-- #if AFTER CATA
+					exploration(3551),	-- Ruins of Sha'naar
 					exploration(3795),	-- Sha'naari Wastes
 					exploration(3920),	-- Shatter Point
 					exploration(3838),	-- Spinebreaker Mountains
 					exploration(3812),	-- Spinebreaker Post
 					exploration(3799),	-- Stonewall Canyon
-					-- #endif
-					exploration(3552, "512:512:38:152"),	-- Temple of Telhamat
+					exploration(3552),	-- Temple of Telhamat
 					exploration(3803),	-- The Abyssal Shelf
-					-- #if AFTER CATA
 					exploration(3543),	-- The Great Fissure
-					-- #endif
-					exploration(3804, "256:512:579:128"),	-- The Legion Front
-					-- #if AFTER CATA
+					exploration(3804),	-- The Legion Front
 					exploration(3670),	-- The Overlook
 					exploration(3813),	-- The Path of Anguish
 					exploration(3669),	-- The Stadium
-					-- #endif
-					exploration(3539, "256:512:737:156"),	-- The Stair of Destiny
-					exploration(3796, "256:260:308:408"),	-- The Warp Fields
-					-- #if AFTER CATA
+					exploration(3539),	-- The Stair of Destiny
+					exploration(3796),	-- The Warp Fields
 					exploration(3800),	-- Thornfang Hill
-					-- #endif
-					exploration(3536, "256:256:467:154"),	-- Thrallmar
-					exploration(3547, "512:256:477:6"),		-- Throne of Kil'jaeden
+					exploration(3536),	-- Thrallmar
+					exploration(3547),	-- Throne of Kil'jaeden
 					exploration(3794),	-- Valley of Bones
-					exploration(3802, "256:256:705:368"),	-- Void Ridge
+					exploration(3802),	-- Void Ridge
 					exploration(3816),	-- Zeppelin Crash
-					exploration(3582, "422:238:580:430"),	-- Zeth'Gor
+					exploration(3582),	-- Zeth'Gor
 				}),
 				n(FACTIONS, {
 					faction(946, {	-- Honor Hold

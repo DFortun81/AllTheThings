@@ -134,32 +134,32 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
-					exploration(3754, "256:256:520:93"),	-- Altar of Sha'tar
+					exploration(3754),	-- Altar of Sha'tar
 					exploration(3757),	-- Ata'mal Terrace
 					exploration(3749),	-- Coilskar Cistern
-					exploration(3750, "512:512:348:8"),		-- Coilskar Point
+					exploration(3750),	-- Coilskar Point
 					exploration(3939),	-- Dragonmaw Fortress
-					exploration(3822, "512:358:343:310"),	-- Eclipse Point
-					exploration(3752, "256:256:143:256"),	-- Illidari Point
-					exploration(3743, "512:512:104:155"),	-- Legion Hold
-					exploration(3758, "256:256:554:308"),	-- Netherwing Fields
-					exploration(3759, "492:223:510:445"),	-- Netherwing Ledge
+					exploration(3822),	-- Eclipse Point
+					exploration(3752),	-- Illidari Point
+					exploration(3743),	-- Legion Hold
+					exploration(3758),	-- Netherwing Fields
+					exploration(3759),	-- Netherwing Ledge
 					exploration(3945),	-- Netherwing Pass
 					exploration(3927),	-- Oronok's Farm
 					exploration(3753),	-- Ruins of Baa'ri
 					exploration(3756),	-- Ruins of Karabor
 					exploration(3938),	-- Sanctum of the Stars
-					exploration(3520, "0:0:0:0"),	-- Shadowmoon Valley? [Not sure when this triggered, might have been near the Fel Pits to the East.]
-					exploration(3744, "512:512:116:35"),	-- Shadowmoon Village
+					exploration(3520),	-- Shadowmoon Valley
+					exploration(3744),	-- Shadowmoon Village
 					exploration(3932),	-- Sketh'lon Base Camp
 					exploration(3933),	-- Sketh'lon Wreckage
 					exploration(3928),	-- The Altar of Damnation
-					exploration(3840, "396:512:606:126"),	-- The Black Temple
-					exploration(3748, "256:512:290:129"),	-- The Deathforge
+					exploration(3840),	-- The Black Temple
+					exploration(3748),	-- The Deathforge
 					exploration(3747),	-- The Fel Pits
-					exploration(3746, "512:512:394:90"),	-- The Hand of Gul'dan
-					exploration(3821, "512:410:469:258"),	-- Warden's Cage
-					exploration(3745, "512:439:168:229"),	-- Wildhammer Stronghold
+					exploration(3746),	-- The Hand of Gul'dan
+					exploration(3821),	-- Warden's Cage
+					exploration(3745),	-- Wildhammer Stronghold
 				}),
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(1015, {	-- Netherwing

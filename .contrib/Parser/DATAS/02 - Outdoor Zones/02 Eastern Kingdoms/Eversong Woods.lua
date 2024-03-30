@@ -912,51 +912,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			explorationHeader({
-				exploration(3472, "256:256:669:228"),	-- Azurebreeze Coast [TBC]
-				-- #if AFTER WRATH
-				exploration(3532),	-- Dawning Lane [WRATH]
-				-- #endif
-				exploration(3480, "256:256:605:253"),	-- Duskwither Grounds [TBC]
-				exploration(3481, { ["timeline"] = { "created 2.0.1" } }),	-- Duskwither Spire [TBC] [NOTE: Only Crieve could complete this, using Exploration Restoration, but not reliably achievable. Maybe Horde Only?]
-				exploration(3467, "256:256:460:373"),	-- East Sanctum [TBC]
-				exploration(3558, "128:256:580:399"),	-- Elrendar Falls [TBC]
-				exploration(3462, "256:256:386:386"),	-- Fairbreeze Village [TBC]
-				-- #if AFTER CATA
+				exploration(3472),	-- Azurebreeze Coast
+				exploration(3532),	-- Dawning Lane
+				exploration(3480),	-- Duskwither Grounds
+				exploration(3481),	-- Duskwither Spire
+				exploration(3467),	-- East Sanctum
+				exploration(3558),	-- Elrendar Falls
+				exploration(3462),	-- Fairbreeze Village
 				exploration(3485),	-- Falthrien Academy
-				-- #endif
-				exploration(3464, "256:128:524:359"),	-- Farstrider Retreat [TBC]
-				-- #if AFTER WRATH
-				exploration(3534),	-- Feth's Way [WRATH]
-				-- #endif
-				exploration(3460, "128:253:183:415"),	-- Golden Strand [TBC]
-				exploration(3912, "256:128:243:469"),	-- Goldenbough Pass [TBC]
-				exploration(3513),	-- Lake Elrendar (Ghostlands) [TBC]
-				exploration(3473, "128:197:584:471"),	-- Lake Elrendar [TBC]
-				exploration(3465, "256:256:361:298"),	-- North Sanctum [TBC]
-				exploration(3533, "256:256:307:136"),	-- Ruins of Silvermoon [TBC]
-				exploration(3913, "256:172:378:496"),	-- Runestone Falithas [TBC]
-				exploration(3914, "256:174:464:494"),	-- Runestone Shan'dor [TBC]
-				exploration(3468, "256:256:324:384"),	-- Saltheril's Haven [TBC]
-				-- #if AFTER CATA
+				exploration(3464),	-- Farstrider Retreat
+				exploration(3534),	-- Feth's Way
+				exploration(3460),	-- Golden Strand
+				exploration(3912),	-- Goldenbough Pass
+				exploration(3513),	-- Lake Elrendar (Ghostlands)
+				exploration(3473),	-- Lake Elrendar
+				exploration(3465),	-- North Sanctum
+				exploration(3533),	-- Ruins of Silvermoon
+				exploration(3913),	-- Runestone Falithas
+				exploration(3914),	-- Runestone Shan'dor
+				exploration(3468),	-- Saltheril's Haven
 				exploration(3432),	-- Shrine of Dath'Remar
-				-- #endif
-				exploration(3487, "512:512:440:87"),	-- Silvermoon City [TBC]
-				-- #if AFTER WRATH
-				exploration(3531),	-- Skulking Row [WRATH]
-				-- #endif
-				exploration(3470, "256:256:474:314"),	-- Stillwhisper Pond [TBC]
-				exploration(3461, "256:128:231:404"),	-- Sunsail Anchorage [TBC]
-				exploration(3431, "512:512:195:5"),		-- Sunstrider Isle [TBC]
-				-- #if AFTER CATA
+				exploration(3487),	-- Silvermoon City
+				exploration(3531),	-- Skulking Row
+				exploration(3470),	-- Stillwhisper Pond
+				exploration(3461),	-- Sunsail Anchorage
+				exploration(3431),	-- Sunstrider Isle
 				exploration(3482),	-- The Dead Scar
-				-- #endif
-				exploration(3471, "128:248:511:420"),	-- The Living Wood [TBC]
-				exploration(3474, "256:128:255:507"),	-- The Scorched Grove [TBC]
-				exploration(3469, "256:128:539:305"),	-- Thuron's Livery [TBC]
-				exploration(3476, "256:353:648:315"),	-- Tor'Watha [TBC]
-				exploration(3911, "256:256:215:298"),	-- Tranquil Shore [TBC]
-				exploration(3466, "128:256:292:319"),	-- West Sanctum [TBC]
-				exploration(3475, "128:193:554:475"),	-- Zeb'Watha [TBC]
+				exploration(3471),	-- The Living Wood
+				exploration(3474),	-- The Scorched Grove
+				exploration(3469),	-- Thuron's Livery
+				exploration(3476),	-- Tor'Watha
+				exploration(3911),	-- Tranquil Shore
+				exploration(3466),	-- West Sanctum
+				exploration(3475),	-- Zeb'Watha
 			}),
 			n(FLIGHT_PATHS, {
 				fp(625, {	-- Fairbreeze Village, Eversong Woods [Horde]

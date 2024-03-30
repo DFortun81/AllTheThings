@@ -151,6 +151,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			explorationHeader({
 				exploration(415, "205:185:272:251"),	-- Astranaar
+				-- #if AFTER WRATH
+				exploration(411),	-- Bathran's Haunt
+				-- #endif
 				-- #if AFTER CATA
 				exploration(2797),	-- Blackfathom Deeps
 				-- #endif
@@ -161,7 +164,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(422, "235:205:547:426"),	-- Fallen Sky Lake
 				exploration(434, "245:255:713:344"),	-- Felfire Hill
 				exploration(417, "165:175:189:324"),	-- Fire Scar Shrine
-				-- #if AFTER CATA
+				-- #if AFTER WRATH
 				exploration(2358),	-- Forest Song
 				-- #endif
 				exploration(2359),	-- Greenpaw Village
@@ -173,8 +176,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				exploration(441, "128:195:131:137"),	-- Lake Falathim
 				exploration(413, "215:305:205:38"),		-- Maestra's Post
-				-- #if AFTER CATA
-				exploration(425),	-- Moonwell of Purity
+				-- #if AFTER WRATH
+				exploration(425),	-- Moonwell / Moonwell of Purity [CATA+]
 				-- #endif
 				-- #if BEFORE CATA
 				exploration(421, "275:240:356:347"),	-- Mystral Lake
@@ -183,7 +186,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(426, "180:245:520:238"),	-- Raynewood Retreat
 				exploration(430, "285:185:694:225"),	-- Satyrnaar
 				exploration(420),	-- Silverwind Refuge
-				-- #if AFTER CATA
+				-- #if AFTER WRATH
 				exploration(2360),	-- Silverwing Outpost
 				-- #endif
 				exploration(431),	-- Splintertree Post
@@ -192,6 +195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				exploration(1703),	-- The Mor'shan Rampart
 				-- #endif
+				exploration(412),	-- The Ruins of Ordil'Aran
 				exploration(418, "155:150:260:373"),	-- The Ruins of Stardust
 				exploration(416, "220:195:104:259"),	-- The Shrine of Aessina
 				exploration(414, "245:245:19:28"),		-- The Zoram Strand
@@ -204,7 +208,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2897),	-- Zoram'gar Outpost
 				-- #endif
 				--[[
-				exploration(411),	-- Bathran's Haunt
 				exploration(2357),	-- Bloodtooth Camp
 				exploration(436),	-- Demon Fall Ridge
 				exploration(433),	-- Falfarren River
@@ -212,7 +215,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2457),	-- Nightsong Woods
 				exploration(3319),	-- Silverwing Grove
 				exploration(879), 	-- Southfury River
-				exploration(412),	-- The Ruins of Ordil'Aran
 				exploration(427),	-- The Shady Nook
 				exploration(1276),	-- The Talondeep Path
 				exploration(2325),	-- The Veiled Sea

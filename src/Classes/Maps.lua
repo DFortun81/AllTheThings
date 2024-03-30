@@ -387,7 +387,7 @@ local function PrintDiscordInformationForAreaID(mapID, areaID, t, o, pos)
 	};
 	tinsert(info, areaID and ("areaID: "..areaID) or "areaID: ??");
 	tinsert(info, mapID and ("mapID: "..mapID) or "mapID: ??");
-	tinsert(info, pos and ("coord: "..(pos.x * 100) .. ", " .. (pos.y * 100)) or "coord: ??");
+	tinsert(info, pos and pos.x and ("coord: "..(pos.x * 100) .. ", " .. (pos.y * 100)) or "coord: ??");
 
 	tinsert(info, "ver: "..app.Version);
 	tinsert(info, "build: "..app.GameBuildVersion);

@@ -1343,19 +1343,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER CATA
 			explorationHeader({
 				exploration(4089),	-- Dawnstar Village
 				exploration(4091),	-- Greengill Coast
 				exploration(4095),	-- Magister's Terrace
+				-- #if AFTER CATA
 				exploration(4083),	-- Silvermoon's Pride
 				exploration(4088),	-- Sun's Reach Armory
 				exploration(4087),	-- Sun's Reach Harbor
 				exploration(4086),	-- Sun's Reach Sanctum
+				-- #endif
 				exploration(4094),	-- Sunwell Plateau
 				exploration(4092),	-- The Dead Scar
 			}),
-			-- #endif
 			n(FACTIONS, {
 				faction(1077, {	-- Shattered Sun Offensive
 					["maps"] = { MAGISTERS_TERRACE },
