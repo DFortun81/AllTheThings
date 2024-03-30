@@ -1817,7 +1817,6 @@ end");
                     case "description":
                     case "title":
                     case "order":
-                    case "maphash":
                     case "SortType":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");

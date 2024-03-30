@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(3077),	-- Valor's Rest
 				-- #else
 				exploration(3427, {	-- Bronzebeard Encampment
-					["maphash"] = "128:128:0:0",
+					--["maphash"] = "128:128:0:0",
 					["coord"] = { 41.2, 89.2, SILITHUS },
 					["timeline"] = { "added 2.0.1" },
 				}),

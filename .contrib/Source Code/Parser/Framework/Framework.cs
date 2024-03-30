@@ -973,13 +973,6 @@ namespace ATT
                         return "explorationID";
                     }
 
-                case "explorationhash":
-                case "explorationmap":
-                case "maphash":
-                    {
-                        return "maphash";
-                    }
-
                 case "illusionId":
                 case "illusionID":
                     {

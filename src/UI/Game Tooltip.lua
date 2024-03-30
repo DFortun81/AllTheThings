@@ -111,12 +111,7 @@ end
 local function SetReferenceTexture(reference)
 	local texture = reference.preview or reference.icon;
 	if texture then
-		if reference.explorationID and reference.maphash and reference.preview then
-			local width, height, offsetX, offsetY = (":"):split(reference.maphash);
-			GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
-		else
-			GameTooltipIcon:SetSize(72,72);
-		end
+		GameTooltipIcon:SetSize(72,72);
 		GameTooltipIcon.icon:SetTexture(texture);
 		local texcoord = reference.texcoord;
 		if texcoord then

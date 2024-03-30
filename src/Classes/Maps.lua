@@ -235,24 +235,11 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	["text"] = function(t)
 		return C_Map_GetAreaInfo(t.explorationID) or RETRIEVING_DATA;
 	end,
-	["title"] = function(t)
-		return t.maphash;
-	end,
 	["description"] = function(t)
 		if not TomTom then
 			return "You can use Alt+Right Click to plot the coordinates with TomTom installed. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
 		else
 			return "You can use Alt+Right Click to plot the coordinates. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
-		end
-	end,
-	["preview"] = function(t)
-		local exploredMapTextureInfo = t.exploredMapTextureInfo;
-		if exploredMapTextureInfo then
-			local texture = exploredMapTextureInfo.fileDataIDs[1];
-			if texture then
-				rawset(t, "preview", texture);
-				return texture;
-			end
 		end
 	end,
 	["artID"] = function(t)
@@ -270,40 +257,7 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	["collected"] = function(t)
 		if app.CurrentCharacter.Exploration[t.explorationID] then return 1; end
 		if app.Settings.AccountWide.Exploration and ATTAccountWideData.Exploration[t.explorationID] then return 2; end
-
-		local maphash = t.maphash;
-		if maphash then
-			local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
-			if exploredMapTextures then
-				for i,info in ipairs(exploredMapTextures) do
-					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-					if hash == maphash then return app.SetCollected(nil, "Exploration", t.explorationID, true); end
-				end
-				--[[
-				if not app.MAPHASHTHING then app.MAPHASHTHING = {}; end
-					if not app.MAPHASHTHING[t.explorationID] then
-					app.MAPHASHTHING[t.explorationID] = true;
-					print("Failed to detect maphash '" .. maphash .. "' on map " .. t.mapID .. ".");
-				end
-				]]--
-			end
-		end
 		--[[
-		if not app.MAPTHING then app.MAPTHING = {}; end
-		local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID);
-		if not app.MAPTHING[t.mapID] and exploredMapTextures then
-			app.MAPTHING[t.mapID] = true;
-			local hashes = {};
-			for i,o in ipairs(t.parent.g) do
-				if o.maphash then hashes[o.maphash] = o; end
-			end
-			for i,info in ipairs(exploredMapTextures) do
-				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-				if hash and not hashes[hash] then
-					print("Failed to find areaID for maphash '" .. hash .. "' on map " .. t.mapID .. ".");
-				end
-			end
-		end
 		local coords = t.coords;
 		if coords and #coords > 0 then
 			local c = coords[1];
@@ -320,33 +274,8 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 		]]--
 	end,
 	["coords"] = function(t)
-		local coords = app.ExplorationAreaPositionDB[t.explorationID];
-		if not coords then
-			local maphash = t.maphash;
-			if maphash then
-				local coords = {};
-				local width, height, offsetX, offsetY = (":"):split(maphash);
-				tinsert(coords, {((offsetX + (width * 0.5)) * 100) / WorldMapFrame:GetWidth(), ((offsetY + (height * 0.5)) * 100) / WorldMapFrame:GetHeight(), t.mapID});
-				return coords;
-			end
-		end
-		return coords;
+		return app.ExplorationAreaPositionDB[t.explorationID];
 	end,
-	["exploredMapTextureInfo"] = function(t)
-		local maphash = t.maphash;
-		if maphash then
-			local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
-			if exploredMapTextures then
-				for i,info in ipairs(exploredMapTextures) do
-					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-					if hash == maphash then
-						rawset(t, "exploredMapTextureInfo", info);
-						return info;
-					end
-				end
-			end
-		end
-	end
 });
 
 local ExplorationGrid = {};
