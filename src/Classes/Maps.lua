@@ -378,6 +378,25 @@ local onClickForExplorationHeader = function(row, button)
 		return true;
 	end
 end
+local function PrintDiscordInformationForAreaID(mapID, areaID, t, o, pos)
+	local text = o.text .. " (" .. t.text .. ")";
+	local info = {
+		"### new-area:" .. areaID,
+		"```elixir",	-- discord fancy box start
+		text or "???",
+	};
+	tinsert(info, areaID and ("areaID: "..areaID) or "areaID: ??");
+	tinsert(info, mapID and ("mapID: "..mapID) or "mapID: ??");
+	tinsert(info, pos and ("coord: "..(pos.x * 100) .. ", " .. (pos.y * 100)) or "coord: ??");
+
+	tinsert(info, "ver: "..app.Version);
+	tinsert(info, "build: "..app.GameBuildVersion);
+	tinsert(info, "```");	-- discord fancy box end
+	
+	local popupID = "area-" .. areaID;
+	app:SetupReportDialog(popupID, text, info);
+	print("Found Area:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
+end
 local onMapUpdate = function(t)
 	local explorationByAreaID = {};
 	local explorationHeader = nil;
@@ -422,7 +441,7 @@ local onMapUpdate = function(t)
 					o = app.CreateExploration(areaID);
 					explorationByAreaID[areaID] = o;
 					tinsert(newExplorationObjects, o);
-					print("Found New AreaID:", id, t.text, areaID, o.text);
+					PrintDiscordInformationForAreaID(id, areaID, t, o, pos);
 					tinsert(areaIDs, areaID);
 				end
 			end
@@ -439,7 +458,7 @@ local onMapUpdate = function(t)
 					o = app.CreateExploration(areaID);
 					explorationByAreaID[areaID] = o;
 					tinsert(newExplorationObjects, o);
-					print("Found New AreaID:", id, t.text, areaID, o.text);
+					PrintDiscordInformationForAreaID(id, areaID, t, o, pos);
 					tinsert(areaIDs, areaID);
 					coroutine.yield();
 				end

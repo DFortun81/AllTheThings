@@ -827,12 +827,8 @@ expansion = function(id, patch, t)							-- Create an EXPANSION Object
 	return t;
 end
 exploration = function(id, t)							-- Create an EXPLORATION Object
-	if type(t) == "string" then 
-		-- #if AFTER CATA
+	if type(t) == "string" then
 		t = nil;
-		-- #else
-		t = { ["maphash"] = t };
-		-- #endif
 	end
 	return struct("explorationID", id, t);
 end
