@@ -152,6 +152,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(2079),	-- Alcaz Island
+				exploration(501),	-- Beezil's Wreck
+				exploration(512),	-- Blackhoof Village
+				exploration(498),	-- Bloodfen Burrow
+				exploration(496),	-- Brackenwall Village
+				exploration(499),	-- Darkmist Cavern
+				exploration(4046),	-- Direhorn Post
+				exploration(518),	-- Dreadmurk Shore
+				exploration(4010),	-- Mudsprocket
+				exploration(504),	-- North Point Tower
+				exploration(503),	-- Sentry Point
+				exploration(403),	-- Shady Rest Inn
+				exploration(508),	-- Stonemaul Ruins
+				exploration(497),	-- Swamplight Manor
+				exploration(509),	-- The Den of Flame
+				exploration(513),	-- Theramore Isle
+				exploration(502),	-- Witch Hill
+				exploration(511),	-- Wyrmbog
+				-- #else
 				exploration(2079, "200:195:660:21"),	-- Alcaz Island
 				exploration(512, {		-- Blackhoof Village
 					["coord"] = { 41.8, 13.7, DUSTWALLOW_MARSH },
@@ -167,22 +187,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(513, "230:205:534:224"),	-- Theramore Isle
 				exploration(502, "250:315:422:0"),		-- Witch Hill
 				exploration(511, "285:240:367:381"),	-- Wyrmbog
+				-- #endif
 				--[[
-				exploration(501),	-- Beezil's Wreck
 				exploration(507),	-- Bluefen
-				exploration(499),	-- Darkmist Cavern
-				exploration(518),	-- Dreadmurk Shore
 				exploration(516),	-- Dustwallow Bay
 				exploration(2158),	-- Emberstrife's Den
 				exploration(514),	-- Foothold Citadel
 				exploration(515),	-- Ironclad Prison
 				exploration(506),	-- Lost Point
 				exploration(500),	-- Moggle Point
-				exploration(504),	-- North Point Tower
-				exploration(503),	-- Sentry Point
-				exploration(403),	-- Shady Rest Inn
-				exploration(508),	-- Stonemaul Ruins
-				exploration(497),	-- Swamplight Manor
 				exploration(510),	-- The Dragonmurk
 				exploration(2318),	-- The Great Sea
 				exploration(517),	-- Tidefury Cove

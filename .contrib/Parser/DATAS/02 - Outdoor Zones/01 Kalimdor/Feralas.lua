@@ -98,6 +98,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(1099),	-- Camp Mojache
+				exploration(5036),	-- Darkmist Ruins
+				exploration(2577),	-- Dire Maul
+				exploration(1111),	-- Dream Bough
+				exploration(5072),	-- Feathermoon Stronghold
+				exploration(1106),	-- Frayfeather Highlands
+				exploration(1103),	-- Gordunni Outpost
+				exploration(1100),	-- Grimtotem Compound
+				exploration(1137),	-- Lower Wilds
+				exploration(1116),	-- Ruins of Feathermoon
+				exploration(2522),	-- Ruins of Isildien
+				exploration(1114),	-- Ruins of Ravenwind
+				exploration(1108),	-- The Forgotten Coast
+				exploration(1119),	-- The Twin Colossals
+				exploration(1101),	-- The Writhing Deep
+				exploration(2520),	-- Woodpaw Den
+				exploration(2519),	-- Woodpaw Hills
+				-- #else
 				exploration(1099, "155:160:689:233"),	-- Camp Mojache
 				exploration(2577, "230:195:454:201"),	-- Dire Maul
 				exploration(1111, "150:125:454:0"),		-- Dream Bough
@@ -114,9 +133,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1108, "145:320:404:256"),	-- The Forgotten Coast
 				exploration(1119, "285:245:319:75"),	-- The Twin Colossals
 				exploration(1101, "240:220:618:298"),	-- The Writhing Deep
+				-- #endif
 				--[[
 				exploration(1109),	-- East Pillar
-				exploration(1116),	-- Feathermoon Stronghold
 				exploration(1136),	-- High Wilderness
 				exploration(1107),	-- Idlewind Lake
 				exploration(1112),	-- Jademir Lake
@@ -130,8 +149,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2521),	-- Verdantis River
 				exploration(1110),	-- West Pillar
 				exploration(1102),	-- Wildwind Lake
-				exploration(2520),	-- Woodpaw Den
-				exploration(2519),	-- Woodpaw Hills
 				]]--
 			}),
 			n(FLIGHT_PATHS, {

@@ -86,6 +86,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(2097),	-- Darkcloud Pinnacle
+				exploration(5041),	-- Fizzle & Pozzik's Speedbarge
+				exploration(484),	-- Freewind Post
+				exploration(482),	-- Highperch
+				exploration(5092),	-- Razorfen Downs
+				exploration(5028),	-- Southsea Holdfast
+				exploration(5027),	-- Splithoof Heights
+				exploration(485),	-- The Great Lift
+				exploration(5025),	-- The Shimmering Deep
+				exploration(5589),	-- The Twilight Withering
+				exploration(5590),	-- Twilight Bulwark
+				exploration(5011),	-- Westreach Summit
+				-- #else
 				exploration(480, "305:310:0:0"),		-- Camp E'thok
 				exploration(2097, "205:195:259:131"),	-- Darkcloud Pinnacle
 				exploration(484, "210:190:357:264"),	-- Freewind Post
@@ -95,6 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(483, "250:240:179:200"),	-- The Screeching Canyon
 				exploration(439, "320:365:610:300"),	-- The Shimmering Flats
 				exploration(2303, "240:220:492:250"),	-- Windbreak Canyon
+				-- #endif
 				--[[
 				exploration(486),	-- Galak Hold
 				exploration(2238),	-- Gornia

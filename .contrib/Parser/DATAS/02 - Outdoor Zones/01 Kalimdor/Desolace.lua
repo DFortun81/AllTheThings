@@ -102,6 +102,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(4804),	-- Cenarion Wildlands
+				exploration(2405),	-- Ethel Rethor
+				exploration(4803),	-- Furien's Post
+				exploration(606),	-- Gelkis Village
+				exploration(596),	-- Kodo Graveyard
+				exploration(4797),	-- Magram Territory
+				exploration(602),	-- Mannoroc Coven
+				exploration(2100),	-- Maraudon
+				exploration(608),	-- Nijel's Point
+				exploration(2406),	-- Ranazjar Isle
+				exploration(603),	-- Sargeron
+				exploration(2198),	-- Shadowbreak Ravine
+				exploration(2408),	-- Shadowprey Village
+				exploration(604),	-- Shok'Thokar
+				exploration(4796),	-- Slitherblade Shore
+				exploration(2404),	-- Tethris Aran
+				exploration(599),	-- Thunder Axe Fortress
+				exploration(2657),	-- Valley of Bones
+				exploration(607),	-- Valley of Spears
+				-- #else
 				exploration(2405, "205:250:311:61"),	-- Ethel Rethor
 				exploration(596, "275:250:387:244"),	-- Kodo Graveyard
 				exploration(609, "220:220:607:215"),	-- Kolkar Village
@@ -117,6 +138,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2404, "205:145:431:0"),		-- Tethris Aran
 				exploration(599, "190:220:447:102"),	-- Thunder Axe Fortress
 				exploration(607, "245:285:212:215"),	-- Valley of Spears
+				-- #endif
 				--[[
 				exploration(600),	-- Bolgan's Hole
 				exploration(2217),	-- Broken Spear Village
@@ -124,7 +146,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(598),	-- Sar'theris Strand
 				exploration(2617),	-- Scrabblescrew's Camp
 				exploration(2324),	-- The Veiled Sea
-				exploration(2657),	-- Valley of Bones
 				]]--
 			}),
 			n(FACTIONS, {

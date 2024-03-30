@@ -82,6 +82,37 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(3597),	-- Amberweb Pass
+				exploration(3593),	-- Axxarien
+				exploration(3583),	-- Beryl Coast
+				exploration(3594),	-- Blacksilt Shore
+				exploration(3585),	-- Bladewood
+				exploration(3584),	-- Blood Watch
+				exploration(3612),	-- Bloodcurse Isle
+				exploration(3600),	-- Bristlelimb Enclave
+				exploration(3602),	-- Kessel's Crossing
+				exploration(3908),	-- Middenvale
+				exploration(3910),	-- Mystwood
+				exploration(3592),	-- Nazzivian
+				exploration(3601),	-- Ragefeather Ridge
+				exploration(3591),	-- Ruins of Loreth'Aran
+				exploration(3599),	-- Talon Stand
+				exploration(3603),	-- Tel'athion's Camp
+				exploration(3604),	-- The Bloodcursed Reef
+				exploration(3906),	-- The Bloodwash
+				exploration(3589),	-- The Crimson Reach
+				exploration(3588),	-- The Cryo-Core
+				exploration(3595),	-- The Foul Pool
+				exploration(3596),	-- The Hidden Reef
+				exploration(3909),	-- The Lost Fold
+				exploration(3586),	-- The Vector Coil
+				exploration(3587),	-- The Warp Piston
+				exploration(3907),	-- Veridian Point
+				exploration(3608),	-- Vindicator's Rest
+				exploration(3590),	-- Wrathscale Lair
+				exploration(3598),	-- Wyrmscar Island
+				-- #else
 				exploration(3597, "256:512:44:62"),		-- Amberweb Pass
 				exploration(3593, "256:256:297:136"),	-- Axxarien
 				exploration(3594, "512:242:177:426"),	-- Blacksilt Shore
@@ -110,6 +141,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3608, "256:256:232:242"),	-- Vindicator's Rest
 				exploration(3590, "256:256:598:338"),	-- Wrathscale Lair
 				exploration(3598, "256:256:613:82"),	-- Wyrmscar Island
+				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
 				fp(93, {	-- Blood Watch, Bloodmyst Isle [Alliance]

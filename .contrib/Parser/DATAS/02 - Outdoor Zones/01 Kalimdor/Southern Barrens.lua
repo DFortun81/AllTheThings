@@ -163,17 +163,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(4856),	-- Bael Modan
+				exploration(4855),	-- Battlescar
+				exploration(4849),	-- Forward Command
+				exploration(4948),	-- Frazzlecraz Motherlode
+				exploration(4843),	-- Honor's Stand
+				exploration(4844),	-- Hunter's Hill
+				exploration(4847),	-- Northwatch Hold
+				exploration(5518),	-- Razorfen Kraul Entrance
+				exploration(4851),	-- Ruins of Taurajo
+				exploration(5385),	-- The Great Divide
+				exploration(4845),	-- The Overgrowth
+				exploration(4986),	-- Vendetta Point
+				-- #else
 				exploration(359),	-- Bael Modan
-				--exploration(),	-- Battlescar
-				--exploration(),	-- Forward Command
-				--exploration(),	-- Frazzlecraz Motherlode
 				exploration(1702),	-- Honor's Stand
-				--exploration(),	-- Hunter's Hill
 				exploration(385),	-- Northwatch Hold
 				exploration(1717),	-- Razorfen Kraul
 				exploration(378),	-- Ruins of Taurajo
-				--exploration(),	-- The Overgrowth
-				--exploration(),	-- Vendetta Point
+				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
 				fp(391, {	-- Desolation Hold, Southern Barrens

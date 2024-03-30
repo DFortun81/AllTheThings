@@ -652,6 +652,31 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(3560),	-- Ammen Fields
+				exploration(3857),	-- Ammen Ford
+				exploration(3526),	-- Ammen Vale
+				exploration(3576),	-- Azure Watch
+				exploration(3571),	-- Bristlelimb Village
+				exploration(3564),	-- Emberglade
+				exploration(3915),	-- Fairbridge Strand
+				exploration(3577),	-- Geezle's Camp
+				exploration(3578),	-- Menagerie Wreckage
+				exploration(3916),	-- Moongraze Woods
+				exploration(3566),	-- Moonwing Den
+				exploration(3559),	-- Nestlewood Hills
+				exploration(3573),	-- Odesyus' Landing
+				exploration(3567),	-- Pod Cluster
+				exploration(3568),	-- Pod Wreckage
+				exploration(3530),	-- Shadow Ridge
+				exploration(3575),	-- Silting Shore
+				exploration(3639),	-- Silvermyst Isle
+				exploration(3572),	-- Stillpine Hold
+				exploration(3557),	-- The Exodar
+				exploration(3579),	-- Traitor's Cove
+				exploration(3574),	-- Valaar's Berth
+				exploration(3570),	-- Wrathscale Point
+				-- #else
 				exploration(3857, "256:256:515:279"),	-- Ammen Ford
 				exploration(3526, "475:512:527:104"),	-- Ammen Vale
 				exploration(3576, "256:256:383:249"),	-- Azure Watch
@@ -669,6 +694,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3557, "512:512:74:85"),		-- The Exodar
 				exploration(3574, "256:256:176:303"),	-- Valaar's Berth
 				exploration(3570, "256:247:220:421"),	-- Wrathscale Point
+				-- #endif
 			}),
 			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {

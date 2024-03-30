@@ -55,6 +55,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						},
 					}),
+					explorationHeader({
+						exploration(5695),	-- Ahn'Qiraj: The Fallen Kingdom
+					}),
 					n(RARES, {
 						n(50747, {	-- Tix
 							["coord"] = { 60.8, 6.6, AHNQIRAJ_THE_FALLEN_KINGDOM },
@@ -126,6 +129,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(3428),	-- Ahn'Qiraj
+				exploration(3427),	-- Bronzebeard Encampment
+				exploration(3425),	-- Cenarion Hold
+				exploration(2742),	-- Hive'Ashi
+				exploration(2744),	-- Hive'Regal
+				exploration(2743),	-- Hive'Zora
+				exploration(3447),	-- Ortell's Hideout
+				exploration(3454),	-- Ruins of Ahn'Qiraj
+				exploration(2738),	-- Southwind Village
+				exploration(3426),	-- Staghelm Point
+				exploration(2740),	-- The Crystal Vale
+				exploration(2741),	-- The Scarab Dais
+				exploration(2737),	-- The Scarab Wall
+				exploration(2739),	-- Twilight Base Camp
+				exploration(3099),	-- Twilight Outpost
+				exploration(3098),	-- Twilight Post
+				exploration(3446),	-- Twilight's Run
+				exploration(3077),	-- Valor's Rest
+				-- #else
 				exploration(3427, {	-- Bronzebeard Encampment
 					["maphash"] = "128:128:0:0",
 					["coord"] = { 41.2, 89.2, SILITHUS },
@@ -138,20 +161,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2738, "384:384:500:65"),	-- Southwind Village
 				exploration(2740, "320:289:104:24"),	-- The Crystal Vale
 				exploration(2737, "288:256:116:413"),	-- The Scarab Wall
+				-- #endif
 				--[[
 				exploration(2477),	-- The Veiled Sea
-				exploration(2739),	-- Twilight Base Camp
-				exploration(2741),	-- The Scarab Dais
-				exploration(3077),	-- Valor's Rest
 				exploration(3097),	-- The Swarming Pillar
-				exploration(3098),	-- Twilight Post
-				exploration(3099),	-- Twilight Outpost
 				exploration(3100),	-- Ravaged Twilight Camp
 				exploration(3257),	-- Bones of Grakkarond
-				exploration(3426),	-- Staghelm Point
-				exploration(3446),	-- Twilight's Run
-				exploration(3447),	-- Ortell's Hideout
-				exploration(3454),	-- Ruins of Ahn'Qiraj
 				]]--
 			}),
 			n(FLIGHT_PATHS, {

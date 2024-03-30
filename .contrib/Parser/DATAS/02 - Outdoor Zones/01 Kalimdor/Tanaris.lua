@@ -2872,6 +2872,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(1939),	-- Abyssal Sands
+				exploration(1938),	-- Broken Pillar
+				exploration(2300),	-- Caverns of Time
+				exploration(983),	-- Dunemaul Compound
+				exploration(984),	-- Eastmoon Ruins
+				exploration(976),	-- Gadgetzan
+				exploration(987),	-- Land's End Beach
+				exploration(1336),	-- Lost Rigger Cove
+				exploration(979),	-- Sandsorrow Watch
+				exploration(1940),	-- Southbreak Shore
+				exploration(992),	-- Southmoon Ruins
+				exploration(977),	-- Steamwheedle Port
+				exploration(981),	-- The Gaping Chasm
+				exploration(982),	-- The Noxious Lair
+				exploration(980),	-- Thistleshrub Valley
+				exploration(990),	-- Valley of the Watchers
+				exploration(978),	-- Zul'Farrak
+				-- #else
 				exploration(1939, "215:180:363:194"),	-- Abyssal Sands
 				exploration(1938, "110:180:473:234"),	-- Broken Pillar
 				exploration(2300, "155:150:561:256"),	-- Caverns of Time
@@ -2892,6 +2911,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(985, "165:180:509:168"),	-- Waterspring Field
 				exploration(986, "110:140:611:147"),	-- Zalashji's Den
 				exploration(978, "210:175:254:0"),		-- Zul'Farrak
+				-- #endif
 				--[[
 				exploration(991),	-- Gunstan's Post
 				exploration(2317),	-- South Seas

@@ -124,8 +124,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(381),	-- Boulder Lode Mine
 				exploration(384),	-- Dreadmist Peak
 				exploration(379),	-- Far Watch Post
+				exploration(720),	-- Fray Island
 				exploration(1704),	-- Grol'dom Farm
 				exploration(387),	-- Lushwater Oasis
+				exploration(5117),	-- Nozzlepot's Outpost
 				exploration(392),	-- Ratchet
 				exploration(380),	-- The Crossroads
 				exploration(383),	-- The Dry Hills
@@ -135,6 +137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(382),	-- The Sludge Fen
 				exploration(388),	-- The Stagnant Oasis
 				exploration(1699),	-- Thorn Hill
+				exploration(718),	-- Wailing Caverns
 			}),
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet

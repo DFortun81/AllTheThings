@@ -1877,6 +1877,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				pet(418),	-- Water Snake (PET!)
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(374),	-- Bladefist Bay
+				exploration(4865),	-- Darkspear Training Grounds
+				exploration(375),	-- Deadeye Shore
+				exploration(370),	-- Drygulch Ravine
+				exploration(6453),	-- Echo Isles
+				exploration(368),	-- Echo Isles
+				exploration(366),	-- Northwatch Foothold
+				exploration(1637),	-- Orgrimmar
+				exploration(362),	-- Razor Hill
+				exploration(816),	-- Razormane Grounds
+				exploration(410),	-- Razorwind Canyon
+				exploration(367),	-- Sen'jin Village
+				exploration(817),	-- Skull Rock
+				exploration(4981),	-- Southfury Watershed
+				exploration(369),	-- Thunder Ridge
+				exploration(372),	-- Tiragarde Keep
+				exploration(2979),	-- Tor'kren Farm
+				exploration(363),	-- Valley of Trials
+				exploration(4864),	-- Zalazane's Fall
+				-- #else
 				exploration(370, "210:160:427:78"),		-- Drygulch Ravine
 				exploration(368, "200:240:549:427"),	-- Echo Isles
 				exploration(366, "160:120:413:476"),	-- Kolkar Crag
@@ -1888,16 +1909,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(369, "190:200:327:60"),		-- Thunder Ridge
 				exploration(372, "190:180:462:286"),	-- Tiragarde Keep
 				exploration(363, "215:215:355:320"),	-- Valley of Trials
+				-- #endif
 				--[[
-				exploration(374),	-- Bladefist Bay
 				exploration(365),	-- Burning Blade Coven
 				exploration(393),	-- Darkspear Strand
-				exploration(375),	-- Deadeye Shore
 				exploration(371),	-- Dustwind Cave
 				exploration(638),	-- Hidden Path
 				exploration(1297),	-- Jaggedswine Farm
 				exploration(2337),	-- Razor Hill Barracks
-				exploration(410),	-- Razorwind Canyon
 				exploration(1296),	-- Rocktusk Farm
 				exploration(373),	-- Scuttle Coast
 				exploration(640),	-- Shrine of the Dormant Flame
@@ -1905,7 +1924,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(639),	-- Spirit Rock
 				exploration(364),	-- The Den
 				exploration(2320),	-- The Great Sea
-				exploration(2979),	-- Tor'kren Farm
 				]]--
 			}),
 			-- #if AFTER CATA

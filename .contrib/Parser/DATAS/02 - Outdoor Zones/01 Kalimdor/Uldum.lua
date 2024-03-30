@@ -91,6 +91,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(546),	-- Tol'vir Scarab (PET!)
 				},
 			}),
+			explorationHeader({
+				exploration(5499),	-- Akhenet Fields
+				exploration(5596),	-- Cradle of the Ancients
+				exploration(5701),	-- Halls of Origination Entrance
+				exploration(5455),	-- Khartut's Tomb
+				exploration(5599),	-- Lost City of the Tol'vir
+				exploration(5498),	-- Mar'at
+				exploration(5467),	-- Nahom
+				exploration(5663),	-- Neferset City
+				exploration(5668),	-- Obelisk of the Moon
+				exploration(5423),	-- Obelisk of the Stars
+				exploration(5597),	-- Obelisk of the Sun
+				exploration(5465),	-- Orsis
+				exploration(5466),	-- Ramkahen
+				exploration(5647),	-- Ruins of Ahmtul
+				exploration(5606),	-- Ruins of Ammon
+				exploration(5671),	-- Ruins of Khintaset
+				exploration(5602),	-- Schnottz's Landing
+				exploration(5696),	-- Surveyors' Outpost
+				exploration(5612),	-- The Cursed Landing
+				exploration(5420),	-- The Gate of Unending Cycles
+				exploration(5613),	-- The Steps of Fate
+				exploration(5582),	-- The Threshold
+				exploration(5614),	-- The Trail of Devastation
+				exploration(5583),	-- The Vortex Pinnacle
+				exploration(5684),	-- Throne of the Four Winds
+			}),
 			n(FACTIONS, {
 				faction(1173, {	-- Ramkahen
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",

@@ -89,6 +89,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(447),	-- Ameth'Aran
+				exploration(448),	-- Grove of the Ancients
+				exploration(4659),	-- Lor'danel
+				exploration(450),	-- Remtravel's Excavation
+				exploration(442),	-- Ruins of Auberdine
+				exploration(443),	-- Ruins of Mathystra
+				exploration(4664),	-- Shatterspear Vale
+				exploration(4662),	-- Shatterspear War Camp
+				exploration(4695),	-- The Eye of the Vortex
+				exploration(449),	-- The Master's Glaive
+				exploration(4675),	-- Withering Thicket
+				-- #else
 				exploration(447, "190:205:324:306"),	-- Ameth'Aran
 				exploration(442, "150:215:318:162"),	-- Auberdine
 				exploration(446, "180:195:365:181"),	-- Bashal'Aran
@@ -98,6 +111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(443, "195:215:510:0"),		-- Ruins of Mathystra
 				exploration(449, "175:158:329:510"),	-- The Master's Glaive
 				exploration(444, "170:195:468:85"),		-- Tower of Althalaxx
+				-- #endif
 				--[[
 				exploration(455),	-- Blackwood Den
 				exploration(445),	-- Cliffspring Falls

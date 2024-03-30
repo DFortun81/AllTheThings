@@ -116,6 +116,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				},
 			}),
+			explorationHeader({
+				exploration(5018),	-- Ashen Lake
+				exploration(5013),	-- Blackhorn's Penance
+				exploration(4991),	-- Darkwhisper Gorge
+				exploration(4998),	-- Gates of Sothann
+				exploration(4989),	-- Grove of Aessina
+				exploration(5038),	-- Nordrassil
+				exploration(5019),	-- Sanctuary of Malorne
+				exploration(5087),	-- Sethria's Roost
+				exploration(4979),	-- Shrine of Goldrinn
+				exploration(5623),	-- The Circle of Cinders
+				exploration(5020),	-- The Flamewake
+				exploration(4861),	-- The Regrowth
+				exploration(5017),	-- The Scorched Plain
+				exploration(5040),	-- The Throne of Flame
+				exploration(5622),	-- The Verdant Thicket
+				exploration(5016),	-- Whistling Grove
+			}),
 			n(FACTIONS, {
 				faction(1158, {	-- Guardians of Hyjal
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_guardiansofhyjal",

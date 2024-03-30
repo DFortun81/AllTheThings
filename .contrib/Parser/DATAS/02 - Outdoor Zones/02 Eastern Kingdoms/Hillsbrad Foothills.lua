@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER CATA
 				exploration(1357),	-- Gallow's Corner
-				exploration(1577),	-- Gavin's Naze
+				exploration(1677),	-- Gavin's Naze
 				exploration(1683),	-- Growless Cave
 				exploration(287),	-- Hillsbrad
 				-- #endif

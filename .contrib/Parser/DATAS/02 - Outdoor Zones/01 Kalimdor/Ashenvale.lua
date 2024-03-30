@@ -159,9 +159,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(435),	-- Demon Fall Canyon
 				-- #endif
 				exploration(422, "235:205:547:426"),	-- Fallen Sky Lake
-				-- #if BEFORE CATA
 				exploration(434, "245:255:713:344"),	-- Felfire Hill
-				-- #endif
 				exploration(417, "165:175:189:324"),	-- Fire Scar Shrine
 				-- #if AFTER CATA
 				exploration(2358),	-- Forest Song

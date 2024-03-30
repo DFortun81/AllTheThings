@@ -114,6 +114,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(1224),	-- Bear's Head
+				exploration(4821),	-- Bilgewater Harbor
+				exploration(2497),	-- Bitter Reaches
+				exploration(1216),	-- Blackmaw Hold
+				exploration(1220),	-- Darnassian Base Camp
+				exploration(1233),	-- Forlorn Ridge
+				exploration(4824),	-- Gallywix Pleasure Palace
+				exploration(1234),	-- Lake Mennar
+				exploration(4744),	-- Mountainfoot Strip Mine
+				exploration(4745),	-- Orgrimmar Rear Gate
+				exploration(1232),	-- Ravencrest Monument
+				exploration(1226),	-- Ruins of Arkkoran
+				exploration(1221),	-- Ruins of Eldarath 
+				exploration(4827),	-- Storm Cliffs
+				exploration(3137),	-- Talrendis Point
+				exploration(1256),	-- The Ruined Reaches
+				exploration(1228),	-- The Shattered Strand
+				exploration(1229),	-- Tower of Eldara
+				exploration(1237),	-- Valormok
+				-- #else
 				exploration(1227, "270:300:479:201"),	-- Bay of Storms
 				exploration(2497, "245:185:644:40"),	-- Bitter Reaches
 				exploration(1233, "220:255:191:369"),	-- Forlorn Ridge
@@ -133,14 +154,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1229, "120:155:818:107"),	-- Tower of Eldara
 				exploration(1225, "145:215:422:95"),	-- Ursolan
 				exploration(1237, "215:175:84:229"),	-- Valormok
+				-- #endif
 				--[[
-				exploration(1224),	-- Bear's Head
 				exploration(1222),	-- Hetaera's Clutch
 				exploration(3138),	-- Rethress Sanctum
 				exploration(3140),	-- Scalebeard's Cave
 				exploration(878),	-- Southfury River
 				exploration(1218),	-- TESTAzshara
-				exploration(3137),	-- Talrendis Point
 				exploration(1223),	-- Temple of Zin-Malor
 				exploration(2321),	-- The Great Sea
 				exploration(1217),	-- Vanndir Encampment

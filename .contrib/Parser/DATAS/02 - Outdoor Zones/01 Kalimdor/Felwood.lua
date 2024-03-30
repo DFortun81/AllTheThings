@@ -120,6 +120,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
+				-- #if AFTER CATA
+				exploration(1765),	-- Bloodvenom Falls
+				exploration(1997),	-- Bloodvenom Post
+				exploration(1761),	-- Deadwood Village
+				exploration(2479),	-- Emerald Sanctuary
+				exploration(1762),	-- Felpaw Village
+				exploration(1767),	-- Irontree Woods
+				exploration(2480),	-- Jadefire Glen
+				exploration(2618),	-- Jadefire Run
+				exploration(1763),	-- Jaedenar
+				exploration(2478),	-- Morlos'Aran
+				exploration(2481),	-- Ruins of Constellas
+				exploration(1766),	-- Shatter Scar Vale
+				exploration(1998),	-- Talonbranch Glade 
+				exploration(1769),	-- Timbermaw Hold
+				-- #else
 				exploration(1765, "235:145:292:263"),	-- Bloodvenom Falls
 				exploration(1761, "175:135:408:533"),	-- Deadwood Village
 				exploration(2479, "185:160:405:429"),	-- Emerald Sanctuary
@@ -132,13 +148,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2481, "235:155:297:381"),	-- Ruins of Constellas
 				exploration(1766, "235:200:307:123"),	-- Shatter Scar Vale
 				exploration(1998, "160:145:548:90"),	-- Talonbranch Glade
+				-- #endif
 				--[[
-				exploration(1997),	-- Bloodvenom Post
 				exploration(1764),	-- Bloodvenom River
 				exploration(1768),	-- Irontree Cavern
 				exploration(1770),	-- Shadow Hold
 				exploration(1771),	-- Shrine of the Deceiver
-				exploration(1769),	-- Timbermaw Hold
 				]]--
 			}),
 			n(FLIGHT_PATHS, {
