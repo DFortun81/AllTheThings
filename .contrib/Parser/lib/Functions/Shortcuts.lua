@@ -836,20 +836,6 @@ exploration = function(id, t)							-- Create an EXPLORATION Object
 	end
 	return struct("explorationID", id, t);
 end
-explorationBatch = function(data)
-	-- Deprecated
-	local groups = {};
-	-- #if AFTER CATA
-	for maphash,explorationID in pairs(data) do
-		table.insert(groups, exploration(explorationID));
-	end
-	-- #else
-	for maphash,explorationID in pairs(data) do
-		table.insert(groups, exploration(explorationID, maphash));
-	end
-	-- #endif
-	return groups;
-end
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
