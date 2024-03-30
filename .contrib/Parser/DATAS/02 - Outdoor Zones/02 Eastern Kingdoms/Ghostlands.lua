@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3501),	-- Bleeding Ziggurat
 				exploration(3495),	-- Dawnstar Spire
 				exploration(3500),	-- Deatholme
-				exploration(3856),	-- Elrendar Crossing
+				--exploration(3856),	-- Elrendar Crossing (Wrath Classic: Can't be collected)
 				exploration(3515),	-- Elrendar River
 				exploration(3496),	-- Farstrider Enclave
 				exploration(3490),	-- Goldenmist Village

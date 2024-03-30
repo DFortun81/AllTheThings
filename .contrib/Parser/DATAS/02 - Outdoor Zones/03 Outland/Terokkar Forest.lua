@@ -280,16 +280,16 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(3901),	-- Allerian Post
 					exploration(3684),	-- Allerian Stronghold
-					exploration(3894),	-- Auchenai Grounds
+					--exploration(3894),	-- Auchenai Grounds (Wrath Classic: Can't be collected)
 					exploration(3688),	-- Auchindoun
 					exploration(3690),	-- Blackwind Lake
 					exploration(3973),	-- Blackwind Landing
 					exploration(3680),	-- Blackwind Valley
 					exploration(3719),	-- Bleeding Hollow Ruins
 					exploration(3685),	-- Bonechewer Ruins
-					exploration(3891),	-- Carrion Hill
+					--exploration(3891),	-- Carrion Hill (Wrath Classic: Can't be collected)
 					exploration(3674),	-- Cenarion Thicket
-					exploration(3886),	-- Derelict Caravan
+					--exploration(3886),	-- Derelict Caravan (Wrath Classic: Can't be collected)
 					exploration(3681),	-- Firewing Point
 					exploration(3682),	-- Grangol'var Village
 					exploration(3691),	-- Lake Ere'Noru
@@ -317,11 +317,11 @@ root(ROOTS.Zones, {
 					exploration(3675),	-- Tuurem
 					exploration(3686),	-- Veil Lithic
 					exploration(3689),	-- Veil Reskk
-					exploration(3889),	-- Veil Rhaze
+					--exploration(3889),	-- Veil Rhaze (Wrath Classic: Can't be collected)
 					exploration(3678),	-- Veil Shalas
 					exploration(3676),	-- Veil Shienor
 					exploration(3677),	-- Veil Skith
-					exploration(3892),	-- Writhing Mound
+					--exploration(3892),	-- Writhing Mound (Wrath Classic: Can't be collected)
 				}),
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031, {	-- Sha'tari Skyguard

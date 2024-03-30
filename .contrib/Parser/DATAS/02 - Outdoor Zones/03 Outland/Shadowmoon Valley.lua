@@ -149,7 +149,7 @@ root(ROOTS.Zones, {
 					exploration(3753),	-- Ruins of Baa'ri
 					exploration(3756),	-- Ruins of Karabor
 					exploration(3938),	-- Sanctum of the Stars
-					exploration(3520),	-- Shadowmoon Valley
+					--exploration(3520),	-- Shadowmoon Valley (Wrath Classic: Can't be collected)
 					exploration(3744),	-- Shadowmoon Village
 					exploration(3932),	-- Sketh'lon Base Camp
 					exploration(3933),	-- Sketh'lon Wreckage

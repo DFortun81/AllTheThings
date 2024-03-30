@@ -914,7 +914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			explorationHeader({
 				exploration(3472),	-- Azurebreeze Coast
 				exploration(3532),	-- Dawning Lane
-				exploration(3480),	-- Duskwither Grounds
+				--exploration(3480),	-- Duskwither Grounds (Wrath Classic: Can't be collected)
 				exploration(3481),	-- Duskwither Spire
 				exploration(3467),	-- East Sanctum
 				exploration(3558),	-- Elrendar Falls

@@ -115,7 +115,7 @@ root(ROOTS.Zones, {
 					exploration(3730),	-- Manaforge Coruu
 					exploration(3734),	-- Manaforge Duro
 					exploration(3736),	-- Manaforge Ultris
-					exploration(3850),	-- Netherstone
+					--exploration(3850),	-- Netherstone (Wrath Classic: Can't be collected)
 					exploration(3725),	-- Ruins of Enkaat
 					exploration(3741),	-- Ruins of Farahlon
 					exploration(3742),	-- Socrethar's Seat
