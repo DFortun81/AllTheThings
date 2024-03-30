@@ -107,9 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5387),	-- The Forsaken Front
 				-- #endif
 				exploration(230, "210:215:379:447"),	-- The Greymane Wall
-				-- #if AFTER CATA
 				exploration(239),	-- The Ivar Patch
-				-- #endif
 				exploration(228, "210:160:352:168"),	-- The Sepulcher
 				-- #if BEFORE CATA
 				exploration(927, "256:220:459:13"),		-- The Shining Strand
