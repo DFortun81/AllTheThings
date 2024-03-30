@@ -224,7 +224,7 @@ root(ROOTS.Promotions, {
 });
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
+	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 		q(79451),	-- After first daily kill of Dr. Boom (maybe bag loot trigger?)
 		q(79452),	-- After first daily kill of Dr. Boom (maybe something else trigger?)
 		q(79441),	-- Looted Sarge (itemID 212606)
