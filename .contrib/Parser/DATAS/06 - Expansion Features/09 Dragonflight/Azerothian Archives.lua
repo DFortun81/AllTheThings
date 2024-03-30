@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
 						}),
 						crit(65410, {	-- Igira's Watch
-							--["coord"] = {},
+							["_quests"] = { 76734 },	-- Research: Djaradin of Zaralek Cavern
 						}),
 						crit(65411, {	-- Gaze of Neltharion
 							["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },

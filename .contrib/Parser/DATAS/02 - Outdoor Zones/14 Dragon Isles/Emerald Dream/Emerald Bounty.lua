@@ -158,6 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					--},
 					["description"] = "Can randomly spawn near any planting spot.",
 					["questID"] = 77856,
+					["isWeekly"] = true,
 				}),
 			}),
 			n(REWARDS, {

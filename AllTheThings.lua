@@ -11278,8 +11278,8 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		self.data.back = 1;
 		self.data.indent = 0;
 		self.data.visible = true;
-		Callback(self.BaseUpdate, self, force or got, got)
-		-- self:BaseUpdate(force or got, got);
+		Callback(self.BaseUpdate, self, force, got)
+		-- self:BaseUpdate(force, got);
 	end
 end;
 customWindowUpdates.ItemFilter = function(self, force)
