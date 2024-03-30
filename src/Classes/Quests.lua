@@ -260,7 +260,7 @@ local CompletedQuests = setmetatable({}, {
 			end
 			-- Way too much overhead to assume this should be done every time a key is changed
 			if not BatchRefresh then
-				app.SetCollected(nil, "Quests", questID, state)
+				app.SetCached("Quests", questID, state)
 				app.UpdateRawID("questID", questID)
 			end
 		end

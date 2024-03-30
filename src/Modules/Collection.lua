@@ -135,6 +135,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	local function IsCached(field, id)
 		return currentCharacter[field][id] or nil
 	end
+	-- Assigns the cached status for this Character for a given field ID without causing any related events
+	local function SetCached(field, id, state)
+		currentCharacter[field][id] = state
+	end
 	-- Returns the tracked status for this Account for a given field ID
 	local function IsAccountTracked(field, id)
 		return accountWideSettings[field] and accountWideData[field][id] or nil
@@ -283,6 +287,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	end
 	app.SetAccountCollected = SetAccountCollected;
 	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
+	app.SetCached = SetCached
 	app.SetCollected = SetCollected;
 	app.SetCollectedForSubType = SetCollectedForSubType;
 	app.IsCached = IsCached
