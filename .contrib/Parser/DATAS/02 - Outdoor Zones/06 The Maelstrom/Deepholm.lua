@@ -276,6 +276,14 @@ root(ROOTS.Zones, {
 							27006,	--  Fly Over
 							27004,	--  The Twilight Plot
 						},
+						["groups"]= {
+							objective(1, {	-- 0/6 Plans decrypted
+								["providers"] = {
+									{ "i", 60758 },	-- Encrypted Plans (QI!)
+									{ "o", 205145 },	-- One-Time Decryption Engine
+								},
+							}),
+						},
 					}),
 					q(27041, {	-- Decryption Made Easy [Horde]
 						["lvl"] = 82,
@@ -1006,6 +1014,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.3, 51.4, DEEPHOLM },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 27952,	-- The Explorers
+						["groups"] = {
+							objective(1, {	-- 0/1 Master's Gate Plans
+								["provider"] = { "i", 60745 },	-- Masters' Gate Plans
+								["crs"] = {
+									44847,	-- Twilight Armsman
+									44849,	-- Twilight Crusher
+									44855,	-- Twilight Cryptomancer
+								},
+							}),
+						},
 					}),
 					q(27005, {	-- The Twilight Plot [Horde]
 						["lvl"] = 82,
@@ -1039,8 +1057,11 @@ root(ROOTS.Zones, {
 					q(27058, {	-- The Wrong Sequence [Alliance]
 						["lvl"] = 82,
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 27040,	-- Fight Fire and Water and Air with...
+						["sourceQuest"] = 27040,	-- Decryption Made Easy [Alliance]
 						["groups"] = {
+							objective(1, {	-- 0/1 Waygate Destroyed
+								["provider"] = { "o", 205161 },	-- Waygate Controller
+							}),
 							i(61439),	-- Gateshattering Hauberk
 							i(61441),	-- Starscraper Signet
 						},

@@ -66,7 +66,7 @@ root(ROOTS.Promotions, {
 		},
 		["timeline"] = { ADDED_10_2_5 },
 		["groups"] = {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
+			n(ACHIEVEMENTS, {
 				ach(19866,	{	-- Hearthstoned: Fiery Edition
 					["provider"] = { "i", 163186 },	-- Fiery Hearthsteed (MOUNT!)
 				}),
@@ -74,7 +74,7 @@ root(ROOTS.Promotions, {
 					i(211946),	-- Hearthstone Game Table (TOY!)
 				}),
 				ach(19724),		-- Hearthstone Card Collection
-			})),
+			}),
 			n(MAILBOX, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
 				i(212154),	-- Hearthstone Invitation Letter (QI!)
 			})),
