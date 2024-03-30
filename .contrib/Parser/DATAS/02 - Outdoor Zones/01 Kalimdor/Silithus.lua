@@ -161,10 +161,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2738, "384:384:500:65"),	-- Southwind Village
 				exploration(2740, "320:289:104:24"),	-- The Crystal Vale
 				exploration(2737, "288:256:116:413"),	-- The Scarab Wall
+				exploration(3097),	-- The Swarming Pillar
+				exploration(2739),	-- Twilight Base Camp
 				-- #endif
 				--[[
 				exploration(2477),	-- The Veiled Sea
-				exploration(3097),	-- The Swarming Pillar
 				exploration(3100),	-- Ravaged Twilight Camp
 				exploration(3257),	-- Bones of Grakkarond
 				]]--
