@@ -461,7 +461,10 @@ local onMapUpdate = function(t)
 			end
 		end
 	end
-
+	if not explorationHeader then
+		return;
+	end
+	
 	local id = t.mapID;
 	local newExplorationObjects = {};
 	local areaIDs = app.ExplorationDB[id];
@@ -517,27 +520,10 @@ local onMapUpdate = function(t)
 		end
 	end
 	if #newExplorationObjects > 0 then
-		if explorationHeader then
-			if not explorationHeader.g then
-				explorationHeader.g = {};
-			end
-			for i,o in ipairs(newExplorationObjects) do
-				tinsert(explorationHeader.g, o);
-				o.parent = explorationHeader;
-			end
-		else
-			explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION, newExplorationObjects);
-			explorationHeader.u = t.u;
-			for i,o in ipairs(newExplorationObjects) do
-				o.parent = explorationHeader;
-				if not o.u then o.u = t.u; end
-			end
-			explorationHeader.parent = t;
-			tinsert(t.g, 1, explorationHeader);
+		for i,o in ipairs(newExplorationObjects) do
+			tinsert(explorationHeader.g, o);
+			o.parent = explorationHeader;
 		end
-	end
-	if explorationHeader and explorationHeader.g then
-		explorationHeader.SortType = "text";
 	end
 	rawset(t, "OnUpdate", nil);
 	--app:StartATTCoroutine("Simplifying Exploration Data", simplifyExplorationData);
@@ -643,6 +629,17 @@ app.CreateMap = app.IsRetail and createMap or function(id, t)
 				break;
 			end
 		end
+		if not explorationHeader then
+			explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION);
+			explorationHeader.g = {};
+			explorationHeader.u = t.u;
+			explorationHeader.parent = t;
+			tinsert(t.g, 1, explorationHeader);
+		end
+		if not explorationHeader.g then
+			explorationHeader.g = {};
+		end
+		explorationHeader.SortType = "text";
 
 		local newExplorationObjects = {};
 		local areaIDs = app.ExplorationDB[id];
@@ -660,27 +657,10 @@ app.CreateMap = app.IsRetail and createMap or function(id, t)
 			end
 		end
 		if #newExplorationObjects > 0 then
-			if explorationHeader then
-				if not explorationHeader.g then
-					explorationHeader.g = {};
-				end
-				for i,o in ipairs(newExplorationObjects) do
-					tinsert(explorationHeader.g, o);
-					o.parent = explorationHeader;
-				end
-			else
-				explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION, newExplorationObjects);
-				explorationHeader.u = t.u;
-				for i,o in ipairs(newExplorationObjects) do
-					o.parent = explorationHeader;
-					if not o.u then o.u = t.u; end
-				end
-				explorationHeader.parent = t;
-				tinsert(t.g, 1, explorationHeader);
+			for i,o in ipairs(newExplorationObjects) do
+				tinsert(explorationHeader.g, o);
+				o.parent = explorationHeader;
 			end
-		end
-		if explorationHeader and explorationHeader.g then
-			explorationHeader.SortType = "text";
 		end
 		if not rawget(t, "OnUpdate") then
 			t.OnUpdate = onMapUpdate;
