@@ -59,7 +59,6 @@ root(ROOTS.Promotions, {
 		},
 	})),
 	n(HEARTHSTONE_10TH_ANNIVERSARY, {
-		-- Work in progress
 		["maps"] = {
 			DUROTAR,
 			STORMWIND_CITY,
@@ -67,7 +66,7 @@ root(ROOTS.Promotions, {
 		},
 		["timeline"] = { ADDED_10_2_5 },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
 				ach(19866,	{	-- Hearthstoned: Fiery Edition
 					["provider"] = { "i", 163186 },	-- Fiery Hearthsteed (MOUNT!)
 				}),
@@ -75,11 +74,11 @@ root(ROOTS.Promotions, {
 					i(211946),	-- Hearthstone Game Table (TOY!)
 				}),
 				ach(19724),		-- Hearthstone Card Collection
-			}),
-			n(MAILBOX, {
+			})),
+			n(MAILBOX, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
 				i(212154),	-- Hearthstone Invitation Letter (QI!)
-			}),
-			n(QUESTS, {
+			})),
+			n(QUESTS, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
 				q(79184, {	-- It's Hearthstone's Anniversary!
 					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter (QI!)
 					["groups"] = {
@@ -123,7 +122,7 @@ root(ROOTS.Promotions, {
 							i(212979),	-- Hearthstone Starter Pack
 						},
 				}),
-			}),
+			})),
 			n(215146, {	-- Dr. Boom <"Dr. 7">
 				["coords"] = {
 					{ 53.10, 16.17, DUROTAR },
@@ -131,6 +130,7 @@ root(ROOTS.Promotions, {
 					{ 62.24, 66.97, VALDRAKKEN },
 				},
 				["provider"] = { "n", 214985 },	-- Ominous Portal
+				["timeline"] = { REMOVED_10_2_6 },
 				["groups"] = {
 					i(212335),	-- Collector's Carryall (BAG)
 					i(212337),	-- Stone of the Hearth (TOY!)
@@ -213,6 +213,7 @@ root(ROOTS.Promotions, {
 			n(VENDORS, {
 				n(215385, {	-- Shady Dealer
 					["coord"] = { 60.6, 59.3, VALDRAKKEN },
+					["timeline"] = { REMOVED_10_2_6 },
 					["groups"] = {
 						i(211965),	-- Hearthstone Wild Card
 					},
@@ -223,14 +224,12 @@ root(ROOTS.Promotions, {
 });
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
 		q(79451),	-- After first daily kill of Dr. Boom (maybe bag loot trigger?)
 		q(79452),	-- After first daily kill of Dr. Boom (maybe something else trigger?)
 		q(79441),	-- Looted Sarge (itemID 212606)
-
 		q(79186),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
 		q(79189),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
-
 		-- Account lockout from getting the same card again
 		-- Quest
 		q(79409),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
