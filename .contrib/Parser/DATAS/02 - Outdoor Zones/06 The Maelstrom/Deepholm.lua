@@ -55,6 +55,22 @@ root(ROOTS.Zones, {
 						pet(553),	-- Stowaway Rat (PET!)
 					},
 				}),
+				explorationHeader({
+					exploration(5355),	-- Abyssion's Lair
+					exploration(5302),	-- Crimson Expanse
+					exploration(5358),	-- Deathwing's Fall
+					exploration(5329),	-- Lower Silvermarsh
+					exploration(5350),	-- Needlerock Chasm
+					exploration(5349),	-- Needlerock Slag
+					exploration(5292),	-- Scoured Reach
+					exploration(5330),	-- Stonehearth
+					exploration(5313),	-- Storm's Fury Wreckage
+					exploration(5303),	-- Temple of Earth
+					exploration(5295),	-- The Pale Roost
+					exploration(5357),	-- The Quaking Fields
+					exploration(5354),	-- Twilight Overlook
+					exploration(5328),	-- Upper Silvermarsh
+				}),
 				n(FACTIONS, {
 					faction(1171, {	-- Therazane
 						["icon"] = "Interface\\Icons\\inv_misc_tabard_therazane",
