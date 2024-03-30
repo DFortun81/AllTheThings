@@ -148,6 +148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2481, "235:155:297:381"),	-- Ruins of Constellas
 				exploration(1766, "235:200:307:123"),	-- Shatter Scar Vale
 				exploration(1998, "160:145:548:90"),	-- Talonbranch Glade
+				exploration(1769),	-- Timbermaw Hold
 				-- #endif
 				--[[
 				exploration(1764),	-- Bloodvenom River

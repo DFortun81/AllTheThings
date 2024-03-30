@@ -104,9 +104,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(336, "170:155:419:293"),	-- Circle of Outer Binding
 				exploration(334, "190:210:138:54"),		-- Circle of West Binding
 				exploration(315, "180:210:472:165"),	-- Dabyrie's Farmstead
-				-- #if AFTER CATA
 				exploration(318),	-- Drywhisker Gorge
-				-- #endif
 				exploration(327, "256:215:171:424"),	-- Faldir's Cove
 				-- #if AFTER CATA
 				exploration(5121),	-- Galen's Fall

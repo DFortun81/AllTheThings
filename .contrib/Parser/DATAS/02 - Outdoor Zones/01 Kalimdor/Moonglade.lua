@@ -31,6 +31,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2363),	-- Stormrage Barrow Dens
 				-- #else
 				exploration(656, "555:510:244:89"),	-- Lake Elune'ara
+				exploration(2361),	-- Nighthaven
 				-- #endif
 			}),
 			n(FLIGHT_PATHS, {

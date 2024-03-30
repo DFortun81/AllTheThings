@@ -29,17 +29,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1683, "190:170:317:372"),	-- Growless Cave
 				exploration(278, "330:265:44:403"),		-- Lordamere Internment Camp
 				exploration(1681, "220:280:196:131"),	-- Misty Shore
+				exploration(3486),	-- Ravenholdt Manor
 				exploration(281, "255:255:270:197"),	-- Ruins of Alterac
+				exploration(283),	-- Slaughter Hollow
 				exploration(1678, "255:320:462:307"),	-- Sofera's Naze
 				exploration(280, "370:300:549:105"),	-- Strahnbrad
 				exploration(1680, "165:197:314:471"),	-- The Headland
 				exploration(284, "235:200:462:77"),		-- The Uplands
 				--[[
 				exploration(277),	-- The Foothill Caverns
-				exploration(283),	-- Slaughter Hollow
 				exploration(1339),	-- Lordamere Lake
 				exploration(2839),	-- Alterac Valley
-				exploration(3486),	-- Ravenholdt Manor
 				]]--
 			}),
 			n(FACTIONS, {

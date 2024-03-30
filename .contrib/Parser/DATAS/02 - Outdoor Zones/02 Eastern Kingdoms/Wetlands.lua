@@ -188,9 +188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1022, "225:190:89:142"),	-- Bluegill Marsh
 				exploration(1016, "256:250:507:115"),	-- Direforge Hill
 				exploration(1038, "350:360:611:230"),	-- Dragonmaw Gates
-				-- #if AFTER CATA
 				exploration(836),	-- Dun Algaz
-				-- #endif
 				exploration(205, "205:180:401:21"),		-- Dun Modr
 				exploration(309, "200:185:349:115"),	-- Ironbeard's Tomb
 				exploration(150, "175:128:13:314"),		-- Menethil Harbor

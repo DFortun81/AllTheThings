@@ -94,7 +94,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(236, "220:160:364:359"),	-- Shadowfang Keep
 				-- #if AFTER CATA
 				exploration(5456),	-- The Battlefront
+				-- #endif
 				exploration(232),	-- The Dawning Isles
+				-- #if AFTER CATA
 				exploration(237),	-- The Decrepit Fields
 				-- #endif
 				-- #if BEFORE CATA
@@ -113,9 +115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(927, "256:220:459:13"),		-- The Shining Strand
 				-- #endif
 				exploration(226, "185:165:286:37"),		-- The Skittering Dark
-				-- #if AFTER CATA
 				exploration(227),	-- Valgan's Field
-				-- #endif
 				--[[
 				exploration(926),	-- Bucklebree Farm
 				exploration(235),	-- Fenris Keep

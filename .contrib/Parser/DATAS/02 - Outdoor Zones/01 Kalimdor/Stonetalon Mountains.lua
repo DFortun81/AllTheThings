@@ -131,6 +131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(467, "270:205:247:0"),		-- Stonetalon Peak
 				exploration(460, "150:150:389:320"),	-- Sun Rock Retreat
 				exploration(465, "230:355:210:234"),	-- The Charred Vale
+				exploration(1277),	-- The Talondeep Path
 				exploration(1076, "288:355:457:282"),	-- Webwinder Path
 				exploration(461, "320:275:553:197"),	-- Windshear Crag
 				-- #endif

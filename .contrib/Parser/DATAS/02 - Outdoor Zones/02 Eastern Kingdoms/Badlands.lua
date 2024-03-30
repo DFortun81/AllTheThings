@@ -93,6 +93,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(341, "220:220:551:48"),		-- Camp Kosh
 				-- #if AFTER CATA
 				exploration(5564),	-- Dragon's Mouth
+				-- #endif
+				-- #if BEFORE CATA
+				exploration(347),	-- Dustbelch Grotto
+				-- #endif
+				-- #if AFTER CATA
 				exploration(5525),	-- Dustwing Dig
 				-- #endif
 				-- #if BEFORE CATA
@@ -126,12 +131,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				exploration(1877, "230:230:349:256"),	-- Valley of Fangs
 				-- #endif
-				-- #if AFTER CATA
 				exploration(1517),	-- Uldaman
-				-- #endif
 				--[[
 				exploration(343),	-- Camp Wurg
-				exploration(347),	-- Dustbelch Grotto
+				
 				]]--
 			}),
 			n(FLIGHT_PATHS, {

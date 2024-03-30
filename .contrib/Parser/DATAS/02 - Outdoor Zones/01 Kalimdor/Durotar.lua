@@ -1904,6 +1904,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1637, "445:160:244:0"),		-- Orgrimmar
 				exploration(362, "220:230:432:170"),	-- Razor Hill
 				exploration(816, "230:230:301:189"),	-- Razormane Grounds
+				exploration(410),	-- Razorwind Canyon
 				exploration(367, "160:190:474:384"),	-- Sen'jin Village
 				exploration(817, "128:110:464:33"),		-- Skull Rock
 				exploration(369, "190:200:327:60"),		-- Thunder Ridge

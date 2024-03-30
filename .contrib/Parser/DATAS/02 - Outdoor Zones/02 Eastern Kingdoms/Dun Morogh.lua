@@ -2160,6 +2160,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(803, "128:128:573:280"),	-- Amberstill Ranch
 				-- #if BEFORE CATA
+				exploration(77),	-- Anvilmar
 				exploration(137, "115:115:252:249"),	-- Brewnall Village
 				exploration(801, "180:128:274:296"),	-- Chill Breeze Valley
 				-- #endif
@@ -2176,8 +2177,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(134, "165:165:608:291"),	-- Gol'Bolar Quarry
 				exploration(212, "155:170:694:273"),	-- Helm's Bed Lake
 				exploration(211, "128:180:281:167"),	-- Iceflow Lake
-				-- #if AFTER CATA
 				exploration(716),	-- Ironband's Compound
+				-- #if AFTER CATA
 				exploration(1537),	-- Ironforge
 				exploration(5115),	-- Ironforge Airfield
 				-- #endif
@@ -2200,7 +2201,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(136, "200:185:314:311"),	-- The Grizzled Den
 				exploration(804, "155:128:522:322"),	-- The Tundrid Hills
 				--[[
-				exploration(77),	-- Anvilmar
 				exploration(2102),	-- Thunderbrew Distillery
 				]]--
 			}),

@@ -133,6 +133,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1108, "145:320:404:256"),	-- The Forgotten Coast
 				exploration(1119, "285:245:319:75"),	-- The Twin Colossals
 				exploration(1101, "240:220:618:298"),	-- The Writhing Deep
+				exploration(2519),	-- Woodpaw Hills
 				-- #endif
 				--[[
 				exploration(1109),	-- East Pillar

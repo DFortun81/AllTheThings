@@ -161,6 +161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(117, "110:105:260:132"),	-- Grom'gol Base Camp
 				exploration(1741, "200:185:235:189"),	-- Gurubashi Arena
 				exploration(297, "125:120:314:493"),	-- Jaguero Isle
+				exploration(312),	-- Janeiro's Point
 				exploration(125, "95:95:299:88"),		-- Kal'ai Ruins
 				exploration(101, "155:150:388:0"),		-- Kurzen's Compound
 				exploration(37, "128:125:331:59"),		-- Lake Nazferiti
@@ -183,7 +184,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				--[[
 				exploration(2177),	-- Battle Ring
 				exploration(7),		-- Blackwater Cove
-				exploration(312),	-- Janeiro's Point
 				exploration(303),	-- Shell Beach
 				exploration(2338),	-- South Seas
 				exploration(1578),	-- Southern Savage Coast

@@ -681,6 +681,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #else
 				exploration(404, "210:180:255:214"),	-- Bael'dun Digsite
 				exploration(222, "256:200:367:303"),	-- Bloodhoof Village
+				exploration(221),	-- Camp Narache
 				exploration(818, "128:205:303:307"),	-- Palemane Rock
 				exploration(224, "128:120:473:260"),	-- Ravaged Caravan
 				exploration(220, "470:243:270:425"),	-- Red Cloud Mesa

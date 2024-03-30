@@ -105,6 +105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(447, "190:205:324:306"),	-- Ameth'Aran
 				exploration(442, "150:215:318:162"),	-- Auberdine
 				exploration(446, "180:195:365:181"),	-- Bashal'Aran
+				exploration(445),	-- Cliffspring Falls
 				exploration(456, "230:190:375:94"),		-- Cliffspring River
 				exploration(448, "200:170:305:412"),	-- Grove of the Ancients
 				exploration(450, "175:183:229:485"),	-- Remtravel's Excavation
@@ -114,7 +115,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				--[[
 				exploration(455),	-- Blackwood Den
-				exploration(445),	-- Cliffspring Falls
 				exploration(452),	-- Mist's Edge
 				exploration(453),	-- The Long Wash
 				exploration(2326),	-- The Veiled Sea

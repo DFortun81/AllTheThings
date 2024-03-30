@@ -38,9 +38,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(2697, "380:365:249:76"),	-- Deadman's Crossing
 				exploration(2562, "300:245:269:337"),	-- Karazhan
-				-- #if AFTER CATA
 				exploration(2938),	-- Sleeping Gorge
-				-- #endif
 				exploration(2561, "270:270:426:299"),	-- The Vice
 				--[[
 				exploration(2558),	-- Deadwind Ravine

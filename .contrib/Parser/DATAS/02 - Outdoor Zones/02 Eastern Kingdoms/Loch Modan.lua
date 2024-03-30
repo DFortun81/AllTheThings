@@ -86,8 +86,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(925),	-- Algaz Station
+				-- #if AFTER CATA
 				exploration(837),	-- Dun Algaz
 				-- #endif
 				exploration(936, "295:358:309:310"),	-- Grizzlepaw Ridge

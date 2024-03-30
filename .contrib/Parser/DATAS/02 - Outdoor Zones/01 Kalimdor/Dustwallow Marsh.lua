@@ -181,7 +181,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 32.6, 65.9, DUSTWALLOW_MARSH },
 					["timeline"] = { "added 2.0.1" },
 				}),
+				exploration(507),	-- Bluefen
 				exploration(496, "280:270:230:0"),		-- Brackenwall Village
+				exploration(518),	-- Dreadmurk Shore
 				exploration(509, "255:250:257:313"),	-- The Den of Flame
 				exploration(2302, "400:255:239:189"),	-- The Quagmire
 				exploration(513, "230:205:534:224"),	-- Theramore Isle
@@ -189,7 +191,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(511, "285:240:367:381"),	-- Wyrmbog
 				-- #endif
 				--[[
-				exploration(507),	-- Bluefen
 				exploration(516),	-- Dustwallow Bay
 				exploration(2158),	-- Emberstrife's Den
 				exploration(514),	-- Foothold Citadel

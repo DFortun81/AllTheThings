@@ -149,20 +149,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(3446),	-- Twilight's Run
 				exploration(3077),	-- Valor's Rest
 				-- #else
-				exploration(3427, {	-- Bronzebeard Encampment
-					--["maphash"] = "128:128:0:0",
-					["coord"] = { 41.2, 89.2, SILITHUS },
-					["timeline"] = { "added 2.0.1" },
-				}),
+				exploration(3427),	-- Bronzebeard Encampment
 				exploration(3425, "320:256:344:197"),	-- Cenarion Hold
 				exploration(2742, "512:320:265:12"),	-- Hive'Ashi
 				exploration(2744, "512:384:245:285"),	-- Hive'Regal
 				exploration(2743, "384:512:97:144"),	-- Hive'Zora
 				exploration(2738, "384:384:500:65"),	-- Southwind Village
+				exploration(3426),	-- Staghelm Point
 				exploration(2740, "320:289:104:24"),	-- The Crystal Vale
+				exploration(2741),	-- The Scarab Dais
 				exploration(2737, "288:256:116:413"),	-- The Scarab Wall
 				exploration(3097),	-- The Swarming Pillar
 				exploration(2739),	-- Twilight Base Camp
+				exploration(3077),	-- Valor's Rest
 				-- #endif
 				--[[
 				exploration(2477),	-- The Veiled Sea

@@ -185,8 +185,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(420),	-- Silverwind Refuge
 				-- #if AFTER CATA
 				exploration(2360),	-- Silverwing Outpost
-				exploration(431),	-- Splintertree Post
 				-- #endif
+				exploration(431),	-- Splintertree Post
 				exploration(432),	-- The Dor'Danil Barrow Den
 				exploration(419, "210:185:463:141"),	-- The Howling Vale
 				-- #if AFTER CATA

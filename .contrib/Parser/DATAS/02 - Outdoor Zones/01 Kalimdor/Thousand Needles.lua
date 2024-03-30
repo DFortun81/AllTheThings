@@ -108,6 +108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(485, "210:180:205:70"),		-- The Great Lift
 				exploration(483, "250:240:179:200"),	-- The Screeching Canyon
 				exploration(439, "320:365:610:300"),	-- The Shimmering Flats
+				exploration(2237),	-- Whitereach Post
 				exploration(2303, "240:220:492:250"),	-- Windbreak Canyon
 				-- #endif
 				--[[
@@ -121,7 +122,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(479),	-- The Rustmaul Dig Site
 				exploration(488),	-- The Weathered Nook
 				exploration(3038),	-- Weazel's Crater
-				exploration(2237),	-- Whitereach Post
 				exploration(2239),	-- Zane's Eye Crater
 				]]
 			}),

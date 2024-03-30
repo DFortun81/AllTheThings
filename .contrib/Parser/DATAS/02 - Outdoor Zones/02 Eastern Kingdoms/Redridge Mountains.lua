@@ -65,12 +65,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(69, "340:195:83:197"),		-- Lakeshire
 				exploration(95, "365:245:121:72"),		-- Redridge Canyons
 				exploration(996, "275:256:277:0"),		-- Render's Camp
-				-- #if AFTER CATA
 				exploration(998),	-- Render's Rock
-				-- #endif
 				exploration(997, "465:255:484:361"),	-- Render's Valley
-				-- #if AFTER CATA
 				exploration(98),	-- Rethban Caverns
+				-- #if AFTER CATA
 				exploration(5324),	-- Shalewind Canyon
 				-- #endif
 				-- #if BEFORE CATA
@@ -79,12 +77,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(71, "320:210:595:320"),		-- Stonewatch Falls
 				-- #if AFTER CATA
 				exploration(2099),	-- Stonewatch Keep
+				-- #endif
 				exploration(999),	-- Stonewatch Tower
-				-- #endif
 				exploration(1002, "365:350:0:284"),		-- Three Corners
-				-- #if AFTER CATA
 				exploration(96),	-- Tower of Ilgalar
-				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
 				fp(615, {	-- Camp Everstill, Redridge

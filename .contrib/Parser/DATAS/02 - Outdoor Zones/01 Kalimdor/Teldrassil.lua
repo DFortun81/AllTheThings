@@ -691,6 +691,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(260, "200:200:561:292"),	-- Starbreeze Village
 				exploration(264, "170:240:272:127"),	-- The Oracle Glade
 				exploration(266, "180:256:377:93"),		-- Wellspring Lake
+				exploration(265),	-- Wellspring River
 				-- #endif
 				--[[
 				exploration(256),	-- Aldrassil

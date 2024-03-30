@@ -863,9 +863,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				exploration(810, "186:128:395:277"),	-- Stillwater Pond
 				-- #endif
-				-- #if AFTER CATA
 				exploration(161),	-- Terrace of Repose
-				-- #endif
 				exploration(152, "230:205:698:362"),	-- The Bulwark
 				exploration(812, "237:214:757:205"),	-- Venomweb Vale
 				exploration(160, "211:189:746:125"),	-- Whispering Gardens
