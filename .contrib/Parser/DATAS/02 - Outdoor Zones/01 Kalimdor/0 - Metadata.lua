@@ -184,8 +184,8 @@ root(ROOTS.Zones, {
 					["description"] = "Complete 700 quests in Kalimdor.",
 					["rank"] = 700,
 					-- #else
-					["description"] = "Complete 640 quests in Kalimdor.",
-					["rank"] = 640,
+					["description"] = "Complete 625 quests in Kalimdor.",
+					["rank"] = 625,
 					-- #endif
 					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
