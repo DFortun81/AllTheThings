@@ -79,33 +79,59 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				exploration(337, "255:205:17:310"),		-- Apocryphan's Rest [Classic]
 				-- #endif
+				-- #if AFTER CATA
+				exploration(5524),	-- Bloodwatcher Point
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(342, "255:280:501:341"),	-- Camp Boff
+				-- #endif
 				-- #if AFTER TBC
 				exploration(344, "256:256:12:428"),		-- Camp Cagg [TBC]
 				-- #else
 				exploration(344, "255:220:12:428"),		-- Camp Cagg [Classic]
 				-- #endif
 				exploration(341, "220:220:551:48"),		-- Camp Kosh
+				-- #if AFTER CATA
+				exploration(5564),	-- Dragon's Mouth
+				exploration(5525),	-- Dustwing Dig
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(1898, "245:205:498:209"),	-- Dustwind Gulch
+				-- #endif
+				-- #if AFTER CATA
+				exploration(5496),	-- Fuselight
+				-- #endif
 				exploration(346, "200:195:445:120"),	-- Hammertoe's Digsite
+				-- #if BEFORE CATA
 				-- #if AFTER TBC
 				exploration(340, "256:256:0:148"),		-- Kargath [TBC]
 				-- #else
 				exploration(340, "240:255:0:148"),		-- Kargath [Classic]
 				-- #endif
+				-- #endif
 				exploration(339, "370:455:611:110"),	-- Lethlor Ravine
+				-- #if BEFORE CATA
 				-- #if AFTER TBC
 				exploration(1879, "256:256:148:384"),	-- Mirage Flats [TBC]
 				-- #else
 				exploration(1879, "285:240:148:384"),	-- Mirage Flats [Classic]
 				-- #endif
+				-- #endif
+				-- #if AFTER CATA
+				exploration(5565),	-- New Kargath
+				exploration(5322),	-- Scar of the Worldbreaker
+				-- #endif
 				exploration(1878, "270:275:159:199"),	-- The Dustbowl
 				exploration(1897, "245:205:389:7"),		-- The Maker's Terrace
+				-- #if BEFORE CATA
 				exploration(1877, "230:230:349:256"),	-- Valley of Fangs
+				-- #endif
+				-- #if AFTER CATA
+				exploration(1517),	-- Uldaman
+				-- #endif
 				--[[
 				exploration(343),	-- Camp Wurg
 				exploration(347),	-- Dustbelch Grotto
-				exploration(1517),	-- Uldaman
 				]]--
 			}),
 			n(FLIGHT_PATHS, {
