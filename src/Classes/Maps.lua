@@ -228,8 +228,9 @@ app.AddEventHandler("OnReady", UpdateLocation);
 app.GetMapName = GetMapName;
 UpdateLocation();
 
-
 -- Exploration
+if not app.ExplorationDB then app.ExplorationDB = {}; end
+if not app.ExplorationAreaPositionDB then app.ExplorationAreaPositionDB = {}; end
 app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	["text"] = function(t)
 		return C_Map_GetAreaInfo(t.explorationID) or RETRIEVING_DATA;
@@ -464,6 +465,10 @@ local onMapUpdate = function(t)
 	local id = t.mapID;
 	local newExplorationObjects = {};
 	local areaIDs = app.ExplorationDB[id];
+	if not areaIDs then
+		areaIDs = {};
+		app.ExplorationDB[id] = areaIDs;
+	end
 	for _,pos in ipairs(coordinates) do
 		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(pos[3] or id, CreateVector2D(pos[1] / 100, pos[2] / 100));
 		if explored then
@@ -494,6 +499,7 @@ local onMapUpdate = function(t)
 					tinsert(newExplorationObjects, o);
 					print("Found New AreaID:", id, t.text, areaID, o.text);
 					tinsert(areaIDs, areaID);
+					coroutine.yield();
 				end
 				local coords = app.ExplorationAreaPositionDB[areaID];
 				if not coords then
