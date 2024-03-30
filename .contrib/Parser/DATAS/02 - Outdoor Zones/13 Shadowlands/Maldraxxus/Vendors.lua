@@ -52,6 +52,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(183095),	-- Plans: Shadowsteel Pauldrons (RECIPE!)
 						i(184742),	-- Rattling Bonefists
 						i(183858),	-- Schematic: Wormhole Generator: Shadowlands (RECIPE!)
+						i(217596, {	-- Glyph of Abomination Limb
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { DEATHKNIGHT },
+						}),
+						i(217592, {	-- Glyph of Adaptive Swarm
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { DRUID },
+						}),
+						i(217593, {	-- Glyph of Death Chakram
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { HUNTER },
+						}),
+						i(217599, {	-- Glyph of Primordial Wave
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { SHAMAN },
+						}),
 					}, {	-- Revered
 						i(184744),	-- Gnarled Boneloop
 						i(183244),	-- Memory of the Rattle of the Maw

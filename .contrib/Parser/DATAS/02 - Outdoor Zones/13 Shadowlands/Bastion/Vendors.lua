@@ -22,6 +22,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}, {	-- Honored
 						i(183094),	-- Plans: Shadowsteel Helm (RECIPE!)
 						i(184756),	-- Smoothed Loop of Contemplation
+						i(217587, {	-- Glyph of Divine Toll
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { PALADIN },
+						}),
+						i(217597, {	-- Glyph of Echoing Reprimand
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { ROGUE },
+						}),
+						i(217591, {	-- Glyph of Elysian Decree
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { DEMONHUNTER },
+						}),
+						i(217586, {	-- Glyph of Radiant Spark
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { MAGE },
+						}),
+						i(217584, {	-- Glyph of Spear of Bastion
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { WARRIOR },
+						}),
+						i(217595, {	-- Glyph of Weapons of Order
+							["timeline"] = { ADDED_10_2_6 },
+							["classes"] = { MONK },
+						}),
 					}, {	-- Revered
 						i(184410),	-- Aspirant's Stretcher (TOY!)
 						i(184734),	-- Bracers of Regret

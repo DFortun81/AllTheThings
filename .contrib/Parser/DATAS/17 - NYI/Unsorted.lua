@@ -53,28 +53,6 @@ root(ROOTS.Unsorted, {
 				i(213393),	-- Guise of the Golden Masquerade
 			}),
 			filter(MISC, {
-				filter(GLYPHS, {
-					------ Shadowlands Cov Glyphs ------
-					i(217596),	-- Glyph of Abomination Limb
-					i(217592),	-- Glyph of Adaptive Swarm
-					i(217588),	-- Glyph of Blessing of the Seasons
-					i(217585),	-- Glyph of Convoke the Spirits
-					i(217593),	-- Glyph of Death Chakram
-					i(217587),	-- Glyph of Divine Toll
-					i(217597),	-- Glyph of Echoing Reprimand
-					i(217591),	-- Glyph of Elysian Decree
-					i(217494),	-- Glyph of Faeline Stomp
-					i(217598),	-- Glyph of Flagellation
-					i(217589),	-- Glyph of Mindgames
-					i(217599),	-- Glyph of Primordial Wave
-					i(217586),	-- Glyph of Radiant Spark
-					i(217583),	-- Glyph of Sepsis
-					i(217594),	-- Glyph of Shifting Power
-					i(217600),	-- Glyph of Soul Rot
-					i(217584),	-- Glyph of Spear of Bastion
-					i(217590),	-- Glyph of the Hunt
-					i(217595),	-- Glyph of Weapons of Order
-				}),
 				------ Crests & Flightstones?? ------
 				i(212458),	-- Awakened Flightstone
 				i(217412),	-- Blackened Flightstone

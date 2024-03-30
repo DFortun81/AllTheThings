@@ -144,6 +144,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(183900, {	-- Sinvyr Tea Set (TOY!)
 						["cost"] = 13500000, -- 1,350g
 					}),
+					i(217598, {	-- Glyph of Flagellation
+						["timeline"] = { ADDED_10_2_6 },
+						["classes"] = { ROGUE },
+					}),
+					i(217589, {	-- Glyph of Mindgames
+						["timeline"] = { ADDED_10_2_6 },
+						["classes"] = { PRIEST },
+					}),
 					i(177665),	-- Spectral Hankerchief
 					i(184720),	-- Reflective Waistguard
 					i(184721),	-- Flourished Cummerbund

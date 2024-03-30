@@ -53,6 +53,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 									["cost"] = { { "c", ANIMA, 1500 } },
 								}),
 							})),
+							i(217594, {	-- Glyph of Shifting Power
+								["timeline"] = { ADDED_10_2_6 },
+								["classes"] = { MAGE },
+							}),
+							i(217588, {	-- Glyph of Blessing of the Seasons
+								["timeline"] = { ADDED_10_2_6 },
+								["classes"] = { PALADIN },
+							}),
+							i(217585, {	-- Glyph of Convoke the Spirits
+								["timeline"] = { ADDED_10_2_6 },
+								["classes"] = { DRUID },
+							}),
+							i(217494, {	-- Glyph of Faeline Stomp
+								["timeline"] = { ADDED_10_2_6 },
+								["classes"] = { MONK },
+							}),
+							i(217583, {	-- Glyph of Sepsis
+								["timeline"] = { ADDED_10_2_6 },
+								["classes"] = { ROGUE },
+							}),
+							i(217600, {	-- Glyph of Soul Rot
+								["timeline"] = { ADDED_10_2_6 },
+								["classes"] = { WARLOCK },
+							}),
+							i(217590, {	-- Glyph of the Hunt
+								["timeline"] = { ADDED_10_2_6 },
+								["classes"] = { DEMONHUNTER },
+							}),
 						}, {	-- Revered
 							i(184747),	-- Gamekeeper's Slippers
 							i(184749),	-- Gametender's Bramblewards
