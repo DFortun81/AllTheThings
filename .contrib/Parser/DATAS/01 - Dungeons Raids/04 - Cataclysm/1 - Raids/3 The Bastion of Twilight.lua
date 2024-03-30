@@ -81,9 +81,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					["creatureID"] = 43324,
 					["groups"] = {
 						ach(5312),	-- The Abyss Will Gaze Back Into You
-						i(64315),	-- Mantle of the Forlorn Conqueror
-						i(64316),	-- Mantle of the Forlorn Protector
-						i(64314),	-- Mantle of the Forlorn Vanquisher
 						i(152972, {	-- Faceless Minion (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
