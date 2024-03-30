@@ -163,6 +163,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(417, "165:175:189:324"),	-- Fire Scar Shrine
 				-- #if AFTER CATA
 				exploration(2358),	-- Forest Song
+				-- #endif
+				exploration(2359),	-- Greenpaw Village
+				-- #if AFTER CATA
 				exploration(4691),	-- Hellscream's Watch
 				-- #endif
 				-- #if BEFORE CATA
@@ -179,12 +182,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(428, "225:255:597:258"),	-- Night Run
 				exploration(426, "180:245:520:238"),	-- Raynewood Retreat
 				exploration(430, "285:185:694:225"),	-- Satyrnaar
-				-- #if AFTER CATA
 				exploration(420),	-- Silverwind Refuge
+				-- #if AFTER CATA
 				exploration(2360),	-- Silverwing Outpost
 				exploration(431),	-- Splintertree Post
-				exploration(432),	-- The Dor'Danil Barrow Den
 				-- #endif
+				exploration(432),	-- The Dor'Danil Barrow Den
 				exploration(419, "210:185:463:141"),	-- The Howling Vale
 				-- #if AFTER CATA
 				exploration(1703),	-- The Mor'shan Rampart
@@ -205,7 +208,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2357),	-- Bloodtooth Camp
 				exploration(436),	-- Demon Fall Ridge
 				exploration(433),	-- Falfarren River
-				exploration(2359),	-- Greenpaw Village
 				exploration(2637),	-- Kargathia Keep
 				exploration(2457),	-- Nightsong Woods
 				exploration(3319),	-- Silverwing Grove
