@@ -936,6 +936,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 46338,	-- Budd
 							["sourceQuest"] = 27699,	-- Shark Weak
 							["coord"] = { 55.2, 38.8, 201 },
+							["groups"] = {
+								objective(1, {	-- 0/1 Gnaws Slain
+									["provider"] = { "i", 55220 },	-- Budd's Chain (QI!)
+								}),
+							},
 						}),
 						q(25947, {	-- Finders, Keepers
 							["qg"] = 41711,	-- Legionnaire Nazgrim
@@ -1007,12 +1012,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 40983,	-- Mack Fearsen
 							["sourceQuest"] = 25602,	-- Can't Start a Fire Without a Spark
 							["coord"] = { 57.3, 29.2, 201 },
+							["groups"] = {
+								objective(1, {	-- 0/5 Sunken Cargo
+									["providers"] = {
+										{ "i", 52973 },	-- Sunken Cargo (QI!)
+										{ "o", 205161 },	-- Sunken Cargo
+									},
+								}),
+							},
 						}),
 						q(25651, {	-- Oh, the Insanity!
 							["qg"] = 46338,	-- Budd
 							["sourceQuest"] = 25602,	-- Can't Start a Fire Without a Spark
 							["coord"] = { 55.2, 38.8, 201 },
 							["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
+							["groups"] = {
+								objective(1, {	-- 0/1 Barrel of Gunpowder
+									["providers"] = {
+										{ "i", 55185 },	-- Pilfered Cannonball (QI!)
+										{ "i", 62228 },	-- Barrel of Gunpowder (QI!)
+										{ "o", 203139 },	-- Pilfered Cannonballs
+									},
+									["crs"] = 41016,	-- Gilblin Horder
+								}),
+							},
 						}),
 						q(25547, {	-- On Our Own Terms
 							["qg"] = 39887,	-- Captain Taylor
@@ -1081,6 +1104,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
 							["sourceQuest"] = 25657,	-- Dah, Nunt.. Dah, Nunt...
 							["coord"] = { 58.3, 48.8, 201 },
+							["groups"] = {
+								objective(1, {	-- 0/5 Gnaws' Tooth
+									["providers"] = {
+										{ "i", 55212 },	-- Gnaws' Tooth (QI!)
+										{ "o", 203170 },	-- Gnaws' Tooth
+									},
+								}),
+							},
 						}),
 						q(25812, {	-- Spelunking (A)
 							["qg"] = 40105,	-- Erunak Stonespeaker
