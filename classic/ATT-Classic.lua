@@ -1641,21 +1641,6 @@ local function SearchForLink(link)
 			if itemID then
 				-- Ensure that the itemID and suffixID are properly formatted.
 				itemID = tonumber(itemID) or 0;
-				if suffixID and suffixID ~= "" then
-					suffixID = tonumber(suffixID) or 0;
-					if suffixID > 0 then
-						-- Record the Suffix as valid for this itemID.
-						local suffixes = GetDataSubMember("ValidSuffixesPerItemID", itemID);
-						if not suffixes then
-							suffixes = {};
-							GetDataSubMember("ValidSuffixesPerItemID", itemID, suffixes);
-						end
-						if not suffixes[suffixID] then
-							suffixes[suffixID] = 1;
-							app.ClearItemCache();
-						end
-					end
-				end
 				return SearchForField("itemID", itemID), "itemID", itemID;
 			end
 		end
@@ -3893,26 +3878,11 @@ end)();
 
 -- Item Lib
 (function()
-local suffixItemStringFormat = "item:%d:0:0:0:0:0:%d";
-local BestSuffixPerItemID = setmetatable({}, { __index = function(t, id)
-	local suffixes = GetDataSubMember("ValidSuffixesPerItemID", id);
-	if suffixes then
-		for suffixID,_ in pairs(suffixes) do
-			rawset(t, id, suffixID);
-			return suffixID;
-		end
-	else
-		-- No valid suffixes
-		rawset(t, id, 0);
-		return 0;
-	end
-end });
 local TotalRetriesPerItemID = setmetatable({}, { __index = function(t, id)
 	return 0;
 end });
 local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
-	local suffixID = BestSuffixPerItemID[id];
-	local link = select(2, GetItemInfo(suffixID > 0 and suffixItemStringFormat:format(id, suffixID) or id));
+	local link = select(2, GetItemInfo(id));
 	if link then
 		rawset(t, id, link);
 		return link;
@@ -5765,7 +5735,6 @@ local ADDON_LOADED_HANDLERS = {
 		
 		-- Check to see if we have a leftover ItemDB cache
 		GetDataMember("GroupQuestsByGUID", {});
-		GetDataMember("ValidSuffixesPerItemID", {});
 
 		-- Clean up settings
 		local oldsettings = {};
@@ -5776,7 +5745,6 @@ local ADDON_LOADED_HANDLERS = {
 			"Reagents",
 			"SoftReserves",
 			"SoftReservePersistence",
-			"ValidSuffixesPerItemID",
 		}) do
 			oldsettings[key] = AllTheThingsAD[key];
 		end
