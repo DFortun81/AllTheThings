@@ -358,7 +358,8 @@ end
 app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
 -- Event Handlering (Classic Only, until this feature as a while is supported by Retail!)
-if app.IsClassic then	-- TODO: Currently only supported on Classic
+app.SetupExplorationEvents = function()
+app.SetupExplorationEvents = nil;
 app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
 app.events.MAP_EXPLORATION_UPDATED = CheckExplorationForCurrentLocation;
 app.events.UI_INFO_MESSAGE = function(messageID)
@@ -367,6 +368,7 @@ end
 app:RegisterEvent("MAP_EXPLORATION_UPDATED");
 app:RegisterEvent("UI_INFO_MESSAGE");
 end
+if app.IsClassic then app.SetupExplorationEvents(); end
 
 -- Harvesting
 local OnClickForExplorationHeader = function(row, button)
@@ -464,6 +466,7 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	app.print("Done Simplifying Exploration Data.");
 end
 local function HarvestExploration(simplify)
+	app.SetupExplorationEvents();
 	app.print("Harvesting Exploration...");
 	local grid, Granularity = {}, 200;
 	for i=0,Granularity,1 do

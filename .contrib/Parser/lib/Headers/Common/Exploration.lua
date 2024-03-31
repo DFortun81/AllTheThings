@@ -12,7 +12,7 @@ EXPLORATION = createHeader({
 	},
 });
 explorationHeader = function(g)
-	-- #if ANYCLASSIC
+	-- #if EXPLORATION
 	return n(EXPLORATION, g);
 	-- #else
 	return n(EXPLORATION, {
