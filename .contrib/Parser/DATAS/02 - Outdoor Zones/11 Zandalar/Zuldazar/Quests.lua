@@ -1548,7 +1548,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
 				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 51521 },	-- The True Leader of Zandalar
+				["sourceQuests"] = {
+					51521,	-- The True Leader of Zandalar
+					54165,	-- The Return of Derek Proudmoore
+				},
 			}),
 			q(50940, {	-- Wisdom of the Wingless
 				["sourceQuests"] = { 50397 },	-- Aerial Aspirations
