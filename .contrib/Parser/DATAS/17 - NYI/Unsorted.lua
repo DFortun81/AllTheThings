@@ -46,7 +46,6 @@ root(ROOTS.Unsorted, {
 				i(213394),	-- Ebony Crown of the Red Rose
 				i(217375),	-- Frenzied Hat of the Crimson Seas
 				i(217373),	-- Frenzied Hat of the Dark Depths
-				i(217372),	-- Frenzied Hat of the Deep Blue
 				i(217376),	-- Frenzied Hat of the Murky Waters
 				i(217374),	-- Frenzied Hat of the Shallows
 				i(213395),	-- Gloves of the Midnight Soiree
@@ -240,27 +239,12 @@ root(ROOTS.Unsorted, {
 				i(212209),	-- Sky Witch's Shoulders
 				i(212208),	-- Sky Witch's Skirt
 
-				------ Spring Reveler's Lavender ------
-				i(213084),	-- Ensemble: Spring Reveler's Lavender Apparel
-				i(212940),	-- Ensemble: Spring Reveler's Lavender Collection
-				i(212702),	-- Spring Reveler's Lavender Attire
-				i(212703),	-- Spring Reveler's Lavender Belt
-				i(212704),	-- Spring Reveler's Lavender Boots
-				i(212712),	-- Spring Reveler's Lavender Dress
-				i(212986),	-- Spring Reveler's Lavender Pants
-				i(212716),	-- Spring Reveler's Lavender Sun Hat
-
 				------ Single Pieces ------
-				i(190859),	-- Apprentice's Twisted Crook
 				i(190807),	-- Artisan's Work Shirt
 				i(213162),	-- Blessed Bow of the Windseeker
 				i(190669),	-- Burnished Helm of Righteousness
 				i(190692),	-- Champion's Battle Standard
-				i(212789),	-- Champion's Jade Cleaver
-				i(212990),	-- Classic Violet Tabard
-				i(212790),	-- Codex of Classic Conjurations
 				i(190847),	-- Deathmantle Assassin's Barb
-				i(190805),	-- Deforester's Hatchet
 				i(190090),	-- Dessicated Bouquet
 				i(190908),	-- Devourer's Skullscythe
 				i(212627),	-- Dueler's Azure Shoulder Cape
@@ -275,14 +259,11 @@ root(ROOTS.Unsorted, {
 				i(212618),	-- Dueler's Plum Shoulder Cape
 				i(212615),	-- Dueler's Snowy Shoulder Cape
 				i(212614),	-- Dueler's Sunny Shoulder Cape
-				i(190819),	-- Emerald Guardian's Longbow
 				i(213073),	-- Faded Floral Staff
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
 				i(190849),	-- Forgemaster's Gavel
 				i(213107),	-- Gladiator's Ragged Greatsword
 				i(213106),	-- Gladiator's Serrated Greatsword
-				i(212787),	-- Gloves of the Violet Gala
-				i(212788),	-- Gossamer Emerald Gown
 				i(212785),	-- Helm of the Stout
 				i(190860),	-- Initiate's Bo
 				i(190893),	-- Jeweled Valkyrion Cape
@@ -309,12 +290,6 @@ root(ROOTS.Unsorted, {
 				i(212713),	-- Spring Reveler's Cornsilk Dress
 				i(212987),	-- Spring Reveler's Cornsilk Pants
 				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-				i(212708),	-- Spring Reveler's Dandelion Attire
-				i(212709),	-- Spring Reveler's Dandelion Belt
-				i(212710),	-- Spring Reveler's Dandelion Boots
-				i(212714),	-- Spring Reveler's Dandelion Dress
-				i(212988),	-- Spring Reveler's Dandelion Pants
-				i(212718),	-- Spring Reveler's Dandelion Sun Hat
 				i(212698),	-- Spring Reveler's Turquoise Attire
 				i(212699),	-- Spring Reveler's Turquoise Belt
 				i(212701),	-- Spring Reveler's Turquoise Boots
@@ -327,7 +302,6 @@ root(ROOTS.Unsorted, {
 				i(213161),	-- Titan Thunderbow
 				i(190844),	-- Valarjar Champion's Greatsword
 				i(213067),	-- Violet Floral Edge
-				i(190873),	-- Warhammer of Hubris
 				i(190902),	-- Will of the Titanforged
 				i(212613),	-- Wings of the Amber Monarch
 				i(212612),	-- Wings of the Amethyst Monarch
@@ -344,7 +318,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
 				i(212599),	-- Noble Flying Carpet (MOUNT!) [Noblegarden]
-				i(212920),	-- Savage Blue Battle Turtle (MOUNT!) [Trading Post]
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
 				i(212632),	-- Starry Twilight Peafowl (MOUNT!)
 			}),

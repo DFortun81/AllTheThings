@@ -1420,13 +1420,5 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				["displayID"] = 112678,
 			}),
 		})),
-
-		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			-- With SpeciesID Attached
-			i(210409, {	-- Aura (PET!) [Trading Post?]
-				["displayID"] = 114495,
-			}),
-		})),
 	}),
 }));

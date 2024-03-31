@@ -1278,7 +1278,6 @@ i(210975);	-- Date Simulation Modulator
 i(212524);	-- Delicate Crimson Parasol
 i(212525);	-- Delicate Ebony Parasol
 i(212523);	-- Delicate Jade Parasol
-i(212500);	-- Delicate Silk Parasol
 i(190196);	-- Enlightened Hearthstone
 i(211864);	-- Exquisite Love Boat
 i(210974);	-- Eyes For You Only
@@ -1292,6 +1291,7 @@ i(212518);	-- Vial of Endless Draconic Scales
 ------------------
 -- PATCH 10.2.6 --
 ------------------
+i(212500);	-- Delicate Silk Parasol
 i(218128);	-- Draconic Banner of the Aspects
 i(211869);	-- Draconic Legend's Pennant
 i(216881);	-- Duck Disguiser

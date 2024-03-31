@@ -92,7 +92,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 10.0.5
 		expansion(EXPANSION.DF, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 				------ TRADING POST ------
-			i(190075),	-- Mantle of the Scholarly Raven
 			n(SETS, {
 				-- Highborne Scholar Set
 				i(190435),	-- Highborne Scholar's Belt
@@ -168,7 +167,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				-- One-Hand Wep
 				i(190675),	-- Arborcidal Peon's Chopper
 				i(190446),	-- Blazing Forgehammer
-				i(190445),	-- Envenomed Gutripper
 				i(190132),	-- Krokul Battlescythe
 				i(190148),	-- Ravencrest's Razor
 				i(189872),	-- Shattered Krokul Edge
@@ -208,42 +206,36 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			i(206279),	-- Vagabond's Plum Cape
 			i(206280),	-- Vagabond's Faded Cape
 			i(206281),	-- Vagabond's Brick Cape
-			i(206282),	-- Vagabond's Camo Cape
 			i(206283),	-- Vagabond's Deep Cape
 			i(206284),	-- Vagabond's Cloudy Cape
 			i(206285),	-- Vagabond's Grassy Cape
 			i(206290),	-- Vagabond's Plum Hood
 			i(206291),	-- Vagabond's Faded Hood
 			i(206292),	-- Vagabond's Brick Hood
-			i(206293),	-- Vagabond's Camo Hood
 			i(206294),	-- Vagabond's Deep Hood
 			i(206295),	-- Vagabond's Cloudy Hood
 			i(206296),	-- Vagabond's Grassy Hood
 			i(206301),	-- Wanderer's Plum Scarf
 			i(206302),	-- Wanderer's Faded Scarf
 			i(206303),	-- Wanderer's Brick Scarf
-			i(206304),	-- Wanderer's Camo Scarf
 			i(206305),	-- Wanderer's Deep Scarf
 			i(206306),	-- Wanderer's Cloudy Scarf
 			i(206307),	-- Wanderer's Grassy Scarf
 			i(206312),	-- Wanderer's Plum Cloak
 			i(206313),	-- Wanderer's Faded Cloak
 			i(206314),	-- Wanderer's Brick Cloak
-			i(206315),	-- Wanderer's Camo Cloak
 			i(206316),	-- Wanderer's Deep Cloak
 			i(206317),	-- Wanderer's Cloudy Cloak
 			i(206318),	-- Wanderer's Grassy Cloak
 			i(206323),	-- Ensemble: Vagabond's Plum Threads
 			i(206324),	-- Ensemble: Vagabond's Faded Threads
 			i(206325),	-- Ensemble: Vagabond's Brick Threads
-			i(206326),	-- Ensemble: Vagabond's Camo Threads
 			i(206327),	-- Ensemble: Vagabond's Deep Threads
 			i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 			i(206329),	-- Ensemble: Vagabond's Grassy Threads
 			i(206334),	-- Ensemble: Wanderer's Plum Trappings
 			i(206335),	-- Ensemble: Wanderer's Faded Trappings
 			i(206336),	-- Ensemble: Wanderer's Brick Trappings
-			i(206337),	-- Ensemble: Wanderer's Camo Trappings
 			i(206338),	-- Ensemble: Wanderer's Deep Trappings
 			i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 			i(206340),	-- Ensemble: Wanderer's Grassy Trappings
@@ -269,11 +261,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(210859),	-- Trader's Plum Sarong
 				i(210862),	-- Trader's Snowy Sarong
 				i(210863),	-- Trader's Sunny Sarong
-				i(210860),	-- Trader's Violet Sarong
 
 				------ Stones ------
 				i(210867),	-- Blademaster's Lively Stones
-				i(210868),	-- Blademaster's Violet Stones
 
 				------ Armor ------
 				i(211069),	-- Azure Treads of the Kalu'ak

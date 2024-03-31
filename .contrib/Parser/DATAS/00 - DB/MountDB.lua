@@ -1725,7 +1725,6 @@ i(211873, 430225);	-- Gilnean Prowler
 i(210973, 427777);	-- Heartseeker Mana Ray
 i(212630, 432558);	-- Majestic Azure Peafowl
 i(212599, 432455);	-- Noble Flying Carpet
-i(212920, 433281);	-- Savage Blue Battle Turtle
 i(212228, 431359);	-- Soaring Sky Fox
 i(212632, 432564);	-- Starry Twilight Peafowl
 i(212229, 431360);	-- Twilight Sky Prowler
@@ -1746,6 +1745,7 @@ i(0, 424539);		-- Draconic Gladiator's Drake
 i(213438, 434462);	-- Infinite Armoredon
 i(0, 437162);		-- Polly Roger
 i(0, 254812);		-- Royal Seafeather
+i(212920, 433281);	-- Savage Blue Battle Turtle
 i(0, 300154);		-- Silver Tidestallion
 i(192751, 373967);	-- Stormtouched Bruffalon
 i(210142, 424607);	-- Taivan
