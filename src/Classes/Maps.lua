@@ -477,6 +477,7 @@ local function HarvestExploration(simplify)
 			--app.print("Harvesting Map " .. mapID .. "...");
 			-- Find all points on the grid that have explored an area and make note of them.
 			local any, hits = false, setmetatable({}, AreaExplorationMeta);
+			local explorationByID = {};
 			for _,pos in ipairs(grid) do
 				local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 				if explored then
@@ -488,12 +489,7 @@ local function HarvestExploration(simplify)
 				end
 			end
 			if any then
-				-- Simplify the explorationIDs used by this mapID
-				local explorationByID = {};
-				local areaIDs = ExplorationDB[mapID];
-				for _,areaID in ipairs(areaIDs) do
-					explorationByID[areaID] = true;
-				end
+				-- For each of these hits, add it to our raw positional DB.
 				for areaID,coords in pairs(hits) do
 					explorationByID[areaID] = true;
 					
@@ -508,7 +504,31 @@ local function HarvestExploration(simplify)
 						end
 					end
 				end
-				
+			end
+			
+			-- Now take the ones from our previously harvested DBs.
+			local areaIDs = ExplorationDB[mapID];
+			for _,areaID in ipairs(areaIDs) do
+				if not explorationByID[areaID] then
+					explorationByID[areaID] = true;
+					any = true;
+					
+					-- Reuse any coordinates linked for the area if we didn't just acquire new ones.
+					local coords = ExplorationAreaPositionDB[areaID];
+					if coords then
+						local positions = rawExplorationAreaPositionDB[areaID];
+						if not positions then
+							rawExplorationAreaPositionDB[areaID] = coords;
+						else
+							for i,coord in ipairs(coords) do
+								tinsert(positions, coord);
+							end
+						end
+					end
+				end
+			end
+			
+			if any then
 				-- Now regenerate the areaIDs for this map.
 				wipe(areaIDs);
 				local count = 1;
