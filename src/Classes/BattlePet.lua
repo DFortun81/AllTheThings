@@ -39,8 +39,8 @@ do
 				end
 			else
 				_t.name = UNKNOWN;
-				if not t.itemID then
-					_t.text = UNKNOWN;
+				if not t.itemID or not t.link then
+					_t.text = "|cff0070dd"..UNKNOWN.."|r";
 				end
 			if field then return _t[field]; end
 			end
