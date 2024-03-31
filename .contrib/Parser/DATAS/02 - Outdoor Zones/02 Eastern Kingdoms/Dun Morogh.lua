@@ -2181,6 +2181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(1537),	-- Ironforge
 				exploration(5115),	-- Ironforge Airfield
+				exploration(131),	-- Kharanos
 				-- #endif
 				-- #if BEFORE CATA
 				exploration(138, "128:165:502:221"),	-- Misty Pine Refuge

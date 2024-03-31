@@ -124,6 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER CATA
 				exploration(5565),	-- New Kargath
+				exploration(340),	-- Ruins of Kargath
 				exploration(5322),	-- Scar of the Worldbreaker
 				-- #endif
 				exploration(1878, "270:275:159:199"),	-- The Dustbowl

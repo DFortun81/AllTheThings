@@ -171,6 +171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4843),	-- Honor's Stand
 				exploration(4844),	-- Hunter's Hill
 				exploration(4847),	-- Northwatch Hold
+				exploration(1717),	-- Razorfen Kraul
 				exploration(5518),	-- Razorfen Kraul Entrance
 				exploration(4851),	-- Ruins of Taurajo
 				exploration(5385),	-- The Great Divide

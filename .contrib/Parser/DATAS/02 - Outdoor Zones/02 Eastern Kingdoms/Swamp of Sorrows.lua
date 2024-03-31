@@ -83,9 +83,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(5459),	-- Marshtide Watch
 				-- #endif
-				-- #if BEFORE CATA
 				exploration(1978),	-- Misty Reed Post
-				-- #endif
 				exploration(300, "256:668:746:0"),		-- Misty Reed Strand
 				exploration(116, "245:305:0:140"),		-- Misty Valley
 				exploration(74, "300:275:565:218"),		-- Pool of Tears
