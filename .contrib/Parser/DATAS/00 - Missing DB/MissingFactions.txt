@@ -1,3 +1,6 @@
+1.15.2.53941
+faction(2641),	-- Emerald Wardens
+faction(2646),	-- S03 - 50 - Tanaris Arena Opponent
 10.2.6.53840
 faction(2593),	-- Keg Leg's Crew
 faction(2604),	-- Keg Leg's Crew (Paragon)

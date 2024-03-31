@@ -320,6 +320,123 @@ q(80325),	-- CLASSIC:The Mad King
 q(80393),	--
 1.15.1.53623
 q(81570),	-- CLASSIC:Jarl Needs a Blade
+1.15.2.53941
+q(80410),	--
+q(80411),	--
+q(80453),	--
+q(80454),	--
+q(80455),	--
+q(80526),	--
+q(81573),	--
+q(81682),	--
+q(81697),	--
+q(81762),	--
+q(81764),	--
+q(81765),	--
+q(81766),	--
+q(81790),	--
+q(81801),	--
+q(81877),	--
+q(81879),	--
+q(81883),	--
+q(81884),	--
+q(81885),	--
+q(81900),	--
+q(81917),	--
+q(81919),	--
+q(81924),	--
+q(81944),	--
+q(81947),	--
+q(81949),	--
+q(81951),	--
+q(81952),	--
+q(81953),	--
+q(81954),	--
+q(81955),	--
+q(81956),	--
+q(81960),	--
+q(81961),	--
+q(81968),	--
+q(81973),	--
+q(81974),	--
+q(81975),	--
+q(81977),	--
+q(81979),	--
+q(81980),	--
+q(81982),	--
+q(81983),	--
+q(81986),	--
+q(81987),	--
+q(82001),	--
+q(82002),	--
+q(82003),	--
+q(82004),	--
+q(82008),	--
+q(82009),	--
+q(82010),	--
+q(82011),	--
+q(82013),	--
+q(82014),	--
+q(82015),	--
+q(82017),	--
+q(82018),	--
+q(82019),	--
+q(82020),	--
+q(82021),	--
+q(82022),	--
+q(82023),	--
+q(82032),	--
+q(82043),	--
+q(82044),	--
+q(82060),	--
+q(82062),	--
+q(82068),	--
+q(82070),	--
+q(82071),	--
+q(82072),	--
+q(82073),	--
+q(82074),	--
+q(82075),	--
+q(82076),	--
+q(82081),	--
+q(82083),	--
+q(82084),	--
+q(82089),	--
+q(82090),	--
+q(82091),	--
+q(82092),	--
+q(82095),	--
+q(82096),	--
+q(82097),	--
+q(82098),	--
+q(82099),	--
+q(82100),	--
+q(82101),	--
+q(82102),	--
+q(82103),	--
+q(82104),	--
+q(82106),	--
+q(82107),	--
+q(82108),	--
+q(82110),	--
+q(82111),	--
+q(82112),	--
+q(82113),	--
+q(82114),	--
+q(82115),	--
+q(82132),	--
+q(82135),	--
+q(82208),	--
+q(82304),	--
+q(82305),	--
+q(82306),	--
+q(82310),	--
+q(82311),	--
+q(82312),	--
+q(82313),	--
+q(82314),	--
+q(82315),	--
+q(82316),	--
 2.5.1.38043
 q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source	 CATA:Windows to the Source
 q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild	 CATA:Voidwalkers Gone Wild
@@ -506,8 +623,6 @@ q(14181),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:
 q(14182),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	 CATA:Call to Arms: Eye of the Storm
 q(14183),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch
 q(14200),	-- Kickoff Mail Marker
-q(14349),	-- The Call to Command	 WOTLK:The Call to Command	 CATA:The Call to Command
-q(14350),	-- The Crimson Courier	 WOTLK:The Crimson Courier	 CATA:The Crimson Courier
 q(14441),	-- Garrosh's Autograph	 WOTLK:Garrosh's Autograph	 CATA:Garrosh's Autograph
 q(24216),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch
 q(24217),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch
@@ -814,10 +929,6 @@ q(26054),	-- Water They Up To?
 q(26104),	-- Our Aquatic Neigh-Bors
 q(26109),	-- Land Ho!
 q(26123),	-- When in Vashj'ir...
-q(26198),	-- The Arts of a Mage
-q(26200),	-- The Arts of a Priest
-q(26201),	-- The Power of a Warlock
-q(26204),	-- The Arts of a Warrior
 q(26216),	-- Stoleways
 q(26217),	-- Overboard
 q(26218),	-- Long Shot
@@ -1661,9 +1772,7 @@ q(79071),	--
 q(79072),	--
 q(79073),	--
 q(79074),	--
-q(79246),	-- Captain's Orders: Coffer Collector
 q(79248),	--
-q(79249),	-- Captain's Orders: Kill Haul
 q(79251),	--
 q(79252),	--
 q(79253),	--
@@ -1674,11 +1783,6 @@ q(79317),	-- Morkus Grimlock
 q(79318),	-- Narla Thunderhoof
 q(79319),	-- Frenzied Owlbeast
 q(79320),	-- Gorthak Grimtusk
-q(79379),	-- Captain's Orders: No Prey, No Pay
-q(79381),	-- Captain's Orders: X Marks the Spot
-q(79382),	-- Captain's Orders: Plunderstudy
-q(79448),	--
-q(79453),	--
 q(79462),	-- [DNT] Renown Reward 001
 q(79464),	-- [DNT] Renown Reward 002
 q(79465),	-- [DNT] Renown Reward 003
@@ -1687,25 +1791,19 @@ q(79702),	--
 q(79965),	-- Learn the Ropes or Walk the Plank
 q(79988),	--
 q(79989),	--
-q(80081),	-- Captain's Orders: Flood and Plunder
 q(80083),	--
 q(80084),	--
 q(80085),	--
 q(80087),	--
 q(80088),	--
 q(80089),	--
-q(80110),	-- Daily Doubloons
 q(80171),	--
 q(80172),	--
 q(80262),	--
 q(80263),	--
 q(80264),	--
 q(80335),	--
-q(80385),	--
-q(80386),	--
-q(80388),	--
 q(80389),	-- Last Hurrah
-q(80436),	--
 q(80540),	--
 q(81657),	--
 q(81676),	--

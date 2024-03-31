@@ -1,0 +1,14 @@
+1.15.2.53941
+r(446179),	-- Shoulderplates of Dread
+r(446188),	-- Fearmonger's Shoulderguards
+r(446191),	-- Baleful Pauldrons
+
+
+
+
+Missing in Blacksmithing.lua
+
+1.15.2.53941
+r(446179),	-- Shoulderplates of Dread
+r(446188),	-- Fearmonger's Shoulderguards
+r(446191),	-- Baleful Pauldrons

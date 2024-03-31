@@ -1,0 +1,14 @@
+1.15.2.53941
+r(439500),	-- Sebacious Poison
+r(439503),	-- Atrophic Poison
+r(439505),	-- Numbing Poison
+
+
+
+
+Missing in Poisons.lua
+
+1.15.2.53941
+r(439500),	-- Sebacious Poison
+r(439503),	-- Atrophic Poison
+r(439505),	-- Numbing Poison

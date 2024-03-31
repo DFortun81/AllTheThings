@@ -109,6 +109,10 @@ r(435958),	-- Whirling Truesilver Gearwall
 r(435960),	-- Hyperconductive Goldwap
 r(435964),	-- High-Yield Radiation Bomb
 r(435966),	-- Ez-Thro Radiation Bomb
+1.15.2.53941
+r(446236),	-- Void-Powered Invoker's Vambraces
+r(446237),	-- Void-Powered Slayer's Vambraces
+r(446238),	-- Void-Powered Protector's Vambraces
 2.0.0.6080
 r(30303),	-- Elemental Blasting Powder
 r(30304),	-- Fel Iron Casing
@@ -627,6 +631,10 @@ r(26443),	-- Cluster Launcher \\ Firework Cluster Launcher
 r(28327),	-- Steam Tonk Controller
 1.15.1.53009
 r(431362),	-- Soul Vessel
+1.15.2.53941
+r(446236),	-- Void-Powered Invoker's Vambraces
+r(446237),	-- Void-Powered Slayer's Vambraces
+r(446238),	-- Void-Powered Protector's Vambraces
 2.0.0.6080
 r(30303),	-- Elemental Blasting Powder
 r(30304),	-- Fel Iron Casing
