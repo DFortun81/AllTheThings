@@ -696,8 +696,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 			}),
 			q(57918, {	-- The Absolution of Souls
-			--	unsure what triggered its availability.  "Our Forgotten Purpose" was available for me for days and this version wasn't.  i THINK it might have been unlocking the first tier of every sanctum upgrade?  i noticed it after going to pick up a daily quest from The Accuser after unlocking my final sanctum upgrade, and this quest wasn't up the night before when i started the upgrade
-			--	["sourceQuests"] = {  },	-- ??
+				["description"] = "Becomes available after unlocking tier 1 of the Command Table sanctum upgrade.",
 				["isBreadcrumb"] = true,
 				["altQuests"] = { 58093 },	-- Our Forgotten Purpose
 				["provider"] = { "n", 165291 },	-- The Accuser
