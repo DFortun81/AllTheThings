@@ -312,7 +312,10 @@ namespace ATT
                     thingVal.TryConvert(out T thingKeyVal) &&
                     thingKeyVal.Equals(value))
                 {
-                    return thing;
+                    if (!thing.TryGetValue("nomerge", out bool nomerge) || !nomerge)
+                    {
+                        return thing;
+                    }
                 }
             }
 

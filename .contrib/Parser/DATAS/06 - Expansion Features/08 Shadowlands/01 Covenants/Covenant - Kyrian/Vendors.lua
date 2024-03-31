@@ -400,231 +400,231 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
 						["cost"] = {
-							{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
-							{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
+							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
-							{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
+							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
 						["cost"] = {
-							{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
-							{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
+							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
-							{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
+							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 				}),
@@ -635,231 +635,231 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
 						["cost"] = {
-							{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
-							{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
+							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
-							{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
+							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
 						["cost"] = {
-							{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
-							{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
+							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
-							{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
+							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 				}),
@@ -1013,231 +1013,231 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
 						["cost"] = {
-							{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
-							{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
+							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183895.04, 1 },	-- LFR Apogee Anima Bead - 194
-							{ "i", 183894.04, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+							{ "i", modItemId(183895,04), 1 },	-- LFR Apogee Anima Bead - 194
+							{ "i", modItemId(183894,04), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
 						["cost"] = {
-							{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
-							{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
+							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183895.04, 1 },	-- LFR Apogee Anima Bead - 194
-							{ "i", 183894.04, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+							{ "i", modItemId(183895,04), 1 },	-- LFR Apogee Anima Bead - 194
+							{ "i", modItemId(183894,04), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 				}),
@@ -1248,231 +1248,231 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
 						["cost"] = {
-							{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
-							{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
+							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
-							{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
+							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
 						["cost"] = {
-							{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
-							{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
+							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
-							{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
+							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 				}),

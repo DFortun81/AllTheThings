@@ -2191,64 +2191,43 @@ ResolveSymbolicLink = function(o)
 		return
 	end
 	local cloned = {};
-	MergeObjects(cloned, finalized, true);
 	-- app.PrintDebug("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.")
-	-- if any symlinks are left at the lowest level, go ahead and fill them
-	-- Apply any modID if necessary
-	local sHash;
-	if FinalizeModID then
-		-- app.PrintDebug("Applying FinalizeModID",FinalizeModID)
-		for _,clone in ipairs(cloned) do
-			if clone.itemID then
+	local sHash, clone
+	for i=1,#finalized do
+		clone = finalized[i]
+
+		-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
+		sHash = clone.hash;
+		if clone == o or (sHash and sHash == oHash) then
+			app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,i,FinalizeModID)
+		else
+			clone = CreateObject(clone)
+			cloned[#cloned + 1] = clone
+
+			-- Apply any modID if necessary
+			if FinalizeModID and clone.itemID then
 				clone.modID = FinalizeModID;
 			end
-			-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
-			clone.symParent = clone.parent
-			clone.sourceParent = nil;
-			clone.parent = nil;
 			if PruneFinalized then
 				for _,field in ipairs(PruneFinalized) do
 					clone[field] = nil
 				end
 			end
-			-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-			sHash = clone.hash;
-			if sHash and sHash == oHash then
-				app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,FinalizeModID)
-				clone.sym = nil;
-			else
-				FillSymLinks(clone);
-			end
-		end
-	else
-		for _,clone in ipairs(cloned) do
+
 			-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
 			clone.symParent = clone.parent
 			clone.sourceParent = nil;
 			clone.parent = nil;
-			if PruneFinalized then
-				for _,field in ipairs(PruneFinalized) do
-					clone[field] = nil
-				end
-			end
-			-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-			sHash = clone.hash;
-			if sHash and sHash == oHash then
-				app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text)
-				clone.sym = nil;
-			else
-				FillSymLinks(clone);
-			end
 		end
 	end
 	if oKey and app.ThingKeys[oKey] then
 		-- global resolve cache if it's a 'Thing'
-		-- app.PrintDebug("Thing Results",oHash)
+		-- app.PrintDebug("Thing Results",oHash,#cloned)
 		ResolveCache[oHash] = cloned;
 	elseif oKey ~= false then
 		-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
 		o.resolved = cloned;
-		-- app.PrintDebug("Object Results",oHash)
+		-- app.PrintDebug("Object Results",oHash,#cloned)
 	end
 	return cloned;
 end

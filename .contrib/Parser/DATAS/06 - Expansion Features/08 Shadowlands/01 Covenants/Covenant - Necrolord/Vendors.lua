@@ -42,198 +42,198 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
 						["cost"] = {
-							{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
-							{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
+							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
-							{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+							{ "i", modItemId(183895,83), 1 },	-- LFR Apogee Anima Bead - 194
+							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
 						["cost"] = {
-							{ "i", 183888.04, 1 },	-- LFR Apogee Anima Bead - 187
-							{ "i", 183889.04, 1 },	-- LFR Thaumaturgic Anima Bead - 187
+							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
+							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183895.83, 1 },	-- LFR Apogee Anima Bead - 194
-							{ "i", 183894.83, 1 },	-- LFR Thaumaturgic Anima Bead - 194
+							{ "i", modItemId(183895,83), 1 },	-- LFR Apogee Anima Bead - 194
+							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
 						["cost"] = {
-							{ "i", 183893.04, 1 },	-- LFR Abominable Anima Spherule - 187
-							{ "i", 183892.04, 1 },	-- LFR Mystic Anima Spherule - 187
-							{ "i", 183891.04, 1 },	-- LFR Venerated Anima Spherule - 187
-							{ "i", 183890.04, 1 },	-- LFR Zenith Anima Spherule - 187
+							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
+							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
+							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
+							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
 						["modID"] = 83,
 						["cost"] = {
-							{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
-							{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
-							{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
-							{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
+							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
+							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
+							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
+							{ "i", modItemId(183899,83), 1 },	-- LFR Zenith Anima Spherule - 194
 						},
 					}),
 				}),
@@ -243,198 +243,198 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["g"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
 						["cost"] = {
-							{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
-							{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
+							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
-							{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
+							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
 						["cost"] = {
-							{ "i", 183888.03, 1 },	-- Normal Apogee Anima Bead - 200
-							{ "i", 183889.03, 1 },	-- Normal Thaumaturgic Anima Bead - 200
+							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
+							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183895.82, 1 },	-- Normal Apogee Anima Bead - 207
-							{ "i", 183894.82, 1 },	-- Normal Thaumaturgic Anima Bead - 207
+							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
+							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
 						["cost"] = {
-							{ "i", 183893.03, 1 },	-- Normal Abominable Anima Spherule - 200
-							{ "i", 183892.03, 1 },	-- Normal Mystic Anima Spherule - 200
-							{ "i", 183891.03, 1 },	-- Normal Venerated Anima Spherule - 200
-							{ "i", 183890.03, 1 },	-- Normal Zenith Anima Spherule - 200
+							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
+							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
+							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
+							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
 						["modID"] = 82,
 						["cost"] = {
-							{ "i", 183896.82, 1 },	-- Normal Abominable Anima Spherule - 207
-							{ "i", 183897.82, 1 },	-- Normal Mystic Anima Spherule - 207
-							{ "i", 183898.82, 1 },	-- Normal Venerated Anima Spherule - 207
-							{ "i", 183899.82, 1 },	-- Normal Zenith Anima Spherule - 207
+							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
+							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
+							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
+							{ "i", modItemId(183899,82), 1 },	-- Normal Zenith Anima Spherule - 207
 						},
 					}),
 				}),
@@ -445,198 +445,198 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["g"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
 						["cost"] = {
-							{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
-							{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
+							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
-							{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
+							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
 						["cost"] = {
-							{ "i", 183888.06, 1 },	-- Mythic Apogee Anima Bead - 226
-							{ "i", 183889.06, 1 },	-- Mythic Thaumaturgic Anima Bead - 226
+							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
+							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183895.85, 1 },	-- Mythic Apogee Anima Bead - 233
-							{ "i", 183894.85, 1 },	-- Mythic Thaumaturgic Anima Bead - 233
+							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
+							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
 						["cost"] = {
-							{ "i", 183893.06, 1 },	-- Mythic Abominable Anima Spherule - 226
-							{ "i", 183892.06, 1 },	-- Mythic Mystic Anima Spherule - 226
-							{ "i", 183891.06, 1 },	-- Mythic Venerated Anima Spherule - 226
-							{ "i", 183890.06, 1 },	-- Mythic Zenith Anima Spherule - 226
+							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
+							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
+							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
+							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
 						["modID"] = 85,
 						["cost"] = {
-							{ "i", 183896.85, 1 },	-- Mythic Abominable Anima Spherule - 233
-							{ "i", 183897.85, 1 },	-- Mythic Mystic Anima Spherule - 233
-							{ "i", 183898.85, 1 },	-- Mythic Venerated Anima Spherule - 233
-							{ "i", 183899.85, 1 },	-- Mythic Zenith Anima Spherule - 233
+							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
+							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
+							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
+							{ "i", modItemId(183899,85), 1 },	-- Mythic Zenith Anima Spherule - 233
 						},
 					}),
 				}),
@@ -1111,198 +1111,198 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
 						["cost"] = {
-							{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
-							{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
+							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
-							{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
+							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
 						["cost"] = {
-							{ "i", 183888.05, 1 },	-- Heroic Apogee Anima Bead - 213
-							{ "i", 183889.05, 1 },	-- Heroic Thaumaturgic Anima Bead - 213
+							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
+							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183895.84, 1 },	-- Heroic Apogee Anima Bead - 220
-							{ "i", 183894.84, 1 },	-- Heroic Thaumaturgic Anima Bead - 220
+							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
+							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
 						["cost"] = {
-							{ "i", 183893.05, 1 },	-- Heroic Abominable Anima Spherule - 213
-							{ "i", 183892.05, 1 },	-- Heroic Mystic Anima Spherule - 213
-							{ "i", 183891.05, 1 },	-- Heroic Venerated Anima Spherule - 213
-							{ "i", 183890.05, 1 },	-- Heroic Zenith Anima Spherule - 213
+							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
+							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
+							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
+							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
 						["modID"] = 84,
 						["cost"] = {
-							{ "i", 183896.84, 1 },	-- Heroic Abominable Anima Spherule - 220
-							{ "i", 183897.84, 1 },	-- Heroic Mystic Anima Spherule - 220
-							{ "i", 183898.84, 1 },	-- Heroic Venerated Anima Spherule - 220
-							{ "i", 183899.84, 1 },	-- Heroic Zenith Anima Spherule - 220
+							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
+							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
+							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
+							{ "i", modItemId(183899,84), 1 },	-- Heroic Zenith Anima Spherule - 220
 						},
 					}),
 				}),

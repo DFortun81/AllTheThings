@@ -740,7 +740,7 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 		t.modID = db.modID;
 		-- #endif
 	end
-	
+
 	if ids then
 		local oldDifficulties = t.difficulties;
 		if oldDifficulties then
@@ -919,7 +919,7 @@ iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (s
 end
 inst = function(id, t)									-- Create an INSTANCE Object
 	t = struct("instanceID", id, t);
-	
+
 	-- #if BEFORE WRATH
 	-- Not yet supported in classic.
 	if t.groups or t.g then
@@ -1247,6 +1247,20 @@ end
 model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
+end
+-- Converts a given Item/Mod/Bonus combination into the current modItemID format (should roughly match GetGroupItemIDWithModID from Item.Retail.lua)
+modItemId = function(itemID, modID, bonusID)
+	local i, m, b;
+	i = itemID and tonumber(itemID) or 0;
+	m = modID and tonumber(modID);
+	b = bonusID and tonumber(bonusID);
+	if m then
+		i = i + (m / 1000);
+	end
+	if b and b ~= 3524 then
+		i = i + (b / 100000000);
+	end
+	return i;
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 

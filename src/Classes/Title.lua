@@ -119,7 +119,6 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = app.IsClassic and function(t)
 		local titleID = t.titleID;
-		-- NOTE: Retail doesn't support SetCollected.
 		return app.SetCollected(t, "Titles", titleID, IsTitleKnown(titleID));
 	end or function(t)
 		local titleID = t.titleID;

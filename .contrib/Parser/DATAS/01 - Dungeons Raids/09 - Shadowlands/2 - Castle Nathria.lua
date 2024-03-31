@@ -11,6 +11,7 @@ local function FatedItem(modItemID, modID)
 	item.modID = modID;
 	item.sym = {{"select","itemID",modItemID}};	-- Base Version
 	item.timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH };
+	item.nomerge = true
 	return item;
 end
 
@@ -661,51 +662,51 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				ZoneDrops(),
 				Boss(SHRIEKWING),
 				Boss(HUNTSMAN, {
-					FatedItem(183892.04, LFR),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183892,04), LFR),	-- Mystic Anima Spherule (Fated)
 				}),
 				Boss(SUN_KING, {
-					FatedItem(183893.04, LFR),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183893,04), LFR),	-- Abominable Anima Spherule (Fated)
 				}),
 				Boss(ARTIFICER_XYMOX, {
-					FatedItem(183888.04, LFR),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183888,04), LFR),	-- Apogee Anima Bead (Fated)
 				}),
 				Boss(HUNGERING, {
-					FatedItem(183891.04, LFR),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183891,04), LFR),	-- Venerated Anima Spherule (Fated)
 				}),
 				Boss(LADY, {
-					FatedItem(183889.04, LFR),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183889,04), LFR),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(COUNCIL, {
-					FatedItem(183890.04, LFR),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183890,04), LFR),	-- Zenith Anima Spherule (Fated)
 				}),
 				Boss(SLUDGEFIST),
 				Boss(GENERALS, {
 					i(183895, {	-- Apogee Anima Bead
 						["modID"] = 83,
 					}),
-					FatedItem(183895.83, LFR),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183895,83), LFR),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
 						["modID"] = 83,
 					}),
-					FatedItem(183894.83, LFR),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183894,83), LFR),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					i(183896, {	-- Abominable Anima Spherule
 						["modID"] = 83,
 					}),
-					FatedItem(183896.83, LFR),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183896,83), LFR),	-- Abominable Anima Spherule (Fated)
 					i(183897, {	-- Mystic Anima Spherule
 						["modID"] = 83,
 					}),
-					FatedItem(183897.83, LFR),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183897,83), LFR),	-- Mystic Anima Spherule (Fated)
 					i(183898, {	-- Venerated Anima Spherule
 						["modID"] = 83,
 					}),
-					FatedItem(183898.83, LFR),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183898,83), LFR),	-- Venerated Anima Spherule (Fated)
 					i(183899, {	-- Zenith Anima Spherule
 						["modID"] = 83,
 					}),
-					FatedItem(183899.83, LFR),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183899,83), LFR),	-- Zenith Anima Spherule (Fated)
 				}),
 			})),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
@@ -752,51 +753,51 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				ZoneDrops(),
 				Boss(SHRIEKWING),
 				Boss(HUNTSMAN, {
-					FatedItem(183892.03, NORMAL),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183892,03), NORMAL),	-- Mystic Anima Spherule (Fated)
 				}),
 				Boss(SUN_KING, {
-					FatedItem(183893.03, NORMAL),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183893,03), NORMAL),	-- Abominable Anima Spherule (Fated)
 				}),
 				Boss(ARTIFICER_XYMOX, {
-					FatedItem(183888.03, NORMAL),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183888,03), NORMAL),	-- Apogee Anima Bead (Fated)
 				}),
 				Boss(HUNGERING, {
-					FatedItem(183891.03, NORMAL),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183891,03), NORMAL),	-- Venerated Anima Spherule (Fated)
 				}),
 				Boss(LADY, {
-					FatedItem(183889.03, NORMAL),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183889,03), NORMAL),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(COUNCIL, {
-					FatedItem(183890.03, NORMAL),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183890,03), NORMAL),	-- Zenith Anima Spherule (Fated)
 				}),
 				Boss(SLUDGEFIST),
 				Boss(GENERALS, {
 					i(183895, {	-- Apogee Anima Bead
 						["modID"] = 82,
 					}),
-					FatedItem(183895.82, NORMAL),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183895,82), NORMAL),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
 						["modID"] = 82,
 					}),
-					FatedItem(183894.82, NORMAL),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183894,82), NORMAL),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					i(183896, {	-- Abominable Anima Spherule
 						["modID"] = 82,
 					}),
-					FatedItem(183896.82, NORMAL),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183896,82), NORMAL),	-- Abominable Anima Spherule (Fated)
 					i(183897, {	-- Mystic Anima Spherule
 						["modID"] = 82,
 					}),
-					FatedItem(183897.82, NORMAL),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183897,82), NORMAL),	-- Mystic Anima Spherule (Fated)
 					i(183898, {	-- Venerated Anima Spherule
 						["modID"] = 82,
 					}),
-					FatedItem(183898.82, NORMAL),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183898,82), NORMAL),	-- Venerated Anima Spherule (Fated)
 					i(183899, {	-- Zenith Anima Spherule
 						["modID"] = 82,
 					}),
-					FatedItem(183899.82, NORMAL),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183899,82), NORMAL),	-- Zenith Anima Spherule (Fated)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
@@ -826,51 +827,51 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				ZoneDrops(),
 				Boss(SHRIEKWING),
 				Boss(HUNTSMAN, {
-					FatedItem(183892.05, HEROIC),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183892,05), HEROIC),	-- Mystic Anima Spherule (Fated)
 				}),
 				Boss(SUN_KING, {
-					FatedItem(183893.05, HEROIC),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183893,05), HEROIC),	-- Abominable Anima Spherule (Fated)
 				}),
 				Boss(ARTIFICER_XYMOX, {
-					FatedItem(183888.05, HEROIC),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183888,05), HEROIC),	-- Apogee Anima Bead (Fated)
 				}),
 				Boss(HUNGERING, {
-					FatedItem(183891.05, HEROIC),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183891,05), HEROIC),	-- Venerated Anima Spherule (Fated)
 				}),
 				Boss(LADY, {
-					FatedItem(183889.05, HEROIC),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183889,05), HEROIC),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(COUNCIL, {
-					FatedItem(183890.05, HEROIC),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183890,05), HEROIC),	-- Zenith Anima Spherule (Fated)
 				}),
 				Boss(SLUDGEFIST),
 				Boss(GENERALS, {
 					i(183895, {	-- Apogee Anima Bead
 						["modID"] = 84,
 					}),
-					FatedItem(183895.84, HEROIC),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183895,84), HEROIC),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
 						["modID"] = 84,
 					}),
-					FatedItem(183894.84, HEROIC),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183894,84), HEROIC),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					i(183896, {	-- Abominable Anima Spherule
 						["modID"] = 84,
 					}),
-					FatedItem(183896.84, HEROIC),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183896,84), HEROIC),	-- Abominable Anima Spherule (Fated)
 					i(183897, {	-- Mystic Anima Spherule
 						["modID"] = 84,
 					}),
-					FatedItem(183897.84, HEROIC),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183897,84), HEROIC),	-- Mystic Anima Spherule (Fated)
 					i(183898, {	-- Venerated Anima Spherule
 						["modID"] = 84,
 					}),
-					FatedItem(183898.84, HEROIC),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183898,84), HEROIC),	-- Venerated Anima Spherule (Fated)
 					i(183899, {	-- Zenith Anima Spherule
 						["modID"] = 84,
 					}),
-					FatedItem(183899.84, HEROIC),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183899,84), HEROIC),	-- Zenith Anima Spherule (Fated)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
@@ -888,27 +889,27 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				Boss(HUNTSMAN, {
 					ach(14357),	-- Mythic: Huntsman Altimor
-					FatedItem(183892.06, MYTHIC),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183892,06), MYTHIC),	-- Mystic Anima Spherule (Fated)
 				}),
 				Boss(SUN_KING, {
 					ach(14360),	-- Mythic: Sun King's Salvation
-					FatedItem(183893.06, MYTHIC),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183893,06), MYTHIC),	-- Abominable Anima Spherule (Fated)
 				}),
 				Boss(ARTIFICER_XYMOX, {
 					ach(14359),	-- Mythic: Artificer Xy'mox
-					FatedItem(183888.06, MYTHIC),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183888,06), MYTHIC),	-- Apogee Anima Bead (Fated)
 				}),
 				Boss(HUNGERING, {
 					ach(14358),	-- Mythic: Hungering Destroyer
-					FatedItem(183891.06, MYTHIC),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183891,06), MYTHIC),	-- Venerated Anima Spherule (Fated)
 				}),
 				Boss(LADY, {
 					ach(14361),	-- Mythic: Lady Inerva Darkvein
-					FatedItem(183889.06, MYTHIC),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183889,06), MYTHIC),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(COUNCIL, {
 					ach(14362),	-- Mythic: The Council of Blood
-					FatedItem(183890.06, MYTHIC),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183890,06), MYTHIC),	-- Zenith Anima Spherule (Fated)
 				}),
 				Boss(SLUDGEFIST, {
 					ach(14363),	-- Mythic: Sludgefist
@@ -918,11 +919,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183895, {	-- Apogee Anima Bead
 						["modID"] = 85,
 					}),
-					FatedItem(183895.85, MYTHIC),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183895,85), MYTHIC),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
 						["modID"] = 85,
 					}),
-					FatedItem(183894.85, MYTHIC),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183894,85), MYTHIC),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					ach(14461, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Cutting Edge: Sire Denathrius
@@ -944,19 +945,19 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183896, {	-- Abominable Anima Spherule
 						["modID"] = 85,
 					}),
-					FatedItem(183896.85, MYTHIC),	-- Abominable Anima Spherule (Fated)
+					FatedItem(modItemId(183896,85), MYTHIC),	-- Abominable Anima Spherule (Fated)
 					i(183897, {	-- Mystic Anima Spherule
 						["modID"] = 85,
 					}),
-					FatedItem(183897.85, MYTHIC),	-- Mystic Anima Spherule (Fated)
+					FatedItem(modItemId(183897,85), MYTHIC),	-- Mystic Anima Spherule (Fated)
 					i(183898, {	-- Venerated Anima Spherule
 						["modID"] = 85,
 					}),
-					FatedItem(183898.85, MYTHIC),	-- Venerated Anima Spherule (Fated)
+					FatedItem(modItemId(183898,85), MYTHIC),	-- Venerated Anima Spherule (Fated)
 					i(183899, {	-- Zenith Anima Spherule
 						["modID"] = 85,
 					}),
-					FatedItem(183899.85, MYTHIC),	-- Zenith Anima Spherule (Fated)
+					FatedItem(modItemId(183899,85), MYTHIC),	-- Zenith Anima Spherule (Fated)
 				}),
 			}),
 		},

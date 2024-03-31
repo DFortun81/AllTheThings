@@ -1193,7 +1193,7 @@ namespace ATT
             /// <returns></returns>
             public static decimal GetSpecificItemID(decimal itemID, long modID, long bonusID)
             {
-                return itemID + (decimal)modID / 100 + (decimal)bonusID / 1000000;
+                return itemID + (decimal)modID / 1000 + (decimal)bonusID / 100000000;
             }
 
             /// <summary>

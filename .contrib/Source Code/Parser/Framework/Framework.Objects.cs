@@ -2498,15 +2498,6 @@ end");
                     }
                 }
 
-                /// shouldn't need anymore with DataConitional pass
-                // Only Merge in any global data if this is not the initial merge pass
-                // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
-                // if (!MergeItemData)
-                // {
-                    //Items.MergeInto(data2);
-                    //MergeSharedDataIntoObject(data2);
-                // }
-
                 // Find the Object Dictionary that matches the data.
                 IDictionary<string, object> entry = FindMatchingData(container, data2);
 

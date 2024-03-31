@@ -118,6 +118,7 @@ local function PlayAudio(soundType, setting)
 					local soundFile = targetAudio[math.random(1, audioCount)];
 					if soundFile then
 						(type(soundFile) == "string" and PlaySoundFile or PlaySound)(soundFile, app.Settings:GetTooltipSetting("Channel"));
+						app.PrintDebug("PlayAudio",soundFile)
 						return true;
 					end
 				end
