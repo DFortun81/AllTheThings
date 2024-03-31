@@ -152,44 +152,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(2079),	-- Alcaz Island
-				exploration(501),	-- Beezil's Wreck
-				exploration(512),	-- Blackhoof Village
-				exploration(498),	-- Bloodfen Burrow
+				exploration(501, {["timeline"] = { "added 4.0.1" }}),	-- Beezil's Wreck
+				exploration(512, {["timeline"] = { "added 2.0.1" }}),	-- Blackhoof Village
+				exploration(498, {["timeline"] = { "added 2.0.1" }}),	-- Bloodfen Burrow
+				-- #if BEFORE CATA
+				exploration(507),	-- Bluefen
+				-- #endif
 				exploration(496),	-- Brackenwall Village
-				exploration(499),	-- Darkmist Cavern
-				exploration(4046),	-- Direhorn Post
+				exploration(499, {["timeline"] = { "added 4.0.1" }}),	-- Darkmist Cavern
+				exploration(4046, {["timeline"] = { "added 4.0.1" }}),	-- Direhorn Post
 				exploration(518),	-- Dreadmurk Shore
-				exploration(4010),	-- Mudsprocket
-				exploration(504),	-- North Point Tower
-				exploration(503),	-- Sentry Point
-				exploration(403),	-- Shady Rest Inn
-				exploration(508),	-- Stonemaul Ruins
-				exploration(497),	-- Swamplight Manor
+				exploration(4010, {["timeline"] = { "added 4.0.1" }}),	-- Mudsprocket
+				exploration(504, {["timeline"] = { "added 4.0.1" }}),	-- North Point Tower
+				exploration(503, {["timeline"] = { "added 4.0.1" }}),	-- Sentry Point
+				exploration(403, {["timeline"] = { "added 4.0.1" }}),	-- Shady Rest Inn
+				exploration(508, {["timeline"] = { "added 4.0.1" }}),	-- Stonemaul Ruins
+				exploration(497, {["timeline"] = { "added 4.0.1" }}),	-- Swamplight Manor
 				exploration(509),	-- The Den of Flame
+				-- #if BEFORE CATA
+				exploration(2302),	-- The Quagmire
+				-- #endif
 				exploration(513),	-- Theramore Isle
 				exploration(502),	-- Witch Hill
 				exploration(511),	-- Wyrmbog
-				-- #else
-				exploration(2079, "200:195:660:21"),	-- Alcaz Island
-				exploration(512, {		-- Blackhoof Village
-					["coord"] = { 41.8, 13.7, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.0.1" },
-				}),
-				exploration(498, {		-- Bloodfen Burrow
-					["coord"] = { 32.6, 65.9, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.0.1" },
-				}),
-				exploration(507),	-- Bluefen
-				exploration(496, "280:270:230:0"),		-- Brackenwall Village
-				exploration(518),	-- Dreadmurk Shore
-				exploration(509, "255:250:257:313"),	-- The Den of Flame
-				exploration(2302, "400:255:239:189"),	-- The Quagmire
-				exploration(513, "230:205:534:224"),	-- Theramore Isle
-				exploration(502, "250:315:422:0"),		-- Witch Hill
-				exploration(511, "285:240:367:381"),	-- Wyrmbog
-				-- #endif
 				--[[
 				exploration(516),	-- Dustwallow Bay
 				exploration(2158),	-- Emberstrife's Den
