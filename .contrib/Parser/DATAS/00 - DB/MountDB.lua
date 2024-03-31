@@ -1517,6 +1517,7 @@ i(0, 381529);		-- Telix the Stormhorn
 i(0, 371571);		-- Dragon Isles Drake Model Test
 i(0, 372995);		-- Swift Spectral Drake
 i(0, 376909);		-- [PH] Blue Armored River Otter
+i(0, 374181);		-- [PH] Mammoth V2 Blue
 i(0, 387948);		-- [PH] Wind Proto-Drake
 i(0, 351404);		-- PH Mammoth V2 Lava
 i(0, 385767);		-- PH White Slyvern
@@ -1530,9 +1531,7 @@ i(192787, 351403);	-- [PH] Mammoth V2 Dark
 i(192789, 374172);	-- [PH] Mammoth V2 Gray
 i(192771, 352927);	-- [PH] Water Salamander Blue
 i(192773, 374093);	-- [PH] Water Salamander Orange
-i(192774, 374097);	-- [PH] Water Salamander Pink
 i(192748, 373913);	-- PH Moose Bull Brown
-i(192751, 373967);	-- PH Moose Bull Dark
 i(192781, 374140);	-- PH Lava Slug Blue
 i(192778, 350220);	-- PH Lava Slug Orange
 i(192780, 350220);	-- PH Lava Slug Orange [Item: [PH] Lava Snail Orange]
@@ -1740,13 +1739,15 @@ i(198822, 385260);	-- Bestowed Ohuna Spotter
 i(211862, 376898);	-- Bestowed Ottuk Vanguard
 i(192765, 374071);	-- Bestowed Sandskimmer
 i(192792, 351408);	-- Bestowed Thunderspine Packleader
-i(192788, 374181);	-- Bestowed Trawling Mammoth
+i(192788, 374172);	-- Bestowed Trawling Mammoth
 i(205206, 408648);	-- Calescent Shalewing
+i(192774, 374097);	-- Coralscale Salamanther
 i(0, 424539);		-- Draconic Gladiator's Drake
 i(213438, 434462);	-- Infinite Armoredon
 i(0, 437162);		-- Polly Roger
 i(0, 254812);		-- Royal Seafeather
 i(0, 300154);		-- Silver Tidestallion
+i(192751, 373967);	-- Stormtouched Bruffalon
 i(210142, 424607);	-- Taivan
 i(213439, 434470);	-- Vicious Dreamtalon [A]
 i(213440, 434477);	-- Vicious Dreamtalon [H]

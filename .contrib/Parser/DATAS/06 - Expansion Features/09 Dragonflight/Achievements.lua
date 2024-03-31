@@ -39,7 +39,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19479,	-- Wake Me Up
 			}},
 			["g"] = {
-				i(192751),	-- Stormtouched Bruffalon (MOUNT!) [Not In Game Yet...]
+				i(192751),	-- Stormtouched Bruffalon (MOUNT!)
 			},
 		})),
 		ach(17119, {	-- Deep Cuts From the Vault

@@ -677,6 +677,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(376909, {	-- [PH] Blue Armored River Otter (MOUNT!)
 				-- ["displayID"] = ,
 			}),
+			mount(374181, {	-- [PH] Mammoth V2 Blue (MOUNT!)
+				-- ["displayID"] = ,
+			}),
 			mount(387948, {	-- [PH] Wind Proto-Drake (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -720,13 +723,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(192773, {	-- [PH] Water Salamander Orange (MOUNT!)
 				-- ["displayID"] = ,
 			}),
-			i(192774, {	-- [PH] Water Salamander Pink (MOUNT!)
-				-- ["displayID"] = ,
-			}),
 			i(192748, {	-- PH Moose Bull Brown (MOUNT!)
-				-- ["displayID"] = ,
-			}),
-			i(192751, {	-- PH Moose Bull Dark (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 			i(192781, {	-- PH Lava Slug Blue (MOUNT!)
