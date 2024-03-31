@@ -597,7 +597,7 @@ i(0, 125527);	-- Windwool Pants
 i(0, 125524);	-- Windwool Shoulders
 i(0, 125525);	-- Windwool Tunic
 --- ITEM ---
-i(82430, 125540);	-- Contender's Satin Amice
+i(86361, 125540);	-- Contender's Satin Amice
 i(86367, 125546);	-- Contender's Satin Belt
 i(86360, 125539);	-- Contender's Satin Cowl
 i(86365, 125544);	-- Contender's Satin Cuffs
@@ -610,7 +610,7 @@ i(86359, 125538);	-- Contender's Silk Belt
 i(86352, 125531);	-- Contender's Silk Cowl
 i(86357, 125536);	-- Contender's Silk Cuffs
 i(86358, 125537);	-- Contender's Silk Footwraps
-i(82424, 125534);	-- Contender's Silk Handwraps
+i(86355, 125534);	-- Contender's Silk Handwraps
 i(86356, 125535);	-- Contender's Silk Pants
 i(86354, 125533);	-- Contender's Silk Raiment
 i(86371, 125550);	-- Gloves of Creation
