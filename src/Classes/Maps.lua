@@ -269,7 +269,6 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Exploration[t.explorationID] then return 1; end
-		if app.Settings.AccountWide.Exploration and ATTAccountWideData.Exploration[t.explorationID] then return 2; end
 		
 		local coords = t.coords;
 		if coords and #coords > 0 then
@@ -278,12 +277,13 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 			if explored then
 				for _,areaID in ipairs(explored) do
 					if areaID == t.explorationID then
-						app.SetCollected(t, "Exploration", areaID, true);
+						app.SetCollected(nil, "Exploration", areaID, true);
 						return 1;
 					end
 				end
 			end
 		end
+		if app.Settings.AccountWide.Exploration and ATTAccountWideData.Exploration[t.explorationID] then return 2; end
 	end,
 	["coords"] = function(t)
 		return ExplorationAreaPositionDB[t.explorationID];
@@ -379,12 +379,12 @@ local OnClickForExplorationHeader = function(row, button)
 		return true;
 	end
 end
-local SimplifyExplorationData = function()
+local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	while InCombatLockdown() do coroutine.yield(); end
 	app.print("Simplifying Exploration Data...");
 	local allMapData = {};
 	local explorationDB = {};
-	for areaID,coords in pairs(ExplorationAreaPositionDB) do
+	for areaID,coords in pairs(rawExplorationAreaPositionDB) do
 		for i,coord in ipairs(coords) do
 			local mapID = coord[3];
 			if mapID then
@@ -462,17 +462,16 @@ local SimplifyExplorationData = function()
 	AllTheThingsAD.ExplorationAreaPositionDB = explorationAreaPositionDB;
 	ExplorationAreaPositionDB = explorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
-	collectgarbage();
 end
-local function HarvestExploration()
+local function HarvestExploration(simplify)
 	app.print("Harvesting Exploration...");
-	wipe(ExplorationAreaPositionDB);
 	local grid, Granularity = {}, 200;
 	for i=0,Granularity,1 do
 		for j=0,Granularity,1 do
 			tinsert(grid, CreateVector2D(i / Granularity, j / Granularity));
 		end
 	end
+	local rawExplorationAreaPositionDB = {};
 	for mapID,objects in pairs(app.SearchForFieldContainer("mapID")) do
 		if C_Map_GetMapArtID(mapID) then
 			app.print("Harvesting Map " .. mapID .. "...");
@@ -500,9 +499,9 @@ local function HarvestExploration()
 					
 					-- Mark as collected and record all the coordinates.
 					app.SetCollected(nil, "Exploration", areaID, true);
-					local positions = ExplorationAreaPositionDB[areaID];
+					local positions = rawExplorationAreaPositionDB[areaID];
 					if not positions then
-						ExplorationAreaPositionDB[areaID] = coords;
+						rawExplorationAreaPositionDB[areaID] = coords;
 					else
 						for i,coord in ipairs(coords) do
 							tinsert(positions, coord);
@@ -585,10 +584,13 @@ local function HarvestExploration()
 	end
 	AllTheThingsAD.ExplorationDB = ExplorationDB;
 	app.print("Exploration Harvest complete. You can now Ctrl+Right Click on an Exploration header to copy its content.");
-	SimplifyExplorationData();
+	if simplify then SimplifyExplorationData(rawExplorationAreaPositionDB); end
 end
-app.HarvestExploration = function()
-	app:StartATTCoroutine("Harvest Exploration", HarvestExploration);
+app.HarvestExploration = function(simplify)
+	app:StartATTCoroutine("Harvest Exploration", function()
+		HarvestExploration(simplify);
+		collectgarbage();
+	end);
 end
 
 -- Maps
