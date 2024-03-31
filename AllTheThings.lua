@@ -1075,7 +1075,6 @@ app.IsComplete = function(o)
 	if o.trackable then return o.saved; end
 	return true;
 end
-app.MaximumItemInfoRetries = 40;
 local function GetUnobtainableTexture(group)
 	if not group then return; end
 	if type(group) ~= "table" then

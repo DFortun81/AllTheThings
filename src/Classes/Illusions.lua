@@ -2,6 +2,7 @@ do
 -- CRIEVE NOTE: This file is currently identical in both Retail and Classic.
 -- DO NOT TOUCH IT.
 local app = select(2, ...);
+local L = app.L
 
 -- Global Variables
 local GetItemInfo =
@@ -9,6 +10,25 @@ local GetItemInfo =
 
 -- Illusion Class
 local AccountWideIllusionData = {};
+
+local function GetIllusionItemInfo(t, field)
+	local name, link = GetItemInfo(t.itemID);
+	if link then
+		t.name = name;
+		t.link = link;
+		return t[field];
+	end
+end
+local function GetDefaultItemInfo(t, field)
+	local id = t.itemID
+	local itemName = L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
+		or "Item #" .. tostring(id) .. "*";
+	t.title = L.FAILED_ITEM_INFO;
+	t.link = "|cffff80ff[" .. itemName .. "]|r";
+	t.name = itemName;
+	return t[field]
+end
+
 local illusionFields = {
 	["filterID"] = function(t)
 		return 103;
@@ -59,21 +79,10 @@ end
 app.CreateIllusion = app.CreateClass("Illusion", "illusionID", illusionFields,
 "WithItem", {
 	link = function(t)
-		local name, link = GetItemInfo(t.itemID);
-		if link then
-			t.name = name;
-			t.link = link;
-			return link;
-		end
+		return app.TryGetField(t, "link", GetIllusionItemInfo, GetDefaultItemInfo)
 	end,
 	name = function(t)
-		local name, link = GetItemInfo(t.itemID);
-		if link then
-			t.name = name;
-			t.link = link;
-			return name;
-		end
-		return RETRIEVING_DATA;
+		return app.TryGetField(t, "name", GetIllusionItemInfo, GetDefaultItemInfo) or RETRIEVING_DATA
 	end,
 	text = function(t)
 		return "|cffff80ff[" .. t.name .. "]|r";

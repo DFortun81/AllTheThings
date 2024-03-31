@@ -267,6 +267,21 @@ end
 app.BaseObjectFields = BaseObjectFields;
 app.BaseClass = BaseObjectFields(nil, "BaseClass");
 
+local MaximumInfoRetries = 40;
+app.MaximumItemInfoRetries = MaximumInfoRetries
+app.TryGetField = function(t, field, fieldFunc, giveUpFunc)
+	local fieldVal = fieldFunc(t, field)
+	-- app.PrintDebug("TGF",t.hash,field,fieldVal)
+	if fieldVal then return fieldVal end
+	local retries = t.retries or 0
+	retries = retries + 1
+	t.retries = retries
+	-- app.PrintDebug("TGF:R",retries)
+	if retries > MaximumInfoRetries then
+		return giveUpFunc(t, field)
+	end
+end
+
 -- Create a dictionary of classes by their classKey, for reference in generic object contructors.
 local classesByKey = setmetatable({}, {
 	__newindex = function(t, key, value)

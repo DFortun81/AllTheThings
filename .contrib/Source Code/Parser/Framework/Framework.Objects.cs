@@ -1303,7 +1303,7 @@ end");
 
             public static void ExportAutoItemSources(string directory)
             {
-                var sourcesDir = Path.Combine(directory, "00 - Item Database", "Source IDs");
+                var sourcesDir = Path.Combine(directory, "00 - Item DB", "Source IDs");
                 if (Directory.Exists(sourcesDir))
                 {
                     var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
