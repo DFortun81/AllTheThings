@@ -474,7 +474,7 @@ local function HarvestExploration(simplify)
 	local rawExplorationAreaPositionDB = {};
 	for mapID,objects in pairs(app.SearchForFieldContainer("mapID")) do
 		if C_Map_GetMapArtID(mapID) then
-			app.print("Harvesting Map " .. mapID .. "...");
+			--app.print("Harvesting Map " .. mapID .. "...");
 			-- Find all points on the grid that have explored an area and make note of them.
 			local any, hits = false, setmetatable({}, AreaExplorationMeta);
 			for _,pos in ipairs(grid) do
