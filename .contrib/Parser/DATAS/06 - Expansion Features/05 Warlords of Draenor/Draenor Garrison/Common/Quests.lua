@@ -1694,12 +1694,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(36951, {	-- Arakkoa Exodus
+				["description"] = "If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",
 				["sourceQuests"] = { 35554 },	-- News from Spires of Arak
 				["isBreadcrumb"] = true,
 				["coords"] = { { 49.3, 41.3, FROSTWALL }, { 42.8, 45.2, LUNARFALL } },
 				["providers"] = {
-					{ "o", 232416 },	-- Bulletin Board
+					{ "o", 232397 },	-- Bulletin Board
+					{ "o", 232398 },	-- Bulletin Board
 					{ "o", 232400 },	-- Bulletin Board
+					{ "o", 232416 },	-- Command Board lvl 1
+					{ "o", 233291 },	-- Command Board lvl 2
+					{ "o", 237022 },	-- Command Board lvl 3
 				},
 			}),
 			q(36624, {	-- Ashran Appearance
@@ -2756,6 +2761,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(36953, {	-- It's a Matter of Strategy
+				["description"] = "If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["providers"] = {
@@ -3036,12 +3042,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["cost"] = { { "i", 111557, 50 } },	-- 50x Sumptuous Fur
 			}),
 			q(34674, {	-- Taking the Fight to Nagrand
-				["provider"] = { "o", 232397 },	-- Bulletin Board
+				["description"] = "If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",
+				["providers"] = {
+					{ "o", 232397 },	-- Bulletin Board
+					{ "o", 232398 },	-- Bulletin Board
+					{ "o", 232400 },	-- Bulletin Board
+				},
 				["coord"] = { 42.8, 45.2, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(36952, {	-- Taking the Fight to Nagrand
+				["description"] = "If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["providers"] = {
@@ -3076,7 +3088,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(34676, {	-- The Critical Path
-				["provider"] = { "o", 232397 },	-- Bulletin Board
+				["description"] = "If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",
+				["providers"] = {
+					{ "o", 232397 },	-- Bulletin Board
+					{ "o", 232398 },	-- Bulletin Board
+					{ "o", 232400 },	-- Bulletin Board
+				},
 				["coord"] = { 42.8, 45.2, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -3104,6 +3121,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(35557, {	-- The Secrets of Gorgrond
+				["description"] = "If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["providers"] = {
@@ -3160,7 +3178,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME, -- There is no Bulletin Board anymore, only heroes calls
 				["isBreadcrumb"] = true,
-				["provider"] = { "o", 232397 },	-- Bulletin Board
+				["providers"] = {
+					{ "o", 232397 },	-- Bulletin Board
+					{ "o", 232398 },	-- Bulletin Board
+					{ "o", 232400 },	-- Bulletin Board
+				},
 			}),
 			q(39033, {	-- The Time to Strike
 				["provider"] = { "n", 94870 },	-- Seer Kazal
