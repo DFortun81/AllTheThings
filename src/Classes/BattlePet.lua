@@ -34,7 +34,7 @@ do
 				_t.petTypeID = petType;
 				_t.lore = tooltipDescription;
 				_t.displayID = creatureDisplayID;
-				if not t.itemID then
+				if not t.itemID or not t.link then
 					_t.text = "|cff0070dd"..speciesName.."|r";
 				end
 			else
