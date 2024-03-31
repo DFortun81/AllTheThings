@@ -27,6 +27,9 @@ root(ROOTS.Craftables, {
 							i(90561, {	-- Eternium Rose
 								["description"] = "Can be turned in in Booty Bay for a bag of gold!",
 							}),
+							i(97985, {	-- Dusty Old Robot (QI!)
+								["description"] = "Trash Item - The quest provided by this item was removed in 7.1.5.",
+							}),
 						},
 					}),
 				},
