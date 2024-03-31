@@ -1788,3 +1788,11 @@
 437162@@@Polly Roger
 439138@@@Voyaging Wilderling
 440444@@@Zovaal's Soul Eater
+10.2.6.53989
+351408@@@Bestowed Thunderspine Packleader
+373967@@@Stormtouched Bruffalon
+374071@@@Bestowed Sandskimmer
+374097@@@Coralscale Salamanther
+374172@@@Bestowed Trawling Mammoth
+376898@@@Bestowed Ottuk Vanguard
+385260@@@Bestowed Ohuna Spotter
