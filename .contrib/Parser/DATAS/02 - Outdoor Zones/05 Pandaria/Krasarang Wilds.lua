@@ -1094,6 +1094,11 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68687 },	-- Vereesa Windrunner
 									["coord"] = { 34.5, 48.7, 501 },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										objective(1, {	-- 0/5 Sunreaver Dragonhawk subdued
+											["provider"] = { "i", 93159 },	-- Enchanted Sleeping Dust (QI!)
+										}),
+									},
 								}),
 								q(32116, {	-- Priorities, People!
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
