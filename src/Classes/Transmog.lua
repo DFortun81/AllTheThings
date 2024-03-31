@@ -33,7 +33,6 @@ local ipairs, select, tinsert, pairs, rawget
 	= ipairs, select, tinsert, pairs, rawget;
 local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
 	= GetItemInfoInstant, C_Item.IsDressableItemByID, GetItemInfo, C_Transmog.GetSlotForInventoryType
-local Callback = app.CallbackHandlers.Callback;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local L, contains, containsAny, SearchForField, SearchForFieldContainer
 	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer;
@@ -564,7 +563,17 @@ end);
 app.SaveHarvestSource = function(data)
 	local sourceID, itemID = data.sourceID, data.modItemID;
 	if sourceID and itemID then
-		-- app.PrintDebug("Harvest:sourceID",itemID,"=>",sourceID)
+		-- artifacts do a special modItemID...
+		if not data.artifactID then
+			local i, m, b = app.GetItemIDAndModID(itemID)
+			-- we either want to save using modID OR bonusID, but not both
+			if b and b > 0 then
+				itemID = app.GetGroupItemIDWithModID(nil, i, nil, b)
+			elseif m and m > 0 then
+				itemID = app.GetGroupItemIDWithModID(nil, i, m)
+			end
+		end
+		app.PrintDebug("Harvest",sourceID,"<=",itemID,app:SearchLink(data),data.link or data.text or data.hash)
 		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
 end

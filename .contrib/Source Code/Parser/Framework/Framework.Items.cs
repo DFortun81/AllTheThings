@@ -1083,6 +1083,17 @@ namespace ATT
                 if (DoSpammyDebugLogging && !data.ContainsKey("sourceID"))
                     LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
 
+                // don't "guess" any SourceID's in Retail. This makes it more clear when the harvested data is actually accurate or not
+                if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                {
+                    // the base itemID has a Source, but we didn't find one for this sourceIDKey...
+                    if (SOURCES_PER_ITEMID.ContainsKey((long)sourceIDKey) && !data.ContainsKey("_unsorted"))
+                    {
+                        LogWarn($"Failed to match SourceID for Item {sourceIDKey}", data);
+                    }
+                    return;
+                }
+
                 // Find the best match sourceID for this item. (this is gonna be slow!)
                 if ((long)Math.Floor(sourceIDKey) is long itemID
                     && itemID == (long)sourceIDKey  // This is only applicable in cases where no modID or bonusID are present.
@@ -1094,7 +1105,7 @@ namespace ATT
                         // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
                         // quite spammmmmy, only enable if needed
 #pragma warning disable CS0162 // Unreachable code detected
-                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL) ==> s:{sourceID}");
+                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL-SINGLE) ==> s:{sourceID}");
 #pragma warning restore CS0162 // Unreachable code detected
                         data["sourceID"] = sourceID;
                         return;
@@ -1113,7 +1124,7 @@ namespace ATT
                         // If there's only one unique sourceID, then assign it. Probably some dumb missing modID or something.
                         // quite spammmmmy, only enable if needed
 #pragma warning disable CS0162 // Unreachable code detected
-                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL) ==> s:{sourceID}");
+                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL-MATCHING) ==> s:{sourceID}");
 #pragma warning restore CS0162 // Unreachable code detected
                         data["sourceID"] = sourceID;
                         return;
@@ -1125,9 +1136,9 @@ namespace ATT
                     sourceID = sources[keys.First()];
 
                     // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
-                    // quite spammmmmy, only enable if needed
+                    // Definitely report these assignments since they're likely wrong and require harvesting to fix
 #pragma warning disable CS0162 // Unreachable code detected
-                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL) ==> s:{sourceID}");
+                    if (DoSpammyDebugLogging) LogWarn($"Item:{sourceIDKey} (WATERFALL-GUESS) ==> s:{sourceID}",data);
 #pragma warning restore CS0162 // Unreachable code detected
                     data["sourceID"] = sourceID;
                 }

@@ -2784,7 +2784,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			local bonusID = root.bonusID
 			if bonusID ~= 3524 and bonusID or 0 > 0 then
 				root.up = nil
-		end
+			end
 		end
 		-- app.PrintDebug("Root",root.key,root[root.key],root.modItemID,root.up,root._up);
 		-- app.PrintTable(root)
@@ -12584,24 +12584,28 @@ end;
 customWindowUpdates.list = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
-			if data._VerifyGroupSourceID then return; end
+			if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
+			if data._VerifyGroupSourceID > 5 then return true end
+			data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1
 			local link, source = data.link or data.silentLink, data.sourceID;
 			if not link then return; end
+			if not GetItemInfo(link) then
+				-- app.PrintDebug("No Item Data Cached",link,data._VerifyGroupSourceID)
+				return;
+			end
 			-- If it doesn't, the source ID will need to be harvested.
-			local sourceID, success = app.GetSourceID(link);
-			-- app.PrintDebug("SourceIDs",link,data.modItemID,source,sourceID,success)
-			data._VerifyGroupSourceID = true;
+			local sourceID = app.GetSourceID(link);
+			-- app.PrintDebug("SourceIDs",data.modItemID,source,sourceID,success,link,app.GetSourceID(link))
 			if sourceID and sourceID > 0 then
 				-- only save the source if it is different than what we already have, or being forced
 				if not source or source < 1 or source ~= sourceID then
-					app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
+					-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
 					-- print(GetItemInfo(text))
 					data.sourceID = sourceID;
 					app.SaveHarvestSource(data);
 				end
-			elseif success then
-				-- app.print("Success without a SourceID", link);
 			end
+			return true
 		end
 		self.RemoveSelf = function(o)
 			local parent = rawget(o, "parent");
@@ -12692,7 +12696,7 @@ customWindowUpdates.list = function(self, force, got)
 			local imin, imax = 0, 999999
 			-- convert the list min/max into cache-based min/max for cache lists
 			if self.Limit ~= 1000 then
-				imax = self.Limit;
+				imax = self.Limit + 1;
 				self.Limit = 999999
 			end
 			if min ~= 0 then
@@ -12700,18 +12704,23 @@ customWindowUpdates.list = function(self, force, got)
 				min = 0;
 			end
 			dataType = cacheKey;
-			for _,groups in pairs(app.GetRawFieldContainer(cacheKey) or app.GetRawFieldContainer(cacheKeyID) or app.EmptyTable) do
-				for _,o in ipairs(groups) do
+			-- collect valid id values
+			for id,groups in pairs(app.GetRawFieldContainer(cacheKey) or app.GetRawFieldContainer(cacheKeyID) or app.EmptyTable) do
+				for index,o in ipairs(groups) do
 					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]);
-					if imin <= cacheID and cacheID <= imax and not added[cacheID] then
+					if imin <= cacheID and cacheID <= imax then
 						added[cacheID] = true;
-						tinsert(CacheFields, cacheID);
+						-- app.PrintDebug("CacheID",cacheID,"from cache",id,"@",index,#groups)
+						-- app.PrintDebug(o.modItemID,o[dataType],o[cacheKeyID])
+					-- else app.PrintDebug("Ignored Data for Harvest due to Matching CacheID",cacheID,app:SearchLink(o))
 					end
 				end
 			end
-			-- app.PrintDebug("CacheFields",#CacheFields)
+			for id,_ in pairs(added) do
+				CacheFields[#CacheFields + 1] = id
+			end
 			app.Sort(CacheFields, app.SortDefaults.Values);
-			-- app.PrintDebug("CacheFields:Sorted")
+			app.PrintDebug(#CacheFields,"CacheFields:Sorted",CacheFields[1],"->",CacheFields[#CacheFields])
 		end
 
 		-- add the ID
@@ -12795,7 +12804,10 @@ customWindowUpdates.list = function(self, force, got)
 			text = harvesting and function(o, key)
 				local text = o.text;
 				if not IsRetrieving(text) then
-					self.VerifyGroupSourceID(o);
+					DGR(o);
+					if not self.VerifyGroupSourceID(o) then
+						return "Harvesting..."
+					end
 					local og = self.RemoveSelf(o);
 					-- app.PrintDebug(#og,"-",text)
 					if #og <= 0 then
@@ -12803,14 +12815,16 @@ customWindowUpdates.list = function(self, force, got)
 					else
 						o.visible = true;
 					end
-					DGR(o);
 					return text;
 				end
 			end
 			or function(o, key)
 				local text, key = o.text, o.key;
 				if not IsRetrieving(text) then
-					self.VerifyGroupSourceID(o);
+					if not self.VerifyGroupSourceID(o) then
+						DGR(o);
+						return "Harvesting..."
+					end
 					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
 				end
 			end,

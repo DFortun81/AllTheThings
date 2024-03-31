@@ -910,6 +910,32 @@ settings.CreateInformationType("ExclusionFilters", {
 		end
 	end
 })
+settings.CreateInformationType("LinkSourceID", {
+	priority = 99999,
+	text = "DEBUG: Link SourceID",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, data, tooltipInfo)
+		local link, source = data.link or data.silentLink, data.sourceID;
+		if not link then return; end
+		-- If it doesn't, the source ID will need to be harvested.
+		local sourceID, success = app.GetSourceID(link);
+		-- app.PrintDebug("SourceIDs",data.modItemID,source,sourceID,success,link)
+		data._VerifyGroupSourceID = true;
+		if sourceID and sourceID > 0 then
+			-- only save the source if it is different than what we already have, or being forced
+			if not source or source < 1 or source ~= sourceID then
+				-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
+				-- print(GetItemInfo(text))
+				data.sourceID = sourceID;
+				app.SaveHarvestSource(data);
+			end
+		end
+		tinsert(tooltipInfo, {
+			left = Colorize("Link Source", success and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError),
+			right = "Sourced:"..(source or "?").." / Checked:"..(sourceID or "?")
+		});
+	end
+})
 
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
