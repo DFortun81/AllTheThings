@@ -53,6 +53,12 @@ local DifficultyMap = {
 	[176] = { 4 },
 	[198] = { 3 },
 };
+local blacklistedDifficulties = {
+	[3] = true,
+	[4] = true,
+	[5] = true,
+	[6] = true,
+};
 
 -- Class Helpers
 if not GetDifficultyInfo(3) then
@@ -169,7 +175,31 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 		end
 	end,
 	["sourceText"] = function(t)
-		return t.title;
+		local difficulties = t.difficulties;
+		if difficulties then
+			local dict,count = {},0;
+			for i,difficultyID in ipairs(difficulties) do
+				if not blacklistedDifficulties[difficultyID] then
+					dict[difficultyID] = 1;
+					count = count + 1;
+				end
+			end
+			local title = GetDifficultyName(difficulties[1]);
+			if count > 0 then
+				for i=2,#difficulties do
+					local difficultyID = difficulties[i];
+					if not blacklistedDifficulties[difficultyID] then
+						title = title.." / "..GetDifficultyName(difficultyID);
+					end
+				end
+			else
+				-- Blacklisting didn't simplify it.
+				for i=2,#difficulties do
+					title = title.." / "..GetDifficultyName(difficulties[i]);
+				end
+			end
+			return title;
+		end
 	end,
 }, (function(t) return t.difficulties; end));
 
