@@ -6047,6 +6047,7 @@ _.ObjectNames = {
 	[421718] = "Dragon Pepe",
 	[421736] = "Explorer Pepe",
 	[421740] = "Tuskarr Pepe",
+	[424098] = "Golden Egg Heirloom",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",
@@ -10750,6 +10751,7 @@ _.ObjectModels = {
 	[421718] = 5155018,
 	[421736] = 5155017,
 	[421740] = 5155016,
+	[424098] = 5456991,
 }
 
 -- Supported Locales

@@ -645,7 +645,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
-				i(210558),	-- Horn of Honking (QI!)
+				objective(1, {	-- 0/10 Ducks Scared
+					["provider"] = { "i", 210558 },	-- Horn of Honking (QI!)
+					["crs"] = 217725,	-- Furious Duck
+				}),
 			},
 		}),
 		q(79575, {	-- What the Duck? (H)
@@ -655,17 +658,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
-				i(216487),	-- Horn of Honking (QI!)
+				objective(1, {	-- 0/10 Ducks Scared
+					["provider"] = { "i", 216487 },	-- Horn of Honking (QI!)
+					["crs"] = 217725,	-- Furious Duck
+				}),
 			},
 		}),
-		q(79323, {	-- A Fowl Concoctio (A)
+		q(79323, {	-- A Fowl Concoction (A)
 			["qg"] = 211646,	-- Zinnia Brooks
 			["sourceQuest"] = 79322,	-- What the Duck? (A)
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
-		q(79576, {	-- A Fowl Concoctio (H)
+		q(79576, {	-- A Fowl Concoction (H)
 			["qg"] = 217125,	-- Sylnaria Fareflame
 			["sourceQuest"] = 79575,	-- What the Duck? (H)
 			["coord"] = { 52.6, 41.2, DUROTAR },
@@ -674,7 +680,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		q(79330, {	-- Duck Tales (A)
 			["qg"] = 216129,	-- Emmery Fiske
-			["sourceQuest"] = 79323,	-- A Fowl Concoctio (A)
+			["sourceQuest"] = 79323,	-- A Fowl Concoction (A)
 			["coord"] = { 42.0, 64.9, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -684,7 +690,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		q(79577, {	-- Duck Tales (H)
 			["qg"] = 217147,	-- Tethris Dewgazer
-			["sourceQuest"] = 79576,	-- A Fowl Concoctio (H)
+			["sourceQuest"] = 79576,	-- A Fowl Concoction (H)
 			["coord"] = { 52.6, 41.1, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -751,7 +757,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["questID"] = 80089,
 				}),
 				i(216488),	-- Duck Potion (QI!)
-				o(420195, {	-- Golden Egg Heirloom
+				o(424098, {	-- Golden Egg Heirloom
 					i(212643),	-- Golden Egg Heirloom (QI!)
 				}),
 			},
