@@ -10,8 +10,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			exploration(7780),	-- Black Rook Hold
 			exploration(8364),	-- Bladesong's Retreat
 			exploration(7642),	-- Bradensbrook
+			exploration(8320),	-- Darkfollow's Spire
 			exploration(7702),	-- Dreadroot
 			exploration(8332),	-- Emerald Bay
+			exploration(8323),	-- Field of Dreamers
+			exploration(7667),	-- Garden of the Moon
 			exploration(8368),	-- Gloaming Reef
 			exploration(8365),	-- Gloomscale Coast
 			exploration(8278),	-- Grizzleweald
@@ -36,6 +39,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			exploration(8304),	-- Starstalker's Point
 			exploration(7559),	-- Steelclaw Vale
 			exploration(8333),	-- Tangled Cleft
+			exploration(7677),	-- Temple of Elune
+			exploration(7572),	-- Thas'talah
+			exploration(7913),	-- The Crescent Vale
 			exploration(7846),	-- The Dreamgrove
 			exploration(8363),	-- The Wildwood
 			exploration(7692),	-- Whispering Bluffs

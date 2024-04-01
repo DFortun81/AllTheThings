@@ -96,6 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(123),	-- Bal'lal Ruins
 				exploration(127),	-- Balia'mah Ruins
+				exploration(5317),	-- Bambala
 				exploration(5320),	-- Fort Livingston
 				exploration(117),	-- Grom'gol Base Camp
 				exploration(125),	-- Kal'ai Ruins

@@ -98,43 +98,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(1099),	-- Camp Mojache
-				exploration(5036),	-- Darkmist Ruins
+				exploration(5036, {["timeline"] = { "added 4.0.1" }}),	-- Darkmist Ruins
 				exploration(2577),	-- Dire Maul
 				exploration(1111),	-- Dream Bough
-				exploration(5072),	-- Feathermoon Stronghold
+				exploration(5072, {["timeline"] = { "added 4.0.1" }}),	-- Feathermoon Stronghold
+				exploration(1105),	-- Feral Scar Vale
 				exploration(1106),	-- Frayfeather Highlands
 				exploration(1103),	-- Gordunni Outpost
 				exploration(1100),	-- Grimtotem Compound
+				-- #if BEFORE CATA
+				exploration(1121),	-- Isle of Dread
+				-- #endif
 				exploration(1137),	-- Lower Wilds
-				exploration(1116),	-- Ruins of Feathermoon
+				-- #if BEFORE CATA
+				exploration(1113),	-- Oneiros
+				-- #endif
+				exploration(1116, {["timeline"] = { "added 4.0.1" }}),	-- Ruins of Feathermoon
 				exploration(2522),	-- Ruins of Isildien
 				exploration(1114),	-- Ruins of Ravenwind
+				-- #if BEFORE CATA
+				exploration(1120),	-- Sardor Isle
+				-- #endif
 				exploration(1108),	-- The Forgotten Coast
 				exploration(1119),	-- The Twin Colossals
 				exploration(1101),	-- The Writhing Deep
-				exploration(2520),	-- Woodpaw Den
+				exploration(2520, {["timeline"] = { "added 4.0.1" }}),	-- Woodpaw Den
 				exploration(2519),	-- Woodpaw Hills
-				-- #else
-				exploration(1099, "155:160:689:233"),	-- Camp Mojache
-				exploration(2577, "230:195:454:201"),	-- Dire Maul
-				exploration(1111, "150:125:454:0"),		-- Dream Bough
-				exploration(1105, "115:115:486:329"),	-- Feral Scar Vale
-				exploration(1106, "110:170:478:386"),	-- Frayfeather Highlands
-				exploration(1103, "140:165:690:141"),	-- Gordunni Outpost
-				exploration(1100, "120:195:623:167"),	-- Grimtotem Compound
-				exploration(1121, "215:293:192:375"),	-- Isle of Dread
-				exploration(1137, "225:180:751:198"),	-- Lower Wilds
-				exploration(1113, "110:110:493:70"),	-- Oneiros
-				exploration(1114, "190:155:305:0"),		-- Ruins of Ravenwind
-				exploration(2522, "190:250:540:320"),	-- Ruins of Isildien
-				exploration(1120, "180:180:208:234"),	-- Sardor Isle
-				exploration(1108, "145:320:404:256"),	-- The Forgotten Coast
-				exploration(1119, "285:245:319:75"),	-- The Twin Colossals
-				exploration(1101, "240:220:618:298"),	-- The Writhing Deep
-				exploration(2519),	-- Woodpaw Hills
-				-- #endif
 				--[[
 				exploration(1109),	-- East Pillar
 				exploration(1136),	-- High Wilderness

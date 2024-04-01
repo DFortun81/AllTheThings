@@ -38,6 +38,7 @@ root(ROOTS.Zones, {
 				exploration(7728),	-- The Haglands
 				exploration(7769),	-- The Witchwood
 				exploration(7810),	-- Torok's Bluff
+				exploration(7877),	-- Trueshot Lodge [TODO: Is this Hunter only?]
 				exploration(7724),	-- Whitewater Wash
 				exploration(7757),	-- Windripper Peak
 			}),
