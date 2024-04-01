@@ -671,12 +671,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216881),	-- Duck Disguiser (TOY!)
-				i(216890),	-- Black Duck Disguise
-				i(216897),	-- Brown Duck Disguise
-				i(216898),	-- Mallard Duck Disguise
-				i(216900),	-- Pink Duck Disguise
-				i(216901),	-- White Duck Disguise
-				i(216902),	-- Yellow Duck Disguise
+				i(216890, {	-- Black Duck Disguise
+					["questID"] = 80083,
+				}),
+				i(216897, {	-- Brown Duck Disguise
+					["questID"] = 80084,
+				}),
+				i(216898, {	-- Mallard Duck Disguise
+					["questID"] = 80085,
+				}),
+				i(216900, {	-- Pink Duck Disguise
+					["questID"] = 80087,
+				}),
+				i(216901, {	-- White Duck Disguise
+					["questID"] = 80088,
+				}),
+				i(216902, {	-- Yellow Duck Disguise
+					["questID"] = 80089,
+				}),
 				i(212608),	-- Duck Potion (QI!)
 				i(212643),	-- Golden Egg Heirloom (QI!)
 			},
@@ -689,12 +701,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216881),	-- Duck Disguiser (TOY!)
-				i(216890),	-- Black Duck Disguise
-				i(216897),	-- Brown Duck Disguise
-				i(216898),	-- Mallard Duck Disguise
-				i(216900),	-- Pink Duck Disguise
-				i(216901),	-- White Duck Disguise
-				i(216902),	-- Yellow Duck Disguise
+				i(216890, {	-- Black Duck Disguise
+					["questID"] = 80083,
+				}),
+				i(216897, {	-- Brown Duck Disguise
+					["questID"] = 80084,
+				}),
+				i(216898, {	-- Mallard Duck Disguise
+					["questID"] = 80085,
+				}),
+				i(216900, {	-- Pink Duck Disguise
+					["questID"] = 80087,
+				}),
+				i(216901, {	-- White Duck Disguise
+					["questID"] = 80088,
+				}),
+				i(216902, {	-- Yellow Duck Disguise
+					["questID"] = 80089,
+				}),
 				i(216488),	-- Duck Potion (QI!)
 				i(216489),	-- Golden Egg Heirloom (QI!)
 			},
@@ -723,6 +747,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
+					--q(TODO, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+					--	["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+					--	["collectible"] = false,
+					--	["isDaily"] = true,
+					--}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
@@ -742,6 +771,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
+					--q(TODO, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+					--	["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+					--	["collectible"] = false,
+					--	["isDaily"] = true,
+					--}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
@@ -793,12 +827,3 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #endif
 })));
-root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {
-	-- Will we connect these to the items? Currently you can get only one per character, but the questID is not account-wide.
-	q(80083),	-- Black Duck Disguise
-	q(80084),	-- Brown Duck Disguise
-	q(80085),	-- Mallard Duck Disguise
-	q(80087),	-- Pink Duck Disguise
-	q(80088),	-- White Duck Disguise
-	q(80089),	-- Yellow Duck Disguise
-}));
