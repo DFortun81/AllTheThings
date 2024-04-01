@@ -795,9 +795,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 })));
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {
 	-- Will we connect these to the items? Currently you can get only one per character, but the questID is not account-wide.
-	--q(),	-- Black Duck Disguise
-	--q(),	-- Brown Duck Disguise
-	--q(),	-- Mallard Duck Disguise
+	q(80083),	-- Black Duck Disguise
+	q(80084),	-- Brown Duck Disguise
+	q(80085),	-- Mallard Duck Disguise
 	q(80087),	-- Pink Duck Disguise
 	q(80088),	-- White Duck Disguise
 	q(80089),	-- Yellow Duck Disguise
