@@ -68,6 +68,7 @@ root(ROOTS.Zones, {
 					exploration(5303),	-- Temple of Earth
 					exploration(5295),	-- The Pale Roost
 					exploration(5357),	-- The Quaking Fields
+					exploration(5296),	-- Therazane's Throne
 					exploration(5354),	-- Twilight Overlook
 					exploration(5328),	-- Upper Silvermarsh
 				}),

@@ -319,6 +319,9 @@ root(ROOTS.Zones, {
 					exploration(3697),	-- The Bone Wastes
 					exploration(3890),	-- Tomb of Lights
 					exploration(3675),	-- Tuurem
+					-- #if AFTER CATA
+					exploration(3976),	-- Veil Ala'rak
+					-- #endif
 					exploration(3686),	-- Veil Lithic
 					exploration(3689),	-- Veil Reskk
 					--exploration(3889),	-- Veil Rhaze (Wrath Classic: Can't be collected)

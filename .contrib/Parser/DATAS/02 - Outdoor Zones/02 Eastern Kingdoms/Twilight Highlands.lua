@@ -260,9 +260,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5595),	-- Obsidian Forest
 				exploration(5439),	-- Ruins of Drakgor
 				exploration(5479),	-- Slithering Cove
+				exploration(5609),	-- The Black Breach
 				exploration(5489),	-- The Boneyard
 				exploration(5139),	-- The Gullet
 				exploration(5137),	-- The Krazworks
+				exploration(5438),	-- The Maw of Madness
 				exploration(5641),	-- The Twilight Breach
 				exploration(5473),	-- The Twilight Citadel
 				exploration(5142),	-- Thundermar
