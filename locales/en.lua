@@ -358,7 +358,6 @@ for key, value in pairs({
 				["TITLE_SOLO"] = "Solo ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
-
 	["PRECISION_SLIDER"] = "Precision Level";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
@@ -454,7 +453,6 @@ for key, value in pairs({
 	["MINI_LIST_SLIDER_LABEL"] = "Mini Lists Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 	["ADDITIONAL_LABEL"] = "Additional Information";
-
 
 	-- Features tab
 	["MINIMAP_LABEL"] = "Minimap Button";
@@ -581,6 +579,10 @@ for key, value in pairs({
 	["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
 	["NOT_TRADEABLE"] = "Not Tradeable";
 	["TRADEABLE"] = "Tradeable";
+
+	-- Keybind usage
+	["ENABLED"] = "enabled";
+	["DISABLED"] = "disabled";
 
 	-- Icons and Collection Text
 	["COLLECTED_ICON"] = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.

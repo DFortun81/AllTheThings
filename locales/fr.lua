@@ -469,6 +469,10 @@ local L = app.L;
 		L.NOT_TRADEABLE = "Non échangeable";
 		L.TRADEABLE = "Échangeable";
 
+	-- Keybind usage
+		--TODO: L.ENABLED = "enabled";
+		--TODO: L.DISABLED = "disabled";
+
 	-- Icons and Collection Text
 		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffCollecté|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffCollecté*|r";	-- Acquired the colors and icon from CanIMogIt.

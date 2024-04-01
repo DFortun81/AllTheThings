@@ -469,6 +469,16 @@ local L = app.L;
 		L.CREATURES_COUNT = "[%s Существ]";
 		L.CREATURES_LIST = "Список Существ";
 
+	-- Artifact Relic Completion
+		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
+		--TODO: L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
+		--TODO: L.NOT_TRADEABLE = "Not Tradeable";
+		--TODO: L.TRADEABLE = "Tradeable";
+		
+	-- Keybind usage
+		--TODO: L.ENABLED = "enabled";
+		--TODO: L.DISABLED = "disabled";
+
 	-- Icons and Collection Text
 		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffСобрано*|r";	-- Acquired the colors and icon from CanIMogIt.

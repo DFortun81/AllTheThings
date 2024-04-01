@@ -1187,6 +1187,11 @@ end
 settings.ToggleAccountMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetAccountMode(not self:Get("AccountMode"))
+	if self:Get("AccountMode") == true then
+		app.print(L["ACCOUNT_MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["ACCOUNT_MODE"].."|R "..L["DISABLED"]..".")
+	end
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode)
@@ -1196,6 +1201,11 @@ end
 settings.ToggleCompletionistMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetCompletionistMode(not self:Get("Completionist"))
+	if self:Get("Completionist") == true then
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["DISABLED"]..".")
+	end
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode)

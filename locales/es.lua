@@ -469,6 +469,10 @@ local L = app.L;
 		--TODO: L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
 		--TODO: L.NOT_TRADEABLE = "Not Tradeable";
 		--TODO: L.TRADEABLE = "Tradeable";
+	
+	-- Keybind usage
+		--TODO: L.ENABLED = "enabled";
+		--TODO: L.DISABLED = "disabled";
 
 	-- Icons and Collection Text
 		--TODO: L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffCollected|r";	-- Acquired the colors and icon from CanIMogIt.
