@@ -2077,9 +2077,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						crit(23652, {	-- Sha of Pride
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
-						i(99678),	-- Chest of the Cursed Conqueror
-						i(99679),	-- Chest of the Cursed Protector
-						i(99677),	-- Chest of the Cursed Vanquisher
+						ig(99678),	-- Chest of the Cursed Conqueror
+						ig(99679),	-- Chest of the Cursed Protector
+						ig(99677),	-- Chest of the Cursed Vanquisher
 						i(104162),	-- Droplet of Y'Shaarj (PET!)
 						i(104163),	-- Gooey Sha-ling (PET!)
 						i(112951),	-- Gaze of Arrogance
@@ -2170,9 +2170,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112768),	-- Kardris' Toxic Totem
 					})),
 					cr(71515, e(850, {	-- General Nazgrim
-						i(99681),	-- Gauntlets of the Cursed Conqueror
-						i(99667),	-- Gauntlets of the Cursed Protector
-						i(99680),	-- Gauntlets of the Cursed Vanquisher
+						ig(99681),	-- Gauntlets of the Cursed Conqueror
+						ig(99667),	-- Gauntlets of the Cursed Protector
+						ig(99680),	-- Gauntlets of the Cursed Vanquisher
 						i(112785),	-- Gar'tok, Strength of the Faithful
 						i(112787),	-- Arcweaver Spell Sword
 						i(112780),	-- Naz'grim's Gutripper
@@ -2235,9 +2235,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112825),	-- Sigil of Rampage
 					})),
 					cr(71529, e(851, {	-- Thok the Bloodthirsty
-						i(99672),	-- Helm of the Cursed Conqueror
-						i(99673),	-- Helm of the Cursed Protector
-						i(99671),	-- Helm of the Cursed Vanquisher
+						ig(99672),	-- Helm of the Cursed Conqueror
+						ig(99673),	-- Helm of the Cursed Protector
+						ig(99671),	-- Helm of the Cursed Vanquisher
 						i(112862),	-- Britomart's Jagged Pike
 						i(112853),	-- Hvitserk's Formidable Shanker
 						i(112861),	-- Festering Primordial Globule
@@ -2254,9 +2254,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				header(HEADERS.Achievement, 8462, {	-- Downfall
 					cr(71504, e(865, {	-- Siegecrafter Blackfuse
 						i(104158),	-- Blackfuse Bombling (PET!)
-						i(99669),	-- Shoulders of the Cursed Conqueror
-						i(99670),	-- Shoulders of the Cursed Protector
-						i(99668),	-- Shoulders of the Cursed Vanquisher
+						ig(99669),	-- Shoulders of the Cursed Conqueror
+						ig(99670),	-- Shoulders of the Cursed Protector
+						ig(99668),	-- Shoulders of the Cursed Vanquisher
 						i(112892),	-- Lever of the Megantholithic Apparatus
 						i(112897),	-- Siegecrafter's Forge Hammer
 						i(112894),	-- Blackfuse's Blasting Cord
@@ -2298,9 +2298,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							["collectible"] = false,
 						}),
 						i(104165),	-- Kovok (PET!)
-						i(99675),	-- Leggings of the Cursed Conqueror
-						i(99676),	-- Leggings of the Cursed Protector
-						i(99674),	-- Leggings of the Cursed Vanquisher
+						ig(99675),	-- Leggings of the Cursed Conqueror
+						ig(99676),	-- Leggings of the Cursed Protector
+						ig(99674),	-- Leggings of the Cursed Vanquisher
 						i(112921),	-- Kil'ruk's Furious Blade
 						i(112920),	-- Korven's Crimson Crescent
 						i(112922),	-- Rik'kal's Bloody Scalpel
@@ -2314,14 +2314,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112913),	-- Skeer's Bloodsoaked Talisman
 					})),
 					cr(71865, e(869, {	-- Garrosh Hellscream
-						i(105861, {	-- Essence of the Cursed Conqueror
+						ig(105861, {	-- Essence of the Cursed Conqueror
 							["classes"] = {
 								PALADIN,
 								PRIEST,
 								WARLOCK,
 							},
 						}),
-						i(105860, {	-- Essence of the Cursed Protector
+						ig(105860, {	-- Essence of the Cursed Protector
 							["classes"] = {
 								HUNTER,
 								MONK,
@@ -2329,7 +2329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								WARRIOR,
 							},
 						}),
-						i(105862, {	-- Essence of the Cursed Vanquisher
+						ig(105862, {	-- Essence of the Cursed Vanquisher
 							["classes"] = {
 								DEATHKNIGHT,
 								DRUID,
@@ -2478,9 +2478,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 					}),
 					ach(8521),	-- Swallow Your Pride
-					i(99743),	-- Chest of the Cursed Conqueror
-					i(99744),	-- Chest of the Cursed Protector
-					i(99742),	-- Chest of the Cursed Vanquisher
+					ig(99743),	-- Chest of the Cursed Conqueror
+					ig(99744),	-- Chest of the Cursed Protector
+					ig(99742),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -2589,9 +2589,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
 					ach(8448),	-- Gamon Will Save Us!
-					i(99746),	-- Gauntlets of the Cursed Conqueror
-					i(99747),	-- Gauntlets of the Cursed Protector
-					i(99745),	-- Gauntlets of the Cursed Vanquisher
+					ig(99746),	-- Gauntlets of the Cursed Conqueror
+					ig(99747),	-- Gauntlets of the Cursed Protector
+					ig(99745),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -2655,9 +2655,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
 					ach(8527),	-- Giant Dinosaur vs. Mega Snail
-					i(99749),	-- Helm of the Cursed Conqueror
-					i(99750),	-- Helm of the Cursed Protector
-					i(99748),	-- Helm of the Cursed Vanquisher
+					ig(99749),	-- Helm of the Cursed Conqueror
+					ig(99750),	-- Helm of the Cursed Protector
+					ig(99748),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -2678,9 +2678,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						crit(23775),	-- Disassembled Crawler Mines
 					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99755),	-- Shoulders of the Cursed Conqueror
-					i(99756),	-- Shoulders of the Cursed Protector
-					i(99754),	-- Shoulders of the Cursed Vanquisher
+					ig(99755),	-- Shoulders of the Cursed Conqueror
+					ig(99756),	-- Shoulders of the Cursed Protector
+					ig(99754),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -2723,9 +2723,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["collectible"] = false,
 					}),
 					i(104165),	-- Kovok (PET!)
-					i(99752),	-- Leggings of the Cursed Conqueror
-					i(99753),	-- Leggings of the Cursed Protector
-					i(99751),	-- Leggings of the Cursed Vanquisher
+					ig(99752),	-- Leggings of the Cursed Conqueror
+					ig(99753),	-- Leggings of the Cursed Protector
+					ig(99751),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -2740,14 +2740,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
 					ach(8537),	-- Strike!
-					i(105864, {	-- Essence of the Cursed Conqueror
+					ig(105864, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
 							PALADIN,
 							PRIEST,
 							WARLOCK,
 						},
 					}),
-					i(105863, {	-- Essence of the Cursed Protector
+					ig(105863, {	-- Essence of the Cursed Protector
 						["classes"] = {
 							HUNTER,
 							MONK,
@@ -2755,7 +2755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							WARRIOR,
 						},
 					}),
-					i(105865, {	-- Essence of the Cursed Vanquisher
+					ig(105865, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
 							DEATHKNIGHT,
 							DRUID,
@@ -2887,9 +2887,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
-					i(99686),	-- Chest of the Cursed Conqueror
-					i(99691),	-- Chest of the Cursed Protector
-					i(99696),	-- Chest of the Cursed Vanquisher
+					ig(99686),	-- Chest of the Cursed Conqueror
+					ig(99691),	-- Chest of the Cursed Protector
+					ig(99696),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -2994,9 +2994,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					i(99687),	-- Gauntlets of the Cursed Conqueror
-					i(99692),	-- Gauntlets of the Cursed Protector
-					i(99682),	-- Gauntlets of the Cursed Vanquisher
+					ig(99687),	-- Gauntlets of the Cursed Conqueror
+					ig(99692),	-- Gauntlets of the Cursed Protector
+					ig(99682),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -3057,9 +3057,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					i(99689),	-- Helm of the Cursed Conqueror
-					i(99694),	-- Helm of the Cursed Protector
-					i(99683),	-- Helm of the Cursed Vanquisher
+					ig(99689),	-- Helm of the Cursed Conqueror
+					ig(99694),	-- Helm of the Cursed Protector
+					ig(99683),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -3074,9 +3074,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99690),	-- Shoulders of the Cursed Conqueror
-					i(99695),	-- Shoulders of the Cursed Protector
-					i(99685),	-- Shoulders of the Cursed Vanquisher
+					ig(99690),	-- Shoulders of the Cursed Conqueror
+					ig(99695),	-- Shoulders of the Cursed Protector
+					ig(99685),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -3118,9 +3118,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["collectible"] = false,
 					}),
 					i(104165),	-- Kovok (PET!)
-					i(99688),	-- Leggings of the Cursed Conqueror
-					i(99693),	-- Leggings of the Cursed Protector
-					i(99684),	-- Leggings of the Cursed Vanquisher
+					ig(99688),	-- Leggings of the Cursed Conqueror
+					ig(99693),	-- Leggings of the Cursed Protector
+					ig(99684),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -3143,14 +3143,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					bubbleDownSelf({["races"] = HORDE_ONLY,},{
 						title(212),	-- Liberator of Orgrimmar
 					})),
-					i(105858, {	-- Essence of the Cursed Conqueror
+					ig(105858, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
 							PALADIN,
 							PRIEST,
 							WARLOCK,
 						},
 					}),
-					i(105857, {	-- Essence of the Cursed Protector
+					ig(105857, {	-- Essence of the Cursed Protector
 						["classes"] = {
 							HUNTER,
 							MONK,
@@ -3158,7 +3158,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							WARRIOR,
 						},
 					}),
-					i(105859, {	-- Essence of the Cursed Vanquisher
+					ig(105859, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
 							DEATHKNIGHT,
 							DRUID,
@@ -3295,9 +3295,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
 					ach(8467),	-- Mythic: Sha of Pride
-					i(99715),	-- Chest of the Cursed Conqueror
-					i(99716),	-- Chest of the Cursed Protector
-					i(99714),	-- Chest of the Cursed Vanquisher
+					ig(99715),	-- Chest of the Cursed Conqueror
+					ig(99716),	-- Chest of the Cursed Protector
+					ig(99714),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -3406,9 +3406,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
 					ach(8471),	-- Mythic: General Nazgrim
-					i(99721),	-- Gauntlets of the Cursed Conqueror
-					i(99722),	-- Gauntlets of the Cursed Protector
-					i(99720),	-- Gauntlets of the Cursed Vanquisher
+					ig(99721),	-- Gauntlets of the Cursed Conqueror
+					ig(99722),	-- Gauntlets of the Cursed Protector
+					ig(99720),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -3472,9 +3472,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
 					ach(8479),	-- Mythic: Thok the Bloodthirsty
-					i(99724),	-- Helm of the Cursed Conqueror
-					i(99725),	-- Helm of the Cursed Protector
-					i(99723),	-- Helm of the Cursed Vanquisher
+					ig(99724),	-- Helm of the Cursed Conqueror
+					ig(99725),	-- Helm of the Cursed Protector
+					ig(99723),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -3490,9 +3490,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
 					ach(8480),	-- Mythic: Siegecrafter Blackfuse
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99718),	-- Shoulders of the Cursed Conqueror
-					i(99719),	-- Shoulders of the Cursed Protector
-					i(99717),	-- Shoulders of the Cursed Vanquisher
+					ig(99718),	-- Shoulders of the Cursed Conqueror
+					ig(99719),	-- Shoulders of the Cursed Protector
+					ig(99717),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -3535,9 +3535,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["collectible"] = false,
 					}),
 					i(104165),	-- Kovok (PET!)
-					i(99712),	-- Leggings of the Cursed Conqueror
-					i(99713),	-- Leggings of the Cursed Protector
-					i(99726),	-- Leggings of the Cursed Vanquisher
+					ig(99712),	-- Leggings of the Cursed Conqueror
+					ig(99713),	-- Leggings of the Cursed Protector
+					ig(99726),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -3555,14 +3555,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					ach(8482, {	-- Mythic: Garrosh Hellscream
 						title(214),	-- , Hellscream's Downfall
 					}),
-					i(105867, {	-- Essence of the Cursed Conqueror
+					ig(105867, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
 							PALADIN,
 							PRIEST,
 							WARLOCK,
 						},
 					}),
-					i(105866, {	-- Essence of the Cursed Protector
+					ig(105866, {	-- Essence of the Cursed Protector
 						["classes"] = {
 							HUNTER,
 							MONK,
@@ -3570,7 +3570,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							WARRIOR,
 						},
 					}),
-					i(105868, {	-- Essence of the Cursed Vanquisher
+					ig(105868, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
 							DEATHKNIGHT,
 							DRUID,

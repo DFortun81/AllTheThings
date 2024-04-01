@@ -110,12 +110,11 @@ local function SetCostTotals(costs, isCost, refresh)
 			else
 				c.isCost = nil;
 				-- app.PrintDebug("Skipped cost under locked/saved parent"
-				-- 	,Linkify(c)
-				-- 	,Linkify(blockedBy))
+				-- 	,app:SearchLink(c)
+				-- 	,app:SearchLink(blockedBy))
 			end
 		else
-			-- app.PrintDebug("Not a cost"
-			-- 	,app:Linkify(c.hash, app.Colors.ChatLink, "search:"..c.key..":"..c[c.key]))
+			-- app.PrintDebug("Not a cost",app:SearchLink(c))
 			c.isCost = nil;
 		end
 		-- regardless of the Cost state, make sure to update this specific cost group for visibility
@@ -124,7 +123,9 @@ local function SetCostTotals(costs, isCost, refresh)
 end
 local function UpdateCostsByItemID(itemID, refresh, refs)
 	local costs = SearchForObject("itemID", itemID, "field", true);
+	-- app.Debugging = math.floor(itemID) == 99678
 	if costs then
+		-- app.PrintDebug(#costs,"cost groups @",itemID)
 		local isCost
 		refs = refs or GetRawField("itemIDAsCost", itemID)
 		if refs then
@@ -140,6 +141,7 @@ local function UpdateCostsByItemID(itemID, refresh, refs)
 		SetCostTotals(costs, isCost, refresh)
 	-- else app.PrintDebug("Item as Cost is not Sourced!",itemID)
 	end
+	-- app.Debugging = nil
 	return costs;
 end
 local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
