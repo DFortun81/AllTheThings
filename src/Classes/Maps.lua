@@ -465,11 +465,13 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 				local x, y = hash:match("(%d+):(%d+)");
 				tinsert(coords, { tonumber(x) * 0.01, tonumber(y) * 0.01, mapID });
 			end
-			ExplorationAreaPositionDB[areaID] = coords;
+			if not ExplorationAreaPositionDB[areaID] then
+				ExplorationAreaPositionDB[areaID] = coords;
+				print("Found new coordinates for area", areaID);
+			end
 		end
 	end
-	AllTheThingsAD.ExplorationAreaPositionDB = explorationAreaPositionDB;
-	ExplorationAreaPositionDB = explorationAreaPositionDB;
+	AllTheThingsAD.ExplorationAreaPositionDB = ExplorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
 end
 local function HarvestExploration(simplify)
@@ -646,13 +648,7 @@ local function HarvestExploration(simplify)
 		app:SetupReportDialog(popupID, text, info);
 		print("Found Areas:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
 	end
-	if simplify then
-		SimplifyExplorationData(rawExplorationAreaPositionDB);
-	else
-		for areaID,coords in pairs(rawExplorationAreaPositionDB) do
-			ExplorationAreaPositionDB[areaID] = coords;
-		end
-	end
+	if simplify then SimplifyExplorationData(rawExplorationAreaPositionDB); end
 end
 app.HarvestExploration = function(simplify)
 	app:StartATTCoroutine("Harvest Exploration", function()
