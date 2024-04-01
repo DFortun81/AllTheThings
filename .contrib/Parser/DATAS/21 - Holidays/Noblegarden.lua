@@ -719,7 +719,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["questID"] = 80089,
 				}),
 				i(212608),	-- Duck Potion (QI!)
-				i(212643),	-- Golden Egg Heirloom (QI!)
+				o(420195, {	-- Golden Egg Heirloom
+					i(212643),	-- Golden Egg Heirloom (QI!)
+				}),
 			},
 		}),
 		q(79578, {	-- Just a Waddle Away (H)
@@ -749,7 +751,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["questID"] = 80089,
 				}),
 				i(216488),	-- Duck Potion (QI!)
-				i(216489),	-- Golden Egg Heirloom (QI!)
+				o(420195, {	-- Golden Egg Heirloom
+					i(212643),	-- Golden Egg Heirloom (QI!)
+				}),
 			},
 		}),
 		q(78274, {	-- Quacking Down (A)
