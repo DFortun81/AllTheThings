@@ -1111,6 +1111,7 @@ _.Modules.Events.SetEventInformation(590, {
 
 -- Filter Database Module
 _.FilterConstants = {
+	ACHIEVEMENTS = 105,
 	AMMO = 37,
 	ARTIFACTS = 11,
 	BAGS = 113,
@@ -1205,6 +1206,7 @@ L.FILTER_ID_TYPES = {
 	[102] = TOY,
 	[103] = "Illusions",
 	[104] = AUCTION_CATEGORY_QUEST_ITEMS,
+	[105] = TRACKER_FILTER_ACHIEVEMENTS,
 	[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,
 	[110] = PAPERDOLL_SIDEBAR_TITLES,
 	[111] = GetItemClassInfo(16),
@@ -1256,6 +1258,7 @@ L.FILTER_ID_ICONS = {
 	[102] = _.asset("Category_ToyBox"),
 	[103] = "Interface/Icons/inv_inscription_weaponscroll03",
 	[104] = _.asset("Interface_Quest_header"),
+	[105] = _.asset("Category_Achievements"),
 	[106] = "Interface/Icons/INV_Holiday_Christmas_Present_01",
 	[110] = _.asset("Category_Titles"),
 	[111] = "Interface/Icons/Inv_glyph_minorwarrior",

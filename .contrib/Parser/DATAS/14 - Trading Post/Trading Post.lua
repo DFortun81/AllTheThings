@@ -60,67 +60,66 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(72681, {	-- Report to the Trading Post -- February & March 2023, also cross-completed after 'Tour the Trading Post' (questID 66858 & 66959)
+		q(72681, {	-- Report to the Trading Post -- March 2023
 			["timeline"] = { ADDED_10_0_5 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(75833, {	-- Report to the Trading Post -- April 2023
 			["timeline"] = { ADDED_10_0_7 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76159, {	-- Report to the Trading Post -- May 2023
 			["timeline"] = { ADDED_10_0_7 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76103, {	-- Report to the Trading Post -- June 2023
 			["timeline"] = { ADDED_10_1_0 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76104, {	-- Report to the Trading Post -- July 2023
 			["timeline"] = { ADDED_10_1_0 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76105, {	-- Report to the Trading Post -- August 2023
 			["timeline"] = { ADDED_10_1_5 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76106, {	-- Report to the Trading Post -- September 2023
 			["timeline"] = { ADDED_10_1_5 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76107, {	-- Report to the Trading Post -- October 2023
 			["timeline"] = { ADDED_10_1_7 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76108, {	-- Report to the Trading Post -- November 2023
 			["timeline"] = { ADDED_10_1_7 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76112, {	-- Report to the Trading Post -- Dec 2023
 			["timeline"] = { ADDED_10_2_0 },
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76113, {	-- Report to the Trading Post -- Jan 2024
 			["timeline"] = { ADDED_10_2_0 },
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["u"] = REMOVED_FROM_GAME,
 		}),
 		q(76114, {	-- Report to the Trading Post -- Feb 2024
 			["timeline"] = { ADDED_10_2_5 },
+			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["u"] = REMOVED_FROM_GAME,
 		}),
-		-- No quest in March 2024, probably only 12 quests (one for each month)
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, "removed 10.0.5.48317" } }, {
