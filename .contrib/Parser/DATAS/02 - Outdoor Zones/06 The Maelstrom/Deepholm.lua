@@ -60,6 +60,7 @@ root(ROOTS.Zones, {
 					exploration(5302),	-- Crimson Expanse
 					exploration(5358),	-- Deathwing's Fall
 					exploration(5329),	-- Lower Silvermarsh
+					exploration(5394),	-- Masters' Gate
 					exploration(5350),	-- Needlerock Chasm
 					exploration(5349),	-- Needlerock Slag
 					exploration(5292),	-- Scoured Reach
