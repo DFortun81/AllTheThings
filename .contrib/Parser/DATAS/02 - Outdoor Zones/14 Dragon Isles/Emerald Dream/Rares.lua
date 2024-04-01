@@ -218,9 +218,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209912, {	-- Raszageth's Last Breath
-				--["providers"] = {
-				--	{ "n", xx },	-- 
-				--},
+				["providers"] = {
+					{ "n", 210083 },	-- Primalist Portal (vignette)
+				},
 				["description"] = "Can randomly spawn in zone.",
 				["coords"] = {
 					{ 26.3, 28.5, EMERALD_DREAM },

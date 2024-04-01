@@ -192,7 +192,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["providers"] = {
 					{ "n", 192012 },	-- Icy Lock (vignette)
 					{ "n", 191861 },	-- Magic-Bound Chest (vignette)
+					{ "n", 191905 },	-- Magic-Bound Chest (vignette)
 					{ "n", 192243 },	-- Molten Lock (vignette)
+					{ "o", 385074 },	-- Magic-Bound Chest (vignette)
+					{ "o", 385075 },	-- Magic-Bound Chest (vignette)
 				},
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["sym"] = {{"select","itemID",

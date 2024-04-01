@@ -701,7 +701,6 @@ root(ROOTS.Unsorted, {
 			i(210027),	-- Extracted Ashen Dust
 			i(210028),	-- Extracted Ashen Dust
 			i(210223),	-- Unstable Element
-			i(210240),	-- Stabilized Element
 			filter(MISC, {
 				------ Tame Hunter Pets ------
 				-- Check if These pop any QuestIDs we can source them properly

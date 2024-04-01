@@ -112,6 +112,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(TREASURES, {
 				o(382193, {	-- Chest of the Elements
+					["providers"] = {
+						{ "o", 382195 },	-- Elemental Bound Chest (vignette)
+					},
 					["questID"] = 71995,
 					["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },

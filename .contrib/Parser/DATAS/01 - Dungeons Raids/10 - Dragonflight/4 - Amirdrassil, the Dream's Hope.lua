@@ -399,7 +399,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				}, {
 					q(77093, {	-- The Shadowflame Axe
-						["provider"] = { "i", 207728 },	-- Fyr'alath the Dreamrender
+						["provider"] = { "i", 207729 },	-- Fyr'alath the Dreamrender
 					}),
 					q(77191, {	-- Handling It
 						["sourceQuests"] = { 77093 },	-- The Shadowflame Axe
@@ -549,6 +549,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["g"] = {
 							i(210222),	-- Resolved Element (QI!)
 							i(210048),	-- Shalasar's Sophic Vellum (QI!)
+							i(210240),	-- Stabilized Element (QI!)
 							i(211398, {	-- Attuned Sophic Vellum (QI!)
 								i(208578),	-- Concentrated Sophic Vellum (QI!)
 							}),
@@ -601,7 +602,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sourceQuests"] = { 77192 },	-- An Axe Tempered
 						["provider"] = { "n", 208421 },	-- Wrathion
 						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
-						--["maps"] = { scenario map id? },
+						["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
 						["g"] = {
 							i(207729),	-- Fyr'alath the Dreamrender (QI!)
 							i(206448, {	-- Fyr'alath the Dreamrender
@@ -936,9 +937,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
 				}),
 				BossOnly(FYRAKK, {
-					i(210871),	-- Greater Ember of Fyr'alath (There are multiple versions?)
+					i(210871),	-- Greater Ember of Fyr'alath
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
-					i(207728, {	-- Fyr'alath the Dreamrender (QI)
+					i(207728, {	-- Fyr'alath the Dreamrender (QI!)
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
 					}),
 				}),
