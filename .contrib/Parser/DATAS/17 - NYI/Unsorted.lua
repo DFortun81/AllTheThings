@@ -591,7 +591,6 @@ root(ROOTS.Unsorted, {
 				q(79468),	--
 				q(79517),	--
 				q(79537),	-- Jrz Test Currency Quest
-				q(79558),	-- Feathered Fiend
 				q(79621),	--
 				-- 10.2.5.52554
 				q(79676),	--
