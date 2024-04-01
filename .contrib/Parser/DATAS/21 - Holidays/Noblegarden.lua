@@ -112,9 +112,12 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	}),
 };
 root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
-	o(113768, {	-- Brightly Colored Egg
+	{	-- Brightly Colored Egg
 		-- #if AFTER WRATH
-		["provider"] = { "i", 45072 },	-- Brightly Colored Egg
+		["itemID"] = 45072,	-- Brightly Colored Egg
+		["provider"] = { "o", 113768 },	-- Brightly Colored Egg
+		-- #else
+		["objectID"] = 113768,	-- Brightly Colored Egg
 		-- #endif
 		["description"] = "These eggs can be found spread out in all of the starting zones.",
 		["maps"] = {
@@ -169,7 +172,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			i(7806),	-- Lollipop
 			-- #endif
 		},
-	}),
+	},
 	-- #if AFTER 3.1.0.9733
 	n(ACHIEVEMENTS, {
 		ach(2797, {	-- Noble Gardener (A)
