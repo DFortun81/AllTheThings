@@ -1053,7 +1053,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				category(185, {	-- Goggles
 					i(10545, {	-- Gnomish Goggles
+					-- #IF BEFORE 10.1.0
 						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+					-- #ENDIF
 					}),
 				}),
 				category(183, {	-- Parts

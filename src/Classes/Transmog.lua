@@ -166,7 +166,7 @@ app.DetermineItemLink = function(sourceID)
 
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
-	for b=1,9999,1 do
+	for b=1,10999,1 do
 		link = itemFormat:format(b);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
@@ -573,6 +573,7 @@ app.SaveHarvestSource = function(data)
 				itemID = app.GetGroupItemIDWithModID(nil, i, m)
 			end
 		end
+		if itemID < 1 then return end
 		app.PrintDebug("Harvest",sourceID,"<=",itemID,app:SearchLink(data),data.link or data.text or data.hash)
 		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
