@@ -466,7 +466,7 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	app.print("Done Simplifying Exploration Data.");
 end
 local function HarvestExploration(simplify)
-	app.SetupExplorationEvents();
+	if app.SetupExplorationEvents then app.SetupExplorationEvents(); end
 	app.print("Harvesting Exploration...");
 	local grid, Granularity = {}, 200;
 	for i=0,Granularity,1 do
