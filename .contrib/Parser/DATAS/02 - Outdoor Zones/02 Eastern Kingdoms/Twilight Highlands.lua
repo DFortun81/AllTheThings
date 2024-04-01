@@ -269,6 +269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5425),	-- Twilight Shore
 				exploration(5155),	-- Vermillion Redoubt
 				exploration(5470),	-- Victor's Point
+				exploration(5462),	-- Wyrms' Bend
 			}),
 			n(FACTIONS, {
 				faction(1172, {	-- Dragonmaw Clan

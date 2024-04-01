@@ -68,6 +68,7 @@ root(ROOTS.Zones, {
 				}),
 				explorationHeader({
 					exploration(5943),	-- Amberfly Bog
+					exploration(5905),	-- Camp Nooka Nooka
 					exploration(5930),	-- Dawn's Blossom
 					exploration(5951),	-- Dookin' Grounds
 					exploration(5940),	-- Dreamer's Pavilion
@@ -83,6 +84,7 @@ root(ROOTS.Zones, {
 					exploration(6063),	-- Moonwater Retreat
 					exploration(5854),	-- Nectarbreeze Orchard
 					exploration(5878),	-- Orchid Hollow
+					exploration(5899),	-- Path of Enlightenment
 					exploration(5851),	-- Paw'don Glade
 					exploration(5934),	-- Pearl Lake
 					exploration(5876),	-- Serpent's Heart
@@ -100,6 +102,7 @@ root(ROOTS.Zones, {
 					exploration(6524),	-- Thunder Hold
 					exploration(5855),	-- Tian Monastery
 					exploration(5912),	-- Tideview Thicket
+					exploration(5942),	-- Tigers' Wood
 					exploration(5874),	-- Waxwood
 					exploration(6012),	-- Windward Isle
 					exploration(5966),	-- Woods of the Lost

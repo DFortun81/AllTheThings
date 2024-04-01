@@ -119,6 +119,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5583),	-- The Vortex Pinnacle
 				exploration(5684),	-- Throne of the Four Winds
 				exploration(5689),	-- Tombs of the Precursors
+				exploration(5666),	-- Vir'naal Dam
 			}),
 			n(FACTIONS, {
 				faction(1173, {	-- Ramkahen
