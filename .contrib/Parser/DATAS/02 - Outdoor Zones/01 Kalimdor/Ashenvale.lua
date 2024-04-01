@@ -195,7 +195,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				exploration(1703),	-- The Mor'shan Rampart
 				-- #endif
+				-- #if AFTER WRATH
 				exploration(412),	-- The Ruins of Ordil'Aran
+				-- #endif
 				exploration(418, "155:150:260:373"),	-- The Ruins of Stardust
 				exploration(416, "220:195:104:259"),	-- The Shrine of Aessina
 				exploration(414, "245:245:19:28"),		-- The Zoram Strand
