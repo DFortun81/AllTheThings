@@ -659,7 +659,7 @@ for key,value in pairs({
 		--TODO: DEATHS_CHECKBOX = "Deaths";
 		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 		--TODO: EXPLORATION_CHECKBOX = "Exploration";
-		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps. \n\nNOTE: Collection logic is based on the visible map data, so if it isn't marked collected, try reloading or relogging first.";
+		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.";
 		FLIGHT_PATHS_CHECKBOX = "Trajets Aériens";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Activer cette option pour suivre les trajets de vol et les stations de ferries. Pour les collecter, ouvrez le dialogue avec le maître des vols / ferries de chaque continent.\n\nREMARQUE : en raison de la technologie de mise en phase, il se peut que vous deviez passer en phase dans les autres versions d’une zone pour obtenir le crédit de ces points d’intérêt.";
 		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;

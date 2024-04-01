@@ -1,1 +1,0 @@
-"Parser.exe" baseconfig=parser.config config=parser.retail.exploration.config
