@@ -936,6 +936,11 @@ settings.CreateInformationType("LinkSourceID", {
 		});
 	end
 })
+settings.CreateInformationType("modItemID", {
+	priority = 99999,
+	text = "DEBUG: modItemID",
+	HideCheckBox = not app.Debugging,
+})
 
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
