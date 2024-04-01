@@ -367,6 +367,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 30.3, 91.4, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
 			["groups"] = {
 				i(210594, {	-- Noblegarden Trinket (QI!)
 					["races"] = ALLIANCE_ONLY,
@@ -382,6 +383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 44.4, 35.1, DUROTAR },
 			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
 			["groups"] = {
 				i(216932, {	-- Noblegarden Trinket (QI!)
 					["races"] = HORDE_ONLY,
