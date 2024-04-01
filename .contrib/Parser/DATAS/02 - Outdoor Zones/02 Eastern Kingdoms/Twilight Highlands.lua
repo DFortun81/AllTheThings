@@ -265,7 +265,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5137),	-- The Krazworks
 				exploration(5641),	-- The Twilight Breach
 				exploration(5473),	-- The Twilight Citadel
+				exploration(5142),	-- Thundermar
+				exploration(5425),	-- Twilight Shore
 				exploration(5155),	-- Vermillion Redoubt
+				exploration(5470),	-- Victor's Point
 			}),
 			n(FACTIONS, {
 				faction(1172, {	-- Dragonmaw Clan

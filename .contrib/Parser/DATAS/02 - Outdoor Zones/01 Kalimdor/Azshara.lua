@@ -131,29 +131,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4827),	-- Storm Cliffs
 				exploration(3137),	-- Talrendis Point
 				exploration(1256),	-- The Ruined Reaches
+				exploration(4829),	-- The Secret Lab
 				exploration(1228),	-- The Shattered Strand
 				exploration(1229),	-- Tower of Eldara
 				exploration(1237),	-- Valormok
 				-- #else
-				exploration(1227, "270:300:479:201"),	-- Bay of Storms
-				exploration(2497, "245:185:644:40"),	-- Bitter Reaches
-				exploration(1233, "220:255:191:369"),	-- Forlorn Ridge
-				exploration(1236, "200:150:77:331"),	-- Haldarr Encampment
-				exploration(1230, "570:170:366:0"),		-- Jagged Reef
-				exploration(1234, "315:200:296:429"),	-- Lake Mennar
-				exploration(1219, "235:140:478:44"),	-- Legash Encampment
-				exploration(1232, "240:125:552:499"),	-- Ravencrest Monument
-				exploration(1221, "265:280:238:221"),	-- Ruins of Eldarath
-				exploration(1235, "225:180:35:422"),	-- Shadowsong Shrine
-				exploration(1231, "370:220:389:353"),	-- Southridge Beach
-				exploration(1226, "190:200:681:153"),	-- Temple of Arkkoran
-				exploration(1220, "240:155:499:119"),	-- Thalassian Base Camp
-				exploration(1256, "395:128:396:540"),	-- The Ruined Reaches
-				exploration(1228, "160:210:404:194"),	-- The Shattered Strand
-				exploration(1216, "235:270:250:106"),	-- Timbermaw Hold
-				exploration(1229, "120:155:818:107"),	-- Tower of Eldara
-				exploration(1225, "145:215:422:95"),	-- Ursolan
-				exploration(1237, "215:175:84:229"),	-- Valormok
+				exploration(1227),	-- Bay of Storms
+				exploration(2497),	-- Bitter Reaches
+				exploration(1233),	-- Forlorn Ridge
+				exploration(1236),	-- Haldarr Encampment
+				exploration(1230),	-- Jagged Reef
+				exploration(1234),	-- Lake Mennar
+				exploration(1219),	-- Legash Encampment
+				exploration(1232),	-- Ravencrest Monument
+				exploration(1221),	-- Ruins of Eldarath
+				exploration(1235),	-- Shadowsong Shrine
+				exploration(1231),	-- Southridge Beach
+				exploration(1226),	-- Temple of Arkkoran
+				exploration(1220),	-- Thalassian Base Camp
+				exploration(1256),	-- The Ruined Reaches
+				exploration(1228),	-- The Shattered Strand
+				exploration(1216),	-- Timbermaw Hold
+				exploration(1229),	-- Tower of Eldara
+				exploration(1225),	-- Ursolan
+				exploration(1237),	-- Valormok
 				-- #endif
 				--[[
 				exploration(1222),	-- Hetaera's Clutch

@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(5442),	-- Emberstone Mine
 				exploration(5440),	-- Northern Headlands
+				exploration(4706),	-- Ruins of Gilneas
 				exploration(5436),	-- Tempest's Reach
 			}),
 			n(FLIGHT_PATHS, {

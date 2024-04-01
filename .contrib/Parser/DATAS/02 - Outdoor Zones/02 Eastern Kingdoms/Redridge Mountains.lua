@@ -55,31 +55,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(97, "235:270:399:129"),		-- Alther's Mill
-				exploration(1000, "250:250:654:161"),	-- Galardell Valley
+				exploration(97),	-- Alther's Mill
+				-- #if AFTER CATA
+				exploration(5326),	-- Camp Everstill
+				-- #endif
+				exploration(1000),	-- Galardell Valley
 				-- #if AFTER CATA
 				exploration(5325),	-- Keeshan's Post
 				-- #endif
-				exploration(68, "535:275:133:240"),		-- Lake Everstill
-				exploration(1001, "430:290:187:333"),	-- Lakeridge Highway
-				exploration(69, "340:195:83:197"),		-- Lakeshire
-				exploration(95, "365:245:121:72"),		-- Redridge Canyons
-				exploration(996, "275:256:277:0"),		-- Render's Camp
+				exploration(68),	-- Lake Everstill
+				exploration(1001),	-- Lakeridge Highway
+				exploration(69),	-- Lakeshire
+				exploration(95),	-- Redridge Canyons
+				exploration(996),	-- Render's Camp
 				exploration(998),	-- Render's Rock
-				exploration(997, "465:255:484:361"),	-- Render's Valley
+				exploration(997),	-- Render's Valley
 				exploration(98),	-- Rethban Caverns
 				-- #if AFTER CATA
 				exploration(5324),	-- Shalewind Canyon
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(70, "255:300:500:215"),		-- Stonewatch
+				exploration(70),	-- Stonewatch
 				-- #endif
-				exploration(71, "320:210:595:320"),		-- Stonewatch Falls
+				exploration(71),	-- Stonewatch Falls
 				-- #if AFTER CATA
 				exploration(2099),	-- Stonewatch Keep
 				-- #endif
 				exploration(999),	-- Stonewatch Tower
-				exploration(1002, "365:350:0:284"),		-- Three Corners
+				exploration(1002),	-- Three Corners
 				exploration(96),	-- Tower of Ilgalar
 			}),
 			n(FLIGHT_PATHS, {

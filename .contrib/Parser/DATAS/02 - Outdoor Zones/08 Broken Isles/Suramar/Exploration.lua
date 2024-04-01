@@ -27,12 +27,14 @@ root(ROOTS.Zones, {
 				exploration(8233),	-- Moonwhisper Gulch
 				exploration(7916),	-- Sashj'tar Ruins
 				exploration(8148),	-- Suramar City
+				exploration(7841),	-- Tel'anor
 				exploration(8163),	-- Temple of Fal'adora
 				exploration(8222),	-- The Athenaeum
 				exploration(7963),	-- The Grand Promenade
 				exploration(8351),	-- The Menagerie
 				exploration(9502),	-- The Nighthold
 				exploration(8149),	-- Twilight Vineyards
+				exploration(7965),	-- Warpwind Cliffs
 			}),
 		}),
 	}),

@@ -123,8 +123,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4998),	-- Gates of Sothann
 				exploration(4989),	-- Grove of Aessina
 				exploration(5038),	-- Nordrassil
+				exploration(5022),	-- Rim of the World
 				exploration(5019),	-- Sanctuary of Malorne
 				exploration(5087),	-- Sethria's Roost
+				exploration(4990),	-- Shrine of Aviana
 				exploration(4979),	-- Shrine of Goldrinn
 				exploration(5623),	-- The Circle of Cinders
 				exploration(5020),	-- The Flamewake

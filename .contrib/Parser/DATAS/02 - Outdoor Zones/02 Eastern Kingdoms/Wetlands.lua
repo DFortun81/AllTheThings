@@ -183,33 +183,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(1036, "225:185:347:218"),	-- Angerfang Encampment
-				exploration(1018, "240:175:77:245"),	-- Black Channel Marsh
-				exploration(1022, "225:190:89:142"),	-- Bluegill Marsh
-				exploration(1016, "256:250:507:115"),	-- Direforge Hill
-				exploration(1038, "350:360:611:230"),	-- Dragonmaw Gates
+				exploration(1036),	-- Angerfang Encampment
+				exploration(1018),	-- Black Channel Marsh
+				exploration(1022),	-- Bluegill Marsh
+				exploration(1016),	-- Direforge Hill
+				exploration(1038),	-- Dragonmaw Gates
 				exploration(836),	-- Dun Algaz
-				exploration(205, "205:180:401:21"),		-- Dun Modr
-				-- #if BEFORE CATA
-				exploration(1037),    -- Grim Batol
+				exploration(205),	-- Dun Modr
+				-- #if AFTER CATA
+				exploration(5305),	-- Greenwarden's Grove
 				-- #endif
-				exploration(309, "200:185:349:115"),	-- Ironbeard's Tomb
-				exploration(150, "175:128:13:314"),		-- Menethil Harbor
-				exploration(1020, "205:245:527:264"),	-- Mosshide Fen
-				exploration(1017, "190:160:628:176"),	-- Raptor Ridge
-				exploration(1023, "200:240:237:41"),	-- Saltspray Glen
+				-- #if BEFORE CATA
+				exploration(1037),	-- Grim Batol
+				-- #endif
+				exploration(309),	-- Ironbeard's Tomb
+				exploration(150),	-- Menethil Harbor
+				exploration(1020),	-- Mosshide Fen
+				exploration(1017),	-- Raptor Ridge
+				exploration(1023),	-- Saltspray Glen
 				-- #if AFTER CATA
 				exploration(5074),	-- Slabchisel's Survey
 				-- #endif
-				exploration(1024, "300:240:92:82"),		-- Sundown Marsh
+				exploration(1024),	-- Sundown Marsh
 				-- #if BEFORE CATA
-				exploration(1025, "185:240:456:125"),	-- The Green Belt
+				exploration(1025),	-- The Green Belt
 				-- #endif
 				-- #if AFTER CATA
 				exploration(1039),	-- The Lost Fleet
 				-- #endif
-				exploration(1021, "230:190:470:371"),	-- Thelgen Rock
-				exploration(118, "195:185:247:205"),	-- Whelgar's Excavation Site
+				exploration(1021),	-- Thelgen Rock
+				exploration(118),	-- Whelgar's Excavation Site
 				--[[
 				exploration(298),	-- Baradin Bay
 				exploration(2104),	-- Deepwater Tavern

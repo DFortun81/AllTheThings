@@ -15,8 +15,10 @@ root(ROOTS.Zones, {
 					}},
 				}),
 				explorationHeader({
+					exploration(6380),	-- Path of a Hundred Steps
 					exploration(6375),	-- Tavern in the Mists
 					exploration(6373),	-- The Secret Aerie
+					exploration(6381),	-- The Spring Road
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1029, {	-- Tavern in the Mists

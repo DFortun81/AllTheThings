@@ -101,6 +101,7 @@ root(ROOTS.Zones, {
 					exploration(6166),	-- Longying Outpost
 					exploration(6213),	-- Niuzao Temple
 					exploration(6193),	-- Rensai's Watchpost
+					exploration(6197),	-- Shado-Pan Garrison
 					exploration(6307),	-- Shan'ze Dao
 					exploration(6195),	-- Sik'vess
 					exploration(6212),	-- Sra'thik Incursion

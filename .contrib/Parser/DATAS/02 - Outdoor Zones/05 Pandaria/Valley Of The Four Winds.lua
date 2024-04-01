@@ -46,6 +46,7 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(6028),	-- Dustback Gorge
 					exploration(5984),	-- Gilded Fan
+					exploration(5980),	-- Halfhill
 					exploration(6097),	-- Kunzen Cave
 					exploration(6065),	-- Kunzen Village
 					exploration(5957),	-- Mudmug's Place
@@ -65,6 +66,7 @@ root(ROOTS.Zones, {
 					exploration(5939),	-- Thunderfoot Farm
 					exploration(5937),	-- Thunderfoot Fields
 					exploration(5938),	-- Thunderfoot Ranch
+					exploration(6107),	-- Verdant Belt
 					exploration(5985),	-- Winds' Edge
 					exploration(6388),	-- Zhu's Descent
 				}),
