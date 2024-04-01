@@ -986,7 +986,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1581, {	-- Elixirs for the Bladeleafs
 					["qg"] = 2083,	-- Syral Bladeleaf
-					["description"] = "Available at Skill Level 20.",
+					-- #if BEFORE 8.0.1
+					["description"] = "This quest becomes available at Alchemy skill level 20 when the character level requirement is met.",
+					-- #else
+					["description"] = "This quest becomes available at Classic Alchemy skill level 20 when the character level requirement is met.",
+					-- #endif
 					-- #if AFTER CATA
 					["coord"] = { 55.8, 50.4, TELDRASSIL },
 					-- #else
