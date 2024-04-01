@@ -1052,7 +1052,7 @@ namespace ATT
                 // Any filter types which should specifically not have a SourceID attached even if Blizzard wants them to
                 if (data.TryGetValue("f", out long f))
                 {
-                    if (!((f > 0 && f < 38) || f == 57))
+                    if (!((f > 0 && f < 36) || f == 57))
                     {
 #pragma warning disable CS0162 // Unreachable code detected
                         if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
@@ -1087,7 +1087,7 @@ namespace ATT
                 if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
                 {
                     // the base itemID has a Source, but we didn't find one for this sourceIDKey...
-                    if (SOURCES_PER_ITEMID.ContainsKey((long)sourceIDKey) && !data.ContainsKey("_unsorted"))
+                    if (SOURCES_PER_ITEMID.ContainsKey((long)sourceIDKey) && !data.ContainsKey("_unsorted") && CurrentParseStage != ParseStage.UnsortedGeneration)
                     {
                         LogWarn($"Failed to match SourceID for Item {sourceIDKey}", data);
                     }

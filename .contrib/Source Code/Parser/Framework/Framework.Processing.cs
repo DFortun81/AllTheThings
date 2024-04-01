@@ -821,6 +821,9 @@ namespace ATT
             Items.MergeInto(data);
             Objects.MergeSharedDataIntoObject(data);
 
+            // ensure the FilterID for this data is double-checked after merging in the shared data
+            Objects.AssignFilterID(data);
+
             // Currently, this merges in data from actual Recipes to other non-Recipe Items which are linked to the same SpellID
             // i.e. /att i:200037 causing them to magically become Recipes!
             // Luckily, we don't overwrite existing fields, so we can strip out fields based on Filter types afterwards...
@@ -890,6 +893,11 @@ namespace ATT
             CheckHeirloom(data);
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
+
+            //if (data.TryGetValue("itemID", out long testitemid) && testitemid == 50169)
+            //{
+
+            //}
             Items.DetermineSourceID(data);
             Objects.AssignFactionID(data);
 
