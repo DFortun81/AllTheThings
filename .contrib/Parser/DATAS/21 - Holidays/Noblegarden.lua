@@ -81,6 +81,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	-- Pets
+	i(212786, {	-- Lovely Duckling (PET!)
+		["timeline"] = { ADDED_10_2_6 },
+		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
+	}),
 	i(141532, {	-- Noblegarden Bunny (PET!)
 		["timeline"] = { "added 7.1.0.22731" },
 		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
@@ -350,11 +354,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["timeline"] = { "added 3.0.1" },
 		}),
 	}),
+	n(RARES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 }, }, {
+		n(213665, {	-- Daetan Swiftplume
+			["races"] = ALLIANCE_ONLY,
+			["coord"] = { 30.3, 91.4, ELWYNN_FOREST },
+			["groups"] = {
+				i(210594, {	-- Noblegarden Trinket (QI!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+			},
+		}),
+		n(218738, {	-- Daetan Swiftplume
+			["races"] = HORDE_ONLY,
+			["coord"] = { 44.4, 35.1, DUROTAR },
+			["groups"] = {
+				i(216932, {	-- Noblegarden Trinket (QI!)
+					["races"] = HORDE_ONLY,
+				}),
+			},
+		}),
+	})),
 	n(QUESTS, {
 		q(74120, {	-- A Spring Awakening (A)
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
-			["timeline"] = { ADDED_10_0_7 },
+			["timeline"] = { ADDED_10_0_7, REMOVED_10_2_6 },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -362,7 +386,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		q(74875, {	-- A Spring Awakening (H)
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
-			["timeline"] = { ADDED_10_0_7 },
+			["timeline"] = { ADDED_10_0_7, REMOVED_10_2_6 },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -569,6 +593,161 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 	}),
+	-----------------
+	-- 2024 Update --
+	-----------------
+	n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_2_6 }, }, {
+		q(79134, {	-- A Spring Awakening (A)
+			["qg"] = 199261,	-- Holiday Enthusiast
+			["coord"] = { 31.6, 63.1, VALDRAKKEN },
+			["races"] = ALLIANCE_ONLY,
+			["isBreadcrumb"] = true,
+		}),
+		q(79136, {	-- A Spring Awakening (H)
+			["qg"] = 199261,	-- Holiday Enthusiast
+			["coord"] = { 31.6, 63.1, VALDRAKKEN },
+			["races"] = HORDE_ONLY,
+			["isBreadcrumb"] = true,
+		}),
+		q(79322, {	-- What the Duck? (A)
+			["qg"] = 211646,	-- Zinnia Brooks
+			["sourceQuest"] = 79134,	-- A Spring Awakening (A)
+			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(210558),	-- Horn of Honking (QI!)
+			},
+		}),
+		q(79575, {	-- What the Duck? (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
+			["sourceQuest"] = 79136,	-- A Spring Awakening (H)
+			["coord"] = { 52.6, 41.2, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(216487),	-- Horn of Honking (QI!)
+			},
+		}),
+		q(79323, {	-- A Fowl Concoctio (A)
+			["qg"] = 211646,	-- Zinnia Brooks
+			["sourceQuest"] = 79322,	-- What the Duck? (A)
+			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+		}),
+		q(79576, {	-- A Fowl Concoctio (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
+			["sourceQuest"] = 79575,	-- What the Duck? (H)
+			["coord"] = { 52.6, 41.2, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+		}),
+		q(79330, {	-- Duck Tales (A)
+			["qg"] = 216129,	-- Emmery Fiske
+			["sourceQuest"] = 79323,	-- A Fowl Concoctio (A)
+			["coord"] = { 42.0, 64.9, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(212608),	-- Duck Potion (QI!)
+			},
+		}),
+		q(79577, {	-- Duck Tales (H)
+			["qg"] = 217147,	-- Tethris Dewgazer
+			["sourceQuest"] = 79576,	-- A Fowl Concoctio (H)
+			["coord"] = { 52.6, 41.1, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(216488),	-- Duck Potion (QI!)
+			},
+		}),
+		q(79331, {	-- Just a Waddle Away (A)
+			["qg"] = 211646,	-- Zinnia Brooks
+			["sourceQuest"] = 79330,	-- Duck Tales (A)
+			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(216881),	-- Duck Disguiser (TOY!)
+				i(216890),	-- Black Duck Disguise
+				i(216897),	-- Brown Duck Disguise
+				i(216898),	-- Mallard Duck Disguise
+				i(216900),	-- Pink Duck Disguise
+				i(216901),	-- White Duck Disguise
+				i(216902),	-- Yellow Duck Disguise
+				i(212608),	-- Duck Potion (QI!)
+				i(212643),	-- Golden Egg Heirloom (QI!)
+			},
+		}),
+		q(79578, {	-- Just a Waddle Away (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
+			["sourceQuest"] = 79577,	-- Duck Tales (H)
+			["coord"] = { 52.6, 41.2, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(216881),	-- Duck Disguiser (TOY!)
+				i(216890),	-- Black Duck Disguise
+				i(216897),	-- Brown Duck Disguise
+				i(216898),	-- Mallard Duck Disguise
+				i(216900),	-- Pink Duck Disguise
+				i(216901),	-- White Duck Disguise
+				i(216902),	-- Yellow Duck Disguise
+				i(216488),	-- Duck Potion (QI!)
+				i(216489),	-- Golden Egg Heirloom (QI!)
+			},
+		}),
+		q(78274, {	-- Quacking Down (A)
+			["qg"] = 211646,	-- Zinnia Brooks
+			["sourceQuest"] = 79331,	-- Just a Waddle Away (A)
+			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+		}),
+		q(79135, {	-- Quacking Down (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
+			["sourceQuest"] = 79578,	-- Just a Waddle Away (H)
+			["coord"] = { 52.6, 41.2, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+		}),
+		q(73192, {	-- Feathered Fiend (A)
+			["provider"] = { "i", 210594 },	-- Noblegarden Trinket (QI!)
+			["maps"] = ELWYNN_FOREST,
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(216874, {	-- Loot-Filled Basket
+					i(212699),	-- Spring Reveler's Turquoise Belt
+					i(212701),	-- Spring Reveler's Turquoise Boots
+					i(212711),	-- Spring Reveler's Turquoise Dress
+					i(212985),	-- Spring Reveler's Turquoise Pants
+					i(212715),	-- Spring Reveler's Turquoise Sun Hat
+				}),
+			},
+		}),
+		q(79558, {	-- Feathered Fiend (H)
+			["provider"] = { "i", 216932 },	-- Noblegarden Trinket (QI!)
+			["maps"] = DUROTAR,
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
+			["groups"] = {
+				i(216874, {	-- Loot-Filled Basket
+					i(212699),	-- Spring Reveler's Turquoise Belt
+					i(212701),	-- Spring Reveler's Turquoise Boots
+					i(212711),	-- Spring Reveler's Turquoise Dress
+					i(212985),	-- Spring Reveler's Turquoise Pants
+					i(212715),	-- Spring Reveler's Turquoise Sun Hat
+				}),
+			},
+		}),
+	})),
 	n(VENDORS, {
 		n(32837, {	-- Noblegarden Merchant
 			["coords"] = {
@@ -608,3 +787,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #endif
 })));
+root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {
+	-- Will we connect these to the items? Currently you can get only one per 
+	--q(),	-- Black Duck Disguise
+	--q(),	-- Brown Duck Disguise
+	--q(),	-- Mallard Duck Disguise
+	q(80087),	-- Pink Duck Disguise
+	q(80088),	-- White Duck Disguise
+	q(80089),	-- Yellow Duck Disguise
+}));

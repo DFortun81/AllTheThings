@@ -69,19 +69,8 @@ root(ROOTS.Unsorted, {
 				i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
 				i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
 				i(212383),	-- Yawning Basket of Aspect's Awakened Crests
-				------ Nobelgarden ------
-				i(216890),	-- Black Duck Disguise
-				i(216897),	-- Brown Duck Disguise
-				i(216488),	-- Duck Potion
-				i(216489),	-- Golden Egg Heirloom
-				i(216874),	-- Loot-Filled Basket
+				------ Noblegarden ------
 				i(213428),	-- Loot-Stuffed Basket
-				i(216898),	-- Mallard Duck Disguise
-				i(210594),	-- Noblegarden Trinket
-				i(216932),	-- Noblegarden Trinket
-				i(216900),	-- Pink Duck Disguise
-				i(216901),	-- White Duck Disguise
-				i(216902),	-- Yellow Duck Disguise
 				------ Unknown ------
 				i(212175),	-- Draconic Commendation
 			}),
@@ -190,7 +179,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(TOYS, {
 				i(218128),	-- Draconic Banner of the Aspects (TOY!)
-				i(216881),	-- Duck Disguiser (TOY!) [Nobelgarden]
 			}),
 			i(216672),	-- The Ambush
 			i(221779),	-- Bent Card
@@ -201,7 +189,6 @@ root(ROOTS.Unsorted, {
 				ach(19031),	-- Fyrn [Promotion]
 			}),
 			filter(BATTLE_PETS, {
-				i(212786),	-- Lovely Duckling (PET!) [Noblegarden]
 				i(212791),	-- Beetriz (PET!) [Trading Post]
 				i(208446),	-- Fyrn (PET!) [Promotion]
 			}),
@@ -291,11 +278,6 @@ root(ROOTS.Unsorted, {
 				i(212987),	-- Spring Reveler's Cornsilk Pants
 				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
 				i(212698),	-- Spring Reveler's Turquoise Attire
-				i(212699),	-- Spring Reveler's Turquoise Belt
-				i(212701),	-- Spring Reveler's Turquoise Boots
-				i(212711),	-- Spring Reveler's Turquoise Dress
-				i(212985),	-- Spring Reveler's Turquoise Pants
-				i(212715),	-- Spring Reveler's Turquoise Sun Hat
 				i(190818),	-- Steamwheedle Artifact Extractor
 				i(213075),	-- Sunny Bow-quet
 				i(213071),	-- Sunny Floral Staff
@@ -320,9 +302,6 @@ root(ROOTS.Unsorted, {
 				i(212599),	-- Noble Flying Carpet (MOUNT!) [Noblegarden]
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
 				i(212632),	-- Starry Twilight Peafowl (MOUNT!)
-			}),
-			filter(QUEST_ITEMS, {
-				i(212643),	-- Golden Egg Heirloom
 			}),
 			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
 				n(BACK, {
@@ -586,7 +565,6 @@ root(ROOTS.Unsorted, {
 				q(77764),	-- Curious Find: Apprentice Astrologist Homework
 				q(78174),	--
 				q(78272),	-- Interrupting Duck
-				q(78274),	--
 				q(78683),	--
 				q(78893),	--
 				q(78894),	--
@@ -598,9 +576,6 @@ root(ROOTS.Unsorted, {
 				q(79131),	--
 				q(79132),	--
 				q(79133),	--
-				q(79134),	--
-				q(79135),	--
-				q(79136),	--
 				q(79155),	--
 				q(79207),	--
 				q(79208),	--
@@ -609,10 +584,6 @@ root(ROOTS.Unsorted, {
 				q(79211),	--
 				q(79278),	--
 				q(79314),	--
-				q(79322),	-- What the Duck?
-				q(79323),	--
-				q(79330),	--
-				q(79331),	--
 				-- 10.2.5.52330
 				q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
 				q(79353),	--
@@ -625,10 +596,6 @@ root(ROOTS.Unsorted, {
 				q(79517),	--
 				q(79537),	-- Jrz Test Currency Quest
 				q(79558),	-- Feathered Fiend
-				q(79575),	-- What the Duck?
-				q(79576),	--
-				q(79577),	--
-				q(79578),	--
 				q(79621),	--
 				-- 10.2.5.52554
 				q(79676),	--
