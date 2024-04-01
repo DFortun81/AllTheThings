@@ -1005,7 +1005,7 @@ if app.IsRetail then
 				-- should never use CreateQuest since it would mean we have sourceQuests linked to a QuestID which isn't cached
 				local accepted = Search("questID", questID) or app.CreateQuest(questID)
 				for _,bc in pairs(nextQuests) do
-					if not bc.collected and not bc.locked and app.RecursiveCharacterRequirementsFilter(bc) and app.RecursiveUnobtainableFilter(bc) then
+					if bc.collectible and not bc.collected and not bc.locked and app.RecursiveCharacterRequirementsFilter(bc) and app.RecursiveUnobtainableFilter(bc) then
 						app.FunctionRunner.Run(PrintBreadcrumbWarning, accepted, bc)
 					end
 				end
@@ -1021,7 +1021,7 @@ else
 			if #nextQuests > 0 then
 				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
 					for _,group in pairs(nextQuests) do
-						if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
+						if group.collectible and not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
 							coroutine.yield();
 							while not group.text do
 								coroutine.yield();
