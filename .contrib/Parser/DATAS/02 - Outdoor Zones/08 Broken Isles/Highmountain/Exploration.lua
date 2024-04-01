@@ -11,7 +11,9 @@ root(ROOTS.Zones, {
 				exploration(8088),	-- Clackbrine Coast
 				exploration(7782),	-- Cliff's Edge
 				exploration(8051),	-- Cordana's Apex
+				exploration(7845),	-- Crystal Fissure
 				exploration(7755),	-- Darkfeather Valley
+				exploration(7791),	-- Earthmother's Bounty
 				exploration(8256),	-- Felbane Camp
 				exploration(8159),	-- Feltotem
 				exploration(7729),	-- Fields of An'she
@@ -37,6 +39,7 @@ root(ROOTS.Zones, {
 				exploration(8050),	-- Sylvan Falls
 				exploration(7728),	-- The Haglands
 				exploration(7769),	-- The Witchwood
+				exploration(7731),	-- Thunder Totem
 				exploration(7810),	-- Torok's Bluff
 				exploration(7877),	-- Trueshot Lodge [TODO: Is this Hunter only?]
 				exploration(7724),	-- Whitewater Wash

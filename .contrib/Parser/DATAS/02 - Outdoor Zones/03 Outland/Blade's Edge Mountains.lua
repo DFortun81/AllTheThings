@@ -172,7 +172,9 @@ root(ROOTS.Zones, {
 					exploration(3785),	-- Forge Camp: Wrath
 					exploration(3781),	-- Grishnath
 					exploration(3774),	-- Gruul's Lair
-					--exploration(3768),	-- Jagged Ridge (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3768),	-- Jagged Ridge (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3844),	-- Mok'Nathal Village
 					exploration(3786),	-- Ogri'la
 					exploration(3830),	-- Raven's Wood

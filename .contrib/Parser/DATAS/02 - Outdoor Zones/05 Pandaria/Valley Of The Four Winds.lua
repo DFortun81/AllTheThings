@@ -59,6 +59,7 @@ root(ROOTS.Zones, {
 					exploration(6064),	-- Skyrange
 					exploration(5968),	-- Stoneplow
 					exploration(5969),	-- Stoneplow Fields
+					exploration(6001),	-- Stormstout Brewery
 					exploration(5958),	-- Sunsoaked Meadow
 					exploration(5992),	-- The Heartland
 					exploration(5982),	-- The Imperial Granary

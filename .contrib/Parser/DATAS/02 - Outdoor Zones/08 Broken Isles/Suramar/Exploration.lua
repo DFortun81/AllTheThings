@@ -7,6 +7,7 @@ root(ROOTS.Zones, {
 		m(SURAMAR, {
 			explorationHeader({
 				exploration(7984),	-- Ambervale
+				exploration(8329),	-- Anora Hollow
 				exploration(7917),	-- Azuregale Bay
 				exploration(8033),	-- Azuregale Cove
 				exploration(8349),	-- Cliffclutch Roost
@@ -22,9 +23,11 @@ root(ROOTS.Zones, {
 				exploration(7991),	-- Koralune Manor
 				exploration(8221),	-- Lower Gardens
 				exploration(8021),	-- Lunastre Estate
+				exploration(7840),	-- Meredil
 				exploration(7842),	-- Moon Guard Stronghold
 				exploration(7995),	-- Moonshade Sanctum
 				exploration(8233),	-- Moonwhisper Gulch
+				exploration(8173),	-- Ruins of Elune'eth
 				exploration(7916),	-- Sashj'tar Ruins
 				exploration(8148),	-- Suramar City
 				exploration(7841),	-- Tel'anor
