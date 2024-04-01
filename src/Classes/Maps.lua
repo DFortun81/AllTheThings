@@ -249,10 +249,14 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 		return C_Map_GetAreaInfo(t.explorationID) or RETRIEVING_DATA;
 	end,
 	["description"] = function(t)
-		if not TomTom then
-			return "You can use Alt+Right Click to plot the coordinates with TomTom installed. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
+		if t.coords and #t.coords > 0 then
+			if not TomTom then
+				return "You can use Alt+Right Click to plot the coordinates with TomTom installed. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
+			else
+				return "You can use Alt+Right Click to plot the coordinates. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
+			end
 		else
-			return "You can use Alt+Right Click to plot the coordinates. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
+			return "This exploration node is missing coordinates in our database. It may be unavailable.";
 		end
 	end,
 	["artID"] = function(t)
@@ -265,7 +269,7 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 		return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
 	end,
 	["collectible"] = function(t)
-		return app.Settings.Collectibles.Exploration;
+		return app.Settings.Collectibles.Exploration and t.coords and #t.coords > 0;
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Exploration[t.explorationID] then return 1; end
@@ -642,7 +646,13 @@ local function HarvestExploration(simplify)
 		app:SetupReportDialog(popupID, text, info);
 		print("Found Areas:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
 	end
-	if simplify then SimplifyExplorationData(rawExplorationAreaPositionDB); end
+	if simplify then
+		SimplifyExplorationData(rawExplorationAreaPositionDB);
+	else
+		for areaID,coords in pairs(rawExplorationAreaPositionDB) do
+			ExplorationAreaPositionDB[areaID] = coords;
+		end
+	end
 end
 app.HarvestExploration = function(simplify)
 	app:StartATTCoroutine("Harvest Exploration", function()
