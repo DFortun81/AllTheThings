@@ -324,7 +324,9 @@ root(ROOTS.Zones, {
 					-- #endif
 					exploration(3686),	-- Veil Lithic
 					exploration(3689),	-- Veil Reskk
-					--exploration(3889),	-- Veil Rhaze (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3889),	-- Veil Rhaze (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3678),	-- Veil Shalas
 					exploration(3676),	-- Veil Shienor
 					exploration(3677),	-- Veil Skith
