@@ -99,6 +99,7 @@ root(ROOTS.Zones, {
 					exploration(6171),	-- Hatred's Vice
 					exploration(6205),	-- Kri'vess
 					exploration(6166),	-- Longying Outpost
+					exploration(6164),	-- Lower Sumprushes
 					exploration(6213),	-- Niuzao Temple
 					exploration(6193),	-- Rensai's Watchpost
 					exploration(6197),	-- Shado-Pan Garrison

@@ -108,26 +108,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(3197),	-- Chillwind Camp
 				-- #endif
-				exploration(200, "220:150:381:265"),	-- Dalson's Tears / Dalson's Farm [CATA+]
-				exploration(2297, "370:270:504:343"),	-- Darrowmere Lake
-				exploration(199, "160:125:300:311"),	-- Felstone Field
-				exploration(201, "180:205:520:250"),	-- Gahrron's Withering
-				exploration(190, "340:288:307:16"),		-- Hearthglen
-				exploration(192, "220:180:382:164"),	-- Northridge Lumber Camp
+				exploration(200),	-- Dalson's Tears / Dalson's Farm [CATA+]
+				exploration(2297),	-- Darrowmere Lake
+				exploration(199),	-- Felstone Field
+				exploration(201),	-- Gahrron's Withering
+				exploration(190),	-- Hearthglen
+				exploration(192),	-- Northridge Lumber Camp
+				-- #if AFTER CATA
+				exploration(5421),	-- Redpine Dell
+				-- #endif
 				-- #if BEFORE CATA
-				exploration(193, "285:230:260:355"),	-- Ruins of Andorhal
+				exploration(193),	-- Ruins of Andorhal
 				-- #endif
 				-- #if AFTER CATA
 				exploration(2057),	-- Scholomance
 				-- #endif
-				exploration(197, "300:206:355:462"),	-- Sorrow Hill
-				exploration(813, "225:185:137:293"),	-- The Bulwark
+				exploration(197),	-- Sorrow Hill
+				exploration(813),	-- The Bulwark
 				-- #if AFTER CATA
 				exploration(5367),	-- The Menders' Stead
 				-- #endif
-				exploration(198, "160:200:566:198"),	-- The Weeping Cave
-				exploration(202, "170:190:451:323"),	-- The Writhing Haunt
-				exploration(2620, "205:340:590:86"),	-- Thondroril River
+				exploration(198),	-- The Weeping Cave
+				exploration(202),	-- The Writhing Haunt
+				exploration(2620),	-- Thondroril River
 				-- #if AFTER CATA
 				exploration(196),	-- Uther's Tomb
 				-- #endif

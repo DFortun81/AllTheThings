@@ -104,41 +104,45 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(4804),	-- Cenarion Wildlands
+				-- #endif
 				exploration(2405),	-- Ethel Rethor
+				-- #if AFTER CATA
 				exploration(4803),	-- Furien's Post
+				-- #endif
 				exploration(606),	-- Gelkis Village
 				exploration(596),	-- Kodo Graveyard
+				-- #if BEFORE CATA
+				exploration(609),	-- Kolkar Village
+				exploration(2407),	-- Kormek's Hut
+				-- #endif
+				-- #if AFTER CATA
 				exploration(4797),	-- Magram Territory
+				-- #endif
+				-- #if BEFORE CATA
+				exploration(604),	-- Magram Village / Shok'Thokar [CATA+]
+				-- #endif
 				exploration(602),	-- Mannoroc Coven
+				-- #if AFTER CATA
 				exploration(2100),	-- Maraudon
+				-- #endif
 				exploration(608),	-- Nijel's Point
 				exploration(2406),	-- Ranazjar Isle
 				exploration(603),	-- Sargeron
 				exploration(2198),	-- Shadowbreak Ravine
 				exploration(2408),	-- Shadowprey Village
-				exploration(604),	-- Shok'Thokar
+				-- #if AFTER CATA
+				exploration(604),	-- Shok'Thokar [CATA+] / Magram Village
 				exploration(4796),	-- Slitherblade Shore
-				exploration(2404),	-- Tethris Aran
-				exploration(599),	-- Thunder Axe Fortress
-				exploration(2657),	-- Valley of Bones
-				exploration(607),	-- Valley of Spears
-				-- #else
-				exploration(2405, "205:250:311:61"),	-- Ethel Rethor
-				exploration(596, "275:250:387:244"),	-- Kodo Graveyard
-				exploration(609, "220:220:607:215"),	-- Kolkar Village
-				exploration(2407, "170:160:555:181"),	-- Kormek's Hut
-				exploration(606, "195:242:293:426"),	-- Gelkis Village
-				exploration(604, "205:285:590:365"),	-- Magram Village
-				exploration(602, "285:280:399:380"),	-- Mannoroc Coven
-				exploration(608, "200:250:554:0"),		-- Nijel's Point
-				exploration(2406, "100:100:241:6"),		-- Ranazjar Isle
-				exploration(603, "285:245:625:33"),		-- Sargeron
-				exploration(2198, "205:195:690:444"),	-- Shadowbreak Ravine
-				exploration(2408, "230:230:167:389"),	-- Shadowprey Village
-				exploration(2404, "205:145:431:0"),		-- Tethris Aran
-				exploration(599, "190:220:447:102"),	-- Thunder Axe Fortress
-				exploration(607, "245:285:212:215"),	-- Valley of Spears
 				-- #endif
+				exploration(2404),	-- Tethris Aran
+				-- #if AFTER CATA
+				exploration(4798),	-- Thargad's Camp
+				-- #endif
+				exploration(599),	-- Thunder Axe Fortress
+				-- #if AFTER CATA
+				exploration(2657),	-- Valley of Bones
+				-- #endif
+				exploration(607),	-- Valley of Spears
 				--[[
 				exploration(600),	-- Bolgan's Hole
 				exploration(2217),	-- Broken Spear Village

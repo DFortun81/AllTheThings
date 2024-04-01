@@ -1892,24 +1892,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(367),	-- Sen'jin Village
 				exploration(817),	-- Skull Rock
 				exploration(4981),	-- Southfury Watershed
+				exploration(4982),	-- The Dranosh'ar Blockade
 				exploration(369),	-- Thunder Ridge
 				exploration(372),	-- Tiragarde Keep
 				exploration(2979),	-- Tor'kren Farm
 				exploration(363),	-- Valley of Trials
 				exploration(4864),	-- Zalazane's Fall
 				-- #else
-				exploration(370, "210:160:427:78"),		-- Drygulch Ravine
-				exploration(368, "200:240:549:427"),	-- Echo Isles
-				exploration(366, "160:120:413:476"),	-- Kolkar Crag
-				exploration(1637, "445:160:244:0"),		-- Orgrimmar
-				exploration(362, "220:230:432:170"),	-- Razor Hill
-				exploration(816, "230:230:301:189"),	-- Razormane Grounds
+				exploration(370),	-- Drygulch Ravine
+				exploration(368),	-- Echo Isles
+				exploration(366),	-- Kolkar Crag
+				exploration(1637),	-- Orgrimmar
+				exploration(362),	-- Razor Hill
+				exploration(816),	-- Razormane Grounds
 				exploration(410),	-- Razorwind Canyon
-				exploration(367, "160:190:474:384"),	-- Sen'jin Village
-				exploration(817, "128:110:464:33"),		-- Skull Rock
-				exploration(369, "190:200:327:60"),		-- Thunder Ridge
-				exploration(372, "190:180:462:286"),	-- Tiragarde Keep
-				exploration(363, "215:215:355:320"),	-- Valley of Trials
+				exploration(367),	-- Sen'jin Village
+				exploration(817),	-- Skull Rock
+				exploration(369),	-- Thunder Ridge
+				exploration(372),	-- Tiragarde Keep
+				exploration(363),	-- Valley of Trials
 				-- #endif
 				--[[
 				exploration(365),	-- Burning Blade Coven

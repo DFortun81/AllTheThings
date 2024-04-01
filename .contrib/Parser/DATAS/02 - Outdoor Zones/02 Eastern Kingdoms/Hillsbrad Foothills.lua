@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(288, "165:200:175:275"),	-- Azurelode Mine
+				exploration(288),	-- Azurelode Mine
 				-- #if AFTER CATA
 				exploration(278),	-- Brazie Farmstead
 				exploration(1684),	-- Chillwind Point
@@ -110,14 +110,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(279),	-- Dalaran Crater
 				exploration(1682),	-- Dandred's Fold
 				-- #endif
-				exploration(1056, "205:155:414:154"),	-- Darrow Hill
-				exploration(290, "240:275:637:294"),	-- Dun Garok
-				exploration(275, "384:365:605:75"),		-- Durnholde Keep
+				exploration(1056),	-- Darrow Hill
+				exploration(290),	-- Dun Garok
+				exploration(275),	-- Durnholde Keep
 				-- #if AFTER CATA
 				exploration(5603),	-- Eastpoint Tower
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(294, "230:320:524:339"),	-- Eastern Strand
+				exploration(294),	-- Eastern Strand
 				-- #endif
 				-- #if AFTER CATA
 				exploration(1357),	-- Gallow's Corner
@@ -126,35 +126,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(287),	-- Hillsbrad
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(286, "305:275:198:155"),	-- Hillsbrad Fields
+				exploration(286),	-- Hillsbrad Fields
 				-- #endif
 				-- #if AFTER CATA
 				exploration(1681),	-- Misty Shore
 				-- #endif
-				exploration(289, "215:240:541:236"),	-- Nethander Stead
-				exploration(896, "125:100:109:482"),	-- Purgation Isle
+				exploration(289),	-- Nethander Stead
+				exploration(896),	-- Purgation Isle
 				-- #if AFTER CATA
 				exploration(281),	-- Ruins of Alterac
 				exploration(271),	-- Ruins of Southshore
+				exploration(283),	-- Slaughter Hollow
 				exploration(5604),	-- Sludgeguard Tower
 				exploration(1678),	-- Sofera's Naze
 				exploration(285),	-- Southpoint Gate
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(285, "288:225:2:192"),		-- Southpoint Tower
-				exploration(271, "235:270:418:201"),	-- Southshore
+				exploration(285),	-- Southpoint Tower
+				exploration(271),	-- Southshore
 				-- #endif
 				-- #if AFTER CATA
 				exploration(280),	-- Strahnbrad
 				-- #endif
-				exploration(272, "220:310:509:0"),		-- Tarren Mill
+				exploration(272),	-- Tarren Mill
 				-- #if AFTER CATA
 				exploration(1680),	-- The Headland
 				exploration(286),	-- The Sludge Fields
 				exploration(284),	-- The Uplands
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(295, "285:155:208:368"),	-- Western Strand
+				exploration(295),	-- Western Strand
 				-- #endif
 				--[[
 				exploration(2397),	-- The Great Sea

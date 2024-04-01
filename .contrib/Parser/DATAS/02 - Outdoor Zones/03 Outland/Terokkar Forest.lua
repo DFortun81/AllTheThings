@@ -289,7 +289,9 @@ root(ROOTS.Zones, {
 					exploration(3680),	-- Blackwind Valley
 					exploration(3719),	-- Bleeding Hollow Ruins
 					exploration(3685),	-- Bonechewer Ruins
-					--exploration(3891),	-- Carrion Hill (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3891),	-- Carrion Hill (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3674),	-- Cenarion Thicket
 					--exploration(3886),	-- Derelict Caravan (Wrath Classic: Can't be collected)
 					exploration(3681),	-- Firewing Point

@@ -114,6 +114,7 @@ root(ROOTS.Zones, {
 					exploration(6817),	-- Grimfrost Hill
 					exploration(6779),	-- Grom'gar
 					exploration(6983),	-- Iron Siegeworks
+					exploration(7076),	-- Iron Waystation
 					exploration(6784),	-- Magnarok
 					exploration(6777),	-- Stonefang Outpost
 					exploration(6964),	-- Stonefang Ridge

@@ -300,6 +300,9 @@ root(ROOTS.Zones, {
 					exploration(3699),	-- Laughing Skill Courtyard
 					exploration(3616),	-- Laughing Skull Ruins
 					exploration(3672),	-- Mag'hari Procession
+					-- #if AFTER CATA
+					exploration(7296),	-- Mok'gol Watchpost
+					-- #endif
 					exploration(3673),	-- Nesingwary Safari
 					exploration(3627),	-- Northwind Cleft
 					exploration(3630),	-- Oshu'gun

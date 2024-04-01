@@ -55,6 +55,7 @@ root(ROOTS.Zones, {
 					exploration(5972),	-- Pools of Purity
 					exploration(6387),	-- Rumbling Terrace
 					exploration(5986),	-- Silken Fields
+					exploration(5970),	-- Singing Marshes
 					exploration(6064),	-- Skyrange
 					exploration(5968),	-- Stoneplow
 					exploration(5969),	-- Stoneplow Fields

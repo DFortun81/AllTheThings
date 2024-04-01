@@ -110,6 +110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5671),	-- Ruins of Khintaset
 				exploration(5602),	-- Schnottz's Landing
 				exploration(5696),	-- Surveyors' Outpost
+				exploration(5669),	-- Temple of Uldum
 				exploration(5612),	-- The Cursed Landing
 				exploration(5420),	-- The Gate of Unending Cycles
 				exploration(5613),	-- The Steps of Fate
