@@ -326,16 +326,19 @@ local function PrintDiscordInformationForExploration(o)
 	app:SetupReportDialog(popupID, text, info);
 	print("Found Area:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
 end
+local RefreshExplorationData = app.IsClassic and (function(data)
+	app:RefreshDataQuietly("RefreshExploration", true);
+end) or (function(data) UpdateRawIDs("explorationID", data); end)
 local function CheckExplorationForMapID(mapID)
 	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 	if pos then
 		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 		if explored then
-			local newArea = false;
+			local newAreas = {};
 			for _,areaID in ipairs(explored) do
 				if not app.CurrentCharacter.Exploration[areaID] then
 					app.SetCollected(nil, "Exploration", areaID, true);
-					newArea = true;
+					tinsert(newAreas, areaID);
 				end
 				if not ReportedAreas[areaID] then
 					if #app.SearchForField("explorationID", areaID) < 1 then
@@ -343,7 +346,7 @@ local function CheckExplorationForMapID(mapID)
 					end
 				end
 			end
-			if newArea then app:RefreshDataQuietly("RefreshExploration", true); end
+			if #newAreas > 0 then RefreshExplorationData(newAreas); end
 		end
 	end
 end
@@ -357,9 +360,7 @@ local function CheckExplorationForCurrentLocation()
 end
 app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
--- Event Handlering (Classic Only, until this feature as a while is supported by Retail!)
-app.SetupExplorationEvents = function()
-app.SetupExplorationEvents = nil;
+-- Event Handlering
 app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
 app.events.MAP_EXPLORATION_UPDATED = CheckExplorationForCurrentLocation;
 app.events.UI_INFO_MESSAGE = function(messageID)
@@ -367,8 +368,6 @@ app.events.UI_INFO_MESSAGE = function(messageID)
 end
 app:RegisterEvent("MAP_EXPLORATION_UPDATED");
 app:RegisterEvent("UI_INFO_MESSAGE");
-end
-if app.IsClassic then app.SetupExplorationEvents(); end
 
 -- Harvesting
 local OnClickForExplorationHeader = function(row, button)
@@ -384,7 +383,7 @@ end
 local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	while InCombatLockdown() do coroutine.yield(); end
 	app.print("Simplifying Exploration Data...");
-	local allMapData = {};
+	local allMapData, mapIDs = {},{};
 	local explorationDB = {};
 	for areaID,coords in pairs(rawExplorationAreaPositionDB) do
 		for i,coord in ipairs(coords) do
@@ -400,6 +399,7 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 					mapData.hits = {};
 					allMapData[mapID] = mapData;
 					explorationDB[mapID] = mapData.areaList;
+					tinsert(mapIDs, mapID);
 				end
 				if not mapData.areas[areaID] then
 					mapData.areas[areaID] = 1;
@@ -414,11 +414,13 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 		end
 	end
 	app.print("Determining best coordinates for areas...");
+	table.sort(mapIDs);
 	local sortMethod = function(a, b)
 		return a[1] > b[1];
 	end;
 	local explorationAreaPositionDB = {};
-	for mapID,mapData in pairs(allMapData) do
+	for i,mapID in ipairs(mapIDs) do
+		local mapData = allMapData[mapID];
 		app.print("Determining best coordinates for map ".. mapID);
 		local hitsByAreaID, hitsByCount = setmetatable({}, AreaExplorationMeta), {};
 		for hash,hits in pairs(mapData.hits) do
@@ -459,6 +461,7 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 				local x, y = hash:match("(%d+):(%d+)");
 				tinsert(coords, { tonumber(x) * 0.01, tonumber(y) * 0.01, mapID });
 			end
+			ExplorationAreaPositionDB[areaID] = coords;
 		end
 	end
 	AllTheThingsAD.ExplorationAreaPositionDB = explorationAreaPositionDB;
