@@ -280,7 +280,9 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(3901),	-- Allerian Post
 					exploration(3684),	-- Allerian Stronghold
-					--exploration(3894),	-- Auchenai Grounds (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3894),	-- Auchenai Grounds (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3688),	-- Auchindoun
 					exploration(3690),	-- Blackwind Lake
 					exploration(3973),	-- Blackwind Landing

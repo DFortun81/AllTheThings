@@ -15,6 +15,7 @@ root(ROOTS.Zones, {
 				exploration(8548),	-- Felrage Strand
 				exploration(8571),	-- Forlorn Depths
 				exploration(8551),	-- Garrison of the Fel
+				exploration(7798),	-- Hope's End
 				exploration(8530),	-- Impsorrow Approach
 				exploration(8576),	-- Jagged Cove
 				exploration(8643),	-- Path of Suffering
@@ -23,6 +24,7 @@ root(ROOTS.Zones, {
 				exploration(8590),	-- Soldier's Torment
 				exploration(8584),	-- Soul Ruin
 				exploration(8545),	-- The Creeping Grotto
+				exploration(7797),	-- The Shattered Edge
 				exploration(8336),	-- The Tomb of Sargeras
 				exploration(8543),	-- The Weeping Terrace
 				exploration(8560),	-- Vengeance Point

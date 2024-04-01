@@ -89,29 +89,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(447),	-- Ameth'Aran
+				-- #if BEFORE CATA
+				exploration(442),	-- Auberdine
+				exploration(446),	-- Bashal'Aran
+				exploration(445),	-- Cliffspring Falls
+				exploration(456),	-- Cliffspring River
+				-- #endif
 				exploration(448),	-- Grove of the Ancients
+				-- #if AFTER CATA
 				exploration(4659),	-- Lor'danel
+				exploration(5312),	-- Nazj'vel
+				-- #endif
 				exploration(450),	-- Remtravel's Excavation
+				-- #if AFTER CATA
 				exploration(442),	-- Ruins of Auberdine
+				-- #endif
 				exploration(443),	-- Ruins of Mathystra
+				-- #if AFTER CATA
 				exploration(4664),	-- Shatterspear Vale
 				exploration(4662),	-- Shatterspear War Camp
 				exploration(4695),	-- The Eye of the Vortex
+				-- #endif
 				exploration(449),	-- The Master's Glaive
+				-- #if BEFORE CATA
+				exploration(444),	-- Tower of Althalaxx
+				-- #endif
+				-- #if AFTER CATA
 				exploration(4675),	-- Withering Thicket
-				-- #else
-				exploration(447, "190:205:324:306"),	-- Ameth'Aran
-				exploration(442, "150:215:318:162"),	-- Auberdine
-				exploration(446, "180:195:365:181"),	-- Bashal'Aran
-				exploration(445),	-- Cliffspring Falls
-				exploration(456, "230:190:375:94"),		-- Cliffspring River
-				exploration(448, "200:170:305:412"),	-- Grove of the Ancients
-				exploration(450, "175:183:229:485"),	-- Remtravel's Excavation
-				exploration(443, "195:215:510:0"),		-- Ruins of Mathystra
-				exploration(449, "175:158:329:510"),	-- The Master's Glaive
-				exploration(444, "170:195:468:85"),		-- Tower of Althalaxx
+				exploration(454),	-- Wildbend River
 				-- #endif
 				--[[
 				exploration(455),	-- Blackwood Den
@@ -120,7 +126,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2326),	-- The Veiled Sea
 				exploration(2078),	-- Twilight Shore
 				exploration(2077),	-- Twilight Vale
-				exploration(454),	-- Wildbend River
 				]]--
 			}),
 			prof(FISHING, {

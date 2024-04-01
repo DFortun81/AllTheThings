@@ -153,11 +153,15 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(3864),	-- Bash'ir Landing
 					exploration(3780),	-- Blackwing Coven
-					--exploration(3867),	-- Bladed Gulch (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3867),	-- Bladed Gulch (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3773),	-- Bladespire Hold
 					exploration(3777),	-- Bloodmaul Camp
 					exploration(3776),	-- Bloodmaul Outpost
-					--exploration(3863),	-- Broken Wilds (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3863),	-- Broken Wilds (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3775),	-- Circle of Blood
 					exploration(3865),	-- Crystal Spine
 					exploration(3831),	-- Death's Door
@@ -175,7 +179,9 @@ root(ROOTS.Zones, {
 					exploration(3833),	-- Razor Ridge
 					exploration(3828),	-- Ruuan Weald
 					exploration(3919),	-- Singing Ridge
-					--exploration(3866),	-- Skald (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3866),	-- Skald (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3964),	-- Skyguard Outpost
 					exploration(3772),	-- Sylvanaar
 					exploration(3771),	-- The Living Grove

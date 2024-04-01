@@ -305,7 +305,9 @@ root(ROOTS.Zones, {
 					exploration(3630),	-- Oshu'gun
 					exploration(3614),	-- Skysong Lake
 					exploration(3629),	-- Southwind Cleft
-					--exploration(3631),	-- Spirit Fields (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					exploration(3631),	-- Spirit Fields (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3622),	-- Sunspring Post
 					exploration(3626),	-- Telaar
 					exploration(3760),	-- The Barrier Hills

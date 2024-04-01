@@ -295,7 +295,7 @@ local ReportedAreas = {};
 local function PrintDiscordInformationForExploration(o)
 	local areaID = o.explorationID;
 	if not areaID or ReportedAreas[areaID] then return; end
-	ReportedAreas[areaID] = true;
+	ReportedAreas[areaID] = o;
 	
 	local text = o.text;
 	local mapID = o.mapID;
@@ -607,6 +607,38 @@ local function HarvestExploration(simplify)
 	end
 	AllTheThingsAD.ExplorationDB = ExplorationDB;
 	app.print("Exploration Harvest complete. You can now Ctrl+Right Click on an Exploration header to copy its content.");
+	local reportedAreas = {};
+	for areaID,o in pairs(ReportedAreas) do
+		tinsert(reportedAreas, o);
+	end
+	if #reportedAreas > 0 then
+		-- Create an information object.
+		local info = {
+			"### Found Area Summary",
+			"```lua",
+		};
+		
+		local areasByMapID = setmetatable({}, AreaExplorationMeta);
+		for i,o in ipairs(reportedAreas) do
+			tinsert(areasByMapID[o.mapID], o);
+		end
+		for mapID,areas in pairs(areasByMapID) do
+			app.Sort(areas, app.SortDefaults.text);
+			tinsert(info, "-- " .. GetMapName(mapID));
+			for i,o in ipairs(areas) do
+				tinsert(info, "exploration(" .. o.explorationID .. "),\t-- " .. o.text);
+			end
+			tinsert(info, "");
+		end
+		
+		tinsert(info, "ver: "..app.Version);
+		tinsert(info, "build: "..app.GameBuildVersion);
+		tinsert(info, "```");	-- discord fancy box end
+		
+		local popupID, text = "found-area-summary", "Summary";
+		app:SetupReportDialog(popupID, text, info);
+		print("Found Areas:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
+	end
 	if simplify then SimplifyExplorationData(rawExplorationAreaPositionDB); end
 end
 app.HarvestExploration = function(simplify)
