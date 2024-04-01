@@ -647,7 +647,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["groups"] = {
 				objective(1, {	-- 0/10 Ducks Scared
 					["provider"] = { "i", 210558 },	-- Horn of Honking (QI!)
-					["crs"] = 217725,	-- Furious Duck
+					["cr"] = 217725,	-- Furious Duck
 				}),
 			},
 		}),
@@ -660,7 +660,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["groups"] = {
 				objective(1, {	-- 0/10 Ducks Scared
 					["provider"] = { "i", 216487 },	-- Horn of Honking (QI!)
-					["crs"] = 217725,	-- Furious Duck
+					["cr"] = 217725,	-- Furious Duck
 				}),
 			},
 		}),
