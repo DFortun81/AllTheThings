@@ -2379,14 +2379,19 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				prof(FISHING, {
 					i(133755, {	-- Underlight Angler
+						-- Note for future: These don't load a SourceID via GetSourceID()...
+						-- so they can be applied manually
 						artifact(841, {	-- Base Skin
 							["sourceQuest"] = 41010,	-- Fish Frenzy
+							["sourceID"] = 76909,
 						}),
 						artifact(988, {	-- Fisherfriend of the Isles
 							["provider"] = { "i", 152583 },	-- Underlight Emerald
+							["sourceID"] = 82962,
 						}),
 						artifact(989, {	-- Fisherfriend of the Isles
 							["provider"] = { "i", 152583 },	-- Underlight Emerald
+							["sourceID"] = 82963,
 						}),
 					}),
 				}),

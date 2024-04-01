@@ -4236,8 +4236,10 @@ local function SearchForLink(link)
 		local itemString = link:match("item[%-?%d:]+") or link;
 		if itemString then
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
-				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = (":"):split(link);
+				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID = (":"):split(link);
 			if itemID then
+				-- app.PrintDebug("SFL",itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
+				-- 	linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID)
 				itemID = tonumber(itemID) or 0;
 				-- Don't use SourceID for artifact searches since they contain many SourceIDs
 				local sourceID = select(3, GetItemInfo(link)) ~= 6 and app.GetSourceID(link);
@@ -4250,6 +4252,12 @@ local function SearchForLink(link)
 					-- Search for the Item ID. (an item without an appearance)
 					local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1);
 					local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
+					-- Artifacts use a different modItemID
+					if bonusCount == "" and artifactID ~= "" then
+						exactItemID = app.GetArtifactModItemID(itemID, tonumber(artifactID), bonusID1 == 1)
+						modItemID = itemID
+						-- app.PrintDebug("artifact!",exactItemID)
+					end
 					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
 					if exactItemID ~= itemID then
 						_ = SearchForField("itemID", exactItemID);

@@ -6,6 +6,7 @@ local C_ArtifactUI = C_ArtifactUI;
 if not C_ArtifactUI then
 	-- Artifacts are not supported by this version of the game client.
 	app.AddArtifactRelicInformation = app.DoNothing;
+	app.GetArtifactModItemID = app.DoNothing
 	app.CreateArtifact = app.CreateUnimplementedClass("Artifact", "artifactID");
 	return
 end
@@ -19,6 +20,11 @@ local GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem = GetDetailedIt
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
 local ATTAccountWideData, ATTAccountWideDataArtifacts
+
+local function GetArtifactModItemID(itemID, artifactID, isOffHand)
+	return itemID + (isOffHand and 0.0001 or 0) + (artifactID / 1000)
+end
+app.GetArtifactModItemID = GetArtifactModItemID
 
 -- Artifact Class
 app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
@@ -114,7 +120,7 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 	end,
 	["modItemID"] = function(t)
 		-- Artifacts will use a fake modItemID by way of the ArtifactID and IsOffhand
-		local modItemID = t.itemID + (t.isOffHand and 0.0001 or 0) + (t.artifactID / 1000)
+		local modItemID = GetArtifactModItemID(t.itemID, t.artifactID, t.isOffHand)
 		-- app.PrintDebug("artifact.modItemID",modItemID,t.itemID,t.artifactID,t.isOffHand)
 		t.modItemID = modItemID;
 		return modItemID;
