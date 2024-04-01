@@ -30,16 +30,6 @@ root(ROOTS.Unsorted, {
 				i(217036),	-- Gladiator's Battered Shoulderpads
 				i(217031),	-- Gladiator's Battered Treads
 
-				------ Gladiator's Ragged ------
-				i(217029),	-- Ensemble: Gladiator's Ragged Armor
-				i(217028),	-- Gladiator's Ragged Belt
-				i(217021),	-- Gladiator's Ragged Chest
-				i(217023),	-- Gladiator's Ragged Grips
-				i(217024),	-- Gladiator's Ragged Headband
-				i(217026),	-- Gladiator's Ragged Leggings
-				i(217027),	-- Gladiator's Ragged Shoulderpads
-				i(217022),	-- Gladiator's Ragged Treads
-
 				------ Single Pieces ------
 				i(213635),	-- Checkered Pennant
 				i(213396),	-- Classic Midnight Tabard

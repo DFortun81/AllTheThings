@@ -508,6 +508,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(212179),	-- Dreadlord's Shadowsbane Tunic
 			i(212187),	-- Dreadlord's Shadowsbane Wristbands
 		})),
+		i(217029,	-- Ensemble: Gladiator's Ragged Armor
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.6.53989", "removed 10.2.6.99999" } }, {
+			i(217028),	-- Gladiator's Ragged Belt
+			i(217021),	-- Gladiator's Ragged Chest
+			i(217023),	-- Gladiator's Ragged Grips
+			i(217024),	-- Gladiator's Ragged Headband
+			i(217026),	-- Gladiator's Ragged Leggings
+			i(217027),	-- Gladiator's Ragged Shoulderpads
+			i(217022),	-- Gladiator's Ragged Treads
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
