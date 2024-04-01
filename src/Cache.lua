@@ -1187,7 +1187,7 @@ local function GenerateSourcePath(group, l)
 		if l < 1 then
 			return GenerateSourcePath(parent, l + 1);
 		else
-			return GenerateSourcePath(parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
+			return GenerateSourcePath(parent, l + 1) .. " > " .. (group.sourceText or group.text or RETRIEVING_DATA);
 		end
 	end
 	return group.text or RETRIEVING_DATA;

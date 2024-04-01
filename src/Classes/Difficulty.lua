@@ -168,6 +168,9 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 			return title;
 		end
 	end,
+	["sourceText"] = function(t)
+		return t.title;
+	end,
 }, (function(t) return t.difficulties; end));
 
 -- External Functionality
