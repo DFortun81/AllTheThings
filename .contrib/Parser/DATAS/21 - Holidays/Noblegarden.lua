@@ -760,7 +760,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					i(212985),	-- Spring Reveler's Turquoise Pants
 					i(212715),	-- Spring Reveler's Turquoise Sun Hat
 				}),
-				i(213428),	-- Loot-Stuffed Basket (version for low levels, unsure what it contains)
+				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
+					["sym"] = {{"select","itemID",
+						212698,	-- Spring Reveler's Turquoise Attire
+						212699,	-- Spring Reveler's Turquoise Belt
+						212701,	-- Spring Reveler's Turquoise Boots
+						212711,	-- Spring Reveler's Turquoise Dress
+						212985,	-- Spring Reveler's Turquoise Pants
+						212715,	-- Spring Reveler's Turquoise Sun Hat
+					}},
+				}),
 			},
 		}),
 		q(79558, {	-- Feathered Fiend (H)
@@ -784,7 +793,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					i(212985),	-- Spring Reveler's Turquoise Pants
 					i(212715),	-- Spring Reveler's Turquoise Sun Hat
 				}),
-				i(213428),	-- Loot-Stuffed Basket (version for low levels, unsure what it contains)
+				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
+					["sym"] = {{"select","itemID",
+						212698,	-- Spring Reveler's Turquoise Attire
+						212699,	-- Spring Reveler's Turquoise Belt
+						212701,	-- Spring Reveler's Turquoise Boots
+						212711,	-- Spring Reveler's Turquoise Dress
+						212985,	-- Spring Reveler's Turquoise Pants
+						212715,	-- Spring Reveler's Turquoise Sun Hat
+					}},
+				}),
 			},
 		}),
 	})),
