@@ -723,12 +723,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
+					i(212599),	-- Noble Flying Carpet (MOUNT!)
+					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
 					i(212701),	-- Spring Reveler's Turquoise Boots
 					i(212711),	-- Spring Reveler's Turquoise Dress
 					i(212985),	-- Spring Reveler's Turquoise Pants
 					i(212715),	-- Spring Reveler's Turquoise Sun Hat
 				}),
+				i(213428),	-- Loot-Stuffed Basket (version for low levels, unsure what it contains)
 			},
 		}),
 		q(79558, {	-- Feathered Fiend (H)
@@ -739,12 +742,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
+					i(212599),	-- Noble Flying Carpet (MOUNT!)
+					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
 					i(212701),	-- Spring Reveler's Turquoise Boots
 					i(212711),	-- Spring Reveler's Turquoise Dress
 					i(212985),	-- Spring Reveler's Turquoise Pants
 					i(212715),	-- Spring Reveler's Turquoise Sun Hat
 				}),
+				i(213428),	-- Loot-Stuffed Basket (version for low levels, unsure what it contains)
 			},
 		}),
 	})),
@@ -788,7 +794,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	-- #endif
 })));
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {
-	-- Will we connect these to the items? Currently you can get only one per 
+	-- Will we connect these to the items? Currently you can get only one per character, but the questID is not account-wide.
 	--q(),	-- Black Duck Disguise
 	--q(),	-- Brown Duck Disguise
 	--q(),	-- Mallard Duck Disguise

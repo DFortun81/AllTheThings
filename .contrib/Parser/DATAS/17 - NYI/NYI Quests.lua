@@ -8325,9 +8325,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 10.0.5
 		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
-			q(73192, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
-		})),
-		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			-- 10.0.5.47799
 			q(66925),	-- [DNT] Boar-B-Q
 			q(72085),	--

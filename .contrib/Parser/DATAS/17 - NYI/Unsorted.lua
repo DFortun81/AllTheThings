@@ -69,8 +69,6 @@ root(ROOTS.Unsorted, {
 				i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
 				i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
 				i(212383),	-- Yawning Basket of Aspect's Awakened Crests
-				------ Noblegarden ------
-				i(213428),	-- Loot-Stuffed Basket
 				------ Unknown ------
 				i(212175),	-- Draconic Commendation
 			}),
@@ -277,7 +275,6 @@ root(ROOTS.Unsorted, {
 				i(212713),	-- Spring Reveler's Cornsilk Dress
 				i(212987),	-- Spring Reveler's Cornsilk Pants
 				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-				i(212698),	-- Spring Reveler's Turquoise Attire
 				i(190818),	-- Steamwheedle Artifact Extractor
 				i(213075),	-- Sunny Bow-quet
 				i(213071),	-- Sunny Floral Staff
@@ -299,7 +296,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
-				i(212599),	-- Noble Flying Carpet (MOUNT!) [Noblegarden]
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
 				i(212632),	-- Starry Twilight Peafowl (MOUNT!)
 			}),
