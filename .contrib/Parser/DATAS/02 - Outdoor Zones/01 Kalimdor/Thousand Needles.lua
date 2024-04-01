@@ -94,6 +94,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5092),	-- Razorfen Downs
 				exploration(5028),	-- Southsea Holdfast
 				exploration(5027),	-- Splithoof Heights
+				exploration(5591),	-- Sunken Dig Site
 				exploration(485),	-- The Great Lift
 				exploration(5025),	-- The Shimmering Deep
 				exploration(5589),	-- The Twilight Withering

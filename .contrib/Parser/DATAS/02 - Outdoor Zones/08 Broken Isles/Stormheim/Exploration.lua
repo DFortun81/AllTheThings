@@ -21,6 +21,7 @@ root(ROOTS.Zones, {
 				exploration(7849),	-- Cullen's Post
 				exploration(7698),	-- Dreadwake's Landing
 				exploration(8238),	-- Dreyrgrot
+				exploration(7852),	-- Felskorn Warcamp
 				exploration(7651),	-- Field of Fallen Kings
 				exploration(7564),	-- Forsaken Foothold
 				exploration(7611),	-- Galebroken Path
@@ -49,6 +50,7 @@ root(ROOTS.Zones, {
 				exploration(7612),	-- Thorim's Peak
 				exploration(7874),	-- Tideskorn Harbor
 				exploration(7848),	-- Tideskorn Harbor
+				exploration(7803),	-- Valdisdall
 				exploration(7808),	-- Valley of the Sword
 				exploration(8362),	-- Vrekt
 				exploration(7920),	-- Warden Tower
