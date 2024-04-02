@@ -5,8 +5,8 @@ local L = app.L;
 local contains, IsQuestFlaggedCompleted = app.contains, app.IsQuestFlaggedCompleted;
 
 -- Global locals
-local coroutine, ipairs, pairs, rawset, tinsert, tremove, tonumber, math_floor, math_sqrt, math_random
-	= coroutine, ipairs, pairs, rawset, tinsert, tremove, tonumber, math.floor, math.sqrt, math.random;
+local coroutine, ipairs, pairs, pcall, rawset, tinsert, tremove, tonumber, math_floor, math_sqrt, math_random
+	= coroutine, ipairs, pairs, pcall, rawset, tinsert, tremove, tonumber, math.floor, math.sqrt, math.random;
 local CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown
 	= CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown;
 local C_Map_GetMapArtID = C_Map.GetMapArtID;
@@ -228,13 +228,6 @@ app.GetMapName = GetMapName;
 UpdateLocation();
 
 -- Exploration
-local AreaExplorationMeta = {
-	__index = function(t, areaID)
-		local coords = {};
-		t[areaID] = coords;
-		return coords;
-	end
-};
 local ExplorationDB = setmetatable(app.ExplorationDB or {}, {
 	__index = function(t, mapID)
 		local data = {};
@@ -375,6 +368,13 @@ app:RegisterEvent("UI_INFO_MESSAGE");
 
 -- Harvesting
 local MAXIMUM_COORDS_PER_AREA = 5;
+local AreaExplorationMeta = {
+	__index = function(t, areaID)
+		local coords = {};
+		t[areaID] = coords;
+		return coords;
+	end
+};
 local MapDataMeta = {
 	__index = function(t, mapID)
 		local data = {
@@ -386,6 +386,21 @@ local MapDataMeta = {
 		return data;
 	end
 };
+local function GenerateHitsForMap(grid, mapID)
+	local any, hits = false, setmetatable({}, AreaExplorationMeta);
+	for _,pos in ipairs(grid) do
+		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
+		if explored then
+			local coord = {pos.x * 100, pos.y * 100, mapID};
+			for _,areaID in ipairs(explored) do
+				tinsert(hits[areaID], coord);
+				any = true;
+			end
+		end
+	end
+	return any, hits;
+end
+app.GenerateHitsForMap = GenerateHitsForMap;
 local OnClickForExplorationHeader = function(row, button)
 	if button == "RightButton" and IsControlKeyDown() then
 		local info = {};
@@ -399,6 +414,7 @@ end
 local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	while InCombatLockdown() do coroutine.yield(); end
 	app.print("Simplifying Exploration Data...");
+	local ReportedAreas = {};
 	local allMapData, mapIDs, mapID = setmetatable({}, MapDataMeta);
 	for areaID,coords in pairs(rawExplorationAreaPositionDB) do
 		mapIDs = {};
@@ -437,8 +453,31 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 		end
 		if not ExplorationAreaPositionDB[areaID] then
 			ExplorationAreaPositionDB[areaID] = coords;
-			print("Found new coordinates for area", areaID);
+			ReportedAreas[areaID] = true;
 		end
+	end
+	local reportedAreas = {};
+	for areaID,_ in pairs(ReportedAreas) do
+		tinsert(reportedAreas, areaID);
+	end
+	if #reportedAreas > 0 then
+		-- Create an information object.
+		local info = {
+			"### Found Area Summary",
+			"```lua",
+		};
+		for i,areaID in ipairs(reportedAreas) do
+			tinsert(info, "exploration(" .. areaID .. "),\t-- " .. C_Map_GetAreaInfo(areaID));
+		end
+		
+		tinsert(info, "");
+		tinsert(info, "ver: "..app.Version);
+		tinsert(info, "build: "..app.GameBuildVersion);
+		tinsert(info, "```");	-- discord fancy box end
+		
+		local popupID, text = "found-area-summary", "Coordinates";
+		app:SetupReportDialog(popupID, text, info);
+		print("Found:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
 	end
 	AllTheThingsAD.ExplorationAreaPositionDB = ExplorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
@@ -455,48 +494,18 @@ local function HarvestExploration(simplify)
 	local rawExplorationAreaPositionDB = {};
 	for mapID,objects in pairs(app.SearchForFieldContainer("mapID")) do
 		if C_Map_GetMapArtID(mapID) then
-			--app.print("Harvesting Map " .. mapID .. "...");
+			app.print("Harvesting Map " .. mapID .. "...");
 			-- Find all points on the grid that have explored an area and make note of them.
-			local any, hits = false, setmetatable({}, AreaExplorationMeta);
-			local explorationByID = {};
-			for _,pos in ipairs(grid) do
-				local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
-				if explored then
-					local coord = {pos.x * 100, pos.y * 100, mapID};
-					for _,areaID in ipairs(explored) do
-						tinsert(hits[areaID], coord);
-						any = true;
-					end
-				end
-			end
-			if any then
-				-- For each of these hits, add it to our raw positional DB.
-				for areaID,coords in pairs(hits) do
-					explorationByID[areaID] = true;
-					
-					-- Mark as collected and record all the coordinates.
-					app.SetCollected(nil, "Exploration", areaID, true);
-					local positions = rawExplorationAreaPositionDB[areaID];
-					if not positions then
-						rawExplorationAreaPositionDB[areaID] = coords;
-					else
-						for i,coord in ipairs(coords) do
-							tinsert(positions, coord);
-						end
-					end
-				end
-			end
-			
-			-- Now take the ones from our previously harvested DBs.
-			local areaIDs = ExplorationDB[mapID];
-			for _,areaID in ipairs(areaIDs) do
-				if not explorationByID[areaID] then
-					explorationByID[areaID] = true;
-					any = true;
-					
-					-- Reuse any coordinates linked for the area if we didn't just acquire new ones.
-					local coords = ExplorationAreaPositionDB[areaID];
-					if coords then
+			local ok, any, hits = pcall(GenerateHitsForMap, grid, mapID);
+			if ok then
+				local explorationByID = {};
+				if any then
+					-- For each of these hits, add it to our raw positional DB.
+					for areaID,coords in pairs(hits) do
+						explorationByID[areaID] = true;
+						
+						-- Mark as collected and record all the coordinates.
+						app.SetCollected(nil, "Exploration", areaID, true);
 						local positions = rawExplorationAreaPositionDB[areaID];
 						if not positions then
 							rawExplorationAreaPositionDB[areaID] = coords;
@@ -507,72 +516,81 @@ local function HarvestExploration(simplify)
 						end
 					end
 				end
-			end
-			
-			if any then
-				-- Now regenerate the areaIDs for this map.
-				wipe(areaIDs);
-				local count = 1;
-				for areaID,_ in pairs(explorationByID) do
-					areaIDs[count] = areaID;
-					count = count + 1;
+				
+				-- Now take the ones from our previously harvested DBs.
+				local areaIDs = ExplorationDB[mapID];
+				for _,areaID in ipairs(areaIDs) do
+					if not explorationByID[areaID] then
+						explorationByID[areaID] = true;
+						any = true;
+					end
 				end
-			
-				-- If any were found, update the content of the explocation headers.
-				for i,object in ipairs(objects) do
-					if object.key == "mapID" and (object.mapID == mapID or (object.maps and contains(object.maps, mapID))) then
-						-- Cache or Create the Exploration Header
-						local explorationHeader = nil;
-						if object.g then
-							for j,o in ipairs(object.g) do
-								if o.headerID == app.HeaderConstants.EXPLORATION then
-									explorationHeader = o;
-									break;
-								end
-							end
-						else
-							object.g = {};
-						end
-						local byExplorationID;
-						if explorationHeader then
-							byExplorationID = explorationHeader.ByExplorationID;
-							if not byExplorationID then
-								byExplorationID = {};
-								explorationHeader.ByExplorationID = byExplorationID;
-							end
-							if explorationHeader.g then
-								for j,o in ipairs(explorationHeader.g) do
-									local areaID = o.explorationID;
-									if areaID then byExplorationID[areaID] = o; end
+				
+				if any then
+					-- Now regenerate the areaIDs for this map.
+					wipe(areaIDs);
+					local count = 1;
+					for areaID,_ in pairs(explorationByID) do
+						areaIDs[count] = areaID;
+						count = count + 1;
+					end
+				
+					-- If any were found, update the content of the explocation headers.
+					for i,object in ipairs(objects) do
+						if object.key == "mapID" and (object.mapID == mapID or (object.maps and contains(object.maps, mapID))) then
+							-- Cache or Create the Exploration Header
+							local explorationHeader = nil;
+							if object.g then
+								for j,o in ipairs(object.g) do
+									if o.headerID == app.HeaderConstants.EXPLORATION then
+										explorationHeader = o;
+										break;
+									end
 								end
 							else
-								explorationHeader.g = {};
+								object.g = {};
 							end
-						else
-							byExplorationID = {};
-							explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION);
-							explorationHeader.ByExplorationID = byExplorationID;
-							explorationHeader.g = {};
-							explorationHeader.u = object.u;
-							explorationHeader.parent = object;
-							tinsert(object.g, 1, explorationHeader);
-						end
-						explorationHeader.OnClick = OnClickForExplorationHeader;
-						explorationHeader.SortType = "text";
-						
-						-- Make sure the exploration header has all the objects
-						for _,areaID in ipairs(areaIDs) do
-							if not byExplorationID[areaID] then
-								o = app.CreateExploration(areaID);
-								o.mapID = mapID;
-								o.parent = explorationHeader;
-								tinsert(explorationHeader.g, o);
-								byExplorationID[areaID] = o;
-								local searchResults = app.SearchForField("explorationID", areaID);
-								if #searchResults < 1 then
-									PrintDiscordInformationForExploration(o);
+							local byExplorationID;
+							if explorationHeader then
+								byExplorationID = explorationHeader.ByExplorationID;
+								if not byExplorationID then
+									byExplorationID = {};
+									explorationHeader.ByExplorationID = byExplorationID;
 								end
-								tinsert(searchResults, o);
+								if explorationHeader.g then
+									for j,o in ipairs(explorationHeader.g) do
+										local areaID = o.explorationID;
+										if areaID then byExplorationID[areaID] = o; end
+									end
+								else
+									explorationHeader.g = {};
+								end
+							else
+								byExplorationID = {};
+								explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION);
+								explorationHeader.ByExplorationID = byExplorationID;
+								explorationHeader.g = {};
+								explorationHeader.u = object.u;
+								explorationHeader.parent = object;
+								tinsert(object.g, 1, explorationHeader);
+							end
+							explorationHeader.OnClick = OnClickForExplorationHeader;
+							explorationHeader.SortType = "text";
+							
+							-- Make sure the exploration header has all the objects
+							for _,areaID in ipairs(areaIDs) do
+								if not byExplorationID[areaID] then
+									o = app.CreateExploration(areaID);
+									o.mapID = mapID;
+									o.parent = explorationHeader;
+									tinsert(explorationHeader.g, o);
+									byExplorationID[areaID] = o;
+									local searchResults = app.SearchForField("explorationID", areaID);
+									if #searchResults < 1 then
+										PrintDiscordInformationForExploration(o);
+									end
+									tinsert(searchResults, o);
+								end
 							end
 						end
 					end
