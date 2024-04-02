@@ -636,13 +636,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["races"] = ALLIANCE_ONLY,
-			["isBreadcrumb"] = true,
+			--["isYearly"] = true,	-- TODO: confirm
 		}),
 		q(79136, {	-- A Spring Awakening (H)
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["races"] = HORDE_ONLY,
-			["isBreadcrumb"] = true,
+			--["isYearly"] = true,	-- TODO: confirm
 		}),
 		q(79322, {	-- What the Duck? (A)
 			["qg"] = 211646,	-- Zinnia Brooks
@@ -792,11 +792,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
-					--q(TODO, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
-					--	["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
-					--	["collectible"] = false,
-					--	["isDaily"] = true,
-					--}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
@@ -825,11 +820,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
-					--q(TODO, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
-					--	["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
-					--	["collectible"] = false,
-					--	["isDaily"] = true,
-					--}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
