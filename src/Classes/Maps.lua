@@ -340,7 +340,6 @@ local function CheckExplorationForMapID(mapID)
 	
 	local newAreas = {};
 	for _,areaID in ipairs(C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos)) do
-		print(areaID, C_Map_GetAreaInfo(areaID));
 		if not app.CurrentCharacter.Exploration[areaID] then
 			app.SetCollected(nil, "Exploration", areaID, true);
 			tinsert(newAreas, areaID);
