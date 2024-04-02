@@ -5,8 +5,8 @@ local L = app.L;
 local contains, IsQuestFlaggedCompleted = app.contains, app.IsQuestFlaggedCompleted;
 
 -- Global locals
-local coroutine, ipairs, pairs, rawset, tinsert, tonumber, math_floor, math_sqrt
-	= coroutine, ipairs, pairs, rawset, tinsert, tonumber, math.floor, math.sqrt;
+local coroutine, ipairs, pairs, rawset, tinsert, tremove, tonumber, math_floor, math_sqrt, math_random
+	= coroutine, ipairs, pairs, rawset, tinsert, tremove, tonumber, math.floor, math.sqrt, math.random;
 local CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown
 	= CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown;
 local C_Map_GetMapArtID = C_Map.GetMapArtID;
@@ -374,6 +374,18 @@ app:RegisterEvent("MAP_EXPLORATION_UPDATED");
 app:RegisterEvent("UI_INFO_MESSAGE");
 
 -- Harvesting
+local MAXIMUM_COORDS_PER_AREA = 5;
+local MapDataMeta = {
+	__index = function(t, mapID)
+		local data = {
+			areas = {},
+			areaList = {},
+		};
+		t[mapID] = data;
+		ExplorationDB[mapID] = data.areaList;
+		return data;
+	end
+};
 local OnClickForExplorationHeader = function(row, button)
 	if button == "RightButton" and IsControlKeyDown() then
 		local info = {};
@@ -387,88 +399,45 @@ end
 local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	while InCombatLockdown() do coroutine.yield(); end
 	app.print("Simplifying Exploration Data...");
-	local allMapData, mapIDs = {},{};
-	local explorationDB = {};
+	local allMapData, mapIDs, mapID = setmetatable({}, MapDataMeta);
 	for areaID,coords in pairs(rawExplorationAreaPositionDB) do
+		mapIDs = {};
 		for i,coord in ipairs(coords) do
-			local mapID = coord[3];
-			if mapID then
-				local x, y = math_floor(coord[1] * 100), math_floor(coord[2] * 100);
-				local hash = x .. ":" .. y;
-				local mapData = allMapData[mapID];
-				if not mapData then
-					mapData = {};
-					mapData.areas = {};
-					mapData.areaList = {};
-					mapData.hits = {};
-					allMapData[mapID] = mapData;
-					explorationDB[mapID] = mapData.areaList;
-					tinsert(mapIDs, mapID);
+			mapID = coord[3];
+			if mapID then mapIDs[mapID] = true; end
+		end
+		for mapID,_ in pairs(mapIDs) do
+			local mapData = allMapData[mapID];
+			if not mapData.areas[areaID] then
+				mapData.areas[areaID] = 1;
+				tinsert(mapData.areaList, areaID);
+			end
+		end
+		
+		-- Simplify coordinates if more than the maximum
+		local count = #coords;
+		if count > MAXIMUM_COORDS_PER_AREA then
+			if count > (MAXIMUM_COORDS_PER_AREA * 2) then
+				-- Pick randomly
+				local newcoords, index = {};
+				for i=1,MAXIMUM_COORDS_PER_AREA,1 do
+					index = math_random(count);
+					tinsert(newcoords, coords[index]);
+					tremove(coords, index);
+					count = count - 1;
 				end
-				if not mapData.areas[areaID] then
-					mapData.areas[areaID] = 1;
-					tinsert(mapData.areaList, areaID);
-				end
-				if not mapData.hits[hash] then
-					mapData.hits[hash] = { areaID };
-				else
-					tinsert(mapData.hits[hash], areaID);
+				coords = newcoords;
+			else
+				-- Delete randomly until the maximum is reached
+				for i=count,MAXIMUM_COORDS_PER_AREA + 1,-1 do
+					index = math_random(i);
+					tremove(coords, index);
 				end
 			end
 		end
-	end
-	app.print("Determining best coordinates for areas...");
-	table.sort(mapIDs);
-	local sortMethod = function(a, b)
-		return a[1] > b[1];
-	end;
-	local explorationAreaPositionDB = {};
-	for i,mapID in ipairs(mapIDs) do
-		local mapData = allMapData[mapID];
-		app.print("Determining best coordinates for map ".. mapID);
-		local hitsByAreaID, hitsByCount = setmetatable({}, AreaExplorationMeta), {};
-		for hash,hits in pairs(mapData.hits) do
-			tinsert(hitsByCount, { #hits, hash, hits});
-		end
-		app.Sort(hitsByCount, sortMethod);
-		repeat
-			coroutine.yield();
-		until(not InCombatLockdown());
-
-		-- Now randomly grab hashes until every area has a few hashes
-		local timer = 0;
-		while #hitsByCount > 0 do
-			local index = math.random(#hitsByCount);
-			local hit = hitsByCount[index];
-			tremove(hitsByCount, index);
-			for i,areaID in ipairs(hit[3]) do
-				local hits = hitsByAreaID[areaID];
-				if #hits < 10 then tinsert(hits, hit[2]); end
-			end
-			timer = timer + 1;
-			if timer >= 1000 then
-				timer = 0;
-				repeat
-					coroutine.yield();
-				until(not InCombatLockdown());
-			end
-		end
-
-		-- Now that each has some hashes (probably), let's simplfy that data table.
-		for areaID,hits in pairs(hitsByAreaID) do
-			local coords = explorationAreaPositionDB[areaID];
-			if not coords then
-				coords = {};
-				explorationAreaPositionDB[areaID] = coords;
-			end
-			for i,hash in ipairs(hits) do
-				local x, y = hash:match("(%d+):(%d+)");
-				tinsert(coords, { tonumber(x) * 0.01, tonumber(y) * 0.01, mapID });
-			end
-			if not ExplorationAreaPositionDB[areaID] then
-				ExplorationAreaPositionDB[areaID] = coords;
-				print("Found new coordinates for area", areaID);
-			end
+		if not ExplorationAreaPositionDB[areaID] then
+			ExplorationAreaPositionDB[areaID] = coords;
+			print("Found new coordinates for area", areaID);
 		end
 	end
 	AllTheThingsAD.ExplorationAreaPositionDB = ExplorationAreaPositionDB;
