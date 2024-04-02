@@ -337,9 +337,11 @@ local function CheckExplorationForMapID(mapID)
 	if not mapID then return; end
 	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 	if not pos then return; end
+	local areaIDs = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
+	if not areaIDs then return end;
 	
 	local newAreas = {};
-	for _,areaID in ipairs(C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos)) do
+	for _,areaID in ipairs(areaIDs) do
 		if not app.CurrentCharacter.Exploration[areaID] then
 			app.SetCollected(nil, "Exploration", areaID, true);
 			tinsert(newAreas, areaID);
