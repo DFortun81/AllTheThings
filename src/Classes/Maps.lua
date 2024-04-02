@@ -16,7 +16,6 @@ local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
 local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
 local C_Map_GetWorldPosFromMapPos = C_Map.GetWorldPosFromMapPos;
-local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures;
 local C_MapExplorationInfo_GetExploredAreaIDsAtPosition = C_MapExplorationInfo.GetExploredAreaIDsAtPosition;
 
 -- Current Map Detection
@@ -334,25 +333,25 @@ local RefreshExplorationData = app.IsClassic and (function(data)
 	app:RefreshDataQuietly("RefreshExploration", true);
 end) or (function(data) app.UpdateRawIDs("explorationID", data); end)
 local function CheckExplorationForMapID(mapID)
+	local mapID = C_Map_GetBestMapForUnit("player");
+	if not mapID then return; end
 	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-	if pos then
-		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
-		if explored then
-			local newAreas = {};
-			for _,areaID in ipairs(explored) do
-				if not app.CurrentCharacter.Exploration[areaID] then
-					app.SetCollected(nil, "Exploration", areaID, true);
-					tinsert(newAreas, areaID);
-				end
-				if not ReportedAreas[areaID] then
-					if #app.SearchForField("explorationID", areaID) < 1 then
-						PrintDiscordInformationForExploration(app.CreateExploration(areaID, { mapID = mapID}));
-					end
-				end
+	if not pos then return; end
+	
+	local newAreas = {};
+	for _,areaID in ipairs(C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos)) do
+		print(areaID, C_Map_GetAreaInfo(areaID));
+		if not app.CurrentCharacter.Exploration[areaID] then
+			app.SetCollected(nil, "Exploration", areaID, true);
+			tinsert(newAreas, areaID);
+		end
+		if not ReportedAreas[areaID] then
+			if #app.SearchForField("explorationID", areaID) < 1 then
+				PrintDiscordInformationForExploration(app.CreateExploration(areaID, { mapID = mapID}));
 			end
-			if #newAreas > 0 then RefreshExplorationData(newAreas); end
 		end
 	end
+	if #newAreas > 0 then RefreshExplorationData(newAreas); end
 end
 local function CheckExplorationForCurrentLocation()
 	app:StartATTCoroutine("Check Exploration", function()
