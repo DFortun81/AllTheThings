@@ -181,8 +181,94 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
+			n(216231, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Iszinormi <Dream Distribtuion>
+				["coord"] = { 73.7, 47.4, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
+				}, {
+					i(207780),	-- Ashen Ranger's Longbow
+					i(207167),	-- Ashes of the Embersoul
+					i(208614),	-- Augury of the Primal Flame
+					i(207165),	-- Bandolier of Twisted Blades
+					i(207172),	-- Belor'relos, the Suncaller
+					i(207781),	-- Betrayer's Cinderblade
+					i(207171),	-- Blossom of Amirdrassil
+					i(207169),	-- Branch of the Tormented Ancient
+					i(207166),	-- Cataclysmic Signet Brand
+					i(207175),	-- Coiled Serpent Idol
+					i(207783),	-- Cruel Dreamcarver
+					i(207797),	-- Defender of the Ancient
+					i(208616),	-- Dreambinder, Loom of the Great Cycle
+					i(207795),	-- Eternal Kindler's Greatstaff
+					i(207174),	-- Fyrakk's Tainted Rageheart
+					i(207786),	-- Gholak, the Final Conflagration
+					i(207173),	-- Gift of Ursine Vengeance
+					i(207800),	-- Gnarlroot's Bonecrusher
+					i(207787),	-- Igira's Flaying Hatchet
+					i(207799),	-- Incandescent Soulcleaver
+					i(207790),	-- Larodar's Moonblade
+					i(207785),	-- Magmatic Volcannon
+					i(208615),	-- Nymue's Unraveling Spindle
+					i(210214),	-- Ouroboreal Necklet
+					i(207168),	-- Pip's Emerald Friendship Badge
+					i(207793),	-- Rashon, the Immortal Blaze
+					i(207791),	-- Remnant Charglaive
+					i(207792),	-- Scythe of the Fallen Keeper
+					i(207782),	-- Sickle of the White Stag
+					i(207170),	-- Smoldering Seedling
+					i(207794),	-- Staff of Incandescent Torment
+					i(207784),	-- Thorncaller Claw
+					i(207796),	-- Trickster's Captivating Chime
+					i(207788),	-- Vakash, the Shadowed Inferno
+					i(207798),	-- Verdant Matrix Beacon
+					i(207789),	-- Volcoross's Barbed Fang
+				}),
+			})),
+			n(216226, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Iszinormi <Scale Associate>
+				["coord"] = { 73.7, 47.1, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
+				}, {
+					i(202606),	-- Ashkandur, Fall of the Brotherhood
+					i(203963),	-- Beacon to the Beyond
+					i(204319),	-- Bloodfire Extraction Conduit
+					i(202607),	-- Brutal Dragonslayer's Trophy
+					i(202558),	-- Calamity's Herald
+					i(202560),	-- Claws of the Blazing Behemoth
+					i(202569),	-- Djaruun, Pillar of the Elder Flame
+					i(202610),	-- Dragonfire Bomb Dispenser
+					i(204324),	-- Echo's Maddening Volume
+					i(202617),	-- Elementium Pocket Anvil
+					i(202616),	-- Enduring Dreadplate
+					i(202565),	-- Erethos, the Empty Promise
+					i(202571),	-- Experiment 1, Kitewing
+					i(204322),	-- Failure Disposal Cannon
+					i(202564),	-- Fang of the Sundered Flame
+					i(202557),	-- Hellsteel Mutilator
+					i(203996),	-- Igneous Flowstone
+					i(202559),	-- Infernal Shadelance
+					i(202570),	-- Lavaflow Control Rod
+					i(204201),	-- Neltharion's Call to Chaos
+					i(204202),	-- Neltharion's Call to Dominance
+					i(204211),	-- Neltharion's Call to Suffering
+					i(202563),	-- Obsidian Stirring Staff
+					i(203729),	-- Ominous Chromatic Essence
+					i(204320),	-- Proctor's Tactical Cleaver
+					i(202614),	-- Rashok's Molten Heart
+					i(202566),	-- Rionthus's Bladed Visage
+					i(202568),	-- Scholar's Thinking Cudgel
+					i(202612),	-- Screaming Black Dragonscale
+					i(204318),	-- Thadrion's Erratic Arcanotrode
+					i(202615),	-- Vessel of Searing Shadow
+					i(204465),	-- Voice of the Silent Star
+					i(204279),	-- Wallclimber's Incursion Hatchet
+					i(203714),	-- Ward of Faceless Ire
+					i(202613),	-- Zaqali Chaos Grapnel
+					i(202555),	-- Zskarn's Autopsy Scalpel
+				}),
+			})),
 			n(216224, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Iszy <Vault Vendor>
-				["coord"] = { 73.8, 45.6, VALDRAKKEN },
+				["coord"] = { 73.8, 46.7, VALDRAKKEN },
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
 				}, {
@@ -250,7 +336,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["g"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
+					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
 				}, {
 					i(190170, {	-- Jigglesworth, Sr. (MOUNT!)
 						["cost"] = {{ "i", ANTIQUE_BRONZE, 3 }},
