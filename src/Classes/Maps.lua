@@ -332,7 +332,7 @@ local function PrintDiscordInformationForExploration(o)
 end
 local RefreshExplorationData = app.IsClassic and (function(data)
 	app:RefreshDataQuietly("RefreshExploration", true);
-end) or (function(data) UpdateRawIDs("explorationID", data); end)
+end) or (function(data) app.UpdateRawIDs("explorationID", data); end)
 local function CheckExplorationForMapID(mapID)
 	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 	if pos then
