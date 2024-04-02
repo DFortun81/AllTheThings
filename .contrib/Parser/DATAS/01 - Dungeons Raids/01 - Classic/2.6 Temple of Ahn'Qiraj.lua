@@ -1256,6 +1256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				})),
 				i(21229, {	-- Qiraji Lord's Insignia
+					["description"] = "Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",
 					["crs"] = {
 						15516,	-- Battleguard Sartura
 						15276,	-- Emperor Vek'lor
