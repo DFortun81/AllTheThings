@@ -280,7 +280,7 @@ RefreshCollections = function()
 	-- Refresh Factions
 	local faction;
 	wipe(currentCharacter.Factions);
-	for factionID,_ in pairs(app.SearchForFieldContainer("factionID")) do
+	for factionID,_ in pairs(app.GetRawFieldContainer("factionID")) do
 		faction = app.SearchForObject("factionID", factionID);
 		-- simply reference the .saved property of each known Faction to re-calculate the character value
 		if faction and faction.saved then end

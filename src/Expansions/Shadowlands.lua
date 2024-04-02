@@ -48,7 +48,7 @@ do
 		app.AddEventHandler("OnRefreshCollections", function()
 			local state
 			local saved, none = {}, {}
-			for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+			for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
 				state = C_Soulbinds_GetConduitCollectionData(id)
 				if state ~= nil then
 					saved[id] = true
@@ -86,7 +86,7 @@ do
 		app.AddEventHandler("OnRefreshCollections", function()
 			local check
 			local saved, none = {}, {}
-			for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+			for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
 				check = C_LegendaryCrafting_GetRuneforgePowerInfo(id)
 				if check and check.state == 0 then
 					saved[id] = true

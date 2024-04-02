@@ -49,6 +49,9 @@ do
 		end,
 	},
 	"Recipe", {
+		description = function()
+			return L.GARRISON_BUILDINGS_REQUIRE_GARRISON
+		end,
 		icon = function(t)
 			return select(5, GetItemInfoInstant(t.itemID)) or t.info.icon;
 		end,
@@ -78,7 +81,7 @@ do
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
 		local saved, none = {}, {}
-		for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
 			-- [11] = needsPlan
 			state = not select(11, C_Garrison_GetBuildingInfo(id))
 			if state then
@@ -89,7 +92,7 @@ do
 		end
 		-- Character Cache
 		app.SetBatchCached(CACHE, saved, 1)
-		app.SetBatchCached(CACHE, none)
+		-- can't un-cache because API data is incorrect unless in Garrison, thanks Blizzard
 		-- Account Cache (removals handled by Sync)
 		app.SetBatchAccountCached(CACHE, saved, 1)
 	end);
@@ -208,7 +211,7 @@ do
 		app.AddEventHandler("OnRefreshCollections", function()
 			local state
 			local saved = {}
-			for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+			for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
 				-- this returns false when wrong SL covenant, so we can't clear followers once cached for a character
 				state = C_Garrison_IsFollowerCollected(id)
 				if state then

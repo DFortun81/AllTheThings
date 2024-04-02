@@ -256,11 +256,11 @@ local function zoneArtIDRunner(group, value)
 		else
 			group.maps = {mapID};
 		end
-		
+
 		-- Manually assign the name of this map since it is not a real mapID.
 		CacheField(group, "mapID", mapID);
 		app.L.MAP_ID_TO_ZONE_TEXT[mapID] = group.text;
-		
+
 		-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
 		local remap = MapRemapping[originalMapID];
 		if not remap then
@@ -275,7 +275,7 @@ local function zoneArtIDRunner(group, value)
 		for j,artID in ipairs(value) do
 			artIDs[artID] = mapID;
 		end
-			
+
 		-- Uncache the original mapID
 		local mapIDCache = currentCache.mapID;
 		mapIDCache = mapIDCache[originalMapID];
@@ -285,7 +285,7 @@ local function zoneArtIDRunner(group, value)
 				break;
 			end
 		end
-		
+
 		--local info = C_Map_GetMapInfo(originalMapID);
 		--print("MapRemapping (artIDs): ", originalMapID, info and info.name, mapID, group.text);
 	--else
@@ -303,15 +303,15 @@ local function zoneTextAreasRunner(group, value)
 		else
 			group.maps = {mapID};
 		end
-		
+
 		-- Manually assign the name of this map since it is not a real mapID.
 		CacheField(group, "mapID", mapID);
 	end
-	
+
 	-- Use the localizer to force the minilist to display this as if it was a map file.
 	local name = C_Map_GetAreaInfo(value[1]);
 	if name then app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name; end
-	
+
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
 	local mapIDs, parentMapID, info = {};
 	if group.coords then
@@ -355,7 +355,7 @@ local function zoneTextContinentRunner(group, value)
 			MapRemapping[mapID] = remap;
 		end
 		remap.isContinent = true;
-		
+
 		--local info = C_Map_GetMapInfo(mapID);
 		--print("MapRemapping (continent): ", mapID, info and info.name);
 	end
@@ -375,11 +375,11 @@ local function zoneTextNamesRunner(group, value)
 			else
 				group.maps = {mapID};
 			end
-			
+
 			-- Manually assign the name of this map since it is not a real mapID.
 			CacheField(group, "mapID", mapID);
 		end
-		
+
 		local remap = MapRemapping[originalMapID];
 		if not remap then
 			remap = {};
@@ -393,7 +393,7 @@ local function zoneTextNamesRunner(group, value)
 		for j,name in ipairs(value) do
 			names[name] = mapID;
 		end
-		
+
 		--local info = C_Map_GetMapInfo(originalMapID);
 		--print("MapRemapping (name): ", originalMapID, info and info.name, mapID);
 	--else
@@ -433,6 +433,9 @@ local fieldConverters = {
 	end,
 	["followerID"] = function(group, value)
 		CacheField(group, "followerID", value);
+	end,
+	["garrisonBuildingID"] = function(group, value)
+		CacheField(group, "garrisonBuildingID", value);
 	end,
 	["headerID"] = cacheHeaderID,
 	["heirloomUnlockID"] = function(group, value)

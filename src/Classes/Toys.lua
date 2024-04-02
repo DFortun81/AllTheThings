@@ -74,7 +74,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 	app.AddEventHandler("OnRefreshCollections", function()
 		-- Refresh Toys
 		local collected;
-		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
+		for id,t in pairs(app.GetRawFieldContainer("toyID")) do
 			if #t > 0 then
 				collected = t[1].collected;	-- Run the collected field's code.
 			end
