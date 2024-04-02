@@ -249,7 +249,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
-						i(206368),	-- Wand of Mass Polymorph (QI!)
+						o(403541, {	-- Wand of Mass Polymorph
+							i(206368),	-- Wand of Mass Polymorph (QI!)
+						}),
 					},
 				}),
 			})),
