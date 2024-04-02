@@ -314,7 +314,10 @@ root(ROOTS.Zones, {
 					exploration(6090),	-- The Burlap Trail
 					exploration(6087),	-- The Dooker Dome
 					exploration(6207),	-- The Zandalari Vanguard
-					exploration(6198),	-- Valley of Emperors
+					exploration(6198, {	-- Valley of Emperors
+						-- CRIEVE NOTE: This appears to be unavailable after Legion, someone let me know if you RECENTLY collect this.
+						["collectible"] = false,
+					}),
 					exploration(6095),	-- Westwind Rest
 					exploration(6154),	-- Yinying Village
 					exploration(6169),	-- Zouchin Village
