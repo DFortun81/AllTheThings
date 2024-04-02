@@ -691,26 +691,31 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					o(9000005, {	-- Aged Marker [#1]
 						["questID"] = 78025,
 						["coord"] = { 83.8, 48.4, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000006, {	-- Aged Marker [#2]
 						["questID"] = 78026,
 						["coord"] = { 78.6, 83.3, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000007, {	-- Aged Marker [#3]
 						["questID"] = 78027,
 						["coord"] = { 60.7, 63.4, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000008, {	-- Aged Marker [#4]
 						["questID"] = 78028,
 						["coord"] = { 31.6, 71.6, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000009, {	-- Aged Marker [#5]
 						["questID"] = 78029,	-- this marker triggered 78037 for me instead -Run
 						["coord"] = { 43.3, 48.0, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000010, {	-- Banner Stand
@@ -772,7 +777,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409012 },	-- Auction House Bill of Sale
 						["coord"] = { 44.1, 60.3, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -782,7 +787,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409016 },	-- Void Storage Receipt
 						["coord"] = { 73.9, 57.4, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -792,7 +797,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409017 },	-- Garden Supply Receipt
 						["coord"] = { 53.0, 28.4, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -802,7 +807,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409018 },	-- Researcher's Note
 						["coord"] = { 37.6, 37.1, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -812,7 +817,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409019 },	-- Hastily Scrawled Note
 						["coord"] = { 31.6, 70.2, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
