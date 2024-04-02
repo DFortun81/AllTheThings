@@ -417,6 +417,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["timeline"] = { ADDED_10_0_7, REMOVED_10_2_6 },
 			["races"] = ALLIANCE_ONLY,
+			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(74875, {	-- A Spring Awakening (H)
@@ -424,6 +425,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["timeline"] = { ADDED_10_0_7, REMOVED_10_2_6 },
 			["races"] = HORDE_ONLY,
+			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket (A)
