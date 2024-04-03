@@ -7540,6 +7540,46 @@ local function RefreshCustomCollectibility()
 end
 app.AddEventHandler("OnInit", RefreshCustomCollectibility)
 app.AddEventHandler("OnRecalculate", RefreshCustomCollectibility)
+
+-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
+local function DGU_CustomCollect(t)
+	-- app.PrintDebug("DGU_CustomCollect",t.hash)
+	Callback(RefreshCustomCollectibility);
+end
+local function DGU_Locationtrigger(t)
+	-- app.PrintDebug("DGU_Locationtrigger",t.hash)
+	Callback(app.LocationTrigger, true);
+end
+-- A set of quests which indicate a needed refresh to the Custom Collect status of the character
+local DGU_Quests = {
+	[51211] = DGU_CustomCollect,	-- Heart of Azeroth Quest
+	[56775] = DGU_CustomCollect,	-- New Player Experience Starting Quest
+	[59926] = DGU_CustomCollect,	-- New Player Experience Starting Quest
+	[58911] = DGU_CustomCollect,	-- New Player Experience Ending Quest
+	[60359] = DGU_CustomCollect,	-- New Player Experience Ending Quest
+	[62713] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
+	[65076] = DGU_CustomCollect,	-- Shadowlands - Covenant - Kyrian
+	[65077] = DGU_CustomCollect,	-- Shadowlands - Covenant - Venthyr
+	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
+	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
+};
+-- Add any automatically-assigned LocationTriggers
+for _,questID in ipairs(app.__CacheQuestTriggers or app.EmptyTable) do
+	DGU_Quests[questID] = DGU_Locationtrigger
+end
+app.__CacheQuestTriggers = nil
+local function AssignDirectGroupOnUpdates()
+	local questRef;
+	local Search = app.SearchForObject;
+	for questID,func in pairs(DGU_Quests) do
+		questRef = Search("questID", questID);
+		if questRef then
+			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
+			questRef.DGUOnUpdate = func;
+		end
+	end
+end
+app.AddEventHandler("OnInit", AssignDirectGroupOnUpdates)
 end	-- Custom Collectibility
 
 -- Panel Class Library
@@ -14811,46 +14851,6 @@ app.Startup = function()
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 	-- app.PrintMemoryUsage("Startup:Done")
 end
-
--- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
-local function DGU_CustomCollect(t)
-	-- app.PrintDebug("DGU_CustomCollect",t.hash)
-	Callback(app.RefreshCustomCollectibility);
-end
-local function DGU_Locationtrigger(t)
-	-- app.PrintDebug("DGU_Locationtrigger",t.hash)
-	Callback(app.LocationTrigger, true);
-end
--- A set of quests which indicate a needed refresh to the Custom Collect status of the character
-local DGU_Quests = {
-	[51211] = DGU_CustomCollect,	-- Heart of Azeroth Quest
-	[56775] = DGU_CustomCollect,	-- New Player Experience Starting Quest
-	[59926] = DGU_CustomCollect,	-- New Player Experience Starting Quest
-	[58911] = DGU_CustomCollect,	-- New Player Experience Ending Quest
-	[60359] = DGU_CustomCollect,	-- New Player Experience Ending Quest
-	[62713] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
-	[65076] = DGU_CustomCollect,	-- Shadowlands - Covenant - Kyrian
-	[65077] = DGU_CustomCollect,	-- Shadowlands - Covenant - Venthyr
-	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
-	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
-};
--- Add any automatically-assigned LocationTriggers
-for _,questID in ipairs(app.__CacheQuestTriggers or app.EmptyTable) do
-	DGU_Quests[questID] = DGU_Locationtrigger
-end
-app.__CacheQuestTriggers = nil
-local function AssignDirectGroupOnUpdates()
-	local questRef;
-	local Search = app.SearchForObject;
-	for questID,func in pairs(DGU_Quests) do
-		questRef = Search("questID", questID);
-		if questRef then
-			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
-			questRef.DGUOnUpdate = func;
-		end
-	end
-end
-app.AddEventHandler("OnInit", AssignDirectGroupOnUpdates)
 
 local function PrePopulateAchievementSymlinks()
 	local achCache = app.SearchForFieldContainer("achievementID")
