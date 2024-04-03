@@ -794,6 +794,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
+					q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+						["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+						["collectible"] = false,
+						["isDaily"] = true,
+					}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
@@ -822,6 +827,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
+					q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+						["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+						["collectible"] = false,
+						["isDaily"] = true,
+					}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
@@ -882,9 +892,3 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #endif
 })));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	n(NOBLEGARDEN_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
-		q(82543),	-- Account wide trigger for first "Daetan Swiftplume" kill of the day
-	})),
-}));
