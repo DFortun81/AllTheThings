@@ -78,7 +78,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(5076),	-- Nethergarde Supply Camp
 				-- #endif
-				exploration(2517),	-- Rise of the Defiler
+				exploration(2517, {	-- Rise of the Defiler
+					-- #if AFTER CATA
+					-- CRIEVE NOTE: Couldn't get this to trigger on my rogue. Not sure why. (could collect it on Wrath Classic without issue though...)
+					["collectible"] = false,
+					-- #endif
+				}),
 				exploration(1440),	-- Serpent's Coil
 				-- #if AFTER CATA
 				exploration(5077),	-- Shatterstone

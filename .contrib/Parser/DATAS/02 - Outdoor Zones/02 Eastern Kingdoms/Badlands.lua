@@ -74,7 +74,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(345),	-- Agmond's End
 				exploration(338),	-- Angor Fortress
-				exploration(337),	-- Apocryphan's Rest
+				exploration(337, {	-- Apocryphan's Rest
+					-- #if AFTER CATA
+					-- CRIEVE NOTE: Couldn't get this to trigger on my rogue. Not sure why. (could collect it on Wrath Classic without issue though...)
+					["collectible"] = false,
+					-- #endif
+				}),
 				-- #if AFTER CATA
 				exploration(5524),	-- Bloodwatcher Point
 				-- #endif
