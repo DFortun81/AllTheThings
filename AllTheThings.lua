@@ -5386,6 +5386,7 @@ app.CreateAchievementHarvester = function(id, t)
 	return setmetatable(constructor(id, t, "achievementID"), app.BaseAchievementHarvester);
 end
 
+-- TODO: migrate this achievement refresh to proper handling within Achievement lib
 local function CheckAchievementCollectionStatus(achievementID)
 	if ATTAccountWideData then
 		achievementID = tonumber(achievementID);
@@ -5410,6 +5411,7 @@ app.RefreshAchievementCollection = function()
 		end
 	end
 end
+app.AddEventHandler("OnRefreshCollections", app.RefreshAchievementCollection)
 app.AddEventHandler("OnReady", function()
 	app:RegisterFuncEvent("ACHIEVEMENT_EARNED", CheckAchievementCollectionStatus);
 	app:RegisterFuncEvent("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);

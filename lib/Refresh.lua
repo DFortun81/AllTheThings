@@ -247,14 +247,34 @@ local function FixWrongAccountWideQuests(accountWideData)
 	end
 end
 
+local function CheckOncePerAccountQuestsForCharacter(accountWideData)
+	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
+	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
+	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
+	local charGuid = app.GUID;
+	for questID,questGuid in pairs(oneTimeQuests) do
+		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
+		if IsQuestFlaggedCompleted(questID) then
+			-- Throw up a warning to report if this was already completed by another character
+			if questGuid and questGuid ~= charGuid then
+				app.PrintDebug("One-Time-Quest ID " .. app:Linkify(questID,app.Colors.ChatLink,"search:questID:"..questID) .. " was previously marked as completed, but is also completed on the current character!");
+			end
+			-- Mark the quest as completed for the Account
+			acctQuests[questID] = 1;
+			-- Mark the character which completed the Quest
+			oneTimeQuests[questID] = charGuid;
+		end
+	end
+end
+
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideCompleteViaAchievement)
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideSharedQuests)
 app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
+app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
 
 RefreshCollections = function()
 	local currentCharacter = app.CurrentCharacter;
-	local charGuid = app.GUID;
 	if InCombatLockdown() then
 		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
 		while InCombatLockdown() do coroutine.yield(); end
@@ -262,7 +282,7 @@ RefreshCollections = function()
 		print(app.L.REFRESHING_COLLECTION);
 	end
 
-	-- Refresh Mounts / Pets
+	-- Refresh Mounts
 	local acctSpells, charSpells = ATTAccountWideData.Spells, currentCharacter.Spells;
 	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
 		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
@@ -284,28 +304,6 @@ RefreshCollections = function()
 		faction = app.SearchForObject("factionID", factionID);
 		-- simply reference the .saved property of each known Faction to re-calculate the character value
 		if faction and faction.saved then end
-	end
-	coroutine.yield();
-
-	-- Refresh Achievements
-	app.RefreshAchievementCollection();
-	coroutine.yield();
-
-	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
-	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
-	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
-	for questID,questGuid in pairs(oneTimeQuests) do
-		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
-		if IsQuestFlaggedCompleted(questID) then
-			-- Throw up a warning to report if this was already completed by another character
-			if questGuid and questGuid ~= charGuid then
-				app.PrintDebug("One-Time-Quest ID " .. app:Linkify(questID,app.Colors.ChatLink,"search:questID:"..questID) .. " was previously marked as completed, but is also completed on the current character!");
-			end
-			-- Mark the quest as completed for the Account
-			acctQuests[questID] = 1;
-			-- Mark the character which completed the Quest
-			oneTimeQuests[questID] = charGuid;
-		end
 	end
 	coroutine.yield();
 
