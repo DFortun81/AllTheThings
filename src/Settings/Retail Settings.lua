@@ -332,13 +332,19 @@ settings.Initialize = function(self)
 	self:UpdateMode()
 
 	if self:GetTooltipSetting("Auto:MainList") then
-		app:GetWindow("Prime"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("Prime"):SetVisible(true)
+		end)
 	end
 	if self:GetTooltipSetting("Auto:RaidAssistant") then
-		app:GetWindow("RaidAssistant"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("RaidAssistant"):SetVisible(true)
+		end)
 	end
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
-		app:GetWindow("WorldQuests"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("WorldQuests"):SetVisible(true)
+		end)
 	end
 
 	if settings.RefreshActiveInformationTypes then

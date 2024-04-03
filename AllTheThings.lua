@@ -503,7 +503,7 @@ app.GetSpecializationBaseTradeSkill = function(specializationID)
 	return specializationTradeSkillMap[specializationID];
 end
 -- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
-app.RefreshTradeSkillCache = function()
+local function RefreshTradeSkillCache()
 	local cache = app.CurrentCharacter.Professions;
 	wipe(cache);
 	-- "Professions" that anyone can "know"
@@ -532,12 +532,18 @@ app.RefreshTradeSkillCache = function()
 		end
 	end
 end
+app.AddEventHandler("OnInit", RefreshTradeSkillCache)
 app.AddEventHandler("OnStartup", function()
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.professionName = function(spellID)
 		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
 	end;
 end);
+app:RegisterFuncEvent("SKILL_LINES_CHANGED", function()
+	-- app.PrintDebug("SKILL_LINES_CHANGED")
+	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
+	DelayedCallback(RefreshTradeSkillCache, 2);
+end)
 end -- TradeSkill Functionality
 
 
@@ -5781,7 +5787,7 @@ end
 
 -- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
 -- upgrade levels into the respective upgrade tokens
-app.CacheHeirlooms = function()
+local function CacheHeirlooms()
 	-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
 	if #heirloomIDs < 1 or not C_Heirloom_GetHeirloomMaxUpgradeLevel then return; end
 
@@ -5900,6 +5906,7 @@ app.CacheHeirlooms = function()
 		wipe(heirloomIDs);
 	end
 end
+app.AddEventHandler("OnInit", CacheHeirlooms)
 end -- Heirloom Lib
 
 local HarvestedItemDatabase;
@@ -7501,10 +7508,10 @@ app.CheckCustomCollects = function(t)
 	return true;
 end
 -- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
-app.RefreshCustomCollectibility = function()
+local function RefreshCustomCollectibility()
 	-- print("RefreshCustomCollectibility",app.IsReady)
 	if not app.IsReady then
-		Callback(app.RefreshCustomCollectibility);
+		Callback(RefreshCustomCollectibility);
 		return;
 	end
 
@@ -7531,6 +7538,8 @@ app.RefreshCustomCollectibility = function()
 	-- Shadowlands Covenant: Necrolord
 	SetCustomCollectibility("SL_COV_NEC");
 end
+app.AddEventHandler("OnInit", RefreshCustomCollectibility)
+app.AddEventHandler("OnRecalculate", RefreshCustomCollectibility)
 end	-- Custom Collectibility
 
 -- Panel Class Library
@@ -10162,9 +10171,6 @@ local function RefreshData()
 		-- Execute the OnRecalculate handlers.
 		app.HandleEvent("OnRecalculate")
 
-		-- Reapply custom collects
-		app.RefreshCustomCollectibility();
-
 		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
 			LastSettingsChangeUpdate = app._SettingsRefresh;
 
@@ -11253,6 +11259,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		self:RegisterEvent("WAYPOINT_UPDATE");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
+		app.AddEventHandler("OnReady", LocationTrigger);
 	end
 	if self:IsVisible() then
 		-- Update the mapID into the data for external reference in case not rebuilding
@@ -13784,12 +13791,9 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 end;
 
 -- Only need to immediately load any Windows which are able to be immediately visible on load depending on settings
-app:GetWindow("Prime"):SetSize(425, 305);
-app:GetWindow("Bounty");
-app:GetWindow("CurrentInstance");
-app:GetWindow("RaidAssistant");
-app:GetWindow("Tradeskills");
-app:GetWindow("WorldQuests");
+app.AddEventHandler("OnLoad", function()
+	app:GetWindow("CurrentInstance");
+end)
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
 end
@@ -14800,8 +14804,6 @@ app.Startup = function()
 	-- Register remaining addon-related events
 	app:RegisterEvent("BOSS_KILL");
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
-	app:RegisterEvent("NEW_PET_ADDED");
-	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
@@ -14848,6 +14850,7 @@ local function AssignDirectGroupOnUpdates()
 		end
 	end
 end
+app.AddEventHandler("OnInit", AssignDirectGroupOnUpdates)
 
 local function PrePopulateAchievementSymlinks()
 	local achCache = app.SearchForFieldContainer("achievementID")
@@ -14870,6 +14873,7 @@ local function PrePopulateAchievementSymlinks()
 	end
 	-- app.PrintDebug("Done:FillAchSym")
 end
+app.AddEventHandler("OnInit", PrePopulateAchievementSymlinks)
 
 -- Function which is triggered after Startup
 app.InitDataCoroutine = function()
@@ -14947,20 +14951,7 @@ app.InitDataCoroutine = function()
 		end
 	end);
 
-	-- refresh any custom collects for this character
-	app.RefreshCustomCollectibility();
-
-	-- Harvest the Spell IDs for Conversion.
-	app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
-
-	-- Assign DGU OnUpdates
-	AssignDirectGroupOnUpdates();
-
-	-- Perform Heirloom caching/upgrade generation
-	app.CacheHeirlooms();
-
-	-- Update character known professions
-	app.RefreshTradeSkillCache();
+	app.HandleEvent("OnInit")
 
 	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
 	local currentQuestsCache = currentCharacter.Quests;
@@ -14968,18 +14959,12 @@ app.InitDataCoroutine = function()
 		if completion == 2 then currentQuestsCache[questID] = nil; end
 	end
 
-	-- Trigger symlink population runner for Achievements to handle
-	-- the generation of 'achievement_criteria' into the Main list
-	PrePopulateAchievementSymlinks()
-
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- app.PrintDebug("Yield prior to Refresh")
 	coroutine.yield();
 
 	-- Prepare the Sound Pack!
 	app.Audio:ReloadSoundPack();
-
-	app.RefreshCollections();
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
 	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
@@ -14992,9 +14977,6 @@ app.InitDataCoroutine = function()
 
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
-
-	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
-	DelayedCallback(app.LocationTrigger, 3);
 
 	app:RegisterEvent("HEIRLOOMS_UPDATED");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
@@ -15299,11 +15281,6 @@ app.events.ADDON_LOADED = function(addonName)
 	if addonTrigger then addonTrigger(); end
 end
 
-app.events.SKILL_LINES_CHANGED = function()
-	-- app.PrintDebug("SKILL_LINES_CHANGED")
-	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
-	DelayedCallback(app.RefreshTradeSkillCache, 2);
-end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	if itemID then

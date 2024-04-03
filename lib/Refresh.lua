@@ -363,3 +363,4 @@ end
 end
 
 app.RefreshCollections = function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections) end
+app.HandleEvent("OnInit", app.RefreshCollections)
