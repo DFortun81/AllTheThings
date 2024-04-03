@@ -72,29 +72,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(255, "225:220:36:109"),		-- Altar of Storms
+				exploration(255),	-- Altar of Storms
 				-- #if AFTER CATA
 				exploration(5652),	-- Black Tooth Hovel
 				-- #endif
-				exploration(254, "256:280:173:101"),	-- Blackrock Mountain
-				exploration(2417, "270:310:589:279"),	-- Blackrock Pass
-				exploration(252, "245:265:334:114"),	-- Blackrock Stronghold
-				exploration(2421, "415:315:56:258"),	-- Draco'dar
-				exploration(249, "220:225:707:168"),	-- Dreadmaul Rock
+				exploration(254),	-- Blackrock Mountain
+				exploration(2417),	-- Blackrock Pass
+				exploration(252),	-- Blackrock Stronghold
+				exploration(2421),	-- Draco'dar
+				exploration(249),	-- Dreadmaul Rock
 				-- #if AFTER CATA
 				exploration(5653),	-- Fields of Honor
 				--exploration(251),	-- Flame Crest (Does not get detected)
 				exploration(5651),	-- Flamestar Post
 				-- #endif
-				exploration(2418, "294:270:708:311"),	-- Morgan's Vigil
-				exploration(250, "270:285:513:99"),		-- Ruins of Thaurissan
+				exploration(2418),	-- Morgan's Vigil
+				exploration(250),	-- Ruins of Thaurissan
 				-- #if AFTER CATA
 				exploration(2419),	-- Slither Rock
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(2420, "280:355:722:46"),	-- Terror Wing Path
+				exploration(2420),	-- Terror Wing Path
 				-- #endif
-				exploration(253, "320:270:377:285"),	-- The Pillar of Ash
+				exploration(253),	-- The Pillar of Ash
 				-- #if AFTER CATA
 				exploration(5650),	-- The Whelping Downs
 				exploration(5677),	-- Valley of Ashes

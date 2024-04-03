@@ -250,29 +250,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(348, "255:205:13:245"),		-- Aerie Peak
-				exploration(1884, "205:195:374:164"),	-- Agol'watha
+				exploration(348),	-- Aerie Peak
+				exploration(1884),	-- Agol'watha
 				-- #if AFTER CATA
 				exploration(1887),	-- Bogen's Ledge
 				-- #endif
-				exploration(1885, "225:200:171:306"),	-- Hiri'watha / Hiri'watha Research Station [CATA+]
-				exploration(354, "235:285:505:333"),	-- Jintha'Alor
-				exploration(1882, "145:220:158:149"),	-- Plaguemist Ravine
-				exploration(350, "185:195:237:185"),	-- Quel'Danil Lodge
+				exploration(1885),	-- Hiri'watha / Hiri'watha Research Station [CATA+]
+				exploration(354),	-- Jintha'Alor
+				exploration(1882),	-- Plaguemist Ravine
+				exploration(350),	-- Quel'Danil Lodge
 				-- #if AFTER CATA
 				exploration(3317),	-- Revantusk Village
 				-- #endif
-				exploration(356, "275:275:509:19"),		-- Seradane
-				exploration(353, "195:185:240:387"),	-- Shadra'Alor
-				exploration(1917, "280:205:571:239"),	-- Shaol'watha
-				exploration(351, "160:145:512:232"),	-- Skulk Rock
+				exploration(356),	-- Seradane
+				exploration(353),	-- Shadra'Alor
+				exploration(1917),	-- Shaol'watha
+				exploration(351),	-- Skulk Rock
 				-- #if AFTER CATA
 				exploration(5323),	-- Stormfeather Outpost
 				-- #endif
-				exploration(355, "200:165:373:365"),	-- The Altar of Zul
-				exploration(1886, "180:170:408:260"),	-- The Creeping Ruin
-				exploration(307, "170:310:693:303"),	-- The Overlook Cliffs
-				exploration(1883, "170:170:319:302"),	-- Valorwind Lake
+				exploration(355),	-- The Altar of Zul
+				exploration(1886),	-- The Creeping Ruin
+				exploration(307),	-- The Overlook Cliffs
+				exploration(1883),	-- Valorwind Lake
 				-- #if AFTER CATA
 				exploration(352),	-- Zun'watha
 				-- #endif

@@ -664,7 +664,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(736),	-- Ban'ethil Hollow
 				exploration(1657),	-- Darnassus
 				exploration(186),	-- Dolanaar
@@ -673,26 +672,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(478),	-- Pools of Arlithrien
 				exploration(702),	-- Rut'theran Village
 				exploration(188),	-- Shadowglen
+				-- #if AFTER CATA
 				exploration(257),	-- Shadowthread Cave
+				-- #endif
 				exploration(260),	-- Starbreeze Village
+				-- #if AFTER CATA
 				exploration(263),	-- The Cleft
+				-- #endif
 				exploration(264),	-- The Oracle Glade
 				exploration(266),	-- Wellspring Lake
 				exploration(265),	-- Wellspring River
-				-- #else
-				exploration(736, "160:210:382:281"),	-- Ban'ethil Hollow
-				exploration(1657, "315:256:101:247"),	-- Darnassus
-				exploration(186, "190:128:462:323"),	-- Dolanaar
-				exploration(261, "185:128:368:443"),	-- Gnarlpine Hold
-				exploration(259, "256:185:436:380"),	-- Lake Al'Ameth
-				exploration(478, "128:190:335:313"),	-- Pools of Arlithrien
-				exploration(702, "128:100:494:548"),	-- Rut'theran Village
-				exploration(188, "225:225:491:153"),	-- Shadowglen
-				exploration(260, "200:200:561:292"),	-- Starbreeze Village
-				exploration(264, "170:240:272:127"),	-- The Oracle Glade
-				exploration(266, "180:256:377:93"),		-- Wellspring Lake
-				exploration(265),	-- Wellspring River
-				-- #endif
 				--[[
 				exploration(256),	-- Aldrassil
 				exploration(262),	-- Ban'ethil Barrow Den

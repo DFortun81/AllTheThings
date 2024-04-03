@@ -660,16 +660,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(404),	-- Bael'dun Digsite
 				exploration(222),	-- Bloodhoof Village
 				exploration(221),	-- Camp Narache
+				-- #if AFTER CATA
 				exploration(4835),	-- Camp Sungraze
+				-- #endif
 				exploration(818),	-- Palemane Rock
 				exploration(224),	-- Ravaged Caravan
 				exploration(220),	-- Red Cloud Mesa
 				exploration(225),	-- Red Rocks
+				-- #if AFTER CATA
 				exploration(4836),	-- Stonetalon Pass
+				-- #endif
 				exploration(820),	-- The Golden Plains
 				exploration(821),	-- The Rolling Plains
 				exploration(360),	-- The Venture Co. Mine
@@ -678,23 +681,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(398),	-- Wildmane Water Well
 				exploration(819),	-- Windfury Ridge
 				exploration(396),	-- Winterhoof Water Well
-				-- #else
-				exploration(404, "210:180:255:214"),	-- Bael'dun Digsite
-				exploration(222, "256:200:367:303"),	-- Bloodhoof Village
-				exploration(221),	-- Camp Narache
-				exploration(818, "128:205:303:307"),	-- Palemane Rock
-				exploration(224, "128:120:473:260"),	-- Ravaged Caravan
-				exploration(220, "470:243:270:425"),	-- Red Cloud Mesa
-				exploration(225, "205:230:502:16"),		-- Red Rocks
-				exploration(820, "215:240:428:80"),		-- The Golden Plains
-				exploration(821, "256:190:523:356"),	-- The Rolling Plains
-				exploration(360, "225:235:532:238"),	-- The Venture Co. Mine
-				exploration(1638, "280:240:249:59"),	-- Thunder Bluff
-				exploration(397, "128:155:379:242"),	-- Thunderhorn Water Well
-				exploration(396, "170:128:458:369"),	-- Winterhoof Water Well
-				exploration(398, "185:128:291:0"),		-- Wildmane Water Well
-				exploration(819, "205:128:395:0"),		-- Windfury Ridge
-				-- #endif
 				--[[
 				exploration(358),	-- Brambleblade Ravine
 				exploration(471),	-- Brave Wind Mesa

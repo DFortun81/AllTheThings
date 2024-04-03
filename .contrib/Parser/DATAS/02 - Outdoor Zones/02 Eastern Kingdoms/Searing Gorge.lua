@@ -56,21 +56,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(1957, "275:235:77:366"),	-- Blackchar Cave
+				exploration(1957),	-- Blackchar Cave
 				-- #if AFTER CATA
 				exploration(1445),	-- Blackrock Mountain
 				-- #endif
-				exploration(1959, "460:365:422:8"),		-- Dustfire Valley
-				exploration(1442, "405:430:85:30"),		-- Firewatch Ridge
-				exploration(247, "305:220:494:300"),	-- Grimesilt Dig Site
+				exploration(1959),	-- Dustfire Valley
+				exploration(1442),	-- Firewatch Ridge
+				exploration(247),	-- Grimesilt Dig Site
 				-- #if AFTER CATA
 				exploration(5615),	-- Pyrox Flats
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(1958, "305:230:545:407"),	-- Tanner Camp
+				exploration(1958),	-- Tanner Camp
 				-- #endif
-				exploration(246, "425:325:250:170"),	-- The Cauldron
-				exploration(1444, "360:280:247:388"),	-- The Sea of Cinders
+				exploration(246),	-- The Cauldron
+				exploration(1444),	-- The Sea of Cinders
 				-- #if AFTER CATA
 				exploration(1443),	-- The Slag Pit
 				exploration(5629),	-- Thorium Advance

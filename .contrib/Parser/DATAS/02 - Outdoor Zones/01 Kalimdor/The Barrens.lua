@@ -27,31 +27,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			explorationHeader({
-				exploration(1700, "200:185:340:234"),	-- Agama'gor
-				exploration(359, "128:128:431:479"),	-- Bael Modan
-				exploration(1701, "155:128:335:462"),	-- Blackthorn Ridge
-				exploration(381, "120:110:555:0"),		-- Boulder Lode Mine
-				exploration(1698, "125:165:442:298"),	-- Bramblescar
-				exploration(378, "145:125:365:350"),	-- Camp Taurajo
-				exploration(384, "128:105:419:63"),		-- Dreadmist Peak
-				exploration(379, "100:165:564:52"),		-- Far Watch Post
-				exploration(390, "210:150:355:402"),	-- Field of Giants
-				exploration(1704, "125:115:492:63"),	-- Grol'dom Farm
-				exploration(1702, "128:128:306:130"),	-- Honor's Stand
-				exploration(387, "175:185:365:177"),	-- Lushwater Oasis
-				exploration(385, "150:120:527:307"),	-- Northwatch Hold
-				exploration(1697, "115:110:507:294"),	-- Raptor Grounds
-				exploration(392, "125:125:556:189"),	-- Ratchet
-				exploration(1316, "155:115:407:553"),	-- Razorfen Downs
-				exploration(1717, "128:128:341:537"),	-- Razorfen Kraul
-				exploration(380, "155:155:431:118"),	-- The Crossroads
-				exploration(383, "200:145:317:29"),		-- The Dry Hills
-				exploration(386, "120:125:384:115"),	-- The Forgotten Pools
-				exploration(391, "95:100:581:247"),		-- The Merchant Coast
-				exploration(1703, "128:100:412:0"),		-- The Mor'shan Rampart
-				exploration(382, "170:120:456:0"),		-- The Sludge Fen
-				exploration(388, "155:128:481:211"),	-- The Stagnant Oasis
-				exploration(1699, "140:128:498:119"),	-- Thorn Hill
+				exploration(1700),	-- Agama'gor
+				exploration(359),	-- Bael Modan
+				exploration(1701),	-- Blackthorn Ridge
+				exploration(381),	-- Boulder Lode Mine
+				exploration(1698),	-- Bramblescar
+				exploration(378),	-- Camp Taurajo
+				exploration(384),	-- Dreadmist Peak
+				exploration(379),	-- Far Watch Post
+				exploration(390),	-- Field of Giants
+				exploration(1704),	-- Grol'dom Farm
+				exploration(1702),	-- Honor's Stand
+				exploration(387),	-- Lushwater Oasis
+				exploration(385),	-- Northwatch Hold
+				exploration(1697),	-- Raptor Grounds
+				exploration(392),	-- Ratchet
+				exploration(1316),	-- Razorfen Downs
+				exploration(1717),	-- Razorfen Kraul
+				exploration(380),	-- The Crossroads
+				exploration(383),	-- The Dry Hills
+				exploration(386),	-- The Forgotten Pools
+				exploration(391),	-- The Merchant Coast
+				exploration(1703),	-- The Mor'shan Rampart
+				exploration(382),	-- The Sludge Fen
+				exploration(388),	-- The Stagnant Oasis
+				exploration(1699),	-- Thorn Hill
 				--[[
 				exploration(2157),	-- Bael'dun Keep
 				exploration(2138),	-- Dreadmist Den

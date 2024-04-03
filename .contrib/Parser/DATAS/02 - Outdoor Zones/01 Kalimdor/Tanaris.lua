@@ -2872,7 +2872,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(1939),	-- Abyssal Sands
 				exploration(1938),	-- Broken Pillar
 				exploration(2300),	-- Caverns of Time
@@ -2881,6 +2880,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(976),	-- Gadgetzan
 				exploration(987),	-- Land's End Beach
 				exploration(1336),	-- Lost Rigger Cove
+				-- #if BEFORE CATA
+				exploration(1937),	-- Noonshade Ruins
+				-- #endif
 				exploration(979),	-- Sandsorrow Watch
 				exploration(1940),	-- Southbreak Shore
 				exploration(992),	-- Southmoon Ruins
@@ -2889,29 +2891,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(982),	-- The Noxious Lair
 				exploration(980),	-- Thistleshrub Valley
 				exploration(990),	-- Valley of the Watchers
-				exploration(978),	-- Zul'Farrak
-				-- #else
-				exploration(1939, "215:180:363:194"),	-- Abyssal Sands
-				exploration(1938, "110:180:473:234"),	-- Broken Pillar
-				exploration(2300, "155:150:561:256"),	-- Caverns of Time
-				exploration(983, "205:145:325:289"),	-- Dunemaul Compound
-				exploration(984, "160:150:395:346"),	-- Eastmoon Ruins
-				exploration(976, "175:165:421:91"),		-- Gadgetzan
-				exploration(987, "205:157:445:511"),	-- Land's End Beach
-				exploration(1336, "160:190:629:220"),	-- Lost Rigger Cove
-				exploration(1937, "120:135:533:104"),	-- Noonshade Ruins
-				exploration(979, "195:175:299:100"),	-- Sandsorrow Watch
-				exploration(1940, "215:175:499:293"),	-- Southbreak Shore
-				exploration(992, "195:210:323:359"),	-- Southmoon Ruins
-				exploration(977, "155:150:592:75"),		-- Steamwheedle Port
-				exploration(981, "220:210:449:372"),	-- The Gaping Chasm
-				exploration(982, "180:200:252:199"),	-- The Noxious Lair
-				exploration(980, "185:250:203:286"),	-- Thistleshrub Valley
-				exploration(990, "150:160:291:434"),	-- Valley of the Watchers
-				exploration(985, "165:180:509:168"),	-- Waterspring Field
-				exploration(986, "110:140:611:147"),	-- Zalashji's Den
-				exploration(978, "210:175:254:0"),		-- Zul'Farrak
+				-- #if BEFORE CATA
+				exploration(985),	-- Waterspring Field
+				exploration(986),	-- Zalashji's Den
 				-- #endif
+				exploration(978),	-- Zul'Farrak
 				--[[
 				exploration(991),	-- Gunstan's Post
 				exploration(2317),	-- South Seas

@@ -70,28 +70,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(537),	-- Fire Plume Ridge
+				-- #if AFTER CATA
 				exploration(542),	-- Fungal Rock
+				-- #endif
 				exploration(543),	-- Golakka Hot Springs
 				exploration(1943),	-- Ironstone Plateau
 				exploration(538),	-- Lakkari Tar Pits
+				-- #if AFTER CATA
 				exploration(541),	-- Marshal's Refuge
+				-- #endif
 				exploration(539),	-- Terror Run
 				exploration(1942),	-- The Marshlands
+				-- #if AFTER CATA
 				exploration(4885),	-- The Roiling Gardens
 				exploration(4884),	-- The Screaming Reaches
 				exploration(4382),	-- The Shaper's Terrace
-				exploration(540),	-- The Slithering Scar
-				-- #else
-				exploration(537, "295:270:367:178"),	-- Fire Plume Ridge
-				exploration(543, "315:345:121:151"),	-- Golakka Hot Springs
-				exploration(1943, "285:285:582:67"),	-- Ironstone Plateau
-				exploration(538, "570:265:160:6"),		-- Lakkari Tar Pits
-				exploration(539, "345:285:158:368"),	-- Terror Run
-				exploration(1942, "310:355:560:240"),	-- The Marshlands
-				exploration(540, "345:285:367:380"),	-- The Slithering Scar
 				-- #endif
+				exploration(540),	-- The Slithering Scar
 			}),
 			n(FLIGHT_PATHS, {
 				fp(79, {	-- Marshal's Refuge, Un'Goro Crater / Marshal's Stand, Un'Goro Crater [CATA+]

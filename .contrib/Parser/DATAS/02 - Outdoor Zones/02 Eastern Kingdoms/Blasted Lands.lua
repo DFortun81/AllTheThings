@@ -68,29 +68,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(1441, "185:155:310:133"),	-- Altar of Storms
-				exploration(1437, "195:180:361:15"),	-- Dreadmaul Hold
-				exploration(1439, "245:195:361:195"),	-- Dreadmaul Post
+				exploration(1441),	-- Altar of Storms
+				exploration(1437),	-- Dreadmaul Hold
+				exploration(1439),	-- Dreadmaul Post
 				-- #if BEFORE CATA
-				exploration(1457, "170:200:472:9"),		-- Garrison Armory
+				exploration(1457),	-- Garrison Armory
 				-- #endif
-				exploration(1438, "185:190:559:30"),	-- Nethergarde Keep
+				exploration(1438),	-- Nethergarde Keep
 				-- #if AFTER CATA
 				exploration(5076),	-- Nethergarde Supply Camp
 				-- #endif
-				exploration(2517, "170:145:405:123"),	-- Rise of the Defiler
-				exploration(1440, "225:170:501:140"),	-- Serpent's Coil
+				exploration(2517),	-- Rise of the Defiler
+				exploration(1440),	-- Serpent's Coil
 				-- #if AFTER CATA
 				exploration(5077),	-- Shatterstone
 				exploration(5083),	-- Sunveil Excursion
 				exploration(5084),	-- Surwich
 				-- #endif
-				exploration(72, "265:220:453:259"),		-- The Dark Portal
+				exploration(72),	-- The Dark Portal
 				-- #if AFTER CATA
 				exploration(5078),	-- The Red Reaches
 				exploration(5044),	-- The Tainted Forest
 				-- #endif
-				exploration(73, "384:450:212:178"),		-- The Tainted Scar
+				exploration(73),	-- The Tainted Scar
 			}),
 			n(FLIGHT_PATHS, {
 				fp(604, {	-- Dreadmaul Hold, Blasted Lands

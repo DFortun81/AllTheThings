@@ -1965,24 +1965,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(62, "256:249:577:419"),		-- Brackwell Pumpkin Patch
-				exploration(18, "225:220:422:332"),		-- Crystal Lake
-				exploration(88, "256:210:704:330"),		-- Eastvale Logging Camp
-				exploration(57, "256:240:238:428"),		-- Fargodeep Mine
-				exploration(60, "256:341:124:327"),		-- Forest's Edge
-				exploration(87, "240:220:250:270"),		-- Goldshire
+				exploration(62),	-- Brackwell Pumpkin Patch
+				exploration(18),	-- Crystal Lake
+				exploration(88),	-- Eastvale Logging Camp
+				exploration(57),	-- Fargodeep Mine
+				exploration(60),	-- Forest's Edge
+				exploration(87),	-- Goldshire
 				-- #if AFTER CATA
 				exploration(5176),	-- Goldtooth's Den
 				-- #endif
 				exploration(54),	-- Jasperlode Mine
-				exploration(797, "256:237:425:431"),	-- Jerod's Landing
-				exploration(9, "256:256:381:147"),		-- Northshire Valley
-				exploration(798, "306:233:696:435"),	-- Ridgepoint Tower
-				exploration(86, "310:256:587:190"),		-- Stone Cairn Lake
-				exploration(1519, "485:405:0:0"),		-- Stormwind City
+				exploration(797),	-- Jerod's Landing
+				exploration(9),		-- Northshire Valley
+				exploration(798),	-- Ridgepoint Tower
+				exploration(86),	-- Stone Cairn Lake
+				exploration(1519),	-- Stormwind City
 				exploration(64),	-- The Maclure Vineyards
 				exploration(63),	-- The Stonefield Farm
-				exploration(91, "255:250:551:292"),		-- Tower of Azora
+				exploration(91),	-- Tower of Azora
 				exploration(120),	-- Westbrook Garrison
 				--[[
 				exploration(34),	-- Echo Ridge Mine
