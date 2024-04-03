@@ -400,7 +400,6 @@ local function GenerateHitsForMap(grid, mapID)
 	end
 	return any, hits;
 end
-app.GenerateHitsForMap = GenerateHitsForMap;
 local OnClickForExplorationHeader = function(row, button)
 	if button == "RightButton" and IsControlKeyDown() then
 		local info = {};
