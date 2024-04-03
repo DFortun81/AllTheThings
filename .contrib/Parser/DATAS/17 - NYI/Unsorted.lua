@@ -69,7 +69,6 @@ root(ROOTS.Unsorted, {
 				i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
 			}),
 			n(PVP, {	-- SEASON 4 PvP
-				i(211690),	-- Artisan's Consortium Brochure
 				i(211770),	-- Medal of Honor
 				i(211771),	-- Medal of Honor
 				i(211772),	-- Glorious Medal of Honor
