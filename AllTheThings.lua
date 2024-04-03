@@ -5399,9 +5399,9 @@ local function CheckAchievementCollectionStatus(achievementID)
 		end
 	end
 end
-app.RefreshAchievementCollection = function()
+local function RefreshAchievementCollection()
 	if ATTAccountWideData then
-		local maxid, achID = 0;
+		local maxid, achID = 0, 0;
 		for achievementID,_ in pairs(SearchForFieldContainer("achievementID")) do
 			achID = tonumber(achievementID);
 			if achID > maxid then maxid = achID; end
@@ -5411,7 +5411,7 @@ app.RefreshAchievementCollection = function()
 		end
 	end
 end
-app.AddEventHandler("OnRefreshCollections", app.RefreshAchievementCollection)
+app.AddEventHandler("OnRefreshCollections", RefreshAchievementCollection)
 app.AddEventHandler("OnReady", function()
 	app:RegisterFuncEvent("ACHIEVEMENT_EARNED", CheckAchievementCollectionStatus);
 	app:RegisterFuncEvent("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);
@@ -7501,11 +7501,7 @@ app.CheckCustomCollects = function(t)
 end
 -- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
 local function RefreshCustomCollectibility()
-	-- print("RefreshCustomCollectibility",app.IsReady)
-	if not app.IsReady then
-		Callback(RefreshCustomCollectibility);
-		return;
-	end
+	-- app.PrintDebug("RefreshCustomCollectibility")
 
 	-- clear existing custom collects
 	wipe(app.ActiveCustomCollects);
@@ -7530,7 +7526,7 @@ local function RefreshCustomCollectibility()
 	-- Shadowlands Covenant: Necrolord
 	SetCustomCollectibility("SL_COV_NEC");
 end
-app.AddEventHandler("OnInit", RefreshCustomCollectibility)
+app.AddEventHandler("OnReady", RefreshCustomCollectibility)
 app.AddEventHandler("OnRecalculate", RefreshCustomCollectibility)
 
 -- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
@@ -11291,7 +11287,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		self:RegisterEvent("WAYPOINT_UPDATE");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
-		app.AddEventHandler("OnReady", LocationTrigger);
 	end
 	if self:IsVisible() then
 		-- Update the mapID into the data for external reference in case not rebuilding
@@ -15271,9 +15266,6 @@ app.AddonLoadedTriggers = {
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
-	end,
-	["Blizzard_AchievementUI"] = function()
-		if app.IsReady then app.RefreshAchievementCollection(); end
 	end,
 };
 app.events.ADDON_LOADED = function(addonName)
