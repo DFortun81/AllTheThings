@@ -4818,16 +4818,6 @@ end
 local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
-app:RegisterEvent("BOSS_KILL");
-app.events.BOSS_KILL = function(id, name, ...)
-	-- This is so that when you kill a boss, you can trigger
-	-- an automatic update of your saved instance cache.
-	-- (It does lag a little, but you can disable this if you want.)
-	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
-	-- print("BOSS_KILL", id, name, ...);
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:RegisterEvent("LOOT_CLOSED");
-end
 app.events.LOOT_CLOSED = function()
 	-- Once the loot window closes after killing a boss, THEN trigger the update.
 	app:UnregisterEvent("LOOT_CLOSED");
@@ -14842,8 +14832,20 @@ app.Startup = function()
 	app.Settings:Initialize();
 
 	-- Register remaining addon-related events
-	app:RegisterEvent("BOSS_KILL");
-	app:RegisterEvent("PLAYER_ENTERING_WORLD");
+	app:RegisterFuncEvent("BOSS_KILL", function(id, name, ...)
+		-- This is so that when you kill a boss, you can trigger
+		-- an automatic update of your saved instance cache.
+		-- (It does lag a little, but you can disable this if you want.)
+		-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
+		-- print("BOSS_KILL", id, name, ...);
+		app:UnregisterEvent("LOOT_CLOSED");
+		app:RegisterEvent("LOOT_CLOSED");
+	end);
+	app:RegisterFuncEvent("PLAYER_ENTERING_WORLD", function(...)
+		-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
+		app.InWorld = true;
+		app:UnregisterEventClean("PLAYER_ENTERING_WORLD")
+	end);
 
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
@@ -15258,10 +15260,6 @@ end)();
 app:RegisterEvent("ADDON_LOADED");
 
 -- Define Event Behaviours
-app.events.PLAYER_ENTERING_WORLD = function(...)
-	-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
-	app.InWorld = true;
-end
 app.AddonLoadedTriggers = {
 	[appName] = function()
 		app.Startup();

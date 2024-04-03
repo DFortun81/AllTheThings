@@ -38,8 +38,12 @@ app.RegisterFuncEvent = function(self, event, func)
 		app.events[event] = func
 	end
 end
-app.UnregisterEvent = function(self, ...)
-	frame:UnregisterEvent(...);
+app.UnregisterEvent = function(self, event, ...)
+	frame:UnregisterEvent(event, ...);
+end
+app.UnregisterEventClean = function(self, event)
+	frame:UnregisterEvent(event);
+	app.events[event] = nil
 end
 app.SetScript = function(self, ...)
 	local scriptName, method = ...;
