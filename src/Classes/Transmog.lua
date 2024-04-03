@@ -501,7 +501,7 @@ local function RefreshAppearanceSources()
 	app.DoRefreshAppearanceSources = nil;
 	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
 	wipe(collectedSources);
-	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
+	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then
 		-- app.PrintDebug("Initial Session Refresh")
