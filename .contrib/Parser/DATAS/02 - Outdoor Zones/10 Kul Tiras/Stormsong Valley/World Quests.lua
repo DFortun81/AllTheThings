@@ -405,11 +405,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			q(51827, {	-- They Came From Behind!
 				["races"] = HORDE_ONLY,
 			}),
-			q(52126, {	-- This Little Piggy Has Sharp Tusks
+			petbattle(q(52126, {	-- This Little Piggy Has Sharp Tusks
 				["provider"] = { "n", 139987 },	-- Bristlespine
 				["coord"] = { 42.41, 76.61, STORMSONG_VALLEY },
-				["filterID"] = BATTLE_PETS,
-			}),
+			})),
 			q(54403, {	-- Tidesage Clarissa (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
 			}),

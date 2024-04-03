@@ -882,3 +882,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #endif
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	n(NOBLEGARDEN_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
+		q(82543),	-- Account wide trigger for first "Daetan Swiftplume" kill of the day
+	})),
+}));
