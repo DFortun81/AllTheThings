@@ -1427,6 +1427,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					REDRIDGE_MOUNTAINS,
 					WETLANDS,
 				},
+				-- #if AFTER 10.0.0
+				["collectible"] = false,
+				-- #endif
 			}),
 		}),
 		i(13888),	-- Darkclaw Lobster
