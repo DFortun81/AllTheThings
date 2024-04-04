@@ -7406,6 +7406,7 @@ local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
 local function SetVisible(self, show, forceUpdate)
+	-- app.PrintDebug("SetVisible",self.Suffix,show,forceUpdate)
 	if show then
 		self:Show();
 		-- apply window position from profile
@@ -13034,7 +13035,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		end
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
-			-- print("Tradeskills.event",e,...)
+			-- app.PrintDebug("Tradeskills.event",e,...)
 			if e == "TRADE_SKILL_LIST_UPDATE" then
 				if self:IsVisible() then
 					-- If it's not yours, don't take credit for it.
@@ -13173,7 +13174,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force or self.force or got, got);
+		self:BaseUpdate(force or self.force, got);
 		self.force = nil;
 	end
 end;
@@ -13628,13 +13629,9 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 			end
 		end
 
-		self:BaseUpdate(force or got);
+		self:BaseUpdate(force);
 	end
 end;
-
-app.ToggleMainList = function()
-	app:GetWindow("Prime"):Toggle();
-end
 end)();
 
 -- ATT Debugger Logic
@@ -14679,7 +14676,7 @@ app.AddEventHandler("OnInit", PrePopulateAchievementSymlinks)
 
 -- Function which is triggered after Startup
 local function InitDataCoroutine()
-	app.PrintMemoryUsage("InitDataCoroutine")
+	-- app.PrintMemoryUsage("InitDataCoroutine")
 	-- if IsInInstance() then
 	-- 	app.print("cannot fully load while in an Instance due to Blizzard restrictions. Please Zone out to finish loading ATT.")
 	-- end
