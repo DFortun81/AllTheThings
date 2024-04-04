@@ -917,8 +917,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if AFTER CATA
 				exploration(3480),	-- Duskwither Grounds (Wrath Classic: Can't be collected)
 				-- #endif
-				exploration(3481, {	-- Duskwither Spire (Horde Only!)
-					["races"] = HORDE_ONLY,
+				exploration(3481, {	-- Duskwither Spire
+					-- CRIEVE NOTE: Apparently you can't collect this at all. My warrior in wrath classic is the only character in the known universe with this area collected!
+					["collectible"] = false,
 				}),
 				exploration(3467),	-- East Sanctum
 				exploration(3558),	-- Elrendar Falls
