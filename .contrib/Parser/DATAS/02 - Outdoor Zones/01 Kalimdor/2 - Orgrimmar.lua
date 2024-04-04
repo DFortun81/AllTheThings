@@ -4535,14 +4535,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-						i(6365, {	-- Strong Fishing Pole
+						i(6256, {
 							-- #if AFTER 10.0.0
 							["collectible"] = false,
 							-- #endif
-						}),
+						}), -- Fishing Pole
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(6365, {
+							-- #if AFTER 10.0.0
+							["collectible"] = false,
+							-- #endif
+						}), -- Strong Fishing Pole
 					},
 				}),
 				n(49737, {	-- Shazdar <Sous Chef>
