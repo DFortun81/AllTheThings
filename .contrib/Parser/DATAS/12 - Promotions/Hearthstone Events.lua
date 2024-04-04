@@ -88,11 +88,7 @@ root(ROOTS.Promotions, {
 				q(79178, {	-- Play Hearthstone!
 					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
 					["provider"] = { "n", 215409 },	-- MC Farala
-					["coords"] = {
-					--	{ 61.6, 31.1, ORGRIMMAR },
-					--	{ 61.6, 31.1, STORMWIND_CITY },
-					--	{ 61.6, 31.1, VALDRAKKEN },
-					},
+					["coord"] = { 61.6, 31.1, VALDRAKKEN },
 					["groups"] = {
 						i(211965),	-- Hearthstone Wild Card
 						i(212979),	-- Hearthstone Starter Pack
@@ -100,27 +96,21 @@ root(ROOTS.Promotions, {
 				}),
 				q(79693, {	-- Play Hearthstone!
 					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
-					["coords"] = {
-						--	{ 61.6, 31.1, ORGRIMMAR },
-						--	{ 61.6, 31.1, STORMWIND_CITY },
-						--	{ 61.6, 31.1, VALDRAKKEN },
-						},
-						["groups"] = {
-							i(211965),	-- Hearthstone Wild Card
-							i(212979),	-- Hearthstone Starter Pack
-						},
+					["coord"] = { 61.6, 31.1, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(211965),	-- Hearthstone Wild Card
+						i(212979),	-- Hearthstone Starter Pack
+					},
 				}),
 				q(79694, {	-- Play Hearthstone!
 					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
-					["coords"] = {
-						--	{ 61.6, 31.1, ORGRIMMAR },
-						--	{ 61.6, 31.1, STORMWIND_CITY },
-						--	{ 61.6, 31.1, VALDRAKKEN },
-						},
-						["groups"] = {
-							i(211965),	-- Hearthstone Wild Card
-							i(212979),	-- Hearthstone Starter Pack
-						},
+					["coord"] = { 61.6, 31.1, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(211965),	-- Hearthstone Wild Card
+						i(212979),	-- Hearthstone Starter Pack
+					},
 				}),
 			})),
 			n(215146, {	-- Dr. Boom <"Dr. 7">
