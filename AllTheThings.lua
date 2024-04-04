@@ -11051,7 +11051,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				else
 					self.openedOnLogin = false;
 				end
-				if show then self:Show(); end
+				if show then self:SetVisible(true); end
 			end
 
 			-- Cache that we're in the current map ID.
@@ -11060,12 +11060,12 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- force update when showing the minilist
 			Callback(self.Update, self);
 		end
-		local function RefreshLocation(show)
+		self.RefreshLocation = function(show)
 			-- Acquire the new map ID.
 			local mapID = app.CurrentMapID;
 			-- app.PrintDebug("RefreshLocation",mapID)
 			if not mapID then
-				AfterCombatCallback(RefreshLocation);
+				AfterCombatCallback(self.RefreshLocation);
 				return;
 			end
 			-- don't auto-load minimap to anything higher than a 'Zone' if we are in an instance, unless it has no parent?
@@ -11078,14 +11078,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			end
 			OpenMiniList(mapID, show);
 		end
-		local function ToggleMiniListForCurrentZone()
-			local self = app:GetWindow("CurrentInstance");
-			if self:IsVisible() then
-				self:Hide();
-			else
-				RefreshLocation(true);
-			end
-		end
 		local function LocationTrigger(forceNewMap)
 			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
 				-- app.PrintDebug("LocationTrigger-Callback")
@@ -11093,11 +11085,10 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					-- this allows minilist to rebuild itself
 					wipe(self.CurrentMaps)
 				end
-				AfterCombatOrDelayedCallback(RefreshLocation, 0.25);
+				AfterCombatOrDelayedCallback(self.RefreshLocation, 0.25);
 			end
 		end
 		app.OpenMiniList = OpenMiniList;
-		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 		app.LocationTrigger = LocationTrigger;
 		self:SetScript("OnEvent", function(self, e, ...)
 			-- app.PrintDebug("LocationTrigger",e,...);
