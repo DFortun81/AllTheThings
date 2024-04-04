@@ -1309,11 +1309,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		category(191, {	-- Tools
-			i(6219, {
+			i(6219, {	-- Arclight Spanner
 				-- #if AFTER 10.0.0
 				["collectible"] = false,
 				-- #endif
-			}),	-- Arclight Spanner
+			}),
 			i(10498),	-- Gyromatic Micro-Adjustor
 		}),
 	}),
@@ -1421,7 +1421,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(6352),	-- Waterlogged Crate
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(6366, {
+			i(6366, {	-- Darkwood Fishing Pole
 				["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
 				["maps"] = {
 					ASHENVALE,
@@ -1434,7 +1434,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER 10.0.0
 				["collectible"] = false,
 				-- #endif
-			}), -- Darkwood Fishing Pole
+			}),
 		}),
 		i(13888),	-- Darkclaw Lobster
 		i(6291),	-- Raw Brilliant Smallfish

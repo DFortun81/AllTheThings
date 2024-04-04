@@ -4549,17 +4549,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						i(6256, {
+						i(6256, {	-- Fishing Pole
 							-- #if AFTER 10.0.0
 							["collectible"] = false,
 							-- #endif
-						}), -- Fishing Pole
+						}),
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(6365, {
+						i(6365, {	-- Strong Fishing Pole
 							-- #if AFTER 10.0.0
 							["collectible"] = false,
 							-- #endif
-						}), -- Strong Fishing Pole
+						}),
 					},
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
