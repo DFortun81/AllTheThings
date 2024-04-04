@@ -616,15 +616,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(60361, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Battle for Azeroth: Mission Statement
-					["sourceQuest"] = 60360,	-- An Urgent Meeting
-					["qg"] = 168431,	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(178942),	-- War-Chain of the Horde
-					},
-				})),
 				q(1508, {	-- Blind Cazul
 					["qg"] = 5909,	-- Cazul
 					["sourceQuests"] = {
@@ -1284,7 +1275,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
-				q(51443, {	-- Mission Statement (BfA version)
+				q(51443, {	-- Battle For Azeroth: Mission Statement (BfA version)
 					-- available to a level 47, pre-9.0 character during patch 9.0
 					["providers"] = {
 						{ "n", 140176 },	-- Nathanos Blightcaller

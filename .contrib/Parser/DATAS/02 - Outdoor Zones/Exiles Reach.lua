@@ -1113,6 +1113,16 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
+				q(60361, {	-- Battle for Azeroth: Mission Statement (SL version)
+					["sourceQuest"] = 60360,	-- An Urgent Meeting
+					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+					["qg"] = 168431,	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(178942),	-- War-Chain of the Horde
+					},
+				}),
 			}),
 			------ Miscellaneous ------
 			q(54933, {	-- Freeing the Light
