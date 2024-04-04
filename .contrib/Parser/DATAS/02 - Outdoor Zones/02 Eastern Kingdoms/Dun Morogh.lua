@@ -2158,25 +2158,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(803, "128:128:573:280"),	-- Amberstill Ranch
+				exploration(803),	-- Amberstill Ranch
 				-- #if BEFORE CATA
 				exploration(77),	-- Anvilmar
-				exploration(137, "115:115:252:249"),	-- Brewnall Village
-				exploration(801, "180:128:274:296"),	-- Chill Breeze Valley
+				exploration(137),	-- Brewnall Village
+				exploration(801),	-- Chill Breeze Valley
 				-- #endif
-				exploration(800, "150:128:295:385"),	-- Coldridge Pass
-				exploration(132, "240:185:155:403"),	-- Coldridge Valley
+				exploration(800),	-- Coldridge Pass
+				exploration(132),	-- Coldridge Valley
 				-- #if AFTER CATA
 				exploration(5097),	-- Frostmane Front
 				-- #endif
-				exploration(135, "125:125:217:287"),	-- Frostmane Hold
-				exploration(809, "315:200:397:163"),	-- Gates of Ironforge
+				exploration(135),	-- Frostmane Hold
+				exploration(809),	-- Gates of Ironforge
 				-- #if BEFORE CATA
-				exploration(133, "180:165:166:184"),	-- Gnomeregan
+				exploration(133),	-- Gnomeregan
 				-- #endif
-				exploration(134, "165:165:608:291"),	-- Gol'Bolar Quarry
-				exploration(212, "155:170:694:273"),	-- Helm's Bed Lake
-				exploration(211, "128:180:281:167"),	-- Iceflow Lake
+				exploration(134),	-- Gol'Bolar Quarry
+				exploration(212),	-- Helm's Bed Lake
+				exploration(211),	-- Iceflow Lake
 				exploration(716),	-- Ironband's Compound
 				-- #if AFTER CATA
 				exploration(1537),	-- Ironforge
@@ -2184,23 +2184,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(131),	-- Kharanos
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(138, "128:165:502:221"),	-- Misty Pine Refuge
+				exploration(138),	-- Misty Pine Refuge
 				-- #endif
 				-- #if AFTER CATA
 				exploration(133),	-- New Tinkertown
 				-- #endif
-				exploration(808, "128:165:759:173"),	-- North Gate Outpost
+				exploration(808),	-- North Gate Outpost
 				-- #if AFTER CATA
 				exploration(807),	-- North Gate Pass
 				-- #endif
-				exploration(802, "128:190:347:163"),	-- Shimmer Ridge
-				exploration(806, "128:120:792:279"),	-- South Gate Outpost
+				exploration(802),	-- Shimmer Ridge
+				exploration(806),	-- South Gate Outpost
 				-- #if AFTER CATA
 				exploration(805),	-- South Gate Pass
 				exploration(189),	-- Steelgrill's Depot
 				-- #endif
-				exploration(136, "200:185:314:311"),	-- The Grizzled Den
-				exploration(804, "155:128:522:322"),	-- The Tundrid Hills
+				exploration(136),	-- The Grizzled Den
+				exploration(804),	-- The Tundrid Hills
 				--[[
 				exploration(2102),	-- Thunderbrew Distillery
 				]]--

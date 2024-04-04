@@ -77,28 +77,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5458),	-- Bogpaddle
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(76, "365:305:492:0"),		-- Fallow Sanctuary
-				exploration(1777, "240:245:0:262"),		-- Itharius's Cave
+				exploration(76),	-- Fallow Sanctuary
+				exploration(1777),	-- Itharius's Cave
 				-- #endif
 				-- #if AFTER CATA
 				exploration(5459),	-- Marshtide Watch
 				-- #endif
 				exploration(1978),	-- Misty Reed Post
-				exploration(300, "256:668:746:0"),		-- Misty Reed Strand
-				exploration(116, "245:305:0:140"),		-- Misty Valley
-				exploration(74, "300:275:565:218"),		-- Pool of Tears
+				exploration(300),	-- Misty Reed Strand
+				exploration(116),	-- Misty Valley
+				exploration(74),	-- Pool of Tears
 				-- #if AFTER CATA
 				exploration(1777),	-- Purespring Cavern
 				-- #endif
-				exploration(1778, "215:365:724:120"),	-- Sorrowmurk
-				exploration(1780, "275:240:129:236"),	-- Splinterspear Junction
-				exploration(1797, "345:250:552:378"),	-- Stagalbog
-				exploration(75, "360:315:279:237"),		-- Stonard
+				exploration(1778),	-- Sorrowmurk
+				exploration(1780),	-- Splinterspear Junction
+				exploration(1797),	-- Stagalbog
+				exploration(75),	-- Stonard
 				-- #if AFTER CATA
 				exploration(5460),	-- The Bloodmire
 				-- #endif
-				exploration(657, "235:205:171:145"),	-- The Harborage
-				exploration(1798, "315:235:286:110"),	-- The Shifting Mire
+				exploration(657),	-- The Harborage
+				exploration(1798),	-- The Shifting Mire
 				--[[
 				exploration(1779),	-- Draenil'dur Village
 				exploration(1817),	-- Stagalbog Cave

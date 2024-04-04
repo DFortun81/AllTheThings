@@ -123,7 +123,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1357),	-- Gallow's Corner
 				exploration(1677),	-- Gavin's Naze
 				exploration(1683),	-- Growless Cave
-				exploration(287),	-- Hillsbrad
+				exploration(287, {	-- Hillsbrad
+					-- CRIEVE NOTE: Couldn't get this to trigger on my rogue, could possibly be caused by my paladin's legacy data from exploring before Cata.
+					["collectible"] = false,
+				}),
 				-- #endif
 				-- #if BEFORE CATA
 				exploration(286),	-- Hillsbrad Fields

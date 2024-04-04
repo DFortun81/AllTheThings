@@ -664,7 +664,7 @@ for key,value in pairs({
 		--TODO: DEATHS_CHECKBOX = "Deaths";
 		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 		--TODO: EXPLORATION_CHECKBOX = "Exploration";
-		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps. \n\nNOTE: Collection logic is based on the visible map data, so if it isn't marked collected, try reloading or relogging first.";
+		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.";
 		FLIGHT_PATHS_CHECKBOX = "Полёты & Паромные Станции";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Включите для отслеживания путей полётов и паромных станций.\n\nЧтобы *собрать* их, начните разговор с распорядителем полётов/паромной станции на каждом континенте.\n\nПримечание: Из-за технологии фазирования, Вам может потребоваться перейти в другую версию локации, чтобы засчитать эти достопримечательности.";
 		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;

@@ -167,6 +167,10 @@ root(ROOTS.Zones, {
 					exploration(7070),	-- Ironfist Harbor
 					exploration(7065),	-- Lok-rath
 					exploration(7067),	-- Mar'gok's Overwatch
+					exploration(7296, {	-- Mok'gol Watchpost
+						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Highmaul Harbor / Broken Precipe, it gets masked behind it.
+						["collectible"] = false,
+					}),
 					exploration(7150),	-- Oshu'gun
 					exploration(7063),	-- Riverside Post
 					exploration(7297),	-- Ruins of Na'gwa

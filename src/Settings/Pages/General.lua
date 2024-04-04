@@ -372,17 +372,17 @@ child:CreateAccountWideCheckbox("DEATHS", "Deaths")
 	:AlignBelow(accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
 child:CreateTrackingCheckbox("DEATHS", "Deaths", true)
 	:AlignAfter(accwideCheckboxDeaths)
+end
 
 accwideCheckboxExploration =
 child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
-	:AlignBelow(accwideCheckboxDeaths)
+	:AlignBelow(accwideCheckboxDeaths or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
 child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
 	:AlignAfter(accwideCheckboxExploration)
-end
 
 local accwideCheckboxFlightPaths =
 child:CreateAccountWideCheckbox("FLIGHT_PATHS", "FlightPaths")
-	:AlignBelow(accwideCheckboxExploration or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
+	:AlignBelow(accwideCheckboxExploration)
 child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths", true)
 	:AlignAfter(accwideCheckboxFlightPaths)
 

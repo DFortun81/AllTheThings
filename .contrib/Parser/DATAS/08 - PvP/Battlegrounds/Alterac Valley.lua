@@ -230,10 +230,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			-- #if BEFORE TBC
 			explorationHeader({
-				exploration(2959, "270:240:348:13"),	-- Dun Baldar
+				exploration(2959),	-- Dun Baldar
 				exploration(3299),	-- Dun Baldar Pass
-				exploration(3057, "300:300:335:172"),	-- Field of Strife
-				exploration(2978, "235:290:399:375"),	-- Frostwolf Keep
+				exploration(3057),	-- Field of Strife
+				exploration(2978),	-- Frostwolf Keep
 				exploration(3318),	-- Rock of Durotan
 				exploration(2977),	-- Iceblood Garrison
 			}),

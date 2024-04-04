@@ -131,7 +131,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4827),	-- Storm Cliffs
 				exploration(3137),	-- Talrendis Point
 				exploration(1256),	-- The Ruined Reaches
-				exploration(4829),	-- The Secret Lab
+				exploration(4829, {	-- The Secret Lab
+					-- CRIEVE NOTE: I was initially able to collect this, but if you collect Lake Mennar, it gets masked behind it.
+					["collectible"] = false,
+				}),
 				exploration(1228),	-- The Shattered Strand
 				exploration(1229),	-- Tower of Eldara
 				exploration(1237),	-- Valormok

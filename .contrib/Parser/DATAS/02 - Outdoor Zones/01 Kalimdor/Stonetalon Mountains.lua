@@ -105,36 +105,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(4938),	-- Battlescar Valley
+				-- #endif
 				exploration(2540),	-- Boulderslide Ravine
+				-- #if AFTER CATA
 				exploration(4936),	-- Cliffwalker Post
 				exploration(469),	-- Greatwood Vale
+				-- #else
+				exploration(2538),	-- Camp Aparaje
+				-- #endif
 				exploration(2537),	-- Grimtotem Post
 				exploration(2539),	-- Malaka'jin
 				exploration(464),	-- Mirkfallon Lake
+				-- #if AFTER CATA
 				exploration(4931),	-- Ruins of Eldre'thar
+				-- #else
+				exploration(2541),	-- Sishir Canyon
+				-- #endif
 				exploration(467),	-- Stonetalon Peak
 				exploration(460),	-- Sun Rock Retreat
+				-- #if AFTER CATA
 				exploration(4937),	-- Thal'darah Overlook
+				-- #endif
 				exploration(465),	-- The Charred Vale
 				exploration(1277),	-- The Talondeep Path
+				-- #if AFTER CATA
 				exploration(4941),	-- Unearthed Grounds
 				exploration(4930),	-- Webwinder Hollow
+				-- #endif
 				exploration(1076),	-- Webwinder Path
 				exploration(461),	-- Windshear Crag
-				-- #else
-				exploration(2540, "145:107:572:561"),	-- Boulderslide Ravine
-				exploration(2538, "190:97:718:571"),	-- Camp Aparaje
-				exploration(2537, "225:120:668:515"),	-- Grimtotem Post
-				exploration(2539, "125:86:663:582"),	-- Malaka'jin
-				exploration(464, "200:215:390:145"),	-- Mirkfallon Lake
-				exploration(2541, "125:125:475:433"),	-- Sishir Canyon
-				exploration(467, "270:205:247:0"),		-- Stonetalon Peak
-				exploration(460, "150:150:389:320"),	-- Sun Rock Retreat
-				exploration(465, "230:355:210:234"),	-- The Charred Vale
-				exploration(1277),	-- The Talondeep Path
-				exploration(1076, "288:355:457:282"),	-- Webwinder Path
-				exploration(461, "320:275:553:197"),	-- Windshear Crag
-				-- #endif
 				--[[
 				exploration(636),	-- Blackwolf River
 				exploration(3157),	-- Boulderslide Cavern

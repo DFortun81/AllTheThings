@@ -114,7 +114,10 @@ root(ROOTS.Zones, {
 					exploration(6817),	-- Grimfrost Hill
 					exploration(6779),	-- Grom'gar
 					exploration(6983),	-- Iron Siegeworks
-					exploration(7076),	-- Iron Waystation
+					exploration(7076, {	-- Iron Waystation
+						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bones of Agurak, it gets masked behind it.
+						["collectible"] = false,
+					}),
 					exploration(6784),	-- Magnarok
 					exploration(6777),	-- Stonefang Outpost
 					exploration(6964),	-- Stonefang Ridge

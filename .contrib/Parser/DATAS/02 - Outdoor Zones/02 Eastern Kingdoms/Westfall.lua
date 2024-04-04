@@ -62,27 +62,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(219, "305:210:204:260"),	-- Alexston Farmstead
-				exploration(921, "200:185:208:375"),	-- Demont's Place
-				exploration(109, "210:215:387:11"),		-- Furlbrow's Pumpkin Farm
-				exploration(113, "225:256:220:102"),	-- Gold Coast Quarry
-				exploration(111, "215:215:307:29"),		-- Jangolode Mine
-				exploration(20, "220:200:317:331"),		-- Moonbrook
-				exploration(107, "225:210:459:105"),	-- Saldean's Farm
-				exploration(108, "195:240:442:241"),	-- Sentinel Hill
+				exploration(219),	-- Alexston Farmstead
+				exploration(921),	-- Demont's Place
+				exploration(109),	-- Furlbrow's Pumpkin Farm
+				exploration(113),	-- Gold Coast Quarry
+				exploration(111),	-- Jangolode Mine
+				exploration(20),	-- Moonbrook
+				exploration(107),	-- Saldean's Farm
+				exploration(108),	-- Sentinel Hill
 				exploration(919),	-- Stendel's Pond
-				exploration(920, "256:175:339:418"),	-- The Dagger Hills
-				exploration(917, "200:240:524:252"),	-- The Dead Acre
+				exploration(920),	-- The Dagger Hills
+				exploration(917),	-- The Dead Acre
 				-- #if AFTER CATA
 				exploration(1581),	-- The Deadmines
 				-- #endif
-				exploration(922, "288:235:523:377"),	-- The Dust Plains
-				exploration(916, "165:200:488:0"),		-- The Jansen Stead
-				exploration(918, "225:205:328:148"),	-- The Molsen Farm
+				exploration(922),	-- The Dust Plains
+				exploration(916),	-- The Jansen Stead
+				exploration(918),	-- The Molsen Farm
 				-- #if AFTER CATA
 				exploration(5290),	-- The Raging Chasm
 				-- #endif
-				exploration(115, "280:190:205:467"),	-- Westfall Lighthouse
+				exploration(115),	-- Westfall Lighthouse
 				--[[
 				exploration(26),	-- Lighthouse
 				exploration(2),		-- Longshore

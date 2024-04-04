@@ -684,7 +684,7 @@ for key,value in pairs({
 		--TODO: DEATHS_CHECKBOX = "Deaths";
 		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 		--TODO: EXPLORATION_CHECKBOX = "Exploration";
-		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps. \n\nNOTE: Collection logic is based on the visible map data, so if it isn't marked collected, try reloading or relogging first.";
+		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.";
 		FLIGHT_PATHS_CHECKBOX = "飞行路径";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "启用此选项以追踪飞行路径和飞艇。\n\n要收藏这些信息，请与每个大陆的飞行点/飞艇船长对话。\n\n注意：由于分阶段技术，你可能必须分阶段到区域的其他敌方，以获得这些兴趣点的开启。";
 		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;

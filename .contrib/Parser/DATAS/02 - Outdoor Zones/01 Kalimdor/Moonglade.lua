@@ -24,14 +24,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
 				exploration(656),	-- Lake Elune'ara
 				exploration(2361),	-- Nighthaven
+				-- #if AFTER CATA
 				exploration(2362),	-- Shrine of Remulos
 				exploration(2363),	-- Stormrage Barrow Dens
-				-- #else
-				exploration(656, "555:510:244:89"),	-- Lake Elune'ara
-				exploration(2361),	-- Nighthaven
 				-- #endif
 			}),
 			n(FLIGHT_PATHS, {

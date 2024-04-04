@@ -178,7 +178,10 @@ root(ROOTS.Zones, {
 					exploration(7140),	-- Bloodmane Valley
 					exploration(7126),	-- Camp Thornscar
 					exploration(7034),	-- Dreadtalon Peak
-					exploration(7276),	-- Forlorn Delta
+					exploration(7276, {	-- Forlorn Delta
+						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Pinchwhistle Gearworks, it gets masked behind it.
+						["collectible"] = false,
+					}),
 					exploration(7308),	-- Harvesting Pits
 					exploration(7046),	-- Lost Veil Anzu
 					exploration(7272),	-- Murkbog
@@ -198,7 +201,10 @@ root(ROOTS.Zones, {
 					exploration(7110),	-- The Undergrowth
 					exploration(7202),	-- The Writhing Mire
 					exploration(7127),	-- Veil Akraz
-					exploration(7274),	-- Veil Zekk
+					exploration(7274, {	-- Veil Zekk
+						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bloodmane Valley, it gets masked behind it.
+						["collectible"] = false,
+					}),
 					exploration(7306),	-- Windswept Terrace
 				}),
 				n(FACTIONS, {

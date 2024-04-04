@@ -153,34 +153,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			})),
 			explorationHeader({
-				exploration(123, "90:80:241:92"),		-- Bal'lal Ruins
-				exploration(127, "110:140:371:129"),	-- Balia'mah Ruins
-				exploration(1739, "165:175:194:284"),	-- Bloodsail Compound
-				exploration(35, "145:128:203:433"),		-- Booty Bay
-				exploration(310, "120:120:345:276"),	-- Crystalvein Mine
-				exploration(117, "110:105:260:132"),	-- Grom'gol Base Camp
-				exploration(1741, "200:185:235:189"),	-- Gurubashi Arena
-				exploration(297, "125:120:314:493"),	-- Jaguero Isle
+				exploration(123),	-- Bal'lal Ruins
+				exploration(127),	-- Balia'mah Ruins
+				exploration(1739),	-- Bloodsail Compound
+				exploration(35),	-- Booty Bay
+				exploration(310),	-- Crystalvein Mine
+				exploration(117),	-- Grom'gol Base Camp
+				exploration(1741),	-- Gurubashi Arena
+				exploration(297),	-- Jaguero Isle
 				exploration(312),	-- Janeiro's Point
-				exploration(125, "95:95:299:88"),		-- Kal'ai Ruins
-				exploration(101, "155:150:388:0"),		-- Kurzen's Compound
-				exploration(37, "128:125:331:59"),		-- Lake Nazferiti
-				exploration(1737, "125:125:280:368"),	-- Mistvale Valley
-				exploration(129, "105:110:311:131"),	-- Mizjah Ruins
-				exploration(105, "128:175:432:94"),		-- Mosh'Ogg Ogre Mound
-				exploration(1738, "90:115:211:359"),	-- Nek'mani Wellspring
-				exploration(100, "140:110:269:26"),		-- Nesingwary's Expedition
-				exploration(99, "170:90:284:0"),		-- Rebel Camp
-				exploration(311, "95:95:350:335"),		-- Ruins of Aboraz
-				exploration(477, "110:110:306:301"),	-- Ruins of Jubuwal
-				exploration(102, "125:140:196:3"),		-- Ruins of Zul'Kunda
-				exploration(103, "170:125:394:212"),	-- Ruins of Zul'Mamwe
-				exploration(104, "190:175:152:90"),		-- The Vile Reef
-				exploration(1740, "105:125:387:64"),	-- Venture Co. Base Camp
-				exploration(43, "165:190:229:422"),		-- Wild Shore
-				exploration(128, "128:125:364:231"),	-- Ziata'jai Ruins
-				exploration(19, "245:220:483:8"),		-- Zul'Gurub
-				exploration(122, "115:115:156:42"),		-- Zuuldaia Ruins
+				exploration(125),	-- Kal'ai Ruins
+				exploration(101),	-- Kurzen's Compound
+				exploration(37),	-- Lake Nazferiti
+				exploration(1737),	-- Mistvale Valley
+				exploration(129),	-- Mizjah Ruins
+				exploration(105),	-- Mosh'Ogg Ogre Mound
+				exploration(1738),	-- Nek'mani Wellspring
+				exploration(100),	-- Nesingwary's Expedition
+				exploration(99),	-- Rebel Camp
+				exploration(311),	-- Ruins of Aboraz
+				exploration(477),	-- Ruins of Jubuwal
+				exploration(102),	-- Ruins of Zul'Kunda
+				exploration(103),	-- Ruins of Zul'Mamwe
+				exploration(104),	-- The Vile Reef
+				exploration(1740),	-- Venture Co. Base Camp
+				exploration(43),	-- Wild Shore
+				exploration(128),	-- Ziata'jai Ruins
+				exploration(19),	-- Zul'Gurub
+				exploration(122),	-- Zuuldaia Ruins
 				--[[
 				exploration(2177),	-- Battle Ring
 				exploration(7),		-- Blackwater Cove

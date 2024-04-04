@@ -150,20 +150,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				exploration(415, "205:185:272:251"),	-- Astranaar
+				exploration(415),	-- Astranaar
 				-- #if AFTER WRATH
 				exploration(411),	-- Bathran's Haunt
 				-- #endif
 				-- #if AFTER CATA
 				exploration(2797),	-- Blackfathom Deeps
 				-- #endif
-				exploration(438, "146:200:856:151"),	-- Bough Shadow
+				exploration(438),	-- Bough Shadow
 				-- #if AFTER CATA
 				exploration(435),	-- Demon Fall Canyon
 				-- #endif
-				exploration(422, "235:205:547:426"),	-- Fallen Sky Lake
-				exploration(434, "245:255:713:344"),	-- Felfire Hill
-				exploration(417, "165:175:189:324"),	-- Fire Scar Shrine
+				exploration(422),	-- Fallen Sky Lake
+				exploration(434),	-- Felfire Hill
+				exploration(417),	-- Fire Scar Shrine
 				-- #if AFTER WRATH
 				exploration(2358),	-- Forest Song
 				-- #endif
@@ -172,40 +172,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4691),	-- Hellscream's Watch
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(424, "200:205:392:218"),	-- Iris Lake
+				exploration(424),	-- Iris Lake
 				-- #endif
-				exploration(441, "128:195:131:137"),	-- Lake Falathim
-				exploration(413, "215:305:205:38"),		-- Maestra's Post
+				exploration(441),	-- Lake Falathim
+				exploration(413),	-- Maestra's Post
 				-- #if AFTER WRATH
 				exploration(425),	-- Moonwell / Moonwell of Purity [CATA+]
 				-- #endif
 				-- #if BEFORE CATA
-				exploration(421, "275:240:356:347"),	-- Mystral Lake
+				exploration(421),	-- Mystral Lake
 				-- #endif
-				exploration(428, "225:255:597:258"),	-- Night Run
-				exploration(426, "180:245:520:238"),	-- Raynewood Retreat
-				exploration(430, "285:185:694:225"),	-- Satyrnaar
+				exploration(428),	-- Night Run
+				exploration(426),	-- Raynewood Retreat
+				exploration(430),	-- Satyrnaar
 				exploration(420),	-- Silverwind Refuge
 				-- #if AFTER WRATH
 				exploration(2360),	-- Silverwing Outpost
 				-- #endif
 				exploration(431),	-- Splintertree Post
 				exploration(432),	-- The Dor'Danil Barrow Den
-				exploration(419, "210:185:463:141"),	-- The Howling Vale
+				exploration(419),	-- The Howling Vale
 				-- #if AFTER CATA
 				exploration(1703),	-- The Mor'shan Rampart
 				-- #endif
 				-- #if AFTER WRATH
 				exploration(412),	-- The Ruins of Ordil'Aran
 				-- #endif
-				exploration(418, "155:150:260:373"),	-- The Ruins of Stardust
-				exploration(416, "220:195:104:259"),	-- The Shrine of Aessina
-				exploration(414, "245:245:19:28"),		-- The Zoram Strand
-				exploration(2301, "255:195:203:158"),	-- Thistlefur Village
+				exploration(418),	-- The Ruins of Stardust
+				exploration(416),	-- The Shrine of Aessina
+				exploration(414),	-- The Zoram Strand
+				exploration(2301),	-- Thistlefur Village
 				-- #if AFTER CATA
 				exploration(3177),	-- Warsong Labor Camp
 				-- #endif
-				exploration(437, "200:160:796:311"),	-- Warsong Lumber Camp
+				exploration(437),	-- Warsong Lumber Camp
 				-- #if AFTER CATA
 				exploration(2897),	-- Zoram'gar Outpost
 				-- #endif

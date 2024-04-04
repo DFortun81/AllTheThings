@@ -61,9 +61,18 @@ root(ROOTS.Zones, {
 					exploration(6048),	-- Temple of the Red Crane
 					exploration(6004),	-- The Deepwild
 					exploration(6019),	-- The Forbidden Jungle
-					exploration(6009),	-- The Incursion
-					exploration(6026),	-- The Krasari Ruins
-					exploration(6371),	-- The Southern Isles
+					exploration(6009, {	-- The Incursion
+						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Zhu's Watch, it gets masked behind it.
+						["collectible"] = false,
+					}),
+					exploration(6026, {	-- The Krasari Ruins
+						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Zhu's Watch, it gets masked behind it.
+						["collectible"] = false,
+					}),
+					exploration(6371, {	-- The Southern Isles
+						-- CRIEVE NOTE: I was not able to collect this at all. Might be a phasing issue.
+						["collectible"] = false,
+					}),
 					exploration(6020),	-- The Southern Wall
 					exploration(6007),	-- Thunder Cleft
 					exploration(6370),	-- Turtle Beach

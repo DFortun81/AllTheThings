@@ -831,56 +831,61 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 			}),
 			explorationHeader({
-				exploration(157, "256:210:335:139"),	-- Agamand Mills
-				exploration(165, "216:179:630:326"),	-- Balnir Farmstead
-				exploration(162, "201:288:587:139"),	-- Brightwater Lake
-				-- #if AFTER TBC
-				exploration(159, "128:256:537:299"),	-- Brill [TBC]
-				-- #else
-				exploration(159, "128:158:537:299"),	-- Brill [Classic]
+				-- #if AFTER BFA
+				["OnTooltip"] = [[function(t, tooltipInfo)
+					if t.parent.artID == 1136 then
+						tinsert(tooltipInfo, { left = "You need to speak to Zidormi to travel back to the past in order to collect these." });
+					end
+				end]],
 				-- #endif
-				-- #if AFTER CATA
-				exploration(4916),	-- Calston Estate
-				-- #endif
-				exploration(166, "150:128:474:327"),	-- Cold Hearth Manor
-				exploration(167, "173:128:694:289"),	-- Crusader Outpost
-				exploration(154, "245:205:227:328"),	-- Deathknell
-				exploration(164, "174:220:497:145"),	-- Garren's Haunt
-				-- #if AFTER CATA
-				exploration(163),	-- Gunther's Retreat
-				-- #endif
-				exploration(811, "243:199:363:349"),	-- Nightmare Vale
-				-- #if AFTER CATA
-				exploration(153),	-- Ruins of Lordaeron
-				exploration(796),	-- Scarlet Monastery
-				exploration(5511),	-- Scarlet Monastery Entrance
-				-- #endif
-				exploration(459, "175:247:689:104"),	-- Scarlet Watch Post
-				-- #if AFTER CATA
-				exploration(4921),	-- Scarlet Watchtower
-				-- #endif
-				exploration(156, "256:156:239:250"),	-- Solliden Farmstead
-				-- #if BEFORE CATA
-				exploration(810, "186:128:395:277"),	-- Stillwater Pond
-				-- #endif
-				exploration(161),	-- Terrace of Repose
-				exploration(152, "230:205:698:362"),	-- The Bulwark
-				exploration(812, "237:214:757:205"),	-- Venomweb Vale
-				exploration(160, "211:189:746:125"),	-- Whispering Gardens
-				-- #if BEFORE CATA
-				exploration(1497, "315:235:463:361"),	-- Undercity
-				-- #endif
-				--[[
-				exploration(158),	-- Agamand Family Crypt
-				exploration(2118),	-- Brill Town Hall
-				exploration(173),	-- Faol's Rest
-				exploration(2119),	-- Gallows' End Tavern
-				exploration(155),	-- Night Web's Hollow
-				exploration(2117),	-- Shadow Grave
-				exploration(2399),	-- The Great Sea
-				exploration(168),	-- The North Coast
-				exploration(169),	-- Whispering Shore
-				]]--
+				["groups"] = {
+					exploration(157),	-- Agamand Mills
+					exploration(165),	-- Balnir Farmstead
+					exploration(162),	-- Brightwater Lake
+					exploration(159),	-- Brill
+					-- #if AFTER CATA
+					exploration(4916),	-- Calston Estate
+					-- #endif
+					exploration(166),	-- Cold Hearth Manor
+					exploration(167),	-- Crusader Outpost
+					exploration(154),	-- Deathknell
+					exploration(164),	-- Garren's Haunt
+					-- #if AFTER CATA
+					exploration(163),	-- Gunther's Retreat
+					-- #endif
+					exploration(811),	-- Nightmare Vale
+					-- #if AFTER CATA
+					exploration(153),	-- Ruins of Lordaeron
+					exploration(796),	-- Scarlet Monastery
+					exploration(5511),	-- Scarlet Monastery Entrance
+					-- #endif
+					exploration(459),	-- Scarlet Watch Post
+					-- #if AFTER CATA
+					exploration(4921),	-- Scarlet Watchtower
+					-- #endif
+					exploration(156),	-- Solliden Farmstead
+					-- #if BEFORE CATA
+					exploration(810),	-- Stillwater Pond
+					-- #endif
+					exploration(161),	-- Terrace of Repose
+					exploration(152),	-- The Bulwark
+					exploration(812),	-- Venomweb Vale
+					exploration(160),	-- Whispering Gardens
+					-- #if BEFORE CATA
+					exploration(1497),	-- Undercity
+					-- #endif
+					--[[
+					exploration(158),	-- Agamand Family Crypt
+					exploration(2118),	-- Brill Town Hall
+					exploration(173),	-- Faol's Rest
+					exploration(2119),	-- Gallows' End Tavern
+					exploration(155),	-- Night Web's Hollow
+					exploration(2117),	-- Shadow Grave
+					exploration(2399),	-- The Great Sea
+					exploration(168),	-- The North Coast
+					exploration(169),	-- Whispering Shore
+					]]--
+				},
 			}),
 			-- #if AFTER 3.3.0.10554
 			n(FLIGHT_PATHS, {

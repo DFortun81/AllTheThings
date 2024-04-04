@@ -131,38 +131,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(3428),	-- Ahn'Qiraj
+				-- #endif
 				exploration(3427),	-- Bronzebeard Encampment
 				exploration(3425),	-- Cenarion Hold
 				exploration(2742),	-- Hive'Ashi
 				exploration(2744),	-- Hive'Regal
 				exploration(2743),	-- Hive'Zora
+				-- #if AFTER CATA
 				exploration(3447),	-- Ortell's Hideout
 				exploration(3454),	-- Ruins of Ahn'Qiraj
+				-- #endif
 				exploration(2738),	-- Southwind Village
 				exploration(3426),	-- Staghelm Point
 				exploration(2740),	-- The Crystal Vale
 				exploration(2741),	-- The Scarab Dais
 				exploration(2737),	-- The Scarab Wall
+				-- #if BEFORE CATA
+				exploration(3097),	-- The Swarming Pillar
+				-- #endif
 				exploration(2739),	-- Twilight Base Camp
+				-- #if AFTER CATA
 				exploration(3099),	-- Twilight Outpost
 				exploration(3098),	-- Twilight Post
 				exploration(3446),	-- Twilight's Run
 				exploration(3077),	-- Valor's Rest
-				-- #else
-				exploration(3427),	-- Bronzebeard Encampment
-				exploration(3425, "320:256:344:197"),	-- Cenarion Hold
-				exploration(2742, "512:320:265:12"),	-- Hive'Ashi
-				exploration(2744, "512:384:245:285"),	-- Hive'Regal
-				exploration(2743, "384:512:97:144"),	-- Hive'Zora
-				exploration(2738, "384:384:500:65"),	-- Southwind Village
-				exploration(3426),	-- Staghelm Point
-				exploration(2740, "320:289:104:24"),	-- The Crystal Vale
-				exploration(2741),	-- The Scarab Dais
-				exploration(2737, "288:256:116:413"),	-- The Scarab Wall
-				exploration(3097),	-- The Swarming Pillar
-				exploration(2739),	-- Twilight Base Camp
-				exploration(3077),	-- Valor's Rest
 				-- #endif
+				exploration(3077),	-- Valor's Rest
 				--[[
 				exploration(2477),	-- The Veiled Sea
 				exploration(3100),	-- Ravaged Twilight Camp

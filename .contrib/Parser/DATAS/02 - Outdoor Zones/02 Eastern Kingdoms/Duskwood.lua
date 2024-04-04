@@ -118,21 +118,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				exploration(536, "275:250:55:342"),		-- Addle's Stead
+				exploration(536),	-- Addle's Stead
 				exploration(576),	-- Beggar's Haunt
-				exploration(242, "220:340:504:117"),	-- Brightwood Grove
-				exploration(42, "315:280:631:162"),		-- Darkshire
+				exploration(242),	-- Brightwood Grove
+				exploration(42),	-- Darkshire
 				exploration(243),	-- Forlorn Rowe
-				exploration(1098, "200:175:653:120"),	-- Manor Mistmantle
-				exploration(94, "195:145:102:302"),		-- Raven Hill
-				exploration(492, "350:300:85:149"),		-- Raven Hill Cemetery
-				exploration(799, "910:210:89:31"),		-- The Darkened Bank
-				exploration(1097, "160:330:19:132"),	-- The Hushed Bank
-				exploration(241, "250:230:539:369"),	-- The Rotting Orchard
-				exploration(245, "235:250:390:382"),	-- The Yorgen Farmstead
-				exploration(121, "220:220:690:353"),	-- Tranquil Gardens Cemetery
-				exploration(856, "360:420:298:79"),		-- Twilight Grove
-				exploration(93, "255:285:243:348"),		-- Vul'Gol Ogre Mound
+				exploration(1098),	-- Manor Mistmantle
+				exploration(94),	-- Raven Hill
+				exploration(492),	-- Raven Hill Cemetery
+				exploration(799),	-- The Darkened Bank
+				exploration(1097),	-- The Hushed Bank
+				exploration(241),	-- The Rotting Orchard
+				exploration(245),	-- The Yorgen Farmstead
+				exploration(121),	-- Tranquil Gardens Cemetery
+				exploration(856),	-- Twilight Grove
+				exploration(93),	-- Vul'Gol Ogre Mound
 				--[[
 				exploration(2098),	-- Dawning Wood Catacombs
 				exploration(2161),	-- Roland's Doom

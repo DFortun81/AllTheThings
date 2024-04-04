@@ -822,65 +822,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
-				-- #if AFTER WRATH
 				-- #if AFTER CATA
 				exploration(4281),	-- Acherus: The Ebon Hold
 				-- #endif
-				exploration(2624, "256:256:412:177"),	-- Blackwood Lake
-				exploration(2264, "256:256:471:345"),	-- Corin's Crossing
-				exploration(2263, "256:256:261:379"),	-- Crown Guard Tower
-				exploration(2262, "256:179:279:467"),	-- Darrowshire
-				exploration(2271, "256:256:562:219"),	-- Eastwall Tower
-				exploration(2621, "256:205:474:412"),	-- Lake Mereldar
-				exploration(2268, "256:256:656:277"),	-- Light's Hope Chapel
+				exploration(2624),	-- Blackwood Lake
+				exploration(2264),	-- Corin's Crossing
+				exploration(2263),	-- Crown Guard Tower
+				exploration(2262),	-- Darrowshire
+				exploration(2271),	-- Eastwall Tower
+				exploration(2621),	-- Lake Mereldar
+				exploration(2268),	-- Light's Hope Chapel
 				-- #if AFTER CATA
 				exploration(5448),	-- Light's Shield Tower
 				-- #endif
-				exploration(2272, "256:256:590:106"),	-- Northdale
-				exploration(2275, "256:256:427:87"),	-- Northpass Tower
-				exploration(2622, "256:288:590:269"),	-- Pestilent Scar
-				exploration(2277, "384:288:139:61"),	-- Plaguewood
+				exploration(2272),	-- Northdale
+				exploration(2275),	-- Northpass Tower
+				exploration(2622),	-- Pestilent Scar
+				exploration(2277),	-- Plaguewood
 				-- #if AFTER CATA
 				exploration(4067),	-- Plaguewood Tower
 				-- #endif
-				exploration(2276, "256:256:392:14"),	-- Quel'Lithien Lodge
+				exploration(2276),	-- Quel'Lithien Lodge
 				-- #if AFTER CATA
 				exploration(4546),	-- Ruins of the Scarlet Enclave
 				-- #endif
-				exploration(2279, "256:243:164:0"),	-- Stratholme
-				exploration(2627, "256:256:49:76"),	-- Terrordale
-				exploration(2258, "256:256:241:239"),	-- The Fungal Vale
-				exploration(2623, "256:256:379:323"),	-- The Infectis Scar
-				exploration(2260, "256:256:126:338"),	-- The Marris Stead
-				exploration(2270, "256:256:692:144"),	-- The Noxious Glade
-				exploration(2261, "256:191:142:455"),	-- The Undercroft
-				exploration(2619, "256:384:0:209"),	-- Thondroril River
-				exploration(2266, "256:197:687:449"),	-- Tyr's Hand
-				exploration(2273, "256:256:584:8"),	-- Zul'Mashar
-				-- #else
-				exploration(2624, "230:235:442:199"),	-- Blackwood Lake
-				exploration(2264, "165:160:537:367"),	-- Corin's Crossing
-				exploration(2263, "205:165:291:401"),	-- Crown Guard Tower
-				exploration(2262, "210:179:309:489"),	-- Darrowshire
-				exploration(2271, "180:160:592:241"),	-- Eastwall Tower
-				exploration(2621, "250:175:537:463"),	-- Lake Mereldar
-				exploration(2268, "175:245:716:299"),	-- Light's Hope Chapel
-				exploration(2272, "190:205:620:128"),	-- Northdale
-				exploration(2275, "240:195:457:109"),	-- Northpass Tower
-				exploration(2622, "195:275:620:291"),	-- Pestilent Scar
-				exploration(2277, "360:270:169:83"),	-- Plaguewood
-				exploration(2276, "230:150:422:36"),	-- Quel'Lithien Lodge
-				exploration(2279, "240:200:194:9"),		-- Stratholme
-				exploration(2627, "190:205:79:98"),		-- Terrordale
-				exploration(2623, "205:250:409:345"),	-- The Infectis Scar
-				exploration(2258, "210:210:271:261"),	-- The Fungal Vale
-				exploration(2260, "200:205:156:360"),	-- The Marris Stead
-				exploration(2270, "225:215:722:166"),	-- The Noxious Glade
-				exploration(2261, "185:150:172:477"),	-- The Undercroft
-				exploration(2619, "220:360:7:231"),		-- Thondroril River
-				exploration(2266, "245:170:717:471"),	-- Tyr's Hand
-				exploration(2273, "205:165:614:30"),	-- Zul'Mashar
-				-- #endif
+				exploration(2279),	-- Stratholme
+				exploration(2627),	-- Terrordale
+				exploration(2258),	-- The Fungal Vale
+				exploration(2623),	-- The Infectis Scar
+				exploration(2260),	-- The Marris Stead
+				exploration(2270),	-- The Noxious Glade
+				exploration(2261),	-- The Undercroft
+				exploration(2619),	-- Thondroril River
+				exploration(2266),	-- Tyr's Hand
+				exploration(2273),	-- Zul'Mashar
 				--[[
 				exploration(1019),	-- The Green Belt
 				exploration(2265),	-- Scarlet Base Camp
