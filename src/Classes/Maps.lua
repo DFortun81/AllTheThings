@@ -387,6 +387,7 @@ local MapDataMeta = {
 	end
 };
 local function GenerateHitsForMap(grid, mapID)
+	if mapID == 594 then return nil, nil; end	-- Shattrath City messing up Talador
 	local any, hits = false, setmetatable({}, AreaExplorationMeta);
 	for _,pos in ipairs(grid) do
 		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
