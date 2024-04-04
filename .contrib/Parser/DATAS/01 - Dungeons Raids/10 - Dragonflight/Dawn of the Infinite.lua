@@ -19,6 +19,10 @@ local QUANTUM_GROUP = sharedData({
 	-- Which items you could get between 10.1.5 & 10.1.7 are saved at the bottom of the file as history
 	i(208061, {	-- Quantum Headpiece
 		filter(CLOTH, {
+			q(77629, {	-- when you learn everything from Quantum Headpiece (Cloth)
+				["name"] = "Quantum Headpiece (Cloth) completed.",
+				["collectible"] = false,
+			}),
 			ig(114263),	-- Firefly Hood						(NYI)
 			ig(114387),	-- Hood of Hooded Nighmates			(NYI)
 			i(147517, {	-- Inquisitor's Battle Cowl			(NYI)
@@ -70,6 +74,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105811),	-- Olivia's Graceful Gaze			(Ordos)
 		}),
 		filter(PLATE, {
+			q(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
+				["name"] = "Quantum Headpiece (Plate) completed.",
+				["collectible"] = false,
+			}),
 			ig(121506),	-- Dreadsworn Crown					(NYI)
 			ig(114390),	-- Greathelm of Grievous Storms		(NYI)
 			ig(108081),	-- Hardened Draenic Steel Helm		(NYI)
@@ -92,6 +100,10 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208062, {	-- Quantum Shoulders
 		filter(CLOTH, {
+			q(77641, {	-- when you learn everything from Quantum Shoulders (Cloth)
+				["name"] = "Quantum Shoulders (Cloth) completed.",
+				["collectible"] = false,
+			}),
 			ig(114271),	-- Firefly Mantle					(NYI)
 			ig(3958),	-- Mesh Mantle						(NYI)
 			ig(34107),	-- Tattered Shoulderpads			(NYI)
@@ -670,8 +682,6 @@ local QUANTUM_GROUP = sharedData({
 		ig(14145),	-- Cursed Felblade						(Removed)
 		ig(134783),	-- Seasoned Quickblade 					(Removed)
 	}),
-	i(208122, {	-- Quantum Warglaives
-	}),
 	i(208123, {	-- Quantum Wand
 		q(77610, {	-- when you learn everything from Quantum Wand
 			["name"] = "Quantum Wand completed.",
@@ -679,6 +689,12 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	--Vanguard Baton of Light				(Removed)
+	}),
+	i(208122, {	-- Quantum Warglaives
+		q(77608, {	-- when you learn everything from Quantum Warglaives
+			["name"] = "Quantum Warglaives completed.",
+			["collectible"] = false,
+		}),
 	}),
 	i(208216, {	-- Reins of the Quantum Courser
 		["description"] = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
@@ -783,11 +799,20 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(QUESTS, sharedData({
 				["collectible"] = false,
 			},{
+				q(77629, {	-- when you learn everything from Quantum Headpiece (Cloth)
+					["name"] = "Quantum Headpiece (Cloth) completed.",
+				}),
 				q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
 					["name"] = "Quantum Headpiece (Leather) completed.",
 				}),
 				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
 					["name"] = "Quantum Headpiece (Mail) completed.",
+				}),
+				q(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
+					["name"] = "Quantum Headpiece (Plate) completed.",
+				}),
+				q(77641, {	-- when you learn everything from Quantum Shoulders (Cloth)
+					["name"] = "Quantum Shoulders (Cloth) completed.",
 				}),
 				q(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
 					["name"] = "Quantum Shoulders (Leather) completed.",
@@ -863,6 +888,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				q(77610, {	-- when you learn everything from Quantum Wand
 					["name"] = "Quantum Wand completed.",
+				}),
+				q(77608, {	-- when you learn everything from Quantum Warglaives
+					["name"] = "Quantum Warglaives completed.",
 				}),
 			})),
 			-- #if AFTER 10.1.7
@@ -1362,16 +1390,12 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77853),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421487)
 
 		-- Quantum Items
-		-- q(77608),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
 		-- q(77625),	-- when you learn everything from Quantum ?
-		-- q(77626),	-- when you learn everything from Quantum ?
-		-- q(77629),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
-		-- q(77641),	-- when you learn everything from Quantum ?
 	}),
 });
 
