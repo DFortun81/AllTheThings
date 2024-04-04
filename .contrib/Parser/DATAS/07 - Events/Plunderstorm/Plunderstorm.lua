@@ -43,6 +43,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			q(79379),	-- Captain's Orders: No Prey, No Pay
 			q(79382),	-- Captain's Orders: Plunderstudy
 			q(79381),	-- Captain's Orders: X Marks the Spot
+			q(79965),	-- Learn the Ropes or Walk the Plank
 		})),
 		n(VENDORS, {
 			n(219760, {	-- Da'kash Grimledger <Quartermaster>
@@ -184,6 +185,29 @@ root(ROOTS.HiddenQuestTriggers, {
 	n(PLUNDERSTORM, {
 		q(80110),	-- First WQ of the Day
 		q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
+		q(80262),	-- Reached renown 6
+
+		-- Hard or impossible to find out what exactly these HQTs are for
+		q(81676),	-- Dieing
 		q(81677),	-- Dieing
+		q(81678),	-- ?
+		q(81679),	-- Killed rare elite
+		q(81680),	-- Killed rare elite
+		q(81681),	-- Did a World Quest and killed 30 creatures
+
+		-- Probably some rare elite kills (unconfirmed)
+		--q(79254),	-- Everspout
+		--q(79315),	-- Lord Harlbrand
+		--q(79316),	-- Malfunctioning Harvester
+		--q(79317),	-- Morkus Grimlock
+		--q(79318),	-- Narla Thunderhoof
+		--q(79319),	-- Frenzied Owlbeast
+		--q(79320),	-- Gorthak Grimtusk
+
+		-- Probably some renown HQTs (unconfirmed)
+		--q(79462),	-- [DNT] Renown Reward 001
+		--q(79464),	-- [DNT] Renown Reward 002
+		--q(79465),	-- [DNT] Renown Reward 003
+		--q(79466),	-- [DNT] Renown Reward 004
 	}),
 });
