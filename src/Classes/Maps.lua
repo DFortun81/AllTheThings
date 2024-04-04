@@ -387,7 +387,7 @@ local MapDataMeta = {
 	end
 };
 local function GenerateHitsForMap(grid, mapID)
-	if mapID == 594 then return nil, nil; end	-- Shattrath City messing up Talador
+	if mapID == 594 or mapID == 2091 then return nil, nil; end	-- Shattrath City messing up Talador, War of the Shifting Sands messing up Silithus
 	local any, hits = false, setmetatable({}, AreaExplorationMeta);
 	for _,pos in ipairs(grid) do
 		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
