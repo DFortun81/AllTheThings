@@ -29,11 +29,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(204187),	-- Obsidian Trophy of Conquest
 					},
 				})),
-				q(77681, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Alerting All Adversaries!
+				q(77681, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {	-- Alerting All Adversaries!
 					["provider"] = { "i", 208571 },	-- Artisan's Consortium Leaflet (QI!)
 					["g"] = {
 						i(212537),	-- Verdant Trophy of Conquest
 						i(212538),	-- Greater Verdant Trophy of Conquest
+					},
+				})),
+				q(79074, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Summoning All Soldiers!
+					["provider"] = { "i", 211690 },	-- Artisan's Consortium Brochure (QI!)
+					["g"] = {
+						i(211685),	-- Draconic Trophy of Conquest
+						i(211686),	-- Greater Draconic Trophy of Conquest
 					},
 				})),
 			}),
@@ -1477,6 +1484,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(201250, {	-- Victorious Contender's Strongbox
 							["cost"] = { { "c", HONOR, 5000 }, },
 							["g"] = {
+								i(211690, {	-- Artisan's Consortium Brochure (QI!)
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+								}),
 								i(205187, {	-- Artisan's Consortium Flier (QI!)
 									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 								}),

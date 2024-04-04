@@ -501,7 +501,7 @@ local function RefreshAppearanceSources()
 	app.DoRefreshAppearanceSources = nil;
 	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
 	wipe(collectedSources);
-	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
+	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then
 		-- app.PrintDebug("Initial Session Refresh")
@@ -547,14 +547,8 @@ local function RefreshAppearanceSources()
 		-- app.PrintDebug("Unique Refresh done")
 	end
 end
-app.AddEventHandler("OnRefreshCollections", function()
-	-- Refresh Sources from Cache if tracking Transmog
-	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
-		RefreshAppearanceSources();
-	end
-end);
 app.AddEventHandler("OnRecalculate", function()
-	if app.DoRefreshAppearanceSources then
+	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
 		RefreshAppearanceSources();
 	end
 end);
@@ -1116,6 +1110,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 	end
 end
 app.AddEventHandler("OnStartup", function()
+	-- TODO: app.AddEventRegistration
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 

@@ -797,7 +797,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
+				["lockCriteria"] = { 1,
+					"spellID", 365677,	-- Dragon Isles Blacksmithing
+					"questID", 70357,	-- Dragon Isles Blacksmithing
+				},
 			}),
 			q(70357, {	-- Dragon Isles Blacksmithing
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
@@ -807,7 +810,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 				["provider"] = { "n", 192164 },	-- Gringot Coldsteel <Blacksmithing Trainer>
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
+				["lockCriteria"] = { 1,
+					"spellID", 365677,	-- Dragon Isles Blacksmithing
+					"questID", 70358,	-- Dragon Isles Blacksmithing
+				},
 			}),
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
 				["provider"] = { "n", 192164 },	-- Gringot Coldsteel

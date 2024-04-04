@@ -69,7 +69,6 @@ root(ROOTS.Unsorted, {
 				i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
 			}),
 			n(PVP, {	-- SEASON 4 PvP
-				i(211690),	-- Artisan's Consortium Brochure
 				i(211770),	-- Medal of Honor
 				i(211771),	-- Medal of Honor
 				i(211772),	-- Glorious Medal of Honor
@@ -815,16 +814,12 @@ root(ROOTS.Unsorted, {
 				q(76267),	--
 				-- 10.1.5.50130
 				-- Probably Quantum Items
-				q(77608),	--
 				q(77622),	--
 				q(77625),	--
-				q(77626),	--
-				q(77629),	--
 				q(77633),	--
 				q(77634),	--
 				q(77637),	--
 				q(77638),	--
-				q(77641),	--
 			}),
 		})),
 	}),

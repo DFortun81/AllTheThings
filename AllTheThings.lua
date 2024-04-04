@@ -503,7 +503,7 @@ app.GetSpecializationBaseTradeSkill = function(specializationID)
 	return specializationTradeSkillMap[specializationID];
 end
 -- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
-app.RefreshTradeSkillCache = function()
+local function RefreshTradeSkillCache()
 	local cache = app.CurrentCharacter.Professions;
 	wipe(cache);
 	-- "Professions" that anyone can "know"
@@ -532,12 +532,18 @@ app.RefreshTradeSkillCache = function()
 		end
 	end
 end
+app.AddEventHandler("OnInit", RefreshTradeSkillCache)
 app.AddEventHandler("OnStartup", function()
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.professionName = function(spellID)
 		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
 	end;
 end);
+app.AddEventRegistration("SKILL_LINES_CHANGED", function()
+	-- app.PrintDebug("SKILL_LINES_CHANGED")
+	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
+	DelayedCallback(RefreshTradeSkillCache, 2);
+end)
 end -- TradeSkill Functionality
 
 
@@ -1920,7 +1926,7 @@ if GetAchievementNumCriteria then
 				CacheFields(criteriaObject);
 				-- this criteria object may have been turned into a cost via costs/providers assignment, so make sure we update those respective costs via the Cost Runner
 				-- if settings are changed while this is running, it's ok because it refreshes costs from the cache
-				app.Modules.Costs.Runner.Run(app.UpdateCostGroup, criteriaObject)
+				app.FillRunner.Run(app.UpdateCostGroup, criteriaObject)
 				tinsert(searchResults, criteriaObject);
 			end
 		end
@@ -3966,6 +3972,10 @@ local function SyncCharacterQuestData(allCharacters, key)
 		end
 	end
 end
+-- TODO: individual Classes should be able to add the proper functionality here to determine the account-wide
+-- collection states of a 'Thing', if the refresh can't account for it
+-- i.e. Mounts... 99% account-wide by default, like 5 per character. don't want to save 900+ id's for
+-- each character just to sync into account data properly
 local SyncFunctions = setmetatable({
 	AzeriteEssenceRanks = RankSyncCharacterData,
 	Quests = SyncCharacterQuestData,
@@ -3993,7 +4003,7 @@ function app:RecalculateAccountWideData()
 	end
 	ATTAccountWideData.Deaths = deaths;
 end
-app.AddEventHandler("OnRefreshCollections", app.RecalculateAccountWideData)
+app.AddEventHandler("OnRefreshCollectionsDone", app.RecalculateAccountWideData)
 function app:ReceiveSyncRequest(sender, battleTag)
 	if battleTag ~= select(2, BNGetInfo()) then
 		-- Check to see if the character/account is linked.
@@ -4812,16 +4822,6 @@ end
 local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
-app:RegisterEvent("BOSS_KILL");
-app.events.BOSS_KILL = function(id, name, ...)
-	-- This is so that when you kill a boss, you can trigger
-	-- an automatic update of your saved instance cache.
-	-- (It does lag a little, but you can disable this if you want.)
-	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
-	-- print("BOSS_KILL", id, name, ...);
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:RegisterEvent("LOOT_CLOSED");
-end
 app.events.LOOT_CLOSED = function()
 	-- Once the loot window closes after killing a boss, THEN trigger the update.
 	app:UnregisterEvent("LOOT_CLOSED");
@@ -5390,6 +5390,7 @@ app.CreateAchievementHarvester = function(id, t)
 	return setmetatable(constructor(id, t, "achievementID"), app.BaseAchievementHarvester);
 end
 
+-- TODO: migrate this achievement refresh to proper handling within Achievement lib
 local function CheckAchievementCollectionStatus(achievementID)
 	if ATTAccountWideData then
 		achievementID = tonumber(achievementID);
@@ -5402,9 +5403,9 @@ local function CheckAchievementCollectionStatus(achievementID)
 		end
 	end
 end
-app.RefreshAchievementCollection = function()
+local function RefreshAchievementCollection()
 	if ATTAccountWideData then
-		local maxid, achID = 0;
+		local maxid, achID = 0, 0;
 		for achievementID,_ in pairs(SearchForFieldContainer("achievementID")) do
 			achID = tonumber(achievementID);
 			if achID > maxid then maxid = achID; end
@@ -5414,10 +5415,8 @@ app.RefreshAchievementCollection = function()
 		end
 	end
 end
-app.AddEventHandler("OnReady", function()
-	app:RegisterFuncEvent("ACHIEVEMENT_EARNED", CheckAchievementCollectionStatus);
-	app:RegisterFuncEvent("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);
-end)
+app.AddEventHandler("OnRefreshCollections", RefreshAchievementCollection)
+app.AddEventRegistration("ACHIEVEMENT_EARNED", CheckAchievementCollectionStatus);
 end	-- Achievement Lib
 
 -- Currency Lib
@@ -5781,7 +5780,7 @@ end
 
 -- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
 -- upgrade levels into the respective upgrade tokens
-app.CacheHeirlooms = function()
+local function CacheHeirlooms()
 	-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
 	if #heirloomIDs < 1 or not C_Heirloom_GetHeirloomMaxUpgradeLevel then return; end
 
@@ -5900,6 +5899,7 @@ app.CacheHeirlooms = function()
 		wipe(heirloomIDs);
 	end
 end
+app.AddEventHandler("OnInit", CacheHeirlooms)
 end -- Heirloom Lib
 
 local HarvestedItemDatabase;
@@ -6204,180 +6204,7 @@ app.CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHa
 		end
 	end
 });
-
 end)();
-
--- Mount Lib
-do
-local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
-local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
-local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
-local GetSpellLink = GetSpellLink;
-
-local PerCharacterMountSpells = {
-	[75207] = 1,	-- Vashj'ir Seahorse
-	[148970] = 1,	-- Felsteed (Green)
-	[148972] = 1,	-- Dreadsteed (Green)
-	[241857] = 1,	-- Druid Lunarwing
-	[231437] = 1,	-- Druid Lunarwing (Owl)
-}
-
-local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
-	local allMountIDs = C_MountJournal_GetMountIDs();
-	if allMountIDs and #allMountIDs > 0 then
-		local spellID;
-		for i,mountID in ipairs(allMountIDs) do
-			spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
-			if spellID then t[spellID] = mountID; end
-		end
-		setmetatable(t, nil);
-		return rawget(t, id);
-	end
-end });
-local cache = app.CreateCache("spellID");
-local function CacheInfo(t, field)
-	local itemID = t.itemID;
-	local _t, id = cache.GetCached(t);
-	local mountID = SpellIDToMountID[id];
-	if mountID then
-		local displayID, lore = C_MountJournal_GetMountInfoExtraByID(mountID);
-		_t.displayID = displayID;
-		_t.lore = lore;
-		_t.name = C_MountJournal_GetMountInfoByID(mountID);
-		_t.mountJournalID = mountID;
-	end
-	local name, _, icon = GetSpellInfo(id);
-	if name then
-		_t.text = Colorize(name, app.Colors.Mount)
-		_t.icon = icon;
-	end
-	if itemID then
-		local itemLink = select(2, GetItemInfo(itemID));
-		-- item info might not be available on first request, so don't cache the data
-		if itemLink then
-			_t.link = itemLink;
-		end
-	else
-		_t.link = GetSpellLink(id);
-	end
-	-- track retries on caching mount info... some mounts just never return info
-	local retries = _t.retries or 0;
-	retries = retries + 1;
-	if retries > 20 then
-		local name = (itemID and ("Item #%d"):format(itemID)) or
-					(id and ("Spell #%d"):format(id));
-		_t.text = _t.text or Colorize(name, app.Colors.Mount);
-		_t.name = _t.name or name;
-		_t.icon = _t.icon or 134400;	-- question mark
-		_t.link = GetSpellLink(id);
-	end
-	_t.retries = retries;
-	if field then return _t[field]; end
-end
-local function default_costCollectibles(t)
-	local id = t.itemID;
-	if id then
-		local results = GetRawField("itemIDAsCost", id);
-		if results and #results > 0 then
-			-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
-			return results;
-		end
-	end
-	return app.EmptyTable;
-end
-local mountFields = {
-	["key"] = function(t)
-		return "mountID";
-	end,
-	["_cache"] = function(t)
-		return cache;
-	end,
-	-- Mounts use special text coloring instead of default text
-	["text"] = function(t)
-		return cache.GetCachedField(t, "text", CacheInfo);
-	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", CacheInfo);
-	end,
-	["link"] = function(t)
-		return cache.GetCachedField(t, "link", CacheInfo);
-	end,
-	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", CacheInfo);
-	end,
-	["displayID"] = function(t)
-		return cache.GetCachedField(t, "displayID", CacheInfo);
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	["mountJournalID"] = function(t)
-		return cache.GetCachedField(t, "mountJournalID", CacheInfo);
-	end,
-	["costCollectibles"] = function(t)
-		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
-	end,
-	["filterID"] = function(t)
-		return 100;
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Mounts;
-	end,
-	["collectibleAsCost"] = app.CollectibleAsCost,
-	["collected"] = function(t)
-		local spellID = t.spellID;
-		if ATTAccountWideData.Spells[spellID] then return 1; end
-		if app.IsSpellKnownHelper(spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-			ATTAccountWideData.Spells[spellID] = 1;
-			-- need to persist certain mounts in character table as well since it is otherwise lost on account recalculate
-			if PerCharacterMountSpells[spellID] then app.CurrentCharacter.Spells[spellID] = 1; end
-			return 1;
-		end
-	end,
-	["b"] = function(t)
-		return (t.parent and t.parent.b) or 1;
-	end,
-	["spellID"] = function(t)
-		return t.mountID;
-	end,
-	["tsm"] = function(t)
-		if t.itemID then return ("i:%d"):format(t.itemID); end
-		if t.parent and t.parent.itemID then return ("i:%d"):format(t.parent.itemID); end
-	end,
-};
-app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
-app.CreateMount = function(id, t)
-	return setmetatable(constructor(id, t, "mountID"), app.BaseMount);
-end
-
--- Refresh a specific Mount or all Mounts if not provided with a specific ID
-local RefreshMounts = function(newMountID)
-	local collectedSpells, newMounts = ATTAccountWideData.Spells;
-	-- Think learning multiple mounts at once or multiple mounts without leaving combat
-	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
-	-- plus it's not laggy now to do that so it should be fine
-
-	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
-		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-		if spellID and isCollected then
-			if not collectedSpells[spellID] then
-				collectedSpells[spellID] = 1;
-				if not newMounts then newMounts = { spellID }
-				else tinsert(newMounts, spellID); end
-			end
-		end
-	end
-	UpdateRawIDs("spellID", newMounts);
-	if newMounts and #newMounts > 0 then
-		app.HandleEvent("OnThingCollected", "Mounts")
-	end
-end
-app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
-	-- print("NEW_MOUNT_ADDED", newMountID, ...)
-	AfterCombatCallback(RefreshMounts, newMountID);
-end
-app:RegisterEvent("NEW_MOUNT_ADDED");
-end	-- Mount Lib
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
@@ -7501,12 +7328,8 @@ app.CheckCustomCollects = function(t)
 	return true;
 end
 -- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
-app.RefreshCustomCollectibility = function()
-	-- print("RefreshCustomCollectibility",app.IsReady)
-	if not app.IsReady then
-		Callback(app.RefreshCustomCollectibility);
-		return;
-	end
+local function RefreshCustomCollectibility()
+	-- app.PrintDebug("RefreshCustomCollectibility")
 
 	-- clear existing custom collects
 	wipe(app.ActiveCustomCollects);
@@ -7531,6 +7354,48 @@ app.RefreshCustomCollectibility = function()
 	-- Shadowlands Covenant: Necrolord
 	SetCustomCollectibility("SL_COV_NEC");
 end
+app.AddEventHandler("OnReady", RefreshCustomCollectibility)
+app.AddEventHandler("OnRecalculate", RefreshCustomCollectibility)
+
+-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
+local function DGU_CustomCollect(t)
+	-- app.PrintDebug("DGU_CustomCollect",t.hash)
+	Callback(RefreshCustomCollectibility);
+end
+local function DGU_Locationtrigger(t)
+	-- app.PrintDebug("DGU_Locationtrigger",t.hash)
+	Callback(app.LocationTrigger, true);
+end
+-- A set of quests which indicate a needed refresh to the Custom Collect status of the character
+local DGU_Quests = {
+	[51211] = DGU_CustomCollect,	-- Heart of Azeroth Quest
+	[56775] = DGU_CustomCollect,	-- New Player Experience Starting Quest
+	[59926] = DGU_CustomCollect,	-- New Player Experience Starting Quest
+	[58911] = DGU_CustomCollect,	-- New Player Experience Ending Quest
+	[60359] = DGU_CustomCollect,	-- New Player Experience Ending Quest
+	[62713] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
+	[65076] = DGU_CustomCollect,	-- Shadowlands - Covenant - Kyrian
+	[65077] = DGU_CustomCollect,	-- Shadowlands - Covenant - Venthyr
+	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
+	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
+};
+-- Add any automatically-assigned LocationTriggers
+for _,questID in ipairs(app.__CacheQuestTriggers or app.EmptyTable) do
+	DGU_Quests[questID] = DGU_Locationtrigger
+end
+app.__CacheQuestTriggers = nil
+local function AssignDirectGroupOnUpdates()
+	local questRef;
+	local Search = app.SearchForObject;
+	for questID,func in pairs(DGU_Quests) do
+		questRef = Search("questID", questID);
+		if questRef then
+			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
+			questRef.DGUOnUpdate = func;
+		end
+	end
+end
+app.AddEventHandler("OnInit", AssignDirectGroupOnUpdates)
 end	-- Custom Collectibility
 
 -- Panel Class Library
@@ -7541,6 +7406,7 @@ local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
 local function SetVisible(self, show, forceUpdate)
+	-- app.PrintDebug("SetVisible",self.Suffix,show,forceUpdate)
 	if show then
 		self:Show();
 		-- apply window position from profile
@@ -9643,7 +9509,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 
 -- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
-app.events.PET_BATTLE_OPENING_START = function(...)
+app.AddEventRegistration("PET_BATTLE_OPENING_START", function(...)
 	-- check for open ATT windows
 	for _,window in pairs(app.Windows) do
 		if window:IsVisible() then
@@ -9652,9 +9518,9 @@ app.events.PET_BATTLE_OPENING_START = function(...)
 			window:Toggle();
 		end
 	end
-end
+end)
 -- this fires twice when pet battle ends
-app.events.PET_BATTLE_CLOSE = function(...)
+app.AddEventRegistration("PET_BATTLE_CLOSE", function(...)
 	if app.PetBattleClosed then
 		for _,window in ipairs(app.PetBattleClosed) do
 			-- special open for Current Instance list
@@ -9666,11 +9532,7 @@ app.events.PET_BATTLE_CLOSE = function(...)
 		end
 		app.PetBattleClosed = nil;
 	end
-end
-app.AddEventHandler("OnStartup", function()
-	app:RegisterEvent("PET_BATTLE_OPENING_START")
-	app:RegisterEvent("PET_BATTLE_CLOSE")
-end);
+end)
 end)();
 
 do	-- Main Data
@@ -10161,9 +10023,6 @@ local function RefreshData()
 
 		-- Execute the OnRecalculate handlers.
 		app.HandleEvent("OnRecalculate")
-
-		-- Reapply custom collects
-		app.RefreshCustomCollectibility();
 
 		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
 			LastSettingsChangeUpdate = app._SettingsRefresh;
@@ -11197,7 +11056,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				else
 					self.openedOnLogin = false;
 				end
-				if show then self:Show(); end
+				if show then self:SetVisible(true); end
 			end
 
 			-- Cache that we're in the current map ID.
@@ -11206,12 +11065,12 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- force update when showing the minilist
 			Callback(self.Update, self);
 		end
-		local function RefreshLocation(show)
+		self.RefreshLocation = function(show)
 			-- Acquire the new map ID.
 			local mapID = app.CurrentMapID;
 			-- app.PrintDebug("RefreshLocation",mapID)
 			if not mapID then
-				AfterCombatCallback(RefreshLocation);
+				AfterCombatCallback(self.RefreshLocation);
 				return;
 			end
 			-- don't auto-load minimap to anything higher than a 'Zone' if we are in an instance, unless it has no parent?
@@ -11224,14 +11083,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			end
 			OpenMiniList(mapID, show);
 		end
-		local function ToggleMiniListForCurrentZone()
-			local self = app:GetWindow("CurrentInstance");
-			if self:IsVisible() then
-				self:Hide();
-			else
-				RefreshLocation(true);
-			end
-		end
 		local function LocationTrigger(forceNewMap)
 			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
 				-- app.PrintDebug("LocationTrigger-Callback")
@@ -11239,11 +11090,10 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					-- this allows minilist to rebuild itself
 					wipe(self.CurrentMaps)
 				end
-				AfterCombatOrDelayedCallback(RefreshLocation, 0.25);
+				AfterCombatOrDelayedCallback(self.RefreshLocation, 0.25);
 			end
 		end
 		app.OpenMiniList = OpenMiniList;
-		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 		app.LocationTrigger = LocationTrigger;
 		self:SetScript("OnEvent", function(self, e, ...)
 			-- app.PrintDebug("LocationTrigger",e,...);
@@ -13185,7 +13035,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		end
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
-			-- print("Tradeskills.event",e,...)
+			-- app.PrintDebug("Tradeskills.event",e,...)
 			if e == "TRADE_SKILL_LIST_UPDATE" then
 				if self:IsVisible() then
 					-- If it's not yours, don't take credit for it.
@@ -13324,7 +13174,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force or self.force or got, got);
+		self:BaseUpdate(force or self.force, got);
 		self.force = nil;
 	end
 end;
@@ -13779,20 +13629,9 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 			end
 		end
 
-		self:BaseUpdate(force or got);
+		self:BaseUpdate(force);
 	end
 end;
-
--- Only need to immediately load any Windows which are able to be immediately visible on load depending on settings
-app:GetWindow("Prime"):SetSize(425, 305);
-app:GetWindow("Bounty");
-app:GetWindow("CurrentInstance");
-app:GetWindow("RaidAssistant");
-app:GetWindow("Tradeskills");
-app:GetWindow("WorldQuests");
-app.ToggleMainList = function()
-	app:GetWindow("Prime"):Toggle();
-end
 end)();
 
 -- ATT Debugger Logic
@@ -14677,6 +14516,16 @@ app.SetupProfiles = function()
 	app.Settings:Initialize();
 end
 
+app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
+	-- This is so that when you kill a boss, you can trigger
+	-- an automatic update of your saved instance cache.
+	-- (It does lag a little, but you can disable this if you want.)
+	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
+	-- print("BOSS_KILL", id, name, ...);
+	app:UnregisterEvent("LOOT_CLOSED");
+	app:RegisterEvent("LOOT_CLOSED");
+end);
+app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
@@ -14797,56 +14646,9 @@ app.Startup = function()
 	-- Init the Settings before working with data
 	app.Settings:Initialize();
 
-	-- Register remaining addon-related events
-	app:RegisterEvent("BOSS_KILL");
-	app:RegisterEvent("PLAYER_ENTERING_WORLD");
-	app:RegisterEvent("NEW_PET_ADDED");
-	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
-
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
-
-	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 	-- app.PrintMemoryUsage("Startup:Done")
-end
-
--- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
-local function DGU_CustomCollect(t)
-	-- app.PrintDebug("DGU_CustomCollect",t.hash)
-	Callback(app.RefreshCustomCollectibility);
-end
-local function DGU_Locationtrigger(t)
-	-- app.PrintDebug("DGU_Locationtrigger",t.hash)
-	Callback(app.LocationTrigger, true);
-end
--- A set of quests which indicate a needed refresh to the Custom Collect status of the character
-local DGU_Quests = {
-	[51211] = DGU_CustomCollect,	-- Heart of Azeroth Quest
-	[56775] = DGU_CustomCollect,	-- New Player Experience Starting Quest
-	[59926] = DGU_CustomCollect,	-- New Player Experience Starting Quest
-	[58911] = DGU_CustomCollect,	-- New Player Experience Ending Quest
-	[60359] = DGU_CustomCollect,	-- New Player Experience Ending Quest
-	[62713] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
-	[65076] = DGU_CustomCollect,	-- Shadowlands - Covenant - Kyrian
-	[65077] = DGU_CustomCollect,	-- Shadowlands - Covenant - Venthyr
-	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
-	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
-};
--- Add any automatically-assigned LocationTriggers
-for _,questID in ipairs(app.__CacheQuestTriggers or app.EmptyTable) do
-	DGU_Quests[questID] = DGU_Locationtrigger
-end
-app.__CacheQuestTriggers = nil
-local function AssignDirectGroupOnUpdates()
-	local questRef;
-	local Search = app.SearchForObject;
-	for questID,func in pairs(DGU_Quests) do
-		questRef = Search("questID", questID);
-		if questRef then
-			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
-			questRef.DGUOnUpdate = func;
-		end
-	end
 end
 
 local function PrePopulateAchievementSymlinks()
@@ -14870,12 +14672,14 @@ local function PrePopulateAchievementSymlinks()
 	end
 	-- app.PrintDebug("Done:FillAchSym")
 end
+app.AddEventHandler("OnInit", PrePopulateAchievementSymlinks)
 
 -- Function which is triggered after Startup
-app.InitDataCoroutine = function()
+local function InitDataCoroutine()
 	-- app.PrintMemoryUsage("InitDataCoroutine")
-	-- Wait for the player to actually be 'in the game' to do further logic
-	while not app.InWorld do coroutine.yield(); end
+	-- if IsInInstance() then
+	-- 	app.print("cannot fully load while in an Instance due to Blizzard restrictions. Please Zone out to finish loading ATT.")
+	-- end
 
 	-- Wait for the Data Cache to return something.
 	while not app:GetDataCache() do coroutine.yield(); end
@@ -14947,20 +14751,7 @@ app.InitDataCoroutine = function()
 		end
 	end);
 
-	-- refresh any custom collects for this character
-	app.RefreshCustomCollectibility();
-
-	-- Harvest the Spell IDs for Conversion.
-	app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
-
-	-- Assign DGU OnUpdates
-	AssignDirectGroupOnUpdates();
-
-	-- Perform Heirloom caching/upgrade generation
-	app.CacheHeirlooms();
-
-	-- Update character known professions
-	app.RefreshTradeSkillCache();
+	app.HandleEvent("OnInit")
 
 	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
 	local currentQuestsCache = currentCharacter.Quests;
@@ -14968,18 +14759,12 @@ app.InitDataCoroutine = function()
 		if completion == 2 then currentQuestsCache[questID] = nil; end
 	end
 
-	-- Trigger symlink population runner for Achievements to handle
-	-- the generation of 'achievement_criteria' into the Main list
-	PrePopulateAchievementSymlinks()
-
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- app.PrintDebug("Yield prior to Refresh")
 	coroutine.yield();
 
 	-- Prepare the Sound Pack!
 	app.Audio:ReloadSoundPack();
-
-	app.RefreshCollections();
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
 	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
@@ -14992,9 +14777,6 @@ app.InitDataCoroutine = function()
 
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
-
-	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
-	DelayedCallback(app.LocationTrigger, 3);
 
 	app:RegisterEvent("HEIRLOOMS_UPDATED");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
@@ -15009,6 +14791,13 @@ app.InitDataCoroutine = function()
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
+
+app:RegisterFuncEvent("PLAYER_ENTERING_WORLD", function(...)
+	-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
+	app.InWorld = true;
+	app:UnregisterEventClean("PLAYER_ENTERING_WORLD")
+	StartCoroutine("InitDataCoroutine", InitDataCoroutine);
+end);
 end -- Setup and Startup Functionality
 
 -- Slash Command List
@@ -15276,10 +15065,6 @@ end)();
 app:RegisterEvent("ADDON_LOADED");
 
 -- Define Event Behaviours
-app.events.PLAYER_ENTERING_WORLD = function(...)
-	-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
-	app.InWorld = true;
-end
 app.AddonLoadedTriggers = {
 	[appName] = function()
 		app.Startup();
@@ -15290,20 +15075,12 @@ app.AddonLoadedTriggers = {
 			app:OpenAuctionModule();
 		end
 	end,
-	["Blizzard_AchievementUI"] = function()
-		if app.IsReady then app.RefreshAchievementCollection(); end
-	end,
 };
 app.events.ADDON_LOADED = function(addonName)
 	local addonTrigger = app.AddonLoadedTriggers[addonName];
 	if addonTrigger then addonTrigger(); end
 end
 
-app.events.SKILL_LINES_CHANGED = function()
-	-- app.PrintDebug("SKILL_LINES_CHANGED")
-	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
-	DelayedCallback(app.RefreshTradeSkillCache, 2);
-end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	if itemID then

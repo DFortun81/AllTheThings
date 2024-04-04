@@ -322,6 +322,7 @@ for key, value in pairs({
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["COMPLETED_BY"] = "Completed By: %s";
 	["OWNED_BY"] = "Owned by %s";
+	["GARRISON_BUILDINGS_REQUIRE_GARRISON"] = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison",
 
 	-- Social Module
 	["NEW_VERSION_AVAILABLE"] = "A newer version of %s is available. Please update the AddOn, %s.";

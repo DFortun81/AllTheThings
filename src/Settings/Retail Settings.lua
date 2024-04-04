@@ -335,13 +335,24 @@ settings.Initialize = function(self)
 	self:UpdateMode()
 
 	if self:GetTooltipSetting("Auto:MainList") then
-		app:GetWindow("Prime"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("Prime"):SetVisible(true)
+		end)
+	end
+	if self:GetTooltipSetting("Auto:MiniList") then
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("CurrentInstance"):SetVisible(true)
+		end)
 	end
 	if self:GetTooltipSetting("Auto:RaidAssistant") then
-		app:GetWindow("RaidAssistant"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("RaidAssistant"):SetVisible(true)
+		end)
 	end
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
-		app:GetWindow("WorldQuests"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("WorldQuests"):SetVisible(true)
+		end)
 	end
 
 	if settings.RefreshActiveInformationTypes then
@@ -1191,9 +1202,9 @@ settings.ToggleAccountMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetAccountMode(not self:Get("AccountMode"))
 	if self:Get("AccountMode") == true then
-		app.print(L["ACCOUNT_MODE"].."|R "..L["ENABLED"]..".")
+		app.print(L["TITLE_ACCOUNT"]..L["MODE"].."|R "..L["ENABLED"]..".")
 	else
-		app.print(L["ACCOUNT_MODE"].."|R "..L["DISABLED"]..".")
+		app.print(L["TITLE_ACCOUNT"]..L["MODE"].."|R "..L["DISABLED"]..".")
 	end
 end
 settings.SetCompletionistMode = function(self, completionistMode)
@@ -1230,6 +1241,11 @@ end
 settings.ToggleDebugMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetDebugMode(not self:Get("DebugMode"))
+	if self:Get("DebugMode") == true then
+		app.print(L["TITLE_DEBUG"]..L["MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["TITLE_DEBUG"]..L["MODE"].."|R "..L["DISABLED"]..".")
+	end
 end
 settings.SetFactionMode = function(self, factionMode)
 	self:Set("FactionMode", factionMode)

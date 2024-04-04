@@ -247,53 +247,11 @@ local function FixWrongAccountWideQuests(accountWideData)
 	end
 end
 
-app.AddEventHandler("OnRefreshCollections", CacheAccountWideCompleteViaAchievement)
-app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
-app.AddEventHandler("OnRefreshCollections", CacheAccountWideSharedQuests)
-app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
-
-RefreshCollections = function()
-	local currentCharacter = app.CurrentCharacter;
-	local charGuid = app.GUID;
-	if InCombatLockdown() then
-		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
-		while InCombatLockdown() do coroutine.yield(); end
-	else
-		print(app.L.REFRESHING_COLLECTION);
-	end
-
-	-- Refresh Mounts / Pets
-	local acctSpells, charSpells = ATTAccountWideData.Spells, currentCharacter.Spells;
-	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
-		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-		if spellID then
-			if isCollected then
-				if not acctSpells[spellID] then print("Added Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
-				charSpells[spellID] = 1;
-			else
-				charSpells[spellID] = nil;
-			end
-		end
-	end
-	coroutine.yield();
-
-	-- Refresh Factions
-	local faction;
-	wipe(currentCharacter.Factions);
-	for factionID,_ in pairs(app.SearchForFieldContainer("factionID")) do
-		faction = app.SearchForObject("factionID", factionID);
-		-- simply reference the .saved property of each known Faction to re-calculate the character value
-		if faction and faction.saved then end
-	end
-	coroutine.yield();
-
-	-- Refresh Achievements
-	app.RefreshAchievementCollection();
-	coroutine.yield();
-
+local function CheckOncePerAccountQuestsForCharacter(accountWideData)
 	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
-	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
+	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
+	local charGuid = app.GUID;
 	for questID,questGuid in pairs(oneTimeQuests) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
 		if IsQuestFlaggedCompleted(questID) then
@@ -306,6 +264,31 @@ RefreshCollections = function()
 			-- Mark the character which completed the Quest
 			oneTimeQuests[questID] = charGuid;
 		end
+	end
+end
+
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideCompleteViaAchievement)
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideSharedQuests)
+app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
+app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
+
+RefreshCollections = function()
+	local currentCharacter = app.CurrentCharacter;
+	if InCombatLockdown() then
+		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
+		while InCombatLockdown() do coroutine.yield(); end
+	else
+		print(app.L.REFRESHING_COLLECTION);
+	end
+
+	-- Refresh Factions
+	local faction;
+	wipe(currentCharacter.Factions);
+	for factionID,_ in pairs(app.GetRawFieldContainer("factionID")) do
+		faction = app.SearchForObject("factionID", factionID);
+		-- simply reference the .saved property of each known Faction to re-calculate the character value
+		if faction and faction.saved then end
 	end
 	coroutine.yield();
 
@@ -363,3 +346,4 @@ end
 end
 
 app.RefreshCollections = function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections) end
+app.AddEventHandler("OnInit", app.RefreshCollections)

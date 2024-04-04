@@ -51,9 +51,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				ach(16547),	-- Pulled!
 				ach(16317),	-- Secret Fishing Spots
 				ach(16553),	-- Taking From Nature
-				ach(16562),	-- That's not a Fish...
-				ach(16563),	-- We're Going to Need a Bigger Harpoon
-				ach(16546),	-- What's Down There?
+				ach(16562, {	-- That's not a Fish...
+					crit(55689, {	-- Cast the Spell - Summon Massive Lunker
+						["provider"] = { "i", 194701 },	-- Ominous Conch
+					}),
+				}),
+				ach(16563, {	-- We're Going to Need a Bigger Harpoon
+					crit(55689, {	-- Cast the Spell - Summon Massive Lunker
+						["provider"] = { "i", 194701 },	-- Ominous Conch
+					}),
+				}),
+				ach(16546, {	-- What's Down There?
+					crit(55689, {	-- Cast the Spell - Summon Massive Lunker
+						["provider"] = { "i", 194701 },	-- Ominous Conch
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				------ RENOWN 4 ------

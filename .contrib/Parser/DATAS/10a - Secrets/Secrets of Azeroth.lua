@@ -691,26 +691,31 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					o(9000005, {	-- Aged Marker [#1]
 						["questID"] = 78025,
 						["coord"] = { 83.8, 48.4, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000006, {	-- Aged Marker [#2]
 						["questID"] = 78026,
 						["coord"] = { 78.6, 83.3, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000007, {	-- Aged Marker [#3]
 						["questID"] = 78027,
 						["coord"] = { 60.7, 63.4, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000008, {	-- Aged Marker [#4]
 						["questID"] = 78028,
 						["coord"] = { 31.6, 71.6, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000009, {	-- Aged Marker [#5]
 						["questID"] = 78029,	-- this marker triggered 78037 for me instead -Run
 						["coord"] = { 43.3, 48.0, OHNAHRAN_PLAINS },
+						["DisablePartySync"] = true,
 						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
 					}),
 					o(9000010, {	-- Banner Stand
@@ -772,7 +777,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409012 },	-- Auction House Bill of Sale
 						["coord"] = { 44.1, 60.3, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -782,7 +787,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409016 },	-- Void Storage Receipt
 						["coord"] = { 73.9, 57.4, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -792,7 +797,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409017 },	-- Garden Supply Receipt
 						["coord"] = { 53.0, 28.4, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -802,7 +807,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409018 },	-- Researcher's Note
 						["coord"] = { 37.6, 37.1, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -812,7 +817,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 409019 },	-- Hastily Scrawled Note
 						["coord"] = { 31.6, 70.2, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, 
+						["lockCriteria"] = { 1,
 							"questID", 77934,	-- A Complete Inventory
 							"questID", 77953,	-- A Sphere in Danger
 						},
@@ -1157,38 +1162,38 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
-	q(76987),	-- completed 'The Inquisitive' (account-wide completion) (achievementID 18642)
+	q(76987),	-- completed 'The Inquisitive' (achievementID 18642) (account-wide completion)
 	q(76995),	-- looted Crazed Looter first time (NPC 208182)
 	q(77687),	-- completed 'A Secretive Contact' (questID 77165)
-	q(78202),	-- completed 'Unfinished Thinking Cap' (questID 77237)
+	q(78202),	-- completed 'Unfinished Thinking Cap' (questID 77237) (account-wide completion)
 	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
-	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
-	q(77521),	-- completed 'Preservationist Cleared' (questID 77277)
+	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504) (account-wide completion)
+	q(77521),	-- completed 'Preservationist Cleared' (questID 77277) (account-wide completion)
 	q(77688),	-- accepted 'Securing an Artifact' (questID 77281)
-	q(78201),	-- completed 'Artifact Secured' (questID 77282)
-	q(77522),	-- completed 'The Torch of Pyrreth' (questID 77263)
-	q(77523),	-- completed 'A Knowledgeable Descent' (questID 77286)
+	q(78201),	-- completed 'Artifact Secured' (questID 77282) (account-wide completion)
+	q(77522),	-- completed 'The Torch of Pyrreth' (questID 77263) (account-wide completion)
+	q(77523),	-- completed 'A Knowledgeable Descent' (questID 77286) (account-wide completion)
 	q(77689),	-- completed 'Idol Searching' (questID 77303)
 	q(77306),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
-	q(78200),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
-	q(77524),	-- completed 'Using the Idol' (questID 76456)
+	q(78200),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645) (account-wide completion)
+	q(77524),	-- completed 'Using the Idol' (questID 76456) (account-wide completion)
 	q(78008),	-- completed 'A Proper Burial' (questID 77865)
-	q(77854),	-- Upon completion of Into the Sands (questID 76509)
+	q(77854),	-- Upon completion of Into the Sands (questID 76509) (account-wide completion)
 	q(77421),	-- accepted 'Out of the Sands' (questID 77305)
-	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
-	q(77576),	-- Upon completion of A Titanic Mold (QuestID 77822)
-	q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831)
+	q(76508),	-- Upon completion of Out of the Sands (questID 77305) (account-wide completion)
+	q(77576),	-- Upon completion of A Titanic Mold (QuestID 77822) (account-wide completion)
+	q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831) (account-wide completion)
 	q(77893),	-- Upon completion of this quest and receiving the QI
 	q(77830),	-- Upon "learning" Tyr's Titan Key (itemID 208831)
 	q(78037),	-- Channeling 'Torch of Pyrreth' to Aged Marker [#5] (questID 78029)
-	q(77307),	-- Community Rumors (Achievement 18643)
+	q(77307),	-- Community Rumors (Achievement 18643) (account-wide completion)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
 	q(77895),	-- Completed at same time as receiving (itemdID 208888)
-	q(77579),	-- Upon completion of (QuestID 77908)
+	q(77579),	-- Upon completion of (QuestID 77908) (account-wide completion)
 	q(77916),	-- Upon completion of (QuestID 77928 and getting the QI!)
-	q(77580),	-- Upon completion of (QuestID 77934)
+	q(77580),	-- Upon completion of (QuestID 77934) (account-wide completion)
 	q(77951),	-- Upon completion of (QuestID 77953)
-	q(77520),	-- Upon completion of (QuestID 77954)
+	q(77520),	-- Upon completion of (QuestID 77954) (account-wide completion)
 	q(77959),	-- Upon completion of (QuestID 77957)
-	q(77308),	-- Upon completion of (QuestID 77977)
+	q(77308),	-- Upon completion of (QuestID 77977) (account-wide completion)
 })));

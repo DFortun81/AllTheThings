@@ -1309,7 +1309,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		category(191, {	-- Tools
-			i(6219),	-- Arclight Spanner
+			i(6219, {	-- Arclight Spanner
+				-- #if AFTER 10.0.0
+				["collectible"] = false,
+				-- #endif
+			}),
 			i(10498),	-- Gyromatic Micro-Adjustor
 		}),
 	}),
@@ -1427,6 +1431,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					REDRIDGE_MOUNTAINS,
 					WETLANDS,
 				},
+				-- #if AFTER 10.0.0
+				["collectible"] = false,
+				-- #endif
 			}),
 		}),
 		i(13888),	-- Darkclaw Lobster

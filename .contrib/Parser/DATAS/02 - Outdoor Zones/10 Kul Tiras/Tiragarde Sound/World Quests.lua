@@ -436,11 +436,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 			}),
-			q(52430, {	-- Not So Bad Down Here
+			petbattle(q(52430, {	-- Not So Bad Down Here
 				["provider"] = { "n", 141077 },	-- Kwint
 				["lvl"] = { 50 },
 				["isWorldQuest"] = true,
-			}),
+			})),
 			q(51843, {	-- P4-N73R4
 				["lvl"] = { 50 },
 				["isWorldQuest"] = true,

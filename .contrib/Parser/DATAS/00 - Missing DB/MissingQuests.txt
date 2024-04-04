@@ -1788,20 +1788,11 @@ q(79464),	-- [DNT] Renown Reward 002
 q(79465),	-- [DNT] Renown Reward 003
 q(79466),	-- [DNT] Renown Reward 004
 q(79702),	--
-q(79965),	-- Learn the Ropes or Walk the Plank
 q(79988),	--
-q(79989),	--
+q(79989),	-- An Ancient Awakening
 q(80171),	--
 q(80172),	--
-q(80262),	--
-q(80263),	--
 q(80264),	--
 q(80335),	--
 q(80389),	-- Last Hurrah
 q(80540),	--
-q(81657),	--
-q(81676),	--
-q(81678),	--
-q(81679),	--
-q(81680),	--
-q(81681),	--

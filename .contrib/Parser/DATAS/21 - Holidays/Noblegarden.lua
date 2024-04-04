@@ -339,7 +339,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		ach(20209, {	-- Quacked Killer
 			["timeline"] = { ADDED_10_2_6 },
-		}),		
+		}),
 		ach(2422, {	-- Shake Your Bunny-Maker
 			["provider"] = { "i", 45073 },	-- Spring Flowers
 			["timeline"] = { "added 3.0.1" },
@@ -377,7 +377,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		n(218738, {	-- Daetan Swiftplume
 			["questID"] = 79558,	-- Feathered Fiend (H)
 			["providers"] = {
-				{ "n", 216836 },	-- Golden Egg
+				{ "n", 218736 },	-- Golden Egg
 				{ "n", 219936 },	-- [DNT] Vignette
 			},
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
@@ -398,8 +398,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 28.8, 86.68, ELWYNN_FOREST },
 				{ 34.83, 81.68, ELWYNN_FOREST },
 				{ 34.5, 80.7, ELWYNN_FOREST },
-				{ 45, 32, DUROTAR },
-				{ 42.5, 38, DUROTAR },
+			},
+		}),
+		n(218736, {	-- Golden Egg
+			["description"] = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
+			["coords"] = {
+				{ 44.8, 32.0, DUROTAR },
+				{ 46.2, 33.4, DUROTAR },	-- confirmed starting point
+				{ 42.6, 37.8, DUROTAR },
+				{ 45.2, 39.6, DUROTAR },
+				{ 46.0, 37.2, DUROTAR },	-- confirmed starting point
 			},
 		}),
 	})),
@@ -630,17 +638,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["races"] = ALLIANCE_ONLY,
-			["isBreadcrumb"] = true,
+			--["isYearly"] = true,	-- TODO: confirm
 		}),
 		q(79136, {	-- A Spring Awakening (H)
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["races"] = HORDE_ONLY,
-			["isBreadcrumb"] = true,
+			--["isYearly"] = true,	-- TODO: confirm
 		}),
 		q(79322, {	-- What the Duck? (A)
 			["qg"] = 211646,	-- Zinnia Brooks
-			["sourceQuest"] = 79134,	-- A Spring Awakening (A)
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -653,7 +660,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		q(79575, {	-- What the Duck? (H)
 			["qg"] = 217125,	-- Sylnaria Fareflame
-			["sourceQuest"] = 79136,	-- A Spring Awakening (H)
 			["coord"] = { 52.6, 41.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -786,11 +792,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
-					--q(TODO, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
-					--	["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
-					--	["collectible"] = false,
-					--	["isDaily"] = true,
-					--}),
+					q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+						["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+						["collectible"] = false,
+						["isDaily"] = true,
+					}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
@@ -819,11 +825,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
-					--q(TODO, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
-					--	["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
-					--	["collectible"] = false,
-					--	["isDaily"] = true,
-					--}),
+					q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+						["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+						["collectible"] = false,
+						["isDaily"] = true,
+					}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt

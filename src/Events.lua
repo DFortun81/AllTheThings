@@ -1,7 +1,8 @@
 
 local appName, app = ...;
 
-local rawget, ipairs, pairs, rawset, setmetatable, print, type = rawget, ipairs, pairs, rawset, setmetatable, print, type
+local rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall
+	= rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall
 
 -- Declare Custom Event Handlers
 local EventHandlers = setmetatable({
@@ -52,6 +53,25 @@ app.RemoveEventHandler = function(handler)
 		end
 	end
 end
+-- Most of the time, there's no reason for ATT to try handling game events until it's even ready to do anything with it
+-- So instead of individually adding a bazillion OnReady event registrations, let's just have one method do that all for us
+local OnReadyEventRegistrations = {}
+app.AddEventRegistration = function(event, func)
+	if not event or not func then
+		app.print("AddEventRegistration invalid call",event,func)
+	end
+	-- app.PrintDebug("Event Func Registered",event,func)
+	OnReadyEventRegistrations[event] = func
+end
+app.AddEventHandler("OnReady", function()
+	for event,func in pairs(OnReadyEventRegistrations) do
+		-- app.PrintDebug("RegisterFuncEvent",event,func)
+		-- safely attempt to register the event incase it is not available in a game version
+		pcall(app.RegisterFuncEvent, app, event, func);
+	end
+end)
+
+
 -- need lib/Runner.lua to be used in Classic so we can consolidate stuff
 if app.IsRetail then
 	local RunnerEvents = {
@@ -59,7 +79,7 @@ if app.IsRetail then
 	}
 	local Runner = app.CreateRunner("events")
 	app.HandleEvent = function(eventName, ...)
-		-- app.PrintDebug("HandleEvent",eventName,...)
+		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
 		-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
 		-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
 		if RunnerEvents[eventName] then

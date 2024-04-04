@@ -280,6 +280,8 @@ for i,guid in ipairs({
     "Player-63-08E17A71", -- Sanctuari-Ysera US
 	-- Jez
 	"Player-3676-0A6CC504",	-- Jezartroz-Area52 US
+	-- rootkit1337
+	"Player-3674-0B3F8DA8", -- Cerealm-TwistingNether EU
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
@@ -911,17 +913,17 @@ if TooltipDataProcessor then
 		-- print("AttachTooltip-Return");
 	end
 
+	app.AddEventRegistration("TOOLTIP_DATA_UPDATE", function(...)
+		if GameTooltip and GameTooltip:IsVisible() then
+			-- app.PrintDebug("Auto-refresh tooltip")
+			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+			GameTooltip.ATT_AttachComplete = nil;
+			GameTooltip:Show();
+		end
+	end);
 	app.AddEventHandler("OnReady", function()
 		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
-		app:RegisterFuncEvent("TOOLTIP_DATA_UPDATE", function(...)
-			if GameTooltip and GameTooltip:IsVisible() then
-				-- app.PrintDebug("Auto-refresh tooltip")
-				-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
-				GameTooltip.ATT_AttachComplete = nil;
-				GameTooltip:Show();
-			end
-		end);
 	end);
 else
 	-- Pre-10.0.2 (Legacy)

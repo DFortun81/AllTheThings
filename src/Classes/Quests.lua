@@ -723,10 +723,10 @@ if app.IsRetail then
 		if app.IsReady and oldReportSetting then
 			if questDiff > 50 then
 				manyQuests = true;
-				print(questDiff,"Quests Completed");
+				app.print(questDiff,"Quests Completed");
 			elseif questDiff < -50 then
 				manyQuests = true;
-				print(questDiff,"Quests Unflagged");
+				app.print(questDiff,"Quests Unflagged");
 			end
 		end
 		if manyQuests then

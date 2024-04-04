@@ -2482,7 +2482,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 18.1, 86.5, DESOLACE },
 					},
 					["groups"] = {
-						i(6367),	-- Big Iron Fishing Pole
+						i(6367, {	-- Big Iron Fishing Pole
+							-- #if AFTER 10.0.0
+							["collectible"] = false,
+							-- #endif
+						}),
 						i(13545),	-- Shellfish
 					},
 				}),
