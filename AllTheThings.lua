@@ -539,7 +539,7 @@ app.AddEventHandler("OnStartup", function()
 		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
 	end;
 end);
-app:RegisterFuncEvent("SKILL_LINES_CHANGED", function()
+app.AddEventRegistration("SKILL_LINES_CHANGED", function()
 	-- app.PrintDebug("SKILL_LINES_CHANGED")
 	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
 	DelayedCallback(RefreshTradeSkillCache, 2);
@@ -5412,10 +5412,7 @@ local function RefreshAchievementCollection()
 	end
 end
 app.AddEventHandler("OnRefreshCollections", RefreshAchievementCollection)
-app.AddEventHandler("OnReady", function()
-	app:RegisterFuncEvent("ACHIEVEMENT_EARNED", CheckAchievementCollectionStatus);
-	app:RegisterFuncEvent("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);
-end)
+app.AddEventRegistration("ACHIEVEMENT_EARNED", CheckAchievementCollectionStatus);
 end	-- Achievement Lib
 
 -- Currency Lib
@@ -9680,7 +9677,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 
 -- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
-app.events.PET_BATTLE_OPENING_START = function(...)
+app.AddEventRegistration("PET_BATTLE_OPENING_START", function(...)
 	-- check for open ATT windows
 	for _,window in pairs(app.Windows) do
 		if window:IsVisible() then
@@ -9689,9 +9686,9 @@ app.events.PET_BATTLE_OPENING_START = function(...)
 			window:Toggle();
 		end
 	end
-end
+end)
 -- this fires twice when pet battle ends
-app.events.PET_BATTLE_CLOSE = function(...)
+app.AddEventRegistration("PET_BATTLE_CLOSE", function(...)
 	if app.PetBattleClosed then
 		for _,window in ipairs(app.PetBattleClosed) do
 			-- special open for Current Instance list
@@ -9703,11 +9700,7 @@ app.events.PET_BATTLE_CLOSE = function(...)
 		end
 		app.PetBattleClosed = nil;
 	end
-end
-app.AddEventHandler("OnStartup", function()
-	app:RegisterEvent("PET_BATTLE_OPENING_START")
-	app:RegisterEvent("PET_BATTLE_CLOSE")
-end);
+end)
 end)();
 
 do	-- Main Data
@@ -13817,10 +13810,6 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 	end
 end;
 
--- Only need to immediately load any Windows which are able to be immediately visible on load depending on settings
-app.AddEventHandler("OnLoad", function()
-	app:GetWindow("CurrentInstance");
-end)
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
 end
@@ -14708,6 +14697,16 @@ app.SetupProfiles = function()
 	app.Settings:Initialize();
 end
 
+app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
+	-- This is so that when you kill a boss, you can trigger
+	-- an automatic update of your saved instance cache.
+	-- (It does lag a little, but you can disable this if you want.)
+	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
+	-- print("BOSS_KILL", id, name, ...);
+	app:UnregisterEvent("LOOT_CLOSED");
+	app:RegisterEvent("LOOT_CLOSED");
+end);
+app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
@@ -14828,26 +14827,8 @@ app.Startup = function()
 	-- Init the Settings before working with data
 	app.Settings:Initialize();
 
-	-- Register remaining addon-related events
-	app:RegisterFuncEvent("BOSS_KILL", function(id, name, ...)
-		-- This is so that when you kill a boss, you can trigger
-		-- an automatic update of your saved instance cache.
-		-- (It does lag a little, but you can disable this if you want.)
-		-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
-		-- print("BOSS_KILL", id, name, ...);
-		app:UnregisterEvent("LOOT_CLOSED");
-		app:RegisterEvent("LOOT_CLOSED");
-	end);
-	app:RegisterFuncEvent("PLAYER_ENTERING_WORLD", function(...)
-		-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
-		app.InWorld = true;
-		app:UnregisterEventClean("PLAYER_ENTERING_WORLD")
-	end);
-
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
-
-	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 	-- app.PrintMemoryUsage("Startup:Done")
 end
 
@@ -14875,10 +14856,11 @@ end
 app.AddEventHandler("OnInit", PrePopulateAchievementSymlinks)
 
 -- Function which is triggered after Startup
-app.InitDataCoroutine = function()
-	-- app.PrintMemoryUsage("InitDataCoroutine")
-	-- Wait for the player to actually be 'in the game' to do further logic
-	while not app.InWorld do coroutine.yield(); end
+local function InitDataCoroutine()
+	app.PrintMemoryUsage("InitDataCoroutine")
+	-- if IsInInstance() then
+	-- 	app.print("cannot fully load while in an Instance due to Blizzard restrictions. Please Zone out to finish loading ATT.")
+	-- end
 
 	-- Wait for the Data Cache to return something.
 	while not app:GetDataCache() do coroutine.yield(); end
@@ -14990,6 +14972,13 @@ app.InitDataCoroutine = function()
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
+
+app:RegisterFuncEvent("PLAYER_ENTERING_WORLD", function(...)
+	-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
+	app.InWorld = true;
+	app:UnregisterEventClean("PLAYER_ENTERING_WORLD")
+	StartCoroutine("InitDataCoroutine", InitDataCoroutine);
+end);
 end -- Setup and Startup Functionality
 
 -- Slash Command List

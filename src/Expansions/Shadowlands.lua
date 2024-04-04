@@ -102,12 +102,10 @@ do
 			currentCharacter[CACHE] = nil;
 			if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 		end);
-		app.AddEventHandler("OnReady", function()
-			app:RegisterFuncEvent("NEW_RUNEFORGE_POWER_ADDED", function(id)
-				app.SetAccountCollected(app.SearchForObject(KEY, id), CACHE, id, true)
-				app.UpdateRawID(KEY, id)
-			end);
-		end)
+		app.AddEventRegistration("NEW_RUNEFORGE_POWER_ADDED", function(id)
+			app.SetAccountCollected(app.SearchForObject(KEY, id), CACHE, id, true)
+			app.UpdateRawID(KEY, id)
+		end);
 	else
 		app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", KEY);
 	end

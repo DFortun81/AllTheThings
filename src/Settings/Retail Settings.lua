@@ -336,6 +336,11 @@ settings.Initialize = function(self)
 			app:GetWindow("Prime"):SetVisible(true)
 		end)
 	end
+	if self:GetTooltipSetting("Auto:MiniList") then
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("CurrentInstance"):SetVisible(true)
+		end)
+	end
 	if self:GetTooltipSetting("Auto:RaidAssistant") then
 		app.AddEventHandler("OnReady", function()
 			app:GetWindow("RaidAssistant"):SetVisible(true)

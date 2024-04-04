@@ -1110,6 +1110,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 	end
 end
 app.AddEventHandler("OnStartup", function()
+	-- TODO: app.AddEventRegistration
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 

@@ -161,29 +161,27 @@ do
 			if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 			if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 		end)
-		app.AddEventHandler("OnReady", function()
-			app:RegisterFuncEvent("NEW_PET_ADDED", function(petID)
-				local speciesID = C_PetJournal_GetPetInfoByPetID(petID);
-				PetIDSpeciesIDHelper[petID] = speciesID;
-				-- app.PrintDebug("NEW_PET_ADDED", petID, speciesID);
-				if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) == 1 and not rawget(CollectedSpeciesHelper, speciesID) then
-					CollectedSpeciesHelper[speciesID] = 1;
-					app.SetAccountCollected(nil, CACHE, speciesID, true)
-					app.UpdateRawID(KEY, speciesID);
-				end
-			end)
-			app:RegisterFuncEvent("PET_JOURNAL_PET_DELETED", function(petID)
-				local speciesID = PetIDSpeciesIDHelper[petID];
-				-- app.PrintDebug("PET_JOURNAL_PET_DELETED",petID,speciesID);
+		app.AddEventRegistration("NEW_PET_ADDED", function(petID)
+			local speciesID = C_PetJournal_GetPetInfoByPetID(petID);
+			PetIDSpeciesIDHelper[petID] = speciesID;
+			-- app.PrintDebug("NEW_PET_ADDED", petID, speciesID);
+			if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) == 1 and not rawget(CollectedSpeciesHelper, speciesID) then
+				CollectedSpeciesHelper[speciesID] = 1;
+				app.SetAccountCollected(nil, CACHE, speciesID, true)
+				app.UpdateRawID(KEY, speciesID);
+			end
+		end)
+		app.AddEventRegistration("PET_JOURNAL_PET_DELETED", function(petID)
+			local speciesID = PetIDSpeciesIDHelper[petID];
+			-- app.PrintDebug("PET_JOURNAL_PET_DELETED",petID,speciesID);
 
-				-- Check against all of the collected species for a species that is no longer 1/X
-				if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
-					-- app.PrintDebug("Pet Missing",speciesID);
-					CollectedSpeciesHelper[speciesID] = nil;
-					app.SetAccountCollected(nil, CACHE, speciesID)
-					app.UpdateRawID(KEY, speciesID);
-				end
-			end)
+			-- Check against all of the collected species for a species that is no longer 1/X
+			if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
+				-- app.PrintDebug("Pet Missing",speciesID);
+				CollectedSpeciesHelper[speciesID] = nil;
+				app.SetAccountCollected(nil, CACHE, speciesID)
+				app.UpdateRawID(KEY, speciesID);
+			end
 		end)
 
 		app.CreatePetAbility = app.CreateClass("PetAbility", "petAbilityID", {

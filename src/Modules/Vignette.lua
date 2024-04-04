@@ -146,23 +146,23 @@ if C_VignetteInfo then
 			end
 		end
 	end
+	app.AddEventRegistration("VIGNETTE_MINIMAP_UPDATED", UpdateVignette);
+	app.AddEventRegistration("VIGNETTES_UPDATED", function()
+		local vignettesByGUID = {};
+		local vignettes = C_VignetteInfo_GetVignettes();
+		if vignettes then
+			for _,guid in ipairs(vignettes) do
+				vignettesByGUID[guid] = true;
+				UpdateVignette(guid);
+			end
+		end
+		for guid,_ in pairs(CachedVignetteInfo) do
+			if not vignettesByGUID[guid] then
+				ClearVignette(guid);
+			end
+		end
+	end);
 	app.AddEventHandler("OnReady", function()
-		app:RegisterFuncEvent("VIGNETTE_MINIMAP_UPDATED", UpdateVignette);
-		app:RegisterFuncEvent("VIGNETTES_UPDATED", function()
-			local vignettesByGUID = {};
-			local vignettes = C_VignetteInfo_GetVignettes();
-			if vignettes then
-				for _,guid in ipairs(vignettes) do
-					vignettesByGUID[guid] = true;
-					UpdateVignette(guid);
-				end
-			end
-			for guid,_ in pairs(CachedVignetteInfo) do
-				if not vignettesByGUID[guid] then
-					ClearVignette(guid);
-				end
-			end
-		end);
 		app.events.VIGNETTES_UPDATED();
 		app.AddEventHandler("OnReportNearbySettingsChanged", app.events.VIGNETTES_UPDATED);
 	end);
