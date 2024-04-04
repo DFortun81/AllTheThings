@@ -547,14 +547,8 @@ local function RefreshAppearanceSources()
 		-- app.PrintDebug("Unique Refresh done")
 	end
 end
-app.AddEventHandler("OnRefreshCollections", function()
-	-- Refresh Sources from Cache if tracking Transmog
-	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
-		RefreshAppearanceSources();
-	end
-end);
 app.AddEventHandler("OnRecalculate", function()
-	if app.DoRefreshAppearanceSources then
+	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
 		RefreshAppearanceSources();
 	end
 end);
