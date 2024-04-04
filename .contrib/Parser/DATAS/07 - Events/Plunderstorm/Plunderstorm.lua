@@ -186,6 +186,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(80110),	-- First WQ of the Day
 		q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
 		q(80262),	-- Reached renown 6
+		q(81657),	-- Reached renown 16
+		q(80263),	-- Reached renown 17
 
 		-- Hard or impossible to find out what exactly these HQTs are for
 		q(81676),	-- Dieing
