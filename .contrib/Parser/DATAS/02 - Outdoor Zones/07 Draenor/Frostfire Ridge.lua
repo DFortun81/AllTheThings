@@ -1231,6 +1231,7 @@ root(ROOTS.Zones, {
 						q(37626, {	-- Assault on Magnarok (H)
 							["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
 							["races"] = HORDE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
 							-- Alliance version of 37626 is in NYI
 						}),
 						q(36826, {	-- Assault on Magnarok (A)
