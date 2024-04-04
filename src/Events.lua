@@ -59,7 +59,7 @@ if app.IsRetail then
 	}
 	local Runner = app.CreateRunner("events")
 	app.HandleEvent = function(eventName, ...)
-		-- app.PrintDebug("HandleEvent",eventName,...)
+		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
 		-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
 		-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
 		if RunnerEvents[eventName] then
