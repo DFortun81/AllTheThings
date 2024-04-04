@@ -414,7 +414,7 @@ end
 local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	while InCombatLockdown() do coroutine.yield(); end
 	app.print("Simplifying Exploration Data...");
-	local ReportedAreas = {};
+	local reportedAreasByID = {};
 	local allMapData, mapIDs, mapID = setmetatable({}, MapDataMeta);
 	for areaID,coords in pairs(rawExplorationAreaPositionDB) do
 		mapIDs = {};
@@ -453,11 +453,11 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 		end
 		if not ExplorationAreaPositionDB[areaID] then
 			ExplorationAreaPositionDB[areaID] = coords;
-			ReportedAreas[areaID] = true;
+			reportedAreasByID[areaID] = true;
 		end
 	end
 	local reportedAreas = {};
-	for areaID,_ in pairs(ReportedAreas) do
+	for areaID,_ in pairs(reportedAreasByID) do
 		tinsert(reportedAreas, areaID);
 	end
 	if #reportedAreas > 0 then
