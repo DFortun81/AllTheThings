@@ -145,18 +145,25 @@ do
 	})
 	app.AddEventHandler("OnRefreshCollections", function()
 		local saved, char, none = {}, {}, {}
+		local IsSpellKnown = app.IsSpellKnownHelper
 		for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then
-				if PerCharacterMountSpells[spellID] then
+			if spellID then
+				 -- also used to have a questID check... is that really needed?
+				if isCollected or IsSpellKnown(spellID) then
+					-- if PerCharacterMountSpells[spellID] then
+					-- 	char[spellID] = true;
+					-- end
+					-- TODO: want to remove this line and only store char-specific mounts per character above
+					-- but need logic revamp of recalc account data
 					char[spellID] = true;
+
+					saved[spellID] = true;
+				else
+					none[spellID] = true
 				end
-				saved[spellID] = true;
-			elseif app.IsSpellKnownHelper(spellID) then -- also used to have a questID check... is that really needed?
-				char[spellID] = true;
-				saved[spellID] = true;
 			else
-				none[spellID] = true
+				app.PrintDebug("Mount with no spell",mountID)
 			end
 		end
 

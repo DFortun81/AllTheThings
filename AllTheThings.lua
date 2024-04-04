@@ -3972,6 +3972,10 @@ local function SyncCharacterQuestData(allCharacters, key)
 		end
 	end
 end
+-- TODO: individual Classes should be able to add the proper functionality here to determine the account-wide
+-- collection states of a 'Thing', if the refresh can't account for it
+-- i.e. Mounts... 99% account-wide by default, like 5 per character. don't want to save 900+ id's for
+-- each character just to sync into account data properly
 local SyncFunctions = setmetatable({
 	AzeriteEssenceRanks = RankSyncCharacterData,
 	Quests = SyncCharacterQuestData,
@@ -3999,7 +4003,7 @@ function app:RecalculateAccountWideData()
 	end
 	ATTAccountWideData.Deaths = deaths;
 end
-app.AddEventHandler("OnRefreshCollections", app.RecalculateAccountWideData)
+app.AddEventHandler("OnRefreshCollectionsDone", app.RecalculateAccountWideData)
 function app:ReceiveSyncRequest(sender, battleTag)
 	if battleTag ~= select(2, BNGetInfo()) then
 		-- Check to see if the character/account is linked.
