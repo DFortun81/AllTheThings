@@ -282,21 +282,6 @@ RefreshCollections = function()
 		print(app.L.REFRESHING_COLLECTION);
 	end
 
-	-- Refresh Mounts
-	local acctSpells, charSpells = ATTAccountWideData.Spells, currentCharacter.Spells;
-	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
-		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-		if spellID then
-			if isCollected then
-				if not acctSpells[spellID] then print("Added Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
-				charSpells[spellID] = 1;
-			else
-				charSpells[spellID] = nil;
-			end
-		end
-	end
-	coroutine.yield();
-
 	-- Refresh Factions
 	local faction;
 	wipe(currentCharacter.Factions);
