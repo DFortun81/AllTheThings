@@ -491,7 +491,7 @@ local function HarvestExploration(simplify)
 			tinsert(grid, CreateVector2D(i / Granularity, j / Granularity));
 		end
 	end
-	local rawExplorationAreaPositionDB = {};
+	local rawExplorationAreaPositionDB,reportedAreasByID = {},{};
 	for mapID,objects in pairs(app.SearchForFieldContainer("mapID")) do
 		if C_Map_GetMapArtID(mapID) then
 			app.print("Harvesting Map " .. mapID .. "...");
@@ -521,6 +521,7 @@ local function HarvestExploration(simplify)
 				local areaIDs = ExplorationDB[mapID];
 				for _,areaID in ipairs(areaIDs) do
 					if not explorationByID[areaID] then
+						reportedAreasByID[areaID] = true;
 						explorationByID[areaID] = true;
 						any = true;
 					end
@@ -586,7 +587,7 @@ local function HarvestExploration(simplify)
 									tinsert(explorationHeader.g, o);
 									byExplorationID[areaID] = o;
 									local searchResults = app.SearchForField("explorationID", areaID);
-									if #searchResults < 1 then
+									if #searchResults < 1 or reportedAreasByID[areaID] then
 										PrintDiscordInformationForExploration(o);
 									end
 									tinsert(searchResults, o);
