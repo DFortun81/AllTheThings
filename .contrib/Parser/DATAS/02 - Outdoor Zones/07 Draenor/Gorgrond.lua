@@ -863,6 +863,7 @@ root(ROOTS.Zones, {
 					}),
 					n(-357,  {	-- Sparring Arena
 						q(35210,  {	-- A Great Escape
+							["provider"] = { "o", 236140 },	-- Goren Tunnel
 							["coord"] = { 34.7, 66.9, 547 },
 							["description"] = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",
 							["isBreadcrumb"] = true,	-- unavailable once you turn in "Leave Every Soldier Behind"
@@ -925,6 +926,9 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 82832 },	-- Rexxar
 							["coord"] = { 44.2, 61.6, GORGROND },
 							["sourceQuest"] = 35730,	-- Cauterizing Wounds
+							["groups"] = {
+								i(113504),	-- Basilisk Meat (QI!)
+							},
 						}),
 						q(36438,  {	-- Beatface vs. Boulder (A)
 							["provider"] = { "n", 85432 },	-- Altauur
@@ -953,6 +957,11 @@ root(ROOTS.Zones, {
 								35665,	-- We Have Company (A)
 								35025,	-- We Have Company (H)
 							},
+							["groups"] = {
+								o(233180, {	-- Iron Horde Bonfire
+									i(113398),	-- Burning Log (QI!)
+								}),
+							},
 						}),
 						q(35702,  {	-- Chains of Iron (A)
 							["provider"] = { "n", 84131 },	-- Rexxar
@@ -960,6 +969,9 @@ root(ROOTS.Zones, {
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 35139,	-- Eye in the Sky
 							["g"] = {
+								o(231775, {	-- Heart of the Magnaron
+									i(112680),	-- Heart of the Magnaron (QI!)
+								}),
 								i(112588),	-- Foundry-Fired Plate Chestplate
 								i(112590),	-- Overgrowth Cutter Vest
 								i(112607),	-- Steamburst Robe
@@ -1033,6 +1045,9 @@ root(ROOTS.Zones, {
 							["coord"] = { 46.1, 55.0, GORGROND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36508,	-- Is This One of Yours?
+							["groups"] = {
+								i(112786),	-- Goren Shell (QI!)
+							},
 						}),
 						q(35218,  {	-- Iron Horde Orders
 							["provider"] = { "n", 80856 },	-- Rexxar
@@ -1076,6 +1091,11 @@ root(ROOTS.Zones, {
 							["coord"] = { 46.1, 55.0, GORGROND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36209,	-- What's Under There?
+							["groups"] = {
+								o(233594, {	-- Thukmar's Research
+									i(113629),	-- Thukmar's Intel
+								}),
+							},
 						}),
 						q(35129,  {	-- Leave Every Soldier Behind (H)
 							["provider"] = { "n", 80856 },	-- Rexxar
@@ -1107,6 +1127,9 @@ root(ROOTS.Zones, {
 								34704,	-- A Rediscovered Legend (A)
 								34697,	-- A Rediscovered Legend (H)
 							},
+							["groups"] = {
+								i(108898),	-- Ogre Tooth (QI!)
+							},
 						}),
 						q(35934,  {	-- Nisha's Vengeance
 							["provider"] = { "n", 80856 },	-- Rexxar
@@ -1121,6 +1144,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 44.2, 61.6, GORGROND },
 							["sourceQuest"] = 35730,	-- Cauterizing Wounds
 							["g"] = {
+								i(113009),	-- Quenching Waters (QI!)
 								i(119064),	-- Steamfury Band
 								i(118039),	-- Steamfury Loop
 								i(119072),	-- Steamfury Ring
@@ -1145,6 +1169,9 @@ root(ROOTS.Zones, {
 							["coord"] = { 46.2, 66.6, GORGROND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 35686,	-- Rage and Wisdom
+							["groups"] = {
+								i(114967),	-- Torch (QI!)
+							},
 						}),
 						q(35035,  {	-- Seedbearers of Bad News (H)
 							["provider"] = { "n", 81202 },	-- Bony Xuk
@@ -1158,6 +1185,11 @@ root(ROOTS.Zones, {
 							["sourceQuests"] = {
 								34704,	-- A Rediscovered Legend (A)
 								34697,	-- A Rediscovered Legend (H)
+							},
+							["groups"] = {
+								i(108899),	-- Pendant of Brol (QI!)
+								i(111527),	-- Pendant of Krag (QI!)
+								i(111528),	-- Pendant of Mol (QI!)
 							},
 						}),
 						q(36576,  {	-- Strike While the Iron is Hot (A)
@@ -1193,6 +1225,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 36.8, 67.9, GORGROND },
 							["sourceQuest"] = 34699,	-- Getting Gladiators
 							["g"] = {
+								i(109023),	-- Serathil (QI!)
 								i(112888),	-- Anger of Kor'gall
 								i(112886),	-- Ferocity of Kor'gall
 								i(112884),	-- Might of Kor'gall
@@ -1204,6 +1237,7 @@ root(ROOTS.Zones, {
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36508,	-- Is This One of Yours?
 							["g"] = {
+								i(112911),	-- Goren Crystal (QI!)
 								i(112864),	-- Laughing Skull Trophy Necklace
 								i(119085),	-- Xuk's Bad Xuk Charm
 								i(119076),	-- Xuk's Fingerbone Pouch
@@ -1221,11 +1255,15 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(35925,  {	-- The Gronn Strategy
+							["provider"] = { "o", 233391 },	-- Weaponization Orders
 							["icon"] = "Interface\\Icons\\inv_letter_07",
 							["coord"] = { 47.7, 52.0, GORGROND },
 							["sourceQuests"] = {
 								35218,	-- Iron Horde Orders
 								35730,	-- Cauterizing Wounds
+							},
+							["groups"] = {
+								i(116909),	-- Weaponization Orders
 							},
 						}),
 						q(35882,  {	-- The Interest of Bruto
@@ -1331,8 +1369,13 @@ root(ROOTS.Zones, {
 							["coord"] = { 46.1, 55.0, GORGROND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
+								35925,	-- The Gronn Strategy
 								36210,	-- Hard Shell
 								36208,	-- The Crystal Shard
+							},
+							["groups"] = {
+								i(112958),	-- Goren Disguise (QI!)
+								i(114963),	-- Grom'kar Dispatch (QI!)
 							},
 						}),
 						q(35041, {	-- Xuk It!
@@ -1580,6 +1623,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							35644,	-- Mercy for the Living
 							35645,	-- The Secret of the Fungus
+						},
+						["groups"] = {
+							i(112394),	-- Enlarged Stomper Spore Pod (QI!)
 						},
 					}),
 					q(35030, {	-- A Grim Harvest (H)
@@ -1888,6 +1934,11 @@ root(ROOTS.Zones, {
 					q(33633, {	-- Rooter the Ravenous
 						["provider"] = { "n", 75593 },	-- Rooter
 						["coord"] = { 42.6, 37.8, GORGROND },
+						["groups"] = {
+							o(225596, {	-- Prickly Nopal
+								i(107609),	-- Prickly Nopal (QI!)
+							}),
+						},
 					}),
 					q(36440, {	-- Saberon Population Reduction
 						["provider"] = { "n", 85431 },	-- Altauur
@@ -1919,6 +1970,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.3, 56.3, GORGROND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35666,	-- Rangari in the Red
+						["groups"] = {
+							i(113243),	-- Rangari Pouch (QI!)
+						},
 					}),
 					q(36432, {	-- Seeking the Scout
 						["provider"] = { "n", 75146 },	-- Rangari D'kaan
@@ -1986,6 +2040,11 @@ root(ROOTS.Zones, {
 							35642,	-- Mysterious Pod
 							35633,	-- Scout Forensics
 							35640,	-- Vengeance for the Fallen
+						},
+						["groups"] = {
+							o(231769, {	-- Glowing Mushroom
+								i(112672),	-- Glowing Mushroom (QI!)
+							}),
 						},
 					}),
 					q(35029, {	-- The Secret of the Fungus (H)
