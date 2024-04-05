@@ -244,6 +244,9 @@ if season > 0 then
 		local reasons = L.AVAILABILITY_CONDITIONS;
 		reasons[1605][5] = 11500;
 		reasons[1606][5] = 11501;
+		reasons[1607][5] = 11502;
+		reasons[1608][5] = 11503;
+		reasons[1609][5] = 11504;
 		if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
 		elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
 		else app.MaximumSkillLevel = 150; end
