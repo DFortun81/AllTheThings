@@ -50,6 +50,9 @@ SetItemFilter(211940, POLEARMS);	-- Ecks'av's Tribal Guardian
 SetItemFilter(211944, POLEARMS);	-- Tojara's Will
 SetItemFilter(211941, POLEARMS);	-- Windwalker's Yari
 
+-- Shirts
+SetItemFilter(221316, SHIRTS);	-- Premo's Poise-Demanding Uniform (Phase 3)
+
 -- TODO: Mark these as unavailable in Phase 1
 -- spellID 3538 Blacksmithing (Rank 3)
 -- spellID 3564 Mining (Rank 3)

@@ -265,6 +265,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(82062, {	-- Ever After
+					["qg"] = 222530,	-- Rugged Traveler
+					["description"] = "Just east of the Ring in Blackrock Depths is a bridge that leads north over lava.\n\nAs you get onto the bridge, look down and to the left; you'll see a friendly Dark Iron Dwarf below you on the base of a pillar. Clear the rest of the mobs ahead of you (Blazing Fireguards and a group of Shadowforge dwarves).\n\nMove to the left side of the bridge near a small brazier. Get onto the railing, hug the rock wall, and jump ahead onto the platform near the wall.\n\nMove to the end of the platform, hugging the wall, and move hard into the rock corner.\n\nTurn with your left shoulder to the wall and run carefully against the wall, until you just fall down into the exposed corner. Drop down onto the rock outcrop below. \n\nTurn left into a small room, where you'll encounter the Rugged Traveler.",
+					["timeline"] = { "removed 2.0.1" },
+					["lvl"] = 48,
+					["groups"] = {
+						i(221316, {	-- Premo's Poise-Demanding Uniform
+							["timeline"] = { "removed 2.0.1" },
+						}),
+						i(221315, {	-- Rainbow Generator
+							["timeline"] = { "removed 2.0.1" },
+						}),
+					},
+				})),
+				-- #endif
 				q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
 					["qg"] = 12944,	-- Lokhtos Darkbargainer
 					["maxReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.

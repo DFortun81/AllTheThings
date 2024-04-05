@@ -252,6 +252,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Kalimdor Eagle Egg
+							["providers"] = {
+								{ "i",  56041 },	-- Kalimdor Eagle Egg
+								{ "o", 203253 },	-- Kalimdor Eagle Nest
+							},
+							["coord"] = { 64.6, 86.0, STONETALON_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/8 Ram Haunch
+							["provider"] = { "i", 56040 },	-- Ram Haunch
+							["coord"] = { 66.8, 82.6, STONETALON_MOUNTAINS },
+							["cr"] = 34894,	-- Stonetalon Ram
+						}),
+						objective(3, {	-- 0/10 Boulderslide Cheese
+							["provider"] = { "i", 56042 },	-- Boulderslide Cheese
+							["coord"] = { 60.2, 87.6, STONETALON_MOUNTAINS },
+							["crs"] = {
+								11917,	-- Boulderslide Geomancer
+								11915,	-- Boulderslide Rock Keeper
+								11918,	-- Boulderslide Stonepounder
+							},
+						}),
+					},
 				}),
 				q(1075, {	-- A Scroll from Mauren
 					["qg"] = 4077,	-- Gaxim Rustfizzle
@@ -394,6 +417,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
+					["groups"] = {
+						objective(1, {	-- 0/8 Grimtotem Ruffian slain
+							["provider"] = { "n", 11910 },	-- Grimtotem Ruffian
+						}),
+						objective(2, {	-- 0/6 Grimtotem Mercenary slain
+							["provider"] = { "n", 11911 },	-- Grimtotem Mercenary
+						}),
+					},
 				}),
 				q(25914, {	-- Back to the Depths!
 					["qg"] = 41488,	-- Sentinel Mistress Geleneth
@@ -556,9 +587,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 					["groups"] = {
 						objective(1, {	-- 0/10 Resonite Crystal
-							["provider"] = { "i", 16581 },	-- Resonite Crystal
-							["coord"] = { 57.4, 89.4, STONETALON_MOUNTAINS },
-							["cr"] = 11920,	-- Goggeroc
+							["providers"] = {
+								{ "i",  16581 },	-- Resonite Crystal
+								{ "o", 178104 },	-- Resonite Crystal
+							},
+							["coord"] = { 60.0, 90.1, STONETALON_MOUNTAINS },
 						}),
 					},
 				}),
@@ -719,7 +752,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/10 Gaea Seed
-							["provider"] = { "i", 16205 },	-- Gaea Seed
+							["providers"] = {
+								{ "i",  16205 },	-- Gaea Seed
+								{ "o", 177926 },	-- Gaea Seed
+							},
+							["coord"] = { 48.0, 39.8, STONETALON_MOUNTAINS },
 						}),
 					},
 				}),
@@ -808,9 +845,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 					["groups"] = {
 						objective(1, {	-- 0/1 Goggeroc slain
-							["provider"] = { "n", 11920 },	-- Goggeroc
+							["providers"] = {
+								{ "n",  11920 },	-- Goggeroc
+								{ "o", 178145 },	-- Resonite Cask
+								{ "i",  16603 },	-- Enchanted Resonite Crystal
+							},
 							["coord"] = { 57.4, 89.4, STONETALON_MOUNTAINS },
-							["cost"] = {{ "i", 16603, 1 }},	-- Enchanted Resonite Crystal
 						}),
 						i(16981, {	-- Owlbeard Bracers
 							["timeline"] = { "removed 4.0.3" },
@@ -1297,7 +1337,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/10 Gaea seed planted
-							["provider"] = { "i", 16208 },	-- Enchanted Gaea Seeds
+							["providers"] = {
+								{ "i",  16208 },	-- Enchanted Gaea Seeds
+								{ "o", 177929 },	-- Gaea Dirt Mound
+							},
+							["coord"] = { 31, 61, STONETALON_MOUNTAINS },
 						}),
 						i(16985, {	-- Windseeker Boots
 							["timeline"] = { "removed 4.0.3" },
@@ -1627,8 +1671,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Elder Sareth'na's Sketch Book
 							["providers"] = {
+								{ "i",  56186 },	-- Elder Sareth'na's Sketch Book
 								{ "o", 203374 },	-- Elder Sareth'na's Sketch Book
-								{ "i", 56186 },	-- Elder Sareth'na's Sketch Book (QI!)
 							},
 							["coord"] = { 40.7, 17.3, STONETALON_MOUNTAINS },
 						}),
@@ -1787,16 +1831,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sleepers' Key
-							["provider"] = { "i", 5689 },	-- Sleepers' Key
+							["providers"] = {
+								{ "i", 5689 },	-- Sleepers' Key
+								{ "o", 19596 },	-- Sleepers' Cache
+								{ "i", 5687 },	-- Gatekeeper's Key
+							},
 							["coord"] = { 25.6, 11.4, STONETALON_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/1 Claw Key
-							["provider"] = { "i", 5690 },	-- Claw Key
+							["providers"] = {
+								{ "i", 5690 },	-- Claw Key
+								{ "o", 19597 },	-- Druids' Cache
+								{ "i", 5687 },	-- Gatekeeper's Key
+							},
 							["coord"] = { 29.5, 15.8, STONETALON_MOUNTAINS },
 						}),
 						objective(3, {	-- 0/1 Barrow Key
-							["provider"] = { "i", 5691 },	-- Barrow Key
+							["providers"] = {
+								{ "i", 5691 },	-- Barrow Key
+								{ "o", 19598 },	-- Barrow Cache
+								{ "i", 5687 },	-- Gatekeeper's Key
+							},
 							["coord"] = { 27.9, 13.8, STONETALON_MOUNTAINS },
+						}),
+						i(5687, {	-- Gatekeeper's Key
+							["provider"] = { "o", 19595 },	-- Gatekeeper's Hold
+							["coord"] = { 30.0, 15.5, STONETALON_MOUNTAINS },
 						}),
 						i(6671, {	-- Juggernaut Leggings
 							["timeline"] = { "removed 4.0.3" },

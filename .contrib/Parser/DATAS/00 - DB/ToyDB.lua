@@ -35,6 +35,7 @@ i(18986);	-- Ultrasafe Transporter: Gadgetzan
 i(17712);	-- Winter Veil Disguise Kit
 i(18660);	-- World Enlarger
 -- #if SEASON_OF_DISCOVERY
+i(221315);	-- Rainbow Generator
 i(215449);	-- World Shrinker
 -- #endif
 
@@ -188,6 +189,9 @@ i(60854);	-- Loot-a-Rang
 i(46709);	-- MiniZep Controller
 i(64881);	-- Pendant of the Scarab Storm
 i(64482);	-- Puzzle Box of Yogg-Saron
+-- #if BEFORE 7.0.3
+i(65357);	-- Rainbow Generator
+-- #endif
 i(66888);	-- Stave of Fur and Claw
 i(64488);	-- The Innkeeper's Daughter
 i(63141);	-- Tol Barad Searchlight (A)
