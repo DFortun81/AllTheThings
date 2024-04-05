@@ -462,7 +462,7 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 			"```lua",
 		};
 		for i,areaID in ipairs(reportedAreas) do
-			tinsert(info, "exploration(" .. areaID .. "),\t-- " .. C_Map_GetAreaInfo(areaID));
+			tinsert(info, "exploration(" .. areaID .. "),\t-- " .. (C_Map_GetAreaInfo(areaID) or UNKNOWN));
 		end
 
 		tinsert(info, "");
