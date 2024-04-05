@@ -303,7 +303,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26073, {	-- All's Quiet on the Southern Front
+				q(26073, {	-- All's Quiet on the Southern Front [Krom'gar Champion]
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["sourceQuests"] = {
 						26067,	-- Jin'Zil's Blessing
@@ -1100,7 +1100,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26058, {	-- In Defense of Krom'gar Fortress
+				q(26058, {	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
 					["qg"] = 40902,	-- Chief Blastgineer Bombguts
 					["sourceQuest"] = 26048,	-- Spare Parts Up in Here!
 					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
@@ -1264,7 +1264,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(26004, {	-- Krom'gar Fortress
+				q(26004, {	-- Krom'gar Fortress [Krom'gar Sergeant]
 					["qg"] = 34341,	-- Saurboz
 					["sourceQuest"] = 26002,	-- Alliance Attack Plans
 					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(26101, {	-- Might Makes Right
+				q(26101, {	-- Might Makes Right [Krom'gar General]
 					["qg"] = 41023,	-- Overlord Krom'gar
 					["sourceQuest"] = 26100,	-- The General is Dead
 					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
@@ -2335,55 +2335,122 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
 					["coord"] = { 65.8, 64.0, STONETALON_MOUNTAINS },
-					["description"] = "Some items require specific Krom'gar ranks, which are obtained by completing the main storyline in the zone. The story line starts with 'We're Here to Do One Thing, Maybe Two...' & ends with 'To Be Horde...'",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" }, }, {
-						i(57505),	-- Krom'gar Champion's Armored Pauldrons
+					["groups"] = {
+						i(57505, {	-- Krom'gar Champion's Armored Pauldrons
+							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131887, {	-- Krom'gar Champion's Chain Shoulderguard
+							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57502),	-- Krom'gar Champion's Hide Shoulderguard
-						i(57503),	-- Krom'gar Champion's Leather Shoulderguard
-						i(57501),	-- Krom'gar Champion's Linen Shoulderpads
+						i(57502, {	-- Krom'gar Champion's Hide Shoulderguard
+							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57503, {	-- Krom'gar Champion's Leather Shoulderguard
+							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57501, {	-- Krom'gar Champion's Linen Shoulderpads
+							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131886, {	-- Krom'gar Champion's Mesh Shoulderguard
+							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57504),	-- Krom'gar Champion's Plate Pauldrons
-						i(57517),	-- Krom'gar General's Armored Helm
+						i(57504, {	-- Krom'gar Champion's Plate Pauldrons
+							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57517, {	-- Krom'gar General's Armored Helm
+							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131889, {	-- Krom'gar General's Chain Mask
+							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57514),	-- Krom'gar General's Hide Mask
-						i(57515),	-- Krom'gar General's Leather Mask
-						i(57513),	-- Krom'gar General's Linen Cowl
+						i(57514, {	-- Krom'gar General's Hide Mask
+							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57515, {	-- Krom'gar General's Leather Mask
+							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57513, {	-- Krom'gar General's Linen Cowl
+							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131888, {	-- Krom'gar General's Mesh Mask
+							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57516),	-- Krom'gar General's Plate Helm
-						i(57488),	-- Krom'gar Legionnaire's Armored Bracers
+						i(57516, {	-- Krom'gar General's Plate Helm
+							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57488, {	-- Krom'gar Legionnaire's Armored Bracers
+							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131885, {	-- Krom'gar Legionnaire's Chain Bracers
+							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57485),	-- Krom'gar Legionnaire's Hide Wraps
-						i(57486),	-- Krom'gar Legionnaire's Leather Bracers
-						i(57484),	-- Krom'gar Legionnaire's Linen Bracers
+						i(57485, {	-- Krom'gar Legionnaire's Hide Wraps
+							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57486, {	-- Krom'gar Legionnaire's Leather Bracers
+							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57484, {	-- Krom'gar Legionnaire's Linen Bracers
+							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131884, {	-- Krom'gar Legionnaire's Mesh Wraps
+							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57487),	-- Krom'gar Legionnaire's Plate Bracers
-						i(57476),	-- Krom'gar Sergeant's Armored Greaves
+						i(57487, {	-- Krom'gar Legionnaire's Plate Bracers
+							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57476, {	-- Krom'gar Sergeant's Armored Greaves
+							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131883, {	-- Krom'gar Sergeant's Chain Boots
+							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57473),	-- Krom'gar Sergeant's Hide Boots
-						i(57474),	-- Krom'gar Sergeant's Leather Boots
-						i(57472),	-- Krom'gar Sergeant's Linen Footwraps
+						i(57473, {	-- Krom'gar Sergeant's Hide Boots
+							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57474, {	-- Krom'gar Sergeant's Leather Boots
+							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57472, {	-- Krom'gar Sergeant's Linen Footwraps
+							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(131882, {	-- Krom'gar Sergeant's Mesh Boots
+							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57475),	-- Krom'gar Sergeant's Plate Greaves
-					}),
+						i(57475, {	-- Krom'gar Sergeant's Plate Greaves
+							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
 				}),
 				n(4085, {	-- Nizzik <Venture Armor Salesman>
 					["coord"] = { 62.6, 40.2, STONETALON_MOUNTAINS },
