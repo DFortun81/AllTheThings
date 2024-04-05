@@ -330,7 +330,6 @@ i(182123);	-- Aged Agrave Tequila
 i(179986);	-- Agonized Echoes
 i(184147);	-- Agony Enrichment Device
 i(174282);	-- Airy Ciabatta
-i(181341);	-- Alexandros Mograine
 i(181781);	-- Almost Empty Amontillado Cask
 i(177040);	-- Ambroria Dew
 i(181248);	-- Ancient Sinstone
@@ -353,7 +352,6 @@ i(178217);	-- Azurebloom Tea
 i(179268);	-- Banewood Penny Bun
 i(176864);	-- Barbed Leg
 i(179019);	-- Barbequed Dredwing
-i(178886);	-- Baroness Vashj
 i(179011);	-- Batloaf
 i(180385);	-- Bats Wing
 i(184773);	-- Battle-Tested Armor Component
@@ -413,7 +411,6 @@ i(179276);	-- Chimaera Tripe Soup
 i(181382);	-- Chime of Eternity
 i(183918);	-- Chipped Serving Bowl
 i(180486);	-- Chiu's Lute
-i(178888);	-- Choofa
 i(184766);	-- Chronicles of the Paragons
 i(179022);	-- Clearleaf Cabbage
 i(179298);	-- Cloth Parisol Strips
@@ -452,7 +449,6 @@ i(179535);	-- Crumbling Pride Extractors
 i(178173);	-- Crumbling Sandstone
 i(183921);	-- Crumpled Napkin
 i(183922);	-- Crushed Nut Shells
-i(178889);	-- Cryptkeeper Kassir
 i(178518);	-- Crypt-Aged Ale
 i(184402);	-- Culexwood Pan Flute
 i(180693);	-- Cyclonic Chronicles
@@ -496,7 +492,6 @@ i(184403);	-- Dreamlure Candle
 i(175962);	-- Dreamwood Antler
 i(180412);	-- Dredhollow Apple Cider
 i(179286);	-- Dried Cabbage Leaves
-i(181344);	-- Droman Aliothe
 i(178137);	-- Drop of Memory
 i(178017);	-- Drusty Molting
 i(178544);	-- Dubious Cheese Platter
@@ -627,7 +622,6 @@ i(180307);	-- Horrific Stone Visage
 i(180227);	-- Horror Novel
 i(180173);	-- House Grinchin Ring
 i(182968);	-- Humerus
-i(181342);	-- Hunt-Captain Korayn
 i(183822);	-- Icecrown Survival Kit
 i(180888);	-- Illegible Journal
 i(181377);	-- Illustrated Combat Meditation Aid
@@ -651,11 +645,9 @@ i(179285);	-- Jumari
 i(184774);	-- Juvenile Sporespindle
 i(176860);	-- Keen Incisor
 i(183207);	-- Keepsake of the First Conflict
-i(181346);	-- Kleia and Pelagos
 i(184564);	-- Kyrian Music Box
 i(184565);	-- Kyrian Wave Simulator
 i(181731);	-- Lacquered Larion Fang
-i(181338);	-- Lady Moonberry
 i(183929);	-- Laestrite Pocket Gravel
 i(173359);	-- Lambent Feather
 i(182745);	-- Large Aquamarine Crystal
@@ -752,14 +744,12 @@ i(181492);	-- Petrified Faeflower
 i(180511);	-- Petrified Leaf
 i(183075);	-- Phantasmal Masquerade Guise
 i(177278);	-- Phial of Serenity
-i(181347);	-- Plague Deviser Marileth
 i(183205);	-- Plated Horn of Battle
 i(176858);	-- Pliable Tail Fin
 i(181743);	-- Plume of the Archon
 i(184388);	-- Plump Glitterroot
 i(173041);	-- Pocked Bonefish Bait
 i(181247);	-- Pointy Stick
-i(178887);	-- Polemarch Adrestes
 i(173361);	-- Polished Claw
 i(179004);	-- Polished Silver Tithe
 i(183048);	-- Power of the Darkhound
@@ -786,7 +776,6 @@ i(182761);	-- Refined Gold Ingot
 i(184362);	-- Reflections on Purity
 i(176409);	-- Rejuvenating Siphoned Essence
 i(184771);	-- Remembrance Parchment Ash
-i(181343);	-- Rendle and Cudgelface
 i(184662);	-- Requisitioned Anima Cell
 i(183727);	-- Resonance of Conflict
 i(180008);	-- Resonating Anima Core
@@ -827,7 +816,6 @@ i(179003);	-- Shattered Quartz Eyes
 i(183799);	-- Shifting Catalyst
 i(180504);	-- Shimmerbough Recorder
 i(183056);	-- Shriekwing by Krentis
-i(181348);	-- Sika
 i(176879);	-- Silk Spigot
 i(175959);	-- Silky Mane
 i(179291);	-- Silver Flask
@@ -882,7 +870,6 @@ i(182186);	-- Stolen Memento
 i(178114);	-- Stone Haunch
 i(184209);	-- Stoneborn Fragments
 i(182718);	-- Stoneborn Messenger Stamp Sheet
-i(181349);	-- Stonehead
 i(180331);	-- Stonewright's Chisel
 i(183857);	-- Strength of Fire
 i(174283);	-- Stygian Stew
@@ -908,7 +895,6 @@ i(176859);	-- Tempered Carapace
 i(178133);	-- Tendrils of Ectoplasm
 i(178550);	-- Tenebrous Truffle
 i(182775);	-- Teramanik's Gilded Reins
-i(181340);	-- The Countess
 i(183050);	-- The Endmire's Mists
 i(182120);	-- The Lich's Heart
 i(183051);	-- The Rushing Tide

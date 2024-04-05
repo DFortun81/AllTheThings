@@ -559,6 +559,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								},
 							}),
 						}),
+						filter(MISC, {
+							-- Random, non-collectible items which go into your bags while in the Ember Court
+							i(181355),	-- Faulty Fireworks
+							i(182211),	-- Stone Brick
+							i(182195),	-- Vanity Mirror before use
+							i(182210, {	-- Vanity Mirror after use
+								["description"] = "This is the already-used version of the mirror.",
+							}),
+							-- Guests mood status
+							i(181341);	-- Alexandros Mograine
+							i(178886);	-- Baroness Vashj
+							i(178888);	-- Choofa
+							i(178889);	-- Cryptkeeper Kassir
+							i(181344);	-- Droman Aliothe
+							i(184534),	-- Entitled Guest
+							i(181345),	-- Grandmaster Vole
+							i(181342);	-- Hunt-Captain Korayn
+							i(181346);	-- Kleia and Pelagos
+							i(181338);	-- Lady Moonberry
+							i(181339),	-- Mikanikos
+							i(181347);	-- Plague Deviser Marileth
+							i(178887);	-- Polemarch Adrestes
+							i(181343);	-- Rendle and Cudgelface
+							i(181348);	-- Sika
+							i(181349);	-- Stonehead
+							i(181340);	-- The Countess
+							i(181392),	-- Watchmaster Boromod
+						}),
 						n(QUESTS, {
 							n(SPECIAL, sharedData({
 								["description"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest.",
@@ -2053,12 +2081,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 							},
 						}),
-						-- Random, non-collectible items which go into your bags while in the Ember Court
-						i(181355),	-- Faulty Fireworks
-						i(182211),	-- Stone Brick
-						i(182195),	-- Vanity Mirror before use
-						i(182210, {	-- Vanity Mirror after use
-							["description"] = "This is the already-used version of the mirror.",
+						n(TREASURES, {
+							o(365093, {	-- Theotar's Caroling Books
+								i(184626),	-- Winter Veil Caroling Book
+							}),
 						}),
 						n(VENDORS, {
 							n(174711, {	-- Freeman
@@ -2355,11 +2381,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 									}),
 								},
-							}),
-						}),
-						n(TREASURES, {
-							o(365093, {	-- Theotar's Caroling Books
-								i(184626),	-- Winter Veil Caroling Book
 							}),
 						}),
 					},

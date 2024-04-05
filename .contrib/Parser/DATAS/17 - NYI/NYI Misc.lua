@@ -534,7 +534,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(168209),	-- Gleaming Chest: Olberic
 			i(179005),	-- Glinting Gold Fang
 			i(174746),	-- Golden Egg Shells
-			i(181345),	-- Grandmaster Vole
 			i(180852),	-- Granule of Stygia
 			i(183726),	-- Gratitude of the Liberated
 			i(170053),	-- Grek'og's Tusk
@@ -572,7 +571,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178725),	-- Master of Shapes
 			i(174745),	-- Memory Glass Shard
 			i(175147),	-- Meteoric Vale
-			i(181339),	-- Mikanikos
 			i(178765),	-- Mindless Abomination's Chain
 			i(180745),	-- Miner's Journal
 			i(183206),	-- Miniature Seat of the Primus Replica
@@ -715,7 +713,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(175155),	-- Virtuous Dirge
 			i(175026),	-- Virtuous Toll
 			i(180006),	-- Warm Brewfest Pretzel
-			i(181392),	-- Watchmaster Boromod
 			i(178968),	-- Weekly Gardener's Satchel
 			i(179306),	-- Wingtip Warmer
 			i(177708),	-- Writ of Tribute
@@ -732,7 +729,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(184575),	-- Byron Test Happy Fun Rock
 			i(184316),	-- Cache of Nathrian Treasures
 			i(184317),	-- Cache of Nathrian Treasures
-			i(184534),	-- Entitled Guest
 			i(184762),	-- Fragmented Sorrow
 			i(184684),	-- Grimoire of Knowledge
 			i(184685),	-- Grimoire of Knowledge
