@@ -31,10 +31,10 @@ local function GetCurrentMapID()
 	if originalMapID then
 		local remap = app.MapRemapping[originalMapID];
 		if not remap then return originalMapID; end
-		
+
 		local info = C_Map_GetMapInfo(originalMapID);
 		--print("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
-		
+
 		local substitutions = remap.artIDs;
 		if substitutions then
 			local artID = C_Map_GetMapArtID(originalMapID);
@@ -46,7 +46,7 @@ local function GetCurrentMapID()
 				end
 			end
 		end
-		
+
 		local zoneTexts = {};
 		local name = GetRealZoneText();
 		if name and name:len() > 0 then
@@ -60,7 +60,7 @@ local function GetCurrentMapID()
 		if name and name:len() > 0 then
 			zoneTexts[name] = 1;
 		end
-		
+
 		substitutions = remap.areaIDs;
 		if substitutions then
 			for areaID,mapID in pairs(substitutions) do
@@ -215,17 +215,12 @@ end
 local function UpdateLocation()
 	app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
 end
-app.events.ZONE_CHANGED = UpdateLocation;
-app.events.ZONE_CHANGED_INDOORS = UpdateLocation;
-app.events.ZONE_CHANGED_NEW_AREA = UpdateLocation;
-app.events.PLAYER_INTERACTION_MANAGER_FRAME_HIDE = UpdateLocation;
-app:RegisterEvent("ZONE_CHANGED");
-app:RegisterEvent("ZONE_CHANGED_INDOORS");
-app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-pcall(app.RegisterEvent, app, "PLAYER_INTERACTION_MANAGER_FRAME_HIDE");
 app.AddEventHandler("OnReady", UpdateLocation);
+app.AddEventRegistration("ZONE_CHANGED", UpdateLocation);
+app.AddEventRegistration("ZONE_CHANGED_INDOORS", UpdateLocation);
+app.AddEventRegistration("ZONE_CHANGED_NEW_AREA", UpdateLocation);
+app.AddEventRegistration("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", UpdateLocation);
 app.GetMapName = GetMapName;
-UpdateLocation();
 
 -- Exploration
 local ExplorationDB = setmetatable(app.ExplorationDB or {}, {
@@ -265,7 +260,7 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Exploration[t.explorationID] then return 1; end
-		
+
 		local coords = t.coords;
 		if coords and #coords > 0 then
 			local c = coords[1];
@@ -292,11 +287,11 @@ local function PrintDiscordInformationForExploration(o)
 	local areaID = o.explorationID;
 	if not areaID or ReportedAreas[areaID] then return; end
 	ReportedAreas[areaID] = o;
-	
+
 	local text = o.text;
 	local mapID = o.mapID;
 	if mapID then text = text .. " (" .. GetMapName(mapID) .. ")"; end
-	
+
 	-- Create an information object.
 	local info = {
 		"### new-area:" .. areaID,
@@ -305,7 +300,7 @@ local function PrintDiscordInformationForExploration(o)
 	};
 	tinsert(info, "areaID: " .. (areaID or "??"));
 	tinsert(info, "mapID: " .. (mapID or "??"));
-	
+
 	local coords = o.coords;
 	if coords and #coords > 0 then
 		tinsert(info, "coords:");
@@ -317,7 +312,7 @@ local function PrintDiscordInformationForExploration(o)
 	tinsert(info, "ver: "..app.Version);
 	tinsert(info, "build: "..app.GameBuildVersion);
 	tinsert(info, "```");	-- discord fancy box end
-	
+
 	local popupID = "area-" .. areaID;
 	app:SetupReportDialog(popupID, text, info);
 	print("Found Area:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
@@ -332,7 +327,7 @@ local function CheckExplorationForMapID(mapID)
 	if not pos then return; end
 	local areaIDs = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 	if not areaIDs then return end;
-	
+
 	local newAreas = {};
 	for _,areaID in ipairs(areaIDs) do
 		if not app.CurrentCharacter.Exploration[areaID] then
@@ -429,7 +424,7 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 				tinsert(mapData.areaList, areaID);
 			end
 		end
-		
+
 		-- Simplify coordinates if more than the maximum
 		local count = #coords;
 		if count > MAXIMUM_COORDS_PER_AREA then
@@ -469,12 +464,12 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 		for i,areaID in ipairs(reportedAreas) do
 			tinsert(info, "exploration(" .. areaID .. "),\t-- " .. C_Map_GetAreaInfo(areaID));
 		end
-		
+
 		tinsert(info, "");
 		tinsert(info, "ver: "..app.Version);
 		tinsert(info, "build: "..app.GameBuildVersion);
 		tinsert(info, "```");	-- discord fancy box end
-		
+
 		local popupID, text = "found-area-summary", "Coordinates";
 		app:SetupReportDialog(popupID, text, info);
 		print("Found:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
@@ -503,7 +498,7 @@ local function HarvestExploration(simplify)
 					-- For each of these hits, add it to our raw positional DB.
 					for areaID,coords in pairs(hits) do
 						explorationByID[areaID] = true;
-						
+
 						-- Mark as collected and record all the coordinates.
 						app.SetCollected(nil, "Exploration", areaID, true);
 						local positions = rawExplorationAreaPositionDB[areaID];
@@ -516,7 +511,7 @@ local function HarvestExploration(simplify)
 						end
 					end
 				end
-				
+
 				-- Now take the ones from our previously harvested DBs.
 				local areaIDs = ExplorationDB[mapID];
 				for _,areaID in ipairs(areaIDs) do
@@ -526,7 +521,7 @@ local function HarvestExploration(simplify)
 						any = true;
 					end
 				end
-				
+
 				if any then
 					-- Now regenerate the areaIDs for this map.
 					wipe(areaIDs);
@@ -535,7 +530,7 @@ local function HarvestExploration(simplify)
 						areaIDs[count] = areaID;
 						count = count + 1;
 					end
-				
+
 					-- If any were found, update the content of the explocation headers.
 					for i,object in ipairs(objects) do
 						if object.key == "mapID" and (object.mapID == mapID or (object.maps and contains(object.maps, mapID))) then
@@ -577,7 +572,7 @@ local function HarvestExploration(simplify)
 							end
 							explorationHeader.OnClick = OnClickForExplorationHeader;
 							explorationHeader.SortType = "text";
-							
+
 							-- Make sure the exploration header has all the objects
 							for _,areaID in ipairs(areaIDs) do
 								if not byExplorationID[areaID] then
@@ -614,7 +609,7 @@ local function HarvestExploration(simplify)
 			"### Found Area Summary",
 			"```lua",
 		};
-		
+
 		local areasByMapID = setmetatable({}, AreaExplorationMeta);
 		for i,o in ipairs(reportedAreas) do
 			tinsert(areasByMapID[o.mapID], o);
@@ -627,11 +622,11 @@ local function HarvestExploration(simplify)
 			end
 			tinsert(info, "");
 		end
-		
+
 		tinsert(info, "ver: "..app.Version);
 		tinsert(info, "build: "..app.GameBuildVersion);
 		tinsert(info, "```");	-- discord fancy box end
-		
+
 		local popupID, text = "found-area-summary", "Summary";
 		app:SetupReportDialog(popupID, text, info);
 		print("Found Areas:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
