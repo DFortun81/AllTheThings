@@ -416,6 +416,17 @@ for i,guid in ipairs({
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
+-- Pinkey GUID
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText(app.Modules.Color.Colorize(leftSide:GetText() or name, "ffF58CBA")); end
+end
+for i,guid in ipairs({
+	"Player-4372-01D307D4",	-- Pinkey-Atiesh
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
 -- SCARAB_LORD GUIDs
 local SCARAB_LORD_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_SCARAB_LORD, app.Colors.Raid);
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)

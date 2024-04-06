@@ -1725,7 +1725,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(26048, {	-- Spare Parts Up In Here!
-					["qg"] = 41991,	-- Sergeant Dontrag
+					["providers"] = {
+						{ "n", 41991 },	-- Sergeant Dontrag
+						{ "i", 56577 },	-- Crate of Spare Parts
+					},
 					["sourceQuests"] = {
 						26047,	-- And That's Why They Call Them Peons...
 						26046,	-- Between a Rock and a Hard Place
@@ -1767,6 +1770,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Alliance Spy slain
+							["providers"] = {
+								{ "n", 42034 },	-- Alliance Spy
+								{ "i", 56800 },	-- Jibbly's Gas Bomb
+							},
+						}),
 						i(57500, {	-- Crawling Amulet
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1799,7 +1808,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25845, {	-- Terms of Service
-					["qg"] = 41350,	-- Ton Windbow
+					["providers"] = {
+						{ "n", 41350 },	-- Ton Windbow
+						{ "i", 56060 },	-- Grimtotem Terms of Service
+					},
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
 					["coord"] = { 72.6, 81.0, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1811,6 +1823,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/3 Krom'gar Demolisher destroyed
+							["provider"] = { "n", 35163 },	-- Krom'gar Demolisher
+						}),
+						objective(2, {	-- 0/20 Horde Soldier slain
+							["providers"] = {
+								{ "n", 35158 },	-- Krom'gar Berserker
+								{ "n", 35160 },	-- Krom'gar Logger
+								{ "n", 35174 },	-- Krom'gar Peon
+								{ "n", 35161 },	-- Krom'gar Warrior
+								{ "n", 35159 },	-- Krom'gar Witch Doctor
+							},
+						}),
+					},
 				}),
 				q(25793, {	-- The Deep Reaches
 					["qg"] = 41229,	-- Force Commander Valen
@@ -1890,6 +1916,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Lumbering Oaf slain
+							["provider"] = { "n", 40906 },	-- Lumbering Oaf
+						}),
+					},
 				}),
 				q(26001, {	-- The Missing Blastgineer
 					["qg"] = 34341,	-- Saurboz
@@ -1904,6 +1935,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.8, 45.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Warsong Wing Commander slain
+							["provider"] = { "n", 40942 },	-- Warsong Wing Commander
+						}),
+					},
 				}),
 				q(26063, {	-- The Queen and Her Court (aa?)
 					["qg"] = 11821,	-- Darn Talongrip
@@ -1911,6 +1947,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Queen Silith slain
+							["provider"] = { "n", 41185 },	-- Queen Silith
+						}),
+						objective(2, {	-- 0/10 Webwinder Hollow Spider slain
+							["providers"] = {
+								{ "n", 4005 },	-- Deepmoss Creeper
+								{ "n", 4007 },	-- Deepmoss Venomspitter
+								{ "n", 4006 },	-- Deepmoss Webspinner
+							},
+						}),
 						i(57493, {	-- Darn Legguards
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1934,6 +1980,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Pridewing Wyvern slain
+							["providers"] = {
+								{ "n", 4014 },	-- Pridewing Consort
+								{ "n", 4015 },	-- Pridewing Patriarch
+								{ "n", 4012 },	-- Pridewing Wyvern
+							},
+						}),
+					},
 				}),
 				q(25823, {	-- The Unrelenting Horde
 					["qg"] = 41229,	-- Force Commander Valen
@@ -1941,6 +1996,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Horde at Unearthed Grounds Slain
+							["providers"] = {
+								{ "n", 41408 },	-- Goblin Stripminer
+								{ "n", 41407 },	-- Krom'gar Blood Guard
+							},
+						}),
+					},
 				}),
 				q(25806, {	-- They Put the Assass in... Never Mind
 					["qg"] = 41277,	-- Lieutenant Paulson
@@ -1948,6 +2011,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Krom'gar Assassin slain
+							["providers"] = {
+								{ "n", 41291 },	-- Krom'gar Assassin
+								{ "i", 56014 },	-- Infrared Heat Detection Device
+							},
+						}),
+					},
 				}),
 				q(25671, {	-- Thinning the Horde
 					["qg"] = 40896,	-- Lord Fallowmere
@@ -1957,6 +2028,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/20 Horde Soldier Slain
+							["providers"] = {
+								{ "n", 35204 },	-- Goblin Harvester
+								{ "n", 41408 },	-- Goblin Stripminer
+								{ "n", 35333 },	-- Goblin Technician
+								{ "n", 41291 },	-- Krom'gar Assassin
+								{ "n", 35158 },	-- Krom'gar Berserker
+								{ "n", 41407 },	-- Krom'gar Blood Guard
+								{ "n", 34353 },	-- Krom'gar Incinerator
+								{ "n", 41062 },	-- Krom'gar Infantry
+								{ "n", 35160 },	-- Krom'gar Logger
+								{ "n", 41360 },	-- Krom'gar Marauder
+								{ "n", 40904 },	-- Krom'gar Peon
+								{ "n", 41230 },	-- Krom'gar Rifleman
+								{ "n", 35161 },	-- Krom'gar Warrior
+								{ "n", 40905 },	-- Windshear Overseer
+							},
+						}),
+					},
 				}),
 				q(26082, {	-- To Battlescar!
 					["qg"] = 42050,	-- General Grebo
@@ -1965,6 +2056,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Darnassian Glaive Thrower
+							["provider"] = { "n", 35150 },	-- Darnassian Glaive Thrower
+						}),
+						objective(2, {	-- 0/20 Alliance Soldier in Battlescar Valley slain
+							["providers"] = {
+								{ "n", 35151 },	-- Stonetalon Warder
+								{ "n", 35152 },	-- Battlescar Ancient
+								{ "n", 35153 },	-- Draenei Paladin
+								{ "n", 35154 },	-- Night Elf Mage
+							},
+						}),
 						i(57497, {	-- Grebo's Crossbow
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1986,6 +2088,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Learn what it means to be Horde.
+							["provider"] = { "n", 42124 },	-- Garrosh Hellscream <Warchief>
+						}),
 						i(57512, {	-- Cliffwalker Boots
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2050,6 +2155,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Windshear Overseer slain
+							["provider"] = { "n", 40905 },	-- Windshear Overseer
+						}),
 						i(57422, {	-- Quiet Slippers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2073,6 +2181,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Blazing Heart of Fire
+							["provider"] = { "i", 56224 },	-- Blazing Heart of Fire
+							["cr"] = 34911,	-- Fissure-born Fire Elemental
+						}),
+					},
 				}),
 				q(1084, {	-- Wounded Ancients
 					["qg"] = 4080,	-- Kaela Shadowspear
