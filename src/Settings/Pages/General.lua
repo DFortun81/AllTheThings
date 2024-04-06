@@ -378,7 +378,7 @@ accwideCheckboxExploration =
 child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
 	:AlignBelow(accwideCheckboxDeaths or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
 child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
-	:AlignAfter(accwideCheckboxExploration)
+	:AlignAfter(accwideCheckboxExploration):MarkAsWIP()
 
 local accwideCheckboxFlightPaths =
 child:CreateAccountWideCheckbox("FLIGHT_PATHS", "FlightPaths")
