@@ -604,7 +604,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
 						["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
 						["g"] = {
-							i(207729),	-- Fyr'alath the Dreamrender (QI!)
 							i(206448, {	-- Fyr'alath the Dreamrender
 								ach(19450),	-- Fyr'alath the Dreamrender
 							}),
@@ -939,8 +938,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(FYRAKK, {
 					i(210871),	-- Greater Ember of Fyr'alath
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
-					i(207728, {	-- Fyr'alath the Dreamrender (QI!)
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
+					i(207728, {	-- Fyr'alath the Dreamrender
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						["g"] = {
+							i(207729),	-- Fyr'alath the Dreamrender (QI!)
+						},
 					}),
 				}),
 			}),

@@ -976,7 +976,6 @@ root(ROOTS.Unsorted, {
 				i(182647),	-- Runestone Spike
 				i(178141),	-- Runic Codex
 				i(173897),	-- Runic Fastener
-				i(178876),	-- Sack of Supplies
 				i(170550),	-- Sacred Scroll
 				i(173892),	-- Salvaged Gear
 				i(183832),	-- Salvaged Supplies
