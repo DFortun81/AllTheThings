@@ -39,6 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = 37,
 		-- #else
 		["mapID"] = STRATHOLME,
+		["maps"] = { 318 },	-- Stratholme (OLD)
 		["lvl"] = 48,
 		-- #endif
 		["groups"] = {

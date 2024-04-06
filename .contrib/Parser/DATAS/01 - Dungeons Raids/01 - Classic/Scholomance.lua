@@ -1665,7 +1665,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 		["mapID"] = SCHOLOMANCE,
-		["maps"] = { 477, 478, 479 },
+		["maps"] = {
+			-- #if ANYCLASSIC
+			306, 307, 308, 309,
+			-- #endif
+			477, 478, 479,
+		},
 		-- #if BEFORE 4.0.3
 		["sourceQuests"] = {
 			5505,	-- The Key to Scholomance [Alliance]
