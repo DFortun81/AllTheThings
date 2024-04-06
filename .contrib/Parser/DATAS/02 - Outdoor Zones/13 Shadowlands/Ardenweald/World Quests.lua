@@ -198,35 +198,38 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60597),	-- Trouble at the Gormling Corral
 			q(60475, {	-- We'll Workshop It
-				ach(14672, {	-- A Bit of This, A Bit of That
-					["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies then talking to all 6 NPCs.",
-					["g"] = {
-						crit(49570, {	-- Faerie Pomander
-							["crs"] = { 158345 },	-- Lady of the Falls
-							["coord"] = { 51.1, 33.9, ARDENWEALD },
+				["g"] = {
+					ach(14672, {	-- A Bit of This, A Bit of That
+						["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies then talking to all 6 NPCs.",
+						["g"] = {
+							crit(49570, {	-- Faerie Pomander
+								["crs"] = { 158345 },	-- Lady of the Falls
+								["coord"] = { 51.1, 33.9, ARDENWEALD },
+							}),
+							crit(49571, {	-- Slumberweb
+								["crs"] = { 165704 },	-- Elder Gwenna
+								["coord"] = { 50.4, 33.0, ARDENWEALD },
+							}),
+							crit(49572, {	-- Vorkai War Paint
+								["crs"] = { 158519 },	-- Sorcha
+								["coord"] = { 51.1, 33.7, ARDENWEALD },
+							}),
+							crit(49573, {	-- Gorm Whisperer
+								["crs"] = { 165382 },	-- Gormsmith Cavina
+								["coord"] = { 51.6, 34.0, ARDENWEALD },
+							}),
+							crit(49574, {	-- Tirnenn Resilience
+								["crs"] = { 165705 },	-- Groonoomcrooek
+								["coord"] = { 51.8, 32.0, ARDENWEALD },
+							}),
+							crit(49575, {	-- Finnan's Luck
+								["crs"] = { 165703 },	-- Elder Finnan
+								["coord"] = { 51.7, 34.0, ARDENWEALD },
+							}),
+						},
 						}),
-						crit(49571, {	-- Slumberweb
-							["crs"] = { 165704 },	-- Elder Gwenna
-							["coord"] = { 50.4, 33.0, ARDENWEALD },
-						}),
-						crit(49572, {	-- Vorkai War Paint
-							["crs"] = { 158519 },	-- Sorcha
-							["coord"] = { 51.1, 33.7, ARDENWEALD },
-						}),
-						crit(49573, {	-- Gorm Whisperer
-							["crs"] = { 165382 },	-- Gormsmith Cavina
-							["coord"] = { 51.6, 34.0, ARDENWEALD },
-						}),
-						crit(49574, {	-- Tirnenn Resilience
-							["crs"] = { 165705 },	-- Groonoomcrooek
-							["coord"] = { 51.8, 32.0, ARDENWEALD },
-						}),
-						crit(49575, {	-- Finnan's Luck
-							["crs"] = { 165703 },	-- Elder Finnan
-							["coord"] = { 51.7, 34.0, ARDENWEALD },
-						}),
-					},
-				}),
+					i(178876),    -- Sack of Supplies (QI!)
+				},
 			}),
 			q(60609),	-- Who Devours the Devourers?
 			q(60837),	-- Wrath of Aliothe
