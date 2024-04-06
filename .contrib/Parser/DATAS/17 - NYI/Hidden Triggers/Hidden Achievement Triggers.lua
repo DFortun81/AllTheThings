@@ -59,6 +59,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(20139),	-- [DNT] Self-Found Soul (Level 60)
 		ach(20193),	-- [DNT] Self-Found Soul (Removed Self-Found)
 		-- #endif
+		--1.15.2.53941
+		-- #if ANYCLASSIC
+		ach(40131),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)
+		ach(40132),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)
+		ach(40133),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
+		ach(40135),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
+		ach(40137),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
+		-- #endif
 	}),
 	expansion(EXPANSION.TBC, {
 		--2.5.1.39399
@@ -3135,6 +3143,24 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(20514),	-- <Hidden> 10.2.6 Void Zone - Pepe <DNT>
 			ach(20515),	-- <Hidden> 10.2.6 Void Zone - Toy <DNT>
 			ach(20516),	-- <Hidden> 10.2.6 Void Zone - Quest <DNT>
+			-- 10.2.6.53877
+			ach(40065),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 6 [DNT]
+			ach(40066),	-- <Hidden> 10.2.6 Void Zone - Keg Leg  Renown 2 [DNT]
+			ach(40067),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 5 [DNT]
+			ach(40068),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 8 [DNT]
+			ach(40069),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 10 [DNT]
+			ach(40070),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 11 [DNT]
+			ach(40071),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 13 [DNT]
+			ach(40072),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 16 [DNT]
+			ach(40073),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 18 [DNT]
+			ach(40074),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 20 [DNT]
+			ach(40075),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 22 [DNT]
+			ach(40076),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 27 [DNT]
+			ach(40077),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 30 [DNT]
+			ach(40078),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 31 [DNT]
+			ach(40079),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 32 [DNT]
+			ach(40080),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 36 [DNT]
+			ach(40081),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 40 [DNT]
 		})),
 	}),
 });
