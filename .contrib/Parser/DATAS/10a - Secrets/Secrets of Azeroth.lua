@@ -1188,6 +1188,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78037),	-- Channeling 'Torch of Pyrreth' to Aged Marker [#5] (questID 78029)
 	q(77307),	-- Community Rumors (Achievement 18643) (account-wide completion)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
+	q(78973),	-- Community Rumor Mill (Achievement 18644) (account-wide completion)
 	q(77895),	-- Completed at same time as receiving (itemdID 208888)
 	q(77579),	-- Upon completion of (QuestID 77908) (account-wide completion)
 	q(77916),	-- Upon completion of (QuestID 77928 and getting the QI!)
