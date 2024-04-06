@@ -176,6 +176,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							{ "n", 110564 },	-- Alonsus Faol
 						},
 						["coord"] = { 51.5, 47.6, 702 },
+						["g"] = {
+							i(173523),	-- Tirisfal Camp Scroll (QI!)
+						},
 					}),
 					-- Holy
 					q(41957, {	-- The Vindicator's Plea
@@ -187,6 +190,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
 						["provider"] = { "n", 105602 },	-- Vindicator Boros
 						["coord"] = { 37.7, 36.7, LEGION_DALARAN },
+						["g"] = {
+							i(173379),	-- Purify Stone (QI!)
+						},
 					}),
 					q(41967, {	-- Out of the Darkness
 						["sourceQuests"] = { 41966 },	-- House Call
@@ -223,6 +229,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41628, {	-- Eyes of the Dragon
 						["sourceQuests"] = { 41626 },	-- A Forgotten Enemy
 						["provider"] = { "n", 105917 },	-- Image of Kalec
+						["g"] = {
+							i(173430),	-- Nexus Teleport Scroll (QI!)
+						},
 					}),
 					q(41629, {	-- Harnessing the Holy Fire
 						["sourceQuests"] = { 41627 },	-- Eyes of the Dragon

@@ -183,6 +183,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 						["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
 						["coord"] = { 57.8, 45.8, LEGION_DALARAN },
+						["g"] = {
+							i(173716),	-- Mossy Hearthstone (QI!)
+						},
 					}),
 					q(42439, {	-- Aid for the Ashen
 						["sourceQuests"] = { 42428 },	-- The Shrine of Ashamane

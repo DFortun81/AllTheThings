@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
-					['g'] = {
+					["g"] = {
 						i(175968),	-- Animyllis Bloom (QI!)
 					},
 				}),
@@ -754,17 +754,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57966 },	-- You Go First
 					["provider"] = { "n", 159272 },	-- Artificer Ligiea
 					["coord"] = { 61.8, 50.3, 1714 },	-- Third Chamber of Kalliope
+					["g"] = {
+						i(173354),	-- Spear of Kalliope (QI!)
+					},
 				}),
 				q(60906, {	-- Rightful Resting Place [Non-Kyrian]
 					["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 43.2, 38.5, BASTION },
+					["g"] = {
+						i(180452),	-- Spear of Kalliope (QI!)
+					},
 				}),
 				q(57967, {	-- Rightful Resting Place [Kyrian]
 					["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 43.2, 38.5, BASTION },
-					["customCollect"] = "SL_COV_KYR"
+					["customCollect"] = "SL_COV_KYR",
+					["g"] = {
+						i(180452),	-- Spear of Kalliope (QI!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 14801.05, {	-- Pride or Unit
@@ -813,6 +822,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
+					["g"] = {
+						i(173692),	-- Nemea's Javelin (QI!)
+					},
 				}),
 				q(58041, {	-- Providing for the Pack
 					["sourceQuests"] = {
@@ -875,6 +887,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, BASTION },
+					["g"] = {
+						i(173307),	-- Reinforced Armor (QI!)
+					},
 				}),
 				q(57934, {	-- Combat Drills
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
@@ -885,6 +900,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, BASTION },
+					["g"] = {
+						i(173269),	-- Training Gem (QI!)
+					},
 				}),
 				q(57936, {	-- Superior Programming
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him

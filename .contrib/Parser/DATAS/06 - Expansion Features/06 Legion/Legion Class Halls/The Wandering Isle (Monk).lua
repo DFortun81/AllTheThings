@@ -120,6 +120,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
 							["provider"] = { "n", 108700 },	-- The Monkey King
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
+							["g"] = {
+								i(138477),	-- Pure Water Core (QI!)
+								i(173703),	-- Purity Jug (QI!)
+							},
 						}),
 						q(42766, {	-- The Riddle of the Barrel
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion

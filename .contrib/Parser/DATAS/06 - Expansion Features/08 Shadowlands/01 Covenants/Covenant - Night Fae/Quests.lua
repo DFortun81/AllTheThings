@@ -547,6 +547,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59725 },	-- Archivist on the Edge
 				["provider"] = { "n", 165867 },	-- Archivist Dreyden
 				["coord"] = { 63.6, 22.6, ARDENWEALD },
+				["g"] = {
+					i(175137),	-- Piece of Shredded Scroll (QI!)
+					i(175138),	-- Sealed Scroll of Soul Rot (QI!)
+					i(177280),	-- Tattered Binding (QI!)
+				},
 			}),
 			q(59068, {	-- A Secret Never Spoken
 				["sourceQuests"] = { 59063 },	-- Curses!
@@ -676,11 +681,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61143 },	-- Return to the Den
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 43.7, 69.0, ARDENWEALD },
+				["g"] = {
+					i(182958),	-- Nox Root (QI!)
+				},
 			}),
 			q(61709, {	-- Witch's Satchel
 				["sourceQuests"] = { 61703 },	-- Nox Root
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 46.2, 56.5, ARDENWEALD },
+				["g"] = {
+					i(182963),	-- Witch's Satchel (QI!)
+				},
 			}),
 			q(61710, {	-- The Broken Spear
 				["sourceQuests"] = { 61703 },	-- Nox Root
@@ -795,6 +806,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.6, 24.7, NAZMIR },
+				["g"] = {
+					i(180787),	-- Zel'han's Broken Armor (QI!)
+				},
 			}),
 			q(59741, {	-- Dark Mojo for a Dark Loa
 				["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
@@ -815,6 +829,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.6, 24.7, NAZMIR },
 				["g"] = {
+					i(177817),	-- Voodoo Powder (QI!)
 					i(179623),	-- Faewoven Drape
 					i(179773),	-- Oakheart Cape
 					i(179620),	-- Queensguard Cloak
@@ -825,27 +840,40 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59749 },	-- One Little Whisper
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.6, 24.7, NAZMIR },
+				["g"] = {
+					i(177817),	-- Voodoo Powder (QI!)
+				},
 			}),
 			q(59822, {	-- Tracking a Wild God
 				["sourceQuests"] = { 59805 },	-- Maw Manifested
 				["provider"] = { "n", 171655 },	-- Spirit of Vol'jin
 				["coord"] = { 44.8, 40.9, THE_MAW },
+				["g"] = {
+					i(177817),	-- Voodoo Powder (QI!)
+				},
 			}),
 			q(59824, {	-- Loa Rescue
 				["sourceQuests"] = { 59822 },	-- Tracking a Wild God
 				["provider"] = { "n", 171806 },	-- Spirit of Vol'jin
 				["coord"] = { 41.0, 64.2, THE_MAW },
+				["g"] = {
+					i(177817),	-- Voodoo Powder (QI!)
+				},
 			}),
 			q(59856, {	-- Rezan, Loa of Kings
 				["sourceQuests"] = { 59824 },	-- Loa Rescue
 				["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
 				["coord"] = { 45.8, 85.0, THE_MAW },
+				["g"] = {
+					i(177817),	-- Voodoo Powder (QI!)
+				},
 			}),
 			q(59866, {	-- Parting Ways
 				["sourceQuests"] = { 59856 },	-- Rezan, Loa of Kings
 				["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
 				["coord"] = { 45.8, 85.0, THE_MAW },
 				["g"] = {
+					i(177817),	-- Voodoo Powder (QI!)
 					i(175588),	-- Faewoven Cowl
 					i(179768),	-- Oakheart Crest
 					i(179887),	-- Queensguard Greathelm

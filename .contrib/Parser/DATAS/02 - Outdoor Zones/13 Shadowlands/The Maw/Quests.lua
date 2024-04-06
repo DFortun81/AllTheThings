@@ -76,6 +76,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 24.4, 35.9, 1648 },	-- pre-SL scenario
+					["g"] = {
+						i(178495),	-- Shattered Helm of Domination (QI!)
+					},
 				}),
 				q(59758, {	-- Speaking to the Dead
 					["sourceQuests"] = { 59757 },	-- Field Seance
@@ -139,6 +142,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },	-- pre-SL scenario
+					["g"] = {
+						i(180050),	-- Wither Blade (QI!)
+					},
 				}),
 				q(60644, {	-- Draw Out the Darkness
 					["sourceQuests"] = {

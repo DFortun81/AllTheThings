@@ -141,6 +141,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 42377 },	-- The Brother's Trail
 							["provider"] = { "n", 106337 },	-- Travard
 							["coord"] = { 72.0, 49.3, LEGION_DALARAN },
+							["g"] = {
+								i(173523),	-- Tirisfal Camp Scroll (QI!)
+							},
 						}),
 					}),
 					cl(PALADIN, PROTECTION, {

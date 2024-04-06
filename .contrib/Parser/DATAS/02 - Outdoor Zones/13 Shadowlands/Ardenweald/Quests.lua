@@ -15,6 +15,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60338 },	-- Journey to Ardenweald
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
 					["coord"] = { 68.2, 18.3, ARDENWEALD },
+					["g"] = {
+						i(178747),	-- Night Lily (QI!)
+					},
 				}),
 				q(60341, {	-- First on the Agenda
 					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
@@ -121,6 +124,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 97.1, 32.1, ARDENWEALD },
+					["g"] = {
+						i(176445),	-- Soulweb (QI!)
+					},
 				}),
 				q(57950, {	-- Mizik the Haughty
 					["sourceQuests"] = {
@@ -352,6 +358,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ "n", 161447 },	-- Niya
 					},
 					["coord"] = { 68.4, 57.4, ARDENWEALD },
+					["g"] = {
+						i(174219),	-- Stolen Memento (QI!)
+					},
 				}),
 				q(58480, {	-- Read the Roots
 					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
@@ -368,6 +377,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ "n", 161446 },	-- Ara'lon
 					},
 					["coord"] = { 68.4, 57.4, ARDENWEALD },
+					["g"] = {
+						i(180287),	-- Plundered Anima (QI!)
+					},
 				}),
 				q(58486, {	-- He's Drust in the Way
 					["sourceQuests"] = {
@@ -521,6 +533,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 					["provider"] = { "n", 167047 },	-- Artisan Rees
 					["coord"] = { 37.0, 29.6, ARDENWEALD },
+					["g"] = {
+						i(178144),	-- Raw Silkstrider Silk (QI!)
+						i(178143),	-- Silkstrider Harp (QI!)
+					},
 				}),
 				q(60064, {	-- Save Ol' Gertie
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
@@ -596,6 +612,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171099 },	-- Guardian Kota
 					["coord"] = { 62.8, 32.1, ARDENWEALD },
+					["g"] = {
+						i(173534),	-- Gormherd Branch (QI!)
+						i(180543),	-- Wild Gorm Gris (QI!)
+					},
 				}),
 				q(58023, {	-- One Big Problem
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
@@ -706,6 +726,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 159428 },	-- Groonoomcrooek
 					["coord"] = { 56.4, 29.2, ARDENWEALD },
+					["g"] = {
+						i(173187),	-- River Sediment (QI!)
+					},
 				}),
 				q(57867, {	-- The Sweat of Our Brow
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
@@ -727,6 +750,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 159465 },	-- Elder Gwenna
 					["coord"] = { 59.0, 24.3, ARDENWEALD },
 					["g"] = {
+						i(173355),	-- Pouch of Puffpetal Powder (QI!)
 						i(183849),	-- Soulsifter Root
 						i(183850),	-- Wakener's Frond
 					},
@@ -776,6 +800,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59802 },	-- The Crumbling Village
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, ARDENWEALD },
+					["g"] = {
+						i(173732),	-- Strange Runestone (QI!)
+					},
 				}),
 				q(59801, {	-- Take the Power
 					["sourceQuests"] = { 59802 },	-- The Crumbling Village
@@ -793,6 +820,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, ARDENWEALD },
 					["g"] = {
+						i(173732),	-- Strange Runestone (QI!)
 						i(175677),	-- Dreamthorn Wristguards
 						i(175676),	-- Grove Warden's Vambraces
 						i(175675),	-- Spirit Tender's Cuffs
@@ -921,6 +949,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(57655, {	-- Supplies Needed: More Husks!
 				["provider"] = { "o", 336415 },	-- Discarded Scroll
 				["coord"] = { 47.5, 26.2, ARDENWEALD },
+				["g"] = {
+					i(172218),	-- Treated Gorm Husk (QI!)
+				},
 			}),
 			q(62186, {	-- Swollen Anima Seed
 				["provider"] = { "i", 182730 },	-- Swollen Anima Seed
@@ -971,6 +1002,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62720, {	-- The Fallen Tree [Pre-60]
 					["coord"] = { 72.0, 56.0, ARDENWEALD },
 					["g"] = {
+						i(184015),	-- Stolen Memento (QI!)
 						i(181404),	-- Faemoss Shoes
 						i(181406),	-- Runetender Boots
 						i(181405),	-- Gormhusk Steps

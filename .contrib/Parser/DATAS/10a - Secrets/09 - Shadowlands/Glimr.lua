@@ -22,6 +22,9 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60606 },	-- Glimmerfin Welcome
 				["provider"] = { "n", 169414 },	-- Glimmergut
 				["coord"] = { 17.8, 93.2, GRIZZLY_HILLS },
+				["g"] = {
+					i(180025),	-- Pile of Blubberfat (QI!)
+				},
 			}),
 			q(60615, {	-- Seer of the Waves
 				["sourceQuests"] = { 60614 },	-- A Big Horkin' Task

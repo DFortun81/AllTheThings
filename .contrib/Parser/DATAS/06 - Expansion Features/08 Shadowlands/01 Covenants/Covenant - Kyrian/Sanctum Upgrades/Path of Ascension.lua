@@ -645,6 +645,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
 										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["coord"] = { 51.4, 33.7, ARDENWEALD },
+										["g"] = {
+											i(182974),	-- Riverblossom's Flute (QI!)
+										},
 									}),
 									q(61357, {	-- Hatred Abated
 										-- Rewards spell 337133 "Trial: Echthra"

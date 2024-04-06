@@ -104,6 +104,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								q(61182, {	-- Pollen Your Weight
 									["provider"] = { "n", 171671 },    -- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
+									["g"] = {
+										i(180851),	-- Twirlpetal Pollen (QI!)
+									},
 								}),
 								q(61166, {	-- Reduce, Reuse, Recycle
 									["provider"] = { "n", 171671 },    -- Kofi
@@ -130,6 +133,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								q(61156, {	-- Where There's a Quill...
 									["provider"] = { "n", 171676 },    -- Galakamos
 									["coord"] = { 50.4, 21.2, BASTION },
+									["g"] = {
+										i(180796),	-- Shimmerflight Quill (QI!)
+									},
 								}),
 							})),
 							n(WORLD_QUESTS, {

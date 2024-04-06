@@ -153,6 +153,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
 				["provider"] = { "n", 167810 },	-- Emeni
 				["coord"] = { 28.1, 37.5, MALDRAXXUS },
+				["g"] = {
+					i(180899),	-- Riding Hook (QI!)
+				},
 			}),
 			q(59709, {	-- Afterlife Goes On
 				["sourceQuests"] = { 59700 },	-- The Last Labor
@@ -225,6 +228,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["provider"] = { "n", 168744 },	-- Artemede
 				["coord"] = { 35.2, 26.9, MALDRAXXUS },
+				["g"] = {
+					i(180845),	-- Stitchflesh Design (QI!)
+				},
 			}),
 			q(62414, {	-- Burying Suspicion
 				["sourceQuests"] = { 61739 },	-- The Wayward Baron
@@ -257,6 +263,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61745 },	-- Mistress of Tomes
 				["provider"] = { "n", 172924 },	-- Baroness Ninadar
 				["coord"] = { 66.3, 26.3, MALDRAXXUS },
+				["g"] = {
+					i(182609),	-- Overdue Scroll (QI!)
+				},
 			}),
 			q(62317, {	-- Casting Doubt
 				["sourceQuests"] = { 61748 },	-- The Hall of Tomes
@@ -322,7 +331,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59910 },	-- Fight and Flight
 				["provider"] = { "o", 357246 },	-- Tattered Scroll
 				["coord"] = { 33.5, 24.1, MALDRAXXUS },
-				['g'] = {
+				["g"] = {
 					i(181285),	-- Abhorrent Design (QI!)
 				},
 			}),
@@ -446,6 +455,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61749 },	-- Necessary Ingredients
 				["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
 				["coord"] = { 69.9, 32.7, MALDRAXXUS },
+				["g"] = {
+					i(182676),	-- Veilwing's Heart (QI!)
+				},
 			}),
 			q(62388, {	-- House of Rituals
 				["sourceQuests"] = { 58624 },	-- Pauldrons of Imperium
@@ -472,6 +484,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					58599,	-- Drive A Dredge Between Them
 				},
 				["provider"] = { "n", 161474 },	-- Baroness Draka
+				["g"] = {
+					i(182386),	-- Pauldrons of Imperium (QI!)
+				},
 			}),
 			q(60043, {	-- Justice from Above
 				["sourceQuests"] = { 59910 },	-- Fight and Flight
@@ -673,6 +688,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61227 },	-- The Other Foot
 				["provider"] = { "n", 159814 },	-- Ansid the Mechanic
 				["coord"] = { 48.6, 18.5, MALDRAXXUS },
+				["g"] = {
+					i(173312),	-- Toc's Key (QI!)
+				},
 			}),
 			q(62320, {	-- Regalia de Rigeuer
 				["sourceQuests"] = { 61749 },	-- Necessary Ingredients

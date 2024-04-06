@@ -83,9 +83,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 			}),
-			q(61141),	-- Deathfang's Favorite Toy
+			q(61141, {	-- Deathfang's Favorite Toy
+				["g"] = {
+					i(180810),	-- Throwin' Skull (QI!)
+				},
+			}),
 			q(61708, {	-- Drawing Out The Poison
-				i(174043),	-- Phylactery of Arin'gore (QI!)
+				["g"] = {
+					i(174043),	-- Phylactery of Arin'gore (QI!)
+				},
 			}),
 			q(61608, {	-- Enchanting: Unbreakable Crystal
 				["requireSkill"] = ENCHANTING,
@@ -112,6 +118,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61870),	-- Failed Experiments
 			q(61610, {	-- Fishing: Skeletal Mudskipper
 				["requireSkill"] = FISHING,
+				["g"] = {
+					i(181955),	-- Skeletal Mudskipper (QI!)
+				},
 			}),
 			q(61667),	-- Forged in Secret
 			q(61189, {	-- Further Gelatinous Research
@@ -200,6 +209,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61614, {	-- Skinning: Rugged Carapace
 				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(181969),	-- Rugged Carapace (QI!)
+				},
 			}),
 			q(60211),	-- Spore Losers
 			q(61060),	-- Spore Losers

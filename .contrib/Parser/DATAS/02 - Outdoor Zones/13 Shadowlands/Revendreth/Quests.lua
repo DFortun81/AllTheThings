@@ -82,6 +82,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
 					["coord"] = { 61.3, 63.7, REVENDRETH },
+					["g"] = {
+						i(174482),	-- Plea of Darkhaven (QI!)
+					},
 				}),
 				q(57178, {	-- The Master Awaits
 					["sourceQuests"] = { 58654 },	-- A Plea to the Harvesters
@@ -338,6 +341,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
 					["provider"] = { "n", 157639 },	-- Theotar
 					["coord"] = { 38.0, 60.7, REVENDRETH },
+					["g"] = {
+						i(171468),	-- Regal Cloth Scrap (QI!)
+						i(171469),	-- Scorched Plank (QI!)
+					},
 				}),
 				q(57427, {	-- Unbearable Light
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
@@ -413,6 +420,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, THE_MAW },
+					["g"] = {
+						i(172446),	-- Renathal's Cage Key (QI!)
+					},
 				}),
 				q(57693, {	-- Torghast, Tower of the Damned
 					["sourceQuests"] = { 57691 },	-- A Royal Key
@@ -461,6 +471,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59710 },	-- A Curious Invitation
 					["provider"] = { "n", 169238 },	-- Courier Araak
 					["coord"] = { 59.5, 66.7, REVENDRETH },
+					["g"] = {
+						i(180177),	-- Ruminations on True Names (QI!)
+					},
 				}),
 				q(59846, {	-- Finders-Keepers, Sinners-Weepers
 					["sourceQuests"] = { 59712 },	-- The Lay of the Land
@@ -510,6 +523,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 166081 },	-- Taskmaster Matyas
 					["coord"] = { 60.1, 69.4, REVENDRETH },
 					["g"] = {
+						i(177881),	-- Nadjia's Sinstone (QI!)
 						i(175498),	-- Nightcloaked Pants
 						i(175418),	-- Nightcloaked Vest
 						i(175496),	-- Pantaloons of Pained Absolution
@@ -525,6 +539,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 60.1, 69.2, REVENDRETH },
 					["g"] = {
+						i(179359),	-- Sinstone Fragment (QI!)
 						i(178077),	-- Briarbane Signet
 					},
 				}),
@@ -563,6 +578,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 167489 },	-- Lajos
 					["coord"] = { 62.2, 61.3, REVENDRETH },
+					["g"] = {
+						i(178565),	-- Suspicious Message (QI!)
+					},
 				}),
 				q(60178, {	-- And Then There Were None
 					["sourceQuests"] = { 60177 },	-- Reason for the Treason
@@ -650,6 +668,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57919 },	-- An Abuse of Power
 					["provider"] = { "n", 160116 },	-- The Accuser
 					["coord"] = { 71.8, 40.3, REVENDRETH },
+					["g"] = {
+						i(173696),	-- Venthyr Ritual Dagger (QI!)
+						i(173695),	-- Venthyr Ritual Robes (QI!)
+						i(173697),	-- Venthyr Ritual Tome (QI!)
+					},
 				}),
 				q(57923, {	-- Ritual of Absolution
 					["sourceQuests"] = {
@@ -679,6 +702,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60127 },	-- Missing Stone Fiend
 					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 					["coord"] = { 70.1, 56.1, REVENDRETH },
+					["g"] = {
+						i(173737),	-- Temel's Body (QI!)
+						i(173739),	-- Temel's Head (QI!)
+						i(173738),	-- Temel's Wings (QI!)
+					},
 				}),
 				q(60128, {	-- Ready to Serve
 					["sourceQuests"] = { 57927 },	-- Rebuilding Temel
@@ -689,6 +717,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57925 },	-- Archivist Fane
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 73.0, 52.0, REVENDRETH },
+					["g"] = {
+						i(173733),	-- Sinstone Records (QI!)
+					},
 				}),
 				q(57929, {	-- Hunting an Inquisitor
 					["sourceQuests"] = {
@@ -786,11 +817,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(60467, {	-- A Rousing Aroma
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, REVENDRETH },
+					["g"] = {
+						i(178898),	-- Pungent Swarmer Toxin (QI!)
+					},
 				}),
 				q(60468, {	-- Rubble Rummaging
 					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, REVENDRETH },
+					["g"] = {
+						i(178904),	-- Shackle Key (QI!)
+					},
 				}),
 				q(60469, {	-- Safe in the Shadows
 					["sourceQuests"] = { 60467 },	-- A Rousing Aroma

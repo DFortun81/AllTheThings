@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "After you initially defeat Edgar the Collector at the end of the quest, go behind the building and speak to a dredger named Penkle to get a |cFFFFFFFFCage Key|r.\n\nThe key is used to open the cage next to Penkle, which gives the pet.",
 				["crs"] = { 170189 },	-- Penkle
 				["g"] = {
+					i(180249),	-- Stone Fiend Tracker (QI!)
 					i(180270, {	-- Cage Key
 						i(183859),	-- Dal (PET!)
 					}),
@@ -181,6 +182,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 35.8, 32.6, REVENDRETH },
 					["g"] = {
 						i(180588),	-- Primordial Bogling (PET!)
+						i(177880),	-- Primordial Muck (QI!)
 						i(180707),	-- Sticky Muck
 					},
 				}),
@@ -213,6 +215,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 66.0, 33.2, REVENDRETH },
 					["cost"] = { { "i", 180376, 1 } },	-- Amalgamation of Sin
 					["g"] = {
+						i(180279),	-- Sinstone Fragment (QI!)
+						i(180281),	-- Sinstone Fragment (QI!)
+						i(180282),	-- Sinstone Fragment (QI!)
+						i(180283),	-- Sinstone Fragment (QI!)
+						i(180284),	-- Sinstone Fragment (QI!)
 						i(183730),	-- Sinstone-Studded Greathelm
 					},
 				}),
@@ -285,7 +292,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(57328, {	-- Trashin' the Camp
-				i(171310),	-- Ring of Stonebound Control (QI!)
+				["g"] = {
+					i(171310),	-- Ring of Stonebound Control (QI!)
+					i(171249),	-- Soul Cage Key (QI!)
+				},
 			}),
 		})),
 	}),

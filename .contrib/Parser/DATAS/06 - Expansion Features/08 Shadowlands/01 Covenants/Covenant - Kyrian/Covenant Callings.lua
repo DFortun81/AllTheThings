@@ -41,6 +41,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				--["provider"] = { "n",  },	--
 				--["coord"] = { , BASTION },
 				["g"] = {
+					i(179318),	-- Sorrowvine (QI!)
 					i(181372),	-- Tribute of the Ascended
 				},
 			}),
@@ -48,6 +49,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				--["provider"] = { "n",  },	--
 				--["coord"] = { , BASTION },
 				["g"] = {
+					i(179320),	-- Wealdwood (QI!)
 					i(181372),	-- Tribute of the Ascended
 				},
 			}),

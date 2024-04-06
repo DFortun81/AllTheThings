@@ -221,6 +221,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 42007,	-- A Forgotten Enemy
 							["provider"] = { "n", 105917 },	-- Image of Kalec
 							["coord"] = { 56.6, 69.1, DRAGONBLIGHT },
+							["g"] = {
+								i(173430),	-- Nexus Teleport Scroll (QI!)
+							},
 						}),
 						q(42009, {	-- Harnessing the Arcane
 							["sourceQuest"] = 42008,	-- Eyes of the Dragon

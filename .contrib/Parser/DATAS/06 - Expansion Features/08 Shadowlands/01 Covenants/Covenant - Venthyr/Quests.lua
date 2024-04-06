@@ -119,6 +119,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
+				["g"] = {
+					i(180450),	-- Assorted Bolts (QI!)
+					i(180448),	-- Eroded Heat Sink (QI!)
+					i(180449),	-- Failed Experiment (QI!)
+					i(174330),	-- Perfected Circlet Mold (QI!)
+				},
 			}),
 			q(59325, {	-- A Stalwart Ally
 				["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
@@ -156,6 +162,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 60904 },	-- Medallion of Desire
 				["provider"] = { "n", 161979 },	-- Theotar
 				["coord"] = { 50.2, 18.6, SINFALL_REACHES },
+				["g"] = {
+					i(173158),	-- Theotar's Note (QI!)
+				},
 			}),
 			q(58424, {	-- An Eye for an Amulet
 				["sourceQuests"] = {
@@ -420,6 +429,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 57886 },	-- A Meal and a Deal
 				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
+				["g"] = {
+					i(173285),	-- Treasonous Missive (QI!)
+				},
 			}),
 			q(59343, {	-- Kindred Spirits
 				["sourceQuests"] = { 59719 },	-- The Court
@@ -478,6 +490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["g"] = {
 					i(174211),	-- Maldraxxian Weapon (QI!)
+					i(174212),	-- Suspicious Weapon (QI!)
 				},
 			}),
 			q(60935, {	-- Medallion of Avarice
@@ -555,6 +568,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
+				["g"] = {
+					i(174061),	-- Phaestus, Genesis of Aeons (QI!)
+				},
 			}),
 			q(57884, {	-- Reclaiming Thornhill Manor
 				["sourceQuests"] = {
@@ -578,6 +594,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
 				["provider"] = { "n", 159513 },	-- Bogdan
 				["coord"] = { 60.4, 40.1, REVENDRETH },
+				["g"] = {
+					i(174839),	-- Offer of Employment (QI!)
+				},
 			}),
 			q(61981, {	-- Replenish the Reservoir
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -741,6 +760,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
 				["provider"] = { "n", 159513 },	-- Bogdan
 				["coord"] = { 60.4, 40.1, REVENDRETH },
+				["g"] = {
+					i(173180),	-- Ornate Key (QI!)
+				},
 			}),
 			q(58383, {	-- The Many Sins of Kael'thas Sunstrider
 				["sourceQuests"] = { 58382 },	-- Someone Worth Saving
@@ -773,11 +795,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["description"] = "Requires Renown 5.",
 				["provider"] = { "n", 161977 },	-- General Draven
 				["coord"] = { 46.3, 15.7, SINFALL_REACHES },
+				["g"] = {
+					i(181516),	-- Stone-Laced Infused Ruby (QI!)
+				},
 			}),
 			q(58586, {	-- The Right Stuff
 				["sourceQuests"] = { 58555 },	-- A Tense Reunion
 				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.6, BASTION },
+				["g"] = {
+					i(173880),	-- Purified Metal (QI!)
+					i(174465),	-- Tainted Centurion Component (QI!)
+				},
 			}),
 			q(62904, {	-- The Souls Plight
 				["sourceQuests"] = { 62903 },	-- Into the Reservoir
@@ -813,6 +842,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 161427 },	-- Kael'thas Sunstrider
 				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
+				["g"] = {
+					i(174278),	-- Orders from the Tithelord (QI!)
+				},
 			}),
 			q(60145, {	-- Third Talon Vartox
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest

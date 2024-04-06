@@ -265,6 +265,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156801 },	-- Private Cole
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(174916),	-- Withering Hemlock (QI!)
+					},
 				}),
 				q(58933, {	-- The Deadliest of Poisons [A]
 					["sourceQuests"] = { 58917 },	-- A Rogue's End [A]
@@ -277,6 +280,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 167216 },	-- Grunt Throg
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(174916),	-- Withering Hemlock (QI!)
+					},
 				}),
 				q(59968, {	-- The Deadliest of Poisons [H]
 					["sourceQuests"] = { 59967 },	-- A Rogue's End [H]
@@ -290,6 +296,10 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies
 					["provider"] = { "n", 163329 },	-- Ghostwolf
 					["coord"] = { 52.3, 55.6, EXILES_REACH },
+					["g"] = {
+						i(174947),	-- Old Grimoire (QI!)
+						i(174968),	-- Veil Blossom (QI!)
+					},
 				}),
 			})),
 			cl(WARLOCK, sharedData({ ["classes"] = { WARLOCK } }, {
@@ -298,12 +308,18 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156801 },	-- Private Cole
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(174947),	-- Old Grimoire (QI!)
+					},
 				}),
 				q(59970, {	-- A Warlock's Bargain [H]
 					["sourceQuests"] = { 59950 },	-- Stocking Up on Supplies
 					["provider"] = { "n", 167216 },	-- Grunt Throg
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(174947),	-- Old Grimoire (QI!)
+					},
 				}),
 			})),
 			cl(WARRIOR, sharedData({ ["classes"] = { WARRIOR } }, {
@@ -546,12 +562,18 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 149899 },	-- Lindie Springstock
 					["coord"] = { 56.1, 59.1, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(170557),	-- Re-Sizer v9.0.1 (QI!)
+					},
 				}),
 				q(59941, {	-- Re-sizing the Situation [H]
 					["sourceQuests"] = { 59940 },	-- The Choppy Booster Mk 5
 					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
 					["coord"] = { 56.1, 59.1, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(178051),	-- Re-Sizer v9.0.1 (QI!)
+					},
 				}),
 				q(55879, {	-- Ride of the Scientifically Enhanced Boar
 					["sourceQuests"] = { 56034 },	-- Re-sizing the Situation [A]
@@ -631,6 +653,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 56.9, 46.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						i(168445),	-- Wand of Delugion (QI!)
 						i(175200),	-- Expeditionary Cloth Cord
 						i(175202),	-- Expeditionary Leather Belt
 						i(175201),	-- Expeditionary Mail Waistguard
@@ -643,6 +666,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 56.9, 46.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(168445),	-- Wand of Delugion (QI!)
 						i(175238),	-- Expeditionary Cloth Cord
 						i(175233),	-- Expeditionary Leather Belt
 						i(175232),	-- Expeditionary Mail Waistguard
@@ -790,12 +814,22 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156961 },	-- Captain Garrick
 					["coord"] = { 40.1, 32.3, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(168599),	-- Ward Stone (QI!)
+						i(168600),	-- Ward Stone (QI!)
+						i(168601),	-- Ward Stone (QI!)
+					},
 				}),
 				q(59981, {	-- Controlling Their Stones [H]
 					["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
 					["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe
 					["coord"] = { 40.2, 32.4, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(168599),	-- Ward Stone (QI!)
+						i(168600),	-- Ward Stone (QI!)
+						i(168601),	-- Ward Stone (QI!)
+					},
 				}),
 				q(55988, {	-- Like Ogres to the Slaughter [A]
 					["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]

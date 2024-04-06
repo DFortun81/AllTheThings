@@ -628,6 +628,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["g"] = {
 											i(178678),	-- Call Atticus (QI!)
+											i(183166),	-- Nidore Ocularis (QI!)
+											i(183130),	-- Otherworldly Egg (QI!)
+											i(178681),	-- Slim Shinbone (QI!)
 										},
 									}),
 									q(60049, {	-- At Your Service

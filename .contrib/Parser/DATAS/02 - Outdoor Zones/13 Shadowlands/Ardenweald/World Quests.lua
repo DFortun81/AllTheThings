@@ -81,6 +81,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61598, {	-- Fishing: Speckled Flametail
 				["requireSkill"] = FISHING,
+				["g"] = {
+					i(181387),	-- Speckled Flametail (QI!)
+				},
 			}),
 			q(60855),	-- Gormageddon
 			q(61543, {	-- Herbalism: Lambent Vigil's Torch
@@ -153,11 +156,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60574),	-- Shaking 'Shrooms
 			q(61603, {	-- Skinning: Thick Gormhide
 				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(181452),	-- Thick Gormhide (QI!)
+				},
 			}),
 			q(60585),	-- Spriggan Riot
-			q(60476),	-- Spriggan Size Me!
+			q(60476, {	-- Spriggan Size Me!
+				["g"] = {
+					i(178903),	-- Spriggan-Sized Weaponry (QI!)
+				},
+			}),
 			q(60770, {	-- Squish and Burn
-				i(180274),	-- Torch
+				["g"] = {
+					i(180274),	-- Torch (QI!)
+				},
 			}),
 			q(58993),	-- Swarm Defense
 			q(60786),	-- Swarm Defense
@@ -171,7 +183,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182004),	-- Bolt of Ardensilk Cloth (QI!)
 					i(181453),	-- Cloak of Camouflage (QI!)
 					i(182006),	-- Spool of Ardensilk (QI!)
-				}
+				},
 			}),
 			q(60533),	-- Terrors in Tirna Scithe
 			q(60564),	-- Three Gorm Enter, No One Leaves

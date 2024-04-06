@@ -21,7 +21,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(61220),	-- AHHH! Real Monsters!
-			q(60929),	-- Air Supremacy
+			q(60929, {	-- Air Supremacy
+				["g"] = {
+					i(180465),	-- Xandria's Reach (QI!)
+				},
+			}),
 			q(61434, {	-- Alchemy: Flask of Measured Discipline
 				["requireSkill"] = ALCHEMY,
 				["g"] = {
@@ -123,8 +127,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59804),	-- Gateways of Horror
 			q(61443, {	-- Herbalism: Windswept Rising Glory
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(181749),	-- Windswept Rising Glory (QI!)
+				},
 			}),
-			q(59771),	-- History of Corruption
+			q(59771, {	-- History of Corruption
+				["g"] = {
+					i(177836),	-- Wingpierce Javelin (QI!)
+				},
+			}),
 			q(61446, {	-- Inscription: Invocation of Duty
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
@@ -184,6 +195,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61468, {	-- Skinning: Plush Copperfur Pelts
 				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(181968),	-- Plush Copperfur Pelt (QI!)
+				},
 			}),
 			q(62258, {	-- Soaring Over Bastion
 				["g"] = {
@@ -221,7 +235,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(177186),	-- Forgotten Memorandum (QI!)
 				},
 			}),
-			q(62241),	-- Training Regimen
+			q(62241, {	-- Training Regimen
+				["g"] = {
+					i(183121),	-- Training Gem (QI!)
+				},
+			}),
 			q(59680),	-- Vesiphone's Vicious Vesper
 			q(59585),	-- We'll Make an Aspirant Out of You
 			q(60958),	-- We Send Only You

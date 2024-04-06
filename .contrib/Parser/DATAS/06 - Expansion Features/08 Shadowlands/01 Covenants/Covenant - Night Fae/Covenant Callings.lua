@@ -50,6 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 					["coord"] = { 16.5, 52.4, ARDENWEALD },
 					["g"] = {
+						i(179318),	-- Sorrowvine (QI!)
 						i(181475),	-- Bounty of the Grove Wardens
 					},
 				}),
@@ -57,6 +58,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 					["coord"] = { 16.5, 52.4, ARDENWEALD },
 					["g"] = {
+						i(179320),	-- Wealdwood (QI!)
 						i(181475),	-- Bounty of the Grove Wardens
 					},
 				}),

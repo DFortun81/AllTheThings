@@ -141,6 +141,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(61849, {	-- Take the Bite Out of 'Em
 									["provider"] = { "n", 173630 },	-- Partially-eaten Iger
 									["coord"] = { 71.2, 74.4, REVENDRETH },
+									["g"] = {
+										i(182692),	-- Venthyr Fang (QI!)
+									},
 								}),
 							})),
 							n(WORLD_QUESTS, {

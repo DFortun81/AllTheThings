@@ -171,6 +171,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							n(QUESTS, sharedData({ ["coord"] = { 59.7, 52.8, ARDENWEALD }, ["isDaily"] = true }, {
 								q(62160, {	-- A Bundle of Lilies
 									["provider"] = { "n", 173277 },	-- Teendynneetll
+									["g"] = {
+										i(182659),	-- Night Lilly (QI!)
+									},
 								}),
 								q(62224, {	-- A Thread of Hope
 									["provider"] = { "n", 173277 },	-- Teendynneetll
@@ -183,6 +186,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								q(61875, {	-- Doing the Dew
 									["provider"] = { "n", 173277 },	-- Teendynneetll
+									["g"] = {
+										i(182333),	-- Thistledrop Dew (QI!)
+									},
 								}),
 								q(61950, {	-- Hunting the Wilds
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
@@ -192,6 +198,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								q(61968, {	-- Just Wing It
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["g"] = {
+										i(182450),	-- Perfect Ardenmoth Wing Scale (QI!)
+									},
 								}),
 								q(62081, {	-- Return Those Animacones!
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
@@ -201,6 +210,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								q(62155, {	-- Runestone Roundup
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["g"] = {
+										i(182647),	-- Runestone Spike (QI!)
+									},
 								}),
 								q(62057, {	-- Those Who Hunger
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing

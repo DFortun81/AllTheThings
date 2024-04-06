@@ -112,6 +112,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(58211, {	-- Pumped Up
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
+									["g"] = {
+										i(173892),	-- Salvaged Gear (QI!)
+										i(173881),	-- Sludge Pump (QI!)
+									},
 								}),
 								q(58260, {	-- Queens and Future Kings
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
@@ -147,6 +151,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 								q(61699, {	-- Not Much to Goo On
 									["coord"] = { 66, 66, MALDRAXXUS },
+									["g"] = {
+										i(177844),	-- Plague Sample (QI!)
+									},
 								}),
 								q(61841, {	-- Not Much to Goo On
 									["coord"] = { 66, 66, MALDRAXXUS },

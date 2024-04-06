@@ -46,6 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					--["provider"] = { "n",  },	--
 					--["coord"] = { , MALDRAXXUS },
 					["g"] = {
+						i(179318),	-- Sorrowvine (QI!)
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
@@ -53,6 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					--["provider"] = { "n",  },	--
 					--["coord"] = { , MALDRAXXUS },
 					["g"] = {
+						i(179320),	-- Wealdwood (QI!)
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),

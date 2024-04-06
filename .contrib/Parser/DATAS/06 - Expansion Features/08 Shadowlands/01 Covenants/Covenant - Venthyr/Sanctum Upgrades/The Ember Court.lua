@@ -972,6 +972,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(181535, {	-- Stock: Comfy Chairs (EC!)
 											["questID"] = 61500,
 										}),
+										i(182362),	-- Reclaimed Lumber (QI!)
+										i(182354),	-- Soft Vulpin Fur (QI!)
 									},
 								}),
 								q(63694, {	-- Choofa's Best Friend
@@ -1115,6 +1117,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(176139, {	-- Contract: Stoneborn Reserves (EC!)
 											["questID"] = 59515,
 										}),
+										i(181500),	-- Stoneborn Glaive (QI!)
 									},
 								}),
 								q(61398, {	-- Ember Court: Traditional
@@ -1136,6 +1139,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(176134, {	-- Contract: Tubbins's Tea Party (EC!)
 											["questID"] = 59506,
 										}),
+										i(181370),	-- Pristine Water (QI!)
+										i(183943),	-- Tubbins's Bucket (QI!)
 									},
 								}),
 								q(61401, {	-- Ember Court: Venthyr Volunteers
@@ -1146,6 +1151,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(176138, {	-- Contract: Venthyr Volunteers (EC!)
 											["questID"] = 59518,
 										}),
+										i(181716),	-- Recruiting Posters (QI!)
 									},
 								}),
 								q(61892, {	-- Ember Court Ambassador 1 - Revendreth
@@ -1897,6 +1903,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 171933 },	-- Alexandros Morgraine
 									["coord"] = { 50.3, 67.4, MALDRAXXUS },
 									["g"] = {
+										i(181160),	-- Ossein Battleaxe (QI!)
+										i(181161),	-- Ossein Staff (QI!)
 										i(176115),	-- RSVP: Alexandros Mograine
 									},
 								}),

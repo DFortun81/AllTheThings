@@ -84,6 +84,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 166184,	-- Lieutenant Vernon
 				["sourceQuest"] = 60766,	-- Damned Intruders (A)
 				["lvl"] = { 50 },
+				["g"] = {
+					i(178170),	-- Vernon's Field Report (QI!)
+				},
 			}),
 			q(60761, {	-- Return of the Scourge (H)
 				["coord"] = { 49.4, 59.3, NORTHERN_BARRENS },
@@ -276,6 +279,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60828,	-- A New Foothold
 				["lvl"] = { 50 },
+				["g"] = {
+					i(183698),	-- Torturer's Key (QI!)
+				},
 			}),
 			q(60861, {	-- Secrets in Shadows
 				["coord"] = { 44.9, 44.7, ICECROWN },
@@ -343,6 +349,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
+				["g"] = {
+					i(183832),	-- Salvaged Supplies (QI!)
+				},
 			}),
 			q(59851, {	-- Frozen Solid
 				["coord"] = { 44.9, 44.7, ICECROWN },
@@ -365,6 +374,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 170467,	-- Crusader Renn
 				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
+				["g"] = {
+					i(182313),	-- Satchel Charges (QI!)
+				},
 			}),
 			q(62484, {	-- Werk In Progress
 				["coord"] = { 35.3, 66.3, ICECROWN },

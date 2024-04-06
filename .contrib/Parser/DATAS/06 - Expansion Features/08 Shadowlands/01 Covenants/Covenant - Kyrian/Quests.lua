@@ -140,6 +140,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
 				["provider"] = { "n", 167810 },	-- Emeni
 				["coord"] = { 28.5, 37.5, MALDRAXXUS },
+				["g"] = {
+					i(180899),	-- Riding Hook (QI!)
+				},
 			}),
 			q(57114, {	-- Aerial Reconnaissance
 				["sourceQuests"] = { 57113 },	-- Lysonia's Trail
@@ -207,6 +210,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 				["provider"] = { "n", 168744 },	-- Artemede
 				["coord"] = { 35.1, 26.8, MALDRAXXUS },
+				["g"] = {
+					i(180845),	-- Stitchflesh Design (QI!)
+				},
 			}),
 			q(58788, {	-- Censers of Guidance
 				["sourceQuests"] = { 58787 },	-- Trial of Ascension
@@ -362,6 +368,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58791 },	-- A Day in the Life
 				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
+				["g"] = {
+					i(174935),	-- Rabbit Meat (QI!)
+				},
 			}),
 			q(58797, {	-- Forged by Trial
 				["sourceQuests"] = { 58796 },	-- The Forsworn Onslaught
@@ -387,6 +396,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					58832,	-- Trinkle Trinkle Little Twerp
 				},
 				["provider"] = { "n", 162679 },	-- Willowblossom
+				["g"] = {
+					i(174845),	-- Wreath of Night's Veil Flowers (QI!)
+				},
 			}),
 			q(58938, {	-- Gorm Ruin Everything
 				["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
@@ -418,6 +430,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 				["_drop"] = { "g" },	-- fix Grubby showing up as a reward when it is not a reward for this quest
+				["g"] = {
+					i(180778),	-- Vessel of Ardenweald (QI!)
+				},
 			}),
 			q(57124, {	-- Her Will, Inflicted
 				["sourceQuests"] = {
@@ -437,6 +452,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58857 },	-- Seeds Away!
 				["provider"] = { "n", 163328 },	-- Pelagos
 				["coord"] = { 45.2, 65.4, ARDENWEALD },
+				["g"] = {
+					i(175153),	-- Vessel of Ardenweald (QI!)
+				},
 			}),
 			q(62792, {	-- Into the Reservoir
 				["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
@@ -630,6 +648,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 				["g"] = {
+					i(174061),	-- Phaestus, Genesis of Aeons (QI!)
 					i(177057),	-- Selfless Bearer's Wrists
 					i(174296),	-- Selfless Collector's Wristguards
 					i(179947),	-- Selfless Forgelite's Wristwraps
@@ -665,6 +684,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58175 },	-- The Eternal Forge
 				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
+				["g"] = {
+					i(173880),	-- Purified Metal (QI!)
+					i(173879),	-- Tainted Centurion Component (QI!)
+				},
 			}),
 			q(61982, {	-- Replenish the Reservoir
 				["sourceQuests"] = { 57904 },	-- Our Eternal Charge
@@ -718,6 +741,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
 				["provider"] = { "n", 156327 },	-- Voitha
 				["coord"] = { 66.0, 47.0, BASTION },
+				["g"] = {
+					i(170550),	-- Sacred Scroll (QI!)
+				},
 			}),
 			q(58857, {	-- Seeds Away!
 				["sourceQuests"] = { 58939 },	-- The Blue Seed
@@ -732,11 +758,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 				["provider"] = { "n", 161540 },	-- Kleia
 				["coord"] = { 56.3, 41.4, REVENDRETH },
+				["g"] = {
+					i(174359),	-- Shard of the Countess (QI!)
+					i(174374),	-- Shard of the Countess (QI!)
+					i(174375),	-- Shard of the Countess (QI!)
+				},
 			}),
 			q(58564, {	-- Sins of the Past
 				["sourceQuests"] = { 58563 },	-- Through Glass
 				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 77.8, 39.6, REVENDRETH },
+				["g"] = {
+					i(174454),	-- The Countess's Sinstone (QI!)
+				},
 			}),
 			q(58567, {	-- Skulking in the Darkness
 				["sourceQuests"] = { 58565 },	-- Land of Light
@@ -802,6 +836,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 				["provider"] = { "n", 165110 },	-- Pelagos
 				-- no coords, is your 'pet'
+				["g"] = {
+					i(176446),	-- Ripened Anima Seed (QI!)
+				},
 			}),
 			q(61770, {	-- The Butchers of Bastion
 				["sourceQuests"] = { 61769 },	-- Fight and Flight
@@ -827,6 +864,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 				["provider"] = { "n", 161553 },	-- Mindscorched Alwin
 				["coord"] = { 39.9, 59.0, REVENDRETH },
+				["g"] = {
+					i(174498),	-- Seal of Contrition (QI!)
+				},
 			}),
 			q(58796, {	-- The Forsworn Onslaught
 				["sourceQuests"] = { 58795 },	-- Ascended
@@ -858,6 +898,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 162149 },	-- Mikanikos
 				["coord"] = { 45.7, 56.5, ARCHONS_RISE },
 				["g"] = {
+					i(174498),	-- Seal of Contrition (QI!)
 					i(177050),	-- Selfless Bearer's Head
 					i(174289),	-- Selfless Collector's GreatHelm
 					i(179943),	-- Selfless Forgelite's Helm
@@ -916,6 +957,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					161878, -- Sicklethorn Slicer
 					163363,	-- Sicklethorn Zapper
 				},
+				["g"] = {
+					i(175982),	-- Sicklethorn To-Do List (QI!)
+				},
 			}),
 			q(61776, {	-- Trouble on the Western Front
 				["sourceQuests"] = {
@@ -930,11 +974,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand
 				["provider"] = { "n", 162558 },	-- Alithea
 				["coord"] = { 32.5, 39.7, REDRIDGE_MOUNTAINS },
+				["g"] = {
+					i(175011),	-- Vesper of Veilflight (QI!)
+				},
 			}),
 			q(58856, {	-- Who Are You Fooling?
 				["sourceQuests"] = { 58775 },	-- Meet the Queen
 				["provider"] = { "n", 162392 },	-- Willowblossom
 				["coord"] = { 44.0, 51.8, ARDENWEALD },
+				["g"] = {
+					i(174843),	-- Sicklethorn Trickster Powder (QI!)
+				},
 			}),
 		}),
 	}),

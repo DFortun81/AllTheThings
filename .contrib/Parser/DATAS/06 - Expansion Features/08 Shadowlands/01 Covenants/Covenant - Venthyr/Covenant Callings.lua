@@ -52,6 +52,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					--["provider"] = { "n",  },	--
 					--["coord"] = { ,  },
 					["g"] = {
+						i(179318),	-- Sorrowvine (QI!)
 						i(181556),	-- Tribute of the Court
 					},
 				}),
@@ -59,6 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					--["provider"] = { "n",  },	--
 					--["coord"] = { ,  },
 					["g"] = {
+						i(179320),	-- Wealdwood (QI!)
 						i(181556),	-- Tribute of the Court
 					},
 				}),

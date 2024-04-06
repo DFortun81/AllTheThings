@@ -81,13 +81,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										i(183840),	-- Blackthorn Clay (QI!)
 									},
 								}),
-								q(62608),	-- A Royal Treat
+								q(62608, {	-- A Royal Treat
+									["g"] = {
+										i(183837),	-- Royal Peat (QI!)
+									},
+								}),
 								q(60175, {	-- A Taste of Tirna Noch
 									["g"] = {
 										i(178215),	-- Leafy Loam (QI!)
 									},
 								}),
-								q(62607),	-- Glittering Gritty Goodness
+								q(62607, {	-- Glittering Gritty Goodness
+									["g"] = {
+										i(183836),	-- Shimmersilt (QI!)
+									},
+								}),
 								q(62614),	-- Hyphae Patrol: Eventide Grove
 								q(62615),	-- Hyphae Patrol: Gossamer Cliffs
 								q(62611),	-- Hyphae Patrol: Heartwood Grove
@@ -116,14 +124,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}, {
 								q(62466),	-- Go Beyond! (1)
 								q(62263),	-- Go Beyond! (2)
-								q(62459),	-- Go Beyond! (3)
-								q(62417),	-- Go Beyond! (4)
+								q(62459, {	-- Go Beyond! (3)
+									["g"] = {
+										i(183725),	-- Moth Net (QI!)
+									},
+								}),
+								q(62417, {	-- Go Beyond! (4)
+									["g"] = {
+										i(183697),	-- Night Lily (QI!)
+									},
+								}),
 								q(60188, {	-- Go Beyond! (5)
 									i(178464),	-- Discarded Harp
 									i(178465),	-- Giant Silk Bundle
 								}),
 								q(62400),	-- Go Beyond! (6)
-								q(62465),	-- Go Beyond! (7)
+								q(62465, {	-- Go Beyond! (7)
+									["g"] = {
+										i(183792),	-- Artisan's Implement (QI!)
+										i(183791),	-- Pilfered Materials (QI!)
+									},
+								}),
 							})),
 						}),
 						n(VENDORS, {

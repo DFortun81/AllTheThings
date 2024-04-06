@@ -99,6 +99,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.9, 65.1, MALDRAXXUS },
 					["g"] = {
+						i(178662),	-- Unfinished Blade (QI!)
 						i(175471),	-- Corpse-Stitcher's Cord
 						i(175470),	-- Cruel Executioner's Girdle
 						i(175473),	-- Deceitful Agent's Belt
@@ -123,6 +124,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 					["coord"] = { 36.2, 71.0, MALDRAXXUS },
 					["g"] = {
+						i(178676),	-- Pulsating Hide Scraps (QI!)
 						i(175463),	-- Corpse-Stitcher's Leggings
 						i(175462),	-- Cruel Executioner's Legguards
 						i(175464),	-- Flesh Architect's Leggings
@@ -176,6 +178,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58751 },	-- A Common Peril
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, MALDRAXXUS },
+					["g"] = {
+						i(178940),	-- Vashj's Signal (QI!)
+					},
 				}),
 				q(59171, {	-- Prey Upon Them
 					["sourceQuests"] = { 58751 },	-- A Common Peril
@@ -297,6 +302,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59616 },	-- Army of One
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
 					["coord"] = { 33.8, 31.0, MALDRAXXUS },
+					["g"] = {
+						i(176456),	-- Prisoner Cage Key (QI!)
+					},
 				}),
 				q(57984, {	-- The Ones in Charge
 					["sourceQuests"] = { 57983 },	-- Archon Save Us
@@ -479,6 +487,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "o", 355798 },	-- Cage
 					["coord"] = { 38.3, 48.5, THE_MAW },
 					["maps"] = { 1960 },	-- The Maw (Scenario Map)
+					["g"] = {
+						i(178018),	-- The Brand's Key (QI!)
+					},
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -615,6 +626,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+					["g"] = {
+						i(174324),	-- Weapons of the Fallen (QI!)
+					},
 				}),
 				q(59800, {	-- Team Spirit
 					["sourceQuests"] = {
@@ -731,6 +745,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60900 },	-- Archival Protection
 					["provider"] = { "n", 162476 },	-- Ta'eran
 					["g"] = {
+						i(178020),	-- Volume of Victory: Vol 1 (QI!)
 						i(175517),	-- Corpse-Stitcher's Slippers
 						i(175516),	-- Cruel Executioner's Stompers
 						i(175519),	-- Deceitful Agent's Treads
@@ -805,6 +820,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 157168 },	-- Stubborn Animate
 				["coord"] = { 29.8, 49.7, MALDRAXXUS },
 				["_drop"] = { "isDaily" },
+				["g"] = {
+					i(171204),	-- Traitor's Head (QI!)
+				},
 			}),
 			q(62804, {	-- Filling the Tanks
 				["provider"] = { "i", 184155 },	-- Recovered Containment Pack
