@@ -1867,6 +1867,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72812),	-- Ensemble: Vagabond's Snowy Threads
 	})),
 });
+
 root(ROOTS.NeverImplemented, {
 	n(TRADING_POST_NYI, bubbleDown({ ["timeline"] = { CREATED_10_0_5 }, }, {
 		filter(BATTLE_PETS, {
@@ -1878,271 +1879,270 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(COSMETIC, {
-			-- Ensemble
-			i(190796, {	-- Ensemble: Slumbering Caldera Regalia
-				["cost"] = {{"c", TRADERS_TENDER, 850}},
-				["g"] = {
-					i(190774),	-- Slumbering Caldera Robe
-					i(190775),	-- Slumbering Caldera Gauntlets
-					i(190776),	-- Slumbering Caldera Girdle
-					i(190777),	-- Slumbering Caldera Pauldrons
-					i(190778),	-- Slumbering Caldera Legguards
-					i(190779),	-- Slumbering Caldera Sabatons
-					i(190780),	-- Slumbering Caldera Crown
-					i(190781),	-- Slumbering Caldera Bracers
-					i(190782),	-- Slumbering Caldera Hauberk
-				},
-			}),
-			i(200917, {	-- Ensemble: Tidecaller's Chainmail
-				["cost"] = {{"c", TRADERS_TENDER, 750}},
-				["g"] = {
-					i(190432),	-- Tidecaller's Bracers
-					i(190440),	-- Tidecaller's Crown
-					i(190067),	-- Tidecaller's Grips
-					i(190072),	-- Tidecaller's Hauberk
-					i(190556),	-- Tidecaller's Legguards
-					i(190700),	-- Tidecaller's Boots
-					i(190709),	-- Tidecaller's Pauldrons
-					i(190806),	-- Tidecaller's Cinch
-				},
-			}),
-			-- Belt
-
-
-			-- Gloves
-
-			-- Head
-			i(190559, {	-- Helm of the Swift
-				["cost"] = {{"c", TRADERS_TENDER, 225}},
-			}),
-			-- Weapons
-			-- 1H Weapon
-			i(190561, {	-- Crystalblade of Shifting Magic
-				["cost"] = {{"c", TRADERS_TENDER, 450}},
-			}),
-
-			-- Bow
-
-			-- Dagger
-
-			-- Gun
-
-			-- Off-Hand
-
-			-- Shield
-			i(190077, {	-- Scarlet Zealot's Heater Shield
-				["cost"] = {{"c", TRADERS_TENDER, 200}},
-			}),
-			i(190672),	-- Deathguard Acolyte's Cloak
-			i(189869),	-- Distinguished Warcloak
-			i(190068),	-- Emerald Drape
-			i(190201),	-- Sin'dorei Assassin's Shroud
-
 			-- 10.0.0
 			expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
-					------ TRADING POST ------
 				n(SETS, {
-					-- Honored Valarjar Set [Mail]
+					------ Honored Valarjar Set [Mail] ------
 					i(190563),	-- Armbands of the Honored Valarjar
 					i(190564),	-- Cape of the Honored Valarjar
-					i(190565),	-- Girdle of the Honored Valarjar
-					i(190566),	-- Gauntlets of the Honored Valarjar
-					i(190567),	-- Cuirass of the Honored Valarjar
 					i(190568),	-- Coif of the Honored Valarjar
-					i(190569),	-- Sabatons of the Honored Valarjar
+					i(190567),	-- Cuirass of the Honored Valarjar
+					i(190566),	-- Gauntlets of the Honored Valarjar
+					i(190565),	-- Girdle of the Honored Valarjar
 					i(190570),	-- Legguards of the Honored Valarjar
 					i(190571),	-- Pauldrons of the Honored Valarjar
+					i(190569),	-- Sabatons of the Honored Valarjar
 
-					-- Honored Valarjar Set [Plate]
-					i(190911),	-- Greatcloak of the Honored Valarjar
-					i(190912),	-- Warboots of the Honored Valarjar
-					i(190913),	-- Vambraces of the Honored Valarjar
-					i(190914),	-- Greatbelt of the Honored Valarjar
-					i(190915),	-- Gardbrace of the Honored Valarjar
-					i(190916),	-- Greaves of the Honored Valarjar
-					i(190917),	-- Helm of the Honored Valarjar
-					i(190918),	-- Handguards of the Honored Valarjar
+					------ Honored Valarjar Set [Plate] ------
 					i(190919),	-- Breastplate of the Honored Valarjar
+					i(190915),	-- Gardbrace of the Honored Valarjar
+					i(190914),	-- Greatbelt of the Honored Valarjar
+					i(190911),	-- Greatcloak of the Honored Valarjar
+					i(190916),	-- Greaves of the Honored Valarjar
+					i(190918),	-- Handguards of the Honored Valarjar
+					i(190917),	-- Helm of the Honored Valarjar
+					i(190913),	-- Vambraces of the Honored Valarjar
+					i(190912),	-- Warboots of the Honored Valarjar
 
-					-- Nightmare Forest Set
-					i(190221),	-- Nightmare Forest Waistwrap
-					i(190222),	-- Nightmare Forest Sandals
-					i(190223),	-- Nightmare Forest Jerkin
-					i(190224),	-- Nightmare Forest Grips
-					i(190225),	-- Nightmare Forest Mask
-					i(190226),	-- Nightmare Forest Leggings
-					i(190227),	-- Nightmare Forest Raiment
-					i(190228),	-- Nightmare Forest Mantle
+					------ Nightmare Forest Set ------
 					i(190229),	-- Nightmare Forest Bindings
+					i(190224),	-- Nightmare Forest Grips
+					i(190223),	-- Nightmare Forest Jerkin
+					i(190226),	-- Nightmare Forest Leggings
+					i(190228),	-- Nightmare Forest Mantle
+					i(190225),	-- Nightmare Forest Mask
+					i(190227),	-- Nightmare Forest Raiment
+					i(190222),	-- Nightmare Forest Sandals
+					i(190221),	-- Nightmare Forest Waistwrap
 
-					-- Twisted Arcanum Set
+					------ Slumbering Caldera Set ------
+					i(190781),	-- Slumbering Caldera Bracers
+					i(190780),	-- Slumbering Caldera Crown
+					i(190775),	-- Slumbering Caldera Gauntlets
+					i(190776),	-- Slumbering Caldera Girdle
+					i(190782),	-- Slumbering Caldera Hauberk
+					i(190778),	-- Slumbering Caldera Legguards
+					i(190777),	-- Slumbering Caldera Pauldrons
+					i(190774),	-- Slumbering Caldera Robe
+					i(190779),	-- Slumbering Caldera Sabatons
+
+					------ Twisted Arcanum Set ------
+					i(190162),	-- Twisted Arcanum Bindings
+					i(190159),	-- Twisted Arcanum Cowl
+					i(190158),	-- Twisted Arcanum Grips
+					i(190161),	-- Twisted Arcanum Mantle
+					i(190163),	-- Twisted Arcanum Robe
 					i(190156),	-- Twisted Arcanum Sash
 					i(190157),	-- Twisted Arcanum Slippers
-					i(190158),	-- Twisted Arcanum Grips
-					i(190159),	-- Twisted Arcanum Cowl
 					i(190160),	-- Twisted Arcanum Trousers
-					i(190161),	-- Twisted Arcanum Mantle
-					i(190162),	-- Twisted Arcanum Bindings
-					i(190163),	-- Twisted Arcanum Robe
 					i(190193),	-- Twisted Arcanum Tunic
+				}),
+				n(WEAPONS, {
+					i(190674),	-- Leaky Bucket
 				}),
 			})),
 
 			-- 10.0.5
 			expansion(EXPANSION.DF, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
-					------ TRADING POST ------
+				n(ARMOR, {
+					i(190672),	-- Deathguard Acolyte's Cloak
+					i(189869),	-- Distinguished Warcloak
+					i(190068),	-- Emerald Drape
+					i(190201),	-- Sin'dorei Assassin's Shroud
+				}),
 				n(SETS, {
-					-- Highborne Scholar Set
+					i(190575),	-- Ensemble: Chains of the Honored Valarjar
+					i(190165),	-- Ensemble: Twisted Arcanum Regalia
+					i(190772),	-- Ensemble: Vestments of the Nightmare Forest
+
+					------ Highborne Scholar Set ------
 					i(190435),	-- Highborne Scholar's Belt
 					i(190437),	-- Highborne Scholar's Collar
-					i(190555),	-- Highborne Scholar's Robe
 					i(190787),	-- Highborne Scholar's Cuffs
-					i(190809),	-- Highborne Scholar's Slippers
-					i(190815),	-- Highborne Scholar's Leggings
-					i(190868),	-- Highborne Scholar's Scrollmantle
 					i(190070),	-- Highborne Scholar's Gloves
+					i(190815),	-- Highborne Scholar's Leggings
+					i(190555),	-- Highborne Scholar's Robe
+					i(190868),	-- Highborne Scholar's Scrollmantle
+					i(190809),	-- Highborne Scholar's Slippers
 
-					-- Val'Sharah Protector Set
+					------ Tidecaller's Set ------
+					i(190700),	-- Tidecaller's Boots
+					i(190432),	-- Tidecaller's Bracers
+					i(190806),	-- Tidecaller's Cinch
+					i(190440),	-- Tidecaller's Crown
+					i(190067),	-- Tidecaller's Grips
+					i(190072),	-- Tidecaller's Hauberk
+					i(190556),	-- Tidecaller's Legguards
+					i(190709),	-- Tidecaller's Pauldrons
+
+					------ Val'Sharah Protector Set ------
 					i(190547),	-- Val'Sharah Protector's Bracers
-					i(190676),	-- Val'Sharah Protector's Gauntlets
+					i(190897),	-- Val'Sharah Protector's Crown
 					i(190213),	-- Val'sharah Protector's Cuirass
+					i(190676),	-- Val'Sharah Protector's Gauntlets
+					i(190861),	-- Val'Sharah Protector's Girdle
 					i(189881),	-- Val'sharah Protector's Greaves
 					i(190069),	-- Val'sharah Protector's Sabatons
 					i(190074),	-- Val'sharah Protector's Spaulders
-					i(190897),	-- Val'Sharah Protector's Crown
-					i(190861),	-- Val'Sharah Protector's Girdle
 
-					-- Void-Bound Set [Cloth]
+					------ Void-Bound Set [Cloth] ------
 					i(190679),	-- Void-Bound Cord
+					i(190839),	-- Void-Bound Crown
+					i(190834),	-- Void-Bound Cuffs
+					i(200923),	-- Void-Bound Drape
 					i(190680),	-- Void-Bound Gloves
 					i(190683),	-- Void-Bound Mantle
-					i(190684),	-- Void-Bound Trousers
-					i(190834),	-- Void-Bound Cuffs
-					i(190835),	-- Void-Bound Slippers
 					i(190838),	-- Void-Bound Robe
-					i(190839),	-- Void-Bound Crown
+					i(190835),	-- Void-Bound Slippers
+					i(190684),	-- Void-Bound Trousers
 
-					-- Void-Bound Set [Leather]
-					i(190703),	-- Void-Bound Striders
-					i(190704),	-- Void-Bound Handguards
-					i(190707),	-- Void-Bound Vest
-					i(190708),	-- Void-Bound Shoulderguards
-					i(190862),	-- Void-Bound Bracers
+					------ Void-Bound Set [Leather] ------
 					i(190863),	-- Void-Bound Belt
-					i(190879),	-- Void-Bound Mask
+					i(190862),	-- Void-Bound Bracers
+					i(200920),	-- Void-Bound Cloak
+					i(190704),	-- Void-Bound Handguards
 					i(200919),	-- Void-Bound Leggings
+					i(190879),	-- Void-Bound Mask
+					i(190708),	-- Void-Bound Shoulderguards
+					i(190703),	-- Void-Bound Striders
+					i(190707),	-- Void-Bound Vest
 
-					-- Void-Bound Set [Mail]
+					------ Void-Bound Set [Mail] ------
 					i(190677),	-- Void-Bound Boots
 					i(190678),	-- Void-Bound Chain
-					i(190681),	-- Void-Bound Tassets
 					i(190682),	-- Void-Bound Circlet
-					i(190836),	-- Void-Bound Wristguards
 					i(190837),	-- Void-Bound Grips
 					i(190840),	-- Void-Bound Hauberk
+					i(200922),	-- Void-Bound Shroud
 					i(190841),	-- Void-Bound Spaulders
+					i(190681),	-- Void-Bound Tassets
+					i(190836),	-- Void-Bound Wristguards
 
-					-- Void-Bound Set [Plate]
-					i(190701),	-- Void-Bound Girdle
-					i(190702),	-- Void-Bound Vambraces
-					i(190705),	-- Void-Bound Greaves
-					i(190706),	-- Void-Bound Greathelm
-					i(190864),	-- Void-Bound Sabatons
-					i(190865),	-- Void-Bound Gauntlets
+					------ Void-Bound Set [Plate] ------
 					i(190866),	-- Void-Bound Breastplate
+					i(190865),	-- Void-Bound Gauntlets
+					i(190701),	-- Void-Bound Girdle
+					i(200921),	-- Void-Bound Greatcloak
+					i(190706),	-- Void-Bound Greathelm
+					i(190705),	-- Void-Bound Greaves
 					i(190867),	-- Void-Bound Pauldrons
-
-					-- Void-Bound Set -- I dont know which cloak belongs to which set. // Braghe
-					i(200920),	-- Void-Bound Cloak (probably leather)
-					i(200921),	-- Void-Bound Greatcloak (probably plate)
-					i(200922),	-- Void-Bound Shroud (probably mail)
-					i(200923),	-- Void-Bound Drape (probably cloth)
-
-					i(190772),	-- Ensemble: Vestments of the Nightmare Forest
-					i(190165),	-- Ensemble: Twisted Arcanum Regalia
-					i(190575),	-- Ensemble: Chains of the Honored Valarjar
+					i(190864),	-- Void-Bound Sabatons
+					i(190702),	-- Void-Bound Vambraces
 				}),
 				n(WEAPONS, {
-					-- One-Hand Wep
+					i(190715),	-- Anodized Sniper Rifle
 					i(190675),	-- Arborcidal Peon's Chopper
+					i(190711),	-- Arcanist's Barbed Baton
 					i(190446),	-- Blazing Forgehammer
-					i(190132),	-- Krokul Battlescythe
-					i(190148),	-- Ravencrest's Razor
-					i(189872),	-- Shattered Krokul Edge
-					i(190079),	-- Smoldering Forgeblade
-					i(189884),	-- Vengeful Nemesis Warblades
-
-					-- Two-Hand Wep
 					i(190131),	-- Brick-on-a-Stick
 					i(190714),	-- Gorian Pulverizer
+					i(190442),	-- Illidari Bladeward
 					i(190713),	-- Imperator's Command
+					i(190132),	-- Krokul Battlescythe
+					i(189883),	-- Lordaeron Sentry's Bulwark
 					i(189886),	-- Might of the Titanforged
 					i(190687),	-- Painted Warblade
 					i(190066),	-- Primeval Maul
-
-					-- Off-Hand
-					i(190442),	-- Illidari Bladeward
-					i(189883),	-- Lordaeron Sentry's Bulwark
+					i(190148),	-- Ravencrest's Razor
+					i(189872),	-- Shattered Krokul Edge
+					i(190079),	-- Smoldering Forgeblade
 					i(190691),	-- Twisted Guardian's Profane Barrier
-
-					-- Ranged
-					i(190715),	-- Anodized Sniper Rifle
-					i(190711),	-- Arcanist's Barbed Baton
+					i(189884),	-- Vengeful Nemesis Warblades
 				}),
 			})),
 
 			-- 10.1.0
 			expansion(EXPANSION.DF, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
-					------ TRADING POST ------
-				i(189885),	-- The Battlespoon
+				n(SETS, {
+					i(190796),	-- Ensemble: Slumbering Caldera Regalia
+				}),
+				n(WEAPONS, {
+					i(190077),	-- Scarlet Zealot's Heater Shield
+					i(189885),	-- The Battlespoon
+				}),
 			})),
 
 			-- 10.1.5
 			expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
-					------ TRADING POST ------
-				i(206279),	-- Vagabond's Plum Cape
-				i(206280),	-- Vagabond's Faded Cape
-				i(206281),	-- Vagabond's Brick Cape
-				i(206283),	-- Vagabond's Deep Cape
-				i(206284),	-- Vagabond's Cloudy Cape
-				i(206285),	-- Vagabond's Grassy Cape
-				i(206290),	-- Vagabond's Plum Hood
-				i(206291),	-- Vagabond's Faded Hood
-				i(206292),	-- Vagabond's Brick Hood
-				i(206294),	-- Vagabond's Deep Hood
-				i(206295),	-- Vagabond's Cloudy Hood
-				i(206296),	-- Vagabond's Grassy Hood
-				i(206301),	-- Wanderer's Plum Scarf
-				i(206302),	-- Wanderer's Faded Scarf
-				i(206303),	-- Wanderer's Brick Scarf
-				i(206305),	-- Wanderer's Deep Scarf
-				i(206306),	-- Wanderer's Cloudy Scarf
-				i(206307),	-- Wanderer's Grassy Scarf
-				i(206312),	-- Wanderer's Plum Cloak
-				i(206313),	-- Wanderer's Faded Cloak
-				i(206314),	-- Wanderer's Brick Cloak
-				i(206316),	-- Wanderer's Deep Cloak
-				i(206317),	-- Wanderer's Cloudy Cloak
-				i(206318),	-- Wanderer's Grassy Cloak
-				i(206323),	-- Ensemble: Vagabond's Plum Threads
-				i(206324),	-- Ensemble: Vagabond's Faded Threads
-				i(206325),	-- Ensemble: Vagabond's Brick Threads
-				i(206327),	-- Ensemble: Vagabond's Deep Threads
-				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
-				i(206329),	-- Ensemble: Vagabond's Grassy Threads
-				i(206334),	-- Ensemble: Wanderer's Plum Trappings
-				i(206335),	-- Ensemble: Wanderer's Faded Trappings
-				i(206336),	-- Ensemble: Wanderer's Brick Trap
-				i(206338),	-- Ensemble: Wanderer's Deep Trappings
-				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
-				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
+				n(ARMOR, {
+					i(190559),	-- Helm of the Swift
+				}),
+				n(SETS, {
+					i(200917),	-- Ensemble: Tidecaller's Chainmail
+
+					------ Vagabond's Brick Threads ------
+					i(206325),	-- Ensemble: Vagabond's Brick Threads
+					i(206281),	-- Vagabond's Brick Cape
+					i(206292),	-- Vagabond's Brick Hood
+
+					------ Vagabond's Cloudy Threads ------
+					i(206328),	-- Ensemble: Vagabond's Cloudy Threads
+					i(206284),	-- Vagabond's Cloudy Cape
+					i(206295),	-- Vagabond's Cloudy Hood
+
+					------ Vagabond's Deep Threads ------
+					i(206327),	-- Ensemble: Vagabond's Deep Threads
+					i(206283),	-- Vagabond's Deep Cape
+					i(206294),	-- Vagabond's Deep Hood
+
+					------ Vagabond's Faded Threads ------
+					i(206324),	-- Ensemble: Vagabond's Faded Threads
+					i(206280),	-- Vagabond's Faded Cape
+					i(206291),	-- Vagabond's Faded Hood
+
+					------ Vagabond's Grassy Threads ------
+					i(206329),	-- Ensemble: Vagabond's Grassy Threads
+					i(206285),	-- Vagabond's Grassy Cape
+					i(206296),	-- Vagabond's Grassy Hood
+
+					------ Vagabond's Plum Threads ------
+					i(206323),	-- Ensemble: Vagabond's Plum Threads
+					i(206279),	-- Vagabond's Plum Cape
+					i(206290),	-- Vagabond's Plum Hood
+
+					------ Wanderer's Brick Trappings ------
+					i(206336),	-- Ensemble: Wanderer's Brick Trappings
+					i(206314),	-- Wanderer's Brick Cloak
+					i(206303),	-- Wanderer's Brick Scarf
+
+					------ Wanderer's Cloudy Trappings ------
+					i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
+					i(206317),	-- Wanderer's Cloudy Cloak
+					i(206306),	-- Wanderer's Cloudy Scarf
+
+					------ Wanderer's Deep Trappings ------
+					i(206338),	-- Ensemble: Wanderer's Deep Trappings
+					i(206316),	-- Wanderer's Deep Cloak
+					i(206305),	-- Wanderer's Deep Scarf
+
+					------ Wanderer's Faded Trappings ------
+					i(206335),	-- Ensemble: Wanderer's Faded Trappings
+					i(206313),	-- Wanderer's Faded Cloak
+					i(206302),	-- Wanderer's Faded Scarf
+
+					------ Wanderer's Grassy Trappings ------
+					i(206340),	-- Ensemble: Wanderer's Grassy Trappings
+					i(206318),	-- Wanderer's Grassy Cloak
+					i(206307),	-- Wanderer's Grassy Scarf
+
+					------ Wanderer's Plum Trappings ------
+					i(206334),	-- Ensemble: Wanderer's Plum Trappings
+					i(206312),	-- Wanderer's Plum Cloak
+					i(206301),	-- Wanderer's Plum Scarf
+				}),
+				n(WEAPONS, {
+					i(190561),	-- Crystalblade of Shifting Magic
+				}),
 			})),
 
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
-					------ Trading Post ------
 				n(ARMOR, {
-					------ Sarong ------
+					i(211069),	-- Azure Treads of the Kalu'ak
+					i(210867),	-- Blademaster's Lively Stones
+					i(211071),	-- Lively Treads of the Kalu'ak
+					i(210999),	-- Ruby Faced Mobile Timepiece
+					i(211001),	-- Sapphire Faced Mobile Timepiece
 					i(210849),	-- Trader's Azure Sarong
 					i(210855),	-- Trader's Brick Sarong
 					i(210854),	-- Trader's Camo Sarong
@@ -2151,21 +2151,114 @@ root(ROOTS.NeverImplemented, {
 					i(210851),	-- Trader's Grassy Sarong
 					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
-					i(210850),	-- Trader's Sepia Sarong
 					i(210862),	-- Trader's Snowy Sarong
 					i(210863),	-- Trader's Sunny Sarong
-
-					------ Stones ------
-					i(210867),	-- Blademaster's Lively Stones
-
-					------ Armor ------
-					i(211069),	-- Azure Treads of the Kalu'ak
-					i(211071),	-- Lively Treads of the Kalu'ak
-					i(210999),	-- Ruby Faced Mobile Timepiece
-					i(211001),	-- Sapphire Faced Mobile Timepiece
-
-					------ Weapon ------
+				}),
+				n(WEAPONS, {
 					i(190875),	-- Chilled Touch of the Condemned
+				}),
+			})),
+
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				n(ARMOR, {
+					i(190807),	-- Artisan's Work Shirt
+					i(190669),	-- Burnished Helm of Righteousness
+					i(190692),	-- Champion's Battle Standard
+					i(190847),	-- Deathmantle Assassin's Barb
+					i(190090),	-- Dessicated Bouquet
+					i(212627),	-- Dueler's Azure Shoulder Cape
+					i(212623),	-- Dueler's Brick Shoulder Cape
+					i(212622),	-- Dueler's Camo Shoulder Cape
+					i(212619),	-- Dueler's Carrot Shoulder Cape
+					i(212617),	-- Dueler's Crimson Shoulder Cape
+					i(212624),	-- Dueler's Deep Shoulder Cape
+					i(212620),	-- Dueler's Faded Shoulder Cape
+					i(212625),	-- Dueler's Grassy Shoulder Cape
+					i(212628),	-- Dueler's Midnight Shoulder Cape
+					i(212618),	-- Dueler's Plum Shoulder Cape
+					i(212615),	-- Dueler's Snowy Shoulder Cape
+					i(212614),	-- Dueler's Sunny Shoulder Cape
+					i(190893),	-- Jeweled Valkyrion Cape
+					i(190688),	-- Silvered Helm of Righteousness
+					i(212705),	-- Spring Reveler's Cornsilk Attire
+					i(212706),	-- Spring Reveler's Cornsilk Belt
+					i(212707),	-- Spring Reveler's Cornsilk Boots
+					i(212713),	-- Spring Reveler's Cornsilk Dress
+					i(212987),	-- Spring Reveler's Cornsilk Pants
+					i(212717),	-- Spring Reveler's Cornsilk Sun Hat
+					i(212613),	-- Wings of the Amber Monarch
+					i(212612),	-- Wings of the Amethyst Monarch
+					i(212610),	-- Wings of the Emerald Monarch
+					i(212611),	-- Wings of the Tourmaline Monarch
+				}),
+				n(SETS, {
+					i(190924),	-- Arsenal: Ruby Felfire Armaments
+					i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
+					i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
+					i(200918),	-- Ensemble: Void-Bound Raiment
+					i(200924),	-- Ensemble: Void-Bound Battlegear
+					i(201000),	-- Ensemble: Void-Bound Chains
+					i(201001),	-- Ensemble: Void-Bound Warplate
+
+					------ Dark Ranger General ------
+					i(213158),	-- Ensemble: Dark Ranger General's Kit
+					i(213150),	-- Dark Ranger General's Boots
+					i(213153),	-- Dark Ranger General's Bracers
+					i(213146),	-- Dark Ranger General's Breastplate
+					i(213151),	-- Dark Ranger General's Chestguard
+					i(213149),	-- Dark Ranger General's Cinch
+					i(213154),	-- Dark Ranger General's Cloak
+					i(213147),	-- Dark Ranger General's Gloves
+					i(213145),	-- Dark Ranger General's Hood
+					i(213152),	-- Dark Ranger General's Leggings
+					i(213155),	-- Dark Ranger General's Quiver
+					i(213148),	-- Dark Ranger General's Spaulders
+
+					------ Sky Witch's Attire ------
+					i(212221),	-- Ensemble: Sky Witch's Attire
+					i(212204),	-- Sky Witch's Blouse
+					i(212205),	-- Sky Witch's Boots
+					i(212206),	-- Sky Witch's Gloves
+					i(212207),	-- Sky Witch's Hat
+					i(212210),	-- Sky Witch's Sash
+					i(212209),	-- Sky Witch's Shoulders
+					i(212208),	-- Sky Witch's Skirt
+				}),
+				n(WEAPONS, {
+					i(190848),	-- [DNT] Do not use
+					i(213162),	-- Blessed Bow of the Windseeker
+					i(190908),	-- Devourer's Skullscythe
+					i(213073),	-- Faded Floral Staff
+					i(190816),	-- Forgehand's "Stable" Fuel Cell
+					i(190849),	-- Forgemaster's Gavel
+					i(213107),	-- Gladiator's Ragged Greatsword
+					i(213106),	-- Gladiator's Serrated Greatsword
+					i(190860),	-- Initiate's Bo
+					i(213077),	-- Lavender Bow-quet
+					i(213065),	-- Lavish Floral Edge
+					i(213068),	-- Lavish Floral Stalk
+					i(190822),	-- Mo'arg Enforcer's Halberd
+					i(213076),	-- Orchid Bow-quet
+					i(213062),	-- Paradise's Golden Axe
+					i(213063),	-- Paradise's Ruby Axe
+					i(213064),	-- Paradise's Violet Axe
+					i(213070),	-- Pristine Floral Stalk
+					i(190900),	-- Prototype Farstrider Sniper Rifle
+					i(190820),	-- Restless Void Handaxe
+					i(213066),	-- Rosy Floral Edge
+					i(213069),	-- Rosy Floral Stalk
+					i(213072),	-- Ruby Floral Staff
+					i(190891),	-- Shabby Battleaxe
+					i(190903),	-- Soulburner Warscythe
+					i(190818),	-- Steamwheedle Artifact Extractor
+					i(213075),	-- Sunny Bow-quet
+					i(213071),	-- Sunny Floral Staff
+					i(213161),	-- Titan Thunderbow
+					i(190844),	-- Valarjar Champion's Greatsword
+					i(213067),	-- Violet Floral Edge
+					i(190902),	-- Will of the Titanforged
+					i(190889),	-- Woodsman's Hatchet
 				}),
 			})),
 		}),
@@ -2174,56 +2267,58 @@ root(ROOTS.NeverImplemented, {
 			i(190539),	-- Coral-Stalker Waveray (MOUNT!)
 			i(137615),	-- Molten Flarecore (MOUNT!)
 		}),
-			i(190674, { -- Leaky Bucket
-				["cost"] = {{"c", TRADERS_TENDER, 75}},
-			}),
-			i(190844, { -- Valarjar Champion's Greatsword
-				["cost"] = {{"c", TRADERS_TENDER, 200}},
-			}),
-			i(206325, { -- Ensemble: Vagabond's Brick Threads
-				["cost"] = {{"c", TRADERS_TENDER, 100}},
-			}),
-			i(206336, { -- Ensemble: Wanderer's Brick Trappings
-				["cost"] = {{"c", TRADERS_TENDER, 100}},
-			}),
-			i(213062, { -- Paradise's Golden Axe
-				["cost"] = {{"c", TRADERS_TENDER, 300}},
-			}),
-			i(213065, { -- Lavish Floral Edge
-				["cost"] = {{"c", TRADERS_TENDER, 300}},
-			}),
-			i(213068, { -- Lavish Floral Stalk
-				["cost"] = {{"c", TRADERS_TENDER, 300}},
-			}),
-			i(213071, { -- Sunny Floral Staff
-				["cost"] = {{"c", TRADERS_TENDER, 300}},
-			}),
-			i(213075, { -- Sunny Bow-quet
-				["cost"] = {{"c", TRADERS_TENDER, 300}},
-			}),
-			i(213106, { -- Gladiator's Serrated Greatsword
-				["cost"] = {{"c", TRADERS_TENDER, 275}},
-			}),
-			i(213107, { -- Gladiator's Ragged Greatsword
-				["cost"] = {{"c", TRADERS_TENDER, 275}},
-			}),
-			i(213393, { -- Guise of the Golden Masquerade
-				["cost"] = {{"c", TRADERS_TENDER, 200}},
-			}),
-			i(213394, { -- Ebony Crown of the Red Rose
-				["cost"] = {{"c", TRADERS_TENDER, 250}},
-			}),
-			i(213395, { -- Gloves of the Midnight Soiree
-				["cost"] = {{"c", TRADERS_TENDER, 100}},
-			}),
-			i(213396, { -- Classic Midnight Tabard
-				["cost"] = {{"c", TRADERS_TENDER, 100}},
-			}),
-			i(217043, { -- Pokee
-				["cost"] = {{"c", TRADERS_TENDER, 350}},
-			}),
-			i(54069, { -- Blazing Hippogryph
-				["cost"] = {{"c", TRADERS_TENDER, 600}},
-			}),
+		--[[
+		i(190674, { -- Leaky Bucket
+			["cost"] = {{"c", TRADERS_TENDER, 75}},
+		}),
+		i(190844, { -- Valarjar Champion's Greatsword
+			["cost"] = {{"c", TRADERS_TENDER, 200}},
+		}),
+		i(206325, { -- Ensemble: Vagabond's Brick Threads
+			["cost"] = {{"c", TRADERS_TENDER, 100}},
+		}),
+		i(206336, { -- Ensemble: Wanderer's Brick Trappings
+			["cost"] = {{"c", TRADERS_TENDER, 100}},
+		}),
+		i(213062, { -- Paradise's Golden Axe
+			["cost"] = {{"c", TRADERS_TENDER, 300}},
+		}),
+		i(213065, { -- Lavish Floral Edge
+			["cost"] = {{"c", TRADERS_TENDER, 300}},
+		}),
+		i(213068, { -- Lavish Floral Stalk
+			["cost"] = {{"c", TRADERS_TENDER, 300}},
+		}),
+		i(213071, { -- Sunny Floral Staff
+			["cost"] = {{"c", TRADERS_TENDER, 300}},
+		}),
+		i(213075, { -- Sunny Bow-quet
+			["cost"] = {{"c", TRADERS_TENDER, 300}},
+		}),
+		i(213106, { -- Gladiator's Serrated Greatsword
+			["cost"] = {{"c", TRADERS_TENDER, 275}},
+		}),
+		i(213107, { -- Gladiator's Ragged Greatsword
+			["cost"] = {{"c", TRADERS_TENDER, 275}},
+		}),
+		i(213393, { -- Guise of the Golden Masquerade
+			["cost"] = {{"c", TRADERS_TENDER, 200}},
+		}),
+		i(213394, { -- Ebony Crown of the Red Rose
+			["cost"] = {{"c", TRADERS_TENDER, 250}},
+		}),
+		i(213395, { -- Gloves of the Midnight Soiree
+			["cost"] = {{"c", TRADERS_TENDER, 100}},
+		}),
+		i(213396, { -- Classic Midnight Tabard
+			["cost"] = {{"c", TRADERS_TENDER, 100}},
+		}),
+		i(217043, { -- Pokee
+			["cost"] = {{"c", TRADERS_TENDER, 350}},
+		}),
+		i(54069, { -- Blazing Hippogryph
+			["cost"] = {{"c", TRADERS_TENDER, 600}},
+		}),
+		--]]
 	})),
 });

@@ -1,5 +1,0 @@
-4.4.0.53627
-title(213),	-- %s the Camel-Hoarder
-title(217),	-- Warbringer %s
-10.2.6.53840
-title(543),	-- Deck Hand %s

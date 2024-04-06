@@ -29,6 +29,14 @@ i(217282, 439128);	-- Moonsteel Broadsword
 i(215384, 435910);	-- Low-Background Truesilver Plates
 i(215383, 435906);	-- Reflective Truesilver Braincage
 i(215155, 435908);	-- Tempered Interference-Negating Helmet
+
+------------------
+-- PATCH 1.15.2 --
+------------------
+--- QUEST ---
+i(0, 446191);		-- Baleful Pauldrons
+i(0, 446188);		-- Fearmonger's Shoulderguards
+i(0, 446179);		-- Shoulderplates of Dread
 -- #endif
 
 -----------------

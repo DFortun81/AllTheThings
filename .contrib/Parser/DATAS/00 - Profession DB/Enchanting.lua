@@ -24,6 +24,14 @@ i(0, 439134);		-- Greater Mystic Wand
 i(215138, 435903);	-- Enchant Chest - Retricutioner
 i(215129, 435481);	-- Enchant Weapon - Dismantle
 i(215141, 439156);	-- Sigil of Innovation
+
+------------------
+-- PATCH 1.15.2 --
+------------------
+--- ITEM ---
+i(223163, 448624);	-- Scroll of Spatial Mending
+--- QUEST ---
+i(0, 446243);		-- Sigil of Living Dreams
 -- #endif
 
 -----------------

@@ -11,6 +11,9 @@
 439128@@@Moonsteel Broadsword [Classic]
 439130@@@Golden Scale Shoulders [Classic]
 439132@@@Golden Scale Leggings [Classic]
+446191@@@Baleful Pauldrons [Classic]
+446188@@@Fearmonger's Shoulderguards [Classic]
+446179@@@Shoulderplates of Dread [Classic]
 110955@@@Release Spirit
 253151@@@Precision Attitude Adjuster [Engi]
 253152@@@Precision Attitude Adjuster [Engi]

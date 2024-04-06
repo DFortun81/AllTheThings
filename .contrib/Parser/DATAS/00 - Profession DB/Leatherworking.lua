@@ -43,8 +43,19 @@ i(215422, 435949);	-- Glowing Hyperconductive Scale Coif
 i(215423, 435951);	-- Gneuro-Conductive Channeler's Hood
 i(217266, 439112);	-- Guardian Belt
 i(217264, 439110);	-- Guardian Leather Bracers
-i(215424, 435953); -- Rad-Resistant Scale Hood
+i(215424, 435953);	-- Rad-Resistant Scale Hood
 i(217271, 439118);	-- Turtle Scale Gloves
+
+------------------
+-- PATCH 1.15.2 --
+------------------
+--- QUEST ---
+i(0, 446186);		-- Cacophonous Chain Shoulderguards
+i(0, 446192);		-- Membrane of Dark Neurosis
+i(0, 446183);		-- Paranoia Mantle
+i(0, 446189);		-- Shoulderpads of Obsession
+i(0, 446185);		-- Shrieking Spaulders
+i(0, 446190);		-- Wailing Chain Mantle
 -- #endif
 
 -----------------

@@ -24,7 +24,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(5767, {	-- Scourer of the Eternal Sands
 					["provider"] = { "i", 63046 },	-- Reins of the Grey Riding Camel
 					["groups"] = {
-						title(143),		-- the Camel-Hoarder
+						-- #if NOT ANYCLASSIC
+						title(143),	-- <Name> the Camel-Hoarder
+						-- #else
+						title(213),	-- <Name> the Camel-Hoarder
+						-- #endif
 					},
 				}),
 				ach(4872, {	-- Unearthing Uldum

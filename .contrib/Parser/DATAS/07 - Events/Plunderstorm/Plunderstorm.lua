@@ -61,9 +61,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 	}),
 	-- Renown Rewards
 	n(PLUNDERSTORM, {
+		n(FACTION, {
+			faction(2593),	-- Keg Leg's Crew
+		}),
 		n(RENOWN, bubbleDownRep(2593, {
 			{	-- RENOWN 1 --
 				i(216775),	-- Deadly Dagger
+				title(543, {	-- Deck Hand <Name>
+					["collectible"] = false,
+				}),
 			},{ -- RENOWN 2 --
 				i(216987),	-- Swabbie's Gloves
 				title(542, {	-- Swabbie <Name>
@@ -80,7 +86,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 					["g"] = {
 						i(217397),	-- Keg-Stamped Coin x15
 					},
-				}),	
+				}),
 			},{ -- RENOWN 6 --
 				pet(4435),	-- Happy (PET!)
 				i(216988),	-- Spun Cotton Shirt

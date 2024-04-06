@@ -3,6 +3,8 @@
 435903@@@Enchant Chest - Retricutioner [Classic]
 439134@@@Greater Mystic Wand [Classic]
 439156@@@Sigil of Innovation [Classic]
+446243@@@Sigil of Living Dreams [Classic]
+448624@@@Scroll of Spatial Mending [Classic]
 7451@@@Zone Player Total - Horde \\ Imbue Chest - Minor Spirit [Reused to another spellID]
 10000@@@Douse Lock \\ Plans: Wicked Mithril Blade [Blacksmithing]
 110955@@@Release Spirit

@@ -33036,35 +33036,6 @@ i(178012),	-- Spoiled Contaminant \\ TR: Versatile III - 20 Corruption \\ Preser
 i(178013),	-- Spoiled Contaminant \\ TR: Void Ritual I - 15 Corruption \\ Preserved Contaminant: Void Ritual
 i(178014),	-- Spoiled Contaminant \\ TR: Void Ritual II - 35 Corruption \\ Preserved Contaminant: Void Ritual
 i(178015),	-- Spoiled Contaminant \\ TR: Void Ritual III - 66 Corruption \\ Preserved Contaminant: Void Ritual
-10.0.0.44649
-i(190774),	-- Slumbering Caldera Robe
-i(190775),	-- Slumbering Caldera Gauntlets
-i(190776),	-- Slumbering Caldera Girdle
-i(190777),	-- Slumbering Caldera Pauldrons
-i(190778),	-- Slumbering Caldera Legguards
-i(190779),	-- Slumbering Caldera Sabatons
-i(190780),	-- Slumbering Caldera Crown
-i(190781),	-- Slumbering Caldera Bracers
-i(190782),	-- Slumbering Caldera Hauberk
-10.0.5.47799
-i(189869),	-- Distinguished Warcloak
-i(190067),	-- Tidecaller's Grips
-i(190068),	-- Emerald Drape
-i(190072),	-- Tidecaller's Hauberk
-i(190201),	-- Sin'dorei Assassin's Shroud
-i(190432),	-- Tidecaller's Bracers
-i(190440),	-- Tidecaller's Crown
-i(190556),	-- Tidecaller's Legguards
-i(190672),	-- Deathguard Acolyte's Cloak
-i(190700),	-- Tidecaller's Boots
-i(190709),	-- Tidecaller's Pauldrons
-10.1.0.49890
-i(190077),	-- Scarlet Zealot's Heater Shield
-i(190796),	-- Ensemble: Slumbering Caldera Regalia
-10.1.5.50355
-i(190559),	-- Helm of the Swift
-i(190561),	-- Crystalblade of Shifting Magic
-i(200917),	-- Ensemble: Tidecaller's Chainmail
 10.2.6.53840
 i(216489),	-- Golden Egg Heirloom
 i(217409),	-- Aspects' Token of Merit

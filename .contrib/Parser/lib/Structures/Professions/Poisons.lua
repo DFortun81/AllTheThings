@@ -2,6 +2,9 @@
 -- POISONS --
 -------------
 CLASSIC_POISONS = bubbleDown({ ["timeline"] = { REMOVED_3_0_2 }, ["classes"] = { ROGUE } }, {
+	-- #if SEASON_OF_DISCOVERY
+	applyclassicphase(SOD_PHASE_THREE, r(439503)),	-- Atrophic Poison
+	-- #endif
 	r(6510, {["timeline"] = {REMOVED_2_0_1}}),	-- Blinding Powder
 	r(3420),	-- Crippling Poison
 	r(3421),	-- Crippling Poison II
@@ -19,6 +22,10 @@ CLASSIC_POISONS = bubbleDown({ ["timeline"] = { REMOVED_3_0_2 }, ["classes"] = {
 	r(5763),	-- Mind-numbing Poison
 	r(8694),	-- Mind-numbing Poison II
 	r(11400),	-- Mind-numbing Poison III
+	-- #if SEASON_OF_DISCOVERY
+	applyclassicphase(SOD_PHASE_THREE, r(439505)),	-- Numbing Poison
+	applyclassicphase(SOD_PHASE_THREE, r(439500)),	-- Sebacious Poison
+	-- #endif
 	r(13220),	-- Wound Poison
 	r(13228),	-- Wound Poison II
 	r(13229),	-- Wound Poison III

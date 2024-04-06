@@ -14,6 +14,14 @@ i(210709, 426607);	-- Elixir of Coalesced Regret
 i(215433, 435969);	-- Insulating Gniodine
 i(217399, 439960);	-- Lesser Arcane Elixir
 i(215163, 435971);	-- Mildly Irradiated Rejuvenation Potion
+
+------------------
+-- PATCH 1.15.2 --
+------------------
+--- QUEST ---
+i(0, 446226);		-- Flask of Everlasting Nightmares
+i(0, 446851);		-- Flask of Nightmarish Mojo
+i(0, 448085);		-- Flask of Restless Dreams
 -- #endif
 
 -----------------

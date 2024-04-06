@@ -336,6 +336,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(5259),	-- Master of Twin Peaks
 			ach(4879),	-- Northrend Dungeon Explorer
 			ach(4878),	-- Outland Dungeon Explorer
+			ach(6321),	-- Ruthless Gladiator's Twilight Drake
 			ach(5033),	-- Tour of Duty
 			ach(5125),	-- United Nations
 			ach(4954),	-- Warrior Duelist/Gladiator (WIP)

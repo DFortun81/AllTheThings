@@ -680,6 +680,10 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			faction(2575),	-- Dream Wardens (Paragon)
 		})),
+		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+			faction(2604),	-- Keg Leg's Crew (Paragon)
+			faction(2616),	-- Keg Leg Thrasher
+		})),
 	}),
 }));
 --]]

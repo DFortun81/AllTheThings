@@ -172,6 +172,9 @@
 2588@@@S03 - Scarlet Crusade Disguise
 1.15.1.53009
 2634@@@Blood Moon
+1.15.2.53941
+2641@@@Emerald Wardens
+2646@@@S03 - 50 - Tanaris Arena Opponent
 2.0.0.6080
 914@@@PLAYER, Blood Elf
 923@@@Farstriders
@@ -588,3 +591,6 @@
 2576@@@Druids of the Flame
 10.2.0.51239
 2575@@@Dream Wardens (Paragon)
+10.2.6.53840
+2604@@@Keg Leg's Crew (Paragon)
+2616@@@Keg Leg Thrasher

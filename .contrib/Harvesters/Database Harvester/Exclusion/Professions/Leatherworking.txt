@@ -12,6 +12,12 @@
 439114@@@Guardian Pants [Classic]
 439116@@@Turtle Scale Breastplate [Classic]
 439118@@@Turtle Scale Gloves [Classic]
+446183@@@Paranoia Mantle
+446185@@@Shrieking Spaulders
+446186@@@Cacophonous Chain Shoulderguards
+446189@@@Shoulderpads of Obsession
+446190@@@Wailing Chain Mantle
+446192@@@Membrane of Dark Neurosis
 351766@@@Greater Drums of War [Classic]
 351768@@@Greater Drums of Speed [Classic]
 351769@@@Greater Drums of Restoration [Classic]

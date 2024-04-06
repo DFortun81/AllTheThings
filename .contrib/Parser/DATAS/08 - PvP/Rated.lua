@@ -286,9 +286,15 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 		ach(5326, {	-- Warbringer of the Horde
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				title(144, {	-- Warbringer
+				-- #if NOT ANYCLASSIC
+				title(144, {	-- Warbringer <Name>
 					["races"] = HORDE_ONLY,
 				}),
+				-- #else
+				title(217, {	-- Warbringer <Name>
+					["races"] = HORDE_ONLY,
+				}),
+				-- #endif
 				ach(5824,  {	-- Veteran of the Horde II
 					["races"] = HORDE_ONLY,
 					["g"] = {
