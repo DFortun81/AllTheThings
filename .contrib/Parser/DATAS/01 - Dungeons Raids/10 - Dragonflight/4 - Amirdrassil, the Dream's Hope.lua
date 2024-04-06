@@ -585,7 +585,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["provider"] = { "n", 194842 },	-- Erden
 						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
 						["g"] = {
-							i(210918),	-- Adaptive Cooling Salve (QI!)
 							i(211396, {	-- Attuned Glowspore Grip (QI!)
 								i(208577),	-- Symbiotic Glowspore Grip (QI!)
 							}),
@@ -602,7 +601,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sourceQuests"] = { 77192 },	-- An Axe Tempered
 						["provider"] = { "n", 208421 },	-- Wrathion
 						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
-						["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
+						--["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
+						-- It seems this subzone is still in The Waking Shores (mapID 2022)
 						["g"] = {
 							i(206448, {	-- Fyr'alath the Dreamrender
 								ach(19450),	-- Fyr'alath the Dreamrender
