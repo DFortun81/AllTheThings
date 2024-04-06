@@ -409,12 +409,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 					["coord"] = { 43.7, 29.2, THE_VINDICAAR_KROKUUN_UPPER },
 				}),
-				q(48069, {	-- The Wrench Calls
-					["qg"] = 125525,	-- Durael
-					["sourceQuest"] = 46941,	-- The Path Forward
-					["timeline"] = { ADDED_7_3_0 },
-					["requireSkill"] = ENGINEERING,
-				}),
 				q(48344, {	-- We Have a Problem
 					["sourceQuests"] = { 48461 },	-- Where They Least Expect It
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon

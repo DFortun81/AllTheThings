@@ -21,10 +21,18 @@ root(ROOTS.Zones, {
 						i(136630),	-- "Twirling Bottom" Repeater
 						i(136632),	-- Chaos Blaster
 						i(136629),	-- Felgibber Shotgun
-						i(137703),	-- Schematic: Double-Barreled Cranial Cannon
-						i(137704),	-- Schematic: Ironsight Cranial Cannon
-						i(137702),	-- Schematic: Sawed-Off Cranial Cannon
-						i(137701),	-- Schematic: Semi-Automagic Cranial Cannon
+						i(137703, {	-- Schematic: Double-Barreled Cranial Cannon [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
+						i(137704, {	-- Schematic: Ironsight Cranial Cannon [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
+						i(137702, {	-- Schematic: Sawed-Off Cranial Cannon [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
+						i(137701, {	-- Schematic: Semi-Automagic Cranial Cannon [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
 						i(136631),	-- Surface-to-Infernal Rocket Launcher
 					},
 				}),

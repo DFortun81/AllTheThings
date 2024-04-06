@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						}),
 					},
 				}),
-				i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
+				i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
 			}),
 		}),
 	}),

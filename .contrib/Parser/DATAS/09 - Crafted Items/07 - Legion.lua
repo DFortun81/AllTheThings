@@ -277,65 +277,69 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 		filter(TOYS, {
 			i(132518),	-- Blingtron's Circuit Design Tutorial (TOY!)
-			i(151652),	-- Wormhole Generator: Argus (TOY!)
+			i(151652, {["timeline"] = {ADDED_7_3_0}}),	-- Wormhole Generator: Argus (TOY!)*
 		}),
 		n(ARMOR, {
-			i(132500),	-- Blink-Trigger Headgun*
-			i(132502),	-- Bolt-Action Headgun*
-			i(144333),	-- Chain Skullblasters*
-			i(132506),	-- Double-Barreled Cranial Cannon*
-			i(144334),	-- Heavy Skullblasters*
-			i(132507),	-- Ironsight Cranial Cannon*
-			i(132503),	-- Reinforced Headgun*
-			i(144332),	-- Rugged Skullblasters*
-			i(132505),	-- Sawed-Off Cranial Cannon*
-			i(132504),	-- Semi-Automagic Cranial Cannon*
-			i(132501),	-- Tactical Headgun*
-			i(144331),	-- Tailored Skullblasters*
+			i(132500),	-- Blink-Trigger Headgun
+			i(132502),	-- Bolt-Action Headgun
+			i(144333, {["timeline"] = {ADDED_7_1_5}}),	-- Chain Skullblasters
+			i(132506),	-- Double-Barreled Cranial Cannon
+			i(144334, {["timeline"] = {ADDED_7_1_5}}),	-- Heavy Skullblasters
+			i(132507),	-- Ironsight Cranial Cannon
+			i(132503),	-- Reinforced Headgun
+			i(144332, {["timeline"] = {ADDED_7_1_5}}),	-- Rugged Skullblasters
+			i(132505),	-- Sawed-Off Cranial Cannon
+			i(132504),	-- Semi-Automagic Cranial Cannon
+			i(132501),	-- Tactical Headgun
+			i(144331, {["timeline"] = {ADDED_7_1_5}}),	-- Tailored Skullblasters
 		}),
 		filter(RELICS_F, {
-			i(136687),	-- "The Felic"*
-			i(136688),	-- Shockinator*
+			i(136687),	-- "The Felic"
+			i(136688),	-- Shockinator
 		}),
-		cat(472, {	-- Devices
+		filter(MISC, {
+			i(132514),	-- Auto-Hammer
+			i(132509),	-- Deployable Bullet Dispenser
+			i(132515),	-- Failure Detection Pylon
+			i(151651, {["timeline"] = {ADDED_7_3_0}}),	-- Gravitational Reduction Slippers
+			i(132513),	-- Gunpack
+			i(132510),	-- Gunpowder Charge
+			i(132516),	-- Gunshoes
+			i(132517),	-- Intra-Dalaran Wormhole Generator
 			i(134125),	-- Mecha-Bond Imprint Matrix (CI!)
+			i(132511),	-- Pump-Action Bandage Gun
+			i(132523),	-- Reaves Battery
+			i(132530, {	-- Reaves Module: Bling Mode
+				["questID"] = 40736,	-- FLAG - Reaves Bling Module
+				["requireSkill"] = ENGINEERING,
+			}),
+			i(132526, {	-- Reaves Module: Failure Detection Mode
+				["questID"] = 40733,	-- FLAG - Reaves Failure Detection Module
+				["requireSkill"] = ENGINEERING,
+			}),
+			i(132528, {	-- Reaves Module: Fireworks Display Mode
+				["questID"] = 40734,	-- FLAG - Reaves Fireworks Module
+				["requireSkill"] = ENGINEERING,
+			}),
+			i(132531, {	-- Reaves Module: Piloted Combat Mode
+				["questID"] = 40737,	-- FLAG - Reaves Piloted Combat Module
+				["requireSkill"] = ENGINEERING,
+			}),
+			i(132525, {	-- Reaves Module: Repair Mode
+				["questID"] = 40732,	-- FLAG - Reaves Repair Module
+				["requireSkill"] = ENGINEERING,
+			}),
+			i(132529, {	-- Reaves Module: Snack Distribution Mode
+				["questID"] = 40735,	-- FLAG - Reaves Snack Distribution Module
+				["requireSkill"] = ENGINEERING,
+			}),
+			i(132524, {	-- Reaves Module: Wormhole Generator Mode
+				["questID"] = 40738,	-- FLAG - Reaves Wormhole Generator Module
+				["requireSkill"] = ENGINEERING,
+			}),
+			i(144341, {["timeline"] = {ADDED_7_1_5}}),	-- Rechargeable Reaves Battery
+			i(132982),	-- Sonic Environment Enhancer
 		}),
-		{
-			["name"] = "Robotics",
-			["categoryID"] = 474,
-			["g"] = {
-				i(144341, {	-- Rechargeable Reaves Battery
-					i(132524, {	-- Reaves Module: Wormhole Generator Mode
-						["questID"] = 40738,	-- FLAG - Reaves Wormhole Generator Module
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(132530, {	-- Reaves Module: Bling Mode
-						["questID"] = 40736,	-- FLAG - Reaves Bling Module
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(132531, {	-- Reaves Module: Piloted Combat Mode
-						["questID"] = 40737,	-- FLAG - Reaves Piloted Combat Module
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(132525, {	-- Reaves Module: Repair Mode
-						["questID"] = 40732,	-- FLAG - Reaves Repair Module
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(132529, {	-- Reaves Module: Snack Distribution Mode
-						["questID"] = 40735,	-- FLAG - Reaves Snack Distribution Module
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(132526, {	-- Reaves Module: Failure Detection Mode
-						["questID"] = 40733,	-- FLAG - Reaves Failure Detection Module
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(132528, {	-- Reaves Module: Fireworks Display Mode
-						["questID"] = 40734,	-- FLAG - Reaves Fireworks Module
-						["requireSkill"] = ENGINEERING,
-					}),
-				}),
-			},
-		},
 	}),
 	-- #if BEFORE 8.0.1
 	prof(FIRST_AID, {

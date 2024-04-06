@@ -2965,19 +2965,19 @@ root(ROOTS.Zones, {
 					["coord"] = { 38.4, 24.7, LEGION_DALARAN },
 					["g"] = {
 						i(136630),	-- "Twirling Bottom" Repeater
-						i(144328, {	-- Boon of the Builder
+						i(144328, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Boon of the Builder
 							i(144330, {	-- Sprocket Container
 								i(136630),	-- "Twirling Bottom" Repeater
 								i(136632),	-- Chaos Blaster
 								i(132509),	-- Deployable Bullet Dispenser
 								i(136629),	-- Felgibber Shotgun
-								i(144337),	-- Schematic: Chain Skullblasters
-								i(144338),	-- Schematic: Heavy Skullblasters
-								i(144336),	-- Schematic: Rugged Skullblasters
-								i(144335),	-- Schematic: Tailored Skullblasters
+								i(144337),	-- Schematic: Chain Skullblasters (RECIPE!)
+								i(144338),	-- Schematic: Heavy Skullblasters (RECIPE!)
+								i(144336),	-- Schematic: Rugged Skullblasters (RECIPE!)
+								i(144335),	-- Schematic: Tailored Skullblasters (RECIPE!)
 								i(136631),	-- Surface-to-Infernal Rocket Launcher
 							}),
-						}),
+						})),
 						i(136632),	-- Chaos Blaster
 						i(139555, {	-- Designs of the Grand Architect
 							["cost"] = 80000000,	-- 8,000g
@@ -2987,17 +2987,39 @@ root(ROOTS.Zones, {
 						}),
 						i(136629),	-- Felgibber Shotgun
 						i(136782),	-- Fireworks Instruction Manual (CI!)
-						i(137709),	-- Schematic: Auto-Hammer [Rank 2] (RECIPE!)
-						i(137705),	-- Schematic: Deployable Bullet Dispenser [Rank 2] (RECIPE!)
-						i(133673),	-- Schematic: Double-Barreled Cranial Cannon [Rank 1] (RECIPE!)
-						i(137710),	-- Schematic: Failure Detection Pylon [Rank 2] (RECIPE!)
-						i(137708),	-- Schematic: Gunpack [Rank 2] (RECIPE!)
-						i(137691),	-- Schematic: Intra-Dalaran Wormhole Generator
-						i(133674),	-- Schematic: Ironsight Cranial Cannon [Rank 1] (RECIPE!)
-						i(137707),	-- Schematic: Pump-Action Bandage Gun [Rank 2] (RECIPE!)
-						i(141849),	-- Schematic: Reaves Module: Bling Mode
-						i(133672),	-- Schematic: Sawed-Off Cranial Cannon [Rank 1] (RECIPE!)
-						i(133671),	-- Schematic: Semi-Automagic Cranial Cannon [Rank 1] (RECIPE!)
+						i(137709, {	-- Schematic: Auto-Hammer [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40858 },	-- The Missing Pieces
+						}),
+						i(137705, {	-- Schematic: Deployable Bullet Dispenser [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40861 },	-- In My Sights
+						}),
+						i(133673, {	-- Schematic: Double-Barreled Cranial Cannon [Rank 1] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
+						i(137710, {	-- Schematic: Failure Detection Pylon [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40875 },	-- Going to Waste
+						}),
+						i(137708, {	-- Schematic: Gunpack [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40873 },	-- Keep Yer Powder Dry
+						}),
+						i(137691, {	-- Schematic: Intra-Dalaran Wormhole Generator
+							["sourceQuests"] = { 40868 },	-- Wibbly-Wobbly, Timey-Wimey
+						}),
+						i(133674, {	-- Schematic: Ironsight Cranial Cannon [Rank 1] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
+						i(137707, {	-- Schematic: Pump-Action Bandage Gun [Rank 2] (RECIPE!)
+							["sourceQuests"] = { 40869 },	-- Fire and Forget
+						}),
+						i(141849, {	-- Schematic: Reaves Module: Bling Mode (RECIPE!)
+							["sourceQuests"] = { 40881 },	-- Oil Rags to Riches
+						}),
+						i(133672, {	-- Schematic: Sawed-Off Cranial Cannon [Rank 1] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
+						i(133671, {	-- Schematic: Semi-Automagic Cranial Cannon [Rank 1] (RECIPE!)
+							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						}),
 						i(23817, {	-- Schematic: Titanium Toolbox
 							["isLimited"] = true,
 						}),
@@ -6275,7 +6297,7 @@ root(ROOTS.Zones, {
 						i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
-						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix
+						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(136706, {	-- Technique: Straszan Mark (RECIPE!)

@@ -555,25 +555,6 @@ root(ROOTS.Zones, {
 						),
 					}),
 				})),
-				prof(ENGINEERING, {
-					-- later
-					-- 7.3
-					q(48056, {	-- A Harsh Mistress
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-						["sourceQuests"] = { 48069 },	-- The Wrench Calls
-						["g"] = {
-							recipe(247717),	-- Gravitational Reduction Slippers
-						},
-					}),
-					q(48065, {	-- Extraterrestrial Exploration
-						["qg"] = 93520,	-- Didi the Wrench
-						["sourceQuests"] = { 48069 },	-- The Wrench Calls
-						["coord"] = { 38.8, 25.6, LEGION_DALARAN },
-						["g"] = {
-							recipe(247744),	-- Wormhole Generator: Argus
-						},
-					}),
-				}),
 				prof(FIRST_AID, {
 					n(93529, {	-- Olisarra the Kind <Bandage Trainer>
 						["coord"] = { 36.2, 37.6, LEGION_DALARAN },

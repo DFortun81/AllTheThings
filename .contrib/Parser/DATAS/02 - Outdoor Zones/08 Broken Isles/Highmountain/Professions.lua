@@ -39,7 +39,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
+					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
 				}),
 				prof(SKINNING, {
 					i(139893, {	-- Skinning Technique: Unbroken Tooth

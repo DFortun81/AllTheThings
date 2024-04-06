@@ -133,6 +133,89 @@ i("Cluster Launcher", 21737, 26443);
 i("Firework Launcher", 21738, 26442);
 
 -----------------
+-- PATCH 7.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 195112);		-- Engineering (Legion Master)
+i(0, 198976);		-- Auto-Hammer [Rank 1]
+i(0, 198980);		-- Blingtron's Circuit Design Tutorial
+i(0, 198939);		-- Blink-Trigger Headgun [Rank 1]
+i(0, 198991);		-- Blink-Trigger Headgun [Rank 2]
+i(0, 198966);		-- Bolt-Action Headgun [Rank 1]
+i(0, 198993);		-- Bolt-Action Headgun [Rank 2]
+i(0, 198972);		-- Deployable Bullet Dispenser [Rank 1]
+i(0, 198977);		-- Failure Detection Pylon [Rank 1]
+i(0, 198975);		-- Gunpack [Rank 1]
+i(0, 198973);		-- Gunpowder Charge [Rank 1]
+i(0, 198978);		-- Gunshoes
+i(0, 198974);		-- Pump-Action Bandage Gun [Rank 1]
+i(0, 198967);		-- Reinforced Headgun [Rank 1]
+i(0, 198994);		-- Reinforced Headgun [Rank 2]
+i(0, 198982);		-- Reaves Battery
+i(0, 198985);		-- Reaves Module: Failure Detection Mode
+i(0, 198987);		-- Reaves Module: Fireworks Display Mode
+i(0, 198990);		-- Reaves Module: Piloted Combat Mode
+i(0, 198984);		-- Reaves Module: Repair Mode
+i(0, 198988);		-- Reaves Module: Snack Distribution Mode
+i(0, 200466);		-- Sonic Environment Enhancer
+i(0, 198965);		-- Tactical Headgun [Rank 1]
+i(0, 198992);		-- Tactical Headgun [Rank 2]
+i(0, 198981);		-- Trigger
+--- ITEM ---
+i(136700, 209501);	-- "The Felic"
+i(137709, 199003);	-- Auto-Hammer [Rank 2]
+i(137723, 199017);	-- Auto-Hammer [Rank 3]
+i(137711, 199005);	-- Blink-Trigger Headgun [Rank 3]
+i(137713, 199007);	-- Bolt-Action Headgun [Rank 3]
+i(137705, 198999);	-- Deployable Bullet Dispenser [Rank 2]
+i(137719, 199013);	-- Deployable Bullet Dispenser [Rank 3]
+i(133673, 198970);	-- Double-Barreled Cranial Cannon [Rank 1]
+i(137703, 198997);	-- Double-Barreled Cranial Cannon [Rank 2]
+i(137717, 199011);	-- Double-Barreled Cranial Cannon [Rank 3]
+i(137710, 199004);	-- Failure Detection Pylon [Rank 2]
+i(137724, 199018);	-- Failure Detection Pylon [Rank 3]
+i(137708, 199002);	-- Gunpack [Rank 2]
+i(137722, 199016);	-- Gunpack [Rank 3]
+i(137706, 199000);	-- Gunpowder Charge [Rank 2]
+i(137720, 199014);	-- Gunpowder Charge [Rank 3]
+i(137691, 198979);	-- Intra-Dalaran Wormhole Generator
+i(133674, 198971);	-- Ironsight Cranial Cannon [Rank 1]
+i(137704, 198998);	-- Ironsight Cranial Cannon [Rank 2]
+i(137718, 199012);	-- Ironsight Cranial Cannon [Rank 3]
+i(137727, 209646);	-- Mecha-Bond Imprint Matrix
+i(137707, 199001);	-- Pump-Action Bandage Gun [Rank 2]
+i(137721, 199015);	-- Pump-Action Bandage Gun [Rank 3]
+i(141849, 198989);	-- Reaves Module: Bling Mode
+i(137695, 198983);	-- Reaves Module: Wormhole Generator Mode
+i(137714, 199008);	-- Reinforced Headgun [Rank 3]
+i(133672, 198969);	-- Sawed-Off Cranial Cannon [Rank 1]
+i(137702, 198996);	-- Sawed-Off Cranial Cannon [Rank 2]
+i(137716, 199010);	-- Sawed-Off Cranial Cannon [Rank 3]
+i(133671, 198968);	-- Semi-Automagic Cranial Cannon [Rank 1]
+i(137701, 198995);	-- Semi-Automagic Cranial Cannon [Rank 2]
+i(137715, 199009);	-- Semi-Automagic Cranial Cannon [Rank 3]
+i(136701, 209502);	-- Shockinator
+i(137712, 199006);	-- Tactical Headgun [Rank 3]
+
+-----------------
+-- PATCH 7.1.5 --
+-----------------
+--- ITEM ---
+i(144337, 235755);	-- Chain Skullblasters
+i(144338, 235756);	-- Heavy Skullblasters
+i(144336, 235754);	-- Rugged Skullblasters
+i(144335, 235753);	-- Tailored Skullblasters
+--- QUEST ---
+i(0, 235775);		-- Rechargeable Reaves Battery
+
+-----------------
+-- PATCH 7.3.0 --
+-----------------
+--- QUEST ---
+i(0, 247717);		-- Gravitational Reduction Slippers
+i(0, 247744);		-- Wormhole Generator: Argus
+
+-----------------
 -- PATCH 8.0.1 --
 -----------------
 i(0, 264475);		-- Engineering

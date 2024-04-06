@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				n(ZONE_DROPS, {
-					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
+					i(137717),	-- Schematic: Double-Barreled Cranial Cannon [Rank 3] (RECIPE!)
 				}),
 				e(1486, {	-- Hyrja
 					["creatureID"] = 95833,	-- Hyrja

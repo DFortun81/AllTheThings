@@ -8,10 +8,10 @@ root(ROOTS.Zones, {
 			n(ZONE_DROPS, {
 				["groups"] = {
 					i(144309),	-- Formula: Enchant Neck - Mark of the Master [Rank 2] (RECIPE!)
-					i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
+					i(137717, {	-- Schematic: Double-Barreled Cranial Cannon [Rank 3] (RECIPE!)
 						["crs"] = { 111393 },	-- Deathcaller Mystic
 					}),
-					i(136701),	-- Schematic: Shockinator
+					i(136701),	-- Schematic: Shockinator (RECIPE!)
 					i(141287, {	-- Law of Strength
 						["bonusID"] = 1812,
 					}),

@@ -566,6 +566,293 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "i", 144334 },	-- Heavy Skullblasters
 			}),
 		})),
+		n(QUESTS, {
+			q(40545, {	-- Aww Scrap!
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(195112, {	-- Engineering (Legion Master)
+						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+						["collectible"] = false,
+					}),
+					applyclassicphase(BFA_PHASE_ONE, r(264490, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Engineering
+				},
+			}),
+			q(40854, {	-- Endless Possibilities
+				["sourceQuests"] = { 40545 },	-- Aww Scrap!
+				["provider"] = { "n", 102193 },	-- Filgo Scrapbottom
+				["coord"] = { 66.4, 53.4, LEGION_THE_UNDERBELLY },
+			}),
+			q(40855, {	-- Our Man in Azsuna
+				["sourceQuests"] = { 40854 },	-- Endless Possibilities
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+			}),
+			q(40856, {	-- It'll Cost You
+				["sourceQuest"] = 40855,	-- Our Man in Azsuna
+				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
+				["coord"] = { 65.2, 24.8, AZSUNA },
+			}),
+			q(40859, {	-- The Latest Fashion: Headguns!
+				["sourceQuest"] = 40855,	-- Our Man in Azsuna
+				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
+				["coord"] = { 65.2, 24.8, AZSUNA },
+				["g"] = {
+					r(198939),	-- Blink-Trigger Headgun [Rank 1] (RECIPE!)
+					r(198966),	-- Bolt-Action Headgun [Rank 1] (RECIPE!)
+					r(198967),	-- Reinforced Headgun [Rank 1] (RECIPE!)
+					r(198965),	-- Tactical Headgun [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40858, {	-- The Missing Pieces
+				["sourceQuests"] = {
+					40856,	-- It'll Cost You
+					40859,	-- The Latest Fashion: Headguns!
+				},
+				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
+				["coord"] = { 65.2, 24.8, AZSUNA },
+				["g"] = {
+					r(198976),	-- Auto-Hammer [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40863, {	-- Always the Last Thing
+				["sourceQuests"] = { 40858 },	-- The Missing Pieces
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(198982),	-- Reaves Battery (RECIPE!)
+				},
+			}),
+			q(40864, {	-- Modular Modifications
+				["sourceQuests"] = { 40863 },	-- Always the Last Thing
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(198984),	-- Reaves Module: Repair Mode (RECIPE!)
+					r(198988),	-- Reaves Module: Snack Distrubition Mode (RECIPE!)
+				},
+			}),
+			q(40860, {	-- Resupplying the Line
+				["sourceQuests"] = { 40858 },	-- The Missing Pieces
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+			}),
+			q(40862, {	-- All Charged Up
+				["sourceQuests"] = { 40860 },	-- Resupplying the Line
+				["provider"] = { "n", 102197 },	-- Fargo Flintlocke
+				["coord"] = { 59.8, 62.2, VALSHARAH },
+				["g"] = {
+					r(198973),	-- Gunpowder Charge [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40861, {	-- In My Sights
+				["sourceQuests"] = { 40860 },	-- Resupplying the Line
+				["provider"] = { "n", 102197 },	-- Fargo Flintlocke
+				["coord"] = { 59.8, 62.2, VALSHARAH },
+				["g"] = {
+					r(198972),	-- Deployable Bullet Dispenser [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40870, {	-- Here Comes the BOOM!
+				["sourceQuests"] = {
+					40862,	-- All Charged Up
+					40861,	-- In My Sights
+				},
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(198987),	-- Reaves Module: Fireworks Display Mode (RECIPE!)
+				},
+			}),
+			q(40869, {	-- Fire and Forget
+				["sourceQuests"] = {
+					40862,	-- All Charged Up
+					40861,	-- In My Sights
+				},
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(198974),	-- Pump-Action Bandage Gun [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40865, {	-- It's Not Rocket Science
+				["sourceQuests"] = {
+					40862,	-- All Charged Up
+					40861,	-- In My Sights
+				},
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+			}),
+			q(40867, {	-- Bubble Baubles
+				["sourceQuests"] = { 40865 },	-- It's Not Rocket Science
+				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
+				["coord"] = { 78.2, 57.2, STORMHEIM },
+			}),
+			q(40866, {	-- The Shell, You Say?
+				["sourceQuests"] = { 40865 },	-- It's Not Rocket Science
+				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
+				["coord"] = { 78.2, 57.2, STORMHEIM },
+				["g"] = {
+					r(200466),	-- Sonic Environment Enhancer (RECIPE!)
+				},
+			}),
+			q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
+				["sourceQuests"] = {
+					40866,	-- The Shell, You Say?
+					40867,	-- Bubble Baubles
+				},
+				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
+				["coord"] = { 78.2, 57.2, STORMHEIM },
+			}),
+			q(40871, {	-- 'Locke and Load
+				["sourceQuests"] = { 40868 },	-- Wibbly-Wobbly, Timey-Wimey
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+			}),
+			q(40872, {	-- Going Out With a Bang
+				["sourceQuests"] = { 40871 },	-- 'Locke and Load
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
+				["coord"] = { 43.0, 62.8, AZSUNA },
+				["g"] = {
+					r(198978),	-- Gunshoes (RECIPE!)
+					i(133941),	-- Hobart's Prototype Gunshoes (QI!)
+				},
+			}),
+			q(40873, {	-- Keep Yer Powder Dry
+				["sourceQuests"] = { 40872 },	-- Going Out With a Bang
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
+				["coord"] = { 43.0, 62.8, AZSUNA },
+				["g"] = {
+					r(198975),	-- Gunpack [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40874, {	-- I'd Do It Myself, But...
+				["sourceQuests"] = { 40872 },	-- Going Out With a Bang
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
+				["coord"] = { 43.0, 62.8, AZSUNA },
+			}),
+			q(40875, {	-- Going to Waste
+				["sourceQuests"] = { 40872 },	-- Going Out With a Bang
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
+				["coord"] = { 43.0, 62.8, AZSUNA },
+				["g"] = {
+					r(198977),	-- Failure Detection Pylon [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40876, {	-- 'Locke, Stock and Barrel
+				["sourceQuests"] = {
+					40873,	-- Keep Yer Powder Dry
+					40874,	-- I'd Do It Myself, But...
+					40875,	-- Going to Waste
+				},
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
+				["coord"] = { 43.0, 62.8, AZSUNA },
+				["g"] = {
+					r(198991),	-- Blink-Trigger Headgun [Rank 2] (RECIPE!)
+					r(198993),	-- Bolt-Action Headgun [Rank 2] (RECIPE!)
+					r(198994),	-- Reinforced Headgun [Rank 2] (RECIPE!)
+					r(198992),	-- Tactical Headgun [Rank 2] (RECIPE!)
+				},
+			}),
+			q(40877, {	-- Halls of Valor: Trigger Happy
+				["sourceQuests"] = { 40876 },	-- 'Locke, Stock and Barrel
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["maps"] = { 703, 704, 705 },	-- Halls of Valor
+				["g"] = {
+					r(198981),	-- Trigger (RECIPE!)
+				},
+			}),
+			q(40878, {	-- Assault on Violet Hold: Cheating Death
+				["sourceQuests"] = { 40876 },	-- 'Locke, Stock and Barrel
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["maps"] = { 732 },	-- Assault of Violet Hold (Legion)
+				["cost"] = {{ "i", 132515, 2 }},	-- 2x Failure Detection Pylon
+				["g"] = {
+					r(198985),	-- Reaves Module: Failure Detection Mode (RECIPE!)
+				},
+			}),
+			q(40882, {	-- Court of Stars: Revamping the Recoil
+				["sourceQuests"] = { 40877 },	-- Halls of Valor: Trigger Happy
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["maps"] = { 761, 762, 763 },	-- Court of Stars
+				["g"] = {
+					i(133673),	-- Schematic: Double-Barreled Cranial Cannon [Rank 1] (RECIPE!)
+					i(133674),	-- Schematic: Ironsight Cranial Cannon [Rank 1] (RECIPE!)
+					i(133672),	-- Schematic: Sawed-Off Cranial Cannon [Rank 1] (RECIPE!)
+					i(133671),	-- Schematic: Semi-Automagic Cranial Cannon [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40880, {	-- Short Circuit
+				["sourceQuests"] = {
+					40877,	-- Halls of Valor: Trigger Happy
+					40878,	-- Assault on Violet Hold: Cheating Death
+				},
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(198980),	-- Blingtron's Circuit Design Tutorial (RECIPE!)
+				},
+			}),
+			q(40881, {	-- Oil Rags to Riches
+				["sourceQuests"] = { 40880 },	-- Short Circuit
+				["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
+				["coord"] = { 69.5, 68.4, TANARIS },
+				["g"] = {
+					i(141849),	-- Schematic: Reaves Module: Bling Mode (RECIPE!)
+				},
+			}),
+			q(40879, {	-- It's On With Automatons
+				["sourceQuests"] = { 40881 },	-- Oil Rags to Riches
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(198990),	-- Reaves Module: Piloted Combat Mode (RECIPE!)
+				},
+			}),
+			------ 7.1.5 ------
+			q(46119, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, { -- Boon of the Builder
+				["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					i(144328),	-- Boon of the Builder
+				},
+			})),
+			q(46128, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Time for a Recharge
+				["sourceQuests"] = { 40864 },	-- Modular Modifications
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(235775),	-- Rechargeable Reaves Battery
+				},
+			})),
+			------ 7.3.0 ------
+			q(48069, {	-- The Wrench Calls
+				["sourceQuests"] = { 46941 },	-- The Path Forward
+				["provider"] = { "n", 125525 },	-- Durael
+				["maps"] = { THE_VINDICAAR_EREDATH_LOWER },
+				["timeline"] = { ADDED_7_3_0 },
+			}),
+			q(48056, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- A Harsh Mistress
+				["sourceQuests"] = { 48069 },	-- The Wrench Calls
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+				["g"] = {
+					r(247717),	-- Gravitational Reduction Slippers (RECIPE!)
+				},
+			})),
+			q(48065, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Extraterrestrial Exploration
+				["sourceQuests"] = { 48069 },	-- The Wrench Calls
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
+				["coord"] = { 38.8, 25.6, LEGION_DALARAN },
+				["g"] = {
+					r(247744),	-- Wormhole Generator: Argus (RECIPE!)
+				},
+			})),
+		}),
 	})),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -3110,358 +3397,6 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Snake Firework",
 					["recipeID"] = 171074,
-				},
-			},
-		},
-	})),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
-		{
-			["name"] = "Goggles",
-			["categoryID"] = 470,
-			["groups"] = {
-				{
-					["name"] = "Blink-Trigger Headgun",
-					["nextRecipeID"] = 198991,
-					["recipeID"] = 198939,
-				},
-				{
-					["name"] = "Blink-Trigger Headgun",
-					["nextRecipeID"] = 199005,
-					["previousRecipeID"] = 198939,
-					["recipeID"] = 198991,
-				},
-				{
-					["name"] = "Blink-Trigger Headgun",
-					["previousRecipeID"] = 198991,
-					["recipeID"] = 199005,
-				},
-				{
-					["name"] = "Bolt-Action Headgun",
-					["nextRecipeID"] = 198993,
-					["recipeID"] = 198966,
-				},
-				{
-					["name"] = "Bolt-Action Headgun",
-					["nextRecipeID"] = 199007,
-					["previousRecipeID"] = 198966,
-					["recipeID"] = 198993,
-				},
-				{
-					["name"] = "Bolt-Action Headgun",
-					["previousRecipeID"] = 198993,
-					["recipeID"] = 199007,
-				},
-				{
-					["name"] = "Chain Skullblasters",
-					["recipeID"] = 235755,
-				},
-				{
-					["name"] = "Double-Barreled Cranial Cannon",
-					["nextRecipeID"] = 198997,
-					["recipeID"] = 198970,
-				},
-				{
-					["name"] = "Double-Barreled Cranial Cannon",
-					["nextRecipeID"] = 199011,
-					["previousRecipeID"] = 198970,
-					["recipeID"] = 198997,
-				},
-				{
-					["name"] = "Double-Barreled Cranial Cannon",
-					["previousRecipeID"] = 198997,
-					["recipeID"] = 199011,
-				},
-				{
-					["name"] = "Heavy Skullblasters",
-					["recipeID"] = 235756,
-				},
-				{
-					["name"] = "Ironsight Cranial Cannon",
-					["nextRecipeID"] = 198998,
-					["recipeID"] = 198971,
-				},
-				{
-					["name"] = "Ironsight Cranial Cannon",
-					["nextRecipeID"] = 199012,
-					["previousRecipeID"] = 198971,
-					["recipeID"] = 198998,
-				},
-				{
-					["name"] = "Ironsight Cranial Cannon",
-					["previousRecipeID"] = 198998,
-					["recipeID"] = 199012,
-				},
-				{
-					["name"] = "Reinforced Headgun",
-					["nextRecipeID"] = 198994,
-					["recipeID"] = 198967,
-				},
-				{
-					["name"] = "Reinforced Headgun",
-					["nextRecipeID"] = 199008,
-					["previousRecipeID"] = 198967,
-					["recipeID"] = 198994,
-				},
-				{
-					["name"] = "Reinforced Headgun",
-					["previousRecipeID"] = 198994,
-					["recipeID"] = 199008,
-				},
-				{
-					["name"] = "Rugged Skullblasters",
-					["recipeID"] = 235754,
-				},
-				{
-					["name"] = "Sawed-Off Cranial Cannon",
-					["nextRecipeID"] = 198996,
-					["recipeID"] = 198969,
-				},
-				{
-					["name"] = "Sawed-Off Cranial Cannon",
-					["nextRecipeID"] = 199010,
-					["previousRecipeID"] = 198969,
-					["recipeID"] = 198996,
-				},
-				{
-					["name"] = "Sawed-Off Cranial Cannon",
-					["previousRecipeID"] = 198996,
-					["recipeID"] = 199010,
-				},
-				{
-					["name"] = "Semi-Automagic Cranial Cannon",
-					["nextRecipeID"] = 198995,
-					["recipeID"] = 198968,
-				},
-				{
-					["name"] = "Semi-Automagic Cranial Cannon",
-					["nextRecipeID"] = 199009,
-					["previousRecipeID"] = 198968,
-					["recipeID"] = 198995,
-				},
-				{
-					["name"] = "Semi-Automagic Cranial Cannon",
-					["previousRecipeID"] = 198995,
-					["recipeID"] = 199009,
-				},
-				{
-					["name"] = "Tactical Headgun",
-					["nextRecipeID"] = 198992,
-					["recipeID"] = 198965,
-				},
-				{
-					["name"] = "Tactical Headgun",
-					["nextRecipeID"] = 199006,
-					["previousRecipeID"] = 198965,
-					["recipeID"] = 198992,
-				},
-				{
-					["name"] = "Tactical Headgun",
-					["previousRecipeID"] = 198992,
-					["recipeID"] = 199006,
-				},
-				{
-					["name"] = "Tailored Skullblasters",
-					["recipeID"] = 235753,
-				},
-			},
-		},
-		{
-			["name"] = "Combat Tools",
-			["categoryID"] = 471,
-			["groups"] = {
-				{
-					["name"] = "Deployable Bullet Dispenser",
-					["nextRecipeID"] = 198999,
-					["recipeID"] = 198972,
-				},
-				{
-					["name"] = "Deployable Bullet Dispenser",
-					["nextRecipeID"] = 199013,
-					["previousRecipeID"] = 198972,
-					["recipeID"] = 198999,
-				},
-				{
-					["name"] = "Deployable Bullet Dispenser",
-					["previousRecipeID"] = 198999,
-					["recipeID"] = 199013,
-				},
-				{
-					["name"] = "Gunpowder Charge",
-					["nextRecipeID"] = 199000,
-					["recipeID"] = 198973,
-				},
-				{
-					["name"] = "Gunpowder Charge",
-					["nextRecipeID"] = 199014,
-					["previousRecipeID"] = 198973,
-					["recipeID"] = 199000,
-				},
-				{
-					["name"] = "Gunpowder Charge",
-					["previousRecipeID"] = 199000,
-					["recipeID"] = 199014,
-				},
-				{
-					["name"] = "Pump-Action Bandage Gun",
-					["nextRecipeID"] = 199001,
-					["recipeID"] = 198974,
-				},
-				{
-					["name"] = "Pump-Action Bandage Gun",
-					["nextRecipeID"] = 199015,
-					["previousRecipeID"] = 198974,
-					["recipeID"] = 199001,
-				},
-				{
-					["name"] = "Pump-Action Bandage Gun",
-					["previousRecipeID"] = 199001,
-					["recipeID"] = 199015,
-				},
-			},
-		},
-		{
-			["name"] = "Devices",
-			["categoryID"] = 472,
-			["groups"] = {
-				{
-					["name"] = "Auto-Hammer",
-					["nextRecipeID"] = 199003,
-					["recipeID"] = 198976,
-				},
-				{
-					["name"] = "Auto-Hammer",
-					["nextRecipeID"] = 199017,
-					["previousRecipeID"] = 198976,
-					["recipeID"] = 199003,
-				},
-				{
-					["name"] = "Auto-Hammer",
-					["previousRecipeID"] = 199003,
-					["recipeID"] = 199017,
-				},
-				{
-					["name"] = "Blingtron's Circuit Design Tutorial",
-					["recipeID"] = 198980,
-				},
-				{
-					["name"] = "Failure Detection Pylon",
-					["nextRecipeID"] = 199004,
-					["recipeID"] = 198977,
-				},
-				{
-					["name"] = "Failure Detection Pylon",
-					["nextRecipeID"] = 199018,
-					["previousRecipeID"] = 198977,
-					["recipeID"] = 199004,
-				},
-				{
-					["name"] = "Failure Detection Pylon",
-					["previousRecipeID"] = 199004,
-					["recipeID"] = 199018,
-				},
-				{
-					["name"] = "Gravitational Reduction Slippers",
-					["recipeID"] = 247717,
-				},
-				{
-					["name"] = "Gunpack",
-					["nextRecipeID"] = 199002,
-					["recipeID"] = 198975,
-				},
-				{
-					["name"] = "Gunpack",
-					["nextRecipeID"] = 199016,
-					["previousRecipeID"] = 198975,
-					["recipeID"] = 199002,
-				},
-				{
-					["name"] = "Gunpack",
-					["previousRecipeID"] = 199002,
-					["recipeID"] = 199016,
-				},
-				{
-					["name"] = "Gunshoes",
-					["recipeID"] = 198978,
-				},
-				{
-					["name"] = "Intra-Dalaran Wormhole Generator",
-					["recipeID"] = 198979,
-				},
-				{
-					["name"] = "Leystone Buoy",
-					["recipeID"] = 209645,
-				},
-				{
-					["name"] = "Mecha-Bond Imprint Matrix",
-					["recipeID"] = 209646,
-				},
-				{
-					["name"] = "Sonic Environment Enhancer",
-					["recipeID"] = 200466,
-				},
-				{
-					["name"] = "Trigger",
-					["recipeID"] = 198981,
-				},
-				{
-					["name"] = "Wormhole Generator: Argus",
-					["recipeID"] = 247744,
-				},
-			},
-		},
-		{
-			["name"] = "Relics",
-			["categoryID"] = 489,
-			["groups"] = {
-				{
-					["name"] = "\"The Felic\"",
-					["recipeID"] = 209501,
-				},
-				{
-					["name"] = "Shockinator",
-					["recipeID"] = 209502,
-				},
-			},
-		},
-		{
-			["name"] = "Robotics",
-			["categoryID"] = 474,
-			["groups"] = {
-				{
-					["name"] = "Reaves Battery",
-					["recipeID"] = 198982,
-				},
-				{
-					["name"] = "Reaves Module: Bling Mode",
-					["recipeID"] = 198989,
-				},
-				{
-					["name"] = "Reaves Module: Failure Detection Mode",
-					["recipeID"] = 198985,
-				},
-				{
-					["name"] = "Reaves Module: Fireworks Display Mode",
-					["recipeID"] = 198987,
-				},
-				{
-					["name"] = "Reaves Module: Piloted Combat Mode",
-					["recipeID"] = 198990,
-				},
-				{
-					["name"] = "Reaves Module: Repair Mode",
-					["recipeID"] = 198984,
-				},
-				{
-					["name"] = "Reaves Module: Snack Distribution Mode",
-					["recipeID"] = 198988,
-				},
-				{
-					["name"] = "Reaves Module: Wormhole Generator Mode",
-					["recipeID"] = 198983,
-				},
-				{
-					["name"] = "Rechargeable Reaves Battery",
-					["recipeID"] = 235775,
 				},
 			},
 		},
