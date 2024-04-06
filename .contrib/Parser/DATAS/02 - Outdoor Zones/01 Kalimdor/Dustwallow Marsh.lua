@@ -1369,6 +1369,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131648, {	-- Frog Stompers
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
+						i(6807),	-- Frog Leg Stew
 					},
 				}),
 				-- #if AFTER TBC
