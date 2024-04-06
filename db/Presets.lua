@@ -1335,7 +1335,7 @@ app.PresetTransmogs = {
 		true, -- [34] FIST_WEAPONS
 		true, -- [35] WARGLAIVES
 		false, -- [36] THROWN
-		[57] = true,
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["DEATHKNIGHT"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1374,6 +1374,7 @@ app.PresetTransmogs = {
 		false, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["DRUID"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1412,6 +1413,7 @@ app.PresetTransmogs = {
 		true, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["HUNTER"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1450,6 +1452,7 @@ app.PresetTransmogs = {
 		true, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["MAGE"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1488,6 +1491,7 @@ app.PresetTransmogs = {
 		false, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["PALADIN"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1526,6 +1530,7 @@ app.PresetTransmogs = {
 		false, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["PRIEST"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1564,6 +1569,7 @@ app.PresetTransmogs = {
 		false, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["ROGUE"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1602,6 +1608,7 @@ app.PresetTransmogs = {
 		true, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["SHAMAN"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1640,6 +1647,7 @@ app.PresetTransmogs = {
 		true, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["WARLOCK"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1678,6 +1686,7 @@ app.PresetTransmogs = {
 		false, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 	["WARRIOR"] = {
 		true, -- [1] HELD_IN_OFF_HAND
@@ -1716,6 +1725,7 @@ app.PresetTransmogs = {
 		true, -- [34] FIST_WEAPONS
 		false, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,	-- [57] Profession Equipment
 	},
 }
 end
