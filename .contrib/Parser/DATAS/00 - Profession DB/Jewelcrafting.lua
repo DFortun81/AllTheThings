@@ -83,6 +83,127 @@ i(47010, 66576); -- Design: Accurate Dreadstone
 -- #ENDIF
 
 -----------------
+-- PATCH 8.0.1 --
+-----------------
+i(0, 256510);	-- Amberblaze Loop
+i(0, 256514);	-- Amberblaze Loop
+i(162378, 256515);	-- Amberblaze Loop
+i(162760, 256515);	-- Amberblaze Loop
+i(0, 264539);	-- Cataclysm Jewelcrafting
+i(0, 256689);	-- Deadly Solstone
+i(0, 256696);	-- Deadly Amberblaze
+i(0, 264544);	-- Draenor Jewelcrafting
+i(0, 272227);	-- Golden Beryl Ring
+i(0, 269734);	-- Honorable Combatant's Intuitive Staff
+i(163024, 269735);	-- Honorable Combatant's Intuitive Staff
+i(163025, 269736);	-- Honorable Combatant's Intuitive Staff
+i(0, 264532);	-- Jewelcrafting
+i(0, 278419);	-- Kaleidoscopic Lens
+i(0, 256700);	-- Kraken's Eye of Strength
+i(0, 256701);	-- Kraken's Eye of Agility
+i(0, 256702);	-- Kraken's Eye of Intellect
+i(0, 272228);	-- Kubiline Ring
+i(0, 264548);	-- Kul Tiran Jewelcrafting
+i(0, 272230);	-- Kyanite Ring
+i(0, 256255);	-- Laribole Staff of Alacrity
+i(0, 256256);	-- Laribole Staff of Alacrity
+i(162382, 256257);	-- Laribole Staff of Alacrity
+i(162764, 256257);	-- Laribole Staff of Alacrity
+i(0, 264546);	-- Legion Jewelcrafting
+i(0, 256692);	-- Masterful Kubiline
+i(0, 256698);	-- Masterful Tidal Amethyst
+i(0, 256693);	-- Insightful Rubellite
+i(0, 264537);	-- Northrend Jewelcrafting
+i(0, 264534);	-- Outland Jewelcrafting
+i(0, 256511);	-- Owlseye Loop
+i(0, 256516);	-- Owlseye Loop
+i(162379, 256517);	-- Owlseye Loop
+i(162761, 256517);	-- Owlseye Loop
+i(0, 264542);	-- Pandaria Jewelcrafting
+i(0, 256694);	-- Quick Golden Beryl
+i(0, 256699);	-- Quick Owlseye
+i(0, 256513);	-- Royal Quartz Loop
+i(0, 256520);	-- Royal Quartz Loop
+i(162381, 256521);	-- Royal Quartz Loop
+i(162763, 256521);	-- Royal Quartz Loop
+i(0, 256254);	-- Rubellite Staff of Intuition
+i(0, 256258);	-- Scarlet Diamond Staff of Intuition
+i(0, 256259);	-- Scarlet Diamond Staff of Intuition
+i(162385, 256260);	-- Scarlet Diamond Staff of Intuition
+i(162765, 256260);	-- Scarlet Diamond Staff of Intuition
+i(0, 272226);	-- Solstone Ring
+i(0, 256691);	-- Straddling Viridium
+i(0, 256512);	-- Tidal Amethyst Loop
+i(0, 256518);	-- Tidal Amethyst Loop
+i(162380, 256519);	-- Tidal Amethyst Loop
+i(162762, 256519);	-- Tidal Amethyst Loop
+i(0, 256690);	-- Versatile Kyanite
+i(0, 256695);	-- Versatile Royal Quartz
+i(0, 256253);	-- Viridium Staff of Alacrity
+i(0, 265811);	-- Zandalari Jewelcrafting
+
+-----------------
+-- PATCH 8.1.0 --
+-----------------
+i(0, 287272);	-- Aqueous Recalibration
+i(166541, 289175);	-- Emblazoned Kraken's Eye Loop
+i(166543, 289181);	-- Eternal Kraken's Eye Loop
+i(166540, 289174);	-- Imbued Kraken's Eye Loop
+i(0, 289105);	-- Kraken's Eye Loop
+i(0, 286651);	-- Sanguinated Recalibration
+i(0, 282343);	-- Sinister Combatant's Intuitive Staff
+i(165308, 282344);	-- Sinister Combatant's Intuitive Staff
+i(165309, 282345);	-- Sinister Combatant's Intuitive Staff
+i(166542, 289180);	-- Spirited Kraken's Eye Loop
+i(0, 289179);	-- Tidal Kraken's Eye Loop
+
+-----------------
+-- PATCH 8.1.5 --
+-----------------
+i(168027, 256703);	-- Jewelhammer's Focus
+i(0, 256611);	-- Mass Prospect Monelite
+i(0, 256622);	-- Mass Prospect Platinum
+i(0, 256613);	-- Mass Prospect Storm Silver
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+i(168772, 299018);	-- Ascended Leviathan's Eye Loop
+i(168771, 299017);	-- Crushing Leviathan's Eye Loop
+i(0, 298798);	-- Deadly Lava Lazuli
+i(0, 298799);	-- Leviathan's Eye of Strength
+i(0, 298800);	-- Leviathan's Eye of Agility
+i(0, 298801);	-- Leviathan's Eye of Intellect
+i(0, 299016);	-- Leviathan's Eye Loop
+i(0, 300619);	-- Mass Prospect Osmenite
+i(0, 298797);	-- Masterful Sea Currant
+i(0, 294793);	-- Notorious Combatant's Intuitive Staff
+i(169551, 294794);	-- Notorious Combatant's Intuitive Staff
+i(169552, 294795);	-- Notorious Combatant's Intuitive Staff
+i(0, 301993);	-- Prospecting
+i(0, 301994);	-- Prospecting
+i(0, 302706);	-- Prospecting
+i(0, 302707);	-- Prospecting
+i(0, 302708);	-- Prospecting
+i(0, 302710);	-- Prospecting
+i(0, 302711);	-- Prospecting
+i(0, 302712);	-- Prospecting
+i(0, 298796);	-- Quick Sand Spinel
+i(0, 300756);	-- Straddling Sage Agate
+i(0, 298794);	-- Versatile Dark Opal
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+i(171083, 305981);	-- Awakened Leviathan's Eye Loop
+i(171082, 305980);	-- Peerless Leviathan's Eye Loop
+i(174365, 305982);	-- Unbound Leviathan's Eye Loop
+i(0, 305168);	-- Uncanny Combatant's Intuitive Staff
+i(171159, 305170);	-- Uncanny Combatant's Intuitive Staff
+i(171158, 305171);	-- Uncanny Combatant's Intuitive Staff
+i(0, 307219);	-- Void Focus
+
+-----------------
 -- PATCH 9.0.1 --
 -----------------
 --- NYI ---
