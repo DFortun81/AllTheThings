@@ -319,6 +319,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 73.2, 56.6, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Alliance Attack Plans
+							["provider"] = { "i", 56469 },	-- Alliance Attack Plans
+							["coord"] = { 75.2, 58.0, STONETALON_MOUNTAINS },
+							["cr"] = 41864,	-- Huntress Davinia
+						}),
+					},
 				}),
 				q(1072, {	-- An Old Colleague
 					["qg"] = 4077,	-- Gaxim Rustfizzle
@@ -334,6 +341,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.2, 64.5, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Frightened Peon rescued
+							["provider"] = { "n", 41989 },	-- Frightened Peon
+						}),
+					},
 				}),
 				q(6284, {	-- Arachnophobia
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
@@ -361,6 +373,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Highborne Spirit Bound
+							["providers"] = {
+								{ "n", 41231 },	-- Enraged Highborne Spirit
+								{ "n", 41232 },	-- Bound Highborne Spirit
+								{ "i", 55972 },	-- Highborne Prison
+							},
+						}),
+					},
 				}),
 				q(25822, {	-- Armaments for War
 					["qg"] = 41229,	-- Force Commander Valen
@@ -369,6 +390,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Alliance Weapon Crate
+							["providers"] = {
+								{ "i",  56010 },	-- Alliance Weapon Crate
+								{ "o", 203279 },	-- Alliance Weapon Crate
+								{ "o", 203280 },	-- Alliance Weapon Crate
+							},
+							["coord"] = { 77.1, 76.9, STONETALON_MOUNTAINS },
+						}),
 						i(57450, {	-- Northwatch Amulet
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -389,6 +418,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Ascend the Charred Vale
+							["provider"] = { "i", 56221 },	-- Salsbury's Rocket Pack
+						}),
+					},
 				}),
 				q(26010, {	-- Ashes to Ashes
 					["qg"] = 41023,	-- Overlord Krom'gar
@@ -397,6 +431,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Northwatch Tent incinerated
+							["providers"] = {
+								{ "o", 203431 },	-- Northwatch Tent
+								{ "i",  56473 },	-- Krom'gar Flame Thrower
+							},
+							["coord"] = { 62.0, 63.0, STONETALON_MOUNTAINS },
+						}),
 						i(57479, {	-- Flamethrower's Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -432,6 +473,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Harbinger Aph'lass slain
+							["provider"] = { "n", 34923 },	-- Harbinger Aph'lass
+						}),
+						objective(2, {	-- 0/10 Invading Tentacle slain
+							["providers"] = {
+								{ "n", 34961 },	-- Invading Crusher
+								{ "n", 34917 },	-- Invading Tendril
+							},
+						}),
+					},
 				}),
 				q(25999, {	-- Barrier to Entry
 					["qg"] = 34341,	-- Saurboz
@@ -440,6 +492,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Krom'gar "Elf Killer" armed
+							["providers"] = {
+								{ "i",  56263 },	-- Land Mine Wrench
+								{ "o", 203414 },	-- Krom'gar "Elf Killer"
+							},
+						}),
 						i(57471, {	-- Elf-Killer Breastplate
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -460,9 +518,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Krom'gar Hot Air Balloon safely escorted to the Sludgewerks
+							["provider"] = { "n", 42030 },	-- Krom'gar Hot Air Balloon
+						}),
+					},
 				}),
 				q(26098, {	-- Betrayal at the Grove
-					["qg"] = 42091,	-- Orthus Cliffwalker
+					["providers"] = {
+						{ "n", 42091 },	-- Orthus Cliffwalker
+						{ "i", 56816 },	-- Krom'gar General's Insignia
+					},
 					["sourceQuest"] = 26097,	-- Proof of Lies
 					["coord"] = { 39.6, 46.4, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -474,6 +540,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.0, 64.5, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Raging Earth Elemental slain
+							["provider"] = { "n", 41993 },	-- Raging Earth Elemental
+						}),
+					},
 				}),
 				q(25730, {	-- BEWARE OF CRAGJAW!
 					["provider"] = { "o", 203186 },	-- STAY OUT!
@@ -481,6 +552,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Cragjaw's Huge Tooth
+							["provider"] = { "i", 55239 },	-- Cragjaw's Huge Tooth
+							["coord"] = { 66.0, 47.0, STONETALON_MOUNTAINS },
+							["cr"] = 41064,	-- Cragjaw
+						}),
 						i(57429, {	-- Fisherman's Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -502,6 +578,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Cragjaw's Huge Tooth
+							["provider"] = { "i", 55239 },	-- Cragjaw's Huge Tooth
+							["coord"] = { 66.0, 47.0, STONETALON_MOUNTAINS },
+							["cr"] = 41064,	-- Cragjaw
+						}),
 						i(57483, {	-- Cragpool Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -609,6 +690,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Seldarria's Egg destroyed
+							["providers"] = {
+								{ "o", 203384 },	-- Seldarria's Egg
+								{ "i",  56221 },	-- Salsbury's Rocket Pack
+							},
+						}),
 						i(57463, {	-- Brood-Killer Shoulderguard
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -633,6 +720,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Warsong Stockpile Incinerated
+							["providers"] = {
+								{ "o", 40957 },	-- Warsong Stockpile
+								{ "i", 55152 },	-- Warsong Flame Thrower
+							},
+							["coord"] = { 73.6, 50.2, STONETALON_MOUNTAINS },
+						}),
 						i(57426, {	-- Xakxak's Lab Frock
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -661,6 +755,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Eldre'thar Relic
+							["providers"] = {
+								{ "i",  55971 },	-- Eldre'thar Relic
+								{ "o", 203214 },	-- Eldre'thar Relic
+								{ "o", 203215 },	-- Eldre'thar Relic
+								{ "o", 203216 },	-- Eldre'thar Relic
+							},
+							["coord"] = { 48.5, 73.0, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(1087, {	-- Cenarius' Legacy
 					["qg"] = 4198,	-- Braelyn Firehand
@@ -687,6 +792,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Krom'gar Hot Air Balloon Diverted
+							["provider"] = { "n", 41009 },	-- Krom'gar Hot Air Balloon
+						}),
 						i(57420, {	-- Commandeered Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -766,6 +874,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Stonetalon Ram Horns
+							["provider"] = { "i", 56797 },	-- Stonetalon Ram Horns
+							["cr"] = 34894,	-- Stonetalon Ram
+						}),
+					},
 				}),
 				q(26062, {	-- Da Voodoo: Resonite Crystal
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
@@ -776,6 +890,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Resonite Crystal
+							["providers"] = {
+								{ "i",  56795 },	-- Resonite Crystal
+								{ "o", 178104 },	-- Resonite Crystal
+							},
+							["coord"] = { 60.0, 87.5, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(26060, {	-- Da Voodoo: Stormer Heart
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
@@ -783,6 +906,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Stormer Heart
+							["provider"] = { "i", 56796 },	-- Stormer Heart
+							["cr"] = 4008,	-- Cliff Stormer
+						}),
+					},
 				}),
 				q(25851, {	-- Dances with Grimtotem
 					["qg"] = 11858,	-- Grundig Darkcloud
@@ -821,6 +950,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Azure Iron Ore
+							["providers"] = {
+								{ "i",  55174 },	-- Azure Iron Ore
+								{ "o", 203132 },	-- Azure Iron Ore
+							},
+							["coord"] = { 71.9, 62.8, STONETALON_MOUNTAINS },
+							["cr"] = 40904,	-- Krom'gar Peon
+						}),
+					},
 				}),
 				q(25848, {	-- Downfall
 					["qg"] = 11858,	-- Grundig Darkcloud
@@ -828,6 +967,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Insignia of the Horde General
+							["providers"] = {
+								{ "i",  56080 },	-- Insignia of the Horde General
+								{ "o", 203281 },	-- Horde General's Chest
+							},
+							["coord"] = { 74.5, 87.8, STONETALON_MOUNTAINS },
+							["crs"] = {
+								41370,	-- General Vol'tar
+								41368,	-- General Vaurajo
+								41369,	-- General Salaman
+								41367,	-- General Glubgok
+							},
+						}),
+					},
 				}),
 				q(26026, {	-- Dream of a Better Tomorrow
 					["qg"] = 40907,	-- Clarissa
@@ -835,6 +989,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.0, 64.1, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 BD-816 War Apparatus
+							["providers"] = {
+								{ "i",  55227 },	-- BD-816 War Apparatus
+								{ "o", 203088 },	-- BD-816 War Apparatus
+							},
+							["coord"] = { 63.1, 45.7, STONETALON_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/1 Mechanized Fire
+							["providers"] = {
+								{ "i",  55221 },	-- Mechanized Fire
+								{ "o", 203174 },	-- Mechanized Fire
+							},
+							["coord"] = { 63.1, 56.8, STONETALON_MOUNTAINS },
+						}),
+						objective(3, {	-- 0/1 Mechanized Ice
+							["providers"] = {
+								{ "i",  55222 },	-- Mechanized Ice
+								{ "o", 203176 },	-- Mechanized Ice
+							},
+							["coord"] = { 66.1, 50.0, STONETALON_MOUNTAINS },
+						}),
+						objective(4, {	-- 0/1 Mechanized Air
+							["providers"] = {
+								{ "i",  55223 },	-- Mechanized Air
+								{ "o", 203175 },	-- Mechanized Air
+							},
+							["coord"] = { 60.0, 64.2, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(6481, {	-- Earthen Arise
 					["qg"] = 11861,	-- Mor'rogal
@@ -883,6 +1067,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 65.7, 63.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Marshal Paltrow slain
+							["provider"] = { "n", 41937 },	-- Marshal Paltrow
+							["coord"] = { 62.0, 67.8, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(1083, {	-- Enraged Spirits
 					["qg"] = 4080,	-- Kaela Shadowspear
@@ -925,6 +1115,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.0, 91.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Kalimdor Eagle Egg
+							["providers"] = {
+								{ "i",  56041 },	-- Kalimdor Eagle Egg
+								{ "o", 203253 },	-- Kalimdor Eagle Nest
+							},
+							["coord"] = { 64.6, 86.0, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(26077, {	-- Final Delivery
 					["qg"] = 42033,	-- Jibbly Rakit
@@ -932,6 +1131,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Krom'gar Hot Air Balloon taken to Cliffwalker Post
+							["provider"] = { "n", 42037 },	-- Krom'gar Hot Air Balloon
+						}),
+					},
 				}),
 				q(25662, {	-- Free Our Sisters
 					["qg"] = 40896,	-- Lord Fallowmere
@@ -939,6 +1143,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Captured Huntress rescued
+							["providers"] = {
+								{ "n",  41070 },	-- Captured Huntress
+								{ "o", 203148 },	-- Horde Cage
+								{ "i",  55200 },	-- Horde Cage Key
+							},
+							["coord"] = { 64.1, 66.7, STONETALON_MOUNTAINS },
+							["cr"] = 41062,	-- Krom'gar Infantry
+						}),
+					},
 				}),
 				q(1094, {	-- Further Instructions (1/2)
 					["providers"] = {
@@ -1043,9 +1258,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Grimtotem Armed
+							["providers"] = {
+								{ "n", 41351 },	-- Grimtotem Bodyguard
+								{ "i", 56069 },	-- Alliance Weapon Crate
+							},
+						}),
+					},
 				}),
 				q(25846, {	-- Grundig Darkcloud, Chieftain of the Grimtotem
-					["qg"] = 41229,	-- Force Commander Valen
+					["providers"] = {
+						{ "n", 41229 },	-- Force Commander Valen
+						{ "i", 56061 },	-- Alliance Weapon Crates
+					},
 					["sourceQuest"] = 25822,	-- Armaments for War
 					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1078,6 +1304,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 32.3, 60.4, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Black Dragon Whelp Filet
+							["provider"] = { "i", 56223 },	-- Black Dragon Whelp Filet
+							["cr"] = 34898,	-- Black Dragon Whelp
+						}),
+					},
 				}),
 				q(26045, {	-- I Got Your Parts Right Here...
 					["qg"] = 41991,	-- Sergeant Dontrag
@@ -1085,6 +1317,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Spare Part
+							["providers"] = {
+								{ "i",  56575 },	-- Spare Part
+								{ "o", 203443 },	-- Spare Part
+							},
+							["coord"] = { 66.6, 68.0, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(25739, {	-- If the Horde Don't Get You...
 					["qg"] = 40897,	-- Northwatch Captain Kosak
@@ -1092,6 +1333,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.4, 56.8, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Queen Silith slain
+							["provider"] = { "n", 41185 },	-- Queen Silith
+							["coord"] = { 57.6, 69.2, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(25647, {	-- Illegible Orc Letter
 					["provider"] = { "i", 55181 },	-- Illegible Orc Letter
@@ -1106,6 +1353,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Gnomish Flying Machine slain
+							["providers"] = {
+								{ "n", 42015 },	-- Gnomish Bomber
+								{ "n", 42016 },	-- Gnomish Flying Machine
+							},
+						}),
+						objective(2, {	-- 0/25 Gnome Wing Commander slain
+							["provider"] = { "n", 42017 },	-- Gnome Wing Commander
+						}),
+					},
 				}),
 				q(26099, {	-- Is This Justice?
 					["qg"] = 42039,	-- High Chieftain Cliffwalker
@@ -1113,6 +1371,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.0, 32.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 General Grebo slain
+							["provider"] = { "n", 42050 },	-- General Grebo
+						}),
+					},
 				}),
 				q(25808, {	-- Is This Thing On?
 					["qg"] = 41277,	-- Lieutenant Paulson
@@ -1120,6 +1383,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Master Assassin Kel'istra slain
+							["providers"] = {
+								{ "n", 41311 },	-- Master Assassin Kel'istra
+								{ "i", 56014 },	-- Infrared Heat Detection Device
+							},
+						}),
 						i(57447, {	-- Paulson's Crossbow
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1140,6 +1409,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 53.6, 42.3, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Krom'gar Log Book
+							["providers"] = {
+								{ "i",  56091 },	-- Krom'gar Log Book
+								{ "o", 203294 },	-- Krom'gar Log Book
+							},
+							["coord"] = { 51.0, 44.6, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(26067, {	-- Jin'Zil's Blessing
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
@@ -1147,6 +1425,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Krom'gar Marauder empowered
+							["providers"] = {
+								{ "n", 41360 },	-- Krom'gar Marauder
+								{ "i", 56798 },	-- Jin'Zil's Voodoo Stick
+							},
+						}),
+					},
 				}),
 				q(1058, {	-- Jin'Zil's Forest Magic
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
@@ -1192,6 +1478,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 BD-816 War Apparatus
+							["providers"] = {
+								{ "i",  55227 },	-- BD-816 War Apparatus
+								{ "o", 203088 },	-- BD-816 War Apparatus
+							},
+							["coord"] = { 63.1, 45.7, STONETALON_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/1 Mechanized Fire
+							["providers"] = {
+								{ "i",  55221 },	-- Mechanized Fire
+								{ "o", 203174 },	-- Mechanized Fire
+							},
+							["coord"] = { 63.1, 56.8, STONETALON_MOUNTAINS },
+						}),
+						objective(3, {	-- 0/1 Mechanized Ice
+							["providers"] = {
+								{ "i",  55222 },	-- Mechanized Ice
+								{ "o", 203176 },	-- Mechanized Ice
+							},
+							["coord"] = { 66.1, 50.0, STONETALON_MOUNTAINS },
+						}),
+						objective(4, {	-- 0/1 Mechanized Air
+							["providers"] = {
+								{ "i",  55223 },	-- Mechanized Air
+								{ "o", 203175 },	-- Mechanized Air
+							},
+							["coord"] = { 60.0, 64.2, STONETALON_MOUNTAINS },
+						}),
+					},
 				}),
 				q(1091, {	-- Kaela's Update
 					["providers"] = {
@@ -1250,6 +1566,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Kobold Army Unleashed!
+							["provider"] = { "i", 56799 },	-- Kobold War Horn
+						}),
 						i(57507, {	-- Kobold-Wrangler Leggings
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1265,7 +1584,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(26004, {	-- Krom'gar Fortress [Krom'gar Sergeant]
-					["qg"] = 34341,	-- Saurboz
+					["providers"] = {
+						{ "n", 34341 },	-- Saurboz
+						{ "i", 56469 },	-- Alliance Attack Plans
+					},
 					["sourceQuest"] = 26002,	-- Alliance Attack Plans
 					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1284,6 +1606,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Frightened Miner Rescued
+							["provider"] = { "n", 41283 },	-- Frightened Miner
+						}),
+					},
 				}),
 				q(26003, {	-- Lessons from the Lost Isles
 					["qg"] = 40926,	-- Kilag Gorefang
@@ -1291,6 +1618,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 47.6, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Darnassian Scout slain
+							["providers"] = {
+								{ "n", 41865 },	-- Darnassian Scout
+								{ "i", 56470 },	-- Infrared Heat Focals
+							},
+						}),
+					},
 				}),
 				q(26101, {	-- Might Makes Right [Krom'gar General]
 					["qg"] = 41023,	-- Overlord Krom'gar
@@ -1307,7 +1642,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(25649, {	-- Minx'll Fix It
-					["qg"] = 40879,	-- Boog the "Gear Whisperer"
+					["providers"] = {
+						{ "n", 40879 },	-- Boog the "Gear Whisperer"
+						{ "i", 67437 },	-- Illegible Orc Letter
+					},
 					["sourceQuest"] = 25647,	-- Illegible Orc Letter
 					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1320,6 +1658,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Gnomebot Pounder slain
+							["provider"] = { "n", 35203 },	-- Gnomebot Pounder
+						}),
+						objective(2, {	-- 0/20 Gnome Engineer slain
+							["provider"] = { "n", 35334 },	-- Gnome Engineer
+						}),
+						i(57518),	-- Mr. Bubble's Shockingly Delicious Ice Cream
+					},
 				}),
 				q(25728, {	-- Mr. P's Wild Ride
 					["qg"] = 40908,	-- Alice
@@ -1327,6 +1674,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Goblin Technician slain
+							["provider"] = { "n", 35333 },	-- Goblin Technician
+						}),
+						objective(2, {	-- 0/5 Goblin Harvester slain
+							["provider"] = { "n", 35204 },	-- Goblin Harvester
+						}),
+						i(57518),	-- Mr. Bubble's Shockingly Delicious Ice Cream
+					},
 				}),
 				q(6381, {	-- New Life
 					["qg"] = 11864,	-- Tammra Windfield
@@ -1426,7 +1782,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(25650, {	-- Orders from High Command
-					["qg"] = 40881,	-- Minx
+					["providers"] = {
+						{ "n", 40881 },	-- Minx
+						{ "i", 55182 },	-- Translated Orc Letter
+					},
 					["sourceQuest"] = 25649,	-- Minx'll Fix It
 					["coord"] = { 70.7, 63.0, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1438,6 +1797,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.0, 56.4, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Deepmoss Venom Sac
+							["provider"] = { "i", 55280 },	-- Deepmoss Venom Sac
+							["crs"] = {
+								4005,	-- Deepmoss Creeper
+								4007,	-- Deepmoss Venomspitter
+								4006,	-- Deepmoss Webspinner
+							},
+						}),
+					},
 				}),
 				q(26097, {	-- Proof of Lies
 					["qg"] = 42039,	-- High Chieftain Cliffwalker
@@ -1459,6 +1828,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Sentinel's Glaive
+							["provider"] = { "i", 56187 },	-- Sentinel's Glaive
+							["cr"] = 34969,	-- Corrupted Sentinel
+						}),
+					},
 				}),
 				q(1081, {	-- Reception from Tyrande
 					["qg"] = 4079,	-- Sentinel Thenysil
@@ -1530,6 +1905,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.1, 91.1, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Boulderslide Kobold subdued
+							["provider"] = { "i", 56794 },	-- Subjugator Devo's Whip
+							["crs"] = {
+								11918,	-- Boulderslide Stonepounder
+								11915,	-- Boulderslide Rock Keeper
+								11917,	-- Boulderslide Geomancer
+							},
+						}),
+					},
 				}),
 				q(26020, {	-- Report to Bombgutz
 					["qg"] = 41023,	-- Overlord Krom'gar
@@ -1588,6 +1973,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Huntress Illiona Freed
+							["providers"] = {
+								{ "n",  41071 },	-- Huntress Illiona
+								{ "o", 203171 },	-- Huntress Illiona's Cage
+								{ "i",  55213 },	-- Huntress Illiona's Cage Key
+							},
+							["coord"] = { 66.2, 54.6, STONETALON_MOUNTAINS },
+							["cr"] = 41063,	-- Warlord Roktrog
+						}),
 						i(57432, {	-- Thwarter's Boots
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1603,7 +1997,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25844, {	-- Sating the Savage Beast
-					["qg"] = 41278,	-- "Cookie" McWeaksauce
+					["providers"] = {
+						{ "n", 41278 },	-- "Cookie" McWeaksauce
+						{ "i", 56059 },	-- Meaty Offering
+					},
 					["sourceQuest"] = 25837,	-- A Proper Peace Offerin'
 					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1616,6 +2013,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Helpless Young Druid Rescued
+							["providers"] = {
+								{ "n", 41528 },	-- Helpless Young Druid
+								{ "i", 56168 },	-- Thal'darah's Hippogryph Whistle
+							},
+						}),
 						i(57460, {	-- Breastplate of Rescue
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1637,6 +2040,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/4 Oil Pump destroyed
+							["providers"] = {
+								{ "i", 56140 },	-- Goblin Pump Controller
+								{ "o", 41475 },	-- Oil Pump
+							},
+							["coord"] = { 50.6, 48.8, STONETALON_MOUNTAINS },
+						}),
 						i(57453, {	-- Yvonia's Pauldrons
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1661,6 +2071,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maxReputation"] = { 76, EXALTED },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/20 Alliance Soldier slain
+							["providers"] = {
+								{ "n", 35152 },	-- Battlescar Ancient
+								{ "n", 35153 },	-- Draenei Paladin
+								{ "n", 35150 },	-- Darnassian Glaive Thrower
+								{ "n", 41865 },	-- Darnassian Scout
+								{ "n", 35334 },	-- Gnome Engineer
+								{ "n", 35203 },	-- Gnomebot Pounder
+								{ "n", 42016 },	-- Gnomish Flying Machine
+								{ "n", 35154 },	-- Night Elf Mage
+								{ "n", 41935 },	-- Northwatch Encroacher
+								{ "n", 35151 },	-- Stonetalon Warder
+							},
+						}),
+					},
 				}),
 				q(25912, {	-- Seen Better Days
 					["qg"] = 41486,	-- Elder Sareth'na
@@ -1716,6 +2142,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Plant Explosives at First Beam
+							["provider"] = { "i", 56018 },	-- Dynamite Bundle
+							["coord"] = { 70, 75, STONETALON_MOUNTAINS },
+						}),
+						objective(2, {	-- Plant Explosives at Second Beam
+							["provider"] = { "i", 56018 },	-- Dynamite Bundle
+							["coord"] = { 69, 75, STONETALON_MOUNTAINS },
+						}),
+						objective(3, {	-- Plant Explosives at Third Beam
+							["provider"] = { "i", 56018 },	-- Dynamite Bundle
+							["coord"] = { 68, 72, STONETALON_MOUNTAINS },
+						}),
+						objective(4, {	-- Plant Explosives at Fourth Beam
+							["provider"] = { "i", 56018 },	-- Dynamite Bundle
+							["coord"] = { 68, 71, STONETALON_MOUNTAINS },
+						}),
 						i(57443, {	-- Deep Reach Helm
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
