@@ -186,7 +186,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
 				}, {
-					i(217700),	-- Scale of Awakening
+					i(217700, {	-- Scale of Awakening
+						["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+					}),
 					i(207780),	-- Ashen Ranger's Longbow
 					i(207167),	-- Ashes of the Embersoul
 					i(208614),	-- Augury of the Primal Flame
@@ -230,7 +232,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
 				}, {
-					i(217698),	-- Scale of Awakening
+					i(217698, {	-- Scale of Awakening
+						["classes"] = { EVOKER },
+					}),
 					i(202606),	-- Ashkandur, Fall of the Brotherhood
 					i(203963),	-- Beacon to the Beyond
 					i(204319),	-- Bloodfire Extraction Conduit
