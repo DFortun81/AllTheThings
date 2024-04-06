@@ -83,7 +83,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["g"] = {
 						i(193806),	-- Ancient Crosswrapped Sandals
 						i(193804),	-- Eternal Sentry's Ring
-						i(193805),	-- Inexorable Resonator
+						i(193805, {	-- Inexorable Resonator
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6 },
+						}),
+						i(212756, {	-- Inexorable Resonator
+							["timeline"] = { ADDED_10_2_6 },
+						}),
 						i(193808),	-- Sentinel's Battle Lance
 						i(193807),	-- Shoulders of Animated Stone
 					},

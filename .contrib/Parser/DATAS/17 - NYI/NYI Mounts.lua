@@ -378,13 +378,13 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 4.0.3
 		expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 			mount(68930, {	-- Brood of Onyxia (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 30175,
 			}),
 			mount(89520, {	-- Goblin Mini Hotrod (MOUNT!)
 				["displayID"] = 31988,
 			}),
 			mount(86579, {	-- Wooden Raft (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 27818,
 			}),
 			i(57859, {	-- Twilight Phoenix [Item: Essence of the Underworld (DEPRECATED)] (MOUNT!)
 				-- ["displayID"] = ,
@@ -394,7 +394,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 4.3.2
 		expansion(EXPANSION.CATA, 3.2, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_2 } }, {
 			mount(121805, {	-- RAF Mount III (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 38260,
 			}),
 		})),
 	}),
@@ -441,7 +441,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 5.1.0
 		expansion(EXPANSION.MOP, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
 			mount(134854, {	-- Cloud Mount (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 46799,
 			}),
 		})),
 
@@ -457,7 +457,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 6.0.2
 		expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			mount(150926, {	-- Draenor Chimera (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 52405,
 			}),
 			-- With MountID Attached
 			i(116657, {	-- Ancient Leatherhide (MOUNT!)
@@ -519,36 +519,36 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
 		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
-			mount(237285, {		-- Hyena Mount White (PH) (MOUNT!)
-				-- ["displayID"] = ,
+			mount(261963, {		-- Ebon Krolusk (MOUNT!)
+				["displayID"] = 75600,
 			}),
-			mount(261963, {		-- Mounted (MOUNT!)
-				-- ["displayID"] = ,
+			mount(237285, {		-- Hyena Mount White (PH) (MOUNT!)
+				["displayID"] = 75325,
+			}),
+			mount(260176, {		-- Kul Tiras Horse (PH) (MOUNT!)
+				["displayID"] = 82150,
 			}),
 			mount(256121, {		-- PH Goblin Hovercraft (Blue) (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 80510,
 			}),
 			mount(256125, {		-- PH Goblin Hovercraft (Green) (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 80511,
 			}),
 			mount(256124, {		-- PH Goblin Hovercraft (Red) (MOUNT!)
-				-- ["displayID"] = ,
-			}),
-			mount(260176, {		-- Proudmoore Horse 2 (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 80512,
 			}),
 			-- With MountID Attached
 			i(156885, {	-- Gold Gladiator's Proto-Drake (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 82805,
 			}),
 			i(156883, {	-- Green Gladiator's Proto-Drake (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 82806,
 			}),
 			i(156882, {	-- Pale Gladiator's Proto-Drake (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 82807,
 			}),
 			i(163063, {	-- Spectral Phoenix (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 	87701,
 			}),
 			-- Without MountID Attached
 			i(163188, {	-- Surf Jelly (MOUNT!)
@@ -567,7 +567,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 8.2.0
 		expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 			mount(301841, {	-- Kua'fon (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 89375,
 			}),
 			mount(302796, {	-- Swift Spectral Armored Gryphon (MOUNT!)
 				["displayID"] = 92403,
@@ -591,26 +591,26 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			mount(312772, {	-- Gilded Prowler (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 93771,
 			}),
 			mount(332257, {	-- Gorm (Yellow) (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 94349,
 			}),
 			mount(332908, {	-- PH Devourer Mite (Green) (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 94354,
 			}),
 			mount(312758, {	-- PH Epic Phalynx (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 94338,
 			}),
 			mount(312756, {	-- PH Phalynx (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 94334,
 			}),
 			-- With MountID Attached
 			i(182083, {	-- Bonecleaver's Skullboar (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 96454,
 			}),
 			i(181817, {	-- Deathbringer's Flayedwing (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 95142,
 			}),
 			-- Without MountID Attached
 			i(184035, {	-- Silessa's Harness (MOUNT!)
@@ -621,7 +621,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 9.0.5
 		expansion(EXPANSION.SL, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
 			mount(347813, {	-- Fireplume Phoenix (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100428,
 			}),
 		})),
 
@@ -629,13 +629,13 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			-- With MountID Attached
 			i(186639, {	-- Pilfered Gearglider (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100052,
 			}),
 			i(186640, {	-- Silver Gearglider (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100053,
 			}),
 			i(186491, {	-- Spring Wilderling (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 101004,
 			}),
 			-- Without MountID Attached
 			i(187412, {	-- Shardhide Ka-Sha (MOUNT!)
@@ -646,7 +646,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 9.1.5
 		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 			mount(350529, {	-- NAK's Test Mount [DNT] (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 102040,
 			}),
 		})),
 
@@ -672,86 +672,86 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 10.0.0
 		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			mount(371571, {	-- Dragon Isles Drake Model Test (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 102924,
 			}),
 			mount(376909, {	-- [PH] Blue Armored River Otter (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 102079,
 			}),
 			mount(374181, {	-- [PH] Mammoth V2 Blue (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100961,
 			}),
 			mount(387948, {	-- [PH] Wind Proto-Drake (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 109120,
 			}),
 			mount(351404, {	-- PH Mammoth V2 Lava (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100964,
 			}),
 			mount(385767, {	-- PH White Slyvern (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 102150,
 			}),
 			mount(385771, {	-- PH Yellow Slyvern (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 102151,
 			}),
 			mount(372995, {	-- Swift Spectral Drake (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 107207,
 			}),
 			-- With MountID Attached
 			i(192766, {	-- Amber Skitterfly (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100693,
 			}),
 			i(194722, {	-- Carrier Yeti (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 107944,
 			}),
 			i(192804, {	-- Restless Hornstrider (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 101161,
 			}),
 			i(198821, {	-- Divine Kiss of Ohn'ahra (MOUNT!)
 				["displayID"] = 110505,
 			}),
 			i(198823, {	-- [PH] Brown Wind Eagle (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 108742,
 			}),
 			i(192787, {	-- [PH] Mammoth V2 Dark (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100957,
 			}),
 			i(192789, {	-- [PH] Mammoth V2 Gray (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100959,
 			}),
 			i(192771, {	-- [PH] Water Salamander Blue (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 101173,
 			}),
 			i(192773, {	-- [PH] Water Salamander Orange (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 101166,
 			}),
 			i(192748, {	-- PH Moose Bull Brown (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100691,
 			}),
 			i(192781, {	-- PH Lava Slug Blue (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 108841,
 			}),
 			i(192778, {	-- PH Lava Slug Orange (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 108836,
 			}),
 			i(192780, {	-- PH Lava Slug Orange [Item: [PH] Lava Snail Orange] (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 108836,
 			}),
 			i(192782, {	-- PH Lava Slug Yellow (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 108840,
 			}),
 			i(192802, {	-- PH Primal Tallstrider Black (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 101159,
 			}),
 			i(192803, {	-- PH Primal Tallstrider Red (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 101162,
 			}),
 			i(192801, {	-- PH Primal Tallstrider White (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 101163,
 			}),
 			i(192793, {	-- PH Thunder Lizard Black (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100969,
 			}),
 			i(192794, {	-- PH Thunder Lizard Blue (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 100968,
 			}),
 			-- Without MountID Attached
 			i(194106, {	-- Highland Drake (MOUNT!)
@@ -780,42 +780,54 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			-- With MountID Attached
 			i(210141, {	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 111719,
 			}),
 			i(210143, {	-- [PH] White-Furred Bakar (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 111729,
 			}),
 			i(210144, {	-- [PH] Yellow-Furred Spiky Bakar (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 111730,
 			}),
 			i(210145, {	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
-				-- ["displayID"] = ,
+				["displayID"] = 111731,
 			}),
-			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!) [Trading Post?]
+			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!)
 				["displayID"] = 114788,
 			}),
-			i(211089, {	-- Felreaver Deathcycle (MOUNT!) [Trading Post?]
+			i(211089, {	-- Felreaver Deathcycle (MOUNT!)
 				["displayID"] = 114785,
 			}),
-			i(211086, {	-- Jeweled Jade Scarab (MOUNT!) [Trading Post?]
+			i(211086, {	-- Jeweled Jade Scarab (MOUNT!)
 				["displayID"] = 114744,
 			}),
-			i(211085, {	-- Jeweled Sapphire Scarab (MOUNT!) [Trading Post?]
+			i(211085, {	-- Jeweled Sapphire Scarab (MOUNT!)
 				["displayID"] = 114737,
 			}),
-			i(211087, {	-- Shadowflame Hellbike (MOUNT!) [Trading Post?]
+			i(211087, {	-- Shadowflame Hellbike (MOUNT!)
 				["displayID"] = 114787,
 			}),
 			-- Without MountID Attached
-			i(210140, {	-- [PH] Black-Furred Bakar
+			i(210140, {	-- [PH] Black-Furred Bakar (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 		})),
 
 		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			-- With MountID Attached
+			i(212631, {	-- Brilliant Sunburst Peafowl (MOUNT!)
+				-- ["displayID"] = ,
+			}),
+			i(212228, {	-- Soaring Sky Fox (MOUNT!)
+				-- ["displayID"] = ,
+			}),
+			i(212632, {	-- Starry Twilight Peafowl (MOUNT!)
+				-- ["displayID"] = ,
+			}),
 			-- Without MountID Attached
-			i(211486),	-- Winding Slitherdrake (MOUNT!)
+			i(211486, {	-- Winding Slitherdrake (MOUNT!)
+				-- ["displayID"] = ,
+			}),
 		})),
 	}),
 }));

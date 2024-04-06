@@ -48,7 +48,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
-						i(193628),	-- Tome of Unstable Power
+						i(193628, {	-- Tome of Unstable Power
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6 },
+						}),
+						i(212685, {	-- Tome of Unstable Power
+							["timeline"] = { ADDED_10_2_6 },
+						}),
 						i(193630),	-- Twenty-Two-League Striders
 					},
 				}),
@@ -72,7 +77,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(193642),	-- Mantle of Yearned Freedom
 						i(193646),	-- Refraction's Edge
 						i(193643),	-- Stasis Freed Leggings
-						i(193639),	-- Umbrelskul's Fractured Heart
+						i(193639, {	-- Umbrelskul's Fractured Heart
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6 },
+						}),
+						i(212684, {	-- Umbrelskul's Fractured Heart
+							["timeline"] = { ADDED_10_2_6 },
+						}),
 						i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
 						i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
 					},

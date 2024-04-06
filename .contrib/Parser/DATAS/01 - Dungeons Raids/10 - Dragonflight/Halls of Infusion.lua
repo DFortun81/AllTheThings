@@ -45,7 +45,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["g"] = {
 						i(193731),	-- Circle of Ascended Frost
 						i(193735),	-- Earthshaker's Steel Visor
-						i(193732),	-- Globe of Jagged Ice
+						i(193732, {	-- Globe of Jagged Ice
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6 },
+						}),
+						i(212683, {	-- Globe of Jagged Ice
+							["timeline"] = { ADDED_10_2_6 },
+						}),
 						i(193734),	-- Hauberk of Frozen Fervor
 						i(193733),	-- Khajin's Hailstone Footwraps
 					},
@@ -59,7 +64,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(193740),	-- Torrential Downpour Gauntlets
 						i(193739),	-- Treads of Restored Order
 						i(193742),	-- Undertow Tideblade
-						i(193736),	-- Water's Beating Heart
+						i(193736, {	-- Water's Beating Heart
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6 },
+						}),
+						i(212682, {	-- Water's Beating Heart
+							["timeline"] = { ADDED_10_2_6 },
+						}),
 						i(196975),	-- Cliffside Wylderdrake: Head Fin (DM!)
 						i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
 					},

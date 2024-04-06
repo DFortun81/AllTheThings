@@ -630,6 +630,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 
 		--10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			ach(19031),	-- Fyrn
 			ach(19696),	-- Hearthstone Anniversary Mail
 		})),
 	}),

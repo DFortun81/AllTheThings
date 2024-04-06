@@ -1279,8 +1279,6 @@ i(208087);	-- Unknown
 -- PATCH 10.2.5 --
 ------------------
 i(210975);	-- Date Simulation Modulator
-i(212524);	-- Delicate Crimson Parasol
-i(212525);	-- Delicate Ebony Parasol
 i(212523);	-- Delicate Jade Parasol
 i(190196);	-- Enlightened Hearthstone
 i(211864);	-- Exquisite Love Boat
@@ -1291,6 +1289,9 @@ i(206347);	-- Mannequin Charm
 i(212337);	-- Stone of the Hearth
 i(211788);	-- Tess's Peacebloom
 i(212518);	-- Vial of Endless Draconic Scales
+--- NYI ---
+i(212524);	-- Delicate Crimson Parasol
+i(212525);	-- Delicate Ebony Parasol
 
 ------------------
 -- PATCH 10.2.6 --

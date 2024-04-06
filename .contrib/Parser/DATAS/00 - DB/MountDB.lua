@@ -1113,12 +1113,12 @@ i(161667, 275840);	-- Voldunai Dunescraper
 i(163706, 279868);	-- Witherbark Direwing
 i(157870, 263707);	-- Zandalari Direhorn
 --- NYI ---
+i(0, 261963);		-- Ebon Krolusk
 i(0, 237285);		-- Hyena Mount White (PH)
-i(0, 261963);		-- Mounted
+i(0, 260176);		-- Kul Tiras Horse (PH)
 i(0, 256121);		-- PH Goblin Hovercraft (Blue)
 i(0, 256125);		-- PH Goblin Hovercraft (Green)
 i(0, 256124);		-- PH Goblin Hovercraft (Red)
-i(0, 260176);		-- Proudmoore Horse 2
 i(156885, 262028);	-- Gold Gladiator's Proto-Drake
 i(156883, 262026);	-- Green Gladiator's Proto-Drake
 i(156882, 262025);	-- Pale Gladiator's Proto-Drake
@@ -1715,7 +1715,6 @@ i(210140, 0);		-- [PH] Black-Furred Bakar
 ------------------
 -- PATCH 10.2.5 --
 ------------------
-i(212631, 432562);	-- Brilliant Sunburst Peafowl
 i(212645, 432610);	-- Clayscale Hornstrider
 i(212522, 431992);	-- Compass Rose
 i(192796, 374204);	-- Explorer's Stonehide Packbeast
@@ -1725,10 +1724,11 @@ i(211873, 430225);	-- Gilnean Prowler
 i(210973, 427777);	-- Heartseeker Mana Ray
 i(212630, 432558);	-- Majestic Azure Peafowl
 i(212599, 432455);	-- Noble Flying Carpet
-i(212228, 431359);	-- Soaring Sky Fox
-i(212632, 432564);	-- Starry Twilight Peafowl
 i(212229, 431360);	-- Twilight Sky Prowler
 --- NYI ---
+i(212631, 432562);	-- Brilliant Sunburst Peafowl
+i(212228, 431359);	-- Soaring Sky Fox
+i(212632, 432564);	-- Starry Twilight Peafowl
 i(211486, 0);		-- Winding Slitherdrake
 
 ------------------

@@ -71,7 +71,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["g"] = {
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
-						i(193689),	-- Granyth's Enduring Scale
+						i(193689, {	-- Granyth's Enduring Scale
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6 },
+						}),
+						i(212757, {	-- Granyth's Enduring Scale
+							["timeline"] = { ADDED_10_2_6 },
+						}),
 						i(193695),	-- Quarry Slayer Glaive
 						i(193693),	-- Shikaar Ranger Bracers
 						i(193692),	-- Stoneroot Headdress

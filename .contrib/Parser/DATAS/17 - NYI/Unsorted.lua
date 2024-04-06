@@ -5,6 +5,7 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.DF, {
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
+			------ Next Check 10.2.7 ------
 			filter(BATTLE_PETS, {
 				i(217043),	-- Pokee (PET!)
 			}),
@@ -73,7 +74,6 @@ root(ROOTS.Unsorted, {
 				i(211771),	-- Medal of Honor
 				i(211772),	-- Glorious Medal of Honor
 				i(211773),	-- Medal of Conquest
-				i(210326),	-- Cracked Medal of Conquest
 			}),
 			n(SPECIAL, {	-- SEASON 4 PvE
 				--[[
@@ -148,146 +148,17 @@ root(ROOTS.Unsorted, {
 				filter(MISC, {
 					-- Dinar
 					i(213089),	-- Antique Bronze Bullion
-					-- Legendary
-					i(217698),	-- Scale of Awakening
-					i(217700),	-- Scale of Awakening
 					-- Unknown
 					i(215363),	-- Cache of Embers
 					i(215362),	-- Cache of Storms
 				}),
-				filter(TRINKET_F, {	-- S4 Trinket Reworks
-					i(212683),	-- Globe of Jagged Ice
-					i(212757),	-- Granyth's Enduring Scale
-					i(212756),	-- Inexorable Resonator
-					i(212685),	-- Tome of Unstable Power
-					i(212684),	-- Umbrelskul's Fractured Heart
-					i(212682),	-- Water's Beating Heart
-				})
 			}),
 			filter(TOYS, {
 				i(218128),	-- Draconic Banner of the Aspects (TOY!)
 			}),
-			i(216672),	-- The Ambush
-			i(221779),	-- Bent Card
 		})),
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-			------ Next Check In Start of April ------
-			n(ACHIEVEMENTS, {
-				ach(19031),	-- Fyrn [Promotion]
-			}),
-			filter(BATTLE_PETS, {
-				i(212791),	-- Beetriz (PET!) [Trading Post]
-				i(208446),	-- Fyrn (PET!) [Promotion]
-			}),
-			filter(COSMETIC, {
-				i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
-				i(190924),	-- Arsenal: Ruby Felfire Armaments
-				i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
-				i(200918),	-- Ensemble: Void-Bound Raiment
-				i(200924),	-- Ensemble: Void-Bound Battlegear
-				i(201000),	-- Ensemble: Void-Bound Chains
-				i(201001),	-- Ensemble: Void-Bound Warplate
-				i(211926),	-- Riders of Azeroth Tabard [Cup]
-
-				------ Dark Ranger General ------
-				i(213158),	-- Ensemble: Dark Ranger General's Kit
-				i(213150),	-- Dark Ranger General's Boots
-				i(213153),	-- Dark Ranger General's Bracers
-				i(213146),	-- Dark Ranger General's Breastplate
-				i(213151),	-- Dark Ranger General's Chestguard
-				i(213149),	-- Dark Ranger General's Cinch
-				i(213154),	-- Dark Ranger General's Cloak
-				i(213147),	-- Dark Ranger General's Gloves
-				i(213145),	-- Dark Ranger General's Hood
-				i(213152),	-- Dark Ranger General's Leggings
-				i(213155),	-- Dark Ranger General's Quiver
-				i(213148),	-- Dark Ranger General's Spaulders
-
-				------ Sky Witch's Attire ------
-				i(212221),	-- Ensemble: Sky Witch's Attire
-				i(212204),	-- Sky Witch's Blouse
-				i(212205),	-- Sky Witch's Boots
-				i(212206),	-- Sky Witch's Gloves
-				i(212207),	-- Sky Witch's Hat
-				i(212210),	-- Sky Witch's Sash
-				i(212209),	-- Sky Witch's Shoulders
-				i(212208),	-- Sky Witch's Skirt
-
-				------ Single Pieces ------
-				i(190807),	-- Artisan's Work Shirt
-				i(213162),	-- Blessed Bow of the Windseeker
-				i(190669),	-- Burnished Helm of Righteousness
-				i(190692),	-- Champion's Battle Standard
-				i(190847),	-- Deathmantle Assassin's Barb
-				i(190090),	-- Dessicated Bouquet
-				i(190908),	-- Devourer's Skullscythe
-				i(212627),	-- Dueler's Azure Shoulder Cape
-				i(212623),	-- Dueler's Brick Shoulder Cape
-				i(212622),	-- Dueler's Camo Shoulder Cape
-				i(212619),	-- Dueler's Carrot Shoulder Cape
-				i(212617),	-- Dueler's Crimson Shoulder Cape
-				i(212624),	-- Dueler's Deep Shoulder Cape
-				i(212620),	-- Dueler's Faded Shoulder Cape
-				i(212625),	-- Dueler's Grassy Shoulder Cape
-				i(212628),	-- Dueler's Midnight Shoulder Cape
-				i(212618),	-- Dueler's Plum Shoulder Cape
-				i(212615),	-- Dueler's Snowy Shoulder Cape
-				i(212614),	-- Dueler's Sunny Shoulder Cape
-				i(213073),	-- Faded Floral Staff
-				i(190816),	-- Forgehand's "Stable" Fuel Cell
-				i(190849),	-- Forgemaster's Gavel
-				i(213107),	-- Gladiator's Ragged Greatsword
-				i(213106),	-- Gladiator's Serrated Greatsword
-				i(212785),	-- Helm of the Stout
-				i(190860),	-- Initiate's Bo
-				i(190893),	-- Jeweled Valkyrion Cape
-				i(213077),	-- Lavender Bow-quet
-				i(213065),	-- Lavish Floral Edge
-				i(213068),	-- Lavish Floral Stalk
-				i(190822),	-- Mo'arg Enforcer's Halberd
-				i(213076),	-- Orchid Bow-quet
-				i(213062),	-- Paradise's Golden Axe
-				i(213063),	-- Paradise's Ruby Axe
-				i(213064),	-- Paradise's Violet Axe
-				i(213070),	-- Pristine Floral Stalk
-				i(190900),	-- Prototype Farstrider Sniper Rifle
-				i(190820),	-- Restless Void Handaxe
-				i(213066),	-- Rosy Floral Edge
-				i(213069),	-- Rosy Floral Stalk
-				i(213072),	-- Ruby Floral Staff
-				i(190891),	-- Shabby Battleaxe
-				i(190688),	-- Silvered Helm of Righteousness
-				i(190903),	-- Soulburner Warscythe
-				i(212705),	-- Spring Reveler's Cornsilk Attire
-				i(212706),	-- Spring Reveler's Cornsilk Belt
-				i(212707),	-- Spring Reveler's Cornsilk Boots
-				i(212713),	-- Spring Reveler's Cornsilk Dress
-				i(212987),	-- Spring Reveler's Cornsilk Pants
-				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-				i(190818),	-- Steamwheedle Artifact Extractor
-				i(213075),	-- Sunny Bow-quet
-				i(213071),	-- Sunny Floral Staff
-				i(213161),	-- Titan Thunderbow
-				i(190844),	-- Valarjar Champion's Greatsword
-				i(213067),	-- Violet Floral Edge
-				i(190902),	-- Will of the Titanforged
-				i(212613),	-- Wings of the Amber Monarch
-				i(212612),	-- Wings of the Amethyst Monarch
-				i(212610),	-- Wings of the Emerald Monarch
-				i(212611),	-- Wings of the Tourmaline Monarch
-				i(190889),	-- Woodsman's Hatchet
-				i(190848),	-- [DNT] Do not use
-			}),
-			filter(MISC, {
-				------
-				i(212784),	-- Destroyed Relic
-				i(212467),	-- Discarded Advertisement
-			}),
-			filter(MOUNTS, {
-				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
-				i(212228),	-- Soaring Sky Fox (MOUNT!)
-				i(212632),	-- Starry Twilight Peafowl (MOUNT!)
-			}),
+			------ Next Check 10.2.7 ------
 			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
 				n(BACK, {
 					i(210334),	-- Dreadweave Cloak
@@ -525,23 +396,6 @@ root(ROOTS.Unsorted, {
 				i(210531),	-- Timerunnning Shoulderpads
 				i(210526),	-- Unraveling Tunic
 			}),
-			filter(TOYS, {
-				i(212524),	-- Delicate Crimson Parasol (TOY!) [Trading Post]
-				i(212525),	-- Delicate Ebony Parasol (TOY!) [Trading Post]
-			}),
-			------ Azerothian Archives ------
-			-- Misc
-			i(215160),	-- The Big Dig Rig
-			-- Quest Items
-			i(211266),	-- Archivist's Fire Totem
-			------ Hearthstone ------
-			-- Quest Items
-			i(210081),	-- Flaming Torch
-			i(212155),	-- Hearthstone Invitation Letter
-			i(212156),	-- Hearthstone Invitation Letter
-			-- Rewards
-			i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
-			i(212532),	-- Reno's Hat [Hearthstone]
 			n(QUESTS, {
 				-- 10.2.5.52206
 				q(76391),	--

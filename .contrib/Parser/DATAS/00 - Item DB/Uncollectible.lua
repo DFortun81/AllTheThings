@@ -1714,3 +1714,8 @@ i(213212);	-- Whalebone Knife
 i(205222);	-- Wooden Caravan Spoke
 i(213182);	-- Worry Stone
 i(213214);	-- Woven Lavareed Basket
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+i(221779);	-- Bent Card

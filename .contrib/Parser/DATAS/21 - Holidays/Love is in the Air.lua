@@ -1686,6 +1686,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
 					i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
 					i(212485),	-- Copy of Weathered Diary - Dates from the Third War
+					i(212467),	-- Discarded Advertisement
 					i(3899),	-- Legends of the Gurubashi, Volume 3
 					i(142250),	-- Aegwynn and the Dragon Hunt
 					i(145306),	-- Archimonde's Return and the Flight to Kalimdor
@@ -1754,6 +1755,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
 					i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
 					i(212485),	-- Copy of Weathered Diary - Dates from the Third War
+					i(212467),	-- Discarded Advertisement
 					i(3899),	-- Legends of the Gurubashi, Volume 3
 					i(142250),	-- Aegwynn and the Dragon Hunt
 					i(145306),	-- Archimonde's Return and the Flight to Kalimdor

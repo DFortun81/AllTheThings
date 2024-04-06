@@ -419,8 +419,12 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+			i(211266),	-- Archivist's Fire Totem
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
+			i(210081),	-- Flaming Torch
+			i(212155),	-- Hearthstone Invitation Letter
+			i(212156),	-- Hearthstone Invitation Letter
 		})),
 	}),
 }));

@@ -1404,40 +1404,42 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
-			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
-			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
-			i(210040),	-- Set Keystone Map: Throne of the Tides
-			------ Reagents ------
-			i(208569),	-- Verdant Crest of Honor
-			i(208570),	-- Greater Verdant Crest of Honor
-			i(208568),	-- Lesser Verdant Crest of Honor
-			i(208565),	-- Verdant Trophy of Conquest
-			i(208566),	-- Greater Verdant Trophy of Conquest
-			i(208564),	-- Lesser Verdant Trophy of Conquest
-			------ Unknown ------
 			i(208692),	-- Ancient Roottwined Tome
+			i(210441),	-- Behemoth's Feather
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
+			i(210326),	-- Cracked Medal of Conquest
+			i(210420),	-- Dream Wardens Insignia [Rare]
+			i(210419),	-- Dream Wardens Insignia [Uncommon]
 			i(210786),	-- Dreaming Whiskerfish
+			i(210450),	-- Flaming Orb
+			i(208570),	-- Greater Verdant Crest of Honor
+			i(208566),	-- Greater Verdant Trophy of Conquest
+			i(210449),	-- Heated Scales
 			i(210687),	-- Ironfur Sample
+			i(208568),	-- Lesser Verdant Crest of Honor
+			i(208564),	-- Lesser Verdant Trophy of Conquest
+			i(210443),	-- Matchbook
+			i(208856),	-- Pocket Lint
 			i(211418),	-- Q'onzu Edict of Change
 			i(208690),	-- Roottwined Key
 			i(210726),	-- Ruby Flightstone
-			i(208606),	-- Somnagora's Heart
-			i(208745),	-- Your Reward [DNT]
-			------ Trash ------
-			i(210441),	-- Behemoth's Feather
-			i(210450),	-- Flaming Orb
-			i(210449),	-- Heated Scales
-			i(210443),	-- Matchbook
-			i(208856),	-- Pocket Lint
+			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
+			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
+			i(210040),	-- Set Keystone Map: Throne of the Tides
 			i(210442),	-- Sizzling Charcoal
+			i(208606),	-- Somnagora's Heart
 			i(210439),	-- Speck of Mana
 			i(210440),	-- Splendid Blossom
+			i(208569),	-- Verdant Crest of Honor
+			i(208565),	-- Verdant Trophy of Conquest
 			i(210438),	-- Wisp Dust
-			i(210326),	-- Medal of Conquest
-			------ Insignia ------
-			i(210419),	-- Dream Wardens Insignia [Uncommon]
-			i(210420),	-- Dream Wardens Insignia [Rare]
+			i(208745),	-- Your Reward [DNT]
+		})),
+
+		-- 10.2.5
+		expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+			i(212784),	-- Destroyed Relic
+			i(215160),	-- The Big Dig Rig
 		})),
 
 		-- 10.2.6
@@ -1476,7 +1478,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(219020),	-- Storm Archon
 			i(217272),	-- Stormproof Sloop
 			i(213400),	-- Strange Snowman
-			i(216672),	-- The Am-Bush
+			i(216672),	-- The Ambush
 			i(216527),	-- Toxic Smackerel
 			i(212917),	-- Windstorm
 		})),
