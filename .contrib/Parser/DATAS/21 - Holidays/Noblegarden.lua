@@ -764,7 +764,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(216488),	-- Duck Potion (QI!)
 				o(424098, {	-- Golden Egg Heirloom
-					i(212643),	-- Golden Egg Heirloom (QI!)
+					i(216489),	-- Golden Egg Heirloom (QI!)
 				}),
 			},
 		}),
