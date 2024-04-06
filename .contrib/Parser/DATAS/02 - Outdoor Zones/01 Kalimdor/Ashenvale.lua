@@ -223,6 +223,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(429),	-- Xavian
 				]]--
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(FACTIONS, {
+				applyclassicphase(SOD_PHASE_THREE, faction(2641)),	-- Emerald Wardens
+			}),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(28, {	-- Astranaar, Ashenvale
 					["cr"] = 4267,	-- Daelyshia <Hippogryph Master>

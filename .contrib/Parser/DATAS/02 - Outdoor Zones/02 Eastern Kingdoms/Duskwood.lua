@@ -141,6 +141,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(13),	-- The World Tree
 				]]--
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(FACTIONS, {
+				applyclassicphase(SOD_PHASE_THREE, faction(2641)),	-- Emerald Wardens
+			}),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(12, {	-- Darkshire, Duskwood
 					["cr"] = 2409,	-- Felicia Maline <Gryphon Master>
