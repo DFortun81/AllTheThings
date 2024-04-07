@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				i(144315),	-- Recipe: Formula: Enchant Neck - Mark of the Quick [Rank 2] (RECIPE!)
-				i(137726, {	-- Schematic: Leystone Buoy
+				i(137726, {	-- Schematic: Leystone Buoy (RECIPE!)
 					["crs"] = {
 						110114,	-- Bitterbrine Miner
 						89284,	-- Bitterbrine Saltcaster

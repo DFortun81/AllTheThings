@@ -132,6 +132,71 @@ i("Large Red Rocket Cluster", 21735, 26428);
 i("Cluster Launcher", 21737, 26443);
 i("Firework Launcher", 21738, 26442);
 
+
+-----------------
+-- PATCH 6.0.2 --
+-----------------
+--- NYI ---
+i(120134, 0);		-- Secrets of Draenor Engineering
+
+-----------------
+-- PATCH 6.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 158739);		-- Engineering (Draenor Master)
+i(0, 169080);		-- Gearspring Parts
+i(0, 178242);		-- Gearspring Parts [Max Level]
+i(0, 162204);		-- Goblin Glider Kit
+i(0, 173308);		-- Mecha-Blast Rocket
+i(0, 177054);		-- Secrets of Draenor Engineering
+i(0, 173309);		-- Shieldtronic Shield
+i(0, 162207);		-- Stealthman 54
+i(0, 162208);		-- Ultimate Gnomish Army Knife [If you have BoP Already]
+i(0, 169140);		-- Ultimate Gnomish Army Knife
+--- ITEM ---
+i(116142, 171072);	-- Alliance Firework
+i(120267, 177364);	-- Blackrock Rifling [REMOVED: 6.2.0]
+i(118490, 162218);	-- Blingtron 5000
+i(118497, 162195);	-- Cybergenetic Mechshades
+i(118493, 169078);	-- Didi's Delicate Assembly
+i(118480, 162205);	-- Findle's Loot-a-Rang
+i(118495, 173289);	-- Hemet's Heartseeker
+i(116144, 171073);	-- Horde Firework
+i(118485, 162210);	-- Lifelike Mechanical Frostboar
+i(118491, 169076);	-- Linkgrease Locksprocket [REMOVED: 10.0.5]
+i(118484, 162209);	-- Mechanical Axebeak
+i(119177, 176732);	-- Mechanical Scorpid
+i(118478, 162203);	-- Megawatt Filament
+i(118492, 169077);	-- Morden's Magnificent Contraption [REMOVED: 6.2.0]
+i(118498, 162196);	-- Night-Vision Mechshades
+i(118477, 162202);	-- Oglethorpe's Missile Splitter
+i(118487, 162214);	-- Personal Hologram
+i(118499, 162197);	-- Plasma Mechshades
+i(118500, 162198);	-- Razorguard Mechshades
+i(118476, 162199);	-- Shrediron's Shredder
+i(116146, 171074);	-- Snake Firework
+i(118489, 162217);	-- Swapblaster
+i(120268, 177363);	-- True Iron Trigger [REMOVED: 10.0.5]
+i(118481, 162206);	-- World Shrinker
+i(118488, 162216);	-- Wormhole Centrifuge
+
+-----------------
+-- PATCH 6.1.0 --
+-----------------
+--- ITEM ---
+i(122546, 181423);	-- Oglethorpe's Octagonal Lenses [REMOVED: 6.2.0]
+i(122554, 181422);	-- Precision Scope Tuning Kit [REMOVED: 6.2.0]
+i(122712, 182120);	-- Primal Welding
+
+-----------------
+-- PATCH 6.2.0 --
+-----------------
+--- ITEM ---
+i(127729, 187496);	-- Advanced Muzzlesprocket
+i(127721, 187497);	-- Bi-Directional Fizzle Reducer
+i(127739, 187521);	-- Infrablue-Blocker Lenses
+i(127747, 187520);	-- Taladite Firing Pin
+
 -----------------
 -- PATCH 7.0.3 --
 -----------------
@@ -182,6 +247,7 @@ i(137691, 198979);	-- Intra-Dalaran Wormhole Generator
 i(133674, 198971);	-- Ironsight Cranial Cannon [Rank 1]
 i(137704, 198998);	-- Ironsight Cranial Cannon [Rank 2]
 i(137718, 199012);	-- Ironsight Cranial Cannon [Rank 3]
+i(137726, 209645);	-- Leystone Buoy
 i(137727, 209646);	-- Mecha-Bond Imprint Matrix
 i(137707, 199001);	-- Pump-Action Bandage Gun [Rank 2]
 i(137721, 199015);	-- Pump-Action Bandage Gun [Rank 3]
@@ -196,6 +262,14 @@ i(137701, 198995);	-- Semi-Automagic Cranial Cannon [Rank 2]
 i(137715, 199009);	-- Semi-Automagic Cranial Cannon [Rank 3]
 i(136701, 209502);	-- Shockinator
 i(137712, 199006);	-- Tactical Headgun [Rank 3]
+--- NYI ---
+i(137692, 0);		-- Blingtron's Circuit Design Tutorial
+i(137697, 0);		-- Blink-Trigger Headgun [Rank 2]
+i(137699, 0);		-- Bolt-Action Headgun [Rank 2]
+i(137693, 0);		-- Reaves Module: Failure Detection Mode
+i(137700, 0);		-- Reinforced Headgun [Rank 2]
+i(137725, 0);		-- Sonic Environment Enhancer
+i(137698, 0);		-- Tactical Headgun [Rank 2]
 
 -----------------
 -- PATCH 7.1.5 --
@@ -207,6 +281,8 @@ i(144336, 235754);	-- Rugged Skullblasters
 i(144335, 235753);	-- Tailored Skullblasters
 --- QUEST ---
 i(0, 235775);		-- Rechargeable Reaves Battery
+--- NYI ---
+i(144343, 0);		-- Rechargeable Reaves Battery
 
 -----------------
 -- PATCH 7.3.0 --
@@ -214,6 +290,9 @@ i(0, 235775);		-- Rechargeable Reaves Battery
 --- QUEST ---
 i(0, 247717);		-- Gravitational Reduction Slippers
 i(0, 247744);		-- Wormhole Generator: Argus
+--- NYI ---
+i(151714, 0);		-- Gravitational Reduction Slippers
+i(151717, 0);		-- Wormhole Generator: Argus
 
 -----------------
 -- PATCH 8.0.1 --

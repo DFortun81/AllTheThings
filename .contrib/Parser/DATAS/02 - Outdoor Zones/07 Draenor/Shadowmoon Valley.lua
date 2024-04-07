@@ -833,12 +833,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84825 },	-- Goggles
 						["sourceQuest"] = 36286,	-- Transponder 047-B
 						["requireSkill"] = ENGINEERING,
-						["g"] = {
-							i(111921, {	-- Draenor Engineering
-								["filterID"] = MISC,
-							}),
+						["g"] = appendGroups(DRAENOR_ENGINEERING, {
 							i(109258),	-- Engineering Works, lvl 1
-						},
+						}),
 					}),
 					q(33066, {	-- Soul Shards of Summoning
 						["sourceQuests"] = { 33112 },	-- Ominous Portents

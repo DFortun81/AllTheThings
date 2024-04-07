@@ -306,6 +306,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(132510),	-- Gunpowder Charge
 			i(132516),	-- Gunshoes
 			i(132517),	-- Intra-Dalaran Wormhole Generator
+			i(136606),	-- Leystone Buoy
 			i(134125),	-- Mecha-Bond Imprint Matrix (CI!)
 			i(132511),	-- Pump-Action Bandage Gun
 			i(132523),	-- Reaves Battery

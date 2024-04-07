@@ -1362,6 +1362,7 @@ i(200779);	-- Lava Jars
 i(200698);	-- Ley Orb
 i(192621);	-- Long-Toed Talon
 i(200702);	-- Magenta Titian Extract
+i(200839);	-- Magical Cleaning Broom
 i(192708);	-- Magnificent Antler
 i(200788);	-- Mantacorn Horns
 i(200786);	-- Marbled Broadhoof Brisket
@@ -1530,7 +1531,6 @@ i(200810);	-- Wooden Stonegrabber Figurine
 i(200807);	-- Wooden Ursine Figure
 i(200531);	-- Worn Chitin Fragment
 i(194889);	-- XD-57 "Bullseye" Guided Rocket Kit
-i(200839);	-- Magical Cleaning Broom
 
 ------------------
 -- PATCH 10.0.5 --

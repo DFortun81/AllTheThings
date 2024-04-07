@@ -36,51 +36,11 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(79826, {	-- Pozzlow
 							["races"] = HORDE_ONLY,
-							["sym"] = {
-								{"select","npcID",87552},{"pop"},	-- Nik Steelrings <Engineering Plans> (H)
-								{"exclude", "itemID",
-									111921,	-- Draenor Engineering
-									119299,	-- Secret of Draenor Engineering
-								},
-							},
-							["g"] = {
-								i(111921, {	-- Draenor Engineering
-									["filterID"] = MISC,
-									["g"] = {
-										recipe(169080),	-- Gearspring Parts
-										recipe(162204),	-- Goblin Glider Kit
-										recipe(173308),	-- Mecha-Blast Rocket
-										i(120134),	-- Recipe: Secrets of Draenor Engineering
-										recipe(173309),	-- Shieldtronic Shield
-										recipe(162207),	-- Stealthman 54
-										recipe(169140),	-- Ultimate Gnomish Army Knife
-									},
-								}),
-							},
+							["sym"] = {{"sub", "common_vendor", 87552}},	-- Nik Steelrings <Engineering Plans>
 						}),
 						n(77365, {	-- Zaren Hoffle <Engineer>
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = {
-								{"select","npcID",87065},{"pop"},	-- Sean Catchpole <Engineering Plans> (A)
-								{"exclude", "itemID",
-									111921,	-- Draenor Engineering
-									119299,	-- Secret of Draenor Engineering
-								},
-							},
-							["g"] = {
-								i(111921, {	-- Draenor Engineering
-									["filterID"] = MISC,
-									["g"] = {
-										recipe(169080),	-- Gearspring Parts
-										recipe(162204),	-- Goblin Glider Kit
-										recipe(173308),	-- Mecha-Blast Rocket
-										i(120134),	-- Recipe: Secrets of Draenor Engineering
-										recipe(173309),	-- Shieldtronic Shield
-										recipe(162207),	-- Stealthman 54
-										recipe(169140),	-- Ultimate Gnomish Army Knife
-									},
-								}),
-							},
+							["sym"] = {{"sub", "common_vendor", 87065}},	-- Sean Catchpole <Engineering Plans>
 						}),
 					}),
 				}),

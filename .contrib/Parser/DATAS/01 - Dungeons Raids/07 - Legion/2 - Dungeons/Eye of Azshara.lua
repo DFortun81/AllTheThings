@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["lvl"] = 98,
 		["g"] = {
 			n(ZONE_DROPS, {
-				i(137726),	-- Schematic: Leystone Buoy
+				i(137726),	-- Schematic: Leystone Buoy (RECIPE!)
 				prof(INSCRIPTION, {
 					i(141051, {	-- Technique: Glyph of the Trident (RECIPE!)
 						["description"] = "Drops from nagas in any Broken Isles zone. Recommended to farm the nagas before the first Boss in the Eye of Azshara Dungeon.",

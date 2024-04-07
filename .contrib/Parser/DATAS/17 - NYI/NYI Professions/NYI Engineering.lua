@@ -4,6 +4,14 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ENGINEERING, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.WOD, {
+				-- 6.0.2
+				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					i(109168, {	-- Shrediron's Shredder
+						["bonusID"] = 585,
+					}),
+				})),
+			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
@@ -83,6 +91,39 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.WOD, {
+				-- 6.0.2
+				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					-- Without SpellID attached
+					i(120134),	-- Recipe: Secrets of Draenor Engineering
+				})),
+			}),
+			expansion(EXPANSION.LEGION, {
+				-- 7.0.3
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+					-- Without SpellID attached
+					i(137692),	-- Schematic: Blingtron's Circuit Design Tutorial
+					i(137697),	-- Schematic: Blink-Trigger Headgun [Rank 2]
+					i(137699),	-- Schematic: Bolt-Action Headgun [Rank 2]
+					i(137693),	-- Schematic: Reaves Module: Failure Detection Mode
+					i(137700),	-- Schematic: Reinforced Headgun [Rank 2]
+					i(137725),	-- Schematic: Sonic Environment Enhancer
+					i(137698),	-- Schematic: Tactical Headgun [Rank 2]
+				})),
+
+				-- 7.1.5
+				expansion(EXPANSION.LEGION, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_7_1_5 } }, {
+					-- Without SpellID attached
+					i(144343),	-- Schematic: Rechargeable Reaves Battery
+				})),
+
+				-- 7.3.0
+				expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+					-- Without SpellID attached
+					i(151714),	-- Schematic: Gravitational Reduction Slippers
+					i(151717),	-- Schematic: Wormhole Generator: Argus
+				})),
+			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
@@ -229,35 +270,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(94893),	-- Schematic: Pierre
 				i(94880),	-- Schematic: Sky Golem
 			})),
-		}),
-		expansion(EXPANSION.WOD, {
-			-- 6.0.2
-			expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
-				i(100907),	-- Schematic: Rascal-Bot
-			})),
-		}),
-		expansion(EXPANSION.LEGION, {
-			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
-				i(137692),	-- Schematic: Blingtron's Circuit Design Tutorial
-				i(137697),	-- Schematic: Blink-Trigger Headgun (Rank 2)
-				i(137699),	-- Schematic: Bolt-Action Headgun (Rank 2)
-				i(137693),	-- Schematic: Reaves Module: Failure Detection Mode
-				i(137700),	-- Schematic: Reinforced Headgun (Rank 2)
-				i(137725),	-- Schematic: Sonic Environment Enhancer
-				i(137698),	-- Schematic: Tactical Headgun (Rank 2)
-			})),
-
-			-- 7.1.5
-			expansion(EXPANSION.LEGION, 1.5, bubbleDownSelf({ ["timeline"] = {"created 7.1.5"} }, {
-				i(144343),	-- Schematic: Rechargeable Reaves Battery
-			})),
-
-			-- 7.3.0
-			expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
-				i(151714),	-- Schematic: Gravitational Reduction Slippers
-				i(151717),	-- Schematic: Wormhole Generator: Argus
-			})),
+			i(100907),	-- Schematic: Rascal-Bot
 		}),
 	}),
 }));

@@ -1,6 +1,122 @@
 -----------------
 -- ENGINEERING --
 -----------------
+local SECRET_OF_DRAENOR_ENGINEERING = 119299;
+DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	["filterID"] = MISC,
+	["g"] = {
+		r(158739, {	-- Engineering (Draenor Master)
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+			["rank"] = 9,
+		}),
+		applyclassicphase(BFA_PHASE_ONE, r(264487, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Engineering
+		r(169080),	-- Gearspring Parts
+		r(178242),	-- Gearspring Parts [Max Level] Might be Uncollectible /Braghe
+		r(162204),	-- Goblin Glider Kit
+		r(173308),	-- Mecha-Blast Rocket
+		r(177054),	-- Recipe: Secrets of Draenor Engineering
+		r(173309),	-- Shieldtronic Shield
+		r(162207),	-- Stealthman 54
+		r(169140),	-- Ultimate Gnomish Army Knife
+		r(162208),	-- Ultimate Gnomish Army Knife [If you have BoP Already] Might be Uncollectible /Braghe
+	},
+})));
+COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	i(120267, {	-- Schematic: Blackrock Rifling (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
+	}),
+	i(118490, {	-- Schematic: Blingtron 5000 (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118497, {	-- Schematic: Cybergenetic Mechshades (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118493, {	-- Schematic: Didi's Delicate Assembly (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118480, {	-- Schematic: Findle's Loot-a-Rang (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118495, {	-- Schematic: Hemet's Heartseeker (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(202228, {	-- Schematic: Impressive Linkgrease Locksprocket (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_10_0_5 },
+	}),
+	i(202230, {	-- Schematic: Impressive True Iron Trigger (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_10_0_5 },
+	}),
+	i(118485, {	-- Schematic: Lifelike Mechanical Frostboar (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118491, {	-- Schematic: Linkgrease Locksprocket (RECIPE!)
+		["collectible"] = false,
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
+	}),
+	i(118484, {	-- Schematic: Mechanical Axebeak (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(119177, {	-- Schematic: Mechanical Scorpid (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118478, {	-- Schematic: Megawatt Filament (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118492, {	-- Schematic: Morden's Magnificent Contraption (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
+	}),
+	i(118498, {	-- Schematic: Night-Vision Mechshades (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118477, {	-- Schematic: Oglethorpe's Missle Splitter (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118487, {	-- Schematic: Personal Hologram (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118499, {	-- Schematic: Plasma Mechshades (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118500, {	-- Schematic: Razorguard Mechshades (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(202229, {	-- Schematic: Remarkable Linkgrease Locksprocket (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_10_0_5 },
+	}),
+	i(202231, {	-- Schematic: Remarkable True Iron Trigger (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_10_0_5 },
+	}),
+	i(118476, {	-- Schematic: Shrediron's Shredder (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118489, {	-- Schematic: Swapblaster (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(120268, {	-- Schematic: True Iron Trigger (RECIPE!)
+		["collectible"] = false,
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
+	}),
+	i(118481, {	-- Schematic: World Shrinker (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(118488, {	-- Schematic: Wormhole Centrifuge (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+}));
 BFA_ENGINEERING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	n(ARMOR, {
 		r(272062),	-- AZ3-R1-T3 Bionic Bifocals [Rank 1]

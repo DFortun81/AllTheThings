@@ -2175,12 +2175,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 				["sourceQuest"] = 36594,	-- "Spare" Parts
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
-					i(111921, {	-- Draenor Engineering
-						["filterID"] = MISC,
-					}),
+				["g"] = appendGroups(DRAENOR_ENGINEERING, {
 					i(109258),	-- Engineering Works, lvl 1
-				},
+				}),
 			}),
 			q(36592, {	-- Bigger is Better
 				["sourceQuests"] = {

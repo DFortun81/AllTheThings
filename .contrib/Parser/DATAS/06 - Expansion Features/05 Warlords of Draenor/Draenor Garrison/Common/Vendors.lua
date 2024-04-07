@@ -3,7 +3,9 @@
 -------------------------------------------------------------------
 local WOD_REMOVED_RECIPE_STR = "In 9.0.1, Blizzard made this recipe unlearnable but the item still appears on the vendor even though it has no use and is no longer collectible.";
 local ALCHEMICAL_CATALYST = 108996;
+local BLACKROCK_ORE = 109118;
 local CERULEAN_PIGMENT = 114931;
+local TRUE_IRON_ORE = 109119;
 local HERB_TRADER = {
 	i(120945, {	-- Primal Spirit
 		["cost"] = {
@@ -105,6 +107,92 @@ local HERB_TRADER = {
 		},
 	}),
 };
+local ORE_TRADER = {
+	i(120945, {	-- Primal Spirit
+		["cost"] = {
+			{ "i", 109118, 5 },	-- 5x Blackrock Ore
+			{ "i", 109693, 5 },	-- 5x Draenic Dust
+			{ "i", 109125, 5 },	-- 5x Fireweed
+			{ "i", 110609, 5 },	-- 5x Raw Beast Hide
+			{ "i", 111557, 5 },	-- 5x Sumptuous Fur
+		},
+	}),
+	i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(127726, {	-- Design: Mighty Taladite Amplifier
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+	}),
+	un(REMOVED_FROM_GAME, i(122551)),	-- Design: Powerful Taladite Amplifier
+	i(122714, {	-- Design: Primal Gemcutting
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+	}),
+	i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
+		["timeline"] = { ADDED_6_1_0 },
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+	}),
+	i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(127744, {	-- Design: Savage Taladite Amplifier
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+	}),
+	i(127729, {	-- Schematic: Advanced Muzzlesprocket (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+	}),
+	i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(127739, {	-- Schematic: Infrablue-Blocker Lenses (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(122546, {	-- Schematic: Oglethorpe's Octagonal Lenses (RECIPE!)
+		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+	}),
+	i(122554, {	-- Schematic: Precision Scope Tuning Kit (RECIPE!)
+		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+	}),
+	i(122712, {	-- Schematic: Primal Welding (RECIPE!)
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(127747, {	-- Schematic: Taladite Firing Pin (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+	}),
+};
 local COOK_TRADER = sharedData({ ["timeline"] = { ADDED_6_1_0 } }, {
 	i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
 	i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
@@ -117,85 +205,10 @@ root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(VENDORS, {
-				n(90894, {	-- Alexi Hackercam <Ore Trader>
+				n(90894, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Alexi Hackercam <Ore Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },	-- 5x Blackrock Ore
-								{ "i", 109693, 5 },	-- 5x Draenic Dust
-								{ "i", 109125, 5 },	-- 5x Fireweed
-								{ "i", 110609, 5 },	-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },	-- 5x Sumptuous Fur
-							},
-						}),
-						i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127726, {	-- Design: Mighty Taladite Amplifier
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						un(REMOVED_FROM_GAME, i(122551)),	-- Design: Powerful Taladite Amplifier
-						i(122714, {	-- Design: Primal Gemcutting
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { ADDED_6_1_0 },
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127744, {	-- Design: Savage Taladite Amplifier
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(127729, {	-- Schematic: Advanced Muzzlesprocket
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127739, {	-- Schematic: Infrablue-Blocker Lenses
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(122712, {	-- Schematic: Primal Welding
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127747, {	-- Schematic: Taladite Firing Pin
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-					},
-				}),
+					["g"] = ORE_TRADER,
+				})),
 				n(80159, {	-- Arsenio Zerep <Cook>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = COOK_TRADER,
@@ -1104,85 +1117,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91030, {	-- Trixxy Volt <Ore Trader>
+				n(91030, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Trixxy Volt <Ore Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127726, {	-- Design: Mighty Taladite Amplifier
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						un(REMOVED_FROM_GAME, i(122551)),	-- Design: Powerful Taladite Amplifier
-						i(122714, {	-- Design: Primal Gemcutting
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { ADDED_6_1_0 },
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127744, {	-- Design: Savage Taladite Amplifier
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(127729, {	-- Schematic: Advanced Muzzlesprocket
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-						i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127739, {	-- Schematic: Infrablue-Blocker Lenses
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(122712, {	-- Schematic: Primal Welding
-							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
-						}),
-						i(127747, {	-- Schematic: Taladite Firing Pin
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
-						}),
-					},
-				}),
+					["g"] = ORE_TRADER,
+				})),
 				n(91033, {	-- Zeezu <Leather Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {

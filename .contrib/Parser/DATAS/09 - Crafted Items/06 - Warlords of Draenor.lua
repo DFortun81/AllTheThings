@@ -32,6 +32,14 @@ local WOD_CRAFTED_ITEM = function(id, upgradeItem)
 		}),
 	});
 end
+-- Comment by Braghe: if we want to do this for WoD Classic.
+-- 6.0.3: Item 1 Upgrades Stage 1->2, Item 2 Upgrades Stage 2->3.
+-- 6.1.0: Add a new item, Item 3.
+-- 6.1.0: Item 3 Upgrades Stage 3->4.
+-- 6.2.0: Removes Item 2, Item 3 and creates new itemID for Item 1, call it Item 1*. Add two new items, Item 4 and Item 5.
+-- 6.2.0: Item 1* Upgrades Stage 1->2, Item 1* Upgrades Stage 2->3, Item 1* Upgrades Stage 3->4
+-- 6.2.0: Item 4 Upgrades Stage 4->5, Item 5 Upgrades Stage 5->6.
+-- 10.0.5: Removes Item 1*, Item 4, Item 5 and add twos new items called Impressive and Remarkable which makes you able to get the appearances. \\End
 
 -- this is the exact same logic, but ignores applying the SourceID's to the upgraded versions since they are identical
 -- to the base version. This prevents the unobtainable flag showing for the base version since the Item will search by
@@ -377,10 +385,57 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 	}),
 	prof(ENGINEERING, {
+		n(ARMOR, {
+			-- #IF BEFORE 10.0.5
+			WOD_CRAFTED_IDENTICAL_ITEM(109173, 128011),	-- Cybergenetic Mechshades + Linkgrease Locksprocket
+			WOD_CRAFTED_IDENTICAL_ITEM(109171, 128011),	-- Night-Vision Mechshades + Linkgrease Locksprocket
+			WOD_CRAFTED_IDENTICAL_ITEM(109172, 128011),	-- Plasma Mechshades + Linkgrease Locksprocket
+			WOD_CRAFTED_IDENTICAL_ITEM(109174, 128011),	-- Razorguard Mechshades*+ Linkgrease Locksprocket
+			-- #ELSE
+			WOD_CRAFTED_ITEM_DF_BASE(109173),	-- Cybergenetic Mechshades
+			WOD_CRAFTED_ITEM_DF_BASE(109171),	-- Night-Vision Mechshades
+			WOD_CRAFTED_ITEM_DF_BASE(109172),	-- Plasma Mechshades
+			WOD_CRAFTED_ITEM_DF_BASE(109174),	-- Razorguard Mechshades
+			-- The 'upgraded' versions are literally identical SourceID... so not really any point to list them with the upgrade items
+			-- #ENDIF
+		}),
 		filter(BATTLE_PETS, {
 			i(112057),	-- Lifelike Mechanical Frostboar (PET!)
 			i(111402),	-- Mechanical Axebeak (PET!)
 			i(118741),	-- Mechanical Scorpid (PET!)
+		}),
+		filter(MISC, {
+			i(127719, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Advanced Muzzlesprocket
+			i(171072),	-- Alliance Firework
+			i(127720, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Bi-Directional Fizzle Reducer
+			i(114056),	-- Didi's Delicate Assembly
+			i(109076),	-- Goblin Glider Kit
+			i(116148),	-- Horde Firework
+			i(202212, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Linkgrease Locksprocket
+			i(202214, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive True Iron Trigger
+			i(127738, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Infrablue-Blocker Lenses
+			i(128011, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Linkgrease Locksprocke
+			i(118007),	-- Mecha-Blast Rockett
+			i(202213, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
+			i(202215, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable True Iron Trigger
+			i(119299),	-- Secrets of Draenor Engineering
+			i(118006),	-- Shieldtronic Shield
+			i(116149),	-- Snake Firework
+			i(109184),	-- Stealthman 54
+			i(111820),	-- Swapblaster
+			i(127737, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Taladite Firing Pin
+			i(128017, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- True Iron Trigger
+			i(109253),	-- Ultimate Gnomish Army Knife [BoE]
+			i(114943),	-- Ultimate Gnomish Army Knife [BoP]
+			i(119823, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Blackrock Rifling
+			i(114050, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Linkgrease Locksprocket
+			i(114055, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Morden's Magnificent Contraption
+			i(122545, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Oglethorpe's Octagonal Lenses
+			i(122544, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Precision Scope Tuning Kit
+			i(119822, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable True Iron Trigger
+		}),
+		filter(REAGENTS, {
+			i(111366),	-- Gearspring Parts
 		}),
 		filter(TOYS, {
 			i(111821),	-- Blingtron 5000 (TOY!)
@@ -390,45 +445,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(112059),	-- Wormhole Centrifuge (TOY!)
 		}),
 		n(WEAPONS, {
-			i(109168, {	-- Shrediron's Shredder
-				["timeline"] = { "created 9.0" },
-				["bonusID"] = 585,
-			}),
 			-- #IF BEFORE 10.0.5
-			WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
+			WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder + True Iron Trigger
 			-- #ELSE
 			WOD_CRAFTED_ITEM_DF_BASE(109168),	-- Shrediron's Shredder
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109168, 202214),	-- Shrediron's Shredder + Impressive True Iron Trigger
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(109168, 202215),	-- Shrediron's Shredder + Remarkable True Iron Trigger
 			-- #ENDIF
 		}),
-		n(ARMOR, {
-			-- #IF BEFORE 10.0.5
-			WOD_CRAFTED_IDENTICAL_ITEM(109173, 128011),	-- Cybergenetic Mechshades* + Linkgrease Locksprocket
-			WOD_CRAFTED_IDENTICAL_ITEM(109171, 128011),	-- Night-Vision Mechshades* + Linkgrease Locksprocket
-			WOD_CRAFTED_IDENTICAL_ITEM(109172, 128011),	-- Plasma Mechshades* + Linkgrease Locksprocket
-			WOD_CRAFTED_IDENTICAL_ITEM(109174, 128011),	-- Razorguard Mechshades* + Linkgrease Locksprocket
-			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(109173),	-- Cybergenetic Mechshades
-			WOD_CRAFTED_ITEM_DF_BASE(109171),	-- Night-Vision Mechshades
-			WOD_CRAFTED_ITEM_DF_BASE(109172),	-- Plasma Mechshades
-			WOD_CRAFTED_ITEM_DF_BASE(109174),	-- Razorguard Mechshades
-			-- The 'upgraded' versions are literally identical SourceID... so not really any point to list them with the upgrade items
-			-- WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109173, 202212),	-- Cybergenetic Mechshades + Impressive Linkgrease Locksprocket
-			-- WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109171, 202212),	-- Night-Vision Mechshades + Impressive Linkgrease Locksprocket
-			-- WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109172, 202212),	-- Plasma Mechshades + Impressive Linkgrease Locksprocket
-			-- WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109174, 202212),	-- Razorguard Mechshades + Impressive Linkgrease Locksprocket
-			-- WOD_CRAFTED_ITEM_DF_REMARKABLE(109173, 202213),	-- Cybergenetic Mechshades + Remarkable Linkgrease Locksprocket
-			-- WOD_CRAFTED_ITEM_DF_REMARKABLE(109171, 202213),	-- Night-Vision Mechshades + Remarkable Linkgrease Locksprocket
-			-- WOD_CRAFTED_ITEM_DF_REMARKABLE(109172, 202213),	-- Plasma Mechshades + Remarkable Linkgrease Locksprocket
-			-- WOD_CRAFTED_ITEM_DF_REMARKABLE(109174, 202213),	-- Razorguard Mechshades + Remarkable Linkgrease Locksprocket
-			-- #ENDIF
-		}),
-		filter(MISC, {
-			i(202212, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Linkgrease Locksprocket
-			i(202214, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive True Iron Trigger
-			i(202215, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable True Iron Trigger
-			i(202213, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
+		n(WEAPON_ENCHANTMENTS, {
+			i(118008),	-- Hemet's Heartseeker
+			i(109122),	-- Megawatt Filament
+			i(109120),	-- Oglethorpe's Missile Splitter
 		}),
 	}),
 	-- #if BEFORE 8.0.1
