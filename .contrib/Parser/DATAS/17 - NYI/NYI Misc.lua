@@ -1049,7 +1049,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(196182),	-- Journal Entry
 			i(198840),	-- Kalecite Cluster
 			i(200935),	-- Large Egg Shell
-			i(200839),	-- Magical Cleaning Broom
 			i(190233),	-- Maruuk Centaur Supplies
 			i(194677),	-- Marvelous Mood Ring
 			i(200588),	-- Meaty Stem

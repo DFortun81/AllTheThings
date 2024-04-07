@@ -1530,6 +1530,7 @@ i(200810);	-- Wooden Stonegrabber Figurine
 i(200807);	-- Wooden Ursine Figure
 i(200531);	-- Worn Chitin Fragment
 i(194889);	-- XD-57 "Bullseye" Guided Rocket Kit
+i(200839);	-- Magical Cleaning Broom
 
 ------------------
 -- PATCH 10.0.5 --
