@@ -103,7 +103,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(288),	-- Azurelode Mine
 				-- #if AFTER CATA
-				exploration(278),	-- Brazie Farmstead
+				exploration(278, {	-- Brazie Farmstead
+					-- #if AFTER DF
+					["description"] = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
+					-- #endif
+				}),
 				exploration(1684),	-- Chillwind Point
 				exploration(1679),	-- Corrahn's Dagger
 				exploration(282),	-- Crushridge Hold
@@ -140,7 +144,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(281),	-- Ruins of Alterac
 				exploration(271),	-- Ruins of Southshore
 				exploration(283),	-- Slaughter Hollow
-				exploration(5604),	-- Sludgeguard Tower
+				exploration(5604, {	-- Sludgeguard Tower
+					-- #if AFTER DF
+					["description"] = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
+					-- #endif
+				}),
 				exploration(1678),	-- Sofera's Naze
 				exploration(285),	-- Southpoint Gate
 				-- #endif
@@ -154,7 +162,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(272),	-- Tarren Mill
 				-- #if AFTER CATA
 				exploration(1680),	-- The Headland
-				exploration(286),	-- The Sludge Fields
+				exploration(286, {	-- The Sludge Fields
+					-- #if AFTER DF
+					["description"] = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
+					-- #endif
+				}),
 				exploration(284),	-- The Uplands
 				-- #endif
 				-- #if BEFORE CATA
