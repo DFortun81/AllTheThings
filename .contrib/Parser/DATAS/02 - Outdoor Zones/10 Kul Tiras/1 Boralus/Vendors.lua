@@ -1331,7 +1331,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 75.0, 10.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168027, {	-- Design: Jewelhammer's Focus
+					i(168027, {	-- Design: Jewelhammer's Focus (RECIPE!)
 						["sourceQuest"] = 49584,	-- The Missing Chapter
 					}),
 				},

@@ -856,13 +856,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(171076, {	-- Awakened Leviathan's Eye Loop
 				["timeline"] = { ADDED_8_3_0 },
 				["g"] = {
-					i(171082),	-- Design: Peerless Leviathan's Eye Loop
+					i(171082),	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
 				},
 			}),
 			i(168702, {	-- Crushing Leviathan's Eye Loop
 				["timeline"] = { ADDED_8_2_0 },
 				["g"] = {
-					i(168772),	-- Design: Ascended Leviathan's Eye Loop
+					i(168772),	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
 				},
 			}),
 			i(166521, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Kraken's Eye Loop
@@ -875,7 +875,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(168701, {	-- Leviathan's Eye Loop
 				["timeline"] = { ADDED_8_2_0 },
 				["g"] = {
-					i(168771),	-- Design: Crushing Leviathan's Eye Loop
+					i(168771),	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
 				},
 			}),
 			i(153685),	-- Owlseye Loop
@@ -888,7 +888,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(171077, {	-- Unbound Leviathan's Eye Loop
 				["timeline"] = { ADDED_8_3_0 },
 				["g"] = {
-					i(171083),	-- Design: Awakened Leviathan's Eye Loop
+					i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
 				},
 			}),
 		}),

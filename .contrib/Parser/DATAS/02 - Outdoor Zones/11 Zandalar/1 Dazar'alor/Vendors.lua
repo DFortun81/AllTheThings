@@ -655,7 +655,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 47.0, 37.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168027, {	-- Design: Jewelhammer's Focus
+					i(168027, {	-- Design: Jewelhammer's Focus (RECIPE!)
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 					}),
 				},
