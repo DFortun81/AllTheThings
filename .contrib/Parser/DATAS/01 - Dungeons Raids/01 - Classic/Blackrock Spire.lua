@@ -72,29 +72,23 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 			}),
-			q(5001, {	-- Bijou's Belongings (A)
+			{	-- Bijou's Belongings
+				["allianceQuestData"] = q(5001),	-- Bijou's Belongings (A)
+				["hordeQuestData"] = q(4982, {	-- Bijou's Belongings (H)
+					["sourceQuest"] = 4981,	-- Operative Bijou
+				}),
 				["qg"] = 10257,	-- Bijou
 				["timeline"] = { "removed 4.0.3" },
-				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 Bijou's Belongings
-						["provider"] = { "i", 12345 },	-- Bijou's Belongings
+						["providers"] = {
+							{ "i",  12345 },	-- Bijou's Belongings
+							{ "o", 175334 },	-- Bijou's Belongings
+						},
 					}),
 				},
-			}),
-			q(4982, {	-- Bijou's Belongings (H)
-				["qg"] = 10257,	-- Bijou
-				["sourceQuest"] = 4981,	-- Operative Bijou
-				["timeline"] = { "removed 4.0.3" },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 55,
-				["groups"] = {
-					objective(1, {	-- 0/1 Bijou's Belongings
-						["provider"] = { "i", 12345 },	-- Bijou's Belongings
-					}),
-				},
-			}),
+			},
 			q(4983, {	-- Bijou's Reconnaissance Report
 				["providers"] = {
 					{ "n", 10257 },	-- Bijou
@@ -259,15 +253,18 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4764, {	-- Doomrigger's Clasp
-				["sourceQuest"] = 4766,	-- Mayara Brightwing
 				["qg"] = 9565,	-- Mayara Brightwing
+				["sourceQuest"] = 4766,	-- Mayara Brightwing
 				["coord"] = { 84.8, 69, BURNING_STEPPES },
 				["timeline"] = { "removed 4.0.3" },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
 				["groups"] = {
 					objective(1, {	-- 0/1 Doomrigger's Clasp
-						["provider"] = { "i", 12352 },	-- Doomrigger's Clasp
+						["providers"] = {
+							{ "i",  12352 },	-- Doomrigger's Clasp
+							{ "o", 175382 },	-- Doomrigger's Coffer
+						},
 					}),
 				},
 			}),
@@ -360,7 +357,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/15 Spire Spider Egg
-						["provider"] = { "i", 12530 },	-- Spire Spider Egg
+						["providers"] = {
+							{ "i",  12530 },	-- Spire Spider Egg
+							{ "o", 175606 },	-- Spire Spider Egg
+						},
+						["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
 					}),
 					i(12529, {	-- Smolderweb Hatchling (PET!)
 						["timeline"] = { "removed 4.0.3" },
@@ -773,7 +774,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					objective(1, {	-- 0/1 Darkstone Tablet
-						["provider"] = { "i", 12358 },	-- Darkstone Tablet
+						["providers"] = {
+							{ "i",  12358 },	-- Darkstone Tablet
+							{ "o", 175385 },	-- Darkstone Tablet
+						},
 					}),
 					i(15860, {	-- Blinkstrike Armguards
 						["timeline"] = { "removed 4.0.3" },
@@ -835,10 +839,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 40,
 				["groups"] = {
 					objective(1, {	-- 0/1 Fifth Mosh'aru Tablet
-						["provider"] = { "i", 12740 },	-- Fifth Mosh'aru Tablet
+						["providers"] = {
+							{ "i",  12740 },	-- Fifth Mosh'aru Tablet
+							{ "o", 175949 },	-- Fifth Mosh'aru Tablet
+						},
 					}),
 					objective(1, {	-- 0/1 Sixth Mosh'aru Tablet
-						["provider"] = { "i", 12741 },	-- Sixth Mosh'aru Tablet
+						["providers"] = {
+							{ "i",  12741 },	-- Sixth Mosh'aru Tablet
+							{ "o", 175950 },	-- Sixth Mosh'aru Tablet
+						},
 					}),
 				},
 			}),
@@ -858,11 +868,17 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 40,
 				["groups"] = {
 					objective(1, {	-- 0/1 Third Mosh'aru Tablet
-						["provider"] = { "i", 12411 },	-- Third Mosh'aru Tablet
+						["providers"] = {
+							{ "i",  12411 },	-- Third Mosh'aru Tablet
+							{ "o", 175487 },	-- Third Mosh'aru Tablet
+						},
 						["coord"] = { 72.4, 13, EASTERN_PLAGUELANDS },
 					}),
 					objective(1, {	-- 0/1 Fourth Mosh'aru Tablet
-						["provider"] = { "i", 12412 },	-- Fourth Mosh'aru Tablet
+						["providers"] = {
+							{ "i",  12412 },	-- Fourth Mosh'aru Tablet
+							{ "o", 175488 },	-- Fourth Mosh'aru Tablet
+						},
 						["coord"] = { 72.7, 15.7, EASTERN_PLAGUELANDS },
 					}),
 				},
@@ -1077,7 +1093,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "n", 9237 },	-- War Master Voone
 					}),
 					objective(4, {	-- 0/1 Important Blackrock Documents
-						["provider"] = { "i", 12562 },	-- Important Blackrock Documents
+						["providers"] = {
+							{ "i",  12562 },	-- Important Blackrock Documents
+							{ "o", 175785 },	-- Inconspicuous Documents
+						},
 						["description"] = "On the ground next to Overlord Wyrmthalak.",
 					}),
 					i(13961, {	-- Halycon's Muzzle
@@ -1445,13 +1464,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(12634),	-- Chiselbrand Girdle
 				},
 			}),
-			-- #if BEFORE 4.0.3
-			i(12530, {	-- Spire Spider Egg
-				["provider"] = { "o", 175606 },	-- Spire Spider Egg
-				["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
-				["timeline"] = { "removed 4.0.3" },
-			}),
-			-- #endif
 			n(10376, {	-- Crystal Fang (Rare)
 				["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
 				-- #if BEFORE 6.0.1

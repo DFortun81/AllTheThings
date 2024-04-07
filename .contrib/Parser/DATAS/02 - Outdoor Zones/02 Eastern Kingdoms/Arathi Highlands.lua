@@ -1914,6 +1914,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(28619, {	-- Warchief's Command: Arathi Highlands!
+					["provider"] = { "o", 207279 },	-- Warchief's Command Board
+					["coord"] = { 56.5, 47.1, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "added 4.0.1.12984" },
+					["races"] = HORDE_ONLY,
+				}),
 				q(691, {	-- Worth Its Weight in Gold
 					["qg"] = 2788,	-- Apprentice Kryten
 					["sourceQuest"] = 690,	-- Malin's Request (1/2)

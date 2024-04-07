@@ -191,6 +191,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- Find the Spider God's Name
+							["provider"] = { "o", 142715 },	-- Tablet of Theka
+						}),
+					},
 				}),
 				q(2846, {	-- Tiara of the Deep
 					["qg"] = 6546,	-- Tabetha

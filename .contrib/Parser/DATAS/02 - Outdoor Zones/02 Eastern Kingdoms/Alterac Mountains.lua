@@ -105,6 +105,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(506, {	-- Blackmoore's Legacy
+					["qg"] = 2316,	-- Gol'dir
+					["sourceQuest"] = 503,	-- Gol'dir
+					["coord"] = { 59.96, 43.74, ALTERAC_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+				}),
 				q(500, {	-- Crushridge Bounty
 					["qg"] = 2263,	-- Marshal Redpath
 					["coord"] = { 49.6, 58.6, HILLSBRAD_FOOTHILLS },
@@ -175,8 +183,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								660,	-- Bloodscalp Witch Doctor
 							},
 						}),
-						objective(3, {	-- 0/1 Essence of the Exile
-							["provider"] = { "i", 6851 },	-- Essence of the Exile
+						q(1714, {	-- Essence of the Exile
+							["qg"] = 6176,	-- Bath'rah the Windwatcher
+							["sourceQuest"] = 1791,	-- The Windwatcher
+							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+							["timeline"] = { "removed 4.0.3" },
+							["cost"] = {
+								{ "i", 4479, 8 },	-- Burning Charm
+								{ "i", 4481, 8 },	-- Cresting Charm
+								{ "i", 4480, 8 },	-- Thundering Charm
+							},
+							["classes"] = { WARRIOR },
+							["repeatable"] = true,
+							["lvl"] = 30,
+							["groups"] = {
+								objective(3, {	-- 0/1 Essence of the Exile
+									["questID"] = 1712,	-- Cyclonian
+									["provider"] = { "i", 6851 },	-- Essence of the Exile
+								}),
+							},
 						}),
 					},
 				}),
@@ -251,10 +276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Encoded Fragment
 							["provider"] = { "i", 20023 },	-- Encoded Fragment
-							["crs"] = {
-								8766,	-- Forest Ooze
-								8660,	-- The Evalcharr
-							},
+							["cr"] = 8766,	-- Forest Ooze
 						}),
 					},
 				})),
@@ -270,26 +292,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-				}),
-				q(1714, {	-- Essence of the Exile
-					["qg"] = 6176,	-- Bath'rah the Windwatcher
-					["sourceQuest"] = 1791,	-- The Windwatcher
-					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { ARATHI_HIGHLANDS },
-					["cost"] = {
-						{ "i", 4479, 8 },	-- Burning Charm
-						{ "i", 4481, 8 },	-- Cresting Charm
-						{ "i", 4480, 8 },	-- Thundering Charm
-					},
-					["classes"] = { WARRIOR },
-					["repeatable"] = true,
-					["lvl"] = 30,
-					["groups"] = {
-						i(6851, {	-- Essence of the Exile
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
 				}),
 				q(510, {	-- Foreboding Plans
 					["providers"] = {
@@ -315,6 +317,52 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+				}),
+				q(503, {	-- Gol'dir
+					["qg"] = 2229,	-- Krusk
+					["sourceQuest"] = 533,	-- Infiltration
+					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rusted Iron Key
+							["provider"] = { "i", 3704 },	-- Rusted Iron Key
+							["coord"] = { 61.8, 40.6, ALTERAC_MOUNTAINS },
+							["cr"] = 2431,	-- Jailor Borhuin
+						}),
+					},
+				}),
+				q(533, {	-- Infiltration
+					["qg"] = 2229,	-- Krusk
+					["sourceQuest"] = 498,	-- The Rescue,
+					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+					["groups"] = {
+						q(535, {	-- Valik
+							["qg"] = 2333,	-- Henchman Valik
+							["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
+							["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 2440,	-- Drunken Footpad
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["lvl"] = 29,
+							["groups"] = {
+								objective(1, {	-- 0/1 Syndicate Missive
+									["questID"] = 533,	-- Infiltration
+									["provider"] = { "i", 3601 },	-- Syndicate Missive
+									["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
+									["crs"] = {
+										2240,	-- Syndicate Footpad
+										2241,	-- Syndicate Thief
+									},
+								}),
+							},
+						}),
+					},
 				}),
 				q(8249, {	-- Junkboxes Needed
 					-- #if AFTER 4.3.0
@@ -350,6 +398,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+				}),
+				q(507, {	-- Lord Aliden Perenolde
+					["qg"] = 2229,	-- Krusk
+					["sourceQuest"] = 506,	-- Blackmoore's Legacy
+					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Aliden Perenolde slain
+							["provider"] = { "n", 2423 },	-- Lord Aliden Perenolde
+							["coord"] = { 39.2, 14.4, ALTERAC_MOUNTAINS },
+						}),
+					},
 				}),
 				q(512, {	-- Noble Deaths
 					["qg"] = 2276,	-- Magistrate Henry Maleb
@@ -463,6 +525,108 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 24,
 				}),
+				q(508, {	-- Taretha's Gift
+					["providers"] = {
+						{ "n", 2317 },	-- Elysa
+						{ "i", 3498 },	-- Taretha's Necklace
+					},
+					["sourceQuest"] = 507,	-- Lord Aliden Perenolde
+					["coord"] = { 39.30, 14.30, ALTERAC_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+					["groups"] = {
+						i(3765, {	-- Brigand's Pauldrons
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(3764, {	-- Mantis Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(495, {	-- The Crown of Will (1/5)
+					["qg"] = 2227,	-- Sharlindra
+					["coord"] = { 57.60, 93.84, UNDERCITY },
+					["timeline"] = { "removed 5.0.2" },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 34,
+				}),
+				q(518, {	-- The Crown of Will (2/5)
+					["qg"] = 2278,	-- Melisara
+					["sourceQuest"] = 495,	-- The Crown of Will (1/5)
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 34,
+					["groups"] = {
+						objective(1, {	-- 0/14 Crushridge Mauler
+							["provider"] = { "n", 2254 },	-- Crushridge Mauler
+						}),
+					},
+				}),
+				q(519, {	-- The Crown of Will (3/5)
+					["qg"] = 2278,	-- Melisara
+					["sourceQuest"] = 518,	-- The Crown of Will (2/5)
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 34,
+					["groups"] = {
+						objective(1, {	-- 0/1 Targ's Head
+							["provider"] = { "i", 3550 },	-- Targ's Head
+							["coord"] = { 39.6, 53.0, ALTERAC_MOUNTAINS },
+							["cr"] = 2420,	-- Targ
+						}),
+						objective(2, {	-- 0/1 Muckrake's Head
+							["provider"] = { "i", 3551 },	-- Muckrake's Head
+							["coord"] = { 38.8, 47.2, ALTERAC_MOUNTAINS },
+							["cr"] = 2421,	-- Muckrake
+						}),
+						objective(3, {	-- 0/1 Glommus's Head
+							["provider"] = { "i", 3552 },	-- Glommus's Head
+							["coord"] = { 39.4, 41.8, ALTERAC_MOUNTAINS },
+							["cr"] = 2422,	-- Glommus
+						}),
+					},
+				}),
+				q(520, {	-- The Crown of Will (4/5)
+					["qg"] = 2278,	-- Melisara
+					["sourceQuest"] = 519,	-- The Crown of Will (3/5)
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 34,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mug'thol's Head
+							["provider"] = { "i", 3553 },	-- Mug'thol's Head
+							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },
+							["cr"] = 2257,	-- Mug'thol
+						}),
+						objective(2, {	-- 0/1 Crown of Will
+							["provider"] = { "i", 3554 },	-- Mug'thol's Head
+							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },
+							["cr"] = 2257,	-- Mug'thol
+						}),
+					},
+				}),
+				q(521, {	-- The Crown of Will (5/5)
+					["providers"] = {
+						{ "n", 2278 },	-- Melisara
+						{ "i", 3554 },	-- Crown of Will
+					},
+					["sourceQuest"] = 520,	-- The Crown of Will (4/5)
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 34,
+					["groups"] = {
+						i(4430, {	-- Ethereal Talisman
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(551, {	-- The Ensorcelled Parchment
 					["providers"] = {
 						{ "i", 3706 },	-- Ensorcelled Parchment
@@ -499,17 +663,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(535, {	-- Valik
-					["qg"] = 2333,	-- Henchman Valik
-					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
-					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
+				q(566, {	-- WANTED: Baron Vardus
+					["provider"] = { "o", 1763 },	-- WANTED
+					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
+					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2440,	-- Drunken Footpad
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 29,
+					["lvl"] = 35,
 					["groups"] = {
-						i(3601, {	-- Syndicate Missive
+						objective(1, {	-- 0/1 Head of Baron Vardus
+							["provider"] = { "i", 3626 },	-- Head of Baron Vardus
+							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
+							["cr"] = 2306,	-- Baron Vardus
+						}),
+						i(2231, {	-- Inferno Robe
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},

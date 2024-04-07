@@ -2013,12 +2013,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
 						}),
-						recipe(8681, {	-- Instant Poison
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
-						recipe(2842, {	-- Poisons
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
 						i(9513, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { "removed 1.3.0" },
 						}),

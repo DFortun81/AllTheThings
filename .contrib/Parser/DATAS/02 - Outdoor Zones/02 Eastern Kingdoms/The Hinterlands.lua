@@ -508,6 +508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2934,	-- Undamaged Venom Sac
 					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -1547,8 +1548,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Shadra's Venom
-							["provider"] = { "i", 9324 },	-- Shadra's Venom
-							["cost"] = { { "i", 9323, 1 } },	-- Gadrin's Parchment
+							["providers"] = {
+								{ "i", 9324 },	-- Shadra's Venom
+								{ "i", 9323 },	-- Gadrin's Parchment
+							},
 							["coord"] = { 34, 72, THE_HINTERLANDS },
 							["cr"] = 2707,	-- Shadra <The Venom Queen>
 						}),
@@ -1763,6 +1766,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 40,
 				}),
+				q(2934, {	-- Undamaged Venom Sac
+					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
+					["sourceQuest"] = 2933,	-- Venom Bottles
+					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- 0/1 Undamaged Venom Sac
+							["provider"] = { "i", 9322 },	-- Undamaged Venom Sac
+							["coord"] = { 34.8, 70.2, THE_HINTERLANDS },
+							["cr"] = 2686,	-- Witherbark Broodguard
+						}),
+					},
+				}),
 				q(2933, {	-- Venom Bottles
 					["providers"] = {
 						{ "o", 142702 },	-- Venom Bottle
@@ -1770,8 +1788,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 23.6, 58.7, THE_HINTERLANDS },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
+				}),
+				q(2938, {	-- Venom to the Undercity
+					["providers"] = {
+						{ "n", 2216 },	-- Apothecary Lydon <Royal Apothecary Society>
+						{ "i", 9436 },	-- Faranell's Parcel
+					},
+					["sourceQuest"] = 2937,	-- Summoning Shadra
+					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
+					["groups"] = {
+						i(9649, {	-- Royal Highmark Vestments
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(9650, {	-- Honorguard Chestpiece
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(10686, {	-- Aegis of Battle
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(26525, {	-- Venomous Secrets (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
