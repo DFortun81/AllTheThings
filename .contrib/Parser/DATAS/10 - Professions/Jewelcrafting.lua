@@ -210,7 +210,122 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 		n(QUESTS, {
-			------ Tools of Trade Questline ------
+			q(54479, {	-- Jeweled Designs
+				["requireSkill"] = JEWELCRAFTING,
+				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+				["coord"] = { 75.2, 9.9, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+			}),
+			-- Tools of Trade Questline
+			q(49570, {	-- A Rocky Start (A)
+				["provider"] = { "o", 278570 },	-- Ancient Journal
+				["coord"] = { 75.0, 10.2, BORALUS },
+				["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49571, {	-- Digging Through the Past (A)
+				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+				["coord"] = { 73.4, 6.3, BORALUS },
+				["sourceQuest"] = 49570,	-- A Rocky Start (A)
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49574, {	-- The Shrine of Storms
+				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+				["coord"] = { 75.2, 9.9, BORALUS },
+				["sourceQuest"] = 49571,	-- Digging Through the Past (A)
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49577, {	-- Cracking the Surface (A)
+				["provider"] = { "n", 150898 },	-- Shrine of Storms
+				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
+				["modelScale"] = 2,
+				["sourceQuest"] = 49574,	-- The Shrine of Storms
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(55585, {	-- A Promising Beginning (A)
+				["provider"] = { "n", 152489 },	-- Shrine of Storms
+				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
+				["modelScale"] = 2,
+				["sourceQuest"] = 49577,	-- Cracking the Surface (A)
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49572, {	-- The Shrine of the Sea
+				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+				["coord"] = { 75.2, 9.9, BORALUS },
+				["sourceQuest"] = 55585,	-- A Promising Beginning (A)
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49575, {	-- Tol Dagor: Jewel of the Tides
+				["provider"] = { "n", 150893 },	-- Shrine of the Sea
+				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
+				["modelScale"] = 2,
+				["sourceQuest"] = 49572,	-- The Shrine of the Sea
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(55590, {	-- Setting Things Right (A)
+				["provider"] = { "n", 152495 },	-- Shrine of the Sea
+				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
+				["modelScale"] = 2,
+				["sourceQuest"] = 49575,	-- Tol Dagor: Jewel of the Tides
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49573, {	-- The Shrine of the Eventide
+				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+				["coord"] = { 75.2, 9.9, BORALUS },
+				["sourceQuest"] = 55585,	-- A Promising Beginning (A)
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49576, {	-- High Prospects
+				["provider"] = { "n", 150896 },	-- Shrine of the Eventide
+				["coord"] = { 34.1, 35.5, DRUSTVAR },
+				["modelScale"] = 2,
+				["sourceQuest"] = 49573,	-- The Shrine of the Eventide
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(55586, {	-- Polished Up (A)
+				["provider"] = { "n", 152497 },	-- Shrine of the Eventide
+				["coord"] = { 34.1, 35.5, DRUSTVAR },
+				["modelScale"] = 2,
+				["sourceQuest"] = 49576,	-- High Prospects
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(49584, {	-- The Missing Chapter (A)
+				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+				["coord"] = { 75.2, 9.9, BORALUS },
+				["sourceQuests"] = {
+					55590,	-- Setting Things Right (A)
+					55586,	-- Polished Up (A)
+				},
+				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					recipe(256703),	-- Design: Jewelhammer's Focus
+				},
+			}),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

@@ -669,10 +669,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(6912, {	-- Remains of a Paladin
-				i(7886),	-- Untranslated Journal
 				-- #if AFTER 4.0.3
 				["description"] = "This dead Paladin was central in now removed dungeon quests, and remains abandoned on the ground without any purpose.",
 				-- #endif
+				["g"] = {
+					i(7886),	-- Untranslated Journal
+				},
 			}),
 			e(467, {	-- Revelosh
 				["creatureID"] = 6910,
