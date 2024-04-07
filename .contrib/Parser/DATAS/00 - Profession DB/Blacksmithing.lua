@@ -1241,9 +1241,6 @@ i(0, 153657);		-- Peerless Draenic Steel Warboots
 i(0, 153663);		-- Peerless Draenic Steel Wristwraps
 i(0, 171718);		-- Truesteel Ingot
 i(108421, 153771);	-- Blackrock Crucible
-i(116746, 0);		-- Greater Steelforged Essence
-i(122550, 0);		-- Powerful Steelforged Essence
-i(122552, 0);		-- Powerful Truesteel Essence
 i(116727, 0);		-- Smoldering Breastplate
 i(116726, 0);		-- Smoldering Helm
 i(116728, 0);		-- Smoldering Greaves
@@ -1260,10 +1257,12 @@ i(0, 171691);		-- Smoldering Helm
 i(0, 176090);		-- Secrets of Draenor Blacksmithing
 i(0, 171690);		-- Truesteel Ingot
 --- ITEM ---
+i(116746, 171711);	-- Greater Steelforged Essence [REMOVED: 6.2.0]
+i(116744, 171709);	-- Greater Truesteel Essence [REMOVED: 6.2.0]
 i(119329, 177169);	-- Soul of the Forge
 i(120262, 178245);	-- Steelforged Aegis
 i(120260, 178243);	-- Steelforged Axe
-i(116745, 171710);	-- Steelforged Essence
+i(116745, 171710);	-- Steelforged Essence [REMOVED: 10.0.5]
 i(116731, 171696);	-- Steelforged Dagger
 i(116729, 171694);	-- Steelforged Greataxe
 i(116732, 171697);	-- Steelforged Hammer
@@ -1272,7 +1271,7 @@ i(116733, 171698);	-- Steelforged Shield
 i(116740, 171705);	-- Truesteel Armguards
 i(116741, 171706);	-- Truesteel Boots
 i(116739, 171704);	-- Truesteel Breastplate
-i(116743, 171708);	-- Truesteel Essence
+i(116743, 171708);	-- Truesteel Essence [REMOVED: 10.0.5]
 i(116738, 171703);	-- Truesteel Gauntlets
 i(116737, 171702);	-- Truesteel Greaves
 i(116734, 171699);	-- Truesteel Grinder
@@ -1285,6 +1284,8 @@ i(116742, 171707);	-- Truesteel Waistguard
 -- PATCH 6.1.0 --
 -----------------
 --- ITEM ---
+i(122550, 181416);	-- Powerful Steelforged Essence [REMOVED: 6.2.0]
+i(122552, 181417);	-- Powerful Truesteel Essence [REMOVED: 6.2.0]
 i(122705, 182116);	-- Riddle of Truesteel
 
 -----------------

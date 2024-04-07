@@ -136,20 +136,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		filter(REAGENTS, {
 			i(108996),	-- Alchemical Catalyst
 			i(109123),	-- Crescent Oil
-			i(128159, {["timeline"] = {ADDED_6_2_0}}),	-- Elemental Distillate
+			i(128159, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Elemental Distillate
 			i(113264, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Air
 			i(113263, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Earth
 			i(113261, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Fire
 			i(113262, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Water
-			i(128158, {["timeline"] = {ADDED_6_2_0}}),	-- Wildswater
+			i(128158, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Wildswater
 		}),
 		filter(TRINKET_F, {
 			i(109262),	-- Draenic Philosopher's Stone
 			i(122604, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of Fire
 			i(122602, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of the Earth
-			i(128024, {["timeline"] = {ADDED_6_2_0}}),	-- Stone of the Elements
+			i(128024, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Stone of the Elements
 			i(122603, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of the Waters
-			i(128023, {["timeline"] = {ADDED_6_2_0}}),	-- Stone of the Wilds
+			i(128023, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Stone of the Wilds
 			i(122601, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of Wind
 		}),
 	}),
@@ -227,11 +227,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(127731, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Steelforged Essence
 			i(127732, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Truesteel Essence
 			i(118720),	-- Secret of Draenor Blacksmithing
-			i(128016, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_10_0_5}}),	-- Steelforged Essence
-			i(128015, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_10_0_5}}),	-- Truesteel Essence
+			i(128016, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Steelforged Essence
+			i(128015, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Truesteel Essence
 			i(116654),	-- Truesteel Grinder
 			i(108257),	-- Truesteel Ingot
 			i(116428),	-- Truesteel Reshaper
+			i(116653, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Steelforged Essence
+			i(116652, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Steelforged Essence
+			i(122538, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Steelforged Essence
+			i(116650, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Truesteel Essence
+			i(116649, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Truesteel Essence
+			i(122539, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Truesteel Essence
 		}),
 		n(WEAPONS, {
 			-- #if BEFORE 10.0.5
@@ -752,7 +758,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			}),
 		}),
 		filter(MISC, {
-			i(128014, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_10_0_5}}),	-- Burnished Essence
+			i(128014, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Burnished Essence
 			i(116261),	-- Burnished Inscription Bag
 			i(110611),	-- Burnished Leather
 			i(116259),	-- Burnished Leather Bag
@@ -764,6 +770,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(202217, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Burnished Essence
 			i(127730, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Burnished Essence
 			i(118721),	-- Secret of Draenor Leatherworking
+			i(116203, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Burnished Essence
+			i(116204, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Burnished Essence
+			i(122537, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Burnished Essence
 		}),
 		filter(MOUNTS, {
 			i(108883),	-- Dustmane Direwolf (MOUNT!)

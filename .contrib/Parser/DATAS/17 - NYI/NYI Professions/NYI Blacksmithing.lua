@@ -572,9 +572,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- With SpellID attched
 					i(108421),	-- Plans: Blackrock Crucible
 					-- Without SpellID attached
-					i(116746),	-- Plans: Greater Steelforged Essence
-					i(122550),	-- Plans: Powerful Steelforged Essence
-					i(122552),	-- Plans: Powerful Truesteel Essence
 					i(116727),	-- Plans: Smoldering Breastplate
 					i(116726),	-- Plans: Smoldering Helm
 					i(116728),	-- Plans: Smoldering Greaves

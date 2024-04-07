@@ -876,50 +876,6 @@ DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSe
 		r(171264),	-- Traveling Tunic
 	},
 })));
-LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
-	n(ARMOR, {
-		r(226115),	-- Blue Chain Leggings
-		r(226119),	-- Chain Belt
-		r(226113),	-- Chain Boots
-		r(226116),	-- Chain Bracers
-		r(226118),	-- Chain Gauntlets
-		r(226112),	-- Chain Hauberk
-		r(226117),	-- Chain Leggings
-		r(226121),	-- Chain Pauldrons
-		r(226114),	-- Crackling Scale Breastplate
-		r(226122),	-- Element Grips
-		r(226132),	-- Heavy Scale Belt
-		r(226134),	-- Heavy Scale Boots
-		r(226123),	-- Heavy Scale Gauntlets
-		r(226135),	-- Heavy Scale Hood
-		r(226126),	-- Heavy Scale Pants
-		r(226129),	-- Heavy Scale Pauldrons
-		r(226128),	-- Heavy Scale Shirt
-		r(226124),	-- Heavy Scale Wraps
-		r(226107),	-- Light Scale Belt
-		r(226109),	-- Light Scale Boots
-		r(226106),	-- Light Scale Bracers
-		r(226105),	-- Light Scale Gloves
-		r(226108),	-- Light Scale Jerkin
-		r(226111),	-- Light Scale Pants
-		r(226110),	-- Shamanic Treads
-		r(226137),	-- Spritescale Boots
-		r(226125),	-- Spritescale Britches
-		r(226127),	-- Spritescale Cinch
-		r(226136),	-- Spritescale Circlet
-		r(226120),	-- Spritescale Epaulets
-		r(226131),	-- Spritescale Gloves
-		r(226130),	-- Spritescale Jerkin
-		r(226133),	-- Spritescale Wraps
-	}),
-}))
-CLASSIC_CATA_LEGION_LEATHERWORKING = appendGroups(CLASSIC_CATA_LEATHERWORKING,
--- #if AFTER 7.0.3
-LEGION_LEATHERWORKING
--- #else
-{}
--- #endif
-);
 COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	i(116328, {	-- Pattern: Brilliant Burnished Cloak (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
@@ -928,7 +884,7 @@ COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedD
 		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 		["collectible"] = false,
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
-		["timeline"] = { REMOVED_10_0_5 },
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),
 	i(116349, {	-- Pattern: Burnished Inscription Bag (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
@@ -941,6 +897,10 @@ COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedD
 	}),
 	i(120258, {	-- Pattern: Drums of Fury (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
+	}),
+	i(116346, {	-- Pattern: Greater Burnished Essence (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
 	}),
 	i(202232, {	-- Pattern: Impressive Burnished Essence (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
@@ -1011,6 +971,50 @@ COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedD
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 }));
+LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
+	n(ARMOR, {
+		r(226115),	-- Blue Chain Leggings
+		r(226119),	-- Chain Belt
+		r(226113),	-- Chain Boots
+		r(226116),	-- Chain Bracers
+		r(226118),	-- Chain Gauntlets
+		r(226112),	-- Chain Hauberk
+		r(226117),	-- Chain Leggings
+		r(226121),	-- Chain Pauldrons
+		r(226114),	-- Crackling Scale Breastplate
+		r(226122),	-- Element Grips
+		r(226132),	-- Heavy Scale Belt
+		r(226134),	-- Heavy Scale Boots
+		r(226123),	-- Heavy Scale Gauntlets
+		r(226135),	-- Heavy Scale Hood
+		r(226126),	-- Heavy Scale Pants
+		r(226129),	-- Heavy Scale Pauldrons
+		r(226128),	-- Heavy Scale Shirt
+		r(226124),	-- Heavy Scale Wraps
+		r(226107),	-- Light Scale Belt
+		r(226109),	-- Light Scale Boots
+		r(226106),	-- Light Scale Bracers
+		r(226105),	-- Light Scale Gloves
+		r(226108),	-- Light Scale Jerkin
+		r(226111),	-- Light Scale Pants
+		r(226110),	-- Shamanic Treads
+		r(226137),	-- Spritescale Boots
+		r(226125),	-- Spritescale Britches
+		r(226127),	-- Spritescale Cinch
+		r(226136),	-- Spritescale Circlet
+		r(226120),	-- Spritescale Epaulets
+		r(226131),	-- Spritescale Gloves
+		r(226130),	-- Spritescale Jerkin
+		r(226133),	-- Spritescale Wraps
+	}),
+}))
+CLASSIC_CATA_LEGION_LEATHERWORKING = appendGroups(CLASSIC_CATA_LEATHERWORKING,
+-- #if AFTER 7.0.3
+LEGION_LEATHERWORKING
+-- #else
+{}
+-- #endif
+);
 BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(330216, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
 	r(330218, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]

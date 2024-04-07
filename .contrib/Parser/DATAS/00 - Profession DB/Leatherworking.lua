@@ -1306,6 +1306,7 @@ i(116349, 171290);	-- Burnished Inscription Bag
 i(116347, 171288);	-- Burnished Leather Bag
 i(116348, 171289);	-- Burnished Mining Bag
 i(120258, 178208);	-- Drums of Fury
+i(116346, 171287);	-- Greater Burnished Essence [REMOVED: 6.2.0]
 i(116325, 171266);	-- Leather Refurbishing Kit
 i(116327, 171268);	-- Nimble Burnished Cloak
 i(116326, 171267);	-- Powerful Burnished Cloak
@@ -1355,6 +1356,7 @@ i(0, 176425);		-- Voodoo Doctor's Hovel
 -- PATCH 6.1.0 --
 -----------------
 --- ITEM ---
+i(122547, 181415);	-- Powerful Burnished Essence [REMOVED: 6.2.0]
 i(122715, 182121);	-- Spiritual Leathercraft
 
 -----------------

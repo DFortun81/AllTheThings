@@ -574,8 +574,8 @@ i(0, 181634);		-- Transmute: Sorcerous Water to Fire
 -- PATCH 6.2.0 --
 -----------------
 --- ITEM ---
-i(128161, 188676);	-- Elemental Distillate
-i(128160, 188674);	-- Wildswater
+i(128161, 188676);	-- Elemental Distillate [REMOVED: 10.0.5]
+i(128160, 188674);	-- Wildswater [REMOVED: 10.0.5]
 
 -----------------
 -- PATCH 7.0.3 --

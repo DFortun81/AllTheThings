@@ -192,10 +192,10 @@ i(122712, 182120);	-- Primal Welding
 -- PATCH 6.2.0 --
 -----------------
 --- ITEM ---
-i(127729, 187496);	-- Advanced Muzzlesprocket
-i(127721, 187497);	-- Bi-Directional Fizzle Reducer
-i(127739, 187521);	-- Infrablue-Blocker Lenses
-i(127747, 187520);	-- Taladite Firing Pin
+i(127729, 187496);	-- Advanced Muzzlesprocket [REMOVED: 10.0.5]
+i(127721, 187497);	-- Bi-Directional Fizzle Reducer [REMOVED: 10.0.5]
+i(127739, 187521);	-- Infrablue-Blocker Lenses [REMOVED: 10.0.5]
+i(127747, 187520);	-- Taladite Firing Pin [REMOVED: 10.0.5]
 
 -----------------
 -- PATCH 7.0.3 --

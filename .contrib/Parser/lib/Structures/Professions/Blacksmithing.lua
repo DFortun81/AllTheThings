@@ -701,6 +701,14 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 	},
 })));
 COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	i(116746, {	-- Plans: Greater Steelforged Essence (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
+	}),
+	i(116744, {	-- Plans: Greater Truesteel Essence (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
+	}),
 	i(119329, {	-- Plans: Soul of the Forge (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 }},
 	}),
@@ -767,19 +775,19 @@ COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
 		["timeline"] = { REMOVED_10_0_5 },
 	}),
-	i(202223, {	-- Recipe: Impressive Steelforged Essence (RECIPE!)
+	i(202223, {	-- Plans: Impressive Steelforged Essence (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
 		["timeline"] = { ADDED_10_0_5 },
 	}),
-	i(202224, {	-- Recipe: Remarkable Steelforged Essence (RECIPE!)
+	i(202224, {	-- Plans: Remarkable Steelforged Essence (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
 		["timeline"] = { ADDED_10_0_5 },
 	}),
-	i(202226, {	-- Recipe: Impressive Truesteel Essence (RECIPE!)
+	i(202226, {	-- Plans: Impressive Truesteel Essence (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
 		["timeline"] = { ADDED_10_0_5 },
 	}),
-	i(202227, {	-- Recipe: Remarkable Truesteel Essence (RECIPE!)
+	i(202227, {	-- Plans: Remarkable Truesteel Essence (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
 		["timeline"] = { ADDED_10_0_5 },
 	}),

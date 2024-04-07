@@ -5,25 +5,43 @@ local WOD_REMOVED_RECIPE_STR = "In 9.0.1, Blizzard made this recipe unlearnable 
 local ALCHEMICAL_CATALYST = 108996;
 local BLACKROCK_ORE = 109118;
 local CERULEAN_PIGMENT = 114931;
+local LUMINOUS_SHARD = 111245;
+local RAW_BEAST_HIDE = 110609;
+local STARFLOWER = 109127;
 local TRUE_IRON_ORE = 109119;
-local HERB_TRADER = {
-	i(120945, {	-- Primal Spirit
-		["cost"] = {
-			{ "i", 109118, 5 },	-- 5x Blackrock Ore
-			{ "i", 109693, 5 },	-- 5x Draenic Dust
-			{ "i", 109125, 5 },	-- 5x Fireweed
-			{ "i", 110609, 5 },	-- 5x Raw Beast Hide
-			{ "i", 111557, 5 },	-- 5x Sumptuous Fur
-		},
+local PRIMAL_SPIRIT = i(120945, {	-- Primal Spirit
+	["cost"] = {
+		{ "i", 109118, 5 },	-- 5x Blackrock Ore
+		{ "i", 109693, 5 },	-- 5x Draenic Dust
+		{ "i", 109125, 5 },	-- 5x Fireweed
+		{ "i", 110609, 5 },	-- 5x Raw Beast Hide
+		{ "i", 111557, 5 },	-- 5x Sumptuous Fur
+	},
+});
+local COOK_TRADER = sharedData({ ["timeline"] = { ADDED_6_1_0 } }, {
+	i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
+	i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
+	i(122558),	-- Recipe: Pickled Eel (RECIPE!)
+	i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
+	i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
+	i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
+});
+local DUST_TRADER = {
+	PRIMAL_SPIRIT,
+	i(122711, {	-- Formula: Temporal Binding (RECIPE!)
+		["cost"] = {{ "i", LUMINOUS_SHARD, 5 }},
 	}),
+};
+local HERB_TRADER = {
+	PRIMAL_SPIRIT,
 	i(128161, {	-- Recipe: Elemental Distillate (RECIPE!)
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
-		["timeline"] = { ADDED_6_2_0 }
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 }
 	}),
 	i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
-		["cost"] = {{ "i", 109127, 60 }},	-- 60x Starflower
+		["cost"] = {{ "i", STARFLOWER, 60 }},
 	}),
 	i(122600, {	-- Recipe: Savage Blood (RECIPE!)
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
@@ -32,7 +50,7 @@ local HERB_TRADER = {
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
-		["timeline"] = { ADDED_6_2_0 }
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 }
 	}),
 	i(128410, {	-- Technique: Mass Mill Fireweed (RECIPE!)
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
@@ -107,25 +125,48 @@ local HERB_TRADER = {
 		},
 	}),
 };
+local LEATHER_TRADER = {
+	PRIMAL_SPIRIT,
+	i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+	}),
+	i(122547, {	-- Pattern: Powerful Burnished Essence (RECIPE!)
+		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+	}),
+	i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+	}),
+	i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
+		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+	}),
+};
 local ORE_TRADER = {
-	i(120945, {	-- Primal Spirit
-		["cost"] = {
-			{ "i", 109118, 5 },	-- 5x Blackrock Ore
-			{ "i", 109693, 5 },	-- 5x Draenic Dust
-			{ "i", 109125, 5 },	-- 5x Fireweed
-			{ "i", 110609, 5 },	-- 5x Raw Beast Hide
-			{ "i", 111557, 5 },	-- 5x Sumptuous Fur
-		},
+	PRIMAL_SPIRIT,
+	i(127726, {	-- Design: Mighty Taladite Amplifier
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	un(REMOVED_FROM_GAME, i(122551)),	-- Design: Powerful Taladite Amplifier
+	i(122714, {	-- Design: Primal Gemcutting
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+	}),
+	i(127744, {	-- Design: Savage Taladite Amplifier
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
-	}),
-	i(127726, {	-- Design: Mighty Taladite Amplifier
-		["description"] = WOD_REMOVED_RECIPE_STR,
-		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
@@ -134,23 +175,21 @@ local ORE_TRADER = {
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
-	un(REMOVED_FROM_GAME, i(122551)),	-- Design: Powerful Taladite Amplifier
-	i(122714, {	-- Design: Primal Gemcutting
+	i(122550, {	-- Plans: Powerful Steelforged Essence (RECIPE!)
+		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+	}),
+	i(122552, {	-- Plans: Powerful Truesteel Essence (RECIPE!)
+		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 	i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 	i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
-	}),
-	i(127744, {	-- Design: Savage Taladite Amplifier
-		["description"] = WOD_REMOVED_RECIPE_STR,
-		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
@@ -179,9 +218,11 @@ local ORE_TRADER = {
 	}),
 	i(122546, {	-- Schematic: Oglethorpe's Octagonal Lenses (RECIPE!)
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(122554, {	-- Schematic: Precision Scope Tuning Kit (RECIPE!)
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 	i(122712, {	-- Schematic: Primal Welding (RECIPE!)
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
@@ -193,14 +234,6 @@ local ORE_TRADER = {
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 };
-local COOK_TRADER = sharedData({ ["timeline"] = { ADDED_6_1_0 } }, {
-	i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
-	i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
-	i(122558),	-- Recipe: Pickled Eel (RECIPE!)
-	i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
-	i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
-	i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
-});
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
@@ -358,24 +391,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91020, {	-- Enchantress Ismae <Dust Trader>
+				n(91020, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Enchantress Ismae <Dust Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(122711, {	-- Formula: Temporal Binding (RECIPE!)
-							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
-							["timeline"] = { ADDED_6_1_0 },
-						}),
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-					},
-				}),
+					["g"] = DUST_TRADER,
+				})),
 				n(80285, {	-- Guh <Bladespire Trader>
 					["description"] = "Must speak to him in |cFFFFD700Frostfire Ridge|r to invite him to your garrison.",
 					["g"] = {
@@ -384,37 +403,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91024, {	-- Jake the Fox <Leather Trader>
+				n(91024, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Jake the Fox <Leather Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
-						i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
-							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
-							["timeline"] = { ADDED_6_1_0 },
-						}),
-					},
-				}),
+					["g"] = LEATHER_TRADER,
+				})),
 				n(76928, {	-- Kraank <Food & Drink>
 					["races"] = HORDE_ONLY,
 					["g"] = COOK_TRADER,
@@ -497,24 +489,10 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 					["g"] = HERB_TRADER,
 				})),
-				n(91029, {	-- Rath'thul Moonvale <Dust Trader>
+				n(91029, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Rath'thul Moonvale <Dust Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(122711, {	-- Formula: Temporal Binding (RECIPE!)
-							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
-							["timeline"] = { ADDED_6_1_0 },
-						}),
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-					},
-				}),
+					["g"] = DUST_TRADER,
+				})),
 				n(79619, {	-- Rezlak <Blueprints Vendor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1121,37 +1099,10 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 					["g"] = ORE_TRADER,
 				})),
-				n(91033, {	-- Zeezu <Leather Trader>
+				n(91033, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Zeezu <Leather Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
-						i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
-							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
-							["timeline"] = { ADDED_6_1_0 },
-						}),
-					},
-				}),
+					["g"] = LEATHER_TRADER,
+				})),
 			}),
 		})),
 	})

@@ -7,7 +7,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\FriendsFrame\\PlusManz-Horde",
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
-			["lvl"] = 100,
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
@@ -20,6 +19,38 @@ root(ROOTS.Zones, {
 						["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 						["creatureID"] = 91483,	-- Fen Tao
 						["coord"] = { 46.9, 45.2, WARSPEAR },
+					}),
+				}),
+				n(PROFESSIONS, {
+					prof(ALCHEMY, {
+						n(87542, {	-- Joshua Alvarez <Alchemy Recipes>
+							["coord"] = { 61.0, 27.4, WARSPEAR },
+							["g"] = appendGroups(COMMON_DRAENOR_ALCHEMY_RECIPES, {DRAENOR_ALCHEMY}),
+						}),
+					}),
+					prof(BLACKSMITHING, {
+						n(87550, {	-- Nonn Threeratchet <Blacksmithing Plans>
+							["coord"] = { 75.0, 37.9, WARSPEAR },
+							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
+						}),
+					}),
+					prof(ENCHANTING, {
+						n(86045, {	-- Ged'kah <Enchanting Recipes>
+							["coord"] = { 78.0, 53.7, WARSPEAR },
+							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
+						}),
+					}),
+					prof(ENGINEERING, {
+						n(87552, {	-- Nik Steelrings <Engineering Plans>
+							["coord"] = { 70.5, 38.9, WARSPEAR },
+							["g"] = appendGroups(COMMON_DRAENOR_ENGINEERING_RECIPES, {DRAENOR_ENGINEERING}),
+						}),
+					}),
+					prof(LEATHERWORKING, {
+						n(87549, {	-- Garm Gladestride <Leatherworking Patterns>
+							["coord"] = { 50.4, 27.4, WARSPEAR },
+							["g"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
+						}),
 					}),
 				}),
 				n(QUESTS, {
@@ -2727,18 +2758,6 @@ root(ROOTS.Zones, {
 								}),
 							},
 						}),
-						n(87549, {	-- Garm Gladestride <Leatherworking Patterns>
-							["coord"] = { 50.4, 27.4, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
-						}),
-						n(86045, {	-- Ged'kah <Enchanting Recipes>
-							["coord"] = { 78.0, 53.7, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
-						}),
-						n(87542, {	-- Joshua Alvarez <Alchemy Recipes>
-							["coord"] = { 61.0, 27.4, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_ALCHEMY_RECIPES, {DRAENOR_ALCHEMY}),
-						}),
 						n(87548, {	-- Kaevan Highwit <Jewelcrafting Designs>
 							["coord"] = { 60.4, 40.7, WARSPEAR },
 							["g"] = {
@@ -3598,14 +3617,6 @@ root(ROOTS.Zones, {
 								i(119137),	-- Steamwheedle "Preservation" Society Tabard
 								i(118667),	-- Steamwheedle Elixir
 							},
-						}),
-						n(87552, {	-- Nik Steelrings <Engineering Plans>
-							["coord"] = { 70.5, 38.9, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_ENGINEERING_RECIPES, {DRAENOR_ENGINEERING}),
-						}),
-						n(87550, {	-- Nonn Threeratchet <Blacksmithing Plans>
-							["coord"] = { 75.0, 37.9, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
 						}),
 						n(87543, {	-- Petir Starocean <Tailoring Patterns>
 							["coord"] = { 59.0, 42.8, WARSPEAR },

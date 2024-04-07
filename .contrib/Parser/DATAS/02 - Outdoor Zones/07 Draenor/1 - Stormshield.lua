@@ -7,7 +7,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\FriendsFrame\\PlusManz-Alliance",
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = 100,
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(1420, {	-- Stormshield (Alliance), Ashran
@@ -20,6 +19,38 @@ root(ROOTS.Zones, {
 						["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 						["creatureID"] = 91483,	-- Fen Tao
 						["coord"] = { 45.3, 70.6, STORMSHIELD },
+					}),
+				}),
+				n(PROFESSIONS, {
+					prof(ALCHEMY, {
+						n(87048, {	-- Katherine Joplin <Alchemy Recipes>
+							["coord"] = { 36.7, 68.6, STORMSHIELD },
+							["g"] = appendGroups(COMMON_DRAENOR_ALCHEMY_RECIPES, {DRAENOR_ALCHEMY}),
+						}),
+					}),
+					prof(BLACKSMITHING, {
+						n(87062, {	-- Royce Bigbeard <Blacksmithing Plans>
+							["coord"] = { 49.0, 48.7, STORMSHIELD },
+							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
+						}),
+					}),
+					prof(ENCHANTING, {
+						n(87022, {	-- Bob <Enchanting Recipes>
+							["coord"] = { 56.9, 64.7, STORMSHIELD },
+							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
+						}),
+					}),
+					prof(ENGINEERING, {
+						n(87065, {	-- Sean Catchpole <Engineering Plans>
+							["coord"] = { 47.9, 39.9, STORMSHIELD },
+							["g"] = appendGroups(COMMON_DRAENOR_ENGINEERING_RECIPES, {DRAENOR_ENGINEERING}),
+						}),
+					}),
+					prof(LEATHERWORKING, {
+						n(87057, {	-- Leara Moonsilk <Leatherworking Patterns>
+							["coord"] = { 51.6, 41.6, STORMSHIELD },
+							["g"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
+						}),
 					}),
 				}),
 				n(QUESTS, {
@@ -1034,10 +1065,6 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							},
-						}),
-						n(87022, {	-- Bob <Enchanting Recipes>
-							["coord"] = { 56.9, 64.7, STORMSHIELD },
-							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
 						}),
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
 							["coord"] = { 56.2, 20.0, STORMSHIELD },
@@ -3644,10 +3671,6 @@ root(ROOTS.Zones, {
 								i(122553, { ["timeline"] = { "created 6.1.0.19480" }}),	-- Technique: Powerful Weapon Crystal
 							},
 						}),
-						n(87048, {	-- Katherine Joplin <Alchemy Recipes>
-							["coord"] = { 36.7, 68.6, STORMSHIELD },
-							["g"] = appendGroups(COMMON_DRAENOR_ALCHEMY_RECIPES, {DRAENOR_ALCHEMY}),
-						}),
 						n(85849, {	-- Kinkade Jakobs <Blueprints Trader>
 							["coord"] = { 29.7, 52.9, STORMSHIELD },
 							["g"] = {
@@ -3712,10 +3735,6 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
 								}),
 							},
-						}),
-						n(87057, {	-- Leara Moonsilk <Leatherworking Patterns>
-							["coord"] = { 51.6, 41.6, STORMSHIELD },
-							["g"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
 						}),
 						n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
 							["races"] = ALLIANCE_ONLY,
@@ -4213,14 +4232,6 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							},
-						}),
-						n(87062, {	-- Royce Bigbeard <Blacksmithing Plans>
-							["coord"] = { 49.0, 48.7, STORMSHIELD },
-							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
-						}),
-						n(87065, {	-- Sean Catchpole <Engineering Plans>
-							["coord"] = { 47.9, 39.9, STORMSHIELD },
-							["g"] = appendGroups(COMMON_DRAENOR_ENGINEERING_RECIPES, {DRAENOR_ENGINEERING}),
 						}),
 						n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
 							["coord"] = { 44.5, 75.0, STORMSHIELD },
