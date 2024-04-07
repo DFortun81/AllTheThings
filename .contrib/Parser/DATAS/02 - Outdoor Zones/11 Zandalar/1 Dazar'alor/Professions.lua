@@ -94,6 +94,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 				}),
 			}),
 			prof(JEWELCRAFTING, {
+				n(130368, {	-- Seshuli <Jewelcrafting Trainer>
+					["coord"] = { 47.1, 37.9, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["g"] = appendGroups(BFA_JEWELCRAFTING, {
+						r(265811),	-- Zandalari Jewelcrafting
+					}),
+				}),
 				q(54480, {	-- Jeweled Designs
 					["requireSkill"] = JEWELCRAFTING,
 					["provider"] = { "n", 122695 },	-- Seshuli

@@ -103,6 +103,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 				}),
 			}),
 			prof(JEWELCRAFTING, {
+				n(130368, {	-- Samuel D. Colton III <Jewelcrafting Trainer>
+					["coord"] = { 75.2, 9.9, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_JEWELCRAFTING, {
+						r(264548),	-- Kul Tiran Jewelcrafting
+					}),
+				}),
 				q(54479, {	-- Jeweled Designs
 					["requireSkill"] = JEWELCRAFTING,
 					["provider"] = { "n", 130368 },	-- Samuel D. Colton III

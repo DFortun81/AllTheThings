@@ -536,6 +536,75 @@ COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 		["requireSkill"] = JEWELCRAFTING,
 	}),
 };
+BFA_JEWELCRAFTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	r(287272, { ["timeline"] = { ADDED_8_1_0 } }),	-- Aqueous Recalibration
+	r(278419),	-- Kaleidoscopic Lens
+	r(256611, { ["timeline"] = { ADDED_8_1_5 } }),	-- Mass Prospect Monelite
+	r(256622, { ["timeline"] = { ADDED_8_1_5 } }),	-- Mass Prospect Platinum
+	r(256613, { ["timeline"] = { ADDED_8_1_5 } }),	-- Mass Prospect Storm Silver
+	r(286651, { ["timeline"] = { ADDED_8_1_0 } }),	-- Sanguinated Recalibration
+	filter(FINGER_F, {
+		r(256510),	-- Amberblaze Loop [Rank 1]
+		r(256514),	-- Amberblaze Loop [Rank 2]
+		r(272227),	-- Golden Beryl Ring
+		r(289105, { ["timeline"] = { ADDED_8_1_0 } }),	-- Kraken's Eye Loop
+		r(272228),	-- Kubiline Ring
+		r(272230),	-- Kyanite Ring
+		r(256511),	-- Owlseye Loop [Rank 1]
+		r(256516),	-- Owlseye Loop [Rank 2]
+		r(256513),	-- Royal Quartz Loop [Rank 1]
+		r(256520),	-- Royal Quartz Loop [Rank 2]
+		r(272226),	-- Solstone Ring
+		r(256512),	-- Tidal Amethyst Loop [Rank 1]
+		r(256518),	-- Tidal Amethyst Loop [Rank 2]
+		r(289179, { ["timeline"] = { ADDED_8_1_0 } }),	-- Tidal Kraken's Eye Loop
+	}),
+	filter(GEMS, {
+		r(256696),	-- Deadly Amberblaze
+		r(256689),	-- Deadly Solstone
+		r(256701),	-- Kraken's Eye of Agility
+		r(256702),	-- Kraken's Eye of Intellect
+		r(256700),	-- Kraken's Eye of Strength
+		r(256692),	-- Masterful Kubiline
+		r(256698),	-- Masterful Tidal Amethyst
+		r(256693),	-- Natant Rubellite
+		r(256694),	-- Quick Golden Beryl
+		r(256699),	-- Quick Owlseye
+		r(256691),	-- Straddling Viridium
+		r(256690),	-- Versatile Kyanite
+		r(256695),	-- Versatile Royal Quartz
+	}),
+	n(WEAPONS, {
+		r(269734),	-- Honorable Combatant's Intuitive Staff [Rank 1]
+		r(256255),	-- Laribole Staff of Alacrity [Rank 1]
+		r(256256),	-- Laribole Staff of Alacrity [Rank 2]
+		r(256254),	-- Rubellite Staff of Intuition
+		r(256258),	-- Scarlet Diamond Staff of Intuition [Rank 1]
+		r(256259),	-- Scarlet Diamond Staff of Intuition [Rank 2]
+		r(282343, { ["timeline"] = { ADDED_8_1_0 } }),	-- Sinister Combatant's Intuitive Staff [Rank 1]
+		r(256253),	-- Viridium Staff of Alacrity
+	}),
+}));
+NAZJATAR_JEWELCRAFTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { ADDED_8_2_0 } }, {
+	r(300619),	-- Mass Prospect Osmenite
+	filter(FINGER_F, {
+		r(299016),	-- Leviathan's Eye Loop
+	}),
+	filter(GEMS, {
+		r(298798),	-- Deadly Lava Lazuli
+		r(298800),	-- Leviathan's Eye of Agility
+		r(298801),	-- Leviathan's Eye of Intellect
+		r(298799),	-- Leviathan's Eye of Strength
+		r(298797),	-- Masterful Sea Currant
+		r(298796),	-- Quick Sand Spinel
+		r(300756),	-- Straddling Sage Agate
+		r(298794),	-- Versatile Dark Opal
+	}),
+	n(WEAPONS, {
+		r(294793),	-- Notorious Combatant's Intuitive Staff
+		r(305168, { ["timeline"] = { ADDED_8_3_0 } }),	-- Uncanny Combatant's Intuitive Staff [Rank 1]
+	}),
+}));
 SL_JEWELCRAFTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(311967),	-- Shadowlands Jewelcrafting
 	r(325248),	-- Shadowlands Prospecting \\ Prospecting

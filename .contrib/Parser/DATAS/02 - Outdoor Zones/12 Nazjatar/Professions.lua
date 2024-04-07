@@ -80,6 +80,17 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["g"] = NAZJATAR_INSCRIPTION,
 		}),
+		prof(JEWELCRAFTING, {
+			["crs"] = {
+				153811, -- Instructor Okanu <Profession Trainer> (A)
+				154393, -- Narv <Profession Trainer> (H)
+			},
+			["coords"] = {
+				{ 38.0, 53.2, NAZJATAR },
+				{ 49.2, 61.6, NAZJATAR },
+			},
+			["g"] = NAZJATAR_JEWELCRAFTING,
+		}),
 		prof(LEATHERWORKING, {
 			["crs"] = {
 				153817, -- Instructor Alikana <Profession Trainer> (A)
