@@ -1039,7 +1039,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(195460),	-- Fermented Musken Milk
 			i(198674),	-- Filled Life Pools Vial
 			i(195458),	-- Forager's Stew
-			i(200847),	-- Frail Shield
 			i(193774),	-- Furyforged Plating
 			i(198479),	-- Gale Rider
 			i(200607),	-- Half-Eaten Banana

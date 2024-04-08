@@ -987,6 +987,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 58717 },	-- Bell of Remembrance
 				["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
 				["coord"] = { 73.2, 34.0, REVENDRETH },
+				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			}),
 			q(58327, {	-- Snacks for Stonehead
 				["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",

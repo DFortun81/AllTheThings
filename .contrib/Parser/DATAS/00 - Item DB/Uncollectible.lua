@@ -1547,6 +1547,7 @@ i(204234);	-- Dead Worms
 i(204312);	-- Ettin Skin
 i(200846);	-- Fletching-less Arrows
 i(205239);	-- Fluffy Ear
+i(200847);	-- Frail Shield
 i(201173);	-- Handful of Teeth
 i(205235);	-- Hound Paw
 i(204235);	-- Kaldorei Fruitcake

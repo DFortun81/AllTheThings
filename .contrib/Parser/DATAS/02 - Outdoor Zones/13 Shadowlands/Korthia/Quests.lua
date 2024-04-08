@@ -864,6 +864,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63654 },	-- The Nathrezim
 					["provider"] = { "n", 179978 },	-- The Accuser
 					["coord"] = { 23.1, 45.9, REVENDRETH },
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["g"] = {
 						i(187124),	-- Medallion of Wrath (QI!)
 					},
