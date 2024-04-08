@@ -103,13 +103,13 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(72129, {	-- Aiding Khadgar
-					["timeline"] = { ADDED_10_0_7 },
+					["timeline"] = { ADDED_10_0_2 },
 					["classes"] = { EVOKER },
 					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 				}),
 				q(72134, {	-- An Adventurer's Aid
 					["sourceQuest"] = 72129,	-- Aiding Khadgar
-					["timeline"] = { ADDED_10_0_7 },
+					["timeline"] = { ADDED_10_0_2 },
 					["classes"] = { EVOKER },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
