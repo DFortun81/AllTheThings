@@ -840,6 +840,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 	prof(JEWELCRAFTING, {
+		n(DISCOVERY, {
+			spell(305981, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Awakened Leviathan's Eye Loop
+				i(171082),	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
+			})),
+			spell(299018, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Leviathan's Eye Loop
+				i(168772),	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
+			})),
+			spell(299016, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Leviathan's Eye Loop
+				i(168771),	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
+			})),
+			spell(305982, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Leviathan's Eye Loop
+				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
+			})),
+		}),
 		filter(STAVES, {
 			i(159939),	-- Honorable Combatant's Staff of Intuition
 			i(153639),	-- Laribole Staff of Alacrity
@@ -853,18 +867,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		filter(FINGER_F, {
 			i(153686),	-- Amberblaze Loop
 			i(168703, {["timeline"] = {ADDED_8_2_0}}),	-- Ascended Leviathan's Eye Loop
-			i(171076, {	-- Awakened Leviathan's Eye Loop
-				["timeline"] = { ADDED_8_3_0 },
-				["g"] = {
-					i(171082),	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
-				},
-			}),
-			i(168702, {	-- Crushing Leviathan's Eye Loop
-				["timeline"] = { ADDED_8_2_0 },
-				["g"] = {
-					i(168772),	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
-				},
-			}),
 			i(166521, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Kraken's Eye Loop
 			i(166524, {["timeline"] = {ADDED_8_1_0}}),	-- Eternal Kraken's Eye Loop
 			i(153689),	-- Golden Beryl Ring
@@ -872,12 +874,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(166519, {["timeline"] = {ADDED_8_1_0}}),	-- Kraken's Eye Loop
 			i(153688),	-- Kubiline Ring
 			i(153687),	-- Kyanite Ring
-			i(168701, {	-- Leviathan's Eye Loop
-				["timeline"] = { ADDED_8_2_0 },
-				["g"] = {
-					i(168771),	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
-				},
-			}),
 			i(153685),	-- Owlseye Loop
 			i(171075, {["timeline"] = {ADDED_8_3_0}}),	-- Peerless Leviathan's Eye Loop
 			i(153683),	-- Royal Quartz Loop
@@ -885,12 +881,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(166523, {["timeline"] = {ADDED_8_1_0}}),	-- Spirited Kraken's Eye Loop
 			i(153684),	-- Tidal Amethyst Loop
 			i(166522, {["timeline"] = {ADDED_8_1_0}}),	-- Tidal Kraken's Eye Loop
-			i(171077, {	-- Unbound Leviathan's Eye Loop
-				["timeline"] = { ADDED_8_3_0 },
-				["g"] = {
-					i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
-				},
-			}),
 		}),
 	}),
 	prof(LEATHERWORKING, {
