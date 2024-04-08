@@ -861,6 +861,20 @@ end
 settings.ToggleAccountMode = function(self)
 	self:SetAccountMode(not self:Get("AccountMode"));
 end
+settings.SetCompletionistMode = function(self, completionistMode)
+	self:Set("Completionist", completionistMode)
+	app.DoRefreshAppearanceSources = true
+	self:UpdateMode(1)
+end
+settings.ToggleCompletionistMode = function(self)
+	self:ForceRefreshFromToggle()
+	self:SetCompletionistMode(not self:Get("Completionist"))
+	if self:Get("Completionist") == true then
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["DISABLED"]..".")
+	end
+end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
 	self:UpdateMode(1);

@@ -561,6 +561,10 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 	end
 	ATTEditBox.OnClick = onclick;
 	if text then
+		if label then
+			local l = ATTEditBox.Label;
+			if l then l:SetText(label); end
+		end
 		ATTEditBoxEditBox:SetText(text)
 		ATTEditBoxEditBox:HighlightText();
 		ATTEditBoxEditBox:SetFocus();
