@@ -781,7 +781,7 @@ local instanceFields = {
 	end,
 };
 local EJ_GetInstanceInfo = EJ_GetInstanceInfo;
-if EJ_GetInstanceInfo then
+if EJ_GetInstanceInfo and app.GameBuildVersion >= 50000 then
 	local cache = app.CreateCache("instanceID");
 	local function CacheInfo(t, field)
 		local _t, id = cache.GetCached(t);
