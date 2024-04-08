@@ -90,6 +90,7 @@ src\Classes\Objects.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua
 src\Classes\Filter Types.lua
+src\Classes\Gear Sets.lua
 src\Classes\Illusions.lua
 src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
