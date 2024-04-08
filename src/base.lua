@@ -325,7 +325,7 @@ end
 -- Extend the Frame Class and give them ATT-Style Coroutines and Tooltips!
 local coroutineStack = {};
 local tinsert, tremove = tinsert, tremove;
-local frame = app.frame
+local frame, errorID = app.frame, 0;
 local function OnCoroutineUpdate()
 	for i=#coroutineStack,1,-1 do
 		if not coroutineStack[i][3]() then
@@ -364,7 +364,10 @@ local function StartATTCoroutine(self, name, method)
 					if ok then return true;	-- This means more work is required.
 					else
 						-- Show the error. Returning nothing is the same as canceling the work.
-						print(debugstack(co));
+						errorID = errorID + 1;
+						local title, popupID = "Stack Trace #" .. errorID, "error-" .. errorID;
+						app:SetupReportDialog(popupID, title, {err, "", debugstack(co)});
+						print("Error:", app:Linkify(title, app.Colors.ChatLinkError, "dialog:" .. popupID));
 						error(err,2);
 					end
 				end
