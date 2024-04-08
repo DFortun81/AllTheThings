@@ -22,7 +22,7 @@ local function RefreshSkills()
 			local skillName, header, isExpanded, skillRank, numTempPoints, skillModifier,
 				skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType,
 				skillDescription = GetSkillLineInfo(index);
-			if not header then
+			if not header and skillName then
 				local spellID = app.SpellNameToSpellID[skillName];
 				if spellID then
 					local spellName = GetSpellInfo(spellID);

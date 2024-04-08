@@ -938,6 +938,15 @@ settings.SetThingTracking = function(self, force)
 end
 settings.UpdateMode = function(self, doRefresh)
 	local filterSet = app.Modules.Filter.Set;
+	if self:Get("Completionist") then
+		filterSet.ItemSource()
+	else
+		if self:Get("MainOnly") and not self:Get("AccountMode") and not self:Get("DebugMode") then
+			filterSet.ItemSource(true, true)
+		else
+			filterSet.ItemSource(true)
+		end
+	end
 	if self:Get("DebugMode") then
 		app.MODE_ACCOUNT = nil;
 		app.MODE_DEBUG = true
