@@ -211,236 +211,208 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		n(QUESTS, {
 			q(54479, {	-- Jeweled Designs (A)
-				["requireSkill"] = JEWELCRAFTING,
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
 			}),
 			q(54480, {	-- Jeweled Designs (H)
-				["requireSkill"] = JEWELCRAFTING,
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
 			}),
 			-- Tools of Trade Questline
 			q(49570, {	-- A Rocky Start (A)
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 75.0, 10.2, BORALUS },
 				["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49585, {	-- A Rocky Start (H)
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 46.9, 38.0, DAZARALOR },
 				["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49571, {	-- Digging Through the Past (A)
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["sourceQuest"] = 49570,	-- A Rocky Start (A)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49586, {	-- Digging Through the Past (H)
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["sourceQuest"] = 49585,	-- A Rocky Start (H)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49574, {	-- The Shrine of Storms
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
 				["sourceQuest"] = 49571,	-- Digging Through the Past (A)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49589, {	-- The Shrine of the Dawning
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
 				["sourceQuest"] = 49586,	-- Digging Through the Past (H)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49577, {	-- Cracking the Surface (A)
 				["provider"] = { "n", 150898 },	-- Shrine of Storms
 				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49574,	-- The Shrine of Storms
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49583, {	-- Out With the Old (H)
 				["provider"] = { "n", 150897 },	-- Shrine of the Dawning
 				["coord"] = { 61.4, 37.2, NAZMIR },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49589,	-- The Shrine of the Dawning
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55585, {	-- A Promising Beginning (A)
 				["provider"] = { "n", 152489 },	-- Shrine of Storms
 				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49577,	-- Cracking the Surface (A)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55592, {	-- A Promising Beginning (H)
 				["provider"] = { "n", 152490 },	-- Shrine of the Dawning
 				["coord"] = { 61.4, 37.2, NAZMIR },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49583,	-- Out With the Old (H)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49572, {	-- The Shrine of the Sea
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
 				["sourceQuest"] = 55585,	-- A Promising Beginning (A)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49587, {	-- The Shrine of Nature
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
 				["sourceQuest"] = 55592,	-- A Promising Beginning (H)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49575, {	-- Tol Dagor: Jewel of the Tides
 				["provider"] = { "n", 150893 },	-- Shrine of the Sea
 				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49572,	-- The Shrine of the Sea
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49582, {	-- Atal'Dazar: Not All That Glitters...
 				["provider"] = { "n", 150894 },	-- Shrine of Nature
 				["coord"] = { 43.2, 64.3, ZULDAZAR },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49587,	-- The Shrine of Nature
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55590, {	-- Setting Things Right (A)
 				["provider"] = { "n", 152495 },	-- Shrine of the Sea
 				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49575,	-- Tol Dagor: Jewel of the Tides
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55596, {	-- Setting Things Right (H)
 				["provider"] = { "n", 152496 },	-- Shrine of Nature
 				["coord"] = { 43.2, 64.3, ZULDAZAR },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49582,	-- Atal'Dazar: Not All That Glitters...
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49573, {	-- The Shrine of the Eventide
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
 				["sourceQuest"] = 55585,	-- A Promising Beginning (A)
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49588, {	-- The Shrine of the Sands
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
 				["sourceQuest"] = 55592,	-- A Promising Beginning
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49576, {	-- High Prospects
 				["provider"] = { "n", 150896 },	-- Shrine of the Eventide
 				["coord"] = { 34.1, 35.5, DRUSTVAR },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49573,	-- The Shrine of the Eventide
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49581, {	-- Sun-Speckled Dunes
 				["provider"] = { "n", 150895 },	-- Shrine of the Sands
 				["coord"] = { 44.2, 38.0, VOLDUN },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49588,	-- The Shrine of the Sands
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55586, {	-- Polished Up (A)
 				["provider"] = { "n", 152497 },	-- Shrine of the Eventide
 				["coord"] = { 34.1, 35.5, DRUSTVAR },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49576,	-- High Prospects
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55594, {	-- Polished Up (H)
 				["provider"] = { "n", 152493 },	-- Shrine of the Sands
 				["coord"] = { 44.2, 38.0, VOLDUN },
 				["modelScale"] = 2,
 				["sourceQuest"] = 49581,	-- Sun-Speckled Dunes
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
+				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49584, {	-- The Missing Chapter (A)
+			q(49584, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter (A)
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
 				["sourceQuests"] = {
 					55590,	-- Setting Things Right (A)
 					55586,	-- Polished Up (A)
 				},
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
 				["g"] = {
 					recipe(256703),	-- Design: Jewelhammer's Focus
 				},
-			}),
-			q(49599, {	-- The Missing Chapter (H)
+			})),
+			q(49599, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter (H)
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
 				["sourceQuests"] = {
 					55596,	-- Setting Things Right (H)
 					55594,	-- Polished Up (H)
 				},
-				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 				["g"] = {
 					recipe(256703),	-- Design: Jewelhammer's Focus
 				},
-			}),
+			})),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
