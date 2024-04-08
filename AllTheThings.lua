@@ -14605,7 +14605,6 @@ app.Startup = function()
 	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
 	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
 	if not accountWideData.Quests then accountWideData.Quests = {}; end
-	if not accountWideData.Sources then accountWideData.Sources = {}; end
 	if not accountWideData.Spells then accountWideData.Spells = {}; end
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end

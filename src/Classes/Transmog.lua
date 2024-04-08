@@ -962,6 +962,7 @@ app.AddEventHandler("OnStartup", function()
 end);
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
+	if not accountWideData.Sources then accountWideData.Sources = {}; end
 end);
 
 -- Extend the Filter Module to include ItemSource
