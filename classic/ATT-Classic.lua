@@ -4396,21 +4396,23 @@ app.SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
 			for spellIndex=1,numSpells do
 				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset, BOOKTYPE_SPELL);
-				currentSpellRank = GetSpellRank(spellID);
-				if not currentSpellRank then
-					if lastSpellName == spellName then
-						currentSpellRank = lastSpellRank + 1;
-					else
-						lastSpellName = spellName;
-						currentSpellRank = 1;
+				if spellName then
+					currentSpellRank = GetSpellRank(spellID);
+					if not currentSpellRank then
+						if lastSpellName == spellName then
+							currentSpellRank = lastSpellRank + 1;
+						else
+							lastSpellName = spellName;
+							currentSpellRank = 1;
+						end
 					end
+					app.GetSpellName(spellID, currentSpellRank);
+					if not rawget(t, spellName) then
+						rawset(t, spellName, spellID);
+					end
+					lastSpellRank = currentSpellRank;
+					offset = offset + 1;
 				end
-				app.GetSpellName(spellID, currentSpellRank);
-				if not rawget(t, spellName) then
-					rawset(t, spellName, spellID);
-				end
-				lastSpellRank = currentSpellRank;
-				offset = offset + 1;
 			end
 		end
 		return rawget(t, key);
