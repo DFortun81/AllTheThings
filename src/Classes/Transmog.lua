@@ -78,7 +78,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 };
 local DressUpModel = CreateFrame('DressUpModel');
 local function GetSourceID(itemLink)
-	if not itemLink or not C_Item_IsDressableItemByID(itemLink) then return nil, false end
+	if not itemLink or (C_Item_IsDressableItemByID and not C_Item_IsDressableItemByID(itemLink)) then return nil, false end
 
 	-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 	-- (requires loaded ItemInfo to work for modified appearances)
