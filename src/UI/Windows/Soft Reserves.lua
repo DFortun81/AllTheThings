@@ -1303,4 +1303,5 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 			end
 		end
 	end,
+	IsClassIsolated = true,
 });

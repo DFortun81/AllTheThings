@@ -132,6 +132,7 @@ if GetLootThreshold and SetLootThreshold then
 		OnClick = function(t)
 			return setLootThreshold;
 		end,
+		IsClassIsolated = true,
 	});
 end
 

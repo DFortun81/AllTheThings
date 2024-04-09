@@ -5911,6 +5911,7 @@ local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
 app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
+	IsClassIsolated = true,
 	visible = app.ReturnTrue,
 	collectible = app.ReturnTrue,
 	collected = app.ReturnFalse,
@@ -5978,6 +5979,7 @@ app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
 	end
 });
 app.CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "itemID", {
+	IsClassIsolated = true,
 	text = function(t)
 		local link = t.link;
 		if link then

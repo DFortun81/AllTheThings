@@ -502,6 +502,8 @@ app.CreateClass = function(className, classKey, fields, ...)
 		end;
 		if not classesByKey[classKey] then
 			classesByKey[classKey] = classConstructor;
+		elseif not fields.IsClassIsolated then
+			print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
 		end
 		return classConstructor, Class;
 	else
@@ -511,6 +513,8 @@ app.CreateClass = function(className, classKey, fields, ...)
 		end;
 		if not classesByKey[classKey] then
 			classesByKey[classKey] = classConstructor;
+		elseif not fields.IsClassIsolated then
+			print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
 		end
 		return classConstructor, Class;
 	end
@@ -576,6 +580,7 @@ app.CreateUnimplementedClass = function(className, classKey)
 		title = function(t)
 			return app.L.DATA_TYPE_NOT_SUPPORTED;
 		end,
+		IsClassIsolated = true,
 		isInvalid = app.ReturnTrue,
 		collected = app.ReturnFalse,
 		collectible = app.ReturnTrue,

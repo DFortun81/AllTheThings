@@ -8,6 +8,7 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 --[[
 local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
 CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "itemID", {
+	IsClassIsolated = true,
 	text = function(t)
 		local link = t.link;
 		if link then
