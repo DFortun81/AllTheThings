@@ -4222,6 +4222,7 @@ end;
 recipeFields.f = function(t)
 	return app.FilterConstants.RECIPES;
 end;
+recipeFields.IsClassIsolated = true;
 local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 "WithItem", {
 	baseIcon = function(t)
@@ -4293,6 +4294,7 @@ local speciesFields = {
 	end,
 };
 local mountFields = {
+	IsClassIsolated = true,
 	["text"] = function(t)
 		return "|cffb19cd9" .. t.name .. "|r";
 	end,
