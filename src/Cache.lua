@@ -453,6 +453,9 @@ local fieldConverters = {
 	["otherItemID"] = function(group, value)
 		CacheField(group, "itemID", value);
 	end,
+	["drakewatcherManuscriptID"] = function(group, value)
+		CacheField(group, "itemID", value);
+	end,
 	["mapID"] = cacheMapID,
 	["mountID"] = function(group, value)
 		CacheField(group, "spellID", value);
@@ -695,6 +698,10 @@ if app.IsRetail then
 	-- Retail has this required modItemID field that complicates everything, so put that here instead.
 	local cacheGroupForModItemID = {}
 	fieldConverters.itemID = function(group, value)
+		CacheField(group, "itemID", value);
+		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
+	end
+	fieldConverters.drakewatcherManuscriptID = function(group, value)
 		CacheField(group, "itemID", value);
 		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
 	end

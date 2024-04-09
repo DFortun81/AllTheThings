@@ -970,6 +970,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateInstance(t.instanceID, t);
 		elseif t.currencyID then
 			t = app.CreateCurrencyClass(t.currencyID, t);
+		elseif t.drakewatcherManuscriptID then
+			t = app.CreateDrakewatcherManuscript(t.drakewatcherManuscriptID, t);
 		elseif t.speciesID then
 			t = app.CreateSpecies(t.speciesID, t);
 		elseif t.objectID then
