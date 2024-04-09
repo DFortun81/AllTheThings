@@ -68,6 +68,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
 									["provider"] = { "n", 166982 },	-- Marasmius
 									["coord"] = { 29.5, 34.6, ARDENWEALD },
+									["g"] = {
+										i(178033),	-- Talkative Spore (QI!)
+									},
 								}),
 							}),
 							n(QUESTS, sharedData({
@@ -135,8 +138,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(60188, {	-- Go Beyond! (5)
-									i(178464),	-- Discarded Harp
-									i(178465),	-- Giant Silk Bundle
+									["g"] = {
+										i(178464),	-- Discarded Harp (QI!)
+										i(178465),	-- Giant Silk Bundle (QI!)
+									},
 								}),
 								q(62400),	-- Go Beyond! (6)
 								q(62465, {	-- Go Beyond! (7)

@@ -1102,6 +1102,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(176127, {	-- Contract: Mystery Mirrors (EC!)
 											["questID"] = 59479,
 										}),
+										i(183919),	-- Ashen Core (QI!)
+										i(183912),	-- Scorched Mirror Fragment (QI!)
+										i(182097),	-- Shrouded Mirror Shard (QI!)
 									},
 								}),
 								q(61705, {	-- Ember Court: Refreshments
@@ -1845,6 +1848,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 								q(62597, {	-- Bonesmith Heirmir
 									["provider"] = { "i", 183844 },	-- A Letter of Introduction, The Bonesmith
+									["g"] = {
+										i(183844),	-- A Letter of Introduction, The Bonesmith (QI!)
+									},
 								}),
 								q(61943, {	-- Court Influencer
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
@@ -1858,6 +1864,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 								q(62598, {	-- Forgelite Sophone
 									["provider"] = { "i", 183845 },	-- A Short Letter to Forgelite Sophone
+									["g"] = {
+										i(183845),	-- A Short Letter to Forgelite Sophone (QI!)
+									},
 								}),
 								q(62601, {	-- Forgy
 									["provider"] = { "i", 183848 },	-- Hastily Scrawled Note to Forgy

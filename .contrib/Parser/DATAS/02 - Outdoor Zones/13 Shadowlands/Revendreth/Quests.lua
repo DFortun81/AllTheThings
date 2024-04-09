@@ -988,6 +988,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
 				["coord"] = { 73.2, 34.0, REVENDRETH },
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
+				["g"] = {
+					i(174741),	-- Bell of Remembrance (QI!)
+				},
 			}),
 			q(58327, {	-- Snacks for Stonehead
 				["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
@@ -1136,15 +1139,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(QUESTS, sharedData({ ["isDaily"] = true },{
 			q(62184, {	-- A Crate of Sinvyr Ore
 				["provider"] = { "i", 182728 },	-- A Crate of Sinvyr Ore
+				["g"] = {
+					i(182728),	-- A Crate of Sinvyr Ore (QI!)
+				},
 			}),
 			q(62183, {	-- A Leaking Box Marked Perishable
 				["provider"] = { "i", 182727 },	-- A Leaking Package
+				["g"] = {
+					i(182727),	-- A Leaking Package (QI!)
+				},
 			}),
 			q(62182, {	-- A Letter From Nadja
 				["provider"] = { "i", 182726 },	-- Nadja's Letter
 			}),
 			q(60517, {	-- The Toll of the Road
 				["provider"] = { "i", 179363 },	-- 'Misplaced' Anima Tolls
+				["g"] = {
+					i(179363),	-- 'Misplaced' Anima Tolls (QI!)
+				},
 			}),
 		})),
 		-- Dailies that become available once unlocking the BMAH

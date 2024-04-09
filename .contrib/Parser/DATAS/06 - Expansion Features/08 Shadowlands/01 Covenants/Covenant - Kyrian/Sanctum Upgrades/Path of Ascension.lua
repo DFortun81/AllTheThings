@@ -665,7 +665,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 										["g"] = {
-											i(180481),	-- Curious Blueprint
+											i(180481),	-- Curious Blueprint (QI!)
 										},
 									}),
 									q(61370, {	-- No Other Way
@@ -688,7 +688,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["g"] = {
-											i(181706),	-- Anointment Oil
+											i(181706),	-- Anointment Oil (QI!)
 										},
 									}),
 									q(60498, {	-- Overcoming the Trial
@@ -858,7 +858,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["g"] = {
-											i(181470),	-- Catalyst of Creation
+											i(181470),	-- Catalyst of Creation (QI!)
 										},
 									}),
 									q(61368, {	-- Filching Phylacteries
@@ -870,6 +870,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61371 },	-- Athanos
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["g"] = {
+											i(181471),	-- Humility's Guard (QI!)
+										},
 									}),
 									q(61363, {	-- Mad Mortimer
 										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",

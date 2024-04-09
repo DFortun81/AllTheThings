@@ -655,7 +655,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										["_drop"] = { "g" },
 										["g"] = {
-											i(183743), -- Malleable Flesh
+											i(183743), -- Malleable Flesh (QI!)
 										},
 									}),
 									q(60195, {	-- Build One More
@@ -1389,7 +1389,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												{ "c", ANIMA, 3500 },
 											},
 										}),
-										i(183717, {	-- Bindings of Wellbeing
+										i(183717, {	-- Bindings of Wellbeing (QI!)
 											["cost"] = {
 												{ "i", 178061, 30 },	-- 30x Malleable Flesh
 												{ "i", 183744, 5 },		-- 5x Superior Parts

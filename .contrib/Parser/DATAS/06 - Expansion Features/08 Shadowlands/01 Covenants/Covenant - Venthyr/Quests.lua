@@ -663,11 +663,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 40.0, 68.3, ORIBOS },
 				["g"] = {
+					i(180202),	-- Soulkeeper Crystal (QI!)
 					i(180909),	-- Ebony Death Shroud Gloves
 					i(180910),	-- Dread Sentinel's Ebony Grips
 					i(180911),	-- Soulbreaker's Ebony Handwraps
 					i(180912),	-- Fearstalker's Ebony Gauntlets
-					i(180202),	-- Soulkeeper Crystal
 				},
 			}),
 			q(58421, {	-- Special Access

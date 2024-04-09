@@ -601,6 +601,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58088 },	-- Juicing Up
 					["provider"] = { "n", 159833 },	-- So'narynar
 					["coord"] = { 53.7, 47.8, MALDRAXXUS },
+					["g"] = {
+						i(177957),	-- Necessary Enhancers (QI!)
+					},
 				}),
 				q(59750, {	-- How To Get A Head
 					["sourceQuests"] = { 62785 },	-- I Could Be A Contender

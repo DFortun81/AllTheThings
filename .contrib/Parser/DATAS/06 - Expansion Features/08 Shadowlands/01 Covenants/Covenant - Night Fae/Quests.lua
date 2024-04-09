@@ -557,6 +557,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59063 },	-- Curses!
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
 				["coord"] = { 44.0, 37.1, THE_TRUNK },
+				["g"] = {
+					i(175154),	-- A Secret Never Spoken (QI!)
+					i(175152),	-- A Slime-Covered Book of Secrets (QI!)
+				},
 			}),
 			q(59070, {	-- A Sacrifice of Anima
 				["sourceQuests"] = { 59063 },	-- Curses!

@@ -83,6 +83,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 67.8, 51.2, ARDENWEALD },
 				["questID"] = 59221,
 				["g"] = {
+					i(183091),	-- Lifewoven Bracelet (QI!)
 					i(180163),	-- Blackthorn Harvester
 					i(180143),	-- Darkreach Hacker
 					i(179593),	-- Darkreach Mask
@@ -91,7 +92,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(179596),	-- Drust Mask of Dominance
 					i(180153),	-- Drustwrought Executioner
 					i(180162),	-- Drustwrought Scythe
-					i(183091),	-- Lifewoven Bracelet
 					i(180156),	-- Witherscorn Greataxe
 					i(179594),	-- Witherscorn Guise
 					i(180145),	-- Witherscorn Handaxe

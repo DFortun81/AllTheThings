@@ -292,6 +292,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 46.9, 41.7, THE_MAW },
 					["groups"] = {
 						ach(14746),	-- Prepare for Trouble!
+						i(182688),	-- Cypher of Obfuscation (QI!)
 					},
 				}),
 				q(60285, {	-- Rule 6: Concealment is Everything
@@ -316,6 +317,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["g"] = {
+						i(182955),	-- Cypher of Dampening (QI!)
+					},
 				}),
 				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
 					["sourceQuests"] = {
@@ -325,6 +329,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
 					["coord"] = { 56.9, 57.5, THE_MAW },
+					["g"] = {
+						i(182955),	-- Cypher of Dampening (QI!)
+					},
 				}),
 				q(60158, {	-- Rule 7: Betrayal is Inevitable
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
@@ -416,7 +423,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "o", 365084 },	-- Tormentor's Pike
 				["coord"] = { 60.3, 72.1, THE_MAW },
 				["g"] = {
-					i(183105),	-- Tormentor's Rod
+					i(183105),	-- Tormentor's Rod (QI!)
 				},
 			}),
 			q(63206, {	-- Soulless Husks

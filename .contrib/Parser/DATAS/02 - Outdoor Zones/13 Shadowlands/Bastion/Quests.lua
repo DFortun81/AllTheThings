@@ -1056,6 +1056,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62170, {	-- You'll Never Walk Alone
 				["provider"] = { "i", 182693 },	-- Lost Disciple's Notes
 				["coord"] = { 59.3, 60.9, BASTION },
+				["g"] = {
+					i(179363),	-- 'Misplaced' Anima Tolls (QI!)
+				},
 			}),
 			q(62916, {	-- Your Next Best Friend
 				["sourceQuests"] = { 59196 },	-- Go in Service
