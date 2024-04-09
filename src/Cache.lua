@@ -456,6 +456,9 @@ local fieldConverters = {
 	["drakewatcherManuscriptID"] = function(group, value)
 		CacheField(group, "itemID", value);
 	end,
+	["heirloomID"] = function(group, value)
+		CacheField(group, "itemID", value);
+	end,
 	["mapID"] = cacheMapID,
 	["mountID"] = function(group, value)
 		CacheField(group, "spellID", value);
@@ -701,10 +704,8 @@ if app.IsRetail then
 		CacheField(group, "itemID", value);
 		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
 	end
-	fieldConverters.drakewatcherManuscriptID = function(group, value)
-		CacheField(group, "itemID", value);
-		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
-	end
+	fieldConverters.drakewatcherManuscriptID = fieldConverters.itemID;
+	fieldConverters.heirloomID = fieldConverters.itemID;
 	tinsert(postscripts, function()
 		local modItemID
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)

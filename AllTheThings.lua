@@ -994,6 +994,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateRecipe(t.recipeID, t);
 		elseif t.factionID then
 			t = app.CreateFaction(t.factionID, t);
+		elseif t.heirloomID then
+			t = app.CreateHeirloom(t.heirloomID, t);
 		elseif t.itemID then
 			if t.toyID then
 				t = app.CreateToy(t.itemID, t);
@@ -5732,7 +5734,8 @@ hierloomLevelFields.collected = hierloomLevelFields.saved;
 local CreateHeirloomLevel = app.CreateClass("HeirloomLevel", "heirloomLevelID", hierloomLevelFields);
 
 -- Heirloom Item
-local createHeirloom = app.ExtendClass("Item", "Heirloom", "itemID", {
+local createHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", {
+	itemID = function(t) return t.heirloomID; end,
 	icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end,
 	link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end,
 	collectibleAsCost = app.ReturnFalse,
