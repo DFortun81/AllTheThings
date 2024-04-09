@@ -248,6 +248,10 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208063, {	-- Quantum Gloves
 		filter(CLOTH, {
+			q(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
+				["name"] = "Quantum Gloves (Cloth) completed.",
+				["collectible"] = false,
+			}),
 			ig(114259),	-- Firefly Gloves					(NYI)
 			ig(114383),	-- Gloves of Hooded Nightmares		(NYI)
 			i(113225, {	-- Kalaena's Arcane Handwraps		(NYI)
@@ -826,6 +830,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
 					["name"] = "Quantum Chestpiece (Mail) completed.",
 				}),
+				q(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
+					["name"] = "Quantum Gloves (Cloth) completed.",
+				}),
 				q(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
 					["name"] = "Quantum Gloves (Leather) completed.",
 				}),
@@ -1392,7 +1399,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Quantum Items
 		-- q(77622),	-- when you learn everything from Quantum ?
 		-- q(77625),	-- when you learn everything from Quantum ?
-		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
