@@ -500,14 +500,18 @@ app.CreateClass = function(className, classKey, fields, ...)
 			end
 			return setmetatable(t, Class);
 		end;
-		classesByKey[classKey] = classConstructor;
+		if not classesByKey[classKey] then
+			classesByKey[classKey] = classConstructor;
+		end
 		return classConstructor, Class;
 	else
 		local Class = BaseObjectFields(fields, className);
 		local classConstructor = function(id, t)
 			return setmetatable(constructor(id, t, classKey), Class);
 		end;
-		classesByKey[classKey] = classConstructor;
+		if not classesByKey[classKey] then
+			classesByKey[classKey] = classConstructor;
+		end
 		return classConstructor, Class;
 	end
 end
