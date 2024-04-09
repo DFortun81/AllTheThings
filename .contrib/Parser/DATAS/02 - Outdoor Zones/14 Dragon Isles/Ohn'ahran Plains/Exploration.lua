@@ -14,7 +14,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			exploration(13778),	-- Mirror of the Sky
 			exploration(13766),	-- Nelthazan Ruins
 			exploration(13782),	-- Nokhudon Hold
-			exploration(13645),	-- Ohn'ahran Plains
+			exploration(13645, {	-- Ohn'ahran Plains
+				["description"] = "This node can only be uncovered by characters who have not yet unlocked the Emerald Dream.",
+			}),
 			exploration(13776),	-- Ohn'ir Geysers
 			exploration(13775),	-- Ohn'iri Springs
 			exploration(14147),	-- Pinewood Post
