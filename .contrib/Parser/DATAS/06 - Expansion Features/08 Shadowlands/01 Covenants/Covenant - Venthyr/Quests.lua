@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					62000,	-- Choosing Your Purpose [Skip]
 					63215,	-- Report to Draven [Skip]
 				},
-				["sourceQuestNumRequired"] = 1,
+				["sourceQuestNumRequired"] = 2,	-- You want to be able to be given the Breadcrumb warning so you can pickup General Draven quest.
 				["provider"] = { "n", 171589 },	-- General Draven
 				["coord"] = { 44.8, 68.9, ORIBOS },
 			}),
