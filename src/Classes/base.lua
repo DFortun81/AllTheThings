@@ -592,6 +592,8 @@ app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 		end
 		fields.__type = nil;
 		fields.key = nil;
+		fields.conditionals = nil;
+		fields.simplemeta = nil;
 	else
 		print("Could not find specified base class:", baseClassName);
 	end
