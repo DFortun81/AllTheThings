@@ -3,8 +3,8 @@ local appName,app = ...;
 if not C_TransmogSets then
 	-- Transmog is NOT supported.
 	app.CreateGearSet = app.CreateUnimplementedClass("GearSet", "setID");
-	app.CreateGearSetHeader = app.CreateUnimplementedClass("GearSetHeader", "setID");
-	app.CreateGearSetSubHeader = app.CreateUnimplementedClass("GearSetSubHeader", "setID");
+	app.CreateGearSetHeader = app.CreateUnimplementedClass("GearSetHeader", "gearSetHeaderID");
+	app.CreateGearSetSubHeader = app.CreateUnimplementedClass("GearSetSubHeader", "gearSetSubHeaderID");
 	app.BuildGearSetInformationForGroup = app.DoNothing;
 	return
 end
@@ -63,9 +63,12 @@ app.CreateGearSet = app.CreateClass("GearSet", "setID", {
 		end
 	end,
 });
-app.CreateGearSetHeader = app.CreateClass("GearSetHeader", "setID", {
+app.CreateGearSetHeader = app.CreateClass("GearSetHeader", "gearSetHeaderID", {
 	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
+		return C_TransmogSets_GetSetInfo(t.gearSetHeaderID) or {};
+	end,
+	["setID"] = function(t)
+		return t.gearSetHeaderID;
 	end,
 	["name"] = function(t)
 		return t.info.label;
@@ -84,9 +87,12 @@ app.CreateGearSetHeader = app.CreateClass("GearSetHeader", "setID", {
 		end
 	end,
 });
-app.CreateGearSetSubHeader = app.CreateClass("GearSetSubHeader", "setID", {
+app.CreateGearSetSubHeader = app.CreateClass("GearSetSubHeader", "gearSetSubHeaderID", {
 	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
+		return C_TransmogSets_GetSetInfo(t.gearSetSubHeaderID) or {};
+	end,
+	["setID"] = function(t)
+		return t.gearSetSubHeaderID;
 	end,
 	["name"] = function(t)
 		return t.info.description;
