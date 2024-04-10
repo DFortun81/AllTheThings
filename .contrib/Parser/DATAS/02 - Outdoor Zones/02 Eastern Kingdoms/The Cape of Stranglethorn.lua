@@ -469,7 +469,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(624, {	-- Cortello's Riddle (1/3)
-					["provider"] = { "i", 4056 },	-- Cortello's Riddle
+					["providers"] = {
+						{ "i", 4056 },	-- Cortello's Riddle
+						{ "o", 2554 },	-- Cortello's Riddle
+					},
 					["coords"] = {
 						{ 29.5, 89.3, STRANGLETHORN_VALE },
 						{ 33.6, 88.3, STRANGLETHORN_VALE },
