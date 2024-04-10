@@ -23,14 +23,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 28,
 				}),
 				q(6521, {	-- An Unholy Alliance (2/2) (Before Wrathgate)
+					-- #if AFTER 3.3.0
+					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
+					-- #else
 					["qg"] = 2425,	-- Varimathras
+					-- #endif
 					["sourceQuest"] = 6522,	-- An Unholy Alliance (1/2) (Before Wrathgate)
 					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
-					-- #if BEFORE 3.3.0
 					["groups"] = {
 						objective(1, {	-- 0/1 Ambassador Malcin's Head
 							["provider"] = { "i", 17009 },	-- Ambassador Malcin's Head
@@ -47,7 +50,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
-					-- #endif
 				}),
 				q(14353, {	-- An Unholy Alliance (2/2) (After Wrathgate)
 					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>

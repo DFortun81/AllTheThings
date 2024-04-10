@@ -71,15 +71,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(6522, {	-- An Unholy Alliance (1/2) (Before Wrathgate)
+				q(6522, {	-- An Unholy Alliance (1/2) (Before Wrathgate?)
 					["provider"] = { "i", 17008 },	-- Small Scroll
-					["timeline"] = { "removed 3.3.0" },
+					-- #if BEFORE 4.0.3
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is given to players that have not completed the wrath gate yet.",
+					-- #endif
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 				}),
-				q(14352, {	-- An Unholy Alliance (1/2) (After Wrathgate)
+				q(14352, {	-- An Unholy Alliance (1/2) (After Wrathgate?)
 					["provider"] = { "i", 49205 },	-- Small Scroll
+					-- #if BEFORE 4.0.3
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is given to players that have completed the wrath gate.",
+					-- #endif
+					-- #endif
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -490,10 +500,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(5793),	-- Razorflank's Heart
 					i(5792),	-- Razorflank's Medallion
-					i(17008, {	-- Small Scroll (Before Wrathgate)
-						["timeline"] = { "removed 3.3.0" },
+					i(17008, {	-- Small Scroll (Before Wrathgate?)
+						["timeline"] = { "removed 4.0.3"  },
 					}),
-					i(49205, {	-- Small Scroll (After Wrathgate)
+					i(49205, {	-- Small Scroll (After Wrathgate?)
 						["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					}),
 					i(6692),	-- Pronged Reaver
