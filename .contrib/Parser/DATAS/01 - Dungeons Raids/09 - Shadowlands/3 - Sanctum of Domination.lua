@@ -313,34 +313,34 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(15127, {	-- Heroic: Sanctum of Domination
 					crit(52344, {	-- The Tarragrue
-						["_encounter"] = { TARRAGRUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { TARRAGRUE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52345, {	-- The Eye of the Jailer
-						["_encounter"] = { EYE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { EYE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52346, {	-- The Nine
-						["_encounter"] = { NINE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { NINE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52348, {	-- Remnant of Ner'zhul
-						["_encounter"] = { DORMAZAIN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { DORMAZAIN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52347, {	-- Soulrender Dormazain
-						["_encounter"] = { NERZHUL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { NERZHUL, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52349, {	-- Painsmith Raznal
-						["_encounter"] = { PAINSMITH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { PAINSMITH, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52350, {	-- Guardian of the First Ones
-						["_encounter"] = { GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { GUARDIAN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52351, {	-- Fatescribe Roh-Kalo
-						["_encounter"] = { FATESCRIBE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { FATESCRIBE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52352, {	-- Kel'Thuzad
-						["_encounter"] = { KELTHUZAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { KELTHUZAD, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52353, {	-- Sylvanas Windrunner
-						["_encounter"] = { SYLVANAS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { SYLVANAS, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(15128, {	-- Mythic: Sanctum of Domination

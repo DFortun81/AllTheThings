@@ -438,37 +438,37 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(15478, {	-- Heroic: Sepulcher of the First Ones
 					crit(53162, {	-- Vigilant Guardian
-						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53166, {	-- Skolex, the Insatiable Ravener
-						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53170, {	-- Artificer Xy'mox
-						["_encounter"] = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { ARTIFICER_XYMOX, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53174, {	-- Dausegne, the Fallen Oracle
-						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53178, {	-- Prototype Pantheon
-						["_encounter"] = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53182, {	-- Lihuvim, Principal Architect
-						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53186, {	-- Halondrus the Reclaimer
-						["_encounter"] = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53190, {	-- Anduin Wrynn
-						["_encounter"] = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { ANDUIN_WRYNN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53194, {	-- Lords of Dread
-						["_encounter"] = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { LORDS_OF_DREAD, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53198, {	-- Rygelon
-						["_encounter"] = { RYGELON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { RYGELON, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(53202, {	-- The Jailer
-						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(15490, {	-- Mythic: Sepulcher of the First Ones

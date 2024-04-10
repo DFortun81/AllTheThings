@@ -235,34 +235,34 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(14717, {	-- Heroic: Castle Nathria
 					crit(48970, {	-- Shriekwing
-						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2393, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48971, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2429, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48974, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2422, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48973, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2418, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48972, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2428, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48975, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2420, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48976, {	-- The Council of Blood
-						["_encounter"] = { 2426, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2426, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48977, {	-- Sludgefist
-						["_encounter"] = { 2394, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2394, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48978, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2425, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48979, {	-- Sire Denathrius
-						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						["_encounter"] = { 2424, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(14718, {	-- Mythic: Castle Nathria
