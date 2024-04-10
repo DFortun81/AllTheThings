@@ -2641,6 +2641,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 11.4, 35.3, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Sapphire of Aku'Mai
+							["provider"] = { "i", 16784 },	-- Sapphire of Aku'Mai
+							["cr"] = 4802,	-- Blackfathom Tide Priestess
+						}),
+					},
 				}),
 				q(13796, {	-- The Forest Heart
 					["qg"] = 33777,	-- Gaivan Shadewalker
@@ -3203,7 +3209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(20, 20, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Vorsha the Lasher slain
-							["providerS"] = {
+							["providers"] = {
 								{ "n",  12940 },	-- Vorsha the Lasher
 								{ "o", 178247 },	-- Naga Brazier
 							},

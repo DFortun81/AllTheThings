@@ -537,7 +537,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/20 Sapphire of Aku'Mai
-							["provider"] = { "i", 16784 },	-- Sapphire of Aku'Mai
+							["providers"] = {
+								{ "i",  16784 },	-- Sapphire of Aku'Mai
+								{ "o", 178184 },	-- Sapphire of Aku'Mai
+								{ "o", 178185 },	-- Sapphire of Aku'Mai
+								{ "o", 178186 },	-- Sapphire of Aku'Mai
+							},
 						}),
 					},
 				}),
