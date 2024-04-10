@@ -3203,7 +3203,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(20, 20, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Vorsha the Lasher slain
-							["provider"] = { "n", 12940 },	-- Vorsha the Lasher
+							["providerS"] = {
+								{ "n",  12940 },	-- Vorsha the Lasher
+								{ "o", 178247 },	-- Naga Brazier
+							},
 							["coord"] = { 9.6, 27.6, ASHENVALE },
 						}),
 						i(17692),	-- Horn Ring
