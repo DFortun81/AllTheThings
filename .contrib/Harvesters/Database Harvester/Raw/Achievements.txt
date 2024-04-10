@@ -13652,3 +13652,192 @@
 40079@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 32 [DNT]
 40080@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 36 [DNT]
 40081@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 40 [DNT]
+10.2.7.54171
+17918@@@Undead Battler of Zaralek Cavern
+19871@@@Infinite Power
+19872@@@The Jade Forest
+19873@@@Valley of the Four Winds
+19874@@@Krasarang Wilds
+19875@@@Kun-Lai Summit
+19876@@@Vale of Eternal Blossoms
+19877@@@Townlong Steppes
+19878@@@Dread Wastes
+19879@@@Landfall
+19880@@@Isle of Thunder
+19881@@@Escalation
+19882@@@Campaign: The Jade Forest
+19883@@@Campaign: The Jade Forest
+19884@@@Campaign: Valley of the Four Winds
+19885@@@Campaign: Krasarang Wilds
+19886@@@Campaign: Krasarang Wilds
+19887@@@Campaign: Kun-Lai Summit
+19888@@@Campaign: Kun-Lai Summit
+19889@@@Campaign: Townlong Steppes
+19890@@@Campaign: Dread Wastes
+19891@@@Campaign: Landfall
+19892@@@Campaign: Isle of Thunder
+19893@@@A Brewing Storm
+19894@@@Temple of the Jade Serpent
+19895@@@Heroic: Temple of the Jade Serpent
+19896@@@Stormstout Brewery
+19897@@@Heroic: Stormstout Brewery
+19898@@@Shado-Pan Monastery
+19899@@@Heroic: Shado-Pan Monastery
+19900@@@Siege of Niuzao Temple
+19901@@@Heroic: Siege of Niuzao Temple
+19902@@@Gate of the Setting Sun
+19903@@@Heroic: Gate of the Setting Sun
+19904@@@Mogu'shan Palace
+19905@@@Heroic: Mogu'shan Palace
+19906@@@Scarlet Halls
+19907@@@Heroic: Scarlet Halls
+19908@@@Scarlet Monastery
+19909@@@Heroic: Scarlet Monastery
+19910@@@Scholomance
+19911@@@Heroic: Scholomance
+19912@@@Order of the Cloud Serpent
+19913@@@The August Celestials
+19914@@@Shado-Pan
+19915@@@The Klaxxi
+19916@@@Golden Lotus
+19917@@@Operation: Shieldwall
+19918@@@Dominance Offensive
+19919@@@Kirin Tor Offensive
+19920@@@Sunreaver Onslaught
+19921@@@Shado-Pan Assault
+19922@@@Emperor Shaohao
+19923@@@Greenstone Village
+19924@@@Heroic: A Brewing Storm
+19925@@@Unga Ingoo
+19926@@@Brewmoon Festival
+19927@@@Arena of Annihilation
+19928@@@Crypt of Forgotten Kings
+19929@@@Heroic: Crypt of Forgotten Kings
+19930@@@Assault on Zan'vess
+19931@@@A Little Patience
+19932@@@Domination Point
+19933@@@Dagger in the Dark
+19934@@@Battle on the High Seas
+19935@@@Heroic: Battle on the High Seas
+19936@@@Battle on the High Seas
+19937@@@Heroic: Battle on the High Seas
+19938@@@Theramore's Fall
+19939@@@Theramore's Fall
+19940@@@Blood in the Snow
+19941@@@Heroic: Blood in the Snow
+19942@@@Dark Heart of Pandaria
+19943@@@Heroic: Dark Heart of Pandaria
+19944@@@Secrets of Ragefire
+19945@@@Heroic: Secrets of Ragefire
+19946@@@Raid Finder: Mogu'shan Vaults
+19947@@@Mogu'shan Vaults
+19948@@@Heroic: Mogu'shan Vaults
+19949@@@Raid Finder: Heart of Fear
+19950@@@Heart of Fear
+19951@@@Heroic: Heart of Fear
+19952@@@Raid Finder: Terrace of Endless Spring
+19953@@@Terrace of Endless Spring
+19954@@@Heroic: Terrace of Endless Spring
+19955@@@Raid Finder: Throne of Thunder
+19956@@@Throne of Thunder
+19957@@@Heroic: Throne of Thunder
+19958@@@Raid Finder: Siege of Orgrimmar
+19959@@@Siege of Orgrimmar
+19960@@@Heroic: Siege of Orgrimmar
+19961@@@Mythic: Siege of Orgrimmar
+19962@@@Tour The Jade Forest
+19963@@@Tour Valley of the Four Winds
+19964@@@Tour Krasarang Wilds
+19965@@@Tour Kun-Lai Summit
+19966@@@Tour Townlong Steppes
+19967@@@Tour Dread Wastes
+19970@@@Tour Timeless Isle
+19977@@@Hidden Treasures: The Jade Forest
+19978@@@Hidden Treasures: Valley of the Four Winds
+19979@@@Hidden Treasures: Krasarang Wilds
+19980@@@Hidden Treasures: Kun-Lai Summit
+19981@@@Hidden Treasures: Townlong Steppes
+19982@@@Hidden Treasures: Timeless Isle
+19993@@@Elusive Foes: The Jade Forest
+19994@@@Elusive Foes: Valley of the Four Winds
+19995@@@Elusive Foes: Krasarang Wilds
+19996@@@Elusive Foes: Kun-Lai Summit
+19997@@@Elusive Foes: Townlong Steppes
+19998@@@Elusive Foes: Dread Wastes
+19999@@@Elusive Foes: Landfall
+20000@@@Elusive Foes: Isle of Thunder
+20001@@@Elusive Foes: Timeless Isle
+20002@@@Powerful Enemies: Timeless Isle
+20003@@@Timeless Isle
+20004@@@Heroic: Pandaria Scenarios
+20005@@@Heroic: Pandaria Dungeons
+20006@@@Pandaria Raids
+20007@@@Heroic: Pandaria Raids
+20008@@@Looking For Group: The Jade Forest
+20009@@@Looking For Group: Valley of the Four Winds
+20011@@@Looking For Group: Kun-Lai Summit
+20012@@@Looking For Group: Townlong Steppes
+20014@@@Looking For Group: Vale of Eternal Blossoms
+20015@@@Looking For Group: Isle of Thunder
+20016@@@Looking For Group: Timeless Isle
+20017@@@Salyis's Warband
+20018@@@Sha of Anger
+20019@@@Nalak, the Storm Lord
+20020@@@Oondasta
+20021@@@Chi-ji, the Red Crane
+20022@@@Yu'lon, the Jade Serpent
+20023@@@Niuzao, the Black Ox
+20024@@@Xuen, the White Tiger
+20025@@@Ordos
+20026@@@Explore Jade Forest
+20027@@@Explore Valley of the Four Winds
+20028@@@Explore Krasarang Wilds
+20029@@@Explore Kun-Lai Summit
+20030@@@Explore Townlong Steppes
+20031@@@Explore Dread Wastes
+20039@@@[DNT] Damage - Humanoid
+20046@@@[DNT] Damage - Beast
+20047@@@[DNT] Damage - Aberration
+20048@@@[DNT] Damage - Demon
+20049@@@[DNT] Damage - Dragonkin
+20050@@@[DNT] Damage - Elemental
+20051@@@[DNT] Damage - Giant
+20052@@@[DNT] Damage - Mechanical
+20053@@@[DNT] Damage - Undead
+20054@@@[DNT] Resistance - Arcane
+20055@@@[DNT] Resistance - Fire
+20056@@@[DNT] Resistance - Frost
+20057@@@[DNT] Resistance - Holy
+20058@@@[DNT] Resistance - Nature
+20059@@@[DNT] Resistance - Physical
+20060@@@[DNT] Resistance - Shadow
+20061@@@[DNT] Stat - Critical Strike
+20062@@@[DNT] Stat - Haste
+20063@@@[DNT] Stat - Leech
+20064@@@[DNT] Stat - Mastery
+20065@@@[DNT] Stat - Primary
+20066@@@[DNT] Stat - Speed
+20067@@@[DNT] Stat - Stamina
+20068@@@[DNT] Stat - Versatility
+20069@@@Elusive Foes: Vale of Eternal Blossoms
+20477@@@[DNT] Stat - Experience
+20500@@@Lion's Landing
+20527@@@Infinite Power I
+20528@@@Infinite Power II
+20529@@@Infinite Power III
+20530@@@Infinite Power IV
+20531@@@Infinite Power V
+20532@@@Infinite Power VI
+20533@@@Infinite Power VII
+20534@@@Infinite Power VIII
+20535@@@Infinite Power IX
+20536@@@Infinite Power X
+20537@@@Infinite Power XI
+20538@@@Infinite Power XII
+20593@@@Time Trial
+40171@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
+40192@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
+40193@@@Into the Storm (copy)
+40223@@@Timerunner
+40226@@@Realm First! Timerunner
+40227@@@Realm First! Mythic Garrosh

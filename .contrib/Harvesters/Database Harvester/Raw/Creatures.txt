@@ -21000,3 +21000,30 @@
 218977@@@Happy
 219134@@@Pokee
 220061@@@Greatwing Macaw
+10.2.7.54171
+126773@@@Locus-Walker
+216207@@@Lady Jaina Proudmoore
+216208@@@Archmage Khadgar
+216949@@@Scalecommander Cindrethresh
+216951@@@Kalecgos
+216967@@@Scalecommander Cindrethresh
+218252@@@Magister Umbric
+218253@@@Riftwalker Aderian
+218255@@@Riftwalker Eiteiri
+218256@@@Riftwalker Soran
+218257@@@Riftwalker Tarrowyn
+218258@@@Riftwalker Dellyn
+218281@@@Archmage Khadgar
+218287@@@Lady Jaina Proudmoore
+218433@@@Infinite Ravager
+220440@@@Eternus
+220445@@@Eternus
+221228@@@Friendly Joe
+223316@@@Marrlok
+223600@@@Trishi
+223645@@@Worgli the Apprehensive
+223695@@@Lil' Manny
+223785@@@Muskpaw Calf
+223810@@@Astral Emperor's Serpentling
+224116@@@Winds of Pandaria
+224503@@@Exodar Artificer

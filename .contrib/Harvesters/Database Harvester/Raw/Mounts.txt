@@ -1796,3 +1796,46 @@
 374172@@@Bestowed Trawling Mammoth
 376898@@@Bestowed Ottuk Vanguard
 385260@@@Bestowed Ohuna Spotter
+10.2.7.54171
+123182@@@Kafa Yak
+127213@@@Modest Expedition Yak
+435044@@@Golden Discus
+435082@@@Mogu Hazeblazer
+435084@@@Sky Surfer
+435103@@@Dashing Windsteed
+435107@@@Forest Windsteed
+435108@@@Daystorm Windsteed
+435109@@@Feathered Windsurfer
+435115@@@Guardian Quilen
+435118@@@Marble Quilen
+435123@@@Gilded Riding Crane
+435124@@@Luxurious Riding Crane
+435125@@@Tropical Riding Crane
+435126@@@Silver Riding Crane
+435127@@@Rose Riding Crane
+435128@@@Pale Riding Crane
+435131@@@Snowy Riding Goat
+435133@@@Little Red Riding Goat
+435145@@@Bloody Skyscreamer
+435146@@@Night Pterrorwing
+435147@@@Jade Pterrordax
+435149@@@Cobalt Juggernaut
+435150@@@Fel Iron Juggernaut
+435153@@@Purple Shado-Pan Riding Tiger
+435160@@@Riverwalker Mushan
+435161@@@Palehide Mushan Beast
+441794@@@Amber Pterrordax
+446017@@@August Phoenix
+446022@@@Astral Emperor's Serpent
+446352@@@[PH] Goblin Surfboard - Blue
+447413@@@Pearlescent Goblin Wave Shredder
+448845@@@[PH] Blue Old God Fish Mount
+448849@@@[PH] Green Old God Fish Mount
+448850@@@[PH] Red Old God Fish Mount
+448851@@@[PH] Purple Old God Fish Mount
+449126@@@[PH] Nightsaber Horde Mount
+449132@@@[PH] Nightsaber Horde Mount Black
+449133@@@[PH] Nightsaber Horde Mount White
+449140@@@[PH] Alliance Wolf Mount
+449141@@@[PH] Alliance Wolf Mount
+449142@@@[PH] Alliance Wolf Mount

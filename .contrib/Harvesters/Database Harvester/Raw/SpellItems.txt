@@ -11752,3 +11752,97 @@
 10.2.6.53840
 7100@@@Bronze Infinite
 7101@@@10.2.6 FX Testing - Enchant Visualt - Pirate
+10.2.7.54171
+7072@@@+++Critical Strike & +Stamina
+7073@@@+++Haste & +Stamina
+7074@@@+++Health Regen & +Stamina
+7075@@@+++Haste
+7076@@@+++Critical Strike
+7077@@@+++Mastery
+7078@@@+++Leech
+7079@@@+++Speed
+7080@@@+++Health Regen
+7081@@@++Haste
+7082@@@++Critical Strike
+7083@@@++Mastery
+7084@@@++Speed
+7085@@@++Leech
+7086@@@++Health Regen
+7119@@@Opportunist
+7120@@@Sunstrider's Flourish
+7121@@@Fervor
+7122@@@Arcanist's Edge
+7136@@@Enkindle
+7137@@@Explosive Barrage
+7138@@@Wildfire
+7139@@@Meteor Storm
+7140@@@Incendiary Terror
+7142@@@Frost Armor
+7225@@@Mark of Arrogance
+7226@@@Quick Strike
+7227@@@Slay
+7228@@@Tinkmaster's Shield
+7229@@@Victory Fire
+7230@@@Blink
+7231@@@Heroic Leap
+7232@@@Roll
+7233@@@Sprint
+7234@@@+++Leech & +Stamina
+7235@@@+++Mastery & +Stamina
+7236@@@+++Speed & +Stamina
+7237@@@Hailstorm
+7238@@@Cold Front
+7239@@@Brittle
+7240@@@Memory of Vengeance
+7241@@@Searing Light
+7243@@@Oblivion Sphere
+7244@@@Thundering Orb
+7245@@@Lifestorm
+7246@@@Chi-ji, the Red Crane
+7250@@@Morphing Elements
+7276@@@Vindication
+7277@@@Warmth
+7278@@@Savior
+7279@@@Deliverance
+7280@@@Righteous Frenzy
+7281@@@Holy Martyr
+7283@@@Disengage
+7284@@@Trailblazer
+7285@@@Leap of Faith
+7286@@@Vanish
+7287@@@Stampeding Roar
+7288@@@Wild Charge
+7289@@@Pursuit of Justice
+7290@@@Door of Shadows
+7291@@@Spirit Walk
+7292@@@Spiritwalker's Grace
+7293@@@Dark Pact
+7294@@@Death's Advance
+7295@@@Soulshape
+7297@@@Locus of Power
+7298@@@Lightning Rod
+7299@@@Static Charge
+7300@@@Windweaver
+7301@@@Storm Overload
+7302@@@Vampiric Aura
+7303@@@Grounding
+7304@@@Ankh of Reincarnation
+7305@@@Freedom
+7306@@@Brilliance
+7307@@@Tireless Spirit
+7308@@@Bloodthirsty Coral
+7309@@@Soul Tether
+7310@@@Ward of Salvation
+7311@@@Precipice of Madness
+7312@@@+Armor
+7313@@@++Armor
+7314@@@+++Armor & +Stamina
+7315@@@+++Armor
+7316@@@+Versatility
+7317@@@++Versatility
+7318@@@+++Versatility & +Stamina
+7319@@@+++Versatility
+7322@@@Sha Corruption
+7323@@@10FX - Weapon Enchant - Sha - All Weapons
+7465@@@Funeral Pyre
+7466@@@Bulwark of the Black Ox

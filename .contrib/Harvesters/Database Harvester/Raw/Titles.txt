@@ -707,3 +707,8 @@
 544@@@Swashbuckler %s
 545@@@Buccaneer %s
 546@@@First Mate %s
+10.2.7.54171
+539@@@Mistrunner %s
+551@@@Timerunner %s
+552@@@%s, Paragon of the Mists
+553@@@%s, Claw of Eternus
