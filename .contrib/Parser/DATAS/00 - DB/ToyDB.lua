@@ -1301,3 +1301,15 @@ i(218128);	-- Draconic Banner of the Aspects
 i(211869);	-- Draconic Legend's Pennant
 i(216881);	-- Duck Disguiser
 i(170197);	-- Swarthy Warning Sign
+
+------------------
+-- PATCH 10.2.7 --
+------------------
+i(220777);	-- Cherry Blossom Trail
+i(218112);	-- Colorful Beach Chair
+i(217725);	-- Essence of Yu'lon
+i(217726);	-- Fortitude of Niuzao
+i(217723);	-- Fury of Xuen
+i(217724);	-- Kindness of Chi-ji
+i(223146);	-- Satchel of Stormborn Seeds
+i(220692);	-- X-treme Water Blaster Display

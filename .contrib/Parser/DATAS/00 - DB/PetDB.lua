@@ -4078,3 +4078,13 @@ i(0, 4437);			-- Fathom
 i(0, 4425);			-- Glamrok
 i(0, 4435);			-- Happy
 i(217043, 4436);	-- Pokee
+
+------------------
+-- PATCH 10.2.7 --
+------------------
+i(221818, 4580);	-- Astral Emperor's Serpentling
+i(223499, 4569);	-- Lil' Manny
+i(223145, 4548);	-- Marrlok
+i(221817, 4579);	-- Muskpaw Calf
+i(223339, 4565);	-- Trishi
+i(223474, 4566);	-- Worgli the Apprehensive
