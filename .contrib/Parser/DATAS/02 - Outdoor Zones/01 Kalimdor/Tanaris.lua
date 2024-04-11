@@ -3906,8 +3906,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Gorishi Queen Brain
 							["providers"] = {
-								{ "i", 11835 },	-- Gorishi Queen Brain
-								{ "i", 11833 },	-- Gorishi Queen Lure
+								{ "i",  11835 },	-- Gorishi Queen Brain
+								{ "i",  11833 },	-- Gorishi Queen Lure
+								{ "o", 174792 },	-- Gorishi Silithid Crystal
 							},
 							["coord"] = { 44.6, 81.6, UNGORO_CRATER },
 							["cr"] = 10041,	-- Gorishi Hive Queen
