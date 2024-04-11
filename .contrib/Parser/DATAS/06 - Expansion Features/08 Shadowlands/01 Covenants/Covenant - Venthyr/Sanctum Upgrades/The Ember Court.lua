@@ -591,8 +591,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(QUESTS, {
 							n(SPECIAL, sharedData({
-								["description"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest.",
-								-- ["sourceQuest"] = ,	-- TODO: there is something that prevents being able to pick these up...
+								["description"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest. You must have your own Ember Court built and the rehersal court scenario completed before you can pick these quests up.",
+								["sourceQuest"] = 59661,	-- Ember Court Rehersal
 							}, {
 								-- Tier 1
 								q(65132, {	-- Friend of a Friend: Choofa
