@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+--[[
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(ACHIEVEMENTS, {
 		ach(19871, {	-- Infinite Power
@@ -56,7 +57,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] =
 				20011,	-- Looking For Group: Kun-Lai Summit
 			}},
 			["g"] = {
-				i(),	-- Chen Stormstout's Hat
+				i(218248),	-- Chen Stormstout's Hat
+				i(218247),	-- Chen Stormstout's Hat
 			},
 		}),
 		ach(19877, {	-- Townlong Steppes
@@ -96,3 +98,4 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] =
 		}),
 	}),
 })));
+--]]
