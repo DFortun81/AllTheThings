@@ -34,7 +34,7 @@ local OnTooltipForThoriumBrotherhood = [[function(t, tooltipInfo)
 		200,
 -- #endif
 		42000);
-		
+
 		addRepInfo(tooltipInfo, reputation, "Turn In Core Leather (2x each)",
 -- #if AFTER TBC
 		350,
@@ -42,7 +42,7 @@ local OnTooltipForThoriumBrotherhood = [[function(t, tooltipInfo)
 		150,
 -- #endif
 		42000);
-		
+
 		addRepInfo(tooltipInfo, reputation, "Turn In Dark Iron Ore (10x each)",
 -- #if AFTER TBC
 		75,
@@ -2352,7 +2352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
 					["timeline"] = { "added 4.0.1" },
 					["groups"] = {
-						i(10602),   -- Schematic: Deadly Scope
+						i(10602),   -- Schematic: Deadly Scope (RECIPE!)
 					},
 				}),
 			}),
@@ -2389,27 +2389,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						10043,	-- Ribbly's Crony
 					},
 				}),
-				i(16049, {	 -- Schematic: Dark Iron Bomb
+				i(16049, {	 -- Schematic: Dark Iron Bomb (RECIPE!)
 					["cr"] = 8920,   -- Weapon Technician
 				}),
-				i(16048, {	-- Schematic: Dark Iron Rifle
+				i(16048, {	-- Schematic: Dark Iron Rifle (RECIPE!)
 					["cr"] = 8897,	-- Doomforge Craftsman
 				}),
-				i(18235, {	-- Schematic: Field Repair Bot 74A
+				i(18235, {	-- Schematic: Field Repair Bot 74A (RECIPE!)
 					["provider"] = { "o", 179552 },	-- Schematic: Field Repair Bot 74A
 					["description"] = "On the floor next to Golem Lord Argelmach.",
 				}),
-				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot
+				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot (RECIPE!)
 					["cr"] = 8920,	-- Weapon Technician
 				}),
 				i(16053, {	-- Schematic: Master Engineer's Goggles
 					-- #if AFTER 2.0.1
 					["description"] = "This is now learned from the trainer.",
 					-- #endif
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["cr"] = 8900,	-- Doomforge Arcanasmith
 				}),
-				i(18661, {	-- Schematic: World Enlarger
+				i(18661, {	-- Schematic: World Enlarger (RECIPE!)
 					["cr"] = 8920,	-- Weapon Technician
 				}),
 				i(12546),	-- Aristocratic Cuffs
@@ -2779,7 +2779,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(383, {	-- Plugger Spazzring
 					["creatureID"] = 9499,
 					["groups"] = {
-						i(18653),	-- Schematic: Goblin Jumper Cables XL
+						i(18653),	-- Schematic: Goblin Jumper Cables XL (RECIPE!)
 						i(12791),	-- Barman Shanker
 						i(12793),	-- Mixologist's Tunic
 						i(151410, {	-- Bottle-Popper Ring

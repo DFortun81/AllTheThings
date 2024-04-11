@@ -1,6 +1,161 @@
 -----------------
 -- ENGINEERING --
 -----------------
+APPRENTICE_JOURNEYMAN_ENGINEERING = {
+	r(4036, {	-- Engineering (Apprentice)
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
+		-- #endif
+		["rank"] = 1,
+	}),
+	r(4037, {	-- Engineering (Journeyman)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
+		-- #endif
+		["rank"] = 2,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264475, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Engineering
+	r(9271),	-- Aquadynamic Fish Attractor
+	r(7430),	-- Arclight Spanner
+	r(3950),	-- Big Bronze Bomb
+	r(3953),	-- Bronze Framework
+	r(3938),	-- Bronze Tube
+	r(8334),	-- Clockwork Box[Cata+] / Classic: Practice Lock
+	r(3929),	-- Coarse Blasting Powder
+	r(3931),	-- Coarse Dynamite
+	r(3926, {["timeline"] = {REMOVED_4_3_0}}),	-- Copper Modulator
+	r(3924, {["timeline"] = {REMOVED_4_3_0}}),	-- Copper Tube
+	r(3930, {["timeline"] = {REMOVED_4_0_1}}),	-- Crafted Heavy Shot
+	r(3920, {["timeline"] = {REMOVED_4_0_1}}),	-- Crafted Light Shot
+	r(3947, {["timeline"] = {REMOVED_4_0_1}}),	-- Crafted Solid Shot
+	r(3977),	-- Crude Scope
+	r(3936),	-- Deadly Blunderbuss
+	r(3955),	-- Explosive Sheep
+	r(3934),	-- Flying Tiger Goggles
+	r(12584),	-- Gold Power Core
+	r(3956),	-- Green Tinted Goggles
+	r(3922),	-- Handful of Copper Bolts
+	r(3945),	-- Heavy Blasting Powder
+	r(3946),	-- Heavy Dynamite
+	r(3937),	-- Large Copper Bomb
+	r(6458),	-- Ornate Spyglass
+	r(3918),	-- Rough Blasting Powder
+	r(3925),	-- Rough Boomstick
+	r(3923),	-- Rough Copper Bomb
+	r(3919),	-- Rough Dynamite
+	r(3973),	-- Silver Contact
+	r(3949),	-- Silver-plated Shotgun
+	r(3941),	-- Small Bronze Bomb
+	r(3978),	-- Standard Scope
+	r(3932),	-- Target Dummy
+	r(3942),	-- Whirring Bronze Gizmo
+};
+EXPERT_ARTISAN_ENGINEERING = {
+	r(4038, {	-- Engineering (Expert)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+		end]],
+		-- #else
+		["lvl"] = 20,
+		-- #endif
+		-- #endif
+		["rank"] = 3,
+	}),
+	r(12656, {	-- Engineering (Artisan)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+		end]],
+		-- #else
+		["lvl"] = 35,
+		-- #endif
+		-- #endif
+		["rank"] = 4,
+	}),
+	r(3979, {["timeline"] = {ADDED_5_0_4}}),	-- Accurate Scope
+	r(3965),	-- Advanced Target Dummy
+	r(3967),	-- Big Iron Bomb
+	r(3963),	-- Compact Harvest Reaper Kit
+	r(12617, {["timeline"] = {ADDED_4_1_0}}),	-- Deepdive Helmet
+	r(19788),	-- Dense Blasting Powder
+	r(23070),	-- Dense Dynamite
+	r(12594),	-- Fire Goggles
+	r(12622),	-- Green Lens
+	r(3961),	-- Gyrochronatom
+	r(12590),	-- Gyromatic Micro-Adjustor
+	r(12619),	-- Hi-Explosive Bomb
+	r(12596, {["timeline"] = {REMOVED_4_0_1}}),	-- Hi-Impact Mithril Slugs
+	r(3962),	-- Iron Grenade
+	r(3958),	-- Iron Strut
+	r(3939, {["timeline"] = {ADDED_4_1_0}}),	-- Lovingly Crafted Boomstick
+	r(19825, {["timeline"] = {ADDED_2_0_1}}),	-- Master Engineer's Goggles
+	r(15255),	-- Mechanical Repair Kit
+	r(12595),	-- Mithril Blunderbuss
+	r(12599),	-- Mithril Casing
+	r(12603),	-- Mithril Frag Bomb
+	r(12621, {["timeline"] = {REMOVED_4_0_1}}),	-- Mithril Gyro-Shot
+	r(12589),	-- Mithril Tube
+	r(12618),	-- Rose Colored Goggles
+	r(19567, {["timeline"] = {REMOVED_6_0_2}}),	-- Salt Shaker
+	r(12585),	-- Solid Blasting Powder
+	r(12586),	-- Solid Dynamite
+	r(12615, {["timeline"] = {ADDED_2_0_3}}),	-- Spellpower Goggles Xtreme
+	r(19794, {["timeline"] = {ADDED_4_0_3}}),	-- Spellpower Goggles Xtreme Plus
+	r(19790, {["timeline"] = {ADDED_3_0_2}}),	-- Thorium Grenade
+	r(19792, {["timeline"] = {ADDED_2_0_3}}),	-- Thorium Rifle
+	r(19800, {["timeline"] = {ADDED_2_0_3, REMOVED_4_0_1}}),	-- Thorium Shells
+	r(19795, {["timeline"] = {ADDED_2_1_0}}),	-- Thorium Tube
+	r(19791, {["timeline"] = {ADDED_3_0_2}}),	-- Thorium Widget
+	r(23071, {["timeline"] = {ADDED_2_0_1}}),	-- Truesilver Transformer
+	r(12591),	-- Unstable Trigger
+};
+GNOMISH_ENGINEERING = {
+	r(20219),	-- Gnomish Engineer
+	r(12906),	-- Gnomish Battle Chicken
+	r(12759),	-- Gnomish Death Ray
+	r(12897),	-- Gnomish Goggles
+	r(12903),	-- Gnomish Harm Prevention Belt
+	r(12907),	-- Gnomish Mind Control Cap
+	r(12902),	-- Gnomish Net-o-Matic Projector
+	r(12905),	-- Gnomish Rocket Boots
+	r(12899),	-- Gnomish Shrink Ray
+	r(12895),	-- Inlaid Mithril Cylinder Plans
+};
+GOBLIN_ENGINEERING = {
+	r(20222),	-- Goblin Engineer
+	r(12755),	-- Goblin Bomb Dispenser
+	r(12718),	-- Goblin Construction Helmet
+	r(12908),	-- Goblin Dragon Gun
+	r(12717),	-- Goblin Mining Helmet
+	r(12716),	-- Goblin Mortar
+	r(8895),	-- Goblin Rocket Boots
+	r(12715),	-- Goblin Rocket Fuel Recipe
+	r(12758),	-- Goblin Rocket Helmet
+	r(12760),	-- Goblin Sapper Charge
+	r(12754),	-- The Big One
+	r(13240, {["timeline"] = {REMOVED_4_0_1}}),	-- The Mortar: Reloaded
+};
+CLASSIC_ENGINEERING = appendGroups(APPRENTICE_JOURNEYMAN_ENGINEERING,
+-- #if AFTER 2.1.0
+EXPERT_ARTISAN_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",

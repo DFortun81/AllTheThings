@@ -3454,7 +3454,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2684, {	-- Rizz Loosebolt <Engineering Supplies> (Alterac Mountains)
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(13308, {	-- Schematic: Ice Deflector
+						i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -3503,7 +3503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer> (Alterac Mountains)
 					["coord"] = { 71.2, 45.3, HILLSBRAD_FOOTHILLS },
 					["groups"] = {
-						i(7742, {	-- Schematic: Gnomish Cloaking Device
+						i(7742, {	-- Schematic: Gnomish Cloaking Device (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3560,7 +3560,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						})),
 						-- #endif
-						i(7561, {	-- Schematic: Goblin Jumper Cables
+						i(7561, {	-- Schematic: Goblin Jumper Cables (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(4837, {	-- Strength of Will

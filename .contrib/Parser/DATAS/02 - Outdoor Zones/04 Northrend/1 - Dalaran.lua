@@ -3758,14 +3758,14 @@ root(ROOTS.Zones, {
 						["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor.  You must have Engineering to use the toy.",
 						["requireSkill"] = ENGINEERING,
 						["groups"] = {
-							i(16054, {	-- Schematic: Arcanite Dragonling
-								["timeline"] = { "added 3.0.2" },
+							i(16054, {	-- Schematic: Arcanite Dragonling (RECIPE!)
+								["timeline"] = { ADDED_3_0_3 },
 								["isLimited"] = true,
 							}),
-							i(13311, {	-- Schematic: Mechanical Dragonling
+							i(13311, {	-- Schematic: Mechanical Dragonling (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(10609, {	-- Schematic: Mithril Mechanical Dragonling
+							i(10609, {	-- Schematic: Mithril Mechanical Dragonling (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

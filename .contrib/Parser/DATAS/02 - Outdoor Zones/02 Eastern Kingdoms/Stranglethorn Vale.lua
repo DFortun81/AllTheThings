@@ -275,6 +275,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				}),
+				prof(ENGINEERING, {
+					n(7406, {	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+						["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+						["g"] = GNOMISH_ENGINEERING,
+					}),
+				}),
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
@@ -2542,7 +2548,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.2, 76.6, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(18648, {	-- Schematic: Green Firework
+						i(18648, {	-- Schematic: Green Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2581,7 +2587,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(13311, {	-- Schematic: Mechanical Dragonling
+						i(13311, {	-- Schematic: Mechanical Dragonling (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2667,7 +2673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(10602, {	-- Schematic: Deadly Scope
+						i(10602, {	-- Schematic: Deadly Scope (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2679,11 +2685,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.5, 75.1, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(13310, {	-- Schematic: Accurate Scope
-							["timeline"] = { "removed 5.0.4" },	-- Moved to Trainer
+						i(13310, {	-- Schematic: Accurate Scope (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },	-- Moved to Trainer
 						}),
-						i(18651, {	-- Schematic: Truesilver Transformer
-							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainer
+						i(18651, {	-- Schematic: Truesilver Transformer (RECIPE!)
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainer
 						}),
 					},
 				}),

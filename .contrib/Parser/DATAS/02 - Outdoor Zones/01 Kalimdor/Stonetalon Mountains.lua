@@ -3037,7 +3037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(4836),	-- Fireproof Orb
 						i(4837),	-- Strength of Will
 						i(4838),	-- Orb of Power
-						i(7561),	-- Schematic: Goblin Jumper Cables
+						i(7561),	-- Schematic: Goblin Jumper Cables (RECIPE!)
 					},
 					-- #endif
 				}),

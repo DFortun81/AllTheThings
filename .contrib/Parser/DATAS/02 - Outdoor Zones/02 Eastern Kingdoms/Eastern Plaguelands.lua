@@ -4848,7 +4848,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(16056, {	-- Schematic: Flawless Arcanite Rifle (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["description"] = "Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",
 					["cr"] = 8561,	-- Mossflayer Shadowhunter
 					-- #if BEFORE 4.0.3

@@ -4,6 +4,13 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ENGINEERING, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.CLASSIC, {
+				i(10579),	-- Explosive Arrow
+				i(10723),	-- Gnomish Ham Radio
+				i(10580),	-- Goblin "Boom" Box
+				i(10585),	-- Goblin Radio
+				i(10719),	-- Mobile Alarm
+			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
@@ -91,6 +98,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.CLASSIC, {
+				r(12719),	-- Explosive Arrow
+				r(6441),	-- Explosive Shells
+				r(12904),	-- Gnomish Ham Radio
+				r(12720),	-- Goblin "Boom" Box
+				r(12722),	-- Goblin Radio
+				r(12900),	-- Mobile Alarm
+			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {

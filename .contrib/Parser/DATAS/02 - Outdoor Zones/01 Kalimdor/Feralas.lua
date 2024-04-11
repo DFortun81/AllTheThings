@@ -2987,7 +2987,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.8, 43.4, FERALAS },
 					-- #endif
 					["groups"] = {
-						i(19027),	-- Schematic: Snake Burst Firework
+						i(19027),	-- Schematic: Snake Burst Firework (RECIPE!)
 					},
 				}),
 			}),

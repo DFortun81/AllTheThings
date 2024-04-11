@@ -167,8 +167,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21737, {	-- Schematic: Cluster Launcher
-					["timeline"] = { "removed 3.0.8.9464" },
+				i(21737, {	-- Schematic: Cluster Launcher (RECIPE!)
+					["timeline"] = { REMOVED_3_0_8 },
 				}),
 			},
 		}),
@@ -183,9 +183,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["groups"] = {
 				i(21640),	-- Lunar Festival Fireworks Pack
 				i(21741, {	-- Cluster Rocket Recipes
-					i(21730),	-- Schematic: Blue Rocket Cluster
-					i(21731),	-- Schematic: Green Rocket Cluster
-					i(21732),	-- Schematic: Red Rocket Cluster
+					i(21730),	-- Schematic: Blue Rocket Cluster (RECIPE!)
+					i(21731),	-- Schematic: Green Rocket Cluster (RECIPE!)
+					i(21732),	-- Schematic: Red Rocket Cluster (RECIPE!)
 				}),
 			},
 			-- #endif
@@ -360,8 +360,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21738, {	-- Schematic: Firework Launcher
-					["timeline"] = { "removed 3.0.8.9464" },
+				i(21738, {	-- Schematic: Firework Launcher (RECIPE!)
+					["timeline"] = { REMOVED_3_0_8 },
 				}),
 			},
 		}),
@@ -376,9 +376,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["groups"] = {
 				i(21640),	-- Lunar Festival Fireworks Pack
 				i(21743, {	-- Large Cluster Rocket Recipes
-					i(21733),	-- Schematic: Large Blue Rocket Cluster
-					i(21734),	-- Schematic: Large Green Rocket Cluster
-					i(21735),	-- Schematic: Large Red Rocket Cluster
+					i(21733),	-- Schematic: Large Blue Rocket Cluster (RECIPE!)
+					i(21734),	-- Schematic: Large Green Rocket Cluster (RECIPE!)
+					i(21735),	-- Schematic: Large Red Rocket Cluster (RECIPE!)
 				}),
 			},
 			-- #endif
@@ -394,9 +394,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["groups"] = {
 				i(21640),	-- Lunar Festival Fireworks Pack
 				i(21742, {	-- Large Rocket Recipes
-					i(21727),	-- Schematic: Large Blue Rocket
-					i(21728),	-- Schematic: Large Green Rocket
-					i(21729),	-- Schematic: Large Red Rocket
+					i(21727),	-- Schematic: Large Blue Rocket (RECIPE!)
+					i(21728),	-- Schematic: Large Green Rocket (RECIPE!)
+					i(21729),	-- Schematic: Large Red Rocket (RECIPE!)
 				}),
 			},
 			-- #endif
@@ -455,9 +455,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["groups"] = {
 				i(21640),	-- Lunar Festival Fireworks Pack
 				i(21740, {	-- Small Rocket Recipes
-					i(21724),	-- Schematic: Small Blue Rocket
-					i(21725),	-- Schematic: Small Green Rocket
-					i(21726),	-- Schematic: Small Red Rocket
+					i(21724),	-- Schematic: Small Blue Rocket (RECIPE!)
+					i(21725),	-- Schematic: Small Green Rocket (RECIPE!)
+					i(21726),	-- Schematic: Small Red Rocket (RECIPE!)
 				}),
 			},
 			-- #endif
@@ -1337,41 +1337,41 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				i(21740, {	-- Small Rocket Recipes
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					["groups"] = {
-						i(21726),  -- Schematic: Small Red Rocket
-						i(21724),  -- Schematic: Small Blue Rocket
-						i(21725),  -- Schematic: Small Green Rocket
+						i(21724),  -- Schematic: Small Blue Rocket (RECIPE!)
+						i(21725),  -- Schematic: Small Green Rocket (RECIPE!)
+						i(21726),  -- Schematic: Small Red Rocket (RECIPE!)
 					},
 				}),
 				i(21742, {	-- Large Rocket Recipes
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					["groups"] = {
-						i(21729),  -- Schematic: Large Red Rocket
-						i(21728),  -- Schematic: Large Green Rocket
-						i(21727),  -- Schematic: Large Blue Rocket
+						i(21727),  -- Schematic: Large Blue Rocket (RECIPE!)
+						i(21728),  -- Schematic: Large Green Rocket (RECIPE!)
+						i(21729),  -- Schematic: Large Red Rocket (RECIPE!)
 					},
 				}),
 				i(21741, {	-- Cluster Rocket Recipes
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					["groups"] = {
-						i(21732),  -- Schematic: Red Rocket Cluster
-						i(21730),  -- Schematic: Blue Rocket Cluster
-						i(21731),  -- Schematic: Green Rocket Cluster
+						i(21730),  -- Schematic: Blue Rocket Cluster (RECIPE!)
+						i(21731),  -- Schematic: Green Rocket Cluster (RECIPE!)
+						i(21732),  -- Schematic: Red Rocket Cluster (RECIPE!)
 					},
 				}),
 				i(21743, {	-- Large Cluster Rocket Recipes
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					["groups"] = {
-						i(21735),  -- Schematic: Large Red Rocket Cluster
-						i(21733),  -- Schematic: Large Blue Rocket Cluster
-						i(21734),  -- Schematic: Large Green Rocket Cluster
+						i(21733),  -- Schematic: Large Blue Rocket Cluster (RECIPE!)
+						i(21734),  -- Schematic: Large Green Rocket Cluster (RECIPE!)
+						i(21735),  -- Schematic: Large Red Rocket Cluster (RECIPE!)
 					},
 				}),
-				i(44919, {	-- Schematic: Firework Launcher
-					["timeline"] = { "added 3.0.8.9464" },
+				i(44919, {	-- Schematic: Firework Launcher (RECIPE!)
+					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
-				i(44918, {	-- Schematic: Cluster Launcher
-					["timeline"] = { "added 3.0.8.9464" },
+				i(44918, {	-- Schematic: Cluster Launcher (RECIPE!)
+					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
 				i(116146, {  -- Schematic: Snake Firework (RECIPE!)

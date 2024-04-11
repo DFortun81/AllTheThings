@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4745),	-- Orgrimmar Rear Gate
 				exploration(1232),	-- Ravencrest Monument
 				exploration(1226),	-- Ruins of Arkkoran
-				exploration(1221),	-- Ruins of Eldarath 
+				exploration(1221),	-- Ruins of Eldarath
 				exploration(4827),	-- Storm Cliffs
 				exploration(3137),	-- Talrendis Point
 				exploration(1256),	-- The Ruined Reaches
@@ -2208,8 +2208,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 90.8, AZSHARA },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(10607, {	-- Schematic: Deepdive Helmet
-							["timeline"] = { "removed 4.0.3" },
+						i(10607, {	-- Schematic: Deepdive Helmet (RECIPE!)
+							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainer
 						}),
 					},
 				}),
@@ -2359,8 +2359,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 53.6, 23.8, AZSHARA },
 					},
 				}),
-				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus
-					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
+				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },	-- Learned from trainer
 					["cr"] = 6195,	-- Spitelash Siren
 				}),
 				-- #if BEFORE 2.3.0

@@ -2907,7 +2907,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
 						["timeline"] = { ADDED_9_1_0 },
 					}),
-					i(13308, {	-- Schematic: Ice Deflector
+					i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
 						["timeline"] = { ADDED_9_1_0 },
 					}),

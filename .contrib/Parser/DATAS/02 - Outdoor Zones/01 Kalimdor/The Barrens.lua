@@ -4211,11 +4211,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.7, 36.3, THE_BARRENS },
 					-- #endif
 					["groups"] = {
-						i(18648, {	-- Schematic: Green Firework
+						i(18648, {	-- Schematic: Green Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #if AFTER TBC
-						i(14639, {	-- Schematic: Minor Recombobulator
+						i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #endif

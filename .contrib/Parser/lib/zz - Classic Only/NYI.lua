@@ -15,7 +15,7 @@ CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
 root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	q(63769),	-- Holiday Reset Yearly Quest
 	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
-	
+
 	q(8226, {	-- Rare Fish - Pale Ghoulfish
 		--["qg"] = 15079,	-- Fishbot 5000
 		["requireSkill"] = FISHING,
@@ -28,10 +28,10 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 			i(7996),	-- Worn Fishing Hat
 		},
 	}),
-	
+
 	-- Shirts
 	i(6130),	-- Trapper's Shirt (deprecated)
-	
+
 	filter(3, {	-- Cloak
 		i(16116),	-- Test Nature Res Cloak Cloth
 		i(20361),	-- 63 Green Frost Shroud
@@ -280,23 +280,23 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 		i(16482),	-- Marshal's Plate Girdle
 		i(21587),	-- Wristguards of Castigation
 	}),
-	
+
 	-- Shirt
 	i(119),	-- Deprecated Rogue's Vest
 	i(138),	-- Deprecated War Harness
 	i(3148),	-- Deprecated Work Shirt
-	
+
 	-- Dagger
 	i(20317),	-- 63 Green Rogue Dagger
 	i(20279),	-- 90 Epic Rogue Dagger
 	i(20303),	-- 90 Green Rogue Dagger
 	i(21516),	-- Dagger of Spell Penetration - Fire 150 Resist (TEST)
 	i(21518),	-- Dagger of Spell Penetration - Frost 150 Resist (TEST)
-	
+
 	-- One Handed Mace
 	i(21127),	-- Ahn'Qiraj Mace PH
 	i(18800),	-- TEST 1H Amberseal Keeper
-	
+
 	-- Two Handed Mace
 	i(18881),	-- TEST Ragnaros Hammer
 	i(19158),	-- TEST Sulfuras, Hand of Ragnaros
@@ -310,7 +310,7 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	i(20363),	-- 63 Green Frost Wand
 	i(20335),	-- 90 Epic Frost Wand
 	i(20350),	-- 90 Green Frost Wand
-	
+
 	-- Staff
 	i(21125),	-- Ahn'Qiraj Staff PH
 	i(19879),	-- Alex's Test Beatdown Staff
@@ -325,14 +325,14 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 
 	-- Polearm
 	i(22817),	-- Naxxramas Polearm PH
-	
+
 
 	-- Crossbows
 	i(19489),	-- 3300 Test Crossbow 63 blue
-	
+
 	-- Gun
 	i(6255),	-- Fishing Pole (JEFFTEST)
-	i(18763),	-- TEST GUN Alliance20 
+	i(18763),	-- TEST GUN Alliance20
 	i(18765),	-- TEST GUN Horde50
 	i(18764),	-- TEST GUN Raid
 
@@ -349,7 +349,7 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	i(20345),	-- 90 Green Frost Neck
 	i(20305),	-- 90 Green Rogue Neck
 	i(20248),	-- 90 Green Warrior Neck
-	
+
 	filter(52, {	-- Finger
 		i(20359),	-- 63 Green Frost Ring
 		i(20321),	-- 63 Green Rogue Ring
@@ -410,22 +410,22 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	i(18156),	-- Green Moro'gai Gem
 	i(18153),	-- Red Moro'gai Gem
 	i(18159),	-- White Moro'gai Gem
-	
-	
+
+
 	-- Recipe
 	i(5688),	-- Test Language Item
-	
+
 	-- Bind Type 1
 	-- Invalid
 	i(18595),	-- Blood Opal
 	i(23794),	-- Permanent Sheen of Zanza
 	i(23795),	-- Permanent Spirit of Zanza
 	i(23796),	-- Permanent Swiftness of Zanza
-	
+
 	-- Recipe
 	i(1164),	-- Sam's Tome
-	
-	
+
+
 	-- Bind Type 2
 	-- Invalid
 	i(20583),	-- Sturdy Female Dwarf Mask
@@ -444,13 +444,13 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	i(20596),	-- Sturdy Male Tauren Mask
 	i(20597),	-- Sturdy Male Troll Mask
 	i(20598),	-- Sturdy Male Undead Mask
-	
+
 	-- Staff
 	i(20362),	-- 63 Green Frost Staff
 	i(20334),	-- 90 Epic Frost Staff
 	i(20349),	-- 90 Green Frost Staff
-	
-	
+
+
 	-- TBC
 	-- #if AFTER TBC
 	q(8489),	-- BETA An Intact Converter [Eversong Woods]
@@ -459,11 +459,11 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
 	q(9695),	-- The Sun King's Command [Bloodmyst Isle]
 	q(10454),	-- FLAG - OFF THE RAILS (not sure what this is)
-	
+
 	-- This might be from the Spirit of Competition?
 	q(12186),	-- FLAG: Winner
 	q(12187),	-- FLAG: Participant
-	
+
 	filter(20, {	-- Daggers
 		i(23650),	-- Deprecated: Keanna's Will
 		i(23905),	-- Deprecated: Keanna's Will
@@ -550,7 +550,7 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 		i(25801),	-- 130 Test Caster Trinket
 	}),
 	-- #endif
-	
+
 	-- Classic List
 	filter(4, {	-- Cloth
 		i(20351),	-- 63 Green Frost Belt
@@ -652,9 +652,6 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	}),
 	filter(32, {	-- Bow
 		i(4763),	-- Blackwood Recurve Bow
-	}),
-	filter(37, {	-- Ammo
-		i(10579),	-- Explosive Arrow
 	}),
 	filter(52, {	-- Ring
 		i(12947),	-- Alex's Ring of Audacity

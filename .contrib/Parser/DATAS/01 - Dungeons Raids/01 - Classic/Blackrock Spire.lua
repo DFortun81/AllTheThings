@@ -1739,8 +1739,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
-						i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector
-							["timeline"] = { "removed 6.0.2" },
+						i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector (RECIPE!)
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(16695, {	-- Devout Mantle
 							["timeline"] = { "removed 4.0.3" },

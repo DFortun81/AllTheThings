@@ -2118,7 +2118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
 					["coord"] = { 34.2, 37.8, THE_HINTERLANDS },
 					["groups"] = {
-						i(10609, {	-- Schematic: Mithril Mechanical Dragonling
+						i(10609, {	-- Schematic: Mithril Mechanical Dragonling (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -197,9 +197,9 @@ profession(ENGINEERING, {
 					["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
 					["timeline"] = { "removed 4.0.3.2000" },
 					["groups"] = {
-						i(4417),	-- Schematic: Large Seaforium Charge
-						i(11828),	-- Schematic: Pet Bombling
-						i(4416),	-- Schematic: Goblin Land Mine
+						i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
+						i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
+						i(11828),	-- Schematic: Pet Bombling (RECIPE!)
 					},
 				}),
 			}),

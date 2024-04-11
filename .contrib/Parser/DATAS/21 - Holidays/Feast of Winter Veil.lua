@@ -1198,7 +1198,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(17724),	-- Pattern: Green Holiday Shirt
 				i(17706),	-- Plans: Edge of Winter (RECIPE!)
 				i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
-				i(17720),	-- Schematic: Snowmaster 9000
+				i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)
 				i(21325),	-- Mechanical Greench
 				i(21213),	-- Preserved Holly
 			},
@@ -1242,7 +1242,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					i(17724),	-- Pattern: Green Holiday Shirt
 					i(17706),	-- Plans: Edge of Winter (RECIPE!)
 					i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
-					i(17720),	-- Schematic: Snowmaster 9000
+					i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)
 				}),
 			},
 		},

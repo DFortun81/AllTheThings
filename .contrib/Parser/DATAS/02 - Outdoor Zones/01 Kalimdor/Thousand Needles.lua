@@ -2565,11 +2565,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
-						i(7560, {	-- Schematic: Gnomish Universal Remote
+						i(7560, {	-- Schematic: Gnomish Universal Remote (RECIPE!)
+							["timeline"] = { "removed 4.0.3" },
 							["isLimited"] = true,
 						}),
 						-- #endif
-						i(13309, {	-- Schematic: Lovingly Crafted Boomstick
+						i(13309, {	-- Schematic: Lovingly Crafted Boomstick (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 							["isLimited"] = true,
 						}),

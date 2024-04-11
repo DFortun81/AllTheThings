@@ -154,6 +154,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 				}),
+				prof(ENGINEERING, {
+					n(5518, {	-- Lilliam Sparkspindle <Engineering Trainer>
+						["coord"] = { 62.8, 32.0, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_ENGINEERING,
+					}),
+				}),
 				prof(FIRST_AID, {
 					n(56796, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 } }, {	-- Angela Leifeld <Bandage Trainer>
 						["coord"] = { 52.2, 45.4, STORMWIND_CITY },
@@ -4655,7 +4662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(18649, {	-- Schematic: Blue Firework
+						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

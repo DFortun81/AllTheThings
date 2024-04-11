@@ -2866,7 +2866,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(13311, {	-- Schematic: Mechanical Dragonling
+						i(13311, {	-- Schematic: Mechanical Dragonling (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2893,7 +2893,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(10602, {	-- Schematic: Deadly Scope
+						i(10602, {	-- Schematic: Deadly Scope (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -2326,7 +2326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.0, 22.0, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(10602, {	-- Schematic: Deadly Scope
+						i(10602, {	-- Schematic: Deadly Scope (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -2368,7 +2368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7561, {	-- Schematic: Goblin Jumper Cables
+						i(7561, {	-- Schematic: Goblin Jumper Cables (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

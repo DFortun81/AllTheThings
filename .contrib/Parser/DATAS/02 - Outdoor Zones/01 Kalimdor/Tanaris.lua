@@ -2956,6 +2956,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			prof(ENGINEERING, {
+				n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>
+					["coord"] = { 51.6, 30.2, TANARIS },
+					-- #if BEFORE 2.1.0
+					["g"] = EXPERT_ARTISAN_ENGINEERING,
+					-- #endif
+				}),
+				n(8126, {	-- Nixx Sprocketspring <Goblin Engineering Trainer>
+					["coord"] = { 52.2, 28.2, TANARIS },
+					["g"] = GOBLIN_ENGINEERING,
+				}),
+			}),
 			n(QUESTS, {
 				q(2750, {	-- A Bad Egg
 					["qg"] = 7763,	-- Curgle Cranklehop
@@ -5193,7 +5205,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 27.6, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(18650, {	-- Schematic: EZ-Thro Dynamite II
+						i(18650, {	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

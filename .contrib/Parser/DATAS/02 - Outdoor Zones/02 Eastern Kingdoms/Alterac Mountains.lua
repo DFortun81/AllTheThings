@@ -794,7 +794,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 47.3, 35.2, ALTERAC_MOUNTAINS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(13308, {	-- Schematic: Ice Deflector
+						i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 							["isLimited"] = true,
 						}),
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer>
 					["coord"] = { 86.0, 80.0, ALTERAC_MOUNTAINS },
 					["groups"] = {
-						i(7742, {	-- Schematic: Gnomish Cloaking Device
+						i(7742, {	-- Schematic: Gnomish Cloaking Device (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

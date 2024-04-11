@@ -168,7 +168,7 @@ local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
 	["cost"] = { { "i", 9280, 1 } },	-- Yellow Punch Card
 	["groups"] = {
 		i(9282),	-- Blue Punch Card
-		i(14639, {	-- Schematic: Minor Recombobulator
+		i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
 			["description"] = "If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",
 		}),
 	},
@@ -185,7 +185,7 @@ local MATRIX_PUNCHOGRAPH_D = o(142696, {	-- Matrix Punchograph 3005-D
 	["cost"] = { { "i", 9281, 1 } },	-- Red Punch Card
 	["groups"] = {
 		i(9316),	-- Prismatic Punch Card
-		i(4413, {	-- Schematic: Discombobulator Ray
+		i(4413, {	-- Schematic: Discombobulator Ray (RECIPE!)
 			["description"] = "If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",
 			["cost"] = { { "i", 9327, 1 } },	-- Security DELTA Data Access Card
 		}),
@@ -367,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if AFTER 3.1.0
-				i(11827, {	-- Schematic: Lil' Smoky
+				i(11827, {	-- Schematic: Lil' Smoky (RECIPE!)
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
 						6229,	-- Crowd Pummeler 9-60
@@ -1053,27 +1053,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9458),	-- Thermaplugg's Central Core
 					i(9492),	-- Electromagnetic Gigaflux Reactivator
 					i(9461),	-- Charged Gear
-					i(4415),	-- Schematic: Craftsman's Monocle
-					i(4413),	-- Schematic: Discombobulator Ray
-					i(6716),	-- Schematic: EZ-Thro Dynamite
-					i(4411),	-- Schematic: Flame Deflector
-					i(6672),	-- Schematic: Flash Bomb
-					i(7742),	-- Schematic: Gnomish Cloaking Device
-					i(7560),	-- Schematic: Gnomish Universal Remote
-					i(7561),	-- Schematic: Goblin Jumper Cables
-					i(4416),	-- Schematic: Goblin Land Mine
+					i(4415),	-- Schematic: Craftsman's Monocle (RECIPE!)
+					i(4413),	-- Schematic: Discombobulator Ray (RECIPE!)
+					i(6716),	-- Schematic: EZ-Thro Dynamite (RECIPE!)
+					i(4411),	-- Schematic: Flame Deflector (RECIPE!)
+					i(6672),	-- Schematic: Flash Bomb (RECIPE!)
+					i(7742),	-- Schematic: Gnomish Cloaking Device (RECIPE!)
+					i(7560),	-- Schematic: Gnomish Universal Remote (RECIPE!)
+					i(7561),	-- Schematic: Goblin Jumper Cables (RECIPE!)
+					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 					i(7192, {	-- Schematic: Goblin Rocket Boots
 						["timeline"] = { "deleted 3.0.2" },
 					}),
-					i(4417),	-- Schematic: Large Seaforium Charge
-					i(4408),	-- Schematic: Mechanical Squirrel Box
-					i(4412),	-- Schematic: Moonsight Rifle
+					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
+					i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
+					i(4412),	-- Schematic: Moonsight Rifle (RECIPE!)
 					-- #if AFTER 3.1.0
-					i(11828),	-- Schematic: Pet Bombling
+					i(11828),	-- Schematic: Pet Bombling (RECIPE!)
 					-- #endif
-					i(4414),	-- Schematic: Portable Bronze Mortar
-					i(4410),	-- Schematic: Shadow Goggles
-					i(4409),	-- Schematic: Small Seaforium Charge
+					i(4414),	-- Schematic: Portable Bronze Mortar (RECIPE!)
+					i(4410),	-- Schematic: Shadow Goggles (RECIPE!)
+					i(4409),	-- Schematic: Small Seaforium Charge (RECIPE!)
 				},
 			}),
 			n(113621, {	-- Endgineer Omegaplugg
@@ -1561,19 +1561,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(215163, {	-- Recipe: Mildly-Irradiated Rejuvenation Potion
 									["cost"] = 250000,	-- 25g
 								}),
-								i(215432, {	-- Schematic: Ez-Thro Radiation Bomb
+								i(215432, {	-- Schematic: Ez-Thro Radiation Bomb (RECIPE!)
 									["cost"] = 250000,	-- 25g
 								}),
-								i(215431, {	-- Schematic: High-Yield Radiation Bomb
+								i(215431, {	-- Schematic: High-Yield Radiation Bomb (RECIPE!)
 									["cost"] = 250000,	-- 25g
 								}),
-								i(215156, {	-- Schematic: Hyperconductive Goldwrap
+								i(215156, {	-- Schematic: Hyperconductive Goldwrap (RECIPE!)
 									["cost"] = 250000,	-- 25g
 								}),
-								i(215429, {	-- Schematic: Polished Truesilver Gears
+								i(215429, {	-- Schematic: Polished Truesilver Gears (RECIPE!)
 									["cost"] = 250000,	-- 15g
 								}),
-								i(215153, {	-- Schematic: Whirling Truesilver Gearwall
+								i(215153, {	-- Schematic: Whirling Truesilver Gearwall (RECIPE!)
 									["cost"] = 250000,	-- 25g
 								}),
 								-- Plate
@@ -1777,22 +1777,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(215380),	-- Power-Assisted Lifting Belt
 							i(213318),	-- Ornate Dark Iron Bangles
 							i(213417),	-- Truesilver Filament Coif
-							i(4415),	-- Schematic: Craftsman's Monocle
-							i(4413),	-- Schematic: Discombobulator Ray
-							i(6716),	-- Schematic: EZ-Thro Dynamite
-							i(4411),	-- Schematic: Flame Deflector
-							i(6672),	-- Schematic: Flash Bomb
-							i(7742),	-- Schematic: Gnomish Cloaking Device
-							i(7560),	-- Schematic: Gnomish Universal Remote
-							i(4416),	-- Schematic: Goblin Land Mine
+							i(4415),	-- Schematic: Craftsman's Monocle (RECIPE!)
+							i(4413),	-- Schematic: Discombobulator Ray (RECIPE!)
+							i(6716),	-- Schematic: EZ-Thro Dynamite (RECIPE!)
+							i(4411),	-- Schematic: Flame Deflector (RECIPE!)
+							i(6672),	-- Schematic: Flash Bomb (RECIPE!)
+							i(7742),	-- Schematic: Gnomish Cloaking Device (RECIPE!)
+							i(7560),	-- Schematic: Gnomish Universal Remote (RECIPE!)
+							i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 							i(7192, {	-- Schematic: Goblin Rocket Boots
 								["timeline"] = { "deleted 3.0.2" },
 							}),
-							i(4417),	-- Schematic: Large Seaforium Charge
-							i(4408),	-- Schematic: Mechanical Squirrel Box
-							i(4412),	-- Schematic: Moonsight Rifle
-							i(4414),	-- Schematic: Portable Bronze Mortar
-							i(4409),	-- Schematic: Small Seaforium Charge
+							i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
+							i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
+							i(4412),	-- Schematic: Moonsight Rifle (RECIPE!)
+							i(4414),	-- Schematic: Portable Bronze Mortar (RECIPE!)
+							i(4409),	-- Schematic: Small Seaforium Charge (RECIPE!)
 						},
 					}),
 					n(218537, {	-- Mekgineer Thermaplugg
@@ -1821,27 +1821,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(213347),	-- Miniaturized Combustion Chamber
 							i(213350),	-- Wirdal's Hardened Core
 							-- Original recipe drops.
-							i(4415),	-- Schematic: Craftsman's Monocle
-							i(4413),	-- Schematic: Discombobulator Ray
-							i(6716),	-- Schematic: EZ-Thro Dynamite
-							i(4411),	-- Schematic: Flame Deflector
-							i(6672),	-- Schematic: Flash Bomb
-							i(7742),	-- Schematic: Gnomish Cloaking Device
-							i(7560),	-- Schematic: Gnomish Universal Remote
-							i(7561),	-- Schematic: Goblin Jumper Cables
-							i(4416),	-- Schematic: Goblin Land Mine
+							i(4415),	-- Schematic: Craftsman's Monocle (RECIPE!)
+							i(4413),	-- Schematic: Discombobulator Ray (RECIPE!)
+							i(6716),	-- Schematic: EZ-Thro Dynamite (RECIPE!)
+							i(4411),	-- Schematic: Flame Deflector (RECIPE!)
+							i(6672),	-- Schematic: Flash Bomb (RECIPE!)
+							i(7742),	-- Schematic: Gnomish Cloaking Device (RECIPE!)
+							i(7560),	-- Schematic: Gnomish Universal Remote (RECIPE!)
+							i(7561),	-- Schematic: Goblin Jumper Cables (RECIPE!)
+							i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 							i(7192, {	-- Schematic: Goblin Rocket Boots
 								["timeline"] = { "deleted 3.0.2" },
 							}),
-							i(4417),	-- Schematic: Large Seaforium Charge
-							i(4408),	-- Schematic: Mechanical Squirrel Box
-							i(4412),	-- Schematic: Moonsight Rifle
-							-- #if AFTER 3.1.0
-							i(11828),	-- Schematic: Pet Bombling
-							-- #endif
-							i(4414),	-- Schematic: Portable Bronze Mortar
-							i(4410),	-- Schematic: Shadow Goggles
-							i(4409),	-- Schematic: Small Seaforium Charge
+							i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
+							i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
+							i(4412),	-- Schematic: Moonsight Rifle (RECIPE!)
+							i(4414),	-- Schematic: Portable Bronze Mortar (RECIPE!)
+							i(4410),	-- Schematic: Shadow Goggles (RECIPE!)
+							i(4409),	-- Schematic: Small Seaforium Charge (RECIPE!)
 						},
 					}),
 				},

@@ -360,11 +360,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = ENGINEERING,
 					["lvl"] = 55,
 					["groups"] = {
-						{
-							["recipeID"] = 26011,	-- Tranquil Mechanical Yeti
-							["timeline"] = { "removed 4.0.3" },
+						r(26011, {	-- Tranquil Mechanical Yeti
+							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = ENGINEERING,
-						},
+						}),
 					},
 				}),
 				q(28837, {	-- Altered Beasts
@@ -2220,7 +2219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.8, 38.6, WINTERSPRING },
 					-- #endif
 					["groups"] = {
-						i(16050, {	-- Schematic: Delicate Arcanite Converter
+						i(16050, {	-- Schematic: Delicate Arcanite Converter (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
@@ -2229,17 +2228,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 							-- #endif
 						}),
-						i(18652, {	-- Schematic: Gyrofreeze Ice Reflector
+						i(18652, {	-- Schematic: Gyrofreeze Ice Reflector (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(16046, {	-- Schematic: Masterwork Target Dummy
+						i(16046, {	-- Schematic: Masterwork Target Dummy (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(18656, {	-- Schematic: Powerful Seaforium Charge
+						i(18656, {	-- Schematic: Powerful Seaforium Charge (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(16047, {	-- Schematic: Thorium Tube
-							["timeline"] = { "removed 2.1.0" },
+						i(16047, {	-- Schematic: Thorium Tube (RECIPE!)
+							["timeline"] = { REMOVED_2_1_0 },	-- Taught by Trainer
 							-- #if BEFORE 2.1.0
 							["isLimited"] = true,
 							-- #endif
@@ -2422,7 +2421,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(16054, {	-- Schematic: Arcanite Dragonling
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3

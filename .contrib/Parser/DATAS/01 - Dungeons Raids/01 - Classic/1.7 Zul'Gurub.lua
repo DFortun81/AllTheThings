@@ -960,8 +960,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
 						i(20011),	-- Recipe: Mageblood Elixir[2.1.0+] / Mageblood Potion (RECIPE!)
 						i(20014),	-- Recipe: Mighty Troll's Blood Elixir[Wrath+] / Major Troll's Blood Potion (RECIPE!)
-						i(20000),	-- Schematic: Bloodvine Goggles
-						i(20001),	-- Schematic: Bloodvine Lens
+						i(20000),	-- Schematic: Bloodvine Goggles (RECIPE!)
+						i(20001),	-- Schematic: Bloodvine Lens (RECIPE!)
 					},
 				}),
 			}),

@@ -200,6 +200,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 				}),
+				prof(ENGINEERING, {
+					n(11017, {	-- Roxxik <Engineering Trainer>
+						["coord"] = { 56.8, 56.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_ENGINEERING,
+					}),
+				}),
 				prof(FIRST_AID, {
 					n(3373, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Arnok <First Aid Trainer>
 						["coord"] = { 34.0, 84.4, ORGRIMMAR },
@@ -4624,22 +4631,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(18647, {	-- Schematic: Red Firework
+						i(18647, {	-- Schematic: Red Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(16041, {	-- Schematic: Thorium Grenade
-							["timeline"] = { "removed 3.0.1" },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE 3.0.1
-							["isLimited"] = true,
-							-- #endif
-						}),
-						i(16042, {	-- Schematic: Thorium Widget
-							["timeline"] = { "removed 3.0.1" },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE 3.0.1
+						i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)
+							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
+							-- #if BEFORE 3.0.2
 							["isLimited"] = true,
 							-- #endif
 						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller
+						i(16042, {	-- Schematic: Thorium Widget (RECIPE!)
+							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
+							-- #if BEFORE 3.0.2
+							["isLimited"] = true,
+							-- #endif
+						}),
+						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
 							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
@@ -4999,10 +5006,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.3.5.25692" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(18647, {	-- Schematic: Red Firework
+						i(18647, {	-- Schematic: Red Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller
+						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
 							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
@@ -5246,10 +5253,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(18647, {	-- Schematic: Red Firework
+						i(18647, {	-- Schematic: Red Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller
+						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
 							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),

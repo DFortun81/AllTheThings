@@ -1,3 +1,18 @@
+424641@@@Shredder Autosalvage Unit
+431362@@@Soul Vessel
+435956@@@Polished Truesilver Gears
+435958@@@Whirling Truesilver Gearwall
+435960@@@Hyperconductive Goldwap
+435964@@@High-Yield Radiation Bomb
+435966@@@Ez-Thro Radiation Bomb
+446236@@@Void-Powered Invoker's Vambraces
+446237@@@Void-Powered Slayer's Vambraces
+446238@@@Void-Powered Protector's Vambraces
+19804@@@Arcanite Dragonling
+4073@@@s \\ Mechanical Dragonling
+12749@@@Mithril Mechanical Dragonling
+13166@@@Battle Chicken
+13258@@@Summon Goblin Bomb
 110955@@@Release Spirit
 256133@@@Potion of Specter Swiftness
 256134@@@Potion of Soul Purity

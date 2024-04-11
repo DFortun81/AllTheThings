@@ -1510,24 +1510,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.8, 43.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(18649, {	-- Schematic: Blue Firework
+						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7560, {	-- Schematic: Gnomish Universal Remote
+						i(7560, {	-- Schematic: Gnomish Universal Remote (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller
+						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
 							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
-						i(16041, {	-- Schematic: Thorium Grenade
-							["timeline"] = { "removed 3.0.1" },	-- Now taught by trainer, schematic removed from the game.
+						i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)
+							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
 							-- #if BEFORE WRATH
 							["isLimited"] = true,
 							-- #endif
 						}),
-						i(16042, {	-- Schematic: Thorium Widget
-							["timeline"] = { "removed 3.0.1" },	-- Now taught by trainer, schematic removed from the game.
+						i(16042, {	-- Schematic: Thorium Widget (RECIPE!)
+							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
 							-- #if BEFORE WRATH
 							["isLimited"] = true,
 							-- #endif

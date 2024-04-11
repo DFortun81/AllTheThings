@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1517),	-- Uldaman
 				--[[
 				exploration(343),	-- Camp Wurg
-				
+
 				]]--
 			}),
 			n(FLIGHT_PATHS, {
@@ -624,7 +624,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = ENGINEERING,
 					["lvl"] = 30,
 					["groups"] = {
-						i(6672),	-- Schematic: Flash Bomb
+						i(6672),	-- Schematic: Flash Bomb (RECIPE!)
 					},
 				}),
 				q(737, {	-- Forbidden Knowledge
@@ -2143,16 +2143,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 91.0, 38.4, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(18649, {	-- Schematic: Blue Firework
+						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(18650, {	-- Schematic: EZ-Thro Dynamite II
+						i(18650, {	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(18648, {	-- Schematic: Green Firework
+						i(18648, {	-- Schematic: Green Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(18647, {	-- Schematic: Red Firework
+						i(18647, {	-- Schematic: Red Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

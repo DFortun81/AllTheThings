@@ -142,6 +142,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(ENGINEERING, {
+					n(7406, {	-- Oglethorpe Obnoticus <Gnomish Engineering Trainer>
+						["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
+						["g"] = GNOMISH_ENGINEERING,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(610, {	-- "Pretty Boy" Duncan
 					["qg"] = 2542,	-- Catelyn the Blade
@@ -2622,7 +2630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2838, {	-- Crazk Sparks <Fireworks Merchant>
 					["coord"] = { 43.0, 72.7, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(18648, {	-- Schematic: Green Firework
+						i(18648, {	-- Schematic: Green Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2702,11 +2710,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
 					["coord"] = { 43.2, 70.2, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(13310, {	-- Schematic: Accurate Scope
-							["timeline"] = { "removed 5.0.4" },	-- Moved to Trainer
+						i(13310, {	-- Schematic: Accurate Scope (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },	-- Moved to Trainer
 						}),
-						i(18651, {	-- Schematic: Truesilver Transformer
-							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainer
+						i(18651, {	-- Schematic: Truesilver Transformer (RECIPE!)
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainer
 						}),
 					},
 				}),

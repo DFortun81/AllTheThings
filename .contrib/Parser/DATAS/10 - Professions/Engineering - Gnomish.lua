@@ -187,9 +187,9 @@ profession(ENGINEERING, {
 					["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
 					["timeline"] = { "removed 4.0.3.2000" },
 					["groups"] = {
-						i(10603),	-- Schematic: Catseye Ultra Goggles
-						i(11827),	-- Schematic: Lil' Smoky
-						i(10606),	-- Schematic: Parachute Cloak
+						i(10603),	-- Schematic: Catseye Ultra Goggles (RECIPE!)
+						i(11827),	-- Schematic: Lil' Smoky (RECIPE!)
+						i(10606),	-- Schematic: Parachute Cloak (RECIPE!)
 					},
 				}),
 			}),

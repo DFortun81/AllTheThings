@@ -436,17 +436,17 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			i(11423, {	-- Gnome Engineer's Renewal Gift
 				["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
 				["groups"] = {
-					i(10603),	-- Schematic: Catseye Ultra Goggles
-					i(11827),	-- Schematic: Lil' Smoky
-					i(10606),	-- Schematic: Parachute Cloak
+					i(10603),	-- Schematic: Catseye Ultra Goggles (RECIPE!)
+					i(11827),	-- Schematic: Lil' Smoky (RECIPE!)
+					i(10606),	-- Schematic: Parachute Cloak(RECIPE!)
 				},
 			}),
 			i(11422, {	-- Goblin Engineer's Renewal Gift
 				["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
 				["groups"] = {
-					i(4417),	-- Schematic: Large Seaforium Charge
-					i(11828),	-- Schematic: Pet Bombling
-					i(4416),	-- Schematic: Goblin Land Mine
+					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
+					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
+					i(11828),	-- Schematic: Pet Bombling (RECIPE!)
 				},
 			}),
 		})),

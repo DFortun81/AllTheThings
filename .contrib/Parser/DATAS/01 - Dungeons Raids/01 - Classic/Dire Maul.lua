@@ -79,7 +79,7 @@ local OnTooltipForSteamweedle = [[function(t, tooltipInfo)
 		150,
 -- #endif
 		42000);
-		
+
 		addRepInfo(tooltipInfo, reputation, "Complete The Gordok Ogre Suit (Dire Maul)",
 -- #if AFTER TBC
 		75,
@@ -1525,7 +1525,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["description"] = "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
 								["modelScale"] = 3,
 								["groups"] = {
-									i(18655),	-- Schematic: Major Recombobulator
+									i(18655),	-- Schematic: Major Recombobulator (RECIPE!)
 									i(18499),	-- Barrier Shield
 									i(18479),	-- Carrion Scorpid Helm
 									i(18537),	-- Counterattack Lodestone

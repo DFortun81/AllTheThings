@@ -401,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18290, {	-- Schematic: Biznicks 247x128 Accurascope
+				i(18290, {	-- Schematic: Biznicks 247x128 Accurascope (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -412,7 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18292, {	-- Schematic: Core Marksman Rifle
+				i(18292, {	-- Schematic: Core Marksman Rifle (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -423,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18291, {	-- Schematic: Force Reactive Disk
+				i(18291, {	-- Schematic: Force Reactive Disk (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar

@@ -650,10 +650,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainer
 							["cr"] = 10425,	-- Crimson Battle Mage
 						}),
-						i(18658, {	-- Schematic: Ultra-Flash Shadow Reflector
+						i(18658, {	-- Schematic: Ultra-Flash Shadow Reflector (RECIPE!)
 							["cr"] = 10426,	-- Crimson Inquisitor / Risen Inquisitor [CATA+]
 						}),
-						i(16052, {	-- Schematic: Voice Amplification Modulator
+						i(16052, {	-- Schematic: Voice Amplification Modulator (RECIPE!)
 							["cr"] = 10426,	-- Crimson Inquisitor / Risen Inquisitor [CATA+]
 						}),
 					}),

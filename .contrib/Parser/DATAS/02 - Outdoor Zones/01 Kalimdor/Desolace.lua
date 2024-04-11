@@ -2391,11 +2391,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(12233, {	-- Recipe: Mystery Stew (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(13310, {	-- Schematic: Accurate Scope
-							["timeline"] = { "removed 5.0.4" },	-- Moved to Trainer
+						i(13310, {	-- Schematic: Accurate Scope (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
-						i(7561, {	-- Schematic: Goblin Jumper Cables
+						i(7561, {	-- Schematic: Goblin Jumper Cables (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

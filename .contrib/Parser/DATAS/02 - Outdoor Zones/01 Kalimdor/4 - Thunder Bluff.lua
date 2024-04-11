@@ -1329,10 +1329,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(18647, {	-- Schematic: Red Firework
+						i(18647, {	-- Schematic: Red Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller
+						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
