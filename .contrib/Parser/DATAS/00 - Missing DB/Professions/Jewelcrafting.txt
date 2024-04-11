@@ -1090,101 +1090,24 @@ r(248938),	-- Empyrial Hesselian Setting
 r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
 8.0.1.25902
-r(256255),	-- Laribole Staff of Alacrity
-r(256256),	-- Laribole Staff of Alacrity
-r(256257),	-- Laribole Staff of Alacrity
-r(256258),	-- Scarlet Diamond Staff of Intuition
-r(256259),	-- Scarlet Diamond Staff of Intuition
-r(256260),	-- Scarlet Diamond Staff of Intuition
-r(256510),	-- Amberblaze Loop
-r(256511),	-- Owlseye Loop
-r(256512),	-- Tidal Amethyst Loop
-r(256513),	-- Royal Quartz Loop
-r(256514),	-- Amberblaze Loop
-r(256515),	-- Amberblaze Loop
-r(256516),	-- Owlseye Loop
-r(256517),	-- Owlseye Loop
-r(256518),	-- Tidal Amethyst Loop
-r(256519),	-- Tidal Amethyst Loop
-r(256520),	-- Royal Quartz Loop
-r(256521),	-- Royal Quartz Loop
 r(256612),	-- Mass Prospect Monelite \\ Mass Prospect Monalite
 r(256614),	-- Mass Prospect Storm Silver
 r(256623),	-- Mass Prospect Platinum
-r(256689),	-- Deadly Solstone
-r(256690),	-- Versatile Kyanite
-r(256691),	-- Straddling Viridium
-r(256692),	-- Masterful Kubiline
-r(256693),	-- Natant Rubellite \\ Insightful Rubellite
-r(256694),	-- Quick Golden Beryl
-r(256695),	-- Versatile Royal Quartz
-r(256696),	-- Deadly Amberblaze
-r(256698),	-- Masterful Tidal Amethyst
-r(256699),	-- Quick Owlseye
-r(256700),	-- Kraken's Eye of Strength
-r(256701),	-- Kraken's Eye of Agility
-r(256702),	-- Kraken's Eye of Intellect
 r(264532),	-- Jewelcrafting
 r(264534),	-- Outland Jewelcrafting
 r(264537),	-- Northrend Jewelcrafting
 r(264539),	-- Cataclysm Jewelcrafting
 r(264542),	-- Pandaria Jewelcrafting
 r(264544),	-- Draenor Jewelcrafting
-r(264548),	-- Kul Tiran Jewelcrafting
-8.0.1.25976
-r(265811),	-- Zandalari Jewelcrafting
 8.0.1.26231
 r(269731),	-- Honorable Combatant's Staff of Alacrity
 r(269732),	-- Honorable Combatant's Staff of Alacrity
 r(269733),	-- Honorable Combatant's Staff of Alacrity
-r(269734),	-- Honorable Combatant's Intuitive Staff \\ Honorable Combatant's Staff of Intuition
-r(269735),	-- Honorable Combatant's Intuitive Staff \\ Honorable Combatant's Staff of Intuition
-r(269736),	-- Honorable Combatant's Intuitive Staff \\ Honorable Combatant's Staff of Intuition
-8.0.1.26287
-r(256253),	-- Viridium Staff of Alacrity
-r(256254),	-- Rubellite Staff of Intuition
-8.0.1.26310
-r(272226),	-- Solstone Ring
-r(272227),	-- Golden Beryl Ring
-r(272228),	-- Kubiline Ring
-r(272230),	-- Kyanite Ring
-8.0.1.26624
-r(278419),	-- Kaleidoscopic Lens
-8.1.0.27826
-r(282343),	-- Sinister Combatant's Intuitive Staff \\ Sinister Combatant's Staff of Intuition
-r(282344),	-- Sinister Combatant's Intuitive Staff \\ Sinister Combatant's Staff of Intuition
-r(282345),	-- Sinister Combatant's Intuitive Staff \\ Sinister Combatant's Staff of Intuition
-8.1.0.27985
-r(286651),	-- Sanguinated Recalibration \\ Breath to Sanguicell
-8.1.0.28048
-r(287272),	-- Aqueous Recalibration \\ Tidalcore to Hydrocore
 8.1.0.28202
-r(289105),	-- Kraken's Eye Loop
 r(289174),	-- Imbued Kraken's Eye Loop
 r(289175),	-- Emblazoned Kraken's Eye Loop
-r(289179),	-- Tidal Kraken's Eye Loop
 r(289180),	-- Spirited Kraken's Eye Loop
 r(289181),	-- Eternal Kraken's Eye Loop
-8.1.5.28938
-r(256611),	-- Mass Prospect Monelite \\ Mass Prospect Monalite
-r(256613),	-- Mass Prospect Storm Silver
-r(256622),	-- Mass Prospect Platinum
-8.2.0.30080
-r(294793),	-- Notorious Combatant's Intuitive Staff
-r(294794),	-- Notorious Combatant's Intuitive Staff
-r(294795),	-- Notorious Combatant's Intuitive Staff
-r(298794),	-- Versatile Dark Opal
-r(298796),	-- Quick Sand Spinel
-r(298797),	-- Masterful Sea Currant
-r(298798),	-- Deadly Lava Lazuli
-r(298799),	-- Leviathan's Eye of Strength
-r(298800),	-- Leviathan's Eye of Agility
-r(298801),	-- Leviathan's Eye of Intellect
-r(299016),	-- Leviathan's Eye Loop
-r(299017),	-- Crushing Leviathan's Eye Loop
-r(299018),	-- Ascended Leviathan's Eye Loop
-r(300619),	-- Mass Prospect Osmenite
-r(300756),	-- Straddling Sage Agate
 8.2.0.30168
 r(301993),	-- Prospecting
 r(301994),	-- Prospecting
@@ -1196,12 +1119,6 @@ r(302710),	-- Prospecting
 r(302711),	-- Prospecting
 r(302712),	-- Prospecting
 8.3.0.32044
-r(305168),	-- Uncanny Combatant's Intuitive Staff
-r(305170),	-- Uncanny Combatant's Intuitive Staff
-r(305171),	-- Uncanny Combatant's Intuitive Staff
-r(305980),	-- Peerless Leviathan's Eye Loop
-r(305981),	-- Awakened Leviathan's Eye Loop
-r(305982),	-- Unbound Leviathan's Eye Loop
 r(307219),	-- Void Focus
 10.0.0.44649
 r(382973),	-- Kul Tiras and Zandalar Prospecting
@@ -2328,120 +2245,12 @@ r(248938),	-- Empyrial Hesselian Setting
 r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
 8.0.1.25902
-r(256255),	-- Laribole Staff of Alacrity
-r(256256),	-- Laribole Staff of Alacrity
-r(256257),	-- Laribole Staff of Alacrity
-r(256258),	-- Scarlet Diamond Staff of Intuition
-r(256259),	-- Scarlet Diamond Staff of Intuition
-r(256260),	-- Scarlet Diamond Staff of Intuition
-r(256510),	-- Amberblaze Loop
-r(256511),	-- Owlseye Loop
-r(256512),	-- Tidal Amethyst Loop
-r(256513),	-- Royal Quartz Loop
-r(256514),	-- Amberblaze Loop
-r(256515),	-- Amberblaze Loop
-r(256516),	-- Owlseye Loop
-r(256517),	-- Owlseye Loop
-r(256518),	-- Tidal Amethyst Loop
-r(256519),	-- Tidal Amethyst Loop
-r(256520),	-- Royal Quartz Loop
-r(256521),	-- Royal Quartz Loop
 r(256612),	-- Mass Prospect Monelite \\ Mass Prospect Monalite
 r(256614),	-- Mass Prospect Storm Silver
 r(256623),	-- Mass Prospect Platinum
-r(256689),	-- Deadly Solstone
-r(256690),	-- Versatile Kyanite
-r(256691),	-- Straddling Viridium
-r(256692),	-- Masterful Kubiline
-r(256693),	-- Natant Rubellite \\ Insightful Rubellite
-r(256694),	-- Quick Golden Beryl
-r(256695),	-- Versatile Royal Quartz
-r(256696),	-- Deadly Amberblaze
-r(256698),	-- Masterful Tidal Amethyst
-r(256699),	-- Quick Owlseye
-r(256700),	-- Kraken's Eye of Strength
-r(256701),	-- Kraken's Eye of Agility
-r(256702),	-- Kraken's Eye of Intellect
-r(264532),	-- Jewelcrafting
-r(264534),	-- Outland Jewelcrafting
-r(264537),	-- Northrend Jewelcrafting
-r(264539),	-- Cataclysm Jewelcrafting
-r(264542),	-- Pandaria Jewelcrafting
-r(264544),	-- Draenor Jewelcrafting
-r(264546),	-- Legion Jewelcrafting
-r(264548),	-- Kul Tiran Jewelcrafting
-8.0.1.25976
-r(265811),	-- Zandalari Jewelcrafting
 8.0.1.26231
 r(269731),	-- Honorable Combatant's Staff of Alacrity
 r(269732),	-- Honorable Combatant's Staff of Alacrity
 r(269733),	-- Honorable Combatant's Staff of Alacrity
-r(269734),	-- Honorable Combatant's Intuitive Staff \\ Honorable Combatant's Staff of Intuition
-r(269735),	-- Honorable Combatant's Intuitive Staff \\ Honorable Combatant's Staff of Intuition
-r(269736),	-- Honorable Combatant's Intuitive Staff \\ Honorable Combatant's Staff of Intuition
-8.0.1.26287
-r(256253),	-- Viridium Staff of Alacrity
-r(256254),	-- Rubellite Staff of Intuition
-8.0.1.26310
-r(272226),	-- Solstone Ring
-r(272227),	-- Golden Beryl Ring
-r(272228),	-- Kubiline Ring
-r(272230),	-- Kyanite Ring
-8.0.1.26624
-r(278419),	-- Kaleidoscopic Lens
-8.1.0.27826
-r(282343),	-- Sinister Combatant's Intuitive Staff \\ Sinister Combatant's Staff of Intuition
-r(282344),	-- Sinister Combatant's Intuitive Staff \\ Sinister Combatant's Staff of Intuition
-r(282345),	-- Sinister Combatant's Intuitive Staff \\ Sinister Combatant's Staff of Intuition
-8.1.0.27985
-r(286651),	-- Sanguinated Recalibration \\ Breath to Sanguicell
-8.1.0.28048
-r(287272),	-- Aqueous Recalibration \\ Tidalcore to Hydrocore
-8.1.0.28202
-r(289105),	-- Kraken's Eye Loop
-r(289174),	-- Imbued Kraken's Eye Loop
-r(289175),	-- Emblazoned Kraken's Eye Loop
-r(289179),	-- Tidal Kraken's Eye Loop
-r(289180),	-- Spirited Kraken's Eye Loop
-r(289181),	-- Eternal Kraken's Eye Loop
-8.1.5.28938
-r(256611),	-- Mass Prospect Monelite \\ Mass Prospect Monalite
-r(256613),	-- Mass Prospect Storm Silver
-r(256622),	-- Mass Prospect Platinum
-8.1.5.29352
-r(256703),	-- Jewelhammer's Focus
-8.2.0.30080
-r(294793),	-- Notorious Combatant's Intuitive Staff
-r(294794),	-- Notorious Combatant's Intuitive Staff
-r(294795),	-- Notorious Combatant's Intuitive Staff
-r(298794),	-- Versatile Dark Opal
-r(298796),	-- Quick Sand Spinel
-r(298797),	-- Masterful Sea Currant
-r(298798),	-- Deadly Lava Lazuli
-r(298799),	-- Leviathan's Eye of Strength
-r(298800),	-- Leviathan's Eye of Agility
-r(298801),	-- Leviathan's Eye of Intellect
-r(299016),	-- Leviathan's Eye Loop
-r(299017),	-- Crushing Leviathan's Eye Loop
-r(299018),	-- Ascended Leviathan's Eye Loop
-r(300619),	-- Mass Prospect Osmenite
-r(300756),	-- Straddling Sage Agate
-8.2.0.30168
-r(301993),	-- Prospecting
-r(301994),	-- Prospecting
 8.2.0.30329
 r(302698),	-- Milling
-r(302706),	-- Prospecting
-r(302707),	-- Prospecting
-r(302708),	-- Prospecting
-r(302710),	-- Prospecting
-r(302711),	-- Prospecting
-r(302712),	-- Prospecting
-8.3.0.32044
-r(305168),	-- Uncanny Combatant's Intuitive Staff
-r(305170),	-- Uncanny Combatant's Intuitive Staff
-r(305171),	-- Uncanny Combatant's Intuitive Staff
-r(305980),	-- Peerless Leviathan's Eye Loop
-r(305981),	-- Awakened Leviathan's Eye Loop
-r(305982),	-- Unbound Leviathan's Eye Loop
-r(307219),	-- Void Focus

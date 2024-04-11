@@ -255,6 +255,7 @@ HeaderAssignments = {
 	["Recruit A Friend"] = -1000283,
 	["Relentless Gladiator"] = -1000134,
 	["Relics"] = -1000069,
+	["Remix: Mists of Pandaria"] = -1000873,
 	["Rewards"] = -1000033,
 	["Riding Trainer"] = -1000034,
 	["Rune Engraving"] = -1000278,
@@ -401,4 +402,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000873;
+NextHeaderID = -1000874;
