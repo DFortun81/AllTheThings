@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(60658),	-- An Endless Appetite
-			q(61879),	-- Ashes Will Fall
+			petbattle(q(61879)),	-- Ashes Will Fall
 			q(58144),	-- Battered and Bruised
 			q(61620, {	-- Blacksmithing: Prideful Manacles
 				["requireSkill"] = BLACKSMITHING,
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182063),	-- Sinvyr Trigger Mechanism (QI!)
 				},
 			}),
-			q(61885),	-- Eyegor's Special Friends
+			petbattle(q(61885)),	-- Eyegor's Special Friends
 			q(61623, {	-- Fishing: Bloodthroated Grouper
 				["requireSkill"] = FISHING,
 				["g"] = {
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182695),	-- Weathered Purple Parasol (TOY!)
 				}),
 			}),
-			q(61883),	-- Resilient Survivors
+			petbattle(q(61883)),	-- Resilient Survivors
 			q(59599),	-- Retaining the Court
 			q(60602, {	-- Secret Service
 				ach(14772),	-- Caught in a Bat Romance
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59853),	-- Tea Tales: Lost Sybille
 			q(59848),	-- Tea Tales: Theotar
 			q(59850),	-- Tea Tales: Vulca
-			q(61886),	-- The Mind Games of Addius
+			petbattle(q(61886)),	-- The Mind Games of Addius
 			q(59581),	-- The Strength of Sinfall
 			q(59789, {	-- Tithe and Taxes
 				["g"] = {

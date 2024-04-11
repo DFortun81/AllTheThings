@@ -685,7 +685,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(175037),	-- Symbiotic Growth
 			i(180747),	-- Tailor's Journal
 			i(178597),	-- TBD Maldraxxus Supplies
-			i(181390),	-- Temel
 			i(176081),	-- Temel's Party Planning Book
 			i(176804),	-- Temp
 			i(178969),	-- Test Container
@@ -693,7 +692,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180422),	-- The Banewood Road
 			i(180950),	-- The Maw - Pet Cosmetic - NYI
 			i(180951),	-- The Maw - POI Unlock - NYI
-			i(181391),	-- Theotar
 			i(175143),	-- Thicker Bark
 			i(174496),	-- Third Bell of Markos
 			i(180600),	-- Thistle Tea

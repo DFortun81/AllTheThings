@@ -584,7 +584,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							i(181343);	-- Rendle and Cudgelface
 							i(181348);	-- Sika
 							i(181349);	-- Stonehead
+							i(181390);	-- Temel
 							i(181340);	-- The Countess
+							i(181391),	-- Theotar
 							i(181392),	-- Watchmaster Boromod
 						}),
 						n(QUESTS, {

@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(62058),	-- Centurions, Assemble!
-			q(61784),	-- Cliffs of Bastion
+			petbattle(q(61784)),	-- Cliffs of Bastion
 			q(61439, {	-- Cooking: Steward Stew
 				["requireSkill"] = COOKING,
 				["g"] = {
@@ -178,8 +178,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(59578),	-- Let's Get Ready to Humble
 			q(61337),	-- March of the Eternal Protector
-			q(61783),	-- Mega Bite
-			q(61787),	-- Micro Defense Force
+			petbattle(q(61783)),	-- Mega Bite
+			petbattle(q(61787)),	-- Micro Defense Force
 			q(61467, {	-- Mining: Luminous Solenium Cluster
 				["requireSkill"] = MINING,
 				["g"] = {
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(181971),	-- Woven Gossamer Tunic (QI!)
 				},
 			}),
-			q(61791),	-- Thenia's Loyal Companions
+			petbattle(q(61791)),	-- Thenia's Loyal Companions
 			q(59717, {	-- Things Remembered
 				ach(14737, {	-- What Bastion Remembered
 					crit(49827),	-- Eridia, Hand of Purity

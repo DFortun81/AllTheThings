@@ -114,8 +114,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182040),	-- Machined Oxxein Bar (QI!)
 				},
 			}),
-			q(61867),	-- Extra Pieces
-			q(61870),	-- Failed Experiments
+			petbattle(q(61867)),	-- Extra Pieces
+			petbattle(q(61870)),	-- Failed Experiments
 			q(61610, {	-- Fishing: Skeletal Mudskipper
 				["requireSkill"] = FISHING,
 				["g"] = {
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184560),	-- Ritual Focus (QI!)
 				},
 			}),
-			q(61866),	-- Mighty Minions of Maldraxxus
+			petbattle(q(61866)),	-- Mighty Minions of Maldraxxus
 			q(61537, {	-- Mining: Monolithic Oxxein Cluster
 				["requireSkill"] = MINING,
 				["g"] = {
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(177693),	-- Requisitioner's Scroll (QI!)
 				},
 			}),
-			q(61868),	-- Uncomfortably Undercover
+			petbattle(q(61868)),	-- Uncomfortably Undercover
 			q(58601),	-- Web of Information
 		})),
 	}),

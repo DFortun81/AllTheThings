@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60950),	-- A Matter of Stealth
 			q(60899),	-- A Night in the Woods
 			q(60649),	-- A Thorn In Their Side
-			q(61948),	-- Airborne Defense Force
+			petbattle(q(61948)),	-- Airborne Defense Force
 			q(61595, {	-- Alchemy: Potion of Hibernal Rest
 				["requireSkill"] = ALCHEMY,
 				["g"] = {
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(181984),	-- Powdered Dreamroot (QI!)
 				},
 			}),
-			q(61949),	-- Ardenweald's Tricksters
+			petbattle(q(61949)),	-- Ardenweald's Tricksters
 			q(61435, {	-- Blacksmithing: Stalker Arrowheads
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
@@ -132,14 +132,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(181434),	-- Stalker's Leather Quiver (QI!)
 				},
 			}),
-			q(61947),	-- Lurking In The Shadows
+			petbattle(q(61947)),	-- Lurking In The Shadows
 			q(61530, {	-- Mining: Ligneous Phaedrum Cluster
 				["requireSkill"] = MINING,
 				["g"] = {
 					i(181718),	-- Ligneous Phaedrum Ore (QI!)
 				},
 			}),
-			q(61946),	-- Natural Defenders
+			petbattle(q(61946)),	-- Natural Defenders
 			q(61411, {	-- Our Heart Will Go On
 				["g"] = {
 					i(181284),	-- Gormling in a Bag (QI!)
