@@ -1,22 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-BURDEN_OF_ETERNITY = createHeader({
-	readable = "Burden of Eternity",
-	icon = "775461",
-	text = {
-		en = [[~GetSpellInfo(147343)]],
-	},
-	-- TODO: would like a way to make the custom header use automatic header logic in-game
-	-- to get an Item-link formatted name for further clarity on the purpose of the header and in tooltips
-	-- e.g. auto = i:103982
-	lore = {
-		en = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
-		fr = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
-		ru = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
-		cn = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
-	},
-});
 --[[
 root(ROOTS.Zones, {
 	m(PANDARIA, {
