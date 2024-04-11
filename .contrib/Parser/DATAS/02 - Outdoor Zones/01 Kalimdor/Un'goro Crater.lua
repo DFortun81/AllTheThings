@@ -1153,7 +1153,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 49,
 					["groups"] = {
 						objective(1, {	-- 0/8 Dinosaur Bone
-							["provider"] = { "i", 11114 },	-- Dinosaur Bone
+							["providers"] = {
+								{ "i",  11114 },	-- Dinosaur Bone
+								{ "o", 161527 },	-- Dinosaur Bone
+							},
 							["crs"] = {
 								9162,	-- Young Diemetradon
 								9163,	-- Diemetradon
@@ -1704,8 +1707,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/4 Venomhide Ravasaur Egg
 							["providers"] = {
-								{ "i", 46364 },	-- Venomhide Ravasaur Egg
-								{ "o", 195022 },	-- Venomhide Ravasaur Egg
+								{ "i",  46364 },	-- Venomhide Ravasaur Egg
+								{ "o", 195022 },	-- Venomhide Egg
 							},
 							["coord"] = { 67.0, 62.5, UNGORO_CRATER },
 						}),
