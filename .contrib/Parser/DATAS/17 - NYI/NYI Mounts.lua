@@ -411,9 +411,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(87786, {	-- Black Riding Yak (MOUNT!)
 				["displayID"] = 43709,
 			}),
-			i(87787, {	-- Brown Riding Yak (MOUNT!)
-				["displayID"] = 43710,
-			}),
 			i(84728, {	-- Crimson Riding Crane (MOUNT!)
 				["displayID"] = 42837,
 			}),
@@ -426,11 +423,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(87784, {	-- Jungle Riding Crane (MOUNT!)
 				["displayID"] = 43707,
 			}),
+			i(84753, {	-- Kafa Yak (MOUNT!)
+				["displayID"] = 41089,
+			}),
+			i(87787, {	-- Modest Expedition Yak (MOUNT!)
+				["displayID"] = 43710,
+			}),
 			i(87792, {	-- Orange Water Strider (MOUNT!)
 				["displayID"] = 43715,
-			}),
-			i(84753, {	-- White Riding Yak (MOUNT!)
-				["displayID"] = 41089,
 			}),
 			-- Without MountID Attached
 			i(91016, {	-- Reins of the Great Red Dragon Turtle (MOUNT!)

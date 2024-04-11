@@ -1208,7 +1208,7 @@ i(206008);	-- Nightmare Banner
 i(206267);	-- Obsidian Legend's Pennant
 i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
-i(204686);	-- Titan's Containment Device
+i(204686);	-- Titan Containment Device
 i(205904);	-- Vibrant Clacking Claw
 --- NYI ---
 i(205034);	-- Enormous Ball of Yarn

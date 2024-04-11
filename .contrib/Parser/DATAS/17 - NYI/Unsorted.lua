@@ -5,141 +5,121 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.DF, {
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
-			i(84753),	-- Reins of the Kafa Yak
-			i(87787),	-- Reins of the Modest Expedition Yak
-			i(204686),	-- Titan Containment Device
-			i(208487),	-- Timerunner's Ring
-			i(208491),	-- Timerunner's Seal
-			i(208554),	-- Timerunner's Beacon
-			i(208555),	-- Timerunner's Idol
-			i(210333),	-- Cloak of Infinite Potential
-			i(210334),	-- Chen Stormstout's Keg
-			i(210335),	-- Shado-Pan Dagger
-			i(210336),	-- Kor'kron Heavy Rifle
-			i(210337),	-- Faded Forest Hatchet
-			i(210338),	-- Spire of Supremacy
-			i(210341),	-- Staff of Corrupted Waters
-			i(210342),	-- Bataari Hacker
-			i(210343),	-- Gar'tok, Might of the Faithful
-			i(210469),	-- Personal Tabard
-			i(210523),	-- Timerunner's Amulet
-			i(210531),	-- Timerunning Shoulderpads
-			i(210634),	-- Shield of the Wakener
-			i(210635),	-- Streamtalker Shield
-			i(210638),	-- Mushan Hewer
-			i(210640),	-- Icon of Hope
-			i(210641),	-- Bo-Ris, Spear of Night
-			i(210681),	-- Chipped Quick Topaz
-			i(210714),	-- Chipped Deadly Sapphire
-			i(210715),	-- Chipped Masterful Amethyst
-			i(210716),	-- Chipped Swift Opal
-			i(210717),	-- Chipped Hungering Ruby
-			i(210718),	-- Hungering Ruby
-			i(210982),	-- Thread of Power
-			i(210983),	-- Thread of Stamina
-			i(210984),	-- Thread of Critical Strike
-			i(210985),	-- Thread of Haste
-			i(210986),	-- Thread of Speed
-			i(210987),	-- Thread of Leech
-			i(210988),	-- Thread of Regeneration
-			i(210989),	-- Thread of Mastery
-			i(210990),	-- Thread of Versatility
-			i(211101),	-- Perfect Swift Opal
-			i(211102),	-- Perfect Deadly Sapphire
-			i(211103),	-- Perfect Hungering Ruby
-			i(211105),	-- Perfect Sustaining Emerald
-			i(211106),	-- Masterful Amethyst
-			i(211107),	-- Quick Topaz
-			i(211108),	-- Perfect Masterful Amethyst
-			i(211109),	-- Chipped Sustaining Emerald
-			i(211110),	-- Perfect Quick Topaz
-			i(211123),	-- Deadly Sapphire
-			i(211124),	-- Swift Opal
-			i(211125),	-- Sustaining Emerald
-			i(211149),	-- Rikkitun Warbow
-			i(211151),	-- Fran's Repeater
-			i(211160),	-- Greatsword of the Iron Legion
-			i(211161),	-- Sphere of Immerseus
-			i(211162),	-- Klaxxi Longsword
-			i(211163),	-- Hidden Pass Knuckles
-			i(211305),	-- Taladite Chestplate of Lost Embaari
-			i(211306),	-- Taladite Bands of Lost Embaari
-			i(211307),	-- True Iron Belt of Lost Embaari
-			i(211308),	-- Taladite Sentinels of Lost Embaari
-			i(211309),	-- Sumptuous Legwraps of Lost Embaari
-			i(211310),	-- True Iron Helm of Lost Embaari
-			i(211311),	-- Taladite Grips of Lost Embaari
-			i(211312),	-- True Iron Cleats of Lost Embaari
-			i(211313),	-- Ensemble: Heritage of the Draenei
-			i(211333),	-- Amethyst Bands of Telhamat
-			i(211334),	-- Dawnsteel Belt of Telhamat
-			i(211335),	-- Amethyst Sentinels of Telhamat
-			i(211336),	-- Netherweave Legwraps of Telhamat
-			i(211337),	-- Dawnsteel Helm of Telhamat
-			i(211338),	-- Amethyst Grips of Telhamat
-			i(211339),	-- Dawnsteel Cleats of Telhamat
-			i(211340),	-- Amethyst Chestplate of Telhamat
-			i(211341),	-- Dawnsteel Casque of Telhamat
-			i(211342),	-- True Iron Casque of Lost Embaari
-			i(211433),	-- Darkspear War-Skirt
-			i(211434),	-- Darkspear Rush'kah
-			i(211436),	-- Darkspear Grips
-			i(211437),	-- Darkspear Greaves
-			i(211438),	-- Darkspear Battlestraps
-			i(211439),	-- Darkspear Tusked Barrier
-			i(211440),	-- Darkspear Bracers
-			i(211441),	-- Darkspear Belt
-			i(211442),	-- Darkspear Shoulderguards
-			i(211446),	-- Ensemble: Heritage of the Darkspear
-			i(211692),	-- Tainted Patch of Hide
-			i(211694),	-- Oozing Felfang
-			i(211695),	-- Jagged Crystallized Eye
-			i(211768),	-- Hastily Scrawled Satyr Ravings
-			i(211798),	-- Un-Raised Bone Fragments
-			i(211932),	-- Cache of Infinite Treasure
-			i(212341),	-- Twice-Dead Tusk
-			i(212345),	-- Hunted Hakkari Blood
-			i(212346),	-- Failed Gurubashi Tribute
-			i(212352),	-- Mosh'Ogg Totem
-			i(212361),	-- Opportunist
-			i(212362),	-- Sunstrider's Flourish
-			i(212365),	-- Fervor
-			i(212366),	-- Arcanist's Edge
-			i(212629),	-- Test Ruby
-			i(212694),	-- Enkindle
-			i(212749),	-- Explosive Barrage
-			i(212758),	-- Incendiary Terror
-			i(212759),	-- Meteor Storm
-			i(212760),	-- Wildfire
-			i(212916),	-- Frost Armor
-			i(213173),	-- Thread of Power
-			i(213571),	-- Thread of Time
-			i(213576),	-- Golden Discus
-			i(213582),	-- Sky Surfer
-			i(213584),	-- Mogu Hazeblazer
-			i(213595),	-- Feathered Windsurfer String
-			i(213596),	-- Reins of the Daystorm Windsteed
-			i(213597),	-- Reins of the Forest Windsteed
-			i(213598),	-- Reins of the Dashing Windsteed
-			i(213600),	-- Reins of the Marble Quilen
-			i(213601),	-- Reins of the Guardian Quilen
-			i(213602),	-- Reins of the Gilded Riding Crane
-			i(213603),	-- Reins of the Pale Riding Crane
-			i(213604),	-- Reins of the Tropical Riding Crane
-			i(213605),	-- Reins of the Rose Riding Crane
-			i(213606),	-- Reins of the Silver Riding Crane
-			i(213607),	-- Reins of the Luxurious Riding Crane
-			i(213608),	-- Reins of the Snowy Riding Goat
-			i(213609),	-- Reins of the Little Red Riding Goat
-			i(213621),	-- Reins of the Jade Pterrordax
-			i(213622),	-- Reins of the Night Pterrorwing
-			i(213623),	-- Reins of the Bloody Skyscreamer
-			i(213624),	-- Cobalt Juggernaut
-			i(213625),	-- Fel Iron Juggernaut
-			i(213626),	-- Reins of the Purple Shado-Pan Riding Tiger
-			i(213627),	-- Reins of the Palehide Mushan Beast
-			i(213628),	-- Reins of the Riverwalker Mushan
-			i(213631),	-- Empty Spool of Temporal Threads
+			filter(COSMETIC, {
+				i(210469),	-- Personal Tabard
+
+				------ Draenei Heritage ------
+				i(211313),	-- Ensemble: Heritage of the Draenei
+				i(211333),	-- Amethyst Bands of Telhamat
+				i(211340),	-- Amethyst Chestplate of Telhamat
+				i(211338),	-- Amethyst Grips of Telhamat
+				i(211335),	-- Amethyst Sentinels of Telhamat
+				i(211334),	-- Dawnsteel Belt of Telhamat
+				i(211341),	-- Dawnsteel Casque of Telhamat
+				i(211339),	-- Dawnsteel Cleats of Telhamat
+				i(211337),	-- Dawnsteel Helm of Telhamat
+				i(211336),	-- Netherweave Legwraps of Telhamat
+				i(211309),	-- Sumptuous Legwraps of Lost Embaari
+				i(211306),	-- Taladite Bands of Lost Embaari
+				i(211305),	-- Taladite Chestplate of Lost Embaari
+				i(211311),	-- Taladite Grips of Lost Embaari
+				i(211308),	-- Taladite Sentinels of Lost Embaari
+				i(211307),	-- True Iron Belt of Lost Embaari
+				i(211342),	-- True Iron Casque of Lost Embaari
+				i(211312),	-- True Iron Cleats of Lost Embaari
+				i(211310),	-- True Iron Helm of Lost Embaari
+
+				------ Troll Heritage ------
+				i(211446),	-- Ensemble: Heritage of the Darkspear
+				i(211438),	-- Darkspear Battlestraps
+				i(211441),	-- Darkspear Belt
+				i(211440),	-- Darkspear Bracers
+				i(211437),	-- Darkspear Greaves
+				i(211436),	-- Darkspear Grips
+				i(211434),	-- Darkspear Rush'kah
+				i(211442),	-- Darkspear Shoulderguards
+				i(211439),	-- Darkspear Tusked Barrier
+				i(211433),	-- Darkspear War-Skirt
+			}),
+			filter(MISC, {
+				------ Grey ------
+				i(212346),	-- Failed Gurubashi Tribute
+				i(211768),	-- Hastily Scrawled Satyr Ravings
+				i(212345),	-- Hunted Hakkari Blood
+				i(211695),	-- Jagged Crystallized Eye
+				i(212352),	-- Mosh'Ogg Totem
+				i(211694),	-- Oozing Felfang
+				i(211692),	-- Tainted Patch of Hide
+				i(212341),	-- Twice-Dead Tusk
+				i(211798),	-- Un-Raised Bone Fragments
+			}),
+			n(SPECIAL, {
+				filter(QUEST_ITEMS, {
+					i(213631),	-- Empty Spool of Temporal Threads
+					i(213173),	-- Thread of Power
+					i(213571),	-- Thread of Time
+				}),
+				filter(TRINKET_F, {	-- Tinker Gem?
+					i(212366),	-- Arcanist's Edge
+					i(212694),	-- Enkindle
+					i(212749),	-- Explosive Barrage
+					i(212365),	-- Fervor
+					i(212916),	-- Frost Armor
+					i(212758),	-- Incendiary Terror
+					i(212759),	-- Meteor Storm
+					i(212361),	-- Opportunist
+					i(212362),	-- Sunstrider's Flourish
+					i(212629),	-- Test Ruby
+					i(212760),	-- Wildfire
+				}),
+				i(211932),	-- Cache of Infinite Treasure
+			}),
+			filter(MOUNTS, {
+				i(218111),	-- Amber Pterrordax (MOUNT!)
+				i(220768),	-- Astral Emperor's Serpent (MOUNT!)
+				i(220766),	-- August Phoenix (MOUNT!)
+				i(213623),	-- Bloody Skyscreamer (MOUNT!)
+				i(213624),	-- Cobalt Juggernaut (MOUNT!)
+				i(213598),	-- Dashing Windsteed (MOUNT!)
+				i(213596),	-- Daystorm Windsteed (MOUNT!)
+				i(213595),	-- Feathered Windsurfer (MOUNT!)
+				i(213625),	-- Fel Iron Juggernaut (MOUNT!)
+				i(213597),	-- Forest Windsteed (MOUNT!)
+				i(213602),	-- Gilded Riding Crane (MOUNT!)
+				i(213576),	-- Golden Discus (MOUNT!)
+				i(213601),	-- Guardian Quilen (MOUNT!)
+				i(213621),	-- Jade Pterrordax (MOUNT!)
+				i(213609),	-- Little Red Riding Goat (MOUNT!)
+				i(213607),	-- Luxurious Riding Crane (MOUNT!)
+				i(213600),	-- Marble Quilen (MOUNT!)
+				i(213584),	-- Mogu Hazeblazer (MOUNT!)
+				i(213622),	-- Night Pterrorwing (MOUNT!)
+				i(213603),	-- Pale Riding Crane (MOUNT!)
+				i(213627),	-- Palehide Mushan Beast (MOUNT!)
+				i(221814),	-- Pearlescent Goblin Wave Shredder (MOUNT!)
+				i(213626),	-- Purple Shado-Pan Riding Tiger (MOUNT!)
+				i(213628),	-- Riverwalker Mushan (MOUNT!)
+				i(213605),	-- Rose Riding Crane (MOUNT!)
+				i(213606),	-- Silver Riding Crane (MOUNT!)
+				i(213582),	-- Sky Surfer (MOUNT!)
+				i(213608),	-- Snowy Riding Goat (MOUNT!)
+				i(213604),	-- Tropical Riding Crane (MOUNT!)
+				i(223471),	-- [PH] Alliance Wolf Mount Purple (MOUNT!)
+				i(223470),	-- [PH] Alliance Wolf Mount Red (MOUNT!)
+				i(223469),	-- [PH] Alliance Wolf Mount White (MOUNT!)
+				i(223282),	-- [PH] Blue Old God Fish Mount (MOUNT!)
+				i(221270),	-- [PH] Goblin Surfboard (MOUNT!)
+				i(223284),	-- [PH] Green Old God Fish Mount (MOUNT!)
+				i(223459),	-- [PH] Nightsaber Horde Mount Black (MOUNT!)
+				i(223449),	-- [PH] Nightsaber Horde Mount Red (MOUNT!)
+				i(223460),	-- [PH] Nightsaber Horde Mount White (MOUNT!)
+				i(223285),	-- [PH] Purple Old God Fish Mount (MOUNT!)
+				i(223286),	-- [PH] Red Old God Fish Mount (MOUNT!)
+				-- These are already in NYI! --
+				i(84753),	-- Kafa Yak (MOUNT!)
+				i(87787),	-- Modest Expedition Yak (MOUNT!)
+			}),
+
 			i(213636),	-- Breezebinder's Robe
 			i(213637),	-- Breezebinder's Sandals
 			i(213638),	-- Breezebinder's Gloves
@@ -2571,7 +2551,7 @@ root(ROOTS.Unsorted, {
 			i(218108),	-- Dark Pact
 			i(218109),	-- Death's Advance
 			i(218110),	-- Soulshape
-			i(218111),	-- Reins of the Amber Pterrordax
+
 			i(218112),	-- Colorful Beach Chair
 			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
 			i(218130),	-- Adventurer's Footlocker
@@ -2697,8 +2677,8 @@ root(ROOTS.Unsorted, {
 			i(220763),	-- Bonus Experience
 			i(220764),	-- Bonus Experience
 			i(220765),	-- Illusion: Sha Corruption
-			i(220766),	-- Reins of the August Phoenix
-			i(220768),	-- Reins of the Astral Emperor's Serpent
+
+
 			i(220777),	-- Cherry Blossom Trail
 			i(220785),	-- Midsummer Safeguard
 			i(220787),	-- Mantle of Midsummer
@@ -2735,7 +2715,7 @@ root(ROOTS.Unsorted, {
 			i(220996),	-- Shirt of Hushed Wisdom
 			i(220997),	-- Shirt of Quiet Reflection
 			i(220998),	-- Shirt of Humbling Gravity
-			i(221270),	-- [PH] Goblin Surfboard
+
 			i(221509),	-- Timerunner's Weaponry
 			i(221520),	-- Black Tropical Shirt
 			i(221521),	-- Black Tropical Trunks
@@ -2764,7 +2744,7 @@ root(ROOTS.Unsorted, {
 			i(221794),	-- Classic Carrot Tabard
 			i(221809),	-- Churning Sands Treads
 			i(221810),	-- Churning Sands Gloves
-			i(221814),	-- Pearlescent Goblin Wave Shredder
+
 			i(221816),	-- Halfhill Farmer's Backpack
 			i(221817),	-- Muskpaw Calf
 			i(221818),	-- Astral Emperor's Serpentling
@@ -2855,10 +2835,7 @@ root(ROOTS.Unsorted, {
 			i(223258),	-- Deep Diver's Wristguard
 			i(223259),	-- Green Diver's Wristguard
 			i(223260),	-- Dark Diver's Wristguard
-			i(223282),	-- [PH] Blue Old God Fish Mount
-			i(223284),	-- [PH] Green Old God Fish Mount
-			i(223285),	-- [PH] Purple Old God Fish Mount
-			i(223286),	-- [PH] Red Old God Fish Mount
+
 			i(223339),	-- Trishi
 			i(223409),	-- The Coward's Violet Target
 			i(223410),	-- [PH] Dagger Red
@@ -2881,12 +2858,7 @@ root(ROOTS.Unsorted, {
 			i(223430),	-- [PH] Staff Blue
 			i(223433),	-- [PH] Offhand Red
 			i(223434),	-- [PH] Offhand Blue
-			i(223449),	-- [PH] Nightsaber Horde Mount Red
-			i(223459),	-- [PH] Nightsaber Horde Mount Black
-			i(223460),	-- [PH] Nightsaber Horde Mount White
-			i(223469),	-- [PH] Alliance Wolf Mount White
-			i(223470),	-- [PH] Alliance Wolf Mount Red
-			i(223471),	-- [PH] Alliance Wolf Mount Purple
+
 			i(223474),	-- Worgli the Apprehensive
 			i(223475),	-- Set Keystone Level: 2
 			i(223476),	-- Set Keystone Level: 3
@@ -3154,8 +3126,8 @@ root(ROOTS.Unsorted, {
 			------ Next Check 10.2.7 ------
 			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
 				n(BACK, {
-					i(210334),	-- Dreadweave Cloak
-					i(210333),	-- Jadeweave Cloak
+					i(210334),	-- Chen Stormstout's Keg
+					i(210333),	-- Cloak of Infinite Potential
 				}),
 				filter(CLOTH, {
 					i(210603),	-- Passionsilk Amice
@@ -3186,8 +3158,8 @@ root(ROOTS.Unsorted, {
 				filter(FINGER_F, {
 					i(210257),	-- Bamboo Band
 					i(210256),	-- Cloud-Rider Seal
-					i(208487),	-- Stalwart Band
-					i(208491),	-- Theurgist's Seal
+					i(208487),	-- Timerunner's Ring
+					i(208491),	-- Timerunner's Seal
 				}),
 				filter(LEATHER, {
 					i(210315),	-- Mistveil Bindings
@@ -3243,31 +3215,31 @@ root(ROOTS.Unsorted, {
 				}),
 				filter(MISC, {
 					i(211279),	-- Cache of Infinite Treasure
-					i(210984),	-- Draught of Critical Strike
-					i(210985),	-- Draught of Haste
-					i(210987),	-- Draught of Leech
-					i(210989),	-- Draught of Mastery
-					i(210982),	-- Draught of Power
-					i(210988),	-- Draught of Regeneration
-					i(210986),	-- Draught of Speed
-					i(210983),	-- Draught of Stamina
-					i(210990),	-- Draught of Versatility
+					i(211123),	-- Deadly Sapphire
 					i(211104),	-- Ephemeral Fractured Emerald
-					i(210718),	-- Ephemeral Fractured Ruby
-					i(211125),	-- Ephemeral Hungering Emerald
-					i(211102),	-- Ephemeral Hungering Sapphire
-					i(211101),	-- Ephemeral Hungering Topaz
-					i(211105),	-- Ephemeral Quick Amethyst
-					i(211103),	-- Ephemeral Quick Opal
-					i(211123),	-- Ephemeral Quick Sapphire
-					i(211106),	-- Ephemeral Smooth Amethyst
-					i(211124),	-- Ephemeral Smooth Opal
-					i(211110),	-- Ephemeral Sustaining Sapphire
-					i(211107),	-- Ephemeral Sustaining Topaz
-					i(211108),	-- Ephemeral Swift Amethyst
 					i(211112),	-- Ephemeral Swift Emerald
 					i(211111),	-- Ephemeral Swift Ruby
+					i(210718),	-- Hungering Ruby
 					i(208822),	-- Infinite Hearthstone
+					i(211106),	-- Masterful Amethyst
+					i(211102),	-- Perfect Deadly Sapphire
+					i(211103),	-- Perfect Hungering Ruby
+					i(211108),	-- Perfect Masterful Amethyst
+					i(211110),	-- Perfect Quick Topaz
+					i(211105),	-- Perfect Sustaining Emerald
+					i(211101),	-- Perfect Swift Opal
+					i(211107),	-- Quick Topaz
+					i(211125),	-- Sustaining Emerald
+					i(211124),	-- Swift Opal
+					i(210984),	-- Thread of Critical Strike
+					i(210985),	-- Thread of Haste
+					i(210987),	-- Thread of Leech
+					i(210989),	-- Thread of Mastery
+					i(210982),	-- Thread of Power
+					i(210988),	-- Thread of Regeneration
+					i(210986),	-- Thread of Speed
+					i(210983),	-- Thread of Stamina
+					i(210990),	-- Thread of Versatility
 				}),
 				filter(NECK_F, {
 					i(208489),	-- Ankh of Reincarnation
@@ -3295,7 +3267,6 @@ root(ROOTS.Unsorted, {
 					i(210313),	-- Sentinel's Vambraces
 					i(210264),	-- Sentinel's Warboots
 					i(210630),	-- Shan'ze Armplates
-					i(211161),	-- Shan'ze Bonebreaker
 					i(210622),	-- Shan'ze Chestplate
 					i(210626),	-- Shan'ze Greathelm
 					i(210627),	-- Shan'ze Greaves
@@ -3305,32 +3276,39 @@ root(ROOTS.Unsorted, {
 					i(210629),	-- Shan'ze Waistguard
 				}),
 				filter(TRINKET_F, {
-					i(208555),	-- Blood of Mannoroth
-					i(208554),	-- Chaos Brand
 					i(208556),	-- Flicker Blossom
+					i(208554),	-- Timerunner's Beacon
+					i(208555),	-- Timerunner's Idol
 				}),
 				n(WEAPONS, {
-					i(210343),	-- Cerulean Crusher
-					i(210640),	-- Crane's Beak Effigy
-					i(210641),	-- Dawn Watcher's Spear
-					i(211149),	-- Dawnwatcher's Warbow
-					i(210634),	-- Dreadwood Bulwark
-					i(210338),	-- Fogcutter Staff
-					i(211160),	-- Jade Grand Falchion
-					i(210335),	-- Jadestone Dagger
-					i(210638),	-- Jadestone Greataxe
+					i(210342),	-- Bataari Hacker
+					i(210641),	-- Bo-Ris, Spear of Night
+					i(210337),	-- Faded Forest Hatchet
+					i(211151),	-- Fran's Repeater
+					i(210343),	-- Gar'tok, Might of the Faithful
+					i(211160),	-- Greatsword of the Iron Legion
+					i(211163),	-- Hidden Pass Knuckles
+					i(210640),	-- Icon of Hope
+					i(211162),	-- Klaxxi Longsword
+					i(210336),	-- Kor'kron Heavy Rifle
 					i(210643),	-- Mistspinner's Channel
-					i(210336),	-- Pandaren Rifle
-					i(210337),	-- Rename Me Post Vertical
-					i(210341),	-- Rename Me Post Vertical
-					i(210635),	-- Rename Me Post Vertical
-					i(210342),	-- Rubywrought Hewer
-					i(211151),	-- Serpentguard Crossbow
-					i(211163),	-- Tian Monastery Crescent
-					i(211162),	-- Tian Monastery Scimitar
+					i(210638),	-- Mushan Hewer
+					i(211149),	-- Rikkitun Warbow
+					i(210335),	-- Shado-Pan Dagger
+					i(210634),	-- Shield of the Wakener
+					i(211161),	-- Sphere of Immerseus
+					i(210338),	-- Spire of Supremacy
+					i(210341),	-- Staff of Corrupted Waters
+					i(210635),	-- Streamtalker Shield
 				}),
-				i(210715),	-- Timerunner's Amethyst
+				i(210714),	-- Chipped Deadly Sapphire
+				i(210717),	-- Chipped Hungering Ruby
+				i(210715),	-- Chipped Masterful Amethyst
+				i(210681),	-- Chipped Quick Topaz
+				i(211109),	-- Chipped Sustaining Emerald
+				i(210716),	-- Chipped Swift Opal
 				i(210906),	-- Timerunner's Amice
+				i(210523),	-- Timerunner's Amulet
 				i(210913),	-- Timerunner's Armplates
 				i(211254),	-- Timerunner's Bandage
 				i(210914),	-- Timerunner's Bands
@@ -3346,7 +3324,6 @@ root(ROOTS.Unsorted, {
 				i(210525),	-- Timerunner's Cloak
 				i(210898),	-- Timerunner's Coif
 				i(210637),	-- Timerunner's Dagger
-				i(211109),	-- Timerunner's Emerald
 				i(210885),	-- Timerunner's Gauntlets
 				i(210908),	-- Timerunner's Girdle
 				i(210887),	-- Timerunner's Gloves
@@ -3360,12 +3337,9 @@ root(ROOTS.Unsorted, {
 				i(210900),	-- Timerunner's Legplates
 				i(210344),	-- Timerunner's Mace
 				i(210907),	-- Timerunner's Monnion
-				i(210716),	-- Timerunner's Opal
 				i(210905),	-- Timerunner's Pauldrons
 				i(210889),	-- Timerunner's Robe
-				i(210717),	-- Timerunner's Ruby
 				i(210894),	-- Timerunner's Sabatons
-				i(210714),	-- Timerunner's Sapphire
 				i(210909),	-- Timerunner's Sash
 				i(210636),	-- Timerunner's Shield
 				i(210893),	-- Timerunner's Slippers
@@ -3373,7 +3347,6 @@ root(ROOTS.Unsorted, {
 				i(210339),	-- Timerunner's Staff
 				i(211388),	-- Timerunner's Starter Kit
 				i(210340),	-- Timerunner's Sword
-				i(210681),	-- Timerunner's Topaz
 				i(210890),	-- Timerunner's Tunic
 				i(210886),	-- Timerunner's Warboots
 				i(210891),	-- Timerunner's Warhelm
@@ -3383,10 +3356,9 @@ root(ROOTS.Unsorted, {
 				i(210527),	-- Timerunning Bracers
 				i(210524),	-- Timerunning Cover
 				i(210532),	-- Timerunning Gloves
-				i(210523),	-- Timerunning Neck
 				i(210530),	-- Timerunning Pants
+				i(210531),	-- Timerunning Shoulderpads
 				i(210533),	-- Timerunning Staff
-				i(210531),	-- Timerunnning Shoulderpads
 				i(210526),	-- Unraveling Tunic
 			}),
 			n(QUESTS, {

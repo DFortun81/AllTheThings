@@ -690,13 +690,13 @@ i(87775, 127165);	-- Yu'lei, Daughter of Jade
 i(0, 128859);		-- zzOldDepleted-Kyparium Rocket
 i(87785, 127180);	-- Albino Riding Crane
 i(87786, 127209);	-- Black Riding Yak
-i(87787, 127213);	-- Brown Riding Yak
 i(84728, 123160);	-- Crimson Riding Crane
 i(87794, 127278);	-- Golden Water Strider
 i(87793, 127274);	-- Jade Water Strider
 i(87784, 127178);	-- Jungle Riding Crane
+i(84753, 123182);	-- Kafa Yak
+i(87787, 127213);	-- Modest Expedition Yak
 i(87792, 127272);	-- Orange Water Strider
-i(84753, 123182);	-- White Riding Yak
 i(91016, 0);		-- Reins of the Great Red Dragon Turtle
 
 -----------------
@@ -1753,3 +1753,50 @@ i(213439, 434470);	-- Vicious Dreamtalon [A]
 i(213440, 434477);	-- Vicious Dreamtalon [H]
 i(217340, 439138);	-- Voyaging Wilderling
 i(217612, 440444);	-- Zovaal's Soul Eater
+
+------------------
+-- PATCH 10.2.7 --
+------------------
+i(218111, 441794);	-- Amber Pterrordax
+i(220768, 446022);	-- Astral Emperor's Serpent
+i(220766, 446017);	-- August Phoenix
+i(213623, 435145);	-- Bloody Skyscreamer
+i(213624, 435149);	-- Cobalt Juggernaut
+i(213598, 435103);	-- Dashing Windsteed
+i(213596, 435108);	-- Daystorm Windsteed
+i(213595, 435109);	-- Feathered Windsurfer
+i(213625, 435150);	-- Fel Iron Juggernaut
+i(213597, 435107);	-- Forest Windsteed
+i(213602, 435123);	-- Gilded Riding Crane
+i(213576, 435044);	-- Golden Discus
+i(213601, 435115);	-- Guardian Quilen
+i(213621, 435147);	-- Jade Pterrordax
+i(213609, 435133);	-- Little Red Riding Goat
+i(213607, 435124);	-- Luxurious Riding Crane
+i(213600, 435118);	-- Marble Quilen
+i(213584, 435082);	-- Mogu Hazeblazer
+i(213622, 435146);	-- Night Pterrorwing
+i(213603, 435128);	-- Pale Riding Crane
+i(213627, 435161);	-- Palehide Mushan Beast
+i(221814, 447413);	-- Pearlescent Goblin Wave Shredder
+i(213626, 435153);	-- Purple Shado-Pan Riding Tiger
+i(213628, 435160);	-- Riverwalker Mushan
+i(213605, 435127);	-- Rose Riding Crane
+i(213606, 435126);	-- Silver Riding Crane
+i(213582, 435084);	-- Sky Surfer
+i(213608, 435131);	-- Snowy Riding Goat
+i(213604, 435125);	-- Tropical Riding Crane
+i(223471, 449142);	-- [PH] Alliance Wolf Mount Purple
+i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
+i(223469, 449140);	-- [PH] Alliance Wolf Mount White
+i(223282, 448845);	-- [PH] Blue Old God Fish Mount
+i(221270, 446352);	-- [PH] Goblin Surfboard - Blue
+i(223284, 448849);	-- [PH] Green Old God Fish Mount
+i(223459, 449132);	-- [PH] Nightsaber Horde Mount Black
+i(223449, 449126);	-- [PH] Nightsaber Horde Mount Red
+i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
+i(223285, 448851);	-- [PH] Purple Old God Fish Mount
+i(223286, 448850);	-- [PH] Red Old God Fish Mount
+--- These are already in NYI! ---
+i(87787, 127213);	-- Modest Expedition Yak
+i(84753, 123182);	-- Kafa Yak

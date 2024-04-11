@@ -299,7 +299,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["provider"] = { "n", 200078 },	-- Watcher Koranos
 								["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
 								["g"] = {
-									i(204686),	-- Titan's Containment Device (TOY!)
+									i(204686),	-- Titan Containment Device (TOY!)
 								},
 							}),
 						},
