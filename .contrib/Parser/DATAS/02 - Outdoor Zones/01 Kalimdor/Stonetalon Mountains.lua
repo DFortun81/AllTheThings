@@ -2291,6 +2291,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["providers"] = {
 						{ "n", 4198 },	-- Braelyn Firehand
 						{ "i", 5687 },	-- Gatekeeper's Key
+						{ "o", 19599 },	-- Talon Den Hoard
 					},
 					["sourceQuest"] = 1088,	-- Ordanus
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
