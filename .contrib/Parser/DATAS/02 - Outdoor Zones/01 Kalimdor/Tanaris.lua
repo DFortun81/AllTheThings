@@ -4510,7 +4510,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 39,
 					["groups"] = {
 						objective(1, {	-- 0/1 Scrimshank's Surveying Gear
-							["provider"] = { "i", 8593 },	-- Scrimshank's Surveying Gear
+							["providers"] = {
+								{ "i",   8593 },	-- Scrimshank's Surveying Gear
+								{ "o", 144053 },	-- Scrimshank's Surveying Gear
+							},
 							["coord"] = { 56, 71, TANARIS },
 						}),
 					},
