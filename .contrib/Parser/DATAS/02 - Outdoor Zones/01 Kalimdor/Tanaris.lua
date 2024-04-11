@@ -3314,7 +3314,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2882, {	-- Cuergo's Gold
-					["provider"] = { "i", 9254 },	-- Cuergo's Treasure Map
+					["providers"] = {
+						{ "i",   9254 },	-- Cuergo's Treasure Map
+						{ "o", 142189 },	-- Inconspicuous Landmark
+					},
 					["coord"] = { 55.4, 92.2, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
