@@ -151,6 +151,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105799),	-- Fleshsmoke Chain Shoulders		(Ordos)
 		}),
 		filter(PLATE, {
+			q(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
+				["name"] = "Quantum Shoulders (Plate) completed.",
+				["collectible"] = false,
+			}),
 			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
 			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108183),	-- Peerless Draenic Steel Shoulders	(NYI)
@@ -173,6 +177,10 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208064, {	-- Quantum Chestpiece
 		filter(CLOTH, {
+			q(77637, {	-- when you learn everything from Quantum Chestpiece (Cloth)
+				["name"] = "Quantum Chestpiece (Cloth) completed.",
+				["collectible"] = false,
+			}),
 			ig(114254),	-- Firefly Robes					(NYI)
 			ig(114317),	-- Mantisweave Robes				(NYI)
 			ig(3959),	-- Mesh Armor						(NYI)
@@ -226,6 +234,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105772),	-- Moonhee's Mean Vest				(Ordos)
 		}),
 		filter(PLATE, {
+			q(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
+				["name"] = "Quantum Chestpiece (Plate) completed.",
+				["collectible"] = false,
+			}),
 			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
 			ig(108162),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108178),	-- Peerless Draenic Steel Chestplate	(NYI)
@@ -824,11 +836,20 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				q(77639 , {	-- when you learn everything from Quantum Shoulders (Mail)
 					["name"] = "Quantum Shoulders (Mail) completed.",
 				}),
+				q(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
+					["name"] = "Quantum Shoulders (Plate) completed.",
+				}),
+				q(77637, {	-- when you learn everything from Quantum Chestpiece (Cloth)
+					["name"] = "Quantum Chestpiece (Cloth) completed.",
+				}),
 				q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
 					["name"] = "Quantum Chestpiece (Leather) completed.",
 				}),
 				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
 					["name"] = "Quantum Chestpiece (Mail) completed.",
+				}),
+				q(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
+					["name"] = "Quantum Chestpiece (Plate) completed.",
 				}),
 				q(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
 					["name"] = "Quantum Gloves (Cloth) completed.",
@@ -1399,9 +1420,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Quantum Items
 		-- q(77622),	-- when you learn everything from Quantum ?
 		-- q(77625),	-- when you learn everything from Quantum ?
-		-- q(77634),	-- when you learn everything from Quantum ?
-		-- q(77637),	-- when you learn everything from Quantum ?
-		-- q(77638),	-- when you learn everything from Quantum ?
 	}),
 });
 

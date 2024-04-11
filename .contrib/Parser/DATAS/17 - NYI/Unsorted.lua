@@ -3662,9 +3662,6 @@ root(ROOTS.Unsorted, {
 				-- Probably Quantum Items
 				q(77622),	--
 				q(77625),	--
-				q(77634),	--
-				q(77637),	--
-				q(77638),	--
 			}),
 		})),
 	}),
