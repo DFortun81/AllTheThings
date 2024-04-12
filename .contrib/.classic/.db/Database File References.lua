@@ -24,6 +24,6 @@
 -- #IMPORT: 00 - Item DB\\Item Filters for RWP.lua
 -- #IMPORT: 00 - Item DB\\MusicRolls.lua
 -- #IMPORT: 00 - Item DB\\RuneforgePowers.lua
--- #IMPORT: 00 - Item DB\\Source IDs\\
+-- --IMPORT: 00 - Item DB\\Source IDs\\	-- DISABLED, using Cataclysm SourceIDs file instead!
 -- #IMPORT: 00 - Item DB\\Uncollectible.lua
 -- #IMPORT: 00 - Profession DB\\
