@@ -1,13 +1,12 @@
 -----------------------------------------------------
---   D U N G E O N S  &  R A I D S  M O D U L E    --
+--     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
---[[
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(ACHIEVEMENTS, {
 		ach(19871, {	-- Infinite Power
 		}),
 		ach(20593, {	-- Time Trial
-			i(446017),	-- August Phoenix (MOUNT!)
+			i(220766),	-- August Phoenix (MOUNT!)
 		}),
 		ach(40223, {	-- Timerunner
 			title(551),	-- Timerunner (TITLE!)
@@ -19,10 +18,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] =
 		ach(19872, {	-- The Jade Forest
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
-				19882,	-- Campaign: The Jade Forest (A)
+				19882,	-- Campaign: The Jade Forest [A]
+				19883,	-- Campaign: The Jade Forest [H]
+				20008,	-- Looking For Group: The Jade Forest
 				19912,	-- Order of the Cloud Serpent
 				19962,	-- Tour The Jade Forest
-				20008,	-- Looking For Group: The Jade Forest
 			}},
 			["g"] = {
 				i(220777),	-- Cherry Blossom Trail (TOY!)
@@ -42,7 +42,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] =
 		ach(19874, {	-- Krasarang Wilds
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
-				19885,	-- Campaign: Krasarang Wilds (A)
+				19885,	-- Campaign: Krasarang Wilds [A]
+				19886,	-- Campaign: Krasarang Wilds [H]
 				19964,	-- Tour Krasarang Wilds
 			}},
 			["g"] = {
@@ -52,22 +53,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] =
 		ach(19875, {	-- Kun-Lai Summit
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
-				19887,	-- Campaign: Kun-Lai Summit (A)
-				19965,	-- Tour Kun-Lai Summit
+				19887,	-- Campaign: Kun-Lai Summit [A]
+				19888,	-- Campaign: Kun-Lai Summit [H]
 				20011,	-- Looking For Group: Kun-Lai Summit
+				19965,	-- Tour Kun-Lai Summit
 			}},
 			["g"] = {
-				i(218248),	-- Chen Stormstout's Hat
 				i(218247),	-- Chen Stormstout's Hat
+				i(218248),	-- Chen Stormstout's Hat
 			},
 		}),
 		ach(19877, {	-- Townlong Steppes
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19889,	-- Campaign: Townlong Steppes
-				19966,	-- Tour Townlong Steppes
 				20012,	-- Looking For Group: Townlong Steppes
 				19914,	-- Shado-Pan
+				19966,	-- Tour Townlong Steppes
 			}},
 			["g"] = {
 				i(221817),	-- Muskpaw Calf (PET!)
@@ -77,8 +79,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] =
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19890,	-- Campaign: Dread Wastes
-				19967,	-- Tour Dread Wastes
 				19915,	-- The Klaxxi
+				19967,	-- Tour Dread Wastes
 			}},
 			["g"] = {
 				i(220765),	-- Sha Corruption (ILLUSION!)
@@ -87,15 +89,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, bubbleDown({ ["timeline"] =
 		ach(19876, {	-- Vale of Eternal Blossoms
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
-				20014,	-- Looking For Group: Vale of Eternal Blossoms
-				19916,	-- Golden Lotus
-				19913,	-- The August Celestials
 				20069,	-- Elusive Foes: Vale of Eternal Blossoms
+				19916,	-- Golden Lotus
+				20014,	-- Looking For Group: Vale of Eternal Blossoms
+				19913,	-- The August Celestials
 			}},
 			["g"] = {
 				i(220768),	-- Astral Emperor's Serpent (MOUNT!)
 			},
 		}),
 	}),
-})));
---]]
+}))));

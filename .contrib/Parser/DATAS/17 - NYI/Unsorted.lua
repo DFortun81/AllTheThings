@@ -14,7 +14,6 @@ root(ROOTS.Unsorted, {
 				i(221818),	-- Astral Emperor's Serpentling (PET!)
 				i(223499),	-- Lil' Manny (PET!)
 				i(223145),	-- Marrlok (PET!)
-				i(221817),	-- Muskpaw Calf (PET!)
 				i(223339),	-- Trishi (PET!)
 				i(223474),	-- Worgli the Apprehensive (PET!)
 			}),
@@ -258,9 +257,6 @@ root(ROOTS.Unsorted, {
 				i(223433),	-- [PH] Offhand Red
 				i(223434),	-- [PH] Offhand Blue
 			}),
-			filter(ILLUSIONS, {
-				i(220765),	-- Sha Corruption (ILLUSION!)
-			}),
 			filter(MISC, {
 				------ Grey ------
 				i(212346),	-- Failed Gurubashi Tribute
@@ -287,8 +283,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(218111),	-- Amber Pterrordax (MOUNT!)
-				i(220768),	-- Astral Emperor's Serpent (MOUNT!)
-				i(220766),	-- August Phoenix (MOUNT!)
 				i(213623),	-- Bloody Skyscreamer (MOUNT!)
 				i(213624),	-- Cobalt Juggernaut (MOUNT!)
 				i(213598),	-- Dashing Windsteed (MOUNT!)
@@ -2219,13 +2213,10 @@ root(ROOTS.Unsorted, {
 							},
 						}),
 					}),
-					i(218247),	-- Chen Stormstout's Bamboo Hat
-					i(218248),	-- Chen Stormstout's Bamboo Hat
 					i(220995),	-- Shirt of Precarious Balance
 					i(220996),	-- Shirt of Hushed Wisdom
 					i(220997),	-- Shirt of Quiet Reflection
 					i(220998),	-- Shirt of Humbling Gravity
-					i(221816),	-- Halfhill Farmer's Backpack
 				}),
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure
@@ -3115,13 +3106,12 @@ root(ROOTS.Unsorted, {
 				}),
 			}),
 			filter(TOYS, {
-				i(220777),	-- Cherry Blossom Trail (TOY!)
-				i(218112),	-- Colorful Beach Chair (TOY!)
+				i(218112),	-- Colorful Beach Chair (TOY!) [Trading Post?]
 				i(217725),	-- Essence of Yu'lon (TOY!)
 				i(217726),	-- Fortitude of Niuzao (TOY!)
 				i(217723),	-- Fury of Xuen (TOY!)
 				i(217724),	-- Kindness of Chi-ji (TOY!)
-				i(220692),	-- X-treme Water Blaster Display (TOY!)
+				i(220692),	-- X-treme Water Blaster Display (TOY!) [Trading Post?]
 			}),
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
@@ -3354,7 +3344,6 @@ root(ROOTS.Unsorted, {
 			------ Next Check 10.2.7 ------
 			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
 				n(BACK, {
-					i(210334),	-- Chen Stormstout's Keg
 					i(210333),	-- Cloak of Infinite Potential
 				}),
 				filter(CLOTH, {
@@ -3506,7 +3495,6 @@ root(ROOTS.Unsorted, {
 				filter(TRINKET_F, {
 					i(208556),	-- Flicker Blossom
 					i(208554),	-- Timerunner's Beacon
-					i(208555),	-- Timerunner's Idol
 				}),
 				n(WEAPONS, {
 					i(210342),	-- Bataari Hacker

@@ -176,7 +176,6 @@ REMOVED_4_3_2 = "removed 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 
 -----------------------
 -- MISTS OF PANDARIA --
 -----------------------
-ADDED_5_0_1 = "added 5.0.1";							-- TODO
 CREATED_5_0_4 = "created 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
 ADDED_5_0_4 = "added 5.0.4.16016";						-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
 REMOVED_5_0_4 = "removed 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
@@ -360,6 +359,7 @@ CREATED_10_2_7 = "created 10.2.7";						-- Dragonflight 10.2.7 Launch on
 ADDED_10_2_7 = "added 10.2.7";							-- Dragonflight 10.2.7 Launch on
 REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on
 
+REMOVED_REMIX = "removed 11.0.0";						-- PlaceHolder Until we know
 --------------------
 -- THE WAR WITHIN --
 --------------------
