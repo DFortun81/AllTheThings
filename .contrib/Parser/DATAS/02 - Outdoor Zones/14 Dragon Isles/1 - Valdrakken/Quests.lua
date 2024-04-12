@@ -327,6 +327,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201793),	-- Resplendent Gemstone
 				},
 			}),
+			------ 10.2.6
 			q(79448, {	-- Leave No Flightstone Unturned
 				["provider"] = { "n", 216449 },	-- Vaskarn
 				["coord"] = { 45.5, 55.9, VALDRAKKEN },
@@ -341,6 +342,51 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(211951),	-- Pouch of Whelpling's Awakened Crests
 				},
 			}),
+			------ 10.2.7
+			q(79511, {	-- Identity Crisis
+				["provider"] = { "n", 216946 },	-- Chromie
+				["coord"] = { 48.5, 60.4, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_7 },
+				--["isBreadcrumb"] = xx, TODO: re-check it
+			}),
+			q(79512, {	-- Who Are You?
+				["sourceQuests"] = { 79511 },	-- Identity Crisis
+				["provider"] = { "n", 216945 },	-- Scalecommander Emberthal
+				["coord"] = { 29.4, 49.8, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_7 },
+			}),
+			q(79515, {	-- Gather Your Rosebuds
+				["sourceQuests"] = { 79512 },	-- Who Are You?
+				["provider"] = { "n", 216951 },	-- Kalecgos
+				["coord"] = { 29.5, 49.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_7 },
+				["g"] = {
+					i(219285),	-- Azure Lily (QI!)
+					i(219283),	-- Obsidian Iris (QI!)
+					i(219290),	-- Ruby Blossom (QI!)
+					i(219287),	-- Time-Touched Daisy (QI!)
+					i(219288),	-- Viridian Bloom (QI!)
+				},
+			}),
+			q(79514, {	-- Don't Threaten Me With a Good Time
+				["sourceQuests"] = { 79512 },	-- Who Are You?
+				["provider"] = { "n", 216967 },	-- Scalecommander Cindrethresh
+				["coord"] = { 29.6, 49.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_7 },
+				["g"] = {
+					i(217348),	-- Arcane Residue (QI!)
+				},
+			}),
+			q(79513, {	-- Dragon Isles Adventuring: Being Yourself
+				["sourceQuests"] = { 
+					79514,	-- Don't Threaten Me With a Good Time
+					79515,	-- Gather Your Rosebuds
+				},
+				["provider"] = { "n", 216950 },	-- Scalecommander Viridia
+				["coord"] = { 29.5, 49.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_7 },
+			}),
+			-- TODO: probably should fire hqt after this quest but on ptr character get dc during rp
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 194026 },	-- Azley

@@ -337,8 +337,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(QUEST_ITEMS, {
 				i(216712),	-- Bronze Timepiece
-				i(217003),	-- Koroleth's Necklace
-				i(217348),	-- Arcane Residue
 				i(217349),	-- DEPRECATED - Arcane Dust
 				i(217930),	-- Nostwin's Voucher
 			}),
@@ -2109,11 +2107,6 @@ root(ROOTS.Unsorted, {
 					i(219280),	-- Infinite Thread of Mastery
 					i(219281),	-- Infinite Thread of Versatility
 					i(219282),	-- Infinite Thread of Experience
-					i(219283),	-- Obsidian Iris
-					i(219285),	-- Azure Lily
-					i(219287),	-- Time-Touched Daisy
-					i(219288),	-- Viridian Bloom
-					i(219290),	-- Ruby Blossom
 					i(219940),	-- Meteor Chip
 					i(220367),	-- Chipped Stalwart Pearl
 					i(220368),	-- Flawed Stalwart Pearl
@@ -2945,7 +2938,6 @@ root(ROOTS.Unsorted, {
 				i(217726),	-- Fortitude of Niuzao (TOY!)
 				i(217723),	-- Fury of Xuen (TOY!)
 				i(217724),	-- Kindness of Chi-ji (TOY!)
-				i(223146),	-- Satchel of Stormborn Seeds (TOY!)
 				i(220692),	-- X-treme Water Blaster Display (TOY!)
 			}),
 		})),
@@ -2998,7 +2990,6 @@ root(ROOTS.Unsorted, {
 				i(217415),	-- Depleted Ruby Flightstone
 				i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
 				i(217420),	-- Large Pouch of Whelpling's Awakened Crests
-				i(211951),	-- Pouch of Whelpling's Awakened Crests
 				i(220204),	-- Pouch of Whelpling's Dreaming Crests
 				i(211952),	-- Satchel of Drake's Awakened Crests
 				i(220205),	-- Satchel of Drake's Dreaming Crests
