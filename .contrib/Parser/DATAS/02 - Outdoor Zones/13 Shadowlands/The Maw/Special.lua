@@ -138,16 +138,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					n(178898, {	-- Golmak The Monstrosity
-						-- ["questID"] = 64114,	-- carb got 64114 from golmak, but i got 64697 and 64114 returns false (first tormentor of the day for both of us)
-						-- ["repeatable"] = true,
+						["questID"] = 64114,	-- confirmed 2023-04-12
+						["repeatable"] = true,
 						["g"] = {
 							i(186229),	-- Lavafused Breastplate
 							i(186221),	-- Seared-Link Sabatons
 						},
 					}),
 					n(177979, {	-- Gralebboih
-						-- ["questID"] = 64113,
-						-- ["repeatable"] = true,
+						["questID"] = 64113,	-- confirmed 2023-04-12
+						["repeatable"] = true,
 						["g"] = {
 							i(186237),	-- Gormhide Pauldrons
 							i(186449),	-- Amaranthine Stinger (PET!)
@@ -218,16 +218,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					n(177331, {	-- Sentinel Pyrophus
-						-- ["questID"] = 64127,
-						-- ["repeatable"] = true,
+						["questID"] = 64127,	-- confirmed 2023-04-12
+						["repeatable"] = true,
 						["g"] = {
 							i(186241),	-- Insulated Thermal Leggings
 							i(186219),	-- Pyrophus' Wrist Ties
 						},
 					}),
 					n(178883, {	-- Sentinel Shakorzeth
-						-- ["questID"] = 64121,
-						-- ["repeatable"] = true,
+						["questID"] = 64121,	-- confirmed 2023-04-12
+						["repeatable"] = true,
 						["g"] = {
 							i(186244),	-- Shakorzeth's Gorget
 							i(186225),	-- Shoulder Joint Spindles
@@ -261,6 +261,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			})),
 			header(HEADERS.Spell, 347208, {
 				["icon"] = "Interface\\Icons\\ui_torghast",
+				["description"] = "The Weekly lockout pertains only to Epic Gear Loot, Rare Gear loot can be farmed regardless.",
 				["questID"] = 63414,
 				["isWeekly"] = true,
 				["g"] = {
