@@ -424,14 +424,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 61.6, 38.6, WINTERSPRING },
 						}),
-						objective(1, {	-- Scare Sprinkle
+						objective(2, {	-- Scare Sprinkle
 							["providers"] = {
 								{ "n", 7583 },	-- Sprinkle
 								{ "i", 12928 },	-- Umi's Mechanical Yeti
 							},
 							["coord"] = { 51.0, 26.8, TANARIS },
 						}),
-						objective(1, {	-- Scare Quixxil
+						objective(3, {	-- Scare Quixxil
 							["providers"] = {
 								{ "n", 10977 },	-- Quixxil
 								{ "i", 12928 },	-- Umi's Mechanical Yeti

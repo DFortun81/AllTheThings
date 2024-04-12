@@ -1718,6 +1718,7 @@ _.ObjectNames = {
 	[174712] = "Corrupted Songflower",
 	[174713] = "Corrupted Songflower",
 	[174728] = "Damaged Crate",
+	[174792] = "Gorishi Silithid Crystal",
 	[174793] = "Gorishi Hive Hatchery",
 	[174848] = "Testing Equipment",
 	[175165] = "Silver Dawning's Lockbox",
