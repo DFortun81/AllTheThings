@@ -4605,7 +4605,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(52844),	--
 			q(52846),	--
 			q(52863),	--
-			q(52868),	--
 			q(52881),	--
 			q(52883),	-- Breakthru
 			-- 8.0.1.26585

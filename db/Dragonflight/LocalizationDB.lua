@@ -557,6 +557,7 @@ localize(L.HEADER_NAMES, {
 	[-1000869] = "The Iron Invasion",
 	[-1000870] = "The Troll Incursion",
 	[-1000872] = "Plunderstorm",
+	[-1000873] = "Remix: Mists of Pandaria",
 	[-1000874] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1000875] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
