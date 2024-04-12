@@ -210,207 +210,209 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 		n(QUESTS, {
-			q(54479, {	-- Jeweled Designs (A)
+			q(54479, {	-- Jeweled Designs [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
 			}),
-			q(54480, {	-- Jeweled Designs (H)
+			q(54480, {	-- Jeweled Designs [H]
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
 			}),
 			-- Tools of Trade Questline
-			q(49570, {	-- A Rocky Start (A)
+			q(49570, {	-- A Rocky Start [A]
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 75.0, 10.2, BORALUS },
 				["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49585, {	-- A Rocky Start (H)
+			q(49585, {	-- A Rocky Start [H]
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 46.9, 38.0, DAZARALOR },
 				["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49571, {	-- Digging Through the Past (A)
+			q(49571, {	-- Digging Through the Past [A]
+				["sourceQuests"] = { 49570 },	-- A Rocky Start [A]
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
-				["sourceQuest"] = 49570,	-- A Rocky Start (A)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49586, {	-- Digging Through the Past (H)
+			q(49586, {	-- Digging Through the Past [H]
+				["sourceQuests"] = { 49585 },	-- A Rocky Start [H]
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
-				["sourceQuest"] = 49585,	-- A Rocky Start (H)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49574, {	-- The Shrine of Storms
+				["sourceQuests"] = { 49571 },	-- Digging Through the Past [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["sourceQuest"] = 49571,	-- Digging Through the Past (A)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49589, {	-- The Shrine of the Dawning
+				["sourceQuests"] = { 49586 },	-- Digging Through the Past [H]
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["sourceQuest"] = 49586,	-- Digging Through the Past (H)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49577, {	-- Cracking the Surface (A)
+			q(49577, {	-- Cracking the Surface [A]
+				["sourceQuests"] = { 49574 },	-- The Shrine of Storms
 				["provider"] = { "n", 150898 },	-- Shrine of Storms
 				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49574,	-- The Shrine of Storms
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49583, {	-- Out With the Old (H)
+			q(49583, {	-- Out With the Old [H]
+				["sourceQuests"] = { 49589 },	-- The Shrine of the Dawning
 				["provider"] = { "n", 150897 },	-- Shrine of the Dawning
 				["coord"] = { 61.4, 37.2, NAZMIR },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49589,	-- The Shrine of the Dawning
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55585, {	-- A Promising Beginning (A)
+			q(55585, {	-- A Promising Beginning [A]
+				["sourceQuests"] = { 49577 },	-- Cracking the Surface [A]
 				["provider"] = { "n", 152489 },	-- Shrine of Storms
 				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49577,	-- Cracking the Surface (A)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55592, {	-- A Promising Beginning (H)
+			q(55592, {	-- A Promising Beginning [H]
+				["sourceQuests"] = { 49583 },	-- Out With the Old [H]
 				["provider"] = { "n", 152490 },	-- Shrine of the Dawning
 				["coord"] = { 61.4, 37.2, NAZMIR },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49583,	-- Out With the Old (H)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49572, {	-- The Shrine of the Sea
+				["sourceQuests"] = { 55585 },	-- A Promising Beginning [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["sourceQuest"] = 55585,	-- A Promising Beginning (A)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49587, {	-- The Shrine of Nature
+				["sourceQuests"] = { 55592 },	-- A Promising Beginning [H]
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["sourceQuest"] = 55592,	-- A Promising Beginning (H)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49575, {	-- Tol Dagor: Jewel of the Tides
+				["sourceQuests"] = { 49572 },	-- The Shrine of the Sea
 				["provider"] = { "n", 150893 },	-- Shrine of the Sea
 				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49572,	-- The Shrine of the Sea
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { 974, 975, 976, 977, 978, 979, 980 },	-- Tol Dagor
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49582, {	-- Atal'Dazar: Not All That Glitters...
+				["sourceQuests"] = { 49587 },	-- The Shrine of Nature
 				["provider"] = { "n", 150894 },	-- Shrine of Nature
 				["coord"] = { 43.2, 64.3, ZULDAZAR },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49587,	-- The Shrine of Nature
 				["races"] = HORDE_ONLY,
+				["maps"] = { 934, 935 },	-- Atal'Dazar
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55590, {	-- Setting Things Right (A)
+			q(55590, {	-- Setting Things Right [A]
+				["sourceQuests"] = { 49575 },	-- Tol Dagor: Jewel of the Tides
 				["provider"] = { "n", 152495 },	-- Shrine of the Sea
 				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49575,	-- Tol Dagor: Jewel of the Tides
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55596, {	-- Setting Things Right (H)
+			q(55596, {	-- Setting Things Right [H]
+				["sourceQuests"] = { 49582 },	-- Atal'Dazar: Not All That Glitters...
 				["provider"] = { "n", 152496 },	-- Shrine of Nature
 				["coord"] = { 43.2, 64.3, ZULDAZAR },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49582,	-- Atal'Dazar: Not All That Glitters...
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49573, {	-- The Shrine of the Eventide
+				["sourceQuests"] = { 55585 },	-- A Promising Beginning [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["sourceQuest"] = 55585,	-- A Promising Beginning (A)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49588, {	-- The Shrine of the Sands
+				["sourceQuests"] = { 55592 },	-- A Promising Beginning
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["sourceQuest"] = 55592,	-- A Promising Beginning
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49576, {	-- High Prospects
+				["sourceQuests"] = { 49573 },	-- The Shrine of the Eventide
 				["provider"] = { "n", 150896 },	-- Shrine of the Eventide
 				["coord"] = { 34.1, 35.5, DRUSTVAR },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49573,	-- The Shrine of the Eventide
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49581, {	-- Sun-Speckled Dunes
+				["sourceQuests"] = { 49588 },	-- The Shrine of the Sands
 				["provider"] = { "n", 150895 },	-- Shrine of the Sands
 				["coord"] = { 44.2, 38.0, VOLDUN },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49588,	-- The Shrine of the Sands
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55586, {	-- Polished Up (A)
+			q(55586, {	-- Polished Up [A]
+				["sourceQuests"] = { 49576 },	-- High Prospects
 				["provider"] = { "n", 152497 },	-- Shrine of the Eventide
 				["coord"] = { 34.1, 35.5, DRUSTVAR },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49576,	-- High Prospects
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55594, {	-- Polished Up (H)
+			q(55594, {	-- Polished Up [H]
+				["sourceQuests"] = { 49581 },	-- Sun-Speckled Dunes
 				["provider"] = { "n", 152493 },	-- Shrine of the Sands
 				["coord"] = { 44.2, 38.0, VOLDUN },
 				["modelScale"] = 2,
-				["sourceQuest"] = 49581,	-- Sun-Speckled Dunes
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49584, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter (A)
+			q(49584, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter [A]
+				["sourceQuests"] = {
+					55586,	-- Polished Up [A]
+					55590,	-- Setting Things Right [A]
+				},
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["sourceQuests"] = {
-					55590,	-- Setting Things Right (A)
-					55586,	-- Polished Up (A)
-				},
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					recipe(256703),	-- Design: Jewelhammer's Focus
+					r(256703),	-- Jewelhammer's Focus
 				},
 			})),
-			q(49599, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter (H)
+			q(49599, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter [H]
+				["sourceQuests"] = {
+					55594,	-- Polished Up [H]
+					55596,	-- Setting Things Right [H]
+				},
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["sourceQuests"] = {
-					55596,	-- Setting Things Right (H)
-					55594,	-- Polished Up (H)
-				},
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					recipe(256703),	-- Design: Jewelhammer's Focus
+					r(256703),	-- Jewelhammer's Focus
 				},
 			})),
 		}),
@@ -5498,782 +5500,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["cost"] = {
 					{ "i", 123918, 5 },	-- Leystone Ore
 				},
-			}),
-		}),
-	})),
-	applyclassicphase(BFA_PHASE_ONE, expansion(EXPANSION.BFA, {
-		{
-			["name"] = "Gems",
-			["categoryID"] = 817,
-			["groups"] = {
-				{
-					["name"] = "Deadly Amberblaze",
-					["recipeID"] = 256696
-				},
-				{
-					["name"] = "Deadly Lava Lazuli",
-					["recipeID"] = 298798
-				},
-				{
-					["name"] = "Deadly Solstone",
-					["recipeID"] = 256689
-				},
-				{
-					["name"] = "Kraken's Eye of Agility",
-					["recipeID"] = 256701
-				},
-				{
-					["name"] = "Kraken's Eye of Intellect",
-					["recipeID"] = 256702
-				},
-				{
-					["name"] = "Kraken's Eye of Strength",
-					["recipeID"] = 256700
-				},
-				{
-					["name"] = "Leviathan's Eye of Agility",
-					["recipeID"] = 298800
-				},
-				{
-					["name"] = "Leviathan's Eye of Intellect",
-					["recipeID"] = 298801
-				},
-				{
-					["name"] = "Leviathan's Eye of Strength",
-					["recipeID"] = 298799
-				},
-				{
-					["name"] = "Masterful Kubiline",
-					["recipeID"] = 256692
-				},
-				{
-					["name"] = "Masterful Sea Currant",
-					["recipeID"] = 298797
-				},
-				{
-					["name"] = "Masterful Tidal Amethyst",
-					["recipeID"] = 256698
-				},
-				{
-					["name"] = "Natant Rubellite",
-					["recipeID"] = 256693
-				},
-				{
-					["name"] = "Quick Golden Beryl",
-					["recipeID"] = 256694
-				},
-				{
-					["name"] = "Quick Owlseye",
-					["recipeID"] = 256699
-				},
-				{
-					["name"] = "Quick Sand Spinel",
-					["recipeID"] = 298796
-				},
-				{
-					["name"] = "Straddling Sage Agate",
-					["recipeID"] = 300756
-				},
-				{
-					["name"] = "Straddling Viridium",
-					["recipeID"] = 256691
-				},
-				{
-					["name"] = "Versatile Dark Opal",
-					["recipeID"] = 298794
-				},
-				{
-					["name"] = "Versatile Kyanite",
-					["recipeID"] = 256690
-				},
-				{
-					["name"] = "Versatile Royal Quartz",
-					["recipeID"] = 256695
-				}
-			}
-		},
-		{
-			["name"] = "Mass Prospecting",
-			["categoryID"] = 818,
-			["groups"] = {
-				{
-					["name"] = "Mass Prospect Monelite",
-					["recipeID"] = 256611
-				},
-				{
-					["name"] = "Mass Prospect Osmenite",
-					["recipeID"] = 300619
-				},
-				{
-					["name"] = "Mass Prospect Platinum",
-					["recipeID"] = 256622
-				},
-				{
-					["name"] = "Mass Prospect Storm Silver",
-					["recipeID"] = 256613
-				}
-			}
-		},
-		{
-			["name"] = "Rings",
-			["categoryID"] = 819,
-			["groups"] = {
-				{
-					["name"] = "Amberblaze Loop",
-					["nextRecipeID"] = 256514,
-					["recipeID"] = 256510
-				},
-				{
-					["name"] = "Amberblaze Loop",
-					["nextRecipeID"] = 256515,
-					["previousRecipeID"] = 256510,
-					["recipeID"] = 256514
-				},
-				{
-					["name"] = "Amberblaze Loop",
-					["previousRecipeID"] = 256514,
-					["recipeID"] = 256515
-				},
-				{
-					["name"] = "Ascended Leviathan's Eye Loop",
-					["recipeID"] = 299018
-				},
-				{
-					["name"] = "Awakened Leviathan's Eye Loop",
-					["recipeID"] = 305981
-				},
-				{
-					["name"] = "Crushing Leviathan's Eye Loop",
-					["recipeID"] = 299017
-				},
-				{
-					["name"] = "Emblazoned Kraken's Eye Loop",
-					["recipeID"] = 289175
-				},
-				{
-					["name"] = "Eternal Kraken's Eye Loop",
-					["recipeID"] = 289181
-				},
-				{
-					["name"] = "Golden Beryl Ring",
-					["recipeID"] = 272227
-				},
-				{
-					["name"] = "Imbued Kraken's Eye Loop",
-					["recipeID"] = 289174
-				},
-				{
-					["name"] = "Kraken's Eye Loop",
-					["recipeID"] = 289105
-				},
-				{
-					["name"] = "Kubiline Ring",
-					["recipeID"] = 272228
-				},
-				{
-					["name"] = "Kyanite Ring",
-					["recipeID"] = 272230
-				},
-				{
-					["name"] = "Leviathan's Eye Loop",
-					["recipeID"] = 299016
-				},
-				{
-					["name"] = "Owlseye Loop",
-					["nextRecipeID"] = 256516,
-					["recipeID"] = 256511
-				},
-				{
-					["name"] = "Owlseye Loop",
-					["nextRecipeID"] = 256517,
-					["previousRecipeID"] = 256511,
-					["recipeID"] = 256516
-				},
-				{
-					["name"] = "Owlseye Loop",
-					["previousRecipeID"] = 256516,
-					["recipeID"] = 256517
-				},
-				{
-					["name"] = "Peerless Leviathan's Eye Loop",
-					["recipeID"] = 305980
-				},
-				{
-					["name"] = "Royal Quartz Loop",
-					["nextRecipeID"] = 256520,
-					["recipeID"] = 256513
-				},
-				{
-					["name"] = "Royal Quartz Loop",
-					["nextRecipeID"] = 256521,
-					["previousRecipeID"] = 256513,
-					["recipeID"] = 256520
-				},
-				{
-					["name"] = "Royal Quartz Loop",
-					["previousRecipeID"] = 256520,
-					["recipeID"] = 256521
-				},
-				{
-					["name"] = "Solstone Ring",
-					["recipeID"] = 272226
-				},
-				{
-					["name"] = "Spirited Kraken's Eye Loop",
-					["recipeID"] = 289180
-				},
-				{
-					["name"] = "Tidal Amethyst Loop",
-					["nextRecipeID"] = 256518,
-					["recipeID"] = 256512
-				},
-				{
-					["name"] = "Tidal Amethyst Loop",
-					["nextRecipeID"] = 256519,
-					["previousRecipeID"] = 256512,
-					["recipeID"] = 256518
-				},
-				{
-					["name"] = "Tidal Amethyst Loop",
-					["previousRecipeID"] = 256518,
-					["recipeID"] = 256519
-				},
-				{
-					["name"] = "Tidal Kraken's Eye Loop",
-					["recipeID"] = 289179
-				},
-				{
-					["name"] = "Unbound Leviathan's Eye Loop",
-					["recipeID"] = 305982
-				}
-			}
-		},
-		{
-			["name"] = "Weapons",
-			["categoryID"] = 820,
-			["groups"] = {
-				{
-					["name"] = "Honorable Combatant's Intuitive Staff",
-					["nextRecipeID"] = 269735,
-					["recipeID"] = 269734
-				},
-				{
-					["name"] = "Honorable Combatant's Intuitive Staff",
-					["nextRecipeID"] = 269736,
-					["previousRecipeID"] = 269734,
-					["recipeID"] = 269735
-				},
-				{
-					["name"] = "Honorable Combatant's Intuitive Staff",
-					["previousRecipeID"] = 269735,
-					["recipeID"] = 269736
-				},
-				{
-					["name"] = "Laribole Staff of Alacrity",
-					["nextRecipeID"] = 256256,
-					["recipeID"] = 256255
-				},
-				{
-					["name"] = "Laribole Staff of Alacrity",
-					["nextRecipeID"] = 256257,
-					["previousRecipeID"] = 256255,
-					["recipeID"] = 256256
-				},
-				{
-					["name"] = "Laribole Staff of Alacrity",
-					["previousRecipeID"] = 256256,
-					["recipeID"] = 256257
-				},
-				{
-					["name"] = "Notorious Combatant's Intuitive Staff",
-					["nextRecipeID"] = 294794,
-					["recipeID"] = 294793
-				},
-				{
-					["name"] = "Notorious Combatant's Intuitive Staff",
-					["nextRecipeID"] = 294795,
-					["previousRecipeID"] = 294793,
-					["recipeID"] = 294794
-				},
-				{
-					["name"] = "Notorious Combatant's Intuitive Staff",
-					["previousRecipeID"] = 294794,
-					["recipeID"] = 294795
-				},
-				{
-					["name"] = "Rubellite Staff of Intuition",
-					["recipeID"] = 256254
-				},
-				{
-					["name"] = "Scarlet Diamond Staff of Intuition",
-					["nextRecipeID"] = 256259,
-					["recipeID"] = 256258
-				},
-				{
-					["name"] = "Scarlet Diamond Staff of Intuition",
-					["nextRecipeID"] = 256260,
-					["previousRecipeID"] = 256258,
-					["recipeID"] = 256259
-				},
-				{
-					["name"] = "Scarlet Diamond Staff of Intuition",
-					["previousRecipeID"] = 256259,
-					["recipeID"] = 256260
-				},
-				{
-					["name"] = "Sinister Combatant's Intuitive Staff",
-					["nextRecipeID"] = 282344,
-					["recipeID"] = 282343
-				},
-				{
-					["name"] = "Sinister Combatant's Intuitive Staff",
-					["nextRecipeID"] = 282345,
-					["previousRecipeID"] = 282343,
-					["recipeID"] = 282344
-				},
-				{
-					["name"] = "Sinister Combatant's Intuitive Staff",
-					["previousRecipeID"] = 282344,
-					["recipeID"] = 282345
-				},
-				{
-					["name"] = "Uncanny Combatant's Intuitive Staff",
-					["nextRecipeID"] = 305170,
-					["recipeID"] = 305168
-				},
-				{
-					["name"] = "Uncanny Combatant's Intuitive Staff",
-					["nextRecipeID"] = 305171,
-					["previousRecipeID"] = 305168,
-					["recipeID"] = 305170
-				},
-				{
-					["name"] = "Uncanny Combatant's Intuitive Staff",
-					["previousRecipeID"] = 305170,
-					["recipeID"] = 305171
-				},
-				{
-					["name"] = "Viridium Staff of Alacrity",
-					["recipeID"] = 256253
-				}
-			}
-		},
-		{
-			["name"] = "Conversions",
-			["categoryID"] = 1243,
-			["groups"] = {
-				{
-					["name"] = "Aqueous Recalibration",
-					["recipeID"] = 287272
-				},
-				{
-					["name"] = "Sanguinated Recalibration",
-					["recipeID"] = 286651
-				}
-			}
-		},
-		{
-			["name"] = "Focus",
-			["categoryID"] = 1307,
-			["groups"] = {
-				{
-					["name"] = "Void Focus",
-					["recipeID"] = 307219
-				}
-			}
-		},
-		{
-			["name"] = "Follower Equipment",
-			["categoryID"] = 1233,
-			["groups"] = {
-				{
-					["name"] = "Kaleidoscopic Lens",
-					["recipeID"] = 278419
-				}
-			}
-		},
-		{
-			["name"] = "Tool of the Trade",
-			["categoryID"] = 1278,
-			["groups"] = {
-				{
-					["name"] = "Jewelhammer's Focus",
-					["recipeID"] = 256703
-				}
-			}
-		},
-		n(DISCOVERY, {
-			{	-- Imbued Kraken's Eye Loop
-				["spellID"] = 289174,	-- Imbued Kraken's Eye Loop
-				["groups"] = {
-					i(166541),	-- Recipe: Emblazoned Kraken's Eye Loop (RECIPE!)
-				},
-			},
-			{	-- Kraken's Eye Loop
-				["spellID"] = 289105,	-- Kraken's Eye Loop
-				["groups"] = {
-					i(166540),	-- Recipe: Imbued Kraken's Eye Loop (RECIPE!)
-				},
-			},
-			{	-- Spirited Kraken's Eye Loop
-				["spellID"] = 289180,	-- Spirited Kraken's Eye Loop
-				["groups"] = {
-					i(166543),	-- Design: Eternal Kraken's Eye Loop (RECIPE!)
-				},
-			},
-			{	-- Tidal Kraken's Eye Loop
-				["spellID"] = 289179,	-- Tidal Kraken's Eye Loop
-				["groups"] = {
-					i(166542),	-- Design: Spirited Kraken's Eye Loop (RECIPE!)
-				},
-			},
-		}),
-	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
-		{
-			["name"] = "Quest Recipes",
-			["categoryID"] = 1530,
-			["groups"] = {
-				{
-					["name"] = "Brilliant Bauble",
-					["recipeID"] = 338248,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Carved Crystal Ring",
-					["recipeID"] = 338244,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Engraved Phaedrum Band",
-					["recipeID"] = 338239,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Faceted Crystal",
-					["recipeID"] = 338246,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Fine Sinvyr Chain",
-					["recipeID"] = 338249,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Gem Studded Bangle",
-					["recipeID"] = 338238,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Gleaming Kyranite Necklace",
-					["recipeID"] = 338241,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Hollowed Crystal",
-					["recipeID"] = 338245,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Kyranite Dangle",
-					["recipeID"] = 338242,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Polished Gemstones",
-					["recipeID"] = 338240,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Sinister Choker",
-					["recipeID"] = 338247,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				},
-				{
-					["name"] = "Solenium Wire",
-					["recipeID"] = 338243,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,	-- Training Recipes / Unlearnable
-					-- #endif
-				}
-			}
-		},
-		{
-			["name"] = "Gems",
-			["categoryID"] = 1419,
-			["groups"] = {
-				{
-					["name"] = "Deadly Jewel Cluster",
-					["recipeID"] = 311863
-				},
-				{
-					["name"] = "Deadly Jewel Doublet",
-					["recipeID"] = 311868
-				},
-				{
-					["name"] = "Masterful Jewel Cluster",
-					["recipeID"] = 311864
-				},
-				{
-					["name"] = "Masterful Jewel Doublet",
-					["recipeID"] = 311869
-				},
-				{
-					["name"] = "Quick Jewel Cluster",
-					["recipeID"] = 311865
-				},
-				{
-					["name"] = "Quick Jewel Doublet",
-					["recipeID"] = 311871
-				},
-				{
-					["name"] = "Revitalizing Jewel Doublet",
-					["recipeID"] = 311870
-				},
-				{
-					["name"] = "Straddling Jewel Doublet",
-					["recipeID"] = 311867
-				},
-				{
-					["name"] = "Versatile Jewel Cluster",
-					["recipeID"] = 311859
-				},
-				{
-					["name"] = "Versatile Jewel Doublet",
-					["recipeID"] = 311866
-				}
-			}
-		},
-		{
-			["name"] = "Mass Prospecting",
-			["categoryID"] = 1420,
-			["groups"] = {
-				{
-					["name"] = "Mass Prospect Elethium",
-					["recipeID"] = 311953
-				},
-				{
-					["name"] = "Mass Prospect Laestrite",
-					["recipeID"] = 311948
-				},
-				{
-					["name"] = "Mass Prospect Oxxein",
-					["recipeID"] = 311950
-				},
-				{
-					["name"] = "Mass Prospect Phaedrum",
-					["recipeID"] = 311951
-				},
-				{
-					["name"] = "Mass Prospect Progenium",
-					["recipeID"] = 359492,
-					["timeline"] = { "added 9.2.0" },
-				},
-				{
-					["name"] = "Mass Prospect Sinvyr",
-					["recipeID"] = 311952
-				},
-				{
-					["name"] = "Mass Prospect Solenium",
-					["recipeID"] = 311949
-				}
-			}
-		},
-		{
-			["name"] = "Optional Reagents",
-			["categoryID"] = 1421,
-			["groups"] = {
-				{
-					["name"] = "Aealic Harmonizing Stone",
-					["recipeID"] = 360016,
-					["timeline"] = { "added 9.2.0" },
-				},
-				{
-					["name"] = "Crafter's Mark I",
-					["recipeID"] = 343697
-				},
-				{
-					["name"] = "Crafter's Mark II",
-					["recipeID"] = 343696
-				},
-				{
-					["name"] = "Crafter's Mark IV",
-					["recipeID"] = 359663,
-					["timeline"] = { "added 9.2.0" },
-				},
-				{
-					["name"] = "Crafter's Mark of the First Ones",
-					["recipeID"] = 359672,
-					["timeline"] = { "added 9.2.0" },
-				},
-				{
-					["name"] = "Devourer Essence Stone",
-					["recipeID"] = 360317,
-					["timeline"] = { "added 9.2.0" },
-				},
-				{
-					["name"] = "Novice Crafter's Mark",
-					["recipeID"] = 343693
-				},
-				{
-					["name"] = "Vestige of the Eternal",
-					["recipeID"] = 359701,
-					["timeline"] = { "added 9.2.0" },
-				},
-			}
-		},
-		{
-			["name"] = "Necklaces",
-			["categoryID"] = 1422,
-			["groups"] = {
-				{
-					["name"] = "Deadly Laestrite Choker",
-					["recipeID"] = 311902
-				},
-				{
-					["name"] = "Deadly Sinvyr Necklace",
-					["recipeID"] = 311906
-				},
-				{
-					["name"] = "Masterful Laestrite Choker",
-					["recipeID"] = 311904
-				},
-				{
-					["name"] = "Masterful Phaedrum Necklace",
-					["recipeID"] = 311908
-				},
-				{
-					["name"] = "Quick Laestrite Choker",
-					["recipeID"] = 311903
-				},
-				{
-					["name"] = "Quick Oxxein Necklace",
-					["recipeID"] = 311907
-				},
-				{
-					["name"] = "Versatile Laestrite Choker",
-					["recipeID"] = 311905
-				},
-				{
-					["name"] = "Versatile Solenium Necklace",
-					["recipeID"] = 311909
-				}
-			}
-		},
-		{
-			["name"] = "Rings",
-			["categoryID"] = 1424,
-			["groups"] = {
-				{
-					["name"] = "Deadly Laestrite Band",
-					["recipeID"] = 311880
-				},
-				{
-					["name"] = "Deadly Sinvyr Ring",
-					["recipeID"] = 311884
-				},
-				{
-					["name"] = "Masterful Laestrite Band",
-					["recipeID"] = 311882
-				},
-				{
-					["name"] = "Masterful Phaedrum Ring",
-					["recipeID"] = 311886
-				},
-				{
-					["name"] = "Quick Laestrite Band",
-					["recipeID"] = 311881
-				},
-				{
-					["name"] = "Quick Oxxein Ring",
-					["recipeID"] = 311885
-				},
-				{
-					["name"] = "Versatile Laestrite Band",
-					["recipeID"] = 311883
-				},
-				{
-					["name"] = "Versatile Solenium Ring",
-					["recipeID"] = 311887
-				}
-			}
-		},
-		{
-			["name"] = "Specialized Jewelry",
-			["categoryID"] = 1484,
-			["groups"] = {
-				{
-					["name"] = "Shadowghast Necklace",
-					["recipeID"] = 332040
-				},
-				{
-					["name"] = "Shadowghast Necklace",
-					["recipeID"] = 327921
-				},
-				{
-					["name"] = "Shadowghast Necklace",
-					["recipeID"] = 338977
-				},
-				{
-					["name"] = "Shadowghast Necklace",
-					["recipeID"] = 332075
-				},
-				{
-					["name"] = "Shadowghast Ring",
-					["recipeID"] = 332039
-				},
-				{
-					["name"] = "Shadowghast Ring",
-					["recipeID"] = 332074
-				},
-				{
-					["name"] = "Shadowghast Ring",
-					["recipeID"] = 327920
-				},
-				{
-					["name"] = "Shadowghast Ring",
-					["recipeID"] = 338978
-				}
-			}
-		},
-		{
-			["name"] = "Hats",
-			["categoryID"] = 1520,
-			["groups"] = {
-				{
-					["name"] = "Crown of the Righteous",
-					["recipeID"] = 334548,
-				}
-			}
-		},
-		category(178, {	-- Statues
-			recipe(355187, {	-- Porous Stone Statue
-				["name"] = "Porous Stone Statue",
-			}),
-			recipe(355189, {	-- Shaded Stone Statue
-				["name"] = "Shaded Stone Statue",
 			}),
 		}),
 	})),

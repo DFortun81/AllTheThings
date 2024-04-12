@@ -4,6 +4,12 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JEWELCRAFTING, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.BFA, {
+				-- 8.0.1
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+					i(159938),	-- Honorable Combatant's Staff of Alacrity
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -32,6 +38,30 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.BFA, {
+				-- 8.0.1
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+					r(269731),	-- Honorable Combatant's Staff of Alacrity [Rank 1]
+					r(256612),	-- Mass Prospect Monelite
+					r(256623),	-- Mass Prospect Platinum
+					r(256614),	-- Mass Prospect Storm Silver
+					-- With SpellID attached
+					i(162383),	-- Design: Honorable Combatant's Staff of Alacrity [Rank 2]
+					i(162384),	-- Design: Honorable Combatant's Staff of Alacrity [Rank 3]
+				})),
+
+				-- 8.2.0
+				expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+					r(301993),	-- Prospecting
+					r(301994),	-- Prospecting
+					r(302706),	-- Prospecting
+					r(302707),	-- Prospecting
+					r(302708),	-- Prospecting
+					r(302710),	-- Prospecting
+					r(302711),	-- Prospecting
+					r(302712),	-- Prospecting
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {

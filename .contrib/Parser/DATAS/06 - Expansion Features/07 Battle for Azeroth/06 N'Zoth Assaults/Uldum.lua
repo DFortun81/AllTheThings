@@ -1542,6 +1542,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 								r(307220, {	-- Void Focus
 									["requireSkill"] = ENGINEERING,
 								}),
+								r(307219, {	-- Void Focus
+									["requireSkill"] = JEWELCRAFTING,
+								}),
 								r(307176, {	-- Void Focus
 									["requireSkill"] = LEATHERWORKING,
 								}),

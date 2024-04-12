@@ -775,7 +775,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(168959, {["timeline"] = {ADDED_8_2_0}}),	-- Contract: Unshackled
 			i(153666),	-- Contract: Voldunai
 			i(153664),	-- Contract: Zandalari Empire
-			i(162114),	-- Crimson Ink Well
+			i(162114, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Crimson Ink Well
 			i(165745, {["timeline"] = {ADDED_8_1_0}}),	-- Crimson Ink Well
 			i(153670, {["timeline"] = {ADDED_8_1_5}}),	-- Sanguine Feather Quill of Lana'thel
 			i(159825),	-- Scroll of Unlocking
@@ -847,14 +847,76 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			spell(299018, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Leviathan's Eye Loop
 				i(168772),	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
 			})),
+			spell(289174, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Kraken's Eye Loop
+				i(166541),	-- Design: Emblazoned Kraken's Eye Loop (RECIPE!)
+			})),
+			spell(289105, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Kraken's Eye Loop
+				i(166540),	-- Design: Imbued Kraken's Eye Loop (RECIPE!)
+			})),
 			spell(299016, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Leviathan's Eye Loop
 				i(168771),	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
+			})),
+			spell(289180, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Spirited Kraken's Eye Loop
+				i(166543),	-- Design: Eternal Kraken's Eye Loop (RECIPE!)
+			})),
+			spell(289179, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Tidal Kraken's Eye Loop
+				i(166542),	-- Design: Spirited Kraken's Eye Loop (RECIPE!)
 			})),
 			spell(305982, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Leviathan's Eye Loop
 				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
 			})),
 		}),
-		filter(STAVES, {
+		filter(FINGER_F, {
+			i(153686),	-- Amberblaze Loop
+			i(168703, {["timeline"] = {ADDED_8_2_0}}),	-- Ascended Leviathan's Eye Loop
+			i(171076, {["timeline"] = {ADDED_8_3_0}}),	-- Awakened Leviathan's Eye Loop
+			i(168702, {["timeline"] = {ADDED_8_2_0}}),	-- Crushing Leviathan's Eye Loop
+			i(166521, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Kraken's Eye Loop
+			i(166524, {["timeline"] = {ADDED_8_1_0}}),	-- Eternal Kraken's Eye Loop
+			i(153689),	-- Golden Beryl Ring
+			i(166520, {["timeline"] = {ADDED_8_1_0}}),	-- Imbued Kraken's Eye Loop
+			i(166519, {["timeline"] = {ADDED_8_1_0}}),	-- Kraken's Eye Loop
+			i(153688),	-- Kubiline Ring
+			i(153687),	-- Kyanite Ring
+			i(168701, {["timeline"] = {ADDED_8_2_0}}),	-- Leviathan's Eye Loop
+			i(153685),	-- Owlseye Loop
+			i(171075, {["timeline"] = {ADDED_8_3_0}}),	-- Peerless Leviathan's Eye Loop
+			i(153683),	-- Royal Quartz Loop
+			i(153690),	-- Solstone Ring
+			i(166523, {["timeline"] = {ADDED_8_1_0}}),	-- Spirited Kraken's Eye Loop
+			i(153684),	-- Tidal Amethyst Loop
+			i(166522, {["timeline"] = {ADDED_8_1_0}}),	-- Tidal Kraken's Eye Loop
+			i(171077, {["timeline"] = {ADDED_8_3_0}}),	-- Unbound Leviathan's Eye Loop
+		}),
+		filter(GEMS, {
+			i(154126),	-- Deadly Amberblaze
+			i(153710),	-- Deadly Solstone
+			i(168639, {["timeline"] = {ADDED_8_2_0}}),	-- Deadly Lava Lazuli
+			i(153708),	-- Kraken's Eye of Agility
+			i(153709),	-- Kraken's Eye of Intellect
+			i(153707),	-- Kraken's Eye of Strength
+			i(168637, {["timeline"] = {ADDED_8_2_0}}),	-- Leviathan's Eye of Agility
+			i(168638, {["timeline"] = {ADDED_8_2_0}}),	-- Leviathan's Eye of Intellect
+			i(168636, {["timeline"] = {ADDED_8_2_0}}),	-- Leviathan's Eye of Strength
+			i(153713),	-- Masterful Kubiline
+			i(168640, {["timeline"] = {ADDED_8_2_0}}),	-- Masterful Sea Currant
+			i(154129),	-- Masterful Tidal Amethyst
+			i(153714),	-- Natant Rubellite
+			i(153711),	-- Quick Golden Beryl
+			i(154127),	-- Quick Owlseye
+			i(168641, {["timeline"] = {ADDED_8_2_0}}),	-- Quick Sand Spinel
+			i(169220, {["timeline"] = {ADDED_8_2_0}}),	-- Straddling Sage Agate
+			i(153715),	-- Straddling Viridium
+			i(168642, {["timeline"] = {ADDED_8_2_0}}),	-- Versatile Dark Opal
+			i(153712),	-- Versatile Kyanite
+			i(154128),	-- Versatile Royal Quartz
+		}),
+		filter(MISC, {
+			i(153716, {["timeline"] = {ADDED_8_1_5}}),	-- Jewelhammer's Focus
+			i(162112, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Kaleidoscopic Lens
+			i(165743, {["timeline"] = {ADDED_8_1_0}}),	-- Kaleidoscopic Lens
+		}),
+		n(WEAPONS, {
 			i(159939),	-- Honorable Combatant's Staff of Intuition
 			i(153639),	-- Laribole Staff of Alacrity
 			i(167943, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Intuitive Staff
@@ -863,24 +925,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(164681, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Staff of Intuition
 			i(170318, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Intuitive Staff
 			i(153638),	-- Viridium Staff of Alacrity
-		}),
-		filter(FINGER_F, {
-			i(153686),	-- Amberblaze Loop
-			i(168703, {["timeline"] = {ADDED_8_2_0}}),	-- Ascended Leviathan's Eye Loop
-			i(166521, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Kraken's Eye Loop
-			i(166524, {["timeline"] = {ADDED_8_1_0}}),	-- Eternal Kraken's Eye Loop
-			i(153689),	-- Golden Beryl Ring
-			i(166520, {["timeline"] = {ADDED_8_1_0}}),	-- Imbued Kraken's Eye Loop
-			i(166519, {["timeline"] = {ADDED_8_1_0}}),	-- Kraken's Eye Loop
-			i(153688),	-- Kubiline Ring
-			i(153687),	-- Kyanite Ring
-			i(153685),	-- Owlseye Loop
-			i(171075, {["timeline"] = {ADDED_8_3_0}}),	-- Peerless Leviathan's Eye Loop
-			i(153683),	-- Royal Quartz Loop
-			i(153690),	-- Solstone Ring
-			i(166523, {["timeline"] = {ADDED_8_1_0}}),	-- Spirited Kraken's Eye Loop
-			i(153684),	-- Tidal Amethyst Loop
-			i(166522, {["timeline"] = {ADDED_8_1_0}}),	-- Tidal Kraken's Eye Loop
 		}),
 	}),
 	prof(LEATHERWORKING, {

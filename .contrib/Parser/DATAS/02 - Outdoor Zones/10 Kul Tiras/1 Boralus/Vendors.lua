@@ -1332,7 +1332,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(168027, {	-- Design: Jewelhammer's Focus (RECIPE!)
-						["sourceQuest"] = 49584,	-- The Missing Chapter
+						["sourceQuest"] = 49584,	-- The Missing Chapter [A]
 					}),
 				},
 			}),
