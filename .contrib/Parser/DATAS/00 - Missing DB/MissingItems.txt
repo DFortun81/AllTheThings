@@ -29367,16 +29367,6 @@ i(153703),	-- Solstone
 i(153704),	-- Viridium
 i(153705),	-- Kyanite
 i(153706),	-- Kraken's Eye
-i(153707),	-- Kraken's Eye of Strength
-i(153708),	-- Kraken's Eye of Agility
-i(153709),	-- Kraken's Eye of Intellect
-i(153710),	-- Deadly Solstone
-i(153711),	-- Quick Golden Beryl
-i(153712),	-- Versatile Kyanite
-i(153713),	-- Masterful Kubiline
-i(153714),	-- Natant Rubellite \\ Insightful Rubellite
-i(153715),	-- Straddling Viridium \\ (NEEDS NAME) Viridium
-i(153716),	-- Jewelhammer's Focus
 i(154051),	-- Salvaged Soulcatcher Totem
 i(154112),	-- Jam'jen's Oath
 i(154113),	-- Mugabu's Oath
@@ -29386,10 +29376,6 @@ i(154122),	-- Tidal Amethyst
 i(154123),	-- Amberblaze
 i(154124),	-- Laribole
 i(154125),	-- Royal Quartz
-i(154126),	-- Deadly Amberblaze
-i(154127),	-- Quick Owlseye
-i(154128),	-- Versatile Royal Quartz
-i(154129),	-- Masterful Tidal Amethyst
 i(154130),	-- Spirit Powder
 i(154131),	-- Florkin' Juju-juice
 i(154132),	-- Wikket Weaksauce
@@ -30421,7 +30407,6 @@ i(159926),	-- Cannonball
 i(159934),	-- Large Lump of Crab Meat \\ Alliance Weapon
 8.0.1.26231
 i(159935),	-- 8.0 PH Trinket
-i(159938),	-- REUSE ME (DNT) \\ Honorable Combatant's Staff of Alacrity
 i(159943),	-- Inconspicuous Seaforium Bomb
 i(159944),	-- Lastwind Robes \\ 8.0 PH Cloth Robe
 i(159945),	-- Scorching Sands Wraps \\ Scorching Sands Jerkin \\ 8.0 PH Leather Vest
@@ -30997,7 +30982,6 @@ i(162103),	-- Dread Gladiator's Shoulderplates \\ PH Gladiator's Shoulderplates
 i(162104),	-- Dread Gladiator's Silk Shoulderguards \\ PH Gladiator's Silk Shoulderguards
 i(162105),	-- Dread Gladiator's Chain Epaulets \\ PH Gladiator's Chain Epaulets
 i(162106),	-- Tome of Tidesage Research
-i(162112),	-- Kaleidoscopic Lens
 i(162113),	-- Potion of Herb Tracking
 i(162115),	-- Magnetic Mining Pick
 i(162116),	-- Tempest Hide Pouch
@@ -31023,8 +31007,6 @@ i(162351),	-- Schematic: Honorable Stormsteel Destroyer
 i(162365),	-- Recipe: Contract: Zandalari Empire
 i(162367),	-- Recipe: Contract: Talanji's Expedition
 i(162369),	-- Recipe: Contract: Voldunai
-i(162383),	-- REUSE ME (DNT) \\ Design: Honorable Combatant's Staff of Alacrity
-i(162384),	-- REUSE ME (DNT) \\ Design: Honorable Combatant's Staff of Alacrity
 i(162386),	-- Design: Honorable Combatant's Staff of Intuition
 i(162387),	-- Design: Honorable Combatant's Staff of Intuition
 i(162423),	-- Ritual Knife
@@ -31641,7 +31623,6 @@ i(165726),	-- Mission Report
 i(165727),	-- Outpost Upgrade
 i(165734),	-- Master Key
 i(165739),	-- Rough-hooked Tidespray Linen
-i(165743),	-- Kaleidoscopic Lens
 i(165751),	-- Outpost Upgrade
 i(165752),	-- Mission Report
 i(165759),	-- Azerite Infused Ore
@@ -31760,10 +31741,6 @@ i(166534),	-- Relinquished Azerite Helm
 i(166535),	-- Relinquished Azerite Chestpiece
 i(166536),	-- Relinquished Azerite Chestpiece
 i(166537),	-- Relinquished Azerite Chestpiece
-i(166540),	-- Design: Imbued Kraken's Eye Loop \\ Recipe: Imbued Kraken's Eye Loop
-i(166541),	-- Design: Emblazoned Kraken's Eye Loop \\ Recipe: Emblazoned Kraken's Eye Loop
-i(166542),	-- Design: Spirited Kraken's Eye Loop \\ Recipe: Spirited Kraken's Eye Loop
-i(166543),	-- Design: Eternal Kraken's Eye Loop \\ Recipe: Eternal Kraken's Eye Loop
 i(166545),	-- Befuddlin' Brew
 i(166682),	-- Blight Specialist Mask
 8.1.0.28294
@@ -32116,13 +32093,6 @@ i(168629),	-- Ocean "Infused" Lager
 i(168630),	-- Chitterspine Meat
 i(168634),	-- Telemancy Beacon
 i(168635),	-- Leviathan's Eye
-i(168636),	-- Leviathan's Eye of Strength
-i(168637),	-- Leviathan's Eye of Agility
-i(168638),	-- Leviathan's Eye of Intellect
-i(168639),	-- Deadly Lava Lazuli
-i(168640),	-- Masterful Sea Currant
-i(168641),	-- Quick Sand Spinel
-i(168642),	-- Versatile Dark Opal
 i(168645),	-- Moist Fillet
 i(168647),	-- Mgglurky's Mugglrgl
 i(168649),	-- Dredged Leather
@@ -32131,8 +32101,6 @@ i(168655),	-- Greater Mystical Flask
 i(168658),	-- Neptulian Clam
 i(168662),	-- Maroon Pigment
 i(168666),	-- Hefty Glimmershell
-i(168701),	-- Leviathan's Eye Loop
-i(168702),	-- Crushing Leviathan's Eye Loop
 i(168753),	-- Chitterspine Roe
 i(168754),	-- Adalin's Cards
 i(168755),	-- Unpublished Research
@@ -32194,7 +32162,6 @@ i(169212),	-- Sentry Heel Nut
 i(169213),	-- Leg Strut XS
 i(169214),	-- Pristine Hound Bolts
 i(169219),	-- Alcohol-Free Brewfest Sampler
-i(169220),	-- Straddling Sage Agate
 i(169221),	-- Chief's Key
 i(169234),	-- Fresh Unagi
 i(169241),	-- Family Jewelry
@@ -32572,8 +32539,6 @@ i(170384),	-- Mogu Scouting Report
 i(170385),	-- Conqueror's Trophy \\ Trophy of the Black Empire
 i(170497),	-- Stoneshaper Rod
 i(170543),	-- Strange Stone
-i(171076),	-- Awakened Leviathan's Eye Loop
-i(171077),	-- Unbound Leviathan's Eye Loop
 i(171089),	-- Unpaid Debt
 i(171114),	-- X-52 Personnel Armor
 i(171176),	-- Shred of Insanity \\ Shred of Nightmare

@@ -1756,12 +1756,7 @@ q(79439),	--
 q(79440),	--
 q(79454),	--
 q(79488),	--
-q(79489),	-- PTR:Gems of Power
-q(79511),	-- PTR:Identity Crisis
-q(79512),	-- PTR:Who Are You?
-q(79513),	-- PTR:Dragon Isles Adventuring: Being Yourself
-q(79514),	-- PTR:Don't Threaten Me With a Good Time
-q(79515),	-- PTR:Gather Your Rosebuds
+q(79489),	-- Gems of Power
 q(79516),	--
 q(79549),	--
 q(79732),	--
@@ -1943,17 +1938,11 @@ q(80015),	--
 q(80016),	--
 q(80017),	--
 q(80018),	--
-q(80069),	-- PTR:Tears of Teldrassil
-q(80071),	-- PTR:Fact Finding
-q(80072),	-- PTR:A Primalist Point of View
-q(80073),	-- PTR:Bones of a Bygone Battle
-q(80075),	-- PTR:A Barrow Den Burial
-q(80077),	-- PTR:Sins of the Sister
 q(80196),	--
 q(80197),	--
 q(80198),	--
 q(80310),	--
-q(80311),	-- PTR:Order of the Cloud Serpent
+q(80311),	-- Order of the Cloud Serpent
 q(80318),	--
 q(80319),	--
 q(80349),	--
@@ -1964,9 +1953,9 @@ q(80390),	--
 q(80442),	--
 q(80443),	--
 q(80445),	--
-q(80446),	-- PTR:Looking for Group
-q(80447),	-- PTR:Looking for More
-q(80448),	-- PTR:A Fresh Scene
+q(80446),	-- Looking for Group
+q(80447),	-- Looking for More
+q(80448),	-- A Fresh Scene
 q(80451),	--
 q(80452),	--
 q(80458),	--
@@ -1999,7 +1988,7 @@ q(80503),	--
 q(80504),	--
 q(80542),	--
 q(80543),	--
-q(81469),	-- PTR:charlie's test quest
+q(81469),	-- charlie's test quest
 q(81564),	--
 q(81565),	--
 q(81575),	--
@@ -2035,7 +2024,7 @@ q(81997),	--
 q(81998),	--
 q(82000),	--
 q(82080),	--
-q(82087),	-- PTR:Torch Tossing
+q(82087),	-- Torch Tossing
 q(82105),	--
 q(82109),	--
 q(82136),	--
@@ -2044,20 +2033,16 @@ q(82138),	--
 q(82139),	--
 q(82140),	--
 q(82198),	--
-q(82229),	-- PTR:An Uncommon Request
 q(82231),	--
 q(82232),	--
 q(82233),	--
 q(82247),	--
-q(82249),	--
-q(82250),	--
 q(82261),	--
 q(82267),	--
 q(82269),	--
 q(82270),	--
 q(82318),	--
 q(82319),	--
-q(82320),	--
 q(82343),	--
 q(82353),	--
 q(82409),	--

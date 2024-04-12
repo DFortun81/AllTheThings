@@ -1090,38 +1090,13 @@ r(248938),	-- Empyrial Hesselian Setting
 r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
 8.0.1.25902
-r(256612),	-- Mass Prospect Monelite \\ Mass Prospect Monalite
-r(256614),	-- Mass Prospect Storm Silver
-r(256623),	-- Mass Prospect Platinum
 r(264532),	-- Jewelcrafting
 r(264534),	-- Outland Jewelcrafting
 r(264537),	-- Northrend Jewelcrafting
 r(264539),	-- Cataclysm Jewelcrafting
 r(264542),	-- Pandaria Jewelcrafting
 r(264544),	-- Draenor Jewelcrafting
-8.0.1.26231
-r(269731),	-- Honorable Combatant's Staff of Alacrity
-r(269732),	-- Honorable Combatant's Staff of Alacrity
-r(269733),	-- Honorable Combatant's Staff of Alacrity
-8.1.0.28202
-r(289174),	-- Imbued Kraken's Eye Loop
-r(289175),	-- Emblazoned Kraken's Eye Loop
-r(289180),	-- Spirited Kraken's Eye Loop
-r(289181),	-- Eternal Kraken's Eye Loop
-8.2.0.30168
-r(301993),	-- Prospecting
-r(301994),	-- Prospecting
-8.2.0.30329
-r(302706),	-- Prospecting
-r(302707),	-- Prospecting
-r(302708),	-- Prospecting
-r(302710),	-- Prospecting
-r(302711),	-- Prospecting
-r(302712),	-- Prospecting
-8.3.0.32044
-r(307219),	-- Void Focus
 10.0.0.44649
-r(382973),	-- Kul Tiras and Zandalar Prospecting
 r(382975),	-- Legion Prospecting
 r(382977),	-- Pandaria Prospecting
 r(382978),	-- Cataclysm Prospecting
@@ -2244,13 +2219,3 @@ r(248937),	-- Empyrial Circlet
 r(248938),	-- Empyrial Hesselian Setting
 r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
-8.0.1.25902
-r(256612),	-- Mass Prospect Monelite \\ Mass Prospect Monalite
-r(256614),	-- Mass Prospect Storm Silver
-r(256623),	-- Mass Prospect Platinum
-8.0.1.26231
-r(269731),	-- Honorable Combatant's Staff of Alacrity
-r(269732),	-- Honorable Combatant's Staff of Alacrity
-r(269733),	-- Honorable Combatant's Staff of Alacrity
-8.2.0.30329
-r(302698),	-- Milling

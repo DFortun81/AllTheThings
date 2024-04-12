@@ -1,12 +1,4 @@
 10.2.7.54171
-ach(19871),	-- Infinite Power
-ach(19872),	-- The Jade Forest
-ach(19873),	-- Valley of the Four Winds
-ach(19874),	-- Krasarang Wilds
-ach(19875),	-- Kun-Lai Summit
-ach(19876),	-- Vale of Eternal Blossoms
-ach(19877),	-- Townlong Steppes
-ach(19878),	-- Dread Wastes
 ach(19879),	-- Landfall
 ach(19880),	-- Isle of Thunder
 ach(19881),	-- Escalation
@@ -179,10 +171,7 @@ ach(20535),	-- Infinite Power IX
 ach(20536),	-- Infinite Power X
 ach(20537),	-- Infinite Power XI
 ach(20538),	-- Infinite Power XII
-ach(20593),	-- Time Trial
 ach(40171),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
 ach(40192),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
 ach(40193),	-- Into the Storm (copy)
-ach(40223),	-- Timerunner
-ach(40226),	-- Realm First! Timerunner
 ach(40227),	-- Realm First! Mythic Garrosh
