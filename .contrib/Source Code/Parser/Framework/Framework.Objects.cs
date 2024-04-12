@@ -1862,6 +1862,7 @@ end");
                     case "altAchID":
                     case "altSpeciesID":
                     case "requireSkill":
+                    case "learnedAt":
                     case "class":
                     case "subclass":
                     case "inventoryType":

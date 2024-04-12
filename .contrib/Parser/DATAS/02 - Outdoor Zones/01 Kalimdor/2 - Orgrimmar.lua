@@ -1701,6 +1701,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 80.6, 23.2, ORGRIMMAR },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 7963, 4 },	-- Steel Breastplate
