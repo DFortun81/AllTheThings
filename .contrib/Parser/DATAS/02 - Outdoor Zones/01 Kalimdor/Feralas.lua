@@ -2800,15 +2800,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #endif
-			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-				--o(xxxxx, {	-- Carved Eye
+			n(TREASURES, {
+				i(212991, {	-- Grimoire of the Dire Observer (CI!)
+					--["provider"] = { "o", xxxxx },	-- Carved Eye
 					["description"] = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
 					--["coord"] = { X, Y, FERALAS },
-					["g"] = {
-						i(212991),	-- Grimoire of the Dire Observer (CI!)
-					},
-				--}),
-			})),
+					["timeline"] = { ADDED_10_2_5 },
+				}),
+				i(8564, {	-- Hippogryph Egg
+					["provider"] = { "o", 141931 },	-- Hippogryph Egg
+					["coord"] = { 57.0, 78.2, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+				}),
+			}),
 			n(VENDORS, {
 				n(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
 					["coord"] = { 56.8, 54.4, FERALAS },
