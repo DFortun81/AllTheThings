@@ -100,7 +100,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8464,	-- Winterfall Activity
 					["coord"] = { 27.8, 34.6, WINTERSPRING },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
 					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["timeline"] = { "removed 4.0.3" },
 					["repeatable"] = true,
@@ -203,7 +202,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28522,	-- Winterfall Activity
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
 					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["timeline"] = { "added 4.0.3.13277" },
 					["repeatable"] = true,
