@@ -733,17 +733,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = PALADIN,
 					["groups"] = {
+						i(208166),	-- Club of of the Light Avenger
 						i(208165),	-- Hammer of the Light Avenger
 						i(208164),	-- Kite of the Light Avenger
-						i(208166),	-- Club of of the Light Avenger
 					},
 				}),
 				i(208179, {	-- Blood Onyx Blades
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = ROGUE,
 					["groups"] = {
-						i(208173),	-- Blood Onyx Serrated Edge
 						i(208174),	-- Blood Onyx Impaler
+						i(208173),	-- Blood Onyx Serrated Edge
 						i(208175),	-- Blood Onyx Shortblade
 					},
 				}),
@@ -751,9 +751,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = ROGUE,
 					["groups"] = {
+						i(208404),	-- Blood Onyx Buckle
 						i(208402),	-- Blood Onyx Cowl
 						i(208403),	-- Blood Onyx Pauldrons
-						i(208404),	-- Blood Onyx Buckle
 					},
 				}),
 				i(208148, {	-- Burgundy Cap
@@ -807,9 +807,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = PALADIN,
 					["groups"] = {
+						i(208163),	-- Cinch of the Light Avenger
 						i(208161),	-- Helm of the Light Avenger
-						i(208162),	-- Shoulders Shoulderguards of the Light Avenger
-						i(208163),	-- Waist Cinch of the Light Avenger
+						i(208162),	-- Shoulderguards of the Light Avenger
 					},
 				}),
 				i(208178, {	-- Secrets of the Unnamed Cult
@@ -825,9 +825,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = PRIEST,
 					["groups"] = {
+						i(208397),	-- Hood of the Unnamed Cult
 						i(208398),	-- Mantle of the Unnamed Cult
 						i(208399),	-- Sash of the Unnamed Cult
-						i(208397),	-- Hood of the Unnamed Cult
 					},
 				}),
 				i(190155, {	-- Trusty Treasure Trove
@@ -862,9 +862,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = DRUID,
 					["groups"] = {
+						i(208622),	-- Ashamane's Fangs of Rebirth
 						i(208620),	-- Ashamane's Helm of Rebirth
 						i(208621),	-- Ashamane's Spaulders of Rebirth
-						i(208622),	-- Ashamane's Fangs of Rebirth
 					},
 				}),
 				i(208664, {	-- Ashamane's Blessings of Rebirth
@@ -874,7 +874,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208623),	-- Ashamane's Blade of Rebirth
 						i(208624),	-- Ashamane's Claws of Rebirth
 						i(208625),	-- Ashamane's Crescent of Rebirth
-						i(208626),	-- Ashamane Jewel of Rebirth
+						i(208626),	-- Ashamane's Jewel of Rebirth
 					},
 				}),
 				i(190710, {	-- Caged Eye of the Watcher
@@ -940,8 +940,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = DEMONHUNTER,
 					["groups"] = {
-						i(208636),	-- Nathreza Blasphemer's Wingglaive
 						i(208637),	-- Nathreza Blasphemer's Warglaive
+						i(208636),	-- Nathreza Blasphemer's Wingglaive
 					},
 				}),
 				i(190801, {	-- Shadowy Mail Tabard
@@ -954,18 +954,18 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = DEATHKNIGHT,
 					["groups"] = {
+						i(208629),	-- Webbed Saronite Girdle
 						i(208627),	-- Webbed Saronite Headguard
 						i(208628),	-- Webbed Saronite Spaulders
-						i(208629),	-- Webbed Saronite Girdle
 					},
 				}),
 				i(208666, {	-- Webbed Saronite Weaponry
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = DEATHKNIGHT,
 					["groups"] = {
-						i(208630),	-- Webbed Saronite Greataxe
-						i(208631),	-- Webbed Saronite Eviscerator
 						i(208632),	-- Webbed Saronite Devourer
+						i(208631),	-- Webbed Saronite Eviscerator
+						i(208630),	-- Webbed Saronite Greataxe
 					},
 				}),
 				i(190199, {	-- Well-Worn Grimskull Cinch
@@ -1035,18 +1035,18 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = WARLOCK,
 					["groups"] = {
-						i(208659),	-- Flayer of the Alluring Call
-						i(208660),	-- Effigy of the Alluring Call
 						i(208661),	-- Caduceus of the Alluring Call
+						i(208660),	-- Effigy of the Alluring Call
+						i(208659),	-- Flayer of the Alluring Call
 					},
 				}),
 				i(208672, {	-- Jewels of the Alluring Call
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = WARLOCK,
 					["groups"] = {
+						i(208657),	-- Chains of the Alluring Call
 						i(208655),	-- Voice of the Alluring Call
 						i(208656),	-- Wings of the Alluring Call
-						i(208657),	-- Chains of the Alluring Call
 					},
 				}),
 				i(190833, {	-- Krokul Guisame
@@ -1071,17 +1071,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = MONK,
 					["groups"] = {
+						i(208651),	-- Possessed Watcher Cord
 						i(208648),	-- Possessed Watcher Kabuto
 						i(208650),	-- Possessed Watcher Pauldrons
-						i(208651),	-- Possessed Watcher Cord
 					},
 				}),
 				i(208669, {	-- Possessed Watcher Guide
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = MONK,
 					["groups"] = {
-						i(208652),	-- Possessed Watcher Fan
 						i(208653),	-- Possessed Watcher Bloom
+						i(208652),	-- Possessed Watcher Fan
 						i(208654),	-- Possessed Watcher Keg
 					},
 				}),
@@ -1095,18 +1095,18 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = WARRIOR,
 					["groups"] = {
-						i(208641),	-- Savage Champion's Thorns
-						i(208642),	-- Savage Champion's Gladius
 						i(208643),	-- Savage Champion's Disemboweler
+						i(208642),	-- Savage Champion's Gladius
+						i(208641),	-- Savage Champion's Thorns
 					},
 				}),
 				i(208674, {	-- Savage Champion’s Trophies
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = WARRIOR,
 					["groups"] = {
-						i(208638),	-- Savage Champion's Vision
-						i(208639),	-- Savage Champion's Tusks
 						i(208640),	-- Savage Champion's Belt
+						i(208639),	-- Savage Champion's Tusks
+						i(208638),	-- Savage Champion's Vision
 					},
 				}),
 				i(190829, {	-- Shawl of Flowing Magic
@@ -1141,7 +1141,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(COSMETIC, {
-				i(211257, {	-- Arsenal Stormriders Stormhammers
+				i(211257, {	-- Arsenal: Stormriders Stormhammers
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
 					["classes"] = { DEATHKNIGHT, DRUID, EVOKER, MONK, ROGUE, PRIEST, PALADIN, SHAMAN, WARRIOR, ROGUE },
 					["g"] = {
