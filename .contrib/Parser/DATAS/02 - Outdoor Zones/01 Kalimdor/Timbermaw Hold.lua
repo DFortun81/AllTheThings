@@ -352,7 +352,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11556,	-- Salfa
 					["sourceQuest"] = 28521,	-- Speak to Salfa
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
 					["timeline"] = { "added 4.0.3.13277" },
 					["cost"] = {{ "i", 21383, 10 }},	-- Winterfall Spirit Beads
 					["groups"] = {
@@ -365,9 +364,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8464, {	-- Winterfall Activity
 					["qg"] = 11556,	-- Salfa
 					["coord"] = { 27.8, 34.6, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/8 Winterfall Shaman slain
