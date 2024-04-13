@@ -2221,75 +2221,10 @@ root(ROOTS.Unsorted, {
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure
 					i(216638),	-- Timerunner's Intro Kit
-					i(216639),	-- Flawed Swift Opal
-					i(216640),	-- Flawed Masterful Amethyst
-					i(216641),	-- Flawed Hungering Ruby
-					i(216642),	-- Flawed Sustaining Emerald
-					i(216643),	-- Flawed Quick Topaz
-					i(216644),	-- Flawed Deadly Sapphire
-					i(217605),	-- Timeless Scroll of Intellect
-					i(217606),	-- Timeless Scroll of Fortitude
-					i(217607),	-- Timeless Scroll of the Wild
-					i(217608),	-- Timeless Scroll of Battle Shout
-					i(217722),	-- Thread of Experience
-					i(217730),	-- Timeless Scroll of Chaos
-					i(217731),	-- Timeless Scroll of Mystic Power
-					i(217732),	-- Prayer of Purged Despair
-					i(217733),	-- Prayer of Purged Doubt
-					i(217734),	-- Prayer of Purged Fear
-					i(217735),	-- Prayer of Purged Violence
-					i(217898),	-- Prayer of Purged Hatred
-					i(217899),	-- Prayer of Purged Pride
-					i(217900),	-- Prayer of Purged Anger
-					i(217901),	-- Timeless Drums
-					i(217902),	-- Timerunner's Vial
-					i(217904),	-- Timerunner's Draught of Power
-					i(217905),	-- Timerunner's Draught of Health
-					i(217925),	-- Bottle of Bees
-					i(217926),	-- Bottle of Dead Bees
-					i(217928),	-- Timeless Scroll of Resurrection
-					i(217929),	-- Timeless Scroll of Cleansing
-					i(217956),	-- Timeless Scroll of Summoning
 					i(219218),	-- Timerunner's Starter Kit
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
 					i(219222),	-- Time-Lost Artifact
-					i(219256),	-- Temporal Thread of Power
-					i(219257),	-- Temporal Thread of Stamina
-					i(219258),	-- Temporal Thread of Critical Strike
-					i(219259),	-- Temporal Thread of Haste
-					i(219260),	-- Temporal Thread of Speed
-					i(219261),	-- Temporal Thread of Leech
-					i(219262),	-- Temporal Thread of Mastery
-					i(219263),	-- Temporal Thread of Versatility
-					i(219264),	-- Temporal Thread of Experience
-					i(219265),	-- Perpetual Thread of Power
-					i(219266),	-- Perpetual Thread of Stamina
-					i(219267),	-- Perpetual Thread of Critical Strike
-					i(219268),	-- Perpetual Thread of Haste
-					i(219269),	-- Perpetual Thread of Speed
-					i(219270),	-- Perpetual Thread of Leech
-					i(219271),	-- Perpetual Thread of Mastery
-					i(219272),	-- Perpetual Thread of Versatility
-					i(219273),	-- Perpetual Thread of Experience
-					i(219274),	-- Infinite Thread of Power
-					i(219275),	-- Infinite Thread of Stamina
-					i(219276),	-- Infinite Thread of Critical Strike
-					i(219277),	-- Infinite Thread of Haste
-					i(219278),	-- Infinite Thread of Speed
-					i(219279),	-- Infinite Thread of Leech
-					i(219280),	-- Infinite Thread of Mastery
-					i(219281),	-- Infinite Thread of Versatility
-					i(219282),	-- Infinite Thread of Experience
-					i(219940),	-- Meteor Chip
-					i(220367),	-- Chipped Stalwart Pearl
-					i(220368),	-- Flawed Stalwart Pearl
-					i(220369),	-- Perfect Stalwart Pearl
-					i(220370),	-- Stalwart Pearl
-					i(220371),	-- Chipped Versatile Diamond
-					i(220372),	-- Flawed Versatile Diamond
-					i(220373),	-- Perfect Versatile Diamond
-					i(220374),	-- Versatile Diamond
 					i(223904),	-- Asynchronized Cogwheel Gem
 					i(223905),	-- Asynchronized Meta Gem
 					i(223906),	-- Asynchronized Tinker Gem
@@ -2318,83 +2253,7 @@ root(ROOTS.Unsorted, {
 				}),
 				filter(QUEST_ITEMS, {
 					i(217174),	-- Bronze
-					i(215438),	-- Chronobadge
-					i(215442),	-- Cloak of Infinite Potential
-					i(213631),	-- Empty Spool of Temporal Threads
 					i(213173),	-- Thread of Power
-					i(213571),	-- Thread of Time
-				}),
-				filter(TRINKET_F, {	-- Tinker Gem?
-					i(212366),	-- Arcanist's Edge
-					i(212694),	-- Enkindle
-					i(212749),	-- Explosive Barrage
-					i(212365),	-- Fervor
-					i(212916),	-- Frost Armor
-					i(212758),	-- Incendiary Terror
-					i(212759),	-- Meteor Storm
-					i(212361),	-- Opportunist
-					i(212362),	-- Sunstrider's Flourish
-					i(212629),	-- Test Ruby
-					i(212760),	-- Wildfire
-					i(216624),	-- Mark of Arrogance
-					i(216625),	-- Quick Strike
-					i(216626),	-- Slay
-					i(216627),	-- Tinkmaster's Shield
-					i(216628),	-- Victory Fire
-					i(216647),	-- Hailstorm
-					i(216648),	-- Cold Front
-					i(216649),	-- Brittle
-					i(216650),	-- Memory of Vengeance
-					i(216651),	-- Searing Light
-					i(217903),	-- Vindication
-					i(217907),	-- Warmth
-					i(217927),	-- Savior
-					i(217957),	-- Deliverance
-					i(217961),	-- Righteous Frenzy
-					i(217964),	-- Holy Martyr
-					i(219389),	-- Lightning Rod
-					i(219452),	-- Static Charge
-					i(219516),	-- Windweaver
-					i(219523),	-- Storm Overload
-					i(219527),	-- Vampiric Aura
-					i(219777),	-- Grounding
-					i(219801),	-- Ankh of Reincarnation
-					i(219817),	-- Freedom
-					i(219818),	-- Brilliance
-					i(219944),	-- Bloodthirsty Coral
-				}),
-				filter(TRINKET_F, {	-- Cogwheel
-					i(216629),	-- Blink
-					i(216630),	-- Heroic Leap
-					i(216631),	-- Roll
-					i(216632),	-- Sprint
-					i(217983),	-- Disengage
-					i(217989),	-- Trailblazer
-					i(218003),	-- Leap of Faith
-					i(218004),	-- Vanish
-					i(218005),	-- Stampeding Roar
-					i(218043),	-- Wild Charge
-					i(218044),	-- Pursuit of Justice
-					i(218045),	-- Door of Shadows
-					i(218046),	-- Spirit Walk
-					i(218082),	-- Spiritwalker's Grace
-					i(218108),	-- Dark Pact
-					i(218109),	-- Death's Advance
-					i(218110),	-- Soulshape
-				}),
-				filter(TRINKET_F, {	-- Meta Gem
-					i(216663),	-- Oblivion Sphere
-					i(216671),	-- Thundering Orb
-					i(216695),	-- Lifestorm
-					i(216711),	-- Chi-ji, the Red Crane
-					i(216974),	-- Morphing Elements
-					i(219386),	-- Locus of Power
-					i(219878),	-- Tireless Spirit
-					i(220117),	-- Ward of Salvation
-					i(220120),	-- Soul Tether
-					i(220211),	-- Precipice of Madness
-					i(221977),	-- Funeral Pyre
-					i(221982),	-- Bulwark of the Black Ox
 				}),
 				n(WEAPONS, {
 					i(215469),	-- Haromm's Frozen Battleaxe
@@ -3343,9 +3202,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			------ Next Check 10.2.7 ------
 			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
-				n(BACK, {
-					i(210333),	-- Cloak of Infinite Potential
-				}),
 				filter(CLOTH, {
 					i(210603),	-- Passionsilk Amice
 					i(210605),	-- Passionsilk Bands
@@ -3431,32 +3287,11 @@ root(ROOTS.Unsorted, {
 					i(210621),	-- Reedstalker Wristguards
 				}),
 				filter(MISC, {
-					i(211279),	-- Cache of Infinite Treasure
-					i(211123),	-- Deadly Sapphire
 					i(211104),	-- Ephemeral Fractured Emerald
 					i(211112),	-- Ephemeral Swift Emerald
 					i(211111),	-- Ephemeral Swift Ruby
-					i(210718),	-- Hungering Ruby
 					i(208822),	-- Infinite Hearthstone
-					i(211106),	-- Masterful Amethyst
-					i(211102),	-- Perfect Deadly Sapphire
-					i(211103),	-- Perfect Hungering Ruby
-					i(211108),	-- Perfect Masterful Amethyst
-					i(211110),	-- Perfect Quick Topaz
-					i(211105),	-- Perfect Sustaining Emerald
-					i(211101),	-- Perfect Swift Opal
-					i(211107),	-- Quick Topaz
-					i(211125),	-- Sustaining Emerald
-					i(211124),	-- Swift Opal
-					i(210984),	-- Thread of Critical Strike
-					i(210985),	-- Thread of Haste
-					i(210987),	-- Thread of Leech
-					i(210989),	-- Thread of Mastery
-					i(210982),	-- Thread of Power
 					i(210988),	-- Thread of Regeneration
-					i(210986),	-- Thread of Speed
-					i(210983),	-- Thread of Stamina
-					i(210990),	-- Thread of Versatility
 				}),
 				filter(NECK_F, {
 					i(208489),	-- Ankh of Reincarnation
@@ -3517,16 +3352,9 @@ root(ROOTS.Unsorted, {
 					i(210341),	-- Staff of Corrupted Waters
 					i(210635),	-- Streamtalker Shield
 				}),
-				i(210714),	-- Chipped Deadly Sapphire
-				i(210717),	-- Chipped Hungering Ruby
-				i(210715),	-- Chipped Masterful Amethyst
-				i(210681),	-- Chipped Quick Topaz
-				i(211109),	-- Chipped Sustaining Emerald
-				i(210716),	-- Chipped Swift Opal
 				i(210906),	-- Timerunner's Amice
 				i(210523),	-- Timerunner's Amulet
 				i(210913),	-- Timerunner's Armplates
-				i(211254),	-- Timerunner's Bandage
 				i(210914),	-- Timerunner's Bands
 				i(210911),	-- Timerunner's Belt
 				i(210895),	-- Timerunner's Boots

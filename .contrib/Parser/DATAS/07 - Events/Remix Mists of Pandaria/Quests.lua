@@ -48,9 +48,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["sourceQuests"] = { 79435 },	-- What's Hours Is yours
 			["provider"] = { "n", 216594 },	-- Moratari
 			["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
-			["g"] = {
-				i(215110),	-- Chronostablizer (QI!)
-			},
 		}),
 		q(79438, {	-- Goodbyes Are Hard When You Live Forever
 			["sourceQuests"] = { 80380 },	-- Cloak and Needle
@@ -61,9 +58,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["sourceQuests"] = { 79438 },	-- Goodbyes Are Hard When You Live Forever
 			["provider"] = { "n", 218129 },	-- Moratari
 			["coord"] = { 26.4, 54.3, TIMELESS_ISLE },
-			["g"] = {
-				i(215110),	-- Chronostablizer (QI!)
-			},
 		}),
 		q(80012, {	-- Dragonriding
 			["sourceQuests"] = { 79440 },	-- Recalling the War
