@@ -182,6 +182,6 @@ do
 		local mount = app.SearchForObject(KEY, spellID)
 		app.PrintDebug("NEW_MOUNT_ADDED (pls @Runawaynow with this if you see it)",id,"=>",spellID,app:SearchLink(mount))
 		app.SetAccountCollected(mount, CACHE, spellID, true)
-		app.UpdateRawID(KEY, id)
+		app.UpdateRawID(KEY, spellID)
 	end);
 end
