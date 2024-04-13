@@ -168,7 +168,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134737),	-- Chillplate Shoulders				(Removed)
 			ig(134769),	-- Concealment Shoulderplates		(Removed)
 			ig(134713),	-- Crushing Pauldrons				(Removed)
-			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 
 			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates	(Ordos)
 			ig(105794),	-- Starry Spaulders of Durability	(Ordos)
@@ -342,7 +341,6 @@ local QUANTUM_GROUP = sharedData({
 				["modID"] = 4,
 			}),
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
-			ig(156752),	-- Skullbreaker Gauntlets			(NYI)
 			i(113229, {	-- Zoid's Molten Gauntlets			(NYI)
 				["modID"] = 4,
 			}),
@@ -1471,8 +1469,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 		}),
 		filter(PLATE, {
-			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
-
 			ig(93099),	-- Yaungolian Pauldrons				(NYI)
 		}),
 	}),

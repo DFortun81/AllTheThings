@@ -1428,6 +1428,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(160676),	-- Quartius Breastplate
 				i(160677),	-- Pentius Breastplate
 				i(164525),	-- Rattling Bone Greatbelt
+				i(156752),	-- Skullbreaker Gauntlets
 				i(153365),	-- Dead-Watcher Greaves
 				i(153366),	-- Dead-Watcher Helmet
 				i(153367),	-- Dead-Watcher Breastplate
