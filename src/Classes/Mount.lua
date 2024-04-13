@@ -178,7 +178,10 @@ do
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end);
 	app.AddEventRegistration("NEW_MOUNT_ADDED", function(id)
-		app.SetAccountCollected(app.SearchForObject(KEY, id), CACHE, id, true)
+		local _, spellID = C_MountJournal_GetMountInfoByID(id);
+		local mount = app.SearchForObject(KEY, spellID)
+		app.PrintDebug("NEW_MOUNT_ADDED (pls @Runawaynow with this if you see it)",id,"=>",spellID,app:SearchLink(mount))
+		app.SetAccountCollected(mount, CACHE, spellID, true)
 		app.UpdateRawID(KEY, id)
 	end);
 end
