@@ -64,14 +64,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(MAIL, {
 					------ Trailseeker's Laminar Armor (Black) ------
 					-- Looks to be this set from Jade Forest?
-					i(214460), -- Windreaver's Belt
-					i(214457), -- Windreaver's Boots
-					i(214454), -- Windreaver's Bracers
-					i(214459), -- Windreaver's Gauntlets
-					i(214456), -- Windreaver's Hauberk
-					i(214458), -- Windreaver's Helm
-					i(214463), -- Windreaver's Leggings
-					i(214461), -- Windreaver's Spaulders
+					i(214460),	-- Windreaver's Belt
+					i(214457),	-- Windreaver's Boots
+					i(214454),	-- Windreaver's Bracers
+					i(214459),	-- Windreaver's Gauntlets
+					i(214456),	-- Windreaver's Hauberk
+					i(214458),	-- Windreaver's Helm
+					i(214463),	-- Windreaver's Leggings
+					i(214461),	-- Windreaver's Spaulders
 				}),
 			}),
 		},

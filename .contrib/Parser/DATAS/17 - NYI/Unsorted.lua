@@ -1045,319 +1045,325 @@ root(ROOTS.Unsorted, {
 					filter(MAIL, {
 						------ Mogu Lord's Regalia (Black) ------
 						------ Source: Scenario ------
-						i(214408), -- Stormbrew Belt
-						i(214405), -- Stormbrew Boots
-						i(214403), -- Stormbrew Bracers
-						i(214407), -- Stormbrew Gauntlets
-						i(214404), -- Stormbrew Hauberk
-						i(214406), -- Stormbrew Helm
-						i(214410), -- Stormbrew Leggings
-						i(214409), -- Stormbrew Spaulders
+						i(214408),	-- Stormbrew Belt
+						i(214405),	-- Stormbrew Boots
+						i(214403),	-- Stormbrew Bracers
+						i(214407),	-- Stormbrew Gauntlets
+						i(214404),	-- Stormbrew Hauberk
+						i(214406),	-- Stormbrew Helm
+						i(214410),	-- Stormbrew Leggings
+						i(214409),	-- Stormbrew Spaulders
 
 						------ Mogu Lord's Regalia (Gold) ------
 						------ Source: Dungeons ------
-						i(214418), -- Mogu Lord's Armbands
-						i(214413), -- Mogu Lord's Chain
-						i(214417), -- Mogu Lord's Chestguard
-						i(214414), -- Mogu Lord's Gloves
-						i(214415), -- Mogu Lord's Headguard
-						i(214411), -- Mogu Lord's Legguards
-						i(214412), -- Mogu Lord's Pauldrons
-						i(214416), -- Mogu Lord's Sabatons
+						i(214418),	-- Mogu Lord's Armbands
+						i(214413),	-- Mogu Lord's Chain
+						i(214417),	-- Mogu Lord's Chestguard
+						i(214414),	-- Mogu Lord's Gloves
+						i(214415),	-- Mogu Lord's Headguard
+						i(214411),	-- Mogu Lord's Legguards
+						i(214412),	-- Mogu Lord's Pauldrons
+						i(214416),	-- Mogu Lord's Sabatons
 
 						------ Mogu Lord's Regalia (Jade) ------
 						------ Source: Dungeons ------
-						i(214420), -- Waterburst Breastplate
-						i(214421), -- Waterburst Footguards
-						i(214424), -- Waterburst Girdle
-						i(214423), -- Waterburst Grips
-						i(214422), -- Waterburst Helmet
-						i(214426), -- Waterburst Legwraps
-						i(214425), -- Waterburst Mantle
-						i(214419), -- Waterburst Wristguards
+						i(214420),	-- Waterburst Breastplate
+						i(214421),	-- Waterburst Footguards
+						i(214424),	-- Waterburst Girdle
+						i(214423),	-- Waterburst Grips
+						i(214422),	-- Waterburst Helmet
+						i(214426),	-- Waterburst Legwraps
+						i(214425),	-- Waterburst Mantle
+						i(214419),	-- Waterburst Wristguards
 
 						------ Trailseeker's Laminar Armor (Black) ------
 						------ Source: Kun-Lai Summit ------
-						i(214460), -- Windreaver's Belt
-						i(214457), -- Windreaver's Boots
-						i(214454), -- Windreaver's Bracers
-						i(214459), -- Windreaver's Gauntlets
-						i(214456), -- Windreaver's Hauberk
-						i(214458), -- Windreaver's Helm
-						i(214463), -- Windreaver's Leggings
-						i(214461), -- Windreaver's Spaulders
+						i(214460),	-- Windreaver's Belt
+						i(214457),	-- Windreaver's Boots
+						i(214454),	-- Windreaver's Bracers
+						i(214459),	-- Windreaver's Gauntlets
+						i(214456),	-- Windreaver's Hauberk
+						i(214458),	-- Windreaver's Helm
+						i(214463),	-- Windreaver's Leggings
+						i(214461),	-- Windreaver's Spaulders
 
 						------ Trailseeker's Laminar Armor (Gold) ------
 						------ Source: Kun-Lai Summit ------
-						i(214476), -- Trailseeker's Armbands
-						i(214470), -- Trailseeker's Chain
-						i(214475), -- Trailseeker's Chestguard
-						i(214471), -- Trailseeker's Gloves
-						i(214472), -- Trailseeker's Headguard
-						i(214467), -- Trailseeker's Legguards
-						i(214468), -- Trailseeker's Pauldrons
-						i(214474), -- Trailseeker's Sabatons
+						i(214476),	-- Trailseeker's Armbands
+						i(214470),	-- Trailseeker's Chain
+						i(214475),	-- Trailseeker's Chestguard
+						i(214471),	-- Trailseeker's Gloves
+						i(214472),	-- Trailseeker's Headguard
+						i(214467),	-- Trailseeker's Legguards
+						i(214468),	-- Trailseeker's Pauldrons
+						i(214474),	-- Trailseeker's Sabatons
 
 						------ Trailseeker's Laminar Armor (Green) ------
 						------ Source: Townlong Steppe/Dread Waste ------
-						i(214480), -- Peakscaler Breastplate
-						i(214481), -- Peakscaler Footguards
-						i(214484), -- Peakscaler Girdle
-						i(214483), -- Peakscaler Grips
-						i(214482), -- Peakscaler Helmet
-						i(214486), -- Peakscaler Legwraps
-						i(214485), -- Peakscaler Mantle
-						i(214479), -- Peakscaler Wristguards
+						i(214480),	-- Peakscaler Breastplate
+						i(214481),	-- Peakscaler Footguards
+						i(214484),	-- Peakscaler Girdle
+						i(214483),	-- Peakscaler Grips
+						i(214482),	-- Peakscaler Helmet
+						i(214486),	-- Peakscaler Legwraps
+						i(214485),	-- Peakscaler Mantle
+						i(214479),	-- Peakscaler Wristguards
 
 						------ Trailseeker's Laminar Armor (White) ------
 						------ Source: Vale ------
-						i(214492), -- Jade Guardian's Belt
-						i(214496), -- Jade Guardian's Boots
-						i(214498), -- Jade Guardian's Bracers
-						i(214493), -- Jade Guardian's Gauntlets
-						i(214497), -- Jade Guardian's Hauberk
-						i(214495), -- Jade Guardian's Helm
-						i(214489), -- Jade Guardian's Leggings
-						i(214491), -- Jade Guardian's Spaulders
+						i(214492),	-- Jade Guardian's Belt
+						i(214496),	-- Jade Guardian's Boots
+						i(214498),	-- Jade Guardian's Bracers
+						i(214493),	-- Jade Guardian's Gauntlets
+						i(214497),	-- Jade Guardian's Hauberk
+						i(214495),	-- Jade Guardian's Helm
+						i(214489),	-- Jade Guardian's Leggings
+						i(214491),	-- Jade Guardian's Spaulders
 
 						------ Dawnwatcher's Scale Armor (Blue) ------
 						------ Source: The Jade Forest ------
-						i(214507), -- Dawnwatcher's Armbands
-						i(214513), -- Dawnwatcher's Chain
-						i(214508), -- Dawnwatcher's Chestguard
-						i(214511), -- Dawnwatcher's Gloves
-						i(214510), -- Dawnwatcher's Headguard
-						i(214515), -- Dawnwatcher's Legguards
-						i(214514), -- Dawnwatcher's Pauldrons
-						i(214509), -- Dawnwatcher's Sabatons
+						i(214507),	-- Dawnwatcher's Armbands
+						i(214513),	-- Dawnwatcher's Chain
+						i(214508),	-- Dawnwatcher's Chestguard
+						i(214511),	-- Dawnwatcher's Gloves
+						i(214510),	-- Dawnwatcher's Headguard
+						i(214515),	-- Dawnwatcher's Legguards
+						i(214514),	-- Dawnwatcher's Pauldrons
+						i(214509),	-- Dawnwatcher's Sabatons
 
 						------ Dawnwatcher's Scale Armor (Purple) ------
 						------ Source: The Jade Forest ------
-						i(214525), -- Streamspeaker Breastplate
-						i(214524), -- Streamspeaker Footguards
-						i(214521), -- Streamspeaker Girdle
-						i(214522), -- Streamspeaker Grips
-						i(214523), -- Streamspeaker Helmet
-						i(214519), -- Streamspeaker Legwraps
-						i(214520), -- Streamspeaker Mantle
-						i(214526), -- Streamspeaker Wristguards
+						i(214525),	-- Streamspeaker Breastplate
+						i(214524),	-- Streamspeaker Footguards
+						i(214521),	-- Streamspeaker Girdle
+						i(214522),	-- Streamspeaker Grips
+						i(214523),	-- Streamspeaker Helmet
+						i(214519),	-- Streamspeaker Legwraps
+						i(214520),	-- Streamspeaker Mantle
+						i(214526),	-- Streamspeaker Wristguards
 
 						------ Dawnwatcher's Scale Armor (Blue) ------
 						------ Source: Krasarang/ Valley ------
-						i(214532), -- Reedstalker Belt
-						i(214529), -- Reedstalker Boots
-						i(214527), -- Reedstalker Bracers
-						i(214531), -- Reedstalker Gauntlets
-						i(214528), -- Reedstalker Hauberk
-						i(214530), -- Reedstalker Helm
-						i(214534), -- Reedstalker Leggings
-						i(214533), -- Reedstalker Spaulders
+						i(214532),	-- Reedstalker Belt
+						i(214529),	-- Reedstalker Boots
+						i(214527),	-- Reedstalker Bracers
+						i(214531),	-- Reedstalker Gauntlets
+						i(214528),	-- Reedstalker Hauberk
+						i(214530),	-- Reedstalker Helm
+						i(214534),	-- Reedstalker Leggings
+						i(214533),	-- Reedstalker Spaulders
 
 						------ Jade Guardian's Regalia (Blue) ------
 						------ Source: All Over ------
-						i(214712), -- Nightwatcher's Armbands
-						i(214707), -- Nightwatcher's Chain
-						i(214711), -- Nightwatcher's Chestguard
-						i(214708), -- Nightwatcher's Gloves
-						i(214709), -- Nightwatcher's Headguard
-						i(214705), -- Nightwatcher's Legguards
-						i(214706), -- Nightwatcher's Pauldrons
-						i(214710), -- Nightwatcher's Sabatons
+						i(214712),	-- Nightwatcher's Armbands
+						i(214707),	-- Nightwatcher's Chain
+						i(214711),	-- Nightwatcher's Chestguard
+						i(214708),	-- Nightwatcher's Gloves
+						i(214709),	-- Nightwatcher's Headguard
+						i(214705),	-- Nightwatcher's Legguards
+						i(214706),	-- Nightwatcher's Pauldrons
+						i(214710),	-- Nightwatcher's Sabatons
 
 						------ Jade Guardian's Regalia (Brown) ------
 						------ Source: All Over ------
-						i(214714), -- Stonefang Breastplate
-						i(214715), -- Stonefang Footguards
-						i(214718), -- Stonefang Girdle
-						i(214717), -- Stonefang Grips
-						i(214716), -- Stonefang Helmet
-						i(214720), -- Stonefang Legwraps
-						i(214719), -- Stonefang Mantle
-						i(214713), -- Stonefang Wristguards
+						i(214714),	-- Stonefang Breastplate
+						i(214715),	-- Stonefang Footguards
+						i(214718),	-- Stonefang Girdle
+						i(214717),	-- Stonefang Grips
+						i(214716),	-- Stonefang Helmet
+						i(214720),	-- Stonefang Legwraps
+						i(214719),	-- Stonefang Mantle
+						i(214713),	-- Stonefang Wristguards
 
 						------ Jade Guardian's Regalia (Red) ------
 						------ Source: Timeless Isle ------
-						i(214723), -- Crimsonscale Belt
-						i(214726), -- Crimsonscale Boots
-						i(214728), -- Crimsonscale Bracers
-						i(214724), -- Crimsonscale Gauntlets
-						i(214727), -- Crimsonscale Hauberk
-						i(214725), -- Crimsonscale Helm
-						i(214721), -- Crimsonscale Leggings
-						i(214722), -- Crimsonscale Spaulders
+						i(214723),	-- Crimsonscale Belt
+						i(214726),	-- Crimsonscale Boots
+						i(214728),	-- Crimsonscale Bracers
+						i(214724),	-- Crimsonscale Gauntlets
+						i(214727),	-- Crimsonscale Hauberk
+						i(214725),	-- Crimsonscale Helm
+						i(214721),	-- Crimsonscale Leggings
+						i(214722),	-- Crimsonscale Spaulders
 
 						------ Jade Guardian's Regalia (Yellow) ------
 						------ Source: Timeless Isle ------
-						i(214729), -- Jade Guardian's Armbands
-						i(214730), -- Jade Guardian's Breastplate
-						i(214734), -- Jade Guardian's Chain
-						i(214733), -- Jade Guardian's Gloves
-						i(214732), -- Jade Guardian's Helmet
-						i(214736), -- Jade Guardian's Legguards
-						i(214735), -- Jade Guardian's Pauldrons
-						i(214731), -- Jade Guardian's Sabatons
+						i(214729),	-- Jade Guardian's Armbands
+						i(214730),	-- Jade Guardian's Breastplate
+						i(214734),	-- Jade Guardian's Chain
+						i(214733),	-- Jade Guardian's Gloves
+						i(214732),	-- Jade Guardian's Helmet
+						i(214736),	-- Jade Guardian's Legguards
+						i(214735),	-- Jade Guardian's Pauldrons
+						i(214731),	-- Jade Guardian's Sabatons
 						cl(HUNTER, {
 							------ Source: MSV/HOF/TOES ------
-							i(214560), -- Yaungol Slayer's Armbands
-							i(214572), -- Yaungol Slayer's Belt
-							i(214575), -- Yaungol Slayer's Boots
-							i(214577), -- Yaungol Slayer's Bracers
-							i(214563), -- Yaungol Slayer's Breastplate
-							i(214555), -- Yaungol Slayer's Chain
-							i(214559), -- Yaungol Slayer's Chestguard
-							i(214564), -- Yaungol Slayer's Footguards
-							i(214573), -- Yaungol Slayer's Gauntlets
-							i(214567), -- Yaungol Slayer's Girdle
-							i(214556), -- Yaungol Slayer's Gloves
-							i(214566), -- Yaungol Slayer's Grips
-							i(214576), -- Yaungol Slayer's Hauberk
-							i(214557), -- Yaungol Slayer's Headguard
-							i(214574), -- Yaungol Slayer's Helm
-							i(214565), -- Yaungol Slayer's Helmet
-							i(214570), -- Yaungol Slayer's Leggings
-							i(214553), -- Yaungol Slayer's Legguards
-							i(214569), -- Yaungol Slayer's Legwraps
-							i(214568), -- Yaungol Slayer's Mantle
-							i(214554), -- Yaungol Slayer's Pauldrons
-							i(214558), -- Yaungol Slayer's Sabatons
-							i(214571), -- Yaungol Slayer's Spaulders
-							i(214562), -- Yaungol Slayer's Wristguards
+							i(214560),	-- Yaungol Slayer's Armbands
+							i(214572),	-- Yaungol Slayer's Belt
+							i(214575),	-- Yaungol Slayer's Boots
+							i(214577),	-- Yaungol Slayer's Bracers
+							i(214563),	-- Yaungol Slayer's Breastplate
+							i(214555),	-- Yaungol Slayer's Chain
+							i(214559),	-- Yaungol Slayer's Chestguard
+							i(214564),	-- Yaungol Slayer's Footguards
+							i(214573),	-- Yaungol Slayer's Gauntlets
+							i(214567),	-- Yaungol Slayer's Girdle
+							i(214556),	-- Yaungol Slayer's Gloves
+							i(214566),	-- Yaungol Slayer's Grips
+							i(214576),	-- Yaungol Slayer's Hauberk
+							i(214557),	-- Yaungol Slayer's Headguard
+							i(214574),	-- Yaungol Slayer's Helm
+							i(214565),	-- Yaungol Slayer's Helmet
+							i(214570),	-- Yaungol Slayer's Leggings
+							i(214553),	-- Yaungol Slayer's Legguards
+							i(214569),	-- Yaungol Slayer's Legwraps
+							i(214568),	-- Yaungol Slayer's Mantle
+							i(214554),	-- Yaungol Slayer's Pauldrons
+							i(214558),	-- Yaungol Slayer's Sabatons
+							i(214571),	-- Yaungol Slayer's Spaulders
+							i(214562),	-- Yaungol Slayer's Wristguards
 
 							------ Source: TOT ------
-							i(214578), -- Saurok Stalker's Armbands
-							i(214602), -- Saurok Stalker's Belt
-							i(214599), -- Saurok Stalker's Boots
-							i(214596), -- Saurok Stalker's Bracers
-							i(214593), -- Saurok Stalker's Breastplate
-							i(214584), -- Saurok Stalker's Chain
-							i(214579), -- Saurok Stalker's Chestguard
-							i(214592), -- Saurok Stalker's Footguards
-							i(214601), -- Saurok Stalker's Gauntlets
-							i(214589), -- Saurok Stalker's Girdle
-							i(214583), -- Saurok Stalker's Gloves
-							i(214590), -- Saurok Stalker's Grips
-							i(214598), -- Saurok Stalker's Hauberk
-							i(214582), -- Saurok Stalker's Headguard
-							i(214600), -- Saurok Stalker's Helm
-							i(214591), -- Saurok Stalker's Helmet
-							i(214604), -- Saurok Stalker's Leggings
-							i(214586), -- Saurok Stalker's Legguards
-							i(214587), -- Saurok Stalker's Legwraps
-							i(214588), -- Saurok Stalker's Mantle
-							i(214585), -- Saurok Stalker's Pauldrons
-							i(214580), -- Saurok Stalker's Sabatons
-							i(214603), -- Saurok Stalker's Spaulders
-							i(214594), -- Saurok Stalker's Wristguards
+							i(214578),	-- Saurok Stalker's Armbands
+							i(214602),	-- Saurok Stalker's Belt
+							i(214599),	-- Saurok Stalker's Boots
+							i(214596),	-- Saurok Stalker's Bracers
+							i(214593),	-- Saurok Stalker's Breastplate
+							i(214584),	-- Saurok Stalker's Chain
+							i(214579),	-- Saurok Stalker's Chestguard
+							i(214592),	-- Saurok Stalker's Footguards
+							i(214601),	-- Saurok Stalker's Gauntlets
+							i(214589),	-- Saurok Stalker's Girdle
+							i(214583),	-- Saurok Stalker's Gloves
+							i(214590),	-- Saurok Stalker's Grips
+							i(214598),	-- Saurok Stalker's Hauberk
+							i(214582),	-- Saurok Stalker's Headguard
+							i(214600),	-- Saurok Stalker's Helm
+							i(214591),	-- Saurok Stalker's Helmet
+							i(214604),	-- Saurok Stalker's Leggings
+							i(214586),	-- Saurok Stalker's Legguards
+							i(214587),	-- Saurok Stalker's Legwraps
+							i(214588),	-- Saurok Stalker's Mantle
+							i(214585),	-- Saurok Stalker's Pauldrons
+							i(214580),	-- Saurok Stalker's Sabatons
+							i(214603),	-- Saurok Stalker's Spaulders
+							i(214594),	-- Saurok Stalker's Wristguards
 
 							------ Source: SOO ------
-							i(214614), -- Armbands of the Unblinking Vigil
-							i(214627), -- Belt of the Unblinking Vigil
-							i(214630), -- Boots of the Unblinking Vigil
-							i(214632), -- Bracers of the Unblinking Vigil
-							i(214618), -- Breastplate of the Unblinking Vigil
-							i(214608), -- Chain of the Unblinking Vigil
-							i(214613), -- Chestguard of the Unblinking Vigil
-							i(214619), -- Feet of the Unblinking Vigil
-							i(214628), -- Gauntlets of the Unblinking Vigil
-							i(214622), -- Girdle of the Unblinking Vigil
-							i(214610), -- Gloves of the Unblinking Vigil
-							i(214621), -- Grips of the Unblinking Vigil
-							i(214631), -- Hauberk of the Unblinking Vigil
-							i(214611), -- Headguard of the Unblinking Vigil
-							i(214629), -- Helm of the Unblinking Vigil
-							i(214620), -- Helmet of the Unblinking Vigil
-							i(214625), -- Leggings of the Unblinking Vigil
-							i(214606), -- Legguards of the Unblinking Vigil
-							i(214624), -- Legwraps of the Unblinking Vigil
-							i(214623), -- Mantle of the Unblinking Vigil
-							i(214607), -- Pauldrons of the Unblinking Vigil
-							i(214612), -- Sabatons of the Unblinking Vigil
-							i(214626), -- Spaulders of the Unblinking Vigil
-							i(214617), -- Wristguards of the Unblinking Vigil
+							i(214614),	-- Armbands of the Unblinking Vigil
+							i(214627),	-- Belt of the Unblinking Vigil
+							i(214630),	-- Boots of the Unblinking Vigil
+							i(214632),	-- Bracers of the Unblinking Vigil
+							i(214618),	-- Breastplate of the Unblinking Vigil
+							i(214608),	-- Chain of the Unblinking Vigil
+							i(214613),	-- Chestguard of the Unblinking Vigil
+							i(214619),	-- Feet of the Unblinking Vigil
+							i(214628),	-- Gauntlets of the Unblinking Vigil
+							i(214622),	-- Girdle of the Unblinking Vigil
+							i(214610),	-- Gloves of the Unblinking Vigil
+							i(214621),	-- Grips of the Unblinking Vigil
+							i(214631),	-- Hauberk of the Unblinking Vigil
+							i(214611),	-- Headguard of the Unblinking Vigil
+							i(214629),	-- Helm of the Unblinking Vigil
+							i(214620),	-- Helmet of the Unblinking Vigil
+							i(214625),	-- Leggings of the Unblinking Vigil
+							i(214606),	-- Legguards of the Unblinking Vigil
+							i(214624),	-- Legwraps of the Unblinking Vigil
+							i(214623),	-- Mantle of the Unblinking Vigil
+							i(214607),	-- Pauldrons of the Unblinking Vigil
+							i(214612),	-- Sabatons of the Unblinking Vigil
+							i(214626),	-- Spaulders of the Unblinking Vigil
+							i(214617),	-- Wristguards of the Unblinking Vigil
 						}),
 						cl(SHAMAN, {
 							------ Source: MSV/HOF/TOES ------
-							i(214633), -- Firebird's Armbands
-							i(214654), -- Firebird's Belt
-							i(214651), -- Firebird's Boots
-							i(214649), -- Firebird's Bracers
-							i(214647), -- Firebird's Breastplate
-							i(214638), -- Firebird's Chain
-							i(220991), -- Firebird's Cuirass
-							i(214646), -- Firebird's Footguards
-							i(214653), -- Firebird's Gauntlets
-							i(214643), -- Firebird's Girdle
-							i(214637), -- Firebird's Gloves
-							i(214644), -- Firebird's Grips
-							i(214650), -- Firebird's Hauberk
-							i(214636), -- Firebird's Headguard
-							i(214652), -- Firebird's Helm
-							i(214645), -- Firebird's Helmet
-							i(214656), -- Firebird's Leggings
-							i(214640), -- Firebird's Legguards
-							i(214641), -- Firebird's Legwraps
-							i(214642), -- Firebird's Mantle
-							i(214639), -- Firebird's Pauldrons
-							i(214634), -- Firebird's Robeguard
-							i(214635), -- Firebird's Sabatons
-							i(220990), -- Firebird's Shirt
-							i(214655), -- Firebird's Spaulders
-							i(214648), -- Firebird's Wristguards
+							------ Source: LFR ------
+							i(214647),	-- Firebird's Breastplate
+							i(214646),	-- Firebird's Footguards
+							i(214643),	-- Firebird's Girdle
+							i(214644),	-- Firebird's Grips
+							i(214645),	-- Firebird's Helmet
+							i(214641),	-- Firebird's Legwraps
+							i(214642),	-- Firebird's Mantle
+							i(214648),	-- Firebird's Wristguards
+
+							------ Source: Normal ------
+							i(214633),	-- Firebird's Armbands
+							i(214638),	-- Firebird's Chain
+							i(214637),	-- Firebird's Gloves
+							i(214636),	-- Firebird's Headguard
+							i(214640),	-- Firebird's Legguards
+							i(214639),	-- Firebird's Pauldrons
+							i(214634),	-- Firebird's Robeguard
+							i(214635),	-- Firebird's Sabatons
+							i(220990),	-- Firebird's Shirt
+
+							------ Source: Heroic ------
+							i(214654),	-- Firebird's Belt
+							i(214651),	-- Firebird's Boots
+							i(214649),	-- Firebird's Bracers
+							i(220991),	-- Firebird's Cuirass
+							i(214653),	-- Firebird's Gauntlets
+							i(214650),	-- Firebird's Hauberk
+							i(214652),	-- Firebird's Helm
+							i(214656),	-- Firebird's Leggings
+							i(214655),	-- Firebird's Spaulders
+
 
 							------ Source: TOT ------
-							i(214664), -- Armbands of the Witch Doctor
-							i(214675), -- Belt of the Witch Doctor
-							i(214678), -- Boots of the Witch Doctor
-							i(214680), -- Bracers of the Witch Doctor
-							i(214666), -- Breastplate of the Witch Doctor
-							i(214659), -- Chain of the Witch Doctor
-							i(220994), -- Chainmail of the Witch Doctor
-							i(214667), -- Footguards of the Witch Doctor
-							i(214676), -- Gauntlets of the Witch Doctor
-							i(214670), -- Girdle of the Witch Doctor
-							i(214660), -- Gloves of the Witch Doctor
-							i(214669), -- Grips of the Witch Doctor
-							i(214679), -- Hauberk of the Witch Doctor
-							i(214661), -- Headguard of the Witch Doctor
-							i(214677), -- Helm of the Witch Doctor
-							i(214668), -- Helmet of the Witch Doctor
-							i(214673), -- Leggings of the Witch Doctor
-							i(214657), -- Legguards of the Witch Doctor
-							i(214672), -- Legwraps of the Witch Doctor
-							i(214671), -- Mantle of the Witch Doctor
-							i(214658), -- Pauldrons of the Witch Doctor
-							i(214663), -- Robeguard of the Witch Doctor
-							i(214662), -- Sabatons of the Witch Doctor
-							i(220992), -- Shirt of the Witch Doctor
-							i(214674), -- Spaulders of the Witch Doctor
-							i(220993), -- Tunic of the Witch Doctor
-							i(214665), -- Wristguards of the Witch Doctor
+							i(214664),	-- Armbands of the Witch Doctor
+							i(214675),	-- Belt of the Witch Doctor
+							i(214678),	-- Boots of the Witch Doctor
+							i(214680),	-- Bracers of the Witch Doctor
+							i(214666),	-- Breastplate of the Witch Doctor
+							i(214659),	-- Chain of the Witch Doctor
+							i(220994),	-- Chainmail of the Witch Doctor
+							i(214667),	-- Footguards of the Witch Doctor
+							i(214676),	-- Gauntlets of the Witch Doctor
+							i(214670),	-- Girdle of the Witch Doctor
+							i(214660),	-- Gloves of the Witch Doctor
+							i(214669),	-- Grips of the Witch Doctor
+							i(214679),	-- Hauberk of the Witch Doctor
+							i(214661),	-- Headguard of the Witch Doctor
+							i(214677),	-- Helm of the Witch Doctor
+							i(214668),	-- Helmet of the Witch Doctor
+							i(214673),	-- Leggings of the Witch Doctor
+							i(214657),	-- Legguards of the Witch Doctor
+							i(214672),	-- Legwraps of the Witch Doctor
+							i(214671),	-- Mantle of the Witch Doctor
+							i(214658),	-- Pauldrons of the Witch Doctor
+							i(214663),	-- Robeguard of the Witch Doctor
+							i(214662),	-- Sabatons of the Witch Doctor
+							i(220992),	-- Shirt of the Witch Doctor
+							i(214674),	-- Spaulders of the Witch Doctor
+							i(220993),	-- Tunic of the Witch Doctor
+							i(214665),	-- Wristguards of the Witch Doctor
 
 							------ Source: SOO ------
-							i(214681), -- Armbands of Celestial Harmony
-							i(214702), -- Belt of Celestial Harmony
-							i(214699), -- Boots of Celestial Harmony
-							i(214697), -- Bracers of Celestial Harmony
-							i(214695), -- Breastplate of Celestial Harmony
-							i(214686), -- Chain of Celestial Harmony
-							i(214682), -- Chestguard of Celestial Harmony
-							i(214694), -- Footguards of Celestial Harmony
-							i(214701), -- Gauntlets of Celestial Harmony
-							i(214691), -- Girdle of Celestial Harmony
-							i(214685), -- Gloves of Celestial Harmony
-							i(214692), -- Grips of Celestial Harmony
-							i(214698), -- Hauberk of Celestial Harmony
-							i(214684), -- Headguard of Celestial Harmony
-							i(214700), -- Helm of Celestial Harmony
-							i(214693), -- Helmet of Celestial Harmony
-							i(214704), -- Leggings of Celestial Harmony
-							i(214688), -- Legguards of Celestial Harmony
-							i(214689), -- Legwraps of Celestial Harmony
-							i(214690), -- Mantle of Celestial Harmony
-							i(214687), -- Pauldrons of Celestial Harmony
-							i(214683), -- Sabatons of Celestial Harmony
-							i(214703), -- Spaulders of Celestial Harmony
-							i(214696), -- Wristguards of Celestial Harmony
+							i(214681),	-- Armbands of Celestial Harmony
+							i(214702),	-- Belt of Celestial Harmony
+							i(214699),	-- Boots of Celestial Harmony
+							i(214697),	-- Bracers of Celestial Harmony
+							i(214695),	-- Breastplate of Celestial Harmony
+							i(214686),	-- Chain of Celestial Harmony
+							i(214682),	-- Chestguard of Celestial Harmony
+							i(214694),	-- Footguards of Celestial Harmony
+							i(214701),	-- Gauntlets of Celestial Harmony
+							i(214691),	-- Girdle of Celestial Harmony
+							i(214685),	-- Gloves of Celestial Harmony
+							i(214692),	-- Grips of Celestial Harmony
+							i(214698),	-- Hauberk of Celestial Harmony
+							i(214684),	-- Headguard of Celestial Harmony
+							i(214700),	-- Helm of Celestial Harmony
+							i(214693),	-- Helmet of Celestial Harmony
+							i(214704),	-- Leggings of Celestial Harmony
+							i(214688),	-- Legguards of Celestial Harmony
+							i(214689),	-- Legwraps of Celestial Harmony
+							i(214690),	-- Mantle of Celestial Harmony
+							i(214687),	-- Pauldrons of Celestial Harmony
+							i(214683),	-- Sabatons of Celestial Harmony
+							i(214703),	-- Spaulders of Celestial Harmony
+							i(214696),	-- Wristguards of Celestial Harmony
 						}),
 					}),
 					filter(PLATE, {
