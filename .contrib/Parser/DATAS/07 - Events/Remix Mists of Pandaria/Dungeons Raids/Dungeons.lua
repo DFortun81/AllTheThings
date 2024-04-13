@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-local BRONZE = 2778;
 DUNGEONS = createHeader({
 	readable = "Dungeons",
 	--icon = "",
