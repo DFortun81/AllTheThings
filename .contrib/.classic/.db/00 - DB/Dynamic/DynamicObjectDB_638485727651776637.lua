@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[28024] = {
+		readable = "Caravan Chest",
+		model = 196976,
+		text = {
+			en = "Caravan Chest",
+			es = "Cofre de la caravana",
+			de = "Karawanentruhe",
+			fr = "Coffre de la caravane",
+			it = "Caravan Chest",
+			pt = "Baú da Caravana",
+			ru = "Сундук из каравана",
+			ko = "짐마차 상자",
+			cn = "车队箱子",
+		},
+	},
+	[30854] = {
+		readable = "Atal'ai Artifact",
+		model = 190341,
+		text = {
+			en = "Atal'ai Artifact",
+			es = "Artefacto de Atal'ai",
+			de = "Artefakt der Atal'ai",
+			fr = "Artefact atal'ai",
+			it = "Atal'ai Artifact",
+			pt = "Artefato Atal'ai",
+			ru = "Артефакт Атал'ай",
+			ko = "아탈라이 유물",
+			cn = "阿塔莱神器",
+		},
+	},
+	[30855] = {
+		readable = "Atal'ai Artifact",
+		model = 190358,
+		text = {
+			en = "Atal'ai Artifact",
+			es = "Artefacto de Atal'ai",
+			de = "Artefakt der Atal'ai",
+			fr = "Artefact atal'ai",
+			it = "Atal'ai Artifact",
+			pt = "Artefato Atal'ai",
+			ru = "Артефакт Атал'ай",
+			ko = "아탈라이 유물",
+			cn = "阿塔莱神器",
+		},
+	},
+	[30856] = {
+		readable = "Atal'ai Artifact",
+		model = 190354,
+		text = {
+			en = "Atal'ai Artifact",
+			es = "Artefacto de Atal'ai",
+			de = "Artefakt der Atal'ai",
+			fr = "Artefact atal'ai",
+			it = "Atal'ai Artifact",
+			pt = "Artefato Atal'ai",
+			ru = "Артефакт Атал'ай",
+			ko = "아탈라이 유물",
+			cn = "阿塔莱神器",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end
