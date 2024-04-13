@@ -689,13 +689,9 @@ i(87775, 127165);	-- Yu'lei, Daughter of Jade
 --- NYI ---
 i(0, 128859);		-- zzOldDepleted-Kyparium Rocket
 i(87785, 127180);	-- Albino Riding Crane
-i(87786, 127209);	-- Black Riding Yak
 i(84728, 123160);	-- Crimson Riding Crane
 i(87794, 127278);	-- Golden Water Strider
 i(87793, 127274);	-- Jade Water Strider
-i(87784, 127178);	-- Jungle Riding Crane
-i(84753, 123182);	-- Kafa Yak
-i(87787, 127213);	-- Modest Expedition Yak
 i(87792, 127272);	-- Orange Water Strider
 i(91016, 0);		-- Reins of the Great Red Dragon Turtle
 
@@ -1760,6 +1756,7 @@ i(217612, 440444);	-- Zovaal's Soul Eater
 i(218111, 441794);	-- Amber Pterrordax
 i(220768, 446022);	-- Astral Emperor's Serpent
 i(220766, 446017);	-- August Phoenix
+i(87786, 127209);	-- Black Riding Yak
 i(213623, 435145);	-- Bloody Skyscreamer
 i(213624, 435149);	-- Cobalt Juggernaut
 i(213598, 435103);	-- Dashing Windsteed
@@ -1771,9 +1768,12 @@ i(213602, 435123);	-- Gilded Riding Crane
 i(213576, 435044);	-- Golden Discus
 i(213601, 435115);	-- Guardian Quilen
 i(213621, 435147);	-- Jade Pterrordax
+i(87784, 127178);	-- Jungle Riding Crane
+i(84753, 123182);	-- Kafa Yak
 i(213609, 435133);	-- Little Red Riding Goat
 i(213607, 435124);	-- Luxurious Riding Crane
 i(213600, 435118);	-- Marble Quilen
+i(87787, 127213);	-- Modest Expedition Yak
 i(213584, 435082);	-- Mogu Hazeblazer
 i(213622, 435146);	-- Night Pterrorwing
 i(213603, 435128);	-- Pale Riding Crane
@@ -1797,6 +1797,3 @@ i(223449, 449126);	-- [PH] Nightsaber Horde Mount Red
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
 i(223285, 448851);	-- [PH] Purple Old God Fish Mount
 i(223286, 448850);	-- [PH] Red Old God Fish Mount
---- These are already in NYI! ---
-i(87787, 127213);	-- Modest Expedition Yak
-i(84753, 123182);	-- Kafa Yak

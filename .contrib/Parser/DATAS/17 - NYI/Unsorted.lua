@@ -282,47 +282,18 @@ root(ROOTS.Unsorted, {
 				i(223482),	-- Set Keystone Level: 9
 			}),
 			filter(MOUNTS, {
-				i(218111),	-- Amber Pterrordax (MOUNT!)
-				i(213623),	-- Bloody Skyscreamer (MOUNT!)
-				i(213624),	-- Cobalt Juggernaut (MOUNT!)
-				i(213598),	-- Dashing Windsteed (MOUNT!)
-				i(213596),	-- Daystorm Windsteed (MOUNT!)
-				i(213595),	-- Feathered Windsurfer (MOUNT!)
-				i(213625),	-- Fel Iron Juggernaut (MOUNT!)
-				i(213597),	-- Forest Windsteed (MOUNT!)
-				i(213602),	-- Gilded Riding Crane (MOUNT!)
-				i(213576),	-- Golden Discus (MOUNT!)
-				i(213601),	-- Guardian Quilen (MOUNT!)
-				i(213621),	-- Jade Pterrordax (MOUNT!)
-				i(213609),	-- Little Red Riding Goat (MOUNT!)
-				i(213607),	-- Luxurious Riding Crane (MOUNT!)
-				i(213600),	-- Marble Quilen (MOUNT!)
-				i(213584),	-- Mogu Hazeblazer (MOUNT!)
-				i(213622),	-- Night Pterrorwing (MOUNT!)
-				i(213603),	-- Pale Riding Crane (MOUNT!)
-				i(213627),	-- Palehide Mushan Beast (MOUNT!)
-				i(221814),	-- Pearlescent Goblin Wave Shredder (MOUNT!)
-				i(213626),	-- Purple Shado-Pan Riding Tiger (MOUNT!)
-				i(213628),	-- Riverwalker Mushan (MOUNT!)
-				i(213605),	-- Rose Riding Crane (MOUNT!)
-				i(213606),	-- Silver Riding Crane (MOUNT!)
-				i(213582),	-- Sky Surfer (MOUNT!)
-				i(213608),	-- Snowy Riding Goat (MOUNT!)
-				i(213604),	-- Tropical Riding Crane (MOUNT!)
+				i(221814),	-- Pearlescent Goblin Wave Shredder (MOUNT!) [Trading Post?]
 				i(223471),	-- [PH] Alliance Wolf Mount Purple (MOUNT!)
 				i(223470),	-- [PH] Alliance Wolf Mount Red (MOUNT!)
 				i(223469),	-- [PH] Alliance Wolf Mount White (MOUNT!)
 				i(223282),	-- [PH] Blue Old God Fish Mount (MOUNT!)
-				i(221270),	-- [PH] Goblin Surfboard (MOUNT!)
+				i(221270),	-- [PH] Goblin Surfboard (MOUNT!) [Trading Post?]
 				i(223284),	-- [PH] Green Old God Fish Mount (MOUNT!)
 				i(223459),	-- [PH] Nightsaber Horde Mount Black (MOUNT!)
 				i(223449),	-- [PH] Nightsaber Horde Mount Red (MOUNT!)
 				i(223460),	-- [PH] Nightsaber Horde Mount White (MOUNT!)
 				i(223285),	-- [PH] Purple Old God Fish Mount (MOUNT!)
 				i(223286),	-- [PH] Red Old God Fish Mount (MOUNT!)
-				-- These are already in NYI! --
-				i(84753),	-- Kafa Yak (MOUNT!)
-				i(87787),	-- Modest Expedition Yak (MOUNT!)
 			}),
 			n(PVP, {
 				i(223639),	-- Unburied Aspirant's Cloak Rack
