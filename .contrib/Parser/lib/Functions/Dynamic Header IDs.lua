@@ -180,6 +180,7 @@ HeaderAssignments = {
 	["Horde"] = -1000095,
 	["Hordemar City (Lower)"] = -1000171,
 	["iCoke"] = -1000263,
+	["Infinite Bazaar"] = -1000875,
 	["In-Game Shop"] = -1000097,
 	["Iskaara Fishing"] = -1000354,
 	["January"] = -1000149,
@@ -402,4 +403,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000874;
+NextHeaderID = -1000876;
