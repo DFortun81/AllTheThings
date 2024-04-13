@@ -110,6 +110,7 @@ HeaderAssignments = {
 	["Dreamsurge"] = -1000359,
 	["Drops"] = -1000017,
 	["Dungeon Journal"] = -1000859,
+	["Dungeons"] = -1000877,
 	["Duskwood Activated"] = -1000333,
 	["Duskwood Active"] = -1000330,
 	["East"] = -1000000,
@@ -403,4 +404,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000876;
+NextHeaderID = -1000878;

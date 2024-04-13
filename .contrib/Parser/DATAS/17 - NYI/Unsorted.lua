@@ -3209,7 +3209,6 @@ root(ROOTS.Unsorted, {
 					i(210257),	-- Bamboo Band
 					i(210256),	-- Cloud-Rider Seal
 					i(208487),	-- Timerunner's Ring
-					i(208491),	-- Timerunner's Seal
 				}),
 				filter(LEATHER, {
 					i(210315),	-- Mistveil Bindings
