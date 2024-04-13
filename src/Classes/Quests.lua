@@ -199,19 +199,22 @@ local PrintQuestInfo
 -- DirtyQuests became a table instead of an array like before, so it broke a lot of things... I'll make one for each version to keep it working
 local ClassicDirtyQuests, RetailDirtyQuests = {}, {}
 local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
-local IgnoreErrorQuests = setmetatable({}, {
-	__index = function(t, key)
-		setmetatable(t, nil);	-- Wipe out the metatable (so this only happens once)
-		local userignored = ATTAccountWideData.IGNORE_QUEST_PRINT
-		-- add user ignored to the list if any, don't save our hardcoded quests for everyone...
-		if userignored then
-			for i,questID in pairs(userignored) do
-				t[questID] = 1;
-			end
+local IgnoreErrorQuests = {}
+app.AddEventHandler("OnSavedVariablesAvailable", function()
+	local userignored = ATTAccountWideData.IGNORE_QUEST_PRINT
+	-- add user ignored to the list if any, don't save our hardcoded quests for everyone...
+	if userignored then
+		for i,questID in ipairs(userignored) do
+			IgnoreErrorQuests[questID] = 1;
 		end
-		return t[key];
 	end
-});
+	-- a bunch of bad data got contaminated into literally everyones saved vars... so let's clean it
+	if IgnoreErrorQuests[7171] or IgnoreErrorQuests[8706] or IgnoreErrorQuests[10759]
+	or userignored[7171] or userignored[8706] or userignored[10759] then
+		ATTAccountWideData.IGNORE_QUEST_PRINT = {}
+		app.CallbackHandlers.DelayedCallback(app.print, 10, "Wiped 'ATTAccountWideData.IGNORE_QUEST_PRINT' Saved Variable table due to bad data!")
+	end
+end)
 local BatchRefresh
 -- We can't track unflagged quests with a single meta-table unless we double-assign keys... that's a bit silly
 -- when we can have the original method of using 'CompletedQuests' as a pass-thru to the Raw data
