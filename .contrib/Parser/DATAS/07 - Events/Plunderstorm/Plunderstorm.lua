@@ -188,12 +188,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {
-	n(PLUNDERSTORM, {
+	n(PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
 		q(80110),	-- First WQ of the Day
 		q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
-		q(80262),	-- Reached renown 6
-		q(81657),	-- Reached renown 16
-		q(80263),	-- Reached renown 17
+		q(65247),	-- Triggeres randomly anytime doing Plunderstorm
+		q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
+		q(81657),	-- Renown 16 - Marveouls Multi-Shot unlocked in Plunderstorm
+		q(80263),	-- Renown 17 - Snazzy Swabbie outfit unlocked in Plunderstorm
+		q(80264),	-- Renown 37 - Strapping Swabbie outfit unlocked in Plunderstorm
 
 		-- Hard or impossible to find out what exactly these HQTs are for
 		q(81676),	-- Dieing
@@ -217,5 +219,5 @@ root(ROOTS.HiddenQuestTriggers, {
 		--q(79464),	-- [DNT] Renown Reward 002
 		--q(79465),	-- [DNT] Renown Reward 003
 		--q(79466),	-- [DNT] Renown Reward 004
-	}),
+	})),
 });
