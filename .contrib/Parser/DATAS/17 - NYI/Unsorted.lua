@@ -321,102 +321,115 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {	-- Timerunning
 				n(ARMOR, {
 					filter(CLOTH, {
-						i(213636),	-- Breezebinder's Robe
-						i(213637),	-- Breezebinder's Sandals
-						i(213638),	-- Breezebinder's Gloves
-						i(213639),	-- Breezebinder's Hood
-						i(213640),	-- Breezebinder's Leggings
-						i(213642),	-- Breezebinder's Shoulderpads
-						i(213643),	-- Breezebinder's Cord
-						i(213644),	-- Breezebinder's Bracers
-						i(213645),	-- Windwhisper Cuffs
-						i(213646),	-- Windwhisper Belt
+						------ These Are Weird ------
+						i(220967),	-- Spirit-Waker Shirt
+						i(220968),	-- Scrollkeeper Shirt
+						i(220969),	-- Passionsilk Vests
+						i(220970),	-- Mindbender Shirt
+						i(220971),	-- Mistwalker's Shirt
+						i(220972),	-- Shaded Wood Vest
+						------ UNKNOWN SOURCES! ------
+						------ Breezebinder's Vestment (Purple) ------
 						i(213647),	-- Windwhisper Amice
-						i(213648),	-- Windwhisper Pants
+						i(213646),	-- Windwhisper Belt
 						i(213649),	-- Windwhisper Cowl
+						i(213645),	-- Windwhisper Cuffs
 						i(213650),	-- Windwhisper Handwraps
-						i(213651),	-- Windwhisper Treads
+						i(213648),	-- Windwhisper Pants
 						i(213652),	-- Windwhisper Raiment
-						i(213653),	-- Brewmoon Wristwraps
-						i(213654),	-- Brewmoon Sash
-						i(213655),	-- Brewmoon Mantle
-						i(213656),	-- Brewmoon Trousers
+						i(213651),	-- Windwhisper Treads
+
+						------ Breezebinder's Vestment (Red) ------
 						i(213657),	-- Brewmoon Crown
+						i(213655),	-- Brewmoon Mantle
 						i(213658),	-- Brewmoon Mitts
+						i(213654),	-- Brewmoon Sash
 						i(213659),	-- Brewmoon Slippers
+						i(213656),	-- Brewmoon Trousers
 						i(213660),	-- Brewmoon Vestment
-						i(213661),	-- Spirit-Waker's Robe
-						i(213662),	-- Spirit-Waker's Sandals
-						i(213663),	-- Spirit-Waker's Gloves
-						i(213664),	-- Spirit-Waker's Hood
-						i(213665),	-- Spirit-Waker's Leggings
-						i(213666),	-- Spirit-Waker's Shoulderpads
-						i(213667),	-- Spirit-Waker's Cord
-						i(213668),	-- Spirit-Waker's Bracers
-						i(213669),	-- Mindbender Cuffs
-						i(213670),	-- Mindbender Belt
+						i(213653),	-- Brewmoon Wristwraps
+
+						------ Spirit-Waker's Vestment (Green) ------
 						i(213671),	-- Mindbender Amice
-						i(213672),	-- Mindbender Pants
+						i(213670),	-- Mindbender Belt
 						i(213673),	-- Mindbender Cowl
+						i(213669),	-- Mindbender Cuffs
 						i(213674),	-- Mindbender Handwraps
-						i(213675),	-- Mindbender Treads
+						i(213672),	-- Mindbender Pants
 						i(213676),	-- Mindbender Raiment
-						i(213677),	-- Scrollkeeper Vestment
-						i(213678),	-- Scrollkeeper Slippers
-						i(213679),	-- Scrollkeeper Mitts
+						i(213675),	-- Mindbender Treads
+
+						------ Spirit-Waker's Vestment (Red) ------
 						i(213680),	-- Scrollkeeper Crown
-						i(213681),	-- Scrollkeeper Trousers
 						i(213682),	-- Scrollkeeper Mantle
+						i(213679),	-- Scrollkeeper Mitts
 						i(213683),	-- Scrollkeeper Sash
+						i(213678),	-- Scrollkeeper Slippers
+						i(213681),	-- Scrollkeeper Trousers
+						i(213677),	-- Scrollkeeper Vestment
 						i(213684),	-- Scrollkeeper Wristwraps
-						i(213685),	-- Mistwalker's Cuffs
-						i(213686),	-- Mistwalker's Belt
-						i(213687),	-- Mistwalker's Amice
-						i(213688),	-- Mistwalker's Pants
-						i(213689),	-- Mistwalker's Cowl
-						i(213690),	-- Mistwalker's Handwraps
-						i(213691),	-- Mistwalker's Treads
-						i(213692),	-- Mistwalker's Raiment
-						i(213693),	-- Silkmaster's Robe
-						i(213694),	-- Silkmaster's Sandals
+
+						------ Mistwalker's Vestment (Blue) ------
+						i(213700),	-- Silkmaster's Bracers
+						i(213699),	-- Silkmaster's Cord
 						i(213695),	-- Silkmaster's Gloves
 						i(213696),	-- Silkmaster's Hood
 						i(213697),	-- Silkmaster's Leggings
+						i(213693),	-- Silkmaster's Robe
+						i(213694),	-- Silkmaster's Sandals
 						i(213698),	-- Silkmaster's Shoulderpads
-						i(213699),	-- Silkmaster's Cord
-						i(213700),	-- Silkmaster's Bracers
-						i(213702),	-- Shaded Wood Wristwraps
-						i(213703),	-- Shaded Wood Sash
-						i(213704),	-- Shaded Wood Mantle
-						i(213705),	-- Shaded Wood Trousers
+
+						------ Mistwalker's Vestment (Original) ------
+						i(213687),	-- Mistwalker's Amice
+						i(213686),	-- Mistwalker's Belt
+						i(213689),	-- Mistwalker's Cowl
+						i(213685),	-- Mistwalker's Cuffs
+						i(213690),	-- Mistwalker's Handwraps
+						i(213688),	-- Mistwalker's Pants
+						i(213692),	-- Mistwalker's Raiment
+						i(213691),	-- Mistwalker's Treads
+
+						------ Mistwalker's Vestment (White) ------
 						i(213706),	-- Shaded Wood Crown
+						i(213704),	-- Shaded Wood Mantle
 						i(213707),	-- Shaded Wood Mitts
+						i(213703),	-- Shaded Wood Sash
 						i(213708),	-- Shaded Wood Slippers
+						i(213705),	-- Shaded Wood Trousers
 						i(213710),	-- Shaded Wood Vestment
+						i(213702),	-- Shaded Wood Wristwraps
+
+						------ Vestments of the Eternal Dynasty (Black) ------
 						i(213987),	-- Cloudscorcher's Bracers
 						i(213988),	-- Cloudscorcher's Cord
-						i(213989),	-- Cloudscorcher's Shoulderpads
-						i(213990),	-- Cloudscorcher's Leggings
-						i(213991),	-- Cloudscorcher's Hood
 						i(213992),	-- Cloudscorcher's Gloves
-						i(213993),	-- Cloudscorcher's Sandals
+						i(213991),	-- Cloudscorcher's Hood
+						i(213990),	-- Cloudscorcher's Leggings
 						i(213994),	-- Cloudscorcher's Robe
-						i(213995),	-- Amaranthine Raiment
-						i(213996),	-- Amaranthine Treads
-						i(213997),	-- Amaranthine Handwraps
-						i(213998),	-- Amaranthine Cowl
-						i(213999),	-- Amaranthine Pants
+						i(213993),	-- Cloudscorcher's Sandals
+						i(213989),	-- Cloudscorcher's Shoulderpads
+
+						------ Vestments of the Eternal Dynasty (Blue) ------
 						i(214000),	-- Amaranthine Amice
 						i(214001),	-- Amaranthine Belt
+						i(213998),	-- Amaranthine Cowl
 						i(214002),	-- Amaranthine Cuffs
-						i(214003),	-- Wristwraps of the Dynast
-						i(214004),	-- Sash of the Dynast
-						i(214005),	-- Mantle of the Dynast
-						i(214006),	-- Leggings of the Dynast
+						i(213997),	-- Amaranthine Handwraps
+						i(213999),	-- Amaranthine Pants
+						i(213995),	-- Amaranthine Raiment
+						i(220979),	-- Amaranthine Shirt
+						i(213996),	-- Amaranthine Treads
+
+						------ Vestments of the Eternal Dynasty (Yellow) ------
 						i(214007),	-- Crown of the Dynast
 						i(214008),	-- Gloves of the Dynast
+						i(214006),	-- Leggings of the Dynast
+						i(214005),	-- Mantle of the Dynast
+						i(214004),	-- Sash of the Dynast
 						i(214009),	-- Slippers of the Dynast
+						i(220980),	-- Vest of the Dynast
 						i(214010),	-- Vestment of the Dynast
+						i(214003),	-- Wristwraps of the Dynast
 						cl(MAGE, {	-- Tier Sets
 							i(213794),	-- Bracers of the Chromatic Hydra
 							i(213795),	-- Cord of the Chromatic Hydra
@@ -568,22 +581,19 @@ root(ROOTS.Unsorted, {
 							i(213986),	-- Wristwraps of the Horned Nightmare
 						}),
 						i(220966),	-- Shirt of the Chronomancer
-						i(220967),	-- Spirit-Waker Shirt
-						i(220968),	-- Scrollkeeper Shirt
-						i(220969),	-- Passionsilk Vests
-						i(220970),	-- Mindbender Shirt
-						i(220971),	-- Mistwalker's Shirt
-						i(220972),	-- Shaded Wood Vest
+
 						i(220973),	-- Chronomancer Shirt
 						i(220974),	-- Chronomancer Vest
 						i(220975),	-- Sha-Skin Shirt
 						i(220976),	-- Shirt of the Thousandfold Hells
 						i(220977),	-- Vest of the Thousandfold Hells
 						i(220978),	-- Shirt of the Horned Nightmare
-						i(220979),	-- Amaranthine Shirt
-						i(220980),	-- Vest of the Dynast
+
+
 					}),
 					filter(LEATHER, {
+						------ Mogubreaker Battlegear (Black) ------
+						-- Contains Removed
 						i(214027),	-- Nimbletoe Tunic
 						i(214028),	-- Nimbletoe Boots
 						i(214029),	-- Nimbletoe Gloves
@@ -592,6 +602,8 @@ root(ROOTS.Unsorted, {
 						i(214032),	-- Nimbletoe Shoulderpads
 						i(214033),	-- Nimbletoe Belt
 						i(214034),	-- Nimbletoe Bracers
+						------ Mogubreaker Battlegear (Original) ------
+						-- Contains Removed
 						i(214035),	-- Mogubreaker Bindings
 						i(214036),	-- Mogubreaker Waistband
 						i(214037),	-- Mogubreaker Spaulders
@@ -600,6 +612,8 @@ root(ROOTS.Unsorted, {
 						i(214040),	-- Mogubreaker Grips
 						i(214041),	-- Mogubreaker Footguards
 						i(214042),	-- Mogubreaker Vest
+						------ Mogubreaker Battlegear (Red) ------
+
 						i(214044),	-- Tidesplitter Jerkin
 						i(214045),	-- Tidesplitter Treads
 						i(214046),	-- Tidesplitter Handguards
@@ -608,6 +622,8 @@ root(ROOTS.Unsorted, {
 						i(214049),	-- Tidesplitter Mantle
 						i(214050),	-- Tidesplitter Cinch
 						i(214051),	-- Tidesplitter Wraps
+
+						------ Mogubreaker Battlegear (Yellow) ------
 						i(214052),	-- Brushstalker Bracers
 						i(214053),	-- Brushstalker Belt
 						i(214054),	-- Brushstalker Shoulderpads
@@ -616,6 +632,9 @@ root(ROOTS.Unsorted, {
 						i(214057),	-- Brushstalker Gloves
 						i(214058),	-- Brushstalker Boots
 						i(214059),	-- Brushstalker Tunic
+
+						------ Thunderpaw Battlegear (Dark) ------
+						-- Contains Removed
 						i(214060),	-- Ghost Fox Vest
 						i(214061),	-- Ghost Fox Footguards
 						i(214062),	-- Ghost Fox Grips
@@ -624,6 +643,9 @@ root(ROOTS.Unsorted, {
 						i(214065),	-- Ghost Fox Spaulders
 						i(214066),	-- Ghost Fox Waistband
 						i(214067),	-- Ghost Fox Bindings
+
+						------ Thunderpaw Battlegear (Original) ------
+						-- Contains Removed
 						i(214068),	-- Thunderpaw Bracers
 						i(214069),	-- Thunderpaw Belt
 						i(214070),	-- Thunderpaw Shoulderpads
@@ -632,6 +654,8 @@ root(ROOTS.Unsorted, {
 						i(214073),	-- Thunderpaw Gloves
 						i(214074),	-- Thunderpaw Boots
 						i(214075),	-- Thunderpaw Tunic
+
+						------ Thunderpaw Battlegear (Red) ------
 						i(214076),	-- Farwatch Bindings
 						i(214077),	-- Farwatch Vest
 						i(214078),	-- Farwatch Footguards
@@ -640,6 +664,8 @@ root(ROOTS.Unsorted, {
 						i(214081),	-- Farwatch Waistband
 						i(214082),	-- Farwatch Spaulders
 						i(214083),	-- Farwatch Legguards
+						------ Mistveil Leathers (Brown) ------
+						-- Contains Removed
 						i(214084),	-- Springrain Leggings
 						i(214085),	-- Springrain Shoulderpads
 						i(214086),	-- Springrain Belt
@@ -648,6 +674,9 @@ root(ROOTS.Unsorted, {
 						i(214089),	-- Springrain Boots
 						i(214090),	-- Springrain Tunic
 						i(214091),	-- Springrain Bracers
+
+						------ Mistveil Leathers (Black) ------
+						-- Contains Removed
 						i(214092),	-- Mistveil Wraps
 						i(214093),	-- Mistveil Jerkin
 						i(214094),	-- Mistveil Treads
@@ -656,6 +685,9 @@ root(ROOTS.Unsorted, {
 						i(214097),	-- Mistveil Cinch
 						i(214098),	-- Mistveil Mantle
 						i(214099),	-- Mistveil Pants
+
+						------ Thunderpaw Battlegear (Light) ------
+						-- Contains Removed
 						i(214100),	-- Mistdancer Pants
 						i(214101),	-- Mistdancer Mantle
 						i(214102),	-- Mistdancer Cinch
@@ -664,6 +696,9 @@ root(ROOTS.Unsorted, {
 						i(214105),	-- Mistdancer Treads
 						i(214106),	-- Mistdancer Jerkin
 						i(214107),	-- Mistdancer Wraps
+
+						------ Mistveil Leathers (Crimson) ------
+						-- Contains Removed
 						i(214108),	-- Riverblade Bindings
 						i(214109),	-- Riverblade Vest
 						i(214110),	-- Riverblade Footguards
@@ -672,6 +707,8 @@ root(ROOTS.Unsorted, {
 						i(214113),	-- Riverblade Waistband
 						i(214114),	-- Riverblade Spaulders
 						i(214115),	-- Riverblade Legguards
+
+						------ Mistveil Leathers (Indigo) ------
 						i(214116),	-- Swampthresher Pants
 						i(214117),	-- Swampthresher Mantle
 						i(214118),	-- Swampthresher Cinch
@@ -830,6 +867,8 @@ root(ROOTS.Unsorted, {
 							i(214377),	-- Mantle of the Barbed Assassin
 							i(214378),	-- Pants of the Barbed Assassin
 						}),
+
+						------ Snowdrift Battlegear (Blue) ------
 						i(214379),	-- Cranefeather Leggings
 						i(214380),	-- Cranefeather Shoulderpads
 						i(214381),	-- Cranefeather Belt
@@ -838,6 +877,8 @@ root(ROOTS.Unsorted, {
 						i(214384),	-- Cranefeather Boots
 						i(214385),	-- Cranefeather Tunic
 						i(214386),	-- Cranefeather Bracers
+
+						------ Snowdrift Battlegear (Brown) ------
 						i(214387),	-- Snowdrift Bindings
 						i(214388),	-- Snowdrift Vest
 						i(214389),	-- Snowdrift Footguards
@@ -846,6 +887,8 @@ root(ROOTS.Unsorted, {
 						i(214392),	-- Snowdrift Waistband
 						i(214393),	-- Snowdrift Spaulders
 						i(214394),	-- Snowdrift Legguards
+
+						------ Snowdrift Battlegear (Red) ------
 						i(214395),	-- Wildblood Pants
 						i(214396),	-- Wildblood Mantle
 						i(214397),	-- Wildblood Cinch
@@ -854,6 +897,7 @@ root(ROOTS.Unsorted, {
 						i(214400),	-- Wildblood Treads
 						i(214401),	-- Wildblood Jerkin
 						i(214402),	-- Wildblood Wraps
+						--
 						i(220981),	-- Eternal Blossom Tunic
 						i(220982),	-- Vest of the Haunted Forest
 						i(220983),	-- Vest of the Haunted Forest
@@ -1073,6 +1117,8 @@ root(ROOTS.Unsorted, {
 						}),
 					}),
 					filter(PLATE, {
+						------ Swarmbreaker's Battleplate (Dark) ------
+						-- contains removed
 						i(214737),	-- Greenstone Legguards
 						i(214738),	-- Greenstone Pauldrons
 						i(214739),	-- Greenstone Girdle
@@ -1081,6 +1127,9 @@ root(ROOTS.Unsorted, {
 						i(214742),	-- Greenstone Sabatons
 						i(214743),	-- Greenstone Bracers
 						i(214744),	-- Greenstone Breastplate
+
+						------ Swarmbreaker's Battleplate (Light) ------
+						-- contains removed
 						i(214745),	-- Yaungolian Battleplate
 						i(214746),	-- Yaungolian Vambraces
 						i(214747),	-- Yaungolian Warboots
@@ -1089,6 +1138,9 @@ root(ROOTS.Unsorted, {
 						i(214750),	-- Yaungolian Greatbelt
 						i(214751),	-- Yaungolian Spaulders
 						i(214752),	-- Yaungolian Legplates
+
+						------ Swarmbreaker's Battleplate (Original) ------
+						-- contains removed
 						i(214753),	-- Swarmbreaker's Greaves
 						i(214754),	-- Swarmbreaker's Shoulderguards
 						i(214755),	-- Swarmbreaker's Waistguard
@@ -1097,6 +1149,9 @@ root(ROOTS.Unsorted, {
 						i(214758),	-- Swarmbreaker's Greatboots
 						i(214759),	-- Swarmbreaker's Armguards
 						i(214760),	-- Swarmbreaker's Chestguard
+
+						------ Spiritguard's Warplate (Blue) ------
+						-- contains removed
 						i(214761),	-- Spiritguard's Breastplate
 						i(214762),	-- Spiritguard's Bracers
 						i(214763),	-- Spiritguard's Sabatons
@@ -1105,6 +1160,9 @@ root(ROOTS.Unsorted, {
 						i(214766),	-- Spiritguard's Girdle
 						i(214767),	-- Spiritguard's Pauldrons
 						i(214768),	-- Spiritguard's Legguards
+
+						------ Spiritguard's Warplate (Gold) ------
+						-- contains removed
 						i(214769),	-- Sunsoul Legplates
 						i(214770),	-- Sunsoul Spaulders
 						i(214771),	-- Sunsoul Greatbelt
@@ -1113,6 +1171,9 @@ root(ROOTS.Unsorted, {
 						i(214774),	-- Sunsoul Warboots
 						i(214775),	-- Sunsoul Vambraces
 						i(214776),	-- Sunsoul Battleplate
+
+						------ Spiritguard's Warplate (Silver) ------
+						-- contains removed
 						i(214777),	-- Steel Sentinel's Chestguard
 						i(214778),	-- Steel Sentinel's Armguards
 						i(214779),	-- Steel Sentinel's Greatboots
@@ -1121,6 +1182,9 @@ root(ROOTS.Unsorted, {
 						i(214782),	-- Steel Sentinel's Waistguard
 						i(214783),	-- Steel Sentinel's Shoulderguards
 						i(214784),	-- Steel Sentinel's Greaves
+
+						------ Shan'ze Warplate (Green) ------
+						-- contains removed
 						i(214785),	-- Highpeak Legguards
 						i(214786),	-- Highpeak Pauldrons
 						i(214787),	-- Highpeak Girdle
@@ -1129,6 +1193,9 @@ root(ROOTS.Unsorted, {
 						i(214790),	-- Highpeak Sabatons
 						i(214791),	-- Highpeak Bracers
 						i(214792),	-- Highpeak Breastplate
+
+						------ Shan'ze Warplate (Purple) ------
+						-- contains removed
 						i(214793),	-- Bladesworn Battleplate
 						i(214794),	-- Bladesworn Vambraces
 						i(214795),	-- Bladesworn Warboots
@@ -1137,6 +1204,9 @@ root(ROOTS.Unsorted, {
 						i(214798),	-- Bladesworn Greatbelt
 						i(214799),	-- Bladesworn Spaulders
 						i(214800),	-- Bladesworn Legplates
+
+						------ Shan'ze Warplate (Red) ------
+						-- contains removed
 						i(214801),	-- Shan'ze Greaves
 						i(214802),	-- Shan'ze Shoulderguards
 						i(214803),	-- Shan'ze Waistguard
@@ -1145,6 +1215,9 @@ root(ROOTS.Unsorted, {
 						i(214806),	-- Shan'ze Greatboots
 						i(214807),	-- Shan'ze Armguards
 						i(214808),	-- Shan'ze Chestguard
+
+						------ Shan'ze Warplate (Yellow) ------
+						-- contains removed
 						i(214809),	-- Wallwatcher Breastplate
 						i(214810),	-- Wallwatcher Bracers
 						i(214811),	-- Wallwatcher Sabatons
@@ -1315,7 +1388,7 @@ root(ROOTS.Unsorted, {
 							i(215039),	-- Vambraces of the Prehistoric Marauder
 							i(215040),	-- Warboots of the Prehistoric Marauder
 						}),
-						--
+						------ Gatecrasher Battleplate (Black) ------
 						i(215041),	-- Cliffbreaker Greatboots
 						i(215042),	-- Cliffbreaker Armguards
 						i(215043),	-- Cliffbreaker Greaves
@@ -1324,6 +1397,7 @@ root(ROOTS.Unsorted, {
 						i(215046),	-- Cliffbreaker Handguards
 						i(215047),	-- Cliffbreaker Shoulderguards
 						i(215048),	-- Cliffbreaker Waistguard
+						------ Gatecrasher Battleplate (Blue) ------
 						i(215049),	-- Everbright Girdle
 						i(215050),	-- Everbright Pauldrons
 						i(215051),	-- Everbright Grasp
@@ -1332,6 +1406,7 @@ root(ROOTS.Unsorted, {
 						i(215054),	-- Everbright Legguards
 						i(215055),	-- Everbright Bracers
 						i(215056),	-- Everbright Sabatons
+						------ Gatecrasher Battleplate (Green) ------
 						i(215057),	-- Gatecrasher Greatbelt
 						i(215058),	-- Gatecrasher Spaulders
 						i(215059),	-- Gatecrasher Gauntlets
@@ -1340,6 +1415,7 @@ root(ROOTS.Unsorted, {
 						i(215062),	-- Gatecrasher Legplates
 						i(215063),	-- Gatecrasher Vambraces
 						i(215064),	-- Gatecrasher Warboots
+						------ Gatecrasher Battleplate (Red) ------
 						i(215065),	-- Cragchewer Waistguard
 						i(215066),	-- Cragchewer Shoulderguards
 						i(215067),	-- Cragchewer Handguards
@@ -1374,15 +1450,6 @@ root(ROOTS.Unsorted, {
 						i(215308),	-- Ensemble: Jade Guardian's Regalia (Red)
 						i(215309),	-- Ensemble: Jade Guardian's Regalia (Yellow)
 					}),
-					i(215176),	-- Ensemble: Breezebinder's Vestments
-					i(215181),	-- Ensemble: Breezebinder's Vestments
-					i(215182),	-- Ensemble: Breezebinder's Vestments
-					i(215183),	-- Ensemble: Spirit-Waker's Vestments
-					i(215184),	-- Ensemble: Spirit-Waker's Vestments
-					i(215185),	-- Ensemble: Spirit-Waker's Vestments
-					i(215186),	-- Ensemble: Mistwalker's Vestments
-					i(215187),	-- Ensemble: Mistwalker's Vestments
-					i(215188),	-- Ensemble: Mistwalker's Vestments
 					i(215192),	-- Ensemble: Regalia of the Chromatic Hydra
 					i(215193),	-- Ensemble: Regalia of the Chromatic Hydra
 					i(215194),	-- Ensemble: Regalia of the Chromatic Hydra
@@ -1401,9 +1468,7 @@ root(ROOTS.Unsorted, {
 					i(215213),	-- Ensemble: Regalia of the Horned Nightmare
 					i(215214),	-- Ensemble: Regalia of the Horned Nightmare
 					i(215215),	-- Ensemble: Regalia of the Horned Nightmare
-					i(215216),	-- Ensemble: Vestments of the Eternal Dynasty
-					i(215217),	-- Ensemble: Vestments of the Eternal Dynasty
-					i(215218),	-- Ensemble: Vestments of the Eternal Dynasty
+
 					i(215221),	-- Ensemble: Mogubreaker Battlegear
 					i(215222),	-- Ensemble: Mogubreaker Battlegear
 					i(215223),	-- Ensemble: Mogubreaker Battlegear

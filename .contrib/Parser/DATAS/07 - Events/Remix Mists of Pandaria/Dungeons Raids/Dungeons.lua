@@ -30,6 +30,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		}),
 		n(ARMOR, {
+			filter(CLOTH, {
+				i(213644),	-- Breezebinder's Bracers
+				i(213643),	-- Breezebinder's Cord
+				i(213638),	-- Breezebinder's Gloves
+				i(213639),	-- Breezebinder's Hood
+				i(213640),	-- Breezebinder's Leggings
+				i(213636),	-- Breezebinder's Robe
+				i(213637),	-- Breezebinder's Sandals
+				i(213642),	-- Breezebinder's Shoulderpads
+			}),
 			filter(MAIL, {
 				i(214408),	-- Stormbrew Belt
 				i(214405),	-- Stormbrew Boots

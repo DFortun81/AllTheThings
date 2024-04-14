@@ -143,6 +143,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215298, {	-- Ensemble: Regalia of the Firebird (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- TODO: Symlink
 							i(214647),	-- Firebird's Breastplate
 							i(214646),	-- Firebird's Footguards
 							i(214643),	-- Firebird's Girdle
@@ -156,6 +157,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215302, {	-- Ensemble: Regalia of the Witch Doctor (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- TODO: Symlink
 							i(214675),	-- Belt of the Witch Doctor
 							i(214678),	-- Boots of the Witch Doctor
 							i(214680),	-- Bracers of the Witch Doctor
@@ -170,7 +172,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215304, {	-- Ensemble: Regalia of Celestial Harmony (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							-- TODO: Has Contains Removed Gear!! Must Add
+						-- Contains Removed!
 							i(214695),	-- Breastplate of Celestial Harmony
 							i(214694),	-- Footguards of Celestial Harmony
 							i(214691),	-- Girdle of Celestial Harmony
@@ -211,6 +213,61 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214976),	-- Waistguard of Resounding Rings
 						},
 					}),
+				}),
+			}),
+			n(219030, {	-- Arturos <Dungeon Apparel>
+				filter(CLOTH, {
+					i(215176, {	-- Ensemble: Breezebinder's Vestments (Original)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(213644),	-- Breezebinder's Bracers
+							i(213643),	-- Breezebinder's Cord
+							i(213638),	-- Breezebinder's Gloves
+							i(213639),	-- Breezebinder's Hood
+							i(213640),	-- Breezebinder's Leggings
+							i(213636),	-- Breezebinder's Robe
+							i(213637),	-- Breezebinder's Sandals
+							i(213642),	-- Breezebinder's Shoulderpads
+						},
+					}),
+					i(215181, {	-- Ensemble: Breezebinder's Vestments (Purple)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(213647),	-- Windwhisper Amice
+							i(213646),	-- Windwhisper Belt
+							i(213649),	-- Windwhisper Cowl
+							i(213645),	-- Windwhisper Cuffs
+							i(213650),	-- Windwhisper Handwraps
+							i(213648),	-- Windwhisper Pants
+							i(213652),	-- Windwhisper Raiment
+							i(213651),	-- Windwhisper Treads
+						},
+					}),
+					i(215182, {	-- Ensemble: Breezebinder's Vestments (Red)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- TODO: Symlink
+							i(213657),	-- Brewmoon Crown
+							i(213655),	-- Brewmoon Mantle
+							i(213658),	-- Brewmoon Mitts
+							i(213654),	-- Brewmoon Sash
+							i(213659),	-- Brewmoon Slippers
+							i(213656),	-- Brewmoon Trousers
+							i(213660),	-- Brewmoon Vestment
+							i(213653),	-- Brewmoon Wristwraps
+						},
+					}),
+				}),
+				filter(LEATHER, {
+
+				}),
+				filter(MAIL, {
+
+				}),
+				filter(PLATE, {
+
 				}),
 			}),
 			n(219028, {	-- Durus <Normal Raid Apparel>
@@ -338,6 +395,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215297, {	-- Ensemble: Regalia of the Firebird (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- TODO: Symlink
 							i(214633),	-- Firebird's Armbands
 							i(214638),	-- Firebird's Chain
 							i(214637),	-- Firebird's Gloves
@@ -352,6 +410,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215300, {	-- Ensemble: Regalia of the Witch Doctor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- TODO: Symlink
 							i(214664),	-- Armbands of the Witch Doctor
 							i(214659),	-- Chain of the Witch Doctor
 							i(214660),	-- Gloves of the Witch Doctor
@@ -366,7 +425,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215303, {	-- Ensemble: Regalia of Celestial Harmony (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-						-- TODO: Has Contains Removed Gear!! Must Add
+						-- Contains Removed!
 							i(214681),	-- Armbands of Celestial Harmony
 							i(214686),	-- Chain of Celestial Harmony
 							i(214682),	-- Chestguard of Celestial Harmony
@@ -890,7 +949,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215220, {	-- Ensemble: Guise of the Shado-Pan (Original)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(214019),	-- Shado-Pan Armbands
 						i(214020),	-- Shado-Pan Belt
 						i(214024),	-- Shado-Pan Gloves
@@ -930,7 +989,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215277, {	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(214450),	-- Dark Shaman Footguards
 						i(214447),	-- Dark Shaman Girdle
 						i(214448),	-- Dark Shaman Grips
@@ -944,7 +1003,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215352, {	-- Ensemble: Robes of Quiet Reflection (Brown)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(215094),	-- Belt of Precarious Balance
 						i(215096),	-- Leggings of Precarious Balance
 						i(215097),	-- Robe of Precarious Balance
@@ -955,7 +1014,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215353, {	-- Ensemble: Robes of Quiet Reflection (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(215101),	-- Belt of Hushed Wisdom
 						i(215099),	-- Leggings of Hushed Wisdom
 						i(215098),	-- Robe of Hushed Wisdom
@@ -976,7 +1035,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215355, {	-- Ensemble: Robes of Quiet Reflection (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- Contains Removed!
 						i(215109),	-- Belt of Humbling Gravity
 						i(215107),	-- Leggings of Humbling Gravity
 						i(215106),	-- Robe of Humbling Gravity
@@ -987,7 +1046,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(214540),	-- Sun Pearl Armbands
 						i(214536),	-- Sun Pearl Chain
 						i(214539),	-- Sun Pearl Chestguard
@@ -999,7 +1058,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(214542),	-- Sun Pearl Breastplate
 						i(214543),	-- Sun Pearl Footguards
 						i(214545),	-- Sun Pearl Girdle
@@ -1011,7 +1070,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(214548),	-- Sun Pearl Belt
 						i(214550),	-- Sun Pearl Boots
 						i(214552),	-- Sun Pearl Bracers
@@ -1035,7 +1094,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215239, {	-- Ensemble: Tian Monastery Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(214135),	-- Tian Monastery Bindings
 						i(214133),	-- Tian Monastery Footguards
 						i(214132),	-- Tian Monastery Grips
@@ -1047,7 +1106,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215240, {	-- Ensemble: Tian Monastery Clothing (White)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(214140),	-- Tian Monastery Cinch
 						i(214139),	-- Tian Monastery Handguards
 						i(214137),	-- Tian Monastery Jerkin
@@ -1059,7 +1118,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215356, {	-- Ensemble: Vestments of Serenity (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(215079),	-- Nightsky Bands
 						i(215078),	-- Nightsky Belt
 						i(215075),	-- Nightsky Gloves
@@ -1071,7 +1130,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215357, {	-- Ensemble: Vestments of Serenity (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(215080),	-- Bands of Wisdom
 						i(215081),	-- Belt of Wisdom
 						i(215084),	-- Gloves of Wisdom
@@ -1083,7 +1142,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215358, {	-- Ensemble: Vestments of Serenity (White)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- TODO: Symlink
 						i(215087),	-- Serene Bands
 						i(215088),	-- Serene Belt
 						i(215091),	-- Serene Gloves
@@ -1091,6 +1150,137 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215093),	-- Serene Robe
 						i(215089),	-- Serene Slippers
 					},
+				}),
+				filter(CLOTH, {
+					i(215183, {	-- Ensemble: Spirit-Waker's Vestments (Blue)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(213668),	-- Spirit-Waker's Bracers
+							i(213667),	-- Spirit-Waker's Cord
+							i(213663),	-- Spirit-Waker's Gloves
+							i(213664),	-- Spirit-Waker's Hood
+							i(213665),	-- Spirit-Waker's Leggings
+							i(213661),	-- Spirit-Waker's Robe
+							i(213662),	-- Spirit-Waker's Sandals
+							i(213666),	-- Spirit-Waker's Shoulderpads
+						},
+					}),
+
+					i(215184, {	-- Ensemble: Spirit-Waker's Vestments (Green)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(213671),	-- Mindbender Amice
+							i(213670),	-- Mindbender Belt
+							i(213673),	-- Mindbender Cowl
+							i(213669),	-- Mindbender Cuffs
+							i(213674),	-- Mindbender Handwraps
+							i(213672),	-- Mindbender Pants
+							i(213676),	-- Mindbender Raiment
+							i(213675),	-- Mindbender Treads
+						},
+					}),
+					i(215185, {	-- Ensemble: Spirit-Waker's Vestments
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(213680),	-- Scrollkeeper Crown
+							i(213682),	-- Scrollkeeper Mantle
+							i(213679),	-- Scrollkeeper Mitts
+							i(213683),	-- Scrollkeeper Sash
+							i(213678),	-- Scrollkeeper Slippers
+							i(213681),	-- Scrollkeeper Trousers
+							i(213677),	-- Scrollkeeper Vestment
+							i(213684),	-- Scrollkeeper Wristwraps
+						},
+					}),
+					i(215186, {	-- Ensemble: Mistwalker's Vestments (Blue)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(213700),	-- Silkmaster's Bracers
+							i(213699),	-- Silkmaster's Cord
+							i(213695),	-- Silkmaster's Gloves
+							i(213696),	-- Silkmaster's Hood
+							i(213697),	-- Silkmaster's Leggings
+							i(213693),	-- Silkmaster's Robe
+							i(213694),	-- Silkmaster's Sandals
+							i(213698),	-- Silkmaster's Shoulderpads
+						},
+					}),
+					i(215187, {	-- Ensemble: Mistwalker's Vestments (Original)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(213687),	-- Mistwalker's Amice
+							i(213686),	-- Mistwalker's Belt
+							i(213689),	-- Mistwalker's Cowl
+							i(213685),	-- Mistwalker's Cuffs
+							i(213690),	-- Mistwalker's Handwraps
+							i(213688),	-- Mistwalker's Pants
+							i(213692),	-- Mistwalker's Raiment
+							i(213691),	-- Mistwalker's Treads
+						},
+					}),
+					i(215188, {	-- Ensemble: Mistwalker's Vestments
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(213706),	-- Shaded Wood Crown
+							i(213704),	-- Shaded Wood Mantle
+							i(213707),	-- Shaded Wood Mitts
+							i(213703),	-- Shaded Wood Sash
+							i(213708),	-- Shaded Wood Slippers
+							i(213705),	-- Shaded Wood Trousers
+							i(213710),	-- Shaded Wood Vestment
+							i(213702),	-- Shaded Wood Wristwraps
+						},
+					}),
+					i(215216, {	-- Ensemble: Vestments of the Eternal Dynasty (Black)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(213987),	-- Cloudscorcher's Bracers
+							i(213988),	-- Cloudscorcher's Cord
+							i(213992),	-- Cloudscorcher's Gloves
+							i(213991),	-- Cloudscorcher's Hood
+							i(213990),	-- Cloudscorcher's Leggings
+							i(213994),	-- Cloudscorcher's Robe
+							i(213993),	-- Cloudscorcher's Sandals
+							i(213989),	-- Cloudscorcher's Shoulderpads
+						},
+					}),
+					i(215217, {	-- Ensemble: Vestments of the Eternal Dynasty (Blue)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214000),	-- Amaranthine Amice
+							i(214001),	-- Amaranthine Belt
+							i(213998),	-- Amaranthine Cowl
+							i(214002),	-- Amaranthine Cuffs
+							i(213997),	-- Amaranthine Handwraps
+							i(213999),	-- Amaranthine Pants
+							i(213995),	-- Amaranthine Raiment
+							i(220979),	-- Amaranthine Shirt
+							i(213996),	-- Amaranthine Treads
+						},
+					}),
+					i(215218, {	-- Ensemble: Vestments of the Eternal Dynasty (Yellow)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214007),	-- Crown of the Dynast
+							i(214008),	-- Gloves of the Dynast
+							i(214006),	-- Leggings of the Dynast
+							i(214005),	-- Mantle of the Dynast
+							i(214004),	-- Sash of the Dynast
+							i(214009),	-- Slippers of the Dynast
+							i(220980),	-- Vest of the Dynast
+							i(214010),	-- Vestment of the Dynast
+							i(214003),	-- Wristwraps of the Dynast
+						},
+					}),
 				}),
 			}),
 			n(219024, {	-- Lidamorrutu <Gem Procurement>
@@ -1282,6 +1472,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215299, {	-- Ensemble: Regalia of the Firebird (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- TODO: Symlink
 							i(214654),	-- Firebird's Belt
 							i(214651),	-- Firebird's Boots
 							i(214649),	-- Firebird's Bracers
@@ -1296,7 +1487,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215301, {	-- Ensemble: Regalia of the Witch Doctor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-						-- TODO: Has Contains NYI Gear!! Must Add
+						-- Contains Removed/NYI!
 							i(214666),	-- Breastplate of the Witch Doctor
 							i(214667),	-- Footguards of the Witch Doctor
 							i(214670),	-- Girdle of the Witch Doctor
@@ -1311,7 +1502,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215305, {	-- Ensemble: Regalia of Celestial Harmony (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-						-- TODO: Has Contains Removed Gear!! Must Add
+						-- Contains Removed!
 							i(214702),	-- Belt of Celestial Harmony
 							i(214699),	-- Boots of Celestial Harmony
 							i(214697),	-- Bracers of Celestial Harmony

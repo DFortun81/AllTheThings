@@ -134,9 +134,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(CLOTH, {
+					i(213668),	-- Spirit-Waker's Bracers
+					i(213667),	-- Spirit-Waker's Cord
+					i(213663),	-- Spirit-Waker's Gloves
+					i(213664),	-- Spirit-Waker's Hood
+					i(213665),	-- Spirit-Waker's Leggings
+					i(213661),	-- Spirit-Waker's Robe
+					i(213662),	-- Spirit-Waker's Sandals
+					i(213666),	-- Spirit-Waker's Shoulderpads
+				}),
 				filter(MAIL, {
-					------ Trailseeker's Laminar Armor (Black) ------
-					-- Looks to be this set from Jade Forest?
 					i(214460),	-- Windreaver's Belt
 					i(214457),	-- Windreaver's Boots
 					i(214454),	-- Windreaver's Bracers
