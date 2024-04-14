@@ -363,7 +363,48 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(PLATE, {
-
+					i(215310, {	-- Ensemble: Swarmbreaker's Battleplate (Dark)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(214743),	-- Greenstone Bracers
+							i(214744),	-- Greenstone Breastplate
+							i(214740),	-- Greenstone Gauntlets
+							i(214739),	-- Greenstone Girdle
+							i(214741),	-- Greenstone Helm
+							i(214737),	-- Greenstone Legguards
+							i(214738),	-- Greenstone Pauldrons
+							i(214742),	-- Greenstone Sabatons
+						},
+					}),
+					i(215311, {	-- Ensemble: Swarmbreaker's Battleplate (Light)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(214745),	-- Yaungolian Battleplate
+							i(214750),	-- Yaungolian Greatbelt
+							i(214748),	-- Yaungolian Greathelm
+							i(214749),	-- Yaungolian Handguards
+							i(214752),	-- Yaungolian Legplates
+							i(214751),	-- Yaungolian Spaulders
+							i(214746),	-- Yaungolian Vambraces
+							i(214747),	-- Yaungolian Warboots
+						},
+					}),
+					i(215312, {	-- Ensemble: Swarmbreaker's Battleplate (Original)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(214759),	-- Swarmbreaker's Armguards
+							i(214760),	-- Swarmbreaker's Chestguard
+							i(214756),	-- Swarmbreaker's Grasp
+							i(214758),	-- Swarmbreaker's Greatboots
+							i(214753),	-- Swarmbreaker's Greaves
+							i(214754),	-- Swarmbreaker's Shoulderguards
+							i(214755),	-- Swarmbreaker's Waistguard
+							i(214757),	-- Swarmbreaker's Warhelm
+						},
+					}),
 				}),
 			}),
 			n(219028, {	-- Durus <Normal Raid Apparel>
@@ -1534,62 +1575,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(MAIL, {
-					i(215278, {	-- Ensemble: Trailseeker's Laminar Armor (Black)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- TODO: Symlink
-							i(214460),	-- Windreaver's Belt
-							i(214457),	-- Windreaver's Boots
-							i(214454),	-- Windreaver's Bracers
-							i(214459),	-- Windreaver's Gauntlets
-							i(214456),	-- Windreaver's Hauberk
-							i(214458),	-- Windreaver's Helm
-							i(214463),	-- Windreaver's Leggings
-							i(214461),	-- Windreaver's Spaulders
-						},
-					}),
-					i(215279, {	-- Ensemble: Trailseeker's Laminar Armor (Gold)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(214476),	-- Trailseeker's Armbands
-							i(214470),	-- Trailseeker's Chain
-							i(214475),	-- Trailseeker's Chestguard
-							i(214471),	-- Trailseeker's Gloves
-							i(214472),	-- Trailseeker's Headguard
-							i(214467),	-- Trailseeker's Legguards
-							i(214468),	-- Trailseeker's Pauldrons
-							i(214474),	-- Trailseeker's Sabatons
-						},
-					}),
-					i(215280, {	-- Ensemble: Trailseeker's Laminar Armor (Green)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- TODO: Symlink
-							i(214480),	-- Peakscaler Breastplate
-							i(214481),	-- Peakscaler Footguards
-							i(214484),	-- Peakscaler Girdle
-							i(214483),	-- Peakscaler Grips
-							i(214482),	-- Peakscaler Helmet
-							i(214486),	-- Peakscaler Legwraps
-							i(214485),	-- Peakscaler Mantle
-							i(214479),	-- Peakscaler Wristguards
-						},
-					}),
-					i(215281, {	-- Ensemble: Trailseeker's Laminar Armor (White)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(214492),	-- Jade Guardian's Belt
-							i(214496),	-- Jade Guardian's Boots
-							i(214498),	-- Jade Guardian's Bracers
-							i(214493),	-- Jade Guardian's Gauntlets
-							i(214497),	-- Jade Guardian's Hauberk
-							i(214495),	-- Jade Guardian's Helm
-							i(214489),	-- Jade Guardian's Leggings
-							i(214491),	-- Jade Guardian's Spaulders
-						},
-					}),
 					i(215282, {	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
@@ -1686,6 +1671,218 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214736),	-- Jade Guardian's Legguards
 							i(214735),	-- Jade Guardian's Pauldrons
 							i(214731),	-- Jade Guardian's Sabatons
+						},
+					}),
+					i(215278, {	-- Ensemble: Trailseeker's Laminar Armor (Black)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214460),	-- Windreaver's Belt
+							i(214457),	-- Windreaver's Boots
+							i(214454),	-- Windreaver's Bracers
+							i(214459),	-- Windreaver's Gauntlets
+							i(214456),	-- Windreaver's Hauberk
+							i(214458),	-- Windreaver's Helm
+							i(214463),	-- Windreaver's Leggings
+							i(214461),	-- Windreaver's Spaulders
+						},
+					}),
+					i(215279, {	-- Ensemble: Trailseeker's Laminar Armor (Gold)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214476),	-- Trailseeker's Armbands
+							i(214470),	-- Trailseeker's Chain
+							i(214475),	-- Trailseeker's Chestguard
+							i(214471),	-- Trailseeker's Gloves
+							i(214472),	-- Trailseeker's Headguard
+							i(214467),	-- Trailseeker's Legguards
+							i(214468),	-- Trailseeker's Pauldrons
+							i(214474),	-- Trailseeker's Sabatons
+						},
+					}),
+					i(215280, {	-- Ensemble: Trailseeker's Laminar Armor (Green)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214480),	-- Peakscaler Breastplate
+							i(214481),	-- Peakscaler Footguards
+							i(214484),	-- Peakscaler Girdle
+							i(214483),	-- Peakscaler Grips
+							i(214482),	-- Peakscaler Helmet
+							i(214486),	-- Peakscaler Legwraps
+							i(214485),	-- Peakscaler Mantle
+							i(214479),	-- Peakscaler Wristguards
+						},
+					}),
+					i(215281, {	-- Ensemble: Trailseeker's Laminar Armor (White)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214492),	-- Jade Guardian's Belt
+							i(214496),	-- Jade Guardian's Boots
+							i(214498),	-- Jade Guardian's Bracers
+							i(214493),	-- Jade Guardian's Gauntlets
+							i(214497),	-- Jade Guardian's Hauberk
+							i(214495),	-- Jade Guardian's Helm
+							i(214489),	-- Jade Guardian's Leggings
+							i(214491),	-- Jade Guardian's Spaulders
+						},
+					}),
+				}),
+				filter(PLATE, {
+					i(215348, {	-- Ensemble: Gatecrasher's Battleplate (Black)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(215042),	-- Cliffbreaker Armguards
+							i(215045),	-- Cliffbreaker Chestguard
+							i(215041),	-- Cliffbreaker Greatboots
+							i(215043),	-- Cliffbreaker Greaves
+							i(215046),	-- Cliffbreaker Handguards
+							i(215047),	-- Cliffbreaker Shoulderguards
+							i(215048),	-- Cliffbreaker Waistguard
+							i(215044),	-- Cliffbreaker Warhelm
+						},
+					}),
+					i(215349, {	-- Ensemble: Gatecrasher's Battleplate (Blue)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(215055),	-- Everbright Bracers
+							i(215052),	-- Everbright Breastplate
+							i(215049),	-- Everbright Girdle
+							i(215051),	-- Everbright Grasp
+							i(215053),	-- Everbright Helm
+							i(215054),	-- Everbright Legguards
+							i(215050),	-- Everbright Pauldrons
+							i(215056),	-- Everbright Sabatons
+						},
+					}),
+					i(215350, {	-- Ensemble: Gatecrasher's Battleplate (Green)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(215060),	-- Gatecrasher Battleplate
+							i(215059),	-- Gatecrasher Gauntlets
+							i(215057),	-- Gatecrasher Greatbelt
+							i(215061),	-- Gatecrasher Greathelm
+							i(215062),	-- Gatecrasher Legplates
+							i(215058),	-- Gatecrasher Spaulders
+							i(215063),	-- Gatecrasher Vambraces
+							i(215064),	-- Gatecrasher Warboots
+						},
+					}),
+					i(215351, {	-- Ensemble: Gatecrasher's Battleplate (Red)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(215071),	-- Cragchewer Armguards
+							i(215068),	-- Cragchewer Chestguard
+							i(215072),	-- Cragchewer Greatboots
+							i(215070),	-- Cragchewer Greaves
+							i(215067),	-- Cragchewer Handguards
+							i(215066),	-- Cragchewer Shoulderguards
+							i(215065),	-- Cragchewer Waistguard
+							i(215069),	-- Cragchewer Warhelm
+						},
+					}),
+					i(215316, {	-- Ensemble: Shan'ze Warplate (Green)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214791),	-- Highpeak Bracers
+							i(214792),	-- Highpeak Breastplate
+							i(214788),	-- Highpeak Gauntlets
+							i(214787),	-- Highpeak Girdle
+							i(214789),	-- Highpeak Helm
+							i(214785),	-- Highpeak Legguards
+							i(214786),	-- Highpeak Pauldrons
+							i(214790),	-- Highpeak Sabatons
+						},
+					}),
+					i(215317, {	-- Ensemble: Shan'ze Warplate (Purple)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214793),	-- Bladesworn Battleplate
+							i(214798),	-- Bladesworn Greatbelt
+							i(214796),	-- Bladesworn Greathelm
+							i(214797),	-- Bladesworn Handguards
+							i(214800),	-- Bladesworn Legplates
+							i(214799),	-- Bladesworn Spaulders
+							i(214794),	-- Bladesworn Vambraces
+							i(214795),	-- Bladesworn Warboots
+						},
+					}),
+					i(215318, {	-- Ensemble: Shan'ze Warplate (Red)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214807),	-- Shan'ze Armguards
+							i(214808),	-- Shan'ze Chestguard
+							i(214804),	-- Shan'ze Grasp
+							i(214806),	-- Shan'ze Greatboots
+							i(214801),	-- Shan'ze Greaves
+							i(214802),	-- Shan'ze Shoulderguards
+							i(214803),	-- Shan'ze Waistguard
+							i(214805),	-- Shan'ze Warhelm
+						},
+					}),
+					i(215319, {	-- Ensemble: Shan'ze Warplate (Yellow)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214810),	-- Wallwatcher Bracers
+							i(214809),	-- Wallwatcher Breastplate
+							i(214813),	-- Wallwatcher Gauntlets
+							i(214814),	-- Wallwatcher Girdle
+							i(214812),	-- Wallwatcher Helm
+							i(214816),	-- Wallwatcher Legguards
+							i(214815),	-- Wallwatcher Pauldrons
+							i(214811),	-- Wallwatcher Sabatons
+						},
+					}),
+					i(215313, {	-- Ensemble: Spiritguard's Warplate (Blue)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214762),	-- Spiritguard's Bracers
+							i(214761),	-- Spiritguard's Breastplate
+							i(214765),	-- Spiritguard's Gauntlets
+							i(214766),	-- Spiritguard's Girdle
+							i(214764),	-- Spiritguard's Helm
+							i(214768),	-- Spiritguard's Legguards
+							i(214767),	-- Spiritguard's Pauldrons
+							i(214763),	-- Spiritguard's Sabatons
+						},
+					}),
+					i(215314, {	-- Ensemble: Spiritguard's Warplate (Gold)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214776),	-- Sunsoul Battleplate
+							i(214771),	-- Sunsoul Greatbelt
+							i(214773),	-- Sunsoul Greathelm
+							i(214772),	-- Sunsoul Handguards
+							i(214769),	-- Sunsoul Legplates
+							i(214770),	-- Sunsoul Spaulders
+							i(214775),	-- Sunsoul Vambraces
+							i(214774),	-- Sunsoul Warboots
+						},
+					}),
+					i(215315, {	-- Ensemble: Spiritguard's Warplate (Silver)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214778),	-- Steel Sentinel's Armguards
+							i(214777),	-- Steel Sentinel's Chestguard
+							i(214781),	-- Steel Sentinel's Grasp
+							i(214779),	-- Steel Sentinel's Greatboots
+							i(214784),	-- Steel Sentinel's Greaves
+							i(214783),	-- Steel Sentinel's Shoulderguards
+							i(214782),	-- Steel Sentinel's Waistguard
+							i(214780),	-- Steel Sentinel's Warhelm
 						},
 					}),
 				}),

@@ -937,114 +937,144 @@ root(ROOTS.Unsorted, {
 					}),
 					filter(PLATE, {
 						------ Swarmbreaker's Battleplate (Dark) ------
-						-- contains removed
-						i(214737),	-- Greenstone Legguards
-						i(214738),	-- Greenstone Pauldrons
-						i(214739),	-- Greenstone Girdle
-						i(214740),	-- Greenstone Gauntlets
-						i(214741),	-- Greenstone Helm
-						i(214742),	-- Greenstone Sabatons
 						i(214743),	-- Greenstone Bracers
 						i(214744),	-- Greenstone Breastplate
+						i(214740),	-- Greenstone Gauntlets
+						i(214739),	-- Greenstone Girdle
+						i(214741),	-- Greenstone Helm
+						i(214737),	-- Greenstone Legguards
+						i(214738),	-- Greenstone Pauldrons
+						i(214742),	-- Greenstone Sabatons
 
 						------ Swarmbreaker's Battleplate (Light) ------
-						-- contains removed
 						i(214745),	-- Yaungolian Battleplate
-						i(214746),	-- Yaungolian Vambraces
-						i(214747),	-- Yaungolian Warboots
+						i(214750),	-- Yaungolian Greatbelt
 						i(214748),	-- Yaungolian Greathelm
 						i(214749),	-- Yaungolian Handguards
-						i(214750),	-- Yaungolian Greatbelt
-						i(214751),	-- Yaungolian Spaulders
 						i(214752),	-- Yaungolian Legplates
+						i(214751),	-- Yaungolian Spaulders
+						i(214746),	-- Yaungolian Vambraces
+						i(214747),	-- Yaungolian Warboots
 
 						------ Swarmbreaker's Battleplate (Original) ------
-						-- contains removed
+						i(214759),	-- Swarmbreaker's Armguards
+						i(214760),	-- Swarmbreaker's Chestguard
+						i(214756),	-- Swarmbreaker's Grasp
+						i(214758),	-- Swarmbreaker's Greatboots
 						i(214753),	-- Swarmbreaker's Greaves
 						i(214754),	-- Swarmbreaker's Shoulderguards
 						i(214755),	-- Swarmbreaker's Waistguard
-						i(214756),	-- Swarmbreaker's Grasp
 						i(214757),	-- Swarmbreaker's Warhelm
-						i(214758),	-- Swarmbreaker's Greatboots
-						i(214759),	-- Swarmbreaker's Armguards
-						i(214760),	-- Swarmbreaker's Chestguard
 
 						------ Spiritguard's Warplate (Blue) ------
-						-- contains removed
-						i(214761),	-- Spiritguard's Breastplate
 						i(214762),	-- Spiritguard's Bracers
-						i(214763),	-- Spiritguard's Sabatons
-						i(214764),	-- Spiritguard's Helm
+						i(214761),	-- Spiritguard's Breastplate
 						i(214765),	-- Spiritguard's Gauntlets
 						i(214766),	-- Spiritguard's Girdle
-						i(214767),	-- Spiritguard's Pauldrons
+						i(214764),	-- Spiritguard's Helm
 						i(214768),	-- Spiritguard's Legguards
+						i(214767),	-- Spiritguard's Pauldrons
+						i(214763),	-- Spiritguard's Sabatons
 
 						------ Spiritguard's Warplate (Gold) ------
-						-- contains removed
+						i(214776),	-- Sunsoul Battleplate
+						i(214771),	-- Sunsoul Greatbelt
+						i(214773),	-- Sunsoul Greathelm
+						i(214772),	-- Sunsoul Handguards
 						i(214769),	-- Sunsoul Legplates
 						i(214770),	-- Sunsoul Spaulders
-						i(214771),	-- Sunsoul Greatbelt
-						i(214772),	-- Sunsoul Handguards
-						i(214773),	-- Sunsoul Greathelm
-						i(214774),	-- Sunsoul Warboots
 						i(214775),	-- Sunsoul Vambraces
-						i(214776),	-- Sunsoul Battleplate
+						i(214774),	-- Sunsoul Warboots
 
 						------ Spiritguard's Warplate (Silver) ------
-						-- contains removed
-						i(214777),	-- Steel Sentinel's Chestguard
 						i(214778),	-- Steel Sentinel's Armguards
-						i(214779),	-- Steel Sentinel's Greatboots
-						i(214780),	-- Steel Sentinel's Warhelm
+						i(214777),	-- Steel Sentinel's Chestguard
 						i(214781),	-- Steel Sentinel's Grasp
-						i(214782),	-- Steel Sentinel's Waistguard
-						i(214783),	-- Steel Sentinel's Shoulderguards
+						i(214779),	-- Steel Sentinel's Greatboots
 						i(214784),	-- Steel Sentinel's Greaves
+						i(214783),	-- Steel Sentinel's Shoulderguards
+						i(214782),	-- Steel Sentinel's Waistguard
+						i(214780),	-- Steel Sentinel's Warhelm
 
 						------ Shan'ze Warplate (Green) ------
-						-- contains removed
-						i(214785),	-- Highpeak Legguards
-						i(214786),	-- Highpeak Pauldrons
-						i(214787),	-- Highpeak Girdle
-						i(214788),	-- Highpeak Gauntlets
-						i(214789),	-- Highpeak Helm
-						i(214790),	-- Highpeak Sabatons
 						i(214791),	-- Highpeak Bracers
 						i(214792),	-- Highpeak Breastplate
+						i(214788),	-- Highpeak Gauntlets
+						i(214787),	-- Highpeak Girdle
+						i(214789),	-- Highpeak Helm
+						i(214785),	-- Highpeak Legguards
+						i(214786),	-- Highpeak Pauldrons
+						i(214790),	-- Highpeak Sabatons
 
 						------ Shan'ze Warplate (Purple) ------
-						-- contains removed
 						i(214793),	-- Bladesworn Battleplate
-						i(214794),	-- Bladesworn Vambraces
-						i(214795),	-- Bladesworn Warboots
+						i(214798),	-- Bladesworn Greatbelt
 						i(214796),	-- Bladesworn Greathelm
 						i(214797),	-- Bladesworn Handguards
-						i(214798),	-- Bladesworn Greatbelt
-						i(214799),	-- Bladesworn Spaulders
 						i(214800),	-- Bladesworn Legplates
+						i(214799),	-- Bladesworn Spaulders
+						i(214794),	-- Bladesworn Vambraces
+						i(214795),	-- Bladesworn Warboots
 
 						------ Shan'ze Warplate (Red) ------
-						-- contains removed
+						i(214807),	-- Shan'ze Armguards
+						i(214808),	-- Shan'ze Chestguard
+						i(214804),	-- Shan'ze Grasp
+						i(214806),	-- Shan'ze Greatboots
 						i(214801),	-- Shan'ze Greaves
 						i(214802),	-- Shan'ze Shoulderguards
 						i(214803),	-- Shan'ze Waistguard
-						i(214804),	-- Shan'ze Grasp
 						i(214805),	-- Shan'ze Warhelm
-						i(214806),	-- Shan'ze Greatboots
-						i(214807),	-- Shan'ze Armguards
-						i(214808),	-- Shan'ze Chestguard
 
 						------ Shan'ze Warplate (Yellow) ------
-						-- contains removed
-						i(214809),	-- Wallwatcher Breastplate
 						i(214810),	-- Wallwatcher Bracers
-						i(214811),	-- Wallwatcher Sabatons
-						i(214812),	-- Wallwatcher Helm
+						i(214809),	-- Wallwatcher Breastplate
 						i(214813),	-- Wallwatcher Gauntlets
 						i(214814),	-- Wallwatcher Girdle
-						i(214815),	-- Wallwatcher Pauldrons
+						i(214812),	-- Wallwatcher Helm
 						i(214816),	-- Wallwatcher Legguards
+						i(214815),	-- Wallwatcher Pauldrons
+						i(214811),	-- Wallwatcher Sabatons
+
+						------ Gatecrasher Battleplate (Black) ------
+						i(215042),	-- Cliffbreaker Armguards
+						i(215045),	-- Cliffbreaker Chestguard
+						i(215041),	-- Cliffbreaker Greatboots
+						i(215043),	-- Cliffbreaker Greaves
+						i(215046),	-- Cliffbreaker Handguards
+						i(215047),	-- Cliffbreaker Shoulderguards
+						i(215048),	-- Cliffbreaker Waistguard
+						i(215044),	-- Cliffbreaker Warhelm
+
+						------ Gatecrasher Battleplate (Blue) ------
+						i(215055),	-- Everbright Bracers
+						i(215052),	-- Everbright Breastplate
+						i(215049),	-- Everbright Girdle
+						i(215051),	-- Everbright Grasp
+						i(215053),	-- Everbright Helm
+						i(215054),	-- Everbright Legguards
+						i(215050),	-- Everbright Pauldrons
+						i(215056),	-- Everbright Sabatons
+
+						------ Gatecrasher Battleplate (Green) ------
+						i(215060),	-- Gatecrasher Battleplate
+						i(215059),	-- Gatecrasher Gauntlets
+						i(215057),	-- Gatecrasher Greatbelt
+						i(215061),	-- Gatecrasher Greathelm
+						i(215062),	-- Gatecrasher Legplates
+						i(215058),	-- Gatecrasher Spaulders
+						i(215063),	-- Gatecrasher Vambraces
+						i(215064),	-- Gatecrasher Warboots
+
+						------ Gatecrasher Battleplate (Red) ------
+						i(215071),	-- Cragchewer Armguards
+						i(215068),	-- Cragchewer Chestguard
+						i(215072),	-- Cragchewer Greatboots
+						i(215070),	-- Cragchewer Greaves
+						i(215067),	-- Cragchewer Handguards
+						i(215066),	-- Cragchewer Shoulderguards
+						i(215065),	-- Cragchewer Waistguard
+						i(215069),	-- Cragchewer Warhelm
 						cl(DEATHKNIGHT, {	-- Tier Sets
 							i(214841),	-- Battleplate of the All-Consuming Maw
 							i(214842),	-- Vambraces of the All-Consuming Maw
@@ -1207,57 +1237,16 @@ root(ROOTS.Unsorted, {
 							i(215039),	-- Vambraces of the Prehistoric Marauder
 							i(215040),	-- Warboots of the Prehistoric Marauder
 						}),
-						------ Gatecrasher Battleplate (Black) ------
-						i(215041),	-- Cliffbreaker Greatboots
-						i(215042),	-- Cliffbreaker Armguards
-						i(215043),	-- Cliffbreaker Greaves
-						i(215044),	-- Cliffbreaker Warhelm
-						i(215045),	-- Cliffbreaker Chestguard
-						i(215046),	-- Cliffbreaker Handguards
-						i(215047),	-- Cliffbreaker Shoulderguards
-						i(215048),	-- Cliffbreaker Waistguard
-						------ Gatecrasher Battleplate (Blue) ------
-						i(215049),	-- Everbright Girdle
-						i(215050),	-- Everbright Pauldrons
-						i(215051),	-- Everbright Grasp
-						i(215052),	-- Everbright Breastplate
-						i(215053),	-- Everbright Helm
-						i(215054),	-- Everbright Legguards
-						i(215055),	-- Everbright Bracers
-						i(215056),	-- Everbright Sabatons
-						------ Gatecrasher Battleplate (Green) ------
-						i(215057),	-- Gatecrasher Greatbelt
-						i(215058),	-- Gatecrasher Spaulders
-						i(215059),	-- Gatecrasher Gauntlets
-						i(215060),	-- Gatecrasher Battleplate
-						i(215061),	-- Gatecrasher Greathelm
-						i(215062),	-- Gatecrasher Legplates
-						i(215063),	-- Gatecrasher Vambraces
-						i(215064),	-- Gatecrasher Warboots
-						------ Gatecrasher Battleplate (Red) ------
-						i(215065),	-- Cragchewer Waistguard
-						i(215066),	-- Cragchewer Shoulderguards
-						i(215067),	-- Cragchewer Handguards
-						i(215068),	-- Cragchewer Chestguard
-						i(215069),	-- Cragchewer Warhelm
-						i(215070),	-- Cragchewer Greaves
-						i(215071),	-- Cragchewer Armguards
-						i(215072),	-- Cragchewer Greatboots
 					}),
 				}),
 				filter(COSMETIC, {
 					filter(MAIL, {
-						-- Its unknown if these will reward all sourceIDs connected to each set...
-
-
-
 						i(215291),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215292),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215293),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215294),	-- Ensemble: Battlegear of the Unblinking Vigil
 						i(215295),	-- Ensemble: Battlegear of the Unblinking Vigil
 						i(215296),	-- Ensemble: Battlegear of the Unblinking Vigil
-
 					}),
 					i(215192),	-- Ensemble: Regalia of the Chromatic Hydra
 					i(215193),	-- Ensemble: Regalia of the Chromatic Hydra
@@ -1277,10 +1266,6 @@ root(ROOTS.Unsorted, {
 					i(215213),	-- Ensemble: Regalia of the Horned Nightmare
 					i(215214),	-- Ensemble: Regalia of the Horned Nightmare
 					i(215215),	-- Ensemble: Regalia of the Horned Nightmare
-
-
-
-
 					i(215244),	-- Ensemble: Vestments of the Haunted Forest
 					i(215245),	-- Ensemble: Vestments of the Haunted Forest
 					i(215246),	-- Ensemble: Vestments of the Haunted Forest
@@ -1299,17 +1284,6 @@ root(ROOTS.Unsorted, {
 					i(215266),	-- Ensemble: Barbed Assassin Battlegear
 					i(215267),	-- Ensemble: Barbed Assassin Battlegear
 					i(215268),	-- Ensemble: Barbed Assassin Battlegear
-
-					i(215310),	-- Ensemble: Swarmbreaker's Battleplate
-					i(215311),	-- Ensemble: Swarmbreaker's Battleplate
-					i(215312),	-- Ensemble: Swarmbreaker's Battleplate
-					i(215313),	-- Ensemble: Spiritguard's Warplate
-					i(215314),	-- Ensemble: Spiritguard's Warplate
-					i(215315),	-- Ensemble: Spiritguard's Warplate
-					i(215316),	-- Ensemble: Shan'ze Warplate
-					i(215317),	-- Ensemble: Shan'ze Warplate
-					i(215318),	-- Ensemble: Shan'ze Warplate
-					i(215319),	-- Ensemble: Shan'ze Warplate
 					i(215323),	-- Ensemble: Battleplate of the All-Consuming Maw
 					i(215324),	-- Ensemble: Battleplate of the All-Consuming Maw
 					i(215325),	-- Ensemble: Battleplate of the All-Consuming Maw
@@ -1328,11 +1302,6 @@ root(ROOTS.Unsorted, {
 					i(215345),	-- Ensemble: Battleplate of the Prehistoric Marauder
 					i(215346),	-- Ensemble: Battleplate of the Prehistoric Marauder
 					i(215347),	-- Ensemble: Battleplate of the Prehistoric Marauder
-					i(215348),	-- Ensemble: Gatecrasher's Battleplate
-					i(215349),	-- Ensemble: Gatecrasher's Battleplate
-					i(215350),	-- Ensemble: Gatecrasher's Battleplate
-					i(215351),	-- Ensemble: Gatecrasher's Battleplate
-
 					i(215074),	-- REUSE
 					i(215085),	-- REUSE
 					i(215092),	-- REUSE
