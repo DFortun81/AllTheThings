@@ -6,6 +6,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_townlongsteppes",
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(19889),		-- Campaign: Townlong Steppes
+				ach(20012),		-- Looking For Group: Townlong Steppes
+				ach(19914),		-- Shado-Pan
+				ach(19966),		-- Tour Townlong Steppes
 				ach(19877, {	-- Townlong Steppes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

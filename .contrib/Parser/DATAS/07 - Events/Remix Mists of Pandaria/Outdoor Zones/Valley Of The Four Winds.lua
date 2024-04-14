@@ -6,6 +6,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_valleyoffourwinds",
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(19884),		-- Campaign: Valley of the Four Winds
+				ach(20009),		-- Looking For Group: Valley of the Four Winds
+				ach(19963),		-- Tour Valley of the Four Winds
 				ach(19873, {	-- Valley of the Four Winds
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

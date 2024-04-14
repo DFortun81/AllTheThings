@@ -6,6 +6,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_krasarangwilds",
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(19885, {	-- Campaign: Krasarang Wilds [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(19886, {	-- Campaign: Krasarang Wilds [H]
+					["races"] = HORDE_ONLY,
+				}),
+				ach(19891),		-- Campaign: Landfall
+				ach(19918, {	-- Dominance Offensive [H]
+					["races"] = HORDE_ONLY,
+				}),
+				ach(19999),		-- Elusive Foes: Landfall
 				ach(19874, {	-- Krasarang Wilds
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -158,6 +169,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					},
 				}),
+				ach(19917, {	-- Operation: Shieldwall [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(19964),	-- Tour Krasarang Wilds
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {

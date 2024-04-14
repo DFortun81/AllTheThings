@@ -6,6 +6,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_kunlaisummit",
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(19887, {	-- Campaign: Kun-Lai Summit [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(19888, {	-- Campaign: Kun-Lai Summit [H]
+					["races"] = HORDE_ONLY,
+				}),
 				ach(19875, {	-- Kun-Lai Summit
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -19,6 +25,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(218248),	-- Chen Stormstout's Hat
 					},
 				}),
+				ach(20011),		-- Looking For Group: Kun-Lai Summit
+				ach(19965),		-- Tour Kun-Lai Summit
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {

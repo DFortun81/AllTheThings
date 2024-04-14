@@ -6,6 +6,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\spell_nature_callstorm",
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(19892),		-- Campaign: Isle of Thunder
+				ach(20000),		-- Elusive Foes: Isle of Thunder
 				ach(19880, {	-- Isle of Thunder
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -146,6 +148,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					},
 				}),
+				ach(20015),		-- Looking For Group: Isle of Thunder
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {

@@ -6,6 +6,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_dreadwastes",
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(19890),		-- Campaign: Dread Wastes
 				ach(19878, {	-- Dread Wastes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -17,6 +18,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(220765),	-- Sha Corruption (ILLUSION!)
 					},
 				}),
+				ach(19915),	-- The Klaxxi
+				ach(19967),	-- Tour Dread Wastes
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {

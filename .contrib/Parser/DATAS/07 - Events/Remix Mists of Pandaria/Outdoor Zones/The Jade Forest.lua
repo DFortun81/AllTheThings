@@ -6,6 +6,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_jadeforest",
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(19882, {	-- Campaign: The Jade Forest [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(19883, {	-- Campaign: The Jade Forest [H]
+					["races"] = HORDE_ONLY,
+				}),
 				ach(20026, {	-- Explore Jade Forest
 					crit(65919),	-- Tian Monastery
 					crit(65920),	-- Dawn's Blossom
@@ -25,19 +31,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(65934),	-- Windward Isle
 					crit(65935),	-- Honeydew Village
 				}),
-				ach(19872, {	-- The Jade Forest
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						19882,	-- Campaign: The Jade Forest [A]
-						19883,	-- Campaign: The Jade Forest [H]
-						20008,	-- Looking For Group: The Jade Forest
-						19912,	-- Order of the Cloud Serpent
-						19962,	-- Tour The Jade Forest
-					}},
-					["g"] = {
-						i(220777),	-- Cherry Blossom Trail (TOY!)
-					},
-				}),
 				ach(19977, {	-- Hidden Treasures: The Jade Forest
 					crit(65478, {	-- Ship's Storage
 						["_quests"] = { 31396 },
@@ -52,6 +45,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["_quests"] = { 31404 },
 					}),
 				}),
+				ach(20008),		-- Looking For Group: The Jade Forest
+				ach(19912),		-- Order of the Cloud Serpent
+				ach(19872, {	-- The Jade Forest
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19882,	-- Campaign: The Jade Forest [A]
+						19883,	-- Campaign: The Jade Forest [H]
+						20008,	-- Looking For Group: The Jade Forest
+						19912,	-- Order of the Cloud Serpent
+						19962,	-- Tour The Jade Forest
+					}},
+					["g"] = {
+						i(220777),	-- Cherry Blossom Trail (TOY!)
+					},
+				}),
+				ach(19962),		-- Tour The Jade Forest
+
 			}),
 			n(QUESTS, {
 				q(81638, {	-- Home Is Where the Hearthstone Is
