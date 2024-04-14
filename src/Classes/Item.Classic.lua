@@ -71,7 +71,7 @@ local collectibleAsCostForItem = function(t)
 							for k,v in ipairs(ref.providers) do
 								if v[2] == id and v[1] == "i" then
 									if ref.objectiveID then
-										costTotal = costTotal + (t.objectiveCost or 0);
+										costTotal = costTotal + (ref.objectiveCost or 0);
 									else
 										costTotal = costTotal + 1;
 									end

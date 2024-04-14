@@ -1221,6 +1221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "n", 2216 },	-- Apothecary Lydon
 						{ "i", 3520 },	-- Tainted Keg
+						{ "o", 1728 },	-- Dusty Rug
 					},
 					["sourceQuest"] = 517,	-- Elixir of Agony (4/5)
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },

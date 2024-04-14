@@ -1208,12 +1208,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{
 					["provider"] = { "o", 2933 },	-- Seal of the Earth
-					["allianceQuestData"] = q(779, {	-- Seal of the Earth [A]
-						["altQuests"] =	{ 717 },	-- Tremors of the Earth
-					}),
-					["hordeQuestData"] = q(795, {	-- Seal of the Earth [H]
-						["altQuests"] =	{ 793 },	-- Broken Alliances
-					}),
+					["allianceQuestData"] = q(779),	-- Seal of the Earth [A]
+					["hordeQuestData"] = q(795),	-- Seal of the Earth [H]
 					["timeline"] = { "removed 4.0.3" },
 					["repeatable"] = true,
 					["lvl"] = 40,

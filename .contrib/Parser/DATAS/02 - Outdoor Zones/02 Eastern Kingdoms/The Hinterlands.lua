@@ -370,7 +370,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 42,
 					["groups"] = {
 						objective(1, {	-- 0/10 Hinterlands Honey Ripple
-							["provider"] = { "i", 8684 },	-- Hinterlands Honey Ripple
+							["providers"] = {
+								{ "i",   8684 },	-- Hinterlands Honey Ripple
+								{ "o", 142191 },	-- Horde Supply Crate
+							},
 							["coords"] = {
 								{ 47.1, 40.3, THE_HINTERLANDS },
 								{ 57.3, 41.2, THE_HINTERLANDS },

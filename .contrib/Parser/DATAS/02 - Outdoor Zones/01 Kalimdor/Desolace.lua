@@ -598,7 +598,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6161, {	-- Claim Rackmore's Treasure!
-					["provider"] = { "o", 177787 },	-- Rackmore's Log
+					["providers"] = {
+						{ "o", 177787 },	-- Rackmore's Log
+						{ "o", 177786 },	-- Rackmore's Chest
+					},
 					["coord"] = { 36.1, 30.4, DESOLACE },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 30,
