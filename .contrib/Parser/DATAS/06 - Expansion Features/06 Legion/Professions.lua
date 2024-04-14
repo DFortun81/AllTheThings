@@ -475,8 +475,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+	n(PROFESSIONS, {
 		--	Archaeology
 		q(41867),	-- FLAG - Brann Week 1
 		q(41868),	-- FLAG - Brann Week 2
@@ -484,6 +484,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(41870),	-- FLAG - Brann Week 4
 		q(41871),	-- FLAG - Brann Week 5
 		q(41805),	-- Key of Kalyndras
+		q(45775),	-- Completion of 'Sifting Through the Rubble' [41176] for A Keen Eye [10603] - Crown Jewels of Suramar
 		--	Blacksmithing
 		q(38543),	-- FLAG: Demonsteel Armguards Crafted
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
@@ -537,4 +538,4 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- All professions
 		q(44351),	-- FLAG: Upgrade First Crafted Item - triggers when you craft the first legion armor item
 	}),
-});
+})))
