@@ -131,23 +131,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if BEFORE 4.0.3
-				q(3525, {	-- Extinguishing the Idol (Before Cataclysm)
-					["qg"] = 8516,	-- Belnistrasz
-					["sourceQuest"] = 3523,	-- Scourge of the Downs (Before Cataclysm)
-					["timeline"] = { "removed 4.0.3" },
-					["lvl"] = 32,
-					["groups"] = {
-						i(10710, {	-- Dragonclaw Ring
-							["timeline"] = { "removed 6.0.2" },
-						}),
+				q(3525, {	-- Extinguishing the Idol
+					["providers"] = {
+						{ "n",   8516 },	-- Belnistrasz
+						{ "o", 152097 },	-- Belnistrasz's Brazier
 					},
-				}),
-				-- #else
-				q(3525, {	-- Extinguishing the Idol (After Cataclysm)
-					["qg"] = 8516,	-- Belnistrasz
+					-- #if AFTER 4.0.3
 					["sourceQuest"] = 27019,	-- Scourge of the Downs (After Cataclysm)
-					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
+					-- #else
+					["sourceQuest"] = 3523,	-- Scourge of the Downs (Before Cataclysm)
+					-- #endif
+					["timeline"] = { "removed 6.0.2" },
 					["lvl"] = 32,
 					["groups"] = {
 						i(10710, {	-- Dragonclaw Ring
@@ -155,7 +149,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #endif
 				q(27063, {	-- Looming Threat [Alliance]
 					["qg"] = 40032,	-- Telaron Windflight
 					["coord"] = { 50.7, 17.2, FERALAS },
@@ -189,15 +182,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3523, {	-- Scourge of the Downs (Before Cataclysm)
-					["qg"] = 8516,	-- Belnistrasz
+					["providers"] = {
+						{ "n", 8516 },	-- Belnistrasz
+						{ "i", 10682 },	-- Belnistrasz's Oathstone
+					},
 					["timeline"] = { "removed 4.0.3" },
-					["cost"] = { { "i", 10682, 1 } },	-- Belnistrasz's Oathstone
 					["lvl"] = 32,
 				}),
 				q(27019, {	-- Scourge of the Downs (After Cataclysm)
-					["qg"] = 8516,	-- Belnistrasz
+					["providers"] = {
+						{ "n", 8516 },	-- Belnistrasz
+						{ "i", 10682 },	-- Belnistrasz's Oathstone
+					},
 					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
-					["cost"] = { { "i", 10682, 1 } },	-- Belnistrasz's Oathstone
 					["lvl"] = 32,
 				}),
 				q(27009, {	-- The Coldbringer

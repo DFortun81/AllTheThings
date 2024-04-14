@@ -109,15 +109,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { UNGORO_CRATER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
-					-- #if BEFORE 4.0.3
 					["groups"] = {
-						objective(1, {	-- 0/5 Pure Un'Goro Sample
-							["provider"] = { "i", 12236 },	-- Pure Un'Goro Sample
-						}),
 						q(4561, {	-- Testing for Impurities - Un'Goro Crater
 							["provider"] = { "o", 174848 },	-- Testing Equipment
 							["coord"] = { 47.7, 73.3, UNDERCITY },
-							["description"] = "You must be on the quest '... and a Batch of Ooze' in order to interact with the testing equipment.",
 							["cost"] = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -126,7 +121,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(15102, {	-- Un'Goro Tested Sample
 									["description"] = "Might contain nothing. Bring way more slime samples than you need.",
 									["groups"] = {
-										i(12236),	-- Pure Un'Goro Sample
+										objective(1, {	-- 0/5 Pure Un'Goro Sample
+											["questID"] = 4294,	-- ... and a Batch of Ooze
+											["provider"] = { "i", 12236 },	-- Pure Un'Goro Sample
+										}),
 									},
 								}),
 							},
@@ -140,7 +138,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-					-- #endif
 				}),
 				q(38397, {	-- A Curious Oddity
 					["qg"] = 6566,	-- Estelle Gendry
@@ -199,15 +196,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { FELWOOD },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
-					-- #if BEFORE 4.0.3
 					["groups"] = {
-						objective(1, {	-- 0/5 Corrupted Felwood Sample
-							["provider"] = { "i", 12234 },	-- Corrupted Felwood Sample
-						}),
 						q(4661, {	-- Testing for Corruption - Felwood
 							["provider"] = { "o", 174848 },	-- Testing Equipment
 							["coord"] = { 47.7, 73.3, UNDERCITY },
-							["description"] = "You must be on the quest 'A Sample of Slime...' in order to interact with the testing equipment.",
 							["cost"] = { { "i", 12230, 1 } },	-- Felwood Slime Sample
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -216,7 +208,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(15103, {	-- Corrupt Tested Sample
 									["description"] = "Might contain nothing. Bring way more slime samples than you need.",
 									["groups"] = {
-										i(12234),	-- Corrupted Felwood Sample
+										objective(1, {	-- 0/5 Corrupted Felwood Sample
+											["questID"] = 4293,	-- A Sample of Slime...
+											["provider"] = { "i", 12234 },	-- Corrupted Felwood Sample
+										}),
 									},
 								}),
 							},
@@ -234,7 +229,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78277, {	-- A Token of Gratitude
