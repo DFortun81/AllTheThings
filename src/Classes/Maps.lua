@@ -2,7 +2,7 @@ local app = select(2, ...);
 local L = app.L;
 
 -- App locals
-local contains, IsQuestFlaggedCompleted = app.contains, app.IsQuestFlaggedCompleted;
+local contains = app.contains;
 
 -- Global locals
 local coroutine, ipairs, pairs, pcall, rawset, tinsert, tremove, tonumber, math_floor, math_sqrt, math_random
@@ -32,7 +32,7 @@ local function GetCurrentMapID()
 		local remap = app.MapRemapping[originalMapID];
 		if not remap then return originalMapID; end
 
-		local info = C_Map_GetMapInfo(originalMapID);
+		-- local info = C_Map_GetMapInfo(originalMapID);
 		--print("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
 
 		local substitutions = remap.artIDs;
