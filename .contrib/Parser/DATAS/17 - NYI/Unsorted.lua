@@ -3676,7 +3676,6 @@ root(ROOTS.Unsorted, {
 				i(182473),	-- Archivam Tome
 				i(183792),	-- Artisan's Implement
 				i(182479),	-- Ashfallen Key
-				i(173735),	-- Atonement Crypt Key
 				i(173013),	-- Bag of Faerie Dust
 				i(180439),	-- Bagged Frog
 				i(178493),	-- Baine Bloodhoof

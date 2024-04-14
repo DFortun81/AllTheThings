@@ -25,6 +25,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 			}),
+			i(173735, {	-- Atonement Crypt Key (QI!)
+				["sourceQuest"] = 57925,	-- Archivist Fane
+			}),
 			i(182703, {	-- Bubbling Red Muck Dye
 				["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
 				["crs"] = {

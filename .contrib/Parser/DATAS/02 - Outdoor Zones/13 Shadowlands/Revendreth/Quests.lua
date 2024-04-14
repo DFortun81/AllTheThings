@@ -937,7 +937,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(57928, {	-- Atonement Crypt Key
 				["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
 				["sourceQuests"] = { 57925 },	-- Archivist Fane
-				["provider"] = { "i", 172957 },	-- Atonement Crypt Key
+				["provider"] = { "i", 173735 },	-- Atonement Crypt Key (QI!)
 			}),
 			q(58936, {	-- Beast Control
 				["sourceQuests"] = { 57098 },	-- The Grove of Terror
