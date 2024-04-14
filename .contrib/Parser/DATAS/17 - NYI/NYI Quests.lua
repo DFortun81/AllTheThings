@@ -168,7 +168,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(5696, { ["name"] = "<UNUSED>", }),
 			q(5697, { ["name"] = "<UNUSED>", }),
 			q(6841, { ["name"] = "<UNUSED>", }),
-			q(6842, { ["name"] = "<UNUSED>", }),	-- Silithus
 			q(7904, { ["name"] = "<UNUSED>", }),
 			q(8247, { ["name"] = "<UNUSED>", }),
 			q(8248, { ["name"] = "<UNUSED>", }),
@@ -182,7 +181,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(785, { ["name"] = "A Strategic Alliance", }),
 			q(908, { ["name"] = "Amongst the Ruins", }),
 			q(8489, { ["name"] = "An Intact Converter", }),
-			q(909, { ["name"] = "Baron Aquanis", }),
 			q(8478, { ["name"] = "Choose Your Weapon", }),
 			q(8230, { ["name"] = "Collin's Test Quest", }),
 			q(934, { ["name"] = "Crown of the Earth", }),
