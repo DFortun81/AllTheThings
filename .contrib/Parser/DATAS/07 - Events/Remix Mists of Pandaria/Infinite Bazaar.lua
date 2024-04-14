@@ -458,6 +458,226 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["cost"] = {{"c", BRONZE, 50000}},
 				}),
 			}),
+			n(219025, {	-- Larah Treebender <World Apparel>
+				i(215219, {	-- Ensemble: Guise of the Shado-Pan (Dark)
+					["cost"] = {{"c", BRONZE, 2500}},
+					["g"] = {
+						i(214018),	-- Shado-Pan Bracers
+						i(214012),	-- Shado-Pan Footwraps
+						i(214013),	-- Shado-Pan Handwraps
+						i(214014),	-- Shado-Pan Hat
+						i(214015),	-- Shado-Pan Pants
+						i(214017),	-- Shado-Pan Sash
+						i(214016),	-- Shado-Pan Shoulderguards
+						i(214011),	-- Shado-Pan Tunic
+					},
+				}),
+				i(215220, {	-- Ensemble: Guise of the Shado-Pan (Original)
+					["cost"] = {{"c", BRONZE, 2500}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214019),	-- Shado-Pan Armbands
+						i(214020),	-- Shado-Pan Belt
+						i(214024),	-- Shado-Pan Gloves
+						i(214023),	-- Shado-Pan Headguard
+						i(214026),	-- Shado-Pan Jerkin
+						i(214021),	-- Shado-Pan Mantle
+						i(214025),	-- Shado-Pan Sandals
+						i(214022),	-- Shado-Pan Trousers
+					},
+				}),
+				i(215275, {	-- Ensemble: Kor'kron Shaman Vestments (Cool)
+					["cost"] = {{"c", BRONZE, 2500}},
+					["g"] = {
+						i(214429),	-- Kor'kron Binder's Belt
+						i(214432),	-- Kor'kron Binder's Boots
+						i(214434),	-- Kor'kron Binder's Bracers
+						i(214430),	-- Kor'kron Binder's Gauntlets
+						i(214433),	-- Kor'kron Binder's Hauberk
+						i(214431),	-- Kor'kron Binder's Helm
+						i(214427),	-- Kor'kron Binder's Leggings
+						i(214428),	-- Kor'kron Binder's Spaulders
+					},
+				}),
+				i(215276, {	-- Ensemble: Kor'kron Shaman Vestments (Warm)
+					["cost"] = {{"c", BRONZE, 2500}},
+					["g"] = {
+						i(214437),	-- Armbands of Twisted Elements
+						i(214442),	-- Chain of Twisted Elements
+						i(214438),	-- Chestguard of Twisted Elements
+						i(214441),	-- Gloves of Twisted Elements
+						i(214440),	-- Headguard of Twisted Elements
+						i(214444),	-- Legguards of Twisted Elements
+						i(214443),	-- Pauldrons of Twisted Elements
+						i(214439),	-- Sabatons of Twisted Elements
+					},
+				}),
+				i(215277, {	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
+					["cost"] = {{"c", BRONZE, 2500}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214450),	-- Dark Shaman Footguards
+						i(214447),	-- Dark Shaman Girdle
+						i(214448),	-- Dark Shaman Grips
+						i(214449),	-- Dark Shaman Helmet
+						i(214445),	-- Dark Shaman Legwraps
+						i(214446),	-- Dark Shaman Mantle
+						i(214451),	-- Dark Shaman Vest
+						i(214452),	-- Dark Shaman Wristguards
+					},
+				}),
+				i(215352, {	-- Ensemble: Robes of Quiet Reflection (Brown)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(215094),	-- Belt of Precarious Balance
+						i(215096),	-- Leggings of Precarious Balance
+						i(215097),	-- Robe of Precarious Balance
+						i(220995),	-- Shirt of Precarious Balance
+						i(215095),	-- Slippers of Precarious Balance
+					},
+				}),
+				i(215353, {	-- Ensemble: Robes of Quiet Reflection (Green)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(215101),	-- Belt of Hushed Wisdom
+						i(215099),	-- Leggings of Hushed Wisdom
+						i(215098),	-- Robe of Hushed Wisdom
+						i(220996),	-- Shirt of Hushed Wisdom
+						i(215100),	-- Slippers of Hushed Wisdom
+					},
+				}),
+				i(215354, {	-- Ensemble: Robes of Quiet Reflection (Red)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						i(215105),	-- Belt of Quiet Reflection
+						i(215103),	-- Leggings of Quiet Reflection
+						i(215102),	-- Robe of Quiet Reflection
+						i(220997),	-- Shirt of Quiet Reflection
+						i(215104),	-- Slippers of Quiet Reflection
+					},
+				}),
+				i(215355, {	-- Ensemble: Robes of Quiet Reflection (Yellow)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(215109),	-- Belt of Humbling Gravity
+						i(215107),	-- Leggings of Humbling Gravity
+						i(215106),	-- Robe of Humbling Gravity
+						i(220998),	-- Shirt of Humbling Gravity
+						i(215108),	-- Slippers of Humbling Gravity
+					},
+				}),
+				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214540),	-- Sun Pearl Armbands
+						i(214536),	-- Sun Pearl Chain
+						i(214539),	-- Sun Pearl Chestguard
+						i(214537),	-- Sun Pearl Gloves
+						i(214535),	-- Sun Pearl Legguards
+						i(214538),	-- Sun Pearl Sabatons
+					},
+				}),
+				i(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214542),	-- Sun Pearl Breastplate
+						i(214543),	-- Sun Pearl Footguards
+						i(214545),	-- Sun Pearl Girdle
+						i(214544),	-- Sun Pearl Grips
+						i(214546),	-- Sun Pearl Legwraps
+						i(214541),	-- Sun Pearl Wristguards
+					},
+				}),
+				i(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214548),	-- Sun Pearl Belt
+						i(214550),	-- Sun Pearl Boots
+						i(214552),	-- Sun Pearl Bracers
+						i(214549),	-- Sun Pearl Gauntlets
+						i(214551),	-- Sun Pearl Hauberk
+						i(214547),	-- Sun Pearl Leggings
+					},
+				}),
+				i(215238, {	-- Ensemble: Tian Monastery Clothing (Blue)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214128),	-- Tian Monastery Belt
+						i(214126),	-- Tian Monastery Boots
+						i(214124),	-- Tian Monastery Bracers
+						i(214127),	-- Tian Monastery Gloves
+						i(214129),	-- Tian Monastery Leggings
+						i(214125),	-- Tian Monastery Tunic
+					},
+				}),
+				i(215239, {	-- Ensemble: Tian Monastery Clothing (Red)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214135),	-- Tian Monastery Bindings
+						i(214133),	-- Tian Monastery Footguards
+						i(214132),	-- Tian Monastery Grips
+						i(214130),	-- Tian Monastery Legguards
+						i(214134),	-- Tian Monastery Vest
+						i(214131),	-- Tian Monastery Waistband
+					},
+				}),
+				i(215240, {	-- Ensemble: Tian Monastery Clothing (White)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(214140),	-- Tian Monastery Cinch
+						i(214139),	-- Tian Monastery Handguards
+						i(214137),	-- Tian Monastery Jerkin
+						i(214141),	-- Tian Monastery Pants
+						i(214138),	-- Tian Monastery Treads
+						i(214136),	-- Tian Monastery Wraps
+					},
+				}),
+				i(215356, {	-- Ensemble: Vestments of Serenity (Blue)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(215079),	-- Nightsky Bands
+						i(215078),	-- Nightsky Belt
+						i(215075),	-- Nightsky Gloves
+						i(215076),	-- Nightsky Leggings
+						i(215073),	-- Nightsky Robe
+						i(215077),	-- Nightsky Slippers
+					},
+				}),
+				i(215357, {	-- Ensemble: Vestments of Serenity (Green)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(215080),	-- Bands of Wisdom
+						i(215081),	-- Belt of Wisdom
+						i(215084),	-- Gloves of Wisdom
+						i(215083),	-- Leggings of Wisdom
+						i(215086),	-- Robe of Wisdom
+						i(215082),	-- Slippers of Wisdom
+					},
+				}),
+				i(215358, {	-- Ensemble: Vestments of Serenity (White)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+						-- TODO: Symlink
+						i(215087),	-- Serene Bands
+						i(215088),	-- Serene Belt
+						i(215091),	-- Serene Gloves
+						i(215090),	-- Serene Leggings
+						i(215093),	-- Serene Robe
+						i(215089),	-- Serene Slippers
+					},
+				}),
+			}),
 			n(219028, {	-- Durus <Normal Raid Apparel>
 				cl(SHAMAN, {
 					i(215297, {	-- Ensemble: Regalia of the Firebird (Normal)
