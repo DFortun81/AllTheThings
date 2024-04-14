@@ -8,7 +8,7 @@ local L = app.L;
 -- Toy Lib
 local AccountWideToyData = {};
 local toyFields = {
-	filterID = function(t)
+	f = function(t)
 		return 102;
 	end,
 	collectible = function(t)

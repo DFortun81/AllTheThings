@@ -17,6 +17,8 @@ local GetRawField
 
 -- Mount Lib
 do
+	-- Ugh really annoying that Mounts have a unique ID and we use their SpellID instead, assuming this is because in Classic they
+	-- haven't made them MountID yet... bah
 	local KEY, CACHE, SETTING = "mountID", "Spells", "Mounts"
 	local PerCharacterMountSpells = {
 		[75207] = 1,	-- Vashj'ir Seahorse
@@ -119,7 +121,7 @@ do
 		costCollectibles = function(t)
 			return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 		end,
-		filterID = function(t)
+		f = function(t)
 			return 100;
 		end,
 		collectibleAsCost = app.CollectibleAsCost,
@@ -179,9 +181,8 @@ do
 	end);
 	app.AddEventRegistration("NEW_MOUNT_ADDED", function(id)
 		local _, spellID = C_MountJournal_GetMountInfoByID(id);
-		local mount = app.SearchForObject(KEY, spellID)
-		app.PrintDebug("NEW_MOUNT_ADDED (pls @Runawaynow with this if you see it)",id,"=>",spellID,app:SearchLink(mount))
+		local mount = app.SearchForObject("spellID", spellID)
 		app.SetAccountCollected(mount, CACHE, spellID, true)
-		app.UpdateRawID(KEY, spellID)
+		app.UpdateRawID("spellID", spellID)
 	end);
 end

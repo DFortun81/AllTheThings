@@ -109,7 +109,7 @@ do
 				-- account-wide collected
 				if app.IsAccountCached(CACHE, id) then return 2; end
 			end,
-			filterID = function(t)
+			f = function(t)
 				return 101;
 			end,
 			text = function(t)

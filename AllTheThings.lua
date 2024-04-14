@@ -14982,6 +14982,7 @@ end
 			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 	end
 	function app:SearchLink(group)
+		if not group then group = {text="EMPTY",key="empty",empty="empty"} end
 		return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
 	end
 	-- Turns a bit of text into a chat-sendable link which other ATT users will attempt to understand
