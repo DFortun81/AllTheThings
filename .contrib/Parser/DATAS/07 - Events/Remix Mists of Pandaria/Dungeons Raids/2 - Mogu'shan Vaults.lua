@@ -14,22 +14,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(ACHIEVEMENTS, {
 				ach(19946, {	-- Raid Finder: Mogu'shan Vaults
 					crit(65677, {	-- The Stone Guard
-						["_encounter"] = { 679, DIFFICULTY.RAID.FINDER },
+						["_encounter"] = { 679, DIFFICULTY.RAID.LFR },
 					}),
 					crit(65678, {	-- Feng the Accursed
-						["_encounter"] = { 689, DIFFICULTY.RAID.FINDER },
+						["_encounter"] = { 689, DIFFICULTY.RAID.LFR },
 					}),
 					crit(65679, {	-- Gara'jal the Spiritbinder
-						["_encounter"] = { 682, DIFFICULTY.RAID.FINDER },
+						["_encounter"] = { 682, DIFFICULTY.RAID.LFR },
 					}),
 					crit(65681, {	-- The Spirit Kings
-						["_encounter"] = { 687, DIFFICULTY.RAID.FINDER },
+						["_encounter"] = { 687, DIFFICULTY.RAID.LFR },
 					}),
 					crit(65680, {	-- Elegon
-						["_encounter"] = { 726, DIFFICULTY.RAID.FINDER },
+						["_encounter"] = { 726, DIFFICULTY.RAID.LFR },
 					}),
 					crit(65682, {	-- Will of the Emperor
-						["_encounter"] = { 677, DIFFICULTY.RAID.FINDER },
+						["_encounter"] = { 677, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(19947, {	-- Mogu'shan Vaults
@@ -73,7 +73,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 			}),
-			d(DIFFICULTY.RAID.FINDER, {
+			d(DIFFICULTY.RAID.LFR, {
 				n(ARMOR, {
 					filter(MAIL, {
 						i(214647),	-- Firebird's Breastplate

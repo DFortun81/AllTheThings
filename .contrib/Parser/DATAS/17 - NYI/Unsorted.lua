@@ -1243,96 +1243,6 @@ root(ROOTS.Unsorted, {
 							i(214626),	-- Spaulders of the Unblinking Vigil
 							i(214617),	-- Wristguards of the Unblinking Vigil
 						}),
-						cl(SHAMAN, {
-							------ Source: MSV/HOF/TOES ------
-							------ Source: LFR ------
-							i(214647),	-- Firebird's Breastplate
-							i(214646),	-- Firebird's Footguards
-							i(214643),	-- Firebird's Girdle
-							i(214644),	-- Firebird's Grips
-							i(214645),	-- Firebird's Helmet
-							i(214641),	-- Firebird's Legwraps
-							i(214642),	-- Firebird's Mantle
-							i(214648),	-- Firebird's Wristguards
-
-							------ Source: Normal ------
-							i(214633),	-- Firebird's Armbands
-							i(214638),	-- Firebird's Chain
-							i(214637),	-- Firebird's Gloves
-							i(214636),	-- Firebird's Headguard
-							i(214640),	-- Firebird's Legguards
-							i(214639),	-- Firebird's Pauldrons
-							i(214634),	-- Firebird's Robeguard
-							i(214635),	-- Firebird's Sabatons
-							i(220990),	-- Firebird's Shirt
-
-							------ Source: Heroic ------
-							i(214654),	-- Firebird's Belt
-							i(214651),	-- Firebird's Boots
-							i(214649),	-- Firebird's Bracers
-							i(220991),	-- Firebird's Cuirass
-							i(214653),	-- Firebird's Gauntlets
-							i(214650),	-- Firebird's Hauberk
-							i(214652),	-- Firebird's Helm
-							i(214656),	-- Firebird's Leggings
-							i(214655),	-- Firebird's Spaulders
-
-
-							------ Source: TOT ------
-							i(214664),	-- Armbands of the Witch Doctor
-							i(214675),	-- Belt of the Witch Doctor
-							i(214678),	-- Boots of the Witch Doctor
-							i(214680),	-- Bracers of the Witch Doctor
-							i(214666),	-- Breastplate of the Witch Doctor
-							i(214659),	-- Chain of the Witch Doctor
-							i(220994),	-- Chainmail of the Witch Doctor
-							i(214667),	-- Footguards of the Witch Doctor
-							i(214676),	-- Gauntlets of the Witch Doctor
-							i(214670),	-- Girdle of the Witch Doctor
-							i(214660),	-- Gloves of the Witch Doctor
-							i(214669),	-- Grips of the Witch Doctor
-							i(214679),	-- Hauberk of the Witch Doctor
-							i(214661),	-- Headguard of the Witch Doctor
-							i(214677),	-- Helm of the Witch Doctor
-							i(214668),	-- Helmet of the Witch Doctor
-							i(214673),	-- Leggings of the Witch Doctor
-							i(214657),	-- Legguards of the Witch Doctor
-							i(214672),	-- Legwraps of the Witch Doctor
-							i(214671),	-- Mantle of the Witch Doctor
-							i(214658),	-- Pauldrons of the Witch Doctor
-							i(214663),	-- Robeguard of the Witch Doctor
-							i(214662),	-- Sabatons of the Witch Doctor
-							i(220992),	-- Shirt of the Witch Doctor
-							i(214674),	-- Spaulders of the Witch Doctor
-							i(220993),	-- Tunic of the Witch Doctor
-							i(214665),	-- Wristguards of the Witch Doctor
-
-							------ Source: SOO ------
-							i(214681),	-- Armbands of Celestial Harmony
-							i(214702),	-- Belt of Celestial Harmony
-							i(214699),	-- Boots of Celestial Harmony
-							i(214697),	-- Bracers of Celestial Harmony
-							i(214695),	-- Breastplate of Celestial Harmony
-							i(214686),	-- Chain of Celestial Harmony
-							i(214682),	-- Chestguard of Celestial Harmony
-							i(214694),	-- Footguards of Celestial Harmony
-							i(214701),	-- Gauntlets of Celestial Harmony
-							i(214691),	-- Girdle of Celestial Harmony
-							i(214685),	-- Gloves of Celestial Harmony
-							i(214692),	-- Grips of Celestial Harmony
-							i(214698),	-- Hauberk of Celestial Harmony
-							i(214684),	-- Headguard of Celestial Harmony
-							i(214700),	-- Helm of Celestial Harmony
-							i(214693),	-- Helmet of Celestial Harmony
-							i(214704),	-- Leggings of Celestial Harmony
-							i(214688),	-- Legguards of Celestial Harmony
-							i(214689),	-- Legwraps of Celestial Harmony
-							i(214690),	-- Mantle of Celestial Harmony
-							i(214687),	-- Pauldrons of Celestial Harmony
-							i(214683),	-- Sabatons of Celestial Harmony
-							i(214703),	-- Spaulders of Celestial Harmony
-							i(214696),	-- Wristguards of Celestial Harmony
-						}),
 					}),
 					filter(PLATE, {
 						i(214737),	-- Greenstone Legguards
@@ -1702,15 +1612,6 @@ root(ROOTS.Unsorted, {
 						i(215294),	-- Ensemble: Battlegear of the Unblinking Vigil
 						i(215295),	-- Ensemble: Battlegear of the Unblinking Vigil
 						i(215296),	-- Ensemble: Battlegear of the Unblinking Vigil
-						i(215297),	-- Ensemble: Regalia of the Firebird
-						i(215298),	-- Ensemble: Regalia of the Firebird
-						i(215299),	-- Ensemble: Regalia of the Firebird
-						i(215300),	-- Ensemble: Regalia of the Witch Doctor
-						i(215301),	-- Ensemble: Regalia of the Witch Doctor
-						i(215302),	-- Ensemble: Regalia of the Witch Doctor
-						i(215303),	-- Ensemble: Regalia of Celestial Harmony
-						i(215304),	-- Ensemble: Regalia of Celestial Harmony
-						i(215305),	-- Ensemble: Regalia of Celestial Harmony
 						i(215306),	-- Ensemble: Jade Guardian's Regalia (Blue)
 						i(215307),	-- Ensemble: Jade Guardian's Regalia (Brown)
 						i(215308),	-- Ensemble: Jade Guardian's Regalia (Red)
