@@ -1012,9 +1012,6 @@ root(ROOTS.Unsorted, {
 					i(215210),	-- Ensemble: Regalia of the Thousandfold Hells
 					i(215211),	-- Ensemble: Regalia of the Thousandfold Hells
 					i(215212),	-- Ensemble: Regalia of the Thousandfold Hells
-					i(215213),	-- Ensemble: Regalia of the Horned Nightmare
-					i(215214),	-- Ensemble: Regalia of the Horned Nightmare
-					i(215215),	-- Ensemble: Regalia of the Horned Nightmare
 					i(215244),	-- Ensemble: Vestments of the Haunted Forest
 					i(215245),	-- Ensemble: Vestments of the Haunted Forest
 					i(215246),	-- Ensemble: Vestments of the Haunted Forest
@@ -1024,9 +1021,6 @@ root(ROOTS.Unsorted, {
 					i(215263),	-- Ensemble: Nine-Tail Battlegear
 					i(215264),	-- Ensemble: Nine-Tail Battlegear
 					i(215265),	-- Ensemble: Nine-Tail Battlegear
-					i(215266),	-- Ensemble: Barbed Assassin Battlegear
-					i(215267),	-- Ensemble: Barbed Assassin Battlegear
-					i(215268),	-- Ensemble: Barbed Assassin Battlegear
 					i(215323),	-- Ensemble: Battleplate of the All-Consuming Maw
 					i(215324),	-- Ensemble: Battleplate of the All-Consuming Maw
 					i(215325),	-- Ensemble: Battleplate of the All-Consuming Maw
@@ -1036,9 +1030,6 @@ root(ROOTS.Unsorted, {
 					i(215342),	-- Ensemble: Battleplate of the Last Mogu
 					i(215343),	-- Ensemble: Battleplate of the Last Mogu
 					i(215344),	-- Ensemble: Battleplate of the Last Mogu
-					i(215345),	-- Ensemble: Battleplate of the Prehistoric Marauder
-					i(215346),	-- Ensemble: Battleplate of the Prehistoric Marauder
-					i(215347),	-- Ensemble: Battleplate of the Prehistoric Marauder
 					i(215074),	-- REUSE
 					i(215085),	-- REUSE
 					i(215092),	-- REUSE

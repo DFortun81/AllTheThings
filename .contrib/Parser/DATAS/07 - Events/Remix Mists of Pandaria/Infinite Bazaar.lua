@@ -2391,7 +2391,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214912),	-- White Tiger Girdle
 						},
 					}),
-					i(215336, {	-- Ensemble: Vestments of Winged Triumph (Normal)
+					i(215336, {	-- Ensemble: Vestments of Winged Triumph (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
 							-- Contains Removed!
