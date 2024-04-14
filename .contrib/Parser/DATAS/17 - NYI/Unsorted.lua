@@ -270,7 +270,6 @@ root(ROOTS.Unsorted, {
 				i(211798),	-- Un-Raised Bone Fragments
 
 				i(217010),	-- Fragmented Medallion of the Draenei
-				i(217906),	-- Drake Treat
 				i(218130),	-- Adventurer's Footlocker
 				i(223475),	-- Set Keystone Level: 2
 				i(223476),	-- Set Keystone Level: 3
@@ -301,9 +300,7 @@ root(ROOTS.Unsorted, {
 				i(223769),	-- Eternal Aspirant's Cape
 			}),
 			filter(QUEST_ITEMS, {
-				i(216712),	-- Bronze Timepiece
 				i(217349),	-- DEPRECATED - Arcane Dust
-				i(217930),	-- Nostwin's Voucher
 			}),
 			n(SPECIAL, {	-- Timerunning
 				n(ARMOR, {
@@ -3377,7 +3374,6 @@ root(ROOTS.Unsorted, {
 				i(210530),	-- Timerunning Pants
 				i(210531),	-- Timerunning Shoulderpads
 				i(210533),	-- Timerunning Staff
-				i(210526),	-- Unraveling Tunic
 			}),
 			n(QUESTS, {
 				-- 10.2.5.52206
@@ -3388,8 +3384,6 @@ root(ROOTS.Unsorted, {
 				q(78174),	--
 				q(78272),	-- Interrupting Duck
 				q(78683),	--
-				q(78893),	--
-				q(78894),	--
 				q(78903),	--
 				q(78976),	--
 				q(79125),	--

@@ -3,7 +3,9 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(REWARDS, {
-		i(211279),	-- Cache of Infinite Treasure
+		i(211279, {	-- Cache of Infinite Treasure
+			i(210526),	-- Unraveling Tunic (QI!)
+		}),
 
 		------ Common Thread ------
 		i(210984),	-- Thread of Critical Strike
@@ -51,7 +53,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		filter(CONSUMABLES, {
 			i(217925),	-- Bottle of Bees
 			i(217926),	-- Bottle of Dead Bees
+			i(217906),	-- Drake Treat
 			i(219940),	-- Meteor Chip
+			i(217930),	-- Nostwin's Voucher
 			i(217900),	-- Prayer of Purged Anger
 			i(217732),	-- Prayer of Purged Despair
 			i(217733),	-- Prayer of Purged Doubt
