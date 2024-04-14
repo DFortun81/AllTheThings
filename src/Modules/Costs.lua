@@ -166,10 +166,19 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
 end
 
 local function CostCalcStart()
-	app.print("Cost Updates Starting...")
+	if app.Debugging then
+		app.print("Cost Updates Starting...")
+	end
 end
 local function CostCalcComplete()
-	app.print("Cost Updates Done")
+	if app.Debugging then
+		app.print("Cost Updates Done")
+	end
+	for suffix,window in pairs(app.Windows) do
+		if suffix ~= "Prime" then
+			app.UpdateRunner.Run(window.Update, window, true)
+		end
+	end
 end
 
 local function UpdateCosts()
@@ -179,10 +188,8 @@ local function UpdateCosts()
 	UpdateRunner.Reset()
 	UpdateRunner.SetPerFrame(50)
 
-	if app.Debugging then
-		UpdateRunner.OnEnd(CostCalcComplete)
-		UpdateRunner.Run(CostCalcStart)
-	end
+	UpdateRunner.OnEnd(CostCalcComplete)
+	UpdateRunner.Run(CostCalcStart)
 	-- app.PrintDebug("UpdateCosts",refresh)
 
 	-- app.Debugging = nil
