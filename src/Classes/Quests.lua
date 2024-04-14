@@ -207,12 +207,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function()
 		for i,questID in ipairs(userignored) do
 			IgnoreErrorQuests[questID] = 1;
 		end
-	end
-	-- a bunch of bad data got contaminated into literally everyones saved vars... so let's clean it
-	if IgnoreErrorQuests[7171] or IgnoreErrorQuests[8706] or IgnoreErrorQuests[10759]
-	or userignored[7171] or userignored[8706] or userignored[10759] then
-		ATTAccountWideData.IGNORE_QUEST_PRINT = {}
-		app.CallbackHandlers.DelayedCallback(app.print, 10, "Wiped 'ATTAccountWideData.IGNORE_QUEST_PRINT' Saved Variable table due to bad data!")
+		-- a bunch of bad data got contaminated into literally everyones saved vars... so let's clean it
+		if IgnoreErrorQuests[7171] or IgnoreErrorQuests[8706] or IgnoreErrorQuests[10759]
+		or userignored[7171] or userignored[8706] or userignored[10759] then
+			ATTAccountWideData.IGNORE_QUEST_PRINT = {}
+			app.CallbackHandlers.DelayedCallback(app.print, 10, "Wiped 'ATTAccountWideData.IGNORE_QUEST_PRINT' Saved Variable table due to bad data!")
+		end
 	end
 end)
 local BatchRefresh
