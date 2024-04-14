@@ -6,7 +6,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_dreadwastes",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(19890),		-- Campaign: Dread Wastes
+				ach(19890, {	-- Campaign: Dread Wastes
+						crit(67265),	-- The First Paragons
+						crit(67266),	-- Taste of Amber
+						crit(67267),	-- Like a Deck Boss
+						crit(67268, {	-- The Might of the Klaxxi
+							["_noautomation"] = true,
+							["_quests"] = { 31398 },	-- Falling to Pieces
+						}),
+				}),
 				ach(19878, {	-- Dread Wastes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -18,8 +26,37 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(220765),	-- Sha Corruption (ILLUSION!)
 					},
 				}),
-				ach(19915),	-- The Klaxxi
-				ach(19967),	-- Tour Dread Wastes
+				ach(19998, {		-- Elusive Foes: Dread Wastes
+					crit(65623),	-- Ik-Ik the Nimble
+					crit(65624),	-- Nalash Verdantis
+					crit(65625),	-- Gar'lok
+					crit(65626),	-- Karr the Darkener
+					crit(65627),	-- Krol the Blade
+					crit(65628),	-- Ai-Li Skymirror
+					crit(65629),	-- Omnis Grinlok
+					crit(65630),	-- Dak the Breaker
+				}),
+				ach(20031, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Dread Wastes
+					crit(65995),	-- Heart of Fear
+					crit(65996),	-- Klaxxi'vess
+					crit(65997),	-- Kypari Vor
+					crit(65998),	-- Kypari Zar
+					crit(65999),	-- Rikkitun Village
+					crit(66000),	-- Soggy's Gamble
+					crit(66001),	-- Terrace of Gurthan
+					crit(66002),	-- The Briny Muck
+					crit(66003),	-- The Clutches of Shek'zeer
+					crit(66004),	-- The Sunset Brewgarden
+					crit(66005),	-- Writhingwood
+					crit(66006),	-- Zan'vess
+				})),
+				ach(19915),		-- The Klaxxi
+				ach(19967, {	-- Tour Dread Wastes
+					["sym"] = {{"meta_achievement",
+						19998,	-- Elusive Foes: Dread Wastes
+						20031,	-- Explore Dread Wastes
+					}},
+				}),
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {
