@@ -658,12 +658,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Broodling Essence
 							["providers"] = {
-								{ "i", 12283 },	-- Broodling Essence
-								{ "i", 12284 },	-- Draco-Incarcinatrix 900
+								{ "i",  12283 },	-- Broodling Essence
+								{ "i",  12284 },	-- Draco-Incarcinatrix 900
+								{ "o", 175264 },	-- Broodling Essence
 							},
 							["crs"] = {
 								7047,	-- Black Broodling
 								7049,	-- Flamescale Broodling
+								7048,	-- Scalding Broodling
 							},
 						}),
 					},
