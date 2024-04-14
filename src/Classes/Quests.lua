@@ -370,22 +370,20 @@ end
 
 local function CollectibleAsLocked(t, locked)
 	return
+	-- Collecting Locked Quests
+	app.Settings.Collectibles.QuestsLocked
 	-- not able to access quest on current character
-	(locked or t.locked)
+	and (locked or t.locked)
 	-- not a repeatable quest
 	and not t.repeatable
+	-- TODO: Not Locked by a OPA Quest...
 	and
 	(
-		-- Collecting Locked Quests
-		app.Settings.Collectibles.QuestsLocked
-		and
-		(
-			-- debug/account mode
-			app.MODE_DEBUG_OR_ACCOUNT
-			or
-			-- available in party sync
-			not t.DisablePartySync
-		)
+		-- debug/account mode
+		app.MODE_DEBUG_OR_ACCOUNT
+		or
+		-- available in party sync
+		not t.DisablePartySync
 	)
 end
 local function CollectibleAsQuestOrAsLocked(t)

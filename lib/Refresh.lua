@@ -17,8 +17,8 @@ if app.IsRetail then
 -- I'd much rather have parser export these.
 local wipe, math_max, tonumber, type, select, pcall, ipairs, pairs =
 	  wipe, math.max, tonumber, type, select, pcall, ipairs, pairs;
-local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, GetAchievementInfo =
-	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, GetAchievementInfo;
+local GetAchievementInfo =
+	  GetAchievementInfo;
 local ATTAccountWideData
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
