@@ -560,6 +560,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #endif
 }));
 root(ROOTS.HiddenQuestTriggers, {
+	q(79208),	-- Ensemble: Dreadlord's Venombane Armor
+	q(79207),	-- Ensemble: Dreadlord's Shadowbane Armor
+	q(80171),	-- Ensemble: Gladiator's Ragged Armor
+	q(79211),	-- Ensemble: Twilight Witch's Attire
 	q(72082),	-- Ensemble: Waveborne Diplomat's Regalia
 });
 -- #endif

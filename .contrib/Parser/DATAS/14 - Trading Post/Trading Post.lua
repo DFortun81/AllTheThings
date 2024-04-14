@@ -1865,6 +1865,12 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72133),	-- Ensemble: Helarjar Berserker Warplate
 		q(72811),	-- Ensemble: Wanderer's Rosy Trappings
 		q(72812),	-- Ensemble: Vagabond's Snowy Threads
+		q(79209),	-- Ensemble: Love Witch's Attire
+		q(79467),	-- Ensemble: Spring Reveler's Lavender Collection
+		q(79468),	-- Ensemble: Spring Reveler's Lavender Apparel
+		q(79708),	-- Ensemble: Gleaming Burden of Unrelenting Justice
+		q(79709),	-- Ensemble: Moonlit Burden of Unrelenting Justice
+		q(80335),	-- Ensemble: Fearless Buccaneer's Slops
 	})),
 });
 

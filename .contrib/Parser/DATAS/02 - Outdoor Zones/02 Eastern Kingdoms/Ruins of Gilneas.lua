@@ -410,6 +410,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 }));
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	m(RUINS_OF_GILNEAS, {
-		q(80080),	-- Upon learning Ensemble: Gilnean Noble's Suit (spellID 430283)
+		q(80080),	-- Ensemble: Gilnean Noble's Suit
 	}),
 }));

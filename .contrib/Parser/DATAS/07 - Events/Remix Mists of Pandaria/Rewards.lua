@@ -194,3 +194,239 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 	}),
 }))));
+
+root(ROOTS.HiddenQuestTriggers, {
+	n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+		-- Ensembles
+		q(80464),	-- Ensemble: Aldrachi Blasphemer's Flames
+		q(80466),	-- Ensemble: Aldrachi Blasphemer's Flames
+		q(79813),	-- Ensemble: Barbed Assassin Battlegear
+		q(79814),	-- Ensemble: Barbed Assassin Battlegear
+		q(79815),	-- Ensemble: Barbed Assassin Battlegear
+		q(79879),	-- Ensemble: Battlegear of the Lightning Emperor
+		q(79880),	-- Ensemble: Battlegear of the Lightning Emperor
+		q(79881),	-- Ensemble: Battlegear of the Lightning Emperor
+		q(79838),	-- Ensemble: Battlegear of the Saurok Stalker
+		q(79839),	-- Ensemble: Battlegear of the Saurok Stalker
+		q(79840),	-- Ensemble: Battlegear of the Saurok Stalker
+		q(79807),	-- Ensemble: Battlegear of the Thousandfold Blades
+		q(79808),	-- Ensemble: Battlegear of the Thousandfold Blades
+		q(79809),	-- Ensemble: Battlegear of the Thousandfold Blades
+		q(79841),	-- Ensemble: Battlegear of the Unblinking Vigil
+		q(79842),	-- Ensemble: Battlegear of the Unblinking Vigil
+		q(79843),	-- Ensemble: Battlegear of the Unblinking Vigil
+		q(79873),	-- Ensemble: Battleplate of Cyclopean Dread
+		q(79874),	-- Ensemble: Battleplate of Cyclopean Dread
+		q(79875),	-- Ensemble: Battleplate of Cyclopean Dread
+		q(79732),	-- Ensemble: Battleplate of Resounding Rings
+		q(79885),	-- Ensemble: Battleplate of Resounding Rings
+		q(79886),	-- Ensemble: Battleplate of Resounding Rings
+		q(79887),	-- Ensemble: Battleplate of Resounding Rings
+		q(79870),	-- Ensemble: Battleplate of the All-Consuming Maw
+		q(79871),	-- Ensemble: Battleplate of the All-Consuming Maw
+		q(79872),	-- Ensemble: Battleplate of the All-Consuming Maw
+		q(79888),	-- Ensemble: Battleplate of the Last Mogu
+		q(79889),	-- Ensemble: Battleplate of the Last Mogu
+		q(79890),	-- Ensemble: Battleplate of the Last Mogu
+		q(79891),	-- Ensemble: Battleplate of the Prehistoric Marauder
+		q(79892),	-- Ensemble: Battleplate of the Prehistoric Marauder
+		q(79893),	-- Ensemble: Battleplate of the Prehistoric Marauder
+		q(82137),	-- Ensemble: Black Tropical
+		q(82198),	-- Ensemble: Black Tropical Swimwear
+		q(82261),	-- Ensemble: Blue Diver Suit
+		q(82138),	-- Ensemble: Blue Tropical
+		q(82231),	-- Ensemble: Blue Tropical Swimwear
+		q(79733),	-- Ensemble: Breezebinder's Vestments
+		q(79734),	-- Ensemble: Breezebinder's Vestments
+		q(79735),	-- Ensemble: Breezebinder's Vestments
+		q(79748),	-- Ensemble: Chronomancer Regalia
+		q(79749),	-- Ensemble: Chronomancer Regalia
+		q(79750),	-- Ensemble: Chronomancer Regalia
+		q(82267),	-- Ensemble: Dark Diver Suit
+		q(79829),	-- Ensemble: Dawnwatcher's Scale Armor
+		q(79830),	-- Ensemble: Dawnwatcher's Scale Armor
+		q(79831),	-- Ensemble: Dawnwatcher's Scale Armor
+		q(80480),	-- Ensemble: Dreadsquall Hunter's Camouflage
+		q(80465),	-- Ensemble: Ela'lothen's Blessings of Rebirth (same ID as Arsenal?)
+		q(80472),	-- Ensemble: Fanatical Champion's Trophies
+		q(79801),	-- Ensemble: Fire-Charm Vestments
+		q(79802),	-- Ensemble: Fire-Charm Vestments
+		q(79803),	-- Ensemble: Fire-Charm Vestments
+		q(79894),	-- Ensemble: Gatecrasher's Battleplate
+		q(79895),	-- Ensemble: Gatecrasher's Battleplate
+		q(79896),	-- Ensemble: Gatecrasher's Battleplate
+		q(79897),	-- Ensemble: Gatecrasher's Battleplate
+		q(82269),	-- Ensemble: Green Diver Suit
+		q(79751),	-- Ensemble: Guardian Serpent Regalia
+		q(79752),	-- Ensemble: Guardian Serpent Regalia
+		q(79753),	-- Ensemble: Guardian Serpent Regalia
+		q(79772),	-- Ensemble: Guise of the Shado-Pan
+		q(79773),	-- Ensemble: Guise of the Shado-Pan
+		q(80463),	-- Ensemble: Igneous Onyx Uniform
+		q(80482),	-- Ensemble: Imminence of Krag'wa's Disciple
+		q(79853),	-- Ensemble: Jade Guardian's Regalia
+		q(79854),	-- Ensemble: Jade Guardian's Regalia
+		q(79855),	-- Ensemble: Jade Guardian's Regalia
+		q(79856),	-- Ensemble: Jade Guardian's Regalia
+		q(80470),	-- Ensemble: Jewels of Temptation's Call
+		q(79822),	-- Ensemble: Kor'kron Shaman Vestments
+		q(79823),	-- Ensemble: Kor'kron Shaman Vestments
+		q(79824),	-- Ensemble: Kor'kron Shaman Vestments
+		q(79782),	-- Ensemble: Mistveil Leathers
+		q(79783),	-- Ensemble: Mistveil Leathers
+		q(79784),	-- Ensemble: Mistveil Leathers
+		q(79785),	-- Ensemble: Mistveil Leathers
+		q(79739),	-- Ensemble: Mistwalker's Vestments
+		q(79740),	-- Ensemble: Mistwalker's Vestments
+		q(79741),	-- Ensemble: Mistwalker's Vestments
+		q(79819),	-- Ensemble: Mogu Lord's Regalia
+		q(79820),	-- Ensemble: Mogu Lord's Regalia
+		q(79821),	-- Ensemble: Mogu Lord's Regalia
+		q(79774),	-- Ensemble: Mogubreaker Battlegear
+		q(79775),	-- Ensemble: Mogubreaker Battlegear
+		q(79776),	-- Ensemble: Mogubreaker Battlegear
+		q(79777),	-- Ensemble: Mogubreaker Battlegear
+		q(79810),	-- Ensemble: Nine-Tail Battlegear
+		q(79811),	-- Ensemble: Nine-Tail Battlegear
+		q(79812),	-- Ensemble: Nine-Tail Battlegear
+		q(82139),	-- Ensemble: Pink Tropical
+		q(82232),	-- Ensemble: Pink Tropical Swimwear
+		q(80458),	-- Ensemble: Plate of the Holy Avenger
+		q(79867),	-- Ensemble: Plate of the Lost Catacomb
+		q(79868),	-- Ensemble: Plate of the Lost Catacomb
+		q(79869),	-- Ensemble: Plate of the Lost Catacomb
+		q(79850),	-- Ensemble: Regalia of Celestial Harmony
+		q(79851),	-- Ensemble: Regalia of Celestial Harmony
+		q(79852),	-- Ensemble: Regalia of Celestial Harmony
+		q(79757),	-- Ensemble: Regalia of Ternion Glory
+		q(79758),	-- Ensemble: Regalia of Ternion Glory
+		q(79759),	-- Ensemble: Regalia of Ternion Glory
+		q(79742),	-- Ensemble: Regalia of the Burning Scroll
+		q(79743),	-- Ensemble: Regalia of the Burning Scroll
+		q(79744),	-- Ensemble: Regalia of the Burning Scroll
+		q(79754),	-- Ensemble: Regalia of the Exorcist
+		q(79755),	-- Ensemble: Regalia of the Exorcist
+		q(79756),	-- Ensemble: Regalia of the Exorcist
+		q(79844),	-- Ensemble: Regalia of the Firebird
+		q(79845),	-- Ensemble: Regalia of the Firebird
+		q(79846),	-- Ensemble: Regalia of the Firebird
+		q(79766),	-- Ensemble: Regalia of the Horned Nightmare
+		q(79767),	-- Ensemble: Regalia of the Horned Nightmare
+		q(79768),	-- Ensemble: Regalia of the Horned Nightmare
+		q(79745),	-- Ensemble: Regalia of the Chromatic Hydra
+		q(79746),	-- Ensemble: Regalia of the Chromatic Hydra
+		q(79747),	-- Ensemble: Regalia of the Chromatic Hydra
+		q(79763),	-- Ensemble: Regalia of the Thousandfold Hells
+		q(79764),	-- Ensemble: Regalia of the Thousandfold Hells
+		q(79765),	-- Ensemble: Regalia of the Thousandfold Hells
+		q(79847),	-- Ensemble: Regalia of the Witch Doctor
+		q(79848),	-- Ensemble: Regalia of the Witch Doctor
+		q(79849),	-- Ensemble: Regalia of the Witch Doctor
+		q(79898),	-- Ensemble: Robes of Quiet Reflection
+		q(79899),	-- Ensemble: Robes of Quiet Reflection
+		q(79900),	-- Ensemble: Robes of Quiet Reflection
+		q(79901),	-- Ensemble: Robes of Quiet Reflection
+		q(80478),	-- Ensemble: Scales of the Gold Hoarder
+		q(79760),	-- Ensemble: Sha Skin Regalia
+		q(79761),	-- Ensemble: Sha Skin Regalia
+		q(79762),	-- Ensemble: Sha Skin Regalia
+		q(80468),	-- Ensemble: Shado-Pan Watcher Guise
+		q(79863),	-- Ensemble: Shan'ze Warplate
+		q(79864),	-- Ensemble: Shan'ze Warplate
+		q(79865),	-- Ensemble: Shan'ze Warplate
+		q(79866),	-- Ensemble: Shan'ze Warplate
+		q(80462),	-- Ensemble: Silks of the Abyssal Cult
+		q(80476),	-- Ensemble: Sin'dorei Magister's Regalia
+		q(79816),	-- Ensemble: Snowdrift Battlegear
+		q(79817),	-- Ensemble: Snowdrift Battlegear
+		q(79818),	-- Ensemble: Snowdrift Battlegear
+		q(79860),	-- Ensemble: Spiritguard's Warplate
+		q(79861),	-- Ensemble: Spiritguard's Warplate
+		q(79862),	-- Ensemble: Spiritguard's Warplate
+		q(79736),	-- Ensemble: Spirit-Waker's Vestments
+		q(79737),	-- Ensemble: Spirit-Waker's Vestments
+		q(79738),	-- Ensemble: Spirit-Waker's Vestments
+		q(79832),	-- Ensemble: Sun Pearl Clothing
+		q(79833),	-- Ensemble: Sun Pearl Clothing
+		q(79834),	-- Ensemble: Sun Pearl Clothing
+		q(79857),	-- Ensemble: Swarmbreaker's Battleplate
+		q(79858),	-- Ensemble: Swarmbreaker's Battleplate
+		q(79859),	-- Ensemble: Swarmbreaker's Battleplate
+		q(82270),	-- Ensemble: Tan Diver Suit
+		q(79778),	-- Ensemble: Thunderpaw Battlegear
+		q(79779),	-- Ensemble: Thunderpaw Battlegear
+		q(79780),	-- Ensemble: Thunderpaw Battlegear
+		q(79781),	-- Ensemble: Thunderpaw Battlegear
+		q(79786),	-- Ensemble: Tian Monastery Clothing
+		q(79787),	-- Ensemble: Tian Monastery Clothing
+		q(79788),	-- Ensemble: Tian Monastery Clothing
+		q(79825),	-- Ensemble: Trailseeker's Laminar Armor
+		q(79826),	-- Ensemble: Trailseeker's Laminar Armor
+		q(79827),	-- Ensemble: Trailseeker's Laminar Armor
+		q(79828),	-- Ensemble: Trailseeker's Laminar Armor
+		q(79902),	-- Ensemble: Vestments of Serenity
+		q(79903),	-- Ensemble: Vestments of Serenity
+		q(79904),	-- Ensemble: Vestments of Serenity
+		q(79789),	-- Ensemble: Vestments of the Eternal Blossom
+		q(79790),	-- Ensemble: Vestments of the Eternal Blossom
+		q(79791),	-- Ensemble: Vestments of the Eternal Blossom
+		q(79769),	-- Ensemble: Vestments of the Eternal Dynasty
+		q(79770),	-- Ensemble: Vestments of the Eternal Dynasty
+		q(79771),	-- Ensemble: Vestments of the Eternal Dynasty
+		q(79792),	-- Ensemble: Vestments of the Haunted Forest
+		q(79793),	-- Ensemble: Vestments of the Haunted Forest
+		q(79794),	-- Ensemble: Vestments of the Haunted Forest
+		q(79798),	-- Ensemble: Vestments of the Red Crane
+		q(79799),	-- Ensemble: Vestments of the Red Crane
+		q(79800),	-- Ensemble: Vestments of the Red Crane
+		q(79804),	-- Ensemble: Vestments of the Seven Sacred Seals
+		q(79805),	-- Ensemble: Vestments of the Seven Sacred Seals
+		q(79806),	-- Ensemble: Vestments of the Seven Sacred Seals
+		q(79795),	-- Ensemble: Vestments of the Shattered Vale
+		q(79796),	-- Ensemble: Vestments of the Shattered Vale
+		q(79797),	-- Ensemble: Vestments of the Shattered Vale
+		q(79882),	-- Ensemble: Vestments of Winged Triumph
+		q(79883),	-- Ensemble: Vestments of Winged Triumph
+		q(79884),	-- Ensemble: Vestments of Winged Triumph
+		q(80474),	-- Ensemble: Webbed Soulforged Exoskeleton
+		q(79876),	-- Ensemble: White Tiger Battlegear
+		q(79877),	-- Ensemble: White Tiger Battlegear
+		q(79878),	-- Ensemble: White Tiger Battlegear
+		q(79835),	-- Ensemble: Yaungol Slayer Battlegear
+		q(79836),	-- Ensemble: Yaungol Slayer Battlegear
+		q(79837),	-- Ensemble: Yaungol Slayer Battlegear
+		q(82140),	-- Ensemble: Yellow Tropical
+		q(82233),	-- Ensemble: Yellow Tropical Swimwear
+
+		-- Arsenals
+		q(80467),	-- Arsenal: Aldrachi Blasphemer's Glaives
+		q(80459),	-- Arsenal: Armaments of the Holy Avenger
+		q(82247),	-- Arsenal: Blazing Felfire Armaments
+		q(80481),	-- Arsenal: Dreadsquall Hunter's Preference
+		q(80465),	-- Arsenal: Ela'lothen's Blessings of Rebirth (same ID as Ensemble?)
+		--q(),	-- Arsenal: Exodar Peacekeeper's Armaments
+		q(80473),	-- Arsenal: Fanatical Champion's Aggression
+		q(80461),	-- Arsenal: Igneous Onyx Blades
+		q(80471),	-- Arsenal: Instruments of Temptation's Call
+		q(80460),	-- Arsenal: Secrets of the Abyssal Cult
+		q(80469),	-- Arsenal: Shado-Pan Watcher Arsenal
+		q(80477),	-- Arsenal: Sin'dorei Magister's Enchantment
+		q(80483),	-- Arsenal: Tools of Krag'wa's Disciple
+		q(80479),	-- Arsenal: Treasure of the Gold Hoarder
+		q(80475),	-- Arsenal: Webbed Soulforged Weaponry
+
+		-- Exists only as spellID now
+		--q(82319),	-- Arsenal: Quel'Serrar Fireborn Blades
+		--q(82318),	-- Arsenal: Quel'Serrar Seaborn Blades
+		--q(79314),	-- Arsenal: Quel'Serrar Skyborn Blades
+		--q(78844),	-- Ensemble: Additional Tokens of Lost Embaari
+		--q(78845),	-- Ensemble: Additional Tokens of Telhamat
+		--q(81991),	-- Ensemble: Champion Stormrider's Attire
+		--q(81991),	-- Ensemble: Deep Stormrider's Attire
+		--q(78843),	-- Ensemble: Endurance of Temple Telhamat
+		--q(81992),	-- Ensemble: Frenzied Stormrider's Attire
+		--q(81991),	-- Ensemble: Shining Stormrider's Attire
+		--q(81992),	-- Ensemble: Shocking Stormrider's Attire
+		--q(81992),	-- Ensemble: Sparking Stormrider's Attire
+	})),
+});

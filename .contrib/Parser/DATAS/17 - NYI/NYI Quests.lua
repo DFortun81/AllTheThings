@@ -8704,5 +8704,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(74846),	--
 			q(75369),	-- Use Your Coin!
 		})),
+
+		-- 10.2.5
+		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			q(80059),	-- Ensemble: Spring Reveler's Dandelion Collection
+			q(80060),	-- Ensemble: Spring Reveler's Dandelion Collection
+			q(80061),	-- Ensemble: Spring Reveler's Turquoise Collection
+			q(80064),	-- Ensemble: Spring Reveler's Turquoise Collection
+		})),
 	}),
 }));

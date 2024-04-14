@@ -298,6 +298,22 @@ root(ROOTS.Unsorted, {
 				i(223639),	-- Unburied Aspirant's Cloak Rack
 				i(223640),	-- Unburied Gladiator's Cloak Rack
 				i(223769),	-- Eternal Aspirant's Cape
+				-- HQTs
+				q(82343),	-- Ensemble: Unburied Aspirant's Cloak Rack
+				q(82409),	-- Ensemble: Unburied Aspirant's Cloak Rack
+				q(82410),	-- Ensemble: Unburied Aspirant's Cloak Rack
+				q(82411),	-- Ensemble: Unburied Aspirant's Cloak Rack
+				q(82412),	-- Ensemble: Unburied Aspirant's Cloak Rack
+				q(82413),	-- Ensemble: Unburied Aspirant's Cloak Rack
+				q(82420),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82422),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82423),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82425),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82426),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82427),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82428),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82430),	-- Ensemble: Unburied Gladiator's Cloak Rack
+				q(82438),	-- Ensemble: Unburied Gladiator's Cloak Rack
 			}),
 			filter(QUEST_ITEMS, {
 				i(217349),	-- DEPRECATED - Arcane Dust
@@ -3066,7 +3082,7 @@ root(ROOTS.Unsorted, {
 				q(79988),	--
 				q(79989),	--
 				q(80171),	--
-				q(80172),	--
+				q(80172),	-- Ensemble: Gladiator's Battered Armor
 				q(80335),	--
 				q(80389),	-- Last Hurrah
 				q(80540),	--
@@ -3297,7 +3313,7 @@ root(ROOTS.Unsorted, {
 				q(79207),	--
 				q(79208),	--
 				q(79209),	--
-				q(79210),	--
+				q(79210),	-- Ensemble: Sky Witch's Attire
 				q(79211),	--
 				q(79278),	--
 				q(79314),	--
@@ -3309,8 +3325,7 @@ root(ROOTS.Unsorted, {
 				q(79418),	--
 				-- 10.2.5.52432
 				q(79467),	--
-				q(79468),	--
-				q(79517),	--
+				q(79517),	-- Ensemble: Dark Ranger General's Kit
 				q(79537),	-- Jrz Test Currency Quest
 				q(79621),	--
 				-- 10.2.5.52554
@@ -3363,8 +3378,8 @@ root(ROOTS.Unsorted, {
 				q(80060),	--
 				q(80061),	--
 				q(80064),	--
-				q(80065),	--
-				q(80066),	--
+				q(80065),	-- Ensemble: Spring Reveler's Cornsilk Collection
+				q(80066),	-- Ensemble: Spring Reveler's Cornsilk Collection
 			}),
 		})),
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
