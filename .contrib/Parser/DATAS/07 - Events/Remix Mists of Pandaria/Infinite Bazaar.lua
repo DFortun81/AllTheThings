@@ -2149,6 +2149,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 			}),
+			n(QUESTS, sharedData({
+				["isDaily"] = true,
+				["g"] = {
+					i(223908, {	-- Minor Bronze Cache
+						currency(BRONZE),
+					})
+				},
+			}, {
+				q(80448, {	-- A Fresh Scene
+					["provider"] = { "n", 219025 },	-- Larah Treebender <World Apparel>
+				}),
+				q(80446, {	-- Looking for Group
+					["provider"] = { "n", 219030 },	-- Arturos <Dungeon Apparel>
+				}),
+				q(80447, {	-- Looking for More
+					["provider"] = { "n", 219027 },	-- Pythagorus <Heroic and Mythic Raid Apparel>
+				}),
+			})),
 		},
 	}),
 }))));
