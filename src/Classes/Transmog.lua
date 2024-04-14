@@ -599,7 +599,7 @@ do
 		end,
 		trackable = app.ReturnTrue,
 		saved = function(t)
-			return app.IsAccountCached("Sources", t.sourceID)
+			return app.IsAccountCached("Sources", t.sourceID) == 1
 		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
 		["itemID"] = function(t)
@@ -880,7 +880,7 @@ app.BuildSourceInformationForPopout = function(group)
 			if group.g then tinsert(group.g, appearanceGroup)
 			else group.g = { appearanceGroup } end
 		end
-		
+
 		-- Now apply Gear Sets, if relevant.
 		app.BuildGearSetInformationForGroup(group);
 	end
