@@ -3,14 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	m(THE_JADE_FOREST, {
-		["lore"] = "The Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.",
 		["icon"] = "Interface\\Icons\\achievement_zone_jadeforest",
-		["maps"] = {
-			372,	-- Greenstone Quarry
-			373,	-- Greenstone Quarry #2
-			374,	-- The Widows Wail
-			375,	-- Oona Kagu
-		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(20026, {	-- Explore Jade Forest
@@ -58,6 +51,86 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(65481, {	-- Pandaren Ritual Stone
 						["_quests"] = { 31404 },
 					}),
+				}),
+			}),
+			n(QUESTS, {
+				q(81638, {	-- Home Is Where the Hearthstone Is
+					--["sourceQuests"] = { 79440 },	-- Recalling the War (need to confirm)
+					["provider"] = { "n", 65907 },	-- Jiayi Applebloom
+					["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
+				}),
+				q(80012, {	-- Dragonriding
+					["sourceQuests"] = { 79440 },	-- Recalling the War
+					["provider"] = { "n", 218468 },	-- Moratari
+					["coord"] = { 28.5, 14.0, THE_JADE_FOREST },	-- missing ally coords
+				}),
+				q(80013, {	-- How to Glide with Your Dragon
+					["sourceQuests"] = { 80012 },	-- Dragonriding
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
+					["g"] = {
+						i(216712),	-- Bronze Timepiece (QI!)
+					},
+				}),
+				q(80015, {	-- How to Dive with Your Dragon
+					["sourceQuests"] = { 80013 },	-- How to Glide with Your Dragon
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
+					["g"] = {
+						i(216712),	-- Bronze Timepiece (QI!)
+					},
+				}),
+				q(80016, {	-- The Need For Higher Velocities
+					["sourceQuests"] = { 80015 },	-- How to Dive with Your Dragon
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
+					["g"] = {
+						i(216712),	-- Bronze Timepiece (QI!)
+					},
+				}),
+				q(80017, {	-- The Need For Higher Altitudes
+					["sourceQuests"] = { 80016 },	-- The Need For Higher Velocities
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
+					["g"] = {
+						i(216712),	-- Bronze Timepiece (QI!)
+					},
+				}),
+				q(80018, {	-- Fashionable Flying
+					["sourceQuests"] = { 80017 },	-- The Need For Higher Altitudes
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
+				}),
+				q(80349, {	-- Time to Return
+					["sourceQuests"] = { 80018 },	-- Fashionable Flying
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
+				}),
+				q(79489, {	-- Gems of Power
+					["sourceQuests"] = { 79440 },	-- Recalling the War
+				}),
+				q(80196, {	-- Extract a Gem
+					["sourceQuests"] = { 79489 },	-- Gems of Power
+				}),
+				q(80197, {	-- Combine Gems
+					["sourceQuests"] = { 80196 },	-- Extract a Gem
+				}),
+				q(78893, {	-- A Scrap of Bronze
+					["sourceQuests"] = { 79440 },	-- Recalling the War
+					["provider"] = { "i", 210526 },	-- Unraveling Tunic (QI!)
+				}),
+				q(81976, {	-- Bazaar, Isn't It?
+					--["sourceQuests"] = { xx },	-- TODO: some of level up/turn in HQTs?
+					["provider"] = { "n", 222186 },	-- Nostwin
+					["coord"] = { 45.8, 84.7, THE_JADE_FOREST },	-- missing horde coords
+					["g"] = {
+						i(217930), -- Nostwin's Voucher
+					},
+				}),
+				q(78894, {	-- Infinite Growth
+					--["sourceQuests"] = { 81976 },	-- Bazaar, Isn't It? / unsure since I didn't teleport right after I get voucher
+					["provider"] = { "n", 213664 },	-- Momentus
+					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
 			}),
 			n(REWARDS, {
