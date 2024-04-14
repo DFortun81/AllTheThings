@@ -10,25 +10,6 @@ TIER_14_RAIDS = createHeader({
 });
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(TIER_14_RAIDS, {
-		n(ACHIEVEMENTS, {
-			ach(20005, {	-- Heroic: Pandaria Dungeons
-				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
-					19903,	-- Heroic: Gate of the Setting Sun
-					19905,	-- Heroic: Mogu'shan Palace
-					19907,	-- Heroic: Scarlet Halls
-					19909,	-- Heroic: Scarlet Monastery
-					19911,	-- Heroic: Scholomance
-					19899,	-- Heroic: Shado-Pan Monastery
-					19901,	-- Heroic: Siege of Niuzao Temple
-					19897,	-- Heroic: Stormstout Brewery
-					19895,	-- Heroic: Temple of the Jade Serpent
-				}},
-				["g"] = {
-					i(208491),	-- Timerunner's Seal
-				},
-			}),
-		}),
 		n(ARMOR, {
 			d(DIFFICULTY.RAID.LFR, {
 				cl(DEATHKNIGHT, {
@@ -264,7 +245,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214837),	-- Helm of the Lost Catacomb
 					i(214838),	-- Sabatons of the Lost Catacomb
 					i(214839),	-- Bracers of the Lost Catacomb
-					i(214840),	-- Breastplate of the Lost Catacomb			
+					i(214840),	-- Breastplate of the Lost Catacomb
 				}),
 				cl(DRUID, {
 					i(214150),	-- Eternal Blossom Legguards
