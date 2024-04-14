@@ -502,6 +502,8 @@ root(ROOTS.Zones, {
 								}),
 								q(32277, {	-- To the Skies! (H)
 								}),
+								q(32278, {	-- Decisive Action
+							}),
 							})),
 							-- Weekly
 							n(QUESTS, sharedData({
@@ -544,8 +546,6 @@ root(ROOTS.Zones, {
 								q(32255, {	-- De-Constructed (H)
 									["coord"] = { 46.8, 66.9, ISLE_OF_THUNDER },
 									["provider"] = { "n", 67660 },	-- Archmage Aethas Sunreaver
-								}),
-								q(32278, {	-- Decisive Action
 								}),
 								q(32302, {	-- Deconstruction (H)
 								}),

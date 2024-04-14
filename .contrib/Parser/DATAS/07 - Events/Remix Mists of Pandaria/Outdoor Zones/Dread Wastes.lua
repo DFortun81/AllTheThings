@@ -27,14 +27,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				ach(19998, {		-- Elusive Foes: Dread Wastes
-					crit(65623),	-- Ik-Ik the Nimble
-					crit(65624),	-- Nalash Verdantis
-					crit(65625),	-- Gar'lok
-					crit(65626),	-- Karr the Darkener
-					crit(65627),	-- Krol the Blade
-					crit(65628),	-- Ai-Li Skymirror
-					crit(65629),	-- Omnis Grinlok
-					crit(65630),	-- Dak the Breaker
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(20031, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Dread Wastes
 					crit(65995),	-- Heart of Fear

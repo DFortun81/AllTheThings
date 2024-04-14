@@ -6,8 +6,47 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\spell_nature_callstorm",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(19892),		-- Campaign: Isle of Thunder
-				ach(20000),		-- Elusive Foes: Isle of Thunder
+				ach(19892, bubbleDown({ ["_noautomation"] = true, }, {	-- Campaign: Isle of Thunder
+					crit(67270, {	-- Assault the Shipyard
+						["_quests"] = { 32655 },
+					}),
+					crit(67271, {	-- Assault the Shipyard
+						["_quests"] = { 32278 },
+					}),
+					crit(67273, {	-- The Fall of Shan Bu
+						["_quests"] = { 32656 },
+					}),
+					crit(67274, {	-- The Fall of Shan Bu
+						["_quests"] = { 32279 },
+					}),
+					crit(67276, {	-- Build a Base
+						["_quests"] = { 32644 },
+					}),
+					crit(67277, {	-- Build a Base
+						["_quests"] = { 32212 },
+					}),
+					crit(67281, {	-- First Landing
+						["_quests"] = { 32681 },
+					}),
+					crit(67282, {	-- First Landing
+						["_quests"] = { 32680 },
+					}),
+					crit(67283, {	-- Break Down the Wall
+						["_quests"] = { 32654 },
+					}),
+					crit(67284, {	-- Break Down the Wall
+						["_quests"] = { 32276 },
+					}),
+					crit(67286, {	-- Take the Forge
+						["_quests"] = { 32652 },
+					}),
+					crit(67287, {	-- Take the Forge
+						["_quests"] = { 32277 },
+					}),
+				})),
+				ach(20000, {		-- Elusive Foes: Isle of Thunder
+					["sym"] = {{ "achievement_criteria" }},
+				}),
 				ach(19880, {	-- Isle of Thunder
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -148,7 +187,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					},
 				}),
-				ach(20015),		-- Looking For Group: Isle of Thunder
+				ach(20015, {		-- Looking For Group: Isle of Thunder
+					["sym"] = {{"meta_achievement",
+						20020,	-- Oondasta
+						19955,	-- Raid Finder: Throne of Thunder
+						20019,	-- Nalak, the Storm Lord
+					}},
+				}),
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {
