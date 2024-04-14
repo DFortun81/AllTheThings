@@ -1284,7 +1284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(716, {	-- Stone Is Better than Cloth
 					["qg"] = 2920,	-- Lucien Tosselwrench
 					["sourceQuests"] = {
-						714,	-- Gyro... What?
+						-- 714,	-- Gyro... What?	-- Not required in 30403
 						712,	-- Study of the Elements: Rock (3/3)
 					},
 					["coord"] = { 25.8, 44.4, BADLANDS },

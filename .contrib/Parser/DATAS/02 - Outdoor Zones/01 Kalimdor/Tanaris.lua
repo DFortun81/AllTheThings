@@ -4342,7 +4342,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuests"] = {
 						379,	-- Slake That Thirst
-						841,	-- Another Power Source?
+						-- 841,	-- Another Power Source?	-- Not required in 30403
 					},
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
