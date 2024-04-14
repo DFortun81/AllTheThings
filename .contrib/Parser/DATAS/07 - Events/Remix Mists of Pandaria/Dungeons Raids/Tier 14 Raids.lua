@@ -536,73 +536,64 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(19949, {	-- Raid Finder: Heart of Fear
-						--[[
-						-- TODO: Fix Correct Achievement Crit
-						crit(19628, {	-- Imperial Vizier Zor'lok
+						crit(65696, {	-- Imperial Vizier Zor'lok
 							["_encounter"] = { 745, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19629, {	-- Blade Lord Ta'yak
+						crit(65695, {	-- Blade Lord Ta'yak
 							["_encounter"] = { 744, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19632, {	-- Garalon
+						crit(65697, {	-- Garalon
 							["_encounter"] = { 713, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19631, {	-- Wind Lord Mel'jarak
+						crit(65698, {	-- Wind Lord Mel'jarak
 							["_encounter"] = { 741, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19633, {	-- Amber-Shaper Un'sok
+						crit(65699, {	-- Amber-Shaper Un'sok
 							["_encounter"] = { 737, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19634, {	-- Grand Empress Shek'zeer
+						crit(65700, {	-- Grand Empress Shek'zeer
 							["_encounter"] = { 743, DIFFICULTY.RAID.LFR },
 						}),
-						--]]
 					}),
 					ach(19950, {	-- Heart of Fear
-						--[[
-						-- TODO: Fix Correct Achievement Crit
-						crit(19628, {	-- Imperial Vizier Zor'lok
+						crit(65703, {	-- Imperial Vizier Zor'lok
 							["_encounter"] = { 745, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19629, {	-- Blade Lord Ta'yak
+						crit(65706, {	-- Blade Lord Ta'yak
 							["_encounter"] = { 744, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19632, {	-- Garalon
+						crit(65705, {	-- Garalon
 							["_encounter"] = { 713, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19631, {	-- Wind Lord Mel'jarak
+						crit(65702, {	-- Wind Lord Mel'jarak
 							["_encounter"] = { 741, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19633, {	-- Amber-Shaper Un'sok
+						crit(65701, {	-- Amber-Shaper Un'sok
 							["_encounter"] = { 737, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19634, {	-- Grand Empress Shek'zeer
+						crit(65704, {	-- Grand Empress Shek'zeer
 							["_encounter"] = { 743, DIFFICULTY.RAID.NORMAL },
 						}),
-						--]]
 					}),
 					ach(19951, {	-- Heroic: Heart of Fear
-						--[[
-						-- TODO: Fix Correct Achievement Crit
-						crit(19628, {	-- Imperial Vizier Zor'lok
+						crit(65707, {	-- Imperial Vizier Zor'lok
 							["_encounter"] = { 745, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19629, {	-- Blade Lord Ta'yak
+						crit(65708, {	-- Blade Lord Ta'yak
 							["_encounter"] = { 744, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19632, {	-- Garalon
+						crit(65709, {	-- Garalon
 							["_encounter"] = { 713, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19631, {	-- Wind Lord Mel'jarak
+						crit(65710, {	-- Wind Lord Mel'jarak
 							["_encounter"] = { 741, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19633, {	-- Amber-Shaper Un'sok
+						crit(65711, {	-- Amber-Shaper Un'sok
 							["_encounter"] = { 737, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19634, {	-- Grand Empress Shek'zeer
+						crit(65712, {	-- Grand Empress Shek'zeer
 							["_encounter"] = { 743, DIFFICULTY.RAID.HEROIC },
 						}),
-						--]]
 					}),
 				}),
 				d(DIFFICULTY.RAID.LFR, {
@@ -680,56 +671,47 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["maps"] = { 456 },	-- Terrace of Endless Spring
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					n(19952, {	-- Raid Finder: Terrace of Endless Spring
-						--[[
-						-- TODO: Fix Correct Achievement Crit
-						crit(19518, {	-- Protectors of the Endless
+					ach(19952, {	-- Raid Finder: Terrace of Endless Spring
+						crit(65713, {	-- Protectors of the Endless
 							["_encounter"] = { 683, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19519, {	-- Tsulong
+						crit(65714, {	-- Tsulong
 							["_encounter"] = { 742, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19520, {	-- Lei Shi
+						crit(65715, {	-- Lei Shi
 							["_encounter"] = { 729, DIFFICULTY.RAID.LFR },
 						}),
-						crit(19521, {	-- Sha of Fear
+						crit(65716, {	-- Sha of Fear
 							["_encounter"] = { 709, DIFFICULTY.RAID.LFR },
 						}),
-						--]]
 					}),
-					n(19953, {	-- Terrace of Endless Spring
-						--[[
-						-- TODO: Fix Correct Achievement Crit
-						crit(19518, {	-- Protectors of the Endless
+					ach(19953, {	-- Terrace of Endless Spring
+						crit(65717, {	-- Protectors of the Endless
 							["_encounter"] = { 683, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19519, {	-- Tsulong
+						crit(65718, {	-- Tsulong
 							["_encounter"] = { 742, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19520, {	-- Lei Shi
+						crit(65719, {	-- Lei Shi
 							["_encounter"] = { 729, DIFFICULTY.RAID.NORMAL },
 						}),
-						crit(19521, {	-- Sha of Fear
+						crit(65720, {	-- Sha of Fear
 							["_encounter"] = { 709, DIFFICULTY.RAID.NORMAL },
 						}),
-						--]]
 					}),
-					n(19954, {	-- Heroic: Terrace of Endless Spring
-						--[[
-						-- TODO: Fix Correct Achievement Crit
-						crit(19518, {	-- Protectors of the Endless
+					ach(19954, {	-- Heroic: Terrace of Endless Spring
+						crit(65717, {	-- Protectors of the Endless
 							["_encounter"] = { 683, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19519, {	-- Tsulong
+						crit(65721, {	-- Tsulong
 							["_encounter"] = { 742, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19520, {	-- Lei Shi
+						crit(65722, {	-- Lei Shi
 							["_encounter"] = { 729, DIFFICULTY.RAID.HEROIC },
 						}),
-						crit(19521, {	-- Sha of Fear
+						crit(65723, {	-- Sha of Fear
 							["_encounter"] = { 709, DIFFICULTY.RAID.HEROIC },
 						}),
-						--]]
 					}),
 				}),
 				d(DIFFICULTY.RAID.LFR, {

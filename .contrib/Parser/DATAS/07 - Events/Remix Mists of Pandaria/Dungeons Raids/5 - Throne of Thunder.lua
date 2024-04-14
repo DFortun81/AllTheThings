@@ -18,130 +18,121 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19955, {	-- Raid Finder: Throne of Thunder
-					--[[
-					-- TODO: Fix Correct Achievement Crit
-					crit(22912, {	-- Jin'rokh the Breaker
+					crit(65724, {	-- Jin'rokh the Breaker
 						["_encounter"] = { 827, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22984, {	-- Horridon
+					crit(65725, {	-- Horridon
 						["_encounter"] = { 819, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22963, {	-- Council of Elders
+					crit(65726, {	-- Council of Elders
 						["_encounter"] = { 816, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22985, {	-- Tortos
+					crit(65727, {	-- Tortos
 						["_encounter"] = { 825, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22986, {	-- Megaera
+					crit(65728, {	-- Megaera
 						["_encounter"] = { 821, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22987, {	-- Ji-Kun
+					crit(65729, {	-- Ji-Kun
 						["_encounter"] = { 828, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22988, {	-- Durumu the Forgotten
+					crit(65730, {	-- Durumu the Forgotten
 						["_encounter"] = { 818, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22989, {	-- Primordius
+					crit(65731, {	-- Primordius
 						["_encounter"] = { 820, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22990, {	-- Dark Animus
+					crit(65732, {	-- Dark Animus
 						["_encounter"] = { 824, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22991, {	-- Iron Qon
+					crit(65733, {	-- Iron Qon
 						["_encounter"] = { 817, DIFFICULTY.RAID.LFR },
 					}),
-					crit(22965, {	-- Twin Empyreans
+					crit(65734, {	-- Twin Empyreans
 						["_encounter"] = { 829, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23317, {	-- Lei Shen
+					crit(65735, {	-- Lei Shen
 						["_encounter"] = { 832, DIFFICULTY.RAID.LFR },
 					}),
-					--]]
 				}),
 				ach(19956, {	-- Throne of Thunder
-					--[[
-					-- TODO: Fix Correct Achievement Crit
-					crit(22912, {	-- Jin'rokh the Breaker
+					crit(65736, {	-- Jin'rokh the Breaker
 						["_encounter"] = { 827, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22984, {	-- Horridon
+					crit(65737, {	-- Horridon
 						["_encounter"] = { 819, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22963, {	-- Council of Elders
+					crit(65738, {	-- Council of Elders
 						["_encounter"] = { 816, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22985, {	-- Tortos
+					crit(65739, {	-- Tortos
 						["_encounter"] = { 825, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22986, {	-- Megaera
+					crit(65740, {	-- Megaera
 						["_encounter"] = { 821, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22987, {	-- Ji-Kun
+					crit(65741, {	-- Ji-Kun
 						["_encounter"] = { 828, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22988, {	-- Durumu the Forgotten
+					crit(65742, {	-- Durumu the Forgotten
 						["_encounter"] = { 818, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22989, {	-- Primordius
+					crit(65743, {	-- Primordius
 						["_encounter"] = { 820, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22990, {	-- Dark Animus
+					crit(65744, {	-- Dark Animus
 						["_encounter"] = { 824, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22991, {	-- Iron Qon
+					crit(65745, {	-- Iron Qon
 						["_encounter"] = { 817, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(22965, {	-- Twin Empyreans
+					crit(65746, {	-- Twin Empyreans
 						["_encounter"] = { 829, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23317, {	-- Lei Shen
+					crit(65747, {	-- Lei Shen
 						["_encounter"] = { 832, DIFFICULTY.RAID.NORMAL },
 					}),
-					--]]
 				}),
 				ach(19957, {	-- Heroic: Throne of Thunder
-					--[[
-					-- TODO: Fix Correct Achievement Crit
-					crit(22912, {	-- Jin'rokh the Breaker
+					crit(65748, {	-- Jin'rokh the Breaker
 						["_encounter"] = { 827, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22984, {	-- Horridon
+					crit(65749, {	-- Horridon
 						["_encounter"] = { 819, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22963, {	-- Council of Elders
+					crit(65750, {	-- Council of Elders
 						["_encounter"] = { 816, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22985, {	-- Tortos
+					crit(65751, {	-- Tortos
 						["_encounter"] = { 825, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22986, {	-- Megaera
+					crit(65752, {	-- Megaera
 						["_encounter"] = { 821, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22987, {	-- Ji-Kun
+					crit(65753, {	-- Ji-Kun
 						["_encounter"] = { 828, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22988, {	-- Durumu the Forgotten
+					crit(65754, {	-- Durumu the Forgotten
 						["_encounter"] = { 818, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22989, {	-- Primordius
+					crit(65755, {	-- Primordius
 						["_encounter"] = { 820, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22990, {	-- Dark Animus
+					crit(65756, {	-- Dark Animus
 						["_encounter"] = { 824, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22991, {	-- Iron Qon
+					crit(65757, {	-- Iron Qon
 						["_encounter"] = { 817, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(22965, {	-- Twin Empyreans
+					crit(65758, {	-- Twin Empyreans
 						["_encounter"] = { 829, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23317, {	-- Lei Shen
+					crit(65759, {	-- Lei Shen
 						["_encounter"] = { 832, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23317, {	-- Ra-den
+					crit(65760, {	-- Ra-den
 						["_encounter"] = { 831, DIFFICULTY.RAID.HEROIC },
 					}),
-					--]]
 				}),
 			}),
 			d(DIFFICULTY.RAID.LFR, {

@@ -27,192 +27,180 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19958, {	-- Raid Finder: Siege of Orgrimmar
-					--[[
-					-- TODO: Fix Correct Achievement Crit
-					crit(23651, {	-- Immerseus
+					crit(65761, {	-- Immerseus
 						["_encounter"] = { 852, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23653, {	-- The Fallen Protectors
+					crit(65762, {	-- The Fallen Protectors
 						["_encounter"] = { 849, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23654, {	-- Norushen
+					crit(65763, {	-- Norushen
 						["_encounter"] = { 866, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23652, {	-- Sha of Pride
+					crit(65764, {	-- Sha of Pride
 						["_encounter"] = { 867, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23655, {	-- Galakras
+					crit(65765, {	-- Galakras
 						["_encounter"] = { 881, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23656, {	-- Iron Juggernaut
+					crit(65766, {	-- Iron Juggernaut
 						["_encounter"] = { 864, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23657, {	-- Kor'kron Dark Shaman
+					crit(65767, {	-- Kor'kron Dark Shaman
 						["_encounter"] = { 856, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23658, {	-- General Nazgrim
+					crit(65768, {	-- General Nazgrim
 						["_encounter"] = { 850, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23659, {	-- Malkorok
+					crit(65769, {	-- Malkorok
 						["_encounter"] = { 846, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23660, {	-- Spoils of Pandaria
+					crit(65770, {	-- Spoils of Pandaria
 						["_encounter"] = { 870, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23661, {	-- Thok the Bloodthirsty
+					crit(65771, {	-- Thok the Bloodthirsty
 						["_encounter"] = { 851, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23662, {	-- Siegecrafter Blackfuse
+					crit(65772, {	-- Siegecrafter Blackfuse
 						["_encounter"] = { 865, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23906, {	-- Paragons of the Klaxxi
+					crit(65773, {	-- Paragons of the Klaxxi
 						["_encounter"] = { 853, DIFFICULTY.RAID.LFR },
 					}),
-					crit(23664, {	-- Garrosh Hellscream
+					crit(65774, {	-- Garrosh Hellscream
 						["_encounter"] = { 869, DIFFICULTY.RAID.LFR },
 					}),
-					--]]
 				}),
 				ach(19959, {	-- Siege of Orgrimmar
-					--[[
-					-- TODO: Fix Correct Achievement Crit
-					crit(23651, {	-- Immerseus
+					crit(65775, {	-- Immerseus
 						["_encounter"] = { 852, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23653, {	-- The Fallen Protectors
+					crit(65776, {	-- The Fallen Protectors
 						["_encounter"] = { 849, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23654, {	-- Norushen
+					crit(65777, {	-- Norushen
 						["_encounter"] = { 866, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23652, {	-- Sha of Pride
+					crit(65778, {	-- Sha of Pride
 						["_encounter"] = { 867, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23655, {	-- Galakras
+					crit(65779, {	-- Galakras
 						["_encounter"] = { 881, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23656, {	-- Iron Juggernaut
+					crit(65780, {	-- Iron Juggernaut
 						["_encounter"] = { 864, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23657, {	-- Kor'kron Dark Shaman
+					crit(65781, {	-- Kor'kron Dark Shaman
 						["_encounter"] = { 856, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23658, {	-- General Nazgrim
+					crit(65782, {	-- General Nazgrim
 						["_encounter"] = { 850, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23659, {	-- Malkorok
+					crit(65783, {	-- Malkorok
 						["_encounter"] = { 846, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23660, {	-- Spoils of Pandaria
+					crit(65784, {	-- Spoils of Pandaria
 						["_encounter"] = { 870, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23661, {	-- Thok the Bloodthirsty
+					crit(65785, {	-- Thok the Bloodthirsty
 						["_encounter"] = { 851, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23662, {	-- Siegecrafter Blackfuse
+					crit(65786, {	-- Siegecrafter Blackfuse
 						["_encounter"] = { 865, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23906, {	-- Paragons of the Klaxxi
+					crit(65787, {	-- Paragons of the Klaxxi
 						["_encounter"] = { 853, DIFFICULTY.RAID.NORMAL },
 					}),
-					crit(23664, {	-- Garrosh Hellscream
+					crit(65788, {	-- Garrosh Hellscream
 						["_encounter"] = { 869, DIFFICULTY.RAID.NORMAL },
 					}),
-					--]]
 				}),
 				ach(19960, {	-- Heroic: Siege of Orgrimmar
-					--[[
-					-- TODO: Fix Correct Achievement Crit
-					crit(23651, {	-- Immerseus
+					crit(65789, {	-- Immerseus
 						["_encounter"] = { 852, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23653, {	-- The Fallen Protectors
+					crit(65790, {	-- The Fallen Protectors
 						["_encounter"] = { 849, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23654, {	-- Norushen
+					crit(65791, {	-- Norushen
 						["_encounter"] = { 866, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23652, {	-- Sha of Pride
+					crit(65792, {	-- Sha of Pride
 						["_encounter"] = { 867, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23655, {	-- Galakras
+					crit(65793, {	-- Galakras
 						["_encounter"] = { 881, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23656, {	-- Iron Juggernaut
+					crit(65794, {	-- Iron Juggernaut
 						["_encounter"] = { 864, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23657, {	-- Kor'kron Dark Shaman
+					crit(65795, {	-- Kor'kron Dark Shaman
 						["_encounter"] = { 856, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23658, {	-- General Nazgrim
+					crit(65796, {	-- General Nazgrim
 						["_encounter"] = { 850, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23659, {	-- Malkorok
+					crit(65797, {	-- Malkorok
 						["_encounter"] = { 846, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23660, {	-- Spoils of Pandaria
+					crit(65798, {	-- Spoils of Pandaria
 						["_encounter"] = { 870, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23661, {	-- Thok the Bloodthirsty
+					crit(65799, {	-- Thok the Bloodthirsty
 						["_encounter"] = { 851, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23662, {	-- Siegecrafter Blackfuse
+					crit(65800, {	-- Siegecrafter Blackfuse
 						["_encounter"] = { 865, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23906, {	-- Paragons of the Klaxxi
+					crit(65801, {	-- Paragons of the Klaxxi
 						["_encounter"] = { 853, DIFFICULTY.RAID.HEROIC },
 					}),
-					crit(23664, {	-- Garrosh Hellscream
+					crit(65802, {	-- Garrosh Hellscream
 						["_encounter"] = { 869, DIFFICULTY.RAID.HEROIC },
 					}),
-					--]]
 				}),
 				ach(19961, {	-- Mythic: Siege of Orgrimmar
-					--[[
-					-- TODO: Fix Correct Achievement Crit
-					crit(23651, {	-- Immerseus
+					crit(65803, {	-- Immerseus
 						["_encounter"] = { 852, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23653, {	-- The Fallen Protectors
+					crit(65804, {	-- The Fallen Protectors
 						["_encounter"] = { 849, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23654, {	-- Norushen
+					crit(65805, {	-- Norushen
 						["_encounter"] = { 866, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23652, {	-- Sha of Pride
+					crit(65806, {	-- Sha of Pride
 						["_encounter"] = { 867, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23655, {	-- Galakras
+					crit(65807, {	-- Galakras
 						["_encounter"] = { 881, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23656, {	-- Iron Juggernaut
+					crit(65808, {	-- Iron Juggernaut
 						["_encounter"] = { 864, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23657, {	-- Kor'kron Dark Shaman
+					crit(65809, {	-- Kor'kron Dark Shaman
 						["_encounter"] = { 856, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23658, {	-- General Nazgrim
+					crit(65810, {	-- General Nazgrim
 						["_encounter"] = { 850, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23659, {	-- Malkorok
+					crit(65811, {	-- Malkorok
 						["_encounter"] = { 846, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23660, {	-- Spoils of Pandaria
+					crit(65812, {	-- Spoils of Pandaria
 						["_encounter"] = { 870, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23661, {	-- Thok the Bloodthirsty
+					crit(65813, {	-- Thok the Bloodthirsty
 						["_encounter"] = { 851, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23662, {	-- Siegecrafter Blackfuse
+					crit(65814, {	-- Siegecrafter Blackfuse
 						["_encounter"] = { 865, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23906, {	-- Paragons of the Klaxxi
+					crit(65815, {	-- Paragons of the Klaxxi
 						["_encounter"] = { 853, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(23664, {	-- Garrosh Hellscream
+					crit(65816, {	-- Garrosh Hellscream
 						["_encounter"] = { 869, DIFFICULTY.RAID.MYTHIC },
 					}),
-					--]]
 				}),
 			}),
 			d(DIFFICULTY.RAID.LFR, {
