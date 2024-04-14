@@ -63,6 +63,52 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 			}),
+			n(219028, {	-- Durus <Normal Raid Apparel>
+				cl(SHAMAN, {
+					i(215297, {	-- Ensemble: Regalia of the Firebird (Normal)
+						["cost"] = {{"c", BRONZE, 5000}},
+						["g"] = {
+							i(214633),	-- Firebird's Armbands
+							i(214638),	-- Firebird's Chain
+							i(214637),	-- Firebird's Gloves
+							i(214636),	-- Firebird's Headguard
+							i(214640),	-- Firebird's Legguards
+							i(214639),	-- Firebird's Pauldrons
+							i(214634),	-- Firebird's Robeguard
+							i(214635),	-- Firebird's Sabatons
+							i(220990),	-- Firebird's Shirt
+						},
+					}),
+					i(215300, {	-- Ensemble: Regalia of the Witch Doctor (Normal)
+						["cost"] = {{"c", BRONZE, 5000}},
+						["g"] = {
+							i(214664),	-- Armbands of the Witch Doctor
+							i(214659),	-- Chain of the Witch Doctor
+							i(214660),	-- Gloves of the Witch Doctor
+							i(214661),	-- Headguard of the Witch Doctor
+							i(214657),	-- Legguards of the Witch Doctor
+							i(214658),	-- Pauldrons of the Witch Doctor
+							i(214663),	-- Robeguard of the Witch Doctor
+							i(214662),	-- Sabatons of the Witch Doctor
+							i(220992),	-- Shirt of the Witch Doctor
+						},
+					}),
+					i(215303, {	-- Ensemble: Regalia of Celestial Harmony (Normal)
+						["cost"] = {{"c", BRONZE, 5000}},
+						["g"] = {
+						-- TODO: Has Contains Removed Gear!! Must Add
+							i(214681),	-- Armbands of Celestial Harmony
+							i(214686),	-- Chain of Celestial Harmony
+							i(214682),	-- Chestguard of Celestial Harmony
+							i(214685),	-- Gloves of Celestial Harmony
+							i(214684),	-- Headguard of Celestial Harmony
+							i(214688),	-- Legguards of Celestial Harmony
+							i(214687),	-- Pauldrons of Celestial Harmony
+							i(214683),	-- Sabatons of Celestial Harmony
+						},
+					}),
+				}),
+			}),
 			n(220618, {	-- Grandmaster Jakkus <Class Apparel>
 				cl(DEATHKNIGHT, {
 					i(217824, {	-- Arsenal: Webbed Soulforged Weaponry
@@ -458,6 +504,75 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["cost"] = {{"c", BRONZE, 50000}},
 				}),
 			}),
+			n(219013, {	-- Horos <Rare Collections>
+				i(89205, {	-- Mini Mana Bomb
+					["cost"] = {{"c", BRONZE, 50000}},
+				}),
+				------ Still Obtainable ------
+				i(86589, {	-- Ai-Li's Skymirror
+					["cost"] = {{"c", BRONZE, 4950}},
+				}),
+				i(86582, {	-- Aqua Jewel
+					["cost"] = {{"c", BRONZE, 7700}},
+				}),
+				i(86565, {	-- Battle Horn
+					["cost"] = {{"c", BRONZE, 3850}},
+				}),
+				i(104302, {	-- Blackflame Daggers
+					["cost"] = {{"c", BRONZE, 38500}},
+				}),
+				i(134023, {	-- Bottled Tornado
+					["cost"] = {{"c", BRONZE, 3850}},
+				}),
+				i(86575, {	-- Chalice of Secrets
+					["cost"] = {{"c", BRONZE, 3850}},
+				}),
+				i(86590, {	-- Essence of the Breeze
+					["cost"] = {{"c", BRONZE, 3850}},
+				}),
+				i(104309, {	-- Eternal Kiln
+					["cost"] = {{"c", BRONZE, 50000}},
+				}),
+				i(86578, {	-- Eternal Warrior's Sigil
+					["cost"] = {{"c", BRONZE, 4950}},
+				}),
+				i(86581, {	-- Farwater Conch
+					["cost"] = {{"c", BRONZE, 4950}},
+				}),
+				i(98136, {	-- Gastropod Shell
+					["cost"] = {{"c", BRONZE, 50000}},
+				}),
+				i(86594, {	-- Helpful Wikky's Whistle
+					["cost"] = {{"c", BRONZE, 3850}},
+				}),
+				i(86593, {	-- Hozen Beach Ball
+					["cost"] = {{"c", BRONZE, 4950}},
+				}),
+				i(86571, {	-- Kang's Bindstone
+					["cost"] = {{"c", BRONZE, 3850}},
+				}),
+				i(86568, {	-- Mr. Smite's Brass Compass
+					["cost"] = {{"c", BRONZE, 7700}},
+				}),
+				i(104262, {	-- Odd Polished Stone
+					["cost"] = {{"c", BRONZE, 2200}},
+				}),
+				i(86588, {	-- Pandaren Firework Launcher
+					["cost"] = {{"c", BRONZE, 7700}},
+				}),
+				i(86586, {	-- Panflute of Pandaria
+					["cost"] = {{"c", BRONZE, 4950}},
+				}),
+				i(86583, {	-- Salyin Battle Banner
+					["cost"] = {{"c", BRONZE, 4950}},
+				}),
+				i(86573, {	-- Shard of Archstone
+					["cost"] = {{"c", BRONZE, 4950}},
+				}),
+				i(104331, {	-- Warning Sign
+					["cost"] = {{"c", BRONZE, 38500}},
+				}),
+			}),
 			n(219025, {	-- Larah Treebender <World Apparel>
 				i(215219, {	-- Ensemble: Guise of the Shado-Pan (Dark)
 					["cost"] = {{"c", BRONZE, 2500}},
@@ -678,50 +793,68 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 			}),
-			n(219028, {	-- Durus <Normal Raid Apparel>
-				cl(SHAMAN, {
-					i(215297, {	-- Ensemble: Regalia of the Firebird (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
-							i(214633),	-- Firebird's Armbands
-							i(214638),	-- Firebird's Chain
-							i(214637),	-- Firebird's Gloves
-							i(214636),	-- Firebird's Headguard
-							i(214640),	-- Firebird's Legguards
-							i(214639),	-- Firebird's Pauldrons
-							i(214634),	-- Firebird's Robeguard
-							i(214635),	-- Firebird's Sabatons
-							i(220990),	-- Firebird's Shirt
-						},
-					}),
-					i(215300, {	-- Ensemble: Regalia of the Witch Doctor (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
-							i(214664),	-- Armbands of the Witch Doctor
-							i(214659),	-- Chain of the Witch Doctor
-							i(214660),	-- Gloves of the Witch Doctor
-							i(214661),	-- Headguard of the Witch Doctor
-							i(214657),	-- Legguards of the Witch Doctor
-							i(214658),	-- Pauldrons of the Witch Doctor
-							i(214663),	-- Robeguard of the Witch Doctor
-							i(214662),	-- Sabatons of the Witch Doctor
-							i(220992),	-- Shirt of the Witch Doctor
-						},
-					}),
-					i(215303, {	-- Ensemble: Regalia of Celestial Harmony (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
-						-- TODO: Has Contains Removed Gear!! Must Add
-							i(214681),	-- Armbands of Celestial Harmony
-							i(214686),	-- Chain of Celestial Harmony
-							i(214682),	-- Chestguard of Celestial Harmony
-							i(214685),	-- Gloves of Celestial Harmony
-							i(214684),	-- Headguard of Celestial Harmony
-							i(214688),	-- Legguards of Celestial Harmony
-							i(214687),	-- Pauldrons of Celestial Harmony
-							i(214683),	-- Sabatons of Celestial Harmony
-						},
-					}),
+			n(219024, {	-- Lidamorrutu <Gem Procurement>
+				i(223904, {	-- Asynchronized Cogwheel Gem
+					["cost"] = {{"c", BRONZE, 400}},
+				}),
+				i(223905, {	-- Asynchronized Meta Gem
+					["cost"] = {{"c", BRONZE, 500}},
+				}),
+				i(223907, {	-- Asynchronized Prismatic Gem
+					["cost"] = {{"c", BRONZE, 200}},
+				}),
+				i(223906, {	-- Asynchronized Tinker Gem
+					["cost"] = {{"c", BRONZE, 300}},
+				}),
+			}),
+			n(219033, {	-- Nostwin <Snacks and Scrolls>
+				i(217925, {	-- Bottle of Bees
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217930, {	-- Nostwin's Voucher
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217901, {	-- Timeless Drums
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217608, {	-- Timeless Scroll of Battle Shout
+					["cost"] = {{"c", BRONZE, 10}},
+				}),
+				i(217730, {	-- Timeless Scroll of Chaos
+					["cost"] = {{"c", BRONZE, 10}},
+				}),
+				i(217929, {	-- Timeless Scroll of Cleansing
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217606, {	-- Timeless Scroll of Fortitude
+					["cost"] = {{"c", BRONZE, 10}},
+				}),
+				i(217605, {	-- Timeless Scroll of Intellect
+					["cost"] = {{"c", BRONZE, 10}},
+				}),
+				i(217731, {	-- Timeless Scroll of Mystic Power
+					["cost"] = {{"c", BRONZE, 10}},
+				}),
+				i(217928, {	-- Timeless Scroll of Resurrection
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217956, {	-- Timeless Scroll of Summoning
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217607, {	-- Timeless Scroll of the Wild
+					["cost"] = {{"c", BRONZE, 10}},
+				}),
+				i(211254, {	-- Timerunner's Bandage
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217905, {	-- Timerunner's Draught of Health
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217904, {	-- Timerunner's Draught of Power
+					["cost"] = {{"c", BRONZE, 20}},
+				}),
+				i(217902, {	-- Timerunner's Vial
+					["cost"] = {{"c", BRONZE, 20}},
 				}),
 			}),
 			n(219027, {	-- Pythagorus <Heroic and Mythic Raid Apparel>

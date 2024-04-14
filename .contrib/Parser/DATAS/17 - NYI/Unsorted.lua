@@ -1750,10 +1750,6 @@ root(ROOTS.Unsorted, {
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
 					i(219222),	-- Time-Lost Artifact
-					i(223904),	-- Asynchronized Cogwheel Gem
-					i(223905),	-- Asynchronized Meta Gem
-					i(223906),	-- Asynchronized Tinker Gem
-					i(223907),	-- Asynchronized Prismatic Gem
 					i(223908),	-- Minor Bronze Cache
 					i(223909),	-- Lesser Bronze Cache
 					i(223910),	-- Bronze Cache
