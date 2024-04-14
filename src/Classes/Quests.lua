@@ -1065,7 +1065,11 @@ local criteriaFuncs = {
     questID = IsQuestSaved,
 	label_questID = L.LOCK_CRITERIA_QUEST_LABEL,
     text_questID = function(questID)
-        return ("[%d] %s"):format(questID, QuestNameFromID[questID] or RETRIEVING_DATA);
+		-- sometimes we can get nice names from non-server quests... so use their actual implementation
+		local questObject = app.SearchForObject("questID", questID, "field")
+		local questName
+		if questObject then questName = questObject.name end
+        return ("[%d] %s"):format(questID, questName or RETRIEVING_DATA);
     end,
 
     spellID = function(spellID)

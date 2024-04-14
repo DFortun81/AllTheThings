@@ -8959,6 +8959,10 @@ RowOnEnter = function (self)
 			if critFunc then
 				local label = critFuncs["label_"..critKey];
 				local text = critFuncs["text_"..critKey](critValue);
+				-- TODO: probably a more general way to check this on lines that can be retrieving
+				if not reference.working and IsRetrieving(text) then
+					reference.working = true
+				end
 				tinsert(tooltipInfo, {
 					left = GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
 				});
