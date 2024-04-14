@@ -625,9 +625,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.LFR, {
-					n(ARMOR, {
-						-- Copy from MSV when done
-					}),
 					header(HEADERS.Achievement, 6718, {	-- The Dread Approach
 						e(745, {	-- Imperial Vizier Zor'lok
 							["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
@@ -655,9 +652,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					n(ARMOR, {
-						-- Copy from MSV when done
-					}),
 					e(745, {	-- Imperial Vizier Zor'lok
 						["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
 					}),
@@ -678,9 +672,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					n(ARMOR, {
-						-- Copy from MSV when done
-					}),
 					e(745, {	-- Imperial Vizier Zor'lok
 						["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
 					}),
@@ -761,9 +752,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.LFR, {
-					n(ARMOR, {
-						-- Copy from MSV when done
-					}),
 					header(HEADERS.Achievement, 6689, {	-- Terrace of Endless Spring
 						e(683, {	-- Protectors of the Endless
 							["crs"] = {
@@ -784,9 +772,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					n(ARMOR, {
-						-- Copy from MSV when done
-					}),
 					e(683, {	-- Protectors of the Endless
 						["crs"] = {
 							60583,	-- Protector Kaolan
@@ -805,9 +790,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					n(ARMOR, {
-						-- Copy from MSV when done
-					}),
 					e(683, {	-- Protectors of the Endless
 						["crs"] = {
 							60583,	-- Protector Kaolan
