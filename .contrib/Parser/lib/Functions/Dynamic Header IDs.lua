@@ -333,6 +333,7 @@ HeaderAssignments = {
 	["Thousand Boat Bash"] = -1000229,
 	["Thunderforged"] = -1000108,
 	["Tier 0.5 Sets"] = -1000165,
+	["Tier 14 Raids"] = -1000879,
 	["Tier 3 Sets"] = -1000109,
 	["Timbermaw Hold"] = -1000197,
 	["Time Rift"] = -1000313,
@@ -404,4 +405,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000878;
+NextHeaderID = -1000880;

@@ -418,30 +418,6 @@ root(ROOTS.Unsorted, {
 						i(214009),	-- Slippers of the Dynast
 						i(214010),	-- Vestment of the Dynast
 						cl(MAGE, {	-- Tier Sets
-							i(213711),	-- Robe of the Burning Scroll
-							i(213712),	-- Sandals of the Burning Scroll
-							i(213713),	-- Gloves of the Burning Scroll
-							i(213714),	-- Hood of the Burning Scroll
-							i(213715),	-- Leggings of the Burning Scroll
-							i(213716),	-- Shoulderpads of the Burning Scroll
-							i(213717),	-- Cord of the Burning Scroll
-							i(213718),	-- Bracers of the Burning Scroll
-							i(213719),	-- Cuffs of the Burning Scroll
-							i(213720),	-- Belt of the Burning Scroll
-							i(213721),	-- Amice of the Burning Scroll
-							i(213722),	-- Pants of the Burning Scroll
-							i(213723),	-- Cowl of the Burning Scroll
-							i(213724),	-- Handwraps of the Burning Scroll
-							i(213725),	-- Treads of the Burning Scroll
-							i(213726),	-- Raiment of the Burning Scroll
-							i(213727),	-- Vestment of the Burning Scroll
-							i(213728),	-- Slippers of the Burning Scroll
-							i(213729),	-- Mitts of the Burning Scroll
-							i(213730),	-- Crown of the Burning Scroll
-							i(213731),	-- Trousers of the Burning Scroll
-							i(213732),	-- Mantle of the Burning Scroll
-							i(213733),	-- Sash of the Burning Scroll
-							i(213734),	-- Wristwraps of the Burning Scroll
 							i(213794),	-- Bracers of the Chromatic Hydra
 							i(213795),	-- Cord of the Chromatic Hydra
 							i(213797),	-- Shoulderpads of the Chromatic Hydra
@@ -492,30 +468,6 @@ root(ROOTS.Unsorted, {
 							i(213842),	-- Chronomancer Wristwraps
 						}),
 						cl(PRIEST, {	-- Tier
-							i(213843),	-- Guardian Serpent Bracers
-							i(213844),	-- Guardian Serpent Cord
-							i(213845),	-- Guardian Serpent Shoulderpads
-							i(213846),	-- Guardian Serpent Leggings
-							i(213847),	-- Guardian Serpent Hood
-							i(213848),	-- Guardian Serpent Gloves
-							i(213849),	-- Guardian Serpent Sandals
-							i(213850),	-- Guardian Serpent Robe
-							i(213851),	-- Guardian Serpent Raiment
-							i(213852),	-- Guardian Serpent Treads
-							i(213853),	-- Guardian Serpent Handwraps
-							i(213854),	-- Guardian Serpent Cowl
-							i(213855),	-- Guardian Serpent Pants
-							i(213856),	-- Guardian Serpent Amice
-							i(213857),	-- Guardian Serpent Belt
-							i(213858),	-- Guardian Serpent Cuffs
-							i(213859),	-- Guardian Serpent Wristwraps
-							i(213860),	-- Guardian Serpent Sash
-							i(213861),	-- Guardian Serpent Mantle
-							i(213862),	-- Guardian Serpent Trousers
-							i(213863),	-- Guardian Serpent Crown
-							i(213864),	-- Guardian Serpent Mitts
-							i(213865),	-- Guardian Serpent Slippers
-							i(213866),	-- Guardian Serpent Vestment
 							i(213867),	-- Robe of the Exorcist
 							i(213868),	-- Sandals of the Exorcist
 							i(213869),	-- Gloves of the Exorcist
@@ -566,30 +518,6 @@ root(ROOTS.Unsorted, {
 							i(213914),	-- Vestment of the Ternion Glory
 						}),
 						cl(WARLOCK, {	-- Tier Set
-							i(213915),	-- Sha-Skin Robe
-							i(213916),	-- Sha-Skin Sandals
-							i(213917),	-- Sha-Skin Gloves
-							i(213918),	-- Sha-Skin Hood
-							i(213919),	-- Sha-Skin Leggings
-							i(213920),	-- Sha-Skin Shoulderpads
-							i(213921),	-- Sha-Skin Cord
-							i(213922),	-- Sha-Skin Bracers
-							i(213923),	-- Sha-Skin Cuffs
-							i(213924),	-- Sha-Skin Belt
-							i(213925),	-- Sha-Skin Amice
-							i(213926),	-- Sha-Skin Pants
-							i(213927),	-- Sha-Skin Cowl
-							i(213928),	-- Sha-Skin Handwraps
-							i(213929),	-- Sha-Skin Treads
-							i(213930),	-- Sha-Skin Raiment
-							i(213931),	-- Sha-Skin Vestment
-							i(213932),	-- Sha-Skin Slippers
-							i(213933),	-- Sha-Skin Mitts
-							i(213934),	-- Sha-Skin Crown
-							i(213935),	-- Sha-Skin Trousers
-							i(213936),	-- Sha-Skin Mantle
-							i(213937),	-- Sha-Skin Sash
-							i(213938),	-- Sha-Skin Wristwraps
 							i(213939),	-- Bracers of the Thousandfold Hells
 							i(213940),	-- Cord of the Thousandfold Hells
 							i(213941),	-- Shoulderpads of the Thousandfold Hells
@@ -753,30 +681,6 @@ root(ROOTS.Unsorted, {
 						i(214122),	-- Swampthresher Jerkin
 						i(214123),	-- Swampthresher Wraps
 						cl(DRUID, {	-- Tier Sets
-							i(214142),	-- Eternal Blossom Bracers
-							i(214143),	-- Eternal Blossom Tunic
-							i(214144),	-- Eternal Blossom Boots
-							i(214145),	-- Eternal Blossom Helm
-							i(214146),	-- Eternal Blossom Gloves
-							i(214147),	-- Eternal Blossom Belt
-							i(214148),	-- Eternal Blossom Shoulderpads
-							i(214149),	-- Eternal Blossom Leggings
-							i(214150),	-- Eternal Blossom Legguards
-							i(214151),	-- Eternal Blossom Spaulders
-							i(214152),	-- Eternal Blossom Waistband
-							i(214153),	-- Eternal Blossom Grips
-							i(214154),	-- Eternal Blossom Cover
-							i(214155),	-- Eternal Blossom Footguards
-							i(214156),	-- Eternal Blossom Vest
-							i(214157),	-- Eternal Blossom Bindings
-							i(214158),	-- Eternal Blossom Wraps
-							i(214159),	-- Eternal Blossom Jerkin
-							i(214160),	-- Eternal Blossom Treads
-							i(214161),	-- Eternal Blossom Cap
-							i(214162),	-- Eternal Blossom Hands
-							i(214163),	-- Eternal Blossom Cinch
-							i(214164),	-- Eternal Blossom Mantle
-							i(214165),	-- Eternal Blossom Pants
 							i(214166),	-- Leggings of the Haunted Forest
 							i(214167),	-- Shoulderpads of the Haunted Forest
 							i(214168),	-- Belt of the Haunted Forest
@@ -827,30 +731,6 @@ root(ROOTS.Unsorted, {
 							i(214213),	-- Pants of the Shattered Vale
 						}),
 						cl(MONK, {	-- Tier Sets
-							i(214215),	-- Red Crane Leggings
-							i(214216),	-- Red Crane Shoulderpads
-							i(214217),	-- Red Crane Belt
-							i(214218),	-- Red Crane Gloves
-							i(214219),	-- Red Crane Helm
-							i(214220),	-- Red Crane Boots
-							i(214221),	-- Red Crane Tunic
-							i(214222),	-- Red Crane Bracers
-							i(214243),	-- Red Crane Bindings
-							i(214244),	-- Red Crane Vest
-							i(214245),	-- Red Crane Footguards
-							i(214246),	-- Red Crane Cover
-							i(214247),	-- Red Crane Grips
-							i(214248),	-- Red Crane Waistband
-							i(214249),	-- Red Crane Spaulders
-							i(214250),	-- Red Crane Legguards
-							i(214251),	-- Red Crane Pants
-							i(214252),	-- Red Crane Mantle
-							i(214253),	-- Red Crane Cinch
-							i(214254),	-- Red Crane Handguards
-							i(214255),	-- Red Crane Cap
-							i(214256),	-- Red Crane Treads
-							i(214257),	-- Red Crane Jerkin
-							i(214258),	-- Red Crane Wraps
 							i(214259),	-- Fire-Charm Bracers
 							i(214260),	-- Fire-Charm Tunic
 							i(214261),	-- Fire-Charm Boots
@@ -901,30 +781,6 @@ root(ROOTS.Unsorted, {
 							i(214306),	-- Wraps of Seven Sacred Seals
 						}),
 						cl(ROGUE, {	-- Tier Sets
-							i(214307),	-- Bracers of the Thousandfold Blades
-							i(214308),	-- Tunic of the Thousandfold Blades
-							i(214309),	-- Boots of the Thousandfold Blades
-							i(214310),	-- Helm of the Thousandfold Blades
-							i(214311),	-- Gloves of the Thousandfold Blades
-							i(214312),	-- Belt of the Thousandfold Blades
-							i(214313),	-- Shoulderpads of the Thousandfold Blades
-							i(214314),	-- Leggings of the Thousandfold Blades
-							i(214315),	-- Legguards of the Thousandfold Blades
-							i(214316),	-- Spaulders of the Thousandfold Blades
-							i(214317),	-- Waistband of the Thousandfold Blades
-							i(214318),	-- Grips of the Thousandfold Blades
-							i(214319),	-- Cover of the Thousandfold Blades
-							i(214320),	-- Footguards of the Thousandfold Blades
-							i(214321),	-- Vest of the Thousandfold Blades
-							i(214322),	-- Bindings of the Thousandfold Blades
-							i(214323),	-- Wraps of the Thousandfold Blades
-							i(214324),	-- Jerkin of the Thousandfold Blades
-							i(214325),	-- Treads of the Thousandfold Blades
-							i(214326),	-- Cap of the Thousandfold Blades
-							i(214327),	-- Handguards of the Thousandfold Blades
-							i(214328),	-- Cinch of the Thousandfold Blades
-							i(214329),	-- Mantle of the Thousandfold Blades
-							i(214330),	-- Pants of the Thousandfold Blades
 							i(214331),	-- Nine-Tailed Leggings
 							i(214332),	-- Nine-Tailed Shoulderpads
 							i(214333),	-- Nine-Tailed Belt
@@ -1163,32 +1019,6 @@ root(ROOTS.Unsorted, {
 						i(214735),	-- Jade Guardian's Pauldrons
 						i(214731),	-- Jade Guardian's Sabatons
 						cl(HUNTER, {
-							------ Source: MSV/HOF/TOES ------
-							i(214560),	-- Yaungol Slayer's Armbands
-							i(214572),	-- Yaungol Slayer's Belt
-							i(214575),	-- Yaungol Slayer's Boots
-							i(214577),	-- Yaungol Slayer's Bracers
-							i(214563),	-- Yaungol Slayer's Breastplate
-							i(214555),	-- Yaungol Slayer's Chain
-							i(214559),	-- Yaungol Slayer's Chestguard
-							i(214564),	-- Yaungol Slayer's Footguards
-							i(214573),	-- Yaungol Slayer's Gauntlets
-							i(214567),	-- Yaungol Slayer's Girdle
-							i(214556),	-- Yaungol Slayer's Gloves
-							i(214566),	-- Yaungol Slayer's Grips
-							i(214576),	-- Yaungol Slayer's Hauberk
-							i(214557),	-- Yaungol Slayer's Headguard
-							i(214574),	-- Yaungol Slayer's Helm
-							i(214565),	-- Yaungol Slayer's Helmet
-							i(214570),	-- Yaungol Slayer's Leggings
-							i(214553),	-- Yaungol Slayer's Legguards
-							i(214569),	-- Yaungol Slayer's Legwraps
-							i(214568),	-- Yaungol Slayer's Mantle
-							i(214554),	-- Yaungol Slayer's Pauldrons
-							i(214558),	-- Yaungol Slayer's Sabatons
-							i(214571),	-- Yaungol Slayer's Spaulders
-							i(214562),	-- Yaungol Slayer's Wristguards
-
 							------ Source: TOT ------
 							i(214578),	-- Saurok Stalker's Armbands
 							i(214602),	-- Saurok Stalker's Belt
@@ -1324,30 +1154,6 @@ root(ROOTS.Unsorted, {
 						i(214815),	-- Wallwatcher Pauldrons
 						i(214816),	-- Wallwatcher Legguards
 						cl(DEATHKNIGHT, {	-- Tier Sets
-							i(214817),	-- Legplates of the Lost Catacomb
-							i(214818),	-- Spaulders of the Lost Catacomb
-							i(214819),	-- Greatbelt of the Lost Catacomb
-							i(214820),	-- Handguards of the Lost Catacomb
-							i(214821),	-- Greathelm of the Lost Catacomb
-							i(214822),	-- Warboots of the Lost Catacomb
-							i(214823),	-- Vambraces of the Lost Catacomb
-							i(214824),	-- Battleplate of the Lost Catacomb
-							i(214825),	-- Chestguard of the Lost Catacomb
-							i(214826),	-- Armguards of the Lost Catacomb
-							i(214827),	-- Greatboots of the Lost Catacomb
-							i(214828),	-- Warhelm of the Lost Catacomb
-							i(214829),	-- Grasp of the Lost Catacomb
-							i(214830),	-- Waistguard of the Lost Catacomb
-							i(214831),	-- Shoulderguards of the Lost Catacomb
-							i(214832),	-- Greaves of the Lost Catacomb
-							i(214833),	-- Legguards of the Lost Catacomb
-							i(214834),	-- Pauldrons of the Lost Catacomb
-							i(214835),	-- Girdle of the Lost Catacomb
-							i(214836),	-- Gauntlets of the Lost Catacomb
-							i(214837),	-- Helm of the Lost Catacomb
-							i(214838),	-- Sabatons of the Lost Catacomb
-							i(214839),	-- Bracers of the Lost Catacomb
-							i(214840),	-- Breastplate of the Lost Catacomb
 							i(214841),	-- Battleplate of the All-Consuming Maw
 							i(214842),	-- Vambraces of the All-Consuming Maw
 							i(214843),	-- Warboots of the All-Consuming Maw
@@ -1398,30 +1204,6 @@ root(ROOTS.Unsorted, {
 							i(214888),	-- Breastplate of Cyclopean Dread
 						}),
 						cl(PALADIN, {	-- Tier Sets
-							i(214889),	-- White Tiger Battleplate
-							i(214890),	-- White Tiger Vambraces
-							i(214891),	-- White Tiger Warboots
-							i(214892),	-- White Tiger Greathelm
-							i(214893),	-- White Tiger Handguards
-							i(214894),	-- White Tiger Greatbelt
-							i(214895),	-- White Tiger Spaulders
-							i(214896),	-- White Tiger Legplates
-							i(214897),	-- White Tiger Greaves
-							i(214898),	-- White Tiger Shoulderguards
-							i(214899),	-- White Tiger Waistguard
-							i(214900),	-- White Tiger Grasp
-							i(214901),	-- White Tiger Warhelm
-							i(214902),	-- White Tiger Greatboots
-							i(214903),	-- White Tiger Armguards
-							i(214904),	-- White Tiger Chestguard
-							i(214905),	-- White Tiger Sabatons
-							i(214906),	-- White Tiger Bracers
-							i(214907),	-- White Tiger Legguards
-							i(214908),	-- White Tiger Helm
-							i(214909),	-- White Tiger Breastplate
-							i(214910),	-- White Tiger Gauntlets
-							i(214911),	-- White Tiger Pauldrons
-							i(214912),	-- White Tiger Girdle
 							i(214913),	-- Lightning Emperor's Greatbelt
 							i(214914),	-- Lightning Emperor's Spaulders
 							i(214915),	-- Lightning Emperor's Handguards
@@ -1472,30 +1254,9 @@ root(ROOTS.Unsorted, {
 							i(214960),	-- Girdle of Winged Triumph
 						}),
 						cl(WARRIOR, {
-							i(214961),	-- Greatbelt of Resounding Rings
-							i(214962),	-- Spaulders of Resounding Rings
-							i(214963),	-- Handguards of Resounding Rings
-							i(214964),	-- Battleplate of Resounding Rings
-							i(214965),	-- Greathelm of Resounding Rings
-							i(214966),	-- Legplates of Resounding Rings
-							i(214967),	-- Vambraces of Resounding Rings
-							i(214968),	-- Warboots of Resounding Rings
-							i(214969),	-- Greatboots of Resounding Rings
-							i(214970),	-- Armguards of Resounding Rings
-							i(214971),	-- Greaves of Resounding Rings
-							i(214972),	-- Warhelm of Resounding Rings
-							i(214973),	-- Chestguard of Resounding Rings
-							i(214974),	-- Grasp of Resounding Rings
-							i(214975),	-- Shoulderguards of Resounding Rings
-							i(214976),	-- Waistguard of Resounding Rings
-							i(214977),	-- Girdle of Resounding Rings
-							i(214978),	-- Pauldrons of Resounding Rings
-							i(214979),	-- Crushers of Resounding Rings
-							i(214980),	-- Breastplate of Resounding Rings
-							i(214981),	-- Helm of Resounding Rings
-							i(214982),	-- Legguards of Resounding Rings
-							i(214983),	-- Bracers of Resounding Rings
-							i(214984),	-- Sabatons of Resounding Rings
+							------ Source: MSV/HOF/TOES ------
+							-- Probably NYI set?
+							i(215341),	-- Ensemble: Battleplate of Resounding Rings
 							i(214985),	-- Warboots of Resounding Rings
 							i(214986),	-- Vambraces of Resounding Rings
 							i(214987),	-- Legplates of Resounding Rings
@@ -1504,6 +1265,7 @@ root(ROOTS.Unsorted, {
 							i(214990),	-- Gauntlets of Resounding Rings
 							i(214991),	-- Spaulders of Resounding Rings
 							i(214992),	-- Greatbelt of Resounding Rings
+							--
 							i(214993),	-- Waistguard of the Last Mogu
 							i(214994),	-- Shoulderguards of the Last Mogu
 							i(214995),	-- Handguards of the Last Mogu
@@ -1601,9 +1363,6 @@ root(ROOTS.Unsorted, {
 						i(215282),	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
 						i(215283),	-- Ensemble: Dawnwatcher's Scale Armor (Purple)
 						i(215284),	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
-						i(215288),	-- Ensemble: Yaungol Slayer Battlegear
-						i(215289),	-- Ensemble: Yaungol Slayer Battlegear
-						i(215290),	-- Ensemble: Yaungol Slayer Battlegear
 						i(215291),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215292),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215293),	-- Ensemble: Battlegear of the Saurok Stalker
@@ -1624,27 +1383,18 @@ root(ROOTS.Unsorted, {
 					i(215186),	-- Ensemble: Mistwalker's Vestments
 					i(215187),	-- Ensemble: Mistwalker's Vestments
 					i(215188),	-- Ensemble: Mistwalker's Vestments
-					i(215189),	-- Ensemble: Regalia of the Burning Scroll
-					i(215190),	-- Ensemble: Regalia of the Burning Scroll
-					i(215191),	-- Ensemble: Regalia of the Burning Scroll
 					i(215192),	-- Ensemble: Regalia of the Chromatic Hydra
 					i(215193),	-- Ensemble: Regalia of the Chromatic Hydra
 					i(215194),	-- Ensemble: Regalia of the Chromatic Hydra
 					i(215195),	-- Ensemble: Chronomancer Regalia
 					i(215196),	-- Ensemble: Chronomancer Regalia
 					i(215197),	-- Ensemble: Chronomancer Regalia
-					i(215198),	-- Ensemble: Guardian Serpent Regalia
-					i(215199),	-- Ensemble: Guardian Serpent Regalia
-					i(215200),	-- Ensemble: Guardian Serpent Regalia
 					i(215201),	-- Ensemble: Regalia of the Exorcist
 					i(215202),	-- Ensemble: Regalia of the Exorcist
 					i(215203),	-- Ensemble: Regalia of the Exorcist
 					i(215204),	-- Ensemble: Regalia of Ternion Glory
 					i(215205),	-- Ensemble: Regalia of Ternion Glory
 					i(215206),	-- Ensemble: Regalia of Ternion Glory
-					i(215207),	-- Ensemble: Sha Skin Regalia
-					i(215208),	-- Ensemble: Sha Skin Regalia
-					i(215209),	-- Ensemble: Sha Skin Regalia
 					i(215210),	-- Ensemble: Regalia of the Thousandfold Hells
 					i(215211),	-- Ensemble: Regalia of the Thousandfold Hells
 					i(215212),	-- Ensemble: Regalia of the Thousandfold Hells
@@ -1666,27 +1416,18 @@ root(ROOTS.Unsorted, {
 					i(215230),	-- Ensemble: Mistveil Leathers
 					i(215231),	-- Ensemble: Mistveil Leathers
 					i(215232),	-- Ensemble: Mistveil Leathers
-					i(215241),	-- Ensemble: Vestments of the Eternal Blossom
-					i(215242),	-- Ensemble: Vestments of the Eternal Blossom
-					i(215243),	-- Ensemble: Vestments of the Eternal Blossom
 					i(215244),	-- Ensemble: Vestments of the Haunted Forest
 					i(215245),	-- Ensemble: Vestments of the Haunted Forest
 					i(215246),	-- Ensemble: Vestments of the Haunted Forest
 					i(215247),	-- Ensemble: Vestments of the Shattered Vale
 					i(215248),	-- Ensemble: Vestments of the Shattered Vale
 					i(215249),	-- Ensemble: Vestments of the Shattered Vale
-					i(215250),	-- Ensemble: Vestments of the Red Crane
-					i(215251),	-- Ensemble: Vestments of the Red Crane
-					i(215252),	-- Ensemble: Vestments of the Red Crane
 					i(215253),	-- Ensemble: Fire-Charm Vestments
 					i(215254),	-- Ensemble: Fire-Charm Vestments
 					i(215255),	-- Ensemble: Fire-Charm Vestments
 					i(215256),	-- Ensemble: Vestments of the Seven Sacred Seals
 					i(215258),	-- Ensemble: Vestments of the Seven Sacred Seals
 					i(215259),	-- Ensemble: Vestments of the Seven Sacred Seals
-					i(215260),	-- Ensemble: Battlegear of the Thousandfold Blades
-					i(215261),	-- Ensemble: Battlegear of the Thousandfold Blades
-					i(215262),	-- Ensemble: Battlegear of the Thousandfold Blades
 					i(215263),	-- Ensemble: Nine-Tail Battlegear
 					i(215264),	-- Ensemble: Nine-Tail Battlegear
 					i(215265),	-- Ensemble: Nine-Tail Battlegear
@@ -1706,28 +1447,18 @@ root(ROOTS.Unsorted, {
 					i(215317),	-- Ensemble: Shan'ze Warplate
 					i(215318),	-- Ensemble: Shan'ze Warplate
 					i(215319),	-- Ensemble: Shan'ze Warplate
-					i(215320),	-- Ensemble: Plate of the Lost Catacomb
-					i(215321),	-- Ensemble: Plate of the Lost Catacomb
-					i(215322),	-- Ensemble: Plate of the Lost Catacomb
 					i(215323),	-- Ensemble: Battleplate of the All-Consuming Maw
 					i(215324),	-- Ensemble: Battleplate of the All-Consuming Maw
 					i(215325),	-- Ensemble: Battleplate of the All-Consuming Maw
 					i(215326),	-- Ensemble: Battleplate of Cyclopean Dread
 					i(215327),	-- Ensemble: Battleplate of Cyclopean Dread
 					i(215328),	-- Ensemble: Battleplate of Cyclopean Dread
-					i(215329),	-- Ensemble: White Tiger Battlegear
-					i(215330),	-- Ensemble: White Tiger Battlegear
-					i(215331),	-- Ensemble: White Tiger Battlegear
 					i(215332),	-- Ensemble: Battlegear of the Lightning Emperor
 					i(215333),	-- Ensemble: Battlegear of the Lightning Emperor
 					i(215334),	-- Ensemble: Battlegear of the Lightning Emperor
 					i(215335),	-- Ensemble: Vestments of Winged Triumph
 					i(215336),	-- Ensemble: Vestments of Winged Triumph
 					i(215337),	-- Ensemble: Vestments of Winged Triumph
-					i(215338),	-- Ensemble: Battleplate of Resounding Rings
-					i(215339),	-- Ensemble: Battleplate of Resounding Rings
-					i(215340),	-- Ensemble: Battleplate of Resounding Rings
-					i(215341),	-- Ensemble: Battleplate of Resounding Rings
 					i(215342),	-- Ensemble: Battleplate of the Last Mogu
 					i(215343),	-- Ensemble: Battleplate of the Last Mogu
 					i(215344),	-- Ensemble: Battleplate of the Last Mogu
