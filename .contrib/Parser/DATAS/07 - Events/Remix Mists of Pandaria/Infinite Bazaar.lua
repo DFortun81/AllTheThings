@@ -319,7 +319,48 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(MAIL, {
-
+					i(215272, {	-- Ensemble: Mogu Lord's Regalia (Black)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214408),	-- Stormbrew Belt
+							i(214405),	-- Stormbrew Boots
+							i(214403),	-- Stormbrew Bracers
+							i(214407),	-- Stormbrew Gauntlets
+							i(214404),	-- Stormbrew Hauberk
+							i(214406),	-- Stormbrew Helm
+							i(214410),	-- Stormbrew Leggings
+							i(214409),	-- Stormbrew Spaulders
+						},
+					}),
+					i(215273, {	-- Ensemble: Mogu Lord's Regalia (Gold)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(214418),	-- Mogu Lord's Armbands
+							i(214413),	-- Mogu Lord's Chain
+							i(214417),	-- Mogu Lord's Chestguard
+							i(214414),	-- Mogu Lord's Gloves
+							i(214415),	-- Mogu Lord's Headguard
+							i(214411),	-- Mogu Lord's Legguards
+							i(214412),	-- Mogu Lord's Pauldrons
+							i(214416),	-- Mogu Lord's Sabatons
+						},
+					}),
+					i(215274, {	-- Ensemble: Mogu Lord's Regalia (Jade)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(214420),	-- Waterburst Breastplate
+							i(214421),	-- Waterburst Footguards
+							i(214424),	-- Waterburst Girdle
+							i(214423),	-- Waterburst Grips
+							i(214422),	-- Waterburst Helmet
+							i(214426),	-- Waterburst Legwraps
+							i(214425),	-- Waterburst Mantle
+							i(214419),	-- Waterburst Wristguards
+						},
+					}),
 				}),
 				filter(PLATE, {
 
@@ -1489,6 +1530,162 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214081),	-- Farwatch Waistband
 							i(214082),	-- Farwatch Spaulders
 							i(214083),	-- Farwatch Legguards
+						},
+					}),
+				}),
+				filter(MAIL, {
+					i(215278, {	-- Ensemble: Trailseeker's Laminar Armor (Black)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214460),	-- Windreaver's Belt
+							i(214457),	-- Windreaver's Boots
+							i(214454),	-- Windreaver's Bracers
+							i(214459),	-- Windreaver's Gauntlets
+							i(214456),	-- Windreaver's Hauberk
+							i(214458),	-- Windreaver's Helm
+							i(214463),	-- Windreaver's Leggings
+							i(214461),	-- Windreaver's Spaulders
+						},
+					}),
+					i(215279, {	-- Ensemble: Trailseeker's Laminar Armor (Gold)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214476),	-- Trailseeker's Armbands
+							i(214470),	-- Trailseeker's Chain
+							i(214475),	-- Trailseeker's Chestguard
+							i(214471),	-- Trailseeker's Gloves
+							i(214472),	-- Trailseeker's Headguard
+							i(214467),	-- Trailseeker's Legguards
+							i(214468),	-- Trailseeker's Pauldrons
+							i(214474),	-- Trailseeker's Sabatons
+						},
+					}),
+					i(215280, {	-- Ensemble: Trailseeker's Laminar Armor (Green)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214480),	-- Peakscaler Breastplate
+							i(214481),	-- Peakscaler Footguards
+							i(214484),	-- Peakscaler Girdle
+							i(214483),	-- Peakscaler Grips
+							i(214482),	-- Peakscaler Helmet
+							i(214486),	-- Peakscaler Legwraps
+							i(214485),	-- Peakscaler Mantle
+							i(214479),	-- Peakscaler Wristguards
+						},
+					}),
+					i(215281, {	-- Ensemble: Trailseeker's Laminar Armor (White)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214492),	-- Jade Guardian's Belt
+							i(214496),	-- Jade Guardian's Boots
+							i(214498),	-- Jade Guardian's Bracers
+							i(214493),	-- Jade Guardian's Gauntlets
+							i(214497),	-- Jade Guardian's Hauberk
+							i(214495),	-- Jade Guardian's Helm
+							i(214489),	-- Jade Guardian's Leggings
+							i(214491),	-- Jade Guardian's Spaulders
+						},
+					}),
+					i(215282, {	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214507),	-- Dawnwatcher's Armbands
+							i(214513),	-- Dawnwatcher's Chain
+							i(214508),	-- Dawnwatcher's Chestguard
+							i(214511),	-- Dawnwatcher's Gloves
+							i(214510),	-- Dawnwatcher's Headguard
+							i(214515),	-- Dawnwatcher's Legguards
+							i(214514),	-- Dawnwatcher's Pauldrons
+							i(214509),	-- Dawnwatcher's Sabatons
+						},
+					}),
+					i(215283, {	-- Ensemble: Dawnwatcher's Scale Armor (Purple)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214525),	-- Streamspeaker Breastplate
+							i(214524),	-- Streamspeaker Footguards
+							i(214521),	-- Streamspeaker Girdle
+							i(214522),	-- Streamspeaker Grips
+							i(214523),	-- Streamspeaker Helmet
+							i(214519),	-- Streamspeaker Legwraps
+							i(214520),	-- Streamspeaker Mantle
+							i(214526),	-- Streamspeaker Wristguards
+						},
+					}),
+					i(215284, {	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214532),	-- Reedstalker Belt
+							i(214529),	-- Reedstalker Boots
+							i(214527),	-- Reedstalker Bracers
+							i(214531),	-- Reedstalker Gauntlets
+							i(214528),	-- Reedstalker Hauberk
+							i(214530),	-- Reedstalker Helm
+							i(214534),	-- Reedstalker Leggings
+							i(214533),	-- Reedstalker Spaulders
+						},
+					}),
+					i(215306, {	-- Ensemble: Jade Guardian's Regalia (Blue)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214712),	-- Nightwatcher's Armbands
+							i(214707),	-- Nightwatcher's Chain
+							i(214711),	-- Nightwatcher's Chestguard
+							i(214708),	-- Nightwatcher's Gloves
+							i(214709),	-- Nightwatcher's Headguard
+							i(214705),	-- Nightwatcher's Legguards
+							i(214706),	-- Nightwatcher's Pauldrons
+							i(214710),	-- Nightwatcher's Sabatons
+						},
+					}),
+					i(215307, {	-- Ensemble: Jade Guardian's Regalia (Brown)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214714),	-- Stonefang Breastplate
+							i(214715),	-- Stonefang Footguards
+							i(214718),	-- Stonefang Girdle
+							i(214717),	-- Stonefang Grips
+							i(214716),	-- Stonefang Helmet
+							i(214720),	-- Stonefang Legwraps
+							i(214719),	-- Stonefang Mantle
+							i(214713),	-- Stonefang Wristguards
+						},
+					}),
+					i(215308, {	-- Ensemble: Jade Guardian's Regalia (Red)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214723),	-- Crimsonscale Belt
+							i(214726),	-- Crimsonscale Boots
+							i(214728),	-- Crimsonscale Bracers
+							i(214724),	-- Crimsonscale Gauntlets
+							i(214727),	-- Crimsonscale Hauberk
+							i(214725),	-- Crimsonscale Helm
+							i(214721),	-- Crimsonscale Leggings
+							i(214722),	-- Crimsonscale Spaulders
+						},
+					}),
+					i(215309, {	-- Ensemble: Jade Guardian's Regalia (Yellow)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214729),	-- Jade Guardian's Armbands
+							i(214730),	-- Jade Guardian's Breastplate
+							i(214734),	-- Jade Guardian's Chain
+							i(214733),	-- Jade Guardian's Gloves
+							i(214732),	-- Jade Guardian's Helmet
+							i(214736),	-- Jade Guardian's Legguards
+							i(214735),	-- Jade Guardian's Pauldrons
+							i(214731),	-- Jade Guardian's Sabatons
 						},
 					}),
 				}),

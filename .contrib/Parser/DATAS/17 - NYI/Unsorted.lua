@@ -762,19 +762,7 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Mogu Lord's Regalia (Black) ------
-						------ Source: Scenario ------
-						i(214408),	-- Stormbrew Belt
-						i(214405),	-- Stormbrew Boots
-						i(214403),	-- Stormbrew Bracers
-						i(214407),	-- Stormbrew Gauntlets
-						i(214404),	-- Stormbrew Hauberk
-						i(214406),	-- Stormbrew Helm
-						i(214410),	-- Stormbrew Leggings
-						i(214409),	-- Stormbrew Spaulders
-
 						------ Mogu Lord's Regalia (Gold) ------
-						------ Source: Dungeons ------
 						i(214418),	-- Mogu Lord's Armbands
 						i(214413),	-- Mogu Lord's Chain
 						i(214417),	-- Mogu Lord's Chestguard
@@ -785,7 +773,6 @@ root(ROOTS.Unsorted, {
 						i(214416),	-- Mogu Lord's Sabatons
 
 						------ Mogu Lord's Regalia (Jade) ------
-						------ Source: Dungeons ------
 						i(214420),	-- Waterburst Breastplate
 						i(214421),	-- Waterburst Footguards
 						i(214424),	-- Waterburst Girdle
@@ -795,19 +782,7 @@ root(ROOTS.Unsorted, {
 						i(214425),	-- Waterburst Mantle
 						i(214419),	-- Waterburst Wristguards
 
-						------ Trailseeker's Laminar Armor (Black) ------
-						------ Source: Kun-Lai Summit ------
-						i(214460),	-- Windreaver's Belt
-						i(214457),	-- Windreaver's Boots
-						i(214454),	-- Windreaver's Bracers
-						i(214459),	-- Windreaver's Gauntlets
-						i(214456),	-- Windreaver's Hauberk
-						i(214458),	-- Windreaver's Helm
-						i(214463),	-- Windreaver's Leggings
-						i(214461),	-- Windreaver's Spaulders
-
 						------ Trailseeker's Laminar Armor (Gold) ------
-						------ Source: Kun-Lai Summit ------
 						i(214476),	-- Trailseeker's Armbands
 						i(214470),	-- Trailseeker's Chain
 						i(214475),	-- Trailseeker's Chestguard
@@ -818,7 +793,6 @@ root(ROOTS.Unsorted, {
 						i(214474),	-- Trailseeker's Sabatons
 
 						------ Trailseeker's Laminar Armor (Green) ------
-						------ Source: Townlong Steppe/Dread Waste ------
 						i(214480),	-- Peakscaler Breastplate
 						i(214481),	-- Peakscaler Footguards
 						i(214484),	-- Peakscaler Girdle
@@ -829,7 +803,6 @@ root(ROOTS.Unsorted, {
 						i(214479),	-- Peakscaler Wristguards
 
 						------ Trailseeker's Laminar Armor (White) ------
-						------ Source: Vale ------
 						i(214492),	-- Jade Guardian's Belt
 						i(214496),	-- Jade Guardian's Boots
 						i(214498),	-- Jade Guardian's Bracers
@@ -840,7 +813,6 @@ root(ROOTS.Unsorted, {
 						i(214491),	-- Jade Guardian's Spaulders
 
 						------ Dawnwatcher's Scale Armor (Blue) ------
-						------ Source: The Jade Forest ------
 						i(214507),	-- Dawnwatcher's Armbands
 						i(214513),	-- Dawnwatcher's Chain
 						i(214508),	-- Dawnwatcher's Chestguard
@@ -851,7 +823,6 @@ root(ROOTS.Unsorted, {
 						i(214509),	-- Dawnwatcher's Sabatons
 
 						------ Dawnwatcher's Scale Armor (Purple) ------
-						------ Source: The Jade Forest ------
 						i(214525),	-- Streamspeaker Breastplate
 						i(214524),	-- Streamspeaker Footguards
 						i(214521),	-- Streamspeaker Girdle
@@ -862,7 +833,6 @@ root(ROOTS.Unsorted, {
 						i(214526),	-- Streamspeaker Wristguards
 
 						------ Dawnwatcher's Scale Armor (Blue) ------
-						------ Source: Krasarang/ Valley ------
 						i(214532),	-- Reedstalker Belt
 						i(214529),	-- Reedstalker Boots
 						i(214527),	-- Reedstalker Bracers
@@ -873,7 +843,6 @@ root(ROOTS.Unsorted, {
 						i(214533),	-- Reedstalker Spaulders
 
 						------ Jade Guardian's Regalia (Blue) ------
-						------ Source: All Over ------
 						i(214712),	-- Nightwatcher's Armbands
 						i(214707),	-- Nightwatcher's Chain
 						i(214711),	-- Nightwatcher's Chestguard
@@ -884,7 +853,6 @@ root(ROOTS.Unsorted, {
 						i(214710),	-- Nightwatcher's Sabatons
 
 						------ Jade Guardian's Regalia (Brown) ------
-						------ Source: All Over ------
 						i(214714),	-- Stonefang Breastplate
 						i(214715),	-- Stonefang Footguards
 						i(214718),	-- Stonefang Girdle
@@ -895,7 +863,6 @@ root(ROOTS.Unsorted, {
 						i(214713),	-- Stonefang Wristguards
 
 						------ Jade Guardian's Regalia (Red) ------
-						------ Source: Timeless Isle ------
 						i(214723),	-- Crimsonscale Belt
 						i(214726),	-- Crimsonscale Boots
 						i(214728),	-- Crimsonscale Bracers
@@ -906,7 +873,6 @@ root(ROOTS.Unsorted, {
 						i(214722),	-- Crimsonscale Spaulders
 
 						------ Jade Guardian's Regalia (Yellow) ------
-						------ Source: Timeless Isle ------
 						i(214729),	-- Jade Guardian's Armbands
 						i(214730),	-- Jade Guardian's Breastplate
 						i(214734),	-- Jade Guardian's Chain
@@ -1282,26 +1248,16 @@ root(ROOTS.Unsorted, {
 				filter(COSMETIC, {
 					filter(MAIL, {
 						-- Its unknown if these will reward all sourceIDs connected to each set...
-						i(215272),	-- Ensemble: Mogu Lord's Regalia (Black)
-						i(215273),	-- Ensemble: Mogu Lord's Regalia (Gold)
-						i(215274),	-- Ensemble: Mogu Lord's Regalia (Jade)
-						i(215278),	-- Ensemble: Trailseeker's Laminar Armor (Black)
-						i(215279),	-- Ensemble: Trailseeker's Laminar Armor (Gold)
-						i(215280),	-- Ensemble: Trailseeker's Laminar Armor (Green)
-						i(215281),	-- Ensemble: Trailseeker's Laminar Armor (White)
-						i(215282),	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
-						i(215283),	-- Ensemble: Dawnwatcher's Scale Armor (Purple)
-						i(215284),	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
+
+
+
 						i(215291),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215292),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215293),	-- Ensemble: Battlegear of the Saurok Stalker
 						i(215294),	-- Ensemble: Battlegear of the Unblinking Vigil
 						i(215295),	-- Ensemble: Battlegear of the Unblinking Vigil
 						i(215296),	-- Ensemble: Battlegear of the Unblinking Vigil
-						i(215306),	-- Ensemble: Jade Guardian's Regalia (Blue)
-						i(215307),	-- Ensemble: Jade Guardian's Regalia (Brown)
-						i(215308),	-- Ensemble: Jade Guardian's Regalia (Red)
-						i(215309),	-- Ensemble: Jade Guardian's Regalia (Yellow)
+
 					}),
 					i(215192),	-- Ensemble: Regalia of the Chromatic Hydra
 					i(215193),	-- Ensemble: Regalia of the Chromatic Hydra
