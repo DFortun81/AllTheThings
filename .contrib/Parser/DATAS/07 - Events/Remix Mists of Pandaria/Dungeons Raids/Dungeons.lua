@@ -30,25 +30,49 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		}),
 		n(ARMOR, {
-			filter(CLOTH, {
-				i(213644),	-- Breezebinder's Bracers
-				i(213643),	-- Breezebinder's Cord
-				i(213638),	-- Breezebinder's Gloves
-				i(213639),	-- Breezebinder's Hood
-				i(213640),	-- Breezebinder's Leggings
-				i(213636),	-- Breezebinder's Robe
-				i(213637),	-- Breezebinder's Sandals
-				i(213642),	-- Breezebinder's Shoulderpads
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				filter(CLOTH, {
+					i(213644),	-- Breezebinder's Bracers
+					i(213643),	-- Breezebinder's Cord
+					i(213638),	-- Breezebinder's Gloves
+					i(213639),	-- Breezebinder's Hood
+					i(213640),	-- Breezebinder's Leggings
+					i(213636),	-- Breezebinder's Robe
+					i(213637),	-- Breezebinder's Sandals
+					i(213642),	-- Breezebinder's Shoulderpads
+				}),
+				filter(LEATHER, {
+					i(214033),	-- Nimbletoe Belt
+					i(214028),	-- Nimbletoe Boots
+					i(214034),	-- Nimbletoe Bracers
+					i(214029),	-- Nimbletoe Gloves
+					i(214030),	-- Nimbletoe Helm
+					i(214031),	-- Nimbletoe Leggings
+					i(214032),	-- Nimbletoe Shoulderpads
+					i(214027),	-- Nimbletoe Tunic
+				}),
+				filter(MAIL, {
+					i(214408),	-- Stormbrew Belt
+					i(214405),	-- Stormbrew Boots
+					i(214403),	-- Stormbrew Bracers
+					i(214407),	-- Stormbrew Gauntlets
+					i(214404),	-- Stormbrew Hauberk
+					i(214406),	-- Stormbrew Helm
+					i(214410),	-- Stormbrew Leggings
+					i(214409),	-- Stormbrew Spaulders
+				}),
 			}),
-			filter(MAIL, {
-				i(214408),	-- Stormbrew Belt
-				i(214405),	-- Stormbrew Boots
-				i(214403),	-- Stormbrew Bracers
-				i(214407),	-- Stormbrew Gauntlets
-				i(214404),	-- Stormbrew Hauberk
-				i(214406),	-- Stormbrew Helm
-				i(214410),	-- Stormbrew Leggings
-				i(214409),	-- Stormbrew Spaulders
+			d(DIFFICULTY.DUNGEON.HEROIC, {
+				filter(LEATHER, {
+					i(214035),	-- Mogubreaker Bindings
+					i(214039),	-- Mogubreaker Cover
+					i(214041),	-- Mogubreaker Footguards
+					i(214040),	-- Mogubreaker Grips
+					i(214038),	-- Mogubreaker Legguards
+					i(214037),	-- Mogubreaker Spaulders
+					i(214042),	-- Mogubreaker Vest
+					i(214036),	-- Mogubreaker Waistband
+				}),
 			}),
 		}),
 		inst(303, {	-- Gate of the Setting Sun

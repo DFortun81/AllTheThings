@@ -67,7 +67,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214387),	-- Snowdrift Bindings
+					i(214390),	-- Snowdrift Cover
+					i(214389),	-- Snowdrift Footguards
+					i(214391),	-- Snowdrift Grips
+					i(214394),	-- Snowdrift Legguards
+					i(214393),	-- Snowdrift Spaulders
+					i(214388),	-- Snowdrift Vest
+					i(214392),	-- Snowdrift Waistband
+					i(214399),	-- Wildblood Cap
+					i(214397),	-- Wildblood Cinch
+					i(214398),	-- Wildblood Handguards
+					i(214401),	-- Wildblood Jerkin
+					i(214396),	-- Wildblood Mantle
+					i(214395),	-- Wildblood Pants
+					i(214400),	-- Wildblood Treads
+					i(214402),	-- Wildblood Wraps
+				}),
 			}),
 		},
 	}),

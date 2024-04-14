@@ -20,7 +20,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214086),	-- Springrain Belt
+					i(214089),	-- Springrain Boots
+					i(214091),	-- Springrain Bracers
+					i(214087),	-- Springrain Gloves
+					i(214088),	-- Springrain Helm
+					i(214084),	-- Springrain Leggings
+					i(214085),	-- Springrain Shoulderpads
+					i(214090),	-- Springrain Tunic
+				}),
 			}),
 		},
 	}),

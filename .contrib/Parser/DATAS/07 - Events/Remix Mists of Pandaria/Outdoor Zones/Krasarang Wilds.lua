@@ -160,7 +160,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214069),	-- Thunderpaw Belt
+					i(214074),	-- Thunderpaw Boots
+					i(214068),	-- Thunderpaw Bracers
+					i(214073),	-- Thunderpaw Gloves
+					i(214072),	-- Thunderpaw Helm
+					i(214071),	-- Thunderpaw Leggings
+					i(214070),	-- Thunderpaw Shoulderpads
+					i(214075),	-- Thunderpaw Tunic
+				}),
 			}),
 		},
 	}),

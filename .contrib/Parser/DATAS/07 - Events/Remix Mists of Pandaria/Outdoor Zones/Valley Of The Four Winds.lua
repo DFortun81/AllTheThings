@@ -19,7 +19,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214104),	-- Mistdancer Cap
+					i(214102),	-- Mistdancer Cinch
+					i(214103),	-- Mistdancer Handguards
+					i(214106),	-- Mistdancer Jerkin
+					i(214101),	-- Mistdancer Mantle
+					i(214100),	-- Mistdancer Pants
+					i(214105),	-- Mistdancer Treads
+					i(214107),	-- Mistdancer Wraps
+				}),
 			}),
 		},
 	}),

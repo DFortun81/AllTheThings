@@ -261,7 +261,62 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(LEATHER, {
-
+					i(215221, {	-- Ensemble: Mogubreaker Battlegear (Black)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(214033),	-- Nimbletoe Belt
+							i(214028),	-- Nimbletoe Boots
+							i(214034),	-- Nimbletoe Bracers
+							i(214029),	-- Nimbletoe Gloves
+							i(214030),	-- Nimbletoe Helm
+							i(214031),	-- Nimbletoe Leggings
+							i(214032),	-- Nimbletoe Shoulderpads
+							i(214027),	-- Nimbletoe Tunic
+						},
+					}),
+					i(215222, {	-- Ensemble: Mogubreaker Battlegear (Original)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- Contains Removed!
+							i(214035),	-- Mogubreaker Bindings
+							i(214039),	-- Mogubreaker Cover
+							i(214041),	-- Mogubreaker Footguards
+							i(214040),	-- Mogubreaker Grips
+							i(214038),	-- Mogubreaker Legguards
+							i(214037),	-- Mogubreaker Spaulders
+							i(214042),	-- Mogubreaker Vest
+							i(214036),	-- Mogubreaker Waistband
+						},
+					}),
+					i(215223, {	-- Ensemble: Mogubreaker Battlegear (Red)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214047),	-- Tidesplitter Cap
+							i(214050),	-- Tidesplitter Cinch
+							i(214046),	-- Tidesplitter Handguards
+							i(214044),	-- Tidesplitter Jerkin
+							i(214049),	-- Tidesplitter Mantle
+							i(214048),	-- Tidesplitter Pants
+							i(214045),	-- Tidesplitter Treads
+							i(214051),	-- Tidesplitter Wraps
+						},
+					}),
+					i(215224, {	-- Ensemble: Mogubreaker Battlegear (Yellow)
+						["cost"] = {{"c", BRONZE, 2500}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214053),	-- Brushstalker Belt
+							i(214058),	-- Brushstalker Boots
+							i(214052),	-- Brushstalker Bracers
+							i(214057),	-- Brushstalker Gloves
+							i(214056),	-- Brushstalker Helm
+							i(214055),	-- Brushstalker Leggings
+							i(214054),	-- Brushstalker Shoulderpads
+							i(214059),	-- Brushstalker Tunic
+						},
+					}),
 				}),
 				filter(MAIL, {
 
@@ -1152,49 +1207,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				filter(CLOTH, {
-					i(215183, {	-- Ensemble: Spirit-Waker's Vestments (Blue)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- TODO: Symlink
-							i(213668),	-- Spirit-Waker's Bracers
-							i(213667),	-- Spirit-Waker's Cord
-							i(213663),	-- Spirit-Waker's Gloves
-							i(213664),	-- Spirit-Waker's Hood
-							i(213665),	-- Spirit-Waker's Leggings
-							i(213661),	-- Spirit-Waker's Robe
-							i(213662),	-- Spirit-Waker's Sandals
-							i(213666),	-- Spirit-Waker's Shoulderpads
-						},
-					}),
-
-					i(215184, {	-- Ensemble: Spirit-Waker's Vestments (Green)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(213671),	-- Mindbender Amice
-							i(213670),	-- Mindbender Belt
-							i(213673),	-- Mindbender Cowl
-							i(213669),	-- Mindbender Cuffs
-							i(213674),	-- Mindbender Handwraps
-							i(213672),	-- Mindbender Pants
-							i(213676),	-- Mindbender Raiment
-							i(213675),	-- Mindbender Treads
-						},
-					}),
-					i(215185, {	-- Ensemble: Spirit-Waker's Vestments
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(213680),	-- Scrollkeeper Crown
-							i(213682),	-- Scrollkeeper Mantle
-							i(213679),	-- Scrollkeeper Mitts
-							i(213683),	-- Scrollkeeper Sash
-							i(213678),	-- Scrollkeeper Slippers
-							i(213681),	-- Scrollkeeper Trousers
-							i(213677),	-- Scrollkeeper Vestment
-							i(213684),	-- Scrollkeeper Wristwraps
-						},
-					}),
 					i(215186, {	-- Ensemble: Mistwalker's Vestments (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
@@ -1223,7 +1235,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213691),	-- Mistwalker's Treads
 						},
 					}),
-					i(215188, {	-- Ensemble: Mistwalker's Vestments
+					i(215188, {	-- Ensemble: Mistwalker's Vestments (White)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
 						-- Contains Removed!
@@ -1235,6 +1247,48 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213705),	-- Shaded Wood Trousers
 							i(213710),	-- Shaded Wood Vestment
 							i(213702),	-- Shaded Wood Wristwraps
+						},
+					}),
+					i(215183, {	-- Ensemble: Spirit-Waker's Vestments (Blue)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(213668),	-- Spirit-Waker's Bracers
+							i(213667),	-- Spirit-Waker's Cord
+							i(213663),	-- Spirit-Waker's Gloves
+							i(213664),	-- Spirit-Waker's Hood
+							i(213665),	-- Spirit-Waker's Leggings
+							i(213661),	-- Spirit-Waker's Robe
+							i(213662),	-- Spirit-Waker's Sandals
+							i(213666),	-- Spirit-Waker's Shoulderpads
+						},
+					}),
+					i(215184, {	-- Ensemble: Spirit-Waker's Vestments (Green)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(213671),	-- Mindbender Amice
+							i(213670),	-- Mindbender Belt
+							i(213673),	-- Mindbender Cowl
+							i(213669),	-- Mindbender Cuffs
+							i(213674),	-- Mindbender Handwraps
+							i(213672),	-- Mindbender Pants
+							i(213676),	-- Mindbender Raiment
+							i(213675),	-- Mindbender Treads
+						},
+					}),
+					i(215185, {	-- Ensemble: Spirit-Waker's Vestments (Red)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(213680),	-- Scrollkeeper Crown
+							i(213682),	-- Scrollkeeper Mantle
+							i(213679),	-- Scrollkeeper Mitts
+							i(213683),	-- Scrollkeeper Sash
+							i(213678),	-- Scrollkeeper Slippers
+							i(213681),	-- Scrollkeeper Trousers
+							i(213677),	-- Scrollkeeper Vestment
+							i(213684),	-- Scrollkeeper Wristwraps
 						},
 					}),
 					i(215216, {	-- Ensemble: Vestments of the Eternal Dynasty (Black)
@@ -1279,6 +1333,162 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(220980),	-- Vest of the Dynast
 							i(214010),	-- Vestment of the Dynast
 							i(214003),	-- Wristwraps of the Dynast
+						},
+					}),
+				}),
+				filter(LEATHER, {
+					i(215229, {	-- Ensemble: Mistveil Leathers (Black)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214095),	-- Mistveil Cap
+							i(214097),	-- Mistveil Cinch
+							i(214096),	-- Mistveil Handguards
+							i(214093),	-- Mistveil Jerkin
+							i(214098),	-- Mistveil Mantle
+							i(214099),	-- Mistveil Pants
+							i(214094),	-- Mistveil Treads
+							i(214092),	-- Mistveil Wraps
+						},
+					}),
+					i(215230, {	-- Ensemble: Mistveil Leathers (Brown)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214086),	-- Springrain Belt
+							i(214089),	-- Springrain Boots
+							i(214091),	-- Springrain Bracers
+							i(214087),	-- Springrain Gloves
+							i(214088),	-- Springrain Helm
+							i(214084),	-- Springrain Leggings
+							i(214085),	-- Springrain Shoulderpads
+							i(214090),	-- Springrain Tunic
+						},
+					}),
+					i(215231, {	-- Ensemble: Mistveil Leathers (Crimson)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214108),	-- Riverblade Bindings
+							i(214111),	-- Riverblade Cover
+							i(214110),	-- Riverblade Footguards
+							i(214112),	-- Riverblade Grips
+							i(214115),	-- Riverblade Legguards
+							i(214114),	-- Riverblade Spaulders
+							i(214109),	-- Riverblade Vest
+							i(214113),	-- Riverblade Waistband
+						},
+					}),
+					i(215232, {	-- Ensemble: Mistveil Leathers (Indigo)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214120),	-- Swampthresher Cap
+							i(214118),	-- Swampthresher Cinch
+							i(214119),	-- Swampthresher Handguards
+							i(214122),	-- Swampthresher Jerkin
+							i(214117),	-- Swampthresher Mantle
+							i(214116),	-- Swampthresher Pants
+							i(214121),	-- Swampthresher Treads
+							i(214123),	-- Swampthresher Wraps
+						},
+					}),
+					i(215269, {	-- Ensemble: Snowdrift Battlegear (Blue)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214381),	-- Cranefeather Belt
+							i(214384),	-- Cranefeather Boots
+							i(214386),	-- Cranefeather Bracers
+							i(214382),	-- Cranefeather Gloves
+							i(214383),	-- Cranefeather Helm
+							i(214379),	-- Cranefeather Leggings
+							i(214380),	-- Cranefeather Shoulderpads
+							i(214385),	-- Cranefeather Tunic
+						},
+					}),
+					i(215270, {	-- Ensemble: Snowdrift Battlegear (Brown)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214387),	-- Snowdrift Bindings
+							i(214390),	-- Snowdrift Cover
+							i(214389),	-- Snowdrift Footguards
+							i(214391),	-- Snowdrift Grips
+							i(214394),	-- Snowdrift Legguards
+							i(214393),	-- Snowdrift Spaulders
+							i(214388),	-- Snowdrift Vest
+							i(214392),	-- Snowdrift Waistband
+						},
+					}),
+					i(215271, {	-- Ensemble: Snowdrift Battlegear (Red)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214399),	-- Wildblood Cap
+							i(214397),	-- Wildblood Cinch
+							i(214398),	-- Wildblood Handguards
+							i(214401),	-- Wildblood Jerkin
+							i(214396),	-- Wildblood Mantle
+							i(214395),	-- Wildblood Pants
+							i(214400),	-- Wildblood Treads
+							i(214402),	-- Wildblood Wraps
+						},
+					}),
+					i(215225, {	-- Ensemble: Thunderpaw Battlegear (Dark)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214067),	-- Ghost Fox Bindings
+							i(214063),	-- Ghost Fox Cover
+							i(214061),	-- Ghost Fox Footguards
+							i(214062),	-- Ghost Fox Grips
+							i(214064),	-- Ghost Fox Legguards
+							i(214065),	-- Ghost Fox Spaulders
+							i(214060),	-- Ghost Fox Vest
+							i(214066),	-- Ghost Fox Waistband
+						},
+					}),
+					i(215226, {	-- Ensemble: Thunderpaw Battlegear (Light)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214104),	-- Mistdancer Cap
+							i(214102),	-- Mistdancer Cinch
+							i(214103),	-- Mistdancer Handguards
+							i(214106),	-- Mistdancer Jerkin
+							i(214101),	-- Mistdancer Mantle
+							i(214100),	-- Mistdancer Pants
+							i(214105),	-- Mistdancer Treads
+							i(214107),	-- Mistdancer Wraps
+						},
+					}),
+					i(215227, {	-- Ensemble: Thunderpaw Battlegear (Original)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Contains Removed!
+							i(214069),	-- Thunderpaw Belt
+							i(214074),	-- Thunderpaw Boots
+							i(214068),	-- Thunderpaw Bracers
+							i(214073),	-- Thunderpaw Gloves
+							i(214072),	-- Thunderpaw Helm
+							i(214071),	-- Thunderpaw Leggings
+							i(214070),	-- Thunderpaw Shoulderpads
+							i(214075),	-- Thunderpaw Tunic
+						},
+					}),
+					i(215228, {	-- Ensemble: Thunderpaw Battlegear (Red)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- TODO: Symlink
+							i(214076),	-- Farwatch Bindings
+							i(214077),	-- Farwatch Vest
+							i(214078),	-- Farwatch Footguards
+							i(214079),	-- Farwatch Cover
+							i(214080),	-- Farwatch Grips
+							i(214081),	-- Farwatch Waistband
+							i(214082),	-- Farwatch Spaulders
+							i(214083),	-- Farwatch Legguards
 						},
 					}),
 				}),
@@ -1361,7 +1571,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214839),	-- Bracers of the Lost Catacomb
 							i(214840),	-- Breastplate of the Lost Catacomb
 						},
-					}),					
+					}),
 				}),
 				cl(DRUID, {
 					i(215242, {	-- Ensemble: Vestments of the Eternal Blossom (Heroic)

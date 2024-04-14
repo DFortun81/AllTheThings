@@ -144,6 +144,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213662),	-- Spirit-Waker's Sandals
 					i(213666),	-- Spirit-Waker's Shoulderpads
 				}),
+				filter(LEATHER, {
+					i(214067),	-- Ghost Fox Bindings
+					i(214063),	-- Ghost Fox Cover
+					i(214061),	-- Ghost Fox Footguards
+					i(214062),	-- Ghost Fox Grips
+					i(214064),	-- Ghost Fox Legguards
+					i(214065),	-- Ghost Fox Spaulders
+					i(214060),	-- Ghost Fox Vest
+					i(214066),	-- Ghost Fox Waistband
+				}),
 				filter(MAIL, {
 					i(214460),	-- Windreaver's Belt
 					i(214457),	-- Windreaver's Boots

@@ -20,7 +20,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214381),	-- Cranefeather Belt
+					i(214384),	-- Cranefeather Boots
+					i(214386),	-- Cranefeather Bracers
+					i(214382),	-- Cranefeather Gloves
+					i(214383),	-- Cranefeather Helm
+					i(214379),	-- Cranefeather Leggings
+					i(214380),	-- Cranefeather Shoulderpads
+					i(214385),	-- Cranefeather Tunic
+				}),
 			}),
 		},
 	}),

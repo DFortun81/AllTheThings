@@ -148,7 +148,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214120),	-- Swampthresher Cap
+					i(214118),	-- Swampthresher Cinch
+					i(214119),	-- Swampthresher Handguards
+					i(214122),	-- Swampthresher Jerkin
+					i(214117),	-- Swampthresher Mantle
+					i(214116),	-- Swampthresher Pants
+					i(214121),	-- Swampthresher Treads
+					i(214123),	-- Swampthresher Wraps
+				}),
 			}),
 		},
 	}),

@@ -19,7 +19,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214108),	-- Riverblade Bindings
+					i(214111),	-- Riverblade Cover
+					i(214110),	-- Riverblade Footguards
+					i(214112),	-- Riverblade Grips
+					i(214115),	-- Riverblade Legguards
+					i(214114),	-- Riverblade Spaulders
+					i(214109),	-- Riverblade Vest
+					i(214113),	-- Riverblade Waistband
+				}),
 			}),
 		},
 	}),

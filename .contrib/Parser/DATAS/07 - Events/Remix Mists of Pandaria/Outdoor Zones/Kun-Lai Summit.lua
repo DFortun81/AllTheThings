@@ -21,7 +21,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-
+				filter(LEATHER, {
+					i(214095),	-- Mistveil Cap
+					i(214097),	-- Mistveil Cinch
+					i(214096),	-- Mistveil Handguards
+					i(214093),	-- Mistveil Jerkin
+					i(214098),	-- Mistveil Mantle
+					i(214099),	-- Mistveil Pants
+					i(214094),	-- Mistveil Treads
+					i(214092),	-- Mistveil Wraps
+				}),
 			}),
 		},
 	}),

@@ -339,16 +339,6 @@ root(ROOTS.Unsorted, {
 						i(213652),	-- Windwhisper Raiment
 						i(213651),	-- Windwhisper Treads
 
-						------ Breezebinder's Vestment (Red) ------
-						i(213657),	-- Brewmoon Crown
-						i(213655),	-- Brewmoon Mantle
-						i(213658),	-- Brewmoon Mitts
-						i(213654),	-- Brewmoon Sash
-						i(213659),	-- Brewmoon Slippers
-						i(213656),	-- Brewmoon Trousers
-						i(213660),	-- Brewmoon Vestment
-						i(213653),	-- Brewmoon Wristwraps
-
 						------ Spirit-Waker's Vestment (Green) ------
 						i(213671),	-- Mindbender Amice
 						i(213670),	-- Mindbender Belt
@@ -592,68 +582,15 @@ root(ROOTS.Unsorted, {
 
 					}),
 					filter(LEATHER, {
-						------ Mogubreaker Battlegear (Black) ------
-						-- Contains Removed
-						i(214027),	-- Nimbletoe Tunic
-						i(214028),	-- Nimbletoe Boots
-						i(214029),	-- Nimbletoe Gloves
-						i(214030),	-- Nimbletoe Helm
-						i(214031),	-- Nimbletoe Leggings
-						i(214032),	-- Nimbletoe Shoulderpads
-						i(214033),	-- Nimbletoe Belt
-						i(214034),	-- Nimbletoe Bracers
-						------ Mogubreaker Battlegear (Original) ------
-						-- Contains Removed
-						i(214035),	-- Mogubreaker Bindings
-						i(214036),	-- Mogubreaker Waistband
-						i(214037),	-- Mogubreaker Spaulders
-						i(214038),	-- Mogubreaker Legguards
-						i(214039),	-- Mogubreaker Cover
-						i(214040),	-- Mogubreaker Grips
-						i(214041),	-- Mogubreaker Footguards
-						i(214042),	-- Mogubreaker Vest
 						------ Mogubreaker Battlegear (Red) ------
-
-						i(214044),	-- Tidesplitter Jerkin
-						i(214045),	-- Tidesplitter Treads
-						i(214046),	-- Tidesplitter Handguards
 						i(214047),	-- Tidesplitter Cap
-						i(214048),	-- Tidesplitter Pants
-						i(214049),	-- Tidesplitter Mantle
 						i(214050),	-- Tidesplitter Cinch
+						i(214046),	-- Tidesplitter Handguards
+						i(214044),	-- Tidesplitter Jerkin
+						i(214049),	-- Tidesplitter Mantle
+						i(214048),	-- Tidesplitter Pants
+						i(214045),	-- Tidesplitter Treads
 						i(214051),	-- Tidesplitter Wraps
-
-						------ Mogubreaker Battlegear (Yellow) ------
-						i(214052),	-- Brushstalker Bracers
-						i(214053),	-- Brushstalker Belt
-						i(214054),	-- Brushstalker Shoulderpads
-						i(214055),	-- Brushstalker Leggings
-						i(214056),	-- Brushstalker Helm
-						i(214057),	-- Brushstalker Gloves
-						i(214058),	-- Brushstalker Boots
-						i(214059),	-- Brushstalker Tunic
-
-						------ Thunderpaw Battlegear (Dark) ------
-						-- Contains Removed
-						i(214060),	-- Ghost Fox Vest
-						i(214061),	-- Ghost Fox Footguards
-						i(214062),	-- Ghost Fox Grips
-						i(214063),	-- Ghost Fox Cover
-						i(214064),	-- Ghost Fox Legguards
-						i(214065),	-- Ghost Fox Spaulders
-						i(214066),	-- Ghost Fox Waistband
-						i(214067),	-- Ghost Fox Bindings
-
-						------ Thunderpaw Battlegear (Original) ------
-						-- Contains Removed
-						i(214068),	-- Thunderpaw Bracers
-						i(214069),	-- Thunderpaw Belt
-						i(214070),	-- Thunderpaw Shoulderpads
-						i(214071),	-- Thunderpaw Leggings
-						i(214072),	-- Thunderpaw Helm
-						i(214073),	-- Thunderpaw Gloves
-						i(214074),	-- Thunderpaw Boots
-						i(214075),	-- Thunderpaw Tunic
 
 						------ Thunderpaw Battlegear (Red) ------
 						i(214076),	-- Farwatch Bindings
@@ -664,59 +601,6 @@ root(ROOTS.Unsorted, {
 						i(214081),	-- Farwatch Waistband
 						i(214082),	-- Farwatch Spaulders
 						i(214083),	-- Farwatch Legguards
-						------ Mistveil Leathers (Brown) ------
-						-- Contains Removed
-						i(214084),	-- Springrain Leggings
-						i(214085),	-- Springrain Shoulderpads
-						i(214086),	-- Springrain Belt
-						i(214087),	-- Springrain Gloves
-						i(214088),	-- Springrain Helm
-						i(214089),	-- Springrain Boots
-						i(214090),	-- Springrain Tunic
-						i(214091),	-- Springrain Bracers
-
-						------ Mistveil Leathers (Black) ------
-						-- Contains Removed
-						i(214092),	-- Mistveil Wraps
-						i(214093),	-- Mistveil Jerkin
-						i(214094),	-- Mistveil Treads
-						i(214095),	-- Mistveil Cap
-						i(214096),	-- Mistveil Handguards
-						i(214097),	-- Mistveil Cinch
-						i(214098),	-- Mistveil Mantle
-						i(214099),	-- Mistveil Pants
-
-						------ Thunderpaw Battlegear (Light) ------
-						-- Contains Removed
-						i(214100),	-- Mistdancer Pants
-						i(214101),	-- Mistdancer Mantle
-						i(214102),	-- Mistdancer Cinch
-						i(214103),	-- Mistdancer Handguards
-						i(214104),	-- Mistdancer Cap
-						i(214105),	-- Mistdancer Treads
-						i(214106),	-- Mistdancer Jerkin
-						i(214107),	-- Mistdancer Wraps
-
-						------ Mistveil Leathers (Crimson) ------
-						-- Contains Removed
-						i(214108),	-- Riverblade Bindings
-						i(214109),	-- Riverblade Vest
-						i(214110),	-- Riverblade Footguards
-						i(214111),	-- Riverblade Cover
-						i(214112),	-- Riverblade Grips
-						i(214113),	-- Riverblade Waistband
-						i(214114),	-- Riverblade Spaulders
-						i(214115),	-- Riverblade Legguards
-
-						------ Mistveil Leathers (Indigo) ------
-						i(214116),	-- Swampthresher Pants
-						i(214117),	-- Swampthresher Mantle
-						i(214118),	-- Swampthresher Cinch
-						i(214119),	-- Swampthresher Handguards
-						i(214120),	-- Swampthresher Cap
-						i(214121),	-- Swampthresher Treads
-						i(214122),	-- Swampthresher Jerkin
-						i(214123),	-- Swampthresher Wraps
 						cl(DRUID, {	-- Tier Sets
 							i(214166),	-- Leggings of the Haunted Forest
 							i(214167),	-- Shoulderpads of the Haunted Forest
@@ -867,37 +751,6 @@ root(ROOTS.Unsorted, {
 							i(214377),	-- Mantle of the Barbed Assassin
 							i(214378),	-- Pants of the Barbed Assassin
 						}),
-
-						------ Snowdrift Battlegear (Blue) ------
-						i(214379),	-- Cranefeather Leggings
-						i(214380),	-- Cranefeather Shoulderpads
-						i(214381),	-- Cranefeather Belt
-						i(214382),	-- Cranefeather Gloves
-						i(214383),	-- Cranefeather Helm
-						i(214384),	-- Cranefeather Boots
-						i(214385),	-- Cranefeather Tunic
-						i(214386),	-- Cranefeather Bracers
-
-						------ Snowdrift Battlegear (Brown) ------
-						i(214387),	-- Snowdrift Bindings
-						i(214388),	-- Snowdrift Vest
-						i(214389),	-- Snowdrift Footguards
-						i(214390),	-- Snowdrift Cover
-						i(214391),	-- Snowdrift Grips
-						i(214392),	-- Snowdrift Waistband
-						i(214393),	-- Snowdrift Spaulders
-						i(214394),	-- Snowdrift Legguards
-
-						------ Snowdrift Battlegear (Red) ------
-						i(214395),	-- Wildblood Pants
-						i(214396),	-- Wildblood Mantle
-						i(214397),	-- Wildblood Cinch
-						i(214398),	-- Wildblood Handguards
-						i(214399),	-- Wildblood Cap
-						i(214400),	-- Wildblood Treads
-						i(214401),	-- Wildblood Jerkin
-						i(214402),	-- Wildblood Wraps
-						--
 						i(220981),	-- Eternal Blossom Tunic
 						i(220982),	-- Vest of the Haunted Forest
 						i(220983),	-- Vest of the Haunted Forest
@@ -1469,18 +1322,9 @@ root(ROOTS.Unsorted, {
 					i(215214),	-- Ensemble: Regalia of the Horned Nightmare
 					i(215215),	-- Ensemble: Regalia of the Horned Nightmare
 
-					i(215221),	-- Ensemble: Mogubreaker Battlegear
-					i(215222),	-- Ensemble: Mogubreaker Battlegear
-					i(215223),	-- Ensemble: Mogubreaker Battlegear
-					i(215224),	-- Ensemble: Mogubreaker Battlegear
-					i(215225),	-- Ensemble: Thunderpaw Battlegear
-					i(215226),	-- Ensemble: Thunderpaw Battlegear
-					i(215227),	-- Ensemble: Thunderpaw Battlegear
-					i(215228),	-- Ensemble: Thunderpaw Battlegear
-					i(215229),	-- Ensemble: Mistveil Leathers
-					i(215230),	-- Ensemble: Mistveil Leathers
-					i(215231),	-- Ensemble: Mistveil Leathers
-					i(215232),	-- Ensemble: Mistveil Leathers
+
+
+
 					i(215244),	-- Ensemble: Vestments of the Haunted Forest
 					i(215245),	-- Ensemble: Vestments of the Haunted Forest
 					i(215246),	-- Ensemble: Vestments of the Haunted Forest
@@ -1499,9 +1343,7 @@ root(ROOTS.Unsorted, {
 					i(215266),	-- Ensemble: Barbed Assassin Battlegear
 					i(215267),	-- Ensemble: Barbed Assassin Battlegear
 					i(215268),	-- Ensemble: Barbed Assassin Battlegear
-					i(215269),	-- Ensemble: Snowdrift Battlegear
-					i(215270),	-- Ensemble: Snowdrift Battlegear
-					i(215271),	-- Ensemble: Snowdrift Battlegear
+
 					i(215310),	-- Ensemble: Swarmbreaker's Battleplate
 					i(215311),	-- Ensemble: Swarmbreaker's Battleplate
 					i(215312),	-- Ensemble: Swarmbreaker's Battleplate
