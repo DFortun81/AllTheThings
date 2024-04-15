@@ -247,8 +247,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3446, {	-- Into the Depths
 					["providers"] = {
-						{ "n", 7771 },	-- Marvon Rivetseeker
-						{ "i", 10466 },	-- Atal'ai Stone Circle
+						{ "n",  7771 },	-- Marvon Rivetseeker
+						{ "i",  10466 },	-- Atal'ai Stone Circle
+						{ "o", 148836 },	-- Altar of Hakkar
 					},
 					["sourceQuest"] = 3444,	-- The Stone Circle
 					["coord"] = { 52.6, 45.8, TANARIS },
@@ -264,7 +265,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 38,
 					["groups"] = {
 						objective(1, {	-- 0/10 Atal'ai Tablet
-							["provider"] = { "i", 6288 },	-- Atal'ai Tablet
+							["providers"] = {
+								{ "i", 6288 },	-- Atal'ai Tablet
+								{ "o", 37099 },	-- Atal'ai Tablet
+							},
+							["description"] = "Scattered around the inside and outside of the instance.",
 						}),
 						i(1490, {	-- Guardian Talisman
 							["timeline"] = { "removed 4.0.3" },
@@ -298,32 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(3447, {	-- Secret of the Circle
-					["providers"] = {
-						{ "n",   7771 },	-- Marvon Rivetseeker
-						{ "o", 148838 },	-- Idol of Hakkar
-					},
-					["sourceQuest"] = 3444,	-- The Stone Circle
-					["coord"] = { 52.6, 45.8, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
-					["lvl"] = 46,
-					["groups"] = {
-						i(10773, {	-- Hakkari Urn
-							["timeline"] = { "removed 4.0.3" },
-							["groups"] = {
-								i(10781, {	-- Hakkari Breastplate
-									["timeline"] = { "removed 4.0.3" },
-								}),
-								i(10782, {	-- Hakkari Shroud
-									["timeline"] = { "removed 4.0.3" },
-								}),
-								i(10780, {	-- Mark of Hakkar
-									["timeline"] = { "removed 4.0.3" },
-								}),
-							},
-						}),
-					},
-				}),
+				
 				q(4787, {	-- The Ancient Egg
 					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
@@ -465,7 +445,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Stone Circle
 							["providers"] = {
-								{ "i", 10556 },	-- Stone Circle
+								{ "i",  10556 },	-- Stone Circle
 								{ "o", 149036 },	-- Marvon's Chest
 							},
 							["coord"] = { 62.5, 38.5, THE_BARRENS },
@@ -635,15 +615,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 			}),
-			o(37099, {	-- Atal'ai Tablet
-				-- #if BEFORE 4.0.3
-				["description"] = "Scattered around the inside and outside of the instance.",
-				-- #endif
-				["timeline"] = { "removed 4.0.3" },
-				["groups"] = {
-					i(6288),	-- Atal'ai Tablet
-				},
-			}),
 			n(5708, {	-- Spawn of Hakkar
 				["timeline"] = { "removed 4.0.3" },
 				["groups"] = {
@@ -655,24 +626,53 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}),
-			n(8580, {	-- Atal'alarion
-				-- #if BEFORE 4.0.3
+			o(148832, {	-- Atal'ai Statue
 				["description"] = "Go to the Pit of Refuse.\n\nClear all of the trash as you travel around the circular platform. You'll notice balconies that dip out and overlook the center of the pit. Essentially, once it's all cleared, each of your party members should spread out and be assigned to a balcony with an Atal'ai Shrine. The shrines must be clicked in a specific order:\n\n    South (Bottom)\n    North (Top)\n    Southwest (Bottom Left)\n    Southeast (Bottom Right)\n    Northwest (Top Left)\n    Northeast (Top Right)\n\nOnce a statue has been clicked in the correct sequence, it'll turn green. If not, the person attempting to activate will gain a curse.",
-				-- #endif
-				["provider"] = { "o", 148832 },	-- Atal'ai Statue
 				["timeline"] = { "removed 4.0.3" },
 				["groups"] = {
-					i(22444, {	-- Putrid Vine
+					q(3447, {	-- Secret of the Circle
+						["providers"] = {
+							{ "n",   7771 },	-- Marvon Rivetseeker
+							{ "o", 148838 },	-- Idol of Hakkar
+						},
+						["sourceQuest"] = 3444,	-- The Stone Circle
+						["coord"] = { 52.6, 45.8, TANARIS },
 						["timeline"] = { "removed 4.0.3" },
+						["lvl"] = 46,
+						["groups"] = {
+							i(10773, {	-- Hakkari Urn
+								["timeline"] = { "removed 4.0.3" },
+								["groups"] = {
+									i(10781, {	-- Hakkari Breastplate
+										["timeline"] = { "removed 4.0.3" },
+									}),
+									i(10782, {	-- Hakkari Shroud
+										["timeline"] = { "removed 4.0.3" },
+									}),
+									i(10780, {	-- Mark of Hakkar
+										["timeline"] = { "removed 4.0.3" },
+									}),
+								},
+							}),
+						},
 					}),
-					i(10799, {	-- Headspike
+					n(8580, {	-- Atal'alarion
+						["description"] = "Summoned by activating the Atal'ai Statues in the proper order.",
 						["timeline"] = { "removed 4.0.3" },
-					}),
-					i(10800, {	-- Darkwater Bracers
-						["timeline"] = { "removed 4.0.3" },
-					}),
-					i(10798, {	-- Atal'alarion Tusk Ring
-						["timeline"] = { "removed 4.0.3" },
+						["groups"] = {
+							i(22444, {	-- Putrid Vine
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(10799, {	-- Headspike
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(10800, {	-- Darkwater Bracers
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(10798, {	-- Atal'alarion Tusk Ring
+								["timeline"] = { "removed 4.0.3" },
+							}),
+						},
 					}),
 				},
 			}),

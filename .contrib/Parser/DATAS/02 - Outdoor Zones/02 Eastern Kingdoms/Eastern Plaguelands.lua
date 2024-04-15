@@ -3333,7 +3333,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 3.3.0" },
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -3451,10 +3454,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6145, {	-- The Crimson Courier
+					-- #if AFTER 3.3.0
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["coord"] = { 57.8, 92.0, UNDERCITY },
+					-- #else
 					["qg"] = 2425,	-- Varimathras
-					["sourceQuest"] = 6144,	-- The Call to Command
 					["coord"] = { 56.2, 92.6, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					-- #endif
+					["sourceQuest"] = 6144,	-- The Call to Command
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {

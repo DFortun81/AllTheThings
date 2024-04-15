@@ -2094,7 +2094,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- Stonemaul Spirits laid to rest
-							["provider"] = { "i", 33091 },	-- Energized Totem
+							["providers"] = {
+								{ "i",  33091 },	-- Energized Totem
+								{ "o", 186332 },	-- Ogre Remains
+							},
 							["cr"] = 23786,	-- Stonemaul Spirit
 						}),
 					},

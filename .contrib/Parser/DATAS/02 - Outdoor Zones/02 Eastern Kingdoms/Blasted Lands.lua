@@ -1540,8 +1540,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Severed Horn of the Defiler
 							["providers"] = {
-								{ "i", 10759 },	-- Severed Horn of the Defiler
-								{ "i", 10757 },	-- Ward of the Defiler
+								{ "i",  10759 },	-- Severed Horn of the Defiler
+								{ "i",  10757 },	-- Ward of the Defiler
+								{ "o", 153205 },	-- Altar of the Defiler
 							},
 							["coord"] = { 47.6, 30.0, BLASTED_LANDS },
 							["cr"] = 7664,	-- Razelikh the Defiler

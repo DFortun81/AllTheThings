@@ -511,7 +511,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 43,
 					["groups"] = {
 						objective(1, {	-- 0/1 Goodsteel Ledger
-							["provider"] = { "i", 11727 },	-- Goodsteel Ledger
+							["providers"] = {
+								{ "i",  11727 },	-- Goodsteel Ledger
+								{ "o", 173266 },	-- Goodsteel Ledger
+							},
 						}),
 						objective(2, {	-- 0/20 Solid Crystal Leg Shaft
 							["provider"] = { "i", 11725 },	-- Solid Crystal Leg Shaft
