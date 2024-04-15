@@ -720,7 +720,7 @@ if app.IsRetail then
 		local oldReportSetting = app.Settings:GetTooltipSetting("Report:CompletedQuests");
 		-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 		local questDiff = #freshCompletes - #CompleteQuestSequence;
-		local manyQuests;
+		local manyQuests = #CompleteQuestSequence == 0
 		if app.IsReady and oldReportSetting and #CompleteQuestSequence > 0 then
 			if questDiff > 50 then
 				manyQuests = true;
@@ -731,7 +731,7 @@ if app.IsRetail then
 			end
 		end
 		-- don't report quest completions if there's too many or we have yet to get initial quest completion
-		if manyQuests or #CompleteQuestSequence == 0 then
+		if manyQuests then
 			app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
 		end
 
@@ -813,7 +813,7 @@ if app.IsRetail then
 	app.events.LOOT_OPENED = RefreshAllQuestInfo;
 	-- We don't want any reporting/updating of completed quests when ATT starts... simply capture all completed quests
 	app.AddEventHandler("OnStartup", QueryCompletedQuests);
-	app.AddEventHandler("OnRecalculate", RefreshAllQuestInfo);
+	app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
 	app.AddEventHandler("OnPlayerLevelUp", RefreshAllQuestInfo);
 else
 	local GetQuestsCompleted = GetQuestsCompleted;
