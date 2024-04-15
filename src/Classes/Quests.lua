@@ -721,7 +721,7 @@ if app.IsRetail then
 		-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 		local questDiff = #freshCompletes - #CompleteQuestSequence;
 		local manyQuests;
-		if app.IsReady and oldReportSetting then
+		if app.IsReady and oldReportSetting and #CompleteQuestSequence > 0 then
 			if questDiff > 50 then
 				manyQuests = true;
 				app.print(questDiff,"Quests Completed");
