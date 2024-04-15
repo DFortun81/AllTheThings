@@ -1289,14 +1289,14 @@ if IsQuestReplayable then
 		if IsPartySyncActive then
 			-- app.PrintDebug("LeavePartySync")
 			IsPartySyncActive = false;
-			app:UpdateWindows(true);
+			app.HandleEvent("OnUpdateWindows", true)
 		end
 	end
 	app.events.QUEST_SESSION_JOINED = function()
 		if IsPartySyncActive then return; end
 		-- app.PrintDebug("QUEST_SESSION_JOINED")
 		IsPartySyncActive = true;
-		app:UpdateWindows(true);
+		app.HandleEvent("OnUpdateWindows", true)
 	end
 	app.events.QUEST_SESSION_LEFT = LeavePartySync;
 	app.events.QUEST_SESSION_DESTROYED = LeavePartySync;

@@ -18,7 +18,6 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("Show:TooltipHelp", self:GetChecked())
-	app:UpdateWindows()
 end)
 checkboxShowTooltipHelp:SetATTTooltip(L.TOOLTIP_HELP_CHECKBOX_TOOLTIP)
 checkboxShowTooltipHelp:SetPoint("TOPLEFT", headerTooltips, "BOTTOMLEFT", -2, 0)
@@ -217,7 +216,7 @@ sliderSummarizeThings:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("ContainsCount", newValue)
-	app:UpdateWindows()
+	app.HandleEvent("OnUpdateWindows")
 end)
 sliderSummarizeThings.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
@@ -488,7 +487,7 @@ sliderSourceLocations:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("Locations", newValue)
-	app:UpdateWindows()
+	app.HandleEvent("OnUpdateWindows")
 end)
 sliderSourceLocations.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -713,7 +712,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Show:Remaining", self:GetChecked())
 	app.Modules.Color.SetShowRemainingText(self:GetChecked());
-	app:UpdateWindows()
+	app.HandleEvent("OnUpdateWindows")
 end)
 checkboxShowRemainingCount:SetATTTooltip(L.SHOW_REMAINING_CHECKBOX_TOOLTIP)
 checkboxShowRemainingCount:AlignBelow(checkboxSortByProgress)
@@ -726,8 +725,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Show:Percentage", self:GetChecked())
 	app.Modules.Color.SetShowPercentageText(self:GetChecked());
-	app.HandleEvent("OnRenderDirty");
-	app:UpdateWindows()	-- TODO: Remove this.
+	app.HandleEvent("OnUpdateWindows")
 end)
 checkboxShowPercentageCount:SetATTTooltip(L.PERCENTAGES_CHECKBOX_TOOLTIP)
 checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
@@ -757,7 +755,7 @@ sliderPercentagePrecision:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("Precision", newValue)
-	app:UpdateWindows()
+	app.HandleEvent("OnUpdateWindows")
 end)
 sliderPercentagePrecision.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Show:Percentage") then

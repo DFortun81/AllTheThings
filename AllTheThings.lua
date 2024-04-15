@@ -7441,29 +7441,29 @@ local function Toggle(self, forceUpdate)
 end
 
 app.Windows = {};
-local function UpdateWindowsOnEnd()
-	app.Processing_RefreshData = nil;
-	app.Processing_UpdateWindows = nil;
-	app.Processing_RefreshWindows = nil;
-	app.refreshDataGot = nil;
-	app.WipeSearchCache();
-end
-local function UpdateWindows(force, got)
-	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
-	-- After handling all Updates, perform some logic
-	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
-	local Run = app.UpdateRunner.Run;
-	for _,window in pairs(app.Windows) do
-		Run(window.Update, window, force, got);
-	end
-end
-function app:UpdateWindows(force, got)
-	if app.Processing_UpdateWindows then return; end
-	app.Processing_UpdateWindows = true;
-	app.Processing_RefreshWindows = true;
-	-- app.PrintDebug("UpdateWindows:Async")
-	AfterCombatOrDelayedCallback(UpdateWindows, 0.1, force, got);
-end
+-- local function UpdateWindowsOnEnd()
+-- 	app.Processing_RefreshData = nil;
+-- 	app.Processing_UpdateWindows = nil;
+-- 	app.Processing_RefreshWindows = nil;
+-- 	app.refreshDataGot = nil;
+-- 	app.WipeSearchCache();
+-- end
+-- local function UpdateWindows(force, got)
+-- 	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
+-- 	-- After handling all Updates, perform some logic
+-- 	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
+-- 	local Run = app.UpdateRunner.Run;
+-- 	for _,window in pairs(app.Windows) do
+-- 		Run(window.Update, window, force, got);
+-- 	end
+-- end
+-- function app:UpdateWindows(force, got)
+-- 	if app.Processing_UpdateWindows then return; end
+-- 	app.Processing_UpdateWindows = true;
+-- 	app.Processing_RefreshWindows = true;
+-- 	-- app.PrintDebug("UpdateWindows:Async")
+-- 	AfterCombatOrDelayedCallback(UpdateWindows, 0.1, force, got);
+-- end
 local function RefreshWindows()
 	-- app.PrintDebug("RefreshWindows")
 	for _,window in pairs(app.Windows) do
@@ -14557,7 +14557,7 @@ app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
 	app:UnregisterEvent("LOOT_CLOSED");
 	app:RegisterEvent("LOOT_CLOSED");
 end);
-app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);
+app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", function() app.HandleEvent("OnUpdateWindows") end);
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()

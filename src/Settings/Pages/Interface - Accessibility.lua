@@ -25,7 +25,7 @@ local function ShowColorPicker(callback, color)
 			newR, newG, newB = ColorPickerFrame:GetColorRGB();
 		end
 		callback({r = newR, g = newG, b = newB, a = newA});
-		app:UpdateWindows();
+		app.HandleEvent("OnUpdateWindows")
 	end
 	picker.func, picker.opacityFunc, picker.cancelFunc, picker.swatchFunc
 		= OnColorChanged, OnColorChanged, OnColorChanged, OnColorChanged
@@ -104,7 +104,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("UseMoreColors", self:GetChecked())
-	app:UpdateWindows()
+	app.HandleEvent("OnUpdateWindows")
 end)
 checkboxUseMoreColors:SetATTTooltip(L.MORE_COLORS_CHECKBOX_TOOLTIP)
 checkboxUseMoreColors:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)
@@ -114,14 +114,14 @@ local buttonDefault = child:CreateButton(
 {
 	OnClick = function(self)
 		wipe(app.Colors);
-		app:UpdateWindows()
+		app.HandleEvent("OnUpdateWindows")
 	end,
 })
 buttonDefault:SetPoint("TOPLEFT", checkboxUseMoreColors.Text, "TOPRIGHT", 10, 5)
 
 local textBreadcrumbs = child:CreateTextLabel(Colorize(L.BREADCRUMBS, app.Colors.White))
 textBreadcrumbs:SetPoint("TOPLEFT", checkboxUseMoreColors, "BOTTOMLEFT", 0, -6)
-	
+
 local function SetBreadcrumbColor(color)
 	app.Colors.Breadcrumb = RGBToHex(color.r, color.g, color.b);
 end
@@ -138,7 +138,7 @@ buttonBreadcrumbColor:SetPoint("TOPLEFT", textBreadcrumbs, "BOTTOMLEFT", 0, -5)
 
 local textLocked = child:CreateTextLabel(Colorize(L.LOCKED_QUESTS, app.Colors.White))
 textLocked:SetPoint("TOPLEFT", buttonBreadcrumbColor, "BOTTOMLEFT", 0, -10)
-	
+
 local function SetLockedColor(color)
 	app.Colors.Locked = RGBToHex(color.r, color.g, color.b);
 end
@@ -155,7 +155,7 @@ buttonLockedColor:SetPoint("TOPLEFT", textLocked, "BOTTOMLEFT", 0, -5)
 
 local textMount = child:CreateTextLabel(Colorize(MOUNTS, app.Colors.White))
 textMount:SetPoint("TOPLEFT", buttonLockedColor, "BOTTOMLEFT", 0, -10)
-	
+
 local function SetMountColor(color)
 	app.Colors.Mount = RGBToHex(color.r, color.g, color.b)
 end
