@@ -186,15 +186,17 @@ local function CreateRunner(name)
 		perFrame = 0
 	end
 	local function Reset()
-		-- app.PrintDebug("FR:Reset."..name,"Qi",QueueIndex,"Ri",RunIndex,"#F",#FunctionQueue)
-		SetPerFrame(1)
+		-- app.PrintDebug("FR:Reset."..name,Pushed and "RUNNING" or "STOPPED","Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
+		SetPerFrame(Config.PerFrameDefault or 1)
 		-- when done with all functions in the queue, reset the indexes and clear the queues of data
 		QueueIndex = 1
 		RunIndex = Pushed and 0 or 1	-- reset while running will resume and continue at index 1
 		wipe(FunctionQueue)
 		wipe(ParameterBucketQueue)
 		wipe(ParameterSingleQueue)
-		-- app.PrintDebug("FR:Reset."..name,"Qi",QueueIndex,"Ri",RunIndex,"#F",#FunctionQueue)
+	end
+	local function Stats()
+		app.print(name,Pushed and "RUNNING" or "STOPPED","Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
 	end
 
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
@@ -278,6 +280,12 @@ local function CreateRunner(name)
 		OnEnd = function(func)
 			FunctionQueue[0] = func;
 		end,
+		-- Return the current PerFrame of the Runner
+		GetPerFrame = function() return Config.PerFrame end,
+		-- Return if the Runner is currently Running
+		IsRunning = function() return Pushed end,
+		-- Allows defining the default PerFrame for this Runner (i.e. when Reset)
+		SetPerFrameDefault = function(count) Config.PerFrameDefault = count end
 	};
 	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
 	Runner.SetPerFrame = function(count, instant)
@@ -287,8 +295,15 @@ local function CreateRunner(name)
 			Runner.Run(SetPerFrame, count);
 		end
 	end
-	Runner.Reset = Reset; -- for testing
+
+	Runner.Reset = Reset -- for testing
+	Runner.Stats = Stats -- for testing
+	app.Runners[name] = Runner
 
 	return Runner;
 end
-app.CreateRunner = CreateRunner;
+-- Retrieves an existing or creates a new Runner with the provided name
+app.CreateRunner = function(name)
+	return app.Runners[name] or CreateRunner(name)
+end
+app.Runners = {}
