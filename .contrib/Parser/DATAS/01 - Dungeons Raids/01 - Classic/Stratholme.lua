@@ -225,7 +225,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Taelan's Hammer
-							["provider"] = { "i", 14613 },	-- Taelan's Hammer
+							["providers"] = {
+								{ "i",  14613 },	-- Taelan's Hammer
+								{ "o", 177240 },	-- Loose Dirt Mound
+							},
 							["coord"] = { 29.8, 85.6, EASTERN_PLAGUELANDS },
 							["cr"] = 11886,	-- Mercutio Filthgorger
 						}),

@@ -388,7 +388,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["providers"] = {
 							{ "n",  11616 },	-- Nathaniel Dumah
 							{ "i",  15044 },	-- Barrel of Plagueland Termites
-							{ "i", 177491 },	-- Termite Barrel
+							{ "o", 177491 },	-- Termite Barrel
+							{ "o", 177490 },	-- Northridge Lumber Mill Crate
 						},
 						["sourceQuest"] = 5903,	-- A Plague Upon Thee (1/3)
 						["coord"] = { 43.4, 84.8, WESTERN_PLAGUELANDS },
@@ -397,7 +398,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["providers"] = {
 							{ "n",  11615 },	-- Mickey Levine
 							{ "i",  15044 },	-- Barrel of Plagueland Termites
-							{ "i", 177491 },	-- Termite Barrel
+							{ "o", 177491 },	-- Termite Barrel
+							{ "o", 177490 },	-- Northridge Lumber Mill Crate
 						},
 						["sourceQuest"] = 5901,	-- A Plague Upon Thee (1/3)
 						["coord"] = { 83.2, 72.4, TIRISFAL_GLADES },
