@@ -59,6 +59,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					crit(65406, {	-- Zenata danced with at Concord Observatory
 						["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
+						["provider"] = {"n",204835},	-- Zenata
+						["_noautomation"] = true,
 					}),
 				}),
 				ach(19792, {	-- Just One More Thing
