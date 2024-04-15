@@ -11,6 +11,7 @@ local RefreshCollections;
 -- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
 local print = app.EmptyFunction;
 local __FirstRefresh = true;
+local IsRefreshing
 
 if app.IsRetail then
 -- CRIEVE NOTE: I really don't like the explicit listed data here
@@ -314,6 +315,7 @@ app.AddEventHandler("OnRefreshCollectionsDone", function()
 		__FirstRefresh = nil;
 		print = app.print;
 	end
+	IsRefreshing = nil
 end)
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
@@ -342,8 +344,13 @@ RefreshCollections = function()
 		__FirstRefresh = nil;
 		print = app.print;
 	end
+	IsRefreshing = nil
 end
 end
 
-app.RefreshCollections = function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections) end
+app.RefreshCollections = function()
+	if IsRefreshing then return end
+	IsRefreshing = true
+	app:StartATTCoroutine("RefreshingCollections", RefreshCollections)
+end
 app.AddEventHandler("OnInit", app.RefreshCollections)
