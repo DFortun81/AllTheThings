@@ -9525,6 +9525,14 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.AddEventHandler = AddEventHandler
 		window.RemoveEventHandlers = RemoveEventHandlers
 
+		-- Some Window functions should be triggered from ATT events
+		window:AddEventHandler("OnUpdateWindows", function(...)
+			window:Update(...)
+		end)
+		window:AddEventHandler("OnRefreshWindows", function(...)
+			window:Refresh(...)
+		end)
+
 		-- Ensure the window updates itself when opened for the first time
 		window.HasPendingUpdate = true;
 		window:Update();
@@ -10055,9 +10063,9 @@ local function RefreshData()
 		end
 
 		-- Forcibly update the windows.
-		app:UpdateWindows(true, app.refreshDataGot);
+		app.HandleEvent("OnUpdateWindows", true, app.refreshDataGot)
 	else
-		app:UpdateWindows(nil, app.refreshDataGot);
+		app.HandleEvent("OnUpdateWindows", nil, app.refreshDataGot)
 	end
 
 	-- Execute the OnRefreshComplete handlers.
