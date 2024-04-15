@@ -3,7 +3,7 @@
 -------------------------------------
 local appName, app = ...;
 
--- Add a Feader & Filter debugger
+-- Add a Header & Filter debugger
 setmetatable(app.FilterConstants, {
 	__index = function(t, key)
 		print("MISSING FilterConstant:", key);

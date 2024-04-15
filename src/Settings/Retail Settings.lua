@@ -371,6 +371,7 @@ settings.Initialize = function(self)
 
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
+	app.DoRefreshAppearanceSources = settings:Get("Thing:Transmog")
 	-- app.PrintDebug("settings.Initialize:Done")
 end
 local function rawcopy(source, copy)
