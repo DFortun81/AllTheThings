@@ -50,3 +50,9 @@ api.CheckSymlinks = function()
 
 	app:GetWindow("AnalyzerCheckSymlinks"):Toggle();
 end
+
+api.CheckRunners = function()
+	for name,runner in pairs(app.__Runners) do
+		runner.Stats()
+	end
+end
