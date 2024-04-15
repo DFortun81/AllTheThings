@@ -730,7 +730,8 @@ if app.IsRetail then
 				app.print(questDiff,"Quests Unflagged");
 			end
 		end
-		if manyQuests then
+		-- don't report quest completions if there's too many or we have yet to get initial quest completion
+		if manyQuests or #CompleteQuestSequence == 0 then
 			app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
 		end
 
