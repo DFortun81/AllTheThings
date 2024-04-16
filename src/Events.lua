@@ -1,8 +1,8 @@
 
 local appName, app = ...;
 
-local rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall
-	= rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall
+local rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall, tinsert
+	= rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall, tinsert
 
 -- Declare Custom Event Handlers
 local EventHandlers = setmetatable({
@@ -16,13 +16,17 @@ local EventHandlers = setmetatable({
 		return item;
 	end,
 })
-app.AddEventHandler = function(eventName, handler)
+app.AddEventHandler = function(eventName, handler, forceStart)
 	if type(handler) ~= "function" then
 		app.print("AddEventHandler was provided a non-function",handler)
 		return
 	end
 	local handlers = EventHandlers[eventName]
-	handlers[#handlers + 1] = handler;
+	if forceStart then
+		tinsert(handlers, 1, handler)
+	else
+		handlers[#handlers + 1] = handler;
+	end
 	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
 end
 app.RemoveEventHandler = function(handler)
@@ -69,6 +73,7 @@ app.AddEventHandler("OnReady", function()
 		-- safely attempt to register the event incase it is not available in a game version
 		pcall(app.RegisterFuncEvent, app, event, func);
 	end
+	OnReadyEventRegistrations = nil
 end)
 
 -- need lib/Runner.lua to be used in Classic so we can consolidate stuff
@@ -83,6 +88,9 @@ if app.IsRetail then
 	}
 	-- Represents Events which should always fire upon completion of a prior Event. These cannot be passed arguments currently
 	local EventSequence = {
+		OnLoad = {
+			"OnStartup"
+		},
 		OnRefreshCollections = {
 			"OnRefreshCollectionsDone",
 		},

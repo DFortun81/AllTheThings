@@ -181,7 +181,7 @@ do
 	end);
 	app.AddEventRegistration("NEW_MOUNT_ADDED", function(id)
 		local _, spellID = C_MountJournal_GetMountInfoByID(id);
-		local mount = app.SearchForObject("spellID", spellID)
+		local mount = app.SearchForObject("spellID", spellID, "field")
 		app.SetAccountCollected(mount, CACHE, spellID, true)
 		app.UpdateRawID("spellID", spellID)
 	end);

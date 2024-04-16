@@ -659,7 +659,7 @@ app.CreateCache = function(idField)
 			end
 			return _t, id;
 		end
-		app.PrintDebug("CACHE_MISS",idField,t.__type,t.hash)
+		app.PrintDebug("CACHE_MISS",idField,">",id,t.__type,t.hash)
 		app.PrintTable(t)
 	end;
 	cache.GetCachedField = function(t, field, default_function)
@@ -776,15 +776,17 @@ end
 ]]--
 
 -- Collected helper functions.
-app.SetAccountCollected = function()
-	app.print("SetCollected not initialized yet...");
-end;
-app.SetAccountCollectedForSubType = function()
-	app.print("SetCollectedForSubType not initialized yet...");
+local function NotInitialized(name)
+	app.print(name,"not initialized yet...");
 end
-app.SetCollected = function()
-	app.print("SetCollected not initialized yet...");
-end;
-app.SetCollectedForSubType = function()
-	app.print("SetCollectedForSubType not initialized yet...");
-end
+app.SetAccountCollected = function() NotInitialized("SetAccountCollected") end;
+app.SetAccountCollectedForSubType = function() NotInitialized("SetAccountCollectedForSubType") end
+app.SetCollected = function() NotInitialized("SetCollected") end;
+app.SetCollectedForSubType = function() NotInitialized("SetCollectedForSubType") end
+-- Classic needs to use modules/Collection.lua pls
+app.SetCached = function() NotInitialized("SetCached") end;
+app.IsCached = function() NotInitialized("IsCached") end;
+app.IsAccountCached = function() NotInitialized("IsAccountCached") end;
+app.IsAccountTracked = function() NotInitialized("IsAccountTracked") end;
+app.SetBatchAccountCached = function() NotInitialized("SetBatchAccountCached") end;
+app.SetBatchCached = function() NotInitialized("SetBatchCached") end;

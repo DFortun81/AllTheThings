@@ -17,7 +17,6 @@ local ATTAccountWideData
 -- Module locals
 local GetProgressColor = app.Modules.Color.GetProgressColor;
 local Colorize = app.Modules.Color.Colorize;
-local ColorizeRGB = app.Modules.Color.ColorizeRGB;
 
 -- Blizz locals
 local GetFactionInfoByID = GetFactionInfoByID;
@@ -65,40 +64,40 @@ end });
 -- Faction Standing
 local StandingByID = {
 	[0] = {	-- 0: No Standing (Not in a Guild)
-		["color"] = "00404040",
-		["threshold"] = -99999,
+		color = "00404040",
+		threshold = -99999,
 	},
 	{	-- 1: HATED
-		["color"] = GetProgressColor(0),
-		["threshold"] = -42000,
+		color = GetProgressColor(0),
+		threshold = -42000,
 	},
 	{	-- 2: HOSTILE
-		["color"] = "00FF0000",
-		["threshold"] = -6000,
+		color = "00FF0000",
+		threshold = -6000,
 	},
 	{	-- 3: UNFRIENDLY
-		["color"] = "00EE6622",
-		["threshold"] = -3000,
+		color = "00EE6622",
+		threshold = -3000,
 	},
 	{	-- 4: NEUTRAL
-		["color"] = "00FFFF00",
-		["threshold"] = 0,
+		color = "00FFFF00",
+		threshold = 0,
 	},
 	{	-- 5: FRIENDLY
-		["color"] = "0000FF00",
-		["threshold"] = 3000,
+		color = "0000FF00",
+		threshold = 3000,
 	},
 	{	-- 6: HONORED
-		["color"] = "0000FF88",
-		["threshold"] = 9000,
+		color = "0000FF88",
+		threshold = 9000,
 	},
 	{	-- 7: REVERED
-		["color"] = "0000FFCC",
-		["threshold"] = 21000,
+		color = "0000FFCC",
+		threshold = 21000,
 	},
 	{	-- 8: EXALTED
-		["color"] = GetProgressColor(1),
-		["threshold"] = 42000,
+		color = GetProgressColor(1),
+		threshold = 42000,
 	},
 };
 local StandingByName = {};
@@ -122,8 +121,10 @@ local function GetFactionStanding(reputationPoints)
 	return 1, 0
 end
 
-app.CreateFaction = app.CreateClass("Faction", "factionID", {
-	["text"] = function(t)
+-- Faction lib
+local KEY, CACHE, SETTING = "factionID", "Factions", "Reputations"
+app.CreateFaction = app.CreateClass("Faction", KEY, {
+	text = function(t)
 		local name = t.name;
 		if name then
 			local standing = StandingByID[t.standing];
@@ -134,26 +135,26 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 			end
 		end
 	end,
-	["name"] = function(t)
-		return GetFactionInfoByID(t.factionID) or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+	name = function(t)
+		return GetFactionInfoByID(t[KEY]) or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t[KEY]);
 	end,
-	["description"] = function(t)
+	description = function(t)
 		if not t.lore then return L.FACTION_SPECIFIC_REP; end
 	end,
-	["lore"] = function(t)
-		return select(2, GetFactionInfoByID(t.factionID));
+	lore = function(t)
+		return select(2, GetFactionInfoByID(t[KEY]));
 	end,
-	["icon"] = function(t)
+	icon = function(t)
 		return app.asset("Category_Factions");
 	end,
-	["trackable"] = app.ReturnTrue,
-	["isHeader"] = app.ReturnTrue,
-	["collectible"] = function(t)
-		if app.Settings.Collectibles.Reputations then
+	trackable = app.ReturnTrue,
+	isHeader = app.ReturnTrue,
+	collectible = function(t)
+		if app.Settings.Collectibles[SETTING] then
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.
-			if not app.Settings.AccountWide.Reputations then
+			if not app.Settings.AccountWide[SETTING] then
 				local maxReputation = t.maxReputation;
-				if maxReputation and maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(maxReputation[1])) or 4) >= GetFactionStanding(maxReputation[2]) then
+				if maxReputation and maxReputation[1] ~= t[KEY] and (select(3, GetFactionInfoByID(maxReputation[1])) or 4) >= GetFactionStanding(maxReputation[2]) then
 					return false;
 				end
 			end
@@ -161,20 +162,37 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		end
 		return false;
 	end,
-	["collected"] = function(t)
+	collected = app.IsClassic and function(t)
 		if t.saved then return 1; end
-		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
+		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t[KEY]] then return 2; end
+	end or function(t)
+		local id = t[KEY];
+		-- character collected
+		if app.IsCached(CACHE, id) then return 1; end
+		-- factions can dynamically be collected since there's no 'on collected' event
+		if t.standing >= t.maxstanding then
+			-- Character Cache
+			app.SetCollected(t, CACHE, id, true, SETTING)
+			-- Account Cache handled by AccountRecalculate
+			return 1;
+		end
+		-- account-wide collected
+		if app.Settings.AccountWide[SETTING] and app.IsAccountCached(CACHE, id) then return 2; end
 	end,
-	["saved"] = function(t)
-		local factionID = t.factionID;
+	saved = app.IsClassic and function(t)
+		local factionID = t[KEY];
 		if app.CurrentCharacter.Factions[factionID] then return true; end
 		if t.standing >= t.maxstanding then
 			app.CurrentCharacter.Factions[factionID] = 1;
 			ATTAccountWideData.Factions[factionID] = 1;
 			return true;
 		end
+	end or function(t)
+		local id = t[KEY];
+		-- character known
+		if app.IsCached(CACHE, id) then return true; end
 	end,
-	["title"] = function(t)
+	title = function(t)
 		local title = t.standingText;
 		local ceiling = t.ceiling;
 		if ceiling and ceiling > 0 then
@@ -187,31 +205,31 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		end
 		return title;
 	end,
-	["reputation"] = function(t)
-		return select(6, GetFactionInfoByID(t.factionID)) or 0;
+	reputation = function(t)
+		return select(6, GetFactionInfoByID(t[KEY])) or 0;
 	end,
-	["reputationThreshold"] = function(t)
+	reputationThreshold = function(t)
 		return { GetFactionStanding(t.reputation) };
 	end,
-	["ceiling"] = function(t)
-		local _, _, _, m, ma = GetFactionInfoByID(t.factionID);
+	ceiling = function(t)
+		local _, _, _, m, ma = GetFactionInfoByID(t[KEY]);
 		return ma and m and (ma - m);
 	end,
-	["standing"] = function(t)
-		return select(3, GetFactionInfoByID(t.factionID)) or 1;
+	standing = function(t)
+		return select(3, GetFactionInfoByID(t[KEY])) or 1;
 	end,
-	["maxstanding"] = function(t)
+	maxstanding = function(t)
 		local minReputation = t.minReputation;
-		if minReputation and minReputation[1] == t.factionID then
+		if minReputation and minReputation[1] == t[KEY] then
 			return GetFactionStanding(minReputation[2]);
 		end
 		return 8;
 	end,
-	["standingName"] = function(t)
+	standingName = function(t)
 		local standing = StandingByID[t.standing];
 		return standing and standing.name or UNKNOWN;
 	end,
-	["standingText"] = function(t)
+	standingText = function(t)
 		local standing = StandingByID[t.standing];
 		if standing then
 			return Colorize(standing.name or UNKNOWN, standing.color);
@@ -219,10 +237,10 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 			return UNKNOWN;
 		end
 	end,
-	["rank"] = function(t)
+	rank = function(t)
 		return t.standing;
 	end,
-	["rankText"] = function(t)
+	rankText = function(t)
 		local standing = StandingByID[t.rank];
 		if standing then
 			return Colorize(standing.name or UNKNOWN, standing.color);
@@ -230,17 +248,17 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 			return UNKNOWN;
 		end
 	end,
-	["sortProgress"] = function(t)
+	sortProgress = function(t)
 		return ((t.reputation or -42000) + 42000) / 84000;
 	end,
 },
 C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	isFriend = app.ReturnTrue,
 	friendInfo = function(t)
-		return C_GossipInfo_GetFriendshipReputation(t.factionID);
+		return C_GossipInfo_GetFriendshipReputation(t[KEY]);
 	end,
 	text = function(t)
-		local ranks = C_GossipInfo_GetFriendshipReputationRanks(t.factionID);
+		local ranks = C_GossipInfo_GetFriendshipReputationRanks(t[KEY]);
 		return Colorize(t.name, GetProgressColor(math_min(ranks.currentLevel, ranks.maxLevel) / ranks.maxLevel));
 	end,
 	name = function(t)
@@ -268,16 +286,16 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 		return { t.reputation, 0 };
 	end,
 	standing = function(t)
-		return C_GossipInfo_GetFriendshipReputationRanks(t.factionID).currentLevel;
+		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).currentLevel;
 	end,
 	maxstanding = function(t)
-		return C_GossipInfo_GetFriendshipReputationRanks(t.factionID).maxLevel;
+		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).maxLevel;
 	end,
 	standingName = function(t)
 		return t.friendInfo.reaction;
 	end,
 	standingText = function(t)
-		local ranks = C_GossipInfo_GetFriendshipReputationRanks(t.factionID);
+		local ranks = C_GossipInfo_GetFriendshipReputationRanks(t[KEY]);
 		return Colorize(t.standingName, GetProgressColor(math_min(ranks.currentLevel, ranks.maxLevel) / ranks.maxLevel));
 	end,
 	rankText = function(t)
@@ -285,10 +303,10 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 		return Colorize(TRADESKILL_RANK_HEADER:format(standing), GetProgressColor(math_min(standing, maxstanding) / maxstanding));
 	end,
 },
-function(t) return C_GossipInfo_GetFriendshipReputation(t.factionID).friendshipFactionID ~= 0; end,
+function(t) return C_GossipInfo_GetFriendshipReputation(t[KEY]).friendshipFactionID ~= 0; end,
 C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 	renownInfo = function(t)
-		return C_MajorFactions_GetMajorFactionData(t.factionID);
+		return C_MajorFactions_GetMajorFactionData(t[KEY]);
 	end,
 	text = function(t)
 		local standing, maxstanding = t.standing, t.maxstanding;
@@ -310,7 +328,7 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 			GetProgressColor(math_min(standing, maxstanding) / maxstanding));
 		if standing < maxstanding then
 			title = title .. DESCRIPTION_SEPARATOR .. info.renownReputationEarned .. " / " .. info.renownLevelThreshold;
-			
+
 			local remaining = (maxstanding * 2500) - ((standing * 2500) + info.renownReputationEarned);	-- 2500 per renown level
 			if remaining > 0 then
 				title = title .. " (" .. remaining .. " to " .. COVENANT_RENOWN_LEVEL_TOAST:format(maxstanding)  .. ")";
@@ -325,7 +343,7 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 		return t.renownInfo.renownLevel;
 	end,
 	maxstanding = function(t)
-		local maxstanding = #C_MajorFactions_GetRenownLevels(t.factionID);
+		local maxstanding = #C_MajorFactions_GetRenownLevels(t[KEY]);
 		if maxstanding then
 			t.maxstanding = maxstanding;
 			return maxstanding;
@@ -346,7 +364,31 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 			GetProgressColor(math_min(standing, maxstanding) / maxstanding));
 	end,
 },
-function(t) return C_MajorFactions_GetMajorFactionData(t.factionID) end);
+function(t) return C_MajorFactions_GetMajorFactionData(t[KEY]) end);
+
+if app.IsRetail then
+	app.AddEventHandler("OnRefreshCollections", function()
+		local faction
+		local saved, none = {}, {}
+		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+			faction = app.SearchForObject(KEY, id)
+			if faction.standing >= faction.maxstanding then
+				saved[id] = true
+			else
+				none[id] = true
+			end
+		end
+		-- Character Cache
+		app.SetBatchCached(CACHE, saved, 1)
+		app.SetBatchCached(CACHE, none)
+		-- Account Cache (removals handled by Sync)
+		app.SetBatchAccountCached(CACHE, saved, 1)
+	end);
+end
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+end);
 
 -- External APIs
 app.CreateFactionStandingFromText = function(text)
@@ -403,7 +445,7 @@ app.AddEventHandler("OnLoad", function()
 					faction.rank = standingId;
 					local minRankText = faction.rankText;
 					if offset ~= 0 then minRankText = offset .. " " .. minRankText; end
-					
+
 					-- Max Standing
 					local maxFaction = app.CreateFaction(ma[1]);
 					maxFaction.reputation = ma[2];

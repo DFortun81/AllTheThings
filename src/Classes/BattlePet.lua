@@ -104,6 +104,7 @@ do
 			collected = function(t)
 				local id = t[KEY];
 				-- character collected
+				-- TODO: this prevents ATT added to collection message since it becomes 'collected' prior to the cache being set
 				if CollectedSpeciesHelper[id] then return 1; end
 				-- certain Battle Pets are per Character, so we can implicitly check for them as Account-Wide since Battle Pets have no toggle for that
 				-- account-wide collected
@@ -167,7 +168,8 @@ do
 			-- app.PrintDebug("NEW_PET_ADDED", petID, speciesID);
 			if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) == 1 and not rawget(CollectedSpeciesHelper, speciesID) then
 				CollectedSpeciesHelper[speciesID] = 1;
-				app.SetAccountCollected(nil, CACHE, speciesID, true)
+				local pet = app.SearchForObject(KEY, speciesID, "field")
+				app.SetAccountCollected(pet, CACHE, speciesID, true)
 				app.UpdateRawID(KEY, speciesID);
 			end
 		end)
@@ -179,7 +181,8 @@ do
 			if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
 				-- app.PrintDebug("Pet Missing",speciesID);
 				CollectedSpeciesHelper[speciesID] = nil;
-				app.SetAccountCollected(nil, CACHE, speciesID)
+				local pet = app.SearchForObject(KEY, speciesID, "field")
+				app.SetAccountCollected(pet, CACHE, speciesID)
 				app.UpdateRawID(KEY, speciesID);
 			end
 		end)

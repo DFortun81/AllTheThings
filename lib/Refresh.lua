@@ -275,23 +275,12 @@ app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
 app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
 
 RefreshCollections = function()
-	local currentCharacter = app.CurrentCharacter;
 	if InCombatLockdown() then
 		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
 		while InCombatLockdown() do coroutine.yield(); end
 	else
 		print(app.L.REFRESHING_COLLECTION);
 	end
-
-	-- Refresh Factions
-	local faction;
-	wipe(currentCharacter.Factions);
-	for factionID,_ in pairs(app.GetRawFieldContainer("factionID")) do
-		faction = app.SearchForObject("factionID", factionID);
-		-- simply reference the .saved property of each known Faction to re-calculate the character value
-		if faction and faction.saved then end
-	end
-	coroutine.yield();
 
 	-- Execute the OnRefreshCollections handlers.
 	-- TODO: Take all the bulk of this function and make them use the event handler.

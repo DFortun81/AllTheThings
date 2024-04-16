@@ -335,22 +335,22 @@ settings.Initialize = function(self)
 	self:UpdateMode()
 
 	if self:GetTooltipSetting("Auto:MainList") then
-		app.AddEventHandler("OnReady", function()
+		app.AddEventHandler("OnInit", function()
 			app:GetWindow("Prime"):SetVisible(true)
 		end)
 	end
 	if self:GetTooltipSetting("Auto:MiniList") then
-		app.AddEventHandler("OnReady", function()
+		app.AddEventHandler("OnInit", function()
 			app:GetWindow("CurrentInstance"):SetVisible(true)
 		end)
 	end
 	if self:GetTooltipSetting("Auto:RaidAssistant") then
-		app.AddEventHandler("OnReady", function()
+		app.AddEventHandler("OnInit", function()
 			app:GetWindow("RaidAssistant"):SetVisible(true)
 		end)
 	end
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
-		app.AddEventHandler("OnReady", function()
+		app.AddEventHandler("OnInit", function()
 			app:GetWindow("WorldQuests"):SetVisible(true)
 		end)
 	end
@@ -374,6 +374,11 @@ settings.Initialize = function(self)
 	app.DoRefreshAppearanceSources = settings:Get("Thing:Transmog")
 	-- app.PrintDebug("settings.Initialize:Done")
 end
+-- dumb self-referencing...
+local function SettingsInitialize()
+	settings:Initialize()
+end
+app.AddEventHandler("OnLoad", SettingsInitialize)
 local function rawcopy(source, copy)
 	if source and copy then
 		for k,v in pairs(source) do

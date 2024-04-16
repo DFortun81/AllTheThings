@@ -98,6 +98,7 @@ src\Classes\PVP Ranks.lua
 src\Classes\Races.lua
 src\Classes\Title.lua
 src\Classes\Transmog.lua
+src\Classes\Spell.lua
 src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes

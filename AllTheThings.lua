@@ -6718,207 +6718,6 @@ app.CreateProfession = function(id, t)
 end
 end)();
 
--- Spell Lib
-(function()
-local GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo =
-	  GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo
-
--- Consolidates some spell checking
-local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
-    if IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
-        or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
-        return true;
-    end
-	if spellID == 390631 and IsQuestFlaggedCompleted(66444) then	-- Ottuk Taming returning false for the above functions
-		return true;
-	end
-	if spellID == 241857 or spellID == 231437 and IsQuestFlaggedCompleted(46319) then	-- Lunarwing returning false for the above functions
-		return true;
-	end
-	if spellID == 148972 or spellID == 148970 and IsQuestFlaggedCompleted(32325) then	-- Green Dread/Fel-Steed returning false for the above functions
-		return true;
-	end
-end
-app.IsSpellKnownHelper = IsSpellKnownHelper;
-
-local SpellIDToSpellName = {};
-local SpellNameToSpellID;
-local GetSpellName = function(spellID)
-	local spellName = SpellIDToSpellName[spellID];
-	if spellName then return spellName; end
-	spellName = GetSpellInfo(spellID);
-	if spellName and spellName ~= "" then
-		SpellIDToSpellName[spellID] = spellName;
-		SpellNameToSpellID[spellName] = spellID;
-		return spellName;
-	end
-end
-app.GetSpellName = GetSpellName;
-SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
-	__index = function(t, key)
-		local cache = SearchForFieldContainer("spellID");
-		for spellID,g in pairs(cache) do
-			GetSpellName(spellID);
-		end
-		for _,spellID in pairs(app.SkillIDToSpellID) do
-			GetSpellName(spellID);
-		end
-		for specID,spellID in pairs(app.SpecializationSpellIDs) do
-			GetSpellName(spellID);
-		end
-		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), select(4, GetSpellTabInfo(1)), "", 1;
-		for spellTabIndex=2,numSpellTabs do
-			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
-			for spellIndex=1,numSpells do
-				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset + spellIndex, BOOKTYPE_SPELL);
-				if spellName then
-					if lastSpellName == spellName then
-						currentSpellRank = currentSpellRank + 1;
-					else
-						lastSpellName = spellName;
-						currentSpellRank = 1;
-					end
-					GetSpellName(spellID, currentSpellRank);
-					SpellNameToSpellID[spellName] = spellID;
-				-- else
-				-- 	print("GetSpellInfo:Failed",offset + spellIndex);
-				end
-			end
-			offset = offset + numSpells;
-		end
-		return rawget(t, key);
-	end
-});
-app.SpellNameToSpellID = SpellNameToSpellID;
--- Represents a small lookup of a select set of Profession/Skill-related icons
-local SkillIcons = setmetatable({
-	[2720] = 2915722,	-- Junkyard Tinkering
-	[2891] = 3054888,	-- Ascension Crafting
-	[2811] = 2578727,	-- Stygia Crafting
-	[2819] = 3747898,	-- Protoform Synthesis
-	[2847] = 4638460,	-- Tuskarr Fishing Gear
-	[2886] = 1394946,	-- Supply Shipments
-}, { __index = function(t, key)
-	if not key then return; end
-	local skillSpellID = app.SkillIDToSpellID[key];
-	if skillSpellID then
-		local _, _, icon = GetSpellInfo(skillSpellID);
-		return icon;
-	end
-end
-});
-
-local cache = app.CreateCache("_cachekey");
-local function CacheInfo(t, field)
-	local _t, id = cache.GetCached(t);
-	if t.itemID then
-		local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-		if link then
-			_t.name = name;
-			_t.link = link;
-			_t.icon = icon;
-		end
-	else
-		local name, _, icon = GetSpellInfo(id);
-		_t.name = name;
-		-- typically, the profession's spell icon will be a better representation of the spell if the spell is tied to a skill
-		_t.icon = SkillIcons[t.skillID] or icon;
-		local link = GetSpellLink(id);
-		_t.link = link;
-	end
-	-- track number of attempts to cache data for fallback to default values
-	local retries = (_t.retries or 0) + 1;
-	if retries > app.MaximumItemInfoRetries then
-		_t.name = t.itemID and "Item #"..t.itemID or "Spell #"..t.spellID;
-		-- fallback to skill icon if possible
-		_t.icon = SkillIcons[t.skillID] or 136243;	-- Trade_engineering
-		_t.link = _t.name;
-	end
-	_t.retries = retries;
-	if field then return _t[field]; end
-end
-
-local fields = {
-	["key"] = function(t)
-		return "spellID";
-	end,
-	["_cachekey"] = function(t)
-		return t.itemID and t.spellID + (t.itemID / 1000000) or t.spellID;
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	["link"] = function(t)
-		return cache.GetCachedField(t, "link", CacheInfo);
-	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", CacheInfo) or 136243;	-- Trade_engineering
-	end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
-		local spellID = t.spellID;
-		if app.CurrentCharacter.Spells[spellID] then return true; end
-		if IsSpellKnownHelper(spellID) then
-			app.CurrentCharacter.Spells[spellID] = 1;
-			ATTAccountWideData.Spells[spellID] = 1;
-			return true;
-		end
-	end,
-	["collectible"] = app.ReturnFalse,
-	["collected"] = function(t)
-		if t.saved then return 1; end
-		if app.Settings.AccountWide.Recipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
-	end,
-	["specs"] = function(t)
-		if t.itemID then
-			return GetFixedItemSpecInfo(t.itemID);
-		end
-	end,
-	["tsm"] = function(t)
-		if t.itemID then
-			return ("i:%d"):format(t.itemID);
-		end
-	end,
-	["skillID"] = function(t)
-		return t.requireSkill;
-	end,
-};
-app.BaseSpell = app.BaseObjectFields(fields, "BaseSpell");
-app.CreateSpell = function(id, t)
-	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
-end
-
--- Recipe Lib
-local recipeFields = RawCloneData(fields, {
-	["filterID"] = function(t)
-		return 200;
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Recipes;
-		-- TODO: revise? this prevents showing a BoP, wrong-profession Recipe under a BoE used to obtain it, when within a Popout and NOT tracking Account-Wide Recipes
-		-- return app.Settings.Collectibles.Recipes and
-		-- 	(
-		--	-- If tracking Account-Wide, then all Recipes are inherently collectible
-		-- 	app.Settings.AccountWide.Recipes or
-		--	-- Otherwise must be learnable by the Character specifically
-		-- 	app.CurrentCharacter.Professions[t.requireSkill]
-		-- 	);
-	end,
-	["collected"] = function(t)
-		if t.saved then return 1; end
-		if app.Settings.AccountWide.Recipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
-	end,
-	["b"] = function(t)
-		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
-		return t.itemID and app.Settings.AccountWide.Recipes and 2 or 1;
-	end,
-});
-app.BaseRecipe = app.BaseObjectFields(recipeFields, "BaseRecipe");
-app.CreateRecipe = function(id, t)
-	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
-end
-end)();
-
 -- Processing Functions
 do
 local DefaultGroupVisibility, DefaultThingVisibility;
@@ -12793,7 +12592,6 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
 		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
-		self:RegisterEvent("NEW_RECIPE_LEARNED");
 		self:SetData({
 			['text'] = L.PROFESSION_LIST,
 			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp",
@@ -13098,25 +12896,6 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 					end
 				end
 				self:RefreshRecipes(true);
-			elseif e == "NEW_RECIPE_LEARNED" then
-				-- spellID, rank, previousSpellID
-				local spellID = ...;
-				if spellID then
-					local previousState = ATTAccountWideData.Spells[spellID];
-					ATTAccountWideData.Spells[spellID] = 1;
-					if not app.CurrentCharacter.Spells[spellID] then
-						app.CurrentCharacter.Spells[spellID] = 1;
-						UpdateRawID("spellID",spellID);
-						if not previousState or not app.Settings.AccountWide.Recipes then
-							app.HandleEvent("OnThingCollected", "Recipes")
-							if app.Settings:GetTooltipSetting("Report:Collected") then
-								local link = app:Linkify(spellID, app.Colors.ChatLink, "search:spellID:"..spellID);
-								print(NEW_RECIPE_LEARNED_TITLE, link);
-							end
-						end
-						app.WipeSearchCache();
-					end
-				end
 			elseif e == "TRADE_SKILL_CLOSE"
 				or e == "GARRISON_TRADESKILL_NPC_CLOSED" then
 				self:SetVisible(false);
@@ -14559,6 +14338,7 @@ app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
 end);
 app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", function() app.HandleEvent("OnUpdateWindows") end);
 
+app.ActiveCustomCollects = {};
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
@@ -14572,7 +14352,6 @@ app.Startup = function()
 	L = setmetatable(app.L, { __index = AllTheThingsAD.UserLocale });
 	app.L = L;
 	app.CategoryNames = nil;
-	app.ActiveCustomCollects = {};
 
 	-- Character Data Storage
 	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);
@@ -14641,10 +14420,8 @@ app.Startup = function()
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
-	-- Account Wide Settings
-	local accountWideSettings = app.Settings.AccountWide;
 	-- Notify Event Handlers that Saved Variable Data is available.
-	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
+	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData);
 
 	-- Update the total account wide death counter.
 	local deaths = 0;
@@ -14673,14 +14450,10 @@ app.Startup = function()
 		AllTheThingsAD[key] = nil;
 	end
 	GetDataMember("LinkedAccounts", {});
-
-	-- Init the Settings before working with data
-	app.Settings:Initialize();
-
-	-- Execute the OnStartup handlers.
-	app.HandleEvent("OnStartup")
 	-- app.PrintMemoryUsage("Startup:Done")
 end
+-- This needs to be the first OnStartup event processed
+app.AddEventHandler("OnStartup", app.Startup, true)
 
 local function PrePopulateAchievementSymlinks()
 	local achCache = app.SearchForFieldContainer("achievementID")
@@ -15003,7 +14776,7 @@ end
 			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 	end
 	function app:SearchLink(group)
-		if not group then group = {text="EMPTY",key="empty",empty="empty"} end
+		if not group then return end
 		return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
 	end
 	-- Turns a bit of text into a chat-sendable link which other ATT users will attempt to understand
@@ -15093,13 +14866,11 @@ end
 	end
 end)();
 
--- Register Event for startup
-app:RegisterEvent("ADDON_LOADED");
-
 -- Define Event Behaviours
 app.AddonLoadedTriggers = {
 	[appName] = function()
-		app.Startup();
+		-- OnLoad events
+		app.HandleEvent("OnLoad")
 	end,
 	["Blizzard_AuctionHouseUI"] = function()
 		app.Blizzard_AuctionHouseUILoaded = true;
@@ -15108,10 +14879,11 @@ app.AddonLoadedTriggers = {
 		end
 	end,
 };
-app.events.ADDON_LOADED = function(addonName)
+-- Register Event for startup
+app:RegisterFuncEvent("ADDON_LOADED", function(addonName)
 	local addonTrigger = app.AddonLoadedTriggers[addonName];
 	if addonTrigger then addonTrigger(); end
-end
+end)
 
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
@@ -15126,8 +14898,5 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		end
 	end
 end
-
--- OnLoad events
-app.HandleEvent("OnLoad")
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");

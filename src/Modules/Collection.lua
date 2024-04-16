@@ -65,7 +65,7 @@ local function PendingCollectionCoroutine()
 		local f = t.f;
 		if f then allTypes[f] = true; end
 		if reportCollected then
-			app.print(L.ITEM_ID_ADDED:format((t.text or UNKNOWN), t[t.key] or "???"));
+			app.print(L.ITEM_ID_ADDED:format(app:SearchLink(t) or t.text or UNKNOWN, t[t.key] or "???"));
 		end
 		any = true;
 	end
@@ -84,7 +84,7 @@ local function PendingCollectionCoroutine()
 	any = false;
 	for hash,t in pairs(pendingRemovals) do
 		if reportCollected then
-			app.print(L.ITEM_ID_REMOVED:format((t.text or UNKNOWN), t[t.key] or "???"));
+			app.print(L.ITEM_ID_REMOVED:format(app:SearchLink(t) or t.text or UNKNOWN, t[t.key] or "???"));
 		end
 		any = true;
 	end
@@ -126,7 +126,8 @@ local function RemoveFromCollection(group)
 	end
 end
 
-app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, accountWideSettings)
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	local accountWide = app.Settings.AccountWide
 	-- Returns the cached status for this Account for a given field ID
 	local function IsAccountCached(field, id)
 		return accountWideData[field][id] or nil
@@ -141,7 +142,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	end
 	-- Returns the tracked status for this Account for a given field ID
 	local function IsAccountTracked(field, id)
-		return accountWideSettings[field] and accountWideData[field][id] or nil
+		return accountWide[field] and accountWideData[field][id] or nil
 	end
 	-- Allows directly saving a cached state for a table of ids for a given field at the Account level
 	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
@@ -161,135 +162,72 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			container[id] = state
 		end
 	end
-	local function SetAccountCollected(t, field, id, collected)
-		-- app.PrintDebug("SC:A",t and t.hash,field,id,collected)
-		local container = accountWideData[field];
-		local oldstate = container[id];
+	local function SetAccountCollected(t, field, id, collected, settingKey)
+		-- app.PrintDebug("SC:A",t and t.hash,t and t.collectible,t and t.collected,field,id,collected)
+		local oldstate = IsAccountCached(field, id)
 		if collected then
 			if not oldstate then
-				AddToCollection(t);
-				container[id] = 1;
-				-- if t exists, then AddToCollection does some handling of collection stuff...
-				if not t then
-					app.HandleEvent("OnThingCollected", field)
-				end
-			end
-			return 1;
-		elseif oldstate then
-			RemoveFromCollection(t);
-			container[id] = nil;
-			-- if t exists, then RemoveFromCollection does some handling of collection stuff...
-			if not t then
-				app.HandleEvent("OnThingRemoved", field)
-			end
-		end
-	end
-	local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
-		-- app.PrintDebug("SCS:A",t and t.hash,field,subtype,id,collected)
-		local container = accountWideData[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				AddToCollection(t);
-				container[id] = 1;
-				-- if t exists, then AddToCollection does some handling of collection stuff...
-				if not t then
-					app.HandleEvent("OnThingCollected", field)
-				end
-			end
-			return 1;
-		elseif oldstate then
-			RemoveFromCollection(t);
-			container[id] = nil;
-			-- if t exists, then RemoveFromCollection does some handling of collection stuff...
-			if not t then
-				app.HandleEvent("OnThingRemoved", field)
-			end
-		end
-	end
-	local function SetCollected(t, field, id, collected)
-		-- app.PrintDebug("SC",t and t.hash,field,id,collected)
-		local container = currentCharacter[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				if t and accountWideSettings[field] and not accountWideData[field][id] then
-					AddToCollection(t);
+				-- if it's a known collectible thing not collected under current settings, then collect it
+				if t and t.collectible and not t.collected then
+					AddToCollection(t)
 				else
 					-- if t exists, then AddToCollection does some handling of collection stuff...
-					app.HandleEvent("OnThingCollected", field)
+					app.HandleEvent("OnThingCollected", settingKey or field)
 				end
-				container[id] = 1;
-				accountWideData[field][id] = 1;
-			else
-				accountWideData[field][id] = 1;
 			end
-			return 1;
-		elseif oldstate then
-			container[id] = nil;
-			-- this is handled by RecalculateAccountWideData
-			-- for guid,other in pairs(characterData) do
-			-- 	local otherContainer = other[field];
-			-- 	if otherContainer and otherContainer[id] then
-			-- 		accountWideData[field][id] = 1;
-			-- 		return accountWideSettings[field] and 2;
-			-- 	end
-			-- end
+			accountWideData[field][id] = 1
+			return 1
+		end
+		if oldstate then
+			-- basically have to recalculate account data to know if this thing is still technically collected
+			-- via another character data, so clear it anyway
 			if accountWideData[field][id] then
-				RemoveFromCollection(t);
-				accountWideData[field][id] = nil;
+				RemoveFromCollection(t)
+				accountWideData[field][id] = nil
 				-- if t exists, then RemoveFromCollection does some handling of collection stuff...
 				if not t then
-					app.HandleEvent("OnThingRemoved", field)
+					app.HandleEvent("OnThingRemoved", settingKey or field)
 				end
 			end
 		end
 		return accountWideData[field][id] and 2 or nil
 	end
-	local function SetCollectedForSubType(t, field, subtype, id, collected)
-		-- app.PrintDebug("SCS",t and t.hash,field,subtype,id,collected)
-		local container = currentCharacter[field];
-		local oldstate = container[id];
+	-- Use this when the collection state of a Thing changes
+	local function SetCollected(t, field, id, collected, settingKey)
+		-- app.PrintDebug("SC",t and t.hash,field,id,collected)
+		local oldstate = IsCached(field, id)
 		if collected then
 			if not oldstate then
-				if t and accountWideSettings[subtype] and not accountWideData[field][id] then
-					AddToCollection(t);
+				-- if it's a known collectible thing not collected under current settings, then collect it
+				if t and t.collectible and not t.collected then
+					AddToCollection(t)
 				else
 					-- if t exists, then AddToCollection does some handling of collection stuff...
-					app.HandleEvent("OnThingCollected", field)
+					app.HandleEvent("OnThingCollected", settingKey or field)
 				end
-				container[id] = 1;
-				accountWideData[field][id] = 1;
-			else
-				accountWideData[field][id] = 1;
 			end
-			return 1;
-		elseif oldstate then
-			container[id] = nil;
-			-- this is handled by RecalculateAccountWideData
-			-- for guid,other in pairs(characterData) do
-			-- 	local otherContainer = other[field];
-			-- 	if otherContainer and otherContainer[id] then
-			-- 		accountWideData[field][id] = 1;
-			-- 		return accountWideSettings[subtype] and 2;
-			-- 	end
-			-- end
+			SetCached(field, id, 1)
+			accountWideData[field][id] = 1
+			return 1
+		end
+		if oldstate then
+			-- basically have to recalculate account data to know if this thing is still technically collected
+			-- via another character data, so clear it anyway
 			if accountWideData[field][id] then
-				RemoveFromCollection(t);
-				accountWideData[field][id] = nil;
+				RemoveFromCollection(t)
+				accountWideData[field][id] = nil
 				-- if t exists, then RemoveFromCollection does some handling of collection stuff...
 				if not t then
-					app.HandleEvent("OnThingRemoved", field)
+					app.HandleEvent("OnThingRemoved", settingKey or field)
 				end
 			end
 		end
-		return accountWideData[subtype][id] and 2 or nil
+		SetCached(field, id, nil)
+		return accountWideData[field][id] and 2 or nil
 	end
 	app.SetAccountCollected = SetAccountCollected;
-	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
 	app.SetCached = SetCached
 	app.SetCollected = SetCollected;
-	app.SetCollectedForSubType = SetCollectedForSubType;
 	app.IsCached = IsCached
 	app.IsAccountCached = IsAccountCached
 	app.IsAccountTracked = IsAccountTracked
