@@ -98,6 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 70154 },	-- A Gateway to Somewhere
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 48.6, 30.3, THE_AZURE_SPAN },
+					--["timeline"] = { REMOVED_10_2_6 },	-- TODO: Is this removed?
 					["g"] = {
 						ach(16291),	-- An Ancient Awakening
 						i(198858),	-- Energized Arcana Vessel
@@ -107,6 +108,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						crit(54646, {	-- Rubyscale Outpost
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
+					},
+				}),
+				q(79989, {	-- An Ancient Awakening
+					["sourceQuests"] = { 70154 },	-- A Gateway to Somewhere
+					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
+					["coord"] = { 48.6, 30.3, THE_AZURE_SPAN },
+					["timeline"] = { ADDED_10_2_6 },
+					["g"] = {
+						--[[	-- TODO: Is this a replacement quest of the original one? (questID 70156)
+						ach(16291),	-- An Ancient Awakening
+						i(198858),	-- Energized Arcana Vessel
+						crit(54646, {	-- Cobalt Assembly
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
+						crit(54646, {	-- Rubyscale Outpost
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
+						]]--
 					},
 				}),
 				------ RENOWN 8 ------

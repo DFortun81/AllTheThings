@@ -1997,7 +1997,6 @@ root(ROOTS.Unsorted, {
 				q(79466),	-- [DNT] Renown Reward 004
 				q(79702),	--
 				q(79988),	--
-				q(79989),	--
 				q(80171),	--
 				q(80172),	-- Ensemble: Gladiator's Battered Armor
 				q(80335),	--
