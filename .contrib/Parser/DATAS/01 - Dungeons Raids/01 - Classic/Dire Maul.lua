@@ -1139,7 +1139,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					n(14354, {	-- Pusillin
 						["description"] = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
 						["groups"] = {
-							i(18249),	-- Crescent Key
+							i(18249, {	-- Crescent Key
+								-- #if BEFORE 4.0.3
+								["description"] = "This key is required to enter the Gordok Commons and Capital Gardens.",
+								-- #elseif AFTER 5.2.0
+								["description"] = "This key no longer have any practical use, and disappears from the inventory like a conjured item.", -- Removed with 4.0.3, and started dropping again with 5.2.0 for no apparent reason.
+								-- #endif
+							}),
 							i(18261),	-- Book of Incantations
 							i(207297, {	-- Grimoire of the Felblaze Imp (CI!)
 								["timeline"] = { ADDED_10_1_5 },
