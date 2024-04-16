@@ -1245,8 +1245,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/10 Naga Explorer slain
 							["provider"] = { "n", 1907 },	-- Naga Explorer
 						}),
-						objective(1, {	-- 0/1 Holy Spring Water
-							["provider"] = { "i", 737 },	-- Holy Spring Water
+						objective(2, {	-- 0/1 Holy Spring Water
+							["providers"] = {
+								{ "i", 737 },	-- Holy Spring Water
+								{ "o", 759 },	-- The Holy Spring
+							},
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
 						}),
 						i(4112, {	-- Choker of the High Shaman

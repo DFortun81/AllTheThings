@@ -2857,7 +2857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Chet the Slime-Breeder slain
 							["provider"] = { "n", 48322 },	-- Chet the Slime-Breeder
-							["coord"] = { 47.8, 72,6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 47.8, 72.6, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65718, {	-- Lethality Leggings
 							["timeline"] = { "added 4.0.3.13287" },

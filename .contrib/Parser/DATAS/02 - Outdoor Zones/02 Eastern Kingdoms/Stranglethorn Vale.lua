@@ -886,10 +886,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(619, {	-- Enticing Negolash
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
-							["cost"] = {
-								{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
-								{ "i", 4595, 5 },	-- Junglevine Wine
-							},
+							["cost"] = {{ "i", 4457, 10 }},	-- Barbecued Buzzard Wing
 							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 							["timeline"] = { "removed 4.0.3" },
 							["repeatable"] = true,
@@ -899,6 +896,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "i", 3935 },	-- Smotts' Cutlass
 									["coord"] = { 32.5, 81.9, STRANGLETHORN_VALE },
 									["cr"] = 1494,	-- Negolash
+								}),
+								objective(2, {	-- 0/5 Junglevine Wine
+									["provider"] = { "i", 4595 },	-- Junglevine Wine
+									["coord"] = { 40.8, 73.6, STRANGLETHORN_VALE },
+									["cr"] = 2832,	-- Nixxrax Fillamug <Food & Drink>
 								}),
 							},
 						}),
@@ -1237,8 +1239,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/10 Naga Explorer slain
 							["provider"] = { "n", 1907 },	-- Naga Explorer
 						}),
-						objective(1, {	-- 0/1 Holy Spring Water
-							["provider"] = { "i", 737 },	-- Holy Spring Water
+						objective(2, {	-- 0/1 Holy Spring Water
+							["providers"] = {
+								{ "i", 737 },	-- Holy Spring Water
+								{ "o", 759 },	-- The Holy Spring
+							},
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
 						}),
 						i(4112, {	-- Choker of the High Shaman
