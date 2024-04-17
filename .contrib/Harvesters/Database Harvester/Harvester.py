@@ -525,6 +525,8 @@ def add_latest_data(build: str) -> None:
             if difference:
                 before_list.append(build + "\n")
                 before_list.extend(difference)
+            else:
+                print("Nothing New")
             before_list.extend(after_list)
             before_list = list(dict.fromkeys(before_list))
         with open(raw_path, "w") as raw_file:

@@ -395,7 +395,10 @@ class Transmog(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Item names are in Item Sparse db.
-        return f"{row['ID']}{DELIMITER}{row['ItemID']}"
+        sourceID, itemID = 'ID', 'ItemID'
+        if build == "10.2.7.54171":  # Cursed build
+            sourceID, itemID = 'Field_10_2_7_54171_000', 'Field_10_2_7_54171_001'
+        return f"{row[sourceID]}{DELIMITER}{row[itemID]}"
 
 
 class Creatures(Thing):
