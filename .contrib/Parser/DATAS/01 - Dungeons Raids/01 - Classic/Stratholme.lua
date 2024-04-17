@@ -343,7 +343,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Scourge Data
-							["provider"] = { "i", 13176 },	-- Scourge Data
+							["providers"] = {
+								{ "i",  13176 },	-- Scourge Data
+								{ "o", 176249 },	-- Scourge Data
+							},
 						}),
 						i(19812, {	-- Rune of the Dawn
 							["timeline"] = { "removed 4.0.3" },
