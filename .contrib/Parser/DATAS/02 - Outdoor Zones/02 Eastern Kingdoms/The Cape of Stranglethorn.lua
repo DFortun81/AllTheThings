@@ -2201,6 +2201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.8, 75.4, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 				}),
 				q(8552, {	-- The Monogrammed Sash

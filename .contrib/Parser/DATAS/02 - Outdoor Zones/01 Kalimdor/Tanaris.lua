@@ -2986,12 +2986,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10892,	-- Imperial Plate Armor [H]
 					},
 					-- #endif
-					-- #if BEFORE 4.0.3
-					["description"] = "You need 265 Blacksmithing. Does not require a specialization.",
-					-- #endif
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 				}),
 				q(25072, {	-- A Few Good Goblins
@@ -3035,6 +3033,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 7931, 2 },	-- Mithril Coif
 						{ "i", 7928, 1 },	-- Ornate Mithril Shoulder
@@ -3289,6 +3288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.4, 29.0, TANARIS },
 					-- #endif
 					["requireSkill"] = COOKING,
+					["learnedAt"] = 225,
 					["altQuests"] = { 13825 },	-- Clamlette Surprise
 					["cost"] = {
 						{ "i", 12207, 12 },	-- Giant Egg
@@ -3317,6 +3317,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
 					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)
 					["requireSkill"] = COOKING,
+					["learnedAt"] = 225,
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
 						recipe(18260, {	-- Cooking (Artisan)
@@ -3457,6 +3458,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(10418, {	-- Glimmering Mithril Insignia
@@ -3613,6 +3615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.0, 41.4, IRONFORGE },
 					["timeline"] = { "added 2.5.1", "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -3622,6 +3625,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 80.0, 23.3, ORGRIMMAR },
 					["timeline"] = { "added 2.5.1", "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -3632,6 +3636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 20 },	-- Thorium Bar
 					},
@@ -3648,6 +3653,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 40 },	-- Thorium Bar
 					},
@@ -3664,6 +3670,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 20 },	-- Thorium Bar
 					},
@@ -3680,6 +3687,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 60 },	-- Thorium Bar
 					},
@@ -3696,6 +3704,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 50 },	-- Thorium Bar
 					},
@@ -3712,6 +3721,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 60 },	-- Thorium Bar
 					},
@@ -3728,6 +3738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 20 },	-- Thorium Bar
 					},
@@ -4480,6 +4491,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 7930, 2 },	-- Heavy Mithril Breastplate
 						{ "i", 7927, 1 },	-- Ornate Mithril Gloves
@@ -4740,23 +4752,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25067,	-- Thunderdrome: The Ginormus!
 					["coord"] = { 51.7, 28.0, TANARIS },
 					["timeline"] = { "added 4.0.3.13277" },
-				}),
-				q(6611, {	-- To Gadgetzan You Go!
-					-- #if BEFORE 4.0.3
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
-					["coord"] = { 57.4, 53.6, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["description"] = "Becomes available at Classic Cooking skill level 225 when character level requirement is met.",
-					["coord"] = { 32.2, 69.4, ORGRIMMAR },
-					-- #else
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
-					["coord"] = { 32.2, 69.4, ORGRIMMAR },
-					-- #endif
-					["qg"] = 3399,	-- Zamja
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(25053, {	-- To The Ground! (A)
 					["qg"] = 38704,	-- Kelsey Steelspark

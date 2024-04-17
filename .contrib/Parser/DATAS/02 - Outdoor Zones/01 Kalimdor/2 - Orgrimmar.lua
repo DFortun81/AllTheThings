@@ -604,6 +604,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 140,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 2868, 2 },	-- Patterned Bronze Bracers
@@ -685,6 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 80.4, 23.2, ORGRIMMAR },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -1109,6 +1111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 140,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 3851, 2 },	-- Solid Iron Maul
@@ -1142,6 +1145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 140,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
@@ -1376,6 +1380,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 140,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 7958, 4 },	-- Bronze Battle Axe
@@ -1787,6 +1792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["qg"] = 3399,	-- Zamja
 					["requireSkill"] = COOKING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 15),
@@ -1869,6 +1875,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 140,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 3836, 4 },	-- Green Iron Helm
@@ -2038,15 +2045,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6608, {	-- You Too Good.
 					["qg"] = 3332,	-- Lumak <Fishing Trainer>
-					-- #if BEFORE LEGION
-					["description"] = "Requires 225 Fishing to start this quest.",
-					-- #endif
 					-- #if AFTER CATA
 					["coord"] = { 66.6, 41.6, ORGRIMMAR },
 					-- #else
 					["coord"] = { 69.8, 29.6, ORGRIMMAR },
 					-- #endif
 					["requireSkill"] = FISHING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 15),

@@ -853,9 +853,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2762,	-- The Great Silver Deceiver
 						2763,	-- The Art of the Imbue
 					},
-					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 				}),
 				q(26776, {	-- Ghaliri
@@ -1738,6 +1739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3575, 40 },	-- Iron Bar
 						{ "i", 3860, 40 },	-- Mithril Bar
@@ -2013,6 +2015,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 3864, 4 },	-- Citrine
@@ -2190,6 +2193,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 6037, 5 },	-- Truesilver Bar

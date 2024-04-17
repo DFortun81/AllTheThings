@@ -3006,6 +3006,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["cost"] = { { "i", 6040, 6 } },	-- Golden Scale Bracers
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,

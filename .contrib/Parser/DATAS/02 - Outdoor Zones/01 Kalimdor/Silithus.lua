@@ -798,6 +798,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.8, 39, SILITHUS },
 					-- #endif
 					["requireSkill"] = COOKING,
+					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
 				}),
 				applyclassicphase(PHASE_FIVE, q(8497, {	-- Desert Survival Kits (A)
@@ -1178,6 +1179,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["cost"] = {{ "i", 20452, 10 }},	-- Smoked Desert Dumplings
 					["requireSkill"] = COOKING,
+					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
 				}),
 				q(8341, {	-- Lords of the Council
@@ -1361,6 +1363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.9, 45.3, SILITHUS },
 					-- #endif
 					["requireSkill"] = COOKING,
+					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						recipe(24801),	-- Smoked Desert Dumplings
@@ -2852,6 +2855,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						11883,	-- Twilight Master <Twilight's Hammer>
 						15213,	-- Twilight Overlord <Twilight's Hammer>
 						11882,	-- Twilight Stonecaller <Twilight's Hammer>
+					},
+				}),
+				i(20424, {	-- Sandworm Meat
+					["crs"] = {
+						11740,	-- Dredge Striker
+						11741,	-- Dredge Crusher
 					},
 				}),
 				applyclassicphase(PHASE_FIVE, i(20384, {	-- Silithid Carapace Fragment

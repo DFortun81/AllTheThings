@@ -1504,6 +1504,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						end
 					end]],
 					["requireSkill"] = FISHING,
+					["learnedAt"] = 225,
 					["lvl"] = 35,
 					["groups"] = {
 						i(45858, {	-- Nat's Lucky Fishing Pole
@@ -1521,7 +1522,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 13826 },	-- Nat Pagle, Angler Extreme
 					-- #endif
 					["coord"] = { 58.6, 60.0, DUSTWALLOW_MARSH },
-					["description"] = "Requires 225 Fishing to start this quest.",
 					["maps"] = {
 						FERALAS,
 						SWAMP_OF_SORROWS,
@@ -1532,6 +1532,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["requireSkill"] = FISHING,
+					["learnedAt"] = 225,
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Feralas Ahi
