@@ -304,6 +304,8 @@
 3.4.3.52237
 416158@@@Nightmarish Emerald Drake
 423869@@@Avatar of Flame
+3.4.3.54261
+446902@@@Polly Roger
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
