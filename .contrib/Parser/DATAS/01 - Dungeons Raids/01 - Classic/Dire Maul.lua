@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		},
 		["mapID"] = DIRE_MAUL,
 		-- #if ANYCLASSIC
-		["maps"] = { 235, 236, 239 },
+		["maps"] = { 235, 236, 237, 238, 239 },
 		-- #endif
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
@@ -302,28 +302,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				}),
-				q(7481, {	-- Elven Legends
-					["qg"] = 14373,	-- Sage Korolusk
-					-- #if BEFORE 4.0.3
-					["description"] = "The objective is next to Lorekeeper Lydros in the Dire Maul West Library.",
-					-- #endif
-					["coord"] = { 75.3, 43.8, FERALAS },
+				{	-- Elven Legends
+					["allianceQuestData"] = q(7482, {	-- Elven Legends (A)
+						["qg"] = 14374,	-- Scholar Runethorn
+						["coord"] = { 31.2, 43.9, FERALAS },
+					}),
+					["hordeQuestData"] = q(7481, {	-- Elven Legends (H)
+						["qg"] = 14373,	-- Sage Korolusk
+						["coord"] = { 75.3, 43.8, FERALAS },
+					}),
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { 236 },	-- Capital Gardens
-					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
-				}),
-				q(7482, {	-- Elven Legends
-					["qg"] = 14374,	-- Scholar Runethorn
-					-- #if BEFORE 4.0.3
-					["description"] = "The objective is next to Lorekeeper Lydros in the Dire Maul West Library.",
-					-- #endif
-					["coord"] = { 31.2, 43.9, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 54,
-				}),
+					["groups"] = {
+						objective(1, {	-- Master Telmius Dreamseeker Found
+							["provider"] = { "o", 179544 },	-- Skeletal Remains of Telmius Dreamseeker
+						}),
+					},
+				},
 				applyclassicphase(PHASE_THREE, q(7649, {	-- Enchanted Thorium Platemail: Volume I
 					["providers"] = {
 						-- #IF BEFORE 4.0.3

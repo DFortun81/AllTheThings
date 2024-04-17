@@ -2434,8 +2434,7 @@ end");
             public static void Merge(List<object> container, IDictionary<string, object> data2)
             {
                 // clean up unique quests being treated as one quest for purposes that are irrelevant to Retail
-                if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd)
-                    && !Program.PreProcessorTags.ContainsKey("ANYCLASSIC")) // Crieve wants AQD/HQD and doesn't agree with this, but will allow it outside of Classic Builds.
+                if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd))
                 {
                     // questID used in both faction data objects
                     if (aqd.TryGetValue("questID", out long aQuestID) && hqd.TryGetValue("questID", out long hQuestID))
@@ -2446,8 +2445,6 @@ end");
                             data2["questID"] = aQuestID;
                             aqd.Remove("questID");
                             hqd.Remove("questID");
-
-                            LogDebug($"Converted AQD/HQD type into single Quest for Retail.", data2);
                         }
                         else
                         {
