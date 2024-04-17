@@ -9,7 +9,8 @@ local LFR = 90;
 local function FatedItem(modItemID, modID)
 	local item = i(math.floor(modItemID));
 	item.modID = modID;
-	item.sym = {{"select","itemID",modItemID}};	-- Base Version
+	item.skipFill = true
+	item.sym = {{"select","itemID",modItemID},{"groupfill"}};	-- Base Version & Fill
 	item.timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH };
 	item.nomerge = true
 	return item;

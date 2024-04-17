@@ -746,6 +746,7 @@ app.MergeSkipFields = {
 	isUpgrade = true,
 	upgradeTotal = true,
 	iconPath = true,
+	hash = true,
 	-- fields added to a group from GetSearchResults
 	tooltipInfo = true,
 	working = true,
@@ -1464,7 +1465,7 @@ end
 do
 local select, tremove, unpack =
 	  select, tremove, unpack;
-local FinalizeModID, PruneFinalized
+local FinalizeModID, PruneFinalized, FillFinalized
 -- Checks if any of the provided arguments can be found within the first array object
 local function ContainsAnyValue(arr, ...)
 	local value;
@@ -1844,6 +1845,10 @@ local ResolveFunctions = {
 			end
 		end
 	end,
+	-- Instruction to perform an immediate 'FillGroups' against the objects in the finalized set prior to returning the results
+	["groupfill"] = function(finalized, searchResults, o)
+		FillFinalized = true
+	end,
 };
 
 -- Replace achievementy_criteria function if criteria API doesn't exist
@@ -2186,6 +2191,7 @@ ResolveSymbolicLink = function(o)
 
 	FinalizeModID = nil;
 	PruneFinalized = nil;
+	FillFinalized = nil
 	-- app.PrintDebug("Fresh Resolve:",oHash)
 	local searchResults, finalized = {}, {};
 	HandleCommands(finalized, searchResults, o, oSym)
@@ -2202,6 +2208,7 @@ ResolveSymbolicLink = function(o)
 	local cloned = {};
 	-- app.PrintDebug("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.")
 	local sHash, clone
+	local Fill = app.FillGroups
 	for i=1,#finalized do
 		clone = finalized[i]
 
@@ -2221,6 +2228,11 @@ ResolveSymbolicLink = function(o)
 				for _,field in ipairs(PruneFinalized) do
 					clone[field] = nil
 				end
+			end
+			if FillFinalized then
+				-- app.PrintDebug("Fill",clone.hash)
+				Fill(clone)
+				clone.skipFill = 2
 			end
 
 			-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
@@ -3353,7 +3365,8 @@ local function DetermineNPCDrops(group, FillData)
 	end
 end
 local function SkipFillingGroup(group, FillData)
-	if group.skipFill and FillData.InWindow then return true; end
+	local skipFill = group.skipFill
+	if (skipFill and FillData.InWindow) or skipFill == 2 then return true; end
 
 	-- do not fill the same object twice in multiple Locations
 	local groupHash, included = group.hash, FillData.Included;
