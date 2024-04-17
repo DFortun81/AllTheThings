@@ -1,44 +1,10 @@
+10.2.6.54070
+ach(40171),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
+ach(40192),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
+ach(40193),	-- Into the Storm (copy)
 10.2.7.54171
-ach(19879),	-- Landfall
-ach(19880),	-- Isle of Thunder
 ach(19881),	-- Escalation
-ach(19882),	-- Campaign: The Jade Forest
-ach(19883),	-- Campaign: The Jade Forest
-ach(19884),	-- Campaign: Valley of the Four Winds
-ach(19885),	-- Campaign: Krasarang Wilds
-ach(19886),	-- Campaign: Krasarang Wilds
-ach(19887),	-- Campaign: Kun-Lai Summit
-ach(19888),	-- Campaign: Kun-Lai Summit
-ach(19889),	-- Campaign: Townlong Steppes
-ach(19890),	-- Campaign: Dread Wastes
-ach(19891),	-- Campaign: Landfall
-ach(19892),	-- Campaign: Isle of Thunder
 ach(19893),	-- A Brewing Storm
-ach(19894),	-- Temple of the Jade Serpent
-ach(19895),	-- Heroic: Temple of the Jade Serpent
-ach(19896),	-- Stormstout Brewery
-ach(19897),	-- Heroic: Stormstout Brewery
-ach(19898),	-- Shado-Pan Monastery
-ach(19899),	-- Heroic: Shado-Pan Monastery
-ach(19900),	-- Siege of Niuzao Temple
-ach(19901),	-- Heroic: Siege of Niuzao Temple
-ach(19902),	-- Gate of the Setting Sun
-ach(19903),	-- Heroic: Gate of the Setting Sun
-ach(19904),	-- Mogu'shan Palace
-ach(19905),	-- Heroic: Mogu'shan Palace
-ach(19906),	-- Scarlet Halls
-ach(19907),	-- Heroic: Scarlet Halls
-ach(19908),	-- Scarlet Monastery
-ach(19909),	-- Heroic: Scarlet Monastery
-ach(19910),	-- Scholomance
-ach(19911),	-- Heroic: Scholomance
-ach(19912),	-- Order of the Cloud Serpent
-ach(19913),	-- The August Celestials
-ach(19914),	-- Shado-Pan
-ach(19915),	-- The Klaxxi
-ach(19916),	-- Golden Lotus
-ach(19917),	-- Operation: Shieldwall
-ach(19918),	-- Dominance Offensive
 ach(19919),	-- Kirin Tor Offensive
 ach(19920),	-- Sunreaver Onslaught
 ach(19921),	-- Shado-Pan Assault
@@ -66,30 +32,7 @@ ach(19942),	-- Dark Heart of Pandaria
 ach(19943),	-- Heroic: Dark Heart of Pandaria
 ach(19944),	-- Secrets of Ragefire
 ach(19945),	-- Heroic: Secrets of Ragefire
-ach(19946),	-- Raid Finder: Mogu'shan Vaults
-ach(19947),	-- Mogu'shan Vaults
-ach(19948),	-- Heroic: Mogu'shan Vaults
-ach(19949),	-- Raid Finder: Heart of Fear
-ach(19950),	-- Heart of Fear
-ach(19951),	-- Heroic: Heart of Fear
-ach(19952),	-- Raid Finder: Terrace of Endless Spring
-ach(19953),	-- Terrace of Endless Spring
-ach(19954),	-- Heroic: Terrace of Endless Spring
-ach(19955),	-- Raid Finder: Throne of Thunder
-ach(19956),	-- Throne of Thunder
-ach(19957),	-- Heroic: Throne of Thunder
-ach(19958),	-- Raid Finder: Siege of Orgrimmar
-ach(19959),	-- Siege of Orgrimmar
-ach(19960),	-- Heroic: Siege of Orgrimmar
-ach(19961),	-- Mythic: Siege of Orgrimmar
-ach(19962),	-- Tour The Jade Forest
-ach(19963),	-- Tour Valley of the Four Winds
-ach(19964),	-- Tour Krasarang Wilds
-ach(19965),	-- Tour Kun-Lai Summit
-ach(19966),	-- Tour Townlong Steppes
-ach(19967),	-- Tour Dread Wastes
 ach(19970),	-- Tour Timeless Isle
-ach(19977),	-- Hidden Treasures: The Jade Forest
 ach(19978),	-- Hidden Treasures: Valley of the Four Winds
 ach(19979),	-- Hidden Treasures: Krasarang Wilds
 ach(19980),	-- Hidden Treasures: Kun-Lai Summit
@@ -100,38 +43,17 @@ ach(19994),	-- Elusive Foes: Valley of the Four Winds
 ach(19995),	-- Elusive Foes: Krasarang Wilds
 ach(19996),	-- Elusive Foes: Kun-Lai Summit
 ach(19997),	-- Elusive Foes: Townlong Steppes
-ach(19998),	-- Elusive Foes: Dread Wastes
-ach(19999),	-- Elusive Foes: Landfall
-ach(20000),	-- Elusive Foes: Isle of Thunder
 ach(20001),	-- Elusive Foes: Timeless Isle
 ach(20002),	-- Powerful Enemies: Timeless Isle
 ach(20003),	-- Timeless Isle
 ach(20004),	-- Heroic: Pandaria Scenarios
-ach(20005),	-- Heroic: Pandaria Dungeons
 ach(20006),	-- Pandaria Raids
 ach(20007),	-- Heroic: Pandaria Raids
-ach(20008),	-- Looking For Group: The Jade Forest
-ach(20009),	-- Looking For Group: Valley of the Four Winds
-ach(20011),	-- Looking For Group: Kun-Lai Summit
-ach(20012),	-- Looking For Group: Townlong Steppes
-ach(20014),	-- Looking For Group: Vale of Eternal Blossoms
-ach(20015),	-- Looking For Group: Isle of Thunder
 ach(20016),	-- Looking For Group: Timeless Isle
-ach(20017),	-- Salyis's Warband
-ach(20018),	-- Sha of Anger
-ach(20019),	-- Nalak, the Storm Lord
-ach(20020),	-- Oondasta
-ach(20021),	-- Chi-ji, the Red Crane
-ach(20022),	-- Yu'lon, the Jade Serpent
-ach(20023),	-- Niuzao, the Black Ox
-ach(20024),	-- Xuen, the White Tiger
-ach(20025),	-- Ordos
-ach(20026),	-- Explore Jade Forest
 ach(20027),	-- Explore Valley of the Four Winds
 ach(20028),	-- Explore Krasarang Wilds
 ach(20029),	-- Explore Kun-Lai Summit
 ach(20030),	-- Explore Townlong Steppes
-ach(20031),	-- Explore Dread Wastes
 ach(20039),	-- [DNT] Damage - Humanoid
 ach(20046),	-- [DNT] Damage - Beast
 ach(20047),	-- [DNT] Damage - Aberration
@@ -156,22 +78,6 @@ ach(20065),	-- [DNT] Stat - Primary
 ach(20066),	-- [DNT] Stat - Speed
 ach(20067),	-- [DNT] Stat - Stamina
 ach(20068),	-- [DNT] Stat - Versatility
-ach(20069),	-- Elusive Foes: Vale of Eternal Blossoms
 ach(20477),	-- [DNT] Stat - Experience
 ach(20500),	-- Lion's Landing
-ach(20527),	-- Infinite Power I
-ach(20528),	-- Infinite Power II
-ach(20529),	-- Infinite Power III
-ach(20530),	-- Infinite Power IV
-ach(20531),	-- Infinite Power V
-ach(20532),	-- Infinite Power VI
-ach(20533),	-- Infinite Power VII
-ach(20534),	-- Infinite Power VIII
-ach(20535),	-- Infinite Power IX
-ach(20536),	-- Infinite Power X
-ach(20537),	-- Infinite Power XI
-ach(20538),	-- Infinite Power XII
-ach(40171),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
-ach(40192),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
-ach(40193),	-- Into the Storm (copy)
 ach(40227),	-- Realm First! Mythic Garrosh

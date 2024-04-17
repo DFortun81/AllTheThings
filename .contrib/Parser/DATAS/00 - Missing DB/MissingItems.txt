@@ -1683,7 +1683,6 @@ i(8528),	-- et Powder \\ Violet Powder
 i(8543),	-- Underwater Mushroom Cap
 i(8544),	-- weave Bandage \\ Mageweave Bandage
 i(8545),	-- y Mageweave Bandage \\ Heavy Mageweave Bandage
-i(8564),	-- ogryph Egg \\ Hippogryph Egg
 i(8594),	-- ct Analysis Report \\ Insect Analysis Report
 i(8603),	-- tleshrub Dew \\ Thistleshrub Dew
 i(8623),	-- 17/TN Distress Beacon \\ OOX-17/TN Distress Beacon
@@ -2389,10 +2388,6 @@ i(12208),	-- er Wolf Meat \\ Tender Wolf Meat
 i(12211),	-- Spiced Wolf Ribs
 i(12220),	-- ct Elemental Bracer \\ Intact Elemental Bracer
 i(12223),	-- y Bat Wing \\ Meaty Bat Wing
-i(12230),	-- ood Slime Sample \\ Felwood Slime Sample
-i(12234),	-- upted Felwood Sample \\ Corrupted Felwood Sample
-i(12235),	-- oro Slime Sample \\ Un'Goro Slime Sample
-i(12236),	-- Un'Goro Sample \\ Pure Un'Goro Sample
 i(12244),	-- Test Agility Chest
 i(12245),	-- Test Spirit Chest
 i(12262),	-- y Worg Pup Cage \\ Empty Worg Pup Cage
@@ -2429,6 +2424,7 @@ i(12724),	-- ce's Parcel \\ Janice's Parcel
 i(12729),	-- Viagra
 i(12730),	-- sh's Scroll \\ Warosh's Scroll
 i(12733),	-- ed Frostsaber Meat \\ Sacred Frostsaber Meat
+i(12738),	-- on Outhouse Key \\ Dalson Outhouse Key
 i(12762),	-- Secrecy of Plans
 i(12763),	-- Un'Goro Etherfruit
 i(12770),	-- u's Information \\ Bijou's Information
@@ -2677,8 +2673,6 @@ i(14872),	-- on's Gift \\ Tirion's Gift
 i(14894),	-- Root \\ Lily Root
 i(15002),	-- oya's Pike \\ Nimboya's Pike
 i(15044),	-- el of Plagueland Termites \\ Barrel of Plagueland Termites
-i(15102),	-- oro Tested Sample \\ Un'Goro Tested Sample
-i(15103),	-- upt Tested Sample \\ Corrupt Tested Sample
 i(15208),	-- rion Moondust \\ Cenarion Moondust
 i(15314),	-- le of Relics \\ Bundle of Relics
 i(15326),	-- en Gleaming Throwing Axe \\ Broken Gleaming Throwing Axe \\ Gleaming Throwing Axe
@@ -13014,7 +13008,7 @@ i(46734),	-- le Triage Kit \\ Battle Triage Kit
 i(46739),	-- ol's Rod \\ Dartol's Rod
 i(46741),	-- olg Ear \\ Furbolg Ear
 i(46742),	-- en Grain \\ Stolen Grain
-i(46754),	-- Tweedle's Tiny Parcel \\ dle's Tiny Package \\ Tweedle's Tiny Package
+i(46754),	-- dle's Tiny Package \\ Tweedle's Tiny Parcel \\ Tweedle's Tiny Package
 i(46768),	-- der's Head \\ Sploder's Head
 i(46769),	-- dle's Pow-Pow Powder \\ Tweedle's Pow-Pow Powder
 i(46770),	-- ed Wolf Collar \\ Spiked Wolf Collar
@@ -13796,7 +13790,7 @@ i(53053),	-- ered Treasure Map \\ Tattered Treasure Map
 i(53054),	-- e Chest Key \\ Horde Chest Key
 i(53059),	-- Scrap Metal \\ Rent Scrap Metal
 i(53060),	-- htened Animal \\ Frightened Animal
-i(53061),	-- Crate of Crab Meat \\ of Crabs \\ Case of Crabs
+i(53061),	-- of Crabs \\ Crate of Crab Meat \\ Case of Crabs
 i(53073),	-- ksnap Tail \\ Clacksnap Tail
 i(53074),	-- rah's Keepsake \\ Adarrah's Keepsake
 i(53075),	-- Adarrah's Diamond Ring
@@ -15771,12 +15765,9 @@ i(61319),	-- ny Stankroot \\ Thorny Stankroot
 i(61321),	-- e of Rope \\ Piece of Rope
 i(61322),	-- e of Rope \\ Piece of Rope
 i(61323),	-- Seeds \\ Ruby Seeds
-i(61349),	-- rmed Land Mine \\ Disarmed Land Mine
-i(61356),	-- en Silversnap Ice \\ Stolen Silversnap Ice
 i(61362),	-- beacon's Parcel \\ Highbeacon's Parcel
 i(61363),	-- llery Flare \\ Artillery Flare
 i(61367),	-- llery Flare \\ Artillery Flare
-i(61373),	-- k of Questionable Publications \\ Stack of Questionable Publications
 i(61374),	-- le of Torches \\ Bundle of Torches
 i(61376),	-- ended Starlight \\ Suspended Starlight
 i(61377),	-- Baroness' Missive \\ The Baroness' Missive
@@ -15797,7 +15788,6 @@ i(61507),	-- sey's Appendages \\ Dempsey's Appendages
 i(61508),	-- sey's Giblets \\ Dempsey's Giblets
 i(61510),	-- Legion Battle Plan \\ 7th Legion Battle Plan
 i(61511),	-- ck Signal \\ Attack Signal
-i(61633),	-- ct Swampshore Tail \\ Intact Swampshore Tail
 i(61634),	-- ploded Mortar Shell \\ Unexploded Mortar Shell
 i(61635),	-- QA PVP Test Caster Spirit Offhand
 i(61636),	-- QA PVP Test Healer Spirit Shield
@@ -16082,9 +16072,6 @@ i(61916),	-- QA PVP Test Warrior DPS Set Gloves
 i(61917),	-- QA PVP Test Warrior DPS Set Helm
 i(61918),	-- QA PVP Test Warrior DPS Set Legs
 i(61919),	-- QA PVP Test Warrior DPS Set Shoulders
-i(61921),	-- sand-Thread-Count Fuse \\ Thousand-Thread-Count Fuse
-i(61922),	-- a-Pure Blasting Powder \\ Extra-Pure Blasting Powder
-i(61923),	-- mwheedle Ditty Bag \\ Steamwheedle Ditty Bag
 i(61924),	-- Head \\ Za's Head
 i(61925),	-- 's Head \\ Brox's Head
 i(61926),	-- le's Head \\ Beeble's Head
@@ -16126,7 +16113,6 @@ i(62020),	-- Itharius' Scroll
 i(62022),	-- Scroll of Hakkar
 i(62032),	-- Monster - Mace, Wildhammer Stormhammer (Lightning)
 i(62033),	-- Assassin's Pendant \\ Dark Assassin's Pendant
-i(62043),	-- o Swampstrider Drumstick \\ Jumbo Swampstrider Drumstick
 i(62054),	-- of the Stars \\ Orbs of the Stars
 i(62056),	-- ed Documents \\ Forged Documents
 i(62058),	-- diated Bandages \\ Irradiated Bandages
@@ -16224,8 +16210,6 @@ i(62512),	-- l Animal Bone \\ Small Animal Bone
 i(62513),	-- fied Black Dragon Egg \\ Purified Black Dragon Egg
 i(62514),	-- ked Pincer \\ Cracked Pincer
 i(62515),	-- nce of Irritation \\ Essence of Irritation
-i(62516),	-- ard Supplies \\ Stonard Supplies
-i(62517),	-- er of the Fallen \\ Banner of the Fallen
 i(62518),	-- ked Stone Shard \\ Cracked Stone Shard
 i(62519),	-- ing Stone \\ Keening Stone
 i(62520),	-- id Moss \\ Rancid Moss
@@ -16248,10 +16232,7 @@ i(62542),	-- Control Scrambler \\ Mech Control Scrambler
 i(62543),	-- ka's Doll \\ Aprika's Doll
 i(62545),	-- a's Dried Roses \\ Meara's Dried Roses
 i(62546),	-- an's Ivory Hammer \\ Parlan's Ivory Hammer
-i(62548),	-- er of the Fallen \\ Banner of the Fallen
 i(62549),	-- red Meat \\ Charred Meat
-i(62550),	-- erblossom \\ Prayerblossom
-i(62551),	-- ct Stagalbog Serpent Heart \\ Intact Stagalbog Serpent Heart
 i(62552),	-- une Card \\ Fortune Card
 i(62553),	-- une Card \\ Fortune Card
 i(62554),	-- une Card \\ Fortune Card
@@ -16293,7 +16274,6 @@ i(62589),	-- une Card \\ Fortune Card
 i(62590),	-- une Card \\ Fortune Card
 i(62591),	-- une Card \\ Fortune Card
 i(62592),	-- red Highland Birch \\ Charred Highland Birch
-i(62593),	-- gorated Silt \\ Invigorated Silt
 i(62598),	-- une Card \\ Fortune Card
 i(62599),	-- une Card \\ Fortune Card
 i(62600),	-- une Card \\ Fortune Card
@@ -16305,7 +16285,6 @@ i(62605),	-- une Card \\ Fortune Card
 i(62606),	-- une Card \\ Fortune Card
 i(62607),	-- n Activation Device \\ Titan Activation Device
 i(62608),	-- m Chest Key Code \\ Uldum Chest Key Code
-i(62609),	-- spring Mote \\ Purespring Mote
 i(62610),	-- n Device Component \\ Titan Device Component
 i(62611),	-- n Activation Device \\ Titan Activation Device
 i(62612),	-- Art Template Cloth Belt - Cataclysm_B_01 - Blue
@@ -16363,7 +16342,6 @@ i(62710),	-- Art Template Leather Head  - Leather_Cataclysm_B_01 - Purple
 i(62711),	-- Art Template Leather Legs  - Leather_Cataclysm_B_01 - Purple
 i(62712),	-- Art Template Leather Shoulder  - Leather_Cataclysm_B_01 - Purple
 i(62713),	-- Art Template Leather Wrist  - Leather_Cataclysm_B_01 - Purple
-i(62714),	-- fang's Hide \\ Duskfang's Hide
 i(62723),	-- Art Template Mail Belt  - Mail_Cataclysm_B_01 - Brown
 i(62724),	-- Art Template Mail Boot  - Mail_Cataclysm_B_01 - Brown
 i(62725),	-- Art Template Mail Chest  - Mail_Cataclysm_B_01 - Brown
@@ -16390,7 +16368,6 @@ i(62745),	-- Art Template Plate Legs - Plate_Cataclysm_B_01 - Black
 i(62746),	-- Art Template Plate Shoulder - Plate_Cataclysm_B_01 - Black
 i(62747),	-- Art Template Plate Wrist - Plate_Cataclysm_B_01 - Black
 i(62748),	-- nterspear Report \\ Splinterspear Report
-i(62749),	-- y Crystal \\ Smoky Crystal
 i(62750),	-- nethyst Crystals \\ Draenethyst Crystals
 i(62752),	-- Art Template Plate Wrist  - Plate_Common_C_01 - Default
 i(62753),	-- Art Template Cloth Belt  - Robe_Common_C_01 - Blue - UNUSED
