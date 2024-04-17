@@ -532,7 +532,7 @@ local function RefreshTradeSkillCache()
 		end
 	end
 end
-app.AddEventHandler("OnInit", RefreshTradeSkillCache)
+app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
 app.AddEventHandler("OnStartup", function()
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.professionName = function(spellID)
@@ -4867,6 +4867,10 @@ local function CacheInfo(t, field)
 	_t.icon = icon or QUESTION_MARK_ICON;
 	if field then return _t[field]; end
 end
+local function DelayedOnUpdateWindows()
+	AfterCombatOrDelayedCallback(app.HandleEvent, 1, "OnUpdateWindows")
+end
+app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", DelayedOnUpdateWindows);
 local fields = {
 	["key"] = function(t)
 		return "achievementID";
@@ -14336,7 +14340,6 @@ app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
 	app:UnregisterEvent("LOOT_CLOSED");
 	app:RegisterEvent("LOOT_CLOSED");
 end);
-app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", function() app.HandleEvent("OnUpdateWindows") end);
 
 app.ActiveCustomCollects = {};
 -- Called when the Addon is loaded to process initial startup information
