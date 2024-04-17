@@ -66,7 +66,7 @@ local function CreateHash(t)
 				end
 			end
 		elseif key == "difficultyID" then
-			local instanceID = GetRelativeValue(t, "instanceID") or GetRelativeValue(t, "headerID");
+			local instanceID = GetRelativeValue(t, "instanceID") or GetRelativeValue(t, "headerID") or (t.symParent and t.symParent.instanceID)
 			if instanceID then hash = hash .. "-" .. instanceID; end
 		elseif key == "headerID" then
 			-- for custom headers, they may be used in conjunction with other bits of data that we don't want to merge together (because it makes no sense)
