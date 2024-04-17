@@ -3742,6 +3742,13 @@
 6317@@@Hero of the Horde: Ruthless
 6321@@@Ruthless Gladiator's Twilight Drake
 6322@@@Ruthless Gladiator's Twilight Drake
+4.4.0.54137
+4912@@@Guild Reputation: Exalted
+4943@@@Guild Reputation: Neutral
+4944@@@Guild Reputation: Friendly
+4945@@@Guild Reputation: Honored
+4946@@@Guild Reputation: Revered
+5492@@@Guild Reputation: Exalted
 5.0.3.15882
 110@@@Lich King 5-player boss defeated the most
 131@@@Journeyman Medic

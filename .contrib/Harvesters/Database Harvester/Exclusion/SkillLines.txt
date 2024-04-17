@@ -549,3 +549,4 @@
 2816@@@Adventurer
 2897@@@Pet - Core Hound
 2898@@@Explorer Imp
+2899@@@All - Guild Perks Granted to All Players

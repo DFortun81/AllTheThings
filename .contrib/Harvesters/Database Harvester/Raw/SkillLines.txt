@@ -302,6 +302,8 @@
 818@@@Beetle
 821@@@All - Guild Perks
 824@@@Hydra
+4.4.0.54137
+2899@@@All - Guild Perks Granted to All Players
 5.0.3.15882
 795@@@Hunter
 796@@@Death Knight
