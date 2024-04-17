@@ -1727,6 +1727,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "n", 2703 },	-- Zengu
 						{ "i", 4467 },	-- Sigil of Ignaeus
+						{ "o", 2703 },	-- Trollbane's Tomb
 					},
 					["sourceQuest"] = 644,	-- Sigil of Trollbane
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
@@ -1736,7 +1737,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(646, {	-- Trol'kalar (2/2)
 					["providers"] = {
-						{ "n", 2703 },	-- Trollbane's Tomb
+						{ "o", 2703 },	-- Trollbane's Tomb
 						{ "i", 4468 },	-- Sheathed Trol'kalar
 					},
 					["sourceQuest"] = 645,	-- Trol'kalar (1/2)

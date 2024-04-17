@@ -1427,6 +1427,7 @@ _.ObjectNames = {
 	[2691] = "Stone of East Binding",
 	[2701] = "Iridescent Shards",
 	[2702] = "Stone of Inner Binding",
+	[2703] = "Trollbane's Tomb",
 	[2704] = "Cache of Explosives",
 	[2707] = "Maiden's Folly Charts",
 	[2708] = "Spirit of Silverpine Charts",
