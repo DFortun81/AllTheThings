@@ -13652,6 +13652,10 @@
 40079@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 32 [DNT]
 40080@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 36 [DNT]
 40081@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 40 [DNT]
+10.2.6.54070
+40171@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
+40192@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
+40193@@@Into the Storm (copy)
 10.2.7.54171
 17918@@@Undead Battler of Zaralek Cavern
 19871@@@Infinite Power
@@ -13835,9 +13839,6 @@
 20537@@@Infinite Power XI
 20538@@@Infinite Power XII
 20593@@@Time Trial
-40171@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
-40192@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
-40193@@@Into the Storm (copy)
 40223@@@Timerunner
 40226@@@Realm First! Timerunner
 40227@@@Realm First! Mythic Garrosh
