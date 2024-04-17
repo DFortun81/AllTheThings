@@ -124,7 +124,11 @@ EXPERT_ARTISAN_ENGINEERING = {
 	r(12591),	-- Unstable Trigger
 };
 GNOMISH_ENGINEERING = {
-	r(20219),	-- Gnomish Engineer
+	r(20219, {	-- Gnomish Engineer
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+	}),
 	r(12906),	-- Gnomish Battle Chicken
 	r(12759),	-- Gnomish Death Ray
 	r(12897),	-- Gnomish Goggles
@@ -136,7 +140,11 @@ GNOMISH_ENGINEERING = {
 	r(12895),	-- Inlaid Mithril Cylinder Plans
 };
 GOBLIN_ENGINEERING = {
-	r(20222),	-- Goblin Engineer
+	r(20222, {	-- Goblin Engineer
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+	}),
 	r(12755),	-- Goblin Bomb Dispenser
 	r(12718),	-- Goblin Construction Helmet
 	r(12908),	-- Goblin Dragon Gun
