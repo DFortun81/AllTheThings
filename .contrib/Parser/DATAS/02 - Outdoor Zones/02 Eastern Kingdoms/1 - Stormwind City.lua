@@ -304,7 +304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["groups"] = CLASSIC_CATA_MINING,
 					}),
 				}),
-				prof(ENCHANTING, {
+				prof(POISONS, {
 					n(13283, {	-- Lord Tony Romano <Rogue Trainer>
 						["coord"] = { 79.6, 61.2, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,

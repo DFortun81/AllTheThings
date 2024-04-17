@@ -284,6 +284,32 @@ i(85224);	-- Basic Seed Pack
 i(140360);	-- Rockwurm Barb
 i(153119);	-- Wyrmtongue Cache of Finery
 -------------------------------------------------------------------- NOT SORTED --------------------------------------------------------------------
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+-- #if AFTER WRATH
+i(5530);	-- Blinding Powder
+i(3775);	-- Crippling Poison
+i(3776);	-- Crippling Poison II
+i(2892);	-- Deadly Poison
+i(2893);	-- Deadly Poison II
+i(8984);	-- Deadly Poison III
+i(8985);	-- Deadly Poison IV
+i(20844);	-- Deadly Poison V
+i(6947);	-- Instant Poison
+i(6949);	-- Instant Poison II
+i(6950);	-- Instant Poison III
+i(8926);	-- Instant Poison IV
+i(8927);	-- Instant Poison V
+i(8928);	-- Instant Poison VI
+i(5237);	-- Mind-Numbing Poison
+i(6951);	-- Mind-Numbing Poison II
+i(9186);	-- Mind-Numbing Poison III
+i(10918);	-- Wound Poison
+i(10920);	-- Wound Poison II
+i(10921);	-- Wound Poison III
+i(10922);	-- Wound Poison IV
+-- #endif
 
 -----------------
 -- PATCH 4.0.3 --

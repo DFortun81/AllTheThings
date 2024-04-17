@@ -170,14 +170,18 @@ DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf(
 		}),
 		applyclassicphase(BFA_PHASE_ONE, r(264487, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Engineering
 		r(169080),	-- Gearspring Parts
-		r(178242),	-- Gearspring Parts [Max Level] Might be Uncollectible /Braghe
+		r(178242, {	-- Gearspring Parts [Max Level] Might be Uncollectible /Braghe
+			["collectible"] = false,
+		}),
 		r(162204),	-- Goblin Glider Kit
 		r(173308),	-- Mecha-Blast Rocket
 		r(177054),	-- Recipe: Secrets of Draenor Engineering
 		r(173309),	-- Shieldtronic Shield
 		r(162207),	-- Stealthman 54
 		r(169140),	-- Ultimate Gnomish Army Knife
-		r(162208),	-- Ultimate Gnomish Army Knife [If you have BoP Already] Might be Uncollectible /Braghe
+		r(162208, {	-- Ultimate Gnomish Army Knife [If you have BoP Already] Might be Uncollectible /Braghe
+			["collectible"] = false,
+		}),
 	},
 })));
 COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
