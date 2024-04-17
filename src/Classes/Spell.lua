@@ -174,15 +174,42 @@ do
 		end,
 	},
 	function(t) return t.itemID end)
+
+	local CheckRecipeLearned
+	if C_TradeSkillUI then
+		-- local C_TradeSkillUI = C_TradeSkillUI
+		CheckRecipeLearned = function(recipeID)
+			-- TODO: currently this bricks the game instantly. thanks blizz
+			-- local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeID)
+			-- app.PrintTable(spellRecipeInfo)
+			-- recipe is learned, so cache that it's learned regardless of being craftable
+			-- if app.TEST and spellRecipeInfo and spellRecipeInfo.learned then
+			-- 	-- Shadowlands recipes are weird...
+			-- 	-- local rank = spellRecipeInfo.unlockedRecipeLevel or 0
+			-- 	-- if rank > 0 then
+			-- 	-- 	-- when the recipeID specifically is available, it will show as available for ALL possible ranks
+			-- 	-- 	-- so we can check if the next known rank is also considered available for this recipeID
+			-- 	-- 	spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID, rank + 1)
+			-- 	-- 	app.PrintDebug("NextRankCheck",recipeID,rank + 1, spellRecipeInfo.learned)
+			-- 	-- end
+			-- 	return spellRecipeInfo.learned
+			-- end
+		end
+	else
+		CheckRecipeLearned = app.EmptyFunction
+	end
+
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
 		local saved, none = {}, {}
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-			state = IsSpellKnownHelper(id)
+			state = IsSpellKnownHelper(id) or CheckRecipeLearned(id)
 			if state ~= nil then
 				saved[id] = true
 			else
-				none[id] = true
+				-- for now, don't uncache learned Spells for the character...
+				-- Recipes are weird, and can only properly be refreshed via a TradeSkill window (without crashing the game anyway...)
+				-- none[id] = true
 			end
 		end
 		-- Character Cache
