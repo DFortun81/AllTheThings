@@ -36,10 +36,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			q(54647, {	-- Ale Intent (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(52165, {	-- Automated Chaos
+			petbattle(q(52165, {	-- Automated Chaos
 				["provider"] = { "n", 140315 },	-- Eddie Fixit
 				["coord"] = { 36.61, 33.61, STORMSONG_VALLEY },
-			}),
+				["filterID"] = BATTLE_PETS,
+			})),
 			q(52986, {	-- A Wicked Vessel
 			}),
 			q(52871, {	-- Azerite Empowerment
@@ -101,9 +102,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			q(51782, {	-- Captain Razorspine
 			}),
-			q(52325, {	-- Captured Evil
+			petbattle(q(52325, {	-- Captured Evil
 				["provider"] = { "n", 141046 },	-- Leana Darkwind
-			}),
+				["filterID"] = BATTLE_PETS,
+			})),
 			q(53106, {	-- Censership
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -330,9 +332,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			q(52309, {	-- SandFang
 			}),
-			q(52316, {	-- Sea Creatures Are Weird
+			petbattle(q(52316, {	-- Sea Creatures Are Weird
 				["provider"] = { "n", 141002 },	-- Ellie Vern
-			}),
+				["filterID"] = BATTLE_PETS,
+			})),
 			q(52271, {	-- Sea Salt Flavored (A)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -408,6 +411,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			petbattle(q(52126, {	-- This Little Piggy Has Sharp Tusks
 				["provider"] = { "n", 139987 },	-- Bristlespine
 				["coord"] = { 42.41, 76.61, STORMSONG_VALLEY },
+				["filterID"] = BATTLE_PETS,
 			})),
 			q(54403, {	-- Tidesage Clarissa (Faction Assault WQ)
 				["races"] = HORDE_ONLY,

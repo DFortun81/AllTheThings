@@ -212,7 +212,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 				["g"] = {
-					i(173286),	-- Duskmire Mushroom (QI!)
+					o(338520, {	-- Duskmire Mushroom
+						i(173286),	-- Duskmire Mushroom (QI!)
+					}),
 				},
 			}),
 			q(62918, {	-- Binding Power

@@ -809,7 +809,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(57284, {	-- Blade of Blades
 				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
 				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
-				["provider"] = { "n", 157168 },	-- Stubborn Animate
+				["providers"] = {
+					{ "n", 157168 },	-- Stubborn Animate
+					{ "n", 157169 },	-- Bone Remains
+				},
 				["coord"] = { 27.1, 51.7, MALDRAXXUS },
 				["_drop"] = { "isDaily" },
 				["g"] = {
@@ -820,7 +823,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(57278, {	-- Bring Me Their Heads
 				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
 				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
-				["provider"] = { "n", 157168 },	-- Stubborn Animate
+				["providers"] = {
+					{ "n", 157168 },	-- Stubborn Animate
+					{ "n", 157169 },	-- Bone Remains
+				},
 				["coord"] = { 29.8, 49.7, MALDRAXXUS },
 				["_drop"] = { "isDaily" },
 				["g"] = {
