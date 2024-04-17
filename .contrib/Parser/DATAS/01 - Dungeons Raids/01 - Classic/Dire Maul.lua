@@ -49,13 +49,34 @@ CAPITAL_GARDENS = createHeader({
 	},
 });
 local DIREMAUL_SUBMAP = function(mapID, headerID, t)
-	-- #if NOT ANYCLASSIC
 	t.creatureID = headerID;
+	local oldMaps = t.maps;
+	if oldMaps then
+		local maps = {};
+		for i,m in ipairs(oldMaps) do
+			if m ~= mapID then
+				table.insert(maps, m);
+			end
+		end
+		if #maps > 0 then
+			t.maps = maps;
+		else
+			t.maps = nil;
+		end
+	end
 	return m(mapID, t);
-	-- #else
-	return n(headerID, t);
-	-- #endif
 end
+local WARPWOOD_QUARTER_MAPS = {
+	239,	-- Warpwood Quarter (main)
+};
+local GORDOK_COMMONS_MAPS = {
+	235,	-- Gordok Commons (main)
+};
+local CAPITAL_GARDENS_MAPS = {
+	236,	-- Capital Gardens (main)
+	237,	-- Court of the Highborne
+	238,	-- Prison of Immol'Thar
+};
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -111,10 +132,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			4992,	-- "Broken Commons" now points to Dire Maul.
 			-- #endif
 		},
-		["mapID"] = DIRE_MAUL,
-		-- #if ANYCLASSIC
-		["maps"] = { 235, 236, 237, 238, 239 },
-		-- #endif
+		["maps"] = {
+			DIRE_MAUL,
+			240,	-- The Shrine of Eldretharr?
+		},
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -123,11 +144,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- This isn't actually an achievement yet.
 					["description"] = "Earn exalted status with the Shen'dralar.",
 					-- #endif
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				ach(644, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- King of Dire Maul
-					["maps"] = { 239, 235, 236 },	-- All Wings
+					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
 					["groups"] = {
 						crit(545, {	-- Alzzin the Wildshaper
 							["_npcs"] = { 11492 },	-- Alzzin the Wildshaper
@@ -153,7 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(FACTIONS, {
 				faction(809, {	-- Shen'dralar
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					-- #if BEFORE 4.0.3
 					["OnTooltip"] = OnTooltipForShendralar,
 					-- #endif
@@ -161,17 +182,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				faction(169, {	-- Steamweedle Cartel
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForSteamweedle,
-					["maps"] = {
-						235,	-- Gordok Commons
+					["maps"] = merge(GORDOK_COMMONS_MAPS, {
 						FERALAS,
 						STRANGLETHORN_VALE,
 						TANARIS,
 						THE_BARRENS,
 						WINTERSPRING,
-					},
+					}),
 					-- #if AFTER 4.0.3
-						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
-						["collectible"] = false,
+					["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+					["collectible"] = false,
 					-- #endif
 				}),
 			}),
@@ -179,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(1193, {	-- A Broken Trap
 					["provider"] = { "o", 179485 },	-- A Broken Trap
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					-- #if BEFORE 4.0.3
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["cost"] = {
@@ -193,14 +213,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27118, {	-- A Broken Trap
 					["provider"] = { "o", 179485 },	-- A Broken Trap
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(42, 42, 15),
 				}),
 				q(7463, {	-- Arcane Refreshment
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 239, 236 },	-- Warpwood Quarter / Capital Gardens
+					["maps"] = merge(WARPWOOD_QUARTER_MAPS, CAPITAL_GARDENS_MAPS),
 					["classes"] = { MAGE },
 					["lvl"] = 60,
 					-- #if BEFORE 4.0.3
@@ -215,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27104, {	-- Alzzin the Wildshaper
 					["qg"] = 44969,	-- Furgus Warpwood
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Zevrim Thornhoof slain
@@ -233,7 +253,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27105, {	-- An Unwelcome Guest
 					["qg"] = 44969,	-- Furgus Warpwood
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Hydrospawn Essence
@@ -264,7 +284,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARRIOR },
 					["lvl"] = 54,
 					["groups"] = {
@@ -281,7 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["sourceQuest"] = 7629,	-- Imp Delivery
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["group"] = {
@@ -312,7 +332,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["coord"] = { 75.3, 43.8, FERALAS },
 					}),
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- Master Telmius Dreamseeker Found
@@ -393,8 +413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #else
 					["requireSkill"] = BLACKSMITHING,
 					-- #endif
-					["maps"] = {
-						236,	-- Capital Gardens
+					["maps"] = merge(CAPITAL_GARDENS_MAPS, {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
 						LBRS_SKITTERWEB_TUNNELS,
@@ -403,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 						STRATHOLME
-					},
+					}),
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 18783, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume III
@@ -440,7 +459,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 54,
 				}),
 				q(7429, {	-- Free Knot! (repeatable)
@@ -452,7 +471,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
 					["lvl"] = 54,
 				}),
@@ -462,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14381 },	-- Lorekeeper Javon
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { SHAMAN },
 					["lvl"] = 54,
 					["groups"] = {
@@ -477,7 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { ROGUE },
 					["lvl"] = 54,
 					["groups"] = {
@@ -492,7 +511,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14382 },	-- Lorekeeper Mykos
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARLOCK },
 					["lvl"] = 54,
 					["groups"] = {
@@ -507,7 +526,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14381 },	-- Lorekeeper Javon
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { PRIEST },
 					["lvl"] = 54,
 					["groups"] = {
@@ -519,7 +538,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27125, {	-- King of the Gordok [Alliance]
 					["qg"] = 45040,	-- Druid of the Talon
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -535,7 +554,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27128, {	-- King of the Gordok [Horde]
 					["qg"] = 45052,	-- Stonemaul Ogre
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -553,7 +572,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["sourceQuest"] = 7494,	-- Feathermoon Stronghold
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 					["groups"] = {
@@ -570,7 +589,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["sourceQuest"] = 7492,	-- Camp Mojache
 					["coord"] = { 76.2, 43.8, FERALAS },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 					["groups"] = {
@@ -585,7 +604,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27108, {	-- Lethtendris's Web
 					["qg"] = 44971,	-- "Ambassador" Dagg'thol
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lethtendris's Web
@@ -600,7 +619,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7482,	-- Elven Legends
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
 						{ "i", 18333, 1 },	-- Libram of Focus
 						{ "i", 18335, 1 },	-- Pristine Black Diamond
@@ -623,7 +642,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7482,	-- Elven Legends
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
 						{ "i", 18334, 1 },	-- Libram of Protection
 						{ "i", 18335, 1 },	-- Pristine Black Diamond
@@ -646,7 +665,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7482,	-- Elven Legends
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
 						{ "i", 18332, 1 },	-- Libram of Rapidity
 						{ "i", 18335, 1 },	-- Pristine Black Diamond
@@ -666,7 +685,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14355,	-- Azj'Tordin
 					["coord"] = { 76.7, 37.2, FERALAS },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Book of Incantations
@@ -683,7 +702,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27107, {	-- Pusillin The Thief
 					["qg"] = 44971,	-- "Ambassador" Dagg'thol
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Book of Incantations
@@ -708,7 +727,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27103, {	-- Shards of the Felvine
 					["qg"] = 44969,	-- Furgus Warpwood
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 239 },	-- Warpwood Quarter
+					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Sealed Reliquary of Purity
@@ -726,7 +745,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { MAGE },
 					["lvl"] = 54,
 					["groups"] = {
@@ -738,7 +757,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27112,  { -- The Cursed Remains
 					["qg"] = 44991,	-- Estulan
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Magister Kalendris slain
@@ -752,7 +771,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27109, {	-- The Warped Defender
 					["qg"] = 44999,
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Tendris Warpwood slain
@@ -766,7 +785,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14381 },	-- Lorekeeper Javon
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { DRUID },
 					["lvl"] = 54,
 					["groups"] = {
@@ -778,7 +797,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(5518, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
 						{ "i", 8170, 8 },	-- Rugged Leather
@@ -805,7 +824,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["sourceQuest"] = 5518,	-- The Gordok Ogre Suit
 					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
 						{ "i", 8170, 8 },	-- Rugged Leather
@@ -821,7 +840,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27119, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
 					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["timeline"] = { "added 4.0.3" },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -832,7 +851,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
 					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["timeline"] = { "added 4.0.3" },
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(42, 42, 15),
@@ -844,7 +863,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 56,
 					["groups"] = {
 						i(18269),	-- Gordok Green Grog
@@ -855,7 +874,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 					["timeline"] = { "added 4.0.3" },
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18269),	-- Gordok Green Grog
@@ -868,7 +887,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14382 },	-- Lorekeeper Mykos
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { HUNTER },
 					["lvl"] = 54,
 					["groups"] = {
@@ -897,7 +916,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "n", 14382 },	-- Lorekeeper Mykos
 					},
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { PALADIN },
 					["lvl"] = 54,
 					["groups"] = {
@@ -908,7 +927,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7461, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 56,
 					["groups"] = {
@@ -922,7 +941,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27110, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { "added 4.0.3" },
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
@@ -936,7 +955,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27113, {	-- The Shen'dralar Ancient
 					["qg"] = 44991,	-- Estulan
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { "added 4.0.3" },
 					["lvl"] = lvlsquish(39, 39, 15),
 				}),
@@ -946,7 +965,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
 					["sourceQuest"] = 7461,	-- The Madness Within
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 57,
 					["groups"] = {
@@ -967,7 +986,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
 					["sourceQuest"] = 27110,	-- The Madness Within
-					["maps"] = { 236 },	-- Capital Gardens
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { "added 4.0.3" },
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
@@ -980,7 +999,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(7703, {	-- Unfinished Gordok Business
 					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-					["maps"] = { 236, 239 },	-- Capital Gardens / Gordok Commons
+					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 60,
 					-- #if BEFORE 4.0.3
@@ -998,7 +1017,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27124, {	-- Unfinished Gordok Business
 					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-					["maps"] = { 235 },	-- Gordok Commons
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["timeline"] = { "added 4.0.3" },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -1091,7 +1110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 			DIREMAUL_SUBMAP(239, WARPWOOD_QUARTER, {	-- Warpwood Quarter (East)
 				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
-				["maps"] = { 240 },	-- The Shrine of Eldretharr
+				["maps"] = WARPWOOD_QUARTER_MAPS,
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(18289, {	-- Barbed Thorn Necklace
@@ -1290,6 +1309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 			DIREMAUL_SUBMAP(235, GORDOK_COMMONS, {		-- Gordok Commons (North)
 				["coord"] = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
+				["maps"] = GORDOK_COMMONS_MAPS,
 				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
@@ -1565,10 +1585,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 			DIREMAUL_SUBMAP(236, CAPITAL_GARDENS, {		-- Capital Gardens (West)
 				["coord"] = { 60.32, 30.17, FERALAS },	-- Dire Maul [West]
-				["maps"] = {
-					237,	-- Court of the Highborne
-					238,	-- Prison of Immol'Thar
-				},
+				["maps"] = CAPITAL_GARDENS_MAPS,
 				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif

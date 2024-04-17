@@ -216,6 +216,7 @@ local function UpdateLocation()
 	app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
 end
 app.AddEventHandler("OnReady", UpdateLocation);
+app.AddEventRegistration("NEW_WMO_CHUNK", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_INDOORS", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_NEW_AREA", UpdateLocation);
