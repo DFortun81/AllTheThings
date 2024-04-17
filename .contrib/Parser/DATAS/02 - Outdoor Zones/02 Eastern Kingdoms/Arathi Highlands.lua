@@ -1515,6 +1515,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				q(680, {	-- The Real Threat
 					["qg"] = 2772,	-- Korin Fel
+					["sourceQuest"] = 678,	-- Call to Arms (2/3)
 					["coord"] = { 74.0, 33.2, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
