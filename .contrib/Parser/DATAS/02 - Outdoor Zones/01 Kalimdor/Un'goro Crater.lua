@@ -317,21 +317,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- 0/3 Bloodpetal Sprout
-							["provider"] = { "i", 11315 },	-- Bloodpetal Sprout
+							["providers"] = {
+								{ "i",  11315 },	-- Bloodpetal Sprout
+								{ "o", 164958 },	-- Bloodpetal Sprout
+							},
 						}),
 					},
 				}),
 				q(4148, {	-- Bloodpetal Zapper
-					["qg"] = 9118,	-- Larion
+					["providers"] = {
+						{ "n",   9118 },	-- Larion
+						{ "i",  11315 },	-- Bloodpetal Sprout
+						{ "o", 164958 },	-- Bloodpetal Sprout
+					},
 					["sourceQuest"] = 4146,	-- Zapper Fuel
 					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
-						objective(1, {	-- 0/1 Bloodpetal Sprout
-							["provider"] = { "i", 11315 },	-- Bloodpetal Sprout
-						}),
 						i(11320, {	-- Bloodpetal Zapper
 							["timeline"] = { "removed 4.0.3" },
 						}),

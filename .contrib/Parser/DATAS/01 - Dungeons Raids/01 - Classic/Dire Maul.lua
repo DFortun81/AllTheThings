@@ -48,6 +48,14 @@ CAPITAL_GARDENS = createHeader({
 		en = "This part of the instance can be accessed from the western-most portal. (left side)",
 	},
 });
+local DIREMAUL_SUBMAP = function(mapID, headerID, t)
+	-- #if NOT ANYCLASSIC
+	t.creatureID = headerID;
+	return m(mapID, t);
+	-- #else
+	return n(headerID, t);
+	-- #endif
+end
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -104,6 +112,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			-- #endif
 		},
 		["mapID"] = DIRE_MAUL,
+		-- #if ANYCLASSIC
+		["maps"] = { 235, 236, 239 },
+		-- #endif
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -1082,8 +1093,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 				},
 			}),
-			m(239, {	-- Warpwood Quarter (East)
-				["creatureID"] = WARPWOOD_QUARTER,
+			DIREMAUL_SUBMAP(239, WARPWOOD_QUARTER, {	-- Warpwood Quarter (East)
 				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
 				["maps"] = { 240 },	-- The Shrine of Eldretharr
 				["groups"] = {
@@ -1282,8 +1292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 				},
 			}),
-			m(235, {	-- Gordok Commons (North)
-				["creatureID"] = GORDOK_COMMONS,
+			DIREMAUL_SUBMAP(235, GORDOK_COMMONS, {		-- Gordok Commons (North)
 				["coord"] = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
 				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
@@ -1558,8 +1567,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 				},
 			}),
-			m(236, {	-- Capital Gardens (West)
-				["creatureID"] = CAPITAL_GARDENS,
+			DIREMAUL_SUBMAP(236, CAPITAL_GARDENS, {		-- Capital Gardens (West)
 				["coord"] = { 60.32, 30.17, FERALAS },	-- Dire Maul [West]
 				["maps"] = {
 					237,	-- Court of the Highborne
