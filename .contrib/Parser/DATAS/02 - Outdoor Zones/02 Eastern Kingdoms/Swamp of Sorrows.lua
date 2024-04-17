@@ -892,9 +892,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
 					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
-						objective(1, {	-- 0/ (10 [TBC] / 5 [WRATH]) Atal'ai Artifact
+						objective(1, {	-- 0/10 Atal'ai Artifact
 							["providers"] = {
 								{ "i", 6175 },	-- Atal'ai Artifact
 								{ "o", 30854 },	-- Atal'ai Artifact

@@ -253,7 +253,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Of Love and Family
-							["provider"] = { "i", 14679 },	-- Of Love and Family
+							["providers"] = {
+								{ "i",  14679 },	-- Of Love and Family
+								{ "o", 177287 },	-- Unfinished Painting
+							},
 						}),
 					},
 				}),
@@ -272,7 +275,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Of Love and Family
-							["provider"] = { "i", 14679 },	-- Of Love and Family
+							["providers"] = {
+								{ "i",  14679 },	-- Of Love and Family
+								{ "o", 177287 },	-- Unfinished Painting
+							},
 						}),
 					},
 				}),
@@ -355,6 +361,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Archivist Galford slain
 							["provider"] = { "n", 10811 },	-- Archivist Galford
+						}),
+						objective(2, {	-- 0/1 Archive Burning
+							["provider"] = { "o", 176245 },	-- Scarlet Archive
 						}),
 					},
 				}),
@@ -777,6 +786,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(11032, {	-- Malor the Zealous [Classic] / Commander Malor [CATA+]
 						i(12845, {	-- Medallion of Faith
+							["provider"] = { "o", 176112 },	-- Malor's Strongbox
 							-- #if BEFORE 4.0.3
 							["description"] = "Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",
 							-- #endif

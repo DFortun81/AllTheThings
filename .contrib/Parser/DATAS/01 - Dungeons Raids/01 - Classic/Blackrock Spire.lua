@@ -872,14 +872,22 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "i",  12411 },	-- Third Mosh'aru Tablet
 							{ "o", 175487 },	-- Third Mosh'aru Tablet
 						},
+						-- #if AFTER WRATH
+						["coord"] = { 66.9, 9, EASTERN_PLAGUELANDS },
+						-- #else
 						["coord"] = { 72.4, 13, EASTERN_PLAGUELANDS },
+						-- #endif
 					}),
 					objective(2, {	-- 0/1 Fourth Mosh'aru Tablet
 						["providers"] = {
 							{ "i",  12412 },	-- Fourth Mosh'aru Tablet
 							{ "o", 175488 },	-- Fourth Mosh'aru Tablet
 						},
+						-- #if AFTER WRATH
+						["coord"] = { 67.2, 11.4, EASTERN_PLAGUELANDS },
+						-- #else
 						["coord"] = { 72.7, 15.7, EASTERN_PLAGUELANDS },
+						-- #endif
 					}),
 				},
 			}),
