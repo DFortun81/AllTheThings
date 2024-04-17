@@ -95,13 +95,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
-			o(380547, {	-- Decay-Infused Tanning Oil
-				["coord"] = { 16.7, 38.7, THE_AZURE_SPAN },
-				-- ["questID"] = 70266,
-				["g"] = {
-					i(198658),	-- Decay-Infused Tanning Oil
-				},
-			}),
 			o(381110, {	-- Forgotten Jewel Box
 				["coord"] = { 45.1, 59.3, THE_AZURE_SPAN },
 				["questID"] = 70603,

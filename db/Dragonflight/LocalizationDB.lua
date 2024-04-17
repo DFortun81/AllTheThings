@@ -2577,6 +2577,7 @@ _.ObjectNames = {
 	[2688] = "Keystone",
 	[2701] = "Iridescent Shards",
 	[2702] = "Stone of Inner Binding",
+	[2703] = "Trollbane's Tomb",
 	[2713] = "Wanted Board",
 	[2734] = "Waterlogged Chest",
 	[2744] = "Giant Clam",
