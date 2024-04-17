@@ -844,7 +844,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "o", 175949 },	-- Fifth Mosh'aru Tablet
 						},
 					}),
-					objective(1, {	-- 0/1 Sixth Mosh'aru Tablet
+					objective(2, {	-- 0/1 Sixth Mosh'aru Tablet
 						["providers"] = {
 							{ "i",  12741 },	-- Sixth Mosh'aru Tablet
 							{ "o", 175950 },	-- Sixth Mosh'aru Tablet
@@ -874,7 +874,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						},
 						["coord"] = { 72.4, 13, EASTERN_PLAGUELANDS },
 					}),
-					objective(1, {	-- 0/1 Fourth Mosh'aru Tablet
+					objective(2, {	-- 0/1 Fourth Mosh'aru Tablet
 						["providers"] = {
 							{ "i",  12412 },	-- Fourth Mosh'aru Tablet
 							{ "o", 175488 },	-- Fourth Mosh'aru Tablet

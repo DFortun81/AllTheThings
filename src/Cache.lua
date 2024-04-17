@@ -523,7 +523,7 @@ local fieldConverters = {
 		-- Retail used this commented out section instead, see which one is better
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
 		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID) then
+		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID or (group.headerID and group.parent and group.parent.instanceID)) then
 			return cacheMapID(group, coord[3]);
 		end
 	end,
@@ -531,7 +531,7 @@ local fieldConverters = {
 		-- Retail used this commented out section instead, see which one is better
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
 		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID) then
+		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID or (group.headerID and group.parent and group.parent.instanceID)) then
 			for i,coord in ipairs(coords) do
 				cacheMapID(group, coord[3]);
 			end
@@ -725,12 +725,12 @@ if app.IsRetail then
 	-- Retail doesn't have objectives so don't bother checking for it
 	fieldConverters.coord = function(group, coord)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") then return end
+		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") or (group.headerID and group.parent and group.parent.instanceID) then return end
 		return cacheMapID(group, coord[3]);
 	end
 	fieldConverters.coords = function(group, coords)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") then return end
+		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") or (group.headerID and group.parent and group.parent.instanceID) then return end
 		local any
 		for i,coord in ipairs(coords) do
 			any = cacheMapID(group, coord[3]) or any
