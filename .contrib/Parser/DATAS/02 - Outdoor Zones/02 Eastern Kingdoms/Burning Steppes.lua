@@ -795,13 +795,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
-					["cost"] = {{ "i", 15416,	-- Black Dragonscale
+					["cost"] = {
 						-- #if AFTER TBC
-						3
+						{ "i", 15416, 3},	-- 3x Black Dragonscal
 						-- #else
-						35
+						{ "i", 15416, 35},	-- 35x Black Dragonscale
 						-- #endif
-					}},
+					},
 					["lvl"] = 60,
 				}),
 				q(28172, {	-- Done Nothing Wrong (A)
