@@ -2316,6 +2316,8 @@ end
 app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
+app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
+app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
 
 local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams
 	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams

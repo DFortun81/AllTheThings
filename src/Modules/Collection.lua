@@ -92,6 +92,7 @@ local function PendingCollectionCoroutine()
 		wipe(pendingRemovals);
 		app.Audio:PlayRemoveSound();
 	end
+	app.WipeSearchCache()
 end
 local function AddToCollection(group)
 	if not group then return; end
@@ -141,8 +142,8 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		currentCharacter[field][id] = state
 	end
 	-- Returns the tracked status for this Account for a given field ID
-	local function IsAccountTracked(field, id)
-		return accountWide[field] and accountWideData[field][id] or nil
+	local function IsAccountTracked(field, id, setting)
+		return accountWide[setting or field] and accountWideData[field][id] or nil
 	end
 	-- Allows directly saving a cached state for a table of ids for a given field at the Account level
 	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
