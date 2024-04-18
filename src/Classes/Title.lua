@@ -10,15 +10,9 @@ local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
 -- Module
 
 -- App
-local ATTAccountWideData
 
--- Title API Implementation
--- Access via AllTheThings.Modules.Title
-local api = {};
-app.Modules.Title = api
-app.AddEventHandler("OnStartup", function()
-	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true)
-end)
+-- Title Lib!
+local KEY, CACHE = "titleID", "Titles"
 
 local function CalculateTitleStyle(name)
 	if name then
@@ -101,7 +95,7 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 		return StylizePlayerTitle(t.titleName, t.style, UnitName("player"));
 	end,
 	["titleName"] = function(t)
-		return GetTitleName(t.titleID);
+		return GetTitleName(t[KEY]);
 	end,
 	["title"] = function(t)
 		return StylizePlayerTitle(t.titleName, t.style, "("..CALENDAR_PLAYER_NAME..")");
@@ -118,20 +112,17 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = app.IsClassic and function(t)
-		local titleID = t.titleID;
+		local titleID = t[KEY];
 		return app.SetCollected(t, "Titles", titleID, IsTitleKnown(titleID));
 	end or function(t)
-		local titleID = t.titleID;
-		if app.CurrentCharacter.Titles[titleID] then return 1; end
-		if IsTitleKnown(titleID) then
-			app.CurrentCharacter.Titles[titleID] = 1;
-			ATTAccountWideData.Titles[titleID] = 1;
-			return 1;
-		end
-		if app.Settings.AccountWide.Titles and ATTAccountWideData.Titles[titleID] then return 2; end
+		local id = t[KEY];
+		-- character collected
+		if app.IsCached(CACHE, id) then return 1; end
+		-- account-wide collected
+		if app.IsAccountTracked(CACHE, id) then return 2; end
 	end,
 	["saved"] = function(t)
-		return IsTitleKnown(t.titleID);
+		return IsTitleKnown(t[KEY]);
 	end,
 	["OnUpdate"] = function(t)
 		return t.gender and OnUpdateForSpecificGender;
@@ -142,17 +133,18 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 if app.IsRetail then
 -- NOTE: Not sure if this is necessary for Classic.
 	app.AddEventHandler("OnRefreshCollections", function()
-		-- app.PrintDebug("Refresh:Titles")
-		local acctTitles, charTitles = ATTAccountWideData.Titles, {};
+		local saved, none = {}, {}
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then
-				if not acctTitles[i] then
-					app.print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i))
-				end
-				charTitles[i] = 1;
+				saved[i] = true
+			else
+				none[i] = true
 			end
 		end
-		app.CurrentCharacter.Titles = charTitles;
-		-- app.PrintDebugPrior("Done")
+		-- Character Cache
+		app.SetBatchCached(CACHE, saved, 1)
+		app.SetBatchCached(CACHE, none)
+		-- Account Cache (removals handled by Sync)
+		app.SetBatchAccountCached(CACHE, saved, 1)
 	end);
 end
