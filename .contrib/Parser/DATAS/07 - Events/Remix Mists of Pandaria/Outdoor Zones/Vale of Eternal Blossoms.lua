@@ -6,9 +6,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_valeofeternalblossoms",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(20069),		-- Elusive Foes: Vale of Eternal Blossoms
+				ach(20069, {	-- Elusive Foes: Vale of Eternal Blossoms
+					["sym"] = {{ "achievement_criteria" }},
+				}),
 				ach(19916),		-- Golden Lotus
-				ach(20014),		-- Looking For Group: Vale of Eternal Blossoms
+				ach(20014, {	-- Looking For Group: Vale of Eternal Blossoms
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19904,	-- Mogu'shan Palace
+						19906,	-- Scarlet Halls
+						19908,	-- Scarlet Monastery
+						19910,	-- Scholomance
+						19952,	-- Raid Finder: Terrace of Endless Spring
+					}},
+				}),
 				ach(19913),		-- The August Celestials
 				ach(19876, {	-- Vale of Eternal Blossoms
 					-- Meta Achievement

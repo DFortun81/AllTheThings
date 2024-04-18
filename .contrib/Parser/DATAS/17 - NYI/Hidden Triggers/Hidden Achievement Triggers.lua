@@ -3161,6 +3161,39 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40079),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 32 [DNT]
 			ach(40080),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 36 [DNT]
 			ach(40081),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 40 [DNT]
+			-- 10.2.6.54070
+			ach(40171),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
+			ach(40192),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
+		})),
+
+		-- 10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			-- 10.2.7.54171
+			ach(20039),	-- [DNT] Damage - Humanoid
+			ach(20046),	-- [DNT] Damage - Beast
+			ach(20047),	-- [DNT] Damage - Aberration
+			ach(20048),	-- [DNT] Damage - Demon
+			ach(20049),	-- [DNT] Damage - Dragonkin
+			ach(20050),	-- [DNT] Damage - Elemental
+			ach(20051),	-- [DNT] Damage - Giant
+			ach(20052),	-- [DNT] Damage - Mechanical
+			ach(20053),	-- [DNT] Damage - Undead
+			ach(20054),	-- [DNT] Resistance - Arcane
+			ach(20055),	-- [DNT] Resistance - Fire
+			ach(20056),	-- [DNT] Resistance - Frost
+			ach(20057),	-- [DNT] Resistance - Holy
+			ach(20058),	-- [DNT] Resistance - Nature
+			ach(20059),	-- [DNT] Resistance - Physical
+			ach(20060),	-- [DNT] Resistance - Shadow
+			ach(20061),	-- [DNT] Stat - Critical Strike
+			ach(20062),	-- [DNT] Stat - Haste
+			ach(20063),	-- [DNT] Stat - Leech
+			ach(20064),	-- [DNT] Stat - Mastery
+			ach(20065),	-- [DNT] Stat - Primary
+			ach(20066),	-- [DNT] Stat - Speed
+			ach(20067),	-- [DNT] Stat - Stamina
+			ach(20068),	-- [DNT] Stat - Versatility
+			ach(20477),	-- [DNT] Stat - Experience
 		})),
 	}),
 });

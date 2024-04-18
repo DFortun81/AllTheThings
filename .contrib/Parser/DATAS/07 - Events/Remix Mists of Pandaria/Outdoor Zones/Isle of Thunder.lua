@@ -44,7 +44,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["_quests"] = { 32277 },
 					}),
 				})),
-				ach(20000, {		-- Elusive Foes: Isle of Thunder
+				ach(20000, {	-- Elusive Foes: Isle of Thunder
 					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(19880, {	-- Isle of Thunder
@@ -187,7 +187,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					},
 				}),
-				ach(20015, {		-- Looking For Group: Isle of Thunder
+				ach(20015, {	-- Looking For Group: Isle of Thunder
+					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						20020,	-- Oondasta
 						19955,	-- Raid Finder: Throne of Thunder

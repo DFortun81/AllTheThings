@@ -1,85 +1,13 @@
 10.2.6.54070
-ach(40171),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
-ach(40192),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
 ach(40193),	-- Into the Storm (copy)
 10.2.7.54171
 ach(19881),	-- Escalation
-ach(19893),	-- A Brewing Storm
 ach(19919),	-- Kirin Tor Offensive
 ach(19920),	-- Sunreaver Onslaught
 ach(19921),	-- Shado-Pan Assault
-ach(19922),	-- Emperor Shaohao
-ach(19923),	-- Greenstone Village
-ach(19924),	-- Heroic: A Brewing Storm
-ach(19925),	-- Unga Ingoo
-ach(19926),	-- Brewmoon Festival
-ach(19927),	-- Arena of Annihilation
-ach(19928),	-- Crypt of Forgotten Kings
-ach(19929),	-- Heroic: Crypt of Forgotten Kings
-ach(19930),	-- Assault on Zan'vess
-ach(19931),	-- A Little Patience
-ach(19932),	-- Domination Point
-ach(19933),	-- Dagger in the Dark
-ach(19934),	-- Battle on the High Seas
-ach(19935),	-- Heroic: Battle on the High Seas
-ach(19936),	-- Battle on the High Seas
-ach(19937),	-- Heroic: Battle on the High Seas
-ach(19938),	-- Theramore's Fall
-ach(19939),	-- Theramore's Fall
-ach(19940),	-- Blood in the Snow
-ach(19941),	-- Heroic: Blood in the Snow
-ach(19942),	-- Dark Heart of Pandaria
-ach(19943),	-- Heroic: Dark Heart of Pandaria
-ach(19944),	-- Secrets of Ragefire
-ach(19945),	-- Heroic: Secrets of Ragefire
-ach(19970),	-- Tour Timeless Isle
-ach(19978),	-- Hidden Treasures: Valley of the Four Winds
-ach(19979),	-- Hidden Treasures: Krasarang Wilds
-ach(19980),	-- Hidden Treasures: Kun-Lai Summit
-ach(19981),	-- Hidden Treasures: Townlong Steppes
-ach(19982),	-- Hidden Treasures: Timeless Isle
-ach(19993),	-- Elusive Foes: The Jade Forest
-ach(19994),	-- Elusive Foes: Valley of the Four Winds
-ach(19995),	-- Elusive Foes: Krasarang Wilds
-ach(19996),	-- Elusive Foes: Kun-Lai Summit
-ach(19997),	-- Elusive Foes: Townlong Steppes
-ach(20001),	-- Elusive Foes: Timeless Isle
-ach(20002),	-- Powerful Enemies: Timeless Isle
-ach(20003),	-- Timeless Isle
 ach(20004),	-- Heroic: Pandaria Scenarios
 ach(20006),	-- Pandaria Raids
 ach(20007),	-- Heroic: Pandaria Raids
-ach(20016),	-- Looking For Group: Timeless Isle
-ach(20027),	-- Explore Valley of the Four Winds
-ach(20028),	-- Explore Krasarang Wilds
-ach(20029),	-- Explore Kun-Lai Summit
-ach(20030),	-- Explore Townlong Steppes
-ach(20039),	-- [DNT] Damage - Humanoid
-ach(20046),	-- [DNT] Damage - Beast
-ach(20047),	-- [DNT] Damage - Aberration
-ach(20048),	-- [DNT] Damage - Demon
-ach(20049),	-- [DNT] Damage - Dragonkin
-ach(20050),	-- [DNT] Damage - Elemental
-ach(20051),	-- [DNT] Damage - Giant
-ach(20052),	-- [DNT] Damage - Mechanical
-ach(20053),	-- [DNT] Damage - Undead
-ach(20054),	-- [DNT] Resistance - Arcane
-ach(20055),	-- [DNT] Resistance - Fire
-ach(20056),	-- [DNT] Resistance - Frost
-ach(20057),	-- [DNT] Resistance - Holy
-ach(20058),	-- [DNT] Resistance - Nature
-ach(20059),	-- [DNT] Resistance - Physical
-ach(20060),	-- [DNT] Resistance - Shadow
-ach(20061),	-- [DNT] Stat - Critical Strike
-ach(20062),	-- [DNT] Stat - Haste
-ach(20063),	-- [DNT] Stat - Leech
-ach(20064),	-- [DNT] Stat - Mastery
-ach(20065),	-- [DNT] Stat - Primary
-ach(20066),	-- [DNT] Stat - Speed
-ach(20067),	-- [DNT] Stat - Stamina
-ach(20068),	-- [DNT] Stat - Versatility
-ach(20477),	-- [DNT] Stat - Experience
-ach(20500),	-- Lion's Landing
 ach(40227),	-- Realm First! Mythic Garrosh
 11.0.0.54311
 ach(18830),	-- Level 2

@@ -30,44 +30,58 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		-- Scenario Maps
 		m(447, {	-- A Brewing Storm
 			n(ACHIEVEMENTS, {
-
+				ach(19893),	-- A Brewing Storm
+				ach(19924),	-- Heroic: A Brewing Storm
 			}),
 		}),
 		m(487, {	-- A Little Patience
 			n(ACHIEVEMENTS, {
-
+				ach(19931),	-- A Little Patience
 			}),
 		}),
 		m(480, {	-- Arena of Annihilation
 			n(ACHIEVEMENTS, {
-
+				ach(19927),		-- Arena of Annihilation
 			}),
 		}),
 		m(451, {	-- Assault on Zan'vess
 			n(ACHIEVEMENTS, {
-
+				ach(19930),	-- Assault on Zan'vess
 			}),
 		}),
 		m(524, {	-- Battle on the High Seas
 			n(ACHIEVEMENTS, {
-
+				ach(19934, {	-- Battle on the High Seas [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(19936, {	-- Battle on the High Seas [H]
+					["races"] = HORDE_ONLY,
+				}),
+				ach(19935, {	-- Heroic: Battle on the High Seas [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(19937, {	-- Heroic: Battle on the High Seas [H]
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 		}),
 		m(452, {	-- Brewmoon Festival
 			n(ACHIEVEMENTS, {
-
+				ach(19926),		-- Brewmoon Festival
 			}),
 		}),
 		m(523, {	-- Blood in the Snow
 			n(ACHIEVEMENTS, {
-
+				ach(19940),	-- Blood in the Snow
+				ach(19941),	-- Heroic: Blood in the Snow
 			}),
 		}),
 		m(481, {	-- Crypt of Forgotten Kings
 			["maps"] = { 482 },	-- Crypt of Forgotten Kings
 			["g"] = {
 				n(ACHIEVEMENTS, {
-
+					ach(19928),	-- Crypt of Forgotten Kings
+					ach(19929),	-- Heroic: Crypt of Forgotten Kings
 				}),
 			},
 		}),
@@ -75,7 +89,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["maps"] = { 489 },	-- Dagger in the Dark
 			["g"] = {
 				n(ACHIEVEMENTS, {
-
+					ach(19933),	-- Dagger in the Dark
 				}),
 			},
 		}),
@@ -83,7 +97,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["maps"] = { 486 },	-- Lion's Landing
 			["g"] = {
 				n(ACHIEVEMENTS, {
-
+					ach(19932, {	-- Domination Point
+						["races"] = HORDE_ONLY,
+					}),
+					ach(20500, {	-- Lion's Landing
+						["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 			},
 		}),
@@ -91,28 +110,35 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["maps"] = { 521 },	-- Dark Heart of Pandaria
 			["g"] = {
 				n(ACHIEVEMENTS, {
-
+					ach(19942),	-- Dark Heart of Pandaria
+					ach(19943),	-- Heroic: Dark Heart of Pandaria
 				}),
 			},
 		}),
 		m(448, {	-- Greenstone Village
 			n(ACHIEVEMENTS, {
-
+				ach(19923),	-- Greenstone Village
 			}),
 		}),
 		m(522, {	-- The Secrets of Ragefire
 			n(ACHIEVEMENTS, {
-
+				ach(19944),	-- Secrets of Ragefire
+				ach(19945),	-- Heroic: Secrets of Ragefire
 			}),
 		}),
 		m(483, {	-- Theramore's Fall
 			n(ACHIEVEMENTS, {
-
+				ach(19938, {	-- Theramore's Fall [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(19939, {	-- Theramore's Fall [H]
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 		}),
 		m(450, {	-- Unga Ingoo
 			n(ACHIEVEMENTS, {
-
+				ach(19925),	-- Unga Ingoo
 			}),
 		}),
 	}),

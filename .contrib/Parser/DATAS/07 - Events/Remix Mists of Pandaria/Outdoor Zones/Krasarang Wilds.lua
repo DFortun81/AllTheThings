@@ -16,7 +16,35 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19918, {	-- Dominance Offensive [H]
 					["races"] = HORDE_ONLY,
 				}),
-				ach(19999),		-- Elusive Foes: Landfall
+				ach(19995, {	-- Elusive Foes: Krasarang Wilds
+					["sym"] = {{ "achievement_criteria" }},
+				}),
+				ach(19999, {	-- Elusive Foes: Landfall
+					["sym"] = {{ "achievement_criteria" }},
+				}),
+				ach(20028, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Krasarang Wilds
+					crit(65954),	-- Anglers Wharf
+					crit(65955),	-- Cradle of Chi-Ji
+					crit(65956),	-- Dojani River
+					crit(65957),	-- Fallsong Village
+					crit(65958),	-- Krasarang Cove
+					crit(65959),	-- The Krasari Ruins
+					crit(65960),	-- Nayeli Lagoon
+					crit(65961),	-- Crane Wing Refuge
+					crit(65962),	-- Ruins of Dojan
+					crit(65963),	-- Ruins of Korja
+					crit(65964),	-- Temple of the Red Crane
+					crit(65965),	-- The Deepwild
+					crit(65966),	-- The Forbidden Jungle
+					crit(65967),	-- The Southern Isles
+					crit(65968),	-- Unga Ingoo
+					crit(65969),	-- Zhu's Watch
+				})),
+				ach(19979, {		-- Hidden Treasures: Krasarang Wilds
+					crit(65483, {	-- Saurok Stone Tablet
+						["_quests"] = { 31408 },
+					}),
+				}),
 				ach(19874, {	-- Krasarang Wilds
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -172,7 +200,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19917, {	-- Operation: Shieldwall [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(19964),	-- Tour Krasarang Wilds
+				ach(19964, {	-- Tour Krasarang Wilds
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19995,	-- Elusive Foes: Krasarang Wilds
+						20028,	-- Explore Krasarang Wilds
+						19979,	-- Hidden Treasures: Krasarang Wilds
+					}},
+				}),
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {
