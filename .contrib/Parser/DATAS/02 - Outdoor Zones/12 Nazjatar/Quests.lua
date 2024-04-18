@@ -1148,6 +1148,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["coord"] = { 59.5, 42.0, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				o_repeated({
+					i(168173),	-- Kelpberry (QI!)
+					o(322791),	-- Kelpberry
+					o(322803),	-- Kelpberry
+				}),
+				o(327221, {	-- Kelpberry Cask
+					i(168174),	-- Cask of Kelpberry Juice (QI!)
+				}),
+			},
 		}),
 		q(55638, {	-- Making Kelpberry Wine (H)
 			["coord"] = { 59.5, 41.8, NAZJATAR },
@@ -2387,6 +2397,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["coord"] = { 39.1, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				i(168265),	-- Lady Naz'jess' Head (QI!)
+			},
 		}),
 		q(56222, {	-- WANTED: Lady Naz'jess
 			["sourceQuest"] = 55500,	-- Save a Friend
