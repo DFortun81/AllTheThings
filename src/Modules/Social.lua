@@ -45,6 +45,7 @@ app.PlayerProgressCacheByGUID = PlayerProgressCacheByGUID;
 -- Version Cache
 local major,minor,build,versionString,versionUID;
 local VersionCache = setmetatable({
+	["Git"] = 999999,
 	["[Git]"] = 999999,
 }, {
 	__index = function(t, version)
@@ -53,7 +54,7 @@ local VersionCache = setmetatable({
 		major = tonumber(major or "0");
 		minor = tonumber(minor or "0");
 		build = tonumber(build or "0");
-		versionUID = (major * 1000) + (major * 10) + build;
+		versionUID = (major * 10000) + (minor * 100) + build;
 		--print("GenerateVersionUniqueID", versionString, major,minor,build, versionUID);
 		t[version] = versionUID;
 		return versionUID;
