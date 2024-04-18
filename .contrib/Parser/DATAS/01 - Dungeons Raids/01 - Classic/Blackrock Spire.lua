@@ -730,6 +730,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
 				-- #endif
 				["timeline"] = { "removed 4.0.3" },
+				["maps"] = { DUSTWALLOW_MARSH },
 				["lvl"] = 57,
 				["groups"] = {
 					objective(1, {	-- 0/1 Forged Seal of Ascension
@@ -1792,6 +1793,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							-- #if BEFORE 4.0.3
 							["description"] = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
 							-- #endif
+							["provider"] = { "o", 175970 },	-- Unforged Runic Breastplate
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(12834, {	-- Plans: Arcanite Champion (RECIPE!)

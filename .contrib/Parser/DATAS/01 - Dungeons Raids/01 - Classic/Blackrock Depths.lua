@@ -180,7 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3981, {	-- Commander Gor'shak
 					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
-					["sourceQuest"] = 3907,	-- Disharmony of Fire
+					["sourceQuest"] = 3906,	-- Disharmony of Flame
 					["coord"] = { 5.8, 47.6, BADLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
@@ -321,6 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 9080 },	-- Lexlort <Kargath Expeditionary Force>
 						{ "i", 11286 },	-- Thorium Shackles
 					},
+					["sourceQuests"] = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
 					["coord"] = { 5.9, 47.6, BADLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
@@ -1743,6 +1744,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
+					["groups"] = {
+						objective(1, {	-- Information Gathered from Kharan
+							["provider"] = { "n", 9021 },	-- Kharan Mighthammer
+						}),
+					},
 				}),
 				q(4324, {	-- Yuka Screwspigot
 					["qg"] = 9706,	-- Yorba Screwspigot
@@ -2743,6 +2749,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(380, {	-- Hurley Blackbreath
 					["creatureID"] = 9537,
+					["provider"] = { "o", 164911 },	-- Thunderbrew Lager Keg
 					["description"] = "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
 					["groups"] = {
 						i(11312),	-- Lost Thunderbrew Recipe
