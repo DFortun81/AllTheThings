@@ -1259,8 +1259,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4382),	-- Bronze Framework
 			i(4371),	-- Bronze Tube
 			i(4364),	-- Coarse Blasting Powder
+			-- #if BEFORE 4.3.0
 			i(4363),	-- Copper Modulator
 			i(4361),	-- Copper Tube
+			-- #endif
 			i(16006),	-- Delicate Arcanite Converter
 			i(15992),	-- Dense Blasting Powder
 			i(10558),	-- Gold Power Core
