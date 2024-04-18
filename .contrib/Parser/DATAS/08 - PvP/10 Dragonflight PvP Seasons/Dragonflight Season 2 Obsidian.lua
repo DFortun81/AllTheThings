@@ -49,9 +49,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				ach(17767, {	-- Obsidian Legend: Dragonflight Season 2
 					title(500),	-- Obsidian Legend <Name>
 				}),
-				--ach(00000, {	-- Obsidian Soloist: Dragonflight Season 2
-				--	title(),	-- Obsidian Soloist <Name>
-				--}),
 				-- Fashion
 				ach(18249),		-- Obsidian Tie Event
 			})),

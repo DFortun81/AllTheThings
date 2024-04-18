@@ -45,16 +45,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				-- Solo
 				ach(17339, {	-- Crimson Legend: Dragonflight Season 1
 					i(206343, {		-- Crimson Legend's Pennant (TOY!)
-					--	["description"] = "This toy called 'Crimson Legend's Pennant' will be retroactively awarded to this Feat of Strength in Patch 10.1. Until then the Item will not load.\n\nIt is only shown to provide awareness & will be tagged correctly once Patch 10.1 is out.",
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },
 					}),
 				}),
 				ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
 					title(482),	-- Crimson Soloist <Name>
 				}),
 				-- Fashion
-				ach(16764, {		-- Crimson Carpet Fashion
-				--	["timeline"] = { ADDED_10_0_2_LAUNCH },
-				}),
+				ach(16764),	-- Crimson Carpet Fashion
 			})),
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)

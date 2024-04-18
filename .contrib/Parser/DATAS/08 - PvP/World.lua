@@ -1,34 +1,58 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(n(-10058, {	-- World
-	expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+BOUNTY = createHeader({
+	readable = "Bounty",
+	icon = "Interface\\Icons\\Inv_bountyhunting",
+	text = {
+		en = "Bounty",
+		es = "Prima",
+		de = "Kopfgeld",
+		fr = "Prime",
+		it = "Premio",
+		pt = "Recompensa",
+		ru = "Премия",
+		ko = "하사품",
+		cn = "赏金任务",
+	},
+});
+WORLD_PVP = createHeader({
+	readable = "World PvP",
+	icon = [[~_.asset("Category_Zones")]],
+	text = {
+		en = "World PvP",
+	},
+});
+root(ROOTS.PVP, pvp(n(WORLD_PVP, {
+	expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(12567),	-- The Horde Slayer
 			ach(12568),	-- The Alliance Slayer
 		}),
-		n(BOUNTY, {	-- Bounty (for later). Contains every aspirant gear as well
+		n(BOUNTY, {
 			i(163825),	-- Plundered Supplies
-			i(170539),	-- Plunderer Supplies (Nazjartar and maybe Mechagnom)
+			i(170539, {	-- Plunderer Supplies
+				["timeline"] = { ADDED_8_2_0 },
+			}),
 		}),
-		n(-488,	{	-- War Chest
+		n(TREASURES, {
 			["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 		}),
 		n(QUESTS, {
-			q(58274, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+			q(58274, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
 				["g"] = {
-					title(414),	-- %s, Servant of N'Zoth
+					title(414),	-- <Name>, Servant of N'Zoth
 					i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 					i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 				},
 			})),
-			q(58273, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+			q(58273, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
 				["races"] = HORDE_ONLY,
 				["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
 				["g"] = {
-					title(414),	-- %s, Servant of N'Zoth
+					title(414),	-- <Name>, Servant of N'Zoth
 					i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 					i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 				},
@@ -47,9 +71,9 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			})),
 		}),
 	})),
-	expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
-		n(BOUNTY, {	-- Bounty (for later). Contains every aspirant gear as well
-			i(184810),	-- Plundered Supplies [Shadowlands-Maldraxxus-(Ore)]
+	expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+		n(BOUNTY, {
+			i(184810),	-- Plundered Supplies
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
@@ -131,7 +155,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 					16599,	-- A Champion's Pursuit
 				}},
 				["g"] =	{
-					title(479),	-- Malicious %s
+					title(479),	-- Malicious <Name>
 				},
 			}),
 			ach(16613, {	-- Finder's Keepers

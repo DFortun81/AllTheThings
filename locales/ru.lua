@@ -474,7 +474,7 @@ local L = app.L;
 		--TODO: L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
 		--TODO: L.NOT_TRADEABLE = "Not Tradeable";
 		--TODO: L.TRADEABLE = "Tradeable";
-		
+
 	-- Keybind usage
 		--TODO: L.ENABLED = "enabled";
 		--TODO: L.DISABLED = "disabled";
@@ -524,8 +524,6 @@ for key,value in pairs({
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "Аванпосты",										-- Outposts
-	-- BFA War Chest
-		[-488] = "Трофейный сундук",								-- Daily War Chest
 	-- Misc
 		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries

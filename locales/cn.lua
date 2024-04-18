@@ -543,8 +543,6 @@ for key,value in pairs({
 		[-361] = GetSpellInfo(182108).." 塔",						-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "哨站",												-- Outposts
-	-- BFA War Chest
-		[-488] = "战争宝箱",											-- Daily War Chest
 	-- Misc
 		[-493] = "要塞任务拾取",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries

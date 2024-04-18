@@ -524,8 +524,6 @@ for key,value in pairs({
 		[-255] = "Armure ancestrale",								-- Heritage
 	-- BFA Outposts
 		[-397] = "Avant-postes",									-- Outposts
-	-- BFA War Chest
-		[-488] = "Coffre de Guerre",								-- Daily War Chest
 	-- Misc
 		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
 		[-543] = "Invasions de Legion ",							-- Legion Invasions

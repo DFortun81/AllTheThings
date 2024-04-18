@@ -758,8 +758,6 @@ for key, value in pairs({
 		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Hearthfire Tavern (horde)
 	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
-	-- BFA War Chest
-		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Misc
 		[-493] = "Interface\\Icons\\Inv_icon_mission_complete_order",						-- Temporary Header WoD Mission Loot
 	-- Blizzard Events and Anniversaries
@@ -867,7 +865,6 @@ for key, value in pairs({
 	-- Is Used Somewhere
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
-		[-10058] = app.asset("Category_Zones"),										-- World
 	-- 8.3
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- Vision of N'zotth
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
@@ -935,8 +932,6 @@ for key, value in pairs({
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
-	-- BFA War Chest
-		[-488] = "War Chest",													-- Daily War Chest
 	-- Misc
 		[-493] = "Garrison Mission Loot",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries
@@ -1057,7 +1052,6 @@ for key, value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
-		[-10058] = WORLD,														-- World
 	-- 8.3
 		[-10071] = "Visions of N'Zoth",
 		[-10072] = "N'Zoth Assault",
