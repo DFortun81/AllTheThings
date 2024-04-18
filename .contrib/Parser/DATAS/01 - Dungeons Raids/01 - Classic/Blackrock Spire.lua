@@ -493,6 +493,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 				["groups"] = {
 					i(12812, {	-- Unfired Plate Gauntlets
+						["provider"] = { "o", 176089 },	-- Unfired Plate Gauntlets
 						["timeline"] = { "removed 4.0.3" },
 					}),
 				},
