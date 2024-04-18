@@ -554,8 +554,6 @@ for key,value in pairs({
 		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
 		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
 		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
-	-- Pets
-		[-795] = "宠物对战地下城",										-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "黑暗帝国宝箱",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header

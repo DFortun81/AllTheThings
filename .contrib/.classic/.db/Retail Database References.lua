@@ -67,6 +67,9 @@
 -- #IMPORT: 11 - Character\\Achievements.lua
 -- #IMPORT: 11 - Character\\New Character.lua
 
+-- Pet Battles
+-- #IMPORT: 15 - Pet Battles\\Achievements.lua
+
 -- NYI
 -- #IMPORT: 17 - NYI\\
 

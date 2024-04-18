@@ -791,8 +791,6 @@ for key, value in pairs({
 		[-690] = "Interface\\Icons\\inv_protodrakegladiatormount_blue",						-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- Pets
-		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
 	-- Toys
 		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
 	-- Secret Header
@@ -962,8 +960,6 @@ for key, value in pairs({
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- Pets
-		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
 	-- Toys
 		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
 	-- Secret Header

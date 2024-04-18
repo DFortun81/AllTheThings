@@ -3,63 +3,11 @@
 --------------------------------------------------
 root("Achievements", {
 	achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
-		ach(1017, {	-- Can I Keep Him?
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
-			["f"] = 101,
-			["rank"] = 1,
-		}),
 		ach(1833, {	-- It's Happy Hour Somewhere
 			["timeline"] = { "added 3.0.1" },
 		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2516, {	-- Lil' Game Hunter
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
-			["timeline"] = { "added 3.0.1" },
-			["f"] = 101,
-			["rank"] = 75,
-			["groups"] = {
-				applyclassicphase(WRATH_PHASE_ONE, i(44841)),	-- Little Fawn's Salt Lick
-			},
-		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2556, {	-- Pest Control
 			["timeline"] = { "added 3.0.1" },
-		})),
-		ach(15, {	-- Plenty of Pets
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
-			["f"] = 101,
-			["rank"] = 15,
-		}),
-		ach(1248, {	-- Plethora of Pets
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
-			["f"] = 101,
-			["rank"] = 25,
-		}),
-		applyclassicphase(TBC_PHASE_ONE, ach(1250, {	-- Shop Smart, Shop Pet...Smart
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
-			["f"] = 101,
-			["rank"] = 50,
-			["groups"] = {
-				applyclassicphase(WRATH_PHASE_ONE, i(40653)),	-- Reeking Pet Carrier
-			},
 		})),
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {

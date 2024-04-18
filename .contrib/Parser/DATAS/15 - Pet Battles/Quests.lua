@@ -11,7 +11,7 @@ i(94207, {	-- Fabled Pandaren Pet Supplies
 	["sym"] = {{ "fill" }},
 });
 local SHINY_PET_CHARM = i(116415, { ["timeline"] = { REMOVED_10_2_5 } });	-- Shiny Pet Charm
-root(ROOTS.PetBattles, petbattle({
+root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(QUESTS, {
 		q(44767, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- A Celestial Invitation
 			["provider"] = { "i", 142210 },	-- Celestial Invitation
@@ -1183,8 +1183,7 @@ root(ROOTS.PetBattles, petbattle({
 					SACK_OF_PET_SUPPLIES
 				},
 			}),
-			q(63435,	-- Temple Throwdown
-			bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+			q(63435, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Temple Throwdown
 				["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
 				["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
 				["g"] = {
@@ -1320,7 +1319,7 @@ root(ROOTS.PetBattles, petbattle({
 				},
 			}),
 		}),
-		expansion(EXPANSION.WOD, {
+		expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 			-- Maybe rewards header for those 6 npc quests to show polished pet charms
 			q(37203, {	-- Ashlei
 				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
@@ -1382,23 +1381,12 @@ root(ROOTS.PetBattles, petbattle({
 					-- #endif
 				},
 			}),
-		}),
+		})),
 	})),
 	-- Weeklies
 	n(QUESTS, sharedData({
 		["isWeekly"] = true,
 	},{
-		-- Legion
-		q(40310, {	-- Shipwrecked Captive
-			["description"] = "Weekly Account-Wide Pet Battle Quest. You need the toy Sternfathom's Pet Journal to summon this npc.",
-			["providers"] = {
-				{ "n", 98489 },	-- Shipwrecked Captive
-				{ "i", 122681 },	-- Sternfathom's Pet Journal
-			},
-			["coord"] = { 49.3, 45.4, AZSUNA },
-			["_drop"] = { "g" },	-- Drop Shiny Pet Charm
-		}),
-		-- PvP Weekly
 		pvp(q(32863, {	-- What We've Been Training For
 			["description"] = "Account-Wide Weekly Quest.|r",
 			["providers"] = {
@@ -1432,5 +1420,16 @@ root(ROOTS.PetBattles, petbattle({
 				})
 			},
 		})),
+		-- Legion
+		q(40310, {	-- Shipwrecked Captive
+			["description"] = "Weekly Account-Wide Pet Battle Quest. You need the toy Sternfathom's Pet Journal to summon this npc.",
+			["providers"] = {
+				{ "n", 98489 },	-- Shipwrecked Captive
+				{ "i", 122681 },	-- Sternfathom's Pet Journal
+			},
+			["coord"] = { 49.3, 45.4, AZSUNA },
+			["_drop"] = { "g" },	-- Drop Shiny Pet Charm
+			["timeline"] = { ADDED_7_0_3_LAUNCH },
+		}),
 	})),
-}));
+})));

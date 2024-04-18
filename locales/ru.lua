@@ -535,8 +535,6 @@ for key,value in pairs({
 		[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
 		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
-	-- Pets
-		[-795] = "Подземелья Боевых питомцев",						-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
 	-- Shadowlands Header

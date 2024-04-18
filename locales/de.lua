@@ -522,8 +522,6 @@ for key,value in pairs({
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- BFA Outposts
 		[-397] = "Außenposten",										-- Outposts
-	-- Pets
-		[-795] = "Haustierkampf Instanzen",							-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
 	-- Shadowlands Header

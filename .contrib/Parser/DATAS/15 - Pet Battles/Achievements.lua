@@ -2,40 +2,106 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 root(ROOTS.PetBattles, petbattle({
-	n(ACHIEVEMENTS, {
-		ach(6570, {	-- All Growns Up! (Lvl 25)
-			ach(6569),	-- Old Timer (Lvl 20)
-			ach(6568),	-- Time for a Leash (15)
-			ach(6567),	-- Growing Up (10)
-			ach(6566),	-- Just a Pup (5)
-			ach(7433),	-- Newbie (3)
-		}),
-		ach(6610, {	-- All Pets Allowed (Lvl 25)
-			ach(6609),	-- No Favorites (Lvl 10)
-		}),
-		ach(7465),		-- An Uncommon Find
-		ach(6622,  {	-- Big City Pet Brawler
-			-- Meta Achievement should symlink the contained Achievements from Source
-			["sym"] = {
-				{"meta_achievement",
-					6584,	-- Big City Pet Brawlin' - Alliance
-					6621,	-- Big City Pet Brawlin' - Horde
+	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+		pvp(n(PVP, {
+			ach(12290, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Family Brawler
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					12280,	-- Aquatic Brawler
+					12281,	-- Beast Brawler
+					12284,	-- Critter Brawler
+					12287,	-- Dragonkin Brawler
+					12282,	-- Elemental Brawler
+					12286,	-- Flying Brawler
+					12289,	-- Humanoid Brawler
+					12283,	-- Magic Brawler
+					12279,	-- Mechanical Brawler
+					12285,	-- Undead Brawler
+				}},
+				["g"] = {
+					i(156666),	-- Master Trainer's Tabard
 				},
-			},
+			})),
+			ach(12280, {	-- Aquatic Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12281, {	-- Beast Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12284, {	-- Critter Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12287, {	-- Dragonkin Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12282, {	-- Elemental Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12286, {	-- Flying Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12289, {	-- Humanoid Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12283, {	-- Magic Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12279, {	-- Mechanical Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(12285, {	-- Undead Brawler
+				["timeline"] = { ADDED_7_3_5 },
+			}),
+			ach(8297, {	-- Merciless Pet Brawler (10)
+				["timeline"] = { ADDED_5_3_0 },
+			}),
+			ach(8298, {	-- Vengeful Pet Brawler (50)
+				["timeline"] = { ADDED_5_3_0 },
+			}),
+			ach(8300, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {	-- Brutal Pet Brawler (250)
+				i(94191),	-- Stunted Direhorn (PET!)
+			})),
+			ach(8301, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {	-- Deadly Pet Brawler (1000)
+				title(227),	-- Trainer <Name>
+			})),
+			ach(6595),	-- Pet Brawler (10)
+			ach(6596),	-- Experienced Pet Brawler (50)
+			ach(6597),	-- Master Pet Brawler (250)
+			ach(6598),	-- Grand Master Pet Brawler (1000)
+			ach(6599),	-- Legendary Pet Brawler (5000)
+			ach(6620),	-- No Time To Heal
+		})),
+		-- Raise Pet
+		ach(7433),	-- Newbie (3)
+		ach(6566),	-- Just a Pup (5)
+		ach(6567),	-- Growing Up (10)
+		ach(6568),	-- Time for a Leash (15)
+		ach(6569),	-- Old Timer (Lvl 20)
+		ach(6570),	-- All Growns Up! (Lvl 25)
+		-- Raise Family (Need Crit)
+		ach(6609),	-- No Favorites (Lvl 10)
+		ach(6610),	-- All Pets Allowed (Lvl 25)
+		ach(7465),	-- An Uncommon Find
+		ach(6622, {	-- Big City Pet Brawler
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {{"meta_achievement",
+				6584,	-- Big City Pet Brawlin' - Alliance
+				6621,	-- Big City Pet Brawlin' - Horde
+			}},
 		}),
-		ach(6584,  {	-- Big City Pet Brawlin' - Alliance
+		ach(6584, {	-- Big City Pet Brawlin' - Alliance
 			crit(19845),	-- Stormwind
 			crit(19846),	-- Ironforge
 			crit(19847),	-- Darnassus
 			crit(19848),	-- The Exodar
 		}),
-		ach(6621,  {	-- Big City Pet Brawlin' - Horde
+		ach(6621, {	-- Big City Pet Brawlin' - Horde
 			crit(19849),	-- Orgrimmar
 			crit(19850),	-- Thunder Bluff
 			crit(19851),	-- Undercity
 			crit(19852),	-- Silvermoon City
 		}),
-		ach(6611, {		-- Continental Tamer
+		ach(6611, {	-- Continental Tamer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				6614,	-- Outland Tamer
@@ -45,7 +111,7 @@ root(ROOTS.PetBattles, petbattle({
 				6616,	-- Pandaria Tamer
 			}},
 		}),
-		ach(8397, {		-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
+		ach(8397, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
 			--title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
 			title_female(240),	-- %s the Crazy Cat Lady
 			title_male(252),	-- %s the Crazy Cat Man
@@ -75,58 +141,26 @@ root(ROOTS.PetBattles, petbattle({
 			crit(23594),		-- White Kitten
 			crit(23595),		-- Winterspring Cub
 			crit(23600),		-- Xu-Fu, Cub of Xuen
-		}),
-		pvp(ach(8301,  {	-- Deadly Pet Brawler (1000)
-			title(227),	-- Trainer
-			ach(8300, {	-- Brutal Pet Brawler (250)
-				i(94191),	-- Stunted Direhorn (PET!)
-			}),
-			ach(8298),	-- Vengeful Pet Brawler (50)
-			ach(8297),	-- Merciless Pet Brawler (10)
 		})),
-		ach(6613, {		-- Eastern Kingdoms Tamer
-			crit(21419),		-- Arathi Highlands
-			crit(21421),		-- Badlands
-			crit(21422),		-- Blasted Lands
-			crit(21423),		-- Burning Steppes
-			crit(21427),		-- The Cape of Stranglethorn
-			crit(21428),		-- Deadwind Pass
-			crit(21386),		-- Duskwood
-			crit(21430),		-- Eastern Plaguelands
-			crit(21380),		-- Elwynn Forest
-			crit(21432),		-- Eversong Woods
-			crit(21433),		-- Ghostlands
-			crit(21435),		-- Hillsbrad Foothills
-			crit(21437),		-- The Hinterlands
-			crit(21440),		-- Loch Modan
-			crit(21441),		-- Northern Stranglethorn
-			crit(21385),		-- Redridge Mountains
-			crit(21442),		-- Searing Gorge
-			crit(21443),		-- Silverpine Forest
-			crit(21444),		-- Swamp of Sorrows
-			crit(21445),		-- Tirisfal Glades
-			crit(21486),		-- Twilight Highlands
-			crit(21446),		-- Western Plaguelands
-			crit(21384),		-- Westfall
-			crit(21447),		-- Wetlands
+		ach(8080, {-- Fabled Pandaren Tamer
+			["timeline"] = { ADDED_5_2_0 },
 		}),
-		ach(8080),		-- Fabled Pandaren Tamer
+		-- Check Again
 		ach(13279, {	-- Family Battler
 			-- Meta Achievement should symlink the contained Achievements from Source
-			["sym"] = {
-				{"meta_achievement",
-					13280,	-- Hobbyist Aquarist
-					13270,	-- Beast Mode
-					13271,	-- Critters with Huge Teeth
-					13272,	-- Dragons Make Everything Better
-					13273,	-- Element of Success
-					13274,	-- Fun With Flying
-					13281,	-- Human Resources
-					13275,	-- Magician's Secrets
-					13277,	-- Machine Learning
-					13278,	-- Not Quite Dead Yet
-				}},
-			["groups"] = {
+			["sym"] = {{"meta_achievement",
+				13280,	-- Hobbyist Aquarist
+				13270,	-- Beast Mode
+				13271,	-- Critters with Huge Teeth
+				13272,	-- Dragons Make Everything Better
+				13273,	-- Element of Success
+				13274,	-- Fun With Flying
+				13281,	-- Human Resources
+				13275,	-- Magician's Secrets
+				13277,	-- Machine Learning
+				13278,	-- Not Quite Dead Yet
+			}},
+			["g"] = {
 				i(165907),	-- Wicker Wraith (PET!)
 				ach(13280),	-- Hobbyist Aquarist
 				ach(13270),	-- Beast Mode
@@ -140,36 +174,8 @@ root(ROOTS.PetBattles, petbattle({
 				ach(13278),	-- Not Quite Dead Yet
 			},
 		}),
-		pvp(ach(12290, {	-- Family Brawler
-			-- Meta Achievement should symlink the contained Achievements from Source
-			["sym"] = {
-				{"meta_achievement",
-					12279,	-- Mechanical Brawler
-					12280,	-- Aquatic Brawler
-					12281,	-- Beast Brawler
-					12282,	-- Elemental Brawler
-					12283,	-- Magic Brawler
-					12284,	-- Critter Brawler
-					12285,	-- Undead Brawler
-					12286,	-- Flying Brawler
-					12287,	-- Dragonkin Brawler
-					12289,	-- Humanoid Brawler
-				}},
-			["groups"] = {
-				i(156666),	-- Master Trainer's Tabard
-				ach(12279),	-- Mechanical Brawler
-				ach(12280),	-- Aquatic Brawler
-				ach(12281),	-- Beast Brawler
-				ach(12282),	-- Elemental Brawler
-				ach(12283),	-- Magic Brawler
-				ach(12284),	-- Critter Brawler
-				ach(12285),	-- Undead Brawler
-				ach(12286),	-- Flying Brawler
-				ach(12287),	-- Dragonkin Brawler
-				ach(12289),	-- Humanoid Brawler
-			},
-		})),
-		ach(6608, {		-- Family Reunion
+		--
+		ach(6608, {	-- Family Reunion
 			crit(19750),		-- Humanoid
 			crit(19751),		-- Dragonkin
 			crit(19752),		-- Undead
@@ -181,83 +187,38 @@ root(ROOTS.PetBattles, petbattle({
 			crit(19758),		-- Aquatic
 			crit(19759),		-- Mechanical
 		}),
-		ach(7908, {		-- I Choose You
+		ach(7908, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {	-- I Choose You
 			i(92744),	-- Heavy Sack of Gold
-		}),
-		ach(6612, {		-- Kalimdor Tamer
-			crit(21448),		-- Ashenvale
-			crit(21449),		-- Azshara
-			crit(21450),		-- Azuremyst Isle
-			crit(21451),		-- Bloodmyst Isle
-			crit(21452),		-- Darkshore
-			crit(21453),		-- Desolace
-			crit(21454),		-- Durotar
-			crit(21455),		-- Dustwallow Marsh
-			crit(21456),		-- Felwood
-			crit(21457),		-- Feralas
-			crit(21488),		-- Mount Hyjal
-			crit(21459),		-- Mulgore
-			crit(21460),		-- Northern Barrens
-			crit(21461),		-- Silithus
-			crit(21462),		-- Southern Barrens
-			crit(21463),		-- Stonetalon Mountains
-			crit(21464),		-- Tanaris
-			crit(21465),		-- Thousand Needles
-			crit(21487),		-- Uldum
-			crit(21466),		-- Un'Goro Crater
-			crit(21467),		-- Winterspring
-		}),
-		ach(6592, {    -- Legendary Pet Battler (5000)
-			ach(6591),    -- Grand Master Pet Battler (1000)
-			ach(6462),    -- Master Pet Battler (250)
-			ach(6593),    -- Experienced Pet Battler (50)
-			ach(6594),    -- Cat Fight! (10)
-		}),
-		pvp(ach(6599, {    -- Legendary Pet Brawler (5000)
-			ach(6598),    -- Grand Master Pet Brawler (1000)
-			ach(6597),    -- Master Pet Brawler (250)
-			ach(6596),    -- Experienced Pet Brawler (50)
-			ach(6595),    -- Pet Brawler (10)
 		})),
-		pvp(ach(6620)),	-- No Time To Heal
-		ach(6615, {		-- Northrend Tamer
-			crit(21477),		-- Borean Tundra
-			crit(21478),		-- Crystalsong Forest
-			crit(21479),		-- Dragonblight
-			crit(21480),		-- Grizzly Hills
-			crit(21481),		-- Howling Fjord
-			crit(21482),		-- Icecrown
-			crit(21483),		-- Sholazar Basin
-			crit(21484),		-- The Storm Peaks
-			crit(21485),		-- Zul'Drak
+		ach(6594),	-- Cat Fight! (10)
+		ach(6593),	-- Experienced Pet Battler (50)
+		ach(6462),	-- Master Pet Battler (250)
+		ach(6591),	-- Grand Master Pet Battler (1000)
+		ach(6592),	-- Legendary Pet Battler (5000)
+		ach(9070, {	-- Overstuffed
+			["timeline"] = { ADDED_6_0_3_LAUNCH },
 		}),
-		ach(6614, {		-- Outland Tamer
-			crit(21468),		-- Blade's Edge Mountains
-			crit(21469),		-- Hellfire Peninsula
-			crit(21470),		-- Nagrand
-			crit(21475),		-- Netherstorm
-			crit(21472),		-- Shadowmoon Valley
-			crit(21471),		-- Terokkar Forest
-			crit(21476),		-- Zangarmarsh
+		ach(7936, {	-- Pandaren Spirit Tamer
+			["timeline"] = { ADDED_5_1_0 },
 		}),
-		ach(9070),	-- Overstuffed
-		ach(7936),		-- Pandaren Spirit Tamer
-		ach(12927),		-- Polished Pet Charmer
+		ach(12927, {	-- Polished Pet Charmer
+			["cost"] = {{"c", POLISHED_PET_CHARM, 500}},
+			["timeline"] = { ADDED_8_0_1_LAUNCH },
+		}),
+		ach(6578),	-- Pro Pet Group (15)
+		ach(6581),	-- Pro Pet Crew (30)
 		ach(6582, {	-- Pro Pet Mob (75)
 			i(88147),	-- Singing Cricket (PET!)
-			ach(6581),	-- Pro Pet Crew (30)
-			ach(6578),	-- Pro Pet Group (15)
 		}),
-		ach(7464, {		-- Quality & Quantity (50)
-			ach(7463),		-- High Quality (10)
-			ach(7462),		-- A Rare Catch (1)
-		}),
-		ach(6583, {	-- Rookie Pet Mob (75)
-			ach(6580),	-- Rookie Pet Crew (30)
-			ach(6579),	-- Rookie Pet Group (15)
-		}),
+		ach(7462),	-- A Rare Catch (1)
+		ach(7463),	-- High Quality (10)
+		ach(7464),	-- Quality & Quantity (50)
+		ach(6579),	-- Rookie Pet Group (15)
+		ach(6580),	-- Rookie Pet Crew (30)
+		ach(6583),	-- Rookie Pet Mob (75)
 		ach(9712, {		-- Shiny Pet Charmer
-			["timeline"] = { REMOVED_10_2_5 },
+			["cost"] = {{"c", 116415, 500 }},	-- 500x Shiny Pet Charms
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_2_5 },
 		}),
 		ach(6851, {	-- Take 'Em All On!
 			crit(19835),	-- Aquatic
@@ -271,20 +232,19 @@ root(ROOTS.PetBattles, petbattle({
 			crit(19843),	-- Mechanical
 			crit(19844),	-- Undead
 		}),
-		ach(6571),		-- That Was Close!
+		ach(6571),	-- That Was Close!
 		ach(8348,  {	-- The Longest Day
-		--	i(98715),	-- Marked Flawless Battle-Stone
+			["timeline"] = { ADDED_5_3_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
-		ach(7521,  {	-- Time to Open a Pet Store [400)
+		ach(7482),	-- Trainer Extraordinaire [100]
+		ach(7483),	-- Battle Master [200]
+		ach(6600),	-- Ultimate Trainer [300]
+		ach(7521, {	-- Time to Open a Pet Store [400]
 			i(89686),	-- Jade Tentacle (PET!)
-			ach(6600),	-- Ultimate Trainer [300)
-			ach(7483),	-- Battle Master [200)
-			ach(7482),	-- Trainer Extraordinaire [100)
 		}),
-		ach(6619, {	-- Win Streak (25)
-			ach(6618),	-- On A Roll (10)
-		}),
+		ach(6618),	-- On A Roll (10)
+		ach(6619),	-- Win Streak (25)
 		ach(6558, {	-- Local Pet Mauler (10)
 			["sym"] = {{"partial_achievement",6560}},	-- World Pet Mauler (60)
 		}),
@@ -360,14 +320,11 @@ root(ROOTS.PetBattles, petbattle({
 			crit(21592),	-- Townlong Steppes
 			crit(21593),	-- Vale of Eternal Blossoms
 		}),
-		ach(7436, {		-- Zen Pet Hunter (200)
-			ach(6557),		-- Master Pet Hunter (100)
-			ach(6556, {		-- Going to Need More Traps (50)
-				pa(77),			-- Strong Trap
-			}),
-			ach(6555),		-- Building a Team (25)
-			ach(6554),		-- He's Mine! (10)
-		}),
+		ach(6554),	-- He's Mine! (10)
+		ach(6555),	-- Building a Team (25)
+		ach(6556),	-- Going to Need More Traps (50)
+		ach(6557),	-- Master Pet Hunter (100)
+		ach(7436),	-- Zen Pet Hunter (200)
 		ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1750)
 			i(191932),	-- Violet Violence (PET!)
 		})),
@@ -377,38 +334,95 @@ root(ROOTS.PetBattles, petbattle({
 		ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Many More Mini Minions (1250)
 			i(191941),	-- Crystalline Mini-Monster (PET!)
 		})),
-		ach(12958, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Master of Minions (1000)
-			i(163218),		-- Hearthy (PET!)
+		ach(12958, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- Master of Minions (1000)
+			i(163218),	-- Hearthy (PET!)
 		})),
-		ach(12992, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Pet Emporium (800)
-			i(163220),		-- Rooter (PET!)
+		ach(12992, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- Pet Emporium (800)
+			i(163220),	-- Rooter (PET!)
 		})),
-		ach(9643, bubbleDownSelf({ ["timeline"] = { "added 6.0.1" } }, {	-- So. Many. Pets. (600)
-			i(118577),		-- Stormwing (PET!)
+		ach(9643, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- So. Many. Pets. (600)
+			i(118577),	-- Stormwing (PET!)
 		})),
-		ach(7501, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- That's a Lot of Pet Food (400)
-			i(89736),		-- Venus (PET!)
+		ach(7501, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4} }, {	-- That's a Lot of Pet Food (400)
+			i(89736),	-- Venus (PET!)
 		})),
-		ach(7500, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- Going to Need More Leashes(250)
-			i(85578),		-- Feral Vermling (PET!)
+		ach(7500, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Going to Need More Leashes(250)
+			i(85578),	-- Feral Vermling (PET!)
 		})),
-		ach(5875, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Littlest Pet Shop (150)
-			i(54810),		-- Celestial Dragon (PET!)
+		ach(5875, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {	-- Littlest Pet Shop (150)
+			i(54810),	-- Celestial Dragon (PET!)
 		})),
-		ach(5877, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Menagerie (125)
-			i(71387),		-- Brilliant Kaliri (PET!)
+		ach(5877, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {	-- Menagerie (125)
+			i(71387),	-- Brilliant Kaliri (PET!)
 		})),
-		ach(5876, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Petting Zoo (100)
-			i(71140),		-- Nuts (PET!)
+		ach(5876, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {	-- Petting Zoo (100)
+			i(71140),	-- Nuts (PET!)
 		})),
-		ach(2516, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {		-- Lil' Game Hunter (75)
-			i(44841),		-- Little Fawn (PET!)
-		})),
-		ach(1250, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Shop Smart, Shop Pet...Smart (50)
-			i(40653),		-- Stinker (PET!)
-		})),
-		ach(1248, {["timeline"] = { "added 3.0.2" }}),		-- Plethora of Pets (25)
-		ach(15, {["timeline"] = { "added 3.0.2" }}),		-- Plenty of Pets (15)
-		ach(1017, {["timeline"] = { "added 3.0.2" }}),		-- Can I Keep Him? (1)
-	}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(2516, bubbleDownSelf({	-- Lil' Game Hunter (75)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_1_0 },
+			-- #endif
+		}, {
+			-- #if ANYCLASSIC
+			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
+			["rank"] = 75,
+			-- #endif
+			["g"] = {
+				i(44841),	-- Little Fawn (PET!)
+			},
+		}))),
+		applyclassicphase(TBC_PHASE_ONE, ach(1250, bubbleDownSelf({	-- Shop Smart, Shop Pet...Smart (50)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
+		}, {
+			-- #if ANYCLASSIC
+			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
+			["rank"] = 50,
+			-- #if BEFORE WRATH
+			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
+			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
+			-- #endif
+			-- #endif
+			["g"] = {
+				i(40653),	-- Stinker (PET!)
+			},
+		}))),
+		ach(1248, {	-- Plethora of Pets (25)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #else
+			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
+			["rank"] = 25,
+			-- #if BEFORE WRATH
+			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
+			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
+			-- #endif
+			-- #endif
+		}),
+		ach(15, {	-- Plenty of Pets (15)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #else
+			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
+			["rank"] = 15,
+			-- #if BEFORE WRATH
+			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
+			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
+			-- #endif
+			-- #endif
+		}),
+		ach(1017, {	-- Can I Keep Him? (1)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #else
+			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
+			["rank"] = 1,
+			-- #if BEFORE WRATH
+			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
+			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
+			-- #endif
+			-- #endif
+		}),
+	})),
 }));

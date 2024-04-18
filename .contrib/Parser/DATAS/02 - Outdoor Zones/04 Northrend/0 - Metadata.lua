@@ -136,54 +136,59 @@ root(ROOTS.Zones, {
 						i(43348),	-- Tabard of the Explorer
 					},
 				})),
-				ach(6588, {		-- Northrend Safari
-					["timeline"] = { ADDED_5_0_4 },
-					["g"] = {
-						crit(21779),		-- Arctic Fox Kit (The Storm Peaks)
-						crit(21767),		-- Arctic Hare (Dragonblight, The Storm Peaks, Borean Tundra, Zul'Drak)
-						crit(21736),		-- Biletoad (Sholazar Basin)
-						crit(21768),		-- Borean Marmot (Borean Tundra)
-						crit(21629),		-- Chicken (Westfall, Duskwood, Howling Fjord, Elwynn Forest, Redridge Mountains, Tirisfal Glades)
-						crit(21625),		-- Cockroach (Icecrown, Twilight Highlands, Burning Steppes, The Hinterlands, Un'Goro Crater, Gorgrond, Wetlands, Val'sharah, Durotar, Icecrown Citadel, The Storm Peaks)
-						crit(21773),		-- Devouring Maggot (Howling Fjord)
-						crit(21771),		-- Dragonbone Hatchling (Dragonblight)
-						crit(21639),		-- Fawn (Elwynn Forest)
-						crit(21774),		-- Fjord Rat (Howling Fjord)
-						crit(21775),		-- Fjord Worg Pup (Howling Fjord)
-						crit(21679),		-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands, Azsuna, Stormheim, Howling Fjord)
-						crit(21649),		-- Huge Toad (Swamp of Sorrows, Zul'Drak, Hillsbrad Foothills, Twilight Highlands, Western Plaguelands)
-						crit(21772),		-- Imperial Eagle Chick (Grizzly Hills)
-						crit(21514),		-- Maggot (Ashenvale, Ghostlands, Hillsbrad Foothills, The Hinterlands, Undercity, Howling Fjord)
-						crit(21688),		-- Mountain Skunk (Stonetalon Mountains, Stormheim, Winterspring, Grizzly Hills, The Storm Peaks, Wetlands)
-						crit(21631),		-- Mouse (Dustwallow Marsh, The Exodar, Mulgore, Camp Narache, Thunder Bluff)
-						crit(21769),		-- Oily Slimeling (Borean Tundra)
-						crit(21508),		-- Rabbit (Stormwind City, Elwynn Forest, Mulgore, Stonetalon Mountains, Highmountain)
-						crit(21516),		-- Rat (Terokkar Forest, Hillsbrad Foothills, Ashenvale, Arathi Highlands, Desolace, Howling Fjord, The Hinterlands, Nagrand, Timeless Isle, Tirisfal Glades, Loch Modan, Darkshore, Ghostlands, Highmountain, Spires of Arak, Tanaan Jungle)
-						crit(21517),		-- Roach (Duskwood, Ashenvale, Desolace, Thousand Needles, Redridge Mountains, Undercity, Stonetalon Mountains, The Cape of Stranglethorn. Azshara, Northern Stranglethorn)
-						crit(21777),		-- Scourged Whelpling (Icecrown)
-						crit(21706),		-- Shore Crab (Westfall, Azshara, Borean Tundra, Twilight Highlands, Howling Fjord)
-						crit(21633),		-- Skunk (Duskwood, Terokkar Forest, Azshara, Howling Fjord, Bloodmyst Isle, Val'sharah, Azuremyst Isle)
-						crit(21519),		-- Snake (Dustwallow Marsh, Feralas, Eversong Woods, Westfall, Zul'Drak, Sholazar Basin, Zangarmarsh, Terokkar Forest, Ghostlands, Howling Fjord, Loch Modan)
-						crit(21521),		-- Spider (Stonetalon Mountains, Azshara, Dustwallow Marsh, Blasted Lands, Hillsbrad Foothills, Shadowmoon Valley)
-						crit(21522),		-- Squirrel (Stormwind City, Terokkar Forest, Ashenvale, Feralas, Elwynn Forest, Nagrand, Crystalsong Forest, Highmountain, Loch Modan, Duskwood, Darkshore, Western Plaguelands, Azuremyst Isle, Blade's Edge Mountains, Howling Fjord, Thunder Totem, Westfall)
-						crit(21659),		-- Strand Crab (The Cape of Stranglethorn, Northern Stranglethorn, Swamp of Sorrows)
-						crit(21778),		-- Stunted Shardhorn (Sholazar Basin)
-						crit(21646),		-- Toad (Durotar, Ashenvale, Felwood, Dustwallow Marsh, Orgrimmar, Nagrand, Wetlands, Ghostlands, Hillsbrad Foothills, Eversong Forest, Silverpine Forest)
-						crit(21770),		-- Tundra Penguin (Dragonblight, Borean Tundra)
-						crit(21776),		-- Turkey (Howling Fjord)
-						crit(21780),		-- Water Waveling (Zul'Drak)
-					},
-				}),
-				petbattle(ach(6605,  {	-- Taming Northrend
-					["timeline"] = { ADDED_5_0_4 },
-					["g"] = {
-						crit(21848),	-- Beegle Blastfuse [Howling Fjord)
-						crit(21849),	-- Nearly Headless Jacob [Crystalsong Forest)
-						crit(21850),	-- Okrut Dragonwaste [Dragonblight)
-						crit(21851),	-- Gutretch [Zul'Drak)
-						crit(21852),	-- Major Payne [Icecrown)
-					},
-				})),
+				petbattle(ach(6588, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Northrend Safari
+					crit(21779),	-- Arctic Fox Kit (The Storm Peaks)
+					crit(21767),	-- Arctic Hare (Dragonblight, The Storm Peaks, Borean Tundra, Zul'Drak)
+					crit(21736),	-- Biletoad (Sholazar Basin)
+					crit(21768),	-- Borean Marmot (Borean Tundra)
+					crit(21629),	-- Chicken (Westfall, Duskwood, Howling Fjord, Elwynn Forest, Redridge Mountains, Tirisfal Glades)
+					crit(21625),	-- Cockroach (Icecrown, Twilight Highlands, Burning Steppes, The Hinterlands, Un'Goro Crater, Gorgrond, Wetlands, Val'sharah, Durotar, Icecrown Citadel, The Storm Peaks)
+					crit(21773),	-- Devouring Maggot (Howling Fjord)
+					crit(21771),	-- Dragonbone Hatchling (Dragonblight)
+					crit(21639),	-- Fawn (Elwynn Forest)
+					crit(21774),	-- Fjord Rat (Howling Fjord)
+					crit(21775),	-- Fjord Worg Pup (Howling Fjord)
+					crit(21679),	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands, Azsuna, Stormheim, Howling Fjord)
+					crit(21649),	-- Huge Toad (Swamp of Sorrows, Zul'Drak, Hillsbrad Foothills, Twilight Highlands, Western Plaguelands)
+					crit(21772),	-- Imperial Eagle Chick (Grizzly Hills)
+					crit(21514),	-- Maggot (Ashenvale, Ghostlands, Hillsbrad Foothills, The Hinterlands, Undercity, Howling Fjord)
+					crit(21688),	-- Mountain Skunk (Stonetalon Mountains, Stormheim, Winterspring, Grizzly Hills, The Storm Peaks, Wetlands)
+					crit(21631),	-- Mouse (Dustwallow Marsh, The Exodar, Mulgore, Camp Narache, Thunder Bluff)
+					crit(21769),	-- Oily Slimeling (Borean Tundra)
+					crit(21508),	-- Rabbit (Stormwind City, Elwynn Forest, Mulgore, Stonetalon Mountains, Highmountain)
+					crit(21516),	-- Rat (Terokkar Forest, Hillsbrad Foothills, Ashenvale, Arathi Highlands, Desolace, Howling Fjord, The Hinterlands, Nagrand, Timeless Isle, Tirisfal Glades, Loch Modan, Darkshore, Ghostlands, Highmountain, Spires of Arak, Tanaan Jungle)
+					crit(21517),	-- Roach (Duskwood, Ashenvale, Desolace, Thousand Needles, Redridge Mountains, Undercity, Stonetalon Mountains, The Cape of Stranglethorn. Azshara, Northern Stranglethorn)
+					crit(21777),	-- Scourged Whelpling (Icecrown)
+					crit(21706),	-- Shore Crab (Westfall, Azshara, Borean Tundra, Twilight Highlands, Howling Fjord)
+					crit(21633),	-- Skunk (Duskwood, Terokkar Forest, Azshara, Howling Fjord, Bloodmyst Isle, Val'sharah, Azuremyst Isle)
+					crit(21519),	-- Snake (Dustwallow Marsh, Feralas, Eversong Woods, Westfall, Zul'Drak, Sholazar Basin, Zangarmarsh, Terokkar Forest, Ghostlands, Howling Fjord, Loch Modan)
+					crit(21521),	-- Spider (Stonetalon Mountains, Azshara, Dustwallow Marsh, Blasted Lands, Hillsbrad Foothills, Shadowmoon Valley)
+					crit(21522),	-- Squirrel (Stormwind City, Terokkar Forest, Ashenvale, Feralas, Elwynn Forest, Nagrand, Crystalsong Forest, Highmountain, Loch Modan, Duskwood, Darkshore, Western Plaguelands, Azuremyst Isle, Blade's Edge Mountains, Howling Fjord, Thunder Totem, Westfall)
+					crit(21659),	-- Strand Crab (The Cape of Stranglethorn, Northern Stranglethorn, Swamp of Sorrows)
+					crit(21778),	-- Stunted Shardhorn (Sholazar Basin)
+					crit(21646),	-- Toad (Durotar, Ashenvale, Felwood, Dustwallow Marsh, Orgrimmar, Nagrand, Wetlands, Ghostlands, Hillsbrad Foothills, Eversong Forest, Silverpine Forest)
+					crit(21770),	-- Tundra Penguin (Dragonblight, Borean Tundra)
+					crit(21776),	-- Turkey (Howling Fjord)
+					crit(21780),	-- Water Waveling (Zul'Drak)
+				}))),
+				petbattle(ach(6615, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Northrend Tamer
+					crit(21477),	-- Borean Tundra
+					crit(21478),	-- Crystalsong Forest
+					crit(21479),	-- Dragonblight
+					crit(21480),	-- Grizzly Hills
+					crit(21481),	-- Howling Fjord
+					crit(21482),	-- Icecrown
+					crit(21483),	-- Sholazar Basin
+					crit(21484),	-- The Storm Peaks
+					crit(21485),	-- Zul'Drak
+				}))),
+				petbattle(ach(6605, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Taming Northrend
+					crit(21848),	-- Beegle Blastfuse [Howling Fjord]
+					crit(21849),	-- Nearly Headless Jacob [Crystalsong Forest]
+					crit(21850),	-- Okrut Dragonwaste [Dragonblight]
+					crit(21851),	-- Gutretch [Zul'Drak]
+					crit(21852),	-- Major Payne [Icecrown]
+				}))),
 				ach(2557, {	-- To All The Squirrels Who Shared My Life
 					-- #if ANYCLASSIC
 					crit(9299,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
