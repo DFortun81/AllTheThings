@@ -136,16 +136,21 @@ def get_quest_names() -> None:
                         "Retail": "",
                     }
                     print("MoP-SL :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.2.7.99999"):
+                elif version.parse(missing_line) < version.parse("10.2.6.99999"):
                     expansion_dict = {
                         "Retail": "",
                         "PTR": "ptr",
                     }
-                    print("10.0.0-10.2.7 :", missing_line)
-                elif version.parse(missing_line) > version.parse("10.2.8.0"):
+                    print("10.0.0-10.2.6 :", missing_line)
+                elif version.parse(missing_line) < version.parse("10.2.7.99999"):
                     expansion_dict = {
                         "PTR": "ptr",
                     }
-                    print("10.2.8 :", missing_line)
+                    print("10.2.7 :", missing_line)
+                elif version.parse(missing_line) > version.parse("10.2.8.0"):
+                    expansion_dict = {
+                        # "BETA": "beta",
+                    }
+                    print("11.0.0 :", missing_line)
     with open(missing_path, "w") as missing_file:
         missing_file.writelines(missing_lines)

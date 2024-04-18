@@ -2685,3 +2685,35 @@
 2905@@@Wellspring Overlook, The Emerald Dream
 10.2.5.52432
 2915@@@Bel'ameth, Amirdrassil
+11.0.0.54311
+2882@@@Weaver's Lair, Azj-Kahet
+2889@@@Wildcamp Or'lay, Azj-Kahet
+2893@@@The Burrows, Azj-Kahet
+2894@@@11.0  - TEST - Dorn Batol, Khaz Algar - (LWB)
+2919@@@Wildcamp Ul'ar, Azj-Kahet
+2920@@@Faerin's Advance, Azj-Kahet
+2921@@@Mmarl, Azj-Kahet
+2922@@@Dunelle's Kindness, Hallowfall
+2923@@@Lightspark, Hallowfall
+2924@@@Light's Redoubt, Hallowfall
+2925@@@Opportunity Point, The Ringing Deeps
+2926@@@Camp Murroch, The Ringing Deeps
+2928@@@Dornogal, Isle of Dorn
+2929@@@Freywold Village, Isle of Dorn
+2931@@@Durgaz Cabin, Isle of Dorn
+2932@@@Rambleshire, Isle of Dorn
+2933@@@Front Gate, Nerub'ar Palace
+2934@@@Slime Pit, Nerub'ar Palace
+2935@@@Barracks, Nerub'ar Palace
+2936@@@Bridge, Nerub'ar Palace
+2937@@@Sanctum, Nerub'ar Palace
+2938@@@Weapon Master, Nerub'ar Palace
+2941@@@Mereldar, Hallowfall
+2942@@@Priory of the Sacred Flame, Hallowfall
+2943@@@Lorel's Crossing, Hallowfall
+2944@@@Hillhelm Family Farm, Hallowfall
+2950@@@The Aegis Wall, Hallowfall
+2955@@@Quest Path 9706: 11.0 Z2 - Max Level - CH3 - Q2 - Pipe Ingress 1 Taxi (SMART)
+2962@@@Gundargaz, The Ringing Deeps
+2963@@@Shadowvein Point, The Ringing Deeps
+2964@@@Quest Path 9786: 11.0 Z2 - Campaign - Ch 3 - Dark Iron From Above - Boss Flyover - (LWB)

@@ -1,0 +1,188 @@
+11.0.0.54311
+r(423340),	-- Khaz Algar Leatherworking
+r(425142),	-- Recraft Equipment
+r(438898),	-- Vicious Competitor's Leather Boots
+r(438899),	-- Vicious Competitor's Leather Chestpiece
+r(438900),	-- Vicious Competitor's Leather Mask
+r(438901),	-- Vicious Competitor's Leather Shoulderpads
+r(438902),	-- Vicious Competitor's Leather Belt
+r(438903),	-- Vicious Competitor's Leather Trousers
+r(438904),	-- Vicious Competitor's Leather Gloves
+r(438905),	-- Vicious Competitor's Leather Wristwraps
+r(438906),	-- Vicious Competitor's Chain Treads
+r(438907),	-- Vicious Competitor's Chain Chainmail
+r(438908),	-- Vicious Competitor's Chain Cowl
+r(438909),	-- Vicious Competitor's Chain Epaulets
+r(438910),	-- Vicious Competitor's Chain Girdle
+r(438911),	-- Vicious Competitor's Chain Leggings
+r(438912),	-- Vicious Competitor's Chain Gauntlets
+r(438913),	-- Vicious Competitor's Chain Cuffs
+r(441051),	-- Rune-Branded Tunic
+r(441052),	-- Rune-Branded Kickers
+r(441053),	-- Rune-Branded Grasps
+r(441054),	-- Rune-Branded Hood
+r(441055),	-- Rune-Branded Legwraps
+r(441056),	-- Rune-Branded Mantle
+r(441057),	-- Rune-Branded Waistband
+r(441058),	-- Rune-Branded Armbands
+r(441059),	-- Glyph-Etched Breastplate
+r(441060),	-- Glyph-Etched Stompers
+r(441061),	-- Glyph-Etched Gauntlets
+r(441062),	-- Glyph-Etched Guise
+r(441063),	-- Glyph-Etched Cuisses
+r(441064),	-- Glyph-Etched Epaulets
+r(441065),	-- Glyph-Etched Binding
+r(441066),	-- Glyph-Etched Vambraces
+r(441460),	-- Blessed Weapon Grip
+r(441461),	-- Writhing Armor Banding
+r(443695),	-- Spelunker's Leather Jerkin
+r(443696),	-- Spelunker's Leather Footpads
+r(443697),	-- Spelunker's Practiced Mitts
+r(443698),	-- Spelunker's Practiced Hat
+r(443699),	-- Spelunker's Practiced Britches
+r(443700),	-- Spelunker's Practiced Shoulders
+r(443701),	-- Spelunker's Practiced Sash
+r(443702),	-- Spelunker's Leather Bands
+r(443703),	-- Tracker's Chitin Hauberk
+r(443704),	-- Tracker's Chitin Galoshes
+r(443705),	-- Tracker's Toughened Handguards
+r(443706),	-- Tracker's Toughened Headgear
+r(443707),	-- Tracker's Toughened Links
+r(443708),	-- Tracker's Toughened Shoulderguards
+r(443709),	-- Tracker's Toughened Girdle
+r(443710),	-- Tracker's Chitin Cuffs
+r(443949),	-- Rook Feather Wristwraps
+r(443950),	-- Roiling Thunderstrike Talons
+r(443951),	-- Weathered Stormfront Vest
+r(443958),	-- Busy Bee's Buckle
+r(443960),	-- Reinforced Setae Flyers
+r(443961),	-- Smoldering Pollen Hauberk
+r(444068),	-- Vambraces of Deepening Darkness
+r(444070),	-- Adrenal Surge Clasp
+r(444071),	-- Waders of the Unifying Flame
+r(444073),	-- Sanctified Torchbearer's Grips
+r(444075),	-- Carapace-Backed Hide
+r(444076),	-- Crystalfused Hide
+r(444077),	-- Writhing Hide
+r(444078),	-- Sporecoated Hide
+r(444079),	-- Leyfused Hide
+r(444085),	-- Deepfury Hide
+r(444086),	-- Chitin Armor Banding
+r(444087),	-- Storm-Touched Weapon Wrap
+r(444102),	-- Stormbound Armor Kit
+r(444103),	-- Defender's Armor Kit
+r(444104),	-- Dual Layered Armor Kit
+r(444105),	-- Apothecary's Cap
+r(444106),	-- Nerubian Alchemist's Hat
+r(444107),	-- Steelsmith's Apron
+r(444108),	-- Earthen Forgemaster's Apron
+r(444110),	-- Scrapsmith's Gloves
+r(444111),	-- Charged Scrapmaster's Gauntlets
+r(444112),	-- Gardener's Basket
+r(444113),	-- Stonebound Herbalist's Pack
+r(444114),	-- Gemcutter's Apron
+r(444115),	-- Earthen Jeweler's Cover
+r(444116),	-- Hideshaper's Cover
+r(444117),	-- Arathi Leatherworker's Smock
+r(444118),	-- Hideseeker's Pack
+r(444119),	-- Deep Tracker's Pack
+r(444120),	-- Hideseeker's Hat
+r(444121),	-- Deep Tracker's Cap
+r(444122),	-- Thunderous Drums
+
+
+
+
+Missing in Leatherworking.lua
+
+11.0.0.54311
+r(423340),	-- Khaz Algar Leatherworking
+r(425142),	-- Recraft Equipment
+r(438898),	-- Vicious Competitor's Leather Boots
+r(438899),	-- Vicious Competitor's Leather Chestpiece
+r(438900),	-- Vicious Competitor's Leather Mask
+r(438901),	-- Vicious Competitor's Leather Shoulderpads
+r(438902),	-- Vicious Competitor's Leather Belt
+r(438903),	-- Vicious Competitor's Leather Trousers
+r(438904),	-- Vicious Competitor's Leather Gloves
+r(438905),	-- Vicious Competitor's Leather Wristwraps
+r(438906),	-- Vicious Competitor's Chain Treads
+r(438907),	-- Vicious Competitor's Chain Chainmail
+r(438908),	-- Vicious Competitor's Chain Cowl
+r(438909),	-- Vicious Competitor's Chain Epaulets
+r(438910),	-- Vicious Competitor's Chain Girdle
+r(438911),	-- Vicious Competitor's Chain Leggings
+r(438912),	-- Vicious Competitor's Chain Gauntlets
+r(438913),	-- Vicious Competitor's Chain Cuffs
+r(441051),	-- Rune-Branded Tunic
+r(441052),	-- Rune-Branded Kickers
+r(441053),	-- Rune-Branded Grasps
+r(441054),	-- Rune-Branded Hood
+r(441055),	-- Rune-Branded Legwraps
+r(441056),	-- Rune-Branded Mantle
+r(441057),	-- Rune-Branded Waistband
+r(441058),	-- Rune-Branded Armbands
+r(441059),	-- Glyph-Etched Breastplate
+r(441060),	-- Glyph-Etched Stompers
+r(441061),	-- Glyph-Etched Gauntlets
+r(441062),	-- Glyph-Etched Guise
+r(441063),	-- Glyph-Etched Cuisses
+r(441064),	-- Glyph-Etched Epaulets
+r(441065),	-- Glyph-Etched Binding
+r(441066),	-- Glyph-Etched Vambraces
+r(441460),	-- Blessed Weapon Grip
+r(441461),	-- Writhing Armor Banding
+r(443695),	-- Spelunker's Leather Jerkin
+r(443696),	-- Spelunker's Leather Footpads
+r(443697),	-- Spelunker's Practiced Mitts
+r(443698),	-- Spelunker's Practiced Hat
+r(443699),	-- Spelunker's Practiced Britches
+r(443700),	-- Spelunker's Practiced Shoulders
+r(443701),	-- Spelunker's Practiced Sash
+r(443702),	-- Spelunker's Leather Bands
+r(443703),	-- Tracker's Chitin Hauberk
+r(443704),	-- Tracker's Chitin Galoshes
+r(443705),	-- Tracker's Toughened Handguards
+r(443706),	-- Tracker's Toughened Headgear
+r(443707),	-- Tracker's Toughened Links
+r(443708),	-- Tracker's Toughened Shoulderguards
+r(443709),	-- Tracker's Toughened Girdle
+r(443710),	-- Tracker's Chitin Cuffs
+r(443949),	-- Rook Feather Wristwraps
+r(443950),	-- Roiling Thunderstrike Talons
+r(443951),	-- Weathered Stormfront Vest
+r(443958),	-- Busy Bee's Buckle
+r(443960),	-- Reinforced Setae Flyers
+r(443961),	-- Smoldering Pollen Hauberk
+r(444068),	-- Vambraces of Deepening Darkness
+r(444070),	-- Adrenal Surge Clasp
+r(444071),	-- Waders of the Unifying Flame
+r(444073),	-- Sanctified Torchbearer's Grips
+r(444075),	-- Carapace-Backed Hide
+r(444076),	-- Crystalfused Hide
+r(444077),	-- Writhing Hide
+r(444078),	-- Sporecoated Hide
+r(444079),	-- Leyfused Hide
+r(444085),	-- Deepfury Hide
+r(444086),	-- Chitin Armor Banding
+r(444087),	-- Storm-Touched Weapon Wrap
+r(444102),	-- Stormbound Armor Kit
+r(444103),	-- Defender's Armor Kit
+r(444104),	-- Dual Layered Armor Kit
+r(444105),	-- Apothecary's Cap
+r(444106),	-- Nerubian Alchemist's Hat
+r(444107),	-- Steelsmith's Apron
+r(444108),	-- Earthen Forgemaster's Apron
+r(444110),	-- Scrapsmith's Gloves
+r(444111),	-- Charged Scrapmaster's Gauntlets
+r(444112),	-- Gardener's Basket
+r(444113),	-- Stonebound Herbalist's Pack
+r(444114),	-- Gemcutter's Apron
+r(444115),	-- Earthen Jeweler's Cover
+r(444116),	-- Hideshaper's Cover
+r(444117),	-- Arathi Leatherworker's Smock
+r(444118),	-- Hideseeker's Pack
+r(444119),	-- Deep Tracker's Pack
+r(444120),	-- Hideseeker's Hat
+r(444121),	-- Deep Tracker's Cap
+r(444122),	-- Thunderous Drums

@@ -1,0 +1,82 @@
+11.0.0.54311
+r(423341),	-- Khaz Algar Mining
+r(423394),	-- Overload Empowered Deposit
+r(423882),	-- Overload Test Deposit
+r(439705),	-- Bismuth
+r(439707),	-- Aqirite
+r(439708),	-- Ironclaw
+r(439709),	-- Rich Bismuth
+r(439710),	-- Rich Aqirite
+r(439711),	-- Rich Ironclaw
+r(439712),	-- Bismuth Seam
+r(439713),	-- Aqirite Seam
+r(439714),	-- Ironclaw Seam
+r(439715),	-- Crystallized Bismuth
+r(439716),	-- Crystallized Aqirite
+r(439717),	-- Crystallized Ironclaw
+r(439718),	-- Weeping Bismuth
+r(439719),	-- Weeping Aqirite
+r(439720),	-- Weeping Ironclaw
+r(439721),	-- EZ-Mine Bismuth
+r(439722),	-- EZ-Mine Aqirite
+r(439723),	-- EZ-Mine Ironclaw
+r(439724),	-- Camouflaged Bismuth
+r(439725),	-- Camouflaged Aqirite
+r(439726),	-- Camouflaged Ironclaw
+r(439727),	-- Cyphered Bismuth
+r(439728),	-- Cyphered Aqirite
+r(439729),	-- Cyphered Ironclaw
+r(439742),	-- Overload Crystallized
+r(439743),	-- Overload Weeping
+r(439744),	-- Overload Explosives
+r(439747),	-- Overload Cyphers
+r(442328),	-- Refine Bismuth |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(442329),	-- Refine Bismuth |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(442330),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(442331),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(442332),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(442333),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+
+
+
+
+Missing in Mining.lua
+
+11.0.0.54311
+r(423341),	-- Khaz Algar Mining
+r(423394),	-- Overload Empowered Deposit
+r(423882),	-- Overload Test Deposit
+r(439705),	-- Bismuth
+r(439707),	-- Aqirite
+r(439708),	-- Ironclaw
+r(439709),	-- Rich Bismuth
+r(439710),	-- Rich Aqirite
+r(439711),	-- Rich Ironclaw
+r(439712),	-- Bismuth Seam
+r(439713),	-- Aqirite Seam
+r(439714),	-- Ironclaw Seam
+r(439715),	-- Crystallized Bismuth
+r(439716),	-- Crystallized Aqirite
+r(439717),	-- Crystallized Ironclaw
+r(439718),	-- Weeping Bismuth
+r(439719),	-- Weeping Aqirite
+r(439720),	-- Weeping Ironclaw
+r(439721),	-- EZ-Mine Bismuth
+r(439722),	-- EZ-Mine Aqirite
+r(439723),	-- EZ-Mine Ironclaw
+r(439724),	-- Camouflaged Bismuth
+r(439725),	-- Camouflaged Aqirite
+r(439726),	-- Camouflaged Ironclaw
+r(439727),	-- Cyphered Bismuth
+r(439728),	-- Cyphered Aqirite
+r(439729),	-- Cyphered Ironclaw
+r(439742),	-- Overload Crystallized
+r(439743),	-- Overload Weeping
+r(439744),	-- Overload Explosives
+r(439747),	-- Overload Cyphers
+r(442328),	-- Refine Bismuth |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(442329),	-- Refine Bismuth |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(442330),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(442331),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(442332),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(442333),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier3:20:20|a

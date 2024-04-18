@@ -13849,3 +13849,623 @@
 40223@@@Timerunner
 40226@@@Realm First! Timerunner
 40227@@@Realm First! Mythic Garrosh
+11.0.0.54311
+12926@@@Artifact Power Earned by the Heart of Azeroth
+16633@@@<DNT> Maruuk Centaur Title Quest
+18830@@@Level 2
+19408@@@Professional Algarian Master
+19409@@@Working Underground
+19410@@@Algarian Master of All
+19414@@@Algarian Cook
+19415@@@Algarian Fisherman
+19459@@@Level 80
+19460@@@Two Warband Mentors: The War Within
+19467@@@1st level 80 on account (DNT)
+19469@@@2nd level 80 on account (DNT)
+19470@@@One Warband Mentor: The War Within
+19472@@@3nd level 80 on account (DNT)
+19473@@@4th level 80 on account (DNT)
+19474@@@5th level 80 on account (DNT)
+19475@@@Three Warband Mentors: The War Within
+19476@@@Four Warband Mentors: The War Within
+19477@@@Five Warband Mentors: The War Within
+19489@@@Class Connoisseur
+19510@@@Test - For PH - Multiple Characters Hitting Max Level (DNT)
+19515@@@Algarian Master of Many
+19552@@@Vicious Saddle (39)
+19559@@@Azj-Kahet
+19560@@@The Ringing Deeps
+19704@@@Overflowing Algarian Flasks
+19705@@@Test - For EHW - Account Wide Criteria Test (DNT)
+19716@@@Plentiful Algarian Potions
+19735@@@Algarian Alchemy 25 (DNT)
+19736@@@Algarian Alchemy 50 (DNT)
+19737@@@Algarian Alchemy 75 (DNT)
+19738@@@Algarian Alchemy 100 (DNT)
+19739@@@Algarian Blacksmithing 25 (DNT)
+19740@@@Algarian Blacksmithing 50 (DNT)
+19741@@@Algarian Blacksmithing 75 (DNT)
+19742@@@Algarian Blacksmithing 100 (DNT)
+19743@@@Algarian Enchanting 25 (DNT)
+19744@@@Algarian Enchanting 50 (DNT)
+19745@@@Algarian Enchanting 75 (DNT)
+19746@@@Algarian Enchanting 100 (DNT)
+19747@@@Algarian Engineering 25 (DNT)
+19748@@@Algarian Engineering 50 (DNT)
+19749@@@Algarian Engineering 75 (DNT)
+19750@@@Algarian Engineering 100 (DNT)
+19751@@@Algarian Inscription 25 (DNT)
+19752@@@Algarian Inscription 50 (DNT)
+19753@@@Algarian Inscription 75 (DNT)
+19754@@@Algarian Inscription 100 (DNT)
+19755@@@Algarian Jewelcrafting 25 (DNT)
+19756@@@Algarian Jewelcrafting 50 (DNT)
+19757@@@Algarian Jewelcrafting 75 (DNT)
+19758@@@Algarian Jewelcrafting 100 (DNT)
+19759@@@Algarian Leatherworking 25 (DNT)
+19760@@@Algarian Leatherworking 50 (DNT)
+19761@@@Algarian Leatherworking 75 (DNT)
+19762@@@Algarian Leatherworking 100 (DNT)
+19763@@@Algarian Tailoring 25 (DNT)
+19764@@@Algarian Tailoring 50 (DNT)
+19765@@@Algarian Tailoring 75 (DNT)
+19766@@@Algarian Tailoring 100 (DNT)
+19767@@@Algarian Herbalism 25 (DNT)
+19768@@@Algarian Herbalism 50 (DNT)
+19769@@@Algarian Herbalism 75 (DNT)
+19770@@@Algarian Herbalism 100 (DNT)
+19771@@@Algarian Mining 25 (DNT)
+19772@@@Algarian Mining 50 (DNT)
+19773@@@Algarian Mining 75 (DNT)
+19774@@@Algarian Mining 100 (DNT)
+19775@@@Algarian Skinning 25 (DNT)
+19776@@@Algarian Skinning 50 (DNT)
+19777@@@Algarian Skinning 75 (DNT)
+19778@@@Algarian Skinning 100 (DNT)
+19961@@@Mythic Remix: Siege of Orgrimmar
+20074@@@Dynamic Duo Complete (DNT)
+20077@@@Terrific Trio Complete (DNT)
+20078@@@Quintessential Quintet Complete (DNT)
+20118@@@The Isle of Dorn
+20255@@@WW Zone 1 Race 1: Bronze
+20256@@@WW Zone 1 Race 1: Silver
+20257@@@WW Zone 1 Race 1: Gold
+20258@@@WW Zone 1 Race 1 Advanced: Bronze
+20259@@@WW Zone 1 Race 1 Advanced: Silver
+20260@@@WW Zone 1 Race 1 Advanced: Gold
+20261@@@WW Zone 1 Race 1 Reverse: Bronze
+20262@@@WW Zone 1 Race 1 Reverse: Silver
+20263@@@WW Zone 1 Race 1 Reverse: Gold
+20264@@@WW Zone 1 Race 2: Bronze
+20265@@@WW Zone 1 Race 2: Silver
+20266@@@WW Zone 1 Race 2: Gold
+20267@@@WW Zone 1 Race 2 Advanced: Bronze
+20268@@@WW Zone 1 Race 2 Advanced: Silver
+20269@@@WW Zone 1 Race 2 Advanced: Gold
+20270@@@WW Zone 1 Race 2 Reverse: Bronze
+20271@@@WW Zone 1 Race 2 Reverse: Silver
+20272@@@WW Zone 1 Race 2 Reverse: Gold
+20273@@@WW Zone 1 Race 3: Bronze
+20274@@@WW Zone 1 Race 3: Silver
+20275@@@WW Zone 1 Race 3: Gold
+20276@@@WW Zone 1 Race 3 Advanced: Bronze
+20277@@@WW Zone 1 Race 3 Advanced: Silver
+20278@@@WW Zone 1 Race 3 Advanced: Gold
+20279@@@WW Zone 1 Race 3 Reverse: Bronze
+20280@@@WW Zone 1 Race 3 Reverse: Silver
+20281@@@WW Zone 1 Race 3 Reverse: Gold
+20282@@@WW Zone 1 Race 4: Bronze
+20283@@@WW Zone 1 Race 4: Silver
+20284@@@WW Zone 1 Race 4: Gold
+20285@@@WW Zone 1 Race 4 Advanced: Bronze
+20286@@@WW Zone 1 Race 4 Advanced: Silver
+20287@@@WW Zone 1 Race 4 Advanced: Gold
+20288@@@WW Zone 1 Race 4 Reverse: Bronze
+20289@@@WW Zone 1 Race 4 Reverse: Silver
+20290@@@WW Zone 1 Race 4 Reverse: Gold
+20291@@@WW Zone 1 Race 5: Bronze
+20292@@@WW Zone 1 Race 5: Silver
+20293@@@WW Zone 1 Race 5: Gold
+20294@@@WW Zone 1 Race 5 Advanced: Bronze
+20295@@@WW Zone 1 Race 5 Advanced: Silver
+20296@@@WW Zone 1 Race 5 Advanced: Gold
+20297@@@WW Zone 1 Race 5 Reverse: Bronze
+20298@@@WW Zone 1 Race 5 Reverse: Silver
+20299@@@WW Zone 1 Race 5 Reverse: Gold
+20300@@@WW Zone 1 Race 6: Bronze
+20301@@@WW Zone 1 Race 6: Silver
+20302@@@WW Zone 1 Race 6: Gold
+20303@@@WW Zone 1 Race 6 Advanced: Bronze
+20304@@@WW Zone 1 Race 6 Advanced: Silver
+20305@@@WW Zone 1 Race 6 Advanced: Gold
+20306@@@WW Zone 1 Race 6 Reverse: Bronze
+20307@@@WW Zone 1 Race 6 Reverse: Silver
+20308@@@WW Zone 1 Race 6 Reverse: Gold
+20309@@@WW Zone 2 Race 1: Bronze
+20310@@@WW Zone 2 Race 1: Silver
+20311@@@WW Zone 2 Race 1: Gold
+20312@@@WW Zone 2 Race 1 Advanced: Bronze
+20313@@@WW Zone 2 Race 1 Advanced: Silver
+20314@@@WW Zone 2 Race 1 Advanced: Gold
+20315@@@WW Zone 2 Race 1 Reverse: Bronze
+20316@@@WW Zone 2 Race 1 Reverse: Silver
+20317@@@WW Zone 2 Race 1 Reverse: Gold
+20318@@@WW Zone 2 Race 2: Bronze
+20319@@@WW Zone 2 Race 2: Silver
+20320@@@WW Zone 2 Race 2: Gold
+20321@@@WW Zone 2 Race 2 Advanced: Bronze
+20322@@@WW Zone 2 Race 2 Advanced: Silver
+20323@@@WW Zone 2 Race 2 Advanced: Gold
+20324@@@WW Zone 2 Race 2 Reverse: Bronze
+20325@@@WW Zone 2 Race 2 Reverse: Silver
+20326@@@WW Zone 2 Race 2 Reverse: Gold
+20327@@@WW Zone 2 Race 3: Bronze
+20328@@@WW Zone 2 Race 3: Silver
+20329@@@WW Zone 2 Race 3: Gold
+20330@@@WW Zone 2 Race 3 Advanced: Bronze
+20331@@@WW Zone 2 Race 3 Advanced: Silver
+20332@@@WW Zone 2 Race 3 Advanced: Gold
+20333@@@WW Zone 2 Race 3 Reverse: Bronze
+20334@@@WW Zone 2 Race 3 Reverse: Silver
+20335@@@WW Zone 2 Race 3 Reverse: Gold
+20336@@@WW Zone 2 Race 4: Bronze
+20337@@@WW Zone 2 Race 4: Silver
+20338@@@WW Zone 2 Race 4: Gold
+20339@@@WW Zone 2 Race 4 Advanced: Bronze
+20340@@@WW Zone 2 Race 4 Advanced: Silver
+20341@@@WW Zone 2 Race 4 Advanced: Gold
+20342@@@WW Zone 2 Race 4 Reverse: Bronze
+20343@@@WW Zone 2 Race 4 Reverse: Silver
+20344@@@WW Zone 2 Race 4 Reverse: Gold
+20345@@@WW Zone 2 Race 5: Bronze
+20346@@@WW Zone 2 Race 5: Silver
+20347@@@WW Zone 2 Race 5: Gold
+20348@@@WW Zone 2 Race 5 Advanced: Bronze
+20349@@@WW Zone 2 Race 5 Advanced: Silver
+20350@@@WW Zone 2 Race 5 Advanced: Gold
+20351@@@WW Zone 2 Race 5 Reverse: Bronze
+20352@@@WW Zone 2 Race 5 Reverse: Silver
+20353@@@WW Zone 2 Race 5 Reverse: Gold
+20354@@@WW Zone 2 Race 6: Bronze
+20355@@@WW Zone 2 Race 6: Silver
+20356@@@WW Zone 2 Race 6: Gold
+20357@@@WW Zone 2 Race 6 Advanced: Bronze
+20358@@@WW Zone 2 Race 6 Advanced: Silver
+20359@@@WW Zone 2 Race 6 Advanced: Gold
+20360@@@WW Zone 2 Race 6 Reverse: Bronze
+20361@@@WW Zone 2 Race 6 Reverse: Silver
+20362@@@WW Zone 2 Race 6 Reverse: Gold
+20363@@@WW Zone 3 Race 1: Bronze
+20364@@@WW Zone 3 Race 1: Silver
+20365@@@WW Zone 3 Race 1: Gold
+20366@@@WW Zone 3 Race 1 Advanced: Bronze
+20367@@@WW Zone 3 Race 1 Advanced: Silver
+20368@@@WW Zone 3 Race 1 Advanced: Gold
+20369@@@WW Zone 3 Race 1 Reverse: Bronze
+20370@@@WW Zone 3 Race 1 Reverse: Silver
+20371@@@WW Zone 3 Race 1 Reverse: Gold
+20372@@@WW Zone 3 Race 2: Bronze
+20373@@@WW Zone 3 Race 2: Silver
+20374@@@WW Zone 3 Race 2: Gold
+20375@@@WW Zone 3 Race 2 Advanced: Bronze
+20376@@@WW Zone 3 Race 2 Advanced: Silver
+20377@@@WW Zone 3 Race 2 Advanced: Gold
+20378@@@WW Zone 3 Race 2 Reverse: Bronze
+20379@@@WW Zone 3 Race 2 Reverse: Silver
+20380@@@WW Zone 3 Race 2 Reverse: Gold
+20381@@@WW Zone 3 Race 3: Bronze
+20382@@@WW Zone 3 Race 3: Silver
+20383@@@WW Zone 3 Race 3: Gold
+20384@@@WW Zone 3 Race 3 Advanced: Bronze
+20385@@@WW Zone 3 Race 3 Advanced: Silver
+20386@@@WW Zone 3 Race 3 Advanced: Gold
+20387@@@WW Zone 3 Race 3 Reverse: Bronze
+20388@@@WW Zone 3 Race 3 Reverse: Silver
+20389@@@WW Zone 3 Race 3 Reverse: Gold
+20390@@@WW Zone 3 Race 4: Bronze
+20391@@@WW Zone 3 Race 4: Silver
+20392@@@WW Zone 3 Race 4: Gold
+20393@@@WW Zone 3 Race 4 Advanced: Bronze
+20394@@@WW Zone 3 Race 4 Advanced: Silver
+20395@@@WW Zone 3 Race 4 Advanced: Gold
+20396@@@WW Zone 3 Race 4 Reverse: Bronze
+20397@@@WW Zone 3 Race 4 Reverse: Silver
+20398@@@WW Zone 3 Race 4 Reverse: Gold
+20399@@@WW Zone 3 Race 5: Bronze
+20400@@@WW Zone 3 Race 5: Silver
+20401@@@WW Zone 3 Race 5: Gold
+20402@@@WW Zone 3 Race 5 Advanced: Bronze
+20403@@@WW Zone 3 Race 5 Advanced: Silver
+20404@@@WW Zone 3 Race 5 Advanced: Gold
+20405@@@WW Zone 3 Race 5 Reverse: Bronze
+20406@@@WW Zone 3 Race 5 Reverse: Silver
+20407@@@WW Zone 3 Race 5 Reverse: Gold
+20408@@@WW Zone 3 Race 6: Bronze
+20409@@@WW Zone 3 Race 6: Silver
+20410@@@WW Zone 3 Race 6: Gold
+20411@@@WW Zone 3 Race 6 Advanced: Bronze
+20412@@@WW Zone 3 Race 6 Advanced: Silver
+20413@@@WW Zone 3 Race 6 Advanced: Gold
+20414@@@WW Zone 3 Race 6 Reverse: Bronze
+20415@@@WW Zone 3 Race 6 Reverse: Silver
+20416@@@WW Zone 3 Race 6 Reverse: Gold
+20419@@@WW Zone 5 Race 1: Bronze
+20420@@@WW Zone 5 Race 1: Silver
+20421@@@WW Zone 5 Race 1: Gold
+20422@@@WW Zone 5 Race 1 Advanced: Bronze
+20423@@@WW Zone 5 Race 1 Advanced: Silver
+20424@@@WW Zone 5 Race 1 Advanced: Gold
+20425@@@WW Zone 5 Race 1 Reverse: Bronze
+20426@@@WW Zone 5 Race 1 Reverse: Silver
+20427@@@WW Zone 5 Race 1 Reverse: Gold
+20429@@@WW Zone 5 Race 2: Bronze
+20430@@@WW Zone 5 Race 2: Silver
+20431@@@WW Zone 5 Race 2: Gold
+20432@@@WW Zone 5 Race 2 Advanced: Bronze
+20433@@@WW Zone 5 Race 2 Advanced: Silver
+20434@@@WW Zone 5 Race 2 Advanced: Gold
+20435@@@WW Zone 5 Race 2 Reverse: Bronze
+20436@@@WW Zone 5 Race 2 Reverse: Silver
+20437@@@WW Zone 5 Race 2 Reverse: Gold
+20439@@@WW Zone 5 Race 3: Bronze
+20440@@@WW Zone 5 Race 3: Silver
+20441@@@WW Zone 5 Race 3: Gold
+20442@@@WW Zone 5 Race 3 Advanced: Bronze
+20443@@@WW Zone 5 Race 3 Advanced: Silver
+20444@@@WW Zone 5 Race 3 Advanced: Gold
+20445@@@WW Zone 5 Race 3 Reverse: Bronze
+20446@@@WW Zone 5 Race 3 Reverse: Silver
+20447@@@WW Zone 5 Race 3 Reverse: Gold
+20448@@@WW Zone 5 Race 4: Bronze
+20449@@@WW Zone 5 Race 4: Silver
+20450@@@WW Zone 5 Race 4: Gold
+20451@@@WW Zone 5 Race 4 Advanced: Bronze
+20452@@@WW Zone 5 Race 4 Advanced: Silver
+20453@@@WW Zone 5 Race 4 Advanced: Gold
+20454@@@WW Zone 5 Race 4 Reverse: Bronze
+20455@@@WW Zone 5 Race 4 Reverse: Silver
+20456@@@WW Zone 5 Race 4 Reverse: Gold
+20457@@@WW Zone 5 Race 5: Bronze
+20458@@@WW Zone 5 Race 5: Silver
+20459@@@WW Zone 5 Race 5: Gold
+20460@@@WW Zone 5 Race 5 Advanced: Bronze
+20461@@@WW Zone 5 Race 5 Advanced: Silver
+20462@@@WW Zone 5 Race 5 Advanced: Gold
+20463@@@WW Zone 5 Race 5 Reverse: Bronze
+20464@@@WW Zone 5 Race 5 Reverse: Silver
+20465@@@WW Zone 5 Race 5 Reverse: Gold
+20466@@@WW Zone 5 Race 6: Bronze
+20467@@@WW Zone 5 Race 6: Silver
+20468@@@WW Zone 5 Race 6: Gold
+20469@@@WW Zone 5 Race 6 Advanced: Bronze
+20470@@@WW Zone 5 Race 6 Advanced: Silver
+20471@@@WW Zone 5 Race 6 Advanced: Gold
+20472@@@WW Zone 5 Race 6 Reverse: Bronze
+20473@@@WW Zone 5 Race 6 Reverse: Silver
+20474@@@WW Zone 5 Race 6 Reverse: Gold
+20482@@@The Darkness kills (Normal Darkflame Cleft)
+20483@@@The Darkness kills (Heroic Darkflame Cleft)
+20484@@@The Darkness kills (Mythic Darkflame Cleft)
+20485@@@Ki'katal the Harvester kills (Normal Ara-Kara, City of Echoes)
+20486@@@Ki'katal the Harvester kills (Heroic Ara-Kara, City of Echoes)
+20487@@@Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) (copy)
+20488@@@Valorstones earned
+20489@@@Weathered Harbinger Crests earned
+20490@@@Carved Harbinger Crests earned
+20491@@@Runed Harbinger Crests earned
+20492@@@Gilded Harbinger Crests earned
+20510@@@What Could it be?
+20511@@@Gotta Punt em' All
+20512@@@Herding Cats
+20523@@@The War Within Keystone Explorer: Season One
+20524@@@The War Within Keystone Conqueror: Season One
+20525@@@The War Within Keystone Master: Season One
+20526@@@The War Within Keystone Hero: Season One
+20579@@@Keystone Hero: The Rookery
+20580@@@Keystone Hero: The Stonevault
+20581@@@Keystone Hero: Priory of the Sacred Flame
+20582@@@Keystone Hero: City of Threads
+20583@@@Keystone Hero: Cinderbrew Meadery
+20584@@@Keystone Hero: Darkflame Cleft
+20585@@@Keystone Hero: The Dawnbreaker
+20586@@@Keystone Hero: Ara-Kara, City of Echoes
+20587@@@Keystone Hero: Siege of Boralus
+20588@@@Keystone Hero: Grim Batol
+20589@@@[PH] Hero: The War Within Season 1
+20594@@@Flamegards Hope
+20595@@@Sojourner of Isle of Dorn
+20596@@@Loremaster of Khaz Algar
+20597@@@United We Stand
+20598@@@Hallowfall
+39919@@@Might of Dragonblight (char specific hidden copy)
+39920@@@The Empire of Zul'Drak (char specific hidden copy)
+39921@@@Fo' Grizzle My Shizzle (char specific hidden copy)
+39922@@@The Summit of Storm Peaks (char specific hidden copy)
+39923@@@Into the Basin (char specific hidden copy)
+39924@@@Utgarde Keep (char specific hidden copy)
+39925@@@The Nexus (char specific hidden copy)
+39926@@@The Culling of Stratholme (char specific hidden copy)
+39927@@@Azjol-Nerub (char specific hidden copy)
+39928@@@Ahn'kahet: The Old Kingdom (char specific hidden copy)
+39929@@@Drak'Tharon Keep (char specific hidden copy)
+39930@@@Gundrak (char specific hidden copy)
+39931@@@Halls of Stone (char specific hidden copy)
+39932@@@Halls of Lightning (char specific hidden copy)
+39933@@@The Oculus (char specific hidden copy)
+39934@@@Utgarde Pinnacle (char specific hidden copy)
+39935@@@100 Honorable Kills (char specific hidden copy)
+39936@@@Stratholme (char specific hidden copy)
+39937@@@Hero of the Frostwolf Clan (char specific hidden copy)
+39938@@@Mysteries of the Marsh (char specific hidden copy)
+39939@@@Terror of Terokkar (char specific hidden copy)
+39940@@@Nagrand Slam (char specific hidden copy)
+39941@@@On the Blade's Edge (char specific hidden copy)
+39942@@@Into the Nether (char specific hidden copy)
+39943@@@Terror of Terokkar (char specific hidden copy)
+39944@@@Nagrand Slam (char specific hidden copy)
+39945@@@Fo' Grizzle My Shizzle (char specific hidden copy)
+39946@@@Might of Dragonblight (char specific hidden copy)
+39947@@@Sinking into Vashj'ir (char specific hidden copy)
+39948@@@Coming Down the Mountain (char specific hidden copy)
+39949@@@Deep into Deepholm (char specific hidden copy)
+39950@@@Unearthing Uldum (char specific hidden copy)
+39951@@@Fading into Twilight (char specific hidden copy)
+39952@@@Eastern Plaguelands Quests (char specific hidden copy)
+39953@@@Western Plaguelands Quests (char specific hidden copy)
+39954@@@Silverpine Forest Quests (char specific hidden copy)
+39955@@@Hillsbrad Foothills Quests (char specific hidden copy)
+39956@@@Arathi Highlands Quests (char specific hidden copy)
+39957@@@Hinterlands Quests (char specific hidden copy)
+39958@@@Loch Modan Quests (char specific hidden copy)
+39959@@@Badlands Quests (char specific hidden copy)
+39960@@@Burning Steppes Quests (char specific hidden copy)
+39961@@@Redridge Mountains Quests (char specific hidden copy)
+39962@@@Westfall Quests (char specific hidden copy)
+39963@@@Swamp of Sorrows Quests (char specific hidden copy)
+39964@@@Cape of Stranglethorn Quests (char specific hidden copy)
+39965@@@Northern Stranglethorn Quests (char specific hidden copy)
+39966@@@Ghostlands Quests (char specific hidden copy)
+39967@@@Blasted Lands Quests (char specific hidden copy)
+39968@@@Searing Gorge Quests (char specific hidden copy)
+39969@@@Ashenvale Quests (char specific hidden copy)
+39970@@@Bloodmyst Isle Quests (char specific hidden copy)
+39971@@@Azshara Quests (char specific hidden copy)
+39972@@@Darkshore Quests (char specific hidden copy)
+39973@@@Dustwallow Marsh Quests (char specific hidden copy)
+39974@@@Desolace Quests (char specific hidden copy)
+39975@@@Felwood Quests (char specific hidden copy)
+39976@@@Feralas Quests (char specific hidden copy)
+39977@@@Northern Barrens Quests (char specific hidden copy)
+39978@@@Silithus Quests (char specific hidden copy)
+39979@@@Tanaris Quests (char specific hidden copy)
+39980@@@Stonetalon Mountains Quests (char specific hidden copy)
+39981@@@Southern Barrens Quests (char specific hidden copy)
+39982@@@Thousand Needles Quests (char specific hidden copy)
+39983@@@Un'Goro Crater Quests (char specific hidden copy)
+39984@@@Winterspring Quests (char specific hidden copy)
+39985@@@Ashenvale Quests (char specific hidden copy)
+39986@@@Dustwallow Marsh Quests (char specific hidden copy)
+39987@@@Feralas Quests (char specific hidden copy)
+39988@@@Stonetalon Mountains Quests (char specific hidden copy)
+39989@@@Southern Barrens Quests (char specific hidden copy)
+39990@@@Sinking into Vashj'ir (char specific hidden copy)
+39991@@@Full Caravan (char specific hidden copy)
+39992@@@Fading into Twilight (char specific hidden copy)
+39993@@@Darkmoon Dominator (char specific hidden copy)
+39994@@@Upjade Complete (char specific hidden copy)
+39995@@@Rally the Valley (char specific hidden copy)
+39996@@@Upjade Complete (char specific hidden copy)
+39997@@@Slum It in the Summit (char specific hidden copy)
+39998@@@Slum It in the Summit (char specific hidden copy)
+39999@@@One Steppe Forward, Two Steppes Back (char specific hidden copy)
+40000@@@Dread Haste Makes Dread Waste (char specific hidden copy)
+40001@@@Amber is the Color of My Energy (char specific hidden copy)
+40002@@@Theramore's Fall (char specific hidden copy)
+40003@@@Theramore's Fall (char specific hidden copy)
+40004@@@You'll Get Caught Up In The... Frostfire! (char specific hidden copy)
+40005@@@As I Walk Through the Valley of the Shadow of Moon (char specific hidden copy)
+40006@@@Don't Let the Tala-door Hit You on the Way Out (char specific hidden copy)
+40007@@@Don't Let the Tala-door Hit You on the Way Out (char specific hidden copy)
+40008@@@Putting the Gore in Gorgrond (char specific hidden copy)
+40009@@@Putting the Gore in Gorgrond (char specific hidden copy)
+40010@@@Between Arak and a Hard Place (char specific hidden copy)
+40011@@@Between Arak and a Hard Place (char specific hidden copy)
+40012@@@Nagrandeur (char specific hidden copy)
+40013@@@Nagrandeur (char specific hidden copy)
+40014@@@Arakkoa Outcasts (char specific hidden copy)
+40015@@@Ain't No Mountain High Enough (char specific hidden copy)
+40016@@@Improving on History (char specific hidden copy)
+40017@@@Good Suramaritan (char specific hidden copy)
+40018@@@Unleashed Monstrosities (char specific hidden copy)
+40019@@@Insurrection (char specific hidden copy)
+40020@@@Legionfall Commander (char specific hidden copy)
+40021@@@The Throne of Zuldazar (char specific hidden copy)
+40022@@@The Dark Heart of Nazmir (char specific hidden copy)
+40023@@@Seat of the Pantheon (char specific hidden copy)
+40024@@@The Descent into Madness (char specific hidden copy)
+40025@@@Wetlands Quests (char specific hidden copy)
+40026@@@Duskwood Quests (char specific hidden copy)
+40027@@@Secrets in the Sands (char specific hidden copy)
+40028@@@Zandalar Forever! (char specific hidden copy)
+40029@@@Stormsong and Dance (char specific hidden copy)
+40030@@@Drust Do It. (char specific hidden copy)
+40031@@@Halls of Containment (char specific hidden copy)
+40032@@@Crimson Descent (char specific hidden copy)
+40033@@@Heart of Corruption (char specific hidden copy)
+40034@@@Welcome to Zandalar (char specific hidden copy)
+40035@@@Come Sail Away (char specific hidden copy)
+40036@@@Archipelago Explorer (char specific hidden copy)
+40037@@@Victory or Death (char specific hidden copy)
+40038@@@Junkyard Collector (char specific hidden copy)
+40039@@@The Circle of Stars (char specific hidden copy)
+40040@@@The Waking Dream (char specific hidden copy)
+40041@@@Adventurer of Bastion (char specific hidden copy)
+40042@@@Adventurer of Maldraxxus (char specific hidden copy)
+40043@@@Adventurer of Ardenweald (char specific hidden copy)
+40044@@@Adventurer of Revendreth (char specific hidden copy)
+40045@@@Into the Maw (char specific hidden copy)
+40046@@@Pursuing Loyalty (char specific hidden copy)
+40047@@@Castle Nathria (char specific hidden copy)
+40048@@@It's In The Mix (char specific hidden copy)
+40049@@@Ramparts Racer (char specific hidden copy)
+40050@@@Fractured Faerie Tales (char specific hidden copy)
+40051@@@Toss a Seed to Your Hunter... (char specific hidden copy)
+40052@@@Bloodsport (char specific hidden copy)
+40053@@@Sand, Sand Everywhere! (char specific hidden copy)
+40054@@@Fragments of History (char specific hidden copy)
+40055@@@The Gentleman Elemental (char specific hidden copy)
+40056@@@Fury of the Storm (char specific hidden copy)
+40057@@@Hero of the Stormpike Guard (char specific hidden copy)
+40060@@@Might of the Alliance (char specific hidden copy)
+40082@@@Never Enough
+40083@@@Tour of Duty: Isle of Dorn
+40084@@@Tour of Duty: The Ringing Deeps
+40085@@@Tour of Duty: Hallowfall
+40086@@@Tour of Duty: Azj-Kahet
+40087@@@Unbound Battle
+40088@@@A Champion's Tour: The War Within
+40089@@@Spoiled Goods
+40090@@@Spoiled Goods
+40091@@@Slightly Spoiled
+40095@@@Sparking Battle
+40096@@@Sparking Battle
+40097@@@Ruffious's Bid
+40098@@@Immortal Spelunker
+40099@@@That Extra Push Over the Cliff
+40100@@@Undying Caver
+40101@@@Hitting one's Stride
+40102@@@Dawn of a new Delve
+40103@@@Nemesis
+40107@@@Harbinger of the Carved (TODO: Fix Icon)
+40115@@@Harbinger of the Runed (TODO: Fix Icon)
+40118@@@Harbinger of the Gilded (TODO: Fix Icon)
+40121@@@<Hidden> Account has completed 11.0 Upgrade System tutorial quests
+40138@@@Algarian Dungeoneer
+40139@@@Algarian Dungeon Damage Dealer
+40140@@@Algarian Dungeon Healer
+40141@@@Algarian Dungeon Tank
+40142@@@Learning to Share
+40145@@@So Much Sharing
+40146@@@War Within Superior
+40147@@@War Within Epic
+40150@@@Children's Entertainer
+40151@@@Mereldar Menance
+40152@@@Flight Glyphs: The Three Shields
+40153@@@Battle on Khaz Algar
+40154@@@Aquatic Battler of Khaz Algar
+40155@@@Beast Battler of Khaz Algar
+40156@@@Critter Battler of Khaz Algar
+40157@@@Dragonkin Battler of Khaz Algar
+40158@@@Elemental Battler of Khaz Algar
+40161@@@Flying Battler of Khaz Algar
+40162@@@Humanoid Battler of Khaz Algar
+40163@@@Magic Battler of Khaz Algar
+40164@@@Mechanical Battler of Khaz Algar
+40165@@@Undead Battler of Khaz Algar
+40166@@@Khaz Algar Glyph Hunter
+40172@@@Dynamic Flight Power 1
+40173@@@Dynamic Flight Power 2
+40174@@@Dynamic Flight Power 3
+40175@@@Dynamic Flight Power 4
+40176@@@Dynamic Flight Power 5
+40177@@@Dynamic Flight Power 6
+40178@@@Dynamic Flight Power 7
+40179@@@Dynamic Flight Power 8
+40180@@@Dynamic Flight Power 9
+40181@@@Dynamic Flight Power 10
+40182@@@Dynamic Flight Power 11
+40183@@@Dynamic Flight Power 12
+40184@@@Dynamic Flight Power 13
+40185@@@Dynamic Flight Power 14
+40186@@@Dynamic Flight Power 15
+40187@@@Dynamic Flight Power 16
+40188@@@Dynamic Flight Power 17
+40189@@@Dynamic Flight Power 18
+40190@@@Dynamic Flight Power 19
+40191@@@Dynamic Flight Power 20
+40194@@@Khaz Algar Safari
+40195@@@Deephaul Ravine victories
+40196@@@Deephaul Ravine battles
+40197@@@Rated Deephaul Ravine battles
+40198@@@Rated Deephaul Ravine victories
+40199@@@Rated Battleground Blitz played
+40200@@@Rated Battleground Blitz played the most
+40201@@@Rated Battleground Blitz won
+40202@@@Rated Battleground Blitz won the most
+40210@@@Deephaul Ravine Victory
+40211@@@Deephaul Ravine Veteran
+40215@@@Deephaul Ravine Perfection
+40216@@@Deephaul Ravine Expedience
+40217@@@Battleground Blitzer
+40219@@@Battleground Blitzest
+40220@@@Setting Records
+40221@@@Battleground Blitz Master
+40222@@@Echos of Danger
+40231@@@The War Within Pathfinder [NYI]
+40232@@@Glory of the Nerub-ar Raider
+40233@@@Strategist: The War Within Season 1
+40234@@@Forged Warlord: The War Within Season 1
+40235@@@Forged Marshall: The War Within Season 1
+40236@@@Mythic: Ulgrax the Devourer
+40237@@@Mythic: The Bloodbound Horror
+40238@@@Mythic: Sikran, Captain of the Sureki
+40239@@@Mythic: Rasha'nan
+40240@@@Mythic: Eggtender Ovi'nax
+40241@@@Mythic: Nexus-Princess Ky'veza
+40242@@@Mythic: The Silken Court
+40243@@@Mythic: Queen Ansurek
+40244@@@Nerub-ar Palace
+40245@@@Heroic: Nerub-ar Palace
+40246@@@Mythic: Nerub-ar Palace
+40247@@@[PH] Nerub-ar Palace Wing 1
+40248@@@[PH] Nerub-ar Palace Wing 2
+40249@@@[PH] Nerub-ar Palace Wing 3
+40250@@@The First Chord
+40251@@@Many Chords
+40252@@@A Series of Chords
+40253@@@Ahead of the Curve: Queen Ansurek
+40254@@@Cutting Edge: Queen Ansurek
+40255@@@Sik Parry Bro
+40256@@@Nerub-ar Palace Guild Run
+40257@@@Heroic: Nerub-ar Palace Guild Run
+40258@@@Mythic: Queen Ansurek Guild Run
+40259@@@Hall of Fame: Queen Ansurek
+40260@@@[PH] Bloodbound Horror Achievement
+40261@@@[PH] Ulgrax the Devourer Achievement
+40262@@@[PH] Rasha'nan Achievement
+40263@@@[PH] Eggtender Ovi'nax Achievement
+40264@@@[PH] Nexus-Princess Ky'veza Achievement
+40265@@@[PH] The Silken Court Achievement
+40266@@@[PH] Queen Ansurek Achievement
+40267@@@Ulgrax the Devourer kills (Raid Finder Nerub-ar Palace)
+40268@@@Ulgrax the Devourer kills (Normal Nerub-ar Palace)
+40269@@@Ulgrax the Devourer kills (Heroic Nerub-ar Palace)
+40270@@@Ulgrax the Devourer kills (Mythic Nerub-ar Palace)
+40271@@@The Bloodbound Horror kills (Raid Finder Nerub-ar Palace)
+40272@@@The Bloodbound Horror kills (Normal Nerub-ar Palace)
+40273@@@The Bloodbound Horror kills (Heroic Nerub-ar Palace)
+40274@@@The Bloodbound Horror kills (Mythic Nerub-ar Palace)
+40275@@@Sikran, Captain of the Sureki kills (Raid Finder Nerub-ar Palace)
+40276@@@Sikran, Captain of the Sureki kills (Normal Nerub-ar Palace)
+40277@@@Sikran, Captain of the Sureki kills (Heroic Nerub-ar Palace)
+40278@@@Sikran, Captain of the Sureki kills (Mythic Nerub-ar Palace)
+40279@@@Rasha'nan kills (Raid Finder Nerub-ar Palace)
+40280@@@Rasha'nan kills (Normal Nerub-ar Palace)
+40281@@@Rasha'nan kills (Heroic Nerub-ar Palace)
+40282@@@Rasha'nan kills (Mythic Nerub-ar Palace)
+40283@@@Eggtender Ovi'nax kills (Raid Finder Nerub-ar Palace)
+40284@@@Eggtender Ovi'nax kills (Normal Nerub-ar Palace)
+40285@@@Eggtender Ovi'nax kills (Heroic Nerub-ar Palace)
+40286@@@Eggtender Ovi'nax kills (Mythic Nerub-ar Palace)
+40287@@@Nexus-Princess Ky'veza kills (Raid Finder Nerub-ar Palace)
+40288@@@Nexus-Princess Ky'veza kills (Normal Nerub-ar Palace)
+40289@@@Nexus-Princess Ky'veza kills (Heroic Nerub-ar Palace)
+40290@@@Nexus-Princess Ky'veza kills (Mythic Nerub-ar Palace)
+40291@@@The Silken Court kills (Raid Finder Nerub-ar Palace)
+40292@@@The Silken Court kills (Normal Nerub-ar Palace)
+40293@@@The Silken Court kills (Heroic Nerub-ar Palace)
+40294@@@The Silken Court kills (Mythic Nerub-ar Palace)
+40295@@@Queen Ansurek kills (Raid Finder Nerub-ar Palace)
+40296@@@Queen Ansurek kills (Normal Nerub-ar Palace)
+40297@@@Queen Ansurek kills (Heroic Nerub-ar Palace)
+40298@@@Queen Ansurek kills (Mythic Nerub-ar Palace)

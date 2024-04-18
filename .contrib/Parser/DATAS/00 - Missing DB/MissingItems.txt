@@ -919,6 +919,8 @@ i(4338),	-- weave Cloth \\ Mageweave Cloth
 i(4340),	-- Dye \\ Gray Dye
 i(4341),	-- ow Dye \\ Yellow Dye
 i(4342),	-- le Dye \\ Purple Dye
+i(4361),	-- Copper Tube \\ Bent Copper Tube \\ Copper Tube
+i(4363),	-- en Modulator \\ Broken Modulator \\ Copper Modulator
 i(4399),	-- en Stock \\ Wooden Stock
 i(4400),	-- y Stock \\ Heavy Stock
 i(4402),	-- l Flame Sac \\ Small Flame Sac
@@ -3509,7 +3511,6 @@ i(20402),	-- t of Nozdormu \\ Agent of Nozdormu
 i(20405),	-- ded Tablet Transcription \\ Decoded Tablet Transcription
 i(20415),	-- War of the Shifting Sands \\ The War of the Shifting Sands
 i(20423),	-- Sandy Scorpid Claw
-i(20424),	-- worm Meat \\ Sandworm Meat
 i(20445),	-- Test Defense Ring +120
 i(20446),	-- Test Defense Ring +140 \\ Test Defense Ring +80
 i(20454),	-- 'Zora Rubbing \\ Hive'Zora Rubbing
@@ -31985,7 +31986,6 @@ i(168159),	-- Chum
 i(168167),	-- Brass Key
 i(168169),	-- Ancient Scroll
 i(168170),	-- Arcane Tome
-i(168173),	-- Kelpberry
 i(168183),	-- Rare Metal Collector
 i(168186),	-- Highborne Relic
 i(168187),	-- Highborne Relic
@@ -32022,7 +32022,6 @@ i(168260),	-- Void Cache Key \\ Naga Cache Key
 i(168261),	-- Reinforced Cache Key \\ Naga Cache Key
 i(168262),	-- Sentry Fish
 i(168263),	-- Mundane Recycling Requisition
-i(168265),	-- Lady Naz'jess' Head
 i(168270),	-- Rusty Mechaspider
 i(168281),	-- Mechaspider Leg
 i(168299),	-- Toe Spring

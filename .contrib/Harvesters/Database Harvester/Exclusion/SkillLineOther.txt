@@ -167,3 +167,16 @@
 2833@@@Dragon Isles Mining
 2834@@@Dragon Isles Skinning
 2846@@@Crafting
+2871@@@Khaz Algar Alchemy
+2872@@@Khaz Algar Blacksmithing
+2873@@@Khaz Algar Cooking
+2874@@@Khaz Algar Enchanting
+2875@@@Khaz Algar Engineering
+2876@@@Khaz Algar Fishing
+2877@@@Khaz Algar Herbalism
+2878@@@Khaz Algar Inscription
+2879@@@Khaz Algar Jewelcrafting
+2880@@@Khaz Algar Leatherworking
+2881@@@Khaz Algar Mining
+2882@@@Khaz Algar Skinning
+2883@@@Khaz Algar Tailoring

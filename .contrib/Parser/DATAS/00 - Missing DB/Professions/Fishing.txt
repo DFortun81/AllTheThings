@@ -1,0 +1,48 @@
+11.0.0.54311
+r(423336),	-- Khaz Algar Fishing
+r(444785),	-- Bloody Perch
+r(444786),	-- Crystalline Sturgeon
+r(444787),	-- Bismuth Bitterling
+r(444788),	-- Nibbling Minnow
+r(444789),	-- Whispering Stargazer
+r(444790),	-- Goldengill Trout
+r(444791),	-- Specular Rainbowfish
+r(444792),	-- Quiet River Bass
+r(444793),	-- Dornish Pike
+r(444794),	-- Roaring Anglerseeker
+r(444795),	-- Arathor Hammerfish
+r(444796),	-- Regal Dottyback
+r(444797),	-- Azj-Kahet Slum Shark
+r(444798),	-- Pale Huskfish
+r(444799),	-- Sanguine Dogfish
+r(444800),	-- Spiked Sea Raven
+r(444801),	-- Queen's Lurefish
+r(444802),	-- Cursed Ghoulfish
+r(444803),	-- Kah, King of the Deep
+
+
+
+
+Missing in Fishing.lua
+
+11.0.0.54311
+r(423336),	-- Khaz Algar Fishing
+r(444785),	-- Bloody Perch
+r(444786),	-- Crystalline Sturgeon
+r(444787),	-- Bismuth Bitterling
+r(444788),	-- Nibbling Minnow
+r(444789),	-- Whispering Stargazer
+r(444790),	-- Goldengill Trout
+r(444791),	-- Specular Rainbowfish
+r(444792),	-- Quiet River Bass
+r(444793),	-- Dornish Pike
+r(444794),	-- Roaring Anglerseeker
+r(444795),	-- Arathor Hammerfish
+r(444796),	-- Regal Dottyback
+r(444797),	-- Azj-Kahet Slum Shark
+r(444798),	-- Pale Huskfish
+r(444799),	-- Sanguine Dogfish
+r(444800),	-- Spiked Sea Raven
+r(444801),	-- Queen's Lurefish
+r(444802),	-- Cursed Ghoulfish
+r(444803),	-- Kah, King of the Deep

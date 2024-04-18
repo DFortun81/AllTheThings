@@ -11846,3 +11846,247 @@
 7323@@@10FX - Weapon Enchant - Sha - All Weapons
 7465@@@Funeral Pyre
 7466@@@Bulwark of the Black Ox
+11.0.0.54311
+7143@@@Rite of Sanctification
+7144@@@Rite of Adjuration
+7146@@@+$k1 Critical Strike and +$k2 Haste
+7147@@@+$k1 Critical Strike and +$k2 Haste
+7148@@@+$k1 Critical Strike and +$k2 Mastery
+7149@@@+$k1 Critical Strike and +$k2 Mastery
+7150@@@+$k1 Critical Strike and +$k2 Mastery
+7151@@@+$k1 Critical Strike and +$k2 Versatility
+7152@@@+$k1 Critical Strike and +$k2 Versatility
+7153@@@+$k1 Critical Strike and +$k2 Versatility
+7154@@@+$k1 Critical Strike
+7155@@@+$k1 Critical Strike
+7156@@@+$k1 Critical Strike
+7157@@@+$k1 Versatility and +$k2 Critical Strike
+7158@@@+$k1 Versatility and +$k2 Critical Strike
+7159@@@+$k1 Versatility and +$k2 Critical Strike
+7160@@@+$k1 Versatility and +$k2 Haste
+7161@@@+$k1 Versatility and +$k2 Haste
+7162@@@+$k1 Versatility and +$k2 Haste
+7163@@@+$k1 Versatility and +$k2 Mastery
+7164@@@+$k1 Versatility and +$k2 Mastery
+7165@@@+$k1 Versatility and +$k2 Mastery
+7166@@@+$k1 Versatility
+7167@@@+$k1 Versatility
+7168@@@+$k1 Versatility
+7169@@@+$k1 Haste and +$k2 Critical Strike
+7170@@@+$k1 Haste and +$k2 Critical Strike
+7171@@@+$k1 Haste and +$k2 Critical Strike
+7172@@@+$k1 Haste and +$k2 Mastery
+7173@@@+$k1 Haste and +$k2 Mastery
+7174@@@+$k1 Haste and +$k2 Mastery
+7175@@@+$k1 Haste and +$k2 Versatility
+7176@@@+$k1 Haste and +$k2 Versatility
+7177@@@+$k1 Haste and +$k2 Versatility
+7178@@@+$k1 Haste
+7179@@@+$k1 Haste
+7180@@@+$k1 Haste
+7181@@@+$k1 Mastery and +$k2 Critical Strike
+7182@@@+$k1 Mastery and +$k2 Critical Strike
+7183@@@+$k1 Mastery and +$k2 Critical Strike
+7184@@@+$k1 Mastery and +$k2 Haste
+7185@@@+$k1 Mastery and +$k2 Haste
+7186@@@+$k1 Mastery and +$k2 Haste
+7187@@@+$k1 Mastery and +$k2 Versatility
+7188@@@+$k1 Mastery and +$k2 Versatility
+7189@@@+$k1 Mastery and +$k2 Versatility
+7190@@@+$k1 Mastery
+7191@@@+$k1 Mastery
+7192@@@+$k1 Mastery
+7193@@@+$k1 Stamina and +$k2 Critical Strike
+7194@@@+$k1 Stamina and +$k2 Critical Strike
+7195@@@+$k1 Stamina and +$k2 Critical Strike
+7196@@@+$k1 Stamina and +$k2 Haste
+7197@@@+$k1 Stamina and +$k2 Haste
+7198@@@+$k1 Stamina and +$k2 Haste
+7199@@@+$k1 Stamina and +$k2 Mastery
+7200@@@+$k1 Stamina and +$k2 Mastery
+7201@@@+$k1 Stamina and +$k2 Mastery
+7202@@@+$k1 Stamina and +$k2 Versatility
+7203@@@+$k1 Stamina and +$k2 Versatility
+7204@@@+$k1 Stamina and +$k2 Versatility
+7205@@@+$k1 Stamina
+7206@@@+$k1 Stamina
+7207@@@+$k1 Stamina
+7208@@@+$k1 Critical Strike and +$k2 Haste
+7211@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algarian gem color
+7212@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algarian gem color
+7213@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algarian gem color
+7214@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algarian gem color
+7215@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algarian gem color
+7216@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algarian gem color
+7217@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algarian gem color
+7218@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algarian gem color
+7219@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algarian gem color
+7220@@@+$k1 Primary Stat and +$435550s1% Damage Reduction when affected by Crowd Control
+7221@@@+$k1 Primary Stat and opponent's failed interrupt attempts grant Precognition
+7222@@@+$k1 Primary Stat and getting snared increases damage of your next attack by $411132s1 per stack
+7251@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algarian gem color socketed
+7252@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algarian gem color socketed
+7253@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algarian gem color socketed
+7260@@@Max A Fx Testing enchants
+7282@@@Miner's Rune of Cyphering
+7296@@@11GFX_VoidSkardyn_Enchant_Visual
+7320@@@Test Enchant - Sha
+7329@@@+$k1 Critical Strike |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7330@@@+$k1 Critical Strike |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7331@@@+$k1 Critical Strike |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7332@@@+$k1 Critical Strike |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7333@@@+$k1 Critical Strike |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7334@@@+$k1 Critical Strike |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7335@@@+$k1 Haste |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7336@@@+$k1 Haste |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7337@@@+$k1 Haste |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7338@@@+$k1 Haste |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7339@@@+$k1 Haste |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7340@@@+$k1 Haste |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7341@@@+$k1 Mastery |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7342@@@+$k1 Mastery |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7343@@@+$k1 Mastery |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7344@@@+$k1 Mastery |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7345@@@+$k1 Mastery |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7346@@@+$k1 Mastery |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7347@@@+$k1 Versatility |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7348@@@+$k1 Versatility |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7349@@@+$k1 Versatility |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7350@@@+$k1 Versatility |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7351@@@+$k1 Versatility |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7352@@@+$k1 Versatility |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7353@@@Stormrider's Agility |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7354@@@Stormrider's Agility |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7355@@@Stormrider's Agility |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7356@@@Council's Intellect |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7357@@@Council's Intellect |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7358@@@Council's Intellect |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7359@@@Oathsworn's Strength |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7360@@@Oathsworn's Strength |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7361@@@Oathsworn's Strength |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7362@@@Crystalline Radiance |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7363@@@Crystalline Radiance |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7364@@@Crystalline Radiance |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7365@@@+$k1 Deftness |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7366@@@+$k1 Deftness |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7367@@@+$k1 Deftness |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7368@@@+$k1 Finesse |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7369@@@+$k1 Finesse |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7370@@@+$k1 Finesse |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7371@@@+$k1 Inspiration |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7372@@@+$k1 Inspiration |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7373@@@+$k1 Inspiration |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7374@@@+$k1 Perception |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7375@@@+$k1 Perception |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7376@@@+$k1 Perception |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7377@@@+$k1 Resourcefulness |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7378@@@+$k1 Resourcefulness |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7379@@@+$k1 Resourcefulness |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7380@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7381@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7382@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7383@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7384@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7385@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7386@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7387@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7388@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7389@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7390@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7391@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7392@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7393@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7394@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7395@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7396@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7397@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7398@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7399@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7400@@@+$k1 Avoidance |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7401@@@Chant of Avoidance |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7402@@@Chant of Avoidance |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7403@@@Chant of Avoidance |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7404@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7405@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7406@@@+$k1 Leech |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7407@@@Chant of Leech |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7408@@@Chant of Leech |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7409@@@Chant of Leech |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7410@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7411@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7412@@@+$k1 Speed |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7413@@@Chant of Speed |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7414@@@Chant of Speed |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7415@@@Chant of Speed |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7416@@@Scout's March |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7417@@@Scout's March |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7418@@@Scout's March |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7419@@@Cavalry's March |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7420@@@Cavalry's March |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7421@@@Cavalry's March |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7422@@@Defender's March |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7423@@@Defender's March |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7424@@@Defender's March |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7425@@@Illusory Adornment: Crystal
+7426@@@Illusory Adornment: Crystal
+7427@@@Illusory Adornment: Crystal
+7428@@@Illusory Adornment: Radiance
+7429@@@Illusory Adornment: Radiance
+7430@@@Illusory Adornment: Radiance
+7431@@@Illusory Adornment: Runes
+7432@@@Illusory Adornment: Runes
+7433@@@Illusory Adornment: Runes
+7434@@@Illusory Adornment: Shadow
+7435@@@Illusory Adornment: Shadow
+7436@@@Illusory Adornment: Shadow
+7437@@@Council's Guile |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7438@@@Council's Guile |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7439@@@Council's Guile |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7440@@@Stormrider's Fury |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7441@@@Stormrider's Fury |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7442@@@Stormrider's Fury |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7443@@@Stonebound Artistry |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7444@@@Stonebound Artistry |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7445@@@Stonebound Artistry |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7446@@@Oathsworn Tenacity |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7447@@@Oathsworn Tenacity |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7448@@@Oathsworn Tenacity |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7449@@@Authority of Air |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7450@@@Authority of Air |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7451@@@Authority of Air |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7452@@@Authority of Fiery Resolve |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7453@@@Authority of Fiery Resolve |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7454@@@Authority of Fiery Resolve |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7455@@@Authority of Storms |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7456@@@Authority of Storms |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7457@@@Authority of Storms |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7458@@@Authority of the Depths |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7459@@@Authority of the Depths |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7460@@@Authority of the Depths |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7461@@@Authority of Radiant Power |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7462@@@Authority of Radiant Power |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7463@@@Authority of Radiant Power |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7464@@@11.0.0 FX Testing - Enchant Visual - Holyfire
+7467@@@Bubbling Wax
+7468@@@Cursed Critical Strike |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7469@@@Cursed Critical Strike |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7470@@@Cursed Critical Strike |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7471@@@Cursed Haste |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7472@@@Cursed Haste |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7473@@@Cursed Haste |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7474@@@Cursed Versatility |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7475@@@Cursed Versatility |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7476@@@Cursed Versatility |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7477@@@Cursed Mastery |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7478@@@Cursed Mastery |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7479@@@Cursed Mastery |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7490@@@Fishing Lure (+$450402s1 Fishing Skill)
+7493@@@Algarian Mana Oil |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7494@@@Algarian Mana Oil |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7495@@@Algarian Mana Oil |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7496@@@Oil of Deepening Shadows |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7497@@@Oil of Deepening Shadows |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7498@@@Oil of Deepening Shadows |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7500@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7501@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7502@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier3:20:20|a

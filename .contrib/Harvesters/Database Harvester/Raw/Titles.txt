@@ -712,3 +712,12 @@
 551@@@Timerunner %s
 552@@@%s, Paragon of the Mists
 553@@@%s, Claw of Eternus
+11.0.0.54311
+258@@@Echochaser %s
+539@@@Strategist %s
+548@@@%s, the [PH] Hero
+549@@@Immortal Spelunker %s
+550@@@High Explorer %s
+554@@@Forged Warlord %s
+555@@@Forged Marshall %s
+556@@@%s the [PH] TBD Title

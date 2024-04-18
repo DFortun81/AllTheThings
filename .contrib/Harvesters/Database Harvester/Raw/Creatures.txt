@@ -21029,3 +21029,489 @@
 223810@@@Astral Emperor's Serpentling
 224116@@@Winds of Pandaria
 224503@@@Exodar Artificer
+11.0.0.54311
+192731@@@Arcane Missile
+204271@@@Abyssal Lurker
+205912@@@Spectator
+205946@@@Johnny Awesome
+206017@@@Brann Bronzebeard
+206167@@@Anxious Farmer
+206168@@@Anxious Farmer
+207938@@@Anxious Farmer
+208447@@@Generic Bunny - STM
+208499@@@Generic Bunny - STM
+208710@@@Generic Bunny - STM
+208873@@@Kalecgos
+208918@@@Khadgar
+209419@@@Generic Bunny - STM
+209470@@@Generic Bunny - PRK
+210716@@@Lethnal
+210719@@@Lethnal
+210722@@@Dispersal Crystal
+210876@@@Hidden Treasure Chest
+210993@@@Background
+211349@@@Alleria Windrunner
+211351@@@Anduin Wrynn
+211368@@@Alleria Windrunner
+211375@@@Alleria Windrunner
+211493@@@Xal'atath
+211499@@@Executor Nizrek
+211516@@@Alleria Windrunner
+211519@@@Anduin Wrynn
+211695@@@Alleria Windrunner
+211727@@@Katy Stampwhistle
+211752@@@Alleria Windrunner
+211888@@@Executor Nizrek
+211934@@@Raven Familiar
+212451@@@Oathsworn Stormrider
+212586@@@Sootsnout
+212696@@@Lokren
+212755@@@Queensguard Zirix
+212756@@@Baelgrim
+212758@@@Adelgonn
+212759@@@Provoked Burrowfiend
+212761@@@Swarming Skyterror
+212762@@@Wenbrandt
+212830@@@Kalecgos
+212933@@@Invading Depthlurker
+212935@@@Armored Subjugator
+213107@@@Faerin Lothar
+213108@@@Vaelisia Steelstrike
+213183@@@Arathi Stalwart
+213567@@@High Speaker Eirich
+213632@@@Alleria Windrunner
+213748@@@Velhanite Citizen
+213749@@@Velhanite Citizen
+213787@@@Duke Velhan
+213871@@@Void Pulse
+213886@@@Orc Wolf Rider
+213938@@@Stormrider
+214296@@@Stage Manager Huberta
+214297@@@Nerubian Ambusher
+214351@@@Go Here
+214355@@@Anduin Wrynn
+214362@@@Anduin Wrynn
+214367@@@Faerin Lothar
+214371@@@Vaelisia Steelstrike
+214376@@@Vaelisia Steelstrike
+214377@@@Anduin Wrynn
+214378@@@Faerin
+214402@@@Alleria Windrunner
+214418@@@Aelric Leid
+214449@@@Kirin Tor Mage
+214537@@@Air Bubbles
+214908@@@Alleria Windrunner
+215326@@@Arathi Captain
+215446@@@Alleria Windrunner
+215447@@@Anduin Wrynn
+215589@@@Invisible Bunny
+215609@@@Invisible Bunny
+215656@@@Shadow Bomb
+215666@@@Velhanite Citizen
+215667@@@Velhanite Citizen
+215681@@@Generic Bunny
+215804@@@Faerin
+215821@@@Moira Thaurissan
+215822@@@Berrund the Gleaming
+215840@@@Anduin
+215956@@@Taerry Bilgestone
+216081@@@Dogmatic Machine Speaker
+216082@@@Dogmatic Soot-Seer
+216096@@@Ironstrider Construct
+216101@@@Kill Target
+216102@@@Monstrous Skardyn
+216113@@@Moira Thaurissan
+216147@@@Anduin Wrynn
+216148@@@Alleria Windrunner
+216167@@@Thrall
+216168@@@Lady Jaina Proudmoore
+216176@@@Arathi Farmer
+216178@@@Arathi Farmer
+216188@@@Arathi Stalwart
+216189@@@Arathi Bulwark
+216296@@@Coalplume
+216297@@@Gryphon
+216299@@@Swarming Flyer
+216306@@@Deepwater Kobyss
+216307@@@Arathi Fisher
+216373@@@Algarian Flask Cauldron |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+216374@@@Algarian Flask Cauldron |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+216375@@@Algarian Flask Cauldron |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+216517@@@Anduin Wrynn
+216518@@@Alleria Windrunner
+216546@@@Kra'jhendo
+216559@@@Wave of Darkness
+216569@@@Algarian Potion Cauldron |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+216570@@@Algarian Potion Cauldron |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+216571@@@Algarian Potion Cauldron |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+216605@@@Swarming Threadling
+216609@@@Swift Stormrook
+216610@@@Generic Bunny - LWB (Infinite AOI, Client Local)
+216611@@@Health Bunny [DNT]
+216614@@@Generic Bunny
+216615@@@Generic Bunny
+216617@@@Generic Bunny
+216628@@@Baelgrim
+216629@@@Client Scene Squib
+216855@@@Suspicious Coal Pile
+216866@@@Generic Bunny
+217149@@@Targeting Bunny
+217205@@@Targeting Bunny
+217209@@@Xishirra
+217282@@@Alleria Windrunner
+217306@@@Nerubian Swarmer
+217310@@@Nerubian Frontliner
+217311@@@Nerubian Fighter
+217313@@@Crypt Lord
+217361@@@Health Bunny
+217385@@@Alleria Windrunner
+217386@@@Anduin Wrynn
+217388@@@Cinderhoney
+217389@@@Boiling Cinderbrew
+217390@@@Flaming Pollen
+217429@@@Overfiend
+217462@@@Swift Stormrook
+217463@@@Enraged Colossus
+217640@@@Albert
+217792@@@Zarein
+217793@@@Cloud Gryphon
+217860@@@Generic Bunny
+217913@@@Ballista
+217947@@@Ballista
+217974@@@Targeting Bunny
+217975@@@Targeting Bunny
+217977@@@Targeting Bunny
+218025@@@Targeting Bunny
+218152@@@Web Crawler
+218161@@@Swift Stormrook
+218162@@@Oathsworn Coreguard
+218438@@@Brann Bronzebeard
+218542@@@Activated Harvestbot
+218549@@@Brann Bronzebeard
+218859@@@Captain Elaena Lancekat
+218867@@@Dauntless Crewmember
+218939@@@Stormrider Kothilde
+218940@@@Troumer
+219000@@@Ring
+219001@@@Target
+219041@@@Katy Stampwhistle
+219107@@@Devolved Skardyn
+219161@@@Diabolic Imp
+219172@@@Vacuous Ritualist
+219207@@@Ascended Neophyte
+219252@@@Alleria Windrunner
+219253@@@Anduin Wrynn
+219345@@@Generic Invisible Actor
+219440@@@High Speaker Eirich
+219543@@@Devout Skitter Vassal
+219582@@@Woven Ritualist
+219583@@@Defiled Ritualist
+219584@@@Screeching Terror
+219611@@@Winds of Dorn
+219613@@@Kaheti Warshell
+219614@@@Web Priest
+219615@@@Unseen Blade
+219616@@@Pale Priest
+219617@@@Chitin Knight
+219618@@@Sureki Ironweave
+219620@@@Royal Weaver
+219655@@@Drone Abductor
+219664@@@Rampaging Threadling
+219665@@@Queensguard An'Jak Shabtir
+219678@@@Black Blood Egg Tender
+219738@@@Poison Device
+219898@@@Poison Device
+219943@@@Winds of the Isles
+220020@@@Toddy Whiskers
+220028@@@Ballista
+220030@@@Ballista
+220049@@@Frost Device
+220080@@@Frost Device
+220212@@@Wall
+220214@@@Attraction Pheromone
+220215@@@Repulsion Pheromone
+220216@@@Attack Pheromone
+220217@@@Hunger Pheromone
+220221@@@Nerubian Hatchling
+220356@@@Bog Beast
+220420@@@Remembered Riverpaw
+220536@@@Alleria Windrunner
+220555@@@Faerin Lothar
+220556@@@Great Kyron
+220557@@@Anduin Wrynn
+220558@@@Xal'atath
+220559@@@Alleria Windrunner
+220586@@@Queen Ansurek
+220675@@@Remembered Construct
+220680@@@Remembered Spawn
+220770@@@Void Barrier
+220802@@@Kurdran Wildhammer
+220805@@@Danath Trollbane
+220807@@@Overlord Geya'rah
+220848@@@Delve Key Credit
+220866@@@Horde Flag
+220957@@@Boost
+220970@@@Faerin Lothar
+221100@@@Faerin
+221193@@@Reckoning Deckhand
+221379@@@Generic Bunny
+221517@@@Mineral-Rich Cloud
+221545@@@Rare 08 Stalker
+221560@@@Electrical Disturbance
+221634@@@Nazgrim
+221659@@@Coreway Repair Rig
+221866@@@Anduin Wrynn
+221958@@@Rare 15 Stalker
+222018@@@Invisible Target
+222021@@@Candle
+222046@@@Rak-Ush Threadling
+222066@@@Arachnoid Hatchling
+222067@@@Arachnoid Hatchling
+222069@@@Illskitter
+222070@@@Chitin Burrower
+222071@@@Chitin Burrower
+222077@@@Waddles
+222078@@@Wriggle
+222079@@@Skippy
+222080@@@Redthroat Skipling
+222081@@@Moss Skipper
+222084@@@Faerin Lothar
+222096@@@The Candle King
+222113@@@Katy Stampwhistle
+222127@@@Horde Grunt
+222129@@@Horde Grunt
+222143@@@Gorgonna
+222175@@@Horde Emmissary
+222179@@@Ballista
+222194@@@Greenlands Chicken
+222195@@@Arathi Chicken
+222196@@@Greenlands Chicken
+222197@@@Arathi Chicken
+222200@@@Tiberius
+222201@@@Vanilla
+222202@@@Bean
+222203@@@Thunder
+222204@@@Argos
+222298@@@Hallowed Glowfly
+222318@@@Bop
+222319@@@Argent Scootlefish
+222320@@@Argent Scootlefish
+222325@@@Aubergine Scootlefish
+222326@@@Shadowbog Hopper
+222327@@@Aubergine Scootlefish
+222339@@@Spinner
+222340@@@Anub'Rekyute
+222341@@@Itchbite
+222342@@@Webbers
+222343@@@Verdant Scootlefish
+222344@@@Verdant Scootlefish
+222348@@@Caustic Oozeling
+222349@@@Caustic Oozeling
+222350@@@Shadowy Oozeling
+222351@@@Shadowy Oozeling
+222354@@@Voidling Ooze
+222355@@@Voidling Ooze
+222359@@@Writhing Transmutagen
+222361@@@Sorrel Oozeling
+222370@@@Xishirra Targeting [DNT]
+222420@@@Frenzied Bloodtick
+222421@@@Vile Bloodtick
+222476@@@Kirin Tor Guardian
+222492@@@Deviant Skardyn
+222499@@@Mossy Snail
+222500@@@Mossy Snail
+222501@@@Mossy Sea Snail
+222502@@@Mossy Snail
+222503@@@Mossy Snail
+222504@@@Mossy Sea Snail
+222515@@@Nerubian Swarmer
+222532@@@Obsidian Weave-rat
+222535@@@Haywire Servobot
+222574@@@Fuzzy
+222575@@@Jump Jump
+222576@@@Fringe
+222577@@@Jumping Spider
+222582@@@Ebon Ploughworm
+222583@@@Lil' Bonechewer
+222584@@@Common Ploughworm
+222585@@@Kaheti Bull Worm
+222586@@@Jawcrawler
+222587@@@Common Ploughworm
+222588@@@Sporbit
+222589@@@Sporbit
+222590@@@Sporbit
+222591@@@Sporbit
+222592@@@Sporbit
+222593@@@Sporbit
+222594@@@Sporbit
+222595@@@Sporbit
+222596@@@Sporbit
+222597@@@Sporbit
+222598@@@Sporbit
+222599@@@Sporbit
+222600@@@Sporbit
+222601@@@Sporbit
+222606@@@Pillarnest Bonedrinker
+222607@@@Venomwing
+222608@@@Winged Arachnoid
+222609@@@Sceaduthax
+222613@@@Fallowspark Glowfly
+222614@@@Azure Flickerfly
+222615@@@Vibrant Glowfly
+222644@@@Razorfang Saboteur
+222711@@@Waxwick
+222712@@@Magmashell Crawler
+222713@@@Magmashell Crawler
+222714@@@Burntram
+222717@@@Fathom Incher
+222730@@@Rampaging Threadling
+222736@@@Subterranean Dartswog
+222737@@@Subterranean Dartswog
+222738@@@Troglofrog
+222739@@@Troglofrog
+222742@@@Survey Tool
+222744@@@Ebon Ploughworm
+222745@@@Arathi Chicken
+222746@@@Greenlands Chicken
+222747@@@Mossy Snail
+222749@@@Winged Arachnoid
+222751@@@Azure Flickerfly
+222752@@@Vibrant Glowfly
+222754@@@Fallowspark Glowfly
+222755@@@Vile Bloodtick
+222757@@@Shalewing Devourer
+222759@@@Ravenous Shalewing
+222764@@@Starkstripe Hopper
+222766@@@Seafoam Hopper
+222767@@@Palelight Hopper
+222769@@@Starkstripe Hopper
+222770@@@Seafoam Hopper
+222771@@@Palelight Hopper
+222774@@@Fragrant Stonelamb
+222775@@@Sandstone Protolamb
+222776@@@Rosewool Protolamb
+222777@@@Cobalt Mosswool
+222778@@@Shale Mosswool
+222779@@@Loamy
+222780@@@Fragrant Stonelamb
+222781@@@Sandstone Protolamb
+222782@@@Rosewool Protolamb
+222783@@@Cobalt Mosswool
+222784@@@Shale Mosswool
+222806@@@Elizabeth Ross
+222819@@@Horde Grunt
+222823@@@Horde Grunt
+222825@@@Gorgonna
+222828@@@Wildhammer Skyfighter
+222829@@@Stromgarde Footman
+222830@@@Bonegrim
+222831@@@Sureki Venomspitter
+222845@@@Generic Bunny
+222852@@@Treasure Tracker
+222875@@@Meek Bloodlasher
+222876@@@Meek Bloodlasher
+222877@@@Ghostcap Menace
+222878@@@Ghostcap Menace
+222879@@@Blightbud
+222880@@@Nightfarm Growthling
+222883@@@Kobold Fist-Thrower
+222887@@@Treasure Tracker
+222904@@@Horde Emmissary
+222928@@@Horde Emmissary
+222935@@@Horde Emmissary
+222949@@@Arathi Aeroknight
+223047@@@Alliance Emmissary
+223048@@@Alliance Emmissary
+223049@@@Alliance Emmissary
+223050@@@Kurdran Wildhammer
+223051@@@Stromgarde Footman
+223053@@@Stromgarde Footman
+223083@@@Arathi Deckhand
+223087@@@Clay Stonecharger
+223088@@@Sandstone Ramolith
+223090@@@Bedrock Stonecharger
+223092@@@Alabaster Stonecharger
+223093@@@Granite Ramolith
+223094@@@Cobalt Ramolith
+223095@@@Bedrock Stonecharger
+223096@@@Alabaster Stonecharger
+223097@@@Black Ramolith
+223098@@@Cobalt Ramolith
+223134@@@Supervisor Varric
+223135@@@Nightshade
+223136@@@Umbral Amalgam
+223137@@@Umbral Amalgam
+223138@@@Slim
+223201@@@<DNT> Smoke Plume
+223205@@@High Exarch Turalyon
+223209@@@Zovex
+223235@@@<DNT> Giant Crystal
+223236@@@Unbound Earthen
+223256@@@Alleria Windrunner
+223257@@@Faerin Lothar
+223263@@@Supervisor Varric
+223268@@@Vaelisia Steelstrike
+223269@@@Web Target [DNT]
+223343@@@Tiny Cragling
+223344@@@Stratus
+223346@@@Ridge
+223347@@@Mini Airship
+223351@@@Cinderwold Sizzlestinger
+223360@@@Orweyna
+223366@@@Takey-Take
+223367@@@Bubs
+223368@@@Sir Pounce
+223379@@@Arrow Stalker 1 [DNT]
+223380@@@Arrow Stalker 2 [DNT]
+223381@@@Arrow Stalker 3 [DNT]
+223382@@@Arrow Stalker 4 [DNT]
+223399@@@Tickler
+223400@@@Swoopgrasp
+223401@@@Four-Legs
+223402@@@Flicker
+223406@@@Zaedu
+223407@@@Awakened Custodian
+223409@@@Guttergunk
+223435@@@Rufus
+223436@@@Nerubian Caster
+223466@@@Kaheti Siegelord
+223501@@@Merrix
+223545@@@Swarming Screamer
+223558@@@Ancient Glyph
+223560@@@Tracker Ancient Glyph
+223595@@@Kirin Tor Shield Master
+223605@@@Lady Jaina Proudmoore
+223607@@@Lady Jaina Proudmoore
+223698@@@Cinderhoney Emberstinger
+223706@@@Pinkskin Burrower
+223707@@@Pinkskin Burrower
+223712@@@Skittish Sniffler
+223715@@@Snuffling
+223717@@@Spearmint Snuffling
+223718@@@Sneef
+223744@@@Baby Hardclaw
+223747@@@Skittish Sniffler
+223813@@@Deviant Skardyn
+223814@@@Void Crystal Monstrosity
+223835@@@Cinderhoney Emberstinger
+223859@@@Purple Stagshell
+223861@@@Rak-Ush Battleshell
+223862@@@Tan Stagshell
+223863@@@Green Stagshell
+223864@@@Tan Stagshell
+223865@@@Green Stagshell
+223944@@@Alleria Windrunner
+223982@@@Anduin Wrynn
+224076@@@Hannan
+224090@@@Brown Leafbug
+224154@@@Vaelisia Steelstrike
+224383@@@Nerubian Caster
+224384@@@Nerubian Priest, Dark
+224385@@@Nerubian Hulk, Evolved - Fighter
+224388@@@Nerubian Spiderling
+224408@@@Hallowfall Crystal Sound Controller
+224519@@@Nerubian Army Periodic Sound 01
+224520@@@Nerubian Army Periodic Sound 02
+224530@@@Kill Credit
+224561@@@Fray
+224562@@@Buck

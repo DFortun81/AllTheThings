@@ -1,0 +1,182 @@
+11.0.0.54311
+r(423332),	-- Khaz Algar Blacksmithing
+r(425136),	-- Recraft Equipment
+r(438914),	-- Vicious Competitor's Plate Breastplate
+r(438915),	-- Vicious Competitor's Plate Sabatons
+r(438916),	-- Vicious Competitor's Plate Gauntlets
+r(438917),	-- Vicious Competitor's Plate Helm
+r(438918),	-- Vicious Competitor's Plate Greaves
+r(438919),	-- Vicious Competitor's Plate Pauldrons
+r(438920),	-- Vicious Competitor's Plate Waistguard
+r(438921),	-- Vicious Competitor's Plate Armguards
+r(450216),	-- Core Alloy
+r(450217),	-- Charged Alloy
+r(450218),	-- Sanctified Alloy
+r(450219),	-- Ironclaw Alloy
+r(450220),	-- Everforged Sabatons
+r(450221),	-- Everforged Breastplate
+r(450222),	-- Everforged Greatbelt
+r(450223),	-- Everforged Defender
+r(450224),	-- Everforged Helm
+r(450225),	-- Everforged Legplates
+r(450226),	-- Everforged Vambraces
+r(450227),	-- Everforged Pauldrons
+r(450228),	-- Everforged Gauntlets
+r(450229),	-- Everforged Shortblade
+r(450230),	-- Everforged Spellblade
+r(450231),	-- Everforged Longsword
+r(450232),	-- Everforged Warglaive
+r(450233),	-- Everforged Mace
+r(450234),	-- Everforged Greataxe
+r(450235),	-- Charged Hexsword
+r(450236),	-- Charged Runeaxe
+r(450237),	-- Charged Facesmasher
+r(450238),	-- Charged Claymore
+r(450239),	-- Charged Halberd
+r(450240),	-- Charged Crusher
+r(450241),	-- Charged Invoker
+r(450242),	-- Charged Slicer
+r(450243),	-- Echoing Impact Seal
+r(450244),	-- Arathor Armor Patch
+r(450245),	-- Crystal Gazer's Gauntlets
+r(450246),	-- Lightwatcher's Visor
+r(450247),	-- Echoing Truncheon
+r(450248),	-- Entangling Cutlass
+r(450249),	-- Haunting Void
+r(450250),	-- Siphoning Stiletto
+r(450251),	-- Ironclaw Stiletto
+r(450252),	-- Ironclaw Dirk
+r(450253),	-- Ironclaw Sword
+r(450254),	-- Ironclaw Knuckles
+r(450255),	-- Ironclaw Great Mace
+r(450256),	-- Ironclaw Axe
+r(450257),	-- Ironclaw Great Axe
+r(450258),	-- Ironclaw Sabatons
+r(450259),	-- Ironclaw Breastplate
+r(450260),	-- Ironclaw Greatbelt
+r(450261),	-- Ironclaw Defender
+r(450262),	-- Ironclaw Helm
+r(450263),	-- Ironclaw Legplates
+r(450264),	-- Ironclaw Vambraces
+r(450265),	-- Ironclaw Pauldrons
+r(450266),	-- Ironclaw Gauntlets
+r(450267),	-- Proficient Sickle
+r(450268),	-- Proficient Pickaxe
+r(450269),	-- Proficient Skinning Knife
+r(450270),	-- Proficient Needle Set
+r(450271),	-- Proficient Leatherworker's Knife
+r(450272),	-- Proficient Leatherworker's Toolset
+r(450273),	-- Proficient Blacksmith's Hammer
+r(450274),	-- Proficient Blacksmith's Toolbox
+r(450275),	-- Artisan Sickle
+r(450276),	-- Artisan Pickaxe
+r(450277),	-- Artisan Skinning Knife
+r(450278),	-- Artisan Needle Set
+r(450279),	-- Artisan Leatherworker's Knife
+r(450280),	-- Artisan Leatherworker's Toolset
+r(450281),	-- Artisan Blacksmith's Hammer
+r(450282),	-- Artisan Blacksmith's Toolbox
+r(450283),	-- Earthen Master's Arsenal
+r(450284),	-- Forged Framework
+r(450285),	-- Ironclaw Weapon Stone
+r(450286),	-- Reinforced Handle
+r(450287),	-- Seasoned Skillet
+r(450288),	-- Webbed Fishing Line
+r(450289),	-- Weighted Lure
+r(450290),	-- Earthen Master's Hammer
+r(450291),	-- Coreforged Repair Hammer
+r(450292),	-- Coreforged Skeleton Key
+
+
+
+
+Missing in Blacksmithing.lua
+
+11.0.0.54311
+r(423332),	-- Khaz Algar Blacksmithing
+r(425136),	-- Recraft Equipment
+r(438914),	-- Vicious Competitor's Plate Breastplate
+r(438915),	-- Vicious Competitor's Plate Sabatons
+r(438916),	-- Vicious Competitor's Plate Gauntlets
+r(438917),	-- Vicious Competitor's Plate Helm
+r(438918),	-- Vicious Competitor's Plate Greaves
+r(438919),	-- Vicious Competitor's Plate Pauldrons
+r(438920),	-- Vicious Competitor's Plate Waistguard
+r(438921),	-- Vicious Competitor's Plate Armguards
+r(450216),	-- Core Alloy
+r(450217),	-- Charged Alloy
+r(450218),	-- Sanctified Alloy
+r(450219),	-- Ironclaw Alloy
+r(450220),	-- Everforged Sabatons
+r(450221),	-- Everforged Breastplate
+r(450222),	-- Everforged Greatbelt
+r(450223),	-- Everforged Defender
+r(450224),	-- Everforged Helm
+r(450225),	-- Everforged Legplates
+r(450226),	-- Everforged Vambraces
+r(450227),	-- Everforged Pauldrons
+r(450228),	-- Everforged Gauntlets
+r(450229),	-- Everforged Shortblade
+r(450230),	-- Everforged Spellblade
+r(450231),	-- Everforged Longsword
+r(450232),	-- Everforged Warglaive
+r(450233),	-- Everforged Mace
+r(450234),	-- Everforged Greataxe
+r(450235),	-- Charged Hexsword
+r(450236),	-- Charged Runeaxe
+r(450237),	-- Charged Facesmasher
+r(450238),	-- Charged Claymore
+r(450239),	-- Charged Halberd
+r(450240),	-- Charged Crusher
+r(450241),	-- Charged Invoker
+r(450242),	-- Charged Slicer
+r(450243),	-- Echoing Impact Seal
+r(450244),	-- Arathor Armor Patch
+r(450245),	-- Crystal Gazer's Gauntlets
+r(450246),	-- Lightwatcher's Visor
+r(450247),	-- Echoing Truncheon
+r(450248),	-- Entangling Cutlass
+r(450249),	-- Haunting Void
+r(450250),	-- Siphoning Stiletto
+r(450251),	-- Ironclaw Stiletto
+r(450252),	-- Ironclaw Dirk
+r(450253),	-- Ironclaw Sword
+r(450254),	-- Ironclaw Knuckles
+r(450255),	-- Ironclaw Great Mace
+r(450256),	-- Ironclaw Axe
+r(450257),	-- Ironclaw Great Axe
+r(450258),	-- Ironclaw Sabatons
+r(450259),	-- Ironclaw Breastplate
+r(450260),	-- Ironclaw Greatbelt
+r(450261),	-- Ironclaw Defender
+r(450262),	-- Ironclaw Helm
+r(450263),	-- Ironclaw Legplates
+r(450264),	-- Ironclaw Vambraces
+r(450265),	-- Ironclaw Pauldrons
+r(450266),	-- Ironclaw Gauntlets
+r(450267),	-- Proficient Sickle
+r(450268),	-- Proficient Pickaxe
+r(450269),	-- Proficient Skinning Knife
+r(450270),	-- Proficient Needle Set
+r(450271),	-- Proficient Leatherworker's Knife
+r(450272),	-- Proficient Leatherworker's Toolset
+r(450273),	-- Proficient Blacksmith's Hammer
+r(450274),	-- Proficient Blacksmith's Toolbox
+r(450275),	-- Artisan Sickle
+r(450276),	-- Artisan Pickaxe
+r(450277),	-- Artisan Skinning Knife
+r(450278),	-- Artisan Needle Set
+r(450279),	-- Artisan Leatherworker's Knife
+r(450280),	-- Artisan Leatherworker's Toolset
+r(450281),	-- Artisan Blacksmith's Hammer
+r(450282),	-- Artisan Blacksmith's Toolbox
+r(450283),	-- Earthen Master's Arsenal
+r(450284),	-- Forged Framework
+r(450285),	-- Ironclaw Weapon Stone
+r(450286),	-- Reinforced Handle
+r(450287),	-- Seasoned Skillet
+r(450288),	-- Webbed Fishing Line
+r(450289),	-- Weighted Lure
+r(450290),	-- Earthen Master's Hammer
+r(450291),	-- Coreforged Repair Hammer
+r(450292),	-- Coreforged Skeleton Key

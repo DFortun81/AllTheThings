@@ -40,6 +40,31 @@ r(265869),	-- Skinning
 r(265871),	-- Skinning
 9.0.1.33978
 r(308569),	-- Skinning
+11.0.0.54311
+r(423342),	-- Khaz Algar Skinning
+r(440929),	-- Refine Hides - |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(440934),	-- Refine Hides - |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(440937),	-- Refine Leather - |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(440938),	-- Refine Leather - |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(440942),	-- Refine Chitin - |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(440943),	-- Refine Chitin - |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(440977),	-- Sharpen Your Knife
+r(442566),	-- Gloom Chitin
+r(442567),	-- Stormcharged Leather
+r(442569),	-- Sunless Carapace
+r(442572),	-- Thunderous Hide
+r(442615),	-- Carve Meat
+r(442644),	-- Specular Rainbowfish Lure
+r(442645),	-- Quiet River Bass Lure
+r(442646),	-- Dornish Pike Lure
+r(442647),	-- Arathor Hammerfish Lure
+r(442648),	-- Roaring Anglerseeker Lure
+r(442649),	-- Infusion: Crystal
+r(442650),	-- Infusion: Spores
+r(442651),	-- Infusion: Writhing
+r(442652),	-- Elusive Creature Lure
+r(442654),	-- Beast Lure Scent
+r(442655),	-- Supreme Beast Lure
 
 
 
@@ -119,3 +144,28 @@ r(302015),	-- Cragscale
 r(302016),	-- Cragscale
 9.0.1.33978
 r(308569),	-- Skinning
+11.0.0.54311
+r(423342),	-- Khaz Algar Skinning
+r(440929),	-- Refine Hides - |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(440934),	-- Refine Hides - |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(440937),	-- Refine Leather - |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(440938),	-- Refine Leather - |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(440942),	-- Refine Chitin - |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+r(440943),	-- Refine Chitin - |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+r(440977),	-- Sharpen Your Knife
+r(442566),	-- Gloom Chitin
+r(442567),	-- Stormcharged Leather
+r(442569),	-- Sunless Carapace
+r(442572),	-- Thunderous Hide
+r(442615),	-- Carve Meat
+r(442644),	-- Specular Rainbowfish Lure
+r(442645),	-- Quiet River Bass Lure
+r(442646),	-- Dornish Pike Lure
+r(442647),	-- Arathor Hammerfish Lure
+r(442648),	-- Roaring Anglerseeker Lure
+r(442649),	-- Infusion: Crystal
+r(442650),	-- Infusion: Spores
+r(442651),	-- Infusion: Writhing
+r(442652),	-- Elusive Creature Lure
+r(442654),	-- Beast Lure Scent
+r(442655),	-- Supreme Beast Lure

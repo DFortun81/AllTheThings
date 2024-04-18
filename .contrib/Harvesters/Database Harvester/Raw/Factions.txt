@@ -1032,3 +1032,34 @@
 2593@@@Keg Leg's Crew
 2604@@@Keg Leg's Crew (Paragon)
 2616@@@Keg Leg Thrasher
+11.0.0.54311
+1122@@@Storm Peaks Earthen
+2569@@@(11.0 Header) The War Within
+2570@@@Hallowfall Arathi
+2579@@@Delves: Season 1
+2580@@@Test Faction Alpha
+2590@@@Council of Dornogal
+2594@@@The Assembly of the Deeps
+2595@@@Order of Night
+2596@@@The Severed Threads (Paragon)
+2600@@@The Severed Threads
+2601@@@The Weaver (Notoriety)
+2602@@@Umbral Bazaar
+2605@@@The General (Notoriety)
+2606@@@The High Hollows
+2607@@@The Vizier (Notoriety)
+2609@@@The Burrows
+2610@@@Azj-Kahetti Nerubian (Always Hostile) (Hidden)
+2611@@@Hallowfall Arathi (Paragon)
+2612@@@Council of Dornogal (Paragon)
+2613@@@The Assembly of the Deeps (Paragon)
+2614@@@The Siegehold
+2635@@@The Skeins
+2637@@@PLAYER, Earthen Alliance
+2638@@@PLAYER, Earthen Horde
+2640@@@Brann Bronzebeard
+2644@@@[DNT] Delves: Season 1 Renown Track
+2645@@@Earthen
+2647@@@The Vizier (Notoriety), Paragon
+2648@@@The Weaver (Notoriety), Paragon
+2649@@@The General (Notoriety), Paragon

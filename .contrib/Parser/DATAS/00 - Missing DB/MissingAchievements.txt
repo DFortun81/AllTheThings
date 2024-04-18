@@ -81,3 +81,620 @@ ach(20068),	-- [DNT] Stat - Versatility
 ach(20477),	-- [DNT] Stat - Experience
 ach(20500),	-- Lion's Landing
 ach(40227),	-- Realm First! Mythic Garrosh
+11.0.0.54311
+ach(18830),	-- Level 2
+ach(19408),	-- Professional Algarian Master
+ach(19409),	-- Working Underground
+ach(19410),	-- Algarian Master of All
+ach(19414),	-- Algarian Cook
+ach(19415),	-- Algarian Fisherman
+ach(19459),	-- Level 80
+ach(19460),	-- Two Warband Mentors: The War Within
+ach(19467),	-- 1st level 80 on account (DNT)
+ach(19469),	-- 2nd level 80 on account (DNT)
+ach(19470),	-- One Warband Mentor: The War Within
+ach(19472),	-- 3nd level 80 on account (DNT)
+ach(19473),	-- 4th level 80 on account (DNT)
+ach(19474),	-- 5th level 80 on account (DNT)
+ach(19475),	-- Three Warband Mentors: The War Within
+ach(19476),	-- Four Warband Mentors: The War Within
+ach(19477),	-- Five Warband Mentors: The War Within
+ach(19489),	-- Class Connoisseur
+ach(19510),	-- Test - For PH - Multiple Characters Hitting Max Level (DNT)
+ach(19515),	-- Algarian Master of Many
+ach(19552),	-- Vicious Saddle (39)
+ach(19559),	-- Azj-Kahet
+ach(19560),	-- The Ringing Deeps
+ach(19704),	-- Overflowing Algarian Flasks
+ach(19705),	-- Test - For EHW - Account Wide Criteria Test (DNT)
+ach(19716),	-- Plentiful Algarian Potions
+ach(19735),	-- Algarian Alchemy 25 (DNT)
+ach(19736),	-- Algarian Alchemy 50 (DNT)
+ach(19737),	-- Algarian Alchemy 75 (DNT)
+ach(19738),	-- Algarian Alchemy 100 (DNT)
+ach(19739),	-- Algarian Blacksmithing 25 (DNT)
+ach(19740),	-- Algarian Blacksmithing 50 (DNT)
+ach(19741),	-- Algarian Blacksmithing 75 (DNT)
+ach(19742),	-- Algarian Blacksmithing 100 (DNT)
+ach(19743),	-- Algarian Enchanting 25 (DNT)
+ach(19744),	-- Algarian Enchanting 50 (DNT)
+ach(19745),	-- Algarian Enchanting 75 (DNT)
+ach(19746),	-- Algarian Enchanting 100 (DNT)
+ach(19747),	-- Algarian Engineering 25 (DNT)
+ach(19748),	-- Algarian Engineering 50 (DNT)
+ach(19749),	-- Algarian Engineering 75 (DNT)
+ach(19750),	-- Algarian Engineering 100 (DNT)
+ach(19751),	-- Algarian Inscription 25 (DNT)
+ach(19752),	-- Algarian Inscription 50 (DNT)
+ach(19753),	-- Algarian Inscription 75 (DNT)
+ach(19754),	-- Algarian Inscription 100 (DNT)
+ach(19755),	-- Algarian Jewelcrafting 25 (DNT)
+ach(19756),	-- Algarian Jewelcrafting 50 (DNT)
+ach(19757),	-- Algarian Jewelcrafting 75 (DNT)
+ach(19758),	-- Algarian Jewelcrafting 100 (DNT)
+ach(19759),	-- Algarian Leatherworking 25 (DNT)
+ach(19760),	-- Algarian Leatherworking 50 (DNT)
+ach(19761),	-- Algarian Leatherworking 75 (DNT)
+ach(19762),	-- Algarian Leatherworking 100 (DNT)
+ach(19763),	-- Algarian Tailoring 25 (DNT)
+ach(19764),	-- Algarian Tailoring 50 (DNT)
+ach(19765),	-- Algarian Tailoring 75 (DNT)
+ach(19766),	-- Algarian Tailoring 100 (DNT)
+ach(19767),	-- Algarian Herbalism 25 (DNT)
+ach(19768),	-- Algarian Herbalism 50 (DNT)
+ach(19769),	-- Algarian Herbalism 75 (DNT)
+ach(19770),	-- Algarian Herbalism 100 (DNT)
+ach(19771),	-- Algarian Mining 25 (DNT)
+ach(19772),	-- Algarian Mining 50 (DNT)
+ach(19773),	-- Algarian Mining 75 (DNT)
+ach(19774),	-- Algarian Mining 100 (DNT)
+ach(19775),	-- Algarian Skinning 25 (DNT)
+ach(19776),	-- Algarian Skinning 50 (DNT)
+ach(19777),	-- Algarian Skinning 75 (DNT)
+ach(19778),	-- Algarian Skinning 100 (DNT)
+ach(20074),	-- Dynamic Duo Complete (DNT)
+ach(20077),	-- Terrific Trio Complete (DNT)
+ach(20078),	-- Quintessential Quintet Complete (DNT)
+ach(20118),	-- The Isle of Dorn
+ach(20255),	-- WW Zone 1 Race 1: Bronze
+ach(20256),	-- WW Zone 1 Race 1: Silver
+ach(20257),	-- WW Zone 1 Race 1: Gold
+ach(20258),	-- WW Zone 1 Race 1 Advanced: Bronze
+ach(20259),	-- WW Zone 1 Race 1 Advanced: Silver
+ach(20260),	-- WW Zone 1 Race 1 Advanced: Gold
+ach(20261),	-- WW Zone 1 Race 1 Reverse: Bronze
+ach(20262),	-- WW Zone 1 Race 1 Reverse: Silver
+ach(20263),	-- WW Zone 1 Race 1 Reverse: Gold
+ach(20264),	-- WW Zone 1 Race 2: Bronze
+ach(20265),	-- WW Zone 1 Race 2: Silver
+ach(20266),	-- WW Zone 1 Race 2: Gold
+ach(20267),	-- WW Zone 1 Race 2 Advanced: Bronze
+ach(20268),	-- WW Zone 1 Race 2 Advanced: Silver
+ach(20269),	-- WW Zone 1 Race 2 Advanced: Gold
+ach(20270),	-- WW Zone 1 Race 2 Reverse: Bronze
+ach(20271),	-- WW Zone 1 Race 2 Reverse: Silver
+ach(20272),	-- WW Zone 1 Race 2 Reverse: Gold
+ach(20273),	-- WW Zone 1 Race 3: Bronze
+ach(20274),	-- WW Zone 1 Race 3: Silver
+ach(20275),	-- WW Zone 1 Race 3: Gold
+ach(20276),	-- WW Zone 1 Race 3 Advanced: Bronze
+ach(20277),	-- WW Zone 1 Race 3 Advanced: Silver
+ach(20278),	-- WW Zone 1 Race 3 Advanced: Gold
+ach(20279),	-- WW Zone 1 Race 3 Reverse: Bronze
+ach(20280),	-- WW Zone 1 Race 3 Reverse: Silver
+ach(20281),	-- WW Zone 1 Race 3 Reverse: Gold
+ach(20282),	-- WW Zone 1 Race 4: Bronze
+ach(20283),	-- WW Zone 1 Race 4: Silver
+ach(20284),	-- WW Zone 1 Race 4: Gold
+ach(20285),	-- WW Zone 1 Race 4 Advanced: Bronze
+ach(20286),	-- WW Zone 1 Race 4 Advanced: Silver
+ach(20287),	-- WW Zone 1 Race 4 Advanced: Gold
+ach(20288),	-- WW Zone 1 Race 4 Reverse: Bronze
+ach(20289),	-- WW Zone 1 Race 4 Reverse: Silver
+ach(20290),	-- WW Zone 1 Race 4 Reverse: Gold
+ach(20291),	-- WW Zone 1 Race 5: Bronze
+ach(20292),	-- WW Zone 1 Race 5: Silver
+ach(20293),	-- WW Zone 1 Race 5: Gold
+ach(20294),	-- WW Zone 1 Race 5 Advanced: Bronze
+ach(20295),	-- WW Zone 1 Race 5 Advanced: Silver
+ach(20296),	-- WW Zone 1 Race 5 Advanced: Gold
+ach(20297),	-- WW Zone 1 Race 5 Reverse: Bronze
+ach(20298),	-- WW Zone 1 Race 5 Reverse: Silver
+ach(20299),	-- WW Zone 1 Race 5 Reverse: Gold
+ach(20300),	-- WW Zone 1 Race 6: Bronze
+ach(20301),	-- WW Zone 1 Race 6: Silver
+ach(20302),	-- WW Zone 1 Race 6: Gold
+ach(20303),	-- WW Zone 1 Race 6 Advanced: Bronze
+ach(20304),	-- WW Zone 1 Race 6 Advanced: Silver
+ach(20305),	-- WW Zone 1 Race 6 Advanced: Gold
+ach(20306),	-- WW Zone 1 Race 6 Reverse: Bronze
+ach(20307),	-- WW Zone 1 Race 6 Reverse: Silver
+ach(20308),	-- WW Zone 1 Race 6 Reverse: Gold
+ach(20309),	-- WW Zone 2 Race 1: Bronze
+ach(20310),	-- WW Zone 2 Race 1: Silver
+ach(20311),	-- WW Zone 2 Race 1: Gold
+ach(20312),	-- WW Zone 2 Race 1 Advanced: Bronze
+ach(20313),	-- WW Zone 2 Race 1 Advanced: Silver
+ach(20314),	-- WW Zone 2 Race 1 Advanced: Gold
+ach(20315),	-- WW Zone 2 Race 1 Reverse: Bronze
+ach(20316),	-- WW Zone 2 Race 1 Reverse: Silver
+ach(20317),	-- WW Zone 2 Race 1 Reverse: Gold
+ach(20318),	-- WW Zone 2 Race 2: Bronze
+ach(20319),	-- WW Zone 2 Race 2: Silver
+ach(20320),	-- WW Zone 2 Race 2: Gold
+ach(20321),	-- WW Zone 2 Race 2 Advanced: Bronze
+ach(20322),	-- WW Zone 2 Race 2 Advanced: Silver
+ach(20323),	-- WW Zone 2 Race 2 Advanced: Gold
+ach(20324),	-- WW Zone 2 Race 2 Reverse: Bronze
+ach(20325),	-- WW Zone 2 Race 2 Reverse: Silver
+ach(20326),	-- WW Zone 2 Race 2 Reverse: Gold
+ach(20327),	-- WW Zone 2 Race 3: Bronze
+ach(20328),	-- WW Zone 2 Race 3: Silver
+ach(20329),	-- WW Zone 2 Race 3: Gold
+ach(20330),	-- WW Zone 2 Race 3 Advanced: Bronze
+ach(20331),	-- WW Zone 2 Race 3 Advanced: Silver
+ach(20332),	-- WW Zone 2 Race 3 Advanced: Gold
+ach(20333),	-- WW Zone 2 Race 3 Reverse: Bronze
+ach(20334),	-- WW Zone 2 Race 3 Reverse: Silver
+ach(20335),	-- WW Zone 2 Race 3 Reverse: Gold
+ach(20336),	-- WW Zone 2 Race 4: Bronze
+ach(20337),	-- WW Zone 2 Race 4: Silver
+ach(20338),	-- WW Zone 2 Race 4: Gold
+ach(20339),	-- WW Zone 2 Race 4 Advanced: Bronze
+ach(20340),	-- WW Zone 2 Race 4 Advanced: Silver
+ach(20341),	-- WW Zone 2 Race 4 Advanced: Gold
+ach(20342),	-- WW Zone 2 Race 4 Reverse: Bronze
+ach(20343),	-- WW Zone 2 Race 4 Reverse: Silver
+ach(20344),	-- WW Zone 2 Race 4 Reverse: Gold
+ach(20345),	-- WW Zone 2 Race 5: Bronze
+ach(20346),	-- WW Zone 2 Race 5: Silver
+ach(20347),	-- WW Zone 2 Race 5: Gold
+ach(20348),	-- WW Zone 2 Race 5 Advanced: Bronze
+ach(20349),	-- WW Zone 2 Race 5 Advanced: Silver
+ach(20350),	-- WW Zone 2 Race 5 Advanced: Gold
+ach(20351),	-- WW Zone 2 Race 5 Reverse: Bronze
+ach(20352),	-- WW Zone 2 Race 5 Reverse: Silver
+ach(20353),	-- WW Zone 2 Race 5 Reverse: Gold
+ach(20354),	-- WW Zone 2 Race 6: Bronze
+ach(20355),	-- WW Zone 2 Race 6: Silver
+ach(20356),	-- WW Zone 2 Race 6: Gold
+ach(20357),	-- WW Zone 2 Race 6 Advanced: Bronze
+ach(20358),	-- WW Zone 2 Race 6 Advanced: Silver
+ach(20359),	-- WW Zone 2 Race 6 Advanced: Gold
+ach(20360),	-- WW Zone 2 Race 6 Reverse: Bronze
+ach(20361),	-- WW Zone 2 Race 6 Reverse: Silver
+ach(20362),	-- WW Zone 2 Race 6 Reverse: Gold
+ach(20363),	-- WW Zone 3 Race 1: Bronze
+ach(20364),	-- WW Zone 3 Race 1: Silver
+ach(20365),	-- WW Zone 3 Race 1: Gold
+ach(20366),	-- WW Zone 3 Race 1 Advanced: Bronze
+ach(20367),	-- WW Zone 3 Race 1 Advanced: Silver
+ach(20368),	-- WW Zone 3 Race 1 Advanced: Gold
+ach(20369),	-- WW Zone 3 Race 1 Reverse: Bronze
+ach(20370),	-- WW Zone 3 Race 1 Reverse: Silver
+ach(20371),	-- WW Zone 3 Race 1 Reverse: Gold
+ach(20372),	-- WW Zone 3 Race 2: Bronze
+ach(20373),	-- WW Zone 3 Race 2: Silver
+ach(20374),	-- WW Zone 3 Race 2: Gold
+ach(20375),	-- WW Zone 3 Race 2 Advanced: Bronze
+ach(20376),	-- WW Zone 3 Race 2 Advanced: Silver
+ach(20377),	-- WW Zone 3 Race 2 Advanced: Gold
+ach(20378),	-- WW Zone 3 Race 2 Reverse: Bronze
+ach(20379),	-- WW Zone 3 Race 2 Reverse: Silver
+ach(20380),	-- WW Zone 3 Race 2 Reverse: Gold
+ach(20381),	-- WW Zone 3 Race 3: Bronze
+ach(20382),	-- WW Zone 3 Race 3: Silver
+ach(20383),	-- WW Zone 3 Race 3: Gold
+ach(20384),	-- WW Zone 3 Race 3 Advanced: Bronze
+ach(20385),	-- WW Zone 3 Race 3 Advanced: Silver
+ach(20386),	-- WW Zone 3 Race 3 Advanced: Gold
+ach(20387),	-- WW Zone 3 Race 3 Reverse: Bronze
+ach(20388),	-- WW Zone 3 Race 3 Reverse: Silver
+ach(20389),	-- WW Zone 3 Race 3 Reverse: Gold
+ach(20390),	-- WW Zone 3 Race 4: Bronze
+ach(20391),	-- WW Zone 3 Race 4: Silver
+ach(20392),	-- WW Zone 3 Race 4: Gold
+ach(20393),	-- WW Zone 3 Race 4 Advanced: Bronze
+ach(20394),	-- WW Zone 3 Race 4 Advanced: Silver
+ach(20395),	-- WW Zone 3 Race 4 Advanced: Gold
+ach(20396),	-- WW Zone 3 Race 4 Reverse: Bronze
+ach(20397),	-- WW Zone 3 Race 4 Reverse: Silver
+ach(20398),	-- WW Zone 3 Race 4 Reverse: Gold
+ach(20399),	-- WW Zone 3 Race 5: Bronze
+ach(20400),	-- WW Zone 3 Race 5: Silver
+ach(20401),	-- WW Zone 3 Race 5: Gold
+ach(20402),	-- WW Zone 3 Race 5 Advanced: Bronze
+ach(20403),	-- WW Zone 3 Race 5 Advanced: Silver
+ach(20404),	-- WW Zone 3 Race 5 Advanced: Gold
+ach(20405),	-- WW Zone 3 Race 5 Reverse: Bronze
+ach(20406),	-- WW Zone 3 Race 5 Reverse: Silver
+ach(20407),	-- WW Zone 3 Race 5 Reverse: Gold
+ach(20408),	-- WW Zone 3 Race 6: Bronze
+ach(20409),	-- WW Zone 3 Race 6: Silver
+ach(20410),	-- WW Zone 3 Race 6: Gold
+ach(20411),	-- WW Zone 3 Race 6 Advanced: Bronze
+ach(20412),	-- WW Zone 3 Race 6 Advanced: Silver
+ach(20413),	-- WW Zone 3 Race 6 Advanced: Gold
+ach(20414),	-- WW Zone 3 Race 6 Reverse: Bronze
+ach(20415),	-- WW Zone 3 Race 6 Reverse: Silver
+ach(20416),	-- WW Zone 3 Race 6 Reverse: Gold
+ach(20419),	-- WW Zone 5 Race 1: Bronze
+ach(20420),	-- WW Zone 5 Race 1: Silver
+ach(20421),	-- WW Zone 5 Race 1: Gold
+ach(20422),	-- WW Zone 5 Race 1 Advanced: Bronze
+ach(20423),	-- WW Zone 5 Race 1 Advanced: Silver
+ach(20424),	-- WW Zone 5 Race 1 Advanced: Gold
+ach(20425),	-- WW Zone 5 Race 1 Reverse: Bronze
+ach(20426),	-- WW Zone 5 Race 1 Reverse: Silver
+ach(20427),	-- WW Zone 5 Race 1 Reverse: Gold
+ach(20429),	-- WW Zone 5 Race 2: Bronze
+ach(20430),	-- WW Zone 5 Race 2: Silver
+ach(20431),	-- WW Zone 5 Race 2: Gold
+ach(20432),	-- WW Zone 5 Race 2 Advanced: Bronze
+ach(20433),	-- WW Zone 5 Race 2 Advanced: Silver
+ach(20434),	-- WW Zone 5 Race 2 Advanced: Gold
+ach(20435),	-- WW Zone 5 Race 2 Reverse: Bronze
+ach(20436),	-- WW Zone 5 Race 2 Reverse: Silver
+ach(20437),	-- WW Zone 5 Race 2 Reverse: Gold
+ach(20439),	-- WW Zone 5 Race 3: Bronze
+ach(20440),	-- WW Zone 5 Race 3: Silver
+ach(20441),	-- WW Zone 5 Race 3: Gold
+ach(20442),	-- WW Zone 5 Race 3 Advanced: Bronze
+ach(20443),	-- WW Zone 5 Race 3 Advanced: Silver
+ach(20444),	-- WW Zone 5 Race 3 Advanced: Gold
+ach(20445),	-- WW Zone 5 Race 3 Reverse: Bronze
+ach(20446),	-- WW Zone 5 Race 3 Reverse: Silver
+ach(20447),	-- WW Zone 5 Race 3 Reverse: Gold
+ach(20448),	-- WW Zone 5 Race 4: Bronze
+ach(20449),	-- WW Zone 5 Race 4: Silver
+ach(20450),	-- WW Zone 5 Race 4: Gold
+ach(20451),	-- WW Zone 5 Race 4 Advanced: Bronze
+ach(20452),	-- WW Zone 5 Race 4 Advanced: Silver
+ach(20453),	-- WW Zone 5 Race 4 Advanced: Gold
+ach(20454),	-- WW Zone 5 Race 4 Reverse: Bronze
+ach(20455),	-- WW Zone 5 Race 4 Reverse: Silver
+ach(20456),	-- WW Zone 5 Race 4 Reverse: Gold
+ach(20457),	-- WW Zone 5 Race 5: Bronze
+ach(20458),	-- WW Zone 5 Race 5: Silver
+ach(20459),	-- WW Zone 5 Race 5: Gold
+ach(20460),	-- WW Zone 5 Race 5 Advanced: Bronze
+ach(20461),	-- WW Zone 5 Race 5 Advanced: Silver
+ach(20462),	-- WW Zone 5 Race 5 Advanced: Gold
+ach(20463),	-- WW Zone 5 Race 5 Reverse: Bronze
+ach(20464),	-- WW Zone 5 Race 5 Reverse: Silver
+ach(20465),	-- WW Zone 5 Race 5 Reverse: Gold
+ach(20466),	-- WW Zone 5 Race 6: Bronze
+ach(20467),	-- WW Zone 5 Race 6: Silver
+ach(20468),	-- WW Zone 5 Race 6: Gold
+ach(20469),	-- WW Zone 5 Race 6 Advanced: Bronze
+ach(20470),	-- WW Zone 5 Race 6 Advanced: Silver
+ach(20471),	-- WW Zone 5 Race 6 Advanced: Gold
+ach(20472),	-- WW Zone 5 Race 6 Reverse: Bronze
+ach(20473),	-- WW Zone 5 Race 6 Reverse: Silver
+ach(20474),	-- WW Zone 5 Race 6 Reverse: Gold
+ach(20482),	-- The Darkness kills (Normal Darkflame Cleft)
+ach(20483),	-- The Darkness kills (Heroic Darkflame Cleft)
+ach(20484),	-- The Darkness kills (Mythic Darkflame Cleft)
+ach(20485),	-- Ki'katal the Harvester kills (Normal Ara-Kara, City of Echoes)
+ach(20486),	-- Ki'katal the Harvester kills (Heroic Ara-Kara, City of Echoes)
+ach(20487),	-- Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) (copy)
+ach(20488),	-- Valorstones earned
+ach(20489),	-- Weathered Harbinger Crests earned
+ach(20490),	-- Carved Harbinger Crests earned
+ach(20491),	-- Runed Harbinger Crests earned
+ach(20492),	-- Gilded Harbinger Crests earned
+ach(20510),	-- What Could it be?
+ach(20511),	-- Gotta Punt em' All
+ach(20512),	-- Herding Cats
+ach(20523),	-- The War Within Keystone Explorer: Season One
+ach(20524),	-- The War Within Keystone Conqueror: Season One
+ach(20525),	-- The War Within Keystone Master: Season One
+ach(20526),	-- The War Within Keystone Hero: Season One
+ach(20579),	-- Keystone Hero: The Rookery
+ach(20580),	-- Keystone Hero: The Stonevault
+ach(20581),	-- Keystone Hero: Priory of the Sacred Flame
+ach(20582),	-- Keystone Hero: City of Threads
+ach(20583),	-- Keystone Hero: Cinderbrew Meadery
+ach(20584),	-- Keystone Hero: Darkflame Cleft
+ach(20585),	-- Keystone Hero: The Dawnbreaker
+ach(20586),	-- Keystone Hero: Ara-Kara, City of Echoes
+ach(20587),	-- Keystone Hero: Siege of Boralus
+ach(20588),	-- Keystone Hero: Grim Batol
+ach(20589),	-- [PH] Hero: The War Within Season 1
+ach(20594),	-- Flamegards Hope
+ach(20595),	-- Sojourner of Isle of Dorn
+ach(20596),	-- Loremaster of Khaz Algar
+ach(20597),	-- United We Stand
+ach(20598),	-- Hallowfall
+ach(39919),	-- Might of Dragonblight (char specific hidden copy)
+ach(39920),	-- The Empire of Zul'Drak (char specific hidden copy)
+ach(39921),	-- Fo' Grizzle My Shizzle (char specific hidden copy)
+ach(39922),	-- The Summit of Storm Peaks (char specific hidden copy)
+ach(39923),	-- Into the Basin (char specific hidden copy)
+ach(39924),	-- Utgarde Keep (char specific hidden copy)
+ach(39925),	-- The Nexus (char specific hidden copy)
+ach(39926),	-- The Culling of Stratholme (char specific hidden copy)
+ach(39927),	-- Azjol-Nerub (char specific hidden copy)
+ach(39928),	-- Ahn'kahet: The Old Kingdom (char specific hidden copy)
+ach(39929),	-- Drak'Tharon Keep (char specific hidden copy)
+ach(39930),	-- Gundrak (char specific hidden copy)
+ach(39931),	-- Halls of Stone (char specific hidden copy)
+ach(39932),	-- Halls of Lightning (char specific hidden copy)
+ach(39933),	-- The Oculus (char specific hidden copy)
+ach(39934),	-- Utgarde Pinnacle (char specific hidden copy)
+ach(39935),	-- 100 Honorable Kills (char specific hidden copy)
+ach(39936),	-- Stratholme (char specific hidden copy)
+ach(39937),	-- Hero of the Frostwolf Clan (char specific hidden copy)
+ach(39938),	-- Mysteries of the Marsh (char specific hidden copy)
+ach(39939),	-- Terror of Terokkar (char specific hidden copy)
+ach(39940),	-- Nagrand Slam (char specific hidden copy)
+ach(39941),	-- On the Blade's Edge (char specific hidden copy)
+ach(39942),	-- Into the Nether (char specific hidden copy)
+ach(39943),	-- Terror of Terokkar (char specific hidden copy)
+ach(39944),	-- Nagrand Slam (char specific hidden copy)
+ach(39945),	-- Fo' Grizzle My Shizzle (char specific hidden copy)
+ach(39946),	-- Might of Dragonblight (char specific hidden copy)
+ach(39947),	-- Sinking into Vashj'ir (char specific hidden copy)
+ach(39948),	-- Coming Down the Mountain (char specific hidden copy)
+ach(39949),	-- Deep into Deepholm (char specific hidden copy)
+ach(39950),	-- Unearthing Uldum (char specific hidden copy)
+ach(39951),	-- Fading into Twilight (char specific hidden copy)
+ach(39952),	-- Eastern Plaguelands Quests (char specific hidden copy)
+ach(39953),	-- Western Plaguelands Quests (char specific hidden copy)
+ach(39954),	-- Silverpine Forest Quests (char specific hidden copy)
+ach(39955),	-- Hillsbrad Foothills Quests (char specific hidden copy)
+ach(39956),	-- Arathi Highlands Quests (char specific hidden copy)
+ach(39957),	-- Hinterlands Quests (char specific hidden copy)
+ach(39958),	-- Loch Modan Quests (char specific hidden copy)
+ach(39959),	-- Badlands Quests (char specific hidden copy)
+ach(39960),	-- Burning Steppes Quests (char specific hidden copy)
+ach(39961),	-- Redridge Mountains Quests (char specific hidden copy)
+ach(39962),	-- Westfall Quests (char specific hidden copy)
+ach(39963),	-- Swamp of Sorrows Quests (char specific hidden copy)
+ach(39964),	-- Cape of Stranglethorn Quests (char specific hidden copy)
+ach(39965),	-- Northern Stranglethorn Quests (char specific hidden copy)
+ach(39966),	-- Ghostlands Quests (char specific hidden copy)
+ach(39967),	-- Blasted Lands Quests (char specific hidden copy)
+ach(39968),	-- Searing Gorge Quests (char specific hidden copy)
+ach(39969),	-- Ashenvale Quests (char specific hidden copy)
+ach(39970),	-- Bloodmyst Isle Quests (char specific hidden copy)
+ach(39971),	-- Azshara Quests (char specific hidden copy)
+ach(39972),	-- Darkshore Quests (char specific hidden copy)
+ach(39973),	-- Dustwallow Marsh Quests (char specific hidden copy)
+ach(39974),	-- Desolace Quests (char specific hidden copy)
+ach(39975),	-- Felwood Quests (char specific hidden copy)
+ach(39976),	-- Feralas Quests (char specific hidden copy)
+ach(39977),	-- Northern Barrens Quests (char specific hidden copy)
+ach(39978),	-- Silithus Quests (char specific hidden copy)
+ach(39979),	-- Tanaris Quests (char specific hidden copy)
+ach(39980),	-- Stonetalon Mountains Quests (char specific hidden copy)
+ach(39981),	-- Southern Barrens Quests (char specific hidden copy)
+ach(39982),	-- Thousand Needles Quests (char specific hidden copy)
+ach(39983),	-- Un'Goro Crater Quests (char specific hidden copy)
+ach(39984),	-- Winterspring Quests (char specific hidden copy)
+ach(39985),	-- Ashenvale Quests (char specific hidden copy)
+ach(39986),	-- Dustwallow Marsh Quests (char specific hidden copy)
+ach(39987),	-- Feralas Quests (char specific hidden copy)
+ach(39988),	-- Stonetalon Mountains Quests (char specific hidden copy)
+ach(39989),	-- Southern Barrens Quests (char specific hidden copy)
+ach(39990),	-- Sinking into Vashj'ir (char specific hidden copy)
+ach(39991),	-- Full Caravan (char specific hidden copy)
+ach(39992),	-- Fading into Twilight (char specific hidden copy)
+ach(39993),	-- Darkmoon Dominator (char specific hidden copy)
+ach(39994),	-- Upjade Complete (char specific hidden copy)
+ach(39995),	-- Rally the Valley (char specific hidden copy)
+ach(39996),	-- Upjade Complete (char specific hidden copy)
+ach(39997),	-- Slum It in the Summit (char specific hidden copy)
+ach(39998),	-- Slum It in the Summit (char specific hidden copy)
+ach(39999),	-- One Steppe Forward, Two Steppes Back (char specific hidden copy)
+ach(40000),	-- Dread Haste Makes Dread Waste (char specific hidden copy)
+ach(40001),	-- Amber is the Color of My Energy (char specific hidden copy)
+ach(40002),	-- Theramore's Fall (char specific hidden copy)
+ach(40003),	-- Theramore's Fall (char specific hidden copy)
+ach(40004),	-- You'll Get Caught Up In The... Frostfire! (char specific hidden copy)
+ach(40005),	-- As I Walk Through the Valley of the Shadow of Moon (char specific hidden copy)
+ach(40006),	-- Don't Let the Tala-door Hit You on the Way Out (char specific hidden copy)
+ach(40007),	-- Don't Let the Tala-door Hit You on the Way Out (char specific hidden copy)
+ach(40008),	-- Putting the Gore in Gorgrond (char specific hidden copy)
+ach(40009),	-- Putting the Gore in Gorgrond (char specific hidden copy)
+ach(40010),	-- Between Arak and a Hard Place (char specific hidden copy)
+ach(40011),	-- Between Arak and a Hard Place (char specific hidden copy)
+ach(40012),	-- Nagrandeur (char specific hidden copy)
+ach(40013),	-- Nagrandeur (char specific hidden copy)
+ach(40014),	-- Arakkoa Outcasts (char specific hidden copy)
+ach(40015),	-- Ain't No Mountain High Enough (char specific hidden copy)
+ach(40016),	-- Improving on History (char specific hidden copy)
+ach(40017),	-- Good Suramaritan (char specific hidden copy)
+ach(40018),	-- Unleashed Monstrosities (char specific hidden copy)
+ach(40019),	-- Insurrection (char specific hidden copy)
+ach(40020),	-- Legionfall Commander (char specific hidden copy)
+ach(40021),	-- The Throne of Zuldazar (char specific hidden copy)
+ach(40022),	-- The Dark Heart of Nazmir (char specific hidden copy)
+ach(40023),	-- Seat of the Pantheon (char specific hidden copy)
+ach(40024),	-- The Descent into Madness (char specific hidden copy)
+ach(40025),	-- Wetlands Quests (char specific hidden copy)
+ach(40026),	-- Duskwood Quests (char specific hidden copy)
+ach(40027),	-- Secrets in the Sands (char specific hidden copy)
+ach(40028),	-- Zandalar Forever! (char specific hidden copy)
+ach(40029),	-- Stormsong and Dance (char specific hidden copy)
+ach(40030),	-- Drust Do It. (char specific hidden copy)
+ach(40031),	-- Halls of Containment (char specific hidden copy)
+ach(40032),	-- Crimson Descent (char specific hidden copy)
+ach(40033),	-- Heart of Corruption (char specific hidden copy)
+ach(40034),	-- Welcome to Zandalar (char specific hidden copy)
+ach(40035),	-- Come Sail Away (char specific hidden copy)
+ach(40036),	-- Archipelago Explorer (char specific hidden copy)
+ach(40037),	-- Victory or Death (char specific hidden copy)
+ach(40038),	-- Junkyard Collector (char specific hidden copy)
+ach(40039),	-- The Circle of Stars (char specific hidden copy)
+ach(40040),	-- The Waking Dream (char specific hidden copy)
+ach(40041),	-- Adventurer of Bastion (char specific hidden copy)
+ach(40042),	-- Adventurer of Maldraxxus (char specific hidden copy)
+ach(40043),	-- Adventurer of Ardenweald (char specific hidden copy)
+ach(40044),	-- Adventurer of Revendreth (char specific hidden copy)
+ach(40045),	-- Into the Maw (char specific hidden copy)
+ach(40046),	-- Pursuing Loyalty (char specific hidden copy)
+ach(40047),	-- Castle Nathria (char specific hidden copy)
+ach(40048),	-- It's In The Mix (char specific hidden copy)
+ach(40049),	-- Ramparts Racer (char specific hidden copy)
+ach(40050),	-- Fractured Faerie Tales (char specific hidden copy)
+ach(40051),	-- Toss a Seed to Your Hunter... (char specific hidden copy)
+ach(40052),	-- Bloodsport (char specific hidden copy)
+ach(40053),	-- Sand, Sand Everywhere! (char specific hidden copy)
+ach(40054),	-- Fragments of History (char specific hidden copy)
+ach(40055),	-- The Gentleman Elemental (char specific hidden copy)
+ach(40056),	-- Fury of the Storm (char specific hidden copy)
+ach(40057),	-- Hero of the Stormpike Guard (char specific hidden copy)
+ach(40060),	-- Might of the Alliance (char specific hidden copy)
+ach(40082),	-- Never Enough
+ach(40083),	-- Tour of Duty: Isle of Dorn
+ach(40084),	-- Tour of Duty: The Ringing Deeps
+ach(40085),	-- Tour of Duty: Hallowfall
+ach(40086),	-- Tour of Duty: Azj-Kahet
+ach(40087),	-- Unbound Battle
+ach(40088),	-- A Champion's Tour: The War Within
+ach(40089),	-- Spoiled Goods
+ach(40090),	-- Spoiled Goods
+ach(40091),	-- Slightly Spoiled
+ach(40095),	-- Sparking Battle
+ach(40096),	-- Sparking Battle
+ach(40097),	-- Ruffious's Bid
+ach(40098),	-- Immortal Spelunker
+ach(40099),	-- That Extra Push Over the Cliff
+ach(40100),	-- Undying Caver
+ach(40101),	-- Hitting one's Stride
+ach(40102),	-- Dawn of a new Delve
+ach(40103),	-- Nemesis
+ach(40107),	-- Harbinger of the Carved (TODO: Fix Icon)
+ach(40115),	-- Harbinger of the Runed (TODO: Fix Icon)
+ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
+ach(40121),	-- <Hidden> Account has completed 11.0 Upgrade System tutorial quests
+ach(40138),	-- Algarian Dungeoneer
+ach(40139),	-- Algarian Dungeon Damage Dealer
+ach(40140),	-- Algarian Dungeon Healer
+ach(40141),	-- Algarian Dungeon Tank
+ach(40142),	-- Learning to Share
+ach(40145),	-- So Much Sharing
+ach(40146),	-- War Within Superior
+ach(40147),	-- War Within Epic
+ach(40150),	-- Children's Entertainer
+ach(40151),	-- Mereldar Menance
+ach(40152),	-- Flight Glyphs: The Three Shields
+ach(40153),	-- Battle on Khaz Algar
+ach(40154),	-- Aquatic Battler of Khaz Algar
+ach(40155),	-- Beast Battler of Khaz Algar
+ach(40156),	-- Critter Battler of Khaz Algar
+ach(40157),	-- Dragonkin Battler of Khaz Algar
+ach(40158),	-- Elemental Battler of Khaz Algar
+ach(40161),	-- Flying Battler of Khaz Algar
+ach(40162),	-- Humanoid Battler of Khaz Algar
+ach(40163),	-- Magic Battler of Khaz Algar
+ach(40164),	-- Mechanical Battler of Khaz Algar
+ach(40165),	-- Undead Battler of Khaz Algar
+ach(40166),	-- Khaz Algar Glyph Hunter
+ach(40172),	-- Dynamic Flight Power 1
+ach(40173),	-- Dynamic Flight Power 2
+ach(40174),	-- Dynamic Flight Power 3
+ach(40175),	-- Dynamic Flight Power 4
+ach(40176),	-- Dynamic Flight Power 5
+ach(40177),	-- Dynamic Flight Power 6
+ach(40178),	-- Dynamic Flight Power 7
+ach(40179),	-- Dynamic Flight Power 8
+ach(40180),	-- Dynamic Flight Power 9
+ach(40181),	-- Dynamic Flight Power 10
+ach(40182),	-- Dynamic Flight Power 11
+ach(40183),	-- Dynamic Flight Power 12
+ach(40184),	-- Dynamic Flight Power 13
+ach(40185),	-- Dynamic Flight Power 14
+ach(40186),	-- Dynamic Flight Power 15
+ach(40187),	-- Dynamic Flight Power 16
+ach(40188),	-- Dynamic Flight Power 17
+ach(40189),	-- Dynamic Flight Power 18
+ach(40190),	-- Dynamic Flight Power 19
+ach(40191),	-- Dynamic Flight Power 20
+ach(40194),	-- Khaz Algar Safari
+ach(40195),	-- Deephaul Ravine victories
+ach(40196),	-- Deephaul Ravine battles
+ach(40197),	-- Rated Deephaul Ravine battles
+ach(40198),	-- Rated Deephaul Ravine victories
+ach(40199),	-- Rated Battleground Blitz played
+ach(40200),	-- Rated Battleground Blitz played the most
+ach(40201),	-- Rated Battleground Blitz won
+ach(40202),	-- Rated Battleground Blitz won the most
+ach(40210),	-- Deephaul Ravine Victory
+ach(40211),	-- Deephaul Ravine Veteran
+ach(40215),	-- Deephaul Ravine Perfection
+ach(40216),	-- Deephaul Ravine Expedience
+ach(40217),	-- Battleground Blitzer
+ach(40219),	-- Battleground Blitzest
+ach(40220),	-- Setting Records
+ach(40221),	-- Battleground Blitz Master
+ach(40222),	-- Echos of Danger
+ach(40231),	-- The War Within Pathfinder [NYI]
+ach(40232),	-- Glory of the Nerub-ar Raider
+ach(40233),	-- Strategist: The War Within Season 1
+ach(40234),	-- Forged Warlord: The War Within Season 1
+ach(40235),	-- Forged Marshall: The War Within Season 1
+ach(40236),	-- Mythic: Ulgrax the Devourer
+ach(40237),	-- Mythic: The Bloodbound Horror
+ach(40238),	-- Mythic: Sikran, Captain of the Sureki
+ach(40239),	-- Mythic: Rasha'nan
+ach(40240),	-- Mythic: Eggtender Ovi'nax
+ach(40241),	-- Mythic: Nexus-Princess Ky'veza
+ach(40242),	-- Mythic: The Silken Court
+ach(40243),	-- Mythic: Queen Ansurek
+ach(40244),	-- Nerub-ar Palace
+ach(40245),	-- Heroic: Nerub-ar Palace
+ach(40246),	-- Mythic: Nerub-ar Palace
+ach(40247),	-- [PH] Nerub-ar Palace Wing 1
+ach(40248),	-- [PH] Nerub-ar Palace Wing 2
+ach(40249),	-- [PH] Nerub-ar Palace Wing 3
+ach(40250),	-- The First Chord
+ach(40251),	-- Many Chords
+ach(40252),	-- A Series of Chords
+ach(40253),	-- Ahead of the Curve: Queen Ansurek
+ach(40254),	-- Cutting Edge: Queen Ansurek
+ach(40255),	-- Sik Parry Bro
+ach(40256),	-- Nerub-ar Palace Guild Run
+ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
+ach(40258),	-- Mythic: Queen Ansurek Guild Run
+ach(40259),	-- Hall of Fame: Queen Ansurek
+ach(40260),	-- [PH] Bloodbound Horror Achievement
+ach(40261),	-- [PH] Ulgrax the Devourer Achievement
+ach(40262),	-- [PH] Rasha'nan Achievement
+ach(40263),	-- [PH] Eggtender Ovi'nax Achievement
+ach(40264),	-- [PH] Nexus-Princess Ky'veza Achievement
+ach(40265),	-- [PH] The Silken Court Achievement
+ach(40266),	-- [PH] Queen Ansurek Achievement
+ach(40267),	-- Ulgrax the Devourer kills (Raid Finder Nerub-ar Palace)
+ach(40268),	-- Ulgrax the Devourer kills (Normal Nerub-ar Palace)
+ach(40269),	-- Ulgrax the Devourer kills (Heroic Nerub-ar Palace)
+ach(40270),	-- Ulgrax the Devourer kills (Mythic Nerub-ar Palace)
+ach(40271),	-- The Bloodbound Horror kills (Raid Finder Nerub-ar Palace)
+ach(40272),	-- The Bloodbound Horror kills (Normal Nerub-ar Palace)
+ach(40273),	-- The Bloodbound Horror kills (Heroic Nerub-ar Palace)
+ach(40274),	-- The Bloodbound Horror kills (Mythic Nerub-ar Palace)
+ach(40275),	-- Sikran, Captain of the Sureki kills (Raid Finder Nerub-ar Palace)
+ach(40276),	-- Sikran, Captain of the Sureki kills (Normal Nerub-ar Palace)
+ach(40277),	-- Sikran, Captain of the Sureki kills (Heroic Nerub-ar Palace)
+ach(40278),	-- Sikran, Captain of the Sureki kills (Mythic Nerub-ar Palace)
+ach(40279),	-- Rasha'nan kills (Raid Finder Nerub-ar Palace)
+ach(40280),	-- Rasha'nan kills (Normal Nerub-ar Palace)
+ach(40281),	-- Rasha'nan kills (Heroic Nerub-ar Palace)
+ach(40282),	-- Rasha'nan kills (Mythic Nerub-ar Palace)
+ach(40283),	-- Eggtender Ovi'nax kills (Raid Finder Nerub-ar Palace)
+ach(40284),	-- Eggtender Ovi'nax kills (Normal Nerub-ar Palace)
+ach(40285),	-- Eggtender Ovi'nax kills (Heroic Nerub-ar Palace)
+ach(40286),	-- Eggtender Ovi'nax kills (Mythic Nerub-ar Palace)
+ach(40287),	-- Nexus-Princess Ky'veza kills (Raid Finder Nerub-ar Palace)
+ach(40288),	-- Nexus-Princess Ky'veza kills (Normal Nerub-ar Palace)
+ach(40289),	-- Nexus-Princess Ky'veza kills (Heroic Nerub-ar Palace)
+ach(40290),	-- Nexus-Princess Ky'veza kills (Mythic Nerub-ar Palace)
+ach(40291),	-- The Silken Court kills (Raid Finder Nerub-ar Palace)
+ach(40292),	-- The Silken Court kills (Normal Nerub-ar Palace)
+ach(40293),	-- The Silken Court kills (Heroic Nerub-ar Palace)
+ach(40294),	-- The Silken Court kills (Mythic Nerub-ar Palace)
+ach(40295),	-- Queen Ansurek kills (Raid Finder Nerub-ar Palace)
+ach(40296),	-- Queen Ansurek kills (Normal Nerub-ar Palace)
+ach(40297),	-- Queen Ansurek kills (Heroic Nerub-ar Palace)
+ach(40298),	-- Queen Ansurek kills (Mythic Nerub-ar Palace)

@@ -649,6 +649,71 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
+11.0.0.54311
+r(423338),	-- Khaz Algar Inscription
+r(425140),	-- Recraft Equipment
+r(441318),	-- Miner's Rune of Decyphering
+r(444181),	-- Khaz Algar Milling
+r(444182),	-- Algarian Treatise on Herbalism
+r(444183),	-- Algarian Treatise on Mining
+r(444184),	-- Algarian Treatise on Blacksmithing
+r(444185),	-- Algarian Treatise on Leatherworking
+r(444186),	-- Algarian Treatise on Tailoring
+r(444187),	-- Algarian Treatise on Alchemy
+r(444188),	-- Algarian Treatise on Enchanting
+r(444189),	-- Algarian Treatise on Jewelcrafting
+r(444190),	-- Codified Greenwood
+r(444191),	-- Boundless Cipher
+r(444192),	-- Darkmoon Sigil: Evolution
+r(444193),	-- Darkmoon Sigil: Shine
+r(444194),	-- Darkmoon Sigil: Symbiosis
+r(444195),	-- Darkmoon Sigil: Vivacity
+r(444196),	-- Inquisitor's Codex
+r(444197),	-- Vagabond's Codex
+r(444198),	-- Vagabond's Careful Crutch
+r(444199),	-- Vagabond's Bounding Baton
+r(444200),	-- Inquisitor's Crutch
+r(444201),	-- Inquisitor's Baton
+r(444202),	-- Lexicon of Mysteries
+r(444203),	-- Vantus Rune: 11.0 Raid
+r(444204),	-- Lightweight Scribe's Quill
+r(444205),	-- Silver Tongue's Quill
+r(444206),	-- Hasty Alchemist's Mixing Rod
+r(444207),	-- Patient Alchemist's Mixing Rod
+r(444208),	-- Burnt Rolling Pin
+r(444209),	-- Inscribed Rolling Pin
+r(444210),	-- Algarian Missive of the Aurora
+r(444211),	-- Algarian Missive of the Feverflare
+r(444212),	-- Algarian Missive of the Fireflash
+r(444213),	-- Algarian Missive of the Harmonious
+r(444214),	-- Algarian Missive of the Peerless
+r(444215),	-- Algarian Missive of the Quickblade
+r(444217),	-- Contract: Earthen
+r(444218),	-- Contract: Arathor
+r(444219),	-- Contract: Nerubian
+r(444220),	-- Contract: Artisan
+r(444221),	-- Sable Ink
+r(444222),	-- Apricate Ink
+r(444223),	-- Algarian Treatise on Engineering
+r(444224),	-- Extraction: Evolve
+r(444225),	-- Extraction: Vivacity
+r(444226),	-- Extraction: Symbiosis
+r(444227),	-- Extraction: Shine
+r(444228),	-- Recraft Equipment
+r(444229),	-- Algarian Missive of Ingenuity
+r(444230),	-- Algarian Missive of Resourcefulness
+r(444231),	-- Algarian Missive of Multicraft
+r(444232),	-- Algarian Missive of Crafting Speed
+r(444233),	-- Algarian Missive of Finesse
+r(444234),	-- Algarian Missive of Perception
+r(444235),	-- Algarian Missive of Deftness
+r(444236),	-- Algarian Treatise on Skinning
+r(444336),	-- Vicious Competitor's Medallion
+r(444337),	-- Vicious Competitor's Insignia of Alacrity
+r(444338),	-- Vicious Competitor's Emblem
+r(445068),	-- Inquisitor's Greenwood Bow
+r(445069),	-- Vagabond's Alacrity
+r(445070),	-- Colors of the Wind
 
 
 
@@ -661,3 +726,68 @@ r(405005),	-- Glyph of Reckoning
 r(413897),	-- Glyph of Omen of Clarity
 3.4.2.49563
 r(414814),	-- Glyph of Shattering Throw
+11.0.0.54311
+r(423338),	-- Khaz Algar Inscription
+r(425140),	-- Recraft Equipment
+r(441318),	-- Miner's Rune of Decyphering
+r(444181),	-- Khaz Algar Milling
+r(444182),	-- Algarian Treatise on Herbalism
+r(444183),	-- Algarian Treatise on Mining
+r(444184),	-- Algarian Treatise on Blacksmithing
+r(444185),	-- Algarian Treatise on Leatherworking
+r(444186),	-- Algarian Treatise on Tailoring
+r(444187),	-- Algarian Treatise on Alchemy
+r(444188),	-- Algarian Treatise on Enchanting
+r(444189),	-- Algarian Treatise on Jewelcrafting
+r(444190),	-- Codified Greenwood
+r(444191),	-- Boundless Cipher
+r(444192),	-- Darkmoon Sigil: Evolution
+r(444193),	-- Darkmoon Sigil: Shine
+r(444194),	-- Darkmoon Sigil: Symbiosis
+r(444195),	-- Darkmoon Sigil: Vivacity
+r(444196),	-- Inquisitor's Codex
+r(444197),	-- Vagabond's Codex
+r(444198),	-- Vagabond's Careful Crutch
+r(444199),	-- Vagabond's Bounding Baton
+r(444200),	-- Inquisitor's Crutch
+r(444201),	-- Inquisitor's Baton
+r(444202),	-- Lexicon of Mysteries
+r(444203),	-- Vantus Rune: 11.0 Raid
+r(444204),	-- Lightweight Scribe's Quill
+r(444205),	-- Silver Tongue's Quill
+r(444206),	-- Hasty Alchemist's Mixing Rod
+r(444207),	-- Patient Alchemist's Mixing Rod
+r(444208),	-- Burnt Rolling Pin
+r(444209),	-- Inscribed Rolling Pin
+r(444210),	-- Algarian Missive of the Aurora
+r(444211),	-- Algarian Missive of the Feverflare
+r(444212),	-- Algarian Missive of the Fireflash
+r(444213),	-- Algarian Missive of the Harmonious
+r(444214),	-- Algarian Missive of the Peerless
+r(444215),	-- Algarian Missive of the Quickblade
+r(444217),	-- Contract: Earthen
+r(444218),	-- Contract: Arathor
+r(444219),	-- Contract: Nerubian
+r(444220),	-- Contract: Artisan
+r(444221),	-- Sable Ink
+r(444222),	-- Apricate Ink
+r(444223),	-- Algarian Treatise on Engineering
+r(444224),	-- Extraction: Evolve
+r(444225),	-- Extraction: Vivacity
+r(444226),	-- Extraction: Symbiosis
+r(444227),	-- Extraction: Shine
+r(444228),	-- Recraft Equipment
+r(444229),	-- Algarian Missive of Ingenuity
+r(444230),	-- Algarian Missive of Resourcefulness
+r(444231),	-- Algarian Missive of Multicraft
+r(444232),	-- Algarian Missive of Crafting Speed
+r(444233),	-- Algarian Missive of Finesse
+r(444234),	-- Algarian Missive of Perception
+r(444235),	-- Algarian Missive of Deftness
+r(444236),	-- Algarian Treatise on Skinning
+r(444336),	-- Vicious Competitor's Medallion
+r(444337),	-- Vicious Competitor's Insignia of Alacrity
+r(444338),	-- Vicious Competitor's Emblem
+r(445068),	-- Inquisitor's Greenwood Bow
+r(445069),	-- Vagabond's Alacrity
+r(445070),	-- Colors of the Wind

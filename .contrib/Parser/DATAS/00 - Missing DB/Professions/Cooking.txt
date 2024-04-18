@@ -1,0 +1,106 @@
+11.0.0.54311
+r(423333),	-- Khaz Algar Cooking
+r(445082),	-- Skewered Fillet
+r(445083),	-- Simple Stew
+r(445084),	-- Unseasoned Field Steak
+r(445085),	-- Roasted Mycobloom
+r(445086),	-- Pan Seared Mycobloom
+r(445087),	-- Hallowfall Chili
+r(445088),	-- Coreway Kabob
+r(445089),	-- Flash Fire Fillet
+r(445090),	-- Meat and Potatoes
+r(445091),	-- Rib Stickers
+r(445092),	-- Sweet and Sour Meatballs
+r(445093),	-- Tender Twilight Jerky
+r(445094),	-- Zesty Nibblers
+r(445095),	-- Fiery Fish Sticks
+r(445096),	-- Ginger Glazed Fillet
+r(445097),	-- Salty Fish Pie
+r(445098),	-- Deepfin Patty
+r(445099),	-- Sweet and Spicy Soup
+r(445100),	-- The Sushi Special
+r(445101),	-- Fish and Chips
+r(445102),	-- Salt Baked Seafood
+r(445103),	-- Marinated Tenderloins
+r(445104),	-- Sizzling Honey Roast
+r(445105),	-- Mycobloom Risotto
+r(445106),	-- Stuffed Cave Peppers
+r(445107),	-- Angler's Delight
+r(445108),	-- Emperor's Bounty
+r(445109),	-- Empress' Farewell
+r(445110),	-- Jester's Board
+r(445111),	-- Outsider's Provisions
+r(445112),	-- Feast of the Divine Day
+r(445113),	-- Feast of the Midnight Masquerade
+r(445114),	-- Village Potluck
+r(445115),	-- Everything Stew
+r(445116),	-- Chippy Tea
+r(445117),	-- Chopped Mycobloom
+r(445118),	-- Portioned Steak
+r(445119),	-- Spiced Meat Stock
+r(445120),	-- Hearty Meals
+r(445127),	-- Fresh Fillet
+r(445477),	-- Luminous Lemonade
+r(445478),	-- Blessing Blossom Tea
+r(445479),	-- Warm Honey Water
+r(445480),	-- Pep-In-Your-Step
+r(445481),	-- Eclipse Eclair
+r(445482),	-- Rockslide Shake
+r(445483),	-- Olive Oil Ice Cream
+r(445484),	-- A Sweet Treat
+
+
+
+
+Missing in Cooking.lua
+
+11.0.0.54311
+r(423333),	-- Khaz Algar Cooking
+r(445082),	-- Skewered Fillet
+r(445083),	-- Simple Stew
+r(445084),	-- Unseasoned Field Steak
+r(445085),	-- Roasted Mycobloom
+r(445086),	-- Pan Seared Mycobloom
+r(445087),	-- Hallowfall Chili
+r(445088),	-- Coreway Kabob
+r(445089),	-- Flash Fire Fillet
+r(445090),	-- Meat and Potatoes
+r(445091),	-- Rib Stickers
+r(445092),	-- Sweet and Sour Meatballs
+r(445093),	-- Tender Twilight Jerky
+r(445094),	-- Zesty Nibblers
+r(445095),	-- Fiery Fish Sticks
+r(445096),	-- Ginger Glazed Fillet
+r(445097),	-- Salty Fish Pie
+r(445098),	-- Deepfin Patty
+r(445099),	-- Sweet and Spicy Soup
+r(445100),	-- The Sushi Special
+r(445101),	-- Fish and Chips
+r(445102),	-- Salt Baked Seafood
+r(445103),	-- Marinated Tenderloins
+r(445104),	-- Sizzling Honey Roast
+r(445105),	-- Mycobloom Risotto
+r(445106),	-- Stuffed Cave Peppers
+r(445107),	-- Angler's Delight
+r(445108),	-- Emperor's Bounty
+r(445109),	-- Empress' Farewell
+r(445110),	-- Jester's Board
+r(445111),	-- Outsider's Provisions
+r(445112),	-- Feast of the Divine Day
+r(445113),	-- Feast of the Midnight Masquerade
+r(445114),	-- Village Potluck
+r(445115),	-- Everything Stew
+r(445116),	-- Chippy Tea
+r(445117),	-- Chopped Mycobloom
+r(445118),	-- Portioned Steak
+r(445119),	-- Spiced Meat Stock
+r(445120),	-- Hearty Meals
+r(445127),	-- Fresh Fillet
+r(445477),	-- Luminous Lemonade
+r(445478),	-- Blessing Blossom Tea
+r(445479),	-- Warm Honey Water
+r(445480),	-- Pep-In-Your-Step
+r(445481),	-- Eclipse Eclair
+r(445482),	-- Rockslide Shake
+r(445483),	-- Olive Oil Ice Cream
+r(445484),	-- A Sweet Treat

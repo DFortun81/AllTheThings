@@ -250,6 +250,82 @@ r(264479),	-- Outland Engineering
 r(264481),	-- Northrend Engineering
 r(264483),	-- Cataclysm Engineering
 r(264485),	-- Pandaria Engineering
+11.0.0.54311
+r(423335),	-- Khaz Algar Engineering
+r(425139),	-- Recraft Equipment
+r(438922),	-- Vicious Competitor's Cloth Goggles
+r(438923),	-- Vicious Competitor's Leather Goggles
+r(438924),	-- Vicious Competitor's Mail Goggles
+r(438925),	-- Vicious Competitor's Plate Goggles
+r(438926),	-- Vicious Competitor's Cloth Bracers
+r(438927),	-- Vicious Competitor's Leather Bracers
+r(438928),	-- Vicious Competitor's Mail Bracers
+r(438929),	-- Vicious Competitor's Plate Bracers
+r(443570),	-- Stonebound Lantern
+r(447310),	-- Scour Through Scrap
+r(447311),	-- Pilfer Through Parts
+r(447312),	-- Invent
+r(447313),	-- Disassemble Invention
+r(447314),	-- ENG - Cloth Goggles [DNT]
+r(447315),	-- ENG - Leather Goggles [DNT]
+r(447316),	-- ENG - Mail Goggles [DNT]
+r(447317),	-- ENG - Plate Goggles [DNT]
+r(447318),	-- Blasting Bracers
+r(447319),	-- Venting Vambraces
+r(447320),	-- Whirring Wristwraps
+r(447321),	-- Clanking Cuffs
+r(447322),	-- Tailoring Tool T1 [DNT]
+r(447323),	-- Tailoring Tool T2 [DNT]
+r(447324),	-- Engineering Helm T1 [DNT]
+r(447325),	-- Engineering Helm T2 [DNT]
+r(447326),	-- Fishing Tool T1 [DNT]
+r(447327),	-- Fishing Tool T2 [DNT]
+r(447328),	-- Jewelcrafting Tool T1 [DNT]
+r(447329),	-- Jewelcrafting Tool T2 [DNT]
+r(447330),	-- Mining Helmet T1 [DNT]
+r(447331),	-- Mining Hlmet T2 [DNT]
+r(447332),	-- Engineering Tool T1 [DNT]
+r(447333),	-- Engineering Tool T2 [DNT]
+r(447334),	-- Mining Backpack T1 [DNT]
+r(447335),	-- Mining Backpack T2 [DNT]
+r(447336),	-- Handful of Bismuth Bolts
+r(447337),	-- Whimsical Wiring
+r(447338),	-- Gyrating Gear
+r(447339),	-- Safety Switch
+r(447340),	-- Chaos Circuit
+r(447341),	-- Entropy Enhancer
+r(447342),	-- Potion Bomb of Speed
+r(447343),	-- Potion Bomb of Recovery
+r(447344),	-- Potion Bomb of Power
+r(447345),	-- Stasis Mine
+r(447346),	-- Gravity Mine
+r(447347),	-- Explosive Mine
+r(447348),	-- Tinker: Lightning  Tether
+r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+r(447350),	-- Tinker: Earthen Delivery Drill
+r(447351),	-- Tinker: Heartseeking Health Injector
+r(447352),	-- P.0.W. x2
+r(447353),	-- Serrated Cogwheel
+r(447354),	-- Overclocked Cogwheel
+r(447355),	-- Impeccable Cogwheel
+r(447356),	-- Adjustable Cogwheel
+r(447357),	-- Recalibrated Safety Switch
+r(447358),	-- Blame Redistribution Device
+r(447359),	-- Overclocked Circuit Board
+r(447360),	-- Complicated Fuse Box
+r(447361),	-- Pouch of Pocket Grenades
+r(447362),	-- Concealed Chaos Module
+r(447363),	-- Energy Redistribution Beacon
+r(447364),	-- Irresistible Red Button
+r(447365),	-- Pausing Pylon
+r(447366),	-- Convincingly Realistic Jumper Cables
+r(447367),	-- Repair Bot
+r(447368),	-- Portable Profession Possibility Projector
+r(447369),	-- Barrel of Fireworks
+r(447370),	-- Defective Escape Pod
+r(447371),	-- Malfunctioning Navigation Beacon
+r(447372),	-- Wormhole Generator: Khaz Algar
+r(447373),	-- Crowd Pummeler 2-30
 
 
 
@@ -511,3 +587,79 @@ r(139196),	-- Pierre
 r(139197),	-- Advanced Refrigeration Unit
 r(143714),	-- Rascal-Bot
 r(161543),	--
+11.0.0.54311
+r(423335),	-- Khaz Algar Engineering
+r(425139),	-- Recraft Equipment
+r(438922),	-- Vicious Competitor's Cloth Goggles
+r(438923),	-- Vicious Competitor's Leather Goggles
+r(438924),	-- Vicious Competitor's Mail Goggles
+r(438925),	-- Vicious Competitor's Plate Goggles
+r(438926),	-- Vicious Competitor's Cloth Bracers
+r(438927),	-- Vicious Competitor's Leather Bracers
+r(438928),	-- Vicious Competitor's Mail Bracers
+r(438929),	-- Vicious Competitor's Plate Bracers
+r(443570),	-- Stonebound Lantern
+r(447310),	-- Scour Through Scrap
+r(447311),	-- Pilfer Through Parts
+r(447312),	-- Invent
+r(447313),	-- Disassemble Invention
+r(447314),	-- ENG - Cloth Goggles [DNT]
+r(447315),	-- ENG - Leather Goggles [DNT]
+r(447316),	-- ENG - Mail Goggles [DNT]
+r(447317),	-- ENG - Plate Goggles [DNT]
+r(447318),	-- Blasting Bracers
+r(447319),	-- Venting Vambraces
+r(447320),	-- Whirring Wristwraps
+r(447321),	-- Clanking Cuffs
+r(447322),	-- Tailoring Tool T1 [DNT]
+r(447323),	-- Tailoring Tool T2 [DNT]
+r(447324),	-- Engineering Helm T1 [DNT]
+r(447325),	-- Engineering Helm T2 [DNT]
+r(447326),	-- Fishing Tool T1 [DNT]
+r(447327),	-- Fishing Tool T2 [DNT]
+r(447328),	-- Jewelcrafting Tool T1 [DNT]
+r(447329),	-- Jewelcrafting Tool T2 [DNT]
+r(447330),	-- Mining Helmet T1 [DNT]
+r(447331),	-- Mining Hlmet T2 [DNT]
+r(447332),	-- Engineering Tool T1 [DNT]
+r(447333),	-- Engineering Tool T2 [DNT]
+r(447334),	-- Mining Backpack T1 [DNT]
+r(447335),	-- Mining Backpack T2 [DNT]
+r(447336),	-- Handful of Bismuth Bolts
+r(447337),	-- Whimsical Wiring
+r(447338),	-- Gyrating Gear
+r(447339),	-- Safety Switch
+r(447340),	-- Chaos Circuit
+r(447341),	-- Entropy Enhancer
+r(447342),	-- Potion Bomb of Speed
+r(447343),	-- Potion Bomb of Recovery
+r(447344),	-- Potion Bomb of Power
+r(447345),	-- Stasis Mine
+r(447346),	-- Gravity Mine
+r(447347),	-- Explosive Mine
+r(447348),	-- Tinker: Lightning  Tether
+r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+r(447350),	-- Tinker: Earthen Delivery Drill
+r(447351),	-- Tinker: Heartseeking Health Injector
+r(447352),	-- P.0.W. x2
+r(447353),	-- Serrated Cogwheel
+r(447354),	-- Overclocked Cogwheel
+r(447355),	-- Impeccable Cogwheel
+r(447356),	-- Adjustable Cogwheel
+r(447357),	-- Recalibrated Safety Switch
+r(447358),	-- Blame Redistribution Device
+r(447359),	-- Overclocked Circuit Board
+r(447360),	-- Complicated Fuse Box
+r(447361),	-- Pouch of Pocket Grenades
+r(447362),	-- Concealed Chaos Module
+r(447363),	-- Energy Redistribution Beacon
+r(447364),	-- Irresistible Red Button
+r(447365),	-- Pausing Pylon
+r(447366),	-- Convincingly Realistic Jumper Cables
+r(447367),	-- Repair Bot
+r(447368),	-- Portable Profession Possibility Projector
+r(447369),	-- Barrel of Fireworks
+r(447370),	-- Defective Escape Pod
+r(447371),	-- Malfunctioning Navigation Beacon
+r(447372),	-- Wormhole Generator: Khaz Algar
+r(447373),	-- Crowd Pummeler 2-30

@@ -1,3 +1,10 @@
 10.2.7.54171
 title(552),	-- %s, Paragon of the Mists
 title(553),	-- %s, Claw of Eternus
+11.0.0.54311
+title(548),	-- %s, the [PH] Hero
+title(549),	-- Immortal Spelunker %s
+title(550),	-- High Explorer %s
+title(554),	-- Forged Warlord %s
+title(555),	-- Forged Marshall %s
+title(556),	-- %s the [PH] TBD Title
