@@ -404,7 +404,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["provider"] = { "n", 208701 },	-- Travard
 								["coord"] = { 60.6, 63.6, THALDRASZUS },
 							}),
-							q(77340, {	-- Infiltrating the Nighthold'
+							q(77340, {	-- Infiltrating the Nighthold
 								["sourceQuests"] = { 77377 },	-- To Tyrhold! For Tyr!
 								["provider"] = { "n", 208832 },	-- Eternus
 								["coord"] = { 60.4, 59, THALDRASZUS },
@@ -415,6 +415,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["groups"] = {
 									o(410786, {	-- Alydrus' Research Notes
 										["questID"] = 78395,
+										["lockCriteria"] = {1,"questID",77340},	-- Infiltrating the Nighthold
 										["groups"] = {
 											i(210255),	-- Alydrus' Research Notes
 										},
