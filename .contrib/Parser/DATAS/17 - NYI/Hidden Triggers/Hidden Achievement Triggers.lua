@@ -3164,6 +3164,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- 10.2.6.54070
 			ach(40171),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
 			ach(40192),	-- <Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
+			ach(40193),	-- Into the Storm (copy)
 		})),
 
 		-- 10.2.7

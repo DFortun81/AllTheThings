@@ -1,5 +1,3 @@
-10.2.6.54070
-ach(40193),	-- Into the Storm (copy)
 10.2.7.54171
 ach(19881),	-- Escalation
 ach(19919),	-- Kirin Tor Offensive
