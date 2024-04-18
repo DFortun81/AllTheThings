@@ -684,8 +684,8 @@ i(0, 138597);	-- Falling Blossom Treads
 --- PATCH 5.4.0 ---
 -------------------
 --- ITEM ---
-i(100863, 146925);	-- Accelerated Celestial Cloth
-i(100863, 143011);	-- Celestial Cloth
+i(0, 146925);	-- Accelerated Celestial Cloth
+i(0, 143011);	-- Celestial Cloth
 --- DISCOVERY ---
 i(0, 142964);	-- Belt of the Night Sky
 i(0, 143053);	-- Crafted Malevolent Gladiator's Cape of Cruelty
@@ -733,6 +733,23 @@ i(0, 142951);	-- White Cloud Leggings
 -------------------
 --- ITEM ---
 i(0, 158758);	-- Tailoring (Draenor)
+i(114863, 168847);	-- Brilliant Hexweave Cloak
+i(114864, 168848);	-- Hexweave Bag
+i(114860, 168844);	-- Hexweave Belt
+i(114858, 168842);	-- Hexweave Bracers
+i(114851, 168835);	-- Hexweave Cloth
+i(114854, 168838);	-- Hexweave Cowl
+i(114852, 168836);	-- Hexweave Embroidery
+i(114871, 168855);	-- Hexweave Essence
+i(114856, 168840);	-- Hexweave Gloves
+i(114855, 168839);	-- Hexweave Leggings
+i(114853, 168837);	-- Hexweave Mantle
+i(114857, 168841);	-- Hexweave Robe
+i(114859, 168843);	-- Hexweave Slippers
+i(114862, 168846);	-- Nimble Hexweave Cloak
+i(114861, 168845);	-- Powerful Hexweave Cloak
+--- NYI ---
+i(0, 169669);	-- Hexweave Cloth
 
 -----------------
 -- PATCH 3.0.3 --
@@ -748,6 +765,44 @@ i(39152, 45546);	-- Heavy Frostweave Bandage
 -- #if AFTER 8.0.1
 i(142333, 230047);	-- Feathered Luffa
 -- #endif
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+--- TRAINER ---
+i(0, 301409);	-- Saddlechute
+i(0, 301403);	-- Seabreeze Saddle Blanket
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+--- TRAINER ---
+i(0, 304577);	-- Uncanny Combatant's Satin Belt [Rank 1]
+i(0, 304568);	-- Uncanny Combatant's Satin Boots [Rank 1]
+i(0, 304580);	-- Uncanny Combatant's Satin Bracers [Rank 1]
+i(0, 304565);	-- Uncanny Combatant's Satin Cloak [Rank 1]
+i(0, 304571);	-- Uncanny Combatant's Satin Mittens [Rank 1]
+i(0, 304574);	-- Uncanny Combatant's Satin Pants [Rank 1]
+--- ITEM ---
+i(171147, 304564);	-- Eldritch Seaweave Breeches
+i(171149, 304561);	-- Eldritch Seaweave Gloves
+i(171148, 304563);	-- Maddening Seaweave Breeches
+i(171150, 304560);	-- Maddening Seaweave Gloves
+i(170445, 304578);	-- Uncanny Combatant's Satin Belt [Rank 2]
+i(170446, 304579);	-- Uncanny Combatant's Satin Belt [Rank 3]
+i(170448, 304569);	-- Uncanny Combatant's Satin Boots [Rank 2]
+i(170449, 304570);	-- Uncanny Combatant's Satin Boots [Rank 3]
+i(170454, 304581);	-- Uncanny Combatant's Satin Bracers [Rank 2]
+i(170455, 304582);	-- Uncanny Combatant's Satin Bracers [Rank 3]
+i(170444, 304566);	-- Uncanny Combatant's Satin Cloak [Rank 2]
+i(170447, 304567);	-- Uncanny Combatant's Satin Cloak [Rank 3]
+i(170450, 304572);	-- Uncanny Combatant's Satin Mittens [Rank 2]
+i(170451, 304573);	-- Uncanny Combatant's Satin Mittens [Rank 3]
+i(170452, 304575);	-- Uncanny Combatant's Satin Pants [Rank 2]
+i(170453, 304576);	-- Uncanny Combatant's Satin Pants [Rank 3]
+i(174371, 304562);	-- Unsettling Seaweave Breeches
+i(174370, 304559);	-- Unsettling Seaweave Gloves
+i(0, 307175);	-- Void Focus
 
 -----------------
 -- PATCH 9.0.1 --

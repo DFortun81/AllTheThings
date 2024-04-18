@@ -1001,20 +1001,6 @@ r(56048),	-- Duskweave Boots
 5.0.3.15890
 r(104115),	-- Release Fire Spirit
 7.3.0.24473
-r(168835),	-- Hexweave Cloth
-r(168836),	-- Hexweave Embroidery
-r(168837),	-- Hexweave Mantle
-r(168838),	-- Hexweave Cowl
-r(168839),	-- Hexweave Leggings
-r(168840),	-- Hexweave Gloves
-r(168841),	-- Hexweave Robe
-r(168842),	-- Hexweave Bracers
-r(168843),	-- Hexweave Slippers
-r(168844),	-- Hexweave Belt
-r(168845),	-- Powerful Hexweave Cloak
-r(168846),	-- Nimble Hexweave Cloak
-r(168847),	-- Brilliant Hexweave Cloak
-r(168848),	-- Hexweave Bag
 r(168849),	-- Elekk Plushie
 r(168850),	-- Creeping Carpet
 r(168851),	-- Miniature Flying Carpet
@@ -1284,35 +1270,6 @@ r(299033),	-- Banded Seaweave Gloves
 r(299034),	-- Gilded Seaweave Breeches
 r(299035),	-- Reinforced Seaweave Breeches
 r(299036),	-- Banded Seaweave Breeches
-8.2.0.30168
-r(301403),	-- Seabreeze Saddle Blanket
-r(301409),	-- Saddlechute
-8.3.0.32044
-r(304559),	-- Unsettling Seaweave Gloves
-r(304560),	-- Maddening Seaweave Gloves
-r(304561),	-- Eldritch Seaweave Gloves
-r(304562),	-- Unsettling Seaweave Breeches
-r(304563),	-- Maddening Seaweave Breeches
-r(304564),	-- Eldritch Seaweave Breeches
-r(304565),	-- Uncanny Combatant's Satin Cloak
-r(304566),	-- Uncanny Combatant's Satin Cloak
-r(304567),	-- Uncanny Combatant's Satin Cloak
-r(304568),	-- Uncanny Combatant's Satin Boots
-r(304569),	-- Uncanny Combatant's Satin Boots
-r(304570),	-- Uncanny Combatant's Satin Boots
-r(304571),	-- Uncanny Combatant's Satin Mittens
-r(304572),	-- Uncanny Combatant's Satin Mittens
-r(304573),	-- Uncanny Combatant's Satin Mittens
-r(304574),	-- Uncanny Combatant's Satin Pants
-r(304575),	-- Uncanny Combatant's Satin Pants
-r(304576),	-- Uncanny Combatant's Satin Pants
-r(304577),	-- Uncanny Combatant's Satin Belt
-r(304578),	-- Uncanny Combatant's Satin Belt
-r(304579),	-- Uncanny Combatant's Satin Belt
-r(304580),	-- Uncanny Combatant's Satin Bracers
-r(304581),	-- Uncanny Combatant's Satin Bracers
-r(304582),	-- Uncanny Combatant's Satin Bracers
-r(307175),	-- Void Focus
 11.0.0.54311
 r(423343),	-- Khaz Algar Tailoring
 r(425143),	-- Recraft Equipment
