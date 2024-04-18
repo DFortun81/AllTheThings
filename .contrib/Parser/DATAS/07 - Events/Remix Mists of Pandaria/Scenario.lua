@@ -4,6 +4,31 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(SCENARIOS, {
 		n(ACHIEVEMENTS, {
+			ach(19881, {	-- Escalation
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					19934,	-- Battle on the High Seas [A]
+					19936,	-- Battle on the High Seas [H]
+					19938,	-- Theramore's Fall [A]
+					19939,	-- Theramore's Fall [H]
+					19940,	-- Blood in the Snow
+					19942,	-- Dark Heart of Pandaria
+					19944,	-- Secrets of Ragefire
+					19958,	-- Raid Finder: Siege of Orgrimmar
+				}},
+			}),
+			ach(20004, {	-- Heroic: Pandaria Scenarios
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					19945,	-- Heroic: Secrets of Ragefire
+					19943,	-- Heroic: Dark Heart of Pandaria
+					19941,	-- Heroic: Blood in the Snow
+					19929,	-- Heroic: Crypt of Forgotten Kings
+					19924,	-- Heroic: A Brewing Storm
+					19937,	-- Heroic: Battle on the High Seas [H]
+					19935,	-- Heroic: Battle on the High Seas [A]
+				}},
+			}),
 		}),
 		n(ARMOR, {
 			filter(CLOTH, {

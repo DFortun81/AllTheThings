@@ -634,6 +634,11 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(19031),	-- Fyrn
 			ach(19696),	-- Hearthstone Anniversary Mail
 		})),
+
+		--10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			ach(40227),	-- Realm First! Mythic Garrosh
+		})),
 	}),
 }));
 -- #endif

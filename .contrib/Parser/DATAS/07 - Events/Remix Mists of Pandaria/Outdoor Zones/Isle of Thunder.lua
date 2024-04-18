@@ -187,6 +187,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					},
 				}),
+				ach(19919, {	-- Kirin Tor Offensive
+					["races"] = ALLIANCE_ONLY,
+				}),
 				ach(20015, {	-- Looking For Group: Isle of Thunder
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -194,6 +197,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19955,	-- Raid Finder: Throne of Thunder
 						20019,	-- Nalak, the Storm Lord
 					}},
+				}),
+				ach(19920, {	-- Sunreaver Onslaught
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(REWARDS, {

@@ -134,6 +134,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["_encounter"] = { 831, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
+				ach(19921),		-- Shado-Pan Assault
 			}),
 			d(DIFFICULTY.RAID.LFR, {
 				n(ARMOR, {

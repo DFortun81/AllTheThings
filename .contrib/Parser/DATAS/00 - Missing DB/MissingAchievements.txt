@@ -1,12 +1,3 @@
-10.2.7.54171
-ach(19881),	-- Escalation
-ach(19919),	-- Kirin Tor Offensive
-ach(19920),	-- Sunreaver Onslaught
-ach(19921),	-- Shado-Pan Assault
-ach(20004),	-- Heroic: Pandaria Scenarios
-ach(20006),	-- Pandaria Raids
-ach(20007),	-- Heroic: Pandaria Raids
-ach(40227),	-- Realm First! Mythic Garrosh
 11.0.0.54311
 ach(18830),	-- Level 2
 ach(19408),	-- Professional Algarian Master

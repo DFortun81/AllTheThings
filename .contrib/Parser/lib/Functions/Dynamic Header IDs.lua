@@ -248,6 +248,7 @@ HeaderAssignments = {
 	["PvP"] = -1000144,
 	["Quests"] = -1000031,
 	["Raid Finder (5.4)"] = -1000301,
+	["Raids"] = -1000885,
 	["Rank 1"] = -1000336,
 	["Rank 2"] = -1000337,
 	["Rank 3"] = -1000338,
@@ -407,4 +408,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000884;
+NextHeaderID = -1000886;
