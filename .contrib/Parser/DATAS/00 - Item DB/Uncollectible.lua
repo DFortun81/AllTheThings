@@ -327,6 +327,14 @@ i(56056);	-- Trophy Jaws
 i(62452);	-- Velvet Ear
 
 -----------------
+-- PATCH 4.3.0 --
+-----------------
+-- #if AFTER 4.3.0
+i(4363);	-- Copper Modulator
+i(4361);	-- Copper Tube
+-- #endif
+
+-----------------
 -- PATCH 7.0.3 --
 -----------------
 i(123865);	-- Relic of Ursol
