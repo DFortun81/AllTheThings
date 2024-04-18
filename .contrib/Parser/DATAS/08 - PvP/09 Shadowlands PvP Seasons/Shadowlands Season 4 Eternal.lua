@@ -56,25 +56,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
-				title(78),	-- Combatant <Name>
-				title(32),	-- Challenger <Name>
-				title(31),	-- Rival <Name>
-				title(30),	-- Duelist <Name>
-				title(387),	-- <Name> the Elite Death Knight
-				title(388),	-- <Name> the Elite Demon Hunter
-				title(389),	-- <Name> the Elite Druid
-				title(390),	-- <Name> the Elite Hunter
-				title(391),	-- <Name> the Elite Mage
-				title(392),	-- <Name> the Elite Monk
-				title(393),	-- <Name> the Elite Paladin
-				title(394),	-- <Name> the Elite Priest
-				title(395),	-- <Name> the Elite Rogue
-				title(396),	-- <Name> the Elite Shaman
-				title(397),	-- <Name> the Elite Warlock
-				title(398),	-- <Name> the Elite Warrior
-				title(29),	-- Gladiator <Name>
-			})),
 			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH } }, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
@@ -420,8 +401,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							i(201855, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
 							-- #endif
 								i(192247),	-- Eternal Gladiator's Leather Belt
-								i(192244),	-- Eternal Gladiator's Leather Legwraps							
-								i(192242),	-- Eternal Gladiator's Leather Mask							
+								i(192244),	-- Eternal Gladiator's Leather Legwraps
+								i(192242),	-- Eternal Gladiator's Leather Mask
 								i(192249),	-- Eternal Gladiator's Leather Wristwraps
 							-- #if AFTER 10.0.2
 							}),
@@ -429,9 +410,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							-- #if AFTER 10.0.2
 							i(201854, {	-- Ensemble: Cosmic Gladiator's Druid Armor
 							-- #endif
-								i(192243),	-- Eternal Gladiator's Leather Breeches							
-								i(192239),	-- Eternal Gladiator's Leather Gloves							
-								i(192238),	-- Eternal Gladiator's Leather Treads							
+								i(192243),	-- Eternal Gladiator's Leather Breeches
+								i(192239),	-- Eternal Gladiator's Leather Gloves
+								i(192238),	-- Eternal Gladiator's Leather Treads
 								i(192250),	-- Eternal Gladiator's Leather Wristguards
 							-- #if AFTER 10.0.2
 							}),
@@ -439,9 +420,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							-- #if AFTER 10.0.2
 							i(201851, {	-- Ensemble: Cosmic Gladiator's Monk Armor
 							-- #endif
-								i(192240),	-- Eternal Gladiator's Leather Grips							
-								i(192248),	-- Eternal Gladiator's Leather Strap							
-								i(192245),	-- Eternal Gladiator's Leather Spaulders							
+								i(192240),	-- Eternal Gladiator's Leather Grips
+								i(192248),	-- Eternal Gladiator's Leather Strap
+								i(192245),	-- Eternal Gladiator's Leather Spaulders
 								i(192236),	-- Eternal Gladiator's Leather Jerkin
 							-- #if AFTER 10.0.2
 							}),
@@ -461,13 +442,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							-- #if AFTER 10.0.2
 							i(201853, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
 							-- #endif
-								i(192265),	-- Eternal Gladiator's Chain Wristguards							
-								i(192257),	-- Eternal Gladiator's Chain Helm							
-								i(192259),	-- Eternal Gladiator's Chain Leggings							
-								i(192261),	-- Eternal Gladiator's Chain Monnion							
-								i(192253),	-- Eternal Gladiator's Chain Sabatons							
+								i(192265),	-- Eternal Gladiator's Chain Wristguards
+								i(192257),	-- Eternal Gladiator's Chain Helm
+								i(192259),	-- Eternal Gladiator's Chain Leggings
+								i(192261),	-- Eternal Gladiator's Chain Monnion
+								i(192253),	-- Eternal Gladiator's Chain Sabatons
 								i(192255),	-- Eternal Gladiator's Chain Gauntlets
-								i(192263),	-- Eternal Gladiator's Chain Belt							
+								i(192263),	-- Eternal Gladiator's Chain Belt
 								i(192251),	-- Eternal Gladiator's Chain Vest
 							-- #if AFTER 10.0.2
 							}),
@@ -496,11 +477,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							-- #if AFTER 10.0.2
 							i(201850, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
 							-- #endif
-								i(192267),	-- Eternal Gladiator's Plate Chestguard							
+								i(192267),	-- Eternal Gladiator's Plate Chestguard
 								i(192272),	-- Eternal Gladiator's Plate Handguards
-								i(192273),	-- Eternal Gladiator's Plate Helm							
+								i(192273),	-- Eternal Gladiator's Plate Helm
 								i(192277),	-- Eternal Gladiator's Plate Shoulders
-								i(192270),	-- Eternal Gladiator's Plate Stompers							
+								i(192270),	-- Eternal Gladiator's Plate Stompers
 								i(192282),	-- Eternal Gladiator's Plate Vambraces
 							-- #if AFTER 10.0.2
 							}),
@@ -508,17 +489,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							-- #if AFTER 10.0.2
 							i(201845, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
 							-- #endif
-								i(192268),	-- Eternal Gladiator's Plate Chestplate							
-								i(192280),	-- Eternal Gladiator's Plate Greatbelt							
-								i(192278),	-- Eternal Gladiator's Plate Pauldrons							
-								i(192269),	-- Eternal Gladiator's Plate Warboots							
+								i(192268),	-- Eternal Gladiator's Plate Chestplate
+								i(192280),	-- Eternal Gladiator's Plate Greatbelt
+								i(192278),	-- Eternal Gladiator's Plate Pauldrons
+								i(192269),	-- Eternal Gladiator's Plate Warboots
 								i(192276),	-- Eternal Gladiator's Plate Wargreaves
 							-- #if AFTER 10.0.2
 							}),
 							-- #endif
 							-- #if AFTER 10.0.2
-							i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor						
-							-- #endif	
+							i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
+							-- #endif
 								i(192271),	-- Eternal Gladiator's Plate Gauntlets
 								i(192279),	-- Eternal Gladiator's Plate Girdle
 								i(192274),	-- Eternal Gladiator's Plate Helmet

@@ -64,28 +64,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, ["collectible"] = false }, {
-				title(78),	-- Combatant <Name>
-				title(32),	-- Challenger <Name>
-				title(31),	-- Rival <Name>
-				title(30),	-- Duelist <Name>
-				title(387),	-- <Name> the Elite Death Knight
-				title(388),	-- <Name> the Elite Demon Hunter
-				title(389),	-- <Name> the Elite Druid
-				title(481),	-- <Name> the Elite Evoker
-				title(390),	-- <Name> the Elite Hunter
-				title(391),	-- <Name> the Elite Mage
-				title(392),	-- <Name> the Elite Monk
-				title(393),	-- <Name> the Elite Paladin
-				title(394),	-- <Name> the Elite Priest
-				title(395),	-- <Name> the Elite Rogue
-				title(396),	-- <Name> the Elite Shaman
-				title(397),	-- <Name> the Elite Warlock
-				title(398),	-- <Name> the Elite Warrior
-				title(29),	-- Gladiator <Name>
-				-- Solo
-				title(491),	-- Legend <Name>
-			})),
 			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },

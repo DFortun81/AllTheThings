@@ -45,25 +45,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
-				title(78),	-- Combatant <Name>
-				title(32),	-- Challenger <Name>
-				title(31),	-- Rival <Name>
-				title(30),	-- Duelist <Name>
-				title(387),	-- <Name> the Elite Death Knight
-				title(388),	-- <Name> the Elite Demon Hunter
-				title(389),	-- <Name> the Elite Druid
-				title(390),	-- <Name> the Elite Hunter
-				title(391),	-- <Name> the Elite Mage
-				title(392),	-- <Name> the Elite Monk
-				title(393),	-- <Name> the Elite Paladin
-				title(394),	-- <Name> the Elite Priest
-				title(395),	-- <Name> the Elite Rogue
-				title(396),	-- <Name> the Elite Shaman
-				title(397),	-- <Name> the Elite Warlock
-				title(398),	-- <Name> the Elite Warrior
-				title(29),	-- Gladiator <Name>
-			})),
 			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH } }, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
@@ -250,7 +231,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						filter(MAIL, {
 							-- #if AFTER 10.0.2
 							i(201870, {	-- Ensemble: Sinful Gladiator's Mail Armor
-							-- #endif							
+							-- #endif
 								i(175914),	-- Sinful Gladiator's Chain Belt
 								i(178360),	-- Sinful Gladiator's Chain Boots
 								i(178384),	-- Sinful Gladiator's Chain Bracers
@@ -277,7 +258,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						filter(PLATE, {
 							-- #if AFTER 10.0.2
 							i(201869, {	-- Ensemble: Sinful Gladiator's Plate Armor
-							-- #endif	
+							-- #endif
 								i(175890),	-- Sinful Gladiator's Plate Chestguard
 								i(178355),	-- Sinful Gladiator's Plate Chestplate
 								i(175898),	-- Sinful Gladiator's Plate Gauntlets

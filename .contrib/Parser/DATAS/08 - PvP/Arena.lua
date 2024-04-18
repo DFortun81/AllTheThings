@@ -67,18 +67,4 @@ root(ROOTS.PVP, pvp(n(ARENA, {	-- Arena
 			-- #endif
 		}),
 	}),
-	filter(TITLES, bubbleDown({ ["collectible"] = false, },{
-		title(387),	-- <Name> the Elite Death Knight
-		title(388),	-- <Name> the Elite Demon Hunter
-		title(389),	-- <Name> the Elite Druid
-		title(390),	-- <Name> the Elite Hunter
-		title(391),	-- <Name> the Elite Mage
-		title(392),	-- <Name> the Elite Monk
-		title(393),	-- <Name> the Elite Paladin
-		title(394),	-- <Name> the Elite Priest
-		title(395),	-- <Name> the Elite Rogue
-		title(396),	-- <Name> the Elite Shaman
-		title(397),	-- <Name> the Elite Warlock
-		title(398),	-- <Name> the Elite Warrior
-	})),
 })));

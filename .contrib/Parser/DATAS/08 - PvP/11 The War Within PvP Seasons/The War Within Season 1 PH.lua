@@ -12,9 +12,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0_LAUNCH, REMOVED_11_1_0 } }, {
 
 			})),
-			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0_LAUNCH, REMOVED_11_1_0 }, ["collectible"] = false }, {
-
-			})),
 			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0_LAUNCH, REMOVED_11_1_0 } }, {
 
 			})),
