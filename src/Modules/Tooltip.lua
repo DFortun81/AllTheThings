@@ -38,16 +38,18 @@ local function distance( x1, y1, x2, y2 )
 end
 local function GetPlayerPosition()
 	local mapID = app.CurrentMapID;
-	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-	if pos then
-		local px, py = pos:GetXY();
-		return mapID, px * 100, py * 100;
+	if not IsInInstance() then
+		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
+		if pos then
+			local px, py = pos:GetXY();
+			return mapID, px * 100, py * 100;
+		end
 	end
 	return mapID, 50, 50;
 end
 
 local GetBestObjectIDForName;
-if app.IsRetail then
+if app.IsRetail and false then
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position

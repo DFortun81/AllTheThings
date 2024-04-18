@@ -109,8 +109,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(7761, {	-- Blackhand's Command
-				["qg"] = 9046,	-- Scarshield Quartermaster <Scarshield Legion>
-				["provider"] = { "i", 18987 },	-- Blackhand's Command
+				["providers"] = {
+					{ "n",   9046 },	-- Scarshield Quartermaster <Scarshield Legion>
+					{ "i",  18987 },	-- Blackhand's Command
+					{ "o", 179880 },	-- Drakkisath's Brand
+				},
 				["coord"] = { 34.9, 27.9, BURNING_STEPPES },
 				["timeline"] = { "removed 4.0.3" },
 				["maps"] = { BLACKROCK_MOUNTAIN },
