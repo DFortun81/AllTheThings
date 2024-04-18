@@ -57,8 +57,8 @@ local ATTAccountWideData;
 
 -- App & Module locals
 local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
-local CacheFields, SearchForField, SearchForFieldContainer, GetRawField
-	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.GetRawField
+local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
+	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForObject
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
@@ -1508,7 +1508,7 @@ local ResolveFunctions = {
 	["select"] = function(finalized, searchResults, o, cmd, field, ...)
 		local cache, val;
 		local vals = select("#", ...);
-		local Search = app.SearchForObject
+		local Search = SearchForObject
 		for i=1,vals do
 			val = select(i, ...);
 			cache = Search(field, val, "field", true);
@@ -1789,7 +1789,7 @@ local ResolveFunctions = {
 			app.print("'",cmd,"' had empty value set")
 			return;
 		end
-		local Search = app.SearchForObject
+		local Search = SearchForObject
 		local cache, value;
 		for i=1,vals do
 			value = select(i, ...);
@@ -1891,7 +1891,7 @@ if GetAchievementNumCriteria then
 			elseif criteriaType == 0	-- Monster kill
 			then
 				-- app.PrintDebug("NPC Kill Criteria",assetID)
-				local c = app.SearchForObject("npcID", assetID)
+				local c = SearchForObject("npcID", assetID)
 				if c then
 					-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
 					NestObject(c, criteriaObject);
@@ -2944,7 +2944,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				local left, right;
 				tinsert(tooltipInfo, { left = L.CONTAINS });
 				local item, entry;
-				local RecursiveParentField, SearchForObject = app.GetRelativeValue, app.SearchForObject;
+				local RecursiveParentField = app.GetRelativeValue
 				for i=1,#entries do
 					item = entries[i];
 					entry = item.group;
@@ -3203,7 +3203,7 @@ local function DetermineCraftedGroups(group, FillData)
 	-- item is BoP
 	-- if filterSkill then
 	local craftedItemID, recipe, skillID, recraftItems;
-	local Search, GetRecraftItems = app.SearchForObject, C_TradeSkillUI.GetRecraftItems;
+	local GetRecraftItems = C_TradeSkillUI.GetRecraftItems;
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
 	-- If the reagent itself is BOP, then only show things you can make.
 	-- find recipe(s) which creates this item
@@ -3215,7 +3215,7 @@ local function DetermineCraftedGroups(group, FillData)
 			-- app.PrintDebug("recipeID",recipeID);
 			-- item is BoP
 			if filterSkill then
-				recipe = Search("spellID",recipeID,"key");
+				recipe = SearchForObject("spellID",recipeID,"key");
 				if recipe then
 					-- Recipe can be recrafted, i.e. can be used in Crafting Order to another player with the Profession
 					-- TODO: maybe there's another way to check that a Recipe can be used in a crafting order because
@@ -3251,7 +3251,7 @@ local function DetermineCraftedGroups(group, FillData)
 	for craftedItemID,_ in pairs(craftableItemIDs) do
 		craftedItems[craftedItemID] = true
 		-- Searches for a filter-matched crafted Item
-		search = Search("itemID",craftedItemID,"field");
+		search = SearchForObject("itemID",craftedItemID,"field");
 		if search then
 			search = CreateObject(search);
 		end
@@ -3528,10 +3528,10 @@ app.BuildCost = function(group)
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "c" then
-				costItem = app.SearchForObject("currencyID", c[2], "field") or app.CreateCurrencyClass(c[2]);
+				costItem = SearchForObject("currencyID", c[2], "field") or app.CreateCurrencyClass(c[2]);
 				costItem = app.CreateCostCurrency(costItem, c[3]);
 			elseif c[1] == "i" then
-				costItem = app.SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
+				costItem = SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
 				costItem = app.CreateCostItem(costItem, c[3]);
 			end
 			if costItem then
@@ -3545,7 +3545,7 @@ app.BuildCost = function(group)
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "i" then
-				costItem = app.SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
+				costItem = SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
 				costItem = app.CreateCostItem(costItem, 1);
 			end
 			if costItem then
@@ -3683,7 +3683,6 @@ app.BuildSourceParent = function(group)
 	if things then
 		local groupHash = group.hash;
 		local isAchievement = groupKey == "achievementID";
-		local SearchForObject = app.SearchForObject;
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in ipairs(things) do
@@ -3769,7 +3768,7 @@ app.BuildSourceParent = function(group)
 				-- if thing.sourceQuests and groupKey ~= "questID" then
 				-- 	local questRef;
 				-- 	for _,sq in ipairs(thing.sourceQuests) do
-				-- 		questRef = app.SearchForObject("questID", sq) or {["questID"] = sq};
+				-- 		questRef = SearchForObject("questID", sq) or {["questID"] = sq};
 				-- 		if parents then tinsert(parents, questRef);
 				-- 		else parents = { questRef }; end
 				-- 	end
@@ -3781,7 +3780,7 @@ app.BuildSourceParent = function(group)
 		-- re-popping this Achievement will do normal Sources for all the Criteria and be useful
 		if groupKey == "criteriaID" then
 			local achID = group.achievementID;
-			parent = app.SearchForObject("achievementID", achID) or { achievementID = achID };
+			parent = SearchForObject("achievementID", achID) or { achievementID = achID };
 			-- app.PrintDebug("add achievement for empty criteria",achID)
 			if parents then tinsert(parents, parent);
 			else parents = { parent }; end
@@ -4285,7 +4284,7 @@ local function SearchForLink(link)
 				local sourceID = select(3, GetItemInfo(link)) ~= 6 and app.GetSourceID(link);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
-					_ = SearchForField("sourceID", sourceID);
+					_ = SearchForObject("sourceID", sourceID, nil, true);
 					-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH SOURCE", link, itemID, sourceID, _ and #_);
 					return _;
 				else
@@ -4300,14 +4299,14 @@ local function SearchForLink(link)
 					end
 					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
 					if exactItemID ~= itemID then
-						_ = SearchForField("itemID", exactItemID);
+						_ = SearchForObject("itemID", exactItemID, nil, true);
 						if #_ > 0 then return _; end
 					end
 					if modItemID ~= itemID then
-						_ = SearchForField("itemID", modItemID);
+						_ = SearchForObject("itemID", modItemID, nil, true);
 						if #_ > 0 then return _; end
 					end
-					return SearchForField("itemID", itemID);
+					return SearchForObject("itemID", itemID, nil, true);
 				end
 			end
 		end
@@ -4329,7 +4328,7 @@ local function SearchForLink(link)
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
 	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">",#SearchForField(KeyMaps[kind], id))
 	kind = KeyMaps[kind]
-	return SearchForField(kind, id), kind, id
+	return SearchForObject(kind, id, nil, true), kind, id
 end
 app.SearchForLink = SearchForLink;
 end
@@ -4703,7 +4702,7 @@ local function GetPopulatedQuestObject(questID)
 	-- cannot do anything on a missing object or questID
 	if not questID then return; end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
-	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
+	local questObject = CreateObject(SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
 	-- if questID == 78663 then
 	-- 	local debug = app.Debugging
 	-- 	app.Debugging = true
@@ -5004,7 +5003,7 @@ local function GetParentAchievementInfo(t, key)
 		app.PrintDebug("Missing achievementID for criteria reference",t.hash)
 		return;
 	end
-	local achievement = app.SearchForObject("achievementID", id, "key");
+	local achievement = SearchForObject("achievementID", id, "key");
 	if achievement then
 		-- copy parent Achievement field re-mappings
 		for _,key in ipairs(UseParentAchievementValueKeys) do
@@ -5872,12 +5871,11 @@ local function CacheHeirlooms()
 
 
 		-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
-		local Search = app.SearchForObject;
 		local uniques, heirloom, upgrades = {};
 		for _,itemID in ipairs(heirloomIDs) do
 			if not uniques[itemID] then
 				uniques[itemID] = true;
-				heirloom = Search("itemID", itemID, "field");
+				heirloom = SearchForObject("itemID", itemID, "field");
 				if heirloom then
 					upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
 					if upgrades and upgrades > 0 then
@@ -6560,7 +6558,7 @@ local function GetAutomaticHeaderData(id, type)
 		return altFunc(id);
 	end
 	local typeID = HeaderTypeAbbreviations[type] or type;
-	local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
+	local obj = SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
 	if obj then
 		-- app.PrintDebug("GetAutomaticHeaderData", id, typeID, obj.text, obj.key, obj[obj.key]);
 		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
@@ -7222,7 +7220,7 @@ end
 app.__CacheQuestTriggers = nil
 local function AssignDirectGroupOnUpdates()
 	local questRef;
-	local Search = app.SearchForObject;
+	local Search = SearchForObject;
 	for questID,func in pairs(DGU_Quests) do
 		questRef = Search("questID", questID);
 		if questRef then
@@ -8728,7 +8726,7 @@ RowOnEnter = function (self)
 			local nextq, nq = {};
 			for _,nextQuestID in ipairs(reference.nextQuests) do
 				if nextQuestID > 0 then
-					nq = app.SearchForObject("questID", nextQuestID, "field");
+					nq = SearchForObject("questID", nextQuestID, "field");
 					-- existing quest group
 					if nq then
 						tinsert(nextq, nq);
@@ -12363,7 +12361,7 @@ customWindowUpdates.list = function(self, force, got)
 		self.doesOwnUpdate = true;
 		self.initialized = true;
 		force = true;
-		local DGU, DGR, SearchObject = app.DirectGroupUpdate, app.DirectGroupRefresh, app.SearchForObject;
+		local DGU, DGR = app.DirectGroupUpdate, app.DirectGroupRefresh;
 
 		-- custom params for initialization
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
@@ -12467,8 +12465,8 @@ customWindowUpdates.list = function(self, force, got)
 				id = CacheFields[id];
 				-- app.PrintDebug("OTF:CacheID",dataType,id)
 				return setmetatable({ visible = true }, {
-					__index = id and (SearchObject(dataType, id, "key")
-									or SearchObject(dataType, id, "field")
+					__index = id and (SearchForObject(dataType, id, "key")
+									or SearchForObject(dataType, id, "field")
 									or CreateObject({[dataType]=id}))
 								or setmetatable({name=EMPTY}, app.BaseClass)
 				});
@@ -12485,7 +12483,7 @@ customWindowUpdates.list = function(self, force, got)
 			if func then return func(id); end
 			-- Simply a visible table whose Base will be the actual referenced object
 			return setmetatable({ visible = true }, {
-				__index = SearchObject(type, id, "field") or CreateObject({[type]=id})
+				__index = SearchForObject(type, id, "field") or CreateObject({[type]=id})
 			});
 		end
 
@@ -12626,7 +12624,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
 			if not craftedItemID then return end
-			local cachedRecipe = app.SearchForObject("spellID",recipeID)
+			local cachedRecipe = SearchForObject("spellID",recipeID)
 			if not cachedRecipe then
 				local tradeSkillID, skillLineName, parentTradeSkillID = C_TradeSkillUI_GetTradeSkillLineForRecipe(recipeID)
 				local missing = app.TableConcat({"Missing Recipe:",recipeID,skillLineName,tradeSkillID,"=>",parentTradeSkillID}, nil, nil, " ")
