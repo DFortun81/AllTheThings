@@ -767,11 +767,74 @@ i(142333, 230047);	-- Feathered Luffa
 -- #endif
 
 -----------------
+-- PATCH 8.1.0 --
+-----------------
+--- TRAINER ---
+i(0, 287274);	-- Aqueous Alteration \\ Tidalcore to Hydrocore
+i(0, 285077);	-- Enhanced Deep Sea Breeches
+i(0, 285078);	-- Enhanced Deep Sea Gloves
+i(0, 286654);	-- Sanguinated Alteration \\ Breath to Sanguicell
+i(0, 282168);	-- Sinister Combatant's Satin Belt [Rank 1]
+i(0, 282194);	-- Sinister Combatant's Satin Boots [Rank 1]
+i(0, 282164);	-- Sinister Combatant's Satin Bracers [Rank 1]
+i(0, 282204);	-- Sinister Combatant's Satin Cloak [Rank 1]
+i(0, 282191);	-- Sinister Combatant's Satin Mittens [Rank 1]
+i(0, 282175);	-- Sinister Combatant's Satin Pants [Rank 1]
+--- ITEM ---
+i(165655, 285085);	-- Fortified Deep Sea Breeches
+i(165652, 285086);	-- Fortified Deep Sea Gloves
+i(165340, 282169);	-- Sinister Combatant's Satin Belt [Rank 2]
+i(165341, 282170);	-- Sinister Combatant's Satin Belt [Rank 3]
+i(165334, 282195);	-- Sinister Combatant's Satin Boots [Rank 2]
+i(165335, 282196);	-- Sinister Combatant's Satin Boots [Rank 3]
+i(165342, 282165);	-- Sinister Combatant's Satin Bracers [Rank 2]
+i(165343, 282166);	-- Sinister Combatant's Satin Bracers [Rank 3]
+i(165332, 282275);	-- Sinister Combatant's Satin Cloak [Rank 2]
+i(165333, 282276);	-- Sinister Combatant's Satin Cloak [Rank 3]
+i(165336, 282192);	-- Sinister Combatant's Satin Mittens [Rank 2]
+i(165337, 282193);	-- Sinister Combatant's Satin Mittens [Rank 3]
+i(165338, 282176);	-- Sinister Combatant's Satin Pants [Rank 2]
+i(165339, 282177);	-- Sinister Combatant's Satin Pants [Rank 3]
+i(165654, 285093);	-- Tempered Deep Sea Breeches
+i(165653, 285094);	-- Tempered Deep Sea Gloves
+
+-----------------
+-- PATCH 8.1.5 --
+-----------------
+--- ITEM ---
+i(168029, 292946);	-- Synchronous Thread
+
+-----------------
 -- PATCH 8.2.0 --
 -----------------
 --- TRAINER ---
+i(0, 299034);	-- Gilded Seaweave Breeches
+i(0, 299031);	-- Gilded Seaweave Gloves
+i(0, 294841);	-- Notorious Combatant's Satin Belt [Rank 1]
+i(0, 294832);	-- Notorious Combatant's Satin Boots [Rank 1]
+i(0, 294844);	-- Notorious Combatant's Satin Bracers [Rank 1]
+i(0, 294829);	-- Notorious Combatant's Satin Cloak [Rank 1]
+i(0, 294835);	-- Notorious Combatant's Satin Mittens [Rank 1]
+i(0, 294838);	-- Notorious Combatant's Satin Pants [Rank 1]
 i(0, 301409);	-- Saddlechute
 i(0, 301403);	-- Seabreeze Saddle Blanket
+--- ITEM ---
+i(168784, 299036);	-- Banded Seaweave Breeches
+i(168782, 299033);	-- Banded Seaweave Gloves
+i(169576, 294842);	-- Notorious Combatant's Satin Belt [Rank 2]
+i(169577, 294843);	-- Notorious Combatant's Satin Belt [Rank 3]
+i(169578, 294833);	-- Notorious Combatant's Satin Boots [Rank 2]
+i(169579, 294834);	-- Notorious Combatant's Satin Boots [Rank 3]
+i(169582, 294845);	-- Notorious Combatant's Satin Bracers [Rank 2]
+i(169583, 294846);	-- Notorious Combatant's Satin Bracers [Rank 3]
+i(169586, 294830);	-- Notorious Combatant's Satin Cloak [Rank 2]
+i(169587, 294831);	-- Notorious Combatant's Satin Cloak [Rank 3]
+i(169580, 294836);	-- Notorious Combatant's Satin Mittens [Rank 2]
+i(169581, 294837);	-- Notorious Combatant's Satin Mittens [Rank 3]
+i(169584, 294839);	-- Notorious Combatant's Satin Pants [Rank 2]
+i(169585, 294840);	-- Notorious Combatant's Satin Pants [Rank 3]
+i(168781, 299032);	-- Reinforced Seaweave Gloves
+i(168783, 299035);	-- Reinforced Seaweave Breeches
 
 -----------------
 -- PATCH 8.3.0 --

@@ -1214,62 +1214,6 @@ r(278414),	-- Rough-hooked Tidespray Linen
 r(279182),	-- Resilient Spellthread
 r(279183),	-- Discreet Spellthread
 r(279184),	-- Feathery Spellthread
-8.1.0.27826
-r(282164),	-- Sinister Combatant's Satin Bracers
-r(282165),	-- Sinister Combatant's Satin Bracers
-r(282166),	-- Sinister Combatant's Satin Bracers
-r(282168),	-- Sinister Combatant's Satin Belt
-r(282169),	-- Sinister Combatant's Satin Belt
-r(282170),	-- Sinister Combatant's Satin Belt
-r(282175),	-- Sinister Combatant's Satin Pants
-r(282176),	-- Sinister Combatant's Satin Pants
-r(282177),	-- Sinister Combatant's Satin Pants
-r(282191),	-- Sinister Combatant's Satin Mittens
-r(282192),	-- Sinister Combatant's Satin Mittens
-r(282193),	-- Sinister Combatant's Satin Mittens
-r(282194),	-- Sinister Combatant's Satin Boots
-r(282195),	-- Sinister Combatant's Satin Boots
-r(282196),	-- Sinister Combatant's Satin Boots
-r(282204),	-- Sinister Combatant's Satin Cloak
-r(282275),	-- Sinister Combatant's Satin Cloak
-r(282276),	-- Sinister Combatant's Satin Cloak
-8.1.0.27985
-r(285077),	-- Enhanced Deep Sea Breeches
-r(285078),	-- Enhanced Deep Sea Gloves
-r(285085),	-- Fortified Deep Sea Breeches
-r(285086),	-- Fortified Deep Sea Gloves
-r(285093),	-- Tempered Deep Sea Breeches
-r(285094),	-- Tempered Deep Sea Gloves
-r(286654),	-- Sanguinated Alteration \\ Breath to Sanguicell
-8.1.0.28048
-r(287274),	-- Aqueous Alteration \\ Tidalcore to Hydrocore
-8.1.5.29141
-r(292946),	-- Synchronous Thread
-8.2.0.30080
-r(294829),	-- Notorious Combatant's Satin Cloak
-r(294830),	-- Notorious Combatant's Satin Cloak
-r(294831),	-- Notorious Combatant's Satin Cloak
-r(294832),	-- Notorious Combatant's Satin Boots
-r(294833),	-- Notorious Combatant's Satin Boots
-r(294834),	-- Notorious Combatant's Satin Boots
-r(294835),	-- Notorious Combatant's Satin Mittens
-r(294836),	-- Notorious Combatant's Satin Mittens
-r(294837),	-- Notorious Combatant's Satin Mittens
-r(294838),	-- Notorious Combatant's Satin Pants
-r(294839),	-- Notorious Combatant's Satin Pants
-r(294840),	-- Notorious Combatant's Satin Pants
-r(294841),	-- Notorious Combatant's Satin Belt
-r(294842),	-- Notorious Combatant's Satin Belt
-r(294843),	-- Notorious Combatant's Satin Belt
-r(294844),	-- Notorious Combatant's Satin Bracers
-r(294845),	-- Notorious Combatant's Satin Bracers
-r(294846),	-- Notorious Combatant's Satin Bracers
-r(299031),	-- Gilded Seaweave Gloves
-r(299032),	-- Reinforced Seaweave Gloves
-r(299033),	-- Banded Seaweave Gloves
-r(299034),	-- Gilded Seaweave Breeches
-r(299035),	-- Reinforced Seaweave Breeches
-r(299036),	-- Banded Seaweave Breeches
 11.0.0.54311
 r(423343),	-- Khaz Algar Tailoring
 r(425143),	-- Recraft Equipment
