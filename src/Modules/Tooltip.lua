@@ -14,7 +14,7 @@ local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 
 -- App locals
-local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
+local GetRelativeValue, SearchForField, SearchForObject = app.GetRelativeValue, app.SearchForField, app.SearchForObject
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
 local SearchForLink
@@ -125,6 +125,25 @@ else
 										closestInstance = searchResult;
 									end
 								end
+							end
+						end
+						
+						if searchResult.maps then
+							for k,m in ipairs(searchResult.maps) do
+								if m == mapID then
+									dist = distance(px, py, 0.5, 0.5);
+									if dist and dist < closestDistance then
+										closestDistance = dist;
+										closestInstance = searchResult;
+									end
+								end
+							end
+						end
+						if app.GetRelativeValue(searchResult, "mapID") == mapID then
+							dist = distance(px, py, 0.5, 0.5);
+							if dist and dist < closestDistance then
+								closestDistance = dist;
+								closestInstance = searchResult;
 							end
 						end
 					end

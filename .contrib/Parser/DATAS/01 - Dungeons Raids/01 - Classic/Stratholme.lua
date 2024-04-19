@@ -371,7 +371,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5265, {	-- The Argent Hold
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus <The Argent Dawn>
+					["providers"] = {
+						{ "n",  11034 },	-- Lord Maxwell Tyrosus <The Argent Dawn>
+						{ "o", 176317 },	-- The Argent Hold
+					},
 					["sourceQuest"] = 5264,	-- Lord Maxwell Tyrosus
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { "removed 4.0.3" },
@@ -800,7 +803,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					n(11120, {	-- Crimson Hammersmith [Classic] / Risen Hammersmith [CATA+]
-						["description"] = "Loot the Blacksmithing Plans on the ground to spawn this mob.",
+						["provider"] = { "o", 176325 },	-- Blacksmithing Plans
+						["description"] = "Found in the Hoard on the way to Cannon Master Willey.",
 						["groups"] = {
 							i(18781, {	-- Bottom Half of Advanced Armorsmithing: Volume II
 								["timeline"] = { "removed 4.0.3" },
@@ -1029,7 +1033,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(11121, {	-- Black Guard Swordsmith
-						["description"] = "Loot the Blacksmithing Plans on the ground to spawn this mob.",
+						["providers"] = {
+							{ "o", 176325 },	-- Blacksmithing Plans
+							-- This is what it should be, but since tooltips for objects with EXACTLY THE SAME NAME are wonky in the same instance (due to a lack of coordinates....), this is necessary to make the tooltips make more sense.
+							--{ "o", 176327 },	-- Blacksmithing Plans
+						},
+						["description"] = "Found outside of Baroness Anastari's ziggurat.",
 						["groups"] = {
 							i(18783, {	-- Bottom Half of Advanced Armorsmithing: Volume III
 								["timeline"] = { "removed 4.0.1" },
