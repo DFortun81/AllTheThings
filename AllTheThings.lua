@@ -2419,6 +2419,92 @@ local function GetRelativeDifficulty(group, difficultyID)
 	end
 end
 
+local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
+	-- Create a list of sources
+	-- app.PrintDebug("SourceLocations",paramA,SourceLocationSettingsKey[paramA])
+	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
+		local temp, text, parent = {};
+		local unfiltered, right = {};
+		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
+		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+		local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
+			= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+		local abbrevs = L.ABBREVIATIONS;
+		local sourcesToShow
+		local allReferences = SearchForField(paramA, paramB)
+		-- app.PrintDebug("Sources count",#allReferences,paramA,paramB)
+		for _,j in ipairs(allReferences) do
+			parent = j.parent;
+			-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j),not HasCost(j, paramA, paramB))
+			if parent and parent.parent
+				and (showCompleted or not app.IsComplete(j))
+				and not HasCost(j, paramA, paramB)
+			then
+				text = app.GenerateSourcePathForTooltip(parent);
+				-- app.PrintDebug("SourceLocation",text,FilterUnobtainable(j),FilterSettings(parent),FilterCharacter(parent))
+				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+					-- doesn't meet current unobtainable filters from the Thing itself
+					if not FilterUnobtainable(j) then
+						tinsert(unfiltered, { text, UnobtainableTexture });
+					else
+						-- something user would currently see in a list or not
+						sourcesToShow = FilterSettings(parent) and temp or unfiltered
+						-- from obtainable, different character source
+						if not FilterCharacter(parent) then
+							tinsert(sourcesToShow, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+						else
+							-- check if this needs an unobtainable icon even though it's being shown
+							right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+							tinsert(sourcesToShow, { text, right and ("|T" .. right .. ":0|t") });
+						end
+					end
+				end
+			end
+		end
+		-- app.PrintDebug("Sources count",#temp,#unfiltered)
+		-- if in Debug or no sources visible, add any unfiltered sources
+		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
+			for _,data in ipairs(unfiltered) do
+				tinsert(temp, data);
+			end
+		end
+		if #temp > 0 then
+			local listing = {};
+			local maximum = app.Settings:GetTooltipSetting("Locations");
+			local count = 0;
+			app.Sort(temp, app.SortDefaults.IndexOneStrings);
+			for _,data in ipairs(temp) do
+				text = data[1];
+				right = data[2];
+				if right and right:len() > 0 then
+					-- app.PrintDebug("text adj",text,"++",right)
+					text = text .. " " .. right;
+				end
+				if not contains(listing, text) then
+					count = count + 1;
+					if count <= maximum then
+						tinsert(listing, text);
+						-- app.PrintDebug("add source",text)
+					end
+				-- else app.PrintDebug("exclude source by contains",text)
+				end
+			end
+			if count > maximum then
+				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
+			end
+			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+			for _,text in ipairs(listing) do
+				for source,replacement in pairs(abbrevs) do
+					text = text:gsub(source, replacement);
+				end
+				if not working and IsRetrieving(text) then working = true; end
+				local left, right = DESCRIPTION_SEPARATOR:split(text);
+				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
+			end
+		end
+	end
+end
+
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
 	if not method then
@@ -2530,8 +2616,15 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				if modID == 0 then modID = nil; end
 				bonusID = (tonumber(numBonusIds) or 0) > 0 and tonumber(bonusID1) or 3524;
 				if bonusID == 3524 then bonusID = nil; end
-				paramA = "itemID";
-				paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
+				if sourceID then
+					paramA = "sourceID"
+					paramB = sourceID
+					-- app.PrintDebug("use sourceID params",paramA,paramB)
+				else
+					paramA = "itemID";
+					paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
+					-- app.PrintDebug("use itemID params",paramA,paramB)
+				end
 			end
 		else
 			local kind, id = (":"):split(rawlink);
@@ -2561,84 +2654,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	local working, tooltipInfo = false, {};
 
 	if isTopLevelSearch then
-		-- Create a list of sources
-		-- app.PrintDebug("SourceLocations",paramA,SourceLocationSettingsKey[paramA])
-		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
-			local temp, text, parent = {};
-			local unfiltered, right = {};
-			local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
-			local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
-			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-			local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
-				= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
-			local abbrevs = L.ABBREVIATIONS;
-			local sourcesToShow
-			local allReferences = SearchForField(paramA, paramB)
-			-- app.PrintDebug("Sources count",#allReferences,paramA,paramB)
-			for _,j in ipairs(allReferences) do
-				parent = j.parent;
-				if parent and parent.parent
-					and (showCompleted or not app.IsComplete(j))
-					and not HasCost(j, paramA, paramB)
-				then
-					text = app.GenerateSourcePathForTooltip(parent);
-					-- app.PrintDebug("SourceLocation",text)
-					if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-						-- doesn't meet current unobtainable filters from the Thing itself
-						if not FilterUnobtainable(j) then
-							tinsert(unfiltered, { text, UnobtainableTexture });
-						else
-							-- something user would currently see in a list or not
-							sourcesToShow = FilterSettings(parent) and temp or unfiltered
-							-- from obtainable, different character source
-							if not FilterCharacter(parent) then
-								tinsert(sourcesToShow, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
-							else
-								-- check if this needs an unobtainable icon even though it's being shown
-								right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
-								tinsert(sourcesToShow, { text, right and ("|T" .. right .. ":0|t") });
-							end
-						end
-					end
-				end
-			end
-			-- if in Debug or no sources visible, add any unfiltered sources
-			if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
-				for _,data in ipairs(unfiltered) do
-					tinsert(temp, data);
-				end
-			end
-			if #temp > 0 then
-				local listing = {};
-				local maximum = app.Settings:GetTooltipSetting("Locations");
-				local count = 0;
-				app.Sort(temp, app.SortDefaults.IndexOneStrings);
-				for _,data in ipairs(temp) do
-					text = data[1];
-					right = data[2];
-					if right and right:len() > 0 then
-						text = text .. " " .. right;
-					end
-					if not contains(listing, text) then
-						count = count + 1;
-						if count <= maximum then
-							tinsert(listing, text);
-						end
-					end
-				end
-				if count > maximum then
-					tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
-				end
-				for _,text in ipairs(listing) do
-					for source,replacement in pairs(abbrevs) do
-						text = text:gsub(source, replacement);
-					end
-					if not working and IsRetrieving(text) then working = true; end
-					local left, right = DESCRIPTION_SEPARATOR:split(text);
-					tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
-				end
-			end
-		end
+		AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 
 		-- Shared Appearances and Stuff
 		if itemID then

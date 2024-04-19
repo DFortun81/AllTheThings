@@ -127,7 +127,7 @@ else
 								end
 							end
 						end
-						
+
 						if searchResult.maps then
 							for k,m in ipairs(searchResult.maps) do
 								if m == mapID then
@@ -139,7 +139,7 @@ else
 								end
 							end
 						end
-						if app.GetRelativeValue(searchResult, "mapID") == mapID then
+						if GetRelativeValue(searchResult, "mapID") == mapID then
 							dist = distance(px, py, 0.5, 0.5);
 							if dist and dist < closestDistance then
 								closestDistance = dist;
