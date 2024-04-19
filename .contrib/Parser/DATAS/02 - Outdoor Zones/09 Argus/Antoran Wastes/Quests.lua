@@ -59,6 +59,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48984),	-- Triggers when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
 		q(49023),	-- Triggers when looting Ancient Legion War Cache. Probably achievement criteria as chests have their own questIDs
 		q(49024),	-- Triggers when looting Fel-Bound Chest. Probably achievement criteria as chests have their own questIDs
-		q(49162),	-- spell=254549 Discord Report 18-Apr-2024
+		q(49162),	-- Triggers when completing 'Sizing Up The Opposition' (questID 48929) (spellID 254549)
 	}),
 });
