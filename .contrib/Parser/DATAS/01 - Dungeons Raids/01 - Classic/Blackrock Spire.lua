@@ -130,6 +130,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(6602, {	-- Blood of the Black Dragon Champion
 				["qg"] = 10182,	-- Rexxar [Classic] / Rokaro [TBC+] <Champion of the Horde>
 				["sourceQuest"] = 6601,	-- Ascension...
+				-- #if AFTER TBC
+				["coord"] = { 25.6, 70.0, DESOLACE },
+				-- #else
 				["coords"] = {
 					{ 54.0, 3.2, DESOLACE },
 					{ 62.8, 22.6, DESOLACE },
@@ -141,6 +144,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 40.8, 78.6, DESOLACE },
 					{ 42.4, 96.8, DESOLACE },
 				},
+				-- #endif
 				["timeline"] = { "removed 4.0.3" },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -625,17 +629,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 16785 },	-- Rokaro's Letter
 				},
 				["sourceQuest"] = 6567,	-- The Champion of the Horde
-				["coords"] = {
-					{ 54.0, 3.2, DESOLACE },
-					{ 62.8, 22.6, DESOLACE },
-					{ 59.8, 37.6, DESOLACE },
-					{ 52.0, 39.4, DESOLACE },
-					{ 49.6, 56.4, DESOLACE },
-					{ 55.6, 66.6, DESOLACE },
-					{ 50.6, 75.2, DESOLACE },
-					{ 40.8, 78.6, DESOLACE },
-					{ 42.4, 96.8, DESOLACE },
-				},
+				["coord"] = { 25.6, 70.0, DESOLACE },
 				["timeline"] = { "removed 4.0.3" },
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
