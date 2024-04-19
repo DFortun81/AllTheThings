@@ -577,6 +577,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["requireSkill"] = BLACKSMITHING,
 					-- #endif
+					["learnedAt"] = 250,
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Insignia of the Black Guard
@@ -1255,6 +1256,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["requireSkill"] = BLACKSMITHING,
 					-- #endif
+					["learnedAt"] = 250,
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Vosh'gajin's Snakestone
@@ -1362,6 +1364,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["requireSkill"] = BLACKSMITHING,
 					-- #endif
+					["learnedAt"] = 250,
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Crimson Hammersmith's Apron

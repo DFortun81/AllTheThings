@@ -561,10 +561,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5126, {	-- Lorax's Tale
-				["qg"] = 10918,	-- Lorax
+				["providers"] = {
+					{ "n", 10918 },	-- Lorax
+					{ "i", 12806 },	-- Unforged Rune Covered Breastplate
+				},
+				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
 				["timeline"] = { "removed 4.0.3" },
 				["requireSkill"] = BLACKSMITHING,
+				["learnedAt"] = 275,
 				["lvl"] = 55,
 			}),
 			q(5081, {	-- Maxwell's Mission
@@ -796,6 +801,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #endif
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
 				["timeline"] = { "removed 4.0.3" },
+				["learnedAt"] = 275,
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 Soul Stained Pike
