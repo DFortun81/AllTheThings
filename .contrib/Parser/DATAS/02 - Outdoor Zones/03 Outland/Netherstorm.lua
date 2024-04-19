@@ -732,6 +732,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10425, {	-- Escape from the Staging Grounds
+						["description"] = "An Ethereum Gladiator and a Captured Protectorate Vanguard spawns in the middle of the staging grounds every 7 minutes. Kill the Gladiator to obtain the escort quest.",
 						["qg"] = 20763,	-- Captured Protectorate Vanguard
 						["coord"] = { 57.0, 37.6, NETHERSTORM },
 						["groups"] = {
