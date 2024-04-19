@@ -299,7 +299,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					objective(1, {	-- 0/8 Collected Dragon Egg
-						["provider"] = { "i", 12241 },	-- Collected Dragon Egg
+						["providers"] = {
+							{ "i",  12241 },	-- Collected Dragon Egg
+							{ "o", 175124 },	-- Rookery Egg
+						},
 						["cost"] = {
 							{ "i", 12144, 1 },	-- Eggscilloscope
 							{ "i", 12287, 1 },	-- Collectronic Module
@@ -315,7 +318,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					objective(1, {	-- Test the Eggscilliscope Prototype
-						["provider"] = { "i", 12286 },	-- Eggscilloscope Prototype
+						["providers"] = {
+							{ "i",  12286 },	-- Eggscilloscope Prototype
+							{ "o", 175124 },	-- Rookery Egg
+						},
 					}),
 					i(12144, {	-- Eggscilloscope
 						-- #if BEFORE 4.0.3
@@ -1648,7 +1654,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if AFTER WRATH
 				n(ACHIEVEMENTS, {
 					ach(2188, {	-- Leeeeeeeeeeeeeroy!
-						["provider"] = { "n", 10161 },	-- Rookery Whelp
+						["providers"] = {
+							{ "n",  10161 },	-- Rookery Whelp
+							{ "o", 175124 },	-- Rookery Egg
+						},
 						["timeline"] = { "added 3.0.1", "removed 6.0.2" },
 						["groups"] = {
 							title(110, {	-- Jenkins
