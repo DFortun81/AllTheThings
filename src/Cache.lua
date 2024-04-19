@@ -472,6 +472,9 @@ local fieldConverters = {
 	["questID"] = cacheQuestID,
 	["questIDA"] = cacheQuestID,
 	["questIDH"] = cacheQuestID,
+	["recipeID"] = function(group, value)
+		CacheField(group, "spellID", value);
+	end,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "requireSkill", value);	-- NOTE: professionID in Retail, investigate why
 	end,
