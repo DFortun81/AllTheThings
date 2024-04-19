@@ -4283,7 +4283,9 @@ local function SearchForLink(link)
 				-- 	linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID)
 				itemID = tonumber(itemID) or 0;
 				-- Don't use SourceID for artifact searches since they contain many SourceIDs
-				local sourceID = select(3, GetItemInfo(link)) ~= 6 and app.GetSourceID(link);
+				local _, _, type = GetItemInfo(link)
+				-- app.PrintDebug(GetItemInfo(link))
+				local sourceID = type ~= 6 and app.GetSourceID(link);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
 					_ = SearchForObject("sourceID", sourceID, nil, true);
@@ -4291,10 +4293,11 @@ local function SearchForLink(link)
 					return _;
 				else
 					-- Search for the Item ID. (an item without an appearance)
+					-- app.PrintDebug("SFL-exact",itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1)
 					local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1);
 					local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 					-- Artifacts use a different modItemID
-					if bonusCount == "" and artifactID ~= "" then
+					if type == 6 and bonusCount == "" and artifactID ~= "" then
 						exactItemID = app.GetArtifactModItemID(itemID, tonumber(artifactID), bonusID1 == 1)
 						modItemID = itemID
 						-- app.PrintDebug("artifact!",exactItemID)
