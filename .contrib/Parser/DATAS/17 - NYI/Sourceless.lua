@@ -467,7 +467,6 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		-- 7.3.0
 		q(48546),	-- Tracking Quest
 		q(49006),	--
-		q(49162),	--
 		-- 7.3.2
 		q(49619),	--
 		q(49620),	-- completed some missions on the Legion Mission Board
@@ -487,7 +486,6 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		}),
 		q(50768),	--
 		q(51692),	--
-		q(52934),	--
 		q(53650),	--
 		-- 8.1.0
 		q(53723),	--

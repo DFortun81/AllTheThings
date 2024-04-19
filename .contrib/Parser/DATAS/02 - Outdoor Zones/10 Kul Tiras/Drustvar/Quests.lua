@@ -1531,3 +1531,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.BFA, {
+		q(52934),	-- Spell 277753 & 278578 granting access to NPC 127156 during quest 48853
+	}),
+});
