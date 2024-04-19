@@ -2573,7 +2573,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 			local abbrevs = L.ABBREVIATIONS;
 			local sourcesToShow
-			for _,j in ipairs(group.g or group) do
+			local allReferences = SearchForField(paramA, paramB)
+			-- app.PrintDebug("Sources count",#allReferences,paramA,paramB)
+			for _,j in ipairs(allReferences) do
 				parent = j.parent;
 				if parent and parent.parent
 					and (showCompleted or not app.IsComplete(j))

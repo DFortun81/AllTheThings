@@ -289,11 +289,6 @@ api.Filters.Race_CurrentFaction = FilterRace_CurrentFaction
 api.Set.Race = function(active, factionOnly)
 	if active then
 		if factionOnly then
-			if FactionID == Enum.FlightPathFaction.Horde then
-				SettingsFilterRace_CurrentFaction = api.Filters.Race_Horde;
-			else
-				SettingsFilterRace_CurrentFaction = api.Filters.Race_Alliance;
-			end
 			CharacterFilters.Race = api.Filters.Race_CurrentFaction;
 		else
 			CharacterFilters.Race = api.Filters.Race;
@@ -508,6 +503,15 @@ local function RecursiveDefaultCharacterRequirementsFilter(group)
 	return true;
 end
 app.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter;
+local function RecursiveFilter(group, filterName)
+	local filter = api.Filters[filterName]
+	while group do
+		if not filter(group) then return; end
+		group = group.sourceParent or group.parent;
+	end
+	return true;
+end
+app.RecursiveFilter = RecursiveFilter;
 
 -- Caching Helpers
 local function CacheSettingsData()
@@ -531,6 +535,11 @@ end
 
 app.AddEventHandler("OnLoad", function()
 	FactionID = app.FactionID;
+	if FactionID == Enum.FlightPathFaction.Horde then
+		SettingsFilterRace_CurrentFaction = api.Filters.Race_Horde;
+	else
+		SettingsFilterRace_CurrentFaction = api.Filters.Race_Alliance;
+	end
 end)
 app.AddEventHandler("OnStartup", function()
 	-- this table is set once in ATT, but contents are volatile

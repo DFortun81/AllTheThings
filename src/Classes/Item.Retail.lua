@@ -87,9 +87,9 @@ end
 app.GetSpecsString = GetSpecsString
 -- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/1000 and bonusID/10000000
 -- or converts a raw ItemID/ModID/BonusID into the combined modItemID value
--- Ex. 12345 (ModID 5) => 12345.05
--- Ex. 87654 (ModID 23)=> 87654.23
--- Ex. 102938 (ModID 1) (BonusID 4746) => 102938.014746
+-- Ex. 12345 (ModID 5) => 12345.005
+-- Ex. 87654 (ModID 23)=> 87654.023
+-- Ex. 102938 (ModID 1) (BonusID 4746) => 102938.00104746
 local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
 	local i, m, b;
 	if t then
