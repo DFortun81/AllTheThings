@@ -4263,6 +4263,8 @@ local KeyMaps = setmetatable({
 	npcid = "creatureID",
 	o = "objectID",
 	object = "objectID",
+	r = "spellID",
+	recipe = "spellID",
 	rfp = "runeforgePowerID",
 	s = "sourceID",
 	source = "sourceID",
@@ -4333,7 +4335,7 @@ local function SearchForLink(link)
 		return;
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
-	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">",#SearchForField(KeyMaps[kind], id))
+	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">",#SearchForObject(KeyMaps[kind], id, nil, true))
 	kind = KeyMaps[kind]
 	return SearchForObject(kind, id, nil, true), kind, id
 end
