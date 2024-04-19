@@ -2504,6 +2504,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		end
 	end
 end
+app.AddSourceLinesForTooltip = AddSourceLinesForTooltip
 
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
@@ -7871,6 +7872,7 @@ function app:CreateMiniListForGroup(group)
 		-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
 		-- app.PrintTable(group.g)
 		popout:SetData(group);
+		group.isPopout = true
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		--	-- make a search for this group if it is an item/currency and not already a container for things
@@ -8396,6 +8398,12 @@ RowOnEnter = function (self)
 	-- Default top row line if nothing is generated from a link.
 	if tooltip:NumLines() < 1 then
 		tinsert(tooltipInfo, { left = reference.text });
+		-- if we have no tooltip info for this reference, we should show sources when it is within a popout (since there is otherwise)
+		-- no context to the reference
+		local isPopout = app.GetRelativeRawWithField(reference, "isPopout");
+		if isPopout then
+			app.AddSourceLinesForTooltip(tooltipInfo, refkey, reference[refkey])
+		end
 	end
 
 	-- achievement progress. If it has a measurable statistic, show it under the achievement description
