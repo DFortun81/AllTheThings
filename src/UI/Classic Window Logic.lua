@@ -1972,16 +1972,16 @@ function app:CreateWindow(suffix, settings)
 				self:Redraw();
 				self:DelayedUpdate(true);
 			end;
+			handlers.QUEST_TURNED_IN = delayedUpdateWithTrigger;
 			handlers.QUEST_ACCEPTED = delayedUpdateWithTrigger;
 			handlers.QUEST_REMOVED = delayedUpdateWithTrigger;
 			window:RegisterEvent("QUEST_ACCEPTED");
 			window:RegisterEvent("QUEST_REMOVED");
+			window:RegisterEvent("QUEST_TURNED_IN");
 			local delayedUpdate = function(self)
 				self:DelayedUpdate();
 			end;
-			handlers.QUEST_TURNED_IN = delayedUpdate;
 			handlers.QUEST_LOG_UPDATE = delayedUpdate;
-			window:RegisterEvent("QUEST_TURNED_IN");
 			window:RegisterEvent("QUEST_LOG_UPDATE");
 		end
 		if not settings.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
