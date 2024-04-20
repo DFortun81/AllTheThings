@@ -1027,6 +1027,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4136, {	-- Ribbly Screwspigot
 					["qg"] = 9544,	-- Yuka Screwspigot
+					["sourceQuest"] = 4324,	-- Yuka Screwspigot
 					["coord"] = { 66.1, 21.9, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 48,
