@@ -2431,7 +2431,8 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 			= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L.ABBREVIATIONS;
 		local sourcesToShow
-		local allReferences = SearchForField(paramA, paramB)
+		-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
+		local allReferences = app.GetRawField(paramA, paramB) or (paramA == "itemID" and app.GetRawField(paramA, GetItemIDAndModID(paramB)))
 		-- app.PrintDebug("Sources count",#allReferences,paramA,paramB)
 		for _,j in ipairs(allReferences) do
 			parent = j.parent;
