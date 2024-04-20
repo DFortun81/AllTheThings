@@ -49,19 +49,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
-						applyclassicphase(TBC_PHASE_ONE, i(34418, {	-- Scrying Wand
+						i(34418, {	-- Scrying Wand
 							["timeline"] = {
 								"added 2.3.0",
 								"removed 4.0.3",
 							},
-						})),
+						}),
 						-- #if BEFORE MOP
-						applyclassicphase(TBC_PHASE_ONE, i(34419, {	-- Thorium Flight Blade
+						i(34419, {	-- Thorium Flight Blade
 							["timeline"] = {
 								"added 2.3.0",
 								"removed 4.0.3",
 							},
-						})),
+						}),
 						-- #endif
 					},
 				}),
@@ -73,20 +73,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
-						applyclassicphase(TBC_PHASE_ONE, i(34421, {	-- Cave Crawler's Mail Treads
+						i(34421, {	-- Cave Crawler's Mail Treads
 							["timeline"] = {
 								"added 2.3.0",
 								"removed 4.0.3",
 							},
-						})),
-						-- #if BEFORE MOP
-						applyclassicphase(TBC_PHASE_ONE, i(34422, {	-- Tempered Thorium Boots
+						}),
+						i(34422, {	-- Tempered Thorium Boots
 							["timeline"] = {
 								"added 2.3.0",
 								"removed 4.0.3",
 							},
-						})),
-						-- #endif
+						}),
 					},
 				}),
 				q(27677, {	-- Archaedas, The Ancient Stone Watcher [Alliance]

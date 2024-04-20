@@ -1933,6 +1933,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Lovingly Crafted Boomstick",
+					["timeline"] = {REMOVED_4_0_3, ADDED_4_1_0},
 					["recipeID"] = 3939,
 				},
 				{
