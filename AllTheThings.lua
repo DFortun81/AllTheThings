@@ -2432,7 +2432,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		local abbrevs = L.ABBREVIATIONS;
 		local sourcesToShow
 		-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
-		local allReferences = app.GetRawField(paramA, paramB) or (paramA == "itemID" and app.GetRawField(paramA, GetItemIDAndModID(paramB)))
+		local allReferences = app.GetRawField(paramA, paramB) or (paramA == "itemID" and app.GetRawField(paramA, GetItemIDAndModID(paramB))) or app.EmptyTable
 		-- app.PrintDebug("Sources count",#allReferences,paramA,paramB)
 		for _,j in ipairs(allReferences) do
 			parent = j.parent;
@@ -7822,6 +7822,8 @@ function app:CreateMiniListForGroup(group)
 		if not group.isBaseSearchResult then
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CreateObject(group);
+			popout:SetData(group);
+			group.isPopout = true
 
 			-- app.PrintDebug(Colorize("clone",app.Colors.ChatLink))
 			-- app.PrintTable(group)
@@ -7865,6 +7867,9 @@ function app:CreateMiniListForGroup(group)
 				app.FillGroups(group);
 				app.SetSkipLevel(0);
 			end
+		else
+			popout:SetData(group);
+			group.isPopout = true
 		end
 
 		-- Insert the data group into the Raw Data table.
@@ -7872,8 +7877,6 @@ function app:CreateMiniListForGroup(group)
 		-- app.PrintTable(group)
 		-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
 		-- app.PrintTable(group.g)
-		popout:SetData(group);
-		group.isPopout = true
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		--	-- make a search for this group if it is an item/currency and not already a container for things

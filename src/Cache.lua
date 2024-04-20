@@ -884,6 +884,7 @@ local function SearchForObject(field, id, require, allowMultiple)
 		if fcache and #fcache > 0 then
 			-- use modItemID as the field for 'require' since it returned results
 			field = "modItemID"
+			require = "field"
 		else
 			local idBase = math_floor(id)
 			-- if we're NOT searching for a plain itemID and found no results, we can revert to the plain itemID
