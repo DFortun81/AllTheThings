@@ -6,14 +6,14 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	["lore"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
 	-- #endif
 	["zone-text-areaID"] = 1581,	-- "The Deadmines" now points to the Deadmines.
-	-- #if AFTER CATA
 	["coords"] = {
+		-- #if AFTER CATA
 		{ 25.6, 51.0, 55 },	-- Deadmines, The Deadmines [Westfall]
 		{ 42.6, 71.8, WESTFALL },	-- Building entrance
+		-- #else
+		{ 42.2, 82.6, WESTFALL },
+		-- #endif
 	},
-	-- #else
-	["coord"] = { 42.2, 82.6, WESTFALL },
-	-- #endif
 	["mapID"] = DEADMINES,
 	["maps"] = {
 		292,
@@ -31,7 +31,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #else
 				["coord"] = { 65.4, 21.2, STORMWIND_CITY },
 				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 14,
 				["groups"] = {
@@ -39,10 +39,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["provider"] = { "i", 1894 },	-- Miners' Union Card
 					}),
 					i(2036, {	-- Dusty Mining Gloves
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(2037, {	-- Tunneler's Boots
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -106,12 +106,14 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			q(167, {	-- Oh Brother. . .
 				["qg"] = 656,	-- Wilder Thistlenettle
-				-- #if AFTER WRATH
-				["coord"] = { 70.2, 40.8, STORMWIND_CITY },
-				-- #else
-				["coord"] = { 65.4, 21.2, STORMWIND_CITY },
-				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["coords"] = {
+					-- #if AFTER WRATH
+					{ 70.2, 40.8, STORMWIND_CITY },
+					-- #else
+					{ 65.4, 21.2, STORMWIND_CITY },
+					-- #endif
+				},
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 15,
 				["groups"] = {
@@ -119,7 +121,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["provider"] = { "i", 1875 },	-- Thistlenettle's Badge
 					}),
 					i(1893, {	-- Miner's Revenge
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -140,7 +142,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 820,	-- Scout Riell <The People's Militia>
 				["sourceQuest"] = 153,	-- Red Leather Bandanas
 				["coord"] = { 56.7, 47.4, WESTFALL },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 14,
 				["groups"] = {
@@ -154,13 +156,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						},
 					}),
 					i(6094, {	-- Piercing Axe
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(2089, {	-- Scrimshaw Dagger
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(2074, {	-- Solid Shortblade
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -192,7 +194,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
 				["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
 				["coord"] = { 56.3, 47.5, WESTFALL },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 14,
 				["groups"] = {
@@ -200,13 +202,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["provider"] = { "i", 3637 },	-- Head of VanCleef
 					}),
 					i(6087, {	-- Chausses of Westfall
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(2042, {	-- Staff of Westfall
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(2041, {	-- Tunic of Westfall
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -274,12 +276,14 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					{ "n", 1646 },	-- Baros Alexston <City Architect>
 				},
 				["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
-				-- #if AFTER WRATH
-				["coord"] = { 57.7, 47.9, STORMWIND_CITY },
-				-- #else
-				["coord"] = { 49, 30.2, STORMWIND_CITY },
-				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["coords"] = {
+					-- #if AFTER WRATH
+					{ 57.7, 47.9, STORMWIND_CITY },
+					-- #else
+					{ 49, 30.2, STORMWIND_CITY },
+					-- #endif
+				},
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,
 			}),
@@ -299,12 +303,14 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(2040, {	-- Underground Assault
 				["qg"] = 6579,	-- Shoni the Shilent
 				["sourceQuest"] = 2041,	-- Speak with Shoni
-				-- #if AFTER WRATH
-				["coord"] = { 62.8, 34.8, STORMWIND_CITY },
-				-- #else
-				["coord"] = { 55.5, 12.5, STORMWIND_CITY },
-				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["coords"] = {
+					-- #if AFTER WRATH
+					{ 62.8, 34.8, STORMWIND_CITY },
+					-- #else
+					{ 55.5, 12.5, STORMWIND_CITY },
+					-- #endif
+				},
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 15,
 				["groups"] = {
@@ -312,10 +318,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["provider"] = { "i", 7365 },	-- Gnoam Sprecklesprocket
 					}),
 					i(7607, {	-- Sable Wand
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(7606, {	-- Polar Gauntlets
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -323,36 +329,36 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		n(RARES, {
 			n(596, {	-- Brainwashed Noble
 				["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
-				-- #if BEFORE CATA
-				["coord"] = { 44.0, 78.3, WESTFALL },
-				-- #else
 				["coords"] = {
+					-- #if BEFORE CATA
+					{ 44.0, 78.3, WESTFALL },
+					-- #else
 					{ 57.4, 42.9, 55 },
 					{ 46.8, 47.8, 55 },
 					{ 61.7, 65.8, 55 },
+					-- #endif
 				},
-				-- #endif
 				["groups"] = {
 					i(1933, {	-- Staff of Conjuring
 						["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					}),
 					i(3902, {	-- Staff of Nobles
-						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					}),
-					-- #if BEFORE 4.0.3
-					i(5967),	-- Girdle of Nobility
-					-- #elseif AFTER 10.1.7
-					i(5967),	-- Girdle of Nobility
-					-- #endif
+					i(5967, {	-- Girdle of Nobility
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					}),
 				},
 			}),
 			n(626, {	-- Foreman Thistlenettle
 				["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
-				-- #if BEFORE CATA
-				["coord"] = { 42.2, 82.6, WESTFALL },
-				-- #else
-				["coord"] = { 55.8, 91.2, 55 },
-				-- #endif
+				["coords"] = {
+					-- #if BEFORE CATA
+					{ 42.2, 82.6, WESTFALL },
+					-- #else
+					{ 55.8, 91.2, 55 },
+					-- #endif
+				},
 				["groups"] = {
 					i(1875),	-- Thistlenettle's Badge
 					i(2167),	-- Foreman's Gloves
@@ -362,74 +368,71 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			n(599, {	-- Marisa du'Paige
 				["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
-				-- #if BEFORE CATA
-				["coord"] = { 42.2, 79.9, WESTFALL },
-				-- #else
 				["coords"] = {
+					-- #if BEFORE CATA
+					{ 42.2, 79.9, WESTFALL },
+					-- #else
 					{ 52.8, 54.6, 55 },
 					{ 56.2, 67.8, 55 },
 					{ 41.4, 56.6, 55 },
 					{ 29.6, 61.4, 55 },
+					-- #endif
 				},
-				-- #endif
 				["groups"] = {
 					i(3019, {	-- Noble's Robe
-						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 09.09.2023 ATT Discord
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 09.09.2023 ATT Discord
 					}),
 					i(4660, {	-- Walking Boots
-						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					}),
 				},
 			}),
 		}),
 		n(ZONE_DROPS, {
 			i(10402, {	-- Blackened Defias Boots
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cr"] = 4416,	-- Defias Strip Miner
 			}),
 			i(10401, {	-- Blackened Defias Gloves
-				-- #if AFTER 4.0.3
-				["cr"] = 48421,	-- Defias Overseer
-				-- #else
 				["crs"] = {
+					-- #if AFTER 4.0.3
+					48421,	-- Defias Overseer
+					-- #else
 					634,	-- Defias Overseer
 					4417,	-- Defias Taskmaster
+					-- #endif
 				},
-				-- #endif
 			}),
 			i(10400, {	-- Blackened Defias Leggings
-				-- #if AFTER 4.0.3
-				["cr"] = 48421,	-- Defias Overseer
-				-- #else
 				["crs"] = {
+					-- #if AFTER 4.0.3
+					48421,	-- Defias Overseer
+					-- #else
 					634,	-- Defias Overseer
 					4417,	-- Defias Taskmaster
+					-- #endif
 				},
-				-- #endif
 			}),
 			i(1951, {	-- Blackwater Cutlass
-				-- #if AFTER 4.0.3
 				["crs"] = {
+					-- #if AFTER 4.0.3
 					48522,	-- Defias Pirate
 					48521,	-- Defias Squallshaper
-				},
-				-- #else
-				["crs"] = {
+					-- #else
 					657,	-- Defias Pirate
 					1732,	-- Defias Squallshaper
+					-- #endif
 				},
-				-- #endif
 			}),
 			i(1959, {	-- Cold Iron Pick
 				["cr"] = 623,	-- Skeletal Miner
 			}),
-			-- #if BEFORE 4.0.3
 			i(1927, {	-- Deadmines Cleaver
+				["timeline"] = { REMOVED_4_0_3 },
 				["cr"] = 594,	-- Defias Henchman
 			}),
-			-- #endif
 			i(1928, {	-- Defias Mage Staff
-				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				-- #if BEFORE 4.0.3
 				["cr"] = 1726,	-- Defias Magician
 				-- #elseif AFTER 10.1.7
@@ -441,7 +444,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1925, {	-- Defias Rapier
-				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 1725,	-- Defias Watchman
 				-- #elseif AFTER 10.1.7
@@ -450,7 +453,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1943, {	-- Goblin Mail Leggings
-				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 3947,	-- Goblin Shipbuilder
 				-- #elseif AFTER 10.1.7
@@ -462,7 +465,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1936, {	-- Goblin Screwdriver
-				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 622,	-- Goblin Engineer
 				-- #elseif AFTER 10.1.7
@@ -471,7 +474,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1944, {	-- Metalworking Gloves
-				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 1731,	-- Goblin Craftsman
 				-- #elseif AFTER 10.1.7
@@ -505,35 +508,34 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["description"] = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
 				-- #endif
 			}),
-			i( 915),	-- Red Silk Bandana
+			i(915),	-- Red Silk Bandana
 			i(1929, {	-- Silk-threaded Trousers
-				-- #if AFTER 4.0.3
 				["crs"] = {
+					-- #if AFTER 4.0.3
 					48417,	-- Defias Blood Wizard
 					48418,	-- Defias Envoker
-				},
-				-- #else
-				["crs"] = {
+					-- #else
 					1729,	-- Defias Evoker
 					4418,	-- Defias Wizard
+					-- #endif
 				},
-				-- #endif
 			}),
 			i(4676, {	-- Skeletal Gauntlets
 				["cr"] = 624,	-- Undead Excavator
 			}),
 			i(1930, {	-- Stonemason Cloak
+				["crs"] = {
 				-- #if AFTER 4.0.3
-				["cr"] = 48419,	-- Defias Miner
+				48419,	-- Defias Miner
 				-- #else
-				["cr"] = 598,	-- Defias Miner
+				598,	-- Defias Miner
 				-- #endif
+				},
 			}),
-			-- #if BEFORE 4.0.3
 			i(1934, {	-- Stonemason Trousers [Classic] / Hogger's Trousers [CATA+]
+				["timeline"] = { REMOVED_4_0_3 },
 				["cr"] = 636,	-- Defias Blackguard
 			}),
-			-- #endif
 			i(120138, {	-- Tome of Polymorph: Monkey (CI!)
 				["timeline"] = { ADDED_6_0_2 },
 				["crs"] = {
@@ -544,14 +546,16 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			i(1926, {	-- Weighted Sap
-				-- #if AFTER 4.0.3
-				["cr"] = 48420,	-- Defias Digger
-				-- #else
-				["cr"] = 824,	-- Defias Digger
-				-- #endif
+				["crs"] = {
+					-- #if AFTER 4.0.3
+					48420,	-- Defias Digger
+					-- #else
+					824,	-- Defias Digger
+					-- #endif
+				},
 			}),
 			i(1945, {	-- Woodworking Gloves
-				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 641,	-- Goblin Woodcarver
 				-- #elseif AFTER 10.1.7
@@ -560,11 +564,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
-				-- #if BEFORE 4.0.3
-				["cr"] = 657,	-- Defias Pirate
-				-- #else
-				["cr"] = 48522,	-- Defias Pirate
-				-- #endif
+				["crs"] = {	
+					-- #if BEFORE 4.0.3
+					657,	-- Defias Pirate
+					-- #else
+					48522,	-- Defias Pirate
+					-- #endif
+				},
 			}),
 		}),
 		-- #if AFTER CATA
@@ -572,7 +578,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		-- #endif
 			n(3586, {	-- Miner Johnson
 				["description"] = "This is a rare that is not always present.",
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				-- #if BEFORE 4.0.3
 				["groups"] = {
 					i(5443),	-- Gold-plated Buckler
@@ -581,7 +587,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			n(644, {	-- Rhahk'Zor <The Foreman>
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				-- #if BEFORE 4.0.3
 				["groups"] = {
 					i(5187, {	-- Rhahk'Zor's Hammer [Classic] / Foe Reaper [TBC+]
@@ -594,7 +600,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			n(642, {	-- Sneed's Shredder <Lumbermaster>
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(7365),	-- Gnoam Sprecklesprocket
 					-- #if BEFORE 4.0.3
@@ -604,21 +610,21 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			n(643, {	-- Sneed
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(5194, {	-- Taskmaster Axe
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
-					-- #if BEFORE 4.0.3
-					i(5195),	-- Gold-flecked Gloves
-					-- #endif
+					i(5195, {	-- Gold-flecked Gloves
+						["timeline"] = { REMOVED_4_0_3 },
+					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(210178)),	-- Schematic: Shredder Autosalvage Unit (RECIPE!)
 					-- #endif
 				},
 			}),
 			n(1763, {	-- Gilnid <The Smelter>
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				-- #if BEFORE 4.0.3
 				["groups"] = {
 					i(5199),	-- Smelting Pants
@@ -627,10 +633,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			n(646, {	-- Mr. Smite <The Ship's First Mate>
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(7230, {	-- Smite's Mighty Hammer
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					-- #if BEFORE 4.0.3
 					i(5196),	-- Smite's Reaver
@@ -639,19 +645,19 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			n(647, {	-- Captain Greenskin
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					-- #if BEFORE 4.0.3
 					i(5201),	-- Emberstone Staff
 					i(5200),	-- Impaling Harpoon
 					-- #endif
 					i(10403, {	-- Blackened Defias Belt
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
 			n(639, {	-- Edwin VanCleef <Defias Kingpin>
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					-- #if BEFORE 4.0.3
 					ach(628, {	-- Deadmines
@@ -671,17 +677,15 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if BEFORE 4.0.3
 					i(5191),	-- Cruel Barb
 					i(5193),	-- Cape of the Brotherhood
-					-- #endif
-					i(10399, {	-- Blackened Defias Armor
-						["timeline"] = { "removed 4.0.3" },
-					}),
-					-- #if BEFORE 4.0.3
 					i(5202),	-- Corsair's Overshirt
 					-- #endif
+					i(10399, {	-- Blackened Defias Armor
+						["timeline"] = { REMOVED_4_0_3 },
+					}),
 				},
 			}),
 			n(645, {	-- Cookie <The Ship's Cook>
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				-- #if BEFORE 4.0.3
 				["groups"] = {
 					i(8490),	-- Siamese Cat (PET!)
@@ -857,9 +861,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	DEADMINES_INSTANCE,
 }));
--- #endif
 
--- #if AFTER 6.0.1
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.WOD, {
 		inst(63, {	-- Deadmines
