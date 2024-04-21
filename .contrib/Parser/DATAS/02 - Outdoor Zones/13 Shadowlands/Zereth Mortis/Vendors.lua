@@ -201,9 +201,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 34.6, 64, ZERETH_MORTIS },
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
-					{"find", "headerID", LEGENDARIES},		-- Select only the LEGENDARIES Headers.
-					{"extract","encounterID"},					-- Only Encounter Headers
-					{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+					{"find", "difficultyID", DIFFICULTY.RAID.MULTI.ALL},	-- Legendaries are listed under All Difficulties
+					{"extract","runeforgePowerID"},		-- Get all Legendaries
 				},
 			}),
 			n(185092, {	-- Shade of Irik-tu

@@ -33,11 +33,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 53.8, 50.1, DUN_MOROGH },
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63596},			-- Audrey Burnhep
+				{"select", "npcID", 63596},				-- Audrey Burnhep
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -45,11 +41,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63596},			-- Audrey Burnhep
+				{"select", "npcID", 63596},				-- Audrey Burnhep
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -57,11 +49,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 40.2, 66, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63596},			-- Audrey Burnhep
+				{"select", "npcID", 63596},				-- Audrey Burnhep
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -69,11 +57,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 55.2, 51.2, TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63596},			-- Audrey Burnhep
+				{"select", "npcID", 63596},				-- Audrey Burnhep
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -81,11 +65,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 50.1, 20.2, DARKSHORE },
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63596},			-- Audrey Burnhep
+				{"select", "npcID", 63596},				-- Audrey Burnhep
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -93,11 +73,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
 			["races"] = HORDE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63626},			-- Varzok
+				{"select", "npcID", 63626},				-- Varzok
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -105,11 +81,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
 			["races"] = HORDE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63626},			-- Varzok
+				{"select", "npcID", 63626},				-- Varzok
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -117,11 +89,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 36.8, 77.1, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63626},			-- Varzok
+				{"select", "npcID", 63626},				-- Varzok
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -129,11 +97,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 52.7, 41.3, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63626},			-- Varzok
+				{"select", "npcID", 63626},				-- Varzok
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
@@ -141,11 +105,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 49.2, 56.1, MULGORE },
 			["races"] = HORDE_ONLY,
 			["sym"] = {
-				{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "headerID", VENDORS},			-- Select Vendor Header
-				{"pop"},								-- Discard Header and acquire all of their children.
-				{"where", "creatureID", 63626},			-- Varzok
+				{"select", "npcID", 63626},				-- Varzok
 				{"pop"},								-- Discard Header and acquire all of their children.
 			},
 		}),
