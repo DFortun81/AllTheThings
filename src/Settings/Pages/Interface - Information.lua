@@ -47,7 +47,7 @@ local BindTypes = {
 	ITEM_BIND_QUEST,
 }
 local ConversionMethods = setmetatable({
-	filterID = function(val)
+	filterID = function(val, reference)
 		return L.FILTER_ID_TYPES[val]
 	end,
 	b = function(val)
@@ -195,7 +195,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		-- Completed By for Quests
 		local id = reference.questID;
 		if id then
-			for guid,character in pairs(ATTCharacterData) do
+			for _,character in pairs(ATTCharacterData) do
 				if character.Quests and character.Quests[id] then
 					tinsert(knownBy, character);
 				end
@@ -273,7 +273,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				end
 
 				-- All of this can be stored together.
-				BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY, knownBy);
+				BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY);
 			end
 		end
 	end
@@ -302,6 +302,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
 					tinsert(tooltipInfo, {
+						---@diagnostic disable-next-line: undefined-field
 						left = ("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), "")),
 						right = data[2] .. " / " .. data[3],
 					});
@@ -456,7 +457,7 @@ local InformationTypes = {
 			if coordCount < 1 then return; end
 
 			local maxCoords = 10;
-			local currentMapID, j, str = app.CurrentMapID, 0;
+			local currentMapID, j, str = app.CurrentMapID, 0, nil;
 			local showMapID = app.Settings:GetTooltipSetting("mapID");
 			for i,coord in ipairs(coords) do
 				local x, y = coord[1], coord[2];
@@ -529,7 +530,7 @@ local InformationTypes = {
 			local maps = reference.maps;
 			if maps and #maps > 0 then
 				local currentMapID = app.CurrentMapID;
-				local mapNames,uniques,name = {},{};
+				local mapNames,uniques,name = {},{},nil;
 				local rootMapID = reference.mapID;
 				if rootMapID then uniques[app.GetMapName(rootMapID) or rootMapID] = true; end
 				for i,mapID in ipairs(maps) do
@@ -815,7 +816,7 @@ local InformationTypes = {
 				if r then
 					local races_tbl = {}
 					-- temp ref with .raceID of only a single race so we can simply use TryColorizeName
-					local temp_ref, raceName = {}
+					local temp_ref, raceName = {}, nil
 					local usecolors = app.Settings:GetTooltipSetting("UseMoreColors");
 					for i,raceID in ipairs(r) do
 						temp_ref.raceID = raceID
@@ -943,7 +944,7 @@ settings.CreateInformationType("modItemID", {
 })
 
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
-local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
+local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {}, nil, nil;
 local function SortInformationTypesByLocalizedName(a,b)
 	return a.textLower < b.textLower;
 end

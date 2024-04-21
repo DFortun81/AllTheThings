@@ -3,10 +3,10 @@ local appName, app = ...;
 local contains, MergeClone = app.contains, app.MergeClone;
 
 -- Global locals
-local ipairs, pairs, tinsert =
-	  ipairs, pairs, tinsert;
-local GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList =
-	  GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList;
+local ipairs, pairs, select, tinsert =
+	  ipairs, pairs, select, tinsert;
+local GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetCategoryNumAchievements =
+	  GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetCategoryNumAchievements;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -160,10 +160,10 @@ app:CreateWindow("Achievements", {
 				if GetCategoryList and GetCategoryNumAchievements then
 					local unsorted = app:GetWindow("Unsorted");
 					for _,categoryID in ipairs(GetCategoryList()) do
-						local numAchievements = GetCategoryNumAchievements(categoryID);
+						local numAchievements = GetCategoryNumAchievements(categoryID, true);
 						if numAchievements and numAchievements > 0 then
 							for i=1,numAchievements,1 do
-								local achievementID, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe, earnedBy, isStatistic = GetAchievementInfo(categoryID, i);
+								local achievementID, _, _, _, _, _, _, _, _, _, _, _, _, _, isStatistic = GetAchievementInfo(categoryID, i);
 								if achievementID and not isStatistic and not data.achievements[achievementID] then
 									local achievement = app.CreateAchievement(achievementID);
 									data.achievements[i] = achievement;
@@ -176,8 +176,8 @@ app:CreateWindow("Achievements", {
 									if numCriteria > 0 then
 										local g = {};
 										for j=1,numCriteria,1 do
-											local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID = GetAchievementCriteriaInfo(achievementID, j);
-											local criteriaObject = app.CreateAchievementCriteria(criteriaID);
+											local criteriaUID = select(10, GetAchievementCriteriaInfo(achievementID, j));
+											local criteriaObject = app.CreateAchievementCriteria(criteriaUID);
 											criteriaObject.parent = achievement;
 											tinsert(g, criteriaObject);
 										end

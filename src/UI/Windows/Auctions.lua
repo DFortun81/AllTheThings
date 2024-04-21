@@ -23,6 +23,7 @@ app:CreateWindow("Auctions", {
 					-- Process the Auction
 					local link = _GetAuctionItemLink("list", index);
 					if link then
+						---@diagnostic disable-next-line: undefined-field
 						local _,itemID = (":"):split(link:match("item[%-?%d:]+"));
 						auctionData[tonumber(itemID)] = 1;
 						--print("ProcessAuctions", index, link, itemID);
@@ -330,7 +331,7 @@ app:CreateWindow("Auctions", {
 						end
 						if any then
 							-- Search the ATT Database for information related to the auction links (items, species, etc)
-							local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
+							local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {}, nil, nil, nil, nil, nil, nil;
 							for itemID,unused in pairs(auctionData) do
 								searchResults = app.SearchForField("itemID", itemID);
 								if searchResults and #searchResults > 0 then

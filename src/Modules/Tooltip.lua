@@ -1129,7 +1129,6 @@ else
 	ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
 	ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 
-	---@diagnostic disable-next-line: undefined-global
 	local WorldMapTooltip = WorldMapTooltip;
 	if WorldMapTooltip then
 		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);

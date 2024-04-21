@@ -123,7 +123,7 @@ if app.GameBuildVersion > 90000 then
 	end
 
 	-- Automated Content toggles
-	local customCollects, ccCheckbox = L.CUSTOM_COLLECTS_REASONS
+	local customCollects, ccCheckbox = L.CUSTOM_COLLECTS_REASONS, nil
 	local previousCheckbox = textAutomatedContentExplain
 	local xInitalOffset, yInitialOffset, inital = -2, -2, true
 	-- Insane loop
@@ -158,7 +158,7 @@ if app.GameBuildVersion > 90000 then
 		if inital then
 			ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0)
 			ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset)
-			inital = nil
+			inital = false
 		else
 			ccCheckbox:AlignBelow(previousCheckbox)
 		end
@@ -197,7 +197,7 @@ if app.GameBuildVersion > 90000 then
 		if inital then
 			ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0)
 			ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset)
-			inital = nil
+			inital = false
 		else
 			ccCheckbox:AlignBelow(previousCheckbox)
 		end

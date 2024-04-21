@@ -43,6 +43,10 @@ local function SortByTextAndPriority(a, b)
 		return false;
 	end
 end
+local function IsRaidLeader()
+	---@diagnostic disable-next-line: param-type-mismatch
+	return UnitIsGroupLeader("player", "raid");
+end
 
 -- Loot Method
 if GetLootMethod and SetLootMethod then
@@ -73,8 +77,10 @@ if GetLootMethod and SetLootMethod then
 	local setLootMethod = function(self, button)
 		if IsInGroup() then
 			if self.ref.id == "master" then
+				---@diagnostic disable-next-line: redundant-parameter
 				SetLootMethod(self.ref.id, UnitName("player"));
 			else
+				---@diagnostic disable-next-line: redundant-parameter
 				SetLootMethod(self.ref.id);
 			end
 		end
@@ -251,7 +257,7 @@ app:CreateWindow("RaidAssistant", {
 					end,
 					OnUpdate = function(data)
 						data.saved = AutoReset;
-						data.visible = not IsInGroup() or UnitIsGroupLeader("player", "raid");
+						data.visible = not IsInGroup() or IsRaidLeader();
 						if data.visible and AutoReset and not isBusy() then
 							ResetInstances();
 						end
@@ -556,7 +562,7 @@ app:CreateWindow("RaidAssistant", {
 					title = LOOT_METHOD,
 					priority = 1,
 					OnClick = function(row, button)
-						if UnitIsGroupLeader("player", "raid") then
+						if IsRaidLeader() then
 							self.data = lootmethod;
 							self:Update(true);
 						end
@@ -601,6 +607,7 @@ app:CreateWindow("RaidAssistant", {
 											parent = data,
 											OnUpdate = app.AlwaysShowUpdate,
 											OnClick = function(row, button)
+												---@diagnostic disable-next-line: redundant-parameter
 												SetLootMethod("master", row.ref.name);
 												self:Reset();
 												return true;
@@ -622,7 +629,7 @@ app:CreateWindow("RaidAssistant", {
 					priority = 2,
 					description = "This player is currently the Master Looter.",
 					OnClick = function(row, button)
-						if UnitIsGroupLeader("player", "raid") then
+						if IsRaidLeader() then
 							self.data = lootmasters;
 							self:Update(true);
 						end
@@ -695,7 +702,7 @@ app:CreateWindow("RaidAssistant", {
 					priority = 3,
 					visible = true,
 					OnClick = function(row, button)
-						if UnitIsGroupLeader("player", "raid") then
+						if IsRaidLeader() then
 							self.data = lootthreshold;
 							self:Update(true);
 						end
@@ -825,7 +832,7 @@ app:CreateWindow("RaidAssistant", {
 						icon = "Interface\\Icons\\Spell_Shadow_Teleport",
 						priority = 17,
 						OnClick = function(row, button)
-							LFGTeleport(IsInLFGDungeon());
+							LFGTeleport(not not IsInLFGDungeon());
 							self:Update();
 							return true;
 						end,

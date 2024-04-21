@@ -583,7 +583,6 @@ app.SaveHarvestSource = function(data)
 		end
 		if itemID < 1 then return end
 		app.PrintDebug("Harvest",sourceID,"<=",itemID,app:SearchLink(data),data.link or data.text or data.hash)
-		---@diagnostic disable-next-line: undefined-global
 		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
 end

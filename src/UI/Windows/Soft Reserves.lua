@@ -52,7 +52,7 @@ local function SendResponseMessage(msg, player)
 end
 
 -- Module locals
-local SoftReservesByItemID, SoftReservesDirty, SoftReserveWindow, UpdateSoftReserve, IsPrimaryLooter = {};
+local SoftReservesByItemID, SoftReservesDirty, SoftReserveWindow, UpdateSoftReserve, IsPrimaryLooter = {}, nil, nil, nil, nil;
 local PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 	-- Let WoW parse it.
 	local guid = UnitGUID(info);
