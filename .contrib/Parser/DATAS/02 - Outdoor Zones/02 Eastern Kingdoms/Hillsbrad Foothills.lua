@@ -2892,7 +2892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				q(535, {	-- Valik (Alterac Mountains)
 					["qg"] = 2333,	-- Henchman Valik
-					["sourceQuest"] = 533,	-- Infiltration
+					["altQuests"] = { 533 },	-- Infiltration (Can only be completed while on this quest)
 					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
 					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["timeline"] = { "removed 4.0.3" },
