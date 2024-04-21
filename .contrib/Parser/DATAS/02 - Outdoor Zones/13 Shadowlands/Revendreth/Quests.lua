@@ -1189,6 +1189,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(58073, {	-- Favor: Portrait of the Sire
 				["provider"] = { "i", 173711 },	-- Portrait of the Sire
 			}),
+			q(58079, {	-- Favor: Pristine Dredbat Fang
+				["provider"] = { "i", 173719 },	-- Pristine Dredbat Fang
+				["crs"] = {
+					169154,	-- Famished Fangling
+					161206,	-- Fanged Dredbat
+					163893,	-- Fanged Dredbat
+					161207,	-- Fangling
+					156077,	-- Fiendish Terrorwing
+					165290,	-- Harika the Horrid
+					158976,	-- Shrieking Evedweller
+					156395,	-- Starving Dredbat
+				},
+			}),
 			q(60889, {	-- Favor: She Had a Stone Heart
 				["provider"] = { "i", 180453 },	-- She Had a Stone Heart
 			}),

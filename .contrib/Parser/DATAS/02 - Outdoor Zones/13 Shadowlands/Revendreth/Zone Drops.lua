@@ -195,9 +195,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177792),	-- Night Guardian Legguards
 			i(177793),	-- Night Guardian Pauldrons
 			i(173719, {	-- Pristine Dredbat Fang
-				["sourceQuests"] = { 58062 },	-- A Very Special Guest
-				["questID"] = 58079,	-- Favor: Pristine Dredbat Fang
-				["isDaily"] = true,
 				["crs"] = {
 					169154,	-- Famished Fangling
 					161206,	-- Fanged Dredbat
