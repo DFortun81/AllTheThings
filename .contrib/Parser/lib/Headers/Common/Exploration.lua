@@ -12,13 +12,5 @@ EXPLORATION = createHeader({
 	},
 });
 explorationHeader = function(g)
-	-- #if EXPLORATION
 	return n(EXPLORATION, g);
-	-- #else
-	return n(EXPLORATION, {
-		-- Make this go way in retail... for now!
-		-- CRIEVE NOTE: I would like to add exploration support to Retail at some point.
-		["timeline"] = { "added 1000.0.1" },
-	});
-	-- #endif
 end
