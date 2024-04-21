@@ -104,6 +104,17 @@ root(ROOTS.Zones, {
 					ach(8725, {	-- Eyes On The Ground
 						crit(24011, { 	-- Giant Clam
 							["provider"] = {"o",223193},
+							["coords"] = {
+								{ 16.8, 62.4, TIMELESS_ISLE },
+								{ 16.8, 62.5, TIMELESS_ISLE },
+								{ 18.4, 53.9, TIMELESS_ISLE },
+								{ 18.5, 53.8, TIMELESS_ISLE },
+								{ 18.7, 20.3, TIMELESS_ISLE },
+								{ 25.5, 14.7, TIMELESS_ISLE },
+								{ 25.6, 14.4, TIMELESS_ISLE },
+								{ 29.7, 21.8, TIMELESS_ISLE },
+								{ 47.8, 87.9, TIMELESS_ISLE },
+							},
 						}),
 						crit(24012, {	-- Glinting Sand
 							["provider"] = {"o",222684},
