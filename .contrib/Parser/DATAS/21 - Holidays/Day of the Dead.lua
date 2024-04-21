@@ -146,11 +146,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			}),
 			q(13952, {	-- The Grateful Dead — Stormwind City, Human
 				["qg"] = 34435,	-- Cheerful Human Spirit
-				-- #if AFTER CATA
-				["coord"] = { 47.6, 26.6, STORMWIND_CITY },
-				-- #else
-				["coord"] = { 39.4, 61.1, ELWYNN_FOREST },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 47.6, 26.6, STORMWIND_CITY },
+					-- #else
+					{ 39.4, 61.1, ELWYNN_FOREST },
+					-- #endif
+				},
 				["races"] = { HUMAN },
 			}),
 			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all

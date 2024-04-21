@@ -1278,11 +1278,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = {
 				objective(1, {	-- Chillwind Lieutenant slain
 					["provider"] = { "n", 26204 },	-- Chillwind Lieutenant
-					-- #if BEFORE CATA
-					["coord"] = { 21, 22, STRANGLETHORN_VALE },
-					-- #else
-					["coord"] = { 21.6, 41.4, NORTHERN_STRANGLETHORN },
-					-- #endif
+					["coords"] = {
+						-- #if BEFORE CATA
+						{ 21, 22, STRANGLETHORN_VALE },
+						-- #else
+						{ 21.6, 41.4, NORTHERN_STRANGLETHORN },
+						-- #endif
+					},
 				}),
 				i(23247),	-- Burning Blossom
 			},
@@ -1696,11 +1698,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = bubbleDown({ ["isYearly"] = true, ["races"] = ALLIANCE_ONLY }, {
 				q(11764, {	-- Desecrate this Fire! — Arathi Highlands
 					["provider"] = { "o", 187947 },	-- Horde Bonfire
-					-- #if AFTER CATA
-					["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 74.0, 41.7, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 69.0, 43.1, ARATHI_HIGHLANDS },
+						-- #else
+						{ 74.0, 41.7, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 				}),
 				q(11765, {	-- Desecrate this Fire! — Ashenvale
 					["provider"] = { "o", 187948 },	-- Horde Bonfire

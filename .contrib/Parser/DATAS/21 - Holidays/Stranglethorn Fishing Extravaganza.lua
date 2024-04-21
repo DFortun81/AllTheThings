@@ -49,11 +49,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 		n(QUESTS, {
 			q(8194, {	-- Apprentice Angler
 				["qg"] = 15078,	-- Jang <Fishmaster Apprentice>
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["cost"] = {
@@ -84,11 +86,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 			q(8193, {	-- Master Angler / Grand Prize (after 5.1.0)
 				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["cost"] = {
@@ -103,11 +107,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 			q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
 				["qg"] = 15079,	-- Fishbot 5000
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["cost"] = {
@@ -119,11 +125,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 			q(8224, {	-- Rare Fish - Dezian Angelfish
 				["qg"] = 15079,	-- Fishbot 5000
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["cost"] = {
@@ -136,11 +144,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			q(8221, {	-- Rare Fish - Keefer's Angelfish
 				["qg"] = 15079,	-- Fishbot 5000
 				["requireSkill"] = FISHING,
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19805, 1 },	-- Keefer's Angelfish
@@ -152,11 +162,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			-- #if AFTER 5.1.0
 			q(32435, {	-- Second Prize
 				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["cost"] = {
@@ -171,11 +183,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 			q(32436, {	-- Third Prize
 				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["cost"] = {
@@ -189,11 +203,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			-- #endif
 			q(44765, {	-- Stranglethorn Fishing Extravaganza
 				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				-- #if AFTER CATA
-				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.4, 76.9, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["timeline"] = { "added 7.1.0.22900" },
 				["requireSkill"] = FISHING,
 				["isWorldQuest"] = true,

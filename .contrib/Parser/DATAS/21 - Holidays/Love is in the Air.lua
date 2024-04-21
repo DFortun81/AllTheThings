@@ -2180,11 +2180,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", LOVE_TOKEN, 20 } },	-- 20x Love Token
 					["groups"] = {
 						ach(1694, {	-- Lovely Luck Is On Your Side
+							["providers"] = {
 							-- #if AFTER 7.2.5.24116
-							["provider"] = { "i", 151770 },	-- Lovely Black Dress
+							{ "i", 151770 },	-- Lovely Black Dress
 							-- #else
-							["provider"] = { "i", 22279 },	-- Lovely Black Dress
+							{ "i", 22279 },	-- Lovely Black Dress
 							-- #endif
+							},
 						}),
 						i(151770, {	-- Lovely Black Dress
 							["timeline"] = { "added 7.2.5.24116" },

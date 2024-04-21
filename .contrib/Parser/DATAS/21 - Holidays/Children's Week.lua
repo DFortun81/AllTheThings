@@ -389,11 +389,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				4822,	-- You Scream, I Scream... [Alliance - Human] (removed)
 				-- #endif
 			},
-			-- #if AFTER CATA
-			["coord"] = { 56.31, 53.99, STORMWIND_CITY },	-- Orphan Matron Nightingale
-			-- #else
-			["coord"] = { 47.2, 38.4, STORMWIND_CITY },	-- Orphan Matron Nightingale
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 56.31, 53.99, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				-- #else
+				{ 47.2, 38.4, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				-- #endif
+			},
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -421,13 +423,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 			},
 			-- #if AFTER CATA
-			["coord"] = { 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
 			},
-			-- #else
-			["coord"] = { 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
 			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
+				-- #else
+				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
+				-- #endif
+			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -598,17 +604,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(60, 60, 10),
 		}),
 		q(1468, {	-- Children's Week [Alliance - Human - START]
-			-- #if AFTER CATA
-			["qg"] = 51988,	-- Orphan Matron Nightingale
-			["coord"] = { 56.31, 53.99, STORMWIND_CITY },	-- Orphan Matron Nightingale
-			-- #else
-			["qg"] = 14450,	-- Orphan Matron Nightingale
-			-- #if AFTER WRATH
-			["coord"] = { 56.3, 54.0, STORMWIND_CITY },	-- Orphan Matron Nightingale
-			-- #else
-			["coord"] = { 47.4, 38.6, STORMWIND_CITY },	-- Orphan Matron Nightingale
-			-- #endif
-			-- #endif
+			["providers"] = {
+				-- #if AFTER CATA
+				{ "n", 51988 },	-- Orphan Matron Nightingale
+				-- #else
+				{ "n", 14450 },	-- Orphan Matron Nightingale
+				-- #endif
+			},
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 56.3, 54.0, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				-- #else
+				{ 47.4, 38.6, STORMWIND_CITY },	-- Orphan Matron Nightingale
+				-- #endif
+			},
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -633,15 +642,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(60, 60, 10),
 		}),
 		q(172, {	-- Children's Week [Horde - Orc - START]
+
+			["providers"] = {
+				-- #if AFTER CATA
+				{ "n", 51989 },	-- Orphan Matron Battlewall
+				-- #else
+				{ "n", 14451 },	-- Orphan Matron Battlewall
+				-- #endif
+			},
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
+				-- #else
+				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
+				-- #endif
+			},
 			-- #if AFTER CATA
-			["qg"] = 51989,	-- Orphan Matron Battlewall
-			["coord"] = { 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
 			},
-			-- #else
-			["qg"] = 14451,	-- Orphan Matron Battlewall
-			["coord"] = { 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
 			-- #endif
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,

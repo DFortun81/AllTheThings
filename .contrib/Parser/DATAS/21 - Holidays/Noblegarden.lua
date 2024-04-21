@@ -244,11 +244,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["rank"] = 100,
 		}),
 		ach(2436, {	-- Desert Rose
-			-- #if AFTER 9.1.5.40871
-			["provider"] = { "i", 188694 },	-- Spring Florist's Pouch
-			-- #else
-			["provider"] = { "i", 44800 },	-- Spring Robes
-			-- #endif
+			["providers"] = {
+				-- #if AFTER 9.1.5.40871
+				{ "i", 188694 },	-- Spring Florist's Pouch
+				-- #else
+				{ "i", 44800 },	-- Spring Robes
+				-- #endif
+			},
 			["timeline"] = { "added 3.0.1" },
 			["groups"] = {
 				crit(9139, {	-- Desolace
