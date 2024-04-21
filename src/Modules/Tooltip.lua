@@ -633,7 +633,7 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 end
 local function AttachTooltipInformation(tooltip, tooltipInfo)
 	if tooltipInfo and #tooltipInfo > 0 then
-		-- if app.Debugging then app.PrintTable(tooltipInfo) end
+		-- if app.Debugging then app.PrintDebug("ATI") app.PrintTable(tooltipInfo) end
 		for _,entry in ipairs(tooltipInfo) do
 			AttachTooltipInformationEntry(tooltip, entry);
 		end
@@ -928,6 +928,10 @@ if TooltipDataProcessor then
 			local knownSearchField = TooltipTypes[ttType];
 			if not knownSearchField then
 				-- other ways to search
+				if app.ActiveRowReference and ttType == Enum_TooltipDataType.Spell then
+					-- allow spell tooltip information when it's an ATT row
+					knownSearchField = "spellID";
+				end
 				if ttType == Enum_TooltipDataType.Mount then
 					knownSearchField = "spellID";
 					ttId = select(2, C_MountJournal.GetMountInfoByID(ttId));

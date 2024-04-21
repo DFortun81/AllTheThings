@@ -8353,7 +8353,7 @@ RowOnEnter = function (self)
 		tooltip.ATT_IsRefreshing = true;
 		tooltip:ClearATTReferenceTexture();
 	end
-	--print("RowOnEnter", "Rebuilding...");
+	-- app.PrintDebug("RowOnEnter", "Rebuilding...");
 
 	-- Always display tooltip data when viewing information from our windows.
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
@@ -8389,7 +8389,7 @@ RowOnEnter = function (self)
 				if not questReplace then questReplace = true end
 			end
 			-- app.PrintDebug("Link:", link:gsub("|","\\"));
-			-- app.PrintDebug("Link Result!", result, refkey, reference.__type);
+			-- app.PrintDebug("Link Result!", result, refkey, reference.__type,"TT lines",tooltip:NumLines());
 		-- elseif link then app.PrintDebug("Ignore tooltip link",link) else
 		end
 
