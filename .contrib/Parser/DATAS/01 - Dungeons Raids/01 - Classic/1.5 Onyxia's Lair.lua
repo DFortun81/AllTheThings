@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(18406),	-- Onyxia Blood Talisman
 					},
 				})),
-				q(7507, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Nostro's Compendium
+				q(7507, bubbleDown({ ["timeline"] = { "removed 3.3.0" } }, {	-- Nostro's Compendium
 					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["classes"] = { WARRIOR, PALADIN },
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(18513),	-- A Dull and Flat Elven Blade
 					},
 				})),
-				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {    -- Stave of the Ancients
+				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {		-- Stave of the Ancients
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
@@ -246,7 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(7508, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- The Forging of Quel'Serrar
+				q(7508, bubbleDown({ ["timeline"] = { "removed 3.3.0" } }, {	-- The Forging of Quel'Serrar
 					["providers"] = {
 						{ "n", 14368 },	-- Lorekeeper Lydros
 						{ "i", 18513 },	-- A Dull and Flat Elven Blade
@@ -256,7 +256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
-				q(7509, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- The Forging of Quel'Serrar
+				q(7509, bubbleDown({ ["timeline"] = { "removed 3.3.0" } }, {	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
 					["maps"] = { DIRE_MAUL },
