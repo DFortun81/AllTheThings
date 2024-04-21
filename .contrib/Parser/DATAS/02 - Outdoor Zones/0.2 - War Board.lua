@@ -238,6 +238,7 @@ root(ROOTS.Zones, {
 			}),
 			q(28509, {	-- Warchief's Command: Tanaris!
 				["isBreadcrumb"] = true,
+				["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6 },	-- possibly earlier, but currently unable to be obtained
 			}),
 			q(39182, {	-- Warchief's Command: Terokkar Forest!
 				["isBreadcrumb"] = true,
