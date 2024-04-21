@@ -9,11 +9,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2437,	-- Ragefire Chasm
 		-- #endif
-		-- #if AFTER CATA
-		["coord"] = { 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]
-		-- #else
-		["coord"] = { 50.6, 51.6, ORGRIMMAR },
-		-- #endif
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]
+			-- #else
+			{ 50.6, 51.6, ORGRIMMAR },
+			-- #endif
+		},
 		["mapID"] = RAGEFIRE_CHASM,
 		["lvl"] = lvlsquish(13, 13, 7),
 		["groups"] = {

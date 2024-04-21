@@ -580,11 +580,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2928, {	-- Gyrodrillmatic Excavationators
 					["qg"] = 6579,	-- Shoni the Shilent
-					-- #if AFTER WRATH
-					["coord"] = { 62.8, 34.8, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 55.5, 12.5, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 62.8, 34.8, STORMWIND_CITY },
+						-- #else
+						{ 55.5, 12.5, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -647,11 +649,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2950, {	-- Nogg's Ring Redo
 					["qg"] = 3412,	-- Nogg <Expert Engineer>
 					["sourceQuest"] = 2949,	-- Return of the Ring [Horde]
-					-- #if AFTER CATA
-					["coord"] = { 56.7, 57.0, ORGRIMMAR },
-					-- #else
-					["coord"] = { 75.8, 25.2, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 56.7, 57.0, ORGRIMMAR },
+						-- #else
+						{ 75.8, 25.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 					["cost"] = {
@@ -924,11 +928,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2923, {	-- Tinkmaster Overspark
 					["qg"] = 7917,	-- Brother Sarno
-					-- #if AFTER WRATH
-					["coord"] = { 51.6, 48.6, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 40.6, 30.0, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 51.6, 48.6, STORMWIND_CITY },
+						-- #else
+						{ 40.6, 30.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1198,11 +1204,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(80181, {	-- Gyrodrillmatic Excavationators
 							["qg"] = 6579,	-- Shoni the Shilent
-							-- #if AFTER WRATH
-							["coord"] = { 62.8, 34.8, STORMWIND_CITY },
-							-- #else
-							["coord"] = { 55.5, 12.5, STORMWIND_CITY },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER WRATH
+								{ 62.8, 34.8, STORMWIND_CITY },
+								-- #else
+								{ 55.5, 12.5, STORMWIND_CITY },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
@@ -1241,11 +1249,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(80141, {	-- Nogg's Ring Redo
 							["qg"] = 3412,	-- Nogg <Expert Engineer>
 							["sourceQuest"] = 80140,	-- Return of the Ring [Horde]
-							-- #if AFTER CATA
-							["coord"] = { 56.7, 57.0, ORGRIMMAR },
-							-- #else
-							["coord"] = { 75.8, 25.2, ORGRIMMAR },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 56.7, 57.0, ORGRIMMAR },
+								-- #else
+								{ 75.8, 25.2, ORGRIMMAR },
+								-- #endif
+							},
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
 							["cost"] = {
@@ -1483,11 +1493,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(80138, {	-- Tinkmaster Overspark
 							["qg"] = 7917,	-- Brother Sarno
-							-- #if AFTER WRATH
-							["coord"] = { 51.6, 48.6, STORMWIND_CITY },
-							-- #else
-							["coord"] = { 40.6, 30.0, STORMWIND_CITY },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER WRATH
+								{ 51.6, 48.6, STORMWIND_CITY },
+								-- #else
+								{ 40.6, 30.0, STORMWIND_CITY },
+								-- #endif
+							},
 							["maps"] = { IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,

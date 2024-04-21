@@ -7,11 +7,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lore"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
 		-- #endif
 		["zone-text-areaID"] = 209,	-- Shadowfang Keep
-		-- #if AFTER CATA
-		["coord"] = { 44.79, 67.82, SILVERPINE_FOREST },
-		-- #else
-		["coord"] = { 36.6, 65.6, SILVERPINE_FOREST },
-		-- #endif
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 44.79, 67.82, SILVERPINE_FOREST },
+			-- #else
+			{ 36.6, 65.6, SILVERPINE_FOREST },
+			-- #endif
+		},
 		["maps"] = {
 			SHADOWFANG_KEEP,
 			SHADOWFANG_KEEP_LEVEL2,
@@ -133,17 +135,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27365, {	-- A Fitting Weapon [Horde]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168596,	-- Gormok Ogrefist
-					-- #else
-					["qg"] = 3353,	-- Grezz Ragefist
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168596 },	-- Gormok Ogrefist
+						-- #else
+						{ "n", 3353 },	-- Grezz Ragefist
+						-- #endif
+					},
 					["sourceQuest"] = 27281,	-- Grezz Ragefist [CATA] / Gormok Ogrefist [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 73.6, 45.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 73.8, 45.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 73.6, 45.6, ORGRIMMAR },
+						-- #else
+						{ 73.8, 45.6, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -182,13 +188,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(8, 20, 8),
 				}),
 				q(27395, {	-- A Marksman's Weapon
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168551,	-- Tamanji <Hunter Trainer>
-					["coord"] = { 73.8, 43.8, ORGRIMMAR },
-					-- #else
-					["qg"] = 3352,	-- Ormak Grimshot
-					["coord"] = { 63.8, 32.8, ORGRIMMAR },
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168551 },	-- Tamanji <Hunter Trainer>
+						-- #else
+						{ "n", 3352 },	-- Ormak Grimshot}
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 73.8, 43.8, ORGRIMMAR },
+						-- #else
+						{ 63.8, 32.8, ORGRIMMAR },
+						-- #endif
+					},
 					["sourceQuest"] = 27278,	-- Grimshot's Call [CATA] / Tamanji's Call [SL+]
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { HUNTER },
@@ -254,17 +267,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27441, {	-- A Seer's Staff [Goblin]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
-					-- #else
-					["qg"] = 45347,	-- Brother Silverhallow
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168621 },	-- Martin Goodchilde <Priest Trainer>
+						-- #else
+						{ "n", 45347 },	-- Brother Silverhallow
+						-- #endif
+					},
 					["sourceQuest"] = 28164,	-- Seek Brother Silverhallow [CATA] / Journey to Orgrimmar [Goblin] [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 72.6, 46.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 37.8, 87.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 72.6, 46.6, ORGRIMMAR },
+						-- #else
+						{ 37.8, 87.4, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
@@ -283,17 +300,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27435, {	-- A Seer's Staff [Tauren]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
-					-- #else
-					["qg"] = 44735,	-- Seer Liwatha
-					-- #endif
+					["providers"] = {	
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168621 },	-- Martin Goodchilde <Priest Trainer>
+						-- #else
+						{ "n", 44735 },	-- Seer Liwatha
+						-- #endif
+					},
 					["sourceQuest"] = 27331,	-- The Seer's Call [CATA] / Journey to Orgrimmar [Tauren] [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 72.6, 46.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 45.4, 53.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 72.6, 46.6, ORGRIMMAR },
+						-- #else
+						{ 45.4, 53.4, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
@@ -471,17 +492,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27396, {	-- Blade of the Shattered Hand
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168598,	-- Thega Graveblade <Rogue Trainer>
-					-- #else
-					["qg"] = 47233,	-- Gordul
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168598 },	-- Thega Graveblade <Rogue Trainer>
+						-- #else
+						{ "n", 47233 },	-- Gordul
+						-- #endif
+					},
 					["sourceQuest"] = 27279,	-- The Shattered Hand
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 75.4, 47.4, ORGRIMMAR },
-					-- #else
-					["coord"] = { 32.9, 65.8, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 75.4, 47.4, ORGRIMMAR },
+						-- #else
+						{ 32.9, 65.8, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -598,21 +623,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				-- #if BEFORE MOP
 				q(27397, {	-- Dreamseeker's Task [CATA] / Terga's Task [MOP] / Hretar's Task [SL+]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168628,	-- Hretar Riverspeaker <Shaman Trainer>
-					-- #elseif AFTER MOP
-					["qg"] = 72939,	-- Terga Earthbreaker
-					-- #else
-					["qg"] = 3344,	-- Kardris Dreamseeker
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168628 },	-- Hretar Riverspeaker <Shaman Trainer>
+						-- #elseif AFTER MOP
+						{ "n", 72939 },	-- Terga Earthbreaker
+						-- #else
+						{ "n", 3344 },	-- Kardris Dreamseeker
+						-- #endif
+					},
 					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 73.6, 43.4, ORGRIMMAR },
-					-- #elseif AFTER MOP
-					["coord"] = { 39.0, 47.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 39.0, 47.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {	
+						-- #if AFTER SHADOWLANDS
+						{ 73.6, 43.4, ORGRIMMAR },
+						-- #elseif AFTER MOP
+						{ 39.0, 47.6, ORGRIMMAR },
+						-- #else
+						{ 39.0, 47.4, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -673,17 +702,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27361, {	-- Favored of the Light
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164949,	-- Patrice Lancaster
-					-- #else
-					["qg"] = 376,	-- High Priestess Laurena
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 164949 },	-- Patrice Lancaster
+						-- #else
+						{ "n", 376 },	-- High Priestess Laurena
+						-- #endif
+					},
 					["sourceQuest"] = 27268,	-- Make Haste to the Cathedral [CATA] / Patrice Lancaster Sends Word [All] [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 79.0, 69.8, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.0, 69.8, STORMWIND_CITY },
+						-- #else
+						{ 49.6, 44.8, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
@@ -876,21 +909,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				-- #if AFTER SHADOWLANDS
 				q(27397, {	-- Hretar's Task [SL+] / Dreamseeker's Task [CATA] / Terga's Task [MOP]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168628,	-- Hretar Riverspeaker <Shaman Trainer>
-					-- #elseif AFTER MOP
-					["qg"] = 72939,	-- Terga Earthbreaker
-					-- #else
-					["qg"] = 3344,	-- Kardris Dreamseeker
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168628 },	-- Hretar Riverspeaker <Shaman Trainer>
+						-- #elseif AFTER MOP
+						{ "n", 72939 },	-- Terga Earthbreaker
+						-- #else
+						{ "n", 3344 },	-- Kardris Dreamseeker
+						-- #endif
+					},
 					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 73.6, 43.4, ORGRIMMAR },
-					-- #elseif AFTER MOP
-					["coord"] = { 39.0, 47.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 39.0, 47.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 73.6, 43.4, ORGRIMMAR },
+						-- #elseif AFTER MOP
+						{ 39.0, 47.6, ORGRIMMAR },
+						-- #else
+						{ 39.0, 47.4, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -1129,17 +1166,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27400, {	-- Mastering the Arcane [Horde]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168626,	-- Feenix Arcshine
-					-- #else
-					["qg"] = 47246,	-- Ureda
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168626 },	-- Feenix Arcshine
+						-- #else
+						{ "n", 47246 },	-- Ureda
+						-- #endif
+					},
 					["sourceQuest"] = 27277,	-- An Audience with Ureda [CATA] / An Audience with Feenix Arcshine [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
-					-- #else
-					["coord"] = { 48.4, 62.6, ORGRIMMAR },	-- Ureda
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
+						-- #else
+						{ 48.4, 62.6, ORGRIMMAR },	-- Ureda
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13287" },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -1308,17 +1349,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27439, {	-- Staff of the Light [Blood Elf]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
-					-- #else
-					["qg"] = 45337,	-- Tyelis
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168621 },	-- Martin Goodchilde <Priest Trainer>
+						-- #else
+						{ "n", 45337 },	-- Tyelis
+						-- #endif
+					},
 					["sourceQuest"] = 27335,	-- Journey to Orgrimmar [Blood Elf]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 72.6, 46.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 49.0, 71.0, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 72.6, 46.6, ORGRIMMAR },
+						-- #else
+						{ 49.0, 71.0, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
@@ -1380,21 +1425,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER MOP
 				-- #if BEFORE SHADOWLANDS
 				q(27397, {	-- Terga's Task [MOP] / Dreamseeker's Task [CATA] / Hretar's Task [SL+]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168628,	-- Hretar Riverspeaker <Shaman Trainer>
-					-- #elseif AFTER MOP
-					["qg"] = 72939,	-- Terga Earthbreaker
-					-- #else
-					["qg"] = 3344,	-- Kardris Dreamseeker
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168628 },	-- Hretar Riverspeaker <Shaman Trainer>
+						-- #elseif AFTER MOP
+						{ "n", 72939 },	-- Terga Earthbreaker
+						-- #else
+						{ "n", 3344 },	-- Kardris Dreamseeker
+						-- #endif
+					},
 					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 73.6, 43.4, ORGRIMMAR },
-					-- #elseif AFTER MOP
-					["coord"] = { 39.0, 47.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 39.0, 47.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 73.6, 43.4, ORGRIMMAR },
+						-- #elseif AFTER MOP
+						{ 39.0, 47.6, ORGRIMMAR },
+						-- #else
+						{ 39.0, 47.4, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -1416,17 +1465,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				-- #endif
 				q(27434, {	-- The Adept's Path
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168597,	-- Avaros Dawnglaive <Paladin Trainer>
-					-- #else
-					["qg"] = 23128,	-- Master Pyreanor
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168597 },	-- Avaros Dawnglaive <Paladin Trainer>
+						-- #else
+						{ "n", 23128 },	-- Master Pyreanor
+						-- #endif
+					},
 					["sourceQuest"] = 27298,	-- Seek Out Master Pyreanor
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 73.0, 47.2, ORGRIMMAR },
-					-- #else
-					["coord"] = { 49.2, 71.2, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 73.0, 47.2, ORGRIMMAR },
+						-- #else
+						{ 49.2, 71.2, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -1747,21 +1800,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27402, {	-- Token of Power
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168623,	-- Kazak Darkscream <Warlock Trainer>
-					-- #elseif AFTER WOD
-					["qg"] = 88705,	-- Kranosh
-					-- #else
-					["qg"] = 3326,	-- Zevrost <Warlock Trainer>
-					-- #endif
+					["providers"] = {
+						-- #if AFTER SHADOWLANDS
+						{ "n", 168623 },	-- Kazak Darkscream <Warlock Trainer>
+						-- #elseif AFTER WOD
+						{ "n", 88705 },	-- Kranosh
+						-- #else
+						{ "n", 3326 },	-- Zevrost <Warlock Trainer>
+						-- #endif
+					},
 					["sourceQuest"] = 27282,	-- Zevrost's Behest [CATA] / Kranosh's Behest [WOD] / Kazak's Behest [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 74.6, 47.2, ORGRIMMAR },
-					-- #elseif AFTER WOD
-					["coord"] = { 76.8, 37.4, ORGRIMMAR },
-					-- #else
-					["coord"] = { 53.5, 49.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 74.6, 47.2, ORGRIMMAR },
+						-- #elseif AFTER WOD
+						{ 76.8, 37.4, ORGRIMMAR },
+						-- #else
+						{ 53.5, 49.6, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,

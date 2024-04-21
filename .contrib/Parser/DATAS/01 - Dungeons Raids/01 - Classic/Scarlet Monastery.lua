@@ -53,11 +53,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 796,	-- Scarlet Monastery, not sure when a mapID becomes available. Check Cata PTR?
 		-- #endif
-		-- #if AFTER CATA
-		["coord"] = { 69.2, 24.9, SCARLET_MONASTERY_ENTRANCE },
-		-- #else
-		["coord"] = { 82.6, 32.4, TIRISFAL_GLADES },
-		-- #endif
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 69.2, 24.9, SCARLET_MONASTERY_ENTRANCE },
+			-- #else
+			{ 82.6, 32.4, TIRISFAL_GLADES },
+			-- #endif
+		},
 		["maps"] = {
 			SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 			436,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
