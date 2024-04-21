@@ -50,8 +50,11 @@ local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementCriteriaInfoByID = _G["GetAchievementCriteriaInfoByID"];
 local GetCategoryInfo = _G["GetCategoryInfo"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
+---@diagnostic disable-next-line: deprecated
 local GetItemInfo = _G["GetItemInfo"];
+---@diagnostic disable-next-line: deprecated
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
+---@diagnostic disable-next-line: deprecated
 local GetItemCount = _G["GetItemCount"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
@@ -511,11 +514,11 @@ ResolveSymbolicLink = function(o)
 							local ref = ResolveSymbolicLink(result);
 							if ref then
 								if result.g then
-									for i,m in ipairs(result.g) do
+									for _,m in ipairs(result.g) do
 										tinsert(searchResults, m);
 									end
 								end
-								for i,m in ipairs(ref) do
+								for _,m in ipairs(ref) do
 									tinsert(searchResults, m);
 								end
 							else
@@ -550,7 +553,7 @@ ResolveSymbolicLink = function(o)
 					tinsert(searchResults, o.parent);
 				end
 			elseif cmd == "selectprofession" then
-				local requireSkill, response = sym[2];
+				local requireSkill, response = sym[2], nil;
 				if app.Categories.Achievements then
 					response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
 					if response then tinsert(searchResults, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response}); end
@@ -775,31 +778,34 @@ ResolveSymbolicLink = function(o)
 					end
 					local cache;
 					for criteriaID=1,num,1 do
-						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+						---@diagnostic disable-next-line: redundant-parameter
+						local _, criteriaType, _, _, _, _, _, assetID, _, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 						if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
 						local criteriaObject = app.CreateAchievementCriteria(uniqueID);
-						criteriaObject.achievementID = achievementID;
-						if criteriaType == 27 then
-							cache = SearchForField("questID", assetID);
-						elseif criteriaType == 36 or criteriaType == 42 then
-							criteriaObject.providers = {{ "i", assetID }};
-						elseif criteriaType == 110 or criteriaType == 29 or criteriaType == 69 or criteriaType == 52 or criteriaType == 53 or criteriaType == 54 or criteriaType == 32 then
-							-- Ignored
-						else
-							--print("Unhandled Criteria Type", criteriaType, assetID);
-						end
-						if cache and #cache > 0 then
-							local uniques = {};
-							MergeObjects(uniques, cache);
-							for i,p in ipairs(uniques) do
-								rawset(p, "text", nil);
-								for key,value in pairs(p) do
-									criteriaObject[key] = value;
+						if criteriaObject then
+							criteriaObject.achievementID = achievementID;
+							if criteriaType == 27 then
+								cache = SearchForField("questID", assetID);
+							elseif criteriaType == 36 or criteriaType == 42 then
+								criteriaObject.providers = {{ "i", assetID }};
+							elseif criteriaType == 110 or criteriaType == 29 or criteriaType == 69 or criteriaType == 52 or criteriaType == 53 or criteriaType == 54 or criteriaType == 32 then
+								-- Ignored
+							else
+								--print("Unhandled Criteria Type", criteriaType, assetID);
+							end
+							if cache and #cache > 0 then
+								local uniques = {};
+								MergeObjects(uniques, cache);
+								for i,p in ipairs(uniques) do
+									rawset(p, "text", nil);
+									for key,value in pairs(p) do
+										criteriaObject[key] = value;
+									end
 								end
 							end
+							criteriaObject.parent = o;
+							tinsert(searchResults, criteriaObject);
 						end
-						criteriaObject.parent = o;
-						tinsert(searchResults, criteriaObject);
 					end
 				end
 			elseif cmd == "meta_achievement" then
@@ -913,7 +919,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 end
 
 -- Search Caching
-local searchCache, working = {};
+local searchCache, working = {}, nil;
 app.GetCachedData = function(cacheKey, method, ...)
 	if IsRetrieving(cacheKey) then return; end
 	local cache = searchCache[cacheKey];
@@ -983,6 +989,24 @@ local function GetRelativeDifficulty(group, difficultyID)
 		end
 	end
 end
+local function SortByCommonBossDrops(a, b)
+	return not (a.headerID and a.headerID == app.HeaderConstants.COMMON_BOSS_DROPS) and b.headerID and b.headerID == app.HeaderConstants.COMMON_BOSS_DROPS;
+end
+local function SortByCraftTypeID(a, b)
+	if a.group.craftTypeID == b.group.craftTypeID then
+		if a.group.name then
+			if b.group.name then
+				return a.group.name <= b.group.name;
+			end
+			return true;
+		end
+		return false;
+	end
+	return a.group.craftTypeID > b.group.craftTypeID;
+end
+---@param method function
+---@param paramA string
+---@param paramB number
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
 	if not method then
@@ -996,7 +1020,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- If we are searching for only one parameter, it is a raw link.
 	local rawlink;
-	if paramB then paramB = tonumber(paramB);
+	if paramB then paramB = tonumber(paramB) or paramB;
 	else rawlink = paramA; end
 
 	-- This method can be called nested, and some logic should only process for the initial call
@@ -1007,7 +1031,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, tooltipInfo, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
+	local working, tooltipInfo, crafted, recipes, mostAccessibleSource = false, {}, {}, {}, nil;
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -1106,9 +1130,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 			if #regroup > 0 then
-				app.Sort(regroup, function(a, b)
-					return not (a.headerID and a.headerID == app.HeaderConstants.COMMON_BOSS_DROPS) and b.headerID and b.headerID == app.HeaderConstants.COMMON_BOSS_DROPS;
-				end);
+				app.Sort(regroup, SortByCommonBossDrops);
 			end
 			group = regroup;
 		elseif paramA == "titleID" or paramA == "followerID" then
@@ -1144,7 +1166,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if itemString then
 			local itemID2 = select(2, (":"):split(itemString));
 			if itemID2 then
-				itemID = tonumber(itemID2);
+				itemID = tonumber(itemID2) or itemID2;
 				paramA = "itemID";
 				paramB = itemID;
 			end
@@ -1153,7 +1175,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			local kind, id = (":"):split(rawlink);
 			if id == "" then return nil, true; end
 			kind = kind:lower();
-			if id then id = tonumber(id); end
+			if id then id = tonumber(id) or id; end
 			if kind == "itemid" then
 				paramA = "itemID";
 				paramB = id;
@@ -1208,8 +1230,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- Create a list of sources
 	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
-		local temp, text, parent = {};
-		local unfiltered, right = {};
+		local temp, text, parent = {}, nil, nil;
+		local unfiltered, right = {}, nil;
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
@@ -1514,7 +1536,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Recipes
 		if recipes and #recipes > 0 then
 			if app.Settings:GetTooltipSetting("Show:Recipes") then
-				local entries, left, right = {};
+				local entries, left, right = {}, nil, nil;
 				BuildContainsInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					tinsert(tooltipInfo, { left = "Used in Recipes:" });
@@ -1553,31 +1575,20 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				else
 					-- Show only the current character
 					local nonTrivialRecipes = {};
-					for i, o in pairs(recipes) do
+					for _, o in pairs(recipes) do
 						local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
 						if craftTypeID and craftTypeID > 0 then
 							o.craftTypeID = craftTypeID;
 							tinsert(nonTrivialRecipes, o);
 						end
 					end
-					local entries, left, right = {};
+					local entries, left = {}, nil;
 					BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 					if #entries > 0 then
 						tinsert(tooltipInfo, { left = "Available Skill Ups:" });
 						if #entries < 25 then
-							app.Sort(entries, function(a, b)
-								if a.group.craftTypeID == b.group.craftTypeID then
-									if a.group.name then
-										if b.group.name then
-											return a.group.name <= b.group.name;
-										end
-										return true;
-									end
-									return false;
-								end
-								return a.group.craftTypeID > b.group.craftTypeID;
-							end);
-							for i,item in ipairs(entries) do
+							app.Sort(entries, SortByCraftTypeID);
+							for _,item in ipairs(entries) do
 								left = item.group.text or RETRIEVING_DATA;
 								if IsRetrieving(left) then working = true; end
 								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
@@ -1602,8 +1613,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- If there was any informational text generated, then attach that info.
 	if #tooltipInfo > 0 then
-		local uniques, dupes, _ = {}, {};
-		for i,item in ipairs(tooltipInfo) do
+		local uniques, dupes, _ = {}, {}, nil;
+		for _,item in ipairs(tooltipInfo) do
 			_ = item.hash or item.left;
 			if not _ then
 				tinsert(uniques, item);
@@ -2377,7 +2388,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	-- Achievements are in. We can use the API.
 	local GetAchievementCategory = _G["GetAchievementCategory"];
 	fields.text = function(t)
-		return t.link or "|cffffff00[" .. (t.name or ("@CRIEVE: INVALID ACHIEVEMENT " .. t.achievementID)) .. "]|r";
+		return t.link or ("|cffffff00[" .. (t.name or ("@CRIEVE: INVALID ACHIEVEMENT " .. t.achievementID)) .. "]|r");
 	end
 	fields.name = function(t)
 		local name = select(2, GetAchievementInfo(t.achievementID));
@@ -2424,8 +2435,8 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		if achievementID and IsShiftKeyDown() then
 			local criteriaDatas,criteriaDatasByUID = {}, {};
 			for criteriaID=1,99999,1 do
-				local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfoByID(achievementID, criteriaID);
-				if criteriaString then
+				local criteriaString, criteriaType, completed, _, _, _, _, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfoByID(achievementID, criteriaID);
+				if criteriaString and criteriaUID then
 					criteriaDatasByUID[criteriaUID] = true;
 					tinsert(criteriaDatas, {
 						" [" .. criteriaUID .. "]: " .. tostring(criteriaString),
@@ -2436,7 +2447,8 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			local totalCriteria = GetAchievementNumCriteria(achievementID) or 0;
 			if totalCriteria > 0 then
 				for criteriaIndex=1,totalCriteria,1 do
-					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaIndex, true);
+					---@diagnostic disable-next-line: redundant-parameter
+					local criteriaString, criteriaType, completed, _, _, _, _, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaIndex, true);
 					if criteriaString and (not criteriaDatasByUID[criteriaUID] or criteriaUID == 0) then
 						tinsert(criteriaDatas, {
 							" [" .. criteriaUID .. " @ Index: " .. criteriaIndex .. "]: " .. tostring(criteriaString),
@@ -2598,14 +2610,14 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	}, (function(t) return t.criteriaID < 100; end));
 
 	local function CheckAchievementCollectionStatus(achievementID)
-		achievementID = tonumber(achievementID);
+		achievementID = tonumber(achievementID) or achievementID;
 		SetAchievementCollected(SearchForField("achievementID", achievementID)[1], achievementID, select(13, GetAchievementInfo(achievementID)));
 	end
 	local function refreshAchievementCollection()
 		if ATTAccountWideData then
 			for achievementID,container in pairs(SearchForFieldContainer("achievementID")) do
-				local id = tonumber(achievementID);
-				if achievementID ~= 5788 then
+				local id = tonumber(achievementID) or achievementID;
+				if id ~= 5788 then
 					SetAchievementCollected(container[1], id, select(13, GetAchievementInfo(id)));
 				end
 			end
@@ -2815,7 +2827,7 @@ else
 				end
 			else
 				t.collected = count >= 1;
-				t.collectible = collectible;
+				t.collectible = true;
 
 				if app.GroupFilter(t) then
 					local parent = t.parent;
@@ -3124,7 +3136,7 @@ else
 				end
 			else
 				t.collected = count >= 1;
-				t.collectible = collectible;
+				t.collectible = true;
 
 				if app.GroupFilter(t) then
 					local parent = t.parent;
@@ -3198,7 +3210,7 @@ else
 				end
 			else
 				t.collected = count >= 1;
-				t.collectible = collectible;
+				t.collectible = true;
 
 				if app.GroupFilter(t) then
 					local parent = t.parent;
@@ -3251,6 +3263,7 @@ end)();
 (function()
 local CurrencyInfo = {};
 local GetCurrencyCount;
+---@diagnostic disable-next-line: undefined-global
 local GetCurrencyLink = GetCurrencyLink;
 local GetRelativeField = app.GetRelativeField;
 if C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo then
@@ -3273,6 +3286,7 @@ if C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo then
 		return C_CurrencyInfo_GetCurrencyInfo(id).quantity or 0;
 	end
 else
+	---@diagnostic disable-next-line: undefined-global
 	local GetCurrencyInfo = GetCurrencyInfo;
 	setmetatable(CurrencyInfo, { __index = function(t, id)
 		local name, amount, icon = GetCurrencyInfo(id);
@@ -3674,10 +3688,15 @@ else
 	local ATTCNPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate");
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
+			---@diagnostic disable-next-line: param-type-mismatch
 			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+			---@diagnostic disable-next-line: param-type-mismatch
 			ATTCNPCHarvester:SetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id))
+			---@diagnostic disable-next-line: undefined-global
 			local title = ATTCNPCHarvesterTextLeft1:GetText();
+			---@diagnostic disable-next-line: param-type-mismatch
 			if title and ATTCNPCHarvester:NumLines() > 2 then
+				---@diagnostic disable-next-line: undefined-global
 				local leftText = ATTCNPCHarvesterTextLeft2:GetText();
 				if leftText and not blacklisted[leftText] then
 					NPCTitlesFromID[id] = leftText;
@@ -4135,7 +4154,7 @@ app.SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 			end
 			app.GetSpellName(spellID, rank);
 		end
-		local numSpellTabs, offset, lastSpellName, currentSpellRank, lastSpellRank = GetNumSpellTabs(), 1, "", 1, 1;
+		local numSpellTabs, offset, lastSpellName, currentSpellRank, lastSpellRank = GetNumSpellTabs(), 1, "", nil, 1;
 		for spellTabIndex=1,numSpellTabs do
 			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
 			for spellIndex=1,numSpells do
@@ -4696,11 +4715,12 @@ local __TomTomWaypointCacheIndexX = { __index = function(t, x)
 	rawset(t, x, o);
 	return o;
 end };
-local __TomTomWaypointCache, __TomTomWaypointFirst = setmetatable({}, { __index = function(t, mapID)
+local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	local o = setmetatable({}, __TomTomWaypointCacheIndexX);
 	rawset(t, mapID, o);
 	return o;
 end });
+local __TomTomWaypointFirst = nil;
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
@@ -4750,7 +4770,7 @@ local function AddTomTomWaypointInternal(group, depth)
 					__TomTomWaypointFirst = false;
 					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
 					C_Map.ClearUserWaypoint();
-					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or defaultMapID,coord[1]/100,coord[2]/100));
+					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3],coord[1]/100,coord[2]/100));
 					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
 				end
 			end
@@ -4932,7 +4952,7 @@ app.AddEventHandler("OnReady", function()
 							opts.callbacks = callbacks;
 						end
 					else
-						print("Failed to rebuild TomTom Waypoint", waypointUID);
+						print("Failed to rebuild TomTom Waypoint");
 					end
 				end
 			end

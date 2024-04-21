@@ -4,7 +4,7 @@ local api = {};
 app.Audio = api;
 
 -- Sound Pack Management
-local EventHandlers, SoundPacks, CurrentSoundPack = {}, {};
+local EventHandlers, SoundPacks, CurrentSoundPack = {}, {}, nil;
 function api:ActivateSoundPack(name, noerror)
 	local t = type(name);
 	if t == "string" then
