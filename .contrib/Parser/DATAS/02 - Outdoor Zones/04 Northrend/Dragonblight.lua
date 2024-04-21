@@ -2043,11 +2043,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12488,	-- The High Executor Needs You
 						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
+						-- #if AFTER 6.2.0.19953
 						["altQuests"] = {
-							-- #if AFTER 6.2.0.19953
 							39206,	-- Warchief's Command: Grizzly Hills!
-							-- #endif
 						},
+						-- #endif
 						["isBreadcrumb"] = true,
 					}),
 					q(12095, {	-- To Dragon's Fall
