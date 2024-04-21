@@ -74,15 +74,23 @@ WOD_PHASE_THREE = 62;
 
 -- Legion Classic Phases
 LEGION_PHASE_ONE = 70;
+LEGION_PHASE_TWO = 71;
+LEGION_PHASE_THREE = 72;
 
 -- Battle for Azeroth Phases
 BFA_PHASE_ONE = 80;
+BFA_PHASE_TWO = 81;
+BFA_PHASE_THREE = 82;
 
 -- Shadowlands Phases
 SHADOWLANDS_PHASE_ONE = 90;
+SHADOWLANDS_PHASE_TWO = 91;
+SHADOWLANDS_PHASE_THREE = 92;
 
 -- Dragonflight Phases
 DF_PHASE_ONE = 100;
+DF_PHASE_TWO = 101;
+DF_PHASE_THREE = 102;
 
 -- Done defining Phases for Classic
 -- #endif

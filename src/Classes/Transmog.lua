@@ -159,6 +159,7 @@ app.DetermineItemLink = function(sourceID)
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
 	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
 	for m=1,129,1 do
+		---@diagnostic disable-next-line: undefined-field
 		link = itemFormat:format(m);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
@@ -168,6 +169,7 @@ app.DetermineItemLink = function(sourceID)
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
 	for b=1,10999,1 do
+		---@diagnostic disable-next-line: undefined-field
 		link = itemFormat:format(b);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
@@ -581,6 +583,7 @@ app.SaveHarvestSource = function(data)
 		end
 		if itemID < 1 then return end
 		app.PrintDebug("Harvest",sourceID,"<=",itemID,app:SearchLink(data),data.link or data.text or data.hash)
+		---@diagnostic disable-next-line: undefined-global
 		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
 end

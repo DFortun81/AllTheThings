@@ -62,6 +62,7 @@ do
 			return GetItemInfo(t.itemID) or t.info.name;
 		end,
 		tsm = function(t)
+			---@diagnostic disable-next-line: undefined-field
 			return ("i:%d"):format(t.itemID);
 		end,
 		f = function(t)

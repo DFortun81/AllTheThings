@@ -1070,7 +1070,7 @@ TIER_THIRTEEN_COMMON_GROUPS = {
 	i(77096),	-- Woundlicker Cover
 	i(77150),	-- Zeherah's Dragonskull Crown
 };
-TIER_THIRTEEN_GROUPS = applyclassicphase(CATA_PHASE_FIVE,
+TIER_THIRTEEN_GROUPS = applyclassicphase(CATA_PHASE_FOUR,
 	appendGroups(TIER_THIRTEEN_COMMON_GROUPS,
 	appendGroups(TIER_THIRTEEN_HEROIC_GROUPS,
 	appendGroups(TIER_THIRTEEN_NORMAL_GROUPS,

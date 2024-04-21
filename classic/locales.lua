@@ -57,7 +57,6 @@ for key,value in pairs({
 	["OBJECTIVES"] = "Objectives";
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
-	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
 	["UNOBTAINABLE_LABEL"] = "Unobtainable Content";
 	
 	-- Instructional Text
@@ -92,7 +91,6 @@ for key,value in pairs({
 	["DROP_RATE"] = "Drop Rate";
 	["QUEST_GIVER"] = "Quest Giver";
 	["COORDINATES"] = "Coordinates";
-	["AND_MORE"] = "And %s more...";
 	["PLAYER_COORDINATES"] = "Player Coordinates";
 	["EVENT_SCHEDULE"] = "Event Schedule";
 	["EVENT_ACTIVE"] = "Active:";

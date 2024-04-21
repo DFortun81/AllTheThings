@@ -1004,6 +1004,7 @@ local function SortByCraftTypeID(a, b)
 	end
 	return a.group.craftTypeID > b.group.craftTypeID;
 end
+
 ---@param method function
 ---@param paramA string
 ---@param paramB number
@@ -1162,8 +1163,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	-- Determine if this is a search for an item
 	local itemID, itemString;
 	if rawlink then
+		---@diagnostic disable-next-line: undefined-field
 		itemString = rawlink:match("item[%-?%d:]+");
 		if itemString then
+			---@diagnostic disable-next-line: undefined-field
 			local itemID2 = select(2, (":"):split(itemString));
 			if itemID2 then
 				itemID = tonumber(itemID2) or itemID2;
@@ -1172,6 +1175,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 			if not itemID or itemID == 0 then return nil, true; end
 		else
+			---@diagnostic disable-next-line: undefined-field
 			local kind, id = (":"):split(rawlink);
 			if id == "" then return nil, true; end
 			kind = kind:lower();
@@ -1648,6 +1652,7 @@ local function SearchForLink(link)
 		local itemString = link:match("item[%-?%d:]+") or link;
 		if itemString then
 			-- Cache the Item ID and the Suffix ID.
+			---@diagnostic disable-next-line: undefined-field
 			local _, itemID, _, _, _, _, _, suffixID = (":"):split(itemString);
 			if itemID then
 				-- Ensure that the itemID and suffixID are properly formatted.
@@ -1657,6 +1662,7 @@ local function SearchForLink(link)
 		end
 	end
 	
+	---@diagnostic disable-next-line: undefined-field
 	local kind, id = (":"):split(link);
 	kind = kind:lower():gsub("id", "ID");
 	if kind:sub(1,2) == "|c" then
@@ -1665,6 +1671,7 @@ local function SearchForLink(link)
 	if kind:sub(1,2) == "|h" then
 		kind = kind:sub(3);
 	end
+	---@diagnostic disable-next-line: undefined-field
 	if id then id = tonumber(("|["):split(id) or id); end
 	--print("SearchForLink A:", kind, id);
 	--print("SearchForLink B:", link:gsub("|c", "c"):gsub("|h", "h"));
@@ -3521,7 +3528,8 @@ end
 app.CacheFlightPathDataForTarget = function(nodes)
 	local guid = UnitGUID("npc") or UnitGUID("target");
 	if guid then
-		local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
+		---@diagnostic disable-next-line: undefined-field
+		local type, _, _, _, _, npcID = ("-"):split(guid);
 		if type == "Creature" and npcID then
 			npcID = tonumber(npcID);
 			local count = 0;
@@ -3666,6 +3674,7 @@ local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
+			---@diagnostic disable-next-line: undefined-field
 			local tooltipData = C_TooltipInfo_GetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id));
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText;
@@ -3690,7 +3699,7 @@ else
 		if id > 0 then
 			---@diagnostic disable-next-line: param-type-mismatch
 			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-			---@diagnostic disable-next-line: param-type-mismatch
+			---@diagnostic disable-next-line: param-type-mismatch, undefined-field
 			ATTCNPCHarvester:SetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id))
 			---@diagnostic disable-next-line: undefined-global
 			local title = ATTCNPCHarvesterTextLeft1:GetText();
@@ -4254,6 +4263,7 @@ local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 		return GetItemInfo(t.itemID) or nameFromSpellID(t);
 	end,
 	tsm = function(t)
+		---@diagnostic disable-next-line: undefined-field
 		return ("i:%d"):format(t.itemID);
 	end,
 	b = function(t)
@@ -4308,7 +4318,9 @@ local speciesFields = {
 		end
 	end,
 	["tsm"] = function(t)
+		---@diagnostic disable-next-line: undefined-field
 		if t.itemID then return ("i:%d"):format(t.itemID); end
+		---@diagnostic disable-next-line: undefined-field
 		return ("p:%d:1:3"):format(t.speciesID);
 	end,
 };
@@ -4339,7 +4351,9 @@ local mountFields = {
 		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
 	end,
 	["tsmForItem"] = function(t)
+		---@diagnostic disable-next-line: undefined-field
 		if t.itemID then return ("i:%d"):format(t.itemID); end
+		---@diagnostic disable-next-line: undefined-field
 		if t.parent and t.parent.itemID then return ("i:%d"):format(t.parent.itemID); end
 	end,
 	["linkForItem"] = function(t)
@@ -4904,13 +4918,16 @@ app.AddEventHandler("OnReady", function()
 				if sourceString then
 					if not root then
 						root = {};
+						---@diagnostic disable-next-line: undefined-field
 						local sourceStrings = { (";"):split(sourceString) };
 						for i,sourcePath in ipairs(sourceStrings) do
+							---@diagnostic disable-next-line: undefined-field
 							local hashes = { (">"):split(sourcePath) };
 							local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
 							if ref then
 								tinsert(root, ref);
 							else
+								---@diagnostic disable-next-line: undefined-field
 								hashes = { ("ID"):split(sourcePath) };
 								if #hashes == 3 then
 									ref = app.CreateClassInstance(hashes[1] .. "ID", tonumber(hashes[3]));
@@ -4991,6 +5008,7 @@ end);
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
 		-- print("Chat Link Click",link,string_gsub(text, "\|","&"));
+		---@diagnostic disable-next-line: undefined-field
 		local type, info, data1, data2, data3 = (":"):split(link);
 		--print(type, info, data1, data2, data3)
 		if type == "addon" and info == "ATT" then

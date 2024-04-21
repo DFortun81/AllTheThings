@@ -31,6 +31,10 @@ local function calculateSourceQuestDepth(group, text)
 	end
 	return 0;
 end
+local function toLowerString(value)
+	---@diagnostic disable-next-line: undefined-field
+	return tostring(value):lower();
+end
 local function defaultComparison(a,b)
 	-- If either object doesn't exist
 	if a then
@@ -89,8 +93,8 @@ local function defaultComparison(a,b)
 		return false;
 	end
 	-- Any two similar-type groups via name
-	acomp = tostring(a.name):lower();
-	bcomp = tostring(b.name):lower();
+	acomp = toLowerString(a.name);
+	bcomp = toLowerString(b.name);
 	return acomp < bcomp;
 end
 local function GetGroupSortValue(group)
@@ -151,8 +155,8 @@ local function stringComparison(a,b)
 		return false;
 	end
 	-- Any two similar-type groups with text
-	a = tostring(a):lower();
-	b = tostring(b):lower();
+	a = toLowerString(a);
+	b = toLowerString(b);
 	return a < b;
 end
 app.SortDefaults = setmetatable({
@@ -256,8 +260,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		sortA = tostring(a.text):lower();
-		sortB = tostring(b.text):lower();
+		sortA = toLowerString(a.text);
+		sortB = toLowerString(b.text);
 		if sortA == sortB and sortA then
 			return calculateSourceQuestDepth(a, sortA) < calculateSourceQuestDepth(b, sortB);
 		end
@@ -276,8 +280,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = tostring(a.name):lower();
-		b = tostring(b.name):lower();
+		a = toLowerString(a.name);
+		b = toLowerString(b.name);
 		return a < b;
 	end,
 	text = function(a, b)
@@ -293,8 +297,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = tostring(a.text):lower();
-		b = tostring(b.text):lower();
+		a = toLowerString(a.text);
+		b = toLowerString(b.text);
 		return a < b;
 	end,
 	textAndLvl = function(a, b)
@@ -315,8 +319,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		elseif sortA == sortB then
 			-- Any two similar-type groups with text
-			a = tostring(a.name or a.text):lower();
-			b = tostring(b.name or b.text):lower();
+			a = toLowerString(a.name or a.text);
+			b = toLowerString(b.name or b.text);
 			return a < b;
 		else
 			return true;
