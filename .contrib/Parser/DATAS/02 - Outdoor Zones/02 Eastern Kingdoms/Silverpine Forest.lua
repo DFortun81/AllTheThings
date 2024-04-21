@@ -444,7 +444,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(477, {	-- Border Crossings
-					["qg"] = 2121,	-- Shadow Priest Allister
+					["providers"] = {
+						{ "n", 2121 },	-- Shadow Priest Allister
+						{ "o", 1627 },	-- Dalaran Crate
+					},
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
@@ -1238,6 +1241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(480, {	-- The Weaver
 					["qg"] = 2121,	-- Shadow Priest Allister
+					["sourceQuest"] = 479,	-- Ambermill Investigations
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,

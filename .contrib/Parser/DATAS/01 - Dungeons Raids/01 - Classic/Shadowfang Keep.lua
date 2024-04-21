@@ -1454,7 +1454,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 The Book of Ur
-							["provider"] = { "i", 6283 },	-- The Book of Ur
+							["providers"] = {
+								{ "i", 6283 },	-- The Book of Ur
+								{ "o", 36738 },	-- The Book of Ur
+							},
+							["description"] = "Can be found on a bookshelf in the circular room with Fenrus.",
 						}),
 						i(4534, {	-- Steel-Clasped Bracers
 							["timeline"] = { "removed 4.0.3" },
@@ -2027,9 +2031,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(4274, {	-- Fenrus the Devourer
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6283, {	-- The Book of Ur
-							["description"] = "Can be found on a bookshelf in the circular room with Fenrus.",
-						}),
 						-- #if BEFORE 4.0.3
 						i(3230),	-- Black Wolf Bracers
 						-- #endif
