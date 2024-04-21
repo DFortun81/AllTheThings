@@ -44,10 +44,15 @@ local function CreateWorldMapButton()
 		GameTooltip:Hide();
 		GameTooltip:ClearLines();
 	end);
-	button:SetScript("OnClick", function(self)
+	button:SetScript("OnClick", app.IsClassic and function(self)
 		local mapID = self.mapID;
 		if mapID and mapID > 0 then
-			(app.Windows["MiniList"] or app.Windows["CurrentInstance"]):SetMapID(mapID);
+			app.Windows["MiniList"]:SetMapID(mapID);
+		end
+	end or function(self)
+		local mapID = self.mapID;
+		if mapID and mapID > 0 then
+			app:GetWindow("CurrentInstance"):SetMapID(mapID);
 		end
 	end);
 	return button;
