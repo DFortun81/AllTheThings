@@ -2729,6 +2729,7 @@ _.ObjectNames = {
 	[174712] = "Corrupted Songflower",
 	[174713] = "Corrupted Songflower",
 	[174848] = "Testing Equipment",
+	[175124] = "Rookery Egg",
 	[175226] = "Beached Sea Creature",
 	[175227] = "Beached Sea Creature",
 	[175230] = "Beached Sea Creature",
