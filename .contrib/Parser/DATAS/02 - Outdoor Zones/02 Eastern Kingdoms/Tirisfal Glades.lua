@@ -1721,6 +1721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(374, {	-- Proof of Demise
 					["qg"] = 1652,	-- Deathguard Burgess
+					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["coord"] = { 60.8, 52, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
