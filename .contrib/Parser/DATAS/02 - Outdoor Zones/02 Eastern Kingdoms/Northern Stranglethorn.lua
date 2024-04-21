@@ -1892,6 +1892,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(598, {	-- Split Bone Necklace
 					["qg"] = 2519,	-- Kin'weelay
+					["sourceQuests"] = {
+						596,	-- Bloody Bone Necklaces
+						629,	-- The Vile Reef
+					},
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,

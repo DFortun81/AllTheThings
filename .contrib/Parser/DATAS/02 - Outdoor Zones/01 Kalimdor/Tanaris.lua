@@ -3287,14 +3287,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40589,	-- Dirge Quikcleave
 					["coord"] = { 52.4, 29.0, TANARIS },
 					-- #endif
+					["altQuests"] = { 13825 },	-- Clamlette Surprise
 					["sourceQuests"] = {
 						6611,	-- To Gadgetzan You Go!
 						6612,	-- I Know A Guy...
 					},
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
-					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
-					["altQuests"] = { 13825 },	-- Clamlette Surprise
 					["cost"] = {
 						{ "i", 12207, 12 },	-- Giant Egg
 						{ "i", 7974, 10 },	-- Zesty Clam Meat
