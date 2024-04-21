@@ -302,11 +302,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(71148, {	-- Continued Waygate Exploration
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 15 },	-- Dragonscale Expedition Renown 15
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
-					-- #if BEFORE 10.0.7
-					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
-					-- #else
-					["sourceQuest"] = 75444,	-- Waygate Exploration: The Forbidden Reach
-					-- #endif
+					["sourceQuests"] = {
+						-- #if BEFORE 10.0.7
+						71146,	-- Continued Waygate Exploration
+						-- #else
+						75444,	-- Waygate Exploration: The Forbidden Reach
+						-- #endif
+					},
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

@@ -18,25 +18,31 @@ root(ROOTS.ExpansionFeatures,
 							}},
 							["g"] = {
 								i(127707, {	-- Indestructible Bone (TOY!)
-									-- #if BEFORE 10.2.5
-									["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-									-- #else
-									["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-									-- #endif
+									["cost"] = {
+										-- #if BEFORE 10.2.5
+										{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+										-- #else
+										{ "i", 163036, 50 },	-- 200x Polished Pet Charm
+										-- #endif
+									},
 								}),
 								i(127696, {	-- Magic Pet Mirror (TOY!)
-									-- #if BEFORE 10.2.5
-									["cost"] = { { "i", 116415, 500 }, },	-- 500x Shiny Pet Charm
-									-- #else
-									["cost"] = { { "i", 163036, 500 }, },	-- 200x Polished Pet Charm
-									-- #endif
+									["cost"] = {
+										-- #if BEFORE 10.2.5
+										{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
+										-- #else
+										{ "i", 163036, 500 },	-- 200x Polished Pet Charm
+										-- #endif
+									},
 								}),
 								i(127695, {	-- Spirit Wand (TOY!)
-									-- #if BEFORE 10.2.5
-									["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-									-- #else
-									["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-									-- #endif
+									["cost"] = {
+										-- #if BEFORE 10.2.5
+										{ "i", 116415, 100 },	-- 500x Shiny Pet Charm
+										-- #else
+										{ "i", 163036, 100 },	-- 200x Polished Pet Charm
+										-- #endif
+									},
 								}),
 							},
 						}),
@@ -50,25 +56,31 @@ root(ROOTS.ExpansionFeatures,
 							}},
 							["g"] = {
 								i(127707, {	-- Indestructible Bone (TOY!)
-									-- #if BEFORE 10.2.5
-									["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-									-- #else
-									["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-									-- #endif
+									["cost"] = {
+										-- #if BEFORE 10.2.5
+										{ "i", 116415, 50 },	-- 500x Shiny Pet Charm
+										-- #else
+										{ "i", 163036, 50 },	-- 200x Polished Pet Charm
+										-- #endif
+									},
 								}),
 								i(127696, {	-- Magic Pet Mirror (TOY!)
-									-- #if BEFORE 10.2.5
-									["cost"] = { { "i", 116415, 500 }, },	-- 500x Shiny Pet Charm
-									-- #else
-									["cost"] = { { "i", 163036, 500 }, },	-- 200x Polished Pet Charm
-									-- #endif
+									["cost"] = {
+										-- #if BEFORE 10.2.5
+										{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
+										-- #else
+										{ "i", 163036, 500 },	-- 200x Polished Pet Charm
+										-- #endif
+									},
 								}),
 								i(127695, {	-- Spirit Wand (TOY!)
-									-- #if BEFORE 10.2.5
-									["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-									-- #else
-									["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-									-- #endif
+									["cost"] = {
+										-- #if BEFORE 10.2.5
+										{ "i", 116415, 100 },	-- 500x Shiny Pet Charm
+										-- #else
+										{ "i", 163036, 100 },	-- 200x Polished Pet Charm
+										-- #endif
+									},
 								}),
 							},
 						}),
