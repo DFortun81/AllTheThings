@@ -26,11 +26,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		n(QUESTS, {
 			q(168, {	-- Collecting Memories
 				["qg"] = 656,	-- Wilder Thistlenettle
-				-- #if AFTER WRATH
-				["coord"] = { 70.2, 40.8, STORMWIND_CITY },
-				-- #else
-				["coord"] = { 65.4, 21.2, STORMWIND_CITY },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER WRATH
+					{ 70.2, 40.8, STORMWIND_CITY },
+					-- #else
+					{ 65.4, 21.2, STORMWIND_CITY },
+					-- #endif
+				},
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 14,
