@@ -352,6 +352,10 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208065, {	-- Quantum Legs
 		filter(CLOTH, {
+			q(77625, {	-- when you learn everything from Quantum Legs (Cloth)
+				["name"] = "Quantum Legs (Cloth) completed.",
+				["collectible"] = false,
+			}),
 			ig(114267),	-- Firefly Trousers					(NYI)
 			ig(3957),	-- Mesh Pants						(NYI)(Unique)
 			ig(121511),	-- Runespeaker's Leggings			(NYI)
@@ -860,6 +864,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
 					["name"] = "Quantum Gloves (Plate) completed.",
+				}),
+				q(77625, {	-- when you learn everything from Quantum Legs (Cloth)
+					["name"] = "Quantum Legs (Cloth) completed.",
 				}),
 				q(77624, {	-- when you learn everything from Quantum Legs (Leather)
 					["name"] = "Quantum Legs (Leather) completed.",
@@ -1417,7 +1424,6 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Quantum Items
 		-- q(77622),	-- when you learn everything from Quantum ?
-		-- q(77625),	-- when you learn everything from Quantum ?
 	}),
 });
 
