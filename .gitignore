@@ -39,7 +39,6 @@ obj/
 __pycache__
 .contrib/Parser/localizedObjects.txt
 .contrib/.tools/log.txt
-/.vscode/settings.json
 .venv
 .contrib/Parser/*.txt
 .contrib/.source/Spell Learned At/bin/
