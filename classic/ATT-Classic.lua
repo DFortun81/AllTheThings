@@ -4751,6 +4751,7 @@ local function AddTomTomWaypointInternal(group, depth)
 		end
 		group.plotting = nil;
 
+		---@diagnostic disable-next-line: undefined-global
 		if TomTom then
 			if (depth == 0 and not __TomTomWaypointFirst) or not group.saved then
 				if group.coords or group.coord then
@@ -4778,10 +4779,12 @@ local function AddTomTomWaypointInternal(group, depth)
 	end
 end
 local function AddTomTomWaypoint(group)
+	---@diagnostic disable-next-line: undefined-global
 	if TomTom or C_SuperTrack then
 		__TomTomWaypointFirst = true;
 		wipe(__TomTomWaypointCache);
 		AddTomTomWaypointInternal(group, 0);
+		---@diagnostic disable-next-line: undefined-global
 		if TomTom then
 			local xnormal;
 			for mapID,c in pairs(__TomTomWaypointCache) do
@@ -4865,6 +4868,7 @@ local function AddTomTomWaypoint(group)
 						if first then
 							local sourcePath = app.GenerateSourceHash(first);
 							for i=2,#root,1 do sourcePath = sourcePath .. ";" .. app.GenerateSourceHash(root[i]); end
+							---@diagnostic disable-next-line: undefined-global
 							TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
 								from = "ATT",
 								persistent = true,
@@ -4875,7 +4879,9 @@ local function AddTomTomWaypoint(group)
 					end
 				end
 			end
+			---@diagnostic disable-next-line: undefined-global
 			if TomTom.SetClosestWaypoint then
+				---@diagnostic disable-next-line: undefined-global
 				TomTom:SetClosestWaypoint();
 			end
 		end
@@ -4888,6 +4894,7 @@ local function AddTomTomWaypoint(group)
 end
 app.AddTomTomWaypoint = AddTomTomWaypoint;
 app.AddEventHandler("OnReady", function()
+	---@diagnostic disable-next-line: undefined-global
 	local tomTom = TomTom;
 	if tomTom then
 		local oldAddWaypoint = tomTom.AddWaypoint;
@@ -4926,7 +4933,9 @@ app.AddEventHandler("OnReady", function()
 							opts.minimap_icon = first.icon;
 							opts.worldmap_icon = first.icon;
 						end
+						---@diagnostic disable-next-line: undefined-global
 						if TomTom.DefaultCallbacks then
+							---@diagnostic disable-next-line: undefined-global
 							local callbacks = TomTom:DefaultCallbacks();
 							callbacks.minimap.tooltip_update = nil;
 							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
