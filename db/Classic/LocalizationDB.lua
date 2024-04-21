@@ -1,4 +1,5 @@
-﻿-----------------------------------------------------------------
+﻿---@diagnostic disable: deprecated
+-----------------------------------------------------------------
 --   L O C A L I Z A T I O N   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------------------
 local localize = function(t, data) for k,v in pairs(data) do t[k] = v; end end

@@ -86,6 +86,7 @@ namespace ATT
         {
             var utcNow = DateTime.UtcNow;
             builder.Insert(0, new StringBuilder()
+                .AppendLine("---@diagnostic disable: deprecated")
                 .AppendLine("-----------------------------------------------------")
                 .AppendLine("--   R O O T   C A T E G O R I E S   M O D U L E   --")
                 .AppendLine("-----------------------------------------------------")

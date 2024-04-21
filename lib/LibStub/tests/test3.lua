@@ -3,6 +3,7 @@ strmatch = string.match
 
 loadfile("../LibStub.lua")()
 
+---@diagnostic disable-next-line: missing-parameter
 local proxy = newproxy() -- non-string
 
 assert(not pcall(LibStub.NewLibrary, LibStub, proxy, 1)) -- should error, proxy is not a string, it's userdata

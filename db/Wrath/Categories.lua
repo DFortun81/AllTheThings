@@ -1,4 +1,5 @@
-﻿-----------------------------------------------------
+﻿---@diagnostic disable: deprecated
+-----------------------------------------------------
 --   R O O T   C A T E G O R I E S   M O D U L E   --
 -----------------------------------------------------
 --   WARNING: This file is dynamically generated   --

@@ -2231,6 +2231,7 @@ namespace ATT
 
                 // Prepare a Localization Database file.
                 StringBuilder localizationDatabase = new StringBuilder()
+                    .AppendLine("---@diagnostic disable: deprecated")
                     .AppendLine("-----------------------------------------------------------------")
                     .AppendLine("--   L O C A L I Z A T I O N   D A T A B A S E   M O D U L E   --")
                     .AppendLine("-----------------------------------------------------------------")
