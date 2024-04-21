@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1428, {	-- Continued Threat
 					["qg"] = 5593,	-- Katar
 					["sourceQuest"] = 1427,	-- Threat From the Sea
-					["coord"] = { 83.8, 80.4, DUSTWALLOW_MARSH },
+					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
