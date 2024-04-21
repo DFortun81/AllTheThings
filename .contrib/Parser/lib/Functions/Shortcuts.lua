@@ -1,3 +1,4 @@
+---@diagnostic disable: lowercase-global
 -- Construct a commonly formatted object.
 struct = function(field, id, t)
 	if not t then t = {};
@@ -74,7 +75,7 @@ appendAllGroups = function(g, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then
 		g = g or {};
-		local i, a = #g + 1;
+		local i, a = #g + 1, nil;
 		for n=1,arrs do
 			a = select(n, ...);
 			if a then
@@ -332,6 +333,7 @@ end
 applyevent = function(eventID, data)
 	if not eventID then
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
+		---@diagnostic disable-next-line: undefined-global
 		print(CurrentSubFileName or CurrentFileName);
 	end
 	-- Force Root Event object type for event headers to ensure they parse as Events
@@ -517,89 +519,98 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-
-	-- #if BEFORE WRATH
-	-- These are helper variables (capitalized for a reason)
-	local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;
-	t.AllProvidersRequiredForAchievement = nil;
-	local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
-	t.AllSourceQuestsRequiredForAchievement = nil;
-	if not t.OnUpdate then
-		if t.provider or t.providers then
-			-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
-			t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
-		elseif t.sourceQuest or t.sourceQuests then
-			-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
-			t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
+	if t then
+		-- #if BEFORE WRATH
+		-- These are helper variables (capitalized for a reason)
+		local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;
+		t.AllProvidersRequiredForAchievement = nil;
+		local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
+		t.AllSourceQuestsRequiredForAchievement = nil;
+		if not t.OnUpdate then
+			if t.provider or t.providers then
+				-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
+				t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
+			elseif t.sourceQuest or t.sourceQuests then
+				-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
+				t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
+			end
 		end
+		-- #endif
 	end
-	-- #endif
 	return t;
 end
 achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
 	t = ach(id, t);
-	-- #if ANYCLASSIC
-	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-	t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
-	-- #if BEFORE 4.1.0
-	if not t.OnUpdate then
-		-- #if AFTER 3.0.1
-		if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
-		-- #endif
-			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
-		-- #if AFTER 3.0.1
+	if t then
+		-- #if ANYCLASSIC
+		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+		t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
+		-- #if BEFORE 4.1.0
+		if not t.OnUpdate then
+			-- #if AFTER 3.0.1
+			if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
+			-- #endif
+				t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
+			-- #if AFTER 3.0.1
+			end
+			-- #endif
 		end
+		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
+		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
+		-- #endif
 		-- #endif
 	end
-	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
-	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
-	-- #endif
-	-- #endif
 	return t;
 end
 achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
 	t = ach(id, t);
-	-- #if ANYCLASSIC
-	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
-	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
-	t.OnInit = init ..[[); end]];
-	-- #if BEFORE 3.0.1
-	if not t.OnUpdate then
-		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_OnUpdate]];
+	if t then
+		-- #if ANYCLASSIC
+		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+		local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+		for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+		t.OnInit = init ..[[); end]];
+		-- #if BEFORE 3.0.1
+		if not t.OnUpdate then
+			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_OnUpdate]];
+		end
+		-- #endif
+		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
+		-- #endif
 	end
-	-- #endif
-	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
-	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
-	-- #endif
 	return t;
 end
 achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
 	t = ach(id, t);
-	-- #if ANYCLASSIC
-	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
-	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
-	t.OnInit = init ..[[); end]];
-	-- #if BEFORE 3.0.1
-	if not t.OnUpdate then
-		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate]];
+	if t then
+		-- #if ANYCLASSIC
+		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+		local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+		for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+		t.OnInit = init ..[[); end]];
+		-- #if BEFORE 3.0.1
+		if not t.OnUpdate then
+			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate]];
+		end
+		-- #endif
+		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
+		-- #endif
 	end
-	-- #endif
-	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
-	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
-	-- #endif
 	return t;
 end
 achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
-	if t.sym then
-		error("Do not use 'sym' on achievement: "..id..". It causes criteria to be placed under Hidden Quest Triggers")
+	if t then
+		if t.sym then
+			error("Do not use 'sym' on achievement: "..id..". It causes criteria to be placed under Hidden Quest Triggers")
+		end
+		-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
+		-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard
+		-- but for now prevent the Criteria from disappearing into the Unsorted window
+		bubbleDown({ _noautomation = true }, t);
 	end
-	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
-	-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard
-	-- but for now prevent the Criteria from disappearing into the Unsorted window
-	bubbleDown({ _noautomation = true }, t);
 	return t;
 end
 explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
@@ -723,51 +734,53 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 	end
 	local difficultyID, ids = GetOrCreateMultiDifficulty(id);
 	t = struct("difficultyID", difficultyID, t);
-	local db = DifficultyDB[difficultyID];
-	if db then
-		if db.simplify then
-			difficultyID = ids[1];
-			local difficulties,count = {},1;
-			for i=2,#ids,1 do
-				difficulties[count] = ids[i];
-				count = count + 1;
+	if t then
+		local db = DifficultyDB[difficultyID];
+		if db then
+			if db.simplify then
+				difficultyID = ids[1];
+				local difficulties,count = {},1;
+				for i=2,#ids,1 do
+					difficulties[count] = ids[i];
+					count = count + 1;
+				end
+				t.difficultyID = difficultyID;
+				t.difficulties = difficulties;
+				ids = nil;
 			end
-			t.difficultyID = difficultyID;
-			t.difficulties = difficulties;
-			ids = nil;
+			-- #if AFTER MOP
+			t.modID = db.modID;
+			-- #endif
 		end
-		-- #if AFTER MOP
-		t.modID = db.modID;
-		-- #endif
-	end
 
-	if ids then
-		local oldDifficulties = t.difficulties;
-		if oldDifficulties then
-			local merged,dict,count = {},{},1;
-			for i,d in ipairs(oldDifficulties) do
-				if not dict[d] then
-					dict[d] = count;
-					merged[count] = d;
-					count = count + 1;
+		if ids then
+			local oldDifficulties = t.difficulties;
+			if oldDifficulties then
+				local merged,dict,count = {},{},1;
+				for i,d in ipairs(oldDifficulties) do
+					if not dict[d] then
+						dict[d] = count;
+						merged[count] = d;
+						count = count + 1;
+					end
 				end
-			end
-			local firstID = ids[1];
-			for i=2,#ids,1 do
-				local d = ids[i];
-				if not dict[d] then
-					dict[d] = count;
-					merged[count] = d;
-					count = count + 1;
+				local firstID = ids[1];
+				for i=2,#ids,1 do
+					local d = ids[i];
+					if not dict[d] then
+						dict[d] = count;
+						merged[count] = d;
+						count = count + 1;
+					end
 				end
+				if dict[firstID] then
+					table.remove(merged, dict[firstID]);
+				end
+				table.insert(merged, 1, firstID);
+				t.difficulties = merged;
+			else
+				t.difficulties = ids;
 			end
-			if dict[firstID] then
-				table.remove(merged, dict[firstID]);
-			end
-			table.insert(merged, 1, firstID);
-			t.difficulties = merged;
-		else
-			t.difficulties = ids;
 		end
 	end
 	return t;
@@ -821,7 +834,7 @@ expansion = function(id, patch, t)							-- Create an EXPANSION Object
 		t = togroups(t);
 	end
 	t = struct("expansionID", id, t);
-	if not t.timeline then
+	if t and not t.timeline then
 		t.timeline = { "added " .. math.floor(id) .. ".0" };
 	end
 	return t;
@@ -922,7 +935,7 @@ inst = function(id, t)									-- Create an INSTANCE Object
 
 	-- #if BEFORE WRATH
 	-- Not yet supported in classic.
-	if t.groups or t.g then
+	if t and (t.groups or t.g) then
 		-- Convert to a MAP ID.
 		if not t.mapID then
 			if t.maps then
@@ -960,27 +973,29 @@ end
 molemachine = function(questID, name, t)				-- Create a MOLE MACHINE Quest Object
 	if questID then
 		t = struct("questID", questID, t);
-		if not t.provider then
+		if t and not t.provider then
 			t.provider = { "n", 143925 };	-- Dark Iron Mole Machine
 		end
 	else
 		t = struct("npcID", 143925, t);	-- Dark Iron Mole Machine
 	end
-	if not t.icon then
-		t.icon = "Interface\\Icons\\ability_racial_molemachine";
-	end
-	if not t.timeline then
-		t.timeline = { "added 8.0.1.27326" };
-	end
-	-- TODO: Do we really need the location as a description if its in each zone?
-	-- CRIEVE NOTE: Perhaps make an areaID-based class that can do header things?
-	-- CRIEVE NOTE2: ... Hell yeah, when I get time I'm converting those names to areaID!
-	if name then
-		t.name = name;
-		t.description = name;
-	end
-	if not t.races then
-		t.races = { DARKIRON };
+	if t then
+		if not t.icon then
+			t.icon = "Interface\\Icons\\ability_racial_molemachine";
+		end
+		if not t.timeline then
+			t.timeline = { "added 8.0.1.27326" };
+		end
+		-- TODO: Do we really need the location as a description if its in each zone?
+		-- CRIEVE NOTE: Perhaps make an areaID-based class that can do header things?
+		-- CRIEVE NOTE2: ... Hell yeah, when I get time I'm converting those names to areaID!
+		if name then
+			t.name = name;
+			t.description = name;
+		end
+		if not t.races then
+			t.races = { DARKIRON };
+		end
 	end
 	return t;
 end
@@ -1070,17 +1085,19 @@ qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI un
 end
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	t = struct("objectiveID", id, t);
-	-- #if NOT OBJECTIVES
-	ProcessProviderForRetailAsUncollectible(t.provider);
-	if t.providers then
-		for i,provider in ipairs(t.providers) do
-			ProcessProviderForRetailAsUncollectible(provider);
+	if t then
+		-- #if NOT OBJECTIVES
+		ProcessProviderForRetailAsUncollectible(t.provider);
+		if t.providers then
+			for i,provider in ipairs(t.providers) do
+				ProcessProviderForRetailAsUncollectible(provider);
+			end
 		end
-	end
-	-- #endif
-	if t.itemID then
-		print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
-		print("Use a provider entry instead!");
+		-- #endif
+		if t.itemID then
+			print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
+			print("Use a provider entry instead!");
+		end
 	end
 	return t;
 end
@@ -1489,6 +1506,7 @@ createHeader = function(data)
 			return;
 		end
 		customHeaders[headerID] = data;
+		---@diagnostic disable-next-line: undefined-global
 		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("HEADER", headerID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 		return headerID;

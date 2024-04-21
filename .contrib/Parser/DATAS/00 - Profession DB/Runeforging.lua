@@ -1,4 +1,4 @@
-local i = GetRecipeHelperForProfession(RUNEFORING);
+local i = GetRecipeHelperForProfession(RUNEFORGING);
 
 -----------------
 -- PATCH 3.0.2 --
