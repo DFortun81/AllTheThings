@@ -705,6 +705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5, {	-- Jitters' Growling Gut
 					["qg"] = 288,	-- Jitters
+					["sourceQuest"] = 163,	-- Raven Hill
 					["coord"] = { 18.2, 56.3, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -1263,6 +1264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(95, {	-- Sven's Revenge
 					["qg"] = 311,	-- Sven Yorgen
+					["sourceQuest"] = 164,	-- Deliveries to Sven
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,

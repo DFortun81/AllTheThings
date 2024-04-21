@@ -1761,6 +1761,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2460, {	-- The Shattered Salute
 					["qg"] = 3401,	-- Shenthul
+					-- #if AFTER TBC
+					["sourceQuest"] = 10794,	-- Rogues of the Shattered Hand
+					-- #endif
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { ROGUE },

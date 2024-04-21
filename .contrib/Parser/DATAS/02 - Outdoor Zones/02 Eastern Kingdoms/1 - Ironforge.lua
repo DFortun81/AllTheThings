@@ -1103,6 +1103,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1715, {	-- The Slaughtered Lamb
 					["qg"] = 6120,	-- Lago Blackwrench
+					["altQuests"] = { 1685 },	-- Gakin's Summons (Voidwalker)
 					["coord"] = { 47.6, 9.6, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { HUMAN, GNOME },

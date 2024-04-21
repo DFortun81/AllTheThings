@@ -549,15 +549,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(10302, {	-- Volatile Mutations
 							["qg"] = 16514,	-- Botanist Taerix
-							-- #if BEFORE MOP
-							["sourceQuest"] = 9279,	-- You Survived! [NOTE: On new Draenei, it was offered at the same time as Replenishing the Healing Crystal]
-							-- #else
-							["sourceQuests"] = {	-- TODO: Test this source quest list.
+							["sourceQuests"] = {
+								-- #if AFTER MOP
+								-- TODO: Test this source quest list.
 								9369,	-- Replenishing the Healing Crystal (All other ally races)
 								9280,	-- Replenishing the Healing Crystal (Draenei)
+								-- #endif
 								9371,	-- Botanist Taerix (breadcrumb)
 							},
-							-- #endif
 							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
 							-- #else

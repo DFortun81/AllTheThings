@@ -762,12 +762,6 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
 					}),
-					q(11046, {	-- Chief Apothecary Hildagard
-						["qg"] = 19678,	-- Fantei
-						["coord"] = { 64.6, 70.6, SHATTRATH_CITY },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
-					}),
 					q(10211, {	-- City of Light
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10210,	-- A'dal

@@ -782,21 +782,18 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					q(8797, {	-- The Alliance Needs Your Help! [Darnassus]
 						["qg"] = 15709,	-- Master Sergeant Moonshadow <War Effort Recruiter>
 						["coord"] = { 39.1, 38.3, DARNASSUS },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 10,
 					}),
 					q(8795, {	-- The Alliance Needs Your Help! [Ironforge]
 						["qg"] = 15707,	-- Master Sergeant Fizzlebolt <War Effort Recruiter>
 						["coord"] = { 27.5, 73.3, IRONFORGE },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 10,
 					}),
 					q(8796, {	-- The Alliance Needs Your Help! [Stormwind]
 						["qg"] = 15708,	-- Master Sergeant Maclure <War Effort Recruiter>
 						["coord"] = { 54.1, 59.6, STORMWIND_CITY },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 10,
 					}),
@@ -804,7 +801,6 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					-- They added this War Effort Quest after the TBC Prepatch... long after the event was over. Why though?
 					q(10501, {	-- The Alliance Needs Your Help! [The Exodar]
 						["qg"] = 21156,	-- Master Sergeant Thelaana <War Effort Recruiter>
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 10,
 					}),
@@ -1568,21 +1564,18 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					q(8792, {	-- The Horde Needs Your Help! [Thunder Bluff]
 						["qg"] = 15702,	-- Senior Sergeant Taiga <War Effort Recruiter>
 						["coord"] = { 38.8, 52.9, THUNDER_BLUFF },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),
 					q(8793, {	-- The Horde Needs Your Help! [Undercity]
 						["qg"] = 15703,	-- Senior Sergeant Grimsford <War Effort Recruiter>
 						["coord"] = { 62.8, 49.2, UNDERCITY },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),
 					q(8794, {	-- The Horde Needs Your Help! [Orgrimmar]
 						["qg"] = 15704,	-- Senior Sergeant Kai'jin <War Effort Recruiter>
 						["coord"] = { 30.3, 67.6, ORGRIMMAR },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),

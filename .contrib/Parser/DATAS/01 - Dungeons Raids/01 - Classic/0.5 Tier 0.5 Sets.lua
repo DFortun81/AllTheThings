@@ -1485,24 +1485,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 				}),
-				q(9030, {	-- Anthion's Parting Words
-					["qg"] = 16013,	-- Deliana
-					["altQuests"] = {
-						8951,	-- Anthion's Parting Words [ALLIANCE]
-						8952,	-- Anthion's Parting Words [ALLIANCE]
-						8953,	-- Anthion's Parting Words [ALLIANCE]
-						8954,	-- Anthion's Parting Words [ALLIANCE]
-						8955,	-- Anthion's Parting Words [ALLIANCE]
-						8956,	-- Anthion's Parting Words [ALLIANCE]
-						8958,	-- Anthion's Parting Words [ALLIANCE]
-						8959,	-- Anthion's Parting Words [ALLIANCE]
-						10496,	-- Anthion's Parting Words [ALLIANCE]
-					},
-					["coord"] = { 43.53, 52.64, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 58,
-				}),
 				q(8947, {	-- Anthion's Strange Request
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8946,	-- Proof of Life

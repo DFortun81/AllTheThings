@@ -14,6 +14,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(6842),	-- <UNUSED> - completes with 'Umber, Archivist' (questID 6844)
 		q(9611),	-- Azuremyst: aa - A - Quest Flag 000 — triggered after healing the NPC/killing the mob before you can pick up "A Hearty Thanks!" on Azuremyst Isle
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
+		q(9030, { ["name"] = "Anthion's Parting Words", }),	-- This triggers when completing any of the Anthion's Parting Words quests.
+		q(9031, { ["name"] = "<TXT>Anthion's Parting Words", }),	-- This triggers when completing any of the Anthion's Parting Words quests.
 	}),
 
 	-------------------

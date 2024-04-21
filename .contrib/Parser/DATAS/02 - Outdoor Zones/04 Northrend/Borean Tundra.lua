@@ -1689,14 +1689,14 @@ root(ROOTS.Zones, {
 					}),
 					q(11888, {	-- Ride to Taunka'le Village
 						["qg"] = 25978,	-- Ambassador Talonga
-						["coord"] = { 41.7, 54.6, BOREAN_TUNDRA },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
 							11595,	-- The Defense of Warsong Hold
 							11596,	-- The Defense of Warsong Hold
 							11597,	-- The Defense of Warsong Hold
 						},
+						["coord"] = { 41.7, 54.6, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(11674, {	-- Sage Highmesa is Missing
 						["qg"] = 25602,	-- Greatmother Taiga
@@ -2345,6 +2345,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11890, {	-- What Are They Up To?
 						["qg"] = 25982,	-- Sage Earth and Sky
+						["sourceQuest"] = 11888,	-- Ride to Taunka'le Village
 						["coord"] = { 77.2, 38.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 					}),

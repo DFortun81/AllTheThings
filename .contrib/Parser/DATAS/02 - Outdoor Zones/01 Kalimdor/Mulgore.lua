@@ -42,6 +42,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(753, {	-- A Humble Task (2/2)
 							["qg"] = 2991,	-- Greatmother Hawkwind
+							["sourceQuest"] = 752,	-- A Humble Task (1/2)
 							["coord"] = { 50.0, 81.0, MULGORE },
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = HORDE_ONLY,

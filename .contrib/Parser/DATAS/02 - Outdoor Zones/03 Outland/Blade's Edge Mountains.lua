@@ -451,13 +451,6 @@ root(ROOTS.Zones, {
 						["classes"] = exclude(DRUID, ALL_CLASSES),
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
-					q(11043, {	-- Building a Better Gryphon
-						["qg"] = 21107,	-- Rip Pedalslam
-						["coord"] = { 61.2, 70.4, BLADES_EDGE_MOUNTAINS },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
-						["lvl"] = lvlsquish(67, 67, 20),
-					}),
 					q(10567, {	-- Creating the Pendant
 						["qg"] = 21782,	-- Timeon
 						["coord"] = { 62.2, 39.1, BLADES_EDGE_MOUNTAINS },
@@ -1249,13 +1242,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 20),
-					}),
-					q(11047, {	-- The Apprentice's Request
-						["qg"] = 23280,	-- Agadai
-						["coord"] = { 52.0, 54.4, NAGRAND },
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
-						["lvl"] = lvlsquish(65, 65, 20),
 					}),
 					q(10504, {	-- The Bladespire Ogres
 						["qg"] = 21158,	-- Commander Skyshadow

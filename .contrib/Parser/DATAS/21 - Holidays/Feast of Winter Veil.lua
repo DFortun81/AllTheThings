@@ -1990,7 +1990,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				WETLANDS,
 			},
 			["races"] = ALLIANCE_ONLY,
-			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(8828, {	-- Winter's Presents [H]
@@ -2014,7 +2013,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				WETLANDS,
 			},
 			["races"] = HORDE_ONLY,
-			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		{	-- You're a Mean One...

@@ -3287,6 +3287,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40589,	-- Dirge Quikcleave
 					["coord"] = { 52.4, 29.0, TANARIS },
 					-- #endif
+					["sourceQuests"] = {
+						6611,	-- To Gadgetzan You Go!
+						6612,	-- I Know A Guy...
+					},
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
 					["altQuests"] = { 13825 },	-- Clamlette Surprise
@@ -3312,7 +3316,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13825, {	-- Clamlette Surprise
 					["qg"] = 8125,	-- Dirge Quikcleave
-					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
+					["sourceQuests"] = {
+						6611,	-- To Gadgetzan You Go!
+						6612,	-- I Know A Guy...
+					},
 					["coord"] = { 52.63, 28.12, TANARIS },
 					["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
 					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)

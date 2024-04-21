@@ -872,7 +872,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6546,	-- Tabetha
 					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["timeline"] = { "added 2.3.0" },
-					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(38, 38, 15),
 				}),
 				q(11215, {	-- Help Mudsprocket
@@ -1354,8 +1353,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27183, {	-- Marsh Frog Legs
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuests"] = {
-						27215,	-- The Hermit of Swamplight Manor [A]
-						27182,	-- Witch Hill [H]
+						27215,	-- The Hermit of Swamplight Manor
+						27182,	-- The Hermit of Witch Hill
 					},
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1375,6 +1374,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER TBC
 				q(1218, {	-- Marsh Frog Legs (TBC+) / Soothing Spices (Classic)
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
+					["sourceQuests"] = {
+						11177,	-- The Hermit of Swamplight Manor
+						11225,	-- The Hermit of Witch Hill
+					},
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 30,

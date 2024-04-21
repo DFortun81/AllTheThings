@@ -92,7 +92,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(241, { ["name"] = "<TEST> HEY MISTER WILSON!", }),
 			q(73, { ["name"] = "<TXT> No Reward", }),
 			q(2868, { ["name"] = "<TXT> The Shriveled Heart", }),
-			q(9031, { ["name"] = "<TXT>Anthion's Parting Words", }),
 			q(242, { ["name"] = "<UNUSED>", }),
 			q(259, { ["name"] = "<UNUSED>", }),
 			q(260, { ["name"] = "<UNUSED>", }),

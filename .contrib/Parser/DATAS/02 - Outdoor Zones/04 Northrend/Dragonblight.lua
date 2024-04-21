@@ -894,10 +894,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12789, {	-- Into the Breach!
-						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
-						["altQuests"] = { 12770 },	-- Reallocating Resources	-- TODO: confirm this
 						["qg"] = 28228,	-- Crusader Valus
 						["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
+						["altQuests"] = { 12770 },	-- Reallocating Resources	-- TODO: confirm this
+						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
 						["isBreadcrumb"] = true,
 					}),
 					q(11978, {	-- Into the Fold
@@ -2040,10 +2040,10 @@ root(ROOTS.Zones, {
 					}),
 					q(12487, {	-- To Conquest Hold, But Be Careful!
 						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
+						["sourceQuest"] = 12488,	-- The High Executor Needs You
 						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
 						["altQuests"] = {
-							12488,	-- The High Executor Needs You
 							-- #if AFTER 6.2.0.19953
 							39206,	-- Warchief's Command: Grizzly Hills!
 							-- #endif

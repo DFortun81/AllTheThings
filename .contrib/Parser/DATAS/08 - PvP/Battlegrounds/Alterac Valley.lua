@@ -372,6 +372,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						12097,	-- Frostwolf Quartermaster
 						13776,	-- Corporal Teeka Bloodsnarl
 					},
+					["sourceQuest"] = 7123,	-- Speak with our Quartermaster
 					-- #if AFTER CATA
 					["coord"] = { 59.7, 31.2, HILLSBRAD_FOOTHILLS },
 					-- #else

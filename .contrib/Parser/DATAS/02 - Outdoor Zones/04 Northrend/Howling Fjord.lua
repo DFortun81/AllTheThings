@@ -604,11 +604,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11256,	-- Skorn Must Fall!
 					}),
 					q(11411, {	-- Camp Winterhoof
-						["coord"] = { 53.0, 66.0, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
 						["qg"] = 24125,	-- Cormath the Courier
 						["sourceQuest"] = 11309,	-- Parts for the Job
-						["isBreadcrumb"] = true,
+						["coord"] = { 53.0, 66.0, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					q(13268, {	-- Cloth Scavenging (A)
 						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable

@@ -559,6 +559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5901,	-- Islen Waterseer
 					["sourceQuests"] = {
 						2985,	-- Call of Water (1/9) [Durotar]
+						2986,	-- Call of Water (1/9) [Mulgore]
 						1528,	-- Call of Water (1/9) [Orgrimmar]
 						1529,	-- Call of Water (1/9) [Thunder Bluff]
 					},
@@ -1552,6 +1553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.6, 39.3, NORTHERN_BARRENS },
 					-- #else
 					["qg"] = 3429,	-- Thork
+					["sourceQuest"] = 854,	-- Journey to the Crossroads
 					["coord"] = { 51.50, 30.86, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,

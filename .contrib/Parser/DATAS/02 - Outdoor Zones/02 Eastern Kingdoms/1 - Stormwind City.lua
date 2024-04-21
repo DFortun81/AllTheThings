@@ -2587,7 +2587,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1688, {	-- Surena Caledon
 					["qg"] = 6122,	-- Gakin the Darkbinder
-					["sourceQuest"] = 1685,	-- Gakin's Summons (Voidwalker)
+					["sourceQuests"] = {
+						1685,	-- Gakin's Summons (Voidwalker)
+						1715,	-- The Slaughtered Lamb
+					},
 					-- #if AFTER WRATH
 					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
 					-- #else

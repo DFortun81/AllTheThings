@@ -1860,6 +1860,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1057, {	-- Reclaiming the Charred Vale (1/2)
 					["qg"] = 3994,	-- Keeper Albagorm
+					["sourceQuest"] = 1056,	-- Journey to Stonetalon Peak
 					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,

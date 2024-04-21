@@ -233,6 +233,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10624, {	-- A Haunted History
 						["qg"] = 21772,	-- Chief Apothecary Hildagard
+						["sourceQuests"] = 11046,	-- Chief Apothecary Hildagard
 						["coord"] = { 29.9, 27.6, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 					}),
@@ -420,6 +421,7 @@ root(ROOTS.Zones, {
 					q(10562, {	-- Besieged! (A)
 						["qg"] = 21357,	-- Wing Commander Nuainn
 						["sourceQuests"] = {
+							11043,	-- Building a Better Gryphon
 							11044,	-- Visions of Destruction
 							-- #if AFTER 7.3.5.25600
 							49550,	-- Hero's Call: Shadowmoon Valley!
@@ -430,9 +432,13 @@ root(ROOTS.Zones, {
 					}),
 					q(10595, {	-- Besieged! (H)
 						["qg"] = 21359,	-- Blood Guard Gulmok
-						-- #if AFTER 7.3.5.25600
-						["sourceQuest"] = 49532,	-- Warchief's Command: Shadowmoon Valley!
-						-- #endif
+						["sourceQuests"] = {
+							11048,	-- Kroghan's Report
+							11047,	-- The Apprentice's Request
+							-- #if AFTER 7.3.5.25600
+							49532,	-- Warchief's Command: Shadowmoon Valley!
+							-- #endif
+						},
 						["coord"] = { 30.4, 32.4, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 					}),
@@ -541,6 +547,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.5, 38.1, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 					}),
+					q(11043, {	-- Building a Better Gryphon
+						["qg"] = 21107,	-- Rip Pedalslam
+						["coord"] = { 61.2, 70.4, BLADES_EDGE_MOUNTAINS },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(67, 67, 20),
+					}),
 					q(10626, {	-- Capture the Weapons (A)
 						["qg"] = 19370,	-- Ordinn Thunderfist
 						["sourceQuest"] = 10621,	-- Illidari Bane-Shard (A)
@@ -573,6 +586,12 @@ root(ROOTS.Zones, {
 							i(30950),	-- Darkhunter's Cinch
 							i(30966),	-- Singed Vambraces
 						},
+					}),
+					q(11046, {	-- Chief Apothecary Hildagard
+						["qg"] = 19678,	-- Fantei
+						["coord"] = { 64.6, 70.6, SHATTRATH_CITY },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 					}),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11100, {	-- Commander Arcus
 						["qg"] = 21402,	-- Anchorite Ceyla
@@ -964,6 +983,12 @@ root(ROOTS.Zones, {
 					q(10804, {	-- Kindness
 						["qg"] = 22113,	-- Mordenai
 						["coord"] = { 59.3, 58.7, SHADOWMOON_VALLEY },
+					}),
+					q(11048, {	-- Kroghan's Report
+						["qg"] = 18090,	-- Captain Kroghan
+						["coord"] = { 55.4, 37.6, NAGRAND },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(11497, {	-- Learning to Fly (A)
 						["qg"] = 18940,	-- Nutral
@@ -1403,6 +1428,13 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(30721),	-- Spectrecles
 						},
+					}),
+					q(11047, {	-- The Apprentice's Request
+						["qg"] = 23280,	-- Agadai
+						["coord"] = { 52.0, 54.4, NAGRAND },
+						["isBreadcrumb"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = lvlsquish(65, 65, 20),
 					}),
 					q(10606, {	-- The Art of Fel Reaver Maintenance (A)
 						["qg"] = 21790,	-- Plexi
@@ -1844,6 +1876,12 @@ root(ROOTS.Zones, {
 							i(30948),	-- Sunfury Legguards
 							i(31009),	-- Wildcaller
 						},
+					}),
+					q(11044, {	-- Visions of Destruction
+						["qg"] = 23268,	-- Seer Jovar
+						["coord"] = { 55.4, 68.6, NAGRAND },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon (A)
 						["provider"] = { "o", 184946 },	-- Wanted Poster

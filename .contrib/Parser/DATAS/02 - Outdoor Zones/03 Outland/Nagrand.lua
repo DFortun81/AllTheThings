@@ -729,12 +729,6 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 						["coord"] = { 77.2, 34.8, SHATTRATH_CITY },
 					}),
-					q(11048, {	-- Kroghan's Report
-						["qg"] = 18090,	-- Captain Kroghan
-						["coord"] = { 55.4, 37.6, NAGRAND },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
-					}),
 					q(10253, {	-- Levixus the Soul Caller
 						["qg"] = 19844,	-- Nitrin the Learned
 						["sourceQuest"] = 10252,	-- Vision of the Dead
@@ -1490,12 +1484,6 @@ root(ROOTS.Zones, {
 						["qg"] = 19844,	-- Nitrin the Learned
 						["sourceQuest"] = 10251,	-- The Master's Grand Design?
 						["coord"] = { 51.8, 56.8, NAGRAND },
-					}),
-					q(11044, {	-- Visions of Destruction
-						["qg"] = 23268,	-- Seer Jovar
-						["coord"] = { 55.4, 68.6, NAGRAND },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
 					}),
 					q(9938, {	-- WANTED: Durn the Hungerer (A)
 						["qg"] = 18408,	-- Warden Moi'bff Jill

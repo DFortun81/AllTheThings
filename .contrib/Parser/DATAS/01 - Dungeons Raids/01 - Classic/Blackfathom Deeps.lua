@@ -450,6 +450,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1275, {	-- Researching the Corruption
 					["qg"] = 8997,	-- Gershala Nightwhisper
+					["sourceQuest"] = 3765,	-- The Corruption Abroad
 					["coord"] = { 38.3, 43.0, DARKSHORE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -942,6 +943,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(78926, {	-- Researching the Corruption
 							["qg"] = 8997,	-- Gershala Nightwhisper
+							["sourceQuest"] = 3765,	-- The Corruption Abroad
 							["coord"] = { 38.3, 43.0, DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
