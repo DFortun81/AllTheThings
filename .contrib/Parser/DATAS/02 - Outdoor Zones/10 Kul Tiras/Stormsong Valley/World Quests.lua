@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = HORDE_ONLY,
 			}),
 			q(52330, {	-- Beehemoth
-				["npcID"] = 134147,		-- Beehemoth
+				["cr"] = 134147,		-- Beehemoth
 				["g"] = {
 					i(160459, {	-- Apiarist's Stingproof Belt
 						["bonusID"] = 4803,		-- WQ Bonus ID

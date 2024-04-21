@@ -56,6 +56,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					crit(65405, {	-- Zenata danced with at Dragonskull Island
 						["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
+						["provider"] = {"n",207311},	-- Zenata
+						["_noautomation"] = true,
 					}),
 					crit(65406, {	-- Zenata danced with at Concord Observatory
 						["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },

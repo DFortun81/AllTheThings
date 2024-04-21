@@ -3293,6 +3293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
+					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
 					["altQuests"] = { 13825 },	-- Clamlette Surprise
 					["cost"] = {
 						{ "i", 12207, 12 },	-- Giant Egg
