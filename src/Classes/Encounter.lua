@@ -18,7 +18,7 @@ if EJ_GetEncounterInfo and app.GameBuildVersion >= 50000 then
 		if field then return _t[field]; end
 	end
 	local function default_displayInfo(t)
-		local displayInfos, id, displayInfo = {}, t.encounterID;
+		local displayInfos, id, displayInfo = {}, t.encounterID, nil;
 		for i=1,MAX_CREATURES_PER_ENCOUNTER do
 			displayInfo = select(4, EJ_GetCreatureInfo(i, id));
 			if displayInfo then

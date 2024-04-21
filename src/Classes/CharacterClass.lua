@@ -27,7 +27,7 @@ local ClassIcons = {
 	[13] = app.asset("ClassIcon_Evoker"),
 };
 local ClassInfoByID, ClassInfoByClassFile, ClassInfoByClassName = {}, {}, {};
-local GetSpecializationInfoByID, SpecInfoMetatable = GetSpecializationInfoByID;
+local GetSpecializationInfoByID, SpecInfoMetatable = GetSpecializationInfoByID, nil;
 if GetSpecializationInfoByID then
 	SpecInfoMetatable = { __index = function(t, key)
 		local specID = math_floor(key);
@@ -122,6 +122,7 @@ local ClassInfoMetatable = { __index = function(t, key)
 				isValid = not not colors,
 				c = { classID },
 			};
+			---@diagnostic disable-next-line: inject-field
 			info.icontext = "|T" .. info.icon .. ":0|t " .. info.text;
 			
 			rawset(ClassInfoByID, classID, info);
@@ -219,7 +220,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["title"] = function(t)
 		if IsInGroup() then
 			if rawget(t, "isML") then return MASTER_LOOTER; end
-			if UnitIsGroupLeader(t.unit, "raid") then return RAID_LEADER; end
+			if UnitIsGroupLeader(t.unit) then return RAID_LEADER; end
 		end
 	end,
 	["lvl"] = function(t)

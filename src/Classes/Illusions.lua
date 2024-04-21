@@ -6,7 +6,8 @@ local L = app.L
 
 -- Global Variables
 local GetItemInfo =
-	  GetItemInfo;
+---@diagnostic disable-next-line: deprecated
+	((C_Item and C_Item.GetItemInfo) or GetItemInfo);
 
 -- Illusion Class
 local AccountWideIllusionData = {};

@@ -14,6 +14,7 @@ local events = setmetatable({}, {
 	end
 });
 local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
+---@diagnostic disable-next-line: inject-field
 frame.Suffix = "ATTFRAME";
 if app.DebuggingEvents then
 frame:SetScript("OnEvent", function(self, e, ...)
@@ -38,8 +39,8 @@ app.RegisterFuncEvent = function(self, event, func)
 		app.events[event] = func
 	end
 end
-app.UnregisterEvent = function(self, event, ...)
-	frame:UnregisterEvent(event, ...);
+app.UnregisterEvent = function(self, event)
+	frame:UnregisterEvent(event);
 end
 app.UnregisterEventClean = function(self, event)
 	frame:UnregisterEvent(event);

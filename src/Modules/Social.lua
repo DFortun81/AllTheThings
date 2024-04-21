@@ -267,9 +267,12 @@ SlashCmdList.ALLTHETHINGSYOU = function(cmd)
 			end
 			SendResponseMessage(cmd, (server and server ~= "" and (name .. "-" .. server)) or name);
 		else
-			local cmd = "creatureid:" .. select(6, ("-"):split(UnitGUID("target")));
-			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
-			if group then app:CreateMiniListForGroup(group); end
+			local guid = UnitGUID("target");
+			if guid then
+				local cmd = "creatureid:" .. select(6, ("-"):split(guid));
+				local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
+				if group then app:CreateMiniListForGroup(group); end
+			end
 		end
 	end
 end

@@ -50,10 +50,10 @@ api.FACTION_RACES = {
 	}
 };
 
-local isHuman, remainingTurnIns, totalTurnIns = app.RaceIndex == 1;
+local isHuman, remainingTurnIns, totalTurnIns = app.RaceIndex == 1, nil, nil;
 api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
-	local remainingTurnIns, totalTurnIns = math.ceil((maxReputation - reputation) / repPerTurnIn), math.ceil(maxReputation / repPerTurnIn);
+	remainingTurnIns, totalTurnIns = math.ceil((maxReputation - reputation) / repPerTurnIn), math.ceil(maxReputation / repPerTurnIn);
 	local minimum = totalTurnIns - remainingTurnIns;
 	if minimum < 0 then
 		totalTurnIns = totalTurnIns - minimum;
@@ -67,7 +67,7 @@ api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTur
 end
 api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation, multiplier)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
-	local remainingTurnIns, totalTurnIns =
+	remainingTurnIns, totalTurnIns =
 		math.ceil((maxReputation - reputation) / repPerTurnIn) * multiplier,
 		math.ceil(maxReputation / repPerTurnIn) * multiplier;
 	local minimum = totalTurnIns - remainingTurnIns;

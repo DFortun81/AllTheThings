@@ -11,7 +11,8 @@ local pairs, select, rawget
 local IsQuestFlaggedCompleted, SearchForFieldContainer, GetFixedItemSpecInfo = app.IsQuestFlaggedCompleted, app.SearchForFieldContainer, app.GetFixedItemSpecInfo
 
 local GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown, GetItemInfo
-	= GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown, GetItemInfo
+---@diagnostic disable-next-line: deprecated
+	= GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown, ((C_Item and C_Item.GetItemInfo) or GetItemInfo)
 
 -- Consolidates some spell checking
 local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
@@ -68,6 +69,7 @@ SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 						lastSpellName = spellName;
 						currentSpellRank = 1;
 					end
+					---@diagnostic disable-next-line: redundant-parameter
 					GetSpellName(spellID, currentSpellRank);
 					SpellNameToSpellID[spellName] = spellID;
 				-- else

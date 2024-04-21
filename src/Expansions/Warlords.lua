@@ -160,6 +160,7 @@ do
 	local cache = app.CreateCache(KEY);
 	local function CacheInfo(t, field)
 		local _t, id = cache.GetCached(t);
+		---@diagnostic disable-next-line: redundant-parameter
 		local info = C_Garrison_GetFollowerInfo(id);
 		if info then
 			_t.name = info.name;

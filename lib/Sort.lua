@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for performing sort logic against sets of ATT groups
 
 -- Global locals
-local ipairs, pairs, tostring, type, table_sort, pcall
-	= ipairs, pairs, tostring, type, table.sort, pcall;
+local ipairs, tostring, type, table_sort, pcall
+	= ipairs, tostring, type, table.sort, pcall;
 
 -- Module locals
 
@@ -16,7 +16,7 @@ local sortA, sortB;
 local function calculateSourceQuestDepth(group, text)
 	if group.sourceQuestDepth then return group.sourceQuestDepth; end
 	if group.sourceQuests then
-		local maxDepth, results, depth = 0;
+		local maxDepth, results, depth = 0, nil, nil;
 		for i,sourceQuestID in ipairs(group.sourceQuests) do
 			results = app.SearchForField("questID", sourceQuestID);
 			if results and #results > 0 then

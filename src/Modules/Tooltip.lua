@@ -9,6 +9,8 @@ local L = app.L;
 -- Global locals
 local ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
 	= ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
+---@diagnostic disable-next-line: deprecated
+local GetItemInfo = ((C_Item and C_Item.GetItemInfo) or GetItemInfo);
 
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
@@ -171,7 +173,7 @@ local PLAYER_TOOLTIPS = {
 		local leftSide = _G[self:GetName() .. "TextLeft1"];
 		if leftSide then leftSide:SetText("|cff665a2c" .. name .. " the Time-Loser|r"); end
 		local rightSide = _G[self:GetName() .. "TextRight2"];
-		if rightSide then rightSide:SetText(GetCollectionIcon(0)); end
+		if rightSide then rightSide:SetText(app.GetCollectionIcon(0)); end
 		self:AddLine("This scumbag abused an auto-invite addon to steal the Time-Lost Proto Drake from a person that had them on their friends list. ATT has deemed this unacceptable behaviour and will forever stain this player's reputation so long as they remain on the server.", 0.4, 0.8, 1, true);
 	end,
 };
@@ -186,6 +188,7 @@ local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gen
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
+---@diagnostic disable-next-line: undefined-global
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();
@@ -215,6 +218,7 @@ tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, n
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
+	---@diagnostic disable-next-line: undefined-global
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();
@@ -561,7 +565,7 @@ local function StripColorAndTextureData(txt)
 		c = txt:sub(i,i);
 		if c == "|" then
 			local foundCommand, j = FindCommandEnd(txt, i, l)
-			if foundCommand then
+			if foundCommand and j then
 				i = j;
 			else
 				str = str .. "\\" .. c;
@@ -711,7 +715,8 @@ if TooltipDataProcessor then
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
-	local Enum_TooltipDataType, GetItemInfoInstant, TooltipUtil = Enum.TooltipDataType, GetItemInfoInstant, TooltipUtil;
+	---@diagnostic disable-next-line: deprecated
+	local Enum_TooltipDataType, GetItemInfoInstant, TooltipUtil = Enum.TooltipDataType, ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), TooltipUtil;
 	local TooltipTypes = {
 		[Enum_TooltipDataType.Toy] = "itemID",
 		[Enum_TooltipDataType.Item] = "itemID",
@@ -744,13 +749,14 @@ if TooltipDataProcessor then
 
 	local function RerenderCurrency(self, currencyID)
 		if self:IsVisible() then
+			---@diagnostic disable-next-line: redundant-parameter
 			GameTooltip.SetCurrencyByID(self, currencyID, 1);
 		end
 	end
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
-		local ttType, ttId = ttdata and ttdata.type;
+		local ttType, ttId = ttdata and ttdata.type, nil;
 		if ttType then
 			ttId = ttdata.id;
 			-- Debugging without ATT exclusions
@@ -924,7 +930,7 @@ if TooltipDataProcessor then
 		end
 
 		-- Check the extra data to see if there's an alternate search for the data
-		if ttType then
+		if ttType and ttId then
 			local knownSearchField = TooltipTypes[ttType];
 			if not knownSearchField then
 				-- other ways to search
@@ -975,6 +981,7 @@ if TooltipDataProcessor then
 		if GameTooltip and GameTooltip:IsVisible() then
 			-- app.PrintDebug("Auto-refresh tooltip")
 			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+			---@diagnostic disable-next-line: inject-field
 			GameTooltip.ATT_AttachComplete = nil;
 			GameTooltip:Show();
 		end
@@ -1124,6 +1131,8 @@ else
 	ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
 	ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 
+	---@diagnostic disable-next-line: undefined-global
+	local WorldMapTooltip = WorldMapTooltip;
 	if WorldMapTooltip then
 		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
@@ -1135,6 +1144,7 @@ else
 
 	local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
 	if GameTooltip_SetLFGDungeonReward then
+		---@diagnostic disable-next-line: duplicate-set-field
 		GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
 			GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
 			if CanAttachTooltips() then
@@ -1154,6 +1164,7 @@ else
 
 	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
 	if GameTooltip_SetLFGDungeonShortageReward then
+		---@diagnostic disable-next-line: duplicate-set-field
 		GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
 			--app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
 			GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
@@ -1173,8 +1184,10 @@ else
 	end
 
 	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
+	---@diagnostic disable-next-line: duplicate-set-field
 	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
 		if GameTooltip_SetCurrencyByID then
+			---@diagnostic disable-next-line: redundant-parameter
 			GameTooltip_SetCurrencyByID(self, currencyID, count);
 		end
 		if CanAttachTooltips() then
@@ -1185,6 +1198,9 @@ else
 
 	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 	if GameTooltip_SetCurrencyToken then
+		---@diagnostic disable-next-line: undefined-global
+		local GetCurrencyListInfo = GetCurrencyListInfo;
+		---@diagnostic disable-next-line: duplicate-set-field
 		GameTooltip.SetCurrencyToken = function(self, tokenID)
 			GameTooltip_SetCurrencyToken(self, tokenID);
 			if CanAttachTooltips() then
@@ -1232,6 +1248,7 @@ local function ShowItemCompareTooltips(...)
 	local count = #items;
 	if count > 0 then
 		for i,item in ipairs(items) do
+			---@diagnostic disable-next-line: undefined-field
 			local shoppingTooltip = GameTooltip.shoppingTooltips[i];
 			if shoppingTooltip then
 				shoppingTooltip.attItem = type(item) == "number" and select(2, GetItemInfo(item)) or item;
@@ -1243,6 +1260,7 @@ local function ShowItemCompareTooltips(...)
 
 		-- Quick maths
 		-- Taken from https://github.com/Ennie/wow-ui-source/blob/master/FrameXML/GameTooltip.lua
+		---@diagnostic disable-next-line: undefined-field
 		local shoppingTooltip1, shoppingTooltip2, shoppingTooltip3 = unpack(GameTooltip.shoppingTooltips);
 		local leftPos, rightPos = (GameTooltip:GetLeft() or 0), (GameTooltip:GetRight() or 0);
 		if GetScreenWidth() - rightPos < leftPos then

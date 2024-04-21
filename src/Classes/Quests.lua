@@ -13,8 +13,10 @@ local Search = app.SearchForObject
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber
 	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber;
 local C_QuestLog_GetAllCompletedQuestIDs, C_QuestLog_GetQuestObjectives = C_QuestLog.GetAllCompletedQuestIDs, C_QuestLog.GetQuestObjectives;
+---@diagnostic disable-next-line: undefined-global
 local GetQuestLogIndexByID = C_QuestLog.GetLogIndexForQuestID or GetQuestLogIndexByID;
 local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
+---@diagnostic disable-next-line: undefined-global
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo =
@@ -155,7 +157,7 @@ else
 end
 
 -- Quest Log Info
-local C_QuestLog_GetInfo, GetQuestFrequency = C_QuestLog.GetInfo;
+local C_QuestLog_GetInfo, GetQuestFrequency = C_QuestLog.GetInfo, nil;
 if C_QuestLog_GetInfo then
 	GetQuestFrequency = function(questID)
 		local questLogIndex = GetQuestLogIndexByID(questID);
@@ -165,6 +167,7 @@ if C_QuestLog_GetInfo then
 		end
 	end
 else
+	---@diagnostic disable-next-line: undefined-global
 	local GetQuestLogTitle = GetQuestLogTitle;
 	GetQuestFrequency = function(questID)
 		local questLogIndex = GetQuestLogIndexByID(questID);
@@ -177,6 +180,7 @@ else
 end
 local C_QuestLog_IsComplete = C_QuestLog.IsComplete;
 if not C_QuestLog_IsComplete then
+	---@diagnostic disable-next-line: undefined-global
 	local GetQuestLogTitle = GetQuestLogTitle;
 	C_QuestLog_IsComplete = function(questID)
 		local questLogIndex = GetQuestLogIndexByID(questID);
@@ -454,7 +458,7 @@ local function ResolveQuestData(t)
 		t.otherQuestData = otherQuestData;
 		otherQuestData.nmr = 1;
 	else
-		error("Missing AQD / HQD", aqd and true or false, hqd and true or false);
+		error("Missing AQD / HQD: " .. (aqd and true or false) .. " " .. (hqd and true or false));
 	end
 end
 
@@ -504,22 +508,31 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 		local covID = C_Covenants.GetActiveCovenantID();
 		if covID and covID > 0 then
 			local covData = C_Covenants.GetCovenantData(covID);
-			local covRenown = C_CovenantSanctumUI.GetRenownLevel();
-			covInfo = covInfo .. covID..":"..covData.name..":"..covRenown;
+			if covData then
+				covInfo = covInfo .. covID..":"..covData.name;
+				local covRenown = C_CovenantSanctumUI.GetRenownLevel();
+				if covRenown then
+					covInfo = covInfo .. ":"..covRenown;
+				end
+			else
+				covInfo = covInfo .. "N/A";
+			end
 		else
 			covInfo = covInfo .. "N/A";
 		end
 		if C_MajorFactions then
-			local DFmajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(9), {};
+			local DFmajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(9), {}, nil;
 			if DFmajorFactionIDs then
 				for _,factionID in ipairs(DFmajorFactionIDs) do
-					data = C_MajorFactions.GetMajorFactionData(factionID);
 					tinsert(majorFactionInfo, "|");
 					tinsert(majorFactionInfo, factionID);
-					tinsert(majorFactionInfo, ":");
-					tinsert(majorFactionInfo, data.name:sub(1,4));
-					tinsert(majorFactionInfo, ":");
-					tinsert(majorFactionInfo, data.renownLevel);
+					data = C_MajorFactions.GetMajorFactionData(factionID);
+					if data then
+						tinsert(majorFactionInfo, ":");
+						tinsert(majorFactionInfo, data.name:sub(1,4));
+						tinsert(majorFactionInfo, ":");
+						tinsert(majorFactionInfo, data.renownLevel);
+					end
 				end
 			end
 			covInfo = covInfo .. " renown"..(app.TableConcat(majorFactionInfo))
@@ -551,7 +564,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	local mapID = app.CurrentMapID;
 	tinsert(info, mapID and ("mapID:"..mapID.." ("..(app.GetMapName(mapID) or "??")..")") or "mapID:??");
 
-	local position, coord = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
+	local position, coord = mapID and C_Map.GetPlayerMapPosition(mapID, "player"), nil;
 	if position then
 		local x,y = position:GetXY();
 		coord = (math_floor(x * 1000) / 10) .. ", " .. (math_floor(y * 1000) / 10);
@@ -780,7 +793,7 @@ if app.IsRetail then
 		-- app.PrintDebug("RefreshQuestCompletionState",questID)
 		wipe(RetailDirtyQuests);
 		if questID then
-			questID = tonumber(questID);
+			questID = tonumber(questID) or questID;
 			CompletedQuests[questID] = true;
 		else
 			-- Batch processing will ignore all the per-instance collection etc. built into CompletedQuests
@@ -816,6 +829,7 @@ if app.IsRetail then
 	app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
 	app.AddEventHandler("OnPlayerLevelUp", RefreshAllQuestInfo);
 else
+	---@diagnostic disable-next-line: undefined-global
 	local GetQuestsCompleted = GetQuestsCompleted;
 	local QueryCompletedQuests = function()
 		-- Mark all previously completed quests.
@@ -932,7 +946,7 @@ else
 end
 
 -- World Quest Support Lib
-local C_QuestLog_GetQuestTagInfo, GetWorldQuestIcon, IsWorldQuest = C_QuestLog.GetQuestTagInfo;
+local C_QuestLog_GetQuestTagInfo, GetWorldQuestIcon, IsWorldQuest = C_QuestLog.GetQuestTagInfo, nil, nil;
 if C_QuestLog_GetQuestTagInfo then
 	local TagType = Enum.QuestTagType;
 	local WorldQuestTypeIcons = setmetatable({
@@ -1265,7 +1279,7 @@ else
 end
 
 -- Party Sync Support
-local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable;
+local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable, nil;
 if IsQuestReplayable then
 	-- Provide support for Party Sync'd Quests here
 	local IsPartySynced, IsQuestReplayedRecently =
@@ -1981,16 +1995,22 @@ if app.IsRetail then
 		-- if not HaveQuestRewardData(questID) then
 		-- 	app.PrintDebug("TPQR",questID,"Data",HaveQuestData(questID),"RewardData",HaveQuestRewardData(questID),GetNumQuestLogRewards(questID),GetNumQuestLogRewardCurrencies(questID))
 		-- end
+		---@diagnostic disable-next-line: redundant-parameter
 		local numQuestRewards = GetNumQuestLogRewards(questID);
 		local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 		for j=1,numQuestRewards,1 do
 			-- app.PrintDebug("TPQR:REWARDINFO",questID,j,HaveQuestData(questID),GetQuestLogRewardInfo(j, questID))
 			local itemID = select(6, GetQuestLogRewardInfo(j, questID));
 			if itemID then
+				---@diagnostic disable-next-line: inject-field
 				QuestHarvester.AllTheThingsProcessing = true;
+				---@diagnostic disable-next-line: param-type-mismatch
 				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
+				---@diagnostic disable-next-line: param-type-mismatch, redundant-parameter
 				QuestHarvester:SetQuestLogItem("reward", j, questID);
+				---@diagnostic disable-next-line: param-type-mismatch
 				local link = select(2, QuestHarvester:GetItem());
+				---@diagnostic disable-next-line: inject-field
 				QuestHarvester.AllTheThingsProcessing = false;
 				QuestHarvester:Hide();
 				if link then
@@ -2036,6 +2056,7 @@ if app.IsRetail then
 		end
 
 		-- Add info for currency rewards as containers for their respective collectibles
+		---@diagnostic disable-next-line: redundant-parameter
 		local numCurrencies = GetNumQuestLogRewardCurrencies(questID);
 		local currencyID, cachedCurrency;
 		for j=1,numCurrencies,1 do

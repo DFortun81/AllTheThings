@@ -315,7 +315,7 @@ local function zoneTextAreasRunner(group, value)
 	if name then app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name; end
 
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
-	local mapIDs, parentMapID, info = {};
+	local mapIDs, parentMapID, info = {}, nil, nil;
 	if group.coords then
 		parentMapID = group.coords[1][3];
 		if parentMapID then
@@ -624,7 +624,7 @@ local fieldConverters = {
 local _converter;
 local function _CacheFields(group)
 	local n = 0;
-	local clone, mapKeys, key, value, hasG = {};
+	local clone, mapKeys, key, value, hasG = {}, nil, nil, nil, nil;
 	for key,value in pairs(group) do
 		if key == "g" then
 			hasG = true;

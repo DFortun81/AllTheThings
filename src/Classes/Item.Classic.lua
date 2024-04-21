@@ -3,13 +3,14 @@ local L = app.L;
 
 -- Global locals
 local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, GetItemCount, GetItemInfo, GetItemInfoInstant
+---@diagnostic disable-next-line: deprecated
 	= ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, GetItemCount, GetItemInfo, GetItemInfoInstant;
 local C_QuestLog_IsOnQuest
 	= C_QuestLog.IsOnQuest;
 
 -- App locals
-local GetRelativeValue, IsQuestFlaggedCompletedForObject, SearchForField, SearchForFieldContainer
-	= app.GetRelativeValue, app.IsQuestFlaggedCompletedForObject, app.SearchForField, app.SearchForFieldContainer;
+local AssignChildren, GetRelativeValue, IsQuestFlaggedCompletedForObject, NestObject, SearchForField, SearchForFieldContainer
+	= app.AssignChildren, app.GetRelativeValue, app.IsQuestFlaggedCompletedForObject, app.NestObject, app.SearchForField, app.SearchForFieldContainer;
 
 local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
 	local link = select(2, GetItemInfo(id));
@@ -393,7 +394,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 
 			-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
 			local Search = app.SearchForObject;
-			local uniques, heirloom, upgrades = {};
+			local uniques, heirloom, upgrades = {}, nil, nil;
 			for _,itemID in ipairs(heirloomIDs) do
 				if not uniques[itemID] then
 					uniques[itemID] = true;
@@ -425,7 +426,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 			-- build groups for each upgrade token
 			-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
 			-- where the sources of the upgrade tokens exist
-			for i,item in ipairs(armorTokens) do
+			for _,item in ipairs(armorTokens) do
 				for _,token in ipairs(SearchForField("itemID", item.itemID)) do
 					-- ensure the tokens do not have a modID attached
 					token.modID = nil;
@@ -438,7 +439,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 					end
 				end
 			end
-			for i,item in ipairs(weaponTokens) do
+			for _,item in ipairs(weaponTokens) do
 				for _,token in ipairs(SearchForField("itemID", item.itemID)) do
 					-- ensure the tokens do not have a modID attached
 					token.modID = nil;

@@ -8,7 +8,8 @@ local ipairs, pairs, rawset, rawget, math_floor, select, tonumber
 local C_MountJournal_GetMountInfoExtraByID,C_MountJournal_GetMountInfoByID,C_MountJournal_GetMountIDs
 	= C_MountJournal.GetMountInfoExtraByID,C_MountJournal.GetMountInfoByID,C_MountJournal.GetMountIDs
 local GetSpellLink,GetItemInfo,GetSpellInfo
-	= GetSpellLink,GetItemInfo,GetSpellInfo
+---@diagnostic disable-next-line: deprecated
+	= GetSpellLink,((C_Item and C_Item.GetItemInfo) or GetItemInfo),GetSpellInfo
 
 -- App locals
 local Colorize = app.Modules.Color.Colorize;

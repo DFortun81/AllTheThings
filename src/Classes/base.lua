@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert, unpack
-	= type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert, unpack;
+local type, ipairs, pairs, setmetatable, rawget, tinsert, unpack
+	= type, ipairs, pairs, setmetatable, rawget, tinsert, unpack;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -154,7 +154,7 @@ if app.IsRetail then
 			local missing = true;
 			while o do
 				missing = rawget(o, "_missing");
-				o = not missing and (o.sourceParent or o.parent) or nil;
+				o = not missing and (o.sourceParent or o.parent);
 			end
 			t._missing = missing or false;
 			return missing;
@@ -190,7 +190,7 @@ if app.IsRetail then
 end
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
-local classDefinitions, _cache = {};
+local classDefinitions, _cache = {}, nil;
 local call = function(class, key, t)
 	_cache = rawget(class, key);
 	if _cache then return _cache(t) end
@@ -221,6 +221,7 @@ local BaseObjectFields = not app.__perf and function(fields, className)
 		__class = class,
 		__index = function(t, key)
 			_cache = class[key];
+			---@diagnostic disable-next-line: redundant-parameter
 			if _cache then return _cache(t); end
 		end
 	};
@@ -257,6 +258,7 @@ or function(fields, className)
 		__class = class,
 		__index = function(t, key)
 			_cache = class[key] or class.__missing[key]
+			---@diagnostic disable-next-line: redundant-parameter
 			if _cache then return _cache(t); end
 			-- capture a new empty function return for missing keys so we can track how much missing keys are called on various classes
 			class.__missing[key] = function() end
@@ -610,7 +612,7 @@ end
 -- without requiring a full copied definition of identical field functions and raw Object content
 app.WrapObject = function(object, baseObject)
 	if not object or not baseObject then
-		error("Tried to WrapObject with none provided!",object,baseObject)
+		error("Tried to WrapObject with none provided!")
 	end
 	-- need to preserve the existing object's meta AND return the object being wrapped while also allowing fallback to the base object
 	local objectMeta = getmetatable(object)
@@ -648,7 +650,7 @@ end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store shared
 -- information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
-	local cache, _t, v = {};
+	local cache, _t, v = {}, nil, nil;
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then

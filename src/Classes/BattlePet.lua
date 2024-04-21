@@ -8,7 +8,8 @@ local wipe, setmetatable, rawget, select
 
 -- Blizzard
 local GetItemInfo
-	= GetItemInfo
+---@diagnostic disable-next-line: deprecated
+	= ((C_Item and C_Item.GetItemInfo) or GetItemInfo)
 
 -- Module
 

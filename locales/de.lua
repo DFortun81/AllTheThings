@@ -496,7 +496,6 @@ for key,value in pairs({
 		["Shadowlands"] = "SL",
 		["Spieler gegen Spieler"] = "PvP",
 		["Schlachtzugbrowser"] = "LFR",
-		["Schlachtzugbrowser"] = "LFR",
 		["Normal"] = "N",
 		["Heroisch"] = "H",
 		["Mythisch"] = "M",

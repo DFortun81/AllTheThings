@@ -44,6 +44,7 @@ local fields = {
 		return OnTooltipForDeathTracker;
 	end,
 };
+---@diagnostic disable-next-line: undefined-global
 if C_GameRules and C_GameRules.IsHardcoreActive() then
 	fields.description = function(t)
 		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Try Again!'\n";
@@ -56,10 +57,12 @@ else
 	fields.total = function(t) return 1000; end
 end
 local GetStatistic = GetStatistic;
+---@diagnostic disable-next-line: missing-parameter
 if GetStatistic and GetStatistic(60) then
 	-- Statistics are available, this means we can get the actual statistic from the server's database.
 	local OnUpdateForDeathTrackerLib = function(t)
 		if app.MODE_DEBUG or app.Settings:Get("DeathTracker") then
+			---@diagnostic disable-next-line: missing-parameter
 			local stat = GetStatistic(60) or "0";
 			if stat == "--" then stat = "0"; end
 			local deaths = tonumber(stat);

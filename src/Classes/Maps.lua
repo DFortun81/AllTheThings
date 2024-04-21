@@ -103,7 +103,7 @@ local function GetCurrentMapID()
 				local position = C_Map_GetPlayerMapPosition(originalMapID, "player");
 				if position then
 					local continentID, worldPosition = C_Map_GetWorldPosFromMapPos(originalMapID, position);
-					local closestDistance, closestMapID = 99999999;
+					local closestDistance, closestMapID = 99999999, nil;
 					local px, py = worldPosition:GetXY();
 					for _,mapID in pairs(substitutions) do
 						position = C_Map_GetPlayerMapPosition(mapID, "player")
@@ -126,7 +126,7 @@ local function GetCurrentMapID()
 			end
 		end
 	else
-		local zoneTexts,substitutions = {};
+		local zoneTexts,substitutions = {}, nil;
 		local name = GetRealZoneText();
 		if name and name:len() > 0 then
 			zoneTexts[name] = 1;
@@ -238,6 +238,7 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	end,
 	["description"] = function(t)
 		if t.coords and #t.coords > 0 then
+			---@diagnostic disable-next-line: undefined-global
 			if not TomTom then
 				return "You can use Alt+Right Click to plot the coordinates with TomTom installed. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
 			else
@@ -429,9 +430,10 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 		-- Simplify coordinates if more than the maximum
 		local count = #coords;
 		if count > MAXIMUM_COORDS_PER_AREA then
+			local index = nil;
 			if count > (MAXIMUM_COORDS_PER_AREA * 2) then
 				-- Pick randomly
-				local newcoords, index = {};
+				local newcoords = {};
 				for i=1,MAXIMUM_COORDS_PER_AREA,1 do
 					index = math_random(count);
 					tinsert(newcoords, coords[index]);
@@ -493,7 +495,7 @@ local function HarvestExploration(simplify)
 			app.print("Harvesting Map " .. mapID .. "...");
 			-- Find all points on the grid that have explored an area and make note of them.
 			local ok, any, hits = pcall(GenerateHitsForMap, grid, mapID);
-			if ok then
+			if ok and hits then
 				local explorationByID = {};
 				if any then
 					-- For each of these hits, add it to our raw positional DB.

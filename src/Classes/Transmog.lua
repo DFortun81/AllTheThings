@@ -28,7 +28,8 @@ end
 local ipairs, select, tinsert, pairs, rawget
 	= ipairs, select, tinsert, pairs, rawget;
 local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
-	= GetItemInfoInstant, C_Item.IsDressableItemByID, GetItemInfo, C_Transmog.GetSlotForInventoryType
+---@diagnostic disable-next-line: deprecated
+	= ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), C_Item.IsDressableItemByID, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local L, contains, containsAny, SearchForField, SearchForFieldContainer
 	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer;
@@ -96,18 +97,22 @@ local function GetSourceID(itemLink)
 			DressUpModel:SetUnit("player");
 			DressUpModel:Undress();
 			for _,slot in pairs(slots) do
+				---@diagnostic disable-next-line: param-type-mismatch
 				DressUpModel:TryOn(itemLink, slot);
 				local tmogInfo = DressUpModel:GetItemTransmogInfo(slot);
-				-- app.PrintDebug("SlotInfo",slot)
-				-- app.PrintTable(tmogInfo)
-				local sourceID = tmogInfo and tmogInfo.appearanceID;
-				if sourceID and sourceID ~= 0 then
-					-- Adjusted to account for non-transmoggable SourceIDs which are collectible
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo then
-						if sourceInfo.itemID == itemID then
-							-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
-							return sourceID, true;
+				if tmogInfo then
+					-- app.PrintDebug("SlotInfo",slot)
+					-- app.PrintTable(tmogInfo)
+					---@diagnostic disable-next-line: undefined-field
+					local sourceID = tmogInfo.appearanceID;
+					if sourceID and sourceID ~= 0 then
+						-- Adjusted to account for non-transmoggable SourceIDs which are collectible
+						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+						if sourceInfo then
+							if sourceInfo.itemID == itemID then
+								-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
+								return sourceID, true;
+							end
 						end
 					end
 				end

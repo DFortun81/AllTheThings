@@ -2,7 +2,8 @@
 local appName,app = ...;
 
 local pairs, GetItemCount, PlayerHasToy
-	= pairs, GetItemCount, PlayerHasToy;
+---@diagnostic disable-next-line: deprecated
+	= pairs, ((C_Item and C_Item.GetItemCount) or GetItemCount), PlayerHasToy;
 
 -- Toy Lib
 local KEY, CACHE = "toyID", "Toys"

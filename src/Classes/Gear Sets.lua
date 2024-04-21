@@ -13,7 +13,8 @@ end
 -- Global locals
 local ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink, GetItemInfoInstant,
 		C_TransmogCollection_GetSourceInfo, C_TransmogSets_GetSetInfo, C_TransmogSets_GetAllSourceIDs
-	= ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink, GetItemInfoInstant,
+	---@diagnostic disable-next-line: deprecated
+	= ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink, ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant),
 		C_TransmogCollection.GetSourceInfo, C_TransmogSets.GetSetInfo, C_TransmogSets.GetAllSourceIDs;
 	
 -- Gear Sets
@@ -131,23 +132,23 @@ app.BuildGearSetInformationForGroup = function(group)
 		end
 		local variants = C_TransmogSets_GetVariantSets(data.setID);
 		if type(variants) == "table" then
-			for j,data in ipairs(variants) do
-				local sources = C_TransmogSets_GetAllSourceIDs(data.setID);
-				if #sources > 0 then allSets[data.setID] = sources; end
+			for _,variantData in ipairs(variants) do
+				sources = C_TransmogSets_GetAllSourceIDs(variantData.setID);
+				if #sources > 0 then allSets[variantData.setID] = sources; end
 				for k, sourceID in ipairs(sources) do
 					local sourceSet = sourceSets[sourceID];
 					if not sourceSet then
 						sourceSet = {};
 						sourceSets[sourceID] = sourceSet;
 					end
-					sourceSet[data.setID] = 1;
+					sourceSet[variantData.setID] = 1;
 				end
 			end
 		end
 	end
-	local data, g = sourceSets[group.sourceID];
+	local data, g = sourceSets[group.sourceID], nil;
 	if data then
-		for setID,value in pairs(data) do
+		for setID,_ in pairs(data) do
 			g = {};
 			setID = tonumber(setID);
 			for _,sourceID in ipairs(allSets[setID]) do

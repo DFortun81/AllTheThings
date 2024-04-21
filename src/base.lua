@@ -11,6 +11,7 @@ app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 
 
 -- Generate the version identifier.
+---@diagnostic disable-next-line: deprecated
 local v = (C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata)(appName, "Version");
 if v:match("version") then
 	app.Version = "[Git]";
@@ -477,6 +478,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
 end
 function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
+	---@diagnostic disable-next-line: undefined-global
 	if not ATTEditBox then
 		local f = CreateFrame("Frame", "ATTEditBox", UIParent, "DialogBoxFrame")
 		f:SetPoint("CENTER")
