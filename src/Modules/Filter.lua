@@ -229,11 +229,12 @@ end);
 RawCharacterFilters.Bound = nil
 
 -- RequireSkill
+local Professions, ActiveSkills
 DefineToggleFilter("RequireSkill", CharacterFilters,
 app.IsRetail and function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
-		return app.CurrentCharacter.Professions[requireSkill];
+		return Professions[requireSkill];
 	else
 		return true;
 	end
@@ -241,11 +242,15 @@ end or function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
 		requireSkill = app.SkillIDToSpellID[requireSkill];
-		return requireSkill and app.CurrentCharacter.ActiveSkills[requireSkill];
+		return requireSkill and ActiveSkills[requireSkill];
 	else
 		return true;
 	end
 end);
+app.AddEventHandler("OnStartup", function()
+	Professions = app.CurrentCharacter.Professions
+	ActiveSkills = app.CurrentCharacter.ActiveSkills
+end)
 
 -- Class
 DefineToggleFilter("Class", CharacterFilters,
