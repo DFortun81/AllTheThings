@@ -341,25 +341,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
-						q(535, {	-- Valik
-							["qg"] = 2333,	-- Henchman Valik
-							["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
-							["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
-							["timeline"] = { "removed 4.0.3" },
-							["cr"] = 2440,	-- Drunken Footpad
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["lvl"] = 29,
-							["groups"] = {
-								objective(1, {	-- 0/1 Syndicate Missive
-									["questID"] = 533,	-- Infiltration
-									["provider"] = { "i", 3601 },	-- Syndicate Missive
-									["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
-									["crs"] = {
-										2240,	-- Syndicate Footpad
-										2241,	-- Syndicate Thief
-									},
-								}),
+						objective(1, {	-- 0/1 Syndicate Missive
+							["provider"] = { "i", 3601 },	-- Syndicate Missive
+							["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
+							["crs"] = {
+								2240,	-- Syndicate Footpad
+								2241,	-- Syndicate Thief
 							},
 						}),
 					},
@@ -663,6 +650,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(535, {	-- Valik
+					["qg"] = 2333,	-- Henchman Valik
+					["sourceQuest"] = 533,	-- Infiltration
+					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
+					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+					["groups"] = {
+						i(3601),	-- Syndicate Missive
+					},
+				}),
 				q(566, {	-- WANTED: Baron Vardus
 					["provider"] = { "o", 1763 },	-- WANTED
 					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
@@ -877,6 +876,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 44.2, 33.8, ALTERAC_MOUNTAINS },
 						{ 44.4, 30.4, ALTERAC_MOUNTAINS },
 					},
+				}),
+				i(3703, {	-- Southshore Stout
+					["cr"] = 2440,	-- Drunken Footpad
 				}),
 				i(5245, {	-- Summoner's Wand
 					["races"] = HORDE_ONLY,

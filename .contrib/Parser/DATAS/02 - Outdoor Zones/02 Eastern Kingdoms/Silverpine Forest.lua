@@ -971,7 +971,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(460, {	-- Resting in Pieces
-					["provider"] = { "i", 3317 },	-- A Talking Head
+					["providers"] = {
+						{ "i", 3317 },	-- A Talking Head
+						{ "o", 1599 },	-- Shallow Grave
+					},
 					["coord"] = { 65.2, 32.8, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
@@ -1356,6 +1359,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 461,	-- The Hidden Niche
 					["coord"] = { 65.3, 24.8, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {

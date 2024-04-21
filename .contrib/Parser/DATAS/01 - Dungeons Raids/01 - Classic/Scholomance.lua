@@ -765,31 +765,31 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			-- #if AFTER 4.0.3
 			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 			-- #endif
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 11582,	-- Scholomance Dark Summoner
 		}),
 		i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
 			-- #if AFTER 4.0.3
 			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 			-- #endif
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 10499,	-- Spectral Researcher
 		}),
 		applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 		i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 			["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 			["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(206374, {	-- Invader's Scourgestone
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 			["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(13920, {	-- Healthy Dragon Scale
 			["description"] = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
@@ -798,43 +798,43 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		ignoreTimeline(i(20520)),	-- Dark Rune
 		i(12753, {	-- Skin of Shadow
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		ignoreTimeline(i(18702)),	-- Belt of the Ordained
 		i(16671, {	-- Bindings of Elements
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 10478,	-- Splintered Skeleton
 		}),
 		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
 		ignoreTimeline(i(18697)),	-- Coldstone Slippers
 		i(16702, {	-- Dreadmist Belt
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
 		ignoreTimeline(i(18699)),	-- Icy Tomb Spaulders
 		ignoreTimeline(i(18701)),	-- Innervating Band
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["crs"] = {
 				10487,	-- Risen Protector
 				10486,	-- Risen Warrior
 			},
 		}),
 		i(16685, {	-- Magister's Belt
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		ignoreTimeline(i(18700)),	-- Malefic Bracers
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["crs"] = {
 				11284,	-- Dark Shade
 				10472,	-- Scholomance Occultist
@@ -843,11 +843,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		ignoreTimeline(i(18698)),	-- Tattered Leather Hood
 		i(16714, {	-- Wildheart Bracers
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["cr"] = 10495,	-- Diseased Ghoul
 		}),
 		i(16716, {	-- Wildheart Belt
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			["crs"] = {
 				11257,	-- Scholomance Handler
 				10500,	-- Spectral Teacher
@@ -879,7 +879,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(13957),	-- Gargoyle Slashers
 			i(13956),	-- Clutch of Andros
 			i(16734, {	-- Boots of Valor
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(13967),	-- Windreaver Greaves
 		},
@@ -901,7 +901,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		applyclassicphase(PHASE_FIVE, i(22394)),	-- Staff of Metanoia
 		i(18689),	-- Phantasmal Cloak
 		i(16701, {	-- Dreadmist Mantle
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(14548),	-- Royal Cap Spaulders
 		i(14543, {	-- Darkshade Gloves
@@ -917,14 +917,14 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	n(11622, {	-- Rattlegore
 		i(13873, {	-- Viewing Room Key
 			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(206371, {	-- Viewing Room Key
 			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(18782, {	-- Top Half of Advanced Armorsmithing: Volume II
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(14531),	-- Frightskull Shaft
 		i(14528),	-- Rattlecage Buckler
@@ -933,7 +933,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(14538),	-- Deadwalker Mantle
 		i(14537),	-- Corpselight Greaves
 		i(16711, {	-- Shadowcraft Boots
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 	}),
 	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
@@ -968,7 +968,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(18696),	-- Intricately Runed Shield
 		i(18695),	-- Spellbound Tome
 		i(16689, {	-- Magister's Mantle
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(13314),	-- Alanna's Embrace
 		i(14503),	-- Death's Clutch
@@ -1016,7 +1016,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(22332),	-- Blade of Necromancy
 			i(22333),	-- Hammer of Divine Might
 			i(22303, {	-- Ironweave Pants
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(22326),	-- Amalgam's Band
 			i(22331),	-- Band of the Steadfast Hero
@@ -1077,7 +1077,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	}),
 	n(10505, {	-- Instructor Malicia
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 	}),
 	n(11261, {	-- Doctor Theolen Krastinov <The Butcher>
@@ -1088,23 +1088,23 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_5_0_4 },
 		}),
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 		i(14617),	-- Sawbones Shirt
 	}),
 	n(10901, {	-- Lorekeeper Polkelt
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 	}),
 	n(10507, {	-- The Ravenian
 		i(16716, {	-- Wildheart Belt
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 	}),
 	n(10504, {	-- Lord Alexei Barov
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 		}),
 	}),
 	n(1853, {	-- Darkmaster Gandling
@@ -1127,31 +1127,31 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(13953),	-- Silent Fang
 			i(13964),	-- Witchblade
 			i(16677, {	-- Beaststalker's Cap
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16667, {	-- Coif of Elements
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16693, {	-- Devout Crown
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16698, {	-- Dreadmist Mask
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16731, {	-- Helm of Valor
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16727, {	-- Lightforge Helm
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16686, {	-- Magister's Crown
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16707, {	-- Shadowcraft Cap
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(16720, {	-- Wildheart Cowl
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
 			}),
 			i(13944),	-- Tombstone Breastplate
 			i(13951),	-- Vigorsteel Vambraces

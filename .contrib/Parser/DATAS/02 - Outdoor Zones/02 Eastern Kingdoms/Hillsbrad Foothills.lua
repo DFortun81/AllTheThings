@@ -1751,25 +1751,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
-						q(535, {	-- Valik
-							["qg"] = 2333,	-- Henchman Valik
-							["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
-							["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
-							["timeline"] = { "removed 4.0.3" },
-							["cr"] = 2440,	-- Drunken Footpad
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["lvl"] = 29,
-							["groups"] = {
-								objective(1, {	-- 0/1 Syndicate Missive
-									["questID"] = 533,	-- Infiltration
-									["provider"] = { "i", 3601 },	-- Syndicate Missive
-									["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
-									["crs"] = {
-										2240,	-- Syndicate Footpad
-										2241,	-- Syndicate Thief
-									},
-								}),
+						objective(1, {	-- 0/1 Syndicate Missive
+							["provider"] = { "i", 3601 },	-- Syndicate Missive
+							["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
+							["crs"] = {
+								2240,	-- Syndicate Footpad
+								2241,	-- Syndicate Thief
 							},
 						}),
 					},
@@ -2754,6 +2741,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- Rescue Drull
 							["providers"] = {
 								{ "n", 2239 },	-- Drull
+								{ "o", 1721 },	-- Locked ball and chain
 								{ "i", 3467 },	-- Dull Iron Key
 							},
 							["coords"] = {
@@ -2766,6 +2754,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- Rescue Tog'thar
 							["providers"] = {
 								{ "n", 2238 },	-- Tog'thar
+								{ "o", 1722 },	-- Locked ball and chain
 								{ "i", 3499 },	-- Burnished Gold Key
 							},
 							["coords"] = {
@@ -2900,6 +2889,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if AFTER CATA
+				q(535, {	-- Valik (Alterac Mountains)
+					["qg"] = 2333,	-- Henchman Valik
+					["sourceQuest"] = 533,	-- Infiltration
+					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
+					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+					["groups"] = {
+						i(3601),	-- Syndicate Missive
+					},
+				}),
+				-- #endif
 				-- #if AFTER CATA
 				q(566, {	-- WANTED: Baron Vardus (Alterac Mountains)
 					["provider"] = { "o", 1763 },	-- WANTED
@@ -3290,6 +3293,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4818, {	-- Executioner's Sword
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(2388, {	-- Innkeeper Shay <Innkeeper>
+					-- #if AFTER CATA
+					["coord"] = { 57.8, 47.2, HILLSBRAD_FOOTHILLS },
+					-- #else
+					["coord"] = { 62.6, 19.0, HILLSBRAD_FOOTHILLS },
+					-- #endif
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(3703),	-- Southshore Stout
 					},
 				}),
 				n(3536, {	-- Kris Legace <Freewheeling Tradeswoman>
