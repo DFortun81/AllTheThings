@@ -87,11 +87,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(387, {	-- Quell The Uprising
 					["qg"] = 1719,	-- Warden Thelwater
-					-- #if AFTER WRATH
-					["coord"] = { 51.6, 69.4, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 41.2, 58, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 51.6, 69.4, STORMWIND_CITY },
+						-- #else
+						{ 41.2, 58, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.1.12984" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -173,11 +175,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(391, {	-- The Stockade Riots
 					["qg"] = 1719,	-- Warden Thelwater
 					["sourceQuest"] = 389,	-- Bazil Thredd
-					-- #if AFTER WRATH
-					["coord"] = { 51.6, 69.4, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 41.2, 58, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 51.6, 69.4, STORMWIND_CITY },
+						-- #else
+						{ 41.2, 58, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.1.12984" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,

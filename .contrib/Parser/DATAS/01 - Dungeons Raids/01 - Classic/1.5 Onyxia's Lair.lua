@@ -287,11 +287,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7497, {	-- The Journey Has Just Begun (A)
-					-- #if BEFORE 8.0.1
-					["description"] = "This quest requires skill level 300 in Leatherworking.",
-					-- #elseif AFTER 8.0.1
-					["description"] = "This quest requires skill level 300 in Classic Leatherworking.",
-					-- #endif
 					["qg"] = 14394,	-- Major Mattingly
 					["sourceQuests"] = {
 						7496,	-- Celebrating Good Times
@@ -301,6 +296,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coord"] = { 67.0, 85.0, STORMWIND_CITY },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 300,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
@@ -313,11 +309,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7493, {	-- The Journey Has Just Begun (H)
-					-- #if BEFORE 8.0.1
-					["description"] = "This quest requires skill level 300 in Leatherworking.",
-					-- #elseif AFTER 8.0.1
-					["description"] = "This quest requires skill level 300 in Classic Leatherworking.",
-					-- #endif
 					["qg"] = 14392,		-- Overlord Runthak / Overlord Natoj
 					["sourceQuests"] = {
 						7491,	-- For All To See
@@ -327,6 +318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coord"] = { 52.2, 75.8, ORGRIMMAR },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 300,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {

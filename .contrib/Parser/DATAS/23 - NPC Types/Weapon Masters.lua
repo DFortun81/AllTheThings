@@ -311,7 +311,13 @@ root(ROOTS.Zones, {
 		m(STORMWIND_CITY, {
 			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
 				n(11867, {	-- Woo Ping <Weapon Master>
-					["coord"] = { 57.1, 57.7, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 63.8, 69.0, STORMWIND_CITY },
+						-- #else
+						{ 57.1, 57.7, STORMWIND_CITY },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						WEAPON_SKILL_CROSSBOWS,
