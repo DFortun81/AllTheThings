@@ -8,11 +8,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["zone-text-areaID"] = 718,	-- Wailing Caverns
 		["mapID"] = WAILING_CAVERNS,
-		-- #if AFTER CATA
-		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Northern Barrens
-		-- #else
-		["coord"] = { 45.9, 35.7, THE_BARRENS },
-		-- #endif
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 55.19, 66.09, 11 },	-- Wailing Caverns, Northern Barrens
+			-- #else
+			{ 45.9, 35.7, THE_BARRENS },
+			-- #endif
+		},
 		["lvl"] = lvlsquish(10, 12, 8),
 		["groups"] = {
 			n(QUESTS, {

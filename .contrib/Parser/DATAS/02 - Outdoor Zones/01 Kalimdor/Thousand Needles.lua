@@ -133,13 +133,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				fp(30, {	-- Westreach Summit, Thousand Needles [CATA+] / Freewind Post, Thousand Needles
-					-- #if AFTER CATA
-					["cr"] = 44399,	-- Nah'te <Wind Rider Master>
-					["coord"] = { 11.2, 11.6, THOUSAND_NEEDLES },
-					-- #else
-					["cr"] = 4317,	-- Nyse <Wind Rider Master>
-					["coord"] = { 45.0, 49.2, THOUSAND_NEEDLES },
-					-- #endif
+					["crs"] = {
+						-- #if AFTER CATA
+						44399,	-- Nah'te <Wind Rider Master>
+						-- #else
+						4317,	-- Nyse <Wind Rider Master>
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 11.2, 11.6, THOUSAND_NEEDLES },
+						-- #else
+						{ 45.0, 49.2, THOUSAND_NEEDLES },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -2369,15 +2376,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(RARES, {
 				n(5933, {	-- Achellios the Banished
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 70.0, 49.2, THOUSAND_NEEDLES },
 						{ 72.0, 49.4, THOUSAND_NEEDLES },
 						{ 72.0, 50.6, THOUSAND_NEEDLES },
 						{ 71.0, 50.6, THOUSAND_NEEDLES },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 21.6, 33.4, THOUSAND_NEEDLES },
 						{ 21.4, 37.2, THOUSAND_NEEDLES },
 						{ 20.0, 39.4, THOUSAND_NEEDLES },
@@ -2387,8 +2392,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 25.6, 41.4, THOUSAND_NEEDLES },
 						{ 26.0, 39.6, THOUSAND_NEEDLES },
 						{ 25.2, 36.8, THOUSAND_NEEDLES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50952, {	-- Barnacle Jim
 					["coord"] = { 41.2, 36.4, THOUSAND_NEEDLES },
@@ -2632,21 +2637,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ZONE_DROPS, {
 				i(1493, {	-- Heavy Marauder Scimitar
 					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 15.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 4099,	-- Galak Marauder
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						4099,	-- Galak Marauder
+						-- #elseif AFTER 10.1.7
+						40062,	-- Galak Mauler
+						-- #endif
+					},
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 44.6, 33.6, THOUSAND_NEEDLES },
 						{ 20.6, 22.2, THOUSAND_NEEDLES },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 40062,	-- Galak Mauler
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 88.6, 46.8, THOUSAND_NEEDLES },
 						{ 90.2, 54.4, THOUSAND_NEEDLES },
 						{ 87.6, 52.0, THOUSAND_NEEDLES },
 						{ 86.4, 49.0, THOUSAND_NEEDLES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if AFTER TBC
 				i(5773, {	-- Pattern: Robes of Arcana

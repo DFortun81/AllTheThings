@@ -208,11 +208,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6031, {	-- Runecloth
 					["qg"] = 11557,	-- Meilosh
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 5.2, FELWOOD },
-					-- #else
-					["coord"] = { 65.6, 2.8, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.8, 5.2, FELWOOD },
+						-- #else
+						{ 65.6, 2.8, FELWOOD },
+						-- #endif
+					},
 					["minReputation"] = { 576, FRIENDLY },	-- Timbermaw Hold, Friendly.
 					["cost"] = {{ "i", 14047, 30 }},	-- Runecloth
 					["lvl"] = lvlsquish(40, 40, 15),
@@ -223,11 +225,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6032, {	-- Sacred Cloth
 					["qg"] = 11557,	-- Meilosh
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 5.2, FELWOOD },
-					-- #else
-					["coord"] = { 65.6, 2.8, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.8, 5.2, FELWOOD },
+						-- #else
+						{ 65.6, 2.8, FELWOOD },
+						-- #endif
+					},
 					["minReputation"] = { 576, FRIENDLY },	-- Timbermaw Hold, Friendly.
 					["cost"] = {{ "i", 14342, 2 }},	-- Mooncloth
 					["requireSkill"] = TAILORING,
@@ -277,11 +281,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 11555 },	-- Gorn One Eye
 						{ "i", 21155 },	-- Timbermaw Offering of Peace
 					},
-					-- #if AFTER CATA
-					["coord"] = { 64.4, 5.1, FELWOOD },
-					-- #else
-					["coord"] = { 65.2, 2.6, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.4, 5.1, FELWOOD },
+						-- #else
+						{ 65.2, 2.6, FELWOOD },
+						-- #endif
+					},
 					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 45,
@@ -305,11 +311,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(8481, {	-- The Root of All Evil
 					["qg"] = 11555,	-- Gorn One Eye
-					-- #if AFTER CATA
-					["coord"] = { 64.4, 5.1, FELWOOD },
-					-- #else
-					["coord"] = { 65.2, 2.6, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.4, 5.1, FELWOOD },
+						-- #else
+						{ 65.2, 2.6, FELWOOD },
+						-- #endif
+					},
 					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
 					["maps"] = { WINTERSPRING },
 					["lvl"] = lvlsquish(45, 45, 15),
@@ -406,11 +414,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(VENDORS, {
 				n(11555, {	-- Gorn One Eye
-					-- #if AFTER CATA
-					["coord"] = { 64.4, 5.1, FELWOOD },
-					-- #else
-					["coord"] = { 65.2, 2.6, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.4, 5.1, FELWOOD },
+						-- #else
+						{ 65.2, 2.6, FELWOOD },
+						-- #endif
+					},
 					["minReputation"] = { 576, HONORED },	-- Timbermaw Hold, Honored.
 					["groups"] = {
 						i(16768),	-- Furbolg Medicine Pouch
@@ -418,11 +428,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(11557, {	-- Meilosh
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 5.2, FELWOOD },
-					-- #else
-					["coord"] = { 65.6, 2.8, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.8, 5.2, FELWOOD },
+						-- #else
+						{ 65.6, 2.8, FELWOOD },
+						-- #endif
+					},
 					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
 					["groups"] = {
 						applyclassicphase(PHASE_THREE, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)

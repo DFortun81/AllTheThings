@@ -36,11 +36,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(12513, {	-- Nice Hat...
 					["qg"] = 28126,	-- Don Carlos
-					-- #if AFTER CATA
-					["coord"] = { 50.7, 27.5, TANARIS },
-					-- #else
-					["coord"] = { 53.9, 28.9, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.7, 27.5, TANARIS },
+						-- #else
+						{ 53.9, 28.9, TANARIS },
+						-- #endif
+					},
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
 					["lvl"] = lvlsquish(66, 66, 15),
@@ -53,11 +55,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(12515, {	-- Nice Hat...
 					["qg"] = 28126,	-- Don Carlos
-					-- #if AFTER CATA
-					["coord"] = { 50.7, 27.5, TANARIS },
-					-- #else
-					["coord"] = { 53.9, 28.9, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.7, 27.5, TANARIS },
+						-- #else
+						{ 53.9, 28.9, TANARIS },
+						-- #endif
+					},
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
 					["lvl"] = lvlsquish(66, 66, 15),
@@ -71,11 +75,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10282, {	-- Old Hillsbrad
 					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["sourceQuest"] = 10277,	-- The Caverns of Time
-					-- #if AFTER CATA
-					["coord"] = { 41.8, 38.4, CAVERNS_OF_TIME },
-					-- #else
-					["coord"] = { 58.4, 54.3, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.8, 38.4, CAVERNS_OF_TIME },
+						-- #else
+						{ 58.4, 54.3, TANARIS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(10283, {	-- Taretha's Diversion

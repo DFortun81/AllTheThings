@@ -37,11 +37,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			n(FLIGHT_PATHS, {
 				fp(94, {	-- The Exodar
 					["cr"] = 17555,	-- Stephanos <Hippogryph Master>
-					-- #if AFTER CATA
-					["coord"] = { 54.5, 36.3, THE_EXODAR },
-					-- #else
-					["coord"] = { 68.3, 63.8, THE_EXODAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 54.5, 36.3, THE_EXODAR },
+						-- #else
+						{ 68.3, 63.8, THE_EXODAR },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -178,11 +180,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16768,	-- Nurguni
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
 					["coord"] = { 56.8, 49.8, THE_EXODAR },
-					-- #if AFTER CATA
-					["maps"] = { AZUREMYST_ISLE },
-					-- #else
-					["maps"] = { BLOODMYST_ISLE },
-					-- #endif
+					["maps"] = {
+						-- #if AFTER CATA
+						AZUREMYST_ISLE,
+						-- #else
+						BLOODMYST_ISLE,
+						-- #endif
+					},
 					["cost"] = {
 						{ "i", 23903, 1 },	-- Nurguni's Supplies
 					},
@@ -265,11 +269,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17555,	-- Stephanos
 					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
 					["coord"] = { 54.8, 35.8, THE_EXODAR },
-					-- #if AFTER CATA
-					["maps"] = { AZUREMYST_ISLE },
-					-- #else
-					["maps"] = { BLOODMYST_ISLE },
-					-- #endif
+					["maps"] = {
+						-- #if AFTER CATA
+						AZUREMYST_ISLE,
+						-- #else
+						BLOODMYST_ISLE,
+						-- #endif
+					},
 					["cost"] = {
 						{ "i", 23903, 1 },	-- Nurguni's Supplies
 					},

@@ -9,13 +9,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 717,	-- The Stockade
 		-- #endif
-		-- #if AFTER CATA
-		["coord"] = { 50.48, 66.46, STORMWIND_CITY },
-		-- #elseif AFTER WRATH
-		["coord"] = { 51.6, 69.4, STORMWIND_CITY },
-		-- #else
-		["coord"] = { 41.2, 58, STORMWIND_CITY },
-		-- #endif
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 50.48, 66.46, STORMWIND_CITY },
+			-- #elseif AFTER WRATH
+			{ 51.6, 69.4, STORMWIND_CITY },
+			-- #else
+			{ 41.2, 58, STORMWIND_CITY },
+			-- #endif
+		},
 		["mapID"] = THE_STOCKADE,
 		["lvl"] = 15,
 		["groups"] = {
@@ -23,11 +25,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(389, {	-- Bazil Thredd
 					["qg"] = 1646,	-- Baros Alexston
 					["sourceQuest"] = 373,	-- The Unsent Letter
-					-- #if AFTER WRATH
-					["coord"] = { 57.7, 47.9, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 49, 30.2, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 57.7, 47.9, STORMWIND_CITY },
+						-- #else
+						{ 49, 30.2, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.1.12984" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -100,11 +104,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(388, {	-- The Color of Blood
 					["qg"] = 1721,	-- Nikova Raskol
-					-- #if AFTER WRATH
-					["coord"] = { 76.6, 60.4, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 73.6, 47.7, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 76.6, 60.4, STORMWIND_CITY },
+						-- #else
+						{ 73.6, 47.7, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.1.12984" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,

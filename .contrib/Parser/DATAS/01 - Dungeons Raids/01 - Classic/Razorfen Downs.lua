@@ -25,11 +25,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 28,
 				}),
 				q(6521, {	-- An Unholy Alliance (2/2) (Before Wrathgate)
-					-- #if AFTER 3.3.0
-					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
-					-- #else
-					["qg"] = 2425,	-- Varimathras
-					-- #endif
+					["providers"] = {
+						-- #if AFTER 3.3.0
+						{ "n", 36273 },	-- Bragor Bloodfist <Hand of the Warchief>
+						-- #else
+						{ "n", 2425 },	-- Varimathras
+						-- #endif
+					},
 					["sourceQuest"] = 6522,	-- An Unholy Alliance (1/2) (Before Wrathgate)
 					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["timeline"] = { "removed 4.0.3" },

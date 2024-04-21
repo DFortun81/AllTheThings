@@ -1811,10 +1811,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58646 },	-- Farmer Yoon
 					}),
 					q(30623, {	-- The Mantidote
-						["sourceQuests"] = { 29990 },	-- Training and Discipline
 						["coord"] = { 18.0, 56.5, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 59855 },	-- Mei Barrelbottom
 						["sourceQuests"] = {
+							29990,	-- Training and Discipline
 							30360,	-- Warn Stoneplow (A)
 							30241,	-- Warn Stoneplow (H)
 						},

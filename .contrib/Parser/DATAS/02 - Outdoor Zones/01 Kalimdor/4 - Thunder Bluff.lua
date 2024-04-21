@@ -142,11 +142,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						{ "i", 16282 },	-- Bundle of Hides
 					},
-					-- #if AFTER CATA
-					["coord"] = { 46, 58.2, MULGORE },
-					-- #else
-					["coord"] = { 51.2, 29.0, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46, 58.2, MULGORE },
+						-- #else
+						{ 51.2, 29.0, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
@@ -558,11 +560,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
 					["coord"] = { 46.8, 50, THUNDER_BLUFF },
-					-- #if AFTER CATA
-					["maps"] = { MULGORE },
-					-- #else
-					["maps"] = { THE_BARRENS },
-					-- #endif
+					["maps"] = {
+						-- #if AFTER CATA
+						MULGORE,
+						-- #else
+						THE_BARRENS,
+						-- #endif
+					},
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
@@ -576,11 +580,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 16282 },	-- Bundle of Hides
 					},
 					["sourceQuest"] = 6361,	-- A Bundle of Hides
-					-- #if AFTER CATA
-					["coord"] = { 47.4, 58.6, MULGORE },
-					-- #else
-					["coord"] = { 51.50, 30.34, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.4, 58.6, MULGORE },
+						-- #else
+						{ 51.50, 30.34, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
@@ -713,11 +719,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 					["coord"] = { 45.74, 55.86, THUNDER_BLUFF },
-					-- #if AFTER CATA
-					["maps"] = { MULGORE },
-					-- #else
-					["maps"] = { THE_BARRENS },
-					-- #endif
+					["maps"] = {
+						-- #if AFTER CATA
+						MULGORE,
+						-- #else
+						THE_BARRENS,
+						-- #endif
+					},
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),

@@ -129,11 +129,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(23, {	-- Orgrimmar, Durotar
 					["cr"] = 3310,	-- Doras <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 49.4, 59.2, ORGRIMMAR },
-					-- #else
-					["coord"] = { 45.2, 63.8, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.4, 59.2, ORGRIMMAR },
+						-- #else
+						{ 45.2, 63.8, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -1993,11 +1995,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(7660, {	-- Wolf Swapping - Arctic Wolf
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
-					-- #if AFTER CATA
-					["coord"] = { 61.6, 35.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 69.4, 12.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.6, 35.6, ORGRIMMAR },
+						-- #else
+						{ 69.4, 12.4, ORGRIMMAR },
+						-- #endif
+					},
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { "removed 1.4.0" },
 					["cost"] = { { "i", 12351, 1 } },	-- Arctic Wolf
@@ -2008,11 +2012,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7661, {	-- Wolf Swapping - Red Wolf
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
-					-- #if AFTER CATA
-					["coord"] = { 61.6, 35.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 69.4, 12.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.6, 35.6, ORGRIMMAR },
+						-- #else
+						{ 69.4, 12.4, ORGRIMMAR },
+						-- #endif
+					},
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { "removed 1.4.0" },
 					["cost"] = { { "i", 12330, 1 } },	-- Red Wolf (MOUNT!)
@@ -2048,11 +2054,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6608, {	-- You Too Good.
 					["qg"] = 3332,	-- Lumak <Fishing Trainer>
-					-- #if AFTER CATA
-					["coord"] = { 66.6, 41.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 69.8, 29.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 66.6, 41.6, ORGRIMMAR },
+						-- #else
+						{ 69.8, 29.6, ORGRIMMAR },
+						-- #endif
+					},
 					["requireSkill"] = FISHING,
 					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
@@ -2447,11 +2455,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3364, {	-- Borya <Tailoring Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 60.6, 58.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 63.0, 51.2, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.6, 58.6, ORGRIMMAR },
+						-- #else
+						{ 63.0, 51.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -2974,11 +2984,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = TIER_TWELVE_GROUPS,
 				}),
 				n(3335, {	-- Hagrus <Reagents>
-					-- #if AFTER CATA
-					["coord"] = { 45.6, 39.0, 86 },	-- The Drag
-					-- #else
-					["coord"] = { 46.2, 46.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.6, 39.0, 86 },	-- The Drag
+						-- #else
+						{ 46.2, 46.6, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
@@ -2990,11 +3002,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 60.8, 54.0, ORGRIMMAR },
-					-- #else
-					["coord"] = { 62.8, 44.8, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.8, 54.0, ORGRIMMAR },
+						-- #else
+						{ 62.8, 44.8, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2142,	-- Cuirboulli Belt
@@ -3168,11 +3182,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3346, {	-- Kithas <Enchanting Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 53.2, 48.8, ORGRIMMAR },
-					-- #else
-					["coord"] = { 53.6, 38.0, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 48.8, ORGRIMMAR },
+						-- #else
+						{ 53.6, 38.0, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
@@ -3242,11 +3258,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3348, {	-- Kor'geld <Alchemy Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 55.6, 45.4, ORGRIMMAR },
-					-- #else
-					["coord"] = { 56.2, 34.2, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.6, 45.4, ORGRIMMAR },
+						-- #else
+						{ 56.2, 34.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
@@ -4033,11 +4051,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3362, {	-- Ogunaro Wolfrunner <Kennel Master>
-					-- #if AFTER CATA
-					["coord"] = { 61.6, 35.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 69.4, 12.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.6, 35.6, ORGRIMMAR },
+						-- #else
+						{ 69.4, 12.4, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(46099, {	-- Black Wolf (MOUNT!)
@@ -4535,11 +4555,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3333, {	-- Shankys <Fishing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 70.0, 29.4, ORGRIMMAR },
-					-- #else
-					["coord"] = { 66.6, 41.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 70.0, 29.4, ORGRIMMAR },
+						-- #else
+						{ 66.6, 41.6, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6256, {	-- Fishing Pole
@@ -4633,11 +4655,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3413, {	-- Sovik <Engineering Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 56.0, 56.0, ORGRIMMAR },
-					-- #else
-					["coord"] = { 75.6, 25.2, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 56.0, 56.0, ORGRIMMAR },
+						-- #else
+						{ 75.6, 25.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18647, {	-- Schematic: Red Firework (RECIPE!)
@@ -4767,11 +4791,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3356, {	-- Sumi <Blacksmithing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 75.8, 35.2, ORGRIMMAR },
-					-- #else
-					["coord"] = { 82.4, 23.8, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 75.8, 35.2, ORGRIMMAR },
+						-- #else
+						{ 82.4, 23.8, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
@@ -4780,11 +4806,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(3366, {	-- Tamar <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 60.6, 54.4, ORGRIMMAR },
-					-- #else
-					["coord"] = { 63.0, 45.2, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.6, 54.4, ORGRIMMAR },
+						-- #else
+						{ 63.0, 45.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
@@ -5025,11 +5053,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 60.8, 59.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 62.6, 50.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.8, 59.6, ORGRIMMAR },
+						-- #else
+						{ 62.6, 50.6, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2617),	-- Burning Robes
@@ -5222,11 +5252,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				n(3314, {	-- Urtharo <Weapon Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 46.6, 73.1, ORGRIMMAR },
-					-- #else
-					["coord"] = { 47.4, 68.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.6, 73.1, ORGRIMMAR },
+						-- #else
+						{ 47.4, 68.6, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						1198,	-- Claymore
@@ -5273,11 +5305,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(8404, {	-- Xan'tish <Snake Vendor>
 					["description"] = "This NPC walks around in a circle in the Valley of Spirits.",
-					-- #if AFTER CATA
-					["coord"] = { 34.0, 67.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 37.6, 75.8, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 34.0, 67.6, ORGRIMMAR },
+						-- #else
+						{ 37.6, 75.8, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(10360),	-- Black Kingsnake (PET!)
@@ -5293,11 +5327,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3400, {	-- Xen'to <Cooking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 32.6, 68.6, ORGRIMMAR },
-					-- #else
-					["coord"] = { 57.6, 53.2, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 32.6, 68.6, ORGRIMMAR },
+						-- #else
+						{ 57.6, 53.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)

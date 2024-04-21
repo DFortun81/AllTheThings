@@ -15,17 +15,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 1337,	-- Uldaman
 		-- #endif
-		-- #if AFTER CATA
 		["coords"] = {
+			-- #if AFTER CATA
 			{ 36.63, 29.42, 16 },	-- Uldaman [Front], Uldaman [Badlands]
 			{ 60.68, 37.43, BADLANDS },	-- Uldaman [Side]
-		},
-		-- #else
-		["coords"] = {
+			-- #else
 			{ 36.63, 29.42, 16 },	-- Uldaman [Front], Uldaman [Badlands]
 			{ 64, 44, BADLANDS },	-- Uldaman [Side]
+			-- #endif
 		},
-		-- #endif
 		["mapID"] = ULDAMAN,
 		["maps"] = { 16, 231 },
 		["lvl"] = lvlsquish(35, 35, 15),

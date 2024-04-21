@@ -242,11 +242,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(167, {	-- Forest Song, Ashenvale
 					["cr"] = 22935,	-- Suralais Farwind <Hippogryph Master>
-					-- #if AFTER CATA
-					["coord"] = { 85.0, 43.6, ASHENVALE },
-					-- #else
-					["coord"] = { 85.1, 43.5, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 85.0, 43.6, ASHENVALE },
+						-- #else
+						{ 85.1, 43.5, ASHENVALE },
+						-- #endif
+					},
 					["timeline"] = { "added 2.2.0.7272" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -275,11 +277,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(58, {	-- Zoram'gar Outpost, Ashenvale
 					["cr"] = 11901,	-- Andruk <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 11.2, 34.4, ASHENVALE },
-					-- #else
-					["coord"] = { 12.2, 33.8, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 11.2, 34.4, ASHENVALE },
+						-- #else
+						{ 12.2, 33.8, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -566,11 +570,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6503, {	-- Ashenvale Outrunners
 					["qg"] = 12867,	-- Kuray'bin
-					-- #if AFTER CATA
-					["coord"] = { 73.5, 60.8, ASHENVALE },
-					-- #else
-					["coord"] = { 71.0, 68.2, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 73.5, 60.8, ASHENVALE },
+						-- #else
+						{ 71.0, 68.2, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(19, 19, 7),
 					["groups"] = {
@@ -651,11 +657,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(216, {	-- Between a Rock and a Thistlefur
 					["qg"] = 12757,	-- Karang Amakkar
-					-- #if AFTER CATA
-					["coord"] = { 37.7, 43.5, ASHENVALE },
-					-- #else
-					["coord"] = { 11.8, 34.4, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.7, 43.5, ASHENVALE },
+						-- #else
+						{ 11.8, 34.4, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(21, 21, 7),
 					-- #if BEFORE CATA
@@ -1255,11 +1263,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6482, {	-- Freedom to Ruul
 					["qg"] = 12818,	-- Ruul Snowhoof
-					-- #if AFTER CATA
-					["coord"] = { 41.4, 34.6, ASHENVALE },
-					-- #else
-					["coord"] = { 41.4, 34.4, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.4, 34.6, ASHENVALE },
+						-- #else
+						{ 41.4, 34.4, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(19, 19, 7),
 				}),
@@ -1418,11 +1428,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["sourceQuest"] = 1918,	-- The Befouled Element
-					-- #if AFTER CATA
-					["coord"] = { 74.0, 60.6, ASHENVALE },
-					-- #else
-					["coord"] = { 73.6, 60, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 74.0, 60.6, ASHENVALE },
+						-- #else
+						{ 73.6, 60, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(23, 23, 7),
 					["groups"] = {
@@ -1604,11 +1616,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6442, {	-- Naga at the Zoram Strand
 					["qg"] = 12719,	-- Marukai
-					-- #if AFTER CATA
-					["coord"] = { 12.6, 35.2, ASHENVALE },
-					-- #else
-					["coord"] = { 11.6, 34.8, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 12.6, 35.2, ASHENVALE },
+						-- #else
+						{ 11.6, 34.8, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 7),
 					["groups"] = {
@@ -3100,11 +3114,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6544, {	-- Torek's Assault
 					["qg"] = 12858,	-- Torek
-					-- #if AFTER CATA
-					["coord"] = { 68.4, 75.2, ASHENVALE },
-					-- #else
-					["coord"] = { 68.2, 75.2, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.4, 75.2, ASHENVALE },
+						-- #else
+						{ 68.2, 75.2, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 7),
 					["groups"] = {
@@ -3117,11 +3133,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6462, {	-- Troll Charm
 					["qg"] = 12721,	-- Mitsuwa
-					-- #if AFTER CATA
-					["coord"] = { 38.8, 42.3, ASHENVALE },
-					-- #else
-					["coord"] = { 11.6, 34.8, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 38.8, 42.3, ASHENVALE },
+						-- #else
+						{ 11.6, 34.8, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(19, 19, 7),
 					["groups"] = {
@@ -3387,33 +3405,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(RARES, {
 				n(3773, {	-- Akkrilus
-					-- #if AFTER CATA
-					["coord"] = { 25.2, 60.4, ASHENVALE },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 25.2, 60.4, ASHENVALE },
+						-- #else
 						{ 25.4, 60.8, ASHENVALE },
 						{ 28.6, 61.4, ASHENVALE },
 						{ 27.6, 64.0, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(3735, {	-- Apothecary Falthis
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 31.4, 22.4, ASHENVALE },
 						{ 32.0, 23.4, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 33.2, 21.0, ASHENVALE },
 						{ 33.2, 21.8, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(10641, {	-- Branch Snapper
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 42.2, 45.0, ASHENVALE },
 						{ 43.2, 48.0, ASHENVALE },
 						{ 43.8, 51.2, ASHENVALE },
@@ -3421,59 +3437,53 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 46.0, 51.4, ASHENVALE },
 						{ 46.0, 47.2, ASHENVALE },
 						{ 45.0, 45.4, ASHENVALE },
+						-- #else
+						{ 47.6, 46.6, ASHENVALE },
+						-- #endif
 					},
-					-- #else
-					["coord"] = { 47.6, 46.6, ASHENVALE },
-					-- #endif
 				}),
 				n(3736, {	-- Darkslayer Mordenthal
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 72.4, 71.0, ASHENVALE },
 						{ 75.2, 71.0, ASHENVALE },
 						{ 73.6, 73.6, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 75.0, 69.8, ASHENVALE },
 						{ 74.4, 73.4, ASHENVALE },
 						{ 78.0, 73.8, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(10642, {	-- Eck'alom
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 46.6, 69.2, ASHENVALE },
 						{ 47.8, 68.6, ASHENVALE },
 						{ 49.8, 69.0, ASHENVALE },
 						{ 51.0, 70.8, ASHENVALE },
 						{ 49.4, 71.4, ASHENVALE },
 						{ 48.0, 72.4, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 45.6, 71.2, ASHENVALE },
 						{ 48.6, 69.8, ASHENVALE },
 						{ 54.2, 69.4, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(10559, {	-- Lady Vespia
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 12.0, 15.0, ASHENVALE },
 						{ 15.0, 24.2, ASHENVALE },
 						{ 12.6, 29.2, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 9.6, 15.6, ASHENVALE },
 						{ 13.6, 19.6, ASHENVALE },
 						{ 11.2, 29.4, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				o(240617, {	-- Lost Sentinel's Pouch
 					["description"] = "Found inside a large hollow tree trunk.",
@@ -3487,21 +3497,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(10644, {	-- Mist Howler
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 26.2, 15.4, ASHENVALE },
 						{ 25.2, 26.8, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 18.2, 30.2, ASHENVALE },
 						{ 22.6, 29.6, ASHENVALE },
 						{ 23.0, 35.6, ASHENVALE },
 						{ 26.6, 18.6, ASHENVALE },
 						{ 29.2, 16.8, ASHENVALE },
 						{ 26.6, 15.0, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(10643, {	-- Mugglefin
 					["coords"] = {
@@ -3512,48 +3520,48 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				n(10640, {	-- Oakpaw
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 57.0, 64.6, ASHENVALE },
 						{ 55.8, 62.6, ASHENVALE },
 						{ 54.2, 62.4, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 50.0, 60.2, ASHENVALE },
 						{ 54.2, 62.4, ASHENVALE },
 						{ 56.6, 62.8, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(10647, {	-- Prince Raze
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 78.6, 45.2, ASHENVALE },
 						{ 81.0, 49.2, ASHENVALE },
 						{ 66.6, 56.8, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 78.4, 42.6, ASHENVALE },
 						{ 79.0, 45.6, ASHENVALE },
 						{ 77.2, 46.2, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(10639, {	-- Rorgish Jowl
-					-- #if AFTER CATA
-					["coord"] = { 37.0, 33.6, ASHENVALE },
-					-- #else
-					["coord"] = { 36.6, 35.4, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.0, 33.6, ASHENVALE },
+						-- #else
+						{ 36.6, 35.4, ASHENVALE },
+						-- #endif
+					},
 				}),
 				n(3792, {	-- Terrowulf Packlord
-					-- #if AFTER CATA
-					["coord"] = { 53.0, 37.6, ASHENVALE },
-					-- #else
-					["coord"] = { 50.6, 39.0, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.0, 37.6, ASHENVALE },
+						-- #else
+						{ 50.6, 39.0, ASHENVALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(5753, {	-- Ruffled Chaplet
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -3564,27 +3572,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(12037, {	-- Ursol'lok
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 89.6, 46.6, ASHENVALE },
 						{ 92.8, 45.6, ASHENVALE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 83.0, 49.0, ASHENVALE },
 						{ 83.4, 60.4, ASHENVALE },
 						{ 88.6, 68.4, ASHENVALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 			}),
 			n(VENDORS, {
 				n(3951, {	-- Bhaldaran Ravenshade <Bowyer>
-					-- #if AFTER CATA
-					["coord"] = { 34.6, 71.2, ASHENVALE },
-					-- #else
-					["coord"] = { 50.3, 67.2, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 34.6, 71.2, ASHENVALE },
+						-- #else
+						{ 50.3, 67.2, ASHENVALE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11305, {	-- Dense Shortbow
@@ -3622,11 +3630,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3956, {	-- Harklan Moongrove <Alchemy Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 50.0, 65.6, ASHENVALE },
-					-- #else
-					["coord"] = { 50.8, 67.0, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.0, 65.6, ASHENVALE },
+						-- #else
+						{ 50.8, 67.0, ASHENVALE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -3671,11 +3681,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3955, {	-- Shandrina <Trade Goods>
-					-- #if AFTER CATA
-					["coord"] = { 50.4, 65.6, ASHENVALE },
-					-- #else
-					["coord"] = { 49.5, 67.1, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.4, 65.6, ASHENVALE },
+						-- #else
+						{ 49.5, 67.1, ASHENVALE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(16072, {	-- Expert Cookbook
@@ -3693,11 +3705,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3960, {	-- Ulthaan <Butcher>
-					-- #if AFTER CATA
-					["coord"] = { 48.6, 64.0, ASHENVALE },
-					-- #else
-					["coord"] = { 50.0, 66.6, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.6, 64.0, ASHENVALE },
+						-- #else
+						{ 50.0, 66.6, ASHENVALE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
@@ -3709,11 +3723,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(12962, {	-- Wik'Tar <Fish Merchant & Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 10.8, 33.8, ASHENVALE },
-					-- #else
-					["coord"] = { 11.8, 34.0, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 10.8, 33.8, ASHENVALE },
+						-- #else
+						{ 11.8, 34.0, ASHENVALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
@@ -3779,22 +3795,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 15.09.2023
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					["cr"] = 3808,	-- Forsaken Dark Stalker
+					-- #endif
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						3808,	-- Forsaken Dark Stalker
+						-- #elseif AFTER 10.1.7
+						3928,	-- Rotting Slime
+						-- #endif
+					},
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 75.8, 73.6, ASHENVALE },
 						{ 77.4, 75.4, ASHENVALE },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 3928,	-- Rotting Slime
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 75.6, 69.2, ASHENVALE },
 						{ 77.2, 73.8, ASHENVALE },
 						{ 71.8, 70.8, ASHENVALE },
 						{ 69.8, 74.8, ASHENVALE },
 						{ 73.6, 79.6, ASHENVALE },
 						{ 72.8, 74.4, ASHENVALE },
-					},
 					-- #endif
+					},
 				}),
 				i(78343, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
 					["timeline"] = { "added 4.3.0" },

@@ -92,11 +92,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(79, {	-- Marshal's Refuge, Un'Goro Crater / Marshal's Stand, Un'Goro Crater [CATA+]
 					["cr"] = 10583,	-- Gryfe <Flight Master>
-					-- #if AFTER CATA
-					["coord"] = { 56, 64, UNGORO_CRATER },
-					-- #else
-					["coord"] = { 45.2, 5.8, UNGORO_CRATER },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 56, 64, UNGORO_CRATER },
+						-- #else
+						{ 45.2, 5.8, UNGORO_CRATER },
+						-- #endif
+					},
 				}),
 				fp(386, {	-- Mossy Pile, Un'Goro Crater
 					["cr"] = 39175,	-- Flizzy Coilspanner <Flight Master>
@@ -1783,31 +1785,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(6582, {	-- Clutchmother Zavas
-					-- #if AFTER CATA
-					["coord"] = { 48.8, 85.0, UNGORO_CRATER },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.8, 85.0, UNGORO_CRATER },
+						-- #else
 						{ 44.6, 81.6, UNGORO_CRATER },
 						{ 46.8, 86.0, UNGORO_CRATER },
 						{ 49.2, 85.6, UNGORO_CRATER },
 						{ 49.6, 83.6, UNGORO_CRATER },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(6583, {	-- Gruff
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 32.0, 78.6, UNGORO_CRATER },
 						{ 33.0, 79.4, UNGORO_CRATER },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 36.6, 66.6, UNGORO_CRATER },
 						{ 37.8, 75.0, UNGORO_CRATER },
 						{ 31.8, 72.2, UNGORO_CRATER },
 						{ 31.6, 79.6, UNGORO_CRATER },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(45052, {	-- Gruffscale Leggings
 							["timeline"] = { "added 3.1.0.9658" },
@@ -1815,8 +1815,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(6584, {	-- King Mosh
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 29.6, 45.8, UNGORO_CRATER },
 						{ 29.0, 36.8, UNGORO_CRATER },
 						{ 30.0, 35.6, UNGORO_CRATER },
@@ -1828,9 +1828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 32.0, 31.0, UNGORO_CRATER },
 						{ 30.8, 31.8, UNGORO_CRATER },
 						{ 33.4, 29.4, UNGORO_CRATER },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 27.8, 45.0, UNGORO_CRATER },
 						{ 30.8, 47.6, UNGORO_CRATER },
 						{ 28.8, 34.4, UNGORO_CRATER },
@@ -1838,8 +1836,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 35.3, 36.0, UNGORO_CRATER },
 						{ 35.1, 30.3, UNGORO_CRATER },
 						{ 37.9, 43.5, UNGORO_CRATER },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(6581, {	-- Ravasaur Matriarch
 					-- #if AFTER CATA
@@ -1867,11 +1865,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(6585, {	-- Uhk'loc
-					-- #if AFTER CATA
-					["coord"] = { 63.0, 18.6, UNGORO_CRATER },
-					-- #else
-					["coord"] = { 68.5, 12.7, UNGORO_CRATER },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 63.0, 18.6, UNGORO_CRATER },
+						-- #else
+						{ 68.5, 12.7, UNGORO_CRATER },
+						-- #endif
+					},
 				}),
 			}),
 			prof(SKINNING, {
@@ -1908,11 +1908,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(12959, {	-- Nergal <General Goods Vendor> / <General Goods> [CATA+]
-					-- #if AFTER CATA
-					["coord"] = { 54.8, 62.6, UNGORO_CRATER },
-					-- #else
-					["coord"] = { 43.2, 7.8, UNGORO_CRATER },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 54.8, 62.6, UNGORO_CRATER },
+						-- #else
+						{ 43.2, 7.8, UNGORO_CRATER },
+						-- #endif
+					},
 					["groups"] = {
 						i(15758, {	-- Pattern: Devilsaur Gauntlets (RECIPE!)
 							["isLimited"] = true,

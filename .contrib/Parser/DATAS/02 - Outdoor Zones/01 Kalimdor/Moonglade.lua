@@ -227,11 +227,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5924, {	-- Heeding the Call [Stormwind City]
 					["qg"] = 5505,	-- Theridran <Druid Trainer>
-					-- #if AFTER WRATH
-					["coord"] = { 36.2, 64.2, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 21.4, 51.4, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 36.2, 64.2, STORMWIND_CITY },
+						-- #else
+						{ 21.4, 51.4, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -769,11 +771,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(12022, {	-- Lorelae Wintersong <Trade Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 48.6, 40.2, MOONGLADE },
-					-- #else
-					["coord"] = { 48.2, 40.0, MOONGLADE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.6, 40.2, MOONGLADE },
+						-- #else
+						{ 48.2, 40.0, MOONGLADE },
+						-- #endif
+					},
 					["groups"] = {
 						i(16224, {	-- Formula: Enchant Cloak - Superior Defense (RECIPE!)
 							["isLimited"] = true,

@@ -39,11 +39,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 1417,	-- Sunken Temple
 		-- #endif
-		-- #if AFTER CATA
-		["coord"] = { 76.04, 45.21, SWAMP_OF_SORROWS },
-		-- #else
-		["coord"] = { 69.2, 54.8, SWAMP_OF_SORROWS },
-		-- #endif
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 76.04, 45.21, SWAMP_OF_SORROWS },
+			-- #else
+			{ 69.2, 54.8, SWAMP_OF_SORROWS },
+			-- #endif
+		},
 		["mapID"] = TEMPLE_OF_ATALHAKKAR,
 		["lvl"] = 45,
 		["groups"] = {

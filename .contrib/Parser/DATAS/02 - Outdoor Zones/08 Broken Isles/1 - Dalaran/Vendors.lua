@@ -2846,53 +2846,67 @@ root(ROOTS.Zones, {
 					["coord"] = { 58.7, 39.3, LEGION_DALARAN },
 					["g"] = {
 						i(136910, {	-- Alarm-o-Bot (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 200 }, },	-- 200x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(118599, {	-- Autumnal Sproutling (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(129760, {	-- Fel Piglet (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 200 }, },	-- 200x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(140231, {	-- Narcissa's Mirror (TOY!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 1000 }, },	-- 1,000 Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 1000 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 1000 },	-- 1000x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 1000 },	-- 1000x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(129878, {	-- Nightwatch Swooper (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(129798, {	-- Plump Jelly (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 500 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 500 },	-- 500x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(140274, {	-- River Calf (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(144346, {	-- Boon of the Zookeeper
 							i(144345, {	-- Pile of Pet Goodies
@@ -2911,53 +2925,67 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127703, {	-- Dusty Sporewing (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127701, {	-- Glowing Sporebat (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127707, {	-- Indestructible Bone (TOY!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127705, {	-- Lost Netherpup (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 200 }, },	-- 200x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127696, {	-- Magic Pet Mirror (TOY!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 500 }, },	-- 500x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 500 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 500 },	-- 500x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127695, {	-- Spirit Wand (TOY!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -5979,53 +6007,67 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127703, {	-- Dusty Sporewing (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127701, {	-- Glowing Sporebat (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127707, {	-- Indestructible Bone (TOY!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 50 }, },	-- 50x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 50 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127705, {	-- Lost Netherpup (PET!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 200 }, },	-- 200x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127696, {	-- Magic Pet Mirror (TOY!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 500 }, },	-- 500x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 500 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 500 },	-- 500x Polished Pet Charm
+								-- #endif
+							},
 						}),
 						i(127695, {	-- Spirit Wand (TOY!)
-							-- #if BEFORE 10.2.5
-							["cost"] = { { "i", 116415, 100 }, },	-- 100x Shiny Pet Charm
-							-- #else
-							["cost"] = { { "i", 163036, 100 }, },	-- 200x Polished Pet Charm
-							-- #endif
+							["cost"] = {
+								-- #if BEFORE 10.2.5
+								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
+								-- #else
+								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								-- #endif
+							},
 						}),
 					},
 				}),

@@ -3631,8 +3631,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5823, {	-- Death Flayer
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 36.8, 49.8, DUROTAR },
 						{ 34.8, 43.8, DUROTAR },
 						{ 35.6, 46.0, DUROTAR },
@@ -3640,17 +3640,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.6, 45.6, DUROTAR },
 						{ 38.6, 44.0, DUROTAR },
 						{ 36.6, 44.4, DUROTAR },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 38.8, 46.2, DUROTAR },
 						{ 35.2, 48.2, DUROTAR },
 						{ 35.4, 53.0, DUROTAR },
 						{ 36.0, 55.6, DUROTAR },
 						{ 37.8, 53.4, DUROTAR },
 						{ 39.2, 51.0, DUROTAR },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5822, {	-- Felweaver Scornn
 					["coords"] = {
@@ -3895,11 +3893,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(3881, {	-- Grimtak
-					-- #if AFTER CATA
-					["coord"] = { 50.8, 42.8, DUROTAR },
-					-- #else
-					["coord"] = { 51.2, 42.6, DUROTAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.8, 42.8, DUROTAR },
+						-- #else
+						{ 51.2, 42.6, DUROTAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5483),	-- Recipe: Scorpid Surprise (RECIPE!)
@@ -3946,11 +3946,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(5942, {	-- Zansoa <Fishing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 57.4, 77.0, DUROTAR },
-					-- #else
-					["coord"] = { 56.0, 73.4, DUROTAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.4, 77.0, DUROTAR },
+						-- #else
+						{ 56.0, 73.4, DUROTAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)

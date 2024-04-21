@@ -8,11 +8,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["zone-text-areaID"] = 978,	-- Zul'Farrak
 		["mapID"] = ZULFARRAK,
-		-- #if AFTER CATA
-		["coord"] = { 39.21, 21.29, TANARIS },
-		-- #else
-		["coord"] = { 39.0, 19.0, TANARIS },
-		-- #endif
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 39.21, 21.29, TANARIS },
+			-- #else
+			{ 39.0, 19.0, TANARIS },
+			-- #endif
+		},
 		["lvl"] = lvlsquish(39, 39, 15),
 		["groups"] = {
 			n(QUESTS, {
@@ -139,23 +141,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2861, {	-- Tabetha's Task
-					["qgs"] = {
-						4568,	-- Anastasia Hartwell
-						5144,	-- Bink
-						5497,	-- Jennea Cannon
-						5885,	-- Deino
+					["allianceQuestData"] = {
+						["qgs"] = {
+							5144,	-- Bink <Mage Trainer>
+							5497,	-- Jennea Cannon <Mage Trainer>
+						},
+						["coords"] = {
+							{ 27, 8.2, IRONFORGE },
+							{ 38.6, 79.4, STORMWIND_CITY },
+						},
 					},
-					["qgs"] = {
-						5885,	-- Deino <Mage Trainer>
-						5144,	-- Bink <Mage Trainer>
-						5497,	-- Jennea Cannon <Mage Trainer>
-						4568,	-- Anastasia Hartwell <Mage Trainer>
-					},
-					["coords"] = {
-						{ 38.4, 86, ORGRIMMAR },
-						{ 27, 8.2, IRONFORGE },
-						{ 38.6, 79.4, STORMWIND_CITY },
-						{ 85, 10.2, UNDERCITY },
+					["hordeQuestData"] = {
+						["qgs"] = {
+							5885,	-- Deino <Mage Trainer>
+							4568,	-- Anastasia Hartwell <Mage Trainer>
+						},
+						["coords"] = {
+							{ 38.4, 86, ORGRIMMAR },
+							{ 85, 10.2, UNDERCITY },
+						},
 					},
 					["timeline"] = { "removed 4.0.3" },
 					["isBreadcrumb"] = true,

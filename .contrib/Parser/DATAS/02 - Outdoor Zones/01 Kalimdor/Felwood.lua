@@ -152,11 +152,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(166, {	-- Emerald Sanctuary, Felwood
 					["cr"] = 22931,	-- Gorrim <Emerald Circle Flight Master>
-					-- #if AFTER CATA
-					["coord"] = { 51.4, 80.8, FELWOOD },
-					-- #else
-					["coord"] = { 51.5, 82.2, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 51.4, 80.8, FELWOOD },
+						-- #else
+						{ 51.5, 82.2, FELWOOD },
+						-- #endif
+					},
 					["timeline"] = { "added 2.2.0.7272" },
 				}),
 				fp(597, {	-- Irontree Clearing, Felwood
@@ -167,11 +169,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(65, {	-- Talonbranch Glade, Felwood
 					["cr"] = 12578,	-- Mishellena <Hippogryph Master>
-					-- #if AFTER CATA
-					["coord"] = { 60.6, 25.2, FELWOOD },
-					-- #else
-					["coord"] = { 62.6, 24.2, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.6, 25.2, FELWOOD },
+						-- #else
+						{ 62.6, 24.2, FELWOOD },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(594, {	-- Whisperwind Grove, Felwood
@@ -2259,21 +2263,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(RARES, {
 				n(14340, {	-- Alshirr Banebreath
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 40.0, 82.2, FELWOOD },
 						{ 40.6, 83.2, FELWOOD },
 						{ 41.8, 84.0, FELWOOD },
 						{ 43.2, 85.6, FELWOOD },
 						{ 43.8, 85.8, FELWOOD },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 39.0, 83.0, FELWOOD },
 						{ 40.2, 86.0, FELWOOD },
 						{ 43.0, 88.0, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50362, {	-- Blackbog the Fang
 					["coord"] = { 34.8, 59.6, FELWOOD },
@@ -2284,29 +2286,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(14339, {	-- Death Howl
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 54.2, 84.4, FELWOOD },
 						{ 48.2, 74.6, FELWOOD },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 48.2, 79.0, FELWOOD },
 						{ 49.8, 77.2, FELWOOD },
 						{ 56.8, 90.0, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(7104, {	-- Dessecus
-					-- #if AFTER CATA
-					["coord"] = { 57.8, 19.6, FELWOOD },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.8, 19.6, FELWOOD },
+						-- #else
 						{ 57.4, 22.4, FELWOOD },
 						{ 58.0, 17.4, FELWOOD },
 						{ 58.6, 19.6, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(51025, {	-- Dilennaa
 					["coord"] = { 42.2, 48.2, FELWOOD },
@@ -2339,76 +2339,72 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(7137, {	-- Immolatus
-					-- #if AFTER CATA
-					["coord"] = { 41.4, 42.0, FELWOOD },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.4, 42.0, FELWOOD },
+						-- #else
 						{ 41.8, 39.4, FELWOOD },
 						{ 46.0, 39.2, FELWOOD },
 						{ 44.6, 42.2, FELWOOD },
 						{ 41.2, 42.6, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14344, {	-- Mongress
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 43.4, 75.8, FELWOOD },
 						{ 46.8, 82.0, FELWOOD },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 43.6, 77.6, FELWOOD },
 						{ 46.8, 83.0, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50777, {	-- Needle
 					["coord"] = { 51.0, 34.2, FELWOOD },
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(14343, {	-- Olm the Wise
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 57.8, 19.4, FELWOOD },
 						{ 56.6, 23.6, FELWOOD },
 						{ 55.2, 23.6, FELWOOD },
 						{ 54.6, 27.2, FELWOOD },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 54.6, 26.6, FELWOOD },
 						{ 57.2, 21.4, FELWOOD },
 						{ 58.6, 18.6, FELWOOD },
 						{ 56.6, 9.2, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14342, {	-- Ragepaw
-					-- #if AFTER CATA
-					["coord"] = { 48.6, 89.0, FELWOOD },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.6, 89.0, FELWOOD },
+						-- #else
 						{ 47.6, 93.6, FELWOOD },
 						{ 49.0, 92.8, FELWOOD },
 						{ 48.4, 91.2, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50724, {	-- Spinecrawl
 					["coord"] = { 60.6, 22.2, FELWOOD },
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(14345, {	-- The Ongar
-					-- #if AFTER CATA
-					["coord"] = { 42.0, 45.8, FELWOOD },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.0, 45.8, FELWOOD },
+						-- #else
 						{ 39.0, 48.4, FELWOOD },
 						{ 42.8, 47.6, FELWOOD },
 						{ 43.8, 49.6, FELWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50864, {	-- Thicket
 					["coord"] = { 59.6, 6.8, FELWOOD },
@@ -2467,11 +2463,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(2803, {	-- Malygen <General Goods>
-					-- #if AFTER CATA
-					["coord"] = { 61.2, 26.8, FELWOOD },
-					-- #else
-					["coord"] = { 62.2, 25.6, FELWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.2, 26.8, FELWOOD },
+						-- #else
+						{ 62.2, 25.6, FELWOOD },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)

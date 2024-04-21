@@ -639,11 +639,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{"contains","headerID",ACHIEVEMENTS,QUESTS,ZONE_DROPS},	-- Select the common Achievements/Quests/Zone Drops
 				},
 				-- #endif
-				-- #if AFTER 4.0.3
-				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
-				-- #else
-				["coord"] = { 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
-				-- #endif
+				["coords"] = {
+					-- #if AFTER 4.0.3
+					{ 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+					-- #else
+					{ 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+					-- #endif
+				},
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(12811, {	-- Righteous Orb
@@ -975,10 +977,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{"contains","headerID",ACHIEVEMENTS,QUESTS,ZONE_DROPS},	-- Select the common Achievements/Quests/Zone Drops
 				},
 				-- #endif
-				-- #if AFTER 4.0.3
-				["coord"] = { 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
-				-- #else
-				["coord"] = { 48.18, 21.90, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
+				["coords"] = {
+					-- #if AFTER 4.0.3
+					{ 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
+					-- #else
+					{ 48.18, 21.90, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
+					-- #endif
+				},
+				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 12382, 1 } },	-- Key to the City
 				-- #endif
 				["groups"] = {

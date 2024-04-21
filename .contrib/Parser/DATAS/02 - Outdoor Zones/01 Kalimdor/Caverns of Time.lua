@@ -30,11 +30,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_ONE, q(10277, {	-- The Caverns of Time
 					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["sourceQuest"] = 10279,	-- To The Master's Lair
-					-- #if AFTER CATA
-					["coord"] = { 41.5, 38.5, CAVERNS_OF_TIME },
-					-- #else
-					["coord"] = { 58.4, 54.2, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.5, 38.5, CAVERNS_OF_TIME },
+						-- #else
+						{ 58.4, 54.2, TANARIS },
+						-- #endif
+					},
 					["timeline"] = { "added 2.0.3" },
 					["lvl"] = lvlsquish(66, 66, 15),
 				})),
@@ -44,11 +46,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["description"] = "The questgiver can be found walking around the Caverns of Time.",
-					-- #if AFTER CATA
-					["coord"] = { 39.4, 44.4, CAVERNS_OF_TIME },
-					-- #else
-					["coord"] = { 59.6, 54, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.4, 44.4, CAVERNS_OF_TIME },
+						-- #else
+						{ 59.6, 54, TANARIS },
+						-- #endif
+					},
 					["timeline"] = { "added 2.0.3", "removed 3.0.2" },
 					["maps"] = {
 						TEMPEST_KEEP_THE_EYE,
@@ -88,11 +92,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(TBC_PHASE_ONE, q(10279, {	-- To The Master's Lair
 					["qg"] = 20142,	-- Steward of Time <Keepers of Time>
-					-- #if AFTER CATA
-					["coord"] = { 65.4, 49.6, TANARIS },
-					-- #else
-					["coord"] = { 66, 49.6, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 65.4, 49.6, TANARIS },
+						-- #else
+						{ 66, 49.6, TANARIS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(66, 66, 15),
 					["isBreadcrumb"] = true,
 				})),

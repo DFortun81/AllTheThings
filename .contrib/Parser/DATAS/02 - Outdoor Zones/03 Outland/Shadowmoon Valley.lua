@@ -947,8 +947,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/10	Shadowmoon Tuber
-								["provider"] = { "i", 30356 },	-- Shadowmoon Tuber
-								["provider"] = { "i", 30462 },	-- Oronok's Boar Whistle (Provided)
+								["providers"] = {
+									{ "i", 30356 },	-- Shadowmoon Tuber
+									{ "i", 30462 },	-- Oronok's Boar Whistle (Provided)
+								},
 							}),
 						},
 					}),
