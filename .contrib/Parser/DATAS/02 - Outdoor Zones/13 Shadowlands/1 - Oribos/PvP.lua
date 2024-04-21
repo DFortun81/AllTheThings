@@ -5,8 +5,8 @@ local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 	SymLink = {
 		{"select", "headerID", SeasonID},		-- Select Shadowlands
 		{"find", "headerID", HeaderID},			-- Header
-		{"extract","itemID"},					-- Extract Items
-		{"where", "f", FilterID},				-- Filter
+		{"find", "filterID", FilterID},			-- Filter
+		{"extract","sourceID"},					-- Extract Sources
 
 		{"select", "itemID", Extra }
 	}
@@ -16,14 +16,14 @@ local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 	SymLink = {
 		{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
 		{"find", "headerID", HeaderID},			-- Header
-		{"extract","itemID"},					-- Extract Items
-		{"where", "f", FilterID},				-- Filter
+		{"find", "filterID", FilterID},			-- Filter
+		{"extract","sourceID"},					-- Extract Sources
 		{"finalize"},							-- Push Everything to the Queue
 
 		{"select", "headerID", SEASON_COSMIC},	-- Select Cosmic Season
-		{"find", "headerID", HeaderID},		-- Header
-		{"extract","itemID"},					-- Extract Items
-		{"where", "f", FilterID},				-- Filter
+		{"find", "headerID", HeaderID},			-- Header
+		{"find", "filterID", FilterID},			-- Filter
+		{"extract","sourceID"},					-- Extract Sources
 	}
 	if Extra then
 		local extraCmd = {"select", "itemID" };
