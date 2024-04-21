@@ -63,6 +63,7 @@ local CreateDataCache = function(name, skipMapCaching)
 	end
 	setmetatable(cache, fieldMeta);
 	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
+	cache.mountID = cache.spellID;	-- identical cache as spellID
 	cache.recipeID = cache.spellID;	-- identical cache as spellID
 	--cache.requireSkill = cache.professionID;	-- identical cache as professionID (in Retail)
 	return cache;
