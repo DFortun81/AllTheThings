@@ -49,7 +49,7 @@ local function GetPlayerPosition()
 end
 
 local GetBestObjectIDForName;
-if app.IsRetail and false then
+if app.IsRetail then
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
