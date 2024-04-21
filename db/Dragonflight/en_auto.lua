@@ -279,6 +279,7 @@ local keys = {
 [8869]="Sweet Serenity",
 [8896]="The Dwarven Spy",
 [8973]="REUSE",
+[9030]="Anthion's Parting Words",
 [9031]="<TXT>Anthion's Parting Words",
 [9065]="The \"Chow\" Quest (123)aa",
 [9168]="Heart of Deatholme",

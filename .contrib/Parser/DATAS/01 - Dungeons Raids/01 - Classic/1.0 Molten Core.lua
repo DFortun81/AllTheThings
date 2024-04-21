@@ -88,11 +88,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					-- #endif
-					-- #if AFTER LEGION
-					["coord"] = { 29.6, 10.6, SILITHUS },
-					-- #else
-					["coord"] = { 21.7, 8.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER LEGION
+						{ 29.6, 10.6, SILITHUS },
+						-- #else
+						{ 21.7, 8.6, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
@@ -238,11 +240,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["sourceQuest"] = 7785,	-- Examine the Vessel
 					["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
-					-- #if AFTER LEGION
-					["coord"] = { 29.6, 10.6, SILITHUS },
-					-- #else
-					["coord"] = { 21.7, 8.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER LEGION
+						{ 29.6, 10.6, SILITHUS },
+						-- #else
+						{ 21.7, 8.6, SILITHUS },
+						-- #endif
+					},
 					-- #if ANYCLASSIC
 					-- Completable by any class in Retail... confirm for Classic
 					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.

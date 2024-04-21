@@ -883,22 +883,26 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "i",  12411 },	-- Third Mosh'aru Tablet
 							{ "o", 175487 },	-- Third Mosh'aru Tablet
 						},
-						-- #if AFTER WRATH
-						["coord"] = { 66.9, 9, EASTERN_PLAGUELANDS },
-						-- #else
-						["coord"] = { 72.4, 13, EASTERN_PLAGUELANDS },
-						-- #endif
+						["coords"] = {
+							-- #if AFTER WRATH
+							{ 66.9, 9, EASTERN_PLAGUELANDS },
+							-- #else
+							{ 72.4, 13, EASTERN_PLAGUELANDS },
+							-- #endif
+						},
 					}),
 					objective(2, {	-- 0/1 Fourth Mosh'aru Tablet
 						["providers"] = {
 							{ "i",  12412 },	-- Fourth Mosh'aru Tablet
 							{ "o", 175488 },	-- Fourth Mosh'aru Tablet
 						},
-						-- #if AFTER WRATH
-						["coord"] = { 67.2, 11.4, EASTERN_PLAGUELANDS },
-						-- #else
-						["coord"] = { 72.7, 15.7, EASTERN_PLAGUELANDS },
-						-- #endif
+						["coords"] = {
+							-- #if AFTER WRATH
+							{ 67.2, 11.4, EASTERN_PLAGUELANDS },
+							-- #else
+							{ 72.7, 15.7, EASTERN_PLAGUELANDS },
+							-- #endif
+						},
 					}),
 				},
 			}),
@@ -1487,8 +1491,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
 				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
-				-- #endif
+				-- #else
 				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
+				-- #endif
 				["groups"] = {
 					i(13218),	-- Fang of the Crystal Spider
 					i(13185),	-- Sunderseer Mantle
@@ -1589,8 +1594,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
-				-- #endif
+				-- #else
 				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
+				-- #endif
 				["groups"] = {
 					i(13204),	-- Bashguuder
 					i(13198),	-- Hurd Smasher

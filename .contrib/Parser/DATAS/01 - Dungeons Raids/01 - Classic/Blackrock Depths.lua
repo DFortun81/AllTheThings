@@ -1445,11 +1445,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["sourceQuest"] = 28300,	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 74.6, 43.5, ORGRIMMAR },
-					-- #else
-					["coord"] = { 48.4, 62.6, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 74.6, 43.5, ORGRIMMAR },
+						-- #else
+						{ 48.4, 62.6, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -2138,13 +2140,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28328, {	-- Twilight Scheming [Alliance]
-					-- #if ANYCLASSIC
-					["qg"] = 376,	-- High Priestess Laurena
-					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
-					-- #else
-					["qg"] = 164949,	-- Patrice Lancaster
-					["coord"] = { 78.9, 69.8, STORMWIND_CITY },
-					-- #endif
+					["providers"] = {
+						-- #if ANYCLASSIC
+						{ "n", 376 },	-- High Priestess Laurena
+						-- #else
+						{"n", 164949 },	-- Patrice Lancaster
+						-- #endif
+					},
+					["coords"] = {
+						-- #if ANYCLASSIC
+						{ 49.6, 44.8, STORMWIND_CITY },
+						-- #else
+						{ 78.9, 69.8, STORMWIND_CITY },
+						-- #endif
+					},
 					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },

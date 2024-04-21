@@ -505,11 +505,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if NOT SEASON_OF_DISCOVERY
 				q(3765, {	-- The Corruption Abroad
 					["qg"] = 4984,  -- Argos Nightwhisper
-					-- #if AFTER WRATH
-					["coord"] = { 36.2, 67.6, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 21.6, 55.6, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 36.2, 67.6, STORMWIND_CITY },
+						-- #else
+						{ 21.6, 55.6, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
@@ -973,11 +975,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(3765, {	-- The Corruption Abroad
 							["qg"] = 4984,  -- Argos Nightwhisper
-							-- #if AFTER WRATH
-							["coord"] = { 36.2, 67.6, STORMWIND_CITY },
-							-- #else
-							["coord"] = { 21.6, 55.6, STORMWIND_CITY },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER WRATH
+								{ 36.2, 67.6, STORMWIND_CITY },
+								-- #else
+								{ 21.6, 55.6, STORMWIND_CITY },
+								-- #endif
+							},
 							["timeline"] = { "removed 4.0.3" },
 							["maps"] = { DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
