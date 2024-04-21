@@ -91,6 +91,9 @@ if app.IsRetail then
 		OnLoad = {
 			"OnStartup"
 		},
+		OnStartup = {
+			"OnStartupDone"
+		},
 		OnRefreshCollections = {
 			"OnRefreshCollectionsDone",
 		},

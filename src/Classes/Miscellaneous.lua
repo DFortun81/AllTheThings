@@ -54,7 +54,7 @@ local DynamicCategory_Nested = function(self)
 	-- delay-sort the top level groups
 	self.SortType = "Global";
 	-- don't fill into dynamic groups if they are popped out
-	self.skipFill = true
+	self.skipFull = true
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
 	Runner.Run(DynamicDataCache.CacheFields, self);
 	-- run a direct update on itself after being populated
@@ -136,7 +136,7 @@ local DynamicCategory_Simple = function(self)
 		-- delay-sort the top level groups
 		self.SortType = "Global";
 		-- don't fill into dynamic groups if they are popped out
-		self.skipFill = true
+		self.skipFull = true
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
 		Runner.Run(DynamicDataCache.CacheFields, self);
 		-- run a direct update on itself after being populated

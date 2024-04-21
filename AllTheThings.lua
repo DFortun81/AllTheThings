@@ -3490,6 +3490,9 @@ local function FillGroupsRecursiveAsync(group, FillData)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
+	-- Sometimes entire sub-groups should be preventing from even allowing filling (i.e. Dynamic groups)
+	local skipFull = app.GetRelativeRawWithField(group, "skipFull");
+	if skipFull then return end
 	-- Check if this group is inside a Window or not
 	local groupWindow = app.GetRelativeRawWithField(group, "window");
 	-- Setup the FillData for this fill operation
@@ -14531,13 +14534,16 @@ app.AddEventHandler("OnInit", PrePopulateAchievementSymlinks)
 
 -- Function which is triggered after Startup
 local function InitDataCoroutine()
+	local yield = coroutine.yield
 	-- app.PrintMemoryUsage("InitDataCoroutine")
 	-- if IsInInstance() then
 	-- 	app.print("cannot fully load while in an Instance due to Blizzard restrictions. Please Zone out to finish loading ATT.")
 	-- end
 
 	-- Wait for the Data Cache to return something.
-	while not app:GetDataCache() do coroutine.yield(); end
+	while not app:GetDataCache() do yield(); end
+	-- Wait for the app to finish OnStartup event, somehow this can trigger out of order on some clients
+	while not app.OnStartupDone do yield(); end
 
 	local accountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData");
 	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData");
@@ -14616,7 +14622,7 @@ local function InitDataCoroutine()
 
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- app.PrintDebug("Yield prior to Refresh")
-	coroutine.yield();
+	yield();
 
 	-- Prepare the Sound Pack!
 	app.Audio:ReloadSoundPack();
@@ -14949,5 +14955,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		end
 	end
 end
+
+app.AddEventHandler("OnStartupDone", function() app.OnStartupDone = true end)
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");
