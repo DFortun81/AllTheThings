@@ -188,7 +188,6 @@ local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gen
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
----@diagnostic disable-next-line: undefined-global
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();
@@ -218,7 +217,6 @@ tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, n
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
-	---@diagnostic disable-next-line: undefined-global
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();

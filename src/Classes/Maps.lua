@@ -238,7 +238,6 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	end,
 	["description"] = function(t)
 		if t.coords and #t.coords > 0 then
-			---@diagnostic disable-next-line: undefined-global
 			if not TomTom then
 				return "You can use Alt+Right Click to plot the coordinates with TomTom installed. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
 			else

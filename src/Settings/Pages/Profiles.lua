@@ -183,7 +183,7 @@ profileSelector.OnRefresh = function()
 	-- sort the profiles
 	app.Sort(settingProfileItems, app.SortDefaults.Strings)
 
-	local profileCount, existingBoxes, lastProfileSelect = 0, profileSelector.ATT and profileSelector.ATT.CB_Count or 0
+	local profileCount, existingBoxes, lastProfileSelect = 0, profileSelector.ATT and profileSelector.ATT.CB_Count or 0, nil
 
 	-- create checkboxes for the profiles in the scrollframe
 	for _,profile in ipairs(settingProfileItems) do

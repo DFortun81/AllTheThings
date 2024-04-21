@@ -235,7 +235,6 @@ local UnobtainableSettingsBase = {
 };
 
 -- Check for Season of Discovery
----@diagnostic disable-next-line: undefined-global
 local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
 if season > 0 then
 	if season == 1 then	-- SOM
