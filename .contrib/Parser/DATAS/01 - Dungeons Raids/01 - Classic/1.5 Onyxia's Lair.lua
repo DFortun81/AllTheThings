@@ -74,6 +74,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(WRATH_PHASE_THREE, q(24428, {	-- A Most Puzzling Circumstance (A)
 					["provider"] = { "i", 49644 },	-- Head of Onyxia (A)
 					["timeline"] = { "added 3.3.0.10571" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
 					["groups"] = {
@@ -85,6 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(WRATH_PHASE_THREE, q(24429, {	-- A Most Puzzling Circumstance (H)
 					["provider"] = { "i", 49643 },	-- Head of Onyxia (H)
 					["timeline"] = { "added 3.3.0.10571" },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 80,
 					["groups"] = {
@@ -332,11 +334,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(7495, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Alliance
 					["provider"] = { "i", 18423 },	-- Head of Onyxia (A)
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 				q(7490, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Horde
 					["provider"] = { "i", 18422 },	-- Head of Onyxia (H)
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
