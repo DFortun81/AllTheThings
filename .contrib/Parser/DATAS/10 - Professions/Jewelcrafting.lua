@@ -803,6 +803,19 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 	})),
 })));
 
+root(ROOTS.HiddenQuestTriggers, {
+	n(PROFESSIONS, {
+		prof(JEWELCRAFTING, {
+			expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+				q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
+				q(40302),	-- FLAG - Prospecting 01 - triggered when completing a jewelcrafting world quest in Dalaran
+				q(40303),	-- FLAG - Prospecting 02 - triggered when completing a jewelcrafting world quest in Dalaran
+				q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
+			})),
+		}),
+	}),
+});
+
 -- #if ANYCLASSIC
 local REMOVED_WITH_CATA = "removed 4.0.1";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {

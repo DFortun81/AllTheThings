@@ -77,6 +77,36 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 		}),
 	})),
+	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+		q(36308, {	-- Enchanted Highmaul Bracer (A)
+			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
+			["races"] = ALLIANCE_ONLY,
+			["altQuests"] = { 36255 },	-- Enchanted Highmaul Bracer (H)
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+		}),
+		q(36255, {	-- Enchanted Highmaul Bracer (H)
+			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
+			["races"] = HORDE_ONLY,
+			["altQuests"] = { 36308 },	-- Enchanted Highmaul Bracer (A)
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+		}),
+	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(39874, {	-- Some Enchanted Evening
 			["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
@@ -752,7 +782,6 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 	})),
 })));
-
 
 
 -- #if ANYCLASSIC

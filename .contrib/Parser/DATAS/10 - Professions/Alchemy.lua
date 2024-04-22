@@ -1078,7 +1078,6 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 })));
 
 
-
 -- #if ANYCLASSIC
 -- Alchemy - Skill ID 171 / Spell ID 2259
 root(ROOTS.Professions, prof(ALCHEMY, {

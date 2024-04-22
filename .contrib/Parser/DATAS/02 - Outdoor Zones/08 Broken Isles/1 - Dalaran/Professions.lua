@@ -200,73 +200,6 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(PROFESSIONS,  {
-				prof(ARCHAEOLOGY, {
-					q(41189, {	-- A New Lead
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41183, {	-- Academic Exploration
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(40857, {	-- Bits and Pieces
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41167, {	-- Fel Fragments
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41158, {	-- Fragments of the Fjords
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41177, {	-- Goblin Archaeology
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41186, {	-- History of Highmountain
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41164, {	-- One Step Closer
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41161, {	-- Out of the Frying Pan
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41171, {	-- The Reliquary Calls
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41192, {	-- The Right Path
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41180, {	-- Unspeakable Power
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-					q(41174, {	-- Worth Its Weight
-						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
-						["provider"] = { "n", 93538 },	-- Dariness the Learned
-					}),
-				}),
 				prof(BLACKSMITHING, {
 					n(92183, {	-- Alard Schmied <Blacksmithing Trainer>
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
@@ -275,9 +208,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
-				prof(COOKING, sharedData({
-					["requireSkill"] = COOKING,
-				},{
+				prof(COOKING, {
 					n(93536, {	-- Awilo Lon'gomba <Cooking Trainer>
 						["coord"] = { 69.8, 38.6, LEGION_DALARAN },
 						["races"] = HORDE_ONLY,
@@ -554,7 +485,7 @@ root(ROOTS.Zones, {
 							})
 						),
 					}),
-				})),
+				}),
 				prof(FIRST_AID, {
 					n(93529, {	-- Olisarra the Kind <Bandage Trainer>
 						["coord"] = { 36.2, 37.6, LEGION_DALARAN },

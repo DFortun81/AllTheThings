@@ -147,14 +147,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(PROFESSIONS, {
-				prof(ARCHAEOLOGY, bubbleDown({["requireSkill"] = ALCHEMY},{
-					i(64657, {	-- Canopic Jar
-						["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
-						["groups"] = {
-							i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
-						},
-					}),
-				})),
 				prof(FISHING, {
 					o(202779, {	-- Blackbelly Mudfish School
 						i(22739),	-- Tome of Polymorph: Turtle (CI!)

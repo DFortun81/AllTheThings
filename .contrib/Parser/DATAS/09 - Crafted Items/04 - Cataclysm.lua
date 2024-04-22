@@ -70,9 +70,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ARCHAEOLOGY, {
-		i(87399, {["timeline"] = {ADDED_5_0_4}}), -- Restored Artifact
+		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64397),	-- Tol'vir Hieroglyphic
-		currency(401, {	-- Tol'vir
+		currency(ARCH_CURRENCY_TOLVIR, {
 			i(64657, {	-- Canopic Jar
 				i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 			}),

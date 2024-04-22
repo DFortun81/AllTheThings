@@ -159,6 +159,50 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(127842),	-- Infernal Alchemist Stone
 		}),
 	}),
+	prof(ARCHAEOLOGY, {
+		i(130903),	-- Ancient Suramar Scroll
+		i(137867),	-- Design: Shadowruby Band [Rank 3] (RECIPE!)
+		i(130904),	-- Highmountain Ritual-Stone
+		i(130905),	-- Mark of the Deceiver
+		i(87399),	-- Restored Artifact
+		currency(ARCH_CURRENCY_DEMONIC, {
+			i(130917),	-- Flayed-Skin Chronicle
+			i(130920),	-- Houndstooth Hauberk
+			i(130916),	-- Imp's Cup
+			i(130918),	-- Malformed Abyssal
+			i(130919),	-- Orb of Inner Chaos
+			i(130932),	-- Pristine Flayed-Skin Chronicle
+			i(130935),	-- Pristine Houndstooth Hauberk
+			i(130931),	-- Pristine Imp's Cup
+			i(130933),	-- Pristine Malformed Abyssal
+			i(130934),	-- Pristine Orb of Inner Chaos
+		}),
+		currency(ARCH_CURRENCY_HIGHBORNE, {
+			i(130907),	-- Inert Leystone Charm
+			i(130910),	-- Nobleman's Letter Opener
+			i(130909),	-- Pre-War Highborne Tapestry
+			i(130922),	-- Pristine Inert Leystone Charm
+			i(130925),	-- Pristine Nobleman's Letter Opener
+			i(130924),	-- Pristine Pre-War Highborne Tapestry
+			i(130923),	-- Pristine Quietwine Vial
+			i(130921),	-- Pristine Violetglass Vessel
+			i(130908),	-- Quietwine Vial
+			i(137782, {["timeline"] = {ADDED_7_1_0}}),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
+			i(130906),	-- Violetglass Vessel
+		}),
+		currency(ARCH_CURRENCY_HIGHMOUNTAIN, {
+			i(130914),	-- Drogbar Gem-Roller
+			i(130913),	-- Hand-Smoothed Pyrestone
+			i(130912),	-- Moosebone Fish-Hook
+			i(130929),	-- Pristine Drogbar Gem-Roller
+			i(130928),	-- Pristine Hand-Smoothed Pyrestone
+			i(130927),	-- Pristine Moosebone Fish-Hook
+			i(130930),	-- Pristine Stonewood Bow
+			i(130926),	-- Pristine Trailhead Drum
+			i(130915),	-- Stonewood Bow
+			i(130911),	-- Trailhead Drum
+		}),
+	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
 			i(123917),	-- Demonsteel Armguards

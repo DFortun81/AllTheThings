@@ -181,3 +181,7 @@ DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_
 	r(396162),	-- Khaz'gorite
 	r(384692),	-- Serevite Deposit
 }));
+TWW_MINING = applyclassicphase(TWW_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	r(441327),	-- Herb Gathering (Khaz Algar)
+	r(435811),	-- Mycobloom
+}));

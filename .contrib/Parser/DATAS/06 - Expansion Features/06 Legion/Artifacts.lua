@@ -2603,12 +2603,10 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- Fill certain Artifacts into the Arch Achievement which is needed to earn them
 -- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
-	n(PROFESSIONS, {
-		prof(ARCHAEOLOGY, {
-			ach(10603, {	-- A Keen Eye
-				ach(10602, {["groups"] = thisSideUpAch}),	-- This Side Up
-			}),
+root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		n(ACHIEVEMENTS, {
+			ach(10602, {["groups"] = thisSideUpAch}),	-- This Side Up
 		}),
-	}),
+	})),
 })));

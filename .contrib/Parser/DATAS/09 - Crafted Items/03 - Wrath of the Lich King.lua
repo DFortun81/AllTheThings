@@ -104,12 +104,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(44324),	-- Mighty Alchemist Stone
 		}),
 	}),
-	-- #if AFTER CATA
-	prof(ARCHAEOLOGY, {
+	prof(ARCHAEOLOGY, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		i(64396),	-- Nerubian Obelisk
-		i(87399, {["timeline"] = {ADDED_5_0_4}}), -- Restored Artifact
+		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64395),	-- Vrykul Rune Stick
-		currency(400, {	-- Nerubian
+		currency(ARCH_CURRENCY_NERUBIAN, {
 			i(64481),	-- Blessing of the Old God (TOY!)
 			i(64479),	-- Ewer of Jormungar Blood
 			i(64477),	-- Gruesome Heart Box
@@ -120,7 +119,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(64474),	-- Spidery Sundial
 			i(64480),	-- Vizier's Scrawled Streamer
 		}),
-		currency(399, {	-- Vrykul
+		currency(ARCH_CURRENCY_VRYKUL, {
 			i(64464),	-- Fanged Cloak Pin
 			i(64462),	-- Flint Striker
 			i(64459),	-- Intricate Treasure Chest Key
@@ -129,8 +128,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(64467),	-- Thorned Necklace
 			i(69775, {["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
 		}),
-	}),
-	-- #endif
+	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
 		prof(9788, {	-- Armorsmith

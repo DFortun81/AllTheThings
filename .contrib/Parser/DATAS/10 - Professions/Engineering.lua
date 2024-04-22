@@ -1408,13 +1408,21 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		q(78030),	-- Ensemble: Chromatically Calibrated Holo-Gogs
-		q(78031),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
-		q(78032),	-- Ensemble: Chromatically Calibrated Retinal Armor
-		q(78034),	-- Ensemble: Chromatically Calibrated Cranial Cannons
-		q(78035),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
-	})),
+	n(PROFESSIONS, {
+		prof(ENGINEERING, {
+			expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+				q(41100),	-- FLAG - Swap Didis - triggers after completing the "Endless Possibilities" (questID 40854)
+				q(45365),	-- Treasure: Wand of Simulated Life - part of some legion engineering quest
+			})),
+			expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+				q(78030),	-- Ensemble: Chromatically Calibrated Holo-Gogs
+				q(78031),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
+				q(78032),	-- Ensemble: Chromatically Calibrated Retinal Armor
+				q(78034),	-- Ensemble: Chromatically Calibrated Cranial Cannons
+				q(78035),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
+			})),
+		}),
+	}),
 });
 
 -- #if ANYCLASSIC

@@ -102,12 +102,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(31080),	-- Mercurial Stone
 		}),
 	}),
-	-- #if AFTER CATA
-	prof(ARCHAEOLOGY, {
+	prof(ARCHAEOLOGY, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		i(64394),	-- Draenei Tome
 		i(64392),	-- Orc Blood Text
-		i(87399, {["timeline"] = {ADDED_5_0_4}}), -- Restored Artifact
-		currency(398, {	-- Draenei
+		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
+		currency(ARCH_CURRENCY_DRAENEI, {
 			i(64440),	-- Anklet with Golden Bells
 			i(64456),	-- Arrival of the Naaru (TOY!)
 			i(64453),	-- Baroque Sword Scabbard
@@ -119,7 +118,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(64443),	-- Strange Silver Paperweight
 			i(64457),	-- The Last Relic of Argus
 		}),
-		currency(397, {	-- Orc
+		currency(ARCH_CURRENCY_ORC, {
 			i(64436),	-- Fiendish Whip
 			i(64421),	-- Fierce Wolf Figurine
 			i(64418),	-- Gray Candle Stub
@@ -131,8 +130,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(64437),	-- Tile of Glazed Clay
 			i(64389),	-- Tiny Bronze Scorpion
 		}),
-	}),
-	-- #endif
+	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
 		prof(9788, {	-- Armorsmith

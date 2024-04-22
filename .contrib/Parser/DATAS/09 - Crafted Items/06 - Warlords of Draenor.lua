@@ -154,23 +154,60 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 	}),
 	prof(ARCHAEOLOGY, {
-		i(117388, {	-- Crate of Mantid Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
-			["g"] = {
-				{ ["currencyID"] = 754, }	-- Mantid Archaeology Fragment
-			},
+		i(109585),	-- Arakkoa Cipher
+		i(108439),	-- Draenor Clan Orator Cane
+		i(109584),	-- Ogre Missive
+		i(87399),	-- Restored Artifact
+		currency(ARCH_CURRENCY_ARAKKOA, {
+			i(117354),	-- Ancient Nest Guardian (PET!)
+			i(114204),	-- Apexis Crystal
+			i(114205),	-- Apexis Hieroglyph
+			i(114206),	-- Apexis Scroll
+			i(117382),	-- Beakbreaker of Terokk
+			i(114198),	-- Burial Urn
+			i(114199),	-- Decree Scrolls
+			i(114197),	-- Dreamcatcher
+			i(114203),	-- Outcast Dreamcatcher
+			i(114200),	-- Solar Orb
+			i(114201),	-- Sundial
+			i(114202),	-- Talonpriest Mask
 		}),
-		i(117387, {	-- Crate of Mogu Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
-			["g"] = {
-				{ ["currencyID"] = 677, }	-- Mogu Archaeology Fragment
-			},
+		currency(ARCH_CURRENCY_DRAENORCLANS, {
+			i(114171),	-- Ancestral Talisman
+			i(114163),	-- Barbed Fishing Hook
+			i(114157),	-- Blackrock Razor
+			i(114165),	-- Calcified Eye in a Jar
+			i(114167),	-- Ceremonial Tattoo Needles
+			i(114169),	-- Cracked Ivory Idol
+			i(114177),	-- Doomsday Prophecy
+			i(114155),	-- Elemental Bellows
+			i(114141),	-- Fang-Scarred Frostwolf Axe
+			i(114173),	-- Flask of Blazegrease
+			i(114143),	-- Frostwolf Ancestry Scrimshaw
+			i(117380),	-- Frostwolf Ghostpup (PET!)
+			i(114175),	-- Gronn-Tooth Necklace
+			i(116985),	-- Headdress of the First Shaman
+			i(114161),	-- Hooked Dagger
+			i(114153),	-- Metalworker's Hammer
+			i(114149),	-- Screaming Bullroarer
+			i(114147),	-- Warsinger's Drums
+			i(114151),	-- Warsong Ceremonial Pike
+			i(114159),	-- Weighted Chopping Axe
+			i(114145),	-- Wolfskin Snowshoes
 		}),
-		i(117386, {	-- Crate of Pandaren Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
-			["g"] = {
-				{ ["currencyID"] = 676, }	-- Pandaren Archaeology Fragment
-			},
+		currency(ARCH_CURRENCY_OGRE, {	-- Ogre
+			i(114191),	-- Eye of Har'gunn the Blind
+			i(114189),	-- Gladiator's Shield
+			i(114194),	-- Imperial Decree Stele
+			i(114190),	-- Mortar and Pestle
+			i(114185),	-- Ogre Figurine
+			i(114187),	-- Pictogram Carving
+			i(114193),	-- Rylak Riding Harness
+			i(117385),	-- Sorcerer-King Toe Ring
+			i(114192),	-- Stone Dentures
+			i(114183),	-- Stone Manacles
+			i(114181),	-- Stonemaul Succession Stone
+			i(117384),	-- Warmaul of the Warmaul Chieftain
 		}),
 	}),
 	prof(BLACKSMITHING, {

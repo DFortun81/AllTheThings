@@ -138,6 +138,45 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(171088, {["timeline"] = {ADDED_8_3_0}}),	-- Unbound Alchemist Stone
 		}),
 	}),
+	prof(ARCHAEOLOGY, {
+		i(154990),	-- Etched Drust Bone
+		i(87399),	-- Restored Artifact
+		i(154989),	-- Zandalari Idol
+		currency(ARCH_CURRENCY_DRUST, {
+			i(154922),	-- Ancient Runebound Tome
+			i(154921),	-- Ceremonial Bonesaw
+			i(160751),	-- Dance of the Dead (TOY!)
+			i(154923),	-- Disembowling Sickle
+			i(160833),	-- Fetish of the Tormented Mind
+			i(154924),	-- Jagged Blade of the Drust
+			i(154927),	-- Pristine Ancient Runebound Tome
+			i(154926),	-- Pristine Ceremonial Bonesaw
+			i(154928),	-- Pristine Disembowling Sickle
+			i(154929),	-- Pristine Jagged Blade of the Drust
+			i(154930),	-- Pristine Ritual Fetish
+			i(160742),	-- Pristine Soul Coffer
+			i(161089),	-- Restored Revenant (PET!)
+			i(154925),	-- Ritual Fetish
+			i(160741),	-- Soul Coffer
+		}),
+		currency(ARCH_CURRENCY_ZANDALARI, {
+			i(154913),	-- Akun'Jar Vase
+			i(160743),	-- Blowgun of the Sethra
+			i(154917),	-- Bwonsamdi Voodoo Mask
+			i(160740),	-- Croak Crock (TOY!)
+			i(161080),	-- Direhorn Hatchling (PET!)
+			i(154916),	-- High Apothecary's Hood
+			i(154931),	-- Pristine Akun'Jar Vase
+			i(160744),	-- Pristine Blowgun of the Sethrak
+			i(154935),	-- Pristine Bwonsamdi Voodoo Mask
+			i(154934),	-- Pristine High Apothecary's Hood
+			i(154933),	-- Pristine Rezan Idol
+			i(154932),	-- Pristine Urn of Passage
+			i(154915),	-- Rezan Idol
+			i(160753),	-- Sanguinating Totem
+			i(154914),	-- Urn of Passage
+		}),
+	}),
 	prof(BLACKSMITHING, {
 		n(DISCOVERY, {
 			spell(285081, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Girdle

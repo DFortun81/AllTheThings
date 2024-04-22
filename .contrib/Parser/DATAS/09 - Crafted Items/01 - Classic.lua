@@ -151,13 +151,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(9149),	-- Philosopher's Stone
 		}),
 	}),
-	-- #if AFTER CATA
-	prof(ARCHAEOLOGY, {
+	prof(ARCHAEOLOGY, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		i(52843),	-- Dwarf Rune Stone
 		i(63127),	-- Highborne Scroll
-		i(87399, {["timeline"] = {ADDED_5_0_4}}), -- Restored Artifact
+		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(63128),	-- Troll Tablet
-		currency(384, {	-- Dwarf
+		currency(ARCH_CURRENCY_DWARF, {
 			i(63113),	-- Belt Buckle with Anvilmar Crest
 			i(64339),	-- Bodacious Door Knocker
 			i(63112),	-- Bone Gaming Dice
@@ -190,7 +189,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(64486),	-- Word of Empress Zoe
 			i(63110),	-- Worn Hunting Knife
 		}),
-		currency(393, {	-- Fossil
+		currency(ARCH_CURRENCY_FOSSIL, {
 			i(69776, {["timeline"] = {ADDED_4_1_0}}),	-- Ancient Amber (TOY!)
 			i(64355),	-- Ancient Shark Jaws
 			i(63121),	-- Beautiful Preserved Fern
@@ -209,7 +208,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(63527),	-- Twisted Ammonite Shell
 			i(64387),	-- Vicious Ancient Fish
 		}),
-		currency(394, {	-- Night Elf
+		currency(ARCH_CURRENCY_NIGHTELF, {
 			i(64646),	-- Bones of Transformation (TOY!)
 			i(64647),	-- Carcanet of the Hundred Magi
 			i(64379),	-- Chest of Tiny Glass Animals
@@ -236,7 +235,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(64650),	-- Umbra Crescent
 			i(64651),	-- Wisp Amulet (TOY!)
 		}),
-		currency(385, {	-- Troll
+		currency(ARCH_CURRENCY_TROLL, {
 			i(64348),	-- Atal'ai Scepter
 			i(64346),	-- Bracelet of Jade and Coins
 			i(63524),	-- Cinnabar Bijou
@@ -255,8 +254,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(63115),	-- Zandalari Voodoo Doll
 			i(64377),	-- Zin'rokh, Destroyer of Worlds
 		}),
-	}),
-	-- #endif
+	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE TBC
 		prof(9788, {	-- Armorsmith

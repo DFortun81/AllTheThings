@@ -347,3 +347,11 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 		["timeline"] = { "added 7.0.3.21134" },
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	n(PROFESSIONS, {
+		expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+			q(44351),	-- FLAG: Upgrade First Crafted Item - triggers when you craft the first legion armor item
+		})),
+	}),
+});

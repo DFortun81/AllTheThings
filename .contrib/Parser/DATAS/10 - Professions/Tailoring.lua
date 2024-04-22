@@ -815,6 +815,24 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	})),
 })));
 
+root(ROOTS.HiddenQuestTriggers, {
+	n(PROFESSIONS, {
+		prof(TAILORING, {
+			expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+				q(38976),	-- FLAG: Undying Silkweave Bracers
+				q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
+				q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
+				q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
+				q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
+				q(38981),	-- FLAG: Undying Silkweave Hood Crafted
+				q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
+				q(38983),	-- FLAG: Undying Silkweave Robe Crafted
+				q(47093),	-- Broken Shore - Choice: Tailoring
+			})),
+		}),
+	}),
+});
+
 -- #if ANYCLASSIC
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC

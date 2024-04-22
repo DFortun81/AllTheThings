@@ -209,6 +209,34 @@ root(ROOTS.Professions, prof(SKINNING, {
 			}),
 		}),
 	})),
+	--[[
+	["maps"] = {
+		DRUSTVAR,
+		TIRAGARDE_SOUND,
+		STORMSONG_VALLEY,
+		VOLDUN,
+		ZULDAZAR,
+		NAZMIR,
+	},
+	--]]
+	q(52213, {	-- Ancient Skinning Knife
+		["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
+		["sourceQuest"] = 51575,	-- Lost But Not Forgotten
+		["description"] = "Requires 150 Zandalari Skinning to get the item.",
+		["races"] = HORDE_ONLY,
+		["g"] = {
+			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
+		},
+	}),
+	q(52224, {	-- Ivory Handled Dagger
+		["provider"] = { "i", 161424 },	-- Ivory Handled Dagger
+		["sourceQuest"] = 52223,	-- Brinepinch
+		["description"] = "Requires 150 Kul Tiran Skinning to get the item.",
+		["races"] = ALLIANCE_ONLY,
+		["g"] = {
+			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
+		},
+	}),
 }));
 profession(SKINNING, {
 	-- #if AFTER WOD

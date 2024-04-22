@@ -89,7 +89,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(79869),	-- Mogu Statue Piece
 		i(79868),	-- Pandaren Pottery Shard
 		i(87399),	-- Restored Artifact
-		currency(754, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Mantid
+		currency(ARCH_CURRENCY_MANTID, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {
 			i(95376),	-- Ancient Sap Feeder
 			i(95375),	-- Banner of the Mantid Empire
 			i(95378),	-- Inert Sound Beacon
@@ -109,7 +109,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(95392),	-- Sonic Pulse Generator
 			i(95377),	-- The Praying Mantid
 		})),
-		currency(677, {	-- Mogu
+		currency(ARCH_CURRENCY_MOGU, {
 			i(89614),	-- Anatomical Dummy (TOY!)
 			i(79909),	-- Cracked Mogu Runestone
 			i(79913),	-- Edicts of the Thunder King
@@ -133,7 +133,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(79915),	-- Warlord's Branding Iron
 			i(79917),	-- Worn Monument Ledger
 		}),
-		currency(676, {	-- Pandaren
+		currency(ARCH_CURRENCY_PANDAREN, {
 			i(79903),	-- Apothecary Tins
 			i(79901),	-- Carved Bronze Mirror
 			i(79900),	-- Empty Keg
@@ -156,60 +156,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(79898),	-- Twin Stein Set
 			i(89684),	-- Umbrella of Chi-Ji
 			i(79899),	-- Walking Cane
-		}),
-		i(87534, {	-- Crate of Draenei Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(398),	-- Draenei Archaeology Fragment
-			},
-		}),
-		i(87533, {	-- Crate of Dwarven Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(384),	-- Dwarf Archaeology Fragment
-			},
-		}),
-		i(87535, {	-- Crate of Fossil Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(393),	-- Fossil Archaeology Fragment
-			},
-		}),
-		i(87536, {	-- Crate of Night Elf Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(394),	-- Night Elf Archaeology Fragment
-			},
-		}),
-		i(87537, {	-- Crate of Nerubian Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(400),	-- Nerubian Archaeology Fragment
-			},
-		}),
-		i(87538, {	-- Crate of Orc Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(397),	-- Orc Archaeology Fragment
-			},
-		}),
-		i(87539, {	-- Crate of Tol'vir Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(401),	-- Tol'vir Archaeology Fragment
-			},
-		}),
-		i(87540, {	-- Crate of Troll Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(385),	-- Troll Archaeology Fragment
-			},
-		}),
-		i(87541, {	-- Crate of Vrykul Archaeology Fragments
-			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-			["groups"] = {
-				currency(399),	-- Vrykul Archaeology Fragment
-			},
 		}),
 	}),
 	prof(BLACKSMITHING, {

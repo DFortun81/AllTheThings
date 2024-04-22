@@ -3,6 +3,9 @@
 -----------------------------------
 -- Everything in this file hasn't been sorted yet.
 root(ROOTS.Unsorted, {
+	--- I dont think these made it to live // Braghe
+	i(183834),	-- Crate of Drust Archaeology Fragments
+	i(183835),	-- Crate of Zandalari Archaeology Fragments
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			i(201821),	-- Professor Instructaur's Brain Pertaining to the Dragon Isles
