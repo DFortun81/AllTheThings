@@ -3662,6 +3662,7 @@ app.ThingKeys = {
 	["artifactID"] = true,
 	["azeriteEssenceID"] = true,
 	["followerID"] = true,
+	["explorationID"] = true,
 	["achievementID"] = true,	-- special handling
 	["criteriaID"] = true,	-- special handling
 };
