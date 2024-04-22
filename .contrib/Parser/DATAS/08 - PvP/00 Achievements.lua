@@ -421,13 +421,15 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	-- #endif
 	ach(610, {		-- Death to the Warchief!
-		-- #if AFTER 6.0.3
-		["provider"] = { "n", 86832 },	-- Vol'jin <Warchief>
-		-- #elseif AFTER 4.0.3
-		["provider"] = { "n", 39605 },	-- Garrosh Hellscream <Warchief>
-		-- #else
-		["provider"] = { "n", 4949 },	-- Thrall <Warchief>
-		-- #endif
+		["providers"] = {
+			-- #if AFTER 6.0.3
+			{ "n", 86832 },	-- Vol'jin <Warchief>
+			-- #elseif AFTER 4.0.3
+			{ "n", 39605 },	-- Garrosh Hellscream <Warchief>
+			-- #else
+			{ "n", 4949 },	-- Thrall <Warchief>
+			-- #endif
+		},
 		["timeline"] = { "added 3.0.1", "removed 7.0.3" },
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,

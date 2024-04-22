@@ -89,8 +89,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(ACHIEVEMENTS, {
 				ach(1172, {	-- Master of Warsong Gulch
 					-- Meta Achievement should symlink the contained Achievements from Source
-					-- #if AFTER 4.3.0
 					["sym"] = {{"meta_achievement",
+						-- #if AFTER 4.3.0
 						167,	-- Warsong Gulch Veteran
 						199,	-- Capture the Flag
 						200,	-- Persistent Defender
@@ -105,9 +105,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						206,	-- Supreme Defender (A)
 						1252,	-- Supreme Defender (H)
 						207,	-- Save the Day
-					}},
-					-- #else
-					["sym"] = {{"meta_achievement",
+						-- #else
 						167,	-- Warsong Gulch Veteran
 						199,	-- Capture the Flag
 						200,	-- Persistent Defender
@@ -119,7 +117,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						202,	-- Quick Cap (A)
 						206,	-- Supreme Defender (A)
 						207,	-- Save the Day
+						-- #endif
 					}},
+					-- #if BEFORE 4.3.0
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 					["timeline"] = { "added 3.0.1" },
@@ -447,11 +447,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7868, {	-- Outrider Advanced Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
 					["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 46.6, 8.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 20.0, NORTHERN_BARRENS },
+						-- #else
+						{ 46.6, 8.4, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(45, 45, 10),
 					["groups"] = {
@@ -461,11 +463,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7866, {	-- Outrider Basic Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
 					["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 46.6, 8.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 20.0, NORTHERN_BARRENS },
+						-- #else
+						{ 46.6, 8.4, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 25, 34 },
 					["groups"] = {
@@ -475,11 +479,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7867, {	-- Outrider Standard Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
 					["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 46.6, 8.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 20.0, NORTHERN_BARRENS },
+						-- #else
+						{ 46.6, 8.4, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 35, 44 },
 					["groups"] = {
@@ -488,11 +494,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7865, {	-- Sentinel Advanced Care Package
 					["qg"] = 14753,	-- Illiyana Moonblaze
-					-- #if AFTER CATA
-					["coord"] = { 61.5, 83.9, ASHENVALE },
-					-- #else
-					["coord"] = { 61.6, 83.8, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.5, 83.9, ASHENVALE },
+						-- #else
+						{ 61.6, 83.8, ASHENVALE },
+						-- #endif
+					},
 					["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(45, 45, 10),
@@ -502,11 +510,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7863, {	-- Sentinel Basic Care Package
 					["qg"] = 14753,	-- Illiyana Moonblaze
-					-- #if AFTER CATA
-					["coord"] = { 61.5, 83.9, ASHENVALE },
-					-- #else
-					["coord"] = { 61.6, 83.8, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.5, 83.9, ASHENVALE },
+						-- #else
+						{ 61.6, 83.8, ASHENVALE },
+						-- #endif
+					},
 					["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 25, 34 },
@@ -516,11 +526,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7864, {	-- Sentinel Standard Care Package
 					["qg"] = 14753,	-- Illiyana Moonblaze
-					-- #if AFTER CATA
-					["coord"] = { 61.5, 83.9, ASHENVALE },
-					-- #else
-					["coord"] = { 61.6, 83.8, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.5, 83.9, ASHENVALE },
+						-- #else
+						{ 61.6, 83.8, ASHENVALE },
+						-- #endif
+					},
 					["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 35, 44 },
@@ -536,11 +548,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(VENDORS, {
 				n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 46.6, 8.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 20.0, NORTHERN_BARRENS },
+						-- #else
+						{ 46.6, 8.4, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -561,7 +575,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20425)),	-- Advisor's Gnarled Staff
-
 						moh(3, i(19550)),	-- Legionnaire's Sword
 						moh(3, i(19551)),	-- Legionnaire's Sword
 						moh(3, i(19552)),	-- Legionnaire's Sword
@@ -573,7 +586,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20430)),	-- Legionnaire's Sword
-
 						moh(3, i(19558)),	-- Outrider's Bow
 						moh(3, i(19559)),	-- Outrider's Bow
 						moh(3, i(19560)),	-- Outrider's Bow
@@ -585,7 +597,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20437)),	-- Outrider's Bow
-
 						moh(3, i(19542)),	-- Scout's Blade
 						moh(3, i(19543)),	-- Scout's Blade
 						moh(3, i(19544)),	-- Scout's Blade
@@ -597,7 +608,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20441)),	-- Scout's Blade
-
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
 							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
@@ -612,19 +622,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
-
 						moh(1, i(19534)),	-- Scout's Medallion
 						moh(1, i(19535)),	-- Scout's Medallion
 						moh(1, i(19536)),	-- Scout's Medallion
 						moh(1, i(19537)),	-- Scout's Medallion
 						moh(1, i(20442)),	-- Scout's Medallion
-
 						moh(1, i(19526)),	-- Battle Healer's Cloak
 						moh(1, i(19527)),	-- Battle Healer's Cloak
 						moh(1, i(19528)),	-- Battle Healer's Cloak
 						moh(1, i(19529)),	-- Battle Healer's Cloak
 						moh(1, i(20427)),	-- Battle Healer's Cloak
-
 						moh(1, i(19578)),	-- Berserker Bracers
 						moh(1, i(19580)),	-- Berserker Bracers
 						moh(1, i(19581)),	-- Berserker Bracers
@@ -637,7 +644,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19582)),	-- Windtalker's Wristguards
 						moh(1, i(19583)),	-- Windtalker's Wristguards
 						moh(1, i(19584)),	-- Windtalker's Wristguards
-
 						applyclassicphase(PHASE_SIX, moh(2, i(22673))),	-- Outrider's Chain Leggings
 						applyclassicphase(TBC_PHASE_ONE, i(30498)),	-- Outrider's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
 						applyclassicphase(PHASE_SIX, moh(2, i(22740))),	-- Outrider's Leather Pants
@@ -645,7 +651,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						applyclassicphase(PHASE_SIX, moh(2, i(22676))),	-- Outrider's Mail Leggings
 						applyclassicphase(PHASE_SIX, i(22651)),	-- Outrider's Plate Legguards [Currently Sold for Gold, may change in the future!]
 						applyclassicphase(PHASE_SIX, moh(2, i(22747))),	-- Outrider's Silk Leggings
-
 						moh(1, i(19518)),	-- Advisor's Ring
 						moh(1, i(19519)),	-- Advisor's Ring
 						moh(1, i(19520)),	-- Advisor's Ring
@@ -656,7 +661,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19512)),	-- Legionnaire's Band
 						moh(1, i(19513)),	-- Legionnaire's Band
 						moh(1, i(20429)),	-- Legionnaire's Band
-
 						applyclassicphase(PHASE_SIX, moh(1, i(21567))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, moh(1, i(21568))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, moh(1, i(21565))),	-- Rune of Perfection
@@ -664,11 +668,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
-					-- #if AFTER CATA
-					["coord"] = { 61.5, 83.9, ASHENVALE },
-					-- #else
-					["coord"] = { 61.6, 83.8, ASHENVALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.5, 83.9, ASHENVALE },
+						-- #else
+						{ 61.6, 83.8, ASHENVALE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -722,7 +728,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(19549)),	-- Sentinel's Blade
-
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
 							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
@@ -737,19 +742,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
-
 						moh(1, i(19538)),	-- Sentinel's Medallion
 						moh(1, i(19539)),	-- Sentinel's Medallion
 						moh(1, i(19540)),	-- Sentinel's Medallion
 						moh(1, i(19541)),	-- Sentinel's Medallion
 						moh(1, i(20444)),	-- Sentinel's Medallion
-
 						moh(1, i(19530)),	-- Caretaker's Cape
 						moh(1, i(19531)),	-- Caretaker's Cape
 						moh(1, i(19532)),	-- Caretaker's Cape
 						moh(1, i(19533)),	-- Caretaker's Cape
 						moh(1, i(20428)),	-- Caretaker's Cape
-
 						moh(1, i(19578)),	-- Berserker Bracers
 						moh(1, i(19580)),	-- Berserker Bracers
 						moh(1, i(19581)),	-- Berserker Bracers
@@ -762,7 +764,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19582)),	-- Windtalker's Wristguards
 						moh(1, i(19583)),	-- Windtalker's Wristguards
 						moh(1, i(19584)),	-- Windtalker's Wristguards
-
 						applyclassicphase(PHASE_SIX, moh(2, i(22748))),	-- Sentinel's Chain Leggings
 						applyclassicphase(TBC_PHASE_ONE, moh(2, i(30497))),	-- Sentinel's Mail Leggings
 						applyclassicphase(PHASE_SIX, i(22753)),	-- Sentinel's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
@@ -770,7 +771,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						applyclassicphase(PHASE_SIX, moh(2, i(22750))),	-- Sentinel's Lizardhide Pants
 						applyclassicphase(PHASE_SIX, i(22672)),	-- Sentinel's Plate Legguards [Currently Sold for Gold, may change in the future!]
 						applyclassicphase(PHASE_SIX, moh(2, i(22752))),	-- Sentinel's Silk Leggings
-
 						moh(1, i(19522)),	-- Lorekeeper's Ring
 						moh(1, i(19523)),	-- Lorekeeper's Ring
 						moh(1, i(19524)),	-- Lorekeeper's Ring
@@ -781,7 +781,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19515)),	-- Protector's Band
 						moh(1, i(19517)),	-- Protector's Band
 						moh(1, i(20439)),	-- Protector's Band
-
 						applyclassicphase(PHASE_SIX, moh(1, i(21567))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, moh(1, i(21568))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, moh(1, i(21565))),	-- Rune of Perfection

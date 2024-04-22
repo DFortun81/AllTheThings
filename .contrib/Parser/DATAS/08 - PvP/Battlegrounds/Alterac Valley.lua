@@ -266,11 +266,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7081, {	-- Alterac Valley Graveyards
 					["qg"] = 13777,	-- Sergeant Durgen Stormpike
-					-- #if AFTER CATA
-					["coord"] = { 43.0, 43.8, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.0, 43.8, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 36.8, 77.2, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -359,11 +361,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7122, {	-- Capture a Mine (Alliance)
 					["qg"] = 13777,	-- Sergeant Durgen Stormpike
-					-- #if AFTER CATA
-					["coord"] = { 43.0, 43.8, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.0, 43.8, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 36.8, 77.2, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -373,11 +377,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						13776,	-- Corporal Teeka Bloodsnarl
 					},
 					["sourceQuest"] = 7123,	-- Speak with our Quartermaster
-					-- #if AFTER CATA
-					["coord"] = { 59.7, 31.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 65.6, 55.1, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 59.7, 31.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 65.6, 55.1, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = { "removed 8.2.5.31958", ADDED_9_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -424,11 +430,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7170, {	-- Earned Reverence (Alliance)
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7169,	-- Honored Amongst the Guard
-					-- #if AFTER CATA
-					["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 730, REVERED },  -- Stormpike Guard, Revered
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -441,11 +449,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7165, {	-- Earned Reverence (Horde)
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7164,	-- Honored Amongst the Clan
-					-- #if AFTER CATA
-					["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 729, REVERED },    -- Frostwolf Clan, Revered
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -512,11 +522,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8272, bubbleDown({ ["timeline"] = REMOVED_WITH_ANNIVERSARY_15 }, {	-- Hero of the Frostwolf
 					["qg"] = 13817,	-- Voggah Deathgrip
 					["sourceQuest"] = 7142,	-- The Battle for Alterac (Horde)
-					-- #if AFTER CATA
-					["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 63.6, 60.4, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 58.6, 34.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 63.6, 60.4, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(19107),	-- Bloodseeker
@@ -528,11 +540,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8271, bubbleDown({ ["timeline"] = REMOVED_WITH_ANNIVERSARY_15 }, {	-- Hero of the Stormpike
 					["qg"] = 13816,	-- Prospector Stonehewer
 					["sourceQuest"] = 7141,	-- The Battle of Alterac (Alliance)
-					-- #if AFTER CATA
-					["coord"] = { 45.2, 45.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 41.0, 79.6, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.2, 45.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 41.0, 79.6, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(19106),	-- Ice Barbed Spear
@@ -544,11 +558,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7164, {	-- Honored Amongst the Clan
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7163,	-- Rise and Be Recognized (Horde)
-					-- #if AFTER CATA
-					["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 729, HONORED },    -- Frostwolf Clan, Honored
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -561,11 +577,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7169, {	-- Honored Amongst the Guard
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7168,	-- Rise and Be Recognized (Alliance)
-					-- #if AFTER CATA
-					["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 730, HONORED },  -- Stormpike Guard, Honored
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -652,11 +670,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7171, {	-- Legendary Heroes (Alliance)
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7170,	-- Earned Reverence (Alliance)
-					-- #if AFTER CATA
-					["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 730, EXALTED },  -- Stormpike Guard, Exalted
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -669,11 +689,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7166, {	-- Legendary Heroes (Horde)
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7165,	-- Earned Reverence (Horde)
-					-- #if AFTER CATA
-					["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 729, EXALTED },    -- Frostwolf Clan, Exalted
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -728,11 +750,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7162, {	-- Proving Grounds (Alliance)
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7261,	-- The Sovereign Imperative
-					-- #if AFTER CATA
-					["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stormpike Banner
@@ -746,11 +770,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7161, {	-- Proving Grounds (Horde)
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7241,	-- In Defense of Frostwolf
-					-- #if AFTER CATA
-					["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Banner
@@ -795,11 +821,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7168, {	-- Rise and Be Recognized (Alliance)
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7162,	-- Proving Grounds (Alliance)
-					-- #if AFTER CATA
-					["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 730, FRIENDLY },  -- Stormpike Guard, Friendly
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -812,11 +840,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7163, {	-- Rise and Be Recognized (Horde)
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7161,	-- Proving Grounds (Horde)
-					-- #if AFTER CATA
-					["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["minReputation"] = { 729, FRIENDLY },    -- Frostwolf Clan, Friendly
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -850,11 +880,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7141, {	-- The Battle of Alterac (Alliance)
 					["qg"] = 13816,	-- Prospector Stonehewer
-					-- #if AFTER CATA
-					["coord"] = { 45.2, 45.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 41.0, 79.6, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.2, 45.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 41.0, 79.6, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -866,11 +898,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7142, {	-- The Battle for Alterac (Horde)
 					["qg"] = 13817,	-- Voggah Deathgrip
-					-- #if AFTER CATA
-					["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 63.6, 60.4, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 58.6, 34.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 63.6, 60.4, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -916,11 +950,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7082, {	-- The Graveyards of Alterac
 					["qg"] = 13776,	-- Corporal Teeka Bloodsnarl
-					-- #if AFTER CATA
-					["coord"] = { 59.7, 31.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 65.6, 55.1, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 59.7, 31.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 65.6, 55.1, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,
 					["races"] = HORDE_ONLY,
 				}),
@@ -961,21 +997,25 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7102, {	-- Towers and Bunkers (Alliance)
 					["qg"] = 13777,	-- Sergeant Durgen Stormpike
-					-- #if AFTER CATA
-					["coord"] = { 43.0, 43.8, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.0, 43.8, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 36.8, 77.2, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7101, {	-- Towers and Bunkers (Horde)
 					["qg"] = 13776,	-- Corporal Teeka Bloodsnarl
-					-- #if AFTER CATA
-					["coord"] = { 59.7, 31.2, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 65.6, 55.1, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 59.7, 31.2, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 65.6, 55.1, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,
 					["races"] = HORDE_ONLY,
 				}),
@@ -1137,11 +1177,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(13219, {	-- Jorek Ironside <Frostwolf Supply Officer> [CATA+] / Jekyll Flandring <Frostwolf Supply Officer>
-					-- #if AFTER CATA
-					["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 62.8, 59.4, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 58.1, 33.6, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 62.8, 59.4, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["sym"] = { { "sub", "common_vendor", 13218 } }, -- Grunnda Wolfheart
 					["races"] = HORDE_ONLY,
 				}),
@@ -1157,11 +1199,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
-					-- #if AFTER CATA
-					["coord"] = { 44.6, 46.4, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 39.6, 81.6, ALTERAC_MOUNTAINS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.6, 46.4, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 39.6, 81.6, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["sym"] = { { "sub", "common_vendor", 13216 } }, -- Gaelden Hammersmith <Stormpike Supply Officer>
 					["races"] = ALLIANCE_ONLY,
 				}),
