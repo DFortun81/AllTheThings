@@ -1,72 +1,48 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local HERBALISM_KNOWLEDGE = 2034;
+local DF_HERBALISM_KNOWLEDGE = 2034;
+local TWW_HERBALISM_KNOWLEDGE = 2789;
+local function LifebloodRank(rankID)
+	-- #if BEFORE CATA
+	local rankID = rankID-1
+	-- #endif
+	return rankID
+end
 root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERBALISM }, {
-	-- #if AFTER 3.0.2
-	n(DISCOVERY, {
-		r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
-			-- #if AFTER CATA
-			["rank"] = 2,
-			-- #else
-			["rank"] = 1,
-			-- #endif
-			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-		}),
-		r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
-			-- #if AFTER CATA
-			["rank"] = 3,
-			-- #else
-			["rank"] = 2,
-			-- #endif
-			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-		}),
-		r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
-			-- #if AFTER CATA
-			["rank"] = 4,
-			-- #else
-			["rank"] = 3,
-			-- #endif
-			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-		}),
-		r(55501, {	-- Lifeblood (Rank 4) / Rank 5 [CATA]
-			-- #if AFTER CATA
-			["rank"] = 5,
-			-- #else
-			["rank"] = 4,
-			-- #endif
-			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-		}),
-		r(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
-			-- #if AFTER CATA
-			["rank"] = 6,
-			-- #else
-			["rank"] = 5,
-			-- #endif
-			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-		}),
-		r(55503, {	-- Lifeblood (Rank 6) / Rank 7 [CATA]
-			-- #if AFTER CATA
-			["rank"] = 7,
-			-- #else
-			["rank"] = 6,
-			-- #endif
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }
-		}),
+	n(DISCOVERY, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 } }, {
 		r(81708, {	-- Lifeblood [Rank 1] [CATA]
 			["rank"] = 1,
 			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
 		}),
-		r(74497, {	-- Lifeblood (Rank 8) [CATA]
+		r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
+			["rank"] = LifebloodRank(2),
+		}),
+		r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
+			["rank"] = LifebloodRank(3),
+		}),
+		r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
+			["rank"] = LifebloodRank(4),
+		}),
+		r(55501, {	-- Lifeblood [Rank 4] / Rank 5 [CATA]
+			["rank"] = LifebloodRank(5),
+		}),
+		r(55502, {	-- Lifeblood [Rank 5] / Rank 6 [CATA]
+			["rank"] = LifebloodRank(6),
+		}),
+		r(55503, {	-- Lifeblood [Rank 6] / Rank 7 [CATA]
+			["rank"] = LifebloodRank(7),
+			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }
+		}),
+		r(74497, {	-- Lifeblood [Rank 8] [CATA]
 			["rank"] = 8,
 			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
 		}),
-		r(121279, {	-- Lifeblood (Rank 9) [MOP]
+		r(121279, {	-- Lifeblood [Rank 9] [MOP]
 			["rank"] = 9,
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 }
 		}),
-	}),
-	-- #endif
+	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18837, {	-- Broken Isles Herbalism Techniques
@@ -1392,7 +1368,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", HERBALISM_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_HERBALISM_KNOWLEDGE, 1 }} }, {
 				r(391088),	-- Refine Herbs++
 				r(391089),	-- Refine Herbs+++
 				r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
@@ -1401,7 +1377,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(HERBALISM_KNOWLEDGE),
+				currency(DF_HERBALISM_KNOWLEDGE),
 			},
 		},{
 			i(199115),	-- Herbalism Field Notes
@@ -1435,5 +1411,14 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["provider"] = { "i", 200678 },	-- Dreambloom
 			}),
 		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_HERBALISM_KNOWLEDGE, 1 }} }, {
+				r(438811),	-- Refine Herbs++
+				r(438812),	-- Refine Herbs+++
+			}),
+		}),
 	})),
 })));

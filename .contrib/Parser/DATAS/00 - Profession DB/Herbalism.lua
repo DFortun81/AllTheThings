@@ -232,49 +232,50 @@ i(0, 422293);	-- Overload Overgrown Herb
 -- PATCH 11.0.0 --
 ------------------
 --- TRAINER ---
-r(441327);	-- Herb Gathering (Khaz Algar)
-r(435811);	-- Mycobloom
+i(0, 441327);	-- Herb Gathering (Khaz Algar)
+i(0, 435811);	-- Mycobloom
 --- DISCOVERY ---
-r(435858);	-- Altered Luredrop
-r(435840);	-- Altered Mycobloom
-r(435864);	-- Altered Orbinid
-r(435826);	-- Arathor's Spear
-r(435823);	-- Blessing Blossom
-r(435879);	-- Camouflaged Arathor's Spear
-r(435872);	-- Camouflaged Blessing Blossom
-r(435860);	-- Camouflaged Luredrop
-r(435851);	-- Camouflaged Mycobloom
-r(435866);	-- Camouflaged Orbinid
-r(435877);	-- Crystallized Arathor's Spear
-r(435870);	-- Crystallized Blessing Blossom
-r(435857);	-- Crystallized Luredrop
-r(435838);	-- Crystallized Mycobloom
-r(435862);	-- Crystallized Orbinid
-r(442990);	-- Empowered Mulch
-r(439871);	-- Green Thumb
-r(442989);	-- Imbued Mulch
-r(435878);	-- Irradiated Arathor's Spear
-r(435871);	-- Irradiated Blessing Blossom
-r(435859);	-- Irradiated Luredrop
-r(435843);	-- Irradiated Mycobloom
-r(435865);	-- Irradiated Orbinid
-r(435821);	-- Luredrop
-r(435836);	-- Lush Arathor's Spear
-r(435834);	-- Lush Blessing Blossom
-r(435829);	-- Lush Luredrop
-r(435812);	-- Lush Mycobloom
-r(435830);	-- Lush Orbinid
-r(442988);	-- Magical Mulch
-r(435822);	-- Orbinid
-r(438953);	-- Overload Altered Herb
-r(438952);	-- Overload Crystallized Herb
-r(423395);	-- Overload Empowered Herb
-r(438955);	-- Overload Irradiated Herb
-r(438961);	-- Overload Sporefused Herb
-r(438811);	-- Refine Herbs++
-r(438812);	-- Refine Herbs+++
-r(435880);	-- Sporefused Arathor's Spear
-r(435873);	-- Sporefused Blessing Blossom
-r(435861);	-- Sporefused Luredrop
-r(435850);	-- Sporefused Mycobloom
-r(435867);	-- Sporefused Orbinid
+i(0, 435858);	-- Altered Luredrop
+i(0, 435840);	-- Altered Mycobloom
+i(0, 435864);	-- Altered Orbinid
+i(0, 435826);	-- Arathor's Spear
+i(0, 435823);	-- Blessing Blossom
+i(0, 435879);	-- Camouflaged Arathor's Spear
+i(0, 435872);	-- Camouflaged Blessing Blossom
+i(0, 435860);	-- Camouflaged Luredrop
+i(0, 435851);	-- Camouflaged Mycobloom
+i(0, 435866);	-- Camouflaged Orbinid
+i(0, 435877);	-- Crystallized Arathor's Spear
+i(0, 435870);	-- Crystallized Blessing Blossom
+i(0, 435857);	-- Crystallized Luredrop
+i(0, 435838);	-- Crystallized Mycobloom
+i(0, 435862);	-- Crystallized Orbinid
+i(0, 442990);	-- Empowered Mulch
+i(0, 439871);	-- Green Thumb
+i(0, 442989);	-- Imbued Mulch
+i(0, 435878);	-- Irradiated Arathor's Spear
+i(0, 435871);	-- Irradiated Blessing Blossom
+i(0, 435859);	-- Irradiated Luredrop
+i(0, 435843);	-- Irradiated Mycobloom
+i(0, 435865);	-- Irradiated Orbinid
+i(0, 435821);	-- Luredrop
+i(0, 435836);	-- Lush Arathor's Spear
+i(0, 435834);	-- Lush Blessing Blossom
+i(0, 435829);	-- Lush Luredrop
+i(0, 435812);	-- Lush Mycobloom
+i(0, 435830);	-- Lush Orbinid
+i(0, 442988);	-- Magical Mulch
+i(0, 435822);	-- Orbinid
+i(0, 438953);	-- Overload Altered Herb
+i(0, 438952);	-- Overload Crystallized Herb
+i(0, 423395);	-- Overload Empowered Herb
+i(0, 438955);	-- Overload Irradiated Herb
+i(0, 438961);	-- Overload Sporefused Herb
+i(0, 435880);	-- Sporefused Arathor's Spear
+i(0, 435873);	-- Sporefused Blessing Blossom
+i(0, 435861);	-- Sporefused Luredrop
+i(0, 435850);	-- Sporefused Mycobloom
+i(0, 435867);	-- Sporefused Orbinid
+--- SPECIALIZATION ---
+i(0, 438811);	-- Refine Herbs++
+i(0, 438812);	-- Refine Herbs+++

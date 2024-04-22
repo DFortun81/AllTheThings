@@ -143,5 +143,6 @@ DF_HERBALISM = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 }));
 TWW_HERBALISM = applyclassicphase(TWW_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	r(441327),	-- Herb Gathering (Khaz Algar)
+	r(193290),	-- Herbalism Journal
 	r(435811),	-- Mycobloom
 }));
