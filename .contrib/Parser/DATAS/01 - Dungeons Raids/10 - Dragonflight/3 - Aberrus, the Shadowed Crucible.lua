@@ -734,7 +734,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			Difficulty({DIFFICULTY.RAID.LFR,DIFFICULTY.RAID.NORMAL,DIFFICULTY.RAID.HEROIC}).AddGroups({
 				BossOnly(SARKARETH, {
-					i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!)
+					i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
@@ -975,6 +975,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					})),
 					ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
 					ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
+					i(205876),	-- Highland Drake: Embodiment of the Hellforged (DM!) [Mythic]
 					i(206046, {	-- Void-Touched Curio
 						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.MYTHIC}},
 					}),
