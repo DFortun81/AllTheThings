@@ -12753,16 +12753,13 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
 				local currentCategoryID, categories = -1, AllTheThingsAD.LocalizedCategoryNames;
 				updates.Categories = true;
-				local categoryData = {};
-				local categoryIDs = C_TradeSkillUI.GetCategories();
-				if categoryIDs then
-					for i = 1,#categoryIDs do
-						currentCategoryID = categoryIDs[i];
-						if not categories[currentCategoryID] then
-							C_TradeSkillUI_GetCategoryInfo(currentCategoryID, categoryData);
-							if categoryData.name then
-								categories[currentCategoryID] = categoryData.name;
-							end
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					if not categories[currentCategoryID] then
+						local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
+						if categoryData then
+							categories[currentCategoryID] = categoryData.name;
 						end
 					end
 				end
@@ -13815,7 +13812,7 @@ app.LoadDebugger = function()
 					local tradeSkillID = app.GetTradeSkillLine();
 					local currentCategoryID, categories = -1, {};
 					local categoryData, categoryList, rawGroups = {}, {}, {};
-					local categoryIDs = C_TradeSkillUI.GetCategories();
+					local categoryIDs = { C_TradeSkillUI.GetCategories() };
 					for i = 1,#categoryIDs do
 						currentCategoryID = categoryIDs[i];
 						C_TradeSkillUI.GetCategoryInfo(currentCategoryID, categoryData);
