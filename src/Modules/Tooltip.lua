@@ -40,7 +40,7 @@ local function distance( x1, y1, x2, y2 )
 end
 local function GetPlayerPosition()
 	local mapID = app.CurrentMapID;
-	if not IsInInstance() then
+	if mapID and not IsInInstance() then
 		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 		if pos then
 			local px, py = pos:GetXY();
