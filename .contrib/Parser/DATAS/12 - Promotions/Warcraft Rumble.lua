@@ -155,67 +155,43 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
                 i(202395),  -- Rumble Foil
             },
         }),
-
+    }),
+    n(QUESTS, sharedData({	-- Common Objects
+        ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
+        ["cost"] = {{"i",202395,1}},  -- Rumble Foil
+    },{
 		-- Silver Looks
         q(73171, {  -- Gain New Look: Maiev
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73389, {  -- Gain New Look: Murloc
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73371, {  -- Gain New Look: Night Elf Huntress
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73174, {  -- Gain New Look: Sneed
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
+            ["lockCriteria"] = { 1, "achID", 17347 },	-- Warcraft Rumble Minis, Sneed's New Look
         }),
         q(73386, {  -- Gain New Look: Stonehoof Tauren
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73388, {  -- Gain New Look: Undead Ghoul
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73390, {  -- Gain New Look: Whelp Egg
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
-
-		-- Gold Looks
+        -- Gold Looks
         q(73173, {  -- Gain Even Newer Look: Maiev
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73392, {  -- Gain Even Newer Look: Murloc
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73372, {  -- Gain Even Newer Look: Night Elf Huntress
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73175, {  -- Gain Even Newer Look: Sneed
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73387, {  -- Gain Even Newer Look: Stonehoof Tauren
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73391, {  -- Gain Even Newer Look: Undead Ghoul
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
         q(73393, {  -- Gain Even Newer Look: Whelp Egg
-            ["provider"] = { "o", 384744 }, -- Warcraft Rumble Machine
-            ["cost"] = {{"i",202395,1}},  -- Rumble Foil
         }),
-    }),
+    })),
     n(TREASURES, {
         o_repeated({
 			-- Contains
