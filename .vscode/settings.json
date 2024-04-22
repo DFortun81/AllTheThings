@@ -551,7 +551,9 @@
         "AllTheThingsHarvestItems",
         "ATTItemHarvester",
         "ATTItemHarvesterTextLeft1",
-        "AllTheThingsProfiles"
+        "AllTheThingsProfiles",
+        "PVP",
+        "INSCRIPTION"
     ],
     "Lua.diagnostics.disable": [
         "duplicate-index"

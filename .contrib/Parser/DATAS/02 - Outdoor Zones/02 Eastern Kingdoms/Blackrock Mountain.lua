@@ -25,11 +25,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 44.6, 75.0, BLACKROCK_MOUNTAIN_LEVEL3 },
 						{ 56.2, 76.0, BLACKROCK_MOUNTAIN_LEVEL3 },
 					},
-					["timeline"] = { "added 5.1.0.16257" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51066, {	-- Crystalfang
 					["coord"] = { 34.0, 20.0, BLACKROCK_MOUNTAIN_LEVEL3 },
-					["timeline"] = { "added 5.2.0.16408" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(9026, {	-- Overmaster Pyron
 					["coords"] = {

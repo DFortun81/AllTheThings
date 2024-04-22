@@ -3031,7 +3031,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(50335, {	-- Alitus
 					["coord"] = { 46.8, 66.8, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if AFTER CATA
 				n(14222, {	-- Araga (Alterac Mountains)
@@ -3052,11 +3052,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50955, {	-- Carcinak
 					["coord"] = { 46.8, 76.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.2.0.16408" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51022, {	-- Chordix
 					["coord"] = { 56.8, 54.8, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if AFTER CATA
 				n(14223, {	-- Cranky Benj (Alterac Mountains)
@@ -3073,7 +3073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(50967, {	-- Craw the Ravager
 					["coord"] = { 51.8, 87.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14279, {	-- Creepthess
 					-- #if AFTER CATA
@@ -3089,7 +3089,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50858, {	-- Dustwing
 					["coord"] = { 28.6, 84.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if AFTER CATA
 				n(14221, {	-- Gravis Slipknot (Alterac Mountains)
@@ -3134,7 +3134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50929, {	-- Little Bjorn
 					["coord"] = { 35.0, 78.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.2.0.16408" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if AFTER CATA
 				n(2453, {	-- Lo'Grosh (Alterac Mountains)
@@ -3148,7 +3148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(51076, {	-- Lopex
 					["coord"] = { 68.8, 56.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if AFTER CATA
 				n(2258, {	-- Maggarrak [CATA+] / Stone Fury (Alterac Mountains)
@@ -3157,7 +3157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(50765, {	-- Miasmiss
 					["coord"] = { 37.0, 68.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.1.0.16231" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14278, {	-- Ro'Bark
 					-- #if AFTER CATA
@@ -3214,15 +3214,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50818, {	-- The Dark Prowler
 					["coord"] = { 33.0, 55.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51057, {	-- Weevil
 					["coord"] = { 45.6, 53.8, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50770, {	-- Zorn
 					["coord"] = { 77.0, 60.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			n(VENDORS, {

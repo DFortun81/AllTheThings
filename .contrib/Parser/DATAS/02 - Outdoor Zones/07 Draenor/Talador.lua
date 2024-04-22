@@ -2628,7 +2628,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 3.3.3.11573" },
 							}),
 							i(95621, {	-- Warbot (PET!)
-								["timeline"] = { "added 5.2.0.16539" },
+								["timeline"] = { ADDED_5_2_0 },
 							}),
 							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 								["timeline"] = { "added 3.3.3.11573" },

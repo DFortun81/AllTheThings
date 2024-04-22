@@ -167,7 +167,7 @@ root(ROOTS.Zones, {
 									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuest"] = 32412,	-- One Last Grasp
 									["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
-									["timeline"] = { "added 5.1.0.16155" },
+									["timeline"] = { ADDED_5_1_0 },
 									["maps"] = { 501, 502 },	-- Dalaran (Scenario)
 									["isBreadcrumb"] = true,
 									["races"] = HORDE_ONLY,

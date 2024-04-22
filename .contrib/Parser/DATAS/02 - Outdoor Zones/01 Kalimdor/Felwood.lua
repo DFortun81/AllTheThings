@@ -2279,11 +2279,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50362, {	-- Blackbog the Fang
 					["coord"] = { 34.8, 59.6, FELWOOD },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50905, {	-- Cida
 					["coord"] = { 45.0, 31.8, FELWOOD },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14339, {	-- Death Howl
 					["coords"] = {
@@ -2310,19 +2310,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(51025, {	-- Dilennaa
 					["coord"] = { 42.2, 48.2, FELWOOD },
-					["timeline"] = { "added 5.2.0.16634" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50833, {	-- Duskcoat
 					["coord"] = { 39.8, 31.4, FELWOOD },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51046, {	-- Fidonis
 					["coord"] = { 38.6, 52.8, FELWOOD },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51017, {	-- Gezan
 					["coord"] = { 52.6, 31.8, FELWOOD },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(107595, {	-- Grimrot
 					["description"] = "This is the daytime light grey bear model.",
@@ -2336,7 +2336,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50925, {	-- Grovepaw
 					["coord"] = { 38.2, 72.8, FELWOOD },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(7137, {	-- Immolatus
 					["coords"] = {
@@ -2363,7 +2363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50777, {	-- Needle
 					["coord"] = { 51.0, 34.2, FELWOOD },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14343, {	-- Olm the Wise
 					["coords"] = {
@@ -2393,7 +2393,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50724, {	-- Spinecrawl
 					["coord"] = { 60.6, 22.2, FELWOOD },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14345, {	-- The Ongar
 					["coords"] = {
@@ -2408,7 +2408,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50864, {	-- Thicket
 					["coord"] = { 59.6, 6.8, FELWOOD },
-					["timeline"] = { "added 5.1.0.16208" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 			}),
 			-- #if BEFORE 4.0.3

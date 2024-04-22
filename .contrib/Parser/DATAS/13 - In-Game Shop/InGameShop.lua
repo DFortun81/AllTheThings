@@ -150,7 +150,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["races"] = HORDE_ONLY,
 		}),
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
-			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
+			["timeline"] = { ADDED_5_2_0, "removed 8.3.0" },
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
@@ -169,7 +169,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		i(92724, {	-- Swift Windsteed (MOUNT!)
-			["timeline"] = { "added 5.1.0.16309", "removed 8.1.0.29088" },
+			["timeline"] = { ADDED_5_1_0, "removed 8.1.0.29088" },
 		}),
 		i(153539, {	-- Seabraid Stallion (MOUNT!)
 			["timeline"] = { "added 7.3.5.25937", "removed 10.1.0" },	-- 17th April 2023
@@ -212,7 +212,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_6_2_3 },
 		}),
 		i(92707, {	-- Cinder Kitten (PET!)
-			["timeline"] = { "added 5.1.0.16309" },
+			["timeline"] = { ADDED_5_1_0 },
 		}),
 		i(190608, {	-- Crushhoof
 			["timeline"] = { "added 10.1.5" },

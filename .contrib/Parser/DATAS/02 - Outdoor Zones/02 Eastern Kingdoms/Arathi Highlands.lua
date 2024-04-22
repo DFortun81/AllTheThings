@@ -1982,11 +1982,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(50891, {	-- Boros
 					["coord"] = { 48.4, 35.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50337, {	-- Cackle
 					["coord"] = { 21.6, 88.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(2598, {	-- Darbel Montrose <Shadow Council Warlock>
 					-- #if AFTER CATA
@@ -2027,7 +2027,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51067, {	-- Glint
 					["coord"] = { 30.6, 61.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.2.0.16591" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2603, {	-- Kovork
 					-- #if AFTER CATA
@@ -2096,11 +2096,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51063, {	-- Phalanax
 					["coord"] = { 48.2, 81.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50804, {	-- Ripwing
 					["coord"] = { 36.5, 62.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(2602, {	-- Ruul Onestone
 					-- #if AFTER CATA
@@ -2111,7 +2111,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50865, {	-- Saurix
 					["coord"] = { 42.2, 35.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(2600, {	-- Singer
 					-- #if AFTER CATA
@@ -2135,11 +2135,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51040, {	-- Snuffles
 					["coord"] = { 26.2, 27.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50940, {	-- Swee
 					["coord"] = { 56.4, 56.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2605, {	-- Zalas Witherbark <Warband Leader>
 					-- #if AFTER CATA
@@ -2150,7 +2150,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50770, {	-- Zorn
 					["coord"] = { 22.0, 14.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			n(VENDORS, {

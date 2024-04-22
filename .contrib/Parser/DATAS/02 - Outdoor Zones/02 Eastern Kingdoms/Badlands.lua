@@ -2039,7 +2039,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(51000, {	-- Blackshell the Impenetrable
 					["coord"] = { 72.2, 27.4, BADLANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2850, {	-- Broken Tooth
 					-- #if AFTER CATA
@@ -2054,15 +2054,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50728, {	-- Deathstrike
 					["coord"] = { 70.2, 53.8, BADLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50726, {	-- Kalixx
 					["coord"] = { 32.0, 35.6, BADLANDS },
-					["timeline"] = { "added 5.2.0.16408" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50731, {	-- Needlefang
 					["coord"] = { 50.8, 72.6, BADLANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2752, {	-- Rumbler
 					-- #if AFTER CATA
@@ -2076,7 +2076,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51007, {	-- Serkett
 					["coord"] = { 26.8, 38.0, BADLANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2744, {	-- Shadowforge Commander
 					-- #if AFTER CATA
@@ -2087,11 +2087,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50838, {	-- Tabbs
 					["coord"] = { 58.6, 60.6, BADLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51021, {	-- Vorticus
 					["coord"] = { 23.2, 37.6, BADLANDS },
-					["timeline"] = { "added 5.1.0.16231" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if BEFORE CATA
 				n(2749, {	-- Siege Golem / Barricade [CATA+]
@@ -2131,7 +2131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51018, {	-- Zormus
 					["coord"] = { 51.8, 34.2, BADLANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			n(VENDORS, {

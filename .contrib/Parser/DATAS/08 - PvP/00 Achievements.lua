@@ -684,7 +684,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			7106,	-- Master of Silvershard Mines
 			6981,	-- Master of Temple of Kotmogu
 		}},
-		["timeline"] = { "added 5.2.0" },
+		["timeline"] = { ADDED_5_2_0 },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			title(220, {	-- Khan
@@ -700,7 +700,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			7106,	-- Master of Silvershard Mines
 			6981,	-- Master of Temple of Kotmogu
 		}},
-		["timeline"] = { "added 5.2.0" },
+		["timeline"] = { ADDED_5_2_0 },
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			title(220, {	-- Khan

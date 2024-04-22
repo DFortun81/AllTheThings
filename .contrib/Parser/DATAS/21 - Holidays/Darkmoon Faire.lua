@@ -133,7 +133,7 @@ local TIER_FOUR_MAX_REPUTATION = { 909, NEUTRAL + 2500 };	-- Darkmoon Faire, mus
 local TIER_FIVE_MAX_REPUTATION = { 909, FRIENDLY + 2001 };	-- Darkmoon Faire, must be less than 2001 over Friendly
 local DECK_MAX_REPUTATION = { 909, EXALTED };	-- Darkmoon Faire, must be less than Exalted 999/1000.
 local DARKMOON_GAME_PRIZE = i(93724, {	-- Darkmoon Game Prize [Cataclysm Version]
-	["timeline"] = { "added 5.2.0.16408" },
+	["timeline"] = { ADDED_5_2_0 },
 });
 local DARKMOON_GAME_TOKEN = i(71083, {	-- Darkmoon Game Token [Cataclysm Version]
 	["timeline"] = { "added 4.3.0.15005" },
@@ -569,7 +569,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["timeline"] = { ADDED_6_2_0 },
 			}),
 			i(93732, {	-- Darkmoon Fishing Cap
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(73953, {	-- Sea Pony (PET!)
 				["timeline"] = { "added 4.3.0.15005" },
@@ -1601,7 +1601,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			petbattle(q(32175, {	-- Darkmoon Pet Battle!
 				["qg"] = 67370,	-- Jeremy Feasel
 				["coord"] = { 47.8, 62.6, DARKMOON_ISLAND },
-				["timeline"] = { "added 5.1.0.16139" },
+				["timeline"] = { ADDED_5_1_0 },
 				["isDaily"] = true,
 				["groups"] = {
 					i(91086, {	-- Darkmoon Pet Supplies
@@ -1610,11 +1610,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							44820,	-- Red Ribbon Pet Leash
 							37460,	-- Rope Pet Leash
 						}},
-						["timeline"] = { "added 5.1.0.16139" },
+						["timeline"] = { ADDED_5_1_0 },
 						["groups"] = {
 							DARKMOON_PRIZE_TICKET,
 							i(91040, {	-- Darkmoon Eye (PET!)
-								["timeline"] = { "added 5.1.0.16139" },
+								["timeline"] = { ADDED_5_1_0 },
 							}),
 						},
 					}),
@@ -3277,31 +3277,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			i(93724, {	-- Darkmoon Game Prize
 				["description"] = "Awarded by completing a mini game quest.",
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 				["groups"] = {
 					i(78340, {	-- Cloak of the Darkmoon Faire
 						["timeline"] = { "added 4.3.0.15005" },
 					}),
 					i(92959, {	-- Darkmoon "Cougar"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(92966, {	-- Darkmoon "Dragon"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(92967, {	-- Darkmoon "Gryphon"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(92968, {	-- Darkmoon "Murloc"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(92958, {	-- Darkmoon "Nightsaber"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(92969, {	-- Darkmoon "Rocket"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(92956, {	-- Darkmoon "Snow Leopard"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(77256, {	-- Darkmoon "Sword"
 						["timeline"] = { "added 4.3.0.15005" },
@@ -3310,7 +3310,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 4.3.0.15005" },
 					}),
 					i(92970, {	-- Darkmoon "Wyvern"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(73762, {	-- Darkmoon Balloon (PET!)
 						["timeline"] = { "added 4.3.0.15005" },
@@ -3328,7 +3328,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 4.3.0.15005" },
 					}),
 					i(93730, {	-- Darkmoon Top Hat
-						["timeline"] = { "added 5.2.0.16408", "removed 8.2.5.31958" },
+						["timeline"] = { ADDED_5_2_0, "removed 8.2.5.31958" },
 					}),
 					i(171364, {	-- Darkmoon Top Hat
 						["timeline"] = { "added 8.2.5.31958" },
@@ -3337,7 +3337,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 4.3.0.15005" },
 					}),
 					i(90899, {	-- Darkmoon Whistle (TOY!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(73905, {	-- Darkmoon Zeppelin  (PET!)
 						["timeline"] = { "added 4.3.0.15005" },
@@ -3671,10 +3671,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "removed 6.1.0.19445" },
 					})),
 					darkmoonprizeticket(50, i(93902, {	-- Flamescarred Draconian Deflector
-						["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 					})),
 					darkmoonprizeticket(50, i(93904, {	-- Musty Tome of the Lost
-						["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 					})),
 					darkmoonprizeticket(50, i(42951, {	-- Mystical Pauldrons of Elements
 						["timeline"] = { "removed 6.1.0.19445" },
@@ -3719,7 +3719,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "removed 6.1.0.19445" },
 					})),
 					darkmoonprizeticket(50, i(93903, {	-- Weathered Observer's Shield
-						["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 					})),
 
 					-- New Heirlooms
@@ -3889,25 +3889,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 4.3.0.15005" },
 					})),
 					darkmoonprizeticket(1, i(92959, {	-- Darkmoon "Cougar"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(1, i(92966, {	-- Darkmoon "Dragon"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(1, i(92967, {	-- Darkmoon "Gryphon"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(1, i(92968, {	-- Darkmoon "Murloc"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(1, i(92958, {	-- Darkmoon "Nightsaber"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(1, i(92969, {	-- Darkmoon "Rocket"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(1, i(92956, {	-- Darkmoon "Snow Leopard"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(20, i(77256, {	-- Darkmoon "Sword"
 						["timeline"] = { "added 4.3.0.15005" },
@@ -3916,7 +3916,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 4.3.0.15005" },
 					})),
 					darkmoonprizeticket(1, i(92970, {	-- Darkmoon "Wyvern"
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 					darkmoonprizeticket(90, i(73762, {	-- Darkmoon Balloon (PET!)
 						["timeline"] = { "added 4.3.0.15005" },
@@ -3930,13 +3930,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					})),
 					darkmoonprizeticket(1, i(19291)),	-- Darkmoon Storage Box
 					darkmoonprizeticket(10, i(93730, {	-- Darkmoon Top Hat
-						["timeline"] = { "added 5.2.0.16408", "removed 8.2.5.31958" },
+						["timeline"] = { ADDED_5_2_0, "removed 8.2.5.31958" },
 					})),
 					darkmoonprizeticket(10, i(171364, {	-- Darkmoon Top Hat
 						["timeline"] = { "added 8.2.5.31958" },
 					})),
 					darkmoonprizeticket(90, i(90899, {	-- Darkmoon Whistle (TOY!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 				},
 			}),
@@ -4217,7 +4217,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(19300),	-- Bottled Winterspring Water
 					i(19222),	-- Cheap Beer
 					i(93208, {	-- Darkmoon P.I.E.
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(19221),	-- Darkmoon Special Reserve
 					i(19299),	-- Fizzy Faire Drink

@@ -484,7 +484,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 11982,
 				["groups"] = {
 					i(93034, {	-- Corefire Imp (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(17073),	-- Earthshaker
 					i(18822),	-- Obsidian Edged Blade
@@ -625,7 +625,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(17330),	-- Hand of Sulfuron
 					i(93033, {	-- Harbinger of Flame (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(17074),	-- Shadowstrike
 					i(17223),	-- Thunderstrike
@@ -649,7 +649,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 11988,
 				["groups"] = {
 					i(93035, {	-- Ashstone Core (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(17203),	-- Sulfuron Ingot
 					i(18822),	-- Obsidian Edged Blade

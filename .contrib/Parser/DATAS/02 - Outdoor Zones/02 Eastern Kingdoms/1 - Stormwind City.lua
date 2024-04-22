@@ -1860,7 +1860,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32675, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Alliance players upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -2079,7 +2079,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32665, {	-- Learn To Ride
 					["description"] = "This quest is automatically granted to Pandaren upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { PANDAREN_ALLIANCE },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -4194,11 +4194,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				n(69334, {	-- Adherent Hanjun <Tushui Quartermaster>
 					["coord"] = { 68.0, 17.0, STORMWIND_CITY },
-					["timeline"] = { "added 5.2.0.16577" },
+					["timeline"] = { ADDED_5_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(92071, {	-- Tushui Satchel
-							["timeline"] = { "added 5.1.0.16309" },
+							["timeline"] = { ADDED_5_1_0 },
 						}),
 						i(83079, {	-- Tushui Tabard
 							["timeline"] = { "added 5.0.1.15544" },
@@ -4662,7 +4662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
-					["timeline"] = { "added 5.2.0.16577" },
+					["timeline"] = { ADDED_5_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},
@@ -5003,7 +5003,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 3.3.3.11573" },
 						}),
 						i(95621, {	-- Warbot (PET!)
-							["timeline"] = { "added 5.2.0.16539" },
+							["timeline"] = { ADDED_5_2_0 },
 						}),
 						i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 							["timeline"] = { "added 3.3.3.11573" },

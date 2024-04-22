@@ -2725,11 +2725,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(50345, {	-- Alit
 					["coord"] = { 31.8, 72.2, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51058, {	-- Aphis
 					["coord"] = { 62.6, 35.4, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if BEFORE 4.0.3
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
@@ -2774,15 +2774,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50937, {	-- Hamhide
 					["coord"] = { 43.6, 36.0, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50809, {	-- Heress
 					["coord"] = { 35.2, 53.2, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50778, {	-- Ironweb
 					["coord"] = { 51.8, 69.2, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(1848, {	-- Lord Maldazzar
 					-- #if AFTER CATA
@@ -2798,15 +2798,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50931, {	-- Mange
 					["coord"] = { 66.2, 55.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50906, {	-- Mutilax
 					["coord"] = { 52.6, 27.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51029, {	-- Parasitus
 					["coord"] = { 62.0, 73.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(1850, {	-- Putridius
 					-- #if AFTER CATA
@@ -2898,14 +2898,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51031, {	-- Tracker
 					["coord"] = { 62.6, 47.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50922, {	-- Warg
 					["coords"] = {
 						{ 57.0, 63.4, WESTERN_PLAGUELANDS },
 						{ 57.2, 60.6, WESTERN_PLAGUELANDS },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			-- #if AFTER 10.1.5

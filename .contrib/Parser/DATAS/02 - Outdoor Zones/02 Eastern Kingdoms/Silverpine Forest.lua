@@ -1449,7 +1449,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50814, {	-- Corpsefeeder
 					["coord"] = { 49.2, 68.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if BEFORE CATA
 				n(1920, {	-- Dalaran Spellscribe / Ambermill Spellscribe [CATA+]
@@ -1500,11 +1500,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50949, {	-- Finn's Gambit
 					["coord"] = { 64.0, 46.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51026, {	-- Gnath
 					["coord"] = { 49.6, 29.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(12431, {	-- Gorefang
 					-- #if AFTER CATA
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(50330, {	-- Kree
 					["coord"] = { 60.8, 6.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(12433, {	-- Krethis the Shadowspinner
 					-- #if AFTER CATA
@@ -1573,7 +1573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(51037, {	-- Lost Gilnean Wardog
 					["coord"] = { 59.0, 42.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(47015, {	-- Lost Son of Arugal
 					["coords"] = {

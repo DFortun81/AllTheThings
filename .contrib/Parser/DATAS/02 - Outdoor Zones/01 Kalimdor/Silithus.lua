@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(RARES, {
 						n(50747, {	-- Tix
 							["coord"] = { 60.8, 6.6, AHNQIRAJ_THE_FALLEN_KINGDOM },
-							["timeline"] = { "added 5.2.0.16634" },
+							["timeline"] = { ADDED_5_2_0 },
 						}),
 					}),
 					n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
@@ -2307,15 +2307,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50737, {	-- Acroniss
 					["coord"] = { 73.6, 16.0, SILITHUS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50746, {	-- Bornix the Burrower
 					["coord"] = { 63.0, 89.0, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50897, {	-- Ffexk the Dunestalker
 					["coord"] = { 32.1, 53.8, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14472, {	-- Gretheer
 					["coords"] = {
@@ -2374,7 +2374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50370, {	-- Karapax
 					["coord"] = { 57.5, 14.8, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14476, {	-- Krellack
 					["coords"] = {
@@ -2415,19 +2415,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50745, {	-- Losaj
 					["coord"] = { 42.6, 56.6, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50743, {	-- Manax
 					["coord"] = { 67.5, 66.6, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50742, {	-- Qem
 					["coord"] = { 44.0, 17.2, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50744, {	-- Qu'rik
 					["coord"] = { 54.6, 26.6, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14475, {	-- Rex Ashil
 					["coords"] = {
@@ -2478,7 +2478,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(51004, {	-- Toxx
 					["coord"] = { 42.8, 18.2, SILITHUS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14479, {	-- Twilight Lord Everun <Twilight's Hammer>
 					["coords"] = {

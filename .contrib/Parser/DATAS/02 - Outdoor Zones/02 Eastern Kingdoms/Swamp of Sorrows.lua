@@ -1532,7 +1532,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(50882, {	-- Chupacabros
 					["coord"] = { 27.8, 62.0, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 5.1.0.16208" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(5348, {	-- Dreamwatcher Forktongue <Victim of the Nightmare> [CATA+]
 					["coord"] = { 18.0, 69.8, SWAMP_OF_SORROWS },
@@ -1556,7 +1556,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51052, {	-- Gib the Banana-Hoarder
 					["coord"] = { 16.71, 47.30, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 5.2.0.16577" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14447, {	-- Gilmorian
 					-- #if AFTER CATA
@@ -1577,7 +1577,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50790, {	-- Ionis
 					["coord"] = { 40.0, 35.6, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(1063, {	-- Jade <Victim of the Nightmare>
 					-- #if AFTER CATA
@@ -1593,7 +1593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 79.4, 30.8, SWAMP_OF_SORROWS },
 						{ 80.6, 28.6, SWAMP_OF_SORROWS },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if BEFORE CATA
 				n(14445, {	-- Lord Captain Wyrmak / Captain Wyrmak <Victim of the Nightmare> [CATA+]
@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 16.53, 38.26, SWAMP_OF_SORROWS },
 						{ 15.78, 37.18, SWAMP_OF_SORROWS },
 					},
-					["timeline"] = { "added 5.2.0.16591" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50886, {	-- Seawing
 					["coords"] = {	-- pats up and down the beach, coords not exhaustive
@@ -1679,7 +1679,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 89.8, 35.2, SWAMP_OF_SORROWS },
 						{ 90.6, 40.0, SWAMP_OF_SORROWS },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50738, {	-- Shimmerscale
 					["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
@@ -1688,7 +1688,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 55.6, 54.0, SWAMP_OF_SORROWS },
 						{ 54.0, 54.2, SWAMP_OF_SORROWS },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50797, {	-- Yukiko
 					["coords"] = {
@@ -1696,7 +1696,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 70.6, 66.2, SWAMP_OF_SORROWS },
 						{ 69.8, 67.6, SWAMP_OF_SORROWS },
 					},
-					["timeline"] = { "added 5.2.0.16577" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			-- #if BEFORE CATA

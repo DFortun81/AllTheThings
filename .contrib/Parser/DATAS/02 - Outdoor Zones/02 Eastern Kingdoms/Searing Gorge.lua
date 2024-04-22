@@ -1458,11 +1458,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(50876, {	-- Avis
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 					["coord"] = { 71.6, 19.2, SEARING_GORGE },
 				}),
 				n(50948, {	-- Crystalback
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 					["coords"] = {
 						{ 66.0, 47.2, SEARING_GORGE },
 						{ 65.2, 45.0, SEARING_GORGE },
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(50946, {	-- Hogzilla
-					["timeline"] = { "added 5.2.0.16634" },
+					["timeline"] = { ADDED_5_2_0 },
 					["coord"] = { 21.1, 79.5, SEARING_GORGE },
 				}),
 				n(8277, {	-- Rekk'tilac
@@ -1569,7 +1569,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(51048, {	-- Rexxus
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 					["coords"] = {
 						{ 42.8, 47.2, SEARING_GORGE },
 						{ 40.4, 50.6, SEARING_GORGE },
@@ -1591,7 +1591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(51002, {	-- Scorpoxx
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 					["coord"] = { 18.4, 38.8, SEARING_GORGE },
 				}),
 				n(8280, {	-- Shleipnarr
@@ -1625,7 +1625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(50846, {	-- Slavermaw
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 					["coord"] = { 58.7, 22.5, SEARING_GORGE },
 				}),
 				n(8278, {	-- Smoldar
@@ -1639,7 +1639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(51010, {	-- Snips
-					["timeline"] = { "added 5.1.0.16257" },
+					["timeline"] = { ADDED_5_1_0 },
 					["coord"] = { 35.0, 52.0, SEARING_GORGE },
 				}),
 			}),

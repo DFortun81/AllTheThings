@@ -5,7 +5,7 @@
 root(ROOTS.PVP, {
 	pvp(expansion(EXPANSION.MOP, {
 		n(SEASON_MALEVOLENT, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.0", REMOVED_5_2_0 }, }, {
 				ach(8243, {	-- Hero of the Alliance: Malevolent
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2338,7 +2338,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_TYRANNICAL, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.2.0", "removed 5.4.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_2_0, "removed 5.4.0" }, }, {
 				ach(8652, {	-- Hero of the Alliance: Tyrannical
 					["races"] = ALLIANCE_ONLY,
 				}),

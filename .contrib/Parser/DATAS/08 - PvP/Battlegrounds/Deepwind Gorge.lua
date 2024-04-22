@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(519, {	-- Deepwind Gorge
 		["icon"] = "Interface\\Icons\\achievement_bg_dg_master_of_the_deepwind_gorge",
-		["timeline"] = { "added 5.2.0" },
+		["timeline"] = { ADDED_5_2_0 },
 		["maps"] = {
 			1576,	-- Deepwind Gorge (revamped)
 		},

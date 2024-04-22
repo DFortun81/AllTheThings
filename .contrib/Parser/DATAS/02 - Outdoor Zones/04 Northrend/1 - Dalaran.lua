@@ -876,7 +876,7 @@ root(ROOTS.Zones, {
 							n(69321, {	-- Herwin Steampop <Deadly Gladiator>
 								["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Deadly Gladiator's Set
-								["timeline"] = { "added 5.2.0.16577" },
+								["timeline"] = { ADDED_5_2_0 },
 							}),
 							n(29538, {	-- Hexil Garrot <Tools of the Trade>
 								["coord"] = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
@@ -914,7 +914,7 @@ root(ROOTS.Zones, {
 							n(69318, {	-- Kylo Kelwin <Furious Gladiator>
 								["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Furious Gladiator's Set
-								["timeline"] = { "added 5.2.0.16577" },
+								["timeline"] = { ADDED_5_2_0 },
 							}),
 							applyclassicphase(CATA_PHASE_FOUR, n(54653, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -1007,7 +1007,7 @@ root(ROOTS.Zones, {
 								-- #else
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Cataclysmic Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 5.2.0.16577" },
+								["timeline"] = { ADDED_5_2_0 },
 							}),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33937, {	-- Xazi Smolderpipe <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
@@ -1044,13 +1044,13 @@ root(ROOTS.Zones, {
 								-- #else
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 5.2.0.16577" },
+								["timeline"] = { ADDED_5_2_0 },
 							}),
 							applyclassicphase(CATA_PHASE_FOUR, n(54651, {	-- Zom Bocom <Honor Quartermaster>
 								-- #if BEFORE 5.2.0.16577
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.3.0", "removed 5.2.0.16577" },
+								["timeline"] = { "added 4.3.0", REMOVED_5_2_0 },
 							})),
 							applyclassicphase(CATA_PHASE_THREE, n(52534, {	-- Zom Bocom <Honor Quartermaster>
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
@@ -2927,10 +2927,10 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
 							i(93902, {	-- Flamescarred Draconian Deflector
-								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 							}),
 							i(93904, {	-- Musty Tome of the Lost
-								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 							}),
 							emoh(40, i(42951, {	-- Mystical Pauldrons of Elements
 								["timeline"] = { "removed 6.1.0.19445" },
@@ -2975,7 +2975,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
 							i(93903, {	-- Weathered Observer's Shield
-								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 							}),
 						},
 					}),
@@ -3054,7 +3054,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 3.3.3.11573" },
 							}),
 							i(95621, {	-- Warbot (PET!)
-								["timeline"] = { "added 5.2.0.16539" },
+								["timeline"] = { ADDED_5_2_0 },
 							}),
 							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 								["timeline"] = { "added 3.3.3.11573" },

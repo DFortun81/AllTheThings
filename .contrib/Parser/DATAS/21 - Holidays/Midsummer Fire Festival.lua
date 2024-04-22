@@ -492,7 +492,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(8042, {	-- Extinguishing Pandaria (A)
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6013, {	-- Extinguishing the Cataclysm (A)
@@ -537,7 +537,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(8045, {	-- Flame Warden of Pandaria (A)
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11280, {	-- Flame Warden of the Broken Isles (A)
@@ -615,7 +615,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(8043, {	-- Extinguishing Pandaria (H)
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11279, {	-- Extinguishing the Broken Isles (H)
@@ -652,7 +652,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(8044, {	-- Flame Keeper of Pandaria (H)
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11282, {	-- Flame Keeper of the Broken Isles (H)

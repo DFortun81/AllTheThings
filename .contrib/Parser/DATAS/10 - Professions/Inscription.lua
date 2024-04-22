@@ -1023,7 +1023,7 @@ GLYPH_OF_HAUNT_AND_DRAIN_LIFE = r(64291, {	-- Glyph of Haunt / Glyph of Drain Li
 	-- #else
 	["name"] = "Glyph of Haunt",
 	-- #endif
-	["timeline"] = { "added 3.1.0", "removed 5.0.4", "added 5.2.0", "deleted 6.0.2" },
+	["timeline"] = { "added 3.1.0", "removed 5.0.4", ADDED_5_2_0, "deleted 6.0.2" },
 });
 GLYPH_OF_HEALING_STREAM_TOTEM = r(57242, {	-- Glyph of Healing Stream Totem
 	["name"] = "Glyph of Healing Stream Totem",
@@ -1231,7 +1231,7 @@ GLYPH_OF_INCINERATE_AND_HAND_OF_GULDAN = r(57257, {	-- Glyph of Incinerate / Gly
 });
 GLYPH_OF_INFERNO_BLAST = r(94000, {	-- Glyph of Inferno Blast
 	["name"] = "Glyph of Inferno Blast",
-	["timeline"] = { "added 5.2.0", "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_2_0, "deleted 7.0.3" },
 });
 GLYPH_OF_INNER_FIRE = r(57188, {	-- Glyph of Inner Fire
 	["name"] = "Glyph of Inner Fire",

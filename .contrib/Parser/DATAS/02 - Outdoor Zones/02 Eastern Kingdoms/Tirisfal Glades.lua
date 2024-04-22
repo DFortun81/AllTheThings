@@ -641,7 +641,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 61.6, 79.6, DEATHKNELL },
 								{ 65.2, 79.8, DEATHKNELL },
 							},
-							["timeline"] = { "added 5.1.0.16309" },
+							["timeline"] = { ADDED_5_1_0 },
 						}),
 					}),
 					-- #endif
@@ -2200,7 +2200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 31.2, 46.4, TIRISFAL_GLADES },
 						{ 32.6, 46.4, TIRISFAL_GLADES },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208927, {	-- Dead Acolyte
@@ -2321,7 +2321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(50930, {	-- Hibernus the Sleeper
 					["coord"] = { 47.6, 70.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(1531, {	-- Lost Soul
 					-- #if AFTER CATA
@@ -2353,11 +2353,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50908, {	-- Nighthowl
 					["coord"] = { 42.6, 28.6, TIRISFAL_GLADES },
-					["timeline"] = { "added 5.2.0.16591" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51044, {	-- Plague
 					["coord"] = { 57.8, 33.0, TIRISFAL_GLADES },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10357, {	-- Ressan the Needler
 					-- #if AFTER CATA
@@ -2387,7 +2387,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50763, {	-- Shadowstalker
 					["coord"] = { 38.0, 52.0, TIRISFAL_GLADES },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10359, {	-- Sri'skulk
 					-- #if AFTER CATA

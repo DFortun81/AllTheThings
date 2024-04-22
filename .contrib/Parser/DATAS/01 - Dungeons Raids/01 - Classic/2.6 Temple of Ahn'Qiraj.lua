@@ -1320,7 +1320,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21706),	-- Boots of the Unwavering Will
 					i(21707),	-- Ring of Swarming Thought
 					applyclassicphase(MOP_PHASE_ONE, i(93041, {	-- Mini Mindslayer (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 				},
 			}),
@@ -1446,7 +1446,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						["timeline"] = { "removed 5.0.4" },
 					}),
 					applyclassicphase(MOP_PHASE_ONE, i(93039, {	-- Viscidus Globule (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 				},
 			}),
@@ -1476,7 +1476,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21600),	-- Boots of Epiphany
 					i(21601),	-- Ring of Emperor Vek'lor
 					applyclassicphase(MOP_PHASE_ONE, i(93040, {	-- Anubisath Idol (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					})),
 				}),
 				n(15275, {	-- Emperor Vek'nilash

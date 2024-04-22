@@ -4018,7 +4018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51042, {	-- Bleakheart
 					["coord"] = { 71.8, 45.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if BEFORE 4.0.3
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
@@ -4093,7 +4093,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50813, {	-- Fene-mal
 					["coord"] = { 49.6, 43.2, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if AFTER CATA
 				n(1843, {	-- Foreman Jerris
@@ -4165,7 +4165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 12.2, 71.6, EASTERN_PLAGUELANDS },
 						{ 11.6, 70.2, EASTERN_PLAGUELANDS },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10826, {  -- Lord Darkscythe
 					["coords"] = {
@@ -4226,7 +4226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51053, {	-- Quirix
 					["coord"] = { 23.6, 78.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if BEFORE CATA
 				n(10824, {  -- Ranger Lord Hawkspear / Death-Hunter Hawkspear [CATA+]
@@ -4242,23 +4242,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.2, 84.0, EASTERN_PLAGUELANDS },
 						{ 37.8, 84.0, EASTERN_PLAGUELANDS },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50915, {	-- Snort
 					["coord"] = { 57.4, 80.0, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51027, {	-- Spirocula
 					["coord"] = { 74.2, 58.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50779, {	-- Sporeggon
 					["coord"] = { 39.4, 55.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50947, {	-- Varah
 					["coord"] = { 11.6, 28.0, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if BEFORE CATA
 				n(10822, {  -- Warlord Thresh'jin

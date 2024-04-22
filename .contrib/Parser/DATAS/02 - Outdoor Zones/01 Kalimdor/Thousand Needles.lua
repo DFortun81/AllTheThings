@@ -2397,11 +2397,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50952, {	-- Barnacle Jim
 					["coord"] = { 41.2, 36.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50892, {	-- Cyn
 					["coord"] = { 55.2, 40.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14427, {	-- Gibblesnik
 					-- #if AFTER CATA
@@ -2458,7 +2458,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50741, {	-- Kaxx
 					["coord"] = { 37.6, 56.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 5.2.0.16408" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if AFTER CATA
 				n(4132, {	-- Krkk'kx [CATA+] / Silithid Ravager
@@ -2481,14 +2481,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(50748, {	-- Nyaj
 					["coord"] = { 44.6, 40.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50329, {	-- Rrakk
 					["coords"] = {
 						{ 90.8, 38.2, THOUSAND_NEEDLES },
 						{ 90.8, 40.6, THOUSAND_NEEDLES },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if BEFORE CATA
 				n(4132, {	-- Silithid Ravager / Krkk'kx [CATA+]
@@ -2514,25 +2514,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 93.8, 57.4, THOUSAND_NEEDLES },
 						{ 94.2, 58.6, THOUSAND_NEEDLES },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50727, {	-- Strix the Barbed
 					["coords"] = {
 						{ 94.0, 82.2, THOUSAND_NEEDLES },
 						{ 94.6, 81.6, THOUSAND_NEEDLES },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51008, {	-- The Barbed Horror
 					["coords"] = {
 						{ 70.8, 94.4, THOUSAND_NEEDLES },
 						{ 71.6, 95.0, THOUSAND_NEEDLES },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51001, {	-- Venomclaw
 					["coord"] = { 81.8, 96.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(5937, {	-- Vile Sting
 					-- #if AFTER CATA

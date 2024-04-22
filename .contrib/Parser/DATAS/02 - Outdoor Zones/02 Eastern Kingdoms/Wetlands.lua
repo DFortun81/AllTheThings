@@ -1573,7 +1573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(50964, {	-- Chops
 					["coord"] = { 58.0, 8.6, WETLANDS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				o(207496, {	-- Dark Iron Treasure Chest
 					["timeline"] = { ADDED_4_0_3 },

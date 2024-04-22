@@ -1468,7 +1468,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								i(93030, {	-- Giant Bone Spider (PET!)
-									["timeline"] = { "added 5.1.0.16309" },
+									["timeline"] = { ADDED_5_1_0 },
 								}),
 								i(39221),	-- Wraith Spear
 								i(39226),	-- Maexxna's Femur
@@ -1564,7 +1564,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								i(93032, {	-- Fungal Abomination (PET!)
-									["timeline"] = { "added 5.1.0.16309" },
+									["timeline"] = { ADDED_5_1_0 },
 								}),
 								i(40622),	-- Spaulders of the Lost Conqueror
 								i(40623),	-- Spaulders of the Lost Protector
@@ -1774,7 +1774,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								i(93029, {	-- Stitched Pup (PET!)
-									["timeline"] = { "added 5.1.0.16309" },
+									["timeline"] = { ADDED_5_1_0 },
 								}),
 								-- #IF ANYCLASSIC
 								-- Leaving this duplication for Classic because it doesn't support the 'extract' symlink command
@@ -2158,7 +2158,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								i(93030, {	-- Giant Bone Spider (PET!)
-									["timeline"] = { "added 5.1.0.16309" },
+									["timeline"] = { ADDED_5_1_0 },
 								}),
 								i(39758),	-- The Jawbone
 								i(39763),	-- Wraith Strike
@@ -2295,7 +2295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								i(93032, {	-- Fungal Abomination (PET!)
-									["timeline"] = { "added 5.1.0.16309" },
+									["timeline"] = { ADDED_5_1_0 },
 								}),
 								i(40637),	-- Mantle of the Lost Conqueror
 								i(40638),	-- Mantle of the Lost Protector
@@ -2556,7 +2556,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								i(93029, {	-- Stitched Pup (PET!)
-									["timeline"] = { "added 5.1.0.16309" },
+									["timeline"] = { ADDED_5_1_0 },
 								}),
 								-- #IF ANYCLASSIC
 								-- Leaving this duplication for Classic because it doesn't support the 'extract' symlink command

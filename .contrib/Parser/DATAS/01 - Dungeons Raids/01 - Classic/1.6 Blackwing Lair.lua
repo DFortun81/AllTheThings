@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				["creatureID"] = 12435,
 				["groups"] = {
 					i(93036, {	-- Untamed Hatchling (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(19334),	-- The Untamed Blade
 					i(19335),	-- Spineshatter
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				["creatureID"] = 12017,
 				["groups"] = {
 					i(93037, {	-- Death Talon Whelpguard (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
 					i(19350),	-- Heartstriker
@@ -306,7 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				["creatureID"] = 14020,
 				["groups"] = {
 					i(93038, {	-- Chrominius (PET!)
-						["timeline"] = { "added 5.1.0.16309" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(19352),	-- Chromatically Tempered Sword
 					i(19347),	-- Claw of Chromaggus

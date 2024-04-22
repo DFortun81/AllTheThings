@@ -2682,7 +2682,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(RARES, {
 				n(50812, {	-- Arae
 					["coord"] = { 49.4, 65.6, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(5915, {	-- Brother Ravenoak
 					-- #if AFTER CATA
@@ -2693,11 +2693,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50884, {	-- Dustflight the Cowardly
 					["coord"] = { 44.8, 55.8, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50825, {	-- Feras
 					["coord"] = { 76.0, 91.2, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(5931, {	-- Foreman Rigger
 					["coords"] = {
@@ -2709,15 +2709,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50986, {	-- Goldenback
 					["coord"] = { 82.2, 79.2, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50759, {	-- Iriss the Widow
 					["coord"] = { 54.4, 74.8, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(51062, {	-- Khep-Re
 					["coord"] = { 74.6, 73.2, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(4066, {	-- Nal'taszar
 					-- #if AFTER CATA
@@ -2767,7 +2767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 60.0, 63.4, STONETALON_MOUNTAINS },
 						{ 59.6, 64.0, STONETALON_MOUNTAINS },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(5916, {	-- Sentinel Amarassan
 					["coords"] = {
@@ -2807,7 +2807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50786, {	-- Sparkwing
 					["coord"] = { 58.8, 86.6, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(5932, {	-- Taskmaster Whipfang
 					-- #if AFTER CATA
@@ -2823,7 +2823,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50874, {	-- Tenok
 					["coord"] = { 44.4, 49.2, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(4030, {	-- Vengeful Ancient
 					["coords"] = {
@@ -2837,7 +2837,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50895, {	-- Volux
 					["coord"] = { 39.8, 46.2, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

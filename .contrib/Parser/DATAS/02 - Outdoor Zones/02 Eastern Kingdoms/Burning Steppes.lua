@@ -2099,15 +2099,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(50725, {	-- Azelisk
 					["coord"] = { 71.8, 23.0, BURNING_STEPPES },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50807, {	-- Catal
 					["coord"] = { 64.6, 54.8, BURNING_STEPPES },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50792, {	-- Chiaa
 					["coord"] = { 35.4, 26.8, BURNING_STEPPES },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(10077, {	-- Deathmaw
 					-- #if AFTER CATA
@@ -2134,7 +2134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.4, 51.8, BURNING_STEPPES },
 						{ 75.6, 53.4, BURNING_STEPPES },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(9604, {	-- Gorgon'och
 					-- #if AFTER CATA
@@ -2188,7 +2188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50855, {	-- Jaxx the Rabid
 					["coord"] = { 47.0, 24.2, BURNING_STEPPES },
-					["timeline"] = { "added 5.2.0.16408" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50842, {	-- Magmagan
 					["coords"] = {
@@ -2196,7 +2196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 29.0, 34.8, BURNING_STEPPES },
 						{ 28.8, 33.0, BURNING_STEPPES },
 					},
-					["timeline"] = { "added 5.2.0.16631" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(8981, {	-- Malfunctioning Reaver
 					-- #if AFTER CATA
@@ -2217,7 +2217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50361, {	-- Ornat
 					["coord"] = { 50.6, 60.6, BURNING_STEPPES },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50357, {	-- Sunwing
 					["coords"] = {
@@ -2225,7 +2225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 9.8, 54.4, BURNING_STEPPES },
 						{ 9.4, 53.4, BURNING_STEPPES },
 					},
-					["timeline"] = { "added 5.1.0.16208" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10078, {	-- Terrorspark
 					-- #if AFTER CATA
@@ -2261,7 +2261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50730, {	-- Venomspine
 					["coord"] = { 5.8, 38.2, BURNING_STEPPES },
-					["timeline"] = { "added 5.1.0.16297" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10119, {	-- Volchan
 					-- #if AFTER CATA

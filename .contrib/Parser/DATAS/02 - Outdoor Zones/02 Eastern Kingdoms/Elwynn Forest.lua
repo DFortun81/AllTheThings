@@ -2472,7 +2472,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["timeline"] = { "added 5.2.0.16446", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { HUMAN },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -2910,7 +2910,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 83.0, 82.8, ELWYNN_FOREST },
 						{ 81.6, 85.2, ELWYNN_FOREST },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204503, {	-- Dead Acolyte
@@ -2977,7 +2977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(50926, {	-- Grizzled Ben
 					["coord"] = { 27.2, 67.5, ELWYNN_FOREST },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(100, {	-- Gruff Swiftbite
 					-- #if AFTER CATA
@@ -2993,7 +2993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50916, {	-- Lamepaw the Whimperer
 					["coord"] = { 51.3, 64.6, ELWYNN_FOREST },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(99, {	-- Morgaine the Sly
 					-- #if AFTER CATA
@@ -3045,14 +3045,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50942, {	-- Snoot the Rooter
 					["coord"] = { 69.7, 80.0, ELWYNN_FOREST },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(50752, {	-- Tarantis
 					["coords"] = {
 						{ 65.8, 65.0, ELWYNN_FOREST },
 						{ 67.6, 63.2, ELWYNN_FOREST },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51014, {	-- Terrapis
 					["coords"] = {
@@ -3065,7 +3065,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 53.8, 87.8, ELWYNN_FOREST },
 						{ 50.6, 87.2, ELWYNN_FOREST },
 					},
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(61, {	-- Thuros Lightfingers
 					-- #if AFTER CATA

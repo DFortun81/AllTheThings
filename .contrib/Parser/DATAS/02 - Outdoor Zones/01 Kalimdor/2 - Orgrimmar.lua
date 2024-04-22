@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32674, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Horde players upon reaching level 30.",
-					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1,
 						"spellID", 34090,	-- Expert Riding
@@ -1180,7 +1180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32673, {	-- Learn To Ride (Goblin)
 					["description"] = "This quest is available to Goblins upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { GOBLIN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -1194,7 +1194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32669, {	-- Learn To Ride (Orc)
 					["description"] = "This quest is available to Orcs upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { ORC },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -1208,7 +1208,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32667, {	-- Learn To Ride (Pandaren)
 					["description"] = "This quest is available to Pandaren upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { PANDAREN_HORDE },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -2401,7 +2401,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 3.3.3.11573" },
 						}),
 						i(95621, {	-- Warbot (PET!)
-							["timeline"] = { "added 5.2.0.16539" },
+							["timeline"] = { ADDED_5_2_0 },
 						}),
 						i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 							["timeline"] = { "added 3.3.3.11573" },
@@ -2437,7 +2437,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
 					["coord"] = { 38.6, 70.0, ORGRIMMAR },
-					["timeline"] = { "added 5.2.0.16591" },
+					["timeline"] = { ADDED_5_2_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },
@@ -2604,14 +2604,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 					["coord"] = { 68.6, 40.2, ORGRIMMAR },
-					["timeline"] = { "added 5.2.0.16591" },
+					["timeline"] = { ADDED_5_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(83080, {	-- Huojin Tabard
 							["timeline"] = { "added 5.0.1.15544" },
 						}),
 						i(92070, {	-- Houjin Satchel
-							["timeline"] = { "added 5.1.0.16309" },
+							["timeline"] = { ADDED_5_1_0 },
 						}),
 					},
 				}),
@@ -4546,7 +4546,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(69978, {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
 					["coord"] = { 38.8, 70.0, ORGRIMMAR },
-					["timeline"] = { "added 5.2.0.16591" },
+					["timeline"] = { ADDED_5_2_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized

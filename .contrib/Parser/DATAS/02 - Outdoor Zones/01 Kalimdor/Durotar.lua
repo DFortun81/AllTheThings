@@ -2612,7 +2612,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32671, {	-- Learn To Ride
 					["description"] = "This quest is available to Trolls upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lockCriteria"] = { 1,

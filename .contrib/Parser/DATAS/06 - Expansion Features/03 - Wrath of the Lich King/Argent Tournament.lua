@@ -4357,10 +4357,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							["timeline"] = { "removed 6.1.0.19445" },
 						})),
 						champ(25, i(93902, {	-- Flamescarred Draconian Deflector
-							["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 						})),
 						champ(25, i(93904, {	-- Musty Tome of the Lost
-							["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 						})),
 						champ(25, i(42951, {	-- Mystical Pauldrons of Elements
 							["timeline"] = { "removed 6.1.0.19445" },
@@ -4405,7 +4405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							["timeline"] = { "removed 6.1.0.19445" },
 						})),
 						champ(25, i(93903, {	-- Weathered Observer's Shield
-							["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
 						})),
 
 						-- New Heirlooms

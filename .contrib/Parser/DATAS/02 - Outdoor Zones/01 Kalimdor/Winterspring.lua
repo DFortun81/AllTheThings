@@ -1881,7 +1881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(RARES, {
 				n(51045, {	-- Arcanus
 					["coord"] = { 48.0, 59.6, WINTERSPRING },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10202, {	-- Azurous
 					-- #if AFTER CATA
@@ -1911,11 +1911,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 59.6, 17.4, WINTERSPRING },
 						{ 62.4, 24.8, WINTERSPRING },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50995, {	-- Bruiser
 					["coord"] = { 65.6, 42.8, WINTERSPRING },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				o(240616, {	-- Frozen Supplies
 					["description"] = "Loot the Frozen Supplies in a nook at the base of the pillar.",
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50993, {	-- Gal'dorak
 					["coord"] = { 35.6, 48.8, WINTERSPRING },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10196, {	-- General Colbatann
 					-- #if AFTER CATA
@@ -1964,7 +1964,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50819, {	-- Iceclaw
 					["coord"] = { 52.0, 18.8, WINTERSPRING },
-					["timeline"] = { "added 5.1.0.16297" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10198, {	-- Kashoch the Reaver
 					-- #if AFTER CATA
@@ -1986,7 +1986,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50353, {	-- Manas
 					["coord"] = { 64.0, 80.0, WINTERSPRING },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(10197, {	-- Mezzir the Howler
 					-- #if AFTER CATA
@@ -2002,7 +2002,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50348, {	-- Norissis
 					["coord"] = { 59.6, 24.0, WINTERSPRING },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14457, {	-- Princess Tempestria
 					-- TODO: Move this to an Elemental Invasion World Event file.
@@ -2029,7 +2029,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50788, {	-- Quetzl
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 					["groups"] = {
 						i(4191, {	-- Owlbeast Leggings
 							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 10.09.2023
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50346, {	-- Ronak
 					["coord"] = { 59.6, 42.8, WINTERSPRING },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				-- #if AFTER CATA
 				n(10741, {	-- Sian-Rotam
@@ -2065,7 +2065,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(51028, {	-- The Deep Tunneler
 					["coord"] = { 50.6, 72.2, WINTERSPRING },
-					["timeline"] = { "added 5.1.0.16208" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 			}),
 			-- #if BEFORE 3.1.0

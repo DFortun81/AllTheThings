@@ -551,7 +551,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 90888 },	-- Special Edition Foot Ball (TOY!)
 				{ "i", 90883 },	-- The Pigskin (TOY!)
 			},
-			["timeline"] = { "added 5.1.0.16309" },
+			["timeline"] = { ADDED_5_1_0 },
 		}),
 		ach(8698, {	-- Crashin' Thrashin' Flyer (2013)
 			["provider"] = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller (TOY!)
@@ -1323,7 +1323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 70938 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2011.",
-			["timeline"] = { "added 4.2.0.14333", "removed 5.1.0.16309" },
+			["timeline"] = { "added 4.2.0.14333", REMOVED_5_1_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1339,16 +1339,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 90892 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2012.",
-			["timeline"] = { "added 5.1.0.16309", "removed 5.4.0.17227" },
+			["timeline"] = { ADDED_5_1_0, "removed 5.4.0.17227" },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
 			["groups"] = {
 				i(90888, {	-- Special Edition Foot Ball (TOY!)
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				i(90883, {	-- The Pigskin (TOY!)
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 			},
 		}),
@@ -2078,10 +2078,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
 				}),
 				i(93626, {	-- Stolen Present
-					["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
+					["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
 				}),
 				i(73792, {	-- Stolen Present
-					["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
+					["timeline"] = { "added 4.3.0.15005", REMOVED_5_1_0 },
 				}),
 				-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
 				-- NOTE: The contents will be slightly delayed after the gift each year rather than their respective "timestamp", so good lord kill me please for the love of god. -Crieve
@@ -2213,10 +2213,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 							["timeline"] = { "added 6.0.1.18594", "removed 7.1.0.22864" },
 						}),
 						i(93625, {	-- Miniature Winter Veil Tree (Level 90)
-							["timeline"] = { "added 5.1.0.16357", "removed 6.0.1.18594" },
+							["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
 						}),
 						i(66540, {	-- Miniature Winter Veil Tree (Level 85)
-							["timeline"] = { "added 4.3.0.15050", "removed 5.1.0.16357" },
+							["timeline"] = { "added 4.3.0.15050", REMOVED_5_1_0 },
 						}),
 						-- Trinkets
 						i(151351, {	-- Glowing Gift

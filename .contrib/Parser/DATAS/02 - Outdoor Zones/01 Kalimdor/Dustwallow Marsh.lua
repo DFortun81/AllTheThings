@@ -3152,11 +3152,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(RARES, {
 				n(50784, {	-- Anith
 					["coord"] = { 32.6, 30.8, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50735, {	-- Blinkeye the Rattler
 					["coord"] = { 51.6, 16.6, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(4339, {	-- Brimgore
 					-- #if AFTER CATA
@@ -3274,11 +3274,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.4, 28.6, DUSTWALLOW_MARSH },
 						{ 40.2, 28.6, DUSTWALLOW_MARSH },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50957, {	-- Hugeclaw
 					["coord"] = { 54.0, 43.8, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14236, {	-- Lord Angler
 					-- #if AFTER CATA
@@ -3293,7 +3293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50875, {	-- Nychus
 					["coord"] = { 34.3, 70.6, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14237, {	-- Oozeworm
 					-- #if AFTER CATA
@@ -3308,7 +3308,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50764, {	-- Paraliss
 					["coord"] = { 38.6, 74.6, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 5.1.0.16309" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14233, {	-- Ripscale
 					-- #if AFTER CATA
@@ -3331,18 +3331,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(51061, {	-- Roth-Salam
 					["coord"] = { 50.2, 84.6, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 5.1.0.16297" },
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(51069, {	-- Scintillex
 					["coord"] = { 55.8, 85.6, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 5.2.0.16591" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50945, {	-- Scruff
 					["coords"] = {
 						{ 29.4, 43.4, DUSTWALLOW_MARSH },
 						{ 29.6, 44.8, DUSTWALLOW_MARSH },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(50901, {	-- Teromak
 					["coords"] = {
@@ -3350,7 +3350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 42.0, 42.0, DUSTWALLOW_MARSH },
 						{ 41.4, 41.8, DUSTWALLOW_MARSH },
 					},
-					["timeline"] = { "added 5.2.0.16650" },
+					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14235, {	-- The Rot
 					-- #if AFTER CATA

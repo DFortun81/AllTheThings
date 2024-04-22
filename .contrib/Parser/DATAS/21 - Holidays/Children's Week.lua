@@ -51,7 +51,7 @@ local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 			["timeline"] = { "added 5.4.0.17169" },
 		}),
 		i(92741, {	-- Flawless Battle-Stone
-			["timeline"] = { "added 5.1.0.16309" },
+			["timeline"] = { ADDED_5_1_0 },
 		}),
 		i(98112, {	-- Lesser Pet Treat
 			["timeline"] = { "added 5.3.0.16758" },

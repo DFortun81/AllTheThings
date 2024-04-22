@@ -59,7 +59,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 4.3.0.15005" },
 			}),
 			i(93669, {	-- Gusting Grimoire (PET!)
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(23713, {	-- Hippogryph Hatchling (PET!)
 				["timeline"] = { ADDED_2_0_1 },
@@ -146,7 +146,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 4.3.2.15211" },
 			}),
 			i(93671, {	-- Ghastly Charger (MOUNT!)
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(46778, {	-- Magic Rooster Egg (MOUNT!) [BoP]
 				["timeline"] = { "added 3.2.0.10026", "removed 3.2.0.10147" },
@@ -241,7 +241,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(93672, {	-- Dark Portal (TOY!)
 				["model"] = 803615,
 				["modelScale"] = 5,
-				["timeline"] = { "added 5.2.0.16408" },
+				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(79769, {	-- Demon Hunter's Aspect (TOY!)
 				["timeline"] = { "added 4.3.2.15211" },
