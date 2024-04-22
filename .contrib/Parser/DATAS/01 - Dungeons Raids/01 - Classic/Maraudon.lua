@@ -5,7 +5,7 @@ MARAUDON_PORTAL = createHeader({
 	readable = "Maraudon Portal",
 	icon = "Interface\\Icons\\spell_arcane_portalironforge",
 	text = {
-		en = [[~GetSpellInfo(21127)]],
+		en = [[~C_Spell.GetSpellInfo(21127)]],
 	},
 });
 FOULSPORE_CAVERN = createHeader({
@@ -13,7 +13,7 @@ FOULSPORE_CAVERN = createHeader({
 	icon = "Interface\\Icons\\INV_Misc_Gem_Opal_01",
 	text = {
 		-- #if AFTER 7.3.0
-		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..GetSpellInfo(251097)..")"]],
+		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..C_Spell.GetSpellInfo(251097)..")"]],
 		-- #else
 		en = [[~DUNGEON_FLOOR_DESOLACE22.." (Orange Path)"]],
 		-- #endif
@@ -24,7 +24,7 @@ WICKED_GROTTO = createHeader({
 	icon = "Interface\\Icons\\INV_Misc_Gem_Amethyst_02",
 	text = {
 		-- #if AFTER 7.3.0
-		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..GetSpellInfo(251095)..")"]],
+		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..C_Spell.GetSpellInfo(251095)..")"]],
 		-- #else
 		en = [[~DUNGEON_FLOOR_DESOLACE21.." (Purple Path)"]],
 		-- #endif

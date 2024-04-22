@@ -7,9 +7,9 @@ local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFie
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
+	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
@@ -27,9 +27,9 @@ local function RefreshSkills()
 			if not header and skillName then
 				local spellID = app.SpellNameToSpellID[skillName];
 				if spellID then
-					local spellName = GetSpellInfo(spellID);
+					local spellName = C_Spell.GetSpellInfo(spellID);
 					for skillID,sp in pairs(app.SkillIDToSpellID) do
-						if GetSpellInfo(sp) == spellName then
+						if C_Spell.GetSpellInfo(sp) == spellName then
 							spellID = sp;
 							break;
 						end
@@ -37,7 +37,7 @@ local function RefreshSkills()
 					activeSkills[spellID] = { skillRank, skillMaxRank };
 				else
 					for skillID,sp in pairs(app.SkillIDToSpellID) do
-						if GetSpellInfo(sp) == skillName then
+						if C_Spell.GetSpellInfo(sp) == skillName then
 							spellID = sp;
 							break;
 						end
@@ -161,9 +161,9 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				if craftSkillID ~= 0 then
-					local spellName = GetSpellInfo(craftSkillID);
+					local spellName = C_Spell.GetSpellInfo(craftSkillID);
 					for skillID,spellID in pairs(app.SkillIDToSpellID) do
-						if GetSpellInfo(spellID) == spellName then
+						if C_Spell.GetSpellInfo(spellID) == spellName then
 							craftSkillID = spellID;
 							break;
 						end
@@ -174,7 +174,7 @@ app:CreateWindow("Tradeskills", {
 						spellID = 0;
 						local craftName, craftSubSpellName, craftType, numAvailable, isExpanded, trainingPointCost, requiredLevel = GetCraftInfo(craftIndex);
 						if craftType == "optimal" or craftType == "medium" or craftType == "easy" or craftType == "trivial" or craftType == "used" or craftType == "none" then
-							spellID = craftSubSpellName and (select(7, GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
+							spellID = craftSubSpellName and (select(7, C_Spell.GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
 							if spellID then
 								if spellID == 44153 then spellID = 44155;	-- Fix the Flying Machine spellID.
 								elseif spellID == 44151 then spellID = 44157;	-- Fix the Turbo Flying Machine spellID.
@@ -220,9 +220,9 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				if tradeSkillID ~= 0 then
-					local spellName = GetSpellInfo(tradeSkillID);
+					local spellName = C_Spell.GetSpellInfo(tradeSkillID);
 					for skillID,spellID in pairs(app.SkillIDToSpellID) do
-						if GetSpellInfo(spellID) == spellName then
+						if C_Spell.GetSpellInfo(spellID) == spellName then
 							tradeSkillID = spellID;
 							break;
 						end
@@ -333,7 +333,7 @@ app:CreateWindow("Tradeskills", {
 					while not self:IsVisible() do
 						coroutine.yield();
 					end
-					
+
 					app.WipeSearchCache();
 					self:CacheRecipes();
 				end);

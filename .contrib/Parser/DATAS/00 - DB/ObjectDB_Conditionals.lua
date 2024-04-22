@@ -3,14 +3,14 @@
 -- Brightly Colored Egg
 local brightlyColoredEgg = ObjectDB[113768];
 brightlyColoredEgg.icon = [[~_.asset("Holiday_noblegarden")]];
-brightlyColoredEgg.text.en = [[~GetSpellInfo(61820)]];
+brightlyColoredEgg.text.en = [[~C_Spell.GetSpellInfo(61820)]];
 
 -- Research Equipment
 local researchEquipment = ObjectDB[161521];
 researchEquipment.icon = [[~_.asset("Icon_PetFamily_Mechanical")]];
 
 -- Spirit of the Wolf
-ObjectDB[226469].text.en = [[~GetSpellInfo(154259)]];
+ObjectDB[226469].text.en = [[~C_Spell.GetSpellInfo(154259)]];
 
 -- Altar of Naias (not in WoWHead's DB)
 ObjectDB[181636] = {

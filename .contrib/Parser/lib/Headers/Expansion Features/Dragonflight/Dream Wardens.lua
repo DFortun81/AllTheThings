@@ -4,6 +4,6 @@ DREAM_WARDENS = createHeader({
 	text = {
 		en = "Dream Wardens",
 		ru = "Стражи Сна",
-		-- en = [[~GetSpellInfo(370340)]],
+		-- en = [[~C_Spell.GetSpellInfo(370340)]],
 	},
 });

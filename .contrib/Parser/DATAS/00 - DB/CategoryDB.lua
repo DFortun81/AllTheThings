@@ -45,42 +45,42 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Way of the Grill",
 		icon = "Interface/Icons/achievement_cooking_masterofthegrill",
 		text = {
-			en = [[~C_Spell.GetSpellInfo(124694)]],
+			en = [[~.C_Spell.GetSpellInfo(124694)]],
 		},
 	},
 	[65] = {
 		readable = "Way of the Wok",
 		icon = "Interface/Icons/achievement_cooking_masterofthewok",
 		text = {
-			en = [[~GetSpellInfo(125584)]],
+			en = [[~C_Spell.GetSpellInfo(125584)]],
 		},
 	},
 	[66] = {
 		readable = "Way of the Pot",
 		icon = "Interface/Icons/achievement_cooking_masterofthepot",
 		text = {
-			en = [[~GetSpellInfo(125586)]],
+			en = [[~C_Spell.GetSpellInfo(125586)]],
 		},
 	},
 	[67] = {
 		readable = "Way of the Steamer",
 		icon = "Interface/Icons/achievement_cooking_masterofthesteamer",
 		text = {
-			en = [[~GetSpellInfo(125587)]],
+			en = [[~C_Spell.GetSpellInfo(125587)]],
 		},
 	},
 	[68] = {
 		readable = "Way of the Oven",
 		icon = "Interface/Icons/achievement_cooking_masteroftheoven",
 		text = {
-			en = [[~GetSpellInfo(125588)]],
+			en = [[~C_Spell.GetSpellInfo(125588)]],
 		},
 	},
 	[69] = {
 		readable = "Way of the Brew",
 		icon = "Interface/Icons/achievement_cooking_masterofthestill",
 		text = {
-			en = [[~GetSpellInfo(125589)]],
+			en = [[~C_Spell.GetSpellInfo(125589)]],
 		},
 	},
 	[70] = {
