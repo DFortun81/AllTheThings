@@ -494,7 +494,7 @@ local QUANTUM_GROUP = sharedData({
 			["modID"] = 6, -- Mythic raid
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 2, -- LFR raid
+			["modID"] = 4, -- LFR raid
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 3, -- Normal raid
