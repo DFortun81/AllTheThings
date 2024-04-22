@@ -9492,6 +9492,8 @@ function app:GetDataCache()
 		total = 0,
 		g = {},
 	}, {
+		-- TODO: yuck all of this... should assign the available functionality during startup events
+		-- and use proper methods
 		__index = function(t, key)
 			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
@@ -9507,7 +9509,7 @@ function app:GetDataCache()
 			elseif key == "modeString" then
 				return app.Settings:GetModeString();
 			elseif key == "untilNextPercentage" then
-				if t.total < 1 then
+				if t.total < 1 and app.CurrentCharacter then
 					local primeData = app.CurrentCharacter.PrimeData;
 					if primeData then
 						return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
