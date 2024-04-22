@@ -359,7 +359,9 @@ CREATED_10_2_7 = "created 10.2.7";						-- Dragonflight 10.2.7 Launch on
 ADDED_10_2_7 = "added 10.2.7";							-- Dragonflight 10.2.7 Launch on
 REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on
 
+REMOVED_PLUNDERSTORM = "removed 10.2.6.60000"			-- PlaceHolder Until we know
 REMOVED_REMIX = "removed 11.0.0";						-- PlaceHolder Until we know
+
 --------------------
 -- THE WAR WITHIN --
 --------------------
