@@ -774,7 +774,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(30710, {	-- Zantasia <Inscription Trainer>
 					["coord"] = { 69.6, 23.6, SILVERMOON_CITY },
-					["timeline"] = { "added 3.0.2.8905" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)

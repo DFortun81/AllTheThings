@@ -392,7 +392,7 @@ root(ROOTS.Zones, {
 			-- #endif
 		})),
 		ach(1833, {	-- It's Happy Hour Somewhere
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(5752, {	-- Justly Rewarded
 			["timeline"] = { ADDED_4_1_0 },
@@ -441,7 +441,7 @@ root(ROOTS.Zones, {
 				},
 			}),
 		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1576, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- Of Blood and Anguish
+		applyclassicphase(WRATH_PHASE_ONE, ach(1576, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Of Blood and Anguish
 			["maps"] = { NAGRAND, ZULDRAK },
 			["groups"] = {
 				crit(5799, {	-- The Champion of Anguish
@@ -452,7 +452,7 @@ root(ROOTS.Zones, {
 				}),
 			},
 		}))),
-		ach(2556, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- Pest Control
+		ach(2556, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Pest Control
 			crit(9364),	-- Larva (Naxxramas, Ghostlands)
 			crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
 			crit(9372),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
@@ -557,7 +557,7 @@ root(ROOTS.Zones, {
 				1262,	-- Loremaster of Outland (A)
 				41,		-- Loremaster of Northrend (A)
 			}},
-			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster <Name>
@@ -571,7 +571,7 @@ root(ROOTS.Zones, {
 				1274,	-- Loremaster of Outland (H)
 				1360,	-- Loremaster of Northrend (H)
 			}},
-			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster <Name>

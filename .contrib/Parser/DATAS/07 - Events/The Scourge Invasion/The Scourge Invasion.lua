@@ -38,7 +38,7 @@ local SCOURGE_INVASION_ONUPDATE = [[function(t)
 	end
 end]];
 -- #else
-local REMOVED_AFTER_WRATH_PREPATCH = "removed 3.0.2";
+local REMOVED_AFTER_WRATH_PREPATCH = REMOVED_3_0_2;
 local BUBBLE_DOWN_FILTER = function(t) return true; end;
 -- #endif
 
@@ -66,7 +66,7 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOU
 					["provider"] = { "i", 22999 },	-- Tabard of the Argent Dawn
 					-- #if BEFORE WRATH
 					["description"] = "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					-- #endif
 				}),
 			}),
@@ -851,7 +851,7 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOU
 						["provider"] = { "i", 38658 },	-- Vampiric Batling Pet
 						-- #if BEFORE WRATH
 						["description"] = "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.",
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, "removed 3.0.2" },
+						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_3_0_2 },
 						-- #else
 						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 						-- #endif

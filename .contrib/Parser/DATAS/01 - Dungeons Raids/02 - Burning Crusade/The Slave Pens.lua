@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10901, {	-- The Cudgel of Kar'desh
 					["qg"] = 22421,	-- Skar'this the Heretic
 					["sourceQuest"] = 10900,	-- The Mark of Vashj
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["maps"] = {
 						KARAZHAN,
 						GRUULS_LAIR,
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22421,	-- Skar'this the Heretic
 					["sourceQuest"] = 10900,	-- The Mark of Vashj
 					["altQuests"] = { 10901 },	-- The Cudgel of Kar'desh
-					["timeline"] = { "added 3.0.2" },
+					["timeline"] = { ADDED_3_0_2 },
 					["maps"] = {
 						KARAZHAN,
 						GRUULS_LAIR,
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["creatureID"] = 17942,
 					["groups"] = {
 						ach(649, {	-- The Slave Pens
-							["timeline"] = { "added 3.0.1" },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 						-- #if AFTER 7.3.5
 						i(27741),	-- Bleeding Hollow Warhammer
@@ -326,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["creatureID"] = 17942,
 						["groups"] = {
 							ach(669, {	-- Heroic: The Slave Pens
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							ach(5069, {	-- Heroic: The Slave Pens Guild Run
 								["timeline"] = { ADDED_4_0_3 },

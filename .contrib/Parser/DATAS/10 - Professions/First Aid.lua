@@ -386,6 +386,6 @@ end]];
 
 -- #if AFTER WRATH
 -- Wrath Recipes
-itemrecipe(39152, 45546, "added 3.0.1.8714", WRATH_PHASE_ONE);	-- Manual: Heavy Frostweave Bandage
+itemrecipe(39152, 45546, ADDED_3_0_2, WRATH_PHASE_ONE);	-- Manual: Heavy Frostweave Bandage
 -- #endif
 -- #endif

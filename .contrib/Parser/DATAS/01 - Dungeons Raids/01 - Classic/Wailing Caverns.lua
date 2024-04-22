@@ -269,7 +269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(ZONE_DROPS, {
 				i(48114, {	-- Deviate Hatchling (PET!)
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["crs"] = {
 						3637,	-- Deviate Guardian
 						3636,	-- Deviate Ravager

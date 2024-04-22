@@ -343,7 +343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["creatureID"] = 17882,
 						["groups"] = {
 							ach(670, {	-- Heroic: Underbog
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							ach(5070, {	-- Heroic: Underbog Guild Run
 								["timeline"] = { ADDED_4_0_3 },

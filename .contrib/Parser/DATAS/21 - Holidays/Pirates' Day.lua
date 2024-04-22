@@ -40,7 +40,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 			},
 			["groups"] = {
 				ach(3457, {	-- The Captain's Booty
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 			},
 		}),
@@ -78,7 +78,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				["coord"] = { 40.0, 72.6, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
 					ach(3457, {	-- The Captain's Booty
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(116392, {	-- Big Bag of Booty
 						["timeline"] = { "added 6.0.2.18816" },

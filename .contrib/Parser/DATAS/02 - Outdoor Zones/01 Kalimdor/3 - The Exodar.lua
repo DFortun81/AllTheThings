@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(14082, {	-- Learn to Ride at the Exodar
 					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0.10958", REMOVED_5_2_0 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(30716, {	-- Thoth <Inscription Trainer>
 					["coord"] = { 40.5, 39.8, THE_EXODAR },
-					["timeline"] = { "added 3.0.2.8905" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)

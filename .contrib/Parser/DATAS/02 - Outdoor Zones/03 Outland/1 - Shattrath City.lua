@@ -609,26 +609,26 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {
 					ach(964, {	-- Going Down?
 						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(906, {	-- Kickin' It Up a Notch
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							crit(5702, {	-- Revenge is Tasty
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11377 },
 							}),
 							crit(5703, {	-- Super Hot Stew
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11379 },
 							}),
 							crit(5704, {	-- Manalicious
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11380 },
 							}),
 							crit(5705, {	-- Soup for the Soul
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11381 },
 							}),
 						},
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, {
 					n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
 						["coord"] = { 56.2, 74.4, SHATTRATH_CITY },
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
-						["timeline"] = { "added 3.1.0.9767" },
+						["timeline"] = { ADDED_3_1_0 },
 						["groups"] = ZURII_YURIAL_GROUPS,
 					}),
 					n(18525, {	-- G'eras
@@ -2182,7 +2182,7 @@ root(ROOTS.Zones, {
 							}),
 							applyclassicphase(WRATH_PHASE_FOUR, i(51809, {	-- Portable Hole
 								["cost"] = 30000000,	-- 3,000g
-								["timeline"] = { "added 3.3.0.10772" },
+								["timeline"] = { ADDED_3_3_0 },
 							})),
 							i(71037, {	-- Black Diamond Ring
 								["cost"] = 35000000,	-- 3,500g
@@ -2794,7 +2794,7 @@ root(ROOTS.Zones, {
 					}),
 					n(33676, {	-- Zurii <Enchanting Trainer>
 						["coord"] = { 36.4, 44.6, SHATTRATH_CITY },
-						["timeline"] = { "added 3.1.0.9767" },
+						["timeline"] = { ADDED_3_1_0 },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = ZURII_YURIAL_GROUPS,
 					}),

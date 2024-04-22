@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				["creatureID"] = 25315,
 				["groups"] = {
 					ach(698, {	-- Sunwell Plateau
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(5092, {	-- Sunwell Plateau Guild Run
 						["timeline"] = { ADDED_4_0_3 },

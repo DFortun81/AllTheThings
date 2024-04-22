@@ -816,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-								["timeline"] = { "removed 2.0.1", "added 3.0.1" },
+								["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
 							}),
 						},
 					}),
@@ -956,13 +956,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					})),
 					applyclassicphase(PHASE_SIX, n(16387, {	-- Atiesh <Hand of Sargeras>
 						["description"] = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
-						["timeline"] = { "removed 3.0.2" },
+						["timeline"] = { REMOVED_3_0_2 },
 						["groups"] = {
 							i(22736, {	-- Andonisus, Reaper of Souls
 								-- #if BEFORE 3.0.2
 								["description"] = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
 								-- #endif
-								["timeline"] = { "removed 3.0.2" },
+								["timeline"] = { REMOVED_3_0_2 },
 								["collectible"] = false,
 							}),
 						},
@@ -1054,7 +1054,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-								["timeline"] = { "removed 2.0.1", "added 3.0.1" },
+								["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
 							}),
 						},
 					}),

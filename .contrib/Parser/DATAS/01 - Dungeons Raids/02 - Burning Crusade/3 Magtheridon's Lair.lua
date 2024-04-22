@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						10886,	-- Trial of the Naaru: Tenacity
 					},
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["groups"] = {
 						objective(1, {	-- Magtheridon slain
 							["provider"] = { "n", 17257 },	-- Magtheridon
@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["timeline"] = { "removed 3.0.1" },
 						}),
 						title(36, {	-- Champion of the Naaru
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 					},
 				}),
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
-					["timeline"] = { "added 3.0.2" },
+					["timeline"] = { ADDED_3_0_2 },
 					["groups"] = {
 						objective(1, {	-- Magtheridon slain
 							["provider"] = { "n", 17257 },	-- Magtheridon

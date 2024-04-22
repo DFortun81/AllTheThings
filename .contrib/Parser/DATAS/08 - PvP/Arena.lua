@@ -4,7 +4,7 @@
 
 root(ROOTS.PVP, pvp(n(ARENA, {	-- Arena
 	n(ACHIEVEMENTS, {
-		ach(876, bubbleDownSelf({ ["timeline"] = { "added 3.0.3" } }, {	-- Brutally Dedicated
+		ach(876, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {	-- Brutally Dedicated
 			i(43349),	-- Tabard of Brute Force
 			ach(875),	-- Vengefully Dedicated
 			ach(398),	-- Mercilessly Dedicated [100]

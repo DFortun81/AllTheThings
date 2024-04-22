@@ -113,7 +113,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
+		expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { CREATED_3_1_0 } }, {
 			cl(DEATHKNIGHT, {
 				i(46232),	-- Darkruned Battleplate
 				i(46233),	-- Darkruned Chestguard
@@ -233,7 +233,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 3.2.0
-		expansion(EXPANSION.WRATH, 2.0, bubbleDown({ ["timeline"] = { "created 3.2.0" } }, {
+		expansion(EXPANSION.WRATH, 2.0, bubbleDown({ ["timeline"] = { CREATED_3_2_0 } }, {
 			cl(DEATHKNIGHT, {
 				i(48880),	-- Koltira's Battleplate of Conquest
 				i(48881),	-- Koltira's Gauntlets of Conquest
@@ -462,7 +462,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 3.3.0
-		expansion(EXPANSION.WRATH, 3.0, bubbleDown({ ["timeline"] = { "created 3.3.0" } }, {
+		expansion(EXPANSION.WRATH, 3.0, bubbleDown({ ["timeline"] = { CREATED_3_3_0 } }, {
 			-- Icecrown Citadel
 			cl(DEATHKNIGHT, {
 				i(51682),	-- Scourgelord Shoulderplates

@@ -553,7 +553,9 @@
         "ATTItemHarvesterTextLeft1",
         "AllTheThingsProfiles",
         "PVP",
-        "INSCRIPTION"
+        "INSCRIPTION",
+        "ARMOR",
+        "BACK"
     ],
     "Lua.diagnostics.disable": [
         "duplicate-index"

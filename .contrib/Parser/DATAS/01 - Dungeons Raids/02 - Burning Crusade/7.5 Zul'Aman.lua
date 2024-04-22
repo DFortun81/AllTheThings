@@ -212,11 +212,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 									-- #if BEFORE WRATH
 									["description"] = "Obtain the Amani War Bear from the final chest in Zul'Aman.",
 									-- #endif
-									["timeline"] = { "removed 3.0.2" },
+									["timeline"] = { REMOVED_3_0_2 },
 									["filterID"] = MOUNTS,
 								}),
 								i(33809, {	-- Amani War Bear (MOUNT!)
-									["timeline"] = { "removed 3.0.2" },
+									["timeline"] = { REMOVED_3_0_2 },
 								}),
 							},
 						}),

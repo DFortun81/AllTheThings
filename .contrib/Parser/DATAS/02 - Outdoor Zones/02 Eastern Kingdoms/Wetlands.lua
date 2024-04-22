@@ -1729,10 +1729,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.9, 29.1, WETLANDS },
 						{ 70.9, 31.3, WETLANDS },
 					},
-					["timeline"] = { "added 3.3.0.10958" },
+					["timeline"] = { ADDED_3_3_0 },
 					["groups"] = {
 						i(48124, {	-- Razormaw Hatchling (PET!)
-							["timeline"] = { "added 3.2.0.10072" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),

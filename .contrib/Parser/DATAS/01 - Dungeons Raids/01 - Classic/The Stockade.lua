@@ -325,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { "added 4.0.1.12984" },
 				["groups"] = {
 					ach(633, {	-- Stormwind Stockade
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(5042, {	-- Stormwind Stockade Guild Run
 						["timeline"] = { ADDED_4_0_3 },

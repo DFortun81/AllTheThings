@@ -713,7 +713,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE 6.0.1.18322
 				["groups"] = {
 					ach(632, {	-- Blackfathom Deeps
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(5041, {	-- Blackfathom Deeps Guild Run
 						["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },

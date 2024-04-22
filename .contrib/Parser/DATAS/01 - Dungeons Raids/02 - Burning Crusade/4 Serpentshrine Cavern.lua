@@ -99,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 21217,
 				["groups"] = {
 					ach(144, {	-- The Lurker Above
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					i(138834, {	-- Illusion: Frostbrand (ILLUSION!)

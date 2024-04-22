@@ -3270,7 +3270,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "removed 3.0.2", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { REMOVED_3_0_2, "added 6.0.1", "removed 7.0.1" },
 		}),
 		i(11302),	-- Uther's Strength
 	}),

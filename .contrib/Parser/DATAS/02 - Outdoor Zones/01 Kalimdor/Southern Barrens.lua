@@ -2065,7 +2065,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
-							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
+							["timeline"] = { ADDED_3_1_0, "deleted 4.3.0.15005" },
 						}),
 					},
 				}),
@@ -2143,7 +2143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
-					["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
+					["timeline"] = { ADDED_3_1_0, "deleted 4.3.0.15005" },
 					["crs"] = {
 						39153,	-- Excavation Raider
 						3376,	-- Bael'dun Soldier

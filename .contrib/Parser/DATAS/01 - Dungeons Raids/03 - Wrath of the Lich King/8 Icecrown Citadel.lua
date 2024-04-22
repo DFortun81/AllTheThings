@@ -58,7 +58,7 @@ THE_FROSTWING_HALLS = createHeader({
 	},
 });
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { "added 3.3.0" } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_3_3_0 } }, {
 	inst(758, {	-- Icecrown Citadel
 		["mapID"] = ICECROWN_CITADEL,
 		["maps"] = {
@@ -95,7 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						4580,	-- All You Can Eat (10 player)
 						4601,	-- Been Waiting a Long Time for This (10 player)
 					}},
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["groups"] = {
 						i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
 					},
@@ -121,7 +121,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						4621,	-- Been Waiting a Long Time for This (25 player)
 						4622,	-- Neck-Deep in Vile (25 player)
 					}},
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["groups"] = {
 						i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
 					},

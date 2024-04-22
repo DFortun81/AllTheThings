@@ -48,27 +48,27 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 					}),
 					ach(905, {	-- Old Man Barlowned
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							crit(5706, {	-- Crocolisks in the City
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11665 },
 							}),
 							crit(5707, {	-- Bait Bandits
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11666 },
 							}),
 							crit(5708, {	-- Felblood Fillet
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11669 },
 							}),
 							crit(5709, {	-- The One That Got Away
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11667 },
 							}),
 							crit(5710, {	-- Shrimpin' Ain't Easy
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11668 },
 							}),
 						},
@@ -344,14 +344,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3869,	-- Highland Mixed School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3627,	-- Highland Mixed School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -372,14 +372,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3868,	-- School of Darter
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3628,	-- School of Darter
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -520,7 +520,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							ach(1275, {	-- Bombs Away
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 						},
 					})),

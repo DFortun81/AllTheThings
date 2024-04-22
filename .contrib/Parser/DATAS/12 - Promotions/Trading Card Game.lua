@@ -24,16 +24,16 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 	["groups"] = {
 		filter(BATTLE_PETS, {
 			i(50301, {	-- Landro's Pet Box [TODO: SYMLINK]
-				["timeline"] = { "added 3.3.0.10958" },
+				["timeline"] = { ADDED_3_3_0 },
 				["groups"] = {
 					i(46779, {	-- Path of Cenarius
-						["timeline"] = { "added 3.2.0.10026" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(35223, {	-- Papa Hummel's Old-Fashioned Pet Biscuit
 						["timeline"] = { "added 2.4.0.8031" },
 					}),
 					i(45047, {	-- Sandbox Tiger
-						["timeline"] = { "added 3.1.0.9626" },
+						["timeline"] = { ADDED_3_1_0 },
 					}),
 					i(32588, {	-- Bananas (PET!)
 						["timeline"] = { "added 2.0.1.6180" },
@@ -109,10 +109,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				},
 			}),
 			i(49343, {	-- Spectral Tiger Cub (PET!)
-				["timeline"] = { "added 3.2.2.10468" },
+				["timeline"] = { ADDED_3_2_2 },
 			}),
 			i(49287, {	-- Tuskarr Kite (PET!)
-				["timeline"] = { "added 3.2.2.10468" },
+				["timeline"] = { ADDED_3_2_2 },
 			}),
 		}),
 		filter(MISC, {
@@ -131,10 +131,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 2.4.2.8301", "removed 3.2.0.10147" },
 			}),
 			i(49282, {	-- Big Battle Bear (MOUNT!) BOE
-				["timeline"] = { "added 3.2.0.10147" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(54069, {	-- Blazing Hippogryph (MOUNT!)
-				["timeline"] = { "added 3.3.3.11723", "removed 4.3.0.15005" },
+				["timeline"] = { ADDED_3_3_3, "removed 4.3.0.15005" },
 			}),
 			i(74269, {	-- Blazing Hippogryph (MOUNT!)
 				["timeline"] = { "added 4.3.0.15005" },
@@ -149,10 +149,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(46778, {	-- Magic Rooster Egg (MOUNT!) [BoP]
-				["timeline"] = { "added 3.2.0.10026", "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_3_2_0, "removed 3.2.0.10147" },
 			}),
 			i(49290, {	-- Magic Rooster Egg (MOUNT!) [BoE]
-				["timeline"] = { "added 3.2.0.10147" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(68008, {	-- Mottled Drake (MOUNT!)
 				["timeline"] = { ADDED_4_0_3 },
@@ -161,13 +161,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
 			}),
 			i(49283, {	-- Spectral Tiger (MOUNT!) BOE
-				["timeline"] = { "added 3.2.0.10147" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(33225, {	-- Swift Spectral Tiger (MOUNT!) BOP
 				["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
 			}),
 			i(49284, {	-- Swift Spectral Tiger (MOUNT!) BOE
-				["timeline"] = { "added 3.2.0.10147" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(23720, {	-- Riding Turtle (MOUNT!)
 				["timeline"] = { "added 2.0.0.5462" },
@@ -182,26 +182,26 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 4.3.0.15005" },
 			}),
 			i(54068, {	-- Wooly White Rhino (MOUNT!)
-				["timeline"] = { "added 3.3.5.12340" },
+				["timeline"] = { ADDED_3_3_5 },
 			}),
 			i(35225, {	-- X-51 Nether-Rocket (MOUNT!) BOP
 				["timeline"] = { "added 2.4.0.7923", "removed 3.2.0" },
 			}),
 			i(49285, {	-- X-51 Nether-Rocket (MOUNT!) BOE
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOP
 				["timeline"] = { "added 2.4.0.7923", "removed 3.2.0" },
 			}),
 			i(49286, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOE
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 		}),
 		filter(SHIRTS, {
-			["timeline"] = { "added 3.1.0.9626" },
+			["timeline"] = { ADDED_3_1_0 },
 			["groups"] = {
 				i(45037, {	-- Epic Purple Shirt
-					["timeline"] = { "added 3.1.0.9626" },
+					["timeline"] = { ADDED_3_1_0 },
 				}),
 			}
 		}),
@@ -236,7 +236,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 2.2.3" },
 			}),
 			i(49704, {	-- Carved Ogre Idol (TOY!)
-				["timeline"] = { "added 3.2.2.10468" },
+				["timeline"] = { ADDED_3_2_2 },
 			}),
 			i(93672, {	-- Dark Portal (TOY!)
 				["model"] = 803615,
@@ -252,14 +252,14 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 2.4.2.8301" },
 			}),
 			i(54452, {	-- Ethereal Portal (TOY!)
-				["timeline"] = { "added 3.3.5.12340" },
+				["timeline"] = { ADDED_3_3_5 },
 			}),
 			i(33223, {	-- Fishing Chair (TOY!)
 				["timeline"] = { "added 2.2.0.7091" },
 			}),
 			i(45063, {	-- Foam Sword Rack (TOY!)
 				["model"] = 253206,
-				["timeline"] = { "added 3.1.0.9626" },
+				["timeline"] = { ADDED_3_1_0 },
 				["groups"] = {
 					i(45061, {	-- Foam Sword
 						["collectible"] = false,
@@ -295,7 +295,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 2.1.0.6692" },
 			}),
 			i(54212, {	-- Instant Statue Pedestal (TOY!)
-				["timeline"] = { "added 3.3.3.11723" },
+				["timeline"] = { ADDED_3_3_3 },
 			}),
 			i(72159, {	-- Magical Ogre Idol (TOY!)
 				["timeline"] = { "added 4.3.0.15005" },
@@ -303,7 +303,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(46780, {	-- Ogre Pinata (TOY!)
 				["model"] = 306851,	-- Candypile = 306864
 				["modelScale"] = 9,
-				["timeline"] = { "added 3.2.0.10026" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(34499, {	-- Paper Flying Machine Kit (TOY!)
 				["timeline"] = { "added 2.3.0.7561" },
@@ -312,7 +312,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 2.2.3" },
 			}),
 			i(49703, {	-- Perpetual Purple Firework (TOY!)
-				["timeline"] = { "added 3.2.2.10468" },
+				["timeline"] = { ADDED_3_2_2 },
 			}),
 			i(32566, {	-- Picnic Basket (TOY!)
 				["timeline"] = { "added 2.1.0.6692" },

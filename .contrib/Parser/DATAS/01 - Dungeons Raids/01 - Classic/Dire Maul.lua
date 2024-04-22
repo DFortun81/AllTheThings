@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				ach(644, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- King of Dire Maul
+				ach(644, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- King of Dire Maul
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
 					["groups"] = {
 						crit(545, {	-- Alzzin the Wildshaper

@@ -114,16 +114,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 4.0.1.12984" },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
 								["timeline"] = { "added 2.4.0.7897" },
 							}),
 							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
 								["timeline"] = { "added 4.0.1.12984" },
@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5676,	-- Arcane Feedback [Stormwind City]
 						5678,	-- Arcane Feedback [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5672,	-- Elune's Grace [Darnassus]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 20,
@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5638,	-- Desperate Prayer [Stormwind City #2]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,
@@ -858,7 +858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.6, 89.6, STORMWIND_CITY },
 						{ 32.3, 23.9, THE_EXODAR },
 					},
-					["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 5178, 1 },	-- Air Totem
 						{ "i", 5175, 1 },	-- Earth Totem
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(46978, {	-- Totem of the Earthen Ring
-							["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -923,7 +923,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5631,	-- Returning Home [Stormwind City]
 						5632,	-- Returning Home [Stormwind City]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -975,7 +975,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 3639, 3643 },	-- Show Your Work
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 69.8, 50.2, IRONFORGE },
-					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -1075,7 +1075,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 3638, 3642 },	-- The Pledge of Secrecy
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 69.8, 50.2, IRONFORGE },
-					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1435,7 +1435,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45577, {	-- Ironforge Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64900, {	-- Mantle of Ironforge
 							["timeline"] = { ADDED_4_0_3 },
@@ -1873,7 +1873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45578, {	-- Gnomeregan Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64895, {	-- Mantle of Gnomeregan
 							["timeline"] = { ADDED_4_0_3 },

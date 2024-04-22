@@ -340,26 +340,26 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182959 },	-- Bluefish School
 						["criteriaID"] = 3866,	-- Bluefish School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182958 },	-- Mudfish School
 						["criteriaID"] = 3867,	-- Mudfish School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182959 },	-- Bluefish School
 						["criteriaID"] = 3624,	-- Bluefish School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182958 },	-- Mudfish School
 						["criteriaID"] = 3625,	-- Mudfish School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif

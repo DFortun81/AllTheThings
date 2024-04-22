@@ -292,13 +292,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 						}),
 						i(37244, {	-- Fungi-Coated Boots
-							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
+							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 							-- #if AFTER 8.0.1
 							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 							-- #endif
 						}),
 						i(37245, {	-- Tangled Web Bindings
-							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
+							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 							-- #if AFTER 8.0.1
 							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 							-- #endif
@@ -307,7 +307,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 						}),
 					}),
 					-- #endif

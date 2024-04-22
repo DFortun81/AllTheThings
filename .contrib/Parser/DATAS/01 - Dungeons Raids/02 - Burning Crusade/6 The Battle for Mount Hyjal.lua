@@ -1057,7 +1057,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				["creatureID"] = 17968,
 				["groups"] = {
 					ach(695, {	-- The Battle for Mount Hyjal
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(5090, {	-- The Battle for Mount Hyjal Guild Run
 						["timeline"] = { ADDED_4_0_3 },

@@ -3,7 +3,7 @@
 -- You should probably ignore this file. :D
 root("Skills", {
 	cl(WARLOCK, {
-		n(DEMON_TRAINER, bubbleDown({ ["timeline"] = { "removed 3.0.2" } }, {
+		n(DEMON_TRAINER, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {
 			["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY, UNDERCITY, ORGRIMMAR },
 			["classes"] = { WARLOCK },
 			["crs"] = {

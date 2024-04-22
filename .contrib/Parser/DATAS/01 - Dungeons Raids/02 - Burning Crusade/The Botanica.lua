@@ -271,7 +271,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["creatureID"] = 17977,
 						["groups"] = {
 							ach(680, {	-- Heroic: The Botanica
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							ach(5080, {	-- Heroic: The Botanica Guild Run
 								["timeline"] = { ADDED_4_0_3 },

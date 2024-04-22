@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["creatureID"] = 17881,
 						["groups"] = {
 							ach(676, {	-- Heroic: Opening of the Dark Portal
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
 								["timeline"] = { ADDED_4_0_3 },

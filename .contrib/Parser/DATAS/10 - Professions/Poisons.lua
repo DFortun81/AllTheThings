@@ -1,6 +1,6 @@
 -- #if BEFORE 3.0.2
 profession(POISONS, {
-	["timeline"] = { "removed 3.0.2" },
+	["timeline"] = { REMOVED_3_0_2 },
 	["classes"] = { ROGUE },
 	["groups"] = {
 		{

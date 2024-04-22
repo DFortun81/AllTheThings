@@ -13,7 +13,7 @@ BLIZZCON = createHeader({
 root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(411, {	-- Blizzcon 2005 - Murky
 		["provider"] = { "i", 20371 },	-- Murky (PET!)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(20371, {	-- Murky (PET!)
 		["timeline"] = { "added 1.11.1.6692" },
@@ -21,7 +21,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	ach(412, {	-- Blizzcon 2007 - Murloc Costume
 		["provider"] = { "i", 33079 },	-- Murloc Costume (TOY!)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(33079, {	-- Murloc Costume (TOY!)
 		["timeline"] = { "added 2.1.3.6898" },
@@ -29,18 +29,18 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	ach(415, {	-- Blizzcon 2008 - Big Blizzard Bear
 		["provider"] = { "i", 43599 },	-- Big Blizzard Bear (MOUNT!)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(43599, {	-- Big Blizzard Bear (MOUNT!)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 
 	ach(3536, {	-- Blizzcon 2009 - The Marine Marine
 		["provider"] = { "i", 46802 },	-- Grunty (PET!)
-		["timeline"] = { "added 3.2.0.10314" },
+		["timeline"] = { ADDED_3_2_0 },
 	}),
 	i(46802, {	-- Grunty (PET!)
-		["timeline"] = { "added 3.2.0.10314" },
+		["timeline"] = { ADDED_3_2_0 },
 	}),
 
 	ach(5378, {	-- Blizzcon 2010 - Deathy

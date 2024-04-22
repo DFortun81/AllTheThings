@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						title(111, {	-- Bloodsail Admiral <Name>
-							["timeline"] = { "added 3.0.1" },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 					},
 				})),
@@ -1511,7 +1511,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,

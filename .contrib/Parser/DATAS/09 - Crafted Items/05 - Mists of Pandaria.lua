@@ -681,18 +681,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		spell(165467, {	-- Research: Ink of Dreams
-			r(64258, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
+			r(64258, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 		}),
 		-- #endif
 		filter(GLYPHS, {
 		-- #if AFTER WOD
-			i(43350, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
-			i(43359, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
-			i(43331, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
-			i(42964, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Garrote
-			i(40916, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
-			i(42744, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Block
-			i(45622, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
+			i(43350, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
+			i(43359, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+			i(43331, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
+			i(42964, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Garrote
+			i(40916, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
+			i(42744, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Ice Block
+			i(45622, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 			-- #endif
 		}),
 		category(106, {	-- Tarot Cards

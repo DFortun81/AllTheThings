@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						["sourceQuest"] = 10143,	-- Expedition Point
 						["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
-						["timeline"] = { "added 3.3.0.10958" },
+						["timeline"] = { ADDED_3_3_0 },
 						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(55, 55, 10),
@@ -1486,7 +1486,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						["sourceQuest"] = 10143,	-- Expedition Point
 						["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
-						["timeline"] = { "added 3.3.0.10958" },
+						["timeline"] = { ADDED_3_3_0 },
 						["classes"] = { DEATHKNIGHT },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
@@ -1537,7 +1537,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18267,	-- Battlecryer Blackeye
 						-- ["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Not required, Discord 2023-07-29]
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
-						["timeline"] = { "added 3.3.0.10958" },
+						["timeline"] = { ADDED_3_3_0 },
 						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(55, 55, 10),
@@ -1558,7 +1558,7 @@ root(ROOTS.Zones, {
 					q(13411, {	-- Hellfire Fortifications [Horde, Death Knight Only]
 						["qg"] = 18267,	-- Battlecryer Blackeye
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
-						["timeline"] = { "added 3.3.0.10958" },
+						["timeline"] = { ADDED_3_3_0 },
 						["classes"] = { DEATHKNIGHT },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(55, 55, 10),
@@ -3155,7 +3155,7 @@ root(ROOTS.Zones, {
 					-- #if AFTER WRATH
 					n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
 						["coord"] = { 54.2, 41.6, HELLFIRE_PENINSULA },
-						["timeline"] = { "added 3.2.0.10192" },
+						["timeline"] = { ADDED_3_2_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25475),	-- Blue Wind Rider (MOUNT!)
@@ -3247,7 +3247,7 @@ root(ROOTS.Zones, {
 					-- #if AFTER WRATH
 					n(35101, {	-- Grunda Bronzewing <Gryphon Keeper>
 						["coord"] = { 54.2, 62.6, HELLFIRE_PENINSULA },
-						["timeline"] = { "added 3.2.0.10192" },
+						["timeline"] = { ADDED_3_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25471),	-- Ebon Gryphon (MOUNT!)

@@ -228,7 +228,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				303,				-- Have Keg, Will Travel
 				1936,				-- Does Your Wolpertinger Linger?
 			}},
-			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(101),				-- Brewmaster
@@ -246,7 +246,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				303,				-- Have Keg, Will Travel
 				1936,				-- Does Your Wolpertinger Linger?
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			-- #if BEFORE MOP
 			["races"] = HORDE_ONLY,
 			-- #endif
@@ -266,7 +266,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		}),
 		-- #if AFTER MOP
 		ach(1260, {	-- Almost Blind Luck [MOP+] / Drunken Stupor
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { SHATTRATH_CITY },
 		}),
 		-- #endif
@@ -279,9 +279,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (newer)
 				{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (newer)
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(1183, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Brew of the Year
+		ach(1183, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Brew of the Year
 			crit(3526, {	-- Aromatic Honey Brew
 				["provider"] = { "i", 37490 },	-- Aromatic Honey Brew
 			}),
@@ -330,7 +330,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				{ "i", 33868 },	-- Brewfest Boots
 				{ "i", 33966 },	-- Brewfest Slippers
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
 		ach(1936, {	-- Does Your Wolpertinger Linger?
@@ -339,13 +339,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		}),
 		-- #if BEFORE MOP
 		ach(1260, {	-- Drunken Stupor / Almost Blind Luck [MOP+]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { SHATTRATH_CITY },
 		}),
 		-- #endif
 		ach(4782, {	-- Green Brewfest Stein [Removed]
 			["provider"] = { "i", 37892 },	-- Green Brewfest Stein
-			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 		}),
 		ach(303, {	-- Have Keg, Will Travel
 			["providers"] = {
@@ -361,7 +361,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 			["timeline"] = { "added 2.0.1" },
 		}),
-		ach(1184, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Strange Brew (A)
+		ach(1184, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Strange Brew (A)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				crit(8885, {	-- Barleybrew Clear
@@ -393,7 +393,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 			},
 		})),
-		ach(1203, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Strange Brew (H)
+		ach(1203, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Strange Brew (H)
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				crit(8889, {	-- Brewdoo Magic
@@ -425,7 +425,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 			},
 		})),
-		ach(1185, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- The Brewfest Diet
+		ach(1185, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- The Brewfest Diet
 			-- #if ANYCLASSIC
 			crit(3542, {	-- Dried Sausage
 				["provider"] = { "i", 34063 }	-- Dried Sausage
@@ -507,7 +507,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #endif
 		["groups"] = {
 			ach(295, {	-- Direbrewfest
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
 				-- #if AFTER 10.0.5
@@ -557,7 +557,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 			}),
 			i(54535, {	-- Keg-Shaped Treasure Chest
-				["timeline"] = { "added 3.0.1", "removed 6.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.1" },
 				["groups"] = {
 					i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 						["timeline"] = { "added 2.0.1" },
@@ -578,10 +578,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 					}),
 					i(49120, {	-- Direbrew's Bloody Shanker [Level 80]
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 					}),
 					i(48663, {	-- Tankard O' Terror [Level 80]
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 					}),
 					i(37863, {	-- Direbrew's Remote
 						["timeline"] = { "added 2.0.1" },
@@ -658,22 +658,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			-- Wrath of the Lich King
 			i(49078, {	-- Ancient Pickled Egg [Level 80]
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 			}),
 			i(49116, {	-- Bitter Balebrew Charm [Level 80]
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 			}),
 			i(49080, {	-- Brawler's Souvenir [Level 80]
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 			}),
 			i(49118, {	-- Bubbling Brightbrew Charm [Level 80]
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 			}),
 			i(49074, {	-- Coren's Chromium Coaster [Level 80]
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 			}),
 			i(49076, {	-- Mithril Pocketwatch [Level 80]
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 			}),
 			-- Burning Crusade
 			i(37597, {	-- Direbrew's Shanker [Level 70]
@@ -773,7 +773,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #if BEFORE WRATH
 				["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 				-- #endif
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -781,7 +781,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(37892, {	-- Green Brewfest Stein
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 					}),
 				},
 			}),
@@ -796,7 +796,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #if BEFORE WRATH
 				["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 				-- #endif
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -804,7 +804,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(37892, {	-- Green Brewfest Stein
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 					}),
 				},
 			}),
@@ -1256,7 +1256,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 48.0, 39.5, DUN_MOROGH },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", "added 3.0.1" },
+				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { "added 2.2.2" },
 				-- #endif
@@ -1274,7 +1274,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cr"] = 23487,	-- Wild Wolpertinger
 					}),
 					i(46735, {	-- Synthebrew Goggles
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(32233, {	-- Wolpertinger (PET!)
 						["timeline"] = { "added 2.2.2" },
@@ -1289,7 +1289,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 45.0, 17.4, DUROTAR },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", "added 3.0.1" },
+				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { "added 2.2.2" },
 				-- #endif
@@ -1307,7 +1307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cr"] = 23487,	-- Wild Wolpertinger
 					}),
 					i(46735, {	-- Synthebrew Goggles
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(32233, {	-- Wolpertinger (PET!)
 						["timeline"] = { "added 2.2.2" },
@@ -1552,7 +1552,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 48.0, 39.5, DUN_MOROGH },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", "added 3.0.1" },
+				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { "added 2.2.2" },
 				-- #endif
@@ -1576,7 +1576,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cr"] = 23527,	-- Teldrassil Pink Elekk
 					}),
 					i(46735, {	-- Synthebrew Goggles
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 				}),
 			}),
@@ -1588,7 +1588,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 45.0, 17.4, DUROTAR },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", "added 3.0.1" },
+				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { "added 2.2.2" },
 				-- #endif
@@ -1612,7 +1612,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cr"] = 23530,	-- Tirisfal Pink Elekk
 					}),
 					i(46735, {	-- Synthebrew Goggles
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 				}),
 			}),
@@ -1753,7 +1753,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isDaily"] = true,
 				["groups"] = appendGroups(BREWFEST_TOKEN, {
 					ach(1186, {	-- Down With The Dark Iron
-						["timeline"] = { "added 3.0.1", "removed 8.2.0" },
+						["timeline"] = { ADDED_3_0_2, "removed 8.2.0" },
 					}),
 				}),
 			}),
@@ -1769,7 +1769,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isDaily"] = true,
 				["groups"] = appendGroups(BREWFEST_TOKEN, {
 					ach(1186, {	-- Down With The Dark Iron
-						["timeline"] = { "added 3.0.1", "removed 8.2.0" },
+						["timeline"] = { ADDED_3_0_2, "removed 8.2.0" },
 					}),
 				}),
 			}),
@@ -1876,7 +1876,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			},
 		}),
 		-- #if AFTER TRANSMOG
-		i(37892, bubbleDown({ ["timeline"] = { "added 3.0.1", "removed 4.0.1" } }, {	-- Green Brewfest Stein
+		i(37892, bubbleDown({ ["timeline"] = { ADDED_3_0_2, "removed 4.0.1" } }, {	-- Green Brewfest Stein
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
 			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
 			["groups"] = {
@@ -1890,7 +1890,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #else
 		i(37892, {	-- Green Brewfest Stein
 			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
-			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 			["groups"] = {
 				i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear - Alliance]
 				i(37894),	-- Filled Green Brewfest Stein [Thunder 45 - Alliance]
@@ -1990,7 +1990,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 2.2.2" },
 					}),
 					i(46400, {	-- Barleybrew Gold
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(33028, {	-- Barleybrew Light
 						["timeline"] = { "added 2.2.2" },
@@ -2035,7 +2035,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(37571, {	-- "Brew of the Month" Club Membership Form (current)
-						["timeline"] = { "created 2.2.2", "added 3.0.0" },	-- NOTE: Not used in 2007
+						["timeline"] = { "created 2.2.2", ADDED_3_0_2 },	-- NOTE: Not used in 2007
 						["cost"] = BREWFEST_TOKEN_COST(200),
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -2114,7 +2114,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = BREWFEST_TOKEN_COST(100),
 					}),
 					i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 						["cost"] = BREWFEST_TOKEN_COST(100),
 					}),
 					i(37816, {	-- Preserved Brewfest Hops
@@ -2221,7 +2221,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(37599, {	-- "Brew of the Month" Club Membership Form (current)
-						["timeline"] = { "created 2.2.2", "added 3.0.0" },	-- NOTE: Not used in 2007
+						["timeline"] = { "created 2.2.2", ADDED_3_0_2 },	-- NOTE: Not used in 2007
 						["cost"] = BREWFEST_TOKEN_COST(200),
 						["races"] = HORDE_ONLY,
 					}),
@@ -2300,7 +2300,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = BREWFEST_TOKEN_COST(100),
 					}),
 					i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 						["cost"] = BREWFEST_TOKEN_COST(100),
 					}),
 					i(37816, {	-- Preserved Brewfest Hops
@@ -2378,7 +2378,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 2.2.2" },
 					}),
 					i(46402, {	-- Promise of the Pandaren
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(34017, {	-- Small Step Brew
 						["timeline"] = { "added 2.2.2" },
@@ -2409,7 +2409,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["timeline"] = { "added 2.2.2" },
 				["groups"] = {
 					i(46403, {	-- Chuganpug's Delight
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(138869, {	-- Gordok Bock
 						["timeline"] = { "added 7.0.3.22248" },
@@ -2491,7 +2491,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 2.2.2" },
 					}),
 					i(46401, {	-- Crimson Stripe
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(34020, {	-- Jungle River Water
 						["timeline"] = { "added 2.2.2" },
@@ -2516,7 +2516,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 2.2.2" },
 					}),
 					i(46399, {	-- Thunder's Plunder
-						["timeline"] = { "added 3.2.0.10314" },
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(33032, {	-- Thunderbrew Ale
 						["timeline"] = { "added 2.2.2" },

@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5676,	-- Arcane Feedback [Stormwind City]
 						5677,	-- Arcane Feedback [Ironforge]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5638,	-- Desperate Prayer [Stormwind City #2]
 						5639,	-- Desperate Prayer [Ironforge]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5675,	-- Elune's Grace [Ironforge]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 20,
@@ -423,7 +423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5675,	-- Elune's Grace [Ironforge]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 20,
@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14085, {	-- Learn to Ride in Darnassus
 					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0.10958", REMOVED_5_2_0 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -775,7 +775,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5632,	-- Returning Home [Stormwind City]
 						-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -801,7 +801,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -1437,7 +1437,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
 						i(47100, {	-- Striped Dawnsaber (MOUNT!)
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 						i(8629),	-- Striped Nightsaber (MOUNT!)
 						i(8631),	-- Striped Frostsaber (MOUNT!)
@@ -1563,7 +1563,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(45579, {	-- Darnassus Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64887, {	-- Cape of Darnassus
 							["timeline"] = { ADDED_4_0_3 },

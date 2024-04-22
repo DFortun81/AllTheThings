@@ -1719,7 +1719,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_3_1_0 },
 						}),
 						i(49192, {	-- Horde Trauma Certification
-							["timeline"] = { "added 3.2.0.10192" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -2018,10 +2018,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { "created 1.11.1", "added 3.0.1", REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
+							["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { "created 1.11.1", "added 3.0.1", REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
+							["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
 						}),
 					},
 				}),

@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
 					["sourceQuest"] = 14352,	-- An Unholy Alliance (1/2) (After Wrathgate)
 					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,

@@ -966,7 +966,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			},
 			applyclassicphase(WRATH_PHASE_ONE, {
 				["name"] = "Amulet of Truesight",
-				["timeline"] = { "added 3.1.0.9614" },
+				["timeline"] = { ADDED_3_1_0 },
 				["recipeID"] = 63743
 			}),
 			{
@@ -2174,7 +2174,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				applyclassicphase(WRATH_PHASE_ONE, {
 					["name"] = "Prismatic Black Diamond",
-					["timeline"] = { "added 3.1.0.9626" },
+					["timeline"] = { ADDED_3_1_0 },
 					["recipeID"] = 62941
 				}),
 			}

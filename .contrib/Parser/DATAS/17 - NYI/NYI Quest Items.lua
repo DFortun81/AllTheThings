@@ -15,7 +15,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
+		expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { CREATED_3_1_0 } }, {
 			i(42147),	-- Force Reaction Frost Giants
 			i(40796),	-- Force Reaction Frost Vrykul
 		})),

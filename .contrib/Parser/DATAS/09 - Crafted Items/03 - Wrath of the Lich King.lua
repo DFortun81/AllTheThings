@@ -495,7 +495,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- #if BEFORE 4.0.1
 			i(40727, {	-- Personal Ejector Seat / Gnomish Gravity Well (TOY!)
 				["description"] = "This later becomes the Gnomish Gravity Well toy.",
-				["timeline"] = { "created 3.3.0", "added 4.0.1" },
+				["timeline"] = { CREATED_3_3_0, "added 4.0.1" },
 			}),
 			-- #endif
 			i(48933),	-- Wormhole Generator: Northrend (TOY!)
@@ -627,10 +627,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		filter(GLYPHS, {
-			i(42736, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
-			i(42898, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+			i(42736, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Arcane Explosion
+			i(42898, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
-				["timeline"]={ "added 3.0.2" },
+				["timeline"]={ ADDED_3_0_2 },
 			}),
 
 			i(167539, {["timeline"] = {ADDED_8_1_5}}),	-- Glyph of Dalaran Brilliance

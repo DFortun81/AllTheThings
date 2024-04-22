@@ -219,7 +219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["creatureID"] = 17377,
 					["groups"] = {
 						ach(648, {	-- The Blood Furnace
-							["timeline"] = { "added 3.0.1" },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 						i(24394),	-- Warsong Howling Axe
 						-- #if AFTER 7.3.5
@@ -334,7 +334,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["creatureID"] = 17377,
 						["groups"] = {
 							ach(668, {	-- Heroic: The Blood Furnace
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							ach(5068, {	-- Heroic: The Blood Furnace Guild Run
 								["timeline"] = { ADDED_4_0_3 },

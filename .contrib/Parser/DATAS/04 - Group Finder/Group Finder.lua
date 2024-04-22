@@ -70,7 +70,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51963),			-- Vigorous Stompers			— 01/16/22
 			},
 		}),
-		i(51999, bubbleDownSelf({ ["timeline"] = { "added 3.3.0.10805", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 15-25
+		i(51999, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 15-25
 			["description"] = "Rewarded for completing a random dungeon in the level 15-25 range.",
 			["groups"] = {
 				i(51994),	-- Tumultuous Cloak [INT]
@@ -85,7 +85,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51964),	-- Vigorous Belt
 			},
 		})),
-		i(52000, bubbleDownSelf({ ["timeline"] = { "added 3.3.0.10805", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 26-35
+		i(52000, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 26-35
 			["description"] = "Rewarded for completing a random dungeon in the level 26-35 range.",
 			["groups"] = {
 				i(51996),	-- Tumultuous Necklace
@@ -93,7 +93,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					["timeline"] = { "added 7.1.0.22731", "removed 7.3.5.25600" },
 				}),
 				i(51980, {	-- Earthbound Handgrips
-					["timeline"] = { "added 3.3.0.10805", "removed 7.1.0.22731" },
+					["timeline"] = { ADDED_3_3_0, "removed 7.1.0.22731" },
 				}),
 				i(51973),	-- Enumerated Handwraps
 				i(51965),	-- Vigorous Handguards
@@ -133,7 +133,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51992),	-- Tumultuous Ring
 			},
 		})),
-		i(52001, bubbleDownSelf({ ["timeline"] = { "added 3.3.0.10805", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
+		i(52001, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
 			-- #if AFTER CATA
 			["description"] = "Rewarded for completing a random dungeon in the level 40-45 range.",
 			-- #else
@@ -147,7 +147,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51992),	-- Tumultuous Ring
 			},
 		})),
-		i(52002, bubbleDownSelf({ ["timeline"] = { "added 3.3.0.10805", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 46-55
+		i(52002, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 46-55
 			["description"] = "Rewarded for completing a random dungeon in the level 46-55 range.",
 			["groups"] = {
 				i(51982),	-- Earthbound Boots
@@ -160,7 +160,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51963),	-- Vigorous Stompers
 			},
 		})),
-		i(52003, bubbleDownSelf({ ["timeline"] = { "added 3.3.0.10805", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 56-60
+		i(52003, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 56-60
 			["description"] = "Rewarded for completing a random dungeon in the level 56-60 range.",
 			["groups"] = {
 				i(51993),	-- Turbulent Cloak
@@ -223,7 +223,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 			},
 		}),
-		i(52004, bubbleDownSelf({ ["timeline"] = { "added 3.3.0.10805", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 60-64
+		i(52004, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 60-64
 			["description"] = "Rewarded for completing a random dungeon in the level 60-64 range.",
 			["groups"] = {
 				i(51995),	-- Turbulent Necklace
@@ -233,7 +233,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51960),	-- Vigorous Gloves
 			},
 		})),
-		i(52005, bubbleDownSelf({ ["timeline"] = { "added 3.3.0.10805", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 65-70
+		i(52005, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 65-70
 			["description"] = "Rewarded for completing a random dungeon in the level 65-70 range.",
 			["groups"] = {
 				i(51991),	-- Turbulent Signet

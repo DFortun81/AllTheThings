@@ -92,7 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This version of the quest is given to players that have completed the wrath gate.",
 					-- #endif
 					-- #endif
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
@@ -506,7 +506,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { REMOVED_4_0_3  },
 					}),
 					i(49205, {	-- Small Scroll (After Wrathgate?)
-						["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					}),
 					i(6692),	-- Pronged Reaver
 					i(6694),	-- Heart of Agamaggan

@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(14355, {	-- Into The Scarlet Monastery
 						["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
 						["coord"] = { 56.1, 92.1, UNDERCITY },
-						["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						-- #if AFTER TBC
 						["lvl"] = 30,

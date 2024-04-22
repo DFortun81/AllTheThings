@@ -38,7 +38,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 		ach(4316, {	-- 2500 Dungeon & Raid Emblems
 			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Champion of the Frozen Wastes
+		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Champion of the Frozen Wastes
 			title(97),	-- , Champion of the Frozen Wastes
 			crit(5888, {	-- Kel'Thuzad (10 or 25 player) slain
 				["_encounter"] = { 1615, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, 1615, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },

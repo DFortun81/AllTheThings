@@ -64,17 +64,17 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, 0.1, bubbleDown({ ["timeline"] = { "created 3.0.1" } }, {
+		expansion(EXPANSION.WRATH, 0.1, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
 			i(41596),	-- Dalaran Jewelcrafter's Token
 		})),
 
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, 0.2, bubbleDown({ ["timeline"] = { "created 3.0.2" } }, {
+		expansion(EXPANSION.WRATH, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
 			i(43016),	-- Dalaran Cooking Award
 		})),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
+		expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { CREATED_3_1_0 } }, {
 			i(45705),	-- Argent Tournament Invitation
 			i(45924),	-- Certificate of Appreciation
 			i(44871),	-- Greater Inscription of the Axe
@@ -84,7 +84,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 3.3.3
-		expansion(EXPANSION.WRATH, 3.3, bubbleDown({ ["timeline"] = { "created 3.3.3" } }, {
+		expansion(EXPANSION.WRATH, 3.3, bubbleDown({ ["timeline"] = { CREATED_3_3_3 } }, {
 			i(50329),	-- Icecrown-10 Normal Loot Token
 		})),
 

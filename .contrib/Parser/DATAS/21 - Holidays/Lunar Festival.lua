@@ -45,7 +45,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					937,				-- Elune's Blessing
 				},
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				title(43),				-- Elder
 			},
@@ -82,47 +82,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		ach(912, {	-- Elders of Eastern Kingdoms
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(911, {	-- Elders of Kalimdor
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(910, {	-- Elders of the Dungeons
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(914, {	-- Elders of the Horde
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(915, {	-- Elders of the Alliance
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1396, {	-- Elders of Northrend
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(605, {	-- A Coin of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(606, {	-- 5 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(607, {	-- 10 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(608, {	-- 25 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(609, {	-- 50 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(626, {	-- Lunar Festival Finery
 			["providers"] = {
@@ -133,19 +133,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ "i", 21544 },	-- Festive Blue Pant Suit
 				{ "i", 21543 },	-- Festive Teal Pant Suit
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1281, {	-- The Rocket's Red Glare
 			["provider"] = { "i", 21576 },	-- Red Rocket Cluster
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1552, {	-- Frenzied Firecracker
 			["provider"] = { "i", 21747 },	-- Festival Firecracker
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(937, {	-- Elune's Blessing
 			["sourceQuest"] = 8868,	-- Elune's Blessing
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 	}),
 	-- #endif
@@ -989,109 +989,109 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(13033, {	-- Arp the Elder
 			["qg"] = 30364,	-- Elder Arp
 			["coord"] = { 57.3, 43.7, BOREAN_TUNDRA },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13013, {	-- Beldak the Elder
 			["qg"] = 30357,	-- Elder Beldak
 			["coord"] = { 60.5, 27.7, GRIZZLY_HILLS },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13026, {	-- Bluewolf the Elder
 			["qg"] = 30368,	-- Elder Bluewolf
 			["coord"] = { 49.0, 14.0, WINTERGRASP },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13015, {	-- Fargal the Elder
 			["qg"] = 30359,	-- Elder Fargal
 			["coord"] = { 28.9, 73.7, THE_STORM_PEAKS },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13028, {	-- Graymane the Elder
 			["qg"] = 30370,	-- Elder Graymane
 			["coord"] = { 41.1, 84.7, THE_STORM_PEAKS },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13025, {	-- Lunaro the Elder
 			["qg"] = 30367,	-- Elder Lunaro
 			["coord"] = { 80.4, 37.1, GRIZZLY_HILLS },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13014, {	-- Morthie the Elder
 			["qg"] = 30358,	-- Elder Morthie
 			["coord"] = { 29.7, 55.9, DRAGONBLIGHT },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13032, {	-- Muraco the Elder
 			["qg"] = 30374,	-- Elder Muraco
 			["coord"] = { 64.6, 51.3, THE_STORM_PEAKS },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13016, {	-- Northal the Elder
 			["qg"] = 30360,	-- Elder Northal
 			["coord"] = { 33.7, 34.3, BOREAN_TUNDRA },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13029, {	-- Pamuya the Elder
 			["qg"] = 30371,	-- Elder Pamuya
 			["coord"] = { 42.9, 49.5, BOREAN_TUNDRA },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13018, {	-- Sandrene the Elder
 			["qg"] = 30362,	-- Elder Sandrene
 			["coord"] = { 49.7, 63.5, SHOLAZAR_BASIN },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13012, {	-- Sardis the Elder
 			["qg"] = 30348,	-- Elder Sardis
 			["coord"] = { 59.0, 65.5, BOREAN_TUNDRA },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13031, {	-- Skywarden the Elder
 			["qg"] = 30373,	-- Elder Skywarden
 			["coord"] = { 35.1, 48.3, DRAGONBLIGHT },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13020, {	-- Stonebeard the Elder
 			["qg"] = 30375,	-- Elder Stonebeard
 			["coord"] = { 31.2, 37.6, THE_STORM_PEAKS },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13027, {	-- Tauros the Elder
 			["qg"] = 30369,	-- Elder Tauros
 			["coord"] = { 58.9, 56.0, ZULDRAK },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13019, {	-- Thoim the Elder
 			["qg"] = 30363,	-- Elder Thoim
 			["coord"] = { 48.7, 78.1, DRAGONBLIGHT },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13024, {	-- Wanikaya the Elder
 			["qg"] = 30365,	-- Elder Wanikaya
 			["coord"] = { 63.8, 49.0, SHOLAZAR_BASIN },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		q(13030, {	-- Whurain the Elder
 			["qg"] = 30372,	-- Elder Whurain
 			["coord"] = { 64.2, 47.0, GRIZZLY_HILLS },
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
 		-- Elders of the Dungeons
@@ -1099,7 +1099,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 30538,	-- Elder Chogan'gada
 			["coord"] = { 57.2, 46.6, HOWLING_FJORD },	-- Utgarde Pinnacle entrance
 			["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 			["isYearly"] = true,
 		}),
@@ -1123,7 +1123,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 30536,	-- Elder Igasho
 			["coord"] = { 27.5, 26.0, BOREAN_TUNDRA },	-- The Nexus entrance
 			["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove.  The Elder is just before you reach Ormorok's platform.",
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { THE_NEXUS },
 			["isYearly"] = true,
 		}),
@@ -1131,7 +1131,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 30531,	-- Elder Jarten
 			["coord"] = { 57.9, 50.0, HOWLING_FJORD },	-- Utgarde Keep entrance path
 			["description"] = "After defeating Keleseth, continue through the mining tunnel.  Before heading up the stairs to the next boss, turn left to find the Elder.",
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 			["isYearly"] = true,
 		}),
@@ -1139,7 +1139,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 30534,	-- Elder Kilias
 			["coord"] = { 28.5, 86.9, ZULDRAK },	-- Drak'Tharon Keep entrance
 			["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
 			["isYearly"] = true,
 		}),
@@ -1154,7 +1154,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 30533,	-- Elder Nurgen
 			["coord"] = { 26.0, 50.7, DRAGONBLIGHT },	-- Azjol-Nerub entrance
 			["description"] = "After defeating Hadronox, jump to the lower level of the dungeon.  The Elder is on the north side of the room where you land.",
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 			["isYearly"] = true,
 		}),
@@ -1162,7 +1162,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 30537,	-- Elder Ohanzee
 			["coord"] = { 76.2, 21.1, ZULDRAK },	-- Gundrak entrance
 			["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
 			["isYearly"] = true,
 		}),
@@ -1223,7 +1223,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 30535,	-- Elder Yurauk
 			["coord"] = { 39.6, 26.9, THE_STORM_PEAKS },	-- Halls of Stone entrance
 			["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
-			["timeline"] = { "added 3.0.8.9464" },
+			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { HALLS_OF_STONE },
 			["isYearly"] = true,
 		}),
@@ -1327,11 +1327,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(44916, {	-- Pattern: Festival Dress
-					["timeline"] = { "added 3.0.8.9464" },
+					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
 				i(44917, {	-- Pattern: Festival Suit
-					["timeline"] = { "added 3.0.8.9464" },
+					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
 				i(21740, {	-- Small Rocket Recipes

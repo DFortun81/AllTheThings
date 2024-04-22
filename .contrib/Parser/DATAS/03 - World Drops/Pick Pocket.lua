@@ -17,12 +17,12 @@ root(ROOTS.WorldDrops, {
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
 						["description"] = "Can be pickpocketed from Northrend humanoids.",
-						["timeline"] = { "added 3.0.1.8681" },
+						["timeline"] = { ADDED_3_0_2 },
 						["_drop"] = { "f" },	-- Drop Consumable
 					}),
 					i(36862, {	-- Worn Troll Dice (TOY!)
 						["description"] = "Can be pickpocketed from Northrend humanoids.",
-						["timeline"] = { "added 3.0.1.8788" },
+						["timeline"] = { ADDED_3_0_2 },
 						["_drop"] = { "f" },	-- Drop Consumable
 					}),
 				}),

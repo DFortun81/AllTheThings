@@ -153,7 +153,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_5_2_0, "removed 8.3.0" },
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
-			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { ADDED_3_3_3, "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 		i(112327, {	-- Grinning Reaver (MOUNT!)
 			["timeline"] = { "added 6.0.1.18297", "removed 8.3.0" },
@@ -269,19 +269,19 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(49662, {	-- Gryphon Hatchling (PET!)
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
-			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
+			["timeline"] = { ADDED_3_3_2, "removed 8.3.0" },
 		}),
 		i(213556, {	-- Hoplet (PET!)
 			["timeline"] = { "added 10.2.5", "removed 10.2.5.53441" },	-- Removed Feb 29th, 2024
 		}),
 		i(49693, {	-- Lil' K.T.
-			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { ADDED_3_2_2, "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 		i(208850, {	-- Lil' Maggz (PET!)
 			["timeline"] = { "added 10.1.7.51313", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		i(54847, {	-- Lil' XT (PET!)
-			["timeline"] = { "added 3.3.3.11723", "removed 8.3.0" },
+			["timeline"] = { ADDED_3_3_3, "removed 8.3.0" },
 		}),
 		i(141893, {	-- Mischief (PET!)
 			["timeline"] = { "added 7.1.0.22996", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
@@ -301,7 +301,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		i(49665, {	-- Pandaren Monk
-			["timeline"] = { "added 3.2.2.10468", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { ADDED_3_2_2, "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 		i(190601, {	-- Sunny
 			["timeline"] = { "added 10.1.5", "removed 10.1.7" },	-- Aug 29th, 2023
@@ -310,7 +310,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 7.3.5.25937",  "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(49663, {	-- Wind Rider Cub (PET!)
-			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
+			["timeline"] = { ADDED_3_3_2, "removed 8.3.0" },
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		}),
 	})),

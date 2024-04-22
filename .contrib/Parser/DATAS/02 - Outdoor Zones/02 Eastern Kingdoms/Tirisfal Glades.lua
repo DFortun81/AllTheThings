@@ -898,7 +898,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(384, {	-- The Bulwark, Tirisfal
 					["cr"] = 37915,	-- Timothy Cunningham <Bat Handler>
 					["coord"] = { 83.4, 70.0, TIRISFAL_GLADES },
-					["timeline"] = { "added 3.3.0.10554" },
+					["timeline"] = { ADDED_3_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -1664,7 +1664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+					["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2645,13 +2645,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(46308, {	-- Black Skeletal Warhorse (MOUNT!)
-							["timeline"] = { "added 3.1.0.9704" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(13332),	-- Blue Skeletal Horse (MOUNT!)
 						i(13333),	-- Brown Skeletal Horse (MOUNT!)
 						i(13334),	-- Green Skeletal Warhorse (MOUNT!)
 						i(47101, {	-- Ochre Skeletal Warhorse (MOUNT!)
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 						i(18791),	-- Purple Skeletal Warhorse (MOUNT!)
 						i(13331),	-- Red Skeletal Horse (MOUNT!)

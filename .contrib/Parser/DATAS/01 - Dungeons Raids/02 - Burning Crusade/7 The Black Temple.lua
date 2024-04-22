@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
 					["coord"] = { 65.2, 43.9, SHADOWMOON_VALLEY },
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						i(32649),	-- Medallion of Karabor

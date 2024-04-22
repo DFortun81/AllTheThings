@@ -363,7 +363,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(14356, {	-- The Power to Destroy... (After Wrathgate)
 					["qg"] = 36273,	-- Bragor Bloodfist
 					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {

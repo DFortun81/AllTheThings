@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13205, {	-- Disarmament
 					["qg"] = 24111,	-- Defender Mordun
-					["timeline"] = { "added 3.0.0", "removed 4.3.0.14732" },
+					["timeline"] = { ADDED_3_0_2, "removed 4.3.0.14732" },
 					["coord"] = { 59.4, 48.8, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
@@ -363,7 +363,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 						}),
 					}),
 					-- #endif

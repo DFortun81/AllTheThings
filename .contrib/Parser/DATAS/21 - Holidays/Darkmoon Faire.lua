@@ -1445,7 +1445,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(42989),	-- Darkmoon Card: Berserker!
@@ -1576,7 +1576,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(44253),	-- Darkmoon Card: Greatness
@@ -1659,7 +1659,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(42988),	-- Darkmoon Card: Illusion
@@ -1745,7 +1745,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(42990),	-- Darkmoon Card: Death
@@ -1793,17 +1793,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 30481 },	-- Darkmoon Fortune Teller
 				},
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(44217, {	-- Darkmoon Dirk
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(44218, {	-- Darkmoon Executioner
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(44219, {	-- Darkmoon Magestaff
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 				},
 			})),
@@ -2059,14 +2059,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 30481 },	-- Darkmoon Fortune Teller
 				},
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(44215, {	-- Darkmoon Necklace
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(44213, {	-- Darkmoon Pendant
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 				},
 			})),
@@ -2364,20 +2364,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 30481 },	-- Darkmoon Fortune Teller
 				},
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(39507, {	-- Darkmoon Breastplate
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(131276, {	-- Darkmoon Chainmail
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(38318, {	-- Darkmoon Robe
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(39509, {	-- Darkmoon Vest
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 				},
 			})),
@@ -2510,17 +2510,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 30481 },	-- Darkmoon Fortune Teller
 				},
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(39897, {	-- Azure Shoulderguards
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(39895, {	-- Cloaked Shoulderpads
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(39894, {	-- Darkcloth Shoulders
-						["timeline"] = { "added 3.0.2.8970" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(131277, {	-- Veiled Pauldrons
 						["timeline"] = { "added 7.0.3.22248" },
@@ -4271,7 +4271,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(44276, {	-- Chaos Deck
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 44277, 1 },	-- Ace of Chaos
 					{ "i", 44278, 1 },	-- Two of Chaos
@@ -4297,7 +4297,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(44158, {	-- Demons Deck
-				["timeline"] = { "added 3.0.2.8962" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 44143, 1 },	-- Ace of Demons
 					{ "i", 44154, 1 },	-- Two of Demons
@@ -4371,7 +4371,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(44148, {	-- Mages Deck
-				["timeline"] = { "added 3.0.2.8962" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 44165, 1 },	-- Ace of Mages
 					{ "i", 44144, 1 },	-- Two of Mages
@@ -4381,7 +4381,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(44326, {	-- Nobles Deck
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 44268, 1 },	-- Ace of Nobles
 					{ "i", 44269, 1 },	-- Two of Nobles
@@ -4419,7 +4419,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(44259, {	-- Prisms Deck
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 44260, 1 },	-- Ace of Prisms
 					{ "i", 44261, 1 },	-- Two of Prisms
@@ -4432,7 +4432,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(37163, {	-- Rogues Deck
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 37140, 1 },	-- Ace of Rogues
 					{ "i", 37143, 1 },	-- Two of Rogues
@@ -4466,7 +4466,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(37164, {	-- Swords Deck
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 37145, 1 },	-- Ace of Swords
 					{ "i", 37147, 1 },	-- Two of Swords
@@ -4501,7 +4501,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, i(44294, {	-- Undeath Deck
-				["timeline"] = { "added 3.0.2.8970" },
+				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
 					{ "i", 44286, 1 },	-- Ace of Undeath
 					{ "i", 44287, 1 },	-- Two of Undeath

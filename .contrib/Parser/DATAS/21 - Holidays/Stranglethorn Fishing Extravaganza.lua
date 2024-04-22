@@ -19,7 +19,7 @@ STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 });
 
 local BOOTS_OF_THE_BAY = i(50287, {	-- Boots of the Bay
-	["timeline"] = { "added 3.3.0.10772" },
+	["timeline"] = { ADDED_3_3_0 },
 });
 local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
 	["timeline"] = { ADDED_6_1_0 },

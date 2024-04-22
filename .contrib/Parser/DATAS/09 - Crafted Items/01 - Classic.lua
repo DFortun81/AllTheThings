@@ -1546,188 +1546,188 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 
 
 
-			i(43332, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Thorns / Glyph of Grace[MOP+]
+			i(43332, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Thorns / Glyph of Grace[MOP+]
 			-- #if BEFORE WOD
-			i(43335, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+			i(43335, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
 			-- #endif
-			i(40906, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
-			i(43338, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Revive Pet
+			i(40906, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
+			i(43338, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Revive Pet
 			-- #if BEFORE WOD
-			i(43350, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
+			i(43350, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
 			-- #endif
-			i(43354, {["timeline"]={"added 3.0.2","removed 4.0.1"}}),	-- Glyph of Possessed Strength
-			i(43339, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
-			i(43364, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
-			i(43361, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of the Penguin
+			i(43354, {["timeline"]={ADDED_3_0_2,"removed 4.0.1"}}),	-- Glyph of Possessed Strength
+			i(43339, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
+			i(43364, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
+			i(43361, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of the Penguin
 			-- #if BEFORE WOD
-			i(43359, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+			i(43359, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
 			-- #endif
-			i(43340, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Blessing of Might / Glyph of the Mounted King[MOP+]
-			i(43367, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Lay on Hands / Glyph of Flash of Light[MOP+]
-			i(43366, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Blessing of Wisdom / Glyph of Insight[CATA] /Glyph of Winged Vengeance[MOP+]
-			i(43342, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
-			i(43371, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
-			i(43379, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Blurred Speed
-			i(43343, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Pick Pocket
+			i(43340, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Blessing of Might / Glyph of the Mounted King[MOP+]
+			i(43367, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Lay on Hands / Glyph of Flash of Light[MOP+]
+			i(43366, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of Blessing of Wisdom / Glyph of Insight[CATA] /Glyph of Winged Vengeance[MOP+]
+			i(43342, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
+			i(43371, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
+			i(43379, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Blurred Speed
+			i(43343, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Pick Pocket
 			-- #if BEFORE WOD
-			i(43390, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
+			i(43390, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
 			-- #endif
-			i(43399, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Thunder Clap / Glyph of Unending Rage[MOP+]
-			i(43395, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Battle / Glyph of Mystic Shout[MOP+]
-			i(43397, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Charge
-			i(43396, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Bloodrage
+			i(43399, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Thunder Clap / Glyph of Unending Rage[MOP+]
+			i(43395, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Battle / Glyph of Mystic Shout[MOP+]
+			i(43397, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Charge
+			i(43396, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Bloodrage
 
-			i(41096, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Spiritual Attunement / Glyph of Divine Protection[CATA+]
-			i(42912, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
-			i(41095, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
-			i(40924, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Entangling Roots
+			i(41096, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Spiritual Attunement / Glyph of Divine Protection[CATA+]
+			i(42912, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
+			i(41095, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
+			i(40924, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Entangling Roots
 			-- #if BEFORE WOD
-			i(42736, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
+			i(42736, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 			-- #endif
 			-- #if BEFORE WOD
-			i(43316, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aquatic Form
+			i(43316, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Aquatic Form
 			-- #endif
-			i(43365, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Blessing of Kings / Glyph of Contemplation[MOP+]
-			i(43373, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
-			i(43377, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Pick Lock
-			i(43389, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Unending Breath
-			i(43725, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ghost Wolf
+			i(43365, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Blessing of Kings / Glyph of Contemplation[MOP+]
+			i(43373, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Shackle Undead
+			i(43377, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Pick Lock
+			i(43389, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Unending Breath
+			i(43725, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Ghost Wolf
 			-- #if BEFORE WOD
-			i(42898, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
-			i(43331, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
-			i(43368, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
+			i(42898, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+			i(43331, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
+			i(43368, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
 			-- #endif
-			i(43357, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Fire Ward
-			i(43398, {["timeline"]={"added 3.0.2",REMOVED_4_0_3, "added 5.0.4"}}),	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
-			i(43386, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Water Shield / Glyph of the Arctic Wolf[CATA] / Glyph of the Spectral Wolf[MOP+]
-			i(48720, {["timeline"]={"added 3.2.0","removed 6.0.2"}}),	-- Glyph of Claw / Glyph of Ferocious Bite
-			i(42960, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Evasion
-			i(43418, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Heroic Strike
-			i(42410, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Psychic Scream
-			i(41537, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
-			i(42462, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Healthstone
-			i(41106, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
-			i(42961, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
-			i(43342, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Fade
-			i(43423, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Rending
-			i(41530, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
-			i(40914, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Healing Touch
-			i(42735, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana[MOP]
-			i(42900, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Aspect of the Monkey / Glyph of Mending[3.1.0+]
-			i(41092, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
-			i(42962, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Expose Armor
-			i(42400, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
-			i(43417, {["timeline"]={"added 3.0.2",REMOVED_4_0_3,"added 5.0.4","removed 6.0.2"}}),	-- Glyph of Hamstring
-			i(41532, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
-			i(42458, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Fear
-			i(43360, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Ward / Glyph of the Monkey[CATA+]
-			i(43376, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Distract
-			i(43380, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Vanish / Glyph of Poisons[CATA+]
-			i(43344, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Water Breathing / Glyph of Healing Storm[MOP+]
-			i(43391, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Kilrogg
-			i(40923, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
-			i(42737, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Blink
-			i(41108, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Divinity
-			i(42964, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Garrote
-			i(42402, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Inner Fire
-			i(43427, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Sunder Armor / Glyph of Hoarse Voice[MOP+]
-			i(41536, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
-			i(42465, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Imp / Glyph of Imp Swarm[MOP+]
-			i(42910, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Multi-Shot / Glyph of Silencing Shot[CATA] / Glyph of No Escape[MOP+]
-			i(43351, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Feign Death / Glyph of Fireworks[MOP+]
-			i(43369, {["timeline"]={"added 3.0.2"}}),	-- Glyph of the Wise / Glyph of Justice[CATA] / Glyph of Fire From the Heavens[MOP+]
-			i(43381, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Astral Recall
-			i(43385, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Renewed Life / Glyph of Far Sight[MOP+]
-			i(43388, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Water Walking / Glyph of Totemic Encirclement[MOP+]
-			i(43392, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Curse of Exhaustion
-			i(43674, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Dash
-			i(42738, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Evocation
-			i(41100, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Righteous Defense / Glyph of Righteousness[CATA] / Glyph of the Luminous Charger[MOP+]
-			i(42966, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Gouge
-			i(42411, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Renew
-			i(40909, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rebirth
-			i(43422, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Overpower / Glyph of Die by the Sword[5.2.0+]
-			i(42746, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Icy Veins
-			i(42897, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aimed Shot / Glyph of Aspects[MOP+]
-			i(43370, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Levitate
-			i(41104, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Cleansing / Glyph of Final Wrath[MOP+]
-			i(42415, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
-			i(42970, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sap / Glyph of Hemorrhaging Veins[5.4.0+]
-			i(41547, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Shock
-			i(43424, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
-			i(42473, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Voidwalker / Glyph of Falling Meteor[MOP+]
+			i(43357, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Fire Ward
+			i(43398, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3, "added 5.0.4"}}),	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
+			i(43386, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of Water Shield / Glyph of the Arctic Wolf[CATA] / Glyph of the Spectral Wolf[MOP+]
+			i(48720, {["timeline"]={ADDED_3_2_0,"removed 6.0.2"}}),	-- Glyph of Claw / Glyph of Ferocious Bite
+			i(42960, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Evasion
+			i(43418, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Heroic Strike
+			i(42410, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Psychic Scream
+			i(41537, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
+			i(42462, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Healthstone
+			i(41106, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
+			i(42961, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
+			i(43342, {["timeline"]={ADDED_3_1_0,"removed 6.0.2"}}),	-- Glyph of Fade
+			i(43423, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Rending
+			i(41530, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
+			i(40914, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Healing Touch
+			i(42735, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana[MOP]
+			i(42900, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Aspect of the Monkey / Glyph of Mending[3.1.0+]
+			i(41092, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
+			i(42962, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Expose Armor
+			i(42400, {["timeline"]={ADDED_3_1_0,"removed 6.0.2"}}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
+			i(43417, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3,"added 5.0.4","removed 6.0.2"}}),	-- Glyph of Hamstring
+			i(41532, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
+			i(42458, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Fear
+			i(43360, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Frost Ward / Glyph of the Monkey[CATA+]
+			i(43376, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Distract
+			i(43380, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Vanish / Glyph of Poisons[CATA+]
+			i(43344, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Water Breathing / Glyph of Healing Storm[MOP+]
+			i(43391, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Kilrogg
+			i(40923, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
+			i(42737, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Blink
+			i(41108, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Divinity
+			i(42964, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Garrote
+			i(42402, {["timeline"]={ADDED_3_1_0,"removed 6.0.2"}}),	-- Glyph of Inner Fire
+			i(43427, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Sunder Armor / Glyph of Hoarse Voice[MOP+]
+			i(41536, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
+			i(42465, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Imp / Glyph of Imp Swarm[MOP+]
+			i(42910, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Multi-Shot / Glyph of Silencing Shot[CATA] / Glyph of No Escape[MOP+]
+			i(43351, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Feign Death / Glyph of Fireworks[MOP+]
+			i(43369, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of the Wise / Glyph of Justice[CATA] / Glyph of Fire From the Heavens[MOP+]
+			i(43381, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Astral Recall
+			i(43385, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Renewed Life / Glyph of Far Sight[MOP+]
+			i(43388, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Water Walking / Glyph of Totemic Encirclement[MOP+]
+			i(43392, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Curse of Exhaustion
+			i(43674, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Dash
+			i(42738, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Evocation
+			i(41100, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of Righteous Defense / Glyph of Righteousness[CATA] / Glyph of the Luminous Charger[MOP+]
+			i(42966, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Gouge
+			i(42411, {["timeline"]={ADDED_3_1_0,"removed 6.0.2"}}),	-- Glyph of Renew
+			i(40909, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Rebirth
+			i(43422, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Overpower / Glyph of Die by the Sword[5.2.0+]
+			i(42746, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Icy Veins
+			i(42897, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Aimed Shot / Glyph of Aspects[MOP+]
+			i(43370, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Levitate
+			i(41104, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Cleansing / Glyph of Final Wrath[MOP+]
+			i(42415, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
+			i(42970, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Sap / Glyph of Hemorrhaging Veins[5.4.0+]
+			i(41547, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Frost Shock
+			i(43424, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
+			i(42473, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Voidwalker / Glyph of Falling Meteor[MOP+]
 
-			i(40902, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rip / Glyph of Prowl[MOP+]
-			i(42903, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Deterrence
-			i(43355, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Pack / Glyph of Aspect of the Pack[CATA+]
-			i(42747, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Scorch
-			i(41099, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Consecration
-			i(42972, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush[5.0.4-5.4.0] / Glyph of Redirect[5.4.0+]
-			i(42416, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Smite
-			i(41533, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Healing Stream Totem
-			i(42466, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Searing Pain
-			i(43420, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Barbaric Insults
-			i(42904, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Disengage
-			i(41098, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Crusader Strike / Glyph of Avenging Wrath[MOP+]
-			i(42397, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dispel Magic / Glyph of Purify[MOP+]
-			i(42973, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slice and Dice / Glyph of Shiv[MOP+]
-			i(41535, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
-
-
-			i(43414, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Cleaving / Glyph of Hindering Strikes[MOP+]
-			i(42470, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Soulstone
-			i(45760, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Pain Suppression / Glyph of Desperation[4.0.6-5.2.0] / Glyph of Binding Heal[5.2.0+]
-			i(45775, {["timeline"]={"added 3.1.0","removed 8.1.0"}}),	-- Glyph of Earth Shield / Glyph of Deluge[MOP+]
-			i(42905, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Freezing Trap
-			i(41103, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
-			i(43536, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude[MOP+]
-			i(42399, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fear Ward
-			i(43543, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
+			i(40902, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Rip / Glyph of Prowl[MOP+]
+			i(42903, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Deterrence
+			i(43355, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of the Pack / Glyph of Aspect of the Pack[CATA+]
+			i(42747, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Scorch
+			i(41099, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Consecration
+			i(42972, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush[5.0.4-5.4.0] / Glyph of Redirect[5.4.0+]
+			i(42416, {["timeline"]={ADDED_3_1_0,"removed 6.0.2"}}),	-- Glyph of Smite
+			i(41533, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Healing Stream Totem
+			i(42466, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Searing Pain
+			i(43420, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Barbaric Insults
+			i(42904, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Disengage
+			i(41098, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Crusader Strike / Glyph of Avenging Wrath[MOP+]
+			i(42397, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Dispel Magic / Glyph of Purify[MOP+]
+			i(42973, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Slice and Dice / Glyph of Shiv[MOP+]
+			i(41535, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
 
 
-			i(41541, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Water Mastery / Glyph of Water Shield[CATA+]
-			i(42468, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Glyph of Shadowburn
-			i(45804, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
-			i(42750, {["timeline"]={"added 3.0.2",REMOVED_4_0_3,"added 5.0.4","removed 6.0.2"}}),	-- Glyph of Mana Gem
+			i(43414, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Cleaving / Glyph of Hindering Strikes[MOP+]
+			i(42470, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Soulstone
+			i(45760, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Pain Suppression / Glyph of Desperation[4.0.6-5.2.0] / Glyph of Binding Heal[5.2.0+]
+			i(45775, {["timeline"]={ADDED_3_1_0,"removed 8.1.0"}}),	-- Glyph of Earth Shield / Glyph of Deluge[MOP+]
+			i(42905, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Freezing Trap
+			i(41103, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
+			i(43536, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude[MOP+]
+			i(42399, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Fear Ward
+			i(43543, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
+
+
+			i(41541, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Water Mastery / Glyph of Water Shield[CATA+]
+			i(42468, {["timeline"]={ADDED_3_0_2,"removed 5.0.4"}}),	-- Glyph of Shadowburn
+			i(45804, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
+			i(42750, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3,"added 5.0.4","removed 6.0.2"}}),	-- Glyph of Mana Gem
 			i(43546, {["timeline"]={"added 3.0.8","removed 7.0.3"}}),	-- Glyph of Icy Touch
-			i(45805, {["timeline"]={"added 3.1.0",REMOVED_4_0_3}}),	-- Glyph of Disease
-			i(42974, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Sprint
-			i(43416, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Execution
-			i(43541, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Death Grip
+			i(45805, {["timeline"]={ADDED_3_1_0,REMOVED_4_0_3}}),	-- Glyph of Disease
+			i(42974, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Sprint
+			i(43416, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Execution
+			i(43541, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Death Grip
 
 			i(89868, {	-- Mark of the Cheetah // Glyph of the Cheetah (CI!)
 				["timeline"] = { ADDED_5_0_4 },
 			}),
 
 
-			i(40913, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rejuvenation
-			i(42741, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Nova
-			i(42907, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
-			i(42956, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Backstab / Glyph of Decoy[MOP+]
-			i(42408, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Power Word: Shield
-			i(40922, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Wrath / Glyph of Nature's Grasp[MOP+]
-			i(43413, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
-			i(41531, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flame Shock
-			i(42455, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Corruption / Glyph of Siphon Life[MOP+]
-			i(40897, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Maul
+			i(40913, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Rejuvenation
+			i(42741, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Frost Nova
+			i(42907, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
+			i(42956, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Backstab / Glyph of Decoy[MOP+]
+			i(42408, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Power Word: Shield
+			i(40922, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Wrath / Glyph of Nature's Grasp[MOP+]
+			i(43413, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
+			i(41531, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Flame Shock
+			i(42455, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Corruption / Glyph of Siphon Life[MOP+]
+			i(40897, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Maul
 
 
 
 			-- #if BEFORE WOD
-			i(42743, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
-			i(42461, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
-			i(42908, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
+			i(42743, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
+			i(42461, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Health Funnel
+			i(42908, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
-				["timeline"]={ "added 3.0.2" },
+				["timeline"]={ ADDED_3_0_2 },
 			}),
-			i(43334, {["timeline"]={"added 3.0.2"}}),		-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]
-			i(41540, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
-			i(43378, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Safe Fall
-			i(40916, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
-			i(42744, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Block
-			i(45622, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
-			i(45768, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
-			i(45776, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
+			i(43334, {["timeline"]={ADDED_3_0_2}}),		-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]
+			i(41540, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
+			i(43378, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Safe Fall
+			i(40916, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
+			i(42744, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Ice Block
+			i(45622, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
+			i(45768, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
+			i(45776, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 			-- #endif
 		}),
 		category(106, {	-- Tarot Cards
@@ -1856,7 +1856,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		filter(NECK_F, {
 			i(20830),	-- Amulet of the Moon
 			applyclassicphase(WRATH_PHASE_ONE, i(45627, {	-- Amulet of Truesight
-				["timeline"] = { "added 3.1.0.9614" },
+				["timeline"] = { ADDED_3_1_0 },
 			})),
 			i(21755),	-- Aquamarine Pendant of the Warrior
 			i(20909),	-- Barbaric Iron Collar
@@ -2888,7 +2888,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(5542),	-- Pearl-Clasped Cloak
 			i(2580),	-- Reinforced Linen Cape
 			i(13860),	-- Runecloth Cloak
-			i(45626, {["timeline"] = { "added 3.1.0" }}),	-- Spidersilk Drape
+			i(45626, {["timeline"] = { ADDED_3_1_0 }}),	-- Spidersilk Drape
 			i(2584),	-- Woolen Cape
 		}),
 		category(243, {	-- Shirts

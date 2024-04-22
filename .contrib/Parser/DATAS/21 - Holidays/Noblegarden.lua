@@ -48,11 +48,11 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(44803, {	-- Spring Circlet
-		["timeline"] = { "added 3.1.0.9733" },
+		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(44800, {	-- Spring Robes
-		["timeline"] = { "added 3.1.0.9733" },
+		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(6833, {	-- White Tuxedo Shirt
@@ -69,11 +69,11 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	}),
 	-- Other
 	i(44792, {	-- Blossoming Branch
-		["timeline"] = { "added 3.1.0.9733" },
+		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 10 } },	-- 10x Noblegarden Chocolate
 	}),
 	i(45073, {	-- Spring Flowers
-		["timeline"] = { "added 3.1.0.9733" },
+		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(44793, {	-- Tome of Polymorph: Rabbit (CI!)
@@ -94,7 +94,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	i(44794, {	-- Spring Rabbit (PET!)
-		["timeline"] = { "added 3.1.0.9733" },
+		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	-- Toys
@@ -134,26 +134,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		},
 		["groups"] = {
 			i(44791, {	-- Noblegarden Chocolate
-				["timeline"] = { "added 3.1.0.9658" },
+				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(44806, {	-- Brightly Colored Shell Fragment
-				["timeline"] = { "added 3.1.0.9733" },
+				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(44792, {	-- Blossoming Branch
-				["timeline"] = { "added 3.1.0.9733" },
+				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(44803, {	-- Spring Circlet
-				["timeline"] = { "added 3.1.0.9733" },
+				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(45073, {	-- Spring Flowers
-				["timeline"] = { "added 3.1.0.9733" },
+				["timeline"] = { ADDED_3_1_0 },
 				["f"] = -1,	-- Remove the filterID from being attached to this Item
 			}),
 			i(44794, {	-- Spring Rabbit (PET!)
-				["timeline"] = { "added 3.1.0.9733" },
+				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(44800, {	-- Spring Robes
-				["timeline"] = { "added 3.1.0.9733" },
+				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(72145, {	-- Swift Springstrider (MOUNT!)
 				["timeline"] = { "added 4.3.0.15005" },
@@ -187,7 +187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2421,	-- Noble Garden (A)
 				2422,	-- Shake Your Bunny-Maker
 			}},
-			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(122),	-- <Name> the Noble
@@ -211,7 +211,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2420,	-- Noble Garden (H)
 				2422,	-- Shake Your Bunny-Maker
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			-- #if BEFORE MOP
 			["races"] = HORDE_ONLY,
 			-- #endif
@@ -231,16 +231,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "i", 6835, 1 },	-- Black Tuxedo Pants
 				-- #endif
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(2417, {	-- Chocolate Lover
 			["cost"] = { { "i", 44791, 25 } },	-- 25 Noblegarden Chocolate
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 25,
 		}),
 		ach(2418, {	-- Chocoholic
 			["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 100,
 		}),
 		ach(2436, {	-- Desert Rose
@@ -251,7 +251,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "i", 44800 },	-- Spring Robes
 				-- #endif
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				crit(9139, {	-- Desolace
 					["maps"] = { DESOLACE },
@@ -277,21 +277,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				-- #endif
 				{ "i", 19028 },	-- Elegant Dress
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(2416, {	-- Hard Boiled
 			["description"] = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
 			["provider"] = { "i", 44792 },	-- Blossoming Branch
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { UNGORO_CRATER },
 		}),
 		ach(2676, {	-- I Found One!
 			["provider"] = { "i", 45072 },	-- Brightly Colored Egg
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(2419, {	-- Spring Fling (A)
 			["provider"] = { "n", 32791 },	-- Spring Rabbit
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
 				crit(9121, {	-- Azure Watch
@@ -310,7 +310,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		ach(2497, {	-- Spring Fling (H)
 			["provider"] = { "n", 32791 },	-- Spring Rabbit
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
 				crit(9202, {	-- Bloodhoof Village
@@ -329,13 +329,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		ach(2421, {	-- Noble Garden (A)
 			["provider"] = { "i", 44818 },	-- Noblegarden Egg
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(2420, {	-- Noble Garden (H)
 			["provider"] = { "i", 44818 },	-- Noblegarden Egg
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { SILVERMOON_CITY },
 			["races"] = HORDE_ONLY,
 		}),
@@ -344,7 +344,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		ach(2422, {	-- Shake Your Bunny-Maker
 			["provider"] = { "i", 45073 },	-- Spring Flowers
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(248, {	-- Sunday's Finest
@@ -356,7 +356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "i", 6835, 1 },	-- Black Tuxedo Pants
 				-- #endif
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 	}),
 	n(RARES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 }, }, {
@@ -444,7 +444,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 47.0, 52.5, DUN_MOROGH },	-- Kharanos
 				-- #endif
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["groups"] = {
@@ -453,13 +453,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 				}),
 				i(44802, {	-- Borrowed Egg Basket
-					["timeline"] = { "added 3.1.0.9733" },
+					["timeline"] = { ADDED_3_1_0 },
 				}),
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(45067, {	-- Egg Basket
-					["timeline"] = { "added 3.1.0.9733" },
+					["timeline"] = { ADDED_3_1_0 },
 				}),
 			},
 		}),
@@ -478,7 +478,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 51.9, 41.9, DUROTAR },	-- Razor Hill
 				-- #endif
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["groups"] = {
@@ -487,13 +487,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 				}),
 				i(44802, {	-- Borrowed Egg Basket
-					["timeline"] = { "added 3.1.0.9733" },
+					["timeline"] = { ADDED_3_1_0 },
 				}),
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(45067, {	-- Egg Basket
-					["timeline"] = { "added 3.1.0.9733" },
+					["timeline"] = { ADDED_3_1_0 },
 				}),
 			},
 		}),
@@ -526,7 +526,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				THE_STORM_PEAKS,
 				WINTERSPRING,
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -560,7 +560,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				UNDERCITY,
 				WINTERSPRING,
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -586,7 +586,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 46.9, 52.4, DUN_MOROGH },	-- Kharanos
 				-- #endif
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -594,7 +594,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["provider"] = { "i", 44806 },	-- Brightly Colored Shell Fragment
 				}),
 				i(44792, {	-- Blossoming Branch
-					["timeline"] = { "added 3.1.0.9733" },
+					["timeline"] = { ADDED_3_1_0 },
 				}),
 			},
 		}),
@@ -619,7 +619,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 51.8, 42.1, DUROTAR },	-- Razor Hill
 				-- #endif
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -627,7 +627,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["provider"] = { "i", 44806 },	-- Brightly Colored Shell Fragment
 				}),
 				i(44792, {	-- Blossoming Branch
-					["timeline"] = { "added 3.1.0.9733" },
+					["timeline"] = { ADDED_3_1_0 },
 				}),
 			},
 		}),
@@ -868,7 +868,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 51.9, 41.9, DUROTAR },	-- Razor Hill
 				-- #endif
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = NOBLEGARDEN_VENDOR_GROUPS,
 		}),
@@ -885,7 +885,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 47.0, 52.5, DUN_MOROGH },	-- Kharanos
 				-- #endif
 			},
-			["timeline"] = { "added 3.1.0.9733" },
+			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = NOBLEGARDEN_VENDOR_GROUPS,
 		}),

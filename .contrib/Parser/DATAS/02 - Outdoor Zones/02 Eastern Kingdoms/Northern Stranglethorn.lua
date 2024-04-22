@@ -3111,7 +3111,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(48126, {	-- Razzashi Hatchling (PET!)
-					["timeline"] = { "added 3.2.0.10128" },
+					["timeline"] = { ADDED_3_2_0 },
 				}),
 				i(1624, {	-- Skullsplitter Helm
 					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },

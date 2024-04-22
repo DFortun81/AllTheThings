@@ -2625,13 +2625,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.2, 38.8, TALADOR },
 						["g"] = {
 							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(95621, {	-- Warbot (PET!)
 								["timeline"] = { ADDED_5_2_0 },
 							}),
 							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
 								["timeline"] = { "added 5.4.0.17227" },
@@ -2643,16 +2643,16 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 5.4.0.17227" },
 							}),
 							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(54437, {	-- Tiny Green Ragdoll (TOY!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(44606, {	-- Toy Train Set Toy (TOY!)
-								["timeline"] = { "added 3.0.2.8982" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
-								["timeline"] = { "added 3.1.0.9626" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 						},
 					}),

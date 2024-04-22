@@ -713,7 +713,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
 					["altQuests"] = { 13917 },	-- Gorishi Grub (Undead, Troll, Tauren version until MOP)
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
 					["altQuests"] = { 13915 },	-- Hungry, Hungry Hatchling (Undead, Troll, Tauren version until MOP)
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -830,7 +830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -840,7 +840,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -858,7 +858,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
 					["altQuests"] = { 13916 },	-- Poached, Scrambled, Or Raw? (Undead, Troll, Tauren version until MOP)
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -1098,7 +1098,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -1108,7 +1108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(48, 48, 15),
@@ -1120,7 +1120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -1198,7 +1198,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
 					["altQuests"] = { 13914 },	-- Searing Roc Feathers (Undead, Troll, Tauren version until MOP)
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["maps"] = { TANARIS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1209,7 +1209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 5430,	-- Searing Roc
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -1219,7 +1219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["maps"] = { TANARIS },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
@@ -1230,7 +1230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 5430,	-- Searing Roc
 						}),
 						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -1616,7 +1616,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11701,	-- Mor'vek <Ravasaur Trainers>
 					["sourceQuest"] = 13887,	-- Venomhide Eggs
 					["coord"] = { 71.4, 73.8, UNGORO_CRATER },
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 47196, 20 },	-- Venomhide Baby Tooth
@@ -1628,7 +1628,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						ach(3357, {	-- Venomhide Ravasaur
 							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 							-- #if BEFORE WRATH
 							["description"] = "Obtain a Venomhide Ravasaur.",
 							-- #endif
@@ -1636,7 +1636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["f"] = MOUNTS,
 						}),
 						i(46102, {	-- Venomhide Ravasaur (MOUNT!)
-							["timeline"] = { "added 3.2.0.10026" },
+							["timeline"] = { ADDED_3_2_0 },
 							["races"] = HORDE_ONLY,
 						}),
 					},
@@ -1673,7 +1673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13850, {	-- Toxic Tolerance
 					["qg"] = 11701,	-- Mor'vek
 					["coord"] = { 71.5, 73.9, UNGORO_CRATER },
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(48, 48, 15),
 					["groups"] = {
@@ -1707,7 +1707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11701,	-- Mor'vek
 					["sourceQuest"] = 13850,	-- Toxic Tolerance
 					["coord"] = { 71.5, 73.9, UNGORO_CRATER },
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(48, 48, 15),
 					["groups"] = {
@@ -1810,7 +1810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(45052, {	-- Gruffscale Leggings
-							["timeline"] = { "added 3.1.0.9658" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),
@@ -1857,10 +1857,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 62.2, 65.3, UNGORO_CRATER },
 						{ 62.0, 73.6, UNGORO_CRATER },
 					},
-					["timeline"] = { "added 3.2.0.10072" },
+					["timeline"] = { ADDED_3_2_0 },
 					["groups"] = {
 						i(48122, {	-- Ravasaur Hatchling (PET!)
-							["timeline"] = { "added 3.2.0.10072" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),

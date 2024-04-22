@@ -11,7 +11,7 @@ root(ROOTS.Zones, {
 		["timeline"] = { "added 2.0.1" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(1312, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bloody Rare
+				ach(1312, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Bloody Rare
 					crit(4504, {	-- Ambassador Jerrikar (Shadowmoon Valley)
 						["_npcs"] = { 18695 },
 					}),
@@ -118,7 +118,7 @@ root(ROOTS.Zones, {
 					-- #ELSE
 						{{"partial_achievement",1312}},	-- Bloody Rare
 					-- #ENDIF
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				applyclassicphase(TBC_PHASE_ONE, ach(44, {	-- Outland Explorer [7.0.3] / Explore Outland
 					-- #if AFTER WRATH

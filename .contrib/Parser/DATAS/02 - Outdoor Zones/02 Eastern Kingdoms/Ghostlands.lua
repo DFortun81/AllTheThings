@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17224,	-- Keltus Darkleaf
 					["sourceQuest"] = 9532, 	-- Find Keltus Darkleaf
 					["coord"] = { 33, 11.2, GHOSTLANDS },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9532, {	-- Find Keltus Darkleaf
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
 					["coord"] = { 79.6, 52, SILVERMOON_CITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -860,7 +860,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["sourceQuest"] = 9460,	-- Combining Forces
 					["coord"] = { 33, 11.2, GHOSTLANDS },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },

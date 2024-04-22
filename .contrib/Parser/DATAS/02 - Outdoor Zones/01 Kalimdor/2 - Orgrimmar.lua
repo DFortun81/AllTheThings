@@ -266,16 +266,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { "added 4.0.1.12984" },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
 								["timeline"] = { "added 2.4.0.7897" },
 							}),
 							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
 								["timeline"] = { "added 4.0.1.12984" },
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
-						["timeline"] = { "added 3.0.2.8905" },
+						["timeline"] = { ADDED_3_0_2 },
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_INSCRIPTION,
 					}),
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5679,	-- Devouring Plague [Undercity]
 						5644,	-- Devouring Plague [Thunder Bluff]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14086, {	-- Learn to Ride in Orgrimmar
 					["provider"] = { "i", 46880 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1822,7 +1822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5661,	-- Touch of Weakness [Mulgore]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
@@ -2398,13 +2398,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(95621, {	-- Warbot (PET!)
 							["timeline"] = { ADDED_5_2_0 },
 						}),
 						i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(104324, {	-- Foot Ball (TOY!)
 							["timeline"] = { "added 5.4.0.17227" },
@@ -2419,16 +2419,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 5.4.0.17227" },
 						}),
 						i(54438, {	-- Tiny Blue Ragdoll (TOY!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(54437, {	-- Tiny Green Ragdoll (TOY!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(44606, {	-- Toy Train Set Toy (TOY!)
-							["timeline"] = { "added 3.0.2.8982" },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 						i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
@@ -2553,7 +2553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(45582, {	-- Darkspear Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64912, {	-- Darkspear Cape
 							["timeline"] = { ADDED_4_0_3 },
@@ -3276,7 +3276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(34043, {	-- Lady Palanseer <Jewelcrafting Quartermaster>
-					["timeline"] = { "added 3.0.2.8970", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
 						-- #if BEFORE 4.0.3
@@ -3327,7 +3327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				-- TODO: Finish this part.
 				n(12792, {	-- Lady Palanseer <Armor Quartermaster>
-					["timeline"] = { "removed 3.0.2.8970" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(REMOVED_FROM_GAME, i(28807)),	-- High Warlord's Chain Helm
@@ -3411,7 +3411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #else
 				n(12792, {	-- Lady Palanseer <Armor Quartermaster>
 					["description"] = "Found within the Champion's Hall in Orgrimmar.",
-					["timeline"] = { "removed 3.0.2.8970" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["maps"] = { ORGRIMMAR },
 					["groups"] = {
 						i(22860, {	-- Blood Guard's Silk Walkers (60)
@@ -4061,7 +4061,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(46099, {	-- Black Wolf (MOUNT!)
-							["timeline"] = { "added 3.1.0.9684" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(5668),	-- Brown Wolf (MOUNT!)
 						i(5665),	-- Dire Wolf (MOUNT!)
@@ -4691,7 +4691,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(45581, {	-- Orgrimmar Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64908, {	-- Shroud of Orgrimmar
 							["timeline"] = { ADDED_4_0_3 },

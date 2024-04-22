@@ -4,10 +4,10 @@
 root("Achievements", {
 	achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
 		ach(1833, {	-- It's Happy Hour Somewhere
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2556, {	-- Pest Control
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		})),
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
@@ -19,56 +19,56 @@ root("Achievements", {
 		achcat(ACHIEVEMENT_CATEGORY_NORTHREND_QUESTS),
 		-- #endif
 		ach(973, {	-- 5 Daily Quests Complete
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 5,
 		}),
 		ach(974, {	-- 50 Daily Quests Complete
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 50,
 		}),
 		ach(975, {	-- 200 Daily Quests Complete
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 200,
 		}),
 		ach(976, {	-- 500 Daily Quests Complete
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 500,
 		}),
 		ach(977, {	-- 1000 Daily Quests Complete
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1000,
 		}),
 
 		ach(503, {	-- 50 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 50,
 		}),
 		ach(504, {	-- 100 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 100,
 		}),
 		ach(505, {	-- 250 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 250,
 		}),
 		ach(506, {	-- 500 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 500,
 		}),
 		ach(507, {	-- 1000 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1000,
 		}),
 		ach(508, {	-- 1500 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1500,
 		}),
 		ach(32, {	-- 2000 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 2000,
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(978, {	-- 3000 Quests Completed
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 3000,
 			["groups"] = {
 				-- #if AFTER CATA
@@ -80,10 +80,10 @@ root("Achievements", {
 		})),
 
 		ach(31, {	-- A Simple Re-Quest
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1182, {	-- The Bread Winner
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 
 		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
@@ -99,7 +99,7 @@ root("Achievements", {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
 			-- #endif
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = {
 				NAGRAND,
 				-- #if AFTER CATA
@@ -115,7 +115,7 @@ root("Achievements", {
 				9977,	-- The Ring of Blood: The Final Challenge
 				12948,	-- The Champion of Anguish
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NAGRAND, ZULDRAK },
 			["groups"] = {
 				crit(5799, {	-- The Champion of Anguish
@@ -135,7 +135,7 @@ root("Achievements", {
 				1262,	-- Loremaster of Outland (A)
 				41,		-- Loremaster of Northrend (A)
 			}},
-			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster
@@ -149,7 +149,7 @@ root("Achievements", {
 				1274,	-- Loremaster of Outland (H)
 				1360,	-- Loremaster of Northrend (H)
 			}},
-			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster
@@ -307,7 +307,7 @@ root("Achievements", {
 				1269,	-- Explore Storm Peaks
 				1267,	-- Explore Zul'Drak
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				i(43348),	-- Tabard of the Explorer
 			},
@@ -368,7 +368,7 @@ root("Achievements", {
 				12988,	-- Battle for Azeroth Explorer
 				-- #endif
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				title(47),	-- the Explorer
 			},
@@ -376,7 +376,7 @@ root("Achievements", {
 	}),
 	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		-- Temporary location while an Arena file is made.
-		achcat(ACHIEVEMENT_CATEGORY_ARENA, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {
+		achcat(ACHIEVEMENT_CATEGORY_ARENA, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 			ach(397),	-- Step Into the Arena [1]
 			ach(398),	-- Mercilessly Dedicated [100]
 			ach(875),	-- Vengefully Dedicated
@@ -429,7 +429,7 @@ root("Achievements", {
 		})),
 	})),
 	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
-		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Champion of the Frozen Wastes
+		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Champion of the Frozen Wastes
 			title(97),	-- , Champion of the Frozen Wastes
 		}))),
 		ach(1283, {	-- Classic Dungeonmaster
@@ -455,7 +455,7 @@ root("Achievements", {
 				645,	-- Scholomance
 				646,	-- Stratholme
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1285, {	-- Classic Raider
 			-- Meta Achievement
@@ -465,7 +465,7 @@ root("Achievements", {
 				687,	-- Temple of Ahn'Qiraj
 				689,	-- Ruins of Ahn'Qiraj
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		-- #if ANYCLASSIC
 		applyclassicphase(WRATH_PHASE_TWO, ach(17304, {	-- Defense Protocol Alpha: Terminated
@@ -484,7 +484,7 @@ root("Achievements", {
 				17213,	-- Defense Protocol Alpha: Utgarde Keep
 				17301,	-- Defense Protocol Alpha: Utgarde Pinnacle
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		})),
 		applyclassicphase(WRATH_PHASE_THREE, ach(18614, {	-- Defense Protocol Beta: Terminated (A)
 			-- Meta Achievement
@@ -503,7 +503,7 @@ root("Achievements", {
 				18590,	-- Defense Protocol Beta: Utgarde Keep
 				18600,	-- Defense Protocol Beta: Utgarde Pinnacle
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 		})),
 		applyclassicphase(WRATH_PHASE_THREE, ach(18688, {	-- Defense Protocol Beta: Terminated (H)
@@ -523,7 +523,7 @@ root("Achievements", {
 				18590,	-- Defense Protocol Beta: Utgarde Keep
 				18600,	-- Defense Protocol Beta: Utgarde Pinnacle
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 		})),
 		applyclassicphase(WRATH_PHASE_FOUR, ach(19439, {	-- Defense Protocol Gamma: Terminated (A)
@@ -543,7 +543,7 @@ root("Achievements", {
 				19427,	-- Defense Protocol Gamma: Utgarde Keep
 				19437,	-- Defense Protocol Gamma: Utgarde Pinnacle
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(211082, {	-- Arfus
@@ -568,7 +568,7 @@ root("Achievements", {
 				19427,	-- Defense Protocol Gamma: Utgarde Keep
 				19437,	-- Defense Protocol Gamma: Utgarde Pinnacle
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(211082, {	-- Arfus
@@ -618,7 +618,7 @@ root("Achievements", {
 				2045,	-- Emerald Void
 				2046,	-- Amber Void
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				i(44160),	-- Red Proto-Drake (MOUNT!)
 			},
@@ -646,7 +646,7 @@ root("Achievements", {
 				2148,	-- Denyin' the Scion (10 player)
 				2184,	-- Just Can't Get Enough (10 player)
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 			["groups"] = {
 				i(44175, {	-- Plagued Proto-Drake (MOUNT!)
@@ -690,7 +690,7 @@ root("Achievements", {
 				2147,	-- The Hundred Club (25 player)
 				2185,	-- Just Can't Get Enough (25 player)
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 			["groups"] = {
 				i(44164, {	-- Black Proto-Drake (MOUNT!)
@@ -727,7 +727,7 @@ root("Achievements", {
 				489,	-- Heroic: Utgarde Keep
 				499,	-- Heroic: Utgarde Pinnacle
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1288, {	-- Northrend Dungeonmaster
 			-- Meta Achievement
@@ -745,7 +745,7 @@ root("Achievements", {
 				477,	-- Utgarde Keep
 				488,	-- Utgarde Pinnacle
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		})),
 		ach(1287, {	-- Outland Dungeon Hero
 			-- Meta Achievement
@@ -767,7 +767,7 @@ root("Achievements", {
 				677,	-- Heroic: The Steamvault
 				670,	-- Heroic: Underbog
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1284, {	-- Outland Dungeonmaster
 			-- Meta Achievement
@@ -789,7 +789,7 @@ root("Achievements", {
 				656,	-- The Steamvault
 				650,	-- Underbog
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1286, {	-- Outland Raider
 			-- Meta Achievement
@@ -803,52 +803,52 @@ root("Achievements", {
 				697,	-- The Black Temple
 				698,	-- Sunwell Plateau
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(4784, {	-- Emblematic [A]
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(4785, {	-- Emblematic [H]
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["races"] = HORDE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(3838, {	-- Dungeon & Raid Emblem
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 1,
 		}),
 		ach(3839, {	-- 25 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 25,
 		}),
 		ach(3840, {	-- 50 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 50,
 		}),
 		ach(3841, {	-- 100 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 100,
 		}),
 		ach(3842, {	-- 250 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 250,
 		}),
 		ach(3843, {	-- 500 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 500,
 		}),
 		ach(3844, {	-- 1000 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 1000,
 		}),
 		ach(3876, {	-- 1500 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 1500,
 		}),
 		ach(4316, {	-- 2500 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 			["rank"] = 2500,
 		}),
 	}),
@@ -877,101 +877,101 @@ root("Achievements", {
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(125, {	-- Grand Master Cook
 				["spellID"] = 51296,	-- Cooking (Grand Master)
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 6,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1998, {	-- Dalaran Cooking Award
 				["cost"] = {{ "c", 81, 1 }},	-- Epicurean's Award
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 1,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1999, {	-- 10 Dalaran Cooking Awards
 				["cost"] = {{ "c", 81, 10 }},	-- Epicurean's Award
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 10,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(2000, {	-- 25 Dalaran Cooking Awards
 				["cost"] = {{ "c", 81, 25 }},	-- Epicurean's Award
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 25,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(2001, {	-- 50 Dalaran Cooking Awards
 				["cost"] = {{ "c", 81, 50 }},	-- Epicurean's Award
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 50,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(2002, {	-- 100 Dalaran Cooking Awards
 				["cost"] = {{ "c", 81, 100 }},	-- Epicurean's Award
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 100,
 			})),
 			ach(1801, {	-- Captain Rumsey's Lager
 				["provider"] = { "i", 34832 },	-- Captain Rumsey's Lager
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 			}),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1799, {	-- Chef de Cuisine
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 160,
 			})),
 			ach(1797, {	-- Chef de Partie
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 75,
 			}),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1781, {	-- Critter Gitter
 				["provider"] = { "i", 43004 },	-- Critter Bites
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1785, {	-- Dinner Impossible
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 			})),
 			ach(1795, {	-- Lunch Lady
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 25,
 			}),
 			ach(1796, {	-- Short Order Cook
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 50,
 			}),
 			ach(1798, {	-- Sous Chef
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 100,
 			}),
 			ach(877, {	-- The Cake Is Not A Lie
 				["provider"] = { "i", 33924 },	-- Delicious Chocolate Cake
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 			}),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1777, {	-- The Northrend Gourmet (15)
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 15,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1778, {	-- The Northrend Gourmet (30)
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 30,
 			})),
 			applyclassicphase(WRATH_PHASE_ONE, ach(1779, {	-- The Northrend Gourmet (45)
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 				["rank"] = 45,
 			})),
 			ach(1800, {	-- The Outland Gourmet
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["requireSkill"] = COOKING,
 			}),
 		}),
@@ -982,29 +982,29 @@ root("Achievements", {
 				135,	-- Grand Master in First Aid
 				125,	-- Grand Master Cook
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(735, {	-- Working Day and Night
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		})),
 		ach(116, {	-- Professional Journeyman
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1,
 		}),
 		ach(731, {	-- Professional Expert
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 2,
 		}),
 		ach(732, {	-- Professional Artisan / Professional Classic Master [BFA]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 3,
 		}),
 		ach(733, {	-- Professional Master / Professional Outland Master [BFA]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 4,
 		}),
 		ach(734, {	-- Professional Grand Master / Professional Northrend Master [BFA]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 5,
 		}),
 		ach(4924, {	-- Professional Illustrious Grand Master / Professional Cataclysmic Master [BFA]
@@ -1018,7 +1018,7 @@ root("Achievements", {
 			["timeline"] = { "added 4.2.0" },
 			["groups"] = {
 				i(54810, {	-- Celestial Dragon (PET!)
-					["timeline"] = { "created 3.3.0", "added 4.2.0" },
+					["timeline"] = { CREATED_3_3_0, "added 4.2.0" },
 				}),
 			},
 		})),
@@ -1029,7 +1029,7 @@ root("Achievements", {
 -- #if BEFORE 4.2.0
 root("NeverImplemented", {
 	i(54810, {	-- Celestial Dragon (PET!)
-		["timeline"] = { "created 3.3.0", "added 4.2.0" },
+		["timeline"] = { CREATED_3_3_0, "added 4.2.0" },
 	}),
 });
 -- #endif

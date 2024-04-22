@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local TOME_OF_POLYMORPH_TURTLE = i(22739);
 local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
-	["timeline"] = { "added 3.2.0.10128" },
+	["timeline"] = { ADDED_3_2_0 },
 	["cr"] = 14821,	-- Razzashi Raptor
 });
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR, {
@@ -1474,7 +1474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						-- #if BEFORE WRATH
 						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
 						-- #endif
-						["timeline"] = { "added 3.0.1", "removed 4.1.0" },
+						["timeline"] = { ADDED_3_0_2, "removed 4.1.0" },
 					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon

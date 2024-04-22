@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								5632,	-- Returning Home [Stormwind City]
 								5633,	-- Returning Home [Ironforge]
 							},
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 							["classes"] = { PRIEST },
 							["races"] = { NIGHTELF },
 							["lvl"] = 10,
@@ -907,7 +907,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,

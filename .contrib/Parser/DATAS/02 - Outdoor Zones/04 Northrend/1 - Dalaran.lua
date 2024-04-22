@@ -798,7 +798,7 @@ root(ROOTS.Zones, {
 						prof(FISHING, {
 							i(45903),	-- Corroded Jewelry
 							i(43698, {	-- Giant Sewer Rat (PET!)
-								["timeline"] = { "added 3.0.2.8926" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 						}),
 						n(QUESTS, {
@@ -869,7 +869,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
 								["groups"] = {
 									i(39973, {	-- Ghostly Skull (PET!)
-										["timeline"] = { "added 3.0.2.8970" },
+										["timeline"] = { ADDED_3_0_2 },
 									}),
 								},
 							}),
@@ -1174,7 +1174,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
 							}),
 							i(44738, {	-- Kirin Tor Familiar (PET!)
-								["timeline"] = { "added 3.0.3.9095" },
+								["timeline"] = { ADDED_3_0_3 },
 							}),
 							i(43824, {	-- The Schools of Arcane Magic - Mastery (TOY!)
 								["description"] = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
@@ -1235,55 +1235,55 @@ root(ROOTS.Zones, {
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
 					},  {
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 						["groups"] = {
 							crit(7309, {	-- Proof of Demise: Anub'arak
 								["_quests"] = { 13254 },	-- Proof of Demise: Anub'arak
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7311, {	-- Proof of Demise: Cyanigosa
 								["_quests"] = { 13256 },	-- Proof of Demise: Cyanigosa
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7305, {	-- Proof of Demise: Gal'darah
 								["_quests"] = { 13250 },	-- Proof of Demise: Gal'darah
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7310, {	-- Proof of Demise: Herald Volazj
 								["_quests"] = { 13255 },	-- Proof of Demise: Herald Volazj
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7300, {	-- Proof of Demise: Ingvar the Plunderer
 								["_quests"] = { 13245 },	-- Proof of Demise: Ingvar the Plunderer
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7301, {	-- Proof of Demise: Keristrasza
 								["_quests"] = { 13246 },	-- Proof of Demise: Keristrasza
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7303, {	-- Proof of Demise: King Ymiron
 								["_quests"] = { 13248 },	-- Proof of Demise: King Ymiron
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7302, {	-- Proof of Demise: Ley-Guardian Eregos
 								["_quests"] = { 13247 },	-- Proof of Demise: Ley-Guardian Eregos
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7308, {	-- Proof of Demise: Loken
 								["_quests"] = { 13253 },	-- Proof of Demise: Loken
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7306, {	-- Proof of Demise: Mal'Ganis
 								["_quests"] = { 13251 },	-- Proof of Demise: Mal'Ganis
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7307, {	-- Proof of Demise: Sjonnir The Ironshaper
 								["_quests"] = { 13252 },	-- Proof of Demise: Sjonnir The Ironshaper
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7304, {	-- Proof of Demise: The Prophet Tharon'ja
 								["_quests"] = { 13249 },	-- Proof of Demise: The Prophet Tharon'ja
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 						},
 					})),
@@ -1312,23 +1312,23 @@ root(ROOTS.Zones, {
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
 					}, {
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 						["groups"] = {
 							crit(7296, {	-- Timear Foresees Centrifuge Constructs in your Future!
 								["_quests"] = { 13240 },	-- Timear Foresees Centrifuge Constructs in your Future!
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7298, {	-- Timear Foresees Infinite Agents in your Future!
 								["_quests"] = { 13243 },	-- Timear Foresees Infinite Agents in your Future!
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7299, {	-- Timear Foresees Titanium Vanguards in your Future!
 								["_quests"] = { 13244 },	-- Timear Foresees Titanium Vanguards in your Future!
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 							crit(7297, {	-- Timear Foresees Ymirjar Berserkers in your Future!
 								["_quests"] = { 13241 },	-- Timear Foresees Ymirjar Berserkers in your Future!
-								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 							}),
 						},
 					})),
@@ -1371,7 +1371,7 @@ root(ROOTS.Zones, {
 						i(45323),	-- Severed Arm
 					}),
 					i(43659, {	-- Bloodied Prison Shank
-						["timeline"] = { "added 3.0.2.8982" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					o(193402, {	-- Rusted Prisoner's Footlocker
 						["coord"] = { 64.5, 73.8, NORTHREND_DALARAN },
@@ -1476,7 +1476,7 @@ root(ROOTS.Zones, {
 							{ "i", 49335 },	-- Daros' Journal
 						},
 						["coord"] = { 36.4, 61.0, NORTHREND_DALARAN },
-						["timeline"] = { "added 3.3.0.10772", "removed 4.0.1" },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
+						["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
 						["maps"] = { DARNASSUS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 71,
@@ -2096,7 +2096,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.1
 						["description"] = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
 						-- #endif
-						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
 						["maps"] = {
 							AHNKAHET_THE_OLD_KINGDOM,
 							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
@@ -2129,7 +2129,7 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
 						["maps"] = {
 							AHNKAHET_THE_OLD_KINGDOM,
 							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
@@ -2547,7 +2547,7 @@ root(ROOTS.Zones, {
 					}),
 					q(14160, {	-- Writ of Merit
 						["provider"] = { "i", 47246 },	-- Writ of Merit
-						["timeline"] = { "added 3.2.0.10192", "removed 3.2.1" },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
+						["timeline"] = { ADDED_3_2_0, "removed 3.2.1" },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24588, {	-- XT-002 Deconstructor Must Die!
@@ -2587,14 +2587,14 @@ root(ROOTS.Zones, {
 							applyclassicphase(WRATH_PHASE_TWO, i(45881)),	-- Sparkling Stormjewel
 							i(45998),	-- Battered Jungle Hat
 							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(6522),	-- Deviate Fish
 							i(45861),	-- Diamond-tipped Cane
 							i(46006),	-- Glow Worm
 							i(19971),	-- High Test Eternium Fishing Line
 							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(36783),	-- Northsea Pearl
 							i(40195),	-- Pygmy Oil
@@ -2984,13 +2984,13 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(44822),	-- Albino Snake (PET!)
 							i(46398, {	-- Calico Cat (PET!)
-								["timeline"] = { "added 3.3.0.10522" },
+								["timeline"] = { ADDED_3_3_0 },
 							}),
 							i(129826, {	-- Nursery Spider (PET!)
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(48120, {	-- Obsidian Hatchling (PET!)
-								["timeline"] = { "added 3.2.0.10026" },
+								["timeline"] = { ADDED_3_2_0 },
 							}),
 							i(44820),	-- Red Ribbon Pet Leash (TOY!)
 							i(37460),	-- Rope Pet Leash (TOY!)
@@ -3051,13 +3051,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.8, 46.3, NORTHREND_DALARAN },
 						["groups"] = {
 							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(95621, {	-- Warbot (PET!)
 								["timeline"] = { ADDED_5_2_0 },
 							}),
 							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(192099, {	-- Earpieces of Tranquil Focus (TOY!)
 								["timeline"] = { ADDED_9_2_5 },
@@ -3072,16 +3072,16 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 5.4.0.17227" },
 							}),
 							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(54437, {	-- Tiny Green Ragdoll (TOY!)
-								["timeline"] = { "added 3.3.3.11573" },
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(44606, {	-- Toy Train Set Toy (TOY!)
-								["timeline"] = { "added 3.0.2.8982" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
-								["timeline"] = { "added 3.1.0.9626" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 						},
 					}),
@@ -4701,11 +4701,11 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(44483, {	-- Formula: Enchant 2H Weapon - Massacre (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44490, {	-- Formula: Enchant Boots - Greater Assault (RECIPE!)
 								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44491, {	-- Formula: Enchant Boots - Tuskarr's Vitality (RECIPE!)
 								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
@@ -4715,18 +4715,18 @@ root(ROOTS.Zones, {
 							}),
 							i(44944, {	-- Formula: Enchant Bracer - Major Stamina (RECIPE!)
 								["cost"] = { { "i", 34057, 5 }, },	-- 5x Abyss Crystal
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44498, {	-- Formula: Enchant Bracer - Superior Spellpower (RECIPE!)
 								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(37340, {	-- Formula: Enchant Chest - Exceptional Armor / WOTLK: ormula: Enchant Chest - Exceptional Resilience (RECIPE!)
 								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
 							}),
 							i(44489, {	-- Formula: Enchant Chest - Powerful Stats (RECIPE!)
 								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44472, {	-- Formula: Enchant Cloak - Greater Speed (RECIPE!)
 								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
@@ -4748,19 +4748,19 @@ root(ROOTS.Zones, {
 							}),
 							i(45059, {	-- Formula: Enchant Staff - Greater Spellpower (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44496, {	-- Formula: Enchant Weapon - Accuracy (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44492, {	-- Formula: Enchant Weapon - Berserking (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44495, {	-- Formula: Enchant Weapon - Black Magic (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(37339, {	-- Formula: Enchant Weapon - Giant Slayer (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
@@ -4773,14 +4773,14 @@ root(ROOTS.Zones, {
 							}),
 							i(44487, {	-- Formula: Enchant Weapon - Mighty Spellpower (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44473, {	-- Formula: Enchant Weapon - Scourgebane (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
 							}),
 							i(44486, {	-- Formula: Enchant Weapon - Superior Potency (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
-								["timeline"] = { "added 3.1.0" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 						},
 					}),

@@ -261,16 +261,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 4.0.1.12984" },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
 								["timeline"] = { "added 2.4.0.7897" },
 							}),
 							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
 								["timeline"] = { "added 4.0.1.12984" },
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 49.8, 74.6, STORMWIND_CITY },
 							-- #endif
 						},
-						["timeline"] = { "added 3.0.2.8905" },
+						["timeline"] = { ADDED_3_0_2 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = CLASSIC_INSCRIPTION,
 					}),
@@ -768,7 +768,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5677,	-- Arcane Feedback [Ironforge]
 						5678,	-- Arcane Feedback [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
@@ -790,7 +790,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5677,	-- Arcane Feedback [Ironforge]
 						5678,	-- Arcane Feedback [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,
@@ -1254,7 +1254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,
@@ -1280,7 +1280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,
@@ -1379,7 +1379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5672,	-- Elune's Grace [Darnassus]
 						5675,	-- Elune's Grace [Ironforge]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 20,
@@ -2587,7 +2587,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -2613,7 +2613,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5631,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -4707,7 +4707,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					-- #endif
-					["timeline"] = { "removed 3.0.2.8970" },
+					["timeline"] = { REMOVED_3_0_2 },
 					-- #if BEFORE TBC
 					["sym"] = {	-- Grand Marshal Armor
 						{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },
@@ -4750,7 +4750,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45574, {	-- Stormwind Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),
@@ -4759,7 +4759,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- 34079: Captain O'Neal <Jewelcrafting Quartermaster> (Wrath season 2?)
 				n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
 					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
-					["timeline"] = { "added 3.0.2.8970", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
 						-- #if BEFORE 4.0.3
@@ -4811,7 +4811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE WRATH
 					["description"] = "Found within the Champion's Hall.",
 					-- #endif
-					["timeline"] = { "removed 3.0.2.8970" },
+					["timeline"] = { REMOVED_3_0_2 },
 					-- #if BEFORE 3.0.2.8970
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS },{ "pop" }},	-- Grand Marshal Weapons
 					-- #endif
@@ -5000,13 +5000,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(95621, {	-- Warbot (PET!)
 							["timeline"] = { ADDED_5_2_0 },
 						}),
 						i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(104324, {	-- Foot Ball (TOY!)
 							["timeline"] = { "added 5.4.0.17227" },
@@ -5021,16 +5021,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.4.0.17227" },
 						}),
 						i(54438, {	-- Tiny Blue Ragdoll (TOY!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(54437, {	-- Tiny Green Ragdoll (TOY!)
-							["timeline"] = { "added 3.3.3.11573" },
+							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(44606, {	-- Toy Train Set Toy (TOY!)
-							["timeline"] = { "added 3.0.2.8982" },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 						i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
@@ -6304,7 +6304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(44957, {	-- Greater Inscription of the Gladiator
-							["timeline"] = { "added 3.0.8.9464", "removed 7.0.1" },
+							["timeline"] = { ADDED_3_0_8, "removed 7.0.1" },
 						}),
 						moh(3, i(68772, {	-- Greater Inscription of Vicious Intellect
 							["timeline"] = { "added 4.0.6.13596" },
@@ -6323,12 +6323,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(28347, {	-- Miles Sidney <Poison Supplies>
 					["coord"] = { 74.2, 58.0, STORMWIND_CITY },
-					["timeline"] = { "added 3.0.1.8634" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4565),	-- Simple Dagger
 						i(38579, {	-- Venomous Tome
-							["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
+							["timeline"] = { "created 2.4.2", ADDED_3_0_2 },
 							["isLimited"] = true,
 						}),
 					},
@@ -6340,7 +6340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(45579, {	-- Darnassus Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64887, {	-- Cape of Darnassus
 							["timeline"] = { ADDED_4_0_3 },
@@ -6862,7 +6862,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(30730, {	-- Stanly McCormick <Inscription Supplies>
 					["coord"] = { 49.6, 74.6, STORMWIND_CITY },
-					["timeline"] = { "added 3.0.2.8905" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(79740),	-- Plain Wooden Staff
@@ -7005,7 +7005,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #if BEFORE WRATH
 root(ROOTS.NeverImplemented, {
 	i(38579, {	-- Venomous Tome
-		["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
+		["timeline"] = { "created 2.4.2", ADDED_3_0_2 },
 	}),
 });
 -- #endif

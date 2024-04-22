@@ -1441,7 +1441,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of Minor Accuracy",
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["recipeID"] = 63732
 				},
 				{
@@ -1494,7 +1494,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of Water Walking",
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["recipeID"] = 62410,
 				},
 				{
@@ -2316,7 +2316,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Transmute: Eternal Might",
-					["timeline"] = { "created 3.0.2" },	-- Never Implemented
+					["timeline"] = { CREATED_3_0_2 },	-- Never Implemented
 					["recipeID"] = 54020,
 				},
 				{

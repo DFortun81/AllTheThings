@@ -616,13 +616,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36583),	-- Skeletal Hacker
 			i(36584),	-- Snowy Edge
 			i(36574, {	-- Bone Cleaver
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36577, {	-- Disk Axe
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36575, {	-- Dragonflayer Hatchet
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(TWO_HANDED_AXES, {
@@ -642,7 +642,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36598),	-- Scarlet Battle Axe
 			i(37811),	-- Captain Carver's Persuader
 			i(36589, {	-- Segmenting Broadaxe
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(BOWS, {
@@ -661,10 +661,10 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36626),	-- Military Compound Bow
 			i(37809),	-- Roc-Feather Longbow
 			i(36618, {	-- Twisted Longbow
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36617, {	-- Yielding Bow
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(CROSSBOWS, {
@@ -682,7 +682,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36639),	-- Brutal Ballista
 			i(36640),	-- Scourge Crossbow
 			i(36631, {	-- Horned Crossbow
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(DAGGERS, {
@@ -715,12 +715,12 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36476),	-- Whale Ripper
 			i(36675),	-- Sockeye Dagger
 			i(36477, {	-- Twin-Edged Stilletto
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36676),	-- Water Blade
 			i(36681),	-- Wisdom Carver
 			i(36673, {	-- Wise Dagger
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(FIST_WEAPONS, {
@@ -739,7 +739,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36570),	-- Corrupted Scythes
 			i(37749),	-- Shocking Claws
 			i(36561, {	-- Mummified Paw
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(GUNS, {
@@ -758,7 +758,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36653),	-- Precipice Longrifle
 			i(36654),	-- Harsh-Winter Rifle
 			i(36645, {	-- Tuskarr Boomstick
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(ONE_HANDED_MACES, {
@@ -792,13 +792,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(37805),	-- Melia's Magnificent Scepter
 			i(37808),	-- Dragonjaw Mauler
 			i(36505, {	-- Frosted Steel Mallet
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36493, {	-- Furbolg Truncheon
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36491, {	-- Serrated Maul
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(TWO_HANDED_MACES, {
@@ -833,7 +833,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36612),	-- Scourge War Spear
 			i(37813),	-- Banner Slicer
 			i(36602, {	-- Rust-Covered Polearm
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(STAVES, {
@@ -870,13 +870,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				["timeline"] = { "created 4.0.1", ADDED_10_0_7 },	-- Might have dropped since 4.0.1. Unsure
 			}),
 			i(36547, {	-- Jester's Stick
-				["timeline"] = { "created 2.0.3", "added 3.0.1.8770", "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { "created 2.0.3", ADDED_3_0_2, "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36701, {	-- Pine Needle Staff
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36549, {	-- Pulsing Quarterstaff
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(ONE_HANDED_SWORDS, {
@@ -898,13 +898,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(43611),	-- Krol Cleaver
 			i(44311),	-- Avool's Sword of Jin
 			i(36519, {	-- Moonlit Katana
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
 			i(33430),	-- Abandoned Greatsword
 			i(36533, {	-- Adorned Broadsword
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.3", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36529),	-- Unearthed Broadsword
 			i(36530),	-- Whetted Ironblade
@@ -936,7 +936,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36668),	-- Mindless Wand
 			i(37824),	-- Gwyneth's Runed Dragonwand
 			i(36659, {	-- Shivery Wand
-				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+				["timeline"] = { ADDED_3_0_2, "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		-- #if BEFORE MOP
@@ -1000,7 +1000,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 3.0.1.8770", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { CREATED_3_0_2, "added 6.0.1", "removed 7.0.1" },
 		}),
 		i(36455),	-- Plated Bulwark
 		i(36456),	-- Icy Kite Shield

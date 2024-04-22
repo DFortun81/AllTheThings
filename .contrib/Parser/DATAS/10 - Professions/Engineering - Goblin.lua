@@ -7,12 +7,12 @@ profession(ENGINEERING, {
 			-- #if BEFORE 4.0.1
 			{
 				["name"] = "Bullets",
-				["timeline"] = { "added 3.3.0" },
+				["timeline"] = { ADDED_3_3_0 },
 				["categoryID"] = 1,
 				["groups"] = {
 					applyclassicphase(WRATH_PHASE_FOUR, {
 						["name"] = "Shatter Rounds",
-						["timeline"] = { "added 3.3.0", "deleted 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, "deleted 4.0.1" },
 						["recipeID"] = 72952,
 					}),
 				},
@@ -87,7 +87,7 @@ profession(ENGINEERING, {
 					},
 					{
 						["name"] = "Global Thermal Sapper Charge",
-						["timeline"] = { "added 3.0.1.8820" },
+						["timeline"] = { ADDED_3_0_2 },
 						["recipeID"] = 56514,
 					},
 					applyclassicphase(TBC_PHASE_ONE, {

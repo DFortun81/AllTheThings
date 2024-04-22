@@ -13,7 +13,7 @@ OPERATION_GNOMEREGAN = createHeader({
 });
 root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n(OPERATION_GNOMEREGAN,
 	bubbleDown({
-		["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+		["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 		["races"] = ALLIANCE_ONLY,
 		-- #if ANYCLASSIC
 		["OnUpdate"] = [[function(t)

@@ -279,7 +279,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10929,	-- Haleh
 				["sourceQuest"] = 6501,	-- The Dragon's Eye
 				["coord"] = { 54.55, 51.2, WINTERSPRING },
-				["timeline"] = { "removed 3.0.2" },
+				["timeline"] = { REMOVED_3_0_2 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 50,
 				["groups"] = {
@@ -287,7 +287,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "i", 16663 },	-- Blood of the Black Dragon Champion
 					}),
 					i(16309, {	-- Drakefire Amulet
-						["timeline"] = { "removed 3.0.2" },
+						["timeline"] = { REMOVED_3_0_2 },
 					}),
 				},
 			}),
@@ -1664,10 +1664,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "n",  10161 },	-- Rookery Whelp
 							{ "o", 175124 },	-- Rookery Egg
 						},
-						["timeline"] = { "added 3.0.1", "removed 6.0.2" },
+						["timeline"] = { ADDED_3_0_2, "removed 6.0.2" },
 						["groups"] = {
 							title(110, {	-- Jenkins
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 								["style"] = 2,
 							}),
 						},

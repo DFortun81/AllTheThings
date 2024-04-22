@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5646,	-- Devouring Plague [Orgrimmar]
 						5679,	-- Devouring Plague [Undercity]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -537,7 +537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 38.7, 35.9, ORGRIMMAR },
 						{ 23.0, 20.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 5178, 1 },	-- Air Totem
 						{ "i", 5175, 1 },	-- Earth Totem
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(46978, {	-- Totem of the Earthen Ring
-							["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -840,7 +840,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5661,	-- Touch of Weakness [Mulgore]
 						5662,	-- Touch of Weakness [Orgrimmar]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
@@ -940,7 +940,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = { TAUREN },
 						}),
 						i(45584, {	-- Thunder Bluff Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64917, {	-- Cape of Thunder Bluff
 							["timeline"] = { ADDED_4_0_3 },

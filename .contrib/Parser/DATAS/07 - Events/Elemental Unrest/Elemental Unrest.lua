@@ -15,7 +15,7 @@ ELEMENTAL_UNREST = createHeader({
 });
 root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n(ELEMENTAL_UNREST,
 	bubbleDown({
-		["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+		["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 		-- #if ANYCLASSIC
 		["OnUpdate"] = [[function(t)
 			if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
@@ -38,7 +38,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 			-- #if AFTER 4.0.1
 			n(ACHIEVEMENTS, {
 				ach(4887, {	-- Tripping the Rifts
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 				}),
 			}),
 			n(QUESTS, {

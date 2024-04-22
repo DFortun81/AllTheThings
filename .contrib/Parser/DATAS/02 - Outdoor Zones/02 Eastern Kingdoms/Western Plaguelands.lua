@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(383, {	-- Thondroril River, Western Plaguelands
 					["cr"] = 37888,	-- Frax Bucketdrop <Flight Master>
 					["coord"] = { 69.3, 49.7, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 3.3.0.10522" },
+					["timeline"] = { ADDED_3_3_0 },
 				}),
 				-- #endif
 			}),

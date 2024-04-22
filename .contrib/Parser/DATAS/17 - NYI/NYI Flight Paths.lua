@@ -103,7 +103,7 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = { "created 3.0.1" } }, {
+		expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 			fp(165, {["description"] = "Transport, Northrend 2"}),
 			fp(175, {["description"] = "Transport, Howling Fjord"}),
 			fp(176, {["description"] = "Quest - Howling Fjord Tauren Canoe (Start)"}),

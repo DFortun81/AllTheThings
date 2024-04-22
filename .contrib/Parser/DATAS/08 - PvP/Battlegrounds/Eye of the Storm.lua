@@ -26,39 +26,39 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 							233,	-- Bloodthirsty Berserker
 						},
 					},
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(208, {	-- Eye of the Storm Victory
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["rank"] = 1,
 				}),
 				ach(209, {	-- Eye of the Storm Veteran
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["rank"] = 100,
 				}),
 				ach(233, {	-- Bloodthirsty Berserker
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(216, {	-- Bound for Glory
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(784, {	-- Eye of the Storm Domination
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(214, {	-- Flurry
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(212, {	-- Storm Capper
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(211, {	-- Storm Glory
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(213, {	-- Stormtrooper
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(587, {	-- Stormy Assassin
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["groups"] ={
 						crit(441),	-- Kill 5 people at the Blood Elf Tower
 						crit(442),	-- Kill 5 people at the Draenei Ruins
@@ -67,10 +67,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				ach(1258, {	-- Take a Chill Pill
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(783, {	-- The Perfect Storm
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 			}),
 			n(REWARDS, {

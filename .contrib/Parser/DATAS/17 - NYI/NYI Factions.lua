@@ -294,7 +294,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = {"created 3.0.1"} }, {
+		expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_3_0_2} }, {
 			faction(1045),	-- Vrykul
 			faction(1046),	-- Northsea Pirates
 			faction(1047),	-- Tuskarr
@@ -348,12 +348,12 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		})),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, 1.0, bubbleDownSelf({ ["timeline"] = {"created 3.1.0"} }, {
+		expansion(EXPANSION.WRATH, 1.0, bubbleDownSelf({ ["timeline"] = {CREATED_3_1_0} }, {
 			faction(1127),	-- Orgrimmar (Alex Test)
 		})),
 
 		-- 3.3.5
-		expansion(EXPANSION.WRATH, 3.5, bubbleDownSelf({ ["timeline"] = {"created 3.3.5"} }, {
+		expansion(EXPANSION.WRATH, 3.5, bubbleDownSelf({ ["timeline"] = {CREATED_3_3_5} }, {
 			faction(1136),	-- Tranquillien Conversion
 			faction(1137),	-- Wintersaber Conversion
 			faction(1145),	-- Hates Everything

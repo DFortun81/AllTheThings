@@ -118,7 +118,7 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(43622, {	-- Froststeel Lockbox
-				["timeline"] = { "added 3.0.2.8926" },
+				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(88567, {	-- Ghost Iron Lockbox
 				["timeline"] = { "added 5.0.1.15752" },
@@ -258,7 +258,7 @@ root(ROOTS.WorldDrops, {
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(43575, {	-- Reinforced Junkbox
-				["timeline"] = { "added 3.0.2.8905" },
+				["timeline"] = { ADDED_3_0_2 },
 				["sym"] = { {
 					"select", "itemID",
 					43611,  -- Krol Cleaver

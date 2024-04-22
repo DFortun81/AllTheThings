@@ -4,11 +4,11 @@
 local revampAch = function(id, t)
 	-- Crieve NOTE: Didn't feel like indenting and stuff. :)
 	t = ach(id, t);
-	t.timeline = { "added 3.1.0", "removed 7.3.5.25727" };
+	t.timeline = { ADDED_3_1_0, "removed 7.3.5.25727" };
 	return t;
 end
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
-	inst(759, bubbleDownSelf({ ["timeline"] = { "added 3.1.0" } }, {	-- Ulduar
+	inst(759, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {	-- Ulduar
 		["mapID"] = ULDUAR,
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
@@ -200,13 +200,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			}),
 			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
-				["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+				["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					-- #if AFTER 7.3.5.25727
 					n(ACHIEVEMENTS, {
 						ach(2957, {	-- Glory of the Ulduar Raider (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3056,	-- Orbit-uary (10 player)
@@ -298,7 +298,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2892),	-- The Descent into Madness (10 player)
 						revampAch(2890),	-- The Keepers of Ulduar (10 player)
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2886,	-- The Siege of Ulduar (10 player)
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #else
 					n(ACHIEVEMENTS, {
 						ach(2957, {	-- Glory of the Ulduar Raider (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3056,	-- Orbit-uary (10 player)
@@ -339,12 +339,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
-							["timeline"] = { "added 3.1.0", "removed 4.0.1" },
+							["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
 						},{
 							title(127),	-- , Champion of Ulduar
 						})),
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2886,	-- The Siege of Ulduar (10 player)
@@ -354,7 +354,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 						}),
 						ach(2888, {	-- The Antechamber of Ulduar (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10580, {	-- Assembly of Iron
 									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -368,7 +368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2892, {	-- The Descent into Madness (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9948, {	-- General Vezax
 									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -379,7 +379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2890, {	-- The Keepers of Ulduar (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10560, {	-- Hodir
 									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -396,7 +396,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2886, {	-- The Siege of Ulduar (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9968, {	-- Flame Leviathan
 									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -413,7 +413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(3097, {	-- Dwarfageddon (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["crs"] = {
 								33236,	-- Steelforged Defender
 								33572,	-- Steelforged Defender
@@ -426,7 +426,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								{ "n", 32914 },	-- Elder Stonebark
 							},
 							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 						}),
 					}),
 					n(QUESTS, {
@@ -1010,13 +1010,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
-				["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+				["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					-- #if AFTER 7.3.5.25727
 					n(ACHIEVEMENTS, {
 						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3057,	-- Orbit-uary (25 player)
@@ -1107,7 +1107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2893),	-- The Descent into Madness (25 player)
 						revampAch(2891),	-- The Keepers of Ulduar (25 player)
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2887,	-- The Siege of Ulduar (25 player)
@@ -1142,7 +1142,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #else
 					n(ACHIEVEMENTS, {
 						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3057,	-- Orbit-uary (25 player)
@@ -1164,12 +1164,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
-							["timeline"] = { "added 3.1.0", "removed 4.0.1" },
+							["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
 						},{
 							title(126),	-- , Conqueror of Ulduar
 						})),
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2887,	-- The Siege of Ulduar (25 player)
@@ -1179,7 +1179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 						}),
 						ach(2889, {	-- The Antechamber of Ulduar (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10581, {	-- Assembly of Iron
 									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1193,7 +1193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2893, {	-- The Descent into Madness (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9964, {	-- General Vezax
 									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1204,7 +1204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2891, {	-- The Keepers of Ulduar (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(10562, {	-- Hodir
 									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1221,7 +1221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2887, {	-- The Siege of Ulduar (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["groups"] = {
 								crit(9969, {	-- Flame Leviathan
 									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1238,7 +1238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(3098, {	-- Dwarfageddon (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 							["crs"] = {
 								33236,	-- Steelforged Defender
 								33572,	-- Steelforged Defender
@@ -1251,7 +1251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								{ "n", 32914 },	-- Elder Stonebark
 							},
 							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["timeline"] = { ADDED_3_1_0, "removed 7.3.5.25727" },
 						}),
 						ach(3259, {	-- Realm First! Celestial Defender
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },

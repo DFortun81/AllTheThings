@@ -28,7 +28,7 @@ applyclassicphase(PHASE_SIX,
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 3456,	-- Naxxramas
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
-		["timeline"] = { "removed 3.0.2" },
+		["timeline"] = { REMOVED_3_0_2 },
 		-- #endif
 		-- #if AFTER CATA
 		["sharedLockout"] = 1,
@@ -39,7 +39,7 @@ applyclassicphase(PHASE_SIX,
 		-- #if BEFORE WRATH
 		["lvl"] = 60,
 		-- #endif
-		["groups"] = bubbleDown({ ["timeline"] = { "removed 3.0.2" } }, {
+		["groups"] = bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {
 			-- #if AFTER WRATH
 			d(9, applyclassicphase(PHASE_SIX, {	-- 40 Player (Legacy)
 				["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
@@ -2060,7 +2060,7 @@ applyclassicphase(PHASE_SIX,
 										-- #if BEFORE TBC
 										["description"] = "These were made available after the TBC Prepatch.",
 										-- #endif
-										["timeline"] = { "created 1.11.1.5462", "added 2.0.1.6180", "removed 3.0.2" },
+										["timeline"] = { "created 1.11.1.5462", "added 2.0.1.6180", REMOVED_3_0_2 },
 									}),
 									i(23047),	-- Eye of the Dead
 									i(23040),	-- Glyph of Deflection

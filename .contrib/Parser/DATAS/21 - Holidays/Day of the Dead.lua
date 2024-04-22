@@ -33,13 +33,13 @@ local COSTUME_PROVIDERS = {
 	{ "i", 116891 },	-- "Snowy Owl" Contender's Costume
 };
 root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER, {
-	["timeline"] = { "added 3.2.2.10505" },
+	["timeline"] = { ADDED_3_2_2 },
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(3456, {	-- Dead Man's Party
 				["provider"] = { "n", 34383 },	-- Catrina
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["coords"] = {
 					{ 47.8, 55.9, AZUREMYST_ISLE },
 					-- #if AFTER 7.0.1
@@ -75,7 +75,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 		}),
 		-- #endif
 		n(QUESTS, bubbleDown({
-			["timeline"] = { "added 3.2.2.10505" },
+			["timeline"] = { ADDED_3_2_2 },
 			["cost"] = {
 				{ "i", 46861, 1 },	-- Bouquet of Orange Marigolds
 				{ "i", 46718, 1 },	-- Orange Marigold
@@ -84,7 +84,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			["isYearly"] = true,
 			["groups"] = {
 				i(46831, {	-- Macabre Marionette (PET!)
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 				}),
 			},
 		}, {
@@ -191,7 +191,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					{ 39.9, 21.8, TEROKKAR_FOREST },
 					{ 62.2, 67.4, TIRISFAL_GLADES },
 				},
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["groups"] = {
 					i(116856, {	-- "Blooming Rose" Contender's Costume (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
@@ -209,10 +209,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
 					i(46861, {	-- Bouquet of Orange Marigolds
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(46690, {	-- Candy Skull
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(208859, {	-- Cliffside Wylderdrake: Day of the Dead Armor (DM!)
 						["timeline"] = { ADDED_10_1_7 },
@@ -221,16 +221,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(46718, {	-- Orange Marigold
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(46710, {	-- Recipe: Bread of the Dead (RECIPE!)
 						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(46711, {	-- Spirit Candle
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(46860, {	-- Whimsical Skull Mask (Cosmetic)
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(79048, {	-- Whimsical Skull Mask
 						["timeline"] = { "added 5.0.1" },

@@ -3864,10 +3864,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 60.7, 13.4, THE_BARRENS },
 						-- #endif
 					},
-					["timeline"] = { "added 3.2.0.10072" },
+					["timeline"] = { ADDED_3_2_0 },
 					["groups"] = {
 						i(48118, {	-- Leaping Hatchling (PET!)
-							["timeline"] = { "added 3.2.0.10072" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -3946,7 +3946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(5051),	-- Dig Rat
 						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
-							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
+							["timeline"] = { ADDED_3_1_0, "deleted 4.3.0.15005" },
 						}),
 					},
 				}),

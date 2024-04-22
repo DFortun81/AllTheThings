@@ -183,15 +183,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ZONE_DROPS, {
 				i(37115),	-- Crusader's Square Pauldrons
 				i(37697, {	-- Trade District Knife
-					["timeline"] = { "created 3.0.3", "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_3, "added 7.3.5" },
 				}),
 				i(37116),	-- Epaulets of Market Row
 				i(37699, {	-- Festival Lane Girdle
-					["timeline"] = { "created 3.0.3", "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_3, "added 7.3.5" },
 				}),
 				i(37117),	-- King's Square Bracers
 				i(37698, {	-- Spaulders of Elder's Square
-					["timeline"] = { "created 3.0.3", "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_3, "added 7.3.5" },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
@@ -298,7 +298,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 						}),
 					}),
 					-- #endif

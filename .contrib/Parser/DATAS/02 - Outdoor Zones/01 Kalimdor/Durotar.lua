@@ -2628,7 +2628,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14088, {	-- Learn to Ride in Durotar
 					["provider"] = { "i", 46883 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0.10958", "removed 4.0.1" },
+					["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3516,7 +3516,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5662,	-- Touch of Weakness [Orgrimmar]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,

@@ -280,7 +280,7 @@ root(ROOTS.Zones, {
 					q(13374, {	-- Amped for Revolt!
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["coord"] = { 54.0, 36.9, ICECROWN },
-						["timeline"] = { "created 3.3.0.10772" },	-- This wasn't seen during Wrath Classic
+						["timeline"] = { CREATED_3_3_0 },	-- This wasn't seen during Wrath Classic
 						["races"] = HORDE_ONLY,
 					}),
 					q(13169, {	-- An Undead's Best Friend
@@ -2153,7 +2153,7 @@ root(ROOTS.Zones, {
 					q(13381, {	-- Watts My Target
 						["qg"] = 32444,	-- Kibli Killohertz
 						["coord"] = { 54.0, 42.8, ICECROWN },
-						["timeline"] = { "created 3.3.0.10772" },	-- This wasn't seen in Wrath Classic.
+						["timeline"] = { CREATED_3_3_0 },	-- This wasn't seen in Wrath Classic.
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13117, {	-- Where Are They Coming From?
@@ -2317,29 +2317,29 @@ root(ROOTS.Zones, {
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
-						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
 					i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance (RECIPE!)
-						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
 							30921,	-- Skeletal Runesmith
 						},
 					}),
 					i(37332, {	-- Formula: Enchant Cloak - Superior Frost Resistance (RECIPE!)
-						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
 						["cr"] = 32289,	-- Damned Apothecary
 					}),
 					i(37333, {	-- Formula: Enchant Cloak - Superior Nature Resistance (RECIPE!)
-						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
 						["cr"] = 32290,	-- Cult Alchemist
 					}),
 					i(37334, {	-- Formula: Enchant Cloak - Superior Shadow Resistance (RECIPE!)
-						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
 					i(44563, {	-- Pattern: Fur Lining - Arcane Resist (RECIPE!)

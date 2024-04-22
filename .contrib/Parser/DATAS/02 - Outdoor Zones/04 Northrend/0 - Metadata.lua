@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 		["lore"] = "Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Northrend_01",
 		["zone-text-continent"] = true,
-		["timeline"] = { "added 3.0.2.8905" },	-- NOTE: This is the base patch for all of the content on this continent and does not need to be added to everything within it.
+		["timeline"] = { ADDED_3_0_2 },	-- NOTE: This is the base patch for all of the content on this continent and does not need to be added to everything within it.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(2257, {	-- Frostbitten
@@ -108,7 +108,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1358, 1356, 38, 1357, 1359, 39, 36, 40); end]],
 					-- #endif
-					["timeline"] = { "added 3.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				})),
 				ach(2256, {	-- Northern Exposure

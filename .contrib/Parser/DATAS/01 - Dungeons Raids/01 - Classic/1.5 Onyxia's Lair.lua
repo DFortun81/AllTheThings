@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local ADDED_WITH_RERELEASE = { "added 3.2.2" };
+local ADDED_WITH_RERELEASE = { ADDED_3_2_2 };
 local REMOVED_WITH_RERELEASE = {
 	"added 1.0.1",
 	-- #if ANYCLASSIC
@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				applyclassicphase(WRATH_PHASE_THREE, q(24428, {	-- A Most Puzzling Circumstance (A)
 					["provider"] = { "i", 49644 },	-- Head of Onyxia (A)
-					["timeline"] = { "added 3.3.0.10571" },
+					["timeline"] = { ADDED_3_3_0 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, q(24429, {	-- A Most Puzzling Circumstance (H)
 					["provider"] = { "i", 49643 },	-- Head of Onyxia (H)
-					["timeline"] = { "added 3.3.0.10571" },
+					["timeline"] = { ADDED_3_3_0 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 80,

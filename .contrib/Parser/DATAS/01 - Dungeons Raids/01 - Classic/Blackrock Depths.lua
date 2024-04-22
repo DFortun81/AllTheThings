@@ -91,14 +91,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 3.0.2
 					["description"] = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
 					-- #endif
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(4282, {	-- A Shred of Hope
 					["qg"] = 9023,	-- Marshal Windsor
 					["sourceQuest"] = 4264,	-- A Crumpled Up Note
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -164,17 +164,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4242, {	-- Abandoned Hope
 					["qg"] = 9023,	-- Marshal Windsor
 					["sourceQuest"] = 4241,	-- Marshal Windsor
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12018, {	-- Conservator Helm
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						i(12021, {	-- Shieldplate Sabatons
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						i(12041, {	-- Windshear Leggings
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 					},
 				}),
@@ -261,7 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
 					-- #endif
 					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -375,18 +375,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4322, {	-- Jail Break!
 					["qg"] = 9023,	-- Marshal Windsor
 					["sourceQuest"] = 4282,	-- A Shred of Hope
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12061, {	-- Blade of Reckoning
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						i(12062, {	-- Skilled Fighting Blade
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						i(12065, {	-- Ward of the Elements
-							["timeline"] = { "removed 3.0.2" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 					},
 				}),
@@ -465,7 +465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4224,	-- The True Masters (6/6)
 					["coord"] = { 84.74, 69.02, BURNING_STEPPES },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -1155,7 +1155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4322,	-- Jail Break!
 					["coord"] = { 84.7, 69.0, BURNING_STEPPES },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -1226,7 +1226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
 					-- #endif
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -1258,7 +1258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
 					-- #endif
 					["coord"] = { 64.7, 76.8, STORMWIND_CITY },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -1577,7 +1577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 4182,	-- Dragonkin Menace
 					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -1588,7 +1588,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 4183,	-- The True Masters (1/6)
 					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -1596,7 +1596,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 4184,	-- The True Masters (2/6)
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -1607,7 +1607,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 4185,	-- The True Masters (3/6)
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -1615,7 +1615,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 344,	-- Magistrate Solomon
 					["sourceQuest"] = 4186,	-- The True Masters (4/6)
 					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -1623,7 +1623,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4223,	-- The True Masters (5/6)
 					["coord"] = { 84.74, 69.02, BURNING_STEPPES },
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -2458,7 +2458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 9025,
 					["groups"] = {
 						i(45050, {	-- Formula: Smoking Heart of the Mountain [BOP] (RECIPE!)
-							["timeline"] = { "added 3.1.0.9658" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(11813, {	-- Formula: Smoking Heart of the Mountain [BOE] (RECIPE!)
 							["timeline"] = { "removed 3.1.0.9658" },

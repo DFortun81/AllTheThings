@@ -1698,7 +1698,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Icebane Bracers",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28244,
 				}),
 				{
@@ -1785,7 +1785,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Icebane Gauntlets",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28243,
 				}),
 				{
@@ -1903,7 +1903,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Icebane Breastplate",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28242,
 				}),
 				{
@@ -2335,7 +2335,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Corruption",
-					["timeline"] = { "removed 2.0.1", "added 3.0.1", REMOVED_4_0_3, "added 7.1.5" },
+					["timeline"] = { "removed 2.0.1", ADDED_3_0_2, REMOVED_4_0_3, "added 7.1.5" },
 					["recipeID"] = 16985,
 				},
 				{
@@ -2544,7 +2544,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Serenity",
-					["timeline"] = { "removed 2.0.1", "added 3.0.1" },
+					["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
 					["recipeID"] = 16983,
 				},
 				-- #endif
@@ -3182,7 +3182,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",

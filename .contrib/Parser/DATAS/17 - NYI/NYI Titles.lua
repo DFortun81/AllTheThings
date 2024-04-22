@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, filter(TITLES, {
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { "created 3.0.2" } }, {
+		expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 			title(69),	-- Doctor <Name>
 			title(64),	-- Grand Master Alchemist <Name>
 			title(70),	-- Grand Master Angler <Name>
@@ -23,7 +23,7 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 		})),
 
 		-- Unknown
-		n(P3xx, bubbleDownSelf({ ["timeline"] = { "created 3.0.2" } }, {
+		n(P3xx, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 			title(83),	-- <Name>, Champion of Elune
 			title(91),	-- <Name>, Hero of Northrend
 			title(84),	-- <Name>, Hero of Orgrimmar

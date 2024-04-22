@@ -604,7 +604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2358, {	-- Horns of Nez'ra
 					["qg"] = 7009,	-- Arantir <The Hand of Chaos>
 					["coord"] = { 28.4, 52.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "created 1.11.1", "added 3.0.1", REMOVED_4_0_3 },
+					["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,

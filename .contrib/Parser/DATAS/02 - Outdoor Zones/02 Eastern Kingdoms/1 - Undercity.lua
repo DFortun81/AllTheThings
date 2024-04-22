@@ -79,16 +79,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 4.0.1.12984" },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
 								["timeline"] = { "added 2.4.0.7897" },
 							}),
 							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { "added 3.1.0.9658" },
+								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
 								["timeline"] = { "added 4.0.1.12984" },
@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 9180,	-- Journey to Undercity [Blood Elf Only]
 					["coord"] = { 57.8, 90.6, UNDERCITY },
-					["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5646,	-- Devouring Plague [Orgrimmar]
 						5644,	-- Devouring Plague [Thunder Bluff]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5646,	-- Devouring Plague [Orgrimmar]
 						5644,	-- Devouring Plague [Thunder Bluff]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -1154,7 +1154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6467,	-- Mennet Carkad
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 14420,	-- The Deathstalkers (1/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1188,7 +1188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6522,	-- Andron Gant
 					["sourceQuest"] = 14419,	-- The Deathstalkers (2/4)
 					["coord"] = { 54.6, 75.6, UNDERCITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1206,7 +1206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 14421,	-- The Deathstalkers (3/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1314,7 +1314,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5662,	-- Touch of Weakness [Orgrimmar]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
@@ -1338,7 +1338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5662,	-- Touch of Weakness [Orgrimmar]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
@@ -1486,7 +1486,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45583, {	-- Undercity Tabard
-							["timeline"] = { "added 3.1.0.9626" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),

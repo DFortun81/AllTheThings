@@ -1269,7 +1269,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Vest",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28207,
 				}),
 				{
@@ -1412,7 +1412,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Wrists",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28209,
 				}),
 				{
@@ -1529,7 +1529,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Gloves",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28205,
 				}),
 				{
@@ -1810,7 +1810,7 @@ profession(TAILORING, {
 				}),
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Cloak",
-					["timeline"] = { "removed 3.0.2" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28208,
 				}),
 				{
@@ -1843,7 +1843,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(WRATH_PHASE_ONE, {
 					["name"] = "Spidersilk Drape",
-					["timeline"] = { "added 3.1.0" },
+					["timeline"] = { ADDED_3_1_0 },
 					["recipeID"] = 63742
 				}),
 				{

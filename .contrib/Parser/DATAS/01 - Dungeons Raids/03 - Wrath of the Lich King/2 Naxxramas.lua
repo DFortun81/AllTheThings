@@ -1699,7 +1699,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #elseif BEFORE 8.0.1
 									["description"] = "This item was originally unavailable until Patch 8.0.1 after the AllTheThings Discord reported it missing from the Patchwerk loot table. Interestingly enough, its absense triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 									-- #endif
-									["timeline"] = { "created 3.0.2.8905", "added 8.0.1" },
+									["timeline"] = { CREATED_3_0_2, "added 8.0.1" },
 								}),
 								i(39273),	-- Sullen Cloth Boots
 							},
@@ -1875,7 +1875,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #elseif BEFORE 8.0.1
 									["description"] = "This item was originally unavailable until Patch 8.0.1 after the AllTheThings Discord reported it missing from the Patchwerk loot table. Interestingly enough, its absense triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 									-- #endif
-									["timeline"] = { "created 3.0.2.8905", "added 8.0.1" },
+									["timeline"] = { CREATED_3_0_2, "added 8.0.1" },
 								}),
 								i(39224),	-- Leggings of Discord
 								i(39280),	-- Leggings of Innumerable Barbs

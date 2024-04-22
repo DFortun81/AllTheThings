@@ -131,7 +131,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					1790,				-- Hail To The King, Baby
 				},
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				--title_gendered(105, 104),	-- Patron / Matron
 				title_female(104),	-- Matron %s
@@ -139,9 +139,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 		}),
 		ach(1792, {	-- Aw, Isn't It Cute?
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(1788, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bad Example
+		ach(1788, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Bad Example
 			crit(6656, {	-- Dalaran Brownie
 				["provider"] = { "i", 42431 },	-- Dalaran Brownie
 				["maps"] = {
@@ -228,19 +228,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			}),
 		})),
 		ach(1789, {	-- Daily Chores
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1790, {	-- Hail To The King, Baby
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = {
 				136,	-- Lower Pinnacle, Utgarde Pinnacle
 				137,	-- Upper Pinnacle, Utgarde Pinnacle
 			},
 		}),
 		ach(1791, {	-- Home Alone
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(1786, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- School of Hard Knocks
+		ach(1786, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- School of Hard Knocks
 			crit(6643, {	-- Assault a flag in Arathi Basin
 				["maps"] = {
 					ARATHI_BASIN,
@@ -268,7 +268,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				},
 			}),
 		})),
-		ach(275, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Veteran Nanny
+		ach(275, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Veteran Nanny
 			["maps"] = { SHATTRATH_CITY },
 			["groups"] = {
 				-- #if NOT ANYCLASSIC
@@ -332,7 +332,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13956,	-- Meeting a Great One
 				13954,	-- The Dragon Queen
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			-- #if AFTER 7.0.3.22290
 			["coords"] = {
 				{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
@@ -358,7 +358,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13955,	-- The Dragon Queen
 				13957,	-- The Mighty Hemet Nesingwary
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			-- #if AFTER 7.0.3.22290
 			["coords"] = {
 				{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
@@ -508,13 +508,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 13937,	-- A Trip To The Wonderworks
 			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["cr"] = 34365,	-- Orphan Matron Aria
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 			["groups"] = {
 				i(46545, {	-- Curious Oracle Hatchling (PET!)
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 				}),
 				PET_CARE_PACKAGE,
 				i(23022),	-- Curmudgeon's Payoff
@@ -527,12 +527,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 13938,	-- A Trip To The Wonderworks
 			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 			["groups"] = {
 				i(46544, {	-- Curious Wolvar Pup (PET!)
-					["timeline"] = { "added 3.2.0.10026" },
+					["timeline"] = { ADDED_3_2_0 },
 				}),
 				PET_CARE_PACKAGE,
 				i(23022),	-- Curmudgeon's Payoff
@@ -759,7 +759,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 51.69, 40.74, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
 				{ 50.71, 42.75, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -904,14 +904,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		q(13927, {	-- Little Orphan Kekek Of The Wolvar [Neutral - Wolvar - START]
 			["qg"] = 34365,	-- Orphan Matron Aria
 			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 		}),
 		q(13926, {	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 			["qg"] = 34365,	-- Orphan Matron Aria
 			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 		}),
@@ -981,7 +981,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 40.66, 84.18, SHOLAZAR_BASIN },	-- Waygate Entrance
 				{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1026,7 +1026,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 42.06, 11.26, BOREAN_TUNDRA },	-- Path branches
 				{ 42.68, 12.61, BOREAN_TUNDRA },	-- Roo visits Winterfin
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1038,7 +1038,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
 			["coord"] = { 46.38, 67.79, DRAGONBLIGHT },	-- Kekek taken to Snowfall Glade
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1192,7 +1192,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 51.69, 40.74, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
 				{ 50.71, 42.75, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1224,7 +1224,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
 				{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1239,7 +1239,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
 				{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
 			},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1255,7 +1255,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13934,	-- The Bronze Dragonshrine
 			},
 			["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1271,7 +1271,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13934,	-- The Bronze Dragonshrine
 			},
 			["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -1324,7 +1324,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13934,	-- The Bronze Dragonshrine
 			},
 			["coord"] = { 27.11, 58.73, SHOLAZAR_BASIN },	-- Meet Hemest Nesingwary
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { NORTHREND_DALARAN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),

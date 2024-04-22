@@ -238,7 +238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["creatureID"] = 18373,
 						["groups"] = {
 							ach(672, {	-- Heroic: Auchenai Crypts
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							ach(5072, {	-- Heroic: Auchenai Crypts Guild Run
 								["timeline"] = { ADDED_4_0_3 },

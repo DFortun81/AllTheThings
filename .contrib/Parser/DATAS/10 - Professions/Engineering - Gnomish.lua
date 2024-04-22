@@ -10,12 +10,12 @@ profession(ENGINEERING, {
 			-- #if BEFORE 4.0.1
 			{
 				["name"] = "Bullets",
-				["timeline"] = { "added 3.3.0" },
+				["timeline"] = { ADDED_3_3_0 },
 				["categoryID"] = 1,
 				["groups"] = {
 					applyclassicphase(WRATH_PHASE_FOUR, {
 						["name"] = "Iceblade Arrow",
-						["timeline"] = { "added 3.3.0", "deleted 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, "deleted 4.0.1" },
 						["recipeID"] = 72953,
 					}),
 				},
@@ -124,7 +124,7 @@ profession(ENGINEERING, {
 					}),
 					{
 						["name"] = "Gnomish X-Ray Specs",
-						["timeline"] = { "added 3.0.1.8820" },
+						["timeline"] = { ADDED_3_0_2 },
 						["recipeID"] = 56473,
 					},
 				},

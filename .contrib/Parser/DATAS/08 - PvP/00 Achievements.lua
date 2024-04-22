@@ -155,7 +155,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(869, {	-- 50000 Honorable Kills
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["rank"] = 50000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
@@ -163,7 +163,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(870, {	-- 100000 Honorable Kills
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["rank"] = 100000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
@@ -199,7 +199,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			1171,	-- Master of Eye of the Storm
 		}},
 		-- #endif
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
@@ -225,7 +225,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			1171,	-- Master of Eye of the Storm
 		}},
 		-- #endif
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
@@ -270,7 +270,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
 			-- #endif
 		},
-		["timeline"] = { "added 3.0.1", REMOVED_9_0_1 },
+		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
 		["maps"] = { THUNDER_BLUFF },
 		["races"] = ALLIANCE_ONLY,
 	}),
@@ -317,11 +317,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(909, {	-- Call to Arms! (Horde)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 	})),
 	ach(12180, {	-- Catching Twenty-Two
@@ -350,11 +350,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	-- #endif
 	ach(388, {		-- City Defender (Alliance)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(1006, {		-- City Defender (Horde)
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 	}),
 	-- #if AFTER 3.0.1
@@ -410,12 +410,12 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
 	ach(227, {		-- Damage Control
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	-- #if BEFORE CATA
 	ach(616, {		-- Death to the King! [WRATH] / Overthrow the Council [CATA+]
 		["provider"] = { "n", 2784 },	-- King Magni Bronzebeard <Lord of Ironforge>
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["maps"] = { IRONFORGE },
 		["races"] = HORDE_ONLY,
 	}),
@@ -430,7 +430,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 4949 },	-- Thrall <Warchief>
 			-- #endif
 		},
-		["timeline"] = { "added 3.0.1", "removed 7.0.3" },
+		["timeline"] = { ADDED_3_0_2, "removed 7.0.3" },
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),
@@ -457,7 +457,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 10181 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 			-- #endif
 		},
-		["timeline"] = { "added 3.0.1", "removed 8.3.0" },
+		["timeline"] = { ADDED_3_0_2, "removed 8.3.0" },
 		["maps"] = {
 			-- #if AFTER 8.0.1
 			ORGRIMMAR,
@@ -468,7 +468,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(1157, {		-- Duel-icious
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	ach(11693, {	-- Eighteen and Over
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
@@ -531,11 +531,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			-- #endif
 			613,	-- Killed in Quel'Thalas
 		}},
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(44223, {	-- Black War Bear (A) (MOUNT!)
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 		},
@@ -555,11 +555,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			616,	-- Death to the King! [WRATH] / Overthrow the Council [CATA+]
 			618,	-- Putting Out the Light
 		}},
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(44224, {	-- Black War Bear (H) (MOUNT!)
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 				["races"] = HORDE_ONLY,
 			}),
 		},
@@ -569,12 +569,12 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(701, {		-- Freedom of the Alliance
 		-- TODO: Add providers and make accessible to classic
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(700, {		-- Freedom of the Horde
 		-- TODO: Add providers and make accessible to classic
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 	}),
 	-- #if AFTER 3.0.1
@@ -672,7 +672,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(617, {		-- Immortal No More
 		["provider"] = { "n", 7999 },	-- Tyrande Whisperwind <High Priestess of Elune>
-		["timeline"] = { "added 3.0.1", "removed 8.0.1" },
+		["timeline"] = { ADDED_3_0_2, "removed 8.0.1" },
 		["maps"] = { DARNASSUS },
 		["races"] = HORDE_ONLY,
 	}),
@@ -710,7 +710,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(613, {		-- Killed in Quel'Thalas
 		["provider"] = { "n", 16802 },	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["maps"] = { SILVERMOON_CITY },
 		["races"] = ALLIANCE_ONLY,
 	}),
@@ -758,12 +758,12 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	-- #endif
 	ach(246, {		-- Know Thy Enemy (Alliance)
 		["sym"] = {{ "achievement_criteria" }},
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(1005, {		-- Know Thy Enemy (Horde)
 		["sym"] = {{ "achievement_criteria" }},
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 	}),
 	ach(409, {		-- Last Man Standing
@@ -807,7 +807,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	-- #endif
 	ach(247, {		-- Make Love, Not Warcraft
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	-- #if AFTER 3.0.1
 	ach(473, {		-- Marshal
@@ -850,7 +850,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 42131 },	-- Falstad Wildhammer <Wildhammer Clan Representative>
 			{ "n", 42928 },	-- Muradin Bronzebeard <Bronzebeard Representative>
 		},
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["maps"] = { IRONFORGE },
 		["races"] = HORDE_ONLY,
 	}),
@@ -888,7 +888,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(618, {		-- Putting Out the Light
 		["provider"] = { "n", 17468 },	-- Prophet Velen
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["maps"] = { THE_EXODAR },
 		["races"] = HORDE_ONLY,
 	}),
@@ -985,13 +985,13 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 29611 },	-- King Varian Wrynn <King of Stormwind>
 			-- #endif
 		},
-		["timeline"] = { "added 3.0.1", REMOVED_9_0_1 },
+		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
 		["maps"] = { STORMWIND_CITY },
 		["races"] = HORDE_ONLY,
 	}),
 	ach(245, {		-- That Takes Class
 		["sym"] = {{ "achievement_criteria" }},
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	ach(1174, {		-- The Arena Master
 		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
@@ -1024,7 +1024,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	})),
 	ach(229, {		-- The Grim Reaper
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	applyclassicphase(PHASE_TWO, ach(907, {	-- The Justicar
 		-- #if BEFORE 3.0.1
@@ -1127,7 +1127,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_6_2_0, REMOVED_6_2_2 },
 	}),
 	ach(604, {		-- Wrath of the Alliance
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
@@ -1140,7 +1140,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 	}),
 	ach(603, {		-- Wrath of the Horde
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
@@ -1153,7 +1153,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 	}),
 	ach(231, {		-- Wrecking Ball
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	ach(11691, {	-- You Are Sixteen
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },

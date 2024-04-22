@@ -304,7 +304,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		-- #endif
 		["groups"] = {
 			title(112, {	-- the Insane
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2 },
 			}),
 		},
 	})),
@@ -736,7 +736,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	})),
 	-- #endif
 	ach(1832, {	-- Tastes Like Chicken
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	ach(5753, {	-- Cataclysmically Delicious
 		["timeline"] = { "added 4.1.0" },
@@ -841,7 +841,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			-- #endif
 			["f"] = 100,
 			-- #endif
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["rank"] = 100,
 			["groups"] = {
@@ -857,7 +857,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			-- #endif
 			["f"] = 100,
 			-- #endif
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["rank"] = 100,
 			["groups"] = {

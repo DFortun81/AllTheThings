@@ -515,7 +515,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13099, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
-						["timeline"] = { "added 3.3.0.10772", "removed 4.3.0.14732" },
+						["timeline"] = { ADDED_3_3_0, "removed 4.3.0.14732" },
 						["isBreadcrumb"] = true,
 					}),
 					q(29836, {	-- Just Checkin'

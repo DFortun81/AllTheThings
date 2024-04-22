@@ -407,7 +407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 7267,
 				["groups"] = {
 					ach(639, {	-- Zul'Farrak
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(5048, {	-- Zul'Farrak Guild Run
 						["timeline"] = { ADDED_4_0_3 },

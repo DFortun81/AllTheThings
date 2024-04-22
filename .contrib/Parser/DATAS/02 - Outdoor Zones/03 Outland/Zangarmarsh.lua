@@ -271,14 +271,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3865,	-- Brackish Mixed School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3623,	-- Brackish Mixed School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -293,14 +293,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3870,	-- Sporefish School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3628,	-- Sporefish School
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif

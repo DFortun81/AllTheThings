@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, {
 								["groups"] = {
 									i(44707),	-- Green Proto-Drake (MOUNT!)
 									i(39898, {	-- Cobra Hatchling (PET!)
-										["timeline"] = { "added 3.0.3.9183" },
+										["timeline"] = { ADDED_3_0_3 },
 									}),
 									i(44721),	-- Proto-Drake Whelp (PET!)
 									i(39896),	-- Tickbird Hatchling (PET!)

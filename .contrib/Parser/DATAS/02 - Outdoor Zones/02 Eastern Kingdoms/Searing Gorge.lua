@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7722,	-- What the Flux?
 					-- #endif
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
-					["timeline"] = { "added 3.3.0.10772" },
+					["timeline"] = { ADDED_3_3_0 },
 					-- #if AFTER CATA
 					["minReputation"] = { 59, REVERED },	-- Thorium Brotherhood, Revered.
 					["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
@@ -465,7 +465,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7702, {	-- Kill 'Em With Sleep Deprivation
 					["qg"] = 14628,	-- Evonice Sootsmoker
 					["coord"] = { 38.4, 27.7, SEARING_GORGE },
-					["timeline"] = { "created 1.12.1.10958", "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/20 Dark Iron Pillow
@@ -476,7 +476,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 14635,	-- Sleepy Dark Iron Worker
 						}),
 						i(19129, {	-- Everglowing Robe
-							["timeline"] = { "created 1.12.1.10958", "added 3.3.0", REMOVED_4_0_3 },
+							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -549,11 +549,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 179832 },	-- Pillamaster's Ornate Pillow
 						{ "n",  14636 },	-- Chambermaid Pillaclencher
 					},
-					["timeline"] = { "created 1.12.1.10958", "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
-							["timeline"] = { "created 1.12.1.10958", "added 3.3.0" },
+							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0 },
 						}),
 					},
 				}),
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
-							["timeline"] = { "created 1.12.1.10958", "added 3.3.0" },
+							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0 },
 						}),
 					},
 				}),

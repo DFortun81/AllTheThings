@@ -3321,7 +3321,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6612,	-- I Know A Guy...
 					},
 					["coord"] = { 52.63, 28.12, TANARIS },
-					["timeline"] = { "added 3.1.0.9637", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
@@ -4236,7 +4236,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 54.4, 27.2, TANARIS },
-					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
@@ -4524,7 +4524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 54.4, 27.2, TANARIS },
-					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["lvl"] = 30,
 					["groups"] = {
@@ -5186,13 +5186,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
 					-- #endif
-					["timeline"] = { "added 3.3.2.11403", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_2, REMOVED_4_0_3 },
 				}),
 				n(34093, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
 					-- #endif
-					["timeline"] = { "added 3.3.2.11403", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_2, REMOVED_4_0_3 },
 				}),
 				n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
 

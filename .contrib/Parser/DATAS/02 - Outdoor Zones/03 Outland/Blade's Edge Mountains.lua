@@ -264,7 +264,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
 						["isDaily"] = true,
 						["timeline"] = {
-							"added 3.3.0.10772",
+							ADDED_3_3_0,
 							"removed 4.1.0.7272",
 						},
 						["cost"] = {
@@ -274,7 +274,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
-									"added 3.3.0.10772",
+									ADDED_3_3_0,
 									"removed 4.1.0.7272",
 								},
 							}),
@@ -433,7 +433,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							ach(1276, {	-- Blade's Edge Bomberman
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 						},
 					})),
@@ -1654,7 +1654,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
 						["isDaily"] = true,
 						["timeline"] = {
-							"added 3.3.0.10772",
+							ADDED_3_3_0,
 							"removed 4.1.0.7272",
 						},
 						["cost"] = {
@@ -1664,7 +1664,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
-									"added 3.3.0.10772",
+									ADDED_3_3_0,
 									"removed 4.1.0.7272",
 								},
 							}),

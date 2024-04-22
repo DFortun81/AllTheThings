@@ -842,7 +842,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(13935),	-- Agility
 			r(20023),	-- Greater Agility
 			r(20020),	-- Greater Stamina
-			r(63746, {["timeline"]={"added 3.1.0"}}),	-- Lesser Accuracy
+			r(63746, {["timeline"]={ADDED_3_1_0}}),	-- Lesser Accuracy
 			r(13637),	-- Lesser Agility
 			r(13644),	-- Lesser Stamina
 			r(13687),	-- Lesser Versatility / CLASSIC: Lesser Spirit
@@ -1177,9 +1177,9 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(27981),	-- Sunfire
 		}),
 	}))),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		r(51313, {	-- Enchanting (Grand Master)
-			["timeline"]={ "added 3.0.2", "removed 8.0.1" },
+			["timeline"]={ ADDED_3_0_2, "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -1189,25 +1189,25 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting
 		cat(673, {	-- Boot Enchantments
-			r(60606, {["timeline"]={"added 3.1.0"}}),	-- Assault
-			r(60763, {["timeline"]={"added 3.1.0"}}),	-- Greater Assault
+			r(60606, {["timeline"]={ADDED_3_1_0}}),	-- Assault
+			r(60763, {["timeline"]={ADDED_3_1_0}}),	-- Greater Assault
 			r(44528),	-- Greater Fortitude
 			r(44508),	-- Greater Versatility / WOTLK: Greater Spirit
 			r(44584),	-- Greater Vitality
-			r(60623, {["timeline"]={"added 3.1.0"}}),	-- Icewalker
+			r(60623, {["timeline"]={ADDED_3_1_0}}),	-- Icewalker
 			r(44589),	-- Superior Agility
 			r(47901),	-- Tuskarr's Vitality
 		}),
 		cat(677, {	-- Bracer Enchantments
-			r(60616, {["timeline"]={"added 3.1.0"}}),	-- Assault / WOTLK: Striking
+			r(60616, {["timeline"]={ADDED_3_1_0}}),	-- Assault / WOTLK: Striking
 			r(44555),	-- Exceptional Intellect
 			r(44575),	-- Greater Assault
 			r(44635),	-- Greater Spellpower
 			r(44616),	-- Greater Stats
 			r(44598),	-- Haste / WOTLK: Expertise
-			r(62256, {["timeline"]={"added 3.1.0"}}),	-- Major Stamina
+			r(62256, {["timeline"]={ADDED_3_1_0}}),	-- Major Stamina
 			r(44593),	-- Major Versatility / WOTLK: Major Spirit
-			r(60767, {["timeline"]={"added 3.1.0"}}),	-- Superior Spellpower
+			r(60767, {["timeline"]={ADDED_3_1_0}}),	-- Superior Spellpower
 		}),
 		cat(675, {	-- Chest Enchantments
 			r(44588),	-- Exceptional Armor / WOTLK: Exceptional Resilience
@@ -1215,30 +1215,30 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(47766),	-- Greater Dodge / WOTLK: Greater Defense
 			r(44509),	-- Greater Versatility / WOTLK: Greater Mana Restoration
 			r(44492),	-- Mighty Health
-			r(60692, {["timeline"]={"added 3.1.0"}}),	-- Powerful Stats
-			r(47900, {["timeline"]={"added 3.1.0"}}),	-- Super Health
+			r(60692, {["timeline"]={ADDED_3_1_0}}),	-- Powerful Stats
+			r(47900, {["timeline"]={ADDED_3_1_0}}),	-- Super Health
 			r(44623),	-- Super Stats
 		}),
 		cat(676, {	-- Cloak Enchantments
 			r(47898),	-- Greater Speed
-			r(60663, {["timeline"]={"added 3.1.0"}}),	-- Major Agility
+			r(60663, {["timeline"]={ADDED_3_1_0}}),	-- Major Agility
 			r(47672),	-- Mighty Stamina
 			r(44582),	-- Minor Power
 			r(44631),	-- Shadow Armor
-			r(60609, {["timeline"]={"added 3.1.0"}}),	-- Speed
+			r(60609, {["timeline"]={ADDED_3_1_0}}),	-- Speed
 			r(44500),	-- Superior Agility
-			r(44596, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Arcane Resistance
+			r(44596, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Arcane Resistance
 			r(44591),	-- Superior Dodge / WOTLK: Titanweave
-			r(44556, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Fire Resistance
-			r(44483, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Frost Resistance
-			r(44494, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Nature Resistance
-			r(44590, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Shadow Resistance
+			r(44556, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Fire Resistance
+			r(44483, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Frost Resistance
+			r(44494, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Nature Resistance
+			r(44590, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Shadow Resistance
 			r(47899),	-- Wisdom
 		}),
 		cat(674, {	-- Glove Enchantments
-			r(71692, {["timeline"]={"added 3.3.0"}}),	-- Angler
+			r(71692, {["timeline"]={ADDED_3_3_0}}),	-- Angler
 			r(44625),	-- Armsman
-			r(60668, {["timeline"]={"added 3.1.0"}}),	-- Crusher
+			r(60668, {["timeline"]={ADDED_3_1_0}}),	-- Crusher
 			r(44592),	-- Exceptional Spellpower
 			r(44506),	-- Gatherer
 			r(44513),	-- Greater Assault
@@ -1246,10 +1246,10 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(44529),	-- Major Agility
 			r(44488),	-- Precision
 		}),
-		cat(672, sharedDataSelf({ ["timeline"] = { "added 3.2.2"} }, {	-- Reagents
+		cat(672, sharedDataSelf({ ["timeline"] = { ADDED_3_2_2} }, {	-- Reagents
 			applyclassicphase(WRATH_PHASE_THREE, r(69412)),	-- Abyssal Shatter
 		})),
-		cat(445, sharedDataSelf({ ["timeline"] = { "added 3.0.2", "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2, "removed 6.0.2" } }, {	-- Ring Enchantments
 			r(44645),	-- Assault
 			r(44636),	-- Greater Spellpower
 			r(59636),	-- Stamina
@@ -1262,28 +1262,28 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}))),
 		cat(679, {	-- Shield Enchantments
 			r(44489),	-- Dodge / WOTLK: Defense
-			r(60653, {["timeline"]={"added 3.1.0"}}),	-- Greater Intellect
+			r(60653, {["timeline"]={ADDED_3_1_0}}),	-- Greater Intellect
 		}),
 		cat(678, {	-- Weapon Enchantments
-			r(59619, {["timeline"]={"added 3.1.0"}}),	-- Accuracy
-			r(59621, {["timeline"]={"added 3.1.0"}}),	-- Berserking
-			r(59625, {["timeline"]={"added 3.1.0"}}),	-- Black Magic
-			applyclassicphase(WRATH_PHASE_TWO, r(64441, {["timeline"]={"added 3.1.0"}})),	-- Blade Ward
-			applyclassicphase(WRATH_PHASE_TWO, r(64579, {["timeline"]={"added 3.1.0"}})),	-- Blood Draining
+			r(59619, {["timeline"]={ADDED_3_1_0}}),	-- Accuracy
+			r(59621, {["timeline"]={ADDED_3_1_0}}),	-- Berserking
+			r(59625, {["timeline"]={ADDED_3_1_0}}),	-- Black Magic
+			applyclassicphase(WRATH_PHASE_TWO, r(64441, {["timeline"]={ADDED_3_1_0}})),	-- Blade Ward
+			applyclassicphase(WRATH_PHASE_TWO, r(64579, {["timeline"]={ADDED_3_1_0}})),	-- Blood Draining
 			r(44633),	-- Exceptional Agility
 			r(44629),	-- Exceptional Spellpower
 			r(44510),	-- Exceptional Versatility / WOTLK: Exceptional Spirit
 			r(44621),	-- Giant Slayer
-			r(60621, {["timeline"]={"added 3.1.0"}}),	-- Greater Potency
+			r(60621, {["timeline"]={ADDED_3_1_0}}),	-- Greater Potency
 			r(44630),	-- Greater Savagery
-			r(62948, {["timeline"]={"added 3.1.0"}}),	-- Greater Spellpower
+			r(62948, {["timeline"]={ADDED_3_1_0}}),	-- Greater Spellpower
 			r(44524),	-- Icebreaker
 			r(44576),	-- Lifeward
-			r(60691, {["timeline"]={"added 3.1.0"}}),	-- Massacre
-			r(60714, {["timeline"]={"added 3.1.0"}}),	-- Mighty Spellpower
+			r(60691, {["timeline"]={ADDED_3_1_0}}),	-- Massacre
+			r(60714, {["timeline"]={ADDED_3_1_0}}),	-- Mighty Spellpower
 			r(44595),	-- Scourgebane
-			r(62959, {["timeline"]={"added 3.1.0"}}),	-- Spellpower
-			r(60707, {["timeline"]={"added 3.1.0"}}),	-- Superior Potency
+			r(62959, {["timeline"]={ADDED_3_1_0}}),	-- Spellpower
+			r(60707, {["timeline"]={ADDED_3_1_0}}),	-- Superior Potency
 		}),
 	}))),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {

@@ -1500,7 +1500,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12919,	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
 					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
-					["timeline"] = { "added 3.1.0.9637" },
+					["timeline"] = { ADDED_3_1_0 },
 					["OnUpdate"] = [[function(t)
 						if not t.collected and t.collectible then
 							t.collectible = GetItemCount(45858, true) == 0;
@@ -1511,7 +1511,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 35,
 					["groups"] = {
 						i(45858, {	-- Nat's Lucky Fishing Pole
-							["timeline"] = { "added 3.1.0.9637" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),
@@ -1562,7 +1562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_3_1_0 },
 						}),
 						i(45858, {	-- Nat's Lucky Fishing Pole
-							["timeline"] = { "added 3.1.0.9637" },
+							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),
@@ -1703,7 +1703,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island
 					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.3.0", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { "added 2.3.0", REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 				}),
@@ -1928,7 +1928,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					-- #endif
-					["timeline"] = { "added 2.0.1", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { "added 2.0.1", REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -2998,7 +2998,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_3_1_0 },
 						}),
 						i(49193, {	-- Alliance Trauma Certification
-							["timeline"] = { "added 3.2.0.10192" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),
@@ -3123,7 +3123,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island
 					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.3.0", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+					["timeline"] = { "added 2.3.0", REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 				}),
@@ -3214,10 +3214,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.0, 14.5, DUSTWALLOW_MARSH },
 						{ 46.5, 17.2, DUSTWALLOW_MARSH },
 					},
-					["timeline"] = { "added 3.3.0.10958" },
+					["timeline"] = { ADDED_3_3_0 },
 					["groups"] = {
 						i(48112, {	-- Darting Hatchling (PET!)
-							["timeline"] = { "added 3.2.0.10072" },
+							["timeline"] = { ADDED_3_2_0 },
 						}),
 					},
 				}),

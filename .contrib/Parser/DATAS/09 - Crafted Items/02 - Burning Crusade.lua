@@ -652,12 +652,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		filter(GLYPHS, {
-			i(42743, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
-			i(43316, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aquatic Form
-			i(43368, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
-			i(42461, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
-			i(42908, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
-			i(43378, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Safe Fall
+			i(42743, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
+			i(43316, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Aquatic Form
+			i(43368, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
+			i(42461, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Health Funnel
+			i(42908, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
+			i(43378, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Safe Fall
 		}),
 		-- #endif
 		category(106, {	-- Tarot Cards
@@ -774,7 +774,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		category(867, {	-- Prisms & Statues
 			i(35945),	-- Brilliant Glass
 			applyclassicphase(WRATH_PHASE_ONE, i(45054, {	-- Prismatic Black Diamond
-				["timeline"] = { "added 3.1.0.9626" },
+				["timeline"] = { ADDED_3_1_0 },
 			})),
 		}),
 	}),

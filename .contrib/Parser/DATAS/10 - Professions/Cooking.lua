@@ -902,7 +902,7 @@ profession(COOKING, {
 				},
 				applyclassicphase(WRATH_PHASE_ONE, {
 					["name"] = "Clamlette Magnifique",
-					["timeline"] = { "added 3.1.0" },
+					["timeline"] = { ADDED_3_1_0 },
 					["recipeID"] = 64054
 				}),
 				{
@@ -1244,27 +1244,27 @@ profession(COOKING, {
 				-- #if AFTER WRATH
 				applyevent(EVENTS.DAY_OF_THE_DEAD, {	-- Bread of the Dead [Day of the Dead]
 					["name"] = "Bread of the Dead",
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["recipeID"] = 65454,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [A - Pilgrim's Bounty]
 					["recipeID"] = 62051,	-- Candied Sweet Potato
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [H - Pilgrim's Bounty]
 					["recipeID"] = 66034,	-- Candied Sweet Potato
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Cranberry Chutney [A - Pilgrim's Bounty]
 					["recipeID"] = 62049,	-- Cranberry Chutney
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Cranberry Chutney [H - Pilgrim's Bounty]
 					["recipeID"] = 66035,	-- Cranberry Chutney
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
@@ -1286,32 +1286,32 @@ profession(COOKING, {
 				-- #if AFTER WRATH
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Pumpkin Pie [A - Pilgrim's Bounty]
 					["recipeID"] = 62044,	-- Pumpkin Pie
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Pumpkin Pie [H - Pilgrim's Bounty]
 					["recipeID"] = 66036,	-- Pumpkin Pie
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [A - Pilgrim's Bounty]
 					["recipeID"] = 62045,	-- Slow-Roasted Turkey
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [H - Pilgrim's Bounty]
 					["recipeID"] = 66037,	-- Slow-Roasted Turkey
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [A - Pilgrim's Bounty]
 					["recipeID"] = 62050,	-- Spice Bread Stuffing
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [H - Pilgrim's Bounty]
 					["recipeID"] = 66038,	-- Spice Bread Stuffing
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif

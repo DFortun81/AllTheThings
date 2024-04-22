@@ -18,11 +18,11 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	un(BLIZZARD_BALANCE, i(49646, {	-- Core Hound Pup
 		["description"] = "Granted to players that attach an authenticator to their account.",
-		["timeline"] = { "added 3.3.0.10958" },
+		["timeline"] = { ADDED_3_3_0 },
 	})),
 	i(48527, {	-- Onyx Panther (PET!)
 		["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
-		["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
+		["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 		["groups"] = {
 			ach(3896, {	-- Onyx Panther
 				["timeline"] = { ADDED_4_0_3 },
@@ -79,7 +79,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["timeline"] = { "added 4.3.0.15005", "removed 4.3.4.15595" },
 	}),
 	ach(414, {	-- Tyrael's Hilt
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(39656, {	-- Mini Tyrael (PET!)
 		["description"] = "Reward from the 2008 Worldwide Invitational in Paris.",

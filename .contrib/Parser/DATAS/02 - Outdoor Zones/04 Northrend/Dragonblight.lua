@@ -2384,7 +2384,7 @@ root(ROOTS.Zones, {
 							i(44057),	-- Ivory-Reinforced Chestguard
 							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
 							i(44723, {	-- Pengu (PET!)
-								["timeline"] = { "added 3.0.2.8982" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
 								["timeline"] = { REMOVED_4_0_1 },
@@ -2421,7 +2421,7 @@ root(ROOTS.Zones, {
 							26336,	-- Indu'le Mystic
 							26344,	-- Indu'le Warrior
 						},
-						["timeline"] = { "added 3.3.0" },
+						["timeline"] = { ADDED_3_3_0 },
 					}),
 					i(41124, {	-- Plans: Reinforced Cobalt Shoulders (RECIPE!)
 						["coords"] = {

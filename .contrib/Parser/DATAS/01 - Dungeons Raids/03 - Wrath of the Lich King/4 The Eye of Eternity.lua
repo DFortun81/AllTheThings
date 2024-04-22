@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if BEFORE 4.0.3
 							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
-							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
+							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),
 						-- #endif
 						i(40497),	-- Black Ice
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if BEFORE 4.0.3
 							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
-							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
+							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),
 						-- #endif
 						i(40543),	-- Blue Aspect Helm

@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #if AFTER 7.3.5
 			n(ZONE_DROPS, {
 				i(35616, {	-- Spored Tendrils Spaulders
-					["timeline"] = { "created 3.0.2", "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_2, "added 7.3.5" },
 				}),
 			}),
 			-- #endif
@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(43281),	-- Edge of Oblivion (7.3.5 - Used to be only Heroic Mode)
 						i(44191, {	-- Ice-Rimed Chopper (7.3.5 - Used to be only Heroic Mode)
-							["timeline"] = { "created 3.0.1", "added 6.2.0" },
+							["timeline"] = { CREATED_3_0_2, "added 6.2.0" },
 						}),
 						i(43280),	-- Faceguard of the Hammer Clan (7.3.5 - Used to be only Heroic Mode)
 						i(43282),	-- Shadowseeker's Pendant (7.3.5 - Used to be only Heroic Mode)
@@ -339,7 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 						}),
 					}),
 					-- #endif
@@ -394,7 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(43281),	-- Edge of Oblivion
 							-- #if AFTER 6.2.0
 							i(44191, {	-- Ice-Rimed Chopper
-								["timeline"] = { "created 3.0.1", "added 6.2.0" },
+								["timeline"] = { CREATED_3_0_2, "added 6.2.0" },
 							}),
 							-- #endif
 							i(43280),	-- Faceguard of the Hammer Clan
@@ -459,7 +459,7 @@ root(ROOTS.HiddenQuestTriggers, {
 root(ROOTS.NeverImplemented, {
 	-- #if BEFORE 6.2.0
 	i(44191, {	-- Ice-Rimed Chopper
-		["timeline"] = { "created 3.0.1", "added 6.2.0" },
+		["timeline"] = { CREATED_3_0_2, "added 6.2.0" },
 	}),
 	-- #endif
 });

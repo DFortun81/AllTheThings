@@ -32,7 +32,7 @@ local HORDE_PILGRIM_MAPS = {
 };
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
 root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER, {
-	["timeline"] = { "added 3.1.0.9658" },
+	["timeline"] = { ADDED_3_1_0 },
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
@@ -67,16 +67,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						-- #endif
 					},
 				},
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				-- #if BEFORE MOP
 				["races"] = ALLIANCE_ONLY,
 				-- #endif
 				["groups"] = {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(44810, {	-- Plump Turkey (PET!)
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 				},
 			}),
@@ -95,47 +95,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						3559,				-- Turkey Lurkey
 					},
 				},
-				["timeline"] = { "added 3.2.2.10505", "removed 5.0.4" },
+				["timeline"] = { ADDED_3_2_2, "removed 5.0.4" },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(44810, {	-- Plump Turkey (PET!)
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { ADDED_3_2_2 },
 					}),
 				},
 			}),
 			ach(3579, {	-- "FOOD FIGHT!"
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["maps"] = ALL_PILGIM_MAPS,
 			}),
 			ach(3576, {	-- Now We're Cookin' (A)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(3577, {	-- Now We're Cookin' (H)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
 			}),
 			ach(3556, {	-- Pilgrim's Paunch (A)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(3557, {	-- Pilgrim's Paunch (H)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
 			}),
 			ach(3580, {	-- Pilgrim's Peril (A)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["cost"] = {
@@ -146,7 +146,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(3581, {	-- Pilgrim's Peril (H)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["cost"] = {
@@ -157,7 +157,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["races"] = HORDE_ONLY,
 			}),
 			ach(3596, {	-- Pilgrim's Progress (A)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -179,7 +179,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			ach(3597, {	-- Pilgrim's Progress (H)
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -201,12 +201,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 			}),
 			ach(3558, {	-- Sharing is Caring
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALL_PILGIM_MAPS,
 			}),
 			ach(3582, {	-- Terokkar Turkey Time
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["maps"] = { AUCHINDOUN_SETHEKK_HALLS },
 				["cost"] = {
 					{ "i", 46723, 1 },	-- Pilgrim's Hat
@@ -217,7 +217,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["cr"] = 18473,	-- Talon King Ikiss
 			}),
 			ach(3578, {	-- The Turkinator
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["cr"] = 32820,	-- Wild Turkey
 				["maps"] = {
 					ELWYNN_FOREST,
@@ -231,7 +231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					-- #endif
 					{ "i", 44812 },	-- Turkey Shooter
 				},
-				["timeline"] = { "added 3.2.2.10505" },
+				["timeline"] = { ADDED_3_2_2 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 		}),
@@ -602,19 +602,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 			["maps"] = ALL_PILGIM_MAPS,
 			["groups"] = {
 				i(46723, {	-- Pilgrim's Hat
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 				}),
 				i(46800, {	-- Pilgrim's Attire
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 				}),
 				i(44785, {	-- Pilgrim's Dress
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 				}),
 				i(46824, {	-- Pilgrim's Robe
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 				}),
 				i(44788, {	-- Pilgrim's Boots
-					["timeline"] = { "added 3.2.2.10505" },
+					["timeline"] = { ADDED_3_2_2 },
 				}),
 				i(116404, {	-- Pilgrim's Bounty
 					["timeline"] = { "added 6.0.1.18566" },

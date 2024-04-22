@@ -170,7 +170,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				}),
 				q(12781, {	-- Welcome! (Death Knight)
 					["provider"] = { "i", 39713 },	-- Ebon Hold Gift Voucher
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { DEATHKNIGHT },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
@@ -382,7 +382,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { "added 3.0.1", "removed 4.0.1" } }, {
+	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, "removed 4.0.1" } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {

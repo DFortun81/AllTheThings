@@ -2966,7 +2966,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					bubbleDown({ ["timeline"] = { "added 3.3.2" } }, cl(DEATHKNIGHT, {
+					bubbleDown({ ["timeline"] = { ADDED_3_3_2 } }, cl(DEATHKNIGHT, {
 						i(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
@@ -3382,7 +3382,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					bubbleDown({ ["timeline"] = { "added 3.0.2.8962" } }, n(BACK, {
+					bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, n(BACK, {
 						i(41591, {	-- Sergeant's Reinforced Cape
 							["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
 						}),
@@ -3602,22 +3602,22 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					}),
 					filter(TRINKET_F, {
 						i(41587, {	-- Battlemaster's Celerity
-							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(41588, {	-- Battlemaster's Aggression
-							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(41589, {	-- Battlemaster's Resolve
-							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(41590, {	-- Battlemaster's Courage
-							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(37864, {	-- Medallion of the Alliance (epic)
 							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(38589, {	-- Medallion of the Alliance (dk)
-							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69861, {	-- Medallion of the Alliance (not during bc, but for bc)
 							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
@@ -3626,7 +3626,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(38588, {	-- Medallion of the Horde (dk)
-							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69862, {	-- Medallion of the Horde (not during bc, but for bc)
 							["timeline"] = { "added 4.1.0", "removed 6.0.1" },

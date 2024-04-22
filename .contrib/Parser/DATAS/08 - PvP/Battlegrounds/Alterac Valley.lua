@@ -120,7 +120,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					}},
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(1168, {	-- Master of Alterac Valley (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
@@ -141,52 +141,52 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						226,	-- The Alterac Blitz
 						-- #endif
 					}},
-					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(218, {	-- Alterac Valley Victory
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["rank"] = 1,
 				}),
 				ach(219, {	-- Alterac Valley Veteran
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["rank"] = 100,
 				}),
 				ach(221, {	-- Alterac Grave Robber
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(222, {	-- Tower Defense
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(1151, {	-- Loyal Defender (A)
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(224, {	-- Loyal Defender (H)
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(225, {	-- Everything Counts (A)
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(1164, {	-- Everything Counts (H)
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(223, {	-- The Sickly Gazelle
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(873, {	-- Frostwolf Perfection
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(220, {	-- Stormpike Perfection
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(582, {	-- Alterac Valley All-Star
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,
 					["groups"] = {
 						-- #if ANYCLASSIC
@@ -222,10 +222,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(1166, {	-- To the Looter Go the Spoils
 					["provider"] = { "i", 18228 },	-- Autographed Picture of Foror & Tigule
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(226, {	-- The Alterac Blitz
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 			}),
 			-- #if BEFORE TBC

@@ -17,7 +17,7 @@ root(ROOTS.Promotions, {
 	-- Retired Rewards
 	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		ach(1436, {	-- Friends In High Places
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		i(37719, {	-- Swift Zhevra (MOUNT!)
 			["timeline"] = { "added 2.4.3.8601" },
@@ -27,7 +27,7 @@ root(ROOTS.Promotions, {
 			["timeline"] = { "added 4.0.0" },
 		}),
 		i(54860, {	-- X-53 Touring Rocket (MOUNT!)
-			["timeline"] = { "added 3.3.3.11723" },
+			["timeline"] = { ADDED_3_3_3 },
 		}),
 
 		ach(8213, {	-- Friends In Places Higher Yet
@@ -58,11 +58,11 @@ root(ROOTS.Promotions, {
 		}),
 		i(46894, {	-- Jade Tiger (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
-			["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
+			["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 		}),
 		i(49664, {	-- Zipao Tiger (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
-			["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
+			["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 		}),
 		i(34518, {	-- Golden Pig (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",

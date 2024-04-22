@@ -314,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["creatureID"] = 18096,
 						["groups"] = {
 							ach(673, {	-- Heroic: The Escape From Durnholde
-								["timeline"] = { "added 3.0.1" },
+								["timeline"] = { ADDED_3_0_2 },
 							}),
 							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
 								["timeline"] = { ADDED_4_0_3 },

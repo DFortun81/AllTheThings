@@ -47,7 +47,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						583,	-- Arathi Basin All-Star
 						584,	-- Arathi Basin Assassin
 					}},
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					-- #if BEFORE 4.3.0
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
@@ -68,19 +68,19 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						583,	-- Arathi Basin All-Star
 						584,	-- Arathi Basin Assassin
 					}},
-					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(154, {	-- Arathi Basin Victory
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["rank"] = 1,
 				}),
 				ach(155, {	-- Arathi Basin Veteran
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["rank"] = 100,
 				}),
 				ach(583, {	-- Arathi Basin All-Star
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- When Comp Stomp was introduced, Blizzard added new nested criteria but kept the old ones. Just showing the old ones is enough at this time.
 					["g"] = {
 						crit(426),	-- Assault 2 bases
@@ -88,7 +88,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				ach(584, {	-- Arathi Basin Assassin
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- When Comp Stomp was introduced, Blizzard added new nested criteria but kept the old ones. Just showing the old ones is enough at this time.
 					["g"] = {
 						crit(431),	-- Kill 5 people at the blacksmith
@@ -99,34 +99,34 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				ach(165, {	-- Arathi Basin Perfection
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				ach(73, {	-- Disgracin' The Basin
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(159, {	-- Let's Get This Done
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(158, {	-- Me and the Cappin' Makin' it Happen
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(1153, {	-- Overly Defensive
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(161, {	-- Resilient Victory
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				ach(156, {	-- Territorial Dominance
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				ach(157, {	-- To The Rescue!
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(162, {	-- We Had It All Along *cough*
-					["timeline"] = { "added 3.0.1" },
+					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				applyclassicphase(PHASE_TWO, achWithRep(711, 509, {	-- Knight of Arathor

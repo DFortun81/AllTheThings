@@ -77,23 +77,23 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		-- #endif
 		ach(1176, {	-- Got My Mind On My Money [100g]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 100,
 		}),
 		ach(1177, {	-- Got My Mind On My Money [1000g]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1000,
 		}),
 		ach(1178, {	-- Got My Mind On My Money [5000g]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 5000,
 		}),
 		ach(1180, {	-- Got My Mind On My Money [10000g]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 10000,
 		}),
 		ach(1181, {	-- Got My Mind On My Money [25000g]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 25000,
 		}),
 		ach(5455, {	-- Got My Mind On My Money [50000g]
@@ -140,13 +140,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ach(14884, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 45
 
 		applyclassicphase(WRATH_PHASE_ONE, ach(705, {	-- Master of Arms
-			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
 		})),
 		ach(7384, {	-- Quintessential Quintet
 			["timeline"] = { "added 5.0.4" },
 		}),
 		ach(621, {	-- Represent [TODO]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1,
 		}),
 		ach(546, {	-- Safe Deposit
@@ -159,31 +159,31 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #endif
 		}),
 		ach(545, {	-- Shave and a Haircut
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },
 		}),
 		ach(1020, {	-- Ten Tabards [TODO]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 10,
 		}),
 		ach(7383, {	-- Terrific Trio
 			["timeline"] = { "added 5.0.4" },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
-			["timeline"] = { "added 3.0.1", "deleted 4.0.3" },
+			["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
 		})),
 		ach(5755, {	-- Thirty Tabards
 			["timeline"] = { "added 4.1.0" },
 			["rank"] = 30,
 		}),
-		ach(1021, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Twenty-Five Tabards
+		ach(1021, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Twenty-Five Tabards
 			["rank"] = 25,
 			["groups"] = {
 				i(40643),	-- Tabard of the Achiever
 			},
 		})),
 	}),
-	cl(DEATHKNIGHT, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {
+	cl(DEATHKNIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {
 		i(34652),	-- Archerus Knight's Hood
 		i(34655),	-- Archerus Knight's Pauldrons
 		i(34659),	-- Archerus Knight's Shroud
@@ -608,7 +608,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
-				["timeline"] = { "added 3.0.1.8714" }
+				["timeline"] = { ADDED_3_0_2 }
 			}),
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
@@ -941,7 +941,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
-				["timeline"] = { "added 3.0.1.8714" }
+				["timeline"] = { ADDED_3_0_2 }
 			}),
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
@@ -1089,11 +1089,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(50057, {	-- Sharp Dirk
-				["timeline"] = { "added 3.3.0.10571" }
+				["timeline"] = { ADDED_3_3_0 }
 			}),
 			i(2092),	-- Worn Dagger
 			i(50055, {	-- Worn Dirk
-				["timeline"] = { "added 3.3.0.10571" }
+				["timeline"] = { ADDED_3_3_0 }
 			}),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
@@ -1421,7 +1421,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
-				["timeline"] = { "added 3.0.1.8714" },
+				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(35),		-- Bent Staff
 		}),

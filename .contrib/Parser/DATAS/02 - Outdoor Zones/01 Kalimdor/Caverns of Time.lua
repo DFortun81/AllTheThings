@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 59.6, 54, TANARIS },
 						-- #endif
 					},
-					["timeline"] = { "added 2.0.3", "removed 3.0.2" },
+					["timeline"] = { "added 2.0.3", REMOVED_3_0_2 },
 					["maps"] = {
 						TEMPEST_KEEP_THE_EYE,
 						SERPENTSHRINE_CAVERN,
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
 					["description"] = "The questgiver can be found walking around the Caverns of Time.",
-					["timeline"] = { "added 3.0.2" },
+					["timeline"] = { ADDED_3_0_2 },
 					["maps"] = {
 						TEMPEST_KEEP_THE_EYE,
 						SERPENTSHRINE_CAVERN,

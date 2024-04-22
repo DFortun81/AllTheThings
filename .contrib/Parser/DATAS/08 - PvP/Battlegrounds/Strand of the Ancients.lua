@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	applyclassicphase(WRATH_PHASE_ONE, m(128, bubbleDown({ ["timeline"] = { "added 3.0.2", "removed 8.0.1" }, }, {	-- Strand of the Ancients
+	applyclassicphase(WRATH_PHASE_ONE, m(128, bubbleDown({ ["timeline"] = { ADDED_3_0_2, "removed 8.0.1" }, }, {	-- Strand of the Ancients
 		["icon"] = "Interface\\Icons\\achievement_bg_winsoa",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -50,7 +50,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						2191,	-- Ancient Courtyard Protector
 						2200,	-- Defense of the Ancients (Horde)
 					}},
-					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(1308, {	-- Strand of the Ancients Victory

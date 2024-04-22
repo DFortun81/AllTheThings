@@ -885,7 +885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(315, {	-- Acherus: The Ebon Hold
 					["cr"] = 29480,	-- Grimwing <Flight Master>
 					["coord"] = { 83.8, 50.2, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 3.0.1.8681" },
+					["timeline"] = { ADDED_3_0_2 },
 					["classes"] = { DEATHKNIGHT },
 				}),
 				fp(87, {	-- Crown Guard Tower, Eastern Plaguelands
@@ -961,7 +961,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(383, {	-- Thondroril River, Eastern Plaguelands
 					["cr"] = 37888,	-- Frax Bucketdrop <Flight Master>
 					["coord"] = { 10.0, 65.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 3.3.0.10522" },
+					["timeline"] = { ADDED_3_3_0 },
 				}),
 				-- #endif
 			}),
@@ -3348,7 +3348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -3479,7 +3479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 14349,	-- The Call to Command
 					["coord"] = { 57.8, 92.0, UNDERCITY },
-					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
