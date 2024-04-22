@@ -970,6 +970,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(SERVICE_ENTRANCE, {
+				["provider"] = { "o", 175369 },	-- Elders' Square Service Entrance
 				-- #if AFTER 4.0.3
 				["mapID"] = 318, -- Service Entrance
 				["sym"] = {
