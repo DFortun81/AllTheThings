@@ -141,3 +141,7 @@ DF_HERBALISM = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 	r(391406),	-- Hochenblume
 	r(396171),	-- Infused Pollen
 }));
+TWW_HERBALISM = applyclassicphase(TWW_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	r(441327),	-- Herb Gathering (Khaz Algar)
+	r(435811),	-- Mycobloom
+}));
