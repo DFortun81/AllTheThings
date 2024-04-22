@@ -147,6 +147,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 							}),
 							n(REWARDS, {
+								currency(1828),	-- Soul Ash
 								currency(MEDALLION_OF_SERVICE),
 							}),
 						},

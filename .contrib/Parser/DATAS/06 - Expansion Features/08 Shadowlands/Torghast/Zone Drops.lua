@@ -170,6 +170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			}),
 		})),
 		n(COMMON_BOSS_DROPS, {
+			currency(1828),	-- Soul Ash
 			i(183193, {	-- Ashen Chomper (PET!)
 				["crs"] = {
 					151331,	-- Cellblock Sentinel

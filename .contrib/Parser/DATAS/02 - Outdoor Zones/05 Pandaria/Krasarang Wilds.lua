@@ -1323,6 +1323,11 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68003 },	-- The Monkey King
 									["coord"] = { 48.8, 50.3, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										o(216362, {	-- A Keg of Metal Brew
+											i(92557),	-- The Metal Brew (QI!)
+										}),
+									},
 								}),
 								q(32381, {	-- To Catch a Spy
 									["sourceQuests"] = { 32380 },	-- The Best Around

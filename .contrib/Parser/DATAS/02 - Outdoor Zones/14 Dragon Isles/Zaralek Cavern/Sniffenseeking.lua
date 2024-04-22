@@ -21,7 +21,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							title(507),	-- <Name>, Sniffenseeker
 						},
 					}),
-					ach(18257),	-- Can You Dig It?
+					ach(18257, {	-- Can You Dig It?
+						["_noautomation"] = true,
+					}),
 					ach(18271, {	-- He'sSss All Mine
 						["provider"] = { "i", 205151 },	-- Salverun
 					}),

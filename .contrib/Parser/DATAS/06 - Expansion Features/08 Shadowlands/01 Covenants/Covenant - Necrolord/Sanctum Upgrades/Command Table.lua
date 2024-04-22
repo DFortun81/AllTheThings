@@ -109,6 +109,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 							}),
 							n(REWARDS, {
+								currency(1828),	-- Soul Ash
 								i(183744),	-- Superior Parts
 							}),
 						},
