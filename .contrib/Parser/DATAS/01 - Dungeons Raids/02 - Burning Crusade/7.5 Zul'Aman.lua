@@ -222,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						}),
 					},
 				}),
-				n(VENDOR, {
+				n(VENDORS, {
 					n(23559, {	-- Budd
 						["coord"] = { 71.0, 67.2, GHOSTLANDS },
 						["groups"] = {
@@ -344,6 +344,7 @@ AMANI_HEX_STICK.timeline = nil;
 --EXECUTIONER_RECIPE.timeline = nil; (Another version of the recipe for retail?)
 FOREST_FROG.timeline = nil;
 -- also clean up the children
+---@diagnostic disable-next-line: need-check-nil
 for _,item in pairs(FOREST_FROG.groups) do item.timeline = nil; end
 MOJO_PET.timeline = nil;
 -- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.

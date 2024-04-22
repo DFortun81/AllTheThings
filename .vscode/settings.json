@@ -552,5 +552,8 @@
         "ATTItemHarvester",
         "ATTItemHarvesterTextLeft1",
         "AllTheThingsProfiles"
+    ],
+    "Lua.diagnostics.disable": [
+        "duplicate-index"
     ]
 }

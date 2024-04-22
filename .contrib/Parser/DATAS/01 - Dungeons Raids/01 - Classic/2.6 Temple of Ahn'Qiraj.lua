@@ -1,10 +1,21 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local ANACHRONOS_COORD;
 -- #if AFTER TBC
-local ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
+ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
 -- #else
-local ANACHRONOS_COORD = { 65, 50, TANARIS };
+ANACHRONOS_COORD = { 65, 50, TANARIS };
+-- #endif
+local SILITHID_ROYALTY_SHARED_DROPS = COMMON_BOSS_DROPS;
+-- #if ANYCLASSIC
+SILITHID_ROYALTY_SHARED_DROPS = createHeader({
+	readable = "Silithid Royalty",
+	icon = "Interface\\Icons\\Inv_misc_ahnqirajtrinket_06",
+	text = {
+		en = "Silithid Royalty",
+	},
+});
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE, {
 	inst(744, {	-- Temple of Ahn'Qiraj
@@ -1318,19 +1329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
 			-- #endif
-					n(
-					-- #if ANYCLASSIC
-					createHeader({
-						readable = "Silithid Royalty",
-						icon = "Interface\\Icons\\Inv_misc_ahnqirajtrinket_06",
-						text = {
-							en = "Silithid Royalty",
-						},
-					}),
-					-- #else
-					COMMON_BOSS_DROPS,
-					-- #endif
-					{
+					n(SILITHID_ROYALTY_SHARED_DROPS, {
 						-- #if ANYCLASSIC
 						["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop. These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
 						["providers"] = {

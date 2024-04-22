@@ -4,7 +4,7 @@
 local function GenerateRewardsSymlinkForModID(factionHeader, modID)
 	return {
 		{"select", "headerID", WAR_EFFORT },	-- Find the War Effort Header
-		{"find", "mapID", ARATH_HIGHLANDS },	-- Find Arathi Highlands
+		{"find", "mapID", ARATHI_HIGHLANDS },	-- Find Arathi Highlands
 		{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
 		{"find", "headerID", factionHeader},	-- Select the Faction Header.
 		{"extract","sourceID"},	-- Extract Sources

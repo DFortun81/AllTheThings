@@ -3327,6 +3327,7 @@ local function insertionSort(t)
 		return t;
 	end
 end
+---@diagnostic disable-next-line: need-check-nil
 for _,classObj in ipairs(CLASS_GLYPHS.groups) do
 	for _,glyphObj in ipairs(insertionSort(classObj.groups)) do
 		local state = recipeList[glyphObj.name];
@@ -3862,7 +3863,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				},
 			})),
 		}),
-		n(SPECIAl, {
+		n(SPECIAL, {
 			i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)
 				["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
 				["timeline"] = { ADDED_8_2_5 },

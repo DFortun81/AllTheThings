@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 							["modID"] = 53,	-- iLvl 415
 							["sym"] = {
 								{"select", "headerID", WAR_EFFORT },	-- Find the War Effort Header
-								{"find", "mapID", ARATH_HIGHLANDS },	-- Find Arathi Highlands
+								{"find", "mapID", ARATHI_HIGHLANDS },	-- Find Arathi Highlands
 								{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
 								{"find", "headerID", FACTION_HEADER_ALLIANCE},	-- Select the Faction Header.
 								{"extract","sourceID"},	-- Extract Sources

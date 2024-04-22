@@ -79,14 +79,12 @@ end]];
 local FACTION_DAILY_OnTooltip = [[function(t, tooltipInfo)
 	if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
 end]];
--- #IF ANYCLASSIC
--- Forcibly changing visibility on groups is bad. These quests are impossible to see even in Debug unless actually being on the respective quest.
 local VALIANT_DAILY_OnUpdate = function(valiantQuestID)
+	-- #if ANYCLASSIC
+	-- Forcibly changing visibility on groups is bad. These quests are impossible to see even in Debug unless actually being on the respective quest.
 	return [[function(t) if not C_QuestLog.IsOnQuest(]] .. valiantQuestID .. [[) then t.visible = false; return true; end end]];
+	-- #endif
 end
--- #ELSE
-local VALIANT_DAILY_OnUpdate = function() end
--- #ENDIF
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
 	n(ARGENT_TOURNAMENT, {

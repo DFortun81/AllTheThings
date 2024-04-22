@@ -5217,7 +5217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_THIRTEEN_GROUPS,
 				}),
-				applyclassicphase(CATA_PHASE_FIVE, n(56925, {	-- Farrah Facet <Epic Gem Recipes>
+				applyclassicphase(CATA_PHASE_FOUR, n(56925, {	-- Farrah Facet <Epic Gem Recipes>
 					["coord"] = { 63.8, 61.6, STORMWIND_CITY },
 					["timeline"] = { "added 4.3.0.14849" },
 					["races"] = ALLIANCE_ONLY,

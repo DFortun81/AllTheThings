@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210118),	-- Maple Tender Slippers
 				i(210106),	-- Maple Tender Wristbands
 			}),
-			n(DRAKE_MANUSCRIPTS, {
+			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
 				i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
 				i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)

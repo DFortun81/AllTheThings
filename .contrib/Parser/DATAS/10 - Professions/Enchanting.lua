@@ -1809,7 +1809,7 @@ itemrecipe("Formula: Brilliant Mana Oil", 20757, 25130, PHASE_FIVE);
 itemrecipe("Formula: Minor Wizard Oil", 20758, 25124, PHASE_FIVE);
 itemrecipe("Formula: Enchant 2H Weapon - Agility", 22392, 27837, PHASE_FIVE);
 
-applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Formula: Enchant Weapon - Winter's Might", 17725, 21931, FEAST_OF_WINTER_VEIL));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Formula: Enchant Weapon - Winter's Might", 17725, 21931));
 
 -- #if AFTER TBC
 -- TBC Recipes

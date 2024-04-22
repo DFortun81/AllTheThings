@@ -1,4 +1,9 @@
 -------------------------
+--     CLASSIC WOW     --
+-------------------------
+ADDED_1_4_0 = "added 1.4.0";
+
+-------------------------
 -- THE BURNING CRUSADE --
 -------------------------
 CREATED_2_0_1 = "created 2.0.1.6180";					-- The Burning Crusade 2.0.1/Pre-Patch Launch on December 5th, 2006
