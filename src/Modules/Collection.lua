@@ -17,8 +17,12 @@ local FanfareFunctions = setmetatable({
 	return app.Audio.PlayFanfare
 end})
 
+local TooSpammyThings = {
+	Exploration = true
+}
 app.AddEventHandler("OnThingCollected", function(type)
 	if type and not app.Settings:Get("Thing:"..type) then return end
+	if TooSpammyThings[type] then return end
 
 	Callback(FanfareFunctions[type])
 	if app.Settings:GetTooltipSetting("Screenshot") then
