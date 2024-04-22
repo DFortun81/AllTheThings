@@ -12648,16 +12648,20 @@ customWindowUpdates.list = function(self, force, got)
 		app.Modules.Filter.Set.Visible(filterVisible);
 	end
 end
+
+-- cache some common functions
+local C_TradeSkillUI = C_TradeSkillUI;
+local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
+	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
+---@return number[]
+local function GetCategoryIDs()
+	return { C_TradeSkillUI_GetCategories() };
+end
 customWindowUpdates.Tradeskills = function(self, force, got)
 	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 		return;
 	end
 	if not self.initialized then
-		-- cache some common functions
-		local C_TradeSkillUI = C_TradeSkillUI;
-		local C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
-			= C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe
-
 		self.initialized = true;
 		self.SkillsInit = {};
 		self.force = true;
@@ -12751,14 +12755,16 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		local function UpdateLocalizedCategories(self, updates)
 			if not updates.Categories then
 				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
-				local currentCategoryID, categories = -1, AllTheThingsAD.LocalizedCategoryNames;
+				local categories = AllTheThingsAD.LocalizedCategoryNames;
 				updates.Categories = true;
-				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				local currentCategoryID;
+				local categoryData = {};
+				local categoryIDs = GetCategoryIDs();
 				for i = 1,#categoryIDs do
 					currentCategoryID = categoryIDs[i];
 					if not categories[currentCategoryID] then
-						local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-						if categoryData then
+						C_TradeSkillUI_GetCategoryInfo(currentCategoryID, categoryData);
+						if categoryData.name then
 							categories[currentCategoryID] = categoryData.name;
 						end
 					end
@@ -13812,7 +13818,7 @@ app.LoadDebugger = function()
 					local tradeSkillID = app.GetTradeSkillLine();
 					local currentCategoryID, categories = -1, {};
 					local categoryData, categoryList, rawGroups = {}, {}, {};
-					local categoryIDs = { C_TradeSkillUI.GetCategories() };
+					local categoryIDs = GetCategoryIDs();
 					for i = 1,#categoryIDs do
 						currentCategoryID = categoryIDs[i];
 						C_TradeSkillUI.GetCategoryInfo(currentCategoryID, categoryData);
