@@ -3272,6 +3272,7 @@ local keys = {
 [77609]="Quantum Focus/Off-hand completed.",
 [77610]="Quantum Wand completed.",
 [77611]="Quantum Shield completed.",
+[77622]="Quantum Legs (Plate) completed.",
 [77623]="Quantum Legs (Mail) completed.",
 [77624]="Quantum Legs (Leather) completed.",
 [77625]="Quantum Legs (Cloth) completed.",

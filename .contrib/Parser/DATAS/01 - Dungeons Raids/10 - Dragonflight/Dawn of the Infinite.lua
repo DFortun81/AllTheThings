@@ -15,7 +15,7 @@ local QUANTUM_GROUP = sharedData({
 	["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockages)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
 },{
 	-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
-	-- If the item needs other ModID or BonusID you need to use 'i()'
+	-- If the item needs different/other ModID or BonusID you need to use 'i()' instead
 	-- Which items you could get between 10.1.5 & 10.1.7 are saved at the bottom of the file as history
 	i(208061, {	-- Quantum Headpiece
 		filter(CLOTH, {
@@ -30,14 +30,10 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(121507),	-- Runespeaker's Crown				(NYI)
 
-			ig(134670),	-- Auxiliary's Cowl					(Removed)
 			ig(134787),	-- Entrenched Cowl					(Removed)
 			ig(19105),	-- Frost Runed Headdress			(Removed)
 			ig(10782),	-- Hakkari Shroud					(Removed)
 			ig(134615),	-- Inflammatory Hood				(Removed)
-
-			ig(105810),	-- Buc-Zakai Burning Hood			(Ordos)
-			ig(105808),	-- Damien's Ice-Vein Mask			(Ordos)
 		}),
 		filter(LEATHER, {
 			q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
@@ -52,11 +48,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(121509),	-- Runesworn Crown		 			(NYI)
 
 			ig(134621),	-- Incendiary Helm 					(Removed)
-			ig(134676),	-- Rookie's Helm 					(Removed)
 			ig(134794),	-- Ruinous Helm 					(Removed)
-
-			ig(105806),	-- Circlet of the Panser			(Ordos)
-			ig(105803),	-- Stickney's Grey-Shade Hood		(Ordos)
 		}),
 		filter(MAIL, {
 			q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
@@ -69,9 +61,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134624),	-- Firebrand Helm					(Removed)
 			ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
-
-			ig(105809),	-- Crest of Burning Deeds			(Ordos)
-			ig(105811),	-- Olivia's Graceful Gaze			(Ordos)
 		}),
 		filter(PLATE, {
 			q(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
@@ -92,10 +81,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134630),	-- Firescored Helm					(Removed)
 			ig(134802),	-- Tempered Helm					(Removed)
-
-			ig(105804),	-- Aladya's Spiritfire Greathelm	(Ordos)
-			ig(105805),	-- Dominik's Casque of Raging Flame	(Ordos)
-			ig(105807),	-- Magdalena's Murderous Crown		(Ordos)
 		}),
 	}),
 	i(208062, {	-- Quantum Shoulders
@@ -108,13 +93,9 @@ local QUANTUM_GROUP = sharedData({
 			ig(3958),	-- Mesh Mantle						(NYI)
 			ig(34107),	-- Tattered Shoulderpads			(NYI)
 
-			ig(134672),	-- Auxiliary's Amice				(Removed)
 			ig(134696),	-- Cascading Amice					(Removed)
 			ig(134724),	-- Icyweave Amice					(Removed)
 			ig(134753),	-- Veiled Mantle					(Removed)
-
-			ig(105795),	-- Bo He Me's Deathwind Mantle		(Ordos)
-			ig(105797),	-- Shay-Nii's Popping Shoulderpads	(Ordos)
 		}),
 		filter(LEATHER, {
 			q(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
@@ -126,12 +107,8 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134731),	-- Frosthide Shoulderpads			(Removed)
 			ig(134761),	-- Masked Shoulderpads				(Removed)
-			ig(134678),	-- Rookie's Shoulders				(Removed)
 			ig(134702),	-- Swarming Shoulders				(Removed)
 			ig(51998),	-- Vigorous Spaulders				(Removed)
-
-			ig(105798),	-- Flame Healer's Shoulderguards	(Ordos)
-			ig(105801),	-- Spaulders of Dominating Dreams	(Ordos)
 		}),
 		filter(MAIL, {
 			q(77639, {	-- when you learn everything from Quantum Shoulders (Mail)
@@ -146,9 +123,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134765),	-- Overgrown Shoulderguards			(Removed)
 			ig(134706),	-- Surging Spaulders				(Removed)
 			ig(19111),	-- Winteraxe Epaulets				(Removed)
-
-			ig(105800),	-- Firearrow Shoulderpads			(Ordos)
-			ig(105799),	-- Fleshsmoke Chain Shoulders		(Ordos)
 		}),
 		filter(PLATE, {
 			q(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
@@ -168,10 +142,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134737),	-- Chillplate Shoulders				(Removed)
 			ig(134769),	-- Concealment Shoulderplates		(Removed)
 			ig(134713),	-- Crushing Pauldrons				(Removed)
-
-			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates	(Ordos)
-			ig(105794),	-- Starry Spaulders of Durability	(Ordos)
-			ig(105802),	-- Yaungol Deathcult Shoulderguards	(Ordos)
 		}),
 	}),
 	i(208064, {	-- Quantum Chestpiece
@@ -190,9 +160,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(21040),	-- Narain's Robe					(Removed)
 			ig(14150),	-- Robe of Evocation				(Removed)
 			ig(134751),	-- Veiled Raiment					(Removed)
-
-			ig(105774),	-- Catia's Flowing Robes			(Ordos)
-			ig(105773),	-- Ulmaas' Robes of Crushing Magma	(Ordos)
 		}),
 		filter(LEATHER, {
 			q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
@@ -207,10 +174,9 @@ local QUANTUM_GROUP = sharedData({
 			ig(134729),	-- Frosthide Tunic 					(Removed)
 			ig(10781),	-- Hakkari Breastplate 				(Removed)
 			ig(134759),	-- Masked Tunic						(Removed)
+			ig(113718),	-- Ravaged Leather Chestguard		(Removed)
+			ig(113716),	-- Ravaged Leather Tunic			(Removed)
 			ig(134791),	-- Ruinous Tunic					(Removed)
-
-			ig(105768),	-- Pamela's Muuscat Wrap			(Ordos)
-			ig(105770),	-- Zoo-Per's Superior Chestguard	(Ordos)
 		}),
 		filter(MAIL, {
 			q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
@@ -228,9 +194,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(2273),	-- Guerrilla Armor					(Removed)
 			ig(134795),	-- Ironbranded Chainmail			(Removed)
 			ig(134763),	-- Overgrown Armor					(Removed)
-
-			ig(105771),	-- Chestguard of Pyrrhic Immolation	(Ordos)
-			ig(105772),	-- Moonhee's Mean Vest				(Ordos)
 		}),
 		filter(PLATE, {
 			q(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
@@ -251,10 +214,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134735),	-- Chillplate Chestpiece			(Removed)
 			ig(134767),	-- Concealment Breastplate			(Removed)
 			ig(134799),	-- Tempered Breastplate				(Removed)
-
-			ig(105775),	-- Gleaming Eye Spellplate			(Ordos)
-			ig(105767),	-- Hoodrych's Bloodied Chestplate	(Ordos)
-			ig(105769),	-- Omegal's Crushing Carapace		(Ordos)
 		}),
 	}),
 	i(208063, {	-- Quantum Gloves
@@ -275,7 +234,6 @@ local QUANTUM_GROUP = sharedData({
 			}),
 
 			ig(20655),	-- Abyssal Cloth Handwraps			(Removed)
-			ig(134669),	-- Auxiliary's Handwraps			(Removed)
 			ig(134786),	-- Entrenched Handwraps				(Removed)
 			ig(134723),	-- Icyweave Gloves					(Removed)
 		}),
@@ -296,7 +254,7 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(20661),	-- Abyssal Leather Gloves			(Removed)
 			ig(134730),	-- Frosthide Gloves					(Removed)
-			ig(134675),	-- Rookie's Gloves					(Removed)
+			ig(113722),	-- Ravaged Leather Gloves			(Removed)
 			ig(134793),	-- Ruinous Gloves					(Removed)
 		}),
 		filter(MAIL, {
@@ -359,16 +317,13 @@ local QUANTUM_GROUP = sharedData({
 			ig(114267),	-- Firefly Trousers					(NYI)
 			ig(3957),	-- Mesh Pants						(NYI)(Unique)
 			ig(121511),	-- Runespeaker's Leggings			(NYI)
-			ig(22342),	-- Trousers of Pain					(NYI)
 			ig(114391),	-- Trousers of Hooded Nightmares	(NYI)
 
 			ig(23173),	-- Abomination Skin Leggings		(Removed)
-			ig(134671),	-- Auxiliary's Trousers				(Removed)
 			ig(134695),	-- Cascading Trousers				(Removed)
+			ig(22342),	-- Leggings of Torment				(Removed)
 			ig(15794),	-- Ripped Ogre Loincloth			(Removed)
 			ig(134752),	-- Veiled Leggings					(Removed)
-
-			ig(105757),	-- Shipley's Shady Silks			(Ordos)
 		}),
 		filter(LEATHER, {
 			q(77624, {	-- when you learn everything from Quantum Legs (Leather)
@@ -381,11 +336,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(3982),	-- Strapped Pants 					(NYI)
 
 			ig(134760),	-- Masked Leggings 					(Removed)
-			ig(134677),	-- Rookie's Legguards				(Removed)
 			ig(134701),	-- Swarming Legguards				(Removed)
-
-			ig(105758),	-- Arielle's Ancient Legwraps		(Ordos)
-			ig(105760),	-- Hamlet's Wind-Whipped Leggings	(Ordos)
 		}),
 		filter(MAIL, {
 			q(77623, {	-- when you learn everything from Quantum Legs (Mail)
@@ -401,15 +352,15 @@ local QUANTUM_GROUP = sharedData({
 			ig(4013),	-- Sterling Chain Pants				(NYI)
 			ig(121512),	-- Stormborn Leggings				(NYI)
 
-			ig(134681),	-- Greenhorn's Legguards			(Removed)
 			ig(23665),	-- Leggings of Elemental Fury		(Removed)
 			ig(134764),	-- Overgrown Kilt					(Removed)
 			ig(134705),	-- Surging Chain Leggings			(Removed)
-
-			ig(105754),	-- Desirae's Dashing Leggings		(Ordos)
-			ig(105755),	-- Moshne's Keen Kilt				(Ordos)
 		}),
 		filter(PLATE, {
+			q(77622, {	-- when you learn everything from Quantum Legs (Plate)
+				["name"] = "Quantum Legs (Plate) completed.",
+				["collectible"] = false,
+			}),
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
 			i(147514, {	-- Felguard Destroyer's Legplates	(NYI)
 				["modID"] = 2,
@@ -427,10 +378,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134768),	-- Concealment Legplates			(Removed)
 			ig(134712),	-- Crushing Legguards				(Removed)
-
-			ig(105759),	-- Magmaplates of Jian Wu Xi Feng	(Ordos)
-			ig(105761),	-- Partik's Purified Legplates		(Ordos)
-			ig(105756),	-- Poxleitner's Leggings of Lights	(Ordos)
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
@@ -513,7 +460,6 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Greataxe (Two-Handed) completed.",
 			["collectible"] = false,
 		}),
-		ig(134717),	-- Cold-Touched Decapitator				(NYI)
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
 		ig(108142),	-- Hardened Draenic Steel War Axe		(NYI)
@@ -528,9 +474,6 @@ local QUANTUM_GROUP = sharedData({
 		ig(5194),	-- Taskmaster Axe						(Removed)(Unique)
 		ig(23171),	-- The Axe of Severing					(Removed)
 		ig(134577),	-- Vanguard Decapitator					(Removed)
-
-		ig(39769),	-- Arcanite Ripper						(BMAH)(Unique)
-		ig(44924),	-- Sun Lute								(BMAH)(Unique)
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed) (Mace)
 		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
@@ -551,7 +494,7 @@ local QUANTUM_GROUP = sharedData({
 			["modID"] = 6, -- Mythic raid
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 1, -- LFR raid
+			["modID"] = 2, -- LFR raid
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 3, -- Normal raid
@@ -741,6 +684,121 @@ local QUANTUM_GROUP = sharedData({
 			i(133543),	-- Reins of the Infinite Timereaver
 		},
 	}),
+	n(QUESTS, sharedData({
+		["collectible"] = false,
+	},{
+		q(77629, {	-- when you learn everything from Quantum Headpiece (Cloth)
+			["name"] = "Quantum Headpiece (Cloth) completed.",
+		}),
+		q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
+			["name"] = "Quantum Headpiece (Leather) completed.",
+		}),
+		q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
+			["name"] = "Quantum Headpiece (Mail) completed.",
+		}),
+		q(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
+			["name"] = "Quantum Headpiece (Plate) completed.",
+		}),
+		q(77641, {	-- when you learn everything from Quantum Shoulders (Cloth)
+			["name"] = "Quantum Shoulders (Cloth) completed.",
+		}),
+		q(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
+			["name"] = "Quantum Shoulders (Leather) completed.",
+		}),
+		q(77639 , {	-- when you learn everything from Quantum Shoulders (Mail)
+			["name"] = "Quantum Shoulders (Mail) completed.",
+		}),
+		q(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
+			["name"] = "Quantum Shoulders (Plate) completed.",
+		}),
+		q(77637, {	-- when you learn everything from Quantum Chestpiece (Cloth)
+			["name"] = "Quantum Chestpiece (Cloth) completed.",
+		}),
+		q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
+			["name"] = "Quantum Chestpiece (Leather) completed.",
+		}),
+		q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
+			["name"] = "Quantum Chestpiece (Mail) completed.",
+		}),
+		q(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
+			["name"] = "Quantum Chestpiece (Plate) completed.",
+		}),
+		q(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
+			["name"] = "Quantum Gloves (Cloth) completed.",
+		}),
+		q(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
+			["name"] = "Quantum Gloves (Leather) completed.",
+		}),
+		q(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
+			["name"] = "Quantum Gloves (Mail) completed.",
+		}),
+		q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
+			["name"] = "Quantum Gloves (Plate) completed.",
+		}),
+		q(77625, {	-- when you learn everything from Quantum Legs (Cloth)
+			["name"] = "Quantum Legs (Cloth) completed.",
+		}),
+		q(77624, {	-- when you learn everything from Quantum Legs (Leather)
+			["name"] = "Quantum Legs (Leather) completed.",
+		}),
+		q(77623, {	-- when you learn everything from Quantum Legs (Mail)
+			["name"] = "Quantum Legs (Mail) completed.",
+		}),
+		q(77622, {	-- when you learn everything from Quantum Legs (Plate)
+			["name"] = "Quantum Legs (Plate) completed.",
+		}),
+		q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
+			["name"] = "Quantum Axe (One-Handed) completed.",
+		}),
+		q(77603, {	-- when you learn everything from Quantum Bow
+			["name"] = "Quantum Bow completed.",
+		}),
+		q(77604, {	-- when you learn everything from Quantum Crossbow
+			["name"] = "Quantum Crossbow completed.",
+		}),
+		q(77605, {	-- when you learn everything from Quantum Firearm/Gun
+			["name"] = "Quantum Firearm/Gun completed.",
+		}),
+		q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
+			["name"] = "Quantum Focus/Off-hand completed.",
+		}),
+		q(77599, {	-- when you learn everything from Greataxe (Two-Handed)
+			["name"] = "Quantum Greataxe (Two-Handed) completed.",
+		}),
+		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
+			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
+		}),
+		q(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
+			["name"] = "Quantum Greatsword (Two-Handed) completed.",
+		}),
+		q(77606, {	-- when you learn everything from Quantum Knife (Dagger)
+			["name"] = "Quantum Knife/Dagger completed.",
+		}),
+		q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
+			["name"] = "Quantum Knuckles/Fist Weapon completed.",
+		}),
+		q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
+			["name"] = "Quantum Mace (One-Handed) completed.",
+		}),
+		q(77602, {	-- when you learn everything from Quantum Polearm
+			["name"] = "Quantum Polearm completed.",
+		}),
+		q(77611, {	-- when you learn everything from Quantum Shield
+			["name"] = "Quantum Shield completed.",
+		}),
+		q(77601, {	-- when you learn everything from Quantum Staff
+			["name"] = "Quantum Staff completed.",
+		}),
+		q(77595, {	-- when you learn everything from Quantum Sword (One-Handed)
+			["name"] = "Quantum Sword (One-Handed) completed.",
+		}),
+		q(77610, {	-- when you learn everything from Quantum Wand
+			["name"] = "Quantum Wand completed.",
+		}),
+		q(77608, {	-- when you learn everything from Quantum Warglaives
+			["name"] = "Quantum Warglaives completed.",
+		}),
+	})),
 });
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 	inst(1209, {	-- Dawn of the Infinite
@@ -814,118 +872,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			n(QUESTS, sharedData({
-				["collectible"] = false,
-			},{
-				q(77629, {	-- when you learn everything from Quantum Headpiece (Cloth)
-					["name"] = "Quantum Headpiece (Cloth) completed.",
-				}),
-				q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
-					["name"] = "Quantum Headpiece (Leather) completed.",
-				}),
-				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
-					["name"] = "Quantum Headpiece (Mail) completed.",
-				}),
-				q(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
-					["name"] = "Quantum Headpiece (Plate) completed.",
-				}),
-				q(77641, {	-- when you learn everything from Quantum Shoulders (Cloth)
-					["name"] = "Quantum Shoulders (Cloth) completed.",
-				}),
-				q(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
-					["name"] = "Quantum Shoulders (Leather) completed.",
-				}),
-				q(77639 , {	-- when you learn everything from Quantum Shoulders (Mail)
-					["name"] = "Quantum Shoulders (Mail) completed.",
-				}),
-				q(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
-					["name"] = "Quantum Shoulders (Plate) completed.",
-				}),
-				q(77637, {	-- when you learn everything from Quantum Chestpiece (Cloth)
-					["name"] = "Quantum Chestpiece (Cloth) completed.",
-				}),
-				q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
-					["name"] = "Quantum Chestpiece (Leather) completed.",
-				}),
-				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
-					["name"] = "Quantum Chestpiece (Mail) completed.",
-				}),
-				q(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
-					["name"] = "Quantum Chestpiece (Plate) completed.",
-				}),
-				q(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
-					["name"] = "Quantum Gloves (Cloth) completed.",
-				}),
-				q(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
-					["name"] = "Quantum Gloves (Leather) completed.",
-				}),
-				q(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
-					["name"] = "Quantum Gloves (Mail) completed.",
-				}),
-				q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
-					["name"] = "Quantum Gloves (Plate) completed.",
-				}),
-				q(77625, {	-- when you learn everything from Quantum Legs (Cloth)
-					["name"] = "Quantum Legs (Cloth) completed.",
-				}),
-				q(77624, {	-- when you learn everything from Quantum Legs (Leather)
-					["name"] = "Quantum Legs (Leather) completed.",
-				}),
-				q(77623, {	-- when you learn everything from Quantum Legs (Mail)
-					["name"] = "Quantum Legs (Mail) completed.",
-				}),
-				q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
-					["name"] = "Quantum Axe (One-Handed) completed.",
-				}),
-				q(77603, {	-- when you learn everything from Quantum Bow
-					["name"] = "Quantum Bow completed.",
-				}),
-				q(77604, {	-- when you learn everything from Quantum Crossbow
-					["name"] = "Quantum Crossbow completed.",
-				}),
-				q(77605, {	-- when you learn everything from Quantum Firearm/Gun
-					["name"] = "Quantum Firearm/Gun completed.",
-				}),
-				q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
-					["name"] = "Quantum Focus/Off-hand completed.",
-				}),
-				q(77599, {	-- when you learn everything from Greataxe (Two-Handed)
-					["name"] = "Quantum Greataxe (Two-Handed) completed.",
-				}),
-				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
-					["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
-				}),
-				q(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
-					["name"] = "Quantum Greatsword (Two-Handed) completed.",
-				}),
-				q(77606, {	-- when you learn everything from Quantum Knife (Dagger)
-					["name"] = "Quantum Knife/Dagger completed.",
-				}),
-				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
-					["name"] = "Quantum Knuckles/Fist Weapon completed.",
-				}),
-				q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
-					["name"] = "Quantum Mace (One-Handed) completed.",
-				}),
-				q(77602, {	-- when you learn everything from Quantum Polearm
-					["name"] = "Quantum Polearm completed.",
-				}),
-				q(77611, {	-- when you learn everything from Quantum Shield
-					["name"] = "Quantum Shield completed.",
-				}),
-				q(77601, {	-- when you learn everything from Quantum Staff
-					["name"] = "Quantum Staff completed.",
-				}),
-				q(77595, {	-- when you learn everything from Quantum Sword (One-Handed)
-					["name"] = "Quantum Sword (One-Handed) completed.",
-				}),
-				q(77610, {	-- when you learn everything from Quantum Wand
-					["name"] = "Quantum Wand completed.",
-				}),
-				q(77608, {	-- when you learn everything from Quantum Warglaives
-					["name"] = "Quantum Warglaives completed.",
-				}),
-			})),
 			-- #if AFTER 10.1.7
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				n(COMMON_BOSS_DROPS, {
@@ -1421,9 +1367,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77851),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421485)
 		q(77852),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421486)
 		q(77853),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421487)
-
-		-- Quantum Items
-		-- q(77622),	-- when you learn everything from Quantum ?
 	}),
 });
 

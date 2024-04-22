@@ -8051,9 +8051,6 @@ root(ROOTS.Unsorted, {
 			n(QUESTS, {
 				-- 10.1.5.49516
 				q(76267),	--
-				-- 10.1.5.50130
-				-- Probably Quantum Items
-				q(77622),	--
 			}),
 		})),
 	}),
