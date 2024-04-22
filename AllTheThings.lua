@@ -59,6 +59,14 @@ local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, se
 local GameTooltip = GameTooltip;
 local ATTAccountWideData;
 
+local C_TradeSkillUI = C_TradeSkillUI;
+local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
+	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
+---@return number[]
+local function GetCategoryIDs()
+	return { C_TradeSkillUI_GetCategories() };
+end
+
 -- App & Module locals
 local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
 local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
@@ -12647,15 +12655,6 @@ customWindowUpdates.list = function(self, force, got)
 		self:BaseUpdate(force);
 		app.Modules.Filter.Set.Visible(filterVisible);
 	end
-end
-
--- cache some common functions
-local C_TradeSkillUI = C_TradeSkillUI;
-local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
-	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
----@return number[]
-local function GetCategoryIDs()
-	return { C_TradeSkillUI_GetCategories() };
 end
 customWindowUpdates.Tradeskills = function(self, force, got)
 	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
