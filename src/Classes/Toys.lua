@@ -40,6 +40,7 @@ if not C_ToyBox or app.GameBuildVersion < 30000 then
 			accountWideData.Toys = AccountWideToyData;
 		end
 	end);
+	app.CreateToy = app.ExtendClass("Item", "Toy", "toyID", toyFields);
 	return
 end
 
