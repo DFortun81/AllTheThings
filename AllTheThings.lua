@@ -1183,6 +1183,7 @@ if C_TooltipInfo_GetHyperlink then
 		end
 	end});
 else
+	---@class ATTNPCHarvesterForRetail: GameTooltip
 	local ATTCNPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate");
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
@@ -1865,10 +1866,11 @@ if GetAchievementNumCriteria then
 			app.PrintDebug("'achievement_criteria' used on a non-Achievement group")
 			return;
 		end
-		local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject, uniqueID
+		local _, criteriaType, _, _, reqQuantity, _, _, assetID, _, _, criteriaObject, uniqueID
 		---@diagnostic disable-next-line: redundant-parameter
 		for criteriaID=1,GetAchievementNumCriteria(achievementID, true),1 do
-			criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+			---@diagnostic disable-next-line: redundant-parameter
+			_, criteriaType, _, _, reqQuantity, _, _, assetID, _, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 			if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
 			criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
 
@@ -4733,6 +4735,7 @@ end);
 end	-- Map Information Lib
 
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
+---@return table?
 local function GetPopulatedQuestObject(questID)
 	-- cannot do anything on a missing object or questID
 	if not questID then return; end
@@ -5683,7 +5686,8 @@ app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
 app.events.TAXIMAP_OPENED = function()
-	local mapID = GetTaxiMapID();
+	local mapID = GetTaxiMapID() or -1;
+	if mapID < 0 then return; end
 	if app.Debugging then
 		if not contains(FlightPathMapIDs, mapID) then
 			app.print("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
@@ -5975,6 +5979,7 @@ end -- Heirloom Lib
 
 local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
+---@class ATTItemHarvesterForRetail: GameTooltip
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
 app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
 	IsClassIsolated = true,
@@ -7765,9 +7770,9 @@ app.AddContentTracking = function(group)
 				or achievementID and 2
 				or nil
 	if type then
-		local id = type == 0 and sourceID
-				or type == 1 and mountID
+		local id = type == 1 and mountID
 				or type == 2 and achievementID
+				or sourceID
 		if IsTracking(type,id) then
 			-- app.PrintDebug("StopTracking",type,id)
 			StopTracking(type, id, Enum.ContentTrackingStopType.Manual)
@@ -7862,6 +7867,7 @@ function app:CreateMiniListForGroup(group)
 				MergeProperties(group, groupSearch, true)
 				-- g is not merged automatically
 				-- app.PrintDebug("Copy .g",#groupSearch.g)
+				---@diagnostic disable-next-line: need-check-nil
 				group.g = groupSearch.g
 				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
 				-- app.PrintTable(group.g)
@@ -8408,6 +8414,7 @@ RowOnEnter = function (self)
 
 		-- Only if the link was unsuccessful.
 		if (not linkSuccessful or tooltip.ATT_AttachComplete == nil) and reference.currencyID then
+			---@diagnostic disable-next-line: redundant-parameter
 			tooltip:SetCurrencyByID(reference.currencyID, 1);
 		end
 	end
@@ -9254,7 +9261,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	if not window then
 		-- Create the window instance.
 		-- app.PrintDebug("GetWindow",suffix)
-		---@class ATTWindowFrame: Frame
+		---@class ATTWindowFrameForRetail: BackdropTemplate, Frame
 		window = CreateFrame("Frame", appName .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
@@ -9516,7 +9523,7 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
-	local g, db = rootData.g;
+	local g, db = rootData.g, nil;
 
 	-- Dungeons & Raids
 	db = app.CreateRawText(GROUP_FINDER);
@@ -10167,7 +10174,7 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 			self.PartitionSize = 2000;
 			local db = {};
 			local CleanUpHarvests = function()
-				local g, partition, pg, pgcount, refresh = self.data.g;
+				local g, partition, pg, pgcount, refresh = self.data.g, nil, nil, nil, nil;
 				local count = g and #g or 0;
 				if count > 0 then
 					for p=count,1,-1 do
@@ -10570,7 +10577,7 @@ local function CleanInheritingGroups(groups, ...)
 	-- Cleans any groups which are nested under any group with any specified fields
 	local arrs = select("#", ...);
 	if groups and arrs > 0 then
-		local refined, f, match = {};
+		local refined, f, match = {}, nil, nil;
 		-- app.PrintDebug("CIG:Start",#groups,...)
 		for _,j in ipairs(groups) do
 			match = nil;
@@ -11354,7 +11361,7 @@ customWindowUpdates.RaidAssistant = function(self)
 						['description'] = L.TELEPORT_TO_FROM_DUNGEON_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							LFGTeleport(IsInLFGDungeon());
+							LFGTeleport(IsInLFGDungeon() and true or false);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -12465,7 +12472,7 @@ customWindowUpdates.list = function(self, force, got)
 			-- collect valid id values
 			for id,groups in pairs(app.GetRawFieldContainer(cacheKey) or app.GetRawFieldContainer(cacheKeyID) or app.EmptyTable) do
 				for index,o in ipairs(groups) do
-					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]);
+					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]) or 0;
 					if imin <= cacheID and cacheID <= imax then
 						added[cacheID] = true;
 						-- app.PrintDebug("CacheID",cacheID,"from cache",id,"@",index,#groups)
@@ -12746,13 +12753,16 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
 				local currentCategoryID, categories = -1, AllTheThingsAD.LocalizedCategoryNames;
 				updates.Categories = true;
-				local categoryIDs = { C_TradeSkillUI.GetCategories() };
-				for i = 1,#categoryIDs do
-					currentCategoryID = categoryIDs[i];
-					if not categories[currentCategoryID] then
-						local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-						if categoryData then
-							categories[currentCategoryID] = categoryData.name;
+				local categoryData = {};
+				local categoryIDs = C_TradeSkillUI.GetCategories();
+				if categoryIDs then
+					for i = 1,#categoryIDs do
+						currentCategoryID = categoryIDs[i];
+						if not categories[currentCategoryID] then
+							C_TradeSkillUI_GetCategoryInfo(currentCategoryID, categoryData);
+							if categoryData.name then
+								categories[currentCategoryID] = categoryData.name;
+							end
 						end
 					end
 				end
@@ -12764,10 +12774,11 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 				-- app.PrintDebug("UpdateLearnedRecipes",self.lastTradeSkillID)
 				updates.Recipes = true;
 				wipe(MissingRecipes)
-				local learned, recipeID = {};
+				local categoryData = {};
+				local learned, recipeID = {}, nil;
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
-				local spellRecipeInfo, categoryData, currentCategoryID;
+				local spellRecipeInfo, currentCategoryID;
 				local categories = AllTheThingsAD.LocalizedCategoryNames;
 				-- app.PrintDebug("Scanning recipes",#recipeIDs)
 				for i = 1,#recipeIDs do
@@ -12777,8 +12788,8 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 						recipeID = spellRecipeInfo.recipeID;
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
-							categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-							if categoryData then
+							C_TradeSkillUI_GetCategoryInfo(currentCategoryID, categoryData);
+							if categoryData.name then
 								categories[currentCategoryID] = categoryData.name;
 							end
 						end
@@ -12794,7 +12805,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 							end
 						end
 						-- recipe is learned, so cache that it's learned regardless of being craftable
-						if spellRecipeInfo.learned then
+						if spellRecipeInfo and spellRecipeInfo.learned then
 							charSpells[recipeID] = 1;
 							if not acctSpells[recipeID] then
 								acctSpells[recipeID] = 1;
@@ -12895,9 +12906,11 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			self:SetMovable(true);
 			self:ClearAllPoints();
 			if visible and self.cachedTSMFrame then
-				if self.cachedTSMFrame.queue and self.cachedTSMFrame.queue:IsShown() then
-					self:SetPoint("TOPLEFT", self.cachedTSMFrame.queue, "TOPRIGHT", 0, 0);
-					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame.queue, "BOTTOMRIGHT", 0, 0);
+				---@diagnostic disable-next-line: undefined-field
+				local queue = self.cachedTSMFrame.queue;
+				if queue and queue:IsShown() then
+					self:SetPoint("TOPLEFT", queue, "TOPRIGHT", 0, 0);
+					self:SetPoint("BOTTOMLEFT", queue, "BOTTOMRIGHT", 0, 0);
 				else
 					self:SetPoint("TOPLEFT", self.cachedTSMFrame, "TOPRIGHT", 0, 0);
 					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
@@ -13215,24 +13228,26 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 						if poi.mapID == mapID and not AddedQuestIDs[poi.questId] then
 							AddedQuestIDs[poi.questId] = true
 							local questObject = GetPopulatedQuestObject(poi.questId);
-							if self.includeAll or
-								-- include the quest in the list if holding shift and tracking quests
-								(self.includePermanent and self.includeQuests) or
-								-- or if it is repeatable (i.e. one attempt per day/week/year)
-								questObject.repeatable or
-								-- or if it has time remaining
-								(questObject.timeRemaining or 0 > 0)
-							then
-								-- if poi.questId == 78663 then
-								-- 	app.print("WQ",questObject.questID,questObject.g and #questObject.g);
-								-- end
-								-- add the map POI coords to our new quest object
-								if poi.x and poi.y then
-									questObject.coords = {{ 100 * poi.x, 100 * poi.y, mapID }}
+							if questObject then
+								if self.includeAll or
+									-- include the quest in the list if holding shift and tracking quests
+									(self.includePermanent and self.includeQuests) or
+									-- or if it is repeatable (i.e. one attempt per day/week/year)
+									questObject.repeatable or
+									-- or if it has time remaining
+									(questObject.timeRemaining or 0 > 0)
+								then
+									-- if poi.questId == 78663 then
+									-- 	app.print("WQ",questObject.questID,questObject.g and #questObject.g);
+									-- end
+									-- add the map POI coords to our new quest object
+									if poi.x and poi.y then
+										questObject.coords = {{ 100 * poi.x, 100 * poi.y, mapID }}
+									end
+									NestObject(mapObject, questObject);
+									-- see if need to retry based on missing data
+									-- if not self.retry and questObject.missingData then self.retry = true; end
 								end
-								NestObject(mapObject, questObject);
-								-- see if need to retry based on missing data
-								-- if not self.retry and questObject.missingData then self.retry = true; end
 							end
 						-- else app.PrintDebug("Skipped WQ",mapID,poi.mapID,poi.questId)
 						end
@@ -13251,17 +13266,19 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 						if not questLine.isHidden and not AddedQuestIDs[questLine.questID] then
 							AddedQuestIDs[questLine.questID] = true
 							local questObject = GetPopulatedQuestObject(questLine.questID);
-							if self.includeAll or
-								-- include the quest in the list if holding shift and tracking quests
-								(self.includePermanent and self.includeQuests) or
-								-- or if it is repeatable (i.e. one attempt per day/week/year)
-								questObject.repeatable or
-								-- or if it has time remaining
-								(questObject.timeRemaining or 0 > 0)
-							then
-								NestObject(mapObject, questObject);
-								-- see if need to retry based on missing data
-								-- if not self.retry and questObject.missingData then self.retry = true; end
+							if questObject then
+								if self.includeAll or
+									-- include the quest in the list if holding shift and tracking quests
+									(self.includePermanent and self.includeQuests) or
+									-- or if it is repeatable (i.e. one attempt per day/week/year)
+									questObject.repeatable or
+									-- or if it has time remaining
+									(questObject.timeRemaining or 0 > 0)
+								then
+									NestObject(mapObject, questObject);
+									-- see if need to retry based on missing data
+									-- if not self.retry and questObject.missingData then self.retry = true; end
+								end
 							end
 						end
 					end
@@ -13280,13 +13297,15 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				local questObject
 				for _,questID in ipairs(repeatables) do
 					questObject = GetPopulatedQuestObject(questID)
-					if self.includeAll or
-						-- Account/Debug or not saved
-						(app.MODE_DEBUG_OR_ACCOUNT or not questObject.saved)
-					then
-						NestObject(mapObject, questObject);
-						-- see if need to retry based on missing data
-						-- if not self.retry and questObject.missingData then self.retry = true; end
+					if questObject then
+						if self.includeAll or
+							-- Account/Debug or not saved
+							(app.MODE_DEBUG_OR_ACCOUNT or not questObject.saved)
+						then
+							NestObject(mapObject, questObject);
+							-- see if need to retry based on missing data
+							-- if not self.retry and questObject.missingData then self.retry = true; end
+						end
 					end
 				end
 
@@ -13795,12 +13814,12 @@ app.LoadDebugger = function()
 				elseif e == "TRADE_SKILL_LIST_UPDATE" then
 					local tradeSkillID = app.GetTradeSkillLine();
 					local currentCategoryID, categories = -1, {};
-					local categoryList, rawGroups = {}, {};
-					local categoryIDs = { C_TradeSkillUI.GetCategories() };
+					local categoryData, categoryList, rawGroups = {}, {}, {};
+					local categoryIDs = C_TradeSkillUI.GetCategories();
 					for i = 1,#categoryIDs do
 						currentCategoryID = categoryIDs[i];
-						local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-						if categoryData then
+						C_TradeSkillUI.GetCategoryInfo(currentCategoryID, categoryData);
+						if categoryData.name then
 							if not categories[currentCategoryID] then
 								local category = {
 									["parentCategoryID"] = categoryData.parentCategoryID,
@@ -13820,8 +13839,8 @@ app.LoadDebugger = function()
 						if spellRecipeInfo then
 							currentCategoryID = spellRecipeInfo.categoryID;
 							if not categories[currentCategoryID] then
-								local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-								if categoryData then
+								C_TradeSkillUI.GetCategoryInfo(currentCategoryID, categoryData);
+								if categoryData.name then
 									local category = {
 										["parentCategoryID"] = categoryData.parentCategoryID,
 										["categoryID"] = currentCategoryID,
@@ -14043,7 +14062,7 @@ app.ProcessAuctionData = function()
 
 	-- Search the ATT Database for information related to the auction links (items, species, etc)
 	local filterID;
-	local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
+	local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {}, nil, nil, nil, nil, nil, nil;
 	for k,v in pairs(AllTheThingsAuctionData) do
 		searchResults = app.SearchForLink(v.itemLink);
 		if searchResults then
@@ -14250,7 +14269,7 @@ app.OpenAuctionModule = function(self)
 	-- TODO: someday someone might fix this AH functionality...
 	if true then return; end
 
-	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
+	if C_AddOns.IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
 		C_Timer.After(2, app.EmptyFunction);
 	end
 	if app.Blizzard_AuctionHouseUILoaded then
@@ -14286,28 +14305,30 @@ app.OpenAuctionModule = function(self)
 				for i=0,auctionItems-1 do
 					local itemLink;
 					local count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
-					if price and itemID and status then
-						itemLink = C_AuctionHouse_GetReplicateItemLink(i);
-						if itemLink then
-							AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
-						end
-					else
-						local item = Item:CreateFromItemID(itemID);
-						items[item] = true;
+					if itemID then
+						if price and status then
+							itemLink = C_AuctionHouse_GetReplicateItemLink(i);
+							if itemLink then
+								AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
+							end
+						else
+							local item = Item:CreateFromItemID(itemID);
+							items[item] = true;
 
-						item:ContinueOnItemLoad(function()
-							count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
-							items[item] = nil;
-							if itemID and status then
-								itemLink = C_AuctionHouse_GetReplicateItemLink(i);
-								if itemLink then
-									AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
+							item:ContinueOnItemLoad(function()
+								count, _, _, _, _, _, _, price, _, _, _, _, _, _, itemID, status = select(3, C_AuctionHouse_GetReplicateItemInfo(i));
+								items[item] = nil;
+								if itemID and status then
+									itemLink = C_AuctionHouse_GetReplicateItemLink(i);
+									if itemLink then
+										AllTheThingsAuctionData[itemID] = { itemLink = itemLink, count = count, price = (price/count) };
+									end
 								end
-							end
-							if not next(items) then
-								items = {};
-							end
-						end);
+								if not next(items) then
+									items = {};
+								end
+							end);
+						end
 					end
 				end
 				if not next(items) then
@@ -14323,12 +14344,14 @@ app.OpenAuctionModule = function(self)
 
 		-- Cache some functions to make them faster
 		local origSideDressUpFrameHide, origSideDressUpFrameShow = SideDressUpFrame.Hide, SideDressUpFrame.Show;
+		---@diagnostic disable-next-line: duplicate-set-field
 		SideDressUpFrame.Hide = function(...)
 			origSideDressUpFrameHide(...);
 			window:ClearAllPoints();
 			window:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT", 0, -10);
 			window:SetPoint("BOTTOMLEFT", AuctionHouseFrame, "BOTTOMRIGHT", 0, 10);
 		end
+		---@diagnostic disable-next-line: duplicate-set-field
 		SideDressUpFrame.Show = function(...)
 			origSideDressUpFrameShow(...);
 			window:ClearAllPoints();
@@ -14692,7 +14715,7 @@ SlashCmdList.AllTheThings = function(cmd)
 		-- first arg is always the window/command to execute
 		app.ResetCustomWindowParam(cmd);
 		for k=2,#args do
-			local customArg, customValue = args[k];
+			local customArg, customValue = args[k], nil;
 			customArg, customValue = ("="):split(customArg);
 			-- app.PrintDebug("Split custom arg:",customArg,customValue)
 			app.SetCustomWindowParam(cmd, customArg, customValue or true);

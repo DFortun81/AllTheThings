@@ -92,5 +92,10 @@ DF_PHASE_ONE = 100;
 DF_PHASE_TWO = 101;
 DF_PHASE_THREE = 102;
 
+-- The War Within Phases
+TWW_PHASE_ONE = 110;
+TWW_PHASE_TWO = 111;
+TWW_PHASE_THREE = 112;
+
 -- Done defining Phases for Classic
 -- #endif

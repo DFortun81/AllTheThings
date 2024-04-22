@@ -1,5 +1,6 @@
 
 local _, app = ...;
+local CreateObject = app.__CreateObject;
 
 local api = {}
 app.Modules.Test = api

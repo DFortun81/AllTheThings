@@ -414,12 +414,14 @@ settings.CopyProfile = function(self, key, copyKey)
 		AllTheThingsProfiles.Profiles[key] = nil
 		-- re-create the profile
 		local raw = settings:NewProfile(key)
-		local copy = AllTheThingsProfiles.Profiles[copyKey]
-		if copy then
-			rawcopy(copy.General, raw.General)
-			rawcopy(copy.Tooltips, raw.Tooltips)
-			rawcopy(copy.Unobtainable, raw.Unobtainable)
-			rawcopy(copy.Windows, raw.Windows)
+		if raw then
+			local copy = AllTheThingsProfiles.Profiles[copyKey]
+			if copy then
+				rawcopy(copy.General, raw.General)
+				rawcopy(copy.Tooltips, raw.Tooltips)
+				rawcopy(copy.Unobtainable, raw.Unobtainable)
+				rawcopy(copy.Windows, raw.Windows)
+			end
 		end
 		return raw
 	end
@@ -460,24 +462,25 @@ end
 settings.ApplyProfile = function()
 	if AllTheThingsProfiles then
 		local key = settings:GetProfile()
-		RawSettings = AllTheThingsProfiles.Profiles[key]
-		if not RawSettings then
-			RawSettings = settings:NewProfile(key)
-		end
-		setmetatable(RawSettings.General, GeneralSettingsBase)
-		setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
+		RawSettings = AllTheThingsProfiles.Profiles[key] or settings:NewProfile(key)
+		if RawSettings then
+			setmetatable(RawSettings.General, GeneralSettingsBase)
+			setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
 
-		-- apply window positions when applying a Profile
-		if RawSettings.Windows then
-			for suffix,_ in pairs(RawSettings.Windows) do
-				settings.SetWindowFromProfile(suffix)
+			-- apply window positions when applying a Profile
+			if RawSettings.Windows then
+				for suffix,_ in pairs(RawSettings.Windows) do
+					settings.SetWindowFromProfile(suffix)
+				end
 			end
-		end
 
-		if app.IsReady and settings:Get("Profile:ShowProfileLoadedMessage") then
-			app.print(L.PROFILE..":",settings:GetProfile(true))
+			if app.IsReady and settings:Get("Profile:ShowProfileLoadedMessage") then
+				app.print(L.PROFILE..":",settings:GetProfile(true))
+			end
+			return true
+		else
+			return false
 		end
-		return true
 	end
 end
 -- Allows moving an ATT window based on the position stored in the current Profile
@@ -596,7 +599,7 @@ settings.GetModeString = function(self)
 				end
 			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
 				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
-				solo = nil
+				solo = false
 			end
 		end
 		if thingCount == 0 then
@@ -659,7 +662,7 @@ settings.GetShortModeString = function(self)
 					insaneTotalCount = insaneTotalCount + 1;
 				end
 			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
-				solo = nil
+				solo = false
 			end
 		end
 		local style = ""
@@ -921,6 +924,9 @@ ATTSettingsPanelMixin = {
 			print("Invalid Checkbox Info")
 			text = "INVALID CHECKBOX"
 		end
+		---@class ATTSettingsCheckButtonForRetail: CheckButton
+		---@field Text FontString
+		---@field OnRefreshCheckedDisabled any
 		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate")
 		Mixin(cb, ATTSettingsObjectMixin);
 		self:RegisterObject(cb);
@@ -940,6 +946,8 @@ ATTSettingsPanelMixin = {
 		local width = opts.width or 150
 		local template = opts.template or "InputBoxTemplate"
 
+		---@class ATTOptionsEditBoxForRetail: EditBox
+		---@field AddLabel fun(self:any, label: string)
 		local editbox = CreateFrame("EditBox", name, self, template)
 		Mixin(editbox, ATTSettingsObjectMixin);
 		self:RegisterObject(editbox);
@@ -995,6 +1003,7 @@ ATTSettingsPanelMixin = {
 		local refs = opts.refs
 		local template = opts.template or "UIPanelButtonTemplate"
 
+		---@class ATTSettingsButtonForRetail: ATTButtonClass
 		local f = CreateFrame("Button", name, self, template)
 		Mixin(f, ATTSettingsObjectMixin)
 		self:RegisterObject(f)
@@ -1034,7 +1043,9 @@ ATTSettingsPanelMixin = {
 	-- :CreateCheckBox(text, OnRefresh, OnClick) - create a checkbox attached to the scrollable area
 	CreateScrollFrame = function(self)
 		-- Create the ScrollFrame
+		---@class ATTOptionsScrollFrameForRetail: ScrollFrame
 		local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..app.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
+		---@class ATTOptionsScrollFrameChildForRetail: Frame
 		local child = CreateFrame("Frame", settings:GetName().."SCF"..app.UniqueCounter.AddScrollableframe)
 		Mixin(child, ATTSettingsPanelMixin);
 		self:RegisterObject(child);
@@ -1043,6 +1054,7 @@ ATTSettingsPanelMixin = {
 		child:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
 		child.ScrollContainer = scrollFrame
 		-- Move the Scrollbar inside of the frame which it scrolls
+		---@diagnostic disable-next-line: undefined-field
 		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
 
 		-- local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..app.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
@@ -1130,7 +1142,7 @@ end
 
 Mixin(settings, ATTSettingsPanelMixin);
 
-local Categories, AddOnCategoryID, RootCategoryID = {}, appName;
+local Categories, AddOnCategoryID, RootCategoryID = {}, appName, nil;
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
 settings.Open = function(self)
 	if not openToCategory(RootCategoryID or AddOnCategoryID) then
@@ -1138,6 +1150,9 @@ settings.Open = function(self)
 	end
 end
 settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory)
+	---@class ATTOptionsPageForRetail: Frame
+	---@field CreateCheckBox fun(self: any, locale: string, OnRefresh: function, OnClick: function)
+	---@field CreateHeaderLabel fun(self: any, locale: string)
 	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
 	Mixin(subcategory, ATTSettingsPanelMixin);
 	self:RegisterObject(subcategory);
