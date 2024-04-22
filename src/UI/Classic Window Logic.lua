@@ -3,10 +3,8 @@ local appName, app = ...;
 local contains = app.contains;
 local AssignChildren, CloneClassInstance, CloneReference
 	= app.AssignChildren, app.CloneClassInstance, app.CloneReference;
-local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
 local GetCompletionIcon = app.GetCompletionIcon;
 local GetProgressTextForRow = app.GetProgressTextForRow;
@@ -15,7 +13,6 @@ local ResolveSymbolicLink = app.ResolveSymbolicLink;
 local SearchForField = app.SearchForField;
 local MergeObject = app.MergeObject;
 local MergeObjects = app.MergeObjects;
-local C_CreatureInfo = C_CreatureInfo;
 local L = app.L;
 
 -- Global locals
@@ -23,6 +20,8 @@ local ipairs, pairs, pcall, tinsert, tremove, math_floor
 	= ipairs, pairs, pcall, tinsert, tremove, math.floor;
 local C_QuestLog_IsOnQuest, GetTimePreciseSec = C_QuestLog.IsOnQuest, GetTimePreciseSec;
 local IsModifierKeyDown = IsModifierKeyDown;
+
+---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
 -- Implementation
@@ -154,7 +153,7 @@ local function CalculateRowDisplayID(data, all)
 	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
 	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
 	if all then
-		local displayInfo, _ = {};
+		local displayInfo, _ = {}, nil;
 		-- specific displayID
 		_ = data.displayID;
 		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
@@ -216,7 +215,7 @@ local function CalculateRowIndicatorTexture(group)
 	-- If group is quest and is currently accepted or saved...
 	local questID = group.questID;
 	if questID and C_QuestLog_IsOnQuest(questID) then
-		return app.asset(app.IsQuestReadyForTurnIn(questID) and "Interface_Questin" or "Interface_Questin_grey");
+		return app.asset(IsQuestReadyForTurnIn(questID) and "Interface_Questin" or "Interface_Questin_grey");
 	elseif group.saved then
 		if group.parent and group.parent.locks or group.repeatable then
 			return app.asset("known");
@@ -259,7 +258,7 @@ local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDispla
 local function SetPortraitIcon(self, data, x)
 	local displayID = CalculateRowDisplayID(data);
 	if displayID then
-		SetPortraitTextureFromDisplayID(self, displayID);
+		SetPortraitTextureFromDisplayID(self, type(displayID) == "number" and displayID or displayID[1]);
 		self:SetWidth(self:GetHeight());
 		self:SetTexCoord(0, 1, 0, 1);
 		return true;
@@ -643,7 +642,7 @@ local function RowOnClick(self, button)
 				end
 				if isTSMOpen then
 					-- This is the new, unusable POS API that I don't understand. lol
-					local dict, path, itemString = {};
+					local dict, path, itemString = {}, nil, nil;
 					for i,group in ipairs(missingItems) do
 						path = app.GenerateSourcePathForTSM(group, 0);
 						if path then
@@ -812,6 +811,7 @@ local function RowOnEnter(self)
 		
 		-- Only if the link was unsuccessful.
 		if (not linkSuccessful or tooltip.ATT_AttachComplete == nil) and reference.currencyID then
+			---@diagnostic disable-next-line: redundant-parameter
 			tooltip:SetCurrencyByID(reference.currencyID, 1);
 		end
 	end
@@ -1025,16 +1025,16 @@ end
 local function RowOnLeave(self)
 	local reference = self.ref;
 	if reference then reference.working = nil; end
-	local tooltip = GameTooltip;
 	app.ActiveRowReference = nil;
-	tooltip.ATT_AttachComplete = nil;
-	tooltip.ATT_IsRefreshing = nil;
-	tooltip.ATT_IsModifierKeyDown = nil;
-	tooltip:ClearATTReferenceTexture();
-	tooltip:ClearLines();
-	tooltip:Hide();
+	GameTooltip.ATT_AttachComplete = nil;
+	GameTooltip.ATT_IsRefreshing = nil;
+	GameTooltip.ATT_IsModifierKeyDown = nil;
+	GameTooltip:ClearATTReferenceTexture();
+	GameTooltip:ClearLines();
+	GameTooltip:Hide();
 end
 CreateRow = function(self)
+	---@class ATTRowClass: ATTButtonClass
 	local row = CreateFrame("Button", nil, self);
 	row.index = #self.rows;
 	if row.index == 0 then
@@ -1085,6 +1085,7 @@ CreateRow = function(self)
 	row.Indicator:SetWidth(row:GetHeight());
 
 	-- Texture is the icon.
+	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
 	row.Texture:SetPoint("BOTTOM");
 	row.Texture:SetPoint("TOP");
@@ -1282,7 +1283,7 @@ local function SetWindowVisible(self, show)
 		self:Hide();
 	end
 end
-local function ToggleWindow(self)
+local function ToggleWindow(self, cmd)
 	self:SetVisible(not self:IsVisible());
 end
 local function ProcessGroup(data, object)
@@ -1434,7 +1435,7 @@ local function RefreshData(source, trigger)
 			app:UpdateWindows(source, nil, refreshFromTrigger);
 		end
 		refreshFromTrigger = nil;
-		currentlyRefreshingData = nil;
+		currentlyRefreshingData = false;
 		
 		-- Execute the OnRefreshComplete handlers.
 		app.HandleEvent("OnRefreshComplete");
@@ -1449,7 +1450,7 @@ function app:RefreshDataQuietly(source, trigger)
 end
 
 local BuildCategory = function(self, headers, searchResults, inst)
-	local sources, header, headerType = {}, self;
+	local sources, header, headerType = {}, self, nil;
 	for j,o in ipairs(searchResults) do
 		local u = GetRelativeValue(o, "u");
 		if not u or u ~= 1 then
@@ -1577,8 +1578,11 @@ function app:CreateWindow(suffix, settings)
 	local window = app.Windows[suffix];
 	if not window and settings then
 		-- Create the window instance.
-		window = CreateFrame("FRAME", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+		---@class ATTWindow: BackdropTemplate, ATTFrameClass
+		window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
+		window.data = nil;
+		window.Settings = nil;
 		window.Suffix = suffix;
 		window.SetData = SetWindowData;
 		window.BuildCategory = BuildCategory;
@@ -1597,6 +1601,7 @@ function app:CreateWindow(suffix, settings)
 		if window.SetResizeBounds then
 			window:SetResizeBounds(96, 32);
 		else
+			---@diagnostic disable-next-line: undefined-field
 			window:SetMinResize(96, 32);
 		end
 		window:SetSize(300, 300);
@@ -1623,7 +1628,7 @@ function app:CreateWindow(suffix, settings)
 					defaults[key] = value;
 				end
 			end
-			window.Load = function(self)
+			function window:Load()
 				local windowSettings = self.Settings;
 				if not windowSettings then
 					return;
@@ -1634,14 +1639,14 @@ function app:CreateWindow(suffix, settings)
 				end
 				ApplySettingsForWindow(self, windowSettings);
 			end
-			window.RecordSettings = function(self)
+			function window:RecordSettings()
 				local windowSettings = self.Settings;
 				if windowSettings then
 					BuildSettingsForWindow(self, windowSettings);
 				end
 				return windowSettings;
 			end
-			window.Save = function(self)
+			function window:Save()
 				local windowSettings = self:RecordSettings();
 				if windowSettings and settings.OnSave then
 					settings.OnSave(self, windowSettings);
@@ -1657,7 +1662,7 @@ function app:CreateWindow(suffix, settings)
 
 		-- Visible, which overrides the default functions and gives the addon the ability to recieve information about it.
 		local visible, oldShow, oldHide = false, window.Show, window.Hide;
-		window.Show = function(self)
+		function window:Show()
 			if not visible then
 				visible = true;
 				oldShow(self);
@@ -1672,7 +1677,7 @@ function app:CreateWindow(suffix, settings)
 				self:RecordSettings();
 			end
 		end
-		window.Hide = function(self)
+		function window:Hide()
 			if visible then
 				visible = false;
 				oldHide(self);
@@ -1687,32 +1692,32 @@ function app:CreateWindow(suffix, settings)
 
 		-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
 		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
-		window.DefaultRebuild = function(self)
+		function window:DefaultRebuild()
 			AssignChildren(self.data);
 		end
-		window.AssignChildren = function(self)
+		function window:AssignChildren()
 			AssignChildren(self.data);
 		end
-		window.ExpandData = function(self, expanded)
+		function window:ExpandData(expanded)
 			ExpandGroupsRecursively(self.data, expanded, true);
 		end
 		local onRebuild = settings.OnRebuild;
 		if onRebuild then
 			if debugging then
-				window.ForceRebuild = function(self)
+				function window:ForceRebuild()
 					print("ForceRebuild: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
 					local response = onRebuild(self);
 					if self.data then
 						if response then self:DefaultRebuild(); end
 						print("ForceRebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-						self.data.window = self;
+						self.data.window = window;
 						self:ForceUpdate(true);
 					else
 						print("ForceRebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 					end
 				end
-				window.Rebuild = function(self)
+				function window:Rebuild()
 					print("Rebuild: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
 					local response = onRebuild(self);
@@ -1726,7 +1731,7 @@ function app:CreateWindow(suffix, settings)
 					end
 				end
 			else
-				window.ForceRebuild = function(self)
+				function window:ForceRebuild()
 					local response = onRebuild(self);
 					if self.data then
 						if response then self:DefaultRebuild(); end
@@ -1734,7 +1739,7 @@ function app:CreateWindow(suffix, settings)
 						self:ForceUpdate(true);
 					end
 				end
-				window.Rebuild = function(self)
+				function window:Rebuild()
 					local response = onRebuild(self);
 					if self.data then
 						if response then self:DefaultRebuild(); end
@@ -1745,7 +1750,7 @@ function app:CreateWindow(suffix, settings)
 			end
 		else
 			if debugging then
-				window.ForceRebuild = function(self)
+				function window:ForceRebuild()
 					if self.data then
 						print("ForceRebuild: " .. suffix);
 						local lastUpdate = GetTimePreciseSec();
@@ -1756,7 +1761,7 @@ function app:CreateWindow(suffix, settings)
 						self:ForceUpdate(true);
 					end
 				end
-				window.Rebuild = function(self)
+				function window:Rebuild()
 					if self.data then
 						print("Rebuild: " .. suffix);
 						local lastUpdate = GetTimePreciseSec();
@@ -1767,14 +1772,14 @@ function app:CreateWindow(suffix, settings)
 					end
 				end
 			else
-				window.ForceRebuild = function(self)
+				function window:ForceRebuild()
 					if self.data then
 						self:DefaultRebuild();
 						self.data.window = self;
 						self:ForceUpdate(true);
 					end
 				end
-				window.Rebuild = function(self)
+				function window:Rebuild()
 					if self.data then
 						self:DefaultRebuild();
 						self.data.window = self;
@@ -1788,7 +1793,7 @@ function app:CreateWindow(suffix, settings)
 		local OnUpdate = settings.OnUpdate or UpdateWindow;
 		window.DefaultUpdate = UpdateWindow;
 		if debugging then
-			window.ForceUpdate = function(self, force, trigger)
+			function window:ForceUpdate(force, trigger)
 				print("ForceUpdate: " .. suffix, force, trigger);
 				local lastUpdate = GetTimePreciseSec();
 				local result = OnUpdate(self, force, trigger);
@@ -1796,7 +1801,7 @@ function app:CreateWindow(suffix, settings)
 				self:Refresh();
 				return result;
 			end
-			window.Update = function(self, force, trigger)
+			function window:Update(force, trigger)
 				if self:IsShown() then
 					print("UpdateWindow: " .. suffix, force, trigger);
 					local lastUpdate = GetTimePreciseSec();
@@ -1809,12 +1814,12 @@ function app:CreateWindow(suffix, settings)
 				end
 			end
 		else
-			window.ForceUpdate = function(self, force, trigger)
+			function window:ForceUpdate(force, trigger)
 				local result = OnUpdate(self, force, trigger);
 				self:Refresh();
 				return result;
 			end
-			window.Update = function(self, force, trigger)
+			function window:Update(force, trigger)
 				if self:IsShown() then
 					local result = OnUpdate(self, force, trigger);
 					self:Refresh();
@@ -1830,20 +1835,20 @@ function app:CreateWindow(suffix, settings)
 		local onRefresh = settings.OnRefresh;
 		if onRefresh then
 			if debugging then
-				window.Refresh = function(self)
+				function window:Refresh()
 					print("Refresh: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
 					if onRefresh(self) then defaultOnRefresh(self); end
 					print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 				end
 			else
-				window.Refresh = function(self)
+				function window:Refresh()
 					if onRefresh(self) then defaultOnRefresh(self); end
 				end
 			end
 		else
 			if debugging then
-				window.Refresh = function(self)
+				function window:Refresh()
 					print("Refresh: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
 					defaultOnRefresh(self);
@@ -1855,7 +1860,7 @@ function app:CreateWindow(suffix, settings)
 		end
 
 		-- Phase 4: Redraw, which only updates the rows that already have row data visually.
-		window.Redraw = function(self)
+		function window:Redraw()
 			if self:IsShown() then
 				RedrawVisibleRowData(self);
 			end
@@ -1878,18 +1883,19 @@ function app:CreateWindow(suffix, settings)
 				end);
 			end);
 		end
-		window.DelayedRebuild = function(self)
+		function window:DelayedRebuild()
 			self:DelayedCall("Rebuild", 1);
 		end
-		window.DelayedRefresh = function(self)
+		function window:DelayedRefresh()
 			self:DelayedCall("Refresh", 5);
 		end
-		window.DelayedUpdate = function(self, force)
+		function window:DelayedUpdate(force)
 			self:DelayedCall("Update", 60, force);
 		end
 
 		-- The Row Container. This contains all of the row frames.
-		local container = CreateFrame("FRAME", nil, window);
+		---@class ATTRowContainer: Frame
+		local container = CreateFrame("Frame", nil, window);
 		container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
 		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
 		window.Container = container;
@@ -1912,11 +1918,12 @@ function app:CreateWindow(suffix, settings)
 
 		-- The Scroll Bar.
 		window.CurrentIndex = 0;
+		---@class ATTWindowScrollBar: Slider
 		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
 		container:SetPoint("RIGHT", scrollbar, "LEFT", -2, 0);
 		scrollbar:SetPoint("TOP", window, "TOP", 0, -40);
 		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
-		scrollbar:SetScript("OnValueChanged", function(self, value)
+		scrollbar:SetScript("OnValueChanged", function(o, value)
 			if window.CurrentIndex ~= value then
 				window.CurrentIndex = value;
 				window:Refresh();
@@ -1931,10 +1938,10 @@ function app:CreateWindow(suffix, settings)
 		scrollbar:SetObeyStepOnDrag(true);
 		scrollbar:SetWidth(16);
 		scrollbar:EnableMouseWheel(true);
-		window:SetScript("OnMouseWheel", function(self, delta)
+		window:SetScript("OnMouseWheel", function(o, delta)
 			scrollbar:SetValue(window.CurrentIndex - delta);
 		end);
-		window.SetMinMaxValues = function(self, displayedValue, totalValue)
+		window.SetMinMaxValues = function(o, displayedValue, totalValue)
 			scrollbar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
 		end
 
@@ -1949,18 +1956,18 @@ function app:CreateWindow(suffix, settings)
 
 		-- Setup the Event Handlers
 		local handlers = {};
-		window:SetScript("OnEvent", function(self, e, ...)
+		window:SetScript("OnEvent", function(o, e, ...)
 			if debugging then print(e, ...); end
 			local handler = handlers[e];
 			if handler then
-				handler(self, ...);
+				handler(window, ...);
 			else
-				self:Update();
+				window:Update();
 			end
 		end);
 		if not settings.IgnoreQuestUpdates then
-			local delayedRefresh = function(self)
-				self:DelayedRefresh();
+			local delayedRefresh = function()
+				window:DelayedRefresh();
 			end;
 			handlers.BAG_UPDATE_DELAYED = delayedRefresh;
 			handlers.QUEST_WATCH_UPDATE = delayedRefresh;
@@ -1968,9 +1975,9 @@ function app:CreateWindow(suffix, settings)
 			window:RegisterEvent("QUEST_WATCH_UPDATE");
 			window:RegisterEvent("QUEST_ITEM_UPDATE");
 			window:RegisterEvent("BAG_UPDATE_DELAYED");
-			local delayedUpdateWithTrigger = function(self)
-				self:Redraw();
-				self:DelayedUpdate(true);
+			local delayedUpdateWithTrigger = function()
+				window:Redraw();
+				window:DelayedUpdate(true);
 			end;
 			handlers.QUEST_TURNED_IN = delayedUpdateWithTrigger;
 			handlers.QUEST_ACCEPTED = delayedUpdateWithTrigger;
@@ -1978,8 +1985,8 @@ function app:CreateWindow(suffix, settings)
 			window:RegisterEvent("QUEST_ACCEPTED");
 			window:RegisterEvent("QUEST_REMOVED");
 			window:RegisterEvent("QUEST_TURNED_IN");
-			local delayedUpdate = function(self)
-				self:DelayedUpdate();
+			local delayedUpdate = function()
+				window:DelayedUpdate();
 			end;
 			handlers.QUEST_LOG_UPDATE = delayedUpdate;
 			window:RegisterEvent("QUEST_LOG_UPDATE");
@@ -2010,13 +2017,13 @@ function app:CreateWindow(suffix, settings)
 		if settings.Commands then
 			local onCommand;
 			if settings.OnCommand then
-				onCommand = function(cmd) 
+				onCommand = function(cmd)
 					if not settings.OnCommand(window, cmd) then
 						window:Toggle(cmd);
 					end
 				end
 			else
-				onCommand = function(cmd) 
+				onCommand = function(cmd)
 					window:Toggle(cmd);
 				end
 			end
@@ -2024,7 +2031,7 @@ function app:CreateWindow(suffix, settings)
 			-- Commands are forced lower case.
 			local commandRoot = settings.Commands[settings.RootCommandIndex or 1]:upper();
 			SlashCmdList[commandRoot] = onCommand;
-			local commands, cmd = {};
+			local commands, cmd = {}, nil;
 			for i,command in ipairs(settings.Commands) do
 				cmd = command:lower();
 				_G["SLASH_" .. commandRoot .. i] = "/" .. cmd;
@@ -2200,7 +2207,7 @@ local function OnInitForPopout(self, group)
 		-- Show Quest Prereqs
 		if mainQuest.sourceQuests then
 			local breakafter = 0;
-			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests;
+			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests, nil, nil, nil;
 			while sourceQuests and #sourceQuests > 0 do
 				subSourceQuests = {}; prereqs = {};
 				for i,sourceQuestID in ipairs(sourceQuests) do

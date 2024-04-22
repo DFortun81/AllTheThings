@@ -4,7 +4,7 @@ local Colorize = app.Modules.Color.Colorize
 local HexToARGB = app.Modules.Color.HexToARGB
 local RGBToHex = app.Modules.Color.RGBToHex
 
-local picker, r,g,b,a = ColorPickerFrame;
+local picker, r,g,b,a = ColorPickerFrame, nil, nil, nil, nil;
 local function ShowColorPicker(callback, color)
 	if type(color) == "table" then
 		r, g, b, a = color.r, color.g, color.b, color.a;

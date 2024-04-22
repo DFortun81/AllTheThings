@@ -2071,6 +2071,7 @@ _.ObjectNames = {
 	[174792] = "Gorishi Silithid Crystal",
 	[174793] = "Gorishi Hive Hatchery",
 	[174848] = "Testing Equipment",
+	[175124] = "Rookery Egg",
 	[175165] = "Silver Dawning's Lockbox",
 	[175166] = "Mist Veil's Lockbox",
 	[175207] = "Beached Sea Creature",

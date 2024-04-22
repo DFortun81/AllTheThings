@@ -7,6 +7,9 @@ local DESCRIPTION_SEPARATOR, L = app.DESCRIPTION_SEPARATOR, app.L;
 -- Global locals
 local math_floor = math.floor;
 
+---@class ATTGameTooltip
+local GameTooltip = GameTooltip;
+
 -- Minimap Button
 local MinimapButton;
 function AllTheThings_MinimapButtonOnClick(self, button)
@@ -54,7 +57,8 @@ function AllTheThings_MinimapButtonOnLeave()
 end
 local function CreateMinimapButton()
 	-- Create the Button for the Minimap frame. Create a local and non-local copy.
-	local button = CreateFrame("BUTTON", appName .. "-Minimap", Minimap);
+	---@class ATTMinimapButton: Button
+	local button = CreateFrame("Button", appName .. "-Minimap", Minimap);
 	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
 	button:SetPoint("CENTER", 0, 0);
 	button:SetFrameStrata("HIGH");
@@ -113,6 +117,7 @@ local function CreateMinimapButton()
 		local mx, my = Minimap:GetCenter();
 		local px, py = GetCursorPosition();
 		local scale = Minimap:GetEffectiveScale();
+		---@diagnostic disable-next-line: deprecated
 		position = math.deg(math.atan2((py / scale) - my, (px / scale) - mx)) % 360;
 		AllTheThingsSavedVariables.MinimapButtonAngle = position;
 		self:Raise();

@@ -62,7 +62,7 @@ end
 app.GetFixedItemSpecInfo = GetFixedItemSpecInfo
 -- Returns a string containing the spec icons, followed by their respective names if desired
 local function GetSpecsString(specs, includeNames, trim)
-	local icons, name, icon, _ = {};
+	local icons, name, icon, _ = {}, nil, nil, nil;
 	if includeNames then
 		for i=#specs,1,-1 do
 			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
@@ -182,7 +182,7 @@ app.GroupBestMatchingItems = function(items, modItemID)
 	if not items or #items == 0 then return; end
 	-- print("refining",#items,"by depth to",modItemID)
 	-- local i, m, b = GetItemIDAndModID(modItemID);
-	local refinedBuckets, depth = {};
+	local refinedBuckets, depth = {}, nil;
 	for _,item in ipairs(items) do
 		depth = ItemMatchDepth(item, modItemID);
 		if depth then

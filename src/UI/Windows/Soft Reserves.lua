@@ -52,7 +52,10 @@ local function SendResponseMessage(msg, player)
 end
 
 -- Module locals
-local SoftReservesByItemID, SoftReservesDirty, SoftReserveWindow, UpdateSoftReserve, IsPrimaryLooter = {}, nil, nil, nil, nil;
+---@class ATTSoftReserveWindow: ATTWindow
+local SoftReserveWindow = nil;
+local UpdateSoftReserve = app.DoNothing;
+local SoftReservesByItemID, SoftReservesDirty, IsPrimaryLooter = {}, nil, nil;
 local PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 	-- Let WoW parse it.
 	local guid = UnitGUID(info);
@@ -91,6 +94,10 @@ local function GetGroupType()
 	end
 	return "RAID";
 end
+local function IsRaidLeader()
+	---@diagnostic disable-next-line: param-type-mismatch
+	return UnitIsGroupLeader("player", "raid");
+end
 if GetLootMethod then
 	IsPrimaryLooter = function()
 		-- This is like Master Looter, but in party situations where master loot is not set, the group leader takes on this responsibility.
@@ -107,7 +114,7 @@ if GetLootMethod then
 				else
 					return name == UnitName("party" .. partyIndex);
 				end
-			elseif UnitIsGroupLeader("player", "raid") then
+			elseif IsRaidLeader() then
 				return true;
 			end
 		end
@@ -116,7 +123,7 @@ else
 	IsPrimaryLooter = function()
 		-- This is like Master Looter, but in party situations where master loot is not set, the group leader takes on this responsibility.
 		if IsInGroup() then
-			return UnitIsGroupLeader("player", "raid");
+			return IsRaidLeader();
 		end
 	end
 end
@@ -169,7 +176,7 @@ end
 local function PushSoftReserves(method, target)
 	local reserves = app.GetDataMember("SoftReserves");
 	if reserves then
-		local count, length, msg, cmd = 7, 0, "!\tsrml";
+		local count, length, msg, cmd = 7, 0, "!\tsrml", nil;
 		if not method then method = GetGroupType(); end
 		for gu,reserve in pairs(reserves) do
 			if gu and IsGUIDInGroup(gu) then
@@ -360,7 +367,7 @@ UpdateSoftReserve = function(guid, itemID, timeStamp, silentMode, isCurrentPlaye
 					if IsPrimaryLooter() then
 						C_ChatInfo.SendAddonMessage("ATTC", "!\tsrml\t" .. guid .. "\t" .. itemID, GetGroupType());
 						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
-							SendGroupChatMessage("Updated " .. (SoftReserveWindow.GUIDToName(guid) or UnitName(guid) or guid) .. " to " .. (searchResults[1].link or GetItemInfo(itemID) or ("itemid:" .. itemID)));
+							SendGroupChatMessage("Updated " .. (UnitName(guid) or guid) .. " to " .. (searchResults[1].link or GetItemInfo(itemID) or ("itemid:" .. itemID)));
 						end
 					end
 				end
@@ -701,7 +708,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				OnClick = function(row, button)
 					app:ShowPopupDialogWithMultiLineEditBox("FORMAT: PLAYER NAME\\tITEM NAME/ID\\tPERSISTENCE\n\n", function(text)
 						text = text:gsub("    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
-						local u, pers, g, word, l, esc, c = "", {}, {}, "", text:len(), false;
+						local u, pers, g, word, l, esc, c = "", {}, {}, "", text:len(), false, nil;
 						for i=1,l,1 do
 							c = text:sub(i, i);
 							if c == "\\" then
@@ -993,13 +1000,14 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				visible = true,
 				priority = 1,
 				OnClick = function(row, button)
+					---@diagnostic disable-next-line: redundant-parameter
 					SetLootMethod("master", UnitName("player"));
 					return true;
 				end,
 				OnUpdate = function(data)
 					data.visible = IsInGroup()
 						and GetLootMethod() ~= "master"
-						and UnitIsGroupLeader("player", "raid");
+						and IsRaidLeader();
 					return true;
 				end,
 			});

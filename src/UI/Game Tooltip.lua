@@ -4,6 +4,7 @@ local appName, app = ...;
 -- Global locals
 local pairs, ipairs, tinsert, math_floor, tonumber, pi, MODELFRAME_DEFAULT_ROTATION
 	= pairs, ipairs, tinsert, math.floor, tonumber, math.pi, MODELFRAME_DEFAULT_ROTATION;
+---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
 -- Support for Artifact Appearances
@@ -15,9 +16,11 @@ else
 end
 
 -- Game Tooltip Icon
-local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
+---@class ATTGameTooltipIcon: Frame
+local GameTooltipIcon = CreateFrame("Frame", nil, GameTooltip);
 GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 GameTooltipIcon:SetSize(72, 72);
+---@class ATTGameTooltipIconTexture: Texture
 GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
 GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
 GameTooltipIcon.icon:Show();
@@ -30,7 +33,8 @@ GameTooltipIcon.icon.Border:Show();
 GameTooltipIcon:Hide();
 
 -- Model is used to display the model of an NPC/Encounter.
-local GameTooltipModel, model, fi = CreateFrame("FRAME", nil, GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
+---@class ATTGameTooltipModelFrame: BackdropTemplate, Frame
+local GameTooltipModel, model, fi = CreateFrame("Frame", nil, GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
 GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 GameTooltipModel:SetSize(128, 128);
 GameTooltipModel:SetBackdrop({
@@ -52,6 +56,7 @@ GameTooltipModel.Model:Hide();
 
 local MAX_CREATURES_PER_ENCOUNTER, Models = 9, {};
 for i=1,MAX_CREATURES_PER_ENCOUNTER do
+	---@class ATTGameTooltipModel: DressUpModel
 	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
 	model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4);
 	model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4);
@@ -60,15 +65,17 @@ for i=1,MAX_CREATURES_PER_ENCOUNTER do
 	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
 	fi = math_floor(i / 2);
 	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
+	---@diagnostic disable-next-line: undefined-field
 	if model.SetDepth then
+		---@diagnostic disable-next-line: undefined-field
 		model:SetDepth(i);
 	end
 	model:Hide();
 	tinsert(Models, model);
 end
 local function HideAllModels()
-	for i,model in ipairs(Models) do
-		model:Hide();
+	for _,m in ipairs(Models) do
+		m:Hide();
 	end
 	GameTooltipModel.Model:Hide();
 end
@@ -127,7 +134,7 @@ local function TrySetDisplayInfos(reference, displayInfos)
 	if displayInfos then
 		local count = #displayInfos;
 		if count > 0 then
-			local validDisplayIDs, displayID = {};
+			local validDisplayIDs, displayID = {}, nil;
 			for i=1,count do
 				displayID = AllowedDisplayID[displayInfos[i]];
 				if displayID then tinsert(validDisplayIDs, displayID); end

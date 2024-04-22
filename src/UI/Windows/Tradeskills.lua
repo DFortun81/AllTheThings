@@ -10,6 +10,8 @@ local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagent
 	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
 	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+---@class ATTGameTooltip: GameTooltip
+local GameTooltip = GameTooltip;
 
 local function RefreshSkills()
 	-- Store Skill Data
@@ -110,7 +112,7 @@ app:CreateWindow("Tradeskills", {
 			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = app.GetDataMember("Reagents", {});
-				local learned, craftSkillID, tradeSkillID, shouldShowSpellRanks = 0, 0, 0;
+				local learned, craftSkillID, tradeSkillID, shouldShowSpellRanks = 0, 0, 0, nil;
 				rawset(app.SpellNameToSpellID, 0, nil);
 				app.GetSpellName(0);
 
@@ -192,6 +194,7 @@ app:CreateWindow("Tradeskills", {
 
 							if craftType ~= "none" then
 								-- Attempt to harvest the item associated with this craft.
+								---@diagnostic disable-next-line: undefined-field
 								GameTooltip.SetCraftSpell(ATTCNPCHarvester, craftIndex);
 								local link, craftedItemID = select(2, ATTCNPCHarvester:GetItem());
 								if link then craftedItemID = GetItemInfoInstant(link); end
@@ -226,7 +229,7 @@ app:CreateWindow("Tradeskills", {
 					end
 					local numTradeSkills = GetNumTradeSkills();
 					for skillIndex = 1,numTradeSkills do
-						local skillName, skillType, numAvailable, isExpanded = GetTradeSkillInfo(skillIndex);
+						local skillName, skillType = GetTradeSkillInfo(skillIndex);
 						if skillType == "optimal" or skillType == "medium" or skillType == "easy" or skillType == "trivial" or skillType == "used" or skillType == "none" then
 							local spellID = app.SpellNameToSpellID[skillName];
 							if spellID then
@@ -491,7 +494,10 @@ app:CreateWindow("Tradeskills", {
 	OnUpdate = function(self, ...)
 		if TSM_API and TSMAPI_FOUR then
 			if not self.cachedTSMFrame then
-				for i,f in ipairs({UIParent:GetChildren()}) do
+				for _,child in ipairs({UIParent:GetChildren()}) do
+					---@class ATTFrameEnumerator: Frame
+					local f = child;
+					---@diagnostic disable-next-line: undefined-field
 					if f.headerBgCenter then
 						self.cachedTSMFrame = f;
 						local oldSetVisible = f.SetVisible;
@@ -521,6 +527,7 @@ app:CreateWindow("Tradeskills", {
 				if not self.gettinMadAtDumbNamingConventions then
 					self.gettinMadAtDumbNamingConventions = true;
 					self.OldNewElement = TSMAPI_FOUR.UI.NewElement;
+					---@diagnostic disable-next-line: duplicate-set-field
 					TSMAPI_FOUR.UI.NewElement = function(...)
 						app:StartATTCoroutine("UpdateTradeSkills", function()
 							while InCombatLockdown() do coroutine.yield(); end

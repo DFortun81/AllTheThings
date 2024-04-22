@@ -456,7 +456,6 @@ local function Mixin(o, mixin)
 end
 local ATTSettingsObjectMixin, ATTSettingsPanelMixin;
 -- Mixins
-do
 ATTSettingsObjectMixin = {
 	-- Performs SetPoint anchoring against the 'other' frame to align this Checkbox below it. Allows an 'indent' which defines how many steps of indentation to
 	-- apply either positive (right) or negative (left), or specifying another frame against which to LEFT-align
@@ -568,6 +567,9 @@ ATTSettingsPanelMixin = {
 			print("Invalid Checkbox Info")
 			text = "INVALID CHECKBOX"
 		end
+		---@class ATTSettingsCheckButton: CheckButton
+		---@field Text FontString
+		---@field OnRefreshCheckedDisabled any
 		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate")
 		Mixin(cb, ATTSettingsObjectMixin);
 		--self:RegisterObject(cb);
@@ -590,7 +592,9 @@ ATTSettingsPanelMixin = {
 		local text = opts.text
 		local width = opts.width or 150
 		local template = opts.template or "InputBoxTemplate"
-
+		
+		---@class ATTOptionsEditBox: EditBox
+		---@field AddLabel fun(self:any, label: string)
 		local editbox = CreateFrame("EditBox", name, self, template)
 		Mixin(editbox, ATTSettingsObjectMixin);
 		--self:RegisterObject(editbox);
@@ -646,6 +650,7 @@ ATTSettingsPanelMixin = {
 		local refs = opts.refs
 		local template = opts.template or "UIPanelButtonTemplate"
 
+		---@class ATTSettingsButton: ATTButtonClass
 		local f = CreateFrame("Button", name, self, template)
 		Mixin(f, ATTSettingsObjectMixin)
 		--self:RegisterObject(f)
@@ -685,7 +690,9 @@ ATTSettingsPanelMixin = {
 	-- :CreateCheckBox(text, OnRefresh, OnClick) - create a checkbox attached to the scrollable area
 	CreateScrollFrame = function(self)
 		-- Create the ScrollFrame
+		---@class ATTOptionsScrollFrame: ScrollFrame
 		local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..app.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
+		---@class ATTOptionsScrollFrameChild: Frame
 		local child = CreateFrame("Frame", settings:GetName().."SCF"..app.UniqueCounter.AddScrollableframe)
 		Mixin(child, ATTSettingsPanelMixin);
 		--self:RegisterObject(child);
@@ -694,6 +701,7 @@ ATTSettingsPanelMixin = {
 		child:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
 		child.ScrollContainer = scrollFrame
 		-- Move the Scrollbar inside of the frame which it scrolls
+		---@diagnostic disable-next-line: undefined-field
 		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
 
 		-- local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..app.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
@@ -777,11 +785,10 @@ ATTSettingsPanelMixin = {
 };
 -- All Object mixins apply to the Panels as well
 Mixin(ATTSettingsPanelMixin, ATTSettingsObjectMixin);
-end
 
 Mixin(settings, ATTSettingsPanelMixin);
 
-local Categories, AddOnCategoryID, RootCategoryID = {}, appName;
+local Categories, AddOnCategoryID, RootCategoryID = {}, appName, nil;
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
 settings.Open = function(self)
 	if not openToCategory(RootCategoryID or AddOnCategoryID) then
@@ -789,10 +796,10 @@ settings.Open = function(self)
 	end
 end
 settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory)
+	---@class ATTSubCategoryFrame: Frame
+	---@field CreateCheckBox fun(self: any, locale: string, OnRefresh: function, OnClick: function)
+	---@field CreateHeaderLabel fun(self: any, locale: string)
 	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
-	subcategory.CreateCheckBox = CreateCheckBox;
-	subcategory.CreateHeaderLabel = CreateHeaderLabel;
-	subcategory.CreateTextLabel = CreateTextLabel;
 	Mixin(subcategory, ATTSettingsPanelMixin);
 	self:RegisterObject(subcategory);
 	subcategory:SetAllPoints();
@@ -909,7 +916,7 @@ settings.SetCollectedThings = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleCollectedThings = function(self)
-	settings:SetCollectedThings(not self:Get("Show:CollectedThings", checked));
+	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);

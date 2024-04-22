@@ -1187,6 +1187,7 @@ _.ObjectNames = {
 	[174793] = "Gorishi Hive Hatchery",
 	[174848] = "Testing Equipment",
 	[175084] = "The Sparklematic 5200",
+	[175124] = "Rookery Egg",
 	[175165] = "Silver Dawning's Lockbox",
 	[175166] = "Mist Veil's Lockbox",
 	[175207] = "Beached Sea Creature",
