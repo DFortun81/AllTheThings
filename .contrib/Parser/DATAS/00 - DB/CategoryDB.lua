@@ -45,7 +45,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Way of the Grill",
 		icon = "Interface/Icons/achievement_cooking_masterofthegrill",
 		text = {
-			en = [[~GetSpellInfo(124694)]],
+			en = [[~C_Spell.GetSpellInfo(124694)]],
 		},
 	},
 	[65] = {
