@@ -12,37 +12,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 	n(TIER_14_RAIDS, {
 		n(ARMOR, {
 			d(DIFFICULTY.RAID.LFR, {
-				cl(DEATHKNIGHT, {
-					i(214817),	-- Legplates of the Lost Catacomb
-					i(214818),	-- Spaulders of the Lost Catacomb
-					i(214819),	-- Greatbelt of the Lost Catacomb
-					i(214820),	-- Handguards of the Lost Catacomb
-					i(214821),	-- Greathelm of the Lost Catacomb
-					i(214822),	-- Warboots of the Lost Catacomb
-					i(214823),	-- Vambraces of the Lost Catacomb
-					i(214824),	-- Battleplate of the Lost Catacomb
-				}),
-				cl(DRUID, {
-					i(214142),	-- Eternal Blossom Bracers
-					i(214143),	-- Eternal Blossom Tunic
-					i(214144),	-- Eternal Blossom Boots
-					i(214145),	-- Eternal Blossom Helm
-					i(214146),	-- Eternal Blossom Gloves
-					i(214147),	-- Eternal Blossom Belt
-					i(214148),	-- Eternal Blossom Shoulderpads
-					i(214149),	-- Eternal Blossom Leggings
-				}),
-				cl(HUNTER, {
-					i(214562),	-- Yaungol Slayer's Wristguards
-					i(214563),	-- Yaungol Slayer's Breastplate
-					i(214564),	-- Yaungol Slayer's Footguards
-					i(214565),	-- Yaungol Slayer's Helmet
-					i(214566),	-- Yaungol Slayer's Grips
-					i(214567),	-- Yaungol Slayer's Girdle
-					i(214568),	-- Yaungol Slayer's Mantle
-					i(214569),	-- Yaungol Slayer's Legwraps
-				}),
-				cl(MAGE, {
+				filter(CLOTH, {
+					-- MAGE
 					i(213711),	-- Robe of the Burning Scroll
 					i(213712),	-- Sandals of the Burning Scroll
 					i(213713),	-- Gloves of the Burning Scroll
@@ -51,28 +22,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213716),	-- Shoulderpads of the Burning Scroll
 					i(213717),	-- Cord of the Burning Scroll
 					i(213718),	-- Bracers of the Burning Scroll
-				}),
-				cl(MONK, {
-					i(214251),	-- Red Crane Pants
-					i(214252),	-- Red Crane Mantle
-					i(214253),	-- Red Crane Cinch
-					i(214254),	-- Red Crane Handguards
-					i(214255),	-- Red Crane Cap
-					i(214256),	-- Red Crane Treads
-					i(214257),	-- Red Crane Jerkin
-					i(214258),	-- Red Crane Wraps
-				}),
-				cl(PALADIN, {
-					i(214897),	-- White Tiger Greaves
-					i(214898),	-- White Tiger Shoulderguards
-					i(214899),	-- White Tiger Waistguard
-					i(214900),	-- White Tiger Grasp
-					i(214901),	-- White Tiger Warhelm
-					i(214902),	-- White Tiger Greatboots
-					i(214903),	-- White Tiger Armguards
-					i(214904),	-- White Tiger Chestguard
-				}),
-				cl(PRIEST, {
+					-- PRIEST
 					i(213851),	-- Guardian Serpent Raiment
 					i(213852),	-- Guardian Serpent Treads
 					i(213853),	-- Guardian Serpent Handwraps
@@ -81,28 +31,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213856),	-- Guardian Serpent Amice
 					i(213857),	-- Guardian Serpent Belt
 					i(213858),	-- Guardian Serpent Cuffs
-				}),
-				cl(ROGUE, {
-					i(214315),	-- Legguards of the Thousandfold Blades
-					i(214316),	-- Spaulders of the Thousandfold Blades
-					i(214317),	-- Waistband of the Thousandfold Blades
-					i(214318),	-- Grips of the Thousandfold Blades
-					i(214319),	-- Cover of the Thousandfold Blades
-					i(214320),	-- Footguards of the Thousandfold Blades
-					i(214321),	-- Vest of the Thousandfold Blades
-					i(214322),	-- Bindings of the Thousandfold Blades
-				}),
-				cl(SHAMAN, {
-					i(214647),	-- Firebird's Breastplate
-					i(214646),	-- Firebird's Footguards
-					i(214643),	-- Firebird's Girdle
-					i(214644),	-- Firebird's Grips
-					i(214645),	-- Firebird's Helmet
-					i(214641),	-- Firebird's Legwraps
-					i(214642),	-- Firebird's Mantle
-					i(214648),	-- Firebird's Wristguards
-				}),
-				cl(WARLOCK, {
+					-- WARLOCK
 					i(213923),	-- Sha-Skin Cuffs
 					i(213924),	-- Sha-Skin Belt
 					i(213925),	-- Sha-Skin Amice
@@ -112,7 +41,75 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213929),	-- Sha-Skin Treads
 					i(213930),	-- Sha-Skin Raiment
 				}),
-				cl(WARRIOR, {
+				filter(LEATHER, {
+					-- DRUID
+					i(214142),	-- Eternal Blossom Bracers
+					i(214143),	-- Eternal Blossom Tunic
+					i(214144),	-- Eternal Blossom Boots
+					i(214145),	-- Eternal Blossom Helm
+					i(214146),	-- Eternal Blossom Gloves
+					i(214147),	-- Eternal Blossom Belt
+					i(214148),	-- Eternal Blossom Shoulderpads
+					i(214149),	-- Eternal Blossom Leggings
+					-- MONK
+					i(214251),	-- Red Crane Pants
+					i(214252),	-- Red Crane Mantle
+					i(214253),	-- Red Crane Cinch
+					i(214254),	-- Red Crane Handguards
+					i(214255),	-- Red Crane Cap
+					i(214256),	-- Red Crane Treads
+					i(214257),	-- Red Crane Jerkin
+					i(214258),	-- Red Crane Wraps
+					-- ROGUE
+					i(214315),	-- Legguards of the Thousandfold Blades
+					i(214316),	-- Spaulders of the Thousandfold Blades
+					i(214317),	-- Waistband of the Thousandfold Blades
+					i(214318),	-- Grips of the Thousandfold Blades
+					i(214319),	-- Cover of the Thousandfold Blades
+					i(214320),	-- Footguards of the Thousandfold Blades
+					i(214321),	-- Vest of the Thousandfold Blades
+					i(214322),	-- Bindings of the Thousandfold Blades
+				}),
+				filter(MAIL, {
+					-- HUNTER
+					i(214562),	-- Yaungol Slayer's Wristguards
+					i(214563),	-- Yaungol Slayer's Breastplate
+					i(214564),	-- Yaungol Slayer's Footguards
+					i(214565),	-- Yaungol Slayer's Helmet
+					i(214566),	-- Yaungol Slayer's Grips
+					i(214567),	-- Yaungol Slayer's Girdle
+					i(214568),	-- Yaungol Slayer's Mantle
+					i(214569),	-- Yaungol Slayer's Legwraps
+					-- SHAMAN
+					i(214647),	-- Firebird's Breastplate
+					i(214646),	-- Firebird's Footguards
+					i(214643),	-- Firebird's Girdle
+					i(214644),	-- Firebird's Grips
+					i(214645),	-- Firebird's Helmet
+					i(214641),	-- Firebird's Legwraps
+					i(214642),	-- Firebird's Mantle
+					i(214648),	-- Firebird's Wristguards
+				}),
+				filter(PLATE, {
+					-- DEATH KNIGHT
+					i(214817),	-- Legplates of the Lost Catacomb
+					i(214818),	-- Spaulders of the Lost Catacomb
+					i(214819),	-- Greatbelt of the Lost Catacomb
+					i(214820),	-- Handguards of the Lost Catacomb
+					i(214821),	-- Greathelm of the Lost Catacomb
+					i(214822),	-- Warboots of the Lost Catacomb
+					i(214823),	-- Vambraces of the Lost Catacomb
+					i(214824),	-- Battleplate of the Lost Catacomb
+					-- PALADIN
+					i(214897),	-- White Tiger Greaves
+					i(214898),	-- White Tiger Shoulderguards
+					i(214899),	-- White Tiger Waistguard
+					i(214900),	-- White Tiger Grasp
+					i(214901),	-- White Tiger Warhelm
+					i(214902),	-- White Tiger Greatboots
+					i(214903),	-- White Tiger Armguards
+					i(214904),	-- White Tiger Chestguard
+					-- WARRIOR
 					i(214969),	-- Greatboots of Resounding Rings
 					i(214970),	-- Armguards of Resounding Rings
 					i(214971),	-- Greaves of Resounding Rings
@@ -124,37 +121,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			d(DIFFICULTY.RAID.NORMAL, {
-				cl(DEATHKNIGHT, {
-					i(214825),	-- Chestguard of the Lost Catacomb
-					i(214826),	-- Armguards of the Lost Catacomb
-					i(214827),	-- Greatboots of the Lost Catacomb
-					i(214828),	-- Warhelm of the Lost Catacomb
-					i(214829),	-- Grasp of the Lost Catacomb
-					i(214830),	-- Waistguard of the Lost Catacomb
-					i(214831),	-- Shoulderguards of the Lost Catacomb
-					i(214832),	-- Greaves of the Lost Catacomb
-				}),
-				cl(DRUID, {
-					i(214158),	-- Eternal Blossom Wraps
-					i(214159),	-- Eternal Blossom Jerkin
-					i(214160),	-- Eternal Blossom Treads
-					i(214161),	-- Eternal Blossom Cap
-					i(214162),	-- Eternal Blossom Hands
-					i(214163),	-- Eternal Blossom Cinch
-					i(214164),	-- Eternal Blossom Mantle
-					i(214165),	-- Eternal Blossom Pants
-				}),
-				cl(HUNTER, {
-					i(214553),	-- Yaungol Slayer's Legguards
-					i(214554),	-- Yaungol Slayer's Pauldrons
-					i(214555),	-- Yaungol Slayer's Chain
-					i(214556),	-- Yaungol Slayer's Gloves
-					i(214557),	-- Yaungol Slayer's Headguard
-					i(214558),	-- Yaungol Slayer's Sabatons
-					i(214559),	-- Yaungol Slayer's Chestguard
-					i(214560),	-- Yaungol Slayer's Armbands
-				}),
-				cl(MAGE, {
+				filter(CLOTH, {
+					-- MAGE
 					i(213727),	-- Vestment of the Burning Scroll
 					i(213728),	-- Slippers of the Burning Scroll
 					i(213729),	-- Mitts of the Burning Scroll
@@ -163,28 +131,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213732),	-- Mantle of the Burning Scroll
 					i(213733),	-- Sash of the Burning Scroll
 					i(213734),	-- Wristwraps of the Burning Scroll
-				}),
-				cl(MONK, {
-					i(214243),	-- Red Crane Bindings
-					i(214244),	-- Red Crane Vest
-					i(214245),	-- Red Crane Footguards
-					i(214246),	-- Red Crane Cover
-					i(214247),	-- Red Crane Grips
-					i(214248),	-- Red Crane Waistband
-					i(214249),	-- Red Crane Spaulders
-					i(214250),	-- Red Crane Legguards
-				}),
-				cl(PALADIN, {
-					i(214889),	-- White Tiger Battleplate
-					i(214890),	-- White Tiger Vambraces
-					i(214891),	-- White Tiger Warboots
-					i(214892),	-- White Tiger Greathelm
-					i(214893),	-- White Tiger Handguards
-					i(214894),	-- White Tiger Greatbelt
-					i(214895),	-- White Tiger Spaulders
-					i(214896),	-- White Tiger Legplates
-				}),
-				cl(PRIEST, {
+					-- PRIEST
 					i(213843),	-- Guardian Serpent Bracers
 					i(213844),	-- Guardian Serpent Cord
 					i(213845),	-- Guardian Serpent Shoulderpads
@@ -193,8 +140,36 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213848),	-- Guardian Serpent Gloves
 					i(213849),	-- Guardian Serpent Sandals
 					i(213850),	-- Guardian Serpent Robe
+					-- WARLOCK
+					i(213931),	-- Sha-Skin Vestment
+					i(213932),	-- Sha-Skin Slippers
+					i(213933),	-- Sha-Skin Mitts
+					i(213934),	-- Sha-Skin Crown
+					i(213935),	-- Sha-Skin Trousers
+					i(213936),	-- Sha-Skin Mantle
+					i(213937),	-- Sha-Skin Sash
+					i(213938),	-- Sha-Skin Wristwraps
 				}),
-				cl(ROGUE, {
+				filter(LEATHER, {
+					-- DRUID
+					i(214158),	-- Eternal Blossom Wraps
+					i(214159),	-- Eternal Blossom Jerkin
+					i(214160),	-- Eternal Blossom Treads
+					i(214161),	-- Eternal Blossom Cap
+					i(214162),	-- Eternal Blossom Hands
+					i(214163),	-- Eternal Blossom Cinch
+					i(214164),	-- Eternal Blossom Mantle
+					i(214165),	-- Eternal Blossom Pants
+					-- MONK
+					i(214243),	-- Red Crane Bindings
+					i(214244),	-- Red Crane Vest
+					i(214245),	-- Red Crane Footguards
+					i(214246),	-- Red Crane Cover
+					i(214247),	-- Red Crane Grips
+					i(214248),	-- Red Crane Waistband
+					i(214249),	-- Red Crane Spaulders
+					i(214250),	-- Red Crane Legguards
+					-- ROGUE
 					i(214307),	-- Bracers of the Thousandfold Blades
 					i(214308),	-- Tunic of the Thousandfold Blades
 					i(214309),	-- Boots of the Thousandfold Blades
@@ -204,7 +179,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214313),	-- Shoulderpads of the Thousandfold Blades
 					i(214314),	-- Leggings of the Thousandfold Blades
 				}),
-				cl(SHAMAN, {
+				filter(MAIL, {
+					-- HUNTER
+					i(214553),	-- Yaungol Slayer's Legguards
+					i(214554),	-- Yaungol Slayer's Pauldrons
+					i(214555),	-- Yaungol Slayer's Chain
+					i(214556),	-- Yaungol Slayer's Gloves
+					i(214557),	-- Yaungol Slayer's Headguard
+					i(214558),	-- Yaungol Slayer's Sabatons
+					i(214559),	-- Yaungol Slayer's Chestguard
+					i(214560),	-- Yaungol Slayer's Armbands
+					-- SHAMAN
 					i(214633),	-- Firebird's Armbands
 					i(214638),	-- Firebird's Chain
 					i(214637),	-- Firebird's Gloves
@@ -215,17 +200,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214635),	-- Firebird's Sabatons
 					i(220990),	-- Firebird's Shirt
 				}),
-				cl(WARLOCK, {
-					i(213931),	-- Sha-Skin Vestment
-					i(213932),	-- Sha-Skin Slippers
-					i(213933),	-- Sha-Skin Mitts
-					i(213934),	-- Sha-Skin Crown
-					i(213935),	-- Sha-Skin Trousers
-					i(213936),	-- Sha-Skin Mantle
-					i(213937),	-- Sha-Skin Sash
-					i(213938),	-- Sha-Skin Wristwraps
-				}),
-				cl(WARRIOR, {
+				filter(PLATE, {
+					-- DEATH KNIGHT
+					i(214825),	-- Chestguard of the Lost Catacomb
+					i(214826),	-- Armguards of the Lost Catacomb
+					i(214827),	-- Greatboots of the Lost Catacomb
+					i(214828),	-- Warhelm of the Lost Catacomb
+					i(214829),	-- Grasp of the Lost Catacomb
+					i(214830),	-- Waistguard of the Lost Catacomb
+					i(214831),	-- Shoulderguards of the Lost Catacomb
+					i(214832),	-- Greaves of the Lost Catacomb
+					-- PALADIN
+					i(214889),	-- White Tiger Battleplate
+					i(214890),	-- White Tiger Vambraces
+					i(214891),	-- White Tiger Warboots
+					i(214892),	-- White Tiger Greathelm
+					i(214893),	-- White Tiger Handguards
+					i(214894),	-- White Tiger Greatbelt
+					i(214895),	-- White Tiger Spaulders
+					i(214896),	-- White Tiger Legplates
+					-- WARRIOR
 					i(214961),	-- Greatbelt of Resounding Rings
 					i(214962),	-- Spaulders of Resounding Rings
 					i(214963),	-- Handguards of Resounding Rings
@@ -237,37 +231,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			d(DIFFICULTY.RAID.HEROIC, {
-				cl(DEATHKNIGHT, {
-					i(214833),	-- Legguards of the Lost Catacomb
-					i(214834),	-- Pauldrons of the Lost Catacomb
-					i(214835),	-- Girdle of the Lost Catacomb
-					i(214836),	-- Gauntlets of the Lost Catacomb
-					i(214837),	-- Helm of the Lost Catacomb
-					i(214838),	-- Sabatons of the Lost Catacomb
-					i(214839),	-- Bracers of the Lost Catacomb
-					i(214840),	-- Breastplate of the Lost Catacomb
-				}),
-				cl(DRUID, {
-					i(214150),	-- Eternal Blossom Legguards
-					i(214151),	-- Eternal Blossom Spaulders
-					i(214152),	-- Eternal Blossom Waistband
-					i(214153),	-- Eternal Blossom Grips
-					i(214154),	-- Eternal Blossom Cover
-					i(214155),	-- Eternal Blossom Footguards
-					i(214156),	-- Eternal Blossom Vest
-					i(214157),	-- Eternal Blossom Bindings
-				}),
-				cl(HUNTER, {
-					i(214570),	-- Yaungol Slayer's Leggings
-					i(214571),	-- Yaungol Slayer's Spaulders
-					i(214572),	-- Yaungol Slayer's Belt
-					i(214573),	-- Yaungol Slayer's Gauntlets
-					i(214574),	-- Yaungol Slayer's Helm
-					i(214575),	-- Yaungol Slayer's Boots
-					i(214576),	-- Yaungol Slayer's Hauberk
-					i(214577),	-- Yaungol Slayer's Bracers
-				}),
-				cl(MAGE, {
+				filter(CLOTH, {
+					-- MAGE
 					i(213719),	-- Cuffs of the Burning Scroll
 					i(213720),	-- Belt of the Burning Scroll
 					i(213721),	-- Amice of the Burning Scroll
@@ -276,28 +241,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213724),	-- Handwraps of the Burning Scroll
 					i(213725),	-- Treads of the Burning Scroll
 					i(213726),	-- Raiment of the Burning Scroll
-				}),
-				cl(MONK, {
-					i(214215),	-- Red Crane Leggings
-					i(214216),	-- Red Crane Shoulderpads
-					i(214217),	-- Red Crane Belt
-					i(214218),	-- Red Crane Gloves
-					i(214219),	-- Red Crane Helm
-					i(214220),	-- Red Crane Boots
-					i(214221),	-- Red Crane Tunic
-					i(214222),	-- Red Crane Bracers
-				}),
-				cl(PALADIN, {
-					i(214905),	-- White Tiger Sabatons
-					i(214906),	-- White Tiger Bracers
-					i(214907),	-- White Tiger Legguards
-					i(214908),	-- White Tiger Helm
-					i(214909),	-- White Tiger Breastplate
-					i(214910),	-- White Tiger Gauntlets
-					i(214911),	-- White Tiger Pauldrons
-					i(214912),	-- White Tiger Girdle
-				}),
-				cl(PRIEST, {
+					-- PRIEST
 					i(213859),	-- Guardian Serpent Wristwraps
 					i(213860),	-- Guardian Serpent Sash
 					i(213861),	-- Guardian Serpent Mantle
@@ -306,8 +250,36 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213864),	-- Guardian Serpent Mitts
 					i(213865),	-- Guardian Serpent Slippers
 					i(213866),	-- Guardian Serpent Vestment
+					-- WARLOCK
+					i(213915),	-- Sha-Skin Robe
+					i(213916),	-- Sha-Skin Sandals
+					i(213917),	-- Sha-Skin Gloves
+					i(213918),	-- Sha-Skin Hood
+					i(213919),	-- Sha-Skin Leggings
+					i(213920),	-- Sha-Skin Shoulderpads
+					i(213921),	-- Sha-Skin Cord
+					i(213922),	-- Sha-Skin Bracers
 				}),
-				cl(ROGUE, {
+				filter(LEATHER, {
+					-- DRUID
+					i(214150),	-- Eternal Blossom Legguards
+					i(214151),	-- Eternal Blossom Spaulders
+					i(214152),	-- Eternal Blossom Waistband
+					i(214153),	-- Eternal Blossom Grips
+					i(214154),	-- Eternal Blossom Cover
+					i(214155),	-- Eternal Blossom Footguards
+					i(214156),	-- Eternal Blossom Vest
+					i(214157),	-- Eternal Blossom Bindings
+					-- MONK
+					i(214215),	-- Red Crane Leggings
+					i(214216),	-- Red Crane Shoulderpads
+					i(214217),	-- Red Crane Belt
+					i(214218),	-- Red Crane Gloves
+					i(214219),	-- Red Crane Helm
+					i(214220),	-- Red Crane Boots
+					i(214221),	-- Red Crane Tunic
+					i(214222),	-- Red Crane Bracers
+					-- ROGUE
 					i(214323),	-- Wraps of the Thousandfold Blades
 					i(214324),	-- Jerkin of the Thousandfold Blades
 					i(214325),	-- Treads of the Thousandfold Blades
@@ -317,7 +289,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214329),	-- Mantle of the Thousandfold Blades
 					i(214330),	-- Pants of the Thousandfold Blades
 				}),
-				cl(SHAMAN, {
+				filter(MAIL, {
+					-- HUNTER
+					i(214570),	-- Yaungol Slayer's Leggings
+					i(214571),	-- Yaungol Slayer's Spaulders
+					i(214572),	-- Yaungol Slayer's Belt
+					i(214573),	-- Yaungol Slayer's Gauntlets
+					i(214574),	-- Yaungol Slayer's Helm
+					i(214575),	-- Yaungol Slayer's Boots
+					i(214576),	-- Yaungol Slayer's Hauberk
+					i(214577),	-- Yaungol Slayer's Bracers
+					-- SHAMAN
 					i(214654),	-- Firebird's Belt
 					i(214651),	-- Firebird's Boots
 					i(214649),	-- Firebird's Bracers
@@ -328,17 +310,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214656),	-- Firebird's Leggings
 					i(214655),	-- Firebird's Spaulders
 				}),
-				cl(WARLOCK, {
-					i(213915),	-- Sha-Skin Robe
-					i(213916),	-- Sha-Skin Sandals
-					i(213917),	-- Sha-Skin Gloves
-					i(213918),	-- Sha-Skin Hood
-					i(213919),	-- Sha-Skin Leggings
-					i(213920),	-- Sha-Skin Shoulderpads
-					i(213921),	-- Sha-Skin Cord
-					i(213922),	-- Sha-Skin Bracers
-				}),
-				cl(WARRIOR, {
+				filter(PLATE, {
+					-- DEATH KNIGHT
+					i(214833),	-- Legguards of the Lost Catacomb
+					i(214834),	-- Pauldrons of the Lost Catacomb
+					i(214835),	-- Girdle of the Lost Catacomb
+					i(214836),	-- Gauntlets of the Lost Catacomb
+					i(214837),	-- Helm of the Lost Catacomb
+					i(214838),	-- Sabatons of the Lost Catacomb
+					i(214839),	-- Bracers of the Lost Catacomb
+					i(214840),	-- Breastplate of the Lost Catacomb
+					-- PALADIN
+					i(214905),	-- White Tiger Sabatons
+					i(214906),	-- White Tiger Bracers
+					i(214907),	-- White Tiger Legguards
+					i(214908),	-- White Tiger Helm
+					i(214909),	-- White Tiger Breastplate
+					i(214910),	-- White Tiger Gauntlets
+					i(214911),	-- White Tiger Pauldrons
+					i(214912),	-- White Tiger Girdle
+					-- WARRIOR
 					i(214977),	-- Girdle of Resounding Rings
 					i(214978),	-- Pauldrons of Resounding Rings
 					i(214979),	-- Crushers of Resounding Rings
