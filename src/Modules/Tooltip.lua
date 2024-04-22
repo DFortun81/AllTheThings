@@ -842,6 +842,7 @@ if TooltipDataProcessor then
 		end
 
 		-- app.PrintDebug(self:GetName(),link,target,spellID,id,ttType,ttId)
+		-- app.PrintTable(ttdata)
 
 		--[[--]
 		-- Debug all of the available fields on the tooltip.
@@ -928,11 +929,11 @@ if TooltipDataProcessor then
 		end
 
 		-- Check the extra data to see if there's an alternate search for the data
-		if ttType and ttId then
+		if ttType then
 			local knownSearchField = TooltipTypes[ttType];
 			if not knownSearchField then
 				-- other ways to search
-				if app.ActiveRowReference and ttType == Enum_TooltipDataType.Spell then
+				if ttId and app.ActiveRowReference and ttType == Enum_TooltipDataType.Spell then
 					-- allow spell tooltip information when it's an ATT row
 					knownSearchField = "spellID";
 				end
@@ -949,7 +950,7 @@ if TooltipDataProcessor then
 						ttId = objectID;
 					end
 				end
-				if ttType == 21 then	-- Minimap mouseover
+				if ttType == Enum_TooltipDataType.MinimapMouseover then
 					local content = ttdata.lines;
 					if content and #content > 0 then
 						local text = content[1].leftText;
@@ -972,7 +973,7 @@ if TooltipDataProcessor then
 				return true;
 			end
 		end
-		-- print("AttachTooltip-Return");
+		-- app.PrintDebug("AttachTooltip-Return");
 	end
 
 	app.AddEventRegistration("TOOLTIP_DATA_UPDATE", function(...)
