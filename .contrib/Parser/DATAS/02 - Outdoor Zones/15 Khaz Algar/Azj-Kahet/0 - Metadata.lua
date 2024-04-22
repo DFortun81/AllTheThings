@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		["icon"] = ,
 		["lore"] = "",
-		["timeline"] = { ADDED_11_0_0_LAUNCH },
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
 	}),
 }));
 --]]

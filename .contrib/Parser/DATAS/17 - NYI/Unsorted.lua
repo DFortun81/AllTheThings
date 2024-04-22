@@ -47,23 +47,7 @@ root(ROOTS.Unsorted, {
 			i(210734),	-- Machinist's Wrench
 			i(210740),	-- Machinist's Calibrated Weight
 			i(210745),	-- Firelight Spud
-			i(210796),	-- Mycobloom
-			i(210797),	-- Mycobloom
-			i(210798),	-- Mycobloom
-			i(210799),	-- Luredrop
-			i(210800),	-- Luredrop
-			i(210801),	-- Luredrop
-			i(210802),	-- Orbinid
-			i(210803),	-- Orbinid
-			i(210804),	-- Orbinid
-			i(210805),	-- Blessing Blossom
-			i(210806),	-- Blessing Blossom
-			i(210807),	-- Blessing Blossom
-			i(210808),	-- Arathor's Spear
-			i(210809),	-- Arathor's Spear
-			i(210810),	-- Arathor's Spear
 			i(210813),	-- Wild Experimentation
-			i(210814),	-- Artisan's Acuity
 			i(210815),	-- Coreway Catalyst
 			i(210816),	-- Algarian Alchemist Stone
 			i(210826),	-- Harvestbot Repair Kit
@@ -776,7 +760,6 @@ root(ROOTS.Unsorted, {
 			i(213178),	-- Undercrawler Venom
 			i(213191),	-- Arathi Tinderbox
 			i(213193),	-- Arathi Army Medallion
-			i(213197),	-- Null Lotus
 			i(213209),	-- Grub Egg
 			i(213218),	-- Queen Rickiticka's Venom
 			i(213219),	-- Crushed Gemstones

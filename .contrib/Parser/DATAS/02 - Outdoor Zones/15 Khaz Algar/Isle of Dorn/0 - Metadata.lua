@@ -5,6 +5,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		--["icon"] = ,
 		--["lore"] = "",
-		["timeline"] = { ADDED_11_0_0_LAUNCH },
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
 	}),
 }));

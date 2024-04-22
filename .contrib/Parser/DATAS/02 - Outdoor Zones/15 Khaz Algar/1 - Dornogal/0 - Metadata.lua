@@ -6,6 +6,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		--["icon"] = ,
 		--["lore"] = "",
 		["isRaid"] = true,
-		["timeline"] = { ADDED_11_0_0_LAUNCH },
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
 	}),
 }));
