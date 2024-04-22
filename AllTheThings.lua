@@ -7831,10 +7831,12 @@ function app:CreateMiniListForGroup(group)
 
 		-- being a search result means it has already received certain processing
 		if not group.isBaseSearchResult then
+			local skipFull = app.GetRelativeValue(group, "skipFull")
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CreateObject(group);
 			popout:SetData(group);
 			group.isPopout = true
+			group.skipFull = skipFull
 
 			-- app.PrintDebug(Colorize("clone",app.Colors.ChatLink))
 			-- app.PrintTable(group)
