@@ -975,6 +975,8 @@ local function CreateObject(t, rootOnly)
 		end
 		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
+		elseif t.explorationID then
+			t = app.CreateExploration(t.explorationID, t);
 		elseif t.sourceID then
 			t = app.CreateItemSource(t.sourceID, t.itemID, t);
 		elseif t.encounterID then
