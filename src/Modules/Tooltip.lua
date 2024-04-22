@@ -58,12 +58,18 @@ if app.IsRetail then
 		local o = objectNamesToIDs[name];
 		if o and #o > 0 then
 			local mapID, px, py = GetPlayerPosition();
+			-- if we don't know where the player is, we have literally no way to reduce the set of matching objects by name
+			if not mapID then
+				return o[1]
+			end
 			local closestDistance = 99999
-			local closestObjectID, dist, searchCoord, unmappedObject
+			local closestObjectID, mappedObjectID, unmappedObjectID, dist, searchCoord
+			-- app.PrintDebug("Checking objects",#o,mapID,px,py)
 			for i,objectID in ipairs(o) do
 				-- SFO includes baked-in accessibility filtering/prioritization of the results
 				local searchResults = SearchForObject("objectID", objectID, "any", true);
 				if searchResults and #searchResults > 0 then
+					-- app.PrintDebug("Checking results",#searchResults,objectID)
 					for j,searchResult in ipairs(searchResults) do
 						searchCoord = searchResult.coord;
 						if searchCoord then
@@ -84,15 +90,34 @@ if app.IsRetail then
 									end
 								end
 							end
-						else
-							-- app.PrintDebug("unmapped object assumed",objectID,app:SearchLink(searchResult))
-							unmappedObject = objectID
+						end
+						-- if we haven't found any object by coord-distance, we can check the hierarchy for matching Location-based mapID
+						if not closestObjectID then
+							-- check the parent hierarchy for a map or maps
+							local hierarchyMapID = app.GetRelativeValue(searchResult, "mapID")
+							-- app.PrintDebug("Check hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+							if hierarchyMapID == mapID then
+								-- app.PrintDebug("Object by hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+								mappedObjectID = objectID
+							else
+								local hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
+								-- app.PrintDebug("Check hierarchy maps",app:SearchLink(searchResult),hierarchyMaps and #hierarchyMaps)
+								if hierarchyMaps and app.contains(hierarchyMaps, mapID) then
+									-- app.PrintDebug("Object by hierarchy maps",app:SearchLink(searchResult),hierarchyMapID)
+									mappedObjectID = objectID
+								end
+							end
+							-- if we also haven't found any map-based object, then this object is unmapped
+							if not mappedObjectID then
+								unmappedObjectID = objectID
+							end
 						end
 					end
 				end
 			end
 			-- When player has a valid position, only return valid objects or if there's an unmapped object which matches
-			return closestObjectID or unmappedObject;
+			-- app.PrintDebug(closestObjectID, mappedObjectID, unmappedObjectID)
+			return closestObjectID or mappedObjectID or unmappedObjectID;
 		end
 	end
 else
