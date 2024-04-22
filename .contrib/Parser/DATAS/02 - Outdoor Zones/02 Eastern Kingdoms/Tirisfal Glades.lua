@@ -48,14 +48,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7628 },	-- Nondescript Letter
 							},
 							["coord"] = { 38.2, 56.6, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(590, {	-- A Rogue's Deal (2/2)
 							["qg"] = 6784,	-- Calvin Montague
 							["sourceQuest"] = 8,	-- A Rogue's Deal (1/2)
 							["coord"] = { 38.2, 56.6, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(24971, {	-- Assault on the Rotbrain Encampment
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(5651, {	-- In Favor of Darkness
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
 							["coord"] = { 31.1, 66.0, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
 							["lvl"] = 5,
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1661,	-- Novice Elreth
 							["sourceQuest"] = 376,	-- The Damned
 							["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 3,
 							["groups"] = {
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 376,	-- The Damned
 							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							-- #if BEFORE 4.0.3
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1569,	-- Shadow Priest Sarvis
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							-- #if BEFORE 4.0.3
 							["groups"] = {
@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(363, {	-- Rude Awakening
 							["qg"] = 1568,	-- Undertaker Mordo
 							["coord"] = { 30.2, 71.6, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { UNDEAD },
 							["isBreadcrumb"] = true
 						}),
@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1740,	-- Deathguard Saltain
 							["sourceQuest"] = 376,	-- The Damned
 							["coord"] = { 31.6, 65.6, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							-- #if BEFORE 4.0.3
@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(376, {	-- The Damned
 							["qg"] = 1661,	-- Novice Elreth
 							["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							-- #if BEFORE 4.0.3
@@ -498,7 +498,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1569,	-- Shadow Priest Sarvis
 							["sourceQuest"] = 363,	-- Rude Awakening
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/8 Mindless Zombie slain
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 381,	-- The Scarlet Crusade
 							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 380,	-- Night Web's Hollow
 							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -622,7 +622,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["sourceQuest"] = 382,	-- The Red Messenger
 							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 						}),
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					n(ZONE_DROPS, {
 						i(3295, {	-- Deadman Blade
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1919,	-- Samuel Fipps
 							-- #if AFTER CATA
 							["coord"] = { 70.8, 38.4, DEATHKNELL },
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						i(3293, {	-- Deadman Cleaver
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1917,	-- Daniel Ulfman
 							-- #if AFTER CATA
 							["coord"] = { 70.8, 41.0, DEATHKNELL },
@@ -682,7 +682,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						i(3294, {	-- Deadman Club
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1918,	-- Karrel Grayves
 							-- #if AFTER CATA
 							["coord"] = { 71.2, 40.6, DEATHKNELL },
@@ -702,11 +702,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["collectible"] = false,
 							--["u"] = UNLEARNABLE,-- This item would be properly filtered as Unlearnable if the toggle in 'General-Unobtainable.lua' was working.
 							-- #endif
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1916,	-- Stephen Bhartec
 						}),
 						i(3262, {	-- Putrid Wooden Hammer
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1890,	-- Rattlecage Skeleton
 							-- #if AFTER CATA
 							["coord"] = { 52.8, 42.8, DEATHKNELL },
@@ -718,7 +718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3260, {	-- Scarlet Initiate Robes
 							["cr"] = 1507,	-- Scarlet Initiate
 							["coord"] = { 37.4, 68.0, TIRISFAL_GLADES },
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						-- #endif
 						-- #if SEASON_OF_DISCOVERY
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						i(2754, {	-- Tarnished Bastard Sword
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							-- #if AFTER CATA
 							["coord"] = { 72.2, 66.4, DEATHKNELL },
 							["cr"] = 49422,	-- Rotbrain Berserker
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						i(3261, {	-- Webbed Cloak
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["coords"] = {
 								{ 23.8, 58.4, TIRISFAL_GLADES },
 								{ 86.2, 53.4, TIRISFAL_GLADES },
@@ -750,7 +750,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3263, {	-- Webbed Pants
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1505,	-- Night Web Spider
 							-- #if BEFORE CATA
 							["coord"] = { 27.6, 59.2, TIRISFAL_GLADES },
@@ -1049,7 +1049,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2837 },	-- Thurman's Letter
 					},
 					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 				}),
@@ -1074,7 +1074,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(367, {	-- A New Plague (1/4)
 					["qg"] = 1518,	-- Apothecary Johaan
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
@@ -1094,7 +1094,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1518,	-- Apothecary Johaan
 					["sourceQuest"] = 367,	-- A New Plague (1/4)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
@@ -1115,7 +1115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1518,	-- Apothecary Johaan
 					["sourceQuest"] = 368,	-- A New Plague (2/4)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1555,	-- Vicious Night Web Spider
 						}),
 						i(3442, {	-- Apprentice Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1135,14 +1135,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 369,	-- A New Plague (3/4)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 				}),
 				q(404, {	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 1820,	-- Speak with Coleman
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -1240,7 +1240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(427, {	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1515,	-- Executor Zygand
 					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1253,7 +1253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1515,	-- Executor Zygand
 					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1273,7 +1273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1515,	-- Executor Zygand
 					["sourceQuest"] = 370,	-- At War With The Scarlet Crusade (2/4)
 					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1290,7 +1290,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1515,	-- Executor Zygand
 					["sourceQuest"] = 371,	-- At War With The Scarlet Crusade (3/4)
 					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1302,10 +1302,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1660 },	-- Scarlet Bodyguard
 						}),
 						i(3445, {	-- Ceremonial Knife
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3071, {	-- Striking Hatchet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1340,7 +1340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(431, {	-- Candles of Beckoning
 					["provider"] = { "o", 1586 },	-- Crate of Candles
 					["coord"] = { 68.1, 42, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 5,
@@ -1367,7 +1367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 362,	-- The Haunted Mills
 					-- #endif
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -1405,7 +1405,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 3238 },	-- Johaan's Findings
 					},
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
@@ -1413,7 +1413,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10665,	-- Junior Apothecary Holland
 					["sourceQuest"] = 5481,	-- Gordo's Task
 					["coord"] = { 57.5, 49, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1452,7 +1452,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(365, {	-- Fields of Grief (1/2)
 					["qg"] = 1519,	-- Deathguard Simmer
 					["coord"] = { 40.9, 54.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
@@ -1468,7 +1468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 365,	-- Fields of Grief (1/2)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 				}),
@@ -1481,7 +1481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(359, {	-- Forsaken Duties
 					["qg"] = 1499,	-- Magistrate Sevren
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 				}),
@@ -1496,7 +1496,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
 					["sourceQuest"] = 5651,	-- In Favor of Darkness
 					["coord"] = { 61.6, 52.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 59.2, 46.4, TIRISFAL_GLADES },
 						}),
 						i(16607, {	-- Acolyte's Sacrificial Robes
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1521,7 +1521,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5481, {	-- Gordo's Task
 					["qg"] = 10666,	-- Gordo
 					["coord"] = { 55.8, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1540,7 +1540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(358, {	-- Graverobbers
 					["qg"] = 1499,	-- Magistrate Sevren
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
@@ -1602,22 +1602,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 1821,	-- Agamand Heirlooms
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["groups"] = {
 						i(7115, {	-- Heirloom Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7117, {	-- Heirloom Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7116, {	-- Heirloom Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7118, {	-- Heirloom Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1723,7 +1723,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1652,	-- Deathguard Burgess
 					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["coord"] = { 60.8, 52, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1743,13 +1743,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3435, {	-- Zombie Skin Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3437, {	-- Clasped Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12299, {	-- Netted Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1757,7 +1757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1497,	-- Gunther Arcanus
 					["sourceQuest"] = 366,	-- Return the Book
 					["coord"] = { 68.2, 42, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1791,7 +1791,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(356, {	-- Rear Guard Patrol
 					["qg"] = 1495,	-- Deathguard Linnea
 					["coord"] = { 65.4, 60.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
@@ -1810,7 +1810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 357,	-- The Lich's Identity
 					["coord"] = { 84.2, 17.4, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 				}),
@@ -1818,7 +1818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1495,	-- Deathguard Linnea
 					["sourceQuest"] = 359,	-- Forsaken Duties
 					["coord"] = { 65.4, 60.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 				}),
@@ -1841,7 +1841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["sourceQuest"] = 1819,	-- Ulag the Cleaver
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1851,7 +1851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2131,	-- Austil de Mon
 					["altQuests"] = { 1502 },	-- Thun'grim Firegaze
 					["coord"] = { 61.84, 52.53, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1860,7 +1860,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(355, {	-- Speak with Sevren
 					["qg"] = 1500,	-- Coleman Farthing
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 				}),
@@ -1895,7 +1895,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1521,	-- Gretchen Dedmar
 					["coord"] = { 61.9, 52.7, TIRISFAL_GLADES },
 					["cost"] = { { "i", 2320, 1 } },	-- Coarse Thread
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -1907,10 +1907,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3833, {	-- Adept's Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5939, {	-- Sewing Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1939,7 +1939,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 1557 },	-- Lillith's Dinner Table
 					["coord"] = { 66.6, 44.8, TIRISFAL_GLADES },
 					["cost"] = { { "i", 3080, 1 } },	-- Candle of Beckoning
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 5,
@@ -1948,7 +1948,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1499,	-- Magistrate Sevren
 					["sourceQuest"] = 355,	-- Speak with Sevren
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -2011,7 +2011,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(362, {	-- The Haunted Mills
 					["qg"] = 1500,	-- Coleman Farthing
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -2034,7 +2034,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1498,	-- Bethor Iceshard
 					["sourceQuest"] = 405,	-- The Prodigal Lich
 					["coord"] = { 84.2, 17.4, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -2048,7 +2048,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["sourceQuest"] = 404,	-- A Putrid Task
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
@@ -2064,10 +2064,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1522,	-- Darkeye Bonecaster
 						}),
 						i(3447, {	-- Cryptwalker Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3834, {	-- Sturdy Cloth Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2091,7 +2091,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 3017 },	-- Sevren's Orders
 					},
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 				}),
@@ -2102,12 +2102,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 409,	-- Proving Allegiance
 					["coord"] = { 68.2, 42, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						i(5940, {	-- Bone Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2130,7 +2130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1818,	-- Speak with Dillinger
 					["altQuests"] = { 1502 },	-- Thun'grim Firegaze
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -2162,7 +2162,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(398, {	-- Wanted: Maggot Eye
 					["provider"] = { "o", 711 },	-- Wanted!
 					["coord"] = { 60.7, 51.5, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
@@ -2172,10 +2172,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1753,	-- Maggot Eye
 						}),
 						i(5941, {	-- Brass Scale Pants
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3444, {	-- Tiller's Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2234,7 +2234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4303, {	-- Cranial Thumper
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2255,13 +2255,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(3334, {	-- Farmer's Shovel
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(4261, {	-- Solliden's Trousers
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2091, {	-- Magic Dust
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2339,7 +2339,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3322, {	-- Wispy Cloak
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2347,7 +2347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.8, 43.0, TIRISFAL_GLADES },
 					["groups"] = {
 						i(4302, {	-- Small Green Dagger
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2415,7 +2415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3323, {	-- Ghostly Bracers
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2512,7 +2512,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["minReputation"] = { 529, HONORED },	-- Argent Dawn
 							["cost"] = { { "g", 1500000 } },	-- 150g
 						}),
@@ -2678,13 +2678,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(ZONE_DROPS, {
 				i(2839, {	-- A Letter to Yvette
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						1523,	-- Cracked Skull Soldier
 						1522,	-- Darkeye Bonecaster
 						1520,	-- Rattlecage Soldier
 					},
-					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -2712,20 +2712,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- Added to Dargol in Tirisfall via Pickpocket (not trolling)
 				i(3330, {	-- Dargol's Hauberk
 					["coord"] = { 52.6, 26.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 1658,	-- Captain Dargol
 				}),
 				-- #endif
 				i(3335, {	-- Farmer's Broom
 					["cr"] = 1935,	-- Tirisfal Farmhand
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 40.6, 51.8, TIRISFAL_GLADES },
 						{ 36.8, 51.6, TIRISFAL_GLADES },
 					},
 				}),
 				i(3334, {	-- Farmer's Shovel
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["crs"] = {
 						1936,	-- Farmer Solliden
 						1934,	-- Tirisfal Farmer
@@ -2755,7 +2755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(3321, {	-- Gray Fur Booties
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1549,	-- Ravenous Darkhound
 					["coords"] = {
 						{ 86.0, 38.2, TIRISFAL_GLADES },
@@ -2786,7 +2786,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- This item was given an description about how the NPC it drops from is friendly to the Alliance in pre-cata iterations of the game.
 					-- That information is incorrect unless someone can point to a specific patch where it would have merit. //Danny Donkey
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 1665,	-- Captain Melrache
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2812,7 +2812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(3332, {	-- Perrine's Boots
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1662,	-- Captain Perrine
 					["coord"] = { 51.6, 67.6, TIRISFAL_GLADES },
 				}),
@@ -2838,7 +2838,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3260, {	-- Scarlet Initiate Robes
 					["cr"] = 1539,	-- Scarlet Neophyte
 					["coord"] = { 79.0, 32.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
@@ -2873,7 +2873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(3319, {	-- Short Sabre
 					["cr"] = 1529,	-- Bleeding Horror
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 78.6, 60.6, TIRISFAL_GLADES },
 						{ 75.0, 61.6, TIRISFAL_GLADES },
@@ -2896,12 +2896,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(3328, {	-- Spider Web Robe
 					["coord"] = { 86.6, 53.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["cr"] = 1555,	-- Vicious Night Web Spider
 				}),
 				i(3329, {	-- Spiked Wooden Plank
 					["cr"] = 1753,	-- Maggot Eye
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 58.6, 31.0, TIRISFAL_GLADES },
 						{ 58.6, 31.2, TIRISFAL_GLADES },
@@ -2913,7 +2913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.8, 33.0, TIRISFAL_GLADES },
 						{ 78.4, 36.8, TIRISFAL_GLADES },
 					},
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 1660,	-- Scarlet Bodyguard
 					-- #elseif AFTER CATA
@@ -2925,7 +2925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3325, {	-- Vile Fin Battle Axe
 					["cr"] = 1545,	-- Vile Fin Muckdweller
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 36.6, 38.6, TIRISFAL_GLADES },
@@ -2943,7 +2943,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3327, {	-- Vile Fin Oracle Staff
 					["cr"] = 1544,	-- Vile Fin Minor Oracle
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 36.6, 38.6, TIRISFAL_GLADES },

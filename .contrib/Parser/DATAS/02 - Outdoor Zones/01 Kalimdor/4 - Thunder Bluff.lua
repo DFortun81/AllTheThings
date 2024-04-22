@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(936, {	-- Assisting Arch Druid Runetotem [Orgrimmar]
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["coord"] = { 54.2, 68.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3762, {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
 					["qg"] = 6746,	-- Innkeeper Pala
 					["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3784, {	-- Assisting Arch Druid Runetotem [Undercity]
 					["qg"] = 6741,	-- Innkeeper Norman
 					["coord"] = { 67.6, 38.2, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -223,13 +223,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6410,	-- Orm Stonehoof
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
 					["coord"] = { 39, 55.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(7130, {	-- Brutal Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6410,	-- Orm Stonehoof
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
 					["coord"] = { 39, 55.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["sourceQuest"] = 1063,	-- The Elder Crone
 					["coord"] = { 69.85, 30.91, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1131,	-- Steelsnap
 					["coord"] = { 61.52, 80.88, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(6720, {	-- Spirit Hunter Headdress
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1130, {	-- Melor Sends Word
 					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 44.8, 59, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3761,	-- Un'Goro Soil
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -463,7 +463,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9087,	-- Bashana Runetotem
 					["sourceQuest"] = 3782,	-- Morrowgrain Research (1/2)
 					["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9087,	-- Bashana Runetotem
 					["sourceQuest"] = 3786,	-- Morrowgrain Research (2/2)
 					["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -537,7 +537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 38.7, 35.9, ORGRIMMAR },
 						{ 23.0, 20.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 5178, 1 },	-- Air Totem
 						{ "i", 5175, 1 },	-- Earth Totem
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(46978, {	-- Totem of the Earthen Ring
-							["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+							["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -700,7 +700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3441,	-- Melor Stonehoof
 					["sourceQuest"] = 1130,	-- Melor Sends Word
 					["coord"] = { 61.51, 80.88, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -733,7 +733,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3419,	-- Apothecary Zamah
 					["sourceQuest"] = 1067,	-- Return to Thunder Bluff
 					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
@@ -772,7 +772,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1195, {	-- The Sacred Flame (1/3)
 					["qg"] = 4721,	-- Zangen Stonehoof
 					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1195,	-- The Sacred Flame (1/3)
 					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -808,7 +808,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1196,	-- The Sacred Flame (2/3)
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 5869, 1 },	-- Cloven Hoof
@@ -823,10 +823,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 42, 35, THOUSAND_NEEDLES },
 						}),
 						i(6739, {	-- Cliffrunner's Aim
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6740, {	-- Azure Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -862,7 +862,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3784,	-- Assisting Arch Druid Runetotem [Undercity]
 					},
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
 					["cost"] = {{ "i", 11018, 20 }},	-- Un'Goro Soil
 					["races"] = HORDE_ONLY,

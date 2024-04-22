@@ -3165,7 +3165,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12035),	-- Obsidian Pendant
 		i(12032),	-- Onyx Choker
 		i(4614, {	-- Pendant of Myzrael
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(12048),	-- Prismatic Pendant
 		i(12026),	-- Quicksilver Pendant
@@ -3719,14 +3719,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4352),	-- Pattern: Boots of the Enchanter
 			i(14510),	-- Pattern: Bottomless Bag
 			i(14484, {	-- Pattern: Brightcloth Cloak
-				["timeline"] = { "removed 4.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14479, {	-- Pattern: Brightcloth Gloves
-				["timeline"] = { "removed 4.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14494),	-- Pattern: Brightcloth Pants
 			i(14478, {	-- Pattern: Brightcloth Robe
-				["timeline"] = { "removed 4.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(10316),	-- Pattern: Colorful Kilt
 			i(7084),	-- Pattern: Crimson Silk Shoulders
@@ -3744,14 +3744,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
 			}),
 			i(14474, {	-- Pattern: Frostweave Gloves
-				["timeline"] = { "removed 4.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14489, {	-- Pattern: Frostweave Pants
-				["timeline"] = { "removed 4.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14467),	-- Pattern: Frostweave Robe
 			i(14466, {	-- Pattern: Frostweave Tunic
-				["timeline"] = { "removed 4.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14511),	-- Pattern: Gloves of Spell Mastery
 			i(2601),	-- Pattern: Gray Woolen Robe

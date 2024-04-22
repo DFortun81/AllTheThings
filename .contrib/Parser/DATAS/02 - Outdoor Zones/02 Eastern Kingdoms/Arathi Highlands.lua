@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 694,	-- Trelane's Defenses
 					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 695,	-- An Apprentice's Enchantment
 					["coord"] = { 46.65, 47.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 651,	-- Stones of Binding
 					["coord"] = { 36.2, 57.5, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rod of Order
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2771,	-- Drum Fel
 					["sourceQuest"] = 676,	-- The Hammer May Fall
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2771,	-- Drum Fel
 					["sourceQuest"] = 677,	-- Call to Arms (1/3)
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2771,	-- Drum Fel
 					["sourceQuest"] = 678,	-- Call to Arms (2/3)
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -382,10 +382,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2571 },	-- Boulderfist Lord
 						}),
 						i(9520, {	-- Silent Hunter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9521, {	-- Skullsplitter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -460,21 +460,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(635, {	-- Crystal in the Mountains
 					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
 					["description"] = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(667, {	-- Death From Below
 					["qg"] = 2610,	-- Shakes O'Breen <Blackwater Raiders>
 					["sourceQuest"] = 670,	-- Sunken Treasure (5/5)
 					["coord"] = { 32.2, 81.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						i(4550, {	-- Coldwater Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4549, {	-- Seafire Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -508,7 +508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2767,	-- First Mate Nilzlix
 					["sourceQuest"] = 663,	-- Land Ho!
 					["coord"] = { 32.6, 81.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Maiden's Folly Charts
@@ -540,14 +540,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 20.7, 85.1, ARATHI_HIGHLANDS },
 						}),
 						i(4511, {	-- Black Water Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(664, {	-- Drowned Sorrows
 					["qg"] = 2769,	-- Captain Steelgut
 					["coord"] = { 33.8, 80.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/10 Daggerspine Raider
@@ -557,7 +557,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2596 },	-- Daggerspine Sorceress
 						}),
 						i(4509, {	-- Seawolf Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(671, {	-- Foul Magics (1/2)
 					["qg"] = 2706,	-- Tor'gan
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -645,7 +645,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2706,	-- Tor'gan
 					["sourceQuest"] = 671,	-- Foul Magics (1/2)
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -655,10 +655,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2783,	-- Marez Cowl
 						}),
 						i(4543, {	-- White Drakeskin Cap
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4545, {	-- Radiant Silver Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2706,	-- Tor'gan
 					["sourceQuest"] = 675,	-- Raising Spirits (3/3)
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 701,	-- Guile of the Raptor (1/3)
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
@@ -696,12 +696,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2792,	-- Gor'mul
 					["sourceQuest"] = 702,	-- Guile of the Raptor (2/3)
 					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
 						i(4546, {	-- Call of the Raptor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(655, {	-- Hammerfall
 					["qg"] = 2792,	-- Gor'mul
 					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
@@ -757,7 +757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(659, {	-- Hints of a New Plague? (1/5)
 					["qg"] = 2711,	-- Phin Odelic
 					["coord"] = { 50.3, 59.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -765,7 +765,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 659,	-- Hints of a New Plague? (1/5)
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -781,7 +781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 658,	-- Hints of a New Plague? (2/5)
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -789,7 +789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2713,	-- Kinelory
 					["sourceQuest"] = 657,	-- Hints of a New Plague? (3/5)
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -797,16 +797,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 660,	-- Hints of a New Plague? (4/5)
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(15455, {	-- Dustfall Robes
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15456, {	-- Lightstep Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -871,7 +871,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(663, {	-- Land Ho!
 					["qg"] = 2766,	-- Lolo the Lookout
 					["coord"] = { 31.6, 82.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(647, {	-- MacKreel's Moonshine
@@ -880,7 +880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 4441 },	-- MacKreel's Moonshine
 					},
 					["coord"] = { 43.2, 92.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -888,7 +888,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(690, {	-- Malin's Request (1/2)
 					["qg"] = 2708,	-- Archmage Malin
 					["coord"] = { 39.8, 81.2, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
@@ -900,16 +900,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 696,	-- Attack on the Tower
 					["coord"] = { 46.6, 47, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(4975, {	-- Vigilant Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15104, {	-- Wingborne Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -919,7 +919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["hordeQuestData"] = q(688),	-- Myzrael's Allies [H]
 					["sourceQuest"] = 652,	-- Breaking the Keystone
 					["coord"] = { 36.1, 57.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				},
 				{	-- Myzrael's Tale [A & H]
@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(681, {	-- Northfold Manor
 					["qg"] = 2700,	-- Captain Nials
 					["coord"] = { 45.9, 47.5, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -985,7 +985,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2706,	-- Tor'gan
 					["sourceQuest"] = 655,	-- Hammerfall
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
@@ -1005,7 +1005,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 672,	-- Raising Spirits (1/3)
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
@@ -1013,7 +1013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2792,	-- Gor'mul
 					["sourceQuest"] = 674,	-- Raising Spirits (2/3)
 					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
@@ -1049,7 +1049,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 641,	-- Sigil of Thoradin
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 638,	-- Trollbane
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -1117,7 +1117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 640,	-- The Broken Sigil
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 				}),
@@ -1143,7 +1143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 643,	-- Sigil of Arathor
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -1166,7 +1166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["sourceQuest"] = 642,	-- The Princess Trapped
 					["coord"] = { 84.3, 30.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Burning Key
@@ -1225,7 +1225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2700,	-- Captain Nials
 					["sourceQuest"] = 681,	-- Northfold Manor
 					["coord"] = { 45.9, 47.5, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1238,7 +1238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4741, {	-- Stromgarde Cavalry Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1284,7 +1284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 4432 },	-- Sully Balloo's Letter
 					},
 					["coord"] = { 44.3, 92.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2785,	-- Theldurin the Lost
 					["sourceQuest"] = 692,	-- The Lost Fragments
 					["coord"] = { 51.4, 76.8, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Eldritch Shackles
@@ -1304,14 +1304,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2755,	-- Myzrael
 						}),
 						i(4743, {	-- Pulsating Crystalline Shard
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(665, {	-- Sunken Treasure (1/5)
 					["qg"] = 2768,	-- Professor Phizzlethorpe
 					["coord"] = { 33.8, 80.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(666, {	-- Sunken Treasure (2/5)
@@ -1321,7 +1321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/10 Elven Gem
@@ -1332,10 +1332,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 23.6, 87.4, ARATHI_HIGHLANDS },
 						}),
 						i(4547, {	-- Gnomish Zapper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4548, {	-- Servomechanic Sledgehammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1346,7 +1346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 666,	-- Sunken Treasure (2/5)
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(669, {	-- Sunken Treasure (4/5)
@@ -1356,7 +1356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 668,	-- Sunken Treasure (3/5)
 					["coord"] = { 32.2, 81.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 35,
 				}),
@@ -1367,7 +1367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 669,	-- Sunken Treasure (4/5)
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(26051, {	-- Sunken Treasure
@@ -1404,7 +1404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 639,	-- Sigil of Strom
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -1429,7 +1429,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2770,	-- Tallow
 					["altQuests"] = { 677 },	-- Call to Arms (1/3)
 					["coord"] = { 61.86, 19.58, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1444,7 +1444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(642, {	-- The Princess Trapped
 					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 					["coord"] = { 62.5, 33.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/12 Mote of Myzrael
@@ -1517,7 +1517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2772,	-- Korin Fel
 					["sourceQuest"] = 678,	-- Call to Arms (2/3)
 					["coord"] = { 74.0, 33.2, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1527,10 +1527,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2773,	-- Or'Kalar
 						}),
 						i(4976, {	-- Mistspray Kilt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4977, {	-- Sword of Hammerfall
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1614,7 +1614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 688,	-- Myzrael's Allies [H]
 						["coord"] = { 74.4, 35.6, ARATHI_HIGHLANDS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS },
 					["lvl"] = 30,
 				}),
@@ -1663,7 +1663,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 693,	-- Wand over Fist
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1731,7 +1731,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 644,	-- Sigil of Trollbane
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 				}),
@@ -1742,15 +1742,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 645,	-- Trol'kalar (1/2)
 					["coord"] = { 28.9, 59.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
 						i(4508, {	-- Blood-tinged Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4507, {	-- Pit Fighter's Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1776,7 +1776,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(638, {	-- Trollbane
 					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 32,
@@ -1785,7 +1785,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 691,	-- Worth Its Weight in Gold
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1813,7 +1813,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(684, {	-- Wanted! Marez Cowl
 					["provider"] = { "o", 2713 },	-- Wanted Board
 					["coord"] = { 46.0, 47.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1823,7 +1823,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2783,	-- Marez Cowl
 						}),
 						i(4744, {	-- Arcane Runed Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1858,7 +1858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(685, {	-- Wanted! Otto and Falconcrest
 					["provider"] = { "o", 2713 },	-- Wanted Board
 					["coord"] = { 46.0, 47.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1873,10 +1873,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2597,	-- Lord Falconcrest <Syndicate Leader>
 						}),
 						i(5247, {	-- Rod of Sorrow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4745, {	-- War Rider Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1926,7 +1926,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2788,	-- Apprentice Kryten
 					["sourceQuest"] = 690,	-- Malin's Request (1/2)
 					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -2018,10 +2018,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", ADDED_10_1_7 },	-- Att disc 07.09.2023
+							["timeline"] = { "created 1.11.1", "added 3.0.1", REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", ADDED_10_1_7 },	-- Att disc 05.09.2023
+							["timeline"] = { "created 1.11.1", "added 3.0.1", REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
 						}),
 					},
 				}),
@@ -2037,7 +2037,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5256, {	-- Kovork's Rattle
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2063,10 +2063,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5257, {	-- Dark Hooded Cape
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(2622, {	-- Nimar's Tribal Headdress
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2087,7 +2087,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1404, {	-- Tidal Charm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							-- #if AFTER 10.1.7
 							["isBounty"] = true,
 							-- #endif
@@ -2126,10 +2126,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5180, {	-- Necklace of Harmony
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5181, {	-- Vibrant Silk Cape
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2367,7 +2367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #elseif AFTER 10.1.7
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 2584,	-- Stromgarde Defender	-- CRIEVE NOTE: Check if the undead one can drop this too.
 					["coords"] = {
 						{ 26.0, 58.0, ARATHI_HIGHLANDS },
@@ -2400,7 +2400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2564,	-- Boulderfist Enforcer
 						2562,	-- Boulderfist Ogre
 					},
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 27.4, 46.8, ARATHI_HIGHLANDS },
 						{ 26.2, 46.2, ARATHI_HIGHLANDS },
@@ -2418,7 +2418,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {
@@ -2439,9 +2439,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5040, {	-- Shadow Hunter Knife
 					["cr"] = 2557,	-- Witherbark Shadow Hunter
 					["coord"] = { 63.6, 84.2, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["collectible"] = false,
-					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {

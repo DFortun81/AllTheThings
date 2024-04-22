@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2050,	-- Raleigh Andrean
 					["sourceQuest"] = 441,	-- Raleigh and the Undercity
 					["coord"] = { 62, 43, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -177,14 +177,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2332,	-- Valdred Moray
 						}),
 						i(3235, {	-- Ring of Scorn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(447, {	-- A Recipe For Death (1/3)
 					["qg"] = 1937,	-- Apothecary Renferrel
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2055,	-- Master Apothecary Faranell
 					["sourceQuest"] = 447,	-- A Recipe For Death (1/3)
 					["coord"] = { 48.6, 69.4, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1937,	-- Apothecary Renferrel
 					["sourceQuest"] = 450,	-- A Recipe For Death (2/3)
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -257,10 +257,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3451, {	-- Nightglow Concoction
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3582, {	-- Acidproof Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(2458),	-- Elixir of Minor Fortitude
@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2121,	-- Shadow Priest Allister
 					["sourceQuest"] = 482,	-- Dalaran's Intentions
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -318,7 +318,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 421,	-- Prove Your Worth
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 422,	-- Arugal's Folly (1/4)
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 423,	-- Arugal's Folly (2/4)
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 424,	-- Arugal's Folly (3/4)
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -387,13 +387,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3586, {	-- Logsplitter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3570, {	-- Bonegrinding Pestle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5242, {	-- Cinder Wand
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 448,	-- Report to Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -411,10 +411,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1947,	-- Thule Ravenclaw
 						}),
 						i(3461, {	-- High Robe of the Adjudicator
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3462, {	-- Talonstrike
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -428,7 +428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(516, {	-- Beren's Peril
 					["qg"] = 2121,	-- Shadow Priest Allister
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
@@ -439,7 +439,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1973 },	-- Ravenclaw Guardian
 						}),
 						i(5252, {	-- Wand of Decay
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1627 },	-- Dalaran Crate
 					},
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -505,7 +505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 478,	-- Maps and Runes
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -513,7 +513,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 481,	-- Dalar's Analysis
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -558,12 +558,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(435, {	-- Escorting Erland
 					["qg"] = 1978,	-- Deathstalker Erland
 					["coord"] = { 56.2, 9.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(3455, {	-- Deathstalker Shortsword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -692,7 +692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1950,	-- Rane Yorick
 					["sourceQuest"] = 430,	-- Return to Quinn
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -702,10 +702,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1971,	-- Ivar the Foul
 						}),
 						i(3453, {	-- Quilted Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3583, {	-- Weathered Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -715,7 +715,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 3468 },	-- Renferrel's Findings
 					},
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 				}),
@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(428, {	-- Lost Deathstalkers
 					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
@@ -758,7 +758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 477,	-- Border Crossings
 					["coord"] = { 49.9, 60.4, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -881,7 +881,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(421, {	-- Prove Your Worth
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -893,18 +893,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(452, {	-- Pyrewood Ambush
 					["qg"] = 2058,	-- Deathstalker Faerleia
 					["coord"] = { 46.4, 74.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
 						i(3450, {	-- Faerleia's Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2818, {	-- Stretched Leather Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3449, {	-- Mystic Shawl
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 440,	-- The Engraved Ring
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -959,7 +959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1937,	-- Apothecary Renferrel
 					["sourceQuest"] = 446,	-- Thule Ravenclaw
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					-- #if BEFORE 4.0.3
@@ -976,7 +976,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 1599 },	-- Shallow Grave
 					},
 					["coord"] = { 65.2, 32.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -987,7 +987,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 429,	-- Wild Hearts
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1024,7 +1024,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 438,	-- The Decrepit Ferry
 					["coord"] = { 58.4, 34.9, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1032,7 +1032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 439,	-- Rot Hide Clues
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1055,7 +1055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 443,	-- Rot Hide Ichor
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1091,7 +1091,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 449,	-- The Deathstalkers' Report
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1137,7 +1137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(437, {	-- The Dead Fields
 					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1147,7 +1147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1983,	-- Nightlash
 						}),
 						i(3454, {	-- Reconnaissance Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1158,7 +1158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 435,	-- Escorting Erland
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1166,7 +1166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 437,	-- The Dead Fields
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1177,7 +1177,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 439,	-- Rot Hide Clues
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1206,7 +1206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 460,	-- Resting in Pieces
 					["coord"] = { 67.8, 24.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2121,	-- Shadow Priest Allister
 					["sourceQuest"] = 479,	-- Ambermill Investigations
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1256,10 +1256,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2120,	-- Archmage Ataeric
 						}),
 						i(3452, {	-- Ceranium Rod
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3585, {	-- Camouflaged Tunic
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1270,12 +1270,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 444,	-- Rot Hide Origins
 					["coord"] = { 84.2, 17.4, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(3251, {	-- Bethor's Potion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1358,19 +1358,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 461,	-- The Hidden Niche
 					["coord"] = { 65.3, 24.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
 						i(3457, {	-- Stamped Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3458, {	-- Rugged Mail Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3581, {	-- Serrated Knife
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1387,16 +1387,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
 					["cost"] = { { "i", 3164, 6 } },	-- Discolored Worg Heart
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4596, {	-- Discolored Healing Potion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1407,7 +1407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 3221,	-- Speak with Renferrel
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1418,14 +1418,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1920, {	-- Ambermill Spellscribe [CATA+] / Dalaran Spellscribe
 					["coord"] = { 63.5, 58.3, SILVERPINE_FOREST },
 					["description"] = "Found upstairs at the given coordinates.\n\nHorde players who have started questing in the zone should complete the main storyline to prevent phasing issues.",
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4437, {	-- Channeler's Staff
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1454,7 +1454,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				n(1920, {	-- Dalaran Spellscribe / Ambermill Spellscribe [CATA+]
 					["coord"] = { 63.4, 65.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if BEFORE 4.0.3
@@ -1465,11 +1465,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(4437, {	-- Channeler's Staff
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 63.8, SILVERPINE_FOREST },
 						{ 56.2, 62.4, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(2283, {	-- Ravenclaw Regent
 					-- #if AFTER 10.1.7
@@ -1608,13 +1608,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 57.6, 69.8, SILVERPINE_FOREST },
 					-- #endif
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["groups"] = {
 						i(6628, {	-- Raven's Claws
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5969, {	-- Regent's Cloak
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1622,13 +1622,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1944, {	-- Rot Hide Bruiser
 					-- Added to Tirisfall in 10.1.7
 					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(4439, {	-- Bruiser Club
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5975, {	-- Ruffian Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1649,13 +1649,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(1948, {	-- Snarlmane
 					["coord"] = { 66.2, 25.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
 					["description"] = "Found in the basement of Fenris Keep.",
 					-- #endif
 					["groups"] = {
 						i(4445, {	-- Flesh Carver
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1874,7 +1874,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(3317, {	-- A Talking Head
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						1943,	-- Raging Rot Hide
@@ -1896,7 +1896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 10.1.7
 				-- This was moved to Hillsbrad Foothills!
 				i(4767, {	-- Coppercloth Gloves
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 09.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 09.09.2023
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif

@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6605, {	-- A Strange One
 					["qg"] = 11755,	-- Harlo Wigglesworth
 					["coord"] = { 61, 38.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 49,
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 5163,	-- Are We There, Yeti? (3/3)
 					["coord"] = { 60.8, 37.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ENGINEERING,
 					["lvl"] = 55,
 					["groups"] = {
@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3783, {	-- Are We There, Yeti? (1/3)
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["coord"] = { 60.8, 37.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/10 Thick Yeti Fur
@@ -397,7 +397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 3783,	-- Are We There, Yeti? (1/3)
 					["coord"] = { 60.8, 37.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/2 Pristine Yeti Horn
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 977,	-- Are We There, Yeti? (2/3)
 					["coord"] = { 60.8, 37.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS, UNGORO_CRATER },
 					["lvl"] = 52,
 					["groups"] = {
@@ -481,7 +481,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if CLASSIC
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -496,11 +496,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 969,	-- Luck Be With You
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						i(12384, {	-- Cache of Mau'ari
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -508,13 +508,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 4804, 3 }},	-- Chillwind E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(12457, {	-- Juju Chill
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10468,	-- Felnok Steelspring
 					["sourceQuest"] = 4808,	-- Felnok Steelspring
 					["coord"] = { 61.6, 38.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/8 Uncracked Chillwind Horn
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["coord"] = { 61.2, 37.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRATHOLME },
 					-- #if BEFORE TBC
 					["requireSkill"] = 9787,	-- Weaponsmith
@@ -585,7 +585,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11121,	-- Black Guard Swordsmith
 						}),
 						i(12825, {	-- Plans: Blazing Rapier (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -659,7 +659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 15790 },	-- Studies in Spirit Speaking
 					},
 					["coord"] = { 61.2, 38.8, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
@@ -672,7 +672,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6604, {	-- Enraged Wildkin (1/4)
 					["qg"] = 11755,	-- Harlo Wigglesworth
 					["coord"] = { 61, 38.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 53,
@@ -681,7 +681,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10301,	-- Jaron Stoneshaper
 					["sourceQuest"] = 6604,	-- Enraged Wildkin (1/4)
 					["coord"] = { 52, 30.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 				}),
@@ -689,7 +689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 175587 },	-- Damaged Crate
 					["sourceQuest"] = 4861,	-- Enraged Wildkin (2/4)
 					["coord"] = { 59, 59.7, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 				}),
@@ -697,7 +697,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 175586 },	-- Jaron's Wagon
 					["sourceQuest"] = 4863,	-- Enraged Wildkin (3/4)
 					["coord"] = { 61.4, 60.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 					["groups"] = {
@@ -733,7 +733,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["lvl"] = 52,
 				}),
@@ -741,7 +741,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7916,	-- Erelas Ambersky
 					["sourceQuest"] = 978,	-- Moontouched Wildkin
 					["coord"] = { 55.5, 92.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 				}),
@@ -761,13 +761,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12436, 3 }},	-- Frostmaul E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(12460, {	-- Juju Might
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -775,13 +775,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12430, 3 }},	-- Frostsaber E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(12450, {	-- Juju Flurry
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -790,7 +790,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.8, 9.8, WINTERSPRING },
 					["minReputation"] = { 589, NEUTRAL },	-- Wintersaber Trainers, Neutral.
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 58,
@@ -824,14 +824,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10300,	-- Ranshalla
 					["sourceQuest"] = 979,	-- Find Ranshalla
 					["coord"] = { 63, 59.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 				}),
 				q(4882, {	-- Guarding Secrets (1/2)
 					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
 					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["crs"] = {
 						7454,	-- Berserk Owlbeast
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 High Chief Winterfall slain
@@ -878,13 +878,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 69.6, 38.2, WINTERSPRING },
 						}),
 						i(15784, {	-- Crystal Breeze Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15786, {	-- Fernpulse Jerkin
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15787, {	-- Willow Band Hauberk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -925,7 +925,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12435, 3 }},	-- Ice Thistle E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
@@ -954,7 +954,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(969, {	-- Luck Be With You
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/10 Frostmaul Shards
@@ -995,7 +995,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7916,	-- Erelas Ambersky
 					["sourceQuest"] = 3661,	-- Favored of Elune?
 					["coord"] = { 55.5, 92.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
@@ -1046,14 +1046,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["sourceQuest"] = 5056,	-- Shy-Rotam
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if CLASSIC
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["lvl"] = 53,
 					["groups"] = {
 						i(15704, {	-- Hunter's Insignia Medal
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1085,7 +1085,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.8, 9.8, WINTERSPRING },
 					["minReputation"] = { 589, HONORED },	-- Wintersaber Trainers, Honored.
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 58,
@@ -1110,7 +1110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 5248,	-- Tormented By the Past
 					["coord"] = { 56.2, 44.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 				}),
@@ -1121,15 +1121,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4809,	-- Chillwind Horns
 					["coord"] = { 61.6, 38.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BURNING_STEPPES },
 					["lvl"] = 50,
 					["groups"] = {
 						i(15862, {	-- Blitzcleaver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15863, {	-- Grave Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1161,13 +1161,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12432, 3 }},	-- Shardtooth E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(12455, {	-- Juju Ember
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1198,7 +1198,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if CLASSIC
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -1224,17 +1224,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(15783, {	-- Beasthunter Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15782, {	-- Beaststalker Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5601, {	-- Sister Pamela
 					["qg"] = 11629,	-- Jessica Redpath
 					["coord"] = { 61.2, 39, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(5306, {	-- Snakestone of the Shadow Huntress
@@ -1249,7 +1249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",
 					-- #endif
 					["coord"] = { 61.2, 37, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_SPIRE },
 					-- #if BEFORE TBC
 					["requireSkill"] = 9787,	-- Weaponsmith
@@ -1264,7 +1264,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 9236,	-- Shadow Hunter Vosh'gajin
 						}),
 						i(12821, {	-- Plans: Dawn's Edge (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1299,7 +1299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5250, {	-- Starfall
 					["qg"] = 7907,	-- Daryn Lightwind
 					["coord"] = { 55.4, 92.2, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 53,
@@ -1337,11 +1337,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 980,	-- The New Springs
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
 						i(15789, {	-- Deep River Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1357,7 +1357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
 					-- #endif
 					["coord"] = { 61.2, 37.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRATHOLME },
 					-- #if BEFORE TBC
 					["requireSkill"] = 9787,	-- Weaponsmith
@@ -1372,7 +1372,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11120,	-- Crimson Hammersmith
 						}),
 						i(12824, {	-- Plans: Enchanted Battlehammer (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1389,18 +1389,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 5252,	-- Remorseful Highborne
 					["coord"] = { 52, 30.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 					["groups"] = {
 						i(15791, {	-- Turquoise Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15792, {	-- Plow Wood Spaulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15795, {	-- Emerald Mist Gauntlets
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1422,7 +1422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 15788 },	-- Everlook Report
 					},
 					["coord"] = { 61.2, 38.8, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				q(28471, {	-- The Final Piece
@@ -1436,7 +1436,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 12842 },	-- Crudely-Written Log
 					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["coord"] = { 69.6, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10738,	-- High Chief Winterfall
 					["lvl"] = 52,
 				}),
@@ -1482,7 +1482,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5249,	-- To Winterspring!
 					},
 					["coord"] = { 52, 30.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 				}),
@@ -1532,7 +1532,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 6603,	-- Trouble in Winterspring!
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/8 Winterfall Pathfinder slain
@@ -1549,7 +1549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5249, {	-- To Winterspring!
 					["qg"] = 10924,	-- Ivy Leafrunner
 					["coord"] = { 50.8, 81.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 53,
@@ -1558,7 +1558,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5085,	-- Mystery Goo
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["lvl"] = 52,
 					["groups"] = {
@@ -1583,7 +1583,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6603, {	-- Trouble in Winterspring!
 					["qg"] = 11754,	-- Meggi Peppinrocker
 					["coord"] = { 61.4, 38.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 52,
 				}),
@@ -1591,7 +1591,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10301,	-- Jaron Stoneshaper
 					["sourceQuest"] = 5244,	-- The Ruins of Kel'Theril
 					["coord"] = { 52, 30.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
@@ -1681,7 +1681,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5054, {	-- Ursius of the Shardtooth
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if CLASSIC
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -1703,13 +1703,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12433, 3 }},	-- Wildkin E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(12458, {	-- Juju Guile
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1717,19 +1717,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 975,	-- Cache of Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12431, 3 }},	-- Winterfall E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(12451, {	-- Juju Power
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5083, {	-- Winterfall Firewater
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10738,	-- High Chief Winterfall
 						7440,	-- Winterfall Den Watcher
@@ -1746,7 +1746,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.8, 9.8, WINTERSPRING },
 					["minReputation"] = { 589, NEUTRAL + 1500 },	-- Wintersaber Trainers, Neutral + 1500.
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 58,
@@ -1769,7 +1769,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5086,	-- Toxic Horrors
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winterfall Crate
@@ -1815,7 +1815,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5123,	-- The Final Piece
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["lvl"] = 52,
 					["groups"] = {
@@ -1982,7 +1982,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.6, 84.4, WINTERSPRING },
 						{ 54.6, 87.4, WINTERSPRING },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(50353, {	-- Manas
 					["coord"] = { 64.0, 80.0, WINTERSPRING },
@@ -2008,19 +2008,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- TODO: Move this to an Elemental Invasion World Event file.
 					["description"] = "This is only available during an Elemental Invasion.",
 					["coord"] = { 54.6, 42.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(7091),	-- Pattern: Truefaith Gloves
 						-- #endif
 						i(18679, {	-- Frigid Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18678, {	-- Tempestria's Frozen Necklace
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
@@ -2276,7 +2276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				i(12434, {	-- Chillwind E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7449,	-- Chillwind Ravager
 						7448,	-- Chillwind Chimaera
@@ -2284,14 +2284,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(12771, {	-- Empty Firewater Flask
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill (RECIPE!)
 					["cr"] = 7524,	-- Anguished Highborne
 				}),
 				i(12436, {	-- Frostmaul E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7428,	-- Frostmaul Giant
 						7429,	-- Frostmaul Preserver
@@ -2299,7 +2299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12430, {	-- Frostsaber E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7433,	-- Frostsaber Huntress
 						7430,	-- Frostsaber Cub
@@ -2310,7 +2310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12435, {	-- Ice Thistle E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },	-- Likely was never removed
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },	-- Likely was never removed
 					["crs"] = {
 						7459,	-- Ice Thistle Matriarch
 						7460,	-- Ice Thistle Patriarch
@@ -2319,7 +2319,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(18704, {	-- Mature Blue Dragon Sinew
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7435,	-- Cobalt Wyrmkin
 						7436,	-- Cobalt Scalebane
@@ -2393,12 +2393,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(14493, {	-- Pattern: Robe of Winter Night
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 					-- Wont return, its on timewalking vendor
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 					-- Wont return, its on timewalking vendor
 				}),
@@ -2426,7 +2426,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(16054, {	-- Schematic: Arcanite Dragonling
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
-					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -2448,7 +2448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12432, {	-- Shardtooth E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7446,	-- Rabid Shardtooth
 						7445,	-- Elder Shardtooth
@@ -2457,7 +2457,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(18665, {	-- The Eye of Shadow
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["crs"] = {
 						7461,	-- Hederine Initiate
@@ -2466,7 +2466,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12433, {	-- Wildkin E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7453,	-- Moontouched Owlbeast
 						7454,	-- Berserk Owlbeast
@@ -2477,7 +2477,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12431, {	-- Winterfall E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10738,	-- High Chief Winterfall
 						7440,	-- Winterfall Den Watcher

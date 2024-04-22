@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(30109),	-- Ring of Endless Coils
 					i(30621),	-- Prism of Inner Calm
 					i(32895, {	-- Scroll of the Maelstrom
-						["timeline"] = { "removed 4.0.3" },	-- TODO: Determine exactly when to remove this.
+						["timeline"] = { REMOVED_4_0_3 },	-- TODO: Determine exactly when to remove this.
 						["groups"] = {
 							i(32897),	-- Mark of the Illidari
 						},

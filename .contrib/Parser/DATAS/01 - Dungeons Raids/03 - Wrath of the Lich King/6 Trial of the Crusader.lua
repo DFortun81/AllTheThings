@@ -474,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {
+					["groups"] = bubbleDown({ ["timeline"] = { "added 3.2.0", REMOVED_4_0_3 } }, {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
 							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
@@ -668,7 +668,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {
+					["groups"] = bubbleDown({ ["timeline"] = { "added 3.2.0", REMOVED_4_0_3 } }, {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
 							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
@@ -1779,7 +1779,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						h(i(48053)),	-- Sunwalker Legguards
 					},
 				}),
-				o(195665, bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {	-- Argent Crusade Tribute Chest
+				o(195665, bubbleDown({ ["timeline"] = { "added 3.2.0", REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
 					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
 					--[[
 						Alliance	Description	Horde
@@ -2348,7 +2348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						a(i(47188)),	-- Reign of the Unliving
 					},
 				}),
-				o(195665, bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {	-- Argent Crusade Tribute Chest
+				o(195665, bubbleDown({ ["timeline"] = { "added 3.2.0", REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
 					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
 					--[[
 						Alliance	Description	Horde

@@ -448,24 +448,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(2904, {	-- A Fine Mess
 					["qg"] = 7850,	-- Kernobee
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["maps"] = { STRANGLETHORN_VALE },
 					-- #endif
 					["lvl"] = 20,
 					["groups"] = {
 						i(9536, {	-- Fairywing Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9535, {	-- Fire-welded Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(2931, {	-- Castpipe's Task
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 25,
@@ -474,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 3413,	-- Sovik <Engineering Supplies>
 					["description"] = "You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",
 					["coord"] = { 75.6, 25.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["maps"] = { STRANGLETHORN_VALE },
 					-- #endif
@@ -485,7 +485,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7950,	-- Master Mechanic Castpipe
 					["sourceQuest"] = 2931,	-- Castpipe's Task
 					["coord"] = { 70.2, 48.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -493,10 +493,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 9316 },	-- Prismatic Punch Card
 						}),
 						i(9604, {	-- Mechanic's Pipehammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9605, {	-- Repairman's Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -504,7 +504,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 2925,	-- Klockmort's Essentials
 					["coord"] = { 68.2, 46.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -530,7 +530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1268,	-- Ozzie Togglevolt
 					["sourceQuest"] = 2927,	-- The Day After
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -561,7 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7853,	-- Scooty <Chief Engineer>
 					["sourceQuest"] = 2842,	-- Chief Engineer Scooty
 					["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -587,7 +587,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 55.5, 12.5, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -595,10 +595,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 9309 },	-- Robo-mechanical Guts
 						}),
 						i(9608, {	-- Shoni's Disarming Tool
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9609, {	-- Shilly Mitts
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -614,7 +614,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2925, {	-- Klockmort's Essentials
 					["qg"] = 6142,	-- Mathiel
 					["coord"] = { 59.2, 45.2, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 24,
@@ -691,7 +691,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2841, {	-- Rig Wars
 					["qg"] = 3412,	-- Nogg <Expert Engineer>
 					["coord"] = { 75.8, 25.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -706,13 +706,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 7800,	-- Mekgineer Thermaplugg
 						}),
 						i(9623, {	-- Civinad Robes
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9625, {	-- Dual Reinforced Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9624, {	-- Triprunner Dungarees
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -720,7 +720,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["sourceQuest"] = 2923,	-- Tinkmaster Overspark
 					["coord"] = { 70.4, 49.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -732,7 +732,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2927, {	-- The Day After
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.6, 50.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -740,7 +740,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2929, {	-- The Grand Betrayal
 					["qg"] = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
 					["coord"] = { 69.2, 49.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -748,13 +748,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "n", 7800 },	-- Mekgineer Thermaplugg
 						}),
 						i(9623, {	-- Civinad Robes
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9625, {	-- Dual Reinforced Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9624, {	-- Triprunner Dungarees
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -870,7 +870,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1268,	-- Ozzie Togglevolt
 					["sourceQuest"] = 2926,	-- Gnogaine
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -935,7 +935,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 40.6, 30.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -947,12 +947,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(6231, {	-- Techbot
 				["description"] = "Located outside the instance near the teleporter.",
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(9277),	-- Techbot's Memory Core
 					-- #if BEFORE 10.1.7
 					i(9444, {	-- Techbot CPU Shell
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					-- #endif
 				},
@@ -1107,10 +1107,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 							["groups"] = {
 								i(9536, {	-- Fairywing Mantle
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(9535, {	-- Fire-welded Bracers
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -1694,7 +1694,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(9277),	-- Techbot's Memory Core
 							-- #if BEFORE 10.1.7
 							i(9444, {	-- Techbot CPU Shell
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							-- #endif
 						},

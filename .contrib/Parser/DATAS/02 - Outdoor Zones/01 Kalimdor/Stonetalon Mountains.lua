@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1085,	-- On Guard in Stonetalon (2/2)
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -280,7 +280,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1071,	-- A Gnome's Respite
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1071,	-- A Gnome's Respite
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6284, {	-- Arachnophobia
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 					["coord"] = { 59.09, 75.76, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -360,10 +360,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11921,	-- Besseleth
 						}),
 						i(16891, {	-- Claystone Shortsword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16894, {	-- Clear Crystal Rod
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6548, {	-- Avenge My Village
 					["qg"] = 11857,	-- Makaba Flathoof
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6461, {	-- Blood Feeders
 					["qg"] = 12816,	-- Xen'Zilla
 					["coord"] = { 71.25, 95.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -619,7 +619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11860,	-- Maggran Earthbinder
 					["sourceQuest"] = 6282,	-- Harpies Threaten
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -629,10 +629,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 12579,	-- Bloodfury Ripper
 						}),
 						i(16990, {	-- Spritekin Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16987, {	-- Screecher Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6421, {	-- Boulderslide Ravine
 					["qg"] = 11861,	-- Mor'rogal
 					["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 					["groups"] = {
@@ -744,7 +744,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 16189 },	-- Maggran's Reserve Letter
 					},
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
@@ -770,7 +770,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1087, {	-- Cenarius' Legacy
 					["qg"] = 4198,	-- Braelyn Firehand
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -816,7 +816,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1077,	-- Special Delivery for Gaxim
 					},
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -839,7 +839,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1077,	-- Special Delivery for Gaxim
 					},
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -855,7 +855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6301, {	-- Cycle of Rebirth
 					["qg"] = 11864,	-- Tammra Windfield
 					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -1024,7 +1024,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11861,	-- Mor'rogal
 					["sourceQuest"] = 6421,	-- Boulderslide Ravine
 					["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 					["groups"] = {
@@ -1037,17 +1037,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 57.4, 89.4, STONETALON_MOUNTAINS },
 						}),
 						i(16981, {	-- Owlbeard Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1306, {	-- Wolfmane Wristguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(6393, {	-- Elemental War
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.28, 64.31, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
@@ -1078,7 +1078,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1091,	-- Kaela's Update
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -1162,21 +1162,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1093,	-- Super Reaper 6000
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 16,
 				}),
 				q(1095, {	-- Further Instructions (2/2)
 					["qg"] = 3442,	-- Sputtervalve
 					["sourceQuest"] = 1094,	-- Further Instructions (1/2)
 					["coord"] = { 62.97, 37.19, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 16,
 				}),
 				q(1096, {	-- Gerenzo Wrenchwhistle
 					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1095,	-- Further Instructions (2/2)
 					["coord"] = { 59.0, 62.53, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gerenzo's Mechanical Arm
@@ -1185,17 +1185,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 4202,	-- Gerenzo Wrenchwhistle
 						}),
 						i(6667, {	-- Engineer's Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6668, {	-- Draftsman Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(1090, {	-- Gerenzo's Orders (1/2)
 					["qg"] = 4276,	-- Piznik
 					["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 17,
 				}),
 				q(1092, {	-- Gerenzo's Orders (2/2)
@@ -1205,11 +1205,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1090,	-- Gerenzo's Orders (1/2)
 					["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 17,
 					["groups"] = {
 						i(6666, {	-- Dredge Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4049,	-- Seereth Stonebreak
 					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -1280,7 +1280,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6282, {	-- Harpies Threaten
 					["qg"] = 11860,	-- Maggran Earthbinder
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -1437,7 +1437,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1058, {	-- Jin'Zil's Forest Magic
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["coord"] = { 74.54, 97.84, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -1465,10 +1465,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(6664, {	-- Voodoo Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6665, {	-- Hexed Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1519,7 +1519,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1080,	-- Covert Ops - Beta
 					},
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -1527,7 +1527,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11857,	-- Makaba Flathoof
 					["sourceQuest"] = 6523,	-- Protect Kaya
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1510,	-- News of Dogran (2/2)
 					["coord"] = { 73.2, 95, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
 					["lvl"] = 20,
@@ -1547,7 +1547,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11857,	-- Makaba Flathoof
 					["sourceQuest"] = 6548,	-- Avenge My Village
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -1688,7 +1688,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11864,	-- Tammra Windfield
 					["sourceQuest"] = 6301,	-- Cycle of Rebirth
 					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -1700,10 +1700,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 31, 61, STONETALON_MOUNTAINS },
 						}),
 						i(16985, {	-- Windseeker Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16986, {	-- Sandspire Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1746,7 +1746,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1070, {	-- On Guard in Stonetalon (1/2)
 					["qg"] = 4079,	-- Sentinel Thenysil
 					["coord"] = { 34.9, 49.8, ASHENVALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 17,
@@ -1755,7 +1755,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1070,	-- On Guard in Stonetalon (1/2)
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -1763,7 +1763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4198,	-- Braelyn Firehand
 					["sourceQuest"] = 1087,	-- Cenarius' Legacy
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -1818,7 +1818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6523, {	-- Protect Kaya
 					["qg"] = 11856,	-- Kaya Flathoof
 					["coord"] = { 73.51, 85.68, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -1839,22 +1839,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4079,	-- Sentinel Thenysil
 					["sourceQuest"] = 1082,	-- Update for Sentinel Thenysil
 					["coord"] = { 34.8, 49.8, ASHENVALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
 						i(7334, {	-- Efflorescent Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7335, {	-- Grizzly Tunic
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7336, {	-- Wildwood Chain
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6678, {	-- Band of Elven Grace
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1862,7 +1862,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3994,	-- Keeper Albagorm
 					["sourceQuest"] = 1056,	-- Journey to Stonetalon Peak
 					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -1884,16 +1884,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3994,	-- Keeper Albagorm
 					["sourceQuest"] = 1057,	-- Reclaiming the Charred Vale (1/2)
 					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(6675, {	-- Tempered Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6676, {	-- Constable Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1927,7 +1927,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -1942,7 +1942,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(6677, {	-- Spellcrafter Wand
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2124,7 +2124,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4049,	-- Seereth Stonebreak
 					["sourceQuest"] = 1062,	-- Goblin Invaders
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -2202,7 +2202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1076,	-- Devils in Westfall
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -2234,7 +2234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1483,	-- Ziz Fizziks
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Super Reaper 6000 Blueprints
@@ -2296,7 +2296,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1088,	-- Ordanus
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -2329,13 +2329,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 30.0, 15.5, STONETALON_MOUNTAINS },
 						}),
 						i(6671, {	-- Juggernaut Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6670, {	-- Panther Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6669, {	-- Sacred Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2343,7 +2343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4049,	-- Seereth Stonebreak
 					["sourceQuest"] = 1062,	-- Goblin Invaders
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -2412,7 +2412,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1061, {	-- The Spirits of Stonetalon
 					["qg"] = 4047,	-- Zor Lonetree
 					["coord"] = { 39.03, 38.04, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2559,7 +2559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1084,	-- Wounded Ancients
 					},
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -2636,7 +2636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1091,	-- Kaela's Update
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -2674,7 +2674,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1483, {	-- Ziz Fizziks
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.98, 37.21, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
 				}),
@@ -2705,7 +2705,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 68.0, 54.0, STONETALON_MOUNTAINS },
 						{ 63.8, 51.8, STONETALON_MOUNTAINS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(50986, {	-- Goldenback
 					["coord"] = { 82.2, 79.2, STONETALON_MOUNTAINS },
@@ -2739,13 +2739,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 54.8, 38.0, STONETALON_MOUNTAINS },
 					},
 					-- #endif
-					["timeline"] = { "removed 4.0.3", "added 7.2.0" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.2.0" },
 					["groups"] = {
 						i(5751, {	-- Webwing Cloak
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5752, {	-- Wyvern Tailspike
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 11.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),
@@ -2776,7 +2776,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 36.2, 18.8, STONETALON_MOUNTAINS },
 						{ 36.6, 14.6, STONETALON_MOUNTAINS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(5930, {	-- Sister Riven
 					-- #if AFTER CATA
@@ -2833,7 +2833,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 33.0, 73.6, STONETALON_MOUNTAINS },
 						{ 37.4, 72.4, STONETALON_MOUNTAINS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(50895, {	-- Volux
 					["coord"] = { 39.8, 46.2, STONETALON_MOUNTAINS },
@@ -3012,7 +3012,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4085, {	-- Nizzik <Venture Armor Salesman>
 					["coord"] = { 62.6, 40.2, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(4827),	-- Wizard's Belt
@@ -3028,7 +3028,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4086, {	-- Veenix <Venture Co. Merchant>
 					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(4817),	-- Orb of Power

@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -418,7 +418,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -432,7 +432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 41.4, 89.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -499,7 +499,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSKWOOD, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -533,7 +533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -619,7 +619,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.6, 45.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -644,7 +644,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -691,12 +691,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
 						i(2933, {	-- Seal of Wrynn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -728,7 +728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 32.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL, HILLSBRAD_FOOTHILLS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -741,7 +741,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 13724, 20 },	-- Enriched Manna Biscuit
 								{ "g", 500000 },	-- 50g
 							},
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Manna-Enriched Horse Feed
@@ -814,16 +814,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 41.8, 76.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 26,
 					["groups"] = {
 						i(9516, {	-- Astral Knot Blouse
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7511, {	-- Astral Knot Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74, 37.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.8, 36.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -942,7 +942,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.8, 36.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -972,7 +972,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 32.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74.2, 7.5, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -1013,7 +1013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 59.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -1054,7 +1054,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 12.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
@@ -1138,7 +1138,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 12360, 6 },	-- Arcanite Bar
 						{ "g", 1500000 },	-- 150g
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRATHOLME },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -1318,7 +1318,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74.2, 47.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 32.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = 1500000,	-- 150g
 					["maps"] = { IRONFORGE },
 					["classes"] = { PALADIN },
@@ -1426,7 +1426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 32.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 58.0, 16.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { RAZORFEN_KRAUL, WETLANDS, STONETALON_MOUNTAINS },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -1523,7 +1523,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 59.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 				}),
@@ -1564,13 +1564,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 58.0, 16.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["groups"] = {
 						i(6972, {	-- Fire Hardened Hauberk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1578,7 +1578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6121,	-- Remen Marcot
 					["altQuests"] = { 1715 },	-- The Slaughtered Lamb
 					["coord"] = { 44.4, 66.2, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,
@@ -1587,7 +1587,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1717, {	-- Gakin's Summons (Succubus)
 					["qg"] = 6120,	-- Lago Blackwrench
 					["coord"] = { 47.6, 9.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,
@@ -1603,7 +1603,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.6, 79.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { LOCH_MODAN },
 					["cost"] = { { "i", 2589, 10 } },	-- Linen Cloth
 					["races"] = { HUMAN, GNOME },
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 58.0, 16.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1688,13 +1688,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 12.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["groups"] = {
 						i(6971, {	-- Fire Hardened Coif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1711,7 +1711,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 12.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -1764,7 +1764,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.6, 79.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
@@ -1791,7 +1791,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 59.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 				}),
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1891,7 +1891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.0, 16.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1905,7 +1905,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 64.3, 20.7, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
@@ -1919,7 +1919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 60.0, 64.3, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -1933,7 +1933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.6, 79.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["lvl"] = 15,
@@ -2018,7 +2018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.2, 14.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
 					["cost"] = { { "i", 4306, 3 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
@@ -2071,7 +2071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 58.0, 16.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = { DWARF, GNOME },
 					["isBreadcrumb"] = true,
@@ -2131,7 +2131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7670, {	-- Lord Grayson Shadowbreaker [Ironforge]
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["coord"] = { 23.4, 6.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2146,7 +2146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2162,7 +2162,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 59.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -2183,7 +2183,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 41.8, 76.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["lvl"] = 15,
@@ -2192,7 +2192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER 4.0.3
 							["description"] = "This item is still available in the Ghostlands for Blood Elf Mages, originally only available to the Alliance in Stormwind.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },	-- Item is still available in the Ghostlands for Horde, but removed from this source.
+							["timeline"] = { REMOVED_4_0_3 },	-- Item is still available in the Ghostlands for Horde, but removed from this source.
 						}),
 					},
 				}),
@@ -2213,7 +2213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74, 37.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -2228,7 +2228,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 59.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -2246,7 +2246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 58.0, 16.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
@@ -2261,7 +2261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 41.4, 64.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
 				}),
@@ -2275,7 +2275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 40.8, 64, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
@@ -2291,10 +2291,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(10747, {	-- Teacher's Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10748, {	-- Wanderlust Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2309,7 +2309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.6, 79.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
@@ -2326,13 +2326,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER 4.0.3
 							["description"] = "This item is still available in Eversong Woods for Horde Mages.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },	-- Item is still available in the Eversong Woods for Horde, but removed from this source.
+							["timeline"] = { REMOVED_4_0_3 },	-- Item is still available in the Eversong Woods for Horde, but removed from this source.
 						}),
 						i(9513, {	-- Ley Staff
 							-- #if AFTER 4.0.3
 							["description"] = "This item is still available in Eversong Woods for Horde Mages.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },	-- Item is still available in the Eversong Woods for Horde, but removed from this source.
+							["timeline"] = { REMOVED_4_0_3 },	-- Item is still available in the Eversong Woods for Horde, but removed from this source.
 						}),
 					},
 				}),
@@ -2409,7 +2409,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78, 18, STORMWIND_CITY },
 					-- #endif
 					["sourceQuest"] = 6186,	-- The Blightcaller Cometh
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
@@ -2425,13 +2425,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(16996, {	-- Gorewood Bow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16997, {	-- Stormrager
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16998, {	-- Sacred Protector
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2489,7 +2489,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 81.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSKWOOD },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
@@ -2525,7 +2525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 60.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 16,
@@ -2533,7 +2533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1919, {	-- Report to Jennea
 					["qg"] = 7312,	-- Dink <Mage Trainer>
 					["coord"] = { 26.8, 8.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
@@ -2570,7 +2570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 66.2, 62.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WESTFALL },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
@@ -2697,7 +2697,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -2728,7 +2728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 59.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -2740,7 +2740,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 6846,	-- Defias Dockmaster
 						}),
 						i(7298, {	-- Blade of Cunning
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2777,7 +2777,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 45.7, 38.3, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -2808,15 +2808,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 71.6, 7.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
 						i(3899, {	-- Legends of the Gurubashi, Volume 3
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2154, {	-- The Story of Morgan Ladimore
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2839,7 +2839,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 25.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
@@ -2869,7 +2869,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.2, 14.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
@@ -2928,7 +2928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 25.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -2941,7 +2941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(713),	-- Summon Incubus
 						-- #endif
 						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2956,7 +2956,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 25.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
@@ -2969,7 +2969,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(712),	-- Summon Succubus
 						-- #endif
 						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2983,7 +2983,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 25.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
@@ -3024,7 +3024,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 41.2, 58, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -3042,7 +3042,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 12800, 1 },	-- Azerothian Diamond
 						{ "i", 18335, 1 },	-- Pristine Black Diamond
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -3070,7 +3070,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["coord"] = { 78, 18, STORMWIND_CITY },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 				}),
@@ -3084,7 +3084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 60.0, 64.3, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -3115,7 +3115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 28.3, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3132,7 +3132,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.4, 25.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3149,7 +3149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.2, 78.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3166,7 +3166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 60.0, 64.3, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -3175,7 +3175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 840,	-- Watcher Backus
 					["sourceQuest"] = 1243,	-- The Missing Diplomat (4/17)
 					["coord"] = { 73.21, 38.81, DUSKWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
@@ -3195,7 +3195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1244,	-- The Missing Diplomat (5/17)
 					["coord"] = { 73.21, 38.81, DUSKWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3209,7 +3209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 60.0, 64.3, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3224,7 +3224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 70.5, 44.9, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3238,7 +3238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 70.5, 44.9, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3252,7 +3252,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 60.0, 64.3, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -3286,7 +3286,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.0, 16.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["cost"] = { { "i", 6040, 6 } },	-- Golden Scale Bracers
@@ -3294,7 +3294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(9367, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							-- #if BEFORE 4.0.3
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 							-- #endif
@@ -3347,7 +3347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1787,	-- The Tome of Divinity (8)
 					},
 					["coord"] = { 41, 66, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3359,7 +3359,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1787,	-- The Tome of Divinity (8)
 					},
 					["coord"] = { 23.4, 6.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3378,7 +3378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3396,7 +3396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3411,7 +3411,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3426,7 +3426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 57, 61.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2589, 10 } },	-- Linen Cloth
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -3442,7 +3442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 57, 61.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3460,7 +3460,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3475,7 +3475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.6, 26.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3489,7 +3489,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 39.8, 30.8, STORMWIND_CITY },
 								-- #endif
 							},
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Symbol of Life
@@ -3504,7 +3504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6172,	-- Henze Faulk
 					["sourceQuest"] = 1786,	-- The Tome of Divinity (8/10)
 					["coord"] = { 72.6, 51.6, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3525,7 +3525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.6, 26.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -3585,7 +3585,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1794, {	-- The Tome of Valor [Dwarf]
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["coord"] = { 23.6, 6.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { DWARF },
 					["repeatable"] = true,
@@ -3600,7 +3600,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { HUMAN },
 					["repeatable"] = true,
@@ -3622,7 +3622,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
@@ -3637,7 +3637,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
@@ -3646,7 +3646,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6182,	-- Daphne Stilwell
 					["sourceQuest"] = 1650,	-- The Tome of Valor (2/4)
 					["coord"] = { 42.4, 88.4, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
@@ -3661,7 +3661,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
@@ -3670,7 +3670,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(5502),	-- Sense Undead
 						-- #endif
 						i(9607, {	-- Bastion of Stormwind
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3684,7 +3684,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.8, 59.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -3699,7 +3699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.0, 59.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -3719,7 +3719,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.0, 59.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -3757,7 +3757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(8432, {	-- Eau de Mixilpixil
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3778,7 +3778,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 32.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -3824,7 +3824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 7637, -- Emphasis on Sacrifice
 					["coord"] = { 25, 8.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -3847,7 +3847,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 64.3, 20.7, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -3904,7 +3904,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 81.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -3938,7 +3938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 25.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -4052,13 +4052,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.4, 78.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 25,
 					["groups"] = {
 						i(3556, {	-- Dread Mage Hat
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -4678,28 +4678,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34074, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34073, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32381, {	-- Captain Dirgehammer // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				n(12777, {	-- Captain Dirgehammer <Armor Quartermaster>
 					-- #if BEFORE TBC
@@ -4759,7 +4759,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- 34079: Captain O'Neal <Jewelcrafting Quartermaster> (Wrath season 2?)
 				n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
 					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
-					["timeline"] = { "added 3.0.2.8970", "removed 4.0.3" },
+					["timeline"] = { "added 3.0.2.8970", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
 						-- #if BEFORE 4.0.3
@@ -4767,7 +4767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+]
 						-- #endif
 						i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+]
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						-- These move to Tiffany in Dalaran
@@ -4776,7 +4776,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(41559),	-- Design: Mystic Sun Crystal
 						-- #endif
 						i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+]
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						-- These move to Tiffany in Dalaran
@@ -5815,28 +5815,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34083, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
 					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34082, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
 					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32834, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
 					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				-- #if AFTER CATA
 				-- This is a future Crieve problem, probably a similar thing to Moonstrike.
@@ -6005,21 +6005,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34077, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34076, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32380, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
@@ -6031,7 +6031,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					-- #endif
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				-- #if NOT ANYCLASSIC
 				-- Crieve NOTE: This NPC ID wasn't used for TBC Classic, so not sure how this was actually used.

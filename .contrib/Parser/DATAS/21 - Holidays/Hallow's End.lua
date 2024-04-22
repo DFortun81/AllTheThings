@@ -2723,7 +2723,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 15199,	-- Sergeant Hartman
 			["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
 			["maps"] = { SILVERPINE_FOREST, TIRISFAL_GLADES },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,
@@ -3153,7 +3153,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 55.6, 69.9, TIRISFAL_GLADES },
 				{ 51.4, 59.0, HILLSBRAD_FOOTHILLS },
 			},
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["cost"] = {
@@ -3165,7 +3165,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["provider"] = { "o", 180570 },	-- Keg
 			["sourceQuest"] = 8322,	-- Rotten Eggs
 			["coord"] = { 51.4, 59.0, HILLSBRAD_FOOTHILLS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 30,
@@ -3197,7 +3197,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 15197,	-- Darkcaller Yanka
 			["coord"] = { 55.6, 69.9, TIRISFAL_GLADES },
 			["maps"] = { HILLSBRAD_FOOTHILLS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,
@@ -3472,7 +3472,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(8373, {	-- The Power of Pine
 			["qg"] = 15199,	-- Sergeant Hartman
 			["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,

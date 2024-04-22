@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3693,	-- Terenthis
 					["sourceQuest"] = 985,	-- How Big a Threat? (2/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(5387, {	-- Enchanted Moonstalker Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 986,	-- A Lost Master (1/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -328,7 +328,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
 					["sourceQuest"] = 4811,	-- The Red Crystal
 					["coord"] = { 37.7, 43.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(954, {	-- Bashal'Aran (1/4)
 					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 				}),
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3650,	-- Asterion
 					["sourceQuest"] = 954,	-- Bashal'Aran (1/4)
 					["coord"] = { 44.2, 36.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3650,	-- Asterion
 					["sourceQuest"] = 955,	-- Bashal'Aran (2/4)
 					["coord"] = { 44.2, 36.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3650,	-- Asterion
 					["sourceQuest"] = 956,	-- Bashal'Aran (3/4)
 					["coord"] = { 44.2, 36.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -401,13 +401,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 42, 61, DARKSHORE },
 						}),
 						i(7229, {	-- Explorer's Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5617, {	-- Vagabond Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5604, {	-- Elven Wand
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -418,7 +418,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 42.0, 31.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 				}),
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 36.0, 70.8, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 32.7, 80.9, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 31.2, 87.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 37.2, 62.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 				}),
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 44.2, 20.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -484,7 +484,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 53.1, 18.1, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 31.7, 83.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -506,7 +506,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 31.2, 85.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -537,7 +537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 17183 },	-- Buzzbox 411
 					["sourceQuest"] = 1001,	-- Buzzbox 411
 					["coord"] = { 42, 28.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -557,7 +557,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 17182 },	-- Buzzbox 827
 					["sourceQuest"] = 983,	-- Buzzbox 827
 					["coord"] = { 36.7, 46.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -584,7 +584,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 17184 },	-- Buzzbox 323
 					["sourceQuest"] = 1002,	-- Buzzbox 323
 					["coord"] = { 51.3, 24.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -596,11 +596,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(2082, {	-- Wizbang's Gunnysack
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(11846, {	-- Wizbang's Special Brew
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #endif
 					},
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(983, {	-- Buzzbox 827
 					["qg"] = 3666,	-- Wizbang Cranktoggle
 					["coord"] = { 37, 44, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -667,7 +667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(947, {	-- Cave Mushrooms
 					["qg"] = 3583,	-- Barithras Moonshade
 					["coord"] = { 37.3, 43.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -686,7 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 55.4, 36.4, DARKSHORE },
 						}),
 						i(5610, {	-- Gustweald Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3701,	-- Tharnariun Treetender
 					["sourceQuest"] = 2118,	-- Plagued Lands
 					["coord"] = { 38.8, 43.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -726,7 +726,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3702,	-- Alanndarian Nightsong
 					["sourceQuest"] = 6123,	-- Gathering the Cure
 					["coord"] = { 37.6, 40.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -736,14 +736,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 12298,	-- Sickly Deer
 						}),
 						i(15866, {	-- Veildust Medicine Bag
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(982, {	-- Deep Ocean, Vast Sea
 					["qg"] = 6301,	-- Gorbold Steelhand
 					["coord"] = { 38.1, 41.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -762,10 +762,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 39.7, 27.4, DARKSHORE },
 						}),
 						i(15401, {	-- Welldrip Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15402, {	-- Noosegrip Gauntlets
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -814,7 +814,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2178, {	-- Easy Strider Living
 					["qg"] = 3702,	-- Alanndarian Nightsong
 					["coord"] = { 37.7, 40.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5469, 5 }},	-- Strider Meat
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
@@ -828,7 +828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3666,	-- Wizbang Cranktoggle
 					["sourceQuest"] = 1579,	-- Gaffer Jacks
 					["coord"] = { 37.0, 44.0, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -867,12 +867,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
 					-- #endif
 					["coord"] = { 45.0, 85.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(5609, {	-- Steadfast Cinch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -884,12 +884,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
 					-- #endif
 					["coord"] = { 45.0, 85.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(6659, {	-- Scarab Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -906,7 +906,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(963, {	-- For Love Eternal
 					["qg"] = 3644,	-- Cerellean Whiteclaw
 					["coord"] = { 35.8, 43.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -916,14 +916,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3667,	-- Anaya Dawnrunner
 						}),
 						i(5611, {	-- Tear of Grief
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(1138, {	-- Fruit of the Sea
 					["qg"] = 10216,	-- Gubber Blump
 					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -935,10 +935,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(15405, {	-- Shucking Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15406, {	-- Crustacean Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -946,7 +946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3666,	-- Wizbang Cranktoggle
 					["description"] = 'Requires fishing skill level 30',
 					["coord"] = { 37.0, 44.0, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -960,7 +960,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3702,	-- Alanndarian Nightsong
 					["sourceQuest"] = 6122,	-- The Principal Source [A]
 					["coord"] = { 37.6, 40.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 2449, 5 }},	-- Earthroot
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -991,7 +991,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2098, {	-- Gyromast's Retrieval
 					["qg"] = 6667,	-- Gelkak Gyromast
 					["coord"] = { 56.7, 13.5, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 					["groups"] = {
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6667,	-- Gelkak Gyromast
 					["sourceQuest"] = 2098,	-- Gyromast's Retrieval
 					["coord"] = { 56.7, 13.5, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 					["groups"] = {
@@ -1045,7 +1045,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4456,	-- Fiora Longears
 					["coord"] = { 33.8, 42.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(6719, {	-- Windborne Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(984, {	-- How Big a Threat? (1/2)
 					["qg"] = 3693,	-- Terenthis
 					["coord"] = { 39.4, 43.5, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1076,7 +1076,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3693,	-- Terenthis
 					["sourceQuest"] = 984,	-- How Big a Threat? (1/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1155,7 +1155,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3616,	-- Onu
 					["sourceQuest"] = 950,	-- Return to Onu
 					["coord"] = { 43.5, 76.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -1167,10 +1167,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 59, 21.8, DARKSHORE },
 						}),
 						i(5757, {	-- Hardwood Cudgel
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5615, {	-- Woodsman Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1241,7 +1241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3583,	-- Barithras Moonshade
 					["sourceQuest"] = 947,	-- Cave Mushrooms
 					["coord"] = { 37.3, 43.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -1250,7 +1250,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 944,	-- The Master's Glaive
 					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 					["coord"] = { 43.5, 76.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -1262,7 +1262,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 949,	-- The Twilight Camp
 					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 					["coord"] = { 43.5, 76.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10752, {	-- Onward to Ashenvale
 					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1280,7 +1280,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2118, {	-- Plagued Lands
 					["qg"] = 3701,	-- Tharnariun Treetender
 					["coord"] = { 38.8, 43.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1373,7 +1373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 949,	-- The Twilight Camp
 					["coord"] = { 38.7, 86.1, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -1521,7 +1521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3701,	-- Tharnariun Treetender
 					["sourceQuest"] = 2138,	-- Cleansing of the Infected
 					["coord"] = { 38.8, 43.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1530,10 +1530,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 51.4, 38, DARKSHORE },
 						}),
 						i(7738, {	-- Evergreen Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7739, {	-- Timberland Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1561,7 +1561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2913,	-- Archaeologist Hollee
 					["sourceQuest"] = 730,	-- Trouble in Darkshore?
 					["coord"] = { 37.4, 41.8, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 				}),
@@ -1569,7 +1569,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2917,	-- Prospector Remtravel
 					["sourceQuest"] = 729,	-- The Absent Minded Prospector (1/5)
 					["coord"] = { 35.7, 83.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 				}),
@@ -1580,19 +1580,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 731,	-- The Absent Minded Prospector (2/5)
 					["coord"] = { 37.4, 41.8, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
 						i(5629, {	-- Hammerfist Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5630, {	-- Windfelt Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11936, {	-- Relic Hunter Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1642,7 +1642,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4763, {	-- The Blackwood Corrupted
 					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1682,13 +1682,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(15204, {	-- Moonstone Wand
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15202, {	-- Wildkeeper Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15203, {	-- Guststorm Legguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1721,7 +1721,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3649,	-- Thundris Windweaver
 					["sourceQuest"] = 4761,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -1831,7 +1831,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(953, {	-- The Fall of Ameth'Aran
 					["qg"] = 3639,	-- Sentinel Tysha Moonblade
 					["coord"] = { 40.3, 59.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -1851,14 +1851,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
 					-- #endif
 					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12238, 6 }},	-- Darkshore Grouper
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(12225, {	-- Blump Family Fishing Pole
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1873,18 +1873,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal
 					["sourceQuest"] = 4812,	-- As Water Cascades
 					["coord"] = { 47.3, 48.7, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
 						i(15335, {	-- Briarsteel Shortsword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15396, {	-- Curvewood Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15397, {	-- Oakthrush Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1973,7 +1973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 948,	-- Onu
 					["coord"] = { 43.5, 76.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -2003,7 +2003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(968, {	-- The Powers Below
 					["provider"] = { "i", 5352 },	-- Book: The Powers Below
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
 					["crs"] = {
 						2339,	-- Twilight Thug
@@ -2015,7 +2015,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4811, {	-- The Red Crystal
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
 					["coord"] = { 37.7, 43.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -2072,7 +2072,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5321, {	-- The Sleeper Has Awakened
 					["qg"] = 11218,	-- Kerlonian Evershade
 					["coord"] = { 44.4, 76.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -2084,13 +2084,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 44.4, 76.4, DARKSHORE },
 						}),
 						i(15205, {	-- Owlsight Rifle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15206, {	-- Jadefinger Baton
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15207, {	-- Steelcap Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2137,7 +2137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(965, {	-- The Tower of Althalaxx (1/9)
 					["qg"] = 3657,	-- Sentinel Elissa Starbreeze
 					["coord"] = { 39.0, 43.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -2145,7 +2145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 965,	-- The Tower of Althalaxx (1/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -2162,7 +2162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 966,	-- The Tower of Althalaxx (2/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
@@ -2171,7 +2171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 1167,	-- The Tower of Althalaxx (7/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -2186,16 +2186,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 1143,	-- The Tower of Althalaxx (8/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
 						i(10043, {	-- Pious Legwraps
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5614, {	-- Seraph's Strike
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2206,7 +2206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 944,	-- The Master's Glaive
 					["coord"] = { 38.6, 86.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -2253,7 +2253,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(945, {	-- Therylune's Escape
 					["qg"] = 3584,	-- Therylune
 					["coord"] = { 38.6, 87.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -2274,7 +2274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3693,	-- Terenthis
 					["sourceQuest"] = 984,	-- How Big a Threat? (1/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 				}),
@@ -2299,7 +2299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(958, {	-- Tools of the Highborne
 					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -2312,7 +2312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(5612, {	-- Ivy Cuffs
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2324,7 +2324,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 39.3, 43.5, DARKSHORE },
 					["description"] = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -2371,7 +2371,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4740, {	-- WANTED: Murkdeep!
 					["provider"] = { "o", 175320 },	-- WANTED: Murkdeep!
 					["coord"] = { 37.2, 44.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -2381,13 +2381,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 35.4, 76.4, DARKSHORE },
 						}),
 						i(15404, {	-- Breakwater Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15403, {	-- Ridgeback Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5315, {	-- Timberland Armguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2404,7 +2404,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3524, {	-- Washed Ashore (1/2)
 					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
 					["coord"] = { 36.6, 45.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -2421,7 +2421,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
 					["sourceQuest"] = 3524,	-- Washed Ashore (1/2)
 					["coord"] = { 36.6, 45.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -2433,13 +2433,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 31.9, 46.3, DARKSHORE },
 						}),
 						i(15398, {	-- Sandcomber Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15399, {	-- Dryweed Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15400, {	-- Clamshell Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2534,10 +2534,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(6332, {	-- Black Pearl Ring
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6333, {	-- Spikelash Dagger
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2711,7 +2711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4307, {	-- Heldan Galesong <Fisherman>
 					["coord"] = { 37.0, 56.4, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -2724,17 +2724,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4200, {	-- Laird <Fish Vendor>
 					["coord"] = { 36.8, 44.3, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5485, {	-- Recipe: Fillet of Frenzy (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },	-- Added to Trainers
+							["timeline"] = { REMOVED_4_0_3 },	-- Added to Trainers
 						}),
 					},
 				}),
 				n(4186, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
 					["coord"] = { 37.0, 41.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -2745,7 +2745,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4189, {	-- Valdaron <Tailoring Supplies>
 					["coord"] = { 38.1, 40.6, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -2807,7 +2807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(5773, {	-- Pattern: Robes of Arcana
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 2337,	-- Dark Strand Voidcaller
 				}),
 				-- #if SEASON_OF_DISCOVERY

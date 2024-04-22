@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["coord"] = { 64.0, 23.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				},
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["coord"] = { 64.0, 23.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				},
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 					["coord"] = { 64.0, 23.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3763, {	-- Assisting Arch Druid Staghelm [Darnassus]
 					["qg"] = 6735,	-- Innkeeper Saelienne
 					["coord"] = { 67.4, 15.7, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3790, {	-- Assisting Arch Druid Staghelm [Ironforge]
 					["qg"] = 5111,	-- Innkeeper Firebrew
 					["coord"] = { 18.1, 51.5, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3789, {	-- Assisting Arch Druid Staghelm [Stormwind City]
 					["qg"] = 6740,	-- Innkeeper Allison
 					["coord"] = { 60.4, 75.3, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10520, {	-- Assisting Arch Druid Staghelm [The Exodar]
 					["qg"] = 16739,	-- Caregiver Breel <Innkeeper>
 					["coord"] = { 59.6, 19.4, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -323,18 +323,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
 					["coord"] = { 42.0, 85.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11870, {	-- Oblivion Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11871, {	-- Snarkshaw Spaulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11872, {	-- Eschewal Greaves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls
 					["coord"] = { 37.0, 21.9, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 6909,	-- Sethir the Ancient
 						}),
 						i(7298, {	-- Blade of Cunning
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -441,7 +441,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4214,	-- Erion Shadewhisper
 					["sourceQuest"] = 2259,	-- Erion Shadewhisper
 					["coord"] = { 34.6, 25.6, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 940,	-- Teldrassil
 					["coord"] = { 34.8, 8.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 6,
 				}),
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7740,	-- Gracina Spiritmight
 					["sourceQuest"] = 162,	-- Rise of the Silithid (A)
 					["coord"] = { 42, 85.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -530,13 +530,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1710,	-- Sunscorched Shells
 					["coord"] = { 59.2, 45.4, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(6973, {	-- Fire hardened Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -566,7 +566,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3764,	-- Un'Goro Soil
 					["coord"] = { 34.8, 8.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -577,7 +577,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["sourceQuest"] = 3781,	-- Morrowgrain Research (1/2)
 					["coord"] = { 35.2, 8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
@@ -589,7 +589,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["sourceQuest"] = 3785,	-- Morrowgrain Research (2/2)
 					["coord"] = { 35.2, 8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -658,7 +658,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2518,	-- Tears of the Moon
 					["coord"] = { 36.4, 86, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -666,10 +666,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 8155 },	-- Sathrah's Sacrifice
 						}),
 						i(9600, {	-- Lace Pants
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9601, {	-- Cushioned Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -731,7 +731,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["coord"] = { 57.4, 34.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -831,7 +831,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1703,	-- Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
 					["coord"] = { 31.2, 84.2, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -879,7 +879,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1038,	-- Velinde's Effects
 					["coord"] = { 61.8, 39.4, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -898,7 +898,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4088,	-- Elanaria
 					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
 					["coord"] = { 57.8, 34.4, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2519, {	-- The Temple of the Moon
 					["qg"] = 7316,	-- Sister Aquinne
 					["coord"] = { 29, 45.4, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 5,
@@ -937,7 +937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(730, {	-- Trouble In Darkshore?
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
 					["coord"] = { 31.2, 84.2, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 14,
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["coord"] = { 35.2, 9.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
 					["cost"] = {{ "i", 11018, 20 }},	-- Un'Goro Soil
 					["races"] = ALLIANCE_ONLY,
@@ -963,7 +963,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1037,	-- Velinde Starsong (Ashenvale)
 					["coord"] = { 61.8, 39.4, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -996,7 +996,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						--1683,	-- Vorlus Vilehoof
 					},
 					["coord"] = { 57.3, 34.6, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TELDRASSIL },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -1018,22 +1018,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1692,	-- Smith Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(6966, {	-- Elunite Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6967, {	-- Elunite Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6968, {	-- Elunite Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6969, {	-- Elunite Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),

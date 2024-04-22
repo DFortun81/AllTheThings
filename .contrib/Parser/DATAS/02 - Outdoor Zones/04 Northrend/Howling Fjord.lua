@@ -781,7 +781,7 @@ root(ROOTS.Zones, {
 						["qg"] = 26915,	-- Ounhulo
 						["coord"] = { 59.8, 63.8, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["cost"] = {
 							{ "i", 36929, 2 },	-- Huge Citrine
 							{ "i", 36932, 2 },	-- Dark Jade
@@ -803,7 +803,7 @@ root(ROOTS.Zones, {
 						["qg"] = 26960,	-- Carter Tiffens
 						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["cost"] = {
 							{ "i", 36929, 2 },	-- Huge Citrine
 							{ "i", 36932, 2 },	-- Dark Jade

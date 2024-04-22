@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5066, {	-- A Call to Arms: The Plaguelands! [Stormwind City]
 					["qg"] = 2198,	-- Crier Goodman
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5090, {	-- A Call to Arms: The Plaguelands! [Ironforge]
 					["qg"] = 10877,	-- Courier Hammerfall
 					["coord"] = { 31.6, 67, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5091, {	-- A Call to Arms: The Plaguelands! [Darnassus]
 					["qg"] = 10878,	-- Herald Moonstalker
 					["coord"] = { 36.4, 39.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10373, {	-- A Call to Arms: The Plaguelands! [The Exodar]
 					["qg"] = 20722,	-- Herald Bran'daan
 					["coord"] = { 55.4, 47.2, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -212,7 +212,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5093, {	-- A Call to Arms: The Plaguelands! [Orgrimmar]
 					["qg"] = 10880,	-- Warcaller Gorlach
 					["coord"] = { 46.6, 64.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5094, {	-- A Call to Arms: The Plaguelands! [Undercity]
 					["qg"] = 10879,	-- Harbinger Balthazad
 					["coord"] = { 64, 44, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5095, {	-- A Call to Arms: The Plaguelands! [Thunder Bluff]
 					["qg"] = 10881,	-- Bluff Runner Windstrider
 					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10374, {	-- A Call to Arms: The Plaguelands! [Silvermoon City]
 					["qg"] = 20724,	-- Herald Amorlin
 					["coord"] = { 59.3, 64.7, SILVERMOON_CITY },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -280,7 +280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4971, {	-- A Matter of Time
 					["qg"] = 10667,	-- Chromie
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- 0/15 Temporal Parasite slain
@@ -290,10 +290,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(15812, {	-- Orchid Amice
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15813, {	-- Gold Link Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -369,7 +369,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["qg"] = 11615,	-- Mickey Levine
 						["coord"] = { 83.2, 72.4, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 48,
 					["groups"] = {
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5901,	-- A Plague Upon Thee (1/3)
 						["coord"] = { 83.2, 72.4, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 				},
 				{	-- A Plague Upon Thee (3/3)
@@ -419,14 +419,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i",  15044 },	-- Barrel of Plagueland Termites
 					},
 					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 				},
 				q(5153, {	-- A Strange Historian
 					["qg"] = 10927,	-- Marlene Redpath
 					["sourceQuest"] = 5152,	-- Auntie Marlene
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Joseph's Wedding Ring
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5098,	-- All Along the Watchtowers
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Araj's Phylactery Shard
@@ -499,7 +499,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1852,	-- Araj the Summoner
 						}),
 						i(17759, {	-- Mark of Resolution
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5096,	-- Scarlet Diversions
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- Tower One marked
@@ -663,11 +663,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["qg"] = 10839,	-- Argent Officer Garush
 						["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						i(12846, {	-- Argent Dawn Commission
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -713,7 +713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 175894 },	-- Janice's Parcel
 					},
 					["coord"] = { 38.4, 54.0, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				{	-- Better Late Than Never (2/2)
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 5021,	-- Better Late Than Never (1/2)
 					["coord"] = { 38.8, 55.2, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				q(27202, {	-- Brother Against Brother
@@ -774,7 +774,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5168,	-- Heroes of Darrowshire
 					},
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(27163, {	-- Brute Strength (A)
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 23.6, 6.6, IRONFORGE },
 						{ 37.6, 32.6, STORMWIND_CITY },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["isBreadcrumb"] = true,
@@ -842,7 +842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 25 } },	-- Argent Dawn Valor Token
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
@@ -859,7 +859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -945,12 +945,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
 					}),
 					["cost"] = { { "i", 12843, 1 } },	-- Corruptor's Scourgestone
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -958,7 +958,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 4971,	-- A Matter of Time
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- 0/5 Andorhal Watch
@@ -969,7 +969,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 41.3, 69.8, WESTERN_PLAGUELANDS },
 						}),
 						i(12650, {	-- Attuned Dampener
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -977,7 +977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 4972,	-- Counting Out Time (1/2)
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 53,
 					["groups"] = {
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 41.3, 69.8, WESTERN_PLAGUELANDS },
 						}),
 						i(12650, {	-- Attuned Dampener
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5231,	-- Target: Dalson's Tears
 					},
 					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
 						{ "i", 13356, 5 },	-- Somatic Intensifier
@@ -1013,7 +1013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9443,	-- The So-Called Mark of the Lightbringer
 					["coord"] = { 26.6, 58.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1041,7 +1041,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1065,7 +1065,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5229,	-- Target: Felstone Field
 					},
 					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
 						{ "i", 13357, 6 },	-- Osseous Agitator
@@ -1127,7 +1127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5235,	-- Target: Gahrron's Withering
 					},
 					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
 						{ "i", 13354, 4 },	-- Ectoplasmic Resonator
@@ -1171,11 +1171,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 4985,	-- The Wildlife Suffers Too
 					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
 						i(15804, {	-- Cerise Drape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -1211,7 +1211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5049,	-- The Jeremiah Blues
 						["coord"] = { 67.4, 43.8, UNDERCITY },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(5048, {	-- Good Natured Emma
@@ -1221,7 +1221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 5022,	-- Better Late Than Never (2/2) [A]
 					["coord"] = { 48.6, 30.6, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 8414,	-- Dispelling Evil
 					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1275,12 +1275,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
 					}),
 					["cost"] = { { "i", 12841, 10 } },	-- Invader's Scourgestones
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -1345,14 +1345,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5142, {	-- Little Pamela
 					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
 				q(5060, {	-- Locked Away
 					["provider"] = { "o", 175924 },	-- Locked Cabinet
 					["coord"] = { 47.4, 49.7, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						q(5059, {	-- Locked Away
@@ -1361,7 +1361,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  12738 },	-- Dalson Outhouse Key
 							},
 							["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["lvl"] = 52,
 							["groups"] = {
@@ -1374,10 +1374,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(13474, {	-- Farmer Dalson's Shotgun
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(13475, {	-- Dalson Family Wedding Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if OBJECTIVES
 						i(12738, {	-- Dalson Outhouse Key
@@ -1410,7 +1410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				},
 				q(27017, {	-- Memories from a Lost Past
@@ -1463,12 +1463,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
 					}),
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -1483,24 +1483,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5236,	-- Return to the Bulwark
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						i(15801, {	-- Valiant Shortsword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15800, {	-- Intrepid Shortsword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15799, {	-- Heroic Commendation Medal
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
 				q(5058, {	-- Mrs. Dalson's Diary
 					["provider"] = { "o", 175926 },	-- Mrs. Dalson's Diary
 					["coord"] = { 47.8, 50.7, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(26935, {	-- Northridge Lumber Mill
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9601,	-- To The Bulwark
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["maps"] = { UNDERCITY },
 					["classes"] = { PALADIN },
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i",  13191 },	-- Filled Dalson's Tears Bottle
 					},
 					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				{	-- Return to Chillwind Camp / Return to the Bulwark [Felstone Field]
@@ -1563,7 +1563,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i",  13190 },	-- Filled Felstone Field Bottle
 					},
 					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				{	-- Return to Chillwind Camp / Return to the Bulwark [Gahrron's Withering]
@@ -1578,7 +1578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i",  13193 },	-- Filled Gahrron's Withering Bottle
 					},
 					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				{	-- Return to Chillwind Camp / Return to the Bulwark [Writhing Haunt]
@@ -1593,7 +1593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i",  13192 },	-- Filled Writhing Haunt Bottle
 					},
 					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				q(27057, {	-- Return to the Stead
@@ -1616,7 +1616,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -1869,7 +1869,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5230,	-- Return to the Bulwark
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Dalson's Tears Cauldron Key
@@ -1893,7 +1893,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5228,	-- The Scourge Cauldrons
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Felstone Field Cauldron Key
@@ -1917,7 +1917,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5234,	-- Return to the Bulwark
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gahrron's Withering Cauldron Key
@@ -1941,7 +1941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5232,	-- Return to the Bulwark
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Writhing Haunt Cauldron Key
@@ -1965,7 +1965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5153,	-- A Strange Historian
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Annals of Darrowshire
@@ -2047,7 +2047,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6185,	-- The Eastern Plagues
 					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
@@ -2066,7 +2066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
 					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
@@ -2170,7 +2170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 5023,	-- Better Late Than Never (2/2) [H]
 					["coord"] = { 69.6, 43.6, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -2182,7 +2182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9474, {	-- The Mark of the Lightbringer
 					["qg"] = 17238,	-- Anchorite Truuen
 					["coord"] = { 42.9, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2257,13 +2257,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5096,	-- Scarlet Diversions
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
 				q(9443, {	-- The So-Called Mark of the Lightbringer
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["coord"] = { 26.6, 58.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2279,7 +2279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4984, {	-- The Wildlife Suffers Too (1/2)
 					["qg"] = 10739,	-- Mulgris Deepriver
 					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
 						objective(1, {	-- 0/8 Diseased Wolf slain
@@ -2291,7 +2291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10739,	-- Mulgris Deepriver
 					["sourceQuest"] = 4984,	-- The Wildlife Suffers Too (1/2)
 					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
 						objective(1, {	-- 0/8 Diseased Grizzly slain
@@ -2372,7 +2372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 92.0, 37.6, SILVERMOON_CITY },
 						{ 57.8, 90.8, UNDERCITY },
 					},
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -2381,7 +2381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17238,	-- Anchorite Truuen
 					["sourceQuest"] = 9474,	-- The Mark of the Lightbringer
 					["coord"] = { 42.9, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
@@ -2416,7 +2416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10778,	-- Janice Felstone
 					["sourceQuest"] = 5050,	-- Good Luck Charm
 					["coord"] = { 38.4, 54.0, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Good Luck Charm
@@ -2429,14 +2429,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 10801,	-- Jabbering Ghoul
 						}),
 						i(13473, {	-- Felstone Good Luck Charm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(6004, {	-- Unfinished Business (1/3)
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/2 Scarlet Medic slain
@@ -2457,7 +2457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6004,	-- Unfinished Business (1/3)
 					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Huntsman Radley slain
@@ -2474,7 +2474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6023,	-- Unfinished Business (2/3)
 					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(27152, {	-- Unusual Behavior... Even For Gnolls
@@ -2655,7 +2655,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 10590,	-- Prove Your Hatred
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
@@ -2668,7 +2668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5233,	-- Target: Writhing Haunt
 					},
 					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
 						{ "i", 13356, 5 },	-- Somatic Intensifier
@@ -2959,7 +2959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["minReputation"] = { 529, HONORED },	-- Argent Dawn
 							["cost"] = { { "g", 1500000 } },	-- 150g
 						}),
@@ -3181,26 +3181,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 68.7, 79.1, WESTERN_PLAGUELANDS },
 						{ 67.8, 84.6, WESTERN_PLAGUELANDS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				i(13354, {	-- Ectoplasmic Resonator
 					["description"] = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(20768, {	-- Oozing Bag
 					["crs"] = {
@@ -3213,11 +3213,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(13357, {	-- Osseous Agitator
 					["description"] = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 				i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1813,	-- Decaying Horror
 					-- #elseif AFTER 10.1.7
@@ -3246,14 +3246,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1791,	-- Slavering Ghoul
 					},
 					-- #endif
-					["timeline"] = { "removed 4.0.3" }, -- Maybe still drops, this tag will help with reporting if somebody does get a drop
+					["timeline"] = { REMOVED_4_0_3 }, -- Maybe still drops, this tag will help with reporting if somebody does get a drop
 				}),
 				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["crs"] = {
 						1813,	-- Decaying Horror
 						1812,	-- Rotting Behemoth
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #if BEFORE 4.0.3
 				i(12811, {	-- Righteous Orb
@@ -3263,7 +3263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(13356, {	-- Somatic Intensifier
 					["description"] = "These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 			}),

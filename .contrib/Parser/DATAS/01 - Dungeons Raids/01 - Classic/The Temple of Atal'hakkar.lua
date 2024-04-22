@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9051,  -- Toxic Test
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 50,
 					["groups"] = {
@@ -65,19 +65,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "created 4.0.3" },
 						}),
 						i(22458, {	-- Moonshadow Stave
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(53561, {	-- Thicket's Embrace
 							["timeline"] = { "created 4.0.3" },
 						}),
 						i(22272, {	-- Forest's Embrace
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(53562, {	-- Grizzled Hide
 							["timeline"] = { "created 4.0.3" },
 						}),
 						i(22274, {	-- Grizzled Pelt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
 					["coord"] = { 57.8, 92, UNDERCITY },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -94,7 +94,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 22444 },	-- Putrid Vine
 						}),
 						i(30696, {	-- Scourgebane
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
 					["coord"] = { 42.2, 42.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["groups"] = {
@@ -111,13 +111,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 5719,	-- Morphaz
 						}),
 						i(19990, {	-- Blessed Prayer Beads
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20006, {	-- Circle of Hope
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20082, {	-- Woestave
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8412,	-- Spirit Totem
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
 					-- #endif
@@ -142,13 +142,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
 						i(20369, {	-- Azurite Fists
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20503, {	-- Enamored Water Spirit
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20556, {	-- Wildstaff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -156,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8252,	-- The Siren's Coral
 					["coord"] = { 29.6, 40.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
 					["groups"] = {
@@ -165,13 +165,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 5719,	-- Morphaz
 						}),
 						i(20035, {	-- Glacial Spike
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20036, {	-- Fire Ruby
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20037, {	-- Arcane Crystal Pendant
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8416,	-- Inert Scourgestones
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -208,16 +208,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
 						i(20504, {	-- Lightforged Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20505, {	-- Chivalrous Signet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20512, {	-- Sanctified Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20620, {	-- Holy Mightstone
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7775,	-- Gregan Brewspewer
 					["sourceQuest"] = 4142,	-- A Visit to Gregan
 					["coord"] = { 45.1, 25.6, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
@@ -240,7 +240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
 					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					-- #if BEFORE 4.0.3
 					["OnUpdate"] = ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate,
@@ -255,14 +255,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 3444,	-- The Stone Circle
 					["coord"] = { 52.6, 45.8, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 46,
 				}),
 				q(1475, {	-- Into The Temple of Atal'Hakkar
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["sourceQuest"] = 1469,	-- Rhapsody's Tale
 					["coord"] = { 64.2, 20.8, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -274,24 +274,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["description"] = "Scattered around the inside and outside of the instance.",
 						}),
 						i(1490, {	-- Guardian Talisman
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(1446, {	-- Jammal'an the Prophet
 					["qg"] = 5598,	-- Atal'ai Exile
 					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 38,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Jammal'an
 							["provider"] = { "i", 6212 },	-- Head of Jammal'an
 						}),
 						i(11124, {	-- Helm of Exile
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11123, {	-- Rainstrider Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -310,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 					["coord"] = { 67, 22.4, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["lvl"] = 40,
 					["groups"] = {
@@ -327,7 +327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8235,	-- Encoded Fragments
 					["coord"] = { 29.6, 40.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
@@ -337,13 +337,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 5719,	-- Morphaz
 						}),
 						i(19982, {	-- Duskbat Drape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(19984, {	-- Ebon Mask
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20255, {	-- Whisperwalk Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -364,11 +364,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 148512 },	-- Essence Font
 					},
 					["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						i(10455, {	-- Chained Essence of Eranikus
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -378,7 +378,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
 					["description"] = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10455, 1 } },	-- Chained Essence of Eranikus
 					-- #if BEFORE 4.0.3
 					["OnUpdate"] = ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate,
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 4787,	-- The Ancient Egg
 					["coord"] = { 66.8, 22.4, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Egg of Hakkar
@@ -401,13 +401,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(10749, {	-- Avenguard Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10750, {	-- Lifeforce Dirk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10751, {	-- Gemburst Circlet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -415,7 +415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8231,	-- Wavethrashing
 					["coord"] = { 42.2, 42.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["groups"] = {
@@ -424,13 +424,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 5719,	-- Morphaz
 						}),
 						i(19991, {	-- Devilsaur Eye
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(19992, {	-- Devilsaur Tooth
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20083, {	-- Hunting Spear
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -441,7 +441,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						3380,	-- The Sunken Temple [Horde]
 					},
 					["coord"] = { 52.6, 45.8, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["lvl"] = 46,
 					["groups"] = {
@@ -457,14 +457,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3445, {	-- The Sunken Temple [Alliance]
 					["qg"] = 7900,	-- Angelas Moonbreeze
 					["coord"] = { 31.8, 45.6, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 46,
 				}),
 				q(3380, {	-- The Sunken Temple [Horde]
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 					["coord"] = { 74.4, 43.4, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 				}),
@@ -472,7 +472,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1443,	-- Fel'zerul
 					["sourceQuest"] = 1424,	-- Pool of Tears
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -480,7 +480,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 6181 },	-- Fetish of Hakkar
 						}),
 						i(1490, {	-- Guardian Talisman
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -488,7 +488,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuest"] = 8421,	-- The Wrong Stuff
 					["coord"] = { 41.6, 45.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 					["groups"] = {
@@ -502,13 +502,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
 						i(20534, {	-- Abyss Shard
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20530, {	-- Robes of Servitude
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20536, {	-- Soul Harvester
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -516,7 +516,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8424,	-- War on the Shadowsworn
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 					["groups"] = {
@@ -530,13 +530,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
 						i(20130, {	-- Diamond Flask
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20517, {	-- Razorsteel Shoulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(20521, {	-- Fury Visor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -547,7 +547,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 4147,	-- Marvon's Workshop
 					["coord"] = { 62.5, 38.7, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -618,19 +618,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(5708, {	-- Spawn of Hakkar
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(10801, {	-- Slitherscale Boots
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(10802, {	-- Wingveil Cloak
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
 			o(148832, {	-- Atal'ai Statue
 				["description"] = "Go to the Pit of Refuse.\n\nClear all of the trash as you travel around the circular platform. You'll notice balconies that dip out and overlook the center of the pit. Essentially, once it's all cleared, each of your party members should spread out and be assigned to a balcony with an Atal'ai Shrine. The shrines must be clicked in a specific order:\n\n    South (Bottom)\n    North (Top)\n    Southwest (Bottom Left)\n    Southeast (Bottom Right)\n    Northwest (Top Left)\n    Northeast (Top Right)\n\nOnce a statue has been clicked in the correct sequence, it'll turn green. If not, the person attempting to activate will gain a curse.",
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					q(3447, {	-- Secret of the Circle
 						["providers"] = {
@@ -639,20 +639,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 						["sourceQuest"] = 3444,	-- The Stone Circle
 						["coord"] = { 52.6, 45.8, TANARIS },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 46,
 						["groups"] = {
 							i(10773, {	-- Hakkari Urn
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 								["groups"] = {
 									i(10781, {	-- Hakkari Breastplate
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 									i(10782, {	-- Hakkari Shroud
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 									i(10780, {	-- Mark of Hakkar
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 								},
 							}),
@@ -660,19 +660,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(8580, {	-- Atal'alarion
 						["description"] = "Summoned by activating the Atal'ai Statues in the proper order.",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							i(22444, {	-- Putrid Vine
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(10799, {	-- Headspike
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(10800, {	-- Darkwater Bracers
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(10798, {	-- Atal'alarion Tusk Ring
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -688,25 +688,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{ "n", 5712 },	-- Zolo
 					{ "n", 5716 },	-- Zul'Lor
 				},
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(10783, {	-- Atal'ai Spaulders
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(10787, {	-- Atal'ai Gloves
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(10784, {	-- Atal'ai Breastplate
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(10788, {	-- Atal'ai Girdle
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(10785, {	-- Atal'ai Leggings
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(10786, {	-- Atal'ai Boots
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -797,7 +797,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(10454, {	-- Essence of Eranikus
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(10828),	-- Dire Nail
 					i(10847),	-- Dragon's Call

@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2583, {	-- A Boar's Vitality
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8392, 3 },	-- Blasted Boar Lung
 						{ "i", 8393, 2 },	-- Scorpok Pincer
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8411, {	-- Lung Juice Cocktail
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -384,7 +384,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
 					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(12122),	-- Kum'isha's Junk
@@ -468,7 +468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2602, {	-- Infallible Mind
 					["qg"] = 7506,	-- Bloodmage Lynnore
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8394, 10 },	-- Basilisk Brain
@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8423, {	-- Cerebral Cortex Compound
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -521,7 +521,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["sourceQuest"] = 2521,	-- To Serve Kum'isha
 					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -710,7 +710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 3501,	-- Everything Counts In Large Amounts
 					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
 					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2783, {	-- Petty Squabbles
 					["qg"] = 7826,	-- Ambassador Ardalan
 					["coord"] = { 67.6, 19.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -819,7 +819,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["sourceQuest"] = 2581,	-- Snickerfang Jowls
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8391, 3 },	-- Snickerfang Jowl
@@ -829,7 +829,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8410, {	-- R.O.I.D.S.
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -853,7 +853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 8022,	-- Thadius Grimshade
 					["sourceQuest"] = 2992,	-- The Divination
 					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -862,7 +862,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["sourceQuest"] = 2585,	-- The Decisive Striker
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8393, 3 },	-- Scorpok Pincer
@@ -872,14 +872,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8412, {	-- Ground Scorpok Assay
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(2581, {	-- Snickerfang Jowls
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8391, 3 },	-- Snickerfang Jowl
 						{ "i", 8392, 2 },	-- Blasted Boar Lung
@@ -888,7 +888,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8410, {	-- R.O.I.D.S.
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -910,7 +910,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["sourceQuest"] = 2583,	-- A Boar's Vitality
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8392, 3 },	-- Blasted Boar Lung
@@ -920,14 +920,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8411, {	-- Lung Juice Cocktail
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(2604, {	-- Spiritual Domination
 					["qg"] = 7506,	-- Bloodmage Lynnore
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8396, 10 },	-- Vulture Gizzard
 						{ "i", 8391, 2 },	-- Snickerfang Jowl
@@ -936,7 +936,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8424, {	-- Gizzard Gum
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -947,7 +947,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7582,	-- The Prison's Casing
 					},
 					["coord"] = { 34, 50.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["groups"] = {
@@ -966,7 +966,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						-- #endif
 						i(18602, {	-- Tome of Sacrifice
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1148,7 +1148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2601, {	-- The Basilisk's Bite
 					["qg"] = 7506,	-- Bloodmage Lynnore
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8394, 10 },	-- Basilisk Brain
 						{ "i", 8396, 2 },	-- Vulture Gizzard
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8423, {	-- Cerebral Cortex Compound
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1187,13 +1187,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7729,	-- Spirit of Kirith
 					["sourceQuest"] = 2721,	-- Kirith
 					["coord"] = { 68.4, 31.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(2585, {	-- The Decisive Striker
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8393, 3 },	-- Scorpok Pincer
 						{ "i", 8396, 2 },	-- Vulture Gizzard
@@ -1202,7 +1202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8412, {	-- Ground Scorpok Assay
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1231,7 +1231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 8022,	-- Thadius Grimshade
 					["sourceQuest"] = 2991,	-- Nekrum's Medallion
 					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1338,7 +1338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7581, {	-- The Prison's Bindings
 					["qg"] = 14463,	-- Daio the Decrepit
 					["coord"] = { 34, 50.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -1351,7 +1351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7582, {	-- The Prison's Casing
 					["qg"] = 14463,	-- Daio the Decrepit
 					["coord"] = { 34, 50.2, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -1427,7 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2521, {	-- To Serve Kum'isha
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
 					["lvl"] = 45,
 					["groups"] = {
@@ -1437,7 +1437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2603, {	-- Vulture's Vigor
 					["qg"] = 7506,	-- Bloodmage Lynnore
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8396, 10 },	-- Vulture Gizzard
 						{ "i", 8391, 2 },	-- Snickerfang Jowl
@@ -1445,7 +1445,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(8424, {	-- Gizzard Gum
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1535,7 +1535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3627,	-- Uniting the Shattered Amulet
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- Severed Horn of the Defiler
@@ -1548,13 +1548,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 7664,	-- Razelikh the Defiler
 						}),
 						i(10778, {	-- Necklace of Sanctuary
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10779, {	-- Demon's Blood
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10959, {	-- Demon Hide Sack
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1758,7 +1758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER 7.0.3
 						i(17050, {	-- Chan's Imperial Robes
 							["description"] = "Added to Emerald Encrusted Chest in 7.0. & Mith'rethis Rare in Hinterlands in 9.0.",
-							["timeline"] = { "removed 4.0.3", "added 7.0.3" },
+							["timeline"] = { REMOVED_4_0_3, "added 7.0.3" },
 						}),
 						-- #endif
 					},
@@ -1819,7 +1819,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(8394, {	-- Basilisk Brain
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						8302,	-- Deatheye
 						5990,	-- Redstone Basilisk
@@ -1827,7 +1827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(8392, {	-- Blasted Boar Lung
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						5992,	-- Ashmane Boar
 						8303,	-- Grunter
@@ -1859,7 +1859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if ANYCLASSIC
 					["recipeID"] = 18540,	-- Ritual of Doom
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						12396,	-- Doomguard Commander
@@ -1875,7 +1875,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 					-- added to burning steps in 10.1.5
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER TBC
 					["crs"] = {
 						5981,	-- Portal Seeker
@@ -1886,7 +1886,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(8393, {	-- Scorpok Pincer
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						8301,	-- Clack the Reaver
 						5988,	-- Scorpok Stinger
@@ -1903,7 +1903,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 42338,	-- Tainted Screecher
 				}),
 				i(8391, {	-- Snickerfang Jowl
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						8300,	-- Ravage
 						5985,	-- Snickerfang Hyena
@@ -1921,7 +1921,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 42336,	-- Tainted Black Bear
 				}),
 				i(18665, {	-- The Eye of Shadow
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["crs"] = {
 						12396,	-- Doomguard Commander
@@ -1932,7 +1932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(8396, {	-- Vulture Gizzard
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						5982,	-- Black Slayer
 						8299,	-- Spiteflayer

@@ -555,7 +555,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7628,	-- Doomsday Candle
 					},
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
@@ -653,7 +653,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4726, {	-- Broodling Essence
 					["qg"] = 10267,	-- Tinkee Steamboil
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/8 Broodling Essence
@@ -793,7 +793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
@@ -979,7 +979,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3823, {	-- Extinguish the Firegut
 					["qg"] = 9177,	-- Oralius
 					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1001,13 +1001,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 4726,	-- Broodling Essence
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(4283, {	-- FIFTY! YEP!
 					["qg"] = 9177,	-- Oralius
 					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9177,	-- Oralius
 					["sourceQuest"] = 3823,	-- Extinguish the Firegut
 					["coord"] = { 84.6, 68.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1178,7 +1178,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7630,	-- Arcanite
 					},
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SCHOLOMANCE },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9136,	-- Sha'ni Proudtusk
 					["sourceQuest"] = 3821,	-- Dreadmaul Rock
 					["coord"] = { 79.8, 45.4, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 3822,	-- Krom'Grul
 						}),
 						i(11869, {	-- Sha'ni's Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4481, {	-- Libram of Constitution
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1258,14 +1258,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(11642, {	-- Lesser Arcanum of Constitution
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4483, {	-- Libram of Resilience
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1277,14 +1277,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(11644, {	-- Lesser Arcanum of Resilience
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4463, {	-- Libram of Rumination
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1296,14 +1296,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(11622, {	-- Lesser Arcanum of Rumination
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4482, {	-- Libram of Tenacity
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1315,14 +1315,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(11643, {	-- Lesser Arcanum of Tenacity
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4484, {	-- Libram of Voracity
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1334,19 +1334,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(11647, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11648, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11649, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11645, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11646, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1413,7 +1413,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Do not leave Burning Steppes without purchasing a Shadowy Potion or two.",
 					-- #endif
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["cost"] = { { "i", 18802, 1 } },	-- Shadowy Potion
 					["classes"] = { WARLOCK },
@@ -1440,7 +1440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 85.8, 15.8, UNDERCITY },
 						},
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,
 					["lvl"] = 60,
@@ -1520,7 +1520,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9177,	-- Oralius
 					["sourceQuest"] = 3824,	-- Gor'tesh the Brute Lord
 					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1532,10 +1532,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 81, 46, BURNING_STEPPES },
 						}),
 						i(11867, {	-- Maddening Gauntlets
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11868, {	-- Choking Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1608,7 +1608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7562,	-- Mor'zul Bloodbringer
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -1798,7 +1798,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4296, {	-- Tablet of the Seven
 					["qg"] = 9536,	-- Maxwort Uberglint
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tablet Transcript
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 14344, 6 },	-- Large Brilliant Shard
@@ -2070,7 +2070,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 7563,	-- Rage of Blood
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
@@ -2285,7 +2285,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
-							["timeline"] = { "added 1.0.0", "removed 4.0.3", ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
+							["timeline"] = { "added 1.0.0", REMOVED_4_0_3, ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
 						}),
 					},
 				}),
@@ -2326,7 +2326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				n(9544, {	-- Yuka Screwspigot
 					["coord"] = { 66.0, 22.0, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10602, {	-- Schematic: Deadly Scope (RECIPE!)
 							["isLimited"] = true,
@@ -2429,7 +2429,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
 					["cr"] = 7035,	-- Firegut Brute
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 					["coords"] = {
 						{ 83.6, 40.0, BURNING_STEPPES },

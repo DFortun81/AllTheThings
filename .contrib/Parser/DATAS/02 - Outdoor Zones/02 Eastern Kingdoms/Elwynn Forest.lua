@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(783, {	-- A Threat Within
 							["qg"] = 823,	-- Deputy Willem
 							["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(28762, {	-- Beating Them Back!
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
 								}),
 								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { ADDED_4_0_3 },
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 823,	-- Deputy Willem
 							["sourceQuest"] = 18,	-- Brotherhood of Thieves
 							["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -301,20 +301,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["cr"] = 103,	-- Garrick Padfoot
 								}),
 								i(6076, {	-- Tapered Pants
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(60, {	-- Layered Tunic
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(3070, {	-- Ensign Cloak
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						q(18, {	-- Brotherhood of Thieves
 							["qg"] = 823,	-- Deputy Willem
 							["coord"] = { 48.2, 42.8, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(5579),	-- Militia Warhammer
 								i(1159, {	-- Militia Quarterstaff
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -408,7 +408,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 823,	-- Deputy Willem
 							["sourceQuest"] = 783,	-- A Threat Within
 							["coord"] = { 48.17, 42.94, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
@@ -768,12 +768,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["sourceQuest"] = 3904,	-- Milly's Harvest
 							["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
 								i(2690, {	-- Latched Belt
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(11475),	-- Wine-stained Cloak
 							},
@@ -834,7 +834,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(5623, {	-- In Favor of the Light
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["coord"] = { 49.8, 39.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["isBreadcrumb"] = true,
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
 							["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 20,
 						}),
@@ -852,7 +852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/10 Kobold Worker
@@ -970,7 +970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(7, {	-- Kobold Camp Cleanup
 							["qg"] = 197,	-- Marshal McBride
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/10 Kobold Vermin
@@ -1234,7 +1234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 823,	-- Deputy Willem
 							["sourceQuest"] = 18,	-- Brotherhood of Thieves
 							["coord"] = { 48.2, 42.8, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 						}),
@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 9296,	-- Milly Osworth
 							["sourceQuest"] = 3903,	-- Milly Osworth
 							["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -1374,12 +1374,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["sourceQuest"] = 347,	-- Rethban Ore (quest in Redridge Mountains)
 							["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 20,
 							["groups"] = {
 								i(6095, {	-- Wandering Boots
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -1404,7 +1404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 15,	-- Investigate Echo Ridge
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/12 Kobold Laborer
@@ -1861,7 +1861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 196,	-- Eagan Peltskinner
 							["sourceQuest"] = 5261,	-- Eagan Peltskinner
 							["coord"] = { 48.9, 40.1, ELWYNN_FOREST },
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/8 Tough Wolf Meat
@@ -1872,10 +1872,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(80, {	-- Soft Fur-lined Shoes
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(6070, {	-- Wolfskin Bracers
-									["timeline"] = { "removed 4.0.3.13277" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -1917,12 +1917,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(ZONE_DROPS, {
 						-- #if BEFORE 8.1.0.28724
 						i(2057, {	-- Pitted Defias Shortsword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["cr"] = 38,	-- Defias Thug
 						}),
 						-- #endif
 						i(2055, {	-- Small Wooden Hammer
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							-- #if BEFORE 4.0.3
 							["cr"] = 80,	-- Kobold Laborer
 							["coords"] = {
@@ -2146,7 +2146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4840),	-- Long Bayonet
 						i(1158),	-- Solid Metal Club
 						i(1008, {	-- Well-used Sword
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(57248, {	-- Well-Used Greatsword
 							["timeline"] = { ADDED_4_0_3 },
@@ -2222,7 +2222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 294,	-- Marshal Haggard
 					["sourceQuest"] = 1666,	-- Marshal Haggard
 					["coord"] = { 84.6, 69.4, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -2237,16 +2237,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 6093,	-- Dead-Tooth Jack
 						}),
 						i(6979, {	-- Haggard's Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6980, {	-- Haggard's Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6983, {	-- Haggard's Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6985, {	-- Haggard's Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2254,7 +2254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 261,	-- Guard Thomas
 					["sourceQuest"] = 71,	-- Report to Thomas
 					["coord"] = { 74, 72.2, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 				}),
@@ -2362,13 +2362,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
 					["sourceQuest"] = 5623,	-- In Favor of the Light
 					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3.13277" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
 					["groups"] = {
 						i(16605, {	-- Friar's Robes of the Light
-							["timeline"] = { "removed 4.0.3.13277" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2402,7 +2402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if BEFORE 4.0.3
 							["description"] = "One of the single best PvE defensive cooldowns. Choose your targets wisely... Save for Patchwerk!",
 							-- #endif
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(57400, {	-- Gold Dust Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -2453,7 +2453,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(1434, {	-- Glowing Wax Stick
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(57398, {	-- Candlewax Streaked Robe
 							["timeline"] = { ADDED_4_0_3 },
@@ -2651,7 +2651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(83, {	-- Red Linen Goods / Fine Linen Goods [CATA]
 					["qg"] = 278,	-- Sara Timberlain
 					["coord"] = { 79.5, 68.7, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
@@ -2699,7 +2699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(2249, {	-- Militia Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2238),	-- Urchin's Pants
 						i(57527, {	-- Stone Cairne Boots
@@ -2723,7 +2723,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2241,	-- The Apple Falls
 					},
 					["coord"] = { 43.9, 65.9, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
@@ -2736,7 +2736,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 47,	-- Gold Dust Exchange
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 3,
@@ -2752,7 +2752,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 917,	-- Keryn Sylvius
 					["sourceQuest"] = 2205,	-- Seek out SI:7
 					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
@@ -2769,7 +2769,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 328,	-- Zaldimar Wefhellt <Mage Trainer>
 					["altQuests"] = { 1879 },	-- Speak with Bink
 					["coord"] = { 43.3, 66.2, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
@@ -2867,7 +2867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(6215, {	-- Balanced Fighting Stick
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3024,7 +3024,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
 						}),
 						i(6148, {	-- Web-covered Boots
-							["timeline"] = { "removed 4.0.3", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
 						}),
 					},
 				}),
@@ -3039,7 +3039,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(1913, {	-- Studded Blackjack
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3080,7 +3080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6202, {	-- Fingerless Gloves
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6203, {	-- Thuggish Shield
 							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3140,7 +3140,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
 						i(7997),	-- Red Defias Mask
 						i(2057, {	-- Pitted Defias Shortsword
-							["timeline"] = { "removed 4.0.3", "added 8.1.0.28724" },
+							["timeline"] = { REMOVED_4_0_3, "added 8.1.0.28724" },
 						}),
 					},
 				}),
@@ -3428,7 +3428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13159,  -- James Clark
 						-- #ENDIF
 					},
-					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -3449,12 +3449,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(778, {	-- Kobold Excavation Pick
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER 10.1.7
 					["isBounty"] = true,
 					-- #endif
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -3475,7 +3475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(1389, {	-- Kobold Mining Mallet
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 40,	-- Kobold Miner
 					["coords"] = {
 						{ 61.4, 50.4, ELWYNN_FOREST },
@@ -3484,7 +3484,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1195, {	-- Kobold Mining Shovel
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 475,	-- Kobold Tunneler
 					["coords"] = {
 						{ 41.6, 78.8, ELWYNN_FOREST },
@@ -3493,9 +3493,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1399, {	-- Magic Candle
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -3612,7 +3612,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(781, {	-- Stone Gnoll Hammer
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["crs"] = {
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
@@ -3625,7 +3625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1972, {	-- Westfall Deed
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						116,	-- Defias Bandit
@@ -3635,7 +3635,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						474,	-- Defias Rogue Wizard
 						880,	-- Erlan Drudgemoor
 					},
-					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {

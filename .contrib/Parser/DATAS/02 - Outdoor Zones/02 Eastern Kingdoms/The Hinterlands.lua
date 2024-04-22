@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9470, {	-- A Gesture of Goodwill
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 41,
 					["groups"] = {
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7801,	-- Gilveradin Sunchaser
 					["sourceQuest"] = 650,	-- Ripple Recovery (2/2)
 					["coord"] = { 26.6, 48.4, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
@@ -397,7 +397,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
 					["sourceQuest"] = 7841,	-- Message to the Wildhammer
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 4589, 10 } },	-- Long Elegant Feather
 					-- #endif
@@ -407,7 +407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7830, {	-- Avenging the Fallen
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -421,7 +421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9660,	-- Agnar Beastamer
 					["sourceQuest"] = 4297,	-- Food for Baby
 					["coord"] = { 14.1, 43.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
 					-- #if BEFORE 4.0.3
@@ -494,7 +494,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7844, {	-- Cannibalistic Cousins
 					["qg"] = 14739,	-- Mystic Yayo'jin <Reagent Vendor>
 					["coord"] = { 78.8, 78.4, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 					["sourceQuest"] = 2934,	-- Undamaged Venom Sac
 					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7850, {	-- Dark Vessels
 					["qg"] = 14736,	-- Primal Torntusk
 					["coord"] = { 78.2, 81.2, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 65.2, 71.9, THE_HINTERLANDS },
 						}),
 						i(19118, {	-- Nature's Breath
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -665,7 +665,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9469, {	-- Featherbeard's Endorsement
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -678,7 +678,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9660,	-- Agnar Beastamer
 					["sourceQuest"] = 3843,	-- The Newest Member of the Family
 					["coord"] = { 14.1, 43.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -692,7 +692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14740,	-- Katoom the Angler
 					["sourceQuest"] = 7815,	-- Snapjaws, Mon!
 					["coord"] = { 80.2, 81.4, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5635,	-- Falstad Wildhammer <High Thane>
 					["sourceQuest"] = 1449,	-- To The Hinterlands
 					["coord"] = { 11.8, 46.8, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
@@ -828,7 +828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7829, {	-- Hunt the Savages
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -855,7 +855,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 181649 },	-- Featherbeard's Journal
 					["sourceQuest"] = 9469,	-- Featherbeard's Endorsement
 					["coord"] = { 13.4, 55.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -904,7 +904,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7862, {	-- Job Opening: Guard Captain of Revantusk Village
 					["provider"] = { "o", 179913 },	-- Call to Arms!
 					["coord"] = { 79.0, 79.0, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -921,21 +921,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2647 },	-- Vilebranch Soul Eater
 						}),
 						i(19120, {	-- Rune of the Guard Captain
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(7845, {	-- Kidnapped Elder Torntusk!
 					["qg"] = 14736,	-- Primal Torntusk
 					["coord"] = { 78.2, 81.2, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 				}),
 				q(7840, {	-- Lard Lost His Lunch
 					["qg"] = 14731,	-- Lard <Innkeeper>
 					["coord"] = { 78.2, 81.2, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -965,7 +965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7841, {	-- Message to the Wildhammer
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -1015,7 +1015,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9471, {	-- Preying on the Predators
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 9476,	-- In Pursuit of Featherbeard
 					["coord"] = { 37.1, 71.5, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1147,7 +1147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14757,	-- Elder Torntusk
 					["sourceQuest"] = 7845,	-- Kidnapped Elder Torntusk!
 					["coord"] = { 59.6, 77.8, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -1172,15 +1172,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14757,	-- Elder Torntusk
 					["sourceQuest"] = 7846,	-- Recover the Key!
 					["coord"] = { 59.6, 77.8, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
 						i(19114, {	-- Highland Bow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(19115, {	-- Flask of Forest Mojo
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1188,7 +1188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["sourceQuest"] = 1450,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5634,	-- Rhapsody Shindigger
 					["sourceQuest"] = 1451,	-- Rhapsody Shindigger
 					["coord"] = { 26.8, 48.4, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -1234,14 +1234,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1452,	-- Rhapsody's Kalimdor Kocktail
 					["coord"] = { 26.8, 48.4, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(2742, {	-- Rin'ji is Trapped!
 					["qg"] = 7780,	-- Rin'ji <Witherbark Troll>
 					["coord"] = { 30.6, 47, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1252,7 +1252,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 2742,	-- Rin'ji is Trapped!
 					["coord"] = { 86.3, 59.1, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1263,14 +1263,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 77,	-- A Sticky Situation
 					["coord"] = { 26.6, 48.4, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
 				q(649, {	-- Ripple Recovery (1/2)
 					["qg"] = 6986,	-- Dran Droffers
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1278,7 +1278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6987,	-- Malton Droffers
 					["sourceQuest"] = 649,	-- Ripple Recovery
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1286,7 +1286,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["sourceQuest"] = 2993,	-- Return to the Hinterlands
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1302,17 +1302,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(9651, {	-- Gryphon Rider's Stormhammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9652, {	-- Gryphon Rider's Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(7849, {	-- Separation Anxiety
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -1325,10 +1325,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 62.2, 75.5, THE_HINTERLANDS },
 						}),
 						i(19117, {	-- Laquered Wooden Plate Legplates
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(19116, {	-- Greenleaf Handwraps
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1389,7 +1389,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2877, {	-- Skulk Rock Clean-up
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1453,7 +1453,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7815, {	-- Snapjaws, Mon!
 					["qg"] = 14740,	-- Katoom the Angler
 					["coord"] = { 80.2, 81.4, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					-- #if BEFORE 4.0.3
@@ -1477,7 +1477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7828, {	-- Stalking the Stalkers
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -1546,7 +1546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 2936,	-- The Spider God
 					["coord"] = { 56, 74.6, DUROTAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1581,7 +1581,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 2989,	-- The Altar of Zul
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -1589,7 +1589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["sourceQuest"] = 2988,	-- Witherbark Cages
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -1638,7 +1638,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
 					["sourceQuest"] = 7842,	-- Another Message to the Wildhammer
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -1647,7 +1647,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 14, 48, THE_HINTERLANDS },
 						}),
 						i(19119, {	-- Owlbeast Hide Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1751,7 +1751,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2880, {	-- Troll Necklace Bounty
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1773,7 +1773,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 					["sourceQuest"] = 2933,	-- Venom Bottles
 					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1790,7 +1790,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 9321 },	-- Venom Bottle
 					},
 					["coord"] = { 23.6, 58.7, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -1802,19 +1802,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 2937,	-- Summoning Shadra
 					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
 						i(9649, {	-- Royal Highmark Vestments
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9650, {	-- Honorguard Chestpiece
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10686, {	-- Aegis of Battle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1835,7 +1835,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7839, {	-- Vilebranch Hooligans
 					["qg"] = 14737,	-- Smith Slagtree <Blacksmithing Supplies>
 					["coord"] = { 77.6, 80.2, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -1861,7 +1861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7861, {	-- Wanted: Vile Priestess Hexx and Her Minions
 					["provider"] = { "o", 179913 },	-- Call to Arms!
 					["coord"] = { 79.0, 79.0, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -1873,17 +1873,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2648 },	-- Vilebranch Aman'zasi Guard
 						}),
 						i(19159, {	-- Woven Ivy Necklace
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(19121, {	-- Deep Woodlands Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(2988, {	-- Witherbark Cages
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1967,7 +1967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
-							["timeline"] = { "removed 4.0.3", "added 9.0.1" },
+							["timeline"] = { REMOVED_4_0_3, "added 9.0.1" },
 						}),
 					},
 				}),
@@ -2139,13 +2139,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(9240, {	-- Mallet of Zul'Farrak
 					["description"] = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 59.0, 79.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9241, 1 } },	-- Sacred Mallet
 				}),
 				i(9241, {	-- Sacred Mallet
 					["description"] = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 49.2, 68.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7996,	-- Qiaga the Keeper
 				}),
 			}),
@@ -2170,7 +2170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 					["cr"] = 2644,	-- Vilebranch Hideskinner
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 68.2, 75.0, THE_HINTERLANDS },
 						{ 63.8, 73.6, THE_HINTERLANDS },
@@ -2181,7 +2181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any troll in The Hinterlands.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",

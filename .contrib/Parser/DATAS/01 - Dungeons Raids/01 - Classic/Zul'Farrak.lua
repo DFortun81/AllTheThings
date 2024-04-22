@@ -68,17 +68,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2768, {	-- Divino-matic Rod
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.5, 28.5, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Divino-matic Rod
 							["provider"] = { "i", 8548 },	-- Divino-matic Rod
 						}),
 						i(9534, {	-- Engineer's Guild Headpiece
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9533, {	-- Masons Fraternity Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -86,14 +86,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 4453,	-- Wizzle Brassbolts
 					["sourceQuest"] = 2769,	-- The Brassbolts Brothers
 					["coord"] = { 78.0, 77.0, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gahz'rilla's Electrified Scale
 							["provider"] = { "i", 8707 },	-- Gahz'rilla's Electrified Scale
 						}),
 						i(11122, {	-- Carrot on a Stick
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							-- #if BEFORE WRATH
 							-- #if AFTER TBC
 							["description"] = "Once you have a Riding Crop, you may safely vendor this item as the two effects do not stack. Until then, use it to make mounted travel more efficient.",
@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8022,	-- Thadius Grimshade
 					["sourceQuest"] = 2990,	-- Thadius Grimshade
 					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7876,	-- Tran'rek
 					["sourceQuest"] = 2864,	-- Tran'rek
 					["coord"] = { 51.6, 26.8, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/5 Uncracked Scarab Shell
@@ -161,14 +161,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 85, 10.2, UNDERCITY },
 						},
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
 				q(2769, {	-- The Brassbolts Brothers
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["coord"] = { 68.2, 46.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
@@ -177,7 +177,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3520,	-- Screecher Spirits
 					["coord"] = { 67.0, 22.4, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 First Mosh'aru Tablet
@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
 					["coord"] = { 56.0, 74.6, DUROTAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -205,24 +205,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 2861,	-- Tabetha's Task
 					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tiara of the Deep
 							["provider"] = { "i", 9234 },	-- Tiara of the Deep
 						}),
 						i(9527, {	-- Spellshifter Rod
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9531, {	-- Gemshale Pauldrons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(3042, {	-- Troll Temper
 					["qg"] = 7804,	-- Trenton Lighthammer <The Mithril Order>
 					["coord"] = { 51.4, 28.8, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/20 Troll Temper
@@ -255,14 +255,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(9240, {	-- Mallet of Zul'Farrak
 					["description"] = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 59.0, 79.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9241, 1 } },	-- Sacred Mallet
 					["cr"] = 7995,	-- Vile Priestess Hexx
 				}),
 				i(9241, {	-- Sacred Mallet
 					["description"] = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 49.2, 68.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7996,	-- Qiaga the Keeper
 				}),
 				-- #endif

@@ -145,7 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["description"] = "Earn exalted status with the Shen'dralar.",
 					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				ach(644, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- King of Dire Maul
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 			n(FACTIONS, {
 				faction(809, {	-- Shen'dralar
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					-- #if BEFORE 4.0.3
 					["OnTooltip"] = OnTooltipForShendralar,
@@ -198,7 +198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					["provider"] = { "o", 179485 },	-- A Broken Trap
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					-- #if BEFORE 4.0.3
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
@@ -219,7 +219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7463, {	-- Arcane Refreshment
 					["qg"] = 14368,	-- Lorekeeper Lydros
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, CAPITAL_GARDENS_MAPS),
 					["classes"] = { MAGE },
 					["lvl"] = 60,
@@ -272,7 +272,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ 41.4, 54.2, THUNDER_BLUFF },
 						{ 69.2, 49.2, UNDERCITY },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -283,13 +283,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18357 },	-- Codex of Defense
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARRIOR },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18466, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -300,7 +300,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 					["sourceQuest"] = 7629,	-- Imp Delivery
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -310,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							-- #if BEFORE WRATH
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { WARLOCK },
 						}),
 						mount(23161, {	-- Dreadsteed (MOUNT!)
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["qg"] = 14373,	-- Sage Korolusk
 						["coord"] = { 75.3, 43.8, FERALAS },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 54,
 					["groups"] = {
@@ -362,14 +362,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18779, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume I
 						{ "i", 18780, 1 },	-- Top Half of Advanced Armorsmithing: Volume I
 					},
 					["groups"] = {
 						i(12727, {	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						236,	-- Capital Gardens
 						STRATHOLME, SCHOLOMANCE
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18781, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume II
 						{ "i", 18782, 1 },	-- Top Half of Advanced Armorsmithing: Volume II
@@ -397,7 +397,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 50,
 					["groups"] = {
 						i(12726, {	-- Plans: Enchanted Thorium Leggings (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -423,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						LBRS_CHAMBER_OF_BATTLE,
 						STRATHOLME
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18783, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume III
 						{ "i", 18784, 1 },	-- Top Half of Advanced Armorsmithing: Volume III
@@ -431,7 +431,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 50,
 					["groups"] = {
 						i(12725, {	-- Plans: Enchanted Thorium Helm (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -446,7 +446,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ 30.5, 67, IRONFORGE },
 						{ 54.8, 62.6, STORMWIND_CITY },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 54,
 				}),
@@ -470,7 +470,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
 					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
 					["lvl"] = 54,
@@ -480,13 +480,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18363 },	-- Frost Shock and You
 						{ "n", 14381 },	-- Lorekeeper Javon
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { SHAMAN },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18471, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -495,13 +495,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18356 },	-- Garona: A Study on Stealth and Treachery
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { ROGUE },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18465, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -510,13 +510,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18360 },	-- Harnessing Shadows
 						{ "n", 14382 },	-- Lorekeeper Mykos
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARLOCK },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18467, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -525,13 +525,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18362 },	-- Holy Bologna: What the Light Won't Tell You
 						{ "n", 14381 },	-- Lorekeeper Javon
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { PRIEST },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18469, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -571,7 +571,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 7877,	-- Latronicus Moonspear
 					["sourceQuest"] = 7494,	-- Feathermoon Stronghold
 					["coord"] = { 30.4, 46.2, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
@@ -580,7 +580,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							["provider"] = { "i", 18426 },	-- Lethtendris's Web
 						}),
 						i(18491, {	-- Lorespinner
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -588,7 +588,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 7776,	-- Talo Thornhoof
 					["sourceQuest"] = 7492,	-- Camp Mojache
 					["coord"] = { 76.2, 43.8, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -597,7 +597,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							["provider"] = { "i", 18426 },	-- Lethtendris's Web
 						}),
 						i(18491, {	-- Lorespinner
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -618,7 +618,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
 						{ "i", 18333, 1 },	-- Libram of Focus
@@ -631,7 +631,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 57,
 					["groups"] = {
 						i(18330, {	-- Arcanum of Focus
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -641,7 +641,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
 						{ "i", 18334, 1 },	-- Libram of Protection
@@ -654,7 +654,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 57,
 					["groups"] = {
 						i(18331, {	-- Arcanum of Protection
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -664,7 +664,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
 						{ "i", 18332, 1 },	-- Libram of Rapidity
@@ -677,14 +677,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 57,
 					["groups"] = {
 						i(18329, {	-- Arcanum of Rapidity
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(7441, {	-- Pusillin and the Elder Azj'Tordin
 					["qg"] = 14355,	-- Azj'Tordin
 					["coord"] = { 76.7, 37.2, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = 54,
 					["groups"] = {
@@ -692,10 +692,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							["provider"] = { "i", 18261 },	-- Book of Incantations
 						}),
 						i(18410, {	-- Sprinter's Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18411, {	-- Spry Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -744,13 +744,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18358 },	-- The Arcanist's Cookbook
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { MAGE },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18468, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -784,19 +784,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18364 },	-- The Emerald Dream
 						{ "n", 14381 },	-- Lorekeeper Javon
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { DRUID },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18470, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5518, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
@@ -807,11 +807,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 56,
 					["groups"] = {
 						r(22813, {	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = TAILORING,
 						}),
 						r(22815, {	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = LEATHERWORKING,
 						}),
 						i(18258, {	-- Gordok Ogre Suit
@@ -823,7 +823,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 5518,	-- The Gordok Ogre Suit
 					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
@@ -862,7 +862,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(5528, {	-- The Gordok Taste Test
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 56,
 					["groups"] = {
@@ -886,13 +886,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18361 },	-- The Greatest Race of Hunters
 						{ "n", 14382 },	-- Lorekeeper Mykos
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { HUNTER },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18473, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -915,20 +915,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 18359 },	-- The Light and How to Swing It
 						{ "n", 14382 },	-- Lorekeeper Mykos
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { PALADIN },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18472, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(7461, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
 					["maps"] = CAPITAL_GARDENS_MAPS,
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 56,
 					["groups"] = {
 						objective(1, {	-- 0/1 Immol'thar slain
@@ -966,17 +966,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 					["sourceQuest"] = 7461,	-- The Madness Within
 					["maps"] = CAPITAL_GARDENS_MAPS,
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 57,
 					["groups"] = {
 						i(18421, {	-- Backwood Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18420, {	-- Bonecrusher
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18424, {	-- Sedge Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1000,7 +1000,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 60,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -1055,7 +1055,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 				}),
 				applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						11441,	-- Gordok Brute
@@ -1077,34 +1077,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				-- #endif
 				["groups"] = {
 					i(18357, {	-- Codex of Defense
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18360, {	-- Harnessing Shadows
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18363, {	-- Frost Shock and You
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18356, {	-- Garona: A Study on Stealth and Treachery
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18362, {	-- Holy Bologna: What the Light Won't Tell You
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18401, {	-- Nostro's Compendium of Dragon Slaying
 						["timeline"] = { "removed 3.2.2" },
 					}),
 					i(18358, {	-- The Arcanist's Cookbook
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18364, {	-- The Emerald Dream
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18361, {	-- The Greatest Race of Hunters
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18359, {	-- The Light and How to Swing It
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -1136,7 +1136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							["cr"] = 13196,	-- Phase Lasher
 						}),
 						i(18603, {	-- Satyr Blood
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 4.0.3
 							["crs"] = {
@@ -1225,7 +1225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					applyclassicphase(PHASE_FIVE, n(16097, -- Isalien
 					-- #if BEFORE 4.0.3
 					bubbleDown({
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						-- #if NOT ANYCLASSIC
 						["u"] = 11,
 						-- #endif
@@ -1314,7 +1314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
 				["groups"] = {
-					n(ZONE_DROPS, bubbleDown({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
+					n(ZONE_DROPS, bubbleDown({ ["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							-- #if BEFORE 4.0.3
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
@@ -1719,7 +1719,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					n(14506, -- Lord Hel'nurath
 						bubbleDown({
 							-- #IF BEFORE 4.0.3
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							-- #ELSE
 							["u"] = 11,
 							-- #ENDIF

@@ -95,7 +95,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Blue Dragonscale Shoulders",
-						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 						["recipeID"] = 19089,
 						["requireSkill"] = 10656,
 					},
@@ -112,7 +112,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Blue Dragonscale Breastplate",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["recipeID"] = 19077,
 						["requireSkill"] = 10656,
 					},
@@ -150,7 +150,7 @@ profession(LEATHERWORKING, {
 					}),
 					{
 						["name"] = "Dragonscale Gauntlets",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["recipeID"] = 10619,
 						["requireSkill"] = 10656,
 					},
@@ -199,7 +199,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["name"] = "Chromatic Cloak",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["recipeID"] = 22926,
 						["requireSkill"] = 10656,
 					}),

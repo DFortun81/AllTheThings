@@ -502,7 +502,7 @@ root(ROOTS.Zones, {
 					q(9442, {	-- A Debilitating Sickness
 						["qg"] = 17123,	-- Earthcaller Ryga
 						["sourceQuest"] = 9441,	-- Envoy to the Mag'har
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
@@ -586,7 +586,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(9447, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {	-- Administering the Salve
+					q(9447, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Administering the Salve
 						["qg"] = 17123,	-- Earthcaller Ryga
 						["sourceQuest"] = 9442,	-- A Debilitating Sickness
 						["coord"] = { 32.1, 28.4, HELLFIRE_PENINSULA },
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, {
 						["qg"] = 4949,	-- Thrall
 						["sourceQuest"] = 9438,	-- Messenger to Thrall
 						["coord"] = { 31.6, 37.8, ORGRIMMAR },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						-- #if BEFORE 4.0.3
@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, {
 						},
 						["sourceQuest"] = 9406,	-- The Mag'har
 						["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),

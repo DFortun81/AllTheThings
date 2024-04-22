@@ -1342,10 +1342,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							}},
 						}),
 						ach(2187, {	-- The Undying
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								title(109, {	-- The Undying
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -2023,10 +2023,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							}},
 						}),
 						ach(2186, {	-- The Immortal
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								title(108, {	-- The Immortal
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -2811,10 +2811,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
 							["groups"] = {
 								applyclassicphase(WRATH_PHASE_ONE_REALM_FIRST, ach(1402, {	-- Realm First! Conqueror of Naxxramas
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 									["groups"] = {
 										title(90, {	-- %, Conqueror of Naxxramas
-											["timeline"] = { "removed 4.0.3" },
+											["timeline"] = { REMOVED_4_0_3 },
 										}),
 									},
 								})),

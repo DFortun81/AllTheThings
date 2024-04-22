@@ -2,31 +2,31 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local CENARION_COMBAT_BADGE = i(20802, {	-- Cenarion Combat Badge
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local CENARION_LOGISTICS_BADGE = i(20800, {	-- Cenarion Logistics Badge
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local CENARION_TACTICAL_BADGE = i(20801, {	-- Cenarion Tactical Badge
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local FOLLOWUP_LOGISTICS_ASSIGNMENT_A = i(20805, {	-- Followup Logistics Assignment (A)
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local FOLLOWUP_LOGISTICS_ASSIGNMENT_H = i(21386, {	-- Followup Logistics Assignment (H)
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local FOLLOWUP_TACTICAL_ASSIGNMENT = i(21133, {	-- Followup Tactical Assignment
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local LOGISTICS_ASSIGNMENT_A = i(21132, {	-- Logistics Assignment (A)
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local LOGISTICS_ASSIGNMENT_H = i(21266, {	-- Logistics Assignment (H)
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 local TACTICAL_ASSIGNMENT = i(20809, {	-- Tactical Assignment
-	["timeline"] = { "removed 4.0.3" },
+	["timeline"] = { REMOVED_4_0_3 },
 });
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(SILITHUS, {
@@ -190,12 +190,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20515, 1 }},	-- Abyssal Scepter
 					["lvl"] = 58,
 					["groups"] = {
 						i(22725, {	-- Band of Cenarius
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -224,21 +224,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8361, {	-- Abyssal Contacts
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20513, 1 }},	-- Abyssal Crest
 					["lvl"] = 60,
 					["groups"] = {
 						i(20603, {	-- Bag of Spoils
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20694, {	-- Glowing Black Orb
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20693, {	-- Weighted Cloak
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20692, {	-- Multicolored Band
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -248,22 +248,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8361,	-- Abyssal Contacts
 					["coord"] = { 48.6, 37.8, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20513, 3 }},	-- Abyssal Crest
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
 						i(20603, {	-- Bag of Spoils
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20694, {	-- Glowing Black Orb
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20693, {	-- Weighted Cloak
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20692, {	-- Multicolored Band
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -274,22 +274,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8352,	-- Scepter of the Council
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20515, 3 }},	-- Abyssal Scepter
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
 						i(20602, {	-- Chest of Spoils
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20721, {	-- Band of the Cultist
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20722, {	-- Crystal Slugthrower
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20720, {	-- Dark Whisper Blade
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -300,25 +300,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8348,	-- Signet of the Dukes
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20514, 3 }},	-- Abyssal Signet
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
 						i(20601, {	-- Sack of Spoils
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20695, {	-- Abyssal War Beads
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20696, {	-- Crystal Spiked Maul
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20697, {	-- Crystalline Threaded Cape
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20698, {	-- Elemental Attuned Blade
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -328,7 +328,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["maxReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 1 },	-- Cenarion Combat Badge
 						{ "i", 20800, 1 },	-- Cenarion Logistics Badge
@@ -467,7 +467,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8780, {	-- Armor Kits for the Field (A)
 					["provider"] = { "i", 21263 },	-- Logistics Task Briefing VII (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
 						{ "i", 4265, 8 },	-- Heavy Armor Kit
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8787, {	-- Armor Kits for the Field (H)
 					["provider"] = { "i", 21264 },	-- Logistics Task Briefing VII (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
 						{ "i", 4265, 8 },	-- Heavy Armor Kit
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8781, {	-- Arms for the Field (A)
 					["provider"] = { "i", 21260 },	-- Logistics Task Briefing VI (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 3853, 2 }},	-- Moonsteel Broadsword
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -509,7 +509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8786, {	-- Arms for the Field (H)
 					["provider"] = { "i", 21261 },	-- Logistics Task Briefing VI (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 3855, 3 }},	-- Massive Iron Axe
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -523,13 +523,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 48.7, 37.9, SILITHUS },
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
 				applyclassicphase(PHASE_FIVE, q(8737, {	-- Azure Templar
 					["provider"] = { "i", 21245 },	-- Tactical Task Briefing I
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8496, {	-- Bandages for the Field (A)
 					["provider"] = { "i", 20806 },	-- Logistics Task Briefing X (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14530, 30 },	-- Heavy Runecloth Bandage
 						{ "i", 8545, 30 },	-- Heavy Mageweave Bandage
@@ -558,7 +558,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8810, {	-- Bandages for the Field (H)
 					["provider"] = { "i", 21385 },	-- Logistics Task Briefing X (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14530, 30 },	-- Heavy Runecloth Bandage
 						{ "i", 8545, 30 },	-- Heavy Mageweave Bandage
@@ -574,7 +574,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8540, {	-- Boots for the Guard (A)
 					["provider"] = { "i", 20939 },	-- Logistics Task Briefing II (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 7936, 3 }},	-- Ornate Mithril Boots
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -586,7 +586,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8805, {	-- Boots for the Guard (H)
 					["provider"] = { "i", 21379 },	-- Logistics Task Briefing II (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 7936, 3 }},	-- Ornate Mithril Boots
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
@@ -610,7 +610,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 				}),
 				q(8308, {	-- Brann Bronzebeard's Lost Letter
@@ -699,7 +699,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8800, {	-- Cenarion Battlegear
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 60,
 				})),
 				applyclassicphase(PHASE_FIVE, q(8573, {	-- Champion's Battlegear
@@ -707,7 +707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 15 },	-- Cenarion Combat Badge
 						{ "i", 20800, 20 },	-- Cenarion Logistics Badge
@@ -718,19 +718,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(21188, {	-- Fist of Cenarius
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21190, {	-- Wrath of Cenarius
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21180, {	-- Earthstrike
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
 				applyclassicphase(PHASE_FIVE, q(8537, {	-- Crimson Templar
 					["provider"] = { "i", 20945 },	-- Tactical Task Briefing II
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -803,7 +803,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8497, {	-- Desert Survival Kits (A)
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 7079, 4 },	-- Globe of Water
 						{ "i", 19440, 4 },	-- Powerful Anti-Venom
@@ -819,7 +819,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8804, {	-- Desert Survival Kits (H)
 					["provider"] = { "i", 21378 },	-- Logistics Task Briefing I (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 7079, 4 },	-- Globe of Water
 						{ "i", 19440, 4 },	-- Powerful Anti-Venom
@@ -835,7 +835,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8856, {	-- Desert Survival Kits (A)
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 7079, 4 },	-- Globe of Water
 						{ "i", 19440, 4 },	-- Powerful Anti-Venom
@@ -853,7 +853,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
 						{ "i", 20513, 3 },	-- Abyssal Crest
@@ -861,13 +861,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20422, {	-- Twilight Cultist Medallion of Station
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				applyclassicphase(PHASE_FIVE, q(8536, {	-- Earthen Templar
 					["provider"] = { "i", 21751 },	-- Tactical Task Briefing III
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -893,7 +893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8783, {	-- Extraordinary Materials (A)
 					["provider"] = { "i", 21265 },	-- Logistics Task Briefing IX (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12655, 2 },	-- Enchanted Thorium Bar
 						{ "i", 12810, 2 },	-- Enchanted Leather
@@ -908,7 +908,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8809, {	-- Extraordinary Materials (H)
 					["provider"] = { "i", 21381 },	-- Logistics Task Briefing IX (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12655, 2 },	-- Enchanted Thorium Bar
 						{ "i", 12810, 2 },	-- Enchanted Leather
@@ -924,7 +924,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8507, {	-- Field Duty (A)
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -937,7 +937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(20808, {	-- Combat Assignment
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						LOGISTICS_ASSIGNMENT_A,
 						TACTICAL_ASSIGNMENT,
@@ -946,7 +946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8731, {	-- Field Duty (H)
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -959,7 +959,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(20808, {	-- Combat Assignment
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						LOGISTICS_ASSIGNMENT_H,
 						TACTICAL_ASSIGNMENT,
@@ -968,7 +968,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8508, {	-- Field Duty Papers (A)
 					["qg"] = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
 					["coord"] = { 33.2, 52.1, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 54,
@@ -979,7 +979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(8732, {	-- Field Duty Papers (H)
 					["qg"] = 15612,	-- Krug Skullsplit
 					["coord"] = { 52.2, 68.4, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 54,
@@ -1038,13 +1038,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 48.6, 37.9, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
 				applyclassicphase(PHASE_FIVE, q(8541, {	-- Grinding Stones for the Guard (A)
 					["provider"] = { "i", 20940 },	-- Logistics Task Briefing III (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12644, 10 },	-- Dense Grinding Stone
 						{ "i", 7966, 10 },	-- Solid Grinding Stone
@@ -1059,7 +1059,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8806, {	-- Grinding Stones for the Guard (H)
 					["provider"] = { "i", 21380 },	-- Logistics Task Briefing III (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12644, 10 },	-- Dense Grinding Stone
 						{ "i", 7966, 10 },	-- Solid Grinding Stone
@@ -1076,7 +1076,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 					["coord"] = { 81.8, 18.8, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Encrusted Silithid Object
@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8739, {	-- Hive'Ashi Scout Report
 					["provider"] = { "i", 21167 },	-- Tactical Task Briefing VIII
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1107,7 +1107,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8738, {	-- Hive'Regal Scout Report
 					["provider"] = { "i", 21166 },	-- Tactical Task Briefing VII
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1122,7 +1122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8534, {	-- Hive'Zora Scout Report
 					["provider"] = { "i", 21165 },	-- Tactical Task Briefing VI
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1137,7 +1137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8535, {	-- Hoary Templar
 					["provider"] = { "i", 20947 },	-- Tactical Task Briefing IV
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1187,7 +1187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8343,	-- Goldleaf's Discovery
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 5 },	-- Large Brilliant Shard
 						{ "i", 20514, 3 },	-- Abyssal Signet
@@ -1195,7 +1195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1203,7 +1203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
 						{ "i", 20513, 3 },	-- Abyssal Crest
@@ -1212,7 +1212,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20422, {	-- Twilight Cultist Medallion of Station
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1266,21 +1266,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8351,	-- Bor Wishes to Speak
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20515, 1 }},	-- Abyssal Scepter
 					["lvl"] = 54,
 					["groups"] = {
 						i(20602, {	-- Chest of Spoils
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20721, {	-- Band of the Cultist
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20722, {	-- Crystal Slugthrower
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20720, {	-- Dark Whisper Blade
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -1288,7 +1288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8779, {	-- Scrying Materials (A)
 					["provider"] = { "i", 21259 },	-- Logistics Task Briefing V (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12364, 1 },	-- Huge Emerald
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
@@ -1303,7 +1303,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8807, {	-- Scrying Materials (H)
 					["provider"] = { "i", 21382 },	-- Logistics Task Briefing V (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12364, 1 },	-- Huge Emerald
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
@@ -1374,24 +1374,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8349,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20514, 1 }},	-- Abyssal Signet
 					["lvl"] = 54,
 					["groups"] = {
 						i(20601, {	-- Sack of Spoils
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20695, {	-- Abyssal War Beads
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20696, {	-- Crystal Spiked Maul
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20697, {	-- Crystalline Threaded Cape
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20698, {	-- Elemental Attuned Blade
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -1402,7 +1402,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 15 },	-- Cenarion Combat Badge
 						{ "i", 20800, 20 },	-- Cenarion Logistics Badge
@@ -1413,16 +1413,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(21184, {	-- Deeprock Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21185, {	-- Earthcalm Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21186, {	-- Rockfury Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21189, {	-- Might of Cenarius
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1456,7 +1456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8275, {	-- Taking Back Silithus (A)
 					["qg"] = 15187,	-- Cenarion Emissary Jademoon
 					["coord"] = { 58.5, 47.3, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
@@ -1464,14 +1464,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8276, {	-- Taking Back Silithus (H)
 					["qg"] = 15188,	-- Cenarion Emissary Blackhoof
 					["coord"] = { 47.6, 65.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
 				applyclassicphase(PHASE_FIVE, q(8770, {	-- Target: Hive'Ashi Defenders
 					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8771, {	-- Target: Hive'Ashi Sandstalkers
 					["provider"] = { "i", 21750 },	-- Combat Task Briefing II
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1495,7 +1495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8501, {	-- Target: Hive'Ashi Stingers
 					["provider"] = { "i", 20941 },	-- Combat Task Briefing XII
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1507,7 +1507,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8502, {	-- Target: Hive'Ashi Workers
 					["provider"] = { "i", 20942 },	-- Combat Task Briefing III
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1519,7 +1519,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8774, {	-- Target: Hive'Regal Ambushers
 					["provider"] = { "i", 21252 },	-- Combat Task Briefing VIII
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8777, {	-- Target: Hive'Regal Burrowers
 					["provider"] = { "i", 21256 },	-- Combat Task Briefing XI
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1543,7 +1543,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8776, {	-- Target: Hive'Regal Slavemakers
 					["provider"] = { "i", 21255 },	-- Combat Task Briefing X
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1555,7 +1555,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8775, {	-- Target: Hive'Regal Spitfires
 					["provider"] = { "i", 21253 },	-- Combat Task Briefing IX
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1567,7 +1567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8539, {	-- Target: Hive'Zora Hive Sisters
 					["provider"] = { "i", 21249 },	-- Combat Task Briefing V
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1579,7 +1579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8773, {	-- Target: Hive'Zora Reavers
 					["provider"] = { "i", 21248 },	-- Combat Task Briefing IV
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1591,7 +1591,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8687, {	-- Target: Hive'Zora Tunnelers
 					["provider"] = { "i", 21251 },	-- Combat Task Briefing VII
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1603,7 +1603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8772, {	-- Target: Hive'Zora Waywatchers
 					["provider"] = { "i", 21250 },	-- Combat Task Briefing VI
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1617,7 +1617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Crystal Unlocking Mechanism
@@ -1652,7 +1652,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8538, {	-- The Four Dukes
 					["provider"] = { "i", 20948 },	-- Tactical Task Briefing V
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1669,13 +1669,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 15208 },	-- The Duke of Shards <Abyssal Council>
 						}),
 						i(21508, {	-- Mark of Cenarius
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
 				applyclassicphase(PHASE_FIVE, q(8778, {	-- The Ironforge Brigade Needs Explosives!
 					["provider"] = { "i", 21257 },	-- Logistics Task Briefing IV (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 15992, 10 },	-- Dense Blasting Powder
 						{ "i", 9061, 5 },	-- Goblin Rocket Fuel
@@ -1691,7 +1691,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8785, {	-- The Orgrimmar Legion Needs Mojo!
 					["provider"] = { "i", 21258 },	-- Logistics Task Briefing IV (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8152, 6 },	-- Flask of Big Mojo
 						{ "i", 8956, 8 },	-- Oil of Immolation
@@ -1708,7 +1708,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE, q(9023, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
 					["coord"] = { 52.1, 39.1, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
 					["lvl"] = 60,
 					["groups"] = {
@@ -1719,22 +1719,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 22217 },	-- Kurinnaxx's Venom Sac
 						}),
 						i(22378, {	-- Ravenholdt Slicer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22379, {	-- Shivsprocket's Shiv
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22377, {	-- The Thunderwood Poker
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22348, {	-- Doomulus Prime
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22347, {	-- Fahrad's Reloading Repeater
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22380, {	-- Simone's Cultivating Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1748,7 +1748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1124,	-- Wasteland
 					["coord"] = { 81.8, 18.8, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/8 Tortured Druid slain
@@ -1807,7 +1807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8829, {	-- The Ultimate Deception
 					["provider"] = { "i", 21514 },	-- Logistics Task Briefing XI
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12735, 3 },	-- Frayed Abomination Stitching
 						{ "i", 12753, 1 },	-- Skin of Shadow
@@ -1817,7 +1817,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 60,
 					["groups"] = {
 						i(21515, {	-- Mark of Remulos
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1834,7 +1834,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8498, {	-- Twilight Battle Orders
 					["provider"] = { "i", 20943 },	-- Tactical Task Briefing X
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1862,7 +1862,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(PHASE_FIVE, q(8740, {	-- Twilight Marauders
 					["provider"] = { "i", 20944 },	-- Tactical Task Briefing IX
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1881,7 +1881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 5 },	-- Large Brilliant Shard
 						{ "i", 20514, 3 },	-- Abyssal Signet
@@ -1890,7 +1890,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1901,13 +1901,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1126,	-- Hive in the Tower
 					["coord"] = { 81.8, 18.8, SILITHUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MOONGLADE },
 					["lvl"] = 54,
 				}),
 				applyclassicphase(PHASE_FIVE, q(8782, {	-- Uniform Supplies (A)
 					["provider"] = { "i", 21262 },	-- Logistics Task Briefing VIII (A)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14048, 2 },	-- Bolt of Runecloth
 						{ "i", 14227, 1 },	-- Ironweb Spider Silk
@@ -1922,7 +1922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_FIVE, q(8808, {	-- Uniform Supplies (H)
 					["provider"] = { "i", 21384 },	-- Logistics Task Briefing VIII (H)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14048, 2 },	-- Bolt of Runecloth
 						{ "i", 14227, 1 },	-- Ironweb Spider Silk
@@ -1956,7 +1956,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 7 },	-- Cenarion Combat Badge
 						{ "i", 20800, 4 },	-- Cenarion Logistics Badge
@@ -1966,13 +1966,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(21181, {	-- Grace of Earth
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21182, {	-- Band of Earthen Might
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21183, {	-- Earthpower Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1981,7 +1981,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 5 },	-- Cenarion Combat Badge
 						{ "i", 20800, 3 },	-- Cenarion Logistics Badge
@@ -1991,13 +1991,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(21178, {	-- Gloves of Earthen Power
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21179, {	-- Band of Earthen Wrath
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21187, {	-- Earthweave Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -2061,7 +2061,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20513, {	-- Abyssal Crest
-							["timeline"] = { "removed 4.0.3", "deleted 7.1.5" },
+							["timeline"] = { REMOVED_4_0_3, "deleted 7.1.5" },
 							["crs"] = {
 								15211,	-- Azure Templar <Abyssal Council>
 								15209,	-- Crimson Templar <Abyssal Council>
@@ -2071,61 +2071,61 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						n(15211, {	-- Azure Templar <Abyssal Council>
 							["cost"] = {{ "i", 20420, 1 }},	-- Crest of Beckoning: Water
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20654, {	-- Amethyst War Staff
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20652, {	-- Abyssal Cloth Slippers
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20653, {	-- Abyssal Plate Gauntlets
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15209, {	-- Crimson Templar <Abyssal Council>
 							["cost"] = {{ "i", 20416, 1 }},	-- Crest of Beckoning: Fire
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20657, {	-- Crystal Tipped Stiletto
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20655, {	-- Abyssal Cloth Handwraps
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20656, {	-- Abyssal Mail Sabatons
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15307, {	-- Earthen Templar <Abyssal Council>
 							["cost"] = {{ "i", 20419, 1 }},	-- Crest of Beckoning: Stone
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20663, {	-- Deep Strike Bow
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20661, {	-- Abyssal Leather Gloves
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20662, {	-- Abyssal Plate Greaves
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15212, {	-- Hoary Templar <Abyssal Council>
 							["cost"] = {{ "i", 20418, 1 }},	-- Crest of Beckoning: Thunder
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20660, {	-- Stonecutting Glaive
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20658, {	-- Abyssal Leather Boots
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20659, {	-- Abyssal Mail Handguards
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -2146,7 +2146,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20514, {	-- Abyssal Signet
-							["timeline"] = { "removed 4.0.3", "deleted 7.1.5" },
+							["timeline"] = { REMOVED_4_0_3, "deleted 7.1.5" },
 							["crs"] = {
 								15206,	-- The Duke of Cynders <Abyssal Council>
 								15207,	-- The Duke of Fathoms <Abyssal Council>
@@ -2156,64 +2156,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						n(15206, {	-- The Duke of Cynders <Abyssal Council>
 							["cost"] = {{ "i", 20432, 1 }},	-- Signet of Beckoning: Fire
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								applyclassicphase(PHASE_FIVE, i(21989, {	-- Cinder of Cynders
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								})),
 								i(20666, {	-- Hardened Steel Warhammer
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20664, {	-- Abyssal Cloth Sash
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20665, {	-- Abyssal Leather Leggings
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15207, {	-- The Duke of Fathoms <Abyssal Council>
 							["cost"] = {{ "i", 20436, 1 }},	-- Signet of Beckoning: Water
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20669, {	-- Darkstone Claymore
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20667, {	-- Abyssal Leather Belt
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20668, {	-- Abyssal Mail Legguards
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15208, {	-- The Duke of Shards <Abyssal Council>
 							["cost"] = {{ "i", 20435, 1 }},	-- Signet of Beckoning: Stone
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20672, {	-- Sparkling Crystal Wand
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20670, {	-- Abyssal Mail Clutch
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20671, {	-- Abyssal Plate Legplates
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15220, {	-- The Duke of Zephyrs <Abyssal Council>
 							["cost"] = {{ "i", 20433, 1 }},	-- Signet of Beckoning: Thunder
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20675, {	-- Soulrender
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20674, {	-- Abyssal Cloth Pants
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20673, {	-- Abyssal Plate Girdle
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -2235,7 +2235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20515, {	-- Abyssal Scepter
-							["timeline"] = { "removed 4.0.3", "deleted 7.1.5" },
+							["timeline"] = { REMOVED_4_0_3, "deleted 7.1.5" },
 							["crs"] = {
 								15205,	-- Baron Kazum <Abyssal High Council>
 								15204,	-- High Marshal Whirlaxis <Abyssal High Council>
@@ -2245,61 +2245,61 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						n(15205, {	-- Baron Kazum <Abyssal High Council>
 							["cost"] = {{ "i", 20449, 1 }},	-- Scepter of Beckoning: Stone
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20688, {	-- Earthen Guard
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20686, {	-- Abyssal Cloth Amice
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20687, {	-- Abyssal Plate Vambraces
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15204, {	-- High Marshal Whirlaxis <Abyssal High Council>
 							["cost"] = {{ "i", 20448, 1 }},	-- Scepter of Beckoning: Thunder
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20691, {	-- Windshear Cape
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20690, {	-- Abyssal Cloth Wristbands
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20689, {	-- Abyssal Leather Shoulders
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15305, {	-- Lord Skwol <Abyssal High Council>
 							["cost"] = {{ "i", 20450, 1 }},	-- Scepter of Beckoning: Water
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20685, {	-- Wavefront Necklace
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20684, {	-- Abyssal Mail Armguards
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20683, {	-- Abyssal Plate Epaulets
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 							["cost"] = {{ "i", 20447, 1 }},	-- Scepter of Beckoning: Fire
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20682, {	-- Elemental Focus Band
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20681, {	-- Abyssal Leather Bracers
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(20680, {	-- Abyssal Mail Pauldrons
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -2462,16 +2462,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 31.0, 23.6, SILITHUS },
 						{ 32.2, 17.2, SILITHUS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(18676, {	-- Sash of the Windreaver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18677, {	-- Zephyr Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
@@ -2495,7 +2495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2516,7 +2516,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(REWARDS, {
 				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
-					i(20808, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Combat Assignment
+					i(20808, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Combat Assignment
 						i(22648, {	-- Hive'Ashi Dossier
 							i(21749),	-- Combat Task Briefing I
 							i(21750),	-- Combat Task Briefing II
@@ -2648,7 +2648,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(20535),	-- Scroll: Create Signet of Beckoning (Water)
 						},
 					}),
-					i(20805, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Followup Logistics Assignment (A)
+					i(20805, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(20807),	-- Logistics Task Briefing I (A)
@@ -2659,7 +2659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21514),	-- Logistics Task Briefing XI
 						},
 					})),
-					i(21386, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Followup Logistics Assignment (H)
+					i(21386, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21378),	-- Logistics Task Briefing I (H)
@@ -2670,7 +2670,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21514),	-- Logistics Task Briefing XI
 						},
 					})),
-					i(21133, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Followup Tactical Assignment
+					i(21133, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(20945),	-- Tactical Task Briefing II
 						i(20947),	-- Tactical Task Briefing IV
@@ -2678,7 +2678,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(21167),	-- Tactical Task Briefing VIII
 						i(20943),	-- Tactical Task Briefing X
 					})),
-					i(21132, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Logistics Assignment (A)
+					i(21132, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(21257),	-- Logistics Task Briefing IV (A)
@@ -2688,7 +2688,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(20806),	-- Logistics Task Briefing X (A)
 						},
 					})),
-					i(21266, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Logistics Assignment (H)
+					i(21266, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21258),	-- Logistics Task Briefing IV (H)
@@ -2698,7 +2698,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21385),	-- Logistics Task Briefing X (H)
 						},
 					})),
-					i(20809, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Tactical Assignment
+					i(20809, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(21751),	-- Tactical Task Briefing III
 						i(20944),	-- Tactical Task Briefing IX
@@ -2868,7 +2868,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 20402 },	-- Agent of Nozdormu
 						{ "i", 20403 },	-- Proxy of Nozdormu
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						13301,	-- Hive'Ashi Ambusher
 						11722,	-- Hive'Ashi Defender

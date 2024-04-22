@@ -377,14 +377,14 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 			i(6126, {	-- Trapper's Boots [Orc]
-				["timeline"] = { "removed 4.0.3.13287" }
+				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6137, {	-- Thug Pants
 				--["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6127, {	-- Trapper's Boots [Orc]
-				["timeline"] = { "removed 4.0.3.13287" }
+				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6138, {	-- Trapper's Boots
 				--["races"] = { ORC, TAUREN, TROLL },
@@ -752,7 +752,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(6118, {	-- Squire's Pants [Dwarf]
-				["timeline"] = { "removed 4.0.3" }
+				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(23477, {	-- Squire's Pants
 				--["races"] = { DRAENEI },
@@ -1117,7 +1117,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			i(153, {	-- Primitive Kilt
-				["timeline"] = { "removed 4.0.3.13287" }
+				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(52539, {	-- Primal Pants
 				--["races"] = { DWARF },
@@ -1614,11 +1614,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	filter(SHIRTS, {
 		i(6125, {	-- Brawler's Harness
 			["description"] = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(49, {	-- Footpad's Shirt
 			["description"] = "Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(49567, {	-- Gilnean Adventurer's Shirt
 			["description"] = "New Worgen Hunters, Rogues, and Warriors start out with this shirt.",
@@ -1626,11 +1626,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		i(24143, {	-- Initiate's Shirt
 			["description"] = "Former Starter Shirt for Blood Elf Paladins",
-			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+			["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 		}),
 		i(20897, {	-- Lookout's Tunic
 			["description"] = "Former Starter Shirt for Blood Elf Rogues.",
-			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+			["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 		}),
 		i(53, {	-- Neophyte's Shirt
 			-- #if BEFORE 4.0.3
@@ -1639,56 +1639,56 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #else
 			["description"] = "Former Starter Shirt for Priests.",
 			-- #endif
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			-- #endif
 		}),
 		i(154, {	-- Primitive Mantle
 			["description"] = "Former Starter Shirt for Orc & Tauren Shamans",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(6134, {	-- Primitive Mantle
 			["description"] = "Former Starter Shirt for Troll Shamans",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(23473, {	-- Recruit's Shirt
 			["description"] = "Former Starter Shirt for Draenei Warriors and Mages",
-			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+			["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 		}),
 		i(6120, {	-- Recruit's Shirt
 			["description"] = "Former Starter Shirt for Night Elf Warriors",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(148, {	-- Rugged Trapper's Shirt
 			["description"] = "Former Starter Shirt for Dwarf & Night Elf Hunters",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(23345, {	-- Scout's Shirt
 			["description"] = "Former Starter Shirt for Draenei Hunters and Shamans",
-			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+			["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 		}),
 		i(6117, {	-- Squire's Shirt
 			["description"] = "Former Starter Shirt for Dwarf Paladins",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(23476, {	-- Squire's Shirt
 			["description"] = "Former Starter Shirt for Draenei Paladins",
-			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+			["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 		}),
 		i(2105, {	-- Thug Shirt
 			["description"] = "Former Starter Shirt for Undead & Orc Rogues",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(127, {	-- Trapper's Shirt
 			["description"] = "Former Starter Shirt for Orc, Tauren & Troll Hunters",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(6136, {	-- Trapper's Shirt
 			["description"] = "Former Starter Shirt for Troll Rogues",
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(20901, {	-- Warder's Shirt
 			["description"] = "Former Starter Shirt for Blood Elf Hunters",
-			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+			["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 		}),
 	}),
 	n(WEAPONS, {	-- These were used and changed so many times on different classes, that I leave them here.

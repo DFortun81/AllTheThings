@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6626, {	-- A Host of Evil
 					["qg"] = 12866,	-- Myriam Moonsinger
 					["coord"] = { 49,94, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 				}),
 				q(6521, {	-- An Unholy Alliance (2/2) (Before Wrathgate)
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 6522,	-- An Unholy Alliance (1/2) (Before Wrathgate)
 					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
@@ -45,13 +45,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 12865,	-- Ambassador Malcin
 						}),
 						i(17039, {	-- Skullbreaker
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17042, {	-- Nail Spitter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17043, {	-- Zealot's Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
 					["sourceQuest"] = 14352,	-- An Unholy Alliance (1/2) (After Wrathgate)
 					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
@@ -70,13 +70,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 12865,	-- Ambassador Malcin
 						}),
 						i(17039, {	-- Skullbreaker
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17042, {	-- Nail Spitter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17043, {	-- Zealot's Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3341, {	-- Bring the End
 					["qg"] = 2308,	-- Andrew Brownell
 					["coord"] = { 74, 32.8, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 					["groups"] = {
@@ -110,17 +110,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 10420 },	-- Skull of the Coldbringer
 						}),
 						i(10823, {	-- Vanquisher's Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10824, {	-- Amberglow Talisman
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(3636, {	-- Bring the Light
 					["qg"] = 1284,	-- Archbishop Benedictus
 					["coord"] = { 39.6, 27.4, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
@@ -128,10 +128,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "n", 7358 },	-- Amnennar the Coldbringer
 						}),
 						i(10823, {	-- Vanquisher's Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10824, {	-- Amberglow Talisman
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 8516 },	-- Belnistrasz
 						{ "i", 10682 },	-- Belnistrasz's Oathstone
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 32,
 				}),
 				q(27019, {	-- Scourge of the Downs (After Cataclysm)
@@ -274,7 +274,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["maps"] = { SOUTHERN_BARRENS },
 				-- #endif
 				["description"] = "This is a rare that is not always present.",
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #if BEFORE 6.0.2
 			n(7355, {	-- Tuten'kash

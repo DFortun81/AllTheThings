@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 						["sourceQuest"] = 1109,	-- Going, Going, Guano!
 						["coord"] = { 48.82, 69.28, UNDERCITY },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 30,
 						["groups"] = {
@@ -132,7 +132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 3980,	-- Raleigh the Devout
 						["sourceQuest"] = 1052,	-- Down the Scarlet Path (2/2)
 						["coord"] = { 51.5, 58.4, HILLSBRAD_FOOTHILLS },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 34,
 						["groups"] = {
@@ -149,23 +149,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "n", 3974 },	-- Houndmaster Loksey
 							}),
 							i(6830, {	-- Bonebiter
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(6831, {	-- Black Menace
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(6829, {	-- Sword of Serenity
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(11262, {	-- Orb of Lorica
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
 					q(14355, {	-- Into The Scarlet Monastery
 						["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
 						["coord"] = { 56.1, 92.1, UNDERCITY },
-						["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+						["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						-- #if AFTER TBC
 						["lvl"] = 30,
@@ -186,13 +186,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "n", 3974 },	-- Houndmaster Loksey
 							}),
 							i(6802, {	-- Sword of Omen
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(6803, {	-- Prophetic Cane
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(10711, {	-- Dragon's Blood Necklace
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -216,13 +216,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "n", 3974 },	-- Houndmaster Loksey
 							}),
 							i(6802, {	-- Sword of Omen
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(6803, {	-- Prophetic Cane
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(10711, {	-- Dragon's Blood Necklace
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -354,7 +354,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							q(1051, {	-- Vorrel's Revenge
 								["qg"] = 3981,	-- Vorrel Sengutz
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 								["maps"] = { ALTERAC_MOUNTAINS },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 25,
@@ -365,13 +365,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["cr"] = 3984,	-- Nancy Vishas
 									}),
 									i(4643, {	-- Grimsteel Cape
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 									i(7750, {	-- Mantle of Woe
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 									i(7751, {	-- Vorrel's Boots
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 								},
 							}),
@@ -465,7 +465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(1049, {	-- Compendium of the Fallen
 								["qg"] = 3978,	-- Sage Truthseeker
 								["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 								["races"] = exclude(UNDEAD, HORDE_ONLY),
 								["lvl"] = 28,
 								["groups"] = {
@@ -473,13 +473,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "i", 5535 },	-- Compendium of the Fallen
 									}),
 									i(17508, {	-- Forcestone Buckler
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 									i(7749, {	-- Omega Orb
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 									i(7747, {	-- Vile Protector
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 								},
 							}),
@@ -494,7 +494,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(1050, {	-- Mythology of the Titans
 								["qg"] = 3979,	-- Librarian Mae Paledust <Explorers' League>
 								["coord"] = { 75.0, 12.5, IRONFORGE },
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 28,
 								["groups"] = {
@@ -502,7 +502,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "i", 5536 },	-- Mythology of the Titans
 									}),
 									i(7746, {	-- Explorers' League Commendation
-										["timeline"] = { "removed 4.0.3" },
+										["timeline"] = { REMOVED_4_0_3 },
 									}),
 								},
 							}),
@@ -510,7 +510,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["qg"] = 6548,	-- Magus Tirth
 								["sourceQuest"] = 1950,	-- Get the Scoop
 								["coord"] = { 478.2, 75.8, THOUSAND_NEEDLES },
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 								["maps"] = { DUSTWALLOW_MARSH },
 								["classes"] = { MAGE },
 								["lvl"] = 30,
@@ -548,7 +548,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["qg"] = 4488,	-- Parqual Fintallas
 								["sourceQuest"] = 1159,	-- Test of Lore (4/6)
 								["coord"] = { 57.8, 65.4, UNDERCITY },
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 28,
 								["groups"] = {
@@ -635,14 +635,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["groups"] = {
 										i(7146, {	-- The Scarlet Key
 											["description"] = "Found in the chest after killing Arcanist Doan.",
-											["timeline"] = { "removed 4.0.3" },
+											["timeline"] = { REMOVED_4_0_3 },
 										}),
 										i(208485, {	-- The Scarlet Key
 											["description"] = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
 											["timeline"] = { ADDED_10_1_7 },
 										}),
 									},
-									["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
+									["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 									-- #if AFTER 10.1.7
 									["questID"] = 77213,
 									["isWeekly"] = true,

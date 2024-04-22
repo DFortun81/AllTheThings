@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(64, {	-- Talrendis Point, Azshara
 					["cr"] = 12577,	-- Jarrodenus <Hippogryph Master>
 					["coord"] = { 11.8, 77.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(683, {	-- Valormok, Azshara
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3382, {	-- A Crew Under Fire
 					["qg"] = 8380,	-- Captain Vanessa Beltis
 					["coord"] = { 53.0, 87.8, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 48,
 				}),
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5536, {	-- A Land Filled with Hatred
 					["qg"] = 11548,	-- Loth'atu
 					["coord"] = { 11.4, 78.2, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/6 Haldarr Satyr slain
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
 					["coord"] = { 54.6, 75.6, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3511,	-- The Name of the Beast (3/3)
 					["coord"] = { 60.8, 66.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/20 Crystallized Azsharite
@@ -452,7 +452,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 10643 },	-- Sealed Letter to Ag'tor
 					},
 					["coord"] = { 75, 34.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 				}),
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8576,	-- Ag'tor Bloodfist
 					["sourceQuest"] = 3504,	-- Betrayed (1/4)
 					["coord"] = { 22.2, 51.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -476,7 +476,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 151286 },	-- Kaldorei Tome of Summoning
 					["sourceQuest"] = 3505,	-- Betrayed (2/4)
 					["coord"] = { 59.5, 31.3, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -497,15 +497,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3506,	-- Betrayed (3/4)
 					["coord"] = { 22.2, 51.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
 						i(10709, {	-- Pyrestone Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11120, {	-- Belgrom's Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -523,7 +523,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7783,	-- Loramus Thalipedes
 					["sourceQuest"] = 3141,	-- Loramus
 					["coord"] = { 60.8, 66.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				applyclassicphase(PHASE_FOUR, q(8254, {	-- Cenarion Aid
@@ -535,7 +535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 						["coord"] = { 35.6, 87.6, ORGRIMMAR },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				})),
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8151,	-- The Hunter's Charm
 					["coord"] = { 42.2, 42.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["groups"] = {
@@ -571,7 +571,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -593,7 +593,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -604,7 +604,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -742,7 +742,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 9362,	-- Warlord Krellian
 					["coord"] = { 29.6, 40.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 60,
 					["groups"] = {
@@ -905,14 +905,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
 					["coord"] = { 55.6, 34, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(3601, {	-- Kim'jael Indeed!
 					["qg"] = 8420,	-- Kim'jael
 					["coord"] = { 53.4, 21.8, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kim'Jael's Compass
@@ -940,7 +940,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(10830, {	-- M73 Frag Grenade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -948,7 +948,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8420,	-- Kim'jael
 					["sourceQuest"] = 3601,	-- Kim'jael Indeed!
 					["coord"] = { 53.4, 21.8, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- 0/1 Some Rune
@@ -990,7 +990,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7783,	-- Loramus Thalipedes
 					["sourceQuest"] = 2744,	-- The Demon Hunter
 					["coord"] = { 60.8, 66.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(3562, {	-- Magatha's Payment to Jediga
@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3518,	-- Delivery to Magatha
 					["coord"] = { 70.2, 30.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -1031,7 +1031,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ 85.6, 14.0, UNDERCITY },
 						},
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8250,	-- Magecraft
 					["coord"] = { 29.6, 40.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3503, {	-- Meeting with the Master
 					["qg"] = 8395,	-- Sanath Lim-yo
 					["coord"] = { 28.0, 50.0, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -1149,7 +1149,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8254,	-- Cenarion Aid
 					["coord"] = { 42.2, 42.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1366,7 +1366,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3421, {	-- Return Trip
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
 					["coord"] = { 26.4, 46.2, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -1484,7 +1484,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5535, {	-- Spiritual Unrest
 					["qg"] = 11548,	-- Loth'atu
 					["coord"] = { 11.4, 78.2, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/6 Highborne Apparition slain
@@ -1498,7 +1498,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3517, {	-- Stealing Knowledge
 					["qg"] = 8587,	-- Jediga
 					["coord"] = { 22.4, 51.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
@@ -1647,7 +1647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3602,	-- Azsharite
 					["coord"] = { 60.8, 66.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 45,
 				}),
@@ -1685,7 +1685,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ 57.6, 88.6, THUNDER_BLUFF },
 						},
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				})),
@@ -1693,7 +1693,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8255,	-- Of Coursers We Know
 					["coord"] = { 42.2, 42.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 7972, 1 }},	-- Ichor of Undeath
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
@@ -1702,14 +1702,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7783,	-- Loramus Thalipedes
 					["sourceQuest"] = 3508,	-- Breaking the Ward
 					["coord"] = { 60.8, 66.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(3510, {	-- The Name of the Beast (2/3)
 					["qg"] = 6134,	-- Lord Arkkoroc
 					["sourceQuest"] = 3509,	-- The Name of the Beast (1/3)
 					["coord"] = { 77.2, 42.8, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hetaera's Beaten Head
@@ -1737,7 +1737,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3510,	-- The Name of the Beast (2/3)
 					["coord"] = { 77.2, 42.8, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(14190, {	-- The Perfect Prism
@@ -1761,7 +1761,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8251,	-- Magic Dust
 					["coord"] = { 29.6, 40.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1891,7 +1891,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9362, {	-- Warlord Krellian
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 60,
 					["groups"] = {
@@ -1949,7 +1949,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8153,	-- Courser Antlers
 					["coord"] = { 42.2, 42.6, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3561,	-- Delivery to Archmage Xylem
 					["coord"] = { 29.2, 40.2, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -2046,13 +2046,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 77.0, 24.2, AZSHARA },
 						{ 80.0, 24.2, AZSHARA },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(18673, {	-- Avalanchion's Stony Hide
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18674, {	-- Hardened Stone Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
@@ -2084,7 +2084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(17054, {	-- Joonho's Mercy
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2106,14 +2106,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 56.8, 28.6, AZSHARA },
 						{ 59.4, 31.4, AZSHARA },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(6652, {	-- Master Feardred
 					["coords"] = {
 						{ 61.8, 25.6, AZSHARA },
 						{ 65.8, 17.6, AZSHARA },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(6646, {	-- Monnos the Elder
 					["coords"] = {
@@ -2128,7 +2128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 56.4, 87.8, AZSHARA },
 						{ 59.6, 89.0, AZSHARA },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(107477, {	-- N.U.T.Z
 					["coord"] = { 44, 75.6, AZSHARA },
@@ -2186,19 +2186,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 					["coord"] = { 45.2, 90.8, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(15751, {	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15729, {	-- Pattern: Chimeric Gloves (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				n(14301, {	-- Brinna Valanaar <Bowyer>
 					["coord"] = { 12.0, 78.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
@@ -2206,7 +2206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(8678, {	-- Jubie Gadgetspring <Engineering Supplier>
 					["coord"] = { 45.2, 90.8, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10607, {	-- Schematic: Deepdive Helmet (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainer
@@ -2306,7 +2306,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(15763, {	-- Pattern: Blue Dragonscale Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 6146,	-- Cliff Breaker
 					["coords"] = {
@@ -2332,23 +2332,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(14473, {	-- Pattern: Ghostweave Belt
-					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
+					["timeline"] = { REMOVED_4_0_3 },	-- Learned from trainer
 					["cr"] = 7864,	-- Lingering Highborne
 				}),
 				i(14477, {	-- Pattern: Ghostweave Gloves
-					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
+					["timeline"] = { REMOVED_4_0_3 },	-- Learned from trainer
 					["cr"] = 7864,	-- Lingering Highborne
 				}),
 				i(15753, {	-- Pattern: Stormshroud Armor (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 6138,	-- Arkkoran Oracle
 				}),
 				i(15764, {	-- Pattern: Stormshroud Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 6144,	-- Son of Arkkoroc
 				}),
 				i(15728, {	-- Pattern: Wicked Leather Bracers (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
+					["timeline"] = { REMOVED_4_0_3 },	-- Learned from trainer
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
 				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)

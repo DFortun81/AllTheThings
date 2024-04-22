@@ -334,7 +334,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(41792, {	-- Design: Deft Monarch Topaz
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(37667),	-- The Fleshshaper
 							-- #if AFTER 7.3.5

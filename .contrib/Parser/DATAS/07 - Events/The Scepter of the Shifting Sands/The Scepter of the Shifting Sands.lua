@@ -20,7 +20,7 @@ THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 	},
 });
 root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
-	applyclassicphase(PHASE_FIVE, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
+	applyclassicphase(PHASE_FIVE, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {
 		["maps"] = {
 			CAVERNS_OF_TIME,
 			TANARIS,
@@ -63,13 +63,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["groups"] = {
 						ach(416, {	-- Scarab Lord (Achievement)
 							["sourceQuest"] = 8743,	-- Bang a Gong!
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						title(33, {	-- Scarab Lord Crieve
-							["timeline"] = { "added 2.0.3.28000", "removed 4.0.3" },	-- Added in Burning Crusade Prepatch
+							["timeline"] = { "added 2.0.3.28000", REMOVED_4_0_3 },	-- Added in Burning Crusade Prepatch
 						}),
 						i(21176, {	-- Black Qiraji Battle Tank (MOUNT!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
 							["timeline"] = { "added 7.3.5.10000", "removed 7.3.5.10001" },	-- when it's added, it's already removed because it's only given to players who already have the original removed
@@ -485,7 +485,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["lvl"] = 60,
 					["groups"] = {
 						ach(5533, {	-- Veteran of the Shifting Sands
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- Added in Cataclysm Prepatch
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },	-- Added in Cataclysm Prepatch
 						}),
 						i(21523),	-- Fang of Korialstrasz
 						i(21522),	-- Shadowsong's Sorrow

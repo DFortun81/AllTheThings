@@ -1551,7 +1551,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Ice Deflector",
-					["timeline"] = { "removed 4.0.3", "timewalking 9.1.0" },
+					["timeline"] = { REMOVED_4_0_3, "timewalking 9.1.0" },
 					["recipeID"] = 3957,
 				},
 				{
@@ -1643,7 +1643,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Tranquil Mechanical Yeti",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 26011,
 				},
 				{
@@ -1856,12 +1856,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Goggles",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24356,
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Lens",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24357,
 				}),
 				{
@@ -1936,7 +1936,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Flawless Arcanite Rifle",
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 					["recipeID"] = 19833,
 				},
 				{

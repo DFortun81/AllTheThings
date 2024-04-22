@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.8, 34.6, WINTERSPRING },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
 					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8461, {	-- Deadwood of the North
 					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.8, 8.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(21317),	-- Helm of the Pathfinder
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["coord"] = { 50.9, 85.0, FELWOOD },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["coord"] = { 64.8, 8.2, FELWOOD },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11554,	-- Grazle
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["coord"] = { 50.9, 85.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(28521, {	-- Speak to Salfa
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 8461,	-- Deadwood of the North
 					["coord"] = { 64.8, 8.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(28362, {	-- Stupid Drizle!
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				},
 				q(28364, {	-- The Chieftain's Key
@@ -335,14 +335,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11554,	-- Grazle
 					["altQuests"] = { 6131 },	-- Timbermaw Ally (old version, deprecated)
 					["coord"] = { 50.9, 85.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(21311, {	-- Earth Warder's Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(21312, {	-- Belt of the Den Watcher
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8464, {	-- Winterfall Activity
 					["qg"] = 11556,	-- Salfa
 					["coord"] = { 27.8, 34.6, WINTERSPRING },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/8 Winterfall Shaman slain
@@ -391,7 +391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8471, {	-- Winterfall Ritual Totem
 					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
 					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10738,	-- High Chief Winterfall
 						7440,	-- Winterfall Den Watcher

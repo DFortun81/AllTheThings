@@ -60,27 +60,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 13699,	-- Selendra
 						["coord"] = { 26.9, 77.7, DESOLACE },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Princess Theradras slain
 							["provider"] = { "n", 12201 },	-- Princess Theradras
 						}),
 						i(17705, {	-- Thrash Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17743, {	-- Resurgence Rod
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17753, {	-- Verdant Keeper's Aim
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
 				q(7044, {	-- Legends of Maraudon
 					["qg"] = 13697,	-- Cavindra
 					["coord"] = { 32.1, 64.0, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
 					["groups"] = {
 						objective(1, {	-- 0/1 Celebrian Diamond
@@ -120,7 +120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					["description"] = "This quest becomes available after you defeat Princess Theradras",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
 				}),
 				q(27698, {	-- Servants of Theradras
@@ -145,7 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
 						["coord"] = { 39.2, 86.3, ORGRIMMAR },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
 					["groups"] = {
 						objective(1, {	-- 0/10 Shadowshard Fragment
@@ -156,10 +156,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(17773, {	-- Prodigious Shadowshard Pendant
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17772, {	-- Zealous Shadowshard Pendant
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 17781 },	-- The Pariah's Instructions
 					},
 					["coord"] = { 50.5, 86.7, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
 					["groups"] = {
 						-- #if BEFORE 4.0.3
@@ -228,42 +228,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #endif
 						i(17774, {	-- Mark of the Chosen
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(7046, {	-- The Scepter of Celebras
 					["qg"] = 13716,	-- Celebras the Redeemed
 					["sourceQuest"] = 7044,	-- Legends of Maraudon
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
 					["groups"] = {
 						i(17191, {	-- Scepter of Celebras
 							["description"] = "This item is used to open the portal to the Inner Falls just after Celebras the Cursed in Maraudon.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(7028, {	-- Twisted Evils
 					["qg"] = 13656,	-- Willow <Twilight's Hammer>
 					["coord"] = { 62.2, 39.63, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
 					["groups"] = {
 						objective(1, {	-- 0/15 Theradric Crystal Carving
 							["provider"] = { "i", 17684 },	-- Theradric Crystal Carving
 						}),
 						i(17776, {	-- Sprightring Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17779, {	-- Hulkstone Pauldrons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17775, {	-- Acumen Robes
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17777, {	-- Relentless Chain
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -276,7 +276,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 11823,	-- Vark Battlescar
 						["coord"] = { 23.2, 70.3, DESOLACE },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
 					["groups"] = {
 						-- #if BEFORE 4.0.3
@@ -292,13 +292,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #endif
 						i(17770, {	-- Branchclaw Gauntlets
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17778, {	-- Sagebrush Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17768, {	-- Woodseed Hoop
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},

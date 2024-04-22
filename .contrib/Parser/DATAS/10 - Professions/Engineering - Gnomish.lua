@@ -158,7 +158,7 @@ profession(ENGINEERING, {
 					["sourceQuest"] = 3643,	-- Show Your Work
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ENGINEERING,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -173,7 +173,7 @@ profession(ENGINEERING, {
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ENGINEERING,
 					["repeatable"] = true,
 					["lvl"] = 30,
@@ -185,7 +185,7 @@ profession(ENGINEERING, {
 			n(REWARDS, {
 				i(11423, {	-- Gnome Engineer's Renewal Gift
 					["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(10603),	-- Schematic: Catseye Ultra Goggles (RECIPE!)
 						i(11827),	-- Schematic: Lil' Smoky (RECIPE!)

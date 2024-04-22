@@ -927,7 +927,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
 					["recipeID"] = 22813
 				}),
 				{
@@ -947,7 +947,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Black Silk Pack",
 					["recipeID"] = 6695,
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 				},
 				{
 					["name"] = "Bottomless Bag",
@@ -1188,7 +1188,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
-					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
 					["recipeID"] = 24091,
 				}),
 				{
@@ -1345,7 +1345,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of Winter Night",
-					["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 					["recipeID"] = 18436
 				},
 				{
@@ -1596,7 +1596,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
-					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
 					["recipeID"] = 24092,
 				}),
 				{
@@ -1704,7 +1704,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Boots",
-					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
 					["recipeID"] = 24093,
 				}),
 				{
@@ -6141,7 +6141,7 @@ itemrecipe("Pattern: Tuxedo Shirt", 10321, 12085);
 itemrecipe("Pattern: Tuxedo Pants", 10323, 12089);
 itemrecipe("Pattern: White Wedding Dress", 10325, 12091);
 itemrecipe("Pattern: Tuxedo Jacket", 10326, 12093);
-itemrecipe("Pattern: Shadoweave Mask", 10463, 12086, "removed 4.0.3");
+itemrecipe("Pattern: Shadoweave Mask", 10463, 12086, REMOVED_4_0_3);
 itemrecipe("Pattern: Black Swashbuckler's Shirt", 10728, 3873);
 itemrecipe("Pattern: Frostweave Tunic", 14466, 18403);
 itemrecipe("Pattern: Frostweave Robe", 14467, 18404);

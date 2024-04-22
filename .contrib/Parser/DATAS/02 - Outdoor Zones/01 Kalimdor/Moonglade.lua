@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26, {	-- A Lesson to Learn [A]
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["coord"] = { 35.2, 8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 16,
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27, {	-- A Lesson to Learn [H]
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 16,
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5527, {	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL, SILITHUS },
 					["lvl"] = 56,
 					["groups"] = {
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 16,
 					["groups"] = {
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(1066),	-- Aquatic Form
 						-- #endif
 						i(16608, {	-- Aquarius Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				},
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11802,  -- Dendrite Starblaze
 					["sourceQuest"] = 5929,  -- Great Bear Spirit [A]
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11802,  -- Dendrite Starblaze
 					["sourceQuest"] = 5930,  -- Great Bear Spirit [H]
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["sourceQuest"] = 5931,	-- Back to Darnassus
 					["coord"] = { 35.2, 8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["sourceQuest"] = 5932,	-- Back to Thunder Bluff
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -212,14 +212,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 10,
 				},
 				q(5923, {	-- Heeding the Call [Darnassus]
 					["qg"] = 4218,	-- Denatharion <Druid Trainer>
 					["coord"] = { 34.8, 7.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 21.4, 51.4, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5925, {	-- Heeding the Call [Teldrassil]
 					["qg"] = 3602,	-- Kal <Druid Trainer>
 					["coord"] = { 56, 61.6, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
@@ -252,7 +252,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5926, {	-- Heeding the Call [Thunder Bluff]
 					["qg"] = 6746,	-- Innkeeper Pala <Innkeeper>
 					["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5927, {	-- Heeding the Call [Orgrimmar]
 					["qg"] = 6929,	-- Innkeeper Gryshka <Innkeeper>
 					["coord"] = { 54.2, 68.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5928, {	-- Heeding the Call [Mulgore]
 					["qg"] = 3064,	-- Gennia Runetotem <Druid Trainer>
 					["coord"] = { 48.4, 59.6, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5925,   -- Heeding the Call [Teldrassil]
 					},
 					["coord"] = { 35.2, 8.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5928,   -- Heeding the Call [Mulgore]
 					},
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5925,   -- Heeding the Call [Teldrassil]
 					},
 					["coord"] = { 35.2, 8.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 				}),
@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5928,   -- Heeding the Call [Mulgore]
 					},
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 				}),
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 14,
 					["groups"] = {
@@ -399,7 +399,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
 					["sourceQuest"] = 6761,	-- The New Frontier (2/2) [Darnassus]
 					["coord"] = { 35.2, 8.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -411,7 +411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1018,   -- The New Frontier [Orgrimmar]
 					},
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -431,7 +431,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 5527,	-- A Reliquary of Purity
 					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL },
 					["lvl"] = 56,
 					["groups"] = {
@@ -443,10 +443,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(18535, {	-- Milli's Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18536, {	-- Milli's Lexicon
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1047,   -- The New Frontier [Darnassus]
 					},
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1047,   -- The New Frontier [Darnassus]
 					},
 					["coord"] = { 31.6, 67, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -499,7 +499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1019,   -- The New Frontier [Ironforge]
 					},
 					["coord"] = { 36.4, 39.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -511,7 +511,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1047,   -- The New Frontier (1/2) [Darnassus]
 					},
 					["coord"] = { 34.8, 8.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1004,   -- The New Frontier [Undercity]
 					},
 					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -533,7 +533,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1000,   -- The New Frontier [Thunder Bluff]
 					},
 					["coord"] = { 68.8, 48.4, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -544,7 +544,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1004,   -- The New Frontier [Undercity]
 					},
 					["coord"] = { 46.6, 64.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 6121,	-- Lessons Anew [A]
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -569,7 +569,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 6121,	-- Lessons Anew [H]
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
 					["lvl"] = 16,
 					["groups"] = {
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11799,	-- Tajarri
 					["sourceQuest"] = 29,	-- Trial of the Lake [A]
 					["coord"] = { 36.4, 40.2, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -658,7 +658,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11799,	-- Tajarri
 					["sourceQuest"] = 28,	-- Trial of the Lake [H]
 					["coord"] = { 36.4, 40.2, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -687,14 +687,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11939,	-- Umber
 					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["coord"] = { 44.88, 35.6, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						i(18400, {	-- Ring of Living Stone
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18402, {	-- Glowing Crystal Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11939,	-- Umber
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["coord"] = { 44.88, 35.6, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 				}),
 				q(1124, {	-- Wasteland
@@ -715,7 +715,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6762,	-- Rabine Saturna [A]
 					},
 					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 				}),
 			}),

@@ -94,7 +94,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stormshroud Shoulders",
-						["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "timewalking 9.1" },
+						["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
 						["recipeID"] = 19090,
 						["requireSkill"] = 10658,
 					},
@@ -111,13 +111,13 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					{
 						["name"] = "Living Breastplate",
-						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 						["recipeID"] = 19095,
 						["requireSkill"] = 10658,
 					},
 					{
 						["name"] = "Stormshroud Armor",
-						["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "timewalking 9.1" },
+						["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
 						["recipeID"] = 19079,
 						["requireSkill"] = 10658,
 					},
@@ -139,7 +139,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stormshroud Gloves",
-						["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "timewalking 9.1" },
+						["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
 						["recipeID"] = 26279,
 						["requireSkill"] = 10658,
 					},
@@ -162,7 +162,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					{
 						["name"] = "Living Leggings",
-						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 						["recipeID"] = 19078,
 						["requireSkill"] = 10658,
 					},
@@ -173,7 +173,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Volcanic Leggings",
-						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 						["recipeID"] = 19059,
 						["requireSkill"] = 10658,
 					},
@@ -185,7 +185,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["name"] = "Shifting Cloak",
-						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 						["recipeID"] = 22928,
 						["requireSkill"] = 10658,
 					}),

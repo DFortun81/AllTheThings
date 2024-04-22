@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(48, {	-- Bloodvenom Post, Felwood
 					["cr"] = 11900,	-- Brakkar <Wind Rider Master>
 					["coord"] = { 34.4, 53.8, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(166, {	-- Emerald Sanctuary, Felwood
@@ -194,14 +194,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(11514, {	-- Fel Creep
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["description"] = "In order for this to drop while Herbing, you must have the Cenarion Beacon in your bags.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			}),
 			prof(MINING, {
 				i(11513, {	-- Tainted Vitriol
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["description"] = "In order for this to drop while Mining, you must have the Cenarion Beacon in your bags.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			}),
 			-- #endif
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 5165,	-- Dousing the Flames of Protection
 					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/1 Moora slain
@@ -240,13 +240,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 9517,	-- Shadow Lord Fel'dan
 						}),
 						i(15707, {	-- Brantwood Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15708, {	-- Blight Leather Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15709, {	-- Gearforge Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6162, {	-- A Husband's Last Battle
 					["qg"] = 9620,	-- Dreka'Sur
 					["coord"] = { 34.8, 52.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5202, {	-- A Strange Red Key
 					["provider"] = { "i", 13140 },	-- Blood Red Key
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7118,	-- Jaedenar Darkweaver
 						7114,	-- Jaedenar Enforcer
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 86.0, 15.6, UNDERCITY },
 					},
 					["altQuests"] = { 8420 },	-- Hot and Itchy
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14256, 1 } },	-- Felcloth
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
@@ -333,15 +333,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4442,	-- Purified!
 					["coord"] = { 49.4, 14.4, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
 						i(11873, {	-- Ethereal Mist Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11874, {	-- Clouddrift Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -349,7 +349,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
 					["sourceQuest"] = 4084,	-- Silver Heart
 					["coord"] = { 51.2, 81.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS, UNGORO_CRATER },
 					["lvl"] = 47,
 					["groups"] = {
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if NOT ANYCLASSIC
 						-- CRIEVE NOTE: This item is part of the quest objective above, not needed in Classic. If anywhere, it would ONLY be linked to this one quest. That said, I don't think this is necessary.
 						i(11522, {	-- Silver Totem of Aquementas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #endif
 					},
@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
 					["coord"] = { 65.8, 43.8, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 				}),
 				{	-- Cleansing Felwood
@@ -467,7 +467,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["qg"] = 9529,	-- Maybess Riverbreeze
 						["coord"] = { 46.8, 83, FELWOOD },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/15 Blood Amber
@@ -498,7 +498,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 5155,	-- Forces of Jaedenar
 					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/1 Corrupt Moonwell Water
@@ -513,7 +513,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4119, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 164885 },	-- Corrupted Night Dragon
 					["coord"] = { 40.7, 78.3, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4447, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 173324 },	-- Corrupted Night Dragon
 					["coord"] = { 50.6, 30.4, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -535,7 +535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4448, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 174608 },	-- Corrupted Night Dragon
 					["coord"] = { 42.5, 13.9, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4462, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 174684 },	-- Corrupted Night Dragon
 					["coord"] = { 35.1, 59, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -558,7 +558,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9996,	-- Winna Hazzard
 					["sourceQuest"] = 4504,	-- Well of Corruption
 					["coord"] = { 34.2, 52.4, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
@@ -575,7 +575,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2523, {	-- Corrupted Songflower
 					["provider"] = { "o", 171942 },	-- Corrupted Songflower
 					["coord"] = { 48.3, 75.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -583,7 +583,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2878, {	-- Corrupted Songflower
 					["provider"] = { "o", 174594 },	-- Corrupted Songflower
 					["coord"] = { 63.3, 22.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3363, {	-- Corrupted Songflower
 					["provider"] = { "o", 174595 },	-- Corrupted Songflower
 					["coord"] = { 63.9, 6.1, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -599,7 +599,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4113, {	-- Corrupted Songflower
 					["provider"] = { "o", 164886 },	-- Corrupted Songflower
 					["coord"] = { 52.9, 87.8, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -607,7 +607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4114, {	-- Corrupted Songflower
 					["provider"] = { "o", 174596 },	-- Corrupted Songflower
 					["coord"] = { 55.8, 10.5, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4116, {	-- Corrupted Songflower
 					["provider"] = { "o", 174597 },	-- Corrupted Songflower
 					["coord"] = { 50.6, 13.9, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -623,7 +623,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4118, {	-- Corrupted Songflower
 					["provider"] = { "o", 174598 },	-- Corrupted Songflower
 					["coord"] = { 34.4, 52.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4401, {	-- Corrupted Songflower
 					["provider"] = { "o", 171939 },	-- Corrupted Songflower
 					["coord"] = { 46, 85.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4464, {	-- Corrupted Songflower
 					["provider"] = { "o", 174712 },	-- Corrupted Songflower
 					["coord"] = { 40.2, 56.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4465, {	-- Corrupted Songflower
 					["provider"] = { "o", 174713 },	-- Corrupted Songflower
 					["coord"] = { 40.1, 44.4, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -655,7 +655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4117, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 					["coord"] = { 40.2, 85.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -666,7 +666,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4443, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 173284 },	-- Corrupted Whipper Root
 					["coord"] = { 50.6, 18.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -677,7 +677,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4444, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174605 },	-- Corrupted Whipper Root
 					["coord"] = { 49.4, 12.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4445, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174606 },	-- Corrupted Whipper Root
 					["coord"] = { 40.7, 19.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -699,7 +699,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4446, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174607 },	-- Corrupted Whipper Root
 					["coord"] = { 43, 46.9, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -710,7 +710,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4461, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174686 },	-- Corrupted Whipper Root
 					["coord"] = { 34.1, 60.3, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -721,7 +721,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(996, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174600 },	-- Corrupted Windblossom
 					["coord"] = { 57.5, 20, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -732,7 +732,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(998, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174599 },	-- Corrupted Windblossom
 					["coord"] = { 55.8, 7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -743,7 +743,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1514, {	-- Corrupted Windblossom
 					["provider"] = { "o", 173327 },	-- Corrupted Windblossom
 					["coord"] = { 55.2, 23.5, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -754,7 +754,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4115, {	-- Corrupted Windblossom
 					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
 					["coord"] = { 50, 80, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -765,7 +765,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4221, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174604 },	-- Corrupted Windblossom
 					["coord"] = { 39, 59.1, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -776,7 +776,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4222, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174603 },	-- Corrupted Windblossom
 					["coord"] = { 34.4, 48.8, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4343, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174602 },	-- Corrupted Windblossom
 					["coord"] = { 38.8, 21.9, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -798,7 +798,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4403, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174601 },	-- Corrupted Windblossom
 					["coord"] = { 45.4, 18.3, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -809,7 +809,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4466, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174708 },	-- Corrupted Windblossom
 					["coord"] = { 36.5, 61.9, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -820,7 +820,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4467, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174709 },	-- Corrupted Windblossom
 					["coord"] = { 44.8, 41.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -917,7 +917,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 5159,	-- Cleansed Water Returns to Felwood
 					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- Extinguish the Brazier of Pain
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9116,	-- Eridan Bluewind
 					["sourceQuest"] = 939,	-- Flute of Xavaric
 					["coord"] = { 51.4, 81.5, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
@@ -1031,7 +1031,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuest"] = 7601,	-- What Niby Commands
 					["coord"] = { 41.6, 44.8, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA, BLASTED_LANDS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 50,
@@ -1058,7 +1058,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 11668 },	-- Flute of Xavaric
 					["sourceQuest"] = 4906,	-- Further Corruption
 					["coord"] = { 39.6, 22.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10648,	-- Xavaric
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5155, {	-- Forces of Jaedenar
 					["qg"] = 10922,	-- Greta Mosshoof
 					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/4 Jaedenar Hound slain
@@ -1107,7 +1107,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9116,	-- Eridan Bluewind
 					["sourceQuest"] = 4421,	-- Corruption of the Jadefire
 					["coord"] = { 51.4, 81.5, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 10648 },	-- Xavaric
 						}),
 						i(11875, {	-- Breezecloud Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1135,16 +1135,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4882,	-- Guarding Secrets (1/2)
 					["coord"] = { 34.6, 52.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
 						i(15796, {	-- Seaspray Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15797, {	-- Shining Armplates
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1172,7 +1172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["altQuests"] = { 8419 },	-- An Imp's Request
 					["coord"] = { 41.6, 45.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14256, 1 } },	-- Felcloth
 					["classes"] = { WARLOCK },
 					["lvl"] = 50,
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuest"] = 7602,	-- Flawless Fel Essence
 					["coord"] = { 41.6, 45.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1249,7 +1249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(1122),	-- Inferno / Summon Infernal
 						-- #endif
 						i(18762, {	-- Shard of the Green Flame
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1274,7 +1274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 5084,	-- Falling to Corruption
 					["coord"] = { 60.2, 5.9, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(28229, {	-- Nature and Nurture
@@ -1344,14 +1344,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
 					["sourceQuest"] = 4441,	-- Felbound Ancients
 					["coord"] = { 51.2, 81.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
 						{
 							["itemID"] = 11445,	-- Flute of the Ancients
 							["description"] = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						},
 					},
 				}),
@@ -1403,14 +1403,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11016,	-- Captured Arko'narin
 					["sourceQuest"] = 5202,	-- A Strange Red Key
 					["coord"] = { 36.2, 55.4, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 				}),
 				q(5204, {	-- Retribution of the Light
 					["qg"] = 11019,	-- Jessir Moonbow
 					["sourceQuest"] = 5203,	-- Rescue from Jaedenar
 					["coord"] = { 51.3, 82.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rakaiah slain
@@ -1441,14 +1441,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1456,7 +1456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 5886,	-- Salve via Disenchanting (1/2)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1472,14 +1472,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1487,7 +1487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4112,	-- Salve via Disenchanting (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
@@ -1495,7 +1495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1503,14 +1503,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1518,7 +1518,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 5884,	-- Salve via Gathering (1/2)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = ALLIANCE_ONLY,
@@ -1526,7 +1526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1534,14 +1534,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1549,7 +1549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 5889,	-- Salve via Gathering (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
@@ -1557,7 +1557,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1565,13 +1565,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1579,14 +1579,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 5882,	-- Salve via Hunting (1/2)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1594,13 +1594,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1608,14 +1608,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 5887,	-- Salve via Hunting (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1623,14 +1623,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1638,7 +1638,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 5883,	-- Salve via Mining (1/2)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = ALLIANCE_ONLY,
@@ -1646,7 +1646,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1654,14 +1654,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1669,7 +1669,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 5888,	-- Salve via Mining (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = HORDE_ONLY,
@@ -1677,7 +1677,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1685,14 +1685,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1700,7 +1700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 5885,	-- Salve via Skinning (1/2)
 					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = ALLIANCE_ONLY,
@@ -1708,7 +1708,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1716,14 +1716,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1731,7 +1731,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 5890,	-- Salve via Skinning (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
@@ -1739,7 +1739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1780,7 +1780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 5157,	-- Collection of the Corrupt Water
 					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["lvl"] = 48,
 				}),
@@ -1794,7 +1794,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
 					["sourceQuest"] = 3942,	-- Linken's Memory
 					["coord"] = { 51.2, 81.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- 0/11 Silvery Claws
@@ -1898,7 +1898,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4421, {	-- The Corruption of the Jadefire
 					["qg"] = 9116,	-- Eridan Bluewind
 					["coord"] = { 51.4, 81.5, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
@@ -1997,14 +1997,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 5204,	-- Retribution of the Light
 					["coord"] = { 38.4, 50.4, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 					["groups"] = {
 						i(15706, {	-- Hunt Tracker Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15705, {	-- Tidecrest Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2041,7 +2041,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						8420,	-- Hot and Itchy
 					},
 					["coord"] = { 41.6, 45.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2090,7 +2090,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9516,	-- Lord Banehollow
 					["sourceQuest"] = 7623,	-- Lord Banehollow
 					["coord"] = { 36.0, 44.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 18802, 1 }},	-- Shadowy Potion
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -2105,7 +2105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5156, {	-- Verifying the Corruption
 					["qg"] = 10921,	-- Taronn Redfeather
 					["coord"] = { 50.9, 81.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/2 Entropic Beast slain
@@ -2149,7 +2149,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9996,	-- Winna Hazzard
 					["sourceQuest"] = 6605,	-- A Strange One
 					["coord"] = { 34.2, 52.4, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
@@ -2165,7 +2165,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7601, {	-- What Niby Commands
 					["qg"] = 14469,	-- Niby the Almighty
 					["coord"] = { 41.4, 44.8, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 				}),
@@ -2182,7 +2182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4521, {	-- Wild Guardians (1/3)
 					["qg"] = 10306,	-- Trull Failbane
 					["coord"] = { 34.6, 52.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
@@ -2199,7 +2199,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10306,	-- Trull Failbane
 					["sourceQuest"] = 4521,	-- Wild Guardians (1/3)
 					["coord"] = { 34.6, 52.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
@@ -2213,7 +2213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10306,	-- Trull Failbane
 					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
 					["coord"] = { 34.6, 52.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
@@ -2252,7 +2252,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9516,	-- Lord Banehollow
 					["sourceQuest"] = 7624,	-- Ulathek the Traitor
 					["coord"] = { 36.0, 44.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 18802, 1 },	-- Shadowy Potion
@@ -2416,7 +2416,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(11512, {	-- Patch of Tainted Skin
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["description"] = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						8956,	-- Angerclaw Bear
 						8957,	-- Angerclaw Grizzly
@@ -2433,7 +2433,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(2806, {	-- Bale <General Goods>
 					["coord"] = { 34.8, 53.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)
@@ -2484,11 +2484,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14522, {	-- Ur'dan
 					["sourceQuest"] = 7625,	-- Xorothian Stardust
 					["coord"] = { 36.2, 44.6, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(18687, {	-- Xorothian Stardust
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = 1500000,	-- 150g
 						}),
 					},
@@ -2496,7 +2496,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(13140, {	-- Blood Red Key
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						7118,	-- Jaedendar Darkweaver
 						7114,	-- Jaedendar Enforcer
@@ -2508,7 +2508,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(11515, {	-- Corrupted Soul Shard
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["description"] = "In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 				i(21377, {	-- Deadwood Headdress Feather
@@ -2535,7 +2535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15752, {	-- Pattern: Living Leggings (RECIPE!)
 					["cr"] = 7158,	-- Deadwood Shaman
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 62.6, 12.6, FELWOOD },
 						{ 61.6, 7.4, FELWOOD },
@@ -2553,7 +2553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(15744, {	-- Pattern: Wicked Leather Headband (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
+					["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
 					["cr"] = 7107,	-- Jadefire Trickster
 				}),
 				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)

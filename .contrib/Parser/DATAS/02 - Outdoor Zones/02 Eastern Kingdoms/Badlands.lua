@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(719, {	-- A Dwarf and His Tools
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
 					["coord"] = { 53.4, 43.2, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4978, {	-- Ryedol's Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(720, {	-- A Sign of Hope (1/2)
 					["provider"] = { "o", 2868 },	-- Crumpled Map
 					["coord"] = { 53.0, 34.1, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
 					["sourceQuest"] = 720,	-- A Sign of Hope (1/2)
 					["coord"] = { 53.4, 43.4, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2909,	-- Hammertoe Grez
 					["sourceQuest"] = 721,	-- A Sign of Hope (2/2)
 					["coord"] = { 37.94, 10.53, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ULDAMAN, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2916,	-- Historian Karnik
 					["sourceQuest"] = 726,	-- Passing Word of a Threat (2/2)
 					["coord"] = { 77.5, 11.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 2745,	-- Ambassador Infernus
 						}),
 						i(4987, {	-- Dwarf Captain's Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2258, {	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["coord"] = { 2.6, 46, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
 					["groups"] = {
@@ -412,7 +412,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
 					["coord"] = { 2.6, 46, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ALCHEMY,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(703, {	-- Barbecued Buzzard Wings
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3404, 4 } },	-- Buzzard Wing
 					["lvl"] = 33,
 					["groups"] = {
@@ -458,7 +458,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(782, {	-- Broken Alliances (1/2)
 					["qg"] = 1068,	-- Gorn
 					["coord"] = { 2.8, 45.8, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1068,	-- Gorn
 					["sourceQuest"] = 782,	-- Broken Alliances (1/2)
 					["coord"] = { 2.8, 45.8, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -485,30 +485,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2759,	-- Hematus
 						}),
 						i(11193, {	-- Blazewind Breastplate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11196, {	-- Mindburst Medallion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11194, {	-- Prismscale Hauberk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11195, {	-- Warforged Chestplate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(713, {	-- Coolant Heads Prevail
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["coord"] = { 26.0, 44.9, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3829, 1 } },	-- Frost Oil
 					["lvl"] = 35,
 				}),
 				q(1419, {	-- Coyote Thieves
 					["qg"] = 5394,	-- Neeka Bloodscar
 					["coord"] = { 6.4, 47, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -545,7 +545,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3821, {	-- Dreadmaul Rock
 					["qg"] = 9082,	-- Thal'trak Proudtusk
 					["coord"] = { 3.4, 48, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(706, {	-- Fiery Blaze Enchantments
 					["qg"] = 2860,	-- Sigrun Ironhew
 					["coord"] = { 53.8, 43.4, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -597,7 +597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if BEFORE 4.0.3
 							["description"] = "Save this for an heirloom weapon in Wrath!",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -620,7 +620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2817,	-- Rigglefuzz
 					["sourceQuest"] = 705,	-- Pearl Diving
 					["coord"] = { 42.39, 52.93, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ENGINEERING,
 					["lvl"] = 30,
 					["groups"] = {
@@ -644,11 +644,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 736,	-- The Star, the Hand and the Heart [H]
 						["coord"] = { 53.7, 54.5, UNDERCITY },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						i(4984, {	-- Skull of Impending Doom
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["sourceQuest"] = 713,	-- Coolant Heads Prevail
 					["coord"] = { 26.0, 44.9, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4389, 1 } },	-- Gyrochronatom
 					["lvl"] = 35,
 				}),
@@ -770,7 +770,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4618,	-- Martek the Exiled
 					["sourceQuest"] = 1106,	-- Martek the Exiled
 					["coord"] = { 42.22, 52.69, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/10 Indurium Flake
@@ -876,7 +876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["coord"] = { 25.8, 44.2, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 929, 1 },	-- Healing Potion
 						{ "i", 3823, 1 },	-- Lesser Invisibility Potion
@@ -884,17 +884,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 					["groups"] = {
 						i(4624, {	-- Recipe: Lesser Stoneshield Potion (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4623, {	-- Lesser Stoneshield Potion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(718, {	-- Mirages
 					["qg"] = 2860,	-- Sigrun Ironhew
 					["coord"] = { 53.8, 43.3, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -911,7 +911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2875 },	-- Battered Dwarven Skeleton
 					["sourceQuest"] = 738,	-- Find Agmond
 					["coord"] = { 50.89, 62.4, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2893 },	-- Stonevault Bonesnapper
 						}),
 						i(4983, {	-- Rock Pulverizer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -940,15 +940,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4618,	-- Martek the Exiled
 					["sourceQuest"] = 1108,	-- Indurium
 					["coord"] = { 42.22, 52.69, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["lvl"] = 28,
 					["groups"] = {
 						i(6729, {	-- Fizzle's Zippy Lighter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6732, {	-- Gnomish Mechanic's Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -966,7 +966,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 724,	-- Prospect of Faith (2/2)
 					["coord"] = { 77.5, 11.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
@@ -974,23 +974,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2918,	-- Advisor Belgrum
 					["sourceQuest"] = 725,	-- Passing Word of a Threat (1/2)
 					["coord"] = { 77.3, 9.7, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(705, {	-- Pearl Diving
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["cost"] = { { "i", 4611, 9 } },	-- Blue Pearl
 					["lvl"] = 30,
 					["groups"] = {
 						i(4086, {	-- Flash Rifle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5248, {	-- Flash Wand
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(4852),	-- Flash Bomb
@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2418, {	-- Power Stones
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ULDAMAN },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1033,13 +1033,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(9522, {	-- Energized Stone Circle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10358, {	-- Duracin Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10359, {	-- Everlast Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1050,7 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 722,	-- Amulet of Secrets
 					["coord"] = { 37.94, 10.53, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
@@ -1061,14 +1061,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 723,	-- Prospect of Faith (1/2)
 					["coord"] = { 53.4, 43.2, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(1360, {	-- Reclaimed Treasures
 					["qg"] = 6294,	-- Krom Stoutarm
 					["coord"] = { 74.2, 9.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
@@ -1085,7 +1085,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2342, {	-- Reclaimed Treasures
 					["qg"] = 5651,	-- Patrick Garrett
 					["coord"] = { 62.3, 48.6, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { LOCH_MODAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1106,7 +1106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1418,	-- Neeka Bloodscar
 					["coord"] = { 6.5, 47.2, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -1180,7 +1180,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2860,	-- Sigrun Ironhew
 					["sourceQuest"] = 718,	-- Mirages
 					["coord"] = { 53.8, 43.3, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -1199,10 +1199,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4652, {	-- Salbac Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4653, {	-- Ironheel Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1210,7 +1210,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2933 },	-- Seal of the Earth
 					["allianceQuestData"] = q(779),	-- Seal of the Earth [A]
 					["hordeQuestData"] = q(795),	-- Seal of the Earth [H]
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 40,
 					-- #if BEFORE 4.0.3
@@ -1266,7 +1266,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(709, {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 51.4, 76.9, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tablet of Ryun'eh
@@ -1277,7 +1277,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 39.3, 18.8, BADLANDS },
 						}),
 						i(4746, {	-- Doomsayer's Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1288,19 +1288,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						712,	-- Study of the Elements: Rock (3/3)
 					},
 					["coord"] = { 25.8, 44.4, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2868, 1 } },	-- Patterned Bronze Bracers
 					["lvl"] = 35,
 					["groups"] = {
 						i(4979, {	-- Enchanted Stonecloth Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(710, {	-- Study of the Elements: Rock (1/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["coord"] = { 25.8, 45, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/10 Small Stone Shard
@@ -1313,7 +1313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["sourceQuest"] = 710,	-- Study of the Elements: Rock (1/3)
 					["coord"] = { 25.8, 45, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/3 Large Stone Slab
@@ -1326,7 +1326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["sourceQuest"] = 711,	-- Study of the Elements: Rock (2/3)
 					["coord"] = { 25.8, 45, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/5 Bracers of Rock Binding
@@ -1489,7 +1489,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2785,	-- Theldurin the Lost
 					["sourceQuest"] = 687,	-- Theldurin the Lost
 					["coord"] = { 51.4, 76.9, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Torn Scroll Fragment
@@ -1596,7 +1596,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 728,	-- To the Undercity for Yagyin's Digest
 						["coord"] = { 53.7, 54.5, UNDERCITY },
 					}),
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ALTERAC_MOUNTAINS, DUSTWALLOW_MARSH, STRANGLETHORN_VALE },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1783,7 +1783,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						712,	-- Study of the Elements: Rock (3/3)
 					},
 					["coord"] = { 25.8, 45, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(777, {	-- This Is Going to Be Hard (2/3)
@@ -1793,14 +1793,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 734,	-- This Is Going to Be Hard (1/3)
 					["coord"] = { 25.8, 44.4, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(778, {	-- This Is Going to Be Hard (3/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["sourceQuest"] = 777,	-- This Is Going to Be Hard (2/3)
 					["coord"] = { 25.8, 45, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lotwil's Shackles of Elemental Binding
@@ -1809,7 +1809,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2919,	-- Fam'retor Guardian
 						}),
 						i(2820, {	-- Nifty Stopwatch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1827,7 +1827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 709,	-- Solution to Doom
 					["coord"] = { 51.4, 76.9, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1850,7 +1850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 709,	-- Solution to Doom
 					["coord"] = { 51.4, 76.9, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1858,7 +1858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2888,	-- Garek
 					["sourceQuest"] = 718,	-- Mirages
 					["coord"] = { 61.8, 54.2, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1872,7 +1872,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2888,	-- Garek
 					["sourceQuest"] = 732,	-- Tremors of the Earth (1/2)
 					["coord"] = { 61.8, 54.2, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1885,16 +1885,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2759,	-- Hematus
 						}),
 						i(11193, {	-- Blazewind Breastplate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11194, {	-- Prismscale Hauberk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11195, {	-- Warforged Chestplate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11196, {	-- Mindburst Medallion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1919,7 +1919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["sourceQuest"] = 2258,	-- Badlands Reagent Run
 					["coord"] = { 2.6, 46, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ULDAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -1935,7 +1935,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9439, {	-- Unclaimed Baggage
 					["qg"] = 17097,	-- Advisor Sarophas
 					["coord"] = { 5.8, 48, BADLANDS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
 					["groups"] = {
@@ -2166,7 +2166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(9179, {	-- Jazzrik <Blacksmithing Supplies>
 					["coord"] = { 42.4, 52.5, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(10858),	-- Plans: Solid Iron Maul (RECIPE!)
@@ -2177,7 +2177,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ZONE_DROPS, {
 				i(2621, {	-- Cowl of Necromancy
 					["cr"] = 2740,	-- Shadowforge Darkweaver
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 53.6, 31.8, BADLANDS },
@@ -2202,7 +2202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1521, {	-- Lumbering Ogre Axe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 2719,	-- Dustbelcher Lord
 					["coords"] = {
@@ -2222,7 +2222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(4616, {	-- Ryedol's Lucky Pick
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["collectible"] = false,	-- This is a quest item where you have to be on the quest to get it, keep it, and not turn it in for several years to get the transmog for.
 					["crs"] = {
 						2740,	-- Shadowforge Darkweaver
@@ -2231,7 +2231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2624, {	-- Thinking Cap
-					["timeline"] = { "removed 4.0.3", "added 8.0.0" },
+					["timeline"] = { REMOVED_4_0_3, "added 8.0.0" },
 					["cr"] = 2718,	-- Dustbelcher Shaman
 				}),
 			}),

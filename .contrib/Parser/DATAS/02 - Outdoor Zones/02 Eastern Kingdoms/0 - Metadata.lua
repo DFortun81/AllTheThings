@@ -230,7 +230,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(5518, bubbleDownSelf({["timeline"] = { ADDED_4_0_3_LAUNCH } }, {	-- Stood in the Fire

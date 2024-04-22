@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7831, {	-- A Donation of Mageweave
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7835, {	-- A Donation of Mageweave
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -397,7 +397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7824, {	-- A Donation of Runecloth
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7836, {	-- A Donation of Runecloth
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7827, {	-- A Donation of Silk
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -421,7 +421,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7834, {	-- A Donation of Silk
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7826, {	-- A Donation of Wool
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7833, {	-- A Donation of Wool
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 4.0.1
 					["cost"] = { { "i", 15997, 200 } },	-- Thorium Shells
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 52,
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maxReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
@@ -535,7 +535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["sourceQuest"] = 7836,	-- A Donation of Runecloth
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maxReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
@@ -633,7 +633,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1472,	-- Devourer of Souls [Undercity]
 					},
 					["coord"] = { 47.2, 46.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
 					["lvl"] = 20,
@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4300, {	-- Bone-Bladed Weapons
 					["qg"] = 8659,	-- Jes'rimon
 					["coord"] = { 55.6, 34.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -669,13 +669,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(11862, {	-- White Bone Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11863, {	-- White Bone Shredder
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11864, {	-- White Bone Spear
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -686,7 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 2756,	-- The Old Ways
 					["coord"] = { 80.4, 23.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["races"] = HORDE_ONLY,
@@ -735,18 +735,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7010,	-- Zilzibin Drumlore
 					["sourceQuest"] = 4509,	-- Calm Before the Storm (1/2)
 					["coord"] = { 56.4, 46.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11870, {	-- Oblivion Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11871, {	-- Snarkshaw Spaulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11872, {	-- Eschewal Greaves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -793,7 +793,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1506,	-- Gan'rul's Summons
 					["altQuests"] = { 1473 },	-- Creature of the Void [Undercity]
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUROTAR },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -830,7 +830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 2460,	-- The Shattered Salute
 					["coord"] = { 43, 53.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -893,7 +893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6467,	-- Mennet Carkad
 					["altQuests"] = { 2380 },	-- To Orgrimmar!
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1011,7 +1011,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5726, {	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -1029,7 +1029,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5726,	-- Hidden Enemies (1/5)
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 2478,	-- Mission: Possible But Not Probable
 					["coord"] = { 43, 53.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -1166,7 +1166,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["sourceQuest"] = 1944,	-- Waters of Xavian
 					["coord"] = { 38.6, 86.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["classes"] = { MAGE },
 					["races"] = { UNDEAD, TROLL },
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14086, {	-- Learn to Ride in Orgrimmar
 					["provider"] = { "i", 46880 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1267,7 +1267,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(65601, {	-- Love Hurts
 					["qg"] = 5909,	-- Cazul
 					["coord"] = { 47.2, 46.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -1284,7 +1284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7010,	-- Zilzibin Drumlore
 					["sourceQuest"] = 32,	-- Rise of the Silithid (H)
 					["coord"] = { 55.2, 55.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -1333,7 +1333,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5910,	-- Zankaja
 					["sourceQuest"] = 1508,	-- Blind Cazul
 					["coord"] = { 37, 59.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
 					["lvl"] = 20,
@@ -1417,7 +1417,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10794, {	-- Rogues of the Shattered Hand
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
 					["coord"] = { 79.4, 52, SILVERMOON_CITY },
-					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
 					["coord"] = { 85, 10.2, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
@@ -1606,7 +1606,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 65610,	-- Wish You Were Here
 					["altQuests"] = { 65597 },	-- The Binding (Incubus) [Undercity]
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -1619,7 +1619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(713),	-- Summon Incubus
 						-- #endif
 						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1629,7 +1629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1512,	-- Love's Gift
 					["altQuests"] = { 1474 },	-- The Binding (Succubus) [Undercity]
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -1642,7 +1642,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(712),	-- Summon Succubus
 						-- #endif
 						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1501,	-- Creature of the Void [Orgrimmar]
 					["altQuests"] = { 1471 },	-- The Binding (Voidwalker) [Undercity]
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
@@ -1706,7 +1706,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2756, {	-- The Old Ways
 					["qg"] = 7792,	-- Aturk the Anvil
 					["coord"] = { 80.6, 23.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["races"] = HORDE_ONLY,
@@ -1717,7 +1717,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 					["groups"] = {
 						recipe(9957, {	-- Orcish War Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1725,7 +1725,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6446,	-- Therzok
 					["sourceQuest"] = 1859,	-- Therzok
 					["coord"] = { 42.74, 53.52, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
@@ -1742,7 +1742,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6446,	-- Therzok
 					["sourceQuest"] = 1963,	-- The Shattered Hand (1/2)
 					["coord"] = { 42.74, 53.52, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1757,7 +1757,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 6466,	-- Gamon
 						}),
 						i(7298, {	-- Blade of Cunning
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1767,7 +1767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 10794,	-- Rogues of the Shattered Hand
 					-- #endif
 					["coord"] = { 43, 53.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -1806,7 +1806,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3170,	-- Kaplak
 					["altQuests"] = { 2378 },	-- Find the Shattered Hand
 					["coord"] = { 51.98, 43.70, DUROTAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["sourceQuest"] = 1943,	-- Speak with Deino
 					["coord"] = { 38.6, 86.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
@@ -1976,7 +1976,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3363,	-- Magar <Tailoring Trainer>
 					["sourceQuest"] = 65601,	-- Love Hurts
 					["coord"] = { 63.6, 50.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -2047,7 +2047,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3402,	-- Zando'zan
 					["sourceQuest"] = 2379,	-- Zando'zan
 					["coord"] = { 42.8, 53, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
@@ -2094,7 +2094,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2380,	-- To Orgrimmar!
 					},
 					["coord"] = { 43, 53.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
@@ -3075,7 +3075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(3410, {	-- Jin'sora <Bow Merchant>
 					["coord"] = { 77.8, 38.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
@@ -3276,7 +3276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(34043, {	-- Lady Palanseer <Jewelcrafting Quartermaster>
-					["timeline"] = { "added 3.0.2.8970", "removed 4.0.3" },
+					["timeline"] = { "added 3.0.2.8970", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
 						-- #if BEFORE 4.0.3
@@ -3284,7 +3284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+]
 						-- #endif
 						i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+]
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						-- These move to Tiffany in Dalaran
@@ -3293,7 +3293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(41559),	-- Design: Mystic Sun Crystal
 						-- #endif
 						i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+]
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						-- These move to Tiffany in Dalaran

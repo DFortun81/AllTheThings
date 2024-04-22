@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(124, {	-- A Baying of Gnolls
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 5534 },	-- Parker's Lunch
 					},
 					["coord"] = { 26.7, 44.3, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 1083 },	-- Glyph of Azora
 					},
 					["coord"] = { 65.2, 69.8, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 2281,	-- Redridge Rendezvous
 					["coord"] = { 28.2, 52.2, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 16,
@@ -195,14 +195,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(7907, {	-- Certificate of Thievery
 							["description"] = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(34, {	-- An Unwelcome Guest
 					["qg"] = 342,	-- Martie Jainrose
 					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -252,7 +252,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1070,	-- Deputy Feldon
 					["sourceQuest"] = 244,	-- Encroaching Gnolls
 					["coord"] = { 30.8, 60, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(128, {	-- Blackrock Bounty
 					["qg"] = 903,	-- Guard Howe
 					["coord"] = { 31.5, 58.0, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(20, {	-- Blackrock Menace
 					["qg"] = 382,	-- Marshal Marris
 					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 130,	-- Visit the Herbalist
 					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -442,7 +442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(116, {	-- Dry Times
 					["qg"] = 346,	-- Barkeep Daniels
 					["coord"] = { 26.5, 44.2, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = {
 						DUSKWOOD,
 						ELWYNN_FOREST,
@@ -459,17 +459,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					["groups"] = {
 						i(1270, {	-- Finely Woven Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10456, {	-- A Bulging Coin Purse
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(244, {	-- Encroaching Gnolls
 					["qg"] = 464,	-- Guard Parker
 					["coord"] = { 17.3, 69.5, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 				}),
@@ -553,7 +553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3741, {	-- Hilary's Necklace
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 12,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hilary's Necklace
@@ -604,7 +604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2358, {	-- Horns of Nez'ra
 					["qg"] = 7009,	-- Arantir <The Hand of Chaos>
 					["coord"] = { 28.4, 52.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
+					["timeline"] = { "created 1.11.1", "added 3.0.1", REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -626,7 +626,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(126, {	-- Howling in the Hills
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -636,10 +636,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 518,	-- Yowler
 						}),
 						i(1319, {	-- Ring of Iron Will
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2910, {	-- Gold Militia Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -783,7 +783,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 94,	-- A Watchful Eye
 					["coord"] = { 84.3, 46.9, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -794,7 +794,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 144,	-- Messenger to Westfall (2/2)
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
@@ -805,7 +805,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 145,	-- Messenger to Darkshire (1/2)
 					["coord"] = { 72.0, 46.6, DUSKWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
@@ -815,7 +815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 1293 },	-- The State of Lakeshire
 					},
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -826,7 +826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 120,	-- Messenger to Stormwind (1/2)
 					["coord"] = { 63.8, 75.4, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -837,7 +837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 121,	-- Messenger to Stormwind (2/2)
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -848,25 +848,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 143,	-- Messenger to Westfall (1/2)
 					["coord"] = { 56.2, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(219, {	-- Missing In Action
 					["qg"] = 349,	-- Corporal Keeshan
 					["coord"] = { 28.4, 12.6, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
 						i(3555, {	-- Robe of Solomon
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1275, {	-- Deputy Chain Coat
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3431, {	-- Bone-studded Leather
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -880,7 +880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 84.5, 47.1, REDRIDGE_MOUNTAINS },
 						{ 65.2, 69.8, ELWYNN_FOREST },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -890,14 +890,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 397,	-- Morganth
 						}),
 						i(5274, {	-- Rose Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(150, {	-- Murloc Poachers
 					["qg"] = 381,	-- Dockmaster Baren
 					["coord"] = { 27.7, 47.3, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 1468, 8 },	-- Murloc Fin
 					},
@@ -905,7 +905,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						i(3567, {	-- Dwarven Fishing Pole
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -982,7 +982,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(92, {	-- Redridge Goulash
 					["qg"] = 343,	-- Chef Breanna
 					["coord"] = { 22.7, 44.0, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 2296, 5 },	-- Great Goretusk Snout
 						{ "i", 1080, 5 },	-- Tough Condor Meat
@@ -1017,7 +1017,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 341,	-- Foreman Oslow
 					["sourceQuest"] = 345,	-- Ink Supplies (Elwynn Forest)
 					["coord"] = { 32.2, 48.6, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2798, 5 } },	-- Rethban Ore
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 1284 },	-- Crate of Horseshoes
 					},
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -1074,7 +1074,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(127, {	-- Selling Fish
 					["qg"] = 381,	-- Dockmaster Baren
 					["coord"] = { 27.8, 47.2, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(3663),	-- Murloc Fin Soup
 						i(1322, {	-- Fishliver Oil
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
 					},
@@ -1100,7 +1100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(115, {	-- Shadow Magic
 					["qg"] = 382,	-- Marshal Marris
 					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -1161,7 +1161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(91, {	-- Solomon's Law
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 29.6, 44.3, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -1255,7 +1255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(19, {	-- Tharil'zun
 					["qg"] = 382,	-- Marshal Marris
 					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -1265,10 +1265,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 486,	-- Tharil'zun
 						}),
 						i(1276, {	-- Fire Hardened Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6093, {	-- Orc Crusher
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1289,7 +1289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(89, {	-- The Everstill Bridge
 					["qg"] = 341,	-- Foreman Oslow
 					["coord"] = { 32.2, 48.6, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1314,13 +1314,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(1310, {	-- Smith's Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1303, {	-- Bridgeworker's Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1304, {	-- Riding Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1352,7 +1352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(125, {	-- The Lost Tools
 					["qg"] = 341,	-- Foreman Oslow
 					["coord"] = { 32.2, 48.7, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1372,7 +1372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 1283 },	-- Verner's Notes
 					},
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -1387,7 +1387,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1698,	-- Yorus Barleybrew
 					-- #endif
 					["coord"] = { 26.6, 44.8, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
@@ -1399,13 +1399,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
 					["coord"] = { 26.6, 44.8, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(6970, {	-- Furen's Favor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1414,7 +1414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 1962 },	-- Glowing Shadowhide Pendant
 						{ "i", 1956 },	-- Faded Shadowhide Pendant
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -1504,7 +1504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(122, {	-- Underbelly Scales
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 					["groups"] = {
@@ -1516,10 +1516,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(6092, {	-- Black Whelp Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1302, {	-- Black Whelp Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1537,14 +1537,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 464,	-- Guard Parker
 					["sourceQuest"] = 129,	-- A Free Lunch
 					["coord"] = { 17.3, 69.5, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
 				q(169, {	-- Wanted: Gath'Ilzogg
 					["provider"] = { "o", 60 },	-- Wanted: Gath'Ilzogg
 					["coord"] = { 29.6, 46.2, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1558,7 +1558,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(180, {	-- Wanted: Lieutenant Fangore
 					["provider"] = { "o", 47 },	-- Wanted: Lieutenant Fangore
 					["coord"] = { 26.7, 46.5, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1637,7 +1637,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 48.6, 35.6, DARNASSUS },
 						{ 78.8, 45.6, STORMWIND_CITY },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1646,7 +1646,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10371, {	-- Yorus Barleybrew (Draenei)
 					["qg"] = 16771,	-- Ahonan
 					["coord"] = { 55.0, 83.4, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1704,7 +1704,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3229, {	-- Tarantula Silk Sash
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1714,7 +1714,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 10.1.7
 					["groups"] = {
 						i(3229, {	-- Tarantula Silk Sash
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 					-- #endif
@@ -1761,10 +1761,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3231, {	-- Cutthroat Pauldrons
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2058, {	-- Kazon's Maul
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1820,10 +1820,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4446, {	-- Blackvenom Blade
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(4447, {	-- Cloak of Night
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1910,7 +1910,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 					["coord"] = { 88.2, 71.6, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4795, {	-- Bear Bracers
@@ -2007,7 +2007,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(1446, {	-- Blackrock Boots
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 440,	-- Blackrock Grunt
 					["coords"] = {
@@ -2025,7 +2025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1455, {	-- Blackrock Champion's Axe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						435,	-- Blackrock Champion
@@ -2058,7 +2058,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1448, {	-- Blackrock Gauntlets
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						485,	-- Blackrock Outrunner
@@ -2079,7 +2079,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1296, {	-- Blackrock Mace
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						437,	-- Blackrock Renegade
@@ -2101,7 +2101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1445, {	-- Blackrock Pauldrons
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 39.4, 14.8, REDRIDGE_MOUNTAINS },
 						{ 35.4, 8.6, REDRIDGE_MOUNTAINS },
@@ -2121,14 +2121,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1287, {	-- Giant Tarantula Fang
 					["cr"] = 442,	-- Tarantula
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 28.4, 78.8, REDRIDGE_MOUNTAINS },
 						{ 15.2, 76.2, REDRIDGE_MOUNTAINS },
 					},
 				}),
 				i(1962, {	-- Glowing Shadowhide Pendant
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						703,	-- Lieutenant Fangore
@@ -2151,7 +2151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1213, {	-- Gnoll Kindred Bracers
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["cr"] = 712,	-- Redridge Thrasher
 					-- #if BEFORE 4.0.3
 					["coords"] = {
@@ -2167,7 +2167,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1214, {	-- Gnoll Punisher
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["crs"] = {
 						14271,	-- Ribchaser
 						426,	-- Redridge Brute
@@ -2189,7 +2189,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1440, {	-- Gnoll Skull Basher
 					["cr"] = 446,	-- Redridge Basher
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 38.2, 31.6, REDRIDGE_MOUNTAINS },
 						{ 27.2, 36.8, REDRIDGE_MOUNTAINS },
@@ -2200,7 +2200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1211, {	-- Gnoll War Harness
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["cr"] = 423,	-- Redridge Mongrel
 					["coords"] = {
 						{ 30.6, 62.6, REDRIDGE_MOUNTAINS },
@@ -2217,7 +2217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1218, {	-- Heavy Gnoll War Club
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 445,	-- Redridge Alpha
 					["coords"] = {
@@ -2240,7 +2240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1299, {	-- Lesser Belt of the Spire
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 436,	-- Blackrock Shadowcaster
 					["coords"] = {
@@ -2257,7 +2257,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1300, {	-- Lesser Staff of the Spire
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 436,	-- Blackrock Shadowcaster
 					["coords"] = {
@@ -2274,7 +2274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1220, {	-- Lupine Axe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 580,	-- Redridge Drudger
 					["coords"] = {
 						{ 23.0, 19.0, REDRIDGE_MOUNTAINS },
@@ -2283,7 +2283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1406, {	-- Pearl-encrusted Spear / Pearl-Encrusted Spear
 					["cr"] = 544,	-- Murloc Nightcrawler
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 81.0, 58.4, REDRIDGE_MOUNTAINS },
@@ -2313,7 +2313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1219, {	-- Redridge Machete
 					["cr"] = 424,	-- Redridge Poacher
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 44.0, 72.8, REDRIDGE_MOUNTAINS },
@@ -2330,7 +2330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 580,	-- Redridge Drudger
 				}),
 				i(1462, {	-- Ring of the Shadow
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER 10.1.7
 					["isBounty"] = true,
 					-- #endif
@@ -2343,7 +2343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1473, {	-- Riverside Staff
 					["cr"] = 545,	-- Murloc Tidecaller
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 56.4, 49.0, REDRIDGE_MOUNTAINS },
@@ -2357,7 +2357,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2566, {	-- Sacrificial Robes
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 397,	-- Morganth
 					["coord"] = { 80.0, 49.6, REDRIDGE_MOUNTAINS },
@@ -2371,7 +2371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1469, {	-- Scimitar of Atun
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						14270,	-- Squiddic
@@ -2391,7 +2391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2175, {	-- Shadowhide Battle Axe
 					["cr"] = 568,	-- Shadowhide Warrior
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 81.8, 38.2, REDRIDGE_MOUNTAINS },
@@ -2407,7 +2407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1457, {	-- Shadowhide Mace
 					["cr"] = 433,	-- Shadowhide Gnoll
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 66.8, 48.2, REDRIDGE_MOUNTAINS },
 						{ 68.6, 44.4, REDRIDGE_MOUNTAINS },
@@ -2416,7 +2416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1458, {	-- Shadowhide Maul
 					["cr"] = 432,	-- Shadowhide Brute
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 82.0, 38.8, REDRIDGE_MOUNTAINS },
@@ -2431,7 +2431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1459, {	-- Shadowhide Scalper
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 579,	-- Shadowhide Assassin
 					["coords"] = {
@@ -2455,7 +2455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1460, {	-- Shadowhide Two-handed Sword / Shadowhide Two-Handed Sword
 					["cr"] = 434,	-- Rabid Shadowhide Gnoll
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 74.2, 44.6, REDRIDGE_MOUNTAINS },
@@ -2471,7 +2471,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1461, {	-- Slayer's Battle Axe
 					["cr"] = 431,	-- Shadowhide Slayer
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 81.6, 48.6, REDRIDGE_MOUNTAINS },

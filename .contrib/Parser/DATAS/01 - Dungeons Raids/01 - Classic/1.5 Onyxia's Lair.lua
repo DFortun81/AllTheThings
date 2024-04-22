@@ -10,7 +10,7 @@ local REMOVED_WITH_RERELEASE = {
 	"removed 3.2.2",
 	-- #endif
 };
-local REMOVED_WITH_CATA = { "added 1.0.1", "removed 4.0.3" };
+local REMOVED_WITH_CATA = { "added 1.0.1", REMOVED_4_0_3 };
 
 -- Helms were moved to Nefarian with 3.2.2
 local BLOODFANG_HOOD = i(16908);	-- Bloodfang Hood
@@ -498,7 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #if BEFORE WRATH
 						i(18705, {	-- Mature Black Dragon Sinew
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { HUNTER },
 							["lvl"] = 60,
 						}),

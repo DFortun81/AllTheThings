@@ -602,7 +602,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7241, {	-- In Defense of Frostwolf
 					["qg"] = 13842,	-- Frostwolf Ambassador Rokhstrom
 					["coord"] = { 49.8, 71.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -991,7 +991,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7261, {	-- The Sovereign Imperative
 					["qg"] = 13843,	-- Lieutenant Rotimer <Stormpike Guard Recruitment Officer>
 					["coord"] = { 32.8, 64.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

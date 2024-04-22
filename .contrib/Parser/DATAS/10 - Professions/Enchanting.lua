@@ -936,7 +936,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(20015),	-- Superior Defense
 		}),
 		cat(694, {	-- Glove Enchantments
-			r(13868, {["timeline"]={"removed 4.0.3"}}),	-- Advanced Herbalism
+			r(13868, {["timeline"]={REMOVED_4_0_3}}),	-- Advanced Herbalism
 			r(13841),	-- Advanced Mining
 			r(13815),	-- Agility
 			applyclassicphase(PHASE_FIVE, r(25078)),	-- Fire Power
@@ -962,8 +962,8 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, r(430409)),	-- Blackfathom Mana Oil
 			-- #endif
-			applyclassicphase(PHASE_FIVE, r(25130, {["timeline"]={"removed 4.0.3"}})),	-- Brilliant Mana Oil
-			applyclassicphase(PHASE_FIVE, r(25129, {["timeline"]={"removed 4.0.3"}})),	-- Brilliant Wizard Oil
+			applyclassicphase(PHASE_FIVE, r(25130, {["timeline"]={REMOVED_4_0_3}})),	-- Brilliant Mana Oil
+			applyclassicphase(PHASE_FIVE, r(25129, {["timeline"]={REMOVED_4_0_3}})),	-- Brilliant Wizard Oil
 			applyclassicphase(PHASE_FIVE, r(25127)),	-- Lesser Mana Oil
 			applyclassicphase(PHASE_FIVE, r(25126)),	-- Lesser Wizard Oil
 			applyclassicphase(PHASE_FIVE, r(25125)),	-- Minor Mana Oil
@@ -1020,7 +1020,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(7793),	-- Lesser Intellect
 			r(13503),	-- Lesser Striking
 			r(13380),	-- Lesser Versatility / CLASSIC: Lesser Spirit
-			r(20032, {["timeline"]={"removed 4.0.3", "added 10.1.5" }}),	-- Lifestealing
+			r(20032, {["timeline"]={REMOVED_4_0_3, "added 10.1.5" }}),	-- Lifestealing
 			r(20036),	-- Major Intellect
 			r(20035),	-- Major Versatility / CLASSIC: Major Spirit
 			applyclassicphase(PHASE_THREE, r(23804)),	-- Mighty Intellect

@@ -170,7 +170,7 @@ profession(ENGINEERING, {
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["requireSkill"] = ENGINEERING,
 					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 30,
 					["groups"] = {
@@ -184,7 +184,7 @@ profession(ENGINEERING, {
 					["coord"] = { 62.6, 36.2, THE_BARRENS },
 					["requireSkill"] = ENGINEERING,
 					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 30,
 					["groups"] = {
@@ -195,7 +195,7 @@ profession(ENGINEERING, {
 			n(REWARDS, {
 				i(11422, {	-- Goblin Engineer's Renewal Gift
 					["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 						i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)

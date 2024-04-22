@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17224,	-- Keltus Darkleaf
 					["sourceQuest"] = 9532, 	-- Find Keltus Darkleaf
 					["coord"] = { 33, 11.2, GHOSTLANDS },
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9532, {	-- Find Keltus Darkleaf
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
 					["coord"] = { 79.6, 52, SILVERMOON_CITY },
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -621,7 +621,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["sourceQuest"] = 10372,	-- A Discreet Inquiry
 					["coord"] = { 47.2, 34.3, GHOSTLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 5060, 1 },	-- Thieves' Tools
 					},
@@ -632,14 +632,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Pitted Gold Band
 							["provider"] = { "i", 23717 },	-- Pitted Gold Band
 							["description"] = "Use your lockpicking skill to open the Burial Chests.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 63.8, 28.9, GHOSTLANDS },
 						}),
 						i(23921, {	-- Bulging Sack of Silver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(23717, {	-- Pitted Gold Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -860,14 +860,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["sourceQuest"] = 9460,	-- Combining Forces
 					["coord"] = { 33, 11.2, GHOSTLANDS },
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						i(7298, {	-- Blade of Cunning
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["sourceQuest"] = 9491,	-- Greed
 					["coord"] = { 47.2, 34.3, GHOSTLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -1043,14 +1043,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
 							["provider"] = { "i", 30503 },	-- Archeologist's Shrunken Head
 							["description"] = "Use your lockpicking skill to open the Primitive Chests.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 75.6, 43.7, GHOSTLANDS },
 						}),
 						i(30504, {	-- Leafblade-dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(30505, {	-- Ghostclaw Tunic
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),

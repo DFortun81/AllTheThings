@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["coord"] = { 46, 13.6, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 250,	-- A Dark Threat Looms (1/7)
 					["coord"] = { 56.1, 13.3, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 199,	-- A Dark Threat Looms (2/7)
 					["coord"] = { 46, 13.6, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 161,	-- A Dark Threat Looms (3/7)
 					["coord"] = { 50, 18.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["sourceQuest"] = 274,	-- A Dark Threat Looms (4/7)
 					["coord"] = { 46, 13.6, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 278,	-- A Dark Threat Looms (5/7)
 					["coord"] = { 46, 13.6, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -240,15 +240,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 1585 },	-- Explosive Charge
 					["sourceQuest"] = 280,	-- A Dark Threat Looms (6/7)
 					["coord"] = { 50.6, 14.4, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
 						i(2907, {	-- Dwarven Tree Chopper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2908, {	-- Thornblade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(257, {	-- A Hunter's Boast
 					["qg"] = 1187,	-- Daryl the Youngling
 					["coord"] = { 83.4, 65.2, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -284,16 +284,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1194 },	-- Mountain Buzzard
 						}),
 						i(59004, {	-- Daryl's Bow
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 						i(2903, {	-- Daryl's Hunting Bow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2904, {	-- Daryl's Hunting Rifle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59003, {	-- Daryl's Rifle
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1187,	-- Daryl the Youngling
 					["sourceQuest"] = 257,	-- A Hunter's Boast
 					["coord"] = { 83.4, 65.2, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -309,19 +309,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1192 },	-- Elder Mountain Boar
 						}),
 						i(59000, {	-- Daryl's Axe
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 						i(3572, {	-- Daryl's Shortsword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(859, {	-- Fine Cloth Shirt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59001, {	-- Ill-Worn Belt
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 						i(59002, {	-- Unabashed Vest
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2057,	-- Huldar
 					["sourceQuest"] = 273,	-- Resupplying the Excavation
 					["coord"] = { 52.2, 69.2, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 739,	-- Murdaloc
 					["coord"] = { 65.9, 65.6, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS, ULDAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "Can be found in the outdoor section of Uldaman.",
 						}),
 						i(4980, {	-- Prospector Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2500, {	-- Badlands Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
 					["coord"] = { 37.07, 49.38, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 36,
 					["groups"] = {
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1470,	-- Ghak Healtouch
 					["sourceQuest"] = 17,	-- Uldaman Reagent Run
 					["coord"] = { 37.07, 49.38, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ALCHEMY,
 					["maps"] = { BADLANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 2039,	-- Find Bingles
 					["coord"] = { 63.6, 47.8, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
@@ -506,16 +506,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 54.3, 26.5, LOCH_MODAN },
 						}),
 						i(12522, {	-- Bingles' Flying Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(58975, {	-- Gnomish All-Purpose Ray Gun
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(58974, {	-- Mechanical Wand
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(58973, {	-- Monte's Scythe
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -550,7 +550,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(385, {	-- Crocolisk Hunting
 					["qg"] = 1154,	-- Marek Ironheart
 					["coord"] = { 81.8, 61.8, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -571,16 +571,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
 						i(2240, {	-- Rugged Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59007, {	-- Croc-Scale Gloves
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(59006, {	-- Croc-Skin Boots
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(59005, {	-- Marek's Dagger
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -597,7 +597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2637 },	-- Ironbrand's Progress Report
 					},
 					["coord"] = { 65.9, 65.6, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(307, {	-- Filthy Paws
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["coord"] = { 24.7, 18.3, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -658,13 +658,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3160, {	-- Ironplate Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3166, {	-- Ironheart Chain
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3161, {	-- Robe of the Keeper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -690,12 +690,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 707,	-- Ironband Wants You!
 					["coord"] = { 65.93, 65.62, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(4982, {	-- Ripped Prospector Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(2776),	-- Gold Ore
@@ -713,7 +713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1345,	-- Magmar Fellhew
 					["sourceQuest"] = 436,	-- Ironband's Excavation
 					["coord"] = { 64.9, 66.7, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -726,13 +726,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(5241, {	-- Dwarven Flamestick
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6186, {	-- Trogg Slicer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3154, {	-- Thelsamar Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -824,7 +824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(224, {	-- In Defense of the King's Lands (1/4)
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
 					["coord"] = { 22.1, 73.2, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -840,7 +840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1091,	-- Mountaineer Gravelgaw
 					["sourceQuest"] = 224,	-- In Defense of the King's Lands (1/4)
 					["coord"] = { 23.4, 76.2, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -856,7 +856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1090,	-- Mountaineer Wallbang
 					["sourceQuest"] = 237,	-- In Defense of the King's Lands (2/4)
 					["coord"] = { 23.4, 74.6, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -876,7 +876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						267,	-- The Trogg Threat
 					},
 					["coord"] = { 23.2, 73.8, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -893,13 +893,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 34.2, 91.6, LOCH_MODAN },
 						}),
 						i(1436, {	-- Frontier Britches
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6187, {	-- Dwarven Defender
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1832, {	-- Lucky Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -926,7 +926,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(436, {	-- Ironband's Excavation
 					["qg"] = 1105,	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 13,
@@ -965,7 +965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(255, {	-- Mercenaries
 					["qg"] = 1139,	-- Magistrate Bluntnose
 					["coord"] = { 34.6, 44.5, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -979,20 +979,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1179 },	-- Mo'grosh Enforcer
 						}),
 						i(59019, {	-- Light-Burning Ring
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(59018, {	-- Ring of Pride
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(59020, {	-- Stonewrought Band
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(1339, {	-- Mountaineer Stormpike's Task
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 34.8, 47, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 9,
@@ -1016,7 +1016,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1356,	-- Prospector Stormpike
 					["sourceQuest"] = 301,	-- Report to Ironforge
 					["coord"] = { 74.4, 12, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1034,10 +1034,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						i(3217, {	-- Foreman Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6188, {	-- Mud Stompers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(58981, {	-- Dastardly Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(416, {	-- Rat Catching
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 34.8, 47, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1072,16 +1072,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(58977, {	-- Algaz Shield
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(58976, {	-- Rat Ear Cloak
-							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
 						i(3158, {	-- Burnt Hide Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(860, {	-- Cavalier's Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1099,14 +1099,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 298,	-- Excavation Progress Report
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 34.8, 47, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 19,
@@ -1115,7 +1115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1105,	-- Jern Hornhelm
 					["sourceQuest"] = 302,	-- Powder to Ironband
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -1181,7 +1181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1339,	-- Mountaineer Stormpike's Task
 					["coord"] = { 24.7, 18.3, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
@@ -1203,7 +1203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1342,	-- Mountaineer Rockgar
 					["sourceQuest"] = 468,	-- Report to Mountaineer Rockgar
 					["coord"] = { 25.5, 10.5, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
@@ -1256,7 +1256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(267, {	-- The Trogg Threat
 					["qg"] = 1092,	-- Captain Rugelfuss
 					["coord"] = { 23.3, 73.8, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(418, {	-- Thelsamar Blood Sausages
 					["qg"] = 1963,	-- Vidra Hearthstove
 					["coord"] = { 34.8, 49.3, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3172, 3 },	-- Boar Intestines
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1470,	-- Ghak Healtouch
 					["sourceQuest"] = 2500,	-- Badlands Reagent Run
 					["coord"] = { 37.07, 49.38, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS, ULDAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -1341,7 +1341,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1156,	-- Vyrin Swiftwind
 					["sourceQuest"] = 258,	-- A Hunter's Challenge
 					["coord"] = { 81.8, 64.2, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1359,15 +1359,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 271,	-- Vyrin's Revenge (1/2)
 					["coord"] = { 83.4, 65.2, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
 						i(3574, {	-- Hunting Ammo Sack
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3573, {	-- Hunting Quiver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1402,7 +1402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(256, {	-- WANTED: Chok'sul
 					["provider"] = { "o", 256 },	-- WANTED
 					["coord"] = { 37.2, 46.4, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -1412,22 +1412,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1210,	-- Chok'sul
 						}),
 						i(59028, {	-- Bluntnose's Signet
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 						i(59026, {	-- Bounty Hunter's Bracers
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 						i(6189, {	-- Durable Chain Shoulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6191, {	-- Kimbra Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1449, {	-- Minor Channeling Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59027, {	-- Thelsamar Chainmail
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1485,10 +1485,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1938, {	-- Block Mallet
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 						i(1215, {	-- Support Girdle
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2821, {	-- Mo'grosh Masher
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -1556,10 +1556,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1596,10 +1596,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2284, {	-- Rat Cloth Cloak
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(6195, {	-- Wax-polished Armor
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -1628,10 +1628,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1662,10 +1662,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2241, {	-- Desperado Cape
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(3571, {	-- Trogg Beater
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1946,7 +1946,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(5319, {	-- Bashing Pauldrons
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
 					["coords"] = {
@@ -2025,7 +2025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2823, {	-- Mo'grosh Can Opener
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1180,  -- Mo'grosh Brute
 					["coords"] = {
@@ -2047,7 +2047,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2821, {	-- Mo'grosh Masher
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 					["crs"] = {
 						14267,  -- Emogg the Crusher
 						1179,  -- Mo'grosh Enforcer
@@ -2069,7 +2069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2822, {	-- Mo'grosh Toothpick
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1178,  -- Mo'grosh Ogre
 					["coords"] = {
@@ -2106,7 +2106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(4949, {	-- Orcish Cleaver
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 7170,  -- Thragomm <Horde Runner>
 					["coords"] = {
@@ -2130,7 +2130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2283, {	-- Rat Cloth Belt
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 35.2, 27.6, LOCH_MODAN },
@@ -2148,7 +2148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1176,  -- Tunnel Rat Forager
@@ -2174,7 +2174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1173,  -- Tunnel Rat Scout
 						1172,  -- Tunnel Rat Vermin
 					},
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 28.6, 45.0, LOCH_MODAN },
@@ -2209,7 +2209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				-- Moved to Searing Gorge in 10.1.7
 				i(2274, {	-- Sapper's Gloves
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 1222,  -- Dark Iron Sapper
 				}),
 				-- #endif
@@ -2238,7 +2238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2265, {	-- Stonesplinter Axe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1163,  -- Stonesplinter Skullthumper
 					["coords"] = {
@@ -2268,7 +2268,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2266, {	-- Stonesplinter Dagger
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1166,  -- Stonesplinter Seer
 					["coords"] = {
@@ -2287,7 +2287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2267, {	-- Stonesplinter Mace
 					["cr"] = 1197,  -- Stonesplinter Shaman
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 54.6, 26.8, LOCH_MODAN },

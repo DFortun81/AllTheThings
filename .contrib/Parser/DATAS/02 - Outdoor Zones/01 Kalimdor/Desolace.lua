@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
-					["timeline"] = { "removed 4.0.3", "added 8.0.1" },
+					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
 					-- #if BEFORE CATA
 					["minReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be Honored.
 					["maxReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
-					["timeline"] = { "removed 4.0.3", "added 8.0.1" },
+					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
 					-- #if BEFORE CATA
 					["minReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be Honored.
 					["maxReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1431, {	-- Alliance Relations (1/4)
 					["qg"] = 5639,	-- Craven Drok
 					["coord"] = { 49.8, 47.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5640,	-- Keldran
 					["sourceQuest"] = 1431,	-- Alliance Relations (1/4)
 					["coord"] = { 22.4, 52.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuest"] = 1432,	-- Alliance Relations (2/4)
 					["coord"] = { 52.6, 54.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -266,16 +266,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1435,	-- The Burning of Spirits
 					},
 					["coord"] = { 52.6, 54.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(6744, {	-- Gloves of Kapelan
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6745, {	-- Swiftrunner Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1385,	-- Brutal Politics
 					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,	-- TODO: Double check that this is only Alliance Only
 					["lvl"] = 30,
 					["groups"] = {
@@ -323,7 +323,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuest"] = 1432,	-- Alliance Relations (2/4)
 					["coord"] = { 52.6, 54.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(15690, {	-- Kodobone Necklace
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -412,7 +412,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11863,	-- Azore Aldamort <The Argent Dawn>
 					["sourceQuest"] = 5741,	-- Sceptre of Light
 					["coord"] = { 38.8, 27.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Book of the Ancients
@@ -425,10 +425,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 12369,	-- Lord Kragaru
 						}),
 						i(16791, {	-- Silkstream Cuffs
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16793, {	-- Arcmetal Shoulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -446,7 +446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/3 Broken Tears
@@ -465,7 +465,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6141, {	-- Brother Anton
 					["qg"] = 12336,	-- Brother Crowley
 					["coord"] = { 42.4, 24.4, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 34,
@@ -476,7 +476,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					-- #endif
 					["coord"] = { 66.7, 11.0, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5386, {	-- Catch of the Day
 					["qg"] = 11259,	-- Nataka Longhorn
 					["coord"] = { 55.4, 55.8, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 13546, 2 }},	-- Bloodbelly Fish
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1387, {	-- Centaur Bounty [A]
 					["qg"] = 5752,	-- Corporal Melkins
 					["coord"] = { 66.7, 10.9, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(6790, {	-- Ring of Calm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5395,	-- Felgur Twocuts
 					["sourceQuest"] = 1365,	-- Khan Dez'hepah
 					["coord"] = { 56.2, 59.4, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -566,10 +566,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(6780, {	-- Lilac Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6784, {	-- Braced Handguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 177786 },	-- Rackmore's Chest
 					},
 					["coord"] = { 36.1, 30.4, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rackmore's Silver Key
@@ -628,17 +628,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(16788, {	-- Captain Rackmore's Wheel
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16789, {	-- Captain Rackmore's Tiller
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(6142, {	-- Clam Bait
 					["qg"] = 12031,	-- Mai'Lahii
 					["coord"] = { 22.6, 72, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 31,
 					["groups"] = {
@@ -650,13 +650,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 12347,	-- Enraged Reef Crawler
 						}),
 						i(15585, {	-- Pardoc Grips
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15587, {	-- Ringtail Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15588, {	-- Bracesteel Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -763,7 +763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 1182,	-- Brother Anton <Scarlet Crusade Emissary>
 					["sourceQuest"] = 6141,	-- Brother Anton
 					["coord"] = { 66.4, 7.8, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 261,	-- Down the Scarlet Path (1/2)
 					["coord"] = { 66.5, 7.9, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 34,
@@ -917,7 +917,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1368, {	-- Gelkis Alliance
 					["qg"] = 5412,	-- Gurda Wildmane
 					["coord"] = { 56.2, 59.6, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -971,7 +971,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1369,	-- Broken Tears
 					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 4392, 1 }},	-- Advanced Target Dummy
 					["lvl"] = 30,
 				}),
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5381, {	-- Hand of Iruxos
 					["qg"] = 11624,	-- Taiga Wisemane
 					["coord"] = { 25.8, 68.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -1030,7 +1030,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 14546 },	-- Roon's Kodo Horn
 					},
 					["coord"] = { 25, 72.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
@@ -1093,7 +1093,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1365, {	-- Khan Dez'hepah
 					["qg"] = 5395,	-- Felgur Twocuts
 					["coord"] = { 56.2, 59.4, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1374,	-- Khan Jehn
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Maraudine Key Fragment
@@ -1122,10 +1122,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 5402,	-- Khan Hratha
 						}),
 						i(6773, {	-- Gelkis Marauder Chain
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6774, {	-- Uthek's Finger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1134,7 +1134,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1375,	-- Khan Shaka
 					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Maraudine Key Fragment
@@ -1144,10 +1144,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 5402,	-- Khan Hratha
 						}),
 						i(6788, {	-- Magram Hunter's Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6789, {	-- Ceremonial Centaur Blanket
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1373,	-- Ongeku
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Khan Jehn's Head
@@ -1171,7 +1171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1371,	-- Gizmo for Warug
 					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Khan Shaka's Head
@@ -1196,10 +1196,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(15697, {	-- Kodo Rustler Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15698, {	-- Wrangling Spaulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1213,7 +1213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1367, {	-- Magram Alliance
 					["qg"] = 5412,	-- Gurda Wildmane
 					["coord"] = { 56.2, 59.6, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1299,7 +1299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1370,	-- Stealing Supplies
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1313,7 +1313,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6143, {	-- Other Fish to Fry
 					["qg"] = 12340,	-- Drulzegar Skraghook
 					["coord"] = { 23.2, 72.8, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -1395,10 +1395,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(16794, {	-- Gripsteel Wristguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16873, {	-- Braidfur Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1460,7 +1460,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1384, {	-- Raid on the Kolkar
 					["qg"] = 5397,	-- Uthek the Wise
 					["coord"] = { 36.2, 79.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuest"] = 1453,	-- Reclaimers' Business in Desolace
 					["coord"] = { 66.2, 9.6, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1517,7 +1517,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuest"] = 1458,	-- Reagents for Reclaimers Inc. (1/4)
 					["coord"] = { 66.2, 9.6, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuest"] = 1459,	-- Reagents for Reclaimers Inc. (2/4)
 					["coord"] = { 66.2, 9.6, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1576,15 +1576,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1466,	-- Reagents for Reclaimers Inc. (3/4)
 					["coord"] = { 66.2, 9.6, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(6793, {	-- Auric Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6794, {	-- Stormfire Gauntlets / Tawny Gloves [LEGION+]
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(131232, {	-- Stormfire Gauntlets
 							["timeline"] = { "created 7.0.3.22248" },
@@ -1607,7 +1607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 63.24, 20.68, HILLSBRAD_FOOTHILLS },	-- Krusk
 						{ 75, 34.2, ORGRIMMAR },	-- Belgrom Rockmaul
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1650,21 +1650,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5644,	-- Dalinda Malem
 					["sourceQuest"] = 1439,	-- Search for Tyranis
 					["coord"] = { 54.8, 26.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(9687, {	-- Grappler's Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9698, {	-- Gloves of Insight
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9699, {	-- Garrison Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11884, {	-- Moonlit Amice
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1707,7 +1707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5741, {	-- Sceptre of Light
 					["qg"] = 11863,	-- Azore Aldamort <The Argent Dawn>
 					["coord"] = { 38.8, 27.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sceptre of Light
@@ -1721,7 +1721,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5644,	-- Dalinda Malem
 					["sourceQuest"] = 1438,	-- Vahlarriel's Search (3/3)
 					["coord"] = { 54.8, 26.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1760,7 +1760,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/6 Crudely Dried Meat
@@ -1779,7 +1779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(32378, {	-- Silver Star [TBC]
 							["timeline"] = {
 								"added 2.0.1.5678",
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 							},
 						}),
 						-- #endif
@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 4.0.3
 					["description"] = "Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1843,7 +1843,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1433,	-- Alliance Relations (3/4)
 					["coord"] = { 52.2, 53.4, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1863,7 +1863,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1480, {	-- The Corrupter (1/5)
 					["provider"] = { "i", 20310 },	-- Flayed Demon Skin
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						4665,	-- Burning Blade Adept
 						4663,	-- Burning Blade Augur
@@ -1881,7 +1881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1480,	-- The Corrupter (1/5)
 					["coord"] = { 52.2, 53.4, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1896,7 +1896,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1481,	-- The Corrupter (2/5)
 					["coord"] = { 52.2, 53.4, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1911,7 +1911,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1482,	-- The Corrupter (3/5)
 					["coord"] = { 52.2, 53.4, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -1919,7 +1919,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuest"] = 1484,	-- The Corrupter (4/5)
 					["coord"] = { 52.6, 54.2, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1931,10 +1931,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 55.8, 77.6, DESOLACE },
 						}),
 						i(6746, {	-- Basalt Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6747, {	-- Enforcer Pauldrons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2007,16 +2007,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1456,	-- The Karnitol Shipwreck (3/4)
 					["coord"] = { 66.2, 9.6, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(6791, {	-- Hellion Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6792, {	-- Sanguine Pauldrons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2024,7 +2024,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3389,	-- Regthar Deathgate
 					["sourceQuest"] = 1361,	-- Regthar Deathgate
 					["coord"] = { 45.2, 28.4, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -2129,7 +2129,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1437, {	-- Vahlarriel's Search (1/3)
 					["qg"] = 5642,	-- Vahlarriel Demonslayer
 					["coord"] = { 66.4, 11.8, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -2140,7 +2140,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1437,	-- Vahlarriel's Search (1/3)
 					["coord"] = { 56.6, 17.8, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -2148,7 +2148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5642,	-- Vahlarriel Demonslayer
 					["sourceQuest"] = 1465,	-- Vahlarriel's Search (2/3)
 					["coord"] = { 66.4, 11.8, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -2348,7 +2348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
+							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(7114, {	-- Pattern: Azure Silk Gloves
@@ -2461,7 +2461,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(2620, {	-- Augural Shroud
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 4684,	-- Nether Sorceress
 					["coords"] = {
@@ -2494,7 +2494,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(6074, {	-- War Horn Mouthpiece
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						6070,	-- Maraudine Khan Advisor
 						6069,	-- Maraudine Khan Guard

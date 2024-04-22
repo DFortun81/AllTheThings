@@ -365,7 +365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(37235),	-- Crypt Lord's Deft Blade
 							i(37238),	-- Rod of the Fallen Monarch

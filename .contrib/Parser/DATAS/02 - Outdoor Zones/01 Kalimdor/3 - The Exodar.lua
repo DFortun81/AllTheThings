@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3"},
+					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3"},
+					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3"},
+					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				},
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3"},
+					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				},
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3"},
+					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9551, {	-- Call of Air (1/4) [The Exodar]
 					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
 					["coord"] = { 32.6, 24.2, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9547, {	-- Call of Air (1/4) [Ironforge]
 					["qg"] = 23127,	-- Farseer Javad <Shaman Trainer>
 					["coord"] = { 55.2, 29.6, IRONFORGE },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(10491, {	-- Call of Air (1/4) [Stormwind City]
 					["qg"] = 20407,	-- Farseer Umbrua <Shaman Trainer>
 					["coord"] = { 61.8, 83.8, STORMWIND_CITY },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						10491,	-- Call of Air (1/4) [Stormwind City]
 					},
 					["coord"] = { 31, 27.8, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17431,	-- Velaada
 					["sourceQuest"] = 9552,	-- Call of Air (2/4)
 					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["lvl"] = 30,
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["sourceQuest"] = 9553,	-- Call of Air (3/4)
 					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["lvl"] = 30,
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(10366, {	-- Jol
 					["qg"] = 17483,	-- Tullas <Paladin Trainer>
 					["coord"] = { 48.4, 49.6, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 10),
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["sourceQuest"] = 10366,	-- Jol
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { DRAENEI },
 					["cost"] = {
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["sourceQuest"] = 9598,	-- Redemption (1/2)
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLOODMYST_ISLE },
 					["classes"] = { PALADIN },
 					["races"] = { DRAENEI },

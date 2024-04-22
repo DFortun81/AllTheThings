@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["sourceQuest"] = 5262,	-- The Truth Comes Crashing Down
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Baron Rivendare
@@ -104,13 +104,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 10917,	-- Aurius
 					["sourceQuest"] = 5122,	-- The Medallion of Faith
 					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(17044, {	-- Will of the Martyr
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17045, {	-- Blood of the Martyr
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5243, {	-- Houses of the Holy
@@ -141,14 +141,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
 					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						i(13216, {	-- Crown of the Penitent
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(13217, {	-- Band of the Penitent
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(6149),	-- Greater Mana Potion
@@ -160,23 +160,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
 					["coord"] = { 42, 14.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						i(15418, {	-- Shimmering Platinum Warhammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15411, {	-- Mark of Fordring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15421, {	-- Shroud of the Exile
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15413, {	-- Ornate Adamantium Breastplate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16058, {	-- Fordring's Seal
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				}),
 				q(27228, {	-- Man Against Abomination
@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5742,	-- Redemption
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Taelan's Hammer
@@ -238,7 +238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5781,	-- Of Forgotten Memories
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Symbol of Lost Honor
@@ -264,14 +264,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5845,	-- Of Lost Honor
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5848, {	-- Of Love and Family (2/2)
 					["qg"] = 11936,	-- Artist Renfray
 					["sourceQuest"] = 5846,	-- Of Love and Family (1/2)
 					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Of Love and Family
@@ -285,7 +285,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6163, {	-- Ramstein
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -294,10 +294,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10439,	-- Ramstein the Gorger
 						}),
 						i(18022, {	-- Royal Seal of Alexis
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17001, {	-- Elemental Circle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -309,7 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						5542,	-- Demon Dogs
 					},
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(27223, {	-- Retribution
@@ -332,14 +332,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 5861,	-- Find Myranda
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5213, {	-- The Active Agent
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["sourceQuest"] = 5212,	-- The Flesh Does Not Lie
 					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Scourge Data
@@ -349,17 +349,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(19812, {	-- Rune of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(13209, {	-- Seal of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5251, {	-- The Archivist
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Archivist Galford slain
@@ -377,17 +377,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 5264,	-- Lord Maxwell Tyrosus
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						i(13246, {	-- Argent Avenger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(13249, {	-- Argent Crusader
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(13243, {	-- Argent Defender
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -416,7 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5212, {	-- The Flesh Does Not Lie
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/10 Plagued Flesh Sample (20 in Classic)
@@ -438,7 +438,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5214, {	-- The Great Ezra Grimm
 					["qg"] = 11033,	-- Smokey LaRue
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Grimm's Premium Tobacco
@@ -446,27 +446,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 11058,	-- Ezra Grimm
 						}),
 						i(13171, {	-- Smokey's Lighter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5122, {	-- The Medallion of Faith
 					["qg"] = 10917,	-- Aurius
 					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 				}),
 				q(5281, {	-- The Restless Souls (1/2)
 					["qg"] = 11038,	-- Caretaker Alen <The Argent Dawn>
 					["coord"] = { 79.6, 63.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				}),
 				q(5282, {	-- The Restless Souls (2/2)
 					["qg"] = 11140,	-- Egan
 					["sourceQuest"] = 5281,	-- The Restless Souls (1/2)
 					["coord"] = { 14.4, 33.6, EASTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/15 Souls Freed
@@ -478,14 +478,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(13315, {	-- Testament of Hope
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5262, {	-- The Truth Comes Crashing Down
 					["provider"] = { "i", 13250 },	-- Head of Balnazzar
 					["sourceQuest"] = 5251,	-- The Archivist
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				}),
 				q(27230, {	-- Weapons for War
@@ -514,13 +514,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(206374, {	-- Invader's Scourgestone
 					["timeline"] = { ADDED_10_1_5 },
@@ -529,10 +529,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(13174, {	-- Plagued Flesh Sample
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12735, {	-- Frayed Abomination Stitching
 					-- NOTE: Not removed from game, but no longer useful for anything.
@@ -561,7 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(18742),	-- Stratholme Militia Shoulderguard
 
 				i(16681, {	-- Beaststalker's Bindings
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10421,	-- Crimson Defender
 						10407,	-- Fleshflayer Ghoul
@@ -569,7 +569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16736, {	-- Belt of Valor
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10416,	-- Bile Spewer
 						10414,	-- Patchwork Horror
@@ -577,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16671, {	-- Bindings of Elements
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						11043,	-- Crimson Monk
 						10413,	-- Crypt Beast
@@ -585,7 +585,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16697, {	-- Devout Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10419,	-- Crimson Conjuror
 						10420,	-- Crimson Initiate
@@ -595,7 +595,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16702, {	-- Dreadmist Belt
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10419,	-- Crimson Conjuror
 						10422,	-- Crimson Sorcerer
@@ -604,7 +604,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16723, {	-- Lightforge Belt
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10424,	-- Crimson Gallant
 						10418,	-- Crimson Guardsman
@@ -613,7 +613,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16685, {	-- Magister's Belt
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10425,	-- Crimson Battle Mage
 						10419,	-- Crimson Conjuror
@@ -623,7 +623,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16714, {	-- Wildheart Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						10426,	-- Crimson Inquisitor
 						10463,	-- Shrieking Banshee
@@ -657,17 +657,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #if BEFORE 4.0.3
 							["description"] = "These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16249, {	-- Formula: Enchant 2H Weapon - Major Intellect (RECIPE!)
 							["cr"] = 10422,  -- Crimson Sorcerer / Risen Sorcerer [CATA+]
 						}),
 						i(14495, {	-- Pattern: Ghostweave Pants
-							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainer
+							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainer
 							["cr"] = 10384,  -- Spectral Citizen
 						}),
 						i(15777, {	-- Pattern: Runic Leather Shoulders (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainer
+							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainer
 							["cr"] = 10425,	-- Crimson Battle Mage
 						}),
 						i(18658, {	-- Schematic: Ultra-Flash Shadow Reflector (RECIPE!)
@@ -695,7 +695,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #if BEFORE 4.0.3
 					n(11082, {	-- Stratholme Courier
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["description"] = "Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",
 						["groups"] = {
 							i(13303, {	-- Crusaders' Square Postbox Key
@@ -754,7 +754,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13384),	-- Rainbow Girdle
 							i(13383),	-- Woollies of the Prancing Minstrel
 							i(16682, {	-- Magister's Boots
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -773,7 +773,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(16717, {	-- Wildheart Gloves
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -786,7 +786,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(16724, {	-- Lightforge Gauntlets
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(13403),	-- Grimgore Noose
 							i(13402),	-- Timmy's Galoshes
@@ -798,7 +798,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #if BEFORE 4.0.3
 							["description"] = "Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if AFTER 8.0.1
 						i(22403),	-- Nacreous Shell Necklace
@@ -809,10 +809,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "Found in the Hoard on the way to Cannon Master Willey.",
 						["groups"] = {
 							i(18781, {	-- Bottom Half of Advanced Armorsmithing: Volume II
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(13351, {	-- Crimson Hammersmith's Apron
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
@@ -831,7 +831,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							applyclassicphase(PHASE_FIVE, i(22403)),	-- Nacreous Shell Necklace
 							applyclassicphase(PHASE_FIVE, i(22405)),	-- Mantle of the Scarlet Crusade
 							i(16708, {	-- Shadowcraft Spaulders
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(18721),	-- Barrage Girdle
 							i(13381),	-- Master Cannoneer Boots
@@ -862,7 +862,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13385),	-- Tome of Knowledge
 							i(13386),	-- Archivist Cape
 							i(16692, {	-- Devout Gloves
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(13387),	-- Foresight Girdle
 							i(18716),	-- Ash Covered Boots
@@ -888,7 +888,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13358),	-- Wyrmtongue Shoulders
 							i(13369),	-- Fire Striders
 							i(16725, {	-- Lightforge Boots
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -902,7 +902,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #else
 						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 						-- #endif
-						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 						["cost"] = {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
@@ -938,19 +938,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
 							}),
 							i(22329, {	-- Scepter of Interminable Focus
-								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
+								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 							}),
 							i(22327, {	-- Amulet of the Redeemed
-								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
+								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 							}),
 							i(22301, {	-- Ironweave Robe
 								["timeline"] = { "removed 4.0.1", ADDED_10_1_5 },
 							}),
 							i(22328, {	-- Legplates of Vigilance
-								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
+								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 							}),
 							i(22334, {	-- Band of Mending
-								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
+								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 							}),
 						},
 					})),
@@ -1004,7 +1004,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(16710, {	-- Shadowcraft Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["cr"] = 10405,	-- Plague Ghoul
 						}),
 					}),
@@ -1032,7 +1032,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(18739),	-- Chitinous Plate Legguards
 							i(13531),	-- Crypt Stalker Leggings
 							i(16675, {	-- Beaststalker's Boots
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(13530),	-- Fangdrip Runners
 							i(13508),	-- Eye of Arachnida
@@ -1050,7 +1050,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(13350, {	-- Insignia of the Black Guard
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
@@ -1070,7 +1070,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13539),	-- Banshee's Touch
 							i(18730),	-- Shadowy Laced Handwraps
 							i(16704, {	-- Dreadmist Sandals
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(13514, {	-- Wail of the Banshee
 								-- #if BEFORE 4.0.3
@@ -1090,7 +1090,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13525),	-- Darkbind Fingers
 							i(13526),	-- Flamescarred Girdle
 							i(16691, {	-- Devout Sandals
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(13527),	-- Lavawalker Greaves
 							i(18735),	-- Maleki's Footwraps
@@ -1121,7 +1121,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(18723),	-- Animated Chain Necklace
 							i(13374),	-- Soulstealer Mantle
 							i(16737, {	-- Gauntlets of Valor
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(13373),	-- Band of Flesh
 							i(13515),	-- Ramstein's Lightning Bolts
@@ -1165,34 +1165,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["encounterID"] = 456,	-- Baron Rivendare
 						-- #endif
 						-- #endif
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							i(16678, {	-- Beaststalker's Pants
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16694, {	-- Devout Skirt
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16699, {	-- Dreadmist Leggings
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16668, {	-- Kilt of Elements
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16732, {	-- Legplates of Valor
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16728, {	-- Lightforge Legplates
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16687, {	-- Magister's Leggings
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16709, {	-- Shadowcraft Pants
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(16719, {	-- Wildheart Kilt
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),

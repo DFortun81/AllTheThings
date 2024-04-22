@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					["sourceQuest"] = 10762,	-- Grand Master Dumphry
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.0.3.14732" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
@@ -63,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(10754, {	-- Entry Into the Citadel [Alliance]
 					["provider"] = { "i", 31239 },	-- Primed Key Mold
-					["timeline"] = { "removed 4.0.3.14732" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SHADOWMOON_VALLEY },
 					["cr"] = 22037,	-- Smith Gorlunk
 					["races"] = ALLIANCE_ONLY,
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(10755, {	-- Entry Into the Citadel [Horde]
 					["provider"] = { "i", 31241 },	-- Primed Key Mold
-					["timeline"] = { "removed 4.0.3.14732" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SHADOWMOON_VALLEY },
 					["cr"] = 22037,	-- Smith Gorlunk
 					["races"] = HORDE_ONLY,
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 16819,	-- Force Commander Danath Trollbane
 					["sourceQuest"] = 10754,	-- Entry Into the Citadel [Alliance]
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.0.3.14732" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 3230,	-- Nazgrel
 					["sourceQuest"] = 10755,	-- Entry Into the Citadel [Horde]
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.0.3.14732" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
@@ -155,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					},
 				}),
-				q(10764, bubbleDown({ ["timeline"] = { "removed 4.0.3.14732" } }, {	-- Hotter than Hell [Alliance]
+				q(10764, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Hotter than Hell [Alliance]
 					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					["sourceQuest"] = 10763,	-- Dumphry's Request
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28395),	-- Shattered Halls Key
 					},
 				})),
-				q(10758, bubbleDown({ ["timeline"] = { "removed 4.0.3.14732" } }, {	-- Hotter than Hell [Horde]
+				q(10758, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Hotter than Hell [Horde]
 					["qg"] = 16583,	-- Rohok
 					["sourceQuest"] = 10757,	-- Rohok's Request
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
@@ -281,7 +281,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 16583,	-- Rohok
 					["sourceQuest"] = 10756,	-- Grand Master Rohok
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.0.3.14732" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {

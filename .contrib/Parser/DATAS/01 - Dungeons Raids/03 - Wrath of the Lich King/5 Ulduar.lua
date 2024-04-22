@@ -251,7 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2982),	-- Getting Back to Nature (10 player)
 						revampAch(2967),	-- Getting Cold in Here (10 player)
 						ach(3004, {	-- He Feeds On Your Tears (10 player)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						revampAch(3012),	-- He's Not Getting Any Older (10 player)
 						revampAch(3058),	-- Heartbreaker (10 player)
@@ -658,7 +658,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							-- #endif
 							ach(3004, {	-- He Feeds On Your Tears (10 player)
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							revampAch(3036, {	-- Observed (10 player)
 								title(129),	-- Starcaller
@@ -1061,7 +1061,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2983),	-- Getting Back to Nature (25 player)
 						revampAch(2968),	-- Getting Cold in Here (25 player)
 						ach(3005, {	-- He Feeds On Your Tears (25 player)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						revampAch(3013),	-- He's Not Getting Any Older (25 player)
 						revampAch(3059),	-- Heartbreaker (25 player)
@@ -1606,7 +1606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							-- #endif
 							ach(3005, {	-- He Feeds On Your Tears (25 player)
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							revampAch(3037, {	-- Observed (25 player)
 								title(130),	-- the Astral Walker

@@ -1033,14 +1033,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9673, {	-- Beast Training
 					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["coord"] = { 60.3, 62.8, EVERSONG_WOODS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
 					["classes"] = { HUNTER },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						i(24136, {	-- Farstrider's Bow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE CATA
 						recipe(6991),		-- Feed Pet
@@ -1071,7 +1071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9489, {	-- Cleansing the Scar
 					["qg"] = 16276,	-- Ponaris <Priest Trainer>
 					["coord"] = { 47.8, 47.8, EVERSONG_WOODS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1081,7 +1081,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 15938,	-- Eversong Ranger
 						}),
 						i(23924, {	-- Robes of Silvermoon
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1482,7 +1482,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17807,	-- Master Kelrun Bloodmourn
 					["sourceQuest"] = 9686,	-- The Second Trial (2/2)
 					["coord"] = { 42, 28, EVERSONG_WOODS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 1),
@@ -1555,7 +1555,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9677, {	-- Summons from Knight-Lord Bloodvalor
 					["qg"] = 16275,	-- Noellene
 					["coord"] = { 48.4, 46.46, EVERSONG_WOODS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -1726,7 +1726,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17807,	-- Master Kelrun Bloodmourn
 					["sourceQuest"] = 9690,	-- The Second Trial (1/2)
 					["coord"] = { 42, 28, EVERSONG_WOODS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 1),

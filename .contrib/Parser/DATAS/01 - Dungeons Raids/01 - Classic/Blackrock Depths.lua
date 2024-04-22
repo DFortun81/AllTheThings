@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
 					-- #endif
 					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10575, 1 } },	-- Black Dragonflight Molt
 					["lvl"] = 52,
 				}),
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9459,	-- Cyrus Therepentous
 					["altQuests"] = { 4022 },	-- A Taste of Flame (1/2) (A)
 					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Black Dragonflight Molt
@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						4023,	-- A Taste of Flame (1/2) (B)
 					},
 					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Encased Fiery Essence
 							["provider"] = { "i", 11230 },	-- Encased Fiery Essence
@@ -151,13 +151,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 9016,	-- Bael'Gar
 						}),
 						i(12066, {	-- Shaleskin Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12082, {	-- Wyrmhide Spaulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12083, {	-- Valconian Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
 					["sourceQuest"] = 3906,	-- Disharmony of Flame
 					["coord"] = { 5.8, 47.6, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					["description"] = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["lvl"] = 48,
 				}),
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 164689 },	-- Monument of Franclorn Forgewright
 					},
 					["sourceQuest"] = 3801,	-- Dark Iron Legacy (1/2)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["lvl"] = 48,
 					["groups"] = {
@@ -218,7 +218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["coord"] = { 3.3, 48.3, BADLANDS },
 					["maps"] = { BLACKROCK_MOUNTAIN },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -231,7 +231,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["sourceQuest"] = 3906,	-- Disharmony of Flame
 					["coord"] = { 3.3, 48.3, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -242,16 +242,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 11126 },	-- Tablet of Kurniya
 						}),
 						i(12112, {	-- Crypt Demon Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12114, {	-- Nightfall Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12115, {	-- Stalwart Clutch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12113, {	-- Sunborne Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuests"] = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
 					["coord"] = { 5.9, 47.6, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["sourceQuest"] = 4128,	-- Ragnar Thunderbrew
 					["coord"] = { 46.8, 52.4, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -339,10 +339,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 11312 },	-- Lost Thunderbrew Recipe
 						}),
 						i(12000, {	-- Limb Cleaver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11964, {	-- Swiftstrike Cudgel
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12003),	-- Dark Dwarven Lager
 					},
@@ -351,7 +351,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9561,	-- Jalinda Sprig
 					["sourceQuest"] = 4262,	-- Overmaster Pyron
 					["coord"] = { 85.4, 70.1, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -359,16 +359,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "n", 9017 },	-- Lord Incendius
 						}),
 						i(12112, {	-- Crypt Demon Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12114, {	-- Nightfall Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12115, {	-- Stalwart Clutch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12113, {	-- Sunborne Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -394,21 +394,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 					["sourceQuest"] = 3701,	-- The Smoldering Ruins of Thaurissan (2/2)
 					["coord"] = { 39.09, 56.19, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(4342, {	-- Kharan's Tale
 					["qg"] = 9021,	-- Kharan Mighthammer
 					["sourceQuest"] = 4341,	-- Kharan Mighthammer
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(4081, {	-- KILL ON SIGHT: Dark Iron Dwarves
 					["provider"] = { "o", 164867 },	-- WANTED
 					["coord"] = { 3.9, 47.4, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -427,7 +427,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
 					["sourceQuest"] = 4081,	-- KILL ON SIGHT: Dark Iron Dwarves
 					["coord"] = { 3.9, 47.4, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -446,7 +446,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 					["sourceQuest"] = 4133,	-- Vivian Lagrave
 					["coord"] = { 2.9, 47.8, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -454,10 +454,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 11312 },	-- Lost Thunderbrew Recipe
 						}),
 						i(12000, {	-- Limb Cleaver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11964, {	-- Swiftstrike Cudgel
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -976,7 +976,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 					["sourceQuest"] = 4121,	-- Precarious Predicament
 					["coord"] = { 5.8, 47.5, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
@@ -984,14 +984,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "n", 9033 },	-- General Angerforge
 						}),
 						i(12059, {	-- Conqueror's Medallion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4262, {	-- Overmaster Pyron
 					["qg"] = 9561,	-- Jalinda Sprig
 					["coord"] = { 85.4, 70.1, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1005,7 +1005,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9520,	-- Grark Lorkrub
 					["sourceQuest"] = 4122,	-- Grark Lorkrub
 					["coord"] = { 40.2, 34.2, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
@@ -1020,7 +1020,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4128, {	-- Ragnar Thunderbrew
 					["qg"] = 9540,	-- Enohar Thunderbrew
 					["coord"] = { 63.6, 20.6, BLASTED_LANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -1029,20 +1029,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9544,	-- Yuka Screwspigot
 					["sourceQuest"] = 4324,	-- Yuka Screwspigot
 					["coord"] = { 66.1, 21.9, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ribbly's Head
 							["provider"] = { "i", 11313 },	-- Ribbly's Head
 						}),
 						i(11963, {	-- Penance Spaulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12049, {	-- Splintsteel Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11865, {	-- Rancor Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1162,7 +1162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4361, {	-- The Bearer of Bad News
 					["qg"] = 9021,	-- Kharan Mighthammer
 					["sourceQuest"] = 4342,	-- Kharan's Tale
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -1234,7 +1234,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 4001,	-- What Is Going On? (2/2)
 					["coord"] = { 31.61, 37.83, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
@@ -1242,7 +1242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 					["sourceQuest"] = 4361,	-- The Bearer of Bad News
 					["coord"] = { 39.09, 56.19, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -1315,7 +1315,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4286, {	-- The Good Stuff
 					["qg"] = 9177,	-- Oralius
 					["coord"] = { 84.6, 68.7, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -1323,14 +1323,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 11468 },	-- Dark Iron Fanny Pack
 						}),
 						i(11883, {	-- -- A Dingy Fanny Pack
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4123, {	-- The Heart of the Mountain
 					["qg"] = 9536,	-- Maxwort Uberglint
 					["coord"] = { 65.2, 23.9, BURNING_STEPPES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 The Heart of the Mountain
@@ -1342,7 +1342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 					["sourceQuest"] = 3906,	-- Disharmony of Flame
 					["coord"] = { 2.9, 47.76, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -1350,14 +1350,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 11129 },	-- Essence of the Elements
 						}),
 						i(12038, {	-- Lagrave's Seal
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4201, {	-- The Love Potion
 					["qg"] = 9500,	-- Mistress Nagmara
 					["maps"] = { AZSHARA, UNGORO_CRATER },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/4 Gromsblood
@@ -1378,42 +1378,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["coord"] = { 31, 49, UNGORO_CRATER },
 						}),
 						i(11962, {	-- Manacle Cuffs
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(11866, {	-- Nagmara's Whipping Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4004, {	-- The Princess Saved?
 					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["sourceQuest"] = 4003,	-- The Royal Rescue
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						i(12545, {	-- Eye of Orgrimmar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12544, {	-- Thrall's Resolve
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4363, {	-- The Princess's Surprise
 					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["sourceQuest"] = 4362,	-- The Fate of the Kingdom
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12548, {	-- Magni's Will
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12543, {	-- Songstone of Ironforge
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1464,7 +1464,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4061, {	-- The Rise of the Machines (1/3)
 					["qg"] = 9079,	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
 					["coord"] = { 3.02, 47.81, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
@@ -1486,7 +1486,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 4061,	-- The Rise of the Machines (1/3)
 					["coord"] = { 3.02, 47.81, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
@@ -1494,7 +1494,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["sourceQuest"] = 4062,	-- The Rise of the Machines (2/3)
 					["coord"] = { 25.95, 44.87, BADLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
@@ -1505,16 +1505,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 11269 },	-- Intact Elemental Core
 						}),
 						i(12110, {	-- Raincaster Drape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12109, {	-- Azure Moon Amice
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12111, {	-- Lavaplate Gauntlets
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12108, {	-- Basaltscale Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1522,7 +1522,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 4002,	-- The Eastern Kingdoms
 					["coord"] = { 31.61, 37.83, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1534,7 +1534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3702, {	-- The Smoldering Ruins of Thaurissan (1/2)
 					["qg"] = 8879,	-- Royal Historian Archesonus
 					["coord"] = { 38.37, 55.31, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -1542,7 +1542,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8879,	-- Royal Historian Archesonus
 					["sourceQuest"] = 3702,	-- The Smoldering Ruins of Thaurissan (1/2)
 					["coord"] = { 38.37, 55.31, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1551,7 +1551,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "o", 153556 },	-- Thaurissan Relic
 						}),
 						i(12102, {	-- Ring of the Aristocrat
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1636,7 +1636,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4133, {	-- Vivian Lagrave
 					["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 					["coord"] = { 50.1, 68.0, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -1737,14 +1737,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3982, {	-- What Is Going On? (1/2)
 					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
 					["sourceQuest"] = 3981,	-- Commander Gor'shak
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(4001, {	-- What Is Going On? (2/2)
 					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
 					["sourceQuest"] = 3982,	-- What Is Going On? (1/2)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1756,7 +1756,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4324, {	-- Yuka Screwspigot
 					["qg"] = 9706,	-- Yorba Screwspigot
 					["coord"] = { 67.0, 24.0, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 48,
 				}),
@@ -2491,7 +2491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["provider"] = { "o", 181074 },	-- Arena Spoils
 					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",
 					["cost"] = { { "i", 21986, 1 } },	-- Banner of Provocation
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if NOT ANYCLASSIC
 					["u"] = 11,
 					-- #endif
@@ -2517,7 +2517,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					end]],
 					-- #endif
 					["groups"] = bubbleDown({
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						-- #if NOT ANYCLASSIC
 						["u"] = 11,
 						-- #endif
@@ -2729,7 +2729,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if AFTER 7.3.2
 						i(12557, {	-- Ebonsteel Spaulders
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 8.1.0"
 							},
 						}),
@@ -2897,25 +2897,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						i(12557, {	-- Ebonsteel Spaulders
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 8.1.0"
 							},
 						}),
 						i(12554, {	-- Hands of the Exalted Herald
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 7.3.2"
 							},
 						}),
 						i(12556, {	-- High Priestess Boots
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 7.3.2"
 							},
 						}),
 						i(12553, {	-- Swiftwalker Boots
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 7.3.2"
 							},
 						}),
@@ -2949,27 +2949,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if AFTER 7.3.2
 						i(12554, {	-- Hands of the Exalted Herald
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 7.3.2"
 							},
 						}),
 						-- #endif
 						-- #if BEFORE 1.13.5
 						i(16724, {	-- Lightforge Gauntlets
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22207)),	-- Sash of the Grand Hunt
 						-- #if AFTER 7.3.2
 						i(12556, {	-- High Priestess Boots
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 7.3.2"
 							},
 						}),
 						i(12553, {	-- Swiftwalker Boots
 							["timeline"] = {
-								"removed 4.0.3",
+								REMOVED_4_0_3,
 								"added 7.3.2"
 							},
 						}),

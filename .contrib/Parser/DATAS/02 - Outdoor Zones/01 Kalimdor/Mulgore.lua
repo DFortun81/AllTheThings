@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(752, {	-- A Humble Task (1/2)
 							["qg"] = 2981,	-- Chief Hawkwind
 							["coord"] = { 44.2, 76, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2991,	-- Greatmother Hawkwind
 							["sourceQuest"] = 752,	-- A Humble Task (1/2)
 							["coord"] = { 50.0, 81.0, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Water Pitcher
@@ -78,11 +78,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 4850 },	-- Bristleback Attack Plans
 							},
 							["coord"] = { 63.3, 82.6, MULGORE },
-							["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+							["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(4911, {	-- Thick Bark Buckler
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -97,14 +97,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(4911, {	-- Thick Bark Buckler
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
 						q(3376, {	-- Break Sharptusk!
 							["qg"] = 3209,	-- Brave Windfeather
 							["coord"] = { 44.8, 76.6, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 3,
 							["groups"] = {
@@ -114,10 +114,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["cr"] = 8554,	-- Chief Sharptusk Thornmantle
 								}),
 								i(10635, {	-- Painted Chain Leggings
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(10636, {	-- Nomadic Gloves
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 5888,	-- Seer Ravenfeather
 							["altQuests"] = { 1516 }, -- Call of Earth (1/3 Durotar)
 							["coord"] = { 44.8, 76.2, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
 							["lvl"] = 4,
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["altQuests"] = { 1517 }, -- Call of Earth (2/3 Durotar)
 							["coord"] = { 44.8, 76.2, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
 							["lvl"] = 4,
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 1520,	-- Call of Earth (2/3)
 							["altQuests"] = { 1518 }, -- Call of Earth (3/3 Durotar)
 							["coord"] = { 53.8, 80.4, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
 							["lvl"] = 4,
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
 									["description"] = "You must keep this in your bags forever.",
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["altQuests"] = { 1463 }, -- Earth Sapta (Durotar)
 							["coord"] = { 44.8, 76.2, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
 							["repeatable"] = true,
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2982,	-- Seer Graytongue
 							["sourceQuest"] = 755,	-- Rites of the Earthmother (1/3)
 							["coord"] = { 42.6, 92, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/12 Bristleback Belt
@@ -394,19 +394,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { "removed 1.7.0" },
 								}),
 								i(1382, {	-- Rock Mace
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(1383, {	-- Stone Tomahawk
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(2137, {	-- Whittling Knife
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(5776, {	-- Elder's Cane
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(5777, {	-- Brave's Axe
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -428,7 +428,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2981,	-- Chief Hawkwind
 							["sourceQuest"] = 753,	-- A Humble Task (2/2)
 							["coord"] = { 44.2, 76.1, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(763, {	-- Rites of the Earthmother (2/3)
@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 757,	-- Rite of Strength
 							["coord"] = { 44.2, 76.1, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(3093, {	-- Rune-Inscribed Note
@@ -509,7 +509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 750,	-- The Hunt Continues
 							["coord"] = { 44.9, 77.1, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/8 Battleboar Snout
@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									},
 								}),
 								i(6059, {	-- Nomadic Vest
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(747, {	-- The Hunt Begins
 							["qg"] = 2980,	-- Grull Hawkwind
 							["coord"] = { 44.9, 77.1, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/7 Plainstrider Meat
@@ -552,10 +552,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["cr"] = 2955,	-- Plainstrider
 								}),
 								i(4954, {	-- Nomadic Belt
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(4910, {	-- Painted Chain Gloves
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -563,7 +563,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 747,	-- The Hunt Begins
 							["coord"] = { 44.9, 77.1, MULGORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/10 Mountain Cougar Pelt
@@ -571,10 +571,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["cr"] = 2961,	-- Mountain Cougar
 								}),
 								i(4908, {	-- Nomadic Bracers
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(4913, {	-- Painted Chain Belt
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					n(ZONE_DROPS, {
 						i(1388, {	-- Crooked Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["cr"] = 2953,	-- Bristleback Shaman
 						}),
 						i(1384, {	-- Dull Blade
@@ -634,7 +634,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						-- #endif
 						i(4951, {	-- Squealer's Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							-- #if AFTER 10.1.7
 							["isBounty"] = true,
 							-- #endif
@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 7626 },	-- Bundle of Furs
 					},
 					["coord"] = { 38.6, 81.6, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(743, {	-- Dangers of the Windfury
@@ -761,7 +761,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(746, {	-- Dwarven Digging
 					["qg"] = 2993,	-- Baine Bloodhoof
 					["coord"] = { 47.5, 60.2, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
@@ -778,10 +778,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 7.0.3", "removed 7.0.3" },
 						}),
 						i(4969, {	-- Fortified Bindings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4970, {	-- Rough-hewn Kodo Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2994,	-- Ancestral Spirit
 					["sourceQuest"] = 773,	-- Rite of Wisdom
 					["coord"] = { 61.4, 21, MULGORE },
-					["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -912,7 +912,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(766, {	-- Mazzranache
 					["qg"] = 3055,	-- Maur Raincaller
 					["coord"] = { 47, 57, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -945,10 +945,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(4972, {	-- Cliff Runner Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4973, {	-- Plains Hunter Wristguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(748, {	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.5, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
@@ -1051,10 +1051,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(4968, {	-- Bound Harness
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4967, {	-- Tribal Warrior's Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2993,	-- Baine Bloodhoof
 					["sourceQuest"] = 763,	-- Rites of the Earthmother (2/3)
 					["coord"] = { 47.5, 60.2, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 				}),
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3054,	-- Zarlman Two-Moons
 					["sourceQuest"] = 767,	-- Rite of Vision (1/3)
 					["coord"] = { 47.8, 57.5, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 					["groups"] = {
@@ -1121,15 +1121,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 771,	-- Rite of Vision (2/3)
 					["coord"] = { 47.8, 57.5, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 					["groups"] = {
 						i(4906, {	-- Rainwalker Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4958, {	-- Sun-beaten Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1151,7 +1151,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
 					["sourceQuest"] = 14439,	-- Journey into Thunder Bluff
 					["coord"] = { 59.8, 51.6, THUNDER_BLUFF },
-					["timeline"] = { "added 4.0.1", "removed 4.0.3.13277" },
+					["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 					["groups"] = {
@@ -1169,7 +1169,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3058,	-- Arra'chea
 						}),
 						i(4909, {	-- Kodo Hunter's Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1195,7 +1195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3058,	-- Arra'chea
 						}),
 						i(4909, {	-- Kodo Hunter's Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1250,7 +1250,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2988,	-- Morin Cloudstalker
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["coord"] = { 54.4, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -1260,10 +1260,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3051,	-- Supervisor Fizsprocket
 						}),
 						i(4974, {	-- Compact Fighting Knife
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4964, {	-- Goblin Smasher
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1294,7 +1294,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6067,	-- The Hunter's Path [Durotar]
 					},
 					["coord"] = { 47.8, 55.6, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1311,7 +1311,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
 					["sourceQuest"] = 6061,	-- Taming the Beast (1/3)
 					["coord"] = { 47.8, 55.6, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1328,7 +1328,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
 					["sourceQuest"] = 6087,	-- Taming the Beast (2/3)
 					["coord"] = { 47.8, 55.6, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6065, {	-- The Hunter's Path [Thunder Bluff]
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
 					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1367,7 +1367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6066, {	-- The Hunter's Path [Mulgore]
 					["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
 					["coord"] = { 44.3, 75.7, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1376,7 +1376,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6067, {	-- The Hunter's Path [Durotar]
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
 					["coord"] = { 51.9, 43.5, DUROTAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1389,7 +1389,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						844,	-- Plainstrider Menace
 					},
 					["coord"] = { 46.76, 60.22, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1453,7 +1453,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2988,	-- Morin Cloudstalker
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["coord"] = { 54.4, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 				}),
@@ -1482,7 +1482,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 756,	-- Thunderhorn Totem
 					["coord"] = { 48.5, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
@@ -1491,7 +1491,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 44, 45, MULGORE },
 						}),
 						i(4963, {	-- Thunderhorn Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 754,	-- Winterhoof Cleansing
 					["coord"] = { 48.5, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
 					["sourceQuest"] = 6088,	-- Taming the Beast (3/3)
 					["coord"] = { 47.8, 55.6, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1587,7 +1587,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 759,	-- Wildmane Totem
 					["coord"] = { 48.5, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
@@ -1596,10 +1596,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 43, 14, MULGORE },
 						}),
 						i(3443, {	-- Ceremonial Tomahawk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4961, {	-- Dreamwatcher Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1614,7 +1614,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 758,	-- Thunderhorn Cleansing
 					["coord"] = { 48.5, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
@@ -1643,7 +1643,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 748,	-- Poison Water
 					["coord"] = { 48.5, 60.4, MULGORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["groups"] = {
@@ -1702,7 +1702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(4861, {	-- Sleek Feathered Tunic
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1736,7 +1736,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(4772, {	-- Warm Cloak
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1763,7 +1763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(17922, {	-- Lionfur Armor
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),

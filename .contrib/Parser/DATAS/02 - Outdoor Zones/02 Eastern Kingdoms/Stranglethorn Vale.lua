@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2542,	-- Catelyn the Blade
 					["sourceQuest"] = 603,	-- Ansirem's Key
 					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(617, {	-- Akiris by the Bundle (1/2)
 					["qg"] = 2494,	-- Privateer Bloads
 					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 38,
 					["groups"] = {
 						objective(1, {	-- 0/10 Akiris Reed
@@ -316,7 +316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1907,	-- Naga Explorer
 						}),
 						i(4117, {	-- Scorching Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 617,	-- Akiris by the Bundle (1/2)
 					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2543,	-- Archmage Ansirem Runeweaver
 					["sourceQuest"] = 602,	-- Magical Analysis
 					["coord"] = { 18.8, 78.5, ALTERAC_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
 					["cost"] = { { "i", 2633, 7 } },	-- Jungle Remedy
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -468,10 +468,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 44.5, 9.8, STRANGLETHORN_VALE },
 						}),
 						i(4126, {	-- Guerrilla Cleaver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4140, {	-- Palm Frond Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -510,10 +510,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(17686, {	-- Master Hunter's Bow
-							["timeline"] = { "added 1.2.0", "removed 4.0.3" },
+							["timeline"] = { "added 1.2.0", REMOVED_4_0_3 },
 						}),
 						i(17687, {	-- Master Hunter's Rifle
-							["timeline"] = { "added 1.2.0", "removed 4.0.3" },
+							["timeline"] = { "added 1.2.0", REMOVED_4_0_3 },
 						}),
 						i(4110, {	-- Master Hunter's Bow
 							["timeline"] = { "removed 1.2.0" },
@@ -533,7 +533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 582,	-- Headhunting
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(189, {	-- Bloodscalp Ears
 					["qg"] = 737,	-- Kebok
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/15 Bloodscalp Ear
@@ -572,7 +572,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4598, {	-- Goblin Fishing Pole
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -597,7 +597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(596, {	-- Bloody Bone Necklaces
 					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -618,7 +618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4135, {	-- Bloodbone Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -626,14 +626,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 215,	-- Jungle Secrets
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(339, {	-- Chapter I
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 2725, 1 },	-- Green Hills of Stranglethorn - Page 1
 						{ "i", 2728, 1 },	-- Green Hills of Stranglethorn - Page 4
@@ -643,14 +643,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(2756, {	-- Green Hills of Stranglethorn - Chapter I
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(340, {	-- Chapter II
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 2734, 1 },	-- Green Hills of Stranglethorn - Page 10
 						{ "i", 2735, 1 },	-- Green Hills of Stranglethorn - Page 11
@@ -660,14 +660,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(2757, {	-- Green Hills of Stranglethorn - Chapter II
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(341, {	-- Chapter III
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 2742, 1 },	-- Green Hills of Stranglethorn - Page 18
 						{ "i", 2744, 1 },	-- Green Hills of Stranglethorn - Page 20
@@ -677,14 +677,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(2758, {	-- Green Hills of Stranglethorn - Chapter III
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(342, {	-- Chapter IV
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 2749, 1 },	-- Green Hills of Stranglethorn - Page 25
 						{ "i", 2750, 1 },	-- Green Hills of Stranglethorn - Page 26
@@ -693,7 +693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(2759, {	-- Green Hills of Stranglethorn - Chapter IV
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 574,	-- Special Forces
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -717,7 +717,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 813,	-- Colonel Kurzen
 						}),
 						i(4127, {	-- Shrapnel Blaster
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -730,7 +730,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 29.5, 89.3, STRANGLETHORN_VALE },
 						{ 33.6, 88.3, STRANGLETHORN_VALE },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 35,
 				}),
@@ -738,7 +738,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2553 },	-- A Soggy Scroll
 					["sourceQuest"] = 624,	-- Cortello's Riddle (1/3)
 					["coord"] = { 22.8, 48.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSTWALLOW_MARSH },
 					["lvl"] = 35,
 				}),
@@ -746,13 +746,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2555 },	-- Musty Scroll
 					["sourceQuest"] = 625,	-- Cortello's Riddle (2/3)
 					["coord"] = { 31.1, 66.1, DUSTWALLOW_MARSH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["lvl"] = 35,
 					["groups"] = {
 						i(11324, {	-- Explorer's Knapsack
 							["coord"] = { 80.8, 46.8, THE_HINTERLANDS },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -760,7 +760,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["sourceQuest"] = 609,	-- Voodoo Dues
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Maury's Key
@@ -775,7 +775,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4129, {	-- Collection Plate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -783,7 +783,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 773,	-- Krazek
 					["sourceQuest"] = 1115,	-- The Rumormonger
 					["coord"] = { 27, 77.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
 					["groups"] = {
@@ -823,17 +823,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3621,	-- The Formation of Felbane
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(10697, {	-- Enchanted Azsharite Felbane Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10698, {	-- Enchanted Azsharite Felbane Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10696, {	-- Enchanted Azsharite Felbane Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -841,7 +841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2495,	-- Drizzlik
 					["sourceQuest"] = 577,	-- Some Assembly Required
 					["coord"] = { 28.2, 77.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 31,
 					["groups"] = {
 						objective(1, {	-- 0/1 Elder Crocolisk Skin
@@ -849,7 +849,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2635,	-- Elder Saltwater Crocolisk
 						}),
 						i(4109, {	-- Excelsior Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -862,14 +862,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						i(8703,	{	-- Signet of Expertise
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(8708, {	-- Hammer of Expertise
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 									["collectible"] = false,
 								}),
 							},
@@ -881,14 +881,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 8553,	-- The Captain's Cutlass
 					["altQuests"] = { 618 },	-- Facing Negolash
 					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						q(619, {	-- Enticing Negolash
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 							["cost"] = {{ "i", 4457, 10 }},	-- Barbecued Buzzard Wing
 							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Smotts' Cutlass
@@ -912,7 +912,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(627, {	-- Favor for Krazek
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ARATHI_HIGHLANDS },
 					["cost"] = { { "i", 4278, 4 } },	-- Lesser Bloodstone Ore
 					["races"] = ALLIANCE_ONLY,
@@ -921,13 +921,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4785, {	-- Fine Gold Thread
 					["qg"] = 2670,	-- Xizk Goodstitch <Tailoring Supplies>
 					["coord"] = { 28.6, 76.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["repeatable"] = true,
 					["lvl"] = 31,
 					["groups"] = {
 						i(12293, {	-- Fine Gold Thread
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -939,7 +939,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2763,	-- The Art of the Imbue
 					},
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["lvl"] = 40,
@@ -947,7 +947,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2932, {	-- Grim Message
 					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -976,7 +976,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 581,	-- Hunt for Yenniku
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -985,17 +985,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 671,	-- Bloodscalp Headhunter
 						}),
 						i(4133, {	-- Darkspear Cuffs
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4132, {	-- Darkspear Armsplints
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(213, {	-- Hostile Takeover
 					["qg"] = 737,	-- Kebok
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 31,
 					["groups"] = {
 						objective(1, {	-- Tumbled Crystal
@@ -1003,14 +1003,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1096,	-- Venture Co. Geologist
 						}),
 						i(4121, {	-- Gemmed Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(581, {	-- Hunt for Yenniku
 					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(201, {	-- Investigate the Camp
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 				}),
 				q(215, {	-- Jungle Secrets
@@ -1044,7 +1044,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
 					-- #endif
 					["coord"] = { 40, 8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1052,7 +1052,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2493,	-- Dizzy One-Eye
 					["sourceQuest"] = 595,	-- The Bloodsail Buccaneers (1/5)
 					["coord"] = { 28.6, 75.9, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 					["groups"] = {
 						objective(1, {	-- Dizzy's Eye
@@ -1084,14 +1084,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 4085 },	-- Krazek's Crock Pot
 					},
 					["coord"] = { 37.7, 3.3, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
 				q(207, {	-- Kurzen's Mystery
 					["qg"] = 739,	-- Brother Nimetz
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 601,	-- Water Elementals
 					["coord"] = { 27.2, 76.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
@@ -1143,7 +1143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 205,	-- Troll Witchery
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1152,7 +1152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 818,	-- Mai'Zoth
 						}),
 						i(4125, {	-- Tranquil Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1161,14 +1161,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 4098 },	-- Carefully Folded Note
 						{ "o", 2560 },	-- Half-Buried Bottle
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(630, {	-- Message in a Bottle (2/2)
 					["qg"] = 2634,	-- Princess Poobah
 					["sourceQuest"] = 594,	-- Message in a Bottle (1/2)
 					["coord"] = { 38.4, 80.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 42,
 					["groups"] = {
 						objective(1, {	-- 0/1 Shackle Key
@@ -1177,14 +1177,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1559,	-- King Mukla
 						}),
 						i(4118, {	-- Poobah's Nose Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(570, {	-- Mok'thardin's Enchantment (1/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1205,7 +1205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 570,	-- Mok'thardin's Enchantment (1/4)
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1219,7 +1219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 572,	-- Mok'thardin's Enchantment (2/4)
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 571,	-- Mok'thardin's Enchantment (3/4)
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1248,7 +1248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
 						}),
 						i(4112, {	-- Choker of the High Shaman
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1296,7 +1296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(4108, {	-- Panther Hunter Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 329,	-- The Spy Revealed!
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1381,7 +1381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(4119, {	-- Raptor Hunter Tunic
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1419,15 +1419,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1422,	-- Corporal Sethman
 					["sourceQuest"] = 330,	-- Patrol Schedules
 					["coord"] = { 37.7, 3.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(4123, {	-- Frost Metal Pauldrons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4139, {	-- Junglewalker Sandals
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1438,7 +1438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 627,	-- Favor for Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 					-- #if BEFORE 4.0.3
@@ -1454,14 +1454,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 606,	-- Scaring Shaky
 					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(3626, {	-- Return to the Blasted Lands
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3625,	-- Enchanted Azsharite Fel Weaponry
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 45,
 				}),
@@ -1469,7 +1469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 591,	-- The Mind's Eye
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1486,17 +1486,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4134, {	-- Nimboya's Mystical Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6723, {	-- Medal of Courage
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(606, {	-- Scaring Shaky
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["coord"] = { 27.78, 77.07, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/5 Mistvale Giblets
@@ -1527,7 +1527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(605, {	-- Singing Blue Shards
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["coord"] = { 27.12, 77.22, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/10 Singing Crystal Shard
@@ -1546,7 +1546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 737,	-- Kebok
 					["sourceQuest"] = 189,	-- Bloodscalp Ears
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 					["groups"] = {
 						objective(1, {	-- 0/18 Skullsplitter Tusk
@@ -1571,7 +1571,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["cost"] = {
@@ -1581,14 +1581,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(7983, {	-- Plans: Ornate Mithril Pants (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(577, {	-- Some Assembly Required
 					["qg"] = 2495,	-- Drizzlik
 					["coord"] = { 28.2, 77.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 31,
 					["groups"] = {
 						objective(1, {	-- 0/5 Snapjaw Crocolisk Skin
@@ -1601,7 +1601,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 584,	-- Bloodscalp Clan Heads
 					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1625,7 +1625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 584,	-- Bloodscalp Clan Heads
 					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1659,7 +1659,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						203,	-- The Second Rebellion
 					},
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1678,7 +1678,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						629,	-- The Vile Reef
 					},
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1699,17 +1699,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4137, {	-- Darkspear Shoes
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4136, {	-- Darkspear Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(348, {	-- Stranglethorn Fever
 					["qg"] = 2486,	-- Fin Fizracket
 					["coord"] = { 27.6, 76.7, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
 						q(349, {	-- Stranglethorn Fever
@@ -1728,7 +1728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4113, {	-- Medicine Blanket
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1738,14 +1738,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2252 },	-- Miscellaneous Goblin Supplies
 					},
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(575, {	-- Supply and Demand
 					["qg"] = 2495,	-- Drizzlik
 					["coord"] = { 28.29, 77.59, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 26,
 					["groups"] = {
 						objective(1, {	-- 0/2 Large River Crocolisk Skin
@@ -1758,7 +1758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["cost"] = {
@@ -1768,35 +1768,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(7985, {	-- Plans: Ornate Mithril Shoulder (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(595, {	-- The Bloodsail Buccaneers (1/5)
 					["qg"] = 2490,	-- First Mate Crazz
 					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 				}),
 				q(597, {	-- The Bloodsail Buccaneers (2/5)
 					["provider"] = { "o", 2083 },	-- Bloodsail Correspondence
 					["sourceQuest"] = 595,	-- The Bloodsail Buccaneers (1/5)
 					["coord"] = { 27.3, 69.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 				}),
 				q(599, {	-- The Bloodsail Buccaneers (3/5)
 					["qg"] = 2490,	-- First Mate Crazz
 					["sourceQuest"] = 597,	-- The Bloodsail Buccaneers (2/5)
 					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 				}),
 				q(604, {	-- The Bloodsail Buccaneers (4/5)
 					["qg"] = 2487,	-- Fleet Master Seahorn
 					["sourceQuest"] = 599,	-- The Bloodsail Buccaneers (3/5)
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 					["groups"] = {
 						objective(1, {	-- 0/10 Bloodsail Swashbuckler slain
@@ -1828,7 +1828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2487,	-- Fleet Master Seahorn
 					["sourceQuest"] = 604,	-- The Bloodsail Buccaneers (4/5)
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain Stillwater slain
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 30.6, 90.6, STRANGLETHORN_VALE },
 						}),
 						i(4138, {	-- Blackwater Tunic
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["altQuests"] = { 614 },	-- The Captain's Chest [Old]
 					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Smotts' Chest
@@ -1870,14 +1870,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 8552,	-- The Monogrammed Sash
 					["altQuests"] = { 615 },	-- The Captain's Cutlass
 					["coord"] = { 26.6, 73.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(1041, {	-- The Caravan Road
 					["qg"] = 3945,	-- Caravaneer Ruzzgot
 					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
 					["coord"] = { 27.4, 74.1, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2542,	-- Catelyn the Blade
 					["sourceQuest"] = 610,	-- "Pretty Boy" Duncan
 					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -1898,14 +1898,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2624,	-- Gazban
 						}),
 						i(4120, {	-- Robe of Crystal Waters
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(568, {	-- The Defense of Grom'gol (1/2)
 					["qg"] = 2464,	-- Commander Aggro'gosh
 					["coord"] = { 32.2, 28.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1918,7 +1918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2464,	-- Commander Aggro'gosh
 					["sourceQuest"] = 568,	-- The Defense of Grom'gol (1/2)
 					["coord"] = { 32.2, 28.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1144 },	-- Mosh'Ogg Witch Doctor
 						}),
 						i(4115, {	-- Grom'gol Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1940,7 +1940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						585,	-- Speaking with Nezzliok
 					},
 					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -1948,7 +1948,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["cost"] = {
@@ -1958,7 +1958,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(7984, {	-- Plans: Ornate Mithril Gloves (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1966,7 +1966,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 716,	-- Barnil Stonepot
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 2756, 1 },	-- Green Hills of Stranglethorn - Chapter I
 						{ "i", 2757, 1 },	-- Green Hills of Stranglethorn - Chapter II
@@ -1979,7 +1979,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 1.2.0" },
 						}),
 						i(17688, {	-- Jungle Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(3928),	-- Superior Healing Potion
@@ -1990,7 +1990,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(616, {	-- The Haunted Isle
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
@@ -2000,12 +2000,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2719 },	-- Small Brass Key
 					},
 					["coord"] = { 43.7, 9.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(4122, {	-- Bookmaker's Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 589,	-- The Singing Crystals
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -2033,7 +2033,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2759,	-- In Search of Galvan
 					},
 					["coord"] = { 28.8, 75.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["lvl"] = 40,
@@ -2042,7 +2042,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 3985 },	-- Monogrammed Sash
 					["altQuests"] = { 620 },	-- The Monogrammed Sash
 					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 1493,	-- Mok'rash
 					["lvl"] = 35,
 				}),
@@ -2071,7 +2071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(203, {	-- The Second Rebellion
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -2084,7 +2084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 588,	-- The Fate of Yenniku
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -2101,7 +2101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 328,	-- The Hidden Key
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -2112,14 +2112,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 616,	-- The Haunted Isle
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
 				q(629, {	-- The Vile Reef
 					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -2181,7 +2181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(4107, {	-- Tiger Hunter Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2234,7 +2234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207,	-- Kurzen's Mystery
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -2251,7 +2251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2488,	-- Deeg
 					["sourceQuest"] = 597,	-- The Bloodsail Buccaneers (2/5)
 					["coord"] = { 26.9, 77.3, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 37,
 					["groups"] = {
 						objective(1, {	-- 0/15 Snuff
@@ -2280,7 +2280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["sourceQuest"] = 605,	-- Singing Blue Shards
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/10 Singing Blue Crystal
@@ -2295,10 +2295,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(5253, {	-- Goblin Igniter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4128, {	-- Silver Spade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2306,7 +2306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["sourceQuest"] = 607,	-- Return to MacKinley
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- Maury's Clubbed Foot
@@ -2330,7 +2330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 578,	-- The Stone of the Tides
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
@@ -2353,7 +2353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(580, {	-- Whiskey Slim's Lost Grog
 					["qg"] = 2491,	-- Whiskey Slim
 					["coord"] = { 27.1, 77.5, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["lvl"] = 40,
 					["groups"] = {
@@ -2378,7 +2378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(621, {	-- Zanzil's Secret
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/12 Zanzil's Mixture
@@ -2396,7 +2396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(4131, {	-- Belt of Corruption
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2450,10 +2450,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5028, {	-- Lord Sakrasis' Scepter
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5029, {	-- Talisman of the Naga Lord
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2462,7 +2462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.0, 31.8, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(1680, {	-- Headchopper
-							["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 						}),
 					},
 				}),
@@ -2504,10 +2504,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1604, {	-- Chromatic Sword
-							["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 						}),
 						i(4478, {	-- Iridescent Scale Leggings
-							["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 						}),
 					},
 				}),
@@ -2839,7 +2839,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(1998, {	-- Bloodscalp Channeling Staff
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 697,	-- Bloodscalp Shaman
 				}),
 				i(4611, {	-- Blue Pearl
@@ -2853,19 +2853,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(5079, {	-- Cold Basilisk Eye
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 690,	-- Cold Eye Basilisk
 				}),
 				i(1703, {	-- Crystal Basilisk Spine
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 689,	-- Crystal Spine Basilisk
 				}),
 				i(1677, {	-- Drake-scale Vest
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 680,	-- Mosh'Ogg Lord
 				}),
 				i(1659, {	-- Engineering Gloves
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 677,	-- Venture Co. Tinkerer
 				}),
 				i(2955, {	-- First Mate Hat
@@ -2882,11 +2882,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(11203, {	-- Formula: Enchant Gloves - Advanced Mining (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 674,	-- Venture Co. Strip Miner
 				}),
 				i(1991, {	-- Goblin Power Shovel
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					-- #if AFTER 7.3.5
 					["crs"] = {
 						1094,	-- Venture Co. Miner
@@ -2897,21 +2897,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1986, {	-- Gutrender
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 709,	-- Mosh'Ogg Warmonger
 				}),
 				-- #if AFTER CATA
 				i(1680, {	-- Headchopper
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 723,	-- Mosh'Ogg Butcher
 				}),
 				-- #endif
 				i(1522, {	-- Headhunting Spear
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 671,	-- Bloodscalp Headhunter
 				}),
 				i(1523, {	-- Huge Stone Club
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 597,	-- Bloodscalp Berserker
 				}),
 				-- #if BEFORE CATA
@@ -2924,11 +2924,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1679, {	-- Korg Bat
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 1142,	-- Mosh'Ogg Brute
 				}),
 				i(5755, {	-- Onyx Shredder Plate
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 4260,	-- Venture Co. Shredder
 				}),
 				i(8494, {	-- Hyacinth Macaw (PET!)
@@ -2952,7 +2952,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1997, {	-- Pressed Felt Robe
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
 				-- #if BEFORE 4.0.3
@@ -2961,18 +2961,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1624, {	-- Skullsplitter Helm
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["crs"] = {
 						783,	-- Skullsplitter Berserker
 						781,	-- Skullsplitter Headhunter
 					},
 				}),
 				i(1664, {	-- Spellforce Rod
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 676,	-- Venture Co. Surveyor
 				}),
 				i(1652, {	-- Sturdy Lunchbox
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
 					["cr"] = 921,	-- Venture Co. Lumberjack
 					-- #else
@@ -2983,7 +2983,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1996, {	-- Voodoo Band
-					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
 					["cr"] = 660,	-- Bloodscalp Witch Doctor
 				}),
 				i(8153, {	-- Wildvine

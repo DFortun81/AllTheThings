@@ -109,7 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5728,	-- Hidden Enemies (3/5)
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
@@ -133,21 +133,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5729,	-- Hidden Enemies (4/5)
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
 						i(15424, {	-- Axe of Orgrimmar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15445, {	-- Hammer of Orgrimmar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15443, {	-- Kris of Orgrimmar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15444, {	-- Staff of Orgrimmar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -193,23 +193,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5724, {	-- Returning the Lost Satchel
 					["qg"] = 11834,	-- Maur Grimtotem
 					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14381, 1 } },	-- Grimtotem Satchel
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
 						i(15452, {	-- Featherbead Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15453, {	-- Savannah Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5722, {	-- Searching for the Lost Satchel
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
 					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
@@ -349,13 +349,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 14396 },	-- Incantations from the Nether
 						}),
 						i(15450, {	-- Dredgemire Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15451, {	-- Gargoyle Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15449, {	-- Ghastly Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -363,7 +363,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(14356, {	-- The Power to Destroy... (After Wrathgate)
 					["qg"] = 36273,	-- Bragor Bloodfist
 					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -374,13 +374,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 14396 },	-- Incantations from the Nether
 						}),
 						i(15450, {	-- Dredgemire Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15451, {	-- Gargoyle Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15449, {	-- Ghastly Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),

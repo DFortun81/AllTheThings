@@ -13,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
-			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, n(6109, {	-- Azuregos
+			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, n(6109, {	-- Azuregos
 				["coord"] = { 53.3, 80.4, AZSHARA },
 				["isRaid"] = true,
 				-- #if ANYCLASSIC
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18547),	-- Unmelting Ice Girdle
 				},
 			}))),
-			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, n(DRAGONS_OF_NIGHTMARE, {
+			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, n(DRAGONS_OF_NIGHTMARE, {
 				["coords"] = {
 					{ 51.2, 10.9, FERALAS },
 					{ 63.3, 27.8, THE_HINTERLANDS },

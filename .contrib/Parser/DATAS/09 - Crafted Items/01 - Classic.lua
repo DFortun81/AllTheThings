@@ -1574,8 +1574,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(43399, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Thunder Clap / Glyph of Unending Rage[MOP+]
 			i(43395, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Battle / Glyph of Mystic Shout[MOP+]
-			i(43397, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Charge
-			i(43396, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Bloodrage
+			i(43397, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Charge
+			i(43396, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Bloodrage
 
 			i(41096, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Spiritual Attunement / Glyph of Divine Protection[CATA+]
 			i(42912, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
@@ -1597,19 +1597,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(43331, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
 			i(43368, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
 			-- #endif
-			i(43357, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Fire Ward
-			i(43398, {["timeline"]={"added 3.0.2","removed 4.0.3", "added 5.0.4"}}),	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
+			i(43357, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Fire Ward
+			i(43398, {["timeline"]={"added 3.0.2",REMOVED_4_0_3, "added 5.0.4"}}),	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
 			i(43386, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Water Shield / Glyph of the Arctic Wolf[CATA] / Glyph of the Spectral Wolf[MOP+]
 			i(48720, {["timeline"]={"added 3.2.0","removed 6.0.2"}}),	-- Glyph of Claw / Glyph of Ferocious Bite
 			i(42960, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Evasion
-			i(43418, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Heroic Strike
+			i(43418, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Heroic Strike
 			i(42410, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Psychic Scream
 			i(41537, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
 			i(42462, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Healthstone
 			i(41106, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
 			i(42961, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
 			i(43342, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Fade
-			i(43423, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Rending
+			i(43423, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Rending
 			i(41530, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
 			i(40914, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Healing Touch
 			i(42735, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana[MOP]
@@ -1617,7 +1617,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(41092, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
 			i(42962, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Expose Armor
 			i(42400, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
-			i(43417, {["timeline"]={"added 3.0.2","removed 4.0.3","added 5.0.4","removed 6.0.2"}}),	-- Glyph of Hamstring
+			i(43417, {["timeline"]={"added 3.0.2",REMOVED_4_0_3,"added 5.0.4","removed 6.0.2"}}),	-- Glyph of Hamstring
 			i(41532, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
 			i(42458, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Fear
 			i(43360, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Ward / Glyph of the Monkey[CATA+]
@@ -1660,13 +1660,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(40902, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rip / Glyph of Prowl[MOP+]
 			i(42903, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Deterrence
 			i(43355, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Pack / Glyph of Aspect of the Pack[CATA+]
-			i(42747, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Scorch
+			i(42747, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Scorch
 			i(41099, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Consecration
 			i(42972, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush[5.0.4-5.4.0] / Glyph of Redirect[5.4.0+]
 			i(42416, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Smite
 			i(41533, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Healing Stream Totem
-			i(42466, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Searing Pain
-			i(43420, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Barbaric Insults
+			i(42466, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Searing Pain
+			i(43420, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Barbaric Insults
 			i(42904, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Disengage
 			i(41098, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Crusader Strike / Glyph of Avenging Wrath[MOP+]
 			i(42397, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dispel Magic / Glyph of Purify[MOP+]
@@ -1688,11 +1688,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(41541, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Water Mastery / Glyph of Water Shield[CATA+]
 			i(42468, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Glyph of Shadowburn
 			i(45804, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
-			i(42750, {["timeline"]={"added 3.0.2","removed 4.0.3","added 5.0.4","removed 6.0.2"}}),	-- Glyph of Mana Gem
+			i(42750, {["timeline"]={"added 3.0.2",REMOVED_4_0_3,"added 5.0.4","removed 6.0.2"}}),	-- Glyph of Mana Gem
 			i(43546, {["timeline"]={"added 3.0.8","removed 7.0.3"}}),	-- Glyph of Icy Touch
-			i(45805, {["timeline"]={"added 3.1.0","removed 4.0.3"}}),	-- Glyph of Disease
+			i(45805, {["timeline"]={"added 3.1.0",REMOVED_4_0_3}}),	-- Glyph of Disease
 			i(42974, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Sprint
-			i(43416, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Execution
+			i(43416, {["timeline"]={"added 3.0.2",REMOVED_4_0_3}}),	-- Glyph of Execution
 			i(43541, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Death Grip
 
 			i(89868, {	-- Mark of the Cheetah // Glyph of the Cheetah (CI!)
@@ -2541,7 +2541,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(17012),	-- Core Leather
 			i(6470),	-- Deviate Scale
 			applyclassicphase(PHASE_FOUR, i(20381, {	-- Dreamscale
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			})),
 			i(15417),	-- Devilsaur Leather
 			i(15422),	-- Frostsaber Leather
@@ -2558,8 +2558,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(2319),	-- Medium Leather
 			i(11512),	-- Patch of Tainted Skin
 			i(6471),	-- Perfect Deviate Scale
-			applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Primal Bat Leather
-			applyclassicphase(PHASE_FOUR, i(19768, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Primal Tiger Leather
+			applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Primal Bat Leather
+			applyclassicphase(PHASE_FOUR, i(19768, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Primal Tiger Leather
 			i(12731, {	-- Pristine Hide of the Beast
 				["timeline"] = { "removed 6.0.2" },
 			}),
@@ -2650,7 +2650,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER 7.3.0
 				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
 				-- #endif
-				["timeline"] = { "removed 4.0.3", ADDED_7_3_0 },
+				["timeline"] = { REMOVED_4_0_3, ADDED_7_3_0 },
 			}),
 			i(7050),	-- Silk Headband
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757)),	-- Sylvan Crown
@@ -2684,7 +2684,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(2578),	-- Barbaric Linen Vest
 			i(10001),	-- Black Mageweave Robe
 			i(9998),	-- Black Mageweave Vest
-			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodvine Vest
+			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Vest
 			i(6242),	-- Blue Linen Robe
 			i(6240),	-- Blue Linen Vest
 			i(6263),	-- Blue Overalls
@@ -2736,10 +2736,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			i(14136, {	-- Robe of Winter Night
-				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 			}),
 			i(5770, {	-- Robes of Arcana
-				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 			}),
 			i(13858),	-- Runecloth Robe
 			i(13857),	-- Runecloth Tunic
@@ -2771,7 +2771,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(7064),	-- Crimson Silk Gloves
 			i(10019),	-- Dreamweave Gloves
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18407, {	-- Felcloth Gloves
-				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 			})),
 			i(16979),	-- Flarecore Gloves
 			i(13870),	-- Frostweave Gloves
@@ -2782,10 +2782,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4307),	-- Heavy Linen Gloves
 			i(4310),	-- Heavy Woolen Gloves
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18408, {	-- Inferno Gloves
-				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 			})),
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18409, {	-- Mooncloth Gloves
-				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 			})),
 			i(4331),	-- Phoenix Gloves
 			i(10018),	-- Red Mageweave Gloves
@@ -2796,7 +2796,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		category(238, {	-- Belts
 			i(7052),	-- Azure Silk Belt
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18405, {	-- Belt of the Archmage
-				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 			})),
 			i(7055),	-- Crimson Silk Belt
 			i(7061),	-- Earthen Silk Belt
@@ -2816,7 +2816,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		category(240, {	-- Pants
 			i(7046),	-- Azure Silk Pants
 			i(9999),	-- Black Mageweave Leggings
-			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodvine Leggings
+			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Leggings
 			i(14104),	-- Brightcloth Pants
 			i(4343),	-- Brown Linen Pants
 			i(14045),	-- Cindercloth Pants
@@ -2846,7 +2846,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		category(241, {	-- Boots
 			applyclassicphase(PHASE_THREE, i(19056)),	-- Argent Boots
 			i(10026),	-- Black Mageweave Boots
-			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodvine Boots
+			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Boots
 			i(4325),	-- Boots of the Enchanter
 			i(10044),	-- Cindercloth Boots
 			i(6836),	-- Dress Shoes
@@ -2876,7 +2876,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14044),	-- Cindercloth Cloak
 			i(14134),	-- Cloak of Fire
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {	-- Cloak of Warding
-				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
 			})),
 			i(7056),	-- Crimson Silk Cloak
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace

@@ -4,17 +4,17 @@
 local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 	return applyclassicphase(PHASE_SIX, q(id, {	-- Craftsman's Writ - Quest
 		["provider"] = { "i", itemID },	-- Craftsman's Writ - Item
-		["timeline"] = { "removed 4.0.3" },
+		["timeline"] = { REMOVED_4_0_3 },
 		["repeatable"] = true,
 		["cost"] = { cost },
 		["lvl"] = 55,
 		-- #if BEFORE 4.0.3
 		["groups"] = {
 			i(22524, {	-- Insignia of the Crusade
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(22523, {	-- Insignia of the Dawn
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 		},
 		-- #endif
@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
 					["lvl"] = 60,
 				}),
@@ -1183,11 +1183,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						i(12846, {	-- Argent Dawn Commission
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1222,7 +1222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 14.4, 33.6, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Augustus' Receipt Book
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(27522, {	-- Beat it Out of Them
@@ -1309,12 +1309,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22523, {	-- Insignia of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -1332,7 +1332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/30 Plaguebat slain
@@ -1347,7 +1347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 80.0, 57.4, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1376,13 +1376,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22526, 30 } },	-- Bone Fragments
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22524, {	-- Insignia of the Crusade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -1397,12 +1397,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22526, 30 } },	-- Bone Fragments
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22524, {	-- Insignia of the Crusade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -1443,7 +1443,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/15 Slab of Carrion Worm Meat
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 25 } },	-- Argent Dawn Valor Token
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["altQuests"] = {
 						5517,	-- Chromatic Mantle of the Dawn
 						5521,	-- Chromatic Mantle of the Dawn
@@ -1515,13 +1515,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22527, 30 } },	-- Core of Elements
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22523, {	-- Insignia of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -1534,12 +1534,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
 					["cost"] = { { "i", 12843, 1 } },	-- Corruptor's Scourgestone
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1603,12 +1603,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.1, 57.5, EASTERN_PLAGUELANDS },
 					-- #endif
 					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22568, {	-- Sealed Craftsman's Writ
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1623,13 +1623,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22525, 30 } },	-- Crypt Fiend Parts
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22524, {	-- Insignia of the Crusade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -1644,12 +1644,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22525, 30 } },	-- Crypt Fiend Parts
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22524, {	-- Insignia of the Crusade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -1686,13 +1686,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22523, {	-- Insignia of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -1705,7 +1705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/15 Darrowshire Spirits Freed
@@ -1740,7 +1740,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/20 Plaguehound Runt slain
@@ -1762,7 +1762,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
@@ -1771,10 +1771,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 11897,	-- Duskwing
 						}),
 						i(16994, {	-- Duskwing Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16995, {	-- Duskwing Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1812,7 +1812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
@@ -1823,22 +1823,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22667, {	-- Bracers of Hope
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22668, {	-- Bracers of Subterfuge
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22659, {	-- Medallion of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22678, {	-- Talisman of Ascendance
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22656, {	-- The Purifier
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1851,7 +1851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["maxReputation"] = { 529, HONORED },	-- Argent Dawn
 					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
@@ -1862,22 +1862,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22667, {	-- Bracers of Hope
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22668, {	-- Bracers of Subterfuge
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22659, {	-- Medallion of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22678, {	-- Talisman of Ascendance
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22656, {	-- The Purifier
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1890,7 +1890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["maxReputation"] = { 529, REVERED },	-- Argent Dawn
 					["minReputation"] = { 529, HONORED },	-- Argent Dawn
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
@@ -1901,22 +1901,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22667, {	-- Bracers of Hope
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22668, {	-- Bracers of Subterfuge
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22659, {	-- Medallion of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22678, {	-- Talisman of Ascendance
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22656, {	-- The Purifier
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
@@ -1940,22 +1940,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22667, {	-- Bracers of Hope
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22668, {	-- Bracers of Subterfuge
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22659, {	-- Medallion of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22678, {	-- Talisman of Ascendance
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22656, {	-- The Purifier
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -1966,7 +1966,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.3, 59.4, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2009,7 +2009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -2032,7 +2032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },
 					-- #endif
 					["maps"] = { DIRE_MAUL, FERALAS, UNGORO_CRATER },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12655, 1 },	-- Enchanted Thorium Bar
 						{ "i", 11562, 5 },	-- Crystal Restore
@@ -2213,7 +2213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 28.1, 86.1, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hameya's Key
@@ -2226,10 +2226,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 12248,	-- Infiltrator Hameya
 						}),
 						i(15814, {	-- Hameya's Slayer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15815, {	-- Hameya's Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2241,7 +2241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2300,17 +2300,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						i(15855, {  -- Ring of Protection
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15856, {  -- Archlight Talisman
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15857, {  -- Magebane Scion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2426,12 +2426,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
 					["cost"] = { { "i", 12841, 10 } },	-- Invader's Scourgestones
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2595,7 +2595,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				}),
 				q(77243, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Corruptor's Scourgestones
@@ -2636,7 +2636,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/5 Resonating Skull
@@ -2673,12 +2673,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2694,7 +2694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
@@ -2759,7 +2759,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Pamela's Doll
@@ -2831,7 +2831,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(6147, {	-- Return to Nathanos
@@ -2842,7 +2842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 88.2, 86.2, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 				}),
@@ -2907,15 +2907,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22529, 30 } },	-- Savage Frond
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22524, {	-- Insignia of the Crusade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22523, {	-- Insignia of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -2931,16 +2931,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22529, 30 } },	-- Savage Frond
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22524, {	-- Insignia of the Crusade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22523, {	-- Insignia of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -3032,7 +3032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 22524, 6 },	-- Insignia of the Crusade
 						{ "i", 22523, 6 },	-- Insignia of the Dawn
@@ -3041,22 +3041,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22681, {	-- Band of Piety
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22680, {	-- Band of Resolution
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22688, {	-- Verimonde's Last Resort
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22679, {	-- Supply Bag
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22690, {	-- Leggings of the Plague Hunter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22689, {	-- Sanctified Leather Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -3069,7 +3069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22524, 30 },	-- Insignia of the Crusade
@@ -3078,22 +3078,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22681, {	-- Band of Piety
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22680, {	-- Band of Resolution
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22688, {	-- Verimonde's Last Resort
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22679, {	-- Supply Bag
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22690, {	-- Leggings of the Plague Hunter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22689, {	-- Sanctified Leather Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -3106,7 +3106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22524, 20 },	-- Insignia of the Crusade
@@ -3115,22 +3115,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22681, {	-- Band of Piety
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22680, {	-- Band of Resolution
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22688, {	-- Verimonde's Last Resort
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22679, {	-- Supply Bag
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22690, {	-- Leggings of the Plague Hunter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22689, {	-- Sanctified Leather Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -3143,7 +3143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22524, 7 },	-- Insignia of the Crusade
@@ -3152,22 +3152,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						i(22681, {	-- Band of Piety
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22680, {	-- Band of Resolution
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22688, {	-- Verimonde's Last Resort
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22679, {	-- Supply Bag
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22690, {	-- Leggings of the Plague Hunter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22689, {	-- Sanctified Leather Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -3200,7 +3200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 80.6, 58.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 10562, 8 },	-- Hi-Explosive Bomb
 						{ "i", 10560, 8 },	-- Unstable Trigger
@@ -3241,7 +3241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18646, 1 },	-- The Eye of Divinity
 						{ "i", 18665, 1 },	-- The Eye of Shadow
@@ -3254,10 +3254,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 						i(18609, {	-- Anathema
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(18608, {	-- Benediction
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3278,7 +3278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5941,	-- Return to Chromie
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- Accept Redpath's Forgiveness
@@ -3336,7 +3336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -3348,7 +3348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -3356,7 +3356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5961, {	-- The Champion of the Banshee Queen
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["coord"] = { 57.8, 91.8, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -3415,7 +3415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
@@ -3423,13 +3423,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 11896 },	-- Borelgore
 						}),
 						i(17002, {	-- Ichor Spitter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17003, {	-- Skullstone Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17004, {	-- Sarah's Guide
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3465,7 +3465,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
@@ -3479,7 +3479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 14349,	-- The Call to Command
 					["coord"] = { 57.8, 92.0, UNDERCITY },
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
@@ -3499,12 +3499,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22527, 30 } },	-- Core of Elements
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22523, {	-- Insignia of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -3528,7 +3528,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 22524, 10 },	-- Insignia of the Crusade
 						{ "g", 300000 },	-- 30g
@@ -3537,7 +3537,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 60,
 					["groups"] = {
 						i(22636, {	-- Ice Guard
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -3558,7 +3558,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 					["groups"] = {
@@ -3588,7 +3588,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
@@ -3596,13 +3596,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 12339 },	-- Demetria <The Scarlet Oracle>
 						}),
 						i(16996, {	-- Gorewood Bow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16997, {	-- Stormrager
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16998, {	-- Sacred Protector
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3613,7 +3613,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 22524, 10 },	-- Insignia of the Crusade
 						{ "g", 300000 },	-- 30g
@@ -3622,7 +3622,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 60,
 					["groups"] = {
 						i(22638, {	-- Shadow Guard
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -3660,11 +3660,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.1, 57.5, EASTERN_PLAGUELANDS },
 					-- #endif
 					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
 						i(22568, {	-- Sealed Craftsman's Writ
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				})),
@@ -3675,7 +3675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 					["groups"] = {
@@ -3744,7 +3744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 				}),
@@ -3767,7 +3767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 					["groups"] = {
@@ -3787,7 +3787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(27385, {	-- Uncle Carlin
@@ -3837,7 +3837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Skull of Horgus
@@ -3916,7 +3916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 80.6, 58.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/8 Scourge Structures Destroyed
@@ -3926,13 +3926,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(16992, {	-- Smokey's Explosive Launcher
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16993, {	-- Smokey's Fireshooter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17523, {	-- Smokey's Drape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5951),	-- Moist Towelette
 					},
@@ -3959,7 +3959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 80.0, 58.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
@@ -3968,10 +3968,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 22593 },	-- Writ of Safe Passage
 						}),
 						i(22524, {	-- Insignia of the Crusade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(22523, {	-- Insignia of the Dawn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 					-- #endif
@@ -3983,7 +3983,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 79.4, 63.8, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Zaeldarr's Head
@@ -4196,7 +4196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(16039, {	-- Ta'Kierthan Songblade
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -4323,7 +4323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					CRAFTSMANS_WRIT_QUEST(9181, 22602, { "i", 12792, 3 }),	-- Craftsman's Writ - Volcanic Hammer
 					CRAFTSMANS_WRIT_QUEST(9186, 22607, { "i", 15088, 9 }),	-- Craftsman's Writ - Wicked Leather Belt
 					CRAFTSMANS_WRIT_QUEST(9184, 22605, { "i", 15086, 10 }),	-- Craftsman's Writ - Wicked Leather Headband
-					bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, i(22568, {	-- Sealed Craftsman's Writ
+					bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, i(22568, {	-- Sealed Craftsman's Writ
 						i(22609),	-- Craftsman's Writ - Brightcloth Pants
 						i(22600),	-- Craftsman's Writ - Dense Weightstone
 						i(22621),	-- Craftsman's Writ - Flask of Petrification
@@ -4534,7 +4534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["minReputation"] = { 529, HONORED },	-- Argent Dawn
 							["cost"] = { { "g", 1500000 } },	-- 150g
 						}),
@@ -4747,10 +4747,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74.1, 83.8, EASTERN_PLAGUELANDS },
 						{ 74.8, 83.5, EASTERN_PLAGUELANDS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				})),
 				-- #endif
 				i(61387, {	-- Hidden Stash
@@ -4765,11 +4765,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 				i(16242, {	-- Formula: Enchant Chest - Major Mana (RECIPE!)
@@ -4805,27 +4805,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(14477, {	-- Pattern: Ghostweave Gloves
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 8538,	-- Unseen Servant
 				}),
 				i(14480, {	-- Pattern: Ghostweave Vest
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 8538,	-- Unseen Servant
 				}),
 				i(14485, {	-- Pattern: Wizardweave Leggings
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 8551,	-- Dark Summoner
 				}),
 				i(14500, {	-- Pattern: Wizardweave Robe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 8526,	-- Dark Caster
 				}),
 				i(14505, {	-- Pattern: Wizardweave Turban
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 8526,	-- Dark Caster
 				}),
 				i(13479, {	-- Recipe: Elixir of the Sages (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						9451,	-- Scarlet Archmage
 						9449,	-- Scarlet Cleric

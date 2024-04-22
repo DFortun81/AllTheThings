@@ -636,7 +636,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31333,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12500,	-- Return To Angrathar [Horde]
 						["coord"] = { 38.4, 19.4, DRAGONBLIGHT },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12372, {	-- Defending Wyrmrest Temple
@@ -1544,14 +1544,14 @@ root(ROOTS.Zones, {
 						["qg"] = 31333,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12499,	-- Return To Angrathar [Alliance]
 						["coord"] = { 38.4, 19.4, DRAGONBLIGHT },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13369, {	-- Fate, Up Against Your Will
 						["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 						["sourceQuest"] = 13347,	-- Reborn From The Ashes
 						["coord"] = { 79.8, 38.6, STORMWIND_CITY },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { ORGRIMMAR },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1559,7 +1559,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32363,	-- Thrall <Warchief>
 						["sourceQuest"] = 13369,	-- Fate, Up Against Your Will
 						["coord"] = { 32.6, 37.6, ORGRIMMAR },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1567,37 +1567,37 @@ root(ROOTS.Zones, {
 						["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 						["sourceQuest"] = 13370,	-- A Royal Coup
 						["coord"] = { 79.8, 38.6, STORMWIND_CITY },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13377, {	-- The Battle for the Undercity (A)
 						["qg"] = 32376,	-- Broll Bearmantle
 						["sourceQuest"] = 13371,	-- The Killing Time
 						["coord"] = { 50, 68.4, TIRISFAL_GLADES },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { STORMWIND_CITY, UNDERCITY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(44597, {	-- Medallion of Heroism
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44591, {	-- Wrynn's Leggings of Foresight
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44592, {	-- Wrynn's Leggings of Valor
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44593, {	-- Wrynn's Leggings of Wisdom
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44594, {	-- Wrynn's Legguards of Brutality
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44595, {	-- Wrynn's Legguards of Heroism
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44596, {	-- Wrynn's Legplates of Carnage
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -1606,44 +1606,44 @@ root(ROOTS.Zones, {
 						["qg"] = 25256,	-- High Overlord Saurfang
 						["sourceQuest"] = 13242,	-- Darkness Stirs
 						["coord"] = { 41.4, 53.6, BOREAN_TUNDRA },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13266, {	-- A Life Without Regret
 						["qg"] = 31412,	-- Thrall
 						["sourceQuest"] = 13257,	-- Herald of War
 						["coord"] = { 32, 37.8, ORGRIMMAR },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13267, {	-- The Battle for the Undercity (H)
 						["qg"] = 31649,	-- Vol'jin
 						["sourceQuest"] = 13266,	-- A Life Without Regret
 						["coord"] = { 61.8, 62.6, TIRISFAL_GLADES },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { ORGRIMMAR, UNDERCITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(44579, {	-- Medallion of Heroism
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44590, {	-- Warchief's Leggings of Foresight
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44348, {	-- Warchief's Leggings of Valor
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44346, {	-- Warchief's Leggings of Wisdom
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44583, {	-- Warchief's Legguards of Brutality
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44347, {	-- Warchief's Legguards of Heroism
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(44349, {	-- Warchief's Legplates of Carnage
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),

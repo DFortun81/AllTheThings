@@ -1107,7 +1107,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			["groups"] = {
 				{
 					["name"] = "Discolored Healing Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 4508
 				},
 				{
@@ -1132,12 +1132,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Arcane Protection Potion",
-					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "timewalking 9.1.0" },
+					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1.0" },
 					["recipeID"] = 17577
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Greater Dreamless Sleep Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24366,
 				}),
 				{
@@ -1146,7 +1146,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Frost Protection Potion",
-					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "added 10.1.7" },
+					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "added 10.1.7" },
 					["recipeID"] = 17575
 				},
 				{
@@ -1168,7 +1168,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Shadow Protection Potion",
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 					["recipeID"] = 17578
 				},
 				{
@@ -1201,7 +1201,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Lesser Stoneshield Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 4942
 				},
 				{
@@ -1210,13 +1210,13 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Living Action Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24367,
 				}),
 				-- #if BEFORE TBC
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Mageblood Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24365,
 				}),
 				-- #endif
@@ -1240,7 +1240,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				-- #if BEFORE TBC
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Major Troll's Blood Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24368,
 				}),
 				-- #endif
@@ -1299,7 +1299,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Restorative Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 11452,
 				},
 				{
@@ -1476,7 +1476,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of the Mongoose",
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 					["recipeID"] = 17571
 				},
 				{
@@ -1512,7 +1512,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Mageblood Elixir",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24365,
 				}),
 				{
@@ -1521,7 +1521,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Mighty Troll's Blood Elixir",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 24368,
 				}),
 				{
@@ -2758,7 +2758,7 @@ itemrecipe("Recipe: Frost Oil", 14634, 3454);
 itemrecipe("Recipe: Major Rejuvenation Potion", 18257, 22732);
 applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Elixir of Frost Power", 17709, 21923));
 itemrecipe("Recipe: Mageblood Potion", 20011, 24365, PHASE_FOUR);
-itemrecipe("Recipe: Greater Dreamless Sleep Potion", 20012, 24366, PHASE_FOUR, "removed 4.0.3");
+itemrecipe("Recipe: Greater Dreamless Sleep Potion", 20012, 24366, PHASE_FOUR, REMOVED_4_0_3);
 itemrecipe("Recipe: Living Action Potion", 20013, 24367, PHASE_FOUR);
 itemrecipe("Recipe: Major Troll's Blood Potion", 20014, 24368, PHASE_FOUR);
 itemrecipe("Recipe: Transmute Elemental Fire", 20761, 25146, PHASE_FIVE);

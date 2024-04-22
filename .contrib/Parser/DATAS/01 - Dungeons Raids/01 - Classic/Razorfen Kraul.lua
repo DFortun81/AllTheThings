@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1102, {	-- A Vengeful Fate
 					["qg"] = 4451,	-- Auld Stonespire
 					["coord"] = { 36.2, 59.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
@@ -29,13 +29,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 5793 },	-- Razorflank's Heart
 						}),
 						i(6725, {	-- Marbled Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4197, {	-- Berylline Pads
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6742, {	-- Stonefist Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This version of the quest is given to players that have not completed the wrath gate yet.",
 					-- #endif
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
@@ -92,7 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This version of the quest is given to players that have completed the wrath gate.",
 					-- #endif
 					-- #endif
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1221, {	-- Blueleaf Tubers
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.4, 37.6, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/6 Blueleaf Tuber
@@ -141,7 +141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1109, {	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					["coord"] = { 49.0, 69.8, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -165,14 +165,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "o", 19861 },	-- Henrig Lonebrow's Journal
 					},
 					["coord"] = { 30, 24, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,
 				}),
 				q(1142, {	-- Mortality Wanes
 					["qg"] = 4510,	-- Heralath Fallowbrook
 					["coord"] = { 69.4, 67.6, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -181,10 +181,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["description"] = "Drops from any mob in the Kraul.",
 						}),
 						i(6751, {	-- Mourning Shawl
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6752, {	-- Lancer Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -223,7 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 4048,	-- Falfindel Waywarder
 					["sourceQuest"] = 1100,	-- Lonebrow's Journal
 					["coord"] = { 89.6, 46.6, FERALAS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
@@ -231,17 +231,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 5792 },	-- Razorflank's Medallion
 						}),
 						i(6725, {	-- Marbled Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4197, {	-- Berylline Pads
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6742, {	-- Stonefist Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if AFTER TBC
 						i(29200, {	-- Falfindel's Blaster
-							["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 						}),
 						-- #else
 						i(3041),	-- "Mage-Eye" Blunderbuss
@@ -250,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1144, {	-- Willix the Importer
 					["qg"] = 4508,	-- Willix the Importer
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 22,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -340,7 +340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
 				["groups"] = {
 					i(6841, {	-- Vial of Phlogiston
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 				-- #endif
@@ -503,10 +503,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(5793),	-- Razorflank's Heart
 					i(5792),	-- Razorflank's Medallion
 					i(17008, {	-- Small Scroll (Before Wrathgate?)
-						["timeline"] = { "removed 4.0.3"  },
+						["timeline"] = { REMOVED_4_0_3  },
 					}),
 					i(49205, {	-- Small Scroll (After Wrathgate?)
-						["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+						["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					}),
 					i(6692),	-- Pronged Reaver
 					i(6694),	-- Heart of Agamaggan

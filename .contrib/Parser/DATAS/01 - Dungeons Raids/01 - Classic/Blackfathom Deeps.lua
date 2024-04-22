@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
 					["provider"] = { "i", 16790 },	-- Damp Note
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods (1/2)
 					["coord"] = { 11.6, 34.3, ASHENVALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -216,10 +216,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "n", 12902 },	-- Lorgus Jett
 						}),
 						i(17695, {	-- Chestnut Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(17694, {	-- Band of the Fist
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6921, {	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {
@@ -291,7 +291,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1200, {	-- Blackfathom Villainy (A)
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["sourceQuest"] = 1198,	-- In Search of Thaelrid
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -301,10 +301,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						i(7002, {	-- Arctic Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7001, {	-- Gravestone Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -329,7 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(6561, {	-- Blackfathom Villainy (H)
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
@@ -339,10 +339,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						i(7002, {	-- Arctic Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7001, {	-- Gravestone Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -371,7 +371,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #else
 					["description"] = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
 				}),
@@ -386,7 +386,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 2786,	-- Gerrig Bonegrip
 					["sourceQuest"] = 968,	-- The Powers Below
 					["coord"] = { 50.8, 5.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -452,7 +452,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 8997,	-- Gershala Nightwhisper
 					["sourceQuest"] = 3765,	-- The Corruption Abroad
 					["coord"] = { 38.3, 43.0, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -471,10 +471,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(7003, {	-- Beetle Clasps
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(7004, {	-- Prelacy Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -512,7 +512,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 21.6, 55.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -535,7 +535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					["coord"] = { 11.6, 34.3, ASHENVALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -588,7 +588,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6562, {	-- Trouble in the Deeps
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.3, 64.4, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -597,7 +597,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1199, {	-- Twilight Falls
 					["qg"] = 4784,	-- Argent Guard Manados <The Argent Dawn>
 					["coord"] = { 38.3, 43.0, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -613,10 +613,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(7000, {	-- Heartwood Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6998, {	-- Nimbus Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -982,7 +982,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ 21.6, 55.6, STORMWIND_CITY },
 								-- #endif
 							},
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["maps"] = { DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,

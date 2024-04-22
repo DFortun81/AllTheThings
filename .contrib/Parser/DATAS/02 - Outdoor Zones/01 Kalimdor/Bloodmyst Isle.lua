@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9500, {	-- Call of Water (1/6) (Azuremyst Isle)
 					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
 					["coord"] = { 48.0, 50.6, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["isBreadcrumb"] = true,
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(10490, {	-- Call of Water (1/6) (Stormwind City)
 					["qg"] = 20407,	-- Farseer Umbrua <Shaman Trainer>
 					["coord"] = { 61.8, 83.8, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["isBreadcrumb"] = true,
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9502, {	-- Call of Water (1/6) (The Exodar)
 					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
 					["coord"] = { 32.6, 24.2, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["isBreadcrumb"] = true,
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						9502,	-- Call of Water (1/6) (The Exodar)
 					},
 					["coord"] = { 30.0, 32.4, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = 20,
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17275,	-- Aqueous
 					["sourceQuest"] = 9501,	-- Call of Water (2/6)
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = 20,
@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17275,	-- Aqueous
 					["sourceQuest"] = 9503,	-- Call of Water (3/6)
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
@@ -311,7 +311,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17275,	-- Aqueous
 					["sourceQuest"] = 9504,	-- Call of Water (4/6)
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = 20,
@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["sourceQuest"] = 9508,	-- Call of Water (5/6)
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = 20,
@@ -1180,7 +1180,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["sourceQuest"] = 9632,	-- Newfound Allies
 					["coord"] = { 54.6, 53.9, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
 					["cost"] = { { "i", 23937, 1 } },	-- Letter of Introduction
 					["races"] = ALLIANCE_ONLY,

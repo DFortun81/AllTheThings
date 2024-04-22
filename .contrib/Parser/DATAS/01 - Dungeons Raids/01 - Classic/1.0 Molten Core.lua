@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local REMOVED_WITH_CATA = { "added 1.0.1", "removed 4.0.3" };
+local REMOVED_WITH_CATA = { "added 1.0.1", REMOVED_4_0_3 };
 local REMOVED_WITH_WRATH = { "added 1.0.1", "removed 3.0.8" };
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(741, {	-- Molten Core

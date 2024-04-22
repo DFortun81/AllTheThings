@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7809, {	-- A Donation of Mageweave
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["coord"] = { 74.1, 48.1, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7804, {	-- A Donation of Mageweave
 					["qg"] = 14723,	-- Mistina Steelshield
 					["coord"] = { 43.2, 31.9, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7811, {	-- A Donation of Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["coord"] = { 74.1, 48.1, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7805, {	-- A Donation of Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
 					["coord"] = { 43.2, 31.9, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7808, {	-- A Donation of Silk
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["coord"] = { 74.1, 48.1, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7803, {	-- A Donation of Silk
 					["qg"] = 14723,	-- Mistina Steelshield
 					["coord"] = { 43.2, 31.9, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7802, {	-- A Donation of Wool
 					["qg"] = 14723,	-- Mistina Steelshield
 					["coord"] = { 43.2, 31.9, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7807, {	-- A Donation of Wool
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["coord"] = { 74.1, 48.1, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2784,	-- King Magni Bronzebeard
 					["sourceQuest"] = 683,	-- Sara Balloo's Plea
 					["coord"] = { 39.4, 55.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2790,	-- Grand Mason Marblesten
 					["sourceQuest"] = 686,	-- A King's Tribute (1/3)
 					["coord"] = { 38.6, 87, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -268,12 +268,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2790,	-- Grand Mason Marblesten
 					["sourceQuest"] = 689,	-- A King's Tribute (2/3)
 					["coord"] = { 38.6, 87, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
 						i(4535, {	-- Ironforge Memorial Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 8507,	-- Tymor
 					["sourceQuest"] = 3448,	-- Passing the Burden
 					["coord"] = { 31.2, 4.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3451,	-- Signal for Pickup (1/2)
 					},
 					["coord"] = { 31.2, 4.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.1
 					["cost"] = { { "i", 15997, 200 } },	-- Thorium Shells
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 52,
@@ -613,22 +613,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1681,	-- Ironband's Compound
 					["coord"] = { 49, 42.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(6978, {	-- Umbral Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6984, {	-- Umbral Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6982, {	-- Umbral Mace
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6981, {	-- Umbral Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Requires 225 Fishing to start this quest.",
 					["coord"] = { 48.2, 6.6, IRONFORGE },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -661,7 +661,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6612, {	-- I Know A Guy...
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.5, IRONFORGE },
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = COOKING,
 					["isBreadcrumb"] = true,
@@ -681,7 +681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
 					["coord"] = { 71.9, 51.9, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["cost"] = {
 						{ "i", 2455, 4 },	-- Minor Mana Potion
@@ -697,7 +697,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun (1/2)
 					["coord"] = { 71.9, 51.9, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -706,7 +706,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 1704,	-- Klockmort Spannerspan
 					["coord"] = { 68.2, 46.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -720,7 +720,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(707, {	-- Ironband Wants You!
 					["qg"] = 1356,	-- Prospector Stormpike
 					["coord"] = { 74.64, 11.74, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1680,	-- Tormus Deepforge
 					["coord"] = { 49, 42.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2299,	-- To Hulfdan!
 					["coord"] = { 51.6, 14.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -765,13 +765,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 1708,	-- Iron Coral
 					["coord"] = { 68.2, 46.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(6974, {	-- Fire hardened Gauntlets
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -792,7 +792,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1879,	-- Speak with Bink
 					["altQuests"] = { 1861 },	-- Mirror Lake
 					["coord"] = { 27, 8.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
@@ -803,10 +803,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 27.7, 36.5, DUN_MOROGH },
 						}),
 						i(7507, {	-- Arcane Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9514, {	-- Arcane Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -841,7 +841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3448, {	-- Passing the Burden
 					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.2, 11.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -858,7 +858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.6, 89.6, STORMWIND_CITY },
 						{ 32.3, 23.9, THE_EXODAR },
 					},
-					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 5178, 1 },	-- Air Totem
 						{ "i", 5175, 1 },	-- Earth Totem
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(46978, {	-- Totem of the Earthen Ring
-							["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+							["timeline"] = { "added 3.3.0.10772", REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -899,15 +899,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 3449,	-- Arcane Runes
 					["coord"] = { 77.8, 91.4, AZSHARA },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						i(10707, {	-- Steelsmith Greaves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10708, {	-- Skullspell Orb
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -944,7 +944,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 637,	-- Sully Balloo's Letter
 					["coord"] = { 63.5, 67.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -992,7 +992,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 8517,	-- Xiggs Fuselighter
 					["sourceQuest"] = 3450,	-- An Easy Pickup
 					["coord"] = { 71, 94.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					-- #if BEFORE 4.0.3
@@ -1005,7 +1005,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 8517,	-- Xiggs Fuselighter
 					["sourceQuest"] = 3451,	-- Signal for Pickup (1/2)
 					["coord"] = { 71, 94.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -1019,7 +1019,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2218,	-- Road to Salvation
 					["coord"] = { 51.6, 14.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2041, {	-- Speak with Shoni
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 15,
@@ -1105,7 +1105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6120,	-- Lago Blackwrench
 					["altQuests"] = { 1685 },	-- Gakin's Summons (Voidwalker)
 					["coord"] = { 47.6, 9.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,
@@ -1114,7 +1114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2997, {	-- The Tome of Divinity [Dun Morogh]
 					["qg"] = 1232,	-- Azar Stronghammer <Paladin Trainer>
 					["coord"] = { 47.6, 52, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["isBreadcrumb"] = true,
@@ -1123,7 +1123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2999, {	-- The Tome of Divinity [Ironforge]
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["coord"] = { 23.4, 6.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["isBreadcrumb"] = true,
@@ -1132,7 +1132,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3000, {	-- The Tome of Divinity [Stormwind City]
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					["coord"] = { 37.2, 33, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["isBreadcrumb"] = true,
@@ -1147,7 +1147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1158,7 +1158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1646, {	-- The Tome of Divinity (1b/8)
 					["provider"] = { "i", 6916 },	-- Tome of Divinity
 					["sourceQuest"] = 1645,	-- The Tome of Divinity (1a/8)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1167,7 +1167,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6179,	-- Tiza Battleforge
 					["sourceQuest"] = 1646,	-- The Tome of Divinity (1b/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1176,7 +1176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6175,	-- John Turner
 					["sourceQuest"] = 1647,	-- The Tome of Divinity (2/8)
 					["coord"] = { 27.6, 70.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2589, 10 } },	-- Linen Cloth
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
@@ -1186,7 +1186,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6175,	-- John Turner
 					["sourceQuest"] = 1648,	-- The Tome of Divinity (3/8)
 					["coord"] = { 27.6, 70.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1198,7 +1198,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1778,	-- The Tome of Divinity (4/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6178,	-- Muiredon Battleforge
 					["sourceQuest"] = 1779,	-- The Tome of Divinity (5/8)
 					["coord"] = { 23.6, 8.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1215,7 +1215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1789, {	-- The Symbol of Life
 							["qg"] = 6179,	-- Tiza Battleforge
 							["coord"] = { 27.4, 12, IRONFORGE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Symbol of Life
@@ -1230,7 +1230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6177,	-- Narm Faulk
 					["sourceQuest"] = 1783,	-- The Tome of Divinity (6/8)
 					["coord"] = { 78.2, 58.0, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6178,	-- Muiredon Battleforge
 					["sourceQuest"] = 1784,	-- The Tome of Divinity (7/8)
 					["coord"] = { 23.6, 8.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6114,	-- Muren Stormpike
 					["sourceQuest"] = 1678,	-- Vejrek
 					["coord"] = { 70.6, 90.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1285,7 +1285,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1683,	-- Vorlus Vilehoof
 					},
 					["coord"] = { 70.6, 90.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,

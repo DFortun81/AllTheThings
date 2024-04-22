@@ -29,7 +29,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Dawn's Edge",
-						["timeline"] = { "removed 4.0.3", "added 7.1.5" },
+						["timeline"] = { REMOVED_4_0_3, "added 7.1.5" },
 						["recipeID"] = 16970,
 						["requireSkill"] = 17041,
 					},
@@ -258,7 +258,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Corruption",
-						["timeline"] = { "removed 2.0.1", "added 3.0.1", "removed 4.0.3", "added 7.1.5" },
+						["timeline"] = { "removed 2.0.1", "added 3.0.1", REMOVED_4_0_3, "added 7.1.5" },
 						["recipeID"] = 16985,
 						["requireSkill"] = 17039,
 					},

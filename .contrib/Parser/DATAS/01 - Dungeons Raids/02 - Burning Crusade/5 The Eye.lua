@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					legendary(30313, 21274),	-- Staff of Disintegration
 					legendary(30311, 21272),	-- Warp Slicer
 					i(32896, {	-- Scroll of the Sun
-						["timeline"] = { "removed 4.0.3" },	-- TODO: Determine exactly when to remove this.
+						["timeline"] = { REMOVED_4_0_3 },	-- TODO: Determine exactly when to remove this.
 						["groups"] = {
 							i(32897),	-- Mark of the Illidari
 						},

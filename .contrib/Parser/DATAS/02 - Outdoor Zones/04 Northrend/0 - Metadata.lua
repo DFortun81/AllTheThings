@@ -108,7 +108,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1358, 1356, 38, 1357, 1359, 39, 36, 40); end]],
 					-- #endif
-					["timeline"] = { "added 3.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 3.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				})),
 				ach(2256, {	-- Northern Exposure

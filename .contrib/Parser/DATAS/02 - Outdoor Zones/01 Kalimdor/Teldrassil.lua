@@ -55,14 +55,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 8584,	-- Iverron
 							["sourceQuest"] = 4495,	-- A Good Friend
 							["coord"] = { 54.6, 33.0, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 						}),
 						q(4495, {	-- A Good Friend
 							["qg"] = 8583,	-- Dirania Silvershine
 							["coord"] = { 60.8, 42, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 						}),
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 3514,	-- Tenaron Stormgrip
 							["sourceQuest"] = 920,	-- Tenaron's Summons
 							["coord"] = { 59, 39.4, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Filled Crystal Phial
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 921,	-- Crown of the Earth (1/6)
 							["coord"] = { 59, 39.4, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(28715, {	-- Demonic Thieves
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(5622, {	-- In Favor of Elune
 							["qg"] = 3595,	-- Shanda <Priest Trainer>
 							["coord"] = { 59.2, 40.6, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
 							["isBreadcrumb"] = true,
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 8583,	-- Dirania Silvershine
 							["sourceQuest"] = 3519,	-- A Friend in Need
 							["coord"] = { 60.8, 42, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 3522,	-- Iverron's Antidote (1/2)
 							["coord"] = { 60.8, 42, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -469,7 +469,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2082,	-- Gilshalan Windwalker
 							["sourceQuest"] = 917,	-- Webwood Egg
 							["coord"] = { 57.8, 41.6, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(31169, {	-- The Art of the Monk
@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(456, {	-- The Balance of Nature (1/2)
 							["qg"] = 2079,	-- Conservator Ilthalaine
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/7 Young Nightsaber
@@ -512,7 +512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2079,	-- Conservator Ilthalaine
 							["sourceQuest"] = 456,	-- The Balance of Nature (1/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/7 Mangy Nightsaber
@@ -535,14 +535,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(458, {	-- The Woodland Protector (1/2)
 							["qg"] = 2077,	-- Melithar Staghelm
 							["coord"] = { 59.8, 42.4, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(459, {	-- The Woodland Protector (2/2)
 							["qg"] = 1992,	-- Tarindrella
 							["sourceQuest"] = 458,	-- The Woodland Protector (1/2)
 							["coord"] = { 57.8, 45, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/8 Fel Moss
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2082,	-- Gilshalan Windwalker
 							["sourceQuest"] = 916,	-- Webwood Venom
 							["coord"] = { 57.8, 41.6, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Webwood Egg
@@ -626,7 +626,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(916, {	-- Webwood Venom
 							["qg"] = 2082,	-- Gilshalan Windwalker
 							["coord"] = { 57.8, 41.6, TELDRASSIL },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 3,
 							["groups"] = {
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.0, 43.4, DARKSHORE },
 						{ 56.2, 59.2, TELDRASSIL },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
@@ -997,7 +997,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3599,	-- Jannok Breezesong
 					["sourceQuest"] = 2241,	-- The Apple Falls
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3661, {	-- Favored of Elune?
 					["qg"] = 7916,	-- Erelas Ambersky
 					["coord"] = { 55.5, 92.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
@@ -1024,7 +1024,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 142958 },	-- Feralas: A History
 					["sourceQuest"] = 2939,	-- In Search of Knowledge
 					["coord"] = { 55.2, 91.4, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
 					["sourceQuest"] = 5622,	-- In Favor of Elune
 					["coord"] = { 55.6, 56.8, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 57.4, 63.6, TELDRASSIL },
 						}),
 						i(16604, {	-- Moon Robes of Elune
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1121,7 +1121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if ANYCLASSIC
 							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1188,13 +1188,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4161, {	-- Recipe of the Kaldorei
 					["qg"] = 6286,	-- Zarrin
 					["coord"] = { 57, 61.2, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["groups"] = {
 						i(5482, {	-- Recipe: Kaldorei Spider Kabob (RECIPE!)
-							["timeline"] = { "removed 4.0.3.2000" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1231,7 +1231,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3517,	-- Rellian Greenspyre
 					["sourceQuest"] = 923,	-- Tumors / Mossy Tumors [CATA+]
 					["coord"] = { 38.4, 21.6, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 				}),
@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 2944,	-- The Super Snapper FX
 					["coord"] = { 55.4, 92.2, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
@@ -1276,7 +1276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6722,	-- The Hunter's Path [Dun Morogh]
 					},
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1293,7 +1293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6063,	-- Taming the Beast (1/3)
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1310,7 +1310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6101,	-- Taming the Beast (2/3)
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1353,7 +1353,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 937,	-- The Enchanted Glade
 					["coord"] = { 38.2, 34.4, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 6,
 				}),
@@ -1388,7 +1388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2205,	-- Seek out SI: 7
 					},
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 2940,	-- Feralas: A History
 					["coord"] = { 55.4, 92.2, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if ANYCLASSIC
 							["description"] = "This gets completely removed. To be safe, keep this in your bank forever on a mail user.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(131229, {	-- Shackled Cuffs
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1494,7 +1494,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6071, {	-- The Hunter's Path [Darnassus]
 					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
 					["coord"] = { 40.2, 8.8, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1503,7 +1503,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6072, {	-- The Hunter's Path [Teldrassil]
 					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
 					["coord"] = { 58.66, 40.45, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1512,7 +1512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6073, {	-- The Hunter's Path [Darnassus]
 					["qg"] = 4205,	-- Dorion <Hunter Trainer>
 					["coord"] = { 42.2, 7.6, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1521,7 +1521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6721, {	-- The Hunter's Path [Ironforge]
 					["qg"] = 5117,	-- Regnus Thundergranite <Hunter Trainer>
 					["coord"] = { 69.8, 83.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1530,7 +1530,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6722, {	-- The Hunter's Path [Dun Morogh]
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["coord"] = { 45.8, 53, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1591,7 +1591,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if ANYCLASSIC
 							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(60240, {	-- Dream Carrier
 							["timeline"] = { ADDED_4_0_3 },
@@ -1772,7 +1772,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6102,	-- Taming the Beast (3/3)
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -1857,13 +1857,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if ANYCLASSIC
 							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5587, {	-- Thornroot Club
 							-- #if ANYCLASSIC
 							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1871,16 +1871,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7916,	-- Erelas Ambersky
 					["sourceQuest"] = 4901,	-- Guardians of the Altar
 					["coord"] = { 55.5, 92.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
 						i(16622, {	-- Thornflinger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16623, {	-- Opaline Medallion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(18612, {	-- Bloody Chain Boots
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2054,7 +2054,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(18610, {	-- Keen Machete
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2091,7 +2091,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(18611, {	-- Gnarlpine Leggings
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2248,7 +2248,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(7095, {	-- Bog Boots
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						2029,	-- Timberling Mire Beast
 						2005,	-- Vicious Grell
@@ -2284,7 +2284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				i(7094, {	-- Driftwood Branch
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 2030,	-- Elder Timberling
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),

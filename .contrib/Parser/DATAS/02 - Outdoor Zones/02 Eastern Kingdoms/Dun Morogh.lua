@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 713,	-- Balir Frosthammer
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coord"] = { 29.6, 71.2, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/6 Rockjaw Trogg
@@ -65,13 +65,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 724 },	-- Burly Rockjaw Trogg
 								}),
 								i(6185, {	-- Bear Shawl
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(2172, {	-- Rustic Belt
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(6173, {	-- Snow Boots
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["sourceQuest"] = 3364,	-- Scalding Mornbrew Delivery
 							["coord"] = { 28.8, 66.4, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 4,
 						}),
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(234, {	-- Coldridge Valley Mail Delivery (2/2)
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["sourceQuest"] = 233,	-- Coldridge Valley Mail Delivery (1/2)
 							["coord"] = { 22.6, 71.4, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(3107, {	-- Consecrated Rune
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(179, {	-- Dwarven Outfitters
 							["qg"] = 658,	-- Sten Stoutarm
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/8 Tough Wolf Meat
@@ -319,13 +319,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(719, {	-- Rabbit Handler Gloves
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(6171, {	-- Wolf Handler Gloves
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(2547, {	-- Boar Handler Gloves
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
 						}),
@@ -525,7 +525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { MAGE },
 						}),
@@ -632,10 +632,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(6176, {	-- Dwarven Kite Shield
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(5581, {	-- Smooth Walking Staff
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -801,7 +801,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 10439 },	-- Durnan's Scalding Mornbrew
 							},
 							["coord"] = { 25, 75.8, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 4,
 						}),
@@ -813,7 +813,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["altQuests"] = { 287 },	-- Frostmane Hold
 							["sourceQuest"] = 218,	-- The Stolen Journal
 							["coord"] = { 25, 75.8, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(420, {	-- Senir's Observations (2/2)
@@ -824,7 +824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["altQuests"] = { 287 },	-- Frostmane Hold
 							["sourceQuest"] = 282,	-- Senir's Observations (1/2)
 							["coord"] = { 33.4, 71.8, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(3112, {	-- Simple Memorandum
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { WARRIOR },
 						}),
@@ -911,17 +911,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7646 },	-- Crate of Inn Supplies
 							},
 							["coord"] = { 33.8, 72.2, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57537, {	-- Frosthammer Bracer
-									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+									["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 								}),
 								i(57538, {	-- Kharanos Belt
-									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+									["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 								}),
 								i(57539, {	-- Snow Stomping Boots
-									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+									["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -942,24 +942,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { WARLOCK },
 						}),
 						q(183, {	-- The Boar Hunter
 							["qg"] = 714,	-- Talin Keeneye
 							["coord"] = { 22.6, 71.4, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/12 Small Crag Boars slain
 									["provider"] = { "n", 708 },	-- Small Crag Boar
 								}),
 								i(79, {	-- Dwarven Cloth Britches
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(61, {	-- Dwarven Leather Pants
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -1029,10 +1029,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["cr"] = 808,	-- Grik'nir the Cold
 								}),
 								i(6176, {	-- Dwarven Kite Shield
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(5581, {	-- Smooth Walking Staff
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(2047),	-- Anvilmar Hand Axe
 								i(2048, {	-- Anvilmar Hammer
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 								i(2195),	-- Anvilmar Knife
 								i(5761),	-- Anvilmar Sledge
@@ -1199,13 +1199,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 10.1.7
 						-- Added to Gnolls in Elwynn Forest via Pickpocket (not trolling)
 						i(2109, {	-- Frostmane Chain Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["cr"] = 808,	-- Grik'nir the Cold
 						}),
 						-- #endif
 						-- #if AFTER 10.1.7
 						i(2259, {	-- Frostmane Club
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
 								-- #if AFTER MOP
@@ -1222,7 +1222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(2108, {	-- Frostmane Leather Vest
 							["cr"] = 706,	-- Frostmane Troll Whelp
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 21.2, 66.2, COLDRIDGE_VALLEY },
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if AFTER 10.1.7
 						i(2258, {	-- Frostmane Shortsword
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 37507,	-- Frostmane Blade
 							["coords"] = {
 								{ 36.8, 77.4, DUN_MOROGH },
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(2110, {	-- Light Magesmith Robe
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 946,	-- Frostmane Novice
 							["coords"] = {
 								-- #if AFTER LEGION
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if AFTER 10.1.7
 						i(2065, {	-- Rockjaw Blade
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1718,	-- Rockjaw Raider
 							["coords"] = {
 								{ 42.6, 66.0, DUN_MOROGH },
@@ -1297,7 +1297,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						i(2054, {	-- Trogg Hand Axe
-							["timeline"] = { "removed 4.0.3", ADDED_10_0_7 },
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 							["cr"] = 1718,	-- Rockjaw Raider
 							-- #if AFTER CATA
 							["coord"] = { 42.6, 66.0, DUN_MOROGH },
@@ -2299,7 +2299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1374,	-- Rejold Barleybrew
 					["sourceQuest"] = 318,	-- Evershine
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
@@ -2332,7 +2332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 419,	-- The Lost Pilot
 					["coord"] = { 79.7, 36.2, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
@@ -2342,10 +2342,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1961,	-- Mangeclaw
 						}),
 						i(2218, {	-- Craftsman's Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1009, {	-- Compact Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2384,7 +2384,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5541, {	-- Ammo for Rumbleshot
 					["qg"] = 1694,	-- Loslor Rudge
 					["coord"] = { 50.0, 49.4, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
@@ -2429,7 +2429,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2548 },	-- Barrel of Barleybrew Scalder
 					},
 					["coord"] = { 30.2, 45.6, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
@@ -2437,7 +2437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1373,	-- Jarven Thunderbrew
 							["coord"] = { 47.6, 52.6, DUN_MOROGH },
 							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 							["groups"] = {
@@ -2448,7 +2448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 									["sourceQuest"] = 310,	-- Bitter Rivals
 									["coord"] = { 47.7, 52.7, DUN_MOROGH },
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 2,
 								}),
@@ -2457,7 +2457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(403, {	-- Guarded Thunderbrew Barrel
 							["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
 							["coord"] = { 47.7, 52.7, DUN_MOROGH },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 						}),
@@ -2624,7 +2624,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1378,	-- Pilot Bellowfiz
 					["sourceQuest"] = 317,	-- Stocking Jetsteam
 					["coord"] = { 49.4, 48.4, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 				}),
@@ -2697,7 +2697,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1252,	-- Senir Whitebeard
 					["sourceQuest"] = 420,	-- Senir's Observations (2/2)
 					["coord"] = { 46.6, 53.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -2705,16 +2705,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1123 },	-- Frostmane Headhunter
 						}),
 						i(3216, {	-- Warm Winter Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(2900),	-- Stone Buckler
 						-- #endif
 						i(57553, {	-- Ragged Belt
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 						i(57557, {	-- Warm Winter Wristguards
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2722,7 +2722,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
 					["sourceQuest"] = 5626,	-- In Favor of the Light
 					["coord"] = { 47.2, 52.2, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
@@ -2732,7 +2732,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 45.8, 54.4, DUN_MOROGH },
 						}),
 						i(16605, {	-- Friar's Robes of the Light
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2822,7 +2822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5626, {	-- In Favor of the Light
 					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
 					["coord"] = { 28.6, 66.4, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { COLDRIDGE_VALLEY },
 					["races"] = { DWARF },
 					["classes"] = { PRIEST },
@@ -2883,7 +2883,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2897,7 +2897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14083, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2919,7 +2919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["coord"] = { 47.2, 52.6, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -2931,13 +2931,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 2238,	-- Simple Subterfugin'
 					["coord"] = { 25.2, 44.4, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 					["groups"] = {
 						i(7298, {	-- Blade of Cunning
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2990,10 +2990,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(3152, {	-- Driving Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3153, {	-- Oil-stained Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3078,7 +3078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(3103, {	-- Coldridge Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3143,7 +3143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["description"] = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 8,
@@ -3158,7 +3158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 319,	-- A Favor for Evershine
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
@@ -3211,7 +3211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2241,	-- The Apple Falls
 					},
 					["coord"] = { 47.6, 52.6, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -3221,13 +3221,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 467,	-- Stonegear's Search
 					["coord"] = { 49.6, 48.4, DUN_MOROGH },
 					["cost"] = { { "i", 3340, 6 } },	-- Incendicite Ore
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(3565, {	-- Beerstained Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3241,7 +3241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						315,	-- The Perfect Stout
 					},
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 				}),
@@ -3249,7 +3249,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
 					["altQuests"] = { 1860 },	-- Speak with Jennea
 					["coord"] = { 47.4, 52, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
@@ -3259,7 +3259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1378,	-- Pilot Bellowfiz
 					["coord"] = { 49.4, 48.4, DUN_MOROGH },
 					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
@@ -3281,7 +3281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.8, 47, LOCH_MODAN },
 						{ 72.4, 93.6, IRONFORGE },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -3293,7 +3293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 413,	-- Shimmer Stout
 					["coord"] = { 86.2, 48.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 				}),
@@ -3346,7 +3346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						6076,	-- The Hunter's Path [Stormwind City]
 					},
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -3363,7 +3363,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6064,	-- Taming the Beast (1/3)
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -3380,7 +3380,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6084,	-- Taming the Beast (2/3)
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -3415,7 +3415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6074, {	-- The Hunter's Path [Ironforge]
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70, 84.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -3424,7 +3424,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6075, {	-- The Hunter's Path [Dun Morogh]
 					["qg"] = 11807,	-- Tristane Shadowstone
 					["coord"] = { 30.6, 45.4, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -3433,7 +3433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6076, {	-- The Hunter's Path [Stormwind City]
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
 					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -3442,12 +3442,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(419, {	-- The Lost Pilot
 					["qg"] = 1960,	-- Pilot Hammerfoot
 					["coord"] = { 83.8, 39.2, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
 						i(3151, {	-- Siege Brigade Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3479,7 +3479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(2905, {	-- Goat Fur Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3530,14 +3530,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 287,	-- Frostmane Hold
 					["coord"] = { 46.6, 53.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1653, {	-- The Test of Righteousness (1/3)
 					["qg"] = 6171,	-- Duthorian Rall
 					["sourceQuest"] = 1652,	-- The Tome of Valor (4/4)
 					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
@@ -3549,7 +3549,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKFATHOM_DEEPS, DARKSHORE, DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -3568,7 +3568,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1655, {	-- Bailor's Ore Shipment
 							["qg"] = 6241,	-- Bailor Stonehand
 							["coord"] = { 36.0, 45.0, LOCH_MODAN },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
 							["repeatable"] = true,
@@ -3591,7 +3591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 3649,	-- Thundris Windweaver
 							["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 							["coord"] = { 37.4, 40.2, DARKSHORE },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
 							["repeatable"] = true,
@@ -3620,13 +3620,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6181,	-- Jordan Stilwell
 					["sourceQuest"] = 1654,	-- The Test of Righteousness (2/3)
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["groups"] = {
 						i(6953, {	-- Verigan's Fist
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3680,7 +3680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1234,	-- Hogral Bakkan
 					["sourceQuest"] = 2218,	-- Road to Salvation
 					["coord"] = { 47.6, 52.6, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
@@ -3692,7 +3692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2999 },	-- Steelgrill's Tools
 					},
 					["coord"] = { 46, 51.6, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 				}),
@@ -3700,7 +3700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6085,	-- Taming the Beast (3/3)
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -3727,7 +3727,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(312, {	-- Tundra MacGrann's Stolen Stash
 					["qg"] = 1266,	-- Tundra MacGrann
 					["coord"] = { 34.6, 51.6, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -3739,10 +3739,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.5, 53.93, DUN_MOROGH },
 						}),
 						i(6177, {	-- Ironwrought Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10550, {	-- Wooly Mittens
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3781,7 +3781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2069, {	-- Black Bear Hide Vest
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -3800,10 +3800,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Located in the Grizzled Den.",
 					["groups"] = {
 						i(3225, {	-- Bloodstained Knife
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 						i(3008, {	-- Wendigo Fur Cloak
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -3860,10 +3860,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(10554, {	-- Foreman Pants
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 						i(10553, {	-- Foreman Vest
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -3881,10 +3881,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3223, {	-- Frostmane Scepter
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2546, {	-- Royal Frostmane Girdle
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3903,10 +3903,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(763, {	-- Ice-covered Bracers
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(2254, {	-- Icepane Warhammer
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -3932,10 +3932,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 38.4, 54.0, DUN_MOROGH },
 					-- #endif
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 					["groups"] = {
 						i(2899, {	-- Wengido Collar
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -3986,10 +3986,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3224, {	-- Silver-lined Bracers
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(1965, {	-- White Wolf Gloves
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -4268,7 +4268,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(2067, {	-- Frostbit Staff
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 79.2, 48.4, DUN_MOROGH },
 						{ 78.0, 54.2, DUN_MOROGH },
@@ -4277,7 +4277,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 10.1.7
 				-- Moved to the starting area.
 				i(2259, {	-- Frostmane Club
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1121,	-- Frostmane Snowstrider
 					["coords"] = {
 						{ 29.6, 79.0, DUN_MOROGH },
@@ -4287,7 +4287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2260, {	-- Frostmane Hand Axe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1123,	-- Frostmane Headhunter
@@ -4309,7 +4309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 10.1.7
 				i(2258, {	-- Frostmane Shortsword
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1120,	-- Frostmane Troll
 					["coords"] = {
 						{ 26.6, 50.6, DUN_MOROGH },
@@ -4318,7 +4318,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2257, {	-- Frostmane Staff
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1124,	-- Frostmane Shadowcaster
 					["coords"] = {
@@ -4342,7 +4342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2112, {	-- Lumberjack Jerkin
 					["cr"] = 1689,	-- Scarred Crag Boar
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 88.6, 51.4, DUN_MOROGH },
 						{ 81.6, 49.0, DUN_MOROGH },
@@ -4368,7 +4368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2898, {	-- Mountaineer Chestpiece
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1196,	-- Ice Claw Bear
 					-- #if BEFORE 4.0.3
 					["coords"] = {
@@ -4440,7 +4440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE 10.1.7
 				i(2065, {	-- Rockjaw Blade
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1116,	-- Rockjaw Ambusher
 					["coords"] = {
 						{ 72.6, 54.0, DUN_MOROGH },
@@ -4472,7 +4472,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2066, {	-- Skull Hatchet
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 78.2, 52.2, DUN_MOROGH },
 						{ 76.6, 58.0, DUN_MOROGH },
@@ -4480,7 +4480,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1115,	-- Rockjaw Skullthumper
 				}),
 				i(2114, {	-- Snowy Robe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1133,	-- Starving Winter Wolf
 					["coords"] = {
@@ -4511,7 +4511,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2064, {	-- Trogg Club
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 80.0, 57.6, DUN_MOROGH },
 						{ 69.4, 58.8, DUN_MOROGH },
@@ -4523,7 +4523,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(5767, {	-- Violet Robes
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 49.8, 37.2, DUN_MOROGH },
 						{ 46.6, 40.6, DUN_MOROGH },

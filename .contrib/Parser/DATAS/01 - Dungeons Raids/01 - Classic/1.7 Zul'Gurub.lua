@@ -18,10 +18,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			233,
 			-- #endif
 		},
-		["timeline"] = { "removed 4.0.3" },
+		["timeline"] = { REMOVED_4_0_3 },
 		["isRaid"] = true,
 		["lvl"] = 58,
-		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
+		["groups"] = bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {
 			n(ACHIEVEMENTS, {
 				achWithRep(957, 270, {	-- Hero of the Zandalar Tribe
 					-- #if BEFORE WRATH
@@ -1290,11 +1290,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
 					["filterID"] = MOUNTS,
 				}),
 				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
 				}),
 				i(19867),	-- Bloodlord's Defender
 				i(19874),	-- Halberd of Smiting
@@ -1437,11 +1437,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
 					["filterID"] = MOUNTS,
 				}),
 				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
 				}),
 				i(19896),	-- Thekal's Grasp
 				i(19901),	-- Zulian Slicer

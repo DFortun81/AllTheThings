@@ -67,7 +67,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DESOLACE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -78,7 +78,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["sourceQuest"] = 4981,	-- Operative Bijou
 				}),
 				["qg"] = 10257,	-- Bijou
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 Bijou's Belongings
@@ -95,16 +95,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 12652 },	-- Bijou's Reconnaissance Report
 				},
 				["sourceQuest"] = 4982,	-- Bijou's Belongings (H)
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { BADLANDS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
 					i(15858, {	-- Freewind Gloves
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(15859, {	-- Seapost Girdle
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -115,7 +115,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "o", 179880 },	-- Drakkisath's Brand
 				},
 				["coord"] = { 34.9, 27.9, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { BLACKROCK_MOUNTAIN },
 				["lvl"] = 55,
 			}),
@@ -145,7 +145,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 42.4, 96.8, DESOLACE },
 				},
 				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -153,7 +153,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "i", 16663 },	-- Blood of the Black Dragon Champion
 					}),
 					i(16309, {	-- Drakefire Amulet
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -162,7 +162,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["coord"] = { 61, 38.8, WINTERSPRING },
 				["maps"] = { SCHOLOMANCE, STRATHOLME },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 10 },	-- Frayed Abomination Stitching
@@ -174,7 +174,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					i(12757, {	-- Breastplate of Bloodthirst
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -183,7 +183,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["sourceQuest"] = 5164,	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
 				["maps"] = { STRATHOLME, EASTERN_PLAGUELANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -193,7 +193,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					i(12895, {	-- Breastplate of the Chromatic Flight
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -201,7 +201,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10637,	-- Malyfous Darkhammer
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["coord"] = { 61, 38.8, WINTERSPRING },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
@@ -214,7 +214,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					i(12752, {	-- Cap of the Scarlet Savant
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -222,21 +222,21 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10976,	-- Jeziba
 				["sourceQuest"] = 5162,	-- Wrath of the Blue Flight (2/2)
 				["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
 			}),
 			q(8181, {	-- Confront Yeh'kinya
 				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuest"] = 4788,	-- The Final Tablets
 				["coord"] = { 66.8, 24.0, TANARIS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
 				["groups"] = {
 					i(20218, {	-- Faded Hakkari Cloak
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(20219, {	-- Tattered Hakkari Cape
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -247,15 +247,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["sourceQuest"] = 4764,	-- Doomrigger's Clasp
 				["coord"] = { 84.8, 69, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
 				["groups"] = {
 					i(15860, {	-- Blinkstrike Armguards
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(15861, {	-- Swiftfoot Treads
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -263,7 +263,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 9565,	-- Mayara Brightwing
 				["sourceQuest"] = 4766,	-- Mayara Brightwing
 				["coord"] = { 84.8, 69, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
 				["groups"] = {
@@ -295,7 +295,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10267,	-- Tinkee Steamboil
 				["sourceQuest"] = 4734,	-- Egg Freezing
 				["coord"] = { 65.2, 23.8, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
 				["groups"] = {
 					objective(1, {	-- 0/8 Collected Dragon Egg
@@ -314,7 +314,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10267,	-- Tinkee Steamboil
 				["sourceQuest"] = 4907,	-- Tinkee Steamboil
 				["coord"] = { 65.2, 23.8, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
 				["groups"] = {
 					objective(1, {	-- Test the Eggscilliscope Prototype
@@ -327,7 +327,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #if BEFORE 4.0.3
 						["description"] = "You don't need to keep this, but it might be nice to have just in case someone doesn't quite grasp the 'don't touch the eggs' rule.",
 						-- #endif
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -335,7 +335,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 				["sourceQuest"] = 4903,	-- Warlord's Command
 				["coord"] = { 5.8, 47.6, BADLANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -353,20 +353,20 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["sourceQuest"] = 6569,	-- Oculus Illusions
 				["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DUSTWALLOW_MARSH },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
 					i(16787, {	-- Amulet of Draconic Subversion
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
 			q(4862, {	-- En-Ay-Es-Tee-Why
 				["qg"] = 10260,	-- Kibler
 				["coord"] = { 65.8, 22.0, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/15 Spire Spider Egg
@@ -377,7 +377,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
 					}),
 					i(12529, {	-- Smolderweb Hatchling (PET!)
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -390,7 +390,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["requireSkill"] = BLACKSMITHING,
 				-- #endif
 				["coord"] = { 61.0, 38.8, WINTERSPRING },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cost"] = {
 					{ "i", 12812, 1 },	-- Unfired Plate Gauntlets
 					{ "i", 12655, 6 },	-- Enchanted Thorium Bar
@@ -400,10 +400,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 				["groups"] = {
 					i(12699, {	-- Plans: Fiery Plate Gauntlets (RECIPE!)
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(12631, {	-- Fiery Plate Gauntlets
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -411,7 +411,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 4949,	-- Thrall <Warchief>
 				["sourceQuest"] = 4941,	-- Eitrigg's Wisdom
 				["coord"] = { 32.0, 37.8, ORGRIMMAR },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -419,13 +419,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "i", 12630 },	-- Head of Rend Blackhand
 					}),
 					i(13965, {	-- Blackhand's Breadth
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13968, {	-- Eye of the Beast
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13966, {	-- Mark of Tyranny
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -438,7 +438,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5089, {	-- General Drakkisath's Command
 				["provider"] = { "i", 12780 },	-- General Drakkisath's Command
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 			}),
@@ -446,7 +446,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 9560,	-- Marshal Maxwell
 				["sourceQuest"] = 5089,	-- General Drakkisath's Command
 				["coord"] = { 84.6, 68.8, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -454,13 +454,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "n", 10363 },	-- General Drakkisath
 					}),
 					i(13965, {	-- Blackhand's Breadth
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13968, {	-- Eye of the Beast
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13966, {	-- Mark of Tyranny
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -499,19 +499,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["requireSkill"] = BLACKSMITHING,
 				-- #endif
 				["description"] = "At the bottom floor of Lower Blackrock Spire near the lava.",
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					i(12812, {	-- Unfired Plate Gauntlets
 						["provider"] = { "o", 176089 },	-- Unfired Plate Gauntlets
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
 			q(4729, {	-- Kibler's Exotic Pets
 				["qg"] = 10260,	-- Kibler
 				["coord"] = { 65.8, 22.0, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 Caged Worg Pup
@@ -528,7 +528,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["coord"] = { 61, 38.8, WINTERSPRING },
 				["maps"] = { SCHOLOMANCE, STRATHOLME },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 5 },	-- Frayed Abomination Stitching
@@ -540,7 +540,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					i(12756, {	-- Leggings of Arcana
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -549,7 +549,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["sourceQuest"] = 5164,	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
 				["maps"] = { SCHOLOMANCE, STRATHOLME, EASTERN_PLAGUELANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -559,10 +559,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 				["groups"] = {
 					i(12903, {	-- Legguards of the Chromatic Defier
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(12945, {	-- Legplates of the Chromatic Defier
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -573,7 +573,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] = BLACKSMITHING,
 				["learnedAt"] = 275,
 				["lvl"] = 55,
@@ -582,7 +582,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 9560,	-- Marshal Maxwell
 				["sourceQuest"] = 5002,	-- Message to Maxwell
 				["coord"] = { 84.6, 68.8, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -596,19 +596,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
 					}),
 					i(13961, {	-- Halycon's Muzzle
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13958, {	-- Wyrmthalak's Shackles
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13963, {	-- Voone's Vice Grips
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13959, {	-- Omokk's Girth Restrainer
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13962, {	-- Vosh'gajin's Strand
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -618,7 +618,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					4764,	-- Doomrigger's Clasp [NOT SURE, but this quest constantly resets to Not Complete on Blizzard's Side.]
 				},
 				["coord"] = { 74, 30, STORMWIND_CITY },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
 			}),
@@ -628,7 +628,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 12770 },	-- Bijou's Information
 				},
 				["sourceQuest"] = 5001,	-- Bijou's Belongings (A)
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { BURNING_STEPPES },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
@@ -641,7 +641,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["coord"] = { 25.6, 70.0, DESOLACE },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -653,14 +653,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
 				-- #endif
 				["coord"] = { 65, 23.6, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- Milked
 						["provider"] = { "n", 10596 },	-- Mother Smolderweb
 					}),
 					i(15873, {	-- Ragged John's Neverending Cup
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -668,7 +668,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 11872,	-- Myranda the Hag
 				["sourceQuest"] = 6568,	-- The Testament of Rexxar
 				["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -680,7 +680,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(4981, {	-- Operative Bijou
 				["qg"] = 9080,	-- Lexlort <Kargath Expeditionary Force>
 				["coord"] = { 5.8, 47.6, BADLANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 			}),
@@ -692,7 +692,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
 				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
 				["cr"] = 10430,	-- The Beast
 				["lvl"] = 57
@@ -700,7 +700,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(4701, {	-- Put Her Down
 				["qg"] = 9562,	-- Helendis Riverhorn
 				["coord"] = { 85.6, 69, BURNING_STEPPES },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -708,13 +708,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "n", 10220 },	-- Halycon
 					}),
 					i(15824, {	-- Astoria Robes
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(15827, {	-- Jadescale Breastplate
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(15825, {	-- Traphook Jerkin
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -723,7 +723,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Pickup this quest by going up to the hidden ledge in LBRS and speaking to the Infiltrator.",
 				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cost"] = {
 					{ "i", 12336, 1 },	-- Gemstone of Spirestone
 					{ "i", 12335, 1 },	-- Gemstone of Smolderthorn
@@ -738,7 +738,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
 				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DUSTWALLOW_MARSH },
 				["lvl"] = 57,
 				["groups"] = {
@@ -762,7 +762,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #if BEFORE 3.0.8
 						["description"] = "This item must be in your bags to open the door to UBRS.",
 						-- #endif
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -770,7 +770,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 4949,	-- Thrall <Warchief>
 				["sourceQuest"] = 6566,	-- What the Wind Carries
 				["coord"] = { 32.0, 37.8, ORGRIMMAR },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DESOLACE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -779,7 +779,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 				["sourceQuest"] = 4769,	-- Vivian Lagrave and the Darkstone Tablet
 				["coord"] = { 3, 47.6, BADLANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 57,
 				["groups"] = {
@@ -790,10 +790,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						},
 					}),
 					i(15860, {	-- Blinkstrike Armguards
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(15861, {	-- Swiftfoot Treads
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -806,7 +806,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["requireSkill"] = BLACKSMITHING,
 				-- #endif
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["learnedAt"] = 275,
 				["lvl"] = 55,
 				["groups"] = {
@@ -819,11 +819,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "i", 12806 },	-- Unforged Rune Covered Breastplate
 					}),
 					i(12696, {	-- Plans: Demon Forged Breastplate (RECIPE!)
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(9224),	-- Elixir of Demonslaying
 					i(12849, {	-- Demon Kissed Sack
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -846,7 +846,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuest"] = 5065,	-- The Lost Tablets of Mosh'aru
 				["coord"] = { 66.8, 24.0, TANARIS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
 				["groups"] = {
 					objective(1, {	-- 0/1 Fifth Mosh'aru Tablet
@@ -867,14 +867,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuest"] = 8181,	-- Confront Yeh'kinya
 				["coord"] = { 66.8, 24, TANARIS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
 			}),
 			q(5065, {	-- The Lost Tablets of Mosh'aru
 				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuest"] = 3528,	-- The God Hakkar
 				["coord"] = { 66.8, 24.0, TANARIS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { EASTERN_PLAGUELANDS },
 				["lvl"] = 40,
 				["groups"] = {
@@ -914,14 +914,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
 				-- #endif
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
 				["lvl"] = 57,
 			}),
 			q(4724, {	-- The Pack Mistress
 				["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
 				["coord"] = { 5.8, 47.6, BADLANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -929,13 +929,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "n", 10220 },	-- Halycon
 					}),
 					i(15824, {	-- Astoria Robes
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(15827, {	-- Jadescale Breastplate
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(15825, {	-- Traphook Jerkin
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -947,7 +947,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					6583,	-- The Test of Skulls, Somnus
 				},
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WETLANDS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -963,7 +963,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10321,	-- Emberstrife
 				["sourceQuest"] = 6570,	-- Emberstrife
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { TANARIS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -979,7 +979,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10321,	-- Emberstrife
 				["sourceQuest"] = 6570,	-- Emberstrife
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -995,7 +995,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10321,	-- Emberstrife
 				["sourceQuest"] = 6570,	-- Emberstrife
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { SWAMP_OF_SORROWS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -1025,7 +1025,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 40.8, 78.6, DESOLACE },
 					{ 42.4, 96.8, DESOLACE },
 				},
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
@@ -1035,7 +1035,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10468,	-- Felnok Steelspring
 				["sourceQuest"] = 4810,	-- Return to Tinkee
 				["coord"] = { 61.6, 38.6, WINTERSPRING },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 57,
 			}),
@@ -1074,21 +1074,21 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "n", 10799 },	-- Warosh <The Cursed>
 					{ "i", 12730 },	-- Warosh's Scroll
 				},
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 Warosh's Mojo
 						["provider"] = { "i", 12712 },	-- Warosh's Mojo
 					}),
 					i(15867, {	-- Prismcharm
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
 			q(4769, {	-- Vivian Lagrave and the Darkstone Tablet
 				["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 				["coord"] = { 49.8, 68.2, UNDERCITY },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["lvl"] = 57,
@@ -1102,7 +1102,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
 				-- #endif
 				["coord"] = { 5.8, 47.6, BADLANDS },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
@@ -1123,19 +1123,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["description"] = "On the ground next to Overlord Wyrmthalak.",
 					}),
 					i(13961, {	-- Halycon's Muzzle
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13958, {	-- Wyrmthalak's Shackles
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13963, {	-- Voone's Vice Grips
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13959, {	-- Omokk's Girth Restrainer
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13962, {	-- Vosh'gajin's Strand
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -1143,7 +1143,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 4949,	-- Thrall <Warchief>
 				["sourceQuest"] = 4974,	-- For The Horde!
 				["coord"] = { 32.0, 37.8, ORGRIMMAR },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 			}),
@@ -1151,67 +1151,67 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10929,	-- Haleh
 				["sourceQuest"] = 5160,	-- The Matron Protectorate
 				["coord"] = { 54.4, 51.2, WINTERSPRING },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
 			}),
 			q(5162, {	-- Wrath of the Blue Flight (2/2)
 				["qg"] = 10929,	-- Haleh
 				["sourceQuest"] = 5161,	-- Wrath of the Blue Flight (1/2)
 				["coord"] = { 54.4, 51.2, WINTERSPRING },
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["lvl"] = 57,
 			}),
 		}),
 		n(ZONE_DROPS, {
 			applyclassicphase(PHASE_FIVE, i(22138, {	-- Blackrock Bracer
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			})),
 			i(16786, {	-- Black Dragonspawn Eye
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16681, {	-- Beaststalker's Bindings
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cr"] = 9096,	-- Rage Talon Dragonspawn
 			}),
 			i(16680, {	-- Beaststalker's Belt
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16736, {	-- Belt of Valor
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cr"] = 9268,	-- Smolderthorn Berserker
 			}),
 			i(16735, {	-- Bracers of Valor
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16673, {	-- Cord of Elements
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16696, {	-- Devout Belt
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16703, {	-- Dreadmist Bracers
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16685, {	-- Magister's Belt
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["cr"] = 9239,	-- Smolderthorn Mystic
 			}),
 			i(16683, {	-- Magister's Bindings
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16713, {	-- Shadowcraft Belt
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16716, {	-- Wildheart Belt
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["crs"] = {
 					9692,	-- Bloodaxe Raider
 					9258,	-- Scarshield Raider
 				},
 			}),
 			i(16717, {	-- Wildheart Gloves
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				["crs"] = {
 					9692,	-- Bloodaxe Raider
 					9262,	-- Firebrand Invoker
@@ -1250,7 +1250,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 				-- #endif
 				applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						9196,	-- Highlord Omokk
@@ -1267,7 +1267,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 				})),
 				i(12219, {	-- Unadorned Seal of Ascension
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			}),
 			n(9257, {	-- Scarshield Warlock
@@ -1338,7 +1338,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13170),	-- Skyshroud Leggings
 					i(13169),	-- Tressermane Leggings
 					i(16670, {	-- Boots of Elements
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -1347,13 +1347,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12740, {	-- Fifth Mosh'aru Tablet
 						["provider"] = { "o", 175949 },	-- Fifth Mosh'aru Tablet
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						-- #if BEFORE 4.0.3
 						["description"] = "Located directly behind the boss.",
 						-- #endif
 					}),
 					i(13352, {	-- Vosh'gajin's Snakestone
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(12651),	-- Blackcrow
 					i(12653),	-- Riphook
@@ -1361,7 +1361,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(12626),	-- Funeral Cuffs
 					i(13255),	-- Trueaim Gauntlets
 					i(16712, {	-- Shadowcraft Gloves
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(151413, {	-- Smolderthorn Greatbelt
 						["timeline"] = { ADDED_7_3_0 },
@@ -1378,7 +1378,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12741, {	-- Sixth Mosh'aru Tablet
 						["provider"] = { "o", 175950 },	-- Sixth Mosh'aru Tablet
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						-- #if BEFORE 4.0.3
 						["description"] = "Located directly behind the boss.",
 						-- #endif
@@ -1397,7 +1397,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13177),	-- Talisman of Evasion
 					i(13179),	-- Brazecore Armguards
 					i(16676, {	-- Beaststalker's Gloves
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(22231),	-- Kayser's Boots of Precision
 					-- #if BEFORE MOP
@@ -1419,7 +1419,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			applyclassicphase(PHASE_FIVE, n(16080,	-- Mor Grayhoof
 			-- #if BEFORE 4.0.3
 			bubbleDown({
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 				-- #if NOT ANYCLASSIC
 				["u"] = 11,
 				-- #endif
@@ -1512,7 +1512,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(13244),	-- Gilded Gauntlets
 					i(16715, {	-- Wildheart Boots
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13213),	-- Smolderweb's Eye
 				},
@@ -1527,7 +1527,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["groups"] = {
 					i(12712, {	-- Warosh's Mojo
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18784, {	-- Top Half of Advanced Armorsmithing: Volume III
 						["timeline"] = { "removed 4.0.1" },
@@ -1578,7 +1578,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(16718, {	-- Wildheart Spaulders
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(151417, {	-- Worg-Keeper's Spaulders
 						["timeline"] = { ADDED_7_3_0 },
@@ -1623,7 +1623,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { "added 7.1.5.23360" },
 					}),
 					i(12780, {	-- General Drakkisath's Command
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(12337),	-- Gemstone of Bloodaxe
 					i(13148, {	-- Chillpike
@@ -1639,11 +1639,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13161),	-- Trindlehaven Staff
 					i(13162),	-- Reiver Claws
 					i(16679, {	-- Beaststalker's Mantle
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(13143),	-- Mark of the Dragon Lord
 					i(13164, {	-- Heart of the Scale
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					applyclassicphase(PHASE_FIVE, i(22321)),	-- Heart of Wyrmthalak
 				},
@@ -1712,7 +1712,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(21988, {	-- Ember of Emberseer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						})),
 						i(17322, {	-- Eye of the Emberseer
 							["timeline"] = { "removed 3.0.8" },
@@ -1727,7 +1727,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(16672, {	-- Gauntlets of Elements
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12926, {	-- Flaming Band
 							["timeline"] = { "removed 6.0.2" },
@@ -1771,7 +1771,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(16695, {	-- Devout Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12603, {	-- Nightbrace Tunic
 							["timeline"] = { "removed 6.0.2" },
@@ -1813,7 +1813,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["description"] = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
 							-- #endif
 							["provider"] = { "o", 175970 },	-- Unforged Runic Breastplate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12834, {	-- Plans: Arcanite Champion (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
@@ -1858,7 +1858,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(16669, {	-- Pauldrons of Elements
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1866,7 +1866,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
 						i(12630, {	-- Head of Rend Blackhand
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12583, {	-- Blackhand Doomsaw
 							["timeline"] = { "removed 6.0.2" },
@@ -1891,7 +1891,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 2.0.1" },
 						}),
 						i(16733, {	-- Spaulders of Valor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12936, {	-- Battleborn Armbraces
 							["timeline"] = { "removed 6.0.2" },
@@ -1937,7 +1937,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(16729, {	-- Lightforge Spaulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12966, {	-- Blackmist Armguards
 							["timeline"] = { "removed 6.0.2" },
@@ -2023,7 +2023,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							-- #endif
 						}),
 						i(16663, {	-- Blood of the Black Dragon Champion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15730, {	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
@@ -2047,31 +2047,31 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(16674, {	-- Beaststalker's Tunic
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16730, {	-- Breastplate of Valor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16690, {	-- Devout Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16700, {	-- Dreadmist Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16726, {	-- Lightforge Breastplate
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16688, {	-- Magister's Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16721, {	-- Shadowcraft Tunic
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16666, {	-- Vest of Elements
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(16706, {	-- Wildheart Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						applyclassicphase(PHASE_FIVE, i(22269, {	-- Shadow Prowler's Cloak
 							["timeline"] = { "removed 6.0.2" },

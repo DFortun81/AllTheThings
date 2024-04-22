@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["provider"] = { "i", 31086 },	-- Bottom Shard of the Arcatraz Key
 						}),
 						i(31084, {	-- Key to the Arcatraz
-							["timeline"] = { "removed 4.0.3.14732" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(31461),	-- A'dal's Gift
 						i(31464),	-- Naaru Belt of Precision

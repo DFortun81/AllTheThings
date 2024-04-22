@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(304, {	-- A Grim Task
 					["qg"] = 1071,	-- Longbraid the Grim
 					["coord"] = { 49.8, 18.3, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 					["groups"] = {
@@ -288,10 +288,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(2916, {	-- Gold Lion Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2917, {	-- Tranquil Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2094,	-- James Halloran
 					["sourceQuest"] = 484,	-- Young Crocolisk Skins
 					["coord"] = { 8.5, 55.7, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -321,10 +321,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2089,	-- Giant Wetlands Crocolisk
 						}),
 						i(2545, {	-- Malleable Chain Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3561, {	-- Resilient Poncho
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
 					},
@@ -357,7 +357,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 277,	-- Fire Taboo
 					["coord"] = { 56.3, 40.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -365,20 +365,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1040 },	-- Fen Creeper
 						}),
 						i(3558, {	-- Fen Keeper Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1273, {	-- Forest Chain
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2263, {	-- Phytoblade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(279, {	-- Claws from the Deep
 					["qg"] = 1242,	-- Karl Boran
 					["coord"] = { 8.3, 58.5, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -432,12 +432,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 292,	-- The Eye of Paleth
 					["coord"] = { 10.6, 60.5, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
 						i(2943, {	-- Eye of Paleth
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 3347 },	-- Bundle of Crocolisk Skins
 					},
 					["coord"] = { 49.8, 39.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 1609 },	-- Dragonmaw Catapult
 					["sourceQuest"] = 465,	-- Nek'rosh's Gambit
 					["coord"] = { 47.5, 46.9, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
@@ -485,17 +485,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2091,	-- Chieftain Nek'rosh
 						}),
 						i(3209, {	-- Ancient War Sword
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6194, {	-- Barreling Reaper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(470, {	-- Digging Through the Ooze
 					["qg"] = 2111,	-- Sida
 					["coord"] = { 11.8, 58.0, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
@@ -508,7 +508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3352, {	-- Ooze-covered Bag
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(472, {	-- Fall of Dun Modr
 					["qg"] = 2097,	-- Harlo Barnaby
 					["coord"] = { 10.8, 55.9, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -586,7 +586,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 276,	-- Tramping Paws
 					["coord"] = { 56.3, 40.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -668,7 +668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(305, {	-- In Search of The Excavation Team (1/2)
 					["qg"] = 2096,	-- Tarrel Rockweaver
 					["coord"] = { 11.5, 52.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 21,
 				}),
@@ -679,7 +679,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 305,	-- In Search of The Excavation Team (1/2)
 					["coord"] = { 38.8, 52.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 21,
 				}),
@@ -724,7 +724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["sourceQuest"] = 289,	-- The Cursed Crew
 					["coord"] = { 10.9, 59.6, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -746,12 +746,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1217,	-- Glorin Steelbrow
 					["sourceQuest"] = 270,	-- The Doomed Fleet
 					["coord"] = { 10.6, 60.5, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(2702, {	-- Lightforge Ingot
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -760,7 +760,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 321,	-- Lightforge Iron
 					["altQuests"] = { 324 },	-- The Lost Ingots
 					["coord"] = { 10.6, 60.6, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -791,7 +791,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 464,	-- War Banners
 					["coord"] = { 9.8, 57.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
 				}),
@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(294, {	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["coord"] = { 38, 51.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -826,7 +826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["sourceQuest"] = 294,	-- Ormer's Revenge (1/3)
 					["coord"] = { 38, 51.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -842,7 +842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["sourceQuest"] = 295,	-- Ormer's Revenge (2/3)
 					["coord"] = { 38, 51.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -852,13 +852,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1353,	-- Sarltooth
 						}),
 						i(3493, {	-- Raptor's End
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3566, {	-- Raptorbane Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5246, {	-- Excavation Rod
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 					},
@@ -867,7 +867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1075,	-- Rhag Garmason
 					["sourceQuest"] = 633,	-- The Thandol Span (3/3)
 					["coord"] = { 49.9, 18.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -875,7 +875,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1242,	-- Karl Boran
 					["sourceQuest"] = 279,	-- Claws from the Deep
 					["coord"] = { 8.4, 58.6, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -889,7 +889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(473, {	-- Report to Captain Stoutfist
 					["qg"] = 2086,	-- Valstag Ironjaw
 					["coord"] = { 10.1, 56.9, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 23,
@@ -901,15 +901,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 285,	-- Search More Hovels
 					["coord"] = { 14.0, 34.8, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(2950, {	-- Icicle Rod
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2949, {	-- Mariner Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 142151 },	-- Sealed Barrel
 					["sourceQuest"] = 284,	-- The Search Continues
 					["coord"] = { 13.6, 38.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -992,7 +992,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2911,	-- Archaeologist Flagongut
 					["sourceQuest"] = 942,	-- The Absent Minded Prospector (4/5) (Darnassus)
 					["coord"] = { 10.8, 60.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1013,10 +1013,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.8, 52.2, WETLANDS },
 						}),
 						i(5627, {	-- Relic Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5626, {	-- Skullchipper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1075,7 +1075,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["sourceQuest"] = 288,	-- The Third Fleet
 					["coord"] = { 10.9, 59.6, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -1119,7 +1119,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(303, {	-- The Dark Iron War
 					["qg"] = 1074,	-- Motley Garmason
 					["coord"] = { 49.7, 18.3, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1144,7 +1144,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 290,	-- Lifting the Curse
 					["coord"] = { 14.5, 24.0, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(463, {	-- The Greenwarden
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["coord"] = { 10.9, 59.6, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -1206,7 +1206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 526 },	-- Lightforge Ingots
 					["sourceQuest"] = 321,	-- Lightforge Iron
 					["coord"] = { 12.1, 64.1, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -1220,7 +1220,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4963,	-- Mikhail <Bartender>
 					["sourceQuest"] = 1248,	-- The Missing Diplomat (10/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4962,	-- Tapoke "Slim" Jahn
 					["sourceQuest"] = 1249,		-- The Missing Diplomat (11/17)
 					["coord"] = { 10.6, 60.3, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -1241,7 +1241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4963,	-- Mikhail <Bartender>
 					["sourceQuest"] = 1250,	-- The Missing Diplomat (12/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -1271,7 +1271,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 261 },	-- Damaged Crate
 					["sourceQuest"] = 281,	-- Reclaiming Goods
 					["coord"] = { 13.5, 41.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -1296,7 +1296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(631, {	-- The Thandol Span (1/3)
 					["qg"] = 1075,	-- Rhag Garmason
 					["coord"] = { 49.9, 18.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 631,	-- The Thandol Span (1/3)
 					["coord"] = { 51.3, 8.0, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -1315,7 +1315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1075,	-- Rhag Garmason
 					["sourceQuest"] = 632,	-- The Thandol Span (2/3)
 					["coord"] = { 49.9, 18.2, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
@@ -1325,17 +1325,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.8, 88.2, ARATHI_HIGHLANDS },
 						}),
 						i(4504, {	-- Dwarven Guard Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4505, {	-- Swampland Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(288, {	-- The Third Fleet
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["coord"] = { 10.9, 59.6, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -1402,7 +1402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 463,	-- The Greenwarden
 					["coord"] = { 56.3, 40.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -1420,7 +1420,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["description"] = "The quest items spawn randomly in the dig site below.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1449,7 +1449,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(2913, {	-- Silk Mantle of Gamn
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1457,7 +1457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2104,	-- Captain Stoutfist
 					["sourceQuest"] = 473,	-- Report to Captain Stoutfist
 					["coord"] = { 9.8, 57.4, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
@@ -1540,7 +1540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(484, {	-- Young Crocolisk Skins
 					["qg"] = 2094,	-- James Halloran
 					["coord"] = { 8.5, 55.7, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -1619,7 +1619,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 50.8, 50.6, WETLANDS },
 						{ 53.0, 53.6, WETLANDS },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(2108, {	-- Garneg Charskull
 					-- #if AFTER CATA
@@ -1633,10 +1633,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6200, {	-- Garneg's War Belt
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(3392, {	-- Ringed Helm
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1668,10 +1668,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4444, {	-- Black Husk Shield
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(6199, {	-- Black Widow Band
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 18.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 18.09.2023
 						}),
 					},
 				}),
@@ -1683,10 +1683,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5749, {	-- Scythe Axe
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5750, {	-- Warchief's Girdle
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1717,10 +1717,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4463, {	-- Beaded Raptor Collar
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6198, {	-- Jurassic Wristguards
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1850,11 +1850,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(2682, {	-- Fradd Swiftgear <Engineering Supplies>
 					["coord"] = { 26.4, 25.8, WETLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(13309, {	-- Schematic: Lovingly Crafted Boomstick (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 						i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
@@ -2011,7 +2011,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(3022, {	-- Bluegill Breeches
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1028,	-- Bluegill Muckdweller
 					["coords"] = {
@@ -2039,7 +2039,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2046, {	-- Bluegill Kukri
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1027,	-- Bluegill Warrior
 					["coords"] = {
@@ -2064,7 +2064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1560, {	-- Bluegill Sandals
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1025,	-- Bluegill Puddlejumper
 					["coords"] = {
@@ -2094,7 +2094,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2084, {	-- Darksteel Bastard Sword
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1054,	-- Dark Iron Demolitionist
 					["coords"] = {
@@ -2115,14 +2115,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1955, {	-- Dragonmaw Chain Boots
 					["cr"] = 1035,	-- Dragonmaw Swamprunner
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 50.6, 49.4, WETLANDS },
 						{ 39.0, 46.6, WETLANDS },
 					},
 				}),
 				i(753, {	-- Dragonmaw Shortsword
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1036,	-- Dragonmaw Centurion
 					-- #if BEFORE 4.0.3
 					["coords"] = {
@@ -2150,7 +2150,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(892, {	-- Gnoll Casting Gloves
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1009,	-- Mosshide Mistweaver
 					["coords"] = {
@@ -2173,7 +2173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(3076, {	-- Smoldering Boots
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1042,	-- Red Whelp
 					["coords"] = {
@@ -2196,7 +2196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(3074, {	-- Smoldering Gloves
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1043,	-- Lost Whelp
 					["coords"] = {
@@ -2219,7 +2219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(3073, {	-- Smoldering Pants
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 1069,	-- Crimson Whelp
 					["coords"] = {
@@ -2240,7 +2240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(3072, {	-- Smoldering Robe
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 1044,	-- Flamesnorting Whelp
 					["coords"] = {
@@ -2261,7 +2261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(6315, {	-- Steelarrow Crossbow
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 6523,	-- Dark Iron Rifleman
 					["coords"] = {
@@ -2313,7 +2313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(756, {	-- Tunnel Pick
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1053,	-- Dark Iron Tunneler
 					["coords"] = {

@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 15998 },	-- Lewis' Note
 					},
 					["coord"] = { 56.9, 47.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
 					["coord"] = { 25.9, 47.77, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
 				q(139, {	-- Captain Sander's Hidden Treasure (3/4)
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
 					["coord"] = { 40.50, 47.82, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
 				q(140, {	-- Captain Sander's Hidden Treasure (4/4)
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 40.62, 17.01, WESTFALL },
 						{ 25.97, 16.90, WESTFALL },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 					["groups"] = {
 						i(3343),	-- Captain Sander's Booty Bag
@@ -329,7 +329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 6181,	-- A Swift Message
 					["coord"] = { 56.4, 52.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1075,	-- A Scroll from Mauren
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -464,7 +464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(22, {		-- Goretusk Liver Pie
 					["qg"] = 235,	-- Salma Saldean
 					["coord"] = { 56.4, 30.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 723, 8 } },	-- Goretusk Liver
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(103, {	-- Keeper of the Flame
 					["qg"] = 392,	-- Captain Grayson
 					["coord"] = { 30, 86, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 814, 5 } },	-- Flask of Oil
 					["lvl"] = 10,
 				}),
@@ -695,7 +695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 2360,	-- Mathias and the Defias
 					["coord"] = { 68.5, 70.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -814,7 +814,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(102, {	-- Patrolling Westfall
 					["qg"] = 821,	-- Captain Danuvin
 					["coord"] = { 56.4, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
@@ -836,17 +836,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(1154, {	-- Belt of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(710, {	-- Bracers of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(151, {	-- Poor Old Blanchy
 					["qg"] = 238,	-- Verna Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -857,10 +857,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(2165, {	-- Old Blanchy's Blanket
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1537, {	-- Old Blanchy's Feed Pouch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -904,7 +904,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(153, {	-- Red Leather Bandanas
 					["qg"] = 878,	-- Scout Galiaan
 					["coord"] = { 54.0, 53.0, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -926,13 +926,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3511, {	-- Cloak of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5944, {	-- Greaves of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12295, {	-- Leggings of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 84.6, 69.6, ELWYNN_FOREST },
 						{ 24.2, 74.6, ELWYNN_FOREST },
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(48, {		-- Sweet Amber (1/5)
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["coord"] = { 44.6, 80.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1044,7 +1044,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 48,	-- Sweet Amber (1/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS, TANARIS, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1076,7 +1076,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 49,	-- Sweet Amber (2/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 6037, 1 } },	-- Truesilver Bar
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1085,7 +1085,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 50,	-- Sweet Amber (3/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1101,7 +1101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 51,	-- Sweet Amber (4/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1114,14 +1114,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 54.6, 50.7, SEARING_GORGE },
 						}),
 						i(744, {	-- Thunderbrew's Boot Flask
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(152, {	-- The Coast Isn't Clear
 					["qg"] = 392,	-- Captain Grayson
 					["coord"] = { 30, 86, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/7 Murloc Coastrunner slain
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(104, {	-- The Coastal Menace
 					["qg"] = 392,	-- Captain Grayson
 					["coord"] = { 30, 86, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Scale of Old Murk-Eye
@@ -1197,7 +1197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65, {		-- The Defias Brotherhood (1/7)
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -1208,7 +1208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 65,	-- The Defias Brotherhood (1/7)
 					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -1219,7 +1219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 132,	-- The Defias Brotherhood (2/7)
 					["coord"] = { 56.3, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -1230,7 +1230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
 					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -1238,7 +1238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 141,	-- The Defias Brotherhood (4/7)
 					["coord"] = { 56.3, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 					["groups"] = {
@@ -1253,14 +1253,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 467,	-- The Defias Traitor
 					["sourceQuest"] = 142,	-- The Defias Brotherhood (5/7)
 					["coord"] = { 55.6, 47.5, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(64, {		-- The Forgotten Heirloom
 					["qg"] = 237,	-- Farmer Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -1276,7 +1276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9, {		-- The Killing Fields
 					["qg"] = 233,	-- Farmer Saldean
 					["coord"] = { 56.0, 31.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
@@ -1284,10 +1284,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 114 },	-- Harvest Watcher
 						}),
 						i(3578, {	-- Harvester's Pants
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1561, {	-- Harvester's Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1301,7 +1301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(12, {		-- The People's Militia (1/3)
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -1317,7 +1317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 12,	-- The People's Militia (1/3)
 					["coord"] = { 56.3, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -1333,7 +1333,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 13,	-- The People's Militia (2/3)
 					["coord"] = { 56.3, 47.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -1347,13 +1347,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 449 },	-- Defias Knuckleduster
 						}),
 						i(1566, {	-- Edge of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(1480, {	-- Fist of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12296, {	-- Spark of the People's Militia
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1387,13 +1387,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(117, {	-- Thunderbrew
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["coord"] = { 44.6, 80.2, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 1274, 5 } },	-- Hops
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
 						i(1262, {	-- Keg of Thunderbrew
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1423,7 +1423,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2832 },	-- Verna's Westfall Stew Recipe
 					},
 					["coord"] = { 60.0, 19.4, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
@@ -1431,7 +1431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 235,	-- Salma Saldean
 					["sourceQuest"] = 36,	-- Westfall Stew (1/2)
 					["coord"] = { 56.4, 30.6, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 729, 3 },	-- Stringy Vulture Meat
@@ -1444,10 +1444,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(728),	-- Recipe: Westfall Stew (RECIPE!)
 						i(733),	-- Westfall Stew
 						i(1479, {	-- Salma's Oven Mitts
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2225, {	-- Sharp Kitchen Knife
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1556,10 +1556,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2235, {	-- Brackclaw
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(6179, {	-- Privateer's Cape
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1601,10 +1601,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(933, {	-- Large Rucksack
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(4434, {	-- Scarecrow Trousers
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1680,10 +1680,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						i(1387, {	-- Ghoulfang
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(1314, {	-- Ghoul Fingers
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1697,10 +1697,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6205, {	-- Burrowing Shovel
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(6206, {	-- Rock Chipper
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1715,10 +1715,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2203, {	-- Brashclaw's Chopper
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2204, {	-- Brashclaw's Skewer
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1764,13 +1764,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3188, {	-- Coral Claymore
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(120952, {	-- Slarkhide
 							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(6180, {	-- Slarkskin
-							["timeline"] = { "removed 4.0.3", ADDED_10_2_0 },	-- ATT Discord 01.19.2024
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_2_0 },	-- ATT Discord 01.19.2024
 						}),
 					},
 				}),
@@ -1814,13 +1814,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5971, {	-- Feathered Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(115348, {	-- Feathered Cape
 							["timeline"] = { "added 6.0.1.18522" },
 						}),
 						i(4454, {	-- Talon of Vultros
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(115349, {	-- Talon of Vultros
 							["timeline"] = { "added 6.0.1.18522" },
@@ -1888,7 +1888,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
 					["coord"] = { 43.4, 66.8, WESTFALL },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -1964,7 +1964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(826, {	-- Brutish Riverpaw Axe
 					["cr"] = 124,	-- Riverpaw Brute
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 54.2, 62.0, WESTFALL },
@@ -2030,7 +2030,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(1394, {	-- Driftwood Club
 					["cr"] = 171,	-- Murloc Warrior
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 32.2, 26.6, WESTFALL },
 						{ 34.8, 23.6, WESTFALL },
@@ -2038,7 +2038,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4290, {	-- Dust Bowl
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 12.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 12.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 832,	-- Dust Devil
 					["coords"] = {
@@ -2203,7 +2203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 831,	-- Sea Crawler
 				}),
 				i(2091, {	-- Magic Dust
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 832,	-- Dust Devil
 					["coords"] = {
@@ -2254,7 +2254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1190, {	-- Overseer's Cloak
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 125,	-- Riverpaw Overseer
 					["coords"] = {
@@ -2270,7 +2270,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1189, {	-- Overseer's Ring
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 125,	-- Riverpaw Overseer
 					["coords"] = {
@@ -2331,7 +2331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(832, {	-- Silver Defias Belt
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 121,	-- Defias Pathstalker
 					["coords"] = {
@@ -2350,7 +2350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 115,	-- Harvest Reaper
 				}),
 				i(816, {	-- Small Hand Blade
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 36,	-- Harvest Golem
 					["coords"] = {
@@ -2427,7 +2427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring
 					-- Moved to Brainwashed Noble in 10.1.7
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 619,	-- Defias Conjurer
 					["coords"] = {
 						{ 44.6, 69.4, WESTFALL },
@@ -2436,7 +2436,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2327, {	-- Sturdy Leather Bracers
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 480,	-- Rusty Harvest Golem
 					["coords"] = {

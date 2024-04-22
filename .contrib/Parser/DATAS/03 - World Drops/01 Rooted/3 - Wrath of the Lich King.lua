@@ -1152,32 +1152,32 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(41777),	-- Design: Etched Twilight Opal
 			-- #if AFTER CATA
 			i(41785, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Tenuous Twilight Opal [WRATH]
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #endif
 			i(41789),	-- Design: Inscribed Monarch Topaz
 			-- #if AFTER CATA
 			i(41782, {	-- Design: Lightning Forest Emerald [CATA+] / Design: Shining Forest Emerald [WRATH]
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #endif
 			i(41781, {	-- Design: Misty Forest Emerald
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(41783),	-- Design: Purified Twilight Opal
 			i(41778),	-- Design: Resolute Monarch Topaz
 			-- #if BEFORE CATA
 			i(41782, {	-- Design: Shining Forest Emerald [WRATH] / Design: Lightning Forest Emerald [CATA+]
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #endif
 			i(41784),	-- Design: Sovereign Twilight Opal
 			i(41779, {	-- Design: Stalwart Monarch Topaz
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #if BEFORE CATA
 			i(41785, {	-- Design: Tenuous Twilight Opal [WRATH] / Design: Glinting Twilight Opal [CATA+]
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #endif
 			i(41787),	-- Design: Thundering Skyflare Diamond

@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(1487, {	-- Deviate Eradication
 						["qg"] = 5768,	-- Ebru <Disciple of Naralex>
 						["coord"] = { 46.0, 35.7, THE_BARRENS },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 15,
 						["groups"] = {
 							objective(1, {	-- 0/7 Deviate Ravager slain
@@ -71,30 +71,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "n", 5056 },	-- Deviate Dreadfang
 							}),
 							i(6476, {	-- Pattern: Deviate Scale Belt (RECIPE!)
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(8071, {	-- Sizzle Stick
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(6481, {	-- Dagmire Gauntlets
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
 					q(1486, {	-- Deviate Hides
 						["qg"] = 5767,	-- Nalpak <Disciple of Naralex>
 						["coord"] = { 46.0, 35.7, THE_BARRENS },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 13,
 						["groups"] = {
 							objective(1, {	-- 0/20 Deviate Hide
 								["provider"] = { "i", 6443 },	-- Deviate Hide
 							}),
 							i(6480, {	-- Slick Deviate Leggings
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(918, {	-- Deviate Hide Pack
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -115,7 +115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 						["sourceQuest"] = 880,	-- Altered Beings
 						["coord"] = { 52.3, 31.9, THE_BARRENS },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["description"] = "She lives in a house on top of the mountain.",
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 15,
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -132,10 +132,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard
 							}),
 							i(10657, {	-- Talbar Mantle
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(10658, {	-- Quagmire Galoshes
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -144,7 +144,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["description"] = "She lives in a house on top of the mountain.",
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 15,
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -152,10 +152,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard
 							}),
 							i(10657, {	-- Talbar Mantle
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(10658, {	-- Quagmire Galoshes
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -163,7 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 5770,	-- Nara Wildmane
 						["sourceQuest"] = 1490,	-- Nara Wildmane
 						["coord"] = { 75.6, 31.2, THUNDER_BLUFF },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 						["groups"] = {
@@ -180,10 +180,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 9741 },	-- Gem of Serpentis
 							}),
 							i(6505, {	-- Crescent Staff
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(6504, {	-- Wingblade
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 						["sourceQuest"] = 1489,	-- Hamuul Runetotem
 						["coord"] = { 74.7, 30.2, THUNDER_BLUFF },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(962, {	-- Serpentbloom
 						["qg"] = 3419,	-- Apothecary Zamah <Royal Apothecary Society>
 						["coord"] = { 23.6, 21.4, THUNDER_BLUFF },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 14,
 						["groups"] = {
@@ -216,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 5339 },	-- Serpentbloom
 							}),
 							i(10919, {	-- Apothecary Gloves
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},
 					}),
@@ -224,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 3446,	-- Mebok Mizzyrix
 						["sourceQuest"] = 865,	-- Raptor Horns
 						["coord"] = { 62.4, 37.6, THE_BARRENS },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 13,
 						["groups"] = {
 							objective(1, {	-- 0/6 Wailing Essence
@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["provider"] = { "i", 10441 },	-- Glowing Shard
 						["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
 						["coord"] = { 63.0, 37.2, THE_BARRENS },
-						["timeline"] = { "removed 4.0.3.13277" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -256,13 +256,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(VENDORS, {
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
 					["coord"] = { 45.9, 35.7, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(6474, {	-- Pattern: Deviate Scale Cloak (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6475, {	-- Pattern: Deviate Scale Gloves (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),

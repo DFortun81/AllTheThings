@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						-- #if BEFORE 4.0.3
 						i(42482, {	-- The Violet Hold Key
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #endif
 						i(44343),	-- Conferred Pantaloons
@@ -449,7 +449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							}),
 							ach(1816),	-- Defenseless
 							i(41791, {	-- Design: Subtle Autumn's Glow [CATA+] / Design: Thick Autumn's Glow [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							-- #if AFTER 7.3.5
 							i(35649),	-- Jailer's Baton (7.3.5 - Used to be only Normal Mode)

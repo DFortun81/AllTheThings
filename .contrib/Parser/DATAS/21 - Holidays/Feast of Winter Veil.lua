@@ -383,7 +383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				crit(6236, {	-- Brother Anton in Nijel's Point
 					["provider"] = { "n", 1182 },	-- Brother Anton
 					["coord"] = { 66.5, 7.9, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 			},
@@ -1292,7 +1292,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 46740 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2009.",
-			["timeline"] = { "added 3.3.0.11159", "removed 4.0.3.13329" },
+			["timeline"] = { "added 3.3.0.11159", REMOVED_4_0_3_LAUNCH },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["lvl"] = 10,
 			["groups"] = {

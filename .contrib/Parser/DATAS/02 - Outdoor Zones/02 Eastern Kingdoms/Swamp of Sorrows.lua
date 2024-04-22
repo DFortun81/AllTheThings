@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 2623,	-- The Swamp Talker (H)
 					},
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				applyclassicphase(PHASE_FOUR, q(8417, {	-- A Troubled Spirit
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 47.8, 14.8, UNDERCITY },
 						},
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5593,	-- Katar
 					["sourceQuest"] = 1427,	-- Threat From the Sea
 					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -353,7 +353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1398,	-- Driftwood
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1389, {	-- Draenethyst Crystals
 					["qg"] = 1776,	-- Magtoor
 					["coord"] = { 26.0, 31.4, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/6 Draenethyst Crystal
@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5476,	-- Watcher Biggs
 					["sourceQuest"] = 1421,	-- The Lost Caravan
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 9609,	-- Help Watcher Biggs
 					-- #endif
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -458,14 +458,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2784, {	-- Fall From Grace
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(1430, {	-- Fresh Meat
 					["qg"] = 5591,	-- Dar
 					["coord"] = { 44.8, 57.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -474,28 +474,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1088,	-- Monstrous Crawler
 						}),
 						i(9681, {	-- Grilled King Crawler Legs
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9682, {	-- Leather Chef's Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(1393, {	-- Galen's Escape
 					["qg"] = 5391,	-- Galen Goodward
 					["coord"] = { 65.4, 18.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						i(6828, {	-- Visionary Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(9609, {	-- Help Watcher Biggs
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
@@ -504,17 +504,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(2701, {	-- Heroes of Old (2/2)
 					["qg"] = 7750,	-- Corporal Thund Splithoof
 					["sourceQuest"] = 2702,	-- Heroes of Old (1/2)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(10659, {	-- Shard of the Splithooves  / Shard of Afrasa [Original]
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -577,14 +577,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2701,	-- Heroes of Old (2/2)
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
 					["lvl"] = 45,
 				}),
 				q(698, {	-- Lack of Surplus (1/2)
 					["qg"] = 5591,	-- Dar
 					["coord"] = { 44.8, 57.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5592,	-- Tok'Kar
 					["sourceQuest"] = 698,	-- Lack of Surplus (1/2)
 					["coord"] = { 81.4, 80.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -636,7 +636,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
 					["coord"] = { 47.8, 54.9, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -766,7 +766,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9448, {	-- Mercy for the Cursed
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -802,7 +802,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1418, {	-- Neeka Bloodscar
 					["qg"] = 1442,	-- Helgrum the Swift
 					["coord"] = { 47.7, 55.2, DUSTWALLOW_MARSH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
@@ -817,7 +817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1392, {	-- Noboru the Cudgel
 					["provider"] = { "i", 6196 },	-- Noboru's Cudgel
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 5477,	-- Noboru the Cudgel
 					["lvl"] = 29,
 				}),
@@ -867,12 +867,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(9610, {	-- Pool of Tears (A)
 						["qg"] = 18221,	-- Holaaru
 						["coord"] = { 25.9, 32.4, SWAMP_OF_SORROWS },
-						["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+						["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					}),
 					["hordeQuestData"] = q(1424, {	-- Pool of Tears (H)
 						["qg"] = 1443,	-- Fel'zerul
 						["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					["lvl"] = 38,
 					["groups"] = {
@@ -891,7 +891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1424, {	-- Pool of Tears (H)
 					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -994,7 +994,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5598,	-- Atal'ai Exile
 					["sourceQuest"] = 1429,	-- The Atal'ai Exile
 					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1424,	-- Pool of Tears [Horde]
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -1125,7 +1125,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2743,	-- The Cover of Darkness
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
 					["lvl"] = 45,
 				}),
@@ -1133,7 +1133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2784,	-- Fall From Grace
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -1168,7 +1168,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5476,	-- Watcher Biggs
 					["sourceQuest"] = 1396,	-- Encroaching Wildlife
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -1198,13 +1198,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1423, {	-- The Lost Supplies
 					["provider"] = { "i", 6172 },	-- Lost Supplies
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 30,
 					["groups"] = {
 						i(6827, {	-- Box of Supplies
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1212,7 +1212,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 2621,	-- The Disgraced One
 					["coord"] = { 47.8, 55, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -1245,7 +1245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2801,	-- A Tale of Sorrow
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
 					["lvl"] = 45,
 					["groups"] = {
@@ -1285,7 +1285,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7643,	-- Bengor
 					["sourceQuest"] = 2622,	-- The Missing Orders
 					["coord"] = { 45, 57.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
@@ -1300,7 +1300,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5592,	-- Tok'Kar
 					["sourceQuest"] = 699,	-- Lack of Surplus (2/2)
 					["coord"] = { 81.3, 81.0, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
@@ -1308,7 +1308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5593,	-- Katar
 					["sourceQuest"] = 1422,	-- Threat From the Sea (1/3)
 					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -1327,18 +1327,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5593,	-- Katar
 					["sourceQuest"] = 1426,	-- Threat From the Sea (2/3)
 					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
 						i(9680, {	-- Tok'kar's Murloc Shanker
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9678, {	-- Tok'kar's Murloc Basher
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9679, {	-- Tok'kar's Murloc Chopper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1422,7 +1422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
 					["lvl"] = 45,
 					["groups"] = {
@@ -1447,7 +1447,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
@@ -1467,7 +1467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
@@ -1794,7 +1794,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(11205, {	-- Formula: Enchant Gloves - Advanced Herbalism
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						1081,	-- Mire Lord
 						14448,	-- Molt Thorn
@@ -1812,10 +1812,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(6172, {	-- Lost Supplies
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(6196, {	-- Noboru's Cudgel
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 5477,	-- Noboru the Cudgel
 				}),
 				-- #if BEFORE CATA

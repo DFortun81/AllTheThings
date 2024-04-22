@@ -1184,14 +1184,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24792, {	-- Man on the Inside (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
-			["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+			["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24793, {	-- Man on the Inside (H)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
-			["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+			["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
@@ -1362,7 +1362,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		q(14488, {	-- You've Been Served
 			["qg"] = 38208,	-- Investigator Fezzen Brasstacks
-			["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+			["timeline"] = { "added 3.3.0", REMOVED_4_0_3 },
 			["maps"] = { SHADOWFANG_KEEP },
 			["isDaily"] = true,
 		}),

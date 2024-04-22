@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1175, {	-- A Bump in the Road
 					["qg"] = 4629,	-- Trackmaster Zherin
 					["coord"] = { 81.6, 77.9, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/10 Saltstone Basilisk slain
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9431, {	-- A Different Approach
 					["qg"] = 17093,	-- Magistrix Elosai
 					["coord"] = { 46.0, 50.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10941,	-- Wizlo Bearingshiner
 					["sourceQuest"] = 9431,	-- A Different Approach
 					["coord"] = { 21.4, 32.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9238,	-- Quentin
 					["sourceQuest"] = 3841,	-- An Orphan Looking For a Home
 					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3825, 2 } },	-- Elixir of Fortitude
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4821, {	-- Alien Egg
 					["qg"] = 10539,	-- Hagar Lightninghoof
 					["coord"] = { 44.64, 50.29, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["sourceQuest"] = 5062,	-- Sacred Fire
 					["coord"] = { 69.85, 30.90, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -282,13 +282,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 10882,	-- Arikara <Vengeance>
 						}),
 						i(15464, {	-- Brute Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15465, {	-- Stingshot Wand
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15466, {	-- Clink Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 12564 },	-- Assassination Note
 					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
 					["coord"] = { 21.2, 32, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10617,	-- Galak Messenger
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1117,	-- Rumors for Kravel
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 35,
 				}),
@@ -400,7 +400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1531, {	-- Call of Air [Orgrimmar]
 					["qg"] = 5892,	-- Searn Firewarder
 					["coord"] = { 37.8, 37.4, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1532, {	-- Call of Air [Thunder Bluff]
 					["qg"] = 5906,	-- Xanis Flameweaver
 					["coord"] = { 25.2, 21, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1112,	-- Parts for Kravel
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(25504, {	-- Do Me a Favor? [A]
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4453,	-- Wizzle Brassbolts
 					["sourceQuest"] = 1105,	-- Hardened Shells
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 28,
 					["groups"] = {
@@ -748,7 +748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 13507 },	-- Cliffwatcher Longhorn Report
 					},
 					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DESOLACE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
@@ -757,15 +757,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4488,	-- Parqual Fintallas
 					["sourceQuest"] = 6628,	-- Test of Lore (6/6)
 					["coord"] = { 57.75, 65.39, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
 						i(6804, {	-- Windstorm Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6806, {	-- Dancing Flame
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -792,15 +792,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4904, {	-- Free at Last
 					["qg"] = 10646,	-- Lakota Windsong
 					["coord"] = { 38, 26.6, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
 						i(15469, {	-- Windsong Cinch
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15468, {	-- Windsong Drape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 1121 },	-- Get the Goblins Drunk
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(1121, {	-- Get the Goblins Drunk
@@ -865,14 +865,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 1120 },	-- Get the Gnomes Drunk
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(1950, {	-- Get the Scoop
 					["qg"] = 6548,	-- Magus Tirth
 					["sourceQuest"] = 1949,	-- Hidden Secrets
 					["coord"] = { 78.2, 75.8, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 30,
 					["groups"] = {
@@ -914,7 +914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1176,	-- Load Lightening
 					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["lvl"] = 29,
 				}),
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 1178,	-- Goblin Sponsorship (1/5)
 					["coord"] = { 62.68, 36.24, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 29,
 				}),
@@ -930,14 +930,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4631,	-- Wharfmaster Lozgil
 					["sourceQuest"] = 1180,	-- Goblin Sponsorship (2/5)
 					["coord"] = { 26.3, 73.6, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 				}),
 				q(1182, {	-- Goblin Sponsorship (4/5)
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 1181,	-- Goblin Sponsorship (3/5)
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fuel Regulator Blueprints
@@ -963,7 +963,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1182,	-- Goblin Sponsorship (4/5)
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 				}),
 				q(27318, {	-- Grimtotem Chiefs: Elder Stormhoof [A]
@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
 					["sourceQuest"] = 4841,	-- Pacify the Centaur
 					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -1112,20 +1112,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 39, 41, THOUSAND_NEEDLES },
 						}),
 						i(15457, {	-- Desert Shoulders
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15458, {	-- Tundra Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15459, {	-- Grimtoll Wristguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(1105, {	-- Hardened Shells
 					["qg"] = 4453,	-- Wizzle Brassbolts
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/9 Hardened Tortoise Shell
@@ -1153,14 +1153,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 14542 },	-- Kravel's Crate
 					},
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
 				q(4770, {	-- Homeward Bound
 					["qg"] = 10427,	-- Pao'ka Swiftmountain
 					["coord"] = { 17.8, 40.6, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -1191,7 +1191,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5151, {	-- Hypercapacitor Gizmo
 					["qg"] = 10941,	-- Wizlo Bearingshiner
 					["coord"] = { 21.44, 32.55, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -1201,7 +1201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 10992,	-- Enraged Panther
 						}),
 						i(15467, {	-- Inventor's League Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1194,	-- Rizzle's Schematics
 					["coord"] = { 80, 75.8, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5833, 4 }},	-- Indurium Ore
 					["repeatable"] = true,
 					["lvl"] = 29,
@@ -1277,13 +1277,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1137,	-- News for Frizzle
 					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 				}),
 				q(1176, {	-- Load Lightening
 					["qg"] = 4630,	-- Pozzik
 					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 					["groups"] = {
 						objective(1, {	-- 0/10 Hollow Vulture Bone
@@ -1305,7 +1305,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1104,	-- Salt Flat Venom
 					},
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS },
 					["lvl"] = 26,
 				}),
@@ -1315,7 +1315,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 11886 },	-- Urgent Message
 					},
 					["coord"] = { 32.23, 22.17, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 23,
@@ -1357,7 +1357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
 					["sourceQuest"] = 4542,	-- Message to Freewind Post
 					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
@@ -1379,13 +1379,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1111,	-- Wharfmaster Dizzywig
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(1148, {	-- Parts of the Swarm (1/2)
 					["provider"] = { "i", 5877 },	-- Cracked Silithid Carapace
 					["coord"] = { 70.2, 87, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						4133,	-- Silithid Hive Drone
 						4130,	-- Silithid Searcher
@@ -1410,16 +1410,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3428,	-- Korran
 					["sourceQuest"] = 1148,	-- Parts of the Swarm (1/2)
 					["coord"] = { 51, 29.6, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
 						i(6737, {	-- Dryleaf Pants
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6738, {	-- Bleeding Crescent
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1449,18 +1449,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10638,	-- Kanati Greycloud
 					["sourceQuest"] = 4881,	-- Assassination Plot
 					["coord"] = { 21.27, 32.03, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
 						i(15461, {	-- Lightheel Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15462, {	-- Loamflake Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15463, {	-- Palestrider Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1482,7 +1482,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4706,	-- Razzeric
 					["sourceQuest"] = 1186,	-- The Eighteenth Pilot
 					["coord"] = { 80.3, 76.1, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSTWALLOW_MARSH },
 					["lvl"] = 29,
 					["groups"] = {
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1121,	-- Get the Goblins Drunk
 					},
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 35,
 				}),
@@ -1525,13 +1525,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1190,	-- Keeping Pace
 					["coord"] = { 77.22, 77.39, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 				}),
 				q(1110, {	-- Rocket Car Parts
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/30 Rocket Car Parts
@@ -1549,14 +1549,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1116,	-- Dream Dust in the Swamp
 					["coord"] = { 27, 77.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(5062, {	-- Sacred Fire
 					["qg"] = 10428,	-- Motega Firemane
 					["sourceQuest"] = 4865,	-- Serpent Wild
 					["coord"] = { 21.55, 32.34, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -1575,7 +1575,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1187,	-- Razzeric's Tweaking
 					["coord"] = { 80.3, 76.1, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS },
 					["lvl"] = 29,
 				}),
@@ -1586,21 +1586,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1188,	-- Safety First (1/2)
 					["coord"] = { 50.9, 27.0, TANARIS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 					["groups"] = {
 						i(6726, {	-- Razzeric's Customized Seatbelt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6727, {	-- Razzeric's Racing Grips
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(1104, {	-- Salt Flat Venom
 					["qg"] = 4454,	-- Fizzle Brassbolts
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/6 Salty Scorpid Venom
@@ -1624,7 +1624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10539,	-- Hagar Lightninghoof
 					["sourceQuest"] = 4821,	-- Alien Egg
 					["coord"] = { 44.64, 50.29, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
@@ -1734,7 +1734,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2986,	-- Dorn Plainstalker
 					["sourceQuest"] = 1149,	-- Test of Faith
 					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1748,7 +1748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1149, {	-- Test of Faith
 					["qg"] = 2986,	-- Dorn Plainstalker
 					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -1756,7 +1756,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2986,	-- Dorn Plainstalker
 					["sourceQuest"] = 1151,	-- Test of Strength
 					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -1765,7 +1765,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4489,	-- Braug Dimspirit
 					["sourceQuest"] = 1152,	-- Test of Lore (1/6)
 					["coord"] = { 78.80, 45.68, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -1783,7 +1783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4489,	-- Braug Dimspirit
 					["sourceQuest"] = 1154,	-- Test of Lore (2/6)
 					["coord"] = { 78.80, 45.68, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1796,7 +1796,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4489,	-- Braug Dimspirit
 					["sourceQuest"] = 6627,	-- Test of Lore (3/6)
 					["coord"] = { 78.80, 45.68, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -1805,7 +1805,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4488,	-- Parqual Fintallas
 					["sourceQuest"] = 1160,	-- Test of Lore (5/6)
 					["coord"] = { 57.75, 65.39, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1818,7 +1818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2986,	-- Dorn Plainstalker
 					["sourceQuest"] = 1150,	-- Test of Endurance
 					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1835,7 +1835,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 9433,	-- A Dip in the Moonwell
 					["coord"] = { 21.4, 32.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 5849 },	-- Crate of Crash Helmets
 					},
 					["coord"] = { 72.4, 93.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -1955,7 +1955,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1183,	-- Goblin Sponsorship (5/5)
 					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 				}),
 				q(28140, {	-- The Elder Crone
@@ -2016,7 +2016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 3842,	-- A Short Incubation
 					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -2043,7 +2043,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1115, {	-- The Rumormonger
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 30,
 				}),
@@ -2053,7 +2053,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 5846 },	-- Korran's Sealed Note
 					},
 					["coord"] = { 51.07, 29.62, THE_BARRENS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -2065,7 +2065,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1145,	-- The Swarm Grows (1/3)
 					["coord"] = { 75, 34.2, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
@@ -2073,7 +2073,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4483,	-- Moktar Krin
 					["sourceQuest"] = 1146,	-- The Swarm Grows (2/3)
 					["coord"] = { 67.60, 63.93, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
@@ -2229,7 +2229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5147, {	-- Wanted - Arnak Grimtotem
 					["provider"] = { "o", 176115 },	-- Wanted Poster - Arnak Grimtotem
 					["coord"] = { 46.01, 50.86, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -2239,10 +2239,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 10896,	-- Arnak Grimtotem
 						}),
 						i(15471, {	-- Brawnhide Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15470, {	-- Plainsguard Leggings
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2284,7 +2284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 5799 },	-- Kravel's Parts Order
 					},
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(28283, {	-- What's that Rattle? [A]
@@ -2318,7 +2318,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4767, {	-- Wind Rider
 					["qg"] = 10377,	-- Elu
 					["coord"] = { 44.84, 48.97, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -2359,7 +2359,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 1190 },	-- Keeping Pace
 					["coord"] = { 79.8, 77.0, THOUSAND_NEEDLES },
 					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Keeping Pace\" in your quest log.",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 29,
 				}),
@@ -2370,7 +2370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 1118,	-- Back to Booty Bay
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 			}),
@@ -2452,7 +2452,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8223, {	-- Blade of the Basilisk
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -2474,7 +2474,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8224, {	-- Silithid Ripper
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2504,7 +2504,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8224, {	-- Silithid Ripper
-							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2552,7 +2552,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(4877, {	-- Jandia <Trade Supplies>
 					["coord"] = { 46.0, 51.6, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield
@@ -2567,23 +2567,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(6730, {	-- Jinky Twizzlefixxit <Engineering Supplies>
 					-- NOTE: There is still a Jinky Twizzlefixxit, but she doesn't sell things anymore. New ID and everything.
 					["coord"] = { 77.7, 77.8, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(7560, {	-- Schematic: Gnomish Universal Remote (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 						-- #endif
 						i(13309, {	-- Schematic: Lovingly Crafted Boomstick (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 					},
 				}),
 				n(6548, {	-- Magus Tirth
 					["coord"] = { 78.30, 75.70, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(11023),	-- Ancona Chicken (PET!)
@@ -2592,10 +2592,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4878, {   -- Montarr <Lorekeeper>
 					["coord"] = { 45.2, 50.6, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(6068, {  -- Recipe: Shadow Oil (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },	-- Moved to trainers
+							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainers
 						}),
 					},
 				}),
@@ -2620,7 +2620,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(9551, {	-- Starn <Gunsmith & Bowyer>
 					["coord"] = { 45.0, 50.6, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -2636,7 +2636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(1493, {	-- Heavy Marauder Scimitar
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 15.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 15.09.2023
 					["crs"] = {
 						-- #if BEFORE 4.0.3
 						4099,	-- Galak Marauder
@@ -2658,7 +2658,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if AFTER TBC
 				i(5773, {	-- Pattern: Robes of Arcana
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10760,	-- Grimtotem Geomancer
 				}),
 				-- #endif

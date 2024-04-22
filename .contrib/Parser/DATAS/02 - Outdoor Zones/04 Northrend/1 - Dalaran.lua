@@ -942,21 +942,21 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(33927, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(33921, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, n(31863, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -968,7 +968,7 @@ root(ROOTS.Zones, {
 									-- #endif
 								},
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(CATA_PHASE_ONE, n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
 								["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
@@ -984,21 +984,21 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(34092, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
 								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(34087, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S6 ELITE VENDOR
 								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
 								["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
@@ -1014,28 +1014,28 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(33926, {	-- Xazi Smolderpipe <Arena Vendor> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(33922, {	-- Xazi Smolderpipe <Arena Vendor> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, n(31864, {	-- Xazi Smolderpipe <Arena Vendor> // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
 								["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
@@ -1071,28 +1071,28 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(33925, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(33923, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, n(31865, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
 								-- #endif
-								["timeline"] = { "removed 4.0.3.13277" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 						}),
 					},
@@ -1500,7 +1500,7 @@ root(ROOTS.Zones, {
 							{ "i", 46775 },	-- Battered Tribal Shield
 						},
 						["coord"] = { 60.2, 26.6, NORTHREND_DALARAN },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 71,
@@ -4149,14 +4149,14 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(3, i(41576)),	-- Design: Bold Scarlet Ruby
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(2, i(42299, {	-- Design: Bright Dragon's Eye [WRATH] / Design: Delicate Dragon's Eye [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA
 							daljewelcraftingtoken(2, i(42309)),	-- Design: Brilliant Dragon's Eye [CATA+] / Design: Runed Dragon's Eye [WRATH]
 							-- #endif
 							daljewelcraftingtoken(2, i(42300, {	-- Design: Brilliant Dragon's Eye
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(5, i(41704)),	-- Design: Chaotic Skyflare Diamond
 							-- #if AFTER CATA
@@ -4165,7 +4165,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(2, i(42301)),	-- Design: Delicate Dragon's Eye
 							-- #if AFTER CATA
 							daljewelcraftingtoken(2, i(42299, {	-- Design: Delicate Dragon's Eye [CATA+] / Design: Bright Dragon's Eye [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(3, i(41577)),	-- Design: Delicate Scarlet Ruby
@@ -4179,7 +4179,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(3, i(41692)),	-- Design: Energized Forest Emerald
 							-- #if AFTER CATA
 							daljewelcraftingtoken(3, i(41694, {	-- Design: Energized Forest Emerald [CATA+] / Design: Intricate Forest Emerald [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(2, i(42302)),	-- Design: Flashing Dragon's Eye
@@ -4187,14 +4187,14 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(3, i(41693)),	-- Design: Forceful Forest Emerald
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(2, i(42303, {	-- Design: Fractured Dragon's Eye [WRATH] / Design: Smooth Dragon's Eye [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(3, i(41582)),	-- Design: Glinting Twilight Opal
 							daljewelcraftingtoken(5, i(41708)),	-- Design: Insightful Earthsiege Diamond
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(3, i(41694, {	-- Design: Intricate Forest Emerald [WRATH] / Design: Energized Forest Emerald [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(5, i(41709)),	-- Design: Invigorating Earthsiege Diamond
@@ -4208,10 +4208,10 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(3, i(41689, {	-- Design: Luminous Monarch Topaz [WRATH] / Design: Reckless Monarch Topaz [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(2, i(42304, {	-- Design: Lustrous Dragon's Eye [WRATH] / Design: Sparkling Dragon's Eye [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(3, i(41581)),	-- Design: Lustrous Sky Sapphire [WRATH] / Design: Sparkling Sky Sapphire [CATA+]
 							-- #endif
@@ -4232,10 +4232,10 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if AFTER CATA
 							daljewelcraftingtoken(3, i(41701, {	-- Design: Purified Twilight Opal [CATA+] / Design: Royal Twilight Opal [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(3, i(41699, {	-- Design: Purified Twilight Opal [CATA+] / Design: Seer's Forest Emerald [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(3, i(41579)),	-- Design: Quick Autumn's Glow
@@ -4247,7 +4247,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(3, i(41690)),	-- Design: Reckless Monarch Topaz
 							-- #if AFTER CATA
 							daljewelcraftingtoken(3, i(41689, {	-- Design: Reckless Monarch Topaz [CATA+] / Design: Luminous Monarch Topaz [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA
@@ -4272,7 +4272,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(43318)),	-- Design: Ring of Scarlet Shadows
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(3, i(41701, {	-- Design: Royal Twilight Opal [WRATH] / Design: Purified Twilight Opal [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(2, i(42309)),	-- Design: Runed Dragon's Eye [WRATH] / Design: Brilliant Dragon's Eye [CATA+]
 							-- #endif
@@ -4280,7 +4280,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(43485)),	-- Design: Savage Titanium Ring
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(3, i(41699, {	-- Design: Seer's Forest Emerald [WRATH] / Design: Purified Twilight Opal [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA
@@ -4292,7 +4292,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(2, i(42310)),	-- Design: Smooth Dragon's Eye
 							-- #if AFTER CATA
 							daljewelcraftingtoken(2, i(42303, {	-- Design: Smooth Dragon's Eye [CATA+] / Design: Fractured Dragon's Eye [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(2, i(42311)),	-- Design: Solid Dragon's Eye
@@ -4300,7 +4300,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(2, i(42312)),	-- Design: Sparkling Dragon's Eye
 							-- #if AFTER CATA
 							daljewelcraftingtoken(2, i(42304, {	-- Design: Sparkling Dragon's Eye [CATA+] / Design: Lustrous Dragon's Eye [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(3, i(41581)),	-- Design: Sparkling Sky Sapphire [CATA+] / Design: Lustrous Sky Sapphire [WRATH]
 							-- #endif
@@ -4319,13 +4319,13 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(2, i(42314)),	-- Design: Subtle Dragon's Eye
 							-- #if AFTER CATA
 							daljewelcraftingtoken(2, i(42315, {	-- Design: Subtle Dragon's Eye [CATA+] / Design: Thick Dragon's Eye [WRATH]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(3, i(41719)),	-- Design: Subtle Scarlet Ruby [WRATH] / Design: Subtle Autumn's Glow [CATA+]
 							daljewelcraftingtoken(2, i(42315, {	-- Design: Thick Dragon's Eye [WRATH] / Design: Subtle Dragon's Eye [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(6, i(42652)),	-- Design: Titanium Earthguard Chain
@@ -4358,44 +4358,44 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(47010)),	-- Design: Accurate Dreadstone [CATA+] / Design: Accurate Ametrine
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46934, {	-- Design: Balanced Dreadstone / Design: Shifting Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46917)),	-- Design: Bold Cardinal Ruby
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46919, {	-- Design: Bright Cardinal Ruby / Design: Delicate Cardinal Ruby [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46916)),	-- Design: Brilliant Cardinal Ruby [CATA+] / Design: Runed Cardinal Ruby
 							-- #endif
 							daljewelcraftingtoken(4, i(46930, {	-- Design: Brilliant Cardinal Ruby [CATA+] / Design: Brilliant King's Amber
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(4, i(47015)),	-- Design: Champion's Ametrine [CATA+] / Design: Champion's Ametrine
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46900, {	-- Design: Dazzling Eye of Zul / Design: Purified Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46949)),	-- Design: Deadly Ametrine
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(47011, {	-- Design: Deadly Ametrine [CATA+] / Design: Wicked Ametrine
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46941)),	-- Design: Defender's Dreadstone
 							daljewelcraftingtoken(4, i(47020)),	-- Design: Deft Ametrine
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(47023, {	-- Design: Deft Ametrine [CATA+] / Design: Stark Ametrine
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46918)),	-- Design: Delicate Cardinal Ruby
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46919, {	-- Design: Delicate Cardinal Ruby [CATA+] / Design: Bright Cardinal Ruby
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
@@ -4403,7 +4403,7 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(47016, {	-- Design: Empowered Ametrine / Design: Lucent Ametrine [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
@@ -4412,7 +4412,7 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(46912)),	-- Design: Energized Eye of Zul
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46910, {	-- Design: Energized Eye of Zul [CATA+] / Design: Intricate Eye of Zul
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46953)),	-- Design: Etched Dreadstone [CATA+] / Design: Etched Ametrine
@@ -4421,75 +4421,75 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(46904)),	-- Design: Forceful Eye of Zul
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46921, {	-- Design: Fractured Cardinal Ruby / Design: Smooth King's Amber [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(47012, {	-- Design: Glimmering Ametrine / Design: Stalwart Ametrine [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(47008, {	-- Design: Glinting Ametrine / Design: Glinting Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46956)),	-- Design: Glinting Dreadstone [CATA+] / Design: Pristine Ametrine
 							daljewelcraftingtoken(4, i(46945, {	-- Design: Glinting Dreadstone [CATA+] / Design: Infused Dreadstone
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(4, i(46946, {	-- Design: Glinting Dreadstone [CATA+] / Design: Tenuous Dreadstone
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46936, {	-- Design: Glowing Dreadstone / Design: Timeless Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46942)),	-- Design: Guardian's Dreadstone
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46945, {	-- Design: Infused Dreadstone / Design: Glinting Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46948)),	-- Design: Inscribed Ametrine
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46910, {	-- Design: Intricate Eye of Zul / Design: Energized Eye of Zul [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46901)),	-- Design: Jagged Eye of Zul
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46944, {	-- Design: Jagged Eye of Zul [CATA+] / Design: Puissant Dreadstone
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46909)),	-- Design: Lambent Eye of Zul / Design: Lightning Eye of Zul [CATA+]
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46907, {	-- Design: Lightning Eye of Zul [CATA+] / Design: Shining Eye of Zul
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(47021)),	-- Design: Lucent Ametrine
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(47016, {	-- Design: Lucent Ametrine [CATA+] / Design: Empowered Ametrine
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46947, {	-- Design: Luminous Ametrine / Design: Purified Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46927, {	-- Design: Lustrous Majestic Zircon / Design: Sparkling Majestic Zircon [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46905)),	-- Design: Misty Eye of Zul
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46906, {	-- Design: Misty Eye of Zul [CATA+] / Design: Sundered Eye of Zul
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46943)),	-- Design: Mysterious Dreadstone
@@ -4500,7 +4500,7 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46914, {	-- Design: Opaque Eye of Zul / Design: Turbid Eye of Zul [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46950)),	-- Design: Potent Ametrine
@@ -4510,35 +4510,35 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46944, {	-- Design: Puissant Dreadstone / Design: Jagged Eye of Zul [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46937)),	-- Design: Purified Dreadstone
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46900, {	-- Design: Purified Dreadstone [CATA+] / Design: Dazzling Eye of Zul
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46903, {	-- Design: Purified Dreadstone [CATA+] / Design: Seer's Eye of Zul
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46947, {	-- Design: Purified Dreadstone [CATA+] / Design: Luminous Ametrine
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46939, {	-- Design: Purified Dreadstone [CATA+] / Design: Royal Dreadstone
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46933)),	-- Design: Quick King's Amber
 							daljewelcraftingtoken(4, i(46911)),	-- Design: Radiant Eye of Zul
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46908, {	-- Design: Radiant Eye of Zul [CATA+] / Design: Tense Eye of Zul
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(47007)),	-- Design: Reckless Ametrine
@@ -4546,14 +4546,14 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(46897)),	-- Design: Regal Eye of Zul [CATA+] / Design: Enduring Eye of Zul
 							-- #endif
 							daljewelcraftingtoken(4, i(46940, {	-- Design: Regal Eye of Zul [CATA+] / Design: Regal Dreadstone
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							daljewelcraftingtoken(4, i(47022)),	-- Design: Resolute Ametrine
 							daljewelcraftingtoken(4, i(47018)),	-- Design: Resplendent Ametrine
 							daljewelcraftingtoken(4, i(46928)),	-- Design: Rigid Majestic Zircon [CATA+] / Design: Rigid King's Amber
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46939, {	-- Design: Royal Dreadstone / Design: Purified Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
@@ -4561,25 +4561,25 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46903, {	-- Design: Seer's Eye of Zul / Design: Purified Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46913)),	-- Design: Shattered Eye of Zul
 							daljewelcraftingtoken(4, i(46938)),	-- Design: Shifting Dreadstone
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46934, {	-- Design: Shifting Dreadstone [CATA+] / Design: Balanced Dreadstone
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46907, {	-- Design: Shining Eye of Zul / Design: Lightning Eye of Zul [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46929)),	-- Design: Smooth King's Amber
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46921, {	-- Design: Smooth King's Amber [CATA+] / Design: Fractured Cardinal Ruby
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46924)),	-- Design: Solid Majestic Zircon
@@ -4587,18 +4587,18 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(46925)),	-- Design: Sparkling Majestic Zircon
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46927, {	-- Design: Sparkling Majestic Zircon [CATA+] / Design: Lustrous Majestic Zircon
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(47017)),	-- Design: Stalwart Ametrine
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(47012, {	-- Design: Stalwart Ametrine [CATA+] / Design: Glimmering Ametrine
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(47023, {	-- Design: Stark Ametrine / Design: Deft Ametrine [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46898)),	-- Design: Steady Eye of Zul
@@ -4606,39 +4606,39 @@ root(ROOTS.Zones, {
 							daljewelcraftingtoken(4, i(46922)),	-- Design: Subtle King's Amber [CATA+] / Design: Subtle Cardinal Ruby
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46931, {	-- Design: Subtle King's Amber [CATA+] / Design: Thick King's Amber
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46906, {	-- Design: Sundered Eye of Zul / Design: Misty Eye of Zul [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46908, {	-- Design: Tense Eye of Zul / Design: Radiant Eye of Zul [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46946, {	-- Design: Tenuous Dreadstone / Design: Glinting Dreadstone [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(46931, {	-- Design: Thick King's Amber / Design: Subtle King's Amber [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46902)),	-- Design: Timeless Dreadstone [CATA+] / Design: Timeless Eye of Zul
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46936, {	-- Design: Timeless Dreadstone [CATA+] / Design: Glowing Dreadstone
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46915)),	-- Design: Turbid Eye of Zul
 							-- #if AFTER CATA
 							daljewelcraftingtoken(4, i(46914, {	-- Design: Turbid Eye of Zul [CATA+] / Design: Opaque Eye of Zul
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							daljewelcraftingtoken(4, i(46951)),	-- Design: Veiled Dreadstone [CATA+] / Design: Veiled Ametrine
@@ -4647,7 +4647,7 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if BEFORE CATA
 							daljewelcraftingtoken(4, i(47011, {	-- Design: Wicked Ametrine / Design: Deadly Ametrine [CATA+]
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { REMOVED_4_0_3 },
 							})),
 							-- #endif
 							-- #if AFTER CATA

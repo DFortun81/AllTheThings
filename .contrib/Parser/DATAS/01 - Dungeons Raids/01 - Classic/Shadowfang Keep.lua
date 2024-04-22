@@ -479,7 +479,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1014, {	-- Arugal Must Die
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -487,7 +487,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 5442 },	-- Head of Arugal
 						}),
 						i(6414, {	-- Seal of Sylvanas
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -601,12 +601,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1098, {	-- Deathstalkers in Shadowfang
 					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
 						i(3324, {	-- Ghostly Mantle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1502,7 +1502,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1013, {	-- The Book of Ur
 					["qg"] = 2934,	-- Keeper Bel'dugur
 					["coord"] = { 54, 54.6, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
@@ -1514,10 +1514,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["description"] = "Can be found on a bookshelf in the circular room with Fenrus.",
 						}),
 						i(4534, {	-- Steel-Clasped Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6335, {	-- Grizzled Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1675,7 +1675,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 6247,	-- Doan Karhan
 					["coord"] = { 49.2, 57.2, THE_BARRENS },
 					["maps"] = { BLACKFATHOM_DEEPS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 					["groups"] = {
@@ -1690,10 +1690,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 3855,	-- Shadowfang Darksoul
 						}),
 						i(6898, {	-- Orb of Soran'ruk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15109, {	-- Staff of Soran'ruk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1946,7 +1946,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(1484),	-- Witching Stave
 				}),
 				n(3914, {	-- Rethilgore <The Cell Keeper>
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(5254),	-- Rugged Spaulders
@@ -1967,16 +1967,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(932),	-- Fel Steed Saddlebags
 				}),
 				n(3886, {	-- Razorclaw the Butcher
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(1292),	-- Butcher's Cleaver
 						-- #endif
 						i(6633, {	-- Butcher's Slicer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(6226, {	-- Bloody Apron
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2053,7 +2053,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				n(4279, {	-- Odo the Blindwatcher
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(6318),	-- Odo's Ley Staff
@@ -2086,18 +2086,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(4274, {	-- Fenrus the Devourer
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(3230),	-- Black Wolf Bracers
 						-- #endif
 						i(6340, {	-- Fenrus' Hide
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				n(4627, {	-- Arugal's Voidwalker
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(5943),	-- Rift Bracers
@@ -2105,7 +2105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				n(3927, {	-- Wolf Master Nandos
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(3748),	-- Feline Mantle
@@ -2114,7 +2114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				n(4275, {	-- Archmage Arugal
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						ach(631, {	-- Shadowfang Keep
@@ -2128,7 +2128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(6324),	-- Robes of Arugal
 						-- #endif
 						i(6392, {	-- Belt of Arugal
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),

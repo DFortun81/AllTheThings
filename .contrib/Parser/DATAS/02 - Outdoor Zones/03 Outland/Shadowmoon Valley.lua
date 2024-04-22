@@ -995,7 +995,7 @@ root(ROOTS.Zones, {
 					q(11497, {	-- Learning to Fly (A)
 						["qg"] = 18940,	-- Nutral
 						["coord"] = { 63.8, 41, SHATTRATH_CITY },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -1003,7 +1003,7 @@ root(ROOTS.Zones, {
 					q(11498, {	-- Learning to Fly (H)
 						["qg"] = 18940,	-- Nutral
 						["coord"] = { 63.8, 41, SHATTRATH_CITY },
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -2209,14 +2209,14 @@ root(ROOTS.Zones, {
 					}),
 					i(31239, {	-- Primed Key Mold
 						["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
-						["timeline"] = { "removed 4.0.3.14732" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["cr"] = 22037,	-- Smith Gorlunk
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 10),
 					}),
 					i(31241, {	-- Primed Key Mold
 						["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
-						["timeline"] = { "removed 4.0.3.14732" },
+						["timeline"] = { REMOVED_4_0_3 },
 						["cr"] = 22037,	-- Smith Gorlunk
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 10),

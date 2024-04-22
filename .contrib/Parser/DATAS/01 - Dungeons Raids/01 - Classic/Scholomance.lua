@@ -56,13 +56,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["altQuests"] = { 8258 },	-- The Darkreaver Menace (New)
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
-			["timeline"] = { "added 1.7.0", "removed 4.0.3" },
+			["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
 			["groups"] = {
 				i(20134, {	-- Skyfury Helm
-					["timeline"] = { "added 1.7.0", "removed 4.0.3" },
+					["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
 				}),
 			},
 		})),
@@ -70,7 +70,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 			["sourceQuest"] = 7647,	-- Judgment and Redemption
 			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
@@ -83,7 +83,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 8258,	-- The Darkreaver Menace
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
@@ -117,7 +117,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Araj's Scarab
@@ -140,7 +140,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 52,
 			["groups"] = {
 				objective(1, {	-- 0/1 The Deed to Brill
@@ -218,7 +218,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 			["sourceQuest"] = 5522,	-- Leonid Barthalomew
 			["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(76257, {	-- Darkmaster's Scourgestone
@@ -235,7 +235,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["description"] = "After completing this quest, you can return to Betina to have her give you another Gambit.",
 			-- #endif
 			["coord"] = { 81.5, 59.7, EASTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 			["groups"] = {
 				objective(1, {	-- 0/1 Vectus slain
@@ -246,10 +246,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["description"] = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
 				}),
 				i(15854, {	-- Dancing Sliver
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(15853, {	-- Windreaper
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			},
 		}),
@@ -257,7 +257,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 11216,	-- Eva Sarkhoff
 			["description"] = "Talk to Eva until she offers the quest.",
 			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Doctor Theolen Krastinov slain
@@ -296,7 +296,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			}),
 			["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
 			["coord"] = { 51.5, 28.8, TANARIS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { UNGORO_CRATER },
 			["lvl"] = 55,
 			["groups"] = {
@@ -314,7 +314,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["provider"] = { "i", 13920 },	-- Healthy Dragon Scale
 			["sourceQuest"] = 5529,	-- Plagued Hatchlings
 			["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["repeatable"] = true,
 			["lvl"] = 55,
 		}),
@@ -322,20 +322,20 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 11216,	-- Eva Sarkhoff
 			["sourceQuest"] = 5515,	-- Krastinov's Bag of Horrors
 			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Kirtonos the Herald slain
 					["provider"] = { "n", 10506 },	-- Kirtonos the Herald
 				}),
 				i(15806, {	-- Mirah's Song
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(15805, {	-- Penelope's Rose
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(13544, {	-- Spectral Essence
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			},
 		}),
@@ -353,7 +353,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 11216,	-- Eva Sarkhoff
 			["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
 			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Krastinov's Bag of Horrors
@@ -368,7 +368,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 			["sourceQuest"] = 7646,	-- The Divination Scryer
 			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 60,
@@ -398,13 +398,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 			["sourceQuest"] = 4735,	-- Egg Collection
 			["coord"] = { 65.2, 23.8, BURNING_STEPPES },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(7667, {	-- Material Assistance
 			["qg"] = 13417,	-- Sagorne Creststrider
 			["coord"] = { 39.2, 48.4, ORGRIMMAR },
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.3" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_3 },
 			["cost"] = {
 				{ "i", 12800, 1 },	-- Azerothian Diamond
 				{ "i", 18335, 1 },	-- Pristine Black Diamond
@@ -436,7 +436,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
 			["description"] = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
 			["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { STRATHOLME },
 			["lvl"] = 57,
 		}),
@@ -446,7 +446,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				{ "i", 13624 },	-- Soulbound Keepsake
 			},
 			["sourceQuest"] = 5463,	-- Menethil's Gift (1/2)
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { STRATHOLME },
 			["lvl"] = 57,
 		}),
@@ -462,7 +462,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cost"] = {
 				{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
 				{ "g", 150000 },	-- 15g
@@ -472,7 +472,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(5529, {	-- Plagued Hatchlings
 			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 			["coord"] = { 81.47, 59.66, EASTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/20 Plagued Hatchling slain
@@ -497,7 +497,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 10838,	-- Commander Ashlam Valorfist
 			["sourceQuest"] = 5097,	-- All Along the Watchtowers [Alliance]
 			["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 55,
 		}),
@@ -505,7 +505,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 10837,	-- High Executor Derrington
 			["sourceQuest"] = 5098,	-- All Along the Watchtowers [Horde]
 			["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
 		}),
@@ -543,7 +543,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/15 Skeletal Fragments
@@ -566,7 +566,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 			["sourceQuest"] = 5464,	-- Menethil's Gift (2/2)
 			["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
@@ -594,7 +594,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				7668,	-- The Darkreaver Menace (Original)
 			},
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
-			["timeline"] = { "added 1.7.0", "removed 4.0.3" },
+			["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
@@ -604,7 +604,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
 				i(20134, {	-- Skyfury Helm
-					["timeline"] = { "added 1.7.0", "removed 4.0.3" },
+					["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
 				}),
 			},
 		})),
@@ -616,7 +616,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 			["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(5461, {	-- The Human, Ras Frostwhisper
@@ -626,7 +626,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 			["sourceQuest"] = 5384,	-- Kirtonos the Herald
 			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { ARATHI_HIGHLANDS },
 			["lvl"] = 57,
 			["groups"] = {
@@ -651,7 +651,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
 				i(13704, {	-- Skeleton Key
@@ -663,7 +663,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 11023,	-- Weldon Barov <House of Barov>
 			["sourceQuest"] = 5343,	-- Barov Family Fortune [Alliance]
 			["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 52,
@@ -674,7 +674,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["cr"] = 11022,	-- Alexi Barov <House of Barov>
 				}),
 				i(14023, {	-- Barov Peasant Caller
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			},
 		}),
@@ -682,7 +682,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 11022,	-- Alexi Barov <House of Barov>
 			["sourceQuest"] = 5341,	-- Barov Family Fortune [Horde]
 			["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { WESTERN_PLAGUELANDS },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 52,
@@ -693,7 +693,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["cr"] = 11023,	-- Weldon Barov <House of Barov>
 				}),
 				i(14022, {	-- Barov Peasant Caller
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			},
 		}),
@@ -704,23 +704,23 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 			["sourceQuest"] = 5465,	-- Soulbound Keepsake
 			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 			["groups"] = {
 				objective(1, {	-- 0/1 Human Head of Ras Frostwhisper
 					["provider"] = { "i", 13626 },	-- Human Head of Ras Frostwhisper
 				}),
 				i(14002, {	-- Darrowshire Strongguard
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(13984, {	-- Darrowspike
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(13982, {	-- Warblade of Caer Darrow
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(13986, {	-- Crown of Caer Darrow
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			},
 		}),

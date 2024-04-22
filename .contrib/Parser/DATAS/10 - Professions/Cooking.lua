@@ -864,7 +864,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Big Bear Steak",
-					["timeline"] = { "removed 4.0.3", "timewalking 9.1" },
+					["timeline"] = { REMOVED_4_0_3, "timewalking 9.1" },
 					["recipeID"] = 3397
 				},
 				{
@@ -1055,7 +1055,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Lean Venison",
-					["timeline"] = { "removed 4.0.3", "timewalking 9.1" },
+					["timeline"] = { REMOVED_4_0_3, "timewalking 9.1" },
 					["recipeID"] = 6419
 				},
 				{
@@ -1333,7 +1333,7 @@ profession(COOKING, {
 				}),
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Dirge's Kickin' Chimaerok Chops",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 25659,
 				}),
 				{
@@ -1881,9 +1881,9 @@ itemrecipe("Recipe: Gooey Spider Cake", 3683, 3377);
 itemrecipe("Recipe: Big Bear Steak", 3734, 3397);
 itemrecipe("Recipe: Hot Lion Chops", 3735, 3398);
 itemrecipe("Recipe: Tasty Lion Steak", 3736, 3399);
-itemrecipe("Recipe: Soothing Turtle Bisque", 3737, 3400, "removed 4.0.3.2000");
+itemrecipe("Recipe: Soothing Turtle Bisque", 3737, 3400, REMOVED_4_0_3);
 itemrecipe("Recipe: Barbecued Buzzard Wing", 4609, 4094);
-itemrecipe("Recipe: Kaldorei Spider Kabob", 5482, 6412, "removed 4.0.3.2000");
+itemrecipe("Recipe: Kaldorei Spider Kabob", 5482, 6412, REMOVED_4_0_3);
 itemrecipe("Recipe: Scorpid Surprise", 5483, 6413);
 itemrecipe("Recipe: Roasted Kodo Meat", 5484, 6414);
 itemrecipe("Recipe: Fillet of Frenzy", 5485, 6415);

@@ -3539,36 +3539,36 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					}),
 					filter(NECK_F, {
 						i(35132, {	-- Guardian's Pendant of Conquest
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(35133, {	-- Guardian's Pendant of Dominance
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(37929, {	-- Guardian's Pendant of Reprieve
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(35134, {	-- Guardian's Pendant of Salvation
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(37928, {	-- Guardian's Pendant of Subjugation
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(35135, {	-- Guardian's Pendant of Triumph
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(35129, {	-- Guardian's Band of Dominance
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(35130, {	-- Guardian's Band of Salvation
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(37927, {	-- Guardian's Band of Subjugation
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(35131, {	-- Guardian's Band of Triumph
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 					}),
 					filter(RELICS_F, {
@@ -3602,31 +3602,31 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					}),
 					filter(TRINKET_F, {
 						i(41587, {	-- Battlemaster's Celerity
-							["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
 						}),
 						i(41588, {	-- Battlemaster's Aggression
-							["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
 						}),
 						i(41589, {	-- Battlemaster's Resolve
-							["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
 						}),
 						i(41590, {	-- Battlemaster's Courage
-							["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
 						}),
 						i(37864, {	-- Medallion of the Alliance (epic)
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(38589, {	-- Medallion of the Alliance (dk)
-							["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
 						}),
 						i(69861, {	-- Medallion of the Alliance (not during bc, but for bc)
 							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
 						}),
 						i(37865, {	-- Medallion of the Horde (epic)
-							["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
 						}),
 						i(38588, {	-- Medallion of the Horde (dk)
-							["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+							["timeline"] = { "added 3.0.2", REMOVED_4_0_3 },
 						}),
 						i(69862, {	-- Medallion of the Horde (not during bc, but for bc)
 							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
