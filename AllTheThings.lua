@@ -12362,6 +12362,8 @@ end;
 customWindowUpdates.list = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
+			-- can only determine a sourceID if there is an itemID on the group
+			if not data.itemID then return true end
 			if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
 			if data._VerifyGroupSourceID > 5 then return true end
 			data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1

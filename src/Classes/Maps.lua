@@ -234,7 +234,7 @@ local ExplorationDB = setmetatable(app.ExplorationDB or {}, {
 local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};
 app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	["name"] = function(t)
-		return C_Map_GetAreaInfo(t.explorationID) or RETRIEVING_DATA;
+		return C_Map_GetAreaInfo(t.explorationID) or UNKNOWN;
 	end,
 	["description"] = function(t)
 		if t.coords and #t.coords > 0 then
