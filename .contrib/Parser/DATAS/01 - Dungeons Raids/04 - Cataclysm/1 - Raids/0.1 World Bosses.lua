@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, n(WORLD_BOSSES, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {
+	applyclassicphase(CATA_PHASE_ONE, n(WORLD_BOSSES, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {
 		["isRaid"] = true,
 		["lvl"] = 85,
 		["groups"] = {
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["timeline"] = { "added 4.1.0" },
 					}),
 					i(67240, {	-- Belt of A Thousand Mouths
-						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+						["timeline"] = { ADDED_4_0_3, "removed 4.1.0" },
 					}),
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["timeline"] = { "added 4.1.0" },
 					}),
 					i(67235, {	-- Garr's Girdle of Memories
-						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+						["timeline"] = { ADDED_4_0_3, "removed 4.1.0" },
 					}),
 				},
 			}),
@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["timeline"] = { "added 4.1.0" },
 					}),
 					i(67246, {	-- Beak of Julak-Doom
-						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+						["timeline"] = { ADDED_4_0_3, "removed 4.1.0" },
 					}),
 				},
 			}),
@@ -95,7 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["timeline"] = { "added 4.1.0" },
 					}),
 					i(67153, {	-- Mobus's Vile Halberd
-						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+						["timeline"] = { ADDED_4_0_3, "removed 4.1.0" },
 					}),
 				},
 			}),
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["timeline"] = { "added 4.1.0" },
 					}),
 					i(67239, {	-- Xariona's Spectral Claws
-						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+						["timeline"] = { ADDED_4_0_3, "removed 4.1.0" },
 					}),
 				},
 			}),

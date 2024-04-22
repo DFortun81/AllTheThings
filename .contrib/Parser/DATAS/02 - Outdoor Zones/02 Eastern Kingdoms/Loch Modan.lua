@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4899, {	-- Loch Modan Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(555, {	-- Farstrider Lodge, Loch Modan
 					["cr"] = 41332,	-- Eeryven Grayer <Gryphon Master>
 					["coord"] = { 81.8, 64.2, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(8, {	-- Thelsamar, Loch Modan
@@ -256,17 +256,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1092,	-- Captain Rugelfuss
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands
 					["coord"] = { 23.3, 75.0, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(58989, {	-- Belt of the Valley of Kings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58990, {	-- Rugelfuss Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58988, {	-- Unbound Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131492, {	-- Waistguard of the Valley of Kings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -329,21 +329,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44345,	-- Cannary Caskshot
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26846, {	-- A Nasty Exploit
 					["qg"] = 44200,	-- Scout Dorli
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
 					["coord"] = { 25.5, 17.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					-- ["sourceQuest"] = 13636,	-- Stormpike's Orders [Not Required, Discord 2023-7-31]
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(454, {	-- After the Ambush
@@ -376,14 +376,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuest"] = 27078,	-- Gor'kresh
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26868, {	-- Axis of Awful
 					["qg"] = 44345,	-- Cannary Caskshot
 					["sourceQuest"] = 26928,	-- Smells Like a Plan
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2500, {	-- Badlands Reagent Run
@@ -452,20 +452,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1090,	-- Mountaineer Wallbang
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands
 					["coord"] = { 23.4, 74.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(58995, {	-- Bonesnapper Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131491, {	-- Bonesnapper Cuffs
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(58996, {	-- Mountaineer's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58994, {	-- Trogg-Slayer Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -509,13 +509,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(58975, {	-- Gnomish All-Purpose Ray Gun
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(58974, {	-- Mechanical Wand
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(58973, {	-- Monte's Scythe
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 					},
 				}),
@@ -523,20 +523,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 27031,	-- Wing Nut
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26932, {	-- Buzz Off
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26137, {	-- Checking on the Boys
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -544,7 +544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuest"] = 27074,	-- Fight the Hammer
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(385, {	-- Crocolisk Hunting
@@ -574,13 +574,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(59007, {	-- Croc-Scale Gloves
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(59006, {	-- Croc-Skin Boots
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(59005, {	-- Marek's Dagger
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 					},
 				}),
@@ -588,7 +588,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44859,	-- Safety Warden Pipsy
 					["sourceQuest"] = 27025,	-- Thistle While You Work
 					["coord"] = { 82.7, 63.4, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(298, {	-- Excavation Progress Report
@@ -604,44 +604,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(13656, {	-- Explorers' League Document (1 of 6)
 					["provider"] = { "o", 194387 },	-- Stolen Explorers' League Document
 					["coord"] = { 36.7, 61.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13655, {	-- Explorers' League Document (2 of 6)
 					["provider"] = { "o", 194378 },	-- Stolen Explorers' League Document
 					["coord"] = { 41.3, 38.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13657, {	-- Explorers' League Document (3 of 6)
 					["provider"] = { "o", 194388 },	-- Stolen Explorers' League Document
 					["coord"] = { 61.6, 73.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13658, {	-- Explorers' League Document (4 of 6)
 					["provider"] = { "o", 194389 },	-- Stolen Explorers' League Document
 					["coord"] = { 68.1, 66.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13660, {	-- Explorers' League Document (5 of 6)
 					["provider"] = { "o", 194391 },	-- Stolen Explorers' League Document
 					["coord"] = { 53.7, 38.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13659, {	-- Explorers' League Document (6 of 6)
 					["provider"] = { "o", 194390 },	-- Stolen Explorers' League Document
 					["coord"] = { 73.1, 35.8, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27074, {	-- Fight the Hammer
 					["qg"] = 44870,	-- Ando Blastenheimer
 					["sourceQuest"] = 27035,	-- Standing Up
 					["coord"] = { 58.5, 29.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(307, {	-- Filthy Paws
@@ -672,17 +672,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(58978, {	-- Filthy Paw
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58980, {	-- Ironheart Chain Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58979, {	-- Silver Stream Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -706,7 +706,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27030, {	-- Foxtails By The Handful
 					["qg"] = 1154,	-- Marek Ironheart
 					["coord"] = { 81.7, 61.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(297, {	-- Gathering Idols
@@ -739,17 +739,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26961, {	-- Gathering Idols
 					["qg"] = 1345,	-- Magmar Felhew
 					["coord"] = { 64.8, 66.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(58997, {	-- Carved Stone Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58999, {	-- Thelsamar Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58998, {	-- Trogg Kickers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131628, {	-- Trogg Stompers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -763,7 +763,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27075,	-- Servants of Cho'gall
 					},
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13661, {	-- Heartfelt Appreciation
@@ -777,20 +777,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13659,	-- Explorers' League Document (6 of 6)
 					},
 					["coord"] = { 37.1, 47.8, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(58993, {	-- Old Dwarven Hammer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58991, {	-- Star Shooter
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156932, {	-- Surveyor's Staff
 							["timeline"] = { "added 7.3.5.25692" },
 						}),
 						i(58992, {	-- Uncovered Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131300, {	-- Uncovered Chestguard
 							["timeline"] = { "added 7.0.3.22248" },
@@ -801,7 +801,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 27033,	-- Skystrider's Heart
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if BEFORE 4.0.3
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27028, {	-- Hornet Hunting
 					["qg"] = 1154,	-- Marek Ironheart
 					["coord"] = { 81.7, 61.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(224, {	-- In Defense of the King's Lands (1/4)
@@ -906,20 +906,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26146, {	-- In Defense of the King's Lands
 					["qg"] = 1092,	-- Captain Rugelfuss
 					["coord"] = { 23.3, 75.0, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(131490, {	-- Greaves of Uncanny Courage
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(58985, {	-- Leggings of Uncanny Courage
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58986, {	-- Stone Stompers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58984, {	-- Stonesplinter Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13650,	-- Keep Your Hands Off The Goods!
 					},
 					["coord"] = { 64.9, 66.5, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -946,20 +946,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 309,	-- Protecting the Shipment
 					["coord"] = { 65.2, 66.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26844, {	-- Kobold and Kobolder
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26843,	-- A Tiny, Clever Commander
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25118, {	-- Looking for Lurkers
 					["qg"] = 1777,	-- Dakk Blunderblast
 					["coord"] = { 36.0, 44.2, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(255, {	-- Mercenaries
@@ -979,13 +979,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1179 },	-- Mo'grosh Enforcer
 						}),
 						i(59019, {	-- Light-Burning Ring
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(59018, {	-- Ring of Pride
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(59020, {	-- Stonewrought Band
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 					},
 				}),
@@ -1001,7 +1001,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1092,	-- Captain Rugelfuss
 					["sourceQuest"] = 26148,	-- A Decisive Strike
 					["coord"] = { 23.4, 74.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1009,7 +1009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["sourceQuest"] = 26176,	-- Onward to Thelsamar
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(302, {	-- Powder to Ironband
@@ -1040,16 +1040,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(58981, {	-- Dastardly Bracers
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58982, {	-- Foreman Gloves
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131204, {	-- Foreman Handguards
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(58983, {	-- Ironband Legguards
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1072,10 +1072,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(58977, {	-- Algaz Shield
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(58976, {	-- Rat Ear Cloak
-							["timeline"] = { "added 4.0.3", "removed 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3.13287" },
 						}),
 						i(3158, {	-- Burnt Hide Bracers
 							["timeline"] = { "removed 4.0.3" },
@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26131, {	-- Reinforcements for Loch Modan
 					["qg"] = 1959,	-- Mountaineer Barleybrew
 					["coord"] = { 41.8, 52.2, IRONFORGE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1123,7 +1123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1105,	-- Jern Hornhelm
 					["sourceQuest"] = 26868,	-- Axis of Awful
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if BEFORE 4.0.3
@@ -1142,21 +1142,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuest"] = 27074,	-- Fight the Hammer
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27033, {	-- Skystrider's Heart
 					["qg"] = 44618,	-- Rusted Skystrider
 					["sourceQuest"] = 27032,	-- Bird is the Word
 					["coord"] = { 78.5, 76.2, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13635, {	-- South Gate Status Report
 					["qg"] = 1960,	-- Pilot Hammerfoot
 					["sourceQuest"] = 26855,	-- A Pilot's Revenge
 					["coord"] = { 14.0, 56.4, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1164,14 +1164,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44345,	-- Cannary Caskshot
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27035, {	-- Standing Up
 					["qg"] = 44870,	-- Ando Blastenheimer
 					["sourceQuest"] = 27034,	-- He's That Age
 					["coord"] = { 58.5, 29.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1338, {	-- Stormpike's Order
@@ -1189,14 +1189,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(13636, {	-- Stormpike's Orders [TODO: confirm if breadcrumb]
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26927, {	-- Suddenly, Murlocs!
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["sourceQuest"] = 26864,	-- The Bearer of Gnoll-edge
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(455, {	-- The Algaz Gauntlet
@@ -1220,13 +1220,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26845,	-- Who's in Charge Here?
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27016, {	-- The Joy of Boar Hunting
 					["qg"] = 1187,	-- Daryl the Youngling
 					["coord"] = { 83.4, 65.4, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26854, {	-- The Lost Pilot
@@ -1236,17 +1236,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28567,	-- Hero's Call: Loch Modan!
 					},
 					["coord"] = { 14.0, 56.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(58970, {	-- Mori's Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58971, {	-- Mori's Compass
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(58972, {	-- Mori's Gear Stick
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156933, {	-- Mori's Pocketknife
 							["timeline"] = { "added 7.3.5.25692" },
@@ -1279,14 +1279,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
 					["sourceQuest"] = 13635,	-- South Gate Status Report
 					["coord"] = { 23.3, 74.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27116, {	-- The Winds of Loch Modan
 					["qg"] = 44870,	-- Ando Blastenheimer
 					["sourceQuest"] = 27115,	-- Ando's Call
 					["coord"] = { 58.5, 29.1, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(418, {	-- Thelsamar Blood Sausages
@@ -1308,7 +1308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26860, {	-- Thelsamar Blood Sausages
 					["qg"] = 1963,	-- Vidra Hearthstove
 					["coord"] = { 34.8, 49.2, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
@@ -1317,7 +1317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27025, {	-- Thistle While You Work
 					["qg"] = 44859,	-- Safety Warden Pipsy
 					["coord"] = { 82.7, 63.4, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(17, {	-- Uldaman Reagent Run
@@ -1375,24 +1375,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1156,	-- Vyrin Swiftwind
 					["sourceQuest"] = 27016,	-- The Joy of Boar Hunting
 					["coord"] = { 81.9, 64.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27037, {	-- Vyrin's Revenge (2/2)
 					["qg"] = 1187,	-- Daryl the Youngling
 					["sourceQuest"] = 27036,	-- Vyrin's Revenge (1/2)
 					["coord"] = { 83.4, 65.4, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59010, {	-- Swiftwind Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59008, {	-- Unsanitary Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59009, {	-- Vyrin's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131633, {	-- Vyrin's Waistband
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1434,21 +1434,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(13648, {	-- WANTED: The Dark Iron Spy
 					["provider"] = { "o", 256 },	-- Wanted!
 					["coord"] = { 37.3, 46.5, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26845, {	-- Who's In Charge Here?
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27031, {	-- Wing Nut
 					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 2039,	-- Find Bingles
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -1498,7 +1498,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.9, 75.0, LOCH_MODAN },
 						{ 80.3, 51.9, LOCH_MODAN },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(3292),	-- Ancestral Tunic
 						i(9775),	-- Bandit Cinch
@@ -1545,7 +1545,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(45404, {	-- Geoshaper Maren
 					["coord"] = { 50.0, 24.0, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if AFTER 4.0.3
 				n(2476, {  -- Gosh-Haldir [CATA+] / Large Loch Crocolisk
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(45398, {	-- Grizlak <Associate Troggwhacker>
 					["coord"] = { 35.6, 15.6, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(1425, {  -- Grizlak / Kubb [CATA+]
 					-- #if AFTER CATA
@@ -1675,7 +1675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 40.4, 60.4, LOCH_MODAN },
 						{ 40.6, 64.4, LOCH_MODAN },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45402, {	-- Nix
 					["coords"] = {
@@ -1685,7 +1685,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 58.8, 41.6, LOCH_MODAN },
 						{ 53.8, 43.2, LOCH_MODAN },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45399, {	-- Optimo
 					["coords"] = {
@@ -1694,11 +1694,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 77.0, 83.2, LOCH_MODAN },
 						{ 78.0, 77.8, LOCH_MODAN },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(45384, {	-- Sagepaw <Mosshide Chieftain>
 					["coord"] = { 25.6, 44.8, LOCH_MODAN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14266, {  -- Shanda the Spinner
 					-- #if AFTER CATA
@@ -1715,7 +1715,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 46.0, 54.8, LOCH_MODAN },
 						{ 49.6, 57.0, LOCH_MODAN },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

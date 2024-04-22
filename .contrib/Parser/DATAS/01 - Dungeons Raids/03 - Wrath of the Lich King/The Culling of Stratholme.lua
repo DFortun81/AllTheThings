@@ -383,7 +383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 26533,	-- Mal'Ganis
 						["groups"] = {
 							ach(5106, {	-- Heroic: The Culling of Stratholme Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							-- #if AFTER 7.3.5
 							i(37108),	-- Dreadlord's Blade (7.3.5 - Used to be only Normal Mode)

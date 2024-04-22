@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(72, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {	-- The Bastion of Twilight
+	applyclassicphase(CATA_PHASE_ONE, inst(72, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- The Bastion of Twilight
 		["mapID"] = 294,
 		["coord"] = { 34.2, 77.7, TWILIGHT_HIGHLANDS },
 		["maps"] = { 295, 296 },

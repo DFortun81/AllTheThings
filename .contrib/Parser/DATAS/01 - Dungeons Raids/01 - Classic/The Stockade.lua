@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27737, {	-- By Fire Be Saved!
 					["qg"] = 46410,	-- Nurse Lillian
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27739, {	-- The Gnoll King
 					["qg"] = 46409,	-- Warden Thelwater
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27733, {	-- The Good Ol' Switcheroo
 					["qg"] = 46417,	-- Rifle Commander Coe
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
@@ -328,7 +328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					ach(5042, {	-- Stormwind Stockade Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(1959),	-- Cold Iron Pick
 					i(151074, {	-- Turnkey's Pauldrons

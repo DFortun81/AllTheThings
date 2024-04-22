@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						ach(622),	-- The Spellweaver's Downfall (10 player)
 						ach(1874),	-- You Don't Have an Eternity (10 player)
 						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(43952),	-- Azure Drake (MOUNT!)
 						-- #if AFTER 4.0.3
@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if BEFORE 4.0.3
 							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
-							["timeline"] = { "created 3.0.1", "added 4.0.3" },
+							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
 						}),
 						-- #endif
 						i(40497),	-- Black Ice
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						ach(623),	-- The Spellweaver's Downfall (25 player)
 						ach(1875),	-- You Don't Have an Eternity (25 player)
 						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						ach(1400, {	-- Realm First! Magic Seeker
 							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8  },
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if BEFORE 4.0.3
 							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
-							["timeline"] = { "created 3.0.1", "added 4.0.3" },
+							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
 						}),
 						-- #endif
 						i(40543),	-- Blue Aspect Helm

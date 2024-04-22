@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				ach(4931, {	-- Felwood Quests
-					["timeline"] = { "added 4.0.3"},
+					["timeline"] = { ADDED_4_0_3},
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(597, {	-- Irontree Clearing, Felwood
 					["cr"] = 43085,	-- Dirzak Pryocrank <Flight Master>
 					["coord"] = { 56.2, 8.6, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(65, {	-- Talonbranch Glade, Felwood
@@ -181,12 +181,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(594, {	-- Whisperwind Grove, Felwood
 					["cr"] = 43073,	-- Hanah Southsong <Hippogryph Master>
 					["coord"] = { 43.6, 28.6, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				fp(595, {	-- Wildheart Point, Felwood
 					["cr"] = 43079,	-- Chyella Hushglade <Hippogryph Master>
 					["coord"] = { 44.2, 61.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
 			-- #if BEFORE 4.0.3
@@ -210,14 +210,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48333,	-- Foreman Pikwik
 					["sourceQuest"] = 28380,	-- Pikwik in Peril
 					["coord"] = { 54.6, 18.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28218, {	-- A Destiny of Flame and Sorrow
 					["qg"] = 47923,	-- Feronas Sindweller
 					["sourceQuest"] = 28217,	-- Wanted: The Demon Hunter
 					["coord"] = { 45.5, 20.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5242, {	-- A Final Blow
 					["qg"] = 10922,	-- Greta Mosshoof
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48127,	-- Darla Drilldozer
 					["sourceQuest"] = 28372,	-- Back in Business
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6162, {	-- A Husband's Last Battle
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47696,	-- Kelnir Leafsong
 					["sourceQuest"] = 28305,	-- The Fate of Bloodvenom Post
 					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5202, {	-- A Strange Red Key
 					["provider"] = { "i", 13140 },	-- Blood Red Key
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28100, {	-- A Talking Totem
 					["qg"] = 11554,	-- Grazle
 					["coord"] = { 51.4, 80.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28150, {	-- An Arcane Ally
 					["qg"] = 10923,	-- Tenell Leafrunner
@@ -303,7 +303,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27997,	-- The Corruption of the Jadefire
 					},
 					["coord"] = { 51.1, 80.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				applyclassicphase(PHASE_FOUR, q(8419, {	-- An Imp's Request
@@ -377,7 +377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28228,	-- Rejoining the Forest
 					},
 					["coord"] = { 44.2, 27.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -388,27 +388,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28385,	-- Oil and Irony
 					},
 					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28386, {	-- Borrowed Bombs
 					["qg"] = 48493,	-- Alton Redding
 					["sourceQuest"] = 28337,	-- The Shredders of Irontree
 					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65342, {	-- Irontree Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65291, {	-- Oilfoot Slippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65310, {	-- Alton's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65329, {	-- Breastplate of Protest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -416,19 +416,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47341,	-- Arcanist Delaris
 					["sourceQuest"] = 28044,	-- Touch the Untouchable
 					["coord"] = { 41.9, 72.0, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65277, {	-- Delaris' Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65297, {	-- Glovelettes of Opening
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65316, {	-- Spellbreaker's Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65335, {	-- Demon Smasher
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -439,14 +439,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28385,	-- Oil and Irony
 					},
 					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28219, {	-- Buzzers for Baby
 					["qg"] = 48032,	-- Seedling Protector
 					["sourceQuest"] = 28229,	-- Nature and Nurture
 					["coord"] = { 48.6, 25.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5159, {	-- Cleansed Water Returns to Felwood
 					["providers"] = {
@@ -487,12 +487,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47692,	-- Altsoba Ragetotem
 					["sourceQuest"] = 28208,	-- Winna's Kitten
 					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28341, {	-- Collecting Corruption
 					["qg"] = 48339,	-- Elessa Starbreeze
 					["coord"] = { 43.9, 27.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5157, {	-- Collection of the Corrupt Water
 					["qg"] = 10922,	-- Greta Mosshoof
@@ -832,24 +832,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 28152,	-- Jaedenar Awaits
 					["coord"] = { 43.9, 61.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28148, {	-- Culling the Corrupted
 					["qg"] = 10921,	-- Taronn Redfeather
 					["coord"] = { 50.9, 80.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65275, {	-- Angerclaw Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65295, {	-- Felpaw Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65314, {	-- Belt of the Sanctuary
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65333, {	-- Redfeather Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -860,19 +860,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27994,	-- Ruumbo Demands Justice
 					},
 					["coord"] = { 51.4, 83.7, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65279, {	-- Grazle's Sandals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65299, {	-- Allen's Abandoned Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65318, {	-- Ruumbo's Arm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65336, {	-- Pulled Wool
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -880,7 +880,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47923,	-- Feronas Sindweller
 					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
 					["coord"] = { 45.5, 20.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28000, {	-- Do the Imp-Possible
 					["qg"] = 47341,	-- Arcanist Delaris
@@ -891,25 +891,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27997,	-- The Corruption of the Jadefire
 					},
 					["coord"] = { 41.9, 72.0, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28126, {	-- Dousing the Flames of Protection
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
 					["sourceQuest"] = 28119,	-- Purity from Corruption
 					["coord"] = { 36.3, 58.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65281, {	-- Belt of the Lost Barrow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65301, {	-- Jade Green Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65320, {	-- Sanctuary Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65337, {	-- Emerald Orb
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -954,20 +954,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47931,	-- Denmother Ulrica
 					["sourceQuest"] = 28381,	-- The Denmother
 					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65341, {	-- Bloodwater Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65290, {	-- Packrunner's Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65309, {	-- Deaf Ear Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65328, {	-- Talon Branch
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -976,14 +976,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27995,	-- Dance for Ruumbo!
 					["coord"] = { 51.4, 80.4, FELWOOD },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 				}),
 				q(28342, {	-- Fel To Pieces
 					["qg"] = 48339,	-- Elessa Starbreeze
 					["coord"] = { 43.9, 27.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4441, {	-- Felbound Ancients
 					["qg"] = 9116,	-- Eridan Bluewind
@@ -1007,23 +1007,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9116,	-- Eridan Bluewind
 					["sourceQuest"] = 28044,	-- Touch the Untouchable
 					["coord"] = { 42.0, 71.7, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28368, {	-- Fire in the Hole!
 					["provider"] = { "o", 207104 },	-- Master Control Pump
 					["sourceQuest"] = 28335,	-- Turn It Off! Turn It Off!
 					["coord"] = { 60.4, 22.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65346, {	-- Gauntlets of Raw Strength
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65349, {	-- Everburning Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65352, {	-- Drilldozer Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1081,7 +1081,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28121, {	-- Forces of Jaedenar
 					["qg"] = 11019,	-- Jessir Moonbow
 					["coord"] = { 44.0, 61.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5155, {	-- Forces of Jaedenar
 					["qg"] = 10922,	-- Greta Mosshoof
@@ -1152,19 +1152,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47696,	-- Kelnir Leafsong
 					["sourceQuest"] = 28208,	-- Winna's Kitten
 					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65283, {	-- Flowery Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65303, {	-- Leafsong Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65322, {	-- Mr. Tauren's Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65338, {	-- Belt of Regret
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1180,7 +1180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28358, {	-- Hunting the Damned
 					["qg"] = 48349,	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28384, {	-- Into the Clearing
 					["qg"] = 47931,	-- Denmother Ulrica
@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28383,	-- Wisps of the Woods
 					},
 					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28339, {	-- Is Your Oil Running?
@@ -1199,26 +1199,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28370,	-- Wisp-napping
 					},
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28333, {	-- It's Time to Oil Up
 					["qg"] = 48127,	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65344, {	-- Overworked Shoulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65347, {	-- Shredder Operator's Helmet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65350, {	-- Efficiency Spell Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65353, {	-- Oil Bailer's Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1226,7 +1226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9116,	-- Eridan Bluewind
 					["sourceQuest"] = 28113,	-- Break the Unbreakable
 					["coord"] = { 42.0, 71.7, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(7603, {	-- Kroshius' Infernal Core
@@ -1257,13 +1257,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
 					["sourceQuest"] = 28153,	-- Shadow Lord Fel'dan
 					["coord"] = { 36.2, 58.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65282, {	-- Cleansed Shadow Council Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65302, {	-- Farlus' Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1281,22 +1281,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48126,	-- Isural Forestsworn
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
 					["coord"] = { 43.9, 28.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28264, {	-- Navarax's Gambit
 					["qg"] = 47923,	-- Feronas Sindweller
 					["sourceQuest"] = 28261,	-- Deceivers In Our Midst
 					["coord"] = { 45.5, 20.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65285, {	-- Selura's Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65305, {	-- Demon Heart Pendant
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65324, {	-- Navarax's Signet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1304,26 +1304,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48493,	-- Alton Redding
 					["sourceQuest"] = 28337,	-- The Shredders of Irontree
 					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28288, {	-- Open Their Eyes
 					["qg"] = 47341,	-- Arcanist Delaris
 					["sourceQuest"] = 28113,	-- Break the Unbreakable
 					["coord"] = { 41.9, 72.0, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65278, {	-- Gold Pot Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65298, {	-- Cheerful Shoulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65317, {	-- Rainbow Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65357, {	-- Rainbow Generator
-							["timeline"] = { "added 4.0.3.13277", "deleted 7.0.3.22248" },
+							["timeline"] = { ADDED_4_0_3, "deleted 7.0.3.22248" },
 						}),
 						i(133998, {	-- Rainbow Generator (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1337,7 +1337,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28336,	-- Slap and Cap
 					},
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(4442, {	-- Purified!
@@ -1359,22 +1359,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
 					["sourceQuest"] = 28116,	-- Crying Violet
 					["coord"] = { 36.3, 58.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28228, {	-- Rejoining the Forest
 					["qg"] = 48044,	-- Flourishing Protector
 					["sourceQuest"] = 28224,	-- The Last Protector
 					["coord"] = { 48.7, 25.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65287, {	-- Gifted Bough
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65306, {	-- Amulet of Living Wood
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65325, {	-- Tree Ring Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1385,17 +1385,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28387,	-- Burnout
 					},
 					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65292, {	-- Fists of the Pack
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65311, {	-- Denmother's Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65330, {	-- Token of the Bond
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1423,19 +1423,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48459,	-- Tender Puregrove
 					["sourceQuest"] = 28306,	-- Whisperwind Grove
 					["coord"] = { 43.3, 30.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27989, {	-- Ruumbo Demands Honey
 					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
 					["sourceQuest"] = 28100,	-- A Talking Totem
 					["coord"] = { 51.4, 83.7, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27994, {	-- Ruumbo Demands Justice
 					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
 					["sourceQuest"] = 28100,	-- A Talking Totem
 					["coord"] = { 51.4, 83.7, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5886, {	-- Salve via Disenchanting (1/2)
 					["qg"] = 9528,	-- Arathandris Silversky
@@ -1747,29 +1747,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47366,	-- Impsy
 					["sourceQuest"] = 28000,	-- Do the Imp-Possible
 					["coord"] = { 41.8, 71.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65276, {	-- Gloves of Constellas
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65296, {	-- Oozing Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65315, {	-- Impish Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65334, {	-- Impsy's Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28220, {	-- Seeking Soil
 					["sourceQuest"] = 28229,	-- Nature and Nurture
 					["coord"] = { 48.6, 25.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65286, {	-- Ancient Seed Casing
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1788,7 +1788,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
 					["sourceQuest"] = 28131,	-- Twin Temptresses
 					["coord"] = { 36.2, 58.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4084, {	-- Silver Heart
 					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
@@ -1826,7 +1826,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28220,	-- Seeking Soil
 					},
 					["coord"] = { 48.6, 25.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28336, {	-- Slap and Cap
 					["qg"] = 48127,	-- Darla Drilldozer
@@ -1835,27 +1835,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28370,	-- Wisp-napping
 					},
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65345, {	-- Oilfoot Slippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65348, {	-- Oil Grush Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65351, {	-- Workforce Chestguard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65354, {	-- Cloak of Sleep Deprivation
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28361, {	-- Squirrely Clean
 					["qg"] = 48459,	-- Tender Puregrove
 					["coord"] = { 43.3, 30.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28357, {	-- Take it to the Tree
 					["qg"] = 48127,	-- Darla Drilldozer
@@ -1864,25 +1864,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28333,	-- It's Time to Oil Up
 					},
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28359, {	-- The Core of Kroshius
 					["qg"] = 48349,	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65288, {	-- Shadow Curse Hood
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65307, {	-- Whisperwind Armbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65326, {	-- Infernal Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65339, {	-- Warlockbane Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1893,7 +1893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28542,	-- Warchief's Command: Felwood!
 					},
 					["coord"] = { 51.1, 80.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4421, {	-- The Corruption of the Jadefire
 					["qg"] = 9116,	-- Eridan Bluewind
@@ -1920,7 +1920,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
 					["sourceQuest"] = 28119,	-- Purity from Corruption
 					["coord"] = { 36.3, 58.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28381, {	-- The Denmother
 					["qg"] = 48491,	-- James Hallow
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28224,	-- Rejoining the Forest
 					},
 					["coord"] = { 44.2, 28.0, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Enemy at Our Roots"
 				}),
@@ -1937,16 +1937,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47923,	-- Feronas Sindweller
 					["sourceQuest"] = 28256,	-- The Skull of Gul'dan
 					["coord"] = { 45.5, 20.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65284, {	-- Imposter's Mask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65304, {	-- Sindweller's Armguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65323, {	-- Pauldrons of Thankless Deeds
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1958,23 +1958,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28128,	-- The Inner Circle
 					},
 					["coord"] = { 44.1, 61.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(28128, {	-- The Inner Circle
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
 					["sourceQuest"] = 28119,	-- Purity From Corruption
 					["coord"] = { 36.3, 58.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65280, {	-- Shadow Hold Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65300, {	-- Moonbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65319, {	-- Purified Jaedenar Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156982, {	-- Shadow Hold Dagger
 							["timeline"] = { "added 7.3.5.25716" },
@@ -1988,7 +1988,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28221,	-- These Roots Were Made For Stompin'
 					},
 					["coord"] = { 48.7, 25.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5385, {	-- The Remains of Trey Lightforge
 					["providers"] = {
@@ -2012,25 +2012,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48493,	-- Alton Redding
 					["sourceQuest"] = 28384,	-- Into the Clearing
 					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28256, {	-- The Skull of Gul'dan
 					["qg"] = 47923,	-- Feronas Sindweller
 					["sourceQuest"] = 28218,	-- A Destiny of Flame and Shadow
 					["coord"] = { 45.5, 20.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28190, {	-- The Tainted Ooze
 					["qg"] = 47692,	-- Altsoba Ragetotem
 					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28392, {	-- The Timbermaw Tribe
 					["qg"] = 47931,	-- Denmother Ulrica
 					["sourceQuest"] = 28389,	-- Report to the Denmother
 					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2065,26 +2065,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28219,	-- Buzzers for Baby
 						28220,	-- Seeking Soil
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28044, {	-- Touch the Untouchable
 					["qg"] = 47366,	-- Impsy
 					["sourceQuest"] = 28049,	-- See the Invisible
 					["coord"] = { 41.8, 71.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28335, {	-- Turn It Off! Turn It Off!
 					["qg"] = 48333,	-- Foreman Pikwik
 					["sourceQuest"] = 28380,	-- Pikwik in Peril
 					["coord"] = { 54.6, 18.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28131, {	-- Twin Temptresses
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
 					["sourceQuest"] = 28129,	-- The Demon Prince
 					["coord"] = { 36.3, 58.2, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(7624, {	-- Ulathek the Traitor
 					["qg"] = 9516,	-- Lord Banehollow
@@ -2120,7 +2120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47843,	-- Huntress Selura
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
 					["coord"] = { 43.4, 28.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28374, {	-- Weeding the Lawn
 					["qg"] = 48459,	-- Tender Puregrove
@@ -2129,19 +2129,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28361,	-- Squirrely Clean
 					},
 					["coord"] = { 43.3, 30.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65289, {	-- Floral Pantaloons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65308, {	-- Puregrove Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65327, {	-- Weed Puller's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65340, {	-- Thornward Greaves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2176,7 +2176,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28213,	-- Hazzard Disposal
 					},
 					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(4521, {	-- Wild Guardians (1/3)
@@ -2230,7 +2230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28190,	-- The Tainted Ooze
 					},
 					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28370, {	-- Wisp-napping
 					["qg"] = 48127,	-- Darla Drilldozer
@@ -2239,13 +2239,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28333,	-- It's Time to Oil Up
 					},
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28383, {	-- Wisps of the Woods
 					["qg"] = 48492,	-- Lyros Swiftwind
 					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7625, {	-- Xorothian Stardust
@@ -2447,7 +2447,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(48577, {	-- Ciana <Weaponsmith>
 					["coord"] = { 43.2, 28.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(11308, {	-- Sylvan Shortbow
 							["isLimited"] = true,
@@ -2456,7 +2456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(48580, {	-- Desaan <Cooking Supplies>
 					["coord"] = { 43.8, 29.8, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)

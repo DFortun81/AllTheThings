@@ -155,7 +155,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 3.2.0.10147" },
 			}),
 			i(68008, {	-- Mottled Drake (MOUNT!)
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(33224, {	-- Spectral Tiger (MOUNT!) BOP
 				["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },

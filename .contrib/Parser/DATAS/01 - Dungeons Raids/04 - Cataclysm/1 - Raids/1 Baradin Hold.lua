@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(75, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {	-- Baradin Hold
+	applyclassicphase(CATA_PHASE_ONE, inst(75, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- Baradin Hold
 		["mapID"] = 282,
 		["coord"] = { 46.1, 47.9, 244 },
 		["sharedLockout"] = 1,

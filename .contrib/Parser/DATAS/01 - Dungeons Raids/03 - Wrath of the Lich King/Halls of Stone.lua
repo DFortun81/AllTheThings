@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["groups"] = {
 							ach(2155),	-- Abuse the Ooze
 							ach(5102, {	-- Heroic: Halls of Stone Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(41792, {	-- Design: Deft Monarch Topaz
 								["timeline"] = { "removed 4.0.3" },

@@ -1307,13 +1307,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 67443 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2010.",
-			["timeline"] = { "added 4.0.3.13329", "removed 4.2.0.14333" },
+			["timeline"] = { ADDED_4_0_3_LAUNCH, "removed 4.2.0.14333" },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
 			["groups"] = {
 				i(46709, {	-- MiniZep Controller (TOY!)
-					["timeline"] = { "added 4.0.3.13329" },
+					["timeline"] = { ADDED_4_0_3_LAUNCH },
 				}),
 			},
 		}),

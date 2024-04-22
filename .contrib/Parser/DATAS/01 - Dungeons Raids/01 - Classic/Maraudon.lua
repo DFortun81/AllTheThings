@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(27697, {	-- Corruption in Maraudon
 					["qg"] = 12238,	-- Zaetar's Spirit
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(32, 32, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Vyletongue slain
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27692, {	-- Princess Theradras
 					["qg"] = 12238,	-- Zaetar's Spirit
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(32, 32, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Princess Theradras slain
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27698, {	-- Servants of Theradras
 					["qg"] = 12238,	-- Zaetar's Spirit
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(32, 32, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Noxxion slain
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #endif
 							}),
 							ach(5049, {	-- Maraudon Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(17780),	-- Blade of Eternal Darkness
 							i(17710),	-- Charstone Dirk

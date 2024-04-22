@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { MAGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { PRIEST },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { SHAMAN },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -434,7 +434,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { HUNTER },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -484,7 +484,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { PALADIN },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { WARRIOR },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -680,7 +680,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				fp(624, {	-- Azure Watch, Azuremyst Isle [Alliance]
 					["cr"] = 43991,	-- Zaldaan <Flight Master>
 					["coord"] = { 49.6, 49.2, AZUREMYST_ISLE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

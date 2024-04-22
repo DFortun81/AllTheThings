@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5443, {		-- E'ko Madness
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						crit(15632, {	-- Winterspring Furbolg
 							["crs"] = {
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				ach(4940, {	-- Winterspring Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -301,22 +301,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49537,	-- Jeb Guthrie (granted automatically. Coords are relative to player position)
 					["sourceQuest"] = 28745,	-- Screechy Keen
 					["coord"] = { 56.0, 28.2, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67168, {	-- Gloves of the Infernal Nocturnal
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67185, {	-- Hell-Hoot Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67202, {	-- Vest of the Smoking Pit
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67225, {	-- Hoot-Hunter's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67218, {	-- Legend Eater Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -326,7 +326,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -337,7 +337,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49436,	-- Francis Morcott
 					["sourceQuest"] = 28637,	-- A Taste for Bear
 					["coord"] = { 55.8, 28.2, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(6605, {	-- A Strange One
 					["qg"] = 11755,	-- Harlo Wigglesworth
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28637, {	-- A Taste for Bear
 					["qg"] = 49436,	-- Francis Morcott
 					["coord"] = { 55.8, 28.2, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(8798, {	-- A Yeti of Your Own
 					["qg"] = 10305,	-- Umi Rumplesnicker
@@ -370,13 +370,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10929,	-- Haleh
 					["sourceQuest"] = 28847,	-- The Pursuit of Umbranse
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28629, {	-- Are We There, Yeti?
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["coord"] = { 59.3, 49.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(3783, {	-- Are We There, Yeti? (1/3)
 					["qg"] = 10305,	-- Umi Rumplesnicker
@@ -444,19 +444,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28614, {	-- Bearzerker
 					["qg"] = 48722,	-- Burndl
 					["coord"] = { 65.3, 46.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67216, {	-- Firewater Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67166, {	-- Belt of Bloating
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67183, {	-- Bearzerker's Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67200, {	-- Burndl's Bundled Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48965,	-- Deez Rocksnitch
 					["sourceQuest"] = 28610,	-- Rubble Trouble
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5055, {	-- Brumeran of the Chillwind
 					["qg"] = 10303,	-- Storm Shadowhoof
@@ -539,25 +539,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 50263,	-- Jadrag the Slicer
 					["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
 					["coord"] = { 61.8, 74.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28625, {	-- Chop Chop
 					["qg"] = 48965,	-- Deez Rocksnitch
 					["sourceQuest"] = 28624,	-- Kilram's Boast
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67213, {	-- Frostleaf Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67163, {	-- Chop Chop Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67180, {	-- Treant-Bark Shoes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67197, {	-- Rocksnitch Helmet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -595,7 +595,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -606,19 +606,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 50263,	-- Jadrag the Slicer
 					["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
 					["coord"] = { 61.8, 74.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67172, {	-- Cowl of Whistling Winds
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67189, {	-- Frostilicus's Hide
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67206, {	-- Owl Wing Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67221, {	-- Breastplate of the Poetic Orc
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -626,30 +626,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48659,	-- Quel'dorei Spirit
 					["sourceQuest"] = 28518,	-- Legacy of the High Elves
 					["coord"] = { 50.7, 55.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28534, {	-- Descendants of the Highborne
 					["qg"] = 48658,	-- Kaldorei Spirit
 					["sourceQuest"] = 28513,	-- Pride of Highborne
 					["coord"] = { 50.7, 54.8, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28540, {	-- Doin' De E'ko Magic
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 25.1, 58.4, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67162, {	-- E'ko Gatherer's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67179, {	-- Heart Grippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67212, {	-- Bear Hunter's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67196, {	-- Witch Doctor's Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -667,7 +667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["coord"] = { 59.3, 49.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(6604, {	-- Enraged Wildkin (1/4)
 					["qg"] = 11755,	-- Harlo Wigglesworth
@@ -722,12 +722,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11079,	-- Wynd Nightchaser
 					["sourceQuest"] = 28674,	-- Starfall Village
 					["coord"] = { 48.6, 41.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28464, {	-- Falling to Corruption
 					["qg"] = 9298,	-- Donova Snowden
 					["coord"] = { 25.1, 58.4, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5084, {	-- Falling to Corruption
 					["qg"] = 9298,	-- Donova Snowden
@@ -749,13 +749,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48965,	-- Deez Rocksnitch
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28640, {	-- Fresh Frostsabers
 					["qg"] = 49396,	-- Jez Goodgrub
 					["sourceQuest"] = 28718,	-- Where There's Smoke, There's Delicious Meat
 					["coord"] = { 55.9, 28.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4806, {	-- Frostmaul E'ko
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
@@ -817,7 +817,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29032, {	-- Get Them While They're Young
 					["qg"] = 10618,	-- Rivern Frostwind
 					["coord"] = { 46.6, 17.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4901, {	-- Guardians of the Altar
@@ -844,25 +844,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28609, {	-- Hammer Time
 					["qg"] = 11191,	-- Lilith the Lithe
 					["coord"] = { 59.8, 49.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28470, {	-- High Chief Winterfall
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 28469,	-- Winterfall Runners
 					["coord"] = { 25.1, 58.5, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67210, {	-- Wand of Sudden Changes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67159, {	-- Furbolg Fur Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67176, {	-- Princess Zoe's Old Hunting Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67193, {	-- Ambush Armguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -894,7 +894,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -905,19 +905,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48965,	-- Deez Rocksnitch
 					["sourceQuest"] = 28632,	-- Fresh From the Hills
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67181, {	-- Kilram's Killer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67164, {	-- Lilith the Lithe's Little Hammer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67214, {	-- Scourgebane's Slicer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67198, {	-- Scourgebane's Sword
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -937,19 +937,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10920,	-- Kelek Skykeeper
 					["sourceQuest"] = 28536,	-- The Curse of Zin-Malor
 					["coord"] = { 46.8, 53.8, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28624, {	-- Kilram's Boast
 					["qg"] = 11192,	-- Kilram
 					["sourceQuest"] = 28618,	-- Boulder Delivery
 					["coord"] = { 59.8, 49.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28518, {	-- Legacy of the High Elves
 					["qg"] = 48659,	-- Quel'dorei Spirit
 					["sourceQuest"] = 28534,	-- Descendants of the Highborne
 					["coord"] = { 50.8, 55.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(969, {	-- Luck Be With You
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
@@ -974,7 +974,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28839, {	-- Magic Prehistoric
 					["sourceQuest"] = 28838,	-- The Owlbeast's Defense
 					["coord"] = { 57.1, 75.4, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(9266, {	-- Making Amends
 					["qg"] = 16416,	-- Bronn Fitzwrench
@@ -1011,34 +1011,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 207179 },	-- Winterfall Cauldron
 					["sourceQuest"] = 28464,	-- Falling to Corruption
 					["coord"] = { 24.4, 47.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28701, {	-- Out of Harm's Way
 					["qg"] = 11079,	-- Wynd Nightchaser
 					["sourceQuest"] = 28674,	-- Starfall Village
 					["coord"] = { 48.6, 41.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28519, {	-- Pain of the Blood Elves
 					["qg"] = 48660,	-- Sin'dorei Spirit
 					["sourceQuest"] = 28535,	-- Descendants of the High Elves
 					["coord"] = { 50.6, 55.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67161, {	-- Dagger of Wretched Spectres
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67195, {	-- Mace of the Sin'dorei Spirit
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67178, {	-- Blade of Wretched Spirits
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157021, {	-- Staff of Haunted Memory
 							["timeline"] = { "added 7.3.5.25744" },
 						}),
 						i(67211, {	-- Orb of Kel'theril
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1061,22 +1061,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49396,	-- Jez Goodgrub (granted automatically. Coords are relative to player position)
 					["sourceQuest"] = 28640,	-- Fresh Frostsabers
 					["coord"] = { 55.9, 28.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28513, {	-- Pride of the Highborne
 					["qg"] = 48658,	-- Kaldorei Spirit
 					["sourceQuest"] = 28479,	-- The Ruins of Kel'Theril
 					["coord"] = { 50.7, 54.8, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67177, {	-- Amulet of the Kaldorei Spirit
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67160, {	-- Dagger of Suffering
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67194, {	-- Zin-Malor Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1101,7 +1101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28829, {	-- Razor Beak and Antlers Pointy
 					["qg"] = 50263,	-- Jadrag the Slicer
 					["coord"] = { 61.8, 74.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5252, {	-- Remorseful Highborne
 					["providers"] = {
@@ -1137,25 +1137,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48965,	-- Deez Rocksnitch
 					["sourceQuest"] = 28609,	-- Hammer Time
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28530, {	-- Scalding Signs
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 28467,	-- Mystery Goo
 					["coord"] = { 25.1, 58.4, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28745, {	-- Screechy Keen
 					["qg"] = 49396,	-- Jez Goodgrub (granted automatically. Coords are relative to player position)
 					["sourceQuest"] = 28638,	-- The Owls Have It
 					["coord"] = { 55.9, 28.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28627, {	-- Seril's Boast
 					["qg"] = 11193,	-- Seril Scourgebane
 					["sourceQuest"] = 28626,	-- Tree Delivery
 					["coord"] = { 59.7, 49.2, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4803, {	-- Shardtooth E'ko
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
@@ -1175,22 +1175,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49396,	-- Jez Goodgrub (granted automatically. Coords are relative to player position)
 					["sourceQuest"] = 28641,	-- Pride of the Dinner Table
 					["coord"] = { 55.9, 28.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67169, {	-- Shy Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67186, {	-- Shy Shrug
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67219, {	-- Breastplate of the Fifth Hunter
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67203, {	-- Frostsaber Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67226, {	-- Corpse Dragger's Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1272,27 +1272,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49399,	-- Remma Curtainfire
 					["sourceQuest"] = 28706,	-- Spray it Forward
 					["coord"] = { 45.6, 41.5, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28706, {	-- Spray it Forward
 					["qg"] = 49407,	-- Rinno Curtainfire
 					["coord"] = { 45.7, 41.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28710, {	-- Spray it One More Time
 					["qg"] = 49400,	-- Marcy Curtainfire
 					["sourceQuest"] = 28707,	-- Spray it Again
 					["coord"] = { 46.2, 42.5, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67205, {	-- Ring of Pesticide
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67171, {	-- Curtainfire Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67188, {	-- Fumigator's Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1311,13 +1311,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28722,	-- Yetiphobia
 					},
 					["coord"] = { 59.8, 49.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(28703, {	-- Step Into My Barrow
 					["qg"] = 49407,	-- Rinno Curtainfire
 					["coord"] = { 45.7, 41.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28656, {	-- Strange Life Forces
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
@@ -1331,7 +1331,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 68.0, 54.1, WINTERSPRING },
 						{ 60.7, 76.3, WINTERSPRING },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4842, {	-- Strange Sources
 					["qg"] = 9298,	-- Donova Snowden
@@ -1380,7 +1380,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10929,	-- Haleh
 					["sourceQuest"] = 28840,	-- Winterwater
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5253, {	-- The Crystal of Zin-Malor
 					["providers"] = {
@@ -1408,7 +1408,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48660,	-- Sin'dorei Spirit
 					["sourceQuest"] = 28519,	-- Pain of the Blood Elves
 					["coord"] = { 50.6, 55.0, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				{	-- The Everlook Report
 					["allianceQuestData"] = q(6028, {	-- The Everlook Report (A)
@@ -1429,7 +1429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 12842 },	-- Crudely-Written Log
 					["sourceQuest"] = 28469,	-- Winterfall Runners
 					["coord"] = { 36.9, 55.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 10738,	-- High Chief Winterfall
 				}),
 				q(5123, {	-- The Final Piece
@@ -1444,18 +1444,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10929,	-- Haleh
 					["sourceQuest"] = 28837,	-- Altered Beasts
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28638, {	-- The Owls Have It
 					["qg"] = 49537,	-- Jeb Guthrie
 					["coord"] = { 55.9, 28.2, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28631, {	-- The Perfect Horns
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 28627,	-- Seril's Boast
 					["coord"] = { 59.3, 49.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28847, {	-- The Pursuit of Umbranse
 					["qg"] = 50366,	-- Nymn
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28722,	-- Yetiphobia
 					},
 					["coord"] = { 59.6, 50.4, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(28479, {	-- The Ruins of Kel'Theril
@@ -1473,7 +1473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.2, 80.3, FELWOOD },
 						{ 46.8, 53.8, WINTERSPRING },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5244, {	-- The Ruins of Kel'Theril
 					["qg"] = 11079,	-- Wynd Nightchaser
@@ -1491,7 +1491,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 29032,	-- Get Them While They're Young
 					["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 					["coord"] = { 46.6, 17.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 68644, 20 },	-- Winterspring Cub Whisker
 						{ "i", 14047, 20 },	-- Runecloth
@@ -1512,19 +1512,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28768,	-- Winterspring!
 					},
 					["coord"] = { 25.1, 58.4, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67158, {	-- Donova's Fuzzy Robe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67175, {	-- Hot Spring Sandals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67192, {	-- Snowden Legwraps
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67209, {	-- Winterfall Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1572,13 +1572,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10920,	-- Kelek Skykeeper
 					["sourceQuest"] = 28537,	-- In Pursuit of Shades
 					["coord"] = { 46.8, 53.8, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28626, {	-- Tree Delivery
 					["qg"] = 48965,	-- Deez Rocksnitch
 					["sourceQuest"] = 28625,	-- Chop Chop
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(6603, {	-- Trouble in Winterspring!
 					["qg"] = 11754,	-- Meggi Peppinrocker
@@ -1633,25 +1633,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28615, {	-- Turning the Earth
 					["qg"] = 48723,	-- Tanrir
 					["coord"] = { 65.3, 46.2, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28842, {	-- Umbranse's Deliverance
 					["qg"] = 10929,	-- Haleh
 					["sourceQuest"] = 28840,	-- Winterwater
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67222, {	-- Umbranse's Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67174, {	-- Bracers of Mazthoril
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67191, {	-- Dreamcatcher Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67208, {	-- Nam's Gauntlets
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1659,22 +1659,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49436,	-- Francis Morcott (granted automatically. Coords are relative to player position)
 					["sourceQuest"] = 28719,	-- A Little Gamy
 					["coord"] = { 55.8, 28.2, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67167, {	-- Shardtooth Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67184, {	-- Ursius's Cap
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67217, {	-- Bracers of Considerable Influence
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67201, {	-- Bear Oiled Chainmail
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67224, {	-- Morcott's Bow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1696,7 +1696,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49402,	-- Sana Curtainfire
 					["sourceQuest"] = 28710,	-- Spray it One More Time
 					["coord"] = { 48.0, 40.6, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(4807, {	-- Wildkin E'ko
@@ -1763,7 +1763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 28467,	-- Mystery Goo
 					["coord"] = { 25.1, 58.5, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5087, {	-- Winterfall Runners
 					["qg"] = 9298,	-- Donova Snowden
@@ -1783,16 +1783,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10929,	-- Haleh
 					["sourceQuest"] = 28839,	-- Magic Prehistoric
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67173, {	-- Haleh's Warm Legwraps
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67190, {	-- Ice Avatar Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67207, {	-- Winterwater Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1800,7 +1800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 28471,	-- The Final Piece
 					["coord"] = { 25.1, 58.5, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
 						i(34424, {	-- Power of the High Chief
@@ -1835,22 +1835,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28631,	-- The Perfect Horns
 					},
 					["coord"] = { 59.3, 49.7, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67223, {	-- Umi's Masterful Shooter
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67165, {	-- Everlook Snow Shoes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67182, {	-- Helm of Yetiphobia
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67199, {	-- Prankster's Fingers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67215, {	-- Amusing Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(15778),	-- Mechanical Yeti
 					},
@@ -1858,22 +1858,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28828, {	-- You Gotta Have Eggs
 					["qg"] = 49396,	-- Jez Goodgrub
 					["coord"] = { 55.9, 28.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(67220, {	-- Goodgrub Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67170, {	-- Gourmand's Sash
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67187, {	-- Snow Nest Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67204, {	-- Chillwind Scale Armguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67227, {	-- Chimaera Heart Pendant
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2092,7 +2092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(50129, {	-- Daleohm <Blacksmithing Supplies>
 					["coord"] = { 58.0, 63.8, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(12836, {	-- Plans: Frostguard (RECIPE!)
 							["isLimited"] = true,

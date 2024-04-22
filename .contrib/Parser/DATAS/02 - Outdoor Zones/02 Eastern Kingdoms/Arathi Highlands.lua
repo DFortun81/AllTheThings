@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4896, {	-- Arathi Highlands Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(38274, {	-- Faldir's Cove
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(601, {	-- Galen's Fall, Arathi
 					["cr"] = 43104,	-- Rhoda Bowers <Bat Handler>
 					["coord"] = { 13.4, 34.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- TODO: requires sourceQuests/altQuests as it is not collectible for my main
 				}),
@@ -193,20 +193,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26033,	-- Trol'kalar
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59194, {	-- Sandals of Satisfaction
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59195, {	-- Bracers of Sensations
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59196, {	-- Alina's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59197, {	-- Lordaeron-Made Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131479, {	-- Cuffs of Feeling
 							["timeline"] = { "added 7.0.3.22248" },
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41983,	-- Apprentice Kryten
 					["sourceQuest"] = 26037,	-- Trelane's Defenses
 					["coord"] = { 13.0, 69.2, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Trelane's Phylactery
@@ -287,19 +287,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 11.1, 70.0, ARATHI_HIGHLANDS },
 						}),
 						i(59159, {	-- Highland Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59160, {	-- Trelane's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59161, {	-- Belt of Refuge
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59162, {	-- Lightstep Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59163, {	-- Craig's Steel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131470, {	-- Refuge Cinch
 							["timeline"] = { "added 7.0.3.22248" },
@@ -323,7 +323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26041,	-- Stones of Binding
 					["coord"] = { 30.0, 59.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Rod of Order
 							["provider"] = { "i", 4469 },	-- Rod of Order
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41966,	-- Deathstalker Maudria
 					["sourceQuest"] = 26053,	-- Clearing the Highlands
 					["coord"] = { 13.3, 33.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boulderfist Shaman slain
@@ -403,16 +403,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2571 },	-- Boulderfist Lord
 						}),
 						i(59178, {	-- Ramshackle Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59179, {	-- Extra Credit Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59180, {	-- Lurking Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59181, {	-- Belt of Gutted Rain
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131467, {	-- Gold Star Boots
 							["timeline"] = { "added 7.0.3.22248" },
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26053, {	-- Clearing the Highlands
 					["qg"] = 41966,	-- Deathstalker Maudria
 					["coord"] = { 13.3, 34.3, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Boulderfist Ogre slain
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2771,	-- Drum Fel
 					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
 					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Witherbark Axe Thrower slain
@@ -482,19 +482,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2610,	-- Shakes O'Breen
 					["sourceQuest"] = 26052,	-- Speak to Shakes
 					["coord"] = { 25.9, 83.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(59212, {	-- O'Breen's Dress Robes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59213, {	-- Faldir's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59214, {	-- Armguards of the Good Captain
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59215, {	-- Legguards of the Promising Hero
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131565, {	-- Seafarer's Chain Leggings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26055, {	-- Drowned Sorrows
 					["qg"] = 2769,	-- Captain Steelgut
 					["coord"] = { 27.7, 83.2, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Daggerspine Raider
 							["provider"] = { "n", 2595 },	-- Daggerspine Raider
@@ -573,13 +573,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2596 },	-- Daggerspine Sorceress
 						}),
 						i(59205, {	-- Folly's Spar
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59206, {	-- Steelgut Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59207, {	-- Maiden's Tattered Sail
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131475, {	-- Steelgut's Undermail
 							["timeline"] = { "added 7.0.3.22248" },
@@ -590,7 +590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 28572,	-- Warchief's Command: Arathi Highlands!
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Bloodstone Amulet
@@ -607,17 +607,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 26116,	-- Kinelory Strikes
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59168, {	-- Stromgarde Surcoat
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59169, {	-- Stromgarde Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59170, {	-- Stromgarde Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131487, {	-- Stromgarde Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -665,7 +665,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26050, {	-- Goggle Boggle
 					["qg"] = 2768,	-- Professor Phizzlethorpe
 					["coord"] = { 27.5, 83.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(701, {	-- Guile of the Raptor (1/3)
 					["qg"] = 2706,	-- Tor'gan
@@ -709,7 +709,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42130,	-- Gor'mul
 					["sourceQuest"] = 26107,	-- Raising Spirits
 					["coord"] = { 67.7, 34.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Raptor Heart
@@ -717,10 +717,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2561,	-- Highland Fleshstalker
 						}),
 						i(59203, {	-- Hammerfall Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59204, {	-- Hammerfall Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131485, {	-- Hammerfaul Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -744,14 +744,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 26081,	-- Alina's Reward
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26083, {	-- Hello Lolo
 					["qg"] = 42088,	-- Goutgut
 					["sourceQuest"] = 26081,	-- Alina's Reward
 					["coord"] = { 12.8, 34.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(659, {	-- Hints of a New Plague? (1/5)
@@ -851,7 +851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 26113,	-- Quae and Kinelory
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sealed Folder
@@ -865,7 +865,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2713,	-- Kinelory
 					["sourceQuest"] = 26114,	-- Quae Trusts You
 					["coord"] = { 54.8, 55.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(663, {	-- Land Ho!
@@ -928,7 +928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["hordeQuestData"] = q(26911),	-- Myzrael's Tale [H]
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
 					["coord"] = { 30.0, 58.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				},
 				q(681, {	-- Northfold Manor
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26139,	-- Into Arathi
 					},
 					["coord"] = { 39.9, 48.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Syndicate Mercenary slain
@@ -971,14 +971,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26113, {	-- Quae and Kinelory
 					["qg"] = 2608,	-- Commander Amaren
 					["coord"] = { 39.6, 47.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26114, {	-- Quae Trusts You
 					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 26110,	-- Just Like Old Times
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(672, {	-- Raising Spirits (1/3)
@@ -1020,7 +1020,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26107, {	-- Raising Spirits
 					["qg"] = 42130,	-- Gor'mul
 					["coord"] = { 67.7, 34.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Highland Raptor Eye
@@ -1035,14 +1035,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26430, {	-- Revantusk Village
 					["qg"] = 2771,	-- Drum Fel
 					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26336, {	-- Shakes O'Breen
 					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(643, {	-- Sigil of Arathor
@@ -1063,7 +1063,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26031,	-- Sigil of Thoradin
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sigil of Arathor
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26023,	-- The Forsaken Trollbane
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sigil of Strom
@@ -1125,7 +1125,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26030,	-- Sigil of Strom
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Sigil Fragment
@@ -1160,7 +1160,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26051,	-- Sunken Treasure
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(651, {	-- Stones of Binding
 					["provider"] = { "o", 2701 },	-- Iridescent Shards
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["sourceQuest"] = 26039,	-- The Princess Trapped
 					["coord"] = { 79.8, 31.6, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Burning Key
 							["providers"] = {
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2700,	-- Captain Nials
 					["sourceQuest"] = 26093,	-- Northfold Manner
 					["coord"] = { 39.9, 48.8, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/7 Stromgarde Badge
@@ -1258,16 +1258,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(59190, {	-- Slippers of Sorrowful Tidings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59191, {	-- Yellow Ribbon Armbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59192, {	-- Griefstricken Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59193, {	-- Heartsick Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131481, {	-- Bindings of Longing
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1377,7 +1377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Elven Gem
 							["providers"] = {
@@ -1387,10 +1387,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 16.1, 91.5, ARATHI_HIGHLANDS },
 						}),
 						i(59199, {	-- Bottom Waders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59200, {	-- Decalcified Elven Spear
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131474, {	-- Chain Weighted Shoes
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1422,7 +1422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 26022,	-- First Blood
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(676, {	-- The Hammer May Fall
@@ -1462,7 +1462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 					["coord"] = { 57.2, 34.5, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/12 Mote of Myzrael
 							["provider"] = { "i", 4435 },	-- Mote of Myzrael
@@ -1486,7 +1486,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 26911,	-- Myzrael's Tale
 						["coord"] = { 69.6, 36.5, ARATHI_HIGHLANDS },
 					}),
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Eldritch Shackles
 							["providers"] = {
@@ -1497,16 +1497,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2755,	-- Myzrael
 						}),
 						i(59208, {	-- Wrap of Open Menace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59209, {	-- Eldritch Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59210, {	-- Earthbound Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59211, {	-- Shackling Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131473, {	-- Mantle of the Bound
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41966,	-- Deathstalker Maudria
 					["sourceQuest"] = 26027,	-- Call to Arms
 					["coord"] = { 13.3, 33.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Or'Kalar's Head
@@ -1547,16 +1547,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2773,	-- Or'Kalar
 						}),
 						i(59186, {	-- Skullslasher
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59187, {	-- Silent Huntress
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59188, {	-- Belt of Affront
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59189, {	-- Mistspray Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131469, {	-- Seabreeze Hauberk
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1566,14 +1566,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26341, {	-- The Stone Shards
 					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26909, {	-- The Stone Shards
 					["qg"] = 2787,	-- Zaruk
 					["coord"] = { 69.6, 36.5, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1581,7 +1581,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 26022,	-- First Blood
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Befouled Bloodstone Orb
@@ -1590,13 +1590,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2783,	-- Marez Cowl
 						}),
 						i(59171, {	-- Bloodstone-Studded Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59172, {	-- Drakeskin Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59173, {	-- Radiant Silver Armguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131466, {	-- Highland Chain Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1621,7 +1621,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26428, {	-- To Steal From Thieves
 					["qg"] = 4486,	-- Genavie Callow
 					["coord"] = { 13.7, 33.9, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kenata's Head
@@ -1640,19 +1640,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 4479,	-- Fardel Dabyrie
 						}),
 						i(59158, {	-- Craig's Steel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59164, {	-- Grim Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59165, {	-- Genavie's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59166, {	-- Adulterous Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59167, {	-- Treads of Unforgotten Pain
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131528, {	-- Cheater's Cinch
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1678,7 +1678,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 26036,	-- Wand Over Fist
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Azure Agate
@@ -1761,7 +1761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26032,	-- Sigil of Arathor
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sheathed Trol'kalar
@@ -1800,7 +1800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 26035,	-- Worth Its Weight in Gold
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Trelane's Wand of Invocation
@@ -1830,7 +1830,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26024, {	-- Wanted! Marez Cowl
 					["provider"] = { "o", 2713 },	-- Wanted Board
 					["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Marez's Head
@@ -1839,16 +1839,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2783,	-- Marez Cowl
 						}),
 						i(59182, {	-- Syndicate Dagger
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59183, {	-- Silenced Rifle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59184, {	-- Demon-Trafficker's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59185, {	-- Vest of Dark Rumors
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131465, {	-- Hauberk of Dire Tidings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1883,7 +1883,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26079, {	-- Wanted! Otto and Falconcrest
 					["provider"] = { "o", 2713 },	-- Wanted Board
 					["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Otto's Head
@@ -1897,16 +1897,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2597,	-- Lord Falconcrest <Syndicate Leader>
 						}),
 						i(59174, {	-- Dustfall Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59175, {	-- Sandals of Sorrow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59176, {	-- War Rider Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59177, {	-- Captain Nials' Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131477, {	-- Boots of the Refuge Captain
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1956,7 +1956,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26035, {	-- Worth Its Weight in Gold
 					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Witherbark Tusk

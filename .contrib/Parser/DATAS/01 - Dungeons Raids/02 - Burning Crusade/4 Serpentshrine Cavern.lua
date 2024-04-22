@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 						-- #endif
 					}),
 					ach(5088, {	-- Serpentshrine Cavern Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(97554, {	-- Coilfang Stalker (PET!)
 						["timeline"] = { "added 5.3.0.16758" },

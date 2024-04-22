@@ -299,7 +299,7 @@ GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE = r(57210, {	-- Glyph of Bone Shield
 });
 GLYPH_OF_BURNING_ANGER = r(112430, {	-- Glyph of Burning Anger
 	["name"] = "Glyph of Burning Anger",
-	["timeline"] = { "added 4.0.3" },
+	["timeline"] = { ADDED_4_0_3 },
 });
 GLYPH_OF_BURNOUT = r(225548, {	-- Glyph of Burnout
 	["name"] = "Glyph of Burnout",
@@ -423,7 +423,7 @@ GLYPH_OF_CRACKLING_OX_LIGHTNING = r(232274, {	-- Glyph of Crackling Ox Lightning
 });
 GLYPH_OF_CRACKLING_TIGER_LIGHTNING = r(112462, {	-- Glyph of Crackling Tiger Lightning
 	["name"] = "Glyph of Crackling Tiger Lightning",
-	["timeline"] = { "added 4.0.3" },
+	["timeline"] = { ADDED_4_0_3 },
 });
 GLYPH_OF_CRIPPLING_POISON_AND_SHARP_KNIVES = r(57116, {	-- Glyph of Crippling Poison / Glyph of Sharp Knives [5.4.0]
 	-- #if AFTER 5.4.0
@@ -2047,7 +2047,7 @@ GLYPH_OF_SHADOWFLAME_AND_UNENDING_RESOLVE = r(64311, {	-- Glyph of Shadowflame /
 });
 GLYPH_OF_SHADOWY_FRIENDS = r(126800, {	-- Glyph of Shadowy Friends
 	["name"] = "Glyph of Shadowy Friends",
-	["timeline"] = { "added 4.0.3" },
+	["timeline"] = { ADDED_4_0_3 },
 });
 -- #if ANYCLASSIC
 GLYPH_OF_SHATTERING_THROW = applyclassicphase(WRATH_PHASE_THREE, r(414814, {	-- Glyph of Shattering Throw
@@ -2392,7 +2392,7 @@ GLYPH_OF_THE_HEADHUNTER = r(225540, {	-- Glyph of the Headhunter
 });
 GLYPH_OF_THE_HEAVENS = r(124466, {	-- Glyph of the Heavens
 	["name"] = "Glyph of the Heavens",
-	["timeline"] = { "added 4.0.3" },
+	["timeline"] = { ADDED_4_0_3 },
 });
 GLYPH_OF_THE_HOOK = r(225541, {	-- Glyph of the Hook
 	["name"] = "Glyph of the Hook",
@@ -4722,7 +4722,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		-- #if AFTER 4.0.3
 		cat(105, {	-- Clear Mind
 			r(92026, {	-- Vanishing Powder
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 			}),
 		}),
 		-- #endif
@@ -4853,7 +4853,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(61120),	-- Master's Inscription of the Storm
 		}),
 	}))),
-	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
 		r(86008, {	-- Inscription (Cata)
 			["collectible"] = false,	-- the profession itself is not a recipe
 		});

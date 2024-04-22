@@ -48,7 +48,7 @@ profession(ENGINEERING, {
 					}),
 					{
 						["name"] = "Personal World Destroyer",
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 						["recipeID"] = 84412,
 					},
 					-- #if BEFORE WRATH

@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #else
 		["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",
 		-- #endif
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			explorationHeader({
 				exploration(5442),	-- Emberstone Mine

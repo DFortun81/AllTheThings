@@ -179,7 +179,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	})),
 	applyclassicphase(CATA_PHASE_ONE, ach(5363, {	-- 250000 Honorable Kills
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		["rank"] = 250000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,

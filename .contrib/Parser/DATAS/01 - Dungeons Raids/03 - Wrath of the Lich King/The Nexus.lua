@@ -424,7 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 26723,	-- Keristrasza
 						["groups"] = {
 							ach(5096, {	-- Heroic: The Nexus Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(2036),	-- Intense Cold
 							i(41794, {	-- Design: Deadly Monarch Topaz

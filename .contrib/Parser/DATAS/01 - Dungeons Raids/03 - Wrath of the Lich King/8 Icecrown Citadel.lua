@@ -1734,7 +1734,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							ach(4601),	-- Been Waiting a Long Time for This (10 player)
 							ach(4581),	-- Neck-Deep in Vile (10 player)
 							ach(5023, {	-- The Frozen Throne - Guild Edition
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -2440,7 +2440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							ach(4621),	-- Been Waiting a Long Time for This (25 player)
 							ach(4622),	-- Neck-Deep in Vile (25 player)
 							ach(5023, {	-- The Frozen Throne - Guild Edition
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(4584, {	-- The Light of Dawn
 								title(138),	-- the Light of Dawn

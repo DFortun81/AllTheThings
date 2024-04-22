@@ -265,7 +265,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36658,	-- Scourgelord Tyrannus
 						["groups"] = {
 							ach(5113, {	-- Heroic: The Pit of Saron Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(50273),	-- Engraved Gargoyle Femur
 							i(50267),	-- Tyrannical Beheader

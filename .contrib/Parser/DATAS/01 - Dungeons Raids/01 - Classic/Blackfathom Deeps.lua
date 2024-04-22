@@ -239,7 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				q(6921, {	-- Amongst the Ruins [CATA]
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -267,7 +267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26894, {	-- Blackfathom Deeps (H)
 					["qg"] = 34122,	-- Commander Grimfang
 					["coord"] = { 12.1, 33.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(22, 22, 10),
@@ -275,7 +275,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26897, {	-- Blackfathom Deeps (A)
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 18.2, 20.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(22, 22, 10),
@@ -283,7 +283,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26898, {	-- Blackfathom Deeps (A)
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(22, 22, 10),
@@ -311,7 +311,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26882, {	-- Blackfathom Villainy (A) [CATA]
 					["qg"] = 4787,	-- Scout Thaelrid
 					["sourceQuest"] = 26881,	-- In Search of Thaelrid
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -348,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26892, {	-- Deep in the Deeps
 					["qg"] = 44375,	-- Zeya
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -377,7 +377,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26881, {	-- In Search of Thaelrid [CATA]
 					["qg"] = 33256,	-- Ashelan Northwood
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -406,7 +406,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26885, {	-- Knowledge in the Deeps [CATA]
 					["qg"] = 33261,	-- Sentinel-trainee Issara
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -418,13 +418,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
 						}),
 						i(56660, {	-- Dusk-Stained Cloak
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(56658, {	-- Eventide Bow
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(56659, {	-- Gloaming Band
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(6743, {	-- Sustaining Ring
 							["timeline"] = { "removed 6.0.1.18322" },
@@ -433,7 +433,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26888, {	-- Nightmare of the Deeps (H) [CATA]
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -481,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26884, {	-- Researching the Corruption [CATA]
 					["qg"] = 33258,	-- Relwyn Shadestar
 					["coord"] = { 38.3, 43.0, DARKSHORE },
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -489,16 +489,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 5952 },	-- Corrupted Brain Stem
 						}),
 						i(56682, {	-- Band of the Skull Crusher
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(56679, {	-- Dissector
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(56681, {	-- Searching Wand
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(56680, {	-- Shadestar Mace
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 					},
 				}),
@@ -521,7 +521,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(26899, {	-- The Enemy of My Enemy (H) [CATA]
 					["qg"] = 44387,	-- Flaming Eradicator
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -622,7 +622,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26883, {	-- Twilight Falls [CATA]
 					["qg"] = 33260,	-- Sentinel Aluwyn
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -630,13 +630,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 5879 },	-- Twilight Pendant
 						}),
 						i(56697, {	-- Blackfathom Mace
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(56698, {	-- Gift of the Enigmatic Tree
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 						i(56699, {	-- Aluwyn's Legguards
-							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 						}),
 					},
 				}),
@@ -716,7 +716,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					ach(5041, {	-- Blackfathom Deeps Guild Run
-						["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+						["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					}),
 					i(6909),	-- Strike of the Hydra
 					i(6911),	-- Moss Cinch

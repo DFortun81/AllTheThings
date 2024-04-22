@@ -64,14 +64,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				ach(5055, {	-- Stratholme Guild Run
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
 			n(QUESTS, {
 				q(27422, {	-- A City Under Siege
 					["qg"] = 45482,	-- Argent Officer Irizarry
 					["coord"] = { 51.6, 21.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(44, 44, 15),
 				}),
 				q(5263, {	-- Above and Beyond
@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27359, {	-- Argent Reinforcements
 					["qg"] = 45330,	-- Archmage Angela Dosantos
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(46, 46, 15),
 					["groups"] = {
 						objective(1, {	-- 0/4 Banshee Essence
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27185, {	-- Cutting the Competition
 					["qg"] = 45201,	-- Master Craftsman Wilhelm <Brotherhood of the Light>
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Risen Hammersmith slain
@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27352, {	-- Liquid Gold
 					["qg"] = 45328,	-- Packmaster Stonebruiser
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(46, 46, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Stratholme Holy Water
@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27227, {	-- Lord Aurius Rivendare
 					["qg"] = 45329,	-- Crusade Commander Eligor Dawnbringer
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(46, 46, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Aurius Rivendare slain
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27228, {	-- Man Against Abomination
 					["qg"] = 45206,	-- Crusade Commander Korfax
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(46, 46, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Ramstein the Gorger slain
@@ -249,7 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27305, {	-- Of Love and Family
 					["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Of Love and Family
@@ -314,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27223, {	-- Retribution
 					["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 The Unforgiven slain
@@ -393,23 +393,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27208, {	-- The Dreadlord Balnazzar
 					["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Balnazzar slain
 							["provider"] = { "n", 10813 },	-- Balnazzar
 						}),
 						i(65998, {	-- Balnazzar's Hide
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65977, {	-- Balnazzar's Horn
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65953, {	-- Dathrohan's Mace
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65928, {	-- Leggings of Stratholme
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -426,7 +426,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27192, {	-- The Great Ezra Grimm
 					["qg"] = 45328,	-- Packmaster Stonebruiser
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Grimm's Premium Tobacco
@@ -490,7 +490,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27230, {	-- Weapons for War
 					["qg"] = 45331,	-- Master Craftsman Wilhelm
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(46, 46, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Black Guard Swordsmith slain
@@ -845,7 +845,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["creatureID"] = 10811,	-- Archivist Galford [Classic] / Instructor Galford [CATA+]
 						["groups"] = {
 							i(65615, {	-- Annals of the Silver Hand
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(14679, {	-- Of Love and Family
 								-- #if BEFORE 4.0.3

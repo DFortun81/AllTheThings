@@ -110,7 +110,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			q(27846, {	-- The Grateful Dead — Darnassus, Worgen
 				["qg"] = 46908,	-- Cheerful Worgen Spirit
 				["coord"] = { 68.6, 40.6, DARNASSUS },
-				["timeline"] = { "added 4.0.3.13277" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = { WORGEN },
 			}),
 			q(14167, {	-- The Grateful Dead — Dun Morogh, Dwarf
@@ -126,7 +126,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			q(27841, {	-- The Grateful Dead — Durotar, Goblin
 				["qg"] = 46901,	-- Cheerful Goblin Spirit
 				["coord"] = { 47.4, 17.6, DUROTAR },
-				["timeline"] = { "added 4.0.3.13277" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = { GOBLIN },
 			}),
 			q(14175, {	-- The Grateful Dead — Durotar, Orc

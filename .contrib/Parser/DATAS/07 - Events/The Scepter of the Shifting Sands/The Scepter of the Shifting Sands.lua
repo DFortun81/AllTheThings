@@ -485,7 +485,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["lvl"] = 60,
 					["groups"] = {
 						ach(5533, {	-- Veteran of the Shifting Sands
-							["timeline"] = { "added 4.0.3.28000", "removed 4.0.3" },	-- Added in Cataclysm Prepatch
+							["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- Added in Cataclysm Prepatch
 						}),
 						i(21523),	-- Fang of Korialstrasz
 						i(21522),	-- Shadowsong's Sorrow

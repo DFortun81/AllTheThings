@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { "added 3.0.1" },
 							}),
 							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(28222),	-- Reaver of the Infinites
 							-- #if AFTER 7.3.5

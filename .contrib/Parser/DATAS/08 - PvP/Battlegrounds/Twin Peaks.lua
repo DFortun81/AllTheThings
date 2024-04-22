@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(206, {	-- Twin Peaks
 		["icon"] = "Interface\\Icons\\spell_nature_earthshock",
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(5223, {	-- Master of Twin Peaks

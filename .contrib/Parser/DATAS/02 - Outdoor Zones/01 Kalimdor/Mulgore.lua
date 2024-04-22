@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(27015, {	-- Consecrated Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
 							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { TAUREN },
 							["classes"] = { PALADIN },
 						}),
@@ -219,20 +219,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								14455,	-- Stop the Thorncallers
 							},
 							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(14458, {	-- Go to Adana
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 24852,	-- Our Tribe, Imprisoned
 							["coord"] = { 39.4, 37.0, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(27014, {	-- Hallowed Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
 							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { TAUREN },
 							["classes"] = { PRIEST },
 						}),
@@ -272,24 +272,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2981,	-- Chief Hawkwind
 							["sourceQuest"] = 14460,	-- Rite of Honor
 							["coord"] = { 27.6, 28.4, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(24852, {	-- Our Tribe, Imprisoned
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 14452,	-- Rite of Strength
 							["coord"] = { 39.4, 37.0, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(57198, {	-- Red Cloud Gloves
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131867, {	-- Red Cloud Handwraps
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57215, {	-- Quill Impaled Boots
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -314,20 +314,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 36694,	-- Adana Thunderhorn
 							["sourceQuest"] = 14458,	-- Go To Adana
 							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(57201, {	-- Robes of the Sun
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57218, {	-- Rabbit Chaser's Leggings
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131871, {	-- Rabbit Chaser's Greaves
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57224, {	-- Longstalker's Rifle
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -338,20 +338,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								14459,	-- The Battleboars
 							},
 							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(57203, {	-- Slippers of High Honor
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57220, {	-- Sunwalker's Belt
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131872, {	-- Sunwalker's Waistcord
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57792, {	-- Bag of Thorns
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -359,20 +359,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 14449,	-- The First Step
 							["coord"] = { 39.4, 37.0, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(57199, {	-- Sun Bleached Bracer
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131868, {	-- Sun Bleached Armbands
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57216, {	-- Mud Splattering Hammer
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57231, {	-- Red Ceremonial Dagger
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -414,14 +414,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 36803,	-- Rite of the Winds
 							["sourceQuest"] = 23733,	-- Rites of the Earthmother
 							["coord"] = { 15.4, 30.4, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(23733, {	-- Rites of the Earthmother
 							["qg"] = 2981,	-- Chief Hawkwind
 							["sourceQuest"] = 24861,	-- Last Rites, First Rites
 							["coord"] = { 27.6, 28.4, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(755, {	-- Rites of the Earthmother (1/3)
@@ -467,17 +467,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 36694,	-- Adana Thunderhorn
 							["sourceQuest"] = 14458,	-- Go To Adana
 							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(57232, {	-- Thorn-Proof Wristguard
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57200, {	-- Thorncaller Trousers
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57217, {	-- Thorned Cinch
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131870, {	-- Thorned Links
 									["timeline"] = { "added 7.0.3.22248" },
@@ -491,17 +491,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								14455,	-- Stop the Thorncallers
 							},
 							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(57202, {	-- Scarred Battleboar Chest
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131869, {	-- Scarred Battleboar Breastplate
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57219, {	-- Braided Boarskin Belt
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(14449, {	-- The First Step
 							["qg"] = 2981,	-- Chief Hawkwind
 							["coord"] = { 27.7, 28.5, CAMP_NARACHE },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(747, {	-- The Hunt Begins
@@ -697,7 +697,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(402, {	-- Bloodhoof Village, Mulgore
 					["cr"] = 40809,	-- Tak <Wind Rider Master>
 					["coord"] = { 47.4, 58.6, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -717,16 +717,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 3232 },	-- Bristleback Interloper
 						}),
 						i(57237, {	-- Cairne's First Breastplate
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57228, {	-- Cord of Tragic Memory
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131217, {	-- Waistband of Tragic Memory
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57212, {	-- Slippers of Mourning
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -813,7 +813,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37024,	-- Una Wildmane
 					["sourceQuest"] = 24524,	-- Wildmane Cleansing
 					["coord"] = { 49.4, 17.4, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
@@ -892,20 +892,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26188, {	-- Mazzranache
 					["qg"] = 3055,	-- Maur Raincaller
 					["coord"] = { 47.1, 56.6, MULGORE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57209, {	-- Belt of the Prairie Wolf
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(66616, {	-- Cougar Pelt Wristwraps
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131494, {	-- Prairie Wolf Bracers
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57234, {	-- Swoopskin Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -955,7 +955,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24459, {	-- Morin Cloudstalker
 					["qg"] = 36644,	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, MULGORE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -992,7 +992,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(20440, {	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.5, MULGORE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 				}),
 				q(748, {	-- Poison Water
@@ -1039,16 +1039,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 2965,	-- Windfury Matriarch
 						}),
 						i(57211, {	-- Leggings of Brown Grass
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57227, {	-- Hewn Kodo Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131212, {	-- Plainstrider Handguards
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57236, {	-- Plainstrider Leg Armor
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(4968, {	-- Bound Harness
 							["timeline"] = { "removed 4.0.3" },
@@ -1062,7 +1062,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 24456,	-- Thunderhorn Cleansing
 					["coord"] = { 48.6, 59.8, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
 				}),
@@ -1070,17 +1070,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3054,	-- Zarlman Two-Moons
 					["sourceQuest"] = 24457,	-- Rite of Vision (1/2)
 					["coord"] = { 47.8, 57.2, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(57206, {	-- Earthmother's Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131363, {	-- Earthmother's Garb
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57222, {	-- Rainwalker's Bracer
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1206,7 +1206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57204, {	-- Thunderhorn Cloak
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1232,14 +1232,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2988,	-- Morin Cloudstalker
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["coord"] = { 57.0, 60.4, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57242, {	-- Goblin Masher
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57208, {	-- Trackless Sandals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131493, {	-- Trackless Boots
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1428,17 +1428,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36644,	-- Ahmo Thunderhorn
 					["sourceQuest"] = 14438,	-- Sharing the Land
 					["coord"] = { 47.6, 59.6, MULGORE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57223, {	-- Chestguard of the Beating Drum
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57207, {	-- Restless Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57233, {	-- Worn Ceremonial Tomahawk
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1446,7 +1446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2988,	-- Morin Cloudstalker
 					["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 					["coord"] = { 57.0, 60.4, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(764, {	-- The Venture Co.
@@ -1461,17 +1461,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 24441,	-- Thunderhorn Totem
 					["coord"] = { 48.6, 59.8, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(57235, {	-- Bloodhoof War Shield
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57226, {	-- Touch of Dawn
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57210, {	-- Thunderhorn Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131366, {	-- Thunderhorn Handguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1499,7 +1499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 24440,	-- Winterhoof Cleansing
 					["coord"] = { 48.6, 59.8, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 				}),
 				q(756, {	-- Thunderhorn Totem
@@ -1563,23 +1563,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37024,	-- Una Wildmane
 					["sourceQuest"] = 24523,	-- Wildmane Totem
 					["coord"] = { 49.4, 17.4, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(57238, {	-- Cliff Running Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57229, {	-- Duskwatcher's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131373, {	-- Duskwatcher's Legguards
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57240, {	-- Hawkeye Rifle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57213, {	-- Waterbearer's Robes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1607,7 +1607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37024,	-- Una Wildmane
 					["sourceQuest"] = 20441,	-- Rite of Vision
 					["coord"] = { 49.4, 17.4, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 				}),
 				q(759, {	-- Wildmane Totem
@@ -1628,14 +1628,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["sourceQuest"] = 20440,	-- Poison Water
 					["coord"] = { 48.6, 59.8, MULGORE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(57221, {	-- Legs of the Long Day
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57205, {	-- Plains Hunter Guards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

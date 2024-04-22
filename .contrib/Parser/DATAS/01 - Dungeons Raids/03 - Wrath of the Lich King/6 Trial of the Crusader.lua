@@ -1735,7 +1735,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
 						ach(5021, {	-- Call of the Crusade - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						ach(3800),	-- The Traitor King (10 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
@@ -2300,7 +2300,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
 						ach(5021, {	-- Call of the Crusade - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						ach(3816),	-- The Traitor King (25 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)

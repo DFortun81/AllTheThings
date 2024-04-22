@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(TWILIGHT_HIGHLANDS, {
 		["lore"] = "Twilight Highlands is a new zone in Cataclysm. It is currently home of the Wildhammer dwarves and the Dragonmaw Orcs, both whom inhabited Grim Batol in the recent past. Twilight Cultists have also inhabited the area, sensing the presence of the Old Gods nearby, which is explored in the questline related to Consumed by Nightmare. There's also a Ring of Blood-style quest series that rewards a good weapon: Round Three. Fight!",
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_twilighthighlands",
 		-- #endif
@@ -12,13 +12,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuest"] = 27380,	-- Nightmare
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				achWithRep(4886, 1172, {	-- Dragonmaw Clan
 					["races"] = HORDE_ONLY,
 				}),
 				ach(5482, {	-- Dragonmaw Tour of Duty
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(15952, {	-- High Shaman MacKilligan slain
@@ -51,13 +51,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				explorationAch(4866, {	-- Explore Twilight Highlands
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if BEFORE WRATH
 					["description"] = "Explore Twilight Highlands, revealing the covered areas of the world map.",
 					-- #endif
 				}),
 				ach(4873, {	-- Fading into Twilight (Alliance)
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
@@ -160,10 +160,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4960, {	-- Round Three. Fight!
 					["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				ach(4958, {	-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["collectible"] = false,	-- not all criteria are available in this zone, so the header shouldn't be collectible here.
 					["groups"] = {
 						crit(13918, {	-- Crucible of Carnage in Twilight Highlands
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5481, {	-- Wildhammer Tour of Duty
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Warlord Halthar slain

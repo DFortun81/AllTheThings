@@ -433,7 +433,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_VICIOUS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_0_3, "removed 4.2.0" }, }, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1974,7 +1974,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3, "removed 4.2.0" }, }, {
 				-- Original Sources are:
 				-- n51255 Lieutenant Tristia <Glorious Conquest Quartermaster> in Stormwind (Alliance)
 				-- n46593 Doris Volanthius <Glorious Conquest Quartermaster> in Orgrimmar (Horde)

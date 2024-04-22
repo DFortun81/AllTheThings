@@ -1450,7 +1450,7 @@ root(ROOTS.Zones, {
 					n(40209, {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
 							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 							i(77692),	-- Replica Field Marshal's Satin Mantle

@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28373,	-- Timbermaw Hold
 					},
 					["coord"] = { 64.0, 10.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(21317),	-- Helm of the Pathfinder
 						i(21316),	-- Leggings of the Ursa
@@ -142,26 +142,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11556,	-- Salfa
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(28366, {	-- Disarming Bears
 					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
 					["coord"] = { 64.0, 10.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65343, {	-- Timbermaw Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65294, {	-- Timbermaw Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65313, {	-- Timbermaw Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65332, {	-- Timbermaw Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 				}),
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
 					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["repeatable"] = true,
 				}),
 				q(6031, {	-- Runecloth
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28364,	-- The Chieftain's Key
 					},
 					["coord"] = { 64.0, 10.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(8465, {	-- Speak to Salfa
@@ -268,7 +268,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28362, {	-- Stupid Drizle!
 					["qg"] = 48461,	-- Ferli
 					["coord"] = { 64.1, 10.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				{	-- The Brokering of Peace
 					["allianceQuestData"] = q(8484, {	-- The Brokering of Peace (A)
@@ -296,16 +296,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47556,	-- Drizle
 					["sourceQuest"] = 28362,	-- Stupid Drizle!
 					["coord"] = { 60.5, 9.5, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65293, {	-- Leggings of Mischief
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65312, {	-- Vest of Sobbing
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65331, {	-- Bloodmaw's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48127,	-- Darla Drilldozer
 					["sourceQuest"] = 28368,	-- Fire in the Hole!
 					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11556,	-- Salfa
 					["sourceQuest"] = 28521,	-- Speak to Salfa
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {{ "i", 21383, 10 }},	-- Winterfall Spirit Beads
 					["groups"] = {
 						i(21318),	-- Earth Warder's Gloves
@@ -407,7 +407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point
 					["coord"] = { 64.0, 10.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 					--["description"] = "Only available between level 15 and XX.", TODO: before level squish it was available from level 15 till level 60, now min is 15 but max is unknown
 				}),

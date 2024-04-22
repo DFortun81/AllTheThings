@@ -305,14 +305,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26383, {	-- Breaking Waves of Change [NON-WORGEN]
 					["qg"] = 42936,	-- Sentinel Cordressa Briarbow
 					["coord"] = { 43.8, 76.2, DARNASSUS },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = exclude(WORGEN, ALLIANCE_ONLY),
 					["isBreadcrumb"] = true,
 				}),
 				q(26385, {	-- Breaking Waves of Change [WORGEN]
 					["qg"] = 48736,	-- Genn Greymane
 					["coord"] = { 48.2, 14.6, DARNASSUS },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { WORGEN },
 					["isBreadcrumb"] = true,
 				}),
@@ -1454,23 +1454,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>
 					["coord"] = { 37.1, 47.4, DARNASSUS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64882, {	-- Gilneas Tabard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64893, {	-- Cape of Gilneas
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64892, {	-- Mantle of Gilneas
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64894, {	-- Shroud of Gilneas
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67532, {	-- Gilnean Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1559,23 +1559,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
 					["coord"] = { 36.17, 48.49, DARNASSUS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(45579, {	-- Darnassus Tabard
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64887, {	-- Cape of Darnassus
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64888, {	-- Mantle of Darnassus
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64886, {	-- Shroud of Darnassus
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67526, {	-- Darnassian Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

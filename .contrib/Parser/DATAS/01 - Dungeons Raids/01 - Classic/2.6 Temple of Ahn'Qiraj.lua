@@ -1518,7 +1518,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						-- #endif
 					}),
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(21221),	-- Eye of C'Thun
 					applyclassicphase(PHASE_SIX, {

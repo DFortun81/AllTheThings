@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27677, {	-- Archaedas, The Ancient Stone Watcher [Alliance]
 					["qg"] = 46234,	-- Lead Prospector Durdin <Explorer's League>
 					["sourceQuest"] = 27672,	-- The Chamber of Khaz'mul [Alliance]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27680, {	-- Archaedas, The Ancient Stone Watcher [Horde]
 					["qg"] = 46236,	-- High Examiner Tae'thelan Bloodwatcher <The Reliquary>
 					["sourceQuest"] = 27679,	-- The Chamber of Khaz'mul [Horde]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27676, {	-- Behind Closed Doors
 					["qg"] = 46233,	-- Olga Runesworn
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -133,7 +133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27681, {	-- Behind Closed Doors
 					["qg"] = 46235,	-- Lidia Sunglow
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27673, {	-- It's What's Inside That Counts
 					["qg"] = 46247,	-- Kand Sandseeker
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -374,7 +374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27672, {	-- The Chamber of Khaz'mul [Alliance]
 					["qg"] = 46234,	-- Lead Prospector Durdin <Explorer's League>
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -385,7 +385,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27679, {	-- The Chamber of Khaz'mul [Horde]
 					["qg"] = 46236,	-- High Examiner Tae'thelan Bloodwatcher <The Reliquary>
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -524,7 +524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27682, {	-- We Require More Minerals
 					["qg"] = 46241,	-- Aoren Sunglow
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -724,7 +724,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 7023,
 				["groups"] = {
 					i(62053, {	-- Obsidian Power Core
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(8053),	-- Obsidian Power Source
 					i(151399, {	-- Splintered Obsidian Shard
@@ -736,7 +736,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 7206,
 				["groups"] = {
 					i(62055, {	-- Titan Power Core
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(9411),	-- Rockshard Pauldrons
 					i(132733, {	-- Stone Keeper's Mantle
@@ -800,7 +800,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5047, {	-- Uldaman Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(7672),	-- Shattered Necklace Power Source
 					i(9418),	-- Stoneslayer

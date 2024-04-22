@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(27355, {	-- A Boon for the Powerful
 					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 45306,	-- Chief Surgeon Gashweld
 					["sourceQuest"] = 27274,	-- The Chief Surgeon [CATA] / Patrice Lancaster Sends Word [Gnome] [SL+]
 					["coord"] = { 63.0, 34.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.4, 69.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 73.8, 45.6, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 77.0, 27.4, THUNDER_BLUFF },	-- Sheal Runetotem
 						{ 55.0, 50.4, UNDERCITY },	-- Mala Skywatcher
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -203,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["sourceQuest"] = 27278,	-- Grimshot's Call [CATA] / Tamanji's Call [SL+]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -224,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27272, {	-- A Message From Evelyn Thorn [SL+] / Demisette Sends Word [CATA]
 					["qg"] = 5173,	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, IRONFORGE },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -249,7 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.6, 60.8, STORMWIND_CITY },	-- Lord Tony Romano
 					},
 					-- #endif
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -282,7 +282,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 37.8, 87.4, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -315,7 +315,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 45.4, 53.4, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker [CATA] / Journey to Orgrimmar [Undead] [SL+]
 					["coord"] = { 72.6, 46.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -364,7 +364,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
 						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -375,7 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 44725,	-- Sunwalker Atohmo
 					["sourceQuest"] = 27304,	-- Follow the Sun [CATA] / Meet with Avaros Dawnglaive [Tauren] [SL+]
 					["coord"] = { 45.2, 53.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -396,7 +396,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27344, {	-- A Well-Earned Reward
 					["sourceQuest"] = 27266,	-- Wulf Calls [CATA] / Dalgrun Calls [SL+]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 20, 8),
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.8, 78.8, DARNASSUS },
 						{ 55.0, 30.2, IRONFORGE },
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -455,7 +455,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 27.6, 50.0, STORMWIND_CITY },	-- Sheldras Moontree
 						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -464,7 +464,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27920, {	-- Armored to the Teeth
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
 					["sourceQuest"] = 27917,	-- Sniffing Them Out
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -507,7 +507,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 32.9, 65.8, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -526,7 +526,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27353, {	-- Blessings of the Elements
 					["sourceQuest"] = 27270,	-- An Audience with the Farseer [CATA] / An Audience with Mulric [SL+]
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -570,7 +570,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
 						{ 47.2, 88.4, THE_EXODAR },	-- Vord
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -591,7 +591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -614,7 +614,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27272, {	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
 					["qg"] = 5173,	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, IRONFORGE },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -642,7 +642,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 39.0, 47.4, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -673,7 +673,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
 						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -684,7 +684,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7999,	-- Tyrande Whisperwind
 					["sourceQuest"] = 27269,	-- The Temple of the Moon
 					["coord"] = { 43.0, 77.8, DARNASSUS },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -717,7 +717,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 49.6, 44.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -737,7 +737,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27921, {	-- Fighting Tooth and Claw
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
 					["sourceQuest"] = 27920,	-- Armored to the Teeth
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -756,7 +756,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -768,7 +768,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
 					["coord"] = { 72.6, 46.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -789,7 +789,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27968, {	-- Fury of the Pack
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
 					["sourceQuest"] = 27921,	-- Fighting Tooth and Claw
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -864,7 +864,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -883,7 +883,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -900,7 +900,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
 						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -928,7 +928,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 39.0, 47.4, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -960,7 +960,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -980,7 +980,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -999,7 +999,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1018,7 +1018,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -1037,7 +1037,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -1054,7 +1054,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1072,7 +1072,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1091,7 +1091,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
 						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1107,7 +1107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
 						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1125,7 +1125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
 						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 					["isBreadcrumb"] = true,
@@ -1148,7 +1148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 49.2, 87.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1181,7 +1181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 48.4, 62.6, ORGRIMMAR },	-- Ureda
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1208,7 +1208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1218,7 +1218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27996, {	-- Orders Are For the Living
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -1239,7 +1239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
 						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 					["isBreadcrumb"] = true,
@@ -1256,7 +1256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
 						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
 					["isBreadcrumb"] = true,
@@ -1266,7 +1266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27988, {	-- Plague...Plague Everywhere!
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27974,	-- This Land is Our Land
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -1292,7 +1292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -1310,7 +1310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -1330,7 +1330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -1339,7 +1339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(27917, {	-- Sniffing Them Out
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -1364,7 +1364,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 49.0, 71.0, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
 					["groups"] = {
@@ -1383,7 +1383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27998, {	-- Sweet, Merciless Revenge
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -1415,7 +1415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
 						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1444,7 +1444,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 39.0, 47.4, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1480,7 +1480,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 49.2, 71.2, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1525,7 +1525,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27274, {	-- The Chief Surgeon [CATA] / Patrice Lancaster Sends Word [Gnome] [SL+]
 					["qg"] = 11406,	-- High Priest Rohan
 					["coord"] = { 25.0, 8.2, IRONFORGE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
 					["isBreadcrumb"] = true,
@@ -1536,7 +1536,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 12042,	-- Loganaar
 					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
 					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = lvlsquish(8, 20, 8),
@@ -1558,7 +1558,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 12042,	-- Loganaar
 					["sourceQuest"] = 27283,	-- A Journey to Moonglade
 					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = lvlsquish(8, 20, 8),
@@ -1581,7 +1581,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 45339,	-- Dark Cleric Cecille
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
 					["coord"] = { 48.2, 72.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1610,7 +1610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 22.2, 19.0, THUNDER_BLUFF },
 						{ 22.0, 18.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1628,7 +1628,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 22.2, 19.0, THUNDER_BLUFF },
 						{ 22.0, 18.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1638,7 +1638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(27343, {	-- The Hand of the Light
 					["sourceQuest"] = 27265,	-- Lord Grayson Shadowbreaker [CATA] / Ezul'aan Calls [SL+]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1709,7 +1709,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 22.2, 19.0, THUNDER_BLUFF },
 						{ 22.0, 18.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1730,7 +1730,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1740,7 +1740,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 45137,	-- Shadow-Walker Zuru
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker [CATA] / Journey to Orgrimmar [Undead] [SL+]
 					["coord"] = { 35.4, 69.2, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1767,7 +1767,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.4, 52.0, SILVERMOON_CITY },	-- Zelanis
 						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1782,7 +1782,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
 						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
@@ -1790,7 +1790,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27974, {	-- This Land is Our Land
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
@@ -1819,7 +1819,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 53.5, 49.6, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -1848,7 +1848,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
 						{ 47.2, 88.4, THE_EXODAR },	-- Vord
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1867,7 +1867,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1880,16 +1880,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 				n(ZONE_DROPS, {
 					i(60874, {	-- Deathless Sinew
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(60875, {	-- Ghostly Essence
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(60872, {	-- Moonsteel Ingots
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(60871, {	-- Moontouched Wood
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(1935),	-- Assassin's Blade
 					i(3194),	-- Black Malice
@@ -1955,7 +1955,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(96, {	-- Baron Ashbury
 					["creatureID"] = 46962,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(6323),	-- Baron's Scepter
 						i(6314),	-- Wolfmaster Cape
@@ -1984,10 +1984,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 3887,
 					["groups"] = {
 						i(60878, {	-- Silverlaine's Enchanted Crystal
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(60885, {	-- Silverlaine Family Sword
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
 						i(6323),	-- Baron's Scepter
@@ -2014,10 +2014,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 4278,
 					["groups"] = {
 						i(60879, {	-- Commander's Holy Symbol
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(60880, {	-- Springvale's Sharpening Stone
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(3191),	-- Arced War Axe
 						i(6320),	-- Commander's Crest
@@ -2063,13 +2063,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(99, {	-- Lord Walden
 					["creatureID"] = 46963,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(60876, {	-- Walden's Elixirs
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(60881, {	-- Walden's Talisman
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(1292),	-- Butcher's Cleaver
 						i(6341),	-- Eerie Stable Lantern
@@ -2083,7 +2083,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(60873, {	-- Book of Lost Souls
 					["provider"] = { "o", 205476 },	-- Book of Lost Souls
 					["description"] = "This item in located on a chair in Lord Walden's room.",
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(4274, {	-- Fenrus the Devourer
 					["timeline"] = { "removed 4.0.3" },
@@ -2134,11 +2134,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(100, {	-- Lord Godfrey
 					["creatureID"] = 46964,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						ach(631),	-- Shadowfang Keep
 						ach(5040, {	-- Shadowfang Keep Guild Run
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(60877),	-- Godfrey's Crystal Scope
 						i(60882),	-- Tenebrous Orb
@@ -2161,7 +2161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #endif
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["lvl"] = 85,
 				["groups"] = {
 					e(96, {	-- Baron Ashbury

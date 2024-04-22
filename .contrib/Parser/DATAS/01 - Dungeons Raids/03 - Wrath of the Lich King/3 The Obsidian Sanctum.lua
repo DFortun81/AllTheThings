@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(43986)	-- Black Drake (MOUNT!)
 						}),
 						ach(5017, {	-- The Twilight Zone - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(40613),	-- Gloves of the Lost Conqueror		//** Confirmed Drop 4/19/19 [1 Drake up]
 						i(40614),	-- Gloves of the Lost Protector
@@ -130,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(43954)	-- Twilight Drake (MOUNT!)
 						}),
 						ach(5017, {	-- The Twilight Zone - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(40628),	-- Gauntlets of the Lost Conqueror		//** Confirmed Drop 4/19/19 [3 Drakes up]
 						i(40629),	-- Gauntlets of the Lost Protector

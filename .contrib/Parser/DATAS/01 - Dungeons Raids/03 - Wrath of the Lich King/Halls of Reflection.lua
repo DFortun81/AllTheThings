@@ -230,7 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36954,	-- The Lich King
 						["groups"] = {
 							ach(5114, {	-- Heroic: The Halls of Reflection Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
 							-- #if AFTER 7.3.5

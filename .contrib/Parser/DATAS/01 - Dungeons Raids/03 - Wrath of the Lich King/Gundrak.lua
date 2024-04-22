@@ -484,7 +484,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 29306,	-- Gal'darah
 						["groups"] = {
 							ach(5101, {	-- Heroic: Gundrak Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(2152),	-- Share The Love
 							ach(1864),	-- What the Eck?

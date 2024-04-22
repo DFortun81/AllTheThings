@@ -656,10 +656,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(59584, {	-- Foolhardy Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59583, {	-- Marauding Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131221, {	-- Marauding Cord
 							["timeline"] = { "added 7.0.3.22248" },
@@ -893,13 +893,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(59539, {	-- Mankrik's Old Wedding Garments
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59540, {	-- Quilboar Skin Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59541, {	-- Mankrik's Boar Slicer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131227, {	-- Quilboar Linked Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -928,13 +928,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 9456,	-- Warlord Krom'zar
 						}),
 						i(59591, {	-- Shield of the Barrens
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59592, {	-- Suppressor's Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59593, {	-- Deathgate Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1407,13 +1407,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3396,	-- Hezrul Bloodmark
 						}),
 						i(59585, {	-- Lushwater Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59586, {	-- Gloves of Unfocused Rage
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59587, {	-- Fractured Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131220, {	-- Hands of Unfocused Rage
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1629,13 +1629,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3394,	-- Barak Kodobane
 						}),
 						i(59551, {	-- Tangled Thread Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59552, {	-- Belt of the Forgotten Pool
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59553, {	-- Highstrider Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131218, {	-- Cord of the Forgotten Pool
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2004,13 +2004,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(59580, {	-- Sharp Poker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59581, {	-- Smart Shoes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59582, {	-- Shrewd Crossbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131223, {	-- Smart Sandals
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2396,13 +2396,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3452,	-- Serena Bloodfeather
 						}),
 						i(59588, {	-- Cutthroat Band
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59589, {	-- Bloodfeather Ring
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59590, {	-- Darsok's Ring
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(5321, {	-- Elegant Shortsword
 							["timeline"] = { "removed 4.0.3" },
@@ -2819,10 +2819,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(59549, {	-- Sunscale Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59550, {	-- Darkthorn Piercer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2980,13 +2980,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(59542, {	-- Thornweaver Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59543, {	-- Pigman Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59544, {	-- Kargal's Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131224, {	-- Pigman Waistband
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3011,13 +3011,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(13, 13, 5),
 					["groups"] = {
 						i(59577, {	-- Sputtervalve Gun
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59578, {	-- Bracers of Angry Mutterings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59579, {	-- Nozzlepot Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131222, {	-- Nozzlepot Legwraps
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3406,10 +3406,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3395,	-- Verog the Dervish
 						}),
 						i(59566, {	-- Robe of Shame
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59567, {	-- Murderous Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131219, {	-- Murderous Cuffs
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3456,16 +3456,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(49560, {	-- Proof of Death
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(49543, {	-- Seaworthy Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(49548, {	-- Gazlowe's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(49446, {	-- Retainer Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131225, {	-- Gazlowe's Grips
 							["timeline"] = { "added 7.0.3.22248" },

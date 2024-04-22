@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								-- #endif
 							}),
 							ach(5075, {	-- Heroic: Shadow Labyrinth Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(27903),	-- Sonic Spear
 							i(27905),	-- Greatsword of Horrid Dreams

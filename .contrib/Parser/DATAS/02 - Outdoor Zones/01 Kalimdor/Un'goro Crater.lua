@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				ach(4939, {	-- Un'Goro Crater Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(386, {	-- Mossy Pile, Un'Goro Crater
 					["cr"] = 39175,	-- Flizzy Coilspanner <Flight Master>
 					["coord"] = { 44, 40.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
 			n(QUESTS, {
@@ -128,16 +128,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9999,	-- Ringo
 					["sourceQuest"] = 24734,	-- Lost!
 					["coord"] = { 51.9, 49.8, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53566, {	-- Woodland Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53567, {	-- Clayridge Headpiece
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53568, {	-- Jeweled Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -163,16 +163,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9272,	-- Spark Nilminer
 					["sourceQuest"] = 24708,	-- The Fossil-Finder 3000
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53600, {	-- Careful Coverings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53601, {	-- Nilminer's Notes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53602, {	-- Excavated Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -199,13 +199,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38263,	-- Ithis Moonwarden
 					["sourceQuest"] = 24687,	-- Bouquets of Death
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53569, {	-- Confiscated Poacher's Gun
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53570, {	-- Bloodpetal Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38270,	-- Nolen Tacker
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["coord"] = { 55.0, 60.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(3883, {	-- Alien Ecology
@@ -235,12 +235,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24866, {	-- An Abandoned Research Camp
 					["provider"] = { "o", 161521 },	-- Research Equipment
 					["coord"] = { 38.4, 66.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24703, {	-- An Important Lesson
 					["qg"] = 38237,	-- Maximillian of Northshire
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4501, {	-- Beware of Pterrordax
 					["provider"] = { "o", 174682 },	-- Beware of Pterrordax
@@ -272,16 +272,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9270,	-- Williden Marshal
 					["sourceQuest"] = 24740,	-- Volcanic Activity
 					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53574, {	-- Blazerunner Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53575, {	-- Marshal Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53576, {	-- Fire Plume Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -347,19 +347,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38263,	-- Ithis Moonwarden
 					["sourceQuest"] = 24689,	-- Flowing to the North
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24686, {	-- Carried on the Waves
 					["qg"] = 38274,	-- Garl Stormclaw
 					["sourceQuest"] = 24719,	-- Claws of White
 					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24714, {	-- Chasing A-Me 01
 					["qg"] = 9618,	-- Karna Remtravel
 					["sourceQuest"] = 24701,	-- Marshal's Refusew
 					["coord"] = { 43.4, 40.9, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4243, {	-- Chasing A-Me 01 (1/3)
 					["qg"] = 9618,	-- Karna Remtravel
@@ -386,16 +386,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38274,	-- Garl Stormclaw
 					["sourceQuest"] = 24854,	-- Finding Stormclaw
 					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53557, {	-- White Bone Pummeler
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53558, {	-- White Bone Circle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53559, {	-- White Bone Rod
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -407,7 +407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["coord"] = { 56.5, 12.4, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 6 },	-- Red Power Crystal
 						{ "i", 11188, 8 },	-- Yellow Power Crystal
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["coord"] = { 77.2, 50.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11185, 6 },	-- Green Power Crystal
 						{ "i", 11184, 8 },	-- Blue Power Crystal
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["coord"] = { 56.5, 12.4, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11188, 8 },	-- Yellow Power Crystal
 						{ "i", 11185, 6 },	-- Green Power Crystal
@@ -506,7 +506,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["coord"] = { 77.2, 50.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11184, 8 },	-- Blue Power Crystal
 						{ "i", 11188, 6 },	-- Yellow Power Crystal
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 8 },	-- Red Power Crystal
 						{ "i", 11185, 6 },	-- Green Power Crystal
@@ -572,7 +572,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 8 },	-- Red Power Crystal
 						{ "i", 11184, 6 },	-- Blue Power Crystal
@@ -600,7 +600,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24720, {	-- Crystals of Power
 					["qg"] = 9117,	-- J.D. Collie
 					["coord"] = { 54.1, 62.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11184, 7 },	-- Blue Power Crystal
 						{ "i", 11185, 7 },	-- Green Power Crystal
@@ -662,29 +662,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38502,	-- Nablya
 					["sourceQuest"] = 24694,	-- The Shaper's Terrace
 					["coord"] = { 83.5, 46.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53594, {	-- Amulet of Newfound Knowledge
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53595, {	-- Cloak of Repose
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53596, {	-- Un'Goro Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(24854, {	-- Finding Stormclaw
 					["qg"] = 38269,	-- Zen'Aliri
 					["coord"] = { 55.7, 60.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(24742, {	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
 					["coord"] = { 55.3, 62.4, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(974, {	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
@@ -705,7 +705,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38274,	-- Garl Stormclaw
 					["sourceQuest"] = 24686,	-- Carried on the Waves
 					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(13903, {	-- Gorishi Grub
 					["providers"] = {
@@ -764,13 +764,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38276,	-- Tara
 					["sourceQuest"] = 24737,	-- Super Sticky
 					["coord"] = { 43.1, 40.9, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53592, {	-- Tarred Robe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53593, {	-- Sticky Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -778,28 +778,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38276,	-- Tara
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["coord"] = { 43.2, 40.8, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24702, {	-- Here Lies Dadanga
 					["provider"] = { "o", 202135 },	-- Dadanga's Grave
 					["coord"] = { 45.5, 7.8, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {{ "i", 11315, 10 }},	-- Bloodpetal Sprout
 					["repeatable"] = true,
 				}),
 				q(24697, {	-- How to Make Meat Fresh Again
 					["qg"] = 38270,	-- Nolen Tacker
 					["coord"] = { 55.0, 60.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53563, {	-- Stegodon Tusk Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53564, {	-- Osteoderm Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53565, {
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156996, {	-- Tailspike Pike
 							["timeline"] = { "added 7.3.5.25716" },
@@ -866,7 +866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24865, {	-- Is This Stuff Still Good?
 					["provider"] = { "o", 161526 },	-- Crate of Foodstuffs
 					["coord"] = { 68.5, 36.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(3844, {	-- It's a Secret to Everybody (1/3)
 					["provider"] = { "o", 161505 },	-- A Wrecked Raft
@@ -987,7 +987,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24794,	-- Speak with Spraggle
 					},
 					["coord"] = { 54.9, 62.6, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4492, {	-- Lost!
 					["providers"] = {
@@ -1016,16 +1016,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38277,	-- Doreen
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["coord"] = { 43.2, 40.9, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53580, {	-- Doreen's Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53581, {	-- Abandoned Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53582, {	-- Discarded Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1054,7 +1054,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24691,	-- Peculiar Delicacies
 					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
 					["description"] = "After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4141, {	-- Muigin and Larion
 					["qg"] = 9119,	-- Muigin
@@ -1078,7 +1078,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10977,	-- Quixxil
 					["sourceQuest"] = 24690,	-- Blazerunner
 					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(13904, {	-- Poached, Scrambled, Or Raw?
 					["providers"] = {
@@ -1129,7 +1129,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 24714,	-- Chasing A-Me 01
 					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(45051, {	-- Reverse Blacksmithing
 					["qg"] = 115923,	-- Ko'Zan
@@ -1142,13 +1142,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9272,	-- Spark Nilminer
 					["sourceQuest"] = 24698,	-- Adventures in Archaeology
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53585, {	-- Archaeologist's Utility Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53586, {	-- Excavator's Quarry Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1239,16 +1239,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 24715,	-- Repairing A-Me 01
 					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53571, {	-- Karna's Poncho
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53572, {	-- Remtravel Thinking Cap
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53573, {	-- Artificial Gorilla Chest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1256,16 +1256,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9998,	-- Shizzle
 					["coord"] = { 43.4, 41.3, UNGORO_CRATER },
 					["description"] = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53589, {	-- Shizzle's Nozzle Cleaner
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53590, {	-- Shizzle's Muzzle Cover
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53591, {	-- Shizzle's Drizzle Stopper
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1307,20 +1307,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24742,	-- Finding the Source
 					["coord"] = { 55.3, 62.4, UNGORO_CRATER },
 					["description"] = "This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(24737, {	-- Super Sticky
 					["qg"] = 38276,	-- Tara
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["coord"] = { 43.2, 40.8, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24717, {	-- The Apes of Un'Goro
 					["qg"] = 38275,	-- Gremix
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 					["coord"] = { 43.2, 41.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4289, {	-- The Apes of Un'Goro
 					["qg"] = 9619,	-- Torwa Pathfinder
@@ -1346,13 +1346,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 24732,	-- The Scent of Lar'korwi
 					["coord"] = { 71.2, 76.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53587, {	-- Plainstalker Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53588, {	-- Outrider Chainmail
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1390,16 +1390,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 24706,	-- The Spirits of Golakka Hot Springs
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53597, {	-- Toy Windmill
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53598, {	-- Maximillian's Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53599, {	-- Sword of Northshire
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1407,7 +1407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38263,	-- Ithis Moonwarden
 					["sourceQuest"] = 24855,	-- Aberrant Flora
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4287, {	-- The Eastern Pylon
 					["qg"] = 9117,	-- J.D. Collie
@@ -1429,12 +1429,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 24703,	-- An Important Lesson
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24731, {	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.2, 76.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4290, {	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
@@ -1455,16 +1455,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9271,	-- Hol'anyee Marshal
 					["sourceQuest"] = 24690,	-- Blazerunner
 					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53577, {	-- Bud-Nipping Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53578, {	-- Colossal Treads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53579, {	-- Silithid Scale Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1472,20 +1472,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9272,	-- Spark Nilminer
 					["sourceQuest"] = 24730,	-- Roll the Bones
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24718, {	-- The Mighty U'cha
 					["qg"] = 38275,	-- Gremix <Treasure Hunter>
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 					["description"] = "This quest should pop up when you enter the Fungal Rock cave during The Apes of Un'Goro.",
 					["coord"] = { 43.2, 41.6, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53583, {	-- Beast Clobberer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53584, {	-- Beastkiller
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156995, {	-- Beastflayer
 							["timeline"] = { "added 7.3.5.25716" },
@@ -1524,7 +1524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38275,	-- Gremix
 					["sourceQuest"] = 24717,	-- The Apes of Un'Goro
 					["coord"] = { 43.2, 41.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4285, {	-- The Northern Pylon
 					["qg"] = 9117,	-- J.D. Collie
@@ -1543,7 +1543,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 24731,	-- The Fare of Lar'korwi
 					["coord"] = { 71.2, 76.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4291, {	-- The Scent of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
@@ -1567,7 +1567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["coord"] = { 53.8, 62.5, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24706, {	-- The Spirits of Golakka Hot Springs
 					["qgs"] = {
@@ -1578,7 +1578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24705,	-- Town Dwellers Were Made to be Saved
 						24704,	-- The Evil Dragons of Un'Goro Crater
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(3909, {	-- The Videre Elixir
 					["qg"] = 9298,	-- Donova Snowden
@@ -1597,7 +1597,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9272,	-- Spark Nilminer
 					["sourceQuest"] = 24709,	-- A Tale of Two Shovels
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4288, {	-- The Western Pylon
 					["qg"] = 9117,	-- J.D. Collie
@@ -1689,7 +1689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 24703,	-- An Important Lesson
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24911, {	-- Tropical Paradise Beckons
 					["providers"] = {
@@ -1700,7 +1700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 33.2, 76.8, TANARIS },
 						{ 40.2, 77.0, TANARIS },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(13887, {	-- Venomhide Eggs
@@ -1728,7 +1728,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24911,	-- Tropical Paradise Beckons
 					},
 					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4502, {	-- Volcanic Activity
 					["qg"] = 8496,	-- Liv Rizzlefix
@@ -1888,7 +1888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
 					["coord"] = { 43.4, 41.6, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(12707),	-- Plans: Runic Plate Boots (RECIPE!)
 						i(12714),	-- Plans: Runic Plate Helm (RECIPE!)

@@ -193,7 +193,7 @@ root("Achievements", {
 				4865,	-- Explore Uldum
 				4825,	-- Explore Vashj'ir
 			}},
-			["timeline"] = { "added 4.0.3" },
+			["timeline"] = { ADDED_4_0_3 },
 		})),
 		applyclassicphase(WOD_PHASE_ONE, ach(8935, {	-- Draenor Explorer [7.0.3] / Explore Draenor
 			-- Meta Achievement
@@ -1008,7 +1008,7 @@ root("Achievements", {
 			["rank"] = 5,
 		}),
 		ach(4924, {	-- Professional Illustrious Grand Master / Professional Cataclysmic Master [BFA]
-			["timeline"] = { "added 4.0.3" },
+			["timeline"] = { ADDED_4_0_3 },
 			["rank"] = 6,
 		}),
 	}),

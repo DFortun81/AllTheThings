@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(MOUNT_HYJAL, {
 		["lore"] = "Mount Hyjal is the zone most players quest in when starting Cataclysm zones. Between Ragnaros attacking Hyjal with the help of the Twilight Cultists and Malfurion Stormrage back from the Emerald Dream, this zone is filled with familiar faces and epic quests from the start. The scenery alternates between lush forests and scorched earth, as the player attempts to heal the land and regrow the forests.",
 		["icon"] = 409547,	-- "Interface\\Icons\\Achievement_zone_mount-hyjal",	-- NOTE: Icon path didn't work. Check again in Cata Classic.
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		["maps"] = {
 			738,	-- Firelands
 			760,	-- Malorne's Nightmare
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27721,	-- Warchief's Command: Mount Hyjal!
 					},
 					["coord"] = { 45.4, 44.6, MOONGLADE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(27874, {	-- Aviana's Legacy

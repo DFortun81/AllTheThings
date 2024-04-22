@@ -41,7 +41,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 			["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
 			["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-			["timeline"] = { "added 4.0.3.13277" },
+			["timeline"] = { ADDED_4_0_3 },
 			["repeatable"] = true,
 			["lvl"] = lvlsquish(40, 40, 15),
 			["groups"] = {
@@ -94,7 +94,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27140, {	-- Alexi's Gambit
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Vectus slain
@@ -175,7 +175,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 		q(27143, {	-- Barov Family Fortune [CATA]
 			["qg"] = 45109,	-- Weldon Barov <House of Barov>
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 The Deed to Brill
@@ -207,7 +207,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
 				i(65923, {	-- Barov Servant Caller
-					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 				}),
 			},
 		}),
@@ -273,7 +273,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27146, {	-- Doctor Theolen Krastinov, the Butcher [CATA]
 			["qg"] = 45107,	-- Eva Sarkhoff
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Doctor Theolen Krastinov slain
@@ -341,7 +341,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27147, {	-- Kirtonos the Herald [CATA]
 			["qg"] = 45107,	-- Eva Sarkhoff
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Kirtonos the Herald slain
@@ -404,7 +404,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(7667, {	-- Material Assistance
 			["qg"] = 13417,	-- Sagorne Creststrider
 			["coord"] = { 39.2, 48.4, ORGRIMMAR },
-			["timeline"] = { "added 1.4.0", "removed 4.0.3" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.3" },
 			["cost"] = {
 				{ "i", 12800, 1 },	-- Azerothian Diamond
 				{ "i", 18335, 1 },	-- Pristine Black Diamond
@@ -482,7 +482,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27145, {	-- Plagued Hatchlings...For Now
 			["qg"] = 45109,	-- Weldon Barov <House of Barov>
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/10 Plagued Hatchling slain
@@ -511,23 +511,23 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27148, {	-- School's Out Forever
 			["qg"] = 45108,	-- Lucien Sarkhoff
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Darkmaster Gandling slain
 					["provider"] = { "n", 1853 },	-- Darkmaster Gandling
 				}),
 				i(65974, {	-- Discipline Rod
-					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 				}),
 				i(65925, {	-- Lucien's Boots
-					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 				}),
 				i(65950, {	-- Shackles of Punishment
-					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 				}),
 				i(65995, {	-- Signet of the Darkmaster
-					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 				}),
 			},
 		}),
@@ -726,7 +726,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27142, {	-- The Lich, Ras Frostwhisper [CATA]
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Ras Frostwhisper slain
@@ -1222,7 +1222,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 			["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
 			["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-			["timeline"] = { "added 4.0.3.13277" },
+			["timeline"] = { ADDED_4_0_3 },
 			["repeatable"] = true,
 			["lvl"] = lvlsquish(40, 40, 15),
 			["groups"] = {

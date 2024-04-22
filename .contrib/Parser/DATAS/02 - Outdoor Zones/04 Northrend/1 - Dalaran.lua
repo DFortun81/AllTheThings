@@ -935,7 +935,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.0.3.13277", "removed 4.2.0.14333" },
+								["timeline"] = { ADDED_4_0_3, "removed 4.2.0.14333" },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33936, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -977,7 +977,7 @@ root(ROOTS.Zones, {
 								-- #elseif AFTER CATA
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Weapons...]
 								-- #endif
-								["timeline"] = { "added 4.0.3.13277" },
+								["timeline"] = { ADDED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(34095, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
 								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
@@ -1064,7 +1064,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR },{"merge"},},	-- Bloodthirsty Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.0.3.13277", "removed 4.2.0.14333" },
+								["timeline"] = { ADDED_4_0_3, "removed 4.2.0.14333" },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
@@ -3741,7 +3741,7 @@ root(ROOTS.Zones, {
 							i(42360),	-- Ebon Filigreed Doublet
 							i(42369),	-- Ebon Filigreed Shirt
 							i(53852, {	-- Embroidered Shirt
-								["timeline"] = { "added 4.0.3.13287" },
+								["timeline"] = { ADDED_4_0_3 },
 								["cost"] = 10000000,	-- 1,000g
 							}),
 							i(42363),	-- Golden Filigreed Doublet

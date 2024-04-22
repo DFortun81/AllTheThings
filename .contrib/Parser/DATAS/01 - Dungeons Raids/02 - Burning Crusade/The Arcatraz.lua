@@ -340,7 +340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								-- #endif
 							}),
 							ach(5081, {	-- Heroic: The Arcatraz Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							objective(1, {	-- Millhouse Manastorm Rescued
 								["provider"] = { "n", 20977 },	-- Millhouse Manastorm

@@ -1471,7 +1471,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(62048),	-- Darkmoon Card: Earthquake
@@ -1529,7 +1529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(62049),	-- Darkmoon Card: Hurricane
@@ -1722,7 +1722,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(62050),	-- Darkmoon Card: Tsunami
@@ -1758,7 +1758,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["repeatable"] = true,
 				["lvl"] = 85,
 				["groups"] = {
@@ -4307,7 +4307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(62046, {	-- Earthquake Deck
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["cost"] = {
 					{ "i", 61996, 1 },	-- Ace of Stones
 					{ "i", 61997, 1 },	-- Two of Stones
@@ -4345,7 +4345,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(62045, {	-- Hurricane Deck
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["cost"] = {
 					{ "i", 62004, 1 },	-- Ace of the Winds
 					{ "i", 62005, 1 },	-- Two of the Winds
@@ -4488,7 +4488,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(62044, {	-- Tsunami Deck
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["cost"] = {
 					{ "i", 62012, 1 },	-- Ace of Waves
 					{ "i", 62013, 1 },	-- Two of Waves
@@ -4514,7 +4514,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(62021, {	-- Volcanic Deck
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 				["cost"] = {
 					{ "i", 61988, 1 },	-- Ace of Embers
 					{ "i", 61989, 1 },	-- Two of Embers

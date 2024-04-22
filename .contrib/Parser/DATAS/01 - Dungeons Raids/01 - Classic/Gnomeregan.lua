@@ -520,7 +520,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26944, {	-- Exploring Gnomeregan
 					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.3, 66.2, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["altQuests"] = { 26943 },	-- Home Sweet Gnome
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -605,7 +605,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26943, {	-- Home Sweet Gnome
 					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -767,7 +767,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						26943,	-- Home Sweet Gnome
 						26944,	-- Exploring Gnomeregan
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
@@ -782,7 +782,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 60680 },	-- S.A.F.E. "Parachute"
 					},
 					["sourceQuest"] = 26939,	-- The G-Team (1/3) [Alliance]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
@@ -794,7 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26942, {	-- The G-Team (3/3) [Alliance]
 					["qg"] = 44561,	-- Face <S.A.F.E.>
 					["sourceQuest"] = 26941,	-- The G-Team (2/3) [Alliance]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
@@ -1053,7 +1053,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5044, {	-- Gnomeregan Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(9459),	-- Thermaplugg's Left Arm
 					i(9458),	-- Thermaplugg's Central Core

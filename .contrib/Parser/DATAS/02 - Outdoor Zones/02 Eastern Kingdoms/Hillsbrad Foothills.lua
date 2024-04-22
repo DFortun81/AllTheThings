@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4895, {	-- Hillsbrad Foothills Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(669, {	-- Eastpoint Tower, Hillsbrad
 					["cr"] = 47661,	-- Darren Longfellow <Bat Handler>
 					["coord"] = { 59.6, 63.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(667, {	-- Ruins of Southshore, Hillsbrad
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(670, {	-- Strahnbrad, Alterac Mountains
 					["cr"] = 47665,	-- Phillip Harding <Bat Handler>
 					["coord"] = { 58.2, 26.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(13, {	-- Tarren Mill, Hillsbrad
@@ -255,13 +255,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 48080,	-- Warden Stillwater
 						}),
 						i(65675, {	-- Stillwater's Dagger
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65697, {	-- Stillwater's Cloak
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65715, {	-- Stillwater's Signet
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48545,	-- High Warlord Cromush
 					["sourceQuest"] = 28506,	-- March of the Stormpike
 					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Pocket-Nuke Armed at Sofera's Naze
@@ -651,13 +651,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 39, 48, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65721, {	-- Corrahn's Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65703, {	-- Gavin's Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65683, {	-- Sofera's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131699, {	-- Headland Belt
 							["timeline"] = { "added 7.0.3.22248" },
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28096,	-- Welcome to the Machine
 					},
 					["coord"] = { 49.1, 66.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -780,7 +780,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 28506,	-- March of the Stormpike
 					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 SI:7 Agent captured
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28604, {	-- Deception and Trickery
 					["qg"] = 49035,	-- Lilith
 					["sourceQuest"] = 28566,	-- Decimation
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/30 Stormpike Trainee poisoned
@@ -932,16 +932,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(65729, {	-- Band of Premeditated Murder
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65722, {	-- Lilith's Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65704, {	-- Vest of the Phantom
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65684, {	-- Poisoned Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131700, {	-- Phantom Chain Tunic
 							["timeline"] = { "added 7.0.3.22248" },
@@ -955,7 +955,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 28538,	-- Cry of the Banshee
 					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain Iceheart slain
@@ -1053,7 +1053,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28603,	-- Infiltration
 					},
 					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Stormpike Engineer slain
@@ -1342,7 +1342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49201,	-- Nils Beerot
 					["sourceQuest"] = 28620,	-- Eastpoint Tower
 					["coord"] = { 60.0, 63.6, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Rampaging Owlbeast slain
@@ -1482,13 +1482,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 47204,	-- Infested Bear
 						}),
 						i(65710, {	-- Creeping Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65692, {	-- Bear Hide Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65670, {	-- Spider-Handler's Mantle
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131689, {	-- Web Encased Tunic
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1604,7 +1604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(65676, {	-- Helcular's Other Rod
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1621,16 +1621,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 48515,	-- Stormpike Battle Master
 						}),
 						i(65728, {	-- Boots of the Hero
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65719, {	-- Spaulders of the Hero
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65701, {	-- Gloves of the Hero
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65680, {	-- Belt of the Hero
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131696, {	-- Pauldrons of the Hero
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1676,13 +1676,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(65709, {	-- Binding Plates
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65690, {	-- Slaver's Leggings
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65668, {	-- Officer's Armbands
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131690, {	-- Web Coated Leggings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1692,7 +1692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28487, {	-- Humbert's Personal Problems
 					["qg"] = 2419,	-- Deathguard Humbert
 					["coord"] = { 57.1, 45.5, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Humbert's Sword
@@ -1766,7 +1766,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 28566,	-- Decimation
 					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Instructor Rufus slain
@@ -1835,13 +1835,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 58, 74.8, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65717, {	-- Kingslayer's Breastplate
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65699, {	-- Mudsnout Spaulders
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65678, {	-- Red Riding Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131695, {	-- Orkus' Riding Spaulders
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1855,16 +1855,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["groups"] = {
 						i(65689, {	-- Brazie's Plant Light
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65666, {	-- Botanist's Britches
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131894, {	-- Botanist's Chain Pants
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(66067, {	-- Singing Sunflower (PET!)
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 61310 },	-- Arcane Remnant
 					["sourceQuest"] = 27483,	-- Practical Vengeance
 					["description"] = "Must complete part of the Silverpine Forest questline for the quest item to drop.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 45728,	-- Arcane Remnant
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1927,14 +1927,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48545,	-- High Warlord Cromush
 					["sourceQuest"] = 28600,	-- Matters of Loyalty
 					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28600, {	-- Matters of Loyalty
 					["qg"] = 13817,	-- Voggah Deathgrip
 					["sourceQuest"] = 28587,	-- Aid of the Frostwolf
 					["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9435, {	-- Missing Crystals
@@ -1960,10 +1960,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65691, {	-- Floppy Shoulderguards
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65669, {	-- Keyton's Sash
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131691, {	-- Keyton's Mail Pauldrons
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2036,16 +2036,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(65727, {	-- Band of the Eastern Strand
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65716, {	-- Daggerspine Ball
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65698, {	-- Daggerspine Dagger
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65677, {	-- Preemptive Staff
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2185,20 +2185,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49240,	-- Captain Ironhill's Ghost
 					["sourceQuest"] = 28635,	-- A Haunting in Hillsbrad
 					["coord"] = { 61.6, 84.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Dun Garok Spirit slain
 							["provider"] = { "n", 49269 },	-- Dun Garok Spirit
 						}),
 						i(65724, {	-- Grasps of the Unyielding
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65706, {	-- Mr. Hider's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65686, {	-- Mantle of Haunting
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131703, {	-- Foreboding Bracers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2321,7 +2321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28489, {	-- Stagwiches
 					["qg"] = 2397,	-- Derak Nightfall
 					["coord"] = { 57.6, 45.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Juicy Stag Meat
@@ -2329,7 +2329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 48184,	-- Hill Stag
 						}),
 						i(65681, {	-- Stagwich Slicer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2360,17 +2360,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28605,	-- Domination
 					},
 					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65723, {	-- Cloak of Treason
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65705, {	-- Pocket-Nuke Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65685, {	-- Broken Fingers of Hillsbrad
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131702, {	-- Nuke Resistant Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2607,7 +2607,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49243,	-- Captain Jekyll
 					["sourceQuest"] = 28644,	-- The Durnholde Challenge: Teracula
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodvenom slain
@@ -2620,7 +2620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49243,	-- Captain Jekyll
 					["sourceQuest"] = 28646,	-- The Durnholde Challenge: Infernus
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 D-1000 slain
@@ -2628,13 +2628,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 70.2, 61.2, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65687, {	-- Axe of the Judgment Day
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65707, {	-- Discontinuer's Hammer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65725, {	-- D-1000 Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2642,7 +2642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49243,	-- Captain Jekyll
 					["sourceQuest"] = 28645,	-- The Durnholde Challenge: Bloodvenom
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Infernus slain
@@ -2655,7 +2655,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49243,	-- Captain Jekyll
 					["sourceQuest"] = 28643,	-- The Durnholde Challenge: Zephyrus
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Teracula slain
@@ -2670,7 +2670,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 64666 },	-- The Durnholde Challenge
 					},
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Zephyrus slain
@@ -2694,7 +2694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28484, {	-- The Heart of the Matter
 					["qg"] = 2437,	-- Keeper Bel'varil
 					["coord"] = { 56.9, 45.7, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Beating Yeti Heart
@@ -2705,13 +2705,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(65720, {	-- Tell-Tale Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65702, {	-- Supple Yeti Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65682, {	-- Bel'varil's Armbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131698, {	-- Bel'varil's Chain Leggings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2849,13 +2849,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 47.8, 72.6, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65718, {	-- Lethality Leggings
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65700, {	-- Chet's Slimy Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65679, {	-- Hinott's Outer Robe
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131694, {	-- Slime Resistant Bracer
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2948,7 +2948,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 52.2, 66.3, SILVERPINE_FOREST },	-- The Forsaken Front
 						{ 45.3, 84.3, SILVERPINE_FOREST },	-- The Battlefront
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2972,13 +2972,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 47442 },	-- Johnny Awesome <Uber Town>
 						}),
 						i(65711, {	-- Portable Lap Desk
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65693, {	-- Quest Giver's Pauldrons
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65671, {	-- Cue Cue Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131688, {	-- Winning Mail Gloves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3017,13 +3017,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 47484,	-- Yetimus the Yeti Lord
 						}),
 						i(65726, {	-- Shield of Uncurbed Appetite
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65708, {	-- Tarren Orb
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65688, {	-- Yetimus Maximus
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

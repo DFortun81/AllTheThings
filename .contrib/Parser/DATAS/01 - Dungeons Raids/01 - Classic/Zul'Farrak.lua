@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(27070, {	-- A Fool's Errand
 					["qg"] = 7407,	-- Chief Engineer Bildewhizzle
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Tiara of the Deep
@@ -34,13 +34,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65978),	-- Electrified Leggings
 						i(65999),	-- Pauldrons of Zul'Farrak
 						i(66010, {	-- Star of the Fool
-							["timeline"] = { "added 4.0.3.13277", "deleted 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, "deleted 5.0.4" },
 						}),
 					},
 				}),
 				q(27076, {	-- Breaking and Entering
 					["qg"] = 44929,	-- Tran'rek
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Nekrum Gutchewer slain
@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27068, {	-- Chief Ukorz Sandscalp
 					["qg"] = 40712,	-- Mazoga's Spirit
 					["sourceQuest"] = 25556,	-- Into Zul'Farrak
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Chief Ukorz Sandscalp slain
@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 7804,	-- Trenton Lighthammer
 					["sourceQuest"] = 25032,	-- Secrets in the Oasis
 					["coord"] = { 42.4, 24.0, TANARIS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(2991, {	-- Nekrum's Medallion
@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27071, {	-- Wrath of the Sandfury
 					["qg"] = 40712,	-- Mazoga's Spirit
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Theka the Martyr slain
@@ -410,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					ach(5048, {	-- Zul'Farrak Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(11086),	-- Jang'thraze the Protector
 					i(9478),	-- Ripsaw

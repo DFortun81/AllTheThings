@@ -6,14 +6,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(SOUTHERN_BARRENS, {
 		["lore"] = "Southern Barrens is a war-torn land after the Shattering. Camp Taurajo has been razed as the Alliance retaliate for the Horde's offensive in Ashenvale, plowing through to link Theramore to their northern bases. Naralex, formerly sleeping in Wailing Caverns, is rescued and has created a wild mutant jungle in this zone as well.",
 		["icon"] = "Interface\\Icons\\achievement_zone_barrens_01",
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(4996, {	-- Explore Southern Barrens
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				ach(4937, {	-- Southern Barrens Quests (A)
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER MOP
 					["groups"] = {
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				ach(4981, {	-- Southern Barrens Quests (H)
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #IF ANYCLASSIC
 					-- #if AFTER MOP
@@ -189,25 +189,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(391, {	-- Desolation Hold, Southern Barrens
 					["cr"] = 39330,	-- Crador <Flight Master>
 					["coord"] = { 41.2, 70.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(389, {	-- Fort Triumph, Southern Barrens
 					["cr"] = 39211,	-- Steve Stevenson <Flight Master>
 					["coord"] = { 49.2, 67.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(387, {	-- Honor's Stand, Southern Barrens
 					["cr"] = 39210,	-- John Johnson <Flight Master>
 					["coord"] = { 38.8, 10.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(390, {	-- Hunter's Hill, Southern Barrens
 					["cr"] = 39340,	-- Unega <Flight Master>
 					["coord"] = { 39.6, 20.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(388, {	-- Northwatch Hold, Southern Barrens
@@ -250,50 +250,50 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39118,	-- General Twinbraid
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24542, {	-- A Curious Bloom
 					["qg"] = 37515,	-- Lane Tallgrass
 					["sourceQuest"] = 24539,	-- When Plants Attack
 					["coord"] = { 44.3, 33.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25022, {	-- A Failure to Communicate
 					["qg"] = 38871,	-- Corporal Teegan
 					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24543, {	-- A Family Divided
 					["qg"] = 37516,	-- Tawane
 					["sourceQuest"] = 24529,	-- Bad to Worse
 					["coord"] = { 44.5, 33.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25084, {	-- A Growing Threat
 					["qg"] = 37835,	-- Dorn Redearth
 					["coord"] = { 45.0, 85.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25045, {	-- A Line in the Dirt (A)
 					["qg"] = 38323,	-- General Hawthorne
 					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53301, {	-- Taurajo Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53291, {	-- Robes of the Bloody Field
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53275, {	-- Hawthorne's Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131399, {	-- Taurajo Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -304,17 +304,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3418,	-- Kirge Sternhorn
 					["sourceQuest"] = 24543,	-- A Family Divided
 					["coord"] = { 41.6, 46.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53254, {	-- Sternhorn's Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53257, {	-- Taurajo Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53251, {	-- Robes of the Bloody Field
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131375, {	-- Taurajo Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -325,13 +325,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3341,	-- Gann Stonespire
 					["sourceQuest"] = 24632,	-- Tauren Vengeance
 					["coord"] = { 49.2, 82.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24570, {	-- Adder Subtraction
 					["qg"] = 38314,	-- Muyoh
 					["coord"] = { 50.3, 40.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5043, {	-- Agamaggan's Agility
 					["qg"] = 3430,	-- Mangletooth
@@ -357,30 +357,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38804,	-- Tolliver Houndstooth
 					["sourceQuest"] = 24941,	-- Langridge Shot
 					["coord"] = { 66.9, 46.7, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24529, {	-- Bad to Worse
 					["qg"] = 11857,	-- Makaba Flathoof
 					["coord"] = { 44.1, 33.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25153, {	-- Bael'dun Rescue
 					["qg"] = 39218,	-- Bael'dun Survivor
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 					["coord"] = { 49.3, 86.9, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53264, {	-- Bael'dun Plate Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53306, {	-- Vest of Bael'dun Keep
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53300, {	-- Survivor's Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131404, {	-- Chestguard of Bael'dun Keep
 							["timeline"] = { "added 7.0.3.22248" },
@@ -391,20 +391,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39084,	-- Mizzy Pistonhammer
 					["sourceQuest"] = 25079,	-- Powder Play
 					["coord"] = { 49.4, 67.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53270, {	-- Far-a-Day Mesh
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53303, {	-- Thunderhead Kid Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53281, {	-- Mizzy's Dungarees
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53285, {	-- Pistonhammer Gun
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131400, {	-- Mizzy's Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -458,12 +458,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24565, {	-- Biological Intervention
 					["qg"] = 37570,	-- Naralex
 					["coord"] = { 50.4, 40.7, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24606, {	-- Blood of the Barrens
 					["provider"] = { "i", 49932 },	-- Carved Boar Idol
 					["coord"] = { 42.2, 83.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = {
 						37560,	-- Razormane Pathfinder
 						37661,	-- Razormane Seer
@@ -482,26 +482,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24863, {	-- Breaking the Siege
 					["qg"] = 38378,	-- Commander Walpole
 					["coord"] = { 29.8, 9.00, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24591, {	-- Changing of the Gar'dul
 					["sourceQuest"] = 24577,	-- Desolation Hold Inspection
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53235, {	-- Gar'dul's Armor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53236, {	-- Gloves of Desolation Hold
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53242, {	-- Breeches of Authority
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53243, {	-- Loose Cannon
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131377, {	-- Gauntlets of Desolation Hold
 							["timeline"] = { "added 7.0.3.22248" },
@@ -512,13 +512,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37837,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24591,	-- Changing of the Gar'dul
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25081, {	-- Claim the Battlescar
 					["qg"] = 39083,	-- Commander Roberts
 					["coord"] = { 49.1, 66.9, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25057, {	-- Clap 'Em In Irons
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25043,	-- Fields of Blood
 					},
 					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24504, {	-- Clear the High Road
@@ -538,13 +538,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						26069,	-- Nura Pathfinder
 					},
 					["coord"] = { 31.4, 13.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24604, {	-- Concern for Mankrik
 					["qg"] = 37812,	-- Mahka
 					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37679,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24572,	-- Taking Back Taurajo
 					["coord"] = { 41.4, 46.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1716, {	-- Devourer of Souls [Stormwind City]
@@ -617,27 +617,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25104, {	-- Digsite Status
 					["qg"] = 39118,	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25044, {	-- Diplomacy By Another Means
 					["qg"] = 38986,	-- Ambassador Gaines
 					["sourceQuest"] = 25022,	-- A Failure to Communicate
 					["coord"] = { 49.9, 49.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53265, {	-- Boarpocalypse Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53292, {	-- Sabersnout's Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131398, {	-- Bristleback Challenge Treads
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(53267, {	-- Bristleback Challenge Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -657,21 +657,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37847,	-- Mankrik
 					["sourceQuest"] = 24604,	-- Concern for Mankrik
 					["coord"] = { 44.5, 88.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24685, {	-- Dwarf Fortress
 					["qg"] = 38140,	-- Weezil Slipshadow
 					["sourceQuest"] = 24684,	-- A Weezil in the Henhouse
 					["coord"] = { 50.7, 86.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24653, {	-- Echoes of Agamaggan
 					["qg"] = 37812,	-- Mahka
 					["sourceQuest"] = 24606,	-- Blood of the Barrens
 					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(907, {	-- Enraged Thunder Lizards
 					["qg"] = 3387,	-- Jorn Skyseer
@@ -693,30 +693,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24513, {	-- Eye for an Eye
 					["qg"] = 37136,	-- Oltarg
 					["coord"] = { 37.1, 13.9, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25284, {	-- Feeding the Fear
 					["qg"] = 37153,	-- Holgom
 					["coord"] = { 37.6, 16.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25108, {	-- Feegly the Exiled
 					["qg"] = 39155,	-- Marley Twinbraid
 					["sourceQuest"] = 25104,	-- Digsite Status
 					["coord"] = { 47.1, 88.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53263, {	-- Bael Modan Monnion
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53271, {	-- Feegly's Shroud
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53280, {	-- Misery's End
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131402, {	-- Bael Modan Amice
 							["timeline"] = { "added 7.0.3.22248" },
@@ -726,29 +726,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26908, {	-- Feeling Thorny
 					["qg"] = 37812,	-- Mahka
 					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(25043, {	-- Fields of Blood
 					["qg"] = 38323,	-- General Hawthorne
 					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25008, {	-- Filthy Animals
 					["qg"] = 38873,	-- Goucho
 					["coord"] = { 56.1, 42.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53276, {	-- Hecklefang Hide Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131395, {	-- Hecklefang Links
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(53293, {	-- Scavenger Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -756,30 +756,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39085,	-- Logan Talonstrike
 					["sourceQuest"] = 25082,	-- Working the Bugs Out
 					["coord"] = { 49.1, 67.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24667, {	-- Firestone Point (H)
 					["qg"] = 37910,	-- Crawgol
 					["sourceQuest"] = 24654,	-- Silithissues
 					["coord"] = { 41.6, 69.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24631, {	-- Flightmare
 					["qg"] = 37909,	-- Tomusa
 					["coord"] = { 41.0, 70.9, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53259, {	-- Tomusa's Sword
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53233, {	-- Earthbound Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53234, {	-- Flightmare Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131382, {	-- Earthbound Trousers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -793,14 +793,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24862,	-- Running the Gauntlet
 					},
 					["coord"] = { 34.9, 9.50, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53273, {	-- Gloves of Honor's Stand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53295, {	-- Singleton Sash
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131407, {	-- Singleton Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -831,21 +831,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39155,	-- Marley Twinbraid
 					["sourceQuest"] = 25104,	-- Digsite Status
 					["coord"] = { 47.1, 88.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25151, {	-- He Needs Ale!
 					["qg"] = 39188,	-- Marley Twinbraid
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 					["coord"] = { 49.2, 86.7, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24620, {	-- Hearts-is-Hearts
 					["qg"] = 37908,	-- Calder Gray
 					["sourceQuest"] = 24619,	-- Parts-is-Parts
 					["coord"] = { 42.6, 70.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1738, {	-- Heartswood
@@ -871,21 +871,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37137,	-- Tunawa Stillwind
 					["sourceQuest"] = 24504,	-- Clear the High Road
 					["coord"] = { 37.4, 16.7, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24573, {	-- Honoring the Dead
 					["qg"] = 37717,	-- Winnoa Pineforest
 					["sourceQuest"] = 24572,	-- Taking Back Taurajo
 					["coord"] = { 41.5, 46.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24634, {	-- Intelligence Warfare
 					["qg"] = 37837,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24591,	-- Changing of the Gar'dul
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(882, {	-- Ishamuhale
@@ -916,14 +916,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24525, {	-- Keeping the Dogs at Bay
 					["qg"] = 11857,	-- Makaba Flathoof
 					["coord"] = { 44.1, 33.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25182, {	-- Kill 'em All!
 					["qg"] = 39118,	-- General Twinbraid
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(883, {	-- Lakota'mani
@@ -937,31 +937,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24941, {	-- Langridge Shot
 					["qg"] = 38620,	-- Thomas Paxton
 					["coord"] = { 67.0, 46.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24571, {	-- Lashvine Seeds
 					["qg"] = 38314,	-- Muyoh
 					["coord"] = { 50.3, 40.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24948, {	-- Lifting the Siege
 					["qg"] = 38620,	-- Thomas Paxton
 					["sourceQuest"] = 24943,	-- Re-Take the Courtyard
 					["coord"] = { 67.0, 46.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25041, {	-- Lion's Pride (A)
 					["qg"] = 39003,	-- Sam Trawley
 					["coord"] = { 49.7, 50.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24552, {	-- Lion's Pride (H)
 					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 41.5, 47.1, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1512, {	-- Love's Gift
@@ -980,7 +980,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37812,	-- Mahka
 					["sourceQuest"] = 24653,	-- Echoes of Agamaggan
 					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(874, {	-- Mahren Skyseer
@@ -995,47 +995,47 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38871,	-- Corporal Teegan
 					["sourceQuest"] = 25036,	-- Teegan's Troubles
 					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25085, {	-- Mangletooth (A)
 					["qg"] = 37835,	-- Dorn Redearth
 					["sourceQuest"] = 25084,	-- A Growing Threat
 					["coord"] = { 45.0, 85.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53269, {	-- Dorn's Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53288, {	-- Quilboar Fur Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53290, {	-- Redearth Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53279, {	-- Mangled Tooth
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(24608, {	-- Mangletooth (H)
 					["qg"] = 37847,	-- Mankrik
 					["sourceQuest"] = 24603,	-- Don't Stop Bereavin'
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53245, {	-- Mankrik's Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53240, {	-- Kraul Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53249, {	-- Razormane Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53244, {	-- Mangled Tooth
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1043,20 +1043,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39003,	-- Sam Trawley
 					["sourceQuest"] = 25041,	-- Lion's Pride (A)
 					["coord"] = { 49.7, 50.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53304, {	-- Trawley's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53299, {	-- Stormsnout Hide Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53286, {	-- Pot Stirrer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53284, {	-- Pewter Slab
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131397, {	-- Stormsnout Stompers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1070,44 +1070,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25106,	-- Hands Off Me Dig!
 					},
 					["coord"] = { 47.1, 88.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25074, {	-- Meet Me at Triumph
 					["qg"] = 38323,	-- General Hawthorne
 					["sourceQuest"] = 25057,	-- Clap 'em In Irons
 					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24551, {	-- Meet the New Boss
 					["qg"] = 3433,	-- Tatternack Steelforge
 					["coord"] = { 41.8, 46.7, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25292, {	-- Next of Kin
 					["qg"] = 39697,	-- Nato Raintree
 					["sourceQuest"] = 24747,	-- Sabotage!
 					["coord"] = { 49.2, 82.1, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(25102, {	-- No Bull
 					["qg"] = 39154,	-- Hurlston Stonesthrow
 					["coord"] = { 43.4, 78.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53298, {	-- Stonesthrow Sword
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53278, {	-- Landquaker Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53277, {	-- Kodo-Repellant Shoulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131401, {	-- Landquaker Trousers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1125,42 +1125,42 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24619, {	-- Parts-is-Parts
 					["qg"] = 37908,	-- Calder Gray
 					["coord"] = { 42.6, 70.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25075, {	-- Pick-a-Part
 					["qg"] = 39084,	-- Mizzy Pistonhammer
 					["coord"] = { 49.4, 67.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25079, {	-- Powder Play
 					["qg"] = 39084,	-- Mizzy Pistonhammer
 					["sourceQuest"] = 25075,	-- Pick-a-Part
 					["coord"] = { 49.4, 67.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24517, {	-- Put the Fear in Them
 					["qg"] = 37154,	-- Kilrok Gorehammer
 					["coord"] = { 39.6, 19.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24514, {	-- Raptor Scraps
 					["qg"] = 37138,	-- Onatay
 					["coord"] = { 39.4, 20.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53241, {  -- Steel-Patched Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53258, {  -- Terrortooth Hide Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53248, {  -- Raptor Scrap Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131371, {  -- Steel-Patched Armbands
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1181,7 +1181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39119,	-- General Twinbraid
 					["sourceQuest"] = 25182,	-- Kill 'em All!
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38619,	-- Admiral Aubrey
 					["sourceQuest"] = 24921,	-- Report to Aubrey
 					["coord"] = { 69.2, 49.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24921, {	-- Report to Aubrey
@@ -1199,7 +1199,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28550,	-- Hero's Call: Southern Barrens!
 					},
 					["coord"] = { 71.0, 50.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1207,24 +1207,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39083,	-- Commander Roberts
 					["sourceQuest"] = 25081,	-- Claim the Battlescar
 					["coord"] = { 49.1, 66.9, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24943, {	-- Re-Take the Courtyard
 					["qg"] = 38620,	-- Thomas Paxton
 					["sourceQuest"] = 24941,	-- Langridge Shot
 					["coord"] = { 67.0, 46.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53283, {	-- Paxton's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53297, {	-- Spoils of the Courtyard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53294, {	-- Seized Rangeroar Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131386, {	-- Seized Rageroar Belt
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1298,24 +1298,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24862, {	-- Running the Gauntlet
 					["qg"] = 38378,	-- Commander Walpole
 					["coord"] = { 29.8, 9.00, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24939, {	-- Run Out the Guns
 					["qg"] = 3454,	-- Cannoneer Smythe
 					["sourceQuest"] = 24938,	-- The Guns of Northwatch
 					["coord"] = { 68.6, 44.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53282, {	-- Northwatch Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53268, {	-- Carronader's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53296, {	-- Smythe's Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131385, {	-- Carronader's Waistband
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1326,27 +1326,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38140,	-- Weezil Slipshadow
 					["sourceQuest"] = 24685,	-- Dwarf Fortress
 					["coord"] = { 50.7, 86.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53255, {	-- Stonespire Shoulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53253, {	-- Spearhead Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131384, {	-- Spearhead Faceguard
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(53225, {	-- Airburst Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(25002, {	-- Scavenged
 					["qg"] = 38878,	-- Mangled Body
 					["coord"] = { 61.8, 42.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24569, {	-- Siegebreaker
@@ -1356,20 +1356,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24551,	-- Meet the New Boss
 					},
 					["coord"] = { 41.4, 46.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53227, {	-- Bloodhilt Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53237, {	-- Grease-Covered Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53238, {	-- Groady Goblin Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53247, {	-- Pewter Slab
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131376, {	-- Grease-Covered Footguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1379,45 +1379,45 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24515, {	-- Signals in the Sky
 					["qg"] = 37138,	-- Onatay
 					["coord"] = { 39.4, 20.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24956, {	-- Silencing Rageroar
 					["qg"] = 38804,	-- Tolliver Houndstooth
 					["sourceQuest"] = 24944,	-- Back in the Fight
 					["coord"] = { 66.9, 46.7, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53266, {	-- Boots of the Fallen Brother
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53289, {	-- Rageroar Trophy
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(24654, {	-- Silithissues
 					["qg"] = 37910,	-- Crawgol
 					["coord"] = { 41.6, 69.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24621, {	-- Smarts-is-Smarts
 					["qg"] = 37908,	-- Calder Gray
 					["sourceQuest"] = 24620,	-- Hearts-is-Hearts
 					["coord"] = { 42.6, 70.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53229, {	-- Brain-Splattered Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53260, {	-- Vest of Abomification
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53246, {	-- Neurosurgeon's Tool
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131381, {	-- Chestguard of Abomification
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1431,23 +1431,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24571,	-- Lashvine Seeds
 					},
 					["coord"] = { 50.3, 40.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24534, {	-- Speaking Their Language
 					["qg"] = 11857,	-- Makaba Flathoof
 					["sourceQuest"] = 24529,	-- Bad to Worse
 					["coord"] = { 44.2, 33.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53252, {	-- Sabersnout's Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53228, {	-- Boarpocalypse Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53230, {	-- Bristleback Challenge Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131374, {	-- Bristleback Challenge Treads
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1468,14 +1468,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37154,	-- Kilrok Gorehammer
 					["sourceQuest"] = 24518,	-- The Low Road
 					["coord"] = { 39.6, 19.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53307, {  -- Surveying Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53308, {  -- Zykes' Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131372, {  -- Surveying Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1485,28 +1485,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25191, {	-- Survey the Destruction
 					["qg"] = 38383,	-- Nibb Spindlegear
 					["coord"] = { 39.0, 11.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24572, {	-- Taking Back Taurajo
 					["qg"] = 37679,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24569,	-- Siegebreaker
 					["coord"] = { 41.4, 46.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24632, {	-- Tauren Vengeance
 					["qg"] = 37909,	-- Tomusa
 					["sourceQuest"] = 24631,	-- Flightmare
 					["coord"] = { 41.1, 70.9, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25000, {	-- Teegan's People
 					["qg"] = 38621,	-- Jeffrey Long
 					["coord"] = { 64.8, 46.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25036, {	-- Teegan's Troubles
@@ -1516,7 +1516,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24956,	-- Silencing Rageroar
 					},
 					["coord"] = { 67.0, 46.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1525,7 +1525,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25191,	-- Survey the Destruction
 					["coord"] = { 68.6, 49.0, SOUTHERN_BARRENS },
 					["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1533,24 +1533,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39188,	-- Marley Twinbraid
 					["sourceQuest"] = 25151,	-- He Needs Ale!
 					["coord"] = { 49.2, 86.7, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24637, {	-- The Butcher of Taurajo
 					["qg"] = 37837,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24634,	-- Intelligence Warfare
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53226, {  -- Battlescar Monnion
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53232, {  -- Cloak of Harvested Fear
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53256, {  -- Taurajo Butcher's Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131383, {  -- Battlescar Amice
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1561,17 +1561,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 202598 },	-- Big Nasty Plunger
 					["sourceQuest"] = 25183,	-- ...And Bury the Rest
 					["coord"] = { 40.3, 77.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53305, {	-- Twinbraid Shoulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53274, {	-- Goblin Miner's Helmet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53272, {	-- Frazzlecraz Necklace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131406, {	-- Goblin Miner's Hardhat
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1581,13 +1581,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24824, {	-- The Disturbed Earth
 					["qg"] = 37834,	-- Tauna Skychaser
 					["coord"] = { 45.0, 85.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24938, {	-- The Guns of Northwatch
 					["qg"] = 38619,	-- Admiral Aubrey
 					["sourceQuest"] = 24934,	-- Repel Boarders!
 					["coord"] = { 69.2, 49.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(897, {	-- The Harvester
@@ -1599,23 +1599,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24518, {	-- The Low Road
 					["provider"] = { "i", 49776 },	-- Roadway Plans
 					["crs"] = { 37216 },	-- Honor's Stand Officer
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24601, {	-- The Nightmare Scar
 					["qg"] = 37570,	-- Naralex
 					["sourceQuest"] = 24574,	-- To Harvest Chaos
 					["coord"] = { 50.4, 40.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53161, {	-- Wailing Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53160, {	-- Vest of the Nightmare Rift
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53159, {	-- Naralex's Slippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131379, {	-- Tunic of the Nightmare Rift
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1641,7 +1641,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25043,	-- Fields of Blood
 					},
 					["coord"] = { 49.9, 49.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(857, {	-- The Tear of the Moons
@@ -1664,13 +1664,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 37570,	-- Naralex
 					["sourceQuest"] = 24565,	-- Biological Intervention
 					["coord"] = { 50.4, 40.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25034, {	-- To the Front!
 					["qg"] = 38871,	-- Corporal Teegan
 					["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
 					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(878, {	-- Tribes at War
@@ -1698,30 +1698,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25015,	-- Make 'Em Squeal
 					},
 					["coord"] = { 56.2, 42.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25174, {	-- Twinbraid Needs to Know
 					["qg"] = 38152,	-- Weezil Slipshadow
 					["sourceQuest"] = 25163,	-- Who Did This?
 					["coord"] = { 50.2, 87.1, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24512, {	-- Warriors' Redemption
 					["qg"] = 37153,	-- Holgom
 					["coord"] = { 37.6, 16.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(53239, {	-- Holgom's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53231, {	-- Climbing Straps
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53250, {	-- Ring of Reclaimed Honor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131370, {  -- Holgom's Waistcord
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1762,21 +1762,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24539, {	-- When Plants Attack
 					["qg"] = 37515,	-- Lane Tallgrass
 					["coord"] = { 44.4, 33.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25163, {	-- Who Did This?
 					["qg"] = 39220,	-- Wounded Bael'dun Officer
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 					["coord"] = { 49.6, 87.1, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24807, {	-- Winnoa Pineforest
 					["qg"] = 37570,	-- Naralex
 					["sourceQuest"] = 24601,	-- The Nightmare Scar
 					["coord"] = { 48.1, 38.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5044, {	-- Wisdom of Agamaggan
@@ -1792,7 +1792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25082, {	-- Working the Bugs Out
 					["qg"] = 39085,	-- Logan Talonstrike
 					["coord"] = { 49.1, 67.8, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25027, {	-- You Flicked a Fine Vine to Leaf Me
@@ -1802,14 +1802,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25015,	-- Make 'Em Squeal
 					},
 					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(53302, {	-- Three-Tooth Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(53287, {	-- Quilboar Crone Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131396, {	-- Three-Tooth Armguards
 							["timeline"] = { "added 7.0.3.22248" },

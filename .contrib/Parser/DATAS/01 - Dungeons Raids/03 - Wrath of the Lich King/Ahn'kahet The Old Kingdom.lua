@@ -413,7 +413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 29311,	-- Herald Volazj
 						["groups"] = {
 							ach(5098, {	-- Heroic: Ahn'kahet: The Old Kingdom Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(1862),	-- Volazj's Quick Demise
 							i(41790),	-- Design: Precise Scarlet Ruby

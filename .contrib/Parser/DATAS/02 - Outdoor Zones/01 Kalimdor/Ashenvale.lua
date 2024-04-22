@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4925, {	-- Ashenvale Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				ach(4976, {	-- Ashenvale Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(338, {	-- Blackfathom Camp, Ashenvale
 					["cr"] = 34374,	-- Solais <Flight Master>
 					["coord"] = { 18.2, 20.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(167, {	-- Forest Song, Ashenvale
@@ -255,13 +255,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(350, {	-- Hellscream's Watch, Ashenvale
 					["cr"] = 34429,	-- Thraka <Wind Rider Master>
 					["coord"] = { 38.07, 42.21, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(356, {	-- Silverwind Refuge, Ashenvale
 					["cr"] = 34943,	-- Wind Tamer Shoshok <Flight Master>
 					["coord"] = { 49.2, 65.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(61, {	-- Splintertree Post, Ashenvale
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(351, {	-- Stardust Spire, Ashenvale
 					["cr"] = 34378,	-- Myre Moonglide <Flight Master>
 					["coord"] = { 35.0, 72.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(58, {	-- Zoram'gar Outpost, Ashenvale
@@ -377,7 +377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26453, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
 					["coord"] = { 35.0, 49.9, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -392,21 +392,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3897,	-- Krolg
 					["sourceQuest"] = 13989,	-- King of the Foulweald
 					["coord"] = { 50.8, 75.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13874, {	-- A Not-So-Charmed Life
 					["qg"] = 34239,	-- Hephaestus Pilgrim
 					["sourceQuest"] = 13872,	-- Worgen Wisdom
 					["coord"] = { 36.4, 49.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26454, {	-- A Shameful Waste
 					["qg"] = 17291,	-- Architect Nemos
 					["sourceQuest"] = 26453,	-- A Helping Hand
 					["coord"] = { 86.8, 44.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9517, {	-- A Shameful Waste
@@ -434,7 +434,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11806,	-- Sentinel Onaeya
 					["sourceQuest"] = 26473,	-- Bathran's Hair
 					["coord"] = { 26.6, 36.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -453,7 +453,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 26475,	-- Elune's Tear
 					["coord"] = { 37.3, 51.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -472,14 +472,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26457, {	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper
 					["coord"] = { 84, 62.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56642, {	-- Starwhisper Monnions
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56643, {	-- Woodguard Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131532, {	-- Starwhisper Spaulders
 							["timeline"] = { "added 7.0.3.22248" },
@@ -512,24 +512,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33726,	-- Splintertree Demolisher
 					["sourceQuest"] = 13798,	-- Rain of Destruction
 					["coord"] = { 73.3, 62.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13924, {	-- All's Well
 					["qg"] = 34358,	-- Avrus the Redeemed
 					["sourceQuest"] = 13922,	-- In the Hands of the Perverse
 					["coord"] = { 59.0, 59.9, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56676, {	-- Whitemoon Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56677, {	-- Belt of Healing Charms
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56678, {	-- Boots of the Deliverer
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131320, {	-- Whitemoon Mender Cord
 							["timeline"] = { "added 7.0.3.22248" },
@@ -565,7 +565,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13865,	-- Wet Work
 					},
 					["coord"] = { 82.5, 53.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6503, {	-- Ashenvale Outrunners
@@ -589,33 +589,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33445,	-- Sentinel Avana
 					["sourceQuest"] = 13642,	-- Bathed in Light
 					["coord"] = { 26.8, 35.9, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13849, {	-- Astranaar's Burning!
 					["qg"] = 4079,	-- Sentinel Thenysil
 					["coord"] = { 34.8, 49.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13848, {	-- Bad News Bear-er
 					["qg"] = 33837,	-- Kadrak
 					["sourceQuest"] = 13805,	-- Pierce Their Heart!
 					["coord"] = { 73.6, 62.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13642, {	-- Bathed in Light
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["sourceQuest"] = 13623,	-- Delivery for Orendil
 					["coord"] = { 26.8, 36.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26473, {	-- Bathran's Hair
 					["qg"] = 33204,	-- Evenar Stillwhisper
 					["coord"] = { 26.7, 21.9, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1010, {	-- Bathran's Hair
@@ -638,17 +638,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34122,	-- Commander Grimfang
 					["sourceQuest"] = 13890,	-- Keep the Fires Burning
 					["coord"] = { 12.1, 33.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56721, {	-- Meat Packer Ribbon
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56722, {	-- Je'neu's Hunting Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56723, {	-- Deerstalker Leggings
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131319, {	-- Je'neu's Ringmail Jerkin
 							["timeline"] = { "added 7.0.3.22248" },
@@ -684,17 +684,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13944,	-- Small Hands, Short Fuse
 					},
 					["coord"] = { 38.1, 43.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56661, {	-- Preemptive Striker
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56662, {	-- Staff of Fiery Fate
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56663, {	-- Leggings of Hellscream's Watch
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131323, {	-- Tweedle's Blastproof Legguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -705,24 +705,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33837,	-- Kadrak
 					["sourceQuest"] = 13712,	-- To The Rescue!
 					["coord"] = { 73.6, 62.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13943, {	-- Breathing Room
 					["qg"] = 34359,	-- Captain Goggath
 					["sourceQuest"] = 13936,	-- Tweedle's Dumb
 					["coord"] = { 38.1, 43.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56667, {	-- Cloak of Readiness
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56668, {	-- Bracers of Humility
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56669, {	-- Groundwork Shield
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131322, {	-- Preparation Wristguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -733,14 +733,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34596,	-- Foreman Jinx
 					["sourceQuest"] = 13977,	-- Mass Production
 					["coord"] = { 46.1, 63.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13965, {	-- Check in on the Edunes
 					["qg"] = 3996,	-- Faldreas Goeth'Shael
 					["sourceQuest"] = 26478,	-- Playing Possum
 					["coord"] = { 35.8, 49.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -765,26 +765,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34599,	-- Bolyun
 					["sourceQuest"] = 13982,	-- In a Bind
 					["coord"] = { 17.9, 60.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13766, {	-- Closure is Only Natural
 					["qg"] = 17310,	-- Gnarl
 					["sourceQuest"] = 26446,	-- Reclaiming Felfire Hill
 					["coord"] = { 83.7, 63.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13958, {	-- Condition Critical!
 					["qg"] = 34359,	-- Captain Goggath
 					["sourceQuest"] = 13947,	-- Blastranaar!
 					["coord"] = { 38.0, 43.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13868, {	-- Corrupting Influence?
 					["provider"] = { "i", 46128 },	-- Troll Charm
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = {
 						3925,	-- Thistlefur Avenger
 						3924,	-- Thistlefur Shaman
@@ -798,17 +798,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33421,	-- Gorka
 					["sourceQuest"] = 13651,	-- Needs a Little Lubrication
 					["coord"] = { 72.9, 80.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56639, {	-- Mourner's Stole
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56640, {	-- Leggings of Loss
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56641, {	-- Burden of Sacrifice
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131299, {	-- Griefbearer Leggings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13867, {	-- Culling the Furbolg Threat
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1054, {	-- Culling the Threat
@@ -842,38 +842,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 26479,	-- Return to Raene
 					["coord"] = { 36.6, 49.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13801, {	-- Dead Elves Walking
 					["qg"] = 12724,	-- Pixel
 					["sourceQuest"] = 13803,	-- Blood of the Weak
 					["coord"] = { 73.8, 62.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13901, {	-- Deep Despair
 					["qg"] = 12719,	-- Marukai
 					["sourceQuest"] = 6442,	-- Naga at the Zoram Strand
 					["coord"] = { 12.6, 35.3, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13935, {	-- Defend the Tree!
 					["qg"] = 34377,	-- Halannia
 					["sourceQuest"] = 13928,	-- Recover the Fallen
 					["coord"] = { 62.2, 51.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56670, {	-- Raynewood Shield
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56671, {	-- Shadumbra's Wrath
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56672, {	-- Frostshadow Crossbow
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131321, {	-- Shadumbra's Might
 							["timeline"] = { "added 7.0.3.22248" },
@@ -884,20 +884,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33204,	-- Evenar Stillwhisper
 					["sourceQuest"] = 26473,	-- Bathran's Hair
 					["coord"] = { 26.7, 22.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13806, {	-- Demon Duty
 					["qg"] = 11820,	-- Locke Okarr
 					["sourceQuest"] = 26449,	-- Never Again!
 					["coord"] = { 73.8, 61.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26444, {	-- Destroy the Legion [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar
 					["coord"] = { 84.0, 62.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9516, {	-- Destroy the Legion [Alliance]
@@ -921,7 +921,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26448, {	-- Destroy the Legion [Horde]
 					["qg"] = 17355,	-- Valusha
 					["coord"] = { 73.1, 60.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9534, {	-- Destroy the Legion [Horde]
@@ -946,7 +946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["providers"] = {
 						{ "i", 23777 },	-- Diabolical Plans
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23780),	-- Diabolical Plans (QI!)
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 23798 },	-- Diabolical Plans
 					},
 					["coord"] = { 81.5, 69.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9535, {	-- Diabolical Plans [Horde]
@@ -983,7 +983,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33760,	-- Durak
 					["sourceQuest"] = 13751,	-- Tell No One!
 					["coord"] = { 72.2, 57.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25613, {	-- Do Yourself a Favor
@@ -993,7 +993,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25607,	-- Ze Gnomecorder
 					},
 					["coord"] = { 35.3, 71.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13594, {	-- Don't Forget the Horde
@@ -1003,7 +1003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28492,	-- Hero's Call: Ashenvale!
 					},
 					["coord"] = { 26.9, 22.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 26475,	-- Elune's Tear
 					["coord"] = { 36.6, 49.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if BEFORE CATA
@@ -1155,7 +1155,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 26474,	-- Orendil's Cure
 					["coord"] = { 37.3, 51.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1033, {	-- Elune's Tear
@@ -1179,17 +1179,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper
 					["sourceQuest"] = 26457,	-- Agents of Destruction
 					["coord"] = { 83.8, 62.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56646, {	-- Shredder Blade
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56647, {	-- Powder Burn Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56648, {	-- Forestkeeper Legguards
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131301, {	-- Soot-Stained Chainmail Breastplate
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1227,21 +1227,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40895,	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25615,	-- Return to Stardust
 					["coord"] = { 35.4, 71.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13619, {	-- Final Report
 					["qg"] = 33294,	-- Gorat
 					["sourceQuest"] = 13618,	-- Find Gorat!
 					["coord"] = { 64.2, 84.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26463, {	-- Finding Teronis
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["sourceQuest"] = 13623,	-- Delivery For Orendil
 					["coord"] = { 26.8, 36.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1011, {	-- Forsaken Diseases
@@ -1277,30 +1277,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40895,	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 					["coord"] = { 35.4, 71.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13877, {	-- Go With The Flow
 					["qg"] = 34239,	-- Hephaestus Pilgrim
 					["sourceQuest"] = 13874,	-- A Not-So-Charmed Life
 					["coord"] = { 36.4, 49.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13875, {	-- Gurtar's Request
 					["qg"] = 34242,	-- Guardian Gurtar
 					["coord"] = { 89.5, 48.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56655, {	-- Bloodcup Slippers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56656, {	-- Faithful Treads
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56657, {	-- Gloves of Unforgotten Vows
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131309, {	-- Faithful Footguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1311,7 +1311,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
 					["description"] = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
 					["coord"] = { 71.3, 60.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14018, {	-- He Who Would Be Forgiven
@@ -1319,14 +1319,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
 					["description"] = "You can pick this quest up if you abandon the quest by the same name.",
 					["coord"] = { 37.3, 51.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25616, {	-- Hellscream's Legacy
 					["qg"] = 34354,	-- Huntress Jalin
 					["sourceQuest"] = 25615,	-- Return to Stardust
 					["coord"] = { 35.1, 71.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1363,13 +1363,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 52.3, 56.5, ASHENVALE },
 					["sourceQuestNumRequired"] = 1,
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(13982, {	-- In a Bind
 					["qg"] = 3698,	-- Bolyun
 					["sourceQuest"] = 13976,	-- Three Fiends of the Forest
 					["coord"] = { 17.9, 60.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13922, {	-- In the Hands of the Perverse
@@ -1379,14 +1379,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14018,	-- He Who Would Be Forgiven
 					},
 					["coord"] = { 59.0, 59.9, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26472, {	-- Insane Druids
 					["qg"] = 33777,	-- Gaivan Shadewalker
 					["sourceQuest"] = 13792,	-- The Shadewalker
 					["coord"] = { 75.6, 75.3, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5813),	-- Emil's Brand
@@ -1468,17 +1468,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13890, {	-- Keep the Fires Burning
 					["qg"] = 34122,	-- Commander Grimfang
 					["coord"] = { 12.1, 33.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56715, {	-- Oily Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56716, {	-- Alighted Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56717, {	-- Mystlash Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131314, {	-- Darkbreaker Treads
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1489,14 +1489,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3897,	-- Krolg
 					["sourceQuest"] = 26480,	-- Dartol's Rod
 					["coord"] = { 50.8, 75.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56706, {	-- Greenpaw Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56707, {	-- Band of Perserverence
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1532,7 +1532,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13883, {	-- Lousy Pieces of Ship
 					["qg"] = 34303,	-- Dagrun Ragehammer
 					["coord"] = { 11.4, 35.3, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1017, {	-- Mage Summoner
@@ -1559,24 +1559,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33889,	-- Krokk
 					["sourceQuest"] = 13808,	-- Mission Improbable
 					["coord"] = { 82.5, 53.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13640, {	-- Management Material
 					["qg"] = 33421,	-- Gorka
 					["sourceQuest"] = 13628,	-- Got Lumber?
 					["coord"] = { 72.9, 80.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56627, {	-- Labor Camp Frock
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56628, {	-- Manager's Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56629, {	-- Hands of Encouragement
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131297, {	-- Gorka's Brass Shoulderguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1587,14 +1587,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34569,	-- Flooz
 					["sourceQuest"] = 13974,	-- Tweedle's Tiny Package
 					["coord"] = { 49.9, 67.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13808, {	-- Mission Improbable
 					["qg"] = 33837,	-- Kadrak
 					["sourceQuest"] = 13805,	-- Pierce Their Heart!
 					["coord"] = { 73.6, 62.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1611,7 +1611,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13602, {	-- Naga of the Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 18.2, 20.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6442, {	-- Naga at the Zoram Strand
@@ -1643,14 +1643,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33421,	-- Gorka
 					["sourceQuest"] = 13640,	-- Management Material
 					["coord"] = { 72.9, 80.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26445, {	-- Never Again! [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar
 					["sourceQuest"] = 26443,	-- Diabolical Plans [Alliance]
 					["coord"] = { 84.0, 62.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(24119, {	-- Band of Argas
@@ -1697,7 +1697,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17355,	-- Valusha
 					["sourceQuest"] = 26447,	-- Diabolical Plans [Horde]
 					["coord"] = { 73.1, 60.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(24119, {	-- Band of Argas
@@ -1741,14 +1741,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13595, {	-- Of Their Own Design
 					["qg"] = 33182,	-- Bathran
 					["coord"] = { 29.0, 24.3, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26474, {	-- Orendil's Cure
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["sourceQuest"] = 13642,	-- Bathed in Light
 					["coord"] = { 26.8, 36.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1020, {	-- Orendil's Cure
@@ -1766,17 +1766,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33760,	-- Durak
 					["sourceQuest"] = 13803,	-- Blood of the Weak
 					["coord"] = { 72.1, 57.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56727, {	-- Scrupleless Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56728, {	-- Bloodtaint Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56729, {	-- Forest Heart Piercer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131304, {	-- Heart-Corruptor Wristguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1787,17 +1787,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33726,	-- Splintertree Demolisher
 					["sourceQuest"] = 13803,	-- Blood of the Weak
 					["coord"] = { 73.3, 62.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56649, {	-- Folly's Edge
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56650, {	-- Felfire-Tainted Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56651, {	-- Legguards of Abandoned Virtue
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131302, {	-- Felfire-Scorched Chesteguard
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1811,17 +1811,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 26477,	-- Search the Bole
 					["coord"] = { 59.0, 59.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56664, {	-- Shael'dryn's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56665, {	-- Possumfoot Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56666, {	-- Dissembling Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131534, {	-- Possumfoot Treads
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1858,7 +1858,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 52.0, 56.7, ASHENVALE },
 					["sourceQuestNumRequired"] = 1,
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(991, {	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
 					["qg"] = 3691,	-- Raene Wolfrunner
@@ -1891,13 +1891,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(56624, {	-- Falathim-Washed Robes
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56625, {	-- Broadleaf Mantle
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56626, {	-- Maestra's Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1951,13 +1951,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3928,	-- Rotting Slime
 						}),
 						i(56664, {	-- Shael'dryn's Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56665, {	-- Possumfoot Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56666, {	-- Dissembling Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2062,13 +2062,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(56694, {	-- Silverwind Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56695, {	-- Wolfrunner Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56696, {	-- Legacy of Teronis
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2076,33 +2076,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33760,	-- Durak
 					["sourceQuest"] = 13797,	-- Dirty Deeds
 					["coord"] = { 72.2, 57.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56711, {	-- Impish Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56712, {	-- Accursed Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56713, {	-- Durak's Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56714, {	-- Band of Foul Strength
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(13632, {	-- Rear Guard Duty
 					["qg"] = 11219,	-- Liladris Moonriver
 					["coord"] = { 27.2, 35.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26446, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl
 					["coord"] = { 83.7, 63.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9526, {	-- Reclaiming Felfire Hill
@@ -2123,14 +2123,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13928, {	-- Recover the Fallen
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 					["coord"] = { 58.9, 58.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13869, {	-- Recover the Remains
 					["qg"] = 17310,	-- Gnarl
 					["sourceQuest"] = 26454,	-- A Shameful Waste
 					["coord"] = { 83.7, 63.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2154,7 +2154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 					["sourceQuest"] = 13935,	-- Defend the Tree!
 					["coord"] = { 58.9, 58.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9521, {	-- Report from the Northern Front
@@ -2178,20 +2178,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11806,	-- Sentinel Onaeya
 					["sourceQuest"] = 13624,	-- A Squad of Your Own
 					["coord"] = { 26.6, 36.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(45044, {	-- Cloak of Cenarius
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56630, {	-- Delgren's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56631, {	-- Onaeya's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56632, {	-- Feero's Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131296, {	-- Feero's Ringmail Grips
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2202,7 +2202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
 					["sourceQuest"] = 13964,	-- To the Spire
 					["coord"] = { 35.6, 71.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if AFTER CATA
@@ -2231,17 +2231,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4079,	-- Sentinel Thenysil
 					["sourceQuest"] = 13849,	-- Astranaar's Burning!
 					["coord"] = { 34.8, 49.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56673, {	-- Fiery Loop
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56674, {	-- Thenysil's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56675, {	-- Astranaar Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131306, {	-- Glaivethrower Expert's Chestpiece
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2269,14 +2269,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3916,	-- Raene Wolfrunner
 					["sourceQuest"] = 26478,	-- Playing Possum
 					["coord"] = { 59.0, 59.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26466, {	-- Ruuzel
 					["qg"] = 3846,	-- Talen
 					["sourceQuest"] = 26465,	-- The Ancient Statuettes
 					["coord"] = { 18.2, 20.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5812),	-- Robes of Antiquity
@@ -2345,7 +2345,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3901,	-- Illiyana
 					["sourceQuest"] = 26468,	-- The Branch of Cenarius
 					["coord"] = { 87.0, 43.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1032, {	-- Satyr Slaying!
@@ -2384,24 +2384,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 26476,	-- Dryad Delivery
 					["coord"] = { 59.0, 59.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13871, {	-- Security!
 					["qg"] = 17304,	-- Overseer Gorthak
 					["sourceQuest"] = 13870,	-- As Good as it Gets
 					["coord"] = { 90.9, 58.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56718, {	-- Detective Buckler
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56719, {	-- Pilfered Kaldorei Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56720, {	-- Security Crossbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131308, {	-- Gorthak's Tool Belt
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2412,7 +2412,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34395,	-- Tweedle
 					["sourceQuest"] = 13936,	-- Tweedle's Dumb
 					["coord"] = { 37.9, 43.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24, {		-- Shadumbra's Head
@@ -2443,7 +2443,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34233,	-- Guardian Menerin
 					["sourceQuest"] = 13871,	-- Security!
 					["coord"] = { 90.7, 58.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
@@ -2458,7 +2458,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34395,	-- Tweedle
 					["sourceQuest"] = 13942,	-- Set Us Up The Bomb
 					["coord"] = { 37.9, 43.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2489,7 +2489,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34518,	-- Thagg
 					["sourceQuest"] = 13958,	-- Condition Critical!
 					["coord"] = { 59.9, 53.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if BEFORE CATA
@@ -2509,7 +2509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33727,	-- Anchorite Buurq
 					["sourceQuest"] = 26468,	-- The Branch of Cenarius
 					["coord"] = { 86.4, 43.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(976, {	-- Supplies to Auberdine
@@ -2532,23 +2532,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33726,	-- Sprintertree Demolisher
 					["sourceQuest"] = 13730,	-- Playing With Felfire
 					["coord"] = { 73.3, 62.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13644, {	-- That Which has Risen
 					["qg"] = 33443,	-- Keeper Heartwise
 					["coord"] = { 20.1, 38.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56652, {	-- Ablution Slippers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56653, {	-- Somber Treads
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56654, {	-- Heartwise Boon
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131298, {	-- Somber Boots
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2575,7 +2575,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3846,	-- Talen
 					["sourceQuest"] = 13617,	-- West to the Strand
 					["coord"] = { 18.2, 20.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(235, {	-- The Ashenvale Hunt (1/2) [Orgrimmar]
@@ -2626,7 +2626,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3920,	-- Anilia
 					["sourceQuest"] = 26467,	-- Vile Satyr! Dryads in Danger!
 					["coord"] = { 78.3, 44.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5820),	-- Faerie Mantle
@@ -2653,7 +2653,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26890, {	-- The Essence of Aku'Mai
 					["qg"] = 34303,	-- Dagrun Ragehammer
 					["coord"] = { 11.4, 35.3, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/20 Sapphire of Aku'Mai
@@ -2666,17 +2666,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33777,	-- Gaivan Shadewalker
 					["sourceQuest"] = 13792,	-- The Shadewalker
 					["coord"] = { 75.6, 75.3, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56636, {	-- Forest Grace Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56637, {	-- Severed Druid's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56638, {	-- Gnarlbark Shoulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131303, {	-- Barkburn Legguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2686,17 +2686,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13979, {	-- The Goblin Braintrust
 					["qg"] = 34354,	-- Huntress Jalin
 					["coord"] = { 35.0, 71.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56703, {	-- Jalin's Recompense
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56704, {	-- Braintrust Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56705, {	-- Skunkworks Sword
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131326, {	-- Bombgineer Blasting Vest
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2737,17 +2737,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34604,	-- Big Baobob
 					["sourceQuest"] = 13985,	-- Clear the Shrine
 					["coord"] = { 22.2, 52.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56689, {	-- Adansonian Cloak
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56690, {	-- Unringed Bands
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56691, {	-- Baobab Fruit Shell
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131327, {	-- Sheltered Aessina Wristguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2757,7 +2757,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26455, {	-- The Lost Chalice
 					["qg"] = 3848,	-- Kayneth Stillwind
 					["coord"] = { 85.2, 44.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9519, {	-- The Lost Chalice
@@ -2780,17 +2780,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3891,	-- Teronis' Corpse
 					["sourceQuest"] = 26463,	-- Finding Teronis
 					["coord"] = { 20.2, 38.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56624, {	-- Falathim-Washed Robes
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56625, {	-- Broadleaf Mantle
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56626, {	-- Maestra's Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131533, {	-- Broadleaf Spaulders
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2842,7 +2842,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13630, {	-- The Reason Why
 					["qg"] = 33276,	-- Moon Priestess Maestra
 					["coord"] = { 26.9, 36.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1034, {	-- The Ruins of Stardust
@@ -2866,7 +2866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17310,	-- Gnarl
 					["sourceQuest"] = 13766,	-- Closure is Only Natural
 					["coord"] = { 83.7, 63.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(970, {	-- The Tower of Althalaxx (4/9)
@@ -3021,56 +3021,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13981, {	-- They Set Them Up The Bomb!
 					["provider"] = { "o", 195134 },	-- The Bomb
 					["coord"] = { 46.3, 61.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13913, {	-- They Took Our Gnomes
 					["qg"] = 34354,	-- Huntress Jalin
 					["sourceQuest"] = 28539,	-- Hero's Call: Stonetalon Mountains!
 					["coord"] = { 35.0, 71.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13980, {	-- They're Out There!
 					["qg"] = 34596,	-- Foreman Jinx
 					["sourceQuest"] = 13977,	-- Mass Production
 					["coord"] = { 46.1, 63.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56692, {	-- Weaponized Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56693, {	-- Backwatcher's Ring
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(13967, {	-- Thinning the... Herd?
 					["qg"] = 12696,	-- Senani Thunderheart
 					["coord"] = { 49.8, 65.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13976, {	-- Three Friends of the Forest
 					["qg"] = 24739,	-- Benjari Edune
 					["sourceQuest"] = 13965,	-- Check in on the Edunes
 					["coord"] = { 17.9, 49.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13879, {	-- Thunder Peak
 					["qg"] = 34510,	-- Broyk
 					["sourceQuest"] = 13947,	-- Blastranaar!
 					["coord"] = { 38.7, 43.3, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13923, {	-- To Hellscream's Watch
 					["qg"] = 34122,	-- Commander Grimfang
 					["sourceQuest"] = 13920,	-- Before You Go...
 					["coord"] = { 12.1, 33.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3078,14 +3078,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["sourceQuest"] = 26464,	-- The Lost Gem
 					["coord"] = { 26.8, 36.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13866, {	-- To The Ramparts!
 					["qg"] = 34195,	-- Kulg Gorespatter
 					["sourceQuest"] = 24463,	-- Probing into Ashenvale
 					["coord"] = { 94.4, 46.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3093,7 +3093,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4079,	-- Sentinel Thenysil
 					["sourceQuest"] = 26478,	-- Playing Possum
 					["coord"] = { 34.9, 49.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3101,14 +3101,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34251,	-- Vear Darksnout
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 					["coord"] = { 37.9, 30.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56622, {	-- Thistle Ring
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56623, {	-- Zoram'gar Cloak
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -3156,17 +3156,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3897,	-- Krolg
 					["sourceQuest"] = 26481,	-- A New Adornment
 					["coord"] = { 50.8, 75.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56694, {	-- Silverwind Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56695, {	-- Wolfrunner Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56696, {	-- Legacy of Teronis
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131535, {	-- Wolfrunner Wristbands
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3177,14 +3177,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34359,	-- Captain Goggath
 					["sourceQuest"] = 13923,	-- To Hellscream's Watch
 					["coord"] = { 38.1, 43.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13974, {	-- Tweedle's Tiny Package
 					["qg"] = 34395,	-- Tweedle
 					["sourceQuest"] = 13947,	-- Blastranaar!
 					["coord"] = { 37.9, 43.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(23, {		-- Ursangous's Paw
@@ -3210,7 +3210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26467, {	-- Vile Satyr! Dryads in Danger!
 					["qg"] = 3901,	-- Illiyana
 					["coord"] = { 87.0, 43.4, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1021, {	-- Vile Satyr! Dryads in Danger!
@@ -3242,17 +3242,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13880,	-- Hot Lava
 						13884,	-- Put Out The Fire
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56683, {	-- Blossom of the Earthen Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56684, {	-- Subduer's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56685, {	-- Belt of Equilibrium
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131312, {	-- Subduer's Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3266,17 +3266,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13884,	-- Put Out The Fire
 					},
 					["coord"] = { 52.3, 56.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56686, {	-- Blossom of the Earthen Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56687, {	-- Subduer's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56688, {	-- Belt of Equilibrium
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131313, {	-- Subduer's Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3357,14 +3357,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41678,	-- Blood Guard Aldo Rockrain
 					["sourceQuest"] = 28532,	-- Warchief's Command: Stonetalon Mountains!
 					["coord"] = { 49.8, 65.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13617, {	-- West to the Strand
 					["qg"] = 33187,	-- Sentinel Shyela
 					["sourceQuest"] = 13594,	-- Don't Forget the Horde
 					["coord"] = { 26.9, 22.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3372,17 +3372,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33889,	-- Krokk
 					["sourceQuest"] = 13808,	-- Mission Improbable
 					["coord"] = { 82.5, 53.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56724, {	-- Wet Work Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56725, {	-- Belt of Secret Signs
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(56726, {	-- Disarray Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131307, {	-- Krokk's Notched Belt
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3393,13 +3393,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 					["coord"] = { 36.6, 49.5, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25607, {	-- Ze Gnomecorder
 					["qg"] = 40895,	-- Professor Xakxak Gyromate
 					["coord"] = { 35.3, 71.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -3602,7 +3602,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(34303, {	-- Dagrun Ragehammer
 					["coord"] = { 11.6, 35.2, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4778, {	-- Heavy Spiked Mace
@@ -3649,7 +3649,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(34601, {	-- Harlown Darkweave <Leatherworking Supplies>
 					["sourceQuest"] = 13982,	-- in a Bind
 					["coord"] = { 18.2, 60.0, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7361, {	-- Pattern: Herbalist's Gloves (RECIPE!)

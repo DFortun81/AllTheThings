@@ -41,32 +41,32 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26906, {	-- Agamaggan
 					["qg"] = 44402,	-- Auld Stonespire
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(26905, {	-- Agamaggan's Charge
 					["qg"] = 44415,	-- Spirit of Agamaggan
 					["sourceQuest"] = 26906,	-- Agamaggan
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Razorflank's Heart
 							["provider"] = { "i", 5793 },	-- Razorflank's Heart
 						}),
 						i(65968, {	-- Agamaggan-Blessed Greaves
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(66007, {	-- Agamaggan's Silent Tear
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65991, {	-- Boots of the Noble Path
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65944, {	-- Charlga's Breastplate
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65918, {	-- Agamaggan's Gift
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131617, {	-- Razorflank's Chainmail
 							["timeline"] = { "added 7.0.3.22248" },
@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26901, {	-- Going, Going, Guano!
 					["qg"] = 44402,	-- Auld Stonespire
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Kraul Guano
 							["provider"] = { "i", 5801 },	-- Kraul Guano
@@ -190,7 +190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26907, {	-- Take Them Down!
 					["qg"] = 44402,	-- Auld Stonespire
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
 						-- #if AFTER 6.0.2
@@ -268,7 +268,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26903, {	-- Willix the Importer
 					["qg"] = 4508,	-- Willix the Importer
-					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					["lvl"] = 30,
 					["groups"] = {
 						i(6748, {	-- Monkey Ring
@@ -498,7 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5043, {	-- Razorfen Kraul Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(5793),	-- Razorflank's Heart
 					i(5792),	-- Razorflank's Medallion

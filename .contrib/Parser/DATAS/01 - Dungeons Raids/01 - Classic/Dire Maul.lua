@@ -168,7 +168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				})),
 				ach(5053, {	-- King of Dire Maul Guild Run
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
 			n(FACTIONS, {
@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27118, {	-- A Broken Trap
 					["provider"] = { "o", 179485 },	-- A Broken Trap
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(42, 42, 15),
@@ -234,7 +234,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27104, {	-- Alzzin the Wildshaper
 					["qg"] = 44969,	-- Furgus Warpwood
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
@@ -252,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27105, {	-- An Unwelcome Guest
 					["qg"] = 44969,	-- Furgus Warpwood
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
@@ -537,7 +537,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27125, {	-- King of the Gordok [Alliance]
 					["qg"] = 45040,	-- Druid of the Talon
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(42, 42, 15),
@@ -553,7 +553,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27128, {	-- King of the Gordok [Horde]
 					["qg"] = 45052,	-- Stonemaul Ogre
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(42, 42, 15),
@@ -603,7 +603,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27108, {	-- Lethtendris's Web
 					["qg"] = 44971,	-- "Ambassador" Dagg'thol
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
@@ -701,7 +701,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27107, {	-- Pusillin The Thief
 					["qg"] = 44971,	-- "Ambassador" Dagg'thol
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
@@ -713,20 +713,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27129, {	-- Saving Warpwood [A]
 					["qg"] = 40032,	-- Telaron Windflight
 					["coord"] = { 50.7, 17.2, FERALAS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27130, {	-- Saving Warpwood [H]
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 					["coord"] = { 74.9, 42.4, FERALAS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27103, {	-- Shards of the Felvine
 					["qg"] = 44969,	-- Furgus Warpwood
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
@@ -756,7 +756,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27112,  { -- The Cursed Remains
 					["qg"] = 44991,	-- Estulan
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
@@ -770,7 +770,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27109, {	-- The Warped Defender
 					["qg"] = 44999,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
@@ -841,7 +841,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14338,	-- Knot Thimblejack
 					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
 					["maps"] = GORDOK_COMMONS_MAPS,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18258),	-- Gordok Ogre Suit
@@ -852,7 +852,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
 					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
 					["maps"] = GORDOK_COMMONS_MAPS,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -873,7 +873,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27114, {	-- The Gordok Taste Test
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -899,14 +899,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27131, {	-- The Highborne [A]
 					["qg"] = 40032,	-- Telaron Windflight
 					["coord"] = { 50.7, 17.2, FERALAS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27132, {	-- The Highborne [H]
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 					["coord"] = { 74.9, 42.4, FERALAS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -942,7 +942,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27110, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
 					["maps"] = CAPITAL_GARDENS_MAPS,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Immol'thar slain
@@ -956,7 +956,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27113, {	-- The Shen'dralar Ancient
 					["qg"] = 44991,	-- Estulan
 					["maps"] = CAPITAL_GARDENS_MAPS,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(39, 39, 15),
 				}),
 				q(7877, {	-- The Treasure of the Shen'dralar
@@ -987,7 +987,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 					["sourceQuest"] = 27110,	-- The Madness Within
 					["maps"] = CAPITAL_GARDENS_MAPS,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						i(65949),	-- Dire Maul
@@ -1018,7 +1018,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 					["maps"] = GORDOK_COMMONS_MAPS,
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18367),	-- Gordok's Gauntlets

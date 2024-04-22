@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
 								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -75,16 +75,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
 								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
 								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
 								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
 								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/8 Blackrock Orc Weapon
@@ -274,11 +274,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(5580),	-- Militia Hammer
 								i(1161, {	-- Militia Shortsword
-									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
 								}),
 								i(5579),	-- Militia Warhammer
 								i(1159, {	-- Militia Quarterstaff
-									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
 								}),
 								i(85575, {	-- Peacebringer's Staff
 									-- At some point this staff replaced the other one.
@@ -359,7 +359,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["groups"] = {
@@ -394,7 +394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["groups"] = {
@@ -437,14 +437,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/1 Kurtok the Slayer slain
 									["provider"] = { "n", 42938 },	-- Kurtok the Slayer
 								}),
 								i(57393, {	-- Abbey Defender's Crossbow
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								-- #if AFTER 7.3.5
 								-- CRIEVE NOTE: Not sure at which patch, but these were moved from Blackrock Invasion.
@@ -460,10 +460,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #endif
 								-- CRIEVE NOTE: The following two items were replaced with the above items.
 								i(57392, {	-- Willem's Mitts
-									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
 								}),
 								i(57394, {	-- Long Lost Wand
-									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
 								}),
 							},
 						}),
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
@@ -502,14 +502,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/8 Vineyard Fire Extinguished
 									["provider"] = { "i", 58362 },	-- Milly's Fire Extinguisher
 								}),
 								i(57247, {	-- Grape-Picking Sack
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(11475),	-- Wine-stained Cloak
 							},
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -558,7 +558,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -594,7 +594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -606,7 +606,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57258, {	-- Wolf Hunter's Vest
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -618,7 +618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -654,7 +654,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -666,7 +666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -678,7 +678,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57258, {	-- Wolf Hunter's Vest
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -700,16 +700,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131874, {	-- Light Gleaming Bracers
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57258, {	-- Wolf Hunter's Vest
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -731,16 +731,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131874, {	-- Light Gleaming Bracers
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57258, {	-- Wolf Hunter's Vest
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -804,7 +804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 39.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["groups"] = {
@@ -879,7 +879,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 						}),
@@ -891,7 +891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 						}),
@@ -903,7 +903,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
 						}),
@@ -915,7 +915,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 						}),
@@ -927,7 +927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 						}),
@@ -939,7 +939,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
@@ -951,7 +951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 						}),
@@ -987,7 +987,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 39.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -1005,7 +1005,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1014,7 +1014,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57388, {	-- Stormwind Infantry Belt
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1089,7 +1089,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1117,16 +1117,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131875, {	-- Spy Dispatchers Greaves
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57388, {	-- Stormwind Infantry Belt
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1147,7 +1147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1159,7 +1159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1168,7 +1168,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1180,7 +1180,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57388, {	-- Stormwind Infantry Belt
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1201,7 +1201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.6, 39.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["groups"] = {
@@ -1308,14 +1308,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57390, {	-- Goldshire Heavy Jacket
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57389, {	-- Innkeeper's Longstockings
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(6078),	-- Pikeman Shield
 								i(57391, {	-- Pikeman Trousers
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1330,16 +1330,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57395, {	-- Lion's Pride Bracer
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57396, {	-- Innkeeper's Gloves
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(132094, {	-- Proprietor's Mitts
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57397, {	-- Goldshire Iron Bracer
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1354,16 +1354,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57395, {	-- Lion's Pride Bracer
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57396, {	-- Innkeeper's Gloves
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131715, {	-- Smith's Chain Gloves
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57397, {	-- Goldshire Iron Bracer
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1476,7 +1476,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 50.3, 39.9, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 							["groups"] = {
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.5, 42.5, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 							["groups"] = {
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 							["groups"] = {
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
 						}),
@@ -1560,7 +1560,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 						}),
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 						}),
@@ -1596,7 +1596,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
@@ -1608,7 +1608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 						}),
@@ -1620,7 +1620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 						}),
@@ -1632,7 +1632,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 						}),
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1710,7 +1710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1729,7 +1729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1748,7 +1748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1767,7 +1767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1786,7 +1786,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1807,7 +1807,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
@@ -1884,10 +1884,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(RARES, {
 						n(62, {	-- Gug Fatcandle
 							["coord"] = { 31.6, 16.7, NORTHSHIRE_VALLEY },
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 							["groups"] = {
 								i(56147, {	-- Fatcandle Bag
-									["timeline"] = { "added 4.0.3" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(2055, {	-- Small Wooden Hammer
 									["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2103,14 +2103,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 58364 },	-- Argus' Note
 					},
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(26150, {	-- A Visit With Maybell
 					["qg"] = 253,	-- William Pestle
 					["sourceQuest"] = 60,	-- Kobold Candles
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2149,10 +2149,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13287" },
 						}),
 						i(57248, {	-- Well-Used Greatsword
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57521, {	-- Marshal's Light Crossbow
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156980, {	-- Solid Wooden Club
 							["timeline"] = { "added 7.3.5.25716" },
@@ -2186,7 +2186,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(2237),	-- Patched Pants
 						i(57520, {	-- Studded Arm Protector
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(1171),	-- Well-stitched Robe
 					},
@@ -2214,7 +2214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26393,	-- A Swift Message
 					["coord"] = { 41.7, 64.6, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = { KULTIRAN, HUMAN },
 				}),
@@ -2338,7 +2338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(57405, {	-- Fine Leather Sash
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131195, {	-- Padded Chain Belt
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2346,7 +2346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(983),		-- Red Linen Sash
 						i(2575),	-- Red Linen Shirt
 						i(57406, {	-- Reinforced Plate Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2405,10 +2405,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13287" },
 						}),
 						i(57400, {	-- Gold Dust Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57401, {	-- Jasperlode Chestguard
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2430,7 +2430,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(1359),	-- Lion-stamped Gloves
 						i(57402, {	-- Uncle Stonefield's Pants
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131196, {	-- Auntie's Oven Mitts
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2456,10 +2456,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13287" },
 						}),
 						i(57398, {	-- Candlewax Streaked Robe
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57399, {	-- Kobold Hunter's Trophy Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2517,14 +2517,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(1183),	-- Elastic Wristguards
 						i(57522, {	-- Patterson's Sparring Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(1360),	-- Stormwind Plate Gloves
 						i(131198, {	-- Wrangling Grips
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57251, {	-- "Collecting" Bag
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2608,13 +2608,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 822 },	-- Young Forest Bear
 						}),
 						i(57523, {	-- Wolf Fur Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57524, {	-- Frontier Bracer
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57525, {	-- Shrouded Bearskin Breastplate
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131193, {	-- Steel Reinforced Bracer
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2703,10 +2703,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(2238),	-- Urchin's Pants
 						i(57527, {	-- Stone Cairne Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57526, {	-- Gnollbreaker's Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131192, {	-- Riverpaw Gnoll Boots
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2810,7 +2810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26152, {	-- Wanted: James Clark
 					["provider"] = { "o", 203733 },	-- Bounty Board
 					["coord"] = { 74.0, 72.3, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 James Clark's Head
@@ -2861,7 +2861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6085),	-- Footman Tunic
 						i(6084),	-- Stormwind Guard Leggings
 						i(60219, {	-- Balanced Spell Staff
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131199, {	-- Lion Guard Chainmail
 							["timeline"] = { "added 7.0.3.22248" },

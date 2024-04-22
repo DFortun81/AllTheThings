@@ -308,7 +308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					})),
 					ach(5067, {	-- Heroic: Hellfire Ramparts Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

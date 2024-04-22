@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -182,18 +182,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(370, {	-- Ethel Rethor, Desolace
 					["cr"] = 35562,	-- Korrah's Hippogryph <Flight Master>
 					["coord"] = { 39.0, 27.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				fp(366, {	-- Furien's Post, Desolace
 					["cr"] = 35315,	-- Narimar <Flight Master>
 					["coord"] = { 44.2, 29.6, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(368, {	-- Karnum's Glade, Desolace
 					["cr"] = 35478,	-- Lastrea Greengale <Flight Master>
 					["coord"] = { 57.6, 49.6, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				fp(37, {	-- Nijel's Point, Desolace
 					["cr"] = 6706,	-- Baritanas Skyriver <Hippogryph Master>
@@ -208,13 +208,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(367, {	-- Thargad's Camp, Desolace
 					["cr"] = 35481,	-- Moira Steelwing <Gryphon Master>
 					["coord"] = { 36.8, 71.6, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(369, {	-- Thunk's Abode, Desolace
 					["cr"] = 35556,	-- Thunk's Wyvern <Flight Master>
 					["coord"] = { 70.6, 32.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
 			n(QUESTS, {
@@ -222,17 +222,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35902,	-- Lord Hydronis
 					["sourceQuest"] = 14292,	-- The Enemy of Our Enemy
 					["coord"] = { 29.0, 8.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14305, {	-- A Time to Reap
 					["qg"] = 36060,	-- Botanist Ferrah
 					["coord"] = { 58.5, 48.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14195, {	-- All Becoming Clearer
 					["sourceQuest"] = 14360,	-- Nothing a Couple of Melons Won't Fix
 					["coord"] = { 77.0, 18.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1431, {	-- Alliance Relations (1/4)
@@ -283,14 +283,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36329,	-- Thargad
 					["sourceQuest"] = 14378,	-- Hunting Brendol
 					["coord"] = { 36.7, 71.3, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14312, {	-- An Introduction Is In Order (is this chain part of Karnum's Glade or Uniting the Tribes?)
 					["qg"] = 36052,	-- Garren Darkwind
 					["sourceQuest"] = 14311,	-- Taking Part
 					["coord"] = { 58.4, 49.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1386, {	-- Assault on the Kolkar
 					["qg"] = 5398,	-- Warug
@@ -316,7 +316,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35295,	-- Cerelia
 					["sourceQuest"] = 14184,	-- My Time Has Passed
 					["coord"] = { 44.6, 29.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1434, {	-- Befouled by Satyr
@@ -344,40 +344,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14330, {	-- Behind Closed Doors
 					["provider"] = { "i", 38567 },	-- Maraudine Prisoner Manifest
 					["sourceQuest"] = 14328,	-- Three Princes
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = { 4656 },	-- Maraudine Mauler
 				}),
 				q(14359, {	-- Blessings From Above
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["sourceQuest"] = 14358,	-- Ten Pounds of Flesh
 					["coord"] = { 78.6, 23.1, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(14304, {	-- Blood Theory
 					["qg"] = 36048,	-- Thressa Amberglen
 					["coord"] = { 58.7, 46.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14334, {	-- Blubbergut
 					["qg"] = 12031,	-- Mai'Lahii
 					["sourceQuest"] = 14337,	-- Shadowprey Village
 					["coord"] = { 22.6, 71.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(55955, {	-- Whalefang's Pendant
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55956, {	-- Blubber-Stained Grips
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55957, {	-- Orca-Oiled Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55958, {	-- Orca-Tooth Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -436,7 +436,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36056,	-- Khan Leh'Prah
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 					["coord"] = { 58.2, 50.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1369, {	-- Broken Tears
 					["qg"] = 5398,	-- Warug
@@ -484,16 +484,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36048,	-- Thressa Amberglen
 					["sourceQuest"] = 14304,	-- Blood Theory
 					["coord"] = { 58.7, 46.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55904, {	-- The Tranquilizer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55902, {	-- Kodo-Wrangler Cover
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55903, {	-- Dusty Lasso
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131344, {	-- Kodo Lead Chain
 							["timeline"] = { "added 7.0.3.22248" },
@@ -519,7 +519,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36052,	-- Garren Darkwind
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 					["coord"] = { 58.4, 49.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1387, {	-- Centaur Bounty [A]
 					["qg"] = 5752,	-- Corporal Melkins
@@ -580,17 +580,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5421,	-- Fish in a Bucket
 					},
 					["coord"] = { 25.8, 68.2, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(55959, {	-- Coven Battleaxe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55960, {	-- Carapace Robes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55961, {	-- Ghost Walker Treads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131348, {	-- Lob Stompers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -664,17 +664,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14380,	-- An Impactful Discovery
 					["coord"] = { 57.4, 47.6, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(55918, {	-- Leggings of the Windy Ravine
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55919, {	-- Craggy Handgrips
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55920, {	-- Marshweaver's Wristguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131353, {	-- Windwhipped Grips
 							["timeline"] = { "added 7.0.3.22248" },
@@ -685,20 +685,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14343,	-- Maurin's Concoction
 					["coord"] = { 57.4, 47.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(55921, {	-- Leggings of the Windy Ravine
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55922, {	-- Craggy Handgrips
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55923, {	-- Marshweaver's Wristguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131349, {	-- Windwhipped Grips
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -706,17 +706,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36398,	-- Khan Leh'Prah
 					["sourceQuest"] = 14393,	-- Into the Fray!
 					["coord"] = { 72.2, 67.3, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["description"] = "If you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
 					["groups"] = {
 						i(55915, {	-- Cutlass of Agogridon
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55916, {	-- Soulstar Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55917, {	-- Kolkar Cleaver
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156968, {	-- Kolkar Polearm
 							["timeline"] = { "added 7.3.5.25716" },
@@ -727,7 +727,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35827,	-- Valishj
 					["sourceQuest"] = 14264,	-- Wetter than Wet
 					["coord"] = { 30.9, 30.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14318, {	-- Delicate Negotiations
 					["qg"] = 36056,	-- Khan Leh'Prah
@@ -736,19 +736,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14316,	-- Cenarion Property
 					},
 					["coord"] = { 58.2, 50.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55909, {	-- Drape of Centaur Dreams
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55910, {	-- Defiant Spire Shoulderguard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131345, {	-- Rebellious Epaulets
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(55911, {	-- Stubborn Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -756,7 +756,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 14338,	-- Ghost Walker Post
 					["coord"] = { 52.2, 53.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(261, {	-- Down the Scarlet Path (1/2)
@@ -787,19 +787,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14246, {	-- Early Adoption
 					["qg"] = 35661,	-- Cenarion Embassador Thunk
 					["coord"] = { 70.3, 32.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55894, {	-- Featherlight Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55895, {	-- Collector's Padded Gauntlets
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(14362, {	-- Ears are Burning (A)
 					["provider"] = { "i", 49203 },	-- Burning Blade Ear (Alliance)
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						4665,	-- Burning Blade Adept
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14232, {	-- Ears are Burning (H)
 					["provider"] = { "i", 49010 },	-- Burning Blade Ear (Horde)
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						4665,	-- Burning Blade Adept
@@ -825,20 +825,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5642,	-- Vahlarriel Demonslayer
 					["sourceQuest"] = 14387,	-- Lay of the Land
 					["coord"] = { 66.4, 11.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(55951, {	-- Choker of Renewal
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55952, {	-- Gloves of Nurture
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55953, {	-- Shoulderguards of Protection
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55954, {	-- Demonslayer's Signet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -846,7 +846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5752,	-- Corporal Melkins
 					["sourceQuest"] = 14354,	-- Elune's Gifts
 					["coord"] = { 66.6, 10.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35295,	-- Cerelia
 					["sourceQuest"] = 14189,	-- Translation
 					["coord"] = { 44.6, 29.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -862,7 +862,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["sourceQuest"] = 14195,	-- All Becoming Clearer
 					["coord"] = { 74.8, 13.2, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5421, {	-- Fish in a Bucket
@@ -888,16 +888,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14253, {	-- Fletch Me Some Plumage!
 					["qg"] = 35757,	-- Bizby
 					["coord"] = { 60.9, 29.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55891, {	-- Swoop-Tail Shoulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55892, {	-- Feather Lined Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55893, {	-- Talonrend Stompers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131337, {	-- Avian Oiled Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -911,7 +911,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 14189,	-- Translation
 					["coord"] = { 69.2, 29.2, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1368, {	-- Gelkis Alliance
@@ -930,7 +930,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14311,	-- Taking Part
 					["coord"] = { 57.3, 47.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -979,12 +979,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["sourceQuest"] = 14257,	-- Slitherblade Slaughter
 					["coord"] = { 38.8, 26.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14252, {	-- Good Gold For Bad Tail
 					["qg"] = 35757,	-- Bizby
 					["coord"] = { 60.9, 29.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5381, {	-- Hand of Iruxos
 					["qg"] = 11624,	-- Taiga Wisemane
@@ -1005,12 +1005,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 195600 },	-- Smouldering Stone
 					["sourceQuest"] = 14247,	-- Stubborn Lands
 					["coord"] = { 69.2, 21.3, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25938, {	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 					["qg"] = 41487,	-- Hierophant Malyk
 					["coord"] = { 33.0, 59.6, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1021,7 +1021,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14374,	-- Portals of the Legion
 					},
 					["coord"] = { 36.7, 71.3, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5763, {	-- Hunting in Stranglethorn
@@ -1039,34 +1039,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36329,	-- Thargad
 					["sourceQuest"] = 14372,	-- Thargad's Camp
 					["coord"] = { 36.7, 71.3, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(55931, {	-- Demonkiller Mask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55930, {	-- Darkblood Dagger
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55932, {	-- Claw-Scarred Bulwark
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(14342, {	-- Infernal Encroachment
 					["qg"] = 5395,	-- Felgur Twocuts
 					["coord"] = { 56.1, 59.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(55934, {	-- Demonkiller Mask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55933, {	-- Darkblood Dagger
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55935, {	-- Claw-Scarred Bulwark
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1074,19 +1074,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36398,	-- Khan Leh'Prah
 					["sourceQuest"] = 14332,	-- Time for Change
 					["coord"] = { 72.2, 67.3, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14376, {	-- Jugkar's Undoing (A)
 					["provider"] = { "i", 49220 },	-- Infernal Power Core
 					["coord"] = { 51.2, 75.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14344, {	-- Jugkar's Undoing (H)
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
 					["coord"] = { 51.2, 75.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = HORDE_ONLY,
 				}),
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5396,	-- Captain Pentigast
 					["sourceQuest"] = 14384,	-- Rerouted!
 					["coord"] = { 66.6, 11.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1367, {	-- Magram Alliance
@@ -1221,7 +1221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 14339,	-- Delivery Device
 					["coord"] = { 52.2, 53.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14184, {	-- My Time Has Passed
@@ -1231,7 +1231,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						26134,	-- Nothing Left for You Here
 					},
 					["coord"] = { 54.7, 8.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1239,38 +1239,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36163,	-- Khan Kammah
 					["sourceQuest"] = 14325,	-- Will Work For Food
 					["coord"] = { 71.7, 45.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14282, {	-- Mystery Solved
 					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["sourceQuest"] = 14268,	-- Deep Impact
 					["coord"] = { 38.7, 26.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55896, {	-- Emblazoned Girdle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55897, {	-- Stonegouge Headgear
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131338, {	-- Earthhewn Helm
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(55898, {	-- Rockgrab Crushers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(14251, {	-- New Beginnings
 					["qg"] = 35757,	-- Bizby
 					["coord"] = { 60.9, 29.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14329, {	-- Not So Fast!
 					["qg"] = 36185,	-- Khan Shodo
 					["sourceQuest"] = 14328,	-- Three Princes
 					["coord"] = { 40.4, 95.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14193, {	-- Nothing a Couple of Melons Won't Fix (A)
 					["providers"] = {
@@ -1278,21 +1278,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 195438 },	-- Cup of Elune
 					},
 					["coord"] = { 69.2, 29.2, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14360, {	-- Nothing a Couple of Melons Won't Fix (H)
 					["provider"] = { "o", 195433 },	-- Ancient Tablets
 					["sourceQuest"] = 14191,	-- Furien's Footsteps
 					["coord"] = { 69.2, 29.2, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14302, {	-- Official Assessment
 					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["sourceQuest"] = 14301,	-- Return and Report
 					["coord"] = { 38.7, 26.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1373, {	-- Ongeku
 					["qg"] = 5397,	-- Uthek the Wise
@@ -1332,31 +1332,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5396,	-- Captain Pentigast
 					["sourceQuest"] = 14354,	-- Elune's Gifts
 					["coord"] = { 66.6, 11.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14223, {	-- Peace of Mind (H)
 					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14189,	-- Translation
 					["coord"] = { 44.9, 29.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14374, {	-- Portals of the Legion (A)
 					["qg"] = 36329,	-- Thargad
 					["sourceQuest"] = 14372,	-- Thargad's Camp
 					["coord"] = { 36.7, 71.3, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(55937, {	-- Bracer of Portals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55938, {	-- Spaulders of Sealing
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55936, {	-- Binding Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131352, {	-- Securing Bindings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1383,13 +1383,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11937,	-- Demon Portal Guardian
 						}),
 						i(55940, {	-- Bracer of Portals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55941, {	-- Spaulders of Sealing
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55939, {	-- Binding Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131233, {	-- Securing Bindings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1405,19 +1405,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14306, {	-- Pulling Weeds
 					["qg"] = 36060,	-- Botanist Ferrah
 					["coord"] = { 58.5, 48.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55899, {	-- Lasherspike Wristguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55900, {	-- Puncture-Binding Spaulder
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131343, {	-- Thornwoven Epaulets
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(55901, {	-- Phytoresistant Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1425,17 +1425,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5396,	-- Captain Pentigast
 					["sourceQuest"] = 14363,	-- You'll Know it When You See It
 					["coord"] = { 66.6, 11.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(55924, {	-- Ring of Vigorous Interruption
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55925, {	-- Grounding Choker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55926, {	-- Skull-Scorched Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1443,17 +1443,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14225,	-- You'll Know it When You See It
 					["coord"] = { 44.9, 29.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(55927, {	-- Ring of Vigorous Interruption
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55928, {	-- Grounding Choker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55929, {	-- Skull-Scorched Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1617,26 +1617,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36410,	-- Officer Jankie
 					["sourceQuest"] = 28531,	-- Hero's Call: Desolace!
 					["coord"] = { 54.25, 9.29, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14301, {	-- Return and Report
 					["qg"] = 35902,	-- Lord Hydronis
 					["sourceQuest"] = 14284,	-- A Revenant's Vengeance
 					["coord"] = { 29.0, 8.1, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55906, {	-- Balmy Wraps
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55907, {	-- Vest of Flowing Water
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55908, {	-- Crackling Girdle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55905, {	-- Spinescale Longbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131342, {	-- Crashing Water Hauberk
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1672,17 +1672,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["sourceQuest"] = 14196,	-- Firestarter
 					["coord"] = { 74.8, 13.2, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(55963, {	-- Tranquility of Furien
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55962, {	-- Nimblefinger Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55964, {	-- Flashfire Collar
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1693,14 +1693,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14374,	-- Portals of the Legion
 					},
 					["coord"] = { 36.4, 71.2, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14217, {	-- Satyrical Offerings
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["sourceQuest"] = 14213,	-- Ten Pounds of Flesh
 					["coord"] = { 78.6, 23.1, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -1736,7 +1736,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14327,	-- My Word is My Bond
 					["coord"] = { 57.3, 47.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1744,12 +1744,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35773,	-- Cenarion Researcher Korrahb
 					["sourceQuest"] = 14256,	-- The Emerging Threat
 					["coord"] = { 38.8, 26.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14341, {	-- Smeed's Harnesses (breadcrumb?)
 					["qg"] = 11259,	-- Nataka Longhorn
 					["coord"] = { 55.4, 55.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1370, {	-- Stealing Supplies
@@ -1802,12 +1802,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14247, {	-- Stubborn Lands
 					["qg"] = 35661,	-- Cenarion Embassador Thunk
 					["coord"] = { 70.3, 32.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14307, {	-- Stubborn Winds
 					["qg"] = 36034,	-- Karnum Marshweaver
 					["coord"] = { 57.4, 47.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14311, {	-- Taking Part
 					["qg"] = 36060,	-- Botanist Ferrah
@@ -1816,26 +1816,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14306,	-- Pulling Weeds
 					},
 					["coord"] = { 58.5, 48.7, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14358, {	-- Ten Pounds of Flesh (A)
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["coord"] = { 78.6, 23.1, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14213, {	-- Ten Pounds of Flesh (H)
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["sourceQuest"] = 14189,	-- Translation
 					["coord"] = { 78.6, 23.1, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14372, {	-- Thargad's Camp
 					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14327,	-- My Word is My Bond
 					["coord"] = { 57.4, 47.6, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1945,13 +1945,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14255,	-- Ethel Rethor (horde)
 					},
 					["coord"] = { 38.8, 26.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14292, {	-- The Enemy of Our Enemy
 					["qg"] = 35773,	-- Cenarion Researh Korrah
 					["sourceQuest"] = 14282,	-- Mystery Solved
 					["coord"] = { 38.8, 26.9, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1454, {	-- The Karnitol Shipwreck (1/4)
 					["qg"] = 5638,	-- Kreldig Ungor
@@ -1987,16 +1987,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(55948, {	-- Finder's Battleaxe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55949, {	-- Karnitol's Leftover Robe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131231, {	-- Claimant Treads
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(55950, {	-- Treads of the Seeker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2039,7 +2039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14394,	-- Death to Agogridon
 					},
 					["coord"] = { 73.3, 73.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(26589, {	-- The Wilds of Feralas (H)
@@ -2049,29 +2049,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14394,	-- Death to Agogridon
 					},
 					["coord"] = { 73.3, 73.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(14328, {	-- Three Princes
 					["qg"] = 36056,	-- Khan Leh'Prah
 					["sourceQuest"] = 14327,	-- My Word is My Bond
 					["coord"] = { 58.2, 50.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14332, {	-- Time For Change
 					["qg"] = 36196,	-- Kherrah
 					["sourceQuest"] = 14330,	-- Behind Closed Doors
 					["coord"] = { 13.2, 46.7, 67 },	-- quest starts in Maraudon's mapID
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55912, {	-- Wrought Formal Dagger
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55913, {	-- Emissary's Chestpiece
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55914, {	-- Silent Footpads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131347, {	-- Messenger's Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2081,17 +2081,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14357, {	-- To the Hilt! (A)
 					["provider"] = { "o", 195517 },	-- Elune's Handmaiden
 					["coord"] = { 75.9, 26.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(55942, {	-- Sandals of Ritual
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55943, {	-- Gilt Cuirass
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55944, {	-- Profound Girdle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131350, {	-- Gleaming Link Hauberk
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2102,17 +2102,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 195517 },	-- Elune's Handmaiden
 					["sourceQuest"] = 14189,	-- Translation
 					["coord"] = { 75.9, 26.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(55945, {	-- Sandals of Ritual
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55946, {	-- Gilt Cuirass
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(55947, {	-- Profound Girdle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131335, {	-- Gleaming Link Hauberk
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2123,7 +2123,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14188,	-- Avenge Furien!
 					["coord"] = { 44.9, 29.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1437, {	-- Vahlarriel's Search (1/3)
@@ -2156,32 +2156,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35827,	-- Valishj
 					["sourceQuest"] = 14260,	-- Going Deep
 					["coord"] = { 30.9, 30.8, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14333, {	-- While You're Here
 					["provider"] = { "o", 196393 },	-- Broken Relic
 					["sourceQuest"] = 14328,	-- Three Princes
 					["coord"] = { 12.5, 49.3, 67 },	-- quest starts in Maraudon's mapID
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14325, {	-- Will Work For Food
 					["qg"] = 36163,	-- Khan Kammah
 					["sourceQuest"] = 14318,	-- Delicate Negotiations
 					["coord"] = { 71.7, 45.5, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14363, {	-- You'll Know It When You See It (A)
 					["qg"] = 5396,	-- Captain Pentigast
 					["sourceQuest"] = 14361,	-- Peace of Mind
 					["coord"] = { 66.6, 11.0, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14225, {	-- You'll Know It When You See It (H)
 					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14223,	-- Peace of Mind
 					["coord"] = { 44.8, 29.4, DESOLACE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

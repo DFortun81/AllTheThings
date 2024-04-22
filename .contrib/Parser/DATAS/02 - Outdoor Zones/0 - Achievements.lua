@@ -542,7 +542,7 @@ root(ROOTS.Zones, {
 				title(48),	-- % the Diplomat
 			}),
 		})),
-		ach(4958, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+		ach(4958, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
 			crit(5798),		-- Ring of Blood in Nagrand
 			crit(5799),		-- Amphitheater of Anguish in Zul'Drak
 			crit(13918),	-- Crucible of Carnage in Twilight Highlands

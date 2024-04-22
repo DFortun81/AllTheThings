@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2079,	-- Ilthalaine
 							["sourceQuest"] = 28714,	-- Fel Moss Corruption
 							["coord"] = { 46.3, 73.5, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
@@ -146,11 +146,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								28713,	-- The Balance of Nature
 							},
 							["coord"] = { 45.9, 72.8, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(46753, {	-- Melithar's Supply Bag
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2079,	-- Ilthalaine
 							["sourceQuest"] = 28713,	-- The Balance of Nature
 							["coord"] = { 45.6, 74.5, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(5398),	-- Canopy Leggings
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28723,	-- Priestess of the Moon
 							["coord"] = { 46.2, 73.5, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(10655),	-- Sedgeweed Britches
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26949, {	-- Learning the Word
 							["qg"] = 3595,	-- Shanda
 							["coord"] = { 47.6, 59.6, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
 						}),
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28729,	-- Teldrassil: Crown onf Azeroth
 							["coord"] = { 42.5, 50.4, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(5395),	-- Woodland Shield
@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								28715,	-- Demonic Thieves
 							},
 							["coord"] = { 46.2, 73.5, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -424,7 +424,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49480,	-- Tarindrella
 							["sourceQuest"] = 28727,	-- Vile Touch
 							["coord"] = { 44.8, 29.0, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(3116, {	-- Simple Sigil
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28728,	-- Signs of Things to Come
 							["coord"] = { 42.5, 50.4, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(28731, {	-- Teldrassil: Passing Awareness
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 41.4, 45.8, TELDRASSIL },
 							},
 							["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(920, {	-- Tenaron's Summons
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(28713, {	-- The Balance of Nature
 							["qg"] = 2079,	-- Ilthalaine
 							["coord"] = { 45.6, 74.5, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(5394),	-- Archery Training Gloves
@@ -529,7 +529,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28724,	-- Iverron's Antidote
 							["coord"] = { 42.4, 50.4, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(458, {	-- The Woodland Protector (1/2)
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49480,	-- Tarindrella
 							["sourceQuest"] = 28726,	-- Webwood Corruption
 							["coord"] = { 45.8, 91.0, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(5405),	-- Draped Cloak
@@ -595,7 +595,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49480,	-- Tarindrella
 							["sourceQuest"] = 28725,	-- The Woodland Protector
 							["coord"] = { 45.8, 91.0, SHADOWGLEN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(10544),	-- Thistlewood Maul
@@ -693,7 +693,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(456, {	-- Dolanaar, Teldrassil
 					["cr"] = 40553,	-- Fidelio <Hippogryph Master>
 					["coord"] = { 55.4, 50.4, TELDRASSIL },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(27, {	-- Rut'theran Village, Teldrassil
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3515,	-- Corithras Moonrage
 					["sourceQuest"] = 935,	-- The Waters of Teldrassil / Crown of the Earth (6/6)
 					["coord"] = { 41.0, 45.5, TELDRASSIL },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(938, {	-- Mist
@@ -1111,7 +1111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(5590),	-- Cord Bracers
 						i(54871, {	-- Cloudsbreak Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(5593),	-- Crag Buckler
 						i(131230, {	-- Cloudsbreak Grips
@@ -1143,7 +1143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2083,	-- Syral Bladeleaf
 					["sourceQuest"] = 489,	-- Seek Redemption!
 					["coord"] = { 55.7, 50.4, TELDRASSIL },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2499, {	-- Oakenscowl
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2081,	-- Sentinel Kyra Starsong
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 					["coord"] = { 55.6, 51.9, TELDRASSIL },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2498, {	-- Return to Denalan
@@ -1458,7 +1458,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5591),	-- Rain-spotted Cape
 						i(54872, {	-- Shackled Girdle
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(5592, {	-- Shackled Girdle
 							-- #if ANYCLASSIC
@@ -1487,7 +1487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28517, {	-- The Howling Oak
 					["qg"] = 42968,	-- Krennan Aranas
 					["coord"] = { 55.2, 89.2, TELDRASSIL },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = { WORGEN },
 				}),
@@ -1581,7 +1581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 44.5, 60.6, TELDRASSIL },
 						}),
 						i(54868, {	-- Gritroot Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131210, {	-- Gritroot Cinch
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1594,7 +1594,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(60240, {	-- Dream Carrier
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1663,23 +1663,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 1992,	-- Tarindrella
 					["sourceQuest"] = 933,	-- Teldrassil: The Coming Dawn [CATA+] / Crown of the Earth (4/6)
 					["coord"] = { 42.5, 58.1, TELDRASSIL },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(131821, {	-- Uncorrupted Gloves
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(49546, {	-- Revitalizing Wristguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(49449, {	-- Britches of Turning Fortune
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(49448, {	-- Uncorrupted Hands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(49562, {	-- Durable Drape
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131822, {	-- Trousers of Turning Fortune
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1697,10 +1697,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(54873, {	-- Verdigris Leggings
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(54874, {	-- Grassy Bindings
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131861, {	-- Graccy Bracers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1825,7 +1825,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(2571),	-- Viny Wrappings
 						i(54867, {	-- Swiftroot Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1845,13 +1845,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 39.8, 80.6, TELDRASSIL },
 						}),
 						i(54869, {	-- Thornroot Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131211, {	-- Thornroot Hauberk
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(54870, {	-- Thornroot Cord
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(5459, {	-- Defender Axe
 							-- #if ANYCLASSIC
@@ -1919,7 +1919,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5457),	-- Severed Voodoo Claw
 						i(60239, {	-- Foul Bag
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2210,7 +2210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(44030, {	-- Draelan <Enchanting Supplies>
 					["coord"] = { 39.0, 30.0, TELDRASSIL },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

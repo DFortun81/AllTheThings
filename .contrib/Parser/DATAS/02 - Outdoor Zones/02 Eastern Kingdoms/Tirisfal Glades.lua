@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 49425,	-- Darnell
 							["sourceQuest"] = 24970,	-- No Better Than the Zombies
 							["coord"] = { 67.0, 42.3, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(3277),	-- Executor Staff
@@ -73,14 +73,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 2307,	-- Caretaker Caice
 							["sourceQuest"] = 24960,	-- The Wakening
 							["coord"] = { 45.9, 80.4, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 						}),
 						q(28652, {	-- Caretaker Caice
 							["qg"] = 1568,	-- Undertaker Mordo
 							["sourceQuest"] = 26799,	-- Those That Couldn't Be Saved
 							["coord"] = { 43.4, 79.9, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 							["isBreadcrumb"] = true,
 						}),
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24959, {	-- Fresh out of the Grave
 							["qg"] = 49044,	-- Agatha
 							["coord"] = { 40.7, 78.4, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 						}),
 						q(3098, {	-- Glyphic Scroll
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24965, {	-- Magic Training
 							["qg"] = 2124,	-- Isabella
 							["sourceQuest"] = 3098,	-- Glyphic Scroll
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { MAGE },
 							["races"] = { UNDEAD },
 						}),
@@ -214,14 +214,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 26802,	-- The Damned
 							["coord"] = { 55.4, 37.7, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(3270),	-- Flax Vest
 								i(3273),	-- Rugged Mail Vest / Rugged Plate Vest [7.0.3+]
 								i(3272),	-- Zombie Skin Leggings
 								i(57139, {	-- Night Web Crossbow
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131387, {	-- Abandoned Miner's Pants
 									["timeline"] = { "added 7.0.3.22248" },
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 24973,	-- Night Web's Hollow
 							["coord"] = { 55.4, 37.7, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(3268),	-- Forsaken Dagger
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1569,	-- Shadow Priest Elreth
 							["sourceQuest"] = 26801,	-- Scourge on our Perimeter
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 2123,	-- Dark Cleric Duesten
 							["sourceQuest"] = 3097,	-- Hallowed Scroll
 							["coord"] = { 47.6, 58.4, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
 						}),
@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 26800,	-- Deathguard Saltain
 							["sourceQuest"] = 25089,	-- Beyond the Graves
 							["coord"] = { 49.9, 56.3, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 							["groups"] = {
 								i(11848),	-- Flax Belt
@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1569,	-- Shadow Priest Sarvis
 							["sourceQuest"] = 28653,	-- Shadow Priest Sarvis
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(3274),	-- Flax Boots
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1740,	-- Deathguard Saltain
 							["sourceQuest"] = 26800,	-- Recruitment
 							["coord"] = { 49.9, 56.3, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 							["isBreadcrumb"] = true,
 						}),
@@ -445,7 +445,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 28672,	-- The Executor in the Field
 							["coord"] = { 55.4, 37.7, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(6060),	-- Flax Bracers
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1661,	-- Novice Elreth
 							["sourceQuest"] = 24961,	-- The Truth of the Grave
 							["coord"] = { 46.7, 58.2, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -579,28 +579,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1568,	-- Undertaker Mordo
 							["sourceQuest"] = 24959,	-- Fresh out of the Grave
 							["coord"] = { 43.4, 79.9, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 						}),
 						q(24961, {	-- The Truth of the Grave
 							["qg"] = 1661,	-- Novice Elreth
 							["sourceQuest"] = 28651,	-- Novice Elreth
 							["coord"] = { 46.7, 58.1, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(24960, {	-- The Wakening
 							["qg"] = 2307,	-- Caretaker Caice
 							["sourceQuest"] = 28652,	-- Caretaker Caice
 							["coord"] = { 45.9, 80.4, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 						}),
 						q(26799, {	-- Those That Couldn't Be Saved
 							["qg"] = 1568,	-- Undertaker Mordo
 							["sourceQuest"] = 28608,	-- The Shadow Grave
 							["coord"] = { 43.4, 79.9, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { UNDEAD },
 							["groups"] = {
 								i(3275),	-- Flax Gloves
@@ -630,7 +630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 1569,	-- Shadow Priest Sarvis
 							["sourceQuest"] = 24971,	-- Assault on the Rotbrain Encampment
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 					}),
@@ -892,7 +892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(460, {	-- Brill, Tirisfal Glades
 					["cr"] = 43124,	-- Anette Williams <Bat Handler>
 					["coord"] = { 58.8, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(384, {	-- The Bulwark, Tirisfal
@@ -1019,20 +1019,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 13158,	-- Lieutenant Sanders
 					["sourceQuest"] = 25010,	-- A Deadly New Ally
 					["coord"] = { 87.5, 43.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57169, {	-- Darrington's Dirk
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57170, {	-- Lilian's Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57171, {	-- Executor's Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57791, {	-- Headsman's Bag
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuest"] = 25009,	-- At War With The Scarlet Crusade
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(361, {	-- A Letter Undelivered
@@ -1057,17 +1057,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 11057,	-- Apothecary Dithers
 					["sourceQuest"] = 25056,	-- Grisly Grizzlies
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57167, {	-- Night Web Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57166, {	-- Advanced Night Web Crossbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57168, {	-- Reaper's Buckler
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1158,25 +1158,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25090, {	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["coord"] = { 52.5, 54.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24979, {	-- A Scarlet Letter
 					["provider"] = { "i", 52079 },	-- A Scarlet Letter
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24981, {	-- A Thorn in our Side
 					["qg"] = 1515,	-- Executor Zygand
 					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26930, {	-- After the Crusade
 					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuest"] = 26926,	-- Victory, For Now
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
@@ -1223,14 +1223,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1515,	-- Executor Zygand
 					["sourceQuest"] = 24992,	-- Escaped From Gilneas
 					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57155, {	-- Worgen Slaying Sword
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57154, {	-- Executor's Cape
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156944, {	-- Worgen Training Stick
 							["timeline"] = { "added 7.3.5.25692" },
@@ -1313,7 +1313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuest"] = 25007,	-- East... Always to the East
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						24976,	-- Variety is the Spice of Death
 					},
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(354, {	-- Deaths in the Family
@@ -1392,7 +1392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 25003,	-- The Family Crypt
 					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(3446),	-- Darkwood Staff
@@ -1426,27 +1426,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 38977,	-- Apothecary Jerrod
 					["sourceQuest"] = 24991,	-- Garren's Haunt
 					["coord"] = { 61.6, 34.5, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25007, {	-- East... Always to the East
 					["qg"] = 1499,	-- Magistrate Sevren
 					["sourceQuest"] = 25006,	-- The Grasp Weakens
 					["coord"] = { 60.9, 50.4, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24992, {	-- Escaped From Gilneas
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
 					["cr"] = 1548,	-- Cursed Darkhound
 					["description"] = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24974, {	-- Ever So Lonely
 					["qg"] = 38925,	-- Sidrick Calston
 					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(365, {	-- Fields of Grief (1/2)
@@ -1475,7 +1475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24975, {	-- Fields of Grief
 					["qg"] = 1518,	-- Apothecary Johaan
 					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(359, {	-- Forsaken Duties
@@ -1489,7 +1489,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1499,	-- Magistrate Sevren
 					["sourceQuest"] = 24982,	-- The New Forsaken
 					["coord"] = { 60.9, 50.5, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5650, {	-- Garments of Darkness
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10665,	-- Apothecary Holland
 					["sourceQuest"] = 24996,	-- Holland's Experiment
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
@@ -1534,7 +1534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10666,	-- Gordo
 					["sourceQuest"] = 24977,	-- Johaan's Experiment
 					["coord"] = { 44.2, 53.7, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(358, {	-- Graverobbers
@@ -1567,7 +1567,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24997, {	-- Graverobbers
 					["qg"] = 38978,	-- Apprentice Crispin
 					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6063),	-- Cold Steel Gauntlets
@@ -1577,7 +1577,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25056, {	-- Grisly Grizzlies
 					["qg"] = 11057,	-- Apothecary Dithers
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25039, {	-- Have You Seen Anything Weird Out There?
@@ -1585,7 +1585,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 24980,	-- The Scarlet Palisade
 					["description"] = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
 					["coord"] = { 61.9, 52.0, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25031, {	-- Head for the Mills
@@ -1594,7 +1594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						24999,	-- Planting the Seed of Fear
 						24995,	-- Off the Scales
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1625,17 +1625,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10665,	-- Junior Apothecary Holland
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57143, {	-- Mountaineer's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131390, {	-- Mountaineer's Waistguard
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57144, {	-- Gallow's End Gauntlets
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1643,12 +1643,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1518,	-- Apothecary Johaan
 					["sourceQuest"] = 24976,	-- Variety is the Spice of Death
 					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32672, {	-- Learn to Ride
 					["description"] = "This quest is available to Undead characters upon reaching level 10.",
-					["timeline"] = { "added 4.0.3.13277", REMOVED_10_1_5 },
+					["timeline"] = { ADDED_4_0_3, REMOVED_10_1_5 },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 					["isBreadcrumb"] = true,
@@ -1679,17 +1679,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 38978,	-- Apprentice Crispin
 					["sourceQuest"] = 24997,	-- Graverobbers
 					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57158, {	-- Foul Gnoll Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57159, {	-- Belt of Brill
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57160, {	-- Garren's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131392, {	-- Waistguard of Brill
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1700,14 +1700,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 38977,	-- Apothecary Jerrod
 					["sourceQuest"] = 24994,	-- Doom Weed
 					["coord"] = { 61.6, 34.5, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57149, {	-- Cauldron Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57150, {	-- Vile Fin Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(3434),	-- Slumber Sand
 					},
@@ -1716,7 +1716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 38978,	-- Apprentice Crispin
 					["sourceQuest"] = 24994,	-- Doom Weed
 					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(374, {	-- Proof of Demise
@@ -1771,11 +1771,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24978, {	-- Reaping the Reapers
 					["qg"] = 1519,	-- Deathguard Simmer
 					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57146, {	-- Scythe Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156938, {	-- Simmer's Cudgel
 							["timeline"] = { "added 7.3.5.25692" },
@@ -1784,7 +1784,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57145, {	-- Simmer's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1826,7 +1826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1495,	-- Deathguard Linnea
 					["sourceQuest"] = 24988,	-- The Chill of Death
 					["coord"] = { 65.4, 60.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
@@ -1871,7 +1871,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25004,	-- The Mills Overrun
 					},
 					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
@@ -1888,7 +1888,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 37915,	-- Timothy Cunningham
 					["sourceQuest"] = 25011,	-- To Bigger and Better Things
 					["coord"] = { 83.5, 69.9, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(375, {	-- The Chill of Death
@@ -1918,17 +1918,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1521,	-- Gretchen Dedmar
 					["sourceQuest"] = 24983,	-- Forsaken Duties
 					["coord"] = { 65.2, 60.4, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57151, {	-- Gretchen's Slippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57152, {	-- Duskbat Pants
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57153, {	-- Death's Watch Bracer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131389, {	-- Duskbat Mail Leggings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1973,17 +1973,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 25031,	-- Head for the Mills (breadcrumb)
 					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57161, {	-- Agamand Family Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57162, {	-- Agamand Family Bracelet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57163, {	-- Agamand Family Riding Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131393, {	-- Agamand Family Bracer
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1994,14 +1994,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1499,	-- Magistrate Sevren
 					["sourceQuest"] = 25005,	-- Speak with Sevren
 					["coord"] = { 60.9, 50.4, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57164, {	-- Devlin's Shirt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57165, {	-- Boots of Brill
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131394, {	-- Treads of Brill
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2027,7 +2027,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = { 1658 },	-- Captain Dargol
 					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
 					["coord"] = { 52.8, 26.3, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(357, {	-- The Lich's Identity
@@ -2075,13 +2075,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 25003,	-- The Family Crypt
 					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24982, {	-- The New Forsaken
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["coord"] = { 52.5, 54.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2115,14 +2115,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1519,	-- Deathguard Simmer
 					["sourceQuest"] = 24978,	-- Reaping the Reapers
 					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25011, {	-- To Bigger and Better Things
 					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuest"] = 25046,	-- A Daughter's Embrace
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1819, {	-- Ulag the Cleaver
@@ -2145,14 +2145,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1518,	-- Apothecary Johaan
 					["sourceQuest"] = 24975,	-- Fields of Grief
 					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57147, {	-- Xavren's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57148, {	-- Marrowpetal Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131388, {	-- Xavren's Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2705,7 +2705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(52079, {	-- A Scarlet Letter
-					["timeline"] = { "added 4.0.3.13287" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 1535,	-- Scarlet Warrior
 				}),
 				-- #if BEFORE 10.1.7

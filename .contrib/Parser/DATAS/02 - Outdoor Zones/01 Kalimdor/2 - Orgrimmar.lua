@@ -494,7 +494,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25160, {	-- A Present for Lila
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3216,	-- Arnak Fireblade
 					["sourceQuest"] = 25263,	-- Arnak Fireblade
 					["coord"] = { 58.5, 53.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31853, {	-- All Aboard!
@@ -580,7 +580,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 85.0, 14.0, UNDERCITY },	-- Kaelystia Hatebringer <Mage Trainer>
 						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven <Mage Trainer>
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
@@ -761,7 +761,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26227, {	-- Careful, This Fruit Bites Back
 					["qg"] = 42506,	-- Marogg
 					["coord"] = { 56.5, 62.5, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -782,7 +782,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26226, {	-- Crawfish Creole
 					["qg"] = 42506,	-- Marogg
 					["coord"] = { 56.5, 62.5, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -869,14 +869,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 13841,	-- All Apologies
 					["coord"] = { 49.2, 72.3, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56708, {	-- Bow of Ire (old version)
-							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2.18764" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.2.18764" },
 						}),
 						i(56710, {	-- Unbountied Cloak (Replaced by Durak's Downfall in WoD)
-							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2.18764" },
+							["timeline"] = { ADDED_4_0_3, "removed 6.0.2.18764" },
 						}),
 						i(119325, {	-- Bow of Ire
 							["timeline"] = { "added 6.0.2.18764" },
@@ -903,13 +903,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3310,	-- Doras
 					["sourceQuest"] = 26803,	-- Missing Reports
 					["coord"] = { 49.4, 59.2, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 				}),
 				q(27686, {	-- Forged Documents
 					["provider"] = { "i", 63276 },	-- Forged Documents
 					["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = INSCRIPTION,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -917,7 +917,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25162, {	-- Elemental Goo
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -926,7 +926,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26235, {	-- Even Thieves Get Hungry
 					["qg"] = 42506,	-- Marogg
 					["coord"] = { 56.5, 62.5, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -935,7 +935,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26220, {	-- Everything Is Better with Bacon
 					["qg"] = 42506,	-- Marogg
 					["coord"] = { 56.5, 62.5, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1277,7 +1277,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 28717,	-- Warchief's Command: Twilight Highlands!
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(4494, {	-- March of the Silithid (H)
@@ -1310,7 +1310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26803, {	-- Missing Reports
 					["qg"] = 3144,	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 				}),
 				q(60964, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
@@ -1341,7 +1341,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25158, {	-- Nibbler! No!
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1362,7 +1362,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25161, {	-- Ogrezonians in the Mood
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1404,7 +1404,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25275, {	-- Report to the Labor Captain
 					["qg"] = 3144,	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 				}),
 				q(26840, {	-- Return to the Highlands
@@ -1427,7 +1427,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 26294,	-- Weapons of Mass Dysfunction
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1559,14 +1559,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.5, 62.5, ORGRIMMAR },
 					["requireSkill"] = COOKING,
 					["races"] = exclude(TROLL, HORDE_ONLY),
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isDaily"] = true,
 					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(26234, {	-- Stealing From Our Own (Troll)
 					["qg"] = 42506,	-- Marogg
 					["coord"] = { 56.5, 62.5, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = { TROLL },
 					["isDaily"] = true,
@@ -1689,7 +1689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25159, {	-- The Latest Fashion!
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1840,28 +1840,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 26798,	-- Saurfang Will be Pleased
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63916, {	-- Belt of Mystical Betrayal
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63914, {	-- Mindsliced Chestguard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63913, {	-- Twilight-Heart Shoulderplates
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63912, {	-- Twilight Mirrorshield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63915, {	-- Vision-Tainted Treads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						-- #if BEFORE 9.1.0
 						i(63917, {	-- Truthbreaker Shield [Not listed, but awards on completing quest] [9.1: was NOT received when completed. 2021-09-25]
 							-- Crieve NOTE: This appears to have been an Alliance quest reward in SW.
-							["timeline"] = { "added 4.0.3.13277", REMOVED_9_1_0 },
+							["timeline"] = { ADDED_4_0_3, REMOVED_9_1_0 },
 						}),
 						-- #endif
 					},
@@ -1908,13 +1908,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63922, {	-- Awestruck Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63924, {	-- Blade-Dodging Girdle
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63923, {	-- Hauberk of Shock
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2549,23 +2549,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
 					["coord"] = { 49.9, 58.1, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(45582, {	-- Darkspear Tabard
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64912, {	-- Darkspear Cape
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64911, {	-- Darkspear Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64913, {	-- Darkspear Shroud
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67536, {	-- Darkspear Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2626,7 +2626,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(46593, {	-- Doris Volanthius Original CATA S9 ELITE VENDOR Horde
 					["coord"] = { 38.8, 69.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -2818,23 +2818,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
 					["coord"] = { 50.0, 58.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(64884, {	-- Bilgewater Cartel Tabard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64906, {	-- Bilgewater Cape
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64905, {	-- Bilgewater Shroud
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64907, {	-- Bilgewater Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67525, {	-- Bilgewater Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -3119,10 +3119,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62462, {
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),	-- Goblin Turbo-Trike (MOUNT!)
 						i(62461, {
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),	-- Goblin Trike (MOUNT!)
 					},
 				}),
@@ -3194,7 +3194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
@@ -3912,7 +3912,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50482, {	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
@@ -4080,7 +4080,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(44975, {	-- Old Umbehto
 					["coord"] = { 35.0, 67.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 4.0.3." },
+					["timeline"] = { ADDED_4_0_3 },
 					["sym"] = {{"select","itemID",
 						6365,	-- Strong Fishing Pole
 					}},
@@ -4687,23 +4687,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
 					["coord"] = { 50.4, 58.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(45581, {	-- Orgrimmar Tabard
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64908, {	-- Shroud of Orgrimmar
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64909, {	-- Cape of Orgrimmar
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64910, {	-- Mantle of Orgrimmar
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67533, {	-- Orgrimmar Satchel
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

@@ -480,7 +480,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
 						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
@@ -498,7 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
@@ -515,7 +515,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 92.0, 37.2, SILVERMOON_CITY },	-- Champion Bachi
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -534,7 +534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 47.2, 88.4, IRONFORGE },	-- Daera Brightspear
 						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
@@ -545,7 +545,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(28259, {	-- Meet with Demisette Cloyce / Meet with Evelyn Thorn [SL+]
 					["qg"] = 5173,	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, IRONFORGE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
@@ -564,7 +564,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
 						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -582,7 +582,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.8, 78.8, DARNASSUS },	-- Droha
 						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
@@ -602,7 +602,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven
 						{ 85.2, 14.2, UNDERCITY },	-- Kaelystia Hatebringer
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -621,7 +621,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
 						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -641,7 +641,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
@@ -659,7 +659,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 22.2, 19.0, THUNDER_BLUFF },	-- Kador Cloudsong
 						{ 71.8, 56.0, SILVERMOON_CITY },	-- Gez'li
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -678,7 +678,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien
 						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -697,7 +697,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
 						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -715,7 +715,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
 						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -735,7 +735,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
 						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -755,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 92.0, 37.2, SILVERMOON_CITY },	-- Champion Bachi
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -772,7 +772,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 43.8, 78.8, DARNASSUS },	-- Droha
 						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
@@ -792,7 +792,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine
 						{ 49.6, 29.0, UNDERCITY },	-- Apolos
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
@@ -811,7 +811,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
@@ -829,7 +829,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
 						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
@@ -847,7 +847,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
@@ -866,7 +866,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine
 						{ 49.6, 29.0, UNDERCITY },	-- Apolos
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
@@ -883,7 +883,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 22.2, 19.0, THUNDER_BLUFF },	-- Kador Cloudsong
 						{ 71.8, 56.0, SILVERMOON_CITY },	-- Gez'li
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -902,7 +902,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven
 						{ 85.2, 14.2, UNDERCITY },	-- Kaelystia Hatebringer
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -919,7 +919,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
 						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -939,7 +939,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 47.2, 88.4, IRONFORGE },	-- Daera Brightspear
 						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
@@ -959,7 +959,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien
 						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1067,15 +1067,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 64.6, 33.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65640, {	-- Mask of the Farseer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65622, {	-- Headcover of the Farseer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1089,15 +1089,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 39.0, 47.4, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65643, {	-- Mask of the Speaker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65630, {	-- Headcover of the Speaker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1117,12 +1117,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 39.4, 84.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(65621, {	-- Horns of Justified Sins
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1142,12 +1142,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 49.0, 55.2, ORGRIMMAR },
 						-- #ENDIF
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65627, {	-- Horns of the Left Hand Path
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1182,12 +1182,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.6, 60.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(65624, {	-- SI:7 Special Issue Facemask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1207,12 +1207,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 44.6, 61.4, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65629, {	-- Facemask of the Shattered Hand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1278,12 +1278,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.0, 71.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65619, {	-- Helm of the Crown
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1303,12 +1303,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 63.8, 32.8, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65628, {	-- Helm of the Great Hunter
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1427,12 +1427,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
 					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["groups"] = {
 						i(65620, {	-- Hood of the Royal Wizard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1452,12 +1452,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 48.4, 62.6, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65626, {	-- Hood of the Arcane Path
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1657,18 +1657,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 52.6, 45.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65623, {	-- Helm of the Order
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65641, {	-- Faceguard of the Order
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65646, {	-- Headguard of the Order
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						-- You get these when completing the quest (Only when completing Horde version specifically and relogging, gg Blizz)
 						-- i(141976, {	-- Headguard of the Order
@@ -1686,18 +1686,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 44725,	-- Sunwalker Atohmo
 					["sourceQuest"] = 28302,	-- Meet with Sunwalker Atohmo / Meet with Avaros Dawnglaive [SL+]
 					["coord"] = { 45.2, 53.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(65631, {	-- Helm of the Sunwalker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65644, {	-- Faceguard of the Sunwalker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65647, {	-- Headguard of the Sunwalker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						-- You get these when completing the quest
 						i(141976, {	-- Headguard of the Order
@@ -1718,18 +1718,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 23128,	-- Master Pyreanor
 					["sourceQuest"] = 28303,	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
 					["coord"] = { 49.2, 71.2, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["groups"] = {
 						i(65632, {	-- Helm of the Order
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65645, {	-- Faceguard of the Order
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65648, {	-- Headguard of the Order
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(25549),	-- Blood Knight Tabard
 					},
@@ -1777,16 +1777,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.4, 69.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65618, {	-- Faceguard of the Crown
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65639, {	-- Headguard of the Crown
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1794,16 +1794,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 168596,	-- Gormok Ogrefist
 					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
 					["coord"] = { 73.6, 45.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65625, {	-- Faceguard of the Horde
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65642, {	-- Headguard of the Horde
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1821,7 +1821,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -1840,7 +1840,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -1859,7 +1859,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1878,7 +1878,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -1897,7 +1897,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -1918,7 +1918,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -1937,7 +1937,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -1952,7 +1952,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.4, 52.0, SILVERMOON_CITY },
 						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1971,7 +1971,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1990,7 +1990,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2009,7 +2009,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -2028,7 +2028,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -2045,7 +2045,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 79.4, 52.0, SILVERMOON_CITY },
 						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2066,7 +2066,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -2078,7 +2078,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 45337,	-- Tyelis
 					["sourceQuest"] = 28307,	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
 					["coord"] = { 49.0, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(50, 50, 20),
@@ -2090,7 +2090,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 45347,	-- Brother Silverhallow
 					["sourceQuest"] = 28323,	-- Meet with Brother Silverhallow (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
 					["coord"] = { 37.8, 87.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["lvl"] = lvlsquish(50, 50, 20),
@@ -2102,7 +2102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 45339,	-- Dark Cleric Cecille
 					["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
 					["coord"] = { 48.2, 72.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = lvlsquish(50, 50, 20),
@@ -2114,7 +2114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 44735,	-- Seer Liwatha
 					["sourceQuest"] = 28308,	-- Meet with Seer Liwatha (Cata+) / Journey to Orgrimmar [Tauren] (SL+)
 					["coord"] = { 45.4, 53.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(50, 50, 20),
@@ -2131,7 +2131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 45137,	-- Shadow-Walker Zuru
 					["sourceQuest"] = 28309,	-- Meet with Shadow-Walker Zuru (Cata+) / Journey to Orgrimmar [Troll] (SL+)
 					["coord"] = { 35.4, 69.2, ORGRIMMAR },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = lvlsquish(50, 50, 20),
@@ -2155,12 +2155,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65616, {	-- Crown of the Hallowed
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						-- you are supposed to get these when doing the quest, but i completed it on 2 characters and haven't received them :) possible unknown race requirement?
 						-- Crieve note: The following items are still sourceless on WoWHead, so it's quite possible the intent was to make versions for Allied Races, but Blizzard realized that'd be dumb and smacked the intern that was doing the dumb.
@@ -2174,59 +2174,59 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27569, {	-- Dark Iron Tacticians
 					["qg"] = 45894,	-- Prospector Seymour
 					["sourceQuest"] = 27568,	-- Infilitrating Shadowforge City [Alliance]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27568, {	-- Infiltrating Shadowforge City [Alliance]
 					["qg"] = 45891,	-- Oralius
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27582, {	-- Infiltrating Shadowforge City [Horde]
 					["qg"] = 45839,	-- Galamav the Marksman
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27565, {	-- Into the Prison [Alliance]
 					["qg"] = 45892,	-- Jalinda Sprig
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27579, {	-- Into the Prison [Horde]
 					["qg"] = 45821,	-- Tha'trak Proudtusk
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27585, {	-- The 109th Division
 					["qg"] = 45820,	-- Razal'blade
 					["sourceQuest"] = 27582,	-- Infiltrating Shadowforge City [Horde]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27596, {	-- The Heart of the Mountain
 					["qg"] = 45850,	-- Maxwort Uberglint
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27603, {	-- The Sealed Gate
 					["qg"] = 45849,	-- Tinkee Steamboil
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27567, {	-- Twilight?! No! [Alliance]
 					["qg"] = 45898,	-- Kevin Dawson
 					["sourceQuest"] = 27565,	-- Into the Prison [Alliance]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27581, {	-- Twilight?! No! [Horde]
 					["qg"] = 45818,	-- Lexlort
 					["sourceQuest"] = 27579,	-- Into the Prison [Horde]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27578, {	-- Morgan's Fruition
 					["qg"] = 45890,   -- Marshal Maxwell
 					["sourceQuest"] = 27573,	-- The Dark Iron Pact [Alliance]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65956),	-- Maxwell's Cloak
@@ -2237,7 +2237,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27593, {	-- Rebirth of the K.E.F
 					["qg"] = 45840,	-- Warlord Goretooth
 					["sourceQuest"] = 27591,  -- The Dark Iron Pact [Horde]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(68054),	-- Dark Iron Band
@@ -2248,25 +2248,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27573, {	-- The Dark Iron Pact [Alliance]
 					["qg"] = 45899,	-- Mountaineer Orfus
 					["sourceQuest"] = 27571,	-- The Grim Guzzler [Alliance]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27591, {	-- The Dark Iron Pact [Horde]
 					["qg"] = 45824,	--  Thunderheart
 					["sourceQuest"] = 27589,	-- The Grim Guzzler [Horde]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27571, {	-- The Grim Guzzler [Alliance]
 					["qg"] = 45888,	-- Mayara Brightwing
 					["sourceQuest"] = 27569,	-- Dark Iron Tacticians
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27589, {	-- The Grim Guzzler [Horde]
 					["qg"] = 45817,	-- Hierophant Theodora Mulvadania
 					["sourceQuest"] = 27585,	-- The 109th Division
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -2934,7 +2934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #endif
 						}),
 						ach(5051, {	-- Blackrock Depths Guild Run
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(11931),	-- Dreadforge Retaliatior
 						-- #if BEFORE 7.3.2

@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(203, {	-- Vashj'ir
 		["lore"] = "Vashj'ir is an underwater zone. Players receive underwater breathing, swim speed buffs, and eventually a sea horse mount early on in questing to make transportation easier. Players learn about the history of the Highborne, as this city was home to Lady Vashj before the Sundering. Players learn about the threat of Ozumat, culminating in a battle between Neptulon and the naga.",
 		["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5318, {	-- 20,000 Leagues Under the Sea (A)

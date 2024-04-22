@@ -292,13 +292,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 						}),
 						i(37244, {	-- Fungi-Coated Boots
-							["timeline"] = { "created 3.0.1", "added 4.0.3.13287" },
+							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
 							-- #if AFTER 8.0.1
 							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 							-- #endif
 						}),
 						i(37245, {	-- Tangled Web Bindings
-							["timeline"] = { "created 3.0.1", "added 4.0.3.13287" },
+							["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
 							-- #if AFTER 8.0.1
 							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 							-- #endif
@@ -362,7 +362,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["groups"] = {
 							ach(1860),	-- Gotta Go!
 							ach(5097, {	-- Heroic: Azjol-Nerub Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH]
 								["timeline"] = { "removed 4.0.3" },

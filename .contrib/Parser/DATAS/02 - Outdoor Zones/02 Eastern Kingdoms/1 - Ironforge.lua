@@ -952,17 +952,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42129,	-- Moira Thaurissan
 					["sourceQuest"] = 26112,	-- Demanding Answers
 					["coord"] = { 39.7, 57.3, IRONFORGE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(57583, {	-- The Slaghammer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57584, {	-- Battleaxe of the Sober Dwarf
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57585, {	-- Ambassador's Duplicitous Dagger
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(133692, {	-- Ambassador's Deceitful Dagger
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1309,11 +1309,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(51596, {	-- Wildhammer Fact Checker
 					["coord"] = { 38.6, 54.8, IRONFORGE },
 					["description"] = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.\n",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(68611, {	-- Red Shirt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1425,23 +1425,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
 					["coord"] = { 55.8, 47.8, IRONFORGE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64899, {	-- Cape of Ironforge
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67528, {	-- Ironforge Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45577, {	-- Ironforge Tabard
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64900, {	-- Mantle of Ironforge
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64898, {	-- Shroud of Ironforge
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1863,23 +1863,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
 					["coord"] = { 55.8, 47.8, IRONFORGE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64896, {	-- Cape of Gnomeregan
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67530, {	-- Gnomeregan Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45578, {	-- Gnomeregan Tabard
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64895, {	-- Mantle of Gnomeregan
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64897, {	-- Shroud of Gnomeregan
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

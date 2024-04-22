@@ -1060,7 +1060,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["timeline"] = { "added 3.0.1" },
 					}),
 					ach(5090, {	-- The Battle for Mount Hyjal Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(122112, {	-- Hyjal Wisp (PET!)
 						["timeline"] = { ADDED_6_1_0 },

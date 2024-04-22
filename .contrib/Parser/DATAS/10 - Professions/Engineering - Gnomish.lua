@@ -27,7 +27,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "De-Weaponized Mechanical Companion",
-						["timeline"] = { "added 4.0.3.13287" },
+						["timeline"] = { ADDED_4_0_3 },
 						["recipeID"] = 84413,
 					},
 					{
@@ -49,7 +49,7 @@ profession(ENGINEERING, {
 					}),
 					{
 						["name"] = "Gnomish Gravity Well",
-						["timeline"] = { "added 4.0.3.13286" },
+						["timeline"] = { ADDED_4_0_3 },
 						["recipeID"] = 95705,
 					},
 					{

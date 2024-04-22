@@ -376,13 +376,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 17207,	-- Naias
 						}),
 						i(61093, {	-- Junglewalker Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61092, {	-- Monnions of Raw Power
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61091, {	-- Blade of Exotic Magic
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131255, {	-- Shouldersguards of Raw Power
 							["timeline"] = { "added 7.0.3.22248" },
@@ -495,16 +495,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 731,	-- King Bangalash
 						}),
 						i(61127, {	-- Gloves of the Jungle King
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61126, {	-- Mantle of the White Tiger
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61125, {	-- Nesingwary's Sash
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61124, {	-- Bangalash's Claw
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131202, {	-- Monnion of the White Tiger
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1287,13 +1287,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 728,	-- Bhag'thera
 						}),
 						i(61109, {	-- Bhag'thera's Roar
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61108, {	-- Shield of the Panther
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61107, {	-- Mantle of the Panther
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(4108, {	-- Panther Hunter Leggings
 							["timeline"] = { "removed 4.0.3" },
@@ -1369,13 +1369,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 730,	-- Tethis
 						}),
 						i(61111, {	-- Belt of the Raptor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61112, {	-- Raptor Slayer's Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61110, {	-- Tethis' Skull
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131201, {	-- Scale-Cord of the Raptor
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2166,16 +2166,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 729,	-- Sin'Dall
 						}),
 						i(61116, {	-- Tiger Strangler's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61115, {	-- Paws of Sin'Dall
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61114, {	-- Cat Lover's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61113, {	-- Sin'Dall's Femur
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131200, {	-- Footpads of Sin'Dall
 							["timeline"] = { "added 7.0.3.22248" },

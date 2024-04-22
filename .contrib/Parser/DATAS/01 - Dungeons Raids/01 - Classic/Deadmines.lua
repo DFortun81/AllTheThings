@@ -84,7 +84,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 46889,	-- Kagtha
 				["sourceQuest"] = 27847,	-- Not Quite There
 				["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Admiral Ripsnarl
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -97,7 +97,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 46902,	-- Miss Mayhem
 				["sourceQuest"] = 27844,	-- Traitors!!!
 				["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Foe Reaper 5000
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -131,7 +131,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 46889,	-- Kagtha
 				-- The source quest never made it out of Beta.
 				--["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -171,7 +171,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(27785, {	-- The Admiral
 				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27781,	-- The Machination
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -183,7 +183,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(27758, {	-- The Carpenter
 				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27756,	-- The Foreman
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -217,7 +217,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(27790, {	-- The Defias Kingpin [Alliance]
 				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27785,	-- The Admiral
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -232,7 +232,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(27850, {	-- The Defias Kingpin [Horde]
 				["qg"] = 46889,	-- Kagtha
 				["sourceQuest"] = 27848,	-- Good Intentions...Poor Execution
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -251,7 +251,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 				-- The source quest never made it out of Beta.
 				--["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -263,7 +263,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(27781, {	-- The Machination
 				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27758,	-- The Carpenter
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -293,7 +293,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["qg"] = 46906,	-- Slinky Sharpshiv
 				["sourceQuest"] = 27842,	-- Only the Beginning
 				["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Helix Gearbreaker
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
 				["groups"] = {
@@ -698,7 +698,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			e(89, {	-- Glubtok
 				["creatureID"] = 47162,	-- Glubtok
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["groups"] = {
 					i(2169),	-- Buzzer Blade
 					i(5444),	-- Miner's Cape
@@ -707,7 +707,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			e(90, {	-- Helix Gearbreaker
 				["creatureID"] = 47296,	-- Helix Gearbreaker
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["groups"] = {
 					i(5200),	-- Impaling Harpoon
 					i(5191),	-- Cruel Barb
@@ -726,7 +726,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			e(91, {	-- Foe Reaper 5000
 				["creatureID"] = 43778,	-- Foe Reaper 5000
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["groups"] = {
 					i(5201),	-- Emberstone Staff
 					i(5187),	-- Foe Reaper [TBC+] / Rhahk'Zor's Hammer [Classic]
@@ -744,7 +744,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			e(92, {	-- Admiral Ripsnarl
 				["creatureID"] = 47626,	-- Admiral Ripsnarl
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["groups"] = {
 					i( 872),	-- Rockslicer
 					i(5196),	-- Smite's Reaver
@@ -753,7 +753,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			e(93, {	-- "Captain" Cookie
 				["creatureID"] = 47739,	-- "Captain" Cookie
-				["timeline"] = { "added 4.0.3" },
+				["timeline"] = { ADDED_4_0_3 },
 				["groups"] = {
 					ach(628),	-- Deadmines
 					ach(5037),	-- Deadmines Guild Run
@@ -768,7 +768,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		}),
 		-- #endif
 		d(DIFFICULTY.DUNGEON.HEROIC, {
-			["timeline"] = { "added 4.0.3" },
+			["timeline"] = { ADDED_4_0_3 },
 			["lvl"] = 85,
 			["groups"] = {
 				e(89, {	-- Glubtok

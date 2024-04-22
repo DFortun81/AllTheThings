@@ -1286,9 +1286,9 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(60707, {["timeline"]={"added 3.1.0"}}),	-- Superior Potency
 		}),
 	}))),
-	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
 		r(74258, {	-- Enchanting (Illustrious)
-			["timeline"]={ "added 4.0.3", "removed 8.0.1" },
+			["timeline"]={ ADDED_4_0_3, "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #endif
@@ -1348,13 +1348,13 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(707, sharedDataSelf({ ["timeline"] = { "added 4.3.0" } }, {	-- Reagents
 			r(104698),	-- Maelstrom Shatter
 		})),
-		cat(445, sharedDataSelf({ ["timeline"] = { "added 4.0.3", "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, "removed 6.0.2" } }, {	-- Ring Enchantments
 			r(74216),	-- Agility
 			r(74218),	-- Greater Stamina
 			r(74217),	-- Intellect
 			r(74215),	-- Strength
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { "added 4.0.3", "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, "removed 5.0.4" } }, {	-- Rods
 			r(92370),	-- Runed Elementium Rod
 		})),
 		cat(670, {	-- Shield and Off-Hand Enchantments

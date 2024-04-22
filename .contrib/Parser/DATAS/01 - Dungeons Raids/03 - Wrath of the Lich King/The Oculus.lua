@@ -416,7 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 							}),
 							ach(5104, {	-- Heroic: The Oculus Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(1868),	-- Make It Count
 							ach(2044, {	-- Ruby Void

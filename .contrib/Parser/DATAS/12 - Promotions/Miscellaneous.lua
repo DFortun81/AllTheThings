@@ -22,10 +22,10 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	})),
 	i(48527, {	-- Onyx Panther (PET!)
 		["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
-		["timeline"] = { "created 3.0.1", "added 4.0.3.13287" },
+		["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
 		["groups"] = {
 			ach(3896, {	-- Onyx Panther
-				["timeline"] = { "added 4.0.3.13287" },
+				["timeline"] = { ADDED_4_0_3 },
 			}),
 		},
 	}),

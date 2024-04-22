@@ -883,27 +883,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 26398 },	-- Walk With The Earth Mother
 					["sourceQuest"] = 24540,	-- War Dance
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 				}),
 				q(24540, {	-- War Dance
 					["qg"] = 36648,	-- Baine Bloodhoof
 					["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(57241, {	-- Dreamwalking Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57230, {	-- Kodo Mallet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57214, {	-- Stunted Tree Root
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57239, {	-- Sunwalker's Stunner
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156986, {	-- Kodo Gavel
 							["timeline"] = { "added 7.3.5.25716" },
@@ -932,7 +932,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
 					["coord"] = { 47.05, 50.23, THUNDER_BLUFF },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(167860, {	-- Ancient Tauren Talisman
@@ -943,16 +943,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64917, {	-- Cape of Thunder Bluff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64918, {	-- Mantle of Thunder Bluff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64919, {	-- Shroud of Thunder Bluff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67534, {	-- Thunder Bluff Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

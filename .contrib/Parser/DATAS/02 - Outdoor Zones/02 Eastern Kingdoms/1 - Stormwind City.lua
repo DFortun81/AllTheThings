@@ -439,7 +439,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26190, {	-- A Fisherman's Feast
 					["qg"] = 42288,	-- Robby Flay
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -556,7 +556,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25154, {	-- A Present for Lila
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -578,23 +578,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 205198 },	-- Pile of Explosives
 					["sourceQuest"] = 27092,	-- Cataclysm in the Catacombs
 					["coord"] = { 50.4, 42.4, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63919, {	-- Corruption-Seeking Chestguard
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 						i(63918, {	-- Detective's Shoulderplates
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 						i(63920, {	-- Treads of Revelation
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 						i(63921, {	-- Truth-Seeker Belt
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 						i(63917, {	-- Truthbreaker Shield
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 					},
 				}),
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28827,	-- To the Depths
 					},
 					["coord"] = { 27.4, 24.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
@@ -1118,7 +1118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
 					["sourceQuest"] = 27072,	-- The Old Barracks
 					["coord"] = { 37.2, 56.4, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7642, {	-- Collection of Goods
@@ -1335,7 +1335,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74.2, 47.6, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { HUMAN, KULTIRAN },
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1365,7 +1365,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25156, {	-- Elemental Goo
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1451,7 +1451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27060,	-- Unholy Cow
 					},
 					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58708, {	-- Fame Waits for Gnome One
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26177, {	-- Feeling Crabby?
 					["qg"] = 42288,	-- Robby Flay
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1530,7 +1530,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27675, {	-- Forged Documents
 					["provider"] = { "i", 62056 },	-- Forged Documents
 					["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = INSCRIPTION,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1547,7 +1547,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
 						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
@@ -1748,7 +1748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44293,	-- Anduin Wrynn <Prince of Stormwind>
 					["sourceQuest"] = 26997,	-- The Usual Suspects
 					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1939, {	-- High Sorcerer Andromath
@@ -2051,7 +2051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
 						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					},
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
@@ -2346,17 +2346,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44749,	-- Supply Sergeant Graves
 					["sourceQuest"] = 26975,	-- Rallying the Fleet
 					["coord"] = { 33.2, 39.4, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63927, {	-- Machine-Linker Girdle
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 						i(63926, {	-- Reconstructing Hauberk
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 						i(63925, {	-- Scavenger Bracers
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 						}),
 					},
 				}),
@@ -2379,13 +2379,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26960, {	-- My Son, the Prince
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25105, {	-- Nibbler! No!
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2394,7 +2394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25155, {	-- Ogrezonians in the Mood
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2438,7 +2438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26192, {	-- Orphans Like Cookies Too!
 					["qg"] = 42288,	-- Robby Flay
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2467,13 +2467,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26997,	-- The Usual Suspects
 					},
 					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26153, {	-- Penny's Pumpkin Pancakes
 					["qg"] = 42288,	-- Robby Flay
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2508,7 +2508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 					["sourceQuest"] = 26960,	-- My Son, the Prince
 					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2281, {	-- Redridge Rendezvous
@@ -2553,7 +2553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
 					["races"] = { HUMAN, KULTIRAN, VOIDELF },
 				}),
@@ -3091,7 +3091,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26183, {	-- The King's Cider
 					["qg"] = 42288,	-- Robby Flay
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -3100,7 +3100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25157, {	-- The Latest Fashion!
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -3274,7 +3274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
 					["sourceQuest"] = 28807,	-- Expert Opinion
 					["coord"] = { 81.2, 63.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2758, {	-- The Origins of Smithing
@@ -3765,7 +3765,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2439,	-- Major Samuelson <Stormwind City Guard>
 					["sourceQuest"] = 26977,	-- Twilight Investigation
 					["coord"] = { 85.1, 31.0, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7641, {	-- The Work of Grimand Elmore
@@ -3833,7 +3833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45226,	-- Naraat the Earthspeaker
 					["sourceQuest"] = 28826,	-- The Eye of the Storm
 					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3856,7 +3856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 					["sourceQuest"] = 26960,	-- My Son, the Prince
 					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28238, {	-- Twilight Shores (1/2)
@@ -3867,14 +3867,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 28716,	-- Hero's Call: Twilight Highlands!
 					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28832, {	-- Twilight Shores (2/2)
 					["qg"] = 44806,	-- Fargo Flintlocke
 					["sourceQuest"] = 28238,	-- Twilight Shores (1/2)
 					["coord"] = { 26.2, 47.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47222, {	-- Two If By Sea
@@ -3891,7 +3891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44807,	-- Farmer Wollerton
 					["sourceQuest"] = 27044,	-- Peasant Problems
 					["coord"] = { 52.0, 5.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1938, {	-- Ur's Treatise on Shadow Magic
@@ -4734,7 +4734,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(49877, {	-- Captain Lancy Revshon <Stormwind Quartermaster>
 					["coord"] = { 67.6, 72.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64902, {	-- Cape of Stormwind
@@ -4747,7 +4747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.1.12941" },
 						}),
 						i(67531, {	-- Stormwind Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45574, {	-- Stormwind Tabard
 							["timeline"] = { "added 3.1.0.9626" },
@@ -5641,7 +5641,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
 					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -5677,7 +5677,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(67312, {	-- Formula: Magic Lamp (RECIPE!)
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -6185,19 +6185,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64882, {	-- Gilneas Tabard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64893, {	-- Cape of Gilneas
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64892, {	-- Mantle of Gilneas
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64894, {	-- Shroud of Gilneas
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67532, {	-- Gilnean Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -6343,16 +6343,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64887, {	-- Cape of Darnassus
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64888, {	-- Mantle of Darnassus
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64886, {	-- Shroud of Darnassus
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67526, {	-- Darnassian Satchel
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

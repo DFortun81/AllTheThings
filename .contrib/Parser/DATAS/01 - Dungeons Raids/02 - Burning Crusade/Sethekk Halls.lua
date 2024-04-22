@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { "added 3.0.1" },
 							}),
 							ach(5074, {	-- Heroic: Sethekk Halls Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(27986),	-- Crow Wing Reaper
 							i(29355),	-- Terokk's Shadowstaff

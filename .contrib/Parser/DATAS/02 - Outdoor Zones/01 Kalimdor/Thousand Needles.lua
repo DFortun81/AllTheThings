@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				ach(4938, {	-- Thousand Needles Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles
 					["cr"] = 40769,	-- Zazzix Boomride <Flight Master>
 					["coord"] = { 79, 71.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				fp(30, {	-- Westreach Summit, Thousand Needles [CATA+] / Freewind Post, Thousand Needles
 					["crs"] = {
@@ -200,20 +200,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40591,	-- Drag Master Miglen
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats [A]
 					["coord"] = { 78.0, 73.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63574, {	-- Paper Roll Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63575, {	-- Drag Master's Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63576, {	-- Outhouse Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63577, {	-- Payback Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -221,20 +221,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40595,	-- Rugfizzle
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats [H]
 					["coord"] = { 78.2, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63578, {	-- Paper Roll Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63579, {	-- Rugfizzle's Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63580, {	-- Outhouse Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63581, {	-- Payback Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -316,20 +316,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41204,	-- Khan Ablinh
 					["sourceQuest"] = 25778,	-- Fake Gold for Black Gold [A]
 					["coord"] = { 91.2, 53.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63566, {	-- Suspicious Slippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63567, {	-- Swindler's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63568, {	-- Belt of the Unfooled
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63569, {	-- Uncompromising Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -337,20 +337,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41205,	-- Khan Blizh
 					["sourceQuest"] = 25779,	-- Fake Gold for Black Gold [H]
 					["coord"] = { 86.7, 51.5, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63570, {	-- Suspicious Slippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63571, {	-- Swindler's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63572, {	-- Belt of the Unfooled
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63573, {	-- Uncompromising Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -358,14 +358,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40554,	-- Rizzle Brassbolts
 					["sourceQuest"] = 25488,	-- Two if By Boat
 					["coord"] = { 78.0, 73.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25518, {	-- Bar Fight! [H]
 					["qg"] = 40556,	-- Zamek
 					["sourceQuest"] = 25489,	-- Two if By Boat
 					["coord"] = { 78.1, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28136, {	-- Behind You!
@@ -375,19 +375,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28125,	-- Something to Wear
 					},
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63659, {	-- Starion's Slippers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63660, {	-- Codemaster's Cuffs
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63661, {	-- Fastfuse Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63662, {	-- Bulwark of Leaders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47580,	-- Lakota Windsong
 					["sourceQuest"] = 28124,	-- On to the Bulwark
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1531, {	-- Call of Air [Orgrimmar]
 					["qg"] = 5892,	-- Searn Firewarder
@@ -427,27 +427,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41060,	-- Ajamon Ghostcaller
 					["sourceQuest"] = 25661,	-- With a Little Help...
 					["coord"] = { 96.8, 72.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25542, {	-- Circle the Wagons... er, Boats [A]
 					["qg"] = 40475,	-- Jinky Twizzlefixxit
 					["altQuests"] = { 25561 },	-- Circle the Wagons... er, Boats [A]
 					["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing [A]
 					["coord"] = { 76.4, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63550, {	-- Speedbarge Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63551, {	-- Smooching Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63552, {	-- Pirate Sinker's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63553, {	-- Dignified Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131434, {	-- Lovely Gloves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 25542 },	-- Circle the Wagons... er, Boats [A]
 					["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing [A]
 					["coord"] = { 76.4, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","questID",25542},{"pop"}},
 				}),
@@ -470,20 +470,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 25562 },	-- Circle the Wagons... er, Boats [H]
 					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing [H]
 					["coord"] = { 77, 74.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63554, {	-- Speedbarge Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63555, {	-- Pirate Sinker's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63556, {	-- Bear Hug Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63557, {	-- Manly Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131435, {	-- Pirate Sinker's Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 25543 },	-- Circle the Wagons... er, Boats [H]
 					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing [H]
 					["coord"] = { 77, 74.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","questID",25543},{"pop"}},
 				}),
@@ -508,25 +508,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28125,	-- Something to Wear
 					},
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27312, {	-- Darkcloud Grimtotem [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27275,	-- Together Again
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63595, {	-- Amulet of Spilling Blood
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63592, {	-- Blood Waders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63593, {	-- Goddess-Blessed Wristlets
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63594, {	-- Grimtotem Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -534,20 +534,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27276,	-- Together Again
 					["coord"] = { 42.2, 48.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63599, {	-- Reaper's Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63596, {	-- Blood Waders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63597, {	-- Bracers of Reluctant Violence
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63598, {	-- Pauldrons of the Teachings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -555,19 +555,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47471,	-- Pao'ka Swiftmountain
 					["sourceQuest"] = 28085,	-- Trouble at Highperch
 					["coord"] = { 12.8, 33.9, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63648, {	-- Swift Mountain Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63649, {	-- Trapper's Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63650, {	-- Pao'ka's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63651, {	-- Trapper Punchers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -575,31 +575,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41190,	-- Crazzle Sprysprocket
 					["sourceQuest"] = 25790,	-- Back to Crazzle
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25799, {	-- Defend the Drill [H]
 					["qg"] = 41184,	-- Riznek
 					["sourceQuest"] = 25791,	-- Back to Riznek
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25825, {	-- Deliver the Goods [A]
 					["qg"] = 41190,	-- Crazzle Sprysprocket
 					["sourceQuest"] = 25813,	-- Go Blow that Horn [A]
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63611, {	-- Send-Off Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63612, {	-- Speedbarge Bailer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63613, {	-- Fizzle's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -607,17 +607,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41184,	-- Riznek
 					["sourceQuest"] = 25814,	-- Go Blow that Horn [H]
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63614, {	-- Send-Off Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63615, {	-- Speedbarge Bailer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63616, {	-- Pozzik's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -636,34 +636,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40027,	-- Fizzle Brassbolts
 					["sourceQuest"] = 25488,	-- Two if By Boat
 					["coord"] = { 75.9, 74.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25505, {	-- Do Me a Favor? [H]
 					["qg"] = 40028,	-- Pozzik
 					["sourceQuest"] = 25489,	-- Two if By Boat
 					["coord"] = { 75.9, 74.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25515, {	-- Down in the Deeps [A]
 					["qg"] = 40475,	-- Jinky Twizzlefixxit
 					["sourceQuest"] = 25504,	-- Do Me a Favor? [A]
 					["coord"] = { 76.5, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63542, {	-- Twizzlefixxit's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63543, {	-- Driver's Armbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63544, {	-- Wet Suit Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63545, {	-- Raceway Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131432, {	-- Driver's Chain Bracers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -674,20 +674,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40487,	-- Razzeric
 					["sourceQuest"] = 25505,	-- Do Me a Favor? [H]
 					["coord"] = { 77.1, 74.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63546, {	-- Razzeric's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63547, {	-- Driver's Armbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63548, {	-- Wet Suit Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63549, {	-- Raceway Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131433, {	-- Driver's Chain Bracers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -698,14 +698,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41190,	-- Crazzle Sprysprocket
 					["sourceQuest"] = 25790,	-- Back to Crazzle
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25797, {	-- Eminent Domain [H]
 					["qg"] = 41184,	-- Riznek
 					["sourceQuest"] = 25791,	-- Back to Riznek
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1107, {	-- Encrusted Tail Fins
@@ -732,14 +732,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41190,	-- Crazzle Sprysprocket
 					["sourceQuest"] = 25774,	-- Fool's Gold [A]
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25779, {	-- Fake Gold for Black Gold [H]
 					["qg"] = 41184,	-- Riznek
 					["sourceQuest"] = 25775,	-- Fool's Gold [H]
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5361, {	-- Family Tree
@@ -773,21 +773,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41190,	-- Crazzle Sprysprocket
 					["sourceQuest"] = 25756,	-- Get Zherin!
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25775, {	-- Fool's Gold [H]
 					["qg"] = 41184,	-- Riznek
 					["sourceQuest"] = 25757,	-- Get Koalbeard!
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28157, {	-- Four Twilight Elements
 					["qg"] = 47745,	-- Magatha Grimtotem
 					["sourceQuest"] = 28142,	-- To the Withering
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4904, {	-- Free at Last
 					["qg"] = 10646,	-- Lakota Windsong
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25704,	-- The Mad Magus
 					},
 					["coord"] = { 76.0, 74.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25836, {	-- Free Freewind Post [H]
@@ -821,14 +821,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25704,	-- The Mad Magus
 					},
 					["coord"] = { 75.9, 74.7, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28086, {	-- Free the Pridelings
 					["qg"] = 47471,	-- Pao'ka Swiftmountain
 					["sourceQuest"] = 28085,	-- Trouble at Highperch
 					["coord"] = { 12.8, 33.9, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28047, {	-- Freezing the Pipes
 					["qg"] = 47383,	-- Brivelthwerp
@@ -837,13 +837,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28051,	-- We All Scream for Ice Cream... and then Die!
 					},
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25757, {	-- Get Koalbeard!
 					["qg"] = 41184,	-- Riznek
 					["sourceQuest"] = 25745,	-- Negotiations [H]
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1120, {	-- Get the Gnomes Drunk
@@ -887,7 +887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41190,	-- Crazzle Sprysprocket
 					["sourceQuest"] = 25744,	-- Negotiations [A]
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25813, {	-- Go Blow that Horn [A]
@@ -897,7 +897,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25796,	-- Eminent Domain [A]
 					},
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25814, {	-- Go Blow that Horn [H]
@@ -907,7 +907,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25797,	-- Eminent Domain [H]
 					},
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1178, {	-- Goblin Sponsorship (1/5)
@@ -969,20 +969,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27318, {	-- Grimtotem Chiefs: Elder Stormhoof [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27314,	-- Grimtotem Chiefs: Isha Gloomaxe [A]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63600, {	-- Hands of the Chosen
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63601, {	-- Darkcloud Mask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63602, {	-- Spaulders of the Disciple
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63603, {	-- Legguards of the Pinnacle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -990,63 +990,63 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27315,	-- Grimtotem Chiefs: Isha Gloomaxe [H]
 					["coord"] = { 43.7, 43.7, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63604, {	-- Hands of the Chosen
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63605, {	-- Darkcloud Mask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63606, {	-- Freewind Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63607, {	-- Legguards of the Pinnacle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(27323, {	-- Grimtotem Chiefs: Grundig Darkcloud [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27318,	-- Grimtotem Chiefs: Elder Stormhoof [A]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27324, {	-- Grimtotem Chiefs: Grundig Darkcloud [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27319,	-- Grimtotem Chiefs: Elder Stormhoof [H]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["coord"] = { 39.0, 41.1, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27314, {	-- Grimtotem Chiefs: Isha Gloomaxe [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27275,	-- Together Again
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27315, {	-- Grimtotem Chiefs: Isha Gloomaxe [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27276,	-- Together Again
 					["coord"] = { 42.2, 48.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27327, {	-- Grimtotem Chiefs: The Chief of Chiefs [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27323,	-- Grimtotem Chiefs: Grundig Darkcloud [A]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63634, {	-- Lasting Peace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63635, {	-- Hood of Disgrace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63636, {	-- Legguards of Disfavor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1054,17 +1054,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27324,	-- Grimtotem Chiefs: Grundig Darkcloud [H]
 					["coord"] = { 34.0, 40.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63637, {	-- Lasting Peace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63638, {	-- Hood of Disgrace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63639, {	-- Legguards of Disfavor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1072,14 +1072,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41392,	-- Quentin
 					["sourceQuest"] = 25835,	-- Free Freewind Post [A]
 					["coord"] = { 46.4, 57.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25870, {	-- Grimtotem in the Post [H]
 					["qg"] = 41446,	-- Thalia Amberhide
 					["sourceQuest"] = 25836,	-- Free Freewind Post [H]
 					["coord"] = { 46.3, 57.7, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5064, {	-- Grimtotem Spying
@@ -1145,7 +1145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25628,	-- Two-Tusk Takedown [H]
 					},
 					["coord"] = { 91.7, 78.9, THOUSAND_NEEDLES },	-- can be picked up anywhere in the Southsea Holdfast, but this is where it first shows up
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5762, {	-- Hemet Nesingwary
 					["providers"] = {
@@ -1168,11 +1168,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45271,	-- Montarr
 					["sourceQuest"] = 25835,	-- Free Freewind Post [A]
 					["coord"] = { 44.6, 50.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63632, {	-- Horn of the Traitor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1180,11 +1180,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45271,	-- Montarr
 					["sourceQuest"] = 25836,	-- Free Freewind Post [H]
 					["coord"] = { 44.6, 49.9, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63633, {	-- Horn of the Traitor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1209,14 +1209,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 202975 },	-- Submerged Outhouse
 					["sourceQuest"] = 25504,	-- Do Me a Favor? [A]
 					["coord"] = { 79.5, 75.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25526, {	-- In the Outhouse [H]
 					["provider"] = { "o", 202975 },	-- Submerged Outhouse
 					["sourceQuest"] = 25505,	-- Do Me a Favor? [H]
 					["coord"] = { 79.5, 75.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1192, {	-- Indurium Ore
@@ -1232,23 +1232,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45442,	-- Lakota Windsong
 					["sourceQuest"] = 27357,	-- The Captive Bride [A]
 					["coord"] = { 39.0, 25.8, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63640, {	-- Windsong Rifle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63641, {	-- Mantle of Invocation
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63642, {	-- Wind Serpent Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157025, {	-- Windserpent Fang
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(63643, {	-- Ring of the Subduer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1256,20 +1256,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45442,	-- Lakota Windsong
 					["sourceQuest"] = 27358,	-- The Captive Bride [H]
 					["coord"] = { 39.1, 25.7, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63644, {	-- Windsong Rifle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63645, {	-- Mantle of Invocation
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63646, {	-- Wind Serpent Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63647, {	-- Ring of the Subduer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1324,34 +1324,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40027,	-- Fizzle Brassbolts
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats [A]
 					["coord"] = { 76.0, 74.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25745, {	-- Negotiations [H]
 					["qg"] = 40028,	-- Pozzik
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats [H]
 					["coord"] = { 75.9, 74.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27310, {	-- No Weapons For You! [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27275,	-- Together Again
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27311, {	-- No Weapons For You! [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27276,	-- Together Again
 					["coord"] = { 42.2, 48.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28124, {	-- On to the Bulwark
 					["qg"] = 47471,	-- Pao'ka Swiftmountain
 					["sourceQuest"] = 28098,	-- The Twilight Skymaster
 					["coord"] = { 12.8, 34.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4841, {	-- Pacify the Centaur
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
@@ -1431,7 +1431,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25524,	-- In the Outhouse [A]
 					},
 					["coord"] = { 76.4, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25533, {	-- Pirate Accuracy Increasing [H]
@@ -1442,7 +1442,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25526,	-- In the Outhouse [H]
 					},
 					["coord"] = { 77.1, 74.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(4966, {	-- Protect Kanati Greycloud
@@ -1468,14 +1468,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40475,	-- Jinky Twizzlefixxit
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats [A]
 					["coord"] = { 76.4, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25586, {	-- Quiet the Cannons [H]
 					["qg"] = 40487,	-- Razzeric
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats [H]
 					["coord"] = { 77.1, 74.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1187, {	-- Razzeric's Tweaking
@@ -1502,7 +1502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28086,	-- Free the Pridelings
 					},
 					["coord"] = { 12.8, 33.9, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1122, {	-- Report Back to Fizzlebub
 					["providers"] = {
@@ -1617,7 +1617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41444,	-- Brienna Starglow
 					["sourceQuest"] = 25835,	-- Free Freewind Post [A]
 					["coord"] = { 46.8, 56.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4865, {	-- Serpent Wild
@@ -1632,16 +1632,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47580,	-- Lakota Windsong
 					["sourceQuest"] = 28124,	-- On to the Bulwark
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63656, {	-- Lakota's Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63657, {	-- Well Hammered Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63658, {	-- Bloodstained Twilight Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157019, {	-- Lakota's Gavel
 							["timeline"] = { "added 7.3.5.25716" },
@@ -1652,40 +1652,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40726,	-- Mazzer Stripscrew
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats [A]
 					["coord"] = { 78.12, 73.09, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28042, {	-- Special Delivery for Brivelthwerp [H]
 					["qg"] = 40727,	-- Griznak
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats [H]
 					["coord"] = { 78.2, 73.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28160, {	-- Spread the Word [A]
 					["qg"] = 47745,	-- Magatha Grimtotem
 					["sourceQuest"] = 28159,	-- The Doomstone
 					["coord"] = { 50.0, 62.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63667, {	-- Robe of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63668, {	-- Leggings of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63669, {	-- Vest of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63670, {	-- Chestguard of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63671, {	-- Pauldrons of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63672, {	-- Helm of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1693,26 +1693,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47745,	-- Magatha Grimtotem
 					["sourceQuest"] = 28159,	-- The Doomstone
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63673, {	-- Robe of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63674, {	-- Leggings of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63675, {	-- Vest of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63676, {	-- Chestguard of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63677, {	-- Pauldrons of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63678, {	-- Helm of the Thousand Needles
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1720,14 +1720,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40885,	-- Wizzle Brassbolts
 					["sourceQuest"] = 25590,	-- Where's Wizzle?
 					["coord"] = { 91.6, 78.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25610, {	-- Sunken Treasure [H]
 					["qg"] = 40888,	-- Synge
 					["sourceQuest"] = 25596,	-- Where's Synge?
 					["coord"] = { 91.6, 79.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1150, {	-- Test of Endurance
@@ -1846,16 +1846,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28051,	-- We All Scream for Ice Cream... and then Die!
 					},
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63621, {	-- Ice Cream Churner
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63622, {	-- Hive Controller Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63623, {	-- Really Cold Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1866,16 +1866,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25745,	-- Negotiations [H]
 					},
 					["coord"] = { 90.0, 53.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63608, {	-- Shroud of Contempt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63609, {	-- Belt of False Promises
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63610, {	-- Greaves of the Sacred Flame
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1893,7 +1893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41421,	-- Rau Cliffrunner
 					["sourceQuest"] = 25836,	-- Free Freewind Post [H]
 					["coord"] = { 46.7, 56.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27357, {	-- The Captive Bride [A]
@@ -1903,7 +1903,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27320,	-- The Writ of History [A]
 						27325,	-- The Drums of War [A]
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27358, {	-- The Captive Bride [H]
@@ -1913,7 +1913,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27326,	-- The Drums of War [H]
 						27321,	-- The Writ of History [H]
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,	-- missing source quests
 				}),
 				q(28159, {	-- The Doomstone
@@ -1923,32 +1923,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28158,	-- Unbound
 					},
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63663, {	-- Bracers of Safe Keeping
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63664, {	-- Withering Mask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63665, {	-- Dirty Work Greaves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63666, {	-- Dupe's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(27325, {	-- The Drums of War [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27316,	-- The Rattle of Bones [A]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27326, {	-- The Drums of War [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27317,	-- The Rattle of Bones [A]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1186, {	-- The Eighteenth Pilot
@@ -1965,7 +1965,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28139,	-- Codemaster's Code
 					},
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28045, {	-- The Greatest Flavor in the World!
 					["qg"] = 47383,	-- Brivelthwerp
@@ -1974,7 +1974,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28042,	-- Special Delivery for Brivelthwerp [H]
 					},
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25487, {	-- The Grimtotem are Coming
 					["qg"] = 39895,	-- Kanati Greycloud
@@ -1983,29 +1983,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25478,	-- To the Summit (Dustwallow Marsh)
 					},
 					["coord"] = { 11.1, 11.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25704, {	-- The Mad Magus
 					["qg"] = 41060,	-- Ajamon Ghostcaller
 					["sourceQuest"] = 25672,	-- Carcass Collection
 					["coord"] = { 96.8, 72.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63588, {	-- Magus Tirth's Robe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63589, {	-- Holdfast Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63590, {	-- Ghostcaller's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63591, {	-- Alimony
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63587, {	-- Discarded Wedding Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2027,7 +2027,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28283,	-- What's that Rattle? [A]
 					},
 					["coord"] = { 43.3, 43.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27317, {	-- The Rattle of Bones [H]
@@ -2037,7 +2037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28284,	-- What's that Rattle? [H]
 					},
 					["coord"] = { 43.4, 43.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1115, {	-- The Rumormonger
@@ -2092,57 +2092,57 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47471,	-- Pao'ka Swiftmountain
 					["sourceQuest"] = 28088,	-- Release Heartrazor
 					["coord"] = { 12.8, 33.9, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63652, {	-- Prideling Down Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63653, {-- Heartrazor's Gift
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63654, {	-- Skymaster's Pants
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63655, {	-- Pridekeeper's Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(27320, {	-- The Writ of History [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27316,	-- The Rattle of Bones [A]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27321, {	-- The Writ of History [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27317,	-- The Rattle of Bones [H]
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27275, {	-- Together Again
 					["qg"] = 41444,	-- Brienna Starglow
 					["sourceQuest"] = 25871,	-- Save the Sentinel
 					["coord"] = { 46.8, 56.0, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28143, {	-- To the Withering
 					-- (confirmed 2022-08-18, alliance, 51)
 					["sourceQuest"] = 28140,	-- The Elder Crone
 					["coord"] = { 30.4, 49.3, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28142, {	-- To the Withering
 					["sourceQuest"] = 28140,	-- The Elder Crone
 					["coord"] = { 35.9, 60.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27276, {	-- Together Again
 					["qg"] = 41421,	-- Rau Cliffrunner
 					["sourceQuest"] = 25872,	-- The Brave and the Bold
 					["coord"] = { 46.7, 55.9, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28085, {	-- Trouble at Highperch
@@ -2152,26 +2152,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27330,	-- Invoking the Serpent [H]
 					},
 					["coord"] = { 39.1, 25.7, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25489, {	-- Two If By Boat
 					["qg"] = 39963,	-- Motega Firemane
 					["sourceQuest"] = 25487,	-- The Grimtotem are Coming
 					["coord"] = { 10.5, 8.5, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63562, {	-- Mirage Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63563, {	-- Maloof's Spare Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63564, {	-- Floating Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63565, {	-- Bracers of Desperate Need
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131431, {	-- Maloof's Spare Treads
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2182,20 +2182,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40885,	-- Wizzle Brassbolts
 					["sourceQuest"] = 25609,	-- Sunken Treasure [A]
 					["coord"] = { 91.6, 78.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63624, {	-- Buoyant Shoulderpads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63625, {	-- Wizzle's Wristbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63626, {	-- Den Whomper Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63627, {	-- Drinker's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2203,20 +2203,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40888,	-- Synge
 					["sourceQuest"] = 25610,	-- Sunken Treasure [H]
 					["coord"] = { 91.6, 79.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63628, {	-- Buoyant Shoulderpads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63629, {	-- Synge's Wristbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63630, {	-- Den Whomper Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63631, {	-- Drinker's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2224,7 +2224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47745,	-- Magatha Grimtotem
 					["sourceQuest"] = 28142,	-- To the Withering
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5147, {	-- Wanted - Arnak Grimtotem
 					["provider"] = { "o", 176115 },	-- Wanted Poster - Arnak Grimtotem
@@ -2253,22 +2253,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28042,	-- Special Delivery for Brivelthwerp [H]
 					},
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63582, {	-- Brivelthwerp's Signet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63583, {	-- Belt of Feigned Joy
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63584, {	-- Ice Cream Mitts
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63585, {	-- Breastplate of Contained Sorrow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63586, {	-- Cryocannon
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157017, {	-- Deep-Sea Retrieval Hook
 							["timeline"] = { "added 7.3.5.25716" },
@@ -2290,14 +2290,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28283, {	-- What's that Rattle? [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27314,	-- Grimtotem Chiefs: Isha Gloomaxe (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28284, {	-- What's that Rattle? [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27315,	-- Grimtotem Chiefs: Isha Gloomaxe (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2305,14 +2305,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40556,	-- Zamek
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats [H]
 					["coord"] = { 78.1, 73.7, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25590, {	-- Where's Wizzle?
 					["qg"] = 40554,	-- Rizzle Brassbolts
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats [A]
 					["coord"] = { 78.0, 73.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4767, {	-- Wind Rider
@@ -2338,19 +2338,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41060,	-- Ajamon Ghostcaller
 					["sourceQuest"] = 25660,	-- Haunted
 					["coord"] = { 96.8, 72.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(63617, {	-- Evil Dolly's Cuffs
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63618, {	-- Lilly's Bandana
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63619, {	-- Fajardo's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63620, {	-- Hard Headed Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2601,14 +2601,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(41135, {	-- "Plucky" Johnson
 					["coord"] = { 85.6, 91.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(11023),	-- Ancona Chicken (PET!)
 					},
 				}),
 				n(41452, {	-- Starn <Gunsmith & Bowyer>
 					["coord"] = { 46.2, 57.6, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(11305, {	-- Dense Shortbow
 							["isLimited"] = true,

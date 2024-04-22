@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4897, {	-- Hinterlands Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(38375, {	-- Quel'Danil Lodge
@@ -304,7 +304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(617, {	-- Hiri'watha Research Station, The Hinterlands
 					["cr"] = 43573,	-- Kellen Kuhn <Bat Handler>
 					["coord"] = { 32.4, 58.0, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(76, {	-- Revantusk Village, The Hinterlands
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(618, {	-- Stormfeather Outpost, The Hinterlands
 					["cr"] = 43570,	-- Brock Rockbeard <Gryphon Master>
 					["coord"] = { 65.6, 44.8, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26486, {	-- 99 Bottles of Booze on the Beach
 					["qg"] = 43109,	-- Dron Blastbrew
 					["coord"] = { 66.2, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9470, {	-- A Gesture of Goodwill
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["sourceQuest"] = 26542,	-- Hero's Call: The Hinterlands!
 					["coord"] = { 9.9, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(77, {	-- A Sticky Situation
@@ -384,13 +384,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26523, {	-- All That Skitters (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26310, {	-- All That Skitters (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
 					["coord"] = { 67.6, 66.6, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7842, {	-- Another Message to the Wildhammer
@@ -442,20 +442,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27626,	-- The Highvale Documents
 					},
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59260, {	-- Shadraspawn Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59262, {	-- Cloudcaller Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59263, {	-- Belt of the Scattering Wind
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59264, {	-- Legguards of Caution
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131570, {	-- Cloudcaller Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -468,20 +468,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26382, {	-- Can't Make An Omelette Without... (H)
 					["qg"] = 42896,	-- Apothecary Surlis
 					["coord"] = { 31.8, 58.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59298, {	-- Surlis' Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59299, {	-- Apothecary Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59300, {	-- Shadraspawn Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59301, {	-- Legguards of Caution
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131519, {	-- Apothecary Chain Pants
 							["timeline"] = { "added 7.0.3.22248" },
@@ -536,28 +536,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["sourceQuest"] = 26523,	-- All That Skitters
 					["coord"] = { 63.7, 59.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59252, {	-- Sandals of Tainted Blood
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59254, {	-- Spider Venom Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59255, {	-- Dark Vessel Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131544, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131545, {	-- Spider Venom Legguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -568,28 +568,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42622,	-- Eliza Darkgrin
 					["sourceQuest"] = 26310,	-- All That Skitters
 					["coord"] = { 67.6, 66.6, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59294, {	-- Sandals of Tainted Blood
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59295, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59296, {	-- Spider Venom Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59297, {	-- Dark Vessel Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131510, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131511, {	-- Spider Venom Legguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -600,21 +600,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42622,	-- Eliza Darkgrin
 					["sourceQuest"] = 26369,	-- Hunt the Keeper
 					["coord"] = { 67.6, 66.6, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26498, {	-- Death to the Vilebranch (A)
 					["qg"] = 43157,	-- Doran Steelwing
 					["sourceQuest"] = 26497,	-- Vilebranch Scum
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26307, {	-- Death to the Vilebranch (H)
 					["qg"] = 42642,	-- Death to the Vilebranch
 					["sourceQuest"] = 26306,	-- Start Taking Back
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26496, {	-- Down with the Vilebranch
@@ -624,41 +624,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26492,	-- Skulk Rock Supplies
 					},
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26521, {	-- Faces of Evil (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59249, {	-- Vile Branch
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59250, {	-- Necklace of Evil Faces
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59251, {	-- Jintha'Alor Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(26357, {	-- Faces of Evil (H)
 					["qg"] = 42624,	-- Kotonga
 					["coord"] = { 67.7, 66.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59288, {	-- Vile Branch
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59290, {	-- Jintha'Alor Axe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59289, {	-- Necklace of Evil Faces
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -711,17 +711,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26210, {	-- Gammerita, Mon!
 					["qg"] = 14740,	-- Katoom the Angler
 					["coord"] = { 80.3, 81.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59274, {	-- Katoom's Mask
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59275, {	-- Stomachache Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59276, {	-- Snapjaw Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131495, {	-- Stomachache Cinch
 							["timeline"] = { "added 7.0.3.22248" },
@@ -731,20 +731,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26483, {	-- Gan'dranda
 					["qg"] = 43108,	-- Kerr Ironsight
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59242, {	-- Ironsight Crossbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59243, {	-- Theresa's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59244, {	-- Stormfeather Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59245, {	-- Head Kickers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131536, {	-- Stormfeather Treads
 							["timeline"] = { "added 7.0.3.22248" },
@@ -762,33 +762,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26518, {	-- Heads Up (A)
 					["qg"] = 43157,	-- Doran Steelwing
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26366, {	-- Heads Up (H)
 					["qg"] = 42642,	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26526, {	-- Hunt the Keeper (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["sourceQuest"] = 26517,	-- Summit of Fate
 					["coord"] = { 63.8, 59.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59256, {	-- Unkeeper Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59257, {	-- Leggings of Secret Rituals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59258, {	-- Gloves of Strange Words
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59259, {	-- Tablet-Bearer's Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131546, {	-- Gauntlets of Strange Words
 							["timeline"] = { "added 7.0.3.22248" },
@@ -802,20 +802,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42642,	-- Primal Torntusk
 					["sourceQuest"] = 26363,	-- Summit of Fate
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59284, {	-- Unkeeper Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59285, {	-- Leggings of Secret Rituals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59286, {	-- Gloves of Strange Words
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59287, {	-- Tablet-Bearer's Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131518, {	-- Gauntlets of Strange Words
 							["timeline"] = { "added 7.0.3.22248" },
@@ -841,14 +841,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14741,	-- Huntsman Markhor
 					["sourceQuest"] = 26223,	-- Stalking the Stalkers
 					["coord"] = { 79.1, 79.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27625, {	-- In Defense of Quel'Danil
 					["qg"] = 46475,	-- Anchorite Traska
 					["sourceQuest"] = 27725,	-- Quel'Danil Lodge
 					["coord"] = { 32.1, 42.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9476, {	-- In Pursuit of Featherbeard
@@ -863,17 +863,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43157,	-- Doran Steelwing
 					["sourceQuest"] = 26498,	-- Death to the Vilebranch
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59246, {	-- Blood Drinker Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59248, {	-- Steelwing Pendant
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59247, {	-- Soul Eater Shoulderguard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131542, {	-- Soul Eater Pauldrons
 							["timeline"] = { "added 7.0.3.22248" },
@@ -884,17 +884,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42642,	-- Primal Torntusk
 					["sourceQuest"] = 26307,	-- Death to the Vilebranch
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59291, {	-- Blood Drinker Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59293, {	-- Torntusk Pendant
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59292, {	-- Soul Eater Shoulderguard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131509, {	-- Soul Eater Pauldrons
 							["timeline"] = { "added 7.0.3.22248" },
@@ -954,7 +954,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26212, {	-- Lard Lost His Lunch
 					["qg"] = 14731,	-- Lard
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(19035, {	-- Lard's Special Picnic Basket
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26518,	-- Heads Up (A)
 					},
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26367, {	-- Ongo'longo's Revenge (H)
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26366,	-- Heads Up (H)
 					},
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26548, {	-- Out to the Front
@@ -1009,7 +1009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26546,	-- Razorbeak Friends
 					},
 					["coord"] = { 9.8, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9471, {	-- Preying on the Predators
@@ -1034,17 +1034,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26462,	-- The Wicked Revantusk
 					},
 					["coord"] = { 66.2, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59239, {	-- Wand of Oomph
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59240, {	-- Blastbrew Hat
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59241, {	-- Direglob-Slimed Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131537, {	-- Blastbrew Headgear
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1061,17 +1061,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26263,	-- Thornar Thunderclash
 					},
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59277, {	-- Research Assistant's Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59278, {	-- Slime Hunter Headguard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59279, {	-- Skulk Rock Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131501, {	-- Slime Hunter Headgear
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1084,36 +1084,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26225, {	-- Pupellyverbos Port
 					["qg"] = 42464,	-- Grognard
 					["coord"] = { 77.3, 79.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27725, {	-- Quel'Danil Lodge
 					["qg"] = 46476,	-- Tracker Yoro
 					["sourceQuest"] = 26526,	-- Hunt the Keeper
 					["coord"] = { 63.9, 59.8, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26546, {	-- Razorbeak Friends
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.9, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59236, {	-- Gryphon-Down Scarf
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59237, {	-- Gryphon Master's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59238, {	-- Talon Axe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131553, {	-- Gryphon Master's Chain
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
                         i(59235, {	-- Razorbeak Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1336,20 +1336,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43298,	-- Wildhammer Lookout
 					["sourceQuest"] = 26531,	-- Summoning Shadra
 					["coord"] = { 34.3, 67.7, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59269, {	-- Veil of Aerie Peak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59270, {	-- Headguard of Aerie Peak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59271, {	-- Headcover of Aerie Peak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59272, {	-- Helm of Aerie Peak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131549, {	-- Aerie Headgear
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1363,20 +1363,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43299,	-- Deathstalker Lookout
 					["sourceQuest"] = 26558,	-- Summoning Shadra
 					["coord"] = { 35.6, 68.4, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59306, {	-- Darkcleric's Veil
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59307, {	-- Virulent Headguard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59308, {	-- Venomous Headcover
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59309, {	-- Poisoner's Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131526, {	-- Virulent Headpiece
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1408,7 +1408,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26462,	-- The Wicked Revantusk
 					},
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26267, {	-- Skulk Rock Clean-Up (H)
@@ -1418,7 +1418,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26263,	-- Thornar Thunderclash
 					},
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26492, {	-- Skulk Rock Supplies (A)
@@ -1428,7 +1428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26462,	-- The Wicked Revantusk
 					},
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26268, {	-- Skulk Rock Supplies (H)
@@ -1438,13 +1438,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26263,	-- Thornar Thunderclash
 					},
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26485, {	-- Snapjaws, Lad!
 					["qg"] = 43109,	-- Dron Blastbrew
 					["coord"] = { 66.2, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
@@ -1468,7 +1468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26211, {	-- Snapjaws, Mon!
 					["qg"] = 14740,	-- Katoom the Angler
 					["coord"] = { 80.3, 81.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
@@ -1492,34 +1492,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26223, {	-- Stalking the Stalkers
 					["qg"] = 14741,	-- Huntsman Markhor
 					["coord"] = { 79.1, 79.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26306, {	-- Start Taking Back
 					["qg"] = 42642,	-- Primal Torntusk
 					["sourceQuest"] = 26432,	-- The Fall of Jintha'Alor
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26643, {	-- Starvation Diet (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
 					["sourceQuest"] = 26641,	-- Can't Make an Omelette Without...
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26387, {	-- Starvation Diet (H)
 					["qg"] = 42896,	-- Apothecary Surlis
 					["sourceQuest"] = 26382,	-- Can't Make an Omelette Without...
 					["coord"] = { 31.8, 58.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26240, {	-- Stomp To My Beat
 					["qg"] = 14739,	-- Mystic Yayo'jin
 					["coord"] = { 78.8, 78.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26517, {	-- Summit of Fate (A)
@@ -1529,7 +1529,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26515,	-- Ongo'longo's Revenge
 					},
 					["coord"] = { 63.7, 59.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26363, {	-- Summit of Fate (H)
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26367,	-- Ongo'longo's Revenge
 					},
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(2937, {	-- Summoning Shadra
@@ -1564,14 +1564,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43200,	-- Gilda Cloudcaller
 					["sourceQuest"] = 26530,	-- The Shell of Shadra
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26558, {	-- Summoning Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["sourceQuest"] = 26418,	-- The Shell of Shadra
 					["coord"] = { 31.8, 58.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(2990, {	-- Thadius Grimshade
@@ -1600,13 +1600,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27626,	-- The Highvale Documents
 					},
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26381, {	-- The Eye of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["coord"] = { 31.8, 58.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26432, {	-- The Fall of Jintha'Alor
@@ -1616,7 +1616,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26268,	-- Skulk Rock Supplies
 					},
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1624,14 +1624,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43200,	-- Gilda Cloudcaller
 					["sourceQuest"] = 26528,	-- The Eye of Shadra
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26406, {	-- The Fang of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["sourceQuest"] = 26381,	-- The Eye of Shadra
 					["coord"] = { 31.8, 58.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7843, {	-- The Final Message to the Wildhammer
@@ -1655,34 +1655,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46475,	-- Anchorite Traska
 					["sourceQuest"] = 27725,	-- Quel'Danil Lodge
 					["coord"] = { 32.1, 42.5, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26238, {	-- The Savage Dwarves
 					["qg"] = 42613,	-- Elder Torntusk
 					["sourceQuest"] = 28574,	-- Warchief's Command: The Hinterlands!
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26530, {	-- The Shell of Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
 					["sourceQuest"] = 26529,	-- The Fang of Shadra
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59265, {	-- Gown of the Last Priestess
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59266, {	-- Gwenyth's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59267, {	-- Gloves of Fanatical Zealotry
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59268, {	-- Greathammer of the Hinterlands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131547, {	-- Gwenyth's Wristguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1696,20 +1696,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["sourceQuest"] = 26406,	-- The Fang of Shadra
 					["coord"] = { 31.8, 58.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59302, {	-- Gown of the Last Priestess
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59303, {	-- Gwenyth's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59304, {	-- Gloves of Fanatical Zealotry
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59305, {	-- Greataxe of the Hinterlands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131524, {	-- Gwenyth's Wristguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1722,26 +1722,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26462, {	-- The Wicked Revantusk
 					["qg"] = 43108,	-- Kerr Ironsight
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26263, {	-- Thornar Thunderclash
 					["qg"] = 42613,	-- Elder Torntusk
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59280, {	-- Voice Stealer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59281, {	-- Elder's Wristwraps
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59282, {	-- Encroaching Treads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59283, {	-- Revantusk Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131498, {	-- Encroaching Boots
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1822,14 +1822,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["sourceQuest"] = 26517,	-- Summit of Fate
 					["coord"] = { 63.7, 59.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26368, {	-- Venomous Secrets (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
 					["sourceQuest"] = 26309,	-- Dark Vessels
 					["coord"] = { 67.6, 66.6, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7839, {	-- Vilebranch Hooligans
@@ -1855,7 +1855,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43157,	-- Doran Steelwing
 					["sourceQuest"] = 26496,	-- Down with the Vilebranch
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7861, {	-- Wanted: Vile Priestess Hexx and Her Minions
@@ -2068,14 +2068,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				n(12040, {	-- Brannik Ironbelly <Armorsmith>
 					["coord"] = { 66.6, 44.2, THE_HINTERLANDS },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12257, {	-- Heavy Notched Belt
 							["isLimited"] = true,
 						}),
 						i(12258, {	-- Serpent Clasp Belt
-							["timeline"] = { "created 1.12.1.12941", "added 4.0.3" },
+							["timeline"] = { "created 1.12.1.12941", ADDED_4_0_3 },
 							["isLimited"] = true,
 						}),
 					},

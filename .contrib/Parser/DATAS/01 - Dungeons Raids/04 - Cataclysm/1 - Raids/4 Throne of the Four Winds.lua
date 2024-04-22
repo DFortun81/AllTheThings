@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(74, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {	-- Throne of the Four Winds
+	applyclassicphase(CATA_PHASE_ONE, inst(74, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- Throne of the Four Winds
 		["mapID"] = 328,
 		["coord"] = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
 		["sharedLockout"] = 1,

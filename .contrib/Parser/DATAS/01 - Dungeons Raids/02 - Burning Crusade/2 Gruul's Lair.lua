@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 					}),
 					ach(5086, {	-- Gruul's Lair Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(29766, {	-- Leggings of the Fallen Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },

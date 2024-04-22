@@ -54,15 +54,15 @@ root(ROOTS.Promotions, {
 		-- Chinese & Taiwan Servers only until 5.4.1
 		ach(3636, {	-- Jade Tiger
 			["description"] = "Chinese & Taiwan Only",
-			["timeline"] = { "added 4.0.3.13287" },
+			["timeline"] = { ADDED_4_0_3 },
 		}),
 		i(46894, {	-- Jade Tiger (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
-			["timeline"] = { "created 3.0.1", "added 4.0.3.13287" },
+			["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
 		}),
 		i(49664, {	-- Zipao Tiger (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
-			["timeline"] = { "created 3.0.1", "added 4.0.3.13287" },
+			["timeline"] = { "created 3.0.1", ADDED_4_0_3 },
 		}),
 		i(34518, {	-- Golden Pig (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",

@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								-- #endif
 							}),
 							ach(5077, {	-- Heroic: The Steamvault Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(29351),	-- Wrathtide Longbow
 							i(27801),	-- Beast Lord Mantle

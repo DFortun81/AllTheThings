@@ -587,7 +587,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								-- #endif
 							}),
 							ach(5078, {	-- Heroic: The Shattered Halls Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(27533),	-- Demonblood Eviscerator
 							i(27538),	-- Lightsworn Hammer

@@ -46,7 +46,7 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(59480),	-- Strange Tarot
 		r(59484),	-- Tome of Kings
 		r(59475),	-- Tome of the Dawn
-		r(92026, {["timeline"]={"added 4.0.3"}}),	-- Vanishing Powder
+		r(92026, {["timeline"]={ADDED_4_0_3}}),	-- Vanishing Powder
 		r(52840, {["timeline"]={"added 3.0.2","deleted 4.0.3"}}),	-- Weapon Vellum
 		r(59488, {["timeline"]={"added 3.0.2","deleted 4.0.3"}}),	-- Weapon Vellum II
 	}),

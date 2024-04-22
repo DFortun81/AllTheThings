@@ -24,7 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					q(26870, {	-- Cleansing the Caverns
 						["qg"] = 5768,	-- Ebru
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/1 Lord Cobrahn slain
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					q(26872, {	-- Deviate Hides
 						["qg"] = 5767,	-- Nalpak
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/10 Deviate Hide
@@ -197,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					q(26873, {	-- Preemptive Methods
 						["qg"] = 5767,	-- Nalpak
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/5 Serpentbloom
@@ -403,7 +403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5039, {	-- Wailing Caverns Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(209838, {	-- Hypnotic Crystal

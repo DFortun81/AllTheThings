@@ -1973,7 +1973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								ach(5016, {	-- Just Can't Get Enough - Guild Edition
-									["timeline"] = { "added 4.0.3" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 6802,	-- Kel'Thuzad slain
@@ -2826,7 +2826,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #endif
 								}),
 								ach(5016, {	-- Just Can't Get Enough - Guild Edition
-									["timeline"] = { "added 4.0.3" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7172,	-- Kel'Thuzad slain

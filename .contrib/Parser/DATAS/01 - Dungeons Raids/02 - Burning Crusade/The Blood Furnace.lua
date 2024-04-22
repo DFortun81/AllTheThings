@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { "added 3.0.1" },
 							}),
 							ach(5068, {	-- Heroic: The Blood Furnace Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							-- #if AFTER 7.3.5
 							i(24394),	-- Warsong Howling Axe

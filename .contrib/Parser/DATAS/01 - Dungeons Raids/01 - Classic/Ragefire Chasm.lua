@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26862, {	-- Elemental Tampering
 					["qg"] = 44216,	-- Bovaal Whitehorn
-					["timeline"] = { "added 4.0.3.13277", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26867, {	-- Enemies Below [Undercity]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["timeline"] = { "added 4.0.3.13277", "removed 5.0.1.15589" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31037, {	-- Enemies Below [Undercity]
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26856, {	-- Repel the Invasion
 					["qg"] = 44217,	-- Stone Guard Kurjack
-					["timeline"] = { "added 4.0.3.13277", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
@@ -240,7 +240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						31037,	-- Enemies Below [Undercity]
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
@@ -251,22 +251,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "created 7.0.3.22248" },
 						}),
 						i(66031, {	-- Hide Vest of the Shaman
-							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 						}),
 						i(66022, {	-- Ragefire Leggings
-							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 						}),
 						i(49541, {	-- Robes of the Doomed Ritual
-							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 						}),
 						i(131613, {	-- Scaled Vest of the Shaman
 							["timeline"] = { "created 7.0.3.22248" },
 						}),
 						i(66040, {	-- Searing Belt
-							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 						}),
 						i(66045, {	-- Stone Guard Greaves
-							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 						}),
 					},
 				}),
@@ -408,7 +408,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "Found on the tauren corpse in front of this boss.",
 					}),
 					i(68194, {	-- Oggleflint's Inspirer
-						["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+						["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 					}),
 				},
 			}),
@@ -423,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5038, {	-- Ragefire Chasm Guild Run
-						["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+						["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 					}),
 					-- #endif
 					i(14540, {	-- Taragaman the Hungerer's Heart
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { "removed 5.0.4" },
 				["groups"] = {
 					i(68195, {	-- Bazzalan's Blade
-						["timeline"] = { "added 4.0.3.13287", "removed 5.0.4" },
+						["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 					}),
 				},
 			}),

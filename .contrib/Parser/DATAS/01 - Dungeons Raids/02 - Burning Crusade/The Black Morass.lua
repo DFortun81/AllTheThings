@@ -228,7 +228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { "added 3.0.1" },
 							}),
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(28188),	-- Bloodfire Greatstaff
 							i(28189),	-- Latro's Shifting Sword

@@ -671,10 +671,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["creatureID"] = 35451,	-- The Black Knight
 						["groups"] = {
 							ach(5110, {	-- Heroic: Trial of the Champion Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(5111, {	-- Heroic: Trial of the Champion Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(3804),	-- I've Had Worse
 							i(49682),	-- Black Knight's Rondel

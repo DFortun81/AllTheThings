@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
 						{ 55.0, 50.4, UNDERCITY },	-- Mala Skywatcher
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
 				}),
@@ -454,7 +454,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12042,	-- Loganaar
 					["sourceQuest"] = 28289,	-- Moonglade Calls
 					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["classes"] = { DRUID },
 					["lvl"] = 47,
@@ -463,10 +463,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 63469 },	-- Breath of Cenarius
 						}),
 						i(65638, {	-- Headdress of the Green Circle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65617, {	-- Headdress of the Verdant Circle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

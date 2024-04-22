@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(275, {	-- Battle for Gilneas
 		["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(5258, {	-- Master of the Battle for Gilneas

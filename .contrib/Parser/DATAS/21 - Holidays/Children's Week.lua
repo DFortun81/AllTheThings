@@ -105,7 +105,7 @@ local WARDEN_OF_THE_GROUPS = {
 		["timeline"] = { "added 1.11.1.5462" },
 	}),
 	i(66073, {	-- Scooter the Snail (PET!)
-		["timeline"] = { "added 4.0.3.13287" },
+		["timeline"] = { ADDED_4_0_3 },
 	}),
 	i(23002, {	-- Speedy (PET!)
 		["timeline"] = { "added 1.11.1.5462" },
@@ -565,7 +565,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 				1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 			},
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { THUNDER_BLUFF },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -703,7 +703,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -721,7 +721,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -795,7 +795,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 				1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 			},
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -942,7 +942,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1122,7 +1122,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { WESTFALL },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1203,7 +1203,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1413,7 +1413,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { LOCH_MODAN },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1538,7 +1538,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 				1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 			},
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1594,7 +1594,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 				1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 			},
-			["timeline"] = { "added 1.4.0", "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,

@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4904, {	-- Swamp of Sorrows Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -109,12 +109,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(599, {	-- Bogpaddle, Swamp of Sorrows
 					["cr"] = 43086,	-- Skeezie <Gryphon Master>
 					["coord"] = { 72.0, 12.0, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				fp(598, {	-- Marshtide Watch, Swamp of Sorrows
 					["cr"] = 43087,	-- Paola Baldwin <Gryphon Master>
 					["coord"] = { 70.0, 38.4, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(56, {	-- Stonard, Swamp of Sorrows
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(600, {	-- The Harborage, Swamp of Sorrows
 					["cr"] = 43088,	-- Yedrin <Flight Master>
 					["coord"] = { 30.6, 34.6, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -201,26 +201,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27795,	-- Tides of Darkness (A)
 					},
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Stonard Defender slain
 							["provider"] = { "n", 46870 },	-- Stonard Defender
 						}),
 						i(64623, {	-- Surgical Striker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64595, {	-- Robes of the Honorable
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64605, {	-- Leggings of the Final Assault
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64614, {	-- Chestguard of Bravery
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64621, {	-- Blueheart's Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -228,22 +228,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45948,	-- Crazy Larry
 					["sourceQuest"] = 27600,	-- In With a Bang
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27914, {	-- Blessing of the Green Dragonflight
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27773,	-- Step Three: Prophet
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(64596, {	-- Dream Pendant
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64606, {	-- Dream Amulet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64615, {	-- Dream Medallion
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27876,	-- Secrets of the Mire (A)
 					},
 					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Smoky Crystal
@@ -267,23 +267,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45948,	-- Crazy Larry
 					["sourceQuest"] = 27597,	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Steamwheedle Ditty Bag
 							["provider"] = { "i", 61923 },	-- Steamwheedle Ditty Bag
 							["cr"] = 46014,	-- Deceased Bogpaddle Privateer
 						}),
 						i(64590, {	-- Crazy Cap
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64600, {	-- Looter's Shoulderguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64609, {	-- Tragic Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64617, {	-- Larry's Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -313,13 +313,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27656,	-- Croc-Out
 					},
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27656, {	-- Croc-Out
 					["qg"] = 45786,	-- Trade Baron Silversnap
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Sawtooth Crocolisk slain
 							["provider"] = { "n", 45807 },	-- Sawtooth Crocolisk
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27795,	-- Tides of Darkness (A)
 					},
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Stonard Supplies
@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27840, {	-- Draenethyst Crystals
 					["qg"] = 18221,	-- Holaaru
 					["coord"] = { 69.8, 36.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Draenethyst Crystal
@@ -408,26 +408,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27592, {	-- Drinks on the Rocks
 					["qg"] = 46010,	-- Brono Goodgroove
 					["coord"] = { 73.6, 9.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Stolen Silversnap Ice
 							["provider"] = { "i", 61356 },	-- Stolen Silversnap Ice
 							["cr"] = 922,	-- Silt Crawler
 						}),
 						i(64622, {	-- Silversnap Bottle Opener
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64588, {	-- Beach Party Thong
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64598, {	-- Promotional Cap
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64607, {	-- Groovey Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64616, {	-- Brand-Name Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157012, {	-- Broken Silversnap Bottle
 							["timeline"] = { "added 7.3.5.25716" },
@@ -525,7 +525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27599,	-- Can't Take It With Them
 					},
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Thousand-Thread-Count Fuse
 							["providers"] = {
@@ -549,16 +549,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 55.8, 78.0, SWAMP_OF_SORROWS },
 						}),
 						i(64591, {	-- Almost New Shoulderpads
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64601, {	-- Expensive Tunic
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64610, {	-- Imported Helmet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64618, {	-- High-Grade Greaves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -566,7 +566,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45948,	-- Crazy Larry
 					["sourceQuest"] = 27597,	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Gilblin Stalker slain
 							["provider"] = { "n", 45701 },	-- Gilblin Stalker
@@ -618,7 +618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27908,	-- Secrets of the Mire (H)
 					},
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Duskfang's Hide
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27694,	-- Pool of Tears
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
@@ -660,40 +660,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27822, {	-- Lumbering Oafs (A)
 					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Stonard Peon slain
 							["provider"] = { "n", 46486 },	-- Stonard Peon
 						}),
 						i(64593, {	-- Helm of the Gatherer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64603, {	-- Merciless Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64612, {	-- Balanced Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(27853, {	-- Lumbering Oafs (H)
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Marshtide Peasant slain
 							["provider"] = { "n", 46487 },	-- Marshtide Peasant
 						}),
 						i(64624, {	-- Helm of the Gatherer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64628, {	-- Merciliess Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64631, {	-- Balanced Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -724,7 +724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27822,	-- Lumbering Oafs (A)
 					},
 					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/7 Footman Marked
@@ -742,7 +742,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27852,	-- Orcs and Humans (H)
 					},
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/7 Fallen Stonard Warrior marked
@@ -756,7 +756,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27691, {	-- Marshfin Madness
 					["qg"] = 46172,	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/12 Marshfin Murkdweller slain
 							["provider"] = { "n", 45967 },	-- Marshfin Murkdweller
@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45786,	-- Trade Baron Silversnap
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Disarmed Land Mine
 							["providers"] = {
@@ -789,13 +789,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 78.6, 22.5, SWAMP_OF_SORROWS },
 						}),
 						i(64589, {	-- Bogpaddle Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64599, {	-- Sloppy Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64608, {	-- Armed Gauntlets
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 27857,	-- We're Under Attack!
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -826,7 +826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27916,	-- Ruag's Report
 					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -834,7 +834,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17127,	-- Anchorite Avuun
 					--["sourceQuest"] = 24913,	-- Remember the Light
 					["coord"] = { 26.9, 33.6, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -842,7 +842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuest"] = 27870,	-- To Marshtide Watch
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Stonard Warrior slain
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 27871,	-- To Stonard
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Marshtide Footman slain
@@ -911,7 +911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27869,	-- The Dragon and the Temple
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/ (10 [TBC] / 5 [WRATH]) Atal'ai Artifact
 							["providers"] = {
@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 27906,	-- Neeka Bloodscar
 						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					}),
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Prayerblossom
 							["providers"] = {
@@ -952,7 +952,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27822,	-- Lumbering Oafs (A)
 					},
 					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/3 Stonard Warlock slain
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27852,	-- Orcs and Humans (H)
 					},
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/3 Marshtide Mage slain
@@ -982,11 +982,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27904,	-- Breath of Mist
 					},
 					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64597, {	-- Light's Embrace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1005,7 +1005,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 27911,	-- With Dying Breath
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1013,14 +1013,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(27876, {	-- Secrets of the Mire (A)
 						["qg"] = 17127,	-- Anchorite Avuun
 						["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					["hordeQuestData"] = q(27908, {	-- Secrets of the Mire (H)
 						["qg"] = 47041,	-- Neeka Bloodscar
 						["sourceQuest"] = 27906,	-- Neeka Bloodscar
 						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					}),
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Invigorated Silt
 							["provider"] = { "i", 62593 },	-- Invigorated Silt
@@ -1032,7 +1032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46172,	-- Baba Bogbrew
 					["sourceQuest"] = 27757,	-- The Darkest Depths
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Intact Stagalbog Serpent Heart
 							["provider"] = { "i", 62551 },	-- Intact Stagalbog Serpent Heart
@@ -1044,7 +1044,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27704,	-- Legends of the Sunken Temple
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Priestess Udum'bra slain
 							["provider"] = { "n", 46424 },	-- Priestess Udum'bra
@@ -1055,7 +1055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27768,	-- Step Two: The Bloodletter
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Jammal'an the Prophet slain
 							["provider"] = { "n", 46656 },	-- Jammal'an the Prophet
@@ -1066,7 +1066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27705,	-- Step One: The Priestess
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gomora the Bloodletter slain
 							["provider"] = { "n", 46623 },	-- Gomora the Bloodletter
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46182,	-- Pierre Fishflay
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 					["coord"] = { 74.2, 12.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/9 Jumbo Swampstrider Drumstick
 							["provider"] = { "i", 62043 },	-- Jumbo Swampstrider Drumstick
@@ -1101,23 +1101,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46172,	-- Baba Bogbrew
 					["sourceQuest"] = 27691,	-- Marshfin Madness
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Hr'nglth the Lost slain
 							["provider"] = { "n", 46371 },	-- Hr'nglth the Lost
 							["coord"] = { 63.2, 86.8, SWAMP_OF_SORROWS },
 						}),
 						i(64592, {	-- Baba's Leg Warmers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64602, {	-- Frenzy Call Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64611, {	-- Swamp Skull Cap
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64619, {	-- Sinister Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1141,7 +1141,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46172,	-- Baba Bogbrew
 					["sourceQuest"] = 27818,	-- Slithering Signs
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(27918, {	-- The Harborage
@@ -1154,14 +1154,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27860,	-- The Lost Ones
 					},
 					["coord"] = { 69.9, 36.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27915, {	-- The Heart of the Temple
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(1421, {	-- The Lost Caravan
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27860, {	-- The Lost Ones
 					["qg"] = 18221,	-- Holaaru
 					["coord"] = { 69.8, 36.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Lost One slain
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					}),
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6|8 Purespring Mote
 							["provider"] = { "i", 62609 },	-- Purespring Mote
@@ -1349,23 +1349,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27822,	-- Lumbering Oafs (A)
 					},
 					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Stonard Ogre slain
 							["provider"] = { "n", 46765 },	-- Stonard Ogre
 						}),
 						i(64594, {	-- Ogre Trapper
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64620, {	-- Bloodmire Crossbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64613, {	-- Ogre Mage Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64604, {	-- Sword of Marshtide Watch
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157013, {	-- Ogre Mage Club
 							["timeline"] = { "added 7.3.5.25716" },
@@ -1379,23 +1379,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27852,	-- Orcs and Humans (H)
 					},
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Marshtide Knight slain
 							["provider"] = { "n", 46414 },	-- Marshtide Knight
 						}),
 						i(64625, {	-- Knight Tapper
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64634, {	-- Bloodmire Crossbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64632, {	-- Ogre Mage Staff
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64629, {	-- Greataxe of Stonard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157013, {	-- Ogre Mage Club
 							["timeline"] = { "added 7.3.5.25716" },
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1414,7 +1414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1485,26 +1485,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27854,	-- Tides of Darkness (H)
 					},
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Marshtide Invader slain
 							["provider"] = { "n", 46869 },	-- Marshtide Invader
 						}),
 						i(64636, {	-- Defender's Thrust
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64626, {	-- Robes of the Honorable
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64630, {	-- Leggings of the Final Stand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64633, {	-- Chestguard of Bravery
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64635, {	-- Ruag's Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1515,11 +1515,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27909,	-- The Purespring (H)
 					},
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(64627, {	-- Dying Breath
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1536,7 +1536,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(5348, {	-- Dreamwatcher Forktongue <Victim of the Nightmare> [CATA+]
 					["coord"] = { 18.0, 69.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14446, {	-- Fingat
 					-- #if AFTER CATA

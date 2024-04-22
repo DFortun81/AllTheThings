@@ -417,7 +417,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 26632,	-- The Prophet Tharon'ja
 						["groups"] = {
 							ach(5099, {	-- Heroic: Drak'Tharon Keep Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald
 								["timeline"] = { "removed 4.0.1" },

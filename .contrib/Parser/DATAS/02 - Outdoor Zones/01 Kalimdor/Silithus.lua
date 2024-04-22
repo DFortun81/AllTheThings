@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				ach(4934, {	-- Silithus Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(38738, {	-- Twilight's Run
@@ -1647,7 +1647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38269,	-- Zen'Aliri
 					-- ["sourceQuest"] = 24695,	-- Ever Watching From Above [nothing under this entire quest chain is required... maybe something completely different?]
 					["coord"] = { 55.7, 60.6, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				applyclassicphase(PHASE_FIVE, q(8538, {	-- The Four Dukes
@@ -1741,7 +1741,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28856, {	-- The Sands of Silithus
 					["qg"] = 11118,	-- Innkeeper Vizzie
 					["coord"] = { 59.8, 51.1, WINTERSPRING },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(1125, {	-- The Spirits of Southwind

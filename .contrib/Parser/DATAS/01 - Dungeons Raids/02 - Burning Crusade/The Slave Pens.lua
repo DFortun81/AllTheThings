@@ -329,7 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { "added 3.0.1" },
 							}),
 							ach(5069, {	-- Heroic: The Slave Pens Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(27741),	-- Bleeding Hollow Warhammer
 							i(27673),	-- Phosphorescent Blade

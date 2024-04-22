@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.3, 20.1, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["classes"] = { WARRIOR },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -955,13 +955,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				fp(625, {	-- Fairbreeze Village, Eversong Woods [Horde]
 					["cr"] = 44036,	-- Skymaster Brightdawn <Dragonhawk Master>
 					["coord"] = { 44.0, 70.0, EVERSONG_WOODS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(631, {	-- Falconwing Square, Eversong Woods [Horde]
 					["cr"] = 44244,	-- Skymaster Skyles <Dragonhawk Master>
 					["coord"] = { 46.2, 46.8, EVERSONG_WOODS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(82, {	-- Silvermoon City [Horde]
@@ -1918,7 +1918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(50484, {	-- Magistrix Nizara <Silvermoon City Quartermaster>
 					["coord"] = { 54.2, 50.8, EVERSONG_WOODS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(64915),	-- Cape of Silvermoon

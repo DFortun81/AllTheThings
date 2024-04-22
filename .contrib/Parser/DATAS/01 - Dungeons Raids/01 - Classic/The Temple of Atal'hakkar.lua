@@ -178,14 +178,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27605, {	-- Eranikus
 					["qg"] = 46077,	-- Lord Itharius
 					["sourceQuest"] = 27915,	-- The Heart of the Temple
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shade of Eranikus slain
 							["provider"] = { "n", 5709 },	-- Shade of Eranikus
 						}),
 						i(65931, {	-- Essence of Eranikus' Shade
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -297,7 +297,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27604, {	-- Jammal'an the Prophet
 					["qg"] = 46077,	-- Lord Itharius
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Jammal'an
@@ -349,7 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				q(27633, {	-- The Blood God Hakkar
 					["qg"] = 46077,	-- Lord Itharius
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Avatar of Hakkar slain
@@ -794,7 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5050, {	-- Sunken Temple Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(10454, {	-- Essence of Eranikus
 						["timeline"] = { "removed 4.0.3" },

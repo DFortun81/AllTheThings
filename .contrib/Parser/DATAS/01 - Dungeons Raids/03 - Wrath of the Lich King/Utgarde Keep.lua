@@ -412,7 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 23954,	-- Ingvar the Plunderer
 						["groups"] = {
 							ach(5095, {	-- Heroic: Utgarde Keep Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(41793),	-- Design: Fierce Monarch Topaz
 							i(37190),	-- Enraged Feral Staff

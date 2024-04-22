@@ -427,7 +427,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 28923,	-- Loken
 						["groups"] = {
 							ach(5103, {	-- Heroic: Halls of Lightning Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(1867),	-- Timely Death
 							i(41799),	-- Design: Eternal Earthsiege Diamond

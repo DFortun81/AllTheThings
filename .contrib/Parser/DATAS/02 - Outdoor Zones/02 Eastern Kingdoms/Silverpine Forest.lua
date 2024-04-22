@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4894, {	-- Silverpine Forest Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER MOP
 					["groups"] = {
@@ -126,13 +126,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest
 					["cr"] = 44825,	-- Bat Handler Maggotbreath <Flight Master>
 					["coord"] = { 57.8, 8.80, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(681, {	-- Forsaken Rear Guard, Silverpine Forest
 					["cr"] = 50463,	-- Franny Mertz <Bat Handler>
 					["coord"] = { 45.8, 21.8, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(654, {	-- The Forsaken Front, Silverpine Forest
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27550,	-- Pyrewood's Fall
 					},
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(530, {	-- A Husband's Revenge
@@ -272,17 +272,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45631,	-- High Warlord Cromush
 					["sourceQuest"] = 27484,	-- Only One May Enter
 					["coord"] = { 52.2, 66.3, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62885, {	-- Unmistakable Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62883, {	-- Inconspicuous Pantaloons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62884, {	-- "Bear" Hide Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131678, {	-- Inconspicuous Footguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44778,	-- Apothecary Witherbloom
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
 					["coord"] = { 56.7, 9.1, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(479, {	-- Ambermill Investigations
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44789,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27045,	-- Waiting to Exsanguinate
 					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(516, {	-- Beren's Peril
@@ -457,27 +457,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27472,	-- Rise, Godfrey
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27601, {	-- Cities in Dust
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27594,	-- On Her Majesty's Secret Service
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62897, {	-- Bracers of the Most Trusted
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131680, {	-- Belt of Absolute Allegiance
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(62896, {	-- Belt of Beginnings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62895, {	-- Slippers of Unturned Loyalties
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -485,7 +485,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27193,	-- Seek and Destroy
 					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27476, {	-- Dalar Dawnweaver
@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27475,	-- Unyielding Servitors
 					},
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(481, {	-- Dalar's Analysis
@@ -524,27 +524,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26989,	-- The Gilneas Liberation Front
 					},
 					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27094, {	-- Deeper into Darkness
 					["qg"] = 44917,	-- Warlord Torok
 					["sourceQuest"] = 27095,	-- Skitterweb Menace
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62850, {	-- Drunken Style Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131640, {	-- Rear Guard Bands
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(62851, {	-- Rear Guard Britches
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62849, {	-- Skitterweb Glovelettes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46124,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27601,	-- Cities in Dust
 					["coord"] = { 45.3, 84.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(435, {	-- Escorting Erland
@@ -571,7 +571,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45195,	-- Bloodfang Stalker
 					["sourceQuest"] = 27098,	-- Lordaeron [Shifted back 1 quest... no history in report Discord 2023-07-29]
 					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27575, {	-- From the Belly of the Beast
@@ -579,20 +579,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27574,	-- I Never Forget a Face
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(131679, {	-- Better, Stronger, Faster Bracers
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(62887, {	-- Bracers of the Million Gold Man
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62888, {	-- Leg Bone Covers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62886, {	-- Vest of Forsaken Necromancy
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -600,34 +600,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44917,	-- Warlord Torok
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
 					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26995, {	-- Guts and Gore
 					["qg"] = 44784,	-- High Apothecary Shana T'veen
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
 					["coord"] = { 56.2, 8.3, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27226, {	-- Hair of the Dog
 					["qg"] = 44917,	-- Warlord Torok
 					["sourceQuest"] = 27098,	-- Lordaeron
 					["coord"] = { 45.7, 41.9, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62846, {	-- Ale-Soaked Robes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131660, {	-- Cord of the Sepulcher
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(62847, {	-- Sea Dog Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62848, {	-- Treads of the Sepulcher
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -635,14 +635,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27098,	-- Lordaeron
 					["coord"] = { 44.9, 41.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27574, {	-- I Never Forget a Face
 					["provider"] = { "i", 61505 },	-- Partially Digested Head
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 45896,	-- Marsh Crocolisk
 					["races"] = HORDE_ONLY,
 				}),
@@ -653,20 +653,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26995,	-- Guts and Gore
 					},
 					["coord"] = { 56.2, 8.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(131629, {	-- Maggot-Ridden Greaves
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(62835, {	-- Maggot-Ridden Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62836, {	-- Muckdweller Spear
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62834, {	-- T'veen's Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -674,17 +674,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44912,	-- Apothecary Wormcrud
 					["sourceQuest"] = 27082,	-- Playing Dirty
 					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62843, {	-- Bush Chicken Remote Injector
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62845, {	-- Chicken Stuffers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62844, {	-- Suppository Preventors
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -723,14 +723,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45879,	-- Lord Walden
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27098, {	-- Lordaeron
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27099,	-- No Escape
 					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(428, {	-- Lost Deathstalkers
@@ -748,7 +748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27069,	-- Steel Thunder
 					},
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(478, {	-- Maps and Runes
@@ -766,17 +766,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27097,	-- Rise, Forsaken
 					["coord"] = { 65.7, 26.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62858, {	-- Flesh and Bone
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62857, {	-- Staff of the Formidable Opponent
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62859, {	-- Sword of Insurgence
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -784,20 +784,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45228,	-- Master Forteski
 					["sourceQuest"] = 27194,	-- Cornered and Crushed
 					["coord"] = { 55.8, 46.3, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62855, {	-- Britches of Desperate Measures
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62854, {	-- Mace of Calculated Loss
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131652, {	-- Trousers of Desperate Measures
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(62856, {	-- Underestimated Crossbow
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -805,7 +805,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45880,	-- Baron Ashbury
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27594, {	-- On Her Majesty's Secret Service
@@ -815,17 +815,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27580,	-- Sowing Discord
 					},
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62894, {	-- Favor of the Dark Lady
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62893, {	-- Lorna's Signet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62892, {	-- Windrunner Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -836,7 +836,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27478,	-- Relios the Relic Keeper
 					},
 					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27096, {	-- Orcs are in Order
@@ -847,34 +847,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27093,	-- Lost in the Darkness
 					},
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27082, {	-- Playing Dirty
 					["qg"] = 44912,	-- Apothecary Wormcrud
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
 					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27483, {	-- Practical Vengeance
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 27476,	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62880, {	-- Axe of Practical Vengeance
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62881, {	-- Dawnweaver's Dagger
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62882, {	-- Edge of Unlifted Burdens
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62879, {	-- Psychopathic Hatchet
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -912,7 +912,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45878,	-- Lord Godfrey
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(441, {	-- Raleigh and the Undercity
@@ -931,27 +931,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44916,	-- Admiral Hatchet
 					["sourceQuest"] = 27098,	-- Lordaeron
 					["coord"] = { 45.8, 41.9, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27478, {	-- Relios the Relic Keeper
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 27476,	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62875, {	-- Betrayal's Sting
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62878, {	-- Codex Breaker
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62877, {	-- Forsaken Ball
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62876, {	-- Relios's Mace
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1007,14 +1007,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27096,	-- Orcs are in Order
 					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27472, {	-- Rise, Godfrey
 					["qg"] = 45525,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27438,	-- The Great Escape
 					["coord"] = { 51.7, 66.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(439, {	-- Rot Hide Clues
@@ -1063,7 +1063,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27181,	-- Excising the Taint
 					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27095, {	-- Skitterweb Menace
@@ -1073,7 +1073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27069,	-- Steel Thunder
 					},
 					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27580, {	-- Sowing Discord
@@ -1084,7 +1084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27550,	-- Pyrewood's Fall
 					},
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3221, {	-- Speak with Renferrel
@@ -1099,17 +1099,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44916,	-- Admiral Hatcher
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62841, {	-- Bloodfang Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62840, {	-- Sober Pup Wristbands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62842, {	-- Steel Thunder Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131636, {	-- Steel Thunder Chestbrace
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1131,7 +1131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27518,	-- Transdimensional Warfare: Chapter III
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(437, {	-- The Dead Fields
@@ -1185,17 +1185,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44615,	-- Grand Executor Mortuus
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
 					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62839, {	-- Nubly Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62837, {	-- Nubish Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62838, {	-- Nub's Wand
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1214,28 +1214,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44615,	-- Grand Executor Mortuus
 					["sourceQuest"] = 26964,	-- Warchief's Command: Silverpine Forest!
 					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27065, {	-- The Warchief's Fleet
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27056,	-- Belmont's Report
 					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27232, {	-- The Waters Run Red...
 					["provider"] = { "o", 205350 },	-- Horde Communication Panel
 					["sourceQuest"] = 27231,	-- Reinforcements from Fenris
 					["coord"] = { 59.1, 34.2, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62853, {	-- Blood Offering Platter
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62852, {	-- Sabots of Red Waters
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131661, {	-- Treads of Red Waters
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1288,38 +1288,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27232,	-- The Waters Run Red
 					},
 					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27484,	-- Only One May Enter
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27512,	-- Transdimensional Warfare: Chapter I
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27518, {	-- Transdimensional Warfare: Chapter III
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27513,	-- Transdimensional Warfare: Chapter II
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62890, {	-- Ataeric's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62889, {	-- Transdimensional Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62891, {	-- Vessel of the Dark Lady
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1327,27 +1327,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qgs"] = { 45610, 45626 },	-- Daschla
 					["sourceQuest"] = 27472,	-- Rise, Godfrey
 					["coord"] = { 51.8, 64.7, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27045, {	-- Waiting to Exsanguinate
 					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
 					["sourceQuest"] = 27039,	-- Dangerous Intentions
 					["coord"] = { 53.8, 12.9, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62833, {	-- Cloak of Courage
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131634, {	-- Grasps of the Survivor
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(62831, {	-- Treads of the Survivor
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62832, {	-- Yorick's Bequest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1377,7 +1377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26964, {	-- Warchief's Command: Silverpine Forest!
 					["qg"] = 1515,	-- Executor Zygand
 					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 9,
@@ -1437,11 +1437,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 57.4, 62.6, SILVERPINE_FOREST },
 						{ 59.2, 66.0, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(46992, {	-- Berard the Moon-Crazed
 					["coord"] = { 43.6, 50.8, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(47003, {	-- Bolgaff <The Mad Hunter>
 					["coord"] = { 48.8, 25.4, SILVERPINE_FOREST },
@@ -1492,11 +1492,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(47012, {	-- Effritus
 					["coord"] = { 47.0, 69.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(47008, {	-- Fenwick Thatros
 					["coord"] = { 49.4, 33.8, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(50949, {	-- Finn's Gambit
 					["coord"] = { 64.0, 46.6, SILVERPINE_FOREST },
@@ -1677,7 +1677,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(47023, {	-- Thule Ravenclaw
 					["coord"] = { 50.2, 60.0, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Wailing Spirit

@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(ULDUM, {
 		["lore"] = "Uldum, a new zone added with Cataclysm, was known as the Land of the Titans. An ancient desert formerly inaccessible to the Alliance and the Horde, it is rich with Titan lore and an advanced civilization, the Tol'vir. This region draws aesthetic influences heavily from Ancient Egypt, with pyramids, obelisks, similar deities, and irrigation systems.",
 		["icon"] = "Interface\\Icons\\Achievement_zone_uldum",
-		["timeline"] = { "added 4.0.3" },
+		["timeline"] = { ADDED_4_0_3 },
 		--["maps"] = {
 			-- 737,	-- The Vortex Pinnacle
 			-- 857,	-- Throne of the Four Winds
@@ -337,7 +337,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28557,	-- Warchief's Command: Uldum!
 					},
 					["coord"] = { 30.4, 65.5, TANARIS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28132, {	-- Efficient Excavations
 					["crs"] = { 46993 },	-- Schnottz Air Officer

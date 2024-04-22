@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				ach(4905, {	-- Cape of Stranglethorn Quests
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				explorationAch(4995, {	-- Explore the Cape of Stranglethorn
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
 			pvp(o(179697, {	-- Arena Treasure Chest
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["sourceQuest"] = 26600,	-- A Giant's Feast
 					["coord"] = { 40.4, 67.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Negolash slain
 							["providers"] = {
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["sourceQuest"] = 26599,	-- The Captain's Chest
 					["coord"] = { 40.4, 67.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Crate of Grade-E Meat
 							["provider"] = { "i", 59036 },	-- Crate of Grade-E Meat
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26824,	-- Results: Inconclusive
 					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(617, {	-- Akiris by the Bundle (1/2)
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44083,	-- Linzi Hewstrike
 					["sourceQuest"] = 26823,	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Akiris Reed
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43095,	-- Sassy Hardwrench
 					["sourceQuest"] = 26489,	-- It's You!!
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Akiris Reed
@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 59142 },	-- Weather-Beaten Coin
 					},
 					["coord"] = { 41.2, 61.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 43454,	-- "Good-Boy" Bruce
 				}),
 				q(3721, {	-- An OOX of Your Own
@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26634,	-- The Bane of Many a Pirate
 					},
 					["coord"] = { 44.3, 91.6, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
@@ -345,7 +345,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44084,	-- Maywiki
 					["sourceQuest"] = 26808,	-- Maywiki
 					["coord"] = { 55.6, 42.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 	Place incense in front of Totem of Hir'eek
@@ -359,13 +359,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 43245 },	-- Zanzil the Outcast
 						}),
 						i(61531, {	-- Veil of the Silent Listener
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61532, {	-- Monnion of the Bat
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61533, {	-- Small Pouch of Incense
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131606, {	-- Spaulders of the Bat
 							["timeline"] = { "added 7.0.3.22248" },
@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43098,	-- Chabal
 					["sourceQuest"] = 26495,	-- Chabal
 					["coord"] = { 34.5, 27.9, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 	Place incense in front of Totem of Hir'eek
@@ -390,13 +390,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 43245 },	-- Zanzil the Outcast
 						}),
 						i(61534, {	-- Veil of the Silent Listener
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61535, {	-- Monnion of the Bat
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61536, {	-- Small Pouch of Incense
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131554, {	-- Spaulders of the Bat
 							["timeline"] = { "added 7.0.3.22248" },
@@ -411,26 +411,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26699,	-- Turning the Brashtide
 					},
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Kill Fleet Master Firallon
 							["provider"] = { "n", 2546 },	-- Fleet Master Firallon
 							["coord"] = { 35.8, 66.6, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						i(61626, {	-- Booty Bay Pendant
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61630, {	-- Booty Bay Pantaloons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61632, {	-- Booty Bay Helm
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131586, {	-- Booty Bay Trousers
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(61628, {	-- Star of Stranglethorn
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2083 },	-- Bloodsail Correspondence
 					["sourceQuest"] = 26609,	-- The Bloodsail Buccaneers
 					["coord"] = { 41.2, 61.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26665, {	-- Call of Booty
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
@@ -449,13 +449,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26662,	-- The Brashtide Crew
 					},
 					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26635, {	-- Cannonball Swim
 					["qg"] = 2545,	-- "Pretty Boy" Duncan
 					["sourceQuest"] = 26631,	-- Your First Day as a Pirate
 					["coord"] = { 44.5, 92.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Bloodsail Cannonball
 							["providers"] = {
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(624, {	-- Cortello's Riddle (1/3)
@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
 					["description"] = "This quest is only available if you DID NOT complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26825, {	-- Dask "The Flask" Gobfizzle
@@ -553,14 +553,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
 					["description"] = "This quest is only available if you DID complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26612, {	-- Details of the Attack
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 26611,	-- The Baron Must Be Told
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Bloodsail Sea Dog slain
 							["provider"] = { "n", 1565 },	-- Bloodsail Sea Dog
@@ -583,16 +583,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 40.7, 82.3, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						i(61570, {	-- Informant's Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61572, {	-- Belt of Supremacy
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61574, {	-- Sea Baron's Breastplate
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61576, {	-- Pirate's Musket
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131563, {	-- Cord of Supremecy
 							["timeline"] = { "added 7.0.3.22248" },
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43096,	-- Flem Gizzix
 					["sourceQuest"] = 26433,	-- The Holy Water of Clarity
 					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodsail Ruby
@@ -626,7 +626,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 26665,	-- Call of Booty
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(61384),	-- Doublerum
 					},
@@ -671,22 +671,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2547,	-- Ironpatch
 					["sourceQuest"] = 26647,	-- Ol' Blasty
 					["coord"] = { 46.6, 94.9, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/75 Venture Co. Oil Worker slain
 							["provider"] = { "n", 43596 },	-- Venture Co. Oil Worker
 						}),
 						i(61592, {	-- Black Gold Buckler
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61594, {	-- Venture Blaster
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61596, {	-- Slippery Glovelettes
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61598, {	-- Ironpatch Shoulderguards
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131573, {	-- Ironpatch Handguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -700,7 +700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26809,	-- Backdoor Dealings
 					["coord"] = { 55.7, 42.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Deal with Zanzil the Outcast
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26550,	-- Backdoor Dealings
 					["coord"] = { 34.5, 27.9, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Deal with Zanzil the Outcast
@@ -808,12 +808,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 26612,	-- Details of the Attack
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26822, {	-- Good-Fer-Nothin' Slither-Dogs
 					["qg"] = 44100,	-- Goris
 					["coord"] = { 55.0, 41.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Stranglethorn Basilisk slain
@@ -823,13 +823,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(61525, {	-- Goris' Medallion
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61526, {	-- Staff of First Occurrences
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61527, {	-- Slither-Dog Headguard
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131611, {	-- Slither-Dog Helm
 							["timeline"] = { "added 7.0.3.22248" },
@@ -840,7 +840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2634,	-- Princess Poobah
 					["sourceQuest"] = 26604,	-- Protecting Her Royal Highness Poobah
 					["coord"] = { 59.4, 79.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Poobah's Tiara
 							["provider"] = { "i", 59057 },	-- Poobah's Tiara
@@ -876,7 +876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43099,	-- Stone Guard Towhide
 					["sourceQuest"] = 26451,	-- Gurubashi Challenge: Free-For-All Arena Combat
 					["coord"] = { 46.2, 28.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- Defeat your Gurubashi Arena Challenger
@@ -890,7 +890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26451, {	-- Gurubashi Challenge: Free-For-All Arena Combat
 					["qg"] = 43099,	-- Stone Guard Towhide
 					["coord"] = { 46.2, 28.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Defeat your Gurubashi Arena Challenger
 							["providers"] = {
@@ -916,7 +916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 26552,	-- Through the Troll Hole (H)
 					}),
 					["coord"] = { 78.5, 35.6, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Destroy High Priestess Jeklik's body
 							["providers"] = {
@@ -935,7 +935,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26813,	-- Plunging Into Zul'Gurub
 					["coord"] = { 82.1, 35.3, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Deal with High Priest Venoxis
@@ -946,13 +946,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 84.0, 36.8, NORTHERN_STRANGLETHORN },
 						}),
 						i(61549, {	-- Maywiki's Favorite Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61550, {	-- Boots of the Foolhardy
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61551, {	-- Cloak of Great Endeavors
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131607, {	-- Treads of the Foolhardy
 							["timeline"] = { "added 7.0.3.22248" },
@@ -966,7 +966,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26554,	-- Plunging Into Zul'Gurub
 					["coord"] = { 82.1, 35.3, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Deal with High Priest Venoxis
@@ -977,13 +977,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 84.0, 36.8, NORTHERN_STRANGLETHORN },
 						}),
 						i(61552, {	-- Chabal's Favorite Ring
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61553, {	-- Boots of the Foolhardy
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61554, {	-- Cloak of Great Endeavors
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131555, {	-- Treads of the Foolhardy
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1015,14 +1015,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26434,	-- Primal Reagents of Power
 					},
 					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26820, {	-- If They're Just Going to Leave Them Lying Around... (A)
 					["qg"] = 44083,	-- Linzi Hewstrike
 					["sourceQuest"] = 26823,	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Naga Icon
@@ -1033,10 +1033,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 39.1, 46.2, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						i(61521, {	-- Amulet of Brilliant Talent
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61522, {	-- Helm of Secrets
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1044,7 +1044,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43095,	-- Sassy Hardwrench
 					["sourceQuest"] = 26404,	-- Above My Pay Grade
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Naga Icon
@@ -1055,16 +1055,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 39.1, 46.2, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						i(61517, {	-- Sassy Pantaloons
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61518, {	-- Iconic Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61519, {	-- Wandering Hands
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61520, {	-- Corpsepump Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131530, {	-- Iconic Breastplate
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1083,7 +1083,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26489, {	-- It's You!!
 					["qg"] = 43095,	-- Sassy Hardwrench
 					["coord"] = { 34.8, 29.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
 					["groups"] = {
@@ -1127,7 +1127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2493,	-- Dizzy One-Eye
 					["sourceQuest"] = 26611,	-- The Baron Must Be Told
 					["coord"] = { 43.3, 71.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Dizzy's Eye
 							["provider"] = { "i", 3897 },	-- Dizzy's Eye
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["sourceQuest"] = 26594,	-- Return to MacKinley
 					["coord"] = { 42.0, 73.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Maury's Clubbed Foot
 							["provider"] = { "i", 3924 },	-- Maury's Clubbed Foot
@@ -1174,13 +1174,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 43377,	-- Ephram "Midriff" Moonfall
 						}),
 						i(61538, {	-- Nice Shorts
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61540, {	-- Phase Three Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61542, {	-- Forceful Shield
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131558, {	-- Phase Three Leggings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1194,7 +1194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43097,	-- Mixmaster Jasper
 					["sourceQuest"] = 26533,	-- Zanzil's Secret
 					["coord"] = { 35.1, 27.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Gmurgl tested
@@ -1232,19 +1232,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 					["sourceQuest"] = 26650,	-- The Damsel's Luck
 					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/9 Bloodsail Corsair slain
 							["provider"] = { "n", 43636 },	-- Bloodsail Corsair
 						}),
 						i(61614, {	-- Supposed Mace
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61616, {	-- Accusing Finger
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61618, {	-- Mutineer's Noose
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1255,7 +1255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26819,	-- Akiris by the Bundle
 					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(594, {	-- Message in a Bottle (1/2)
@@ -1290,7 +1290,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 62.4, 46.7, THE_CAPE_OF_STRANGLETHORN },
 						{ 57.0, 54.5, THE_CAPE_OF_STRANGLETHORN },
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26494, {	-- Mixmaster Jasper
 					["providers"] = {
@@ -1299,30 +1299,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26601, {	-- Mok'rash the Cleaver
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["sourceQuest"] = 26602,	-- A Dish Best Served Huge
 					["coord"] = { 40.4, 67.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Mok'rash the Cleaver slain
 							["provider"] = { "n", 1493 },	-- Mok'rash the Cleaver
 							["coord"] = { 35, 65.4, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						i(61562, {	-- Smott's Signet
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61564, {	-- Sea Song Epaulets
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61566, {	-- Landlubber Headband
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61568, {	-- Sea Legs
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131561, {	-- Landlubber Helm
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1333,7 +1333,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2634,	-- Princess Poobah
 					["sourceQuest"] = 26605,	-- Grubby Little Paws
 					["coord"] = { 59.4, 79.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Shackle Key
 							["provider"] = { "i", 4103 },	-- Shackle Key
@@ -1341,13 +1341,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1559,	-- King Mukla
 						}),
 						i(61586, {	-- Princess Poobah's Dress
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61588, {	-- Princess Poobah's Bracelets
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61589, {	-- Princess Poobah's Tiara
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131562, {	-- Princess Poobah's Bangles
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2547,	-- Ironpatch
 					["sourceQuest"] = 26644,	-- Attracting Attention
 					["coord"] = { 46.6, 94.9, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Hit Smilin' Timmy Sticks with a cannonball
 							["provider"] = { "n", 43560 },	-- Smilin' Timmy Sticks
@@ -1372,22 +1372,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26644,	-- Attracting Attention
 					["coord"] = { 46.5, 93.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Ninja slain
 							["provider"] = { "n", 43553 },	-- Ninja
 						}),
 						i(61600, {	-- Mortal Naginata
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61602, {	-- Ninja Star
-							["timeline"] = { "added 4.0.3.13287", "deleted 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, "deleted 5.0.4" },
 						}),
 						i(61604, {	-- Other-Eye Patch
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61606, {	-- Pauldrons of the Eternal Battle
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131572, {	-- One-Eye Patch
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1401,7 +1401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
 					["sourceQuest"] = 26823,	-- Too Big For His Britches
 					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Pure Water
@@ -1421,7 +1421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26812,	-- High Priestess Jeklik
 					["coord"] = { 77.9, 44.1, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26554, {	-- Plunging Into Zul'Gurub (H)
@@ -1432,14 +1432,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26553,	-- High Priestess Jeklik
 					["coord"] = { 78.0, 44.2, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26818, {	-- Plush Pelts
 					["qg"] = 44083,	-- Linzi Hewstrike
 					["sourceQuest"] = 26823,	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/4 Supple Tigress Fur
@@ -1451,13 +1451,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1713,	-- Elder Shadowmaw Panther
 						}),
 						i(61513, {	-- Fuzzy Legwarmers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61516, {	-- Hambone's Spare Collar
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61515, {	-- Supple Gloves
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131609, {	-- Supple Support Harness
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1466,7 +1466,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(61514, {	-- Velvety Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1474,7 +1474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 26679,	-- Return to Revilgaz
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Narkk's Handbombs
 							["providers"] = {
@@ -1489,7 +1489,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43096,	-- Flem Gizzix
 					["sourceQuest"] = 26433,	-- The Holy Water of Clarity
 					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/4 Supple Tigress Fur
@@ -1501,13 +1501,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1713,	-- Elder Shadowmaw Panther
 						}),
 						i(61528, {	-- Velvet Choker
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61529, {	-- Hideaway Staff
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61530, {	-- Not-Scratchy Helm
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131529, {	-- Not-Scratchy Faceguard
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1518,7 +1518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2634,	-- Princess Poobah
 					["sourceQuest"] = 26603,	-- Message in a Bottle
 					["coord"] = { 59.4, 79.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Jaguero Stalker slain
 							["provider"] = { "n", 2522 },	-- Jaguero Stalker
@@ -1529,7 +1529,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
 					["sourceQuest"] = 26815,	-- Zanzil's Secret
 					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Zanzil's Formulation
@@ -1537,13 +1537,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1490,	-- Zanzil Witch Doctor
 						}),
 						i(61543, {	-- Dask's Cloak
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61544, {	-- Leggings with Mysterious Stains
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61545, {	-- Glass Encrusted Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131608, {	-- Pantaloons with Myserious Stains
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1554,7 +1554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43097,	-- Mixmaster Jasper
 					["sourceQuest"] = 26534,	-- Let's See What You've Got, Zanzil
 					["coord"] = { 35.1, 27.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Zanzil's Formulation
@@ -1562,13 +1562,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1490,	-- Zanzil Witch Doctor
 						}),
 						i(61546, {	-- Formulaic Cloak
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61547, {	-- Mixmaster's Britches
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61548, {	-- Boots of Explosive Dancing
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131551, {	-- Mixmaster's Trousers
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26815,	-- Zanzil's Secret
 					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(607, {	-- Return to MacKinley
@@ -1602,7 +1602,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26593,	-- Scaring Shaky
 					["coord"] = { 40.5, 67.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26679, {	-- Return to Revilgaz
 					["providers"] = {
@@ -1611,7 +1611,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26678,	-- Doublerum
 					["coord"] = { 40.6, 73.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(606, {	-- Scaring Shaky
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
@@ -1628,7 +1628,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26593, {	-- Scaring Shaky
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["coord"] = { 42.0, 73.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Mistvale Giblets
 							["provider"] = { "i", 3919 },	-- Mistvale Giblets
@@ -1640,13 +1640,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43504,	-- Yancey Grillsen
 					["sourceQuest"] = 26624,	-- Getting in With the Bloodsail
 					["coord"] = { 43.8, 56.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						q(26630, {	-- Looks Like a Tauren Pirate to Me
 							["qg"] = 2487,	-- Fleet Master Seahorn
 							["altQuests"] = { 26629 },	-- Seeing Where Your Loyalties Lie
 							["coord"] = { 41.0, 73.2, THE_CAPE_OF_STRANGLETHORN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- Return both items to Fleet Master Seahorn
@@ -1675,7 +1675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 26679,	-- Return to Revilgaz
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(3643, {	-- Show Your Work
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
@@ -1718,7 +1718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 					["sourceQuest"] = 26650,	-- The Damsel's Luck
 					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Sabotage the Grog
 							["provider"] = { "o", 204454 },	-- Grog Barrel
@@ -1800,13 +1800,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26597, {	-- Stranglethorn Fever
 					["qg"] = 2486,	-- Fin Fizracket
 					["coord"] = { 41.7, 72.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						q(26598, {	-- The Heart of Mokk
 							["qg"] = 1449,	-- Witch Doctor Unbagwa
 							["coord"] = { 54.1, 46.5, THE_CAPE_OF_STRANGLETHORN },
 							["cost"] = { { "i", 2799, 1 } },	-- Gorilla Fang
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Heart of Mokk
@@ -1818,13 +1818,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(61556, {	-- Feverish Bracers
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61558, {	-- Savage Handwraps
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61560, {	-- Chestpiece of Returning Strength
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131560, {	-- Savage Handguards
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1857,7 +1857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2548,	-- Captain Keelhaul
 					["sourceQuest"] = 26631,	-- Your First Day as a Pirate
 					["coord"] = { 44.4, 91.6, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Swab the decks
 							["providers"] = {
@@ -1867,16 +1867,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "You can pay \"Pretty Boy\" Duncan (just outside the door from the lower decks) 1g to swab the decks for you if you don't want to do the minigame.",
 						}),
 						i(61578, {	-- Cleaning Britches
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61580, {	-- Swabbie's Booties
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61582, {	-- Riptide Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61584, {	-- Keelhaul Shackles
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131567, {	-- Riptide Boots
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1890,7 +1890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2549,	-- Garr Salthoof
 					["sourceQuest"] = 26633,	-- Swabbing Duty
 					["coord"] = { 44.4, 92.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Bushel of Limes
 							["providers"] = {
@@ -1905,7 +1905,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2490,	-- First Mate Crazz
 					["sourceQuest"] = 26610,	-- Bloodsail Treachery
 					["coord"] = { 42.4, 72.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(595, {	-- The Bloodsail Buccaneers (1/5)
 					["qg"] = 2490,	-- First Mate Crazz
@@ -1993,13 +1993,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuestNumRequired"] = 1,
 					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
 					["coord"] = { 42.6, 71.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26662, {	-- The Brashtide Crew
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 					["sourceQuest"] = 26650,	-- The Damsel's Luck
 					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Speak with Long John Copper
 							["provider"] = { "n", 43659 },	-- Long John Copper <The Brashtide Crew>
@@ -2018,7 +2018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26596, {	-- The Call of Kalimdor (A)
 					["qg"] = 48808,	-- Corporal Jeyne
 					["coord"] = { 40.4, 68.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- leads to Dustwallow Marsh
 					["lvl"] = 35,
@@ -2027,7 +2027,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48797,	-- Gim'hila
 					["description"] = "Swims in a circle near the dock.",
 					["coord"] = { 39.6, 68.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 35,
@@ -2049,7 +2049,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26599, {	-- The Captain's Chest
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["coord"] = { 40.3, 67.7, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Smotts' Chest
 							["provider"] = { "i", 3932 },	-- Smotts' Chest
@@ -2100,7 +2100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2487,	-- Fleet Master Seahorn
 					["sourceQuest"] = 26698,	-- Seeking Seahorn
 					["coord"] = { 41.5, 73.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Bloodsail Corsair slain
 							["provider"] = { "n", 43726 },	-- Bloodsail Corsair
@@ -2114,13 +2114,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26648,	-- Our Mortal Enemies
 					},
 					["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26697, {	-- The Final Voyage of the Brashtide
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 26695,	-- Prepare for Takeoff
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/85 Brashtide Crewman slain
 							["provider"] = { "n", 43717 },	-- Brashtide Crewman <The Brashtide Crew>
@@ -2129,13 +2129,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 43790 },	-- Brashtide Attack Boat
 						}),
 						i(61608, {	-- Mongrel Shooter
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61610, {	-- Flight Master's Gift
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61612, {	-- Baron's Baton
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157000, {	-- Fuse-Cutter Knife
 							["timeline"] = { "added 7.3.5.25716" },
@@ -2156,7 +2156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26450,	-- If They're Just Going to Leave Them Lying Around...
 					},
 					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Pure Water
@@ -2177,7 +2177,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["description"] = "This version of the quest is given to players that completed Mok'thardin's Enchantment prior to the Cataclysm.",
 					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Pure Water
@@ -2252,7 +2252,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26450,	-- If They're Just Going to Leave Them Lying Around...
 					},
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/7 Sassy's Secret Ingredient
@@ -2263,10 +2263,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(61523, {	-- Basilisk Scale Necklace
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61524, {	-- Helm of Secrets
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -2278,7 +2278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26810,	-- Eliminate the Outcast
 					["coord"] = { 61.2, 44.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26552, {	-- Through the Troll Hole (H)
@@ -2290,14 +2290,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26551,	-- Eliminate the Outcast
 					["description"] = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
 					["coord"] = { 61.1, 44.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26823, {	-- Too Big For His Britches
 					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 26825, 26826 },	-- Dask "The Flask" Gobfizzle (two different versions)
 					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ironjaw Humour
@@ -2322,19 +2322,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2487,	-- Fleet Master Seahorn
 					["sourceQuest"] = 26698,	-- Seeking Seahorn
 					["coord"] = { 41.5, 73.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Brashtide Raider slain
 							["provider"] = { "n", 43716 },	-- Brashtide Raider <The Brashtide Crew>
 						}),
 						i(61620, {	-- Revilgaz's Cutlass
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61622, {	-- Bruised Vest
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61624, {	-- Brash Cloak
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131585, {	-- Revilgaz's Tunic
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2374,7 +2374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2488,	-- Deeg
 					["sourceQuest"] = 26611,	-- The Baron Must Be Told
 					["coord"] = { 40.7, 73.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/15 Snuff
 							["provider"] = { "i", 3910 },	-- Snuff
@@ -2458,7 +2458,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26629,	-- Seeing Where Your Loyalties Lie
 					},
 					["coord"] = { 43.8, 56.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(601, {	-- Water Elementals
 					["qg"] = 2496,	-- Baron Revilgaz
@@ -2525,7 +2525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
 					["sourceQuest"] = 26817,	-- Perfectly Pure
 					["coord"] = { 55.2, 41.9, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Zanzil's Mixture
@@ -2549,7 +2549,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 43097,	-- Mixmaster Jasper
 					["sourceQuest"] = 26494,	-- Mixmaster Jasper
 					["coord"] = { 35.1, 27.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Zanzil's Mixture
@@ -2667,7 +2667,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you don't have the required reputation with Bloodsail Buccaneers, these pets are also sold in Booty Bay by Narkk.",
 					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers
 					["coord"] = { 46.6, 93.6, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(8495),	-- Senegal (PET!)
 						i(8496),	-- Cockatiel (PET!)

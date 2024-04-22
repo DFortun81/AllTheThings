@@ -391,7 +391,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 26861,	-- King Ymiron
 						["groups"] = {
 							ach(5105, {	-- Heroic: Utgarde Pinnacle Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							ach(2157),	-- King's Bane
 							i(41797),	-- Design: Austere Earthsiege Diamond (7.3.5 - Used to be only Normal Mode)

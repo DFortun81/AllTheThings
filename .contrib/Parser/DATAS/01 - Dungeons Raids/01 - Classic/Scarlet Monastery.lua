@@ -99,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					ach(5046, {	-- Scarlet Monastery Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 				}),
 				-- #endif
@@ -279,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26972, {	-- The Dark Side of the Light (A)
 								["qg"] = 44728,	-- Joseph the Awakened
 								["sourceQuest"] = 26982,	-- The Scarlet Monastery (A)
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 26,
 								["groups"] = {
@@ -290,26 +290,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 4543 },	-- Bloodmage Thalnos
 									}),
 									i(65964, {	-- Gloves of the "Pure"
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65988, {	-- Helm of the Awakened
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66005, {	-- Interrogator's Shackles
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65940, {	-- Strapping Belt
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65914, {	-- Vishas' Hood
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
 							q(26950, {	-- The Dark Side of the Light (H)
 								["qg"] = 44637,	-- Dark Ranger Velonara
 								["sourceQuest"] = 26986,	-- The Scarlet Monastery (H)
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 26,
 								["groups"] = {
@@ -320,26 +320,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 4543 },	-- Bloodmage Thalnos
 									}),
 									i(66032, {	-- Gloves of the "Pure"
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66046, {	-- Interrogator's Shackles
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66041, {	-- Scarlet Zealot's Helm
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66023, {	-- Strapping Belt
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66014, {	-- Vishas' Hood
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
 							q(26982, {	-- The Scarlet Monastery (A)
 								["qg"] = 2700,	-- Captain Nials
 								["coord"] = { 40.0, 48.8, ARATHI_HIGHLANDS },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 28,
@@ -347,7 +347,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26986, {	-- The Scarlet Monastery (H)
 								["qg"] = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
 								["coord"] = { 68.4, 37.8, ARATHI_HIGHLANDS },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 28,
@@ -454,7 +454,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						n(QUESTS, {
 							q(26993, {	-- Compendium of the Fallen
 								["qg"] = 44800,	-- Dominic
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["lvl"] = 29,
 								["groups"] = {
 									objective(1, {	-- 0/1 Compendium of the Fallen
@@ -486,7 +486,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26983, {	-- Just Close Enough
 								["qg"] = 39084,	-- Mizzy Pistonhammer
 								["coord"] = { 49.4, 67.6, SOUTHERN_BARRENS },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 31,
@@ -523,7 +523,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26959, {	-- Stripping Their Defenses
 								["qg"] = 44660,	-- Dark Ranger Velonara
 								["sourceQuest"] = 26987,	-- The Right Way
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 31,
 								["groups"] = {
@@ -534,13 +534,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 6487 },	-- Arcanist Doan
 									}),
 									i(66033, {	-- Band of the Arcanist
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66015, {	-- Houndmaster's Belt
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66024, {	-- Shield of Comrades
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
@@ -560,7 +560,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26973, {	-- The Only True Path
 								["qg"] = 44738,	-- Joseph the Awakened
 								["sourceQuest"] = 26983,	-- Just Close Enough
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 31,
 								["groups"] = {
@@ -571,20 +571,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 6487 },	-- Arcanist Doan
 									}),
 									i(65966, {	-- Band of the Arcanist
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65916, {	-- Houndmaster's Belt
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65942, {	-- Shield of the Righteous Cause
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
 							q(26987, {	-- The Right Way
 								["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 								["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 31,
@@ -667,7 +667,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26984, {	-- An Old, Crazed Friend
 								["qg"] = 44019,	-- Livingston Marshal <Innkeeper>
 								["coord"] = { 53.2, 66.8, NORTHERN_STRANGLETHORN },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 34,
@@ -675,7 +675,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26988, {	-- Moving Things Along
 								["qg"] = 14739,	-- Mystic Yayo'jin <Reagents>
 								["coord"] = { 78.8, 78.4, THE_HINTERLANDS },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 34,
@@ -683,7 +683,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26962, {	-- Stripping Their Offense
 								["qg"] = 44690,	-- Dark Ranger Velonara
 								["sourceQuest"] = 26988,	-- Moving Things Along
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 32,
 								["groups"] = {
@@ -691,26 +691,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 3975 },	-- Herod <The Scarlet Champion>
 									}),
 									i(66034, {	-- Breastplate of the Scarlet Monastery
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66047, {	-- Herod's Medallion
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66016, {	-- Monk's Leggings
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66025, {	-- Spaulder of the Untrained
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66042, {	-- Velonara's Cloak
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
 							q(26974, {	-- The False Champion
 								["qg"] = 44741,	-- Joseph the Crazed
 								["sourceQuest"] = 26984,	-- An Old, Crazed Friend
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 32,
 								["groups"] = {
@@ -718,25 +718,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 3975 },	-- Herod <The Scarlet Champion>
 									}),
 									i(65967, {	-- Breastplate of the Scarlet Monastery
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65990, {	-- Cloak of the False Champion
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66006, {	-- Herod's Medallion
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65917, {	-- Monk's Leggings
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65943, {	-- Shrug of the Crazed
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
 							q(26994, {	-- Without Rhyme or Reason
 								["qg"] = 44804,	-- Dominic
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["lvl"] = 32,
 								["groups"] = {
 									objective(1, {	-- 0/3 Scarlet Myrmidon slain
@@ -797,7 +797,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26976, {	-- Battle for the Scarlet Monastery (A)
 								["qg"] = 44746,	-- Joseph the Insane <Scarlet Champion>
 								["sourceQuest"] = 26985,	-- Pitting Madness Against Madness
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 37,
 								["groups"] = {
@@ -808,20 +808,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 3977 },	-- High Inquisitor Whitemane
 									}),
 									i(65946, {	-- Scarlet Necklace of Paradise
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65920, {	-- Grasps of the Insane
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(65970, {	-- Band of Grandiose Delusions
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
 							q(26967, {	-- Battle for the Scarlet Monastery (B)
 								["qg"] = 44706,	-- Dark Ranger Velonara
 								["sourceQuest"] = 26991,	-- Enemies Abroad
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 37,
 								["groups"] = {
@@ -832,20 +832,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										["provider"] = { "n", 3977 },	-- High Inquisitor Whitemane
 									}),
 									i(66026, {	-- Gift of the Banshee Queen
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66017, {	-- Grasps of the Forsaken
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 									i(66035, {	-- Band of Wrath
-										["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+										["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 									}),
 								},
 							}),
 							q(26991, {	-- Enemies Abroad
 								["qg"] = 4791,	-- Nazeer Bloodpike
 								["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 37,
@@ -853,14 +853,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(26985, {	-- Pitting Madness Against Madness
 								["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
 								["coord"] = { 46.0, 49.0, FERALAS },
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["isBreadcrumb"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 37,
 							}),
 							q(26996, {	-- Right Under Their Noses
 								["qg"] = 44805,	-- Dominic
-								["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+								["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 								["lvl"] = 35,
 								["groups"] = {
 									objective(1, {	-- 0/1 High Inquisitor Fairbanks slain

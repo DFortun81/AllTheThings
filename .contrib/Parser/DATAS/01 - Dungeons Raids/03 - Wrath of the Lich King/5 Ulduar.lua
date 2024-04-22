@@ -664,7 +664,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								title(129),	-- Starcaller
 							}),
 							ach(5020, {	-- Observed - Guild Edition
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							revampAch(3003, {	-- Supermassive (10 player)
 								crit(10780),	-- Close 3 Black Holes within 10 seconds
@@ -962,7 +962,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(46312),	-- Vanquished Clutches of Yogg-Saron
 							}),
 							ach(5019, {	-- Alone in the Darkness - Guild Edition
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							revampAch(3158, {	-- One Light in the Darkness (10 player)
 								i(46067),	-- Hammer of Crushing Whispers
@@ -1612,7 +1612,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								title(130),	-- the Astral Walker
 							}),
 							ach(5020, {	-- Observed - Guild Edition
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							revampAch(3002, {	-- Supermassive (25 player)
 								crit(10782),	-- Close 3 Black Holes within 10 seconds
@@ -1936,7 +1936,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(45693),	-- Mimiron's Head (MOUNT!)
 							}),
 							ach(5019, {	-- Alone in the Darkness - Guild Edition
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { ADDED_4_0_3 },
 							}),
 							revampAch(3163, {	-- One Light in the Darkness (25 player)
 								i(45533),	-- Dark Edge of Depravity
@@ -2431,7 +2431,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						-- #endif
 						ach(5020, {	-- Observed - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 							["collectible"] = false,
 						}),
 						ach(12399, {	-- Observed
@@ -2893,7 +2893,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(46312),	-- Vanquished Clutches of Yogg-Saron
 						}),
 						ach(5019, {	-- Alone in the Darkness - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						ach(12387, {	-- One Light in the Darkness
 							i(45533),	-- Dark Edge of Depravity

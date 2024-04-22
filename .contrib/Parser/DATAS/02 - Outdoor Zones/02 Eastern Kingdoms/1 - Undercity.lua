@@ -1470,7 +1470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.6, 90.2, ORGRIMMAR },
 						-- #ENDIF
 					},
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(64921, {	-- Cape of Undercity
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.1.12941" },
 						}),
 						i(67529, {	-- Undercity Satchel
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(45583, {	-- Undercity Tabard
 							["timeline"] = { "added 3.1.0.9626" },

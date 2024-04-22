@@ -56,7 +56,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(27470, {	-- A Potential Ally
 				["qg"] = 14625,	-- Overseer Oilfist
 				["coord"] = { 38.1, 26.9, SEARING_GORGE },
-				["timeline"] = { "added 4.0.3.13277" },
+				["timeline"] = { ADDED_4_0_3 },
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(57, 57, 20),
 			}),
@@ -122,7 +122,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(27471, {	-- Blackrock Anomaly
 				["qg"] = 9562,	-- Hellendis Riverhorn
 				["coord"] = { 73.4, 66.2, BURNING_STEPPES },
-				["timeline"] = { "added 4.0.3.13277" },
+				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(57, 57, 20),
@@ -432,7 +432,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(27469, {	-- Friends on The Other Side [NOTE: Also available to Alliance, despite being in the Horde camp!]
 				["qg"] = 56899,	-- Ragged Jong
 				["coord"] = { 54.1, 23.8, BURNING_STEPPES },
-				["timeline"] = { "added 4.0.3.13277" },
+				["timeline"] = { ADDED_4_0_3 },
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(57, 57, 20),
 			}),
@@ -471,23 +471,23 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
-				["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+				["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 General Drakkisath slain
 						["provider"] = { "n", 10363 },	-- General Drakkisath
 					}),
 					i(66001, {	-- Aeyla's Staff
-						["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					}),
 					i(65934, {	-- Staff of the Second Orb
-						["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					}),
 					i(65982, {	-- Sword of Nefarian's Hand
-						["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					}),
 					i(65958, {	-- Vaelan's Claw
-						["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					}),
 				},
 			}),
@@ -834,7 +834,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
-				["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+				["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 Warchief Rend Blackhand slain
@@ -1046,7 +1046,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
-				["timeline"] = { "added 4.0.3.13277" },
+				["timeline"] = { ADDED_4_0_3 },
 				["lvl"] = lvlsquish(55, 55, 20),
 				["groups"] = {
 					objective(1, {	-- 0/1 War Master Voone slain
@@ -1059,13 +1059,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
 					}),
 					i(65933, {	-- Highlord's Chestpiece
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(65957, {	-- Overlord's Legplates
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(65981, {	-- War Master's Pauldrons
-						["timeline"] = { "added 4.0.3.13277" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 				},
 			}),
@@ -1617,7 +1617,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 					}),
 					ach(5052, {	-- Lower Blackrock Spire Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(142370, {	-- Plans: Arcanite Champion
 						["timeline"] = { "added 7.1.5.23360" },

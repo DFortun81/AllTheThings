@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 25.0, 75.7, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24471, {	-- Aid for the Wounded
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 36.6, 70.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/4 Wounded Coldridge Mountaineers Aided
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Boar Haunch
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
 						}),
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24477, {	-- Dwarven Artifacts
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.7, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/5 Forgotten Dwarven Artifact
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.3, 67.5, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 							["groups"] = {
@@ -431,7 +431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #elseif AFTER CATA
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Cask of Stormhammer Stout
@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 33.8, 72.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24470, {	-- Give 'em What-For
@@ -488,20 +488,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.6, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Rockjaw Goon slain
 									["provider"] = { "n", 37073 },	-- Rockjaw Goon
 								}),
 								i(66930, {	-- Boots of the Blameless
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(66929, {	-- Big Trogg Armbands
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(66928, {	-- Belt of So-Called Leaders
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131896, {	-- Big Trogg Bracers
 									["timeline"] = { "added 7.0.3.22248" },
@@ -557,20 +557,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.6, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/6 Rockjaw Invader slain
 									["provider"] = { "n", 37070 },	-- Rockjaw Invader
 								}),
 								i(66922, {	-- Perimeter Britches
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(66923, {	-- Lent Hands
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(66926, {	-- Trogg Repeller Platemail
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131895, {	-- Ironstock's Iron Grips
 									["timeline"] = { "added 7.0.3.22248" },
@@ -620,13 +620,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								-- #endif
 								i(57534, {	-- Grik'nir's Chilly Belt
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57535, {	-- Whitebeard's Bracer
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57536, {	-- Legs of the Wayward Elemental
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131891, {	-- Grik'nir's Warming Bands
 									["timeline"] = { "added 7.0.3.22248" },
@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.6, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24486, {	-- Make Hay While the Sun Shines
@@ -674,7 +674,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.7, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/5 Priceless Rockjaw Artifact
@@ -682,13 +682,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["cr"] = 37105,	-- Rockjaw Scavenger
 								}),
 								i(57530, {	-- Explorer's Robe
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57531, {	-- Winter Jacket
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(57532, {	-- Rockjaw Breastplate
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131890, {	-- Plundered Rockjaw Chestguard
 									["timeline"] = { "added 7.0.3.22248" },
@@ -725,7 +725,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 30.39, 72.14, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Coldridge Beer Flagon
@@ -765,13 +765,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									-- #endif
 								}),
 								i(57540, {	-- Coldridge Mountaineer's Pouch
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 									["groups"] = {
 										i(57542, {	-- Coldridge Mountaineer's Pouch
-											["timeline"] = { "added 4.0.3.13277" },
+											["timeline"] = { ADDED_4_0_3 },
 										}),
 										i(57541, {	-- Ragged Wolf Hide Cloak
-											["timeline"] = { "added 4.0.3.13277" },
+											["timeline"] = { ADDED_4_0_3 },
 										}),
 									},
 								}),
@@ -1007,7 +1007,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.8, 68.3, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
 							["groups"] = {
@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 25.1, 75.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- Soothsayer Shi'kala Scouted
@@ -1155,7 +1155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24533, {	-- Words of Power
@@ -1165,7 +1165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 66.4, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -1356,7 +1356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.34, 36.42, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/5 Clean up Toxic Geysers
@@ -1372,7 +1372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.67, 38.18, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26331, {	-- Crushcog's Minions
@@ -1383,7 +1383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.67, 38.18, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/8 Crushcog's Minions killed
@@ -1402,7 +1402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.45, 40.99, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/6 Living Contamination slain
@@ -1412,10 +1412,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(59038, {	-- Fallout Cover
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59053, {	-- Airfield Courier Bag
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 						}),
@@ -1427,7 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 21.01, 39.54, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- Decontamination Process started
@@ -1443,7 +1443,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							--["coord"] = { , DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- Razlo Crushcog defeated
@@ -1453,13 +1453,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(59052, {	-- Belt of Static Equilibrium
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59051, {	-- Bracers of Angular Momentum
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59050, {	-- Gloves of Potential Energy
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131516, {	-- Angular Momentum Wristguards
 									["timeline"] = { "added 7.0.3.22248" },
@@ -1477,7 +1477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- Detonate trogg tunnel
@@ -1497,13 +1497,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									-- #endif
 								}),
 								i(59046, {	-- Friction Gloves
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59045, {	-- Acceleration Belt
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59044, {	-- Velocity Bracers
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131512, {	-- Quickening Cinch
 									["timeline"] = { "added 7.0.3.22248" },
@@ -1518,7 +1518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/7 Stolen Powder Keg
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.38, 38.50, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { ROGUE },
 						}),
@@ -1558,7 +1558,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.90, 36.55, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { PRIEST },
 						}),
@@ -1570,7 +1570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.53, 36.83, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MAGE },
 						}),
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.27, 39.27, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARRIOR },
 						}),
@@ -1594,7 +1594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.25, 40.14, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARLOCK },
 						}),
@@ -1614,7 +1614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/6 Captured Demolitionist rescued
@@ -1638,7 +1638,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.45, 38.53, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/5 Repaired Mechano-Tanks destroyed
@@ -1648,13 +1648,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(59049, {	-- Inertial Bracers
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59048, {	-- Torque-Applying Gloves
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59047, {	-- Free Body Belt
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131514, {	-- Torque-Applying Grips
 									["timeline"] = { "added 7.0.3.22248" },
@@ -1669,7 +1669,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 30.41, 45.75, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["isBreadcrumb"] = true,
 						}),
@@ -1684,7 +1684,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26342, {	-- Paint it Black
@@ -1695,7 +1695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 30.41, 45.75, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/5 Crushcog Sentry-Bot blinded
@@ -1713,7 +1713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 18.81, 33.74, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/6 Crazed Leper Gnome slain
@@ -1732,7 +1732,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 18.81, 33.74, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26222, {	-- Scrounging for Parts
@@ -1743,7 +1743,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.34, 36.42, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/7 Spare Part
@@ -1771,7 +1771,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 20.76, 33.71, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/6 Survivors Rescued
@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.38, 38.50, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26198, {	-- The Arts of a Mage
@@ -1803,7 +1803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.53, 36.83, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13287", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { MAGE },
 							-- #if BEFORE 7.0.3
@@ -1813,7 +1813,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59042, {	-- Electro-Staff
 									-- NOTE: Item is still obtainable via quest 26197 for Mages (do not flag as unobtainable)
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1831,7 +1831,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59042, {	-- Electro-Staff
 									-- NOTE: Item is still obtainable via quest 26197 for Mages (do not flag as unobtainable)
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1843,7 +1843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.90, 36.55, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { PRIEST },
 							-- #if BEFORE 7.0.3
@@ -1853,7 +1853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59040, {	-- Staff of the Force
 									-- NOTE: Item is still obtainable via quest 26199 for Priests (do not flag as unobtainable)
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1865,7 +1865,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.38, 38.50, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
 							-- #if BEFORE 7.0.3
@@ -1875,7 +1875,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59043, {	-- Death Star
 									-- NOTE: Item is still obtainable via quest 26206 for Rogues (do not flag as unobtainable)
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1887,7 +1887,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.27, 39.27, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { WARRIOR },
 							-- #if BEFORE 7.0.3
@@ -1897,7 +1897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59039, {	-- Very Light Sabre
 									-- NOTE: Item is still obtainable via quest 26203 for Warriors (do not flag as unobtainable)
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1909,7 +1909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.25, 40.14, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 7.0.3
@@ -1919,7 +1919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59041, {	-- Vibro Knife
 									-- NOTE: Item is still obtainable via quest 26206 for Rogues (do not flag as unobtainable)
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1940,7 +1940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.67, 38.18, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26197, {	-- The Future of Gnomeregan
@@ -1951,13 +1951,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.94, 40.32, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MAGE },
 							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59042, {	-- Electro-Staff
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1970,13 +1970,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.94, 40.32, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { PRIEST },
 							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59040, {	-- Staff of the Force
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -1989,13 +1989,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.94, 40.32, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARLOCK },
 							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59041, {	-- Vibro Knife
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -2008,13 +2008,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.94, 40.32, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARRIOR },
 							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59039, {	-- Very Light Sabre
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -2027,16 +2027,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.94, 40.32, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { ROGUE },
 							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59043, {	-- Death Star
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(59041, {	-- Vibro Knife
-									["timeline"] = { "added 4.0.3.13277" },
+									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -2078,7 +2078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 22.55, 39.46, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26316, {	-- What's Keeping Jessup?
@@ -2093,7 +2093,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.52, 38.46, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26264, {	-- What's Left Behind
@@ -2104,7 +2104,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.84, 35.87, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/6 Recovered Possession
@@ -2121,7 +2121,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 20.76, 33.71, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 					}),
@@ -2210,13 +2210,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(620, {	-- Gol'Bolar Quarry, Dun Morogh
 					["cr"] = 43702,	-- Dominic Galebeard <Gryphon Master>
 					["coord"] = { 75.8, 54.4, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(619, {	-- Kharanos, Dun Morogh
 					["cr"] = 43701,	-- Brolan Galebeard <Gryphon Master>
 					["coord"] = { 53.8, 52.6, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -2321,7 +2321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25841,	-- Strike From Above
 					},
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2356,7 +2356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26854,	-- The Lost Pilot
 					["coord"] = { 87.6, 50.2, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
@@ -2365,16 +2365,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1961,	-- Mangeclaw
 						}),
 						i(57560, {	-- Mangy Claw Mitts
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57566, {	-- Siege Engineer's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57562, {	-- Hammerfoot's Plate Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57563, {	-- South Gate Blunderbuss
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131612, {	-- Siege Engineer's Waistband
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2484,14 +2484,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 58271 },	-- Sample Casks
 					},
 					["coord"] = { 49.9, 44.9, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25667, {	-- Culling the Wendigos
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Wendigo slain
@@ -2509,7 +2509,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25978,	-- Entombed in Ice
 					},
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Dark Iron Spy slain
@@ -2521,13 +2521,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
 						}),
 						i(57575, {	-- Belt of Dark Schemes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57576, {	-- Dark Iron Infiltrator's Bracer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57578, {	-- Dark Iron Hobplate Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131462, {	-- Dark Iron Spy-Bands
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2537,7 +2537,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25979, {	-- Dealing with the Surge
 					["qg"] = 41804,	-- Khurgon Singefeather
 					["coord"] = { 82.6, 48.3, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Helm's Bed Surger slain
@@ -2552,7 +2552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26102,	-- Grimaxe's Demise
 					["coord"] = { 78.2, 20.4, IRONFORGE },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if NOT ANYCLASSIC
@@ -2585,7 +2585,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Battok the Berserker slain
@@ -2595,10 +2595,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 41258 },	-- Frostmane Warrior
 						}),
 						i(57554, {	-- Frostmane Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57555, {	-- Battok's Bloody Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131448, {	-- Frostmane Chain Links
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2609,7 +2609,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41786,	-- Sergeant Bahrum
 					["sourceQuest"] = 25986,	-- Trouble at the Lake
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Frozen Mountaineers freed
@@ -2632,7 +2632,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 25998,	-- Get to the Airfield
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Fires extinguished
@@ -2681,7 +2681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 26373,	-- On to Kharanos
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Frostmane Seer slain
@@ -2740,14 +2740,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41786,	-- Sergeant Bahrum
 					["sourceQuest"] = 25997,	-- Dark Iron Scheming
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26102, {	-- Grimaxe's Demise
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26094,	-- Striking Back
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 General Grimaxe slain
@@ -2755,16 +2755,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 78.4, 34.6, DUN_MOROGH },
 						}),
 						i(57579, {	-- Airfield Defender's Garb
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57580, {	-- Tunic of Dark Leather
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57581, {	-- Grimaxe's Black Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57582, {	-- Stonebreaker's Gauntlets
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131483, {	-- Vest of Dark Chainmail
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2781,7 +2781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25905,	-- Rams on the Lam
 					},
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25838, {	-- Help from Steelgrill's Depot
@@ -2791,7 +2791,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25792,	-- Pushing Forward
 					},
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if AFTER 4.0.3
@@ -2833,17 +2833,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41578,	-- Sergeant Flinthammer
 					["sourceQuest"] = 25882,	-- A Hand at the Ranch
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(57558, {	-- Robes of Endless Raiding
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57559, {	-- Boots of the Weary Raider
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57556, {	-- Bracer of the Nightly Raid
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131458, {	-- Well-Worn Raider Treads
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2981,10 +2981,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(57546, {	-- Cog Belt
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57545, {	-- Oil-Stained Gloves
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131207, {	-- Well-Oiled Chain Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3001,7 +3001,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 40951,	-- Quartermaster Glynna
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["coord"] = { 53.7, 52.0, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Pilfered Supplies
@@ -3012,10 +3012,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.9, 46.8, DUN_MOROGH },
 						}),
 						i(57550, {	-- Grizzled Den Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57551, {	-- Wendigo Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131436, {	-- Wendigo Pantaloons
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3025,7 +3025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25937, {	-- Priceless Treasures
 					["qg"] = 50631,	-- Prospector Drugan
 					["coord"] = { 76.1, 53.0, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Frozen Artifact
@@ -3037,19 +3037,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 76.5, 58.0, DUN_MOROGH },
 						}),
 						i(57571, {	-- Archaeologist's Pants
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57572, {	-- Dun Morogh Hiking Pants
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57574, {	-- Museum Guard's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131459, {	-- Museum Guard's Warboots
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57549, {	-- Prospector's Bag
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -3072,7 +3072,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(10549),	-- Rancher's Trousers
 						i(2817),	-- Soft Leather Tunic / Hard Leather Tunic [CATA+]
 						i(57552, {	-- Vagash Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131205, {	-- Ram Rescue Vest
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3090,7 +3090,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25668,	-- Pilfered Supplies (TODO:: verify if this is needed)
 					},
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/4 Constriction Totems burned
@@ -3111,7 +3111,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26078,	-- Extinguish the Fires
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Ironforge Banners planted
@@ -3123,7 +3123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1261,	-- Veron Amberstill
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 					["coord"] = { 70.6, 48.9, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Stolen Rams recovered
@@ -3301,7 +3301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Attack on Northern Frostmane Retreat
@@ -3324,7 +3324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/30 Dark Iron attackers slain
@@ -3470,10 +3470,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(2326),	-- Ivy-weave Bracers
 						i(57547, {	-- Shimmerweed Boots
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57548, {	-- Herb-Stained Gauntlets
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131206, {	-- Shimmerweed Brewer Treads
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3507,13 +3507,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(57570, {	-- Gol'Bolar Miner's Belt
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57568, {	-- Senator's Dignified Pants
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(57569, {	-- Stonehallow's Arm Bands
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131208, {	-- Senator's Handsome Leggings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3634,14 +3634,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41363,	-- Delber Cranktoggle
 					["sourceQuest"] = 25838,	-- Help from Steelgrill's Depot
 					["coord"] = { 56.8, 47.1, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28868, {	-- The View from Down Here
 					["qg"] = 50601,	-- Snevik the Blade
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["coord"] = { 62.5, 53.8, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Frostmane Builder shrunk
@@ -3720,7 +3720,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						432,	-- Those Blasted Troggs!
 					},
 					["coord"] = { 75.8, 54.2, DUN_MOROGH },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

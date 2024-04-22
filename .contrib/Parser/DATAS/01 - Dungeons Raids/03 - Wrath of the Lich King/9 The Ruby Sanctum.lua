@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["groups"] = {
 						ach(4818),	-- Heroic: The Twilight Destroyer (10 player)
 						ach(5022, {	-- The Twilight Destroyer - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(54557),	-- Baltharus' Gift					//** Confirmed Drop 4/19/19
 						i(54566),	-- Twilight Scale Shoulders			//** Confirmed Drop 4/19/19
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["groups"] = {
 						ach(4816),	-- Heroic: The Twilight Destroyer (25 player)
 						ach(5022, {	-- The Twilight Destroyer - Guild Edition
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(54581),	-- Penumbra Pendant
 						i(54583),	-- Cloak of Burning Dusk			//** Confirmed Drop 4/19/19

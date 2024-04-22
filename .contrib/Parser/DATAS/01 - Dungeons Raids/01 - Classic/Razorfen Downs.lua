@@ -158,7 +158,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27063, {	-- Looming Threat [Alliance]
 					["qg"] = 40032,	-- Telaron Windflight
 					["coord"] = { 50.7, 17.2, FERALAS },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 15),
@@ -166,14 +166,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27062, {	-- Looming Threat [Horde]
 					["qg"] = 39895,	-- Kanati Greycloud
 					["coord"] = { 11.1, 11.2, THOUSAND_NEEDLES },
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(27024, {	-- Partners in Crime
 					["qg"] = 44837,	-- Koristrasza
-					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glutton slain
@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 8516 },	-- Belnistrasz
 						{ "i", 10682 },	-- Belnistrasz's Oathstone
 					},
-					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					["lvl"] = 32,
 				}),
 				q(27009, {	-- The Coldbringer
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						27063,	-- Looming Threat [Alliance]
 						27062,	-- Looming Threat [Horde]
 					},
-					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
 					["lvl"] = lvlsquish(35, 35, 15),
 					-- #if BEFORE 6.0.1.18322
 					["groups"] = {
@@ -394,7 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5045, {	-- Razorfen Downs Guild Run
-						["timeline"] = { "added 4.0.3", "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
 					}),
 					i(10420),	-- Skull of the Coldbringer
 					i(10761),	-- Coldrage Dagger

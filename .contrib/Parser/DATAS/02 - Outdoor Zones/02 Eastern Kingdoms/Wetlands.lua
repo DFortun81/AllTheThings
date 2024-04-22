@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4898, {	-- Wetlands Quests
 					-- In 5.0.4, this was merged into the Loch Modan quests achievement for some stupid reason no one knows the answer to.
-					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
@@ -227,13 +227,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(553, {	-- Dun Modr, Wetlands
 					["cr"] = 41325,	-- Caleb Baelor <Gryphon Master>
 					["coord"] = { 50.0, 18.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(552, {	-- Greenwarden's Grove, Wetlands
 					["cr"] = 41322,	-- Halana <Hippogryph Master>
 					["coord"] = { 56.4, 41.8, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(7, {	-- Menethil Harbor, Wetlands
@@ -248,13 +248,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(554, {	-- Slabchisel's Survey, Wetlands
 					["cr"] = 41321,	-- Elgin Baelor <Gryphon Master>
 					["coord"] = { 56.8, 71.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(551, {	-- Whelgar's Retreat, Wetlands
 					["cr"] = 41323,	-- Damon Baelor <Gryphon Master>
 					["coord"] = { 38.6, 39.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -268,7 +268,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41129,	-- Surveyor Thurdan
 					["sourceQuest"] = 25722,	-- Sedimentary, My Dear
 					["coord"] = { 57.4, 71.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(304, {	-- A Grim Task
@@ -298,13 +298,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25820, {	-- A Mother's Worries
 					["qg"] = 1484,	-- Derina Rumdnul
 					["coord"] = { 11.8, 57.9, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26327, {	-- Anvilmar the Hero
 					["qg"] = 1071,	-- Longbraid the Grim
 					["coord"] = { 49.8, 18.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for The Twilight's Hammer Revealed
 				}),
@@ -333,17 +333,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2104,	-- Captain Stoutfist
 					["sourceQuest"] = 25777,	-- Onwards to Menethil
 					["coord"] = { 10.5, 55.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59078, {	-- Flarecrazed Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59077, {	-- Stoutfist Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59076, {	-- Wand of Infectious Dementia
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131441, {	-- Stoutfist Chainmail
 							["timeline"] = { "added 7.0.3.22248" },
@@ -396,20 +396,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41297,	-- Karl Boran
 					["sourceQuest"] = 25800,	-- When Life Gives You Crabs
 					["coord"] = { 11.0, 57.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59082, {	-- Merchant Marine Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59081, {	-- Merchant Marine Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59080, {	-- Merchant Marine Waders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59079, {	-- Merchant Marine Sandals
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131442, {	-- Merchant Marine Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25211, {	-- Cleaning Hovel
 					["qg"] = 41074,	-- Mountaineer Grugelm
 					["coord"] = { 49.9, 79.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(293, {	-- Cleansing the Eye
@@ -444,14 +444,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25856, {	-- Crocolisk Hides
 					["qg"] = 41433,	-- James Halloran
 					["coord"] = { 26.7, 26.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25816, {	-- Cursed to Roam
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["sourceQuest"] = 25815,	-- The Third Fleet
 					["coord"] = { 10.9, 59.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(469, {	-- Daily Delivery
@@ -468,7 +468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41415,	-- Shilah Slabchisel
 					["sourceQuest"] = 25865,	-- The Mosshide Job
 					["coord"] = { 26.9, 26.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(474, {	-- Defeat Nek'rosh
@@ -516,17 +516,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41415,	-- Shilah Slabchisel
 					["sourceQuest"] = 26980,	-- Swiftgear Station
 					["coord"] = { 26.9, 26.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59095, {	-- Swiftgear Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59094, {	-- Highland Shoulderguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59093, {	-- Shilah's Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131451, {	-- Highland Chain Shoulders
 							["timeline"] = { "added 7.0.3.22248" },
@@ -537,24 +537,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41129,	-- Surveyor Thurdan
 					["sourceQuest"] = 25726,	-- A Dumpy Job
 					["coord"] = { 57.4, 71.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25727, {	-- Drungeld Glowerglare
 					["qg"] = 41086,	-- Forba Slabchisel
 					["sourceQuest"] = 25721,	-- Fight the Flood
 					["coord"] = { 57.5, 71.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59072, {	-- Addled Blotter Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59071, {	-- Bad Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59070, {	-- Surveyor's Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131438, {	-- Bad Waistguard
 							["timeline"] = { "added 7.0.3.22248" },
@@ -572,14 +572,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41128,	-- Dunlor Marblebeard
 					["sourceQuest"] = 25723,	-- Thresh Out of Luck
 					["coord"] = { 57.8, 71.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25721, {	-- Fight the Flood
 					["qg"] = 41086,	-- Forba Slabchisel
 					["sourceQuest"] = 25770,	-- Keg Run
 					["coord"] = { 57.5, 71.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(277, {	-- Fire Taboo
@@ -608,20 +608,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41615,	-- Ferilon Leafborn
 					["sourceQuest"] = 25926,	-- Mired in Hatred
 					["coord"] = { 56.4, 39.9, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59109, {	-- Marsh Fire Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59108, {	-- Deep Moss Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59107, {	-- Soothing Hands
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59106, {	-- Floodily Robes
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131460, {	-- Deep Moss Bindings
 							["timeline"] = { "added 7.0.3.22248" },
@@ -635,34 +635,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41086,	-- Forba Slabchisel
 					["sourceQuest"] = 25727,	-- Drungeld Glowerglare
 					["coord"] = { 57.5, 71.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25855, {	-- Gizmos and Gadgets
 					["qg"] = 41435,	-- Fradd Swiftgear
 					["sourceQuest"] = 25854,	-- I'll Call Him Bitey
 					["coord"] = { 26.8, 25.8, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25867, {	-- Gnoll Escape
 					["qg"] = 41415,	-- Shilah Slabchisel
 					["sourceQuest"] = 25865,	-- The Mosshide Job
 					["coord"] = { 26.9, 26.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25857, {	-- Hunting Horrorjaw
 					["qg"] = 41433,	-- James Halloran
 					["sourceQuest"] = 25856,	-- Crocolisk Hides
 					["coord"] = { 26.7, 26.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25854, {	-- I'll Call Him Bitey
 					["qg"] = 41435,	-- Fradd Swiftgear
 					["coord"] = { 26.8, 25.8, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(305, {	-- In Search of The Excavation Team (1/2)
@@ -687,17 +687,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41128,	-- Dunlor Marblebeard
 					["sourceQuest"] = 25725,	-- Fenbush Berries
 					["coord"] = { 57.8, 71.5, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59066, {	-- Stabilized Incendicite Legguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59065, {	-- Sparkproof Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59064, {	-- Marblebeard's Shrug
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131439, {	-- Sparkproof Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
@@ -708,7 +708,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 42160,	-- Thargas Anvilmar
 					["sourceQuest"] = 26128,	-- The Battle of Thandol Span
 					["coord"] = { 49.5, 17.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for Northfold Manor in Arathi Highlands
 				}),
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41075,	-- Mountaineer Rharen
 					["sourceQuest"] = 25395,	-- The Stolen Keg
 					["coord"] = { 49.9, 79.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Fight the Flood"
 				}),
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41307,	-- First Mate Snellig
 					["sourceQuest"] = 25817,	-- The Cursed Crew
 					["coord"] = { 15.2, 29.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(321, {	-- Lightforge Iron
@@ -775,13 +775,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 25939,	-- For Peat's Sake
 				--	possibly requires The Threat of Flame?
 					["coord"] = { 56.4, 40.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25926, {	-- Mired in Hatred
 					["qg"] = 41503,	-- Rethiel the Greenwarden
 					["coord"] = { 56.3, 40.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(465, {	-- Nek'rosh's Gambit
@@ -803,7 +803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25735,	-- Incendicite Ore
 					},
 					["coord"] = { 57.4, 71.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -883,7 +883,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41297,	-- Karl Boran
 					["sourceQuest"] = 25800,	-- When Life Gives You Crabs
 					["coord"] = { 11.0, 57.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(473, {	-- Report to Captain Stoutfist
@@ -917,17 +917,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 259 },	-- Half-Buried Barrel
 					["sourceQuest"] = 25804,	-- Search More Hovels
 					["coord"] = { 13.9, 34.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59085, {	-- Breastplate of the Lost Paladin
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59084, {	-- Boran's Shoulderguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59083, {	-- Sash of the Blind Princess
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131444, {	-- Boran's Pauldrons
 							["timeline"] = { "added 7.0.3.22248" },
@@ -946,23 +946,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 142151 },	-- Sealed Barrel
 					["sourceQuest"] = 25803,	-- The Search Continues
 					["coord"] = { 13.6, 38.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25722, {	-- Sedimentary, My Dear
 					["qg"] = 41129,	-- Surveyor Thurdan
 					["coord"] = { 57.4, 71.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59075, {	-- Drunkard's Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59074, {	-- Topsoil Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59073, {	-- Discolored Bracers
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131437, {	-- Topsoil Binders
 							["timeline"] = { "added 7.0.3.22248" },
@@ -972,7 +972,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25850, {	-- Strike the Earth!
 					["qg"] = 41412,	-- Ormer Ironbraid
 					["coord"] = { 38.6, 39.5, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26980, {	-- Swiftgear Station
@@ -984,7 +984,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25819,	-- The Eye of Paleth (definitely required)
 					},
 					["coord"] = { 10.5, 55.6, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for Dinosaur Crisis
 				}),
@@ -1024,27 +1024,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41411,	-- Prospector Whelgar
 					["sourceQuest"] = 25849,	-- When Archaeology Attacks
 					["coord"] = { 38.9, 39.3, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26128, {	-- The Battle of Thandol Span
 					["qg"] = 42160,	-- Thargas Anvilmar
 					["sourceQuest"] = 26127,	-- The Twilight's Hammer Revealed
 					["coord"] = { 49.4, 17.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59113, {	-- Khaz Modan Pauldrons (Plate)
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59112, {	-- Khaz Modan Spaulders
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59111, {	-- Khaz Modan Shoulderguards
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59110, {	-- Khaz Modan Mantle
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131488, {	-- Khaz Modan Monnions
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1057,17 +1057,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26120, {	-- The Crazed Dragonmaw
 					["qg"] = 41612,	-- Huntress Iczelia
 					["coord"] = { 56.3, 39.8, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59116, {	-- Ring of Bravery
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59115, {	-- Greenwarden's Gift
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59114, {	-- Iczelia's Band
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
@@ -1096,20 +1096,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41307,	-- First Mate Snellig
 					["sourceQuest"] = 25816,	-- Cursed to Roam
 					["coord"] = { 15.2, 29.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59089, {	-- Curse Lifter's Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59088, {	-- Snellig's Vest
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59087, {	-- Gloves of Anguished Cries
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59086, {	-- Third Fleet Cloak
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131445, {	-- Snellig's Chain Shirt
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1152,19 +1152,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
 					["sourceQuest"] = 25818,	-- Lifting the Curse
 					["coord"] = { 14.3, 24.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- CRIEVE NOTE: In order to get properly harvested, this needed to be here instead of a provider like the other quest. Don't touch it. Not sure how to fix it.
 						i(2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
 						i(59092, {	-- Haunted Pauldrons
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59091, {	-- Fitzsimmons' Belt
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59090, {	-- Steelbrow's Old Robe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131446, {	-- Fitzsimmon's Cinch
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1175,18 +1175,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 55243 },	-- Floodsurge Core
 					["sourceQuest"] = 25734,	-- Down in Thelgen Rock
 					["coord"] = { 47.6, 65.6, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 41167,	-- Torrention
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59069, {	-- Slabchisel Boots
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59068, {	-- Waterproof Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59067, {	-- Floodsurge Coat
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131440, {	-- Waterproof Britches
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1250,17 +1250,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41415,	-- Shilah Slabchisel
 					["sourceQuest"] = 25864,	-- Dinosaur Crisis
 					["coord"] = { 26.9, 26.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59098, {	-- Ingot-Handler Gloves
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59097, {	-- Royal Treasury Courier's Shield
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59096, {	-- Accountant's Lantern
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131452, {	-- Ingot-Handler Grips
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1279,7 +1279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 261 },	-- Damaged Crate
 					["sourceQuest"] = 25802,	-- Reclaiming Goods
 					["coord"] = { 13.5, 41.3, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25395, {	-- The Stolen Keg
@@ -1289,7 +1289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28565,	-- Hero's Call: Wetlands!
 					},
 					["coord"] = { 49.9, 79.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1349,46 +1349,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25815, {	-- The Third Fleet
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["coord"] = { 10.9, 59.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25927, {	-- The Threat of Flame
 					["qg"] = 41503,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 25926,	-- Mired in Hatred
 					["coord"] = { 56.3, 40.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26127, {	-- The Twilight's Hammer Revealed
 					["qg"] = 42160,	-- Thargas Anvilmar
 					["sourceQuest"] = 26327,	-- Anvilmar the Hero
 					["coord"] = { 49.4, 17.2, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25723, {	-- Thresh Out of Luck
 					["qg"] = 41128,	-- Dunlor Marblebeard
 					["coord"] = { 57.8, 71.4, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25853, {	-- Tooling Around
 					["qg"] = 41413,	-- Merrin Rockweaver
 					["coord"] = { 38.8, 39.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59105, {	-- Antique Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59104, {	-- Unbared Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59103, {	-- Rockweaver Leggings
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(60338, {	-- Reconstructed Sword
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131450, {	-- Unbared Greaves
 							["timeline"] = { "added 7.0.3.22248" },
@@ -1479,7 +1479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41415,	-- Shilah Slabchisel
 					["sourceQuest"] = 25868,	-- Yorla Darksnare
 					["coord"] = { 26.9, 26.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for When Archaeology Attacks
 				}),
@@ -1487,13 +1487,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 41411,	-- Prospector Whelgar
 					["sourceQuest"] = 26981,	-- Whelgar's Retreat
 					["coord"] = { 38.9, 39.3, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25800, {	-- When Life Gives You Crabs
 					["qg"] = 41297,	-- Karl Boran
 					["coord"] = { 11.0, 57.7, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26195, {	-- Who Wards The Greenwarden
@@ -1504,7 +1504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25853,	-- Tooling Around
 					},
 					["coord"] = { 38.8, 39.3, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25868, {	-- Yorla Darksnare
@@ -1514,20 +1514,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25867,	-- Gnoll Escape
 					},
 					["coord"] = { 26.9, 26.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(59102, {	-- Old Guard's Hammer
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59101, {	-- Shilah's Blade
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59100, {	-- Old Guard's Greataxe
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59099, {	-- Darksnare Dagger
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157004, {	-- Old Guard's Poleaxe
 							["timeline"] = { "added 7.3.5.25716" },
@@ -1576,7 +1576,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				o(207496, {	-- Dark Iron Treasure Chest
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 1.5,
 					["coords"] = {
 						{ 63.9, 78.2, WETLANDS },
@@ -1642,7 +1642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(44227, {	-- Gazz the Loch-Hunter
 					["coord"] = { 61.6, 57.8, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14425, {	-- Gnawbone
 					-- #if AFTER CATA
@@ -1738,11 +1738,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(44225, {	-- Rufus Darkshot
 					["coord"] = { 42.8, 32.6, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(44226, {	-- Sarltooth
 					["coord"] = { 33.6, 51.0, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14433, {	-- Sludginn
 					-- #if AFTER CATA
@@ -1864,7 +1864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(41435, {	-- Fradd Swiftgear <Engineering Supplies>
 					["coord"] = { 26.8, 25.9, WETLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
