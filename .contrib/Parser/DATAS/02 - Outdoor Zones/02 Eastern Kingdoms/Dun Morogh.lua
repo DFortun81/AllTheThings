@@ -2201,9 +2201,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(136),	-- The Grizzled Den
 				exploration(804),	-- The Tundrid Hills
-				--[[
-				exploration(2102),	-- Thunderbrew Distillery
-				]]--
 			}),
 			-- #if AFTER 4.0.3.13277
 			n(FLIGHT_PATHS, {

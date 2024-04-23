@@ -2896,13 +2896,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(986),	-- Zalashji's Den
 				-- #endif
 				exploration(978),	-- Zul'Farrak
-				--[[
-				exploration(991),	-- Gunstan's Post
-				exploration(2317),	-- South Seas
-				exploration(2857),	-- The Rumble Cage
-				exploration(989),	-- Uldum
-				exploration(988),	-- Wavestrider Beach
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(369, {	-- Gadgetzan

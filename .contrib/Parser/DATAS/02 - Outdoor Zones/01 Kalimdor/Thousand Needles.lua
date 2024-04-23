@@ -112,19 +112,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2237),	-- Whitereach Post
 				exploration(2303),	-- Windbreak Canyon
 				-- #endif
-				--[[
-				exploration(486),	-- Galak Hold
-				exploration(2238),	-- Gornia
-				exploration(3037),	-- Ironstone Camp
-				exploration(2240),	-- Mirage Raceway
-				exploration(487),	-- Roguefeather Den
-				exploration(1557),	-- Splithoof Hold
-				exploration(3039),	-- Tahonda Ruins
-				exploration(479),	-- The Rustmaul Dig Site
-				exploration(488),	-- The Weathered Nook
-				exploration(3038),	-- Weazel's Crater
-				exploration(2239),	-- Zane's Eye Crater
-				]]
 			}),
 			n(FLIGHT_PATHS, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles

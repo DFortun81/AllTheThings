@@ -1984,18 +1984,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(63),	-- The Stonefield Farm
 				exploration(91),	-- Tower of Azora
 				exploration(120),	-- Westbrook Garrison
-				--[[
-				exploration(34),	-- Echo Ridge Mine
-				exploration(56),	-- Heroes' Vigil
-				exploration(92),	-- Mirror Lake
-				exploration(89),	-- Mirror Lake Orchard
-				exploration(24),	-- Northshire Abbey
-				exploration(23),	-- Northshire River
-				exploration(59),	-- Northshire Vineyards
-				exploration(80),	-- Stormwind Mountains
-				exploration(53),	-- Thieves Camp
-				exploration(61),	-- Thunder Falls
-				]]--
 			}),
 			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {

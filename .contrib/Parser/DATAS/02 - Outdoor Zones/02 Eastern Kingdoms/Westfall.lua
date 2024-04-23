@@ -83,11 +83,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5290),	-- The Raging Chasm
 				-- #endif
 				exploration(115),	-- Westfall Lighthouse
-				--[[
-				exploration(26),	-- Lighthouse
-				exploration(2),		-- Longshore
-				exploration(2364),	-- The Great Sea
-				]]--
 			}),
 			-- #if AFTER 4.1.0.13726
 			prof(FISHING, {

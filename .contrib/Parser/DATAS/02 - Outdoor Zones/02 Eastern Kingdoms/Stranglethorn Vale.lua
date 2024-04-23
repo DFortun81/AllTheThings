@@ -181,25 +181,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(128),	-- Ziata'jai Ruins
 				exploration(19),	-- Zul'Gurub
 				exploration(122),	-- Zuuldaia Ruins
-				--[[
-				exploration(2177),	-- Battle Ring
-				exploration(7),		-- Blackwater Cove
-				exploration(303),	-- Shell Beach
-				exploration(2338),	-- South Seas
-				exploration(1578),	-- Southern Savage Coast
-				exploration(1742),	-- Spirit Den
-				exploration(1577),	-- The Cape of Stranglethorn
-				exploration(1757),	-- The Crimson Veil
-				exploration(302),	-- The Crystal Shore
-				exploration(1759),	-- The Damsel's Luck
-				exploration(2339),	-- The Great Sea
-				exploration(1758),	-- The Riptide
-				exploration(301),	-- The Savage Coast
-				exploration(106),	-- The Stockpile
-				exploration(126),	-- Tkashi Ruins
-				exploration(1760),	-- Venture Co. Operations Center
-				exploration(3357),	-- Yojamba Isle
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers

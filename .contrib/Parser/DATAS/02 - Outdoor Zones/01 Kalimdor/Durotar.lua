@@ -1912,21 +1912,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(372),	-- Tiragarde Keep
 				exploration(363),	-- Valley of Trials
 				-- #endif
-				--[[
-				exploration(365),	-- Burning Blade Coven
-				exploration(393),	-- Darkspear Strand
-				exploration(371),	-- Dustwind Cave
-				exploration(638),	-- Hidden Path
-				exploration(1297),	-- Jaggedswine Farm
-				exploration(2337),	-- Razor Hill Barracks
-				exploration(1296),	-- Rocktusk Farm
-				exploration(373),	-- Scuttle Coast
-				exploration(640),	-- Shrine of the Dormant Flame
-				exploration(814),	-- Southfury River
-				exploration(639),	-- Spirit Rock
-				exploration(364),	-- The Den
-				exploration(2320),	-- The Great Sea
-				]]--
 			}),
 			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {

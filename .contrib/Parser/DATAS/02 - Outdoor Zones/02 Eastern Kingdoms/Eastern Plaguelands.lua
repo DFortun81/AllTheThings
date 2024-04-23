@@ -856,17 +856,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2619),	-- Thondroril River
 				exploration(2266),	-- Tyr's Hand
 				exploration(2273),	-- Zul'Mashar
-				--[[
-				exploration(1019),	-- The Green Belt
-				exploration(2265),	-- Scarlet Base Camp
-				exploration(2267),	-- The Scarlet Basilica
-				exploration(2269),	-- Browman Mill
-				exploration(2274),	-- Mazra'Alor
-				exploration(2278),	-- Scourgehold
-				exploration(2299),	-- Darrowmere Lake
-				exploration(2625),	-- Eastwall Gate
-				exploration(2626),	-- Terrorweb Tunnel
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn

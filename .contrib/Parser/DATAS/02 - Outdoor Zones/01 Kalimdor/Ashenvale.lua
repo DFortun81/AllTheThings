@@ -209,19 +209,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				exploration(2897),	-- Zoram'gar Outpost
 				-- #endif
-				--[[
-				exploration(2357),	-- Bloodtooth Camp
-				exploration(436),	-- Demon Fall Ridge
-				exploration(433),	-- Falfarren River
-				exploration(2637),	-- Kargathia Keep
-				exploration(2457),	-- Nightsong Woods
-				exploration(3319),	-- Silverwing Grove
-				exploration(879), 	-- Southfury River
-				exploration(427),	-- The Shady Nook
-				exploration(1276),	-- The Talondeep Path
-				exploration(2325),	-- The Veiled Sea
-				exploration(429),	-- Xavian
-				]]--
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(FACTIONS, {

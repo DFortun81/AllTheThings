@@ -114,13 +114,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(226),	-- The Skittering Dark
 				exploration(227),	-- Valgan's Field
-				--[[
-				exploration(926),	-- Bucklebree Farm
-				exploration(235),	-- Fenris Keep
-				exploration(1338),	-- Lordamere Lake
-				exploration(306),	-- South Tide's Run
-				exploration(2398),	-- The Great Sea
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest

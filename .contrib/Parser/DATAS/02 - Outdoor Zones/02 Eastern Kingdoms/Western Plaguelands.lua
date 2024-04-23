@@ -134,10 +134,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(196),	-- Uther's Tomb
 				-- #endif
-				--[[
-				exploration(203),	-- Mardenholde Keep
-				exploration(195),	-- School of Necromancy
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(649, {	-- Andorhal, Western Plaguelands

@@ -238,11 +238,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2242),	-- The Hidden Grove
 				exploration(2243),	-- Timbermaw Post
 				exploration(2244),	-- Winterfall Village
-				--[[
-				exploration(2254),	-- Ban'Thallow Barrow Den
-				exploration(3139),	-- Moon Horror Den
-				exploration(2252),	-- The Ruins of Kel'Theril
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(577, {	-- Everlook

@@ -122,10 +122,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1877),	-- Valley of Fangs
 				-- #endif
 				exploration(1517),	-- Uldaman
-				--[[
-				exploration(343),	-- Camp Wurg
-
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands

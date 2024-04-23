@@ -136,12 +136,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1766),	-- Shatter Scar Vale
 				exploration(1998),	-- Talonbranch Glade 
 				exploration(1769),	-- Timbermaw Hold
-				--[[
-				exploration(1764),	-- Bloodvenom River
-				exploration(1768),	-- Irontree Cavern
-				exploration(1770),	-- Shadow Hold
-				exploration(1771),	-- Shrine of the Deceiver
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(48, {	-- Bloodvenom Post, Felwood

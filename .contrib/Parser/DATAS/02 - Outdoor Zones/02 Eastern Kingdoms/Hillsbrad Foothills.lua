@@ -172,10 +172,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				exploration(295),	-- Western Strand
 				-- #endif
-				--[[
-				exploration(2397),	-- The Great Sea
-				exploration(1057),	-- Thoradin's Wall
-				]]--
 			}),
 			-- #if AFTER CATA
 			n(FACTIONS, {

@@ -159,16 +159,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1225),	-- Ursolan
 				exploration(1237),	-- Valormok
 				-- #endif
-				--[[
-				exploration(1222),	-- Hetaera's Clutch
-				exploration(3138),	-- Rethress Sanctum
-				exploration(3140),	-- Scalebeard's Cave
-				exploration(878),	-- Southfury River
-				exploration(1218),	-- TESTAzshara
-				exploration(1223),	-- Temple of Zin-Malor
-				exploration(2321),	-- The Great Sea
-				exploration(1217),	-- Vanndir Encampment
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				-- #if AFTER CATA

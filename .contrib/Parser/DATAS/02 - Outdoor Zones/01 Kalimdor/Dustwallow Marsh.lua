@@ -176,18 +176,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(513),	-- Theramore Isle
 				exploration(502),	-- Witch Hill
 				exploration(511),	-- Wyrmbog
-				--[[
-				exploration(516),	-- Dustwallow Bay
-				exploration(2158),	-- Emberstrife's Den
-				exploration(514),	-- Foothold Citadel
-				exploration(515),	-- Ironclad Prison
-				exploration(506),	-- Lost Point
-				exploration(500),	-- Moggle Point
-				exploration(510),	-- The Dragonmurk
-				exploration(2318),	-- The Great Sea
-				exploration(517),	-- Tidefury Cove
-				exploration(505),	-- West Point Tower
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(55, {	-- Brackenwall Village, Dustwallow Marsh

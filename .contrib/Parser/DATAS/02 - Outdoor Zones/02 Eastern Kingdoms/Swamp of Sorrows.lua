@@ -99,11 +99,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(657),	-- The Harborage
 				exploration(1798),	-- The Shifting Mire
-				--[[
-				exploration(1779),	-- Draenil'dur Village
-				exploration(1817),	-- Stagalbog Cave
-				exploration(2403),	-- The Forbidding Sea
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(599, {	-- Bogpaddle, Swamp of Sorrows

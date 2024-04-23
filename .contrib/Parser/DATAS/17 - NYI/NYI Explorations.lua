@@ -5,23 +5,31 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	-- TODO: Devide this into expansions and patches
 	-- Some of these might be obtainable and will want to find a home in the explorations :)
 	exploration(1),		-- Dun Morogh
+	exploration(2),		-- Longshore
 	exploration(3),		-- Badlands
 	exploration(4),		-- Blasted Lands
 	exploration(5),		-- - QA and DVD GLOBAL -
+	exploration(7),		-- Blackwater Cove
 	exploration(8),		-- Swamp of Sorrows
 	exploration(10),	-- Duskwood
 	exploration(11),	-- Wetlands
 	exploration(12),	-- Elwynn Forest
+	exploration(13),	-- The World Tree
 	exploration(14),	-- Durotar
 	exploration(15),	-- Dustwallow Marsh
 	exploration(16),	-- Azshara
 	exploration(17),	-- Northern Barrens
 	exploration(21),	-- Kul Tiras
 	exploration(22),	-- Programmer Isle
+	exploration(23),	-- Northshire River
+	exploration(24),	-- Northshire Abbey
 	exploration(25),	-- Blackrock Mountain
+	exploration(26),	-- Lighthouse
 	exploration(28),	-- Western Plaguelands
 	exploration(30),	-- Nine
+	exploration(32),	-- The Cemetary
 	exploration(33),	-- Northern Stranglethorn
+	exploration(34),	-- Echo Ridge Mine
 	exploration(36),	-- Alterac Mountains
 	exploration(38),	-- Loch Modan
 	exploration(40),	-- Westfall
@@ -32,22 +40,34 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(47),	-- The Hinterlands
 	exploration(49),	-- Dead Man's Hole
 	exploration(51),	-- Searing Gorge
+	exploration(53),	-- Thieves Camp
 	exploration(55),	-- Valley of Heroes UNUSED
+	exploration(56),	-- Heroes' Vigil
+	exploration(59),	-- Northshire Vineyards
+	exploration(61),	-- Thunder Falls
 	exploration(65),	-- Dragonblight
 	exploration(66),	-- Zul'Drak
 	exploration(67),	-- The Storm Peaks
+	exploration(80),	-- Stormwind Mountains
 	exploration(81),	-- Jeff NE Quadrant Changed
 	exploration(82),	-- Jeff NW Quadrant
 	exploration(83),	-- Jeff SE Quadrant
 	exploration(84),	-- Jeff SW Quadrant
 	exploration(85),	-- Tirisfal Glades
+	exploration(89),	-- Mirror Lake Orchard
+	exploration(92),	-- Mirror Lake
+	exploration(106),	-- The Stockpile
+	exploration(126),	-- Tkashi Ruins
 	exploration(130),	-- Silverpine Forest
 	exploration(139),	-- Eastern Plaguelands
 	exploration(141),	-- Teldrassil
+	exploration(145),	-- Algaz Gate
 	exploration(148),	-- Darkshore
 	exploration(151),	-- Designer Island
 	exploration(170),	-- Lordamere Lake
 	exploration(187),	-- Darnassus UNUSED
+	exploration(195),	-- School of Necromancy
+	exploration(203),	-- Mardenholde Keep
 	exploration(206),	-- Utgarde Keep
 	exploration(207),	-- The Great Sea
 	exploration(208),	-- UNUSED Ironcladcove
@@ -55,39 +75,102 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(210),	-- Icecrown
 	exploration(214),	-- The Great Sea
 	exploration(215),	-- Mulgore
+	exploration(223),	-- Stonebull Lake
+	exploration(235),	-- Fenris Keep
+	exploration(244),	-- The Whipple Estate
 	exploration(251),	-- Flame Crest
+	exploration(256),	-- Aldrassil
+	exploration(258),	-- Fel Rock
+	exploration(262),	-- Ban'ethil Barrow Den
 	exploration(267),	-- Hillsbrad Foothills
 	exploration(268),	-- Azshara Crater
 	exploration(269),	-- Dun Algaz
 	exploration(276),	-- UNUSED Stonewrought Pass
+	exploration(277),	-- The Foothill Caverns
 	exploration(293),	-- Thoradin's Wall
 	exploration(296),	-- South Seas UNUSED
+	exploration(298),	-- Baradin Bay
+	exploration(299),	-- Menethil Bay
+	exploration(301),	-- The Savage Coast
+	exploration(302),	-- The Crystal Shore
+	exploration(303),	-- Shell Beach
+	exploration(306),	-- South Tide's Run
 	exploration(308),	-- The Forbidding Sea
+	exploration(322),	-- Blackwater Shipwrecks
+	exploration(323),	-- O'Breen's Camp
+	exploration(325),	-- The Tower of Arathor
+	exploration(326),	-- The Sanctum
+	exploration(328),	-- The Drowned Reef
 	exploration(330),	-- Thandol Span
 	exploration(331),	-- Ashenvale
 	exploration(332),	-- The Great Sea
+	exploration(343),	-- Camp Wurg
+	exploration(349),	-- Wildhammer Keep
 	exploration(357),	-- Feralas
+	exploration(358),	-- Brambleblade Ravine
 	exploration(361),	-- Felwood
+	exploration(364),	-- The Den
+	exploration(365),	-- Burning Blade Coven
+	exploration(371),	-- Dustwind Cave
+	exploration(373),	-- Scuttle Coast
 	exploration(377),	-- Southfury River
+	exploration(393),	-- Darkspear Strand
 	exploration(394),	-- Grizzly Hills
+	exploration(399),	-- Skyline Ridge
 	exploration(400),	-- Thousand Needles
+	exploration(401),	-- The Tidus Stair
 	exploration(405),	-- Desolace
 	exploration(406),	-- Stonetalon Mountains
 	exploration(407),	-- Orgrimmar UNUSED
 	exploration(408),	-- Gillijim's Isle
 	exploration(409),	-- Island of Doctor Lapidis
+	exploration(427),	-- The Shady Nook
+	exploration(429),	-- Xavian
+	exploration(433),	-- Falfarren River
+	exploration(436),	-- Demon Fall Ridge
 	exploration(440),	-- Tanaris
+	exploration(452),	-- Mist's Edge
+	exploration(453),	-- The Long Wash
+	exploration(455),	-- Blackwood Den
 	exploration(457),	-- The Veiled Sea
+	exploration(458),	-- Gold Road
+	exploration(463),	-- Cragpool Lake
+	exploration(466),	-- Valley of the Bloodfuries
+	exploration(468),	-- The Talon Den
 	exploration(470),	-- Thunder Bluff UNUSED
+	exploration(471),	-- Brave Wind Mesa
+	exploration(472),	-- Fire Stone Mesa
+	exploration(473),	-- Mantle Rock
 	exploration(474),	-- Hunter Rise UNUSED
 	exploration(475),	-- Spirit RiseUNUSED
 	exploration(476),	-- Elder RiseUNUSED
+	exploration(479),	-- The Rustmaul Dig Site
+	exploration(486),	-- Galak Hold
+	exploration(487),	-- Roguefeather Den
+	exploration(488),	-- The Weathered Nook
+	exploration(489),	-- Thalanaar
 	exploration(490),	-- Un'Goro Crater
 	exploration(491),	-- Razorfen Kraul
 	exploration(493),	-- Moonglade
 	exploration(495),	-- Howling Fjord
+	exploration(500),	-- Moggle Point
+	exploration(505),	-- West Point Tower
+	exploration(506),	-- Lost Point
+	exploration(510),	-- The Dragonmurk
+	exploration(514),	-- Foothold Citadel
+	exploration(515),	-- Ironclad Prison
+	exploration(516),	-- Dustwallow Bay
+	exploration(517),	-- Tidefury Cove
+	exploration(597),	-- Ghost Walker Post
+	exploration(598),	-- Sar'theris Strand
+	exploration(600),	-- Bolgan's Hole
 	exploration(616),	-- Mount Hyjal
 	exploration(618),	-- Winterspring
+	exploration(636),	-- Blackwolf River
+	exploration(637),	-- Kodo Rock
+	exploration(638),	-- Hidden Path
+	exploration(639),	-- Spirit Rock
+	exploration(640),	-- Shrine of the Dormant Flame
 	exploration(676),	-- Outland
 	exploration(696),	-- Craftsmen's Terrace UNUSED
 	exploration(697),	-- Tradesmen's Terrace UNUSED
@@ -97,20 +180,55 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(701),	-- Warrior's Terrace UNUSED
 	exploration(717),	-- The Stockade
 	exploration(719),	-- Blackfathom Deeps
+	exploration(720),	-- Fray Island
 	exploration(721),	-- Gnomeregan
 	exploration(722),	-- Razorfen Downs
+	exploration(814),	-- Southfury River
+	exploration(815),	-- Southfury River
 	exploration(876),	-- GM Island
 	exploration(877),	-- Delete ME
+	exploration(878),	-- Southfury River
+	exploration(879),	-- Southfury River
+	exploration(881),	-- Thandol Span
+	exploration(926),	-- Bucklebree Farm
 	exploration(956),	-- The Verdant Fields
+	exploration(988),	-- Wavestrider Beach
+	exploration(989),	-- Uldum
+	exploration(991),	-- Gunstan's Post
+	exploration(1019),	-- The Green Belt
+	exploration(1057),	-- Thoradin's Wall
+	exploration(1102),	-- Wildwind Lake
+	exploration(1104),	-- Mok'Gordun
+	exploration(1107),	-- Idlewind Lake
+	exploration(1109),	-- East Pillar
+	exploration(1110),	-- West Pillar
+	exploration(1112),	-- Jademir Lake
+	exploration(1115),	-- Rage Scar Hold
+	exploration(1117),	-- Ruins of Solarsal
 	exploration(1118),	-- Lower Wilds UNUSED
+	exploration(1136),	-- High Wilderness
+	exploration(1156),	-- Southern Barrens
+	exploration(1157),	-- Southern Gold Road
 	exploration(1176),	-- Zul'Farrak
 	exploration(1196),	-- Utgarde Pinnacle
+	exploration(1217),	-- Vanndir Encampment
+	exploration(1218),	-- TESTAzshara
+	exploration(1222),	-- Hetaera's Clutch
+	exploration(1223),	-- Temple of Zin-Malor
+	exploration(1276),	-- The Talondeep Path
+	exploration(1296),	-- Rocktusk Farm
+	exploration(1297),	-- Jaggedswine Farm
 	exploration(1337),	-- Uldaman
+	exploration(1338),	-- Lordamere Lake
+	exploration(1339),	-- Lordamere Lake
 	exploration(1377),	-- Silithus
 	exploration(1397),	-- Emerald Forest
 	exploration(1417),	-- Sunken Temple
 	exploration(1477),	-- The Temple of Atal'Hakkar
 	exploration(1518),	-- Not Used Deadmines
+	exploration(1557),	-- Splithoof Hold
+	exploration(1577),	-- The Cape of Stranglethorn
+	exploration(1578),	-- Southern Savage Coast
 	exploration(1579),	-- Unused The Deadmines 002
 	exploration(1580),	-- Unused Ironclad Cove 003
 	exploration(1582),	-- Ironclad Cove
@@ -118,6 +236,7 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(1584),	-- Blackrock Depths
 	exploration(1597),	-- Raptor Grounds UNUSED
 	exploration(1598),	-- Grol'dom Farm UNUSED
+	exploration(1599),	-- Mor'shan Base Camp
 	exploration(1600),	-- Honor's Stand UNUSED
 	exploration(1601),	-- Blackthorn Ridge UNUSED
 	exploration(1602),	-- Bramblescar UNUSED
@@ -131,17 +250,73 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(1660),	-- Warrior's Terrace
 	exploration(1661),	-- The Temple Gardens
 	exploration(1662),	-- Tradesmen's Terrace
+	exploration(1718),	-- The Great Lift
+	exploration(1742),	-- Spirit Den
+	exploration(1757),	-- The Crimson Veil
+	exploration(1758),	-- The Riptide
+	exploration(1759),	-- The Damsel's Luck
+	exploration(1760),	-- Venture Co. Operations Center
+	exploration(1764),	-- Bloodvenom River
+	exploration(1768),	-- Irontree Cavern
+	exploration(1770),	-- Shadow Hold
+	exploration(1771),	-- Shrine of the Deceiver
+	exploration(1779),	-- Draenil'dur Village
+	exploration(1817),	-- Stagalbog Cave
+	exploration(1837),	-- Witherbark Caverns
+	exploration(1880),	-- Featherbeard's Hovel
+	exploration(1881),	-- Shindigger's Camp
 	exploration(1941),	-- Caverns of Time
 	exploration(1977),	-- Zul'Gurub
 	exploration(2017),	-- Stratholme
 	exploration(2037),	-- Quel'thalas
+	exploration(2077),	-- Twilight Vale
+	exploration(2078),	-- Twilight Shore
+	exploration(2098),	-- Dawning Wood Catacombs
+	exploration(2101),	-- Stoutlager Inn
+	exploration(2102),	-- Thunderbrew Distillery
+	exploration(2103),	-- Menethil Keep
+	exploration(2104),	-- Deepwater Tavern
 	exploration(2137),	-- The Pools of VisionUNUSED
+	exploration(2138),	-- Dreadmist Den
+	exploration(2157),	-- Bael'dun Keep
+	exploration(2158),	-- Emberstrife's Den
 	exploration(2159),	-- Onyxia's Lair
+	exploration(2160),	-- Windshear Mine
+	exploration(2161),	-- Roland's Doom
+	exploration(2177),	-- Battle Ring
 	exploration(2197),	-- The Pools of Vision
+	exploration(2217),	-- Broken Spear Village
+	exploration(2238),	-- Gornia
+	exploration(2239),	-- Zane's Eye Crater
+	exploration(2240),	-- Mirage Raceway
+	exploration(2252),	-- The Ruins of Kel'Theril
+	exploration(2254),	-- Ban'Thallow Barrow Den
 	exploration(2257),	-- Deeprun Tram
 	exploration(2259),	-- UNUSEDThe Marris Stead
+	exploration(2265),	-- Scarlet Base Camp
+	exploration(2267),	-- The Scarlet Basilica
+	exploration(2269),	-- Browman Mill
+	exploration(2274),	-- Mazra'Alor
+	exploration(2278),	-- Scourgehold
 	exploration(2280),	-- DO Not USE
 	exploration(2298),	-- Caer Darrow
+	exploration(2299),	-- Darrowmere Lake
+	exploration(2317),	-- South Seas
+	exploration(2318),	-- The Great Sea
+	exploration(2319),	-- The Great Sea
+	exploration(2320),	-- The Great Sea
+	exploration(2321),	-- The Great Sea
+	exploration(2322),	-- The Veiled Sea
+	exploration(2323),	-- The Veiled Sea
+	exploration(2324),	-- The Veiled Sea
+	exploration(2325),	-- The Veiled Sea
+	exploration(2326),	-- The Veiled Sea
+	exploration(2337),	-- Razor Hill Barracks
+	exploration(2338),	-- South Seas
+	exploration(2339),	-- The Great Sea
+	exploration(2357),	-- Bloodtooth Camp
+	exploration(2364),	-- The Great Sea
+	exploration(2365),	-- The Great Sea
 	exploration(2366),	-- The Black Morass
 	exploration(2367),	-- Old Hillsbrad Foothills
 	exploration(2368),	-- Tarren Mill
@@ -156,16 +331,40 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(2377),	-- Thoradin's Wall
 	exploration(2378),	-- Western Strand
 	exploration(2379),	-- Azurelode Mine
+	exploration(2397),	-- The Great Sea
+	exploration(2398),	-- The Great Sea
+	exploration(2400),	-- The Forbidding Sea
+	exploration(2401),	-- The Forbidding Sea
+	exploration(2402),	-- The Forbidding Sea
+	exploration(2403),	-- The Forbidding Sea
 	exploration(2437),	-- Ragefire Chasm
+	exploration(2457),	-- Nightsong Woods
+	exploration(2477),	-- The Veiled Sea
+	exploration(2518),	-- Lariss Pavilion
+	exploration(2521),	-- Verdantis River
 	exploration(2557),	-- Dire Maul
+	exploration(2558),	-- Deadwind Ravine
+	exploration(2559),	-- Diamondhead River
+	exploration(2560),	-- Ariden's Camp
+	exploration(2563),	-- Morgan's Plot
 	exploration(2597),	-- Alterac Valley
+	exploration(2617),	-- Scrabblescrew's Camp
+	exploration(2625),	-- Eastwall Gate
+	exploration(2626),	-- Terrorweb Tunnel
+	exploration(2637),	-- Kargathia Keep
 	exploration(2677),	-- Blackwing Lair
 	exploration(2717),	-- Molten Core
+	exploration(2757),	-- Shrine of the Fallen Warrior
 	exploration(2777),	-- UNUSED Alterac Valley
 	exploration(2817),	-- Crystalsong Forest
+	exploration(2837),	-- The Master's Cellar
+	exploration(2838),	-- Stonewrought Pass
+	exploration(2839),	-- Alterac Valley
+	exploration(2857),	-- The Rumble Cage
 	exploration(2877),	-- Chunk Test
 	exploration(2917),	-- Hall of Legends
 	exploration(2918),	-- Champions' Hall
+	exploration(2937),	-- Grosh'gok Compound
 	exploration(2957),	-- Irondeep Mine
 	exploration(2958),	-- Stonehearth Outpost
 	exploration(2960),	-- Icewing Pass
@@ -174,9 +373,19 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(2963),	-- Coldtooth Mine
 	exploration(2964),	-- Winterax Hold
 	exploration(3017),	-- Frost Dagger Pass
+	exploration(3037),	-- Ironstone Camp
+	exploration(3038),	-- Weazel's Crater
+	exploration(3039),	-- Tahonda Ruins
 	exploration(3058),	-- Icewing Cavern
+	exploration(3100),	-- Ravaged Twilight Camp
+	exploration(3117),	-- Shalzaru's Lair
+	exploration(3138),	-- Rethress Sanctum
+	exploration(3139),	-- Moon Horror Den
+	exploration(3140),	-- Scalebeard's Cave
+	exploration(3157),	-- Boulderslide Cavern
 	exploration(3217),	-- The Maul
 	exploration(3237),	-- The Maul UNUSED
+	exploration(3257),	-- Bones of Grakkarond
 	exploration(3277),	-- Warsong Gulch
 	exploration(3297),	-- Frostwolf Graveyard
 	exploration(3298),	-- Frostwolf Pass
@@ -187,10 +396,12 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(3304),	-- Icewing Bunker
 	exploration(3305),	-- Stonehearth Bunker
 	exploration(3306),	-- Wildpaw Ridge
+	exploration(3319),	-- Silverwing Grove
 	exploration(3320),	-- Warsong Lumber Mill
 	exploration(3321),	-- Silverwing Hold
 	exploration(3337),	-- Wildpaw Cavern
 	exploration(3338),	-- The Veiled Cleft
+	exploration(3357),	-- Yojamba Isle
 	exploration(3358),	-- Arathi Basin
 	exploration(3377),	-- The Coil
 	exploration(3378),	-- Mandokir's Domain
@@ -5700,6 +5911,7 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(14959),	-- Lucid Reef
 	exploration(14960),	-- Central Encampment
 	exploration(14961),	-- Shiversnap Grove
+	exploration(14962),	-- De Other Side
 	exploration(14963),	-- Dev Map - Quest Training
 	exploration(14966),	-- Dev Map - Exile's Reach
 	exploration(14967),	-- Dev Map - Zereth Mortis
@@ -5801,4 +6013,89 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(15353),	-- Barrows of Reverie
 	exploration(15382),	-- Cosmic Horizon
 	exploration(15383),	-- Equinox Reach
+
+	-- These are currently missing in retail because of #if BEFORE CATA. When converted to timelines, remove them from here.
+	exploration(70),	-- Stonewatch
+	exploration(76),	-- Fallow Sanctuary
+	exploration(77),	-- Anvilmar
+	exploration(128),	-- Ziata'jai Ruins
+	exploration(137),	-- Brewnall Village
+	exploration(138),	-- Misty Pine Refuge
+	exploration(155),	-- Night Web's Hollow
+	exploration(158),	-- Agamand Family Crypt
+	exploration(168),	-- The North Coast
+	exploration(169),	-- Whispering Shore
+	exploration(173),	-- Faol's Rest
+	exploration(238),	-- Malden's Orchard
+	exploration(240),	-- The Dead Field
+	exploration(294),	-- Eastern Strand
+	exploration(295),	-- Western Strand
+	exploration(342),	-- Camp Boff
+	exploration(347),	-- Dustbelch Grotto
+	exploration(359),	-- Bael Modan [UNUSED]
+	exploration(378),	-- Camp Taurajo [UNUSED]
+	exploration(385),	-- Northwatch Hold [UNUSED]
+	exploration(390),	-- Field of Giants [UNUSED]
+	exploration(421),	-- Mystral Lake
+	exploration(424),	-- Remains of Iris Lake
+	exploration(439),	-- The Shimmering Flats
+	exploration(444),	-- Tower of Althalaxx
+	exploration(445),	-- Cliffspring Falls
+	exploration(446),	-- Bashal'Aran
+	exploration(456),	-- Cliffspring River
+	exploration(480),	-- Camp E'thok
+	exploration(481),	-- Splithoof Crag
+	exploration(483),	-- The Screeching Canyon
+	exploration(507),	-- Bluefen
+	exploration(609),	-- Kolkar Village
+	exploration(801),	-- Chill Breeze Valley
+	exploration(810),	-- Stillwater Pond
+	exploration(927),	-- The Shining Strand
+	exploration(985),	-- Waterspring Field
+	exploration(986),	-- Zalashji's Den
+	exploration(1025),	-- The Green Belt
+	exploration(1113),	-- Oneiros
+	exploration(1120),	-- Sardor Isle
+	exploration(1121),	-- Isle of Dread
+	exploration(1219),	-- Legash Encampment
+	exploration(1225),	-- Ursolan
+	exploration(1227),	-- Bay of Storms
+	exploration(1230),	-- Jagged Reef
+	exploration(1231),	-- Southridge Beach
+	exploration(1235),	-- Shadowsong Shrine
+	exploration(1236),	-- Haldarr Encampment
+	exploration(1316),	-- Razorfen Downs [UNUSED]
+	exploration(1457),	-- Nethergarde Mines
+	exploration(1497),	-- Undercity
+	exploration(1697),	-- Raptor Grounds [UNUSED]
+	exploration(1698),	-- Bramblescar
+	exploration(1700),	-- Agama'gor [UNUSED]
+	exploration(1701),	-- Blackthorn Ridge [UNUSED]
+	exploration(1702),	-- Honor's Stand
+	exploration(1857),	-- Thoradin's Wall
+	exploration(1877),	-- Valley of Fangs
+	exploration(1879),	-- Mirage Flats
+	exploration(1898),	-- Dustwind Gulch
+	exploration(1937),	-- Noonshade Ruins
+	exploration(1958),	-- Tanner Camp
+	exploration(2117),	-- Shadow Grave
+	exploration(2118),	-- Brill Town Hall
+	exploration(2119),	-- Gallows' End Tavern
+	exploration(2237),	-- Whitereach Post
+	exploration(2256),	-- Darkwhisper Gorge
+	exploration(2302),	-- The Quagmire
+	exploration(2303),	-- Windbreak Canyon
+	exploration(2399),	-- The Great Sea
+	exploration(2407),	-- Kormek's Hut
+	exploration(2420),	-- Terror Wing Path
+	exploration(2538),	-- Camp Aparaje
+	exploration(2541),	-- Sishir Canyon
+	exploration(2959),	-- Dun Baldar
+	exploration(2977),	-- Iceblood Garrison
+	exploration(2978),	-- Frostwolf Keep
+	exploration(3057),	-- Field of Strife
+	exploration(3097),	-- The Swarming Pillar
+	exploration(3299),	-- Dun Baldar Pass
+	exploration(3318),	-- Rock of Durotan
+	exploration(3486),	-- Ravenholdt Manor
 }));

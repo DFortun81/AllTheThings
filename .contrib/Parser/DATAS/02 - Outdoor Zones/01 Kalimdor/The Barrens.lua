@@ -52,20 +52,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(382),	-- The Sludge Fen
 				exploration(388),	-- The Stagnant Oasis
 				exploration(1699),	-- Thorn Hill
-				--[[
-				exploration(2157),	-- Bael'dun Keep
-				exploration(2138),	-- Dreadmist Den
-				exploration(458),	-- Gold Road
-				exploration(720),	-- Fray Island
-				exploration(1599),	-- Mor'shan Base Camp
-				exploration(2757),	-- Shrine of the Fallen Warrior
-				exploration(1156),	-- Southern Barrens
-				exploration(1157),	-- Southern Gold Road
-				exploration(815),	-- Southfury River
-				exploration(1718),	-- The Great Lift
-				exploration(2319),	-- The Great Sea
-				exploration(401),	-- The Tidus Stair
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet

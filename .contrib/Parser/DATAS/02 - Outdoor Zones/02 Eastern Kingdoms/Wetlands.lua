@@ -213,15 +213,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(1021),	-- Thelgen Rock
 				exploration(118),	-- Whelgar's Excavation Site
-				--[[
-				exploration(298),	-- Baradin Bay
-				exploration(2104),	-- Deepwater Tavern
-				exploration(299),	-- Menethil Bay
-				exploration(2103),	-- Menethil Keep
-				exploration(881),	-- Thandol Span
-				exploration(2402),	-- The Forbidding Sea
-				exploration(2365),	-- The Great Sea
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(553, {	-- Dun Modr, Wetlands

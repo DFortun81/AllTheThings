@@ -143,14 +143,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2657),	-- Valley of Bones
 				-- #endif
 				exploration(607),	-- Valley of Spears
-				--[[
-				exploration(600),	-- Bolgan's Hole
-				exploration(2217),	-- Broken Spear Village
-				exploration(597),	-- Ghost Walker Post
-				exploration(598),	-- Sar'theris Strand
-				exploration(2617),	-- Scrabblescrew's Camp
-				exploration(2324),	-- The Veiled Sea
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(92, {	-- Gelkis Clan Centaur

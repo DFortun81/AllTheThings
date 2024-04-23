@@ -276,12 +276,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(352),	-- Zun'watha
 				-- #endif
-				--[[
-				exploration(1880),	-- Featherbeard's Hovel
-				exploration(1881),	-- Shindigger's Camp
-				exploration(2400),	-- The Forbidding Sea
-				exploration(349),	-- Wildhammer Keep
-				]]--
 			}),
 			-- #if BEFORE TBC
 			n(FACTIONS, {

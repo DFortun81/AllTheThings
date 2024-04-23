@@ -119,15 +119,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1857),	-- Thoradin's Wall
 				-- #endif
 				exploration(317),	-- Witherbark Village
-				--[[
-				exploration(322),	-- Blackwater Shipwrecks
-				exploration(323),	-- O'Breen's Camp
-				exploration(325),	-- The Tower of Arathor
-				exploration(326),	-- The Sanctum
-				exploration(328),	-- The Drowned Reef
-				exploration(2401),	-- The Forbidding Sea
-				exploration(1837),	-- Witherbark Caverns
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(601, {	-- Galen's Fall, Arathi

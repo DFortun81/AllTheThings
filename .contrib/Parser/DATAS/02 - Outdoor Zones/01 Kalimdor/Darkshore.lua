@@ -119,14 +119,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4675),	-- Withering Thicket
 				exploration(454),	-- Wildbend River
 				-- #endif
-				--[[
-				exploration(455),	-- Blackwood Den
-				exploration(452),	-- Mist's Edge
-				exploration(453),	-- The Long Wash
-				exploration(2326),	-- The Veiled Sea
-				exploration(2078),	-- Twilight Shore
-				exploration(2077),	-- Twilight Vale
-				]]--
 			}),
 			prof(FISHING, {
 				i(12238),	-- Darkshore Grouper

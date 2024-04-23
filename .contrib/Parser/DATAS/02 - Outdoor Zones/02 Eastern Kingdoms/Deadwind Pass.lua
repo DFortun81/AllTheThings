@@ -40,14 +40,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2562),	-- Karazhan
 				exploration(2938),	-- Sleeping Gorge
 				exploration(2561),	-- The Vice
-				--[[
-				exploration(2558),	-- Deadwind Ravine
-				exploration(2559),	-- Diamondhead River
-				exploration(2560),	-- Ariden's Camp
-				exploration(2563),	-- Morgan's Plot
-				exploration(2837),	-- The Master's Cellar
-				exploration(2937),	-- Grosh'gok Compound
-				]]--
 			}),
 			petbattles({
 				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>

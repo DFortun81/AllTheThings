@@ -682,12 +682,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(264),	-- The Oracle Glade
 				exploration(266),	-- Wellspring Lake
 				exploration(265),	-- Wellspring River
-				--[[
-				exploration(256),	-- Aldrassil
-				exploration(262),	-- Ban'ethil Barrow Den
-				exploration(258),	-- Fel Rock
-				exploration(2322),	-- The Veiled Sea
-				]]
 			}),
 			n(FLIGHT_PATHS, {
 				fp(456, {	-- Dolanaar, Teldrassil

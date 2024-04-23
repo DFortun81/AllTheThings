@@ -105,10 +105,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(556),	-- The Loch
 				exploration(144),	-- Thelsamar
 				exploration(924),	-- Valley of Kings
-				--[[
-				exploration(145),	-- Algaz Gate
-				exploration(2101),	-- Stoutlager Inn
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(555, {	-- Farstrider Lodge, Loch Modan

@@ -76,9 +76,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5629),	-- Thorium Advance
 				exploration(1446),	-- Thorium Point
 				-- #endif
-				--[[
-				exploration(2838),	-- Stonewrought Pass
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(673, {	-- Iron Summit, Searing Gorge

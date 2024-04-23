@@ -134,14 +134,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				exploration(1076),	-- Webwinder Path
 				exploration(461),	-- Windshear Crag
-				--[[
-				exploration(636),	-- Blackwolf River
-				exploration(3157),	-- Boulderslide Cavern
-				exploration(463),	-- Cragpool Lake
-				exploration(468),	-- The Talon Den
-				exploration(466),	-- Valley of the Bloodfuries
-				exploration(2160),	-- Windshear Mine
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(360, {	-- Cliffwalker Post, Stonetalon Mountains

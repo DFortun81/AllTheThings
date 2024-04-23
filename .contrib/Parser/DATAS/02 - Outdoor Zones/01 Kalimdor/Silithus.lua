@@ -157,11 +157,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(3077),	-- Valor's Rest
 				-- #endif
 				exploration(3077),	-- Valor's Rest
-				--[[
-				exploration(2477),	-- The Veiled Sea
-				exploration(3100),	-- Ravaged Twilight Camp
-				exploration(3257),	-- Bones of Grakkarond
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(73, {	-- Cenarion Hold, Silithus (A)

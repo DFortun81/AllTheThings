@@ -682,15 +682,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(398),	-- Wildmane Water Well
 				exploration(819),	-- Windfury Ridge
 				exploration(396),	-- Winterhoof Water Well
-				--[[
-				exploration(358),	-- Brambleblade Ravine
-				exploration(471),	-- Brave Wind Mesa
-				exploration(472),	-- Fire Stone Mesa
-				exploration(637),	-- Kodo Rock
-				exploration(473),	-- Mantle Rock
-				exploration(399),	-- Skyline Ridge
-				exploration(223),	-- Stonebull Lake
-				]]--
 			}),
 			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {

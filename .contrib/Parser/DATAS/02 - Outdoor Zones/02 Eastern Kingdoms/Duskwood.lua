@@ -133,13 +133,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(121),	-- Tranquil Gardens Cemetery
 				exploration(856),	-- Twilight Grove
 				exploration(93),	-- Vul'Gol Ogre Mound
-				--[[
-				exploration(2098),	-- Dawning Wood Catacombs
-				exploration(2161),	-- Roland's Doom
-				exploration(32),	-- The Cemetary
-				exploration(244),	-- The Whipple Estate
-				exploration(13),	-- The World Tree
-				]]--
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(FACTIONS, {

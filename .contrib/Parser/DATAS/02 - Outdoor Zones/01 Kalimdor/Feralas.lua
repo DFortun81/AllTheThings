@@ -125,22 +125,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1101),	-- The Writhing Deep
 				exploration(2520, {["timeline"] = { ADDED_4_0_1 }}),	-- Woodpaw Den
 				exploration(2519),	-- Woodpaw Hills
-				--[[
-				exploration(1109),	-- East Pillar
-				exploration(1136),	-- High Wilderness
-				exploration(1107),	-- Idlewind Lake
-				exploration(1112),	-- Jademir Lake
-				exploration(2518),	-- Lariss Pavilion
-				exploration(1104),	-- Mok'Gordun
-				exploration(1115),	-- Rage Scar Hold
-				exploration(1117),	-- Ruins of Solarsal
-				exploration(3117),	-- Shalzaru's Lair
-				exploration(489),	-- Thalanaar
-				exploration(2323),	-- The Veiled Sea
-				exploration(2521),	-- Verdantis River
-				exploration(1110),	-- West Pillar
-				exploration(1102),	-- Wildwind Lake
-				]]--
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(FACTIONS, {

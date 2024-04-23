@@ -36,11 +36,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(280),	-- Strahnbrad
 				exploration(1680),	-- The Headland
 				exploration(284),	-- The Uplands
-				--[[
-				exploration(277),	-- The Foothill Caverns
-				exploration(1339),	-- Lordamere Lake
-				exploration(2839),	-- Alterac Valley
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(349, {	-- Ravenholdt
