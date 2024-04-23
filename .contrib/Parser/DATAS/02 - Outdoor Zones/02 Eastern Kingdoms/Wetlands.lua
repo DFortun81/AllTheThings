@@ -1789,7 +1789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 210499 },	-- Marshroom
 					},
 					["coord"] = { 31, 18, WETLANDS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["groups"] = {
 						recipe(424718),	-- Engrave Pants - Starsurge
@@ -1816,7 +1816,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(209874, {	-- Dragonslayer's Lance
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["cost"] = 7500,	-- 75s
 						})),

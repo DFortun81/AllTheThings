@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
 						["coord"] = { 23.3, 72.8, DUSKWOOD },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							215,	-- Defias Night Runner
@@ -2275,7 +2275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210251, {	-- Engraved Silver Ring
 					--["provider"] = { "o",  },	-- Small Chest at Tranquil Gardens Cemetery South of Darkshire (TODO: Find ObjectID)
 					["coord"] = { 81, 71, DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
@@ -2286,7 +2286,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["description"] = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
 					["coord"] = { 19.9, 45.5, DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424988),	-- Engrave Gloves - Shiv
@@ -2772,7 +2772,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(210043, {	-- Symbol of the Second Owl
 					["coord"] = { 65.2, 27.8, DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["cr"] = 211200,	-- Agon
 				})),

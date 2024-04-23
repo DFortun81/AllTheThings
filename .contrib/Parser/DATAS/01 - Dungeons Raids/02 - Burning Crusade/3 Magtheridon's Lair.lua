@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(31746),	-- Phoenix-Fire Band
 						i(31704, {	-- The Tempest Key
 							-- #if AFTER WRATH
-							["timeline"] = { "removed 2.3.0" },
+							["timeline"] = { REMOVED_2_3_0 },
 							-- #endif
 						}),
 						ach(432, {	-- Champion of the Naaru (Achievement)

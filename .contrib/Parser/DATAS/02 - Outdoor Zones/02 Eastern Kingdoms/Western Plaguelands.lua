@@ -2935,7 +2935,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 210329, 1 },	-- Hillsbrad Treasure Map
 						{ "i", 210323, 1 },	-- Safe Combination
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400102),	-- Engrave Pants - Envenom

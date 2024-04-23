@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5647,	-- A Lack of Fear [Darnassus]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
-					["timeline"] = { "removed 2.3.0" },
+					["timeline"] = { REMOVED_2_3_0 },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
 					["lvl"] = 20,
@@ -469,7 +469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						209004,	-- Bruart
 					},
 					["coord"] = { 72.2, 76.6, IRONFORGE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN, WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1329,7 +1329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 405946 },	-- Dusty Chest
 					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
 					["coord"] = { 51.9, 12.8, IRONFORGE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes

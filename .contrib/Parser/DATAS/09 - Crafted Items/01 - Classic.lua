@@ -948,7 +948,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		filter(MISC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(211848, {	-- Blackfathom Mana Oil
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 			})),
 			-- #endif
 			applyclassicphase(PHASE_FIVE, i(20748, {["timeline"] = {REMOVED_4_0_3}})),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
@@ -2151,11 +2151,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(4253),	-- Toughened Leather Gloves
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211502, {	-- Void-Touched Leather Gauntlets
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["requireSkill"] = LEATHERWORKING,
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(211423, {	-- Void-Touched Leather Gloves
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["requireSkill"] = LEATHERWORKING,
 				})),
 				-- #endif
@@ -2668,7 +2668,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(7057),	-- Green Silken Shoulders
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(215365, {	-- Invoker's Mantle
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 			})),
 			-- #endif
 			applyclassicphase(PHASE_THREE, i(19050)),	-- Mantle of the Timbermaw
@@ -2759,7 +2759,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4308),	-- Green Linen Bracers
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(210781, {	-- Phoenix Bindings
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 			})),
 			-- #endif
 		}),
@@ -2803,7 +2803,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14143),	-- Ghostweave Belt
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(215366, {	-- Invoker's Cord
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 			})),
 			-- #endif
 			i(7026),	-- Linen Belt
@@ -2852,7 +2852,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(6836),	-- Dress Shoes
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(210795, {	-- Extraplanar Spidersilk Boots
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["requireSkill"] = TAILORING,
 			})),
 			-- #endif

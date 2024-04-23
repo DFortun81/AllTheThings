@@ -2559,7 +2559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(210482, {	-- Paxnozz
 					["coord"] = { 48.8, 15.6, DARKSHORE },
 					["cost"] = {{ "i", 209047, 1 }},	-- Gnarled Harpoon
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR, HUNTER },
 					["groups"] = {
 						i(208777, {	-- Rune of the Sniper
@@ -2615,7 +2615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 409289 },	-- Strange Orb
 					["coord"] = { 56.2, 26.5, DARKSHORE },
 					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209047, {	-- Gnarled Harpoon
@@ -2626,7 +2626,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 49.2, 16.2, DARKSHORE },
 						{ 48.3, 18.0, DARKSHORE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR, HUNTER },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
@@ -2647,7 +2647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 					["provider"] = { "o", 414646 },	-- Remnant
 					["coord"] = { 30.4, 48.0, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -2671,7 +2671,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 211471 },	-- Cliffspring Key
 					},
 					["coord"] = { 56.3, 34.9, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400099),	-- Engrave Pants - Blade Dance
@@ -2680,7 +2680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["provider"] = { "o", 414624 },	-- Lighthouse Stash
 					["coord"] = { 32.8, 37.1, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -2813,7 +2813,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
 					["coord"] = { 57.0, 26.4, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["cr"] = 2336,	-- Dark Strand Fanatic
 					["groups"] = {
@@ -2825,7 +2825,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 57.6, 26.0, DARKSHORE },
 						{ 52.6, 33.8, DARKSHORE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						3662,	-- Delmanis the Hated

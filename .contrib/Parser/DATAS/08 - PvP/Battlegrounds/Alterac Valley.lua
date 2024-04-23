@@ -290,7 +290,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7282, {	-- Brotherly Love (Alliance)
 					["qg"] = 13320,	-- Commander Karl Philips
 					["coord"] = { 50.9, 30.8, ALTERAC_VALLEY },
-					["timeline"] = { "removed 2.3.0", "added 8.1.5" },
+					["timeline"] = { REMOVED_2_3_0, "added 8.1.5" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Commander Louis Philips slain
@@ -302,7 +302,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7281, {	-- Brotherly Love (Horde)
 					["qg"] = 13154,	-- Commander Louis Philips
 					["coord"] = { 50.4, 65.5, ALTERAC_VALLEY },
-					["timeline"] = { "removed 2.3.0", "added 8.1.5" },
+					["timeline"] = { REMOVED_2_3_0, "added 8.1.5" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Commander Karl Philips slain
@@ -500,13 +500,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7301, {	-- Fallen Sky Lords (Alliance)
 					["qg"] = 13319,	-- Commander Duffy
 					["coord"] = { 49.0, 14.6, ALTERAC_VALLEY },
-					["timeline"] = { "removed 2.3.0", ADDED_9_0_1 },
+					["timeline"] = { REMOVED_2_3_0, ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7302, {	-- Fallen Sky Lords (Horde)
 					["qg"] = 13153,	-- Commander Mulfort
 					["coord"] = { 49.5, 88.2, ALTERAC_VALLEY },
-					["timeline"] = { "removed 2.3.0", ADDED_9_0_1 },
+					["timeline"] = { REMOVED_2_3_0, ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7361, {	-- Favor Amongst the Darkspear
@@ -608,7 +608,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(8369, {	-- Invaders of Alterac Valley
 					["qg"] = 15350,	-- Horde Warbringer
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 					["races"] = HORDE_ONLY,
 				}),
@@ -617,7 +617,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8369,	-- Invaders of Alterac Valley
 					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -805,7 +805,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(8375, {	-- Remember Alterac Valley!
 					["qg"] = 15351,	-- Alliance Brigadier General
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -814,7 +814,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8375,	-- Remember Alterac Valley!
 					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),

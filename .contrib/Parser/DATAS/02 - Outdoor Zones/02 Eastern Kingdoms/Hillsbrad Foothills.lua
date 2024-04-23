@@ -1811,7 +1811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20086, {	-- Dusksteel Throwing Knife [Classic] / Broken Dusksteel Throwing Knife [TBC]
 							["timeline"] = {
 								"added 1.11.1.5462",
-								"removed 2.0.1.5678"
+								REMOVED_2_0_1
 							},
 						}),
 						i(25878, {	-- Dusksteel Throwing Knife [TBC]
@@ -3612,7 +3612,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 36.91, 76.14, HILLSBRAD_FOOTHILLS },
 						{ 54.43, 82.01, HILLSBRAD_FOOTHILLS },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 				})),
 			}),

@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5647,	-- A Lack of Fear [Darnassus]
 						5641,	-- A Lack of Fear [Ironforge]
 					},
-					["timeline"] = { "removed 2.3.0" },
+					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { IRONFORGE },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 78089,	-- Advice From Stormwind
 					["coord"] = { 37.4, 32, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 				})),
 				-- #endif
@@ -1025,7 +1025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						203478,	-- Stuart
 					},
 					["coord"] = { 22.6, 64.7, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN, WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1343,7 +1343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5495,	-- Ursula Deline <Warlock Trainer>
 					["sourceQuest"] = 78090,	-- A Second Opinion
 					["coord"] = { 26.2, 77.4, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["classes"] = { PALADIN },
 					["groups"] = {
@@ -1993,7 +1993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.2, 77.4, STORMWIND_CITY },
 						{ 89.5, 76.9, ASHENVALE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["groups"] = {
 						objective(1, {	-- 0/12 Mote of Mannoroth
@@ -2650,7 +2650,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(78194, {	-- Secrets of Elune (1/2)
 					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
 					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DUSKWOOD },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF, HUMAN },
@@ -2672,7 +2672,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 78194,	-- Secrets of Elune (1/2)
 					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the night elves.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DARKSHORE },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF, HUMAN },
@@ -2705,7 +2705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(79077, {	-- Sharing the Faith
 					["qg"] = 1212,	-- Bishop Farthing
 					["coord"] = { 39.2, 28, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ELWYNN_FOREST },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF, HUMAN },
@@ -2763,7 +2763,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["questID"] = 75939,	-- Brother Romulus HQT
 					["qg"] = 205278,	-- Brother Romulus
 					["coord"] = { 38.6, 28.8, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 				})),
@@ -3544,7 +3544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.7, 32.9, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 2.4.3" },
+					["timeline"] = { REMOVED_2_4_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["isBreadcrumb"] = true,
@@ -3553,7 +3553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4486, {	-- The Tome of Nobility (Ironforge)
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["coord"] = { 23.6, 6.6, IRONFORGE },
-					["timeline"] = { "removed 2.4.3" },
+					["timeline"] = { REMOVED_2_4_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["isBreadcrumb"] = true,
@@ -3572,7 +3572,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 2.4.3" },
+					["timeline"] = { REMOVED_2_4_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 40,
@@ -4070,7 +4070,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 78287,	-- Let Me Make You An Offer [A]
 					["coord"] = { 79.2, 47.6, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { THE_BARRENS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -4163,7 +4163,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 75939,	-- Brother Romulus HQT
 					["coord"] = { 33.0, 24.75, STORMWIND_CITY },
 					["maps"] = { DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 				})),
@@ -4172,7 +4172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["questID"] = 75969,	-- Ada Gelhardt HQT
 					["sourceQuest"] = 75940,	-- Charred Note HQT
 					["coord"] = { 4.3, 28.25, DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4183,7 +4183,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386777 },	-- Dusty Chest
 					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
 					["coord"] = { 61.9, 29.3, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -5951,7 +5951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18243, {	-- Black Battlestrider (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 							-- #if BEFORE 2.0.1
 							["races"] = { DWARF, GNOME },
 							-- #endif
@@ -5965,21 +5965,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18244, {	-- Black War Ram (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(29468, {	-- Black War Steed (MOUNT!)
 							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18241, {	-- Black War Steed (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(29471, {	-- Black War Tiger (MOUNT!)
 							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18242, {	-- Black War Tiger (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 					}),
 				}),

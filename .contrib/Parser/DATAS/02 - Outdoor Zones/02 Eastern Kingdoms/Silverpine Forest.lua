@@ -1481,7 +1481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { SHAMAN },
 					["groups"] = {
 						i(208758, {	-- Earthen Rune
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["groups"] = {
 								recipe(410107),	-- Engrave Pants - Way of Earth
@@ -1663,7 +1663,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(212753, {	-- Tortured Soul
 					["provider"] = { "i", 210713 },	-- Tortured Soul
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(208744, {	-- Rune of Shadowbolts
@@ -1680,7 +1680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Wailing Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {	-- Wailing Spirit
 					["coord"] = { 60.2, 74.4, SILVERPINE_FOREST },
 					["groups"] = {
 						i(205905, {	-- Memory of a Devout Champion
@@ -1702,7 +1702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 					["provider"] = { "o", 411674 },	-- Prophecy of a King's Demise
 					["coord"] = { 65.8, 23.5, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -1712,7 +1712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 409131 },	-- Rusty Chest
 					["description"] = "You will need to use Sprint to make the jump to the platform.",
 					["coord"] = { 45.2, 67.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -1950,20 +1950,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
 					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 212598,	-- Recke Grinnes
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210253, {	-- Rot Totem
 					["coord"] = { 45.6, 22.6, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { SHAMAN },
 					["cr"] = 1773,	-- Rot Hide Mystic
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
 					["provider"] = { "i", 210696 },	-- Rot Bane
 					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1943,	-- Raging Rot Hide
@@ -1978,7 +1978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
 					["coord"] = { 50.8, 61.6, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["cr"] = 1867,	-- Dalaran Apprentice
@@ -1994,7 +1994,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
 					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						1974,	-- Ravenclaw Drudger
@@ -2004,7 +2004,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
 					["coord"] = { 52.8, 27.4, SILVERPINE_FOREST },
 					["description"] = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["crs"] = {
 						1769,	-- Moonrage Whitescalp

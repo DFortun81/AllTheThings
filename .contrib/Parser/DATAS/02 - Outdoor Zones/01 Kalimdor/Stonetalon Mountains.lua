@@ -217,7 +217,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
 						["coord"] = { 67.2, 52.2, STONETALON_MOUNTAINS },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							3988,	-- Venture Co. Operator
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78270, {	-- Goblin Lockpicks
 					["qg"] = 4086,	-- Veenix <Venture Co. Merchant>
 					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
 					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
 					["classes"] = { ROGUE },
@@ -2586,7 +2586,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 209838, 1 },	-- Hypnotic Crystal
 						{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ASHENVALE, WAILING_CAVERNS },
 					["classes"] = { HUNTER },
 					["lvl"] = 15,
@@ -2655,7 +2655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
 					["sourceQuest"] = 78114,	-- Wild Wyvern Wrangling
 					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["lvl"] = 15,
 					["groups"] = {

@@ -850,7 +850,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			}}),
-			applyclassicphase(SOD_PHASE_ONE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {
+			applyclassicphase(SOD_PHASE_ONE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 }, }, {
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
 				["difficulties"] = { DIFFICULTY.SOD.PLAYER10 },
 				["lvl"] = 25,
@@ -892,10 +892,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 25,
 							["groups"] = {
 								i(16886, {	-- Outlaw Sabre
-									["timeline"] = { "removed 2.0.1" },
+									["timeline"] = { REMOVED_2_0_1 },
 								}),
 								i(16887, {	-- Witch's Finger
-									["timeline"] = { "removed 2.0.1" },
+									["timeline"] = { REMOVED_2_0_1 },
 								}),
 							},
 						}),
@@ -1049,7 +1049,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						o(411358, {	-- Artisan's Chest
 							["provider"] = { "i", 211420 },	-- Shifting Scale Talisman
 							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["OnUpdate"] = [[_.OnUpdateForCrafter]],
 							["groups"] = {
 								i(211421),	-- The Box

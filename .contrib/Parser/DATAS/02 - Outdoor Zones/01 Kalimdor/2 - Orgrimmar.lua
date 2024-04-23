@@ -700,7 +700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						208023,	-- Gru'ark
 					},
 					["coord"] = { 57.6, 53.6, ORGRIMMAR },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -970,7 +970,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5656,	-- Hex of Weakness [Thunder Bluff]
 						5657,	-- Hex of Weakness [Undercity]
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
@@ -994,7 +994,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5656,	-- Hex of Weakness [Thunder Bluff]
 						5657,	-- Hex of Weakness [Undercity]
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
@@ -1435,7 +1435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78196, {	-- Secrets of Undeath (1/2)
 					["qg"] = 211229,	-- Dietrich Praice
 					["coord"] = { 35.6, 87.8, ORGRIMMAR },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ASHENVALE },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1465,7 +1465,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 56.2, 49.4, TIRISFAL_GLADES },
 					},
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the undead.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 18,
@@ -1492,7 +1492,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 49.01, 18.32, UNDERCITY },
 						{ 26.0, 15.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5642,	-- Shadowguard [Thunder Bluff]
 					},
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -1532,7 +1532,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(79079, {	-- Sharing the Faith
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -2075,7 +2075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 78288,	-- Let Me Make You An Offer [H]
 					["coord"] = { 80.2, 29.6, ORGRIMMAR },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -2158,7 +2158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
 					["provider"] = { "o", 404830 },	-- Dusty Chest
 					["coord"] = { 55.9, 44.7, ORGRIMMAR },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -4233,28 +4233,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18247, {	-- Black War Kodo (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(29472, {	-- Black War Raptor (MOUNT!)
 							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18246, {	-- Black War Raptor (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(29469, {	-- Black War Wolf (MOUNT!)
 							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18245, {	-- Black War Wolf (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(29470, {	-- Red Skeletal Warhorse (MOUNT!)
 							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18248, {	-- Red Skeletal Warhorse (MOUNT!)
-							["timeline"] = { "removed 2.0.1.6180" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(34129, {	-- Swift Warstrider (MOUNT!)
 							["timeline"] = { ADDED_2_3_0 },

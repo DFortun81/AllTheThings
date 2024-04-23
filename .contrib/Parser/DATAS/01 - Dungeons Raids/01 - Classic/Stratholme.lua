@@ -816,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-								["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
+								["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
 							}),
 						},
 					}),
@@ -994,7 +994,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10398,	-- Thuzadin Shadowcaster
 						}),
 						i(15768, {	-- Pattern: Wicked Leather Belt (RECIPE!)
-							["timeline"] = { "removed 2.0.5" },	-- Added to Leatherworking Trainers
+							["timeline"] = { REMOVED_2_0_5 },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
 						i(74274, {	-- Plans: Phantom Blade (RECIPE!)
@@ -1055,7 +1055,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-								["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
+								["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
 							}),
 						},
 					}),

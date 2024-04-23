@@ -2155,7 +2155,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(14481, {	-- Pattern: Runecloth Gloves
-							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 							-- #if BEFORE TBC
 							["isLimited"] = true,
 							-- #endif

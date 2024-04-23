@@ -1760,7 +1760,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["sourceQuest"] = 2880,	-- Troll Necklace Bounty
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 2.0.3" },
+					["timeline"] = { REMOVED_2_0_3 },
 					-- #if BEFORE TBC
 					["maxReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					-- #endif
@@ -2152,7 +2152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(ZONE_DROPS, {
 				i(16214, {	-- Formula: Enchant Bracer - Greater Intellect
-					["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 					["cr"] = 2642,	-- Vilebranch Shadowcaster
 				}),
 				-- #if BEFORE CATA

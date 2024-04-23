@@ -357,7 +357,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	}),
 	n(SEASON_GLADIATOR, {
 		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { ADDED_2_0_1, "removed 2.1.2" },
+			["timeline"] = { ADDED_2_0_1, REMOVED_2_1_2 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -1199,18 +1199,18 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Horde OG: n(12793,  {	-- Brave Stonehide
 					filter(NECK_F, {
 						i(28245, {	-- Pendant of Dominance
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 						i(28244, {	-- Pendant of Triumph
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(28247, {	-- Band of Dominance
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 						i(28246, {	-- Band of Triumph
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 					}),
 					filter(TRINKET_F, {
@@ -1312,7 +1312,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
 		n(ACHIEVEMENTS, bubbleDown({
-				["timeline"] = { ADDED_2_1_2, "removed 2.3.0.7501" },
+				["timeline"] = { ADDED_2_1_2, REMOVED_2_3_0 },
 				-- #if BEFORE WRATH
 				["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
 				-- #endif
@@ -1978,30 +1978,30 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					filter(NECK_F, {
 						i(33067, {	-- Veteran's Pendant of Conquest
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33065, {	-- Veteran's Pendant of Dominance
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33068, {	-- Veteran's Pendant of Salvation
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33067, {	-- Veteran's Pendant of Conquest
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33066, {	-- Veteran's Pendant of Triumph
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(33056, {	-- Veteran's Band of Dominance
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33064, {	-- Veteran's Band of Salvation
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33057, {	-- Veteran's Band of Triumph
-							["timeline"] = { ADDED_2_0_3, "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 					}),
 					filter(RELICS_F, {
@@ -2041,7 +2041,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
 		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { ADDED_2_3_0, "removed 2.4.3.8600" },
+			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif

@@ -1223,7 +1223,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 		-- #endif
 			n(ZONE_DROPS, {
 				i(16244, {	-- Formula: Enchant Gloves - Greater Strength
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9198,	-- Spirestone Mystic
 				}),
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
@@ -1392,7 +1392,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
-						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
+						["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
 					}),
 					i(13177),	-- Talisman of Evasion
 					i(13179),	-- Brazecore Armguards
@@ -1410,7 +1410,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
 						["timeline"] = {
 							"added 1.11.1.5462",
-							"removed 2.0.1.5678"
+							REMOVED_2_0_1
 						},
 					}),
 					-- #endif
@@ -1633,7 +1633,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
-						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
+						["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
 					}),
 					i(13163),	-- Relentless Scythe
 					i(13161),	-- Trindlehaven Staff
@@ -1888,7 +1888,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 							["isBounty"] = true,
 							-- #endif
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(16733, {	-- Spaulders of Valor
 							["timeline"] = { REMOVED_4_0_3 },

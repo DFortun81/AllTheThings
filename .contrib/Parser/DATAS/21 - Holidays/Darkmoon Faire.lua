@@ -1223,7 +1223,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -1267,7 +1267,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["cost"] = { { "i", 2314, 3 } },	-- Toughened Leather Armor
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -1311,7 +1311,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -1354,7 +1354,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -1990,7 +1990,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["cost"] = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -2434,7 +2434,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -2780,7 +2780,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["cost"] = { { "i", 11407, 5 } },	-- Torn Bear Pelt
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -2847,7 +2847,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["cost"] = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {

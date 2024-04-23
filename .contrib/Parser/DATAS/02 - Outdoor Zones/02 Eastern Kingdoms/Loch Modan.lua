@@ -1568,7 +1568,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(209958, {	-- Graix
 					["provider"] = { "n", 209954 },	-- Demonic Remains
 					["coord"] = { 72.6, 68.8, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(208744, {	-- Rune of Shadowbolts
@@ -1606,7 +1606,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(210107, {	-- Kackle
 					["coord"] = { 55.0, 55.4, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(208777, {	-- Rune of the Sniper
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
 					["coord"] = { 54.2, 27.0, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(208754, {	-- Spell Notes: TENGI RONEERA
 							["classes"] = { MAGE },
@@ -1749,7 +1749,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 209908 },	-- Heretic Idol
 					["description"] = "/kneel at the statue for the rune.",
 					["coord"] = { 71.8, 27.6, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -1782,7 +1782,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["provider"] = { "o", 407731 },	-- Stonemason's Toolbox
 					["coord"] = { 46.5, 12.7, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -1794,7 +1794,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407850, {	-- Sunken Reliquary
 					["coord"] = { 36.8, 91.4, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(208851, {	-- Libram of Justice
 							["classes"] = { PALADIN },
@@ -1970,7 +1970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208843, {	-- Battle Totem
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["coords"] = {
 						{ 79.6, 16.0, LOCH_MODAN },
 						{ 76.6, 16.0, LOCH_MODAN },
@@ -2010,7 +2010,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 36.6, 84.4, LOCH_MODAN },
 						{ 49.0, 21.6, LOCH_MODAN },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["cr"] = 1166,  -- Stonesplinter Seer
 				})),
@@ -2092,7 +2092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208823, {	-- Offering Coin
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["coords"] = {
 						{ 35.6, 20.0, LOCH_MODAN },
 						{ 35.8, 27.4, LOCH_MODAN },
@@ -2197,7 +2197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 55.2, 68.2, LOCH_MODAN },
 						{ 66.0, 37.8, LOCH_MODAN },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
@@ -2216,7 +2216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208847, {	-- Skull-Shaped Geode
 					["coord"] = { 33.2, 73.8, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {

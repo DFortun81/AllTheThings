@@ -2297,7 +2297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(16219, {	-- Formula: Enchant Gloves - Greater Agility
-					["timeline"] = { "removed 2.3.0" },	-- Learned from trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from trainer
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
 				-- #if BEFORE CATA
@@ -2365,7 +2365,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE 2.3.0
 				i(10450, {	-- Undamaged Hippogryph Feather
-					["timeline"] = { "removed 2.3.0" },
+					["timeline"] = { REMOVED_2_3_0 },
 					["crs"] = {
 						6648,	-- Antilos
 						6380,	-- Thunderhead Consort

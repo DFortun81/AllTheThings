@@ -150,7 +150,7 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Serenity",
-						["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
+						["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
 						["recipeID"] = 16983,
 						["requireSkill"] = 17040,
 					},
@@ -258,7 +258,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Corruption",
-						["timeline"] = { "removed 2.0.1", ADDED_3_0_2, REMOVED_4_0_3, "added 7.1.5" },
+						["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, "added 7.1.5" },
 						["recipeID"] = 16985,
 						["requireSkill"] = 17039,
 					},

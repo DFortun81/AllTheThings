@@ -1255,7 +1255,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #if ANYCLASSIC
 			["timeline"] = { ADDED_2_3_0, REMOVED_3_0_2 },
 			-- #else
-			["timeline"] = { ADDED_2_3_0, "removed 2.4.3.8601" },
+			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #endif
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },

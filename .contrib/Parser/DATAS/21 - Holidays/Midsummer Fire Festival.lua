@@ -703,7 +703,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				SCHOLOMANCE,
 			},
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,	-- NOTE: Crieve tested the flags for this quest with the ATT guild, it was not reset. (meaning it's a yearly repeatable)
 			["lvl"] = lvlsquish(50, 1, 1),
 			["groups"] = {
@@ -739,7 +739,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			-- #endif
 			["sourceQuest"] = 9319,	-- A Light in Dark Places
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
 			["groups"] = {
@@ -836,7 +836,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -875,7 +875,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -1363,7 +1363,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 1,
@@ -1389,7 +1389,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 1,
@@ -1578,7 +1578,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				WINTERSPRING,
 			},
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -1600,7 +1600,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				-- #endif
 				i(23379, {	-- Cinder Bracers
-					["timeline"] = { "removed 2.4.0" },
+					["timeline"] = { REMOVED_2_4_0 },
 				}),
 				-- #if BEFORE TBC
 				i(23247),	-- Burning Blossom
@@ -1618,7 +1618,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				SEARING_GORGE,
 			},
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC

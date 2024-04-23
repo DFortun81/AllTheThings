@@ -3581,7 +3581,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		prof(ENCHANTING, {
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility / CLASSIC: Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
 			i(16245, {	-- Formula: Enchant Boots - Greater Agility (RECIPE!)
-				["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
+				["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 			}),
 			i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 			i(11167),	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
@@ -3732,16 +3732,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7084),	-- Pattern: Crimson Silk Shoulders
 			i(7086),	-- Pattern: Earthen Silk Belt
 			i(14492, {	-- Pattern: Felcloth Boots
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14496, {	-- Pattern: Felcloth Hood
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14506, {	-- Pattern: Felcloth Robe
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14508, {	-- Pattern: Felcloth Shoulders
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14474, {	-- Pattern: Frostweave Gloves
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
@@ -3778,16 +3778,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4347),	-- Pattern: Reinforced Woolen Shoulders
 			i(4354),	-- Pattern: Rich Purple Silk Shirt
 			i(14498, {	-- Pattern: Runecloth Headband
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14491, {	-- Pattern: Runecloth Pants
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14504, {	-- Pattern: Runecloth Shoulders
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14470, {	-- Pattern: Runecloth Tunic
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(4351),	-- Pattern: Shadow Hood
 			i(4353),	-- Pattern: Spider Belt

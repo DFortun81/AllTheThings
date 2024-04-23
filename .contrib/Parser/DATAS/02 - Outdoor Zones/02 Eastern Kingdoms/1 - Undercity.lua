@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1498,	-- Bethor Iceshard
 					["sourceQuest"] = 491,	-- Wand to Bethor
 					["coord"] = { 84.2, 17.4, UNDERCITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5655,	-- Hex of Weakness [Mulgore]
 						5656,	-- Hex of Weakness [Thunder Bluff]
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
@@ -827,7 +827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(78198, {	-- Secrets of the Loa (1/2)
 					["qg"] = 211225,	-- Baj'ura
 					["coord"] = { 47.2, 19.6, UNDERCITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -853,7 +853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 78198,	-- Secrets of the Loa (1/2)
 					["coord"] = { 47.2, 19.6, UNDERCITY },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the trolls.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -928,7 +928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5642,	-- Shadowguard [Thunder Bluff]
 					},
 					["coord"] = { 49.01, 18.32, UNDERCITY },
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -946,7 +946,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(79080, {	-- Sharing the Faith
 					["qg"] = 4607,	-- Father Lankester <Priest Trainer>
 					["coord"] = { 49.6, 15.6, UNDERCITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { TIRISFAL_GLADES },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },

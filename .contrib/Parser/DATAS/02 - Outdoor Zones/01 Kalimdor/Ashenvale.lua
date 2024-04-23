@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
 					},
 					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["groups"] = {
 						i(211813, {	-- Silverwing Sentinel Charm
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
 					},
 					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 				})),
 			})),
@@ -444,7 +444,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n",   3663 },	-- Delgren the Purifier
 					},
 					["coord"] = { 26.2, 38.6, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DARKSHORE },
 					["classes"] = { PALADIN },
 				})),
@@ -464,7 +464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 78088,	-- A Strange Artifact
 					["coord"] = { 26.2, 38.6, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PALADIN },
 				})),
@@ -752,7 +752,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 42.0, 67.0, ASHENVALE },
 					["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 					["lvl"] = 18,
@@ -1015,7 +1015,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						78133,	-- Dragonslayer's Shield
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["groups"] = {
 						--[[
@@ -1039,7 +1039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { SHADOWFANG_KEEP },
 					["classes"] = { WARRIOR },
 				})),
@@ -1049,7 +1049,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { WETLANDS },
 					["classes"] = { WARRIOR },
 				})),
@@ -1059,7 +1059,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["classes"] = { WARRIOR },
 				})),
@@ -1602,7 +1602,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 213444,	-- Mysterious Traveler
 					["sourceQuest"] = 78681,	-- The Conjuring
 					["coord"] = { 79.0, 80.2, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
@@ -2141,7 +2141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 50.5, 72.0, ASHENVALE },
 					["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["lvl"] = 18,
@@ -2256,7 +2256,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 78092,	-- It Must Be Destroyed
 					["coord"] = { 89.4, 77, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["groups"] = {
 						recipe(410014, {	-- Engrave Chest - Divine Storm
@@ -2481,7 +2481,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 212334,	-- Dead Twilight Cultist
 					["coord"] = { 17.3, 26.7, ASHENVALE },
 					["cost"] = {{ "i", 210708, 1 }},	-- Elixir of Coalesced Regret
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateForCrafter]],
 				})),
 				-- #endif
@@ -3754,7 +3754,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 14, 19.8, ASHENVALE },	-- Middle Crystal
 						{ 13.5, 15.8, ASHENVALE },	-- Northern Crystal
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["groups"] = {
 						recipe(401757),	-- Engrave Gloves - Arcane Blast
@@ -3767,7 +3767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["description"] = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
 					["coord"] = { 87, 43.2, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 				})),
 			}),
@@ -3829,7 +3829,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209840, {	-- Gnarled Wand of Wild Magic
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 209841, 1 },	-- Wild Magic Essence
@@ -3867,7 +3867,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 7.2, 13.2, DARKSHORE },
 						{ 14.0, 26.6, DARKSHORE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["crs"] = {
 						3715,	-- Wrathtail Sea Witch
@@ -3879,7 +3879,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 33.6, 38.8, ASHENVALE },
 						{ 54.6, 63.0, ASHENVALE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
 						3748,	-- Foulweald Shaman

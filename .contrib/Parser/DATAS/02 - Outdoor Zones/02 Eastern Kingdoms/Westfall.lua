@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 51.0, 47.0, WESTFALL },
 							{ 51.6, 55.6, WESTFALL },
 						},
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 210549,	-- Defias Scout
 						["groups"] = {
@@ -1570,7 +1570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 55.6, WESTFALL },
 					},
 					["description"] = "Hunters need to use Hunter's Mark.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(208777, {	-- Rune of the Sniper
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["groups"] = {
 								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -1775,7 +1775,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, n(210537, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Undying Laborer
+				applyclassicphase(SOD_PHASE_ONE, n(210537, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {	-- Undying Laborer
 					["coord"] = { 31.8, 43.5, WESTFALL },
 					["groups"] = {
 						i(208849, {	-- Libram of Blessings
@@ -2122,7 +2122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["coords"] = {
 						{ 48.6, 21.8, WESTFALL },
@@ -2142,7 +2142,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
 						454,	-- Young Goretusk
@@ -2190,7 +2190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208851, {	-- Libram of Justice
 					["coord"] = { 69.8, 72.4, WESTFALL },
 					["description"] = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 7050,	-- Defias Drone
@@ -2224,7 +2224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209041, {	-- Magic Pumpkin Seeds
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["coords"] = {
 						{ 48.6, 21.8, WESTFALL },
@@ -2322,7 +2322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
 					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 34.4, 84.6, WESTFALL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 391,	-- Old Murk-Eye
 					["groups"] = {
@@ -2372,7 +2372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
 					["provider"] = { "i", 209420 },	-- Gillsbane
 					["description"] = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["coords"] = {
 						-- various common map locations where 'crs' may be found
@@ -2419,7 +2419,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
 					["coord"] = { 53.0, 78.8, WESTFALL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["cr"] = 450,	-- Defias Renegade Mage
 				})),

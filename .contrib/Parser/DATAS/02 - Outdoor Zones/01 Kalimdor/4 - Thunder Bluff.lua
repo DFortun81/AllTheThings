@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						207754,	-- Mooart
 					},
 					["coord"] = { 28.8, 19.2, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5655,	-- Hex of Weakness [Mulgore]
 						5657,	-- Hex of Weakness [Undercity]
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
@@ -598,7 +598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5680,	-- Shadowguard [Orgrimmar]
 					},
 					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 206159 },	-- Venture Co Disguise
 					},
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { MULGORE },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["sourceQuest"] = 76156,	-- Stalk With The Earthmother (1/3)
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { MULGORE },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -674,7 +674,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["sourceQuest"] = 76160,	-- Stalk With The Earthmother (2/3)
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,

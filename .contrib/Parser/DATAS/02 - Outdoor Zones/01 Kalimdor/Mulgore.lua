@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77649, {	-- A Hunter's Strength
 							["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
 							["coord"] = { 44.2, 75.8, MULGORE },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { TAUREN },
 							["lvl"] = 2,
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77652, {	-- Icons of Power
 							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
 							["coord"] = { 45, 76, MULGORE },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["races"] = { TAUREN },
 							["lvl"] = 2,
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77651, {	-- Into the Brambles
 							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
 							["coord"] = { 44, 76, MULGORE },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { TAUREN },
 							["lvl"] = 2,
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77648, {	-- Relics of the Tauren
 							["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>
 							["coord"] = { 45.0, 76.0, MULGORE },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { DRUID },
 							["races"] = { TAUREN },
 							["lvl"] = 2,
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(403102, {	-- Bristleback Loot Cache
 							["coord"] = { 61.6, 76.0, MULGORE },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["groups"] = {
 								i(208414, {	-- Lunar Idol
 									["classes"] = { DRUID },
@@ -628,7 +628,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
 							["coord"] = { 63.8, 81.0, MULGORE },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["cr"] = 2953,	-- Bristleback Shaman
 						})),
@@ -795,7 +795,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5656,	-- Hex of Weakness [Thunder Bluff]
 						5657,	-- Hex of Weakness [Undercity]
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
@@ -1846,7 +1846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 60.4, 33.6, MULGORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
 							["classes"] = { SHAMAN },
@@ -1877,7 +1877,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, o(404352, {	-- Artifact Storage
 					["provider"] = { "i", 206975 },	-- Artifact Storage Key
 					["coord"] = { 31.6, 49.5, MULGORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(206388, {	-- Sulfurous Icon
 							["classes"] = { SHAMAN },
@@ -1986,7 +1986,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ZONE_DROPS, {
 				applyclassicphase(SOD_PHASE_ONE, i(206975, {	-- Artifact Storage Key
 					["coord"] = { 33.8, 49.8, MULGORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["crs"] = {
 						2990,	-- Bael'dun Appraiser
 						2989,	-- Bael'dun Digger
@@ -2009,7 +2009,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205961, {	-- Mulgore Bird Meat
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
 						2956,	-- Adult Plainstrider
@@ -2058,7 +2058,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 53.6, 73.6, MULGORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						2949,	-- Palemane Tanner
@@ -2068,7 +2068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206995, {	-- Severed Harpy Head
 					["coord"] = { 33.6, 42.0, MULGORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						2962,	-- Windfury Harpy
@@ -2078,7 +2078,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206994, {	-- Severed Quilboar Head
 					["coord"] = { 61.6, 22.4, MULGORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 3232,	-- Bristleback Interloper
 				})),

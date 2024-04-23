@@ -879,7 +879,7 @@ root(ROOTS.Zones, {
 					q(10169, {	-- Losing Gracefully
 						["qg"] = 19485,	-- Magister Falris
 						["coord"] = { 47.0, 83.5, SHATTRATH_CITY },
-						["timeline"] = { ADDED_2_0_3, "removed 2.4.0" },
+						["timeline"] = { ADDED_2_0_3, REMOVED_2_4_0 },
 					}),
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B, q(11514, {	-- Maintaining the Sunwell Portal
 						["qg"] = 24932,	-- Exarch Nasuun
@@ -2114,7 +2114,7 @@ root(ROOTS.Zones, {
 						i(27982),	-- Charm of Potent and Powerful Passions
 						i(27941),	-- Compassionate Critter's Friend
 						i(33014, {	-- Fine Poking Stick
-							["timeline"] = { ADDED_2_2_0, "removed 2.3.0" },
+							["timeline"] = { ADDED_2_2_0, REMOVED_2_3_0 },
 						}),
 						i(34249),	-- Hula Girl Doll
 						i(27992),	-- Infallible Tikbalang Ward
@@ -2128,7 +2128,7 @@ root(ROOTS.Zones, {
 						i(27979),	-- Stone of Stupendous Springing Strides
 						i(27944),	-- Talisman of True Treasure Tracking
 						i(33012, {	-- Terokkar Lilac
-							["timeline"] = { ADDED_2_2_0, "removed 2.3.0" },
+							["timeline"] = { ADDED_2_2_0, REMOVED_2_3_0 },
 						}),
 						i(156726, {	-- Yellow Crystal Monocle
 							["sourceQuest"] = 50183,	-- Star-Touched Chest

@@ -894,7 +894,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4456,	-- Fiora Longears
 					["coord"] = { 66.5, 45.2, DUSTWALLOW_MARSH },
-					["timeline"] = { "removed 2.3.0" },
+					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -909,7 +909,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(6719, {	-- Windborne Belt
-							["timeline"] = { "removed 2.3.0" },
+							["timeline"] = { REMOVED_2_3_0 },
 						}),
 					},
 				}),

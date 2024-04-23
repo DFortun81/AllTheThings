@@ -407,7 +407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(209838, {	-- Hypnotic Crystal
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { HUNTER },
 					})),
 					-- #endif

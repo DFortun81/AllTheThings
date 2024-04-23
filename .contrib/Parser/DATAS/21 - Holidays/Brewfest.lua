@@ -480,7 +480,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		})),
 		ach(1292, {	-- Yellow Brewfest Stein [Removed]
 			["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
-			["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+			["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 		}),
 	}),
 	n(23872, {	-- Coren Direbrew
@@ -1120,7 +1120,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			q(11400, {	-- Brewfest Riding Rams (A)
 				["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (A)
 				-- #if AFTER WRATH
-				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 				-- #else
 				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 				-- #endif
@@ -1131,7 +1131,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			q(11419, {	-- Brewfest Riding Rams (H)
 				["provider"] = { "i", 33978 },	-- "Honorary Brewer" Hand Stamp (H)
 				-- #if AFTER WRATH
-				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 				-- #else
 				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 				-- #endif
@@ -1390,7 +1390,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #if BEFORE WRATH
 				["description"] = "This quest was only available during the 2007 Brewfest.",
 				-- #endif
-				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1398,7 +1398,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(32912, {	-- Yellow Brewfest Stein
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					}),
 				},
 			}),
@@ -1412,7 +1412,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #if BEFORE WRATH
 				["description"] = "This quest was only available during the 2007 Brewfest.",
 				-- #endif
-				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1420,7 +1420,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(32912, {	-- Yellow Brewfest Stein
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					}),
 				},
 			}),
@@ -1679,33 +1679,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					{ 44.3, 17.5, DUROTAR },
 					{ 48.1, 39.1, DUN_MOROGH },
 				},
-				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 				["maps"] = { BLACKROCK_DEPTHS },
 				["lvl"] = lvlsquish(48, 48, 48),
 			}),
 			q(11486, {	-- The Best of Brews (A)
 				["qg"] = 23872,	-- Coren Direbrew
 				["sourceQuest"] = 11454,	-- Seek the Saboteurs
-				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 				["maps"] = { BLACKROCK_DEPTHS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(48, 48, 48),
 				["groups"] = {
 					i(34140, {	-- Dark Iron Tankard
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					}),
 				},
 			}),
 			q(11487, {	-- The Best of Brews (H)
 				["qg"] = 23872,	-- Coren Direbrew
 				["sourceQuest"] = 11454,	-- Seek the Saboteurs
-				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 				["maps"] = { BLACKROCK_DEPTHS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(48, 48, 48),
 				["groups"] = {
 					i(34140, {	-- Dark Iron Tankard
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					}),
 				},
 			}),
@@ -1906,7 +1906,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			["timeline"] = { ADDED_4_0_1 },
 		}),
 		-- #if AFTER TRANSMOG
-		i(32912, bubbleDown({ ["timeline"] = { ADDED_2_0_1, "removed 2.4.3" } }, {	-- Yellow Brewfest Stein
+		i(32912, bubbleDown({ ["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 } }, {	-- Yellow Brewfest Stein
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
 			["lore"] = "This stein was the reward from the 2007 Brewfest.",
 			["groups"] = {
@@ -1920,7 +1920,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #else
 		i(32912, {	-- Yellow Brewfest Stein
 			["lore"] = "This stein was the reward from the 2007 Brewfest.",
-			["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+			["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 			["groups"] = {
 				i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]
 				i(32917),	-- Filled Yellow Brewfest Stein [Thunder 45 - Alliance]
@@ -2046,7 +2046,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
 						-- #if AFTER WRATH
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 						-- #else
 						["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 						-- #endif
@@ -2232,7 +2232,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
 						-- #if AFTER WRATH
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 						-- #else
 						["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 						-- #endif
@@ -2354,7 +2354,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = { { "g", 1000000 } },	-- 100g
 					}),
 					i(33976, {	-- Brewfest Ram (MOUNT!)
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 						["cost"] = { { "g", 100000 } },	-- 10g
 					}),
 				},
@@ -2477,7 +2477,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = { { "g", 1000000 } },	-- 100g
 					}),
 					i(33976, {	-- Brewfest Ram (MOUNT!)
-						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 						["cost"] = { { "g", 100000 } },	-- 10g
 					}),
 				},

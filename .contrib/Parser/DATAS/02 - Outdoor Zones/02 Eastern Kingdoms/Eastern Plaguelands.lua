@@ -4474,7 +4474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(15756, {	-- Pattern: Runic Leather Headband (RECIPE!)
-							["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+							["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 							["isLimited"] = true,
 						}),
 					},
@@ -4773,11 +4773,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(16242, {	-- Formula: Enchant Chest - Major Mana (RECIPE!)
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9452,	-- Scarlet Enchanter
 				}),
 				i(16222, {	-- Formula: Enchant Shield - Vitality / TBC-10.1.5:Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit (RECIPE!)
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9447,	-- Scarlet Warder
 				}),
 				-- #if AFTER TBC

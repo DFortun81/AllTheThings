@@ -699,7 +699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77661, {	-- Meditation on the Light
 							["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
 							["coord"] = { 28.6, 66.4, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["races"] = { DWARF },
 							["lvl"] = 2,
@@ -781,7 +781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77657, {	-- Relics of the Light
 							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
 							["coord"] = { 28.8, 68.2, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PALADIN },
 							["races"] = { DWARF },
 							["lvl"] = 2,
@@ -876,7 +876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 211809 },	-- Comprehension Primer
 							},
 							["coord"] = { 28.6, 66.4, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { MAGE },
 							["races"] = { GNOME },
 							["lvl"] = 2,
@@ -892,7 +892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77666, {	-- Stolen Power
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["coord"] = { 28.6, 66.2, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARLOCK },
 							["races"] = { GNOME },
 							["lvl"] = 2,
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77655, {	-- The Lost Rune [Dwarf]
 							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
 							["coord"] = { 28.8, 67.2, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { DWARF },
 							["lvl"] = 2,
@@ -984,7 +984,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77656, {	-- The Lost Rune [Gnome]
 							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
 							["coord"] = { 28.8, 67.2, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { GNOME },
 							["lvl"] = 2,
@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77658, {	-- Thrice Stolen [Dwarf]
 							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
 							["coord"] = { 28.4, 67.6, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { DWARF },
 							["lvl"] = 2,
@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77659, {	-- Thrice Stolen [Gnome]
 							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
 							["coord"] = { 28.4, 67.6, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { DWARF },
 							["lvl"] = 2,
@@ -1105,7 +1105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77660, {	-- Trek Through the Caves
 							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
 							["coord"] = { 29, 67.4, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { DWARF },
 							["lvl"] = 2,
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(405633, {	-- Rockjaw Footlocker
 							["coord"] = { 26.8, 72.6, DUN_MOROGH },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(205951, {	-- Memory of a Troubled Acolyte
@@ -2239,12 +2239,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
 						["coord"] = { 78.2, 59.8, DUN_MOROGH },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 6123,	-- Dark Iron Spy
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cost"] = {
 							{ "i", 208219, 1 },	-- Bottom-Left Map Piece
@@ -2255,19 +2255,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
 						["coord"] = { 78.2, 59.8, DUN_MOROGH },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 6123,	-- Dark Iron Spy
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
 						["coord"] = { 26.0, 41.8, DUN_MOROGH },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 1211,	-- Leper Gnome
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
 						["coord"] = { 69.8, 59.0, DUN_MOROGH },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1116,	-- Rockjaw Ambusher
@@ -2279,7 +2279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
 						["coord"] = { 23.4, 53.8, DUN_MOROGH },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1124,	-- Frostmane Shadowcaster
@@ -4059,7 +4059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 43.0, 49.6, DUN_MOROGH },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
 							["classes"] = { SHAMAN },
@@ -4090,7 +4090,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
 					["provider"] = { "o", 387466 },	-- Rusty Lockbox
 					["coord"] = { 47.0, 52.0, DUN_MOROGH },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
@@ -4100,7 +4100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 46.96, 43.73, DUN_MOROGH },
 					["cost"] = {{ "i", 208220, 1 }},	-- Dun Morogh Treasure Map
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -4108,7 +4108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208802, {	-- Wounded Adventurer
 					["coord"] = { 25.6, 43.6, DUN_MOROGH },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4255,7 +4255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2886),	-- Crag Boar Rib
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208192, {	-- Dun Morogh Pig Meat
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
 						208638,	-- Fyodi
@@ -4391,7 +4391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 42.4, 35.8, DUN_MOROGH },
 						{ 42.0, 44.6, DUN_MOROGH },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						1124,	-- Frostmane Shadowcaster
@@ -4400,7 +4400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208158, {	-- Pristine Trogg Heart
 					["coord"] = { 70.6, 59.2, DUN_MOROGH },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1116,	-- Rockjaw Ambusher
@@ -4451,7 +4451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208159, {	-- Severed Troll Head
 					["coord"] = { 26.6, 50.6, DUN_MOROGH },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1123,	-- Frostmane Headhunter
@@ -4463,7 +4463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Severed Wendigo Paw
 					["coord"] = { 42.6, 55.0, DUN_MOROGH },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1135,	-- Wendigo
@@ -4538,7 +4538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Wendigo Blood
 					["coord"] = { 42.6, 55.0, DUN_MOROGH },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						1135,	-- Wendigo
@@ -4553,7 +4553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 45.6, 44.0, DUN_MOROGH },
 						{ 44.4, 47.6, DUN_MOROGH },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						704,	-- Ragged Timber Wolf

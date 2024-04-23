@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5641,	-- A Lack of Fear [Ironforge]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
-					["timeline"] = { "removed 2.3.0" },
+					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { IRONFORGE },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
@@ -677,7 +677,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78192, {	-- Secrets of the Light (1/2)
 					["qg"] = 211188,	-- Maethra Slagheart
 					["coord"] = { 38.2, 89.2, DARNASSUS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ASHENVALE },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -698,7 +698,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
 					["coord"] = { 38.2, 89.2, DARNASSUS },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(79078, {	-- Sharing the Faith
 					["qg"] = 4092,	-- Lariia <Priest Trainer>
 					["coord"] = { 40, 87.4, DARNASSUS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 5,
