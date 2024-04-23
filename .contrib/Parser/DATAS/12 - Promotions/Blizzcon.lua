@@ -24,7 +24,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(33079, {	-- Murloc Costume (TOY!)
-		["timeline"] = { "added 2.1.3.6898" },
+		["timeline"] = { ADDED_2_1_3 },
 	}),
 
 	ach(415, {	-- Blizzcon 2008 - Big Blizzard Bear
@@ -45,18 +45,18 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	ach(5378, {	-- Blizzcon 2010 - Deathy
 		["provider"] = { "i", 67418 },	-- Deathy (PET!)
-		["timeline"] = { "added 4.0.1.12984" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(67418, {	-- Deathy (PET!)
-		["timeline"] = { "added 4.0.1.12984" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 
 	ach(6185, {	-- Blizzcon 2011 - Murkablo
 		["provider"] = { "i", 71726 },	-- Murkablo (PET!)
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 	}),
 	i(71726, {	-- Murkablo (PET!)
-		["timeline"] = { "added 4.2.0.14333" },
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 
 	ach(8793, {	-- Blizzcon 2013 - Murkalot

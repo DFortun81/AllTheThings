@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(29568, {	-- A Necessary Evil
 					["qg"] = 54678,	-- Naturalist Bite
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(61, 61, 10),
 					["groups"] = {
 						objective(1, {	-- Hungarfen slain
@@ -25,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9715, {	-- Bring Me A Shrubbery!
 					["qg"] = 17856,	-- Gzhun'tt
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29691, {	-- Bring Me A Shrubbery!
 					["qg"] = 54674,	-- T'shu
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["sourceQuest"] = 9715,	-- Bring Me A Shrubbery!
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
 					["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 54674,	-- T'shu
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
 					["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
@@ -65,14 +65,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29571, {	-- Defending the Wilds
 					["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
 					["coord"] = { 60.6, 22.4, NAGRAND },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(63, 63, 10),
 				}),
 				q(9717, {	-- Oh, It's On!
 					["qg"] = 17857,	-- T'shu
 					["coord"] = { 19.4, 49.8, ZANGARMARSH },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Underspore Frond
@@ -87,7 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29570, {	-- Rescuing the Expedition
 					["qg"] = 54675,	-- Watcher Jhang
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(61, 61, 10),
 					["groups"] = {
 						objective(1, {	-- Earthbinder Rayge Discovered
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29567, {	-- Stalk the Stalker
 					["qg"] = 54674,	-- T'shu
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9719, {	-- Stalk the Stalker
 					["qg"] = 17866,	-- Khn'nix
 					["coord"] = { 19.6, 49.8, ZANGARMARSH },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Brain of the Black Stalker

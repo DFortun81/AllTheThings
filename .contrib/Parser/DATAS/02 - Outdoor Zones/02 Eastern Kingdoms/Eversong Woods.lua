@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_eversongwoods",
 		-- #endif
-		["timeline"] = { "added 2.0.1.6180" },
+		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			m(SUNSTRIDER_ISLE, {
 				["lore"] = "Sunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving.",
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				fp(82, {	-- Silvermoon City [Horde]
 					["cr"] = 16192,	-- Skymistress Gloaming <Dragonhawk Master>
 					["coord"] = { 54.4, 50.8, EVERSONG_WOODS },
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

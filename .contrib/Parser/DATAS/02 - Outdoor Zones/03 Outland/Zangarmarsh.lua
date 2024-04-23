@@ -39,7 +39,7 @@ local OnTooltipForSporeggar = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Zangarmarsh is a leveling zone intended to be completed after Hellfire Peninsula. It is a surreal swamp, with neon giant mushrooms and hostile naga. The Cenarion Circle is investigating why wildlife has been dying, discovering that Lady Vashj is draining Coilfang Reservoir for her nefarious purposes. Players can also gain reputation with Sporeggar, a group of sporelings at war with ogres. Alliance players also further learn about lost ones--Draenei heavily corrupted by shadow magic--and begin gaining reputation with the Kurenai.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_zangarmarsh",
@@ -595,7 +595,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 						["sourceQuest"] = 10993,	-- Return to Cenarion Refuge
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { AZSHARA },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
@@ -614,7 +614,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9765,	-- Preparing for War
 						["maxReputation"] = { 942, EXALTED },	-- Cenarion Expedition, Exalted.
-						["timeline"] = { "removed 4.3.0.14732" },
+						["timeline"] = { REMOVED_4_3_0 },
 						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						["repeatable"] = true,
@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, {
 					q(9765, {	-- Preparing for War
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9764,	-- Orders from Lady Vashj
-						["timeline"] = { "removed 4.3.0.14732" },
+						["timeline"] = { REMOVED_4_3_0 },
 						["cost"] = {{ "i", 24368, 1 }},	-- Coilfang Armaments
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						["lvl"] = lvlsquish(67, 67, 20),
@@ -1561,7 +1561,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 						["sourceQuest"] = 10955,	-- Morthis Whisperwing
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 22790, 10 },	-- Ancient Lichen
@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 						["sourceQuest"] = 10978,	-- Return to Morthis Whisperwing
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
@@ -1733,7 +1733,7 @@ root(ROOTS.Zones, {
 						},
 						["sourceQuest"] = 10961,	-- The Ward of Wakening
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
@@ -1995,7 +1995,7 @@ root(ROOTS.Zones, {
 							}),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
@@ -2023,10 +2023,10 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(24417, {	-- Scout's Arrow
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(31949, {	-- Warden's Arrow
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29172),	-- Ashyen's Gift
 							applyclassicphase(TBC_PHASE_TWO, i(35403)),	-- Crusader's Ornamented Gloves
@@ -2039,7 +2039,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35347)),	-- Evoker's Silk Trousers
 							i(24429),	-- Expedition Flare
 							i(25835),	-- Explorer's Walking Stick
-							i(33149, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
+							i(33149, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
 							i(28271),	-- Formula: Enchant Gloves - Precise Strikes / TBC: Formula: Enchant Gloves - Spell Strike (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
@@ -2144,7 +2144,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 78.0, 66.0, ZANGARMARSH },
 						["groups"] = {
 							i(27532, {	-- Master Fishing - The Art of Angling
-								["timeline"] = { "removed 3.1.0" },
+								["timeline"] = { REMOVED_3_1_0 },
 								["rank"] = 5,
 							}),
 							i(27696),	-- Recipe: Blackened Sporefish (RECIPE!)

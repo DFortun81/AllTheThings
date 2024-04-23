@@ -63,11 +63,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["races"] = HORDE_ONLY,
 				}),
 				q(27987, {	-- Cannonball! [A]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28698, {	-- Cannonball! [H]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27970, {	-- Captain P. Harris [A]
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["races"] = HORDE_ONLY,
 				}),
 				q(28059, {	-- Claiming The Keep [A]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28682, {	-- Claiming The Keep [H]
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28685, {	-- Leave No Weapon Behind [H]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27992, {	-- Magnets, How Do They Work? [A]
@@ -127,11 +127,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["races"] = HORDE_ONLY,
 				}),
 				q(28130, {	-- Not The Friendliest Town [A]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28686, {	-- Not The Friendliest Town [H]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27971, {	-- Rattling Their Cages [A]
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["races"] = HORDE_ONLY,
 				}),
 				q(27966, {	-- Salvaging the Remains [A]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28690, {	-- Salvaging the Remains [H]
@@ -179,11 +179,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28689, {	-- The Forgotten [H]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27944, {	-- Thinning the Brood [A]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28683, {	-- Thinning the Brood [H]
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28695, {	-- WANTED: Foreman Wellson [H]
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28065, {	-- Walk A Mile In Their Shoes [A]
@@ -432,7 +432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					})),
 					pvp(n(QUESTS, {
 						q(28122, {	-- A Huge Problem [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -442,7 +442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28117, {	-- Clearing the Depths [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -457,12 +457,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28186, {	-- Cursed Shackles [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(28165, {	-- D-Block [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28232, {	-- Food From Below [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -487,12 +487,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28120, {	-- Learning From The Past [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(28188, {	-- Prison Revolt [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -502,7 +502,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28185, {	-- Svarnos [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -527,12 +527,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28118, {	-- The Imprisoned Archmage [H]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(28163, {	-- The Leftovers [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28223, {	-- The Warden [A]
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),

@@ -46,7 +46,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 				i(186178, {	-- Vicious War Gorm [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),

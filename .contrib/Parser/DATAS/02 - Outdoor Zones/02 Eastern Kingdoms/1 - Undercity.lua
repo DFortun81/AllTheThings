@@ -21,13 +21,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(CATA_PHASE_ONE, ach(5850, {	-- Fish or Cut Bait: Undercity
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5844, {	-- Let's Do Lunch: Undercity
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
@@ -76,13 +76,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							29319,	-- Tadpole Terror
 							29322,	-- Time for Slime
 						},
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { "added 2.4.0.7897" },
+								["timeline"] = { ADDED_2_4_0 },
 							}),
 							i(45991, {	-- Bone Fishing Pole
 								["timeline"] = { ADDED_3_1_0 },
@@ -91,10 +91,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
 					}),
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1498,	-- Bethor Iceshard
 					["sourceQuest"] = 491,	-- Wand to Bethor
 					["coord"] = { 84.2, 17.4, UNDERCITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29333, {	-- Escargot A Go-Go
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29317, {	-- Fish Head
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29315, {	-- Fungus Among Us
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5655,	-- Hex of Weakness [Mulgore]
 						5656,	-- Hex of Weakness [Thunder Bluff]
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
@@ -630,7 +630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29320, {	-- Like Pike?
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29332, {	-- Lily, Oh Lily
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -718,7 +718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29361, {	-- Moat Monster!
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -797,7 +797,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29334, {	-- Roach Coach
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -827,7 +827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(78198, {	-- Secrets of the Loa (1/2)
 					["qg"] = 211225,	-- Baj'ura
 					["coord"] = { 47.2, 19.6, UNDERCITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -853,7 +853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 78198,	-- Secrets of the Loa (1/2)
 					["coord"] = { 47.2, 19.6, UNDERCITY },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the trolls.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -928,7 +928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5642,	-- Shadowguard [Thunder Bluff]
 					},
 					["coord"] = { 49.01, 18.32, UNDERCITY },
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -946,7 +946,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(79080, {	-- Sharing the Faith
 					["qg"] = 4607,	-- Father Lankester <Priest Trainer>
 					["coord"] = { 49.6, 15.6, UNDERCITY },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { TIRISFAL_GLADES },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -986,7 +986,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29319, {	-- Tadpole Terror
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6467,	-- Mennet Carkad
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1886,	-- The Deathstalkers (1/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1122,7 +1122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6522,	-- Andron Gant
 					["sourceQuest"] = 1898,	-- The Deathstalkers (2/4)
 					["coord"] = { 54.6, 75.6, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1140,7 +1140,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1899,	-- The Deathstalkers (3/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29322, {	-- Time for Slime
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1364,7 +1364,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29360, {	-- Would You Like Some Flies With That?
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1474,13 +1474,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(64921, {	-- Cape of Undercity
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64922, {	-- Mantle of Undercity
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64920, {	-- Shroud of Undercity
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67529, {	-- Undercity Satchel
 							["timeline"] = { ADDED_4_0_3 },
@@ -1526,7 +1526,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20854, {	-- Design: Amulet of the Moon
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
@@ -1711,7 +1711,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20975, {	-- Design: The Jade Eye
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 					},
@@ -2059,7 +2059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
@@ -2195,7 +2195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					{ 66.5, 49.8, UNDERCITY },
 					{ 61.8, 75.6, UNDERCITY },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),

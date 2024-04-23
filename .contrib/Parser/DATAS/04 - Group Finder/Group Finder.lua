@@ -99,7 +99,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51965),	-- Vigorous Handguards
 			},
 		})),
-		i(67248, bubbleDownSelf({ ["timeline"] = { "added 4.0.1.12984", "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
+		i(67248, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
 			["description"] = "Rewarded for completing a random dungeon in the level 35-39 range.",
 			["groups"] = {
 				i(51976),	-- Earthbound Shoulderguards

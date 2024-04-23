@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(254, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Arcatraz
+	inst(254, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3846,	-- The Arcatraz
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					-- #if AFTER WRATH
 					["lvl"] = lvlsquish(67, 67, 25),
 					-- #else
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29675, {	-- Hey There Dalliah
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29674,	-- Unbound Darkness
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Wrath-Scryer Soccothrates slain
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29681, {	-- Maximum Security Breakout
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29675,	-- Hey There Dalliah
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Harbinger Skyriss slain
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29674, {	-- Unbound Darkness
 					["qg"] = 18481,	-- A'dal
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Zereketh the Unbound slain

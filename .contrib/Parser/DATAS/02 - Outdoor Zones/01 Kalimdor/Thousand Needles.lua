@@ -112,19 +112,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2237),	-- Whitereach Post
 				exploration(2303),	-- Windbreak Canyon
 				-- #endif
-				--[[
-				exploration(486),	-- Galak Hold
-				exploration(2238),	-- Gornia
-				exploration(3037),	-- Ironstone Camp
-				exploration(2240),	-- Mirage Raceway
-				exploration(487),	-- Roguefeather Den
-				exploration(1557),	-- Splithoof Hold
-				exploration(3039),	-- Tahonda Ruins
-				exploration(479),	-- The Rustmaul Dig Site
-				exploration(488),	-- The Weathered Nook
-				exploration(3038),	-- Weazel's Crater
-				exploration(2239),	-- Zane's Eye Crater
-				]]
 			}),
 			n(FLIGHT_PATHS, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles
@@ -171,7 +158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9431, {	-- A Different Approach
 					["qg"] = 17093,	-- Magistrix Elosai
 					["coord"] = { 46.0, 50.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -185,7 +172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10941,	-- Wizlo Bearingshiner
 					["sourceQuest"] = 9431,	-- A Different Approach
 					["coord"] = { 21.4, 32.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -1835,7 +1822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 9433,	-- A Dip in the Moonwell
 					["coord"] = { 21.4, 32.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
@@ -2556,7 +2543,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield
-							["timeline"] = { "added 2.0.1", "removed 4.1.0" },	-- Moved to Trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_1_0 },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
 						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)

@@ -22,7 +22,7 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 	},
 });
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR, {
-	inst(77, bubbleDownSelf({ ["timeline"] = { "added 2.3.0", "removed 4.1.0" } }, {	-- Zul'Aman
+	inst(77, bubbleDownSelf({ ["timeline"] = { ADDED_2_3_0, REMOVED_4_1_0 } }, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 3805,	-- Zul'Aman
@@ -229,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 							i(33105, {	  -- Budd's Guise of Zul'aman
 								["sourceQuest"] = 11132,	-- Promises, Promises...
 								["description"] = "To obtain this, talk to Budd Nedreck after completing 'Promises, Promises...', click the dialog \"You gave the crew disguises?\", and look in your inventory.\n\n|Cffff0000WARNING: If you complete 'X Marks... Your Doom!' this option is NOT available to you!|r",
-								["timeline"] = { "added 2.3.0", "removed 4.0.1" },	-- Conditionally removed based on quest progress.
+								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },	-- Conditionally removed based on quest progress.
 							}),
 						},
 					}),

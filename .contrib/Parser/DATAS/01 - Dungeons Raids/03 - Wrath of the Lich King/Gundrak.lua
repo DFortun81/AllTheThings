@@ -177,7 +177,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["sourceQuest"] = 13099,	-- Just Checkin'
 					["coord"] = { 70, 21, ZULDRAK },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Drakkari History Tablet
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29840, {	-- For Posterity
 					["qg"] = 55737,	-- Chronicler Bah'Kini
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Drakkari History Tablet
@@ -205,7 +205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29844, {	-- For Posterity
 					["qg"] = 55738,	-- Tol'mar
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Drakkari History Tablet
@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30671,	-- Tol'mar
 					["sourceQuest"] = 13097,	-- Unfinished Business
 					["coord"] = { 70.0, 22.8, ZULDRAK },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gal'darah slain
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29834, {	-- Gal'darah Must Pay
 					["qg"] = 55738,	-- Tol'mar
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gal'darah slain
@@ -249,7 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29835, {	-- Gal'darah Must Pay
 					["qg"] = 55737,	-- Chronicler Bah'Kini
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gal'darah slain
@@ -265,7 +265,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["sourceQuest"] = 13099,	-- Just Checkin'
 					["coord"] = { 70, 21, ZULDRAK },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Drakkari Colossus Fragment
@@ -281,7 +281,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29838, {	-- One of a Kind
 					["qg"] = 55737,	-- Chronicler Bah'Kini
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Drakkari Colossus Fragment
@@ -297,7 +297,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29839, {	-- One of a Kind
 					["qg"] = 55738,	-- Tol'mar
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Drakkari Colossus Fragment
@@ -407,7 +407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif

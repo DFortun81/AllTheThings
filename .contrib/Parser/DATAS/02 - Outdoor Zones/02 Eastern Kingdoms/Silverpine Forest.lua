@@ -114,13 +114,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(226),	-- The Skittering Dark
 				exploration(227),	-- Valgan's Field
-				--[[
-				exploration(926),	-- Bucklebree Farm
-				exploration(235),	-- Fenris Keep
-				exploration(1338),	-- Lordamere Lake
-				exploration(306),	-- South Tide's Run
-				exploration(2398),	-- The Great Sea
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest
@@ -138,7 +131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(654, {	-- The Forsaken Front, Silverpine Forest
 					["cr"] = 46552,	-- Steven Stutzka <Bat Handler>
 					["coord"] = { 50.8, 63.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(10, {	-- The Sepulcher, Silverpine Forest
@@ -1445,7 +1438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(47003, {	-- Bolgaff <The Mad Hunter>
 					["coord"] = { 48.8, 25.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(50814, {	-- Corpsefeeder
 					["coord"] = { 49.2, 68.2, SILVERPINE_FOREST },
@@ -1481,7 +1474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { SHAMAN },
 					["groups"] = {
 						i(208758, {	-- Earthen Rune
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["groups"] = {
 								recipe(410107),	-- Engrave Pants - Way of Earth
@@ -1585,14 +1578,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 48.4, 23.0, SILVERPINE_FOREST },
 						{ 49.4, 35.2, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(46981, {	-- Nightlash
 					["coords"] = {
 						{ 53.0, 28.0, SILVERPINE_FOREST },
 						{ 52.4, 25.2, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(12432, {  -- Old Vicejaw
 					["coords"] = {
@@ -1663,7 +1656,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(212753, {	-- Tortured Soul
 					["provider"] = { "i", 210713 },	-- Tortured Soul
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(208744, {	-- Rune of Shadowbolts
@@ -1680,7 +1673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Wailing Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {	-- Wailing Spirit
 					["coord"] = { 60.2, 74.4, SILVERPINE_FOREST },
 					["groups"] = {
 						i(205905, {	-- Memory of a Devout Champion
@@ -1702,7 +1695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 					["provider"] = { "o", 411674 },	-- Prophecy of a King's Demise
 					["coord"] = { 65.8, 23.5, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -1712,7 +1705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 409131 },	-- Rusty Chest
 					["description"] = "You will need to use Sprint to make the jump to the platform.",
 					["coord"] = { 45.2, 67.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -1950,20 +1943,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
 					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 212598,	-- Recke Grinnes
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210253, {	-- Rot Totem
 					["coord"] = { 45.6, 22.6, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { SHAMAN },
 					["cr"] = 1773,	-- Rot Hide Mystic
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
 					["provider"] = { "i", 210696 },	-- Rot Bane
 					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1943,	-- Raging Rot Hide
@@ -1978,7 +1971,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
 					["coord"] = { 50.8, 61.6, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["cr"] = 1867,	-- Dalaran Apprentice
@@ -1994,7 +1987,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
 					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						1974,	-- Ravenclaw Drudger
@@ -2004,7 +1997,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
 					["coord"] = { 52.8, 27.4, SILVERPINE_FOREST },
 					["description"] = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["crs"] = {
 						1769,	-- Moonrage Whitescalp

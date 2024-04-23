@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4910, {	-- Searing Gorge Quests
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(38257, {	-- Thorium Advance
@@ -76,15 +76,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5629),	-- Thorium Advance
 				exploration(1446),	-- Thorium Point
 				-- #endif
-				--[[
-				exploration(2838),	-- Stonewrought Pass
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(673, {	-- Iron Summit, Searing Gorge
 					["cr"] = 47927,	-- Doug Deepdown <Flight Master>
 					["coord"] = { 41.0, 68.6, SEARING_GORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				fp(74, {	-- Thorium Point, Searing Gorge
 					["cr"] = 2941,	-- Lanie Reed <Gryphon Master>
@@ -1669,7 +1666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(14476, {	-- Pattern: Cindercloth Gloves
 					-- Started dropping again in 8.2.  The new version (167887) is also available from Time-Lost Trader
-					["timeline"] = { "removed 4.0.1", "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, "added 8.2.0" },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },
@@ -1678,7 +1675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(14471, {	-- Pattern: Cindercloth Vest
 					-- Started dropping again in 8.2.  The new version (167886) is also available from Time-Lost Trader
-					["timeline"] = { "removed 4.0.1", "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, "added 8.2.0" },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },

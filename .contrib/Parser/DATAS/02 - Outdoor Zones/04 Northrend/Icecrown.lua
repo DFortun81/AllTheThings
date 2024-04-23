@@ -760,7 +760,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13373, {	-- Fringe Science Benefits
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12813, {	-- From Their Corpses, Rise!
@@ -826,7 +826,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13379, {	-- Green Technology
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13212, {	-- He's Gone to Pieces
@@ -1023,7 +1023,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13383, {	-- Killohertz
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13280, {	-- King of the Mountain (A)
@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13380, {	-- Leading the Charge
 						["qg"] = 32444,	-- Kibli Killohertz
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12995, {	-- Leave Our Mark
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32444,	-- Kibli Killohertz
 						["sourceQuest"] = 13381,	-- Watts My Target
 						["coord"] = { 54.0, 42.8, ICECROWN },
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1447,7 +1447,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["sourceQuest"] = 13376,	-- Total Ohmage: The Valley of Lost Hope!
 						["coord"] = { 54.0, 36.9, ICECROWN },
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["groups"] = {
@@ -1616,7 +1616,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13288,	-- That's Abominable!
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -2088,7 +2088,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["sourceQuest"] = 13374,	-- Amped for Revolt!
 						["coord"] = { 54.0, 36.9, ICECROWN },
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["groups"] = {

@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77670, {	-- Meditation on Undeath
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
 							["coord"] = { 31, 66, TIRISFAL_GLADES },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["races"] = { UNDEAD },
 							["lvl"] = 2,
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1470, {	-- Piercing the Veil
 							["qg"] = 5667,	-- Venya Marthand
 							["coord"] = { 31.0, 66.4, TIRISFAL_GLADES },
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 3.3.0
@@ -383,7 +383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 211809 },	-- Comprehension Primer
 							},
 							["coord"] = { 30.8, 66, TIRISFAL_GLADES },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { MAGE },
 							["races"] = { UNDEAD },
 							["lvl"] = 2,
@@ -466,7 +466,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77672, {	-- The Lost Rune [Warlock]
 							["qg"] = 2126,	-- Maximillion <Warlock Trainer>
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARLOCK },
 							["races"] = { UNDEAD },
 							["lvl"] = 2,
@@ -481,7 +481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77668, {	-- The Lost Rune [Warrior]
 							["qg"] = 2119,	-- Dannal Stern <Warrior Trainer>
 							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { UNDEAD },
 							["lvl"] = 2,
@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77669, {	-- The Scarlet Rune
 							["qg"] = 2122,	-- David Trias <Rogue Trainer>
 							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { UNDEAD },
 							["lvl"] = 2,
@@ -649,7 +649,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(406736, {	-- Lost Stash
 							["coord"] = { 24.7, 59.4, TIRISFAL_GLADES },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(205230, {	-- Rune of Haunting
@@ -927,7 +927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 46.0, 30.6, TIRISFAL_GLADES },
 							{ 52.8, 56.8, TIRISFAL_GLADES },
 						},
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1674,	-- Rot Hide Gnoll
@@ -942,7 +942,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 51.8, 67.4, TIRISFAL_GLADES },
 							{ 79, 26, TIRISFAL_GLADES },
 						},
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1662,	-- Captain Perrine
@@ -951,7 +951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
 						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1545,	-- Vile Fin Muckdweller
@@ -960,7 +960,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cost"] = {
 							{ "i", 208038, 1 },	-- Bottom-Left Map Piece
@@ -971,7 +971,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
 						["coord"] = { 56.6, 44.4, TIRISFAL_GLADES },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1941,	-- Rot Hide Graverobber
@@ -981,7 +981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
 						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1545,	-- Vile Fin Muckdweller
@@ -991,7 +991,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
 						["coord"] = { 37.4, 49.2, TIRISFAL_GLADES },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1935,	-- Tirisfal Farmhand
@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
 						["coord"] = { 32.8, 50.4, TIRISFAL_GLADES },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							1535,	-- Scarlet Warrior
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						208919,	-- Blueheart
 					},
 					["coord"] = { 61.8, 52.0, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1664,7 +1664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
-					["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2449,7 +2449,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 405201 },	-- Shipwreck Cache
 					["cost"] = {{ "i", 208007, 1 }},	-- Shipwreck Cache Key
 					["coord"] = { 66.7, 24.6, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -2459,7 +2459,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 52.9, 54.0, TIRISFAL_GLADES },
 					["cost"] = {{ "i", 208034, 1 }},	-- Tirisfal Treasure Map
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -2469,7 +2469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 404941 },	-- Relic Coffer
 					["cost"] = {{ "i", 208005, 1 }},	-- Agamand Relic Coffer Key
 					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
@@ -2745,7 +2745,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 59.4, 33.6, TIRISFAL_GLADES },
 						{ 56.2, 44.8, TIRISFAL_GLADES },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						1675,	-- Rot Hide Mongrel
@@ -2806,7 +2806,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207974, {	-- Ominous Tome
 					["coord"] = { 46.8, 35.0, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["cr"] = 1522,	-- Darkeye Bonecaster
 				})),
@@ -2844,7 +2844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(207975, {	-- Severed Bat Head
 					["coord"] = { 43.2, 53.0, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1553,	-- Greater Duskbat
@@ -2853,7 +2853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 59.2, 36.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1674,	-- Rot Hide Gnoll
@@ -2863,7 +2863,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
 					["coord"] = { 35.2, 42.0, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1545,	-- Vile Fin Muckdweller

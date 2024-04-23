@@ -975,6 +975,8 @@ local function CreateObject(t, rootOnly)
 		end
 		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
+		elseif t.explorationID then
+			t = app.CreateExploration(t.explorationID, t);
 		elseif t.sourceID then
 			t = app.CreateItemSource(t.sourceID, t.itemID, t);
 		elseif t.encounterID then
@@ -3660,6 +3662,7 @@ app.ThingKeys = {
 	["artifactID"] = true,
 	["azeriteEssenceID"] = true,
 	["followerID"] = true,
+	["explorationID"] = true,
 	["achievementID"] = true,	-- special handling
 	["criteriaID"] = true,	-- special handling
 };
@@ -9490,6 +9493,8 @@ function app:GetDataCache()
 		total = 0,
 		g = {},
 	}, {
+		-- TODO: yuck all of this... should assign the available functionality during startup events
+		-- and use proper methods
 		__index = function(t, key)
 			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
@@ -9505,7 +9510,7 @@ function app:GetDataCache()
 			elseif key == "modeString" then
 				return app.Settings:GetModeString();
 			elseif key == "untilNextPercentage" then
-				if t.total < 1 then
+				if t.total < 1 and app.CurrentCharacter then
 					local primeData = app.CurrentCharacter.PrimeData;
 					if primeData then
 						return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
@@ -12357,6 +12362,8 @@ end;
 customWindowUpdates.list = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
+			-- can only determine a sourceID if there is an itemID on the group
+			if not data.itemID then return true end
 			if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
 			if data._VerifyGroupSourceID > 5 then return true end
 			data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1

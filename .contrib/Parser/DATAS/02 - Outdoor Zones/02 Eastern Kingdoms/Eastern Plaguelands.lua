@@ -856,17 +856,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2619),	-- Thondroril River
 				exploration(2266),	-- Tyr's Hand
 				exploration(2273),	-- Zul'Mashar
-				--[[
-				exploration(1019),	-- The Green Belt
-				exploration(2265),	-- Scarlet Base Camp
-				exploration(2267),	-- The Scarlet Basilica
-				exploration(2269),	-- Browman Mill
-				exploration(2274),	-- Mazra'Alor
-				exploration(2278),	-- Scourgehold
-				exploration(2299),	-- Darrowmere Lake
-				exploration(2625),	-- Eastwall Gate
-				exploration(2626),	-- Terrorweb Tunnel
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn
@@ -4012,7 +4001,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
 					["groups"] = {
 						i(16999, {	-- Royal Seal of Alexis
-							["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3, "removed 4.0.6" },
+							["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3, REMOVED_4_0_6 },
 						}),
 					},
 				}),
@@ -4474,7 +4463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(15756, {	-- Pattern: Runic Leather Headband (RECIPE!)
-							["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+							["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 							["isLimited"] = true,
 						}),
 					},
@@ -4773,11 +4762,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(16242, {	-- Formula: Enchant Chest - Major Mana (RECIPE!)
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9452,	-- Scarlet Enchanter
 				}),
 				i(16222, {	-- Formula: Enchant Shield - Vitality / TBC-10.1.5:Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit (RECIPE!)
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9447,	-- Scarlet Warder
 				}),
 				-- #if AFTER TBC

@@ -1532,7 +1532,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Enchanted Thorium Helm",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16742,
 				}),
 				-- #endif
@@ -1570,7 +1570,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Ornate Mithril Helm",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9980,
 				},
 				{
@@ -1657,7 +1657,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Ornate Mithril Shoulder",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9952,
 				},
 				{
@@ -1758,7 +1758,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Fiery Plate Gauntlets",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16655,
 				},
 				-- #endif
@@ -1772,7 +1772,7 @@ profession(BLACKSMITHING, {
 				}),
 				{
 					["name"] = "Golden Scale Gauntlets",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 11643,
 				},
 				{
@@ -1804,7 +1804,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Ornate Mithril Gloves",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9950,
 				},
 				{
@@ -1830,7 +1830,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Truesilver Gauntlets",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9954,
 				},
 				-- #endif
@@ -1880,12 +1880,12 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Demon Forged Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16667,
 				},
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Enchanted Thorium Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16745,
 				}),
 				-- #endif
@@ -1935,7 +1935,7 @@ profession(BLACKSMITHING, {
 				}),
 				{
 					["name"] = "Ornate Mithril Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9972,
 				},
 				{
@@ -1956,7 +1956,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Runic Breastplate",
-					["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 					["recipeID"] = 16731,
 				},
 				-- #if SEASON_OF_DISCOVERY
@@ -1988,7 +1988,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Truesilver Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9974,
 				},
 				{
@@ -2072,7 +2072,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Enchanted Thorium Leggings",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16744,
 				}),
 				-- #endif
@@ -2098,13 +2098,13 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Orcish War Leggings",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9957,
 					["races"] = HORDE_ONLY,
 				},
 				{
 					["name"] = "Ornate Mithril Pants",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9945,
 				},
 				{
@@ -2179,7 +2179,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Ornate Mithril Boots",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 9979,
 				},
 				{
@@ -2260,7 +2260,7 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Blazing Rapier",
 					["timeline"] = {
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 					["recipeID"] = 16978,
@@ -2335,7 +2335,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Corruption",
-					["timeline"] = { "removed 2.0.1", ADDED_3_0_2, REMOVED_4_0_3, "added 7.1.5" },
+					["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, "added 7.1.5" },
 					["recipeID"] = 16985,
 				},
 				{
@@ -2390,14 +2390,14 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Enchanted Battlehammer",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16973,
 				},
 				-- #endif
 				applyclassicphase(TBC_PHASE_ONE, {
 					["recipeID"] = 34982,	-- Enchanted Thorium Blades
 					["timeline"] = {
-						"added 2.0.1",
+						ADDED_2_0_1,
 						"deleted 5.0.4"
 					},
 				}),
@@ -2544,7 +2544,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Serenity",
-					["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
+					["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
 					["recipeID"] = 16983,
 				},
 				-- #endif
@@ -2570,7 +2570,7 @@ profession(BLACKSMITHING, {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["recipeID"] = 34979,	-- Thick Bronze Darts
 					["timeline"] = {
-						"added 2.0.1",
+						ADDED_2_0_1,
 						"deleted 5.0.4"
 					},
 				}),
@@ -2592,13 +2592,13 @@ profession(BLACKSMITHING, {
 				-- #endif
 				{
 					["name"] = "Volcanic Hammer",
-					["timeline"] = { "removed 4.0.1", "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_1, "added 10.1.7" },
 					["recipeID"] = 16984,
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["recipeID"] = 34981,	-- Whirling Steel Axes
 					["timeline"] = {
-						"added 2.0.1",
+						ADDED_2_0_1,
 						"deleted 5.0.4"
 					},
 				}),
@@ -2631,7 +2631,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}),
-	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -3108,8 +3108,8 @@ profession(BLACKSMITHING, {
 					["name"] = "Great Earthforged Hammer",
 					["recipeID"] = 36137,
 					["timeline"] = {
-						"added 2.0.1.6180",
-						"removed 4.0.1.13287",
+						ADDED_2_0_1,
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3131,8 +3131,8 @@ profession(BLACKSMITHING, {
 					["name"] = "Lavaforged Warhammer",
 					["recipeID"] = 36136,
 					["timeline"] = {
-						"added 2.0.1.6180",
-						"removed 4.0.1.13287",
+						ADDED_2_0_1,
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3146,8 +3146,8 @@ profession(BLACKSMITHING, {
 					["name"] = "Skyforged Great Axe",
 					["recipeID"] = 36135,
 					["timeline"] = {
-						"added 2.0.1.6180",
-						"removed 4.0.1.13287",
+						ADDED_2_0_1,
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3155,8 +3155,8 @@ profession(BLACKSMITHING, {
 					["name"] = "Stoneforged Claymore",
 					["recipeID"] = 36133,
 					["timeline"] = {
-						"added 2.1.0.6692",
-						"removed 4.0.1.13287",
+						ADDED_2_1_0,
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3164,8 +3164,8 @@ profession(BLACKSMITHING, {
 					["name"] = "Stormforged Axe",
 					["recipeID"] = 36134,
 					["timeline"] = {
-						"added 2.0.1.6180",
-						"removed 4.0.1.13287",
+						ADDED_2_0_1,
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3173,8 +3173,8 @@ profession(BLACKSMITHING, {
 					["name"] = "Windforged Rapier",
 					["recipeID"] = 36131,
 					["timeline"] = {
-						"added 2.0.1.6180",
-						"removed 4.0.1.13287",
+						ADDED_2_0_1,
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),

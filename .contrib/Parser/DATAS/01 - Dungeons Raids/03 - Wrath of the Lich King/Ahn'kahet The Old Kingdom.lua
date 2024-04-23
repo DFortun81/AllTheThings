@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13204, {	-- Funky Fungi
 					["provider"] = { "i", 43512 },	-- Ooze-Covered Fungus
-					["timeline"] = { "removed 4.3.0" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["cr"] = 30329,	-- Savage Cave Beast
 					["lvl"] = lvlsquish(73, 73, 15),
 					["groups"] = {
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29825, {	-- Pupil No More
 					["qg"] = 55658,	-- Seer Ixit
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(71, 71, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Elder Nadox slain
@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29826, {	-- Reclaiming Ahn'Kahet
 					["qg"] = 55658,	-- Seer Ixit
 					["sourceQuest"] = 29825,	-- Pupil No More
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(71, 71, 15),
 					["groups"] = {
 						objective(1, {	-- 0/3 Eye of Taldaram slain
@@ -339,7 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif

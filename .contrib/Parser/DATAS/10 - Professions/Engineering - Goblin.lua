@@ -24,7 +24,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Dimensional Ripper - Area 52",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 36954,
 					}),
 					{
@@ -43,7 +43,7 @@ profession(ENGINEERING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Goblin Rocket Launcher",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30563,
 					}),
 					{
@@ -66,7 +66,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "Big Daddy",
-						["timeline"] = { "added 4.0.1.12941" },
+						["timeline"] = { ADDED_4_0_1 },
 						["recipeID"] = 95707,
 					},
 					{
@@ -92,7 +92,7 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Super Sapper Charge",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30560,
 					}),
 					{
@@ -101,7 +101,7 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "The Bigger One",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30558,
 					}),
 					{
@@ -117,12 +117,12 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Foreman's Enchanted Helmet",
-						["timeline"] = { "added 2.1.0.6692" },
+						["timeline"] = { ADDED_2_1_0 },
 						["recipeID"] = 30565,
 					}),
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Foreman's Reinforced Helmet",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30566,
 					}),
 					{

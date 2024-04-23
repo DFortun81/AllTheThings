@@ -594,7 +594,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				--  Weekly Raid Quests
 				q(24874, {	-- Blood Quickening [10]
 					["qg"] = 38551,	-- Alrin the Agile
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -606,7 +606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24879, {	-- Blood Quickening [25]
 					["qg"] = 38551,	-- Alrin the Agile
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -618,7 +618,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24869, {	-- Deprogramming [10]
 					["qg"] = 38471,	-- Infiltrator Minchar
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -630,7 +630,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24875, {	-- Deprogramming [25]
 					["qg"] = 38471,	-- Infiltrator Minchar
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -642,7 +642,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24873, {	-- Residue Rendezvous [10]
 					["qg"] = 38501,	-- Alchemist Adrianna
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -657,7 +657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24878, {	-- Residue Rendezvous[25]
 					["qg"] = 38501,	-- Alchemist Adrianna
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -672,7 +672,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24872, {	-- Respite for a Tormented Soul [10]
 					["qg"] = 38589,	-- Valithria Dreamwalker
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -688,7 +688,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24880, {	-- Respite for a Tormented Soul [25]
 					["qg"] = 38589,	-- Valithria Dreamwalker
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -704,7 +704,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24871, {	-- Securing the Ramparts [10] (A)
 					["qg"] = 38492,	-- Skybreaker Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -716,7 +716,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24876, {	-- Securing the Ramparts [25] (A)
 					["qg"] = 38492,	-- Skybreaker Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -728,7 +728,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24870, {	-- Securing the Ramparts [10] (H)
 					["qg"] = 38491,	-- Kor'kron Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -740,7 +740,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24877, {	-- Securing the Ramparts [25] (H)
 					["qg"] = 38491,	-- Kor'kron Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -770,7 +770,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				["description"] = "Rewarded for completing the Weekly Raid quests.",
 				["groups"] = {
 					i(52006, {	-- Sack of Frosty Treasures
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["sym"] = {
 							{
 								"select", "itemID",

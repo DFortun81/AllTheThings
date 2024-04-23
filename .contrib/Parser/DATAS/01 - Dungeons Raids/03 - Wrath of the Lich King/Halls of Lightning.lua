@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(QUESTS, {
 				q(29862, {	-- Clearing the Way
 					["qg"] = 56027,	-- Stormherald Eljrrin
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/3 Stormforged Mender slain
@@ -171,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13109, {	-- Diametrically Opposed
 					["qg"] = 30105,	-- King Jokkum
 					["coord"] = { 65.4, 60.2, THE_STORM_PEAKS },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Volkhan Defeated
@@ -186,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29860, {	-- Diametrically Opposed
 					["qg"] = 56027,	-- Stormherald Eljrrin
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Volkhan Defeated
@@ -203,14 +203,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30105,	-- King Jokkum
 					["sourceQuest"] = 13047,	-- The Reckoning
 					["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
 				}),
 				q(13108, {	-- Whatever it Takes!
 					["qg"] = 30105,	-- King Jokkum
 					["sourceQuest"] = 13047,	-- The Reckoning
 					["coord"] = { 65.4, 60.2, THE_STORM_PEAKS },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Loken's Tongue
@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29861, {	-- Whatever it Takes!
 					["qg"] = 56027,	-- Stormherald Eljrrin
 					["sourceQuest"] = 29863,	-- Stormherald Eljrrin
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Loken's Tongue
@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif

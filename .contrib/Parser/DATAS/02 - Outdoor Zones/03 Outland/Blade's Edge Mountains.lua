@@ -36,7 +36,7 @@ local OnTooltipForOgrila = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(BLADES_EDGE_MOUNTAINS, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(BLADES_EDGE_MOUNTAINS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Blade's Edge is a level 20-30 questing zone in Outland, filled with splintered mountain peaks, plunging lush valleys, and dusty canyons. Players learn about the presence of the Burning Legion through a mysterious Fel Mask, as well as how Blade's Edge was the original home of the Ogres. Ogri'la is a faction of friendly ogres that players with flying mounts can gain reputation with.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_bladesedgemtns_01",
@@ -265,7 +265,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
@@ -275,7 +275,7 @@ root(ROOTS.Zones, {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
 									ADDED_3_3_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -568,7 +568,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10980,	-- The Book of the Raven
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { NAGRAND },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
@@ -1046,7 +1046,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10992,	-- The Hawk's Essence
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { ZANGARMARSH },
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -1285,7 +1285,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10979,	-- To the Evergrove
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32244, 1 },	-- Seer's Stone (Provided)
@@ -1336,7 +1336,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10990,	-- The Eagle's Essence
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { TEROKKAR_FOREST },
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -1349,7 +1349,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10991,	-- The Falcon's Essence
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { TEROKKAR_FOREST },
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -1359,7 +1359,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 70,
 						["groups"] = {
 							i(32481, {	-- Charm of Swift Flight
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					})),
@@ -1655,7 +1655,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
@@ -1665,7 +1665,7 @@ root(ROOTS.Zones, {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
 									ADDED_3_3_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -1784,20 +1784,20 @@ root(ROOTS.Zones, {
 						},
 						["isDaily"] = true,
 						["timeline"] = {
-							"added 2.2.0.7272",
-							"removed 4.1.0.7272",
+							ADDED_2_2_0,
+							REMOVED_4_1_0,
 						},
 						["groups"] = {
 							i(32941, {	-- Corruptor's Signet
 								["timeline"] = {
-									"added 2.2.0.7272",
-									"removed 4.1.0.7272",
+									ADDED_2_2_0,
+									REMOVED_4_1_0,
 								},
 							}),
 							i(32942, {	-- Ring of the Overseer
 								["timeline"] = {
-									"added 2.2.0.7272",
-									"removed 4.1.0.7272",
+									ADDED_2_2_0,
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -1839,8 +1839,8 @@ root(ROOTS.Zones, {
 				n(REWARDS, {
 					i(32643, {	-- Darkrune
 						["timeline"] = {
-							"added 2.2.0.7091",
-							"removed 4.1.0.7272",
+							ADDED_2_2_0,
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							 { "i", 33784, 5 },	-- Darkrune Fragment
@@ -1850,8 +1850,8 @@ root(ROOTS.Zones, {
 						i(32569),	-- Apexis Shard
 						i(33784, {	-- Darkrune Fragment
 							["timeline"] = {
-								"added 2.2.0.7091",
-								"removed 4.1.0.7272",
+								ADDED_2_2_0,
+								REMOVED_4_1_0,
 							},
 						}),
 					}),

@@ -353,7 +353,7 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	i(165717),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 	i(165718),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
 	title(96, {	-- %s the Flawless Victor
-		["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 		["collectible"] = false,
 	}),
 	i(182184, {	-- Wyvern Soul (SS!)

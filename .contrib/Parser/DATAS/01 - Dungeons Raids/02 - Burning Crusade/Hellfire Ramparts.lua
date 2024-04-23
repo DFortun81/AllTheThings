@@ -14,21 +14,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(9587,  {	-- Dark Tidings [Alliance]
 					["provider"] = { "i", 23890 },	-- Ominous Letter
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(9588,  {	-- Dark Tidings [Horde]
 					["provider"] = { "i", 23892 },	-- Ominous Letter
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29529, {	-- Demons in the Citadel [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29530, {	-- Demons in the Citadel [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29594, {	-- Hitting Them Where It Hurts [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29593, {	-- Hitting Them Where It Hurts [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -73,20 +73,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29543, {	-- Invading the Citadel [Alliance]
 					["qg"] = 19309,	-- Sergeant Altumus
 					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29542, {	-- Invading the Citadel [Horde]
 					["qg"] = 19256,	-- Sergeant Shatterskull
 					["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29528, {	-- War on the Ramparts [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29527, {	-- War on the Ramparts [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 17557,	-- Lieutenant Chadwick
 					["sourceQuest"] = 10142,	-- The Path of Anguish
 					["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 17493,	-- Stone Guard Stok'ton
 					["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
 					["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {

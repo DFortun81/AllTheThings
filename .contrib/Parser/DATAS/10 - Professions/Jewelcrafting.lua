@@ -817,7 +817,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 
 -- #if ANYCLASSIC
-local REMOVED_WITH_CATA = "removed 4.0.1";
+local REMOVED_WITH_CATA = REMOVED_4_0_1;
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 	expansion(EXPANSION.CLASSIC, {
 		filter(FINGER_F, {
@@ -827,7 +827,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			},
 			{
 				["name"] = "Blazing Citrine Ring",
-				["timeline"] = { "added 2.0.1" },
+				["timeline"] = { ADDED_2_0_1 },
 				["recipeID"] = 25617
 			},
 			{

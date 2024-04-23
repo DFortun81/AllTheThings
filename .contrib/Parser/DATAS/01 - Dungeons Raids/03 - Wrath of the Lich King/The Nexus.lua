@@ -332,7 +332,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif
@@ -428,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							}),
 							ach(2036),	-- Intense Cold
 							i(41794, {	-- Design: Deadly Monarch Topaz
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							-- #if AFTER 7.3.5
 							i(35595),	-- Glacier Sharpened Vileblade (7.3.5 - Used to be only Normal Mode)

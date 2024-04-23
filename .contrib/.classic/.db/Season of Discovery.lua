@@ -162,7 +162,7 @@ local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 		cn = "本赛季带来了 25 级的初始等级上限和新的 25 级终局游戏，包括 10 名玩家的 Blackfathom Deeps 突袭，其中包含新的机制、新的和重新设计的 Boss 来挑战玩家的战术和策略，以及新鲜的奖励。",
 	},
 });
-root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {
+root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 	n(FACTIONS, {
 		faction(2586, {	-- Azeroth Commerce Authority
 			["OnUpdate"] = OnUpdateFor_ACA_SDL,
@@ -701,7 +701,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(209608, {	-- Delwynna <Monster Hunter>
 				["coord"] = { 64.0, 22.0, DARNASSUS },
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["classes"] = { WARRIOR },
 				["races"] = { NIGHTELF },
 				["groups"] = {
@@ -718,7 +718,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(208619, {	-- Dorac Graves <Tactical Surgeon>
 				["coord"] = { 48.0, 70.6, UNDERCITY },
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["classes"] = { WARRIOR },
 				["races"] = { UNDEAD },
 				["groups"] = {
@@ -735,7 +735,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(208652, {	-- Junni Steelpass <Monster Hunter>
 				["coord"] = { 46.6, 53.6, DUN_MOROGH },
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["classes"] = { WARRIOR },
 				["races"] = { DWARF, GNOME },
 				["groups"] = {
@@ -752,7 +752,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(207637, {	-- Vateya Timberhoof <Monster Hunter>
 				["coord"] = { 46.4, 61.8, MULGORE },
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["classes"] = { WARRIOR },
 				["races"] = { TAUREN },
 				["groups"] = {
@@ -769,7 +769,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(207957, {	-- Vahi Bonesplitter <Monster Hunter>
 				["coord"] = { 53.0, 43.6, DUROTAR },
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["classes"] = { WARRIOR },
 				["races"] = { ORC, TROLL },
 				["groups"] = {
@@ -786,7 +786,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(203226, {	-- Viktoria Woods <Monster Hunter>
 				["coord"] = { 69.8, 50.0, STORMWIND_CITY },
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 				["classes"] = { WARRIOR },
 				["races"] = { HUMAN },
 				["groups"] = {
@@ -1806,7 +1806,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 }))));
 
 root(ROOTS.NeverImplemented, {
-	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {
+	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		i(211445),	-- Barbaric Recurve
 		i(211443),	-- Blade of Rage
 		i(211444),	-- Summoner's Cloak

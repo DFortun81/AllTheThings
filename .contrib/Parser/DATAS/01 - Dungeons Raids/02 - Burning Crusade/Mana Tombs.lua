@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(250, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Mana Tombs
+	inst(250, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Mana Tombs
 		["lore"] = "Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",
 		-- #if BEFORE MOP
 		["zone-text-names"] = { [[~DUNGEON_FLOOR_MANATOMBS1]] },	-- Mana Tombs
@@ -15,7 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29583, {	-- Eckert the Mad
 					["qg"] = 21400,	-- Eckert
 					["coord"] = { 57.6, 53.6, TEROKKAR_FOREST },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 64, 15),
@@ -23,14 +23,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29582, {	-- Grek's Crazy Night
 					["qg"] = 19606,	-- Grek
 					["coord"] = { 49.8, 45.3, TEROKKAR_FOREST },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 64, 15),
 				}),
 				q(29574, {	-- Intriguing Specimens
 					["qg"] = 54694,	-- Mamdy the "Ologist"
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Pandemonius' Essence
@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ "o", 183877 },	-- Ethereal Transporter Control Panel
 					},
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
@@ -81,7 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29573, {	-- Safety is Job One
 					["qg"] = 54692,	-- Artificer Morphalius
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					},
 				}),
-				q(10218, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
+				q(10218, bubbleDown({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
 					["providers"] = {
 						{ "n",  19671 },	-- Cryo-Engineer Sha'heen
 						{ "o", 183877 },	-- Ethereal Transporter Control Panel
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(32092),	-- The Eye of Haramad
 					},
 				}),
-				q(10165, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Undercutting the Competition [Rewards also removed... :(]
+				q(10165, bubbleDown({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Undercutting the Competition [Rewards also removed... :(]
 					["qg"] = 19674,	-- Nexus-Prince Haramad
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 64, 15),
@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				})),
 				q(29575, {	-- Undercutting the Competition
 					["qg"] = 54692,	-- Artificer Morphalius
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
@@ -206,7 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						-- #endif
 						i(72126, {	-- Pandemonius' Essence
-							["timeline"] = { "added 4.3.0.14942" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27822),	-- Crystal Band of Valor
 						-- #endif
 						i(72127, {	-- Tavarok's Heart
-							["timeline"] = { "added 4.3.0.14942" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -335,7 +335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							}),
 							-- #endif
 							i(72126, {	-- Pandemonius' Essence
-								["timeline"] = { "added 4.3.0.14942" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),
@@ -361,7 +361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							i(27822),	-- Crystal Band of Valor
 							i(72127, {	-- Tavarok's Heart
-								["timeline"] = { "added 4.3.0.14942" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),

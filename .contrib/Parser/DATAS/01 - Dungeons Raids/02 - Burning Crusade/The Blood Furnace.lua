@@ -15,7 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9607,  {	-- Heart of Rage [Alliance]
 					["qg"] = 17479,	-- Gunny
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					-- #if BEFORE 4.3.0.14732
@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9608,  {	-- Heart of Rage [Horde]
 					["qg"] = 17558,	-- Caza'rez
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					-- #if BEFORE 4.3.0.14732
@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29539, {	-- Heart of Rage [Alliance]
 					["qg"] = 54629,	-- Gunny
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29536, {	-- Heart of Rage [Horde]
 					["qg"] = 54636,	-- Caza'rez
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29538, {	-- Make Them Bleed [Alliance]
 					["qg"] = 54629,	-- Gunny
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29535, {	-- Make Them Bleed [Horde]
 					["qg"] = 54636,	-- Caza'rez
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -92,7 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29537, {	-- Mind the Gap
 					["qg"] = 54636,	-- Caza'rez
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -109,7 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 17479,	-- Gunny
 					["sourceQuest"] = 9587,	-- Dark Tidings [Alliance]
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -128,7 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 17558,	-- Caza'rez
 					["sourceQuest"] = 9588,	-- Dark Tidings [Horde]
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -145,7 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29540, {	-- The Breaker
 					["qg"] = 54629,	-- Gunny
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -186,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						-- #endif
 						i(73200, {	-- Fel Infusion Rod
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -299,7 +299,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							}),
 							-- #endif
 							i(73200, {	-- Fel Infusion Rod
-								["timeline"] = { "added 4.3.0.14732" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),

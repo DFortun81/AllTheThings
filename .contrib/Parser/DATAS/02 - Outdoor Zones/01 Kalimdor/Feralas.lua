@@ -99,10 +99,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			explorationHeader({
 				exploration(1099),	-- Camp Mojache
-				exploration(5036, {["timeline"] = { "added 4.0.1" }}),	-- Darkmist Ruins
+				exploration(5036, {["timeline"] = { ADDED_4_0_1 }}),	-- Darkmist Ruins
 				exploration(2577),	-- Dire Maul
 				exploration(1111),	-- Dream Bough
-				exploration(5072, {["timeline"] = { "added 4.0.1" }}),	-- Feathermoon Stronghold
+				exploration(5072, {["timeline"] = { ADDED_4_0_1 }}),	-- Feathermoon Stronghold
 				exploration(1105),	-- Feral Scar Vale
 				exploration(1106),	-- Frayfeather Highlands
 				exploration(1103),	-- Gordunni Outpost
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				exploration(1113),	-- Oneiros
 				-- #endif
-				exploration(1116, {["timeline"] = { "added 4.0.1" }}),	-- Ruins of Feathermoon
+				exploration(1116, {["timeline"] = { ADDED_4_0_1 }}),	-- Ruins of Feathermoon
 				exploration(2522),	-- Ruins of Isildien
 				exploration(1114),	-- Ruins of Ravenwind
 				-- #if BEFORE CATA
@@ -123,24 +123,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1108),	-- The Forgotten Coast
 				exploration(1119),	-- The Twin Colossals
 				exploration(1101),	-- The Writhing Deep
-				exploration(2520, {["timeline"] = { "added 4.0.1" }}),	-- Woodpaw Den
+				exploration(2520, {["timeline"] = { ADDED_4_0_1 }}),	-- Woodpaw Den
 				exploration(2519),	-- Woodpaw Hills
-				--[[
-				exploration(1109),	-- East Pillar
-				exploration(1136),	-- High Wilderness
-				exploration(1107),	-- Idlewind Lake
-				exploration(1112),	-- Jademir Lake
-				exploration(2518),	-- Lariss Pavilion
-				exploration(1104),	-- Mok'Gordun
-				exploration(1115),	-- Rage Scar Hold
-				exploration(1117),	-- Ruins of Solarsal
-				exploration(3117),	-- Shalzaru's Lair
-				exploration(489),	-- Thalanaar
-				exploration(2323),	-- The Veiled Sea
-				exploration(2521),	-- Verdantis River
-				exploration(1110),	-- West Pillar
-				exploration(1102),	-- Wildwind Lake
-				]]--
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(FACTIONS, {
@@ -1350,10 +1334,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(34416, {	-- Gloves of the Dune
-							["timeline"] = { "added 2.3.0.7382", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 						}),
 						i(34417, {	-- Marauder's Handwraps
-							["timeline"] = { "added 2.3.0.7382", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -2734,7 +2718,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.2, 78.8, FERALAS },
 						{ 48.6, 79.0, FERALAS },
 					},
-					["timeline"] = { "added 4.3.0.15050" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						i(21024),	-- Chimaerok Tenderloin
 					},

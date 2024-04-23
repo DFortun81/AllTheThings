@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local REMOVED_WITH_RETURN_TO_KARAZHAN = { "removed 7.1.0.1233" };
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(745, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Karazhan (Raid)
+	inst(745, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
 		-- #if BEFORE LEGION
 		["zone-text-areaID"] = 2562,	-- Karazhan
@@ -634,7 +634,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			})),
 			n(VENDORS, {
 				n(16388, {	-- Koren
-					["description"] = "This vendor is located in the Livery Stables.",
+					["description"] = "This vendor is located in the Livery Stables, but will only serve characters that are at least Honoured with The Violet Eye.",
+					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored
 					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
 						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)
@@ -654,7 +655,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 						}),
 						-- #if AFTER 6.0.2
-						r(27920,{["timeline"] = {"added 2.0.1","removed 6.0.2"}}),	 -- Striking
+						r(27920,{["timeline"] = {ADDED_2_0_1,"removed 6.0.2"}}),	 -- Striking
 						-- #endif
 					},
 				}),

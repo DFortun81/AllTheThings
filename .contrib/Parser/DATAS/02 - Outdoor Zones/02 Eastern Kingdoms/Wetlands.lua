@@ -213,15 +213,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(1021),	-- Thelgen Rock
 				exploration(118),	-- Whelgar's Excavation Site
-				--[[
-				exploration(298),	-- Baradin Bay
-				exploration(2104),	-- Deepwater Tavern
-				exploration(299),	-- Menethil Bay
-				exploration(2103),	-- Menethil Keep
-				exploration(881),	-- Thandol Span
-				exploration(2402),	-- The Forbidding Sea
-				exploration(2365),	-- The Great Sea
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(553, {	-- Dun Modr, Wetlands
@@ -1760,7 +1751,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 13.6, 38.6, WETLANDS },
 						{ 15.0, 39.0, WETLANDS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 			}),
 			prof(SKINNING, {
@@ -1789,7 +1780,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 210499 },	-- Marshroom
 					},
 					["coord"] = { 31, 18, WETLANDS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["groups"] = {
 						recipe(424718),	-- Engrave Pants - Starsurge
@@ -1816,7 +1807,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(209874, {	-- Dragonslayer's Lance
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["cost"] = 7500,	-- 75s
 						})),
@@ -1937,7 +1928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield
-							["timeline"] = { "added 2.0.1", "removed 4.1.0" },	-- Moved to Trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_1_0 },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
 					},

@@ -1223,7 +1223,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 		-- #endif
 			n(ZONE_DROPS, {
 				i(16244, {	-- Formula: Enchant Gloves - Greater Strength
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9198,	-- Spirestone Mystic
 				}),
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
@@ -1274,7 +1274,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 				["groups"] = {
 					i(9214, {	-- Grimoire of Inferno
-						["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
+						["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						["classes"] = { WARLOCK },
 						-- #if BEFORE 4.0.1
 						["spellID"] = 1122,	-- Inferno
@@ -1368,7 +1368,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					-- #if BEFORE 4.0.1
 					i(12654, {	-- Doomshot
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					-- #endif
 				},
@@ -1392,7 +1392,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
-						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
+						["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
 					}),
 					i(13177),	-- Talisman of Evasion
 					i(13179),	-- Brazecore Armguards
@@ -1403,14 +1403,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #if BEFORE MOP
 					i(28972, {	-- Flightblade Throwing Axe [TBC]
 						["timeline"] = {
-							"added 2.0.1.5678",
+							ADDED_2_0_1,
 							"removed 5.0.4"
 						},
 					}),
 					i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
 						["timeline"] = {
 							"added 1.11.1.5462",
-							"removed 2.0.1.5678"
+							REMOVED_2_0_1
 						},
 					}),
 					-- #endif
@@ -1504,7 +1504,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 10596,	-- Mother Smolderweb
 				["groups"] = {
 					i(68673, {	-- Smolderthorn Hatchling (PET!)
-						["timeline"] = { "added 4.0.6.13596" },
+						["timeline"] = { ADDED_4_0_6 },
 					}),
 					i(13183),	-- Venomspitter
 					i(151414, {	-- Arcanophile's Greatcloak
@@ -1530,7 +1530,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18784, {	-- Top Half of Advanced Armorsmithing: Volume III
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(13258),	-- Slaghide Gauntlets
 					applyclassicphase(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
@@ -1633,7 +1633,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
-						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
+						["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
 					}),
 					i(13163),	-- Relentless Scythe
 					i(13161),	-- Trindlehaven Staff
@@ -1680,7 +1680,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 					}),
 					applyclassicphase(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 						-- #if BEFORE 4.0.1
 						["spellID"] = 31016,	-- Eviscerate IX
@@ -1715,7 +1715,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_4_0_3 },
 						})),
 						i(17322, {	-- Eye of the Emberseer
-							["timeline"] = { "removed 3.0.8" },
+							["timeline"] = { REMOVED_3_0_8 },
 						}),
 						i(12929, {	-- Emberfury Talisman
 							["timeline"] = { "removed 6.0.2" },
@@ -1733,7 +1733,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						applyclassicphase(PHASE_SIX, i(23320, {	-- Tablet of Flame Shock VI
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 29228,	-- Flame Shock VI
 							["classes"] = { SHAMAN },
@@ -1806,7 +1806,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
 						i(18779, {	-- Bottom Half of Advanced Armorsmithing: Volume I
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(12848, {	-- Unforged Rune Covered Breastplate
 							-- #if BEFORE 4.0.3
@@ -1888,7 +1888,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 							["isBounty"] = true,
 							-- #endif
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(16733, {	-- Spaulders of Valor
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1917,7 +1917,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
 						applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 31018,	-- Ferocious Bite V
 							["classes"] = { DRUID },

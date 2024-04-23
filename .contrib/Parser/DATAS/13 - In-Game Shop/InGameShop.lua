@@ -79,7 +79,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(78924, {	-- Heart of the Aspects (MOUNT!)
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		i(166774, {	-- Hogrus, Swine of Good Fortune (MOUNT!)
 			["timeline"] = { "added 8.1.0.29139" },
@@ -189,7 +189,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 				i(112324),	-- Nightmarish Hitching Post (TOY!)
 		})),
 		i(69846, {	-- Winged Guardian (MOUNT!)
-			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { ADDED_4_1_0, "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 	})),
 	filter(BATTLE_PETS, {	-- AVAILABLE --
@@ -239,7 +239,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_7_3_0 },
 		}),
 		i(78916, {	-- Soul of the Aspects (PET!)
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		i(147900, {	-- Twilight (PET!)
 			["timeline"] = { ADDED_7_3_0 },
@@ -256,16 +256,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.0.1.27602", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(70099, {	-- Cenarion Hatchling (PET!)
-			["timeline"] = { "added 4.1.0.13850", "removed 8.3.0" },
+			["timeline"] = { ADDED_4_1_0, "removed 8.3.0" },
 		}),
 		pet(2623, {	-- Dottie (PET!)
 			["timeline"] = { "added 8.3.0.33062", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)
-			["timeline"] = { "added 4.1.0.13793", "removed 4.2.0.14313" },
+			["timeline"] = { ADDED_4_1_0, REMOVED_4_2_0 },
 		}),
 		i(72068, {	-- Guardian Cub (PET!)
-			["timeline"] = { "added 4.2.0.14313", "removed 5.4.8" },
+			["timeline"] = { ADDED_4_2_0, "removed 5.4.8" },
 		}),
 		i(49662, {	-- Gryphon Hatchling (PET!)
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",

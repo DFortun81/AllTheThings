@@ -209,19 +209,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				exploration(2897),	-- Zoram'gar Outpost
 				-- #endif
-				--[[
-				exploration(2357),	-- Bloodtooth Camp
-				exploration(436),	-- Demon Fall Ridge
-				exploration(433),	-- Falfarren River
-				exploration(2637),	-- Kargathia Keep
-				exploration(2457),	-- Nightsong Woods
-				exploration(3319),	-- Silverwing Grove
-				exploration(879), 	-- Southfury River
-				exploration(427),	-- The Shady Nook
-				exploration(1276),	-- The Talondeep Path
-				exploration(2325),	-- The Veiled Sea
-				exploration(429),	-- Xavian
-				]]--
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(FACTIONS, {
@@ -249,7 +236,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 85.1, 43.5, ASHENVALE },
 						-- #endif
 					},
-					["timeline"] = { "added 2.2.0.7272" },
+					["timeline"] = { ADDED_2_2_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(350, {	-- Hellscream's Watch, Ashenvale
@@ -331,7 +318,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
 					},
 					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["groups"] = {
 						i(211813, {	-- Silverwing Sentinel Charm
@@ -368,7 +355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
 					},
 					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 				})),
 			})),
@@ -384,7 +371,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9533, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
 					["coord"] = { 34.8, 49.6, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
@@ -412,7 +399,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9517, {	-- A Shameful Waste
 					["qg"] = 17291,	-- Architect Nemos
 					["coord"] = { 86.8, 44.8, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -444,7 +431,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n",   3663 },	-- Delgren the Purifier
 					},
 					["coord"] = { 26.2, 38.6, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DARKSHORE },
 					["classes"] = { PALADIN },
 				})),
@@ -464,7 +451,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 78088,	-- A Strange Artifact
 					["coord"] = { 26.2, 38.6, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PALADIN },
 				})),
@@ -489,7 +476,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9518, {	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
 					["coord"] = { 86.0, 44.4, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -752,7 +739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 42.0, 67.0, ASHENVALE },
 					["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 					["lvl"] = 18,
@@ -903,7 +890,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9516, {	-- Destroy the Legion [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
 					["coord"] = { 86.5, 44.2, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 					["groups"] = {
@@ -927,7 +914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9534, {	-- Destroy the Legion [Horde]
 					["qg"] = 17355,	-- Valusha
 					["coord"] = { 73.2, 60.4, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 					["groups"] = {
@@ -957,7 +944,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 23777 },	-- Diabolical Plans
 						{ "i", 23780 },	-- Diabolical Plans
 					},
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 27,
 				}),
@@ -975,7 +962,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 23797 },	-- Diabolical Plans
 						{ "i", 23798 },	-- Diabolical Plans
 					},
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 27,
 				}),
@@ -1015,7 +1002,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						78133,	-- Dragonslayer's Shield
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["groups"] = {
 						--[[
@@ -1039,7 +1026,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { SHADOWFANG_KEEP },
 					["classes"] = { WARRIOR },
 				})),
@@ -1049,7 +1036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { WETLANDS },
 					["classes"] = { WARRIOR },
 				})),
@@ -1059,7 +1046,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 210995 },	-- Alonso <Knight Errant>
 					},
 					["coord"] = { 43.4, 70.4, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["classes"] = { WARRIOR },
 				})),
@@ -1602,7 +1589,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 213444,	-- Mysterious Traveler
 					["sourceQuest"] = 78681,	-- The Conjuring
 					["coord"] = { 79.0, 80.2, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
@@ -1654,13 +1641,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(24119, {	-- Band of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24120, {	-- Seal of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24118, {	-- Signet of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(45476),	-- Seeker's Fel Spear (QI!)
 						i(45477),	-- Gorgannon's Flaming Blade (QI!)
@@ -1670,7 +1657,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
 					["sourceQuest"] = 9520,	-- Diabolical Plans [Alliance]
 					["coord"] = { 86.5, 44.2, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 27,
 					["groups"] = {
@@ -1683,13 +1670,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 77.8, 83.6, ASHENVALE },
 						}),
 						i(24119, {	-- Band of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24120, {	-- Seal of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24118, {	-- Signet of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
 				}),
@@ -1701,13 +1688,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(24119, {	-- Band of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24120, {	-- Seal of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24118, {	-- Signet of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
 				}),
@@ -1715,7 +1702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 17355,	-- Valusha
 					["sourceQuest"] = 9535,	-- Diabolical Plans [Horde]
 					["coord"] = { 73.2, 60.4, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 27,
 					["groups"] = {
@@ -1728,13 +1715,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 77.8, 83.6, ASHENVALE },
 						}),
 						i(24119, {	-- Band of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24120, {	-- Seal of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(24118, {	-- Signet of Argas
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
 				}),
@@ -2108,7 +2095,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9526, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl <Ancient of War>
 					["coord"] = { 84.2, 45.6, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -2141,7 +2128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 50.5, 72.0, ASHENVALE },
 					["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["lvl"] = 18,
@@ -2163,14 +2150,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 23778 },	-- Sentinel Luciel's Report
 					},
 					["coord"] = { 86.0, 44.4, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 21,
 				}),
 				q(9428, {	-- Report to Spintertree Post
 					["qg"] = 17098,	-- Ambassador Dawnsinger
 					["coord"] = { 71.0, 68.0, ORGRIMMAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 					["lvl"] = 18,
 				}),
@@ -2256,7 +2243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 78092,	-- It Must Be Destroyed
 					["coord"] = { 89.4, 77, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["groups"] = {
 						recipe(410014, {	-- Engrave Chest - Divine Storm
@@ -2481,7 +2468,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 212334,	-- Dead Twilight Cultist
 					["coord"] = { 17.3, 26.7, ASHENVALE },
 					["cost"] = {{ "i", 210708, 1 }},	-- Elixir of Coalesced Regret
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateForCrafter]],
 				})),
 				-- #endif
@@ -2763,7 +2750,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9519, {	-- The Lost Chalice
 					["qg"] = 3848,	-- Kayneth Stillwind
 					["coord"] = { 85.3, 44.7, ASHENVALE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
@@ -3618,7 +3605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20855, {	-- Design: Wicked Moonstone Ring
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength (RECIPE!)
@@ -3754,7 +3741,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 14, 19.8, ASHENVALE },	-- Middle Crystal
 						{ 13.5, 15.8, ASHENVALE },	-- Northern Crystal
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["groups"] = {
 						recipe(401757),	-- Engrave Gloves - Arcane Blast
@@ -3767,14 +3754,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["description"] = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
 					["coord"] = { 87, 43.2, ASHENVALE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 				})),
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
 				i(23777, {	-- Diabolical Plans [Alliance]
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						11697,	-- Mannoroc Lasher
@@ -3783,7 +3770,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(23797, {	-- Diabolical Plans [Horde]
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						11697,	-- Mannoroc Lasher
@@ -3818,10 +3805,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(78343, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
-					["timeline"] = { "added 4.3.0" },
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(11151, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
-					["timeline"] = { "removed 4.3.0", "deleted 7.0.1" },	-- Replaced by BOP Version
+					["timeline"] = { REMOVED_4_3_0, "deleted 7.0.1" },	-- Replaced by BOP Version
 					["crs"] = {
 						3834,	-- Crazed Ancient
 						3919,	-- Withered Ancient
@@ -3829,7 +3816,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209840, {	-- Gnarled Wand of Wild Magic
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 209841, 1 },	-- Wild Magic Essence
@@ -3867,7 +3854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 7.2, 13.2, DARKSHORE },
 						{ 14.0, 26.6, DARKSHORE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["crs"] = {
 						3715,	-- Wrathtail Sea Witch
@@ -3879,7 +3866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 33.6, 38.8, ASHENVALE },
 						{ 54.6, 63.0, ASHENVALE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
 						3748,	-- Foulweald Shaman

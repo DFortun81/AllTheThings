@@ -45,23 +45,23 @@ local JEWELCRAFTING_PATTERNS = {
 local VENDOR_GEMS = {
 	i(28458),	-- Bold Tourmaline (Both)
 	i(28462, {	-- Bright Tourmaline (TBC) / Delicate Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28459),	-- Delicate Tourmaline (Both)
 	i(28461),	-- Runed Tourmaline (TBC) / Brilliant Tourmaline (Cata+)
 	i(28460, {	-- Teardrop Tourmaline (TBC) / Brilliant Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28465, {	-- Lustrous Zircon (TBC) / Sparkling Zircon (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28463),	-- Solid Zircon (Both)
 	i(28464),	-- Sparkling Zircon (Both)
 	i(28466, {	-- Brilliant Amber (TBC) / Brilliant Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28469, {	-- Gleaming Amber (TBC) / Smooth Amber (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28468),	-- Rigid Amber (Both)
 	i(28467),	-- Smooth Amber (Both)
@@ -74,7 +74,7 @@ bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
 -- #endif
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Hellfire Peninsula is intended to be the first questing zone players hit after passing through The Dark Portal. It is a scorched zone, the site of many former battles and the massacre of the Draenei. Players are introduced early on to the threat of the Burning Legion at The Legion Front, further learning about Magtheridon's creation of the corrupted Fel Orcs and the sacrifices made in past battles on Draenor. Players also begin to learn about Draenic and Orcish culture in quest hubs in the western peninsula.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_hellfirepeninsula_01",
@@ -3133,7 +3133,7 @@ root(ROOTS.Zones, {
 							}),
 							i(63697, {	-- Bold Blood Garnet
 								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
-								["timeline"] = { "added 4.0.1.12941" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(27777, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
 								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
@@ -3310,7 +3310,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(23999),	-- Honor Hold Tabard
 							i(30622, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = ALLIANCE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
@@ -3333,7 +3333,7 @@ root(ROOTS.Zones, {
 								-- #endif
 							}),
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29196, {	-- Glyph of Fire Warding
 								["timeline"] = { "removed 5.0.4" },
@@ -3352,7 +3352,7 @@ root(ROOTS.Zones, {
 							i(25825),	-- Footman's Longsword
 							i(22531),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
 							i(22547),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
-							i(33150, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
+							i(33150, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(29166),	-- Hellforged Halberd
 							i(29156),	-- Honor's Call
 							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
@@ -3406,7 +3406,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(24004),	-- Thrallmar Tabard
 							i(30637, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = HORDE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
@@ -3435,7 +3435,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29168),	-- Ancestral Band
 							i(29167),	-- Blackened Spear
@@ -3449,7 +3449,7 @@ root(ROOTS.Zones, {
 							i(25824),	-- Farseer's Band
 							i(24000),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
 							i(24003),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
-							i(33151, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
+							i(33151, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(25823),	-- Grunt's Waraxe
 							applyclassicphase(TBC_PHASE_TWO, i(35364)),	-- Kodohide Spaulders
 							i(29152),	-- Marksman's Bow
@@ -3489,7 +3489,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -3530,7 +3530,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
 							}),
 						},
 					}),
@@ -3543,7 +3543,7 @@ root(ROOTS.Zones, {
 							}),
 							i(63696, {	-- Bold Blood Garnet
 								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
-								["timeline"] = { "added 4.0.1.12941" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(27812, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
 								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold

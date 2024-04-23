@@ -2896,13 +2896,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(986),	-- Zalashji's Den
 				-- #endif
 				exploration(978),	-- Zul'Farrak
-				--[[
-				exploration(991),	-- Gunstan's Post
-				exploration(2317),	-- South Seas
-				exploration(2857),	-- The Rumble Cage
-				exploration(989),	-- Uldum
-				exploration(988),	-- Wavestrider Beach
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(369, {	-- Gadgetzan
@@ -2928,7 +2921,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(531, {	-- Dawnrise Expedition, Tanaris
 					["cr"] = 41215,	-- Raina Sunglide <Flight Master>
 					["coord"] = { 33.2, 77.2, TANARIS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(39, {	-- Gadgetzan, Tanaris
@@ -2952,7 +2945,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(532, {	-- Gunstan's Dig, Tanaris
 					["cr"] = 40827,	-- Thurda <Flight Master>
 					["coord"] = { 40, 77.4, TANARIS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -3620,7 +3613,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10891, {	-- Imperial Plate Armor [A]
 					["qg"] = 11145,	-- Myolor Sunderfury
 					["coord"] = { 52.0, 41.4, IRONFORGE },
-					["timeline"] = { "added 2.5.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
@@ -3630,7 +3623,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10892, {	-- Imperial Plate Armor [H]
 					["qg"] = 11176,	-- Krathok Moltenfist
 					["coord"] = { 80.0, 23.3, ORGRIMMAR },
-					["timeline"] = { "added 2.5.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
@@ -4943,7 +4936,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 36.6, 42.6, TANARIS },
 						{ 36.8, 46.6, TANARIS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(44759, {	-- Andre Firebeard
 					["coord"] = { 69.6, 56.8, TANARIS },
@@ -5008,7 +5001,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 53.0, 70.4, TANARIS },
 						{ 50.6, 72.6, TANARIS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(39186, {	-- Hellgazer
 					["coord"] = { 40.8, 41.2, TANARIS },
@@ -5180,7 +5173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 4.0.3
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 					-- #endif
-					["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 				}),
 				n(34090, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 					-- #if BEFORE 4.0.3.13277

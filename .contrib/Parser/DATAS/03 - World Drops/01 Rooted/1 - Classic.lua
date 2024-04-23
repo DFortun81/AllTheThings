@@ -104,25 +104,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4689),	-- Hunting Cloak
 		i(9890),	-- Huntsman's Cape
 		i(68762, {	-- Imbued Cadet Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68748, {	-- Imbued Disciple's Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68759, {	-- Imbued Gypsy Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68743, {	-- Imbued Infantry Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68744, {	-- Imbued Pioneer Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68746, {	-- Imbued Primal Cape
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68756, {	-- Imbued Simple Cape
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(15661),	-- Impenetrable Cloak
 		i(6432),	-- Imperial Cloak
@@ -609,16 +609,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3798),	-- Interlaced Shoulderpads
 		i(3799),	-- Interlaced Vest
 		i(68754, {	-- Imbued Disciple's Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68749, {	-- Imbued Disciple's Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68755, {	-- Imbued Disciple's Gloves
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68747, {	-- Imbued Disciple's Sash
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(8246),	-- Imperial Red Boots
 		i(8247),	-- Imperial Red Bracers
@@ -1146,19 +1146,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9893),	-- Huntsman's Leggings
 		i(9894),	-- Huntsman's Shoulders
 		i(68750, {	-- Imbued Pioneer Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68758, {	-- Imbued Pioneer Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68751, {	-- Imbued Pioneer Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68757, {	-- Imbued Pioneer Gloves
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68745, {	-- Imbued Primal Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(4738),	-- Imperial Leather Belt
 		i(6431),	-- Imperial Leather Boots
@@ -1821,16 +1821,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14749),	-- Hulking Spaulders
 		i(1981),	-- Icemail Jerkin
 		i(68752, {	-- Imbued Infantry Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68761, {	-- Imbued Infantry Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68753, {	-- Imbued Infantry Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68760, {	-- Imbued Infantry Gauntlets
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(15663),	-- Impenetrable Belt
 		i(15659),	-- Impenetrable Bindings
@@ -3512,7 +3512,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Can drop from any troll in Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
 				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
 				-- #endif
-				["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 			}),
 			-- #endif
 		}),
@@ -3520,7 +3520,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
-				["timeline"]={ "created 1.12.1.6180", "added 2.0.1" },
+				["timeline"]={ "created 1.12.1.6180", ADDED_2_0_1 },
 			}),
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
 			i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)
@@ -3581,7 +3581,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		prof(ENCHANTING, {
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility / CLASSIC: Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
 			i(16245, {	-- Formula: Enchant Boots - Greater Agility (RECIPE!)
-				["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
+				["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 			}),
 			i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 			i(11167),	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
@@ -3732,16 +3732,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7084),	-- Pattern: Crimson Silk Shoulders
 			i(7086),	-- Pattern: Earthen Silk Belt
 			i(14492, {	-- Pattern: Felcloth Boots
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14496, {	-- Pattern: Felcloth Hood
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14506, {	-- Pattern: Felcloth Robe
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14508, {	-- Pattern: Felcloth Shoulders
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14474, {	-- Pattern: Frostweave Gloves
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
@@ -3778,16 +3778,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4347),	-- Pattern: Reinforced Woolen Shoulders
 			i(4354),	-- Pattern: Rich Purple Silk Shirt
 			i(14498, {	-- Pattern: Runecloth Headband
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14491, {	-- Pattern: Runecloth Pants
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14504, {	-- Pattern: Runecloth Shoulders
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14470, {	-- Pattern: Runecloth Tunic
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(4351),	-- Pattern: Shadow Hood
 			i(4353),	-- Pattern: Spider Belt

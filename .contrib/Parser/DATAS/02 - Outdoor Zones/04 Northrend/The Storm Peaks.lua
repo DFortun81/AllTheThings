@@ -1724,7 +1724,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(41817, {	-- Design: Fractured Scarlet Ruby [WRATH] / Design: Smooth Autumn's Glow [CATA+]
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 29570,	-- Nascent Val'kyr
 					}),
 					i(41819, {	-- Design: Radiant Forest Emerald

@@ -132,13 +132,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(591, {	-- Explorers' League Digsite, Stranglethorn
 					["cr"] = 43043,	-- Colin Swifthammer <Gryphon Master>
 					["coord"] = { 55.6, 41.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(592, {	-- Hardwrench Hideaway, Stranglethorn
 					["cr"] = 43053,	-- Hizzle <Wind Rider Master>
 					["coord"] = { 35.0, 29.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -2721,7 +2721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
 					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.2.0.14241" },
+					["timeline"] = { ADDED_4_2_0 },
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)

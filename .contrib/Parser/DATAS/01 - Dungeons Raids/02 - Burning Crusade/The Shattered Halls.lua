@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(259, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Shattered Halls
+	inst(259, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Shattered Halls
 		["lore"] = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3714,	-- The Shattered Halls
@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(29655, {	-- A Very Special Cloth
 					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -31,14 +31,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29689, {	-- Advancing the Campaign [Alliance]
 					["qg"] = 16819,	-- Force Commander Danath Trollbane
 					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 				}),
 				q(29688, {	-- Advancing the Campaign [Horde]
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 				}),
@@ -79,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29650, {	-- Fel Ember
 					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9494, {	-- Fel Embers
 					["qg"] = 16829,	-- Magus Zabraxis <Reagents>
 					["coord"] = { 53.9, 65.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
@@ -140,7 +140,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29651, {	-- Honor the Dying
 					["qg"] = 54932,	-- Caza'rez
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -185,7 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				})),
 				q(29649, {	-- How to Save a Life
 					["qg"] = 54933,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -202,20 +202,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				applyclassicphase(TBC_PHASE_FOUR, q(9524, {	-- Imprisoned in the Citadel [Alliance]
 					["qg"] = 17288,	-- Randy Whizzlesprocket
 					["description"] = "This quest can only be completed on Heroic Difficulty.",
-					["timeline"] = { "removed 4.3.0" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 70,
 				})),
 				applyclassicphase(TBC_PHASE_FOUR, q(9525, {	-- Imprisoned in the Citadel [Horde]
 					["qg"] = 17294,	-- Drisella
 					["description"] = "This quest can only be completed on Heroic Difficulty.",
-					["timeline"] = { "removed 4.3.0" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 70,
 				})),
 				q(29656, {	-- O'mrogg's Warcloth
 					["qg"] = 54933,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29652, {	-- One Last Favor
 					["qg"] = 54934,	-- Gunny
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9493, {	-- Pride of the Fel Horde [Alliance]
 					["qg"] = 16830,	-- Field Commander Romus
 					["coord"] = { 56.8, 62.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -262,7 +262,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9496, {	-- Pride of the Fel Horde [Horde]
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin <Ears of the Warchief>
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -313,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9495, {	-- The Will of the Warchief
 					["qg"] = 3230,	-- Nazgrel <Advisor to Thrall>
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
@@ -330,7 +330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29653, {	-- The Will of the Warchief
 					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9492, {	-- Turning the Tide
 					["qg"] = 16819,	-- Force Commander Danath Trollbane <Sons of Lothar>
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
@@ -374,7 +374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29654, {	-- Turning the Tide
 					["qg"] = 54933,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -437,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
 						-- #endif
 						i(72597, {	-- O'mrogg's Warcloth
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 						i(30829),	-- Tear of the Earthmother
 					},
@@ -569,7 +569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
 							-- #endif
 							i(72597, {	-- O'mrogg's Warcloth
-								["timeline"] = { "added 4.3.0.14732" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 							i(30829),	-- Tear of the Earthmother
 						},

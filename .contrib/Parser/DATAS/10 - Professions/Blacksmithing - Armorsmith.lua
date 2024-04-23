@@ -6,7 +6,7 @@ profession(BLACKSMITHING, {
 			5283,	-- The Art of the Armorsmith [Alliance]
 			5301,	-- The Art of the Armorsmith [Horde]
 		},
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			-- #if AFTER TBC
 			{
@@ -15,54 +15,54 @@ profession(BLACKSMITHING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Breastplate of Kings",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 34533,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Bulwark of Kings",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 34534,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Bulwark of the Ancient Kings",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36257,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(WRATH_PHASE_ONE,{
 						["name"] = "Chestplate of Conquest",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 55186,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Embrace of the Twisting Nether",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36256,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Heavy Earthforged Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36129,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Nether Chain Shirt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 34529,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Stormforged Hauberk",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36130,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Twisting Nether Chain Shirt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 34530,
 						["requireSkill"] = 9788,
 					}),
@@ -74,18 +74,18 @@ profession(BLACKSMITHING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Earthforged Leggings",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36122,
 						["requireSkill"] = 9788,
 					}),
 					applyclassicphase(WRATH_PHASE_ONE,{
 						["name"] = "Legplates of Conquest",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 55187,
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Windforged Leggings",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36124,
 						["requireSkill"] = 9788,
 					}),
@@ -103,7 +103,7 @@ profession(BLACKSMITHING, {
 					}),
 					applyclassicphase(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Helm",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16742,
 						["requireSkill"] = 9788,
 					}),
@@ -164,7 +164,7 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Fiery Plate Gauntlets",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16655,
 						["requireSkill"] = 9788,
 					},
@@ -180,7 +180,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Truesilver Gauntlets",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 9954,
 						["requireSkill"] = 9788,
 					},
@@ -198,13 +198,13 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Demon Forged Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16667,
 						["requireSkill"] = 9788,
 					},
 					applyclassicphase(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16745,
 						["requireSkill"] = 9788,
 					}),
@@ -215,7 +215,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Truesilver Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 9974,
 						["requireSkill"] = 9788,
 					},
@@ -248,7 +248,7 @@ profession(BLACKSMITHING, {
 					},
 					applyclassicphase(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Leggings",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16744,
 						["requireSkill"] = 9788,
 					}),

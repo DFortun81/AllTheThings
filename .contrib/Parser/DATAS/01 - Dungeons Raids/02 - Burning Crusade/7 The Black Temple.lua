@@ -38,15 +38,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					["qg"] = 18528,	-- Xi'ri
 					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						ach(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
-							["timeline"] = { "removed 3.0.1" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						title(39, {	-- Hand of A'dal
-							["timeline"] = { "removed 3.0.1" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						i(32649),	-- Medallion of Karabor
 					},

@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/6 Blackrock Worg slain
@@ -690,7 +690,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/4 Injured Soldier Revived
@@ -868,7 +868,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(28789, {	-- Join the Battle!
@@ -1110,7 +1110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/8 Blackrock Spy slain
@@ -1214,7 +1214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77619, {	-- Meditation on the Light
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["coord"] = { 49.8, 39.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["races"] = { HUMAN },
 							["lvl"] = 2,
@@ -1271,7 +1271,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77617, {	-- Relics of the Light
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 							["lvl"] = 2,
@@ -1422,7 +1422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 211809 },	-- Comprehension Primer
 							},
 							["coord"] = { 49.6, 39.4, ELWYNN_FOREST },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { MAGE },
 							["races"] = { HUMAN },
 							["lvl"] = 2,
@@ -1438,7 +1438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77621, {	-- Stolen Power
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARLOCK },
 							["races"] = { HUMAN },
 							["lvl"] = 2,
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77616, {	-- The Lost Rune
 							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
 							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { HUMAN },
 							["lvl"] = 2,
@@ -1644,14 +1644,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(1598, {	-- The Stolen Tome
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["altQuests"] = { 1599 },	-- Beginnings
 							["coord"] = { 49.9, 42.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 3.3.0
@@ -1826,7 +1826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/8 Goblin Assassin slain
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(SOD_PHASE_ONE, q(77618, {	-- Thrice Stolen
 							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
 							["coord"] = { 50.6, 40.0, ELWYNN_FOREST },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { HUMAN },
 							["lvl"] = 2,
@@ -1900,7 +1900,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(TREASURES, {
 						applyclassicphase(SOD_PHASE_ONE, o(387477, {	-- Defias Stashbox
 							["coord"] = { 52.6, 51.8, ELWYNN_FOREST },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(205230, {	-- Rune of Haunting
@@ -1984,30 +1984,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(63),	-- The Stonefield Farm
 				exploration(91),	-- Tower of Azora
 				exploration(120),	-- Westbrook Garrison
-				--[[
-				exploration(34),	-- Echo Ridge Mine
-				exploration(56),	-- Heroes' Vigil
-				exploration(92),	-- Mirror Lake
-				exploration(89),	-- Mirror Lake Orchard
-				exploration(24),	-- Northshire Abbey
-				exploration(23),	-- Northshire River
-				exploration(59),	-- Northshire Vineyards
-				exploration(80),	-- Stormwind Mountains
-				exploration(53),	-- Thieves Camp
-				exploration(61),	-- Thunder Falls
-				]]--
 			}),
 			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {
 				fp(589, {	-- Eastvale Logging Camp, Elwynn
 					["coord"] = { 81.8, 66.4, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 43000,	-- Goss the Swift <Gryphon Master>
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(582, {	-- Goldshire, Elwynn
 					["coord"] = { 41.8, 64.6, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 42983,	-- Bartlett the Brave <Gryphon Master>
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2022,7 +2010,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 57.4, 48.6, ELWYNN_FOREST },
 							{ 71.0, 80.6, ELWYNN_FOREST },
 						},
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["maps"] = { NORTHSHIRE_VALLEY },
 						["classes"] = { ROGUE },
 						["crs"] = {
@@ -2031,7 +2019,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cost"] = {
 							{ "i", 203787, 1 },	-- Bottom-Left Map Piece
@@ -2042,19 +2030,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(203787, {	-- Bottom-Left Map Piece
 						["coord"] = { 26.2, 88.6, ELWYNN_FOREST },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 478,	-- Riverpaw Outrunner
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(203786, {	-- Bottom-Right Map Piece
 						["coord"] = { 79.2, 57.4, ELWYNN_FOREST },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 46,	-- Murloc Forager
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(203785, {	-- Top-Left Map Piece
 						["coord"] = { 68.8, 78.6, ELWYNN_FOREST },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							6866,	-- Defias Bodyguard
@@ -2065,7 +2053,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
 						["coord"] = { 39.3, 80.4, ELWYNN_FOREST },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							 40,	-- Kobold Miner
@@ -2481,7 +2469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
-					["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2951,7 +2939,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(3233),	-- Gnoll Hide Sack
 						i(5744, {	-- Pale Skinner
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 					},
 				}),
@@ -3003,13 +2991,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1917, {	-- Jeweled Dagger
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 						i(6201, {	-- Lithe Boots
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 						i(2091, {	-- Magic Dust
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -3021,7 +3009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3000, {	-- Brood Mother Carapace
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 						i(6148, {	-- Web-covered Boots
 							["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
@@ -3036,7 +3024,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6147, {	-- Ratty Old Belt
-							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(1913, {	-- Studded Blackjack
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -3083,7 +3071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6203, {	-- Thuggish Shield
-							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3151,7 +3139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 52.2, 84.65, ELWYNN_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
 							["classes"] = { SHAMAN },
@@ -3186,7 +3174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
 					["provider"] = { "o", 387466 },	-- Rusty Lockbox
 					["coord"] = { 46.2, 62.1, ELWYNN_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
@@ -3196,7 +3184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 80.3, 79.1, ELWYNN_FOREST },
 					["cost"] = {{ "i", 203750, 1 }},	-- Elwynn Treasure Map
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -3204,7 +3192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(204989, {	-- Wounded Adventurer
 					["coord"] = { 62.0, 47.32, ELWYNN_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3408,7 +3396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 68.2, 38.2, ELWYNN_FOREST },
 						{ 27.0, 88.6, ELWYNN_FOREST },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						 97,	-- Riverpaw Runt
@@ -3542,7 +3530,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 62.6, 54.2, ELWYNN_FOREST },
 						{ 74.0, 51.8, ELWYNN_FOREST },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						881,	-- Surena Caledon
@@ -3572,7 +3560,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						448,	-- Hogger
@@ -3582,7 +3570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204476, {	-- Severed Kobold Head
 					["coord"] = { 39.0, 85.24, ELWYNN_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						327,	-- Goldtooth
@@ -3592,7 +3580,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
 					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						285,	-- Murloc
@@ -3665,7 +3653,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.5, 63.6, ELWYNN_FOREST },
 						{ 80.6, 83.2, ELWYNN_FOREST },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						299,	-- Young Wolf

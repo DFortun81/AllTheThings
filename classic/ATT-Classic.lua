@@ -1424,6 +1424,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString);
 		if group.working then working = true; end
 	end
+	
+	if app.AddSourceInformation(group.sourceID, tooltipInfo, group, group) then
+		working = true;
+	end
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
 	if app.Settings:GetTooltipSetting("SummarizeThings") then

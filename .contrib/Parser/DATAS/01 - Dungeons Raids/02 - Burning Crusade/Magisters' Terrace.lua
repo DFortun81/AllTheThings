@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE, {
-	inst(249, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {	-- Magisters' Terrace
+	inst(249, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Magisters' Terrace
 		["lore"] = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 4095,	-- Magisters' Terrace
@@ -17,7 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			n(QUESTS, {
 				q(29686, {	-- A Radical Notion
 					["qg"] = 55007,	-- Exarch Larethor
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Volatile Essence
@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				q(11492, {	-- Hard to Kill
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kael'thas
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				q(29685, {	-- Hard to Kill
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kael'thas
@@ -58,20 +58,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						11482,	-- Duty Calls
 					},
 					["coord"] = { 47.4, 30.7, ISLE_OF_QUELDANAS },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(70, 70, 25),
 				}),
 				q(29682, {	-- Magisters' Terrace
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(29684, {	-- Severed Communications
 					["qg"] = 55007,	-- Exarch Larethor
 					["sourceQuest"] = 11482,	-- Duty Calls
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(11490, {	-- The Scryer's Scryer
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				}),
 				q(29687, {	-- Twisted Associations
 					["qg"] = 55007,	-- Exarch Larethor
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- Selin Fireheart slain
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						i(34704),	-- Band of Arcane Alacrity
 						i(34706),	-- Band of Determination
 						i(73084, {	-- Volatile Essence
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 							i(34704),	-- Band of Arcane Alacrity
 							i(34706),	-- Band of Determination
 							i(73084, {	-- Volatile Essence
-								["timeline"] = { "added 4.3.0.14732" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),

@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FACTIONS, {
 				applyclassicphase(TBC_PHASE_ONE, faction(989, {	-- Keepers of Time
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS, CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS },
 				})),
 			}),
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 58.4, 54.2, TANARIS },
 						-- #endif
 					},
-					["timeline"] = { "added 2.0.3" },
+					["timeline"] = { ADDED_2_0_3 },
 					["lvl"] = lvlsquish(66, 66, 15),
 				})),
 				applyclassicphase(TBC_PHASE_TWO, q(10445, {	-- The Vials of Eternity
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 59.6, 54, TANARIS },
 						-- #endif
 					},
-					["timeline"] = { "added 2.0.3", REMOVED_3_0_2 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 					["maps"] = {
 						TEMPEST_KEEP_THE_EYE,
 						SERPENTSHRINE_CAVERN,
@@ -108,15 +108,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_THREE, n(19932, {	-- Andormu <Keepers of Time>
 					-- #if ANYCLASSIC
 					i(186683, {	-- Formula: Enchant Ring - Stats (RECIPE!)
-						["timeline"] = { "added 2.5.1.38364" },	-- This item Only Exist in Classic Version
+						["timeline"] = { ADDED_2_5_1 },	-- This item Only Exist in Classic Version
 					}),
 					-- #endif
 					-- #if BEFORE CATA
 					i(31737, {	-- Timeless Arrow
-						["timeline"] = { "removed 4.0.1.20000" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(31735, {	-- Timeless Shell
-						["timeline"] = { "removed 4.0.1.20000" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					-- #endif
 				})),
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(TBC_PHASE_TWO, i(35346)),	-- Evoker's Silk Raiment
 						i(31777),	-- Keepers of Time Tabard
 						i(30635, {	-- Key of Time
-							["timeline"] = { "removed 4.2.0" },
+							["timeline"] = { REMOVED_4_2_0 },
 							-- #if BEFORE 4.2.0
 							-- #if ANYCLASSIC
 							-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
@@ -173,10 +173,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33158),	-- Design: Stone of Blades
 						i(28272),	-- Formula: Enchant Gloves - Major Spellpower (RECIPE!)
 						i(33152, {	-- Formula: Enchant Gloves - Superior Agility (RECIPE!)
-							["timeline"] = { "added 2.2.0" },
+							["timeline"] = { ADDED_2_2_0 },
 						}),
 						i(22536, {	-- Formula: Enchant Ring - Spellpower (RECIPE!)
-							["timeline"] = { "added 2.0.1", "removed 6.0.3" },
+							["timeline"] = { ADDED_2_0_1, "removed 6.0.3" },
 						}),
 						i(29198, {	-- Glyph of Frost Warding
 							["timeline"] = { "removed 5.0.4" },

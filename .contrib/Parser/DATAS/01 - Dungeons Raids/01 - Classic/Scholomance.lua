@@ -909,7 +909,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 			["isBounty"] = true,
 			-- #endif
-			["timeline"] = { "removed 2.0.1" },
+			["timeline"] = { REMOVED_2_0_1 },
 		}),
 		i(14545),	-- Ghostloom Leggings
 		i(18690),	-- Wraithplate Leggings
@@ -1159,7 +1159,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				-- #if ANYCLASSIC
 				["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
 				-- #endif
-				["timeline"] = { "removed 2.0.1" },
+				["timeline"] = { REMOVED_2_0_1 },
 			}),
 			i(13398),	-- Boots of the Shrieker
 			applyclassicphase(PHASE_FIVE, i(22433)),	-- Don Mauricio's Band of Domination

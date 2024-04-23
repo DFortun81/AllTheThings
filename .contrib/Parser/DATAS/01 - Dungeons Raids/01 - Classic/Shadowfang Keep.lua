@@ -32,13 +32,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210212, {	-- Brother's Half-Key
 						["description"] = "Found shortly after baron silverlaine.\nHead up the stairs behind the boss, and take a right, gefell should be in a room up the stairs around the corner.",
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 211764,	-- Gefell
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(210213, {	-- Sister's Half-Key
 						["description"] = "Just after the Kitchen in baron silverlaine's room.",
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 211765,	-- Gemela
 					})),
@@ -816,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 210186 },	-- Breaching Charge
 					},
 					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					["groups"] = {
@@ -839,7 +839,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 78261,	-- The Horn of Xelthos (1/2)
 					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
 					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					["groups"] = {
@@ -2041,7 +2041,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209872, {	-- Dragonslayer's Helm
 					["provider"] = { "o", 409758 },	-- Discarded Helm
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 				})),
 				-- #endif

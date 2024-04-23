@@ -2281,7 +2281,7 @@ root(ROOTS.Zones, {
 							i(38463),	-- Lordaeron's Resolve
 							i(38459),	-- Orb of the Eastern Kingdons
 							i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
-								["timeline"] = { "added 3.0.8" },
+								["timeline"] = { ADDED_3_0_8 },
 							}),
 							i(38457),	-- Sawed-Off Hand Cannon
 							i(44503),	-- Schematic: Mekgineer's Chopper
@@ -2309,7 +2309,7 @@ root(ROOTS.Zones, {
 							i(38460),	-- Charged Wand of the Cleft
 							i(38458),	-- Darkspear Orb
 							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
-								["timeline"] = { "added 3.0.8" },
+								["timeline"] = { ADDED_3_0_8 },
 							}),
 							i(44502),	-- Schematic: Mechano-Hog
 							i(38456),	-- Sin'dorei Recurve Bow

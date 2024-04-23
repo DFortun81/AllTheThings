@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 24366,	-- Nizzle <Gryphon Master>
 					["coord"] = { 38.2, 4.0, STRANGLETHORN_VALE },
 					-- #endif
-					["timeline"] = { "added 2.3.0.7382" },
+					["timeline"] = { ADDED_2_3_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 32, 28.6, STRANGLETHORN_VALE },
 					-- #endif
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Heart of Naias
@@ -556,7 +556,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 32, 28.6, STRANGLETHORN_VALE },
 					-- #endif
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodscalp Totem
@@ -2817,7 +2817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 54.2, 31.6, NORTHERN_STRANGLETHORN },
 						{ 54.6, 29.0, NORTHERN_STRANGLETHORN },
 					},
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 				}),
 				-- #if BEFORE CATA
 				n(723, {	-- Mosh'Ogg Butcher
@@ -2831,11 +2831,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(51658, {	-- Mogh the Dead
 					["coord"] = { 62.8, 74.6, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 				}),
 				n(51663, {	-- Pogeyan
 					["coord"] = { 36.6, 29.2, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 				}),
 				n(14488, {	-- Roloch
 					-- #if AFTER CATA
@@ -2854,7 +2854,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(51661, {	-- Tsul'Kalu
 					["coord"] = { 47.0, 32.3, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 				}),
 			}),
 			n(VENDORS, {

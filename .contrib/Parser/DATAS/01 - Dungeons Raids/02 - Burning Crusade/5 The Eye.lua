@@ -191,11 +191,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(29997),	-- Band of the Ranger-General
 					i(30320, {	-- Bundle of Nether Spikes
 						["description"] = "Contains 6 stacks of Nether Spike arrows.",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 21268,	-- Netherstrand Longbow
 						["groups"] = {
 							i(30319, {	-- Nether Spike
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),

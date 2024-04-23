@@ -20,11 +20,11 @@ root(ROOTS.Promotions, {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		i(37719, {	-- Swift Zhevra (MOUNT!)
-			["timeline"] = { "added 2.4.3.8601" },
+			["timeline"] = { ADDED_2_4_3 },
 		}),
 
 		ach(4832, {	-- Friends In Even Higher Places
-			["timeline"] = { "added 4.0.0" },
+			["timeline"] = { ADDED_4_0_1 },
 		}),
 		i(54860, {	-- X-53 Touring Rocket (MOUNT!)
 			["timeline"] = { ADDED_3_3_3 },
@@ -66,11 +66,11 @@ root(ROOTS.Promotions, {
 		}),
 		i(34518, {	-- Golden Pig (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
-			["timeline"] = { "added 2.3.0" },
+			["timeline"] = { ADDED_2_3_0 },
 		}),
 		i(34519, {	-- Silver Pig (PET!)
 			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
-			["timeline"] = { "added 2.3.0" },
+			["timeline"] = { ADDED_2_3_0 },
 		}),
 
 		-- Desert Path

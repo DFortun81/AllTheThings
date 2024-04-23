@@ -360,7 +360,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(12, {	-- Level 70 (Legacy)
-		["timeline"] = { "added 2.0.1", REMOVED_9_0_1 },
+		["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 },
 		["lvl"] = 70,
 		-- #if BEFORE WRATH
 		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
@@ -430,7 +430,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
 	}),
 	ach(5395, {		-- Realm First! Grand Master Archaeologist
-		["timeline"] = { ADDED_4_0_3, "removed 4.1.1" },
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_1_0 },
 	}),
 	ach(1414, {		-- Realm First! Grand Master Blacksmith
 		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
@@ -730,7 +730,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["groups"] = {
 			title(143, {	-- <Name>, Soul of Iron (756 on wowhead? That's wrong!)
 				-- TODO: Double check this in Cataclysm Classic
-				["timeline"] = { "added 3.4.0" },
+				["timeline"] = { ADDED_3_4_0 },
 			}),
 		},
 	})),
@@ -739,16 +739,16 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	ach(5753, {	-- Cataclysmically Delicious
-		["timeline"] = { "added 4.1.0" },
+		["timeline"] = { ADDED_4_1_0 },
 		["sym"] = {{ "achievement_criteria" }},
 	}),
 	ach(5754, {	-- Drown Your Sorrows
-		["timeline"] = { "added 4.1.0" },
+		["timeline"] = { ADDED_4_1_0 },
 		["sym"] = {{ "achievement_criteria" }},
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(892, {	-- The Right Stuff
 		["spellID"] = 34091,	-- Artisan Riding
-		["timeline"] = { "added 2.0.1", REMOVED_9_0_1 },
+		["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 },
 		["rank"] = 4,
 	})),
 	n(ARMOR, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" }, }, {
@@ -873,7 +873,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			["f"] = 100,
 			-- #endif
 			-- #endif
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["rank"] = 50,
 			["groups"] = {
 				applyclassicphase(WRATH_PHASE_ONE, i(44178)),	-- Albino Drake (MOUNT!)

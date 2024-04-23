@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER 4.2.0
 			n(ACHIEVEMENTS, {
 				ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				ach(5843, {	-- Let's Do Lunch: Thunder Bluff
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							29348,	-- The Race to Restock
 							29346,	-- The Ring's the Thing
 						},
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983),	-- Strand Crawler (PET!)
 							i(33820),	-- Weather-Beaten Fishing Hat
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29362, {	-- "Magic" Mushrooms
 					["qg"] = 3026,	-- Aska Mistrunner
 					["coord"] = { 51.2, 52.2, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						207754,	-- Mooart
 					},
 					["coord"] = { 28.8, 19.2, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29364, {	-- Corn Mash
 					["qg"] = 3026,	-- Aska Mistrunner
 					["coord"] = { 51.2, 52.2, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29349, {	-- Craving Crayfish
 					["qg"] = 3028,	-- Kah Mistrunner
 					["coord"] = { 56.12, 46.34, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5655,	-- Hex of Weakness [Mulgore]
 						5657,	-- Hex of Weakness [Undercity]
 					},
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29363, {	-- Mulgore Spice Bread
 					["qg"] = 3026,	-- Aska Mistrunner
 					["coord"] = { 51.2, 52.2, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29365, {	-- Perfectly Picked Portions
 					["qg"] = 3026,	-- Aska Mistrunner
 					["coord"] = { 51.2, 52.2, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29358, {	-- Pining for Nuts
 					["qg"] = 3026,	-- Aska Mistrunner
 					["coord"] = { 51.2, 52.2, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29345, {	-- Pond Predators
 					["qg"] = 3028,	-- Kah Mistrunner
 					["coord"] = { 56.12, 46.34, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -598,7 +598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5680,	-- Shadowguard [Orgrimmar]
 					},
 					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.4.1" },
+					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29354, {	-- Shiny Baubles
 					["qg"] = 3028,	-- Kah Mistrunner
 					["coord"] = { 56.12, 46.34, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 206159 },	-- Venture Co Disguise
 					},
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { MULGORE },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["sourceQuest"] = 76156,	-- Stalk With The Earthmother (1/3)
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { MULGORE },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -674,7 +674,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["sourceQuest"] = 76160,	-- Stalk With The Earthmother (2/3)
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29348, {	-- The Race to Restock
 					["qg"] = 3028,	-- Kah Mistrunner
 					["coord"] = { 56.12, 46.34, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -759,7 +759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29346, {	-- The Ring's the Thing
 					["qg"] = 3028,	-- Kah Mistrunner
 					["coord"] = { 56.12, 46.34, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1209,7 +1209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(30746, {	-- Mining Sack
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
 				}),
@@ -1329,12 +1329,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
 					["coord"] = { 34.75, 53.45, THUNDER_BLUFF },
 					["sym"] = { {"sub", "common_recipes_vendor", 50482}},	-- Marith Lazuria <Jewelcrafting Supplies>
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				n(52655, {	-- Palehoof's Big Bag of Parts <Engineering Supplies>
 					["coord"] = { 36.22, 60.21, THUNDER_BLUFF },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18647, {	-- Schematic: Red Firework (RECIPE!)
@@ -1456,7 +1456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			o(207323, {	-- Warchief's Command Board
 				["coord"] = { 42.6, 57.4, THUNDER_BLUFF },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),

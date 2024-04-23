@@ -43,7 +43,7 @@ local OnTooltipForMaghar = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(NAGRAND, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(NAGRAND, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Nagrand is a peaceful lush zone in Outland with grassy areas and floating islands in the sky. It is home to the Kurenai and Mag'har factions. The Horde especially have an interesting time because the final questchain covers Thrall and his true identity. Other sidequests involve slaughtering more animals for Hemet Nesingwary and learning about demon hunters and fel dangers.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_nagrand_01",
@@ -690,7 +690,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10212, {	-- Hero of the Mag'har
 						["qg"] = 4949,	-- Thrall
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(28173),	-- Mag'hari Huntsman's Leggings
@@ -1225,7 +1225,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10988,	-- The Raven Stones
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
@@ -1298,7 +1298,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10987,	-- To Catch A Sparrowhawk
 						["coord"] = { 20.6, 35.7, NAGRAND },
 						["maps"] = { TEROKKAR_FOREST },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32315, 1 },	-- Cenarion Sparrowhawk Whistle (Provided)
@@ -1455,14 +1455,14 @@ root(ROOTS.Zones, {
 					q(10175, {	-- Thrall, Son of Durotan
 						["qg"] = 18141,	-- Greatmother Geyah
 						["sourceQuest"] = 10172,	-- There Is No Hope
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10987, {	-- To Catch A Sparrowhawk
 						["qg"] = 22981,	-- Watcher Elaira
 						["sourceQuest"] = 10986,	-- Eyes in the Sky
 						["coord"] = { 20.6, 35.7, NAGRAND },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32321, 1 },	-- Sparrowhawk Net (Provided)
@@ -1685,10 +1685,10 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(30612, {	-- Halaani Grimshot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(30611, {	-- Halaani Razorshaft
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -1831,7 +1831,7 @@ root(ROOTS.Zones, {
 							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
 							-- #endif
 							i(28274),	-- Formula: Enchant Cloak - PvP Power / TBC: Formula: Enchant Cloak - Spell Penetration (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={"added 2.1.0"}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={ADDED_2_1_0}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
@@ -1847,7 +1847,7 @@ root(ROOTS.Zones, {
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
 							i(23874),	-- Schematic: Elemental Seaforium Charge
 							i(29118, {	-- Smuggler's Ammo Pouch
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29117),	-- Stormspire Vest
 						},
@@ -1859,7 +1859,7 @@ root(ROOTS.Zones, {
 							i(29145),	-- Band of Ancestral Spirits
 							i(29139),	-- Ceremonial Cover
 							i(29143, {	-- Clefthoof Hide Quiver
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29135),	-- Earthcaller's Headdress
 							i(29137),	-- Hellscream's Will
@@ -2099,10 +2099,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(30612, {	-- Halaani Grimshot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(30611, {	-- Halaani Razorshaft
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -2142,7 +2142,7 @@ root(ROOTS.Zones, {
 							i(31836),	-- White Riding Talbuk (A) (MOUNT!)
 							i(29231),	-- White War Talbuk (A) (MOUNT!)
 							i(29144, {	-- Worg Hide Quiver
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),

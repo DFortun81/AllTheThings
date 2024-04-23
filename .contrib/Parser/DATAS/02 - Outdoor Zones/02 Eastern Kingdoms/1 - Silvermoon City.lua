@@ -16,7 +16,7 @@ local LYNA_GROUPS = {
 	}),
 };
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
-	m(SILVERMOON_CITY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+	m(SILVERMOON_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		["lore"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_bloodelf",
@@ -793,7 +793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["isLimited"] = true,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["timeline"] = { "removed 3.2.0"},
+							["timeline"] = { REMOVED_3_2_0},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			o(207325, {	-- Warchief's Command Board
 				["coord"] = { 62.5, 60.5, SILVERMOON_CITY },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),

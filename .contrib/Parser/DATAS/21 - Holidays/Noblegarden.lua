@@ -24,7 +24,7 @@ NOBLEGARDEN_HEADER = createHeader({
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(151804, {	-- Black Tuxedo Pants
@@ -44,7 +44,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(74283, {	-- Pink Spring Circlet
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(44803, {	-- Spring Circlet
@@ -64,7 +64,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	}),
 	-- Mounts
 	i(72145, {	-- Swift Springstrider (MOUNT!)
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
 	}),
 	-- Other
@@ -156,7 +156,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(72145, {	-- Swift Springstrider (MOUNT!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 
 			i(19028, {	-- Elegant Dress

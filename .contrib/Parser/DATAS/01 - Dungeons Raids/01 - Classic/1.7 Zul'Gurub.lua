@@ -1290,11 +1290,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["filterID"] = MOUNTS,
 				}),
 				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
-					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(19867),	-- Bloodlord's Defender
 				i(19874),	-- Halberd of Smiting
@@ -1437,11 +1437,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["filterID"] = MOUNTS,
 				}),
 				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
-					["timeline"] = { REMOVED_4_0_3, "blackmarket 6.0.2" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(19896),	-- Thekal's Grasp
 				i(19901),	-- Zulian Slicer
@@ -1474,7 +1474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						-- #if BEFORE WRATH
 						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
 						-- #endif
-						["timeline"] = { ADDED_3_0_2, "removed 4.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_4_1_0 },
 					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon

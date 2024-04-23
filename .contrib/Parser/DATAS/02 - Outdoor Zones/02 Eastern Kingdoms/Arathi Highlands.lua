@@ -119,15 +119,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1857),	-- Thoradin's Wall
 				-- #endif
 				exploration(317),	-- Witherbark Village
-				--[[
-				exploration(322),	-- Blackwater Shipwrecks
-				exploration(323),	-- O'Breen's Camp
-				exploration(325),	-- The Tower of Arathor
-				exploration(326),	-- The Sanctum
-				exploration(328),	-- The Drowned Reef
-				exploration(2401),	-- The Forbidding Sea
-				exploration(1837),	-- Witherbark Caverns
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(601, {	-- Galen's Fall, Arathi
@@ -1919,7 +1910,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28619, {	-- Warchief's Command: Arathi Highlands!
 					["provider"] = { "o", 207279 },	-- Warchief's Command Board
 					["coord"] = { 56.5, 47.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(691, {	-- Worth Its Weight in Gold
@@ -2307,7 +2298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
-							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
+							["timeline"] = { REMOVED_4_1_0 },	-- Learned by trainer
 						}),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)

@@ -1646,7 +1646,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10371, {	-- Yorus Barleybrew (Draenei)
 					["qg"] = 16771,	-- Ahonan
 					["coord"] = { 55.0, 83.4, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1727,10 +1727,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.4, 72.8, REDRIDGE_MOUNTAINS },
 						{ 76.2, 83.4, REDRIDGE_MOUNTAINS },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(211488, {	-- Rune of the Avenger
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PALADIN },
 							["groups"] = {
 								recipe(410008),	-- Engrave Pants - Avenger's Shield
@@ -1771,10 +1771,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(214519, {	-- Incinerator Gar'im
 					["coord"] = { 77.8, 86.2, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(211477, {	-- Rune of Incinerate
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARLOCK },
 							["groups"] = {
 								recipe(416015),	-- Engrave Pants - Incinerate
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(209873, {	-- Dragonslayer's Shield
 					["provider"] = { "o", 409754 },	-- Wall-Mounted Shield
 					["coord"] = { 69.8, 55.8, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 				})),
 			}),
@@ -2300,7 +2300,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211530, {	-- Prophecy of a City Enthralled
 					["coord"] = { 67.4, 56.0, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["cr"] = 436,	-- Blackrock Shadowcaster
 					["groups"] = {

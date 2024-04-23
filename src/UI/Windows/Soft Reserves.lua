@@ -54,7 +54,7 @@ end
 -- Module locals
 ---@class ATTSoftReserveWindow: ATTWindow
 local SoftReserveWindow = nil;
-local UpdateSoftReserve = app.DoNothing;
+local UpdateSoftReserve = app.EmptyFunction;
 local SoftReservesByItemID, SoftReservesDirty, IsPrimaryLooter = {}, nil, nil;
 local PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 	-- Let WoW parse it.

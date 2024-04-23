@@ -515,13 +515,13 @@ root(ROOTS.Zones, {
 					}),
 					q(13099, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
-						["timeline"] = { ADDED_3_3_0, "removed 4.3.0.14732" },
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_3_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(29836, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
 						["coord"] = { 59.9, 57.9, ZULDRAK },
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 					q(12630, {	-- Kickin' Nass and Takin' Manes
 						["coord"] = { 14.0, 73.8, ZULDRAK },
@@ -1062,13 +1062,13 @@ root(ROOTS.Zones, {
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
 						["coord"] = { 60.2, 57.7, ZULDRAK },
-						["timeline"] = { "removed 4.3.0.14732" },
+						["timeline"] = { REMOVED_4_3_0 },
 					}),
 					q(29833, {	-- Unfinished Business
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
 						["coord"] = { 60.2, 57.7, ZULDRAK },
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 					q(12857, {	-- Wanted: Ragemane's Flipper
 						["provider"] = { "o", 191728 },	-- Wanted!

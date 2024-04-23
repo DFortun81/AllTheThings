@@ -238,11 +238,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2242),	-- The Hidden Grove
 				exploration(2243),	-- Timbermaw Post
 				exploration(2244),	-- Winterfall Village
-				--[[
-				exploration(2254),	-- Ban'Thallow Barrow Den
-				exploration(3139),	-- Moon Horror Den
-				exploration(2252),	-- The Ruins of Kel'Theril
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(577, {	-- Everlook
@@ -1804,10 +1799,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
 						i(34424, {	-- Power of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(34423, {	-- Strength of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 					},
 				}),
@@ -1821,10 +1816,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
 						i(34424, {	-- Power of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(34423, {	-- Strength of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 					},
 				}),
@@ -2071,14 +2066,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE 3.1.0
 			prof(SKINNING, {
 				i(15423, {	-- Chimera Leather
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					["crs"] = {
 						10807,	-- Brumeran
 						7449,	-- Chillwind Ravager
 					},
 				}),
 				i(15422, {	-- Frostsaber Leather
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					["crs"] = {
 						7431,	-- Frostsaber
 						7430,	-- Frostsaber Cub
@@ -2126,10 +2121,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>
 					["coord"] = { 59.8, 51.6, WINTERSPRING },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["groups"] = {
 						i(69239, {	-- Winterspring Cub (PET!)
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 					},
 				}),
@@ -2141,7 +2136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(21957, {	-- Design: Necklace of the Diamond Tower
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)
@@ -2155,7 +2150,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(14481, {	-- Pattern: Runecloth Gloves
-							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 							-- #if BEFORE TBC
 							["isLimited"] = true,
 							-- #endif
@@ -2226,7 +2221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
-							["timeline"] = { "added 2.1.0", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, "removed 5.0.4" },
 							-- #if BEFORE 5.0.4
 							["isLimited"] = true,
 							-- #endif
@@ -2271,7 +2266,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				-- Originally a zone drop of Azshara, was moved to Winterspring after.
 				i(34535, {	-- Azure Whelpling (PET!)
-					["timeline"] = { "added 2.3.0.7485" },
+					["timeline"] = { ADDED_2_3_0 },
 				}),
 				-- #endif
 				i(12434, {	-- Chillwind E'ko

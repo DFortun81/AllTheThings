@@ -157,11 +157,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(3077),	-- Valor's Rest
 				-- #endif
 				exploration(3077),	-- Valor's Rest
-				--[[
-				exploration(2477),	-- The Veiled Sea
-				exploration(3100),	-- Ravaged Twilight Camp
-				exploration(3257),	-- Bones of Grakkarond
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(73, {	-- Cenarion Hold, Silithus (A)
@@ -341,15 +336,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20699, {	-- Cenarion Reservist's Legplates
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20710, {	-- Crystal Encrusted Greaves
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -357,15 +352,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { MAGE, WARLOCK },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20705, {	-- Cenarion Reservist's Pants
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20716, {	-- Sandworm Skin Gloves
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -373,15 +368,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20707, {	-- Cenarion Reservist's Pants
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20717, {	-- Desert Bloom Gloves
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -389,15 +384,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20703, {	-- Cenarion Reservist's Leggings
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20715, {	-- Dunestalker's Boots
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -405,15 +400,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20704, {	-- Cenarion Reservist's Leggings
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20714, {	-- Sandstorm Boots
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -421,15 +416,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20702, {	-- Cenarion Reservist's Legguards
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20713, {	-- Desertstalkers's Gauntlets
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -437,15 +432,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20700, {	-- Cenarion Reservist's Legplates
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20711, {	-- Crystal Lined Greaves
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -453,15 +448,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
 						i(20701, {	-- Cenarion Reservist's Legguards
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 						i(20712, {	-- Wastewalker's Gauntlets
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),
@@ -2800,7 +2795,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(21952, {	-- Design: Emerald Crown of Destruction
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						applyclassicphase(PHASE_FIVE, i(22310)),	-- Pattern: Cenarion Herb Bag

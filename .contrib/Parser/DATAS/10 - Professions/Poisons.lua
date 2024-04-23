@@ -9,7 +9,7 @@ profession(POISONS, {
 			["groups"] = {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Anesthetic Poison",
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["recipeID"] = 26786,
 					["lvl"] = 68,
 				}),
@@ -57,13 +57,13 @@ profession(POISONS, {
 				}),
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Deadly Poison VI",
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["recipeID"] = 26969,
 					["lvl"] = 62,
 				}),
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Deadly Poison VII",
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["recipeID"] = 27282,
 					["lvl"] = 70,
 				}),
@@ -98,7 +98,7 @@ profession(POISONS, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Instant Poison VII",
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["recipeID"] = 26892,
 					["lvl"] = 68,
 				}),
@@ -139,7 +139,7 @@ profession(POISONS, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Wound Poison V",
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["recipeID"] = 27283,
 					["lvl"] = 64,
 				}),

@@ -28,12 +28,12 @@ local MEDALLION_OF_THE_LEGION = i(128315, {	-- Medallion of the Legion
 -- WoWHead doesn't list specific colors on all of the vendors, but if you visit on the opposite faction, they sell both. It's based on the character's faction. Putting this in here in case its different and we need two separate distinctions.
 local HOLIDAY_VENDOR_GROUPS_GREEN = {
 	i(34261, {	-- Pattern: Green Winter Clothes
-		["timeline"] = { "added 2.3.0.7501" },
+		["timeline"] = { ADDED_2_3_0 },
 	}),
 }
 local HOLIDAY_VENDOR_GROUPS_RED = {
 	i(34319, {	-- Pattern: Red Winter Clothes
-		["timeline"] = { "added 2.3.0.7501" },
+		["timeline"] = { ADDED_2_3_0 },
 	}),
 };
 local HOLIDAY_NON_COLLECTIBLE_GROUPS = {
@@ -138,7 +138,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
 			-- #endif
-			["timeline"] = { "added 4.3.0" },
+			["timeline"] = { ADDED_4_3_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["maps"] = { ORGRIMMAR, SILVERMOON_CITY, THUNDER_BLUFF, UNDERCITY },
 			["races"] = ALLIANCE_ONLY,
@@ -149,7 +149,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
 			-- #endif
-			["timeline"] = { "added 4.3.0" },
+			["timeline"] = { ADDED_4_3_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["maps"] = { DARNASSUS, THE_EXODAR, IRONFORGE, STORMWIND_CITY },
 			["races"] = HORDE_ONLY,
@@ -524,27 +524,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		})),
 		ach(1705, {	-- Clockwork Rocket Bot (2007)
 			["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
-			["timeline"] = { "added 2.3.0.7561" },
+			["timeline"] = { ADDED_2_3_0 },
 		}),
 		ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 			["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
 			-- #if ANYCLASSIC
-			["timeline"] = { "created 2.4.3.8601", "removed 3.3.0.11159" },
+			["timeline"] = { "created 2.4.3.8601", REMOVED_3_3_0 },
 			-- #else
-			["timeline"] = { "added 2.4.3.8601" },
+			["timeline"] = { ADDED_2_4_3 },
 			-- #endif
 		}),
 		ach(6059, {	-- Red Rider Air Rifle (2009)
 			["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		ach(6060, {	-- MiniZep Controller (2010)
 			["provider"] = { "i", 46709 },	-- MiniZep Controller
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		ach(6061, {	-- Gaudy Winter Veil Sweater (2011)
 			["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		ach(7852, {	-- They're Both Footballs? (2012)
 			["providers"] = {
@@ -882,7 +882,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["description"] = "Horde Tailors receive this pattern in the mail, but Alliance Tailors that are adventurous can learn it from the Neutral holiday vendor in Orgrimmar.",
 				-- #endif
-				["timeline"] = { "added 2.3.0.7501" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(34319, {	-- Pattern: Red Winter Clothes
 				-- #if AFTER TBC
@@ -890,7 +890,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["description"] = "Alliance Tailors receive this pattern in the mail, but Horde Tailors that are adventurous can learn it from the Neutral holiday vendor in Stormwind.",
 				-- #endif
-				["timeline"] = { "added 2.3.0.7501" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(34262, {	-- Pattern: Winter Boots (RECIPE!)
 				["timeline"] = { ADDED_2_3_0 },
@@ -1253,16 +1253,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Gift from 2007.",
 			-- #if ANYCLASSIC
-			["timeline"] = { "added 2.3.0.7561", "removed 3.0.1" },
+			["timeline"] = { ADDED_2_3_0, REMOVED_3_0_2 },
 			-- #else
-			["timeline"] = { "added 2.3.0.7561", "removed 2.4.3.8601" },
+			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #endif
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
 			["groups"] = {
 				i(34425, {	-- Clockwork Rocket Bot (PET!)
-					["timeline"] = { "added 2.3.0.7561" },
+					["timeline"] = { ADDED_2_3_0 },
 				}),
 			},
 		}),
@@ -1272,7 +1272,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 43504 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2008.",
-			["timeline"] = { "added 2.4.3.8601", "removed 3.3.0.11159" },
+			["timeline"] = { ADDED_2_4_3, REMOVED_3_3_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1281,7 +1281,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					-- #if ANYCLASSIC
 					["timeline"] = { "created 2.4.3.8601", ADDED_3_0_2 },
 					-- #else
-					["timeline"] = { "added 2.4.3.8601" },
+					["timeline"] = { ADDED_2_4_3 },
 					-- #endif
 				}),
 			},
@@ -1307,7 +1307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 67443 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2010.",
-			["timeline"] = { ADDED_4_0_3_LAUNCH, "removed 4.2.0.14333" },
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_4_2_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1323,13 +1323,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 70938 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2011.",
-			["timeline"] = { "added 4.2.0.14333", REMOVED_5_1_0 },
+			["timeline"] = { ADDED_4_2_0, REMOVED_5_1_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
 			["groups"] = {
 				i(70923, {	-- Gaudy Winter Veil Sweater
-					["timeline"] = { "added 4.2.0.14333" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 		}),
@@ -1658,7 +1658,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 33.4, 67, IRONFORGE },
 			-- #endif
 			["maps"] = { SEARING_GORGE, TANARIS },
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
@@ -1688,7 +1688,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
 			["maps"] = { SEARING_GORGE, TANARIS },
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
@@ -1777,7 +1777,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 33.4, 67, IRONFORGE },
 			-- #endif
-			["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			["timeline"] = { REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			["maps"] = { ALTERAC_MOUNTAINS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1790,7 +1790,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
-			["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			["timeline"] = { REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			["maps"] = { ALTERAC_MOUNTAINS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1827,7 +1827,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 33.4, 67, IRONFORGE },
 			-- #endif
 			["description"] = 'Requires Cooking Skill Level 300',
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["cost"] = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g
@@ -1849,7 +1849,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
 			["description"] = 'Requires Cooking Skill Level 300',
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["cost"] = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g
@@ -2060,7 +2060,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["cr"] = 13602,	-- The Abominable Greench
 				}),
 				o(209497, {
-					["timeline"] = { "added 4.3.0.15005" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						i(17662),	-- Stolen Treats
 					},
@@ -2081,7 +2081,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
 				}),
 				i(73792, {	-- Stolen Present
-					["timeline"] = { "added 4.3.0.15005", REMOVED_5_1_0 },
+					["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
 				}),
 				-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
 				-- NOTE: The contents will be slightly delayed after the gift each year rather than their respective "timestamp", so good lord kill me please for the love of god. -Crieve
@@ -2094,10 +2094,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(34425, {	-- Clockwork Rocket Bot (PET!)
-							["timeline"] = { "added 2.3.0.7561" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(73797, {	-- Lumpy (PET!)
-							["timeline"] = { "added 4.3.0.15005" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 						i(104317, {	-- Rotten Little Helper (PET!)
 							["timeline"] = { "added 5.4.0.17227" },
@@ -2216,7 +2216,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 							["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
 						}),
 						i(66540, {	-- Miniature Winter Veil Tree (Level 85)
-							["timeline"] = { "added 4.3.0.15050", REMOVED_5_1_0 },
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
 						}),
 						-- Trinkets
 						i(151351, {	-- Glowing Gift
@@ -2322,7 +2322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #if AFTER 5.1.0
 				i(70923, {	-- Gaudy Winter Veil Sweater
-					["timeline"] = { "added 4.2.0.14333" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #endif
 				i(17303),	-- Blue Ribboned Wrapping Paper
@@ -2337,7 +2337,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		n(23064, {	-- Eebee Jinglepocket <Smokywood Pastures>
 			["coord"] = { 51.6, 30.6, SHATTRATH_CITY },
-			["timeline"] = { "added 2.3.0.7561" },
+			["timeline"] = { ADDED_2_3_0 },
 			-- #if AFTER CATA
 			["groups"] = HOLIDAY_VENDOR_GROUPS_GREEN,
 			-- #endif
@@ -2436,7 +2436,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		n(23010, {	-- Wolgren Jinglepocket <Smokywood Pastures>
 			["coord"] = { 56.2, 49.6, THE_EXODAR },
-			["timeline"] = { "added 2.3.0.7561" },
+			["timeline"] = { ADDED_2_3_0 },
 			["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
 		}),
 		n(13433, {	-- Wulmort Jinglepocket <Smokywood Pastures>
@@ -2485,7 +2485,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		["groups"] = {
 			i(21212),	-- Fresh Holly
 			i(34191, {	-- Handful of Snowflakes
-				["timeline"] = { "added 2.3.0.7561" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(21519),	-- Mistletoe
 		},

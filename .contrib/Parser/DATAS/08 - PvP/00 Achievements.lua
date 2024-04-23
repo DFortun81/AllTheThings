@@ -1018,7 +1018,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			applyclassicphase(TBC_PHASE_ONE, title(34, {	-- Conqueror <Name>
-				["timeline"] = { "added 2.0.1" },
+				["timeline"] = { ADDED_2_0_1 },
 				["races"] = HORDE_ONLY,
 			})),
 		},
@@ -1043,7 +1043,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			applyclassicphase(TBC_PHASE_ONE, title(35, {	-- Justicar <Name>
-				["timeline"] = { "added 2.0.1" },
+				["timeline"] = { ADDED_2_0_1 },
 				["races"] = ALLIANCE_ONLY,
 			})),
 		},

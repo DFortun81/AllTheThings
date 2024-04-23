@@ -25,13 +25,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(CATA_PHASE_ONE, ach(5847, {	-- Fish or Cut Bait: Ironforge
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5841, {	-- Let's Do Lunch: Ironforge
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Ironjaw in Ironforge.",
 					-- #endif
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["requireSkill"] = FISHING,
 				})),
 			}),
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					{ 26.5, 70.2, IRONFORGE },
 					{ 62.4, 30.5, IRONFORGE },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -106,18 +106,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				prof(FISHING, {
 					i(34864, {	-- Baby Crocolisk
-						["timeline"] = { "added 2.4.0.7897" },
+						["timeline"] = { ADDED_2_4_0 },
 					}),
 					i(67414, {	-- Bag of Shiny Things
 						["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 						["description"] = "Fishing Daily Quest Reward",
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { "added 2.4.0.7897" },
+								["timeline"] = { ADDED_2_4_0 },
 							}),
 							i(45991, {	-- Bone Fishing Pole
 								["timeline"] = { ADDED_3_1_0 },
@@ -126,10 +126,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
 					}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #elseif BEFORE LEGION
 						["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
 						-- #endif
-						["timeline"] = { "added 2.3.0.7561" },
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 				}),
 			}),
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29352, {	-- A Fowl Shortage
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5647,	-- A Lack of Fear [Darnassus]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
-					["timeline"] = { "removed 2.3.0" },
+					["timeline"] = { REMOVED_2_3_0 },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
 					["lvl"] = 20,
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29351, {	-- A Round for the Guards
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -469,7 +469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						209004,	-- Bruart
 					},
 					["coord"] = { 72.2, 76.6, IRONFORGE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN, WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -491,7 +491,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29355, {	-- Can't Get Enough Spice Bread
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -501,7 +501,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29342, {	-- Cold Water Fishing
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -584,7 +584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29344, {	-- Fish fer Squrky
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -670,7 +670,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29356, {	-- I Need to Cask a Favor
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -744,7 +744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29353, {	-- Keepin' the Haggis Flowin'
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -778,7 +778,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29347, {	-- Live Bait
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -829,7 +829,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29343, {	-- One fer the Ages
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1046,7 +1046,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER TBC
 						i(33792, {	-- Plans: Heavy Copper Longsword
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
-							["timeline"] = { "added 2.3.0" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						-- #else
 						i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29350, {	-- The Gnomish Bait-o-Matic
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1329,7 +1329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 405946 },	-- Dusty Chest
 					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
 					["coord"] = { 51.9, 12.8, IRONFORGE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -1518,7 +1518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", "added 2.3.0" },
+							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 						i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)
@@ -1812,7 +1812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(52584, {	-- Laida Gembold <Jewelcrafting Supplies>
 					["coord"] = { 50.6, 27.0, IRONFORGE },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = { {"sub", "common_recipes_vendor", 50482} }, -- Marith Lazuria <Jewelcrafting Supplies>
 				}),

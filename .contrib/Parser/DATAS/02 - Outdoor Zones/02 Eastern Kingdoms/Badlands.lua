@@ -122,10 +122,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1877),	-- Valley of Fangs
 				-- #endif
 				exploration(1517),	-- Uldaman
-				--[[
-				exploration(343),	-- Camp Wurg
-
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands
@@ -1935,7 +1931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9439, {	-- Unclaimed Baggage
 					["qg"] = 17097,	-- Advisor Sarophas
 					["coord"] = { 5.8, 48, BADLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
 					["groups"] = {

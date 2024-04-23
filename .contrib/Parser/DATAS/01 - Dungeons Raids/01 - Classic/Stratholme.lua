@@ -816,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-								["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
+								["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
 							}),
 						},
 					}),
@@ -854,7 +854,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							applyclassicphase(PHASE_SIX, {
 								["itemID"] = 22897,	-- Tome of Conjure Food VII
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["classes"] = { MAGE },
 								["spellID"] = 28612,	-- Conjure Food VII
 								["rank"] = 7,
@@ -944,7 +944,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 							}),
 							i(22301, {	-- Ironweave Robe
-								["timeline"] = { "removed 4.0.1", ADDED_10_1_5 },
+								["timeline"] = { REMOVED_4_0_1, ADDED_10_1_5 },
 							}),
 							i(22328, {	-- Legplates of Vigilance
 								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
@@ -970,6 +970,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(SERVICE_ENTRANCE, {
+				["provider"] = { "o", 175369 },	-- Elders' Square Service Entrance
 				-- #if AFTER 4.0.3
 				["mapID"] = 318, -- Service Entrance
 				["sym"] = {
@@ -993,11 +994,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10398,	-- Thuzadin Shadowcaster
 						}),
 						i(15768, {	-- Pattern: Wicked Leather Belt (RECIPE!)
-							["timeline"] = { "removed 2.0.5" },	-- Added to Leatherworking Trainers
+							["timeline"] = { REMOVED_2_0_5 },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
 						i(74274, {	-- Plans: Phantom Blade (RECIPE!)
-							["timeline"] = { "added 4.3.0.15005" },
+							["timeline"] = { ADDED_4_3_0 },
 							["crs"] = {
 								10463,	-- Shrieking Banshee
 								10464,	-- Wailing Banshee
@@ -1047,14 +1048,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "Found outside of Baroness Anastari's ziggurat.",
 						["groups"] = {
 							i(18783, {	-- Bottom Half of Advanced Armorsmithing: Volume III
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(13350, {	-- Insignia of the Black Guard
 								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-								["timeline"] = { "removed 2.0.1", ADDED_3_0_2 },
+								["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
 							}),
 						},
 					}),

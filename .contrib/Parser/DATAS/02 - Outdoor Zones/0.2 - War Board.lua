@@ -28,7 +28,7 @@ root(ROOTS.Zones, {
 			{"o",207323},	-- [TB]
 			{"o",207324},	-- [UC]
 		},
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["g"] = {
@@ -299,14 +299,14 @@ root(ROOTS.Zones, {
 			{"o",207321},	-- [DA]
 			{"o",207320},	-- [IF]
 		},
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["g"] = {
 			q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["qg"] = 45226,	-- Naraat the Earthspeaker
 				["coord"] = { 74.6, 18.8, STORMWIND_CITY },
-				["timeline"] = { "added 4.0.1", "removed 8.3.0" },
+				["timeline"] = { ADDED_4_0_1, "removed 8.3.0" },
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(80, 80, 30),
 			}),

@@ -6,8 +6,9 @@ local THOMAS_YANCE_GROUPS = {
 	i(23321),	-- Recruit's Robe
 };
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(251, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Old Hillsbrad Foothills
+	inst(251, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
+		["description"] = "This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2367,	-- Old Hillsbrad Foothills
 		-- #endif
@@ -19,13 +20,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10284, {	-- Escape from Durnholde
 					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 10283,	-- Taretha's Diversion
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(29599, {	-- Escape from Durnholde
 					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 29598,	-- Taretha's Diversion
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						i(29317),	-- Tempest's Touch
@@ -87,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10283, {	-- Taretha's Diversion
 					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10282,	-- Old Hillsbrad
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						objective(1, {	-- Internment Lodges Set Ablaze
@@ -97,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29598, {	-- Taretha's Diversion
 					["qg"] = 18723,	-- Erozion
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- Internment Lodges Set Ablaze
@@ -108,7 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10285, {	-- Return to Andormu
 					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10284,	-- Escape from Durnholde
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						i(29317),	-- Tempest's Touch

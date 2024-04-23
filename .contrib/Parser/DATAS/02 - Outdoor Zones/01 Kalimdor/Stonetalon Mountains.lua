@@ -134,14 +134,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				exploration(1076),	-- Webwinder Path
 				exploration(461),	-- Windshear Crag
-				--[[
-				exploration(636),	-- Blackwolf River
-				exploration(3157),	-- Boulderslide Cavern
-				exploration(463),	-- Cragpool Lake
-				exploration(468),	-- The Talon Den
-				exploration(466),	-- Valley of the Bloodfuries
-				exploration(2160),	-- Windshear Mine
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(360, {	-- Cliffwalker Post, Stonetalon Mountains
@@ -217,7 +209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
 						["coord"] = { 67.2, 52.2, STONETALON_MOUNTAINS },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							3988,	-- Venture Co. Operator
@@ -1237,7 +1229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78270, {	-- Goblin Lockpicks
 					["qg"] = 4086,	-- Veenix <Venture Co. Merchant>
 					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
 					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
 					["classes"] = { ROGUE },
@@ -2586,7 +2578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 209838, 1 },	-- Hypnotic Crystal
 						{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ASHENVALE, WAILING_CAVERNS },
 					["classes"] = { HUNTER },
 					["lvl"] = 15,
@@ -2655,7 +2647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
 					["sourceQuest"] = 78114,	-- Wild Wyvern Wrangling
 					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["lvl"] = 15,
 					["groups"] = {
@@ -3045,7 +3037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(11151, {	-- Formula: Enchant Gloves - Herbalism
-					["timeline"] = { "removed 4.3.0", "deleted 7.0.1" },	-- Replaced by BOP Version
+					["timeline"] = { REMOVED_4_3_0, "deleted 7.0.1" },	-- Replaced by BOP Version
 					["crs"] = {
 						4029,	-- Blackened Ancient
 						4028,	-- Charred Ancient

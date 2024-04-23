@@ -276,12 +276,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(352),	-- Zun'watha
 				-- #endif
-				--[[
-				exploration(1880),	-- Featherbeard's Hovel
-				exploration(1881),	-- Shindigger's Camp
-				exploration(2400),	-- The Forbidding Sea
-				exploration(349),	-- Wildhammer Keep
-				]]--
 			}),
 			-- #if BEFORE TBC
 			n(FACTIONS, {
@@ -340,7 +334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9470, {	-- A Gesture of Goodwill
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 41,
 					["groups"] = {
@@ -665,7 +659,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9469, {	-- Featherbeard's Endorsement
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -855,7 +849,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 181649 },	-- Featherbeard's Journal
 					["sourceQuest"] = 9469,	-- Featherbeard's Endorsement
 					["coord"] = { 13.4, 55.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1015,7 +1009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9471, {	-- Preying on the Predators
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
@@ -1124,7 +1118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 9476,	-- In Pursuit of Featherbeard
 					["coord"] = { 37.1, 71.5, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1760,7 +1754,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["sourceQuest"] = 2880,	-- Troll Necklace Bounty
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 2.0.3" },
+					["timeline"] = { REMOVED_2_0_3 },
 					-- #if BEFORE TBC
 					["maxReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					-- #endif
@@ -2152,7 +2146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(ZONE_DROPS, {
 				i(16214, {	-- Formula: Enchant Bracer - Greater Intellect
-					["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 					["cr"] = 2642,	-- Vilebranch Shadowcaster
 				}),
 				-- #if BEFORE CATA
@@ -2189,7 +2183,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				-- #endif
 			}),

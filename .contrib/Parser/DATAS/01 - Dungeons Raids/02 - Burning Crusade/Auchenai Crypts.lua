@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(247, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Auchenai Crypts
+	inst(247, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Auchenai Crypts
 		["lore"] = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3790,	-- Auchenai Crypts
@@ -31,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 19698,	-- Greatfather Aldrimus
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
 					["coord"] = { 35.1, 65.2, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain
@@ -47,13 +47,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 19698,	-- Greatfather Aldrimus
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
 					["coord"] = { 35.0, 65.2, TEROKKAR_FOREST },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 64, 15),
 				}),
 				q(29591, {	-- Raging Spirits
 					["qg"] = 54698,	-- Tormented Soulpriest
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- 0/5 Angered Skeleton slain
@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29590, {	-- The Dead Watcher
 					["qg"] = 54725,	-- Draenei Spirit
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- Shirrak the Dead Watcher slain
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29596, {	-- The End of the Exarch
 					["qg"] = 54725,	-- Draenei Spirit
 					["sourceQuest"] = 29595,	-- Everything Will Be Alright
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain

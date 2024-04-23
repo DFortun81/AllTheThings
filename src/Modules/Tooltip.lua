@@ -40,7 +40,7 @@ local function distance( x1, y1, x2, y2 )
 end
 local function GetPlayerPosition()
 	local mapID = app.CurrentMapID;
-	if not IsInInstance() then
+	if mapID and not IsInInstance() then
 		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 		if pos then
 			local px, py = pos:GetXY();
@@ -734,7 +734,7 @@ end
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 -- Tooltip API Differences between Modern and Legacy APIs.
-if TooltipDataProcessor then
+if TooltipDataProcessor and app.GameBuildVersion > 50000 then
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...

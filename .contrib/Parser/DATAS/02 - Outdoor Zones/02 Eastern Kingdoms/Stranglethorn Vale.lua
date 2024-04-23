@@ -181,25 +181,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(128),	-- Ziata'jai Ruins
 				exploration(19),	-- Zul'Gurub
 				exploration(122),	-- Zuuldaia Ruins
-				--[[
-				exploration(2177),	-- Battle Ring
-				exploration(7),		-- Blackwater Cove
-				exploration(303),	-- Shell Beach
-				exploration(2338),	-- South Seas
-				exploration(1578),	-- Southern Savage Coast
-				exploration(1742),	-- Spirit Den
-				exploration(1577),	-- The Cape of Stranglethorn
-				exploration(1757),	-- The Crimson Veil
-				exploration(302),	-- The Crystal Shore
-				exploration(1759),	-- The Damsel's Luck
-				exploration(2339),	-- The Great Sea
-				exploration(1758),	-- The Riptide
-				exploration(301),	-- The Savage Coast
-				exploration(106),	-- The Stockpile
-				exploration(126),	-- Tkashi Ruins
-				exploration(1760),	-- Venture Co. Operations Center
-				exploration(3357),	-- Yojamba Isle
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
@@ -262,7 +243,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 24366,	-- Nizzle <Gryphon Master>
 					["coord"] = { 38.2, 4.0, STRANGLETHORN_VALE },
 					-- #endif
-					["timeline"] = { "added 2.3.0.7382" },
+					["timeline"] = { ADDED_2_3_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -363,7 +344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 32, 28.6, STRANGLETHORN_VALE },
 					-- #endif
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Heart of Naias
@@ -584,7 +565,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 32, 28.6, STRANGLETHORN_VALE },
 					-- #endif
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodscalp Totem

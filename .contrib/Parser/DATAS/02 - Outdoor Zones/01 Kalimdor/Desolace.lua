@@ -143,14 +143,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2657),	-- Valley of Bones
 				-- #endif
 				exploration(607),	-- Valley of Spears
-				--[[
-				exploration(600),	-- Bolgan's Hole
-				exploration(2217),	-- Broken Spear Village
-				exploration(597),	-- Ghost Walker Post
-				exploration(598),	-- Sar'theris Strand
-				exploration(2617),	-- Scrabblescrew's Camp
-				exploration(2324),	-- The Veiled Sea
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(92, {	-- Gelkis Clan Centaur
@@ -1773,12 +1765,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
 							["timeline"] = {
 								"added 1.11.1.5462",
-								"removed 2.0.1.5678"
+								REMOVED_2_0_1
 							},
 						}),
 						i(32378, {	-- Silver Star [TBC]
 							["timeline"] = {
-								"added 2.0.1.5678",
+								ADDED_2_0_1,
 								REMOVED_4_0_3,
 							},
 						}),
@@ -2227,7 +2219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 31.6, 29.4, DESOLACE },
 					},
 					-- #endif
-					["timeline"] = { "added 2.2.0.7272" },
+					["timeline"] = { ADDED_2_2_0 },
 				}),
 				n(11688, {	-- Cursed Centaur
 					-- #if AFTER CATA
@@ -2348,7 +2340,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(7114, {	-- Pattern: Azure Silk Gloves

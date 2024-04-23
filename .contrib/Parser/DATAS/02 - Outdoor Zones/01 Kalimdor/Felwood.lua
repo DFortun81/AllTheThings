@@ -136,12 +136,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1766),	-- Shatter Scar Vale
 				exploration(1998),	-- Talonbranch Glade 
 				exploration(1769),	-- Timbermaw Hold
-				--[[
-				exploration(1764),	-- Bloodvenom River
-				exploration(1768),	-- Irontree Cavern
-				exploration(1770),	-- Shadow Hold
-				exploration(1771),	-- Shrine of the Deceiver
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(48, {	-- Bloodvenom Post, Felwood
@@ -159,7 +153,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.5, 82.2, FELWOOD },
 						-- #endif
 					},
-					["timeline"] = { "added 2.2.0.7272" },
+					["timeline"] = { ADDED_2_2_0 },
 				}),
 				fp(597, {	-- Irontree Clearing, Felwood
 					["cr"] = 43085,	-- Dirzak Pryocrank <Flight Master>

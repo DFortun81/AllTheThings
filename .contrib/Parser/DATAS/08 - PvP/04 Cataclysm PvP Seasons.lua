@@ -433,7 +433,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_VICIOUS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_0_3, "removed 4.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1974,7 +1974,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3, "removed 4.2.0" }, }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 				-- Original Sources are:
 				-- n51255 Lieutenant Tristia <Glorious Conquest Quartermaster> in Stormwind (Alliance)
 				-- n46593 Doris Volanthius <Glorious Conquest Quartermaster> in Orgrimmar (Horde)
@@ -2135,7 +2135,7 @@ root(ROOTS.PVP, {
 			})),
 		}),
 		applyclassicphase(CATA_PHASE_THREE, n(SEASON_RUTHLESS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 }, }, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3349,7 +3349,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(70413)),	-- Ruthless Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 }, }, {
 				-- Original Sources are:
 				-- n40606 Knight-Lieutenant T'Maire Sydes in Stormwind (Alliance)
 				-- n54659 Blood Guard Zar'shi in Orgrimmar (Horde)
@@ -4433,7 +4433,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(73500)),	-- Cataclysmic Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, "removed 5.0.0" }, }, {
 				-- Original Sources are: Unknown. Presumably:
 				-- n00000 (7 different ID's exist) Captain Dirgehammer in Stormwind (Alliance)
 				-- n00000 (7 different ID's exist) Sergeant Thunderhorn in Orgrimmar (Horde)

@@ -968,7 +968,7 @@ profession(261, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Beast Trai
 		
 		{
 			["recipeID"] = 24844,	-- Lightning Breath [Rank 1]
-			["timeline"] = { "created 1.0.1", "added 2.0.1" },
+			["timeline"] = { "created 1.0.1", ADDED_2_0_1 },
 			-- #if AFTER TBC
 			["crs"] = {
 				20797,	-- Deviate Coiler Hatchling (Wind Serpent, 11, The Barrens)

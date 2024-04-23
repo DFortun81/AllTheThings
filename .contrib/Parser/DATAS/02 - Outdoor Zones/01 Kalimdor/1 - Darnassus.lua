@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER 4.2.0
 			n(ACHIEVEMENTS, {
 				ach(5848, {	-- Fish or Cut Bait: Darnassus
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = FISHING,
 					["groups"] = {
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				ach(5842, {	-- Let's Do Lunch: Darnassus
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(457, {	-- Darnassus, Teldrassil (A)
 					["cr"] = 40552,	-- Leora <Hippogryph Master>
 					["coord"] = { 36.61, 47.82, DARNASSUS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					{ 39.6, 11.6, DARNASSUS },
 					{ 45.0, 50.5, DARNASSUS },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							29324,	-- The Sister's Pendant
 						},
 						["description"] = "Fishing Daily Quest Reward",
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983),	-- Strand Crawler (PET!)
 							i(33820),	-- Weather-Beaten Fishing Hat
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5641,	-- A Lack of Fear [Ironforge]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
-					["timeline"] = { "removed 2.3.0" },
+					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { IRONFORGE },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29325, {	-- A Slippery Snack
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29359, {	-- An Old Favorite
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10520, {	-- Assisting Arch Druid Staghelm [The Exodar]
 					["qg"] = 16739,	-- Caregiver Breel <Innkeeper>
 					["coord"] = { 59.6, 19.4, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29316, {	-- Back to Basics
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29321, {	-- Happy as a Clam Digger
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29314, {	-- Remembering the Ancestors
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29318, {	-- Ribs for the Sentinels
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -677,7 +677,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78192, {	-- Secrets of the Light (1/2)
 					["qg"] = 211188,	-- Maethra Slagheart
 					["coord"] = { 38.2, 89.2, DARNASSUS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ASHENVALE },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -698,7 +698,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
 					["coord"] = { 38.2, 89.2, DARNASSUS },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(79078, {	-- Sharing the Faith
 					["qg"] = 4092,	-- Lariia <Priest Trainer>
 					["coord"] = { 40, 87.4, DARNASSUS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 5,
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29357, {	-- Spice Bread Aplenty
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29323, {	-- Stocking Up
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -887,7 +887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29313, {	-- The Secret to Perfect Kimchi
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -917,7 +917,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29324, {	-- The Sister's Pendant
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1143,14 +1143,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, DARNASSUS },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(73838, {	-- Mountain Horse (MOUNT!)
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 						i(73839, {	-- Swift Mountain Horse (MOUNT!)
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -1416,7 +1416,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52641, {	-- Layna Karner <Blacksmithing Supplies>
 					["coord"] = { 56.6, 52.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
@@ -1675,7 +1675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52644, {	-- Tarien Silverdew <Jewelcrafting Supplies>
 					["coord"] = { 54.6, 29.8, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>

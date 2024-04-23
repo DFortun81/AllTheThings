@@ -48,7 +48,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 				i(187681, {	-- Vicious War Gulper [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),

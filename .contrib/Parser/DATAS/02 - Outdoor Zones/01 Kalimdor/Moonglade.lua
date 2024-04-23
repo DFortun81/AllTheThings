@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10955, {	-- Morthis Whisperwing
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.5, 40.6, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 22834,	-- Clintar Dreamwalker
 					["sourceQuest"] = 10964,	-- Waking the Sleeper
 					["coord"] = { 75.5, 67.0, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 10965,	-- No Mere Dream
 					["coord"] = { 72.5, 63.3, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { ZANGARMARSH },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78229, {	-- Trial of The Owls
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = {
 						{ "i", 210044, 1 },	-- Symbol of the First Owl
 						{ "i", 210043, 1 },	-- Symbol of the Second Owl
@@ -724,7 +724,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.6, 33.2, MOONGLADE },
 					["groups"] = {
 						i(14488, {	-- Pattern: Runecloth Boots
-							["timeline"] = { "removed 2.0.1" },	-- Learned from trainer, recipe removed.
+							["timeline"] = { REMOVED_2_0_1 },	-- Learned from trainer, recipe removed.
 							-- #if BEFORE 2.0.1
 							["isLimited"] = true
 							-- #endif

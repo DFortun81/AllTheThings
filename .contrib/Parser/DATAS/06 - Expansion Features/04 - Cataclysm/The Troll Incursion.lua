@@ -19,7 +19,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 		lore = {
 			en = "Empowered by the Zandalari's offer the Gurubashi launched on all-out attack to claim Stranglethorn Vale for themselves. In Northern Stranglethorn Bambala, Fort Livingston, Nesingwary's Expedition, Grom'gol Base Camp, and the Rebel Camp came under attack by serpents sent by High Priest Venoxis. High Priestess Kilnara sent panthers to attack the Rebel Camp and Grom'gol while the panther Mauti attacked the hunters at Nesingwary's Expedition. Both Grom'gol and the Rebel Camp later came under attack by Gurubashi trolls led by Bloodlord Mandokir. After heroes of the Horde and Alliance beat back the Gurubashi attack, they were sent to the Cape of Stranglethorn which faced its own troubles.",
 		},
-	}), bubbleDownSelf({ ["timeline"] = { "added 4.1.0.13682" } }, {
+	}), bubbleDownSelf({ ["timeline"] = { ADDED_4_1_0 } }, {
 		["maps"] = { NORTHERN_STRANGLETHORN, THE_CAPE_OF_STRANGLETHORN },
 		["lvl"] = 85,
 		["groups"] = {
@@ -252,19 +252,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29156, {	-- The Troll Incursion
 					-- Hero's Call Board
-					["timeline"] = { "added 4.1.0.13682", "removed 7.0.1" },
+					["timeline"] = { ADDED_4_1_0, "removed 7.0.1" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(29157, {	-- The Zandalari Menace
 					-- Warchief's Command Board
-					["timeline"] = { "added 4.1.0.13682", "removed 7.0.1" },
+					["timeline"] = { ADDED_4_1_0, "removed 7.0.1" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(29158, {	-- The Zandalar Representative
 					["qg"] = 52654,	-- Bwemba
-					["timeline"] = { "added 4.1.0.13682", "removed 7.0.1" },
+					["timeline"] = { ADDED_4_1_0, "removed 7.0.1" },
 					["coord"] = { 25.96, 29.32, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

@@ -58,7 +58,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 		},
 		{
 			["recipeID"] = 62158,	-- Rune of the Stoneskin Gargoyle
-			["timeline"] = { "added 3.0.8" },
+			["timeline"] = { ADDED_3_0_8 },
 		},
 		{
 			["recipeID"] = 326977,	-- Rune of Unending Thirst

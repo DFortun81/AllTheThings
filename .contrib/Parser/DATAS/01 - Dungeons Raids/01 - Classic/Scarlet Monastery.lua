@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(1048, {	-- Into The Scarlet Monastery
 						["qg"] = 2425,	-- Varimathras
 						["coord"] = { 56.3, 92.2, UNDERCITY },
-						["timeline"] = { "removed 3.3.0" },
+						["timeline"] = { REMOVED_3_3_0 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 33,
 						["groups"] = {
@@ -629,7 +629,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(34227, {	-- Deadman's Hand
-									["timeline"] = { "added 2.3.0", "removed 5.0.4", ADDED_10_1_7 },
+									["timeline"] = { ADDED_2_3_0, "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								o(103821, {	-- Doan's Strongbox
 									["groups"] = {

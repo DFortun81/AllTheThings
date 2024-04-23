@@ -66,7 +66,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						title(33, {	-- Scarab Lord Crieve
-							["timeline"] = { "added 2.0.3.28000", REMOVED_4_0_3 },	-- Added in Burning Crusade Prepatch
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },	-- Added in Burning Crusade Prepatch
 						}),
 						i(21176, {	-- Black Qiraji Battle Tank (MOUNT!)
 							["timeline"] = { REMOVED_4_0_3 },

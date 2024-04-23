@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_FOUR, inst(187, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Dragon Soul
+	applyclassicphase(CATA_PHASE_FOUR, inst(187, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
 		["maps"] = {
 			412,	-- Dragon Soul: Eye of Eternity

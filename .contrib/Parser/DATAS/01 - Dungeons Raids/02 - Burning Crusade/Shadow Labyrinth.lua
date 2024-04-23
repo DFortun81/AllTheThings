@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(29645, {	-- Ambassador Hellmaw
 					["qg"] = 54890,	-- Field Commander Mahfuun
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/12 Cabal Ritualist slain
@@ -33,18 +33,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10178, {	-- Find Spy To'gun
 					["qg"] = 19496,	-- Spy Grik'tha
 					["coord"] = { 39.9, 72.3, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29640, {	-- Find Spy To'gun
 					["qg"] = 54891,	-- Spy Grik'tha
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),
 				q(10095, {	-- Into the Heart of the Labyrinth
 					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["sourceQuest"] = 10094,	-- The Codex of Blood
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- Murmur slain
@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29644, {	-- Into the Heart of the Labyrinth
 					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["sourceQuest"] = 29643,	-- The Codex of Blood
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						objective(1, {	-- Murmur slain
 							["provider"] = { "n", 18708 },	-- Murmur
@@ -84,13 +84,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10094, {	-- The Codex of Blood
 					["qg"] = 19542,	-- Field Commander Mahfuun
 					["sourceQuest"] = 10177,	-- Trouble at Auchindoun
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29643, {	-- The Codex of Blood
 					["qg"] = 54890,	-- Field Commander Mahfuun
 					["coord"] = {50.4, 45.3, SHATTRATH_CITY },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(10666, {	-- The Lexicon Demonica
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10091, {	-- The Soul Devices
 					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 10178,	-- Find Spy To'gun
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Soul Device
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29641, {	-- The Soul Devices
 					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 29640,	-- Find Spy To'gun
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Soul Device
@@ -152,14 +152,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10177, {	-- Trouble at Auchindoun
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29642, {	-- Trouble at Auchindoun
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					-- This was available to a character with 29643 already completed, the follow up of this 'breadcrumb'...
 					-- ["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 68, 20),

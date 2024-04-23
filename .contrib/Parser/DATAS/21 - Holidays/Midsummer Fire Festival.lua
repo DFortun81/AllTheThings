@@ -161,7 +161,7 @@ local MERCHANT_GROUPS = {
 	}),
 	i(34686, {	-- Brazier of Dancing Flames (TOY!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { "added 2.4.0.7994" },
+		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(116440, {	-- Burning Defender's Medallion (TOY!)
 		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
@@ -185,7 +185,7 @@ local MERCHANT_GROUPS = {
 	}),
 	i(74278, {	-- Helm of the Fire Festival
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 	}),
 	i(188699, {	-- Insulated Dancing Insoles (TOY!)
 		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
@@ -217,22 +217,22 @@ local MERCHANT_GROUPS = {
 	-- #endif
 	i(34685, {	-- Vestment of Summer
 		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
-		["timeline"] = { "added 2.4.0.7994" },
+		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(34683, {	-- Sandals of Summer
 		["cost"] = { { "i", 23247, 200 } },	-- Burning Blossom
-		["timeline"] = { "added 2.4.0.7994" },
+		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(34599, {	-- Juggling Torch
 		-- #if AFTER WRATH
 		["description"] = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
 		-- #endif
 		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
-		["timeline"] = { "added 2.4.0.7994" },
+		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(23215, {	-- Bag of Smorc Ingredients
 		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
-		["timeline"] = { "added 2.4.0.7994" },
+		["timeline"] = { ADDED_2_4_0 },
 	}),
 	-- #if AFTER 2.4.0.7994
 	i(23435, {	-- Elderberry Pie
@@ -253,7 +253,7 @@ local MERCHANT_GROUPS = {
 	-- #endif
 	i(34684, {	-- Handful of Summer Petals
 		["cost"] = { { "i", 23247, 2 } },	-- Burning Blossom
-		["timeline"] = { "added 2.4.0.7994" },
+		["timeline"] = { ADDED_2_4_0 },
 	}),
 };
 
@@ -268,7 +268,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		["description"] = "Ahune is a frost elemental in Neptulon's service. The Twilight's Hammer planned to have him battle Ragnaros to start an elemental war on Azeroth.",
 		-- #endif
 		["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
-		["timeline"] = { "added 2.4.0.7994" },
+		["timeline"] = { ADDED_2_4_0 },
 		["isDaily"] = true,
 		["groups"] = {
 			ach(263, {	-- Ice the Frost Lord
@@ -303,10 +303,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 					}),
 					i(69771, {	-- Frostscythe of Lord Ahune [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 					}),
 					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
-						["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+						["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 					}),
 					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { ADDED_3_3_3 },
@@ -315,18 +315,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 			i(35723, {	-- Shards of Ahune
 				["description"] = "This item can be looted and completed once per character.",
-				["timeline"] = { "added 2.4.0.7994" },
+				["timeline"] = { ADDED_2_4_0 },
 			}),
 			i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
 				["timeline"] = { ADDED_7_0_3 },
 			}),
-			applyclassicphase(TBC_PHASE_THREE, i(35498, {["timeline"]={"added 2.4.2"}})),	-- Formula: Enchant Weapon - Deathfrost (RECIPE!)
+			applyclassicphase(TBC_PHASE_THREE, i(35498, {["timeline"]={ADDED_2_4_2}})),	-- Formula: Enchant Weapon - Deathfrost (RECIPE!)
 
 			-- #if BEFORE 4.2.0
 			-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 			-- Between Patch 3.3.3 and 4.2.0 it had no available source.
 			i(34955, {	-- Searing Scorchling (PET!)
-				["timeline"] = { "removed 3.3.3", "added 4.2.0" },
+				["timeline"] = { REMOVED_3_3_3, ADDED_4_2_0 },
 			}),
 			-- #endif
 
@@ -366,64 +366,64 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 
 			-- Cataclysm Rewards
 			i(69769, {	-- Cloak of the Frigid Winds [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69770, {	-- Icebound Cloak [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69768, {	-- Shroud of Winter's Chill [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69767, {	-- The Frost Lord's Battle Shroud [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69766, {	-- The Frost Lord's War Cloak [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 
 			i(54805, {	-- Cloak of the Frigid Winds [Level 80]
-				["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			}),
 			i(54801, {	-- Icebound Cloak [Level 80]
-				["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			}),
 			i(54804, {	-- Shroud of Winter's Chill [Level 80]
-				["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			}),
 			i(54803, {	-- The Frost Lord's Battle Shroud [Level 80]
-				["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			}),
 			i(54802, {	-- The Frost Lord's War Cloak [Level 80]
-				["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			}),
 
 			-- Original Rewards
 			i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35507, {	-- Amulet of Bitter Hatred [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35509, {	-- Amulet of Glacial Tranquility [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35508, {	-- Choker of the Arctic Flow [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35511, {	-- Hailstone Pendant [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35497, {	-- Cloak of the Frigid Winds [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35496, {	-- Icebound Cloak [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35494, {	-- Shroud of Winter's Chill [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35495, {	-- The Frost Lord's War Cloak [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			HUGE_SNOWBALL,
 		},
@@ -484,7 +484,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6007, {	-- Extinguishing Northrend (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1030, {	-- Extinguishing Outland (A)
@@ -496,7 +496,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6013, {	-- Extinguishing the Cataclysm (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11278, {	-- Extinguishing the Broken Isles (A)
@@ -509,7 +509,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 
 			ach(6011, {	-- Flame Warden of Cataclysm (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11283, {	-- Flame Warden of Draenor (A)
@@ -529,7 +529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6008, {	-- Flame Warden of Northrend (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1024, {	-- Flame Warden of Outland (A)
@@ -607,7 +607,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6010, {	-- Extinguishing Northrend (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1033, {	-- Extinguishing Outland (H)
@@ -623,12 +623,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6014, {	-- Extinguishing the Cataclysm (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 
 			ach(6012, {	-- Flame Keeper of Cataclysm (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11284, {	-- Flame Keeper of Draenor (H)
@@ -644,7 +644,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6009, {	-- Flame Keeper of Northrend (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1027, {	-- Flame Keeper of Outland (H)
@@ -703,7 +703,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				SCHOLOMANCE,
 			},
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,	-- NOTE: Crieve tested the flags for this quest with the ATT guild, it was not reset. (meaning it's a yearly repeatable)
 			["lvl"] = lvlsquish(50, 1, 1),
 			["groups"] = {
@@ -739,7 +739,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			-- #endif
 			["sourceQuest"] = 9319,	-- A Light in Dark Places
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
 			["groups"] = {
@@ -791,7 +791,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11696, {	-- Ahune is Here!
 			["qg"] = 25710,	-- Numa Cloudsister
 			["sourceQuest"] = 11955,	-- Ahune, the Frost Lord
-			["timeline"] = { "added 2.4.0.7994", "removed 4.0.1" },
+			["timeline"] = { ADDED_2_4_0, REMOVED_4_0_1 },
 			["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 			["lvl"] = lvlsquish(65, 15, 15),
 		}),
@@ -799,7 +799,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994", "removed 4.0.1" },
+			["timeline"] = { ADDED_2_4_0, REMOVED_4_0_1 },
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(65, 15, 15),
 		}),
@@ -808,7 +808,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 11886,	-- Unusual Activity
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["coord"] = { 10.2, 15.3, ASHENVALE },
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
 			},
@@ -836,7 +836,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -875,7 +875,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -986,7 +986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11964, {	-- Incense for the Summer Scorchlings (A)
 			["qg"] = FESTIVAL_LOREMASTER_ID,
 			["coords"] = FESTIVAL_LOREMASTER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
 				{ "i", 35725, 1 },	-- Summer Incense (Provided)
 			},
@@ -998,7 +998,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11966, {	-- Incense for the Festival Scorchlings (H)
 			["qg"] = FESTIVAL_TALESPINNER_ID,
 			["coords"] = FESTIVAL_TALESPINNER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
 				{ "i", 35725, 1 },	-- Summer Incense (Provided)
 			},
@@ -1012,7 +1012,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["coord"] = { 16.0, 20.8, ASHENVALE },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
 			},
@@ -1024,7 +1024,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["coord"] = { 16.0, 20.8, ASHENVALE },
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
 			},
@@ -1038,7 +1038,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["sourceQuest"] = 11657,	-- Torch Catching (A)
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -1052,7 +1052,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["sourceQuest"] = 11923,	-- Torch Catching (H)
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -1066,7 +1066,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["sourceQuest"] = 11657,	-- Torch Catching (A)
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -1080,7 +1080,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["sourceQuest"] = 11923,	-- Torch Catching (H)
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -1092,18 +1092,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		q(11882, {	-- Playing with Fire (A)
 			["qg"] = 25962,	-- Fire Eater (A)
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(11915, {	-- Playing with Fire (H)
 			["qg"] = 25994,	-- Fire Eater (H)
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 		}),
 		q(11972, {	-- Shards of Ahune
 			["provider"] = { "i", 35723 },	-- Shards of Ahune
 			["altQuests"] = { 11976 },	-- Ice Shards (Never Implemented?)
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			-- #if BEFORE WRATH
 			["lvl"] = 65,
 			-- #elseif BEFORE CATA
@@ -1160,7 +1160,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11935, {	-- Stealing Silvermoon's Flame
 			["provider"] = { "i", 35568 },	-- Flame of Silvermoon (Provided)
 			["coord"] = { 69.7, 42.7, SILVERMOON_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
@@ -1181,7 +1181,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11933, {	-- Stealing the Exodar's Flame
 			["provider"] = { "i", 35569 },	-- Flame of the Exodar (Provided)
 			["coord"] = { 40.8, 26.3, THE_EXODAR },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
@@ -1219,7 +1219,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
 			-- #endif
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { ASHENVALE },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
@@ -1241,7 +1241,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
 			-- #endif
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { DESOLACE },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
@@ -1263,7 +1263,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
 			-- #endif
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
 				-- #if BEFORE CATA
 				STRANGLETHORN_VALE,
@@ -1297,7 +1297,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
 			-- #endif
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { BURNING_STEPPES },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
@@ -1319,7 +1319,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
 			-- #endif
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { SILITHUS },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
@@ -1341,7 +1341,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
 			-- #endif
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { HELLFIRE_PENINSULA },
 			["isDaily"] = true,
 			-- #if BEFORE 9.0.5
@@ -1363,7 +1363,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 1,
@@ -1389,7 +1389,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 1,
@@ -1446,7 +1446,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				ISLE_OF_THUNDER,
 				-- #endif
 			},
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
@@ -1487,7 +1487,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				ISLE_OF_THUNDER,
 				-- #endif
 			},
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
@@ -1498,7 +1498,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["sourceQuest"] = 11731,	-- Torch Tossing (A)
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Catch 4 torches in a row.
@@ -1512,7 +1512,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["sourceQuest"] = 11922,	-- Torch Tossing (H)
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Catch 4 torches in a row.
@@ -1525,7 +1525,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11731, {	-- Torch Tossing (A)
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
@@ -1537,7 +1537,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11922, {	-- Torch Tossing (H)
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
@@ -1549,7 +1549,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11886, {	-- Unusual Activity
 			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { ASHENVALE },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
@@ -1578,7 +1578,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				WINTERSPRING,
 			},
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -1600,7 +1600,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				-- #endif
 				i(23379, {	-- Cinder Bracers
-					["timeline"] = { "removed 2.4.0" },
+					["timeline"] = { REMOVED_2_4_0 },
 				}),
 				-- #if BEFORE TBC
 				i(23247),	-- Burning Blossom
@@ -1618,7 +1618,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				SEARING_GORGE,
 			},
 			-- #endif
-			["timeline"] = { "removed 2.4.0" },
+			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -1649,12 +1649,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			q(29036, {	-- Honor the Flame — Deepholm
 				["qg"] = 51698,	-- Deepholm Flame Guardian
 				["coord"] = { 49.4, 51.4, DEEPHOLM },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			q(29030, {	-- Honor the Flame — Hyjal
 				["qg"] = 51682,	-- Hyjal Flame Guardian
 				["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			q(75617, {	-- Honor the Flame — Ohn'ahran Plains
 				["qg"] = 204413,	-- Ohn'ahran Plains Flame Guardian
@@ -1684,7 +1684,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			q(29031, {	-- Honor the Flame — Vashj'ir
 				["qg"] = 51697,	-- Vashj'ir Flame Guardian
 				["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			q(75650, {	-- Honor the Flame — Zaralek Cavern
 				["qg"] = 204417,	-- Zaralek Cavern Flame Guardian
@@ -1693,7 +1693,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 		})),
 		n(FACTION_HEADER_ALLIANCE, {
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = bubbleDown({ ["isYearly"] = true, ["races"] = ALLIANCE_ONLY }, {
 				q(11764, {	-- Desecrate this Fire! — Arathi Highlands
@@ -1717,7 +1717,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28919, {	-- Desecrate this Fire! — Azshara
 					["provider"] = { "o", 207991 },	-- Horde Bonfire
 					["coord"] = { 60.4, 53.5, AZSHARA },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11766, {	-- Desecrate this Fire! — Badlands
 					["provider"] = { "o", 187954 },	-- Horde Bonfire
@@ -1734,7 +1734,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28917, {	-- Desecrate this Fire! — Blasted Lands
 					["provider"] = { "o", 207989 },	-- Horde Bonfire
 					["coord"] = { 46.3, 14.4, BLASTED_LANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13441, {	-- Desecrate this Fire! — Borean Tundra
 					["provider"] = { "o", 194033 },	-- Horde Bonfire
@@ -1838,7 +1838,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28911, {	-- Desecrate this Fire! — Northern Stranglethorn
 					["provider"] = { "o", 207983 },	-- Horde Bonfire
 					["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11779, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 					["provider"] = { "o", 187967 },	-- Horde Bonfire
@@ -1864,7 +1864,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28914, {	-- Desecrate this Fire! — Southern Barrens
 					["provider"] = { "o", 207986 },	-- Horde Bonfire
 					["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11780, {	-- Desecrate this Fire! — Stonetalon Mountains
 					["provider"] = { "o", 187968 },	-- Horde Bonfire
@@ -1919,7 +1919,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(11785, {	-- Desecrate this Fire! — Thousand Needles
 					["provider"] = { "o", 187973 },	-- Horde Bonfire
 					["coord"] = { 42.5, 52.9, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.1" },	-- Freewind Post got destroyed with Cataclysm
+					["timeline"] = { REMOVED_4_0_1 },	-- Freewind Post got destroyed with Cataclysm
 				}),
 				q(11786, {	-- Desecrate this Fire! — Tirisfal Glades
 					["provider"] = { "o", 187974 },	-- Horde Bonfire
@@ -1928,17 +1928,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28944, {	-- Desecrate this Fire! — Twilight Highlands
 					["provider"] = { "o", 208090 },	-- Horde Bonfire
 					["coord"] = { 53.3, 46.5, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28948, {	-- Desecrate this Fire! — Uldum
 					["provider"] = { "o", 208094 },	-- Horde Bonfire
 					["coord"] = { 53.0, 34.4, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28920, {	-- Desecrate this Fire! — Un'Goro Crater
 					["provider"] = { "o", 207992 },	-- Horde Bonfire
 					["coord"] = { 56.3, 65.8, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 					["provider"] = { "o", 217852 },	-- Horde Bonfire
@@ -1953,7 +1953,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 					["provider"] = { "o", 207990 },	-- Horde Bonfire
 					["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11803, {	-- Desecrate this Fire! — Winterspring
 					["provider"] = { "o", 187953 },	-- Horde Bonfire
@@ -2000,7 +2000,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28925, {	-- Honor the Flame — Badlands
 					["qg"] = 51585,	-- Badlands Flame Warden
 					["coord"] = { 18.9, 56.1, BADLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11807, {	-- Honor the Flame — Blade's Edge Mountains
 					["qg"] = 25889,	-- Blade's Edge Flame Warden
@@ -2110,7 +2110,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(11819, {	-- Honor the Flame — Hillsbrad Foothills
 					["qg"] = 25901,	-- Hillsbrad Flame Warden
 					["coord"] = { 50.4, 47.6, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.1" },	-- Southshore got destroyed with Cataclysm
+					["timeline"] = { REMOVED_4_0_1 },	-- Southshore got destroyed with Cataclysm
 				}),
 				q(13488, {	-- Honor the Flame — Howling Fjord
 					["qg"] = 32804,	-- Howling Fjord Flame Warden
@@ -2136,7 +2136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28922, {	-- Honor the Flame — Northern Stranglethorn
 					["qg"] = 51574,	-- Northern Stranglethorn Flame Warden
 					["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11822, {	-- Honor the Flame — Redridge Mountains
 					["qg"] = 25904,	-- Redridge Flame Warden
@@ -2171,12 +2171,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28926, {	-- Honor the Flame — Southern Barrens
 					["qg"] = 51586,	-- Southern Barrens Flame Warden
 					["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28928, {	-- Honor the Flame — Stonetalon Mountains
 					["qg"] = 51588,	-- Stonetalon Mountains Flame Warden
 					["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13490, {	-- Honor the Flame — Storm Peaks
 					["qg"] = 32806,	-- Storm Peaks Flame Warden
@@ -2196,7 +2196,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28929, {	-- Honor the Flame — Swamp of Sorrows
 					["qg"] = 51602,	-- Swamp of Sorrows Flame Warden
 					["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11833, {	-- Honor the Flame — Tanaris
 					["qg"] = 25916,	-- Tanaris Flame Warden
@@ -2243,17 +2243,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28945, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51650,	-- Twilight Highlands Flame Warden
 					["coord"] = { 47.0, 28.0, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28950, {	-- Honor the Flame — Uldum
 					["qg"] = 51653,	-- Uldum Flame Warden
 					["coord"] = { 53.0, 32.0, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28932, {	-- Honor the Flame — Un'goro Crater
 					["qg"] = 51606,	-- Un'Goro Crater Flame Warden
 					["coord"] = { 60.0, 63.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32510, {	-- Honor the Flame — Vale of Eternal Blossoms
 					["qg"] = 69572,	-- Vale of Eternal Blossoms Flame Warden
@@ -2296,7 +2296,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 		}),
 		n(FACTION_HEADER_HORDE, {
-			["timeline"] = { "added 2.4.0.7994" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = bubbleDown({ ["isYearly"] = true, ["races"] = HORDE_ONLY }, {
 				q(11732, {	-- Desecrate this Fire! — Arathi Highlands
@@ -2322,7 +2322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28912, {	-- Desecrate this Fire! — Badlands
 					["provider"] = { "o", 207984 },	-- Alliance Bonfire
 					["coord"] = { 18.5, 56.1, BADLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
 					["provider"] = { "o", 187919 },	-- Alliance Bonfire
@@ -2420,7 +2420,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(11748, {	-- Desecrate this Fire! — Hillsbrad Foothills
 					["provider"] = { "o", 187931 },	-- Alliance Bonfire
 					["coord"] = { 50.4, 47.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.1" },	-- Southshore got destroyed with Cataclysm
+					["timeline"] = { REMOVED_4_0_1 },	-- Southshore got destroyed with Cataclysm
 				}),
 				q(13444, {	-- Desecrate this Fire! — Howling Fjord
 					["provider"] = { "o", 194038 },	-- Alliance Bonfire
@@ -2446,7 +2446,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28910, {	-- Desecrate this Fire! — Northern Stranglethorn
 					["provider"] = { "o", 207982 },	-- Alliance Bonfire
 					["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11751, {	-- Desecrate this Fire! — Redridge Mountains
 					["provider"] = { "o", 187934 },	-- Alliance Bonfire
@@ -2481,12 +2481,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28913, {	-- Desecrate this Fire! — Southern Barrens
 					["provider"] = { "o", 207985 },	-- Alliance Bonfire
 					["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28915, {	-- Desecrate this Fire! — Stonetalon Mountains
 					["provider"] = { "o", 207987 },	-- Alliance Bonfire
 					["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13446, {	-- Desecrate this Fire! — Storm Peaks
 					["provider"] = { "o", 194044 },	-- Alliance Bonfire
@@ -2506,7 +2506,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28916, {	-- Desecrate this Fire! — Swamp of Sorrows
 					["provider"] = { "o", 207988 },	-- Alliance Bonfire
 					["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11762, {	-- Desecrate this Fire! — Tanaris
 					["provider"] = { "o", 187945 },	-- Alliance Bonfire
@@ -2544,17 +2544,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28943, {	-- Desecrate this Fire! — Twilight Highlands
 					["provider"] = { "o", 208089 },	-- Alliance Bonfire
 					["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28947, {	-- Desecrate this Fire! — Uldum
 					["provider"] = { "o", 208093 },	-- Alliance Bonfire
 					["coord"] = { 53.4, 32.0, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28921, {	-- Desecrate this Fire! — Un'Goro Crater
 					["provider"] = { "o", 207993 },	-- Alliance Bonfire
 					["coord"] = { 60.0, 62.9, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32503, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 					["provider"] = { "o", 217851 },	-- Alliance Bonfire
@@ -2613,7 +2613,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28923, {	-- Honor the Flame — Azshara
 					["qg"] = 51575,	-- Azshara Flame Keeper
 					["coord"] = { 60.8, 53.5, AZSHARA },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11842, {	-- Honor the Flame — Badlands
 					["qg"] = 25925,	-- Badlands Flame Keeper
@@ -2630,7 +2630,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28930, {	-- Honor the Flame — Blasted Lands
 					["qg"] = 51603,	-- Blasted Lands Flame Keeper
 					["coord"] = { 46.2, 13.8, BLASTED_LANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13493, {	-- Honor the Flame — Borean Tundra
 					["qg"] = 32809,	-- Borean Tundra Flame Keeper
@@ -2747,7 +2747,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28924, {	-- Honor the Flame — Northern Stranglethorn
 					["qg"] = 51582,	-- Northern Stranglethorn Vale Flame Keeper
 					["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11855, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 					["qg"] = 25938,	-- Shadowmoon Valley Flame Keeper
@@ -2773,7 +2773,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28927, {	-- Honor the Flame — Southern Barrens
 					["qg"] = 51587,	-- The Southern Barrens Flame Keeper
 					["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11856, {	-- Honor the Flame — Stonetalon Mountains
 					["qg"] = 25940,	-- Stonetalon Flame Keeper
@@ -2829,7 +2829,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(11861, {	-- Honor the Flame — Thousand Needles
 					["qg"] = 25945,	-- Thousand Needles Flame Warden
 					["coord"] = { 42.3, 52.9, THOUSAND_NEEDLES },
-					["timeline"] = { "removed 4.0.1" },	-- Freewind Post got destroyed with Cataclysm
+					["timeline"] = { REMOVED_4_0_1 },	-- Freewind Post got destroyed with Cataclysm
 				}),
 				q(11862, {	-- Honor the Flame — Tirisfal Glades
 					["qg"] = 25946,	-- Tirisfal Glades Flame Keeper
@@ -2838,17 +2838,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28946, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51651,	-- Twilight Highlands Flame Keeper
 					["coord"] = { 53.1, 46.2, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28949, {	-- Honor the Flame — Uldum
 					["qg"] = 51652,	-- Uldum Flame Keeper
 					["coord"] = { 53.2, 34.5, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28933, {	-- Honor the Flame — Un'goro Crater
 					["qg"] = 51607,	-- Un'Goro Flame Keeper
 					["coord"] = { 56.0, 66.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32509, {	-- Honor the Flame — Vale of Eternal Blossoms
 					["qg"] = 69551,	-- Vale of Eternal Blossoms Flame Keeper
@@ -2863,7 +2863,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28931, {	-- Honor the Flame — Western Plaguelands
 					["qg"] = 51604,	-- Western Plaguelands Flame Keeper
 					["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11839, {	-- Honor the Flame — Winterspring
 					["qg"] = 25922,	-- Winterspring Flame Keeper
@@ -2905,7 +2905,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				{ 42.5, 26.0, THE_EXODAR },
 				-- #endif
 			},
-			["timeline"] = { "added 2.4.0.7897" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = MERCHANT_GROUPS,
 		}),
@@ -2923,7 +2923,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				{ 70.4, 44.3, SILVERMOON_CITY },
 				-- #endif
 			},
-			["timeline"] = { "added 2.4.0.7897" },
+			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = MERCHANT_GROUPS,
 		}),

@@ -241,7 +241,7 @@ GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE = r(58312, {	-- Gly
 });
 GLYPH_OF_BLIND = r(92579, {	-- Glyph of Blind
 	["name"] = "Glyph of Blind",
-	["timeline"] = { "added 4.0.1", "deleted 7.0.3" },
+	["timeline"] = { ADDED_4_0_1, "deleted 7.0.3" },
 });
 GLYPH_OF_BLINK = r(56973, {	-- Glyph of Blink
 	["name"] = "Glyph of Blink",
@@ -873,7 +873,7 @@ GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER = r(62162, {	-- Glyph of Focus / Glyp
 	-- #else
 	["name"] = "Glyph of Focus",
 	-- #endif
-	["timeline"] = { "added 3.0.8", "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_8, "deleted 6.0.2" },
 });
 GLYPH_OF_FORTITUDE_AND_BORROWED_TIME = r(58318, {	-- Glyph of Fortitude / Glyph of Borrowed Time [MOP+]
 	-- #if AFTER MOP
@@ -1189,7 +1189,7 @@ GLYPH_OF_ICEBOUND_FORTITUDE = r(57218, {	-- Glyph of Icebound Fortitude
 });
 GLYPH_OF_ICY_TOUCH = r(57219, {	-- Glyph of Icy Touch
 	["name"] = "Glyph of Icy Touch",
-	["timeline"] = { "added 3.0.8", "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_8, "deleted 7.0.3" },
 });
 GLYPH_OF_ICY_VEINS_AND_CONE_OF_COLD = r(56981, {	-- Glyph of Icy Veins / Glyph of Cone of Cold [5.0.4+]
 	["name"] = "Glyph of Icy Veins",
@@ -1961,7 +1961,7 @@ GLYPH_OF_SHACKLE_UNDEAD = r(58320, {	-- Glyph of Shackle Undead
 });
 GLYPH_OF_SHADOW = r(107907, {	-- Glyph of Shadow
 	["name"] = "Glyph of Shadow (2.0)",
-	["timeline"] = { "added 4.3.0" },
+	["timeline"] = { ADDED_4_3_0 },
 });
 GLYPH_OF_SHADOW_AND_POWER_WORD_BARRIER_AND_INNER_FOCUS_AND_WEAKENED_SOUL = r(57193, {	-- Glyph of Mind Soothe / Glyph of Shadow [3.3.0+] / Glyph of Power Word: Barrier [CATA+] / Glyph of Inner Focus [5.0.4+] / Glyph of Weakened Soul [5.2.0+]
 	-- #if AFTER 5.2.0

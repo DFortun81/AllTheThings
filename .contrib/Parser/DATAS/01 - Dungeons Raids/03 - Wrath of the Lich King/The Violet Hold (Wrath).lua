@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 31080,	-- Warden Alturas
 					["sourceQuest"] = 13158,	-- Discretion is Key
 					["coord"] = { 61.2, 63.2, NORTHREND_DALARAN },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(75, 75, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Cyanigosa slain
@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29830, {	-- Containment
 					["qg"] = 30658,	-- Lieutenant Sinclari
 					["sourceQuest"] = 29829,	-- Discretion is Key
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(75, 75, 15),
 					["groups"] = {
 						i(44343),	-- Conferred Pantaloons
@@ -66,14 +66,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13158, {	-- Discretion is Key
 					["qg"] = 16128,	-- Rhonin
 					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(75, 75, 15),
 				}),
 				q(29829, {	-- Discretion is Key
 					["qg"] = 16128,	-- Rhonin
 					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(75, 75, 15),
 				}),

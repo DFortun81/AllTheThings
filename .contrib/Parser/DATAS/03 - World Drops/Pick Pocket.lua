@@ -31,7 +31,7 @@ root(ROOTS.WorldDrops, {
 				filter(TOYS, {
 					i(63269, {	-- Loaded Gnomish Dice (TOY!)
 						["description"] = "Can be pickpocketed from Cataclysm humanoids.",
-						["timeline"] = { "added 4.0.1.12941" },
+						["timeline"] = { ADDED_4_0_1 },
 						["_drop"] = { "f" },	-- Drop Consumable
 					}),
 				}),

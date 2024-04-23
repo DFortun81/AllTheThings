@@ -269,14 +269,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_THREE, q(82062, {	-- Ever After
 					["qg"] = 222530,	-- Rugged Traveler
 					["description"] = "Just east of the Ring in Blackrock Depths is a bridge that leads north over lava.\n\nAs you get onto the bridge, look down and to the left; you'll see a friendly Dark Iron Dwarf below you on the base of a pillar. Clear the rest of the mobs ahead of you (Blazing Fireguards and a group of Shadowforge dwarves).\n\nMove to the left side of the bridge near a small brazier. Get onto the railing, hug the rock wall, and jump ahead onto the platform near the wall.\n\nMove to the end of the platform, hugging the wall, and move hard into the rock corner.\n\nTurn with your left shoulder to the wall and run carefully against the wall, until you just fall down into the exposed corner. Drop down onto the rock outcrop below. \n\nTurn left into a small room, where you'll encounter the Rugged Traveler.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["lvl"] = 48,
 					["groups"] = {
 						i(221316, {	-- Premo's Poise-Demanding Uniform
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(221315, {	-- Rainbow Generator
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 					},
 				})),
@@ -2366,7 +2366,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(11325),	-- Dark Iron Ale Mug
 				}),
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						i(10602),   -- Schematic: Deadly Scope (RECIPE!)
 					},
@@ -2461,7 +2461,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(11813, {	-- Formula: Smoking Heart of the Mountain [BOE] (RECIPE!)
-							["timeline"] = { "removed 3.1.0.9658" },
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
 						i(11631),	-- Stoneshell Guard
 						i(11632),	-- Earthslag Shoulders
@@ -2524,7 +2524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}, {
 						i(22047),	-- Top Piece of Lord Valthalak's Amulet
 						i(22305, {	-- Ironweave Mantle
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(22317),	-- Lefty's Brass Knuckle
 						i(22318),	-- Malgen's Long Bow
@@ -2607,7 +2607,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
-							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
+							["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
@@ -2782,10 +2782,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11313),	-- Ribbly's Head
 						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
 						i(2663, {	-- Ribbly's Bandolier
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(2662, {	-- Ribbly's Quiver
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(11742),	-- Wayfarer's Knapsack
 					},
@@ -2803,7 +2803,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, n(28067, {	-- Dark Iron Brewer
 					["description"] = "Speak to him until he passes out, a Mug will appear on the ground",
-					["timeline"] = { "added 2.4.3.8601" },
+					["timeline"] = { ADDED_2_4_3 },
 					["groups"] = {
 						i(38320),	-- Dire Brew
 					},
@@ -2820,7 +2820,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
-							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
+							["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
 						}),
 						-- #if BEFORE 7.3.2
 						i(11746),	-- Golem Skull Helm

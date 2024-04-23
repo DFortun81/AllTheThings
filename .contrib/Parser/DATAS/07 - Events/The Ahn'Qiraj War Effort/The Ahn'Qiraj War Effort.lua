@@ -19,7 +19,7 @@ THE_AHNQIRAJ_WAR_EFFORT = createHeader({
 	},
 });
 root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
-	applyclassicphase(PHASE_FIVE_WAR_EFFORT, bubbleDown({ ["timeline"] = { "removed 2.0.1" } }, {
+	applyclassicphase(PHASE_FIVE_WAR_EFFORT, bubbleDown({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		["maps"] = {
 			ORGRIMMAR,
 			IRONFORGE,
