@@ -635,6 +635,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(VENDORS, {
 				n(16388, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables, but will only serve characters that are at least Honoured with The Violet Eye.",
+					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored
 					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
 						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)
