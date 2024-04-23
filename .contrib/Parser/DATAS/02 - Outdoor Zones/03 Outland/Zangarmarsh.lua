@@ -220,7 +220,12 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(515, {	-- Sporeling Sprout (PET!)
 							["coord"] = { 20.0, 51.6, ZANGARMARSH },
+							-- #if BEFORE 5.3.0
 							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
+							["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly
+							-- #else
+							["description"] = "Found only in Sporeggar.",	-- The reputation requirement got removed in a late MoP patch, but can't find any confirmation on which one. Working assumption is 5.3.0 which brough battle pets to TBC raids.
+							-- #endif
 						}),
 					},
 				}),
