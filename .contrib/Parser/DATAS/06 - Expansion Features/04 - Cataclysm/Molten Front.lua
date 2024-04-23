@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29298, {	-- A Smoke-Stained Locket
 					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
-					["timeline"] = { "added 4.2.0.14241" },
+					["timeline"] = { ADDED_4_2_0 },
 					["maps"] = { MOONGLADE },
 				}),
 				q(29281, {	-- Additional Armaments
@@ -537,7 +537,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				q(29310, {	-- The Tipping Point
 					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29303,	-- Tragedy and Family
-					["timeline"] = { "added 4.2.0.14241" },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = lvlsquish(85, 85, 32),
 				}),
 				q(29214, {	-- The Shadow Wardens
@@ -573,7 +573,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
 					["coord"] = { 51.6, 44.8, MOONGLADE },
-					["timeline"] = { "added 4.2.0.14133" },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
 				}),
 				q(29302, {	-- Unlocking the Secrets Within

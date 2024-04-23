@@ -21,13 +21,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(CATA_PHASE_ONE, ach(5850, {	-- Fish or Cut Bait: Undercity
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5844, {	-- Let's Do Lunch: Undercity
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},

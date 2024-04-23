@@ -928,7 +928,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
+								["timeline"] = { ADDED_4_2_0, "removed 4.3.0" },
 							})),
 							applyclassicphase(CATA_PHASE_ONE, n(40211, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -1057,7 +1057,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
+								["timeline"] = { ADDED_4_2_0, "removed 4.3.0" },
 							})),
 							applyclassicphase(CATA_PHASE_ONE, n(40205, {	-- Zom Bocom <Honor Quartermaster>
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },

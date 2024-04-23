@@ -56,7 +56,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { "added 4.3.0.15005" },
 	}),
 	i(71726, {	-- Murkablo (PET!)
-		["timeline"] = { "added 4.2.0.14333" },
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 
 	ach(8793, {	-- Blizzcon 2013 - Murkalot

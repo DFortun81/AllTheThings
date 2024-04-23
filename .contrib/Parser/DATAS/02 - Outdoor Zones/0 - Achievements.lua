@@ -548,7 +548,7 @@ root(ROOTS.Zones, {
 			crit(13918),	-- Crucible of Carnage in Twilight Highlands
 		})),
 		ach(5794, {	-- Time Flies When You're Having Fun
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
 			["sym"] = {{"meta_achievement",

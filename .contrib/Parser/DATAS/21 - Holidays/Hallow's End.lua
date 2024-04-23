@@ -65,7 +65,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
-		["timeline"] = { "added 4.2.0.14333" },
+		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
@@ -75,7 +75,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		["timeline"] = { "added 4.2.0.14333" },
+		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
@@ -138,7 +138,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		["timeline"] = { "added 4.2.0.14333" },
+		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
@@ -174,7 +174,7 @@ local PET_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
-		["timeline"] = { "added 4.2.0.14333" },
+		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(151269, {	-- Naxxy (PET!)
@@ -733,7 +733,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(5837, {	-- Tricks and Treats of Cataclysm (A)
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["races"] = ALLIANCE_ONLY,
 			--[[
@@ -784,7 +784,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(5838, {	-- Tricks and Treats of Cataclysm (H)
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["races"] = HORDE_ONLY,
 			--[[
@@ -839,23 +839,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["groups"] = {
 				crit(18418, {	-- Arathi Highlands, Refuge Point
 					["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18419, {	-- Badlands, Dragon's Mouth
 					["coord"] = { 20.9, 56.2, BADLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18429, {	-- Badlands, Fuselight
 					["coord"] = { 65.9, 35.8, BADLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18420, {	-- Blasted Lands, Nethergarde Keep
 					["coord"] = { 60.7, 14.2, BLASTED_LANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18421, {	-- Blasted Lands, Surwich
 					["coord"] = { 44.4, 87.7, BLASTED_LANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if AFTER CATA
 				crit(2144, {	-- The Cape of Stranglethorn, Booty Bay
@@ -898,21 +898,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18422, {	-- The Hinterlands, Stormfeather Outpost
 					["coord"] = { 66.2, 44.4, THE_HINTERLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2137, {	-- Ironforge, The Commons
 					["coord"] = { 18.6, 51.3, IRONFORGE },
 				}),
 				crit(18422, {	-- Loch Modan, Farstrider's Lodge
 					["coord"] = { 82.9, 63.6, LOCH_MODAN },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2138, {	-- Loch Modan, Thelsamar
 					["coord"] = { 35.5, 48.4, LOCH_MODAN },
 				}),
 				crit(18423, {	-- Northern Stranglethorn, Fort Livingston
 					["coord"] = { 53.1, 66.9, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2139, {	-- Redridge Mountains, Lakeshire
 					-- #if AFTER CATA
@@ -923,7 +923,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18430, {	-- Searing Gorge, Iron Summit
 					["coord"] = { 39.4, 66.1, SEARING_GORGE },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2140, {	-- Stormwind, The Trade District
 					-- #if AFTER CATA
@@ -939,29 +939,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				crit(18431, {	-- Swamp of Sorrows, Bogpaddle
 					["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18424, {	-- Swamp of Sorrows, The Harborage
 					["coord"] = { 29.0, 32.6, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18426, {	-- Western Plaguelands, Chillwind Camp
 					["coord"] = { 43.4, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2142, {	-- Wetlands, Menethil Harbor
 					["coord"] = { 10.8, 60.9, WETLANDS },
 				}),
 				crit(18428, {	-- Wetlands, Swiftgear Station
 					["coord"] = { 26.1, 25.9, WETLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2141, {	-- Westfall, Sentinel Hill
 					["coord"] = { 52.9, 53.6, WESTFALL },
 				}),
 				crit(18427, {	-- Wetlands, Greenwarden's Grove
 					["coord"] = { 58.1, 39.2, WETLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 			]]--
@@ -977,15 +977,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18429, {	-- Badlands, Fuselight
 					["coord"] = { 65.9, 35.8, BADLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17626, {	-- Badlands, New Kargath
 					["coord"] = { 18.3, 42.8, BADLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17627, {	-- Blasted Lands, Dreadmaul Hold
 					["coord"] = { 40.5, 11.4, BLASTED_LANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if AFTER CATA
 				crit(2144, {	-- The Cape of Stranglethorn, Booty Bay
@@ -994,7 +994,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				crit(17633, {	-- The Cape of Stranglethorn, Hardwrench Hideaway
 					["coord"] = { 35.1, 27.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if AFTER CATA
 				crit(2143, {	-- Eastern Plaguelands, Light's Hope Chapel
@@ -1016,14 +1016,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(17628, {	-- Hillsbrad Foothills, Eastpoint Tower
 					["coord"] = { 60.3, 63.8, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2152, {	-- Hillsbrad Foothills, Tarren Mill
 					["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
 				}),
 				crit(17629, {	-- The Hinterlands, Hiri'watha Research Station
 					["coord"] = { 31.9, 57.9, THE_HINTERLANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2153, {	-- The Hinterlands, Revantusk Village
 					["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
@@ -1033,7 +1033,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18430, {	-- Searing Gorge, Iron Summit
 					["coord"] = { 39.4, 66.1, SEARING_GORGE },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2154, {	-- Silvermoon City, The Bazaar
 					["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
@@ -1043,7 +1043,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(17631, {	-- Silverpine Forest, Forsaken Rear Guard
 					["coord"] = { 44.3, 20.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2156, {	-- Silverpine Forest, The Sepulcher
 					["coord"] = { 46.4, 42.8, SILVERPINE_FOREST },
@@ -1055,7 +1055,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				crit(18431, {	-- Swamp of Sorrows, Bogpaddle
 					["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2158, {	-- Swamp of Sorrows, Stonard
 					["coord"] = { 46.9, 56.7, SWAMP_OF_SORROWS },
@@ -1065,14 +1065,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(17634, {	-- Tirisfal Glades, The Bulwark
 					["coord"] = { 83.0, 72.0, TIRISFAL_GLADES },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2160, {	-- Undercity, The Trade Quarter
 					["coord"] = { 67.7, 37.9, UNDERCITY },
 				}),
 				crit(17635, {	-- Western Plaguelands, Andorhal
 					["coord"] = { 48.2, 63.7, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 			]]--
@@ -1109,7 +1109,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18396, {	-- Desolace, Karnum's Glade
 					["coord"] = { 56.8, 50.0, DESOLACE },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2077, {	-- Desolace, Nijel's Point
 					["coord"] = { 66.3, 6.70, DESOLACE },
@@ -1128,15 +1128,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18398, {	-- Felwood - Talonbranch Glade
 					["coord"] = { 61.8, 26.7, FELWOOD },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18397, {	-- Felwood - Whisperwind Grove
 					["coord"] = { 44.6, 28.9, FELWOOD },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18399, {	-- Feralas, Dreamer's Rest
 					["coord"] = { 51.1, 17.8, FERALAS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2080, {	-- Feralas, Feathermoon Stronghold
 					-- #if AFTER CATA
@@ -1163,23 +1163,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				crit(18400, {	-- Southern Barrens, Fort Triumph
 					["coord"] = { 49.1, 68.5, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18401, {	-- Southern Barrens, Honor's Stand
 					["coord"] = { 39.0, 11.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18402, {	-- Southern Barrens, Northwatch Hold
 					["coord"] = { 65.6, 46.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18403, {	-- Stonetalon Mountains, Farwatcher's Glen
 					["coord"] = { 31.5, 60.7, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18412, {	-- Stonetalon Mountains, Northwatch Expedition Base
 					["coord"] = { 71.0, 79.1, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2081, {	-- Stonetalon Mountains, Thal'darah Overlook [CATA+] / Stonetalon Peak
 					-- #if AFTER CATA
@@ -1190,11 +1190,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18413, {	-- Stonetalon Mountains, Windshear Hold
 					["coord"] = { 59.1, 56.3, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(18415, {	-- Tanaris, Bootlegger Outpost
 					["coord"] = { 55.7, 60.9, TANARIS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if AFTER CATA
 				crit(2086, {	-- Tanaris, Gadgetzan
@@ -1214,7 +1214,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18417, {	-- Un'Goro Crater, Marshal's Stand
 					["coord"] = { 55.2, 62.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if AFTER CATA
 				crit(2087, {	-- Winterspring, Everlook
@@ -1236,22 +1236,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["groups"] = {
 				crit(17610, {	-- Ashenvale, Hellscream's Watch
 					["coord"] = { 38.6, 42.4, ASHENVALE },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17611, {	-- Ashenvale, Silverwind Refuge
 					["coord"] = { 50.2, 67.2, ASHENVALE },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2105, {	-- Ashenvale, Splintertree Post
 					["coord"] = { 73.9, 60.7, ASHENVALE },
 				}),
 				crit(17612, {	-- Ashenvale, Zoram'gar Outpost
 					["coord"] = { 13.0, 34.1, ASHENVALE },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17613, {	-- Azshara, Bilgewater Harbor
 					["coord"] = { 57.1, 50.2, AZSHARA },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if BEFORE CATA
 				crit(2106, {	-- Barrens, Camp Taurajo
@@ -1266,7 +1266,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				crit(18396, {	-- Desolace, Karnum's Glade
 					["coord"] = { 56.8, 50.0, DESOLACE },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2108, {	-- Desolace, Shadowprey Village
 					["coord"] = { 24.1, 68.3, DESOLACE },
@@ -1288,18 +1288,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				crit(18397, {	-- Felwood, Whisperwind Grove
 					["coord"] = { 44.6, 28.9, FELWOOD },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17616, {	-- Feralas, Camp Ataya
 					["coord"] = { 41.4, 15.6, FERALAS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2111, {	-- Feralas, Camp Mojache
 					["coord"] = { 74.8, 45.1, FERALAS },
 				}),
 				crit(17617, {	-- Feralas, Stonemaul Hold
 					["coord"] = { 52.0, 47.7, FERALAS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2112, {	-- Mulgore, Bloodhoof Village
 					["coord"] = { 46.8, 60.4, MULGORE },
@@ -1310,11 +1310,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(17618, {	-- Northern Barrens, Grol'dom Farm
 					["coord"] = { 56.3, 40.1, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17619, {	-- Northern Barrens, Nozzlepot's Outpost
 					["coord"] = { 62.5, 16.6, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2083, {	-- Northern Barrens, Ratchet
 					-- #if AFTER CATA
@@ -1338,22 +1338,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				crit(17620, {	-- Southern Barrens, Desolation Hold
 					["coord"] = { 40.7, 69.3, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17621, {	-- Southern Barrens, Hunter's Hill
 					["coord"] = { 39.3, 20.1, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(17622, {	-- Stonetalon Mountains, Krom'gar Fortress
 					["coord"] = { 66.5, 64.2, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				crit(2114, {	-- Stonetalon Mountains, Sun Rock Retreat
 					["coord"] = { 50.4, 63.8, STONETALON_MOUNTAINS },
 				}),
 				crit(18415, {	-- Tanaris, Bootlegger Outpost
 					["coord"] = { 55.7, 60.9, TANARIS },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if AFTER CATA
 				crit(2086, {	-- Tanaris, Gadgetzan
@@ -1372,7 +1372,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				crit(18417, {	-- Un'Goro Crater, Marshal's Stand
 					["coord"] = { 55.2, 62.1, UNGORO_CRATER },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #if AFTER CATA
 				crit(2087, {	-- Winterspring, Everlook
@@ -1387,7 +1387,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(5836, {	-- Tricks and Treats of Northrend (A)
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["races"] = ALLIANCE_ONLY,
 			--[[
@@ -1463,7 +1463,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(5835, {	-- Tricks and Treats of Northrend (H)
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["races"] = HORDE_ONLY,
 			--[[
@@ -3418,7 +3418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { "added 4.2.0.14333"}
+					["timeline"] = { ADDED_4_2_0}
 				}),
 			},
 		}),
@@ -3431,7 +3431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { "added 4.2.0.14333"}
+					["timeline"] = { ADDED_4_2_0}
 				}),
 			},
 		}),

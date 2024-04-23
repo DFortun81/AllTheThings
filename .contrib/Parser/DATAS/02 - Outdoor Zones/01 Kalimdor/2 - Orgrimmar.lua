@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5477, {	-- Fish or Cut Bait: Orgrimmar
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				ach(5475, {	-- Let's Do Lunch: Orgrimmar
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -641,11 +641,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29401, {	-- Blown Away
 					["qg"] = 54004,	-- Jaga
 					["coord"] = { 48.1, 46.8, ORGRIMMAR },
-					["timeline"] = { "added 4.2.0.14133" },
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(72045, {	-- Horde Balloon (PET!)
-							["timeline"] = { "added 4.2.0.14133" },
+							["timeline"] = { ADDED_4_2_0 },
 						}),
 					},
 				}),
@@ -1668,7 +1668,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29440, {	-- The Call of the World-Shaman
 					["qg"] = 45244,	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
-					["timeline"] = { "added 4.2.0.14133" },
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

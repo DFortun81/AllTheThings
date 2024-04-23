@@ -3471,7 +3471,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(53410, {	-- Lissah Spellwick <Enchanting Trainer & Supplies>
 					["coord"] = { 66.0, 49.6, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 4.2.0.14313" },
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

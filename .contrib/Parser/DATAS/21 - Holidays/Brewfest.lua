@@ -1147,7 +1147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 46.6, 40.3, DUN_MOROGH },
 				-- #endif
-				["timeline"] = { "added 4.2.0.14288" },
+				["timeline"] = { ADDED_4_2_0 },
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -1162,7 +1162,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 46.3, 14.8, DUROTAR },
 				-- #endif
-				["timeline"] = { "added 4.2.0.14288" },
+				["timeline"] = { ADDED_4_2_0 },
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -2078,7 +2078,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = BREWFEST_TOKEN_COST(100),
 					}),
 					i(71137, {	-- Brewfest Keg Pony (TOY!)
-						["timeline"] = { "added 4.2.0.14333" },
+						["timeline"] = { ADDED_4_2_0 },
 						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(33927, {	-- Brewfest Pony Keg (TOY!)
@@ -2264,7 +2264,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = BREWFEST_TOKEN_COST(100),
 					}),
 					i(71137, {	-- Brewfest Keg Pony (TOY!)
-						["timeline"] = { "added 4.2.0.14333" },
+						["timeline"] = { ADDED_4_2_0 },
 						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(33927, {	-- Brewfest Pony Keg (TOY!)

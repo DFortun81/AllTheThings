@@ -1323,13 +1323,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 70938 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2011.",
-			["timeline"] = { "added 4.2.0.14333", REMOVED_5_1_0 },
+			["timeline"] = { ADDED_4_2_0, REMOVED_5_1_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
 			["groups"] = {
 				i(70923, {	-- Gaudy Winter Veil Sweater
-					["timeline"] = { "added 4.2.0.14333" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 		}),
@@ -2322,7 +2322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #if AFTER 5.1.0
 				i(70923, {	-- Gaudy Winter Veil Sweater
-					["timeline"] = { "added 4.2.0.14333" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				-- #endif
 				i(17303),	-- Blue Ribboned Wrapping Paper

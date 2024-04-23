@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER 4.2.0
 			n(ACHIEVEMENTS, {
 				ach(5848, {	-- Fish or Cut Bait: Darnassus
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = FISHING,
 					["groups"] = {
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				ach(5842, {	-- Let's Do Lunch: Darnassus
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

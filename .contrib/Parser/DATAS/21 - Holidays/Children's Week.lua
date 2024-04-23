@@ -60,7 +60,7 @@ local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 			["timeline"] = { "added 5.0.4.15913" },
 		}),
 		i(71153, {	-- Magical Pet Biscuit
-			["timeline"] = { "added 4.2.0.14333" },
+			["timeline"] = { ADDED_4_2_0 },
 		}),
 		i(98114, {	-- Pet Treat
 			["timeline"] = { "added 5.3.0.16758" },

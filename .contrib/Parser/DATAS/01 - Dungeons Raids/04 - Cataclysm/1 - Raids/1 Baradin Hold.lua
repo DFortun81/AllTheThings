@@ -322,7 +322,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					h(i(73537)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Horde)
 				},
 			}))),
-			applyclassicphase(CATA_PHASE_THREE, e(140, bubbleDownSelf({ ["timeline"] = { "added 4.2.0" }, }, {	-- Occu'thar
+			applyclassicphase(CATA_PHASE_THREE, e(140, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 }, }, {	-- Occu'thar
 				["creatureID"] = 52363,
 				["groups"] = {
 					ach(6045),	-- Occu'thar

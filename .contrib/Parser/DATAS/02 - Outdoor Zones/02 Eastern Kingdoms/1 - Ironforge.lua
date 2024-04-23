@@ -25,13 +25,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(CATA_PHASE_ONE, ach(5847, {	-- Fish or Cut Bait: Ironforge
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5841, {	-- Let's Do Lunch: Ironforge
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},

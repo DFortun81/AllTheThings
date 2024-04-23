@@ -35,13 +35,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(CATA_PHASE_ONE, ach(5476, {	-- Fish or Cut Bait: Stormwind
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5474, {	-- Let's Do Lunch: Stormwind
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{ "achievement_criteria" }},
@@ -981,11 +981,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29412, {	-- Blown Away
 					["qg"] = 54117,	-- Vin
 					["coord"] = { 58.8, 52.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.2.0.14133" },
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(72042, {	-- Alliance Balloon (PET!)
-							["timeline"] = { "added 4.2.0.14133" },
+							["timeline"] = { ADDED_4_2_0 },
 						}),
 					},
 				}),
@@ -3000,7 +3000,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29439, {	-- The Call of the World-Shaman
 					["qg"] = 45226,	-- Naraat the Earthspeaker
 					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.2.0" },
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -6590,7 +6590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
-					["timeline"] = { "added 4.2.0.14313" },
+					["timeline"] = { ADDED_4_2_0 },
 					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

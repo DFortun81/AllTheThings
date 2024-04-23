@@ -265,7 +265,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_4_1_0, "removed 4.2.0.14313" },
 		}),
 		i(72068, {	-- Guardian Cub (PET!)
-			["timeline"] = { "added 4.2.0.14313", "removed 5.4.8" },
+			["timeline"] = { ADDED_4_2_0, "removed 5.4.8" },
 		}),
 		i(49662, {	-- Gryphon Hatchling (PET!)
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",

@@ -78,7 +78,7 @@ root(ROOTS.Character, n(FACTION_HEADER_GUILD, {
 			}),
 			ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 				i(71033, {	-- Lil' Tarecgosa (PET!) - Exalted
-					["timeline"] = { "added 4.2.0.14333" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			}),
 			ach(4988, {	-- Guild Glory of the Cataclysm Raider

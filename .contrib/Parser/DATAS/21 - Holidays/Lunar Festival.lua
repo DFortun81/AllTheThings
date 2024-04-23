@@ -78,7 +78,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		})),
 		ach(6006, {	-- Elders of Cataclysm
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 		}),
 		ach(912, {	-- Elders of Eastern Kingdoms
 			["sym"] = {{ "achievement_criteria" }},

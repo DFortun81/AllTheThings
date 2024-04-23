@@ -2721,7 +2721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
 					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.2.0.14241" },
+					["timeline"] = { ADDED_4_2_0 },
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
