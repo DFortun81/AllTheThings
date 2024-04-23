@@ -736,6 +736,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 						["qg"] = 28033,	-- Weslex Quickwrench
 						["sourceQuest"] = 12522,	-- Need an Engine, Take an Engine
+						["groups"] = {
+							o_repeated({
+								i(38349),	-- Venture Co. Spare Parts (QI!)
+								o(190453),	-- Venture Co. Spare Parts
+								o(190454),	-- Venture Co. Spare Parts
+								o(190455),	-- Venture Co. Spare Parts
+							}),
+						},
 					}),
 					q(12577, {	-- Home Time!
 						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
@@ -843,6 +851,11 @@ root(ROOTS.Zones, {
 					q(12522, {	-- Need an Engine, Take an Engine
 						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 						["qg"] = 28033,	-- Weslex Quickwrench
+						["groups"] = {
+							o(190447, {	-- Flying Machine Engine
+								i(38334),	-- Flying Machine Engine (QI!)
+							}),
+						},
 					}),
 					q(12528, {	-- Playing Along
 						["coord"] = { 50.5, 76.5, SHOLAZAR_BASIN },
@@ -978,11 +991,29 @@ root(ROOTS.Zones, {
 							12549,	-- Dreadsaber Matery: Becoming a Predator
 							12520,	-- Rhino Mastery: The Test
 						},
+						["groups"] = {
+							o(190622, {	-- Sturdy Vine
+								o(190623, {	-- Papaya
+									i(38655),	-- Papaya (QI!)
+								}),
+								o(190624, {	-- Orange
+									i(38656),	-- Orange (QI!)
+								}),
+								o(190625, {	-- Banana Bunch
+									i(38653),	-- Banana Bunch (QI!)
+								}),
+							}),
+						},
 					}),
 					q(12644, {	-- Still At It
 						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 						["qg"] = 29157,	-- Grimbooze Thunderbrew
 						["sourceQuest"] = 12634,	-- Some Make Lemonade, Some Make Liquor
+						["groups"] = {
+							o(190643, {	-- Thunderbrew's Jungle Punch
+								i(38688),	-- Thunderbrew's Jungle Punch (QI!)
+							}),
+						},
 					}),
 					q(12547, {	-- The Activation Rune
 						["lvl"] = 66,
@@ -1084,6 +1115,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 						["qg"] = 29157,	-- Crimbooze Thunderbrew
 						["sourceQuest"] = 12644,	-- Still At It
+						["groups"] = {
+							i(38697),	-- Jungle Punch Sample (QI!)
+						},
 					}),
 					q(12531, {	-- The Underground Menace
 						["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
