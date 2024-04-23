@@ -48,7 +48,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 				i(187644, {	-- Vicious Warstalker [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),

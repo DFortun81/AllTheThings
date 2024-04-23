@@ -37,7 +37,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH }
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 				i(184014, {	-- Vicious War Spider [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
