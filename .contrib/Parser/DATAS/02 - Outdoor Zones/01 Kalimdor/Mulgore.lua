@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2994,	-- Ancestral Spirit
 					["sourceQuest"] = 773,	-- Rite of Wisdom
 					["coord"] = { 61.4, 21, MULGORE },
-					["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -1151,7 +1151,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
 					["sourceQuest"] = 14439,	-- Journey into Thunder Bluff
 					["coord"] = { 59.8, 51.6, THUNDER_BLUFF },
-					["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 					["groups"] = {
@@ -1202,7 +1202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14438, {	-- Sharing the Land
 					["qg"] = 36644,	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, MULGORE },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(57204, {	-- Thunderhorn Cloak

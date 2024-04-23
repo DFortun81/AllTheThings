@@ -303,7 +303,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 					}),
 					i(69771, {	-- Frostscythe of Lord Ahune [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 					}),
 					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
 						["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
@@ -366,19 +366,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 
 			-- Cataclysm Rewards
 			i(69769, {	-- Cloak of the Frigid Winds [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69770, {	-- Icebound Cloak [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69768, {	-- Shroud of Winter's Chill [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69767, {	-- The Frost Lord's Battle Shroud [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(69766, {	-- The Frost Lord's War Cloak [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 
 			i(54805, {	-- Cloak of the Frigid Winds [Level 80]
@@ -1012,7 +1012,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["coord"] = { 16.0, 20.8, ASHENVALE },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
 			},
@@ -1649,12 +1649,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			q(29036, {	-- Honor the Flame — Deepholm
 				["qg"] = 51698,	-- Deepholm Flame Guardian
 				["coord"] = { 49.4, 51.4, DEEPHOLM },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			q(29030, {	-- Honor the Flame — Hyjal
 				["qg"] = 51682,	-- Hyjal Flame Guardian
 				["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			q(75617, {	-- Honor the Flame — Ohn'ahran Plains
 				["qg"] = 204413,	-- Ohn'ahran Plains Flame Guardian
@@ -1684,7 +1684,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			q(29031, {	-- Honor the Flame — Vashj'ir
 				["qg"] = 51697,	-- Vashj'ir Flame Guardian
 				["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			q(75650, {	-- Honor the Flame — Zaralek Cavern
 				["qg"] = 204417,	-- Zaralek Cavern Flame Guardian
@@ -1717,7 +1717,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28919, {	-- Desecrate this Fire! — Azshara
 					["provider"] = { "o", 207991 },	-- Horde Bonfire
 					["coord"] = { 60.4, 53.5, AZSHARA },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11766, {	-- Desecrate this Fire! — Badlands
 					["provider"] = { "o", 187954 },	-- Horde Bonfire
@@ -1734,7 +1734,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28917, {	-- Desecrate this Fire! — Blasted Lands
 					["provider"] = { "o", 207989 },	-- Horde Bonfire
 					["coord"] = { 46.3, 14.4, BLASTED_LANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13441, {	-- Desecrate this Fire! — Borean Tundra
 					["provider"] = { "o", 194033 },	-- Horde Bonfire
@@ -1838,7 +1838,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28911, {	-- Desecrate this Fire! — Northern Stranglethorn
 					["provider"] = { "o", 207983 },	-- Horde Bonfire
 					["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11779, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 					["provider"] = { "o", 187967 },	-- Horde Bonfire
@@ -1864,7 +1864,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28914, {	-- Desecrate this Fire! — Southern Barrens
 					["provider"] = { "o", 207986 },	-- Horde Bonfire
 					["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11780, {	-- Desecrate this Fire! — Stonetalon Mountains
 					["provider"] = { "o", 187968 },	-- Horde Bonfire
@@ -1928,17 +1928,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28944, {	-- Desecrate this Fire! — Twilight Highlands
 					["provider"] = { "o", 208090 },	-- Horde Bonfire
 					["coord"] = { 53.3, 46.5, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28948, {	-- Desecrate this Fire! — Uldum
 					["provider"] = { "o", 208094 },	-- Horde Bonfire
 					["coord"] = { 53.0, 34.4, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28920, {	-- Desecrate this Fire! — Un'Goro Crater
 					["provider"] = { "o", 207992 },	-- Horde Bonfire
 					["coord"] = { 56.3, 65.8, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 					["provider"] = { "o", 217852 },	-- Horde Bonfire
@@ -1953,7 +1953,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 					["provider"] = { "o", 207990 },	-- Horde Bonfire
 					["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11803, {	-- Desecrate this Fire! — Winterspring
 					["provider"] = { "o", 187953 },	-- Horde Bonfire
@@ -2000,7 +2000,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28925, {	-- Honor the Flame — Badlands
 					["qg"] = 51585,	-- Badlands Flame Warden
 					["coord"] = { 18.9, 56.1, BADLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11807, {	-- Honor the Flame — Blade's Edge Mountains
 					["qg"] = 25889,	-- Blade's Edge Flame Warden
@@ -2136,7 +2136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28922, {	-- Honor the Flame — Northern Stranglethorn
 					["qg"] = 51574,	-- Northern Stranglethorn Flame Warden
 					["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11822, {	-- Honor the Flame — Redridge Mountains
 					["qg"] = 25904,	-- Redridge Flame Warden
@@ -2171,12 +2171,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28926, {	-- Honor the Flame — Southern Barrens
 					["qg"] = 51586,	-- Southern Barrens Flame Warden
 					["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28928, {	-- Honor the Flame — Stonetalon Mountains
 					["qg"] = 51588,	-- Stonetalon Mountains Flame Warden
 					["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13490, {	-- Honor the Flame — Storm Peaks
 					["qg"] = 32806,	-- Storm Peaks Flame Warden
@@ -2196,7 +2196,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28929, {	-- Honor the Flame — Swamp of Sorrows
 					["qg"] = 51602,	-- Swamp of Sorrows Flame Warden
 					["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11833, {	-- Honor the Flame — Tanaris
 					["qg"] = 25916,	-- Tanaris Flame Warden
@@ -2243,17 +2243,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28945, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51650,	-- Twilight Highlands Flame Warden
 					["coord"] = { 47.0, 28.0, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28950, {	-- Honor the Flame — Uldum
 					["qg"] = 51653,	-- Uldum Flame Warden
 					["coord"] = { 53.0, 32.0, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28932, {	-- Honor the Flame — Un'goro Crater
 					["qg"] = 51606,	-- Un'Goro Crater Flame Warden
 					["coord"] = { 60.0, 63.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32510, {	-- Honor the Flame — Vale of Eternal Blossoms
 					["qg"] = 69572,	-- Vale of Eternal Blossoms Flame Warden
@@ -2322,7 +2322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28912, {	-- Desecrate this Fire! — Badlands
 					["provider"] = { "o", 207984 },	-- Alliance Bonfire
 					["coord"] = { 18.5, 56.1, BADLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
 					["provider"] = { "o", 187919 },	-- Alliance Bonfire
@@ -2446,7 +2446,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28910, {	-- Desecrate this Fire! — Northern Stranglethorn
 					["provider"] = { "o", 207982 },	-- Alliance Bonfire
 					["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11751, {	-- Desecrate this Fire! — Redridge Mountains
 					["provider"] = { "o", 187934 },	-- Alliance Bonfire
@@ -2481,12 +2481,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28913, {	-- Desecrate this Fire! — Southern Barrens
 					["provider"] = { "o", 207985 },	-- Alliance Bonfire
 					["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28915, {	-- Desecrate this Fire! — Stonetalon Mountains
 					["provider"] = { "o", 207987 },	-- Alliance Bonfire
 					["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13446, {	-- Desecrate this Fire! — Storm Peaks
 					["provider"] = { "o", 194044 },	-- Alliance Bonfire
@@ -2506,7 +2506,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28916, {	-- Desecrate this Fire! — Swamp of Sorrows
 					["provider"] = { "o", 207988 },	-- Alliance Bonfire
 					["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11762, {	-- Desecrate this Fire! — Tanaris
 					["provider"] = { "o", 187945 },	-- Alliance Bonfire
@@ -2544,17 +2544,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28943, {	-- Desecrate this Fire! — Twilight Highlands
 					["provider"] = { "o", 208089 },	-- Alliance Bonfire
 					["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28947, {	-- Desecrate this Fire! — Uldum
 					["provider"] = { "o", 208093 },	-- Alliance Bonfire
 					["coord"] = { 53.4, 32.0, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28921, {	-- Desecrate this Fire! — Un'Goro Crater
 					["provider"] = { "o", 207993 },	-- Alliance Bonfire
 					["coord"] = { 60.0, 62.9, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32503, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 					["provider"] = { "o", 217851 },	-- Alliance Bonfire
@@ -2613,7 +2613,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28923, {	-- Honor the Flame — Azshara
 					["qg"] = 51575,	-- Azshara Flame Keeper
 					["coord"] = { 60.8, 53.5, AZSHARA },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11842, {	-- Honor the Flame — Badlands
 					["qg"] = 25925,	-- Badlands Flame Keeper
@@ -2630,7 +2630,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28930, {	-- Honor the Flame — Blasted Lands
 					["qg"] = 51603,	-- Blasted Lands Flame Keeper
 					["coord"] = { 46.2, 13.8, BLASTED_LANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(13493, {	-- Honor the Flame — Borean Tundra
 					["qg"] = 32809,	-- Borean Tundra Flame Keeper
@@ -2747,7 +2747,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28924, {	-- Honor the Flame — Northern Stranglethorn
 					["qg"] = 51582,	-- Northern Stranglethorn Vale Flame Keeper
 					["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11855, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 					["qg"] = 25938,	-- Shadowmoon Valley Flame Keeper
@@ -2773,7 +2773,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28927, {	-- Honor the Flame — Southern Barrens
 					["qg"] = 51587,	-- The Southern Barrens Flame Keeper
 					["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11856, {	-- Honor the Flame — Stonetalon Mountains
 					["qg"] = 25940,	-- Stonetalon Flame Keeper
@@ -2838,17 +2838,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28946, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51651,	-- Twilight Highlands Flame Keeper
 					["coord"] = { 53.1, 46.2, TWILIGHT_HIGHLANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28949, {	-- Honor the Flame — Uldum
 					["qg"] = 51652,	-- Uldum Flame Keeper
 					["coord"] = { 53.2, 34.5, ULDUM },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28933, {	-- Honor the Flame — Un'goro Crater
 					["qg"] = 51607,	-- Un'Goro Flame Keeper
 					["coord"] = { 56.0, 66.0, UNGORO_CRATER },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(32509, {	-- Honor the Flame — Vale of Eternal Blossoms
 					["qg"] = 69551,	-- Vale of Eternal Blossoms Flame Keeper
@@ -2863,7 +2863,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(28931, {	-- Honor the Flame — Western Plaguelands
 					["qg"] = 51604,	-- Western Plaguelands Flame Keeper
 					["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(11839, {	-- Honor the Flame — Winterspring
 					["qg"] = 25922,	-- Winterspring Flame Keeper

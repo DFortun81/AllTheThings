@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26865, {	-- Enemies Below [Orgrimmar]
 					["qg"] = 39605,	-- Garrosh Hellscream
 					["coord"] = { 48.1, 70.5, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984", "removed 5.0.1.15589" },
+					["timeline"] = { ADDED_4_0_1, "removed 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26866, {	-- Enemies Below [Thunder Bluff]
 					["qg"] = 36648,	-- Baine Bloodhoof
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-					["timeline"] = { "added 4.0.1.12984", "removed 5.0.1.15589" },
+					["timeline"] = { ADDED_4_0_1, "removed 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31036, {	-- Enemies Below [Thunder Bluff]

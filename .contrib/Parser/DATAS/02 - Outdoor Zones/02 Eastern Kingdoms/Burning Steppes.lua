@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(676, {	-- Chiselgrip, Burning Steppes
 					["cr"] = 48321,	-- Grimly Singefeather <Flight Master>
 					["coord"] = { 46.0, 41.8, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				fp(70, {	-- Flame Crest, Burning Steppes
 					["cr"] = 13177,	-- Vahgruk <Wind Rider Master>
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(675, {	-- Flamestar Post, Burning Steppes
 					["cr"] = 48318,	-- Hans Oreflight <Flight Master>
 					["coord"] = { 17.6, 52.6, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				fp(71, {	-- Morgan's Vigil, Burning Steppes
 					["cr"] = 2299,	-- Borgus Stoutarm <Gryphon Master>
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/11 Ember Worg Hide
@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(64503, {	-- Ember Worg Eye
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(64504, {	-- Ember Worg Eye
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48109,	-- John J. Keeshan
 					["sourceQuest"] = 28184,	-- Chiselgrip, the Heart of the Steppes (A)
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28427, {	-- A Needle in a Hellhole (H)
@@ -344,7 +344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = { DRAENEI, WORGEN, PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
@@ -577,7 +577,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 28453,	-- Locked and Loaded (H)
 						["coord"] = { 54.7, 24.5, BURNING_STEPPES },
 					}),
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/200 Blackrock Invader slain
 							["providers"] = {
@@ -675,7 +675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
 					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Blackrock Whelper slain
@@ -724,7 +724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28183,	-- Return to Keeshan (A)
 					},
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Blackrock troop slain
@@ -740,16 +740,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(64510, {	-- Oreknuckle Gun
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64509, {	-- Unburdened Pauldrons
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64508, {	-- Black Tooth Helm
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64507, {	-- Vest of Welcome
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -776,16 +776,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(64514, {	-- Oreknuckle Gun
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64513, {	-- Unburdened Pauldrons
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64512, {	-- Black Tooth Helm
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64511, {	-- Vest of Welcome
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -807,7 +807,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28172, {	-- Done Nothing Wrong (A)
 					["qg"] = 47779,	-- Mouton Flamestar
 					["coord"] = { 16.9, 51.3, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Freed Red Whelpling
@@ -835,13 +835,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(64496, {	-- Hatchlings' Protector
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64495, {	-- Whelp Keeper's Staff
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64497, {	-- Flamestar Amulet
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -1042,7 +1042,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28253,	-- Taking the Horn For Ourselves (A)
 					},
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28437, {	-- General Thorg'izog (H)
@@ -1066,7 +1066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 28454,	-- Assault on Dreadmaul Rock (H)
 						["coord"] = { 54.6, 24.5, BURNING_STEPPES },
 					}),
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/1 General Thorg'izog slain
 							["provider"] = { "n", 48316 },	-- General Thorg'izog
@@ -1089,22 +1089,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28226,	-- Scrapped Golems
 					},
 					["coord"] = { 46.8, 44.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/4 Chiseled Golems trained
 							["provider"] = { "n", 48037 },	-- Chiseled Golem <Thorium Brotherhood>
 						}),
 						i(64524, {	-- Chiselgrip Shield
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64523, {	-- Combat Training Vest
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64522, {	-- Bracers of Friendly Favors
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64521, {	-- Tutor's Cloak
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 63357 },	-- Blackrock Disguise
 					},
 					["coord"] = { 45.3, 51.7, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Pairs of Blackrock Boots Polished
 							["provider"] = { "o", 206977 },	-- Blackrock Boots
@@ -1190,7 +1190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuests"] = { 28202, 28203, 28204, 28205 },	-- A Perfect Costume (A)
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28432, {	-- Into the Black Tooth Hovel (H)
@@ -1455,7 +1455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/9 Obsidian-Flecked Mud
@@ -1466,7 +1466,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 16.7, 42.7, BURNING_STEPPES },
 						}),
 						i(64505, {	-- Obsidian-Flecked Cowl
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -1593,7 +1593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48033,	-- Stebben Oreknuckle
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 					["coord"] = { 46.7, 44.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Thaurissan dwarf slain
 							["providers"] = {
@@ -1648,14 +1648,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28181,	-- Warlocks Have the Neatest Stuff (H)
 					},
 					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28226, {	-- Scrapped Golems
 					["qg"] = 48033,	-- Stebben Oreknuckle
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 					["coord"] = { 46.7, 44.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/3 Obsidian Piston
 							["provider"] = { "i", 63333 },	-- Obsidian Piston
@@ -1722,7 +1722,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Razor-Sharp Scorpid Barb
@@ -1730,7 +1730,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 9691,	-- Venomtip Scorpid
 						}),
 						i(64501, {	-- Sharp Scorpid Barb
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(156965, {	-- Enchanted Scorpid Tail
 							["timeline"] = { "added 7.3.5.25716" },
@@ -1820,17 +1820,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28252,	-- The Kodocaller's Horn (A)
 					},
 					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64517, {	-- Helm of Serendipity
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64516, {	-- Improvised Breastplate
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64515, {	-- Leggings of the Steppes
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -1883,7 +1883,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					["qg"] = 48085,	-- Quartermaster Kaoshin
 					["coord"] = { 45.3, 51.7, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/7 Blackrock War Kodos summoned back to camp
 							["providers"] = {
@@ -1901,7 +1901,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28177,	-- Stocking Up (A)
 					},
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28422, {	-- The Sand, the Cider, and the Orb (H)
@@ -1922,26 +1922,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 28321,	-- Glory Amidst Chaos (A)
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64574, {	-- Golem-Smasher's Grips
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64573, {	-- Razor-Sharp Scorpid Belt
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64572, {	-- Ember Worg Boots
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64571, {	-- Xi'lun's Signet
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64569, {	-- Obsidian-Flecked Cape
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64570, {	-- Cracked Orb of Dominion
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -2029,7 +2029,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 28422,	-- The Sand, the Cider, and the Orb (H)
 					}),
 					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Clear Glass Orb
 							["provider"] = { "i", 63134 },	-- Clear Glass Orb

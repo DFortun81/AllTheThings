@@ -225,11 +225,11 @@ local MASKS_WITH_COST = {
 	}),
 	i(49212, {	-- Goblin Female Mask
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(49210, {	-- Goblin Male Mask
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(20565, {	-- Human Female Mask
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -239,19 +239,19 @@ local MASKS_WITH_COST = {
 	}),
 	i(69187, {	-- Murloc Female Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69188, {	-- Murloc Male Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69189, {	-- Naga Female Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69190, {	-- Naga Male Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(20563, {	-- Night Elf Female Mask
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -261,11 +261,11 @@ local MASKS_WITH_COST = {
 	}),
 	i(69192, {	-- Ogre Female Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69193, {	-- Ogre Male Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(20569, {	-- Orc Female Mask
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -293,19 +293,19 @@ local MASKS_WITH_COST = {
 	}),
 	i(69194, {	-- Vrykul Female Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69195, {	-- Vrykul Male Mask
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(49215, {	-- Worgen Female Mask
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(49216, {	-- Worgen Male Mask
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 4.0.1" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 };
 local MASKS_WITHOUT_COST, MASK_IDS = {}, {};
@@ -491,11 +491,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			crit(17590, {	-- Goblin Female Mask
 				["provider"] = { "i", 49212 },	-- Goblin Female Mask
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			crit(17591, {	-- Goblin Male Mask
 				["provider"] = { "i", 49210 },	-- Goblin Male Mask
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			crit(2264, {	-- Human Female Mask
 				["provider"] = { "i", 20565 },	-- Human Female Mask
@@ -535,11 +535,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			crit(17592, {	-- Worgen Female Mask
 				["provider"] = { "i", 49215 },	-- Worgen Female Mask
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			crit(17593, {	-- Worgen Male Mask
 				["provider"] = { "i", 49216 },	-- Worgen Male Mask
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 		})),
 		ach(291, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Check Your Head
@@ -556,7 +556,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 			crit(17855, {	-- Goblin
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 			crit(5777, {	-- Human
@@ -578,7 +578,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 			crit(17854, {	-- Worgen
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 		})),
@@ -2201,10 +2201,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					}),
 					-- Cataclysm
 					i(71326, {	-- The Horseman's Horrific Helm
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 					}),
 					i(71325, {	-- The Horseman's Sinister Saber
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 					}),
 					-- Wrath of the Lich King Classic
 					-- #if ANYCLASSIC
@@ -2294,16 +2294,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			-- Cataclysm
 			i(71327, {	-- Band of Ghoulish Glee
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71330, {	-- Seal of the Petrified Pumpkin
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71328, {	-- The Horseman's Signet
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71329, {	-- Wicked Witch's Ring
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			-- Wrath of the Lich King
 			i(49128, {	-- The Horseman's Baleful Blade
@@ -2438,7 +2438,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.3, 50.9, ELWYNN_FOREST },
 			["maps"] = { STORMWIND_CITY },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -2447,7 +2447,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
 			["maps"] = { ORGRIMMAR },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -2461,7 +2461,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				19173,	-- Night Elf Commoner
 				20102,	-- Goblin Commoner
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				NORTHERN_BARRENS,
 				TANARIS,
@@ -2488,7 +2488,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				19178,	-- Forsaken Commoner
 				20102,	-- Goblin Commoner
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				NORTHERN_BARRENS,
 				TANARIS,
@@ -2544,7 +2544,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29400,	-- A Season for Celebration (Horde)
 			-- #endif
 			["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ELWYNN_FOREST },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -2567,7 +2567,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29400,	-- A Season for Celebration (Horde)
 			-- #endif
 			["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -2578,7 +2578,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 51665,	-- Celestine of the Harvest
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["coord"] = { 32, 50.4, ELWYNN_FOREST },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -2589,7 +2589,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 52064,	-- Keira
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["coord"] = { 32, 50.4, ELWYNN_FOREST },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -2650,7 +2650,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29144, {	-- Clean Up in Stormwind
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -2673,7 +2673,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29400,	-- A Season for Celebration (Horde)
 			-- #endif
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -2788,7 +2788,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #else
 			["coord"] = { 24.1, 44.8, STORMWIND_CITY },
 			-- #endif
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -2796,7 +2796,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 54142,	-- Hired Courier
 			["sourceQuest"] = 29415,	-- Missing Heirlooms (Horde)
 			["coord"] = { 57.4, 9, DUROTAR },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3117,7 +3117,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #else
 			["coord"] = { 61.1, 70.6, STORMWIND_CITY },
 			-- #endif
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3125,7 +3125,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 54141,	-- Edgar Goodwin
 			["sourceQuest"] = 29431,	-- A Friend in Need (Horde)
 			["coord"] = { 54.4, 77.6, ORGRIMMAR },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3181,7 +3181,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #else
 			["coord"] = { 61.1, 70.6, STORMWIND_CITY },
 			-- #endi
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3189,7 +3189,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 44866,	-- Auctioneer Drezmit
 			["sourceQuest"] = 29416,	-- Fencing the Goods (Horde)
 			["coord"] = { 54, 73.4, ORGRIMMAR },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3267,7 +3267,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3286,7 +3286,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29400,	-- A Season for Celebration (Horde)
 			-- #endif
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3346,7 +3346,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 54021,	-- Hudson Barnes
 			["sourceQuest"] = 29399,	-- Shopping Around (Alliance)
 			["coord"] = { 64, 46.4, STORMWIND_CITY },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -3365,7 +3365,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 54146,	-- Delian Sunshade
 			["sourceQuest"] = 29425,	-- Shopping Around (Horde)
 			["coord"] = { 58, 48.2, ORGRIMMAR },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -3384,7 +3384,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 54021,	-- Hudson Barnes
 			["sourceQuest"] = 29402,	-- Taking Precautions (Alliance)
 			["coord"] = { 64, 46.4, STORMWIND_CITY },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -3398,7 +3398,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 54146,	-- Delian Sunshade
 			["sourceQuest"] = 29426,	-- Taking Precautions (Horde)
 			["coord"] = { 58, 48.2, ORGRIMMAR },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { TIRISFAL_GLADES },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3412,7 +3412,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29413, {	-- The Creepy Crate (Alliance)
 			["provider"] = { "o", 209076 },	-- Anson's Crate
 			["sourceQuest"] = 29411,	-- What Now? (Alliance)
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3425,7 +3425,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29429, {	-- The Creepy Crate (Horde)
 			["provider"] = { "o", 209095 },	-- Edgar's Crate
 			["sourceQuest"] = 29428,	-- What Now? (Horde)
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3518,7 +3518,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29403,	-- The Collector's Agent (Alliance)
 			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["coord"] = { 55.3, 43.5, STORMWIND_CITY },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["cost"] = {
 				{ "i", 71057, 1 },	-- Recovered Crate
 			},
@@ -3530,7 +3530,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29427,	-- The Collector's Agent (Horde)
 			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["coord"] = { 65.8, 74.8, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["cost"] = {
 				{ "i", 71057, 1 },	-- Recovered Crate

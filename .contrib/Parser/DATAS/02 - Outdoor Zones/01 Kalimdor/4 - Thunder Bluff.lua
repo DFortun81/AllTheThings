@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							29348,	-- The Race to Restock
 							29346,	-- The Ring's the Thing
 						},
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983),	-- Strand Crawler (PET!)
 							i(33820),	-- Weather-Beaten Fishing Hat
@@ -1456,7 +1456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			o(207323, {	-- Warchief's Command Board
 				["coord"] = { 42.6, 57.4, THUNDER_BLUFF },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),

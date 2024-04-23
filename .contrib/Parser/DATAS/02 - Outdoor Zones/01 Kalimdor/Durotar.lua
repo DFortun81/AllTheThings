@@ -1939,7 +1939,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(536, {	-- Sen'jin Village
 					["cr"] = 41142,	-- Handler Marnlek <Bat Handler>
 					["coord"] = { 55.4, 73.4, DUROTAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -2203,7 +2203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26951, {	-- Cleanup on Isle E.
 					["qg"] = 3188,	-- Master Gadrin
 					["coord"] = { 56.0, 74.6, DUROTAR },
-					["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4946, {	-- Lightweight Boots

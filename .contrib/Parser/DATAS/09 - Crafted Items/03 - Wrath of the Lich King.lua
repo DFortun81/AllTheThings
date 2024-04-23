@@ -495,7 +495,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- #if BEFORE 4.0.1
 			i(40727, {	-- Personal Ejector Seat / Gnomish Gravity Well (TOY!)
 				["description"] = "This later becomes the Gnomish Gravity Well toy.",
-				["timeline"] = { CREATED_3_3_0, "added 4.0.1" },
+				["timeline"] = { CREATED_3_3_0, ADDED_4_0_1 },
 			}),
 			-- #endif
 			i(48933),	-- Wormhole Generator: Northrend (TOY!)

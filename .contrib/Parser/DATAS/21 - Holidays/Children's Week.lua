@@ -691,7 +691,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 57.71, 53.27, WESTFALL },	-- Rental Chopper
 				{ 57.78, 53.06, WESTFALL },	-- Rental Chopper
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -858,7 +858,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 65.63, 62.99, STORMWIND_CITY },	-- Craggle Wobbletop Path
 				{ 66.61, 64.43, STORMWIND_CITY },	-- Craggle Wobbletop Path
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -893,7 +893,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
 				{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
 			},
@@ -960,7 +960,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 			["coord"] = { 44.1, 79.9, DARNASSUS },
-			["timeline"] = { "added 4.0.1", "removed 8.0.1" },
+			["timeline"] = { ADDED_4_0_1, "removed 8.0.1" },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1086,7 +1086,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
 			["coord"] = { 50.71, 73.94, AZSHARA },	-- Redhound Two-Seater
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
@@ -1155,7 +1155,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
 			["coord"] = { 57.5, 91.1, UNDERCITY },
-			["timeline"] = { "added 4.0.1", "removed 8.0.1" },
+			["timeline"] = { ADDED_4_0_1, "removed 8.0.1" },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
@@ -1175,7 +1175,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 44.76, 52.25, IRONFORGE },	-- Path to Old Ironforge
 				{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1283,7 +1283,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
 			["coord"] = { 60.74, 22.92, MULGORE },	-- Fallen Chieftain
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
@@ -1565,7 +1565,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 				29106,	-- The Biggest Diamond Ever! [Alliance - Human]
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1621,7 +1621,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 				29176,	-- The Fallen Chieftain [Horde - Orc]
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag

@@ -709,7 +709,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28677,	-- Warchief's Command: Swamp of Sorrows!
 					},
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Intact Swampshore Tail
 							["provider"] = { "i", 61633 },	-- Intact Swampshore Tail

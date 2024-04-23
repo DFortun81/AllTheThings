@@ -284,19 +284,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(466, {	-- Randolph Moloch
 				["creatureID"] = 46383,
-				["timeline"] = { "added 4.0.1.12984" },
+				["timeline"] = { ADDED_4_0_1 },
 				["groups"] = {
 					i(63346, {	-- Wicked Dagger
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 					}),
 					i(63345, {	-- Noble's Robe
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 					}),
 					i(151077, {	-- Cast Iron Waistplate
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(63344, {	-- Standard Issue Prisoner Shoes
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 					}),
 					i(132570, {	-- Stolen Guard's Chain Boots
 						["timeline"] = { "added 7.0.3.22248" },
@@ -305,7 +305,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(465, {	-- Lord Overheat
 				["creatureID"] = 46264,
-				["timeline"] = { "added 4.0.1.12984" },
+				["timeline"] = { ADDED_4_0_1 },
 				["groups"] = {
 					i(62305),	-- Lord Overheat's Fiery Core
 					i(151075, {	-- Cinderstitch Tunic
@@ -322,7 +322,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(464, {	-- Hogger
 				["creatureID"] = 46254,
-				["timeline"] = { "added 4.0.1.12984" },
+				["timeline"] = { ADDED_4_0_1 },
 				["groups"] = {
 					ach(633, {	-- Stormwind Stockade
 						["timeline"] = { ADDED_3_0_2 },

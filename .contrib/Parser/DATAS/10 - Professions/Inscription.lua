@@ -241,7 +241,7 @@ GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE = r(58312, {	-- Gly
 });
 GLYPH_OF_BLIND = r(92579, {	-- Glyph of Blind
 	["name"] = "Glyph of Blind",
-	["timeline"] = { "added 4.0.1", "deleted 7.0.3" },
+	["timeline"] = { ADDED_4_0_1, "deleted 7.0.3" },
 });
 GLYPH_OF_BLINK = r(56973, {	-- Glyph of Blink
 	["name"] = "Glyph of Blink",

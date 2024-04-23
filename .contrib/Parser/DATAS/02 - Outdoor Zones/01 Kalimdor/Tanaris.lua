@@ -2928,7 +2928,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(531, {	-- Dawnrise Expedition, Tanaris
 					["cr"] = 41215,	-- Raina Sunglide <Flight Master>
 					["coord"] = { 33.2, 77.2, TANARIS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(39, {	-- Gadgetzan, Tanaris
@@ -2952,7 +2952,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(532, {	-- Gunstan's Dig, Tanaris
 					["cr"] = 40827,	-- Thurda <Flight Master>
 					["coord"] = { 40, 77.4, TANARIS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -4943,7 +4943,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 36.6, 42.6, TANARIS },
 						{ 36.8, 46.6, TANARIS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(44759, {	-- Andre Firebeard
 					["coord"] = { 69.6, 56.8, TANARIS },
@@ -5008,7 +5008,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 53.0, 70.4, TANARIS },
 						{ 50.6, 72.6, TANARIS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(39186, {	-- Hellgazer
 					["coord"] = { 40.8, 41.2, TANARIS },

@@ -289,7 +289,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_4_0 },
 			}),
 			i(67097, {	-- Grim Campfire (TOY!)
-				["timeline"] = { "added 4.0.1.12984" },
+				["timeline"] = { ADDED_4_0_1 },
 			}),
 			i(32542, {	-- Imp in a Ball (TOY!)
 				["timeline"] = { ADDED_2_1_0 },

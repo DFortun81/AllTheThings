@@ -111,7 +111,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(63349, {	-- Flame-Scarred Junkbox
-				["timeline"] = { "added 4.0.1.12941" },
+				["timeline"] = { ADDED_4_0_1 },
 				["groups"] = {
 					i(68163),	-- The Twilight Blade
 					i(68161),	-- Krol Decapitator

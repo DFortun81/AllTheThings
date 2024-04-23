@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(622, {	-- Raven Hill, Duskwood
 					["cr"] = 43697,	-- John Shelby <Gryphon Master>
 					["coord"] = { 21.0, 56.6, DUSKWOOD },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

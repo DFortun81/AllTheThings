@@ -45,10 +45,10 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	ach(5378, {	-- Blizzcon 2010 - Deathy
 		["provider"] = { "i", 67418 },	-- Deathy (PET!)
-		["timeline"] = { "added 4.0.1.12984" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(67418, {	-- Deathy (PET!)
-		["timeline"] = { "added 4.0.1.12984" },
+		["timeline"] = { ADDED_4_0_1 },
 	}),
 
 	ach(6185, {	-- Blizzcon 2011 - Murkablo

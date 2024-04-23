@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							29319,	-- Tadpole Terror
 							29322,	-- Time for Slime
 						},
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { ADDED_3_1_0 },
@@ -91,10 +91,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
 					}),
@@ -1474,13 +1474,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(64921, {	-- Cape of Undercity
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64922, {	-- Mantle of Undercity
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64920, {	-- Shroud of Undercity
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67529, {	-- Undercity Satchel
 							["timeline"] = { ADDED_4_0_3 },
@@ -2195,7 +2195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					{ 66.5, 49.8, UNDERCITY },
 					{ 61.8, 75.6, UNDERCITY },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),

@@ -2366,7 +2366,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(11325),	-- Dark Iron Ale Mug
 				}),
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						i(10602),   -- Schematic: Deadly Scope (RECIPE!)
 					},

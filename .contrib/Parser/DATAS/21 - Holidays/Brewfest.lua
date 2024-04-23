@@ -572,10 +572,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 					}),
 					i(71331, {	-- Direbrew's Bloodied Shanker [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 					}),
 					i(71332, {	-- Tremendous Tankard O'Terror [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 					}),
 					i(49120, {	-- Direbrew's Bloody Shanker [Level 80]
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -639,22 +639,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			-- Cataclysm
 			i(71333, {	-- Bitterer Balebrew Charm [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71338, {	-- Brawler's Trophy [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71334, {	-- Bubblier Brightbrew Charm [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71335, {	-- Coren's Chilled Chromium Coaster [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71337, {	-- Mithril Stopwatch [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(71336, {	-- Petrified Pickled Egg [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			-- Wrath of the Lich King
 			i(49078, {	-- Ancient Pickled Egg [Level 80]
@@ -730,7 +730,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 46.4, 40.3, DUN_MOROGH },
 				-- #endif
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -738,7 +738,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(56836, {	-- Overflowing Purple Brewfest Stein
-						["timeline"] = { "added 4.0.1" },
+						["timeline"] = { ADDED_4_0_1 },
 					}),
 				},
 			}),
@@ -750,7 +750,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 46.3, 14.8, DUROTAR },
 				-- #endif
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -758,7 +758,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(56836, {	-- Overflowing Purple Brewfest Stein
-						["timeline"] = { "added 4.0.1" },
+						["timeline"] = { ADDED_4_0_1 },
 					}),
 				},
 			}),
@@ -1903,7 +1903,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 
 		i(56836, {	-- Overflowing Purple Brewfest Stein
 			["lore"] = "This stein was the reward from the 2011 Brewfest onward.",
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 		}),
 		-- #if AFTER TRANSMOG
 		i(32912, bubbleDown({ ["timeline"] = { ADDED_2_0_1, "removed 2.4.3" } }, {	-- Yellow Brewfest Stein

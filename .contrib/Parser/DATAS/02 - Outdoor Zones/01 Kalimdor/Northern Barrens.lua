@@ -2077,10 +2077,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = {
 						i(59557, {	-- Belt of Unwanted Aid
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(59556, {	-- Shield of Inner Glow
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(10820, {	-- Jackseed Belt
 							["timeline"] = { REMOVED_4_0_3 },

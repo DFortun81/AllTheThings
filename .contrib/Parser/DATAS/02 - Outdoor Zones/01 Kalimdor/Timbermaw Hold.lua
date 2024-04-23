@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
 						i(66888, {	-- Stave of Fur and Claw Toy (TOY!)
 							["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),

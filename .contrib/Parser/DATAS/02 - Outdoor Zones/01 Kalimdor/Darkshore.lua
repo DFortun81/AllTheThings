@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(339, {	-- Grove of the Ancients, Darkshore
 					["cr"] = 33253,	-- Delanea <Flight Master>
 					["coord"] = { 44.4, 75.4, DARKSHORE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(26, {	-- Lor'danel, Darkshore [CATA+] / Auberdine, Darkshore
@@ -2701,7 +2701,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(43436, {	-- Ceriale Duskwhisper <Clothier>
 					["coord"] = { 50.6, 20.6, DARKSHORE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt

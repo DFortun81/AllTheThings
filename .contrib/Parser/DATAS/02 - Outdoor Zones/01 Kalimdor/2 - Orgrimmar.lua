@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							26543,	-- Clammy Hands
 							26556,	-- No Dumping Allowed
 						},
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { ADDED_3_1_0 },
@@ -278,10 +278,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
 					}),
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				prof(JEWELCRAFTING, {
 					n(46675, {	-- Lugrah <Jewelcrafting Trainer>
 						["coord"] = { 72.5, 34.3, ORGRIMMAR },
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							r(404740, {	-- Cataclysm Crushing
@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26588, {	-- A Furious Catch
 					["qg"] = 43239,	-- Razgar
 					["coord"] = { 65.7, 41.1, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26572, {	-- A Golden Opportunity
 					["qg"] = 43239,	-- Razgar
 					["coord"] = { 65.7, 41.1, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26557, {	-- A Staggering Effort
 					["qg"] = 43239,	-- Razgar
 					["coord"] = { 65.7, 41.1, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -770,7 +770,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26543, {	-- Clammy Hands
 					["qg"] = 43239,	-- Razgar
 					["coord"] = { 65.7, 41.1, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26556, {	-- No Dumping Allowed
 					["qg"] = 43239,	-- Razgar
 					["coord"] = { 65.7, 41.1, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1411,7 +1411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 26830,	-- Traitor's Bait
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(10794, {	-- Rogues of the Shattered Hand
@@ -1676,7 +1676,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28790,	-- A Personal Summons
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31013, {	-- The Horde Way
@@ -1904,7 +1904,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 42637,	-- Sauranok the Mystic
 					["sourceQuest"] = 28909,	-- Sauranok Will Paint the Way
 					["coord"] = { 48.0, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63922, {	-- Awestruck Bracers
@@ -1968,7 +1968,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.6, 71.0, ORGRIMMAR },
 						-- #ENDIF
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if ANYCLASSIC
@@ -2526,7 +2526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(46742, {	-- Brunda
 					["coord"] = { 54.6, 50.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 4.0.1." },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						i(3422),	-- Beautiful Wildflowers
 						i(3420),	-- Black Rose
@@ -2643,7 +2643,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(44918, {	-- Drakma <Wind Rider Keeper>
 					["coord"] = { 48.0, 58.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(25477),	-- Swift Red Wind Rider (MOUNT!)
@@ -2979,7 +2979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(46555, {	-- Gunra <Justice Quartermaster>
 					["coord"] = { 48.4, 71.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_TWELVE_GROUPS,
 				}),
@@ -3069,7 +3069,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
 					["coord"] = { 48.6, 71.4, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_THIRTEEN_GROUPS,
 				}),
@@ -3115,7 +3115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(48510, {	-- Kall Worthaton <Trike Dealer>
 					["coord"] = { 36.2, 86.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(62462, {
@@ -3128,7 +3128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
 					["coord"] = { 39.0, 85.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -3876,7 +3876,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(45558, {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
 					["coord"] = { 41.0, 79.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					-- #if AFTER 7.3.5.25961
 					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
 					["OnUpdate"] = [[function(t,parent,defaultUpdate)
@@ -3969,7 +3969,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(46512, {	-- Naros <Plate Armor Merchant>
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2451,	-- Crested Heater Shield
@@ -4042,7 +4042,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(46716, {	-- Nerog <Inscription Trainer>
 					["coord"] = { 55.2, 55.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(140565, {	-- Technique: Songs of the Horde
@@ -4209,7 +4209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				n(46359, {	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
 					},
@@ -4783,7 +4783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(46708, {	-- Suja <Cooking Supplies>
 					["coord"] = { 56.6, 61.2, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -5291,7 +5291,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 					["coord"] = { 36.6, 86.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18647, {	-- Schematic: Red Firework (RECIPE!)
@@ -5374,7 +5374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #IF BEFORE SHADOWLANDS
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
 					["coord"] = { 36.2, 83.2, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
 					},
@@ -5399,7 +5399,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					{ 59.0, 44.4, ORGRIMMAR },
 					{ 66.7, 49.5, ORGRIMMAR },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),

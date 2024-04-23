@@ -66,7 +66,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "Big Daddy",
-						["timeline"] = { "added 4.0.1.12941" },
+						["timeline"] = { ADDED_4_0_1 },
 						["recipeID"] = 95707,
 					},
 					{

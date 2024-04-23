@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(654, {	-- The Forsaken Front, Silverpine Forest
 					["cr"] = 46552,	-- Steven Stutzka <Bat Handler>
 					["coord"] = { 50.8, 63.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(10, {	-- The Sepulcher, Silverpine Forest
@@ -1445,7 +1445,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(47003, {	-- Bolgaff <The Mad Hunter>
 					["coord"] = { 48.8, 25.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(50814, {	-- Corpsefeeder
 					["coord"] = { 49.2, 68.2, SILVERPINE_FOREST },
@@ -1585,14 +1585,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 48.4, 23.0, SILVERPINE_FOREST },
 						{ 49.4, 35.2, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(46981, {	-- Nightlash
 					["coords"] = {
 						{ 53.0, 28.0, SILVERPINE_FOREST },
 						{ 52.4, 25.2, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(12432, {  -- Old Vicejaw
 					["coords"] = {

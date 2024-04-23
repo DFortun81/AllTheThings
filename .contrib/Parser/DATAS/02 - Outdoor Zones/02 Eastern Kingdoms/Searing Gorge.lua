@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4910, {	-- Searing Gorge Quests
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(38257, {	-- Thorium Advance
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(673, {	-- Iron Summit, Searing Gorge
 					["cr"] = 47927,	-- Doug Deepdown <Flight Master>
 					["coord"] = { 41.0, 68.6, SEARING_GORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				fp(74, {	-- Thorium Point, Searing Gorge
 					["cr"] = 2941,	-- Lanie Reed <Gryphon Master>

@@ -1760,7 +1760,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 13.6, 38.6, WETLANDS },
 						{ 15.0, 39.0, WETLANDS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 			}),
 			prof(SKINNING, {

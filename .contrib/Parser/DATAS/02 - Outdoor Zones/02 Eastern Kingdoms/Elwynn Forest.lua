@@ -2001,13 +2001,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(589, {	-- Eastvale Logging Camp, Elwynn
 					["coord"] = { 81.8, 66.4, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 43000,	-- Goss the Swift <Gryphon Master>
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(582, {	-- Goldshire, Elwynn
 					["coord"] = { 41.8, 64.6, ELWYNN_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 42983,	-- Bartlett the Brave <Gryphon Master>
 					["races"] = ALLIANCE_ONLY,
 				}),

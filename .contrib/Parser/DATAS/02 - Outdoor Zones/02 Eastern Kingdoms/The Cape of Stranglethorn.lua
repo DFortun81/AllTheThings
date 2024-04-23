@@ -132,13 +132,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(591, {	-- Explorers' League Digsite, Stranglethorn
 					["cr"] = 43043,	-- Colin Swifthammer <Gryphon Master>
 					["coord"] = { 55.6, 41.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(592, {	-- Hardwrench Hideaway, Stranglethorn
 					["cr"] = 43053,	-- Hizzle <Wind Rider Master>
 					["coord"] = { 35.0, 29.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

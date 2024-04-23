@@ -3133,7 +3133,7 @@ root(ROOTS.Zones, {
 							}),
 							i(63697, {	-- Bold Blood Garnet
 								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
-								["timeline"] = { "added 4.0.1.12941" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(27777, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
 								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
@@ -3543,7 +3543,7 @@ root(ROOTS.Zones, {
 							}),
 							i(63696, {	-- Bold Blood Garnet
 								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
-								["timeline"] = { "added 4.0.1.12941" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(27812, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
 								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold

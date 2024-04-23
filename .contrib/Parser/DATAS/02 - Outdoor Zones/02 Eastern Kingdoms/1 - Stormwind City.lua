@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					{ 62.5, 30.0, STORMWIND_CITY },
 					{ 43.0, 71.9, STORMWIND_CITY },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							26442,	-- Rock Lobster
 							26536,	-- Thunder Falls
 						},
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { ADDED_3_1_0 },
@@ -273,10 +273,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { "added 4.0.1.12984" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
 					}),
@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(JEWELCRAFTING, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							r(404740, {	-- Cataclysm Crushing
@@ -950,7 +950,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26488, {	-- Big Gulp
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1297,7 +1297,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26420, {	-- Diggin' For Worms
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1773,7 +1773,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26414, {	-- Hitting a Walleye
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2630,7 +2630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26442, {	-- Rock Lobster
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -3051,7 +3051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45226,	-- Naraat the Earthspeaker
 					["sourceQuest"] = 28825,	-- A Personal Summons
 					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3786,7 +3786,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26536, {	-- Thunder Falls
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -4738,13 +4738,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(64902, {	-- Cape of Stormwind
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64901, {	-- Mantle of Stormwind
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64903, {	-- Shroud of Stormwind
-							["timeline"] = { "added 4.0.1.12941" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67531, {	-- Stormwind Satchel
 							["timeline"] = { ADDED_4_0_3 },
@@ -5063,32 +5063,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(50669, {	-- Dawn Radue <Bag Merchant>
 					["coord"] = { 64.8, 71.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(67396, {	-- "Carriage - Christina" Precious Metal Bag
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67389, {	-- "Carriage - Exclusive" Enchanting Evening Purse
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67392, {	-- "Carriage - Exclusive" Gem Studded Clutch
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67393, {	-- "Carriage - Going Green" Herb Tote Bag
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67390, {	-- "Carriage - Maddy" High Tech Bag
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67395, {	-- "Carriage - Meeya" Leather Bag
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67394, {	-- "Carriage - Xandera" Student's Satchel
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67387, {	-- "Carriage" Signature Bag
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -5213,7 +5213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(44245, {	-- Faldren Tillsdale
 					["coord"] = { 76.1, 66.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_THIRTEEN_GROUPS,
 				}),
@@ -5755,7 +5755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(43694, {	-- Katie Stokx <Horse Breeder>
 					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2411),	-- Black Stallion (MOUNT!)
@@ -6210,7 +6210,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74.2, 66.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_TWELVE_GROUPS,
 				}),
@@ -6394,7 +6394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- Crieve NOTE: I haven't confirmed this on Live, so not gonna pop it in until I can check it.
 				n(12805, {	-- Officer Areyn <Accessories Quartermaster>
 					["coord"] = { 73.8, 53.4, STORMWIND_CITY },
-					["timeline"] = { "removed 3.0.1", "added 4.0.1", "removed 7.0.1" },
+					["timeline"] = { "removed 3.0.1", ADDED_4_0_1, "removed 7.0.1" },
 					["groups"] = {
 						i(18664),	-- A Treatise on Military Ranks
 						i(15196),	-- Private's Tabard
@@ -6873,7 +6873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(43768, {	-- Tannec Stonebeak <Gryphon Keeper>
 					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(25471),	-- Ebon Gryphon (MOUNT!)
@@ -6887,7 +6887,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(44583, {	-- Terrance Denman <Jewelcrafting Supplies>
 					["coord"] = { 63.1, 61.5, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),

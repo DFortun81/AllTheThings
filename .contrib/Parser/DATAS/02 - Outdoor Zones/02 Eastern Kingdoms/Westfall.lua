@@ -105,13 +105,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(584, {	-- Furlbrow's Pumpkin Farm, Westfall
 					["cr"] = 42406,	-- Hoboair <Gryphon Master>
 					["coord"] = { 49.8, 18.8, WESTFALL },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(583, {	-- Moonbrook, Westfall
 					["cr"] = 42426,	-- Tina Skyden <Gryphon Master>
 					["coord"] = { 42.0, 63.4, WESTFALL },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(4, {	-- Sentinel Hill, Westfall

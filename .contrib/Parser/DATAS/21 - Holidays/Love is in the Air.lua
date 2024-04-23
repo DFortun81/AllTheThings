@@ -3206,19 +3206,19 @@ for i,o in ipairs({
 
 			-- Cata
 			i(68176, {	-- Heartbreak Charm [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(68173, {	-- Choker of the Pure Heart [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(68172, {	-- Shard of Pirouetting Happiness [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(68174, {	-- Sweet Perfume Brooch [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 			i(68175, {	-- Winking Eye of Love [Level 85]
-				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
 			}),
 
 			-- Wrath

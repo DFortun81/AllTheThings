@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1194 },	-- Mountain Buzzard
 						}),
 						i(59004, {	-- Daryl's Bow
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(2903, {	-- Daryl's Hunting Bow
 							["timeline"] = { REMOVED_4_0_3 },
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59003, {	-- Daryl's Rifle
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1192 },	-- Elder Mountain Boar
 						}),
 						i(59000, {	-- Daryl's Axe
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(3572, {	-- Daryl's Shortsword
 							["timeline"] = { REMOVED_4_0_3 },
@@ -318,10 +318,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59001, {	-- Ill-Worn Belt
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(59002, {	-- Unabashed Vest
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1412,10 +1412,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1210,	-- Chok'sul
 						}),
 						i(59028, {	-- Bluntnose's Signet
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(59026, {	-- Bounty Hunter's Bracers
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(6189, {	-- Durable Chain Shoulders
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1427,7 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59027, {	-- Thelsamar Chainmail
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.6, 42.0, LOCH_MODAN },
 						{ 66.6, 40.0, LOCH_MODAN },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(1398, {  -- Boss Galgosh <Stonesplinter Chieftain>
 					-- #if AFTER CATA

@@ -153,22 +153,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			explorationHeader({
 				exploration(2079),	-- Alcaz Island
-				exploration(501, {["timeline"] = { "added 4.0.1" }}),	-- Beezil's Wreck
+				exploration(501, {["timeline"] = { ADDED_4_0_1 }}),	-- Beezil's Wreck
 				exploration(512, {["timeline"] = { ADDED_2_0_1 }}),	-- Blackhoof Village
 				exploration(498, {["timeline"] = { ADDED_2_0_1 }}),	-- Bloodfen Burrow
 				-- #if BEFORE CATA
 				exploration(507),	-- Bluefen
 				-- #endif
 				exploration(496),	-- Brackenwall Village
-				exploration(499, {["timeline"] = { "added 4.0.1" }}),	-- Darkmist Cavern
-				exploration(4046, {["timeline"] = { "added 4.0.1" }}),	-- Direhorn Post
+				exploration(499, {["timeline"] = { ADDED_4_0_1 }}),	-- Darkmist Cavern
+				exploration(4046, {["timeline"] = { ADDED_4_0_1 }}),	-- Direhorn Post
 				exploration(518),	-- Dreadmurk Shore
-				exploration(4010, {["timeline"] = { "added 4.0.1" }}),	-- Mudsprocket
-				exploration(504, {["timeline"] = { "added 4.0.1" }}),	-- North Point Tower
-				exploration(503, {["timeline"] = { "added 4.0.1" }}),	-- Sentry Point
-				exploration(403, {["timeline"] = { "added 4.0.1" }}),	-- Shady Rest Inn
-				exploration(508, {["timeline"] = { "added 4.0.1" }}),	-- Stonemaul Ruins
-				exploration(497, {["timeline"] = { "added 4.0.1" }}),	-- Swamplight Manor
+				exploration(4010, {["timeline"] = { ADDED_4_0_1 }}),	-- Mudsprocket
+				exploration(504, {["timeline"] = { ADDED_4_0_1 }}),	-- North Point Tower
+				exploration(503, {["timeline"] = { ADDED_4_0_1 }}),	-- Sentry Point
+				exploration(403, {["timeline"] = { ADDED_4_0_1 }}),	-- Shady Rest Inn
+				exploration(508, {["timeline"] = { ADDED_4_0_1 }}),	-- Stonemaul Ruins
+				exploration(497, {["timeline"] = { ADDED_4_0_1 }}),	-- Swamplight Manor
 				exploration(509),	-- The Den of Flame
 				-- #if BEFORE CATA
 				exploration(2302),	-- The Quagmire

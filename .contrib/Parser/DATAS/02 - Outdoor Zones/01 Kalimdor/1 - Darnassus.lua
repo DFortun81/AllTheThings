@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(457, {	-- Darnassus, Teldrassil (A)
 					["cr"] = 40552,	-- Leora <Hippogryph Master>
 					["coord"] = { 36.61, 47.82, DARNASSUS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					{ 39.6, 11.6, DARNASSUS },
 					{ 45.0, 50.5, DARNASSUS },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							29324,	-- The Sister's Pendant
 						},
 						["description"] = "Fishing Daily Quest Reward",
-						["timeline"] = { "added 4.0.1.12984" },
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(44983),	-- Strand Crawler (PET!)
 							i(33820),	-- Weather-Beaten Fishing Hat

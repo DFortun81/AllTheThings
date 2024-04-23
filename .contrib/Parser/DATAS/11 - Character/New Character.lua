@@ -61,7 +61,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(5180, {	-- Breaking the Sound Barrier
 			["spellID"] = 90265,	-- Master Riding
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["rank"] = 5,
 		})),
 		ach(7380, {	-- Double Agent
@@ -416,7 +416,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_1 }
 			}),
 			i(57244, {	-- Warder's Spear
-				["timeline"] = { "added 4.0.1.13082", "removed 5.0.1" }
+				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" }
 			}),
 			i(23347, {	-- Weathered Crossbow
 				["timeline"] = { ADDED_2_0_1 }
@@ -425,7 +425,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(57243, {	-- Worn Spear
-				["timeline"] = { "added 4.0.1.13082", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
@@ -769,7 +769,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(52557, {	-- Battleworn Hammer
-				["timeline"] = { "added 4.0.1", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(36),	-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
@@ -1083,7 +1083,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(20977, {	-- Recruit's Shortsword
-				["timeline"] = { "added 4.0.1", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(20982, {	-- Sharp Dagger
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
@@ -1495,7 +1495,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(20903, {	-- Recruit's Boots
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_9_1_5 },
 			}),
 			i(39, {	-- Recruit's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
@@ -1511,11 +1511,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(20902, {	-- Recruit's Pants
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_9_1_5 },
 			}),
 			i(20904, {	-- Recruit's Tunic
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_9_1_5 },
 			}),
 			i(58231, {	-- Recruit's Vest
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },

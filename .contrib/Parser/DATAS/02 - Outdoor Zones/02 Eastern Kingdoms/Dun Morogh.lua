@@ -915,13 +915,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57537, {	-- Frosthammer Bracer
-									["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+									["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 								}),
 								i(57538, {	-- Kharanos Belt
-									["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+									["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 								}),
 								i(57539, {	-- Snow Stomping Boots
-									["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+									["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -2711,10 +2711,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2900),	-- Stone Buckler
 						-- #endif
 						i(57553, {	-- Ragged Belt
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(57557, {	-- Warm Winter Wristguards
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 					},
 				}),

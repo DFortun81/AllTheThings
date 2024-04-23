@@ -1228,7 +1228,7 @@ profession(COOKING, {
 				},
 				applyclassicphase(CATA_PHASE_ONE, {
 					["name"] = "Venison Jerky",
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					["recipeID"] = 93741
 				}),
 				{

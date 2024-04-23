@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(388, {	-- Northwatch Hold, Southern Barrens
 					["cr"] = 39212,	-- Bill Williamson <Flight Master>
 					["coord"] = { 66.4, 47, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(77, {	-- Vendetta Point, Southern Barrens
@@ -2038,7 +2038,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(44283, {	-- Camran <Mail Armor>
 					["coord"] = { 67.4, 48.2, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4799, {	-- Antiquated Cloak
