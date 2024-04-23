@@ -2126,10 +2126,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>
 					["coord"] = { 59.8, 51.6, WINTERSPRING },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["groups"] = {
 						i(69239, {	-- Winterspring Cub (PET!)
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 					},
 				}),

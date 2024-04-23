@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29090, {	-- A Burning Threat
 					["qg"] = 52192,	-- Brogor
 					["coord"] = { 44.2, 25.0, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(891, {	-- A Captain's Vengeance [CATA+] / The Guns of Northwatch
@@ -866,7 +866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29086, {	-- Competition Schmompetition
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.3, 17.4, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1796, {	-- Components for the Enchanted Gold Bloodrobe (1/5)
@@ -1108,11 +1108,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 52309,	-- Balgor Whipshank
 					["sourceQuest"] = 29110,	-- Mor'shan Caravan Rescue
 					["coord"] = { 41.0, 39.1, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(69219, {	-- Sacrificial Blade
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 					},
 				}),
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29088, {	-- Hyena Extermination
 					["qg"] = 34698,	-- Nozzlepot
 					["coord"] = { 62.5, 16.7, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(871, {	-- In Defense of Far Watch [CATA+] / Disrupt the Attacks
@@ -2027,20 +2027,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 52207,	-- Nagala Whipshank
 					["sourceQuest"] = 29112,	-- Demon Seed
 					["coord"] = { 47.5, 39.5, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(69221, {	-- Mor'shan Caravaneer's Leggings
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(69216, {	-- Wild Rider's Gloves
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(131710, {	-- Wild Rider's Mail Gauntlets
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(69222, {	-- Kadrak's Axe
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 					},
 				}),
@@ -2048,14 +2048,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3429,	-- Thork
 					["sourceQuest"] = 29095,	-- Report to Thork
 					["coord"] = { 48.7, 59.5, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29110, {	-- Mor'shan Caravan Rescue
 					["qg"] = 52207,	-- Nagala Whipshank
 					["sourceQuest"] = 29109,	-- Mor'shan Caravan Pick-Up
 					["coord"] = { 47.5, 39.6, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13612, {	-- Mor'shan Defense
@@ -2292,7 +2292,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3449,	-- Darsok Swiftdagger
 					["sourceQuest"] = 876,	-- Serena Bloodfeather
 					["coord"] = { 30.6, 45.9, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13613, {	-- Rescue the Fallen
@@ -2663,14 +2663,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34698,	-- Nozzlepot
 					["sourceQuest"] = 29087,	-- Sludge Investigation
 					["coord"] = { 62.5, 16.7, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(69220, {	-- Nozzlepot's Vest
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(69218, {	-- Sludge Fen Cloak
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(131708, {	-- Sludge Encrusted Vest
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2680,7 +2680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29087, {	-- Sludge Investigation
 					["qg"] = 34698,	-- Nozzlepot
 					["coord"] = { 62.5, 16.7, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(887, {	-- Southsea Freebooters
@@ -3172,14 +3172,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14006,	-- Read the Manual
 					},
 					["coord"] = { 62.3, 17.3, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(69217, {	-- Test Pilot Britches
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(69223, {	-- Emergency Hatchet
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(131709, {	-- Passenger Pantaloons
 							["timeline"] = { "added 7.0.3.22248" },

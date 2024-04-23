@@ -2897,13 +2897,13 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
 							i(69893, {	-- Bloodsoaked Skullforge Reaver
-								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
 							}),
 							i(69889, {	-- Burnished Breastplate of Might
-								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
 							}),
 							i(69890, {	-- Burnished Pauldrons of Might
-								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
 							}),
 							i(79131, {	-- Burnished Warden Staff
 								["timeline"] = { "added 5.0.1.15464", "removed 6.1.0.19445" },

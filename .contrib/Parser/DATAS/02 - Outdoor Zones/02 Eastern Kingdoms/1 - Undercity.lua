@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29333, {	-- Escargot A Go-Go
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29317, {	-- Fish Head
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29315, {	-- Fungus Among Us
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -630,7 +630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29320, {	-- Like Pike?
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29332, {	-- Lily, Oh Lily
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -718,7 +718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29361, {	-- Moat Monster!
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -797,7 +797,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29334, {	-- Roach Coach
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -986,7 +986,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29319, {	-- Tadpole Terror
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29322, {	-- Time for Slime
 					["qg"] = 4573,	-- Armand Cromwell
 					["coord"] = { 80.7, 31.2, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1364,7 +1364,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(29360, {	-- Would You Like Some Flies With That?
 					["qg"] = 4552,	-- Eunice Burch
 					["coord"] = { 62.2, 44.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2059,7 +2059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, UNDERCITY },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>

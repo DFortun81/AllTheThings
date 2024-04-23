@@ -24,7 +24,7 @@ root(ROOTS.Promotions, {
 		}),
 
 		ach(4832, {	-- Friends In Even Higher Places
-			["timeline"] = { "added 4.0.0" },
+			["timeline"] = { ADDED_4_0_1 },
 		}),
 		i(54860, {	-- X-53 Touring Rocket (MOUNT!)
 			["timeline"] = { ADDED_3_3_3 },

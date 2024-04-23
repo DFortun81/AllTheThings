@@ -739,11 +739,11 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	ach(5753, {	-- Cataclysmically Delicious
-		["timeline"] = { "added 4.1.0" },
+		["timeline"] = { ADDED_4_1_0 },
 		["sym"] = {{ "achievement_criteria" }},
 	}),
 	ach(5754, {	-- Drown Your Sorrows
-		["timeline"] = { "added 4.1.0" },
+		["timeline"] = { ADDED_4_1_0 },
 		["sym"] = {{ "achievement_criteria" }},
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(892, {	-- The Right Stuff

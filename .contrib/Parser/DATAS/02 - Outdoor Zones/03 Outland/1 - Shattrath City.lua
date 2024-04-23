@@ -2186,7 +2186,7 @@ root(ROOTS.Zones, {
 							})),
 							i(71037, {	-- Black Diamond Ring
 								["cost"] = 35000000,	-- 3,500g
-								["timeline"] = { "added 4.1.0" },
+								["timeline"] = { ADDED_4_1_0 },
 							}),
 							i(38091, {	-- Gold Eternium Band
 								["cost"] = 30000000,	-- 3,000g

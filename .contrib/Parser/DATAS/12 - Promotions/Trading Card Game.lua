@@ -65,13 +65,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_0_1 },
 			}),
 			i(68840, {	-- Landro's Lichling (PET!)
-				["timeline"] = { "added 4.1.0.13682" },
+				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(67128, {	-- Landro's Lil' XT (PET!)
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(68841, {	-- Nightsaber Cub (PET!)
-				["timeline"] = { "added 4.1.0.13682" },
+				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(71624, {	-- Purple Puffer (PET!)
 				["timeline"] = { "added 4.3.0.15005" },
@@ -125,7 +125,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		}),
 		filter(MOUNTS, {
 			i(68825, {	-- Amani Dragonhawk (MOUNT!)
-				["timeline"] = { "added 4.1.0.13682" },
+				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(38576, {	-- Big Battle Bear (MOUNT!) BOP
 				["timeline"] = { ADDED_2_4_2, "removed 3.2.0.10147" },
@@ -173,7 +173,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_0_1 },
 			}),
 			i(69228, {	-- Savage Raptor (MOUNT!)
-				["timeline"] = { "added 4.1.0.13682" },
+				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(71718, {	-- Swift Shorestrider (MOUNT!)
 				["timeline"] = { "added 4.3.0.15005" },
@@ -279,7 +279,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				},
 			}),
 			i(69227, {	-- Fool's Gold (TOY!)
-				["timeline"] = { "added 4.1.0.13682" },
+				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(33219, {	-- Goblin Gumbo Kettle (TOY!)
 				["timeline"] = { ADDED_2_1_3 },
@@ -329,7 +329,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_5_1 },
 			}),
 			i(69215, {	-- War Party Hitching Post (TOY!)
-				["timeline"] = { "added 4.1.0.13682" },
+				["timeline"] = { ADDED_4_1_0 },
 			}),
 		}),
 	},

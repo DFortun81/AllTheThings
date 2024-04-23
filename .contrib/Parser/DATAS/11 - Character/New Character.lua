@@ -173,7 +173,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
 		})),
 		ach(5755, {	-- Thirty Tabards
-			["timeline"] = { "added 4.1.0" },
+			["timeline"] = { ADDED_4_1_0 },
 			["rank"] = 30,
 		}),
 		ach(1021, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Twenty-Five Tabards

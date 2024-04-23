@@ -92,10 +92,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 4.1.0.13726
 			prof(FISHING, {
 				i(68795, {	-- Stendel's Bane
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["groups"] = {
 						i(68797, {	-- Stendel's Wedding Band
-							["timeline"] = { "added 4.1.0.13726" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 					},
 				}),

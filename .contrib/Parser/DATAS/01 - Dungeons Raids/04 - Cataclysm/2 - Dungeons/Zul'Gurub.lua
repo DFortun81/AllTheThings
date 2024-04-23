@@ -294,7 +294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						["qg"] = 52877,	-- Lashtail Hatchling
 						["groups"] = {
 							i(69251, {	-- Lashtail Hatchling (PET!)
-								["timeline"] = { "added 4.1.0.13698" },
+								["timeline"] = { ADDED_4_1_0 },
 							}),
 						},
 					}),

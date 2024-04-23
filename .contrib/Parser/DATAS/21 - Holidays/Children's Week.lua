@@ -74,7 +74,7 @@ local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
 		["timeline"] = { ADDED_2_1_0 },
 	}),
 	i(69648, {	-- Legs (PET!)
-		["timeline"] = { "added 4.1.0.13726" },
+		["timeline"] = { ADDED_4_1_0 },
 	}),
 	i(32617, {	-- Willy (PET!)
 		["timeline"] = { ADDED_2_1_0 },
@@ -1657,17 +1657,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
 				{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
 			},
-			["timeline"] = { "added 4.1.0.13682" },
+			["timeline"] = { ADDED_4_1_0 },
 			["maps"] = {
 				86,	-- Ogrimmar: The Drag
 			},
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 			},
 		}),
@@ -1692,14 +1692,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 65.63, 62.99, STORMWIND_CITY },
 				{ 66.61, 64.43, STORMWIND_CITY },
 			},
-			["timeline"] = { "added 4.1.0.13682" },
+			["timeline"] = { ADDED_4_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 			},
 		}),

@@ -2394,7 +2394,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 58.6, 55.2, ORGRIMMAR },
 						{ 57.8, 51.0, ORGRIMMAR },
 					},
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
@@ -2410,7 +2410,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 5.4.0.17227" },
 						}),
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
-							["timeline"] = { "added 4.1.0.13875" },
+							["timeline"] = { ADDED_4_1_0 },
 						})),
 						i(137663, {	-- Soft Foam Sword (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
@@ -2431,7 +2431,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
-							["timeline"] = { "added 4.1.0.13875" },
+							["timeline"] = { ADDED_4_1_0 },
 						})),
 					},
 				}),

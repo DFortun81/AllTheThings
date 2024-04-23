@@ -4996,7 +4996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.6, 67.6, STORMWIND_CITY },
 						{ 58.6, 76.8, STORMWIND_CITY },
 					},
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
@@ -5012,7 +5012,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.4.0.17227" },
 						}),
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
-							["timeline"] = { "added 4.1.0.13875" },
+							["timeline"] = { ADDED_4_1_0 },
 						})),
 						i(137663, {	-- Soft Foam Sword (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
@@ -5033,7 +5033,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
-							["timeline"] = { "added 4.1.0.13875" },
+							["timeline"] = { ADDED_4_1_0 },
 						})),
 					},
 				}),

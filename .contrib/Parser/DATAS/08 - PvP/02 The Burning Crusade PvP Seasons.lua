@@ -3620,7 +3620,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69861, {	-- Medallion of the Alliance (not during bc, but for bc)
-							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
+							["timeline"] = { ADDED_4_1_0, "removed 6.0.1" },
 						}),
 						i(37865, {	-- Medallion of the Horde (epic)
 							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
@@ -3629,7 +3629,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69862, {	-- Medallion of the Horde (not during bc, but for bc)
-							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
+							["timeline"] = { ADDED_4_1_0, "removed 6.0.1" },
 						}),
 					}),
 				}),

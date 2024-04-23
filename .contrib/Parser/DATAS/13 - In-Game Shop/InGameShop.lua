@@ -189,7 +189,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 				i(112324),	-- Nightmarish Hitching Post (TOY!)
 		})),
 		i(69846, {	-- Winged Guardian (MOUNT!)
-			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { ADDED_4_1_0, "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 	})),
 	filter(BATTLE_PETS, {	-- AVAILABLE --
@@ -256,13 +256,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.0.1.27602", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(70099, {	-- Cenarion Hatchling (PET!)
-			["timeline"] = { "added 4.1.0.13850", "removed 8.3.0" },
+			["timeline"] = { ADDED_4_1_0, "removed 8.3.0" },
 		}),
 		pet(2623, {	-- Dottie (PET!)
 			["timeline"] = { "added 8.3.0.33062", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)
-			["timeline"] = { "added 4.1.0.13793", "removed 4.2.0.14313" },
+			["timeline"] = { ADDED_4_1_0, "removed 4.2.0.14313" },
 		}),
 		i(72068, {	-- Guardian Cub (PET!)
 			["timeline"] = { "added 4.2.0.14313", "removed 5.4.8" },

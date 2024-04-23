@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29325, {	-- A Slippery Snack
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29359, {	-- An Old Favorite
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29316, {	-- Back to Basics
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29321, {	-- Happy as a Clam Digger
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29314, {	-- Remembering the Ancestors
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29318, {	-- Ribs for the Sentinels
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29357, {	-- Spice Bread Aplenty
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29323, {	-- Stocking Up
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -887,7 +887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29313, {	-- The Secret to Perfect Kimchi
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -917,7 +917,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29324, {	-- The Sister's Pendant
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13875" },
+					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1416,7 +1416,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52641, {	-- Layna Karner <Blacksmithing Supplies>
 					["coord"] = { 56.6, 52.6, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
@@ -1675,7 +1675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52644, {	-- Tarien Silverdew <Jewelcrafting Supplies>
 					["coord"] = { 54.6, 29.8, DARNASSUS },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
