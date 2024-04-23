@@ -249,7 +249,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
-					["maps"] = { THALDRASZUS, THE_PRIMALIST_FUTURE },
+					["maps"] = {
+						THALDRASZUS,
+						-- #IF BEFORE 10.2.6 -- Blizzard removed from spawning inside the sub-zone
+						-- ref: https://us.forums.blizzard.com/en/wow/t/disable-primalist-future-primal-storm-chance/1824419/4
+						THE_PRIMALIST_FUTURE
+						-- #ENDIF
+					},
 				}),
 				pet(3354, {	-- Storm-Touched Ottuk (PET!)
 					["maps"] = { THE_AZURE_SPAN },
@@ -272,7 +278,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 48.6, 25.2, THE_AZURE_SPAN },
 					{ 58.8, 68.4, THE_AZURE_SPAN },
 					{ 60.7, 56.3, THALDRASZUS },
+					-- #IF BEFORE 10.2.6 -- Blizzard removed from spawning inside the sub-zone
 					{ 53.4, 26.2, THE_PRIMALIST_FUTURE },
+					-- #ENDIF
 				},
 			},{
 				header(HEADERS.Spell, 368847, sharedData({	-- Firestorm
