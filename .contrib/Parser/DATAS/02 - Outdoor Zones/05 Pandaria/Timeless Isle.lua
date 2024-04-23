@@ -5,7 +5,7 @@ BURDEN_OF_ETERNITY = createHeader({
 	readable = "Burden of Eternity",
 	icon = "775461",
 	text = {
-		en = [[~C_Spell.GetSpellInfo(147343)]],
+		en = [[~GetSpellInfo(147343)]],
 	},
 	-- TODO: would like a way to make the custom header use automatic header logic in-game
 	-- to get an Item-link formatted name for further clarity on the purpose of the header and in tooltips

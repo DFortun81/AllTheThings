@@ -5,7 +5,7 @@ AZEROTHIAN_ARCHIVES = createHeader({
 	readable = "Azerothian Archives",
 	icon = "Interface\\Icons\\trade_archaeology",
 	text = {
-		en = [[~C_Spell.GetSpellInfo(419242)]],
+		en = [[~GetSpellInfo(419242)]],
 	},
 });
 

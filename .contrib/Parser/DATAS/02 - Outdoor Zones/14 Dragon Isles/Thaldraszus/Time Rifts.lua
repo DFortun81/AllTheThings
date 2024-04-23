@@ -5,7 +5,7 @@ TIME_RIFTS = createHeader({
 	readable = "Time Rift",
 	icon = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
 	text = {
-		en = [[~C_Spell.GetSpellInfo(408633)]],
+		en = [[~GetSpellInfo(408633)]],
 	},
 });
 -- #if BEFORE 10.2.0

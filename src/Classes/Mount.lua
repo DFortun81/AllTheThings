@@ -7,9 +7,9 @@ local ipairs, pairs, rawset, rawget, math_floor, select, tonumber
 
 local C_MountJournal_GetMountInfoExtraByID,C_MountJournal_GetMountInfoByID,C_MountJournal_GetMountIDs
 	= C_MountJournal.GetMountInfoExtraByID,C_MountJournal.GetMountInfoByID,C_MountJournal.GetMountIDs
-local GetSpellLink,GetItemInfo,C_Spell_GetSpellInfo
+local GetSpellLink,GetItemInfo,GetSpellInfo
 ---@diagnostic disable-next-line: deprecated
-	= GetSpellLink,((C_Item and C_Item.GetItemInfo) or GetItemInfo),C_Spell.GetSpellInfo
+	= GetSpellLink,((C_Item and C_Item.GetItemInfo) or GetItemInfo),GetSpellInfo
 
 -- App locals
 local Colorize = app.Modules.Color.Colorize;
@@ -53,7 +53,7 @@ do
 			_t.name = C_MountJournal_GetMountInfoByID(mountID);
 			_t.mountJournalID = mountID;
 		end
-		local name, icon = C_Spell_GetSpellInfo(id);
+		local name, _, icon = GetSpellInfo(id);
 		if name then
 			_t.text = Colorize(name, app.Colors.Mount)
 			_t.icon = icon;

@@ -19,8 +19,8 @@ local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 ---@diagnostic disable-next-line: undefined-global
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
-local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell_GetSpellInfo =
-	  GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell.GetSpellInfo;
+local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo =
+	  GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
@@ -1540,14 +1540,14 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 				if objective then return objective.text; end
 			end
 			return app.GetNameFromProviders(t)
-				or (t.spellID and C_Spell_GetSpellInfo(t.spellID))
+				or (t.spellID and GetSpellInfo(t.spellID))
 				or RETRIEVING_DATA;
 		end
 		return "INVALID: Must be relative to a Quest Object.";
 	end,
 	icon = function(t)
 		return app.GetIconFromProviders(t)
-			or (t.spellID and select(2, C_Spell_GetSpellInfo(t.spellID)))
+			or (t.spellID and select(3, GetSpellInfo(t.spellID)))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end,
 	model = function(t)

@@ -9,7 +9,7 @@ TREASURES = createHeader({
 		-- #if ANYCLASSIC
 		en = "Treasures",
 		-- #else
-		en = [[~C_Spell.GetSpellInfo(225652).." "..C_Spell.GetSpellInfo(168498)]],	-- Treasure Chest, there wasn't a close translation.
+		en = [[~GetSpellInfo(225652).." "..GetSpellInfo(168498)]],	-- Treasure Chest, there wasn't a close translation.
 		-- #endif
 		ru = "Сундук с сокровищами",
 	},

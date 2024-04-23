@@ -16,8 +16,8 @@ local _, app = ...
 -- local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 -- local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
 -- local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
--- local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell.GetSpellInfo =
--- 	  GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell.GetSpellInfo;
+-- local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo =
+-- 	  GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo;
 -- local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 -- local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 

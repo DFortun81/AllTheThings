@@ -574,8 +574,8 @@ for key,value in pairs({
 			[-5205] = "Скрытый облик",								-- Hidden Appearance
 
 	-- Classes
-		[-9951] = C_Spell.GetSpellInfo(148462).." и "..C_Spell.GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
-		[-9952] = C_Spell.GetSpellInfo(234890).." и "..C_Spell.GetSpellInfo(137011),	-- Guardian / Feral Druid Spec
+		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
+		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011),	-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Видения Н'Зота",								-- Visions of N'Zoth
 		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
@@ -850,7 +850,7 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "Новый Персонаж", desc = "Только Новый Персонаж может собрать эти предметы." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Нити Судьбы", desc = "Только Персонаж, который пропустил сюжет Тёмных Земель, может собрать эти предметы." },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = C_Spell.GetSpellInfo(275825), desc = "Только Персонаж с |cffe6cc80Сердцем Азерот|r может собрать эти предметы." },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Только Персонаж с |cffe6cc80Сердцем Азерот|r может собрать эти предметы." },
 	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000Без|r Сердца Азерот", desc = "Только Персонаж |cffff0000без|r |cffe6cc80Сердца Азерот|r может собрать эти предметы." },
 })
 do a[key] = value; end
