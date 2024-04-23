@@ -23,7 +23,7 @@ PLUNDERSTORM = createHeader({
 	},
 });
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM } }, {
 	n(PLUNDERSTORM, {
 		n(ACHIEVEMENTS, {
 			ach(20509),	-- Plunderking
