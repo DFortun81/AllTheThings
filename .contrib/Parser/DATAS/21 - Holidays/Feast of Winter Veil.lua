@@ -1777,7 +1777,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 33.4, 67, IRONFORGE },
 			-- #endif
-			["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			["timeline"] = { REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			["maps"] = { ALTERAC_MOUNTAINS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1790,7 +1790,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
-			["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			["timeline"] = { REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			["maps"] = { ALTERAC_MOUNTAINS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,

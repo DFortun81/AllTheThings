@@ -4012,7 +4012,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
 					["groups"] = {
 						i(16999, {	-- Royal Seal of Alexis
-							["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3, "removed 4.0.6" },
+							["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3, REMOVED_4_0_6 },
 						}),
 					},
 				}),

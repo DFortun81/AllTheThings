@@ -99,10 +99,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(29187),	-- Inscription of Endurance
 						-- #if BEFORE CATA
 						applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-							["timeline"] = { "removed 4.0.1.20000" },
+							["timeline"] = { REMOVED_4_0_1 },
 						})),
 						applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-							["timeline"] = { "removed 4.0.1.20000" },
+							["timeline"] = { REMOVED_4_0_1 },
 						})),
 						-- #endif
 					},

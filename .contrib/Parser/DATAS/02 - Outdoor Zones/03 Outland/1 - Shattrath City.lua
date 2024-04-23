@@ -1877,16 +1877,16 @@ root(ROOTS.Zones, {
 								["races"] = HORDE_ONLY,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							i(31949, {	-- Warden's Arrow
 								["timeline"] = { REMOVED_4_0_1 },
@@ -2320,16 +2320,16 @@ root(ROOTS.Zones, {
 								["races"] = HORDE_ONLY,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							i(31949, {	-- Warden's Arrow
 								["timeline"] = { REMOVED_4_0_1 },

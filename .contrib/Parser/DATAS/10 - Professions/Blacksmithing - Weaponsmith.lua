@@ -45,7 +45,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -54,7 +54,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -63,7 +63,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -72,7 +72,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					-- #if BEFORE 7.1.5.23360
@@ -82,7 +82,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 							"added 7.1.5.23360",
 						},
 					}),
@@ -92,7 +92,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 							"added 7.1.5.23360",
 						},
 					}),
@@ -103,7 +103,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -112,7 +112,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17041,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 				},
@@ -161,7 +161,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -170,7 +170,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -179,7 +179,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -188,7 +188,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					-- #if BEFORE 7.1.5.23360
@@ -198,7 +198,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 							"added 7.1.5.23360",
 						},
 					}),
@@ -208,7 +208,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 							"added 7.1.5.23360",
 						},
 					}),
@@ -219,7 +219,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -228,7 +228,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17040,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 				},
@@ -252,7 +252,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16978,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 							"added 7.1.5.23360",
 						},
 					},
@@ -284,7 +284,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -293,7 +293,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -302,7 +302,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -311,7 +311,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -320,7 +320,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -329,7 +329,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 						},
 					}),
 					-- #if BEFORE 7.1.5.23360
@@ -339,7 +339,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_1_0,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 							"added 7.1.5.23360",
 						},
 					}),
@@ -349,7 +349,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 4.0.1.13287",
+							REMOVED_4_0_1,
 							"added 7.1.5.23360",
 						},
 					}),
@@ -431,13 +431,13 @@ profession(BLACKSMITHING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Emberforged Hammer",
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36128,
 						["requireSkill"] = 9787,
 					}),
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Skyforged Axe",
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36126,
 						["requireSkill"] = 9787,
 					}),

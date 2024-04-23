@@ -690,7 +690,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10212, {	-- Hero of the Mag'har
 						["qg"] = 4949,	-- Thrall
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(28173),	-- Mag'hari Huntsman's Leggings
@@ -1455,7 +1455,7 @@ root(ROOTS.Zones, {
 					q(10175, {	-- Thrall, Son of Durotan
 						["qg"] = 18141,	-- Greatmother Geyah
 						["sourceQuest"] = 10172,	-- There Is No Hope
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10987, {	-- To Catch A Sparrowhawk
@@ -1847,7 +1847,7 @@ root(ROOTS.Zones, {
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
 							i(23874),	-- Schematic: Elemental Seaforium Charge
 							i(29118, {	-- Smuggler's Ammo Pouch
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29117),	-- Stormspire Vest
 						},
@@ -1859,7 +1859,7 @@ root(ROOTS.Zones, {
 							i(29145),	-- Band of Ancestral Spirits
 							i(29139),	-- Ceremonial Cover
 							i(29143, {	-- Clefthoof Hide Quiver
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29135),	-- Earthcaller's Headdress
 							i(29137),	-- Hellscream's Will
@@ -2142,7 +2142,7 @@ root(ROOTS.Zones, {
 							i(31836),	-- White Riding Talbuk (A) (MOUNT!)
 							i(29231),	-- White War Talbuk (A) (MOUNT!)
 							i(29144, {	-- Worg Hide Quiver
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),

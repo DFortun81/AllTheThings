@@ -2260,7 +2260,7 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Blazing Rapier",
 					["timeline"] = {
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 					["recipeID"] = 16978,
@@ -3109,7 +3109,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 36137,
 					["timeline"] = {
 						ADDED_2_0_1,
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3132,7 +3132,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 36136,
 					["timeline"] = {
 						ADDED_2_0_1,
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3147,7 +3147,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 36135,
 					["timeline"] = {
 						ADDED_2_0_1,
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3156,7 +3156,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 36133,
 					["timeline"] = {
 						ADDED_2_1_0,
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3165,7 +3165,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 36134,
 					["timeline"] = {
 						ADDED_2_0_1,
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),
@@ -3174,7 +3174,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 36131,
 					["timeline"] = {
 						ADDED_2_0_1,
-						"removed 4.0.1.13287",
+						REMOVED_4_0_1,
 						"added 7.1.5.23360",
 					},
 				}),

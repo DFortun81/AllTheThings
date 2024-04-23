@@ -113,10 +113,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #if BEFORE CATA
 					i(31737, {	-- Timeless Arrow
-						["timeline"] = { "removed 4.0.1.20000" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(31735, {	-- Timeless Shell
-						["timeline"] = { "removed 4.0.1.20000" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					-- #endif
 				})),

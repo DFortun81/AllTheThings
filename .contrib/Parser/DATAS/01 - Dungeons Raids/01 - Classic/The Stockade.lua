@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 49, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(377, {	-- Crime and Punishment
 					["qg"] = 270,	-- Councilman Millstipe
 					["coord"] = { 72.0, 46.8, DUSKWOOD },
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -58,10 +58,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 3628 },	-- Hand of Dextren Ward
 						}),
 						i(2906, {	-- Darkshire Mail Leggings
-							["timeline"] = { "removed 4.0.1.12984" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(2033, {	-- Ambassador's Boots
-							["timeline"] = { "removed 4.0.1.12984" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 41.2, 58, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 73.6, 47.7, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 1074,	-- Motley Garmason
 					["sourceQuest"] = 303,	-- The Dark Iron War
 					["coord"] = { 49.8, 18.2, WETLANDS },
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -142,10 +142,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 3640 },	-- Head of Deepfury
 						}),
 						i(1264, {	-- Headbasher
-							["timeline"] = { "removed 4.0.1.12984" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(3562, {	-- Belt of Vindication
-							["timeline"] = { "removed 4.0.1.12984" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -188,7 +188,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 41.2, 58, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(386, {	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton
 					["coord"] = { 26, 43, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -208,66 +208,66 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 3630 },	-- Head of Targorr
 						}),
 						i(1317, {	-- Hardened Root Staff
-							["timeline"] = { "removed 4.0.1.12984" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(3400, {	-- Lucine Longsword
-							["timeline"] = { "removed 4.0.1.12984" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(1076, {	-- Defias Renegade Ring
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
 				["description"] = "This is a rare that was not always present.",
-				["timeline"] = { "removed 4.0.1.12984" },
+				["timeline"] = { REMOVED_4_0_1 },
 				["groups"] = {
 					i(2942, {	-- Iron Knuckles
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(3228, {	-- Jimmied Handcuffs
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(2941, {	-- Prison Shank
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 				},
 			}),
 			n(1666, {	-- Kam Deepfury
-				["timeline"] = { "removed 4.0.1.12984" },
+				["timeline"] = { REMOVED_4_0_1 },
 				["groups"] = {
 					i(3640, {	-- Head of Deepfury
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(2280, {	-- Kam's Walking Stick
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 				},
 			}),
 			n(1663, {	-- Dextren Ward
-				["timeline"] = { "removed 4.0.1.12984" },
+				["timeline"] = { REMOVED_4_0_1 },
 				["groups"] = {
 					i(3628, {	-- Hand of Dextren Ward
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 				},
 			}),
 			n(1717, {	-- Hamhock
-				["timeline"] = { "removed 4.0.1.12984" },
+				["timeline"] = { REMOVED_4_0_1 },
 			}),
 			n(1696, {	-- Targorr the Dread
-				["timeline"] = { "removed 4.0.1.12984" },
+				["timeline"] = { REMOVED_4_0_1 },
 				["groups"] = {
 					i(3630, {	-- Head of Targorr
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 				},
 			}),
 			n(1716, {	-- Bazil Thredd
-				["timeline"] = { "removed 4.0.1.12984" },
+				["timeline"] = { REMOVED_4_0_1 },
 				["groups"] = {
 					-- #if BEFORE 4.0.1
 					ach(633, {	-- Stormwind Stockade
@@ -278,7 +278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #endif
 					i(2926, {	-- Head of Bazil Thredd
-						["timeline"] = { "removed 4.0.1.12984" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 				},
 			}),
