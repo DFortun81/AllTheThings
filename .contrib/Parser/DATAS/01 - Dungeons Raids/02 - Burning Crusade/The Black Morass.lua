@@ -15,7 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10298, {	-- Hero of the Brood
 					["qg"] = 20201,	-- Sa'at
 					["sourceQuest"] = 10297,	-- The Opening of the Dark Portal
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 25),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {

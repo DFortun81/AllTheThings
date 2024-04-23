@@ -3045,7 +3045,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(11151, {	-- Formula: Enchant Gloves - Herbalism
-					["timeline"] = { "removed 4.3.0", "deleted 7.0.1" },	-- Replaced by BOP Version
+					["timeline"] = { REMOVED_4_3_0, "deleted 7.0.1" },	-- Replaced by BOP Version
 					["crs"] = {
 						4029,	-- Blackened Ancient
 						4028,	-- Charred Ancient

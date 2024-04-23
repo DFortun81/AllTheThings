@@ -31,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 19698,	-- Greatfather Aldrimus
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
 					["coord"] = { 35.1, 65.2, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain

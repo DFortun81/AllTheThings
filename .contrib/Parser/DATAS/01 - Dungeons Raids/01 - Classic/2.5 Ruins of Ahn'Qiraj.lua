@@ -836,7 +836,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						["timeline"] = {
 							"added 1.13.0.28211",
 							"removed 2.0.1",	-- Classic WoWHead shows 0 new drops in WotLK since Classic. (902 recorded drops in both versions, which goes to show that this item no longer exists on the drop table)
-							--"removed 4.2.2.28211",
+							--REMOVED_4_2_2,
 							ADDED_10_1_7,
 						},
 					}),

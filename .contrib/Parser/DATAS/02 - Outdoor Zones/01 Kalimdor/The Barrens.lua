@@ -1048,7 +1048,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5478),	-- Dig Rat Stew
 						i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
-							["timeline"] = { "removed 4.3.0" },
+							["timeline"] = { REMOVED_4_3_0 },
 						}),
 					},
 				}),

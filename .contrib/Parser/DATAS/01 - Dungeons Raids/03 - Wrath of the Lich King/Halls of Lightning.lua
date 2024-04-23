@@ -171,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13109, {	-- Diametrically Opposed
 					["qg"] = 30105,	-- King Jokkum
 					["coord"] = { 65.4, 60.2, THE_STORM_PEAKS },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Volkhan Defeated
@@ -210,7 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30105,	-- King Jokkum
 					["sourceQuest"] = 13047,	-- The Reckoning
 					["coord"] = { 65.4, 60.2, THE_STORM_PEAKS },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Loken's Tongue

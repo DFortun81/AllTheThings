@@ -208,10 +208,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		ach(4400),	-- 5th Anniversary
 		i(49362),	-- Onyxian Whelpling
 	})),
-	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, "removed 4.2.2" } }, {
+	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_2_2 } }, {
 		ach(5512),	-- 6th Anniversary
 	})),
-	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_2, "removed 4.3" } }, {
+	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_2, REMOVED_4_3_0 } }, {
 		ach(5863),	-- 7th Anniversary
 		i(71134),	-- Celebration Package
 	})),

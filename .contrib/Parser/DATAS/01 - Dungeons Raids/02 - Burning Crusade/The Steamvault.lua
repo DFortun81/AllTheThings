@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(9764, {	-- Orders from Lady Vashj
 					["provider"] = { "i", 24367 },	-- Orders from Lady Vashj
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),
-				q(9763, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- The Warlord's Hideout
+				q(9763, bubbleDown({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- The Warlord's Hideout
 					["qg"] = 17884,	-- Watcher Jhang
 					["coord"] = { 52.3, 36.0, ZANGARMARSH },
 					["lvl"] = lvlsquish(67, 67, 20),
@@ -101,7 +101,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["cr"] = 17803,	-- Coilfang Oracle
 				}),
 				i(24367, {	-- Orders from Lady Vashj
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					-- #if BEFORE 4.3.0.14732
 					["crs"] = {
 						17721,	-- Coilfang Engineer

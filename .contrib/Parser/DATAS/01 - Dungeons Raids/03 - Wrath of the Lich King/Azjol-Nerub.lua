@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13167, {	-- Death to the Traitor King
 					["qg"] = 26653,	-- Kilix the Unraveler
 					["coord"] = { 26.2, 50.8, DRAGONBLIGHT },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Anub'arak's Broken Husk
@@ -155,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13182, {	-- Don't Forget the Eggs!
 					["qg"] = 26653,	-- Kilix the Unraveler
 					["coord"] = { 26.2, 50.8, DRAGONBLIGHT },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/6 Nerubian Scourge Eggs Destroyed

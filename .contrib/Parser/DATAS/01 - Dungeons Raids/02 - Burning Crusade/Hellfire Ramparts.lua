@@ -14,14 +14,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(9587,  {	-- Dark Tidings [Alliance]
 					["provider"] = { "i", 23890 },	-- Ominous Letter
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(9588,  {	-- Dark Tidings [Horde]
 					["provider"] = { "i", 23892 },	-- Ominous Letter
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 17557,	-- Lieutenant Chadwick
 					["sourceQuest"] = 10142,	-- The Path of Anguish
 					["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 17493,	-- Stone Guard Stok'ton
 					["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
 					["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {

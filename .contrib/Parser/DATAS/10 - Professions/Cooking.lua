@@ -1888,7 +1888,7 @@ itemrecipe("Recipe: Scorpid Surprise", 5483, 6413);
 itemrecipe("Recipe: Roasted Kodo Meat", 5484, 6414);
 itemrecipe("Recipe: Fillet of Frenzy", 5485, 6415);
 itemrecipe("Recipe: Strider Stew", 5486, 6416);
-itemrecipe("Recipe: Dig Rat Stew", 5487, 6417, "removed 4.3.0.2000");
+itemrecipe("Recipe: Dig Rat Stew", 5487, 6417, REMOVED_4_3_0);
 itemrecipe("Recipe: Crispy Lizard Tail", 5488, 6418);
 itemrecipe("Recipe: Lean Venison", 5489, 6419);
 itemrecipe("Recipe: Clam Chowder", 5528, 6501);

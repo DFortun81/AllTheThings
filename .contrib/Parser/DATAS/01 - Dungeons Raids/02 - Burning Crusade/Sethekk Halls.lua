@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18933,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14942" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- Darkweaver Syth slain
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18933,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14942" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["cost"] = {
 						{ "i", 32888, 1 },	-- The Relics of Terokk
 					},
@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						objective(1, {	-- 0/1 The Saga of Terokk
 							["provider"] = { "i", 27634 },	-- The Saga of Terokk
 							["description"] = "Found on the floor in the center of the room before Talon King Ikiss.",
-							["timeline"] = { "removed 4.3.0.14942" },
+							["timeline"] = { REMOVED_4_3_0 },
 						}),
 						objective(2, {	-- 0/1 Terokk's Mask
 							["provider"] = { "i", 27633 },	-- Terokk's Mask

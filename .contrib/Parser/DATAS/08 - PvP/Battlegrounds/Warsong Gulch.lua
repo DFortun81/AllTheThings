@@ -139,7 +139,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						1252,	-- Supreme Defender (H)
 						207,	-- Save the Day
 					}},
-					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(166, {	-- Warsong Gulch Victory

@@ -76,7 +76,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		-- #if BEFORE DF
 		["description"] = "Reward from the Diablo III Annual Pass promotion. Additionally, it was available on the Taiwan store.",
 		-- #endif
-		["timeline"] = { ADDED_4_3_0, "removed 4.3.4.15595" },
+		["timeline"] = { ADDED_4_3_0, REMOVED_4_3_2 },
 	}),
 	ach(414, {	-- Tyrael's Hilt
 		["timeline"] = { ADDED_3_0_2 },

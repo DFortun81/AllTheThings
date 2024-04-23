@@ -68,7 +68,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						583,	-- Arathi Basin All-Star
 						584,	-- Arathi Basin Assassin
 					}},
-					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(154, {	-- Arathi Basin Victory

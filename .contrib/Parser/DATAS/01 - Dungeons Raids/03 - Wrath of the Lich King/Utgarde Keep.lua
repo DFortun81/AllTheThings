@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13205, {	-- Disarmament
 					["qg"] = 24111,	-- Defender Mordun
-					["timeline"] = { ADDED_3_0_2, "removed 4.3.0.14732" },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["coord"] = { 59.4, 48.8, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
@@ -250,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(11252, {	-- Into Utgarde!
 					["qg"] = 24111,	-- Defender Mordun
 					["sourceQuest"] = 11251,	-- Fresh Legs
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {

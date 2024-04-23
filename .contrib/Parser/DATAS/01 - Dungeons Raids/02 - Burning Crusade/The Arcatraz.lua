@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					-- #if AFTER WRATH
 					["lvl"] = lvlsquish(67, 67, 25),
 					-- #else

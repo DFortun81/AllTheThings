@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10178, {	-- Find Spy To'gun
 					["qg"] = 19496,	-- Spy Grik'tha
 					["coord"] = { 39.9, 72.3, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29640, {	-- Find Spy To'gun
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10095, {	-- Into the Heart of the Labyrinth
 					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["sourceQuest"] = 10094,	-- The Codex of Blood
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- Murmur slain
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10094, {	-- The Codex of Blood
 					["qg"] = 19542,	-- Field Commander Mahfuun
 					["sourceQuest"] = 10177,	-- Trouble at Auchindoun
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29643, {	-- The Codex of Blood
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10091, {	-- The Soul Devices
 					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 10178,	-- Find Spy To'gun
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Soul Device
@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10177, {	-- Trouble at Auchindoun
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),

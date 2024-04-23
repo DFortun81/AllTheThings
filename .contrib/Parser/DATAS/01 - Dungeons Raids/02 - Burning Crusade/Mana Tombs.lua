@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ "o", 183877 },	-- Ethereal Transporter Control Panel
 					},
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					},
 				}),
-				q(10218, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
+				q(10218, bubbleDown({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
 					["providers"] = {
 						{ "n",  19671 },	-- Cryo-Engineer Sha'heen
 						{ "o", 183877 },	-- Ethereal Transporter Control Panel
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(32092),	-- The Eye of Haramad
 					},
 				}),
-				q(10165, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Undercutting the Competition [Rewards also removed... :(]
+				q(10165, bubbleDown({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Undercutting the Competition [Rewards also removed... :(]
 					["qg"] = 19674,	-- Nexus-Prince Haramad
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 64, 15),

@@ -134,7 +134,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(54069, {	-- Blazing Hippogryph (MOUNT!)
-				["timeline"] = { ADDED_3_3_3, "removed 4.3.0.15005" },
+				["timeline"] = { ADDED_3_3_3, REMOVED_4_3_0 },
 			}),
 			i(74269, {	-- Blazing Hippogryph (MOUNT!)
 				["timeline"] = { ADDED_4_3_0 },

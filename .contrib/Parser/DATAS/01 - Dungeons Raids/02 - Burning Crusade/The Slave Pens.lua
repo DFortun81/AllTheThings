@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 17841,	-- Ysiel Windsinger
 					["sourceQuest"] = 9732,	-- Return to the Marsh
 					["coord"] = { 78.4, 62.0, ZANGARMARSH },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 62, 10),
 				}),
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["sourceQuest"] = 9876,	-- Failed Incursion
 					["coord"] = { 52.3, 36.0, ZANGARMARSH },
 					["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 10),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {

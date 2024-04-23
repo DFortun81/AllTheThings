@@ -141,7 +141,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						226,	-- The Alterac Blitz
 						-- #endif
 					}},
-					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(218, {	-- Alterac Valley Victory

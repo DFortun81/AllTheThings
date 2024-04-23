@@ -614,7 +614,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9765,	-- Preparing for War
 						["maxReputation"] = { 942, EXALTED },	-- Cenarion Expedition, Exalted.
-						["timeline"] = { "removed 4.3.0.14732" },
+						["timeline"] = { REMOVED_4_3_0 },
 						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						["repeatable"] = true,
@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, {
 					q(9765, {	-- Preparing for War
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9764,	-- Orders from Lady Vashj
-						["timeline"] = { "removed 4.3.0.14732" },
+						["timeline"] = { REMOVED_4_3_0 },
 						["cost"] = {{ "i", 24368, 1 }},	-- Coilfang Armaments
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						["lvl"] = lvlsquish(67, 67, 20),

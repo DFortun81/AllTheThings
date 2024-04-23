@@ -2135,7 +2135,7 @@ root(ROOTS.PVP, {
 			})),
 		}),
 		applyclassicphase(CATA_PHASE_THREE, n(SEASON_RUTHLESS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_2_0, "removed 4.3.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 }, }, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3349,7 +3349,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(70413)),	-- Ruthless Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0, "removed 4.3.0" }, }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 }, }, {
 				-- Original Sources are:
 				-- n40606 Knight-Lieutenant T'Maire Sydes in Stormwind (Alliance)
 				-- n54659 Blood Guard Zar'shi in Orgrimmar (Horde)

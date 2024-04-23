@@ -1658,7 +1658,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 33.4, 67, IRONFORGE },
 			-- #endif
 			["maps"] = { SEARING_GORGE, TANARIS },
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
@@ -1688,7 +1688,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
 			["maps"] = { SEARING_GORGE, TANARIS },
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
@@ -1827,7 +1827,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 33.4, 67, IRONFORGE },
 			-- #endif
 			["description"] = 'Requires Cooking Skill Level 300',
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["cost"] = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g
@@ -1849,7 +1849,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
 			["description"] = 'Requires Cooking Skill Level 300',
-			["timeline"] = { "removed 4.3.0" },
+			["timeline"] = { REMOVED_4_3_0 },
 			["cost"] = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g

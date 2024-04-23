@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9494, {	-- Fel Embers
 					["qg"] = 16829,	-- Magus Zabraxis <Reagents>
 					["coord"] = { 53.9, 65.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
@@ -202,14 +202,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				applyclassicphase(TBC_PHASE_FOUR, q(9524, {	-- Imprisoned in the Citadel [Alliance]
 					["qg"] = 17288,	-- Randy Whizzlesprocket
 					["description"] = "This quest can only be completed on Heroic Difficulty.",
-					["timeline"] = { "removed 4.3.0" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 70,
 				})),
 				applyclassicphase(TBC_PHASE_FOUR, q(9525, {	-- Imprisoned in the Citadel [Horde]
 					["qg"] = 17294,	-- Drisella
 					["description"] = "This quest can only be completed on Heroic Difficulty.",
-					["timeline"] = { "removed 4.3.0" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 70,
 				})),
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9493, {	-- Pride of the Fel Horde [Alliance]
 					["qg"] = 16830,	-- Field Commander Romus
 					["coord"] = { 56.8, 62.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -262,7 +262,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9496, {	-- Pride of the Fel Horde [Horde]
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin <Ears of the Warchief>
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -313,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9495, {	-- The Will of the Warchief
 					["qg"] = 3230,	-- Nazgrel <Advisor to Thrall>
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9492, {	-- Turning the Tide
 					["qg"] = 16819,	-- Force Commander Danath Trollbane <Sons of Lothar>
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732

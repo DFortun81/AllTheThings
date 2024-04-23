@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13204, {	-- Funky Fungi
 					["provider"] = { "i", 43512 },	-- Ooze-Covered Fungus
-					["timeline"] = { "removed 4.3.0" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["cr"] = 30329,	-- Savage Cave Beast
 					["lvl"] = lvlsquish(73, 73, 15),
 					["groups"] = {

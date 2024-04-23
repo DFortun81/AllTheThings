@@ -177,7 +177,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["sourceQuest"] = 13099,	-- Just Checkin'
 					["coord"] = { 70, 21, ZULDRAK },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Drakkari History Tablet
@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30671,	-- Tol'mar
 					["sourceQuest"] = 13097,	-- Unfinished Business
 					["coord"] = { 70.0, 22.8, ZULDRAK },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gal'darah slain
@@ -265,7 +265,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["sourceQuest"] = 13099,	-- Just Checkin'
 					["coord"] = { 70, 21, ZULDRAK },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Drakkari Colossus Fragment
