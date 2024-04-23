@@ -1350,10 +1350,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(34416, {	-- Gloves of the Dune
-							["timeline"] = { "added 2.3.0.7382", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 						}),
 						i(34417, {	-- Marauder's Handwraps
-							["timeline"] = { "added 2.3.0.7382", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),

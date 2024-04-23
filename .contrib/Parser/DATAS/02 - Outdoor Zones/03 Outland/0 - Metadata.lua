@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Outland_01",
 		-- #endif
 		["zone-text-continent"] = true,
-		["timeline"] = { "added 2.0.1" },
+		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1312, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Bloody Rare

@@ -1787,7 +1787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(23848, {	-- Nethergarde Bitter
 							["description"] = "Buy at least one of these before you enter the Dark Portal!",
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
 				}),

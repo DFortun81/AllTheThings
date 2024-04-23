@@ -769,7 +769,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 41.8, 38.7, THE_BARRENS },
 						{ 45.0, 62.2, THE_BARRENS },
 					},
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
 				}),
@@ -777,7 +777,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3292,	-- Brewmaster Drohn
 					["sourceQuest"] = 819,	-- Chen's Empty Keg (1/3)
 					["coord"] = { 62.27, 38.39, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -808,7 +808,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(4952, {	-- Stormstout
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -816,7 +816,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3292,	-- Brewmaster Drohn
 					["sourceQuest"] = 821,	-- Chen's Empty Keg (2/3)
 					["coord"] = { 62.27, 38.39, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 11,
@@ -840,7 +840,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(4953, {	-- Trogg Brew / Trogg Ale [CATA+]
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -4090,7 +4090,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(20855, {	-- Design: Wicked Moonstone Ring
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(6272, {	-- Pattern: Blue Linen Robe

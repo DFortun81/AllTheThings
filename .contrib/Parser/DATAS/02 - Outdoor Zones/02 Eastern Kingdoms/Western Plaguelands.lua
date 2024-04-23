@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10373, {	-- A Call to Arms: The Plaguelands! [The Exodar]
 					["qg"] = 20722,	-- Herald Bran'daan
 					["coord"] = { 55.4, 47.2, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10374, {	-- A Call to Arms: The Plaguelands! [Silvermoon City]
 					["qg"] = 20724,	-- Herald Amorlin
 					["coord"] = { 59.3, 64.7, SILVERMOON_CITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -1013,7 +1013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9443,	-- The So-Called Mark of the Lightbringer
 					["coord"] = { 26.6, 58.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9601,	-- To The Bulwark
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["maps"] = { UNDERCITY },
 					["classes"] = { PALADIN },
@@ -2182,7 +2182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9474, {	-- The Mark of the Lightbringer
 					["qg"] = 17238,	-- Anchorite Truuen
 					["coord"] = { 42.9, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2263,7 +2263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9443, {	-- The So-Called Mark of the Lightbringer
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["coord"] = { 26.6, 58.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2372,7 +2372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 92.0, 37.6, SILVERMOON_CITY },
 						{ 57.8, 90.8, UNDERCITY },
 					},
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -2381,7 +2381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17238,	-- Anchorite Truuen
 					["sourceQuest"] = 9474,	-- The Mark of the Lightbringer
 					["coord"] = { 42.9, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
@@ -2655,7 +2655,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 10590,	-- Prove Your Hatred
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,

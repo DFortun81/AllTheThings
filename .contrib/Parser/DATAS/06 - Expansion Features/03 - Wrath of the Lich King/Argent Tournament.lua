@@ -815,7 +815,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33435,	-- Bozzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
 					["coord"] = { 74.0, 24.6, ICECROWN },
-					["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { THE_STORM_PEAKS },
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
@@ -2082,7 +2082,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33434,	-- Bezzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
 					["coord"] = { 74.2, 24.6, ICECROWN },
-					["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { CRYSTALSONG_FOREST },
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
@@ -2692,7 +2692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				q(13820, {	-- The Blastbolt Brothers
 					["qg"] = 33817,	-- Justicar Mariel Trueheart <Seneschal of the Argent Tournament>
 					["coord"] = { 69.6, 22.8, ICECROWN },
-					["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif

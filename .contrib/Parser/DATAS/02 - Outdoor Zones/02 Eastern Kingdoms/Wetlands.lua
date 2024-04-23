@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield
-							["timeline"] = { "added 2.0.1", "removed 4.1.0" },	-- Moved to Trainer
+							["timeline"] = { ADDED_2_0_1, "removed 4.1.0" },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
 					},

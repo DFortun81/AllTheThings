@@ -1325,7 +1325,7 @@ local EPIC_GEM_COSTS = { { "c", 42, 15 } };	-- 15x Badge of Justice
 local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
 -- #endif
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
-	m(ISLE_OF_QUELDANAS, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
+	m(ISLE_OF_QUELDANAS, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {
 		["lore"] = "The Isle of Quel'Danas is an island located north of Eversong Woods. It is most commonly reached by the direct portal from Shattrath City. It is the major daily quest hub for the Shattered Sun Offensive, a group of Aldor and Scryers working together to reclaim the island from Kael'thas, who reactivated the Sunwell.",
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_isleofqueldanas",

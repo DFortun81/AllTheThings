@@ -2287,7 +2287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				-- Originally a zone drop of Azshara, was moved to Winterspring after.
 				i(34535, {	-- Azure Whelpling (PET!)
-					["timeline"] = { "added 2.3.0.7485" },
+					["timeline"] = { ADDED_2_3_0 },
 					["crs"] = {
 						193,	-- Blue Dragonspawn
 						6130,	-- Blue Scalebane

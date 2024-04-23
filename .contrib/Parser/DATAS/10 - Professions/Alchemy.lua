@@ -1096,7 +1096,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Gurubashi Mojo Madness",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 24266
 				}),
 			}
@@ -1420,7 +1420,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Elixir of Greater Firepower",
-					["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 					["recipeID"] = 26277
 				}),
 				{
@@ -1489,7 +1489,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of Waterwalking",	-- See later in SoD TBC if this is true
-					["timeline"] = { "added 2.4.0", "deleted 3.0.1" },
+					["timeline"] = { ADDED_2_4_0, "deleted 3.0.1" },
 					["recipeID"] = 11447,
 				},
 				{

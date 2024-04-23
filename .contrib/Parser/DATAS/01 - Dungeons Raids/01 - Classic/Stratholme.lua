@@ -854,7 +854,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							applyclassicphase(PHASE_SIX, {
 								["itemID"] = 22897,	-- Tome of Conjure Food VII
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["classes"] = { MAGE },
 								["spellID"] = 28612,	-- Conjure Food VII
 								["rank"] = 7,
@@ -944,7 +944,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 							}),
 							i(22301, {	-- Ironweave Robe
-								["timeline"] = { "removed 4.0.1", ADDED_10_1_5 },
+								["timeline"] = { REMOVED_4_0_1, ADDED_10_1_5 },
 							}),
 							i(22328, {	-- Legplates of Vigilance
 								["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
@@ -1048,7 +1048,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "Found outside of Baroness Anastari's ziggurat.",
 						["groups"] = {
 							i(18783, {	-- Bottom Half of Advanced Armorsmithing: Volume III
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(13350, {	-- Insignia of the Black Guard
 								["timeline"] = { REMOVED_4_0_3 },

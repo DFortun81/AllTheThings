@@ -24,7 +24,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(33079, {	-- Murloc Costume (TOY!)
-		["timeline"] = { "added 2.1.3.6898" },
+		["timeline"] = { ADDED_2_1_3 },
 	}),
 
 	ach(415, {	-- Blizzcon 2008 - Big Blizzard Bear

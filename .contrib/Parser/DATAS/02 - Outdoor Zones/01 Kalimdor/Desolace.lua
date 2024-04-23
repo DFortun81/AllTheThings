@@ -1778,7 +1778,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(32378, {	-- Silver Star [TBC]
 							["timeline"] = {
-								"added 2.0.1.5678",
+								ADDED_2_0_1,
 								REMOVED_4_0_3,
 							},
 						}),
@@ -2227,7 +2227,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 31.6, 29.4, DESOLACE },
 					},
 					-- #endif
-					["timeline"] = { "added 2.2.0.7272" },
+					["timeline"] = { ADDED_2_2_0 },
 				}),
 				n(11688, {	-- Cursed Centaur
 					-- #if AFTER CATA
@@ -2348,7 +2348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(7114, {	-- Pattern: Azure Silk Gloves

@@ -61,23 +61,23 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				ach(2085, {	-- 50 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 50 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2086, {	-- 100 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 100 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2087, {	-- 250 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 250 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2088, {	-- 500 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 500 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2089, {	-- 1000 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 1000 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2080, {	-- Black War Mammoth
 					["providers"] = {

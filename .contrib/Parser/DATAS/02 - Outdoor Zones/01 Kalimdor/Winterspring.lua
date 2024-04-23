@@ -1804,10 +1804,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
 						i(34424, {	-- Power of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(34423, {	-- Strength of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 					},
 				}),
@@ -1821,10 +1821,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
 						i(34424, {	-- Power of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(34423, {	-- Strength of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 					},
 				}),
@@ -2141,7 +2141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(21957, {	-- Design: Necklace of the Diamond Tower
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)
@@ -2226,7 +2226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
-							["timeline"] = { "added 2.1.0", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, "removed 5.0.4" },
 							-- #if BEFORE 5.0.4
 							["isLimited"] = true,
 							-- #endif
@@ -2271,7 +2271,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				-- Originally a zone drop of Azshara, was moved to Winterspring after.
 				i(34535, {	-- Azure Whelpling (PET!)
-					["timeline"] = { "added 2.3.0.7485" },
+					["timeline"] = { ADDED_2_3_0 },
 				}),
 				-- #endif
 				i(12434, {	-- Chillwind E'ko

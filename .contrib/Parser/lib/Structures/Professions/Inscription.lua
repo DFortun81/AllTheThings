@@ -153,7 +153,7 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(64258, {["timeline"]={ADDED_3_1_0,"deleted 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 		r(64259, {["timeline"]={ADDED_3_1_0,"deleted 7.0.3"}}),	-- Glyph of Pain Suppression / Glyph of Desperation[4.0.6-5.2.0] / Glyph of Binding Heal[5.2.0+]
 		r(64262, {["timeline"]={ADDED_3_1_0,"deleted 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
-		r(57219, {["timeline"]={"added 3.0.8","deleted 7.0.3"}}),	-- Glyph of Icy Touch
+		r(57219, {["timeline"]={ADDED_3_0_8,"deleted 7.0.3"}}),	-- Glyph of Icy Touch
 		-- #endif
 	}),
 	-- #endif

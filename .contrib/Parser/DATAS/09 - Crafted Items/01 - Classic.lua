@@ -1555,7 +1555,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE WOD
 			i(43350, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
 			-- #endif
-			i(43354, {["timeline"]={ADDED_3_0_2,"removed 4.0.1"}}),	-- Glyph of Possessed Strength
+			i(43354, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_1}}),	-- Glyph of Possessed Strength
 			i(43339, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
 			i(43364, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
 			i(43361, {["timeline"]={ADDED_3_0_2,"removed 6.0.2"}}),	-- Glyph of the Penguin
@@ -1689,7 +1689,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(42468, {["timeline"]={ADDED_3_0_2,"removed 5.0.4"}}),	-- Glyph of Shadowburn
 			i(45804, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
 			i(42750, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3,"added 5.0.4","removed 6.0.2"}}),	-- Glyph of Mana Gem
-			i(43546, {["timeline"]={"added 3.0.8","removed 7.0.3"}}),	-- Glyph of Icy Touch
+			i(43546, {["timeline"]={ADDED_3_0_8,"removed 7.0.3"}}),	-- Glyph of Icy Touch
 			i(45805, {["timeline"]={ADDED_3_1_0,REMOVED_4_0_3}}),	-- Glyph of Disease
 			i(42974, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Sprint
 			i(43416, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Execution
@@ -2712,11 +2712,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(6264),	-- Greater Adept's Robe
 			i(7065),	-- Green Silk Armor
 			i(34087, {	-- Green Winter Clothes
-				["timeline"] = { "added 2.3.0.7382", "removed 7.3.5" },
+				["timeline"] = { ADDED_2_3_0, "removed 7.3.5" },
 			}),
 			i(2582),	-- Green Woolen Vest
 			i(38277, {	-- Haliscan Jacket
-				["timeline"] = { "added 2.4.2.8301" },
+				["timeline"] = { ADDED_2_4_2 },
 			}),
 			i(5766),	-- Lesser Wizard's Robe
 			i(18486),	-- Mooncloth Robe
@@ -2725,7 +2725,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(6239),	-- Red Linen Vest
 			i(10007),	-- Red Mageweave Vest
 			i(34085, {	-- Red Winter Clothes
-				["timeline"] = { "added 2.3.0.7382", "removed 7.3.5" },
+				["timeline"] = { ADDED_2_3_0, "removed 7.3.5" },
 			}),
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
@@ -2827,7 +2827,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(13871),	-- Frostweave Pants
 			i(14144),	-- Ghostweave Pants
 			i(38278, {	-- Haliscan Pantaloons
-				["timeline"] = { "added 2.4.2.8301" },
+				["timeline"] = { ADDED_2_4_2 },
 			}),
 			i(4309),	-- Handstitched Linen Britches
 			i(4316),	-- Heavy Woolen Pants

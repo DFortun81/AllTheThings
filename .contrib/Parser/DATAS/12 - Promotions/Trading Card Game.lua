@@ -20,7 +20,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		["u"] = TCG,
 		-- #endif
 	}, {
-	["timeline"] = { "added 2.0.0.5462" },
+	["timeline"] = { ADDED_2_0_1 },
 	["groups"] = {
 		filter(BATTLE_PETS, {
 			i(50301, {	-- Landro's Pet Box [TODO: SYMLINK]
@@ -30,27 +30,27 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(35223, {	-- Papa Hummel's Old-Fashioned Pet Biscuit
-						["timeline"] = { "added 2.4.0.8031" },
+						["timeline"] = { ADDED_2_4_0 },
 					}),
 					i(45047, {	-- Sandbox Tiger
 						["timeline"] = { ADDED_3_1_0 },
 					}),
 					i(32588, {	-- Bananas (PET!)
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 					}),
 					i(34493, {	-- Dragon Kite (PET!)
-						["timeline"] = { "added 2.3.0.7561" },
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 					i(38050, {	-- Ethereal Soul-Trader (PET!)
-						["timeline"] = { "added 2.4.2.8301" },
+						["timeline"] = { ADDED_2_4_2 },
 					}),
 				},
 			}),
 			i(32588, {	-- Bananas (PET!)
-				["timeline"] = { "added 2.0.1.6180" },
+				["timeline"] = { ADDED_2_0_1 },
 			}),
 			i(34493, {	-- Dragon Kite (PET!)
-				["timeline"] = { "added 2.3.0.7561" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(79744, {	-- Eye of the Legion (PET!)
 				["timeline"] = { "added 4.3.2.15211" },
@@ -77,13 +77,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 4.3.0.15005" },
 			}),
 			i(34492, {	-- Rocket Chicken (PET!)
-				["timeline"] = { "added 2.3.0.7561" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(72153, {	-- Sand Scarab (PET!)
 				["timeline"] = { "added 4.3.0.15005" },
 			}),
 			i(38050, {	-- Ethereal Soul-Trader (PET!)
-				["timeline"] = { "added 2.4.2.8301" },
+				["timeline"] = { ADDED_2_4_2 },
 				["groups"] = {
 					i(38186, {	-- Ethereal Credit
 						["description"] = "To obtain this, summon your Soul-Trader pet and kill players or NPCs which are no less than 8 levels below you.",
@@ -128,7 +128,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 4.1.0.13682" },
 			}),
 			i(38576, {	-- Big Battle Bear (MOUNT!) BOP
-				["timeline"] = { "added 2.4.2.8301", "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_2_4_2, "removed 3.2.0.10147" },
 			}),
 			i(49282, {	-- Big Battle Bear (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
@@ -158,19 +158,19 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(33224, {	-- Spectral Tiger (MOUNT!) BOP
-				["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_2_1_3, "removed 3.2.0.10147" },
 			}),
 			i(49283, {	-- Spectral Tiger (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(33225, {	-- Swift Spectral Tiger (MOUNT!) BOP
-				["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_2_1_3, "removed 3.2.0.10147" },
 			}),
 			i(49284, {	-- Swift Spectral Tiger (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(23720, {	-- Riding Turtle (MOUNT!)
-				["timeline"] = { "added 2.0.0.5462" },
+				["timeline"] = { ADDED_2_0_1 },
 			}),
 			i(69228, {	-- Savage Raptor (MOUNT!)
 				["timeline"] = { "added 4.1.0.13682" },
@@ -185,13 +185,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_3_3_5 },
 			}),
 			i(35225, {	-- X-51 Nether-Rocket (MOUNT!) BOP
-				["timeline"] = { "added 2.4.0.7923", "removed 3.2.0" },
+				["timeline"] = { ADDED_2_4_0, "removed 3.2.0" },
 			}),
 			i(49285, {	-- X-51 Nether-Rocket (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOP
-				["timeline"] = { "added 2.4.0.7923", "removed 3.2.0" },
+				["timeline"] = { ADDED_2_4_0, "removed 3.2.0" },
 			}),
 			i(49286, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
@@ -207,33 +207,33 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		}),
 		filter(TABARDS, {
 			i(38312, {	-- Tabard of Brilliance
-				["timeline"] = { "added 2.4.3.8601" },
+				["timeline"] = { ADDED_2_4_3 },
 			}),
 			i(23705, {	-- Tabard of Flame
-				["timeline"] = { "added 2.0.0.5462" },
+				["timeline"] = { ADDED_2_0_1 },
 			}),
 			i(23709, {	-- Tabard of Frost
-				["timeline"] = { "added 2.0.0.5462" },
+				["timeline"] = { ADDED_2_0_1 },
 			}),
 			i(38313, {	-- Tabard of Fury
-				["timeline"] = { "added 2.4.3.8601" },
+				["timeline"] = { ADDED_2_4_3 },
 			}),
 			i(38309, {	-- Tabard of Nature
-				["timeline"] = { "added 2.4.3.8601" },
+				["timeline"] = { ADDED_2_4_3 },
 			}),
 			i(38310, {	-- Tabard of the Arcane
-				["timeline"] = { "added 2.4.3.8601" },
+				["timeline"] = { ADDED_2_4_3 },
 			}),
 			i(38314, {	-- Tabard of the Defender
-				["timeline"] = { "added 2.4.3.8600" },
+				["timeline"] = { ADDED_2_4_3 },
 			}),
 			i(38311, {	-- Tabard of the Void
-				["timeline"] = { "added 2.4.3.8601" },
+				["timeline"] = { ADDED_2_4_3 },
 			}),
 		}),
 		filter(TOYS, {
 			i(23716, {	-- Carved Ogre Idol
-				["timeline"] = { "added 2.2.3" },
+				["timeline"] = { ADDED_2_2_3 },
 			}),
 			i(49704, {	-- Carved Ogre Idol (TOY!)
 				["timeline"] = { ADDED_3_2_2 },
@@ -249,13 +249,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(38301, {	-- D.I.S.C.O. (TOY!)
 				["model"] = 201182,
 				["modelScale"] = 3,
-				["timeline"] = { "added 2.4.2.8301" },
+				["timeline"] = { ADDED_2_4_2 },
 			}),
 			i(54452, {	-- Ethereal Portal (TOY!)
 				["timeline"] = { ADDED_3_3_5 },
 			}),
 			i(33223, {	-- Fishing Chair (TOY!)
-				["timeline"] = { "added 2.2.0.7091" },
+				["timeline"] = { ADDED_2_2_0 },
 			}),
 			i(45063, {	-- Foam Sword Rack (TOY!)
 				["model"] = 253206,
@@ -282,17 +282,17 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 4.1.0.13682" },
 			}),
 			i(33219, {	-- Goblin Gumbo Kettle (TOY!)
-				["timeline"] = { "added 2.1.3.6898" },
+				["timeline"] = { ADDED_2_1_3 },
 			}),
 			i(35227, {	-- Goblin Weather Machine - Prototype 01-B (TOY!)
 				["model"] = 166247,
-				["timeline"] = { "added 2.4.0.8089" },
+				["timeline"] = { ADDED_2_4_0 },
 			}),
 			i(67097, {	-- Grim Campfire (TOY!)
 				["timeline"] = { "added 4.0.1.12984" },
 			}),
 			i(32542, {	-- Imp in a Ball (TOY!)
-				["timeline"] = { "added 2.1.0.6692" },
+				["timeline"] = { ADDED_2_1_0 },
 			}),
 			i(54212, {	-- Instant Statue Pedestal (TOY!)
 				["timeline"] = { ADDED_3_3_3 },
@@ -306,16 +306,16 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(34499, {	-- Paper Flying Machine Kit (TOY!)
-				["timeline"] = { "added 2.3.0.7561" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(23714, {	-- Perpetual Purple Firework
-				["timeline"] = { "added 2.2.3" },
+				["timeline"] = { ADDED_2_2_3 },
 			}),
 			i(49703, {	-- Perpetual Purple Firework (TOY!)
 				["timeline"] = { ADDED_3_2_2 },
 			}),
 			i(32566, {	-- Picnic Basket (TOY!)
-				["timeline"] = { "added 2.1.0.6692" },
+				["timeline"] = { ADDED_2_1_0 },
 			}),
 			i(71628, {	-- Sack of Starfish (TOY!)
 				["timeline"] = { "added 4.3.0.15005" },
@@ -326,7 +326,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(38578, {	-- The Flag of Ownership (TOY!)
 				["model"] = 200314,
 				["modelScale"] = 2,
-				["timeline"] = { "added 2.5.1" },
+				["timeline"] = { ADDED_2_5_1 },
 			}),
 			i(69215, {	-- War Party Hitching Post (TOY!)
 				["timeline"] = { "added 4.1.0.13682" },

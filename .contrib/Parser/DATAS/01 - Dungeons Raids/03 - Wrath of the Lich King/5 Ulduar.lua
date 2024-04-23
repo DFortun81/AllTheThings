@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2945),	-- But I'm On Your Side (10 player)
 						revampAch(2947),	-- Can't Do That While Stunned (10 player)
 						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
-							["timeline"] = { "added 3.1", "removed 4.0" },
+							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(127),	-- , Champion of Ulduar
 						})),
@@ -339,7 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
-							["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(127),	-- , Champion of Ulduar
 						})),
@@ -1047,7 +1047,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2962),	-- Cheese the Freeze (25 player)
 						revampAch(2981),	-- Con-speed-atory (25 player)
 						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
-							["timeline"] = { "added 3.1", "removed 4.0" },
+							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(126),	-- , Conqueror of Ulduar
 						})),
@@ -1164,7 +1164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
-							["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(126),	-- , Conqueror of Ulduar
 						})),

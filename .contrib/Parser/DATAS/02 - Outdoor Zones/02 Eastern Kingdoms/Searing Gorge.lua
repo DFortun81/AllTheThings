@@ -1669,7 +1669,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(14476, {	-- Pattern: Cindercloth Gloves
 					-- Started dropping again in 8.2.  The new version (167887) is also available from Time-Lost Trader
-					["timeline"] = { "removed 4.0.1", "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, "added 8.2.0" },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },
@@ -1678,7 +1678,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(14471, {	-- Pattern: Cindercloth Vest
 					-- Started dropping again in 8.2.  The new version (167886) is also available from Time-Lost Trader
-					["timeline"] = { "removed 4.0.1", "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, "added 8.2.0" },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },

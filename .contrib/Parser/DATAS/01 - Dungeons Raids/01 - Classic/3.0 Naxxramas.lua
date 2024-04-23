@@ -2060,7 +2060,7 @@ applyclassicphase(PHASE_SIX,
 										-- #if BEFORE TBC
 										["description"] = "These were made available after the TBC Prepatch.",
 										-- #endif
-										["timeline"] = { "created 1.11.1.5462", "added 2.0.1.6180", REMOVED_3_0_2 },
+										["timeline"] = { "created 1.11.1.5462", ADDED_2_0_1, REMOVED_3_0_2 },
 									}),
 									i(23047),	-- Eye of the Dead
 									i(23040),	-- Glyph of Deflection

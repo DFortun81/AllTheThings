@@ -278,7 +278,7 @@ profession(FIRST_AID, {
 	}),
 	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
 		recipe(27028, {	-- First Aid (Master)
-			["timeline"] = { "added 2.0.1", REMOVED_8_0_1 },
+			["timeline"] = { ADDED_2_0_1, REMOVED_8_0_1 },
 			["rank"] = 5,
 		}),
 		recipe(27032),	-- Nethercloth Bandage

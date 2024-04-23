@@ -1274,7 +1274,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 				["groups"] = {
 					i(9214, {	-- Grimoire of Inferno
-						["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
+						["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						["classes"] = { WARLOCK },
 						-- #if BEFORE 4.0.1
 						["spellID"] = 1122,	-- Inferno
@@ -1368,7 +1368,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					-- #if BEFORE 4.0.1
 					i(12654, {	-- Doomshot
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					-- #endif
 				},
@@ -1403,7 +1403,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #if BEFORE MOP
 					i(28972, {	-- Flightblade Throwing Axe [TBC]
 						["timeline"] = {
-							"added 2.0.1.5678",
+							ADDED_2_0_1,
 							"removed 5.0.4"
 						},
 					}),
@@ -1530,7 +1530,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18784, {	-- Top Half of Advanced Armorsmithing: Volume III
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(13258),	-- Slaghide Gauntlets
 					applyclassicphase(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
@@ -1680,7 +1680,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 					}),
 					applyclassicphase(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 						-- #if BEFORE 4.0.1
 						["spellID"] = 31016,	-- Eviscerate IX
@@ -1733,7 +1733,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						applyclassicphase(PHASE_SIX, i(23320, {	-- Tablet of Flame Shock VI
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 29228,	-- Flame Shock VI
 							["classes"] = { SHAMAN },
@@ -1806,7 +1806,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
 						i(18779, {	-- Bottom Half of Advanced Armorsmithing: Volume I
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(12848, {	-- Unforged Rune Covered Breastplate
 							-- #if BEFORE 4.0.3
@@ -1917,7 +1917,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
 						applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 31018,	-- Ferocious Bite V
 							["classes"] = { DRUID },

@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 					i(34864, {	-- Baby Crocolisk
-						["timeline"] = { "added 2.4.0.7897" },
+						["timeline"] = { ADDED_2_4_0 },
 					}),
 					i(67414, {	-- Bag of Shiny Things
 						["provider"] = { "n", 43239 },	-- Razgar
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { "added 2.4.0.7897" },
+								["timeline"] = { ADDED_2_4_0 },
 							}),
 							i(45991, {	-- Bone Fishing Pole
 								["timeline"] = { ADDED_3_1_0 },
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #elseif BEFORE LEGION
 						["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
 						-- #endif
-						["timeline"] = { "added 2.3.0.7561" },
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 				}),
 				prof(HERBALISM, {
@@ -1417,7 +1417,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10794, {	-- Rogues of the Shattered Hand
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
 					["coord"] = { 79.4, 52, SILVERMOON_CITY },
-					["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2618,7 +2618,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(24520, {	-- Doris Volanthius <Armor Quartermaster> -- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
 					["coord"] = { 38.8, 69.8, ORGRIMMAR },
-					["timeline"] = { "added 2.3.0.7561" },
+					["timeline"] = { ADDED_2_3_0 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
@@ -2669,7 +2669,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 					},
@@ -3305,22 +3305,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(41571),	-- Design: Turbid Dark Jade
 						-- #endif
 						moh(1, i(28118, {	-- Brilliant Ornate Ruby
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28119, {	-- Smooth Ornate Dawnstone
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28120, {	-- Gleaming Ornate Dawnstone
-							["timeline"] = { "added 2.0.1.6180", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
 						})),
 						moh(1, i(28123, {	-- Potent Ornate Topaz
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28362, {	-- Delicate Ornate Ruby
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28363, {	-- Deadly Ornate Topaz
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 					}),
 				}),
@@ -4229,35 +4229,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
 						i(29466, {	-- Black War Kodo (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18247, {	-- Black War Kodo (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
 						}),
 						i(29472, {	-- Black War Raptor (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18246, {	-- Black War Raptor (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
 						}),
 						i(29469, {	-- Black War Wolf (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18245, {	-- Black War Wolf (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
 						}),
 						i(29470, {	-- Red Skeletal Warhorse (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18248, {	-- Red Skeletal Warhorse (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
 						}),
 						i(34129, {	-- Swift Warstrider (MOUNT!)
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 					}),
@@ -4518,7 +4518,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(26396, {	-- Sergeant Thunderhorn Warlord Vendor Edition
-					["timeline"] = { "added 2.4.2.8278" },
+					["timeline"] = { ADDED_2_4_2 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
@@ -4680,7 +4680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", "added 2.3.0" },
+							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 					},
@@ -5047,7 +5047,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", "added 2.3.0" },
+							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 					},
@@ -5298,7 +5298,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", "added 2.3.0" },
+							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 					},

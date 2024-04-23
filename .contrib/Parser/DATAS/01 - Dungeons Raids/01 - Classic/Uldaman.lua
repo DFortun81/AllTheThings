@@ -49,14 +49,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						i(34418, {	-- Scrying Wand
 							["timeline"] = {
-								"added 2.3.0",
+								ADDED_2_3_0,
 								REMOVED_4_0_3,
 							},
 						}),
 						-- #if BEFORE MOP
 						i(34419, {	-- Thorium Flight Blade
 							["timeline"] = {
-								"added 2.3.0",
+								ADDED_2_3_0,
 								REMOVED_4_0_3,
 							},
 						}),
@@ -73,13 +73,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						i(34421, {	-- Cave Crawler's Mail Treads
 							["timeline"] = {
-								"added 2.3.0",
+								ADDED_2_3_0,
 								REMOVED_4_0_3,
 							},
 						}),
 						i(34422, {	-- Tempered Thorium Boots
 							["timeline"] = {
-								"added 2.3.0",
+								ADDED_2_3_0,
 								REMOVED_4_0_3,
 							},
 						}),

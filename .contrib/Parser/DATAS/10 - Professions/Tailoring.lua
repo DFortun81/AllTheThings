@@ -971,7 +971,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Felcloth Bag",
-					["timeline"] = { "removed 4.0.1", "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_1, "added 10.1.5" },
 					["recipeID"] = 26086,
 				},
 				{
@@ -1286,7 +1286,7 @@ profession(TAILORING, {
 				},
 				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Winter Clothes",
-					["timeline"] = { "added 2.3.0.7382" },
+					["timeline"] = { ADDED_2_3_0 },
 					["recipeID"] = 44950,
 				}),
 				{
@@ -1295,7 +1295,7 @@ profession(TAILORING, {
 				},
 				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Haliscan Jacket",
-					["timeline"] = { "added 2.4.2.8301" },
+					["timeline"] = { ADDED_2_4_2 },
 					["recipeID"] = 50644
 				}),
 				{
@@ -1324,7 +1324,7 @@ profession(TAILORING, {
 				},
 				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Red Winter Clothes",
-					["timeline"] = { "added 2.3.0.7382" },
+					["timeline"] = { ADDED_2_3_0 },
 					["recipeID"] = 44958,
 				}),
 				{
@@ -1637,7 +1637,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Haliscan Pantaloons",
-					["timeline"] = { "added 2.4.2.8301" },
+					["timeline"] = { ADDED_2_4_2 },
 					["recipeID"] = 50647
 				}),
 				{
@@ -1717,7 +1717,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Dress Shoes",
-					["timeline"] = { "added 2.4.2.8301" },
+					["timeline"] = { ADDED_2_4_2 },
 					["recipeID"] = 49677
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -6303,10 +6303,10 @@ itemrecipe("Pattern: Flameheart Bracers", 30842, 37882, TBC_PHASE_ONE);
 itemrecipe("Pattern: Flameheart Gloves", 30843, 37883, TBC_PHASE_ONE);
 itemrecipe("Pattern: Flameheart Vest", 30844, 37884, TBC_PHASE_ONE);
 
-itemrecipe("Pattern: Dress Shoes", 37915, 49677, TBC_PHASE_ONE, "added 2.4.2.8301");
+itemrecipe("Pattern: Dress Shoes", 37915, 49677, TBC_PHASE_ONE, ADDED_2_4_2);
 itemrecipe("Pattern: Mycah's Botanical Bag", 38229, 50194, TBC_PHASE_ONE);
-itemrecipe("Pattern: Haliscan Jacket", 38327, 50644, TBC_PHASE_ONE, "added 2.4.2.8301");
-itemrecipe("Pattern: Haliscan Pantaloons", 38328, 50647, TBC_PHASE_ONE, "added 2.4.2.8301");
+itemrecipe("Pattern: Haliscan Jacket", 38327, 50644, TBC_PHASE_ONE, ADDED_2_4_2);
+itemrecipe("Pattern: Haliscan Pantaloons", 38328, 50647, TBC_PHASE_ONE, ADDED_2_4_2);
 
 itemrecipe("Pattern: Belt of Blasting", 30280, 36315, TBC_PHASE_TWO);
 itemrecipe("Pattern: Belt of the Long Road", 30281, 36316, TBC_PHASE_TWO);

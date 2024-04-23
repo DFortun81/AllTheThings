@@ -6,7 +6,7 @@ profession(BLACKSMITHING, {
 			5284,	-- The Way of the Weaponsmith [Alliance]
 			5302,	-- The Way of the Weaponsmith [Horde]
 		},
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			prof(17041, {	-- Master Axesmith
 				["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
@@ -44,7 +44,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34542,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -53,7 +53,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36261,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -62,7 +62,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34543,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -71,7 +71,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34544,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -81,7 +81,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36135,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 							"added 7.1.5.23360",
 						},
@@ -91,7 +91,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36134,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 							"added 7.1.5.23360",
 						},
@@ -102,7 +102,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34541,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -111,7 +111,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36260,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -128,7 +128,7 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Enchanted Battlehammer",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16973,
 						["requireSkill"] = 17040,
 					},
@@ -160,7 +160,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34548,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -169,7 +169,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34546,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -178,7 +178,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36262,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -187,7 +187,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34545,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -197,7 +197,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36137,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 							"added 7.1.5.23360",
 						},
@@ -207,7 +207,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36136,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 							"added 7.1.5.23360",
 						},
@@ -218,7 +218,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36263,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -227,7 +227,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34547,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -283,7 +283,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36258,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -292,7 +292,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34537,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -301,7 +301,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34535,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -310,7 +310,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34538,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -319,7 +319,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34540,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -328,7 +328,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36259,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 						},
 					}),
@@ -338,7 +338,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36133,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.1.0.6692",
+							ADDED_2_1_0,
 							"removed 4.0.1.13287",
 							"added 7.1.5.23360",
 						},
@@ -348,7 +348,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36131,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							"added 2.0.1.6180",
+							ADDED_2_0_1,
 							"removed 4.0.1.13287",
 							"added 7.1.5.23360",
 						},
@@ -413,12 +413,12 @@ profession(BLACKSMITHING, {
 					-- #endif
 					applyclassicphase(WRATH_PHASE_ONE, {
 						["name"] = "Corroded Saronite Edge",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 55183,
 					}),
 					applyclassicphase(WRATH_PHASE_ONE, {
 						["name"] = "Corroded Saronite Woundbringer",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 55184,
 					}),
 					-- #if BEFORE 7.1.5
@@ -458,13 +458,13 @@ profession(BLACKSMITHING, {
 					-- #if BEFORE TBC
 					{
 						["name"] = "The Shatterer",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 10003,
 						["requireSkill"] = 9787,
 					},
 					{
 						["name"] = "Truesilver Champion",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 10015,
 						["requireSkill"] = 9787,
 					},

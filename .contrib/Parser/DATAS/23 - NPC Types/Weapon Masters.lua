@@ -190,7 +190,7 @@ WEAPON_SKILL_WANDS = {
 root(ROOTS.Zones, {
 	m(KALIMDOR, {
 		m(DARNASSUS, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11866, {	-- Ilyenia Moonfire <Weapon Master>
 					["coord"] = { 57.5, 46.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -205,7 +205,7 @@ root(ROOTS.Zones, {
 			})),
 		}),
 		m(ORGRIMMAR, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(2704, {	-- Hanashi <Weapon Master>
 					["coord"] = { 81.6, 19.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -233,7 +233,7 @@ root(ROOTS.Zones, {
 		}),
 		-- #if AFTER TBC
 		m(THE_EXODAR, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(16773, {	-- Handiir <Weapon Master>
 					["coord"] = { 53.6, 84.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -250,7 +250,7 @@ root(ROOTS.Zones, {
 		}),
 		-- #endif
 		m(THUNDER_BLUFF, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11869, {	-- Ansekhwa <Weapon Master>
 					["coord"] = { 41.2, 61.4, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -266,7 +266,7 @@ root(ROOTS.Zones, {
 	}),
 	m(EASTERN_KINGDOMS, {
 		m(IRONFORGE, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(13084, {	-- Bixi Wobblebonk <Weapon Master>
 					["coord"] = { 62.2, 89.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -292,7 +292,7 @@ root(ROOTS.Zones, {
 		}),
 		-- #if AFTER TBC
 		m(SILVERMOON_CITY, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(16621, {	-- Ileda <Weapon Master>
 					["coord"] = { 91.0, 38.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -309,7 +309,7 @@ root(ROOTS.Zones, {
 		}),
 		-- #endif
 		m(STORMWIND_CITY, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11867, {	-- Woo Ping <Weapon Master>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -331,7 +331,7 @@ root(ROOTS.Zones, {
 			})),
 		}),
 		m(UNDERCITY, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(11870, {	-- Archibald <Weapon Master>
 					["coord"] = { 57.2, 32.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -347,7 +347,7 @@ root(ROOTS.Zones, {
 		}),
 		-- #if AFTER TBC
 		m(EVERSONG_WOODS, {
-			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { "removed 4.0.1" } }, {
+			n(WEAPON_MASTER, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_1 } }, {
 				n(17005, {	-- Duelist Larenis <Weapon Master>
 					["coord"] = { 48.4, 46.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,

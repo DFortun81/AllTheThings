@@ -6,7 +6,7 @@ profession(LEATHERWORKING, {
 			5144,	-- Elemental Leatherworking [Alliance]
 			5146,	-- Elemental Leatherworking [Horde]
 		},
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			-- #if AFTER TBC
 			{
@@ -16,14 +16,14 @@ profession(LEATHERWORKING, {
 					-- #if BEFORE CATA
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstorm Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36077,
 						["requireSkill"] = 10658,
 					}),
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstrike Vest",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35589,
 						["requireSkill"] = 10658,
 					}),
@@ -35,7 +35,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstrike Bracers",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35591,
 						["requireSkill"] = 10658,
 					}),
@@ -47,7 +47,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstrike Belt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35590,
 						["requireSkill"] = 10658,
 					}),

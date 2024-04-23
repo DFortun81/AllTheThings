@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10752, {	-- Onward to Ashenvale
 					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,

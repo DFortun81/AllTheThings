@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9609, {	-- Help Watcher Biggs
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
@@ -636,7 +636,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
 					["coord"] = { 47.8, 54.9, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -766,7 +766,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9448, {	-- Mercy for the Cursed
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -867,7 +867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(9610, {	-- Pool of Tears (A)
 						["qg"] = 18221,	-- Holaaru
 						["coord"] = { 25.9, 32.4, SWAMP_OF_SORROWS },
-						["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					}),
 					["hordeQuestData"] = q(1424, {	-- Pool of Tears (H)
 						["qg"] = 1443,	-- Fel'zerul
@@ -1720,7 +1720,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21941, {	-- Design: Black Pearl Panther
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection

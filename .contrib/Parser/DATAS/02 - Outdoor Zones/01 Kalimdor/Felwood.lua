@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.5, 82.2, FELWOOD },
 						-- #endif
 					},
-					["timeline"] = { "added 2.2.0.7272" },
+					["timeline"] = { ADDED_2_2_0 },
 				}),
 				fp(597, {	-- Irontree Clearing, Felwood
 					["cr"] = 43085,	-- Dirzak Pryocrank <Flight Master>

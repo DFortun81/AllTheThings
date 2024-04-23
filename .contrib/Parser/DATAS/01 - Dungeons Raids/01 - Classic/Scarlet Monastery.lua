@@ -629,7 +629,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(34227, {	-- Deadman's Hand
-									["timeline"] = { "added 2.3.0", "removed 5.0.4", ADDED_10_1_7 },
+									["timeline"] = { ADDED_2_3_0, "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								o(103821, {	-- Doan's Strongbox
 									["groups"] = {

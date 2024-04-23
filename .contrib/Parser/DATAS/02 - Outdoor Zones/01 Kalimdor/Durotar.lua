@@ -2628,7 +2628,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14088, {	-- Learn to Ride in Durotar
 					["provider"] = { "i", 46883 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
-					["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3200,7 +3200,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6070,	-- The Hunter's Path [Thunder Bluff]
 					},
 					["coord"] = { 51.8, 43.4, DUROTAR },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -3215,7 +3215,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
 					["sourceQuest"] = 6062,	-- Taming the Beast (1/3)
 					["coord"] = { 51.8, 43.4, DUROTAR },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -3230,7 +3230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
 					["sourceQuest"] = 6083,	-- Taming the Beast (2/3)
 					["coord"] = { 51.8, 43.4, DUROTAR },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
@@ -3598,7 +3598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
 					["coord"] = { 56.0, 74.6, DUROTAR },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
@@ -3614,10 +3614,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3205,	-- Zalazane
 						}),
 						i(4946, {	-- Lightweight Boots
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(4940, {	-- Veiled Grips
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),

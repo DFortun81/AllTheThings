@@ -59,7 +59,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	i(20651, {	-- Murki (PET!)
 		["description"] = "Reward from a Korean Promotional Event (Korea Only)",
-		["timeline"] = { "added 2.1.0.6678" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	i(22114, {	-- Gurky (PET!)
 		["description"] = "Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",
@@ -83,7 +83,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	i(39656, {	-- Mini Tyrael (PET!)
 		["description"] = "Reward from the 2008 Worldwide Invitational in Paris.",
-		["timeline"] = { "added 2.4.2.8301" },
+		["timeline"] = { ADDED_2_4_2 },
 	}),
 	i(41133, {	-- Mr. Chilly (PET!)
 		["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",

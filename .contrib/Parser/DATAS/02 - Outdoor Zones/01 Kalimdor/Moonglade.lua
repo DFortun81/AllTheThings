@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10955, {	-- Morthis Whisperwing
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.5, 40.6, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 22834,	-- Clintar Dreamwalker
 					["sourceQuest"] = 10964,	-- Waking the Sleeper
 					["coord"] = { 75.5, 67.0, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 10965,	-- No Mere Dream
 					["coord"] = { 72.5, 63.3, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { ZANGARMARSH },
 					["classes"] = { DRUID },
 					["lvl"] = 70,

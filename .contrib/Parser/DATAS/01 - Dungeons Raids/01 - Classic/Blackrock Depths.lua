@@ -2524,7 +2524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}, {
 						i(22047),	-- Top Piece of Lord Valthalak's Amulet
 						i(22305, {	-- Ironweave Mantle
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(22317),	-- Lefty's Brass Knuckle
 						i(22318),	-- Malgen's Long Bow
@@ -2782,10 +2782,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11313),	-- Ribbly's Head
 						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
 						i(2663, {	-- Ribbly's Bandolier
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(2662, {	-- Ribbly's Quiver
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(11742),	-- Wayfarer's Knapsack
 					},
@@ -2803,7 +2803,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, n(28067, {	-- Dark Iron Brewer
 					["description"] = "Speak to him until he passes out, a Mug will appear on the ground",
-					["timeline"] = { "added 2.4.3.8601" },
+					["timeline"] = { ADDED_2_4_3 },
 					["groups"] = {
 						i(38320),	-- Dire Brew
 					},

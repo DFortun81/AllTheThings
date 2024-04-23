@@ -6,7 +6,7 @@ profession(LEATHERWORKING, {
 			5143,	-- Tribal Leatherworking [Alliance]
 			5148,	-- Tribal Leatherworking [Horde]
 		},
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			-- #if AFTER TBC
 			{
@@ -22,7 +22,7 @@ profession(LEATHERWORKING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Windhawk Hauberk",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35585,
 						["requireSkill"] = 10660,
 					}),
@@ -34,7 +34,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Windhawk Bracers",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35588,
 						["requireSkill"] = 10660,
 					}),
@@ -46,7 +46,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Windhawk Belt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35587
 					}),
 				},

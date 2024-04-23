@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(25878, {	-- Dusksteel Throwing Knife [TBC]
-							["timeline"] = { "added 2.1.0.6692", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, "removed 5.0.4" },
 						}),
 					},
 				}),

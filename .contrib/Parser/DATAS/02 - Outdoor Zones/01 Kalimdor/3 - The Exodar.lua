@@ -15,7 +15,7 @@ local EGOMIS_GROUPS = {
 };
 local REDEMPTION = recipe(7328);	-- Redemption
 root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
-	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		["lore"] = "The Exodar is the capital city of the Draenei. It is located in the westernmost part of Azuremyst Isle. The Exodar's faction leader is Prophet Velen, who is located near the battlemasters in the Vault of Lights.",
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_draenei",
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9551, {	-- Call of Air (1/4) [The Exodar]
 					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
 					["coord"] = { 32.6, 24.2, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9547, {	-- Call of Air (1/4) [Ironforge]
 					["qg"] = 23127,	-- Farseer Javad <Shaman Trainer>
 					["coord"] = { 55.2, 29.6, IRONFORGE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(10491, {	-- Call of Air (1/4) [Stormwind City]
 					["qg"] = 20407,	-- Farseer Umbrua <Shaman Trainer>
 					["coord"] = { 61.8, 83.8, STORMWIND_CITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						10491,	-- Call of Air (1/4) [Stormwind City]
 					},
 					["coord"] = { 31, 27.8, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17431,	-- Velaada
 					["sourceQuest"] = 9552,	-- Call of Air (2/4)
 					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["lvl"] = 30,
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["sourceQuest"] = 9553,	-- Call of Air (3/4)
 					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["lvl"] = 30,

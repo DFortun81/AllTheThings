@@ -330,7 +330,7 @@ root("Achievements", {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],
 			-- #endif
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 		})),
 		applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
 			-- Meta Achievement
@@ -547,7 +547,7 @@ root("Achievements", {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(211082, {	-- Arfus
-					["timeline"] = { "added 3.4.3.51470" },
+					["timeline"] = { ADDED_3_4_3 },
 				}),
 			},
 		})),
@@ -572,7 +572,7 @@ root("Achievements", {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(211082, {	-- Arfus
-					["timeline"] = { "added 3.4.3.51470" },
+					["timeline"] = { ADDED_3_4_3 },
 				}),
 			},
 		})),
@@ -806,49 +806,49 @@ root("Achievements", {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(4784, {	-- Emblematic [A]
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(4785, {	-- Emblematic [H]
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(3838, {	-- Dungeon & Raid Emblem
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 1,
 		}),
 		ach(3839, {	-- 25 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 25,
 		}),
 		ach(3840, {	-- 50 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 50,
 		}),
 		ach(3841, {	-- 100 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 100,
 		}),
 		ach(3842, {	-- 250 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 250,
 		}),
 		ach(3843, {	-- 500 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 500,
 		}),
 		ach(3844, {	-- 1000 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 1000,
 		}),
 		ach(3876, {	-- 1500 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 1500,
 		}),
 		ach(4316, {	-- 2500 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 2500,
 		}),
 	}),
@@ -871,7 +871,7 @@ root("Achievements", {
 			}),
 			applyclassicphase(TBC_PHASE_ONE, ach(124, {	-- Master Cook
 				["spellID"] = 33359,	-- Cooking (Master)
-				["timeline"] = { "added 2.0.1" },
+				["timeline"] = { ADDED_2_0_1 },
 				["requireSkill"] = COOKING,
 				["rank"] = 5,
 			})),

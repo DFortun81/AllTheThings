@@ -1106,16 +1106,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19325)),	-- Don Julio's Band
 						applyclassicphase(PHASE_FIVE, moh(1, i(21563))),	-- Don Rodrigo's Band
 						i(19320, {	-- Gnoll Skin Bandolier
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19319, {	-- Harpy Hide Quiver
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19316, {	-- Ice Threaded Arrow
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19317, {	-- Ice Threaded Bullet
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19301),	-- Alterac Manna Biscuit
 						i(19307),	-- Alterac Heavy Runecloth Bandage
@@ -1156,16 +1156,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19325)),	-- Don Julio's Band
 						applyclassicphase(PHASE_FIVE, moh(1, i(21563))),	-- Don Rodrigo's Band
 						i(19320, {	-- Gnoll Skin Bandolier
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19319, {	-- Harpy Hide Quiver
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19316, {	-- Ice Threaded Arrow
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19317, {	-- Ice Threaded Bullet
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(19301),	-- Alterac Manna Biscuit
 						i(19307),	-- Alterac Heavy Runecloth Bandage

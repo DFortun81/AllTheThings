@@ -861,12 +861,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				-- #endif
-				["timeline"] = { "created 1.10.0", "added 2.0.1", "removed 4.3.0" },	-- This was not in WoW Classic.
+				["timeline"] = { "created 1.10.0", ADDED_2_0_1, "removed 4.3.0" },	-- This was not in WoW Classic.
 				["cost"] = { { "i", 19182, 40 } },	-- Tattered Darkmoon Faire Prize Ticket
 				["repeatable"] = true,
 				["groups"] = {
 					i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-						["timeline"] = { "created 1.10.0", "added 2.0.1" },	-- This was not in WoW Classic.
+						["timeline"] = { "created 1.10.0", ADDED_2_0_1 },	-- This was not in WoW Classic.
 					}),
 				},
 			}),
@@ -1203,7 +1203,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -1247,7 +1247,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -1291,7 +1291,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -1334,7 +1334,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -1422,7 +1422,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 2.1.0.6655" },
+				["timeline"] = { ADDED_2_1_0 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(31856),	-- Darkmoon Card: Crusade
@@ -1516,7 +1516,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 2.1.0.6655" },
+				["timeline"] = { ADDED_2_1_0 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(31858),	-- Darkmoon Card: Vengeance
@@ -1553,7 +1553,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 2.1.0.6655" },
+				["timeline"] = { ADDED_2_1_0 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(31859),	-- Darkmoon Card: Madness
@@ -1695,7 +1695,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["maxReputation"] = DECK_MAX_REPUTATION,
-				["timeline"] = { "added 2.1.0.6655" },
+				["timeline"] = { ADDED_2_1_0 },
 				["repeatable"] = true,
 				["groups"] = {
 					i(31857),	-- Darkmoon Card: Wrath
@@ -1970,7 +1970,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -2414,7 +2414,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -2760,7 +2760,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -2827,7 +2827,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, "removed 4.3.0" },
 				-- #else
 				["timeline"] = { "removed 4.3.0" },
 				-- #endif
@@ -4179,16 +4179,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				-- #endif
 				["groups"] = {
 					i(44940, {	-- Corn-Breaded Sausage
-						["timeline"] = { "added 3.0.9.9551" },
+						["timeline"] = { ADDED_3_1_0 },
 					}),
 					i(19306),	-- Crunchy Frog
 					i(19223),	-- Darkmoon Dog
 					i(19225),	-- Deep Fried Candybar
 					i(33254, {	-- Forest Strider Drumstick
-						["timeline"] = { "added 2.2.0.7091" },
+						["timeline"] = { ADDED_2_2_0 },
 					}),
 					i(33246, {	-- Funnel Cake
-						["timeline"] = { "added 2.2.0.7091" },
+						["timeline"] = { ADDED_2_2_0 },
 					}),
 					darkmoonprizeticket(50, i(162539, {	-- Hot Buttered Popcorn (TOY!)
 						["timeline"] = { "added 8.0.1.26530" },
@@ -4222,13 +4222,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(19221),	-- Darkmoon Special Reserve
 					i(19299),	-- Fizzy Faire Drink
 					i(33236, {	-- Fizzy Faire Drink "Classic"
-						["timeline"] = { "added 2.2.0.7091" },
+						["timeline"] = { ADDED_2_2_0 },
 					}),
 					i(44941, {	-- Fresh-Squeezed Limeade
-						["timeline"] = { "added 3.0.9.9551" },
+						["timeline"] = { ADDED_3_1_0 },
 					}),
 					i(33234, {	-- Iced Berry Slush
-						["timeline"] = { "added 2.2.0.7091" },
+						["timeline"] = { ADDED_2_2_0 },
 					}),
 					i(74822, {	-- Sasparilla Sinker
 						["timeline"] = { "added 4.3.0.15005" },
@@ -4258,7 +4258,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(TBC_PHASE_THREE, i(31890, {	-- Blessings Deck
-				["timeline"] = { "added 2.1.0.6655" },
+				["timeline"] = { ADDED_2_1_0 },
 				["cost"] = {
 					{ "i", 31882, 1 },	-- Ace of Blessings
 					{ "i", 31889, 1 },	-- Two of Blessings
@@ -4332,7 +4332,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(TBC_PHASE_THREE, i(31907, {	-- Furies Deck
-				["timeline"] = { "added 2.1.0.6678" },
+				["timeline"] = { ADDED_2_1_0 },
 				["cost"] = {
 					{ "i", 31901, 1 },	-- Ace of Furies
 					{ "i", 31909, 1 },	-- Two of Furies
@@ -4358,7 +4358,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(TBC_PHASE_THREE, i(31914, {	-- Lunacy Deck
-				["timeline"] = { "added 2.1.0.6678" },
+				["timeline"] = { ADDED_2_1_0 },
 				["cost"] = {
 					{ "i", 31910, 1 },	-- Ace of Lunacy
 					{ "i", 31918, 1 },	-- Two of Lunacy
@@ -4453,7 +4453,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(TBC_PHASE_THREE, i(31891, {	-- Storms Deck
-				["timeline"] = { "added 2.1.0.6655" },
+				["timeline"] = { ADDED_2_1_0 },
 				["cost"] = {
 					{ "i", 31892, 1 },	-- Ace of Storms
 					{ "i", 31900, 1 },	-- Two of Storms

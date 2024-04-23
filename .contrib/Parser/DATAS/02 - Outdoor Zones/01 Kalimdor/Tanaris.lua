@@ -3620,7 +3620,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10891, {	-- Imperial Plate Armor [A]
 					["qg"] = 11145,	-- Myolor Sunderfury
 					["coord"] = { 52.0, 41.4, IRONFORGE },
-					["timeline"] = { "added 2.5.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
@@ -3630,7 +3630,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10892, {	-- Imperial Plate Armor [H]
 					["qg"] = 11176,	-- Krathok Moltenfist
 					["coord"] = { 80.0, 23.3, ORGRIMMAR },
-					["timeline"] = { "added 2.5.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
@@ -5180,7 +5180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 4.0.3
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 					-- #endif
-					["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 				}),
 				n(34090, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 					-- #if BEFORE 4.0.3.13277

@@ -68,16 +68,16 @@ local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 });
 local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
 	i(32616, {	-- Egbert (PET!)
-		["timeline"] = { "added 2.1.0.6692" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	i(32622, {	-- Peanut (PET!)
-		["timeline"] = { "added 2.1.0.6692" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	i(69648, {	-- Legs (PET!)
 		["timeline"] = { "added 4.1.0.13726" },
 	}),
 	i(32617, {	-- Willy (PET!)
-		["timeline"] = { "added 2.1.0.6692" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	PET_CARE_PACKAGE,
 };
@@ -304,7 +304,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 10943,	-- Children's Week
 			["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -317,7 +317,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 10942,	-- Children's Week
 			["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -458,7 +458,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 43.11, 63.94, TEROKKAR_FOREST },	-- Tunnel Exit
 				{ 39.57, 64.41, TEROKKAR_FOREST },	-- Dornaa taken to Ring of Observance
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -475,7 +475,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10962,	-- Time to Visit the Caverns [Alliance - Draenei]
 			},
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -495,7 +495,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10963,	-- Time to Visit the Caverns [Horde - Blood Elf]
 			},
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -565,7 +565,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 				1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { THUNDER_BLUFF },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -589,7 +589,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 30.67, 27.87, THE_EXODAR },	-- Visit Farseer Nobundo
 				{ 31.30, 27.65, THE_EXODAR },	-- Speak to Farseer Nobundo
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -598,7 +598,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		q(10943, {	-- Children's Week [Alliance - Draenei - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -636,7 +636,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		q(10942, {	-- Children's Week [Horde - Blood Elf - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -703,7 +703,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -721,7 +721,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -742,7 +742,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 19.43, 51.31, ZANGARMARSH },	-- Salandria taken to Sporeggar
 				{ 19.28, 51.34, ZANGARMARSH },	-- Speak to Hch'uu
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -795,7 +795,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 				1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -818,7 +818,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 31.44, 57.46, NAGRAND },	-- Dornaa taken to Aeris Landing
 				{ 31.49, 57.61, NAGRAND },	-- Speak to Jheel
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -942,7 +942,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -997,7 +997,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10953,	-- Visit the Throne of the Elements
 			},
 			["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
-			["timeline"] = { "added 2.4.0" },
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1122,7 +1122,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { WESTFALL },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1203,7 +1203,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1356,7 +1356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 56.87, 40.77, THE_EXODAR },	-- Seat of the Naaru
 				{ 58.04, 41.50, THE_EXODAR },	-- Speak to O'ros
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1413,7 +1413,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { LOCH_MODAN },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1452,7 +1452,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
 				{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { TANARIS, SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1473,7 +1473,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
 				{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { TANARIS, SHATTRATH_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1492,7 +1492,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 60.39, 23.36, NAGRAND },	-- Salandria taken to the Throne of Elements
 				{ 60.65, 22.11, NAGRAND },	-- Speak to Elementalist Sharvak
 			},
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1509,7 +1509,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10953,	-- Visit the Throne of the Elements [Horde - Blood Elf]
 			},
 			["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
-			["timeline"] = { "added 2.0.1", "removed 2.4.0" },
+			["timeline"] = { ADDED_2_0_1, "removed 2.4.0" },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1538,7 +1538,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 				1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1594,7 +1594,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 				1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,

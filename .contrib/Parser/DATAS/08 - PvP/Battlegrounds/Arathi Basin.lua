@@ -957,7 +957,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+					["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),

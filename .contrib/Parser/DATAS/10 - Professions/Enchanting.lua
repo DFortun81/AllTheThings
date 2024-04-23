@@ -1037,9 +1037,9 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			applyevent(EVENTS.FEAST_OF_WINTER_VEIL, r(21931)),	-- Winter's Might
 		}),
 	}),
-	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		r(28029, {	-- Enchanting (Master)
-			["timeline"]={ "added 2.0.1", "removed 8.0.1" },
+			["timeline"]={ ADDED_2_0_1, "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -1078,7 +1078,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #endif
 		}),
 		cat(683, {	-- Chest Enchantments
-			applyclassicphase(TBC_PHASE_FIVE, r(46594, {["timeline"]={"added 2.4.0"}})),	-- Dodge / TBC: Defense
+			applyclassicphase(TBC_PHASE_FIVE, r(46594, {["timeline"]={ADDED_2_4_0}})),	-- Dodge / TBC: Defense
 			r(27957),	-- Exceptional Health
 			r(27960),	-- Exceptional Stats
 			r(33992),	-- Major Armor / TBC:Major Resilience
@@ -1087,16 +1087,16 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(684, {	-- Cloak Enchantments
 			r(34004),	-- Greater Agility
-			r(34005, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Greater Arcane Resistance
+			r(34005, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Greater Arcane Resistance
 			-- #if AFTER WRATH
-			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={"added 2.4.0"}})),	-- Greater Dodge / TBC: Steelweave
+			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={ADDED_2_4_0}})),	-- Greater Dodge / TBC: Steelweave
 			-- #endif
-			r(34006, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Greater Shadow Resistance
+			r(34006, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Greater Shadow Resistance
 			r(27961),	-- Major Armor
-			r(27962, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Major Resistance
+			r(27962, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Major Resistance
 			r(34003),	-- MOP: PvP Power / TBC: Spell Penetration
 			-- #if BEFORE WRATH
-			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={"added 2.4.0"}})),	-- TBC: Steelweave / Greater Dodge
+			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={ADDED_2_4_0}})),	-- TBC: Steelweave / Greater Dodge
 			-- #endif
 		}),
 		cat(685, {	-- Glove Enchantments
@@ -1120,24 +1120,24 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(680, {	-- Reagents
 			r(28022),	-- Large Prismatic Shard
-			r(42613, {["timeline"]={"added 2.2.0","removed 7.3.5"}}),	-- Nexus Transformation
-			r(42615, {["timeline"]={"added 2.2.0"}}),	-- Small Prismatic Shard
-			applyclassicphase(TBC_PHASE_FIVE, r(45765, {["timeline"]={"added 2.4.0"}})),	-- Void Shatter
+			r(42613, {["timeline"]={ADDED_2_2_0,"removed 7.3.5"}}),	-- Nexus Transformation
+			r(42615, {["timeline"]={ADDED_2_2_0}}),	-- Small Prismatic Shard
+			applyclassicphase(TBC_PHASE_FIVE, r(45765, {["timeline"]={ADDED_2_4_0}})),	-- Void Shatter
 		}),
-		cat(445, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, "removed 6.0.2" } }, {	-- Ring Enchantments
 			r(27926),	-- Healing Power
 			r(27924),	-- Spellpower
 			applyclassicphase(TBC_PHASE_THREE, r(27927)),	-- Stats
 			r(27920),	-- Striking
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, "removed 5.0.4" } }, {	-- Rods
 			r(32665),	-- Runed Adamantite Rod
 			r(32664),	-- Runed Fel Iron Rod
 			r(32667),	-- Runed Eternium Rod
 		})),
 		cat(687, {	-- Shield Enchantments
 			-- #if AFTER WOD
-			r(44383, {["timeline"]={"added 2.3.0"}}),	-- Armor / TBC: Resilience
+			r(44383, {["timeline"]={ADDED_2_3_0}}),	-- Armor / TBC: Resilience
 			-- #endif
 			r(27945),	-- Intellect
 			-- #if AFTER CATA
@@ -1148,9 +1148,9 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(27946),	-- Parry / TBC: Shield Block
 			-- #endif
 			-- #if BEFORE WOD
-			r(44383, {["timeline"]={"added 2.3.0"}}),	-- Armor / TBC: Resilience
+			r(44383, {["timeline"]={ADDED_2_3_0}}),	-- Armor / TBC: Resilience
 			-- #endif
-			r(27947, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Resistance
+			r(27947, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Resistance
 			-- #if BEFORE CATA
 			r(27946),	-- TBC: Shield Block / Parry
 			r(27944),	-- TBC: Tough Shield / Lesser Dodge
@@ -1162,13 +1162,13 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 				["name"] = "Deathfrost",
 				["recipeID"] = 46578,
 			})),
-			applyclassicphase(TBC_PHASE_FOUR, r(42974, {["timeline"]={"added 2.3.0"}})),	-- Executioner
-			applyclassicphase(TBC_PHASE_THREE, r(42620, {["timeline"]={"added 2.2.0"}})),	-- Greater Agility
+			applyclassicphase(TBC_PHASE_FOUR, r(42974, {["timeline"]={ADDED_2_3_0}})),	-- Executioner
+			applyclassicphase(TBC_PHASE_THREE, r(42620, {["timeline"]={ADDED_2_2_0}})),	-- Greater Agility
 			r(27977),	-- Major Agility
 			r(34010),	-- Major Healing
 			r(27968),	-- Major Intellect
 			r(27975),	-- Major Spellpower
-			applyclassicphase(TBC_PHASE_THREE, r(27967, {["timeline"]={"added 2.1.0"}})),	-- Major Striking
+			applyclassicphase(TBC_PHASE_THREE, r(27967, {["timeline"]={ADDED_2_1_0}})),	-- Major Striking
 			r(27984),	-- Mongoose
 			r(27972),	-- Potency
 			r(27971),	-- Savagery
@@ -1254,7 +1254,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(44636),	-- Greater Spellpower
 			r(59636),	-- Stamina
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, "removed 5.0.4" } }, {	-- Rods
 			r(60619),	-- Runed Titanium Rod
 		})),
 		applyclassicphase(LEGION_PHASE_ONE, cat(704, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
@@ -1843,9 +1843,9 @@ itemrecipe("Formula: Enchant Weapon - Spellsurge", 22558, 28003, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Weapon - Mongoose", 22559, 27984, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Weapon - Sunfire", 22560, 27981, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Weapon - Soulfrost", 22561, 27982, TBC_PHASE_ONE);
-itemrecipe("Formula: Superior Mana Oil", 22562, 28016, TBC_PHASE_ONE, "added 2.0.1.6180");
-itemrecipe("Formula: Superior Wizard Oil", 22563, 28019, TBC_PHASE_ONE, "added 2.0.1.6180");
-itemrecipe("Formula: Large Prismatic Shard", 22565, 28022, TBC_PHASE_ONE, "added 2.0.1.6180");
+itemrecipe("Formula: Superior Mana Oil", 22562, 28016, TBC_PHASE_ONE, ADDED_2_0_1);
+itemrecipe("Formula: Superior Wizard Oil", 22563, 28019, TBC_PHASE_ONE, ADDED_2_0_1);
+itemrecipe("Formula: Large Prismatic Shard", 22565, 28022, TBC_PHASE_ONE, ADDED_2_0_1);
 itemrecipe("Formula: Enchant Bracer - Superior Healing", 24000, 27911, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Chest - Exceptional Stats", 24003, 27960, TBC_PHASE_ONE);
 itemrecipe("Formula: Runed Adamantite Rod", 25848, 32665, TBC_PHASE_ONE, "removed 5.0.4");

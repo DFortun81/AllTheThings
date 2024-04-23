@@ -128,7 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #if BEFORE WRATH
 						["description"] = "The epic gems may not be available until Black Temple is released, however, some users have reported getting one out of this bag already.",
 						-- #endif
-						["timeline"] = { "added 2.4.0.7923" },
+						["timeline"] = { ADDED_2_4_0 },
 						["groups"] = {
 							i(32227),	-- Crimson Spinel
 							i(32228),	-- Empyrean Sapphire

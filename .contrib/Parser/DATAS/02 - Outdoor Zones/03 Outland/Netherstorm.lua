@@ -4,7 +4,7 @@
 local ASARNAN_MALIJ_GROUPS = {};
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(NETHERSTORM, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(NETHERSTORM, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Netherstorm is the northern-most zone in Outland. It is covered in magical currents, giving it an unnatural sci-fi look--except in the protected Eco-Domes, which are lush green. Goblins and Ethereals have made outposts here, as well as the Burning Legion and Kael'thas' blood elves, with numerous Mana Forges across the region. This region has numerous quests that grant Aldor or Scryer reputation.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_netherstorm_01",
@@ -1370,7 +1370,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3.13277
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32355, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
@@ -1395,7 +1395,7 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						-- #endif
-						["timeline"] = { "added 2.4.2.8278", "removed 3.0.1" },
+						["timeline"] = { ADDED_2_4_2, "removed 3.0.1" },
 					}),
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
@@ -1440,7 +1440,7 @@ root(ROOTS.Zones, {
 							i(8490),	-- Siamese Cat (PET!)
 							i(10392),	-- Crimson Snake (PET!)
 							i(29363, {	-- Mana Wyrmling (PET!)
-								["timeline"] = { "added 2.0.1.6180"},
+								["timeline"] = { ADDED_2_0_1},
 							}),
 							i(8495),	-- Senegal (PET!)
 							i(29902),	-- Red Moth (PET!)
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32356, {	-- Grex Brainboiler <Veteran Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.1, 64.0, NETHERSTORM },
@@ -1636,7 +1636,7 @@ root(ROOTS.Zones, {
 							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
 							-- #endif
 							i(28274),	-- Formula: Enchant Cloak - Spell Penetration [TBC] / Formula: Enchant Cloak - PvP Power [Cata+]
-							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={"added 2.1.0"}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={ADDED_2_1_0}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
@@ -1694,7 +1694,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"pop"}},	-- Furious Gladiator's Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32405, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
@@ -1911,7 +1911,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{"pop"}},	-- Hateful Gladiator's Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32354, {	-- Leeni "Smiley" Smalls <Apprentice Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
@@ -2102,7 +2102,7 @@ root(ROOTS.Zones, {
 					}),
 					i(28277, {	-- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
 						["cr"] = 18870,	-- Voidshrieker
-						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
 					}),
 					i(22551, {	-- Formula: Enchant Weapon - Major Intellect
 						["cr"] = 20136,	-- Sunfury Researcher

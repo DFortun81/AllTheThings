@@ -33,7 +33,7 @@ local JEWELCRAFTING_RECIPES = pvp({
 	-- #if BEFORE CATA
 	moh(1, sks(12, i(41730))),	-- Design: Durable Monarch Topaz [WRATH] / Design: Willful Monarch Topaz [CATA+]
 	sks(12, i(41732, {	-- Design: Empowered Monarch Topaz [WRATH] / Design: Lucent Monarch Topaz [CATA+]
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
 	moh(1, sks(24, i(41742))),	-- Design: Enigmatic Skyflare Diamond
@@ -42,19 +42,19 @@ local JEWELCRAFTING_RECIPES = pvp({
 	moh(1, sks(12, i(41733))),	-- Design: Lucent Monarch Topaz
 	-- #if AFTER CATA
 	sks(12, i(41732, {	-- Design: Lucent Monarch Topaz [CATA+] / Design: Empowered Monarch Topaz [WRATH]
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
 	moh(1, sks(12, i(41740))),	-- Design: Mysterious Twilight Opal
 	moh(1, sks(12, i(41727))),	-- Design: Mystic Autumn's Glow
 	-- #if BEFORE CATA
 	sks(12, i(41739, {	-- Design: Opaque Forest Emerald [WRATH] / Design: Turbid Forest Emerald [CATA+]
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
 	-- #if AFTER CATA
 	sks(12, i(41736, {	-- Design: Radiant Forest Emerald [CATA+] / Design: Tense Forest Emerald [WRATH]
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
 	moh(1, sks(12, i(41734))),	-- Design: Resplendent Monarch Topaz
@@ -63,13 +63,13 @@ local JEWELCRAFTING_RECIPES = pvp({
 	moh(1, sks(12, i(41728))),	-- Design: Stormy Sky Sapphire
 	-- #if BEFORE CATA
 	sks(12, i(41736, {	-- Design: Tense Forest Emerald [WRATH] / Design: Radiant Forest Emerald [CATA+]
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
 	moh(1, sks(12, i(41737))),	-- Design: Turbid Forest Emerald
 	-- #if AFTER CATA
 	sks(12, i(41739, {	-- Design: Turbid Forest Emerald [CATA+] / Design: Opaque Forest Emerald [WRATH]
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	moh(1, sks(12, i(41730))),	-- Design: Willful Monarch Topaz [CATA+] / Design: Durable Monarch Topaz [WRATH]
 	-- #endif
@@ -85,36 +85,36 @@ local JEWELCRAFTING_RECIPES = pvp({
 });
 local PHASE_ONE_TRINKETS = applyclassicphase(WRATH_PHASE_ONE, pvp({
 	moh(1, wmoh(25, i(44914, {	-- Anvil of Titans
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(44912, {	-- Flow of Knowledge
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 }));
 local PHASE_TWO_TRINKETS = applyclassicphase(WRATH_PHASE_TWO, pvp({
 	moh(1, wmoh(25, i(46086, {	-- Platinum Disks of Battle
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(46087, {	-- Platinum Disks of Sorcery
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(46088, {	-- Platinum Disks of Swiftness
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(46083, {	-- Titan-Forged Rune of Accuracy
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(46085, {	-- Titan-Forged Rune of Alacrity
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(46081, {	-- Titan-Forged Rune of Audacity
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(46084, {	-- Titan-Forged Rune of Cruelty
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(25, i(46082, {	-- Titan-Forged Rune of Determination
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 }));
 local WINTERGRASP_BELTS = applyclassicphase(WRATH_PHASE_THREE, pvp({
@@ -170,7 +170,7 @@ local WINTERGRASP_CLOAKS = applyclassicphase(WRATH_PHASE_THREE, pvp({
 }));
 local WINTERGRASP_COMMENDATION = pvp({
 	wmoh(9, sks(30, i(44115, {	-- Wintergrasp Commendation
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 });
 local WINTERGRASP_HELMS = applyclassicphase(WRATH_PHASE_ONE, pvp({
@@ -199,18 +199,18 @@ local WINTERGRASP_LEGS = applyclassicphase(WRATH_PHASE_THREE, pvp({
 }));
 local WINTERGRASP_NECKS = applyclassicphase(WRATH_PHASE_THREE, pvp({
 	moh(1, wmoh(15, i(51568, {	-- Titan-Forged Pendant of Ascendancy
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(15, i(51569, {	-- Titan-Forged Pendant of Victory
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 }));
 local WINTERGRASP_RINGS = applyclassicphase(WRATH_PHASE_THREE, pvp({
 	moh(1, wmoh(15, i(48999, {	-- Titan-Forged Band of Ascendancy
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 	moh(1, wmoh(15, i(49000, {	-- Titan-Forged Band of Victory
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}))),
 }));
 local WINTERGRASP_SHOULDERS = applyclassicphase(WRATH_PHASE_FOUR, pvp({

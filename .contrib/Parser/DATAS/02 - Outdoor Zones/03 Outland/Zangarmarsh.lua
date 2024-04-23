@@ -39,7 +39,7 @@ local OnTooltipForSporeggar = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Zangarmarsh is a leveling zone intended to be completed after Hellfire Peninsula. It is a surreal swamp, with neon giant mushrooms and hostile naga. The Cenarion Circle is investigating why wildlife has been dying, discovering that Lady Vashj is draining Coilfang Reservoir for her nefarious purposes. Players can also gain reputation with Sporeggar, a group of sporelings at war with ogres. Alliance players also further learn about lost ones--Draenei heavily corrupted by shadow magic--and begin gaining reputation with the Kurenai.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_zangarmarsh",
@@ -595,7 +595,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 						["sourceQuest"] = 10993,	-- Return to Cenarion Refuge
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { AZSHARA },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
@@ -1561,7 +1561,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 						["sourceQuest"] = 10955,	-- Morthis Whisperwing
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 22790, 10 },	-- Ancient Lichen
@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 						["sourceQuest"] = 10978,	-- Return to Morthis Whisperwing
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
@@ -1733,7 +1733,7 @@ root(ROOTS.Zones, {
 						},
 						["sourceQuest"] = 10961,	-- The Ward of Wakening
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
@@ -2023,10 +2023,10 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(24417, {	-- Scout's Arrow
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(31949, {	-- Warden's Arrow
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29172),	-- Ashyen's Gift
 							applyclassicphase(TBC_PHASE_TWO, i(35403)),	-- Crusader's Ornamented Gloves
@@ -2039,7 +2039,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35347)),	-- Evoker's Silk Trousers
 							i(24429),	-- Expedition Flare
 							i(25835),	-- Explorer's Walking Stick
-							i(33149, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
+							i(33149, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
 							i(28271),	-- Formula: Enchant Gloves - Precise Strikes / TBC: Formula: Enchant Gloves - Spell Strike (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads

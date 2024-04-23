@@ -3560,7 +3560,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, {
 					["name"] = "Greater Drums of War",
-					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
+					["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
 					["recipeID"] = 351766,
 				}),
 				-- #endif
@@ -9382,9 +9382,9 @@ itemrecipe("Pattern: Boots of Utter Darkness", 30306, 36357, TBC_PHASE_TWO);
 itemrecipe("Pattern: Boots of the Crimson Hawk", 30307, 36358, TBC_PHASE_TWO);
 itemrecipe("Pattern: Hurricane Boots", 30308, 36359, TBC_PHASE_TWO);
 
-itemrecipe("Pattern: Netherscale Ammo Pouch", 34201, 44768, TBC_PHASE_THREE, "removed 4.0.1");
-itemrecipe("Pattern: Netherscale Ammo Pouch", 34218, 44768, TBC_PHASE_THREE, "removed 4.0.1");
-itemrecipe("Pattern: Quiver of a Thousand Feathers", 34200, 44359, TBC_PHASE_THREE, "removed 4.0.1");
+itemrecipe("Pattern: Netherscale Ammo Pouch", 34201, 44768, TBC_PHASE_THREE, REMOVED_4_0_1);
+itemrecipe("Pattern: Netherscale Ammo Pouch", 34218, 44768, TBC_PHASE_THREE, REMOVED_4_0_1);
+itemrecipe("Pattern: Quiver of a Thousand Feathers", 34200, 44359, TBC_PHASE_THREE, REMOVED_4_0_1);
 itemrecipe("Pattern: Cloak of Darkness", 33124, 42546, TBC_PHASE_THREE);
 itemrecipe("Pattern: Shadowprowler's Chestguard", 33205, 42731, TBC_PHASE_THREE);
 

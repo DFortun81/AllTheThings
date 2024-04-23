@@ -1710,7 +1710,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18370),	-- Vigilance Charm
 							applyclassicphase(TBC_PHASE_ONE, i(24345, {	-- Book of Cower IV
 								["spellID"] = 31709,	-- Cower IV
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["classes"] = { DRUID },
 								["rank"] = 4,
 							})),

@@ -1634,7 +1634,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Steam Tonk Controller",
-					["timeline"] = { "created 1.10.0", "added 2.0.1.6180" },
+					["timeline"] = { "created 1.10.0", ADDED_2_0_1 },
 					["recipeID"] = 28327,
 				},
 				{
@@ -2006,7 +2006,7 @@ profession(ENGINEERING, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Fused Wiring",
-					["timeline"] = { "added 2.1.0" },
+					["timeline"] = { ADDED_2_1_0 },
 					["recipeID"] = 39895,
 				}),
 				{
@@ -2136,12 +2136,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Adamantite Arrow Maker",
-					["timeline"] = { "added 2.1.0.6692", "deleted 4.0.1" },
+					["timeline"] = { ADDED_2_1_0, "deleted 4.0.1" },
 					["recipeID"] = 43676,
 				}),
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Adamantite Shell Machine",
-					["timeline"] = { "added 2.1.0.6692", "deleted 4.0.1" },
+					["timeline"] = { ADDED_2_1_0, "deleted 4.0.1" },
 					["recipeID"] = 30347,
 				}),
 				{
@@ -2448,7 +2448,7 @@ profession(ENGINEERING, {
 				},
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Gyro-balanced Khorium Destroyer",
-					["timeline"] = { "added 2.1.0.6655" },
+					["timeline"] = { ADDED_2_1_0 },
 					["recipeID"] = 41307,
 				}),
 				{
@@ -3378,11 +3378,11 @@ itemrecipe("Schematic: Rocket Boots Xtreme", 23887, 30556, TBC_PHASE_ONE);
 itemrecipe("Schematic: Fused Wiring", 32381, 39895, TBC_PHASE_ONE);
 itemrecipe("Schematic: Zapthrottle Mote Extractor", 23888, 30548, TBC_PHASE_ONE);
 itemrecipe("Schematic: Field Repair Bot 110G", 34114, 44391, TBC_PHASE_ONE);
-itemrecipe("Schematic: Elemental Seaforium Charge", 23874, 30547, TBC_PHASE_ONE, "added 2.1.0.6692");
+itemrecipe("Schematic: Elemental Seaforium Charge", 23874, 30547, TBC_PHASE_ONE, ADDED_2_1_0);
 
-itemrecipe("Schematic: Adamantite Arrow Maker", 33804, 43676, TBC_PHASE_TWO, { "added 2.1.0.6692", "removed 4.0.1" });
-itemrecipe("Schematic: Adamantite Shell Machine", 23815, 30347, TBC_PHASE_TWO, { "added 2.1.0.6692", "removed 4.0.1" });
-itemrecipe("Schematic: Khorium Scope", 23808, 30332, TBC_PHASE_ONE, "added 2.1.0.6692");
+itemrecipe("Schematic: Adamantite Arrow Maker", 33804, 43676, TBC_PHASE_TWO, { ADDED_2_1_0, REMOVED_4_0_1 });
+itemrecipe("Schematic: Adamantite Shell Machine", 23815, 30347, TBC_PHASE_TWO, { ADDED_2_1_0, REMOVED_4_0_1 });
+itemrecipe("Schematic: Khorium Scope", 23808, 30332, TBC_PHASE_ONE, ADDED_2_1_0);
 
 itemrecipe("Schematic: Annihilator Holo-Gogs", 35186, 46111, TBC_PHASE_FIVE);
 itemrecipe("Schematic: Justicebringer 3000 Specs", 35187, 46107, TBC_PHASE_FIVE);

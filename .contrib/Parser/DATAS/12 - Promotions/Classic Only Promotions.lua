@@ -4,7 +4,7 @@
 root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #if ANYCLASSIC
 	expansion(EXPANSION.TBC, {
-		["timeline"] = { "added 2.5.1" },
+		["timeline"] = { ADDED_2_5_1 },
 		["groups"] = {
 			-- 2021 5th May until 5th Nov 2021
 			q(63768, {	-- Imp in a Ball
@@ -128,7 +128,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		},
 	}),
 	expansion(EXPANSION.WRATH, {
-		["timeline"] = { "added 3.4.0" },
+		["timeline"] = { ADDED_3_4_0 },
 		["groups"] = {
 			q(72523, {	-- Festering Emerald Drake [2022 11th November until 15th January 2023]
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>

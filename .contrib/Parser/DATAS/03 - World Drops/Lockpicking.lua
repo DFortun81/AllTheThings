@@ -191,7 +191,7 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(31952, {	-- Khorium Lockbox
-				["timeline"] = { "added 2.1.0.6678" },
+				["timeline"] = { ADDED_2_1_0 },
 			}),
 			i(188787, {	-- Locked Broker Luggage
 				["timeline"] = { "added 9.2.0.42423" },
@@ -353,7 +353,7 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(29569, {	-- Strong Junkbox
-				["timeline"] = { "added 2.0.1.6180" },
+				["timeline"] = { ADDED_2_0_1 },
 				["sym"] = { {
 					"select", "itemID",
 					4354,   -- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]

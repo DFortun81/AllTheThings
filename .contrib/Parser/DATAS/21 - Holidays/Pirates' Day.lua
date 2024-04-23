@@ -26,7 +26,7 @@ PIRATES_DAY_HEADER = createHeader({
 	},
 });
 root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
-	["timeline"] = { "added 2.4.3.8601" },
+	["timeline"] = { ADDED_2_4_3 },
 	["groups"] = {
 		-- #if BEFORE 6.0.2.18816
 		n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>

@@ -873,7 +873,7 @@ GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER = r(62162, {	-- Glyph of Focus / Glyp
 	-- #else
 	["name"] = "Glyph of Focus",
 	-- #endif
-	["timeline"] = { "added 3.0.8", "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_8, "deleted 6.0.2" },
 });
 GLYPH_OF_FORTITUDE_AND_BORROWED_TIME = r(58318, {	-- Glyph of Fortitude / Glyph of Borrowed Time [MOP+]
 	-- #if AFTER MOP
@@ -1189,7 +1189,7 @@ GLYPH_OF_ICEBOUND_FORTITUDE = r(57218, {	-- Glyph of Icebound Fortitude
 });
 GLYPH_OF_ICY_TOUCH = r(57219, {	-- Glyph of Icy Touch
 	["name"] = "Glyph of Icy Touch",
-	["timeline"] = { "added 3.0.8", "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_8, "deleted 7.0.3" },
 });
 GLYPH_OF_ICY_VEINS_AND_CONE_OF_COLD = r(56981, {	-- Glyph of Icy Veins / Glyph of Cone of Cold [5.0.4+]
 	["name"] = "Glyph of Icy Veins",

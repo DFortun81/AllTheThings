@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 					i(34864, {	-- Baby Crocolisk
-						["timeline"] = { "added 2.4.0.7897" },
+						["timeline"] = { ADDED_2_4_0 },
 					}),
 					i(67414, {	-- Bag of Shiny Things
 						["provider"] = { "n", 5494 },	-- Catherine Leland
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { "added 2.4.0.7897" },
+								["timeline"] = { ADDED_2_4_0 },
 							}),
 							i(45991, {	-- Bone Fishing Pole
 								["timeline"] = { ADDED_3_1_0 },
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 66.9, 13.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 2.3.0" },
+					["timeline"] = { ADDED_2_3_0 },
 					["maps"] = { SHATTRATH_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 15),
@@ -4788,22 +4788,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(41571),	-- Design: Turbid Dark Jade
 						-- #endif
 						moh(1, i(28118, {	-- Brilliant Ornate Ruby
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28119, {	-- Smooth Ornate Dawnstone
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28120, {	-- Gleaming Ornate Dawnstone
-							["timeline"] = { "added 2.0.1.6180", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
 						})),
 						moh(1, i(28123, {	-- Potent Ornate Topaz
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28362, {	-- Delicate Ornate Ruby
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 						moh(1, i(28363, {	-- Deadly Ornate Topaz
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 						})),
 					}),
 				}),
@@ -5925,7 +5925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 71.9, 55.6, STORMWIND_CITY },
 					-- #endif
-					["timeline"] = { "added 2.0.1" },	-- Prior to TBC, was just a Reagent Vendor.
+					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Reagent Vendor.
 					["sym"] = {
 						-- #IF ANYCLASSIC
 							{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS },	-- Grand Marshal Weapons
@@ -5947,7 +5947,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
 						i(29465, {	-- Black Battlestrider (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18243, {	-- Black Battlestrider (MOUNT!)
@@ -5957,25 +5957,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						i(35906, {	-- Black War Elekk (MOUNT!)
-							["timeline"] = { "added 2.4.0.7994" },
+							["timeline"] = { ADDED_2_4_0 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(29467, {	-- Black War Ram (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18244, {	-- Black War Ram (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
 						}),
 						i(29468, {	-- Black War Steed (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18241, {	-- Black War Steed (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
 						}),
 						i(29471, {	-- Black War Tiger (MOUNT!)
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["cost"] = PVP_MOUNT_COST,
 						}),
 						i(18242, {	-- Black War Tiger (MOUNT!)
@@ -6292,16 +6292,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18839),	-- Combat Healing Potion
 						i(18841),	-- Combat Mana Potion
 						i(31853, {	-- Major Combat Healing Potion
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(31855, {	-- Major Combat Mana Potion
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(32455, {	-- Star's Lament
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(32453, {	-- Star's Tears
-							["timeline"] = { "added 2.0.1" },
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(44957, {	-- Greater Inscription of the Gladiator
 							["timeline"] = { ADDED_3_0_8, "removed 7.0.1" },
@@ -6729,7 +6729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(12785, {	-- Sergeant Major Clate <Legacy Armor Quartermaster> [WRATH+] / Sergeant Major Clate <Armor Quartermaster>
 					["coord"] = { 75.4, 67.0, STORMWIND_CITY },
-					["timeline"] = { "added 2.0.1" },	-- Prior to TBC, was just a Food Vendor.
+					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Food Vendor.
 					["sym"] = {	-- Grand Marshal Armor
 						-- #IF ANYCLASSIC
 							{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },

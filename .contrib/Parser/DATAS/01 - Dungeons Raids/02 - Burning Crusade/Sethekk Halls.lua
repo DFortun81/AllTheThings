@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 11001,	-- Vanquish the Raven God
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(70, 70, 30),
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 10994,	-- Chasing the Moonstone
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
@@ -138,7 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #if BEFORE WRATH
 							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
 							-- #endif
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
 						}),
@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						recipe(40120),	-- Swift Flight Form
 						-- #endif
 						i(32387, {	-- Idol of the Raven Goddess
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(32462, {	-- Morthis' Materials
 							i(32454),	-- Arthorn's Research

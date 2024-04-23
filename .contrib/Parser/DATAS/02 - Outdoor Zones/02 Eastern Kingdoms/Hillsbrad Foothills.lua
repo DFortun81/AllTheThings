@@ -1815,7 +1815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(25878, {	-- Dusksteel Throwing Knife [TBC]
-							["timeline"] = { "added 2.1.0.6692", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, "removed 5.0.4" },
 						}),
 					},
 				}),
@@ -1940,7 +1940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9435, {	-- Missing Crystals
 					["qg"] = 17218,	-- Huraan
 					["coord"] = { 51.0, 58.7, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -2136,7 +2136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9425, {	-- Report to Tarren Mill
 					["qg"] = 16287,	-- Ambassador Sunsorrow
 					["coord"] = { 57.6, 90.8, UNDERCITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 				}),
 				q(542, {	-- Return to Milton
@@ -3245,7 +3245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
@@ -3396,11 +3396,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)

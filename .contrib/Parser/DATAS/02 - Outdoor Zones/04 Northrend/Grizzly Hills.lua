@@ -346,7 +346,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12443,	-- Seeking Solvent
 						["coord"] = { 23.0, 80.0, GRIZZLY_HILLS },
 						["cost"] = { { "i", 37664, 1 } },	-- Element 115
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					})),
@@ -355,7 +355,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12433,	-- Seeking Solvent
 						["coord"] = { 11.1, 76.6, GRIZZLY_HILLS },
 						["cost"] = { { "i", 37664, 1 } },	-- Element 115
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					})),

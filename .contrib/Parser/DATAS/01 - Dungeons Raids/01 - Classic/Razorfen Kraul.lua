@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #if AFTER TBC
 						i(29200, {	-- Falfindel's Blaster
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 						}),
 						-- #else
 						i(3041),	-- "Mage-Eye" Blunderbuss

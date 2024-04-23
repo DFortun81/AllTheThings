@@ -9,7 +9,7 @@ local OnTooltipForNetherwing = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(SHADOWMOON_VALLEY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(SHADOWMOON_VALLEY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Shadowmoon Valley is a fel-infused zone intended for level 25-30 players in southeastern Outland. Illidan Stormrage resides there in the Black Temple, as well as Maiev Shadowsong, held captive there by the Broken. There are several elite areas that document the destruction of the Burning Legion, as well as Illidan's methods of training demon hunters.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_shadowmoon",
@@ -2153,7 +2153,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -2169,7 +2169,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 19826 },  -- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)
-						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
 						["cr"] = 19796,	-- Eclipsion Archmage
 					}),
 					i(30756, {	-- Illidari Bane-Shard (A)
@@ -2205,7 +2205,7 @@ root(ROOTS.Zones, {
 							21061,	-- Enraged Fire Spirit
 							21059,	-- Enraged Water Spirit
 						},
-						["timeline"] = { "added 2.2.0" },
+						["timeline"] = { ADDED_2_2_0 },
 					}),
 					i(31239, {	-- Primed Key Mold
 						["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },

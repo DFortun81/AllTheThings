@@ -2481,7 +2481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
-					["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2951,7 +2951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(3233),	-- Gnoll Hide Sack
 						i(5744, {	-- Pale Skinner
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 					},
 				}),
@@ -3003,13 +3003,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1917, {	-- Jeweled Dagger
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 						i(6201, {	-- Lithe Boots
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 						i(2091, {	-- Magic Dust
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -3021,7 +3021,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3000, {	-- Brood Mother Carapace
-							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+							["timeline"] = { REMOVED_4_0_1, "added 8.0.1" },
 						}),
 						i(6148, {	-- Web-covered Boots
 							["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
@@ -3036,7 +3036,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6147, {	-- Ratty Old Belt
-							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(1913, {	-- Studded Blackjack
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -3083,7 +3083,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6203, {	-- Thuggish Shield
-							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),

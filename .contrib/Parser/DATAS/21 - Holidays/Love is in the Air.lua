@@ -1858,14 +1858,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			i(22261),	-- Love Fool
 			-- #endif
 			i(34258, {	-- Lovely Fireworks
-				["timeline"] = { "added 2.3.0.7382" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			-- #if BEFORE 3.3.2.11403
 			i(22279, {	-- Lovely Black Dress
 				["timeline"] = { "removed 7.2.5.24116" },
 			}),
 			i(34480, {	-- Romantic Picnic Basket (TOY!)
-				["timeline"] = { "added 2.4.0.7897" },
+				["timeline"] = { ADDED_2_4_0 },
 			}),
 			i(22200),	-- Silver Shafted Arrow
 			i(22235, {	-- Peddlefeet (PET!)
@@ -2223,7 +2223,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", LOVE_TOKEN, 150 } },	-- 150x Love Token
 				}),
 				i(34480, {	-- Romantic Picnic Basket (TOY!)
-					["timeline"] = { "added 2.4.0.7897" },
+					["timeline"] = { ADDED_2_4_0 },
 					["cost"] = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
 				}),
 				i(144339, {	-- Sturdy Love Fool (TOY!)
@@ -2296,7 +2296,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
 				}),
 				i(34258, {	-- Lovely Fireworks
-					["timeline"] = { "added 2.3.0.7382" },
+					["timeline"] = { ADDED_2_3_0 },
 					["cost"] = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
 				}),
 				i(50163, {	-- Lovely Rose
@@ -3223,19 +3223,19 @@ for i,o in ipairs({
 
 			-- Wrath
 			i(51808, {	-- Choker of the Pure Heart [Level 80]
-				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 			}),
 			i(51805, {	-- Heartbreak Charm [Level 80]
-				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 			}),
 			i(51806, {	-- Shard of Pirouetting Happiness [Level 80]
-				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 			}),
 			i(51807, {	-- Sweet Perfume Brooch [Level 80]
-				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 			}),
 			i(51804, {	-- Winking Eye of Love [Level 80]
-				["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 			}),
 			--[[
 			i(21813),	-- Bag of Heart Candies
@@ -3243,7 +3243,7 @@ for i,o in ipairs({
 				["timeline"] = { ADDED_3_3_2 },
 			}),
 			i(34258, {	-- Lovely Fireworks
-				["timeline"] = { "added 2.3.0.7382" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			]]--
 		},

@@ -830,7 +830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 2994,	-- Ancestral Spirit
 					["sourceQuest"] = 773,	-- Rite of Wisdom
 					["coord"] = { 61.4, 21, MULGORE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -842,7 +842,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 48.2, 53.4, MULGORE },
 					-- #endif
-					["timeline"] = { "added 2.1.2" },
+					["timeline"] = { ADDED_2_1_2 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
@@ -878,7 +878,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14087, {	-- Learn to Ride in Mulgore
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",
-					["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1177,7 +1177,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3057,	-- Cairne Bloodhoof <High Chieftain>
 					["sourceQuest"] = 775,	-- Journey into Thunder Bluff
 					["coord"] = { 59.8, 51.6, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 					["groups"] = {
@@ -1213,7 +1213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(745, {	-- Sharing the Land
 					["qg"] = 2993,	-- Baine Bloodhoof
 					["coord"] = { 47.5, 60.2, MULGORE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Palemane Tanner slain

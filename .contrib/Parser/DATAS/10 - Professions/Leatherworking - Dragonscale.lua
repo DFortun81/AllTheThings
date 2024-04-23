@@ -6,7 +6,7 @@ profession(LEATHERWORKING, {
 			5141,	-- Dragonscale Leatherworking [Alliance]
 			5145,	-- Dragonscale Leatherworking [Horde]
 		},
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			-- #if AFTER TBC
 			{
@@ -15,7 +15,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Ebon Netherscale Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35575,
 						["requireSkill"] = 10656,
 					}),
@@ -28,7 +28,7 @@ profession(LEATHERWORKING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Netherstrike Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35580,
 						["requireSkill"] = 10656,
 					}),
@@ -40,13 +40,13 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Ebon Netherscale Bracers",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35577,
 						["requireSkill"] = 10656,
 					}),
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Netherstrike Bracers",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35584,
 						["requireSkill"] = 10656,
 					}),
@@ -58,13 +58,13 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Ebon Netherscale Belt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35576,
 						["requireSkill"] = 10656,
 					}),
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Netherstrike Belt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35582,
 						["requireSkill"] = 10656,
 					}),
