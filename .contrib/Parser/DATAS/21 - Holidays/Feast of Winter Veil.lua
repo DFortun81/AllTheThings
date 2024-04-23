@@ -1307,7 +1307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 67443 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2010.",
-			["timeline"] = { ADDED_4_0_3_LAUNCH, "removed 4.2.0.14333" },
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_4_2_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,

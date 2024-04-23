@@ -265,7 +265,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
@@ -275,7 +275,7 @@ root(ROOTS.Zones, {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
 									ADDED_3_3_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -1655,7 +1655,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
@@ -1665,7 +1665,7 @@ root(ROOTS.Zones, {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
 									ADDED_3_3_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -1785,19 +1785,19 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_2_2_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["groups"] = {
 							i(32941, {	-- Corruptor's Signet
 								["timeline"] = {
 									ADDED_2_2_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 							i(32942, {	-- Ring of the Overseer
 								["timeline"] = {
 									ADDED_2_2_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -1840,7 +1840,7 @@ root(ROOTS.Zones, {
 					i(32643, {	-- Darkrune
 						["timeline"] = {
 							ADDED_2_2_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							 { "i", 33784, 5 },	-- Darkrune Fragment
@@ -1851,7 +1851,7 @@ root(ROOTS.Zones, {
 						i(33784, {	-- Darkrune Fragment
 							["timeline"] = {
 								ADDED_2_2_0,
-								"removed 4.1.0.7272",
+								REMOVED_4_1_0,
 							},
 						}),
 					}),

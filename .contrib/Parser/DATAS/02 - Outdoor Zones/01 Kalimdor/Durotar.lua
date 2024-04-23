@@ -3323,7 +3323,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3521,	-- Ak'Zeloth
 					["sourceQuest"] = 809,	-- Ak'Zeloth
 					["coord"] = { 62.4, 20, THE_BARRENS },
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -3346,7 +3346,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(5420, {	-- Banshee Armor
-							["timeline"] = { "removed 4.1.0" },
+							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
 				}),

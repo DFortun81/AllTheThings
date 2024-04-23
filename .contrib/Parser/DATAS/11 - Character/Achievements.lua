@@ -430,7 +430,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
 	}),
 	ach(5395, {		-- Realm First! Grand Master Archaeologist
-		["timeline"] = { ADDED_4_0_3, "removed 4.1.1" },
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_1_0 },
 	}),
 	ach(1414, {		-- Realm First! Grand Master Blacksmith
 		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },

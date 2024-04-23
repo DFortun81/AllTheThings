@@ -1740,7 +1740,7 @@ root(ROOTS.Zones, {
 							i(31781),	-- Sha'tar Tabard
 							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
 							i(30634, {	-- Warpforged Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
@@ -2350,7 +2350,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
 							i(30633, {	-- Auchenai Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.

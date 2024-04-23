@@ -667,7 +667,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			o(123329, {	-- Baelog's Chest
 				i(7740, {	-- Gni'kiv Medallion
 					["description"] = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
-					["timeline"] = { "removed 4.1.0" },
+					["timeline"] = { REMOVED_4_1_0 },
 				}),
 			}),
 			n(6912, {	-- Remains of a Paladin
@@ -687,11 +687,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "i", 7740, 1 },	-- Gni'kiv Medallion
 							{ "i", 7741, 1 },	-- The Shaft of Tsol
 						},
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 					}),
 					i(7741, {	-- The Shaft of Tsol
 						["description"] = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 					}),
 					i(132736, {	-- Revelosh's Pauldrons
 						["timeline"] = { "added 7.0.3.22248"},

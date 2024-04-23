@@ -3286,7 +3286,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28877, {	-- They Call Him Swiftdagger. He Kills Harpies.
 					["qg"] = 34698,	-- Nozzlepot
 					["coord"] = { 62.5, 16.7, NORTHERN_BARRENS },
-					["timeline"] = { ADDED_4_0_3, "removed 4.1.0.13726" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13878, {	-- Through Fire and Flames
@@ -3326,7 +3326,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28876, {	-- To the Mor'Shan Ramparts!
 					["qg"] = 3429,	-- Thork
 					["coord"] = { 48.7, 59.5, NORTHERN_BARRENS },
-					["timeline"] = { ADDED_4_0_3, "removed 4.1.0.13726" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_4_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13712, {	-- To the Rescue!

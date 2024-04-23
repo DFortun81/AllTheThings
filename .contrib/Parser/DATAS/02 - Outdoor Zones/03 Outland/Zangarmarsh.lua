@@ -1995,7 +1995,7 @@ root(ROOTS.Zones, {
 							}),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.

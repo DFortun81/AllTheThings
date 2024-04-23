@@ -262,7 +262,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.3.0.33062", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)
-			["timeline"] = { ADDED_4_1_0, "removed 4.2.0.14313" },
+			["timeline"] = { ADDED_4_1_0, REMOVED_4_2_0 },
 		}),
 		i(72068, {	-- Guardian Cub (PET!)
 			["timeline"] = { ADDED_4_2_0, "removed 5.4.8" },

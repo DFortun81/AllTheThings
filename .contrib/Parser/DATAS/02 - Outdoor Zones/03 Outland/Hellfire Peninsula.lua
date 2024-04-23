@@ -3310,7 +3310,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(23999),	-- Honor Hold Tabard
 							i(30622, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = ALLIANCE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
@@ -3406,7 +3406,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(24004),	-- Thrallmar Tabard
 							i(30637, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = HORDE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC

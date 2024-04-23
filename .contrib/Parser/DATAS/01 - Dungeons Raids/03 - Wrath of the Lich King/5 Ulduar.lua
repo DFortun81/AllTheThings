@@ -445,7 +445,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { "removed 7.3.5.25600" },
 							["groups"] = {
 								i(45796, {	-- Celestial Planetarium Key
-									["timeline"] = { "removed 4.2.0" },
+									["timeline"] = { REMOVED_4_2_0 },
 								}),
 								i(45875, {	-- Sack of Ulduar Spoils
 									["sym"] = { { "select", "itemID", 45087 } },	-- Runed Orb
@@ -2001,7 +2001,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["timeline"] = { "removed 7.3.5.25600" },
 						["groups"] = {
 							i(45796, {	-- Celestial Planetarium Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 							}),
 							i(45875, {	-- Sack of Ulduar Spoils
 								["sym"] = { { "select", "itemID", 45087 } },	-- Runed Orb

@@ -729,7 +729,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				963,	-- Tricks and Treats of Kalimdor (A)
 				969,	-- Tricks and Treats of Outlands (A)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 4.2.0" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_4_2_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(5837, {	-- Tricks and Treats of Cataclysm (A)
@@ -4825,7 +4825,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "select", "itemID", 33292, 33154 },	-- Hallowed Helm & Sinister Squashling
 			},
 			-- #endif
-			["timeline"] = { "removed 4.2.0" },
+			["timeline"] = { REMOVED_4_2_0 },
 		}),
 		i(20390, {	-- Candy Bar
 			["timeline"] = { REMOVED_4_0_1 },

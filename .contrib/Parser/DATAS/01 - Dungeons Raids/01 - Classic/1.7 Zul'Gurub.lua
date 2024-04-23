@@ -1474,7 +1474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						-- #if BEFORE WRATH
 						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
 						-- #endif
-						["timeline"] = { ADDED_3_0_2, "removed 4.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_4_1_0 },
 					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon

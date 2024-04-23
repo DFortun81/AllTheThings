@@ -1447,7 +1447,7 @@ profession(COOKING, {
 		},
 		{
 			["name"] = "Sporeling Snack",
-			["timeline"] = { "removed 4.2.0" },
+			["timeline"] = { REMOVED_4_2_0 },
 			["recipeID"] = 33285
 		},
 		applyclassicphase(TBC_PHASE_TWO, {
@@ -1946,12 +1946,12 @@ un(REMOVED_FROM_GAME, itemrecipe("Recipe: Thistle Tea", 7678, 9513));
 -- #if AFTER TBC
 -- TBC Recipes
 itemrecipe("Recipe: Bat Bites", 27687, 33278, TBC_PHASE_ONE, ADDED_2_0_1);
-itemrecipe("Recipe: Charred Bear Kabobs", 35564, 46684, TBC_PHASE_ONE, "removed 4.1.0");
+itemrecipe("Recipe: Charred Bear Kabobs", 35564, 46684, TBC_PHASE_ONE, REMOVED_4_1_0);
 itemrecipe("Recipe: Crunchy Spider Surprise", 22647, 28267, TBC_PHASE_ONE, ADDED_2_0_1);
-itemrecipe("Recipe: Juicy Bear Burger", 35566, 46688, TBC_PHASE_ONE, "removed 4.1.0");
+itemrecipe("Recipe: Juicy Bear Burger", 35566, 46688, TBC_PHASE_ONE, REMOVED_4_1_0);
 itemrecipe("Recipe: Lynx Steak", 27685, 33276, TBC_PHASE_ONE, ADDED_2_0_1);
 itemrecipe("Recipe: Roasted Moongraze Tenderloin", 27686, 33277, TBC_PHASE_ONE, ADDED_2_0_1);
-itemrecipe("Recipe: Sporeling Snack", 27689, 33285, TBC_PHASE_ONE, "removed 4.2.0");
+itemrecipe("Recipe: Sporeling Snack", 27689, 33285, TBC_PHASE_ONE, REMOVED_4_2_0);
 applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Hot Apple Cider", 34413, 45022, true, ADDED_2_3_0));
 
 itemrecipe("Recipe: Buzzard Bites", 27684, 33279, TBC_PHASE_ONE);

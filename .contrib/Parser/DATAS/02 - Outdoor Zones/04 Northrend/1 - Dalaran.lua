@@ -935,7 +935,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_0_3, "removed 4.2.0.14333" },
+								["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33936, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -1064,7 +1064,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR },{"merge"},},	-- Bloodthirsty Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_0_3, "removed 4.2.0.14333" },
+								["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },

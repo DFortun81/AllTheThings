@@ -2307,7 +2307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
-							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
+							["timeline"] = { REMOVED_4_1_0 },	-- Learned by trainer
 						}),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
