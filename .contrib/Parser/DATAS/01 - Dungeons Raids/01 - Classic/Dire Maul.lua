@@ -1092,7 +1092,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18401, {	-- Nostro's Compendium of Dragon Slaying
-						["timeline"] = { "removed 3.2.2" },
+						["timeline"] = { REMOVED_3_2_2 },
 					}),
 					i(18358, {	-- The Arcanist's Cookbook
 						["timeline"] = { REMOVED_4_0_3 },

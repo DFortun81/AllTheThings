@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
 					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,

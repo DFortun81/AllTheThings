@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 4850 },	-- Bristleback Attack Plans
 							},
 							["coord"] = { 63.3, 82.6, MULGORE },
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(4911, {	-- Thick Bark Buckler

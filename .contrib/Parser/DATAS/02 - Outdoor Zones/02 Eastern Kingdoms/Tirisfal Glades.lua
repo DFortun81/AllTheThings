@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1470, {	-- Piercing the Veil
 							["qg"] = 5667,	-- Venya Marthand
 							["coord"] = { 31.0, 66.4, TIRISFAL_GLADES },
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 3.3.0

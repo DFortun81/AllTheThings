@@ -793,7 +793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["isLimited"] = true,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["timeline"] = { "removed 3.2.0"},
+							["timeline"] = { REMOVED_3_2_0},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,

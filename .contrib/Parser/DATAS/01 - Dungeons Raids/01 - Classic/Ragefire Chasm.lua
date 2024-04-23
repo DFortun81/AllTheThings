@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5725, {	-- The Power to Destroy...
 					["qg"] = 2425,	-- Varimathras
 					["coord"] = { 56.2, 91.8, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					-- #if BEFORE 3.3.0

@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6467,	-- Mennet Carkad
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1886,	-- The Deathstalkers (1/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1122,7 +1122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6522,	-- Andron Gant
 					["sourceQuest"] = 1898,	-- The Deathstalkers (2/4)
 					["coord"] = { 54.6, 75.6, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1140,7 +1140,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1899,	-- The Deathstalkers (3/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,

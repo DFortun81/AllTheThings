@@ -65,7 +65,7 @@ end]];
 root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, pvp(expansion(EXPANSION.WRATH, {
 	n(SEASON_DEADLY, {
 		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -466,7 +466,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					}),
 					-- #if ANYCLASSIC
 					filter(RELICS_F, bubbleDown({
-						["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -1127,7 +1127,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						}),
 					}),
 					filter(NECK_F, bubbleDown({
-						["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -1141,7 +1141,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42021),	-- Hateful Gladiator's Pendant of Victory
 					})),
 					filter(FINGER_F, bubbleDown({
-						["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -1150,7 +1150,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42112),	-- Hateful Gladiator's Band of Triumph
 					})),
 					filter(RELICS_F, bubbleDown({
-						["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -1823,7 +1823,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42115),	-- Deadly Gladiator's Band of Victory
 					}),
 					filter(RELICS_F, bubbleDown({
-						["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -1839,7 +1839,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42597),	-- Deadly Gladiator's Totem of the Third Wind
 					})),
 					filter(TRINKET_F, bubbleDown({
-						["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -1860,7 +1860,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		-- #endif
 		-- #if ANYCLASSIC
 		bubbleDown({
-			["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -1875,7 +1875,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 	}),
 	applyclassicphase(WRATH_PHASE_TWO, n(SEASON_FURIOUS, {
 		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { ADDED_3_1_0, "removed 3.2.0" },
+			["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -2546,7 +2546,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42117),	-- Furious Gladiator's Band of Triumph
 					}),
 					filter(RELICS_F, bubbleDown({
-						["timeline"] = { ADDED_3_1_0, "removed 3.2.0" },
+						["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -2562,7 +2562,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42598),	-- Furious Gladiator's Totem of the Third Wind
 					})),
 					filter(TRINKET_F, bubbleDown({
-						["timeline"] = { ADDED_3_1_0, "removed 3.2.0" },
+						["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -2576,7 +2576,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		}),
 		-- #endif
 		bubbleDown({
-			["timeline"] = { ADDED_3_1_0, "removed 3.2.0" },
+			["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -2620,7 +2620,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 	})),
 	applyclassicphase(WRATH_PHASE_THREE, n(SEASON_RELENTLESS, {
 		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { ADDED_3_2_0, "removed 3.3.2" },
+			["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -3304,7 +3304,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42119),	-- Relentless Gladiator's Band of Victory
 					}),
 					filter(RELICS_F, bubbleDown({
-						["timeline"] = { ADDED_3_2_0, "removed 3.3.2" },
+						["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -3320,7 +3320,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42599),	-- Relentless Gladiator's Totem of the Third Wind
 					})),
 					filter(TRINKET_F, bubbleDown({
-						["timeline"] = { ADDED_3_2_0, "removed 3.3.2" },
+						["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
 						-- #if BEFORE 5.0.1
 						["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 						-- #endif
@@ -3337,7 +3337,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		}),
 		-- #endif
 		bubbleDown({
-			["timeline"] = { ADDED_3_2_0, "removed 3.3.2" },
+			["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 			-- #endif

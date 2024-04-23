@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["coord"] = { 28.6, 66.1, DUN_MOROGH },
 							["altQuests"] = { 1598 },	-- The Stolen Tome
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 3.3.0

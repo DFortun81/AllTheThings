@@ -1375,7 +1375,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 25112,	-- Anchorite Ayuri
 					["coord"] = { 49.1, 37.6, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
 					-- #endif
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 25057,	-- Battlemage Arynna
 					["coord"] = { 47.5, 35.0, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
@@ -1524,7 +1524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE, q(11550, {	-- Enter, the Deceiver...
 					["qg"] = 25167,	-- General Tiras'alan
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
@@ -1534,7 +1534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 24965,	-- Vindicator Xayann
 					["coord"] = { 47.1, 30.6, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 25108,	-- Vindicator Kaalan
 					["coord"] = { 50.5, 38.9, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
@@ -1652,7 +1652,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 25046,	-- Smith Hauthaa
 					["coord"] = { 50.5, 40.7, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
@@ -1689,7 +1689,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 24975,	-- Mar'nah
 					["coord"] = { 51.4, 32.4, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["maps"] = { TEROKKAR_FOREST },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1755,7 +1755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 25069,	-- Magister Ilastar
 					["coord"] = { 49.3, 40.3, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
@@ -1798,7 +1798,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 25061,	-- Harbinger Inuuro
 					["coord"] = { 47.6, 35.0, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH

@@ -862,7 +862,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4455,	-- Red Jack Flint
 					["coord"] = { 9.9, 57.9, WETLANDS },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
@@ -1171,7 +1171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4456,	-- Fiora Longears
 					["sourceQuest"] = 1132,	-- Fiora Longears
 					["coord"] = { 66.4, 45.2, DUSTWALLOW_MARSH },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,

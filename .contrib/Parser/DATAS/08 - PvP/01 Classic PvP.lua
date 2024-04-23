@@ -750,7 +750,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 61.8, 83.8, ASHENVALE },
 					-- #endif
 				},
-				["timeline"] = { "removed 3.3.3" },
+				["timeline"] = { REMOVED_3_3_3 },
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					-- #if AFTER TBC
@@ -787,7 +787,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 61.8, 83.8, ASHENVALE },
 					-- #endif
 				},
-				["timeline"] = { "removed 3.3.3" },
+				["timeline"] = { REMOVED_3_3_3 },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["cost"] = {
@@ -824,7 +824,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 46.7, 8.4, THE_BARRENS },
 					-- #endif
 				},
-				["timeline"] = { "removed 3.3.3" },
+				["timeline"] = { REMOVED_3_3_3 },
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					-- #if AFTER TBC
@@ -861,7 +861,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 46.7, 8.4, THE_BARRENS },
 					-- #endif
 				},
-				["timeline"] = { "removed 3.3.3" },
+				["timeline"] = { REMOVED_3_3_3 },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
 				["cost"] = {

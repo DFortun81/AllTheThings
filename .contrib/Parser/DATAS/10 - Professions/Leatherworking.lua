@@ -1942,7 +1942,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Icy Scale Breastplate",
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28222,
 				}),
 				-- #if AFTER TBC
@@ -1983,7 +1983,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Polar Tunic",
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28219,
 				}),
 				applyclassicphase(PHASE_FOUR, {
@@ -2112,7 +2112,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Icy Scale Bracers",
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28224,
 				}),
 				{
@@ -2130,7 +2130,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Polar Bracers",
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28221,
 				}),
 				applyclassicphase(PHASE_FOUR, {
@@ -2284,7 +2284,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Icy Scale Gauntlets",
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28223,
 				}),
 				{
@@ -2302,7 +2302,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Polar Gloves",
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["recipeID"] = 28220,
 				}),
 				applyclassicphase(PHASE_FOUR, {
@@ -3560,7 +3560,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, {
 					["name"] = "Greater Drums of War",
-					["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 					["recipeID"] = 351766,
 				}),
 				-- #endif
@@ -9232,7 +9232,7 @@ itemrecipe("Pattern: Blue Dragonscale Shoulders", 15763, 19089);
 itemrecipe("Pattern: Stormshroud Shoulders", 15764, 19090);
 itemrecipe("Pattern: Runic Leather Pants", 15765, 19091);
 itemrecipe("Pattern: Wicked Leather Belt", 15768, 19092);
-itemrecipe("Pattern: Onyxia Scale Cloak", 15769, 19093, "removed 3.2.2");
+itemrecipe("Pattern: Onyxia Scale Cloak", 15769, 19093, REMOVED_3_2_2);
 itemrecipe("Pattern: Black Dragonscale Shoulders", 15770, 19094);
 itemrecipe("Pattern: Living Breastplate", 15771, 19095);
 itemrecipe("Pattern: Devilsaur Leggings", 15772, 19097);
@@ -9298,7 +9298,7 @@ itemrecipe("Pattern: Icy Scale Bracers", 22698, 28224, PHASE_SIX);
 
 -- #if AFTER TBC
 -- TBC Recipes
-itemrecipe("Pattern: Heavy Knothide Leather", 25720, 32455, TBC_PHASE_ONE, "removed 3.2.0");
+itemrecipe("Pattern: Heavy Knothide Leather", 25720, 32455, TBC_PHASE_ONE, REMOVED_3_2_0);
 itemrecipe("Pattern: Vindicator's Armor Kit", 25721, 32457, TBC_PHASE_ONE);
 itemrecipe("Pattern: Magister's Armor Kit", 25722, 32458, TBC_PHASE_ONE);
 itemrecipe("Pattern: Riding Crop", 25725, 32461, TBC_PHASE_ONE);

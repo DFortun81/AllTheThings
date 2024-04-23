@@ -1395,7 +1395,7 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						-- #endif
-						["timeline"] = { ADDED_2_4_2, "removed 3.0.1" },
+						["timeline"] = { ADDED_2_4_2, REMOVED_3_0_2 },
 					}),
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
@@ -1713,7 +1713,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE WRATH
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },{"pop"}},	-- Gladiator's Set
 						-- #endif
-						["timeline"] = { "removed 3.0.1", ADDED_4_3_0 },
+						["timeline"] = { REMOVED_3_0_2, ADDED_4_3_0 },
 						-- #if AFTER 4.3.0.15005
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({

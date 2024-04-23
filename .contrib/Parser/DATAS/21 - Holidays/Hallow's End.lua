@@ -2307,35 +2307,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			-- Wrath of the Lich King
 			i(49128, {	-- The Horseman's Baleful Blade
-				["timeline"] = { ADDED_3_0_2, "removed 3.3.0" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_3_3_0 },
 			}),
 			i(49126, {	-- The Horseman's Horrific Helm
-				["timeline"] = { ADDED_3_0_2, "removed 3.3.0" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_3_3_0 },
 			}),
 			i(49121, {	-- Ring of Ghoulish Glee
-				["timeline"] = { ADDED_3_0_2, "removed 3.3.0" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_3_3_0 },
 			}),
 			i(49123, {	-- The Horseman's Signet
-				["timeline"] = { ADDED_3_0_2, "removed 3.3.0" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_3_3_0 },
 			}),
 			i(49124, {	-- Wicked Witch's Band
-				["timeline"] = { ADDED_3_0_2, "removed 3.3.0" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_3_3_0 },
 			}),
 			-- Burning Crusade
 			i(38175, {	-- The Horseman's Blade
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(33808, {	-- The Horseman's Helm
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(34075, {	-- Ring of Ghoulish Delight
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(34073, {	-- The Horseman's Signet Ring
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(34074, {	-- Witches Band
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			-- #if BEFORE WRATH
 			i(33154, {	-- Sinister Squashling (PET!)
@@ -2619,7 +2619,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
-			["timeline"] = { ADDED_2_0_1, "removed 3.3.0" },
+			["timeline"] = { ADDED_2_0_1, REMOVED_3_3_0 },
 			["isDaily"] = true,
 			-- #if AFTER WRATH
 			["lvl"] = 75,

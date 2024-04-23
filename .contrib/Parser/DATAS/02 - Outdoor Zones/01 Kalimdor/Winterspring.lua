@@ -2071,14 +2071,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE 3.1.0
 			prof(SKINNING, {
 				i(15423, {	-- Chimera Leather
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					["crs"] = {
 						10807,	-- Brumeran
 						7449,	-- Chillwind Ravager
 					},
 				}),
 				i(15422, {	-- Frostsaber Leather
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					["crs"] = {
 						7431,	-- Frostsaber
 						7430,	-- Frostsaber Cub

@@ -206,7 +206,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				}),
 			},
 		})),
-		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, "removed 3.0.1" } }, FILTERFUNC_itemID, {
+		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, FILTERFUNC_itemID, {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -1277,31 +1277,31 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					}),
 					filter(RELICS_F, {
 						i(33945, {	-- Gladiator's Idol of Resolve
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33942, {	-- Gladiator's Idol of Steadfastness
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(28355, {	-- Gladiator's Idol of Tenacity
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33936, {	-- Gladiator's Libram of Fortitude
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(28356, {	-- Gladiator's Libram of Justice
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33948, {	-- Gladiator's Libram of Vengeance
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33939, {	-- Gladiator's Totem of Indomitability
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33951, {	-- Gladiator's Totem of Survival
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(28357, {	-- Gladiator's Totem of the Third Wind
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 				}),
@@ -2006,31 +2006,31 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					}),
 					filter(RELICS_F, {
 						i(33946, {	-- Merciless Gladiator's Idol of Resolve
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33943, {	-- Merciless Gladiator's Idol of Steadfastness
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33076, {	-- Merciless Gladiator's Idol of Tenacity
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33937, {	-- Merciless Gladiator's Libram of Fortitude
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33077, {	-- Merciless Gladiator's Libram of Justice
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33949, {	-- Merciless Gladiator's Libram of Vengeance
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33940, {	-- Merciless Gladiator's Totem of Indomitability
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33952, {	-- Merciless Gladiator's Totem of Survival
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33078, {	-- Merciless Gladiator's Totem of the Third Wind
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 				}),
@@ -2724,85 +2724,85 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					filter(NECK_F, {
 						i(33920, {	-- Vindicator's Pendant of Conquest
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33921, {	-- Vindicator's Pendant of Dominance
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						applyclassicphase(TBC_PHASE_FOUR, i(35317, {	-- Vindicator's Pendant of Reprieve
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						i(33922, {	-- Vindicator's Pendant of Salvation
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						applyclassicphase(TBC_PHASE_FOUR, i(35319, {	-- Vindicator's Pendant of Subjugation
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						i(33923, {	-- Vindicator's Pendant of Triumph
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(33853, {	-- Vindicator's Band of Dominance
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33918, {	-- Vindicator's Band of Salvation
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						applyclassicphase(TBC_PHASE_FOUR, i(35320, {	-- Vindicator's Band of Subjugation
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						i(33919, {	-- Vindicator's Band of Triumph
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 					filter(RELICS_F, {
 						i(33947, {	-- Vengeful Gladiator's Idol of Resolve
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33944, {	-- Vengeful Gladiator's Idol of Steadfastness
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33841, {	-- Vengeful Gladiator's Idol of Tenacity
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33938, {	-- Vengeful Gladiator's Libram of Fortitude
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33842, {	-- Vengeful Gladiator's Libram of Justice
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33950, {	-- Vengeful Gladiator's Libram of Vengeance
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33941, {	-- Vengeful Gladiator's Totem of Indomitability
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33953, {	-- Vengeful Gladiator's Totem of Survival
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33843, {	-- Vengeful Gladiator's Totem of the Third Wind
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 					filter(TRINKET_F, {
 						applyclassicphase(TBC_PHASE_FOUR, i(35327, {	-- Battlemaster's Alacrity
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34579, {	-- Battlemaster's Audacity
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34576, {	-- Battlemaster's Cruelty
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34577, {	-- Battlemaster's Depravity
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34578, {	-- Battlemaster's Determination
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34580, {	-- Battlemaster's Perseverance
-							["timeline"] = { ADDED_2_0_3, "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 					}),
 				}),
@@ -2813,7 +2813,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
 		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { ADDED_2_4_3, "removed 3.0.1" },
+			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
 			-- #if BEFORE 4.0.1
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
 			-- #endif

@@ -324,14 +324,14 @@ profession(FIRST_AID, {
 	-- #if AFTER CATA
 	n(VENDORS, {
 		i(16084, {	-- Expert First Aid - Under Wraps
-			["timeline"] = { "removed 3.1.0" },
+			["timeline"] = { REMOVED_3_1_0 },
 			["rank"] = 3,
 		}),
 		i(16112, {	-- Manual: Heavy Silk Bandage
-			["timeline"] = { "removed 3.1.0" },
+			["timeline"] = { REMOVED_3_1_0 },
 		}),
 		i(16113, {	-- Manual: Mageweave Bandage
-			["timeline"] = { "removed 3.1.0" },
+			["timeline"] = { REMOVED_3_1_0 },
 		}),
 	}),
 	-- #endif
@@ -356,23 +356,23 @@ end
 
 -- Classic Recipes
 -- #if AFTER 3.1.0.9767
-itemrecipe(16084, 0, "removed 3.1.0.9767").rank = 3;	-- Expert First Aid - Under Wraps
+itemrecipe(16084, 0, REMOVED_3_1_0).rank = 3;	-- Expert First Aid - Under Wraps
 -- #else
-itemrecipe(16084, 7924, "removed 3.1.0.9767").rank = 3;	-- Expert First Aid - Under Wraps
+itemrecipe(16084, 7924, REMOVED_3_1_0).rank = 3;	-- Expert First Aid - Under Wraps
 -- #endif
-itemrecipe(16112, 7929, "removed 3.1.0.9767");	-- Manual: Heavy Silk Bandage
-itemrecipe(16113, 10840, "removed 3.1.0.9767");	-- Manual: Mageweave Bandage
+itemrecipe(16112, 7929, REMOVED_3_1_0);	-- Manual: Heavy Silk Bandage
+itemrecipe(16113, 10840, REMOVED_3_1_0);	-- Manual: Mageweave Bandage
 itemrecipe(19442, 23787);	-- Formula: Powerful Anti-Venom
 itemrecipe(6454, 7935);	-- Manual: Strong Anti-Venom
 
 -- #if AFTER TBC
 -- TBC Recipes
-itemrecipe(21993, 27033, "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Manual: Heavy Netherweave Bandage
-itemrecipe(21992, 27032, "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Manual: Netherweave Bandage
+itemrecipe(21993, 27033, REMOVED_3_1_0, TBC_PHASE_ONE);	-- Manual: Heavy Netherweave Bandage
+itemrecipe(21992, 27032, REMOVED_3_1_0, TBC_PHASE_ONE);	-- Manual: Netherweave Bandage
 -- #if AFTER 3.1.0.9767
-itemrecipe(22012, 0, "removed 3.1.0.9767", TBC_PHASE_ONE).rank = 5;	-- Master First Aid - Doctor in the House
+itemrecipe(22012, 0, REMOVED_3_1_0, TBC_PHASE_ONE).rank = 5;	-- Master First Aid - Doctor in the House
 -- #else
-local masterFirstAid = itemrecipe(22012, 27029, "removed 3.1.0.9767", TBC_PHASE_ONE);
+local masterFirstAid = itemrecipe(22012, 27029, REMOVED_3_1_0, TBC_PHASE_ONE);
 masterFirstAid.rank = 5;	-- Master First Aid - Doctor in the House
 masterFirstAid.OnUpdate = [[function(t)
 	local skills = _.CurrentCharacter.ActiveSkills[3273];

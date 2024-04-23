@@ -6394,7 +6394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- Crieve NOTE: I haven't confirmed this on Live, so not gonna pop it in until I can check it.
 				n(12805, {	-- Officer Areyn <Accessories Quartermaster>
 					["coord"] = { 73.8, 53.4, STORMWIND_CITY },
-					["timeline"] = { "removed 3.0.1", ADDED_4_0_1, "removed 7.0.1" },
+					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, "removed 7.0.1" },
 					["groups"] = {
 						i(18664),	-- A Treatise on Military Ranks
 						i(15196),	-- Private's Tabard

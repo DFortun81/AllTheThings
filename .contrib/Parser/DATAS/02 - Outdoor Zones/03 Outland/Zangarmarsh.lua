@@ -2144,7 +2144,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 78.0, 66.0, ZANGARMARSH },
 						["groups"] = {
 							i(27532, {	-- Master Fishing - The Art of Angling
-								["timeline"] = { "removed 3.1.0" },
+								["timeline"] = { REMOVED_3_1_0 },
 								["rank"] = 5,
 							}),
 							i(27696),	-- Recipe: Blackened Sporefish (RECIPE!)

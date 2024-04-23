@@ -326,7 +326,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 			-- Between Patch 3.3.3 and 4.2.0 it had no available source.
 			i(34955, {	-- Searing Scorchling (PET!)
-				["timeline"] = { "removed 3.3.3", ADDED_4_2_0 },
+				["timeline"] = { REMOVED_3_3_3, ADDED_4_2_0 },
 			}),
 			-- #endif
 
@@ -399,31 +399,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 
 			-- Original Rewards
 			i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35507, {	-- Amulet of Bitter Hatred [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35509, {	-- Amulet of Glacial Tranquility [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35508, {	-- Choker of the Arctic Flow [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35511, {	-- Hailstone Pendant [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35497, {	-- Cloak of the Frigid Winds [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35496, {	-- Icebound Cloak [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35494, {	-- Shroud of Winter's Chill [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			i(35495, {	-- The Frost Lord's War Cloak [Level 70]
-				["timeline"] = { "removed 3.3.3.11723" },
+				["timeline"] = { REMOVED_3_3_3 },
 			}),
 			HUGE_SNOWBALL,
 		},

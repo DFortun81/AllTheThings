@@ -2461,7 +2461,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(11813, {	-- Formula: Smoking Heart of the Mountain [BOE] (RECIPE!)
-							["timeline"] = { "removed 3.1.0.9658" },
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
 						i(11631),	-- Stoneshell Guard
 						i(11632),	-- Earthslag Shoulders

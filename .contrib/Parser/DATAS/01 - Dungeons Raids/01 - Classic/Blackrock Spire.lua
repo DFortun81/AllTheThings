@@ -1715,7 +1715,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_4_0_3 },
 						})),
 						i(17322, {	-- Eye of the Emberseer
-							["timeline"] = { "removed 3.0.8" },
+							["timeline"] = { REMOVED_3_0_8 },
 						}),
 						i(12929, {	-- Emberfury Talisman
 							["timeline"] = { "removed 6.0.2" },

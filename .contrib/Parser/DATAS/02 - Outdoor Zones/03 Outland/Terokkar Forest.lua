@@ -1099,7 +1099,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10880,	-- Cabal Orders
 						["groups"] = {
 							i(31730, {	-- Heirloom Signet of Convalescence
-								["timeline"] = { "removed 3.2.0" },
+								["timeline"] = { REMOVED_3_2_0 },
 							}),
 							i(31729),	-- Heirloom Signet of Valor
 							i(31728),	-- Heirloom Signet of Willpower

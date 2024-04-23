@@ -7,7 +7,7 @@ local REMOVED_WITH_RERELEASE = {
 	-- #if ANYCLASSIC
 	"removed 10.0.1",	-- Blizzard added it back to Classic Wrath!
 	-- #else
-	"removed 3.2.2",
+	REMOVED_3_2_2,
 	-- #endif
 };
 local REMOVED_WITH_CATA = { "added 1.0.1", REMOVED_4_0_3 };
@@ -167,7 +167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(18406),	-- Onyxia Blood Talisman
 					},
 				})),
-				q(7507, bubbleDown({ ["timeline"] = { "removed 3.3.0" } }, {	-- Nostro's Compendium
+				q(7507, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- Nostro's Compendium
 					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["classes"] = { WARRIOR, PALADIN },
@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(7508, bubbleDown({ ["timeline"] = { "removed 3.3.0" } }, {	-- The Forging of Quel'Serrar
+				q(7508, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
 					["providers"] = {
 						{ "n", 14368 },	-- Lorekeeper Lydros
 						{ "i", 18513 },	-- A Dull and Flat Elven Blade
@@ -258,7 +258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
-				q(7509, bubbleDown({ ["timeline"] = { "removed 3.3.0" } }, {	-- The Forging of Quel'Serrar
+				q(7509, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
 					["maps"] = { DIRE_MAUL },

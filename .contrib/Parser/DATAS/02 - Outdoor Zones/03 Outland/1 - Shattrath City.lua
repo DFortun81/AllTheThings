@@ -837,7 +837,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
 						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 3.0.1" },
+						["timeline"] = { REMOVED_3_0_2 },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 25),
 						-- #if BEFORE WRATH
@@ -1909,7 +1909,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
 							i(25720, {	-- Pattern: Heavy Knothide Leather
-								["timeline"] = { "removed 3.2.0"},
+								["timeline"] = { REMOVED_3_2_0},
 								["requireSkill"] = LEATHERWORKING,
 								["isLimited"] = true,
 								["f"] = RECIPES,
@@ -2195,7 +2195,7 @@ root(ROOTS.Zones, {
 								["cost"] = 24000000,	-- 2,400g
 							}),
 							i(38089, {	-- Ruby Shades
-								["timeline"] = { "removed 3.0.8" },
+								["timeline"] = { REMOVED_3_0_8 },
 								["cost"] = 20000000,	-- 2,000g
 							}),
 							i(38090, {	-- Sapphire Pinky Ring

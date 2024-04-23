@@ -128,7 +128,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(38576, {	-- Big Battle Bear (MOUNT!) BOP
-				["timeline"] = { ADDED_2_4_2, "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_2_4_2, REMOVED_3_2_0 },
 			}),
 			i(49282, {	-- Big Battle Bear (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
@@ -149,7 +149,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(46778, {	-- Magic Rooster Egg (MOUNT!) [BoP]
-				["timeline"] = { ADDED_3_2_0, "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_3_2_0, REMOVED_3_2_0 },
 			}),
 			i(49290, {	-- Magic Rooster Egg (MOUNT!) [BoE]
 				["timeline"] = { ADDED_3_2_0 },
@@ -158,13 +158,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(33224, {	-- Spectral Tiger (MOUNT!) BOP
-				["timeline"] = { ADDED_2_1_3, "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_2_1_3, REMOVED_3_2_0 },
 			}),
 			i(49283, {	-- Spectral Tiger (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(33225, {	-- Swift Spectral Tiger (MOUNT!) BOP
-				["timeline"] = { ADDED_2_1_3, "removed 3.2.0.10147" },
+				["timeline"] = { ADDED_2_1_3, REMOVED_3_2_0 },
 			}),
 			i(49284, {	-- Swift Spectral Tiger (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
@@ -185,13 +185,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_3_3_5 },
 			}),
 			i(35225, {	-- X-51 Nether-Rocket (MOUNT!) BOP
-				["timeline"] = { ADDED_2_4_0, "removed 3.2.0" },
+				["timeline"] = { ADDED_2_4_0, REMOVED_3_2_0 },
 			}),
 			i(49285, {	-- X-51 Nether-Rocket (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOP
-				["timeline"] = { ADDED_2_4_0, "removed 3.2.0" },
+				["timeline"] = { ADDED_2_4_0, REMOVED_3_2_0 },
 			}),
 			i(49286, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOE
 				["timeline"] = { ADDED_3_2_0 },

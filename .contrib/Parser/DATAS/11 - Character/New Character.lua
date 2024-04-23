@@ -946,7 +946,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
 			i(20981, {	-- Neophyte's Mace
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" }
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 }
 			}),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
@@ -1704,7 +1704,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #endif
 			-- #if ANYCLASSIC
 			-- CRIEVE NOTE: This was not available in Wrath Classic.
-			["timeline"] = { "added 1.11.0", "removed 3.0.1" },
+			["timeline"] = { "added 1.11.0", REMOVED_3_0_2 },
 			-- #else
 			["timeline"] = { "added 1.11.0", "removed 7.3.5" },
 			-- #endif

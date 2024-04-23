@@ -662,7 +662,7 @@ root("Achievements", {
 						end
 					end]],
 					-- #else
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
 				}),
 			},
@@ -706,7 +706,7 @@ root("Achievements", {
 						end
 					end]],
 					-- #else
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
 				}),
 			},

@@ -75,7 +75,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(REWARDS, {
 				i(29024, {	-- Eye of the Storm Mark of Honor
-					["timeline"] = { ADDED_2_0_3, "removed 3.3.3" },
+					["timeline"] = { ADDED_2_0_3, REMOVED_3_3_3 },
 				}),
 			}),
 		},

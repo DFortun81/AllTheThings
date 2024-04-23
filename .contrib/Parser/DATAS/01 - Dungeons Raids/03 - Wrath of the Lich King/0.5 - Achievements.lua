@@ -168,7 +168,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 						end
 					end]],
 					-- #else
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
 				}),
 			},
@@ -210,7 +210,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 						end
 					end]],
 					-- #else
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
 				}),
 			},

@@ -272,7 +272,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #endif
 		ach(1293, {	-- Blue Brewfest Stein [Removed]
 			["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
-			["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+			["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 		}),
 		ach(2796, {	-- Brew of the Month
 			["providers"] = {
@@ -677,25 +677,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			-- Burning Crusade
 			i(37597, {	-- Direbrew's Shanker [Level 70]
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(37128, {	-- Balebrew Charm [Level 70]
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(37127, {	-- Brightbrew Charm [Level 70]
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(38289, {	-- Coren's Lucky Coin [Level 70]
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(38290, {	-- Dark Iron Smoking Pipe [Level 70]
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(38288, {	-- Direbrew Hops [Level 70]
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(38287, {	-- Empty Mug of Direbrew [Level 70]
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 			}),
 			i(38280, {	-- Direbrew's Dire Brew (Alliance)
 				["timeline"] = { ADDED_2_0_1 },
@@ -1122,7 +1122,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #if AFTER WRATH
 				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
 				-- #else
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 				-- #endif
 				["maps"] = { DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
@@ -1133,7 +1133,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #if AFTER WRATH
 				["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
 				-- #else
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 				-- #endif
 				["maps"] = { DUROTAR },
 				["races"] = HORDE_ONLY,
@@ -1503,7 +1503,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			q(12062, {	-- Insult Coren Direbrew
 				["qg"] = 26719,	-- Brewfest Spy
 				["sourceQuest"] = 12318,	-- Save Brewfest!
-				["timeline"] = { ADDED_2_4_3, "removed 3.3.3" },
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_3_3 },
 				["maps"] = { BLACKROCK_DEPTHS },
 				["isDaily"] = true,
 				["lvl"] = lvlsquish(65, 65, 10),
@@ -1631,7 +1631,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					{ 46.2, 52.8, DUN_MOROGH },
 					{ 47.9, 26.9, DUROTAR },
 				},
-				["timeline"] = { ADDED_2_4_3, "removed 3.3.3" },
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_3_3 },
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(65, 65, 10),
 			}),
@@ -1642,7 +1642,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 46.4, 40.3, DUN_MOROGH },
 				-- #endif
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1650,7 +1650,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(33016, {	-- Blue Brewfest Stein
-						["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 					}),
 				},
 			}),
@@ -1661,7 +1661,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 46.3, 14.8, DUROTAR },
 				-- #endif
-				["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1669,7 +1669,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = {
 					i(33016, {	-- Blue Brewfest Stein
-						["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 					}),
 				},
 			}),
@@ -1838,7 +1838,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #ENDIF
 	},{
 		-- #if AFTER TRANSMOG
-		i(33016, bubbleDown({ ["timeline"] = { ADDED_2_4_3, "removed 3.0.1" } }, {	-- Blue Brewfest Stein
+		i(33016, bubbleDown({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 } }, {	-- Blue Brewfest Stein
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
 			["lore"] = "This stein was the reward from the 2008 Brewfest.",
 			["groups"] = {
@@ -1852,7 +1852,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #else
 		i(33016, {	-- Blue Brewfest Stein
 			["lore"] = "This stein was the reward from the 2008 Brewfest.",
-			["timeline"] = { ADDED_2_4_3, "removed 3.0.1" },
+			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
 			["groups"] = {
 				i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
 				i(33018),	-- Filled Blue Brewfest Stein [Thunder 45 - Alliance]
@@ -2040,7 +2040,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(37736, {	-- "Brew of the Month" Club Membership Form (original)
-						["timeline"] = { ADDED_2_2_2, "removed 3.0.0" },
+						["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 						["cost"] = BREWFEST_TOKEN_COST(200),
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -2048,7 +2048,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #if AFTER WRATH
 						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
 						-- #else
-						["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+						["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 						-- #endif
 						["cost"] = BREWFEST_TOKEN_COST(600),
 						["races"] = ALLIANCE_ONLY,
@@ -2226,7 +2226,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["races"] = HORDE_ONLY,
 					}),
 					i(37737, {	-- "Brew of the Month" Club Membership Form (original)
-						["timeline"] = { ADDED_2_2_2, "removed 3.0.0" },
+						["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 						["cost"] = BREWFEST_TOKEN_COST(200),
 						["races"] = HORDE_ONLY,
 					}),
@@ -2234,7 +2234,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #if AFTER WRATH
 						["timeline"] = { ADDED_2_0_1, "removed 2.4.3" },
 						-- #else
-						["timeline"] = { ADDED_2_0_1, "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+						["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally removed 2.4.3, actually available in classic!
 						-- #endif
 						["cost"] = BREWFEST_TOKEN_COST(600),
 						["races"] = HORDE_ONLY,

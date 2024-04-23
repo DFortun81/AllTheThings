@@ -543,7 +543,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(REWARDS, {
 				i(20558, {	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 3.3.3" },
+					["timeline"] = { REMOVED_3_3_3 },
 				}),
 			}),
 			n(VENDORS, {

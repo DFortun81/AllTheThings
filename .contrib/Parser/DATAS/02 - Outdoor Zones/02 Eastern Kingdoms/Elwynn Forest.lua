@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["altQuests"] = { 1599 },	-- Beginnings
 							["coord"] = { 49.9, 42.6, ELWYNN_FOREST },
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 3.3.0

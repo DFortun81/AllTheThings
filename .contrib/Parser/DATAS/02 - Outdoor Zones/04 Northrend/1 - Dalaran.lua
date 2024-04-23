@@ -2547,7 +2547,7 @@ root(ROOTS.Zones, {
 					}),
 					q(14160, {	-- Writ of Merit
 						["provider"] = { "i", 47246 },	-- Writ of Merit
-						["timeline"] = { ADDED_3_2_0, "removed 3.2.1" },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
+						["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24588, {	-- XT-002 Deconstructor Must Die!

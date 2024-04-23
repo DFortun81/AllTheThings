@@ -1024,7 +1024,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(REWARDS, {
 				i(20559, {	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 3.3.3" },
+					["timeline"] = { REMOVED_3_3_3 },
 				}),
 				i(185048, {	-- Shoveltusk Soul
 					["description"] = "Available during Brawl: Comp Stomp",

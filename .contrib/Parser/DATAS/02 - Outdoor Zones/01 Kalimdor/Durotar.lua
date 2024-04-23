@@ -1746,7 +1746,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1485, {	-- Vile Familiars (Part 1 - Warlocks only!)
 							["qg"] = 5765,	-- Ruzan
 							["coord"] = { 42.6, 69.0, DUROTAR },
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
 							-- #if BEFORE 3.3.0
@@ -1763,15 +1763,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 5765,	-- Ruzan
 							["sourceQuest"] = 1485,	-- Vile Familiars (Part 1 - Warlocks only!)
 							["coord"] = { 42.6, 69.0, DUROTAR },
-							["timeline"] = { "removed 3.3.0" },
+							["timeline"] = { REMOVED_3_3_0 },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(4925, {	-- Primitive Hand Blade
-									["timeline"] = { "removed 3.3.0" },
+									["timeline"] = { REMOVED_3_3_0 },
 								}),
 								i(5778, {	-- Primitive Walking Stick
-									["timeline"] = { "removed 3.3.0" },
+									["timeline"] = { REMOVED_3_3_0 },
 								}),
 							},
 						}),

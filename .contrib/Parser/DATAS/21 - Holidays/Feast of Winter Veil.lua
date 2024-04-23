@@ -529,7 +529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 			["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
 			-- #if ANYCLASSIC
-			["timeline"] = { "created 2.4.3.8601", "removed 3.3.0.11159" },
+			["timeline"] = { "created 2.4.3.8601", REMOVED_3_3_0 },
 			-- #else
 			["timeline"] = { ADDED_2_4_3 },
 			-- #endif
@@ -1253,7 +1253,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Gift from 2007.",
 			-- #if ANYCLASSIC
-			["timeline"] = { ADDED_2_3_0, "removed 3.0.1" },
+			["timeline"] = { ADDED_2_3_0, REMOVED_3_0_2 },
 			-- #else
 			["timeline"] = { ADDED_2_3_0, "removed 2.4.3.8601" },
 			-- #endif
@@ -1272,7 +1272,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 43504 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2008.",
-			["timeline"] = { ADDED_2_4_3, "removed 3.3.0.11159" },
+			["timeline"] = { ADDED_2_4_3, REMOVED_3_3_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
