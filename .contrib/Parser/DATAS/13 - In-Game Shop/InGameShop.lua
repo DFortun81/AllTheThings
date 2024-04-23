@@ -79,7 +79,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(78924, {	-- Heart of the Aspects (MOUNT!)
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		i(166774, {	-- Hogrus, Swine of Good Fortune (MOUNT!)
 			["timeline"] = { "added 8.1.0.29139" },
@@ -239,7 +239,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_7_3_0 },
 		}),
 		i(78916, {	-- Soul of the Aspects (PET!)
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		i(147900, {	-- Twilight (PET!)
 			["timeline"] = { ADDED_7_3_0 },

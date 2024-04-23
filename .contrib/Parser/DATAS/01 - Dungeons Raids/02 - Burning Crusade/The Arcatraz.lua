@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29675, {	-- Hey There Dalliah
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29674,	-- Unbound Darkness
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Wrath-Scryer Soccothrates slain
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29681, {	-- Maximum Security Breakout
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29675,	-- Hey There Dalliah
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Harbinger Skyriss slain
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29674, {	-- Unbound Darkness
 					["qg"] = 18481,	-- A'dal
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Zereketh the Unbound slain

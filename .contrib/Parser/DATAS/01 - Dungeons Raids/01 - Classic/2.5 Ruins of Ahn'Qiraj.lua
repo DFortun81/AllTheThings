@@ -712,7 +712,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				-- Key (Post 4.3 Only!)
 				applyclassicphase(CATA_PHASE_ONE, i(76401, {	-- Scarab Coffer Key
-					["timeline"] = { "added 4.3.0.15005" },
+					["timeline"] = { ADDED_4_3_0 },
 					["crs"] = {
 						15369,	-- Ayamiss the Hunter
 						15370,	-- Buru the Gorger

@@ -374,7 +374,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		-- #if AFTER 7.0.3
 		n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 			["coord"] = { 33.0, 64.2, NETHERSTORM },
-			["timeline"] = { "added 4.3.0.14890" },
+			["timeline"] = { ADDED_4_3_0 },
 			["groups"] = {
 		-- #endif
 				n(PVP_GLADIATOR, {

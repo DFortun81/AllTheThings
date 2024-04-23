@@ -1345,7 +1345,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
-		cat(707, sharedDataSelf({ ["timeline"] = { "added 4.3.0" } }, {	-- Reagents
+		cat(707, sharedDataSelf({ ["timeline"] = { ADDED_4_3_0 } }, {	-- Reagents
 			r(104698),	-- Maelstrom Shatter
 		})),
 		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, "removed 6.0.2" } }, {	-- Ring Enchantments

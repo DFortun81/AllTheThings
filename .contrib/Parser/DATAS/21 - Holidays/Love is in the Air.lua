@@ -2238,7 +2238,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
 				}),
 				i(72146, {	-- Swift Lovebird (MOUNT!)
-					["timeline"] = { "added 4.3.0.15005" },
+					["timeline"] = { ADDED_4_3_0 },
 					["cost"] = { { "i", LOVE_TOKEN, 270 } },	-- 270x Love Token
 				}),
 				i(49859, {	-- "Bravado" Cologne

@@ -138,7 +138,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
 			-- #endif
-			["timeline"] = { "added 4.3.0" },
+			["timeline"] = { ADDED_4_3_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["maps"] = { ORGRIMMAR, SILVERMOON_CITY, THUNDER_BLUFF, UNDERCITY },
 			["races"] = ALLIANCE_ONLY,
@@ -149,7 +149,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
 			-- #endif
-			["timeline"] = { "added 4.3.0" },
+			["timeline"] = { ADDED_4_3_0 },
 			["sym"] = {{ "achievement_criteria" }},
 			["maps"] = { DARNASSUS, THE_EXODAR, IRONFORGE, STORMWIND_CITY },
 			["races"] = HORDE_ONLY,
@@ -536,15 +536,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		ach(6059, {	-- Red Rider Air Rifle (2009)
 			["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		ach(6060, {	-- MiniZep Controller (2010)
 			["provider"] = { "i", 46709 },	-- MiniZep Controller
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		ach(6061, {	-- Gaudy Winter Veil Sweater (2011)
 			["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { ADDED_4_3_0 },
 		}),
 		ach(7852, {	-- They're Both Footballs? (2012)
 			["providers"] = {
@@ -2060,7 +2060,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["cr"] = 13602,	-- The Abominable Greench
 				}),
 				o(209497, {
-					["timeline"] = { "added 4.3.0.15005" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						i(17662),	-- Stolen Treats
 					},
@@ -2081,7 +2081,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
 				}),
 				i(73792, {	-- Stolen Present
-					["timeline"] = { "added 4.3.0.15005", REMOVED_5_1_0 },
+					["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
 				}),
 				-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
 				-- NOTE: The contents will be slightly delayed after the gift each year rather than their respective "timestamp", so good lord kill me please for the love of god. -Crieve
@@ -2097,7 +2097,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(73797, {	-- Lumpy (PET!)
-							["timeline"] = { "added 4.3.0.15005" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 						i(104317, {	-- Rotten Little Helper (PET!)
 							["timeline"] = { "added 5.4.0.17227" },
@@ -2216,7 +2216,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 							["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
 						}),
 						i(66540, {	-- Miniature Winter Veil Tree (Level 85)
-							["timeline"] = { "added 4.3.0.15050", REMOVED_5_1_0 },
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
 						}),
 						-- Trinkets
 						i(151351, {	-- Glowing Gift

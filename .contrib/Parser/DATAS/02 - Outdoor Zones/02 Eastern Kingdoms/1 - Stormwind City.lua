@@ -4567,10 +4567,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(73838, {	-- Mountain Horse (MOUNT!)
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 						i(73839, {	-- Swift Mountain Horse (MOUNT!)
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -5219,7 +5219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(CATA_PHASE_FOUR, n(56925, {	-- Farrah Facet <Epic Gem Recipes>
 					["coord"] = { 63.8, 61.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.3.0.14849" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						currency(361, {	-- Illustrious Jewelcrafter's Token
@@ -5733,7 +5733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 					["coord"] = { 64.8, 48.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
 				}),
@@ -6937,7 +6937,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 79.0, 70.1, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.3.0.14890" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_ELEVEN_GROUPS,
 				}),

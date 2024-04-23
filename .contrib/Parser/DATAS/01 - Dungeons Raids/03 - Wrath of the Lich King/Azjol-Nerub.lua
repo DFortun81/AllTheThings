@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29807, {	-- Death to the Traitor King
 					["qg"] = 55564,	-- Reclaimer A'zak
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Anub'arak's Broken Husk
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29808, {	-- Don't Forget the Eggs!
 					["qg"] = 55564,	-- Reclaimer A'zak
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/6 Nerubian Scourge Eggs Destroyed
@@ -183,7 +183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29811, {	-- The Gatewatcher's Talisman
 					["qg"] = 55564,	-- Reclaimer A'zak
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 The Gatewatcher's Talisman

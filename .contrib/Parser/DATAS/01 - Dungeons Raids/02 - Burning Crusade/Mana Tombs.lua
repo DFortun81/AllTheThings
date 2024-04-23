@@ -15,7 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29583, {	-- Eckert the Mad
 					["qg"] = 21400,	-- Eckert
 					["coord"] = { 57.6, 53.6, TEROKKAR_FOREST },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 64, 15),
@@ -23,14 +23,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29582, {	-- Grek's Crazy Night
 					["qg"] = 19606,	-- Grek
 					["coord"] = { 49.8, 45.3, TEROKKAR_FOREST },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 64, 15),
 				}),
 				q(29574, {	-- Intriguing Specimens
 					["qg"] = 54694,	-- Mamdy the "Ologist"
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Pandemonius' Essence
@@ -81,7 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29573, {	-- Safety is Job One
 					["qg"] = 54692,	-- Artificer Morphalius
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				})),
 				q(29575, {	-- Undercutting the Competition
 					["qg"] = 54692,	-- Artificer Morphalius
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
@@ -206,7 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						-- #endif
 						i(72126, {	-- Pandemonius' Essence
-							["timeline"] = { "added 4.3.0.14942" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27822),	-- Crystal Band of Valor
 						-- #endif
 						i(72127, {	-- Tavarok's Heart
-							["timeline"] = { "added 4.3.0.14942" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -335,7 +335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							}),
 							-- #endif
 							i(72126, {	-- Pandemonius' Essence
-								["timeline"] = { "added 4.3.0.14942" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),
@@ -361,7 +361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							i(27822),	-- Crystal Band of Valor
 							i(72127, {	-- Tavarok's Heart
-								["timeline"] = { "added 4.3.0.14942" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),

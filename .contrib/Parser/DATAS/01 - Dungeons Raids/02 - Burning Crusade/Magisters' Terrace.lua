@@ -17,7 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			n(QUESTS, {
 				q(29686, {	-- A Radical Notion
 					["qg"] = 55007,	-- Exarch Larethor
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Volatile Essence
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				q(29685, {	-- Hard to Kill
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kael'thas
@@ -65,13 +65,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(29684, {	-- Severed Communications
 					["qg"] = 55007,	-- Exarch Larethor
 					["sourceQuest"] = 11482,	-- Duty Calls
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(11490, {	-- The Scryer's Scryer
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				}),
 				q(29687, {	-- Twisted Associations
 					["qg"] = 55007,	-- Exarch Larethor
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- Selin Fireheart slain
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						i(34704),	-- Band of Arcane Alacrity
 						i(34706),	-- Band of Determination
 						i(73084, {	-- Volatile Essence
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 							i(34704),	-- Band of Arcane Alacrity
 							i(34706),	-- Band of Determination
 							i(73084, {	-- Volatile Essence
-								["timeline"] = { "added 4.3.0.14732" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),

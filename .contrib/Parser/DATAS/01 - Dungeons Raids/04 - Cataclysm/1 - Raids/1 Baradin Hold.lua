@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					h(i(60807)),	-- Vicious Gladiator's Medallion of Tenacity (Horde)
 				},
 			})),
-			applyclassicphase(CATA_PHASE_FOUR, e(339, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Alizabal, Mistress of Hate
+			applyclassicphase(CATA_PHASE_FOUR, e(339, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Alizabal, Mistress of Hate
 				["creatureID"] = 55869,
 				["groups"] = {
 					ach(6108),	-- Alizabal

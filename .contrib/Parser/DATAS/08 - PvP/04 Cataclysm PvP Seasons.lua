@@ -4433,7 +4433,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(73500)),	-- Cataclysmic Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, "removed 5.0.0" }, }, {
 				-- Original Sources are: Unknown. Presumably:
 				-- n00000 (7 different ID's exist) Captain Dirgehammer in Stormwind (Alliance)
 				-- n00000 (7 different ID's exist) Sergeant Thunderhorn in Orgrimmar (Horde)

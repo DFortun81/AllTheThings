@@ -1961,7 +1961,7 @@ GLYPH_OF_SHACKLE_UNDEAD = r(58320, {	-- Glyph of Shackle Undead
 });
 GLYPH_OF_SHADOW = r(107907, {	-- Glyph of Shadow
 	["name"] = "Glyph of Shadow (2.0)",
-	["timeline"] = { "added 4.3.0" },
+	["timeline"] = { ADDED_4_3_0 },
 });
 GLYPH_OF_SHADOW_AND_POWER_WORD_BARRIER_AND_INNER_FOCUS_AND_WEAKENED_SOUL = r(57193, {	-- Glyph of Mind Soothe / Glyph of Shadow [3.3.0+] / Glyph of Power Word: Barrier [CATA+] / Glyph of Inner Focus [5.0.4+] / Glyph of Weakened Soul [5.2.0+]
 	-- #if AFTER 5.2.0

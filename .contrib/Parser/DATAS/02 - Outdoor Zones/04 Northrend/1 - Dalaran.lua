@@ -921,7 +921,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 7.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},},	-- Cataclysmic Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.3.0", "removed 7.0.1" },
+								["timeline"] = { ADDED_4_3_0, "removed 7.0.1" },
 							})),
 							applyclassicphase(CATA_PHASE_THREE, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -1050,7 +1050,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.2.0.16577
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.3.0", REMOVED_5_2_0 },
+								["timeline"] = { ADDED_4_3_0, REMOVED_5_2_0 },
 							})),
 							applyclassicphase(CATA_PHASE_THREE, n(52534, {	-- Zom Bocom <Honor Quartermaster>
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
@@ -1490,7 +1490,7 @@ root(ROOTS.Zones, {
 							{ 59.7, 63.2, HOWLING_FJORD },	-- Pricilla Winterwind
 							{ 58.9, 68.2, BOREAN_TUNDRA },	-- Tomas Riverwell
 						},
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
@@ -1666,7 +1666,7 @@ root(ROOTS.Zones, {
 							{ 79.0, 29.7, HOWLING_FJORD },	-- Adeline Chambers
 							{ 40.3, 51.3, BOREAN_TUNDRA },	-- Turida Coldwind
 						},
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24587, {	-- Ignis the Furnace Master Must Die!

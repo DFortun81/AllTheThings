@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(30112,{	-- A Score to Settle
 					["qg"] = 24137,	-- Dark Ranger Marrah
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 10),
 					["groups"] = {
@@ -185,7 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29764, {	-- Disarmament
 					["qg"] = 24111,	-- Defender Mordun
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 10),
 					["groups"] = {
@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29803, {	-- Ears of the Lich King
 					["qg"] = 24111,	-- Defender Mordun
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
@@ -266,7 +266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29763, {	-- Stealing Their Thunder
 					["qg"] = 24111,	-- Defender Mordun
 					["sourceQuest"] = 11251,	-- Fresh Legs
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {

@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29605, {	-- Brother Against Brother
 					["qg"] = 54840,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- Free Lakka
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29607, {	-- Eyes of Desire
 					["qg"] = 54847,	-- Dealer Vijaad
 					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- 0/3 Cobalt Eye
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29606, {	-- Terokk's Legacy
 					["qg"] = 54840,	-- Isfar
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Terokk's Mask
@@ -168,7 +168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(ZONE_DROPS, {
 				i(72480, {	-- Cobalt Eye
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["cr"] = 19428,	-- Cobalt Serpent
 				}),
 				i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)

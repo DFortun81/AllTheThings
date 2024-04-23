@@ -211,11 +211,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, "removed 4.2.2" } }, {
 		ach(5512),	-- 6th Anniversary
 	})),
-	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { "added 4.2.2", "removed 4.3" } }, {
+	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_2, "removed 4.3" } }, {
 		ach(5863),	-- 7th Anniversary
 		i(71134),	-- Celebration Package
 	})),
-	n(WOW_ANNIVERSARY_EIGHT, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", REMOVED_5_1_0 } }, {
+	n(WOW_ANNIVERSARY_EIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 } }, {
 		ach(6131),	-- 8th Anniversary
 		i(71134),	-- Celebration Package
 	})),

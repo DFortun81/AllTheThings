@@ -3818,7 +3818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(78343, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
-					["timeline"] = { "added 4.3.0" },
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(11151, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
 					["timeline"] = { "removed 4.3.0", "deleted 7.0.1" },	-- Replaced by BOP Version

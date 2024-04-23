@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29529, {	-- Demons in the Citadel [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29530, {	-- Demons in the Citadel [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29594, {	-- Hitting Them Where It Hurts [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29593, {	-- Hitting Them Where It Hurts [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -73,20 +73,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29543, {	-- Invading the Citadel [Alliance]
 					["qg"] = 19309,	-- Sergeant Altumus
 					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29542, {	-- Invading the Citadel [Horde]
 					["qg"] = 19256,	-- Sergeant Shatterskull
 					["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29528, {	-- War on the Ramparts [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29527, {	-- War on the Ramparts [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {

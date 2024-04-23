@@ -2734,7 +2734,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.2, 78.8, FERALAS },
 						{ 48.6, 79.0, FERALAS },
 					},
-					["timeline"] = { "added 4.3.0.15050" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						i(21024),	-- Chimaerok Tenderloin
 					},

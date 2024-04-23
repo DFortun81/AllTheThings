@@ -53,10 +53,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(79744, {	-- Eye of the Legion (PET!)
-				["timeline"] = { "added 4.3.2.15211" },
+				["timeline"] = { ADDED_4_3_2 },
 			}),
 			i(72134, {	-- Gregarious Grell (PET!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(93669, {	-- Gusting Grimoire (PET!)
 				["timeline"] = { ADDED_5_2_0 },
@@ -74,13 +74,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(71624, {	-- Purple Puffer (PET!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(34492, {	-- Rocket Chicken (PET!)
 				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(72153, {	-- Sand Scarab (PET!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(38050, {	-- Ethereal Soul-Trader (PET!)
 				["timeline"] = { ADDED_2_4_2 },
@@ -137,13 +137,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_3_3_3, "removed 4.3.0.15005" },
 			}),
 			i(74269, {	-- Blazing Hippogryph (MOUNT!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(72582, {	-- Corrupted Hippogryph (MOUNT!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(79771, {	-- Feldrake (MOUNT!)
-				["timeline"] = { "added 4.3.2.15211" },
+				["timeline"] = { ADDED_4_3_2 },
 			}),
 			i(93671, {	-- Ghastly Charger (MOUNT!)
 				["timeline"] = { ADDED_5_2_0 },
@@ -176,10 +176,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_4_1_0 },
 			}),
 			i(71718, {	-- Swift Shorestrider (MOUNT!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(72575, {	-- White Riding Camel (MOUNT!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(54068, {	-- Wooly White Rhino (MOUNT!)
 				["timeline"] = { ADDED_3_3_5 },
@@ -244,7 +244,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(79769, {	-- Demon Hunter's Aspect (TOY!)
-				["timeline"] = { "added 4.3.2.15211" },
+				["timeline"] = { ADDED_4_3_2 },
 			}),
 			i(38301, {	-- D.I.S.C.O. (TOY!)
 				["model"] = 201182,
@@ -298,7 +298,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_3_3_3 },
 			}),
 			i(72159, {	-- Magical Ogre Idol (TOY!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(46780, {	-- Ogre Pinata (TOY!)
 				["model"] = 306851,	-- Candypile = 306864
@@ -318,10 +318,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_1_0 },
 			}),
 			i(71628, {	-- Sack of Starfish (TOY!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(72161, {	-- Spurious Sarcophagus (TOY!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 			i(38578, {	-- The Flag of Ownership (TOY!)
 				["model"] = 200314,

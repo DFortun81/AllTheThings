@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(29564, {	-- A Brother Betrayed
 					["qg"] = 54668,	-- Nahuud
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- Mennu the Betrayer slain
@@ -25,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29566, {	-- Checking Up
 					["qg"] = 17841,	-- Ysiel Windsinger
 					["coord"] = { 78.4, 62.0, ZANGARMARSH },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(62, 62, 10),
 				}),
 				q(9876,  {	-- Failed Incursion
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29563, {	-- Lost in Action
 					["qg"] = 54667,	-- Watcher Jhang
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- Naturalist Bite Discovered
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				-- #endif
 				q(29565, {	-- The Heart of the Matter
 					["qg"] = 54667,	-- Watcher Jhang
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"]= {
 						objective(1, {	-- 0/1 The Invader's Claw
 							["provider"] = { "i", 72118 },	-- The Invader's Claw
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						i(24376),	-- Runed Fungalcap
 						i(72118, {	-- The Invader's Claw
-							["timeline"] = { "added 4.3.0.14942" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27683),	-- Quagmirran's Eye
 						-- #endif
 						i(72119, {	-- The Slave Master's Eye
-							["timeline"] = { "added 4.3.0.14942" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -318,7 +318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(24376),	-- Runed Fungalcap
 							-- #endif
 							i(72118, {	-- The Invader's Claw
-								["timeline"] = { "added 4.3.0.14942" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),
@@ -363,7 +363,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33821),	-- The Heart of Quagmirran
 							i(72119, {	-- The Slave Master's Eye
-								["timeline"] = { "added 4.3.0.14942" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),

@@ -197,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29864, {	-- Working at the Source, No actual awards.
 					["qg"] = 56072,	-- Image of Argent Confessor Paletress
-					["timeline"] = { "added 4.3.0" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(78, 78, 20),
 				}),
 			}),

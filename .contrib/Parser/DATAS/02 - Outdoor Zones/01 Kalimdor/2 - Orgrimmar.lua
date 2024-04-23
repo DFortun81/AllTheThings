@@ -2448,7 +2448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(54659, {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
 					["coord"] = { 38.2, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 4.3.0.15050" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
@@ -2632,7 +2632,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(54657, {	-- Doris Volanthius <Vicious Gladiator>
 					["coord"] = { 38.8, 69.8, ORGRIMMAR },
-					["timeline"] = { "added 4.3.0.15050" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },
@@ -4368,7 +4368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(58155, {	-- Rugok <Legacy Justice Quartermaster>
 					["coord"] = { 48.2, 71.6, ORGRIMMAR },
-					["timeline"] = { "added 4.3.0.14890" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_ELEVEN_GROUPS,
 				}),
@@ -4822,7 +4822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(CATA_PHASE_FOUR, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, ORGRIMMAR },
-					["timeline"] = { "added 4.3.0.14849" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						currency(361, {	-- Illustrious Jewelcrafter's Token

@@ -47,13 +47,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 19698,	-- Greatfather Aldrimus
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
 					["coord"] = { 35.0, 65.2, TEROKKAR_FOREST },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 64, 15),
 				}),
 				q(29591, {	-- Raging Spirits
 					["qg"] = 54698,	-- Tormented Soulpriest
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- 0/5 Angered Skeleton slain
@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29590, {	-- The Dead Watcher
 					["qg"] = 54725,	-- Draenei Spirit
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- Shirrak the Dead Watcher slain
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29596, {	-- The End of the Exarch
 					["qg"] = 54725,	-- Draenei Spirit
 					["sourceQuest"] = 29595,	-- Everything Will Be Alright
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain

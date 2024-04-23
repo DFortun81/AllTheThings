@@ -1307,8 +1307,8 @@ root(ROOTS.Zones, {
 					n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
-						["timeline"] = { "added 4.3.0.14890" },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["timeline"] = { ADDED_4_3_0 },
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							a(i(77549)),	-- Replica Grand Marshal's Demolisher
 							a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 							a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -1412,7 +1412,7 @@ root(ROOTS.Zones, {
 								["isLimited"] = true,
 							}),
 							i(78348, {	-- Formula: Enchant Weapon - Executioner (RECIPE!)
-								["timeline"] = { "added 4.3.0" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 							i(29371, {	-- Nexus-Claw
 								["isLimited"] = true,
@@ -1451,7 +1451,7 @@ root(ROOTS.Zones, {
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						["timeline"] = { ADDED_4_0_3 },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 							i(77692),	-- Replica Field Marshal's Satin Mantle
 							i(77710),	-- Replica Field Marshal's Coronal
@@ -1673,7 +1673,7 @@ root(ROOTS.Zones, {
 								28378,	-- Sergeant's Heavy Cape (H)
 							},
 						},
-						["timeline"] = { "added 4.3.0.14890" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(33940, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S8 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
@@ -1713,10 +1713,10 @@ root(ROOTS.Zones, {
 						-- #if BEFORE WRATH
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },{"pop"}},	-- Gladiator's Set
 						-- #endif
-						["timeline"] = { "removed 3.0.1", "added 4.3.0.15005" },
+						["timeline"] = { "removed 3.0.1", ADDED_4_3_0 },
 						-- #if AFTER 4.3.0.15005
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77718),	-- Replica Field Marshal's Plate Shoulderguards
 							i(77673),	-- Replica Field Marshal's Chain Spaulders
 							i(77714),	-- Replica Field Marshal's Plate Armor
@@ -1808,8 +1808,8 @@ root(ROOTS.Zones, {
 					n(54648, {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						["timeline"] = { "added 4.3.0.14890" },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["timeline"] = { ADDED_4_3_0 },
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77897),	-- Replica Warlord's Lamellar Pauldrons
 							i(77880),	-- Replica Warlord's Chain Shoulders
 							i(77923),	-- Replica Warlord's Plate Shoulders
@@ -1923,8 +1923,8 @@ root(ROOTS.Zones, {
 					n(58152, {	-- Tini Smalls <Classic Horde Cloth & Leather>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["timeline"] = { "added 4.3.0.14890" },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["timeline"] = { ADDED_4_3_0 },
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77900),	-- Replica Warlord's Satin Cowl
 							i(77874),	-- Replica Warlord's Dragonhide Helmet
 							i(77919),	-- Replica Warlord's Dreadweave Robe

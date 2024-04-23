@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(29655, {	-- A Very Special Cloth
 					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -31,14 +31,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29689, {	-- Advancing the Campaign [Alliance]
 					["qg"] = 16819,	-- Force Commander Danath Trollbane
 					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 				}),
 				q(29688, {	-- Advancing the Campaign [Horde]
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 				}),
@@ -79,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29650, {	-- Fel Ember
 					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -140,7 +140,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29651, {	-- Honor the Dying
 					["qg"] = 54932,	-- Caza'rez
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -185,7 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				})),
 				q(29649, {	-- How to Save a Life
 					["qg"] = 54933,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -215,7 +215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				})),
 				q(29656, {	-- O'mrogg's Warcloth
 					["qg"] = 54933,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29652, {	-- One Last Favor
 					["qg"] = 54934,	-- Gunny
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -330,7 +330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29653, {	-- The Will of the Warchief
 					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -374,7 +374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29654, {	-- Turning the Tide
 					["qg"] = 54933,	-- Advance Scout Chadwick
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
@@ -437,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
 						-- #endif
 						i(72597, {	-- O'mrogg's Warcloth
-							["timeline"] = { "added 4.3.0.14732" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 						i(30829),	-- Tear of the Earthmother
 					},
@@ -569,7 +569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
 							-- #endif
 							i(72597, {	-- O'mrogg's Warcloth
-								["timeline"] = { "added 4.3.0.14732" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 							i(30829),	-- Tear of the Earthmother
 						},

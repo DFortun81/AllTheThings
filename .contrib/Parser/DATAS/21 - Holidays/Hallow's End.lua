@@ -4862,25 +4862,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	n(VENDORS, {
 		n(53757, {	-- Chub <Candy & Toy Vendor>
 			["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.2.2.14545" },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = CANDY_AND_TOY_VENDOR_GROUPS,
 		}),
 		n(53756, {	-- Darla <Wand Vendor>
 			["coord"] = { 62.2, 66.4, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.2.2.14545" },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = WANDS_WITH_COST,
 		}),
 		n(53728, {	-- Dorothy <Candy & Toy Vendor>
 			["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
-			["timeline"] = { "added 4.2.2.14545" },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = CANDY_AND_TOY_VENDOR_GROUPS,
 		}),
 		n(53760, {	-- Farina <Mask Vendor>
 			["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
-			["timeline"] = { "added 4.2.2.14545" },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = MASKS_WITH_COST,
 		}),
@@ -4937,13 +4937,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		})),
 		n(52497, {	-- Spanky <Mask Vendor>
 			["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
-			["timeline"] = { "added 4.2.2.14545" },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = MASKS_WITH_COST,
 		}),
 		n(53702, {	-- Stymie <Wand Vendor>
 			["coord"] = { 31.9, 50.1, ELWYNN_FOREST },
-			["timeline"] = { "added 4.2.2.14545" },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = WANDS_WITH_COST,
 		}),

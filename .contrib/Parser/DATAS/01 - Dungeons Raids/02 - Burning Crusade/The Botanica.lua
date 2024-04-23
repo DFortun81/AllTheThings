@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(29669, {	-- A Most Somber Task
 					["sourceQuest"] = 29667,	-- Culling the Herd
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Warp Splinter slain
@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29667, {	-- Culling the Herd
 					["sourceQuest"] = 29660,	-- Saving the Botanica
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Mutate Fleshlasher slain
@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29660, {	-- Saving the Botanica
 					["description"] = "Automatically provided upon starting the instance.",
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Commander Sarannis slain
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28349),	-- Tidefury Helm (7.3.5 - Moved from Warp Splinter)
 						-- #endif
 						i(72706, {	-- Rapidly Evolving Frond
-							["timeline"] = { "added 4.3.0.14942" },
+							["timeline"] = { ADDED_4_3_0 },
 						}),
 					},
 				}),
@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28349),	-- Tidefury Helm (7.3.5 - Moved from Warp Splinter)
 							-- #endif
 							i(72706, {	-- Rapidly Evolving Frond
-								["timeline"] = { "added 4.3.0.14942" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 						},
 					}),

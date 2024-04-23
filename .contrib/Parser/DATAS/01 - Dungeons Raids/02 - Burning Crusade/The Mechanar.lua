@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29659, {	-- Lost Treasure
 					["description"] = "Automatically provided after killing either Gatewatcher.",
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Blinding Fury
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29658, {	-- The Calculator
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Pathaleon the Calculator slain
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
 					["description"] = "Automatically provided upon starting the instance.",
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Mechano-Lord Capacitus slain
@@ -97,7 +97,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					}),
 					-- #endif
 					i(72663, {	-- Blinding Fury
-						["timeline"] = { "added 4.3.0.14942" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 				},
 			}),

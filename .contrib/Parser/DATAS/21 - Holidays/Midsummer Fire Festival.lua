@@ -185,7 +185,7 @@ local MERCHANT_GROUPS = {
 	}),
 	i(74278, {	-- Helm of the Fire Festival
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 	}),
 	i(188699, {	-- Insulated Dancing Insoles (TOY!)
 		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
@@ -484,7 +484,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6007, {	-- Extinguishing Northrend (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1030, {	-- Extinguishing Outland (A)
@@ -496,7 +496,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6013, {	-- Extinguishing the Cataclysm (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11278, {	-- Extinguishing the Broken Isles (A)
@@ -509,7 +509,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 
 			ach(6011, {	-- Flame Warden of Cataclysm (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11283, {	-- Flame Warden of Draenor (A)
@@ -529,7 +529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6008, {	-- Flame Warden of Northrend (A)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1024, {	-- Flame Warden of Outland (A)
@@ -607,7 +607,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6010, {	-- Extinguishing Northrend (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1033, {	-- Extinguishing Outland (H)
@@ -623,12 +623,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6014, {	-- Extinguishing the Cataclysm (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 
 			ach(6012, {	-- Flame Keeper of Cataclysm (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(11284, {	-- Flame Keeper of Draenor (H)
@@ -644,7 +644,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6009, {	-- Flame Keeper of Northrend (H)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1027, {	-- Flame Keeper of Outland (H)

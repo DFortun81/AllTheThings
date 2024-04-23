@@ -259,7 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			n(QUESTS, {
 				q(29851, {	-- Champion of the Tournament
 					["qg"] = 34996,	-- Highlord Tirion Fordring
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 			}),
 			-- #endif

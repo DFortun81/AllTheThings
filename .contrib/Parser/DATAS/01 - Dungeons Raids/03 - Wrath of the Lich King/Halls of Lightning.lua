@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(QUESTS, {
 				q(29862, {	-- Clearing the Way
 					["qg"] = 56027,	-- Stormherald Eljrrin
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/3 Stormforged Mender slain
@@ -186,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29860, {	-- Diametrically Opposed
 					["qg"] = 56027,	-- Stormherald Eljrrin
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Volkhan Defeated
@@ -203,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 30105,	-- King Jokkum
 					["sourceQuest"] = 13047,	-- The Reckoning
 					["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
 				}),
 				q(13108, {	-- Whatever it Takes!
@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29861, {	-- Whatever it Takes!
 					["qg"] = 56027,	-- Stormherald Eljrrin
 					["sourceQuest"] = 29863,	-- Stormherald Eljrrin
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Loken's Tongue

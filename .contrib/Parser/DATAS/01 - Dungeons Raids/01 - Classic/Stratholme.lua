@@ -998,7 +998,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
 						i(74274, {	-- Plans: Phantom Blade (RECIPE!)
-							["timeline"] = { "added 4.3.0.15005" },
+							["timeline"] = { ADDED_4_3_0 },
 							["crs"] = {
 								10463,	-- Shrieking Banshee
 								10464,	-- Wailing Banshee
