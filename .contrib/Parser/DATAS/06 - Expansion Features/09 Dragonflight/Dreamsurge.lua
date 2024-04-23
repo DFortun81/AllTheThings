@@ -162,7 +162,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		}),
-		n(VENDORS, {
+		n(VENDORS, bubbleDown({
+			["timeline"] = { ADDED_10_1_5, REMOVED_10_2_6_SEASON_FOUR },	-- Blizzard currently broke these
+		},{
 			n(210608, {	-- Celestine of the Harvest
 				["coords"] = {
 					{ 51.1, 43.4, THALDRASZUS },
@@ -367,7 +369,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					i(209831),	-- Wyrm's Bountiful Chest
 				}),
 			}),
-		}),
+		})),
 	})),
 })));
 

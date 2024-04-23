@@ -8,10 +8,11 @@ TIME_RIFTS = createHeader({
 		en = [[~GetSpellInfo(408633)]],
 	},
 });
+local DILATED_TIME_CAPSULE
 -- #if BEFORE 10.2.0
-local DILATED_TIME_CAPSULE = 207030;
+DILATED_TIME_CAPSULE = 207030;
 -- #else
-local DILATED_TIME_CAPSULE = 209856;
+DILATED_TIME_CAPSULE = 209856;
 -- #endif
 local AZQROTH = 2201;
 local AZEWRATH = 2202;
@@ -233,7 +234,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(207030, {	-- Dilated Time Capsule (10.1.5)
 							["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
 						}),
-						i(DILATED_TIME_CAPSULE),
+						i(209856, {	-- Dilated Time Capsule (10.2)
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+						}),
+						i(224298, {	-- Dilated Eon Canister (DF:S4)
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+						}),
 						-- Both drops from any boss
 						i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
 						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
@@ -389,7 +395,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["g"] = {
 							i(208090, {	-- Contained Paracausality
-								i(DILATED_TIME_CAPSULE),
+								i(207030, {	-- Dilated Time Capsule (10.1.5)
+									["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+								}),
+								i(209856, {	-- Dilated Time Capsule (10.2)
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+								}),
+								i(224298, {	-- Dilated Eon Canister (DF:S4)	-- unconfirmed from this, but likely
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+								}),
 								i(207002),	-- Encapsulated Destiny
 								i(207027),	-- Greater Encapsulated Destiny
 								i(208951, {	-- Paracausal Cluster
@@ -444,7 +458,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 				}),
-				n(VENDORS, {
+				n(VENDORS, bubbleDown({
+					["timeline"] = { ADDED_10_1_5, REMOVED_10_2_6_SEASON_FOUR },	-- Blizzard currently broke these
+				},{
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = {
@@ -614,7 +630,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					n(208548, {	-- Shi Everbreeze
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = bubbleDownFiltered({
+							-- #IF BEFORE 10.2.6
 							["cost"] = {{ "i", DILATED_TIME_CAPSULE, 1 }},
+							-- #ENDIF
 						},FILTERFUNC_itemID,{
 							filter(CLOTH, {
 								i(207602),	-- Anachronistic Bindings
@@ -1084,7 +1102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							})),
 						},
 					}),
-				}),
+				})),
 			},
 		})),
 	}),
