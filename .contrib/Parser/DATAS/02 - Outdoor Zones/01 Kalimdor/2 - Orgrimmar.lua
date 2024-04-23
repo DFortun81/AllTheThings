@@ -2840,7 +2840,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52036, {	-- Galra <Honor Heirlooms>
 					["coord"] = { 38.0, 70.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
@@ -4358,7 +4358,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
 					["coord"] = { 37.8, 71.6, ORGRIMMAR },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR },

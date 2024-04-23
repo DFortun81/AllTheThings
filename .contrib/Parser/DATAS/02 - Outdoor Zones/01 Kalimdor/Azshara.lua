@@ -2252,7 +2252,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						i(68806, {	-- Kalytha's Haunted Locket Toy (TOY!)
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["cost"] = 50000000,	-- 5k
 						}),
 					},

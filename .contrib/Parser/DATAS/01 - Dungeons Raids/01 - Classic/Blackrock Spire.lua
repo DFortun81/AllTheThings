@@ -1504,7 +1504,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 10596,	-- Mother Smolderweb
 				["groups"] = {
 					i(68673, {	-- Smolderthorn Hatchling (PET!)
-						["timeline"] = { "added 4.0.6.13596" },
+						["timeline"] = { ADDED_4_0_6 },
 					}),
 					i(13183),	-- Venomspitter
 					i(151414, {	-- Arcanophile's Greatcloak

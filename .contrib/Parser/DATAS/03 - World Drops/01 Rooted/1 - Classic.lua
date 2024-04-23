@@ -104,25 +104,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4689),	-- Hunting Cloak
 		i(9890),	-- Huntsman's Cape
 		i(68762, {	-- Imbued Cadet Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68748, {	-- Imbued Disciple's Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68759, {	-- Imbued Gypsy Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68743, {	-- Imbued Infantry Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68744, {	-- Imbued Pioneer Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68746, {	-- Imbued Primal Cape
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68756, {	-- Imbued Simple Cape
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(15661),	-- Impenetrable Cloak
 		i(6432),	-- Imperial Cloak
@@ -609,16 +609,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3798),	-- Interlaced Shoulderpads
 		i(3799),	-- Interlaced Vest
 		i(68754, {	-- Imbued Disciple's Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68749, {	-- Imbued Disciple's Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68755, {	-- Imbued Disciple's Gloves
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68747, {	-- Imbued Disciple's Sash
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(8246),	-- Imperial Red Boots
 		i(8247),	-- Imperial Red Bracers
@@ -1146,19 +1146,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9893),	-- Huntsman's Leggings
 		i(9894),	-- Huntsman's Shoulders
 		i(68750, {	-- Imbued Pioneer Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68758, {	-- Imbued Pioneer Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68751, {	-- Imbued Pioneer Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68757, {	-- Imbued Pioneer Gloves
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68745, {	-- Imbued Primal Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(4738),	-- Imperial Leather Belt
 		i(6431),	-- Imperial Leather Boots
@@ -1821,16 +1821,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14749),	-- Hulking Spaulders
 		i(1981),	-- Icemail Jerkin
 		i(68752, {	-- Imbued Infantry Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68761, {	-- Imbued Infantry Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68753, {	-- Imbued Infantry Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68760, {	-- Imbued Infantry Gauntlets
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(15663),	-- Impenetrable Belt
 		i(15659),	-- Impenetrable Bindings

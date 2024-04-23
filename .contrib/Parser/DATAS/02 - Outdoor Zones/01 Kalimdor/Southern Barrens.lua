@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(77, {	-- Vendetta Point, Southern Barrens
 					["cr"] = 52060,	-- Lognah <Wind Rider Master>
 					["coord"] = { 41.6, 47.6, SOUTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

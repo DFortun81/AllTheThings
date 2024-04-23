@@ -1768,13 +1768,13 @@ root(ROOTS.Zones, {
 					})),
 					q(29073, {	-- Make Haste to Orgrimmar!
 						["provider"] = { "o", 208317 },	-- Warchief's Command Board
-						["timeline"] = { "added 4.0.6.13596", "removed 6.2.0" },
+						["timeline"] = { ADDED_4_0_6, "removed 6.2.0" },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(29071, {	-- Make Haste to Stormwind!
 						["provider"] = { "o", 208316 },	-- Hero's Call Board
-						["timeline"] = { "added 4.0.6.13596", "removed 6.2.0" },
+						["timeline"] = { ADDED_4_0_6, "removed 6.2.0" },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),

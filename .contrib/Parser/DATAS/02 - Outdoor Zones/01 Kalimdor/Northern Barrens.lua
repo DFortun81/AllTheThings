@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 34674,	-- Brak Blusterpipe
 					["sourceQuest"] = 14004,	-- Return to Samophlanger
 					["coord"] = { 62.6, 17.0, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59570, {	-- Bargain Gloves
@@ -2145,7 +2145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 3922 },	-- Nugget Slugs [Pre-4.0]
 					["sourceQuest"] = 29026,	-- Wenikee Boltbucket
 					["coord"] = { 44.3, 24.8, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3922, {	-- Nugget Slugs
@@ -2389,7 +2389,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3442,	-- Sputtervalve
 					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 					["coord"] = { 62.3, 17.4, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29022, {	-- Samophlange (2/4)
@@ -2397,7 +2397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 					["sourceQuest"] = 29021,	-- Samophlange (1/4)
 					["coord"] = { 50.3, 25.6, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29023, {	-- Samophlange (3/4)
@@ -2405,7 +2405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 					["sourceQuest"] = 29022,	-- Samophlange (2/4)
 					["coord"] = { 50.3, 25.6, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29024, {	-- Samophlange (4/4)
@@ -2413,7 +2413,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 902 },	-- Samophlange [Pre-4.0]
 					["sourceQuest"] = 29023,	-- Samophlange (3/4)
 					["coord"] = { 50.3, 25.6, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(59568, {	-- Painstakingly Crafted Belt
@@ -3617,7 +3617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 3921 },	-- Wenikee Boltbucket [Pre-4.0]
 					["sourceQuest"] = 14003,	-- Samophlange Repair
 					["coord"] = { 62.6, 16.9, NORTHERN_BARRENS },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3921, {	-- Wenikee Boltbucket

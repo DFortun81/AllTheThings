@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/6 Blackrock Worg slain
@@ -690,7 +690,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/4 Injured Soldier Revived
@@ -868,7 +868,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(28789, {	-- Join the Battle!
@@ -1110,7 +1110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/8 Blackrock Spy slain
@@ -1644,7 +1644,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(1598, {	-- The Stolen Tome
@@ -1826,7 +1826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								objective(1, {	-- 0/8 Goblin Assassin slain

@@ -5146,7 +5146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(52029, {	-- Edlan Halsing <Bloodthirsty Gladiator> [LEGION+] / Edlan Halsing <Honor Trade Goods>
 					["coord"] = { 74.7, 68.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 7.0.3
 					["sym"] = {
@@ -6080,7 +6080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(52030, {	-- Liliana Emberfrost <Honor Heirlooms>
 					["coord"] = { 74.4, 67.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.0.6.13596" },
+					["timeline"] = { ADDED_4_0_6 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
@@ -6307,13 +6307,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_0_8, "removed 7.0.1" },
 						}),
 						moh(3, i(68772, {	-- Greater Inscription of Vicious Intellect
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 						})),
 						moh(3, i(68773, {	-- Greater Inscription of Vicious Strength
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 						})),
 						moh(3, i(68774, {	-- Greater Inscription of Vicious Agility
-							["timeline"] = { "added 4.0.6.13596" },
+							["timeline"] = { ADDED_4_0_6 },
 						})),
 						moh(1, i(15198)),	-- Knight's Colors
 						-- #if AFTER TBC

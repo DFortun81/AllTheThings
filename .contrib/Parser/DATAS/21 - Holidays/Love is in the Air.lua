@@ -788,7 +788,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { "added 4.0.6.13596", "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_4_0_6, "removed 7.1.5.23194" },
 			["maps"] = { ULDUM },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 81,
@@ -982,7 +982,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { "added 4.0.6.13596", "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_4_0_6, "removed 7.1.5.23194" },
 			["maps"] = { ULDUM },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 81,
