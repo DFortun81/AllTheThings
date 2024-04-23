@@ -28,6 +28,7 @@ local function distance( x1, y1, x2, y2 )
 end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
+	app.RealMapID = originalMapID
 	if originalMapID then
 		local remap = app.MapRemapping[originalMapID];
 		if not remap then return originalMapID; end
@@ -665,10 +666,12 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 		return C_Map_GetMapLevels(t.mapID);
 	end,
 	["playerCoord"] = function(t)
-		local position = C_Map_GetPlayerMapPosition(t.mapID, "player")
+		local mapID = t.mapID
+		if mapID < 0 then mapID = app.RealMapID end
+		local position = C_Map_GetPlayerMapPosition(mapID, "player")
 		if position then
 			local x,y = position:GetXY()
-			return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, t.mapID };
+			return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, mapID };
 		end
 	end,
 	["isCurrentMap"] = function(t)
