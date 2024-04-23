@@ -14,12 +14,13 @@ if not C_TransmogCollection then
 	end
 
 	-- External Functionality
-	app.AddSourceInformation = app.DoNothing;
-	app.BuildSourceInformationForPopout = app.DoNothing;
-	app.GetGroupSourceID = app.DoNothing
+	app.AddSourceInformation = app.EmptyFunction;
+	app.BuildSourceInformationForPopout = app.EmptyFunction;
+	app.GetGroupSourceID = app.EmptyFunction
+	print("OI");
 
 	-- Extend the Filter Module to include ItemSource
-	app.Modules.Filter.Set.ItemSource = app.DoNothing;
+	app.Modules.Filter.Set.ItemSource = app.EmptyFunction;
 	return
 end
 
