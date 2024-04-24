@@ -357,7 +357,7 @@ CREATED_8_3_0 = "created 8.3.0.33051";					-- Battle for Azeroth 8.3.0 Launch on
 ADDED_8_3_0 = "added 8.3.0.33051";						-- Battle for Azeroth 8.3.0 Launch on January 14th, 2020
 REMOVED_8_3_0 = "removed 8.3.0.33051";					-- Battle for Azeroth 8.3.0 Launch on January 14th, 2020
 CREATED_8_3_7 = "created 8.3.7.35249";					-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
-ADDED_8_3_7 = ADDED_8_3_7;						-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
+ADDED_8_3_7 = "added 8.3.7.35249";						-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
 REMOVED_8_3_7 = "removed 8.3.7.35249";					-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
 
 -----------------
