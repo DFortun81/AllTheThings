@@ -77,6 +77,13 @@ local CAPITAL_GARDENS_MAPS = {
 	237,	-- Court of the Highborne
 	238,	-- Prison of Immol'Thar
 };
+local ALL_DIREMAUL_MAPS = {
+	239,	-- Warpwood Quarter (main)
+	235,	-- Gordok Commons (main)
+	236,	-- Capital Gardens (main)
+	237,	-- Court of the Highborne
+	238,	-- Prison of Immol'Thar
+};
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -1029,52 +1036,57 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-					-- #if AFTER LEGION
-					["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-					-- #else
-					["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
-					["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-					-- #endif
-				}),
-				i(12662),	-- Demonic Rune
-				i(18640),	-- Happy Fun Rock
-				i(18333, {	-- Libram of Focus
-					-- #if AFTER 4.0.3
-					["description"] = "This still drops despite being completely worthless.",
-					-- #endif
-				}),
-				i(18334, {	-- Libram of Protection
-					-- #if AFTER 4.0.3
-					["description"] = "This still drops despite being completely worthless.",
-					-- #endif
-				}),
-				i(18332, {	-- Libram of Rapidity
-					-- #if AFTER 4.0.3
-					["description"] = "This still drops despite being completely worthless.",
-					-- #endif
-				}),
-				applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
-					["timeline"] = { REMOVED_4_0_3 },
-					-- #if BEFORE 4.0.3
-					["crs"] = {
-						11441,	-- Gordok Brute
-						14351,	-- Gordok Bushwacker
-						11445,	-- Gordok Captain
-						11440,	-- Gordok Enforcer
-						11444,	-- Gordok Mage-Lord
-						11442,	-- Gordok Mauler
-						11443,	-- Gordok Ogre-Mage
-						11450,	-- Gordok Reaver
-						11448,	-- Gordok Warlock
-					},
-					-- #endif
-				})),
+				["maps"] = ALL_DIREMAUL_MAPS,
+				["groups"] = {
+					i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+						-- #if AFTER LEGION
+						["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+						-- #else
+						["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
+						["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+						-- #endif
+					}),
+					i(12662),	-- Demonic Rune
+					i(18640),	-- Happy Fun Rock
+					i(18333, {	-- Libram of Focus
+						-- #if AFTER 4.0.3
+						["description"] = "This still drops despite being completely worthless.",
+						-- #endif
+					}),
+					i(18334, {	-- Libram of Protection
+						-- #if AFTER 4.0.3
+						["description"] = "This still drops despite being completely worthless.",
+						-- #endif
+					}),
+					i(18332, {	-- Libram of Rapidity
+						-- #if AFTER 4.0.3
+						["description"] = "This still drops despite being completely worthless.",
+						-- #endif
+					}),
+					applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
+						["timeline"] = { REMOVED_4_0_3 },
+						-- #if BEFORE 4.0.3
+						["crs"] = {
+							11441,	-- Gordok Brute
+							14351,	-- Gordok Bushwacker
+							11445,	-- Gordok Captain
+							11440,	-- Gordok Enforcer
+							11444,	-- Gordok Mage-Lord
+							11442,	-- Gordok Mauler
+							11443,	-- Gordok Ogre-Mage
+							11450,	-- Gordok Reaver
+							11448,	-- Gordok Warlock
+						},
+						-- #endif
+					})),
+				},
 			}),
 			n(COMMON_BOSS_DROPS, {
+				["provider"] = { "o", 179547 },	-- A Dusty Tome
 				-- #if BEFORE 4.0.3
 				["description"] = "The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",
 				-- #endif
+				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
 					i(18357, {	-- Codex of Defense
 						["timeline"] = { REMOVED_4_0_3 },
