@@ -152,6 +152,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78450),	-- Aiding the Accord - Emerald Bounty - Quest Complete (spellID 426078)
 		q(78861),	-- Aiding the Accord - Emerald Bounty
 		q(78449),	-- Aiding the Accord - Superbloom - Quest Complete (spellID 426077)
-		--q(80389),	-- (probably) uppon completion "Last Hurrah" series
+		
+		q(80389),	-- (probably) upon completion "Last Hurrah" series
+		q(79073),	-- Triggers with QuestID 80389 and the other "Last Hurrah" quests
 	}),
 }));

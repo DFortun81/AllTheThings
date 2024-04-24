@@ -7559,7 +7559,6 @@ root(ROOTS.Unsorted, {
 				q(79070),	--
 				q(79071),	--
 				q(79072),	--
-				q(79073),	--
 				q(79248),	--
 				q(79251),	--
 				q(79252),	--
@@ -7580,7 +7579,6 @@ root(ROOTS.Unsorted, {
 				q(80171),	--
 				q(80172),	-- Ensemble: Gladiator's Battered Armor
 				q(80335),	--
-				q(80389),	-- Last Hurrah
 				q(80540),	--
 			}),
 		})),
