@@ -928,7 +928,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 					i(52023, {	-- Plans: Iceblade Arrow
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						["timeline"] = { "deleted 4.0.1" },
+						["timeline"] = { DELETED_4_0_1 },
 					}),
 					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
@@ -944,7 +944,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 					i(52022, {	-- Plans: Shatter Rounds
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						["timeline"] = { "deleted 4.0.1" },
+						["timeline"] = { DELETED_4_0_1 },
 					}),
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>

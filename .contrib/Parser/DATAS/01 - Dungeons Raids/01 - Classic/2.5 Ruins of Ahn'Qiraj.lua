@@ -506,7 +506,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				i(21761, {	-- Scarab Coffer Key
 					["timeline"] = {
 						ADDED_1_13_0,
-						"deleted 4.2.2.28211"
+						DELETED_4_2_2
 					},
 				}),
 			}),
@@ -753,7 +753,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(22217, {	-- Kurinnaxx's Venom Sac
 						["timeline"] = {
 							ADDED_1_13_0,
-							"deleted 4.2.2.28211"
+							DELETED_4_2_2
 						},
 					}),
 					i(21498),	-- Qiraji Sacrificial Dagger

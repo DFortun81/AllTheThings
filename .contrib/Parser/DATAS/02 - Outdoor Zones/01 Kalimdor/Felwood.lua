@@ -1317,7 +1317,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65357, {	-- Rainbow Generator
-							["timeline"] = { ADDED_4_0_3, "deleted 7.0.3.22248" },
+							["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
 						}),
 						i(133998, {	-- Rainbow Generator (TOY!)
 							["timeline"] = { ADDED_7_0_3 },

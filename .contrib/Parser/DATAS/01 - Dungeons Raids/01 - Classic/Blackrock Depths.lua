@@ -210,7 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 9056,	-- Fineous Darkvire <Chief Architect>
 						}),
 						i(11000, {	-- Shadowforge Key
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 						}),
 					},
 				}),
@@ -2474,7 +2474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						i(11630, {	-- Rockshard Pellets
-							["timeline"] = { "deleted 4.0.1" },
+							["timeline"] = { DELETED_4_0_1 },
 						}),
 					},
 				}),
@@ -2880,10 +2880,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(22275),	-- Firemoss Boots
 						applyclassicphase(PHASE_FIVE, i(22400, {	-- Libram of Truth
-							["timeline"] = { "deleted 5.0.4" },
+							["timeline"] = { DELETED_5_0_4 },
 						})),
 						applyclassicphase(PHASE_FIVE, i(22395, {	-- Totem of Rage
-							["timeline"] = { "deleted 5.0.4" },
+							["timeline"] = { DELETED_5_0_4 },
 						})),
 					},
 				}),

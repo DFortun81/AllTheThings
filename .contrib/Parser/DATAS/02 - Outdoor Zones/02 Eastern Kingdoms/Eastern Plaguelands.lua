@@ -4012,7 +4012,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 				}),
 				-- #endif
 				-- #if AFTER CATA

@@ -4567,19 +4567,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 42,
 					["groups"] = {
 						i(8647, {	-- Egg Crate
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 							["groups"] = {
 								i(8646, {	-- Bad Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8643, {	-- Extraordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8644, {	-- Fine Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8645, {	-- Ordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 							},
 						}),
@@ -4595,19 +4595,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 42,
 					["groups"] = {
 						i(8647, {	-- Egg Crate
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 							["groups"] = {
 								i(8646, {	-- Bad Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8643, {	-- Extraordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8644, {	-- Fine Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8645, {	-- Ordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 							},
 						}),
@@ -5470,16 +5470,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
 						}),
 						i(9250, {	-- Ship Schedule
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 						}),
 						i(9251, {	-- Upper Map Fragment
-							["timeline"] = { "deleted 4.1.0" },
+							["timeline"] = { DELETED_4_1_0 },
 						}),
 						i(9253, {	-- Middle Map Fragment
-							["timeline"] = { "deleted 4.1.0" },
+							["timeline"] = { DELETED_4_1_0 },
 						}),
 						i(9252, {	-- Lower Map Fragment
-							["timeline"] = { "deleted 4.1.0" },
+							["timeline"] = { DELETED_4_1_0 },
 						}),
 						i(9249, {	-- Captain's Key
 							["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",

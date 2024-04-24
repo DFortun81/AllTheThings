@@ -699,22 +699,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",
 						["groups"] = {
 							i(13303, {	-- Crusaders' Square Postbox Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 							i(13305, {	-- Elders' Square Postbox Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 							i(13304, {	-- Festival Lane Postbox Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 							i(13307, {	-- Fras Siabi's Postbox Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 							i(13306, {	-- King's Square Postbox Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 							i(13302, {	-- Market Row Postbox Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 						},
 					}),
@@ -837,7 +837,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13381),	-- Master Cannoneer Boots
 							i(13382),	-- Cannonball Runner
 							i(13377, {	-- Miniature Cannon Balls
-								["timeline"] = { "deleted 4.0.1" },
+								["timeline"] = { DELETED_4_0_1 },
 							}),
 						},
 					}),

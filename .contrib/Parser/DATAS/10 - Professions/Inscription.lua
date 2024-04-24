@@ -33,7 +33,7 @@ GLYPH_OF_ADRENALINE_RUSH_AND_SHADOW_WALK = r(57112, {	-- Glyph of Adrenaline Rus
 	-- #else
 	["name"] = "Glyph of Adrenaline Rush",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_AERIAL_CHAMELEON = r(344341, {  -- Glyph of the Aerial Chameleon
 	["name"] = "Glyph of the Aerial Chameleon",
@@ -45,11 +45,11 @@ GLYPH_OF_AIMED_SHOT_AND_ASPECTS = r(56994, {	-- Glyph of Aimed Shot / Glyph of A
 	-- #else
 	["name"] = "Glyph of Aimed Shot",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_AMBUSH = r(57113, {	-- Glyph of Ambush
 	["name"] = "Glyph of Ambush",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_ANGELS = r(148275, {	-- Glyph of Angels
 	["name"] = "Glyph of Angels",
@@ -57,7 +57,7 @@ GLYPH_OF_ANGELS = r(148275, {	-- Glyph of Angels
 });
 GLYPH_OF_ANTIMAGIC_SHELL = r(57207, {	-- Glyph of Anti-Magic Shell
 	["name"] = "Glyph of Anti-Magic Shell",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_AQUATIC_CHAMELEON = r(344340, {  -- Glyph of the Aquatic Chameleon
 	["name"] = "Glyph of the Aquatic Chameleon",
@@ -65,7 +65,7 @@ GLYPH_OF_AQUATIC_CHAMELEON = r(344340, {  -- Glyph of the Aquatic Chameleon
 });
 GLYPH_OF_AQUATIC_FORM = r(58286, {	-- Glyph of Aquatic Form
 	["name"] = "Glyph of Aquatic Form",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ARACHNOPHOBIA = r(225535, {	-- Glyph of Arachnophobia
 	["name"] = "Glyph of Arachnophobia",
@@ -77,15 +77,15 @@ GLYPH_OF_ARCANE_BARRAGE_AND_ILLUSION = r(64276, {	-- Glyph of Arcane Barrage / G
 	-- #else
 	["name"] = "Glyph of Arcane Barrage",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ARCANE_BLAST = r(56991, {	-- Glyph of Arcane Blast
 	["name"] = "Glyph of Arcane Blast",
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_ARCANE_EXPLOSION = r(56968, {	-- Glyph of Arcane Explosion
 	["name"] = "Glyph of Arcane Explosion",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE = r(58303, {	-- Glyph of Arcane Intellect / Glyph of the Porcupine [MOP+]
 	-- #if AFTER MOP
@@ -93,7 +93,7 @@ GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE = r(58303, {	-- Glyph of Arcane Inte
 	-- #else
 	["name"] = "Glyph of Arcane Intellect",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_ARCANE_MISSILES_AND_LOOSE_MANA = r(56971, {	-- Glyph of Arcane Missiles / Glyph of Loose Mana [MOP+]
 	-- #if AFTER MOP
@@ -101,11 +101,11 @@ GLYPH_OF_ARCANE_MISSILES_AND_LOOSE_MANA = r(56971, {	-- Glyph of Arcane Missiles
 	-- #else
 	["name"] = "Glyph of Arcane Missiles",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_ARCANE_POWER = r(56972, {	-- Glyph of Arcane Power
 	["name"] = "Glyph of Arcane Power",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ARCANE_SHOT_AND_CAMOUFLAGE = r(56995, {	-- Glyph of Arcane Shot / Glyph of Camouflage [MOP+]
 	-- #if AFTER MOP
@@ -113,7 +113,7 @@ GLYPH_OF_ARCANE_SHOT_AND_CAMOUFLAGE = r(56995, {	-- Glyph of Arcane Shot / Glyph
 	-- #else
 	["name"] = "Glyph of Arcane Shot",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ASPECT_OF_THE_VIPER_AND_CONCUSSIVE_SHOT = r(56998, {	-- Glyph of Aspect of the Viper / Glyph of Concussive Shot [CATA+]
 	-- #if AFTER CATA
@@ -121,11 +121,11 @@ GLYPH_OF_ASPECT_OF_THE_VIPER_AND_CONCUSSIVE_SHOT = r(56998, {	-- Glyph of Aspect
 	-- #else
 	["name"] = "Glyph of Aspect of the Viper",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_ASTRAL_RECALL = r(58329, {	-- Glyph of Astral Recall
 	["name"] = "Glyph of Astral Recall",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_AUTUMNAL_BLOOM = r(225534, {	-- Glyph of Autumnal Bloom
 	["name"] = "Glyph of Autumnal Bloom",
@@ -137,7 +137,7 @@ GLYPH_OF_AVENGERS_SHIELD_AND_FOCUSED_SHIELD = r(57019, {	-- Glyph of Avenger's S
 	-- #else
 	["name"] = "Glyph of Avenger's Shield",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_AVENGING_WRATH_AND_ASCETIC_CRUSADER = r(57021, {	-- Glyph of Avenging Wrath / Glyph of the Ascetic Crusader [CATA+]
 	-- #if AFTER CATA
@@ -145,7 +145,7 @@ GLYPH_OF_AVENGING_WRATH_AND_ASCETIC_CRUSADER = r(57021, {	-- Glyph of Avenging W
 	-- #else
 	["name"] = "Glyph of Avenging Wrath",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_BACKSTAB_AND_DECOY = r(57114, {	-- Glyph of Backstab / Glyph of Decoy [MOP+]
 	-- #if AFTER MOP
@@ -153,15 +153,15 @@ GLYPH_OF_BACKSTAB_AND_DECOY = r(57114, {	-- Glyph of Backstab / Glyph of Decoy [
 	-- #else
 	["name"] = "Glyph of Backstab",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BARBARIC_INSULTS = r(57151, {	-- Glyph of Barbaric Insults
 	["name"] = "Glyph of Barbaric Insults",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_BARKSKIN = r(64256, {	-- Glyph of Barkskin
 	["name"] = "Glyph of Barkskin",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT = r(58342, {	-- Glyph of Battle / Glyph of Mystic Shout [MOP+]
 	-- #if AFTER MOP
@@ -169,11 +169,11 @@ GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT = r(58342, {	-- Glyph of Battle / Glyph of Myst
 	-- #else
 	["name"] = "Glyph of Battle",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BEACON_OF_LIGHT = r(64277, {	-- Glyph of Beacon of Light
 	["name"] = "Glyph of Beacon of Light",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BERSERK_AND_SURVIVAL_INSTINCTS = r(64268, {	-- Glyph of Berserk / Glyph of Survival Instincts [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -181,7 +181,7 @@ GLYPH_OF_BERSERK_AND_SURVIVAL_INSTINCTS = r(64268, {	-- Glyph of Berserk / Glyph
 	-- #else
 	["name"] = "Glyph of Berserk",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_BESTIAL_WRATH_AND_ENDLESS_WRATH = r(56999, {	-- Glyph of Bestial Wrath / Glyph of Endless Wrath [MOP+]
 	-- #if AFTER MOP
@@ -189,7 +189,7 @@ GLYPH_OF_BESTIAL_WRATH_AND_ENDLESS_WRATH = r(56999, {	-- Glyph of Bestial Wrath 
 	-- #else
 	["name"] = "Glyph of Bestial Wrath",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BLACKOUT = r(192841, {	-- Glyph of Blackout
 	["name"] = "Glyph of Blackout",
@@ -197,7 +197,7 @@ GLYPH_OF_BLACKOUT = r(192841, {	-- Glyph of Blackout
 });
 GLYPH_OF_BLADE_FLURRY = r(57115, {	-- Glyph of Blade Flurry
 	["name"] = "Glyph of Blade Flurry",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BLADESTORM_AND_WHIRLWIND_AND_WIND_AND_THUNDER = r(64295, {	-- Glyph of Bladestorm / Glyph of Whirlwind [5.1.0+] / Glyph of Wind and Thunder [6.0.2+]
 	-- #if AFTER MOP
@@ -207,11 +207,11 @@ GLYPH_OF_BLADESTORM_AND_WHIRLWIND_AND_WIND_AND_THUNDER = r(64295, {	-- Glyph of 
 	-- #else
 	["name"] = "Glyph of Bladestorm",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 5.0.4", ADDED_5_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_5_0_4, ADDED_5_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_BLAST_WAVE = r(56990, {	-- Glyph of Blast Wave
 	["name"] = "Glyph of Blast Wave",
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_BLESSING_OF_KINGS_AND_COMTEMPLATION = r(58311, {	-- Glyph of Blessing of Kings / Glyph of Contemplation [MOP+]
 	-- #if AFTER MOP
@@ -219,7 +219,7 @@ GLYPH_OF_BLESSING_OF_KINGS_AND_COMTEMPLATION = r(58311, {	-- Glyph of Blessing o
 	-- #else
 	["name"] = "Glyph of Blessing of Kings",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING = r(58314, {	-- Glyph of Blessing of Might / Glyph of the Mounted King [MOP+]
 	-- #if AFTER MOP
@@ -227,7 +227,7 @@ GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING = r(58314, {	-- Glyph of Blessin
 	-- #else
 	["name"] = "Glyph of Blessing of Might",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE = r(58312, {	-- Glyph of Blessing of Wisdom / Glyph of Insight [CATA] / Glyph of Winged Vengeance [MOP+]
 	-- #if AFTER MOP
@@ -241,11 +241,11 @@ GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE = r(58312, {	-- Gly
 });
 GLYPH_OF_BLIND = r(92579, {	-- Glyph of Blind
 	["name"] = "Glyph of Blind",
-	["timeline"] = { ADDED_4_0_1, "deleted 7.0.3" },
+	["timeline"] = { ADDED_4_0_1, DELETED_7_0_3 },
 });
 GLYPH_OF_BLINK = r(56973, {	-- Glyph of Blink
 	["name"] = "Glyph of Blink",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_BLOCKING_AND_SHIELD_SLAM = r(57152, {	-- Glyph of Blocking / Glyph of Shield Slam [CATA+]
 	-- #if AFTER CATA
@@ -253,7 +253,7 @@ GLYPH_OF_BLOCKING_AND_SHIELD_SLAM = r(57152, {	-- Glyph of Blocking / Glyph of S
 	-- #else
 	["name"] = "Glyph of Blocking",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_BLOOD_STRIKE_AND_BLOOD_BOIL_AND_OUTBREAK = r(59339, {	-- Glyph of Blood Strike / Glyph of Blood Boil [CATA+] / Glyph of Outbreak [5.0.4]
 	-- #if AFTER 5.0.4
@@ -263,7 +263,7 @@ GLYPH_OF_BLOOD_STRIKE_AND_BLOOD_BOIL_AND_OUTBREAK = r(59339, {	-- Glyph of Blood
 	-- #else
 	["name"] = "Glyph of Blood Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BLOOD_TAP_AND_THE_GEIST = r(57209, {	-- Glyph of Blood Tap / Glyph of the Geist [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -275,7 +275,7 @@ GLYPH_OF_BLOOD_TAP_AND_THE_GEIST = r(57209, {	-- Glyph of Blood Tap / Glyph of t
 });
 GLYPH_OF_BLOODRAGE = r(58343, {	-- Glyph of Bloodrage
 	["name"] = "Glyph of Bloodrage",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING = r(57153, {	-- Glyph of Bloodthirst / Glyph of Bloody Healing [CATA+]
 	-- #if AFTER CATA
@@ -283,11 +283,11 @@ GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING = r(57153, {	-- Glyph of Bloodthirst / G
 	-- #else
 	["name"] = "Glyph of Bloodthirst",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BLURRED_SPEED = r(58323, {	-- Glyph of Blurred Speed
 	["name"] = "Glyph of Blurred Speed",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE = r(57210, {	-- Glyph of Bone Shield / Glyph of Icebound Fortitude [MOP+]
 	-- #if AFTER MOP
@@ -295,7 +295,7 @@ GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE = r(57210, {	-- Glyph of Bone Shield
 	-- #else
 	["name"] = "Glyph of Bone Shield",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BURNING_ANGER = r(112430, {	-- Glyph of Burning Anger
 	["name"] = "Glyph of Burning Anger",
@@ -307,15 +307,15 @@ GLYPH_OF_BURNOUT = r(225548, {	-- Glyph of Burnout
 });
 GLYPH_OF_CHAIN_HEAL = r(57232, {	-- Glyph of Chain Heal
 	["name"] = "Glyph of Chain Heal",
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_CHAIN_LIGHTNING = r(57233, {	-- Glyph of Chain Lightning
 	["name"] = "Glyph of Chain Lightning",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CHAINS_OF_ICE = r(57211, {	-- Glyph of Chains of Ice
 	["name"] = "Glyph of Chains of Ice",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON = r(58287, {	-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon [MOP+]
 	-- #if AFTER MOP
@@ -327,19 +327,19 @@ GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON = r(58287, {	-- Glyph of Chall
 });
 GLYPH_OF_CHAOS_BOLT = r(64294, {	-- Glyph of Chaos Bolt
 	["name"] = "Glyph of Chaos Bolt",
-	["timeline"] = { ADDED_3_1_0, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_1_0, DELETED_5_0_4 },
 });
 GLYPH_OF_CHARGE = r(58344, {	-- Glyph of Charge
 	["name"] = "Glyph of Charge",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_CHIMERA_SHOT = r(64271, {	-- Glyph of Chimera Shot
 	["name"] = "Glyph of Chimera Shot",
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_CIRCLE_OF_HEALING = r(57181, {	-- Glyph of Circle of Healing
 	["name"] = "Glyph of Circle of Healing",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_CLAW_AND_FEROCIOUS_BITE = r(67600, {	-- Glyph of Claw / Glyph of Ferocious Bite [CATA+]
 	-- #if AFTER CATA
@@ -347,7 +347,7 @@ GLYPH_OF_CLAW_AND_FEROCIOUS_BITE = r(67600, {	-- Glyph of Claw / Glyph of Feroci
 	-- #else
 	["name"] = "Glyph of Claw",
 	-- #endif
-	["timeline"] = { ADDED_3_2_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_2_0, DELETED_6_0_2 },
 });
 GLYPH_OF_CLEANSING_AND_FINAL_WRATH = r(57020, {	-- Glyph of Cleansing / Glyph of Final Wrath [MOP+]
 	-- #if AFTER MOP
@@ -355,7 +355,7 @@ GLYPH_OF_CLEANSING_AND_FINAL_WRATH = r(57020, {	-- Glyph of Cleansing / Glyph of
 	-- #else
 	["name"] = "Glyph of Cleansing",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_CLEAVING_AND_HINDERING_STRIKES = r(57154, {	-- Glyph of Cleaving / Glyph of Hindering Strikes [MOP+]
 	-- #if AFTER MOP
@@ -363,11 +363,11 @@ GLYPH_OF_CLEAVING_AND_HINDERING_STRIKES = r(57154, {	-- Glyph of Cleaving / Glyp
 	-- #else
 	["name"] = "Glyph of Cleaving",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CLOAK_OF_SHADOWS = r(64303, {	-- Glyph of Cloak of Shadows
 	["name"] = "Glyph of Cloak of Shadows",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_COLD_WAVES = r(304036, {	-- Glyph of the Cold Waves
 	["name"] = "Glyph of the Cold Waves",
@@ -383,11 +383,11 @@ GLYPH_OF_COMMAND_AND_THUNDER_STRIKE = r(68166, {	-- Glyph of Command / Glyph of 
 });
 GLYPH_OF_CONFLAGRATE = r(57258, {	-- Glyph of Conflagrate
 	["name"] = "Glyph of Conflagrate",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CONSECRATION = r(57023, {	-- Glyph of Consecration
 	["name"] = "Glyph of Consecration",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST = r(57229, {	-- Glyph of Corpse Explosion / Glyph of Path of Frost [CATA+]
 	-- #if AFTER CATA
@@ -395,7 +395,7 @@ GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST = r(57229, {	-- Glyph of Corpse Expl
 	-- #else
 	["name"] = "Glyph of Corpse Explosion",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CORRUPTION_AND_SIPHON_LIFE = r(57259, {	-- Glyph of Corruption / Glyph of Siphon Life [MOP+]
 	-- #if AFTER MOP
@@ -403,7 +403,7 @@ GLYPH_OF_CORRUPTION_AND_SIPHON_LIFE = r(57259, {	-- Glyph of Corruption / Glyph 
 	-- #else
 	["name"] = "Glyph of Corruption",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_CRACKED_ICE = r(225522, {	-- Glyph of Cracked Ice
 	["name"] = "Glyph of Cracked Ice",
@@ -431,7 +431,7 @@ GLYPH_OF_CRIPPLING_POISON_AND_SHARP_KNIVES = r(57116, {	-- Glyph of Crippling Po
 	-- #else
 	["name"] = "Glyph of Crippling Poison",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CRITTERHEX = r(225550, {	-- Glyph of Critterhex
 	["name"] = "Glyph of Critterhex",
@@ -447,7 +447,7 @@ GLYPH_OF_CRUSADER_STRIKE_AND_AVENGING_WRATH = r(57024, {	-- Glyph of Crusader St
 	-- #else
 	["name"] = "Glyph of Crusader Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_CURSE_OF_AGONY_AND_VERDANT_SPHERES = r(57260, {	-- Glyph of Curse of Agony / Glyph of Bane of Agony [4.0.1] / Glyph of Verdant Spheres [5.0.4]
 	-- #if AFTER 5.0.4
@@ -457,11 +457,11 @@ GLYPH_OF_CURSE_OF_AGONY_AND_VERDANT_SPHERES = r(57260, {	-- Glyph of Curse of Ag
 	-- #else
 	["name"] = "Glyph of Curse of Agony",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_CURSE_OF_EXHAUSTION = r(58338, {	-- Glyph of Curse of Exhaustion
 	["name"] = "Glyph of Curse of Exhaustion",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_DALARAN_BRILLIANCE = r(293801, {	-- Glyph of Dalaran Brilliance*
 	["name"] = "Glyph of Dalaran Brilliance",
@@ -469,7 +469,7 @@ GLYPH_OF_DALARAN_BRILLIANCE = r(293801, {	-- Glyph of Dalaran Brilliance*
 });
 GLYPH_OF_DANCING_RUNE_WEAPON = r(64297, {	-- Glyph of Dancing Rune Weapon
 	["name"] = "Glyph of Dancing Rune Weapon",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_DARK_ABSOLUTION = r(254238, {	-- Glyph of Dark Absolution
 	["name"] = "Glyph of Dark Absolution",
@@ -477,7 +477,7 @@ GLYPH_OF_DARK_ABSOLUTION = r(254238, {	-- Glyph of Dark Absolution
 });
 GLYPH_OF_DARK_COMMAND = r(57212, {	-- Glyph of Dark Command
 	["name"] = "Glyph of Dark Command",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_DARK_DEATH_AND_DEATH_COIL = r(64266, {	-- Glyph of Dark Death / Glyph of Death Coil [CATA+]
 	-- #if AFTER CATA
@@ -485,7 +485,7 @@ GLYPH_OF_DARK_DEATH_AND_DEATH_COIL = r(64266, {	-- Glyph of Dark Death / Glyph o
 	-- #else
 	["name"] = "Glyph of Dark Death",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_DARK_DEPTHS = r(304030, {	-- Glyph of the Dark Depths
 	["name"] = "Glyph of the Dark Depths",
@@ -493,7 +493,7 @@ GLYPH_OF_DARK_DEPTHS = r(304030, {	-- Glyph of the Dark Depths
 });
 GLYPH_OF_DASH = r(59315, {	-- Glyph of Dash
 	["name"] = "Glyph of Dash",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_DEADLY_THROW_AND_RECUPERATE = r(57117, {	-- Glyph of Deadly Throw / Glyph of Recuperate [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -501,11 +501,11 @@ GLYPH_OF_DEADLY_THROW_AND_RECUPERATE = r(57117, {	-- Glyph of Deadly Throw / Gly
 	-- #else
 	["name"] = "Glyph of Deadly Throw",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DEATH_AND_DECAY = r(57214, {	-- Glyph of Death and Decay
 	["name"] = "Glyph of Death and Decay",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DEATH_COIL_AND_NIGHTMARES = r(57261, {	-- Glyph of Death Coil / Glyph of Nightmares [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -513,19 +513,19 @@ GLYPH_OF_DEATH_COIL_AND_NIGHTMARES = r(57261, {	-- Glyph of Death Coil / Glyph o
 	-- #else
 	["name"] = "Glyph of Death Coil",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DEATH_GRIP = r(57213, {	-- Glyph of Death Grip
 	["name"] = "Glyph of Death Grip",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_DEATH_STRIKE = r(59340, {	-- Glyph of Death Strike
 	["name"] = "Glyph of Death Strike",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_DEATHS_EMBRACE = r(57215, {	-- Glyph of Death's Embrace
 	["name"] = "Glyph of Death's Embrace",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DEEP_FREEZE_AND_WATER_ELEMENTAL = r(64274, {	-- Glyph of Deep Freeze / Glyph of Water Elemental [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -533,15 +533,15 @@ GLYPH_OF_DEEP_FREEZE_AND_WATER_ELEMENTAL = r(64274, {	-- Glyph of Deep Freeze / 
 	-- #else
 	["name"] = "Glyph of Deep Freeze",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_DEMONIC_CIRCLE = r(64317, {	-- Glyph of Demonic Circle
 	["name"] = "Glyph of Demonic Circle",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_DETERRENCE = r(57000, {	-- Glyph of Deterrence
 	["name"] = "Glyph of Deterrence",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DEVASTATE_AND_HEAVY_REPERCUSSIONS = r(57155, {	-- Glyph of Devastate / Glyph of Heavy Repercussions [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -549,7 +549,7 @@ GLYPH_OF_DEVASTATE_AND_HEAVY_REPERCUSSIONS = r(57155, {	-- Glyph of Devastate / 
 	-- #else
 	["name"] = "Glyph of Devastate",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_DIRE_BEES = r(304042, {  -- Glyph of Dire Bees
 	["name"] = "Glyph of Dire Bees",
@@ -557,11 +557,11 @@ GLYPH_OF_DIRE_BEES = r(304042, {  -- Glyph of Dire Bees
 });
 GLYPH_OF_DISEASE = r(64267, {	-- Glyph of Disease
 	["name"] = "Glyph of Disease",
-	["timeline"] = { ADDED_3_1_0, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_4_0_3 },
 });
 GLYPH_OF_DISENGAGE = r(57001, {	-- Glyph of Disengage
 	["name"] = "Glyph of Disengage",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DISPEL_MAGIC_AND_PURIFY = r(57183, {	-- Glyph of Dispel Magic / Glyph of Purify [MOP+]
 	-- #if AFTER MOP
@@ -569,27 +569,27 @@ GLYPH_OF_DISPEL_MAGIC_AND_PURIFY = r(57183, {	-- Glyph of Dispel Magic / Glyph o
 	-- #else
 	["name"] = "Glyph of Dispel Magic",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_DISPERSION = r(64280, {	-- Glyph of Dispersion
 	["name"] = "Glyph of Dispersion",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_DISTRACT = r(58324, {	-- Glyph of Distract
 	["name"] = "Glyph of Distract",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DIVINE_PLEA = r(64305, {	-- Glyph of Divine Plea
 	["name"] = "Glyph of Divine Plea",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_DIVINE_STORM = r(64279, {	-- Glyph of Divine Storm
 	["name"] = "Glyph of Divine Storm",
-	["timeline"] = { ADDED_3_1_0, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_1_0, DELETED_4_0_1 },
 });
 GLYPH_OF_DIVINITY = r(57031, {	-- Glyph of Divinity
 	["name"] = "Glyph of Divinity",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION = r(58337, {	-- Glyph of Drain Soul / Glyph of Soul Consumption [MOP+]
 	-- #if AFTER MOP
@@ -597,7 +597,7 @@ GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION = r(58337, {	-- Glyph of Drain Soul / G
 	-- #else
 	["name"] = "Glyph of Drain Soul",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_EARTH_SHIELD_AND_DELUGE = r(64261, {	-- Glyph of Earth Shield / Glyph of Deluge [MOP+]
 	-- #if AFTER MOP
@@ -605,7 +605,7 @@ GLYPH_OF_EARTH_SHIELD_AND_DELUGE = r(64261, {	-- Glyph of Earth Shield / Glyph o
 	-- #else
 	["name"] = "Glyph of Earth Shield",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 8.1.0" },
+	["timeline"] = { ADDED_3_1_0, DELETED_8_1_0 },
 });
 GLYPH_OF_EARTHLIVING_WEAPON_AND_PURGE = r(57236, {	-- Glyph of Earthliving Weapon / Glyph of Purge [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -613,7 +613,7 @@ GLYPH_OF_EARTHLIVING_WEAPON_AND_PURGE = r(57236, {	-- Glyph of Earthliving Weapo
 	-- #else
 	["name"] = "Glyph of Earthliving Weapon",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ELEMENTAL_MASTERY_AND_CHAINING = r(57250, {	-- Glyph of Elemental Mastery / Glyph of Chaining [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -621,7 +621,7 @@ GLYPH_OF_ELEMENTAL_MASTERY_AND_CHAINING = r(57250, {	-- Glyph of Elemental Maste
 	-- #else
 	["name"] = "Glyph of Elemental Mastery",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_EMBER_SHARDS = r(246982, {	-- Glyph of Ember Shards
 	["name"] = "Glyph of Ember Shards",
@@ -641,19 +641,19 @@ GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT = r(64312, {	-- Glyph of En
 	-- #else
 	["name"] = "Glyph of Enraged Regeneration",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_ENTANGLING_ROOTS = r(48121, {	-- Glyph of Entangling Roots
 	["name"] = "Glyph of Entangling Roots",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_ETERNAL_WATER = r(71101, {	-- Glyph of Eternal Water
 	["name"] = "Glyph of Eternal Water",
-	["timeline"] = { ADDED_3_3_0, "deleted 4.0.1" },	-- With the new talent system, the Mage's Water Elemental has become a permanent pet by default. As a result, this glyph has been deleted completely.
+	["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },	-- With the new talent system, the Mage's Water Elemental has become a permanent pet by default. As a result, this glyph has been deleted completely.
 });
 GLYPH_OF_EVASION = r(57119, {	-- Glyph of Evasion
 	["name"] = "Glyph of Evasion",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_EVAPORATION = r(148271, {	-- Glyph of Evaporation
 	["name"] = "Glyph of Evaporation",
@@ -667,15 +667,15 @@ GLYPH_OF_EVISCERATE_AND_DEBILITATION_AND_RECOVERY = r(57120, {	-- Glyph of Evisc
 	-- #else
 	["name"] = "Glyph of Eviscerate",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_EVOCATION = r(56974, {	-- Glyph of Evocation
 	["name"] = "Glyph of Evocation",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_EXECUTION = r(57156, {	-- Glyph of Execution
 	["name"] = "Glyph of Execution",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_EXORCISM_AND_BLINDING_LIGHT = r(57025, {	-- Glyph of Exorcism / Glyph of Blinding Light [MOP+]
 	-- #if AFTER MOP
@@ -683,7 +683,7 @@ GLYPH_OF_EXORCISM_AND_BLINDING_LIGHT = r(57025, {	-- Glyph of Exorcism / Glyph o
 	-- #else
 	["name"] = "Glyph of Exorcism",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_EXPLOSIVE_SHOT_AND_TRANQUILIZING_SHOT = r(64273, {	-- Glyph of Explosive Shot / Glyph of Tranquilizing Shot [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -691,7 +691,7 @@ GLYPH_OF_EXPLOSIVE_SHOT_AND_TRANQUILIZING_SHOT = r(64273, {	-- Glyph of Explosiv
 	-- #else
 	["name"] = "Glyph of Explosive Shot",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_EXPLOSIVE_TRAP_AND_MASTERS_CALL = r(64253, {	-- Glyph of Explosive Trap / Glyph of Master's Call [CATA+]
 	-- #if AFTER CATA
@@ -699,15 +699,15 @@ GLYPH_OF_EXPLOSIVE_TRAP_AND_MASTERS_CALL = r(64253, {	-- Glyph of Explosive Trap
 	-- #else
 	["name"] = "Glyph of Explosive Trap",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_EXPOSE_ARMOR = r(57121, {	-- Glyph of Expose Armor
 	["name"] = "Glyph of Expose Armor",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FADE = r(57184, {	-- Glyph of Fade
 	["name"] = "Glyph of Fade",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_FADING_AND_SHADOW_RAVENS = r(58317, {	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
 	-- #if AFTER MOP
@@ -715,7 +715,7 @@ GLYPH_OF_FADING_AND_SHADOW_RAVENS = r(58317, {	-- Glyph of Fading / Glyph of Sha
 	-- #else
 	["name"] = "Glyph of Fading",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_FALLING_THUNDER = r(228381, {	-- Glyph of Falling Thunder
 	["name"] = "Glyph of Falling Thunder",
@@ -731,15 +731,15 @@ GLYPH_OF_FAN_OF_KNIVES_AND_DEADLY_MOMENTUM = r(64315, {	-- Glyph of Fan of Knive
 	-- #else
 	["name"] = "Glyph of Fan of Knives",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_FEAR = r(57262, {	-- Glyph of Fear
 	["name"] = "Glyph of Fear",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FEAR_WARD = r(57185, {	-- Glyph of Fear Ward
 	["name"] = "Glyph of Fear Ward",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS = r(58302, {	-- Glyph of Feign Death / Glyph of Fireworks [MOP+]
 	-- #if AFTER MOP
@@ -747,11 +747,11 @@ GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS = r(58302, {	-- Glyph of Feign Death / Glyph 
 	-- #else
 	["name"] = "Glyph of Feign Death",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FEINT = r(57122, {	-- Glyph of Feint
 	["name"] = "Glyph of Feint",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FEL_ENEMIES = r(225528, {	-- Glyph of Fel-Enemies
 	["name"] = "Glyph of Fel-Enemies",
@@ -783,11 +783,11 @@ GLYPH_OF_FELHUNTER_AND_DEMON_TRAINING = r(57264, {	-- Glyph of Felhunter / Glyph
 	-- #else
 	["name"] = "Glyph of Felhunter",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FERAL_SPIRIT = r(64288, {	-- Glyph of Feral Spirit
 	["name"] = "Glyph of Feral Spirit",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_FIGHTING_POSE = r(112469, {	-- Glyph of Fighting Pose
 	["name"] = "Glyph of Fighting Pose",
@@ -795,11 +795,11 @@ GLYPH_OF_FIGHTING_POSE = r(112469, {	-- Glyph of Fighting Pose
 });
 GLYPH_OF_FIRE_BLAST = r(57719, {	-- Glyph of Fire Blast
 	["name"] = "Glyph of Fire Blast",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_FIRE_ELEMENTAL_TOTEM = r(57237, {	-- Glyph of Fire Elemental Totem
 	["name"] = "Glyph of Fire Elemental Totem",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FIRE_NOVA = r(57238, {	-- Glyph of Fire Nova Totem / Glyph of Fire Nova [3.3.0+]
 	-- #if AFTER 3.3.0
@@ -807,11 +807,11 @@ GLYPH_OF_FIRE_NOVA = r(57238, {	-- Glyph of Fire Nova Totem / Glyph of Fire Nova
 	-- #else
 	["name"] = "Glyph of Fire Nova Totem",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FIRE_WARD = r(58305, {	-- Glyph of Fire Ward
 	["name"] = "Glyph of Fire Ward",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_FIREBALL_AND_COMBUSTION = r(56975, {	-- Glyph of Fireball / Glyph of Combustion [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -819,11 +819,11 @@ GLYPH_OF_FIREBALL_AND_COMBUSTION = r(56975, {	-- Glyph of Fireball / Glyph of Co
 	-- #else
 	["name"] = "Glyph of Fireball",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FLAME_SHOCK = r(57239, {	-- Glyph of Flame Shock
 	["name"] = "Glyph of Flame Shock",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FLAMETONGUE_WEAPON_AND_WIND_SHEAR = r(57240, {	-- Glyph of Flametongue Weapon / Glyph of Wind Shear [MOP+]
 	-- #if AFTER MOP
@@ -831,7 +831,7 @@ GLYPH_OF_FLAMETONGUE_WEAPON_AND_WIND_SHEAR = r(57240, {	-- Glyph of Flametongue 
 	-- #else
 	["name"] = "Glyph of Flametongue Weapon",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FLASH_BANG = r(225549, {	-- Glyph of Flash Bang
 	["name"] = "Glyph of Flash Bang",
@@ -843,7 +843,7 @@ GLYPH_OF_FLASH_HEAL_AND_INNER_SANCTUM = r(57186, {	-- Glyph of Flash Heal / Glyp
 	-- #else
 	["name"] = "Glyph of Flash Heal",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_FLASH_OF_LIGHT_AND_WORD_OF_GLORY = r(57026, {	-- Glyph of Flash of Light / Glyph of Word of Glory [CATA+]
 	-- #if AFTER CATA
@@ -851,7 +851,7 @@ GLYPH_OF_FLASH_OF_LIGHT_AND_WORD_OF_GLORY = r(57026, {	-- Glyph of Flash of Ligh
 	-- #else
 	["name"] = "Glyph of Flash of Light",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FLICKERING = r(225551, {	-- Glyph of Flickering
 	["name"] = "Glyph of Flickering",
@@ -865,7 +865,7 @@ GLYPH_OF_FLOATING_SHARDS = r(246984, {	-- Glyph of Floating Shards
 });
 GLYPH_OF_FLYING_SERPENT_KICK = r(112463, {	-- Glyph of Flying Serpent Kick
 	["name"] = "Glyph of Flying Serpent Kick",
-	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
 GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER = r(62162, {	-- Glyph of Focus / Glyph of the Master Shapeshifter [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -873,7 +873,7 @@ GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER = r(62162, {	-- Glyph of Focus / Glyp
 	-- #else
 	["name"] = "Glyph of Focus",
 	-- #endif
-	["timeline"] = { ADDED_3_0_8, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_8, DELETED_6_0_2 },
 });
 GLYPH_OF_FORTITUDE_AND_BORROWED_TIME = r(58318, {	-- Glyph of Fortitude / Glyph of Borrowed Time [MOP+]
 	-- #if AFTER MOP
@@ -881,15 +881,15 @@ GLYPH_OF_FORTITUDE_AND_BORROWED_TIME = r(58318, {	-- Glyph of Fortitude / Glyph 
 	-- #else
 	["name"] = "Glyph of Fortitude",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_FREEZING_TRAP = r(57002, {	-- Glyph of Freezing Trap
 	["name"] = "Glyph of Freezing Trap",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FRENZIED_REGENERATION = r(56943, {	-- Glyph of Frenzied Regeneration
 	["name"] = "Glyph of Frenzied Regeneration",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR = r(58306, {	-- Glyph of Frost Armor / Glyph of Conjuring [CATA] / Glyph of Conjure Familiar [MOP+]
 	-- #if AFTER MOP
@@ -899,15 +899,15 @@ GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR = r(58306, {	-- Glyph of
 	-- #else
 	["name"] = "Glyph of Frost Armor",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FROST_NOVA = r(56976, {	-- Glyph of Frost Nova
 	["name"] = "Glyph of Frost Nova",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FROST_SHOCK = r(57241, {	-- Glyph of Frost Shock
 	["name"] = "Glyph of Frost Shock",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FROST_STRIKE_AND_SHIFTING_PRESENCES = r(57216, {	-- Glyph of Frost Strike / Glyph of Shifting Presences [MOP+]
 	-- #if AFTER MOP
@@ -915,7 +915,7 @@ GLYPH_OF_FROST_STRIKE_AND_SHIFTING_PRESENCES = r(57216, {	-- Glyph of Frost Stri
 	-- #else
 	["name"] = "Glyph of Frost Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FROST_TRAP_AND_ICE_TRAP = r(57003, {	-- Glyph of Frost Trap / Glyph of Ice Trap [CATA+]
 	-- #if AFTER CATA
@@ -923,7 +923,7 @@ GLYPH_OF_FROST_TRAP_AND_ICE_TRAP = r(57003, {	-- Glyph of Frost Trap / Glyph of 
 	-- #else
 	["name"] = "Glyph of Frost Trap",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_FROST_WARD_AND_THE_MONKEY = r(58307, {	-- Glyph of Frost Ward / Glyph of the Monkey [CATA+]
 	-- #if AFTER CATA
@@ -931,11 +931,11 @@ GLYPH_OF_FROST_WARD_AND_THE_MONKEY = r(58307, {	-- Glyph of Frost Ward / Glyph o
 	-- #else
 	["name"] = "Glyph of Frost Ward",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_FROSTBOLT = r(56977, {	-- Glyph of Frostbolt
 	["name"] = "Glyph of Frostbolt",
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_FROSTFIRE_BOLT = r(61677, {	-- Glyph of Frostfire / Glyph of Frostfire Bolt [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -943,15 +943,15 @@ GLYPH_OF_FROSTFIRE_BOLT = r(61677, {	-- Glyph of Frostfire / Glyph of Frostfire 
 	-- #else
 	["name"] = "Glyph of Frostfire",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_GARROTE = r(57123, {	-- Glyph of Garrote
 	["name"] = "Glyph of Garrote",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_GHOST_WOLF = r(59326, {	-- Glyph of Ghost Wolf
 	["name"] = "Glyph of Ghost Wolf",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_GHOSTLY_FADE = r(192838, {	-- Glyph of Ghostly Fade
 	["name"] = "Glyph of Ghostly Fade",
@@ -963,11 +963,11 @@ GLYPH_OF_GHOSTLY_STRIKE_AND_DETECTION = r(57124, {	-- Glyph of Ghostly Strike / 
 	-- #else
 	["name"] = "Glyph of Ghostly Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1", ADDED_5_0_4, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1, ADDED_5_0_4, DELETED_7_0_3 },
 });
 GLYPH_OF_GOUGE = r(57125, {	-- Glyph of Gouge
 	["name"] = "Glyph of Gouge",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_GROWL_AND_SOLAR_BEAM_AND_OMENS = r(56944, {	-- Glyph of Growl / Glyph of Solar Beam [CATA+] / Glyph of Omens [5.3.0+]
 	-- #if AFTER 5.3.0
@@ -977,7 +977,7 @@ GLYPH_OF_GROWL_AND_SOLAR_BEAM_AND_OMENS = r(56944, {	-- Glyph of Growl / Glyph o
 	-- #else
 	["name"] = "Glyph of Growl",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_GUARDIAN_SPIRIT_AND_LEAP_OF_FAITH = r(64281, {	-- Glyph of Guardian Spirit / Glyph of Leap of Faith [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -985,7 +985,7 @@ GLYPH_OF_GUARDIAN_SPIRIT_AND_LEAP_OF_FAITH = r(64281, {	-- Glyph of Guardian Spi
 	-- #else
 	["name"] = "Glyph of Guardian Spirit",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_HAMMER_OF_JUSTICE_AND_HOLY_WRATH = r(57027, {	-- Glyph of Hammer of Justice / Glyph of Holy Wrath [MOP+]
 	-- #if AFTER MOP
@@ -993,11 +993,11 @@ GLYPH_OF_HAMMER_OF_JUSTICE_AND_HOLY_WRATH = r(57027, {	-- Glyph of Hammer of Jus
 	-- #else
 	["name"] = "Glyph of Hammer of Justice",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HAMMER_OF_THE_RIGHTEOUS = r(64278, {	-- Glyph of Hammer of the Righteous
 	["name"] = "Glyph of Hammer of the Righteous",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT = r(57028, {	-- Glyph of Hammer of Wrath / Glyph of Templar's Verdict [CATA+]
 	-- #if AFTER CATA
@@ -1005,7 +1005,7 @@ GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT = r(57028, {	-- Glyph of Hammer of
 	-- #else
 	["name"] = "Glyph of Hammer of Wrath",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION = r(57157, {	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA+] / Glyph of Rude Interruption [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1015,7 +1015,7 @@ GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION = r(57157, {	-- Glyph
 	-- #else
 	["name"] = "Glyph of Hamstring",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3", ADDED_5_0_4, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3, ADDED_5_0_4, DELETED_7_0_3 },
 });
 GLYPH_OF_HAUNT_AND_DRAIN_LIFE = r(64291, {	-- Glyph of Haunt / Glyph of Drain Life [5.2.0+]
 	-- #if AFTER 5.2.0
@@ -1023,27 +1023,27 @@ GLYPH_OF_HAUNT_AND_DRAIN_LIFE = r(64291, {	-- Glyph of Haunt / Glyph of Drain Li
 	-- #else
 	["name"] = "Glyph of Haunt",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, REMOVED_5_0_4, ADDED_5_2_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, REMOVED_5_0_4, ADDED_5_2_0, DELETED_6_0_2 },
 });
 GLYPH_OF_HEALING_STREAM_TOTEM = r(57242, {	-- Glyph of Healing Stream Totem
 	["name"] = "Glyph of Healing Stream Totem",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HEALING_TOUCH = r(56945, {	-- Glyph of Healing Touch
 	["name"] = "Glyph of Healing Touch",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HEALING_WAVE = r(57243, {	-- Glyph of Healing Wave
 	["name"] = "Glyph of Healing Wave",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_HEALTH_FUNNEL = r(57265, {	-- Glyph of Health Funnel
 	["name"] = "Glyph of Health Funnel",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HEALTHSTONE = r(57266, {	-- Glyph of Healthstone
 	["name"] = "Glyph of Healthstone",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_HEART_STRIKE_AND_UNHOLY_FRENZY = r(57208, {	-- Glyph of Blood Boil / Glyph of Heart Strike [3.1.0+] / Glyph of Unholy Frenzy [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1051,19 +1051,19 @@ GLYPH_OF_HEART_STRIKE_AND_UNHOLY_FRENZY = r(57208, {	-- Glyph of Blood Boil / Gl
 	-- #else
 	["name"] = "Glyph of Heart Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_HEMORRHAGE = r(57126, {	-- Glyph of Hemorrhage
 	["name"] = "Glyph of Hemorrhage",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HEROIC_STRIKE = r(57158, {	-- Glyph of Heroic Strike
 	["name"] = "Glyph of Heroic Strike",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_HEX = r(64316, {	-- Glyph of Hex
 	["name"] = "Glyph of Hex",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_HOLY_LIGHT_AND_DIVINE_FAVOR_AND_ILLUMINATION = r(57029, {	-- Glyph of Holy Light / Glyph of Divine Favor [CATA] / Glyph of Illumination [MOP+]
 	-- #if AFTER MOP
@@ -1073,15 +1073,15 @@ GLYPH_OF_HOLY_LIGHT_AND_DIVINE_FAVOR_AND_ILLUMINATION = r(57029, {	-- Glyph of H
 	-- #else
 	["name"] = "Glyph of Holy Light",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_HOLY_NOVA = r(57187, {	-- Glyph of Holy Nova
 	["name"] = "Glyph of Holy Nova",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_HOLY_SHOCK = r(64254, {	-- Glyph of Holy Shock
 	["name"] = "Glyph of Holy Shock",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_HOLY_WRATH_AND_DENOUNCE = r(59559, {	-- Glyph of Holy Wrath / Glyph of Denounce [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1089,7 +1089,7 @@ GLYPH_OF_HOLY_WRATH_AND_DENOUNCE = r(59559, {	-- Glyph of Holy Wrath / Glyph of 
 	-- #else
 	["name"] = "Glyph of Holy Wrath",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HONOR = r(112464, {	-- Glyph of Honor
 	["name"] = "Glyph of Honor",
@@ -1097,7 +1097,7 @@ GLYPH_OF_HONOR = r(112464, {	-- Glyph of Honor
 });
 GLYPH_OF_HORN_OF_WINTER = r(57217, {	-- Glyph of Horn of Winter
 	["name"] = "Glyph of Horn of Winter",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HOWL_OF_TERROR_AND_SUBTLETY = r(57267, {	-- Glyph of Howl of Terror / Glyph of Subtlety [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1105,7 +1105,7 @@ GLYPH_OF_HOWL_OF_TERROR_AND_SUBTLETY = r(57267, {	-- Glyph of Howl of Terror / G
 	-- #else
 	["name"] = "Glyph of Howl of Terror",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HOWLING_BLAST_AND_TRANQUIL_GRIP = r(64300, {	-- Glyph of Howling Blast / Glyph of Tranquil Grip [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1113,7 +1113,7 @@ GLYPH_OF_HOWLING_BLAST_AND_TRANQUIL_GRIP = r(64300, {	-- Glyph of Howling Blast 
 	-- #else
 	["name"] = "Glyph of Howling Blast",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_HUNGER_FOR_BLOOD_AND_VENDETTA = r(64284, {	-- Glyph of Hunger for Blood / Glyph of Vendetta [CATA+]
 	-- #if AFTER CATA
@@ -1121,7 +1121,7 @@ GLYPH_OF_HUNGER_FOR_BLOOD_AND_VENDETTA = r(64284, {	-- Glyph of Hunger for Blood
 	-- #else
 	["name"] = "Glyph of Hunger for Blood",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_HUNGERING_COLD_AND_DARK_SIMULACRUM = r(64298, {	-- Glyph of Hungering Cold / Glyph of Dark Simulacrum [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1129,7 +1129,7 @@ GLYPH_OF_HUNGERING_COLD_AND_DARK_SIMULACRUM = r(64298, {	-- Glyph of Hungering C
 	-- #else
 	["name"] = "Glyph of Hungering Cold",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_HUNTERS_MARK_AND_MISDIRECTION = r(57004, {	-- Glyph of Hunter's Mark / Glyph of Misdirection [CATA+]
 	-- #if AFTER CATA
@@ -1137,11 +1137,11 @@ GLYPH_OF_HUNTERS_MARK_AND_MISDIRECTION = r(57004, {	-- Glyph of Hunter's Mark / 
 	-- #else
 	["name"] = "Glyph of Hunter's Mark",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_HURRICANE = r(56946, {	-- Glyph of Hurricane
 	["name"] = "Glyph of Hurricane",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HYMN_OF_HOPE_AND_DIVINE_ACCURACY_AND_MIND_SPIKE = r(64283, {	-- Glyph of Hymn of Hope / Glyph of Divine Accuracy [CATA+] / Glyph of Mind Spike [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1151,7 +1151,7 @@ GLYPH_OF_HYMN_OF_HOPE_AND_DIVINE_ACCURACY_AND_MIND_SPIKE = r(64283, {	-- Glyph o
 	-- #else
 	["name"] = "Glyph of Hymn of Hope",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_ICE_ARMOR_AND_PYROBLAST_AND_MOMENTUM = r(56978, {	-- Glyph of Ice Armor / Glyph of Pyroblast [CATA] / Glyph of Momentum [MOP+]
 	-- #if AFTER MOP
@@ -1161,7 +1161,7 @@ GLYPH_OF_ICE_ARMOR_AND_PYROBLAST_AND_MOMENTUM = r(56978, {	-- Glyph of Ice Armor
 	-- #else
 	["name"] = "Glyph of Ice Armor",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ICE_BARRIER_AND_DEEP_FREEZE = r(64257, {	-- Glyph of Ice Barrier / Glyph of Deep Freeze [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1169,11 +1169,11 @@ GLYPH_OF_ICE_BARRIER_AND_DEEP_FREEZE = r(64257, {	-- Glyph of Ice Barrier / Glyp
 	-- #else
 	["name"] = "Glyph of Ice Barrier",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_ICE_BLOCK = r(56979, {	-- Glyph of Ice Block
 	["name"] = "Glyph of Ice Block",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ICE_LANCE_AND_SPLITTING_ICE = r(56980, {	-- Glyph of Ice Lance / Glyph of Splitting Ice [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -1181,19 +1181,19 @@ GLYPH_OF_ICE_LANCE_AND_SPLITTING_ICE = r(56980, {	-- Glyph of Ice Lance / Glyph 
 	-- #else
 	["name"] = "Glyph of Ice Lance",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_ICEBOUND_FORTITUDE = r(57218, {	-- Glyph of Icebound Fortitude
 	["name"] = "Glyph of Icebound Fortitude",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_ICY_TOUCH = r(57219, {	-- Glyph of Icy Touch
 	["name"] = "Glyph of Icy Touch",
-	["timeline"] = { ADDED_3_0_8, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_8, DELETED_7_0_3 },
 });
 GLYPH_OF_ICY_VEINS_AND_CONE_OF_COLD = r(56981, {	-- Glyph of Icy Veins / Glyph of Cone of Cold [5.0.4+]
 	["name"] = "Glyph of Icy Veins",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_IMMOLATE_AND_DARK_SOUL_AND_CURSE_OF_THE_ELEMENTS = r(57268, {	-- Glyph of Immolate / Glyph of Dark Soul [5.0.4+] / Glyph of Curse of the Elements [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -1203,7 +1203,7 @@ GLYPH_OF_IMMOLATE_AND_DARK_SOUL_AND_CURSE_OF_THE_ELEMENTS = r(57268, {	-- Glyph 
 	-- #else
 	["name"] = "Glyph of Immolate",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_IMMOLATION_TRAP_AND_EXPLOSIVE_TRAP = r(57005, {	-- Glyph of Immolation Trap / Glyph of Explosive Trap [MOP+]
 	-- #if AFTER MOP
@@ -1211,7 +1211,7 @@ GLYPH_OF_IMMOLATION_TRAP_AND_EXPLOSIVE_TRAP = r(57005, {	-- Glyph of Immolation 
 	-- #else
 	["name"] = "Glyph of Immolation Trap",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_IMP_SWARM = r(57269, {	-- Glyph of Imp / Glyph of Imp Swarm [MOP+]
 	-- #if AFTER MOP
@@ -1219,7 +1219,7 @@ GLYPH_OF_IMP_SWARM = r(57269, {	-- Glyph of Imp / Glyph of Imp Swarm [MOP+]
 	-- #else
 	["name"] = "Glyph of Imp",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_INCINERATE_AND_HAND_OF_GULDAN = r(57257, {	-- Glyph of Incinerate / Glyph of Hand of Gul'dan [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1227,19 +1227,19 @@ GLYPH_OF_INCINERATE_AND_HAND_OF_GULDAN = r(57257, {	-- Glyph of Incinerate / Gly
 	-- #else
 	["name"] = "Glyph of Incinerate",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_INFERNO_BLAST = r(94000, {	-- Glyph of Inferno Blast
 	["name"] = "Glyph of Inferno Blast",
-	["timeline"] = { ADDED_5_2_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_2_0, DELETED_7_0_3 },
 });
 GLYPH_OF_INNER_FIRE = r(57188, {	-- Glyph of Inner Fire
 	["name"] = "Glyph of Inner Fire",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_INNERVATE = r(56947, {	-- Glyph of Innervate
 	["name"] = "Glyph of Innervate",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_INSECT_SWARM_AND_THE_ORCA = r(56948, {	-- Glyph of Insect Swarm / Glyph of the Orca [MOP+]
 	-- #if AFTER MOP
@@ -1259,7 +1259,7 @@ GLYPH_OF_INTERVENE_AND_BLITZ = r(57159, {	-- Glyph of Intervene / Glyph of Blitz
 	-- #else
 	["name"] = "Glyph of Intervene",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_INVISIBILITY_AND_RAPID_DISPLACEMENT = r(56983, {	-- Glyph of Invisibility / Glyph of Rapid Displacement [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -1267,7 +1267,7 @@ GLYPH_OF_INVISIBILITY_AND_RAPID_DISPLACEMENT = r(56983, {	-- Glyph of Invisibili
 	-- #else
 	["name"] = "Glyph of Invisibility",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_JUDGEMENT = r(57030, {	-- Glyph of Judgement / Glyph of Double Jeopardy [MOP+]
 	-- #if AFTER MOP
@@ -1275,7 +1275,7 @@ GLYPH_OF_JUDGEMENT = r(57030, {	-- Glyph of Judgement / Glyph of Double Jeopardy
 	-- #else
 	["name"] = "Glyph of Judgement",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_KILL_SHOT_AND_ASPECT_OF_THE_CHEETAH = r(64304, {	-- Glyph of Kill Shot / Glyph of Aspect of the Cheetah [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1283,11 +1283,11 @@ GLYPH_OF_KILL_SHOT_AND_ASPECT_OF_THE_CHEETAH = r(64304, {	-- Glyph of Kill Shot 
 	-- #else
 	["name"] = "Glyph of Kill Shot",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_1_0, DELETED_5_0_4 },
 });
 GLYPH_OF_KILLING_SPREE = r(64285, {	-- Glyph of Killing Spree
 	["name"] = "Glyph of Killing Spree",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_KILROGG = r(58340, {	-- Glyph of Kilrogg / Glyph of Eye of Kilrogg [CATA+]
 	-- #if AFTER CATA
@@ -1295,11 +1295,11 @@ GLYPH_OF_KILROGG = r(58340, {	-- Glyph of Kilrogg / Glyph of Eye of Kilrogg [CAT
 	-- #else
 	["name"] = "Glyph of Kilrogg",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_LAST_STAND = r(57166, {	-- Glyph of Last Stand
 	["name"] = "Glyph of Last Stand",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_LAVA_AND_LAVA_BURST_AND_SPIRIT_WALK = r(57234, {	-- Glyph of Lava / Glyph of Lava Burst [CATA+] / Glyph of Spirit Walk [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1309,7 +1309,7 @@ GLYPH_OF_LAVA_AND_LAVA_BURST_AND_SPIRIT_WALK = r(57234, {	-- Glyph of Lava / Gly
 	-- #else
 	["name"] = "Glyph of Lava",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_LAVA_LASH = r(57249, {	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash [3.0.3+]
 	-- #if AFTER 3.0.3
@@ -1317,7 +1317,7 @@ GLYPH_OF_LAVA_LASH = r(57249, {	-- Glyph of Strength of Earth Totem / Glyph of L
 	-- #else
 	["name"] = "Glyph of Strength of Earth Totem",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_LAVISH_SERVINGS = r(309443, {  -- Glyph of Lavish Servings
 	["name"] = "Glyph of Lavish Servings",
@@ -1329,7 +1329,7 @@ GLYPH_OF_LAY_ON_HANDS_AND_FLASH_OF_LIGHT = r(58313, {	-- Glyph of Lay on Hands /
 	-- #else
 	["name"] = "Glyph of Lay on Hands",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_LESSER_HEALING_WAVE_AND_TOTEMIC_RECALL = r(57244, {	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall [CATA+]
 	-- #if AFTER CATA
@@ -1337,19 +1337,19 @@ GLYPH_OF_LESSER_HEALING_WAVE_AND_TOTEMIC_RECALL = r(57244, {	-- Glyph of Lesser 
 	-- #else
 	["name"] = "Glyph of Lesser Healing Wave",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_LEVITATE = r(58319, {	-- Glyph of Levitate
 	["name"] = "Glyph of Levitate",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_LIFE_TAP = r(64248, {	-- Glyph of Life Tap
 	["name"] = "Glyph of Life Tap",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_LIFEBLOOM_AND_EFFLORESCENCE = r(56949, {	-- Glyph of Lifebloom / Glyph of Efflorescence [5.4.0+]
 	["name"] = "Glyph of Lifebloom",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_LIGHTNING_BOLT_AND_TELLURIC_CURRENTS = r(57245, {	-- Glyph of Lightning Bolt / Glyph of Telluric Currents [MOP+]
 	-- #if AFTER MOP
@@ -1357,7 +1357,7 @@ GLYPH_OF_LIGHTNING_BOLT_AND_TELLURIC_CURRENTS = r(57245, {	-- Glyph of Lightning
 	-- #else
 	["name"] = "Glyph of Lightning Bolt",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_LIGHTNING_SHIELD_AND_THE_LAKESTRIDER = r(57246, {	-- Glyph of Lightning Shield / Glyph of the Lakestrider [MOP+]
 	-- #if AFTER MOP
@@ -1365,7 +1365,7 @@ GLYPH_OF_LIGHTNING_SHIELD_AND_THE_LAKESTRIDER = r(57246, {	-- Glyph of Lightning
 	-- #else
 	["name"] = "Glyph of Lightning Shield",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_LIGHTSPRING_AND_LIGHTWELL = r(127625, {	-- Glyph of Lightspring / Glyph of Lightwell [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -1373,11 +1373,11 @@ GLYPH_OF_LIGHTSPRING_AND_LIGHTWELL = r(127625, {	-- Glyph of Lightspring / Glyph
 	-- #else
 	["name"] = "Glyph of Lightspring",
 	-- #endif
-	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
 GLYPH_OF_LIGHTWELL = r(57189, {	-- Glyph of Lightwell
 	["name"] = "Glyph of Lightwell",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_LINGERING_ANCESTORS = r(148282, {	-- Glyph of Lingering Ancestors
 	["name"] = "Glyph of Lingering Ancestors",
@@ -1389,7 +1389,7 @@ GLYPH_OF_LIVING_BOMB_AND_SLOW = r(64275, {	-- Glyph of Living Bomb / Glyph of Sl
 	-- #else
 	["name"] = "Glyph of Living Bomb",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_MAGE_ARMOR_AND_MANA_GEM = r(56984, {	-- Glyph of Mage Armor / Glyph of Mana Gem [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1397,11 +1397,11 @@ GLYPH_OF_MAGE_ARMOR_AND_MANA_GEM = r(56984, {	-- Glyph of Mage Armor / Glyph of 
 	-- #else
 	["name"] = "Glyph of Mage Armor",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_MANA_GEM = r(56985, {	-- Glyph of Mana Gem
 	["name"] = "Glyph of Mana Gem",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_MANA_TIDE_TOTEM_AND_GROUNDING_TOTEM = r(57247, {	-- Glyph of Mana Tide Totem / Glyph of Grounding Totem [CATA+]
 	-- #if AFTER CATA
@@ -1409,7 +1409,7 @@ GLYPH_OF_MANA_TIDE_TOTEM_AND_GROUNDING_TOTEM = r(57247, {	-- Glyph of Mana Tide 
 	-- #else
 	["name"] = "Glyph of Mana Tide Totem",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_MANA_TOUCHED_SOULS = r(225529, {	-- Glyph of Mana Touched Souls
 	["name"] = "Glyph of Mana Touched Souls",
@@ -1421,15 +1421,15 @@ GLYPH_OF_MANGLE_AND_THE_STAG = r(56950, {	-- Glyph of Mangle / Glyph of the Stag
 	-- #else
 	["name"] = "Glyph of Mangle",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_MASS_DISPEL = r(57190, {	-- Glyph of Mass Dispel
 	["name"] = "Glyph of Mass Dispel",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_MAUL = r(56961, {	-- Glyph of Maul
 	["name"] = "Glyph of Maul",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_MEND_PET_AND_LESSER_PROPORTION = r(58301, {	-- Glyph of Mend Pet / Glyph of Lesser Proportion [4.1.0+]
 	-- #if AFTER 4.1.0
@@ -1445,7 +1445,7 @@ GLYPH_OF_MENDING = r(56997, {	-- Glyph of Aspect of the Monkey / Glyph of Mendin
 	-- #else
 	["name"] = "Glyph of Aspect of the Monkey",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_METAMORPHOSIS_AND_DEMON_HUNTING = r(64318, {	-- Glyph of Metamorphosis / Glyph of Demon Hunting [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1453,7 +1453,7 @@ GLYPH_OF_METAMORPHOSIS_AND_DEMON_HUNTING = r(64318, {	-- Glyph of Metamorphosis 
 	-- #else
 	["name"] = "Glyph of Metamorphosis",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_MIND_CONTROL_AND_PSYCHIC_HORROR = r(57191, {	-- Glyph of Mind Control / Glyph of Psychic Horror [CATA+]
 	-- #if AFTER CATA
@@ -1461,7 +1461,7 @@ GLYPH_OF_MIND_CONTROL_AND_PSYCHIC_HORROR = r(57191, {	-- Glyph of Mind Control /
 	-- #else
 	["name"] = "Glyph of Mind Control",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_MIND_FLAY_AND_DISPEL_MAGIC = r(57200, {	-- Glyph of Mind Flay / Glyph of Dispel Magic [MOP+]
 	-- #if AFTER MOP
@@ -1469,7 +1469,7 @@ GLYPH_OF_MIND_FLAY_AND_DISPEL_MAGIC = r(57200, {	-- Glyph of Mind Flay / Glyph o
 	-- #else
 	["name"] = "Glyph of Mind Flay",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_MIND_SEAR_AND_SPIRIT_TAP_AND_DARK_BINDING_AND_FOCUSED_MENDING = r(64309, {	-- Glyph of Mind Sear / Glyph of Spirit Tap [CATA+] / Glyph of Dark Binding [5.0.4+] / Glyph of Focused Mending [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -1481,11 +1481,11 @@ GLYPH_OF_MIND_SEAR_AND_SPIRIT_TAP_AND_DARK_BINDING_AND_FOCUSED_MENDING = r(64309
 	-- #else
 	["name"] = "Glyph of Mind Sear",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_MIRROR_IMAGE = r(64314, {	-- Glyph of Mirror Image
 	["name"] = "Glyph of Mirror Image",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND = r(58345, {	-- Glyph of Mocking Blow / REMOVED [CATA] / Glyph of Gushing Wound [MOP+]
 	-- #if AFTER MOP
@@ -1493,7 +1493,7 @@ GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND = r(58345, {	-- Glyph of Mocking Blow / 
 	-- #else
 	["name"] = "Glyph of Mocking Blow",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3", ADDED_5_0_4 },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3, ADDED_5_0_4 },
 });
 GLYPH_OF_MOLTEN_ARMOR_AND_CRITTERMORPH = r(56986, {	-- Glyph of Molten Armor / Glyph of Crittermorph [CATA+]
 	-- #if AFTER CATA
@@ -1509,7 +1509,7 @@ GLYPH_OF_MONSOON_AND_CYCLONE = r(64258, {	-- Glyph of Monsoon / Glyph of Cyclone
 	-- #else
 	["name"] = "Glyph of Monsoon",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_MOONFIRE_AND_SAVAGERY = r(56951, {	-- Glyph of Moonfire / Glyph of Savagery [MOP+]
 	-- #if AFTER MOP
@@ -1517,11 +1517,11 @@ GLYPH_OF_MOONFIRE_AND_SAVAGERY = r(56951, {	-- Glyph of Moonfire / Glyph of Sava
 	-- #else
 	["name"] = "Glyph of Moonfire",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_MORTAL_STRIKE = r(57160, {	-- Glyph of Mortal Strike
 	["name"] = "Glyph of Mortal Strike",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_MULTISHOT_AND_SILENCING_SHOT_AND_NO_ESCAPE = r(57007, {	-- Glyph of Multi-Shot / Glyph of Silencing Shot [CATA] / Glyph of No Escape [MOP+]
 	-- #if AFTER MOP
@@ -1531,7 +1531,7 @@ GLYPH_OF_MULTISHOT_AND_SILENCING_SHOT_AND_NO_ESCAPE = r(57007, {	-- Glyph of Mul
 	-- #else
 	["name"] = "Glyph of Multi-Shot",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_MUTILATE_AND_DISGUISE = r(64260, {	-- Glyph of Mutilate / Glyph of Disguise [MOP+]
 	-- #if AFTER MOP
@@ -1553,7 +1553,7 @@ GLYPH_OF_NOURISH_AND_STARSURGE_AND_MIGHT_OF_URSOC = r(64313, {	-- Glyph of Nouri
 	-- #else
 	["name"] = "Glyph of Nourish",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION = r(57220, {	-- Glyph of Obliterate / Glyph of Enduring Infection [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1561,7 +1561,7 @@ GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION = r(57220, {	-- Glyph of Obliterate /
 	-- #else
 	["name"] = "Glyph of Obliterate",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 -- #if ANYCLASSIC
 GLYPH_OF_OMEN_OF_CLARITY = applyclassicphase(WRATH_PHASE_THREE, r(413897, {	-- Glyph of Omen of Clarity
@@ -1575,7 +1575,7 @@ GLYPH_OF_OVERPOWER_AND_DIE_BY_THE_SWORD = r(57161, {	-- Glyph of Overpower / Gly
 	-- #else
 	["name"] = "Glyph of Overpower",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_PAIN_SUPPRESSION_AND_DESPERATION_AND_BINDING_HEAL = r(64259, {	-- Glyph of Pain Suppression / Glyph of Desperation [4.0.6-5.2.0] / Glyph of Binding Heal [5.2.0+]
 	-- #if AFTER 5.2.0
@@ -1585,7 +1585,7 @@ GLYPH_OF_PAIN_SUPPRESSION_AND_DESPERATION_AND_BINDING_HEAL = r(64259, {	-- Glyph
 	-- #else
 	["name"] = "Glyph of Pain Suppression",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_PEBBLES = r(225552, {	-- Glyph of Pebbles
 	["name"] = "Glyph of Pebbles",
@@ -1593,7 +1593,7 @@ GLYPH_OF_PEBBLES = r(225552, {	-- Glyph of Pebbles
 });
 GLYPH_OF_PENANCE = r(64282, {	-- Glyph of Penance
 	["name"] = "Glyph of Penance",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP = r(57230, {	-- Glyph of Pestilence / Glyph of Resilient Grip [CATA+]
 	-- #if AFTER CATA
@@ -1601,15 +1601,15 @@ GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP = r(57230, {	-- Glyph of Pestilence / Gly
 	-- #else
 	["name"] = "Glyph of Pestilence",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_PICK_LOCK = r(58325, {	-- Glyph of Pick Lock
 	["name"] = "Glyph of Pick Lock",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_PICK_POCKET = r(58326, {	-- Glyph of Pick Pocket
 	["name"] = "Glyph of Pick Pocket",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_PILLAR_OF_LIGHT = r(148274, {	-- Glyph of Pillar of Light
 	["name"] = "Glyph of Pillar of Light",
@@ -1621,11 +1621,11 @@ GLYPH_OF_PLAGUE_STRIKE_AND_PESTILENCE = r(57221, {	-- Glyph of Plague Strike / G
 	-- #else
 	["name"] = "Glyph of Plague Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_POLYMORPH = r(56987, {	-- Glyph of Polymorph
 	["name"] = "Glyph of Polymorph",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_POLYMORPHIC_PROPORTIONS = r(225545, {	-- Glyph of Polymorphic Proportions
 	["name"] = "Glyph of Polymorphic Proportions",
@@ -1633,11 +1633,11 @@ GLYPH_OF_POLYMORPHIC_PROPORTIONS = r(225545, {	-- Glyph of Polymorphic Proportio
 });
 GLYPH_OF_POSSESSED_STRENGTH = r(58300, {	-- Glyph of Possessed Strength
 	["name"] = "Glyph of Possessed Strength",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_POWER_WORD_SHIELD = r(57194, {	-- Glyph of Power Word: Shield
 	["name"] = "Glyph of Power Word: Shield",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_PRAYER_OF_HEALING_AND_SPIRIT_OF_REDEMPTION = r(57195, {	-- Glyph of Prayer of Healing / Glyph of Spirit of Redemption [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1645,7 +1645,7 @@ GLYPH_OF_PRAYER_OF_HEALING_AND_SPIRIT_OF_REDEMPTION = r(57195, {	-- Glyph of Pra
 	-- #else
 	["name"] = "Glyph of Prayer of Healing",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_PREPARATION_AND_SMOKE_BOMB = r(57127, {	-- Glyph of Preparation / Glyph of Smoke Bomb [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1653,11 +1653,11 @@ GLYPH_OF_PREPARATION_AND_SMOKE_BOMB = r(57127, {	-- Glyph of Preparation / Glyph
 	-- #else
 	["name"] = "Glyph of Preparation",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_PSYCHIC_SCREAM = r(57196, {	-- Glyph of Psychic Scream
 	["name"] = "Glyph of Psychic Scream",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_QUICK_DECAY_AND_LASH_OF_PAIN_AND_EVERLASTING_AFFLICTION_AND_ETERNAL_RESOLVE = r(71102, {	-- Glyph of Quick Decay / Glyph of Lash of Pain [CATA+] / Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -1669,7 +1669,7 @@ GLYPH_OF_QUICK_DECAY_AND_LASH_OF_PAIN_AND_EVERLASTING_AFFLICTION_AND_ETERNAL_RES
 	-- #else
 	["name"] = "Glyph of Quick Decay",
 	-- #endif
-	["timeline"] = { ADDED_3_3_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 });
 GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE = r(57228, {	-- Glyph of Raise Dead / Glyph of Raise Ally [CATA+] / Glyph of Death Gate [4.1.0+]
 	-- #if AFTER 4.1.0
@@ -1679,7 +1679,7 @@ GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE = r(57228, {	-- Glyph of Raise
 	-- #else
 	["name"] = "Glyph of Raise Dead",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_RAKE_AND_POUNCE_AND_RAKE = r(56952, {	-- Glyph of Rake / Glyph of Pounce [4.1.0+] / Glyph of Rake [6.0.2+]
 	-- #if AFTER 6.0.2
@@ -1689,7 +1689,7 @@ GLYPH_OF_RAKE_AND_POUNCE_AND_RAKE = r(56952, {	-- Glyph of Rake / Glyph of Pounc
 	-- #else
 	["name"] = "Glyph of Rake",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_RAPID_CHARGE_AND_ENRAGED_SPEED = r(57162, {	-- Glyph of Rapid Charge / Glyph of Enraged Speed [MOP+]
 	-- #if AFTER MOP
@@ -1697,7 +1697,7 @@ GLYPH_OF_RAPID_CHARGE_AND_ENRAGED_SPEED = r(57162, {	-- Glyph of Rapid Charge / 
 	-- #else
 	["name"] = "Glyph of Rapid Charge",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_RAPID_FIRE_AND_PATHFINDING = r(57008, {	-- Glyph of Rapid Fire / Glyph of Pathfinding [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1705,11 +1705,11 @@ GLYPH_OF_RAPID_FIRE_AND_PATHFINDING = r(57008, {	-- Glyph of Rapid Fire / Glyph 
 	-- #else
 	["name"] = "Glyph of Rapid Fire",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_RAPID_REJUVENATION = r(71015, {	-- Glyph of Rapid Rejuvenation
 	["name"] = "Glyph of Rapid Rejuvenation",
-	["timeline"] = { ADDED_3_3_0, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },
 });
 GLYPH_OF_RAPTOR_STRIKE_AND_MIRRORED_BLADES = r(64246, {	-- Glyph of Raptor Strike / Glyph of Mirrored Blades [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1717,11 +1717,11 @@ GLYPH_OF_RAPTOR_STRIKE_AND_MIRRORED_BLADES = r(64246, {	-- Glyph of Raptor Strik
 	-- #else
 	["name"] = "Glyph of Raptor Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_REBIRTH = r(56953, {	-- Glyph of Rebirth
 	["name"] = "Glyph of Rebirth",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 -- #if ANYCLASSIC
 GLYPH_OF_RECKONING = applyclassicphase(WRATH_PHASE_TWO, r(405005, {	-- Glyph of Reckoning
@@ -1731,11 +1731,11 @@ GLYPH_OF_RECKONING = applyclassicphase(WRATH_PHASE_TWO, r(405005, {	-- Glyph of 
 -- #endif
 GLYPH_OF_REGROWTH = r(56954, {	-- Glyph of Regrowth
 	["name"] = "Glyph of Regrowth",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_REJUVENATION = r(56955, {	-- Glyph of Rejuvenation
 	["name"] = "Glyph of Rejuvenation",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_REMOVE_CURSE_AND_CONE_OF_COLD_AND_ICY_VEINS = r(56988, {	-- Glyph of Remove Curse / Glyph of Cone of Cold [CATA+] / Glyph of Icy Veins [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1745,7 +1745,7 @@ GLYPH_OF_REMOVE_CURSE_AND_CONE_OF_COLD_AND_ICY_VEINS = r(56988, {	-- Glyph of Re
 	-- #else
 	["name"] = "Glyph of Remove Curse",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_RENDING_AND_SLAM_AND_HAMSTRING = r(57163, {	-- Glyph of Rending / Glyph of Slam [CATA+] / Glyph of Hamstring [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1755,11 +1755,11 @@ GLYPH_OF_RENDING_AND_SLAM_AND_HAMSTRING = r(57163, {	-- Glyph of Rending / Glyph
 	-- #else
 	["name"] = "Glyph of Rending",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_RENEW = r(57197, {	-- Glyph of Renew
 	["name"] = "Glyph of Renew",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_RENEWED_LIFE_AND_FAR_SIGHT = r(58330, {	-- Glyph of Renewed Life / Glyph of Far Sight [MOP+]
 	-- #if AFTER MOP
@@ -1767,11 +1767,11 @@ GLYPH_OF_RENEWED_LIFE_AND_FAR_SIGHT = r(58330, {	-- Glyph of Renewed Life / Glyp
 	-- #else
 	["name"] = "Glyph of Renewed Life",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_RESONATING_POWER = r(57164, {	-- Glyph of Resonating Power
 	["name"] = "Glyph of Resonating Power",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_REVENGE_AND_HOLD_THE_LINE = r(57165, {	-- Glyph of Revenge / Glyph of Hold the Line [MOP+]
 	-- #if AFTER MOP
@@ -1779,11 +1779,11 @@ GLYPH_OF_REVENGE_AND_HOLD_THE_LINE = r(57165, {	-- Glyph of Revenge / Glyph of H
 	-- #else
 	["name"] = "Glyph of Revenge",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_REVIVE_PET = r(58299, {	-- Glyph of Revive Pet
 	["name"] = "Glyph of Revive Pet",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_RIGHTEOUS_DEFENSE_AND_RIGHTEOUSNESS_AND_THE_LUMINOUS_CHARGER = r(57032, {	-- Glyph of Righteous Defense / Glyph of Righteousness [CATA] / Glyph of the Luminous Charger [MOP+]
 	-- #if AFTER MOP
@@ -1801,11 +1801,11 @@ GLYPH_OF_RIP_AND_PROWL = r(56956, {	-- Glyph of Rip / Glyph of Prowl [MOP+]
 	-- #else
 	["name"] = "Glyph of Rip",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_RIPTIDE = r(64289, {	-- Glyph of Riptide
 	["name"] = "Glyph of Riptide",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_RISING_TIGER_KICK = r(112466, {	-- Glyph of Rising Tiger Kick
 	["name"] = "Glyph of Rising Tiger Kick",
@@ -1817,7 +1817,7 @@ GLYPH_OF_RUNE_STRIKE_AND_ARMY_OF_THE_DEAD = r(57223, {	-- Glyph of Rune Strike /
 	-- #else
 	["name"] = "Glyph of Rune Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_RUNE_TAP_AND_UNHOLY_COMMAND = r(59338, {	-- Glyph of Rune Tap / Glyph of Unholy Command [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1825,7 +1825,7 @@ GLYPH_OF_RUNE_TAP_AND_UNHOLY_COMMAND = r(59338, {	-- Glyph of Rune Tap / Glyph o
 	-- #else
 	["name"] = "Glyph of Rune Tap",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_RUPTURE_AND_CHEAP_SHOT = r(57128, {	-- Glyph of Rupture / Glyph of Cheap Shot [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1833,15 +1833,15 @@ GLYPH_OF_RUPTURE_AND_CHEAP_SHOT = r(57128, {	-- Glyph of Rupture / Glyph of Chea
 	-- #else
 	["name"] = "Glyph of Rupture",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SAFE_FALL = r(58327, {	-- Glyph of Safe Fall
 	["name"] = "Glyph of Safe Fall",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SALVATION_AND_INQUISITION = r(64251, {	-- Glyph of Salvation / Glyph of Inquisition [5.0.4+]
 	["name"] = "Glyph of Salvation",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SAP_AND_HEMORRHAGING_VEINS = r(57129, {	-- Glyph of Sap / Glyph of Hemorrhaging Veins [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -1849,7 +1849,7 @@ GLYPH_OF_SAP_AND_HEMORRHAGING_VEINS = r(57129, {	-- Glyph of Sap / Glyph of Hemo
 	-- #else
 	["name"] = "Glyph of Sap",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SAVAGE_ROAR_AND_STAMPEDING_ROAR = r(64307, {	-- Glyph of Savage Roar / Glyph of Stampeding Roar [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1857,7 +1857,7 @@ GLYPH_OF_SAVAGE_ROAR_AND_STAMPEDING_ROAR = r(64307, {	-- Glyph of Savage Roar / 
 	-- #else
 	["name"] = "Glyph of Savage Roar",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_SCARE_BEAST_AND_STAMPEDE = r(58298, {	-- Glyph of Scare Beast / Glyph of Stampede [MOP+]
 	-- #if AFTER MOP
@@ -1865,19 +1865,19 @@ GLYPH_OF_SCARE_BEAST_AND_STAMPEDE = r(58298, {	-- Glyph of Scare Beast / Glyph o
 	-- #else
 	["name"] = "Glyph of Scare Beast",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SCATTER_SHOT = r(64249, {	-- Glyph of Scatter Shot
 	["name"] = "Glyph of Scatter Shot",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SCORCH = r(56982, {	-- Glyph of Scorch
 	["name"] = "Glyph of Scorch",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_SCOURGE_IMPRISONMENT = r(57198, {	-- Glyph of Scourge Imprisonment
 	["name"] = "Glyph of Scourge Imprisonment",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SCOURGE_STRIKE_AND_FOUL_MENAGERIE = r(57224, {	-- Glyph of Scourge Strike / Glyph of Foul Menagerie [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1895,7 +1895,7 @@ GLYPH_OF_SEAL_OF_COMMAND_AND_REBUKE_AND_DEVOTION_AURA = r(57033, {	-- Glyph of S
 	-- #else
 	["name"] = "Glyph of Seal of Command",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SEAL_OF_LIGHT_AND_SEAL_OF_INSIGHT_AND_BLESSED_LIFE = r(57034, {	-- Glyph of Seal of Light / Glyph of Seal of Insight [CATA+] / Glyph of Blessed Life [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1905,7 +1905,7 @@ GLYPH_OF_SEAL_OF_LIGHT_AND_SEAL_OF_INSIGHT_AND_BLESSED_LIFE = r(57034, {	-- Glyp
 	-- #else
 	["name"] = "Glyph of Seal of Light",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SEAL_OF_RIGHTEOUSNESS_AND_DAZING_SHIELD = r(59560, {	-- Glyph of Seal of Righteousness / Glyph of Dazing Shield [CATA+]
 	-- #if AFTER CATA
@@ -1913,7 +1913,7 @@ GLYPH_OF_SEAL_OF_RIGHTEOUSNESS_AND_DAZING_SHIELD = r(59560, {	-- Glyph of Seal o
 	-- #else
 	["name"] = "Glyph of Seal of Righteousness",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SEAL_OF_VENGEANCE_AND_SEAL_OF_TRUTH_AND_IMMEDIATE_TRUTH = r(59561, {	-- Glyph of Seal of Vengeance / Glyph of Seal of Truth [CATA+] / Glyph of Immediate Truth [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1923,7 +1923,7 @@ GLYPH_OF_SEAL_OF_VENGEANCE_AND_SEAL_OF_TRUTH_AND_IMMEDIATE_TRUTH = r(59561, {	--
 	-- #else
 	["name"] = "Glyph of Seal of Vengeance",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SEAL_OF_WISDOM_AND_LIGHT_OF_DAWN = r(57035, {	-- Glyph of Seal of Wisdom / Glyph of Light of Dawn [CATA+]
 	-- #if AFTER CATA
@@ -1931,11 +1931,11 @@ GLYPH_OF_SEAL_OF_WISDOM_AND_LIGHT_OF_DAWN = r(57035, {	-- Glyph of Seal of Wisdo
 	-- #else
 	["name"] = "Glyph of Seal of Wisdom",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SEARING_PAIN = r(57270, {	-- Glyph of Searing Pain
 	["name"] = "Glyph of Searing Pain",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 });
 GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD = r(58315, {	-- Glyph of Sense Undead / Glyph of Truth [CATA] / Glyph of Seal of Blood [MOP+]
 	-- #if AFTER MOP
@@ -1945,7 +1945,7 @@ GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD = r(58315, {	-- Glyph of Sense
 	-- #else
 	["name"] = "Glyph of Sense Undead",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SERPENT_STING_AND_TAME_BEAST = r(57009, {	-- Glyph of Serpent Sting / Glyph of Tame Beast [MOP+]
 	-- #if AFTER MOP
@@ -1953,7 +1953,7 @@ GLYPH_OF_SERPENT_STING_AND_TAME_BEAST = r(57009, {	-- Glyph of Serpent Sting / G
 	-- #else
 	["name"] = "Glyph of Serpent Sting",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SHACKLE_UNDEAD = r(58320, {	-- Glyph of Shackle Undead
 	["name"] = "Glyph of Shackle Undead",
@@ -1975,11 +1975,11 @@ GLYPH_OF_SHADOW_AND_POWER_WORD_BARRIER_AND_INNER_FOCUS_AND_WEAKENED_SOUL = r(571
 	-- #else
 	["name"] = "Glyph of Mind Soothe",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SHADOW_BOLT = r(57271, {	-- Glyph of Shadow Bolt
 	["name"] = "Glyph of Shadow Bolt",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SHADOW_DANCE_AND_STEALTH = r(64286, {	-- Glyph of Shadow Dance / Glyph of Stealth [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1987,7 +1987,7 @@ GLYPH_OF_SHADOW_DANCE_AND_STEALTH = r(64286, {	-- Glyph of Shadow Dance / Glyph 
 	-- #else
 	["name"] = "Glyph of Shadow Dance",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SHADOW_ENEMIES = r(225530, {	-- Glyph of Shadow-Enemies
 	["name"] = "Glyph of Shadow-Enemies",
@@ -1999,7 +1999,7 @@ GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD = r(58321, {	-- Glyph of Shadow
 	-- #else
 	["name"] = "Glyph of Shadow Protection",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SHADOW_WORD_DEATH = r(124461, {	-- Glyph of Shadow Word: Death [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2007,7 +2007,7 @@ GLYPH_OF_SHADOW_WORD_DEATH = r(124461, {	-- Glyph of Shadow Word: Death [5.0.4+]
 	-- #else
 	["name"] = "Glyph of Shadow Word: Death (NYI)",
 	-- #endif
-	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
 GLYPH_OF_SHADOW_WORD_DEATH_AND_MIND_BLAST = r(57199, {	-- Glyph of Shadow Word: Death / Glyph of Mind Blast [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2015,7 +2015,7 @@ GLYPH_OF_SHADOW_WORD_DEATH_AND_MIND_BLAST = r(57199, {	-- Glyph of Shadow Word: 
 	-- #else
 	["name"] = "Glyph of Shadow Word: Death",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SHADOW_WORD_PAIN_AND_HOLY_FIRE = r(57192, {	-- Glyph of Shadow Word: Pain / Glyph of Holy Fire [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2023,11 +2023,11 @@ GLYPH_OF_SHADOW_WORD_PAIN_AND_HOLY_FIRE = r(57192, {	-- Glyph of Shadow Word: Pa
 	-- #else
 	["name"] = "Glyph of Shadow Word: Pain",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SHADOWBURN = r(57272, {	-- Glyph of Shadowburn
 	["name"] = "Glyph of Shadowburn",
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL = r(58322, {	-- Glyph of Shadowfiend / Glyph of Dark Archangel [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2035,7 +2035,7 @@ GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL = r(58322, {	-- Glyph of Shadowfiend / G
 	-- #else
 	["name"] = "Glyph of Shadowfiend",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_SHADOWFLAME_AND_UNENDING_RESOLVE = r(64311, {	-- Glyph of Shadowflame / Glyph of Unending Resolve [5.4.0+]
 	-- #if AFTER 5.0.4
@@ -2043,7 +2043,7 @@ GLYPH_OF_SHADOWFLAME_AND_UNENDING_RESOLVE = r(64311, {	-- Glyph of Shadowflame /
 	-- #else
 	["name"] = "Glyph of Shadowflame",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_SHADOWY_FRIENDS = r(126800, {	-- Glyph of Shadowy Friends
 	["name"] = "Glyph of Shadowy Friends",
@@ -2063,11 +2063,11 @@ GLYPH_OF_SHIELD_OF_RIGHTEOUSNESS_AND_ALABASTER_SHIELD = r(64308, {	-- Glyph of S
 	-- #else
 	["name"] = "Glyph of Shield of Righteousness",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SHIELD_WALL = r(64252, {	-- Glyph of Shield Wall
 	["name"] = "Glyph of Shield Wall",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SHOCKING_AND_CAPACITOR_TOTEM = r(57235, {	-- Glyph of Earth Shock / Glyph of Shocking [3.0.8+] / Glyph of Capacitor Totem [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2077,7 +2077,7 @@ GLYPH_OF_SHOCKING_AND_CAPACITOR_TOTEM = r(57235, {	-- Glyph of Earth Shock / Gly
 	-- #else
 	["name"] = "Glyph of Earth Shock",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SHOCKWAVE_AND_DEATH_FROM_ABOVE = r(64296, {	-- Glyph of Shockwave / Glyph of Death From Above [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2085,7 +2085,7 @@ GLYPH_OF_SHOCKWAVE_AND_DEATH_FROM_ABOVE = r(64296, {	-- Glyph of Shockwave / Gly
 	-- #else
 	["name"] = "Glyph of Shockwave",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_SHRED_AND_BLOODLETTING_AND_SHRED = r(56957, {	-- Glyph of Shred / Glyph of Bloodletting [4.3.0+] / Glyph of Shred [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2095,7 +2095,7 @@ GLYPH_OF_SHRED_AND_BLOODLETTING_AND_SHRED = r(56957, {	-- Glyph of Shred / Glyph
 	-- #else
 	["name"] = "Glyph of Shred",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SINISTER_STRIKE_AND_ADRENALINE_RUSH_AND_REDIRECT = r(57131, {	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush [5.0.4-5.4.0] / Glyph of Redirect [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -2105,11 +2105,11 @@ GLYPH_OF_SINISTER_STRIKE_AND_ADRENALINE_RUSH_AND_REDIRECT = r(57131, {	-- Glyph 
 	-- #else
 	["name"] = "Glyph of Sinister Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SIPHON_LIFE = r(57273, {	-- Glyph of Siphon Life
 	["name"] = "Glyph of Siphon Life",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_SLICE_AND_DICE_AND_SHIV = r(57132, {	-- Glyph of Slice and Dice / Glyph of Shiv [MOP+]
 	-- #if AFTER MOP
@@ -2117,7 +2117,7 @@ GLYPH_OF_SLICE_AND_DICE_AND_SHIV = r(57132, {	-- Glyph of Slice and Dice / Glyph
 	-- #else
 	["name"] = "Glyph of Slice and Dice",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE = r(58308, {	-- Glyph of Slow Fall / Glyph of Arcane Language [MOP+]
 	-- #if AFTER MOP
@@ -2125,11 +2125,11 @@ GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE = r(58308, {	-- Glyph of Slow Fall / Glyp
 	-- #else
 	["name"] = "Glyph of Slow Fall",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SMITE = r(57201, {	-- Glyph of Smite
 	["name"] = "Glyph of Smite",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_SMOLDER = r(225546, {	-- Glyph of Smolder
 	["name"] = "Glyph of Smolder",
@@ -2137,7 +2137,7 @@ GLYPH_OF_SMOLDER = r(225546, {	-- Glyph of Smolder
 });
 GLYPH_OF_SNAKE_TRAP = r(57010, {	-- Glyph of Snake Trap
 	["name"] = "Glyph of Snake Trap",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SOUL_LINK_AND_CRIMSON_BANISH = r(64250, {	-- Glyph of Soul Link / Glyph of Crimson Banish [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2159,7 +2159,7 @@ GLYPH_OF_SOULS_AND_RITUAL_OF_SOULS_AND_SOULWELL = r(58341, {	-- Glyph of Souls /
 });
 GLYPH_OF_SOULSTONE = r(57274, {	-- Glyph of Soulstone
 	["name"] = "Glyph of Soulstone",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SPARKLES = r(192840, {	-- Glyph of Sparkles
 	["name"] = "Glyph of Sparkles",
@@ -2167,7 +2167,7 @@ GLYPH_OF_SPARKLES = r(192840, {	-- Glyph of Sparkles
 });
 GLYPH_OF_SPELL_REFLECTION = r(64302, {	-- Glyph of Spell Reflection
 	["name"] = "Glyph of Spell Reflection",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_SPIRIT_OF_REDEMPTION_AND_PRAYER_OF_MENDING = r(57202, {	-- Glyph of Spirit of Redemption / Glyph of Prayer of Mending [CATA+]
 	-- #if AFTER CATA
@@ -2175,7 +2175,7 @@ GLYPH_OF_SPIRIT_OF_REDEMPTION_AND_PRAYER_OF_MENDING = r(57202, {	-- Glyph of Spi
 	-- #else
 	["name"] = "Glyph of Spirit of Redemption",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_SPIRIT_RAPTORS = r(148281, {	-- Glyph of Spirit Raptors
 	["name"] = "Glyph of Spirit Raptors",
@@ -2187,11 +2187,11 @@ GLYPH_OF_SPIRITUAL_ATTUNEMENT_AND_DIVINE_PROTECTION = r(57022, {	-- Glyph of Spi
 	-- #else
 	["name"] = "Glyph of Spiritual Attunement",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SPRINT = r(57133, {	-- Glyph of Sprint
 	["name"] = "Glyph of Sprint",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_STARFALL_AND_SKULL_BASH = r(56958, {	-- Glyph of Starfall / Glyph of Skull Bash [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2199,7 +2199,7 @@ GLYPH_OF_STARFALL_AND_SKULL_BASH = r(56958, {	-- Glyph of Starfall / Glyph of Sk
 	-- #else
 	["name"] = "Glyph of Starfall",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_STARFIRE_AND_THE_MOONBEAST_AND_GUIDED_STARS_AND_UNTAMED_STARS = r(56959, {	-- Glyph of Starfire / Glyph of the Moonbeast [5.0.4-5.4.0] / Glyph of Guided Stars [5.4.0-6.1.0] / Glyph of Untamed Stars [6.1.0+]
 	-- #if AFTER 6.1.0
@@ -2211,7 +2211,7 @@ GLYPH_OF_STARFIRE_AND_THE_MOONBEAST_AND_GUIDED_STARS_AND_UNTAMED_STARS = r(56959
 	-- #else
 	["name"] = "Glyph of Starfire",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_STEADY_SHOT_AND_SCATTERING_AND_AIMED_SHOT = r(57011, {	-- Glyph of Steady Shot / Glyph of Scattering [5.0.4+] / Glyph of Aimed Shot [5.1.0+]
 	-- #if AFTER 5.1.0
@@ -2221,7 +2221,7 @@ GLYPH_OF_STEADY_SHOT_AND_SCATTERING_AND_AIMED_SHOT = r(57011, {	-- Glyph of Stea
 	-- #else
 	["name"] = "Glyph of Steady Shot",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_STEAMING_FURY = r(304033, {	-- Glyph of Steaming Fury
 	["name"] = "Glyph of Steaming Fury",
@@ -2237,7 +2237,7 @@ GLYPH_OF_STONECLAW_TOTEM_AND_TOTEMIC_VIGOR = r(64247, {	-- Glyph of Stoneclaw To
 	-- #else
 	["name"] = "Glyph of Stoneclaw Totem",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_STORMS_WAKE = r(289356, {  -- Glyph of Storm's Wake
 	["name"] = "Glyph of Storm's Wake",
@@ -2250,11 +2250,11 @@ GLYPH_OF_STORMSTRIKE_AND_SPIRITWALKERS_GRACE = r(57248, {	-- Glyph of Stormstrik
 	-- #else
 	["name"] = "Glyph of Stormstrike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_STRANGULATE = r(57225, {	-- Glyph of Strangulate
 	["name"] = "Glyph of Strangulate",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON = r(58339, {	-- Glyph of Subjugate Demon / Glyph of Enslave Demon [CATA+]
 	-- #if AFTER CATA
@@ -2262,7 +2262,7 @@ GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON = r(58339, {	-- Glyph of Subjugate De
 	-- #else
 	["name"] = "Glyph of Subjugate Demon",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SUCCUBUS_AND_SEDUCTION_AND_CARRION_SWARM = r(57275, {	-- Glyph of Succubus / Glyph of Seduction [CATA+] / Glyph of Carrion Swarm [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2272,7 +2272,7 @@ GLYPH_OF_SUCCUBUS_AND_SEDUCTION_AND_CARRION_SWARM = r(57275, {	-- Glyph of Succu
 	-- #else
 	["name"] = "Glyph of Succubus",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SUNDER_ARMOR_AND_HOARSE_VOICE = r(57167, {	-- Glyph of Sunder Armor / Glyph of Hoarse Voice [MOP+]
 	-- #if AFTER MOP
@@ -2280,7 +2280,7 @@ GLYPH_OF_SUNDER_ARMOR_AND_HOARSE_VOICE = r(57167, {	-- Glyph of Sunder Armor / G
 	-- #else
 	["name"] = "Glyph of Sunder Armor",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_SURVIVAL_INSTINCTS = r(65245, {	-- Glyph of Survival Instincts
 	-- #if AFTER 4.0.1
@@ -2288,11 +2288,11 @@ GLYPH_OF_SURVIVAL_INSTINCTS = r(65245, {	-- Glyph of Survival Instincts
 	-- #else
 	["name"] = "Glyph of Survival Instincts",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_1_0, DELETED_4_0_1 },
 });
 GLYPH_OF_SWEEPING_STRIKES = r(57168, {	-- Glyph of Sweeping Strikes
 	["name"] = "Glyph of Sweeping Strikes",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SWIFTMEND_AND_STAMPEDE = r(56960, {	-- Glyph of Swiftmend / Glyph of Stampede [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2300,7 +2300,7 @@ GLYPH_OF_SWIFTMEND_AND_STAMPEDE = r(56960, {	-- Glyph of Swiftmend / Glyph of St
 	-- #else
 	["name"] = "Glyph of Swiftmend",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_TATTERED_WINGS = r(192852, {	-- Glyph of Tattered Wings
 	["name"] = "Glyph of Tattered Wings",
@@ -2308,7 +2308,7 @@ GLYPH_OF_TATTERED_WINGS = r(192852, {	-- Glyph of Tattered Wings
 });
 GLYPH_OF_TAUNT = r(57169, {	-- Glyph of Taunt
 	["name"] = "Glyph of Taunt",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_THE_BEAST_AND_TRAP_LAUNCHER_AND_MARKED_FOR_DEATH_AND_LIBERATION = r(56996, {	-- Glyph of the Beast / Glyph of Trap Launcher [CATA+] / Glyph of Marked For Death [5.0.4+] / Glyph of Liberation [5.2.0+]
 	-- #if AFTER 5.2.0
@@ -2320,7 +2320,7 @@ GLYPH_OF_THE_BEAST_AND_TRAP_LAUNCHER_AND_MARKED_FOR_DEATH_AND_LIBERATION = r(569
 	-- #else
 	["name"] = "Glyph of the Beast",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_THE_BLAZING_SAVIOUR = r(225560, {	-- Glyph of the Blazing Savior
 	["name"] = "Glyph of the Blazing Savior",
@@ -2332,11 +2332,11 @@ GLYPH_OF_THE_BLAZING_TRAIL = r(123781, {	-- Glyph of the Blazing Trail
 });
 GLYPH_OF_THE_BLOOD_WRAITH = r(225523, {	-- Glyph of the Blood Wraith
 	["name"] = "Glyph of the Blood Wraith",
-	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, DELETED_8_0_1 },
 });
 GLYPH_OF_THE_BULLSEYE = r(225537, {	-- Glyph of the Bullseye
 	["name"] = "Glyph of the Bullseye",
-	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, DELETED_8_0_1 },
 });
 GLYPH_OF_THE_CHILLED_SHELL = r(225524, {	-- Glyph of the Chilled Shell
 	["name"] = "Glyph of the Chilled Shell",
@@ -2356,7 +2356,7 @@ GLYPH_OF_THE_DOLPHIN = r(276059, {	-- Glyph of the Dolphin
 });
 GLYPH_OF_THE_EXORCIST = r(148273, {	-- Glyph of the Exorcist
 	["name"] = "Glyph of the Exorcist",
-	["timeline"] = { ADDED_5_4_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_4_0, DELETED_7_0_3 },
 });
 GLYPH_OF_THE_FERAL_CHAMELEON = r(225532, {	-- Glyph of the Feral Chameleon
 	["name"] = "Glyph of the Feral Chameleon",
@@ -2368,7 +2368,7 @@ GLYPH_OF_THE_FOREST_PATH = r(225533, {	-- Glyph of the Forest Path
 });
 GLYPH_OF_THE_GHOUL_AND_RAISE_DEAD_AND_MIND_FREEZE = r(57222, {	-- Glyph of the Ghoul / Glyph of Raise Dead [CATA+] / Glyph of Mind Freeze [5.0.4+]
 	["name"] = "Glyph of the Ghoul",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_THE_GOBLIN_ANTI_GRAV_FLARE = r(225539, {	-- Glyph of the Goblin Anti-Grav Flare
 	["name"] = "Glyph of the Goblin Anti-Grav Flare",
@@ -2384,11 +2384,11 @@ GLYPH_OF_THE_HAWK_AND_DAZZLED_PREY_AND_ANIMAL_BOND = r(57006, {	-- Glyph of Impr
 	-- #else
 	["name"] = "Glyph of Improved Aspect of the Hawk",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_THE_HEADHUNTER = r(225540, {	-- Glyph of the Headhunter
 	["name"] = "Glyph of the Headhunter",
-	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, DELETED_8_0_1 },
 });
 GLYPH_OF_THE_HEAVENS = r(124466, {	-- Glyph of the Heavens
 	["name"] = "Glyph of the Heavens",
@@ -2420,11 +2420,11 @@ GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK = r(58297, {	-- Glyph of the Pack / Gly
 	-- #else
 	["name"] = "Glyph of the Pack",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_THE_PENGUIN = r(58310, {	-- Glyph of the Penguin
 	["name"] = "Glyph of the Penguin",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_THE_QUEEN = r(192846, {	-- Glyph of the Queen
 	["name"] = "Glyph of the Queen",
@@ -2448,7 +2448,7 @@ GLYPH_OF_THE_SKELETON = r(148266, {	-- Glyph of the Skeleton
 });
 GLYPH_OF_THE_SKULLSEYE = r(225542, {	-- Glyph of the Skullseye
 	["name"] = "Glyph of the Skullseye",
-	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, DELETED_8_0_1 },
 });
 GLYPH_OF_THE_SPECTRAL_RAPTOR = r(192844, {	-- Glyph of the Spectral Raptor
 	["name"] = "Glyph of the Spectral Raptor",
@@ -2504,7 +2504,7 @@ GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE = r(58296, {	-- Glyph of the Wild 
 	-- #else
 	["name"] = "Glyph of the Wild",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS = r(58316, {	-- Glyph of the Wise / Glyph of Justice [CATA] / Glyph of Fire From the Heavens [MOP+]
 	-- #if AFTER MOP
@@ -2518,19 +2518,19 @@ GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS = r(58316, {	-- Glyph of the Wise / 
 });
 GLYPH_OF_THE_WRAITH_WALKER = r(192848, {	-- Glyph of the Wraith Walker
 	["name"] = "Glyph of the Wraith Walker",
-	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, DELETED_8_0_1 },
 });
 GLYPH_OF_THE_UNHOLY_WRAITH = r(225526, {	-- Glyph of the Unholy Wraith
 	["name"] = "Glyph of the Unholy Wraith",
-	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, DELETED_8_0_1 },
 });
 GLYPH_OF_THORNS = r(58289, {	-- Glyph of Thorns
 	["name"] = "Glyph of Thorns",
-	["timeline"] = { ADDED_3_0_2, "deleted 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_THUNDER = r(64287, {	-- Glyph of Thunder
 	["name"] = "Glyph of Thunder",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE = r(58346, {	-- Glyph of Thunder Clap / Glyph of Unending Rage [MOP+]
 	-- #if AFTER MOP
@@ -2538,11 +2538,11 @@ GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE = r(58346, {	-- Glyph of Thunder Clap / 
 	-- #else
 	["name"] = "Glyph of Thunder Clap",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_THUNDERSTORM = r(57253, {	-- Glyph of Thunderstorm
 	["name"] = "Glyph of Thunderstorm",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_TOTEM_OF_WRATH_AND_SHAMANISTIC_RAGE = r(64262, {	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage [CATA+]
 	-- #if AFTER CATA
@@ -2550,15 +2550,15 @@ GLYPH_OF_TOTEM_OF_WRATH_AND_SHAMANISTIC_RAGE = r(64262, {	-- Glyph of Totem of W
 	-- #else
 	["name"] = "Glyph of Totem of Wrath",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_TOUCH_OF_DEATH = r(124456, {	-- Glyph of Touch of Death
 	["name"] = "Glyph of Touch of Death",
-	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
 GLYPH_OF_TRICKS_OF_THE_TRADE = r(64310, {	-- Glyph of Tricks of the Trade
 	["name"] = "Glyph of Tricks of the Trade",
-	["timeline"] = { ADDED_3_1_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_TRUESHOT_AURA_AND_KILL_COMMAND_AND_MEND_PET = r(57012, {	-- Glyph of Trueshot Aura / Glyph of Kill Command [CATA+] / Glyph of Mend Pet [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2568,7 +2568,7 @@ GLYPH_OF_TRUESHOT_AURA_AND_KILL_COMMAND_AND_MEND_PET = r(57012, {	-- Glyph of Tr
 	-- #else
 	["name"] = "Glyph of Trueshot Aura",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_TURN_EVIL_AND_BURDEN_OF_GUILT = r(57036, {	-- Glyph of Turn Evil / Glyph of Burden of Guilt [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -2576,7 +2576,7 @@ GLYPH_OF_TURN_EVIL_AND_BURDEN_OF_GUILT = r(57036, {	-- Glyph of Turn Evil / Glyp
 	-- #else
 	["name"] = "Glyph of Turn Evil",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_TWILIGHT_BLOOM = r(233278, {	-- Glyph of Twilight Bloom
 	["name"] = "Glyph of Twilight Bloom",
@@ -2596,7 +2596,7 @@ GLYPH_OF_UNBREAKABLE_ARMOR_AND_PILLAR_OF_FROST = r(57226, {	-- Glyph of Unbreaka
 	-- #else
 	["name"] = "Glyph of Unbreakable Armor",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING = r(58288, {	-- Glyph of Unburdened Rebirth / Glyph of Blooming [MOP+]
 	-- #if AFTER MOP
@@ -2604,23 +2604,23 @@ GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING = r(58288, {	-- Glyph of Unburdened Reb
 	-- #else
 	["name"] = "Glyph of Unburdened Rebirth",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_UNENDING_BREATH = r(58336, {	-- Glyph of Unending Breath
 	["name"] = "Glyph of Unending Breath",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_UNHOLY_BLIGHT = r(64299, {	-- Glyph of Unholy Blight
 	["name"] = "Glyph of Unholy Blight",
-	["timeline"] = { ADDED_3_1_0, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_1_0, DELETED_4_0_1 },
 });
 GLYPH_OF_UNSTABLE_AFFLICTION = r(57276, {	-- Glyph of Unstable Affliction
 	["name"] = "Glyph of Unstable Affliction",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_VAMPIRIC_BLOOD = r(57227, {	-- Glyph of Vampiric Blood
 	["name"] = "Glyph of Vampiric Blood",
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_VANISH_AND_POISONS = r(58328, {	-- Glyph of Vanish / Glyph of Poisons [CATA+]
 	-- #if AFTER CATA
@@ -2628,11 +2628,11 @@ GLYPH_OF_VANISH_AND_POISONS = r(58328, {	-- Glyph of Vanish / Glyph of Poisons [
 	-- #else
 	["name"] = "Glyph of Vanish",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_VICTORY_RUSH = r(57170, {	-- Glyph of Victory Rush
 	["name"] = "Glyph of Victory Rush",
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_VIGILANCE_AND_FURIOUS_SUNDERING_AND_VICTORIOUS_THROW = r(64255, {	-- Glyph of Vigilance / Glyph of Furious Sundering [CATA+] / Glyph of Victorious Throw [6.0.2+]
 	-- #if AFTER 6.0.2
@@ -2642,7 +2642,7 @@ GLYPH_OF_VIGILANCE_AND_FURIOUS_SUNDERING_AND_VICTORIOUS_THROW = r(64255, {	-- Gl
 	-- #else
 	["name"] = "Glyph of Vigilance",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_VIGOR_AND_KICK = r(57130, {	-- Glyph of Vigor / Glyph of Kick [CATA+]
 	-- #if AFTER CATA
@@ -2650,7 +2650,7 @@ GLYPH_OF_VIGOR_AND_KICK = r(57130, {	-- Glyph of Vigor / Glyph of Kick [CATA+]
 	-- #else
 	["name"] = "Glyph of Vigor",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_VOIDWALKER_AND_FALLING_METEOR = r(57277, {	-- Glyph of Voidwalker / Glyph of Falling Meteor [MOP+]
 	-- #if AFTER MOP
@@ -2658,11 +2658,11 @@ GLYPH_OF_VOIDWALKER_AND_FALLING_METEOR = r(57277, {	-- Glyph of Voidwalker / Gly
 	-- #else
 	["name"] = "Glyph of Voidwalker",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_VOLLEY = r(57013, {	-- Glyph of Volley
 	["name"] = "Glyph of Volley",
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1" },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
 GLYPH_OF_WATER_BREATHING_AND_HEALING_STORM = r(58331, {	-- Glyph of Water Breathing / Glyph of Healing Storm [MOP+]
 	-- #if AFTER MOP
@@ -2670,7 +2670,7 @@ GLYPH_OF_WATER_BREATHING_AND_HEALING_STORM = r(58331, {	-- Glyph of Water Breath
 	-- #else
 	["name"] = "Glyph of Water Breathing",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_WATER_ELEMENTAL_AND_DRAGONS_BREATH_AND_SPELLSTEAL = r(56989, {	-- Glyph of Water Elemental / Glyph of Dragon's Breath [CATA+] / Glyph of Spellsteal [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2680,7 +2680,7 @@ GLYPH_OF_WATER_ELEMENTAL_AND_DRAGONS_BREATH_AND_SPELLSTEAL = r(56989, {	-- Glyph
 	-- #else
 	["name"] = "Glyph of Water Elemental",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_WATER_MASTERY_AND_WATER_SHIELD = r(57251, {	-- Glyph of Water Mastery / Glyph of Water Shield [CATA+]
 	-- #if AFTER CATA
@@ -2688,7 +2688,7 @@ GLYPH_OF_WATER_MASTERY_AND_WATER_SHIELD = r(57251, {	-- Glyph of Water Mastery /
 	-- #else
 	["name"] = "Glyph of Water Mastery",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF = r(58332, {	-- Glyph of Water Shield / Glyph of the Arctic Wolf [CATA] / Glyph of the Spectral Wolf [MOP+]
 	-- #if AFTER MOP
@@ -2706,7 +2706,7 @@ GLYPH_OF_WATER_WALKING_AND_TOTEMIC_ENCIRCLEMENT = r(58333, {	-- Glyph of Water W
 	-- #else
 	["name"] = "Glyph of Water Walking",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_WHIRLWIND_AND_RAGING_BLOW_AND_RAGING_WIND = r(57172, {	-- Glyph of Whirlwind / Glyph of Raging Blow [CATA+] / Glyph of Raging Wind [5.0.4+]
 	-- #if AFTER MOP
@@ -2716,11 +2716,11 @@ GLYPH_OF_WHIRLWIND_AND_RAGING_BLOW_AND_RAGING_WIND = r(57172, {	-- Glyph of Whir
 	-- #else
 	["name"] = "Glyph of Whirlwind",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_WILD_GROWTH = r(64270, {	-- Glyph of Wild Growth
 	["name"] = "Glyph of Wild Growth",
-	["timeline"] = { ADDED_3_1_0, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
 GLYPH_OF_WINDFURY_WEAPON_AND_CLEANSING_WATERS = r(57252, {	-- Glyph of Windfury Weapon / Glyph of Cleansing Waters [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2728,7 +2728,7 @@ GLYPH_OF_WINDFURY_WEAPON_AND_CLEANSING_WATERS = r(57252, {	-- Glyph of Windfury 
 	-- #else
 	["name"] = "Glyph of Windfury Weapon",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_WRATH_AND_NATURES_GRASP = r(56963, {	-- Glyph of Wrath / Glyph of Nature's Grasp [MOP+]
 	-- #if AFTER MOP
@@ -2736,7 +2736,7 @@ GLYPH_OF_WRATH_AND_NATURES_GRASP = r(56963, {	-- Glyph of Wrath / Glyph of Natur
 	-- #else
 	["name"] = "Glyph of Wrath",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_WRATHGUARD = r(225559, {	-- Glyph of Wrathguard
 	["name"] = "Glyph of Wrathguard",
@@ -2750,7 +2750,7 @@ GLYPH_OF_WYVERN_STING_AND_SOLACE = r(57014, {	-- Glyph of Wyvern Sting / Glyph o
 	-- #else
 	["name"] = "Glyph of Wyvern Sting",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_YULONS_GRACE = r(225547, {	-- Glyph of Yu'lon's Grace
 	["name"] = "Glyph of Yu'lon's Grace",
@@ -4277,7 +4277,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		-- #endif
 		spell(61288, {	-- Minor Inscription Research
-			["timeline"] = { "deleted 6.0.2" },
+			["timeline"] = { DELETED_6_0_2 },
 			["groups"] = insertionSort({
 				-- #if ANYCLASSIC
 				-- This list was pulled from WoWHead for Wrath Classic. (65 listed, as of 4/15/2023)
@@ -4450,7 +4450,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(61177, {	-- Northrend Inscription Research
-			["timeline"] = { "deleted 6.0.2" },
+			["timeline"] = { DELETED_6_0_2 },
 			["groups"] = insertionSort({
 				-- #if ANYCLASSIC
 				-- This list was pulled from WoWHead for Wrath Classic. (83 listed, as of 4/15/2023)
@@ -4736,7 +4736,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(57715),	-- Ink of the Sea
 			r(57712),	-- Ink of the Sky
 			r(52738, {	-- Ivory Ink
-				["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+				["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 			}),
 			r(57707),	-- Jadefire Ink
 			r(57704),	-- Lion's Ink
@@ -4767,19 +4767,19 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			-- #if BEFORE CATA
 			r(52739),	-- Armor Vellum / Enchanting Vellum [CATA+]
 			-- #endif
-			r(59499, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3"}}),	-- Armor Vellum II
-			r(59500, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3"}}),	-- Armor Vellum III
+			r(59499, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum II
+			r(59500, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum III
 			r(59387),	-- Certificate of Ownership
 			-- #if AFTER CATA
 			r(52739),	-- Enchanting Vellum [CATA+] / Armor Vellum
 			-- #endif
-			r(52840, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3"}}),	-- Weapon Vellum
-			r(59488, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3"}}),	-- Weapon Vellum II
-			r(59501, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3"}}),	-- Weapon Vellum III
+			r(52840, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum
+			r(59488, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum II
+			r(59501, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum III
 		}),
 		cat(108, {	-- Research
-			r(61288, {["timeline"]={"deleted 6.0.2"}}),	-- Minor Inscription Research
-			r(61177, {["timeline"]={"deleted 6.0.2"}}),	-- Northrend Inscription Research
+			r(61288, {["timeline"]={DELETED_6_0_2}}),	-- Minor Inscription Research
+			r(61177, {["timeline"]={DELETED_6_0_2}}),	-- Northrend Inscription Research
 			r(165461, {["timeline"]={ADDED_6_0_2}}),	-- Research: Celestial Ink
 			r(165464, {["timeline"]={ADDED_6_0_2}}),	-- Research: Ethereal Ink
 			r(165460, {["timeline"]={ADDED_6_0_2}}),	-- Research: Jadefire Ink
@@ -5045,7 +5045,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 	}))),
 	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 		r(195115, {	-- Inscription (Legion)
-			["timeline"]={ ADDED_7_0_3, "deleted 8.0.1" },
+			["timeline"]={ ADDED_7_0_3, DELETED_8_0_1 },
 			["collectible"] = false,	-- the profession itself is not a recipe
 		}),
 		r(264506, {["timeline"]={ADDED_8_0_1}}),	-- Legion Inscription

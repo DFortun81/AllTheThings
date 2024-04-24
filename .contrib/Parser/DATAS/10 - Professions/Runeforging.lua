@@ -6,7 +6,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 	["groups"] = {
 		{
 			["recipeID"] = 53341,	-- Rune of Cinderglacier
-			["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+			["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 		},
 		{
 			["recipeID"] = 326911,	-- Rune of Hysteria
@@ -14,7 +14,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 		},
 		{
 			["recipeID"] = 53331,	-- Rune of Lichbane
-			["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+			["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 		},
 		{
 			["recipeID"] = 53343,	-- Rune of Razorice
@@ -26,11 +26,11 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 		},
 		{
 			["recipeID"] = 54447,	-- Rune of Spellbreaking
-			["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+			["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 		},
 		{
 			["recipeID"] = 53342,	-- Rune of Spellshattering
-			["timeline"] = { ADDED_3_0_2, "deleted 7.0.3" },
+			["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 		},
 		{
 			["recipeID"] = 326855,	-- Rune of Spellwarding
@@ -38,11 +38,11 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 		},
 		{
 			["recipeID"] = 54446,	-- Rune of Swordbreaking
-			["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+			["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 		},
 		{
 			["recipeID"] = 53323,	-- Rune of Swordshattering
-			["timeline"] = { ADDED_3_0_2, "deleted 6.0.2" },
+			["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 		},
 		{
 			["recipeID"] = 327082,	-- Rune of the Apocalypse
@@ -54,7 +54,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 		},
 		{
 			["recipeID"] = 70164,	-- Rune of the Nerubian Carapace
-			["timeline"] = { ADDED_3_3_0, "deleted 6.0.2" },
+			["timeline"] = { ADDED_3_3_0, DELETED_6_0_2 },
 		},
 		{
 			["recipeID"] = 62158,	-- Rune of the Stoneskin Gargoyle

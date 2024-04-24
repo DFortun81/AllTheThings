@@ -2398,7 +2398,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 34982,	-- Enchanted Thorium Blades
 					["timeline"] = {
 						ADDED_2_0_1,
-						"deleted 5.0.4"
+						DELETED_5_0_4
 					},
 				}),
 				{
@@ -2571,7 +2571,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 34979,	-- Thick Bronze Darts
 					["timeline"] = {
 						ADDED_2_0_1,
-						"deleted 5.0.4"
+						DELETED_5_0_4
 					},
 				}),
 				{
@@ -2599,7 +2599,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 34981,	-- Whirling Steel Axes
 					["timeline"] = {
 						ADDED_2_0_1,
-						"deleted 5.0.4"
+						DELETED_5_0_4
 					},
 				}),
 				{
@@ -3100,7 +3100,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Felsteel Whisper Knives",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 34983,
 				},
 				-- #if AFTER 7.1.5.23360
@@ -3232,12 +3232,12 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Socket Bracer",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 55628,
 				},
 				{
 					["name"] = "Socket Gloves",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 55641,
 				},
 				{

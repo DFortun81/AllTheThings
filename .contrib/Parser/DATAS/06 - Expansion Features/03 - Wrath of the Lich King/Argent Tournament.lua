@@ -4701,7 +4701,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 72.4, 20.8, ICECROWN },
 					["groups"] = {
 						epicurean(100, i(46349, {	-- Chef's Hat
-								["timeline"] = { "deleted 7.0.3.22248" },
+								["timeline"] = { DELETED_7_0_3 },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
 								["timeline"] = { ADDED_7_0_3 },

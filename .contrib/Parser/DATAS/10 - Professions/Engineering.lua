@@ -1443,32 +1443,32 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Crafted Heavy Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 3930,
 				},
 				{
 					["name"] = "Crafted Light Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 3920,
 				},
 				{
 					["name"] = "Crafted Solid Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 3947,
 				},
 				{
 					["name"] = "Hi-Impact Mithril Slugs",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 12596,
 				},
 				{
 					["name"] = "Mithril Gyro-Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 12621,
 				},
 				{
 					["name"] = "Thorium Shells",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 19800,
 				},
 			},
@@ -1619,7 +1619,7 @@ profession(ENGINEERING, {
 				-- #endif
 				{
 					["name"] = "Salt Shaker",
-					["timeline"] = { "deleted 6.0.2" },
+					["timeline"] = { DELETED_6_0_2 },
 					["recipeID"] = 19567,
 				},
 				-- #if SEASON_OF_DISCOVERY
@@ -1988,12 +1988,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Copper Modulator",
-					["timeline"] = { "deleted 4.3.0" },
+					["timeline"] = { DELETED_4_3_0 },
 					["recipeID"] = 3926,
 				},
 				{
 					["name"] = "Copper Tube",
-					["timeline"] = { "deleted 4.3.0" },
+					["timeline"] = { DELETED_4_3_0 },
 					["recipeID"] = 3924,
 				},
 				{
@@ -2124,7 +2124,7 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Fel Iron Shells",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 30346,
 				},
 			},
@@ -2136,12 +2136,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Adamantite Arrow Maker",
-					["timeline"] = { ADDED_2_1_0, "deleted 4.0.1" },
+					["timeline"] = { ADDED_2_1_0, DELETED_4_0_1 },
 					["recipeID"] = 43676,
 				}),
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Adamantite Shell Machine",
-					["timeline"] = { ADDED_2_1_0, "deleted 4.0.1" },
+					["timeline"] = { ADDED_2_1_0, DELETED_4_0_1 },
 					["recipeID"] = 30347,
 				}),
 				{
@@ -2466,12 +2466,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Mammoth Cutters",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 56474,
 				},
 				{
 					["name"] = "Saronite Razorheads",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 56475,
 				},
 			},

@@ -1222,7 +1222,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				-- #endif
 				{
 					["name"] = "Magic Resistance Potion",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 11453
 				},
 				{
@@ -1272,7 +1272,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Minor Magic Resistance Potion",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 3172
 				},
 				{
@@ -1489,7 +1489,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of Waterwalking",	-- See later in SoD TBC if this is true
-					["timeline"] = { ADDED_2_4_0, "deleted 3.0.1" },
+					["timeline"] = { ADDED_2_4_0, DELETED_3_0_2 },
 					["recipeID"] = 11447,
 				},
 				{

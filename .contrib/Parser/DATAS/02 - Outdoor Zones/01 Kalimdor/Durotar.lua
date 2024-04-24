@@ -3987,7 +3987,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(4882, {	-- Benedict's Key
 					["cr"] = 3192,	-- Lieutenant Benedict
 					["coord"] = { 59.6, 58.2, DUROTAR },
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 				}),
 				i(769, {	-- Chunk of Boar Meat
 					["coord"] = { 53.6, 59.6, DUROTAR },

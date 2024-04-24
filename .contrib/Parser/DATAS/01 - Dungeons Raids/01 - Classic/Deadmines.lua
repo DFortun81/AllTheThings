@@ -673,7 +673,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					}),
 					-- #endif
 					i(2874, {	-- An Unsent Letter
-						["timeline"] = { "deleted 4.0.3" },
+						["timeline"] = { DELETED_4_0_3 },
 					}),
 					i(3637),	-- Head of VanCleef
 					-- #if BEFORE 4.0.3

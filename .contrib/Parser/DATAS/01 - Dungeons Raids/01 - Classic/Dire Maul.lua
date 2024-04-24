@@ -1272,10 +1272,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(22304),	-- Ironweave Gloves
 							i(22472),	-- Boots of Ferocity
 							i(22401, {	-- Libram of Hope
-								["timeline"] = { "deleted 5.0.4" },
+								["timeline"] = { DELETED_5_0_4 },
 							}),
 							i(22345, {	-- Totem of Rebirth
-								["timeline"] = { "deleted 5.0.4" },
+								["timeline"] = { DELETED_5_0_4 },
 							}),
 						},
 					}
@@ -1399,7 +1399,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18497),	-- Sublime Wristguards
 							-- #endif
 							i(18268, {	-- Gordok Inner Door Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 						},
 					}),
@@ -1533,7 +1533,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18522),	-- Band of the Ogre King
 							applyclassicphase(PHASE_THREE, i(19258)),	-- Ace of Warlords
 							i(18780, {	-- Top Half of Advanced Armorsmithing: Volume I
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 						},
 					}),

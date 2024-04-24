@@ -3266,7 +3266,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { "deleted 4.0.1" },
+								["timeline"] = { DELETED_4_0_1 },
 							}),
 						},
 					}),
@@ -3287,7 +3287,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { "deleted 4.0.1" },
+								["timeline"] = { DELETED_4_0_1 },
 							}),
 						},
 					}),

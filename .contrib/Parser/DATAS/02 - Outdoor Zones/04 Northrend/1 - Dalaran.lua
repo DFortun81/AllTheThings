@@ -3,19 +3,19 @@
 ---------------------------------------------------
 local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(1, i(44711, {	-- Argent Crusade Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(43950, {	-- Kirin Tor Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(49702, {	-- Sons of Hodir Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(44710, {	-- Wyrmrest Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(35, i(47732)),	-- Band of the Invoker
 	emot(25, i(47660, {	-- Blades of the Sable Cross
@@ -2405,19 +2405,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 27641 },	-- Centrifuge Construct
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -2437,19 +2437,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 27744 },	-- Infinite Agent
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -2469,19 +2469,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 28838 },	-- Titanium Vanguard
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -2501,19 +2501,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 26696 },	-- Ymirjar Berserker
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -3295,7 +3295,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							epicurean(100, i(46349, {	-- Chef's Hat
-								["timeline"] = { "deleted 7.0.3.22248" },
+								["timeline"] = { DELETED_7_0_3 },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -3805,13 +3805,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
 						["groups"] = {
 							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { "deleted 4.0.1" },
+								["timeline"] = { DELETED_4_0_1 },
 							}),
 							i(50168, {	-- Technique: Glyph of Quick Decay
-								["timeline"] = { "deleted 4.0.1" },
+								["timeline"] = { DELETED_4_0_1 },
 							}),
 							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
-								["timeline"] = { "deleted 4.0.1" },
+								["timeline"] = { DELETED_4_0_1 },
 							}),
 						},
 					}),
@@ -3948,7 +3948,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							epicurean(100, i(46349, {	-- Chef's Hat
-								["timeline"] = { "deleted 7.0.3.22248" },
+								["timeline"] = { DELETED_7_0_3 },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
 								["timeline"] = { ADDED_7_0_3 },

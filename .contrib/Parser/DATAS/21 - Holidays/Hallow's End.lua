@@ -2231,7 +2231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { ADDED_2_2_2 },
 					}),
 					i(33176, {	-- Flying Broom (MOUNT!)
-						["timeline"] = { ADDED_2_2_2, "deleted 4.2.2" },
+						["timeline"] = { ADDED_2_2_2, DELETED_4_2_2 },
 					}),
 					i(37011, {	-- Magic Broom (MOUNT!)
 						["timeline"] = { ADDED_2_4_3 },
@@ -2352,7 +2352,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #if NOT ANYCLASSIC
 			-- #if BEFORE LEGION
 			i(33176, {	-- Flying Broom (MOUNT!)
-				["timeline"] = { ADDED_2_2_2, "deleted 4.2.2" },
+				["timeline"] = { ADDED_2_2_2, DELETED_4_2_2 },
 			}),
 			i(33182, {	-- Swift Flying Broom (MOUNT!)
 				["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },

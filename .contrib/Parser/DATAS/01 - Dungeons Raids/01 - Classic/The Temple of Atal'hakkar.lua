@@ -572,7 +572,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(6181),	-- Fetish of Hakkar
 				i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 					["cr"] = 5259,	-- Atal'ai Witch Doctor
 				}),
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)

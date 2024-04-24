@@ -1953,7 +1953,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 					["groups"] = {
 						ach(3814, {	-- Resilience Will Fix It (25 player)
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 						}),
 						i(47285),	-- Dual-Blade Butcher
 						i(47287),	-- Bastion of Resolve
@@ -1992,7 +1992,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 					["groups"] = {
 						ach(3814, {	-- Resilience Will Fix It (25 player)
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 						}),
 						i(47069),	-- Justicebringer
 						i(47079),	-- Bastion of Purity

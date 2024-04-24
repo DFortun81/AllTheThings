@@ -170,7 +170,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_5_0_4 },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
-			["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
+			["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 		})),
 		ach(5755, {	-- Thirty Tabards
 			["timeline"] = { ADDED_4_1_0 },

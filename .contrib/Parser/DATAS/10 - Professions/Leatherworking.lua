@@ -1593,12 +1593,12 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["name"] = "Heavy Leather Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 9194,
 				},
 				{
 					["name"] = "Heavy Quiver",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 9193,
 				},
 				{
@@ -1607,22 +1607,22 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Light Leather Quiver",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 9060,
 				},
 				{
 					["name"] = "Quickdraw Quiver",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 14930,
 				},
 				{
 					["name"] = "Small Leather Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 9062,
 				},
 				{
 					["name"] = "Thick Leather Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 14932,
 				},
 			},
@@ -2956,7 +2956,7 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["name"] = "Arcane Armor Kit",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 35524,
 				},
 				{
@@ -2973,12 +2973,12 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Flame Armor Kit",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 35521,
 				},
 				{
 					["name"] = "Frost Armor Kit",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 35522,
 				},
 				{
@@ -3000,7 +3000,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nature Armor Kit",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 35523,
 				},
 				{
@@ -3013,7 +3013,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Shadow Armor Kit",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 35520,
 				},
 				{
@@ -3033,12 +3033,12 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(TBC_PHASE_FOUR, {
 					["name"] = "Knothide Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 44343,
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, {
 					["name"] = "Knothide Quiver",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 44344,
 				}),
 				{
@@ -3047,12 +3047,12 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Netherscale Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 44768,
 				}),
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Quiver of a Thousand Feathers",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 44359,
 				}),
 				{
@@ -3715,7 +3715,7 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["name"] = "Dragonscale Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 60645,
 				},
 				{
@@ -3724,7 +3724,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nerubian Reinforced Quiver",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 60647,
 				},
 				{

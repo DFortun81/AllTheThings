@@ -2056,7 +2056,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20513, {	-- Abyssal Crest
-							["timeline"] = { REMOVED_4_0_3, "deleted 7.1.5" },
+							["timeline"] = { REMOVED_4_0_3, DELETED_7_1_5 },
 							["crs"] = {
 								15211,	-- Azure Templar <Abyssal Council>
 								15209,	-- Crimson Templar <Abyssal Council>
@@ -2141,7 +2141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20514, {	-- Abyssal Signet
-							["timeline"] = { REMOVED_4_0_3, "deleted 7.1.5" },
+							["timeline"] = { REMOVED_4_0_3, DELETED_7_1_5 },
 							["crs"] = {
 								15206,	-- The Duke of Cynders <Abyssal Council>
 								15207,	-- The Duke of Fathoms <Abyssal Council>
@@ -2230,7 +2230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20515, {	-- Abyssal Scepter
-							["timeline"] = { REMOVED_4_0_3, "deleted 7.1.5" },
+							["timeline"] = { REMOVED_4_0_3, DELETED_7_1_5 },
 							["crs"] = {
 								15205,	-- Baron Kazum <Abyssal High Council>
 								15204,	-- High Marshal Whirlaxis <Abyssal High Council>
@@ -2705,7 +2705,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE 4.3.0
 			prof(SKINNING, {
 				i(20501, {	-- Heavy Silithid Carapace
-					["timeline"] = { "deleted 4.3.0" },
+					["timeline"] = { DELETED_4_3_0 },
 					["crs"] = {
 						11723,	-- Hive'Ashi Sandstalker
 						11730,	-- Hive'Regal Ambusher
@@ -2715,7 +2715,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(20500, {	-- Light Silithid Carapace
-					["timeline"] = { "deleted 4.3.0" },
+					["timeline"] = { DELETED_4_3_0 },
 					["crs"] = {
 						13136,	-- Hive'Ashi Drone
 						11698,	-- Hive'Ashi Stinger
@@ -2725,7 +2725,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(20498, {	-- Silithid Chitin
-					["timeline"] = { "deleted 4.3.0" },
+					["timeline"] = { DELETED_4_3_0 },
 				}),
 			}),
 			-- #endif

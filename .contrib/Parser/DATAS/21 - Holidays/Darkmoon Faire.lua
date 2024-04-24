@@ -3343,7 +3343,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { ADDED_4_3_0 },
 					}),
 					i(97987, {	-- Well-Worn Blindfold
-						["timeline"] = { ADDED_5_3_0, "deleted 7.0.3" },
+						["timeline"] = { ADDED_5_3_0, DELETED_7_0_3 },
 					}),
 				},
 			}),

@@ -2794,7 +2794,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(5839, {	-- Journal Page
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 					["cr"] = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>
 				}),
 				-- #endif
@@ -2839,7 +2839,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if BEFORE 4.0.3
 				i(5568, {	-- Smooth Pebble
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["crs"] = {
 						2156,	-- Cracked Golem
 						2157,	-- Stone Behemoth

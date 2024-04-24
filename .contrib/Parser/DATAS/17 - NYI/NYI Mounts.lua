@@ -127,13 +127,13 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			-- #if ANYCLASSIC
 			i(33183, {	-- Old Magic Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 			i(33182, {	-- Swift Flying Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 			i(33184, {	-- Swift Magic Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 			-- #endif
 		})),
@@ -178,7 +178,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 2.2.2
 		expansion(EXPANSION.TBC, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_2 } }, {
 			i(33176, {	-- Flying Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 		})),
 		-- #endif

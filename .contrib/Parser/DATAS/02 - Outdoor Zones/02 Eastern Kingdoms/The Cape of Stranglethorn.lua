@@ -1381,7 +1381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61602, {	-- Ninja Star
-							["timeline"] = { ADDED_4_0_3, "deleted 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 						}),
 						i(61604, {	-- Other-Eye Patch
 							["timeline"] = { ADDED_4_0_3 },

@@ -1069,7 +1069,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(7561),	-- Schematic: Goblin Jumper Cables (RECIPE!)
 					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 					i(7192, {	-- Schematic: Goblin Rocket Boots
-						["timeline"] = { "deleted 3.0.2" },
+						["timeline"] = { DELETED_3_0_2 },
 					}),
 					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
 					i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
@@ -1798,7 +1798,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(7560),	-- Schematic: Gnomish Universal Remote (RECIPE!)
 							i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 							i(7192, {	-- Schematic: Goblin Rocket Boots
-								["timeline"] = { "deleted 3.0.2" },
+								["timeline"] = { DELETED_3_0_2 },
 							}),
 							i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
 							i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
@@ -1843,7 +1843,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(7561),	-- Schematic: Goblin Jumper Cables (RECIPE!)
 							i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 							i(7192, {	-- Schematic: Goblin Rocket Boots
-								["timeline"] = { "deleted 3.0.2" },
+								["timeline"] = { DELETED_3_0_2 },
 							}),
 							i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
 							i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)

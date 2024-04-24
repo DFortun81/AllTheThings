@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65978),	-- Electrified Leggings
 						i(65999),	-- Pauldrons of Zul'Farrak
 						i(66010, {	-- Star of the Fool
-							["timeline"] = { ADDED_4_0_3, "deleted 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 						}),
 					},
 				}),

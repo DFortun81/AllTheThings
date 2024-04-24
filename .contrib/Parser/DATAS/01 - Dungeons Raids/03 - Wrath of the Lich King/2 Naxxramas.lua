@@ -1359,7 +1359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							["lvl"] = lvlsquish(78, 78, 30),
 							["groups"] = {
 								i(44582, {	-- Key to the Focusing Iris
-									["timeline"] = { "deleted 4.2.0" },
+									["timeline"] = { DELETED_4_2_0 },
 									-- #if ANYCLASSIC
 									["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 									-- #endif
@@ -2037,7 +2037,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							["lvl"] = lvlsquish(78, 78, 30),
 							["groups"] = {
 								i(44581, {	-- Heroic Key to the Focusing Iris
-									["timeline"] = { "deleted 4.2.0" },
+									["timeline"] = { DELETED_4_2_0 },
 								}),
 							},
 						}),

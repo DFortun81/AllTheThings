@@ -12,7 +12,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(WRATH_PHASE_FOUR, {
 						["name"] = "Shatter Rounds",
-						["timeline"] = { ADDED_3_3_0, "deleted 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },
 						["recipeID"] = 72952,
 					}),
 				},
@@ -106,7 +106,7 @@ profession(ENGINEERING, {
 					}),
 					{
 						["name"] = "The Mortar: Reloaded",
-						["timeline"] = { "deleted 4.0.1" },
+						["timeline"] = { DELETED_4_0_1 },
 						["recipeID"] = 13240,
 					},
 				},
