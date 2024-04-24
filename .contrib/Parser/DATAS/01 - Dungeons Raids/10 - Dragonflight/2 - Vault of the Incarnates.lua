@@ -525,28 +525,28 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19564, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Storms
 					crit(64929, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64930, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64931, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64932, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64933, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64934, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64935, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64936, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
 				ach(19565, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Storms
@@ -598,6 +598,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64952, {	-- Raszageth the Storm-Eater
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+					}),
+					crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
 						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
