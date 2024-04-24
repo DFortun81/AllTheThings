@@ -509,10 +509,10 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		-- ScrollFrame
 		---@class ATTEditBoxScrollFrame: ScrollFrame
 		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", f, "UIPanelScrollFrameTemplate")
+		---@diagnostic disable-next-line: undefined-field
+		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 4)
 		sf:SetPoint("LEFT", 16, 0)
 		sf:SetPoint("RIGHT", -32, 0)
-		---@diagnostic disable-next-line: undefined-field
-		sf:SetPoint("BOTTOM", f.Button, "TOP", 0, 0)
 		f.ScrollFrame = sf;
 
 		-- Label (conditionally create)
@@ -536,7 +536,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		eb:SetFontObject("ChatFontNormal")
 		eb:SetScript("OnEscapePressed", function() f:Hide() end)
 		---@diagnostic disable-next-line: undefined-field
-		f.Button:SetScript("OnClick", function (self, button, down)
+		ATTEditBoxButton:SetScript("OnClick", function (self, button, down)
 			if self:GetParent().OnClick then
 				self:GetParent().OnClick(eb:GetText());
 			end
