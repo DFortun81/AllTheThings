@@ -1440,12 +1440,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #else
 						["description"] = "Avoid him and loot his chest for a key to open the door.",
 						["groups"] = {
-							i(18266),	-- Gordok Courtyard Key
+							i(18266, {	-- Gordok Courtyard Key
+								["provider"] = { "o", 179516 },	-- Fengus's Chest
+							}),
 						},
 						-- #endif
 					}),
 					e(414, {	-- Guard Slip'kik
 						["creatureID"] = 14323,
+						["provider"] = { "o", 179485 },	-- Broken Trap
 						["description"] = "Trap him using the Broken Trap.",
 						-- #if AFTER 4.0.3
 						["sourceQuest"] = 27118,	-- A Broken Trap
