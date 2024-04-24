@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					})),
 					i(206028, {	-- Chest of Gold
 						["cost"] = {
-							-- #if AFTER 10.2.6.60000
+							-- #if AFTER 10.2.6.54358
 							{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 2 },
 							-- #elseif AFTER 10.2.0
 							{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 },

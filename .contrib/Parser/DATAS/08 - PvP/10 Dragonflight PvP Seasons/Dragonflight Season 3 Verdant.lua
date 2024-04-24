@@ -1640,7 +1640,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			})),
 			filter(RECIPES, {
-				-- #if AFTER 10.2.6.60000
+				-- #if AFTER 10.2.6.54358
 				n(214682,	-- Mittzi Threadweave <Verdant Combatant Recipes>
 				bubbleDownSelf({["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 					["coord"] = { 44.7, 42.7, VALDRAKKEN },
@@ -1688,7 +1688,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						i(208312),	-- Technique: Verdant Combatant's Emblem (RECIPE!)
 						i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity (RECIPE!)
 						i(208310),	-- Technique: Verdant Combatant's Medallion (RECIPE!)
-				-- #if AFTER 10.2.6.60000
+				-- #if AFTER 10.2.6.54358
 					}),
 				})),
 				-- #endif
