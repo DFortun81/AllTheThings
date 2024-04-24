@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 52.3, 68.6, 1382 },
 				["timeline"] = {
 					"added 8.1.5.29701",
-					"removed 8.2",	-- Retired with the implementation of 8.2
+					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),
@@ -653,7 +653,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["maps"] = { 1382 },	-- Uldir (Scenario)
 				["timeline"] = {
 					"added 8.1.5.29701",
-					"removed 8.2",	-- Retired with the implementation of 8.2
+					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),
@@ -997,7 +997,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 57.8, 50.4, NAZMIR },
 				["timeline"] = {
 					"added 8.1.5.29701",
-					"removed 8.2",	-- Retired with the implementation of 8.2
+					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),

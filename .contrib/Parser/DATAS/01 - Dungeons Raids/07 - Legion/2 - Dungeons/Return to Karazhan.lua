@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				q(44556, {	-- Return to Karazhan
 					["qg"] = 90417,	-- Archmage Khadgar
 					["coord"] = { 28.8, 48.6, LEGION_DALARAN },
-					["timeline"] = { "added 7.1.0", "removed 7.3.0" },
+					["timeline"] = { "added 7.1.0", REMOVED_7_3_0 },
 					["lvl"] = 110,
 				}),
 				q(45291, {	-- Return to Karazhan: Book Wyrms

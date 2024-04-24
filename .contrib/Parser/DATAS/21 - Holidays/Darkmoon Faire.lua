@@ -798,7 +798,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["repeatable"] = true,
 				["groups"] = {
 					i(19292, {	-- Last Month's Mutton
-						["timeline"] = { "removed 7.2.0" },
+						["timeline"] = { REMOVED_7_2_0 },
 					}),
 				},
 			}),
@@ -908,7 +908,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["repeatable"] = true,
 				["groups"] = {
 					i(19293, {	-- Last Year's Mutton
-						["timeline"] = { "removed 7.2.0" },
+						["timeline"] = { REMOVED_7_2_0 },
 					}),
 				},
 			}),
@@ -1203,7 +1203,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -1247,7 +1247,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -1291,7 +1291,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -1334,7 +1334,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -1970,7 +1970,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -2234,7 +2234,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				["maxReputation"] = { 909, EXALTED },	-- Darkmoon Faire, Exalted.
-				["timeline"] = { ADDED_4_3_0, "removed 8.0.1" },
+				["timeline"] = { ADDED_4_3_0, REMOVED_8_0_1 },
 				["requireSkill"] = FIRST_AID,
 				["isMonthly"] = true,
 				-- #if BEFORE 8.0.1
@@ -2414,7 +2414,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -2760,7 +2760,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -2827,7 +2827,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.5.0", ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -3328,7 +3328,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { ADDED_4_3_0 },
 					}),
 					i(93730, {	-- Darkmoon Top Hat
-						["timeline"] = { ADDED_5_2_0, "removed 8.2.5.31958" },
+						["timeline"] = { ADDED_5_2_0, REMOVED_8_2_5 },
 					}),
 					i(171364, {	-- Darkmoon Top Hat
 						["timeline"] = { "added 8.2.5.31958" },
@@ -3635,91 +3635,91 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 
 					-- Old Heirlooms
 					darkmoonprizeticket(50, i(42944, {	-- Balanced Heartseeker
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(42943, {	-- Bloodied Arcanite Reaper
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(69893, {	-- Bloodsoaked Skullforge Reaver
-						["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(69889, {	-- Burnished Breastplate of Might
-						["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(69890, {	-- Burnished Pauldrons of Might
-						["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(79131, {	-- Burnished Warden Staff
-						["timeline"] = { "added 5.0.1.15464", "removed 6.1.0.19445" },
+						["timeline"] = { "added 5.0.1.15464", REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42950, {	-- Champion Herod's Shoulders
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(48677, {	-- Champion's Deathdealer Breastplate
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(42946, {	-- Charmed Ancient Bone Bow
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42948, {	-- Devout Aurastone Hammer
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(42947, {	-- Dignified Headmaster's Charge
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(70, i(42992, {	-- Discerning Eye of the Beast
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(93902, {	-- Flamescarred Draconian Deflector
-						["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(93904, {	-- Musty Tome of the Lost
-						["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42951, {	-- Mystical Pauldrons of Elements
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(48683, {	-- Mystical Vest of Elements
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(48685, {	-- Polished Breastplate of Valor
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42949, {	-- Polished Spaulders of Valor
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(48687, {	-- Preened Ironfeather Breastplate
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42984, {	-- Preened Ironfeather Shoulders
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(48718, {	-- Repurposed Lava Dredger
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42952, {	-- Stained Shadowcraft Spaulders
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(48689, {	-- Stained Shadowcraft Tunic
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(70, i(42991, {	-- Swift Hand of Justice
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42985, {	-- Tattered Dreadmist Mantle
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(48691, {	-- Tattered Dreadmist Robe
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(48716, {	-- Venerable Mass of McGowan
-						["timeline"] = { "removed 6.1.0.19445" },
+						["timeline"] = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(93903, {	-- Weathered Observer's Shield
-						["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
 
 					-- New Heirlooms
@@ -3930,7 +3930,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					})),
 					darkmoonprizeticket(1, i(19291)),	-- Darkmoon Storage Box
 					darkmoonprizeticket(10, i(93730, {	-- Darkmoon Top Hat
-						["timeline"] = { ADDED_5_2_0, "removed 8.2.5.31958" },
+						["timeline"] = { ADDED_5_2_0, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(10, i(171364, {	-- Darkmoon Top Hat
 						["timeline"] = { "added 8.2.5.31958" },
@@ -4083,11 +4083,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 
 					i(75029, {	-- Beer-Basted Short Ribs
 						["lore"] = "This may be made of dwarves.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 					i(75031, {	-- Draenic Dumplings
 						["lore"] = "This may be made of draenei.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 					i(75034, {	-- Forsaken Foie Gras
 						["lore"] = "This may be made of undead.",
@@ -4095,7 +4095,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					i(75030, {	-- Gnomeregan Gnuggets
 						["lore"] = "This may be made of gnomes.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 					i(75033, {	-- Green Ham & Eggs
 						["lore"] = "This may be made of orcs. Hope the eggs are really gull ones...",
@@ -4106,30 +4106,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 7.2.5.23993" },
 					}),
 					darkmoonprizeticket(1, i(19292, {	-- Last Month's Mutton
-						["timeline"] = { "removed 7.2.0" },
+						["timeline"] = { REMOVED_7_2_0 },
 					})),
 					darkmoonprizeticket(1, i(19293, {	-- Last Year's Mutton
-						["timeline"] = { "removed 7.2.0" },
+						["timeline"] = { REMOVED_7_2_0 },
 					})),
 					i(75032, {	-- Mulgore Meat Pie
 						["lore"] = "This may be made of tauren.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 					i(75036, {	-- Silvermoon Steak
 						["lore"] = "This may be made of blood elves.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 					i(75028, {	-- Stormwind Surprise
 						["lore"] = "This may be made of humans.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 					i(75027, {	-- Teldrassil Tenderloin
 						["lore"] = "This may be made of night elves.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 					i(75035, {	-- Troll Tartare
 						["lore"] = "This may be made of trolls.",
-						["timeline"] = { ADDED_4_3_0, "removed 7.2.5.23993" },
+						["timeline"] = { ADDED_4_3_0, REMOVED_7_2_5 },
 					}),
 				},
 			}),

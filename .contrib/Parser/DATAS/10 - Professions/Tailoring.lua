@@ -1337,7 +1337,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of the Void",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 18458,
 					-- #if TBC
 					["classes"] = { WARLOCK },
@@ -2895,22 +2895,22 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Darkglow Embroidery",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 55769
 				},
 				{
 					["name"] = "Lightweave Embroidery",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 55642
 				},
 				{
 					["name"] = "Master's Spellthread",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 56034
 				},
 				{
 					["name"] = "Sanctified Spellthread",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 56039
 				},
 				{
@@ -2923,7 +2923,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Swordguard Embroidery",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 55777
 				},
 			}
@@ -4479,7 +4479,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Imbued Silkweave Epaulets",	-- Rank 3
-					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
+					["timeline"] = { REMOVED_8_0_1, ADDED_10_0_7 },
 					["previousRecipeID"] = 185948,
 					["recipeID"] = 185956
 				},

@@ -578,23 +578,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 205198 },	-- Pile of Explosives
 					["sourceQuest"] = 27092,	-- Cataclysm in the Catacombs
 					["coord"] = { 50.4, 42.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63919, {	-- Corruption-Seeking Chestguard
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 						i(63918, {	-- Detective's Shoulderplates
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 						i(63920, {	-- Treads of Revelation
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 						i(63921, {	-- Truth-Seeker Belt
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 						i(63917, {	-- Truthbreaker Shield
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 					},
 				}),
@@ -704,7 +704,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 61796,	-- King Varian Wrynn
 					["sourceQuest"] = 30988,	-- The Alliance Way
 					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { "added 5.0.4", "removed 7.0.3" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_0_3 },
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(58496, {	-- An Unwelcome Advisor
@@ -1118,7 +1118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
 					["sourceQuest"] = 27072,	-- The Old Barracks
 					["coord"] = { 37.2, 56.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7642, {	-- Collection of Goods
@@ -1451,7 +1451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27060,	-- Unholy Cow
 					},
 					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58708, {	-- Fame Waits for Gnome One
@@ -1623,7 +1623,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 132255,	-- Master Mathias Shaw
 					["sourceQuest"] = 50371,	-- Summons to Stormwind
 					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(39800, {	-- Greymane's Gambit
@@ -1748,7 +1748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44293,	-- Anduin Wrynn <Prince of Stormwind>
 					["sourceQuest"] = 26997,	-- The Usual Suspects
 					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1939, {	-- High Sorcerer Andromath
@@ -2346,17 +2346,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44749,	-- Supply Sergeant Graves
 					["sourceQuest"] = 26975,	-- Rallying the Fleet
 					["coord"] = { 33.2, 39.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(63927, {	-- Machine-Linker Girdle
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 						i(63926, {	-- Reconstructing Hauberk
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 						i(63925, {	-- Scavenger Bracers
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						}),
 					},
 				}),
@@ -2379,7 +2379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26960, {	-- My Son, the Prince
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25105, {	-- Nibbler! No!
@@ -2467,7 +2467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26997,	-- The Usual Suspects
 					},
 					["coord"] = { 85.7, 31.6, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26153, {	-- Penny's Pumpkin Pancakes
@@ -2508,7 +2508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 					["sourceQuest"] = 26960,	-- My Son, the Prince
 					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2281, {	-- Redridge Rendezvous
@@ -2823,7 +2823,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(50371, {	-- Summons to Stormwind
 					["qg"] = 132255,	-- Master Mathias Shaw
 					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1688, {	-- Surena Caledon
@@ -2856,7 +2856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 61796,	-- King Varian Wrynn
 					["sourceQuest"] = 30987,	-- Joining the Alliance
 					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { "added 5.0.4", "removed 7.0.3" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_0_3 },
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(434, {	-- The Attack!
@@ -3274,7 +3274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
 					["sourceQuest"] = 28807,	-- Expert Opinion
 					["coord"] = { 81.2, 63.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2758, {	-- The Origins of Smithing
@@ -3765,7 +3765,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2439,	-- Major Samuelson <Stormwind City Guard>
 					["sourceQuest"] = 26977,	-- Twilight Investigation
 					["coord"] = { 85.1, 31.0, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7641, {	-- The Work of Grimand Elmore
@@ -3856,7 +3856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 					["sourceQuest"] = 26960,	-- My Son, the Prince
 					["coord"] = { 85.8, 31.7, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28238, {	-- Twilight Shores (1/2)
@@ -3891,7 +3891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44807,	-- Farmer Wollerton
 					["sourceQuest"] = 27044,	-- Peasant Problems
 					["coord"] = { 52.0, 5.8, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1938, {	-- Ur's Treatise on Shadow Magic
@@ -6304,7 +6304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(44957, {	-- Greater Inscription of the Gladiator
-							["timeline"] = { ADDED_3_0_8, "removed 7.0.1" },
+							["timeline"] = { ADDED_3_0_8, REMOVED_7_0_3 },
 						}),
 						moh(3, i(68772, {	-- Greater Inscription of Vicious Intellect
 							["timeline"] = { ADDED_4_0_6 },
@@ -6394,7 +6394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- Crieve NOTE: I haven't confirmed this on Live, so not gonna pop it in until I can check it.
 				n(12805, {	-- Officer Areyn <Accessories Quartermaster>
 					["coord"] = { 73.8, 53.4, STORMWIND_CITY },
-					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, "removed 7.0.1" },
+					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
 					["groups"] = {
 						i(18664),	-- A Treatise on Military Ranks
 						i(15196),	-- Private's Tabard

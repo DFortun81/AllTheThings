@@ -1546,7 +1546,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Flask of Chromatic Resistance",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 17638,
 				},
 				{
@@ -1920,7 +1920,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Flask of Chromatic Wonder",
-					["timeline"] = { "removed 5.0.1.20000" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 42736
 				}),
 				{
@@ -2248,7 +2248,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Flask of the North",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 67025
 				},
 				{
@@ -2257,7 +2257,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Lesser Flask of Resistance",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 62213
 				},
 			}
@@ -2810,7 +2810,7 @@ itemrecipe("Recipe: Fel Regeneration Potion", 31681, 38962, TBC_PHASE_ONE);
 itemrecipe("Recipe: Fel Mana Potion", 31682, 38961, TBC_PHASE_ONE);
 itemrecipe("Recipe: Earthen Elixir", 32070, 39637, TBC_PHASE_ONE);
 itemrecipe("Recipe: Elixir of Ironskin", 32071, 39639, TBC_PHASE_ONE);
-itemrecipe("Recipe: Flask of Chromatic Wonder", 33209, 42736, TBC_PHASE_THREE, "removed 5.0.1.20000");
+itemrecipe("Recipe: Flask of Chromatic Wonder", 33209, 42736, TBC_PHASE_THREE, REMOVED_5_0_4);
 
 itemrecipe("Recipe: Elixir of Empowerment", 35294, 28578, TBC_PHASE_FIVE, true);
 itemrecipe("Recipe: Haste Potion", 35295, 28564, TBC_PHASE_FIVE, true);

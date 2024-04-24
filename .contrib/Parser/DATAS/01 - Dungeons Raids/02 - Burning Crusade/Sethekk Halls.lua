@@ -190,10 +190,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27915),	-- Sky-Hunter Swift Boots
 						-- #if BEFORE MOP
 						i(27916, {	-- Sethekk Feather-Darts
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(27917, {	-- Libram of the Eternal Rest
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(27633),	-- Terokk's Mask
@@ -270,14 +270,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27915),	-- Sky-Hunter Swift Boots
 							-- #if BEFORE MOP
 							i(27916, {	-- Sethekk Feather-Darts
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(27917, {	-- Libram of the Eternal Rest
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(25461, {	-- Book of Forgotten Names
-								["timeline"] = { "removed 7.1.0.1233" },
+								["timeline"] = { REMOVED_7_1_0 },
 							}),
 							i(27633),	-- Terokk's Mask
 						},

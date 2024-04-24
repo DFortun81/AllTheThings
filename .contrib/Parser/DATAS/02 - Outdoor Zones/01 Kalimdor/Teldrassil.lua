@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 28714,	-- Fel Moss Corruption
 							["coord"] = { 45.8, 73.0, SHADOWGLEN },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { MONK },
 						}),
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { ROGUE },
 						}),
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { HUNTER },
 						}),
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
 						}),
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26949, {	-- Learning the Word
 							["qg"] = 3595,	-- Shanda
 							["coord"] = { 47.6, 59.6, SHADOWGLEN },
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
 						}),
@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { WARRIOR },
 						}),
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31169, {	-- The Art of the Monk
 							["qg"] = 63331,	-- Laoxi
 							["coord"] = { 48.6, 52.8, SHADOWGLEN },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { MONK },
 						}),
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { DRUID },
 						}),
@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(5393),	-- Thistlewood Staff
 								i(5586),	-- Thistlewood Blade
 								i(12447, {	-- Thistlewood Bow
-									["timeline"] = { "removed 1.7.0" },
+									["timeline"] = { REMOVED_1_7_0 },
 								}),
 							},
 						}),
@@ -936,7 +936,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9598),	-- Sleeping Robes
 						i(18957),	-- Brushwood Blade
 						i(9602, {	-- Brushwood Blade
-							["timeline"] = { "removed 1.11.1.7272" },
+							["timeline"] = { REMOVED_1_11_1 },
 							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
 							-- If anything, it should match the sourceID of the other item by that name. (7540)
 							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.

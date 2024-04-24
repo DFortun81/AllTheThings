@@ -80,7 +80,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				1689,			-- He Knows If You've Been Naughty
 				1690,			-- A Frosty Shake
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(102),				-- Merrymaker
@@ -979,7 +979,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Given prior to 2015 exclusively to non-spell casters.",
 			["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
-			["timeline"] = { "removed 6.2.3.20601" },
+			["timeline"] = { REMOVED_6_2_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["isYearly"] = true,
@@ -999,7 +999,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #endif
 				i(21235, {	-- Winter Veil Roast
-					["timeline"] = { "removed 6.2.3.20601" },
+					["timeline"] = { REMOVED_6_2_3 },
 				}),
 			},
 		}),
@@ -1010,7 +1010,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Given prior to 2015 exclusively to spell casters.",
 			["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
-			["timeline"] = { "removed 6.2.3.20601" },
+			["timeline"] = { REMOVED_6_2_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["isYearly"] = true,
@@ -1030,7 +1030,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #endif
 				i(21241, {	-- Winter Veil Eggnog
-					["timeline"] = { "removed 6.2.3.20601" },
+					["timeline"] = { REMOVED_6_2_3 },
 				}),
 			},
 		}),
@@ -1040,7 +1040,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 128652 },	-- Gently Shaken Gift
 			},
 			["description"] = "Gift from 2015.",
-			["timeline"] = { "added 6.2.2.20395", "removed 7.0.3.21570" },
+			["timeline"] = { "added 6.2.2.20395", REMOVED_7_0_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1058,7 +1058,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 139343 },	-- Gently Shaken Gift
 			},
 			["description"] = "Gift from 2016.",
-			["timeline"] = { "added 7.0.3.21570", "removed 7.3.5.25807" },
+			["timeline"] = { "added 7.0.3.21570", REMOVED_7_3_5 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1076,7 +1076,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 151345 },	-- Gently Shaken Gift
 			},
 			["description"] = "Gift from 2017.  You will receive only one faction's Hearthstation.  In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
-			["timeline"] = { "added 7.3.5.25807", "removed 8.0.1.27291" },
+			["timeline"] = { "added 7.3.5.25807", REMOVED_8_0_1 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1099,7 +1099,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 162974 },	-- Gently Shaken Gift
 			},
 			["description"] = "Gift from 2018.",
-			["timeline"] = { "added 8.0.1.27291", "removed 8.2.5.31961" },
+			["timeline"] = { "added 8.0.1.27291", REMOVED_8_2_5 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1117,7 +1117,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 172225 },	-- Gently Shaken Gift
 			},
 			["description"] = "Gift from 2019.",
-			["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },	-- Should been removed earlier?
+			["timeline"] = { "added 8.2.5.31961", REMOVED_9_0_1 },	-- Should been removed earlier?
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1129,7 +1129,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		}),
-		q(60238, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, {	-- A Gently Shaken Gift (2020)
+		q(60238, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Gently Shaken Gift (2020)
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 178529 },	-- Gently Shaken Gift
@@ -1144,7 +1144,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		})),
-		q(64581, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, {	-- A Gently Shaken Gift (2021)
+		q(64581, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Gently Shaken Gift (2021)
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 187520 },	-- Gently Shaken Gift
@@ -1159,7 +1159,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		})),
-		q(66508, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, {	-- A Gently Shaken Gift (2022)
+		q(66508, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_2_LAUNCH } }, {	-- A Gently Shaken Gift (2022)
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 192093 },	-- Gently Shaken Gift
@@ -1171,7 +1171,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(191925),	-- Falling Star Flinger (TOY!)
 			},
 		})),
-		q(78504, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", "removed 10.2.0.99999" } }, {	-- A Gently Shaken Gift (2023)
+		q(78504, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", REMOVED_10_2_0 } }, {	-- A Gently Shaken Gift (2023)
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 210657 },	-- Gently Shaken Gift
@@ -1339,7 +1339,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 90892 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2012.",
-			["timeline"] = { ADDED_5_1_0, "removed 5.4.0.17227" },
+			["timeline"] = { ADDED_5_1_0, REMOVED_5_4_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1358,7 +1358,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 104319 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2013.",
-			["timeline"] = { "added 5.4.0.17227", "removed 6.0.1.18594" },
+			["timeline"] = { "added 5.4.0.17227", REMOVED_6_0_2 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1374,7 +1374,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 116761 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2014.",
-			["timeline"] = { "added 6.0.1.18594", "removed 6.2.2.20395" },
+			["timeline"] = { "added 6.0.1.18594", REMOVED_6_2_2 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1390,7 +1390,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 128653 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2015.",
-			["timeline"] = { "added 6.2.2.20395", "removed 7.0.3.22248" },
+			["timeline"] = { "added 6.2.2.20395", REMOVED_7_0_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1406,7 +1406,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 139341 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2016.",
-			["timeline"] = { "added 7.0.3.22248", "removed 7.3.0.24484" },
+			["timeline"] = { "added 7.0.3.22248", REMOVED_7_3_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1422,7 +1422,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 151350 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-			["timeline"] = { ADDED_7_3_0, "removed 8.0.1.26624" },
+			["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1_LAUNCH },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1443,7 +1443,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 162644 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-			["timeline"] = { "added 8.0.1.26624", "removed 8.2.5.31958" },
+			["timeline"] = { "added 8.0.1.26624", REMOVED_8_2_5 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1464,7 +1464,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 172224 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2019.",
-			["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" },	-- Should been removed earlier?
+			["timeline"] = { "added 8.2.5.31958", REMOVED_9_0_1 },	-- Should been removed earlier?
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
@@ -1479,7 +1479,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		}),
-		q(60239, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, {	-- A Winter Veil Gift (2020)
+		q(60239, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Winter Veil Gift (2020)
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 178528 },	-- Winter Veil Gift
@@ -1492,7 +1492,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(178533),	-- Jingles (PET!)
 			},
 		})),
-		q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, {	-- A Winter Veil Gift (2021)
+		q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Winter Veil Gift (2021)
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 187561 },	-- Winter Veil Gift
@@ -1505,7 +1505,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(187560),	-- Rockin' Rollin' Racer Pack
 			},
 		})),
-		q(66507, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, {	-- A Winter Veil Gift (2022)
+		q(66507, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_2_LAUNCH } }, {	-- A Winter Veil Gift (2022)
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 192094 },	-- Winter Veil Gift
@@ -1518,7 +1518,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(191937),	-- Falling Star Catcher (TOY!)
 			},
 		})),
-		q(78131, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", "removed 10.2.0.99999" } }, {	-- A Winter Veil Gift (2023)
+		q(78131, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", REMOVED_10_2_0 } }, {	-- A Winter Veil Gift (2023)
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 209871 },	-- Winter Veil Gift
@@ -1913,7 +1913,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(17685, {	-- Smokywood Pastures Sampler
 					i(17404),	-- Blended Bean Brew
 					i(17344, {	-- Candy Cane
-						["timeline"] = { "removed 6.2.2.20395" },
+						["timeline"] = { REMOVED_6_2_2 },
 					}),
 					i(128768, {	-- Candy Cane
 						["timeline"] = { "added 6.2.2.20395" },
@@ -2078,7 +2078,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
 				}),
 				i(93626, {	-- Stolen Present
-					["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
+					["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 				}),
 				i(73792, {	-- Stolen Present
 					["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
@@ -2210,10 +2210,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 							["timeline"] = { "added 7.1.0.22864" },
 						}),
 						i(117371, {	-- Miniature Winter Veil Tree (Level 1-110)
-							["timeline"] = { "added 6.0.1.18594", "removed 7.1.0.22864" },
+							["timeline"] = { "added 6.0.1.18594", REMOVED_7_1_0 },
 						}),
 						i(93625, {	-- Miniature Winter Veil Tree (Level 90)
-							["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18594" },
+							["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 						}),
 						i(66540, {	-- Miniature Winter Veil Tree (Level 85)
 							["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },

@@ -2773,10 +2773,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						-- #endif
 						applyclassicphase(PHASE_FIVE, i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						applyclassicphase(PHASE_FIVE, i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
@@ -2886,7 +2886,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				i(20408, {	-- Twilight Cultist Cowl
-					["timeline"] = { "removed 7.1.5" },
+					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
 						15201,	-- Twilight Flamereaver
@@ -2900,7 +2900,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(20406, {	-- Twilight Cultist Mantle
-					["timeline"] = { "removed 7.1.5" },
+					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
 						15201,	-- Twilight Flamereaver
@@ -2914,7 +2914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(20407, {	-- Twilight Cultist Robe
-					["timeline"] = { "removed 7.1.5" },
+					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
 						15201,	-- Twilight Flamereaver

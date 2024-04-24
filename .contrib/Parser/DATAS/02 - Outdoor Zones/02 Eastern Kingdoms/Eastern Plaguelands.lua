@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										["classes"] = { DEATHKNIGHT },
 									}),
 									i(39208, {	-- Sigil of the Dark Rider
-										["timeline"] = { "removed 5.0.4" },
+										["timeline"] = { REMOVED_5_0_4 },
 									}),
 								},
 							}),

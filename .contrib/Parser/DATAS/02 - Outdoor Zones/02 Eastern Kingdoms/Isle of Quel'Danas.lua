@@ -1910,7 +1910,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						i(35500),	-- Formula: Enchant Chest - Dodge / TBC: Formula: Enchant Chest - Defense (RECIPE!)
 						i(34872),	-- Formula: Void Shatter (RECIPE!)
 						i(29193, {	-- Glyph of the Gladiator
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(34672),	-- Inuuro's Blade
 						i(34671),	-- K'iru's Presage

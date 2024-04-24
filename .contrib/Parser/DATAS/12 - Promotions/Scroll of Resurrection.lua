@@ -12,7 +12,7 @@ SCROLL_OF_RESURRECTION = createHeader({
 	},
 });
 root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
-	["timeline"] = { ADDED_4_3_0, "removed 5.3.0.16781" },
+	["timeline"] = { ADDED_4_3_0, REMOVED_5_3_0 },
 	["groups"] = {
 		cl(DEATHKNIGHT, {
 			i(72994),	-- Ebonsoul Blade
@@ -373,7 +373,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73165),	-- Valiant Idol of Battle
 			i(73164),	-- Valiant Stone of Battle
 		}),
-		i(77956, bubbleDown({ ["timeline"] = { ADDED_4_3_0, "removed 5.4.7" } }, {	-- Spectral Mount Crate
+		i(77956, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {	-- Spectral Mount Crate
 			["description"] = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
 			["groups"] = {
 				a(i(76889)),	-- Spectral Gryphon (MOUNT!)

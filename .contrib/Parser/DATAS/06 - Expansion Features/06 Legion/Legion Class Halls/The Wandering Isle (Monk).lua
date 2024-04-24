@@ -253,7 +253,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40793 },	-- A Matter of Planning
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
-						["timeline"] = { "added 7.0.1", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.1", REMOVED_8_0_1 },
 					}),
 					-- Start Zone
 					q(40795, {	-- The Fight Begins
@@ -595,13 +595,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118430 },	-- Injured Initiate
 						["coord"] = { 51.2, 58.8, THE_WANDERING_ISLE },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					q(46025, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 46024,	-- An Urgent Warning
 						["provider"] = { "n", 99179 },	-- Master Hsu <Mission Master>
 						["coord"] = { 52.8, 59.6, THE_WANDERING_ISLE },
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45440, {	-- A Brewing Situation
@@ -744,19 +744,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43881, {	-- Hitting the Books
 						["provider"] = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 						["coord"] = { 46.8, 46.8, THE_WANDERING_ISLE },
-						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
 					}),
 					q(46144, {	-- Knowledge is Power
 						["sourceQuest"] = 43881,	-- Hitting the Books
 						["provider"] = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 						["coord"] = { 46.8, 46.8, THE_WANDERING_ISLE },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46157, {	-- Furthering Knowledge
 						["sourceQuest"] = 46144,	-- Knowledge is Power
 						["provider"] = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 						["coord"] = { 46.8, 46.8, THE_WANDERING_ISLE },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46785, {	-- Further Advancement
 						["sourceQuests"] = { 45771 },	-- A Time for Everything

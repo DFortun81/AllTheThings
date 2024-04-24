@@ -416,7 +416,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_1 }
 			}),
 			i(57244, {	-- Warder's Spear
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" }
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 }
 			}),
 			i(23347, {	-- Weathered Crossbow
 				["timeline"] = { ADDED_2_0_1 }
@@ -1579,12 +1579,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(52940, {	-- Candy's Cloak
 			["races"] = { GOBLIN },
 			["description"] = "Former Starter Cloak for Male Goblins",
-			["timeline"] = { ADDED_4_0_3, "removed 7.0.1" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 		}),
 		i(52937, {	-- Chip's Cloak
 			["races"] = { GOBLIN },
 			["description"] = "Former Starter Cloak for Female Goblins",
-			["timeline"] = { ADDED_4_0_3, "removed 7.0.1" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 		}),
 	}),
 	-- #endif
@@ -1706,7 +1706,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- CRIEVE NOTE: This was not available in Wrath Classic.
 			["timeline"] = { "added 1.11.0", REMOVED_3_0_2 },
 			-- #else
-			["timeline"] = { "added 1.11.0", "removed 7.3.5" },
+			["timeline"] = { "added 1.11.0", REMOVED_7_3_5 },
 			-- #endif
 		}),
 		i(52532, {	-- Worn Wood Chopper
@@ -1715,7 +1715,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #if BEFORE 10.1.7
 			["description"] = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters.",
 			-- #endif
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
 	}),
 	-- #if AFTER 10.0.7

@@ -2471,7 +2471,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11679),	-- Rubicund Armguards
 						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22397, {	-- Idol of Ferocity
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						i(11630, {	-- Rockshard Pellets
 							["timeline"] = { "deleted 4.0.1" },

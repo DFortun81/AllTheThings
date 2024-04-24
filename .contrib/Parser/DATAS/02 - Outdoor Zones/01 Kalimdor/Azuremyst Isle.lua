@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(31172, {	-- Monk Training
 							["races"] = { DRAENEI },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 						}),
 						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { SHAMAN },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -434,7 +434,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -484,7 +484,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(31173, {	-- The Tiger Palm
 							["qg"] = 63335,	-- Mojo Stormstout
 							["coord"] = { 50.6, 48.6, AMMEN_VALE },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["classes"] = { MONK },
 							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),

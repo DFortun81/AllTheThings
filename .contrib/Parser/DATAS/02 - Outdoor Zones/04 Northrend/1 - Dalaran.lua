@@ -19,7 +19,7 @@ local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	})),
 	emot(35, i(47732)),	-- Band of the Invoker
 	emot(25, i(47660, {	-- Blades of the Sable Cross
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emot(35, i(47729)),	-- Bloodshed Band
 	emot(25, i(47658)),	-- Brimstone Igniter
@@ -109,40 +109,40 @@ local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(50, i(47735)),	-- Glyph of Indomitability
 	emot(35, i(47733)),	-- Heartmender Circle
 	emoc(25, i(47671, {	-- Idol of Flaring Growth
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47670, {	-- Idol of Lunar Fury
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47668, {	-- Idol of Mutilation
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47664, {	-- Libram of Defiance
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47661, {	-- Libram of Valiance
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47662, {	-- Libram of Veracity
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emot(50, i(47734)),	-- Mark of Supremacy
 	emot(50, i(48722)),	-- Shard of the Crystal Heart
 	emoc(25, i(47672, {	-- Sigil of Insolence
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47673, {	-- Sigil of Virulence
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emot(50, i(48724)),	-- Talisman of Resurgence
 	emoc(25, i(47665, {	-- Totem of Calming Tides
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47666, {	-- Totem of Electrifying Wind
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47667, {	-- Totem of Quaking Earth
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 };
 local EMBLEM_OF_TRIUMPH_QUARTERMASTER_A_GROUPS = appendGroups(EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS, {
@@ -288,13 +288,13 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(28, i(45836)),	-- Gloves of Unerring Aim
 	emoc(28, i(45839)),	-- Grips of the Secret Grove
 	emoc(19, i(45509, {	-- Idol of the Corruptor
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45270, {	-- Idol of the Crying Wind
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(46138, {	-- Idol of the Flourishing Life
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(39, i(45844)),	-- Leggings of the Tireless Sentry
 	emoc(39, i(45845)),	-- Leggings of the Weary Mystic
@@ -303,33 +303,33 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(39, i(45841)),	-- Legplates of the Violet Champion
 	emoc(39, i(45848)),	-- Legwraps of the Master Conjurer
 	emoc(19, i(45510, {	-- Libram of Discord
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45436, {	-- Libram of the Resolute
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45145, {	-- Libram of the Sacred Shield
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(18, i(45087)),	-- Runed Orb
 	emoc(28, i(45831)),	-- Sash of Potent Incantations
 	emoc(19, i(45821)),	-- Shard of the Crystal Forest
 	emoc(28, i(45825)),	-- Shieldwarder Girdle
 	emoc(19, i(45144, {	-- Sigil of Deflection
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45254, {	-- Sigil of the Vengeful Heart
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45819)),	-- Spiked Battleguard Choker
 	emoc(19, i(45114, {	-- Steamcaller's Totem
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45255, {	-- Thunderfall Totem
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45169, {	-- Totem of the Dancing Flame
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(28, i(45840)),	-- Touch of the Occult
 	emoc(39, i(45847)),	-- Wildstrider Legguards
@@ -341,7 +341,7 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(60, i(50996)),	-- Belt of Omission
 	emof(60, i(50994)),	-- Belt of Petrified Ivy
 	emof(30, i(50458, {	-- Bizuri's Totem of Shattered Ice
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(60, i(50980)),	-- Blizzard Keeper's Mitts
 	emof(95, i(50965)),	-- Castle Breaker's Battleplate
@@ -360,22 +360,22 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(60, i(50981)),	-- Gloves of the Great Horned Owl
 	emof(60, i(50355)),	-- Herkuml War Token
 	emof(30, i(50454, {	-- Idol of the Black Willow
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50456, {	-- Idol of the Crying Moon
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50457, {	-- Idol of the Lunar Eclipse
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50460, {	-- Libram of Blinding Light
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50461, {	-- Libram of the Eternal Tower
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50455, {	-- Libram of Three Truths
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(60, i(50989)),	-- Lich Killer's Lanyard
 	emof(60, i(50979)),	-- Logsplitters
@@ -471,19 +471,19 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(50, i(50466)),	-- Sentinel's Winter Cloak
 	emof(95, i(50972)),	-- Shadow Seeker's Tunic
 	emof(30, i(50474, {	-- Shrapnel Star
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50462, {	-- Sigil of the Bone Gryphon
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50459, {	-- Sigil of the Hanged Man
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50463, {	-- Totem of the Avalanche
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50464, {	-- Totem of the Surging Sea
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(60, i(50995)),	-- Vengeful Noose
 	emof(60, i(50991)),	-- Verdigris Chain Belt
@@ -507,27 +507,27 @@ local EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS = {
 	emoh(50, i(40703)),	-- Grasscutter
 	emoh(25, i(40699)),	-- Handbook of Obscure Remedies
 	emoh(15, i(40711, {	-- Idol of Lush Moss
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40712, {	-- Idol of Steadfast Renewal
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40713, {	-- Idol of the Ravenous Beast
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
 	emoh(25, i(40681)),	-- Lattice Choker of Light
 	emoh(15, i(40707, {	-- Libram of Obstruction
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40706, {	-- Libram of Reciprocation
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40705, {	-- Libram of Renewal
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40691)),	-- Magroth's Meditative Cincture
 	emoh(40, i(40684)),	-- Mirror of Truth
@@ -617,21 +617,21 @@ local EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS = {
 	i(41313),	-- Savage Gladiator's Wyrmhide Robes
 	i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
 	emoh(15, i(40715, {	-- Sigil of Haunted Dreams
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40714, {	-- Sigil of the Unfaltering Knight
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40682)),	-- Sundial of the Exiled
 	emoh(40, i(40685)),	-- The Egg of Mortal Essence
 	emoh(15, i(40709, {	-- Totem of Forest Growth
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40710, {	-- Totem of Splintering
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40708, {	-- Totem of the Elemental Plane
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40683)),	-- Valor Medal of the First War
 	emoh(40, i(40688)),	-- Verdungo's Barbarian Cord
@@ -889,7 +889,7 @@ root(ROOTS.Zones, {
 									emof(60, i(50982)),	-- Cat Burglar's Grips
 									i(44652),	-- Dalaran Dagger
 									i(44644, {	-- Dalaran Dart
-										["timeline"] = { "removed 5.0.4" },
+										["timeline"] = { REMOVED_5_0_4 },
 									}),
 									i(44641),	-- Dalaran Knuckles
 									emoc(28, i(45838)),	-- Gloves of the Blind Stalker
@@ -898,7 +898,7 @@ root(ROOTS.Zones, {
 									emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
 									emoc(39, i(45846)),	-- Leggings of Wavering Shadow
 									emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-										["timeline"] = { "removed 5.0.4" },
+										["timeline"] = { REMOVED_5_0_4 },
 									})),
 									emoh(50, i(40704)),	-- Pride
 									emov(40, i(40749)),	-- Rainey's Chewed Boots
@@ -921,7 +921,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 7.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},},	-- Cataclysmic Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_3_0, "removed 7.0.1" },
+								["timeline"] = { ADDED_4_3_0, REMOVED_7_0_3 },
 							})),
 							applyclassicphase(CATA_PHASE_THREE, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -1768,13 +1768,13 @@ root(ROOTS.Zones, {
 					})),
 					q(29073, {	-- Make Haste to Orgrimmar!
 						["provider"] = { "o", 208317 },	-- Warchief's Command Board
-						["timeline"] = { ADDED_4_0_6, "removed 6.2.0" },
+						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(29071, {	-- Make Haste to Stormwind!
 						["provider"] = { "o", 208316 },	-- Hero's Call Board
-						["timeline"] = { ADDED_4_0_6, "removed 6.2.0" },
+						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
@@ -2328,10 +2328,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(39209, {	-- Sholazar Basin -- Adventure Guide
-						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
+						["timeline"] = { "added 6.2.0.19934", REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(39212, {	-- Sholazar Basin -- Adventure Guide
-						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
+						["timeline"] = { "added 6.2.0.19934", REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(13830, {	-- The Ghostfish
 						["qg"] = 28742,	-- Marcia Chase
@@ -2805,15 +2805,15 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(50368, {	-- Arcanum of Burning Mysteries
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44159, {	-- Arcanum of Burning Mysteries
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44141, {	-- Arcanum of the Flame's Soul
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44182),	-- Boots of Twinkling Stars
@@ -2840,13 +2840,13 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(44652),	-- Dalaran Dagger
 							i(44644, {	-- Dalaran Dart
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(44641),	-- Dalaran Knuckles
 							emoh(50, i(40704)),	-- Pride
 							emoh(50, i(40702)),	-- Rolfsen's Ripper
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 						},
 					}),
@@ -2891,91 +2891,91 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.0, 53.6, NORTHREND_DALARAN },
 						["groups"] = {
 							emoh(40, i(42944, {	-- Balanced Heartseeker
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(42943, {	-- Bloodied Arcanite Reaper
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							i(69893, {	-- Bloodsoaked Skullforge Reaver
-								["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(69889, {	-- Burnished Breastplate of Might
-								["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(69890, {	-- Burnished Pauldrons of Might
-								["timeline"] = { ADDED_4_1_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(79131, {	-- Burnished Warden Staff
-								["timeline"] = { "added 5.0.1.15464", "removed 6.1.0.19445" },
+								["timeline"] = { "added 5.0.1.15464", REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42950, {	-- Champion Herod's Shoulder
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48677, {	-- Champion's Deathdealer Breastplate
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(42946, {	-- Charmed Ancient Bone Bow
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(50, i(42948, {	-- Devout Aurastone Hammer
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(42947, {	-- Dignified Headmaster's Charge
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(50, i(42992, {	-- Discerning Eye of the Beast
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							i(93902, {	-- Flamescarred Draconian Deflector
-								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93904, {	-- Musty Tome of the Lost
-								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42951, {	-- Mystical Pauldrons of Elements
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48683, {	-- Mystical Vest of Elements
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48685, {	-- Polished Breastplate of Valor
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42949, {	-- Polished Spaulders of Valor
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48687, {	-- Preened Ironfeather Breastplate
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42984, {	-- Preened Ironfeather Shoulders
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(48718, {	-- Repurposed Lava Dredger
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42952, {	-- Stained Shadowcraft Spaulders
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48689, {	-- Stained Shadowcraft Tunic
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(50, i(42991, {	-- Swift Hand of Justice
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42985, {	-- Tattered Dreadmist Mantle
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48691, {	-- Tattered Dreadmist Robe
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48716, {	-- Venerable Mass of McGowan
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							i(93903, {	-- Weathered Observer's Shield
-								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 						},
 					}),
@@ -3689,10 +3689,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.0, 51.8, NORTHREND_DALARAN },
 						["groups"] = {
 							emot(25, i(47660, {	-- Blades of the Sable Cross
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							emot(25, i(47659, {	-- Crimson Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							i(32883, {	-- Felbane Slugs
 								["timeline"] = { REMOVED_4_0_1 },
@@ -3703,7 +3703,7 @@ root(ROOTS.Zones, {
 								["races"] = HORDE_ONLY,
 							}),
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
 								["timeline"] = { REMOVED_4_0_1 },
@@ -3712,7 +3712,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							emof(30, i(50474, {	-- Shrapnel Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
 								["timeline"] = { REMOVED_4_0_1 },
@@ -3986,7 +3986,7 @@ root(ROOTS.Zones, {
 					}),
 					n(29529, {	-- Ninsianna <Relics>
 						["description"] = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
-						["groups"] = bubbleDown({ ["timeline"] = { "removed 5.0.4" } }, {
+						["groups"] = bubbleDown({ ["timeline"] = { REMOVED_5_0_4 } }, {
 							emof(30, i(50458)),	-- Bizuri's Totem of Shattered Ice
 							emov(25, i(40342)),	-- Idol of Awakening
 							emot(25, i(47671)),	-- Idol of Flaring Growth

@@ -147,11 +147,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						3523,	-- Scourge of the Downs (Before Cataclysm)
 						-- #endif
 					},
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["lvl"] = 32,
 					["groups"] = {
 						i(10710, {	-- Dragonclaw Ring
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27024, {	-- Partners in Crime
 					["qg"] = 44837,	-- Koristrasza
-					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glutton slain
@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 8516 },	-- Belnistrasz
 						{ "i", 10682 },	-- Belnistrasz's Oathstone
 					},
-					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = 32,
 				}),
 				q(27009, {	-- The Coldbringer
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						27063,	-- Looming Threat [Alliance]
 						27062,	-- Looming Threat [Horde]
 					},
-					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(35, 35, 15),
 					-- #if BEFORE 6.0.1.18322
 					["groups"] = {
@@ -278,7 +278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE 6.0.2
 			n(7355, {	-- Tuten'kash
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10776),	-- Silky Spider Cape
 					i(10775),	-- Carapace of Tuten'kash
@@ -286,7 +286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7356, {	-- Plaguemaw the Rotting
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10766),	-- Plaguerot Sprig
 					i(10760),	-- Swine Fists
@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE 6.0.2
 			n(7357, {	-- Mordresh Fire Eye
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10770),	-- Mordresh's Lifeless Skull
 					i(10769),	-- Glowing Eye of Mordresh
@@ -367,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE 6.0.2
 			n(8567, {	-- Glutton
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10772),	-- Glutton's Cleaver
 					i(10774),	-- Fleshhide Shoulders
@@ -375,7 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(7354, {	-- Ragglesnout
 				["description"] = "This is a rare spawn that is not always present.",
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10758),	-- X'caliboar
 					i(10767),	-- Savage Boar's Guard
@@ -383,7 +383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7358, {	-- Amnennar the Coldbringer
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					ach(636, {	-- Razorfen Downs
 						-- #if BEFORE WRATH
@@ -394,7 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5045, {	-- Razorfen Downs Guild Run
-						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
 					i(10420),	-- Skull of the Coldbringer
 					i(10761),	-- Coldrage Dagger

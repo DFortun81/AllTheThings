@@ -555,7 +555,10 @@
         "PVP",
         "INSCRIPTION",
         "ARMOR",
-        "BACK"
+        "BACK",
+        "REMOVE",
+        "BATTLEGROUNDS",
+        "BALANCE"
     ],
     "Lua.diagnostics.disable": [
         "duplicate-index"

@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 15608,	-- Medivh
 					["sourceQuest"] = 9836,	-- The Master's Touch
 					["coord"] = { 48.8, 71.8, CAVERNS_OF_TIME_BLACK_MORASS },
-					["timeline"] = { "removed 7.1.0.1233" },
+					["timeline"] = { REMOVED_7_1_0 },
 					["maps"] = { SHATTRATH_CITY },
 					["cost"] = {
 						{ "i", 24490, 1 },	-- The Master's Key
@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 					["sourceQuest"] = 9832,	-- The Second and Third Fragments
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["timeline"] = { "removed 7.1.0.1233" },
+					["timeline"] = { REMOVED_7_1_0 },
 					["cost"] = {
 						{ "i", 24489, 1 },	-- Restored Apprentice's Key
 					},

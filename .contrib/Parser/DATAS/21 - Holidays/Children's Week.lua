@@ -960,7 +960,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 			["coord"] = { 44.1, 79.9, DARNASSUS },
-			["timeline"] = { ADDED_4_0_1, "removed 8.0.1" },
+			["timeline"] = { ADDED_4_0_1, REMOVED_8_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1155,7 +1155,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
 			["coord"] = { 57.5, 91.1, UNDERCITY },
-			["timeline"] = { ADDED_4_0_1, "removed 8.0.1" },
+			["timeline"] = { ADDED_4_0_1, REMOVED_8_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag

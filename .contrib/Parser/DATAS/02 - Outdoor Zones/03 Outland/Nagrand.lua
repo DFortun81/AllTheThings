@@ -1417,16 +1417,16 @@ root(ROOTS.Zones, {
 							i(25639),	-- Hemet's Elekk Gun
 							-- #if BEFORE MOP
 							i(29211, {	-- Fitz's Throwing Axe
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(25644, {	-- Blessed Book of Nagrand
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(25643, {	-- Harold's Rejuvenating Broach
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(25645, {	-- Totem of the Plains
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -1658,7 +1658,7 @@ root(ROOTS.Zones, {
 							}),
 							-- #if BEFORE MOP
 							i(30599, {	-- Avenging Blades
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(30597, {	-- Halaani Claymore
@@ -1721,7 +1721,7 @@ root(ROOTS.Zones, {
 							}),
 							-- #if BEFORE MOP
 							i(30568, {	-- The Sharp Cookie
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(28915, {	-- Dark Riding Talbuk (MOUNT!)

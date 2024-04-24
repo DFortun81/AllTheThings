@@ -122,7 +122,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 	}),
 	n(YEAR2023, {
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, "removed 10.0.5.48317" } }, {
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 			}),
@@ -192,7 +192,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48317", "removed 10.0.5.48865" } }, {
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48317", REMOVED_10_0_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(190504, {	-- Ensemble: Darkmoon Harlequin's Bells
 					i(190492),	-- Darkmoon Harlequin's Belt
@@ -279,7 +279,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48865", "removed 10.1.0.49407" } }, {
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48865", REMOVED_10_1_0 } }, {
 			n(MONTHLY_REWARD, {
 				i(190164, {	-- Arsenal: Blades of Elune
 					i(190093), -- Elune's Fury
@@ -352,7 +352,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49407", "removed 10.1.0.49890" } }, {
+		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49407", REMOVED_10_1_0 } }, {
 			n(MONTHLY_REWARD, {
 				i(190613), -- Savage Green Battle Turtle (MOUNT!)
 			}),
@@ -515,7 +515,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, "removed 10.1.5.50747" } }, {
+		n(JULY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(206156),	-- Grotto Netherwing Drake (MOUNT!)
 			}),
@@ -713,7 +713,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, "removed 10.1.7.51536" } }, {
+		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_1_7 } }, {
 			n(MONTHLY_REWARD, {
 				i(190168), -- Crusty Crawler (MOUNT!)
 			}),
@@ -838,7 +838,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "removed 10.1.7.51536", REMOVED_10_2_0 } }, {
+		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { REMOVED_10_1_7, REMOVED_10_2_0 } }, {
 			n(MONTHLY_REWARD, {
 				i(208598), -- Eve's Ghastly Rider (MOUNT!)
 			}),
@@ -976,7 +976,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, "removed 10.2.0.52301"} }, {
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
 			n(MONTHLY_REWARD, {
 				i(208943, {	-- Arsenal: Cosmic Weapons Cache
 					i(208939),	-- Gorridar, Darkblade of the Sunderer
@@ -1123,7 +1123,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.52649"} }, {
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", REMOVED_10_2_0} }, {
 			n(MONTHLY_REWARD, {
 				i(190925),	-- Buttercup (PET!)
 			}),
@@ -1306,7 +1306,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 	}),
 	n(YEAR2024, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", "removed 10.2.5.53162"} }, {
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", REMOVED_10_2_5} }, {
 			n(MONTHLY_REWARD, {
 				i(211002),	-- Golden Mobile Timepiece
 			}),
@@ -1421,7 +1421,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5", "removed 10.2.5"} }, {
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5", REMOVED_10_2_5} }, {
 			-- removed 10.2.5.53495
 			n(MONTHLY_REWARD, {
 				i(212220, {	-- Ensemble: Love Witch's Attire
@@ -1555,7 +1555,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495", "removed 10.2.6" } }, {
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495", REMOVED_10_2_6 } }, {
 			-- removed 10.2.5.53913
 			n(MONTHLY_REWARD, {
 				i(211432),	-- Teele (PET!)

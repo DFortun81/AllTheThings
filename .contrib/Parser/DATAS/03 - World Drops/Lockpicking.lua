@@ -370,7 +370,7 @@ root(ROOTS.WorldDrops, {
 					14499,  -- Quicksilver Ring
 					12056,  -- Ring Of The Heavens
 					-- #if BEFORE MOP
-					34622,  -- Spinesever	-- ["timeline"] = { "removed 5.0.4" },
+					34622,  -- Spinesever	-- ["timeline"] = { REMOVED_5_0_4 },
 					-- #endif
 					12045,  -- Swamp Pendant
 					12027   -- Vermilion Necklace

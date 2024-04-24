@@ -2032,13 +2032,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(15904),	-- Deadly Fist Blades
 						i(15906, {	-- Left-Handed Brass Knuckles
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15909, {	-- Left-Handed Blades
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15907, {	-- Left-Handed Claw
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15903),	-- Slicing Claw
 					},

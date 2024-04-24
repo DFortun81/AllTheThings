@@ -176,13 +176,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_2_0 },
 						}),
 						i(22536, {	-- Formula: Enchant Ring - Spellpower (RECIPE!)
-							["timeline"] = { ADDED_2_0_1, "removed 6.0.3" },
+							["timeline"] = { ADDED_2_0_1, REMOVED_6_0_3 },
 						}),
 						i(29198, {	-- Glyph of Frost Warding
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(29186, {	-- Glyph of the Defender
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(29713),	-- Pattern: Drums of Panic (RECIPE!)
 						-- #if ANYCLASSIC

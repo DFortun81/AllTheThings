@@ -159,7 +159,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28384),	-- Outland Striders (7.3.5 - Also added to Dalliah, stayed on Zereketh as well.)
 						-- #if BEFORE MOP
 						i(28372, {	-- Idol of Feral Shadows
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
@@ -285,7 +285,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28384),	-- Outland Striders (7.3.5 - Also added to Dalliah, stayed on Zereketh as well.)
 							-- #if BEFORE MOP
 							i(28372, {	-- Idol of Feral Shadows
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},

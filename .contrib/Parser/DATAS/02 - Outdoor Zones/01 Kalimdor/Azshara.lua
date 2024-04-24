@@ -259,7 +259,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3381, {	-- A Meeting with the Master
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
 					["coord"] = { 26.4, 46.2, AZSHARA },
-					["timeline"] = { "removed 1.7.0" },
+					["timeline"] = { REMOVED_1_7_0 },
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -868,7 +868,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(45570, {	-- In Safer Hands
 					["qg"] = 117252,	-- Archmage Xylem
 					["coord"] = { 25.2, 38.0, AZSHARA },
-					["timeline"] = { "added 7.2.0.23857", "removed 8.0.1" },
+					["timeline"] = { "added 7.2.0.23857", REMOVED_8_0_1 },
 				}),
 				q(14472, {	-- In The Face!
 					["qg"] = 36744,	-- Glix Grindlock

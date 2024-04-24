@@ -256,7 +256,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 58.6, 58.9, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
 					}),
 					q(41064, {	-- Cursed Forge of the Nathrezim
-						["timeline"] = { "added 7.0", "removed 8.0" },
+						["timeline"] = { "added 7.0", REMOVED_8_0_1 },
 						["sourceQuests"] = {
 							41070,	-- Spoils of Victory (Altruis)
 							41062,	-- Spoils of Victory (Kayn)
@@ -442,7 +442,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 44694 },	-- One Battle at a Time
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 55.6, 50.1, 721 },
-						["timeline"] = { "added 7.0", "removed 8.0" },
+						["timeline"] = { "added 7.0", REMOVED_8_0_1 },
 						["lvl"] = 110,
 					}),
 					q(42787, {	-- Deal With It Personally

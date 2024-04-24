@@ -1811,7 +1811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(25878, {	-- Dusksteel Throwing Knife [TBC]
-							["timeline"] = { ADDED_2_1_0, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -2514,7 +2514,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(495, {	-- The Crown of Will (1/5) (Alterac Mountains)
 					["qg"] = 2227,	-- Sharlindra
 					["coord"] = { 57.60, 93.84, UNDERCITY },
-					["timeline"] = { "removed 5.0.2" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,

@@ -368,7 +368,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41125, {	-- Unlocked Potential
 						["sourceQuest"] = 41114,	-- The Champion's Return
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					-- Choose Zone
 					q(41112, {	-- The Great Akazamzarak
@@ -645,13 +645,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118428 },	-- Injured Conjuror
 						["coord"] = { 80.9, 63.1, HALL_OF_THE_GUARDIAN },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					q(45998, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45997,	-- An Urgent Warning
 						["provider"] = { "n", 108515 },	-- Archmage Melis
 						["coord"] = { 80.9, 63.1, HALL_OF_THE_GUARDIAN },
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45437, {	-- An Urgent Situation
@@ -882,19 +882,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43749, {	-- Hitting the Books
 						["provider"] = { "n", 110624 },	-- Edirah
 						["coord"] = { 64.6, 50.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
 					}),
 					q(46143, {	-- Knowledge is Power
 						["sourceQuest"] = 43749,	-- Hitting the Books
 						["provider"] = { "n", 110624 },	-- Edirah
 						["coord"] = { 64.6, 50.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46156, {	-- Furthering Knowledge
 						["sourceQuest"] = 46143,	-- Knowledge is Power
 						["provider"] = { "n", 110624 },	-- Edirah
 						["coord"] = { 64.6, 50.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46782, {	-- Further Advancement
 						["sourceQuest"] = 46290,	-- Return of the Archmage
@@ -922,7 +922,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(44209, {	-- The Might of Dalaran
 							["provider"] = { "n", 111734 },	-- Conjurer Awlyn
 							["coord"] = { 78.1, 53.0, HALL_OF_THE_GUARDIAN },
-							["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+							["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 						}),
 					}),
 				}),

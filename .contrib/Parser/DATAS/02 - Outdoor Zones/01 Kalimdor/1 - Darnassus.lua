@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12302, 1 } },	-- Ancient Frostsaber (MOUNT!)
 					["sym"] = { { "select", "itemID",
 						18766,
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12303, 1 } },	-- Nightsaber (MOUNT!)
 					["sym"] = { { "select", "itemID",
 						18766,
@@ -1131,13 +1131,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}},
 					["groups"] = {
 						i(15906, {	-- Left-Handed Brass Knuckles
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15909, {	-- Left-Handed Blades
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15907, {	-- Left-Handed Claw
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
@@ -1445,10 +1445,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18767),	-- Swift Mistsaber (MOUNT!)
 						i(18902),	-- Swift Stormsaber (MOUNT!)
 						i(12302, {	-- Ancient Frostsaber (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 						i(12303, {	-- Nightsaber (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 					},
 				}),

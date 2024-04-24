@@ -228,7 +228,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				303,				-- Have Keg, Will Travel
 				1936,				-- Does Your Wolpertinger Linger?
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(101),				-- Brewmaster
@@ -557,7 +557,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 			}),
 			i(54535, {	-- Keg-Shaped Treasure Chest
-				["timeline"] = { ADDED_3_0_2, "removed 6.0.1" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
 				["groups"] = {
 					i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 						["timeline"] = { ADDED_2_0_1 },
@@ -566,16 +566,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { ADDED_2_0_1 },
 					}),
 					i(107217, {	-- Direbrew's Bloodied Shanker [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+						["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 					}),
 					i(107218, {	-- Tremendous Tankard O'Terror [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+						["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 					}),
 					i(71331, {	-- Direbrew's Bloodied Shanker [Level 85]
-						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
 					i(71332, {	-- Tremendous Tankard O'Terror [Level 85]
-						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
 					i(49120, {	-- Direbrew's Bloody Shanker [Level 80]
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -620,41 +620,41 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			-- Mists of Pandaria
 			i(87576, {	-- Bitterest Balebrew Charm [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(87571, {	-- Brawler's Statue [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(87575, {	-- Bubbliest Brightbrew Charm [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(87574, {	-- Coren's Cold Chromium Coaster [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(87572, {	-- Mithril Wristwatch [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(87573, {	-- Thousand-Year Pickled Egg [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			-- Cataclysm
 			i(71333, {	-- Bitterer Balebrew Charm [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71338, {	-- Brawler's Trophy [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71334, {	-- Bubblier Brightbrew Charm [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71335, {	-- Coren's Chilled Chromium Coaster [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71337, {	-- Mithril Stopwatch [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71336, {	-- Petrified Pickled Egg [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			-- Wrath of the Lich King
 			i(49078, {	-- Ancient Pickled Egg [Level 80]
@@ -1748,12 +1748,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 47.5, 39.8, DUN_MOROGH },
 				-- #endif
-				["timeline"] = { ADDED_2_2_2, "removed 8.2.0" },
+				["timeline"] = { ADDED_2_2_2, REMOVED_8_2_0 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["groups"] = appendGroups(BREWFEST_TOKEN, {
 					ach(1186, {	-- Down With The Dark Iron
-						["timeline"] = { ADDED_3_0_2, "removed 8.2.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_8_2_0 },
 					}),
 				}),
 			}),
@@ -1764,12 +1764,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["coord"] = { 40.7, 17.4, DUROTAR },	-- TODO: Get accurate coordinates for TBC
 				-- #endif
-				["timeline"] = { ADDED_2_2_2, "removed 8.2.0" },
+				["timeline"] = { ADDED_2_2_2, REMOVED_8_2_0 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["groups"] = appendGroups(BREWFEST_TOKEN, {
 					ach(1186, {	-- Down With The Dark Iron
-						["timeline"] = { ADDED_3_0_2, "removed 8.2.0" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_8_2_0 },
 					}),
 				}),
 			}),

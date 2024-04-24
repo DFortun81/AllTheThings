@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(164579, {	-- Cache of Uldir Treasures (N)
-					["timeline"] = { "added 8.0.1", "removed 8.1.0" },
+					["timeline"] = { "added 8.0.1", REMOVED_8_1_0 },
 					["sym"] = {
 						{"select", "instanceID", 1031},			-- Uldir
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 				i(164257, {	-- Cache of Uldir Treasures (HC)
-					["timeline"] = { "added 8.0.1", "removed 8.1.0" },
+					["timeline"] = { "added 8.0.1", REMOVED_8_1_0 },
 					["sym"] = {
 						{"select", "instanceID", 1031},			-- Uldir
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 				i(165724, {	-- Cache of Dazar'alor Treasures (N)
-					["timeline"] = { "added 8.1.0", "removed 8.2.0" },
+					["timeline"] = { "added 8.1.0", REMOVED_8_2_0 },
 					["sym"] = {
 						{"select", "instanceID", 1176},			-- Battle of Dazar'alor
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 				i(165729, {	-- Cache of Dazar'alor Treasures (HC)
-					["timeline"] = { "added 8.1.0", "removed 8.2.0" },
+					["timeline"] = { "added 8.1.0", REMOVED_8_2_0 },
 					["sym"] = {
 						{"select", "instanceID", 1176},			-- Battle of Dazar'alor
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 				i(168269, {	-- Cache of Palace Treasures (N)
-					["timeline"] = { "added 8.2.0", "removed 8.3.0" },
+					["timeline"] = { "added 8.2.0", REMOVED_8_3_0 },
 					["sym"] = {
 						{"select", "instanceID", 1179},			-- The Eternal Palace
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 				i(170144, {	-- Cache of Palace Treasures (HC)
-					["timeline"] = { "added 8.2.0", "removed 8.3.0" },
+					["timeline"] = { "added 8.2.0", REMOVED_8_3_0 },
 					["sym"] = {
 						{"select", "instanceID", 1179},			-- The Eternal Palace
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.

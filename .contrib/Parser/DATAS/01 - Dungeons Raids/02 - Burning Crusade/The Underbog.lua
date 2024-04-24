@@ -136,7 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["groups"] = {
 						-- #if BEFORE MOP
 						i(27631, {	-- Needle Shrike
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						-- #if AFTER 7.3.5
@@ -155,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						-- #if BEFORE MOP
 						i(24413, {	-- Totem of the Thunderhead
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27748),	-- Cassock of the Loyal
 							-- #if BEFORE MOP
 							i(27744, {	-- Idol of Ursoc
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},

@@ -80,7 +80,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(31833, bubbleDownSelf({	-- Continue Your Training: Master Woo
-								["timeline"] = { "added 5.0", "removed 8.0.1" },
+								["timeline"] = { "added 5.0", REMOVED_8_0_1 },
 							},{
 								["sourceQuests"] = {
 									31834,	-- Begin Your Training: Master Cheng
@@ -160,32 +160,32 @@ root(ROOTS.Zones, {
 									31834,	-- Begin Your Training: Master Cheng
 								-- #endif
 								},
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { "added 5.0", REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31858, {	-- The Peak of Serenity - Continue Your Training /lvl 15
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31835,	-- Continue Your Training: Master Kistane
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { "added 5.0", REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31859, {	-- The Peak of Serenity - Continue Your Training /lvl 20
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31836,	-- Continue Your Training: Master Yoon
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { "added 5.0", REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31860, {	-- The Peak of Serenity - Continue Your Training /lvl 25
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31837,	-- Continue Your Training: Master Cheng
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { "added 5.0", REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31861, {	-- The Peak of Serenity - Continue Your Training /lvl 30
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31838,	-- Continue Your Training: Master Tsang
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { "added 5.0", REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31989, {	-- The Peak of Serenity - Complete Your Training /lvl 35
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31839,	-- Continue Your Training: Master Hsu
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { "added 5.0", REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 						}),
 						n(VENDORS, {

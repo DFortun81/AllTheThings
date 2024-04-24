@@ -103,7 +103,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #endif
 						}),
 						i(9653, {	-- Speedy Racer Googles
-							["timeline"] = { "removed 1.9.3" },
+							["timeline"] = { REMOVED_1_9_3 },
 						}),
 					},
 				}),

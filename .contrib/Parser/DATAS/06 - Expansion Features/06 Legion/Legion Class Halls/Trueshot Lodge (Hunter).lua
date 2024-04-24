@@ -273,13 +273,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 40955 },	-- Oath of Service
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					q(41047, {	-- Infused with Power
 						["sourceQuests"] = { 41053 },	-- Altar of the Eternal Hunt
 						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn
 						["coord"] = { 47.8, 52.8, TRUESHOT_LODGE },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					-- Choose Legion Zone
 					q(40958, {	-- Tactical Matters
@@ -656,13 +656,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 118429 },	-- Injured Archer
 						["coord"] = { 49.0, 45.2, TRUESHOT_LODGE },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					q(46023, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 46022,	-- An Urgent Warning
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell <Unseen Path>
 						["coord"] = { 43.0, 46.8, TRUESHOT_LODGE },
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45551, {	-- Devastating Effects
@@ -769,19 +769,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					q(43880, {	-- Hitting the Books
 						["provider"] = { "n", 98737 },	-- Holt Thunderhorn <Lore and Legends>
 						["coord"] = { 52.8, 55.0, TRUESHOT_LODGE },
-						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
 					}),
 					q(46130, {	-- Knowledge is Power
 						["sourceQuest"] = 43880,	-- Hitting the Books
 						["provider"] = { "n", 98737 },	-- Holt Thunderhorn <Lore and Legends>
 						["coord"] = { 52.8, 55.0, TRUESHOT_LODGE },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46149, {	-- Furthering Knowledge
 						["sourceQuest"] = 46130,	-- Knowledge is Power
 						["provider"] = { "n", 98737 },	-- Holt Thunderhorn <Lore and Legends>
 						["coord"] = { 52.8, 55.0, TRUESHOT_LODGE },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46783, {	-- Further Advancement
 						["sourceQuests"] = { 46048 },	-- Champion: Nighthuntress Syrenne

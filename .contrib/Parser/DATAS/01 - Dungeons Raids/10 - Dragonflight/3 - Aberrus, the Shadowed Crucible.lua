@@ -926,7 +926,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
-					["timeline"] = { ADDED_10_1_0, "removed 10.1.0.50000" },
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },
 				},{
 					i(204413),	-- Bands of Purified Purpose
 					i(204412),	-- Crucible Curator's Wingspan

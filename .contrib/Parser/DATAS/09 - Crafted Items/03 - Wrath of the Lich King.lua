@@ -627,8 +627,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		filter(GLYPHS, {
-			i(42736, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Arcane Explosion
-			i(42898, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+			i(42736, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Arcane Explosion
+			i(42898, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
 				["timeline"]={ ADDED_3_0_2 },
 			}),

@@ -3174,7 +3174,7 @@ root(ROOTS.Zones, {
 					["g"] = {
 						i(129057),	-- Dalaran Disc (TOY!)
 						i(140309, {	-- Prismatic Bauble (TOY!)
-							["timeline"] = { "added 10.1.0", "removed 10.1.5" },	-- During June 2023
+							["timeline"] = { "added 10.1.0", REMOVED_10_1_5 },	-- During June 2023
 							["cost"] = 2500000000,	-- 250,000g
 						}),
 					},

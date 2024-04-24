@@ -60,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				i(35273),	-- Study of Advanced Smelting (RECIPE!)
 				-- #if BEFORE MOP
 				i(34349, {	-- Blade of Life's Inevitability
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 				}),
 				-- #endif
 				i(34350),	-- Gauntlets of the Ancient Shadowmoon

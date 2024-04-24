@@ -541,7 +541,7 @@ root(ROOTS.Zones, {
 							i(30014),	-- X-52 Pilot's Leggings
 							i(30016),	-- X-52 Technician's Helm
 							i(30847, {	-- X-52 Rocket Helmet
-								["timeline"] = { "removed 7.0.3.22248" },
+								["timeline"] = { REMOVED_7_0_3 },
 							}),
 						},
 					}),
@@ -842,7 +842,7 @@ root(ROOTS.Zones, {
 							i(30226),	-- Alley's Recurve
 							-- #if BEFORE MOP
 							i(30227, {	-- Mark V's Throwing Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(30252),	-- Unearthed Enkaat Wand
@@ -2102,7 +2102,7 @@ root(ROOTS.Zones, {
 					}),
 					i(28277, {	-- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
 						["cr"] = 18870,	-- Voidshrieker
-						["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 					}),
 					i(22551, {	-- Formula: Enchant Weapon - Major Intellect
 						["cr"] = 20136,	-- Sunfury Researcher
@@ -2148,7 +2148,7 @@ appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
 root(ROOTS.NeverImplemented, {
 	n(ARMOR, {
 		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
-			["timeline"] = { "removed 7.0.3.22248" },
+			["timeline"] = { REMOVED_7_0_3 },
 		}),
 	}),
 });

@@ -960,7 +960,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50996)),	-- Belt of Omission
 						emof(60, i(50994)),	-- Belt of Petrified Ivy
 						emof(30, i(50458, {	-- Bizuri's Totem of Shattered Ice
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(60, i(50980)),	-- Blizzard Keeper's Mitts
 						emof(95, i(50965)),	-- Castle Breaker's Battleplate
@@ -979,22 +979,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50981)),	-- Gloves of the Great Horned Owl
 						emof(60, i(50355)),	-- Herkumi War Token
 						emof(30, i(50454, {	-- Idol of the Black Willow
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50456, {	-- Idol of the Crying Moon
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50457, {	-- Idol of the Lunar Eclipse
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50460, {	-- Libram of Blinding Light
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50461, {	-- Libram of the Eternal Tower
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50455, {	-- Libram of Three Truths
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(60, i(50989)),	-- Lich Killer's Lanyard
 						emof(60, i(50979)),	-- Logsplitters
@@ -1010,16 +1010,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(50, i(50466)),	-- Sentinel's Winter Cloak
 						emof(95, i(50972)),	-- Shadow Seeker's Tunic
 						emof(30, i(50462, {	-- Sigil of the Bone Gryphon
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50459, {	-- Sigil of the Hanged Man
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50463, {	-- Totem of the Avalanche
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50464, {	-- Totem of the Surging Sea
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(60, i(50995)),	-- Vengeful Noose
 						emof(60, i(50991)),	-- Verdigris Chain Belt
@@ -1242,7 +1242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50812),	-- Taldron's Long Neglected Boots
 							i(50986),	-- Signet of Putrefaction
 							i(50999, {	-- Gluth's Fetching Knife
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1589,7 +1589,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51873),	-- Shuffling Shoes
 							i(51878),	-- Rotface's Rupturing Ring
 							i(51880, {	-- Gluth's Fetching Knife
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),

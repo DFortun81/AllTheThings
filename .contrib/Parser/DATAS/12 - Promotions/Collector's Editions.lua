@@ -365,7 +365,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		}),
 	})),
 	-- #else
-	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.1.7.51972" } }, {
+	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["g"] = {
@@ -481,7 +481,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			},
 		}),
 	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.1.7.51972" } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
 			["g"] = {
@@ -493,7 +493,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 				ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 				ach(17305, {	-- Trading Post: Dragonflight
-					["timeline"] = { ADDED_10_0_5, "removed 10.2.0" },
+					["timeline"] = { ADDED_10_0_5, REMOVED_10_2_0 },
 				}),
 			},
 		}),

@@ -1109,13 +1109,13 @@ root(ROOTS.Zones, {
 							i(30924),	-- Gloves of the High Magus
 							-- #if BEFORE MOP
 							i(31025, {	-- Idol of the Avenger
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(31033, {	-- Libram of Righteous Power
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(31031, {	-- Stormfury Totem
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -2153,7 +2153,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -2169,7 +2169,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 19826 },  -- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)
-						["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 						["cr"] = 19796,	-- Eclipsion Archmage
 					}),
 					i(30756, {	-- Illidari Bane-Shard (A)

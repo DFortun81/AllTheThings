@@ -13,7 +13,7 @@ root(ROOTS.PVP, {
 			un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(111599)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(111598)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 6.0.3", "removed 6.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 6.0.3", REMOVED_6_2_0 }, }, {
 				ach(9242),	-- Challenger: Warlords of Draenor Season 1
 				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
@@ -3221,7 +3221,7 @@ root(ROOTS.PVP, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 6.2.0", "removed 6.2.2" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 6.2.0", REMOVED_6_2_2 }, }, {
 				ach(10101),	-- Challenger: Warlords of Draenor Season 2
 				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
@@ -6485,7 +6485,7 @@ root(ROOTS.PVP, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 6.2.2", "removed 7.0.3" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 6.2.2", REMOVED_7_0_3 }, }, {
 				ach(10113),	-- Challenger: Warlords of Draenor Season 3
 				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,

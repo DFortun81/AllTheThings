@@ -1018,7 +1018,7 @@ root(ROOTS.Zones, {
 							i(38178),	-- Battlement Enforcer's Axe
 							i(38134),	-- Bloodtinged Spellblade
 							i(38295, {	-- Idol of the Wastes
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38177),	-- Siege Captain's Gun
@@ -1788,7 +1788,7 @@ root(ROOTS.Zones, {
 							i(38178),	-- Battlement Enforcer's Axe
 							i(38134),	-- Bloodtinged Spellblade
 							i(38295, {	-- Idol of the Wastes
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38177),	-- Siege Captain's Gun
@@ -2334,15 +2334,15 @@ root(ROOTS.Zones, {
 							i(44200),	-- Ancestral Sinew Wristguards
 							i(50370, {	-- Arcanum of Blissful Mending
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44152, {	-- Arcanum of Blissful Mending
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44140, {	-- Arcanum of the Eclipsed Moon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44197),	-- Bracers of Accorded Courtesy

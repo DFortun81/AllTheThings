@@ -95,7 +95,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						3559,				-- Turkey Lurkey
 					},
 				},
-				["timeline"] = { ADDED_3_2_2, "removed 5.0.4" },
+				["timeline"] = { ADDED_3_2_2, REMOVED_5_0_4 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]

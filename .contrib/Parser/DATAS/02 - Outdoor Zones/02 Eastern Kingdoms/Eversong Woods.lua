@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.3, 20.1, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 20.0, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 						}),
 						q(9676, {	-- Paladin Training
 							["qg"] = 15278,	-- Magistrix Erona
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -397,7 +397,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -532,7 +532,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.0, 20.0, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -597,7 +597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								-- #if BEFORE CATA
@@ -640,7 +640,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 63.6, 42.6, SUNSTRIDER_ISLE },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 						}),
 						q(8326, {	-- Unfortunate Measures
 							["qg"] = 15278,	-- Magistrix Erona
@@ -675,7 +675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -692,7 +692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -710,7 +710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.5, 20.6, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 20.0, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -765,7 +765,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -783,7 +783,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -801,7 +801,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.0, 20.0, EVERSONG_WOODS },	-- Ranger Sallina <Hunter Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,

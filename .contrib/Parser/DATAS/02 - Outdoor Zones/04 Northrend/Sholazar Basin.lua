@@ -874,7 +874,7 @@ root(ROOTS.Zones, {
 							i(39478),	-- Cloak of the Deadliest Game
 							i(40353),	-- Polished Protodrake Cloak
 							i(39490, {	-- Dorian's Prybar
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1318,7 +1318,7 @@ root(ROOTS.Zones, {
 							i(44122),	-- Scavenged Feathery Leggings
 							i(44121),	-- Sparkly Shiny Gloves
 							i(44118, {	-- Stolen Vrykul Harpoon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),

@@ -88,10 +88,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(QUESTS, {
 				q(48954, {	-- Blood of a Titan
 					["provider"] = { "i", 152900 },	-- Blood of the Unmaker
-					["timeline"] = { "added 7.3", "removed 8.0" },
+					["timeline"] = { "added 7.3", REMOVED_8_0_1 },
 					["g"] = {
 						i(152901, {	-- Violet Spellwing (MOUNT!)
-							["timeline"] = { "added 7.3", "removed 8.0" },
+							["timeline"] = { "added 7.3", REMOVED_8_0_1 },
 						}),
 					},
 				}),
@@ -1186,10 +1186,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
 					ach(12110, {	-- Ahead of the Curve: Argus the Unmaker
-						["timeline"] = { "added 7.3", "removed 8.0" },
+						["timeline"] = { "added 7.3", REMOVED_8_0_1 },
 					}),
 					i(152900, {	-- Blood of the Unmaker
-						["timeline"] = { "added 7.3", "removed 8.0" },
+						["timeline"] = { "added 7.3", REMOVED_8_0_1 },
 					}),
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
@@ -1533,10 +1533,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
 					ach(12111, {	-- Cutting Edge: Argus the Unmaker
-						["timeline"] = { "added 7.3", "removed 8.0" },
+						["timeline"] = { "added 7.3", REMOVED_8_0_1 },
 					}),
 					ach(12258, {	-- Realm First! Argus the Unmaker
-						["timeline"] = { "added 7.3", "removed 8.0" },
+						["timeline"] = { "added 7.3", REMOVED_8_0_1 },
 					}),
 					ach(12002, {	-- Mythic: Argus the Unmaker
 						title(364),		-- Titanslayer

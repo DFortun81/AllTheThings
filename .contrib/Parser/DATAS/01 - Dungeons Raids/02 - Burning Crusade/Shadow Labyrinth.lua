@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27884),	-- Ornate Boots of the Sanctified
 						-- #if BEFORE MOP
 						i(27886, {	-- Idol of the Emerald Queen
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
@@ -299,7 +299,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27884),	-- Ornate Boots of the Sanctified
 							-- #if BEFORE MOP
 							i(27886, {	-- Idol of the Emerald Queen
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},

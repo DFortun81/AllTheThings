@@ -964,14 +964,14 @@ root(ROOTS.Zones, {
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
 							i(37573, {	-- Idol of the Plainstalker
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37574, {	-- Libram of Furious Blows
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37049),	-- Lost Marksman's Rifle
 							i(37575, {	-- Totem of the Tundra
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1645,14 +1645,14 @@ root(ROOTS.Zones, {
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
 							i(37573, {	-- Idol of the Plainstalker
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37049),	-- Lost Marksman's Rifle
 							i(37574, {	-- Libram of Furious Blows
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37575, {	-- Totem of the Tundra
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -2488,7 +2488,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(50373, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38452),	-- Bulwark of the Warchief
@@ -2527,7 +2527,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(50372, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38464),	-- Gnomish Magician's Quill

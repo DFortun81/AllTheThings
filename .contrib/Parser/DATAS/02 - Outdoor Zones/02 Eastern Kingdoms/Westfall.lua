@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						i(9513, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "removed 1.3.0" },
+							["timeline"] = { REMOVED_1_3_0 },
 						}),
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },

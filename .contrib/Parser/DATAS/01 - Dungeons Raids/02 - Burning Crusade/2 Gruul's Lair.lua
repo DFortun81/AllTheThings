@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(28825),	-- Aldori Legacy Defender
 					-- #if BEFORE MOP
 					i(28826, {	-- Shuriken of Negation
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(28804),	-- Collar of Cho'gall

@@ -471,23 +471,23 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
-				["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+				["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 General Drakkisath slain
 						["provider"] = { "n", 10363 },	-- General Drakkisath
 					}),
 					i(66001, {	-- Aeyla's Staff
-						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
 					i(65934, {	-- Staff of the Second Orb
-						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
 					i(65982, {	-- Sword of Nefarian's Hand
-						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
 					i(65958, {	-- Vaelan's Claw
-						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
 				},
 			}),
@@ -834,7 +834,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
-				["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+				["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 				["lvl"] = 55,
 				["groups"] = {
 					objective(1, {	-- 0/1 Warchief Rend Blackhand slain
@@ -1404,7 +1404,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(28972, {	-- Flightblade Throwing Axe [TBC]
 						["timeline"] = {
 							ADDED_2_0_1,
-							"removed 5.0.4"
+							REMOVED_5_0_4
 						},
 					}),
 					i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
@@ -1466,7 +1466,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(22325),	-- Belt of the Trickster
 					i(22306),	-- Ironweave Belt
 					i(22398, {	-- Idol of Rejuvenation
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 				},
 			}
@@ -1556,7 +1556,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(13247, {	-- Quartermaster Zigris' Footlocker
 						["description"] = "Contains a random green item.",
-						["timeline"] = { "removed 6.0.2" },	-- NOTE: Exact patch not known
+						["timeline"] = { REMOVED_6_0_2 },	-- NOTE: Exact patch not known
 					}),
 				},
 			}),
@@ -1655,7 +1655,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			-- #if BEFORE 3.0.8
 			["cost"] = { { "i", 12344, 1 } },	-- Seal of Ascension
 			-- #endif
-			["timeline"] = { "removed 6.0.2" },
+			["timeline"] = { REMOVED_6_0_2 },
 			["groups"] = {
 				-- #if AFTER WRATH
 				n(ACHIEVEMENTS, {
@@ -1664,7 +1664,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "n",  10161 },	-- Rookery Whelp
 							{ "o", 175124 },	-- Rookery Egg
 						},
-						["timeline"] = { ADDED_3_0_2, "removed 6.0.2" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
 						["groups"] = {
 							title(110, {	-- Jenkins
 								["timeline"] = { ADDED_3_0_2 },
@@ -1676,7 +1676,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #endif
 				n(ZONE_DROPS, {
 					i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact (RECIPE!)
-						["timeline"] = { "removed 6.0.2" },
+						["timeline"] = { REMOVED_6_0_2 },
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 					}),
 					applyclassicphase(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
@@ -1709,7 +1709,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					},
 				}),
 				n(9816, {	-- Pyroguard Emberseer
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(21988, {	-- Ember of Emberseer
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1718,19 +1718,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_3_0_8 },
 						}),
 						i(12929, {	-- Emberfury Talisman
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12905, {	-- Wildfire Cape
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12927, {	-- Truestrike Shoulders
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(16672, {	-- Gauntlets of Elements
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12926, {	-- Flaming Band
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						applyclassicphase(PHASE_SIX, i(23320, {	-- Tablet of Flame Shock VI
 							["timeline"] = { REMOVED_4_0_1 },
@@ -1759,13 +1759,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #if BEFORE 6.0.2
 					["description"] = "Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",
 					-- #endif
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 				}),
 				n(10264, {	-- Solakar Flamewreath
 					-- #if BEFORE 6.0.2
 					["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
 					-- #endif
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
@@ -1774,36 +1774,36 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12603, {	-- Nightbrace Tunic
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12609, {	-- Polychromatic Visionwrap
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12606, {	-- Crystallized Girdle
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12589, {	-- Dustfeather Sash
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
 				n(10509, {	-- Jed Runewatcher
 					["description"] = "This is a rare that is not always present.",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						i(12605, {	-- Serpentine Skuller
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12604, {	-- Starfire Tiara
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12930, {	-- Briarwood Reed
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
 				n(10899, {	-- Goraluk Anvilcrack
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						i(18779, {	-- Bottom Half of Advanced Armorsmithing: Volume I
 							["timeline"] = { REMOVED_4_0_1 },
@@ -1816,46 +1816,46 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12834, {	-- Plans: Arcanite Champion (RECIPE!)
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12728),	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(18048, {	-- Mastersmith's Hammer
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(13502, {	-- Handcrafted Mastersmith Girdle
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(13498, {	-- Handcrafted Mastersmith Leggings
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(18047, {	-- Flame Walkers
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
 				n(10339, {	-- Gyth <Rend Blackhand's Mount>
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						i(13522, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(12871, {	-- Chromatic Carapace
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12953, {	-- Dragoneye Coif
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						applyclassicphase(PHASE_FIVE, i(22225, {	-- Dragonskin Cowl
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						})),
 						i(12952, {	-- Gyth's Skull
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12960, {	-- Tribal War Feathers
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(16669, {	-- Pauldrons of Elements
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1863,25 +1863,25 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					},
 				}),
 				n(10429, {	-- Warchief Rend Blackhand
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						i(12630, {	-- Head of Rend Blackhand
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12583, {	-- Blackhand Doomsaw
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12940, {	-- Dal'Rend's Sacred Charge
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12939, {	-- Dal'Rend's Tribal Guardian
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12590, {	-- Felstriker
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12587, {	-- Eye of Rend
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12588, {	-- Bonespike Shoulder
 							-- #if AFTER 2.0.1
@@ -1894,27 +1894,27 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12936, {	-- Battleborn Armbraces
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(18104, {	-- Feralsurge Girdle
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12935, {	-- Warmaster Legguards
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(18102, {	-- Dragonrider Boots
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						applyclassicphase(PHASE_FIVE, i(22247, {	-- Faith Healer's Boots
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						})),
 						i(18103, {	-- Band of Rumination
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
 				n(10430, {	-- The Beast
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
 							["timeline"] = { REMOVED_4_0_1 },
@@ -1925,34 +1925,34 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							-- #endif
 						})),
 						i(12709, {	-- Pip's Skinner
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12969, {	-- Seeping Willow
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12967, {	-- Bloodmoon Cloak
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12968, {	-- Frostweaver Cape
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(16729, {	-- Lightforge Spaulders
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12966, {	-- Blackmist Armguards
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12963, {	-- Blademaster Leggings
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12965, {	-- Spiritshroud Leggings
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12964, {	-- Tristam Legguards
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						applyclassicphase(PHASE_FIVE, i(22311, {	-- Ironweave Boots
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						})),
 						-- #if BEFORE 6.0.2
 						applyclassicphase(PHASE_THREE, i(19227)),	-- Ace of Beasts
@@ -1967,7 +1967,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							-- #endif
 							["groups"] = {
 								i(12731, {	-- Pristine Hide of the Beast
-									["timeline"] = { "removed 6.0.2" },
+									["timeline"] = { REMOVED_6_0_2 },
 								}),
 							},
 						}),
@@ -1981,39 +1981,39 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						{ "i", 22057, 1 },	-- Brazier of Invocation
 					},
 					-- #endif
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						i(22336, {	-- Draconian Aegis of the Legion
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(22335, {	-- Lord Valthalak's Staff of Command
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(22302, {	-- Ironweave Cowl
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(22340, {	-- Pendant of Celerity
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(22337, {	-- Shroud of Domination
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(22343, {	-- Handguards of Savagery
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(22342, {	-- Leggings of Torment
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(22339, {	-- Rune Band of Wizardry
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				})),
 				n(10363, {	-- General Drakkisath
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						ach(1307, {	-- Upper Blackrock Spire
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								6602,	-- Blood of the Black Dragon Champion
@@ -2026,25 +2026,25 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15730, {	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(13519, {	-- Recipe: Flask of the Titans (RECIPE!)
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12592, {	-- Blackblade of Shahram
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(12602, {	-- Draconian Deflector
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						applyclassicphase(PHASE_FIVE, i(22253, {	-- Tome of the Lost
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						})),
 						applyclassicphase(PHASE_FIVE, i(22267, {	-- Spellweaver's Turban
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						})),
 						i(13141, {	-- Tooth of Gnarr
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(16674, {	-- Beaststalker's Tunic
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2074,16 +2074,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						applyclassicphase(PHASE_FIVE, i(22269, {	-- Shadow Prowler's Cloak
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						})),
 						i(13142, {	-- Brigam Girdle
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(13098, {	-- Painweaver Band
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						applyclassicphase(PHASE_FIVE, i(22268, {	-- Draconic Infused Emblem
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						})),
 					},
 				}),

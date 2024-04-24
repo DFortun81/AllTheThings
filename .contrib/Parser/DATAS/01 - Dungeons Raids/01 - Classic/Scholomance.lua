@@ -94,7 +94,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27140, {	-- Alexi's Gambit
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Vectus slain
@@ -175,7 +175,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 		q(27143, {	-- Barov Family Fortune [CATA]
 			["qg"] = 45109,	-- Weldon Barov <House of Barov>
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 The Deed to Brill
@@ -207,7 +207,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
 				i(65923, {	-- Barov Servant Caller
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 			},
 		}),
@@ -273,7 +273,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27146, {	-- Doctor Theolen Krastinov, the Butcher [CATA]
 			["qg"] = 45107,	-- Eva Sarkhoff
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Doctor Theolen Krastinov slain
@@ -341,7 +341,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27147, {	-- Kirtonos the Herald [CATA]
 			["qg"] = 45107,	-- Eva Sarkhoff
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Kirtonos the Herald slain
@@ -482,7 +482,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27145, {	-- Plagued Hatchlings...For Now
 			["qg"] = 45109,	-- Weldon Barov <House of Barov>
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/10 Plagued Hatchling slain
@@ -511,23 +511,23 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27148, {	-- School's Out Forever
 			["qg"] = 45108,	-- Lucien Sarkhoff
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Darkmaster Gandling slain
 					["provider"] = { "n", 1853 },	-- Darkmaster Gandling
 				}),
 				i(65974, {	-- Discipline Rod
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(65925, {	-- Lucien's Boots
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(65950, {	-- Shackles of Punishment
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(65995, {	-- Signet of the Darkmaster
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 			},
 		}),
@@ -573,7 +573,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 7667,	-- Material Assistance
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
-			["timeline"] = { "removed 1.7.0" },
+			["timeline"] = { REMOVED_1_7_0 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
@@ -583,7 +583,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
 				i(18807, {	-- Helm of Latent Power
-					["timeline"] = { "removed 1.7.0" },
+					["timeline"] = { REMOVED_1_7_0 },
 				}),
 			},
 		}),
@@ -726,7 +726,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(27142, {	-- The Lich, Ras Frostwhisper [CATA]
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
-			["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Ras Frostwhisper slain
@@ -1424,19 +1424,19 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82822, {	-- Gravetouch Greatsword
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(81566, {	-- Anarchist's Pendant
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82821, {	-- Breastplate of Wracking Souls
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82820, {	-- Shadow Puppet Bracers
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82823, {	-- Icewrath Belt
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 			},
 		}),
@@ -1462,19 +1462,19 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82847, {	-- Metanoia Shield
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82848, {	-- Barovian Ritual Hood
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82850, {	-- Phantasmal Drape
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82851, {	-- Ghostwoven Legguards
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82852, {	-- Wraithplate Treads
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 			},
 		}),
@@ -1507,19 +1507,19 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #endif
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82824, {	-- Goresoaked Headreaper
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82826, {	-- Necromantic Wand
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82825, {	-- Deadwalker Bracers
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82827, {	-- Rattling Gloves
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82828, {	-- Bone Golem Boots
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 			},
 		}),
@@ -1554,19 +1554,19 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82853, {	-- Soulburner Crown
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(81567, {	-- Necklace of the Dark Blaze
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82855, {	-- Shivbreaker Vest
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82856, {	-- Dark Blaze Gauntlets
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82854, {	-- Leggings of Unleashed Anguish
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 			},
 		}),
@@ -1623,31 +1623,31 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82859, {	-- Headmaster's Will
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82862, {	-- Shoulderguards of Painful Lessons
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82857, {	-- Vigorsteel Spaulders
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82860, {	-- Gloves of Explosive Pain
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82858, {	-- Tombstone Gauntlets
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(82861, {	-- Incineration Belt
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(81268, {	-- Lessons of the Darkmaster
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(81266, {	-- Price of Progress
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 				i(81267, {	-- Searing Words
-					["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
+					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
 				}),
 			},
 		}),

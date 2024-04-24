@@ -139,7 +139,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Masterwork Stormhammer",
-						["timeline"] = { "removed 6.0.2" },
+						["timeline"] = { REMOVED_6_0_2 },
 						["recipeID"] = 16993,
 						["requireSkill"] = 17040,
 					},

@@ -133,7 +133,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Red Dragonscale Breastplate",
-						["timeline"] = { "removed 6.0.2" },
+						["timeline"] = { REMOVED_6_0_2 },
 						["recipeID"] = 19054,
 						["requireSkill"] = 10656,
 					},

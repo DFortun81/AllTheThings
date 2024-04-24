@@ -958,13 +958,13 @@ root(ROOTS.Zones, {
 							i(28063),	-- Survivalist's Wand
 							-- #if BEFORE MOP
 							i(28064, {	-- Idol of the Wild
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(28065, {	-- Libram of Wracking
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(28066, {	-- Totem of Lightning
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -2793,7 +2793,7 @@ root(ROOTS.Zones, {
 					q(10119, {	-- Through the Dark Portal [Alliance]
 						["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
 						["coord"] = { 54.7, 50.5, BLASTED_LANDS },
-						["timeline"] = { "removed 6.0.3" },
+						["timeline"] = { REMOVED_6_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2801,7 +2801,7 @@ root(ROOTS.Zones, {
 					q(9407, {	-- Through the Dark Portal [Horde]
 						["qg"] = 19254,	-- Warlord Dar'toon
 						["coord"] = { 54.4, 50.5, BLASTED_LANDS },
-						["timeline"] = { "removed 6.0.3" },
+						["timeline"] = { REMOVED_6_0_3 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -3336,10 +3336,10 @@ root(ROOTS.Zones, {
 								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29196, {	-- Glyph of Fire Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29189, {	-- Glyph of Renewal
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29153),	-- Blade of the Archmage
 							applyclassicphase(TBC_PHASE_TWO, i(35476)),	-- Crusader's Ornamented Spaulders
@@ -3429,10 +3429,10 @@ root(ROOTS.Zones, {
 								-- #endif
 							}),
 							i(29197, {	-- Glyph of Fire Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29190, {	-- Glyph of Renewal
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(32882, {	-- Hellfire Shot
 								["timeline"] = { REMOVED_4_0_1 },
@@ -3489,7 +3489,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -3530,7 +3530,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 						},
 					}),

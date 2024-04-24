@@ -586,7 +586,7 @@ root(ROOTS.Zones, {
 							i(32831),	-- Jeweled Rod
 							-- #if BEFORE MOP
 							i(32832, {	-- Scout's Throwing Knives
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(32830),	-- Severin's Cane
@@ -1620,7 +1620,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
 							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)

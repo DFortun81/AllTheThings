@@ -218,7 +218,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		i(122396, {	-- Brawler's Razor Claws
 			-- TODO: more accurate timeline updates
 			["timeline"] = {
-				"added 7.2", "removed 8.0",
+				"added 7.2", REMOVED_8_0_1,
 				"added 8.2", REMOVED_9_0_1,
 			},
 		}),

@@ -270,15 +270,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(2224, {	-- Militia Dagger
 									-- CRIEVE NOTE: Not sure at which patch, but the dagger was lost forever.
-									["timeline"] = { "removed 7.0.3.22248" },
+									["timeline"] = { REMOVED_7_0_3 },
 								}),
 								i(5580),	-- Militia Hammer
 								i(1161, {	-- Militia Shortsword
-									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 },
 								}),
 								i(5579),	-- Militia Warhammer
 								i(1159, {	-- Militia Quarterstaff
-									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 },
 								}),
 								i(85575, {	-- Peacebringer's Staff
 									-- At some point this staff replaced the other one.
@@ -324,12 +324,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(2224, {	-- Militia Dagger
 									-- CRIEVE NOTE: Not sure at which patch, but the dagger was lost forever.
-									["timeline"] = { "removed 7.3.5" },
+									["timeline"] = { REMOVED_7_3_5 },
 								}),
 								i(5580),	-- Militia Hammer
 								i(1161, {	-- Militia Shortsword
 									-- CRIEVE NOTE: Not sure at which patch, but the shortsword was lost forever.
-									["timeline"] = { "removed 7.3.5" },
+									["timeline"] = { REMOVED_7_3_5 },
 								}),
 								i(5579),	-- Militia Warhammer
 								i(1159, {	-- Militia Quarterstaff
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
 						}),
@@ -359,7 +359,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["groups"] = {
@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 						}),
@@ -394,7 +394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["groups"] = {
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 						}),
@@ -460,10 +460,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #endif
 								-- CRIEVE NOTE: The following two items were replaced with the above items.
 								i(57392, {	-- Willem's Mitts
-									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 },
 								}),
 								i(57394, {	-- Long Lost Wand
-									["timeline"] = { ADDED_4_0_3, "removed 7.3.5" },
+									["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 },
 								}),
 							},
 						}),
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
@@ -757,7 +757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 						}),
@@ -791,7 +791,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 						}),
@@ -804,7 +804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 39.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["groups"] = {
@@ -987,7 +987,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.8, 39.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -1201,7 +1201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 49.6, 39.4, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["groups"] = {
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 63258,	-- Bao
 							["sourceQuest"] = 31141,	-- Calligraphed Letter
 							["coord"] = { 41.0, 52.2, NORTHSHIRE_VALLEY },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
 							["groups"] = {
@@ -1326,7 +1326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 45.6, 47.8, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "removed 6.0.1.18689" },
+							["timeline"] = { REMOVED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57395, {	-- Lion's Pride Bracer
@@ -1396,7 +1396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 						}),
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.8, 41.6, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 						}),
@@ -1476,7 +1476,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 50.3, 39.9, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 							["groups"] = {
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 48.5, 42.5, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 							["groups"] = {
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 							["groups"] = {
@@ -2530,7 +2530,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 384,	-- Katie Hunter
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12354, 1 } },	-- Palomino (MOUNT!)
 					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 					["races"] = ALLIANCE_ONLY,
@@ -2871,7 +2871,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 384,	-- Katie Hunter
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12353, 1 } },	-- White Stallion (MOUNT!)
 					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 					["races"] = ALLIANCE_ONLY,
@@ -3307,10 +3307,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12354, {	-- Palomino (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 						i(12353, {	-- White Stallion (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 					},
 				}),

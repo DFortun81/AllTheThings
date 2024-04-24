@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							-- #if BEFORE MOP
 							i(27544, {	-- Totem of Spontaneous Regrowth
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(29674, {	-- Pattern: Nature Armor Kit (RECIPE!)

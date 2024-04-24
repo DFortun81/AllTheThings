@@ -616,7 +616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18820),	-- Talisman of Ephemeral Power
 					i(17782, {	-- Talisman of Binding Shard
 						["lore"] = "According to Travis Day, this item was used by Blizzard in a test version of the Thunderfury quest line. The quest was removed and was not publicly released, but Blizzard initially forgot to remove the item from the loot table. It was only ever looted by Noktyn-Archimonde US of the guild Nurfed on March 23, 2005",
-						["timeline"] = { "added 1.11.1.5462", "removed 1.11.2" },
+						["timeline"] = { "added 1.11.1.5462", REMOVED_1_11_2 },
 					}),
 				},
 			}),
@@ -767,7 +767,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18815),	-- Essence of the Pure Flame
 					i(17082),	-- Shard of the Flame
 					i(17982, {	-- Ragnaros Core
-						["timeline"] = { "added 1.1.0", "removed 1.4.0" },
+						["timeline"] = { "added 1.1.0", REMOVED_1_4_0 },
 					}),
 				},
 			}),

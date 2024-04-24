@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					n(ZONE_DROPS, {
 						i(37590),	-- Bands of Fading Light
 						i(37410, {	-- Tracker's Balanced Knives
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(37587),	-- Ymirjar Physician's Robe
 					}),

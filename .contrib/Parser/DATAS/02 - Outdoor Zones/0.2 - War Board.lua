@@ -306,7 +306,7 @@ root(ROOTS.Zones, {
 			q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["qg"] = 45226,	-- Naraat the Earthspeaker
 				["coord"] = { 74.6, 18.8, STORMWIND_CITY },
-				["timeline"] = { ADDED_4_0_1, "removed 8.3.0" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(80, 80, 30),
 			}),

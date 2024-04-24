@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						-- #if BEFORE MOP
 						i(28296, {	-- Libram of the Lightbringer
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(28769),	-- The Keystone
@@ -217,7 +217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							-- #if BEFORE MOP
 							i(28296, {	-- Libram of the Lightbringer
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(28769),	-- The Keystone

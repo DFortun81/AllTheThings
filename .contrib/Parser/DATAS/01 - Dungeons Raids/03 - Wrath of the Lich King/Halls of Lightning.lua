@@ -267,7 +267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(36979),	-- Bjarngrim Family Signet
 						i(36981, {	-- Hardened Vrykul Throwing Axe
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),

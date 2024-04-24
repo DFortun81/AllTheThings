@@ -421,7 +421,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			{ "i", 13317 },	-- Whistle of the Ivory Raptor
 			{ "i", 8586 },	-- Whistle of the Mottled Red Raptor
 		},
-		["timeline"] = { "removed 1.4.0" },
+		["timeline"] = { REMOVED_1_4_0 },
 	})),
 	ach(1415, {		-- Realm First! Grand Master Alchemist
 		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
@@ -710,7 +710,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	-- #if ANYCLASSIC
 	applyclassicphase(SOM_PHASE_ONE, ach(16433, {	-- Soul of Iron (Season of Mastery)
-		["timeline"] = { "added 1.14.3", "removed 1.15.0" },	-- NOTE: You could only acquire this during Season of Mastery, but it didn't appear on your account until Wrath Classic.
+		["timeline"] = { "added 1.14.3", REMOVED_1_15_0 },	-- NOTE: You could only acquire this during Season of Mastery, but it didn't appear on your account until Wrath Classic.
 		-- #if BEFORE TBC
 		["OnUpdate"] = [[function(t)
 			if t.collectible and _.Level >= 60 then

@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 58632,	-- Armsmaster Harlan
 					["groups"] = {
 						i(23192, {	-- Tabard of the Scarlet Crusade
-							["timeline"] = { "removed 5.0.4", "added 5.3.0" },
+							["timeline"] = { REMOVED_5_0_4, "added 5.3.0" },
 						}),
 						i(88272),	-- The Gleaming Ravager
 						i(88273),	-- Armsmaster's Sealed Locket
@@ -122,19 +122,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { "added 7.1.5.23360" },
 							}),
 							i(81693, {	-- Houndmaster's Compound Crossbow
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81696, {	-- Canine Commander's Breastplate
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81694, {	-- Commanding Bracers
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81695, {	-- Hound Trainer's Gloves
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81563, {	-- Beastbinder Ring
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 						},
 					}),
@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["groups"] = {
 							ach(6427),	-- Mosh Pit
 							i(23192, {	-- Tabard of the Scarlet Crusade
-								["timeline"] = { "removed 5.0.4", "added 5.3.0" },
+								["timeline"] = { REMOVED_5_0_4, "added 5.3.0" },
 							}),
 							i(23192),	-- Tabard of the Scarlet Crusade
 							i(144193, {	-- The Gleaming Ravager
@@ -162,19 +162,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { "added 7.1.5.23360" },
 							}),
 							i(81697, {	-- The Gleaming Ravager
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81568, {	-- Armsmaster's Sealed Locket
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81698, {	-- Harlan's Shoulder
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81700, {	-- Lightblade Bracer
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81699, {	-- Scarlet Sandals
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 						},
 					}),
@@ -222,37 +222,37 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 
 							i(82814, {	-- Mograine's Immaculate Might
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(82813, {	-- Koegler's Ritual Knife
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(82816, {	-- Melted Hypnotic Blade
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81564, {	-- Scorched Scarlet Key
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(81565, {	-- Temperature-Sensing Necklace
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(82817, {	-- Robes of Koegler
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(82818, {	-- Vellum-Ripper Gloves
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(82815, {	-- Bindburner Belt
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(82819, {	-- Bradbury's Entropic Legguards
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(82812, {	-- Pyretic Legguards
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(87550, {	-- Vithrak, Gaze of the Deadman
-								["timeline"] = { "removed 7.1.5.23360" },
+								["timeline"] = { REMOVED_7_1_5 },
 							}),
 							i(87268),	-- Codex of the Crusade
 						},

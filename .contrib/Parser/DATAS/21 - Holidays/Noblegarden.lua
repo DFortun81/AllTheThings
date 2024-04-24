@@ -160,10 +160,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			}),
 
 			i(19028, {	-- Elegant Dress
-				["timeline"] = { "removed 7.2.5.24163" },
+				["timeline"] = { REMOVED_7_2_5 },
 			}),
 			i(6835, {	-- Black Tuxedo Pants
-				["timeline"] = { "removed 7.2.5.24163" },
+				["timeline"] = { REMOVED_7_2_5 },
 			}),
 			i(6833),	-- White Tuxedo Shirt
 			-- #if BEFORE 3.1.0.9733
@@ -187,7 +187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2421,	-- Noble Garden (A)
 				2422,	-- Shake Your Bunny-Maker
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(122),	-- <Name> the Noble

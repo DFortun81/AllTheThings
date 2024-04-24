@@ -2281,7 +2281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 57.0, 69.6, 205 },
 							["groups"] = {
 								i(65665, {	-- Burgy Blackheart's Handsome Hat
-									["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+									["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 								}),
 								i(134022, {	-- Burgy Blackheart's Handsome Hat (TOY!)
 									["timeline"] = { "added 7.0.3" },

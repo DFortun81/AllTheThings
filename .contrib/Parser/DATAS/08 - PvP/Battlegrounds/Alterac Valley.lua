@@ -17,7 +17,7 @@ local OnTooltipForAlteracValley = [[function(t, tooltipInfo)
 		end
 	end
 end]];
-local REMOVED_WITH_ANNIVERSARY_15 = { "removed 8.2.5.31958" };	-- TODO: potentially all of these things added back?
+local REMOVED_WITH_ANNIVERSARY_15 = { REMOVED_8_2_5 };	-- TODO: potentially all of these things added back?
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
 		["lore"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
@@ -35,7 +35,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(13419, {	-- Ivus the Forest Lord
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["groups"] = sharedData({ ["timeline"] = { "added 1.5.0.4442", "removed 1.6.0.4500" } }, {
+				["groups"] = sharedData({ ["timeline"] = { "added 1.5.0.4442", REMOVED_1_6_0 } }, {
 					i(19110),	-- Cold Forged Blade
 					i(19105),	-- Frost Runed Headdress
 					i(19111),	-- Winteraxe Epaulets
@@ -47,7 +47,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(13256, {	-- Lokholar the Ice Lord
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = sharedData({ ["timeline"] = { "added 1.5.0.4442", "removed 1.6.0.4500" } }, {
+				["groups"] = sharedData({ ["timeline"] = { "added 1.5.0.4442", REMOVED_1_6_0 } }, {
 					i(19110),	-- Cold Forged Blade
 					i(19105),	-- Frost Runed Headdress
 					i(19111),	-- Winteraxe Epaulets
@@ -261,7 +261,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7362, {	-- Ally of the Tauren
 					["qg"] = 14186,	-- Ravak Grimtotem <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7081, {	-- Alterac Valley Graveyards
@@ -284,7 +284,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(6846, {	-- Begin the Attack!
 					["qg"] = 13446,	-- Field Marshal Teravaine
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7282, {	-- Brotherly Love (Alliance)
@@ -384,7 +384,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 65.6, 55.1, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["timeline"] = { "removed 8.2.5.31958", ADDED_9_1_0 },
+					["timeline"] = { REMOVED_8_2_5, ADDED_9_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6982, {	-- Coldtooth Supplies (Alliance)
@@ -414,17 +414,17 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7421, {	-- Darkspear Defense
 					["qg"] = 14185,	-- Najak Hexxen <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7367, {	-- Defusing the Threat (Alliance)
 					["qg"] = 13598,	-- Stormpike Explosives Expert
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7368, {	-- Defusing the Threat (Horde)
 					["qg"] = 13597,	-- Frostwolf Explosives Expert
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7170, {	-- Earned Reverence (Alliance)
@@ -511,12 +511,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7361, {	-- Favor Amongst the Darkspear
 					["qg"] = 14185,	-- Najak Hexxen <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7364, {	-- Gnomeregan Bounty
 					["qg"] = 14188,	-- Dirk Swindle <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8272, bubbleDown({ ["timeline"] = REMOVED_WITH_ANNIVERSARY_15 }, {	-- Hero of the Frostwolf
@@ -596,7 +596,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7423, {	-- I've Got A Fever For More Bone Chips
 					["qg"] = 13154,	-- Commander Louis Philips
 					["coord"] = { 50.4, 65.5, ALTERAC_VALLEY },
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7241, {	-- In Defense of Frostwolf
@@ -648,14 +648,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7202, {	-- Korrak the Bloodrager
 					["qg"] = 13841,	-- Lieutenant Haggerdin
-					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_8_0 },
 					["races"] = ALLIANCE_ONLY,
 					["_drop"] = { "g" },
 				}),
 				q(7382, {	-- Korrak the Everliving
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7202,	-- Korrak the Bloodrager
-					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_8_0 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -664,7 +664,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(6901, {	-- Launch the Attack!
 					["qg"] = 13449,	-- Warmaster Garrick
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7171, {	-- Legendary Heroes (Alliance)
@@ -715,12 +715,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(6848, {	-- Master Ryson's All Seeing Eye (Alliance)
 					["qg"] = 13151,	-- Syndicate Master Ryson
-					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_8_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6847, {	-- Master Ryson's All Seeing Eye (Horde)
 					["qg"] = 13151,	-- Syndicate Master Ryson
-					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_8_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6781, {	-- More Armor Scraps
@@ -744,7 +744,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7426, {	-- One Man's Love
 					["qg"] = 13320,	-- Commander Karl Philips
 					["coord"] = { 50.9, 30.8, ALTERAC_VALLEY },
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7162, {	-- Proving Grounds (Alliance)
@@ -864,18 +864,18 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7425, {	-- Staghelm's Mojo Jamboree
 					["qg"] = 14187,	-- Athramanis <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7365, {	-- Staghelm's Requiem
 					["qg"] = 14187,	-- Athramanis <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7366, {	-- The Archbishop's Mercy
 					["qg"] = 13320,	-- Commander Karl Philips
 					["coord"] = { 50.9, 30.8, ALTERAC_VALLEY },
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7141, {	-- The Battle of Alterac (Alliance)
@@ -963,12 +963,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7363, {	-- The Human Condition
 					["qg"] = 13154,	-- Commander Louis Philips
 					["coord"] = { 50.4, 65.5, ALTERAC_VALLEY },
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7181, {	-- The Legend of Korrak
 					["qg"] = 13840,	-- Warmaster Laggrond
-					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_8_0 },
 					["races"] = HORDE_ONLY,
 					["_drop"] = { "g" },
 				}),
@@ -981,7 +981,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7381, {	-- The Return of Korrak
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7181,	-- The Legend of Korrak
-					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_8_0 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -1021,51 +1021,51 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7422, {	-- Tuft it Out
 					["qg"] = 14186,	-- Ravak Grimtotem <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7401, {	-- WANTED: DWARVES!
 					["qg"] = 13448,	-- Sergeant Yazra Bloodsnarl
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7427, {	-- Wanted: MORE DWARVES!
 					["qg"] = 13448,	-- Sergeant Yazra Bloodsnarl
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7428, {	-- Wanted: MORE ORCS!
 					["qg"] = 13447,	-- Corporal Noreg Stormpike
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7402, {	-- Wanted: ORCS!
 					["qg"] = 13447,	-- Corporal Noreg Stormpike
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7424, {	-- What the Hoof?
 					["qg"] = 14188,	-- Dirk Swindle <Bounty Hunter>
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6862, {	-- Zinfizzlex's Portable Shredder Unit (A)
 					["qg"] = 13377,	-- Master Engineer Zinfizzlex
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(17410, {	-- Zinfizzlex's Portable Shredder Unit
-							["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+							["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 						}),
 					},
 				}),
 				q(6861, {	-- Zinfizzlex's Portable Shredder Unit (H)
 					["qg"] = 13377,	-- Master Engineer Zinfizzlex
-					["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+					["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(17384, {	-- Zinfizzlex's Portable Shredder Unit
-							["timeline"] = { "added 1.5.0", "removed 1.10.0" },
+							["timeline"] = { "added 1.5.0", REMOVED_1_10_0 },
 						}),
 					},
 				}),

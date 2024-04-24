@@ -58,7 +58,7 @@ local OLD_DIFFICULTIES_BUBBLE_DOWN_FILTER = function(t)
 	return t.itemID or t.ignoreBonus or t.achievementID;
 end
 local OLD_DIFFICULTIES_BUBBLE_DOWN_CONTENTS = {
-	["timeline"] = { "added 5.4.0", "removed 6.0.2" },
+	["timeline"] = { "added 5.4.0", REMOVED_6_0_2 },
 };
 local function oldD(id, groups)
 	return bubbleDownFiltered(OLD_DIFFICULTIES_BUBBLE_DOWN_CONTENTS, OLD_DIFFICULTIES_BUBBLE_DOWN_FILTER, n(id, {

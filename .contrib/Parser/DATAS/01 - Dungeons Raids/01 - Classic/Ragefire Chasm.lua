@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26862, {	-- Elemental Tampering
 					["qg"] = 44216,	-- Bovaal Whitehorn
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26865, {	-- Enemies Below [Orgrimmar]
 					["qg"] = 39605,	-- Garrosh Hellscream
 					["coord"] = { 48.1, 70.5, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1, "removed 5.0.1.15589" },
+					["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26866, {	-- Enemies Below [Thunder Bluff]
 					["qg"] = 36648,	-- Baine Bloodhoof
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_0_1, "removed 5.0.1.15589" },
+					["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31036, {	-- Enemies Below [Thunder Bluff]
@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(26867, {	-- Enemies Below [Undercity]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.1.15589" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31037, {	-- Enemies Below [Undercity]
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26856, {	-- Repel the Invasion
 					["qg"] = 44217,	-- Stone Guard Kurjack
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
@@ -217,7 +217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -240,7 +240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						31037,	-- Enemies Below [Undercity]
 						-- #endif
 					},
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
@@ -251,29 +251,29 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "created 7.0.3.22248" },
 						}),
 						i(66031, {	-- Hide Vest of the Shaman
-							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						i(66022, {	-- Ragefire Leggings
-							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						i(49541, {	-- Robes of the Doomed Ritual
-							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						i(131613, {	-- Scaled Vest of the Shaman
 							["timeline"] = { "created 7.0.3.22248" },
 						}),
 						i(66040, {	-- Searing Belt
-							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						i(66045, {	-- Stone Guard Greaves
-							["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				q(5723, {	-- Testing an Enemy's Strength
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
 					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -402,18 +402,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(11517, {	-- Oggleflint <Ragefire Chieftain>
-				["timeline"] = { "removed 5.0.4" },
+				["timeline"] = { REMOVED_5_0_4 },
 				["groups"] = {
 					i(14381, {	-- Grimtotem Satchel
 						["description"] = "Found on the tauren corpse in front of this boss.",
 					}),
 					i(68194, {	-- Oggleflint's Inspirer
-						["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			n(11520, {	-- Taragaman the Hungerer
-				["timeline"] = { "removed 5.0.4" },
+				["timeline"] = { REMOVED_5_0_4 },
 				["groups"] = {
 					-- #if BEFORE 5.0.4
 					ach(629, {	-- Ragefire Chasm
@@ -423,42 +423,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5038, {	-- Ragefire Chasm Guild Run
-						["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(14540, {	-- Taragaman the Hungerer's Heart
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					i(14145, {	-- Cursed Felblade
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					i(14149, {	-- Subterranean Cape
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					i(14148, {	-- Crystalline Cuffs
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			n(11518, {	-- Jergosh the Invoker
-				["timeline"] = { "removed 5.0.4" },
+				["timeline"] = { REMOVED_5_0_4 },
 				["groups"] = {
 					i(14151, {	-- Chanting Blade
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					i(14150, {	-- Robe of Evocation
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					i(14147, {	-- Cavedweller Bracers
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			n(11519, {	-- Bazzalan
-				["timeline"] = { "removed 5.0.4" },
+				["timeline"] = { REMOVED_5_0_4 },
 				["groups"] = {
 					i(68195, {	-- Bazzalan's Blade
-						["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					}),
 				},
 			}),

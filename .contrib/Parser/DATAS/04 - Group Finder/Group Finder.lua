@@ -70,36 +70,36 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51963),			-- Vigorous Stompers			— 01/16/22
 			},
 		}),
-		i(51999, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 15-25
+		i(51999, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 15-25
 			["description"] = "Rewarded for completing a random dungeon in the level 15-25 range.",
 			["groups"] = {
 				i(51994),	-- Tumultuous Cloak [INT]
 				i(143580, {	-- Earthbound Girdle
-					["timeline"] = { "added 7.1.0.22731", "removed 7.3.5.25600" },
+					["timeline"] = { "added 7.1.0.22731", REMOVED_7_3_5 },
 				}),
 				i(51978),	-- Earthbound Girdle
 				i(51968),	-- Enumerated Wrap
 				i(143582, {	-- Stalwart Belt
-					["timeline"] = { "added 7.1.0.22731", "removed 7.3.5.25600" },
+					["timeline"] = { "added 7.1.0.22731", REMOVED_7_3_5 },
 				}),
 				i(51964),	-- Vigorous Belt
 			},
 		})),
-		i(52000, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 26-35
+		i(52000, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 26-35
 			["description"] = "Rewarded for completing a random dungeon in the level 26-35 range.",
 			["groups"] = {
 				i(51996),	-- Tumultuous Necklace
 				i(143581, {	-- Earthbound Grips
-					["timeline"] = { "added 7.1.0.22731", "removed 7.3.5.25600" },
+					["timeline"] = { "added 7.1.0.22731", REMOVED_7_3_5 },
 				}),
 				i(51980, {	-- Earthbound Handgrips
-					["timeline"] = { ADDED_3_3_0, "removed 7.1.0.22731" },
+					["timeline"] = { ADDED_3_3_0, REMOVED_7_1_0 },
 				}),
 				i(51973),	-- Enumerated Handwraps
 				i(51965),	-- Vigorous Handguards
 			},
 		})),
-		i(67248, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
+		i(67248, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
 			["description"] = "Rewarded for completing a random dungeon in the level 35-39 range.",
 			["groups"] = {
 				i(51976),	-- Earthbound Shoulderguards
@@ -128,12 +128,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					-- #if BEFORE 7.3.5
 					["description"] = "These may only be available at level 40+.",
 					-- #endif
-					["timeline"] = { "added 7.1.0.22731", "removed 7.3.5.25600" },
+					["timeline"] = { "added 7.1.0.22731", REMOVED_7_3_5 },
 				}),
 				i(51992),	-- Tumultuous Ring
 			},
 		})),
-		i(52001, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
+		i(52001, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
 			-- #if AFTER CATA
 			["description"] = "Rewarded for completing a random dungeon in the level 40-45 range.",
 			-- #else
@@ -147,7 +147,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51992),	-- Tumultuous Ring
 			},
 		})),
-		i(52002, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 46-55
+		i(52002, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 46-55
 			["description"] = "Rewarded for completing a random dungeon in the level 46-55 range.",
 			["groups"] = {
 				i(51982),	-- Earthbound Boots
@@ -160,7 +160,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51963),	-- Vigorous Stompers
 			},
 		})),
-		i(52003, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 56-60
+		i(52003, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 56-60
 			["description"] = "Rewarded for completing a random dungeon in the level 56-60 range.",
 			["groups"] = {
 				i(51993),	-- Turbulent Cloak
@@ -223,7 +223,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 			},
 		}),
-		i(52004, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 60-64
+		i(52004, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 60-64
 			["description"] = "Rewarded for completing a random dungeon in the level 60-64 range.",
 			["groups"] = {
 				i(51995),	-- Turbulent Necklace
@@ -233,7 +233,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51960),	-- Vigorous Gloves
 			},
 		})),
-		i(52005, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, "removed 7.3.5.25600" } }, {	-- Satchel of Helpful Goods 65-70
+		i(52005, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 65-70
 			["description"] = "Rewarded for completing a random dungeon in the level 65-70 range.",
 			["groups"] = {
 				i(51991),	-- Turbulent Signet
@@ -278,7 +278,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(112360),	-- Winterfrost Leather Leggings			— confirmed by user on discord on April 22, 2020
 			},
 		}),
-		i(114634, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18500", "removed 7.3.5.25600" } }, {	-- Icy Satchel of Helpful Goods 70-74
+		i(114634, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18500", REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 70-74
 			["description"] = "Rewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.",
 			["groups"] = {
 				i(112361),	-- Ice-Encrusted Plate Belt
@@ -304,7 +304,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(112359),	-- Winterfrost Leather Waders
 			},
 		})),
-		i(114641, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18500", "removed 7.3.5.25600" } }, {	-- Icy Satchel of Helpful Goods 75-80
+		i(114641, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18500", REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 75-80
 			["description"] = "Rewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.",
 			["groups"] = {
 				i(113687),	-- Dark Rune Lavalliere
@@ -340,43 +340,43 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113727),	-- Smoldering Slagstone Ring	— Confirmed by milotic on GitHub on August 24, 2020
 				i(113769),	-- Ravaged Leather Boots*		— 01/18/22
 				i(113705, {	-- Ravaged Leather Bracers*
-					["timeline"] = { "removed 7.3.5.25600" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["isBounty"] = true,
 					-- #endif
 				}),
 				i(113698, {	-- Ravaged Leather Cap*
-					["timeline"] = { "removed 7.3.5.25600" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["isBounty"] = true,
 					-- #endif
 				}),
 				i(113724),	-- Ravaged Leather Gauntlets	— 01/18/22
 				i(113700, {	-- Ravaged Leather Helm
-					["timeline"] = { "removed 7.3.5.25600" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["isBounty"] = true,
 					-- #endif
 				}),
 				i(113712),	-- Ravaged Leather Pants		— 01/18/22
 				i(113768, {	-- Ravaged Leather Slippers*
-					["timeline"] = { "removed 7.3.5.25600" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["isBounty"] = true,
 					-- #endif
 				}),
 				i(113706),	-- Ravaged Leather Wristguards*	— 01/18/22
 				i(113774, {	-- Sparkmail Boots
-					["timeline"] = { "removed 7.3.5" },	-- Maybe never added
+					["timeline"] = { REMOVED_7_3_5 },	-- Maybe never added
 				}),
 				i(113703, {	-- Sparkmail Bracers
-					["timeline"] = { "removed 7.3.5" },	-- Maybe never added
+					["timeline"] = { REMOVED_7_3_5 },	-- Maybe never added
 				}),
 				i(113717),	-- Sparkmail Chestguard			- Confirmed by Dani#8000 on Discord on October 20, 2020
 				i(113723),	-- Sparkmail Gauntlets			- Confirmed by Cytosine#2527 on Discord on November 16, 2020
 				i(113699),	-- Sparkmail Headguard
 				i(113697, {	-- Sparkmail Helm
-					["timeline"] = { "removed 7.3.5" },	-- Maybe never added
+					["timeline"] = { REMOVED_7_3_5 },	-- Maybe never added
 				}),
 				i(113775),	-- Sparkmail Sabatons			— Confirmed by Shorty on Discord on August 20, 2020
 				i(113704),	-- Sparkmail Wristguards
@@ -385,7 +385,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113780),	-- Emberspark Plate Boots
 				i(113701),	-- Emberspark Plate Bracers*	— confirmed by Carbion on Discord on April 20, 2020 (blaze it)
 				i(113696, {	-- Emberspark Plate Headguard
-					["timeline"] = { "removed 7.3.5.25600" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["isBounty"] = true,
 					-- #endif
@@ -393,13 +393,13 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113695),	-- Emberspark Plate Helm*		— confirmed by Carbion on Discord on April 21, 2020
 				i(113707),	-- Emberspark Plate Leggings*
 				i(113781, {	-- Emberspark Plate Sabatons*
-					["timeline"] = { "removed 7.3.5.25600" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["isBounty"] = true,
 					-- #endif
 				}),
 				i(113702, {	-- Emberspark Plate Wristguards
-					["timeline"] = { "removed 7.3.5.25600" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["isBounty"] = true,
 					-- #endif
@@ -607,18 +607,18 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.WOD, {
 		i(120334, {	-- Satchel of Cosmic Mysteries
-			["timeline"] = { "added 5.4.0", "removed 6.0.3" },
+			["timeline"] = { "added 5.4.0", REMOVED_6_0_3 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
 		i(104260, {	-- Satchel of Savage Mysteries
-			["timeline"] = { "added 6.0.3", "removed 6.1.0" },
+			["timeline"] = { "added 6.0.3", REMOVED_6_1_0 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
-		i(122607, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0, "removed 6.2.0" } }, {	-- Savage Satchel of Cooperation
+		i(122607, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 } }, {	-- Savage Satchel of Cooperation
 			["g"] = {
 				i(122633, {	-- Shared Turbulent Armament
 					i(115319),	-- Turbulent Axe
@@ -702,7 +702,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 			},
 		})),
-		i(128803, bubbleDownSelf({ ["timeline"] = { "added 6.2.0", "removed 7.0.3" } }, {	-- Savage Satchel of Cooperation
+		i(128803, bubbleDownSelf({ ["timeline"] = { "added 6.2.0", REMOVED_7_0_3 } }, {	-- Savage Satchel of Cooperation
 			["g"] = {
 				i(127799, {	-- Baleful Pendant
 					i(124612),	-- Discordant Amulet

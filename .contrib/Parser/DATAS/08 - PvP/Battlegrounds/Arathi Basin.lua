@@ -763,7 +763,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					-- #if BEFORE 5.0.4
@@ -788,7 +788,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -848,7 +848,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8121,	-- Take Four Bases (Horde)
 					["minReputation"] = { 510, EXALTED },	-- The Defilers, Exalted.
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 					-- #if BEFORE 5.0.4
@@ -869,7 +869,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -888,7 +888,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -907,7 +907,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -926,7 +926,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -945,7 +945,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -957,7 +957,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+					["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -972,7 +972,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -987,7 +987,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -1002,7 +1002,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -1017,7 +1017,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),

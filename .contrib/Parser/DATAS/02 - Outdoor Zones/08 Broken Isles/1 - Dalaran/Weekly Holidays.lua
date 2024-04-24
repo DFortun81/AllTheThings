@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(153504, {	-- Cache of Antoran Treasures (N)
-					["timeline"] = { "added 7.3.2", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.2", REMOVED_8_0_1 },
 					["sym"] = {
 						{"select", "instanceID", 946},			-- Antorus
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					},
 				}),
 				i(153501, {	-- Cache of Antoran Treasures (HC)
-					["timeline"] = { "added 7.3.2", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.2", REMOVED_8_0_1 },
 					["sym"] = {
 						{"select", "instanceID", 946},			-- Antorus
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.

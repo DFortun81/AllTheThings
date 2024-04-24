@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 56186,	-- Spies to the Left and Right
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 						}),
@@ -431,7 +431,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 56188,	-- To the Catacombs!
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 							["g"] = {
@@ -583,7 +583,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 56189,	-- On the Trail of the Black Prince
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 						}),
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 						}),
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 53405,	-- Unlocking the Heart's Potential
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["timeline"] = { "added 8.0.1.27291", "removed 8.2.0" },
+							["timeline"] = { "added 8.0.1.27291", REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(55618, {	-- The Heart Forge
@@ -656,7 +656,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["timeline"] = { "added 8.0.1.27291", "removed 8.2.0" },
+							["timeline"] = { "added 8.0.1.27291", REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(55398, {	-- The Long Awake
@@ -710,7 +710,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 56187,	-- Black Winged Shadow
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 						}),
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 50973,	-- The Heart's Power
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["timeline"] = { "added 8.0.1.27291", "removed 8.2.0" },
+							["timeline"] = { "added 8.0.1.27291", REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(56263, {	-- Unlocking the Power (A)
@@ -805,7 +805,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["races"] = ALLIANCE_ONLY,
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 						}),
@@ -848,7 +848,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["races"] = HORDE_ONLY,
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 						}),
@@ -858,7 +858,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 56190,	-- Save Ebonhorn
 							["timeline"] = {
 								"added 8.2.5.31921",
-								"removed 8.3",	-- (removed with 8.3)
+								REMOVED_8_3_0,	-- (removed with 8.3)
 								"added 9.2",	-- Reported available again 2022-03-21
 							},
 						}),
@@ -1144,10 +1144,10 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						50300,	-- The Speaker's Call
 						50056,	-- The Speaker's Call
 					},
-					["timeline"] = { "added 7.3.5.25727", "removed 8.0.1.27291" },
+					["timeline"] = { "added 7.3.5.25727", REMOVED_8_0_1 },
 					["groups"] = {
 						ach(12071, {	-- Crucible's Promise
-							["timeline"] = { "added 7.3.5.25727", "removed 8.0.1.27291" },
+							["timeline"] = { "added 7.3.5.25727", REMOVED_8_0_1 },
 						}),
 					},
 				}),
@@ -1218,14 +1218,14 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					["qg"] = 132255,	-- Master Mathias Shaw
 					["sourceQuest"] = 49976,	-- Gifts of the Fallen
 					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49982, {	-- Witness to the Wound (H)
 					["qg"] = 132254,	-- Nathanos Blightcaller
 					["sourceQuest"] = 50341,	-- A Recent Discovery
 					["coord"] = { 49.8, 75.6, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

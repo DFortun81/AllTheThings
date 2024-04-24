@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(120951),	-- Protective Field Grips
 						-- #endif
 						i(26034, {	-- Protective Field Gloves
-							["timeline"] = { "removed 6.1.0" },
+							["timeline"] = { REMOVED_6_1_0 },
 						}),
 						i(26022),	-- Researcher's Gloves
 						i(26008),	-- Scholar's Gloves

@@ -2,6 +2,27 @@
 --     CLASSIC WOW     --
 -------------------------
 ADDED_1_4_0 = "added 1.4.0";
+REMOVED_1_2_0 = "removed 1.2.0";
+REMOVED_1_3_0 = "removed 1.3.0";
+REMOVED_1_4_0 = "removed 1.4.0";
+REMOVED_1_5_0 = "removed 1.5.0";
+REMOVED_1_6_0 = "removed 1.6.0";
+REMOVED_1_7_0 = "removed 1.7.0";
+REMOVED_1_8_0 = "removed 1.8.0";
+REMOVED_1_9_3 = "removed 1.9.3";
+REMOVED_1_10_0 = "removed 1.10.0";
+REMOVED_1_11_1 = "removed 1.11.1";
+REMOVED_1_11_2 = "removed 1.11.2";
+
+--- CLASSIC TIMELINES ---
+
+--- SEASON OF DISCOVERY ---
+ADDED_1_15_0 = "added 1.15.0";
+REMOVED_1_15_0 = "removed 1.15.0";
+ADDED_1_15_1 = "added 1.15.1";
+REMOVED_1_15_1 = "removed 1.15.1";
+ADDED_1_15_2 = "added 1.15.2";
+ADDED_1_15_3 = "added 1.15.3";
 
 -------------------------
 -- THE BURNING CRUSADE --
@@ -298,7 +319,7 @@ ADDED_9_0_1 = "added 9.0.1.36216";						-- Shadowlands 9.0.1/Pre-Patch Launch on
 REMOVED_9_0_1 = "removed 9.0.1.36216";					-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
 CREATED_9_0_2 = "created 9.0.2.36639";					-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
 ADDED_9_0_2 = "added 9.0.2.36639";						-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
-REMOVED_9_0_2 = "added 9.0.2.36639";					-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
+REMOVED_9_0_2 = "removed 9.0.2.36639";					-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
 CREATED_9_0_2_LAUNCH = "created 9.0.2.36710";			-- Shadowlands Launch on November 23rd, 2020
 ADDED_9_0_2_LAUNCH = "added 9.0.2.36710";				-- Shadowlands Launch on November 23rd, 2020
 REMOVED_9_0_2_LAUNCH = "removed 9.0.2.36710";			-- Shadowlands Launch on November 23rd, 2020

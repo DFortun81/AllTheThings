@@ -581,7 +581,7 @@ local MADAME_RUBY_GROUPS = {
 		["isLimited"] = true,
 	}),
 	i(25849, {	-- Formula: Runed Eternium Rod (RECIPE!)
-		["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+		["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 	}),
 	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
 		["isLimited"] = true,
@@ -1665,7 +1665,7 @@ root(ROOTS.Zones, {
 							}),
 							i(25846, {	-- Plans: Adamantite Rod (RECIPE!)
 								["isLimited"] = true,
-								["timeline"] = { ADDED_2_0_1, "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1713,14 +1713,14 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
 							i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
 							i(33153, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
-							i(22537, {["timeline"]={ADDED_2_0_1,"removed 6.0.2"}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
+							i(22537, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
 							i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
 							i(29175),	-- Gavel of Pure Light
 							i(29195, {	-- Glyph of Arcane Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29191, {	-- Glyph of Power
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
@@ -1970,7 +1970,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29376)),	-- Essence of the Martyr
 							applyclassicphase(TBC_PHASE_FOUR, i(33513)),	-- Eternium Rage-Shackles
 							applyclassicphase(TBC_PHASE_ONE, i(29390, {	-- Everbloom Idol
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(32083)),	-- Faceguard of Domination
 							applyclassicphase(TBC_PHASE_ONE, i(29385)),	-- Farstrider Defender's Cloak
@@ -1992,13 +1992,13 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_FOUR, i(33518)),	-- High Justicar's Legplates
 							applyclassicphase(TBC_PHASE_ONE, i(29370)),	-- Icon of the Silver Crescent
 							applyclassicphase(TBC_PHASE_FOUR, i(33508, {	-- Idol of Budding Life
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33509, {	-- Idol of Terror
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33510, {	-- Idol of the Unseen Moon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33207)),	-- Implacable Guardian Sabatons
 							applyclassicphase(TBC_PHASE_ONE, i(30770)),	-- Inferno Forged Boots
@@ -2021,16 +2021,16 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29273)),	-- Khadgar's Knapsack
 							applyclassicphase(TBC_PHASE_FOUR, i(33333)),	-- Kharmaa's Shroud of Hope
 							applyclassicphase(TBC_PHASE_FOUR, i(33503, {	-- Libram of Divine Judgement
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33504, {	-- Libram of Divine Purpose
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33502, {	-- Libram of Mending
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(29388, {	-- Libram of Repentance
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(29267)),	-- Light-Bearer's Faith Shield
 							applyclassicphase(TBC_PHASE_FOUR, i(33587)),	-- Light-Blessed Bonds
@@ -2066,13 +2066,13 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29369)),	-- Shawl of Shifting Probabilities
 							applyclassicphase(TBC_PHASE_FOUR, i(33527)),	-- Shifting Camouflage Pants
 							applyclassicphase(TBC_PHASE_FOUR, i(33506, {	-- Skycall Totem
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33593)),	-- Slikk's Cloak of Placation
 							applyclassicphase(TBC_PHASE_FOUR, i(33559)),	-- Starfire Waistband
 							applyclassicphase(TBC_PHASE_FOUR, i(33529)),	-- Steadying Bracers
 							applyclassicphase(TBC_PHASE_FOUR, i(33507, {	-- Stonebreaker's Totem
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(32086)),	-- Storm Master's Helmet
 							applyclassicphase(TBC_PHASE_FOUR, i(33536)),	-- Stormwrap
@@ -2080,10 +2080,10 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29271)),	-- Talisman of Kalecgos
 							applyclassicphase(TBC_PHASE_ONE, i(29274)),	-- Tears of Heaven
 							applyclassicphase(TBC_PHASE_FOUR, i(33505, {	-- Totem of Living Water
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(29389, {	-- Totem of the Pulsing Earth
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33537)),	-- Treads of Booming Thunder
 							applyclassicphase(TBC_PHASE_FOUR, i(33324)),	-- Treads of the Life Path
@@ -2270,13 +2270,13 @@ root(ROOTS.Zones, {
 						}},
 						["groups"] = {
 							i(15906, {	-- Left-Handed Brass Knuckles
-								["timeline"] = { "removed 6.0.2" },
+								["timeline"] = { REMOVED_6_0_2 },
 							}),
 							i(15909, {	-- Left-Handed Blades
-								["timeline"] = { "removed 6.0.2" },
+								["timeline"] = { REMOVED_6_0_2 },
 							}),
 							i(15907, {	-- Left-Handed Claw
-								["timeline"] = { "removed 6.0.2" },
+								["timeline"] = { REMOVED_6_0_2 },
 							}),
 						},
 					}),
@@ -2381,13 +2381,13 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
 							i(33148, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={ADDED_2_0_1,"removed 6.0.2"}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
 							i(30832),	-- Gavel of Unearthed Secrets
 							i(29199, {	-- Glyph of Shadow Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(30846, {	-- Glyph of the Outcast
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35361)),	-- Kodohide Gloves
 							i(30836),	-- Leggings of the Skettis Exile
@@ -2763,7 +2763,7 @@ root(ROOTS.Zones, {
 								["isLimited"] = true,
 							}),
 							i(32381, {	-- Schematic: Fused Wiring
-								["timeline"] = { ADDED_2_1_0, "removed 5.0.4" },
+								["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 								["isLimited"] = true,
 							}),
 						},

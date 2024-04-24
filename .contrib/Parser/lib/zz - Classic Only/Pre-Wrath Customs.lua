@@ -135,7 +135,7 @@ root("Achievements", {
 				1262,	-- Loremaster of Outland (A)
 				41,		-- Loremaster of Northrend (A)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster
@@ -149,7 +149,7 @@ root("Achievements", {
 				1274,	-- Loremaster of Outland (H)
 				1360,	-- Loremaster of Northrend (H)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster

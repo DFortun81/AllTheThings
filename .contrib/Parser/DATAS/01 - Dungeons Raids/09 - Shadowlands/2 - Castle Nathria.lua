@@ -301,7 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(14614),		-- Castle Vain
 				-- Fated
-				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of Nathria
+				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fate of Nathria
 					crit(53514, {	-- Shriekwing
 						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.ALL },
 					}),
@@ -333,7 +333,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				})),
-				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Nathria
+				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Heroic: Fate of Nathria
 					crit(53524, {	-- Shriekwing
 						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
@@ -365,7 +365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Nathria
+				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fate of Nathria
 					crit(53534, {	-- Shriekwing
 						["_encounter"] = { 2393, DIFFICULTY.RAID.MYTHIC },
 					}),

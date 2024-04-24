@@ -1541,7 +1541,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(87622, bubbleDownSelf({	-- Ogom the Mangler
-						["timeline"] = { "added 6.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 6.0.3", REMOVED_8_0_1 },
 						-- #if AFTER 8.0.1
 						["isBounty"] = true,
 						-- #endif

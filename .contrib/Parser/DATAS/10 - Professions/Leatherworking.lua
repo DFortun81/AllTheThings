@@ -1761,7 +1761,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Shoulders",
-					["timeline"] = { REMOVED_4_0_3, "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, "added 5.0.4", REMOVED_6_0_2, ADDED_10_0_5 },
 					["recipeID"] = 19100,
 				},
 				{
@@ -1999,7 +1999,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Red Dragonscale Breastplate",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 19054,
 				},
 				-- #endif
@@ -3639,42 +3639,42 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Fur Lining - Arcane Resist",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57701
 				},
 				{
 					["name"] = "Fur Lining - Attack Power",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57683
 				},
 				{
 					["name"] = "Fur Lining - Fire Resist",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57692
 				},
 				{
 					["name"] = "Fur Lining - Frost Resist",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57694
 				},
 				{
 					["name"] = "Fur Lining - Nature Resist",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57699
 				},
 				{
 					["name"] = "Fur Lining - Spell Power / Fur Lining - Intellect [MOP+]",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57691
 				},
 				{
 					["name"] = "Fur Lining - Shadow Resist",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57696
 				},
 				{
 					["name"] = "Fur Lining - Stamina",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 57690
 				},
 				{
@@ -3695,7 +3695,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Jormungar Leg Reinforcements",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 60583
 				},
 				{
@@ -3704,7 +3704,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nerubian Leg Reinforcements",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 60584
 				},
 			},
@@ -6715,7 +6715,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Dreadleather Shoulderguard  [Rank 3]",
-					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
+					["timeline"] = { REMOVED_8_0_1, ADDED_10_0_7 },
 					["previousRecipeID"] = 194721,
 					["recipeID"] = 194729,
 				},
@@ -7110,7 +7110,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Gravenscale Spaulders [Rank 3]",
-					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
+					["timeline"] = { REMOVED_8_0_1, ADDED_10_0_7 },
 					["previousRecipeID"] = 194761,
 					["recipeID"] = 194769,
 				},
@@ -9326,11 +9326,11 @@ itemrecipe("Pattern: Netherfury Belt", 29217, 32501, TBC_PHASE_ONE);
 itemrecipe("Pattern: Netherfury Boots", 29218, 32503, TBC_PHASE_ONE);
 itemrecipe("Pattern: Netherfury Leggings", 29219, 32502, TBC_PHASE_ONE);
 itemrecipe("Pattern: Reinforced Mining Bag", 29664, 35530, TBC_PHASE_ONE);
-itemrecipe("Pattern: Shadow Armor Kit", 29669, 35520, TBC_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Flame Armor Kit", 29672, 35521, TBC_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Frost Armor Kit", 29673, 35522, TBC_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Nature Armor Kit", 29674, 35523, TBC_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Arcane Armor Kit", 29675, 35524, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Shadow Armor Kit", 29669, 35520, TBC_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Flame Armor Kit", 29672, 35521, TBC_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Frost Armor Kit", 29673, 35522, TBC_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Nature Armor Kit", 29674, 35523, TBC_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Arcane Armor Kit", 29675, 35524, TBC_PHASE_ONE, REMOVED_5_0_4);
 itemrecipe("Pattern: Enchanted Felscale Leggings", 29677, 35525, TBC_PHASE_ONE);
 itemrecipe("Pattern: Enchanted Felscale Gloves", 29682, 35526, TBC_PHASE_ONE);
 itemrecipe("Pattern: Enchanted Felscale Boots", 29684, 35527, TBC_PHASE_ONE);
@@ -9478,11 +9478,11 @@ itemrecipe("Pattern: Eviscerator's Treads", 44520, 60712, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Eviscerator's Waistguard", 44518, 60706, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Footpads of Impending Death", 49961, 70557, WRATH_PHASE_FOUR);
 itemrecipe("Pattern: Footpads of Silence", 45099, 63199, WRATH_PHASE_TWO);
-itemrecipe("Pattern: Fur Lining - Arcane Resist", 44563, 57701, WRATH_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Fur Lining - Fire Resist", 44559, 57692, WRATH_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Fur Lining - Frost Resist", 44560, 57694, WRATH_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Fur Lining - Nature Resist", 44562, 57699, WRATH_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Pattern: Fur Lining - Shadow Resist", 44561, 57696, WRATH_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Fur Lining - Arcane Resist", 44563, 57701, WRATH_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Fur Lining - Fire Resist", 44559, 57692, WRATH_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Fur Lining - Frost Resist", 44560, 57694, WRATH_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Fur Lining - Nature Resist", 44562, 57699, WRATH_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Pattern: Fur Lining - Shadow Resist", 44561, 57696, WRATH_PHASE_ONE, REMOVED_5_0_4);
 itemrecipe("Pattern: Giantmaim Bracers", 44547, 60755, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Giantmaim Legguards", 44546, 60754, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Icy Scale Belt", 44588, 61000, WRATH_PHASE_ONE);

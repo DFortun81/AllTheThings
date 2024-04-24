@@ -16,22 +16,22 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(7467, {	-- Theramore's Fall (A)
-					["timeline"] = { "added 5.0.1", "removed 5.0.4" },
+					["timeline"] = { "added 5.0.1", REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(7468, {	-- Theramore's Fall (H)
-					["timeline"] = { "added 5.0.1", "removed 5.0.4" },
+					["timeline"] = { "added 5.0.1", REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(SCENARIO_COMPLETION, {
 				-- #if BEFORE 5.0.4
 				i(89205, {	-- Mini Mana Bomb Toy (TOY!)
-					["timeline"] = { "added 5.0.1", "removed 5.0.4" },
+					["timeline"] = { "added 5.0.1", REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
-				i(90041, bubbleDownSelf({ ["timeline"] = { "added 5.0.1", "removed 5.0.4" } }, {	-- Spoils of Theramore
+				i(90041, bubbleDownSelf({ ["timeline"] = { "added 5.0.1", REMOVED_5_0_4 } }, {	-- Spoils of Theramore
 					["description"] = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
 					["groups"] = {
 						-- #if BEFORE 6.0.2
@@ -67,7 +67,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				})),
 				-- #if BEFORE 5.0.4
 				i(89196, {	-- Theramore Tabard
-					["timeline"] = { "added 5.0.1", "removed 5.0.4" },
+					["timeline"] = { "added 5.0.1", REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #endif

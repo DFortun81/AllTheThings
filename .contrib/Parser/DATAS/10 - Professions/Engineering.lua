@@ -1546,7 +1546,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Hyper-Radiant Flame Reflector",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 23081,
 				},
 				{
@@ -2495,12 +2495,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Hand-Mounted Pyro Rocket",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 54998,
 				},
 				{
 					["name"] = "Hyperspeed Accelerators",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 54999,
 				},
 				{
@@ -2513,12 +2513,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Reticulated Armor Webbing",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 63770,
 				},
 				{
 					["name"] = "Springy Arachnoweave",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 63765,
 				},
 			},

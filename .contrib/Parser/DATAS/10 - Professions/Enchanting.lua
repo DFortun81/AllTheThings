@@ -796,7 +796,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			["rank"] = 1,
 		}),
 		r(7412, {	-- Enchanting (Journeyman)
-			["timeline"]={ "removed 8.0.1" },
+			["timeline"]={ REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -805,7 +805,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			["rank"] = 2,
 		}),
 		r(7413, {	-- Enchanting (Expert)
-			["timeline"]={ "removed 8.0.1" },
+			["timeline"]={ REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -820,7 +820,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			["rank"] = 3,
 		}),
 		r(13920, {	-- Enchanting (Artisan)
-			["timeline"]={ "removed 8.0.1" },
+			["timeline"]={ REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -918,19 +918,19 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(693, {	-- Cloak Enchantments
 			r(13635),	-- Defense
 			applyclassicphase(PHASE_FIVE, r(25086)),	-- Dodge
-			r(13657, {["timeline"]={"removed 5.0.4"}}),	-- Fire Resistance
+			r(13657, {["timeline"]={REMOVED_5_0_4}}),	-- Fire Resistance
 			r(13746),	-- Greater Defense
-			applyclassicphase(PHASE_FIVE, r(25081, {["timeline"]={"removed 5.0.4"}})),	-- Greater Fire Resistance
-			applyclassicphase(PHASE_FIVE, r(25082, {["timeline"]={"removed 5.0.4"}})),	-- Greater Nature Resistance
-			r(20014, {["timeline"]={"removed 5.0.4"}}),	-- Greater Resistance
+			applyclassicphase(PHASE_FIVE, r(25081, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Fire Resistance
+			applyclassicphase(PHASE_FIVE, r(25082, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Nature Resistance
+			r(20014, {["timeline"]={REMOVED_5_0_4}}),	-- Greater Resistance
 			r(13882),	-- Lesser Agility
-			r(7861, {["timeline"]={"removed 5.0.4"}}),	-- Lesser Fire Resistance
+			r(7861, {["timeline"]={REMOVED_5_0_4}}),	-- Lesser Fire Resistance
 			r(13421),	-- Lesser Protection
-			r(13522, {["timeline"]={"removed 5.0.4"}}),	-- Lesser Shadow Resistance
+			r(13522, {["timeline"]={REMOVED_5_0_4}}),	-- Lesser Shadow Resistance
 			r(13419),	-- Minor Agility
 			r(7771),	-- Minor Protection
-			r(7454, {["timeline"]={"removed 5.0.4"}}),	-- Minor Resistance
-			r(13794, {["timeline"]={"removed 5.0.4"}}),	-- Resistance
+			r(7454, {["timeline"]={REMOVED_5_0_4}}),	-- Minor Resistance
+			r(13794, {["timeline"]={REMOVED_5_0_4}}),	-- Resistance
 			applyclassicphase(PHASE_FIVE, r(25083)),	-- Stealth
 			applyclassicphase(PHASE_FIVE, r(25084)),	-- Subtlety
 			r(20015),	-- Superior Defense
@@ -975,14 +975,14 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(17180),	-- Enchanted Thorium Bar
 		}),
 		cat(697, {	-- Rods
-			r(20051, {["timeline"]={"removed 5.0.4"}}),	-- Runed Arcanite Rod
+			r(20051, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Arcanite Rod
 			r(7421),	-- Runed Copper Rod
-			r(13628, {["timeline"]={"removed 5.0.4"}}),	-- Runed Gold Rod
-			r(7795, {["timeline"]={"removed 5.0.4"}}),	-- Runed Silver Rod
-			r(13702, {["timeline"]={"removed 5.0.4"}}),	-- Runed Truesilver Rod
+			r(13628, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Gold Rod
+			r(7795, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Silver Rod
+			r(13702, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Truesilver Rod
 		}),
 		cat(696, {	-- Shield Enchantments
-			r(13933, {["timeline"]={"removed 5.0.4"}}),	-- Frost Resistance
+			r(13933, {["timeline"]={REMOVED_5_0_4}}),	-- Frost Resistance
 			r(20017),	-- Greater Stamina
 			r(13905),	-- Greater Versatility / CLASSIC: Greater Spirit
 			r(13689),	-- Lesser Parry / CLASSIC: Lesser Block
@@ -1031,7 +1031,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(22749),	-- Spellpower
 			applyclassicphase(PHASE_THREE, r(23799)),	-- Strength
 			r(13693),	-- Striking
-			r(20030, {["timeline"]={"removed 6.0.1"}}),	-- Superior Impact
+			r(20030, {["timeline"]={REMOVED_6_0_2}}),	-- Superior Impact
 			r(20031),	-- Superior Striking
 			r(20033),	-- Unholy Weapon
 			applyevent(EVENTS.FEAST_OF_WINTER_VEIL, r(21931)),	-- Winter's Might
@@ -1039,7 +1039,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	}),
 	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		r(28029, {	-- Enchanting (Master)
-			["timeline"]={ ADDED_2_0_1, "removed 8.0.1" },
+			["timeline"]={ ADDED_2_0_1, REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -1087,13 +1087,13 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(684, {	-- Cloak Enchantments
 			r(34004),	-- Greater Agility
-			r(34005, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Greater Arcane Resistance
+			r(34005, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Greater Arcane Resistance
 			-- #if AFTER WRATH
 			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={ADDED_2_4_0}})),	-- Greater Dodge / TBC: Steelweave
 			-- #endif
-			r(34006, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Greater Shadow Resistance
+			r(34006, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Greater Shadow Resistance
 			r(27961),	-- Major Armor
-			r(27962, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Major Resistance
+			r(27962, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Major Resistance
 			r(34003),	-- MOP: PvP Power / TBC: Spell Penetration
 			-- #if BEFORE WRATH
 			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={ADDED_2_4_0}})),	-- TBC: Steelweave / Greater Dodge
@@ -1120,17 +1120,17 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(680, {	-- Reagents
 			r(28022),	-- Large Prismatic Shard
-			r(42613, {["timeline"]={ADDED_2_2_0,"removed 7.3.5"}}),	-- Nexus Transformation
+			r(42613, {["timeline"]={ADDED_2_2_0,REMOVED_7_3_5}}),	-- Nexus Transformation
 			r(42615, {["timeline"]={ADDED_2_2_0}}),	-- Small Prismatic Shard
 			applyclassicphase(TBC_PHASE_FIVE, r(45765, {["timeline"]={ADDED_2_4_0}})),	-- Void Shatter
 		}),
-		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_6_0_2 } }, {	-- Ring Enchantments
 			r(27926),	-- Healing Power
 			r(27924),	-- Spellpower
 			applyclassicphase(TBC_PHASE_THREE, r(27927)),	-- Stats
 			r(27920),	-- Striking
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 } }, {	-- Rods
 			r(32665),	-- Runed Adamantite Rod
 			r(32664),	-- Runed Fel Iron Rod
 			r(32667),	-- Runed Eternium Rod
@@ -1150,7 +1150,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #if BEFORE WOD
 			r(44383, {["timeline"]={ADDED_2_3_0}}),	-- Armor / TBC: Resilience
 			-- #endif
-			r(27947, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Resistance
+			r(27947, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Resistance
 			-- #if BEFORE CATA
 			r(27946),	-- TBC: Shield Block / Parry
 			r(27944),	-- TBC: Tough Shield / Lesser Dodge
@@ -1179,7 +1179,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	}))),
 	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		r(51313, {	-- Enchanting (Grand Master)
-			["timeline"]={ ADDED_3_0_2, "removed 8.0.1" },
+			["timeline"]={ ADDED_3_0_2, REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -1227,12 +1227,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(44631),	-- Shadow Armor
 			r(60609, {["timeline"]={ADDED_3_1_0}}),	-- Speed
 			r(44500),	-- Superior Agility
-			r(44596, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Arcane Resistance
+			r(44596, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Arcane Resistance
 			r(44591),	-- Superior Dodge / WOTLK: Titanweave
-			r(44556, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Fire Resistance
-			r(44483, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Frost Resistance
-			r(44494, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Nature Resistance
-			r(44590, {["timeline"]={ADDED_3_1_0,"removed 5.0.4"}}),	-- Superior Shadow Resistance
+			r(44556, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Fire Resistance
+			r(44483, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Frost Resistance
+			r(44494, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Nature Resistance
+			r(44590, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Shadow Resistance
 			r(47899),	-- Wisdom
 		}),
 		cat(674, {	-- Glove Enchantments
@@ -1249,12 +1249,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(672, sharedDataSelf({ ["timeline"] = { ADDED_3_2_2} }, {	-- Reagents
 			applyclassicphase(WRATH_PHASE_THREE, r(69412)),	-- Abyssal Shatter
 		})),
-		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2, "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 } }, {	-- Ring Enchantments
 			r(44645),	-- Assault
 			r(44636),	-- Greater Spellpower
 			r(59636),	-- Stamina
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 } }, {	-- Rods
 			r(60619),	-- Runed Titanium Rod
 		})),
 		applyclassicphase(LEGION_PHASE_ONE, cat(704, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
@@ -1288,7 +1288,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	}))),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
 		r(74258, {	-- Enchanting (Illustrious)
-			["timeline"]={ ADDED_4_0_3, "removed 8.0.1" },
+			["timeline"]={ ADDED_4_0_3, REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #endif
@@ -1348,13 +1348,13 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(707, sharedDataSelf({ ["timeline"] = { ADDED_4_3_0 } }, {	-- Reagents
 			r(104698),	-- Maelstrom Shatter
 		})),
-		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 } }, {	-- Ring Enchantments
 			r(74216),	-- Agility
 			r(74218),	-- Greater Stamina
 			r(74217),	-- Intellect
 			r(74215),	-- Strength
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 } }, {	-- Rods
 			r(92370),	-- Runed Elementium Rod
 		})),
 		cat(670, {	-- Shield and Off-Hand Enchantments
@@ -1376,7 +1376,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	}))),
 	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
 		r(110400, {	-- Enchanting (Zen Master)
-			["timeline"]={ "added 5.0.4", "removed 8.0.1" },
+			["timeline"]={ "added 5.0.4", REMOVED_8_0_1 },
 			["collectible"] = false,
 			["rank"] = 8,
 		}),
@@ -1387,14 +1387,14 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(104390),	-- Exceptional Strength
 			r(104395),	-- Glorious Stats
 			r(104391),	-- Greater Agility
-			r(103461, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Agility
+			r(103461, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Agility
 			r(104407),	-- Greater Haste
 			r(104416),	-- Greater Haste
-			r(103462, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Intellect
+			r(103462, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Intellect
 			r(104408),	-- Greater Precision
 			r(104401),	-- Greater Protection
-			r(103463, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Stamina
-			r(103465, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Strength
+			r(103463, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Stamina
+			r(103465, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Strength
 			r(104385),	-- Major Dodge
 			r(104338),	-- Mastery
 			r(104393),	-- Mighty Versatility
@@ -1435,7 +1435,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	}))),
 	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 		r(158716, {	-- Enchanting (Draenor Master)
-			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			["timeline"]={ "added 6.0.2", REMOVED_8_0_1 },
 			["collectible"] = false,
 		}),
 		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
@@ -1443,12 +1443,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(158877),	-- Breath of Critical Strike
 			r(158878),	-- Breath of Haste
 			r(158879),	-- Breath of Mastery
-			r(158880, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+			r(158880, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Breath of Multistrike
 			r(158881),	-- Breath of Versatility
 			r(158884),	-- Gift of Critical Strike
 			r(158885),	-- Gift of Haste
 			r(158886),	-- Gift of Mastery
-			r(158887, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Gift of Multistrike
+			r(158887, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Gift of Multistrike
 			r(158889),	-- Gift of Versatility
 		}),
 		cat(653, {	-- Illusions
@@ -1501,12 +1501,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(158892),	-- Breath of Critical Strike
 			r(158893),	-- Breath of Haste
 			r(158894),	-- Breath of Mastery
-			r(158895, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+			r(158895, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Breath of Multistrike
 			r(158896),	-- Breath of Versatility
 			r(158899),	-- Gift of Critical Strike
 			r(158900),	-- Gift of Haste
 			r(158901),	-- Gift of Mastery
-			r(158902, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Gift of Multistrike
+			r(158902, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Gift of Multistrike
 			r(158903),	-- Gift of Versatility
 		}),
 		cat(354, {	-- Other
@@ -1525,12 +1525,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(158907),	-- Breath of Critical Strike
 			r(158908),	-- Breath of Haste
 			r(158909),	-- Breath of Mastery
-			r(158910, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+			r(158910, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Breath of Multistrike
 			r(158911),	-- Breath of Versatility
 			r(158914),	-- Gift of Critical Strike
 			r(158915),	-- Gift of Haste
 			r(158916),	-- Gift of Mastery
-			r(158917, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Gift of Multistrike
+			r(158917, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Gift of Multistrike
 			r(158918),	-- Gift of Versatility
 		}),
 		cat(352, {	-- Weapon
@@ -1545,7 +1545,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	}))),
 	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
 		r(195096, {	-- Enchanting (Legion Master)
-			["timeline"]={ "added 7.0.3", "removed 8.0.1" },
+			["timeline"]={ "added 7.0.3", REMOVED_8_0_1 },
 			["collectible"] = false,
 		}),
 		r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
@@ -1818,20 +1818,20 @@ itemrecipe("Formula: Enchant Bracer - Superior Healing", 22531, 27911, TBC_PHASE
 itemrecipe("Formula: Enchant Bracer - Restore Mana Prime", 22532, 27913, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Bracer - Fortitude", 22533, 27914, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Bracer - Spellpower", 22534, 27917, TBC_PHASE_ONE);
-itemrecipe("Formula: Enchant Ring - Striking", 22535, 27920, TBC_PHASE_ONE, "removed 6.0.2");
-itemrecipe("Formula: Enchant Ring - Spellpower", 22536, 27924, TBC_PHASE_ONE, "removed 6.0.2");
-itemrecipe("Formula: Enchant Ring - Healing Power", 22537, 27926, TBC_PHASE_ONE, "removed 6.0.2");
-itemrecipe("Formula: Enchant Ring - Stats", 22538, 27927, TBC_PHASE_THREE, "removed 6.0.2");
-itemrecipe("Formula: Enchant Ring - Stats", 186683, 27927, TBC_PHASE_THREE, "removed 6.0.2");
+itemrecipe("Formula: Enchant Ring - Striking", 22535, 27920, TBC_PHASE_ONE, REMOVED_6_0_2);
+itemrecipe("Formula: Enchant Ring - Spellpower", 22536, 27924, TBC_PHASE_ONE, REMOVED_6_0_2);
+itemrecipe("Formula: Enchant Ring - Healing Power", 22537, 27926, TBC_PHASE_ONE, REMOVED_6_0_2);
+itemrecipe("Formula: Enchant Ring - Stats", 22538, 27927, TBC_PHASE_THREE, REMOVED_6_0_2);
+itemrecipe("Formula: Enchant Ring - Stats", 186683, 27927, TBC_PHASE_THREE, REMOVED_6_0_2);
 itemrecipe("Formula: Enchant Shield - Intellect", 22539, 27945, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Shield - Shield Block", 22540, 27946, TBC_PHASE_ONE);
-itemrecipe("Formula: Enchant Shield - Resistance", 22541, 27947, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Formula: Enchant Shield - Resistance", 22541, 27947, TBC_PHASE_ONE, REMOVED_5_0_4);
 itemrecipe("Formula: Enchant Boots - Vitality", 22542, 27948, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Boots - Fortitude", 22543, 27950, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Boots - Dexterity", 22544, 27951, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Boots - Surefooted", 22545, 27954, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Chest - Exceptional Stats", 22547, 27960, TBC_PHASE_ONE);
-itemrecipe("Formula: Enchant Cloak - Major Resistance", 22548, 27962, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Formula: Enchant Cloak - Major Resistance", 22548, 27962, TBC_PHASE_ONE, REMOVED_5_0_4);
 itemrecipe("Formula: Enchant Weapon - Major Intellect", 22551, 27968, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Weapon - Major Striking", 22552, 27967, TBC_PHASE_THREE);
 itemrecipe("Formula: Enchant Weapon - Potency", 22553, 27972, TBC_PHASE_ONE);
@@ -1848,16 +1848,16 @@ itemrecipe("Formula: Superior Wizard Oil", 22563, 28019, TBC_PHASE_ONE, ADDED_2_
 itemrecipe("Formula: Large Prismatic Shard", 22565, 28022, TBC_PHASE_ONE, ADDED_2_0_1);
 itemrecipe("Formula: Enchant Bracer - Superior Healing", 24000, 27911, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Chest - Exceptional Stats", 24003, 27960, TBC_PHASE_ONE);
-itemrecipe("Formula: Runed Adamantite Rod", 25848, 32665, TBC_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Formula: Runed Eternium Rod", 25849, 32667, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Formula: Runed Adamantite Rod", 25848, 32665, TBC_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Formula: Runed Eternium Rod", 25849, 32667, TBC_PHASE_ONE, REMOVED_5_0_4);
 
 itemrecipe("Formula: Enchant Chest - Major Resilience", 28270, 33992, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Gloves - Spell Strike", 28271, 33994, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Gloves - Major Spellpower", 28272, 33997, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Gloves - Major Healing", 28273, 33999, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Cloak - Spell Penetration", 28274, 34003, TBC_PHASE_ONE);
-itemrecipe("Formula: Enchant Cloak - Greater Arcane Resistance", 28276, 34005, TBC_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Formula: Enchant Cloak - Greater Shadow Resistance", 28277, 34006, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Formula: Enchant Cloak - Greater Arcane Resistance", 28276, 34005, TBC_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Formula: Enchant Cloak - Greater Shadow Resistance", 28277, 34006, TBC_PHASE_ONE, REMOVED_5_0_4);
 itemrecipe("Formula: Enchant Boots - Cat's Swiftness", 28279, 34007, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Boots - Boar's Speed", 28280, 34008, TBC_PHASE_ONE);
 itemrecipe("Formula: Enchant Weapon - Major Healing", 28281, 34010, TBC_PHASE_ONE);

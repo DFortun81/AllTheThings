@@ -382,7 +382,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						i(146651, {	-- Arsenal: Gladiator's Weapons
 							["timeline"] = { -- combined with Season 2
 								"added 7.2.0.23436",
-								"removed 7.2.5",
+								REMOVED_7_2_5,
 							},
 							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },
@@ -461,7 +461,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(28319, {	-- Gladiator's War Edge
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 					}),
 					cl(DRUID, {
@@ -1115,7 +1115,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						-- #if AFTER 4.0.1.12941
 						i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { "created 2.0.1", ADDED_4_0_1, "removed 5.0.1", "added 6.0.1" },
+							["timeline"] = { "created 2.0.1", ADDED_4_0_1, REMOVED_5_0_4, "added 6.0.1" },
 						}),
 						-- #endif
 						i(32993, {	-- General's Ringmail Sabatons
@@ -1242,7 +1242,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(25829, {	-- Talisman of the Alliance
-							["timeline"] = { ADDED_2_0_3, "removed 6.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_6_0_2 },
 						}),
 						i(28241, {	-- Medallion of the Horde (H) (Druid)
 							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
@@ -1272,7 +1272,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(24551, {	-- Talisman of the Horde
-							["timeline"] = { ADDED_2_0_3, "removed 6.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_6_0_2 },
 						}),
 					}),
 					filter(RELICS_F, {
@@ -1421,7 +1421,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(32054, {	-- Merciless Gladiator's War Edge
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(32055, {	-- Merciless Gladiator's War Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
@@ -2176,7 +2176,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(33765, {	-- Vengeful Gladiator's War Edge
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(33766, {	-- Vengeful Gladiator's War Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
@@ -2957,7 +2957,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(35108, {	-- Brutal Gladiator's War Edge
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35109, {	-- Brutal Gladiator's War Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
@@ -3573,31 +3573,31 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					}),
 					filter(RELICS_F, {
 						i(35019, {	-- Brutal Gladiator's Idol of Resolve
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35020, {	-- Brutal Gladiator's Idol of Steadfastness
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35021, {	-- Brutal Gladiator's Idol of Tenacity
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35039, {	-- Brutal Gladiator's Libram of Fortitude
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35040, {	-- Brutal Gladiator's Libram of Justice
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35041, {	-- Brutal Gladiator's Libram of Vengeance
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35104, {	-- Brutal Gladiator's Totem of Indomitability
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35105, {	-- Brutal Gladiator's Totem of Survival
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35106, {	-- Brutal Gladiator's Totem of the Third Wind
-							["timeline"] = { ADDED_2_0_3, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 					}),
 					filter(TRINKET_F, {
@@ -3620,7 +3620,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69861, {	-- Medallion of the Alliance (not during bc, but for bc)
-							["timeline"] = { ADDED_4_1_0, "removed 6.0.1" },
+							["timeline"] = { ADDED_4_1_0, REMOVED_6_0_2 },
 						}),
 						i(37865, {	-- Medallion of the Horde (epic)
 							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
@@ -3629,7 +3629,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69862, {	-- Medallion of the Horde (not during bc, but for bc)
-							["timeline"] = { ADDED_4_1_0, "removed 6.0.1" },
+							["timeline"] = { ADDED_4_1_0, REMOVED_6_0_2 },
 						}),
 					}),
 				}),
@@ -3696,7 +3696,7 @@ root(ROOTS.NeverImplemented, {
 		-- #if BEFORE 4.0.1.12941
 		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 			["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-			["timeline"] = { "created 2.0.1", ADDED_4_0_1, "removed 5.0.1", "added 6.0.1" },
+			["timeline"] = { "created 2.0.1", ADDED_4_0_1, REMOVED_5_0_4, "added 6.0.1" },
 		}),
 		-- #endif
 	}),

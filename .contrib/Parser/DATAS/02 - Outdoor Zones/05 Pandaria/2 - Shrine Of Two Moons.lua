@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 				q(32726, {	-- So You Want to Be a Blacksmith...
 					["provider"] = { "n", 64058 },	-- Jorunga Stonehoof
 					["requireSkill"] = BLACKSMITHING,
-					["timeline"] = { "removed 8.0" },	-- no longer available due to the profession level changes
+					["timeline"] = { REMOVED_8_0_1 },	-- no longer available due to the profession level changes
 				}),
 				-- q(31391, {	-- The Klaxxi
 				-- }),

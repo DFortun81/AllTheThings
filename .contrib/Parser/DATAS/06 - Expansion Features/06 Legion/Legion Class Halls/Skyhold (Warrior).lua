@@ -347,13 +347,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					q(39192, {	-- The Forge of Odyn
 						["sourceQuest"] = 39530,	-- The Forgening
 						["provider"] = { "n", 96586 },	-- Master Smith Helgar
 						["coord"] = { 41.0, 37.1, SKYHOLD },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					-- Start Legion Zone
 					q(39214, {	-- The Eye of Odyn
@@ -596,13 +596,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
 						["coord"] = { 61.2, 27.6, SKYHOLD },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					q(45987, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45986,	-- An Urgent Warning
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["coord"] = { 59.7, 13.4, SKYHOLD },
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(46173, {	-- Tactical Planning
@@ -758,19 +758,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43888, {	-- Hitting the Books
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
-						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
 					}),
 					q(46142, {	-- Knowledge is Power
 						["sourceQuest"] = 43888,	-- Hitting the Books
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46155, {	-- Furthering Knowledge
 						["sourceQuest"] = 46142,	-- Knowledge is Power
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46778, {	-- Further Advancement
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
@@ -809,7 +809,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(44222, {	-- The Might of the Val'kyr
 							["provider"] = { "n", 111774 },	-- Matilda Skoptidottir
 							["coord"] = { 72.6, 30.8, SKYHOLD },
-							["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+							["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 						}),
 					}),
 					gt(408, {	-- For Honor and Glory

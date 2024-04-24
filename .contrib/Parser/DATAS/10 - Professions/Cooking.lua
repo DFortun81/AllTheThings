@@ -806,14 +806,14 @@ profession(COOKING, {
 			["rank"] = 1,
 		}),
 		r(3102, {	-- Cooking (Journeyman)
-			["timeline"]={ "removed 8.0.1" },
+			["timeline"]={ REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #endif
 			["rank"] = 2,
 		}),
 		r(3413, {	-- Cooking (Expert)
-			["timeline"]={ "removed 8.0.1" },
+			["timeline"]={ REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #endif
@@ -827,7 +827,7 @@ profession(COOKING, {
 			["rank"] = 3,
 		}),
 		r(18260, {	-- Cooking (Artisan)
-			["timeline"]={ "removed 8.0.1" },
+			["timeline"]={ REMOVED_8_0_1 },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
@@ -1001,7 +1001,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Goldthorn Tea",
-					["timeline"] = { "removed 6.0.1" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 13028
 				},
 				{
@@ -1060,7 +1060,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Lean Wolf Steak",
-					["timeline"] = { "removed 5.0.4", "timewalking 9.1" },
+					["timeline"] = { REMOVED_5_0_4, "timewalking 9.1" },
 					["recipeID"] = 15853
 				},
 				-- #if AFTER WOD

@@ -1023,7 +1023,7 @@ GLYPH_OF_HAUNT_AND_DRAIN_LIFE = r(64291, {	-- Glyph of Haunt / Glyph of Drain Li
 	-- #else
 	["name"] = "Glyph of Haunt",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "removed 5.0.4", ADDED_5_2_0, "deleted 6.0.2" },
+	["timeline"] = { ADDED_3_1_0, REMOVED_5_0_4, ADDED_5_2_0, "deleted 6.0.2" },
 });
 GLYPH_OF_HEALING_STREAM_TOTEM = r(57242, {	-- Glyph of Healing Stream Totem
 	["name"] = "Glyph of Healing Stream Totem",

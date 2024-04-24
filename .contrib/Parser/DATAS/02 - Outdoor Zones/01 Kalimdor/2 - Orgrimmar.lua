@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 132254,	-- Nathanos Blightcaller
 					["sourceQuest"] = 49977,	-- Summons to Orgrimmar
 					["coord"] = { 49.8, 75.6, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26557, {	-- A Staggering Effort
@@ -873,10 +873,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56708, {	-- Bow of Ire (old version)
-							["timeline"] = { ADDED_4_0_3, "removed 6.0.2.18764" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
 						i(56710, {	-- Unbountied Cloak (Replaced by Durak's Downfall in WoD)
-							["timeline"] = { ADDED_4_0_3, "removed 6.0.2.18764" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
 						i(119325, {	-- Bow of Ire
 							["timeline"] = { "added 6.0.2.18764" },
@@ -945,7 +945,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 62092,	-- Garrosh Hellscream
 					["sourceQuest"] = 31013,	-- The Horde Way
 					["coord"] = { 70.6, 30.8, ORGRIMMAR },
-					["timeline"] = { "added 5.0.1.15589", "removed 7.0.3" },
+					["timeline"] = { "added 5.0.1.15589", REMOVED_7_0_3 },
 					["races"] = { PANDAREN_HORDE },
 				}),
 				-- #if ANYCLASSIC
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(49977, {	-- Summons to Orgrimmar
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51796, {	-- The Battle for Lordaeron
@@ -2003,7 +2003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12351, 1 } },	-- Arctic Wolf
 					["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 					["races"] = HORDE_ONLY,
@@ -2020,7 +2020,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12330, 1 } },	-- Red Wolf (MOUNT!)
 					["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 					["races"] = HORDE_ONLY,
@@ -4070,10 +4070,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18798),	-- Swift Gray Wolf (MOUNT!)
 						i(1132),	-- Timber Wolf (MOUNT!)
 						i(12351, {	-- Arctic Wolf (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 						i(12330, {	-- Red Wolf (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 					},
 				}),
@@ -4632,13 +4632,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2207),	-- Jambiya
 						i(2209),	-- Kris
 						i(15906, {	-- Left-Handed Brass Knuckles
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15909, {	-- Left-Handed Blades
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15907, {	-- Left-Handed Claw
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(923),		-- Longsword
 						i(2526),	-- Main Gauche

@@ -297,13 +297,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				},
 			}),
 			i(54536, {	-- Satchel of Chilled Goods
-				["timeline"] = { ADDED_3_3_3, "removed 6.0.1.18594" },
+				["timeline"] = { ADDED_3_3_3, REMOVED_6_0_2 },
 				["groups"] = {
 					i(95426, {	-- Frostscythe of Lord Ahune [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+						["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 					}),
 					i(69771, {	-- Frostscythe of Lord Ahune [Level 85]
-						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
 					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
 						["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
@@ -349,36 +349,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 
 			-- Pandaria Rewards
 			i(95425, {	-- Cloak of the Frigid Winds [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(95427, {	-- Icebound Cloak [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(95428, {	-- Shroud of Winter's Chill [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(95429, {	-- The Frost Lord's Battle Shroud [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(95430, {	-- The Frost Lord's War Cloak [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 
 			-- Cataclysm Rewards
 			i(69769, {	-- Cloak of the Frigid Winds [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(69770, {	-- Icebound Cloak [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(69768, {	-- Shroud of Winter's Chill [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(69767, {	-- The Frost Lord's Battle Shroud [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(69766, {	-- The Frost Lord's War Cloak [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 
 			i(54805, {	-- Cloak of the Frigid Winds [Level 80]

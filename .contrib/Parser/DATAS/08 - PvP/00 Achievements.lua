@@ -430,7 +430,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 4949 },	-- Thrall <Warchief>
 			-- #endif
 		},
-		["timeline"] = { ADDED_3_0_2, "removed 7.0.3" },
+		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),
@@ -457,7 +457,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 10181 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 			-- #endif
 		},
-		["timeline"] = { ADDED_3_0_2, "removed 8.3.0" },
+		["timeline"] = { ADDED_3_0_2, REMOVED_8_3_0 },
 		["maps"] = {
 			-- #if AFTER 8.0.1
 			ORGRIMMAR,
@@ -672,7 +672,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(617, {		-- Immortal No More
 		["provider"] = { "n", 7999 },	-- Tyrande Whisperwind <High Priestess of Elune>
-		["timeline"] = { ADDED_3_0_2, "removed 8.0.1" },
+		["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
 		["maps"] = { DARNASSUS },
 		["races"] = HORDE_ONLY,
 	}),
@@ -839,7 +839,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(14720, {	-- Orgrimmar Offensive
 		["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-		["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+		["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),

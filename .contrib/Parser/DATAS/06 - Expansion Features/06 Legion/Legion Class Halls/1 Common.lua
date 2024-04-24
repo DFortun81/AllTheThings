@@ -209,7 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		})),
 		n(QUESTS, {
 			q(46940, {	-- Using Lost Knowledge
-				["timeline"] = { "added 7.2.0.23530", "removed 7.3" },	-- estimated removal
+				["timeline"] = { "added 7.2.0.23530", REMOVED_7_3_0 },	-- estimated removal
 			}),
 		}),
 		n(93787, {	-- Scouting Map

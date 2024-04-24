@@ -708,7 +708,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 2.0.1", "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "created 2.0.1", "added 6.0.1", REMOVED_7_0_3 },
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
@@ -730,7 +730,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 2.0.1", "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "created 2.0.1", "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(25160),	-- Vengeance Blade
 		}),
@@ -906,46 +906,46 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(28535, {	-- Amani Throwing Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28540, {	-- Arakkoa Talon-Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28544, {	-- Assassin's Shuriken
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28531, {	-- Barbed Shrike
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28543, {	-- Dreghood Throwing Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28534, {	-- Fel Tipped Dart
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28538, {	-- Forked Shuriken
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28542, {	-- Heartseeker Knives
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28536, {	-- Jagged Guillotine
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28539, {	-- Razor-Edged Boomerang
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28541, {	-- Sawshrike
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28532, {	-- Silver Throwing Knifes
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28537, {	-- Wildhammer Throwing Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 			i(28533, {	-- Wooden Boomerang
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4, },
 			}),
 		}),
 		-- #endif
@@ -1161,9 +1161,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(22542),	-- Formula: Enchant Boots - Vitality (RECIPE!)
 			i(22532),	-- Formula: Enchant Bracer - Versatility Prime / TBC: Enchant Bracer - Restore Mana Prime (RECIPE!)
 			i(28270),	-- Formula: Enchant Chest - Major Resilience (RECIPE!)
-			i(22548, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Formula: Enchant Cloak - Major Resistance (RECIPE!)
+			i(22548, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Formula: Enchant Cloak - Major Resistance (RECIPE!)
 			i(22540),	-- Formula: Enchant Shield - Parry / TBC: Formula: Enchant Shield - Shield Block (RECIPE!)
-			i(22541, {["timeline"]={ADDED_2_0_1,"removed 5.0.4"}}),	-- Formula: Enchant Shield - Resistance (RECIPE!)
+			i(22541, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Formula: Enchant Shield - Resistance (RECIPE!)
 			i(22557),	-- Formula: Enchant Weapon - Battlemaster (RECIPE!)
 			i(22553),	-- Formula: Enchant Weapon - Potency (RECIPE!)
 			i(22558),	-- Formula: Enchant Weapon - Spellsurge (RECIPE!)

@@ -450,7 +450,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				292,				-- Sinister Calling
 				971,				-- Tricks and Treats of Azeroth (H)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(92),	-- %s the Hallowed
@@ -2162,7 +2162,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(54516, {	-- Loot-Stuffed Pumpkin
 				-- This bag was removed at the end of MoP and in WoD epic bag introduced
-				["timeline"] = { ADDED_3_3_0, "removed 6.0.1" },
+				["timeline"] = { ADDED_3_3_0, REMOVED_6_0_2 },
 				-- #if AFTER 4.2.0
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
@@ -2194,17 +2194,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #endif
 					-- Mists of Pandaria
 					i(87569, {	-- The Horseman's Horrific Hood
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+						["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 					}),
 					i(87570, {	-- The Horseman's Sinister Slicer
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+						["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 					}),
 					-- Cataclysm
 					i(71326, {	-- The Horseman's Horrific Helm
-						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
 					i(71325, {	-- The Horseman's Sinister Saber
-						["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
 					-- Wrath of the Lich King Classic
 					-- #if ANYCLASSIC
@@ -2268,42 +2268,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			-- Warlords of Draenor
 			i(117363, {	-- Band of the Petrified Pumpkin
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(117364, {	-- Seal of Ghoulish Glee
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(117365, {	-- The Horseman's Ring
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(117362, {	-- Wicked Witch's Signet
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			-- Mists of Pandaria
 			i(88167, {	-- Band of the Petrified Pumpkin
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(88168, {	-- Seal of Ghoulish Glee
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(88169, {	-- The Horseman's Ring
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(88166, {	-- Wicked Witch's Signet
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			-- Cataclysm
 			i(71327, {	-- Band of Ghoulish Glee
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71330, {	-- Seal of the Petrified Pumpkin
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71328, {	-- The Horseman's Signet
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(71329, {	-- Wicked Witch's Ring
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			-- Wrath of the Lich King
 			i(49128, {	-- The Horseman's Baleful Blade

@@ -827,7 +827,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
 						ach(13322, {	-- Ahead of the Curve: Lady Jaina Proudmoore
-							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
+							["timeline"] = { "added 8.1.0", REMOVED_8_2_0 },
 						}),
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
@@ -1050,15 +1050,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						}),
 						ach(13321),	-- Mythic: Lady Jaina Proudmoore Guild Run
 						ach(13323, {	-- Cutting Edge: Lady Jaina Proudmoore
-							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
+							["timeline"] = { "added 8.1.0", REMOVED_8_2_0 },
 						}),
-						ach(13326, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+						ach(13326, bubbleDownSelf({["timeline"] = { "added 8.1.0", REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(384),	-- <Name>, Famed Conqueror of Dazar'alor
 							},
 						})),
-						ach(13327, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+						ach(13327, bubbleDownSelf({["timeline"] = { "added 8.1.0", REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(385),	-- <Name>, Famed Defender of Dazar'alor

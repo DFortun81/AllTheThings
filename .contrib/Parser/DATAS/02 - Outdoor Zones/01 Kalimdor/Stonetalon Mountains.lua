@@ -1769,7 +1769,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26016, {	-- Orders from Base Camp
 					["provider"] = { "i", 56474 },	-- Orders from Base Camp
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["crs"] = { 41937 },	-- Marshal Paltrow
 					["races"] = HORDE_ONLY,
 				}),

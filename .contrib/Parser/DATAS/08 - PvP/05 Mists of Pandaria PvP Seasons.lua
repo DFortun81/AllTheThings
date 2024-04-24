@@ -2338,7 +2338,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_TYRANNICAL, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_2_0, "removed 5.4.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 }, }, {
 				ach(8652, {	-- Hero of the Alliance: Tyrannical
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -5454,7 +5454,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_GRIEVOUS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.0", REMOVED_5_4_7 }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
 					i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
@@ -8596,7 +8596,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_PRIDEFUL, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.7", REMOVED_6_0_2 }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
 					i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)

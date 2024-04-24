@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4898, {	-- Wetlands Quests
 					-- In 5.0.4, this was merged into the Loch Modan quests achievement for some stupid reason no one knows the answer to.
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {

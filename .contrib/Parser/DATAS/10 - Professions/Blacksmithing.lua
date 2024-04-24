@@ -1377,7 +1377,7 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{
 					["name"] = "Arcanite Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 20201,
 				},
 				{
@@ -1390,7 +1390,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Golden Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 14379,
 				},
 				{
@@ -1411,7 +1411,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Silver Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 7818,
 				},
 				{
@@ -1420,7 +1420,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Truesilver Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 14380,
 				},
 			},
@@ -2486,7 +2486,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Masterwork Stormhammer",
-					["timeline"] = { "removed 6.0.2", "added 10.1.5" },
+					["timeline"] = { REMOVED_6_0_2, "added 10.1.5" },
 					["recipeID"] = 16993,
 				},
 				-- #endif
@@ -2666,17 +2666,17 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{
 					["name"] = "Adamantite Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 32656,
 				},
 				{
 					["name"] = "Eternium Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 32657,
 				},
 				{
 					["name"] = "Fel Iron Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 32655,
 				},
 			},
@@ -3217,7 +3217,7 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{
 					["name"] = "Titanium Rod",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 55732,
 				},
 			},
@@ -3714,7 +3714,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Sure-Fire Shuriken",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 55202,
 				},
 				{
@@ -4436,8 +4436,8 @@ itemrecipe("Plans: Lesser Ward of Shielding", 23638, 29728, TBC_PHASE_ONE);
 itemrecipe("Plans: Greater Ward of Shielding", 23639, 29729, TBC_PHASE_ONE);
 itemrecipe("Plans: Felsteel Shield Spike", 24002, 29657, TBC_PHASE_ONE);
 itemrecipe("Plans: Greater Rune of Warding", 25526, 32285, TBC_PHASE_ONE);
-itemrecipe("Plans: Adamantite Rod", 25846, 32656, TBC_PHASE_ONE, "removed 5.0.4");
-itemrecipe("Plans: Eternium Rod", 25847, 32657, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Plans: Adamantite Rod", 25846, 32656, TBC_PHASE_ONE, REMOVED_5_0_4);
+itemrecipe("Plans: Eternium Rod", 25847, 32657, TBC_PHASE_ONE, REMOVED_5_0_4);
 itemrecipe("Plans: Adamantite Weightstone", 28632, 34608, TBC_PHASE_ONE);
 itemrecipe("Plans: Wildguard Breastplate", 31390, 38473, TBC_PHASE_ONE);
 itemrecipe("Plans: Wildguard Leggings", 31391, 38475, TBC_PHASE_ONE);

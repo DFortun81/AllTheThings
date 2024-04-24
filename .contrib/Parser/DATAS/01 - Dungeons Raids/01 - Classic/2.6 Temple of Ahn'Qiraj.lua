@@ -1419,10 +1419,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21645),	-- Hive Tunneler's Boots
 					i(21647),	-- Fetish of the Sand Reaver
 					i(22402, {	-- Libram of Grace
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					i(22396, {	-- Totem of Life
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
@@ -1443,7 +1443,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21677),	-- Ring of Qiraji Fury
 					i(21625),	-- Scarab Brooch
 					i(22399, {	-- Idol of Health
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					applyclassicphase(MOP_PHASE_ONE, i(93039, {	-- Viscidus Globule (PET!)
 						["timeline"] = { ADDED_5_1_0 },

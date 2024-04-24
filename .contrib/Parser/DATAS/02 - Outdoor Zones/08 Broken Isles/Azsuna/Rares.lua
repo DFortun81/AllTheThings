@@ -92,7 +92,7 @@ root(ROOTS.Zones, {
 				 }),
 				n(107266, bubbleDownSelf({	-- Commander Soraax
 					["timeline"] = {
-						"removed 8.3",	-- as of 8.3, no sign of him or his world quest for a very long time
+						REMOVED_8_3_0,	-- as of 8.3, no sign of him or his world quest for a very long time
 						ADDED_9_2_0,	-- confirmed on 2022-04-02
 					},
 				},{

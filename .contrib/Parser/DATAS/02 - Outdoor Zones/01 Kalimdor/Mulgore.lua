@@ -174,14 +174,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31165, {	-- Calligraphed Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
 							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { MONK },
 						}),
 						q(27015, {	-- Consecrated Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
 							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { PALADIN },
 						}),
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
 							["coord"] = { 44.9, 77.1, MULGORE },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { HUNTER },
 						}),
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(27014, {	-- Hallowed Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
 							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { PRIEST },
 						}),
@@ -391,7 +391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									},
 								}),
 								i(12448, {	-- Light Hunting Rifle
-									["timeline"] = { "removed 1.7.0" },
+									["timeline"] = { REMOVED_1_7_0 },
 								}),
 								i(1382, {	-- Rock Mace
 									["timeline"] = { REMOVED_4_0_3 },
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
 							["coord"] = { 44.9, 77.1, MULGORE },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { SHAMAN },
 						}),
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
 							["coord"] = { 44.9, 77.1, MULGORE },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { WARRIOR },
 						}),
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31166, {	-- Tiger Palm
 							["qg"] = 63327,	-- Shoyu
 							["coord"] = { 27.8, 28.6, CAMP_NARACHE },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { MONK },
 						}),
@@ -592,7 +592,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
 							["coord"] = { 44.9, 77.1, MULGORE },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { DRUID },
 						}),
@@ -766,7 +766,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(131213, {	-- Chain Kodo-Rider's Pants
-							["timeline"] = { "added 7.0.3", "removed 7.0.3" },
+							["timeline"] = { "added 7.0.3", REMOVED_7_0_3 },
 						}),
 						i(4969, {	-- Fortified Bindings
 							["timeline"] = { REMOVED_4_0_3 },
@@ -958,7 +958,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.6, 58.4, MULGORE },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 15292, 1 } },	-- Green Kodo (MOUNT!)
 					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
 					["races"] = HORDE_ONLY,
@@ -973,7 +973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.6, 58.4, MULGORE },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 15293, 1 } },	-- Teal Kodo (MOUNT!)
 					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
 					["races"] = HORDE_ONLY,
@@ -1925,10 +1925,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(15292, {	-- Green Kodo (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 						i(15293, {	-- Teal Kodo (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 					},
 				}),

@@ -409,7 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						-- #if BEFORE MOP
 						i(27518, {	-- Ivory Idol of the Moongoddess
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
@@ -524,7 +524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							-- #if BEFORE MOP
 							i(27518, {	-- Ivory Idol of the Moongoddess
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
@@ -535,7 +535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								},
 							}),
 							i(25462, {	-- Tome of Dusk
-								["timeline"] = { "removed 7.1.0.1233" },
+								["timeline"] = { REMOVED_7_1_0 },
 							}),
 						},
 					}),

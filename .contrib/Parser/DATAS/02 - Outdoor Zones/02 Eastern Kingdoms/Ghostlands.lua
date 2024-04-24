@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16240,	-- Arcanist Janeda
 					["sourceQuest"] = 9220,	-- War on Deatholme
 					["coord"] = { 54.8, 48.4, GHOSTLANDS },
-					["timeline"] = { "removed 7.3.5" },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
+					["timeline"] = { REMOVED_7_3_5 },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),
 				}),
@@ -1353,7 +1353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if BEFORE MOP
 						i(29584, {	-- Throat Piercers
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},

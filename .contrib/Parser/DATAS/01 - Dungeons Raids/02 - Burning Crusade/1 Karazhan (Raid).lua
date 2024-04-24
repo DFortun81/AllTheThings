@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local REMOVED_WITH_RETURN_TO_KARAZHAN = { "removed 7.1.0.1233" };
+local REMOVED_WITH_RETURN_TO_KARAZHAN = { REMOVED_7_1_0 };
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(745, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
@@ -428,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9843, {	-- Keanna's Log
 					["qg"] = 16388,	-- Koren <The Blacksmith>
 					["sourceQuest"] = 9840,	-- Assessing the Situation
-					["timeline"] = { "removed 7.1.0.1233" },
+					["timeline"] = { REMOVED_7_1_0 },
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- 0/1 Keanna's Log
@@ -655,7 +655,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 						}),
 						-- #if AFTER 6.0.2
-						r(27920,{["timeline"] = {ADDED_2_0_1,"removed 6.0.2"}}),	 -- Striking
+						r(27920,{["timeline"] = {ADDED_2_0_1,REMOVED_6_0_2}}),	 -- Striking
 						-- #endif
 					},
 				}),
@@ -755,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(28528),	-- Moroes' Lucky Pocket Watch
 					-- #if BEFORE MOP
 					i(28568, {	-- Idol of the Avian Heart
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -776,7 +776,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(28517),	-- Boots of Foretelling
 					-- #if BEFORE MOP
 					i(28523, {	-- Totem of Healing Rains
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -812,7 +812,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28590),	-- Ribbon of Sacrifice
 							-- #if BEFORE MOP
 							i(28592, {	-- Libram of Souls Redeemed
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -945,7 +945,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(28785),	-- The Lightning Capacitor
 					-- #if BEFORE MOP
 					i(28659, {	-- Xavian Stiletto
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},

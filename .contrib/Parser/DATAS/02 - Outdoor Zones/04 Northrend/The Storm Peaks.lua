@@ -590,10 +590,10 @@ root(ROOTS.Zones, {
 							i(43186),	-- Iceshrieker's Touch
 							i(43185),	-- Wand of Chilled Renewal
 							i(43188, {	-- Razor-sharp Ice Shards
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(43187, {	-- Weighted Throwing Axe
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1095,10 +1095,10 @@ root(ROOTS.Zones, {
 							i(43185),	-- Wand of Chilled Renewal
 							i(43186),	-- Iceshrieker's Touch
 							i(43188, {	-- Razor-sharp Ice Shards
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(43187, {	-- Weighted Throwing Axe
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, {
 							i(42887),	-- Pauldrons of the Ascent
 							i(42876),	-- Light-Touched Mantle
 							i(42863, {	-- Sharpened Hyldnir Harpoon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1618,7 +1618,7 @@ root(ROOTS.Zones, {
 							i(43958),	-- Ice Mammoth (A) (MOUNT!)
 							i(44080),	-- Ice Mammoth (H) (MOUNT!)
 							i(44137, {	-- Arcanum of the Frosty Soul
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44193),	-- Broken Stalactite

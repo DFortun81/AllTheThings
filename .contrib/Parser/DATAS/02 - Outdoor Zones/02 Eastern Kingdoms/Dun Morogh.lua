@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
 						}),
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
 						}),
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 						}),
@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 						}),
@@ -402,7 +402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { HUNTER },
 						}),
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.3, 67.5, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 							["groups"] = {
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 						}),
@@ -643,7 +643,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31151, {	-- Kick, Punch, It's All in the Mind
 							["qg"] = 63285,	-- Lo
 							["coord"] = { 63.2, 22.3, COLDRIDGE_VALLEY },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 							["groups"] = {
@@ -865,7 +865,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { DWARF, NIGHTELF },
 							["classes"] = { WARRIOR },
 						}),
@@ -1007,7 +1007,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.8, 68.3, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
 							["groups"] = {
@@ -1165,7 +1165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 66.4, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -1803,7 +1803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.53, 36.83, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { MAGE },
 							-- #if BEFORE 7.0.3
@@ -1821,7 +1821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31138, {	-- The Arts of a Monk
 							["qg"] = 63238,	-- Xi, Friend to the Small
 							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { MONK },
 							-- #if BEFORE 7.0.3
@@ -1843,7 +1843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.90, 36.55, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { PRIEST },
 							-- #if BEFORE 7.0.3
@@ -1865,7 +1865,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.38, 38.50, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
 							-- #if BEFORE 7.0.3
@@ -1887,7 +1887,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 27.27, 39.27, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { WARRIOR },
 							-- #if BEFORE 7.0.3
@@ -1909,7 +1909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.25, 40.14, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 7.0.3
@@ -2468,7 +2468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.4, 50.6, DUN_MOROGH },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13328, 1 } },	-- Black Ram
 					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
@@ -2667,7 +2667,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.4, 50.6, DUN_MOROGH },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13329, 1 } },	-- Frost Ram
 					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
@@ -2809,7 +2809,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.0, 48.0, DUN_MOROGH },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13327, 1 } },	-- Icy Blue Mechanostrider Mod A
 					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 					["races"] = ALLIANCE_ONLY,
@@ -3751,7 +3751,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.0, 48.0, DUN_MOROGH },
 					-- #endif
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13326, 1 } },	-- White Mechanostrider Mod A
 					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 					["races"] = ALLIANCE_ONLY,
@@ -4174,10 +4174,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18773),	-- Swift White Mechanostrider (MOUNT!)
 						i(18774),	-- Swift Yellow Mechanostrider (MOUNT!)
 						i(13327, {	-- Icy Blue Mechanostrider Mod A (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 						i(13326, {	-- White Mechanostrider Mod A (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 					},
 				}),
@@ -4213,10 +4213,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18787),	-- Swift Gray Ram (MOUNT!)
 						i(18785),	-- Swift White Ram (MOUNT!)
 						i(13328, {	-- Black Ram (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 						i(13329, {	-- Frost Ram (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 					},
 				}),

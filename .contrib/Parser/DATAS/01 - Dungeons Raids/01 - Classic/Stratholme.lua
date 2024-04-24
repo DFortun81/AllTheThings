@@ -1109,7 +1109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(18726),	-- Magistrate's Cuffs
 							i(18722),	-- Death Grips
 							applyclassicphase(PHASE_FIVE, i(23198, {	-- Idol of Brutality
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 						},
 					}),

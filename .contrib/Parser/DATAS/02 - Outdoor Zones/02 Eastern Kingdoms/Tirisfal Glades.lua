@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { ROGUE },
 						}),
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { MAGE },
 						}),
@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { UNDEAD, BLOODELF },
 						}),
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24965, {	-- Magic Training
 							["qg"] = 2124,	-- Isabella
 							["sourceQuest"] = 3098,	-- Glyphic Scroll
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { UNDEAD },
 						}),
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 2123,	-- Dark Cleric Duesten
 							["sourceQuest"] = 3097,	-- Hallowed Scroll
 							["coord"] = { 47.6, 58.4, DEATHKNELL },
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
 						}),
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 85164 },	-- Elegant Scroll
 							},
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { MONK },
 						}),
@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARRIOR },
 						}),
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARLOCK },
 						}),
@@ -611,7 +611,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 63272,	-- Ting, Strong of Stomach
 							["sourceQuest"] = 31146,	-- Scribbled Scroll
 							["coord"] = { 53.0, 56.4, DEATHKNELL },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { MONK },
 						}),

@@ -252,19 +252,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29156, {	-- The Troll Incursion
 					-- Hero's Call Board
-					["timeline"] = { ADDED_4_1_0, "removed 7.0.1" },
+					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(29157, {	-- The Zandalari Menace
 					-- Warchief's Command Board
-					["timeline"] = { ADDED_4_1_0, "removed 7.0.1" },
+					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(29158, {	-- The Zandalar Representative
 					["qg"] = 52654,	-- Bwemba
-					["timeline"] = { ADDED_4_1_0, "removed 7.0.1" },
+					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
 					["coord"] = { 25.96, 29.32, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

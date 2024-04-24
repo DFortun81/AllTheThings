@@ -730,14 +730,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 						i(14472, {	-- Pattern: Runecloth Cloak
-							["timeline"] = { "removed 6.0.1" },	-- Learned from trainer, recipe removed.
+							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 							-- #if BEFORE 6.0.1
 							["isLimited"] = true
 							-- #endif
 						}),
 						i(14469, {	-- Pattern: Runecloth Robe
-							["timeline"] = { "removed 6.0.1" },	-- Learned from trainer, recipe removed.
+							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 							-- #if BEFORE 6.0.1
 							["isLimited"] = true
@@ -783,7 +783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(16243, {	-- Formula: Runed Arcanite Rod
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(136849, {	-- Nature's Beacon (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },

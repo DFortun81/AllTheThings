@@ -21,10 +21,10 @@ local BLACK_WAR_MAMMOTH_HORDE = pvp({
 });
 local ARCANUM_ITEMS = pvp({
 	sks(40, i(44075, {	-- Arcanum of Dominance
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	sks(40, i(44069, {	-- Arcanum of Triumph
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	moh(1, sks(30, i(44067))),	-- Inscription of Triumph
 	moh(1, sks(30, i(44068))),	-- Inscription of Dominance
@@ -285,49 +285,49 @@ local WINTERGRASP_HEIRLOOMS = pvp({
 
 	-- Old Heirlooms before they became learnable
 	sks(200, i(44102, {	-- Aged Pauldrons of The Five Thunders
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44096, {	-- Battleworn Thrash Blade
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44103, {	-- Exceptional Stormshroud Shoulders
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44107, {	-- Exquisite Sunderseer Mantle
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(250, i(44098, {	-- Inherited Insignia of the Alliance
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(250, i(44097, {	-- Inherited Insignia of the Horde
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(325, i(44095, {	-- Grand Staff of Jordan
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44105, {	-- Lasting Feralheart Spaulders
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44100, {	-- Pristine Lightforge Spaulders
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44101, {	-- Prized Beastmaster's Mantle
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(325, i(44092, {	-- Reforged Truesilver Champion
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44091, {	-- Sharpened Scarlet Kris
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44099, {	-- Strengthened Stockade Pauldrons
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(250, i(44094, {	-- The Blessed Hammer of Grace
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(325, i(44093, {	-- Unpgraded Dwarven Hand Cannon
-		["timeline"] = { "removed 6.1.0.19445" },
+		["timeline"] = { REMOVED_6_1_0 },
 	})),
 });
 

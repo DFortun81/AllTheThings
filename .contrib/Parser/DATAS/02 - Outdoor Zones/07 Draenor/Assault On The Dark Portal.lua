@@ -304,7 +304,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 				}),
-				n(ZONE_DROPS, sharedData({["timeline"] = { "added 6.0", "removed 7.0" } },{
+				n(ZONE_DROPS, sharedData({["timeline"] = { "added 6.0", REMOVED_7_0_3 } },{
 					i(112436, {	-- Mismatched Cloth Gloves
 						["cr"] = 78651,	-- Shattered Hand Bonechopper
 					}),

@@ -1093,7 +1093,7 @@ root(ROOTS.Zones, {
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
 							i(35845, {	-- Crystalline Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1343,7 +1343,7 @@ root(ROOTS.Zones, {
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
 							i(35845, {	-- Crystalline Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -2273,7 +2273,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(50372, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38464),	-- Gnomish Magician's Quill
@@ -2302,7 +2302,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
 						["groups"] = {
 							i(50373, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38452),	-- Bulwark of the Warchief

@@ -202,7 +202,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(25941),	-- Boots of the Outlander
 						-- #if BEFORE MOP
 						i(25940, {	-- Idol of the Claw
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(72126, {	-- Pandemonius' Essence
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							-- #if BEFORE MOP
 							i(27815, {	-- Totem of the Astral Winds
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(72126, {	-- Pandemonius' Essence

@@ -651,11 +651,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 68.2, 84, DUROTAR },
 								-- #endif
 							},
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 						}),
 						q(31162, {	-- The Arts of a Monk
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { MONK },
 						}),
@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31156, {	-- Calligraphed Parchment
 							["qg"] = 3143,	-- Gornek
 							["coord"] = { 44.8, 66.6, VALLEY_OF_TRIALS },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { ORC },
 							["classes"] = { MONK },
 						}),
@@ -1201,7 +1201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
 							["classes"] = { ROGUE },
 						}),
@@ -1212,7 +1212,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { ROGUE },
 						}),
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
 							["classes"] = { HUNTER },
 						}),
@@ -1234,7 +1234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { HUNTER },
 						}),
@@ -1274,7 +1274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42.0, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { TROLL },
 						}),
@@ -1285,7 +1285,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42.0, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { TROLL },
 						}),
@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 43.3, 67.4, DUROTAR },
 								-- #endif
 							},
-							["timeline"] = { ADDED_4_0_3, "removed 6.0.2.18833" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(5441, {	-- Lazy Peons
@@ -1462,7 +1462,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
 							["classes"] = { SHAMAN },
 						}),
@@ -1473,7 +1473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { SHAMAN },
 						}),
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
 							["classes"] = { WARRIOR },
 						}),
@@ -1542,7 +1542,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { WARRIOR },
 						}),
@@ -1640,7 +1640,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC, TROLL },
 							["classes"] = { WARLOCK },
 						}),
@@ -1677,12 +1677,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31157, {	-- Tiger Palm
 							["qg"] = 63296,	-- Gato
 							["coord"] = { 42.6, 68.4, VALLEY_OF_TRIALS },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 							["races"] = { ORC },
 							["classes"] = { MONK },
 							["groups"] = {
 								i(87265, {	-- Tiger Palm Wraps
-									["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+									["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
 								}),
 							},
 						}),
@@ -1727,7 +1727,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["provider"] = { "n", 3101 },	-- Vile Familiar
 								}),
 								i(12449, {	-- Primitive Bow
-									["timeline"] = { "removed 1.7.0" },
+									["timeline"] = { REMOVED_1_7_0 },
 								}),
 								i(4924, {	-- Primitive Club
 									["timeline"] = { REMOVED_4_0_3 },
@@ -2552,7 +2552,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7952,	-- Zjolnir
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13317, 1 } },	-- Ivory Raptor (MOUNT!)
 					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 					["races"] = HORDE_ONLY,
@@ -2741,13 +2741,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { GOBLIN },
 					["groups"] = {
 						i(67154, {	-- Staff of the Unwelcome (CATA)
-							["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
 						i(67157, {	-- Harness of Binding (CATA)
-							["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
 						i(67156, {	-- Girdle of Servitude (CATA)
-							["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
 						i(118217, {	-- Staff of Dubious Pacts (WOD)
 							["timeline"] = { "added 6.0.2" },
@@ -2926,7 +2926,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7952,	-- Zjolnir
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-					["timeline"] = { "removed 1.4.0" },
+					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 8586, 1 } },	-- Mottled Red Raptor (MOUNT!)
 					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 					["races"] = HORDE_ONLY,
@@ -3900,16 +3900,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(97901, {	-- Griftah's Authentic Troll Shoes
-							["timeline"] = { "added 5.3.0", "removed 5.4.0", "added 7.0.3.22290" },
+							["timeline"] = { "added 5.3.0", REMOVED_5_4_0, "added 7.0.3.22290" },
 						}),
 						i(97919, {	-- Whole-Body Shinka' (TOY!)
-							["timeline"] = { "added 5.3.0", "removed 5.4.0", "added 7.0.3.22290" },
+							["timeline"] = { "added 5.3.0", REMOVED_5_4_0, "added 7.0.3.22290" },
 						}),
 						i(97942, {	-- Sen'jin Spirit Drum (TOY!)
-							["timeline"] = { "added 5.3.0", "removed 5.4.0", "added 7.0.3.22290" },
+							["timeline"] = { "added 5.3.0", REMOVED_5_4_0, "added 7.0.3.22290" },
 						}),
 						i(98552, {	-- Xan'tish's Flute (TOY!)
-							["timeline"] = { "added 5.3.0", "removed 5.4.0", "added 7.0.3.22290" },
+							["timeline"] = { "added 5.3.0", REMOVED_5_4_0, "added 7.0.3.22290" },
 						}),
 					},
 				}),
@@ -3955,10 +3955,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(8591),	-- Turquoise Raptor (MOUNT!)
 						i(8592),	-- Violet Raptor (MOUNT!)
 						i(13317, {	-- Ivory Raptor (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 						i(8586, {	-- Mottled Red Raptor (MOUNT!)
-							["timeline"] = { "removed 1.4.0" },
+							["timeline"] = { REMOVED_1_4_0 },
 						}),
 					},
 				}),

@@ -282,13 +282,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 40950,	-- Honoring Success
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					q(40995, {	-- Injection of Power
 						["sourceQuest"] = 40994,	-- Right Tools for the Job
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["coord"] = { 30.4, 70.4, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					-- Start Legion Zone
 					q(40996, {	-- Delegation
@@ -608,13 +608,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118424 },	-- Injured Bandit
 						["coord"] = { 44.8, 39.8, THE_HALL_OF_SHADOWS },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					q(45992, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45991,	--  An Urgent Warning
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45833, {	-- The Pirate's Bay (A)
@@ -876,19 +876,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43885, {	-- Hitting the Books
 						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
 					}),
 					q(46148, {	-- Knowledge is Power
 						["sourceQuest"] = 43885,	-- Hitting the Books
 						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46129, {	-- Furthering Knowledge
 						["sourceQuest"] = 46148,	-- Knowledge is Power
 						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46779, {	-- Further Advancement
 						["sourceQuests"] = {

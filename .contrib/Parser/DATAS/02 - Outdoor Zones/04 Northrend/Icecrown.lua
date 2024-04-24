@@ -506,7 +506,7 @@ root(ROOTS.Zones, {
 							i(43880),	-- Fair Touch of the Crusader
 							i(43893),	-- Olakin's Enchanted Torch
 							i(43900, {	-- Fleshwerk Throwing Glaive
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1386,7 +1386,7 @@ root(ROOTS.Zones, {
 							i(39143),	-- Writhing Mace
 							i(39121),	-- Cultist's Cauldron Stirrer
 							i(39138, {	-- Deadly Razordarts
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1408,7 +1408,7 @@ root(ROOTS.Zones, {
 							i(39143),	-- Writhing Mace
 							i(39121),	-- Cultist's Cauldron Stirrer
 							i(39138, {	-- Deadly Razordarts
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -2236,11 +2236,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.4, 20.6, ICECROWN },
 						["groups"] = {
 							i(44149, {	-- Arcanum of Torment
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44138, {	-- Arcanum of Toxic Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44302),	-- Belt of Dark Mending
@@ -2284,11 +2284,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 87.6, 75.6, ICECROWN },
 						["groups"] = {
 							i(44139, {	-- Arcanum of the Fleeing Shadow
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44150, {	-- Arcanum of the Stalwart Protector
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44244),	-- Argent Skeleton Crusher
@@ -2317,29 +2317,29 @@ root(ROOTS.Zones, {
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
 					i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
 							30921,	-- Skeletal Runesmith
 						},
 					}),
 					i(37332, {	-- Formula: Enchant Cloak - Superior Frost Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["cr"] = 32289,	-- Damned Apothecary
 					}),
 					i(37333, {	-- Formula: Enchant Cloak - Superior Nature Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["cr"] = 32290,	-- Cult Alchemist
 					}),
 					i(37334, {	-- Formula: Enchant Cloak - Superior Shadow Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
 					i(44563, {	-- Pattern: Fur Lining - Arcane Resist (RECIPE!)

@@ -2221,7 +2221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
-							["timeline"] = { ADDED_2_1_0, "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 							-- #if BEFORE 5.0.4
 							["isLimited"] = true,
 							-- #endif
@@ -2342,7 +2342,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["cr"] = 7441,	-- Winterfall Totemic
-					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 41.6, 42.8, WINTERSPRING },
@@ -2357,7 +2357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
 					["cr"] = 7440,	-- Winterfall Den Watcher
-					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 68.0, 35.6, WINTERSPRING },
@@ -2374,7 +2374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
 					["cr"] = 7438,	-- Winterfall Ursa
-					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 69.6, 38.2, WINTERSPRING },

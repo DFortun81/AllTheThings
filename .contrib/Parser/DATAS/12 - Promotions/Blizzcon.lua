@@ -169,33 +169,33 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	-- Blizzconline 2021 "Celebration Collection" (Removed from store 21 Feb 2022)
 	mount(341821, {	-- Snowstorm (MOUNT!)
-		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
+		["timeline"] = { "added 9.0.2.37176", REMOVED_9_2_0 },
 	}),
 	pet(3053, {	-- Moon-Touched Netherwhelp (PET!)
-		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
+		["timeline"] = { "added 9.0.2.37176", REMOVED_9_2_0 },
 	}),
 	ach(14904, {	-- Netherwhelp Online
-		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
+		["timeline"] = { "added 9.0.2.37176", REMOVED_9_2_0 },
 	}),
 
 	-- Blizzcon 2023 Collection
 	mount(358072, {	-- Bound Blizzard (MOUNT!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Legendary Pack.",
-		["timeline"] = { "added 10.1.7.51536", "removed 10.2.5.53262" },
+		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 	i(210042, {		-- Chilling Celebration Banner (TOY!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
-		["timeline"] = { "added 10.1.7.51536", "removed 10.2.5.53262" },
+		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 	pet(3579, {		-- Ysergle The Dreamurk (PET!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
-		["timeline"] = { "added 10.1.7.51536", "removed 10.2.5.53262" },
+		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 	ach(18250, {	-- Ysergle The Dreamurk
-		["timeline"] = { "added 10.1.7.51536", "removed 10.2.5.53262" },
+		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 })));

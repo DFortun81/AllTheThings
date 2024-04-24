@@ -84,7 +84,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 			}),
 		},
 	})),
-	applyevent(A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.50000" } }, {
+	applyevent(A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49741", REMOVED_10_1_0 } }, {
 		-- Event begins on May 25, 2023, and ends on June 13, 2023.
 		n(ACHIEVEMENTS, {
 			ach(18258, {	--	Little Lord of Lies

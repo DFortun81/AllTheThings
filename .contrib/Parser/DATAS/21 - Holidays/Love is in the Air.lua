@@ -69,7 +69,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				1703,	-- My Love is Like a Red, Red Rose
 				1704,	-- I Pitied The Fool
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(103),	-- the Love Fool
@@ -440,22 +440,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isYearly"] = true,
 			["groups"] = {
 				i(22281, {	-- Blue Dinner Suit
-					["timeline"] = { "removed 7.2.5.24116" },
+					["timeline"] = { REMOVED_7_2_5 },
 				}),
 				i(22282, {	-- Purple Dinner Suit
-					["timeline"] = { "removed 7.2.5.24116" },
+					["timeline"] = { REMOVED_7_2_5 },
 				}),
 				i(22277, {	-- Red Dinner Suit
-					["timeline"] = { "removed 7.2.5.24116" },
+					["timeline"] = { REMOVED_7_2_5 },
 				}),
 				i(22278, {	-- Lovely Blue Dress
-					["timeline"] = { "removed 7.2.5.24116" },
+					["timeline"] = { REMOVED_7_2_5 },
 				}),
 				i(22280, {	-- Lovely Purple Dress
-					["timeline"] = { "removed 7.2.5.24116" },
+					["timeline"] = { REMOVED_7_2_5 },
 				}),
 				i(22276, {	-- Lovely Red Dress
-					["timeline"] = { "removed 7.2.5.24116" },
+					["timeline"] = { REMOVED_7_2_5 },
 				}),
 			},
 		}),
@@ -636,7 +636,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 5, 13 },
@@ -655,7 +655,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DARKSHORE },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 14, 22 },
@@ -674,7 +674,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSKWOOD },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 23, 31 },
@@ -693,7 +693,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 32, 40 },
@@ -712,7 +712,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { THE_HINTERLANDS },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 41, 50 },
@@ -731,7 +731,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { WINTERSPRING },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 51, 60 },
@@ -750,7 +750,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { TEROKKAR_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 61, 70 },
@@ -769,7 +769,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { CRYSTALSONG_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = { 71, 80 },
@@ -788,7 +788,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { ADDED_4_0_6, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 			["maps"] = { ULDUM },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 81,
@@ -830,7 +830,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUROTAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 5, 13 },
@@ -849,7 +849,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { SILVERPINE_FOREST },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 14, 22 },
@@ -868,7 +868,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 23, 31 },
@@ -887,7 +887,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 32, 40 },
@@ -906,7 +906,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { THE_HINTERLANDS },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 41, 50 },
@@ -925,7 +925,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { WINTERSPRING },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 51, 60 },
@@ -944,7 +944,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { TEROKKAR_FOREST },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 61, 70 },
@@ -963,7 +963,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_3_3_0, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { CRYSTALSONG_FOREST },
 			["races"] = HORDE_ONLY,
 			["lvl"] = { 71, 80 },
@@ -982,7 +982,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { ADDED_4_0_6, "removed 7.1.5.23194" },
+			["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 			["maps"] = { ULDUM },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 81,
@@ -1862,7 +1862,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			-- #if BEFORE 3.3.2.11403
 			i(22279, {	-- Lovely Black Dress
-				["timeline"] = { "removed 7.2.5.24116" },
+				["timeline"] = { REMOVED_7_2_5 },
 			}),
 			i(34480, {	-- Romantic Picnic Basket (TOY!)
 				["timeline"] = { ADDED_2_4_0 },
@@ -2165,13 +2165,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["timeline"] = { "added 7.2.5.24116" },
 						}),
 						i(22281, {	-- Blue Dinner Suit
-							["timeline"] = { "removed 7.2.5.24116" },
+							["timeline"] = { REMOVED_7_2_5 },
 						}),
 						i(22282, {	-- Purple Dinner Suit
-							["timeline"] = { "removed 7.2.5.24116" },
+							["timeline"] = { REMOVED_7_2_5 },
 						}),
 						i(22277, {	-- Red Dinner Suit
-							["timeline"] = { "removed 7.2.5.24116" },
+							["timeline"] = { REMOVED_7_2_5 },
 						}),
 					},
 				}),
@@ -2201,16 +2201,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["timeline"] = { "added 7.2.5.24116" },
 						}),
 						i(22279, {	-- Lovely Black Dress
-							["timeline"] = { "removed 7.2.5.24116" },
+							["timeline"] = { REMOVED_7_2_5 },
 						}),
 						i(22278, {	-- Lovely Blue Dress
-							["timeline"] = { "removed 7.2.5.24116" },
+							["timeline"] = { REMOVED_7_2_5 },
 						}),
 						i(22280, {	-- Lovely Purple Dress
-							["timeline"] = { "removed 7.2.5.24116" },
+							["timeline"] = { REMOVED_7_2_5 },
 						}),
 						i(22276, {	-- Lovely Red Dress
-							["timeline"] = { "removed 7.2.5.24116" },
+							["timeline"] = { REMOVED_7_2_5 },
 						}),
 					},
 				}),
@@ -3172,53 +3172,53 @@ for i,o in ipairs({
 
 			-- Warlords of Draenor
 			i(117369, {	-- Choker of the Pure Heart [Level 100]
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(117366, {	-- Heartbreak Charm [Level 100]
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(117370, {	-- Shard of Pirouetting Happiness [Level 100]
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(117368, {	-- Sweet Perfume Brooch [Level 100]
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(117367, {	-- Winking Eye of Love [Level 100]
-				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
 			}),
 
 			-- Mists of Pandaria
 			i(93394, {	-- Choker of the Pure Heart [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(93391, {	-- Heartbreak Charm [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(93395, {	-- Shard of Pirouetting Happiness [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(93393, {	-- Sweet Perfume Brooch [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 			i(93392, {	-- Winking Eye of Love [Level 90]
-				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
 			}),
 
 			-- Cata
 			i(68176, {	-- Heartbreak Charm [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(68173, {	-- Choker of the Pure Heart [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(68172, {	-- Shard of Pirouetting Happiness [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(68174, {	-- Sweet Perfume Brooch [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 			i(68175, {	-- Winking Eye of Love [Level 85]
-				["timeline"] = { ADDED_4_0_1, "removed 5.0.1" },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
 
 			-- Wrath

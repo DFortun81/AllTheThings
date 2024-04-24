@@ -447,13 +447,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 1.2.0" },
 						}),
 						i(4110, {	-- Master Hunter's Bow
-							["timeline"] = { "removed 1.2.0" },
+							["timeline"] = { REMOVED_1_2_0 },
 							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
 							-- If anything, it should match the sourceID of the other item by that name. (7170)
 							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
 						}),
 						i(4111, {	-- Master Hunter's Rifle
-							["timeline"] = { "removed 1.2.0" },
+							["timeline"] = { REMOVED_1_2_0 },
 							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
 							-- If anything, it should match the sourceID of the other item by that name. (7171)
 							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
@@ -2223,7 +2223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(4116, {	-- Olmann Sewar
-							["timeline"] = { "removed 1.2.0" },
+							["timeline"] = { REMOVED_1_2_0 },
 						}),
 						i(17688, {	-- Jungle Boots
 							["timeline"] = { REMOVED_4_0_3 },

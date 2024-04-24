@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						-- #if BEFORE MOP
 						i(24386, {	-- Libram of Saints Departed
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(73200, {	-- Fel Infusion Rod
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27487),	-- Bloodlord Legplates
 							-- #if BEFORE MOP
 							i(27484, {	-- Libram of Avengement
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(73200, {	-- Fel Infusion Rod

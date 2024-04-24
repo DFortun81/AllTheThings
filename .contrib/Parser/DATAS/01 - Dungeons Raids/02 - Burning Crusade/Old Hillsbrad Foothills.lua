@@ -261,7 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							i(38506, {	-- Don Carlos' Famous Hat
-								["timeline"] = { "removed 7.0.3.22248" },
+								["timeline"] = { REMOVED_7_0_3 },
 							}),
 							i(38329),	-- Don Carlos' Hat
 						},

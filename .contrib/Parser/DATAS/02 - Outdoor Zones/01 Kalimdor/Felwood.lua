@@ -2540,7 +2540,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 7112,	-- Jaedenar Cultist
 				}),
 				i(15754, {	-- Pattern: Warbear Woolies (RECIPE!)
-					["timeline"] = { "removed 1.11.1.5462" },
+					["timeline"] = { REMOVED_1_11_1 },
 					["crs"] = {
 						7158,	-- Deadwood Shaman
 						7156,	-- Deadwood Den Watcher

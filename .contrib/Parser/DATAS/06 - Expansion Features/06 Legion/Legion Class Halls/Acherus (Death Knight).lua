@@ -221,13 +221,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore
 						["coord"] = { 49.6, 52.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					q(39761, {	-- Advanced Runecarving
 						["sourceQuest"] = 39757, -- Keeping Your Edge
 						["provider"] = { "n", 97072 }, -- Grand Master Siegesmith Corvus
 						["coord"] = { 60.2, 60.0, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 					}),
 					q(44217, {	-- Armor Fit For A Deathlord
 						["sourceQuest"] = 39761, --Advanced Runecarving
@@ -525,13 +525,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118433 },	-- Injured Ebon Knight
 						["coord"] = { 56.0, 30.7, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					q(46031, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 46030,	-- An Urgent Warning
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
 						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45240, {	-- Making Preparations
@@ -628,19 +628,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43877, {	-- Hitting the Books
 						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
 						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
 					}),
 					q(46108, {	-- Knowledge is Power
 						["sourceQuest"] = 43877,	-- Hitting the Books
 						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
 						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46125, {	-- Furthering Knowledge
 						["sourceQuest"] = 46108,	-- Knowledge is Power
 						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
 						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
 					}),
 					q(46789, {	-- Further Advancement
 						["sourceQuest"] = 45103, -- We Ride!
@@ -662,7 +662,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 43268,	-- Tech It Up A Notch
 							["provider"] = { "n", 111634 },	-- Winter Payne
 							["coord"] = { 26.3, 23.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-							["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+							["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
 						}),
 					}),
 					o(252395, {	-- Deathcharger Hitching Post

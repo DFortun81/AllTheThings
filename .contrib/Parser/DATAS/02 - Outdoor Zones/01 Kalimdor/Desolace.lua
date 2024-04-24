@@ -376,11 +376,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5821, {	-- Bodyguard for Hire
 					["qg"] = 11625,	-- Cork Gizelton
 					["coord"] = { 40.4, 79.2, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["lvl"] = 30,
 					["groups"] = {
 						i(15689, {	-- Trader's Ring
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -944,17 +944,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5943, {	-- Gizelton Caravan
 					["qg"] = 11626,	-- Rigger Gizelton
 					["coord"] = { 40.4, 79.4, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["lvl"] = 32,
 					["groups"] = {
 						i(15691, {	-- Sidegunner Shottie
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(15692, {	-- Kodo Brander
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(15695, {	-- Studded Ring Shield
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -2361,7 +2361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(12246, {	-- Super-Seller 680
 					["coord"] = { 40.6, 79.2, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["groups"] = {
 						i(7087, {	-- Pattern: Crimson Silk Cloak
 							["isLimited"] = true,
@@ -2397,7 +2397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(12245, {	-- Vendor-Tron 1000
 					["coord"] = { 60.2, 38.0, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["sym"] = {{"select", "itemID",
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
 						14635,	-- Pattern: Gem-studded Leather Belt (RECIPE!)
@@ -2420,7 +2420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 							["isLimited"] = true,
 						}),
 						i(12228, {	-- Recipe: Roast Raptor (RECIPE!)

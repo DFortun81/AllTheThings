@@ -33,14 +33,14 @@ root(ROOTS.Promotions, {
 				["description"] = "Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",
 				["timeline"] = {
 					"added 9.2.0",
-					"removed 9.2.0.43114", -- 8th April 2022, 1 day after the event ended.
+					REMOVED_9_2_0, -- 8th April 2022, 1 day after the event ended.
 				},
 			}),
 			i(95474, {	-- Jewel of the Firelord
 				["description"] = "Obtained through Prime Gaming from June 29th 2022 till July 26th 2022.",
 				["timeline"] = {
 					ADDED_9_2_5,
-					"removed 9.2.7.44908",	-- 2nd August 2022, 6 days after the event ended
+					REMOVED_9_2_7,	-- 2nd August 2022, 6 days after the event ended
 				},
 			}),
 			-- SEASON 4
@@ -51,7 +51,7 @@ root(ROOTS.Promotions, {
 				},
 				["timeline"] = {
 					ADDED_9_2_5,
-					"removed 9.2.7.44908",	-- 2nd August 2022, 7 days after the event ended
+					REMOVED_9_2_7,	-- 2nd August 2022, 7 days after the event ended
 				},
 			}),
 			i(97213, {	-- Hood of Hungering Darkness

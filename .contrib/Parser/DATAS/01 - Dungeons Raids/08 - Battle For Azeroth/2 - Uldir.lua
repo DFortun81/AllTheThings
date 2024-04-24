@@ -732,7 +732,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 					["g"] = {
 						ach(12536, {	-- Ahead of the Curve: G'huun
-							["timeline"] = { "added 8.0.1", "removed 8.1.0" },
+							["timeline"] = { "added 8.0.1", REMOVED_8_1_0 },
 						}),
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
 						i(160693),	-- Lancet of the Deft Hand
@@ -901,19 +901,19 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					},
 					["g"] = {
 						ach(12535, {	-- Cutting Edge: G'huun
-							["timeline"] = { "added 8.0.1", "removed 8.1.0" },
+							["timeline"] = { "added 8.0.1", REMOVED_8_1_0 },
 						}),
 						ach(12533, {	-- Mythic: G'huun
 							title(381),	-- <Name> the Purifier
 						}),
 						ach(13010),	-- Mythic: G'huun Guild Run
-						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Alliance)
+						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0.1", REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						})),
-						ach(12543, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Horde)
+						ach(12543, bubbleDownSelf({["timeline"] = { "added 8.0.1", REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun

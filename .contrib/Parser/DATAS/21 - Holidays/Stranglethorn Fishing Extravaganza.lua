@@ -174,7 +174,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["cost"] = {
 					{ "i", 19807, 40 },	-- Speckled Tastyfish
 				},
-				["timeline"] = { "added 5.1.0", "removed 7.1.0.22900" },
+				["timeline"] = { "added 5.1.0", REMOVED_7_1_0 },
 				["groups"] = {
 					BOOTS_OF_THE_BAY,
 					DREAD_PIRATE_RING,
@@ -195,7 +195,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["cost"] = {
 					{ "i", 19807, 40 },	-- Speckled Tastyfish
 				},
-				["timeline"] = { "added 5.1.0", "removed 7.1.0.22900" },
+				["timeline"] = { "added 5.1.0", REMOVED_7_1_0 },
 				["groups"] = {
 					i(19971),	-- High Test Eternium Fishing Line
 				},
