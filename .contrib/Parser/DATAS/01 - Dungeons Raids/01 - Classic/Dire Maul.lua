@@ -1761,6 +1761,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["creatureID"] = 11486,
 						["groups"] = {
 							i(18336, {	-- Gauntlet of Gordok Might
+								["provider"] = { "o", 179545 },	-- The Prince's Chest
 								["description"] = "In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",
 							}),
 							i(18392),	-- Distracting Dagger
