@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31165, {	-- Calligraphed Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
 							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { MONK },
 						}),
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131867, {	-- Red Cloud Handwraps
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(57215, {	-- Quill Impaled Boots
 									["timeline"] = { ADDED_4_0_3 },
@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131871, {	-- Rabbit Chaser's Greaves
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(57224, {	-- Longstalker's Rifle
 									["timeline"] = { ADDED_4_0_3 },
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131872, {	-- Sunwalker's Waistcord
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(57792, {	-- Bag of Thorns
 									["timeline"] = { ADDED_4_0_3 },
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131868, {	-- Sun Bleached Armbands
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(57216, {	-- Mud Splattering Hammer
 									["timeline"] = { ADDED_4_0_3 },
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131870, {	-- Thorned Links
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -498,7 +498,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131869, {	-- Scarred Battleboar Breastplate
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(57219, {	-- Braided Boarskin Belt
 									["timeline"] = { ADDED_4_0_3 },
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31166, {	-- Tiger Palm
 							["qg"] = 63327,	-- Shoyu
 							["coord"] = { 27.8, 28.6, CAMP_NARACHE },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { MONK },
 						}),
@@ -714,7 +714,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131217, {	-- Waistband of Tragic Memory
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57212, {	-- Slippers of Mourning
 							["timeline"] = { ADDED_4_0_3 },
@@ -766,7 +766,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(131213, {	-- Chain Kodo-Rider's Pants
-							["timeline"] = { "added 7.0.3", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3 },
 						}),
 						i(4969, {	-- Fortified Bindings
 							["timeline"] = { REMOVED_4_0_3 },
@@ -893,7 +893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131494, {	-- Prairie Wolf Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57234, {	-- Swoopskin Gloves
 							["timeline"] = { ADDED_4_0_3 },
@@ -1036,7 +1036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131212, {	-- Plainstrider Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57236, {	-- Plainstrider Leg Armor
 							["timeline"] = { ADDED_4_0_3 },
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131363, {	-- Earthmother's Garb
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57222, {	-- Rainwalker's Bracer
 							["timeline"] = { ADDED_4_0_3 },
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131493, {	-- Trackless Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1465,7 +1465,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131366, {	-- Thunderhorn Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1564,7 +1564,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131373, {	-- Duskwatcher's Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57240, {	-- Hawkeye Rifle
 							["timeline"] = { ADDED_4_0_3 },

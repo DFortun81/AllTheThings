@@ -238,7 +238,7 @@ root(ROOTS.Zones, {
 						}),
 						pet(536),	-- Tundra Penguin (PET!)
 						pet(1238, {	-- Unborn Val'kyr (PET!)
-							["timeline"] = { "added 5.3.0.16758" },
+							["timeline"] = { ADDED_5_3_0 },
 						}),
 					},
 				}),
@@ -2441,7 +2441,7 @@ root(ROOTS.Zones, {
 					o(244447, {	-- White Murloc Egg
 						["description"] = "In a hidden cave in a glacier contained in the White Murloc Egg at the back of the room, not the table.",
 						["coord"] = { 56.0, 88.0, BOREAN_TUNDRA },
-						["timeline"] = { "added 6.2.2.20444" },
+						["timeline"] = { ADDED_6_2_2 },
 						["groups"] = {
 							i(22780),	-- White Murloc Egg (Terky)
 						},
@@ -2572,7 +2572,7 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(140785, {	-- Hardened Circuitboard Plating
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 						["crs"] = {
 							25758,	-- Defendo-tank 66D
 							25814,	-- Fizzcrank Mechagnome

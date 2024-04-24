@@ -51,30 +51,30 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(44930, {	-- Deadmines: Sea'in Red
 				["qg"] = 115818,	-- Captain Bramblebeard
 				["description"] = "|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw.  An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to questgiver to turn it in.",
-				["timeline"] = { "added 7.1.0.22731" },
+				["timeline"] = { ADDED_7_1_0 },
 				["classes"] = { ROGUE },
 				["groups"] = {
 					objective(1, {	-- 0/100 Bloodied Defias Bandana
 						["provider"] = { "i", 142349 },	-- Bloodied Defias Bandana
 					}),
 					i(142273, {	-- Ensemble: Blackened Defias Armor
-						["timeline"] = { "added 7.1.0.22731" },
+						["timeline"] = { ADDED_7_1_0 },
 						["classes"] = { ROGUE },
 						["groups"] = {
 							i(10399, {	-- Blackened Defias Armor
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(10401, {	-- Blackened Defias Gloves
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(10403, {	-- Blackened Defias Belt
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(10400, {	-- Blackened Defias Leggings
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(10402, {	-- Blackened Defias Boots
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 						},
 					}),
@@ -719,7 +719,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132556, {	-- Smelter's Britches
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(5199),	-- Smelting Pants
 				},
@@ -781,7 +781,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						i(63468),	-- Defias Brotherhood Vest
 						i(63471),	-- Vest of the Curious Visitor
 						i(157628, {	-- Gold-Flecked Gloves
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -792,7 +792,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						i(65164),	-- Cruel Barb
 						i(63473),	-- Cloak of Thredd
 						i(157752, {	-- Armbands of Exiled Architects
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(63476),	-- Gearbreaker's Bindings
 						i(63474),	-- Gear-Marked Gauntlets
@@ -807,13 +807,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						i(65165),	-- Foe Reaper
 						i(65166),	-- Buzz Saw
 						i(157755, {	-- Missing Diplomat's Pauldrons
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157753, {	-- Vest of the Curious Visitor
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157754, {	-- Old Friend's Gloves
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),

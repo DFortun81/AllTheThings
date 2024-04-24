@@ -223,7 +223,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			q(36236, {	-- The Cryptic Tome of Tailoring
 				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
 				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
+				["timeline"] = { ADDED_6_0_2 },
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
@@ -238,7 +238,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			q(36301, {	-- Trega's Tailoring Kit
 				["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
 				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
+				["timeline"] = { ADDED_6_0_2 },
 				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
@@ -390,7 +390,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(SPECIAL, {
 			n(151903, {	-- Time-Lost Trader
 				["description"] = "This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",
-				["timeline"] = { "added 8.1.5" },
+				["timeline"] = { ADDED_8_1_5 },
 				["coords"] = {
 					-- Zuldazar
 					{ 45.0, 39.0, ZULDAZAR },	-- Ledge right before entrance to Atal'Dazar
@@ -927,7 +927,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22813
 				}),
 				{
@@ -947,7 +947,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Black Silk Pack",
 					["recipeID"] = 6695,
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				},
 				{
 					["name"] = "Bottomless Bag",
@@ -971,7 +971,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Felcloth Bag",
-					["timeline"] = { REMOVED_4_0_1, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_1, ADDED_10_1_5 },
 					["recipeID"] = 26086,
 				},
 				{
@@ -1188,7 +1188,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24091,
 				}),
 				{
@@ -1345,7 +1345,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of Winter Night",
-					["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 18436
 				},
 				{
@@ -1596,7 +1596,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24092,
 				}),
 				{
@@ -1704,7 +1704,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Boots",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24093,
 				}),
 				{
@@ -5736,12 +5736,12 @@ profession(TAILORING, {
 				{
 					["name"] = "Crafter's Mark IV",
 					["recipeID"] = 359661,
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 				{
 					["name"] = "Crafter's Mark of the First Ones",
 					["recipeID"] = 359670,
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 				{
 					["name"] = "Novice Crafter's Mark",
@@ -5750,7 +5750,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Vestige of the Eternal",
 					["recipeID"] = 359703,
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 			}
 		},

@@ -225,10 +225,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131595, {	-- Discarded Troll Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156989, {	-- Gan'zulah's Headchopper
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131255, {	-- Shouldersguards of Raw Power
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131591, {	-- Cinch of the Ascetic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131599, {	-- Waistguard of the High Shaman
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -402,7 +402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131515, {	-- Waistguard of the High Shaman
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -438,13 +438,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131202, {	-- Monnion of the White Tiger
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(17686, {	-- Master Hunter's Bow
-							["timeline"] = { "added 1.2.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_2_0, REMOVED_4_0_3 },
 						}),
 						i(17687, {	-- Master Hunter's Rifle
-							["timeline"] = { "added 1.2.0" },
+							["timeline"] = { ADDED_1_2_0 },
 						}),
 						i(4110, {	-- Master Hunter's Bow
 							["timeline"] = { REMOVED_1_2_0 },
@@ -763,7 +763,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131594, {	-- Well Crafted Chain Britches
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -819,7 +819,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2635,	-- Elder Saltwater Crocolisk
 						}),
 						i(131892, {	-- Excelsior Footwear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(61106, {	-- Excelsior Waders
 							["timeline"] = { ADDED_4_0_3 },
@@ -939,7 +939,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131506, {	-- Palm Frond Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(61087, {	-- Ring of Six Hundred Years
 							["timeline"] = { ADDED_4_0_3 },
@@ -1503,7 +1503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131201, {	-- Scale-Cord of the Raptor
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(4119, {	-- Raptor Hunter Tunic
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1635,7 +1635,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131593, {	-- Mahamba's Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(61055, {	-- Wildhammer Scribe's Band
 							["timeline"] = { ADDED_4_0_3 },
@@ -1695,7 +1695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131508, {	-- Linkers of the Unending Tale
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1867,7 +1867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131507, {	-- Balia'mah Chain Pants
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1958,7 +1958,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131592, {	-- Expedition Scout's Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2009,7 +2009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131590, {	-- Salt-Cured Mantle
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2100,7 +2100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131499, {	-- Mizjah Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(61081, {	-- Ring of Cooperation
 							["timeline"] = { ADDED_4_0_3 },
@@ -2150,7 +2150,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131500, {	-- Bal'lal Waistguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2303,7 +2303,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131603, {	-- Eye-Plucker Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2506,7 +2506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131200, {	-- Footpads of Sin'Dall
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(4107, {	-- Tiger Hunter Gloves
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2587,13 +2587,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131598, {	-- Bartered Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156990, {	-- Crystal-Chipping Mallet
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156991, {	-- Shredder Arm Extension
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2618,10 +2618,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131521, {	-- Skeezy Wraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156990, {	-- Crystal-Chipping Mallet
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2684,10 +2684,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131513, {	-- Discarded Troll Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156989, {	-- Gan'zulah's Headchopper
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2742,10 +2742,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131601, {	-- Hauberk of Zul'Mamwe
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131602, {	-- Irradiated Faux Croc' Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2778,10 +2778,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131522, {	-- Hauberk of Zul'Mamwe
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131523, {	-- Irradiated Faux Croc' Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2824,7 +2824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.0, 31.8, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(1680, {	-- Headchopper
-							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2958,7 +2958,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(1998, {	-- Bloodscalp Channeling Staff
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 697,	-- Bloodscalp Shaman
 					-- #if AFTER 7.3.5
 					["coords"] = {
@@ -2982,7 +2982,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 689,	-- Crystal Spine Basilisk
 				}),
 				i(1677, {	-- Drake-scale Vest
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 680,	-- Mosh'Ogg Lord
 					-- #if AFTER 7.3.5
 					["description"] = "Drops from Mosh'Ogg Lords, which have three known spawns. Mosh'Ogg Butcher can spawn in its place.",
@@ -2993,7 +2993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1659, {	-- Engineering Gloves
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 677,	-- Venture Co. Tinkerer
 					-- #if AFTER 7.3.5
 					["description"] = "Drops from Venture Co. Tinkerer. Venture Co. Foremans, Venture Co. Surveyors, and Venture Co. Strip Miners very often spawns in its place.",
@@ -3009,7 +3009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 674,	-- Venture Co. Strip Miner
 				}),
 				i(1991, {	-- Goblin Power Shovel
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["crs"] = {
 						1094,	-- Venture Co. Miner
@@ -3020,7 +3020,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1986, {	-- Gutrender
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 709,	-- Mosh'Ogg Warmonger
 					-- #if AFTER 7.3.5
 					["coords"] = {
@@ -3031,7 +3031,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER CATA
 				i(1680, {	-- Headchopper
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 723,	-- Mosh'Ogg Butcher
 					-- #if AFTER 7.3.5
 					["description"] = "Drops from Mosh'Ogg Butchers, which sometimes can spawn in place of one of the two Mosh'Ogg Lords at the given coordinates.",
@@ -3043,7 +3043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1522, {	-- Headhunting Spear
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 671,	-- Bloodscalp Headhunter
 					-- #if AFTER 7.3.5
 					["description"] = "Drops from Bloodscalp Headhunters, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
@@ -3054,7 +3054,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1523, {	-- Huge Stone Club
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 597,	-- Bloodscalp Berserker
 					-- #if AFTER 7.3.5
 					["description"] = "Drops from Bloodscalp Berserkers, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
@@ -3074,7 +3074,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1679, {	-- Korg Bat
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 1142,	-- Mosh'Ogg Brute
 					-- #if AFTER 7.3.5
 					["coords"] = {
@@ -3084,7 +3084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(5755, {	-- Onyx Shredder Plate
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 4260,	-- Venture Co. Shredder
 					-- #if AFTER 7.3.5
 					["coords"] = {
@@ -3100,7 +3100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1997, {	-- Pressed Felt Robe
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 701,	-- Bloodscalp Mystic
 					-- #if AFTER 7.3.5
 					["description"] = "Drops from Bloodscalp Mystics, which shares its spawn with other Bloodscalp trolls in the Ruins of Zul'Kunda.",
@@ -3114,7 +3114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_3_2_0 },
 				}),
 				i(1624, {	-- Skullsplitter Helm
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["crs"] = {
 						783,	-- Skullsplitter Berserker
 						781,	-- Skullsplitter Headhunter
@@ -3128,7 +3128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1664, {	-- Spellforce Rod
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 676,	-- Venture Co. Surveyor
 					-- #if AFTER 7.3.5
 					["description"] = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawns in its place.",
@@ -3154,7 +3154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1996, {	-- Voodoo Band
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 660,	-- Bloodscalp Witch Doctor
 				}),
 				i(8153, {	-- Wildvine

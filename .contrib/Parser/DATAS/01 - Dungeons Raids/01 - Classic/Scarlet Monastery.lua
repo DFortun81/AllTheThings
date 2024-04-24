@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(QUESTS, {
 					q(31513, {	-- Blades of the Anointed
 						["qg"] = 64827,	-- Hooded Crusader
-						["timeline"] = { "added 5.0.1.15726" },
+						["timeline"] = { ADDED_5_0_4 },
 						["lvl"] = lvlsquish(28, 28, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Blade of the Anointed
@@ -229,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(31514, {	-- Unto Dust Thou Shalt Return
 						["qg"] = 64854,	-- Blade of the Anointed
 						["sourceQuest"] = 31513,	-- Blades of the Anointed
-						["timeline"] = { "added 5.0.1.15726" },
+						["timeline"] = { ADDED_5_0_4 },
 						["lvl"] = lvlsquish(28, 28, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Blades of the Anointed thrust into Whitemane's corpse
@@ -917,7 +917,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(688, {	-- Thalnos the Soulrender
 					["creatureID"] = 59789,	-- Thalnos the Soulrender
-					["timeline"] = { "added 5.0.4" },
+					["timeline"] = { ADDED_5_0_4 },
 					["groups"] = {
 						i(88284),	-- Forgotten Bloodmage Mantle
 						i(88288),	-- Soulrender Greatcloak
@@ -928,7 +928,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(671, {	-- Brother Korloff
 					["creatureID"] = 59223,	-- Brother Korloff
-					["timeline"] = { "added 5.0.4" },
+					["timeline"] = { ADDED_5_0_4 },
 					["groups"] = {
 						i(88289),	-- Firestorm Greatstaff
 						i(88292),	-- Helm of Rising Flame
@@ -942,11 +942,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						3977,	-- High Inquisitor Whitemane
 						60040,	-- Commander Durand
 					},
-					["timeline"] = { "added 5.0.4" },
+					["timeline"] = { ADDED_5_0_4 },
 					["groups"] = {
 						ach(637),	-- Scarlet Monastery
 						ach(5046, {	-- Scarlet Monastery Guild Run
-							["timeline"] = { "added 5.0.4" },
+							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(88301),	-- Greatstaff of Righteousness
 						i(88297),	-- Lightbreaker Greatsword
@@ -957,7 +957,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(88298),	-- Leggings of Hallowed Fire
 						i(88295),	-- Dashing Strike Treads
 						i(132549, {	-- Deft Strike Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(88300),	-- Triune Signet
 						i(88294),	-- Flashing Steel Talisman
@@ -967,13 +967,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #endif
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["timeline"] = { "added 5.0.4" },
+				["timeline"] = { ADDED_5_0_4 },
 				["lvl"] = lvlsquish(90, 90, 35),
 				["groups"] = {
 					n(QUESTS, {
 						q(31515, {	-- Blades of the Anointed
 							["qg"] = 64838,	-- Hooded Crusader
-							["timeline"] = { "added 5.0.1.15726" },
+							["timeline"] = { ADDED_5_0_4 },
 							["lvl"] = lvlsquish(90, 90, 35),
 							["groups"] = {
 								objective(1, {	-- 0/1 Blade of the Anointed
@@ -984,7 +984,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(31516, {	-- Unto Dust Thou Shalt Return
 							["qg"] = 64855,	-- Blade of the Anointed
 							["sourceQuest"] = 31515,	-- Blades of the Anointed
-							["timeline"] = { "added 5.0.1.15726" },
+							["timeline"] = { ADDED_5_0_4 },
 							["lvl"] = lvlsquish(90, 90, 35),
 							["groups"] = {
 								objective(1, {	-- 0/1 Blades of the Anointed thrust into Whitemane's corpse
@@ -1005,23 +1005,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					e(688, {	-- Thalnos the Soulrender
 						["creatureID"] = 59789,	-- Thalnos the Soulrender
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 						["groups"] = {
 							ach(6946),	-- Empowered Spiritualist
 							i(144001, {	-- Forgotten Bloodmage Mantle
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144183, {	-- Soulrender Greatcloak
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144184, {	-- Bracers of the Fallen Crusader
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144002, {	-- Legguards of the Crimson Magus
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144174, {	-- Signet of the Hidden Door
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(81569, {	-- Forgotten Bloodmage Mantle
 								["timeline"] = { REMOVED_7_1_5 },
@@ -1042,23 +1042,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					e(671, {	-- Brother Korloff
 						["creatureID"] = 59223,	-- Brother Korloff
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 						["groups"] = {
 							ach(6928),	-- Burning Man
 							i(144186, {	-- Firestorm Greatstaff
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144026, {	-- Helm of Rising Flame
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144185, {	-- Scorched Earth Cloak
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(143965, {	-- Korloff's Raiment
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144175, {	-- Firefinger Ring
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(81576, {	-- Firestorm Greatstaff
 								["timeline"] = { REMOVED_7_1_5 },
@@ -1082,7 +1082,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							3977,	-- High Inquisitor Whitemane
 							60040,	-- Commander Durand
 						},
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 						["groups"] = {
 							ach(6929, {	-- And Stay Dead!
 								["provider"] = { "n", 58605 },	-- Scarlet Judicator
@@ -1091,37 +1091,37 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							ach(6770),	-- Heroic: Scarlet Monastery Guild Run
 							ach(637),	-- Scarlet Monastery
 							i(144189, {	-- Greatstaff of Righteousness
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144187, {	-- Lightbreaker Greatsword
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144027, {	-- Crown of Holy Flame
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144028, {	-- Whitemane's Embroidered Chapeau
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144221, {	-- Helios, Durand's Soul of Purity
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144005, {	-- Incarnadine Scarlet Spaulders
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144188, {	-- Waistplate of Imminent Resurrection
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144004, {	-- Leggings of Hallowed Fire
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144003, {	-- Dashing Strike Treads
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144176, {	-- Triune Signet
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144158, {	-- Flashing Steel Talisman
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(81691, {	-- Greatstaff of Righteousness
 								["timeline"] = { REMOVED_7_1_5 },

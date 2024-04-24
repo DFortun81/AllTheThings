@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 116048,	-- Joanna
 					["sourceQuest"] = 44924,	-- The Archmage Accosted
 					["coord"] = { 25.2, 37.9, AZSHARA },
-					["timeline"] = { "added 7.2.0.23478" },
+					["timeline"] = { ADDED_7_2_0 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -622,7 +622,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131357, {	-- Heavy Mechanic's Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -668,7 +668,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131367, {	-- Azure Scale Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -721,7 +721,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131361, {	-- Belt of Explosive Potential
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -773,7 +773,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131346, {	-- Ergll's Body Sieve
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -804,7 +804,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131358, {	-- Leggings of the Hack "Mage"
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -822,7 +822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156943, {	-- Hort's Motivator
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -847,7 +847,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131362, {	-- Profit Boon Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -868,7 +868,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(45570, {	-- In Safer Hands
 					["qg"] = 117252,	-- Archmage Xylem
 					["coord"] = { 25.2, 38.0, AZSHARA },
-					["timeline"] = { "added 7.2.0.23857", REMOVED_8_0_1 },
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(14472, {	-- In The Face!
 					["qg"] = 36744,	-- Glix Grindlock
@@ -972,7 +972,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131360, {	-- Grips of the Lightning Fast Assasin
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1116,7 +1116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131334, {	-- Weighted Chain Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1167,7 +1167,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 44915,	-- Professionally Good looking
 					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
 					["coord"] = { 25.0, 38.6, AZSHARA },
-					["timeline"] = { "added 7.2.0.23478" },
+					["timeline"] = { ADDED_7_2_0 },
 					["_drop"] = { "c", "classes" },	-- bad API data
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						47047,	-- Survival: The Thieving Apprentice
 					},
 					["coord"] = { 25.0, 38.6, AZSHARA },
-					["timeline"] = { "added 7.2.0.23478" },
+					["timeline"] = { ADDED_7_2_0 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -1239,7 +1239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131365, {	-- Fine-Link Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1398,7 +1398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131336, {	-- Inter-Feather-Linked Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1428,7 +1428,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131364, {	-- Deal Makers Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1446,7 +1446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131339, {	-- Scaled Gloves of the Serpent
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(44924, {	-- The Archmage Accosted
 					["sourceQuest"] = 44920,	-- Order of Incantations
 					["coord"] = { 25.1, 38.5, AZSHARA },
-					["timeline"] = { "added 7.2.0.23478" },
+					["timeline"] = { ADDED_7_2_0 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -1577,7 +1577,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131359, {	-- Accomodating Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1626,7 +1626,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131333, {	-- Hill Ranger Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1931,7 +1931,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(131340, {	-- Capacitance Bands
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1992,7 +1992,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(131341, {	-- Asylum Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2122,7 +2122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(107477, {	-- N.U.T.Z
 					["coord"] = { 44, 75.6, AZSHARA },
-					["timeline"] = { "added 7.0.3.22290" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(13896, {	-- Scalebeard
 					-- #if AFTER CATA

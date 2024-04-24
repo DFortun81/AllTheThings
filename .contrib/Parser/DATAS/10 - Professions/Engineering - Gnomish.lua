@@ -136,7 +136,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "Geosynchronous World Spinner",
-						["timeline"] = { "added 5.0.1.15699" },
+						["timeline"] = { ADDED_5_0_4 },
 						["recipeID"] = 127139,
 					},
 				},

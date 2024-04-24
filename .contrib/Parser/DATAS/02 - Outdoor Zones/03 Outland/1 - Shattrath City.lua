@@ -767,7 +767,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10210,	-- A'dal
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
-					q(44863, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3, "added 7.1.5" } }, {	-- Clearing the Air
+					q(44863, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3, ADDED_7_1_5 } }, {	-- Clearing the Air
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 						["requireSkill"] = BLACKSMITHING,
@@ -791,10 +791,10 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = 70,
 					})),
-					q(41160, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {	-- Earth to Earth
+					q(41160, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Earth to Earth
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
-						["timeline"] = { "added 7.0.3.21655" },
+						["timeline"] = { ADDED_7_0_3 },
 						["requireSkill"] = BLACKSMITHING,
 						["groups"] = {
 							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
@@ -1025,7 +1025,7 @@ root(ROOTS.Zones, {
 					q(57581, {	-- Plucking Plumes
 						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
-						["timeline"] = { "added 8.2.5.31960" },
+						["timeline"] = { ADDED_8_2_5 },
 						["minReputation"] = { 1011, HONORED },	-- Lower City, Honored.
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
@@ -2132,7 +2132,7 @@ root(ROOTS.Zones, {
 						}),
 						i(156726, {	-- Yellow Crystal Monocle
 							["sourceQuest"] = 50183,	-- Star-Touched Chest
-							["timeline"] = { "added 8.1.028768" },
+							["timeline"] = { ADDED_8_1_0 },
 						}),
 						-- TODO: presumably other monocles can be re-purchased here once having been obtained via the secret
 					}),
@@ -2174,11 +2174,11 @@ root(ROOTS.Zones, {
 							}),
 							i(134007, {	-- Eternal Black Diamond Ring (TOY!)
 								["cost"] = 50000000,	-- 5,000g
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(134004, {	-- Noble's Eternal Elementium Signet (TOY!)
 								["cost"] = 30000000,	-- 3,000g
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							applyclassicphase(WRATH_PHASE_FOUR, i(51809, {	-- Portable Hole
 								["cost"] = 30000000,	-- 3,000g
@@ -2291,8 +2291,8 @@ root(ROOTS.Zones, {
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.",
 						["coord"] = { 64.2, 71.4, SHATTRATH_CITY },
-						["timeline"] = { "added 7.1.0.22908" },
-						["groups"] = sharedData({ ["timeline"] = { "added 7.1.5"} }, {
+						["timeline"] = { ADDED_7_1_0 },
+						["groups"] = sharedData({ ["timeline"] = { ADDED_7_1_5} }, {
 							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
 							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
 							i(142283),	-- Plans: Skyforged Great Axe (RECIPE!)

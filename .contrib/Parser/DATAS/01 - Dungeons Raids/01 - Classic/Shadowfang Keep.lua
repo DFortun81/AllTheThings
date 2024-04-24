@@ -802,10 +802,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65936),	-- Sandals of Sacrifice
 						i(65910),	-- Godfrey's Britches
 						i(131684, {	-- Packleader's Chain Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131685, {	-- Boots of Painful Cost
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1396,10 +1396,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(66020),	-- Sandals of Sacrifice
 						i(66011),	-- Godfrey's Britches
 						i(131686, {	-- Packleader's Chain Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131687, {	-- Boots of Painful Cost
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1996,13 +1996,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(5254),	-- Rugged Spaulders
 						-- #endif
 						i(132568, {	-- Shadowfang Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						-- #if AFTER 4.0.3
 						i(5943),	-- Rift Bracers
 						-- #endif
 						i(132567, {	-- Blindwatcher's Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						-- #if AFTER 4.0.3
 						i(6319),	-- Girdle of the Blindwatcher
@@ -2076,7 +2076,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(6642),	-- Phantom Armor
 						i(3230),	-- Black Wolf Bracers
 						i(132566, {	-- Dark Lupine Wraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2223,7 +2223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(63463),	-- Mantle of the Eastern Lords
 							i(63458),	-- Lord Walden's Breastplate
 							i(157617, {	-- Wolfshide Vest
-								["timeline"] = { "added 7.3.5.25727" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(63457),	-- Shackles of Undeath
 							i(63464),	-- Greaves of the Misguided

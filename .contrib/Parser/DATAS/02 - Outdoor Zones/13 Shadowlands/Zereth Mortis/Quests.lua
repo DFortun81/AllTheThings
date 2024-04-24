@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 		})),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
-			q(66042, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42538"} }, {	-- Patterns Within Patterns
+			q(66042, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0} }, {	-- Patterns Within Patterns
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },

@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			-- #if AFTER 7.3.5.25727
 			n(ACHIEVEMENTS, {
 				ach(12401, {	-- Glory of the Ulduar Raider
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						12320,	-- Orbit-uary
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				ach(12311, {	-- The Secrets of Ulduar
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						12297,	-- The Siege of Ulduar
@@ -54,79 +54,79 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}},
 				}),
 				ach(12297, {	-- The Siege of Ulduar
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39267, {	-- Flame Leviathan
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33113 },
 						}),
 						crit(39268, {	-- Razorscale
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33186 },
 						}),
 						crit(39270, {	-- Ignis the Furnace Master
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33118 },
 						}),
 						crit(39269, {	-- XT-002 Deconstructor
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33293 },
 						}),
 					},
 				}),
 				ach(12302, {	-- The Antechamber of Ulduar
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39285, {	-- Assembly of Iron
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32867 },
 						}),
 						crit(39287, {	-- Kologarn
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32930 },
 						}),
 						crit(39286, {	-- Auriaya
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33515 },
 						}),
 					},
 				}),
 				ach(12309, {	-- The Keepers of Ulduar
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39289, {	-- Hodir
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32845 },
 						}),
 						crit(39291, {	-- Thorim
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32865 },
 						}),
 						crit(39292, {	-- Freya
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32906 },
 						}),
 						crit(39293, {	-- Mimiron
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33350 },
 						}),
 					},
 				}),
 				ach(12310, {	-- The Descent into Madness
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39294, {	-- General Vezax
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33271 },
 						}),
 						crit(39295, {	-- Yogg-Saron
-							["timeline"] = { "added 7.3.5.25727" },
+							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33288 },
 						}),
 					},
 				}),
 				ach(12312, {	-- Dwarfageddon
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["crs"] = {
 						33236,	-- Steelforged Defender
 						33572,	-- Steelforged Defender
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				}),
 				ach(12360, {	-- Lumberjacked
 					["description"] = "Must be killed before killing Freya or they will despawn.",
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["providers"] = {
 						{ "n", 32915 },	-- Elder Brightleaf
 						{ "n", 32913 },	-- Elder Ironbranch
@@ -574,7 +574,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2925),	-- Shattered (10 player)
 							revampAch(2930),	-- Stokin' the Furnace (10 player)
 							i(142086, {	-- Magma Rageling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45311),	-- Relentless Edge
 							i(45309),	-- Rifle of the Platinum Guard
@@ -594,7 +594,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2919),	-- A Quick Shave (10 player)
 							revampAch(2923),	-- Iron Dwarf, Medium Rare (10 player)
 							i(142087, {	-- Ironbound Proto-Whelp (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45298),	-- Razorscale Talon
 							i(45299),	-- Dragonsteel Faceplate
@@ -722,7 +722,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							revampAch(2940),	-- I Choose You, Stormcaller Brundir (10 player)
 							i(142088, {	-- Runeforged Servitor (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45331),	-- Rune-Etched Nightblade
 							i(45332),	-- Stormtip
@@ -763,7 +763,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["cr"] = 34035,	-- Feral Defender
 							}),
 							i(142089, {	-- Sanctum Cub (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45713),	-- Nurturing Touch
 							i(45707),	-- Shieldwall of the Breaker
@@ -793,7 +793,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2963),	-- I Have the Coolest Friends (10 player)
 							revampAch(2969),	-- Staying Buffed All Winter (10 player)
 							i(142090, {	-- Winter Rageling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -857,7 +857,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(45788),	-- Freya's Sigil
 							}),
 							i(142091, {	-- Snaplasher (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -903,7 +903,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45647),	-- Helm of the Wayward Conqueror
 							i(45648),	-- Helm of the Wayward Protector
@@ -989,7 +989,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45635),	-- Chestguard of the Wayward Conqueror
 							i(45636),	-- Chestguard of the Wayward Protector
@@ -1497,7 +1497,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2926),	-- Shattered (25 player)
 							revampAch(2929),	-- Stokin' the Furnace (25 player)
 							i(142086, {	-- Magma Rageling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45171),	-- Intensity
 							i(45165),	-- Worldcarver
@@ -1524,7 +1524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2921),	-- A Quick Shave (25 player)
 							revampAch(2924),	-- Iron Dwarf, Medium Rare (25 player)
 							i(142087, {	-- Ironbound Proto-Whelp (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45147),	-- Guiding Star
 							i(45142),	-- Remorse
@@ -1661,7 +1661,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							revampAch(2943),	-- I Choose You, Stormcaller Brundir (25 player)
 							i(142088, {	-- Runeforged Servitor (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45234),	-- Rapture
 							i(45233),	-- Stormrune Edge
@@ -1714,7 +1714,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["cr"] = 34035,	-- Feral Defender
 							}),
 							i(142089, {	-- Sanctum Cub (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45437),	-- Runescribed Blade
 							i(45315),	-- Stonerender
@@ -1752,7 +1752,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2965),	-- I Have the Coolest Friends (25 player)
 							revampAch(2970),	-- Staying Buffed All Winter (25 player)
 							i(142090, {	-- Winter Rageling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -1818,7 +1818,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(45814),	-- Freya's Sigil
 							}),
 							i(142091, {	-- Snaplasher (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -1865,7 +1865,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45641),	-- Gauntlets of the Wayward Conqueror
 							i(45642),	-- Gauntlets of the Wayward Protector
@@ -1963,7 +1963,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(45656),	-- Mantle of the Wayward Conqueror
 							i(45657),	-- Mantle of the Wayward Protector
@@ -2294,7 +2294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(12323),	-- Shattered
 						ach(12325),	-- Stokin' the Furnace
 						i(142086, {	-- Magma Rageling (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(45171),	-- Intensity
 						i(45311),	-- Relentless Edge
@@ -2331,7 +2331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(12321),	-- A Quick Shave
 						ach(12322),	-- Iron Dwarf, Medium Rare
 						i(142087, {	-- Ironbound Proto-Whelp (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(45147),	-- Guiding Star
 						i(45298),	-- Razorscale Talon
@@ -2520,7 +2520,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(12333),	-- I Choose You, Stormcaller Brundir
 						i(142088, {	-- Runeforged Servitor (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(45234),	-- Rapture
 						i(45233),	-- Stormrune Edge
@@ -2591,7 +2591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(12341),	-- Crazy Cat Lady
 						ach(12342),	-- Nine Lives
 						i(142089, {	-- Sanctum Cub (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(45437),	-- Runescribed Blade
 						i(45315),	-- Stonerender
@@ -2645,7 +2645,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(12344),	-- I Have the Coolest Friends
 						ach(12346),	-- Staying Buffed All Winter
 						i(142090, {	-- Winter Rageling (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
@@ -2739,7 +2739,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45814),	-- Freya's Sigil
 						}),
 						i(142091, {	-- Snaplasher (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
@@ -2798,7 +2798,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(142092, {	-- G0-R41-0N Ultratonk (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(45641),	-- Gauntlets of the Wayward Conqueror
 						i(45642),	-- Gauntlets of the Wayward Protector
@@ -2925,7 +2925,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(142093, {	-- Creeping Tentacle (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(45635),	-- Chestguard of the Wayward Conqueror
 						i(45636),	-- Chestguard of the Wayward Protector

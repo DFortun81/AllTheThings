@@ -3169,12 +3169,12 @@ root(ROOTS.Zones, {
 				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
 					["coord"] = { 43.6, 45.6, LEGION_DALARAN },
-					["timeline"] = { "added 7.0.3.22290" },
+					["timeline"] = { ADDED_7_0_3 },
 					["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					["g"] = {
 						i(129057),	-- Dalaran Disc (TOY!)
 						i(140309, {	-- Prismatic Bauble (TOY!)
-							["timeline"] = { "added 10.1.0", REMOVED_10_1_5 },	-- During June 2023
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 },	-- During June 2023
 							["cost"] = 2500000000,	-- 250,000g
 						}),
 					},

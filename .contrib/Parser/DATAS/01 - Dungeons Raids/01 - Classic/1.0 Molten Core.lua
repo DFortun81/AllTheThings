@@ -1,8 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local REMOVED_WITH_CATA = { "added 1.0.1", REMOVED_4_0_3 };
-local REMOVED_WITH_WRATH = { "added 1.0.1", REMOVED_3_0_8 };
+local REMOVED_WITH_CATA = { ADDED_1_0_1, REMOVED_4_0_3 };
+local REMOVED_WITH_WRATH = { ADDED_1_0_1, REMOVED_3_0_8 };
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(741, {	-- Molten Core
 		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
@@ -616,7 +616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18820),	-- Talisman of Ephemeral Power
 					i(17782, {	-- Talisman of Binding Shard
 						["lore"] = "According to Travis Day, this item was used by Blizzard in a test version of the Thunderfury quest line. The quest was removed and was not publicly released, but Blizzard initially forgot to remove the item from the loot table. It was only ever looted by Noktyn-Archimonde US of the guild Nurfed on March 23, 2005",
-						["timeline"] = { "added 1.11.1.5462", REMOVED_1_11_2 },
+						["timeline"] = { ADDED_1_11_1, REMOVED_1_11_2 },
 					}),
 				},
 			}),
@@ -738,7 +738,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					}),
 					i(138018, {	-- Clothes Chest Pattern: Molten Core
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(138833, {	-- Illusion: Flametongue (ILLUSION!)
 						["classes"] = { SHAMAN },
@@ -767,7 +767,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18815),	-- Essence of the Pure Flame
 					i(17082),	-- Shard of the Flame
 					i(17982, {	-- Ragnaros Core
-						["timeline"] = { "added 1.1.0", REMOVED_1_4_0 },
+						["timeline"] = { ADDED_1_1_0, REMOVED_1_4_0 },
 					}),
 				},
 			}),

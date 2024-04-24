@@ -14,7 +14,7 @@ MISCELLANEOUS_PROMOTIONS = createHeader({
 root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	i(19160, {	-- Contest Winner's Tabard [TODO: Move to PVP?]
 		["description"] = "This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",
-		["timeline"] = { "added 1.11.1.5462" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 	un(BLIZZARD_BALANCE, i(49646, {	-- Core Hound Pup
 		["description"] = "Granted to players that attach an authenticator to their account.",
@@ -35,7 +35,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	i(103632, {	-- Lucky Box of Greatness
 		["description"] = "Reward from the Azeroth Academy Mentor Recruitment Promotion (China Only)",
-		["timeline"] = { "added 5.4.0.17169" },
+		["timeline"] = { ADDED_5_4_0 },
 		["groups"] = {
 			i(103630),	-- Riding Turtle (MOUNT!)
 			i(103629),	-- Lucky Satchel
@@ -70,7 +70,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	i(90953, {	-- Spectral Cub (PET!)
 		["description"] = "Reward from the Battle.net World Championship in Shanghai 2012 (China Only)",
-		["timeline"] = { "added 5.0.4.16004" },
+		["timeline"] = { ADDED_5_0_4 },
 	}),
 	i(76755, {	-- Tyrael's Charger (MOUNT!)
 		-- #if BEFORE DF
@@ -90,7 +90,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["timeline"] = { ADDED_3_2_2 },
 	}),
 	ach(9496, {	-- Warlord's Deathwheel
-		["timeline"] = { "added 6.0.2.18888" },
+		["timeline"] = { ADDED_6_0_2 },
 		["g"] = {
 			crit(25887, {
 				["provider"] = { "i", 116788 },
@@ -104,6 +104,6 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	i(116788, {	-- Warlord's Deathwheel (MOUNT!)
 		["description"] = "Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",
-		["timeline"] = { "added 6.0.2.18888" },
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 })));

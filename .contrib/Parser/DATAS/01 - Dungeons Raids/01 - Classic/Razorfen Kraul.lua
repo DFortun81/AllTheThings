@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131617, {	-- Razorflank's Chainmail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -328,7 +328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				["description"] = "This NPC is always present since 10.1.7.\nTo obtain their drops you have to be in an appropriate loot spec or they will not drop. However their drops are also located on other bosses in the dungeon.",
 				-- #endif
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6689),	-- Wind Spirit Staff
 					i(6688),	-- Whisperwind Headdress
@@ -365,7 +365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(896, {	-- Hunter Bonetusk
 				["creatureID"] = 75001,	-- Hunter Bonetusk
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(151442, {	-- Bonetusk Cloak
 						["timeline"] = { ADDED_7_3_0 },
@@ -378,14 +378,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(895, {	-- Roogug
 				["creatureID"] = 74948,	-- Roogug
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6691),	-- Swinetusk Shank
 					i(151443, {	-- Roogug's Swinesteel Girdle
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132565, {	-- Carnal Britches
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(6690),	-- Ferine Leggings
 				},
@@ -407,7 +407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(899, {	-- Warlord Ramtusk
 				["creatureID"] = 74462,	-- Warlord Ramtusk
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6687),	-- Corpsemaker
 					i(6686),	-- Tusken Helm
@@ -448,7 +448,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(900, {	-- Groyat, the Blind Hunter
 				["creatureID"] = 4425,	-- Groyat, the Blind Hunter
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6696),	-- Nightstalker Bow
 					i(6695),	-- Stygian Bone Amulet
@@ -456,7 +456,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(75590, {	-- Enormous Bullfrog
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(11026),	-- Tree Frog (PET!)
 					i(11027),	-- Wood Frog (PET!)

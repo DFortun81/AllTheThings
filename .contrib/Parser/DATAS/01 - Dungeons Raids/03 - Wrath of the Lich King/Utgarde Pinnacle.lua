@@ -275,7 +275,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(37056),	-- Harpooner's Striders
 						i(157560, {	-- Skadi's Scaled Boots
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -383,7 +383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37056),	-- Harpooner's Striders (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157560, {	-- Skadi's Scaled Boots
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 						},
 					}),

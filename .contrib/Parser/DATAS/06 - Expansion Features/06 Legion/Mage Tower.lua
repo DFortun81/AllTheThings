@@ -7,7 +7,7 @@ local MageTowerFilter = {["u"] = 41};
 -- #else
 local MageTowerFilter =
 {["timeline"] = {
-	"added 7.2.0",
+	ADDED_7_2_0,
 	REMOVED_8_0_1,
 }};
 local MageTowerFilter92 =

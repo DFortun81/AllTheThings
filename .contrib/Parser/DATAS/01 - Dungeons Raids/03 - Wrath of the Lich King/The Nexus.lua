@@ -286,7 +286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37153),	-- Gloves of the Crystal Gardener (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
 						i(157559, {	-- Chilly Cinch
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37152),	-- Girdle of Ice (7.3.5 - Used to be only Heroic Mode)
@@ -310,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37172),	-- Gloves of Glistening Runes (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
 						i(157565, {	-- Tangler-Leather Gloves
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37171),	-- Flame-Bathed Steel Girdle (7.3.5 - Used to be only Heroic Mode)
@@ -410,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 							i(37153),	-- Gloves of the Crystal Gardener
 							i(157559, {	-- Chilly Cinch
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37152),	-- Girdle of Ice
 							i(37155),	-- Frozen Forest Kilt
@@ -439,7 +439,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37170),	-- Interwoven Scale Bracers
 							i(37172),	-- Gloves of Glistening Runes
 							i(157565, {	-- Tangler-Leather Gloves
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37171),	-- Flame-Bathed Steel Girdle
 							-- #if AFTER 7.3.5

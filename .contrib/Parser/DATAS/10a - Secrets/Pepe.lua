@@ -9,12 +9,12 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 		174865,	-- A Tiny Winter Hat (Feast of Winter Veil)
 		147537,	-- A Tiny Set of Warglaives (TOY!)
 	}},
-	["timeline"] = { "added 6.0.1.18663" },
+	["timeline"] = { ADDED_6_0_2 },
 	["maps"] = { LUNARFALL, FROSTWALL },
 	["g"] = {
 		n(ACHIEVEMENTS, {
 			ach(10053, {	-- I Found Pepe!
-				["timeline"] = { "added 6.2.0.19953" },
+				["timeline"] = { ADDED_6_2_0 },
 				["groups"] = {
 					crit(28185, {	-- Pirate Pepe
 						["provider"] = { "i", 127870 },	-- A Tiny Pirate Hat
@@ -41,11 +41,11 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 					{ 42.01, 19.01, LEGION_DALARAN },	-- Antonidas Memoria
 					{ 36.01, 37.01, LEGION_DALARAN },	-- Angelique Butler (First Aid Shop)
 				},
-				["timeline"] = { "added 7.0.3.21491" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			ach( 9838, {	-- What A Strange, Interdimensional Trip It's Been
 				["provider"] = { "n", 86470 },	-- Pepe
-				["timeline"] = { "added 7.0.3.22248" },
+				["timeline"] = { ADDED_7_0_3 },
 				["groups"] = {
 					i(122293),	-- Trans-Dimensional Bird Whistle (TOY!)
 					crit(27625, {	-- Gug'rokk (Bloodmaul Slag Mines)
@@ -140,25 +140,25 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 			["questID"] = 56911,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 68.5, 47.9, MECHAGON },	-- Pepe Location
 			["description"] = "Located in the alternate Timeline.",
-			["timeline"] = { "added 8.2.0.30918" },
+			["timeline"] = { ADDED_8_2_0 },
 		}),
 		i(161451, {	-- A Tiny Diving Helmet
 			["provider"] = { "o", 293131 },	-- Pepe
 			["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 54.01, 71.01, BORALUS },
 			["description"] = "Located inside the fish tank of |cFFFFD700Catherine Morgan's|r cat house.",
-			["timeline"] = { "added 8.0.1.26522" },
+			["timeline"] = { ADDED_8_0_1 },
 		}),
 		i(127867, {	-- A Tiny Ninja Shroud
 			["provider"] = { "o", 243281 },	-- Ninja Pepe
 			["questID"] = 39267,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 47.51, 41.31, GORGROND },
-			["timeline"] = { "added 6.2.0.19934" },
+			["timeline"] = { ADDED_6_2_0 },
 		}),
 		i(139632, {	-- A Tiny Pair of Goggles
 			["provider"] = { "o", 252331 },	-- Traveller Pepe
 			["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
-			["timeline"] = { "added 7.0.3.22248" },
+			["timeline"] = { ADDED_7_0_3 },
 			["coords"] = {
 				{ 42.31, 57.51, LEGION_DALARAN },	-- Near Fruit Vendor
 				{ 48.01, 58.01, LEGION_DALARAN },	-- Stairs to Curiositiese & Moore
@@ -172,20 +172,20 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 		i(186593, {	-- A Tiny Pair of Wings
 			["questID"] = 64136,
 			["description"] = "Requires Renown 56.",
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 			["customCollect"] = "SL_COV_KYR",
 		}),
 		i(127870, {	-- A Tiny Pirate Hat
 			["provider"] = { "o", 243280 },	-- Pirate Pepe
 			["questID"] = 39268,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 54.11, 83.61, SPIRES_OF_ARAK },
-			["timeline"] = { "added 6.2.0.19934" },
+			["timeline"] = { ADDED_6_2_0 },
 		}),
 		i(127869, {	-- A Tiny Plated Helm
 			["provider"] = { "o", 243283 },	-- Knight Pepe
 			["questID"] = 39266,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 51.01, 63.31, TALADOR },
-			["timeline"] = { "added 6.2.0.19934" },
+			["timeline"] = { ADDED_6_2_0 },
 		}),
 		i(216907, {	-- A Tiny Plumed Tricorne
 			["description"] = "Rewarded from Renown 24 from Plunderstorm Event.",
@@ -195,32 +195,32 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 		i(186580, {	-- A Tiny Sinstone
 			["questID"] = 64132,
 			["description"] = "Requires Renown 56.",
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 			["customCollect"] = "SL_COV_VEN",
 		}),
 		i(186524, {	-- A Tiny Vial of Slime
 			["questID"] = 64098,
 			["description"] = "Requires Renown 56.",
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 			["customCollect"] = "SL_COV_NEC",
 		}),
 		i(127865, {	-- A Tiny Viking Helmet
 			["provider"] = { "o", 243282 },	-- Viking Pepe
 			["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 80.11, 50.4, DRAENOR_NAGRAND },
-			["timeline"] = { "added 6.2.0.19934" },
+			["timeline"] = { ADDED_6_2_0 },
 		}),
 		i(161443, {	-- A Tiny Voodoo Mask
 			["provider"] = { "o", 293110 },	-- Pepe'jin
 			["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 38.98, 15.80, DAZARALOR },
 			["description"] = "Located inside the |cFFFFD700Hot House|r.",
-			["timeline"] = { "added 8.0.1.26522" },
+			["timeline"] = { ADDED_8_0_1 },
 		}),
 		i(186473, {	-- A Tiny Winter Staff
 			["questID"] = 64078,
 			["description"] = "Requires Renown 56.",
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 			["customCollect"] = "SL_COV_NFA",
 		}),
 		i(213181, {	-- A Tiny Dragon Goblet

@@ -546,7 +546,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				i(142337, {	-- Plans: Blight (RECIPE!)
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(206377, {	-- Ward of Naxxramas
 					["crs"] = { 10411 },	-- Eye of Naxxramas

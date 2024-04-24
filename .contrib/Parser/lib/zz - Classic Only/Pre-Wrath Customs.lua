@@ -171,7 +171,7 @@ root("Achievements", {
 				12561,	-- Explore Nazmir
 				12560,	-- Explore Vol'dun
 			}},
-			["timeline"] = { "added 8.0.1.27326" },
+			["timeline"] = { ADDED_8_0_1 },
 		})),
 		applyclassicphase(LEGION_PHASE_ONE, ach(11188, {	-- Broken Isles Explorer
 			-- Meta Achievement
@@ -182,7 +182,7 @@ root("Achievements", {
 				10668,	-- Explore Stormheim
 				10669,	-- Explore Suramar
 			}},
-			["timeline"] = { "added 7.0.3.21570" },
+			["timeline"] = { ADDED_7_0_3 },
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(4868, {	-- Cataclysm Explorer [7.0.3] / Explore Cataclysm
 			-- Meta Achievement
@@ -205,7 +205,7 @@ root("Achievements", {
 				8941,	-- Explore Spires of Arak
 				8940,	-- Explore Talador
 			}},
-			["timeline"] = { "added 6.0.1.18297" },
+			["timeline"] = { ADDED_6_0_2 },
 		})),
 		ach(42, {	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms
 			-- #if AFTER WRATH
@@ -343,7 +343,7 @@ root("Achievements", {
 				6979,	-- Explore Vale of Eternal Blossoms
 				6969,	-- Explore Valley of the Four Winds
 			}},
-			["timeline"] = { "added 5.0.4.15890" },
+			["timeline"] = { ADDED_5_0_4 },
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(46, {	-- Universal Explorer [7.0.3] / World Explorer
 			-- Meta Achievement

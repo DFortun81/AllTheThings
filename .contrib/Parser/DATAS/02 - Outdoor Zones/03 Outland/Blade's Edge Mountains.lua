@@ -504,7 +504,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(31447),	-- Vibro Dagger
 							i(157549, {	-- Vibro Knuckles
-								["timeline"] = { "added 7.3.5.25727" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(31446),	-- Vibro Shanker
 							i(31448),	-- Vibro Sword

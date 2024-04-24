@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131417, {	-- Captured Heart Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				},
@@ -822,7 +822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131862, {	-- Pratt's Handmade Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -859,7 +859,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131863, {	-- Jangdor's Handmade Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -973,7 +973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131416, {	-- Sentinel's Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -994,7 +994,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131415, {	-- Ogre's Visage
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1012,13 +1012,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131421, {	-- Green Whelp Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54912, {	-- Telaron's Platemail
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156984, {	-- Windflight Knife
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(54909, {	-- Windflight Staff
 							["timeline"] = { ADDED_4_0_3 },
@@ -1039,13 +1039,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131411, {-- Green Whelp Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54916, {	-- Konu's Platemail
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156983, {	-- Runetotem Slicer
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(54913, {	-- Runetotem Staff
 							["timeline"] = { ADDED_4_0_3 },
@@ -1162,7 +1162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131423, {	-- Spaulders of the Ogre-Nabber
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1186,7 +1186,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131418, {	-- Spaulders of the Ogre-Nabber
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1365,7 +1365,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131424, {	-- Yeti Hide Padded Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1386,7 +1386,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131420, {	-- Yeti Hide Padded Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1407,7 +1407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131422, {	-- Chain of Natural Essence
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1428,7 +1428,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131412, {	-- Chain of Natural Essence
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1789,10 +1789,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9630),	-- Pratt's Handcrafted Boots
 						i(9631),	-- Pratt's Handcrafted Gloves
 						i(131425, {	-- Pratt's Handcrafted Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131426, {	-- Pratt's Handcrafted Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1827,10 +1827,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9633),	-- Jangdor's Handcrafted Boots
 						i(9632),	-- Jangdor's Handcrafted Gloves
 						i(131427, {	-- Jangdor's Handcrafted Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131428, {	-- Jangdor's Handcrafted Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2139,7 +2139,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131430, {	-- Maloof's Spare Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2186,7 +2186,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131419, {	-- Luring Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54926, {	-- Condensed Essence Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -2258,7 +2258,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157023, {	-- Power of the Forest
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(54969, {	-- Power of the Hippogryph
 							["timeline"] = { ADDED_4_0_3 },
@@ -3015,7 +3015,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if AFTER 3.1.0
 				i(11474, {	-- Sprite Darter Egg (PET!)
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 					-- #if BEFORE 4.0.3
 					["description"] = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
 					["sourceQuest"] = 4298,	-- Becoming a Parent

@@ -656,7 +656,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131699, {	-- Headland Belt
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -940,10 +940,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131700, {	-- Phantom Chain Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131701, {	-- Bracers of Deceit
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1017,7 +1017,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(131693, {	-- Amazing Chain Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1434,13 +1434,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 48017,	-- Infected Sludge Guard
 						}),
 						i(65713, {	-- Monstrous Shield
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(65673, {	-- Aberrant Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131692, {	-- Sludge Guard Mail Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1487,7 +1487,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131689, {	-- Web Encased Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1629,10 +1629,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131696, {	-- Pauldrons of the Hero
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131697, {	-- Gauntlets of the Hero
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1681,7 +1681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131690, {	-- Web Coated Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1806,7 +1806,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(20086, {	-- Dusksteel Throwing Knife [Classic] / Broken Dusksteel Throwing Knife [TBC]
 							["timeline"] = {
-								"added 1.11.1.5462",
+								ADDED_1_11_1,
 								REMOVED_2_0_1
 							},
 						}),
@@ -1840,7 +1840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131695, {	-- Orkus' Riding Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1857,7 +1857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131894, {	-- Botanist's Chain Pants
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(66067, {	-- Singing Sunflower (PET!)
 							["timeline"] = { ADDED_4_0_3 },
@@ -1962,7 +1962,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131691, {	-- Keyton's Mail Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2197,7 +2197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131703, {	-- Foreboding Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2369,7 +2369,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131702, {	-- Nuke Resistant Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2710,7 +2710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131698, {	-- Bel'varil's Chain Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2854,7 +2854,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131694, {	-- Slime Resistant Bracer
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2977,7 +2977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131688, {	-- Winning Mail Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3203,7 +3203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER CATA
 						i(3053, {	-- Humbert's Chestpiece
-							["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Mountaineer (Zone Drop).
+							["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Mountaineer (Zone Drop).
 						}),
 						-- #endif
 					},
@@ -3507,7 +3507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_6_0_2, ADDED_7_1_0 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
 						}),
 					},
 				}),
@@ -3629,7 +3629,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2415,	-- Warden Belamoore
 				}),
 				i(8491, {	-- Black Tabby Cat (PET!)
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 				}),
 				i(1280, {	-- Cloaked Hood
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3708,7 +3708,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				i(3053, {	-- Humbert's Chestpiece
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
 					["crs"] = {
 						2344,	-- Dun Garok Mountaineer
 						14275,	-- Tamra Stormpike

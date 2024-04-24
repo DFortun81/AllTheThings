@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131678, {	-- Inconspicuous Footguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -464,7 +464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131680, {	-- Belt of Absolute Allegiance
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62896, {	-- Belt of Beginnings
 							["timeline"] = { ADDED_4_0_3 },
@@ -531,7 +531,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131640, {	-- Rear Guard Bands
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62851, {	-- Rear Guard Britches
 							["timeline"] = { ADDED_4_0_3 },
@@ -576,7 +576,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(131679, {	-- Better, Stronger, Faster Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62887, {	-- Bracers of the Million Gold Man
 							["timeline"] = { ADDED_4_0_3 },
@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131660, {	-- Cord of the Sepulcher
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62847, {	-- Sea Dog Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(131629, {	-- Maggot-Ridden Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62835, {	-- Maggot-Ridden Leggings
 							["timeline"] = { ADDED_4_0_3 },
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131652, {	-- Trousers of Desperate Measures
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62856, {	-- Underestimated Crossbow
 							["timeline"] = { ADDED_4_0_3 },
@@ -1105,7 +1105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131636, {	-- Steel Thunder Chestbrace
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1231,7 +1231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131661, {	-- Treads of Red Waters
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131634, {	-- Grasps of the Survivor
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62831, {	-- Treads of the Survivor
 							["timeline"] = { ADDED_4_0_3 },
@@ -1452,7 +1452,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(8491, {	-- Black Tabby Cat (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 						}),
 						-- #endif

@@ -52,13 +52,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 254007 },	-- Executioner's Altar
 					["sourceQuest"] = 44083,	-- The Grimoire of the First Necrolyte
 					["coord"] = { 38.7, 73.9, DEADWIND_PASS },
-					["timeline"] = { "added 7.0.3.21996" },
+					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { WARLOCK },
 				}),
 				q(44487, {	-- Waterlogged Tome
 					["provider"] = { "o", 258978 },	-- Waterlogged Tome
 					["coord"] = { 39.1, 73.7, 45 },
-					["timeline"] = { "added 7.0.3.21796" },
+					["timeline"] = { ADDED_7_0_3 },
 					["lvl"] = 110,
 					["groups"] = {
 						crit(33145, {	-- Waterlogged Tome

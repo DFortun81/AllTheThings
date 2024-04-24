@@ -414,7 +414,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(87110, {	-- Tarr the Terrible <Grand Master Pet Tamer>
 						["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
 					}),

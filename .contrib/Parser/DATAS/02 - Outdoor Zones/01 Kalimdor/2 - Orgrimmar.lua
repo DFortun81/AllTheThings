@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 132254,	-- Nathanos Blightcaller
 					["sourceQuest"] = 49977,	-- Summons to Orgrimmar
 					["coord"] = { 49.8, 75.6, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
+					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26557, {	-- A Staggering Effort
@@ -566,7 +566,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						49538,	-- Warchief's Command: Jade Forest!
 					},
 					["coord"] = { 48.6, 70.8, ORGRIMMAR },
-					["timeline"] = { "added 5.0.4.15913" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27277, {	-- An Audience with Ureda
@@ -589,7 +589,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(40976, {	-- Audience with the Warchief
 					["qg"] = 97296,	-- Archmage Khadgar
 					["coord"] = { 52.6, 88.2, ORGRIMMAR },
-					["timeline"] = { "added 7.0.1.20756" },
+					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { DEMONHUNTER },
 					["races"] = { BLOODELF },
 				}),
@@ -809,7 +809,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 16926,	-- Vivica Starshot
 					["sourceQuest"] = 32471,	-- Light Camera Action (H)
 					["coord"] = { 34.5, 70.8, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -861,7 +861,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28805,	-- The Eye of the Storm
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5.25600" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -879,13 +879,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
 						i(119325, {	-- Bow of Ire
-							["timeline"] = { "added 6.0.2.18764" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(119326, {	-- Ring of Pardons
-							["timeline"] = { "added 6.0.2.18764" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(119327, {	-- Durak's Downfall
-							["timeline"] = { "added 6.0.2.18764" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),
@@ -945,7 +945,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 62092,	-- Garrosh Hellscream
 					["sourceQuest"] = 31013,	-- The Horde Way
 					["coord"] = { 70.6, 30.8, ORGRIMMAR },
-					["timeline"] = { "added 5.0.1.15589", REMOVED_7_0_3 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 					["races"] = { PANDAREN_HORDE },
 				}),
 				-- #if ANYCLASSIC
@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 8.0.1.27144" },
+					["timeline"] = { ADDED_8_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(163528),	-- Deathguard's Gladius
@@ -1245,7 +1245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(32471, {	-- Light Camera Action (H)
 					["qg"] = 16926,	-- Vivica Starshot
 					["coord"] = { 34.5, 70.8, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 					["cost"] = { { "i", 4406, 1 } },	-- Standard Scope
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,
@@ -1304,7 +1304,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
 						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
 					},
-					["timeline"] = { "added 8.0.1.27144" },
+					["timeline"] = { ADDED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26803, {	-- Missing Reports
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(49977, {	-- Summons to Orgrimmar
-					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
+					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51796, {	-- The Battle for Lordaeron
@@ -1597,7 +1597,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.5, 70.7, ORGRIMMAR },
 						{ 49.0, 91.6, ORGRIMMAR },
 					},
-					["timeline"] = { "added 8.0.1.27144" },
+					["timeline"] = { ADDED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if ANYCLASSIC
@@ -1683,7 +1683,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39605,	-- Garrosh Hellscream
 					["sourceQuest"] = 31012,	-- Joining the Horde
 					["coord"] = { 48.2, 70.6, ORGRIMMAR },
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = { PANDAREN_NEUTRAL },
 				}),
 				q(25159, {	-- The Latest Fashion!
@@ -1699,7 +1699,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 146630,	-- Restless Spirit
 					["sourceQuest"] = 53777,	-- Where He Died
 					["coord"] = { 48.4, 71.4, ORGRIMMAR },
-					["timeline"] = { "added 8.1.0.29139" },
+					["timeline"] = { ADDED_8_1_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(120, 120, 50),
 				}),
@@ -1776,7 +1776,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 135205,	-- Nathanos Blightcaller
 					["sourceQuest"] = 51443,	-- Mission Statement
 					["coord"] = { 54.4, 78.4, ORGRIMMAR },
-					["timeline"] = { "added 8.0.1.27144" },
+					["timeline"] = { ADDED_8_0_1 },
 					["maps"] = {
 						DAZARALOR,
 						1012,	-- Stormwind City (Scenario)
@@ -1922,7 +1922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 162190,	-- Valeera Sanguinar
 					["sourceQuest"] = 58672,	-- A Gathering of Champions
 					["coord"] = { 39.4, 79.6, ORGRIMMAR },
-					["timeline"] = { "added 8.3.0.33169" },
+					["timeline"] = { ADDED_8_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
@@ -2120,11 +2120,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(RARES, {
 				n(130911, {	-- Charles Gastly
 					["coord"] = { 50.8, 55.1, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5.25692" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(134831, {	-- Doomsayer's Robes (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2173,11 +2173,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(149806, {	-- A. Shady
 					["coord"] = { 76.7, 35.6, ORGRIMMAR },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(166805, {	-- Blood-Soaked Invitation (QI)
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
 				}),
@@ -2407,16 +2407,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_3_3 },
 						}),
 						i(104324, {	-- Foot Ball (TOY!)
-							["timeline"] = { "added 5.4.0.17227" },
+							["timeline"] = { ADDED_5_4_0 },
 						}),
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
 						i(137663, {	-- Soft Foam Sword (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(104323, {	-- The Swineskin (TOY!)
-							["timeline"] = { "added 5.4.0.17227" },
+							["timeline"] = { ADDED_5_4_0 },
 						}),
 						i(54438, {	-- Tiny Blue Ragdoll (TOY!)
 							["timeline"] = { ADDED_3_3_3 },
@@ -2571,7 +2571,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 					["coord"] = { 41.8, 73.0, ORGRIMMAR },
-					["timeline"] = { "added 5.4.0.17161" },
+					["timeline"] = { ADDED_5_4_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
 						vicioussaddle(i(70910)),	-- Vicious War Wolf (MOUNT!)
@@ -2608,7 +2608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(83080, {	-- Huojin Tabard
-							["timeline"] = { "added 5.0.1.15544" },
+							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(92070, {	-- Houjin Satchel
 							["timeline"] = { ADDED_5_1_0 },
@@ -2676,7 +2676,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(133261, {	-- Feng Su <Cooking Trainer>
 					["coord"] = { 41.0, 79.4, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5.25692" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -3060,7 +3060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyevent(EVENTS.WOW_ANNIVERSARY, n(110035, {	-- Historian Ju'pa
 					["coord"] = { 36.6, 74.6, ORGRIMMAR },
-					["timeline"] = { "added 7.1.0.22810" },
+					["timeline"] = { ADDED_7_1_0 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"select", "npcID", 158061},					-- Select Historian Ma'di
@@ -3851,7 +3851,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(133239, {	-- Leyweaver Aurielle
 					["coord"] = { 38.2, 86.8, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5.25692" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
@@ -4046,7 +4046,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(140565, {	-- Technique: Songs of the Horde
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -5040,7 +5040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				n(133127, {	-- Thaluriel <Engineering Supplies>
 					["coord"] = { 36.8, 84.6, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5.25692" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18647, {	-- Schematic: Red Firework (RECIPE!)
@@ -5173,7 +5173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				n(66022, bubbleDownSelf({ ["timeline"] = { "added 5.0.1.15799" }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
+				n(66022, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 					["coord"] = { 69.8, 41.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -5412,10 +5412,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	m(KALIMDOR, {
 		m(ORGRIMMAR, {
 			q(54948, {	-- something in orgrimmar on lvl 60 necrolord goblin warlock
-				["timeline"] = { "added 8.2.0.30918" },
+				["timeline"] = { ADDED_8_2_0 },
 			}),
 			q(51766, {	-- cinematic during Horde BFA intro scenario quest
-				["timeline"] = { "added 8.0.1.27291" },
+				["timeline"] = { ADDED_8_0_1 },
 			}),
 		}),
 	}),

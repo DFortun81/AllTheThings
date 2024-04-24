@@ -984,7 +984,7 @@ molemachine = function(questID, name, t)				-- Create a MOLE MACHINE Quest Objec
 			t.icon = "Interface\\Icons\\ability_racial_molemachine";
 		end
 		if not t.timeline then
-			t.timeline = { "added 8.0.1.27326" };
+			t.timeline = { ADDED_8_0_1 };
 		end
 		-- TODO: Do we really need the location as a description if its in each zone?
 		-- CRIEVE NOTE: Perhaps make an areaID-based class that can do header things?

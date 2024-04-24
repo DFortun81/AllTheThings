@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131492, {	-- Waistguard of the Valley of Kings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131491, {	-- Bonesnapper Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58996, {	-- Mountaineer's Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -748,7 +748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131628, {	-- Trogg Stompers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -783,13 +783,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156932, {	-- Surveyor's Staff
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(58992, {	-- Uncovered Breastplate
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131300, {	-- Uncovered Chestguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -906,7 +906,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(131490, {	-- Greaves of Uncanny Courage
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58985, {	-- Leggings of Uncanny Courage
 							["timeline"] = { ADDED_4_0_3 },
@@ -1042,7 +1042,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131204, {	-- Foreman Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58983, {	-- Ironband Legguards
 							["timeline"] = { ADDED_4_0_3 },
@@ -1245,7 +1245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156933, {	-- Mori's Pocketknife
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1391,7 +1391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131633, {	-- Vyrin's Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

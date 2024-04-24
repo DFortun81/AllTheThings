@@ -457,7 +457,7 @@ root(ROOTS.PVP, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, DEATHKNIGHT },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, DEATHKNIGHT },
@@ -494,7 +494,7 @@ root(ROOTS.PVP, {
 					i(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, DRUID },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, DRUID },
@@ -577,7 +577,7 @@ root(ROOTS.PVP, {
 					i(146419, {	-- Ensemble: Bloodthirsty Gladiator's Chain Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, HUNTER },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, HUNTER },
@@ -620,7 +620,7 @@ root(ROOTS.PVP, {
 					i(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, MAGE },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, MAGE },
@@ -704,7 +704,7 @@ root(ROOTS.PVP, {
 					i(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, PALADIN },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, PALADIN },
@@ -767,7 +767,7 @@ root(ROOTS.PVP, {
 					i(146433, {	-- Ensemble: Bloodthirsty Gladiator's Satin Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, PRIEST },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, PRIEST },
@@ -824,7 +824,7 @@ root(ROOTS.PVP, {
 					i(146427, {	-- Ensemble: Bloodthirsty Gladiator's Leather Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, ROGUE },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, ROGUE },
@@ -867,7 +867,7 @@ root(ROOTS.PVP, {
 					i(146431, {	-- Ensemble: Bloodthirsty Gladiator's Ringmail Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, SHAMAN },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, SHAMAN },
@@ -950,7 +950,7 @@ root(ROOTS.PVP, {
 					i(146425, {	-- Ensemble: Bloodthirsty Gladiator's Felweave Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, WARLOCK },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, WARLOCK },
@@ -987,7 +987,7 @@ root(ROOTS.PVP, {
 					i(146429, {	-- Ensemble: Bloodthirsty Gladiator's Plate Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, WARRIOR },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, WARRIOR },
@@ -1239,7 +1239,7 @@ root(ROOTS.PVP, {
 				n(WEAPONS, {
 					i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },
 						},
@@ -1341,7 +1341,7 @@ root(ROOTS.PVP, {
 				cl(DEATHKNIGHT, {
 					i(146523, {	-- Ensemble: Vicious Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, DEATHKNIGHT },
 							{"select", "itemID", 60523 },	-- Vicious Gladiator's Armplates of Proficiency
@@ -1368,7 +1368,7 @@ root(ROOTS.PVP, {
 				cl(DRUID, {
 					i(146521, {	-- Ensemble: Vicious Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, DRUID },
 							{"select", "itemID", 60582 },	-- Vicious Gladiator's Bindings of Meditation
@@ -1428,7 +1428,7 @@ root(ROOTS.PVP, {
 				cl(HUNTER, {
 					i(146519, {	-- Ensemble: Vicious Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, HUNTER },
 							{"select", "itemID", 60565 },	-- Vicious Gladiator's Wristguards of Accuracy
@@ -1458,7 +1458,7 @@ root(ROOTS.PVP, {
 				cl(MAGE, {
 					i(146537, {	-- Ensemble: Vicious Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, MAGE },
 							{"select", "itemID", 60628 },	-- Vicious Gladiator's Cuffs of Accuracy
@@ -1485,7 +1485,7 @@ root(ROOTS.PVP, {
 				cl(PALADIN, {
 					i(146535, {	-- Ensemble: Vicious Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, PALADIN },
 							{"select", "itemID", 60541 },	-- Vicious Gladiator's Bracers of Meditation
@@ -1530,7 +1530,7 @@ root(ROOTS.PVP, {
 				cl(PRIEST, {
 					i(146533, {	-- Ensemble: Vicious Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, PRIEST },
 							{"select", "itemID", 60635 },	-- Vicious Gladiator's Cuffs of Meditation
@@ -1572,7 +1572,7 @@ root(ROOTS.PVP, {
 				cl(ROGUE, {
 					i(146527, {	-- Ensemble: Vicious Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, ROGUE },
 							{"select", "itemID", 60591 },	-- Vicious Gladiator's Armwraps of Accuracy
@@ -1602,7 +1602,7 @@ root(ROOTS.PVP, {
 				cl(SHAMAN, {
 					i(146531, {	-- Ensemble: Vicious Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, SHAMAN },
 							{"select", "itemID", 60535 },	-- Vicious Gladiator's Armbands of Meditation
@@ -1662,7 +1662,7 @@ root(ROOTS.PVP, {
 				cl(WARLOCK, {
 					i(146525, {	-- Ensemble: Vicious Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, WARLOCK },
 							{"select", "itemID", 60634 },	-- Vicious Gladiator's Cuffs of Prowess
@@ -1689,7 +1689,7 @@ root(ROOTS.PVP, {
 				cl(WARRIOR, {
 					i(146529, {	-- Ensemble: Vicious Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, WARRIOR },
 							{"select", "itemID", 60512 },	-- Vicious Gladiator's Armplates of Alacrity
@@ -2379,7 +2379,7 @@ root(ROOTS.PVP, {
 				n(WEAPONS, {
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },
 						},
@@ -2482,7 +2482,7 @@ root(ROOTS.PVP, {
 					i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, DEATHKNIGHT },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, DEATHKNIGHT },
@@ -2519,7 +2519,7 @@ root(ROOTS.PVP, {
 					i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, DRUID },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, DRUID },
@@ -2554,64 +2554,64 @@ root(ROOTS.PVP, {
 						["groups"] = {
 							-- #if AFTER 7.2.0.23436
 							i(88171, {	-- Gladiator's Ironskin Gloves - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88172, {	-- Gladiator's Ironskin Helm - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88173, {	-- Gladiator's Ironskin Legguards - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88174, {	-- Gladiator's Ironskin Tunic - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88175, {	-- Gladiator's Ironskin Spaulders - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88176, {	-- Gladiator's Copperskin Gloves - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88177, {	-- Gladiator's Copperskin Helm - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88178, {	-- Gladiator's Copperskin Legguards - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88179, {	-- Gladiator's Copperskin Tunic - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(88180, {	-- Gladiator's Copperskin Spaulders - confirmed 14/10/21
-								["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 							}),
 							i(93508, {	-- Crafted Gladiator's Ironskin Gloves - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93510, {	-- Crafted Gladiator's Ironskin Helm - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93512, {	-- Crafted Gladiator's Ironskin Legguards - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93514, {	-- Crafted Gladiator's Ironskin Spaulders - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93516, {	-- Crafted Gladiator's Ironskin Tunic - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93518, {	-- Crafted Gladiator's Copperskin Gloves - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93520, {	-- Crafted Gladiator's Copperskin Helm - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93522, {	-- Crafted Gladiator's Copperskin Legguards - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93524, {	-- Crafted Gladiator's Copperskin Spaulders - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							i(93526, {	-- Crafted Gladiator's Copperskin Tunic - confirmed 14/10/21
-								["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+								["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 							}),
 							-- #endif
 						},
@@ -2663,64 +2663,64 @@ root(ROOTS.PVP, {
 					}),
 					-- #if BEFORE 7.2.0.23436
 					i(88171, {	-- Gladiator's Ironskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88172, {	-- Gladiator's Ironskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88173, {	-- Gladiator's Ironskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88174, {	-- Gladiator's Ironskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88175, {	-- Gladiator's Ironskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88176, {	-- Gladiator's Copperskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88177, {	-- Gladiator's Copperskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88178, {	-- Gladiator's Copperskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88179, {	-- Gladiator's Copperskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(88180, {	-- Gladiator's Copperskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
 					}),
 					i(93508, {	-- Crafted Gladiator's Ironskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93510, {	-- Crafted Gladiator's Ironskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93512, {	-- Crafted Gladiator's Ironskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93514, {	-- Crafted Gladiator's Ironskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93516, {	-- Crafted Gladiator's Ironskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93518, {	-- Crafted Gladiator's Copperskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93520, {	-- Crafted Gladiator's Copperskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93522, {	-- Crafted Gladiator's Copperskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93524, {	-- Crafted Gladiator's Copperskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					i(93526, {	-- Crafted Gladiator's Copperskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, "added 7.2.0.23436" },
+						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
 					}),
 					-- #endif
 				}),
@@ -2728,7 +2728,7 @@ root(ROOTS.PVP, {
 					i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, HUNTER },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, HUNTER },
@@ -2771,7 +2771,7 @@ root(ROOTS.PVP, {
 					i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, MAGE },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, MAGE },
@@ -2808,7 +2808,7 @@ root(ROOTS.PVP, {
 					i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, PALADIN },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, PALADIN },
@@ -2871,7 +2871,7 @@ root(ROOTS.PVP, {
 					i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, PRIEST },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, PRIEST },
@@ -2928,7 +2928,7 @@ root(ROOTS.PVP, {
 					i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, ROGUE },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, ROGUE },
@@ -2982,7 +2982,7 @@ root(ROOTS.PVP, {
 					i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, SHAMAN },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, SHAMAN },
@@ -3065,7 +3065,7 @@ root(ROOTS.PVP, {
 					i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, WARLOCK },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, WARLOCK },
@@ -3102,7 +3102,7 @@ root(ROOTS.PVP, {
 					i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, WARRIOR },
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_HONOR, WARRIOR },
@@ -3510,7 +3510,7 @@ root(ROOTS.PVP, {
 			})),
 		})),
 		applyclassicphase(CATA_PHASE_FOUR, n(SEASON_CATACLYSMIC, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.4", REMOVED_5_0_4 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 }, }, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3742,7 +3742,7 @@ root(ROOTS.PVP, {
 				n(WEAPONS, {
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },
 						},
@@ -3844,7 +3844,7 @@ root(ROOTS.PVP, {
 				cl(DEATHKNIGHT, {
 					i(146443, {	-- Ensemble: Cataclysmic Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, DEATHKNIGHT },
 							{"select", "itemID", 73551 },	-- Cataclysmic Gladiator's Armplates of Proficiency
@@ -3871,7 +3871,7 @@ root(ROOTS.PVP, {
 				cl(DRUID, {
 					i(146441, {	-- Ensemble: Cataclysmic Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, DRUID },
 							{"select", "itemID", 73608 },	-- Cataclysmic Gladiator's Bindings of Meditation
@@ -3931,7 +3931,7 @@ root(ROOTS.PVP, {
 				cl(HUNTER, {
 					i(146439, {	-- Ensemble: Cataclysmic Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, HUNTER },
 							{"select", "itemID", 73585 },	-- Cataclysmic Gladiator's Wristguards of Accuracy
@@ -3961,7 +3961,7 @@ root(ROOTS.PVP, {
 				cl(MAGE, {
 					i(146457, {	-- Ensemble: Cataclysmic Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, MAGE },
 							{"select", "itemID", 73632 },	-- Cataclysmic Gladiator's Cuffs of Prowess
@@ -3988,7 +3988,7 @@ root(ROOTS.PVP, {
 				cl(PALADIN, {
 					i(146455, {	-- Ensemble: Cataclysmic Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, PALADIN },
 							{"select", "itemID", 73561 },	-- Cataclysmic Gladiator's Bracers of Meditation
@@ -4036,7 +4036,7 @@ root(ROOTS.PVP, {
 				cl(PRIEST, {
 					i(146453, {	-- Ensemble: Cataclysmic Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, PRIEST },
 							{"select", "itemID", 73631 },	-- Cataclysmic Gladiator's Cuffs of Meditation
@@ -4078,7 +4078,7 @@ root(ROOTS.PVP, {
 				cl(ROGUE, {
 					i(146447, {	-- Ensemble: Cataclysmic Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, ROGUE },
 							{"select", "itemID", 73528 },	-- Cataclysmic Gladiator's Armwraps of Accuracy
@@ -4108,7 +4108,7 @@ root(ROOTS.PVP, {
 				cl(SHAMAN, {
 					i(146451, {	-- Ensemble: Cataclysmic Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, SHAMAN },
 							{"select", "itemID", 73518 },	-- Cataclysmic Gladiator's Armbands of Meditation
@@ -4168,7 +4168,7 @@ root(ROOTS.PVP, {
 				cl(WARLOCK, {
 					i(146445, {	-- Ensemble: Cataclysmic Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, WARLOCK },
 							{"select", "itemID", 73633 },	-- Cataclysmic Gladiator's Cuffs of Accuracy
@@ -4195,7 +4195,7 @@ root(ROOTS.PVP, {
 				cl(WARRIOR, {
 					i(146449, {	-- Ensemble: Cataclysmic Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["timeline"] = { "added 7.2.0.23436" },
+						["timeline"] = { ADDED_7_2_0 },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, WARRIOR },
 							{"select", "itemID", 73550 },	-- Cataclysmic Gladiator's Armplates of Alacrity

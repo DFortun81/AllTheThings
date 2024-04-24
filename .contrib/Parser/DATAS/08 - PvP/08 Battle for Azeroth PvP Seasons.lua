@@ -6,7 +6,7 @@
 root(ROOTS.PVP, {
 	pvp(expansion(EXPANSION.BFA, {
 		n(SEASON_DREAD, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.0.1", REMOVED_8_1_0 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
 				ach(13199),	-- Combatant: Battle for Azeroth Season 1
 				ach(12962, {	-- Duelist: Battle for Azeroth Season 1
@@ -22,7 +22,7 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				ach(13465, {		-- Elite: Battle for Azeroth Season 1
-					["timeline"] = { "added 8.0.5", REMOVED_8_1_0 },
+					["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 },
 				}),
 				ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
 					i(156879),	-- Dread Gladiator's Proto-Drake (MOUNT!)
@@ -400,7 +400,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(161674)),	-- Dread Gladiator's Medallion
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450, ["timeline"] = { "added 8.0.0", REMOVED_8_1_0 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450, ["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				n(BACK, {
 					i(163732, {	-- Dread Gladiator's Cape (A)
 					}),
@@ -503,7 +503,7 @@ root(ROOTS.PVP, {
 						{ 56.4, 25.8, BORALUS },
 						{ 51.6, 58.2, ZANDALAR },
 					},
-					["timeline"] = { "added 8.0", REMOVED_8_2_0 },
+					["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 					["g"] = {
 						i(159570),			-- Battleborn Sigil
 					},
@@ -525,21 +525,21 @@ root(ROOTS.PVP, {
 				i(163123, {	-- Vicious War Riverbeast (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
-						"added 8.0.0",
+						ADDED_8_0_1,
 						REMOVED_8_1_0
 					},
 				}),
 				i(163124, {	-- Vicious War Clefthoof (MOUNT!)
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
-						"added 8.0.0",
+						ADDED_8_0_1,
 						REMOVED_8_1_0
 					},
 				}),
 			}),
 		}),
 		n(SEASON_SINISTER, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.1.0", REMOVED_8_2_0 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 				ach(13203),	-- Challenger: Battle for Azeroth Season 2
 				ach(13204),	-- Combatant: Battle for Azeroth Season 2
 				ach(13209, {	-- Duelist: Battle for Azeroth Season 2
@@ -957,7 +957,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(165807)),	-- Sinister Gladiator's Safeguard
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450, ["timeline"] = { "added 8.1.0", REMOVED_8_2_0 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450, ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				n(BACK, {
 					i(165051, {	-- Sinister Gladiator's Cape (A)
 					}),
@@ -1060,7 +1060,7 @@ root(ROOTS.PVP, {
 						{ 56.4, 25.8, BORALUS },
 						{ 51.6, 58.2, ZANDALAR },
 					},
-					["timeline"] = { "added 8.0", REMOVED_8_2_0 },
+					["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 					["g"] = {
 						i(164951),			-- Battleborn Sigil
 					},
@@ -1082,21 +1082,21 @@ root(ROOTS.PVP, {
 				i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
-						"added 8.1.0",
+						ADDED_8_1_0,
 						REMOVED_8_2_0
 					},
 				}),
 				i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
-						"added 8.1.0",
+						ADDED_8_1_0,
 						REMOVED_8_2_0
 					},
 				}),
 			}),
 		}),
 		n(SEASON_NOTORIOUS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.2.0", REMOVED_8_3_0 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 				ach(13634),	-- Challenger: Battle for Azeroth Season 3
 				ach(13639),	-- Combatant: Battle for Azeroth Season 3
 				ach(13642, {	-- Duelist: Battle for Azeroth Season 3
@@ -1554,7 +1554,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(167384)),	-- Notorious Gladiator's Safeguard
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 5842, ["timeline"] = { "added 8.2.0", REMOVED_8_3_0 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 5842, ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				n(BACK, {
 					-- Was given randomly after winning a pvp match while above 2400 rating
 					i(167373, {	-- Notorious Gladiator's Cape (A)
@@ -1658,7 +1658,7 @@ root(ROOTS.PVP, {
 						{ 56.4, 25.8, BORALUS },
 						{ 51.6, 58.2, ZANDALAR },
 					},
-					["timeline"] = { "added 8.2", REMOVED_8_3_0 },
+					["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
 					["g"] = {
 						i(171095),			-- Warlord's Trophy
 					},
@@ -1680,21 +1680,21 @@ root(ROOTS.PVP, {
 				i(163122, {	-- Vicious War Basilisk (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
-						"added 8.2.0",
+						ADDED_8_2_0,
 						REMOVED_8_3_0
 					},
 				}),
 				i(163121, {	-- Vicious War Basilisk (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
-						"added 8.2.0",
+						ADDED_8_2_0,
 						REMOVED_8_3_0
 					},
 				}),
 			}),
 		}),
 		n(SEASON_CORRUPTED, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {
 				ach(13959),	-- Challenger: Battle for Azeroth Season 4
 				ach(13962),	-- Combatant: Battle for Azeroth Season 4
 				ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
@@ -2106,7 +2106,7 @@ root(ROOTS.PVP, {
 					i(174472),	-- Corrupted Gladiator's Spite
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376, ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376, ["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				filter(CLOTH, {
 					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
@@ -2212,14 +2212,14 @@ root(ROOTS.PVP, {
 				i(173714, {	-- Vicious White Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
-						"added 8.3.0",
+						ADDED_8_3_0,
 						REMOVED_9_0_1,
 					},
 				}),
 				i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
-						"added 8.3.0",
+						ADDED_8_3_0,
 						REMOVED_9_0_1,
 					},
 				}),

@@ -351,11 +351,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 122134,	-- Makkaw <Moonkin Festival>
 					["coord"] = { 45.4, 62.0, MOONGLADE },
 					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
-					["timeline"] = { "added 7.2.5.23959" },
+					["timeline"] = { ADDED_7_2_5 },
 					["isYearly"] = true,
 					["groups"] = {
 						title(358, {	-- %s, Adventuring Instructor
-							["timeline"] = { "added 7.2.5.23959" },
+							["timeline"] = { ADDED_7_2_5 },
 							["collectible"] = false,
 						}),
 					},
@@ -786,13 +786,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(136849, {	-- Nature's Beacon (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(14483, {	-- Pattern: Felcloth Pants
 							["isLimited"] = true,
 						}),
 						i(141041, {	-- Technique: Glyph of the Forest Path (RECIPE!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(136795, {	-- Tome of the Wilds: Charm Woodland Creature (CI!)
 							["timeline"] = { ADDED_7_0_3_LAUNCH },

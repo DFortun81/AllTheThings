@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(ZONE_DROPS, {
 				i(142402, {	-- Plans: Light Earthforged Blade (RECIPE!)
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(9243),	-- Shriveled Troll Heart
 				i(9523),	-- Troll Temper

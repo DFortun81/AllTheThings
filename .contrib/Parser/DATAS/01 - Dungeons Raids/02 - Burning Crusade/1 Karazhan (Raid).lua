@@ -800,7 +800,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							i(138017, {	-- Clothes Chest Pattern: Karazhan Opera House
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(122231, {	-- Music Roll: Karazhan Opera House
 								["timeline"] = { ADDED_6_1_0 },
@@ -824,7 +824,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							i(97548, {	-- Lil' Bad Wolf (PET!)
-								["timeline"] = { "added 5.3.0.16758" },
+								["timeline"] = { ADDED_5_3_0 },
 							}),
 							i(28584),	-- Big Bad Wolf's Paw
 							i(28581),	-- Wolfslayer Sniper Rifle
@@ -900,7 +900,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 15691,
 				["groups"] = {
 					i(97549, {	-- Menagerie Custodian (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(29757, {	-- Gloves of the Fallen Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
@@ -927,7 +927,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(97551, {	-- Fiendish Imp (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(207111, {	-- Grimoire of the Hellfire Fel Imp (CI!)
 						["timeline"] = { ADDED_10_1_5 },
@@ -1023,7 +1023,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(97550, {	-- Netherspace Abyssal (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(29760, {	-- Helm of the Fallen Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },

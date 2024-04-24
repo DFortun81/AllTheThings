@@ -11,7 +11,7 @@ MARCH_OF_THE_TADPOLES_HEADER = createHeader({
 		ru = "Марш головастиков",
 	},
 });
-root(ROOTS.Holidays, applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TADPOLES_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TADPOLES_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
 	n(QUESTS, sharedData({
 		["isWeekly"] = true,
 		["maps"] = { BOREAN_TUNDRA },

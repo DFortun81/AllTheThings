@@ -235,7 +235,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.2, 44.0, SPIRES_OF_ARAK },
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(87123, {	-- Vesharr <Grand Master Pet Tamer>
 						["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 					}),

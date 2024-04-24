@@ -208,7 +208,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					{ "n", 75043 },		-- Karnoth
 				},
 				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18505" },
+				["timeline"] = { ADDED_6_0_2 },
 				["requireSkill"] = LEATHERWORKING,
 				["maps"] = {
 					FROSTFIRE_RIDGE,
@@ -223,7 +223,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			q(36505, {	-- A Warrior's Shroud
 				["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
 				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18505" },
+				["timeline"] = { ADDED_6_0_2 },
 				["requireSkill"] = LEATHERWORKING,
 				["maps"] = {
 					FROSTFIRE_RIDGE,
@@ -1339,143 +1339,143 @@ end
 profession(LEATHERWORKING, {
 	applytraining({
 		["name"] = "Training",
-		["timeline"] = { "added 7.0.1.20740" },
+		["timeline"] = { ADDED_7_0_3 },
 		["categoryID"] = 468,
 		["groups"] = {
 			{
 				["name"] = "Drum of Primal Might",
-				["timeline"] = { "added 8.1.5.29701" },
+				["timeline"] = { ADDED_8_1_5 },
 				["recipeID"] = 293135,
 			},
 			{
 				["name"] = "Fel Leather Cuff",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196457,
 			},
 			{
 				["name"] = "Fel Leather Strap",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196395,
 			},
 			{
 				["name"] = "Felhide Bracers",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196456,
 			},
 			{
 				["name"] = "Shaved Felhide",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196387,
 			},
 			{
 				["name"] = "Tanned Fel Leather",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196388,
 			},
 			{
 				["name"] = "Material Preparation",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 484,
 				["groups"] = {
 					{
 						["name"] = "Shaved Stonehide Pelt",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196375,
 					},
 					{
 						["name"] = "Stonehide Leather Strip",
-						["timeline"] = { "added 7.0.3.21134" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 208615,
 					},
 					{
 						["name"] = "Stonehide Leather Strip",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196385,
 					},
 				},
 			},
 			{
 				["name"] = "Tanning",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 485,
 				["groups"] = {
 					{
 						["name"] = "Tanned Stonehide Leather",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196379,
 					},
 					{
 						["name"] = "Tanned Stonehide Pelt",
-						["timeline"] = { "added 7.0.3.21134" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 208596,
 					},
 				},
 			},
 			{
 				["name"] = "Shaping",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 486,
 				["groups"] = {
 					{
 						["name"] = "Stonehide Boot Base",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196425,
 					},
 					{
 						["name"] = "Stonehide Boot Exterior",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196384,
 					},
 					{
 						["name"] = "Stonehide Caparison",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196469,
 					},
 					{
 						["name"] = "Stonehide Champron",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196467,
 					},
 					{
 						["name"] = "Stonehide Crinet",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196468,
 					},
 					{
 						["name"] = "Stonehide Leather Lining",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196382,
 					},
 					{
 						["name"] = "Stonehide Leather Vamp",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196383,
 					},
 				},
 			},
 			{
 				["name"] = "Stitching",
-				["timeline"] = { "added 7.0.1.20740" },
+				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 487,
 				["groups"] = {
 					{
 						["name"] = "Rough Warhide Mask",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196428,
 					},
 					{
 						["name"] = "Stonehide Leather Barding",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196397,
 					},
 					{
 						["name"] = "Stonehide Leather Bed",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196442,
 					},
 					{
 						["name"] = "Sturdy Stonehide Boots",
-						["timeline"] = { "added 7.0.1.20740" },
+						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196427,
 					},
 				},
@@ -1655,7 +1655,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scale Hood",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226135,
 				},
 				{
@@ -1682,7 +1682,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Spritescale Circlet",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226136,
 				},
 				{
@@ -1727,19 +1727,19 @@ profession(LEATHERWORKING, {
 				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Blood Tiger Shoulders",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24125,
 				}),
 				-- #if AFTER TBC
 				{
 					["name"] = "Blue Dragonscale Shoulders",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19089,
 				},
 				-- #endif
 				{
 					["name"] = "Chain Pauldrons",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226121,
 				},
 				{
@@ -1756,12 +1756,12 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Heavy Scale Pauldrons",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226129,
 				},
 				{
 					["name"] = "Heavy Scorpid Shoulders",
-					["timeline"] = { REMOVED_4_0_3, "added 5.0.4", REMOVED_6_0_2, ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					["recipeID"] = 19100,
 				},
 				{
@@ -1788,13 +1788,13 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Spritescale Epaulets",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226120,
 				},
 				-- #if AFTER TBC
 				{
 					["name"] = "Stormshroud Shoulders",
-					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
 					["recipeID"] = 19090,
 				},
 				-- #endif
@@ -1839,7 +1839,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Blood Tiger Breastplate",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24124,
 				}),
 				-- #if AFTER TBC
@@ -1851,7 +1851,7 @@ profession(LEATHERWORKING, {
 				-- #endif
 				{
 					["name"] = "Chain Hauberk",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226112,
 				},
 				-- #if AFTER TBC
@@ -1862,7 +1862,7 @@ profession(LEATHERWORKING, {
 				-- #endif
 				{
 					["name"] = "Crackling Scale Breastplate",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226114,
 				},
 				{
@@ -1902,7 +1902,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Frostsaber Tunic",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19104,
 				},
 				{
@@ -1928,12 +1928,12 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scale Shirt",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226128,
 				},
 				{
 					["name"] = "Heavy Scorpid Vest",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["recipeID"] = 19051,
 				},
 				{
@@ -1948,19 +1948,19 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Ironfeather Breastplate",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19086,
 				},
 				-- #endif
 				{
 					["name"] = "Light Scale Jerkin",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226108,
 				},
 				-- #if AFTER TBC
 				{
 					["name"] = "Living Breastplate",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19095,
 				},
 				-- #endif
@@ -1988,7 +1988,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Primal Batskin Jerkin",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24121,
 				}),
 				{
@@ -2017,13 +2017,13 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Spritescale Jerkin",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226130,
 				},
 				-- #if AFTER TBC
 				{
 					["name"] = "Stormshroud Armor",
-					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
 					["recipeID"] = 19079,
 				},
 				-- #endif
@@ -2078,7 +2078,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Chain Bracers",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226116,
 				},
 				{
@@ -2103,7 +2103,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scale Wraps",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226124,
 				},
 				{
@@ -2121,7 +2121,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Light Scale Bracers",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226106,
 				},
 				{
@@ -2135,7 +2135,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Primal Batskin Bracers",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24123,
 				}),
 				{
@@ -2152,12 +2152,12 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Spritescale Wraps",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226133,
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Swift Flight Bracers",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22923,
 				}),
 				{
@@ -2184,7 +2184,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Chain Gauntlets",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226118,
 				},
 				-- #if AFTER TBC
@@ -2204,7 +2204,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Deviate Scale Gloves",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 7954,
 				},
 				-- #if AFTER TBC
@@ -2220,7 +2220,7 @@ profession(LEATHERWORKING, {
 				-- #endif
 				{
 					["name"] = "Element Grips",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226122,
 				},
 				{
@@ -2238,7 +2238,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Frostsaber Gloves",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19087,
 				},
 				{
@@ -2266,7 +2266,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scale Gauntlets",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226123,
 				},
 				{
@@ -2289,7 +2289,7 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Light Scale Gloves",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226105,
 				},
 				{
@@ -2307,7 +2307,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Primal Batskin Gloves",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24122,
 				}),
 				{
@@ -2332,13 +2332,13 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Spritescale Gloves",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226131,
 				},
 				-- #if AFTER TBC
 				{
 					["name"] = "Stormshroud Gloves",
-					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
 					["recipeID"] = 26279,
 				},
 				-- #endif
@@ -2388,7 +2388,7 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Chain Belt",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226119,
 				},
 				-- #if AFTER TBC
@@ -2403,7 +2403,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Deviate Scale Belt",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 7955,
 				},
 				{
@@ -2437,7 +2437,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scale Belt",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226132,
 				},
 				{
@@ -2454,7 +2454,7 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Light Scale Belt",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226107,
 				},
 				applyclassicphase(PHASE_THREE, {
@@ -2482,7 +2482,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Spritescale Cinch",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226127,
 				},
 				{
@@ -2517,7 +2517,7 @@ profession(LEATHERWORKING, {
 				-- #endif
 				{
 					["name"] = "Blue Chain Leggings",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226115,
 				},
 				-- #if AFTER TBC
@@ -2528,7 +2528,7 @@ profession(LEATHERWORKING, {
 				-- #endif
 				{
 					["name"] = "Chain Leggings",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226117,
 				},
 				-- #if AFTER TBC
@@ -2568,7 +2568,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Frostsaber Leggings",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19074,
 				},
 				{
@@ -2586,7 +2586,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scale Pants",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226126,
 				},
 				{
@@ -2600,13 +2600,13 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Light Scale Pants",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226111,
 				},
 				-- #if AFTER TBC
 				{
 					["name"] = "Living Leggings",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19078,
 				},
 				-- #endif
@@ -2624,7 +2624,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Spritescale Britches",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226125,
 				},
 				-- #if AFTER TBC
@@ -2644,7 +2644,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Volcanic Leggings",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19059,
 				},
 				{
@@ -2685,7 +2685,7 @@ profession(LEATHERWORKING, {
 				}),
 				{
 					["name"] = "Chain Boots",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226113,
 				},
 				-- #if AFTER TBC
@@ -2730,17 +2730,17 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scale Boots",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226134,
 				},
 				{
 					["name"] = "Light Scale Boots",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226109,
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Mongoose Boots",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22922,
 				}),
 				{
@@ -2749,12 +2749,12 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Shamanic Treads",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226110,
 				},
 				{
 					["name"] = "Spritescale Boots",
-					["timeline"] = { "added 7.0.3.21737" },
+					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226137,
 				},
 				{
@@ -2793,7 +2793,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Chromatic Cloak",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22926,
 				}),
 				-- #endif
@@ -2803,7 +2803,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Deviate Scale Cloak",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 7953,
 				},
 				{
@@ -2829,7 +2829,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Hide of the Wild",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22927,
 				}),
 				-- #endif
@@ -2849,7 +2849,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Shifting Cloak",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22928,
 				}),
 				-- #endif
@@ -2866,7 +2866,7 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22815,
 				}),
 			},
@@ -2907,22 +2907,22 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["name"] = "Cobra Scales",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163231,
 				},
 				{
 					["name"] = "Crystal Infused Leather",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163226,
 				},
 				{
 					["name"] = "Fel Hide",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163229,
 				},
 				{
 					["name"] = "Fel Scales",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163228,
 				},
 				{
@@ -2935,17 +2935,17 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nether Dragonscales",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163230,
 				},
 				{
 					["name"] = "Thick Clefthoof Leather",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163225,
 				},
 				{
 					["name"] = "Wind Scales",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163232,
 				},
 			},
@@ -3610,17 +3610,17 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Icy Dragonscale",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163222,
 				},
 				{
 					["name"] = "Jormungar Scale",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163224,
 				},
 				{
 					["name"] = "Nerubian Chitin",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163223,
 				},
 			},
@@ -4393,12 +4393,12 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["name"] = "Blackened Dragonscale",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163216,
 				},
 				{
 					["name"] = "Deepsea Scale",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163218,
 				},
 				{
@@ -5141,7 +5141,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Prismatic Scale",
-					["timeline"] = { "added 6.0.1.18297" },
+					["timeline"] = { ADDED_6_0_2 },
 					["recipeID"] = 163220,
 				},
 			},
@@ -8577,12 +8577,12 @@ profession(LEATHERWORKING, {
 				{
 					["recipeID"] = 359662,	-- Crafter's Mark IV
 					["name"] = "Crafter's Mark IV",
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 				{
 					["recipeID"] = 359669,	-- Crafter's Mark of the First Ones
 					["name"] = "Crafter's Mark of the First Ones",
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 				{
 					["name"] = "Novice Crafter's Mark",
@@ -8591,7 +8591,7 @@ profession(LEATHERWORKING, {
 				{
 					["recipeID"] = 359702,	-- Vestige of the Eternal
 					["name"] = "Vestige of the Eternal",
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 			},
 		},

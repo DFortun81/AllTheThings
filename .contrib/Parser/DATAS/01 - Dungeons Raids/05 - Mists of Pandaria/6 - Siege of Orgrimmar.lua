@@ -58,7 +58,7 @@ local OLD_DIFFICULTIES_BUBBLE_DOWN_FILTER = function(t)
 	return t.itemID or t.ignoreBonus or t.achievementID;
 end
 local OLD_DIFFICULTIES_BUBBLE_DOWN_CONTENTS = {
-	["timeline"] = { "added 5.4.0", REMOVED_6_0_2 },
+	["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 };
 local function oldD(id, groups)
 	return bubbleDownFiltered(OLD_DIFFICULTIES_BUBBLE_DOWN_CONTENTS, OLD_DIFFICULTIES_BUBBLE_DOWN_FILTER, n(id, {
@@ -2143,7 +2143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112747),	-- Laser-Slice Signet
 						i(112729),	-- Juggernaut's Focusing Crystal
 						i(140783, {	-- Predictive Combat Operations Databank
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					})),
 					cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -2544,7 +2544,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
 					i(140783, {	-- Predictive Combat Operations Databank
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -2951,7 +2951,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
 					i(140783, {	-- Predictive Combat Operations Databank
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -3361,7 +3361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
 					i(140783, {	-- Predictive Combat Operations Databank
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)

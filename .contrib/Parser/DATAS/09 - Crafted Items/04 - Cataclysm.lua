@@ -495,16 +495,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- #if AFTER 5.0.1
 		filter(STAVES, {
 			i(87565, {	-- Key to the Planes
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(87562, {	-- Rosethorn Staff
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(87566, {	-- Runed Staff
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(87561, {	-- Silver Inlaid Staff
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 		}),
 		-- #endif

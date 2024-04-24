@@ -1320,7 +1320,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3, "deleted 7.0.3.22248" },
 						}),
 						i(133998, {	-- Rainbow Generator (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1971,7 +1971,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156982, {	-- Shadow Hold Dagger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2321,12 +2321,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(107595, {	-- Grimrot
 					["description"] = "This is the daytime light grey bear model.",
 					["coord"] = { 38.2, 45.4, FELWOOD },
-					["timeline"] = { "added 7.0.3.22280" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(107596, {	-- Grimrot
 					["description"] = "This is the nightime black diseased bear model.",
 					["coord"] = { 38.2, 45.4, FELWOOD },
-					["timeline"] = { "added 7.0.3.22280" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(50925, {	-- Grovepaw
 					["coord"] = { 38.2, 72.8, FELWOOD },

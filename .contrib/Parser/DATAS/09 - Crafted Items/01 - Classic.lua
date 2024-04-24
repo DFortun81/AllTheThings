@@ -1598,7 +1598,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(43368, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
 			-- #endif
 			i(43357, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Fire Ward
-			i(43398, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3, "added 5.0.4"}}),	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
+			i(43398, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3, ADDED_5_0_4}}),	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
 			i(43386, {["timeline"]={ADDED_3_0_2}}),	-- Glyph of Water Shield / Glyph of the Arctic Wolf[CATA] / Glyph of the Spectral Wolf[MOP+]
 			i(48720, {["timeline"]={ADDED_3_2_0,REMOVED_6_0_2}}),	-- Glyph of Claw / Glyph of Ferocious Bite
 			i(42960, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Evasion
@@ -1617,7 +1617,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(41092, {["timeline"]={ADDED_3_0_2,REMOVED_6_0_2}}),	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
 			i(42962, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Expose Armor
 			i(42400, {["timeline"]={ADDED_3_1_0,REMOVED_6_0_2}}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
-			i(43417, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3,"added 5.0.4",REMOVED_6_0_2}}),	-- Glyph of Hamstring
+			i(43417, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3,ADDED_5_0_4,REMOVED_6_0_2}}),	-- Glyph of Hamstring
 			i(41532, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
 			i(42458, {["timeline"]={ADDED_3_0_2,REMOVED_6_0_2}}),	-- Glyph of Fear
 			i(43360, {["timeline"]={ADDED_3_0_2,REMOVED_6_0_2}}),	-- Glyph of Frost Ward / Glyph of the Monkey[CATA+]
@@ -1688,7 +1688,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(41541, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Water Mastery / Glyph of Water Shield[CATA+]
 			i(42468, {["timeline"]={ADDED_3_0_2,REMOVED_5_0_4}}),	-- Glyph of Shadowburn
 			i(45804, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
-			i(42750, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3,"added 5.0.4",REMOVED_6_0_2}}),	-- Glyph of Mana Gem
+			i(42750, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3,ADDED_5_0_4,REMOVED_6_0_2}}),	-- Glyph of Mana Gem
 			i(43546, {["timeline"]={ADDED_3_0_8,REMOVED_7_0_3}}),	-- Glyph of Icy Touch
 			i(45805, {["timeline"]={ADDED_3_1_0,REMOVED_4_0_3}}),	-- Glyph of Disease
 			i(42974, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Sprint
@@ -2736,10 +2736,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			i(14136, {	-- Robe of Winter Night
-				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 			}),
 			i(5770, {	-- Robes of Arcana
-				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 			}),
 			i(13858),	-- Runecloth Robe
 			i(13857),	-- Runecloth Tunic
@@ -2771,7 +2771,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(7064),	-- Crimson Silk Gloves
 			i(10019),	-- Dreamweave Gloves
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18407, {	-- Felcloth Gloves
-				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 			})),
 			i(16979),	-- Flarecore Gloves
 			i(13870),	-- Frostweave Gloves
@@ -2782,10 +2782,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4307),	-- Heavy Linen Gloves
 			i(4310),	-- Heavy Woolen Gloves
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18408, {	-- Inferno Gloves
-				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 			})),
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18409, {	-- Mooncloth Gloves
-				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 			})),
 			i(4331),	-- Phoenix Gloves
 			i(10018),	-- Red Mageweave Gloves
@@ -2796,7 +2796,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		category(238, {	-- Belts
 			i(7052),	-- Azure Silk Belt
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18405, {	-- Belt of the Archmage
-				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 			})),
 			i(7055),	-- Crimson Silk Belt
 			i(7061),	-- Earthen Silk Belt
@@ -2876,7 +2876,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14044),	-- Cindercloth Cloak
 			i(14134),	-- Cloak of Fire
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {	-- Cloak of Warding
-				["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 			})),
 			i(7056),	-- Crimson Silk Cloak
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace

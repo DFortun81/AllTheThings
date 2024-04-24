@@ -1672,13 +1672,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- You get these when completing the quest (Only when completing Horde version specifically and relogging, gg Blizz)
 						-- i(141976, {	-- Headguard of the Order
-						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- 	["timeline"] = { ADDED_7_0_3 },
 						-- }),
 						-- i(141977, {	-- Faceguard of the Order
-						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- 	["timeline"] = { ADDED_7_0_3 },
 						-- }),
 						-- i(141978, {	-- Helm of the Order
-						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- 	["timeline"] = { ADDED_7_0_3 },
 						-- }),
 					},
 				}),
@@ -1701,15 +1701,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- You get these when completing the quest
 						i(141976, {	-- Headguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141977, {	-- Faceguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141978, {	-- Helm of the Order
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 					},
@@ -2730,7 +2730,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12557, {	-- Ebonsteel Spaulders
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 8.1.0"
+								ADDED_8_1_0
 							},
 						}),
 						-- #endif
@@ -2898,25 +2898,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12557, {	-- Ebonsteel Spaulders
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 8.1.0"
+								ADDED_8_1_0
 							},
 						}),
 						i(12554, {	-- Hands of the Exalted Herald
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						i(12556, {	-- High Priestess Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						i(12553, {	-- Swiftwalker Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 					},
@@ -2950,7 +2950,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12554, {	-- Hands of the Exalted Herald
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						-- #endif
@@ -2964,13 +2964,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12556, {	-- High Priestess Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						i(12553, {	-- Swiftwalker Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						-- #endif

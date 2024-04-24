@@ -224,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(35677),	-- Cosmos Vestments
 						i(35675),	-- Linked Armor of the Sphere
 						i(157564, {	-- Marbled Bracers
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37656),	-- Raging Construct Bands (7.3.5 - Used to be only Heroic Mode)
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(35675),	-- Linked Armor of the Sphere (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157564, {	-- Marbled Bracers
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37656),	-- Raging Construct Bands
 							-- #if AFTER 7.3.5

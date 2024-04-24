@@ -67,7 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(50335, {	-- Grant Me Revenge
 					["qg"] = 46409,	-- Warden Thelwater
-					["timeline"] = { "added 7.3.5.25826" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 10),
 					["groups"] = {
@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65941),	-- Riot Stick
 						i(65965),	-- Shield of the Stockades
 						i(131683, {	-- Thelwater's Steelwoven Eyepatch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -163,7 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65941),	-- Riot Stick
 						i(65965),	-- Shield of the Stockades
 						i(131683, {	-- Thelwater's Steelwoven Eyepatch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -299,7 +299,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_4_0_1 },
 					}),
 					i(132570, {	-- Stolen Guard's Chain Boots
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				},
 			}),
@@ -336,7 +336,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(1934),	-- Stonemason Trousers [Classic] / Hogger's Trousers [CATA+]
 					i(132569, {	-- Stolen Jailer's Greaves
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(2168),	-- Foreman's Boots [Classic] / Corpse Rompers [CATA+]
 				},

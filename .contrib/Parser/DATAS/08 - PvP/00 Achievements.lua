@@ -668,7 +668,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	-- #endif
 	ach(10561, {	-- Honorable Medallion
-		["timeline"] = { "added 7.0.3" },
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 	ach(617, {		-- Immortal No More
 		["provider"] = { "n", 7999 },	-- Tyrande Whisperwind <High Priestess of Elune>
@@ -839,7 +839,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(14720, {	-- Orgrimmar Offensive
 		["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-		["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),

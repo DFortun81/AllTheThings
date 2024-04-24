@@ -25,7 +25,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	}), {
 		-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
 		["zone-artIDs"] = { 628 },
-		["timeline"] = { "added 6.0.1.18566" },
+		["timeline"] = { ADDED_6_0_2 },
 		["maps"] = { BLASTED_LANDS },
 		["crs"] = { 88206 },	-- Zidormi
 		["groups"] = {
@@ -47,13 +47,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				fp(1538, {	-- Shattered Beachhead
 					["cr"] = 85731,	-- Araazi <Flight Master>
 					["coord"] = { 67.6, 28.0, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18566" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1537, {	-- Shattered Landing
 					["cr"] = 85734,	-- Ameri Windblade <Flight Master>
 					["coord"] = { 72.8, 48.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18566" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(35460, {	-- Attack of the Iron Horde (A)
 					["qg"] = 82270,	-- Vindicator Maraad
 					["coord"] = { 66.6, 28.2, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Ironmarch Grunt slain
@@ -72,26 +72,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						i(118761, {	-- Invader's Scarlet Seal
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118762, {	-- Portal-Breaker's Band
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118763, {	-- Blackstone Signet
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118764, {	-- Ruby-Eye Seal
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118765, {	-- Sapphire Seal
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),
 				q(35745, {	-- Attack of the Iron Horde (H)
 					["qg"] = 82851,	-- Thrall
 					["coord"] = { 71.8, 47.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Ironmarch Grunt slain
@@ -102,19 +102,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						i(118761, {	-- Invader's Scarlet Seal
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118762, {	-- Portal-Breaker's Band
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118763, {	-- Blackstone Signet
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118764, {	-- Ruby-Eye Seal
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118765, {	-- Sapphire Seal
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),
@@ -122,7 +122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 84928,	-- Thrall
 					["sourceQuest"] = 36292,	-- Investigating the Invasion
 					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35488, {	-- Death to the Dreadmaul (A)
@@ -133,7 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35494,	-- Mementos of the Fallen
 					},
 					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Dreadmaul slain
@@ -156,7 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35761,	-- Ransacking Nethergarde
 					},
 					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Dreadmaul slain
@@ -178,7 +178,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35462,	-- Under Siege (A)
 					},
 					["coord"] = { 66.8, 28.0, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/3 Ironmarch Executioner slain
@@ -194,7 +194,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35746,	-- Under Siege (H)
 					},
 					["coord"] = { 71.8, 48.9, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/3 Ironmarch Executioner slain
@@ -211,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35494,	-- Mementos of the Fallen
 					},
 					["coord"] = { 51.8, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/3 Poisoned cooking pot
@@ -228,7 +228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 84929,	-- Vindicator Maraad
 					["sourceQuest"] = 36307,	-- Investigating the Invasion
 					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35500, {	-- Gar'mak Bladetwist (A)
@@ -239,7 +239,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35495,	-- Toothsmash the Annihilator (A)
 					},
 					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gar'mak Bladetwist slain
@@ -256,7 +256,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35760,	-- Toothsmash the Annihilator (H)
 					},
 					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gar'mak Bladetwist slain
@@ -272,7 +272,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35463,	-- Subversive Scouts (A)
 					},
 					["coord"] = { 66.6, 28.2, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36292, {	-- Investigating the Invasion (H)
@@ -282,7 +282,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35748,	-- Subversive Scouts (H)
 					},
 					["coord"] = { 71.8, 47.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				{	-- Lunatic Lieutenants
@@ -296,7 +296,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						["sourceQuest"] = 36292,	-- Investigating the Invasion (H)
 						["coord"] = { 48.7, 31.7, BLASTED_LANDS },
 					}),
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Mokrik's Battleplan
 							["provider"] = { "i", 113399 },	-- Mokrik's Battleplan
@@ -314,19 +314,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							["cr"] = 73446,	-- Gar Steelcrush
 						}),
 						i(118766, {	-- Skulltooth Collar
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118767, {	-- Necklace of Celerity
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118768, {	-- Gnawing Tooth
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118769, {	-- Emberfury Choker
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118770, {	-- Chain of Evasion
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				},
@@ -334,7 +334,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 82447,	-- Commander Vines
 					["sourceQuest"] = 36307,	-- Investigating the Invasion
 					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Strumner's Sword
@@ -368,7 +368,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						35761,	-- Ransacking Nethergarde
 					},
 					["coord"] = { 48.7, 31.8, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/3 Poisoned cooking pot
@@ -384,7 +384,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(36379, {	-- Peeking into the Portal (A)
 					["qg"] = 85213,	-- Bodrick Grey
 					["coord"] = { 66.8, 28.0, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Use the telescope
@@ -396,7 +396,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(36382, {	-- Peeking into the Portal (H)
 					["qg"] = 85247,	-- Rokhan
 					["coord"] = { 71.8, 48.9, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Use the telescope
@@ -409,7 +409,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 76609,	-- Okrilla
 					["sourceQuest"] = 36292,	-- Investigating the Invasion
 					["coord"] = { 48.7, 31.9, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Aitokk's Axe
@@ -439,26 +439,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 84929,	-- Vindicator Maraad
 					["sourceQuest"] = 35500,	-- Gar'mark Bladetwist
 					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(118776, {	-- Talisman of the Invader
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118777, {	-- Bloodcaster's Charm
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118778, {	-- Ironmender's Totem
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118779, {	-- Bladespike Charm
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118780, {	-- Bloodburn Protector
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(111660, {	-- Iron Starlette (PET!)
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),
@@ -479,7 +479,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						},
 						["coord"] = { 71.8, 47.7, BLASTED_LANDS },
 					}),
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Ironmarch Scout slain
 							["provider"] = { "n", 76886 },	-- Ironmarch Scout <Iron Horde>
@@ -490,7 +490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(36881, {	-- The Dark Portal / Warlords of Draenor: The Dark Portal [9.0.1]
 					["qg"] = 78423,	-- Archmage Khadgar
 					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["lvl"] = 90,
 				}),
 				-- #endif
@@ -513,26 +513,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						},
 						["coord"] = { 48.7, 31.7, BLASTED_LANDS },
 					}),
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Toothsmash the Annihilator slain
 							["provider"] = { "n", 82451 },	-- Toothsmash the Annihilator
 							["coord"] = { 44, 35.4, BLASTED_LANDS },
 						}),
 						i(118771, {	-- Wildfire Windcloak
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118772, {	-- Frostshaper Cape
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118773, {	-- Butcher's Wrap
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118774, {	-- Armswake Greatcloak
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118775, {	-- Night Prowler's Cloak
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				},
@@ -545,7 +545,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						["qg"] = 82851,	-- Thrall
 						["coord"] = { 71.8, 47.7, BLASTED_LANDS },
 					}),
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
 						objective(1, {	-- 0/3 Iron Demolisher destroyed
 							["provider"] = { "n", 82298 },	-- Iron Demolisher
@@ -556,7 +556,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(36881, {	-- Warlords of Draenor: The Dark Portal [9.0.1] / The Dark Portal
 					["qg"] = 78423,	-- Archmage Khadgar
 					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["lvl"] = 90,
 				}),
 				-- #endif
@@ -564,32 +564,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 84928,	-- Thrall
 					["sourceQuest"] = 35763,	-- Gar'mak Bladetwist
 					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
+					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(118776, {	-- Talisman of the Invader
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118777, {	-- Bloodcaster's Charm
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118778, {	-- Ironmender's Totem
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118779, {	-- Bladespike Charm
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(118780, {	-- Bloodburn Protector
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(111660, {	-- Iron Starlette (PET!)
-							["timeline"] = { "added 6.0.1.18505" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),
 			}),
 			n(VENDORS, {
-				n(76117, bubbleDown({ ["timeline"] = { "added 6.0.1.18322" } }, {	-- Quartermaster Rindelle <Replacement Quest Rewards and General Goods>
+				n(76117, bubbleDown({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Quartermaster Rindelle <Replacement Quest Rewards and General Goods>
 					["coord"] = { 66.4, 27.6, BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -615,7 +615,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						i(118771),	-- Wildfire Windcloak
 					},
 				})),
-				n(76522, bubbleDown({ ["timeline"] = { "added 6.0.1.18322" } }, {	-- Zerpy Clampshock <Replacement Quest Rewards and General Goods>
+				n(76522, bubbleDown({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Zerpy Clampshock <Replacement Quest Rewards and General Goods>
 					["coord"] = { 71.5, 49.1, BLASTED_LANDS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -645,7 +645,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			n(ZONE_DROPS, {
 				i(118675, {	-- Bronze Whelpling (PET!)
 					["description"] = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",
-					["timeline"] = { "added 6.0.2" },
+					["timeline"] = { ADDED_6_0_2 },
 				}),
 			}),
 		},

@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(9676, {	-- Paladin Training
 							["qg"] = 15278,	-- Magistrix Erona
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -463,7 +463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 								i(20474),	-- Sunstrider Book Satchel
 								i(131235, {	-- Sunspire Cinch
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(20996),	-- Sunspire Cord
 								i(20995),	-- Well Watcher Gloves
@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 								i(20474),	-- Sunstrider Book Satchel
 								i(131235, {	-- Sunspire Cinch
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(20996),	-- Sunspire Cord
 								i(20995),	-- Well Watcher Gloves
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -575,7 +575,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -597,7 +597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", REMOVED_6_0_2 },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								-- #if BEFORE CATA
@@ -624,12 +624,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								i(20999),	-- Green Chain Gauntlets
 								i(131236, {	-- Gleaming Chain Bindings
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(21001),	-- Striding Pants
 								i(21000),	-- Vigorous Bracers
@@ -640,7 +640,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 63.6, 42.6, SUNSTRIDER_ISLE },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(8326, {	-- Unfortunate Measures
 							["qg"] = 15278,	-- Magistrix Erona
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								i(20993),	-- Lynxskin Gloves
 								i(20992),	-- Sunrise Bracers
 								i(131818, {	-- Verdant Chain Gloves
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -1191,7 +1191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28148),	-- Bronze Plate Bracers
 						i(28146),	-- Courier's Wraps
 						i(131243, {	-- Tranquillien Ranger's Cuffs
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(28147),	-- Tranquillien Scout's Bracers
 						i(22571),	-- Courier's Bag
@@ -1335,7 +1335,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(22956),	-- Rusty Mace
 						i(133696, {	-- Rusty Sin'dorei Stiletto
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(22957),	-- Rusty Sin'dorei Sword
 					},
@@ -1351,7 +1351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 15638,	-- Arcane Patroller
 						}),
 						i(131237, {	-- Padded Chainmail
-							["timeline"] = { "added 7.0.1" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1401,7 +1401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22952),	-- Springpaw Hide Cloak
 						i(22951),	-- Springpaw Hide Leggings
 						i(131239, {	-- Springpaw Padded Greaves
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1604,7 +1604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23376),	-- Gatewatcher's Chain Gloves
 						i(23377),	-- Guard's Leggings
 						i(131238, {	-- Sentry's Chain Shirt
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1623,7 +1623,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23372),	-- Bloodhawk Claymore
 						i(23373),	-- Long Knife
 						i(133695, {	-- Short Knife
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1709,7 +1709,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23398),	-- Worn Ranger's Bow
 						i(23395),	-- Farstrider's Buckler
 						i(133694, {	-- Ranger's Notched Dirk
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(23397),	-- Satin Lined Gloves
 						i(23396),	-- Slightly Used Ranger's Blade
@@ -1801,7 +1801,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23266),	-- Ranger's Vest
 						i(23267),	-- Satin Lined Boots
 						i(131252, {	-- Ranger's Chainmail
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1846,7 +1846,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(22965),	-- Longshoreman's Bindings
 						i(131240, {	-- Longshoreman's Bracers
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(22966),	-- Silk Wristbands
 						i(22964),	-- Sunsail Bracers

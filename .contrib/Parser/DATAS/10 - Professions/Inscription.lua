@@ -53,7 +53,7 @@ GLYPH_OF_AMBUSH = r(57113, {	-- Glyph of Ambush
 });
 GLYPH_OF_ANGELS = r(148275, {	-- Glyph of Angels
 	["name"] = "Glyph of Angels",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_ANTIMAGIC_SHELL = r(57207, {	-- Glyph of Anti-Magic Shell
 	["name"] = "Glyph of Anti-Magic Shell",
@@ -69,7 +69,7 @@ GLYPH_OF_AQUATIC_FORM = r(58286, {	-- Glyph of Aquatic Form
 });
 GLYPH_OF_ARACHNOPHOBIA = r(225535, {	-- Glyph of Arachnophobia
 	["name"] = "Glyph of Arachnophobia",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_ARCANE_BARRAGE_AND_ILLUSION = r(64276, {	-- Glyph of Arcane Barrage / Glyph of Illusion [5.0.4]
 	-- #if AFTER 5.0.4
@@ -129,7 +129,7 @@ GLYPH_OF_ASTRAL_RECALL = r(58329, {	-- Glyph of Astral Recall
 });
 GLYPH_OF_AUTUMNAL_BLOOM = r(225534, {	-- Glyph of Autumnal Bloom
 	["name"] = "Glyph of Autumnal Bloom",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_AVENGERS_SHIELD_AND_FOCUSED_SHIELD = r(57019, {	-- Glyph of Avenger's Shield / Glyph of Focused Shield [CATA+]
 	-- #if AFTER CATA
@@ -193,7 +193,7 @@ GLYPH_OF_BESTIAL_WRATH_AND_ENDLESS_WRATH = r(56999, {	-- Glyph of Bestial Wrath 
 });
 GLYPH_OF_BLACKOUT = r(192841, {	-- Glyph of Blackout
 	["name"] = "Glyph of Blackout",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_BLADE_FLURRY = r(57115, {	-- Glyph of Blade Flurry
 	["name"] = "Glyph of Blade Flurry",
@@ -207,7 +207,7 @@ GLYPH_OF_BLADESTORM_AND_WHIRLWIND_AND_WIND_AND_THUNDER = r(64295, {	-- Glyph of 
 	-- #else
 	["name"] = "Glyph of Bladestorm",
 	-- #endif
-	["timeline"] = { ADDED_3_1_0, "deleted 5.0.4", "added 5.1.0", "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_1_0, "deleted 5.0.4", ADDED_5_1_0, "deleted 7.0.3" },
 });
 GLYPH_OF_BLAST_WAVE = r(56990, {	-- Glyph of Blast Wave
 	["name"] = "Glyph of Blast Wave",
@@ -303,7 +303,7 @@ GLYPH_OF_BURNING_ANGER = r(112430, {	-- Glyph of Burning Anger
 });
 GLYPH_OF_BURNOUT = r(225548, {	-- Glyph of Burnout
 	["name"] = "Glyph of Burnout",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_CHAIN_HEAL = r(57232, {	-- Glyph of Chain Heal
 	["name"] = "Glyph of Chain Heal",
@@ -371,7 +371,7 @@ GLYPH_OF_CLOAK_OF_SHADOWS = r(64303, {	-- Glyph of Cloak of Shadows
 });
 GLYPH_OF_COLD_WAVES = r(304036, {	-- Glyph of the Cold Waves
 	["name"] = "Glyph of the Cold Waves",
-	["timeline"] = { "added 8.2.0" },
+	["timeline"] = { ADDED_8_2_0 },
 });
 GLYPH_OF_COMMAND_AND_THUNDER_STRIKE = r(68166, {	-- Glyph of Command / Glyph of Thunder Strike [CATA+]
 	-- #if AFTER CATA
@@ -407,19 +407,19 @@ GLYPH_OF_CORRUPTION_AND_SIPHON_LIFE = r(57259, {	-- Glyph of Corruption / Glyph 
 });
 GLYPH_OF_CRACKED_ICE = r(225522, {	-- Glyph of Cracked Ice
 	["name"] = "Glyph of Cracked Ice",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_CRACKLING_FLAMES = r(192850, {	-- Glyph of Crackling Flames
 	["name"] = "Glyph of Crackling Flames",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_CRACKLING_CRANE_LIGHTNING = r(192843, {	-- Glyph of Crackling Crane Lightning
 	["name"] = "Glyph of Crackling Crane Lightning",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_CRACKLING_OX_LIGHTNING = r(232274, {	-- Glyph of Crackling Ox Lightning
 	["name"] = "Glyph of Crackling Ox Lightning",
-	["timeline"] = { "added 7.1.0" },
+	["timeline"] = { ADDED_7_1_0 },
 });
 GLYPH_OF_CRACKLING_TIGER_LIGHTNING = r(112462, {	-- Glyph of Crackling Tiger Lightning
 	["name"] = "Glyph of Crackling Tiger Lightning",
@@ -435,11 +435,11 @@ GLYPH_OF_CRIPPLING_POISON_AND_SHARP_KNIVES = r(57116, {	-- Glyph of Crippling Po
 });
 GLYPH_OF_CRITTERHEX = r(225550, {	-- Glyph of Critterhex
 	["name"] = "Glyph of Critterhex",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_CROW_FEAST_AND_HAWK_FEAST = r(112429, {	-- Glyph of Crow Feast / Glyph of Hawk Feast [7.0.3]
 	["name"] = "Glyph of Hawk Feast",
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_CRUSADER_STRIKE_AND_AVENGING_WRATH = r(57024, {	-- Glyph of Crusader Strike / Glyph of Avenging Wrath [MOP+]
 	-- #if AFTER MOP
@@ -489,7 +489,7 @@ GLYPH_OF_DARK_DEATH_AND_DEATH_COIL = r(64266, {	-- Glyph of Dark Death / Glyph o
 });
 GLYPH_OF_DARK_DEPTHS = r(304030, {	-- Glyph of the Dark Depths
 	["name"] = "Glyph of the Dark Depths",
-	["timeline"] = { "added 8.2.0" },
+	["timeline"] = { ADDED_8_2_0 },
 });
 GLYPH_OF_DASH = r(59315, {	-- Glyph of Dash
 	["name"] = "Glyph of Dash",
@@ -553,7 +553,7 @@ GLYPH_OF_DEVASTATE_AND_HEAVY_REPERCUSSIONS = r(57155, {	-- Glyph of Devastate / 
 });
 GLYPH_OF_DIRE_BEES = r(304042, {  -- Glyph of Dire Bees
 	["name"] = "Glyph of Dire Bees",
-	["timeline"] = { "added 8.2.5" },
+	["timeline"] = { ADDED_8_2_5 },
 });
 GLYPH_OF_DISEASE = r(64267, {	-- Glyph of Disease
 	["name"] = "Glyph of Disease",
@@ -625,7 +625,7 @@ GLYPH_OF_ELEMENTAL_MASTERY_AND_CHAINING = r(57250, {	-- Glyph of Elemental Maste
 });
 GLYPH_OF_EMBER_SHARDS = r(246982, {	-- Glyph of Ember Shards
 	["name"] = "Glyph of Ember Shards",
-	["timeline"] = { "added 7.2.5" },
+	["timeline"] = { ADDED_7_2_5 },
 });
 GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY = r(58347, {	-- Glyph of Enduring Victory / Glyph of Mighty Victory [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -657,7 +657,7 @@ GLYPH_OF_EVASION = r(57119, {	-- Glyph of Evasion
 });
 GLYPH_OF_EVAPORATION = r(148271, {	-- Glyph of Evaporation
 	["name"] = "Glyph of Evaporation",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_EVISCERATE_AND_DEBILITATION_AND_RECOVERY = r(57120, {	-- Glyph of Eviscerate / Glyph of Debilitation [MOP-5.4.0] / Glyph of Recovery [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -719,11 +719,11 @@ GLYPH_OF_FADING_AND_SHADOW_RAVENS = r(58317, {	-- Glyph of Fading / Glyph of Sha
 });
 GLYPH_OF_FALLING_THUNDER = r(228381, {	-- Glyph of Falling Thunder
 	["name"] = "Glyph of Falling Thunder",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FALLOW_WINGS = r(192851, {	-- Glyph of Fallow Wings
 	["name"] = "Glyph of Fallow Wings",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FAN_OF_KNIVES_AND_DEADLY_MOMENTUM = r(64315, {	-- Glyph of Fan of Knives / Glyph of Deadly Momentum [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -755,11 +755,11 @@ GLYPH_OF_FEINT = r(57122, {	-- Glyph of Feint
 });
 GLYPH_OF_FEL_ENEMIES = r(225528, {	-- Glyph of Fel-Enemies
 	["name"] = "Glyph of Fel-Enemies",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FEL_IMP = r(192839, {	-- Glyph of Fel Imp
 	["name"] = "Glyph of Fel Imp",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FEL_TOUCHED_SHARDS = r(246999, {	-- Glyph of Fel-Touched Shards
 	["name"] = "Glyph of Fel-Touched Shards",
@@ -767,11 +767,11 @@ GLYPH_OF_FEL_TOUCHED_SHARDS = r(246999, {	-- Glyph of Fel-Touched Shards
 });
 GLYPH_OF_FEL_TOUCHED_SOULS = r(192849, {	-- Glyph of Fel Touched Souls
 	["name"] = "Glyph of Fel Touched Souls",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FEL_WINGS = r(225527, {	-- Glyph of Fel Wings
 	["name"] = "Glyph of Fel Wings",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FELGUARD = r(57263, {	-- Glyph of Felguard
 	["name"] = "Glyph of Felguard",
@@ -791,7 +791,7 @@ GLYPH_OF_FERAL_SPIRIT = r(64288, {	-- Glyph of Feral Spirit
 });
 GLYPH_OF_FIGHTING_POSE = r(112469, {	-- Glyph of Fighting Pose
 	["name"] = "Glyph of Fighting Pose",
-	["timeline"] = { "added 5.0.4.15890" },	-- This was moved to Research with 6.0.1
+	["timeline"] = { ADDED_5_0_4 },	-- This was moved to Research with 6.0.1
 });
 GLYPH_OF_FIRE_BLAST = r(57719, {	-- Glyph of Fire Blast
 	["name"] = "Glyph of Fire Blast",
@@ -835,7 +835,7 @@ GLYPH_OF_FLAMETONGUE_WEAPON_AND_WIND_SHEAR = r(57240, {	-- Glyph of Flametongue 
 });
 GLYPH_OF_FLASH_BANG = r(225549, {	-- Glyph of Flash Bang
 	["name"] = "Glyph of Flash Bang",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FLASH_HEAL_AND_INNER_SANCTUM = r(57186, {	-- Glyph of Flash Heal / Glyph of Inner Sanctum [MOP+]
 	-- #if AFTER MOP
@@ -857,15 +857,15 @@ GLYPH_OF_FLICKERING = r(225551, {	-- Glyph of Flickering
 	["name"] = "Glyph of Flickering",
 	["description"] = "Currently this Technique can only be learned by Shaman's.   We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques.",
 	["classes"] = { SHAMAN },
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_FLOATING_SHARDS = r(246984, {	-- Glyph of Floating Shards
 	["name"] = "Glyph of Floating Shards",
-	["timeline"] = { "added 7.2.5" },
+	["timeline"] = { ADDED_7_2_5 },
 });
 GLYPH_OF_FLYING_SERPENT_KICK = r(112463, {	-- Glyph of Flying Serpent Kick
 	["name"] = "Glyph of Flying Serpent Kick",
-	["timeline"] = { "added 5.0.4", "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
 });
 GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER = r(62162, {	-- Glyph of Focus / Glyph of the Master Shapeshifter [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -955,7 +955,7 @@ GLYPH_OF_GHOST_WOLF = r(59326, {	-- Glyph of Ghost Wolf
 });
 GLYPH_OF_GHOSTLY_FADE = r(192838, {	-- Glyph of Ghostly Fade
 	["name"] = "Glyph of Ghostly Fade",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_GHOSTLY_STRIKE_AND_DETECTION = r(57124, {	-- Glyph of Ghostly Strike / Glyph of Detection [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -963,7 +963,7 @@ GLYPH_OF_GHOSTLY_STRIKE_AND_DETECTION = r(57124, {	-- Glyph of Ghostly Strike / 
 	-- #else
 	["name"] = "Glyph of Ghostly Strike",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1", "added 5.0.4", "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, "deleted 4.0.1", ADDED_5_0_4, "deleted 7.0.3" },
 });
 GLYPH_OF_GOUGE = r(57125, {	-- Glyph of Gouge
 	["name"] = "Glyph of Gouge",
@@ -1015,7 +1015,7 @@ GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION = r(57157, {	-- Glyph
 	-- #else
 	["name"] = "Glyph of Hamstring",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3", "added 5.0.4", "deleted 7.0.3" },
+	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3", ADDED_5_0_4, "deleted 7.0.3" },
 });
 GLYPH_OF_HAUNT_AND_DRAIN_LIFE = r(64291, {	-- Glyph of Haunt / Glyph of Drain Life [5.2.0+]
 	-- #if AFTER 5.2.0
@@ -1093,7 +1093,7 @@ GLYPH_OF_HOLY_WRATH_AND_DENOUNCE = r(59559, {	-- Glyph of Holy Wrath / Glyph of 
 });
 GLYPH_OF_HONOR = r(112464, {	-- Glyph of Honor
 	["name"] = "Glyph of Honor",
-	["timeline"] = { "added 5.0.4.15890" },	-- This was moved to Research with 6.0.1
+	["timeline"] = { ADDED_5_0_4 },	-- This was moved to Research with 6.0.1
 });
 GLYPH_OF_HORN_OF_WINTER = r(57217, {	-- Glyph of Horn of Winter
 	["name"] = "Glyph of Horn of Winter",
@@ -1251,7 +1251,7 @@ GLYPH_OF_INSECT_SWARM_AND_THE_ORCA = r(56948, {	-- Glyph of Insect Swarm / Glyph
 });
 GLYPH_OF_INSPIRED_HYMNS = r(148278, {	-- Glyph of Inspired Hymns
 	["name"] = "Glyph of Inspired Hymns",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_INTERVENE_AND_BLITZ = r(57159, {	-- Glyph of Intervene / Glyph of Blitz [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1321,7 +1321,7 @@ GLYPH_OF_LAVA_LASH = r(57249, {	-- Glyph of Strength of Earth Totem / Glyph of L
 });
 GLYPH_OF_LAVISH_SERVINGS = r(309443, {  -- Glyph of Lavish Servings
 	["name"] = "Glyph of Lavish Servings",
-	["timeline"] = { "added 8.2.5" },
+	["timeline"] = { ADDED_8_2_5 },
 });
 GLYPH_OF_LAY_ON_HANDS_AND_FLASH_OF_LIGHT = r(58313, {	-- Glyph of Lay on Hands / Glyph of Flash of Light [MOP+]
 	-- #if AFTER MOP
@@ -1373,7 +1373,7 @@ GLYPH_OF_LIGHTSPRING_AND_LIGHTWELL = r(127625, {	-- Glyph of Lightspring / Glyph
 	-- #else
 	["name"] = "Glyph of Lightspring",
 	-- #endif
-	["timeline"] = { "added 5.0.4", "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
 });
 GLYPH_OF_LIGHTWELL = r(57189, {	-- Glyph of Lightwell
 	["name"] = "Glyph of Lightwell",
@@ -1381,7 +1381,7 @@ GLYPH_OF_LIGHTWELL = r(57189, {	-- Glyph of Lightwell
 });
 GLYPH_OF_LINGERING_ANCESTORS = r(148282, {	-- Glyph of Lingering Ancestors
 	["name"] = "Glyph of Lingering Ancestors",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_LIVING_BOMB_AND_SLOW = r(64275, {	-- Glyph of Living Bomb / Glyph of Slow [CATA+]
 	-- #if AFTER CATA
@@ -1413,7 +1413,7 @@ GLYPH_OF_MANA_TIDE_TOTEM_AND_GROUNDING_TOTEM = r(57247, {	-- Glyph of Mana Tide 
 });
 GLYPH_OF_MANA_TOUCHED_SOULS = r(225529, {	-- Glyph of Mana Touched Souls
 	["name"] = "Glyph of Mana Touched Souls",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_MANGLE_AND_THE_STAG = r(56950, {	-- Glyph of Mangle / Glyph of the Stag [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1493,7 +1493,7 @@ GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND = r(58345, {	-- Glyph of Mocking Blow / 
 	-- #else
 	["name"] = "Glyph of Mocking Blow",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3", "added 5.0.4" },
+	["timeline"] = { ADDED_3_0_2, "deleted 4.0.3", ADDED_5_0_4 },
 });
 GLYPH_OF_MOLTEN_ARMOR_AND_CRITTERMORPH = r(56986, {	-- Glyph of Molten Armor / Glyph of Crittermorph [CATA+]
 	-- #if AFTER CATA
@@ -1543,7 +1543,7 @@ GLYPH_OF_MUTILATE_AND_DISGUISE = r(64260, {	-- Glyph of Mutilate / Glyph of Disg
 });
 GLYPH_OF_NESINGWARYS_NEMESES = r(225536, {	-- Glyph of Nesingwary's Nemeses
 	["name"] = "Glyph of Nesingwary's Nemeses",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_NOURISH_AND_STARSURGE_AND_MIGHT_OF_URSOC = r(64313, {	-- Glyph of Nourish / Glyph of Starsurge [CATA+] / Glyph of Might of Ursoc [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1589,7 +1589,7 @@ GLYPH_OF_PAIN_SUPPRESSION_AND_DESPERATION_AND_BINDING_HEAL = r(64259, {	-- Glyph
 });
 GLYPH_OF_PEBBLES = r(225552, {	-- Glyph of Pebbles
 	["name"] = "Glyph of Pebbles",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_PENANCE = r(64282, {	-- Glyph of Penance
 	["name"] = "Glyph of Penance",
@@ -1613,7 +1613,7 @@ GLYPH_OF_PICK_POCKET = r(58326, {	-- Glyph of Pick Pocket
 });
 GLYPH_OF_PILLAR_OF_LIGHT = r(148274, {	-- Glyph of Pillar of Light
 	["name"] = "Glyph of Pillar of Light",
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_PLAGUE_STRIKE_AND_PESTILENCE = r(57221, {	-- Glyph of Plague Strike / Glyph of Pestilence [CATA+]
 	-- #if AFTER CATA
@@ -1629,7 +1629,7 @@ GLYPH_OF_POLYMORPH = r(56987, {	-- Glyph of Polymorph
 });
 GLYPH_OF_POLYMORPHIC_PROPORTIONS = r(225545, {	-- Glyph of Polymorphic Proportions
 	["name"] = "Glyph of Polymorphic Proportions",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_POSSESSED_STRENGTH = r(58300, {	-- Glyph of Possessed Strength
 	["name"] = "Glyph of Possessed Strength",
@@ -1809,7 +1809,7 @@ GLYPH_OF_RIPTIDE = r(64289, {	-- Glyph of Riptide
 });
 GLYPH_OF_RISING_TIGER_KICK = r(112466, {	-- Glyph of Rising Tiger Kick
 	["name"] = "Glyph of Rising Tiger Kick",
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_RUNE_STRIKE_AND_ARMY_OF_THE_DEAD = r(57223, {	-- Glyph of Rune Strike / Glyph of Army of the Dead [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1991,7 +1991,7 @@ GLYPH_OF_SHADOW_DANCE_AND_STEALTH = r(64286, {	-- Glyph of Shadow Dance / Glyph 
 });
 GLYPH_OF_SHADOW_ENEMIES = r(225530, {	-- Glyph of Shadow-Enemies
 	["name"] = "Glyph of Shadow-Enemies",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD = r(58321, {	-- Glyph of Shadow Protection / Glyph of Reflective Shield [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2007,7 +2007,7 @@ GLYPH_OF_SHADOW_WORD_DEATH = r(124461, {	-- Glyph of Shadow Word: Death [5.0.4+]
 	-- #else
 	["name"] = "Glyph of Shadow Word: Death (NYI)",
 	-- #endif
-	["timeline"] = { "added 5.0.4", "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
 });
 GLYPH_OF_SHADOW_WORD_DEATH_AND_MIND_BLAST = r(57199, {	-- Glyph of Shadow Word: Death / Glyph of Mind Blast [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2133,7 +2133,7 @@ GLYPH_OF_SMITE = r(57201, {	-- Glyph of Smite
 });
 GLYPH_OF_SMOLDER = r(225546, {	-- Glyph of Smolder
 	["name"] = "Glyph of Smolder",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_SNAKE_TRAP = r(57010, {	-- Glyph of Snake Trap
 	["name"] = "Glyph of Snake Trap",
@@ -2163,7 +2163,7 @@ GLYPH_OF_SOULSTONE = r(57274, {	-- Glyph of Soulstone
 });
 GLYPH_OF_SPARKLES = r(192840, {	-- Glyph of Sparkles
 	["name"] = "Glyph of Sparkles",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_SPELL_REFLECTION = r(64302, {	-- Glyph of Spell Reflection
 	["name"] = "Glyph of Spell Reflection",
@@ -2179,7 +2179,7 @@ GLYPH_OF_SPIRIT_OF_REDEMPTION_AND_PRAYER_OF_MENDING = r(57202, {	-- Glyph of Spi
 });
 GLYPH_OF_SPIRIT_RAPTORS = r(148281, {	-- Glyph of Spirit Raptors
 	["name"] = "Glyph of Spirit Raptors",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_SPIRITUAL_ATTUNEMENT_AND_DIVINE_PROTECTION = r(57022, {	-- Glyph of Spiritual Attunement / Glyph of Divine Protection [CATA+]
 	-- #if AFTER CATA
@@ -2225,11 +2225,11 @@ GLYPH_OF_STEADY_SHOT_AND_SCATTERING_AND_AIMED_SHOT = r(57011, {	-- Glyph of Stea
 });
 GLYPH_OF_STEAMING_FURY = r(304033, {	-- Glyph of Steaming Fury
 	["name"] = "Glyph of Steaming Fury",
-	["timeline"] = { "added 8.2.0" },
+	["timeline"] = { ADDED_8_2_0 },
 });
 GLYPH_OF_STELLAR_FLARE = r(192845, {	-- Glyph of Stellar Flare
 	["name"] = "Glyph of Stellar Flare",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_STONECLAW_TOTEM_AND_TOTEMIC_VIGOR = r(64247, {	-- Glyph of Stoneclaw Totem / Glyph of Totemic Vigor [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2241,7 +2241,7 @@ GLYPH_OF_STONECLAW_TOTEM_AND_TOTEMIC_VIGOR = r(64247, {	-- Glyph of Stoneclaw To
 });
 GLYPH_OF_STORMS_WAKE = r(289356, {  -- Glyph of Storm's Wake
 	["name"] = "Glyph of Storm's Wake",
-	["timeline"] = { "added 8.1.0" },
+	["timeline"] = { ADDED_8_1_0 },
 	["races"] = ALLIANCE_ONLY,
 });
 GLYPH_OF_STORMSTRIKE_AND_SPIRITWALKERS_GRACE = r(57248, {	-- Glyph of Stormstrike / Glyph of Spiritwalker's Grace [5.0.4+]
@@ -2304,7 +2304,7 @@ GLYPH_OF_SWIFTMEND_AND_STAMPEDE = r(56960, {	-- Glyph of Swiftmend / Glyph of St
 });
 GLYPH_OF_TATTERED_WINGS = r(192852, {	-- Glyph of Tattered Wings
 	["name"] = "Glyph of Tattered Wings",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_TAUNT = r(57169, {	-- Glyph of Taunt
 	["name"] = "Glyph of Taunt",
@@ -2324,47 +2324,47 @@ GLYPH_OF_THE_BEAST_AND_TRAP_LAUNCHER_AND_MARKED_FOR_DEATH_AND_LIBERATION = r(569
 });
 GLYPH_OF_THE_BLAZING_SAVIOUR = r(225560, {	-- Glyph of the Blazing Savior
 	["name"] = "Glyph of the Blazing Savior",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_BLAZING_TRAIL = r(123781, {	-- Glyph of the Blazing Trail
 	["name"] = "Glyph of the Blazing Trail",
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_THE_BLOOD_WRAITH = r(225523, {	-- Glyph of the Blood Wraith
 	["name"] = "Glyph of the Blood Wraith",
-	["timeline"] = { "added 7.0.3", "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
 });
 GLYPH_OF_THE_BULLSEYE = r(225537, {	-- Glyph of the Bullseye
 	["name"] = "Glyph of the Bullseye",
-	["timeline"] = { "added 7.0.3", "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
 });
 GLYPH_OF_THE_CHILLED_SHELL = r(225524, {	-- Glyph of the Chilled Shell
 	["name"] = "Glyph of the Chilled Shell",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_CRIMSON_SHELL = r(225525, {	-- Glyph of the Crimson Shell
 	["name"] = "Glyph of the Crimson Shell",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_DIRE_STABLE = r(225538, {	-- Glyph of the Dire Stable
 	["name"] = "Glyph of the Dire Stable",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_DOLPHIN = r(276059, {	-- Glyph of the Dolphin
 	["name"] = "Glyph of the Dolphin",
-	["timeline"] = { "added 8.0.1" },
+	["timeline"] = { ADDED_8_0_1 },
 });
 GLYPH_OF_THE_EXORCIST = r(148273, {	-- Glyph of the Exorcist
 	["name"] = "Glyph of the Exorcist",
-	["timeline"] = { "added 5.4.0", "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_4_0, "deleted 7.0.3" },
 });
 GLYPH_OF_THE_FERAL_CHAMELEON = r(225532, {	-- Glyph of the Feral Chameleon
 	["name"] = "Glyph of the Feral Chameleon",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_FOREST_PATH = r(225533, {	-- Glyph of the Forest Path
 	["name"] = "Glyph of the Forest Path",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_GHOUL_AND_RAISE_DEAD_AND_MIND_FREEZE = r(57222, {	-- Glyph of the Ghoul / Glyph of Raise Dead [CATA+] / Glyph of Mind Freeze [5.0.4+]
 	["name"] = "Glyph of the Ghoul",
@@ -2372,7 +2372,7 @@ GLYPH_OF_THE_GHOUL_AND_RAISE_DEAD_AND_MIND_FREEZE = r(57222, {	-- Glyph of the G
 });
 GLYPH_OF_THE_GOBLIN_ANTI_GRAV_FLARE = r(225539, {	-- Glyph of the Goblin Anti-Grav Flare
 	["name"] = "Glyph of the Goblin Anti-Grav Flare",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_HAWK_AND_DAZZLED_PREY_AND_ANIMAL_BOND = r(57006, {	-- Glyph of Improved Aspect of the Hawk / Glyph of the Hawk [3.1.0+] / Glyph of the Dazzled Prey [CATA+] / Glyph of Animal Bond [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -2388,7 +2388,7 @@ GLYPH_OF_THE_HAWK_AND_DAZZLED_PREY_AND_ANIMAL_BOND = r(57006, {	-- Glyph of Impr
 });
 GLYPH_OF_THE_HEADHUNTER = r(225540, {	-- Glyph of the Headhunter
 	["name"] = "Glyph of the Headhunter",
-	["timeline"] = { "added 7.0.3", "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
 });
 GLYPH_OF_THE_HEAVENS = r(124466, {	-- Glyph of the Heavens
 	["name"] = "Glyph of the Heavens",
@@ -2396,15 +2396,15 @@ GLYPH_OF_THE_HEAVENS = r(124466, {	-- Glyph of the Heavens
 });
 GLYPH_OF_THE_HOOK = r(225541, {	-- Glyph of the Hook
 	["name"] = "Glyph of the Hook",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_HUMBLE_FLYER = r(276121, {	-- Glyph of the Humble Flyer
 	["name"] = "Glyph of the Humble Flyer",
-	["timeline"] = { "added 8.0.1" },
+	["timeline"] = { ADDED_8_0_1 },
 });
 GLYPH_OF_THE_INQUISITORS_EYE = r(225554, {	-- Glyph of the Inquisitor's Eye
 	["name"] = "Glyph of the Inquisitor's Eye",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_LIGHTSPAWN = r(254227, {	-- Glyph of the Lightspawn
 	["name"] = "Glyph of the Lightspawn",
@@ -2412,7 +2412,7 @@ GLYPH_OF_THE_LIGHTSPAWN = r(254227, {	-- Glyph of the Lightspawn
 });
 GLYPH_OF_THE_OBSERVER = r(225555, {	-- Glyph of the Observer
 	["name"] = "Glyph of the Observer",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK = r(58297, {	-- Glyph of the Pack / Glyph of Aspect of the Pack [CATA+]
 	-- #if AFTER CATA
@@ -2428,35 +2428,35 @@ GLYPH_OF_THE_PENGUIN = r(58310, {	-- Glyph of the Penguin
 });
 GLYPH_OF_THE_QUEEN = r(192846, {	-- Glyph of the Queen
 	["name"] = "Glyph of the Queen",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_SHA = r(148276, {	-- Glyph of the Sha
 	["name"] = "Glyph of the Sha",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_THE_SHADOW_SUCCUBUS = r(240272, {	-- Glyph of the Shadow Succubus
 	["name"] = "Glyph of the Shadow Succubus",
-	["timeline"] = { "added 7.2.0" },
+	["timeline"] = { ADDED_7_2_0 },
 });
 GLYPH_OF_THE_SHIVARRA = r(225556, {	-- Glyph of the Shivarra
 	["name"] = "Glyph of the Shivarra",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_SKELETON = r(148266, {	-- Glyph of the Skeleton
 	["name"] = "Glyph of the Skeleton",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_THE_SKULLSEYE = r(225542, {	-- Glyph of the Skullseye
 	["name"] = "Glyph of the Skullseye",
-	["timeline"] = { "added 7.0.3", "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
 });
 GLYPH_OF_THE_SPECTRAL_RAPTOR = r(192844, {	-- Glyph of the Spectral Raptor
 	["name"] = "Glyph of the Spectral Raptor",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_SUN = r(182158, {	-- Glyph of the Sun
 	["name"] = "Glyph of the Sun",
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_THE_SWIFT_CHAMELEON = r(344335, {  -- Glyph of the Swift Chameleon
 	["name"] = "Glyph of the Swift Chameleon",
@@ -2464,27 +2464,27 @@ GLYPH_OF_THE_SWIFT_CHAMELEON = r(344335, {  -- Glyph of the Swift Chameleon
 });
 GLYPH_OF_THE_TIDES = r(289313, {	-- Glyph of the Tides
 	["name"] = "Glyph of the Tides",
-	["timeline"] = { "added 8.1.0" },
+	["timeline"] = { ADDED_8_1_0 },
 });
 GLYPH_OF_THE_TIDESKIPPER = r(276088, {	-- Glyph of the Tideskipper
 	["name"] = "Glyph of the Tideskipper",
-	["timeline"] = { "added 8.0.1" },
+	["timeline"] = { ADDED_8_0_1 },
 });
 GLYPH_OF_THE_TRIDENT = r(225543, {	-- Glyph of the Trident
 	["name"] = "Glyph of the Trident",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_TRUSTED_STEED = r(232275, {	-- Glyph of the Trusted Steed
 	["name"] = "Glyph of the Trusted Steed",
-	["timeline"] = { "added 7.1.0" },
+	["timeline"] = { ADDED_7_1_0 },
 });
 GLYPH_OF_THE_UNBOUND_ELEMENTAL = r(148270, {	-- Glyph of the Unbound Elemental
 	["name"] = "Glyph of the Unbound Elemental",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_THE_VALKYR = r(126696, {	-- Glyph of the Val'kyr
 	["name"] = "Glyph of the Val'kyr",
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_THE_VOIDLING = r(254231, {	-- Glyph of the Voidling
 	["name"] = "Glyph of the Voidling",
@@ -2492,11 +2492,11 @@ GLYPH_OF_THE_VOIDLING = r(254231, {	-- Glyph of the Voidling
 });
 GLYPH_OF_THE_VOIDLORD = r(225558, {	-- Glyph of the Voidlord
 	["name"] = "Glyph of the Voidlord",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 GLYPH_OF_THE_WEAPONMASTER = r(148292, {	-- Glyph of the Weaponmaster
 	["name"] = "Glyph of the Weaponmaster",
-	["timeline"] = { "added 5.4.0" },
+	["timeline"] = { ADDED_5_4_0 },
 });
 GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE = r(58296, {	-- Glyph of the Wild / Glyph of Charm Woodland Creature [MOP+]
 	-- #if AFTER MOP
@@ -2518,11 +2518,11 @@ GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS = r(58316, {	-- Glyph of the Wise / 
 });
 GLYPH_OF_THE_WRAITH_WALKER = r(192848, {	-- Glyph of the Wraith Walker
 	["name"] = "Glyph of the Wraith Walker",
-	["timeline"] = { "added 7.0.3", "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
 });
 GLYPH_OF_THE_UNHOLY_WRAITH = r(225526, {	-- Glyph of the Unholy Wraith
 	["name"] = "Glyph of the Unholy Wraith",
-	["timeline"] = { "added 7.0.3", "deleted 8.0.1" },
+	["timeline"] = { ADDED_7_0_3, "deleted 8.0.1" },
 });
 GLYPH_OF_THORNS = r(58289, {	-- Glyph of Thorns
 	["name"] = "Glyph of Thorns",
@@ -2554,7 +2554,7 @@ GLYPH_OF_TOTEM_OF_WRATH_AND_SHAMANISTIC_RAGE = r(64262, {	-- Glyph of Totem of W
 });
 GLYPH_OF_TOUCH_OF_DEATH = r(124456, {	-- Glyph of Touch of Death
 	["name"] = "Glyph of Touch of Death",
-	["timeline"] = { "added 5.0.4", "deleted 7.0.3" },
+	["timeline"] = { ADDED_5_0_4, "deleted 7.0.3" },
 });
 GLYPH_OF_TRICKS_OF_THE_TRADE = r(64310, {	-- Glyph of Tricks of the Trade
 	["name"] = "Glyph of Tricks of the Trade",
@@ -2580,7 +2580,7 @@ GLYPH_OF_TURN_EVIL_AND_BURDEN_OF_GUILT = r(57036, {	-- Glyph of Turn Evil / Glyp
 });
 GLYPH_OF_TWILIGHT_BLOOM = r(233278, {	-- Glyph of Twilight Bloom
 	["name"] = "Glyph of Twilight Bloom",
-	["timeline"] = { "added 7.1.0" },
+	["timeline"] = { ADDED_7_1_0 },
 });
 GLYPH_OF_TYPHOON_AND_STARS = r(56965, {	-- Glyph of Typhoon / Glyph of Stars [5.0.4]
 	-- #if AFTER 5.0.4
@@ -2740,7 +2740,7 @@ GLYPH_OF_WRATH_AND_NATURES_GRASP = r(56963, {	-- Glyph of Wrath / Glyph of Natur
 });
 GLYPH_OF_WRATHGUARD = r(225559, {	-- Glyph of Wrathguard
 	["name"] = "Glyph of Wrathguard",
-	["timeline"] = { "added 7.2.0" },
+	["timeline"] = { ADDED_7_2_0 },
 });
 GLYPH_OF_WYVERN_STING_AND_SOLACE = r(57014, {	-- Glyph of Wyvern Sting / Glyph of Icy Solace [5.0.4+] / Glyph of Solace [5.1.0+]
 	-- #if AFTER 5.1.0
@@ -2754,7 +2754,7 @@ GLYPH_OF_WYVERN_STING_AND_SOLACE = r(57014, {	-- Glyph of Wyvern Sting / Glyph o
 });
 GLYPH_OF_YULONS_GRACE = r(225547, {	-- Glyph of Yu'lon's Grace
 	["name"] = "Glyph of Yu'lon's Grace",
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 MARK_OF_THE_CHEETAH = r(131152, {	-- Glyph of the Cheetah / Mark of the Cheetah [SL+]
 	-- #if AFTER 9.0.1
@@ -2762,7 +2762,7 @@ MARK_OF_THE_CHEETAH = r(131152, {	-- Glyph of the Cheetah / Mark of the Cheetah 
 	-- #else
 	["name"] = "Glyph of the Cheetah",
 	-- #endif
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 });
 MARK_OF_THE_DOE = r(225531, {	-- Glyph of the Doe / Mark of the Doe [SL+]
 	-- #if AFTER 9.0.1
@@ -2770,7 +2770,7 @@ MARK_OF_THE_DOE = r(225531, {	-- Glyph of the Doe / Mark of the Doe [SL+]
 	-- #else
 	["name"] = "Glyph of the Doe",
 	-- #endif
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 MARK_OF_THE_DUSKWING_RAVEN = r(360882, {	-- Mark of the Duskwing Raven
 	["name"] = "Mark of the Duskwing Raven",
@@ -2782,7 +2782,7 @@ MARK_OF_THE_SENTINEL = r(192842, {	-- Glyph of the Sentinel / Mark of the Sentin
 	-- #else
 	["name"] = "Glyph of the Sentinel",
 	-- #endif
-	["timeline"] = { "added 7.0.3" },
+	["timeline"] = { ADDED_7_0_3 },
 });
 
 
@@ -2834,7 +2834,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_VAMPIRIC_BLOOD,
 	}),
 	clWithoutLock(DEMONHUNTER, {
-		["timeline"] = { "added 7.0.1" },
+		["timeline"] = { ADDED_7_0_3 },
 		["groups"] = {
 			GLYPH_OF_CRACKLING_FLAMES,
 			GLYPH_OF_FALLOW_WINGS,
@@ -3008,7 +3008,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_WATER_ELEMENTAL_AND_DRAGONS_BREATH_AND_SPELLSTEAL,
 	}),
 	clWithoutLock(MONK, {
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			GLYPH_OF_CRACKLING_CRANE_LIGHTNING,
 			GLYPH_OF_CRACKLING_OX_LIGHTNING,
@@ -4545,7 +4545,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165466, {	-- Research: Blackfallow Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			["groups"] = insertionSort({
 				GLYPH_OF_BURNING_ANGER,
 				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,
@@ -4563,7 +4563,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165461, {	-- Research: Celestial Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: https://wowpedia.fandom.com/wiki/Research:_Celestial_Ink
 			-- That link shows a whole lot more than just the ones we originally had listed...
 			-- NOTE: This has been updated to reflect that list, double check this later.
@@ -4603,7 +4603,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165464, {	-- Research: Ethereal Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_AQUATIC_FORM,
@@ -4615,7 +4615,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165467, {	-- Research: Ink of Dreams
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
@@ -4627,7 +4627,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165465, {	-- Research: Ink of the Sea
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_FIGHTING_POSE,
@@ -4636,7 +4636,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165460, {	-- Research: Jadefire Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_ASTRAL_RECALL,
@@ -4649,7 +4649,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165456, {	-- Research: Lion's Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_BLESSING_OF_KINGS_AND_COMTEMPLATION,
@@ -4667,7 +4667,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165304, {	-- Research: Midnight Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
@@ -4683,7 +4683,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165564, {	-- Research: Moonglow Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_VIGILANCE_AND_FURIOUS_SUNDERING_AND_VICTORIOUS_THROW,
@@ -4691,7 +4691,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		spell(165463, {	-- Research: Shimmering Ink
-			["timeline"] = { "added 6.0.2" },
+			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_FREEZING_TRAP,
@@ -4780,13 +4780,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		cat(108, {	-- Research
 			r(61288, {["timeline"]={"deleted 6.0.2"}}),	-- Minor Inscription Research
 			r(61177, {["timeline"]={"deleted 6.0.2"}}),	-- Northrend Inscription Research
-			r(165461, {["timeline"]={"added 6.0.2"}}),	-- Research: Celestial Ink
-			r(165464, {["timeline"]={"added 6.0.2"}}),	-- Research: Ethereal Ink
-			r(165460, {["timeline"]={"added 6.0.2"}}),	-- Research: Jadefire Ink
-			r(165456, {["timeline"]={"added 6.0.2"}}),	-- Research: Lion's Ink
-			r(165304, {["timeline"]={"added 6.0.2"}}),	-- Research: Midnight Ink
-			r(165564, {["timeline"]={"added 6.0.2"}}),	-- Research: Moonglow Ink
-			r(165463, {["timeline"]={"added 6.0.2"}}),	-- Research: Shimmering Ink
+			r(165461, {["timeline"]={ADDED_6_0_2}}),	-- Research: Celestial Ink
+			r(165464, {["timeline"]={ADDED_6_0_2}}),	-- Research: Ethereal Ink
+			r(165460, {["timeline"]={ADDED_6_0_2}}),	-- Research: Jadefire Ink
+			r(165456, {["timeline"]={ADDED_6_0_2}}),	-- Research: Lion's Ink
+			r(165304, {["timeline"]={ADDED_6_0_2}}),	-- Research: Midnight Ink
+			r(165564, {["timeline"]={ADDED_6_0_2}}),	-- Research: Moonglow Ink
+			r(165463, {["timeline"]={ADDED_6_0_2}}),	-- Research: Shimmering Ink
 		}),
 		cat(107, {	-- Scrolls
 			r(69385),	-- Runescroll of Fortitude
@@ -4862,7 +4862,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(86005),	-- Inferno Ink
 		}),
 		cat(787, {	-- Scrolls & Research
-			r(165466, {["timeline"]={"added 6.0.2"}}),	-- Research: Blackfallow Ink*
+			r(165466, {["timeline"]={ADDED_6_0_2}}),	-- Research: Blackfallow Ink*
 			r(85785),	-- Runescroll of Fortitude II*
 			r(89370),	-- Scroll of Agility IX*
 			r(89368),	-- Scroll of Intellect IX*
@@ -4906,7 +4906,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(86644),	-- Origami Slime*
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		cat(779, {	-- Inks
 			r(111645),	-- Ink of Dreams
 			r(111646),	-- Starlight Ink
@@ -4933,7 +4933,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		cat(781, {	-- Scrolls & Research
 			r(112045),	-- Runescroll of Fortitude III
 			r(112996),	-- Scroll of Wisdom
-			r(165467, {["timeline"]={"added 6.0.2"}}),	-- Research: Ink of Dreams*
+			r(165467, {["timeline"]={ADDED_6_0_2}}),	-- Research: Ink of Dreams*
 		}),
 		cat(119, {	-- Shoulder Inscription
 			r(126995),	-- Greater Crane Wing Inscription
@@ -4963,7 +4963,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(127007),	-- Yu'lon Kite
 		}),
 	}))),
-	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 		cat(403, {	-- Merchant Orders
 			r(176513, {	-- Draenor Merchant Order
 				["u"] = TRAINING,	-- Profession Training Recipe
@@ -4986,8 +4986,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(178497),	-- Warbinder's Ink
 		}),
 		cat(420, {	-- Tools
-			r(227562, {["timeline"]={"added 7.0.3"}}),	-- Codex of the Clear Mind*
-			r(227561, {["timeline"]={"added 7.0.3"}}),	-- Tome of the Clear Mind*
+			r(227562, {["timeline"]={ADDED_7_0_3}}),	-- Codex of the Clear Mind*
+			r(227561, {["timeline"]={ADDED_7_0_3}}),	-- Tome of the Clear Mind*
 			r(178550, {	-- Draenic Mortar
 				["u"] = TRAINING, -- Not actually a temp training recipe but is only available to non-scribes who build the Scribe's Quarters so don't want this showing for scribes
 			}),
@@ -5043,12 +5043,12 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(166363),	-- Shadowtome
 		}),
 	}))),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 		r(195115, {	-- Inscription (Legion)
-			["timeline"]={ "added 7.0.3", "deleted 8.0.1" },
+			["timeline"]={ ADDED_7_0_3, "deleted 8.0.1" },
 			["collectible"] = false,	-- the profession itself is not a recipe
 		}),
-		r(264506, {["timeline"]={"added 8.0.1"}}),	-- Legion Inscription
+		r(264506, {["timeline"]={ADDED_8_0_1}}),	-- Legion Inscription
 		cat(454, {	-- Books & Scrolls
 			r(226248),	-- Codex of the Tranquil Mind [Rank 1]
 			r(227239),	-- Codex of the Tranquil Mind [Rank 2]
@@ -5096,60 +5096,60 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(192814),	-- Vantus Rune: Cenarius [Rank 1]
 			r(192866),	-- Vantus Rune: Cenarius [Rank 2]
 			r(192897),	-- Vantus Rune: Cenarius [Rank 3]
-			r(192816, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 1]
-			r(192868, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 2]
-			r(192899, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 3]
+			r(192816, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 1]
+			r(192868, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 2]
+			r(192899, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 3]
 			r(192811),	-- Vantus Rune: Dragons of Nightmare [Rank 1]
 			r(192863),	-- Vantus Rune: Dragons of Nightmare [Rank 2]
 			r(192894),	-- Vantus Rune: Dragons of Nightmare [Rank 3]
 			r(192813),	-- Vantus Rune: Elerethe Renferal [Rank 1]
 			r(192865),	-- Vantus Rune: Elerethe Renferal [Rank 2]
 			r(192896),	-- Vantus Rune: Elerethe Renferal [Rank 3]
-			r(192823, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 1]
-			r(192875, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 2]
-			r(192906, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 3]
-			r(229178, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Guarm [Rank 1]
-			r(229181, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Guarm [Rank 2]
-			r(229184, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Guarm [Rank 3]
-			r(192824, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Gul'dan [Rank 1]
-			r(192876, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Gul'dan [Rank 2]
-			r(192907, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Gul'dan [Rank 3]
-			r(229179, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Helya [Rank 1]
-			r(229182, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Helya [Rank 2]
-			r(229185, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Helya [Rank 3]
-			r(192820, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 1]
-			r(192872, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 2]
-			r(192903, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 3]
+			r(192823, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 1]
+			r(192875, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 2]
+			r(192906, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 3]
+			r(229178, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Guarm [Rank 1]
+			r(229181, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Guarm [Rank 2]
+			r(229184, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Guarm [Rank 3]
+			r(192824, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Gul'dan [Rank 1]
+			r(192876, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Gul'dan [Rank 2]
+			r(192907, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Gul'dan [Rank 3]
+			r(229179, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Helya [Rank 1]
+			r(229182, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Helya [Rank 2]
+			r(229185, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Helya [Rank 3]
+			r(192820, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 1]
+			r(192872, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 2]
+			r(192903, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 3]
 			r(192810),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 1]
 			r(192862),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 2]
 			r(192893),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 3]
-			r(192821, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Krosus [Rank 1]
-			r(192873, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Krosus [Rank 2]
-			r(192904, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Krosus [Rank 3]
+			r(192821, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Krosus [Rank 1]
+			r(192873, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Krosus [Rank 2]
+			r(192904, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Krosus [Rank 3]
 			r(192809),	-- Vantus Rune: Nythendra [Rank 1]
 			r(192861),	-- Vantus Rune: Nythendra [Rank 2]
 			r(192892),	-- Vantus Rune: Nythendra [Rank 3]
-			r(229177, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Odyn [Rank 1]
-			r(229180, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Odyn [Rank 2]
-			r(229183, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Odyn [Rank 3]
-			r(192815, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Skorpyron [Rank 1]
-			r(192867, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Skorpyron [Rank 2]
-			r(192898, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Skorpyron [Rank 3]
-			r(192818, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Spellblade Aluriel [Rank 1]
-			r(192870, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Spellblade Aluriel [Rank 2]
-			r(192901, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Spellblade Aluriel [Rank 3]
-			r(192822, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Star Augur Etraeus [Rank 1]
-			r(192874, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Star Augur Etraeus [Rank 2]
-			r(192905, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Star Augur Etraeus
-			r(192819, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Tichondrius [Rank 1]
-			r(192871, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Tichondrius [Rank 2]
-			r(192902, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Tichondrius [Rank 3]
-			r(238577, {["timeline"]={"added 7.2.5"}}),	-- Vantus Rune: Tomb of Sargeras [Rank 1]
-			r(238578, {["timeline"]={"added 7.2.5"}}),	-- Vantus Rune: Tomb of Sargeras [Rank 2]
-			r(238579, {["timeline"]={"added 7.2.5"}}),	-- Vantus Rune: Tomb of Sargeras [Rank 3]
-			r(192817, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Trilliax [Rank 1]
-			r(192869, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Trilliax [Rank 2]
-			r(192900, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Trilliax [Rank 3]
+			r(229177, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Odyn [Rank 1]
+			r(229180, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Odyn [Rank 2]
+			r(229183, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Odyn [Rank 3]
+			r(192815, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Skorpyron [Rank 1]
+			r(192867, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Skorpyron [Rank 2]
+			r(192898, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Skorpyron [Rank 3]
+			r(192818, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Spellblade Aluriel [Rank 1]
+			r(192870, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Spellblade Aluriel [Rank 2]
+			r(192901, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Spellblade Aluriel [Rank 3]
+			r(192822, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Star Augur Etraeus [Rank 1]
+			r(192874, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Star Augur Etraeus [Rank 2]
+			r(192905, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Star Augur Etraeus
+			r(192819, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Tichondrius [Rank 1]
+			r(192871, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Tichondrius [Rank 2]
+			r(192902, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Tichondrius [Rank 3]
+			r(238577, {["timeline"]={ADDED_7_2_5}}),	-- Vantus Rune: Tomb of Sargeras [Rank 1]
+			r(238578, {["timeline"]={ADDED_7_2_5}}),	-- Vantus Rune: Tomb of Sargeras [Rank 2]
+			r(238579, {["timeline"]={ADDED_7_2_5}}),	-- Vantus Rune: Tomb of Sargeras [Rank 3]
+			r(192817, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Trilliax [Rank 1]
+			r(192869, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Trilliax [Rank 2]
+			r(192900, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Trilliax [Rank 3]
 			r(192808),	-- Vantus Rune: Ursoc [Rank 1]
 			r(192860),	-- Vantus Rune: Ursoc [Rank 2]
 			r(192891),	-- Vantus Rune: Ursoc [Rank 3]

@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(43407),	-- Stormstrike Mace (7.3.5 - Used to be only Heroic Mode)
 						i(157583, {	-- Protector's Buckler
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(43406),	-- Cloak of the Gushing Wound (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(43375),	-- Trousers of the Arrakoa
 						-- #if AFTER 7.3.5
 						i(157567, {	-- Bodyguard's Treads
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(43405),	-- Sabatons of Erekem (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(43410),	-- Moragg's Chestguard (7.3.5 - Used to be only Heroic Mode)
 						i(157566, {	-- Vest of the Observant
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #endif
 						i(43382),	-- Band of Eyes
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(35647),	-- Handguards of Rapid Pursuit
 						-- #if AFTER 7.3.5
 						i(157569, {	-- Chain Leggings of the Tide
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37869),	-- Globule Signet (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -146,11 +146,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(35642),	-- Riot Shield
 						-- #if AFTER 7.3.5
 						i(157575, {	-- Crystal of Ensnared Power
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37861),	-- Necklace of Arcane Spheres (7.3.5 - Used to be only Heroic Mode)
 						i(157571, {	-- Gauntlets of Stuttering Reality
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37868),	-- Girdle of the Ethereal (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -168,10 +168,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(35645),	-- Poison Warden's Shotgun
 						i(157570, {	-- Helm of Cauterization
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157572, {	-- Pauldrons of the Great Tide
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(35646),	-- Lava Burn Gloves
 						-- #if AFTER 7.3.5
@@ -185,7 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["groups"] = {
 						-- #if AFTER 7.3.5
 						i(157568, {	-- Helm of Dire Vision
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(43403),	-- Shroud of Darkness (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37875),	-- Spaulders of the Violet Hold (7.3.5 - Used to be only Heroic Mode)
 						i(37884),	-- Azure Cloth Bindings (7.3.5 - Used to be only Heroic Mode)
 						i(150845, {	-- Bracers of Ley-Line Eradication
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37874),	-- Gauntlets of Capture (7.3.5 - Used to be only Heroic Mode)
 						i(37886),	-- Handgrips of the Savage Emmisary (7.3.5 - Used to be only Heroic Mode)
@@ -246,7 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["groups"] = {
 							i(43407),	-- Stormstrike Mace
 							i(157583, {	-- Protector's Buckler
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(43406),	-- Cloak of the Gushing Wound
 							-- #if AFTER 7.3.5
@@ -254,7 +254,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(43375),	-- Trousers of the Arrakoa (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157567, {	-- Bodyguard's Treads
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(43405),	-- Sabatons of Erekem
 							-- #if ANYCLASSIC
@@ -279,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 							i(43410),	-- Moragg's Chestguard
 							i(157566, {	-- Vest of the Observant
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #if AFTER 7.3.5
 							i(43382),	-- Band of Eyes (7.3.5 - Used to be only Normal Mode)
@@ -310,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(35647),	-- Handguards of Rapid Pursuit (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157569, {	-- Chain Leggings of the Tide
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37869),	-- Globule Signet
 							-- #if ANYCLASSIC
@@ -332,11 +332,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(35642),	-- Riot Shield (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157575, {	-- Crystal of Ensnared Power
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37861),	-- Necklace of Arcane Spheres
 							i(157571, {	-- Gauntlets of Stuttering Reality
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37868),	-- Girdle of the Ethereal
 							-- #if AFTER 7.3.5
@@ -363,10 +363,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(35645),	-- Poison Warden's Shotgun (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157570, {	-- Helm of Cauterization
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(157572, {	-- Pauldrons of the Great Tide
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #if AFTER 7.3.5
 							i(35646),	-- Lava Burn Gloves (7.3.5 - Used to be only Normal Mode)
@@ -391,7 +391,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["groups"] = {
 							ach(2153),	-- A Void Dance
 							i(157568, {	-- Helm of Dire Vision
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(43403),	-- Shroud of Darkness
 							-- #if AFTER 7.3.5
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37875),	-- Spaulders of the Violet Hold
 							i(37884),	-- Azure Cloth Bindings
 							i(150845, {	-- Bracers of Ley-Line Eradication
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37874),	-- Gauntlets of Capture
 							i(37886),	-- Handgrips of the Savage Emmisary

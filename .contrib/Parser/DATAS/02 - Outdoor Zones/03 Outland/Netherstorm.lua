@@ -535,7 +535,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10248,	-- You, Robot
 						["groups"] = {
 							i(134021, {	-- X-52 Rocket Helmet (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(30019),	-- Area 52 Defender's Pants
 							i(30014),	-- X-52 Pilot's Leggings
@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, {
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
-						["timeline"] = { "added 7.0.3.22260" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
 						["coord"] = { 44.0, 36.6, NETHERSTORM },
@@ -1599,7 +1599,7 @@ root(ROOTS.Zones, {
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
-						["timeline"] = { "added 7.0.3.22260" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
 						["requireSkill"] = 20222,	-- Goblin Engineering
@@ -1706,7 +1706,7 @@ root(ROOTS.Zones, {
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
-						["timeline"] = { "added 7.0.3.22260" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]
 						["coord"] = { 33.0, 64.0, NETHERSTORM },

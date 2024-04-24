@@ -327,7 +327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(35584),	-- Embroidered Gown of Zul'drak
 						i(157578, {	-- Belt of Vile Concoctions
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37628),	-- Slad'ran Coiled Cord (7.3.5 - Used to be only Heroic Mode)
@@ -364,7 +364,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(37633),	-- Ground Tremor Helm (7.3.5 - Used to be only Heroic Mode)
 						i(157584, {	-- Drape of Moorabi
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37630),	-- Shroud of Moorabi (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -423,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if AFTER 7.3.5
 							i(35584),	-- Embroidered Gown of Zul'drak (7.3.5 - Used to be only Normal Mode)
 							i(157578, {	-- Belt of Vile Concoctions
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #endif
 							i(37628),	-- Slad'ran Coiled Cord
@@ -459,7 +459,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 							i(37633),	-- Ground Tremor Helm
 							i(157584, {	-- Drape of Moorabi
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37630),	-- Shroud of Moorabi
 							-- #if AFTER 7.3.5

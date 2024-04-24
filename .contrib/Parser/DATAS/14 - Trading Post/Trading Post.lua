@@ -192,7 +192,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48317", REMOVED_10_0_5 } }, {
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(190504, {	-- Ensemble: Darkmoon Harlequin's Bells
 					i(190492),	-- Darkmoon Harlequin's Belt
@@ -279,7 +279,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48865", REMOVED_10_1_0 } }, {
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 } }, {
 			n(MONTHLY_REWARD, {
 				i(190164, {	-- Arsenal: Blades of Elune
 					i(190093), -- Elune's Fury
@@ -352,7 +352,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49407", REMOVED_10_1_0 } }, {
+		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 } }, {
 			n(MONTHLY_REWARD, {
 				i(190613), -- Savage Green Battle Turtle (MOUNT!)
 			}),
@@ -438,7 +438,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49890", REMOVED_10_1_5 } }, {
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(190169), -- Quawks (MOUNT!)
 			}),
@@ -598,7 +598,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 10.1.5.50747", REMOVED_10_1_7 } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {
 			n(MONTHLY_REWARD, {
 				i(190797, {	-- Ensemble: Bones of the Bloodhunter
 					i(190793),	-- Bloodhunter Footwraps
@@ -1123,7 +1123,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", REMOVED_10_2_0} }, {
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
 			n(MONTHLY_REWARD, {
 				i(190925),	-- Buttercup (PET!)
 			}),
@@ -1306,7 +1306,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 	}),
 	n(YEAR2024, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", REMOVED_10_2_5} }, {
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_5} }, {
 			n(MONTHLY_REWARD, {
 				i(211002),	-- Golden Mobile Timepiece
 			}),
@@ -1421,7 +1421,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5", REMOVED_10_2_5} }, {
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5} }, {
 			-- removed 10.2.5.53495
 			n(MONTHLY_REWARD, {
 				i(212220, {	-- Ensemble: Love Witch's Attire
@@ -1555,7 +1555,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495", REMOVED_10_2_6 } }, {
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
 			-- removed 10.2.5.53913
 			n(MONTHLY_REWARD, {
 				i(211432),	-- Teele (PET!)
@@ -1674,7 +1674,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 10.2.6"} }, {
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6} }, {
 			n(MONTHLY_REWARD, {
 				i(210409),	-- Aura (PET!)
 			}),

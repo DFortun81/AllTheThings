@@ -209,7 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		})),
 		n(QUESTS, {
 			q(46940, {	-- Using Lost Knowledge
-				["timeline"] = { "added 7.2.0.23530", REMOVED_7_3_0 },	-- estimated removal
+				["timeline"] = { ADDED_7_2_0, REMOVED_7_3_0 },	-- estimated removal
 			}),
 		}),
 		n(93787, {	-- Scouting Map
@@ -1274,7 +1274,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		n(VENDORS, {
 			i(143727, {	-- Champion's Salute (TOY!)
 				["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-				["timeline"] = { "added 7.2.0" },
+				["timeline"] = { ADDED_7_2_0 },
 			}),
 		}),
 	})),

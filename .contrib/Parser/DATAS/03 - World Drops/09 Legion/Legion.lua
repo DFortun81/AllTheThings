@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(ARMOR, {
 		filter(CLOTH, {
 			i(121390),	-- Anund's Bandages
@@ -128,7 +128,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 		i(121338),	-- Bent-Blade Axe
 		i(121381),	-- Chipped Colossus Blade
 		i(132168, {	-- Common Legion Blade
-			["timeline"] = { "added 7.0.3", REMOVED_7_1_0 } -- TODO: is it removed?
+			["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 } -- TODO: is it removed?
 		}),
 		i(121383),	-- Curious Nar'thalas Student's Staff
 		i(121335),	-- Fixing Axe

@@ -834,7 +834,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #endif
 			["rank"] = 4,
 		}),
-		r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
+		r(264455, {["timeline"]={ADDED_8_0_1}}),	-- Enchanting
 		r(13262, {	-- Disenchant
 			["collectible"] = false,
 		}),
@@ -955,7 +955,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			applyclassicphase(PHASE_FIVE, r(25080)),	-- Superior Agility
 			applyclassicphase(PHASE_FIVE, r(25072)),	-- Threat
 		}),
-		applyclassicphase(LEGION_PHASE_ONE, cat(706, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, cat(706, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- Illusions
 			r(217637),	-- Tome of Illusions: Azeroth
 		}))),
 		cat(699, {	-- Oils
@@ -1020,7 +1020,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(7793),	-- Lesser Intellect
 			r(13503),	-- Lesser Striking
 			r(13380),	-- Lesser Versatility / CLASSIC: Lesser Spirit
-			r(20032, {["timeline"]={REMOVED_4_0_3, "added 10.1.5" }}),	-- Lifestealing
+			r(20032, {["timeline"]={REMOVED_4_0_3, ADDED_10_1_5 }}),	-- Lifestealing
 			r(20036),	-- Major Intellect
 			r(20035),	-- Major Versatility / CLASSIC: Major Spirit
 			applyclassicphase(PHASE_THREE, r(23804)),	-- Mighty Intellect
@@ -1047,7 +1047,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #endif
 			["rank"] = 5,
 		}),
-		r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
+		r(264460, {["timeline"]={ADDED_8_0_1}}),	-- Outland Enchanting
 		cat(681, {	-- Boot Enchantments
 			r(34008),	-- Boar's Speed
 			r(34007),	-- Cat's Swiftness
@@ -1107,7 +1107,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(33995),	-- Major Strength
 			r(33994),	-- Precise Strikes / TBC: Spell Strike
 		}),
-		applyclassicphase(LEGION_PHASE_ONE, cat(705, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, cat(705, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- Illusions
 			r(217641),	-- Tome of Illusions: Outland
 		}))),
 		cat(688, {	-- Oils
@@ -1187,7 +1187,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #endif
 			["rank"] = 6,
 		}),
-		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting
+		r(264462, {["timeline"]={ADDED_8_0_1}}),	-- Northrend Enchanting
 		cat(673, {	-- Boot Enchantments
 			r(60606, {["timeline"]={ADDED_3_1_0}}),	-- Assault
 			r(60763, {["timeline"]={ADDED_3_1_0}}),	-- Greater Assault
@@ -1257,7 +1257,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 } }, {	-- Rods
 			r(60619),	-- Runed Titanium Rod
 		})),
-		applyclassicphase(LEGION_PHASE_ONE, cat(704, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, cat(704, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3} }, {	-- Illusions
 			r(217644),	-- Tome of Illusions: Northrend
 		}))),
 		cat(679, {	-- Shield Enchantments
@@ -1294,7 +1294,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #endif
 			["rank"] = 7,
 		}),
-		r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
+		r(264464, {["timeline"]={ADDED_8_0_1}}),	-- Cataclysm Enchanting
 		cat(668, {	-- Armor Enchantments
 			r(96264),	-- Agility
 			r(74252),	-- Assassin's Step
@@ -1333,7 +1333,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(74200),	-- Stamina
 			r(74229),	-- Superior Dodge
 		}),
-		cat(703, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		cat(703, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3} }, {	-- Illusions
 			r(217645),	-- Tome of Illusions: Cataclysm
 			r(217649),	-- Tome of Illusions: Elemental Lords
 		})),
@@ -1374,27 +1374,27 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(74244),	-- Windwalk
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		r(110400, {	-- Enchanting (Zen Master)
-			["timeline"]={ "added 5.0.4", REMOVED_8_0_1 },
+			["timeline"]={ ADDED_5_0_4, REMOVED_8_0_1 },
 			["collectible"] = false,
 			["rank"] = 8,
 		}),
-		r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting
+		r(264467, {["timeline"]={ADDED_8_0_1}}),	-- Pandaria Enchanting
 		cat(657, {	-- Armor Enchantments
 			r(104398),	-- Accuracy
 			r(104409),	-- Blurred Speed
 			r(104390),	-- Exceptional Strength
 			r(104395),	-- Glorious Stats
 			r(104391),	-- Greater Agility
-			r(103461, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Agility
+			r(103461, {["timeline"]={ADDED_5_0_4,REMOVED_6_0_2}}),	-- Greater Agility
 			r(104407),	-- Greater Haste
 			r(104416),	-- Greater Haste
-			r(103462, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Intellect
+			r(103462, {["timeline"]={ADDED_5_0_4,REMOVED_6_0_2}}),	-- Greater Intellect
 			r(104408),	-- Greater Precision
 			r(104401),	-- Greater Protection
-			r(103463, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Stamina
-			r(103465, {["timeline"]={"added 5.0.4",REMOVED_6_0_2}}),	-- Greater Strength
+			r(103463, {["timeline"]={ADDED_5_0_4,REMOVED_6_0_2}}),	-- Greater Stamina
+			r(103465, {["timeline"]={ADDED_5_0_4,REMOVED_6_0_2}}),	-- Greater Strength
 			r(104385),	-- Major Dodge
 			r(104338),	-- Mastery
 			r(104393),	-- Mighty Versatility
@@ -1408,7 +1408,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(104420),	-- Superior Mastery
 			r(104397),	-- Superior Stamina
 		}),
-		cat(702, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		cat(702, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3} }, {	-- Illusions
 			r(217650),	-- Tome of Illusions: Pandaria
 			r(217651),	-- Tome of Illusions: Secrets of the Shado-Pan
 		})),
@@ -1433,22 +1433,22 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(104425),	-- Windsong
 		}),
 	}))),
-	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 		r(158716, {	-- Enchanting (Draenor Master)
-			["timeline"]={ "added 6.0.2", REMOVED_8_0_1 },
+			["timeline"]={ ADDED_6_0_2, REMOVED_8_0_1 },
 			["collectible"] = false,
 		}),
-		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
+		r(264469, {["timeline"]={ADDED_8_0_1}}),	-- Draenor Enchanting
 		cat(349, {	-- Cloak
 			r(158877),	-- Breath of Critical Strike
 			r(158878),	-- Breath of Haste
 			r(158879),	-- Breath of Mastery
-			r(158880, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Breath of Multistrike
+			r(158880, {["timeline"]={ADDED_6_0_2,REMOVED_7_0_3}}),	-- Breath of Multistrike
 			r(158881),	-- Breath of Versatility
 			r(158884),	-- Gift of Critical Strike
 			r(158885),	-- Gift of Haste
 			r(158886),	-- Gift of Mastery
-			r(158887, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Gift of Multistrike
+			r(158887, {["timeline"]={ADDED_6_0_2,REMOVED_7_0_3}}),	-- Gift of Multistrike
 			r(158889),	-- Gift of Versatility
 		}),
 		cat(653, {	-- Illusions
@@ -1501,12 +1501,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(158892),	-- Breath of Critical Strike
 			r(158893),	-- Breath of Haste
 			r(158894),	-- Breath of Mastery
-			r(158895, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Breath of Multistrike
+			r(158895, {["timeline"]={ADDED_6_0_2,REMOVED_7_0_3}}),	-- Breath of Multistrike
 			r(158896),	-- Breath of Versatility
 			r(158899),	-- Gift of Critical Strike
 			r(158900),	-- Gift of Haste
 			r(158901),	-- Gift of Mastery
-			r(158902, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Gift of Multistrike
+			r(158902, {["timeline"]={ADDED_6_0_2,REMOVED_7_0_3}}),	-- Gift of Multistrike
 			r(158903),	-- Gift of Versatility
 		}),
 		cat(354, {	-- Other
@@ -1525,12 +1525,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(158907),	-- Breath of Critical Strike
 			r(158908),	-- Breath of Haste
 			r(158909),	-- Breath of Mastery
-			r(158910, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Breath of Multistrike
+			r(158910, {["timeline"]={ADDED_6_0_2,REMOVED_7_0_3}}),	-- Breath of Multistrike
 			r(158911),	-- Breath of Versatility
 			r(158914),	-- Gift of Critical Strike
 			r(158915),	-- Gift of Haste
 			r(158916),	-- Gift of Mastery
-			r(158917, {["timeline"]={"added 6.0.2",REMOVED_7_0_3}}),	-- Gift of Multistrike
+			r(158917, {["timeline"]={ADDED_6_0_2,REMOVED_7_0_3}}),	-- Gift of Multistrike
 			r(158918),	-- Gift of Versatility
 		}),
 		cat(352, {	-- Weapon
@@ -1543,12 +1543,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(159671),	-- Mark of Warsong
 		}),
 	}))),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 		r(195096, {	-- Enchanting (Legion Master)
-			["timeline"]={ "added 7.0.3", REMOVED_8_0_1 },
+			["timeline"]={ ADDED_7_0_3, REMOVED_8_0_1 },
 			["collectible"] = false,
 		}),
-		r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
+		r(264471, {["timeline"]={ADDED_8_0_1}}),	-- Legion Enchanting
 		cat(446, {	-- Cloak Enchantments
 			r(190878),	-- Binding of Agility [Rank 1]
 			r(191004),	-- Binding of Agility [Rank 2]
@@ -1586,9 +1586,9 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(190892),	-- Mark of the Claw [Rank 1]
 			r(191006),	-- Mark of the Claw [Rank 2]
 			r(191023),	-- Mark of the Claw [Rank 3]
-			r(235698, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Deadly [Rank 1]
-			r(235702, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Deadly [Rank 2]
-			r(235706, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Deadly [Rank 3]
+			r(235698, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Deadly [Rank 1]
+			r(235702, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Deadly [Rank 2]
+			r(235706, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Deadly [Rank 3]
 			r(190893),	-- Mark of the Distant Army [Rank 1]
 			r(191007),	-- Mark of the Distant Army [Rank 2]
 			r(191024),	-- Mark of the Distant Army [Rank 3]
@@ -1598,18 +1598,18 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(190894),	-- Mark of the Hidden Satyr [Rank 1]
 			r(191008),	-- Mark of the Hidden Satyr [Rank 2]
 			r(191025),	-- Mark of the Hidden Satyr [Rank 3]
-			r(235695, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Master [Rank 1]
-			r(235699, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Master [Rank 2]
-			r(235703, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Master [Rank 3]
-			r(235697, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Quick [Rank 1]
-			r(235701, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Quick [Rank 2]
-			r(235705, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Quick [Rank 3]
+			r(235695, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Master [Rank 1]
+			r(235699, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Master [Rank 2]
+			r(235703, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Master [Rank 3]
+			r(235697, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Quick [Rank 1]
+			r(235701, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Quick [Rank 2]
+			r(235705, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Quick [Rank 3]
 			r(228405),	-- Mark of the Trained Soldier [Rank 1]
 			r(228406),	-- Mark of the Trained Soldier [Rank 2]
 			r(228407),	-- Mark of the Trained Soldier [Rank 3]
-			r(235696, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 1]
-			r(235700, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 2]
-			r(235704, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 3]
+			r(235696, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Versatile [Rank 1]
+			r(235700, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Versatile [Rank 2]
+			r(235704, {["timeline"]={ADDED_7_1_5}}),	-- Mark of the Versatile [Rank 3]
 		}),
 		cat(490, {	-- Relics
 			r(209509),	-- Immaculate Fibril

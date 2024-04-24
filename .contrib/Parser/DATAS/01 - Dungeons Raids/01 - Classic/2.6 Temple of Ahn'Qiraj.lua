@@ -1215,7 +1215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				i(21230),	-- Ancient Qiraji Artifact
 				i(21762, {	-- Greater Scarab Coffer Key
 					["timeline"] = {
-						"added 1.13.0.28211",
+						ADDED_1_13_0,
 						"deleted 4.2.2.28211"
 					},
 				}),

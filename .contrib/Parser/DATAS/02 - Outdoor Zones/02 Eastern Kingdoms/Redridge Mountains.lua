@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(131588, {	-- Bravo Company Amice
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60722, {	-- Bravo Company Mantle
 							["timeline"] = { ADDED_4_0_3 },
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131589, {	-- Bravo Company Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131569, {	-- Muckdweller Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60715, {	-- Vial of Chloroform
 							["timeline"] = { ADDED_4_0_3 },
@@ -423,10 +423,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131576, {	-- Exterminator's Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156953, {	-- 'Liberated' Greataxe
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60714, {	-- Massive Firearm of Death
 							["timeline"] = { ADDED_4_0_3 },
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131517, {	-- Doody Shoes
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60688, {	-- Parker's Yardstick
 							["timeline"] = { ADDED_4_0_3 },
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 26.4, 10.4, REDRIDGE_MOUNTAINS },
 						}),
 						i(131557, {	-- Hauberk of the Changing Heart
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60710, {	-- Troteman's Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -728,10 +728,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131539, {	-- Chain of Recurring Raids
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(157001, {	-- Everstill Hewer
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60697, {	-- Indiscriminate Wand
 							["timeline"] = { ADDED_4_0_3 },
@@ -762,7 +762,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131540, {	-- Starvation Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60694, {	-- Starvation Vest
 							["timeline"] = { ADDED_4_0_3 },
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131541, {	-- Ventillated Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1061,7 +1061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131543, {		-- Leverage Wriststraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60700, {	-- Solomon's Gavel
 							["timeline"] = { ADDED_4_0_3 },
@@ -1137,7 +1137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131583, {	-- Shadowhide Footguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131538, {	-- Striders of the Prolific Sire
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60685, {	-- Yowling Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -1245,7 +1245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131556, {	-- Lakeshire Handwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60706, {	-- Sandals of the Neverending Bridge
 							["timeline"] = { ADDED_4_0_3 },
@@ -1342,7 +1342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131584, {	-- Treacherous Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60720, {	-- Treacherous Treads
 							["timeline"] = { ADDED_4_0_3 },
@@ -1673,7 +1673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131552, {	-- Mongrel Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60704, {	-- Mongrel Leggings
 							["timeline"] = { ADDED_4_0_3 },

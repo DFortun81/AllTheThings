@@ -1409,7 +1409,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
 						["timeline"] = {
-							"added 1.11.1.5462",
+							ADDED_1_11_1,
 							REMOVED_2_0_1
 						},
 					}),
@@ -1620,7 +1620,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(142370, {	-- Plans: Arcanite Champion
-						["timeline"] = { "added 7.1.5.23360" },
+						["timeline"] = { ADDED_7_1_5 },
 					}),
 					i(12780, {	-- General Drakkisath's Command
 						["timeline"] = { REMOVED_4_0_3 },

@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(NORTHREND, {
 		m(1602, {	-- Icecrown (DK starting zone)
 			n(QUESTS, {
-				q(58877, bubbleDown({ ["timeline"] = { "added 8.3.0.33062" } }, {	-- Death's Power Grows
+				q(58877, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Death's Power Grows
 					["qg"] = 163016,	-- The Lich King
 					["coord"] = { 49.5, 90.7, 1602 },
 					["classes"] = { DEATHKNIGHT },
@@ -25,7 +25,7 @@ root(ROOTS.Zones, {
 					["qg"] = 163016,	-- The Lich King
 					["sourceQuest"] = 58877,	-- Death's Power Grows
 					["coord"] = { 49.5, 90.7, 1602 },
-					["timeline"] = { "added 8.3.0.33062" },
+					["timeline"] = { ADDED_8_3_0 },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -33,7 +33,7 @@ root(ROOTS.Zones, {
 					["qg"] = 163016,	-- The Lich King
 					["sourceQuest"] = 58877,	-- Death's Power Grows
 					["coord"] = { 49.5, 90.7, 1602 },
-					["timeline"] = { "added 8.3.0.33062" },
+					["timeline"] = { ADDED_8_3_0 },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
 				}),
@@ -45,7 +45,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 82.0, 46.3, 648 },	-- Acherus: The Ebon Hold (Lower Level)
 					["description"] = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
-					["timeline"] = { "added 8.3.0.33062" },
+					["timeline"] = { ADDED_8_3_0 },
 					["classes"] = { DEATHKNIGHT },
 				}),
 			}),

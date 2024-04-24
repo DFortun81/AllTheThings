@@ -1606,19 +1606,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
-								["timeline"] = { "added 7.2.5.24076" },
+								["timeline"] = { ADDED_7_2_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(3000, i(151615, {	-- Weathered Heirloom Scabbard
-								["timeline"] = { "added 7.2.5.24076" },
+								["timeline"] = { ADDED_7_2_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-								["timeline"] = { "added 8.1.5.29701" },
+								["timeline"] = { ADDED_8_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(167732, {	-- Battle-Hardened Heirloom Scabbard
-								["timeline"] = { "added 8.1.5.29701" },
+								["timeline"] = { ADDED_8_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
@@ -1652,7 +1652,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(150745, {	-- Scouting Map: The Eastern Kingdoms Campaign (TOY!)
-								["timeline"] = { "added 7.2.5.23910" },
+								["timeline"] = { ADDED_7_2_5 },
 								["races"] = HORDE_ONLY,
 							})),
 							gold(10000, i(187899, {	-- Scouting Map: The Many Curiosities of Outland (TOY!)
@@ -1668,7 +1668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(150744, {	-- Scouting Map: Walking Kalimdor with the Earthmother (TOY!)
-								["timeline"] = { "added 7.2.5.23910" },
+								["timeline"] = { ADDED_7_2_5 },
 								["races"] = HORDE_ONLY,
 							})),
 						}),
@@ -1682,7 +1682,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							gold(650, i(122354)),	-- Devout Aurastone Hammer
 							gold(750, i(122353)),	-- Dignified Headmaster's Charge
 							gold(650, i(140773, {	-- Eagletalon Spear
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							gold(500, i(122391)),	-- Flamescarred Draconian Deflector
 							gold(750, i(122368)),	-- Grand Staff of Jordan
@@ -1821,7 +1821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(10393, {	-- Undercity Cockroach (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 						}),
 					},
 				}),

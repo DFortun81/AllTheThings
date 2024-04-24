@@ -7,14 +7,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 		n(QUESTS, {
 			q(46268, {	-- A Found Memento
 				["provider"] = { "o", 268478 },	-- Battered Trinket
-				["timeline"] = { "added 7.2.0.23746" },
+				["timeline"] = { ADDED_7_2_0 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(47097, {	-- A Walk to Remember
 				["sourceQuests"] = { 47202 },	-- A Personal Message
 				["provider"] = { "n", 121224 },	-- Anduin Wrynn
 				["coord"] = { 41.4, 59.4, BROKEN_SHORE },
-				["timeline"] = { "added 7.2.0.23746" },
+				["timeline"] = { ADDED_7_2_0 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(46832, {	-- Aalgen Point
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 47097 },	-- A Walk to Remember
 				["provider"] = { "n", 121226 },	-- Anduin Wrynn
 				["coord"] = { 52.5, 48.4, BROKEN_SHORE },
-				["timeline"] = { "added 7.2.0.23746" },
+				["timeline"] = { ADDED_7_2_0 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(47139, {	-- Mark of the Sentinax
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46268 },	-- A Found Memento
 				["provider"] = { "n", 120281 },	-- Captain Shwayder
 				["coord"] = { 41.6, 59.6, BROKEN_SHORE },
-				["timeline"] = { "added 7.2.0.23746" },
+				["timeline"] = { ADDED_7_2_0 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(46250, {	-- Take Out the Head...
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 47112 },	-- Lost Souls
 				["provider"] = { "n", 121237 },	-- Anduin Wrynn
 				["coord"] = { 58.2, 26.6, BROKEN_SHORE },
-				["timeline"] = { "added 7.2.0.23746" },
+				["timeline"] = { ADDED_7_2_0 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(46772, {	-- The Mage Tower

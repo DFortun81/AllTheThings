@@ -7,16 +7,16 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 	i(122340),	-- Timeworn Heirloom Armor Casing
 	i(122341),	-- Timeworn Heirloom Scabbard
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["timeline"] = { "added 7.2.5.24076" },
+		["timeline"] = { ADDED_7_2_5 },
 	}),
 	i(151615, {	-- Weathered Heirloom Scabbard
-		["timeline"] = { "added 7.2.5.24076" },
+		["timeline"] = { ADDED_7_2_5 },
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(167732, {	-- Battle-Hardened Heirloom Scabbard
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
 		["timeline"] = { ADDED_9_1_5 },
@@ -218,8 +218,8 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		i(122396, {	-- Brawler's Razor Claws
 			-- TODO: more accurate timeline updates
 			["timeline"] = {
-				"added 7.2", REMOVED_8_0_1,
-				"added 8.2", REMOVED_9_0_1,
+				ADDED_7_2_0, REMOVED_8_0_1,
+				ADDED_8_2_0, REMOVED_9_0_1,
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(79131)),	-- Burnished Warden Staff

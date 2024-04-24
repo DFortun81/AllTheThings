@@ -2282,7 +2282,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(140784, {	-- Fel Piston Stabilizer
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 						["crs"] = {
 							17711,	-- Doomwalker
 							22859,	-- Shadowhoof Summoner

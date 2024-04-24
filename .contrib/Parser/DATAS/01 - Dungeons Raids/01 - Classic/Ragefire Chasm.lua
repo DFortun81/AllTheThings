@@ -22,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(30998, {	-- A New Enemy
 					["qg"] = 61823,	-- High Sorceress Aryna
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(30969, {	-- A New Enemy
 					["qg"] = 61716,	-- Invoker Xorenth
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(31034, {	-- Enemies Below [Orgrimmar]
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26866, {	-- Enemies Below [Thunder Bluff]
@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(31036, {	-- Enemies Below [Thunder Bluff]
 					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26867, {	-- Enemies Below [Undercity]
@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(31037, {	-- Enemies Below [Undercity]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5728, {	-- Hidden Enemies (3/5)
@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(30995, {	-- No Man Left Behind
 					["qg"] = 61822,	-- SI:7 Field Commander Dirken
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
@@ -164,7 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(30984, {	-- No Orc Left Behind
 					["qg"] = 61823,	-- Commander Bagran
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
@@ -287,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(30996, {	-- The Dark Shaman
 					["qg"] = 61823,	-- High Sorceress Aryna
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
@@ -298,31 +298,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "n", 61528 },	-- Lava Guard Gordoth
 						}),
 						i(82893, {	-- Hide Vest of the Shaman
-							["timeline"] = { "added 5.0.1.15589" },
+							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(82891, {	-- Robes of the Doomed Ritual
-							["timeline"] = { "added 5.0.1.15589" },
+							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(131712, {	-- Scaled Vest of the Shaman
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(82895, {	-- Searing Belt
-							["timeline"] = { "added 5.0.1.15589" },
+							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(82892, {	-- Ragefire Leggings
-							["timeline"] = { "added 5.0.1.15589" },
+							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(82894, {	-- Stone Guard Greaves
-							["timeline"] = { "added 5.0.1.15589" },
+							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(131711, {	-- Stone Guard Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				q(30983, {	-- The Dark Shaman
 					["qg"] = 61716,	-- Invoker Xorenth
-					["timeline"] = { "added 5.0.1.15589" },
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
@@ -464,19 +464,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(694, {	-- Adarogg
 				["creatureID"] = 61408,
-				["timeline"] = { "added 5.0.4" },
+				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = {
 					i(82880, {	-- Fang of Adarogg
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(82879, {	-- Collarspike Bracers
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(151422, {	-- Bonecoal Waistguard
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(82772, {	-- Snarlmouth Leggings
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(151421, {	-- Scorched Blazehound Boots
 						["timeline"] = { ADDED_7_3_0 },
@@ -485,53 +485,53 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(695, {	-- Dark Shaman Koranthal
 				["creatureID"] = 61412,
-				["timeline"] = { "added 5.0.4" },
+				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = {
 					i(82882, {	-- Dark Ritual Cape
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(132551, {	-- Dark Shaman's Jerkin
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(82877, {	-- Grasp of the Broken Totem
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(82881, {	-- Cuffs of Black Elements
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 				},
 			}),
 			e(696, {	-- Slagmaw
 				["creatureID"] = 61463,
-				["timeline"] = { "added 5.0.4" },
+				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = {
 					i(82878, {	-- Fireworm Robes
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(82885, {	-- Flameseared Carapace
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(132552, {	-- Chitonous Bindings
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(82884, {	-- Chitonous Bracers
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 				},
 			}),
 			e(697, {	-- Lava Guard Gordoth
 				["creatureID"] = 61528,
-				["timeline"] = { "added 5.0.4" },
+				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = {
 					ach(629),	-- Ragefire Chasm
 					ach(5038, {	-- Ragefire Chasm Guild Run
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(82888, {	-- Heartboiler Staff
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(82883, {	-- Bloodcursed Felblade
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 					i(151425, {	-- Gordoth's Crushers
 						["timeline"] = { ADDED_7_3_0 },
@@ -540,7 +540,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(82886, {	-- Gorewalker Treads
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 				},
 			}),

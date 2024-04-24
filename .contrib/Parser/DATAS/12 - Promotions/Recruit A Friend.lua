@@ -31,24 +31,24 @@ root(ROOTS.Promotions, {
 		}),
 
 		ach(8213, {	-- Friends In Places Higher Yet
-			["timeline"] = { "added 5.0.1.15544" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		i(83086, {	-- Heart of the Nightwing (MOUNT!)
-			["timeline"] = { "added 5.0.1.15544" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 
 		ach(8794, {	-- Friends In Places Even Higher Than That
-			["timeline"] = { "added 5.4.1.17481" },
+			["timeline"] = { ADDED_5_4_2 },
 		}),
 		i(106246, {	-- Emerald Hippogryph (MOUNT!)
-			["timeline"] = { "added 5.4.1.17481" },
+			["timeline"] = { ADDED_5_4_2 },
 		}),
 
 		ach(9925, {	-- Friends In Places Yet Even Higher Than That
-			["timeline"] = { "added 6.0.1.18711" },
+			["timeline"] = { ADDED_6_0_2 },
 		}),
 		i(118515, {	-- Cindermane Charger (MOUNT!)
-			["timeline"] = { "added 6.0.1.18711" },
+			["timeline"] = { ADDED_6_0_2 },
 		}),
 
 		-- Chinese & Taiwan Servers only until 5.4.1
@@ -74,7 +74,7 @@ root(ROOTS.Promotions, {
 		}),
 
 		-- Desert Path
-		i(173300, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
+		i(173300, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = {
 				i(171324),	-- Renowned Explorer's Akubra
@@ -89,15 +89,15 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		i(171363, {	-- Illusion: Stinging Sands (ILLUSION!)
-			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
+			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
-			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
+			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173297, {	-- Explorer's Dunetrekker (MOUNT!)
-			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
+			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
-		i(173298, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 } }, {	-- Explorer's Certification
+		i(173298, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Explorer's Certification
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = {
 				title(410),	-- Renowned Explorer <Name>
@@ -105,21 +105,21 @@ root(ROOTS.Promotions, {
 		})),
 		i(171333, {	-- Renowned Explorer's Rucksack
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
+			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(171361, {	-- Renowned Explorer's Tabard
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
+			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173296, {	-- Rikki (PET!)
-			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
+			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 	})),
 
 	-- Current Rewards
 	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(173301, {	-- Game Time
-			["timeline"] = { "added 8.2.5.31958" },
+			["timeline"] = { ADDED_8_2_5 },
 		}),
 		i(204183, {	-- Volatile Self-Driving Toolbox (PET!)
 			["timeline"] = { ADDED_10_0_7 },

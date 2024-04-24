@@ -418,7 +418,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78486),	-- Ti'tahk, the Steps of Time
 							i(78480),	-- Vishanka, Jaws of the Earth
 							i(89810, {	-- Bounty of a Sundered Land
-								["timeline"] = { "added 5.0.3" },
+								["timeline"] = { ADDED_5_0_4 },
 							}),
 							i(152981, {	-- Unstable Tendril (PET!)
 								["timeline"] = { ADDED_7_3_0 },

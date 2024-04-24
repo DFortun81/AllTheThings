@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
-		["timeline"] = { "added 6.0.2" },
+		["timeline"] = { ADDED_6_0_2 },
 		["maps"] = { 588, 589 },	-- Ashran & Ashran Mine
 		["lvl"] = { 25 },
 		["g"] = {
@@ -1988,7 +1988,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				i(184042, {	-- Nightborne Liver
 					["description"] = "Can be looted from enemy Nightborne players... although interestingly enough Horde players can loot this from Void Elves. (Albeit they can't turn it in anywhere.)",
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(112122, {	-- Orc Tooth

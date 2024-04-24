@@ -258,7 +258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["description"] = "This is a neutral mob that wanders the road.",
 						["groups"] = {
 							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							i(38506, {	-- Don Carlos' Famous Hat
 								["timeline"] = { REMOVED_7_0_3 },

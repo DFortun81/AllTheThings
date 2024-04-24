@@ -321,10 +321,10 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	}),
 	ach(10587, {	-- Hot Swapper
 		["provider"] = { "i", 130251 },	-- Jewelcraft
-		["timeline"] = { "added 7.0.3.21134" },
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 	ach(10761, {	-- Resourceful
-		["timeline"] = { "added 7.0.3.21491" },
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 	ach(18898, sharedDataSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- That's Just Cruel
 		crit(61656, {	-- Nefarian Defeated
@@ -344,7 +344,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	})),
 	ach(10588, {	-- The Shortest Distance
 		["provider"] = { "i", 132518 },	-- Blingtron's Circuit Design Tutorial
-		["timeline"] = { "added 7.0.3.21134" },
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 })));
 

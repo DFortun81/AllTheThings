@@ -849,19 +849,19 @@ root(ROOTS.Zones, {
 							n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 								["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 								["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
-								["timeline"] = { "added 7.0.3.22290" },
+								["timeline"] = { ADDED_7_0_3 },
 								["groups"] = {
 									i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 									i(136927, {	-- Scarlet Confessional Book (TOY!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 									i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 									i(136972, {	-- Tome of Hex: Cockroach (CI!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 								},
 							}),
@@ -2328,10 +2328,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(39209, {	-- Sholazar Basin -- Adventure Guide
-						["timeline"] = { "added 6.2.0.19934", REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
+						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(39212, {	-- Sholazar Basin -- Adventure Guide
-						["timeline"] = { "added 6.2.0.19934", REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
+						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(13830, {	-- The Ghostfish
 						["qg"] = 28742,	-- Marcia Chase
@@ -2386,7 +2386,7 @@ root(ROOTS.Zones, {
 					}),
 					q(39210, {	-- The Magical Kingdom of Dalaran (Adventure Guide)
 						["description"] = "Can be acquired through the Adventure Guide.",
-						["timeline"] = { "added 6.2.0.19934" },
+						["timeline"] = { ADDED_6_2_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
@@ -2906,7 +2906,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(79131, {	-- Burnished Warden Staff
-								["timeline"] = { "added 5.0.1.15464", REMOVED_6_1_0 },
+								["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42950, {	-- Champion Herod's Shoulder
 								["timeline"] = { REMOVED_6_1_0 },
@@ -2987,7 +2987,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_3_3_0 },
 							}),
 							i(129826, {	-- Nursery Spider (PET!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(48120, {	-- Obsidian Hatchling (PET!)
 								["timeline"] = { ADDED_3_2_0 },
@@ -3063,13 +3063,13 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_9_2_5 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(137663, {	-- Soft Foam Sword (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(104323, {	-- The Swineskin (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
 								["timeline"] = { ADDED_3_3_3 },
@@ -3298,7 +3298,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "deleted 7.0.3.22248" },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
 							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
@@ -3951,7 +3951,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "deleted 7.0.3.22248" },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
 							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)

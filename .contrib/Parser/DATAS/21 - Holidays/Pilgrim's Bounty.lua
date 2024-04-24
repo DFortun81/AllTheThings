@@ -617,16 +617,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					["timeline"] = { ADDED_3_2_2 },
 				}),
 				i(116404, {	-- Pilgrim's Bounty
-					["timeline"] = { "added 6.0.1.18566" },
+					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
 						i(116401, {	-- Fine Pilgrim's Hat
-							["timeline"] = { "added 6.0.1.18566" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(116403, {	-- Bush Chicken (PET!)
-							["timeline"] = { "added 6.0.1.18566" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(116400, {	-- Silver-Plated Turkey Shooter (TOY!)
-							["timeline"] = { "added 6.0.1.18566" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),

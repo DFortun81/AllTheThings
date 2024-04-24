@@ -1349,10 +1349,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3936),	-- Not One, But Two Jormungars (10 player)
 						ach(3797),	-- Upper Back Pain (10 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						a(i(47612)),	-- Rod of Imprisoned Souls
 						h(i(47856)),	-- Scepter of Imprisoned Souls
@@ -1516,7 +1516,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["groups"] = {
 						ach(3800),	-- The Traitor King (10 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						h(i(47911)),	-- Anguish
 						a(i(47815)),	-- Cold Convergence
@@ -1569,10 +1569,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3936),	-- Not One, But Two Jormungars (10 player)
 						ach(3797),	-- Upper Back Pain (10 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						a(i(47922)),	-- Rod of Imprisoned Souls
 						h(i(47995)),	-- Scepter of Imprisoned Souls
@@ -1739,7 +1739,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3800),	-- The Traitor King (10 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						h(i(48056)),	-- Anguish
 						a(i(47968)),	-- Cold Convergence
@@ -1860,10 +1860,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						h(i(47261)),	-- Barb of Tarasque
 						a(i(46979)),	-- Blade of Tarasque
@@ -2055,7 +2055,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["groups"] = {
 						ach(3816),	-- The Traitor King (25 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						a(i(47233)),	-- Archon Glaive
 						h(i(47329)),	-- Hellion Glaive
@@ -2112,10 +2112,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						h(i(47422)),	-- Barb of Tarasque
 						a(i(46980)),	-- Blade of Tarasque
@@ -2304,7 +2304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3816),	-- The Traitor King (25 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						a(i(47239)),	-- Archon Glaive
 						h(i(47491)),	-- Hellion Glaive

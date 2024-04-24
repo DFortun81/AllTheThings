@@ -122,7 +122,7 @@ root(ROOTS.Zones, {
 							i(52932),	-- Parachute Wrist Straps
 							i(52903),	-- Pilot's Gloves
 							i(131841, {	-- Rotor Chain
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -220,7 +220,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(55885),	-- Dampwick's "Best" Robes
 							i(131838, {	-- Miner's Overcoat
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(52944),	-- Miner's Vest
 						},
@@ -233,7 +233,7 @@ root(ROOTS.Zones, {
 							i(52928),	-- Banana Holder
 							i(52898),	-- Banana Peel Slippers
 							i(131837, {	-- Monkey Handler Fists
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(52943),	-- Monkey Handler Gloves
 						},
@@ -361,7 +361,7 @@ root(ROOTS.Zones, {
 							i(52931),	-- Orcish Scout Boots
 							i(52948),	-- Sailor's Leggings
 							i(131840, {	-- Sailor's Legguards
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(52902),	-- Salvaged Bracers
 						},
@@ -533,7 +533,7 @@ root(ROOTS.Zones, {
 							i(52899),	-- Weed Fiber Pants
 							i(52945),	-- Weed Stompers
 							i(131839, {	-- Weed-Flattening Greatboots
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),

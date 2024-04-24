@@ -1000,7 +1000,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_3_0_2, "added 6.0.1", REMOVED_7_0_3 },
+			["timeline"] = { CREATED_3_0_2, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(36455),	-- Plated Bulwark
 		i(36456),	-- Icy Kite Shield

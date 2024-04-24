@@ -421,7 +421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(11474, {	-- Sprite Darter Egg (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 							-- #if BEFORE WRATH
 							["races"] = ALLIANCE_ONLY,
 							-- #endif
@@ -452,10 +452,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131570, {	-- Cloudcaller Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131571, {	-- Cinch of the Scattering Wind
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -478,10 +478,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131519, {	-- Apothecary Chain Pants
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131520, {	-- Shadraspawn Waistguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -548,13 +548,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(131544, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131545, {	-- Spider Venom Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -580,13 +580,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(131510, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131511, {	-- Spider Venom Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -718,7 +718,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131495, {	-- Stomachache Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -741,7 +741,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131536, {	-- Stormfeather Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -785,10 +785,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131546, {	-- Gauntlets of Strange Words
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156945, {	-- Talon Hatchet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -812,10 +812,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131518, {	-- Gauntlets of Strange Words
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156945, {	-- Talon Hatchet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131542, {	-- Soul Eater Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -891,7 +891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131509, {	-- Soul Eater Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1041,10 +1041,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131537, {	-- Blastbrew Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156946, {	-- Goopy Mallet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1068,10 +1068,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131501, {	-- Slime Hunter Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156946, {	-- Goopy Mallet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131553, {	-- Gryphon Master's Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
                         i(59235, {	-- Razorbeak Amulet
 							["timeline"] = { ADDED_4_0_3 },
@@ -1346,10 +1346,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131549, {	-- Aerie Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131550, {	-- Aerie War Cap
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1373,10 +1373,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131526, {	-- Virulent Headpiece
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131527, {	-- Venomous Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1679,10 +1679,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131547, {	-- Gwenyth's Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131548, {	-- Grips of Fanatical Zealotry
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1706,10 +1706,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131524, {	-- Gwenyth's Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131525, {	-- Grips of Fanatical Zealotry
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131498, {	-- Encroaching Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1961,7 +1961,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
-							["timeline"] = { REMOVED_4_0_3, "added 9.0.1" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_9_0_1 },
 						}),
 					},
 				}),
@@ -1994,7 +1994,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.8, 57.4, THE_HINTERLANDS },
 						{ 64.0, 54.6, THE_HINTERLANDS },
 					},
-					["timeline"] = { "added 7.0.3.22280" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(8210, {	-- Razortalon
 					-- #if AFTER CATA

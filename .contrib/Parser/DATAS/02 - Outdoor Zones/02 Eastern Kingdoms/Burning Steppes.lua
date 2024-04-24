@@ -225,7 +225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 115805 },	-- Hoddruc Bladebender
 					},
 					["coord"] = { 46.8, 44.6, BURNING_STEPPES },
-					["timeline"] = { "added 7.1.5.23038" },
+					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = BLACKSMITHING,
 					["crs"] = {
 						48201,	-- Blackrock Sergeant
@@ -885,7 +885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156964, {	-- Clutch Rearrangement Tool
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1733,10 +1733,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(156965, {	-- Enchanted Scorpid Tail
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157011, {	-- Envenomed Scorpid Tail
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1755,7 +1755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156965, {	-- Enchanted Scorpid Tail
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2078,7 +2078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 115805,	-- Hoddruc Bladebender
 					["sourceQuest"] = 44926,	-- A Familiar Axe to Grind
 					["coord"] = { 46.8, 44.9, BURNING_STEPPES },
-					["timeline"] = { "added 7.1.5.23038" },
+					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
 						objective(1, {	-- 0/30 Axe Blade
@@ -2091,7 +2091,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
@@ -2285,7 +2285,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
-							["timeline"] = { "added 1.0.0", REMOVED_4_0_3, ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
+							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
 						}),
 					},
 				}),
@@ -2316,10 +2316,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(115805, {	-- Hoddruc Bladebender
 					["sourceQuest"] = 44927,	-- Worth Its Weight in Steel
 					["coord"] = { 46.9, 44.6, BURNING_STEPPES },
-					["timeline"] = { "added 7.1.5.23038" },
+					["timeline"] = { ADDED_7_1_5 },
 					["groups"] = {
 						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),

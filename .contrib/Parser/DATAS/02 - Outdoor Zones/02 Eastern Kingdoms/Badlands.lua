@@ -1127,7 +1127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157008, {	-- Blam-Hatchet
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1419,10 +1419,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156961, {	-- Martek's Stick of Truthiness
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156962, {	-- Genuine Deathwing Fang
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2227,7 +2227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2624, {	-- Thinking Cap
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.0" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
 					["cr"] = 2718,	-- Dustbelcher Shaman
 				}),
 			}),

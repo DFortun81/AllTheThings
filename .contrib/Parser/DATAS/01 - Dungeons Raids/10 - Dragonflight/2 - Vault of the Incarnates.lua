@@ -799,15 +799,15 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				ZoneDrops(),
 				-- Mythic Only Temp BoP Items
 				n(ZONE_DROPS, {
-					i(202146, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
-					i(202148, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
-					i(202145, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Frozen Claw Mantle [BoP]
-					i(202150, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Galvanic Gaiters [BoP]
-					i(202144, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Greathelm of Horned Fury [BoP]
-					i(202151, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202147, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primal Seeker's Leggings [BoP]
-					i(202149, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
-					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
+					i(202146, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
+					i(202148, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
+					i(202145, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Frozen Claw Mantle [BoP]
+					i(202150, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Galvanic Gaiters [BoP]
+					i(202144, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Greathelm of Horned Fury [BoP]
+					i(202151, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					i(202147, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Primal Seeker's Leggings [BoP]
+					i(202149, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
+					i(202143, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
 				}),
 				Boss(ERANOG, {
 					ach(16346),	-- Mythic: Eranog

@@ -67,7 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["isRaid"] = true,
 				["g"] = {
 					i(137778, {	-- Vantus Rune Technique: Tichondrius [Rank 3] (RECIPE!)
-						["timeline"] = { "added 7.1.0" },
+						["timeline"] = { ADDED_7_1_0 },
 					}),
 					i(141448),	-- Imp Mother's Loincloth
 					i(141423),	-- Crop Top Chain Hauberk
@@ -138,7 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["isRaid"] = true,
 				["g"] = {
 					i(142108, {	-- Vantus Rune Technique: Guarm [Rank 3] (RECIPE!)
-						["timeline"] = { "added 7.1.0" },
+						["timeline"] = { ADDED_7_1_0 },
 					}),
 					i(141538),	-- Giant's Handkerchief
 					i(141433),	-- Assorted Dragonscale Bracers
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["isRaid"] = true,
 				["g"] = {
 					i(142109, {	-- Vantus Rune Technique: Helya [Rank 3] (RECIPE!)
-						["timeline"] = { "added 7.1.0" },
+						["timeline"] = { ADDED_7_1_0 },
 					}),
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						-- ["sourceQuest"] = , TODO
@@ -254,7 +254,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["isRaid"] = true,
 				["g"] = {
 					i(142107, {	-- Vantus Rune Technique: Odyn [Rank 3] (RECIPE!)
-						["timeline"] = { "added 7.1.0" },
+						["timeline"] = { ADDED_7_1_0 },
 					}),
 					i(140658),	-- Skull of Nithogg
 					i(141420),	-- Coif of Unstable Discharge

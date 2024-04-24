@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 28714,	-- Fel Moss Corruption
 							["coord"] = { 45.8, 73.0, SHADOWGLEN },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { MONK },
 						}),
@@ -217,7 +217,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(5399),	-- Tracking Boots
 								i(11190),	-- Viny Gloves
 								i(131816, {	-- Moss-Encrusted Chain Pants
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(4907),	-- Woodland Tunic
 								i(11189),	-- Woodland Robes
 								i(131705, {	-- Woodland Chainmail
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31169, {	-- The Art of the Monk
 							["qg"] = 63331,	-- Laoxi
 							["coord"] = { 48.6, 52.8, SHADOWGLEN },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { MONK },
 						}),
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								i(5394),	-- Archery Training Gloves
 								i(131815, {	-- Glen Culler's Grips
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(11187),	-- Stemleaf Bracers
 							},
@@ -587,7 +587,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(5405),	-- Draped Cloak
 								i(6058),	-- Blackened Leather Belt
 								i(131704, {	-- Web Covered Mail Belt
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -1109,7 +1109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5593),	-- Crag Buckler
 						i(131230, {	-- Cloudsbreak Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5618, {	-- Scout's Cloak
 							-- #if ANYCLASSIC
@@ -1128,7 +1128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(5605),	-- Pruning Knife
 						i(157016, {	-- Gnarled Gavel
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1461,7 +1461,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(131229, {	-- Shackled Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1578,7 +1578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131210, {	-- Gritroot Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(9599),	-- Barkmail Leggings
 						i(9603, {	-- Gritroot Staff
@@ -1661,7 +1661,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(131821, {	-- Uncorrupted Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(49546, {	-- Revitalizing Wristguards
 							["timeline"] = { ADDED_4_0_3 },
@@ -1676,7 +1676,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131822, {	-- Trousers of Turning Fortune
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1697,12 +1697,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131861, {	-- Graccy Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5595),	-- Thicket Hammer
 						i(5596),	-- Ashwood Bow
 						i(156992, {	-- Carved Ashwood Stick
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1815,7 +1815,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5419),	-- Feral Bracers
 						i(131228, {	-- Feral Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(2571),	-- Viny Wrappings
 						i(54867, {	-- Swiftroot Boots
@@ -1842,7 +1842,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131211, {	-- Thornroot Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54870, {	-- Thornroot Cord
 							["timeline"] = { ADDED_4_0_3 },

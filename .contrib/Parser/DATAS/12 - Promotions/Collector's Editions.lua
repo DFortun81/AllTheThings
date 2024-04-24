@@ -247,13 +247,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(13584, {	-- Mini Diablo (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
+						["timeline"] = { ADDED_1_11_1 },
 					}),
 					i(13583, {	-- Panda Cub (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
+						["timeline"] = { ADDED_1_11_1 },
 					}),
 					i(13582, {	-- Zergling (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
+						["timeline"] = { ADDED_1_11_1 },
 					}),
 				},
 			}),
@@ -510,7 +510,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			},
 		}),
 	})),
-	n(THE_WAR_WITHIN_TEMPORARY, bubbleDownSelf({ ["timeline"] = { "added 10.1.7.51972" } }, {
+	n(THE_WAR_WITHIN_TEMPORARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
 			["g"] = {
@@ -679,7 +679,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			}),
 		},
 	})),
-	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { "added 5.4.2.17585" } }, {
+	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_2 } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin

@@ -137,7 +137,7 @@ root(ROOTS.Zones, {
 				q(49472, {	-- A Titanic Effort
 					["sourceQuest"] = 49474,	-- The Cursed Shard
 					["timeline"] = {
-						"added 7.3.5",
+						ADDED_7_3_5,
 						REMOVED_8_0_1
 					},
 				}),
@@ -145,7 +145,7 @@ root(ROOTS.Zones, {
 					["sourceQuest"] = 49472,	-- A Titanic Effort
 					["repeatable"] = true,
 					["timeline"] = {
-						"added 7.3.5",
+						ADDED_7_3_5,
 						REMOVED_8_0_1
 					},
 				}),
@@ -1072,7 +1072,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "i", 154880 },	-- Cursed Shard
 					["isBreadcrumb"] = true,
 					["timeline"] = {
-						"added 7.3.5",
+						ADDED_7_3_5,
 						REMOVED_8_0_1
 					}
 				}),

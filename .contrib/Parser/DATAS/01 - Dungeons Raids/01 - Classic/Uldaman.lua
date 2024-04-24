@@ -626,7 +626,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9401),	-- Nordic Longshank
 					i(9404),	-- Olaf's All Purpose Shield
 					i(132734, {	-- Viking Chain Boots
-						["timeline"] = { "added 7.0.3.22248"},
+						["timeline"] = { ADDED_7_0_3},
 					}),
 					i(9398),	-- Worn Running Boots
 				},
@@ -649,7 +649,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(132734, {	-- Viking Chain Boots
-						["timeline"] = { "added 7.0.3.22248"},
+						["timeline"] = { ADDED_7_0_3},
 					}),
 					i(9398),	-- Worn Running Boots
 					i(2459),	-- Swiftness Potion
@@ -694,7 +694,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { REMOVED_4_1_0 },
 					}),
 					i(132736, {	-- Revelosh's Pauldrons
-						["timeline"] = { "added 7.0.3.22248"},
+						["timeline"] = { ADDED_7_0_3},
 					}),
 					i(9389),	-- Revelosh's Spaulders
 					i(9388),	-- Revelosh's Armguards
@@ -740,7 +740,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(9411),	-- Rockshard Pauldrons
 					i(132733, {	-- Stone Keeper's Mantle
-						["timeline"] = { "added 7.0.3.22248"},
+						["timeline"] = { ADDED_7_0_3},
 					}),
 					i(9410),	-- Cragfists
 					i(151401, {	-- Titanic Stone Legguards
@@ -782,7 +782,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(132735, {	-- Grimlock's Chain Chaps
-						["timeline"] = { "added 7.0.3.22248"},
+						["timeline"] = { ADDED_7_0_3},
 					}),
 					i(9414),	-- Oilskin Leggings
 				},

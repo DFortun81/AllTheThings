@@ -11,7 +11,7 @@ CALL_OF_THE_SCARAB_HEADER = createHeader({
 		ru = "Зов скарабея",
 	},
 });
-root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
 	["maps"] = { SILITHUS },
 	["g"] = {
 		n(QUESTS, {

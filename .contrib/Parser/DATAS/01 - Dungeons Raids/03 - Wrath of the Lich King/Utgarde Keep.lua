@@ -313,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(37181),	-- Dagger of Betrayal (7.3.5 - Used to be only Heroic Mode)
 						i(157555, {	-- Constructor's Worklight
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37182),	-- Helmet of the Constructor (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -395,7 +395,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 							i(37181),	-- Dagger of Betrayal
 							i(157555, {	-- Constructor's Worklight
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37182),	-- Helmet of the Constructor
 							-- #if AFTER 7.3.5

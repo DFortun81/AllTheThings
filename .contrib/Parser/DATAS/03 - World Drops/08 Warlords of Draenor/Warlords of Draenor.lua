@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { "added 6.0.3" } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3 } }, {
 	n(SETS, {
 		i(106390),	-- Bladespire Breastplate
 		i(106391),	-- Bladespire Gauntlets

@@ -1132,7 +1132,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Arcane Protection Potion",
-					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1.0" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1.0" },
 					["recipeID"] = 17577
 				},
 				applyclassicphase(PHASE_FOUR, {
@@ -1146,7 +1146,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Frost Protection Potion",
-					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 17575
 				},
 				{
@@ -1168,7 +1168,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Shadow Protection Potion",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 17578
 				},
 				{
@@ -1476,7 +1476,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of the Mongoose",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 17571
 				},
 				{
@@ -1541,7 +1541,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			["groups"] = {
 				{
 					["name"] = "Alchemist's Flask",
-					["timeline"] = { "added 5.0.4.15890" },
+					["timeline"] = { ADDED_5_0_4 },
 					["recipeID"] = 114786
 				},
 				{

@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						i(188753, {	-- Gilded Mawsworn Greatsword
 							["cost"] = { { "c", PHANTASMA, 300 } },
-							["timeline"] = { "added 9.2.0" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 						i(187082, {	-- Gilded Skull Crescent
 							["cost"] = { { "c", PHANTASMA, 1000 } },
@@ -29,50 +29,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					}),
 					i(188752, {	-- Argent Mawsworn Greatsword
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188743, {	-- Ashen Mawsworn Crossbow
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188747, {	-- Ashen Mawsworn Halberd
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188745, {	-- Ashen Mawsworn Maul
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188749, {	-- Ashen Mawsworn Staff
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188750, {	-- Burnished Mawsworn Greatsword
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188690, {	-- Corrupted Skull Crescent
 						["cost"] = 1500000,
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(187086, {	-- Deathsworn's Sterling Shoulderguards
 						["cost"] = { { "c", PHANTASMA, 300 } },
 					}),
 					i(188737, {	-- Ebon Mawsworn Crossbow
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188746, {	-- Ebon Mawsworn Halberd
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188744, {	-- Ebon Mawsworn Maul
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(188748, {	-- Ebon Mawsworn Staff
 						["cost"] = { { "c", PHANTASMA, 300 } },
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(186974, {	-- Experimental Anima Cell (TOY!)
 						["cost"] = { { "c", PHANTASMA, 300 } },

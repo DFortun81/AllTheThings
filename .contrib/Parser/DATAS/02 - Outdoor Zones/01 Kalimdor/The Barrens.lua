@@ -648,7 +648,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131221, {	-- Marauding Cord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5346, {	-- Orcish Battle Bow
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -888,7 +888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131227, {	-- Quilboar Linked Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5314, {	-- Boar Hunter's Cape
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -1402,7 +1402,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131220, {	-- Hands of Unfocused Rage
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5351, {	-- Bounty Hunter's Ring
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -1624,7 +1624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131218, {	-- Cord of the Forgotten Pool
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_1_3_0 },
 						}),
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 },
 						}),
 					}
 				}),
@@ -1999,7 +1999,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131223, {	-- Smart Sandals
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5343, {	-- Barkeeper's Cloak
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old reward, quest repurposed
@@ -2975,7 +2975,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131224, {	-- Pigman Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5275, {	-- Binding Girdle
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3006,7 +3006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131222, {	-- Nozzlepot Legwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5326, {	-- Flaring Baton
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3398,7 +3398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131219, {	-- Murderous Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3454,10 +3454,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131225, {	-- Gazlowe's Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131226, {	-- Retainer Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
+root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(EMISSARY_QUESTS, {
 		q(53982, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_UNSHACKLED, EXALTED } }, {	-- Supplies From The Unshackled
 			["races"] = HORDE_ONLY,

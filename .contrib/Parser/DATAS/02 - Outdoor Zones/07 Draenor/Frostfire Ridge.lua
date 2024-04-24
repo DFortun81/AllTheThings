@@ -166,7 +166,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(87122, {	-- Gargra <Grand Master Pet Tamer>
 						["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
 					}),
@@ -1541,7 +1541,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(87622, bubbleDownSelf({	-- Ogom the Mangler
-						["timeline"] = { "added 6.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_6_0_3, REMOVED_8_0_1 },
 						-- #if AFTER 8.0.1
 						["isBounty"] = true,
 						-- #endif

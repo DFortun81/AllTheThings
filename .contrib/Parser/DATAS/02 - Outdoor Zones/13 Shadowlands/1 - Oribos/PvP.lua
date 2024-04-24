@@ -161,13 +161,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["isWeekly"] = true,
-					["timeline"] = { "added 9.2.0", REMOVED_10_0_2 },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
 				}),
 				q(65775, {	-- Soloing Strategy
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["isWeekly"] = true,
-					["timeline"] = { "added 9.2.0", REMOVED_10_0_2 },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
 				}),
 			}),
 			n(VENDORS, {

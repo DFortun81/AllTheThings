@@ -2284,7 +2284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 								}),
 								i(134022, {	-- Burgy Blackheart's Handsome Hat (TOY!)
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),

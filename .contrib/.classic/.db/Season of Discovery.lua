@@ -1258,7 +1258,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
 					["description"] = "Grants 100 reputation.",
-					["timeline"] = { "added 1.15.0", REMOVED_1_15_1 },
+					["timeline"] = { ADDED_1_15_0, REMOVED_1_15_1 },
 					["repeatable"] = true,
 					["lvl"] = 8,
 				}),
@@ -1288,7 +1288,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
 					["description"] = "Grants 200 reputation.",
-					["timeline"] = { "added 1.15.0", REMOVED_1_15_1 },
+					["timeline"] = { ADDED_1_15_0, REMOVED_1_15_1 },
 					["repeatable"] = true,
 					["lvl"] = 15,
 				}),

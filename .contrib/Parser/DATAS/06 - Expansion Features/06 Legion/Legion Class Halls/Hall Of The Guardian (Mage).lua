@@ -20,7 +20,7 @@ DAILY_EVENT_ROLL = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
 			["maps"] = { HALL_OF_THE_GUARDIAN, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
@@ -368,7 +368,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41125, {	-- Unlocked Potential
 						["sourceQuest"] = 41114,	-- The Champion's Return
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- Choose Zone
 					q(41112, {	-- The Great Akazamzarak
@@ -645,13 +645,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118428 },	-- Injured Conjuror
 						["coord"] = { 80.9, 63.1, HALL_OF_THE_GUARDIAN },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					q(45998, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45997,	-- An Urgent Warning
 						["provider"] = { "n", 108515 },	-- Archmage Melis
 						["coord"] = { 80.9, 63.1, HALL_OF_THE_GUARDIAN },
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45437, {	-- An Urgent Situation
@@ -664,43 +664,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							45998,	-- Investigate the Broken Shore
 							-- #ENDIF
 						},
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44766, {	-- Backup Plan
 						["sourceQuest"] = 45437,	-- An Urgent Situation
 						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 						["coord"] = { 72.2, 62.9, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46335, {	-- The Vault of the Tirisgarde
 						["sourceQuest"] = 44766,	-- Backup Plan
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
 						["coord"] = { 56.2, 37.9, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46338, {	-- A Creative Solution
 						["sourceQuest"] = 46335,	-- The Vault of the Tirisgarde
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
 						["coord"] = { 56.2, 37.8, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45207, {	-- The Nightborne Apprentice
 						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 						["sourceQuest"] = 46338,	-- A Creative Solution
 						["coord"] = { 72.2, 62.9, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46705, {	-- Retaliation
 						["sourceQuest"] = 45207,	-- The Nightborne Apprentice
 						["provider"] = { "n", 121357 },	-- Arcanist Ryanna
 						["coord"] = { 55.8, 41.9, SURAMAR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46339, {	-- Keymaster Orlis
 						["sourceQuest"] = 45207,	-- The Nightborne Apprentice
 						["provider"] = { "n", 121357 },	-- Arcanist Ryanna
 						["coord"] = { 55.8, 41.9, SURAMAR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46345, {	-- Into the Hornet's Nest
 						["sourceQuests"] = {
@@ -709,19 +709,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 121358 },	-- Arcanist Ryanna
 						["coord"] = { 54.5, 39.1, SURAMAR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44768, {	-- Nyell's Workshop
 						["sourceQuest"] = 46345,	-- Into the Hornet's Nest
 						["provider"] = { "n", 116321 },	-- Arcanist Ryanna
 						["coord"] = { 47.1, 23.5, 691 },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44770, {	-- Secrets of the Shal'dorei
 						["sourceQuest"] = 46345,	-- Into the Hornet's Nest
 						["provider"] = { "n", 116321 },	-- Arcanist Ryanna
 						["coord"] = { 47.1, 23.5, 691 },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46351, {	-- Keep it Secret, Keep it Safe
 						["sourceQuests"] = {
@@ -730,25 +730,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 116321 },	-- Arcanist Ryanna
 						["coord"] = { 47.1, 23.5, 691 },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45251, {	-- Redundancy
 						["sourceQuest"] = 46351,	-- Keep it Secret, Keep it Safe
 						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 						["coord"] = { 72.3, 62.9, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45614, {	-- Lady Remor'za
 						["sourceQuest"] = 45251,	-- Redundancy
 						["provider"] = { "n", 117331 },	-- Aethas Sunreaver
 						["coord"] = { 49.2, 18.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45586, {	-- Shield Amplification
 						["sourceQuest"] = 45251,	-- Redundancy
 						["provider"] = { "n", 117331 },	-- Aethas Sunreaver
 						["coord"] = { 49.2, 18.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46000, {	-- Arming Dalaran
 						["sourceQuests"] = {
@@ -757,15 +757,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 117331 },	-- Aethas Sunreaver
 						["coord"] = { 49.2, 18.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46290, {	-- Return of the Archmage
 						["sourceQuest"] = 46000,	-- Arming Dalaran
 						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 						["coord"] = { 27.3, 51.5, LEGION_DALARAN },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46043, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Aethas Sunreaver
+					q(46043, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Aethas Sunreaver
 						["sourceQuest"] = 46290,	-- Return of the Archmage
 						["provider"] = { "n", 117497 },	-- Aethas Sunreaver
 						["coord"] = { 72.2, 63.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
@@ -777,27 +777,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 46043,	-- Champion: Aethas Sunreaver
 						["provider"] = { "n", 117770 },	-- Invoker Threadgold
 						["coord"] = { 45.2, 61.8, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45846, {	-- Chilled to the Core
 						["sourceQuest"] = 45844,	-- Avocation of Antonidas
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
 						["coord"] = { 56.3, 38.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45845, {	-- Burning Within
 						["sourceQuest"] = 45844,	-- Avocation of Antonidas
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
 						["coord"] = { 56.3, 38.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45847, {	-- Close to Home
 						["sourceQuest"] = 45844,	-- Avocation of Antonidas
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
 						["coord"] = { 56.3, 38.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(45354, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Dispersion of the Discs
+					q(45354, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Dispersion of the Discs
 						["sourceQuests"] = {
 							45846,	-- Chilled to the Core
 							45845,	-- Burning Within
@@ -848,21 +848,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 45354,	-- Dispersion of the Discs
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["coord"] = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45630, {	-- Servant to No One
 						["sourceQuest"] = 45615,	-- Finders Keepers
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["coord"] = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46722, {	-- Nothing Up My Sleeve
 						["sourceQuest"] = 45630,	-- Servant to No One
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["coord"] = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46723, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Down the Rabbit Hole
+					q(46723, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Down the Rabbit Hole
 						["sourceQuest"] = 46722,	-- Nothing Up My Sleeve
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["coord"] = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
@@ -870,7 +870,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(147838),	-- Akazamzarak's Spare Hat (TOY!)
 						},
 					})),
-					q(46724, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: The Great Akazamzarak
+					q(46724, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: The Great Akazamzarak
 						["sourceQuest"] = 46723,	-- Down the Rabbit Hole
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["coord"] = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
@@ -882,25 +882,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43749, {	-- Hitting the Books
 						["provider"] = { "n", 110624 },	-- Edirah
 						["coord"] = { 64.6, 50.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46143, {	-- Knowledge is Power
 						["sourceQuest"] = 43749,	-- Hitting the Books
 						["provider"] = { "n", 110624 },	-- Edirah
 						["coord"] = { 64.6, 50.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46156, {	-- Furthering Knowledge
 						["sourceQuest"] = 46143,	-- Knowledge is Power
 						["provider"] = { "n", 110624 },	-- Edirah
 						["coord"] = { 64.6, 50.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46782, {	-- Further Advancement
 						["sourceQuest"] = 46290,	-- Return of the Archmage
 						["provider"] = { "n", 108515 },	-- Archmage Melis
 						["coord"] = { 80.8, 63.0, HALL_OF_THE_GUARDIAN },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 				}),
 				n(SPECIAL, {
@@ -922,7 +922,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(44209, {	-- The Might of Dalaran
 							["provider"] = { "n", 111734 },	-- Conjurer Awlyn
 							["coord"] = { 78.1, 53.0, HALL_OF_THE_GUARDIAN },
-							["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+							["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 						}),
 					}),
 				}),
@@ -973,7 +973,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(147832, {	-- Magical Saucer (TOY!)
 								["sourceQuest"] = 45354,	-- Dispersion of the Discs
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},
 					}),

@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 						}),
@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131896, {	-- Big Trogg Bracers
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131895, {	-- Ironstock's Iron Grips
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131891, {	-- Grik'nir's Warming Bands
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(6176, {	-- Dwarven Kite Shield
 									["timeline"] = { REMOVED_4_0_3 },
@@ -643,7 +643,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31151, {	-- Kick, Punch, It's All in the Mind
 							["qg"] = 63285,	-- Lo
 							["coord"] = { 63.2, 22.3, COLDRIDGE_VALLEY },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 							["groups"] = {
@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131890, {	-- Plundered Rockjaw Chestguard
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -1462,7 +1462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131516, {	-- Angular Momentum Wristguards
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131512, {	-- Quickening Cinch
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -1546,7 +1546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 63238,	-- Xi, Friend to the Small
 							["sourceQuest"] = 31135,	-- The Future of Gnomeregan
 							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
-							["timeline"] = { "added 5.0.1.15640" },
+							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
 						}),
@@ -1602,7 +1602,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 103614,	-- Muffinus Chromebrew
 							["sourceQuest"] = 41217,	-- The Future of Gnomeregan
 							["coord"] = { 41.9, 31.6, NEW_TINKERTOWN },
-							["timeline"] = { "added 7.0.1.20773" },
+							["timeline"] = { ADDED_7_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
 						}),
@@ -1657,7 +1657,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131514, {	-- Torque-Applying Grips
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -1821,7 +1821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31138, {	-- The Arts of a Monk
 							["qg"] = 63238,	-- Xi, Friend to the Small
 							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { GNOME },
 							["classes"] = { MONK },
 							-- #if BEFORE 7.0.3
@@ -2049,7 +2049,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.94, 40.32, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 5.0.1.15640" },
+							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
 						}),
@@ -2061,12 +2061,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 26.94, 40.32, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "added 7.0.1.20773" },
+							["timeline"] = { ADDED_7_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
 							["groups"] = {
 								i(134123, {	-- "Reliable" Boom-O-Tronic
-									["timeline"] = { "added 7.0.1.20773" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -2374,7 +2374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131612, {	-- Siege Engineer's Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2527,7 +2527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131462, {	-- Dark Iron Spy-Bands
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2598,7 +2598,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131448, {	-- Frostmane Chain Links
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2764,10 +2764,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131483, {	-- Vest of Dark Chainmail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131484, {	-- Grimaxe's Chainmail Breastplate
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2843,7 +2843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131458, {	-- Well-Worn Raider Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2984,7 +2984,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131207, {	-- Well-Oiled Chain Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(3152, {	-- Driving Gloves
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3015,7 +3015,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131436, {	-- Wendigo Pantaloons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3043,7 +3043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131459, {	-- Museum Guard's Warboots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57549, {	-- Prospector's Bag
 							["timeline"] = { ADDED_4_0_3 },
@@ -3072,7 +3072,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131205, {	-- Ram Rescue Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(3103, {	-- Coldridge Hammer
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3100,7 +3100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1010),	-- Gnarled Short Staff
 						i(1011),	-- Sharp Axe
 						i(156940, {	-- Snubnose Blunderbuss
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -3473,7 +3473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131206, {	-- Shimmerweed Brewer Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(2905, {	-- Goat Fur Cloak
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3513,10 +3513,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131208, {	-- Senator's Handsome Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131209, {	-- Stonehallow's Pressed Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -4006,7 +4006,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(107431, {	-- Weaponized Rabbot
 					["coord"] = { 66.0, 27.0, NEW_TINKERTOWN },
-					["timeline"] = { "added 7.0.3.22290" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 			}),
 			-- #if BEFORE TBC
@@ -4229,7 +4229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8497,	{	-- Snowshoe Rabbit (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 						}),
 					},
 				}),

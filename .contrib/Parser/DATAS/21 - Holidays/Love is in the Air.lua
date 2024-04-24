@@ -242,7 +242,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 117367 },	-- Winking Eye of Love [Level 100]
 				-- #endif
 			},
-			["timeline"] = { "added 6.0.1.18594" },
+			["timeline"] = { ADDED_6_0_2 },
 		}),
 		ach(1291, {	-- Lonely?
 			["providers"] = {
@@ -410,20 +410,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		ach(9394, {	-- They Really Love Me! (50)
 			["provider"] = { "i", 116648 },	-- Manufactured Love Prism
-			["timeline"] = { "added 6.0.1.18594" },
+			["timeline"] = { ADDED_6_0_2 },
 			["groups"] = {
 				i(116651, {	-- True Love Prism (TOY!)
-					["timeline"] = { "added 6.0.1.18594" },
+					["timeline"] = { ADDED_6_0_2 },
 				}),
 			},
 		}),
 		ach(9393, {	-- Beacon of Love (25)
 			["provider"] = { "i", 116648 },	-- Manufactured Love Prism
-			["timeline"] = { "added 6.0.1.18594" },
+			["timeline"] = { ADDED_6_0_2 },
 		}),
 		ach(9392, {	-- Love Magnet (10)
 			["provider"] = { "i", 116648 },	-- Manufactured Love Prism
-			["timeline"] = { "added 6.0.1.18594" },
+			["timeline"] = { ADDED_6_0_2 },
 		}),
 	}),
 	n(BOSSES, { ["groups"] = BOSS_GROUPS }),	-- Done this way to prevent the holiday tags from applying to the instances / difficulty headers.
@@ -613,7 +613,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
-			["timeline"] = { "added 7.1.5.23194", REMOVED_10_2_5 },
+			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["maps"] = { SILVERPINE_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -807,7 +807,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
-			["timeline"] = { "added 7.1.5.23194", REMOVED_10_2_5 },
+			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["maps"] = { SILVERPINE_FOREST },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -1112,14 +1112,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(44560, {	-- Follow the Recipe (A)
 			["provider"] = { "o", 259806 },	-- Love Potion Recipe
 			["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
-			["timeline"] = { "added 7.1.5.23194", REMOVED_10_2_5 },
+			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(44559, {	-- Follow the Recipe (H)
 			["provider"] = { "o", 259806 },	-- Love Potion Recipe
 			["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
-			["timeline"] = { "added 7.1.5.23194", REMOVED_10_2_5 },
+			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 		}),
@@ -1869,7 +1869,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			i(22200),	-- Silver Shafted Arrow
 			i(22235, {	-- Peddlefeet (PET!)
-				["timeline"] = { "added 1.11.1.6692" },
+				["timeline"] = { ADDED_1_11_1 },
 			}),
 			i(22259, {	-- Unbestowed Friendship Bracelet
 				["timeline"] = { REMOVED_3_3_2 },
@@ -1881,11 +1881,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		["description"] = "The following items can be purchased from innkeepers.",
 		["groups"] = {
 			i(21833, {	-- Cologne Bottle
-				["timeline"] = { REMOVED_3_3_2, "added 8.1.0" },
+				["timeline"] = { REMOVED_3_3_2, ADDED_8_1_0 },
 				["_drop"] = { "f", "spellID" },
 			}),
 			i(21829, {	-- Perfume Bottle
-				["timeline"] = { REMOVED_3_3_2, "added 8.1.0" },
+				["timeline"] = { REMOVED_3_3_2, ADDED_8_1_0 },
 				["_drop"] = { "f", "spellID" },
 			}),
 			i(21815, {	-- Wrinkled Love Token
@@ -2133,7 +2133,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(187998, {	-- Eternal Heirloom Scabbard
@@ -2148,7 +2148,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				i(151615, {	-- Weathered Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
-					["timeline"] = { "added 7.2.5.24076" },
+					["timeline"] = { ADDED_7_2_5 },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(50161, {	-- Dinner Suit Box
@@ -2156,13 +2156,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", LOVE_TOKEN, 20 } },	-- 20x Love Token
 					["groups"] = {
 						i(151765, {	-- Blue Dinner Suit
-							["timeline"] = { "added 7.2.5.24116" },
+							["timeline"] = { ADDED_7_2_5 },
 						}),
 						i(151764, {	-- Purple Dinner Suit
-							["timeline"] = { "added 7.2.5.24116" },
+							["timeline"] = { ADDED_7_2_5 },
 						}),
 						i(151766, {	-- Red Dinner Suit
-							["timeline"] = { "added 7.2.5.24116" },
+							["timeline"] = { ADDED_7_2_5 },
 						}),
 						i(22281, {	-- Blue Dinner Suit
 							["timeline"] = { REMOVED_7_2_5 },
@@ -2189,16 +2189,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							},
 						}),
 						i(151770, {	-- Lovely Black Dress
-							["timeline"] = { "added 7.2.5.24116" },
+							["timeline"] = { ADDED_7_2_5 },
 						}),
 						i(151768, {	-- Lovely Blue Dress
-							["timeline"] = { "added 7.2.5.24116" },
+							["timeline"] = { ADDED_7_2_5 },
 						}),
 						i(151767, {	-- Lovely Purple Dress
-							["timeline"] = { "added 7.2.5.24116" },
+							["timeline"] = { ADDED_7_2_5 },
 						}),
 						i(151769, {	-- Lovely Red Dress
-							["timeline"] = { "added 7.2.5.24116" },
+							["timeline"] = { ADDED_7_2_5 },
 						}),
 						i(22279, {	-- Lovely Black Dress
 							["timeline"] = { REMOVED_7_2_5 },
@@ -2215,11 +2215,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					},
 				}),
 				i(142341, {	-- Love Boat (TOY!)
-					["timeline"] = { "added 7.1.0.22731" },
+					["timeline"] = { ADDED_7_1_0 },
 					["cost"] = { { "i", LOVE_TOKEN, 270 } },	-- 270x Love Token
 				}),
 				i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", LOVE_TOKEN, 150 } },	-- 150x Love Token
 				}),
 				i(34480, {	-- Romantic Picnic Basket (TOY!)
@@ -2227,11 +2227,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
 				}),
 				i(144339, {	-- Sturdy Love Fool (TOY!)
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", LOVE_TOKEN, 100 } },	-- 100x Love Token
 				}),
 				i(116155, {	-- Lovebird Hatchling (PET!)
-					["timeline"] = { "added 6.0.1.18566" },
+					["timeline"] = { ADDED_6_0_2 },
 					["cost"] = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
 				}),
 				i(22235, {	-- Peddlefeet (PET!)
@@ -2307,11 +2307,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
 				}),
 				i(116648, {	-- Manufactured Love Prism
-					["timeline"] = { "added 6.0.1.18594" },
+					["timeline"] = { ADDED_6_0_2 },
 					["cost"] = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
 				}),
 				i(134860, {	-- Peddlefeet's Buffing Creme
-					["timeline"] = { "added 7.0.3.22248" },
+					["timeline"] = { ADDED_7_0_3 },
 					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
 				i(LOVE_TOKEN, {	-- Love Token
@@ -3136,7 +3136,7 @@ for i,o in ipairs({
 			}),
 			-- #endif
 			i(147907, {	-- Heart-Shaped Carton
-				["timeline"] = { "added 7.2.5.23910" },
+				["timeline"] = { ADDED_7_2_5 },
 				["groups"] = {
 					i(49715, {	-- Forever-Lovely Rose
 						["timeline"] = { ADDED_3_3_0 },
@@ -3155,53 +3155,53 @@ for i,o in ipairs({
 
 			-- Legion+
 			i(143908, {	-- Choker of the Pure Heart [Level 110]
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			i(143906, {	-- Heartbreak Charm [Level 110]
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			i(143907, {	-- Shard of Pirouetting Happiness [Level 110]
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			i(143909, {	-- Sweet Perfume Brooch [Level 110]
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			i(143905, {	-- Winking Eye of Love [Level 110]
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 
 			-- Warlords of Draenor
 			i(117369, {	-- Choker of the Pure Heart [Level 100]
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(117366, {	-- Heartbreak Charm [Level 100]
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(117370, {	-- Shard of Pirouetting Happiness [Level 100]
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(117368, {	-- Sweet Perfume Brooch [Level 100]
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(117367, {	-- Winking Eye of Love [Level 100]
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 
 			-- Mists of Pandaria
 			i(93394, {	-- Choker of the Pure Heart [Level 90]
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			i(93391, {	-- Heartbreak Charm [Level 90]
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			i(93395, {	-- Shard of Pirouetting Happiness [Level 90]
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			i(93393, {	-- Sweet Perfume Brooch [Level 90]
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			i(93392, {	-- Winking Eye of Love [Level 90]
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 
 			-- Cata

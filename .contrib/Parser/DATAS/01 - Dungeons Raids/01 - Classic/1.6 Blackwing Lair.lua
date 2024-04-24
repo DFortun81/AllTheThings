@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						["races"] = HORDE_ONLY,
 					}),
 					i(170511, {	-- Head of Nefarian (Paladin, for Artifact appearance)
-						["timeline"] = { "added 8.2.0.30918" },
+						["timeline"] = { ADDED_8_2_0 },
 						["classes"] = { PALADIN },
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood

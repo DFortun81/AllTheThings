@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
 			["maps"] = { THE_HALL_OF_SHADOWS },
@@ -282,13 +282,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 40950,	-- Honoring Success
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(40995, {	-- Injection of Power
 						["sourceQuest"] = 40994,	-- Right Tools for the Job
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["coord"] = { 30.4, 70.4, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- Start Legion Zone
 					q(40996, {	-- Delegation
@@ -608,13 +608,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118424 },	-- Injured Bandit
 						["coord"] = { 44.8, 39.8, THE_HALL_OF_SHADOWS },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					q(45992, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45991,	--  An Urgent Warning
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45833, {	-- The Pirate's Bay (A)
@@ -622,50 +622,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46322, {	-- The Pirate's Bay (H)
 						["sourceQuest"] = 47137,	-- Champions of Legionfall
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44758, {	-- What's the Cache? (A)
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
 						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46323, {	-- What's the Cache? (H)
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
 						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45835, {	-- False Orders (A)
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
 						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46324, {	-- False Orders (H)
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
 						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45073, {	-- Loot and Plunder!
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
 						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
 						["coord"] = { 57.7, 63.6, AZSUNA },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(45848, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Fit For a Pirate
+					q(45848, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Fit For a Pirate
 						["sourceQuests"] = {
 							45835,	-- False Orders (A)
 							46324,	-- False Orders (H)
@@ -684,14 +684,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 119821 },	-- Princess Tess Greymane
 						["coord"] = { 57.6, 63.4, AZSUNA },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46326, {	-- Jorach's Calling (H)
 						["sourceQuest"] = 45848,	-- Fit For a Pirate
 						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.6, 63.4, AZSUNA },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45571, {	-- A Bit of Espionage
 						["sourceQuests"] = {
@@ -700,56 +700,56 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45573, {	-- Rise Up (A)
 						["sourceQuest"] = 45571,	-- A Bit of Espionage
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45576, {	-- Rise Up (H)
 						["sourceQuest"] = 45571,	-- A Bit of Espionage
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45628, {	-- This Time, Leave a Trail (A)
 						["sourceQuest"] = 45573,	-- Rise Up
 						["provider"] = { "n", 117262 },	-- Princess Tess Greymane
 						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45629, {	-- This Time, Leave a Trail (H)
 						["sourceQuest"] = 45576,	-- Rise Up
 						["provider"] = { "n", 117263 },	-- Lilian Voss
 						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46260, {	-- Meld Into the Shadows (A)
 						["sourceQuest"] = 45628,	-- This Time, Leave a Trail
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46827, {	-- Meld Into the Shadows (H)
 						["sourceQuest"] = 45629,	-- This Time, Leave a Trail
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46058, {	-- Champion: Lilian Voss
 						["sourceQuest"] = 46827,	-- Meld Into the Shadows
 						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
@@ -759,7 +759,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
@@ -771,9 +771,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 119259 },	-- Apothecary Keever
 						["coord"] = { 45.0, 64.0, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46089, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Hiding in Plain Sight (A)
+					q(46089, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Hiding in Plain Sight (A)
 						["sourceQuest"] = 46103,	-- Dread Infiltrators
 						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
@@ -782,7 +782,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							mount(231434),	-- Shadowblade's Murderous Omen (MOUNT!)
 						},
 					})),
-					q(46178, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Hiding in Plain Sight (H)
+					q(46178, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Hiding in Plain Sight (H)
 						["sourceQuest"] = 46103,	-- Dread Infiltrators
 						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
@@ -802,27 +802,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						-- },
 						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.2.5" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47592, {	-- Shine Bright Like a Diamond
 						["sourceQuest"] = 47591,	-- Wanna Buy a Lamp?
 						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.2.5" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47603, {	-- The Mysterious, Magnificent Al'Abas
 						["sourceQuest"] = 47592,	-- Shine Bright Like a Diamond
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.2.5" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47604, {	-- In the Land of Magic
 						["sourceQuest"] = 47603,	-- The Mysterious, Magnificent Al'Abas
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.2.5" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
-					q(47605, bubbleDownSelf({ ["timeline"] = { "added 7.2.5" } }, {	-- Coins of Air
+					q(47605, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Coins of Air
 						["sourceQuest"] = 47604,	-- In the Land of Magic
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
@@ -830,7 +830,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(151131),	-- Lamp of Al'Abas
 						},
 					})),
-					q(47606, bubbleDownSelf({ ["timeline"] = { "added 7.2.5" } }, {	-- Loyalty Is Its Own Reward
+					q(47606, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Loyalty Is Its Own Reward
 						["sourceQuest"] = 47605,	-- Coins of Air
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
@@ -838,7 +838,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(151143),	-- Shining Lamp of Al'Abas
 						},
 					})),
-					q(47607, bubbleDownSelf({ ["timeline"] = { "added 7.2.5" } }, {	-- High Fash-Djinn
+					q(47607, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- High Fash-Djinn
 						["sourceQuest"] = 47606,	-- Loyalty Is Its Own Reward
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
@@ -851,14 +851,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["isWeekly"] = true,
-						["timeline"] = { "added 7.2.5" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47595, {	-- I Don't Need Them, But I'll Take Them
 						["sourceQuest"] = 47594,	-- I'll Take Those, Thanks!
 						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["repeatable"] = true,
-						["timeline"] = { "added 7.2.5" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 					-- Misc
 					q(44202, {	-- For the Cause (A)
@@ -876,19 +876,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43885, {	-- Hitting the Books
 						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46148, {	-- Knowledge is Power
 						["sourceQuest"] = 43885,	-- Hitting the Books
 						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46129, {	-- Furthering Knowledge
 						["sourceQuest"] = 46148,	-- Knowledge is Power
 						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46779, {	-- Further Advancement
 						["sourceQuests"] = {
@@ -897,7 +897,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.7, 44.8, THE_HALL_OF_SHADOWS },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 				}),
 				n(SPECIAL, {
@@ -976,7 +976,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(151877, {	-- Barrel of Eyepatches (TOY!)
 								["cost"] = { { "c", 1416, 50000 }, },	-- 50,000x Coin of Air
-								["timeline"] = { "added 7.2.5" },
+								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(151181, {	-- Certified Organic Lamp Shining Kit
 								["cost"] = 5000000,	-- 500g
@@ -1019,7 +1019,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(27992),	-- Infallible Tikbalang Ward
 							i(151131, {	-- Lamp of Al'Abas
 								["cost"] = 5000000,	-- 500g
-								["timeline"] = { "added 7.2.5" },
+								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(27940),	-- Marvelous Madstone of Immortality
 							i(120435, {	-- Mossy Green Mask
@@ -1033,7 +1033,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
 							i(151143, {	-- Shining Lamp of Al'Abas
 								["cost"] = 5000000,	-- 500g
-								["timeline"] = { "added 7.2.5" },
+								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(120432, {	-- Sinister Rogue Mask
 								["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
@@ -1119,7 +1119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									46178,	-- Hiding in Plain Sight (H)
 								},
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(143491, {	-- Shadowblade's Baneful Omen (MOUNT!)
 								["sourceQuests"] = {
@@ -1127,7 +1127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									46178,	-- Hiding in Plain Sight (H)
 								},
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(143492, {	-- Shadowblade's Lethal Omen (MOUNT!)
 								["sourceQuests"] = {
@@ -1135,7 +1135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									46178,	-- Hiding in Plain Sight (H)
 								},
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},
 					}),

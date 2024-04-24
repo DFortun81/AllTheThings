@@ -1825,7 +1825,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.0, 29.3, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
 							i(137788, {	-- Technique: Songs of Peace (RECIPE!)
-								["timeline"] = { "added 7.0.3" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),

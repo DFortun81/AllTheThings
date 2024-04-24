@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["description"] = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- Nestlewood Owlkin inoculated
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(31172, {	-- Monk Training
 							["races"] = { DRAENEI },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["coord"] = { 50.5, 47.9, AMMEN_VALE },
-							["timeline"] = { "added 6.0.2.18833" },
+							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/4 Emitter Spare Part
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(31173, {	-- The Tiger Palm
 							["qg"] = 63335,	-- Mojo Stormstout
 							["coord"] = { 50.6, 48.6, AMMEN_VALE },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["classes"] = { MONK },
 							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),

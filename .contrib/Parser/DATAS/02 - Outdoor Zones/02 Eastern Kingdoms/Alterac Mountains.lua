@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(20086, {	-- Dusksteel Throwing Knife [Classic] / Broken Dusksteel Throwing Knife [TBC]
 							["timeline"] = {
-								"added 1.11.1.5462",
+								ADDED_1_11_1,
 								REMOVED_2_0_1
 							},
 						}),
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_6_0_2, ADDED_7_1_0 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
 						}),
 					},
 				}),
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2415,	-- Warden Belamoore
 				}),
 				i(8491, {	-- Black Tabby Cat (PET!)
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						2271,	-- Dalaran Shield Guard

@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					i(18709),	-- Arena Wristguards
 					i(126948, {	-- Defending Champion
 						["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-						["timeline"] = { "added 6.2.0.19890" },
+						["timeline"] = { ADDED_6_2_0 },
 						["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
 					}),
 					i(122222, {	-- Music Roll: Angelic
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
 						i(10398, {	-- Mechanical Chicken (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 						}),
 					},
 				}),
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131255, {	-- Shouldersguards of Raw Power
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -488,13 +488,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131202, {	-- Monnion of the White Tiger
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(17686, {	-- Master Hunter's Bow
-							["timeline"] = { "added 1.2.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_2_0, REMOVED_4_0_3 },
 						}),
 						i(17687, {	-- Master Hunter's Rifle
-							["timeline"] = { "added 1.2.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_2_0, REMOVED_4_0_3 },
 						}),
 						i(4110, {	-- Master Hunter's Bow
 							["timeline"] = { REMOVED_1_2_0 },
@@ -1359,7 +1359,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131201, {	-- Scale-Cord of the Raptor
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(4119, {	-- Raptor Hunter Tunic
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2159,7 +2159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131200, {	-- Footpads of Sin'Dall
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(4107, {	-- Tiger Hunter Gloves
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2443,7 +2443,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.0, 31.8, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(1680, {	-- Headchopper
-							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2485,10 +2485,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1604, {	-- Chromatic Sword
-							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 						}),
 						i(4478, {	-- Iridescent Scale Leggings
-							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2820,7 +2820,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(1998, {	-- Bloodscalp Channeling Staff
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 697,	-- Bloodscalp Shaman
 				}),
 				i(4611, {	-- Blue Pearl
@@ -2834,7 +2834,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(5079, {	-- Cold Basilisk Eye
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 690,	-- Cold Eye Basilisk
 				}),
 				i(1703, {	-- Crystal Basilisk Spine
@@ -2842,11 +2842,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 689,	-- Crystal Spine Basilisk
 				}),
 				i(1677, {	-- Drake-scale Vest
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 680,	-- Mosh'Ogg Lord
 				}),
 				i(1659, {	-- Engineering Gloves
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 677,	-- Venture Co. Tinkerer
 				}),
 				i(2955, {	-- First Mate Hat
@@ -2867,7 +2867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 674,	-- Venture Co. Strip Miner
 				}),
 				i(1991, {	-- Goblin Power Shovel
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					-- #if AFTER 7.3.5
 					["crs"] = {
 						1094,	-- Venture Co. Miner
@@ -2878,21 +2878,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1986, {	-- Gutrender
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 709,	-- Mosh'Ogg Warmonger
 				}),
 				-- #if AFTER CATA
 				i(1680, {	-- Headchopper
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 723,	-- Mosh'Ogg Butcher
 				}),
 				-- #endif
 				i(1522, {	-- Headhunting Spear
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 671,	-- Bloodscalp Headhunter
 				}),
 				i(1523, {	-- Huge Stone Club
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 597,	-- Bloodscalp Berserker
 				}),
 				-- #if BEFORE CATA
@@ -2905,11 +2905,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1679, {	-- Korg Bat
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 1142,	-- Mosh'Ogg Brute
 				}),
 				i(5755, {	-- Onyx Shredder Plate
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 4260,	-- Venture Co. Shredder
 				}),
 				i(8494, {	-- Hyacinth Macaw (PET!)
@@ -2933,7 +2933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1997, {	-- Pressed Felt Robe
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
 				-- #if BEFORE 4.0.3
@@ -2942,14 +2942,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1624, {	-- Skullsplitter Helm
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["crs"] = {
 						783,	-- Skullsplitter Berserker
 						781,	-- Skullsplitter Headhunter
 					},
 				}),
 				i(1664, {	-- Spellforce Rod
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 676,	-- Venture Co. Surveyor
 				}),
 				i(1652, {	-- Sturdy Lunchbox
@@ -2964,7 +2964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1996, {	-- Voodoo Band
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 660,	-- Bloodscalp Witch Doctor
 				}),
 				i(8153, {	-- Wildvine

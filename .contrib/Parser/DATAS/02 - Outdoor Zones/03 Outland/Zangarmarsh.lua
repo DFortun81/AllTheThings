@@ -348,7 +348,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17924,	-- Msshi'fn
 						["sourceQuest"] = 9919,	-- Sporeggar
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
-						["timeline"] = { "added 7.3.5.25600" },
+						["timeline"] = { ADDED_7_3_5 },
 						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["isBreadcrumb"] = true,
@@ -364,7 +364,7 @@ root(ROOTS.Zones, {
 							9739,	-- The Sporelings' Plight
 						},
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
-						["timeline"] = { "added 7.3.5.25600" },
+						["timeline"] = { ADDED_7_3_5 },
 						["minReputation"] = { 970, UNFRIENDLY },	-- Sporeggar, Unfriendly.
 						["maxReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["isBreadcrumb"] = true,
@@ -697,7 +697,7 @@ root(ROOTS.Zones, {
 							i(25517),	-- Preserver's Medallion
 							i(25519),	-- Warden's Hammer
 							i(157548, {	-- Warden's Longbow
-								["timeline"] = { "added 7.3.5.25727" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 						},
 					}),
@@ -921,7 +921,7 @@ root(ROOTS.Zones, {
 							}),
 							i(27753),	-- Ensorcelled Marshfang Blade
 							i(157547, {	-- Keen Marshfang Shanker
-								["timeline"] = { "added 7.3.5.25727" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(27754),	-- Keen Marshfang Slicer
 							i(27756),	-- Marshfang Blade Axe
@@ -1502,7 +1502,7 @@ root(ROOTS.Zones, {
 							}),
 							i(27753),	-- Ensorcelled Marshfang Blade
 							i(157547, {	-- Keen Marshfang Shanker
-								["timeline"] = { "added 7.3.5.25727" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(27754),	-- Keen Marshfang Slicer
 							i(27756),	-- Marshfang Blade Axe

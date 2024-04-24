@@ -6,7 +6,7 @@ root(ROOTS.WorldDrops, {
 		["description"] = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
 		["groups"] = {
 			i(169475, {	-- Barnacled Lockbox
-				["timeline"] = { "added 8.2.0.30918" },
+				["timeline"] = { ADDED_8_2_0 },
 				["sym"] = { {
 					"select", "itemID",
 					-- Last Updated: 2022-05-02, Crieve. 45 items total, no exclusives.
@@ -69,7 +69,7 @@ root(ROOTS.WorldDrops, {
 					i(2567),	-- Evocator's Blade
 					i(5756),	-- Sliverblade
 					i(4454, {	-- Talon of Vultros
-						["timeline"] = { "added 7.2.5.18522" }, -- Unclear when exactly. Going with the big return of items in 7.2.5
+						["timeline"] = { ADDED_7_2_5 }, -- Unclear when exactly. Going with the big return of items in 7.2.5
 					}),
 				},
 				["sym"] = { {
@@ -121,7 +121,7 @@ root(ROOTS.WorldDrops, {
 				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(88567, {	-- Ghost Iron Lockbox
-				["timeline"] = { "added 5.0.1.15752" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(16885, {	-- Heavy Junkbox
 				["sym"] = { {
@@ -194,7 +194,7 @@ root(ROOTS.WorldDrops, {
 				["timeline"] = { ADDED_2_1_0 },
 			}),
 			i(188787, {	-- Locked Broker Luggage
-				["timeline"] = { "added 9.2.0.42423" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 			i(186160, {	-- Locked Artifact Case
 				["timeline"] = { ADDED_9_1_0 },
@@ -419,7 +419,7 @@ root(ROOTS.WorldDrops, {
 			i(5759, {	-- Thorium Lockbox
 			}),
 			i(116920, {	-- True Steel Lockbox
-				["timeline"] = { "added 6.0.1.18594" },
+				["timeline"] = { ADDED_6_0_2 },
 				["sym"] = { {
 					"select", "itemID",
 				--	n(WEAPONS, {
@@ -533,7 +533,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(88165, {	-- Vine-Cracked Junkbox
-				["timeline"] = { "added 5.0.1.15739" },
+				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = {
 					i(88150),	-- Krol Scimitar
 					i(88149),	-- The Gloaming Blade

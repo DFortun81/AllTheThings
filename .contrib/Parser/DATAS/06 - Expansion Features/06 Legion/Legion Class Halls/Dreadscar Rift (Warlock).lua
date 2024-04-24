@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
 			["maps"] = { DREADSCAR_RIFT },
@@ -279,7 +279,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(44254, {	-- Gazing Into Oblivion
 						["sourceQuest"] = 40731,	-- The Heart of the Dreadscar
@@ -592,32 +592,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118423 },	-- Injured Invoker
 						["coord"] = { 58.6, 37.6, DREADSCAR_RIFT },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					q(45990, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45989,	-- An Urgent Warning
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder <Mission Strategist>
 						["coord"] = { 66.6, 46.6, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45021, {	-- Answers Unknown
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["coord"] = { 57.4, 38.0, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45024, {	-- Cult Culling
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45025, {	-- Stealing the Source of Power
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45026, {	-- Expending Fel Energy
 						["sourceQuests"] = {
@@ -626,33 +626,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45794, {	-- Informing the Council
 						["sourceQuests"] = { 45026 },	-- Expending Fel Energy
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45027, {	-- To the Broken Shore
 						["sourceQuests"] = { 45794 },	-- Informing the Council
 						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["coord"] = { 57.4, 38.0, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45028, {	-- The Fate of Kanrethad
 						["sourceQuests"] = { 45027 },	-- To the Broken Shore
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 81.1, 49.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46020, {	-- Crystal Containment
 						["sourceQuests"] = { 45028 },	-- The Fate of Kanrethad
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 78.1, 39.7, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46047, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Kanrethad Ebonlocke
+					q(46047, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke
 						["sourceQuests"] = { 46020 },	-- Crystal Containment
 						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["coord"] = { 55.8, 34.4, DREADSCAR_RIFT },
@@ -660,7 +660,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							follower(997),	-- Kanrethad Ebonlocke
 						},
 					})),
-					q(46316, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
+					q(46316, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
 						["description"] = "This quest is only available if you completed the Green Fire Questline.",
 						["sourceQuests"] = {
 							46020,	-- Crystal Containment
@@ -679,19 +679,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 						["coord"] = { 43.9, 63.2, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46239, {	-- Fel to the Core
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46240, {	-- Give Me Fuel, Give Me Fire
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46238, {	-- If You Build It
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
@@ -702,7 +702,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							{ "i", 130175, 3 },	-- 3xChaotic Spinel
 							{ "i", 127845, 1 },	-- 1xUnbending Potion
 						},
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46241, {	-- The Minions of Hel'nurath
 						["sourceQuests"] = {
@@ -712,14 +712,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46242, {	-- The Dreadlord's Calling
 						["sourceQuests"] = { 46241 },	-- The Minions of Hel'nurath
 						["maps"] = { BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46243, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- The Wrathsteed of Xoroth
+					q(46243, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wrathsteed of Xoroth
 						["sourceQuests"] = { 46242 },	-- The Dreadlord's Calling
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.6, 38.4, DREADSCAR_RIFT },
@@ -731,25 +731,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43887, {	-- Hitting the Books
 						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 						["coord"] = { 57.6, 40.6, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46131, {	-- Knowledge is Power
 						["sourceQuest"] = 43887,	-- Hitting the Books
 						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 						["coord"] = { 57.6, 40.6, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46150, {	-- Furthering Knowledge
 						["sourceQuest"] = 46131,	-- Knowledge is Power
 						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 						["coord"] = { 57.6, 40.6, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46784, {	-- Further Advancement
 						["sourceQuest"] = 46047,	-- Champion: Kanrethad Ebonlocke
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["coord"] = { 67.0, 46.6, DREADSCAR_RIFT },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 				}),
 				n(SPECIAL, {
@@ -806,7 +806,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 42601,	-- Tech It Up A Notch
 							["provider"] = { "n", 113371 },	-- Demonia Pickerin
 							["coord"] = { 50.0, 24.4, DREADSCAR_RIFT },
-							["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+							["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 						}),
 					}),
 					gt(364, {	-- Shadow Pact
@@ -833,7 +833,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(143637, {	-- Netherlord's Brimstone Wrathsteed (MOUNT!)
 								["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},
 					}),

@@ -131,7 +131,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73101),	-- Magesoul Stone of Destruction
 		}),
 		cl(MONK, {
-			["timeline"] = { "added 5.0.1.15752" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(88648),	-- Monastic Spire
 				i(88622),	-- Monastic Staff

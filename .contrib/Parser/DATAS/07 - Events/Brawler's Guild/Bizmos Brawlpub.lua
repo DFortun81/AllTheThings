@@ -357,10 +357,10 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				["groups"] = {
 					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
-						["timeline"] = { "added 7.1", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_1_0, REMOVED_8_0_1 },
 					}),
 					i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
-						["timeline"] = { "added 5.3.0.16781", REMOVED_7_1_5 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_1_5 },
 					}),
 					i(167811),	-- Brawlers Guild Tabard
 					i(122396),	-- Brawler's Razor Claws

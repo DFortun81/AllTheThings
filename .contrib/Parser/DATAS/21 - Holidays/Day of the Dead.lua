@@ -62,15 +62,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			}),
 			ach(9426, {	-- To The Afterlife
 				["providers"] = COSTUME_PROVIDERS,
-				["timeline"] = { "added 6.0.1.18594" },
+				["timeline"] = { ADDED_6_0_2 },
 			}),
 			ach(9427, {	-- Vientos!
 				["providers"] = COSTUME_PROVIDERS,
-				["timeline"] = { "added 6.0.1.18594" },
+				["timeline"] = { ADDED_6_0_2 },
 			}),
 			ach(9428, {	-- Calavera
 				["providers"] = COSTUME_PROVIDERS,
-				["timeline"] = { "added 6.0.1.18594" },
+				["timeline"] = { ADDED_6_0_2 },
 			}),
 		}),
 		-- #endif
@@ -194,19 +194,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 				["timeline"] = { ADDED_3_2_2 },
 				["groups"] = {
 					i(116856, {	-- "Blooming Rose" Contender's Costume (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(116888, {	-- "Night Demon" Contender's Costume (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(116889, {	-- "Purple Phantom" Contender's Costume (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(116890, {	-- "Santo's Sun" Contender's Costume (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(116891, {	-- "Snowy Owl" Contender's Costume (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(46861, {	-- Bouquet of Orange Marigolds
 						["timeline"] = { ADDED_3_2_2 },
@@ -233,7 +233,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 						["timeline"] = { ADDED_3_2_2 },
 					}),
 					i(79048, {	-- Whimsical Skull Mask
-						["timeline"] = { "added 5.0.1" },
+						["timeline"] = { ADDED_5_0_4 },
 					}),
 				},
 			}),

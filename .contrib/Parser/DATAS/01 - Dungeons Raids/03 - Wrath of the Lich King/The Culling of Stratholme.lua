@@ -183,15 +183,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(ZONE_DROPS, {
 				i(37115),	-- Crusader's Square Pauldrons
 				i(37697, {	-- Trade District Knife
-					["timeline"] = { CREATED_3_0_3, "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 },
 				}),
 				i(37116),	-- Epaulets of Market Row
 				i(37699, {	-- Festival Lane Girdle
-					["timeline"] = { CREATED_3_0_3, "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 },
 				}),
 				i(37117),	-- King's Square Bracers
 				i(37698, {	-- Spaulders of Elder's Square
-					["timeline"] = { CREATED_3_0_3, "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
@@ -230,7 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37088),	-- Spiked Metal Cilice
 						i(37095),	-- Waistband of the Thuzadin
 						i(157563, {	-- Freshly Sewn Leggings
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -339,7 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37095),	-- Waistband of the Thuzadin (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157563, {	-- Freshly Sewn Leggings
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 						},
 					}),

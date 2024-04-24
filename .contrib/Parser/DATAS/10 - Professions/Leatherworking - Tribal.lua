@@ -104,13 +104,13 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Frostsaber Tunic",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19104,
 						["requireSkill"] = 10660,
 					},
 					{
 						["name"] = "Ironfeather Breastplate",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19086,
 						["requireSkill"] = 10660,
 					},
@@ -138,7 +138,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Frostsaber Gloves",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19087,
 						["requireSkill"] = 10660,
 					},
@@ -171,7 +171,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Frostsaber Leggings",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19074,
 						["requireSkill"] = 10660,
 					},

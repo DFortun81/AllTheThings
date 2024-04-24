@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(VENDORS, {
 			n(142190, {	-- Alchemist Hart <Amateur Potions>
@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(9144, {	-- Wildvine Potion
-						["timeline"] = { "added 8.0.1" },
+						["timeline"] = { ADDED_8_0_1 },
 					}),
 				},
 			}),
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(168024, {	-- Formula: Iwen's Enchanting Rod (RECIPE!)
 						["sourceQuest"] = 54002,	-- Putting it All Together
-						["timeline"] = { "added 8.1.5" },
+						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),
@@ -1374,7 +1374,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
-						["timeline"] = { "added 8.0.1", REMOVED_9_0_1 },
+						["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					}),
 					i(163568, {	-- Lost Platysaur (PET!)
 						["cost"] = 1000000000,	-- 100,000g

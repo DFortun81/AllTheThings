@@ -452,7 +452,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28665, {	-- Cursed Shackles [H]
-							["timeline"] = { "added 8.0.1.27101" },
+							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28670, {	-- Food From Below [H]
-							["timeline"] = { "added 8.0.1.27101" },
+							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -507,22 +507,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28664, {	-- Svarnos [H]
-							["timeline"] = { "added 8.0.1.27101" },
+							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(28658, {	-- Swamp Bait [H]
-							["timeline"] = { "added 8.0.1.27101" },
+							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(28162, {	-- Swamp Bait [A]
-							["timeline"] = { "added 8.0.1.27101" },
+							["timeline"] = { ADDED_8_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(28661, {	-- The Imprisoned Archmage [A]
-							["timeline"] = { "added 8.0.1.27101" },
+							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -547,7 +547,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["isDaily"] = true,
 						}),
 						q(28669, {	-- The Warden [H]
-							["timeline"] = { "added 8.0.1.27101" },
+							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),

@@ -218,7 +218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(37216),	-- Facade Shield of Glyphs (7.3.5 - Used to be only Heroic Mode)
 						i(157582, {	-- Nerubian Mantle
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37219),	-- Custodian's Chestpiece (7.3.5 - Used to be only Heroic Mode)
 						i(37217),	-- Golden Limb Bands (7.3.5 - Used to be only Heroic Mode)
@@ -239,7 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37222),	-- Egg Sac Robes (7.3.5 - Used to be only Heroic Mode)
 						i(37230),	-- Grotto Mist Gloves (7.3.5 - Used to be only Heroic Mode)
 						i(157581, {	-- Skittering Gauntlets
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37221),	-- Hollowed Mandibles Legplates (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -326,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 							i(37216),	-- Facade Shield of Glyphs
 							i(157582, {	-- Nerubian Mantle
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37219),	-- Custodian's Chestpiece
 							i(37217),	-- Golden Limb Bands
@@ -348,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37222),	-- Egg Sac Robes
 							i(37230),	-- Grotto Mist Gloves
 							i(157581, {	-- Skittering Gauntlets
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37221),	-- Hollowed Mandibles Legplates
 							-- #if AFTER 7.3.5

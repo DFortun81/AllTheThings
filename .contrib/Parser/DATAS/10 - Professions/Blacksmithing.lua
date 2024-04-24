@@ -1607,7 +1607,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Shoulders",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24137,
 				}),
 				{
@@ -1616,7 +1616,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Shoulders",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24141,
 				}),
 				-- #if AFTER TBC
@@ -1742,7 +1742,7 @@ profession(BLACKSMITHING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Gauntlets",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24138,
 				}),
 				-- #if AFTER TBC
@@ -1846,12 +1846,12 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Barbaric Iron Hauberk",
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["recipeID"] = 280671,
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Breastplate",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24136,
 				}),
 				{
@@ -1874,7 +1874,7 @@ profession(BLACKSMITHING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Breastplate",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24139,
 				}),
 				-- #if AFTER TBC
@@ -2066,7 +2066,7 @@ profession(BLACKSMITHING, {
 				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Leggings",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24140,
 				}),
 				-- #if AFTER TBC
@@ -2261,13 +2261,13 @@ profession(BLACKSMITHING, {
 					["name"] = "Blazing Rapier",
 					["timeline"] = {
 						REMOVED_4_0_1,
-						"added 7.1.5.23360",
+						ADDED_7_1_5,
 					},
 					["recipeID"] = 16978,
 				},
 				{
 					["name"] = "Bleakwood Hew",
-					["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
+					["timeline"] = { CREATED_1_12_1, ADDED_7_1_5 },
 					["recipeID"] = 16965,
 				},
 				{
@@ -2335,7 +2335,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Corruption",
-					["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, "added 7.1.5" },
+					["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_7_1_5 },
 					["recipeID"] = 16985,
 				},
 				{
@@ -2356,12 +2356,12 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Darkspear",
-					["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
+					["timeline"] = { CREATED_1_12_1, ADDED_7_1_5 },
 					["recipeID"] = 16987,
 				},
 				{
 					["name"] = "Dawn's Edge",
-					["timeline"] = { REMOVED_4_0_3, "added 7.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_1_5 },
 					["recipeID"] = 16970,
 				},
 				-- #endif
@@ -2475,7 +2475,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER 7.1.5
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Light Earthforged Blade",
-					["timeline"] = { CREATED_2_0_1, "added 7.1.5" },
+					["timeline"] = { CREATED_2_0_1, ADDED_7_1_5 },
 					["recipeID"] = 36125,
 				}),
 				-- #endif
@@ -2486,7 +2486,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Masterwork Stormhammer",
-					["timeline"] = { REMOVED_6_0_2, "added 10.1.5" },
+					["timeline"] = { REMOVED_6_0_2, ADDED_10_1_5 },
 					["recipeID"] = 16993,
 				},
 				-- #endif
@@ -2563,7 +2563,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "The Shatterer",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 10003,
 				},
 				-- #endif
@@ -2586,13 +2586,13 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Truesilver Champion",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 10015,
 				},
 				-- #endif
 				{
 					["name"] = "Volcanic Hammer",
-					["timeline"] = { REMOVED_4_0_1, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 					["recipeID"] = 16984,
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
@@ -3110,7 +3110,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = {
 						ADDED_2_0_1,
 						REMOVED_4_0_1,
-						"added 7.1.5.23360",
+						ADDED_7_1_5,
 					},
 				}),
 				-- #endif
@@ -3133,7 +3133,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = {
 						ADDED_2_0_1,
 						REMOVED_4_0_1,
-						"added 7.1.5.23360",
+						ADDED_7_1_5,
 					},
 				}),
 				-- #endif
@@ -3148,7 +3148,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = {
 						ADDED_2_0_1,
 						REMOVED_4_0_1,
-						"added 7.1.5.23360",
+						ADDED_7_1_5,
 					},
 				}),
 				applyclassicphase(TBC_PHASE_ONE,{
@@ -3157,7 +3157,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = {
 						ADDED_2_1_0,
 						REMOVED_4_0_1,
-						"added 7.1.5.23360",
+						ADDED_7_1_5,
 					},
 				}),
 				applyclassicphase(TBC_PHASE_ONE,{
@@ -3166,7 +3166,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = {
 						ADDED_2_0_1,
 						REMOVED_4_0_1,
-						"added 7.1.5.23360",
+						ADDED_7_1_5,
 					},
 				}),
 				applyclassicphase(TBC_PHASE_ONE,{
@@ -3175,7 +3175,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = {
 						ADDED_2_0_1,
 						REMOVED_4_0_1,
-						"added 7.1.5.23360",
+						ADDED_7_1_5,
 					},
 				}),
 				-- #endif

@@ -23,7 +23,7 @@ root(ROOTS.Zones, {
 			["lore"] = "A true enigma, the Timeless Isle has drifted in and out of Pandaria's mists for thousands of years. Here, time has no meaning, and the sun neither rises nor sets. Its unique characteristics have brought the Isle under the scrutiny of the bronze dragonflight, pandaren explorers, and the black dragon Wrathion.",
 			["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
 			["maps"] = { 555 },	-- Cavern of Lost Spirits
-			["timeline"] = { "added 5.4.0" },
+			["timeline"] = { ADDED_5_4_0 },
 			["groups"] = {
 				petbattle(m(571, {	-- Celestial Tournament
 					["icon"] = "Interface/Icons/inv_misc_trinketpanda_07",

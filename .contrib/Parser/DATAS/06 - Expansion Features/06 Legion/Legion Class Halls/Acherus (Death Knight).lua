@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(DEATHKNIGHT, bubbleDownSelf({ ["classes"] = { DEATHKNIGHT } }, {
 			["maps"] = { ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },	-- Uppstairs/Down
@@ -221,13 +221,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore
 						["coord"] = { 49.6, 52.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(39761, {	-- Advanced Runecarving
 						["sourceQuest"] = 39757, -- Keeping Your Edge
 						["provider"] = { "n", 97072 }, -- Grand Master Siegesmith Corvus
 						["coord"] = { 60.2, 60.0, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(44217, {	-- Armor Fit For A Deathlord
 						["sourceQuest"] = 39761, --Advanced Runecarving
@@ -525,13 +525,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118433 },	-- Injured Ebon Knight
 						["coord"] = { 56.0, 30.7, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					q(46031, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 46030,	-- An Urgent Warning
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
 						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45240, {	-- Making Preparations
@@ -628,25 +628,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43877, {	-- Hitting the Books
 						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
 						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46108, {	-- Knowledge is Power
 						["sourceQuest"] = 43877,	-- Hitting the Books
 						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
 						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46125, {	-- Furthering Knowledge
 						["sourceQuest"] = 46108,	-- Knowledge is Power
 						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
 						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46789, {	-- Further Advancement
 						["sourceQuest"] = 45103, -- We Ride!
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
 						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 				}),
 				n(SPECIAL, {
@@ -662,7 +662,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 43268,	-- Tech It Up A Notch
 							["provider"] = { "n", 111634 },	-- Winter Payne
 							["coord"] = { 26.3, 23.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-							["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+							["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 						}),
 					}),
 					o(252395, {	-- Deathcharger Hitching Post
@@ -692,18 +692,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(38667),	-- Bloodbane's Gauntlets of Command
 							i(140538),	-- Broadaxe of the Ebon Blade
 							i(174485, {	-- Burning Greatsword of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(174662, {	-- Burning Saber of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(34657),	-- Choker of Damnation
 							i(38147),	-- Corrupted Band
 							i(174486, {	-- Crimson Greatsword of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(174659, {	-- Crimson Saber of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(140935, {	-- Deathlord's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
@@ -740,10 +740,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(38669),	-- Engraved Saronite Legplates
 							i(174488, {	-- Freezing Greatsword of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(174660, {	-- Freezing Saber of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(38633),	-- Greataxe of the Ebon Blade
 							i(38661),	-- Greathelm of the Scourge Champion
@@ -763,10 +763,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(38674),	-- Soul Harvester's Charm
 							i(38668),	-- The Plaguebringer's Girdle
 							i(174487, {	-- Unholy Greatsword of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(174661, {	-- Unholy Saber of the Ebon Blade
-								["timeline"] = { "added 8.3.0" },
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(38671),	-- Valanar's Signet Ring
 							i(140554),	-- Warsword of the Ebon Blade

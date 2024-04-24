@@ -32,7 +32,7 @@ root(ROOTS.Promotions, {
 			i(187957, {		-- Encrypted Banner of the Opportune (TOY!)
 				["description"] = "Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",
 				["timeline"] = {
-					"added 9.2.0",
+					ADDED_9_2_0,
 					REMOVED_9_2_0, -- 8th April 2022, 1 day after the event ended.
 				},
 			}),
@@ -62,7 +62,7 @@ root(ROOTS.Promotions, {
 			i(187958, {		-- Shrouded Banner of the Opportune (TOY!)
 				["description"] = "Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.\n\nThis was previously available through The Great Push: SL Season 4.",
 				["timeline"] = {
-					"added 9.2.7.45745",	-- 23rd September 2022, 11 days before the event started.
+					ADDED_9_2_7,	-- 23rd September 2022, 11 days before the event started.
 					REMOVED_10_0_0,	-- 16th August 2022, 1 day after the event ended.
 				},
 				["u"] = REMOVED_FROM_GAME, -- Removed again on October 12th 2022
@@ -70,13 +70,13 @@ root(ROOTS.Promotions, {
 			i(95475, {	-- Crown of the Eternal Winter
 				["description"] = "Obtained through Prime Gaming from August 24th 2022 till September 20th 2022.",
 				["timeline"] = {
-					"added 9.2.7.45161",
+					ADDED_9_2_7,
 					REMOVED_9_2_7,	-- 23 September 2022, 3 days after the event ended.
 				},
 			}),
 			mount(386452, {	-- Frostbrood Proto-Wyrm
 				["description"] = "In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",
-				["timeline"] = { "added 9.2.7.45338", REMOVED_10_0_2_LAUNCH },
+				["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 			}),
 		},
 	}),

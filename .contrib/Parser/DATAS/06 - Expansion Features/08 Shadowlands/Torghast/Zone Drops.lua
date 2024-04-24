@@ -28,7 +28,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			})),
 		}),
-		n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { "added 9.2.0" } }, {
+		n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_9_2_0 } }, {
 			i(188688, {	-- Burnished Eye Crescent
 				["crs"] = {
 					155945,	-- Gherus the Chained

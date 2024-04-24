@@ -2330,7 +2330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(56371, {	-- Young Twilight Scale
 					["qg"] = 169346,	-- Young Twilight Scale
-					["timeline"] = { "added 8.2.0" },
+					["timeline"] = { ADDED_8_2_0 },
 				}),
 			}),
 			n(RARES, {
@@ -2469,7 +2469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ZONE_DROPS, {
 				i(169346, {	-- Young Twilight Scale
 					["crs"] = { 154803 },	-- Twilight Whelpling
-					["timeline"] = { "added 8.2.0" },
+					["timeline"] = { ADDED_8_2_0 },
 				}),
 			}),
 		},

@@ -1619,7 +1619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(71304, {	-- Iris Moondreamer <Quartermaster>
 					["coord"] = { 62.8, 24.2, MOUNT_HYJAL },
-					["timeline"] = { "added 5.3.0.16781" },
+					["timeline"] = { ADDED_5_3_0 },
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(72994),	-- Ebonsoul Blade
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(73101),	-- Magesoul Stone of Destruction
 						}),
 						cl(MONK, {
-							["timeline"] = { "added 5.0.1.15752" },
+							["timeline"] = { ADDED_5_0_4 },
 							["groups"] = {
 								i(88648),	-- Monastic Spire
 								i(88622),	-- Monastic Staff

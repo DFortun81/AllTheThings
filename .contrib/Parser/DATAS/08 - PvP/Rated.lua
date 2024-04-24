@@ -331,7 +331,7 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	i(182170, {	-- Gryphon Soul (SS!)
 		["timeline"] = { ADDED_9_0_2_LAUNCH },
 	}),
-	filter(RECIPES, bubbleDown({ ["timeline"] = { "added 7.0.3", REMOVED_8_0_1 }, }, {
+	filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 }, }, {
 		-- #if BEFORE 8.0.1
 		["description"] = "This has a chance to drop from any rated battleground win during Legion.",
 		-- #endif

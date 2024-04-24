@@ -2979,7 +2979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10892,	-- Imperial Plate Armor [H]
 					},
 					-- #endif
-					["timeline"] = { "added 1.11.1.10772", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
@@ -3596,12 +3596,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151130,	-- Grizzek Fizzwrench
 					["sourceQuest"] = 53819,	-- Return to the Nest
 					["coord"] = { 27.2, 60.1, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 					["groups"] = {
 						i(165845, {	-- Feathers (PET!)
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
 				}),
@@ -3973,7 +3973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151132,	-- Feathers
 					["sourceQuest"] = 53816,	-- Some Reassembly Required
 					["coord"] = { 62.1, 45.3, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
 				}),
 				q(648, {	-- Rescue OOX-17/TN!
@@ -4017,7 +4017,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151132,	-- Feathers
 					["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
 					["coord"] = { 62.1, 45.3, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
 				}),
 				q(24905, {	-- Returning a Favor
@@ -4109,7 +4109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157014, {	-- Dunemaul Skullcracker
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -4141,7 +4141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157024, {	-- Sandfury Hatchet
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -4207,11 +4207,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151129,	-- Sapphronetta Flavvers
 					["sourceQuest"] = 53819,	-- Return to the Nest
 					["coord"] = { 27.1, 60.0, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(165845, {	-- Feathers (PET!)
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
 				}),
@@ -4259,7 +4259,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						53817,	-- Whatever Happened to Grizzek Fizzwrench?
 					},
 					["coord"] = { 62.1, 45.3, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
 				}),
 				q(8366, {	-- Southsea Shakedown
@@ -4922,7 +4922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157015, {	-- Meatface's Tenderizer
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -5279,7 +5279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
 					["coord"] = { 52.6, 27.0, TANARIS },
-					["timeline"] = { "added 7.0.3.22396" },
+					["timeline"] = { ADDED_7_0_3 },
 					["groups"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},

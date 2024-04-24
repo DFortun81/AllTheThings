@@ -2161,7 +2161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								--["coord"] = { ,  },
 								["groups"] = {
 									i(1262, {	-- Keg of Thunderbrew Lager
-										["timeline"] = { "added 9.0.1" },
+										["timeline"] = { ADDED_9_0_1 },
 									}),
 								},
 							}),

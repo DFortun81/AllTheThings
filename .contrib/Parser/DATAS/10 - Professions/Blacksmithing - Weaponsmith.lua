@@ -29,7 +29,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Dawn's Edge",
-						["timeline"] = { REMOVED_4_0_3, "added 7.1.5" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_7_1_5 },
 						["recipeID"] = 16970,
 						["requireSkill"] = 17041,
 					},
@@ -83,7 +83,7 @@ profession(BLACKSMITHING, {
 						["timeline"] = {
 							ADDED_2_0_1,
 							REMOVED_4_0_1,
-							"added 7.1.5.23360",
+							ADDED_7_1_5,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -93,7 +93,7 @@ profession(BLACKSMITHING, {
 						["timeline"] = {
 							ADDED_2_0_1,
 							REMOVED_4_0_1,
-							"added 7.1.5.23360",
+							ADDED_7_1_5,
 						},
 					}),
 					-- #endif
@@ -199,7 +199,7 @@ profession(BLACKSMITHING, {
 						["timeline"] = {
 							ADDED_2_0_1,
 							REMOVED_4_0_1,
-							"added 7.1.5.23360",
+							ADDED_7_1_5,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -209,7 +209,7 @@ profession(BLACKSMITHING, {
 						["timeline"] = {
 							ADDED_2_0_1,
 							REMOVED_4_0_1,
-							"added 7.1.5.23360",
+							ADDED_7_1_5,
 						},
 					}),
 					-- #endif
@@ -253,12 +253,12 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 17039,
 						["timeline"] = {
 							REMOVED_4_0_1,
-							"added 7.1.5.23360",
+							ADDED_7_1_5,
 						},
 					},
 					{
 						["name"] = "Corruption",
-						["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, "added 7.1.5" },
+						["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_7_1_5 },
 						["recipeID"] = 16985,
 						["requireSkill"] = 17039,
 					},
@@ -340,7 +340,7 @@ profession(BLACKSMITHING, {
 						["timeline"] = {
 							ADDED_2_1_0,
 							REMOVED_4_0_1,
-							"added 7.1.5.23360",
+							ADDED_7_1_5,
 						},
 					}),
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -350,7 +350,7 @@ profession(BLACKSMITHING, {
 						["timeline"] = {
 							ADDED_2_0_1,
 							REMOVED_4_0_1,
-							"added 7.1.5.23360",
+							ADDED_7_1_5,
 						},
 					}),
 					-- #endif
@@ -374,7 +374,7 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Bleakwood Hew",
-						["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
+						["timeline"] = { CREATED_1_12_1, ADDED_7_1_5 },
 						["recipeID"] = 16965,
 						["requireSkill"] = 9787,
 					},
@@ -401,7 +401,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Darkspear",
-						["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
+						["timeline"] = { CREATED_1_12_1, ADDED_7_1_5 },
 						["recipeID"] = 16987,
 						["requireSkill"] = 9787,
 					},
@@ -424,7 +424,7 @@ profession(BLACKSMITHING, {
 					-- #if BEFORE 7.1.5
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Earthforged Blade",
-						["timeline"] = { CREATED_2_0_1, "added 7.1.5" },
+						["timeline"] = { CREATED_2_0_1, ADDED_7_1_5 },
 						["recipeID"] = 36125,
 						["requireSkill"] = 9787,
 					}),

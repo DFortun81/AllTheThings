@@ -32,12 +32,12 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(52843),	-- Moonglow Ink
 		r(48247),	-- Mysterious Tarot
 		r(58565),	-- Mystic Tome
-		r(165461, {["timeline"]={"added 6.0.2"}}),	-- Research: Celestial Ink
-		r(165460, {["timeline"]={"added 6.0.2"}}),	-- Research: Jadefire Ink
-		r(165456, {["timeline"]={"added 6.0.2"}}),	-- Research: Lion's Ink
-		r(165304, {["timeline"]={"added 6.0.2"}}),	-- Research: Midnight Ink
-		r(165564, {["timeline"]={"added 6.0.2"}}),	-- Research: Moonglow Ink
-		r(165463, {["timeline"]={"added 6.0.2"}}),	-- Research: Shimmering Ink
+		r(165461, {["timeline"]={ADDED_6_0_2}}),	-- Research: Celestial Ink
+		r(165460, {["timeline"]={ADDED_6_0_2}}),	-- Research: Jadefire Ink
+		r(165456, {["timeline"]={ADDED_6_0_2}}),	-- Research: Lion's Ink
+		r(165304, {["timeline"]={ADDED_6_0_2}}),	-- Research: Midnight Ink
+		r(165564, {["timeline"]={ADDED_6_0_2}}),	-- Research: Moonglow Ink
+		r(165463, {["timeline"]={ADDED_6_0_2}}),	-- Research: Shimmering Ink
 		r(59486),	-- Royal Guide of Escape Routes
 		r(57708),	-- Royal Ink
 		r(59491),	-- Shadowy Tarot
@@ -77,7 +77,7 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(57241, {["timeline"]={ADDED_3_0_2,"deleted 6.0.2"}}),	-- Glyph of Frost Shock
 		r(57216, {["timeline"]={ADDED_3_0_2,"deleted 6.0.2"}}),	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
 		r(57125, {["timeline"]={ADDED_3_0_2,"deleted 7.0.3"}}),	-- Glyph of Gouge
-		r(57157, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3","added 5.0.4","deleted 6.0.2"}}),	-- Glyph of Hamstring
+		r(57157, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3",ADDED_5_0_4,"deleted 6.0.2"}}),	-- Glyph of Hamstring
 		r(56945, {["timeline"]={ADDED_3_0_2,"deleted 7.0.3"}}),	-- Glyph of Healing Touch
 		r(57266, {["timeline"]={ADDED_3_0_2,"deleted 6.0.2"}}),	-- Glyph of Healthstone
 		r(57158, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3"}}),	-- Glyph of Heroic Strike
@@ -89,7 +89,7 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(57244, {["timeline"]={ADDED_3_0_2,"deleted 7.0.3"}}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
 		r(57245, {["timeline"]={ADDED_3_0_2,"deleted 6.0.2"}}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
 		r(57246, {["timeline"]={ADDED_3_0_2,"deleted 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
-		r(56985, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3","added 5.0.4","deleted 6.0.2"}}),	-- Glyph of Mana Gem
+		r(56985, {["timeline"]={ADDED_3_0_2,"deleted 4.0.3",ADDED_5_0_4,"deleted 6.0.2"}}),	-- Glyph of Mana Gem
 		r(56961, {["timeline"]={ADDED_3_0_2,"deleted 6.0.2"}}),	-- Glyph of Maul
 		r(57200, {["timeline"]={ADDED_3_0_2,"deleted 7.0.3"}}),	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
 		r(56951, {["timeline"]={ADDED_3_0_2,"deleted 6.0.2"}}),	-- Glyph of Moonfire / Glyph of Savagery[MOP+]

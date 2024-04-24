@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(423, {	-- Silvershard Mines
 		["icon"] = "Interface\\Icons\\achievement_battleground_silvershardmines",
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(7106, {	-- Master of Silvershard Mines

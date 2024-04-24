@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 											["collectible"] = false,
 										}),
 										i(142274, {	-- Keleseth's Persuader
-											["timeline"] = { "added 7.0.3.22248" },
+											["timeline"] = { ADDED_7_0_3 },
 										}),
 									}),
 									i(38672),	-- Keleseth's Signet Ring
@@ -483,7 +483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["groups"] = {
 									i(38707),	-- Runed Soulblade
 									i(142320, {	-- Runed Soulsaber
-										["timeline"] = { "added 7.1.0.22731" },
+										["timeline"] = { ADDED_7_1_0 },
 									}),
 								},
 							}),
@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(38633),	-- Greataxe of the Ebon Blade
 									i(38632),	-- Greatsword of the Ebon Blade
 									i(142321, {	-- Saber of the Ebon Blade
-										["timeline"] = { "added 7.1.0.22731" },
+										["timeline"] = { ADDED_7_1_0 },
 									}),
 								},
 							}),
@@ -656,25 +656,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 								i(38667),	-- Bloodbane's Gauntlets of Command
 								i(174485, {	-- Burning Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174662, {	-- Burning Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(34657),	-- Choker of Damnation
 								i(38147),	-- Corrupted Band
 								i(174486, {	-- Crimson Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174659, {	-- Crimson Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(38669),	-- Engraved Saronite Legplates
 								i(174488, {	-- Freezing Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174660, {	-- Freezing Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(38633),	-- Greataxe of the Ebon Blade
 								i(38661),	-- Greathelm of the Scourge Champion
@@ -693,10 +693,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(38674),	-- Soul Harvester's Charm
 								i(38668),	-- The Plaguebringer's Girdle
 								i(174487, {	-- Unholy Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174661, {	-- Unholy Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(38671),	-- Valanar's Signet Ring
 							},
@@ -1013,10 +1013,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131669, {	-- Plaguehound Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131670, {	-- Cinch of Good Will
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2168,7 +2168,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131668, {	-- Stem-Laced Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2326,7 +2326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157007, {	-- Militia Dagger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2516,10 +2516,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156978, {	-- Cauldron Cracker
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156979, {	-- Cauldron Dredger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -4589,7 +4589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 						i(136928, {	-- Thaumaturgist's Orb (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["classes"] = { PRIEST },
 						}),
 

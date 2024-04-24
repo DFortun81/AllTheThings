@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 53.2, 56.0, VALDRAKKEN },
 				["g"] = {
 					i(210595, {	-- Dreaming Equipment Chest
-						["timeline"] = { "added 10.2.5.53040", REMOVED_10_2_6_SEASON_FOUR },
+						["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 					i(217241, {	-- Awakened Equipment Chest
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				["coord"] = { 19.0, 50.2, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { "added 10.2.0.52649" } }, {
+				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 					i(211300, {	-- Arsenal: Whispering Temple Blades
 						["cost"] = 2000000000, -- 200,000g
 						["groups"] = {

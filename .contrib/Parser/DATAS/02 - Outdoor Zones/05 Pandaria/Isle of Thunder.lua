@@ -779,7 +779,7 @@ root(ROOTS.Zones, {
 							["description"] = "You will need 3 stones to summon special rares at their specific spawn points.",
 						}),
 						i(97268, {	-- Tome of Valor
-							["timeline"] = { "added 5.2", REMOVED_5_3_0 },
+							["timeline"] = { ADDED_5_2_0, REMOVED_5_3_0 },
 						}),
 					})),
 					n(70000, {	-- Al'tabim the All-Seeing

@@ -458,11 +458,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(44952, {	-- Blackrock Depths: Jewel of the Depths
 					["qg"] = 11184,	-- Wixxrak
 					["coord"] = { 60.2, 50.2, WINTERSPRING },
-					["timeline"] = { "added 7.1.5.23038" },
+					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = 2477,	-- Classic Blacksmithing
 					["groups"] = {
 						i(142357, {	-- Plans: Dawn's Edge (RECIPE!)
-							["timeline"] = { "added 7.1.5.23038" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
@@ -1030,7 +1030,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157021, {	-- Staff of Haunted Memory
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(67211, {	-- Orb of Kel'theril
 							["timeline"] = { ADDED_4_0_3 },
@@ -2206,7 +2206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(142357, {	-- Plans: Dawn's Edge (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),

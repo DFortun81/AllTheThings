@@ -41,19 +41,19 @@ root(ROOTS.Zones, {
 						n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 							["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 							["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["g"] = {
 								i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(136927, {	-- Scarlet Confessional Book (TOY!)
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(136972, {	-- Tome of Hex: Cockroach (CI!)
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),

@@ -420,7 +420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This can be looted from mobs outside of the instance.",
 				}),
 				i(140781, {	-- X-87 Battle Circuit
-					["timeline"] = { "added 7.0.3.22248" },
+					["timeline"] = { ADDED_7_0_3 },
 					["crs"] = {
 						6229,	-- Crowd Pummeler 9-60
 						6235,	-- Electrocutioner 6000
@@ -807,10 +807,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65939),	-- Murd Doc's Leggings
 						i(65913),	-- Hann Ibal's Epaulets
 						i(131624, {	-- Barechus' Chainmail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131625, {	-- Hann Ibal's Chain Dungarees
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -819,7 +819,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 44556 },	-- Murd Doc
 						{ "i", 60680 },	-- S.A.F.E. "Parachute"
 					},
-					["timeline"] = { "added 7.3.5.25860" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
@@ -834,7 +834,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 60680 },	-- S.A.F.E. "Parachute"
 					},
 					["sourceQuest"] = 50338,	-- The G-Team (1/3) [Horde]
-					["timeline"] = { "added 7.3.5.25860" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
@@ -846,7 +846,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(50336, {	-- The G-Team (3/3) [Horde]
 					["qg"] = 44561,	-- Face <S.A.F.E.>
 					["sourceQuest"] = 50337,	-- The G-Team (2/3) [Horde]
-					["timeline"] = { "added 7.3.5.25860" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
@@ -859,10 +859,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65939),	-- Murd Doc's Leggings
 						i(65913),	-- Hann Ibal's Epaulets
 						i(131624, {	-- Barechus' Chainmail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131625, {	-- Hann Ibal's Chain Dungarees
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -961,14 +961,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 7361,
 				["groups"] = {
 					i(151080, {	-- Grubbis' Protective Pail
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9445),	-- Grubbis Paws
 					i(151079, {	-- Chomper-Hide Belt
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151078, {	-- Shabby Trogg Britches
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -987,14 +987,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9452),	-- Hydrocane
 					i(9453),	-- Toxic Revenger
 					i(151081, {	-- Gnomish Rebreather
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151082, {	-- Lead Apron
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9454),	-- Acidic Walkers
 					i(151083, {	-- Hazmat Galoshes
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -1021,13 +1021,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(9449),	-- Manual Crowd Pummeler
 					i(151085, {	-- Glitchbot Helm
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151084, {	-- Grease-Smudged Sash
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132558, {	-- Bot Operator's Treads
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(9450),	-- Gnomebot Operating Boots
 				},
@@ -1084,10 +1084,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(113621, {	-- Endgineer Omegaplugg
 				["description"] = "|cff3399ffSTEP 1:|r Kill the last boss in Gnomeregan.\n|cff3399ffSTEP 2:|r Go to the back of the pillar on the left side of the room's entrance, and press the small button.\n|cff3399ffSTEP 3:|r Endgineer Omegaplugg will spawn, and his health scales to max level.\n|cff3399ffSTEP 4:|r To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in a counterclockwise format. (This is the first conduit on the right as you enter the room.)\n|cff3399ffSTEP 5:|r Kill the boss, and all players can loot the toy. Good luck, have fun!",
-				["timeline"] = { "added 7.1.0.22810" },
+				["timeline"] = { ADDED_7_1_0 },
 				["groups"] = {
 					i(141331, {	-- Vial of Green Goo (TOY!)
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				},
 			}),

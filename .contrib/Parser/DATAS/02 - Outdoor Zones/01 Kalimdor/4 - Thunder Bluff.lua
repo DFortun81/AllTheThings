@@ -386,12 +386,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 4,
 					["groups"] = {
 						i(131214, {	-- Animal Scale Belt
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5936),	-- Animal Skin Belt
 						i(4962),	-- Double-layered Gloves
 						i(131215, {	-- Mulit-Scaled Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -906,7 +906,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156986, {	-- Kodo Gavel
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -936,7 +936,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(167860, {	-- Ancient Tauren Talisman
-							["timeline"] = { "added 8.2.0.30918" },
+							["timeline"] = { ADDED_8_2_0 },
 							["races"] = { TAUREN },
 						}),
 						i(45584, {	-- Thunder Bluff Tabard

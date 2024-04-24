@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "added 8.1.0" } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
 	inst(1177, {	-- Crucible of Storms
 		["isRaid"] = true,
 		["coord"] = { 83.8, 47.0, STORMSONG_VALLEY },
@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						ach(13418, {	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
-							["timeline"] = { "added 8.1.0", REMOVED_8_2_0 },
+							["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
 						}),
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
@@ -191,15 +191,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						ach(13417),	-- Mythic: Uu'nat, Harbinger of the Void
 						ach(13421),	-- Mythic: Uu'nat, Harbinger of the Void Guild Run
 						ach(13419, {	-- Cutting Edge: Uu'nat, Harbinger of the Void
-							["timeline"] = { "added 8.1.0", REMOVED_8_2_0 },
+							["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
 						}),
-						ach(13423, bubbleDownSelf({["timeline"] = { "added 8.1.0", REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
+						ach(13423, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(400),	-- <Name>, Famed Slayer of the Harbinger
 							},
 						})),
-						ach(13424, bubbleDownSelf({["timeline"] = { "added 8.1.0", REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
+						ach(13424, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(400),	-- <Name>, Famed Slayer of the Harbinger

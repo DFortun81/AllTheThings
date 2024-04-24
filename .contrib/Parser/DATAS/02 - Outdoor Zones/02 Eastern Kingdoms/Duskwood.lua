@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(12430, {	-- Duskwood Quests
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
@@ -212,10 +212,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(156955, {	-- Reconditioned Archeus
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156954, {	-- Refurbished Archeus
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60937, {	-- Restored Archeus
 							["timeline"] = { ADDED_4_0_3 },
@@ -239,13 +239,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157003, {	-- Corpseweed Hewer
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60924, {	-- Corpseweed Sickle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131587, {	-- Fess' Chain Apron
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60925, {	-- Festering Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131604, {	-- Raven Hill Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60935, {	-- Raven Hill Sands
 							["timeline"] = { ADDED_4_0_3 },
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 203 },	-- Skeletal Mage
 						}),
 						i(131581, {	-- Night Watcher's Mail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60941, {	-- Shoulderwraps of Honor
 							["timeline"] = { ADDED_4_0_3 },
@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131580, {	-- Cosmologist's Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60908, {	-- Stargazer's Pantaloons
 							["timeline"] = { ADDED_4_0_3 },
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131597, {	-- Curse Breaker's Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60929, {	-- Moon Shriek Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -492,7 +492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131574, {	-- Drifter's Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60898, {	-- Ghost Hair Band
 							["timeline"] = { ADDED_4_0_3 },
@@ -732,7 +732,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131579, {	-- Retired Linked Pants
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60904, {	-- Ring of the Fool
 							["timeline"] = { ADDED_4_0_3 },
@@ -819,7 +819,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131578, {	-- Despondent Spirit Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60918, {	-- Slippers of the Crescent Moon
 							["timeline"] = { ADDED_4_0_3 },
@@ -909,7 +909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131596, {	-- Yorgen's Mitts
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1145,10 +1145,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156975, {	-- Exorcist's Dagger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157002, {	-- Exorcist's Crossbow
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60914, {	-- Exorcist's Wand
 							["timeline"] = { ADDED_4_0_3 },
@@ -1157,7 +1157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131577, {	-- The Clerk's Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1294,7 +1294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131600, {	-- Ghoul-Slayer Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60921, {	-- Sister Elsington's Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -1721,13 +1721,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156973, {	-- Archivist's Staff
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156974, {	-- Archivist's Walking Stick
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(131575, {	-- Brightwood Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60912, {	-- Cragwood Clutches
 							["timeline"] = { ADDED_4_0_3 },
@@ -1927,7 +1927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131564, {	-- Night Watch Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(1127),	-- Flash Bundle
 					},
@@ -2026,7 +2026,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131582, {	-- Callous Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

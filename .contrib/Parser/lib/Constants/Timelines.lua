@@ -2,12 +2,27 @@
 --     CLASSIC WOW     --
 -------------------------
 CREATED_1_0_1 = "created 1.0.1";
-ADDED_1_4_0 = "added 1.4.0";
+ADDED_1_0_1 = "added 1.0.1";
+
+ADDED_1_1_0 = "added 1.1.0";
+
+ADDED_1_2_0 = "added 1.2.0";
 REMOVED_1_2_0 = "removed 1.2.0";
+
+ADDED_1_12_1 = "added 1.12.1";
+
+ADDED_1_3_0 = "added 1.3.0";
 REMOVED_1_3_0 = "removed 1.3.0";
+
+ADDED_1_4_0 = "added 1.4.0";
 REMOVED_1_4_0 = "removed 1.4.0";
+
+ADDED_1_5_0 = "added 1.5.0";
 REMOVED_1_5_0 = "removed 1.5.0";
+
 REMOVED_1_6_0 = "removed 1.6.0";
+
+ADDED_1_7_0 = "added 1.7.0";
 REMOVED_1_7_0 = "removed 1.7.0";
 REMOVED_1_8_0 = "removed 1.8.0";
 REMOVED_1_9_3 = "removed 1.9.3";
@@ -16,9 +31,11 @@ CREATED_1_10_0 = "created 1.10.0";
 REMOVED_1_10_0 = "removed 1.10.0";
 
 CREATED_1_11_0 = "created 1.11.0";
+ADDED_1_11_0 = "added 1.11.0";
 REMOVED_1_11_0 = "removed 1.11.0";
 
 CREATED_1_11_1 = "created 1.11.1";
+ADDED_1_11_1 = "added 1.11.1";
 REMOVED_1_11_1 = "removed 1.11.1";
 
 REMOVED_1_11_2 = "removed 1.11.2";
@@ -26,7 +43,12 @@ REMOVED_1_11_2 = "removed 1.11.2";
 CREATED_1_12_1 = "created 1.12.1";
 REMOVED_1_12_1 = "removed 1.12.1";
 
+ADDED_1_13_0 = "added 1.13.0";
+
 --- CLASSIC TIMELINES ---
+
+--- SEASON OF MASTERY ---
+ADDED_1_14_3 = "added 1.14.3";
 
 --- SEASON OF DISCOVERY ---
 ADDED_1_15_0 = "added 1.15.0";
@@ -229,7 +251,8 @@ REMOVED_5_3_0 = "removed 5.3.0.16981";					-- Mists of Pandaria 5.3.0 Launch on 
 CREATED_5_4_0 = "created 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
 ADDED_5_4_0 = "added 5.4.0.17345";						-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
 REMOVED_5_4_0 = "removed 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
-CREATED_5_4_2 = "created 5.4.2";
+CREATED_5_4_2 = "created 5.4.2.17658";
+ADDED_5_4_2 = "added 5.4.2.17658";
 CREATED_5_4_7 = "created 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
 ADDED_5_4_7 = "added 5.4.7.17898";						-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
 REMOVED_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
@@ -321,7 +344,7 @@ CREATED_8_3_0 = "created 8.3.0.33051";					-- Battle for Azeroth 8.3.0 Launch on
 ADDED_8_3_0 = "added 8.3.0.33051";						-- Battle for Azeroth 8.3.0 Launch on January 14th, 2020
 REMOVED_8_3_0 = "removed 8.3.0.33051";					-- Battle for Azeroth 8.3.0 Launch on January 14th, 2020
 CREATED_8_3_7 = "created 8.3.7.35249";					-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
-ADDED_8_3_7 = "added 8.3.7.35249";						-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
+ADDED_8_3_7 = ADDED_8_3_7;						-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
 REMOVED_8_3_7 = "removed 8.3.7.35249";					-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
 
 -----------------

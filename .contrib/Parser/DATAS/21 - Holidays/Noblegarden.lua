@@ -28,19 +28,19 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(151804, {	-- Black Tuxedo Pants
-		["timeline"] = { "added 7.2.5.24163" },
+		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
 	}),
 	i(164922, {	-- Blue Spring Circlet
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(164923, {	-- Brown Spring Circlet
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(151806, {	-- Elegant Dress
-		["timeline"] = { "added 7.2.5.24163" },
+		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(74283, {	-- Pink Spring Circlet
@@ -59,7 +59,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
 	}),
 	i(164924, {	-- Yellow Spring Circlet
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	-- Mounts
@@ -86,11 +86,11 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
 	}),
 	i(141532, {	-- Noblegarden Bunny (PET!)
-		["timeline"] = { "added 7.1.0.22731" },
+		["timeline"] = { ADDED_7_1_0 },
 		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
 	}),
 	i(116258, {	-- Mystical Spring Bouquet (PET!)
-		["timeline"] = { "added 6.0.1.18566" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	i(44794, {	-- Spring Rabbit (PET!)
@@ -103,7 +103,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
 	}),
 	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
 	}),
 	i(188694, {	-- Spring Florist's Pouch (TOY!)

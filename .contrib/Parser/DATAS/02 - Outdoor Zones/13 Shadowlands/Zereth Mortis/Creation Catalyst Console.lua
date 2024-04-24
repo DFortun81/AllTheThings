@@ -56,7 +56,7 @@ local SymPvP = function(ClassID, HeaderID)
 	return SymLinKPvP
 end
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		o(375368, {	-- Creation Catalyst Console
 			["coord"] = { 47.4, 88.6, ZERETH_MORTIS },

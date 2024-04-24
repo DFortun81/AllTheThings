@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						74367,	-- Koristrasza
 						74888,	-- Koristrasza
 					},
-					["timeline"] = { "added 6.0.1.18322" },
+					["timeline"] = { ADDED_6_0_2 },
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Mushlump slain
@@ -229,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						74367,	-- Koristrasza
 						74888,	-- Koristrasza
 					},
-					["timeline"] = { "added 6.0.1.18322" },
+					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Amnennar the Coldbringer slain
 							["provider"] = { "n", 74434 },	-- Amnennar the Coldbringer
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			e(1142, {	-- Aarux
 				["creatureID"] = 74412,	-- Aarux
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10776),	-- Silky Spider Cape
 					i(10775),	-- Carapace of Tuten'kash
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you can click his body to start the encounter.",
 				["coord"] = { 80.0, 26.0, RAZORFEN_DOWNS },	-- The Murder Pens
 				["crs"] = { 75329 },	-- Sah'rhee (prior to clicking)
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10766),	-- Plaguerot Sprig
 					i(10768),	-- Boar Champion's Belt
@@ -347,7 +347,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			e(433, {	-- Mordresh Fire Eye
 				["creatureID"] = 74347,	-- Mordresh Fire Eye
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10770),	-- Mordresh's Lifeless Skull
 					i(10769),	-- Glowing Eye of Mordresh
@@ -356,7 +356,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(1143, {	-- Mushlump
 				["creatureID"] = 74435,	-- Mushlump
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10772),	-- Glutton's Cleaver
 					i(10774),	-- Fleshhide Shoulders
@@ -407,7 +407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			e(1146, {	-- Death Speaker Blackthorn
 				["creatureID"] = 74875,	-- Death Speaker Blackthorn
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10758),	-- X'caliboar
 					i(10766),	-- Plaguerot Sprig
@@ -424,11 +424,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					74876,	-- Amnennar's Phylactery
 					74434,	-- Amnennar the Coldbringer
 				},
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					ach(636),	-- Razorfen Downs
 					ach(5045, {	-- Razorfen Downs Guild Run
-						["timeline"] = { "added 6.0.1.18322" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(10761),	-- Coldrage Dagger
 					i(10763),	-- Icemetal Barbute

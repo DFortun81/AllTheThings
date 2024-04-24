@@ -4145,11 +4145,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["groups"] = {
 							champ(25, i(45130)),	-- Blunderbuss of Khaz Modan
 							champ(25, i(164932, {	-- Grapeshotter of Khaz Modan
-								["timeline"] = { "added 8.1.0.28724" },
+								["timeline"] = { ADDED_8_1_0 },
 								["groups"] = {
 									i(164933, {	-- Sen'jin Beakblade Longrifle
 										["description"] = "This Horde item will be automatically learned after buying the Alliance version.",
-										["timeline"] = { "added 8.1.0.28724" },
+										["timeline"] = { ADDED_8_1_0 },
 									}),
 								},
 							})),
@@ -4336,7 +4336,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 						})),
 						champ(40, i(79131, {	-- Burnished Warden Staff
-							["timeline"] = { "added 5.0.1.15464", REMOVED_6_1_0 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 						})),
 						champ(25, i(42950, {	-- Champion Herod's Shoulder
 							["timeline"] = { REMOVED_6_1_0 },
@@ -4704,7 +4704,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 								["timeline"] = { "deleted 7.0.3.22248" },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
 							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)

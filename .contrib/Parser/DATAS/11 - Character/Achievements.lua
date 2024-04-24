@@ -710,7 +710,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	-- #if ANYCLASSIC
 	applyclassicphase(SOM_PHASE_ONE, ach(16433, {	-- Soul of Iron (Season of Mastery)
-		["timeline"] = { "added 1.14.3", REMOVED_1_15_0 },	-- NOTE: You could only acquire this during Season of Mastery, but it didn't appear on your account until Wrath Classic.
+		["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- NOTE: You could only acquire this during Season of Mastery, but it didn't appear on your account until Wrath Classic.
 		-- #if BEFORE TBC
 		["OnUpdate"] = [[function(t)
 			if t.collectible and _.Level >= 60 then
@@ -751,8 +751,8 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 },
 		["rank"] = 4,
 	})),
-	n(ARMOR, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" }, }, {
-		ach(11761, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" }, }, {	-- Azeroth's Next Top Model
+	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 }, }, {
+		ach(11761, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, }, {	-- Azeroth's Next Top Model
 			title(356),	-- Stylist
 		})),
 		ach(10694, {	-- Fabulous
@@ -794,42 +794,42 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		h(ach(15833, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- A Horde of Hoofbeats (H, 500 mounts)
 			i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
 		}))),
-		a(ach(12933, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- A Horde of Hoofbeats (A, 400 mounts)
+		a(ach(12933, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- A Horde of Hoofbeats (A, 400 mounts)
 			i(163981),	-- Frenzied Feltalon (MOUNT!)
 		}))),
-		h(ach(12934, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- A Horde of Hoofbeats (H, 400 mounts)
+		h(ach(12934, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- A Horde of Hoofbeats (H, 400 mounts)
 			i(163981),	-- Frenzied Feltalon (MOUNT!)
 		}))),
-		a(ach(12932, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- No Stable Big Enough (A, 350 mounts)
+		a(ach(12932, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- No Stable Big Enough (A, 350 mounts)
 			i(137614),	-- Frostshard Infernal (MOUNT!)
 		}))),
-		h(ach(12931, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- No Stable Big Enough (H, 350 mounts)
+		h(ach(12931, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- No Stable Big Enough (H, 350 mounts)
 			i(137614),	-- Frostshard Infernal (MOUNT!)
 		}))),
-		a(ach(10356, bubbleDownSelf({ ["timeline"] = { "added 6.2.2" } }, {	-- Lord of the Reins (A, 300 mounts)
+		a(ach(10356, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {	-- Lord of the Reins (A, 300 mounts)
 			i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
 			title(331),	-- <Name>, Lord of the Reins
 		}))),
-		h(ach(10355, bubbleDownSelf({ ["timeline"] = { "added 6.2.2" } }, {	-- Lord of the Reins (H, 300 mounts)
+		h(ach(10355, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {	-- Lord of the Reins (H, 300 mounts)
 			i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
 			title(331),	-- <Name>, Lord of the Reins
 		}))),
-		a(ach(9598,  bubbleDownSelf({ ["timeline"] = { "added 6.0.1" } }, {	-- Mountacular (A, 250 mounts)
+		a(ach(9598,  bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Mountacular (A, 250 mounts)
 			i(69226),	-- Felfire Hawk (MOUNT!)
 		}))),
-		h(ach(9599,  bubbleDownSelf({ ["timeline"] = { "added 6.0.1" } }, {	-- Mountacular (H, 250 mounts)
+		h(ach(9599,  bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Mountacular (H, 250 mounts)
 			i(69226),	-- Felfire Hawk (MOUNT!)
 		}))),
-		a(ach(8304,  bubbleDownSelf({ ["timeline"] = { "added 5.3.0" } }, {	-- Mount Parade (A, 200 mounts)
+		a(ach(8304,  bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {	-- Mount Parade (A, 200 mounts)
 			i(98259),	-- Armored Blue Dragonhawk (MOUNT!)
 		}))),
-		h(ach(8302,  bubbleDownSelf({ ["timeline"] = { "added 5.3.0" } }, {	-- Mount Parade (H, 200 mounts)
+		h(ach(8302,  bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {	-- Mount Parade (H, 200 mounts)
 			i(98104),	-- Armored Red Dragonhawk (MOUNT!)
 		}))),
-		a(ach(7860,  bubbleDownSelf({ ["timeline"] = { "added 5.1.0" } }, {	-- We're Going to Need More Saddles (A, 150 mounts)
+		a(ach(7860,  bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {	-- We're Going to Need More Saddles (A, 150 mounts)
 			i(91802),	-- Jade Pandaren Kite String (MOUNT!)
 		}))),
-		h(ach(7862,  bubbleDownSelf({ ["timeline"] = { "added 5.1.0" } }, {	-- We're Going to Need More Saddles (H, 150 mounts)
+		h(ach(7862,  bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {	-- We're Going to Need More Saddles (H, 150 mounts)
 			i(91802),	-- Jade Pandaren Kite String (MOUNT!)
 		}))),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2536, {	-- Mountain o' Mounts [A] (100 mounts)
@@ -907,21 +907,21 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		ach(15781, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- The Joy of Toy (500)
 			i(197986),	-- Murglasses (TOY!)
 		})),
-		ach(12996, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Toybox Tycoon (400)
+		ach(12996, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- Toybox Tycoon (400)
 			i(163244),		-- Brutus (PET!)
 		})),
-		ach(11176, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Remember to Share (300)
+		ach(11176, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- Remember to Share (300)
 			i(140500),		-- Mechanized Lumber Extractor (MOUNT!)
 		})),
-		ach(10354, bubbleDownSelf({ ["timeline"] = { "added 6.2.2" } }, {	-- Crashin' Thrashin' Commander(200)
+		ach(10354, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {	-- Crashin' Thrashin' Commander(200)
 			title(53),		-- Crashin' Thrashin'
 		})),
-		ach(9673, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {	-- The Toymaster (150)
+		ach(9673, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- The Toymaster (150)
 			i(119215),		-- Robo-Gnomebulator (TOY!)
 		})),
-		ach(9672, {["timeline"] = { "added 6.0.2" }}),		-- Tons of Toys (100)
-		ach(9671, {["timeline"] = { "added 6.0.2" }}),		-- Having a Ball (50)
-		ach(9670, {["timeline"] = { "added 6.0.2" }}),		-- Toying Around (25)
+		ach(9672, {["timeline"] = { ADDED_6_0_2 }}),		-- Tons of Toys (100)
+		ach(9671, {["timeline"] = { ADDED_6_0_2 }}),		-- Having a Ball (50)
+		ach(9670, {["timeline"] = { ADDED_6_0_2 }}),		-- Toying Around (25)
 	}),
 	-- #endif
 }))

@@ -800,7 +800,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 					["bonusID"] = 1812,
 				}),
 				i(7188, {	-- Stormwind Guard Shield
-					["timeline"] = { CREATED_1_12_1, "added 8.2.0" },
+					["timeline"] = { CREATED_1_12_1, ADDED_8_2_0 },
 				}),
 				i(7187, {	-- VanCleef's Boots
 					["requireSkill"] = IGNORED_VALUE,	-- not exclusive to fishing, listed under dented boots also

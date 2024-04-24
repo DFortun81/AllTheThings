@@ -559,7 +559,8 @@
         "REMOVE",
         "BATTLEGROUNDS",
         "BALANCE",
-        "PROFESSION_EQUIPMENT"
+        "PROFESSION_EQUIPMENT",
+        "ADD"
     ],
     "Lua.diagnostics.disable": [
         "duplicate-index"

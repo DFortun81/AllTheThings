@@ -37,11 +37,11 @@ root(ROOTS.PVP, pvp(n(ARENA, {	-- Arena
 				["collectible"] = false,
 			}),
 		}),
-		ach(15540, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Steadfast Soloist
+		ach(15540, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- Steadfast Soloist
 			ach(15511),	-- Solely Motivated
 			ach(15539),	-- Solo Aspirations
 		})),
-		ach(15544, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Supreme Soloist
+		ach(15544, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- Supreme Soloist
 			title(456),	-- Soloist <Name>
 			ach(15543),	-- Successful Solos
 			ach(15541),	-- Sole Survivor

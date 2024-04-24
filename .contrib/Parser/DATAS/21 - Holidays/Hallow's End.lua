@@ -28,7 +28,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
@@ -44,24 +44,24 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["timeline"] = { "added 7.2.5.24076" },
+		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	-- #if BEFORE 7.0.1
 	i(116811, {	-- "Lil' Starlet" Costume
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
 	i(116810, {	-- "Mad Alchemist" Costume
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(116801, {	-- Cursed Birman (PET!)
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
@@ -92,7 +92,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(116804, {	-- Widget the Departed (PET!)
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	-- #else
@@ -104,15 +104,15 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(128643, {	-- Exquisite Costume Set: "Deathwing"
-		["timeline"] = { "added 6.2.2.20395" },
+		["timeline"] = { ADDED_6_2_2 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
 	}),
 	i(138990, {	-- Exquisite Costume Set: "Grommash"
-		["timeline"] = { "added 7.0.3.22248" },
+		["timeline"] = { ADDED_7_0_3 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
 	}),
 	i(116828, {	-- Exquisite Costume Set: "The Lich King"
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
 	}),
 	i(151268, {	-- Exquisite Costume Set: "Xavius"
@@ -126,7 +126,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
-		["timeline"] = { "added 8.0.1.26624" },
+		["timeline"] = { ADDED_8_0_1 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(151271, {	-- Horse Head Costume (TOY!)
@@ -158,19 +158,19 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 };
 local PET_VENDOR_GROUPS = {
 	i(116811, {	-- "Lil' Starlet" Costume
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
 	i(116810, {	-- "Mad Alchemist" Costume
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
 	i(116812, {	-- "Yipp-Saron" Costume
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
 	i(116801, {	-- Cursed Birman (PET!)
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
@@ -182,7 +182,7 @@ local PET_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(139036, {	-- Ominous Pet Treat
-		["timeline"] = { "added 7.0.3.22248" },
+		["timeline"] = { ADDED_7_0_3 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
 	i(33154, {	-- Sinister Squashling (PET!)
@@ -190,7 +190,7 @@ local PET_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(116804, {	-- Widget the Departed (PET!)
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 };
@@ -321,36 +321,36 @@ end
 local WANDS_WITH_COST = {
 	i(116851, {	-- Hallowed Wand - Abomination
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(139004, {	-- Hallowed Wand - Banshee
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 7.0.3.22248" },
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 	i(20410, {	-- Hallowed Wand - Bat
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(128645, {	-- Hallowed Wand - Gargoyle
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.2.2.20395" },
+		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(116853, {	-- Hallowed Wand - Geist
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(20409, {	-- Hallowed Wand - Ghost
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(116850, {	-- Hallowed Wand - Ghoul
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(20399, {	-- Hallowed Wand - Leper Gnome
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(128646, {	-- Hallowed Wand - Nerubian
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.2.2.20395" },
+		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(20398, {	-- Hallowed Wand - Ninja
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -366,15 +366,15 @@ local WANDS_WITH_COST = {
 	}),
 	i(116848, {	-- Hallowed Wand - Slime
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(116854, {	-- Hallowed Wand - Spider
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(128644, {	-- Hallowed Wand - Wight
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-		["timeline"] = { "added 6.2.2.20395" },
+		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(20414, {	-- Hallowed Wand - Wisp
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -462,7 +462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 40.1, 70.0, LUNARFALL },	-- Pepe Location (Alliance)
 				{ 70.7, 90.2, FROSTWALL },	-- Pepe Location (Horde)
 			},
-			["timeline"] = { "added 6.2.2.20426" },
+			["timeline"] = { ADDED_6_2_2 },
 		}),
 		ach(284, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- A Mask For All Occasions
 			crit(2260, {	-- Blood Elf Female Mask
@@ -1662,7 +1662,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(7601, {	-- Tricks and Treats of Pandaria (A)
-			["timeline"] = { "added 5.0.4.16016" },
+			["timeline"] = { ADDED_5_0_4 },
 			["sym"] = {{ "achievement_criteria" }},
 			["races"] = ALLIANCE_ONLY,
 			--[[
@@ -1737,7 +1737,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(7602, {	-- Tricks and Treats of Pandaria (H)
-			["timeline"] = { "added 5.0.4.16016" },
+			["timeline"] = { ADDED_5_0_4 },
 			["sym"] = {{ "achievement_criteria" }},
 			["races"] = HORDE_ONLY,
 			--[[
@@ -1818,7 +1818,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(18360, {	-- Tricks and Treats of the Dragon Isles
-			["timeline"] = { "added 10.1.5.50379" },
+			["timeline"] = { ADDED_10_1_5 },
 			["g"] = {
 				crit(59979, {	-- Ohn'ahran Plains, Broadhoof Outpost
 					["_quests"] = { 75684 },	-- Candy Bucket — Ohn'ahran Plains, Broadhoof Outpost
@@ -1997,7 +1997,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["timeline"] = { ADDED_10_1_7 },
 			}),
 			i(117392, {	-- Loot-Filled Pumpkin (Epic)
-				["timeline"] = { "added 6.0.1", REMOVED_10_1_7 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_10_1_7 },
 				-- #if BEFORE 10.1.7
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
@@ -2040,10 +2040,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { ADDED_2_2_2 },
 					}),
 					i(117356, {	-- The Horseman's Sinister Slicer
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(117355, {	-- The Horseman's Horrific Hood
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					-- #endif
 				},
@@ -2089,10 +2089,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { ADDED_2_2_2 },
 					}),
 					i(117356, {	-- The Horseman's Sinister Slicer
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(117355, {	-- The Horseman's Horrific Hood
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(208485, {	-- The Scarlet Key
 						["timeline"] = { ADDED_10_1_7 },
@@ -2105,7 +2105,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			i(149574, {	-- Loot-Stuffed Pumpkin (Blue Bag after 7.2.5 Rework)
 				-- Bag introduced in 7.2.5 [Legion]
 				-- Only i600 has ever dropped from this bag, not the other iLvLs
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 				-- #if BEFORE 10.1.7
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
@@ -2119,10 +2119,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["groups"] = {
 					-- #if BEFORE 10.1.7
 					i(117356, {	-- The Horseman's Sinister Slicer
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(117355, {	-- The Horseman's Horrific Hood
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(33292, {	-- Hallowed Helm
 						["timeline"] = { ADDED_2_2_2 },
@@ -2146,10 +2146,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 				["groups"] = {
 					i(117356, {	-- The Horseman's Sinister Slicer
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(117355, {	-- The Horseman's Horrific Hood
-						["timeline"] = { "added 6.0.1.18594" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(33292, {	-- Hallowed Helm
 						["timeline"] = { ADDED_2_2_2 },
@@ -2194,10 +2194,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #endif
 					-- Mists of Pandaria
 					i(87569, {	-- The Horseman's Horrific Hood
-						["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
 					i(87570, {	-- The Horseman's Sinister Slicer
-						["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
 					-- Cataclysm
 					i(71326, {	-- The Horseman's Horrific Helm
@@ -2255,42 +2255,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #endif
 			-- Legion+
 			i(143901, {	-- Band of the Petrified Pumpkin
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			i(143904, {	-- Seal of Ghoulish Glee
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			i(143903, {	-- The Horseman's Ring
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			i(143902, {	-- Wicked Witch's Signet
-				["timeline"] = { "added 7.0.1" },
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			-- Warlords of Draenor
 			i(117363, {	-- Band of the Petrified Pumpkin
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(117364, {	-- Seal of Ghoulish Glee
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(117365, {	-- The Horseman's Ring
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(117362, {	-- Wicked Witch's Signet
-				["timeline"] = { "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			-- Mists of Pandaria
 			i(88167, {	-- Band of the Petrified Pumpkin
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			i(88168, {	-- Seal of Ghoulish Glee
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			i(88169, {	-- The Horseman's Ring
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			i(88166, {	-- Wicked Witch's Signet
-				["timeline"] = { "added 5.0.1", REMOVED_6_0_2 },
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			-- Cataclysm
 			i(71327, {	-- Band of Ghoulish Glee
@@ -2375,7 +2375,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	}),
 	petbattle(filter(BATTLE_PETS, {
 		["description"] = "|cFFFFD700Ghastly Rats|r, |cFFFFD700Ghost Maggots|r, and |cFFFFD700Spectral Spinners|r are only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison.",
-		["timeline"] = { "added 6.2.2.20395" },
+		["timeline"] = { ADDED_6_2_2 },
 		["maps"] = {
 			FROSTWALL,
 			LUNARFALL,
@@ -2515,7 +2515,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				19178,	-- Forsaken Commoner
 				20102,	-- Goblin Commoner
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				NORTHERN_BARRENS,
 				TANARIS,
@@ -2604,7 +2604,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(43259, {	-- Beware of the Crooked Tree
 			["qg"] = 109854,	-- Duroc Ironjaw
 			["coord"] = { 47.4, 40.6, LEGION_DALARAN },
-			["timeline"] = { "added 7.0.1" },
+			["timeline"] = { ADDED_7_0_3 },
 			["maps"] = { VALSHARAH },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
@@ -2737,7 +2737,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(39721, {	-- Culling the Crew
 			["qg"] = 96705,	-- Orukan
-			["timeline"] = { "added 6.0.1" },
+			["timeline"] = { ADDED_6_0_2 },
 			["maps"] = {
 				FROSTWALL,
 				LUNARFALL,
@@ -2949,7 +2949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(39720, {	-- Foul Fertilizer
 			["qg"] = 96705,	-- Orukan
-			["timeline"] = { "added 6.0.1" },
+			["timeline"] = { ADDED_6_0_2 },
 			["maps"] = {
 				FROSTWALL,
 				LUNARFALL,
@@ -3131,7 +3131,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(39719, {	-- Mutiny on the Boneship
 			["qg"] = 96705,	-- Orukan
-			["timeline"] = { "added 6.0.1" },
+			["timeline"] = { ADDED_6_0_2 },
 			["maps"] = {
 				FROSTWALL,
 				LUNARFALL,
@@ -3211,7 +3211,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(39716, {	-- Smashing Squashlings
 			["qg"] = 96705,	-- Orukan
-			["timeline"] = { "added 6.0.1" },
+			["timeline"] = { ADDED_6_0_2 },
 			["maps"] = {
 				FROSTWALL,
 				LUNARFALL,
@@ -3487,7 +3487,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 109734,	-- Hag of the Crooked Tree
 			-- ["sourceQuest"] = 43259,	-- Beware of the Crooked Tree	[not required 2023-10-25]
 			["coord"] = { 34.9, 56.0, VALSHARAH },
-			["timeline"] = { "added 7.0.1" },
+			["timeline"] = { ADDED_7_0_3 },
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
 			["groups"] = {
@@ -3636,7 +3636,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(43055, {	-- Candy Bucket — Dalaran : Broken Shores, Legerdemain Lounge, Neutral
 					["coord"] = { 48.1, 41.3, LEGION_DALARAN },
-					["timeline"] = { "added 7.0.1" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, Neutral
 					["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
@@ -3653,7 +3653,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				q(39657, {	-- Candy Bucket — Draenor Garrison (Frostwall or Lunarfall), Neutral
 					-- TODO: While it might seem weird, having this have coordinates at least will plot it on the map so folks don't forget.
 					-- Perhaps investigate a programatic solution? The garrison has different map IDs at different stages of creation.
-					["timeline"] = { "added 6.0.1" },
+					["timeline"] = { ADDED_6_0_2 },
 					["maps"] = {
 						FROSTWALL,
 						LUNARFALL,
@@ -3669,11 +3669,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32024, {	-- Candy Bucket — Dread Wastes, Klaxxi'vess, Neutral
 					["coord"] = { 55.9, 32.3, DREAD_WASTES },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32023, {	-- Candy Bucket — Dread Wastes, Soggy's Gamble, Neutral
 					["coord"] = { 55.2, 71.1, DREAD_WASTES },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(12398, {	-- Candy Bucket — Dustwallow Marsh, Mudsprocket, Neutral
 					-- #if AFTER CATA
@@ -3701,47 +3701,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32027, {	-- Candy Bucket — Jade Forest, Dawn's Blossom, Neutral
 					["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32029, {	-- Candy Bucket — Jade Forest, Greenstone Village, Neutral
 					["coord"] = { 48.0, 34.6, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32032, {	-- Candy Bucket — Jade Forest, Jade Temple Grounds, Neutral
 					["coord"] = { 54.6, 63.3, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32031, {	-- Candy Bucket — Jade Forest, Sri-La Village, Neutral
 					["coord"] = { 55.7, 24.4, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32021, {	-- Candy Bucket — Jade Forest, Tian Monastery, Neutral
 					["coord"] = { 41.6, 23.1, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32034, {	-- Candy Bucket — Krasarang Wilds, Marista, Neutral
 					["coord"] = { 51.4, 77.29, KRASARANG_WILDS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32036, {	-- Candy Bucket — Krasarang Wilds, Zhu's Watch, Neutral
 					["coord"] = { 75.94, 6.91, KRASARANG_WILDS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32039, {	-- Candy Bucket — Kun-Lai Summit, Binan Village, Neutral
 					["coord"] = { 72.7, 92.2, KUN_LAI_SUMMIT },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32041, {	-- Candy Bucket — Kun-Lai Summit, Grummle Bazaar, Neutral
 					["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32037, {	-- Candy Bucket — Kun-Lai Summit, One Keg, Neutral
 					["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32051, {	-- Candy Bucket — Kun-Lai Summit, Zouchin Village, Neutral
 					["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(29000, {	-- Candy Bucket — Mount Hyjal, Grove of Aessina, Neutral
 					["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
@@ -3827,11 +3827,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32026, {	-- Candy Bucket — The Veiled Stair, Tavern in the Mists, Neutral
 					["coord"] = { 54.9, 72.3, THE_VEILED_STAIR },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32043, {	-- Candy Bucket — Townlong Steppes, Longying Outpost, Neutral
 					["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(29016, {	-- Candy Bucket — Uldum, Oasis of Vir'sar, Neutral
 					["coord"] = { 26.6, 7.30, ULDUM },
@@ -3847,15 +3847,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32044, {	-- Candy Bucket — Vale of Eternal Blossoms, Mistfall Village, Neutral
 					["coord"] = { 35.1, 77.7, VALE_OF_ETERNAL_BLOSSOMS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32048, {	-- Candy Bucket — Valley of the Four Winds, Pang's Stead, Neutral
 					["coord"] = { 83.6, 20.3, VALLEY_OF_THE_FOUR_WINDS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32046, {	-- Candy Bucket — Valley of the Four Winds, Stoneplow, Neutral
 					["coord"] = { 19.8, 55.7, VALLEY_OF_THE_FOUR_WINDS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(28981, {	-- Candy Bucket — Vashj'ir, Deepmist Grotto, Neutral
 					["coord"] = { 63.4, 60.2, 203 },
@@ -3889,143 +3889,143 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- Dragonflight
 				q(75684, {	-- Candy Bucket - Ohn'ahran Plains, Broadhoof Outpost
 					["coord"] = { 46.2, 40.6, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75693, {	-- Candy Bucket - Ohn'ahran Plains, Emberwatch
 					["coord"] = { 66.3, 24.5, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75692, {	-- Candy Bucket - Ohn'ahran Plains, Forkriver Crossing
 					["coord"] = { 72.1, 80.4, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75685, {	-- Candy Bucket - Ohn'ahran Plains, Maruukai
 					["coord"] = { 62.9, 40.6, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75687, {	-- Candy Bucket - Ohn'ahran Plains, Ohn'iri Springs
 					["coord"] = { 57.1, 76.7, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75688, {	-- Candy Bucket - Ohn'ahran Plains, Pinewood Post
 					["coord"] = { 81.3, 59.2, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75689, {	-- Candy Bucket - Ohn'ahran Plains, Rusza'thar Reach
 					["coord"] = { 85.9, 35.4, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75686, {	-- Candy Bucket - Ohn'ahran Plains, Shady Sanctuary
 					["coord"] = { 28.6, 60.6, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75691, {	-- Candy Bucket - Ohn'ahran Plains, Teerakai
 					["coord"] = { 41.9, 60.4, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75690, {	-- Candy Bucket - Ohn'ahran Plains, Timberstep Outpost
 					["coord"] = { 85.0, 26.0, OHNAHRAN_PLAINS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75698, {	-- Candy Bucket - Thaldraszus, Algeth'era Court
 					["coord"] = { 50.1, 42.7, THALDRASZUS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75696, {	-- Candy Bucket - Thaldraszus, Garden Shrine
 					["coord"] = { 35.1, 79.2, THALDRASZUS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75697, {	-- Candy Bucket - Thaldraszus, Gelikyr Post
 					["coord"] = { 52.4, 69.8, THALDRASZUS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75695, {	-- Candy Bucket - Thaldraszus, Temporal Conflux
 					["coord"] = { 59.9, 82.7, THALDRASZUS },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75700, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Parting Glass)
 					["coord"] = { 72.4, 46.7, VALDRAKKEN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75699, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Roasted Ram)
 					["coord"] = { 47.2, 45.5, VALDRAKKEN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75701, {	-- Candy Bucket - Thaldraszus, Valdrakken (Weyrnrest)
 					["coord"] = { 22.4, 30.9, VALDRAKKEN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75667, {	-- Candy Bucket - The Azure Span, Camp Antonidas
 					["coord"] = { 47.0, 40.3, THE_AZURE_SPAN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75668, {	-- Candy Bucket - The Azure Span, Camp Nowhere
 					["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75669, {	-- Candy Bucket - The Azure Span, Iskaara
 					["coord"] = { 12.4, 49.4, THE_AZURE_SPAN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75670, {	-- Candy Bucket - The Azure Span, Theron's Watch
 					["coord"] = { 65.5, 16.3, THE_AZURE_SPAN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75671, {	-- Candy Bucket - The Azure Span, Three-Falls Lookout
 					["coord"] = { 18.8, 24.6, THE_AZURE_SPAN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75702, {	-- Candy Bucket - The Forbidden Reach, Morqut Village
 					["coord"] = { 33.9, 58.8, THE_FORBIDDEN_REACH },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75672, {	-- Candy Bucket - The Waking Shores, Apex Observatory
 					["coord"] = { 24.5, 82.1, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75673, {	-- Candy Bucket - The Waking Shores, Dragonscale Basecamp
 					["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75675, {	-- Candy Bucket - The Waking Shores, Life Vault Ruins
 					["coord"] = { 65.2, 57.9, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75676, {	-- Candy Bucket - The Waking Shores, Obsidian Throne
 					["coord"] = { 25.8, 55.2, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(77698, {	-- Candy Bucket - The Waking Shores, Obsidian Bulwark
 					["coord"] = { 43.1, 66.7, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75674, {	-- Candy Bucket - The Waking Shores, Ruby Lifeshrine
 					["coord"] = { 58.0, 67.3, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75677, {	-- Candy Bucket - The Waking Shores, Skytop Observatory
 					["coord"] = { 76.1, 54.8, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75678, {	-- Candy Bucket - The Waking Shores, Uktulut Backwater
 					["coord"] = { 53.9, 39.0, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75679, {	-- Candy Bucket - The Waking Shores, Uktulut Pier
 					["coord"] = { 46.4, 27.4, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75683, {	-- Candy Bucket - The Waking Shores, Wingrest Embassy
 					["coord"] = { 76.2, 35.4, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75704, {	-- Candy Bucket - Zaralek Cavern, Loamm
 					["coord"] = { 56.4, 56.4, ZARALEK_CAVERN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75703, {	-- Candy Bucket - Zaralek Cavern, Obsidian Rest
 					["coord"] = { 52.1, 26.5, ZARALEK_CAVERN },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 			}),
 		}),
@@ -4079,7 +4079,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(43056, {	-- Candy Bucket — Dalaran : Broken Shores, Silver Enclave, Alliance
 					["coord"] = { 41.8, 64.1, LEGION_DALARAN },
-					["timeline"] = { "added 7.0.1" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				q(13473, {	-- Candy Bucket — Dalaran : Northrend, Silver Enclave, Alliance
 					["coord"] = { 42.5, 63.5, NORTHREND_DALARAN },
@@ -4208,15 +4208,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32049, {	-- Candy Bucket — Jade Forest, Paw'don Village, Alliance
 					["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32033, {	-- Candy Bucket — Jade Forest, Pearlfin Village, Alliance
 					["coord"] = { 59.6, 83.2, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32042, {	-- Candy Bucket — Kun-Lai Summit, Westwind Rest, Alliance
 					["coord"] = { 54.1, 82.8, KUN_LAI_SUMMIT },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(28963, {	-- Candy Bucket — Loch Modan, Farstrider Lodge, Alliance
 					["coord"] = { 82.9, 63.6, LOCH_MODAN },
@@ -4312,7 +4312,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(54710, {	-- Candy Bucket — Tiragarde Sound, Boralus, Alliance
 					["coord"] = { 73.7, 12.4, BORALUS },
-					["timeline"] = { "added 8.0.1" },
+					["timeline"] = { ADDED_8_0_1 },
 				}),
 				q(28977, {	-- Candy Bucket — Twilight Highlands, Firebeard's Patrol, Alliance
 					["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
@@ -4332,7 +4332,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32052, {	-- Candy Bucket — Vale of Eternal Blossoms, Shrine of Seven Stars, Alliance
 					["coord"] = { 87.0, 68.8, VALE_OF_ETERNAL_BLOSSOMS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(28985, {	-- Candy Bucket — Vashj'ir, Darkbreak Cove, Alliance
 					["coord"] = { 54.7, 72.2, 203 },
@@ -4372,7 +4372,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(75681, {	-- Candy Bucket — The Waking Shores, Wild Coast
 					["coord"] = { 81.3, 32.0, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -4443,7 +4443,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(43057, {	-- Candy Bucket — Dalaran : Broken Shores, Sunreaver's Sanctuary, Horde
 					["coord"] = { 66.7, 30.1, LEGION_DALARAN },
-					["timeline"] = { "added 7.0.1" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				q(13474, {	-- Candy Bucket — Dalaran : Northrend, Sunreaver's Sanctuary, Horde
 					["coord"] = { 66.6, 30.1, NORTHREND_DALARAN },
@@ -4543,23 +4543,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32028, {	-- Candy Bucket — Jade Forest, Grookin Hill, Horde
 					["coord"] = { 28.0, 47.4, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32050, {	-- Candy Bucket — Jade Forest, Honeydew Village, Horde
 					["coord"] = { 28.5, 13.3, THE_JADE_FOREST },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32020, {	-- Candy Bucket — Krasarang Wilds, Dawnchaser Retreat, Horde
 					["coord"] = { 28.3, 50.7, KRASARANG_WILDS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32047, {	-- Candy Bucket — Krasarang Wilds, Thunder Cleft, Horde
 					["coord"] = { 61.0, 25.1, KRASARANG_WILDS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(32040, {	-- Candy Bucket — Kun-Lai Summit, Eastwind Rest, Horde
 					["coord"] = { 62.7, 80.5, KUN_LAI_SUMMIT },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(12362, {	-- Candy Bucket — Mulgore, Bloodhoof Village, Horde
 					["coord"] = { 46.8, 60.4, MULGORE },
@@ -4689,7 +4689,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(32022, {	-- Candy Bucket — Vale of Eternal Blossoms, Shrine of Two Moons, Horde
 					["coord"] = { 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
-					["timeline"] = { "added 5.0.1" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(28984, {	-- Candy Bucket — Vashj'ir, Legion's Rest, Horde
 					["coord"] = { 51.5, 62.5, 203 },
@@ -4709,7 +4709,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(54709, {	-- Candy Bucket — Zuldazar, Dazar'alor, Horde
 					["coord"] = { 49.6, 82.3, THE_GREAT_SEAL },
-					["timeline"] = { "added 8.0.1" },
+					["timeline"] = { ADDED_8_0_1 },
 					["maps"] = {
 						HALL_OF_CHRONICLERS,
 						DAZARALOR,
@@ -4717,18 +4717,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(75682, {	-- Candy Bucket — The Waking Shores, Wild Coast
 					["coord"] = { 80.4, 27.9, THE_WAKING_SHORES },
-					["timeline"] = { "added 10.1.5.50379" },
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
 		}),
 	}),
 	n(RARES, {
-		["timeline"] = { "added 6.2.2.20395" },
+		["timeline"] = { ADDED_6_2_2 },
 		["groups"] = {
 			n(96323, {	-- Arachnis
 				["description"] = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your garrison. (This rare is available all year.)",
-				["timeline"] = { "added 6.2.2.20395" },
+				["timeline"] = { ADDED_6_2_2 },
 				["questID"] = 39617,
 				["isDaily"] = true,
 				["coords"] = {
@@ -4749,7 +4749,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ 70.71, 90.21, FROSTWALL },	-- Pepe Location [Horde]
 					{ 40.12, 70.06, LUNARFALL },	-- Pepe Location [Alliance]
 				},
-				["timeline"] = { "added 6.2.2.20395" },
+				["timeline"] = { ADDED_6_2_2 },
 				["groups"] = {
 					ach(10365),	-- A Frightening Friend
 				},
@@ -4885,7 +4885,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["groups"] = MASKS_WITH_COST,
 		}),
 		n(96362, {	-- Izzy Hollyfizzle <Events Coordinator>
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { ADDED_6_2_2 },
 			["coords"] = {
 				{ 47.3, 38.4, FROSTWALL },
 				{ 44.2, 51.0, LUNARFALL },
@@ -4918,7 +4918,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		n(109685, {	-- Pippi <Pet Vendor>
 			["coord"] = { 31.9, 50.2, ELWYNN_FOREST },
-			["timeline"] = { "added 7.1.0.22810" },
+			["timeline"] = { ADDED_7_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = PET_VENDOR_GROUPS,
 		}),
@@ -4949,7 +4949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		n(109688, {	-- Woim <Pet Vendor>
 			["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
-			["timeline"] = { "added 7.1.0.22810" },
+			["timeline"] = { ADDED_7_1_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = PET_VENDOR_GROUPS,
 		}),
@@ -4958,7 +4958,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	n(ZONE_DROPS, {
 		i(128807, {	-- Coin of Many Faces (TOY!)
 			["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
-			["timeline"] = { "added 6.0.1" },
+			["timeline"] = { ADDED_6_0_2 },
 			["crs"] = {
 				96637,	-- Boneship Reveler
 				96538,	-- Brackish Cultivator

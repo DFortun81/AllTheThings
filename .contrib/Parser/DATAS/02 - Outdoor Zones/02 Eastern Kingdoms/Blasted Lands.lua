@@ -1758,7 +1758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER 7.0.3
 						i(17050, {	-- Chan's Imperial Robes
 							["description"] = "Added to Emerald Encrusted Chest in 7.0. & Mith'rethis Rare in Hinterlands in 9.0.",
-							["timeline"] = { REMOVED_4_0_3, "added 7.0.3" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_7_0_3 },
 						}),
 						-- #endif
 					},

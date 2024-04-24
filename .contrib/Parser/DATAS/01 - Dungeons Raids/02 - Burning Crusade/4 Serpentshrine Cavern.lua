@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(97553, {	-- Tainted Waveling (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(30049),	-- Fathomstone
 					i(30048),	-- Brighthelm of Justice
@@ -172,7 +172,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 21213,
 				["groups"] = {
 					i(97552, {	-- Tideskipper (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(30082),	-- Talon of Azshara
 					i(30080),	-- Luminescent Rod of the Naaru
@@ -203,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(97554, {	-- Coilfang Stalker (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(30242, {	-- Helm of the Vanquished Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },

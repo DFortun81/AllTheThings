@@ -5,7 +5,7 @@
 root(ROOTS.PVP, {
 	pvp(expansion(EXPANSION.LEGION, {
 		n(SEASON_VINDICTIVE, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 7.0.3", REMOVED_7_1_0 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 } }, {
 				ach(11017),	-- Challenger: Legion Season 1
 				ach(11022, {	-- Defender of the Alliance: Legion Season 1
 					["races"] = ALLIANCE_ONLY,
@@ -2428,7 +2428,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_FEARLESS, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.1.0.23222", REMOVED_7_2_0 } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 } }, {
 				ach(11028),	-- Challenger: Legion Season 2
 				ach(11034, {	-- Defender of the Alliance: Legion Season 2
 					["races"] = ALLIANCE_ONLY,
@@ -3482,7 +3482,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_CRUEL, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 7.2.0", REMOVED_7_2_5 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
 				ach(11039),	-- Challenger: Legion Season 3
 				ach(11008, {	-- Cruel Combatant (Alliance) Legion Season 3
 					["races"] = ALLIANCE_ONLY,
@@ -5949,7 +5949,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_FEROCIOUS, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.2.5", REMOVED_7_3_0 } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
 				ach(11060),	-- Challenger: Legion Season 4
 				ach(11054, {	-- Defender of the Alliance: Legion Season 4
 					["races"] = ALLIANCE_ONLY,

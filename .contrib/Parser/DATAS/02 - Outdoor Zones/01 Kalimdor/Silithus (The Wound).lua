@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 				["lore"] = "The Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.",
 				["icon"] = "Interface\\Icons\\inv_heartofazeroth",
 				["coord"] = { 43.2, 44.5, SILITHUS },
-				["timeline"] = { "added 8.0.1" },
+				["timeline"] = { ADDED_8_0_1 },
 				["maps"] = {
 					REPAIRED_CHAMBER_OF_HEART,
 					1538,	-- scenario map for "Beginning the Descent"
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						q(55374, {	-- A Disturbance Beneath the Earth
 							["provider"] = { "n", 152194 },	-- MOTHER
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["qg"] = 142930,	-- Halford Wyrmbane
 							["sourceQuest"] = 51795,	-- The Battle for Lordaeron
 							["coord"] = { 27.7, 21.5, STORMWIND_CITY },
-							["timeline"] = { "added 8.0.1.27291", REMOVED_9_0_1 },
+							["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53028, {	-- A Dying World (A/H)
@@ -239,9 +239,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 54.5, 72.5, THE_VEILED_STAIR },
 							["sourceQuest"] = 56186,	-- Spies to the Left and Right
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 						}),
 						q(55407, {	-- Calming the Spine
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								58583,	-- Where the Heart Is (H)
 							},
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
-							["timeline"] = { "added 8.3.0.33062" },
+							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(55393, {	-- Null the Void
 							["provider"] = { "n", 151693 },	-- Merithra of the Dream
@@ -430,9 +430,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 47.0, 69.2, DEADWIND_PASS },
 							["sourceQuest"] = 56188,	-- To the Catacombs!
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 							["g"] = {
 								i(170491),	-- Burnt Journal Page
@@ -582,9 +582,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 69.5, 16.5, 46 },	-- Karazhan Catacombs
 							["sourceQuest"] = 56189,	-- On the Trail of the Black Prince
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 						}),
 						q(55394, {	-- Shards of Emerald
@@ -600,9 +600,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								56267,	-- Whispers of N'zoth (H)
 							},
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 						}),
 						q(57393, {	-- Stepping Through the Darkness (Rank 6)
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 53405,	-- Unlocking the Heart's Potential
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["timeline"] = { "added 8.0.1.27291", REMOVED_8_2_0 },
+							["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(55618, {	-- The Heart Forge
@@ -645,10 +645,10 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								53028,	-- A Dying World (A/H)
 							},
 							["coord"] = { 42.2, 44.2, SILITHUS },
-							["timeline"] = { "added 8.0.1.27144" },
+							["timeline"] = { ADDED_8_0_1 },
 							["groups"] = {
 								i(158075, {	-- Heart of Azeroth
-									["timeline"] = { "added 8.0.1.27144" },
+									["timeline"] = { ADDED_8_0_1 },
 								}),
 							},
 						}),
@@ -656,7 +656,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["timeline"] = { "added 8.0.1.27291", REMOVED_8_2_0 },
+							["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(55398, {	-- The Long Awake
@@ -709,9 +709,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 47.8, 68.8, EASTERN_KINGDOMS },	-- Burning Steppes, outside BWD
 							["sourceQuest"] = 56187,	-- Black Winged Shadow
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 						}),
 						q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 50973,	-- The Heart's Power
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["timeline"] = { "added 8.0.1.27291", REMOVED_8_2_0 },
+							["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(56263, {	-- Unlocking the Power (A)
@@ -804,9 +804,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							-- #ENDIF
 							["races"] = ALLIANCE_ONLY,
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
@@ -847,9 +847,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							-- #ENDIF
 							["races"] = HORDE_ONLY,
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 						}),
 						q(56504, {	-- Wrathion's Journal
@@ -857,9 +857,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 46.3, 67.2, REPAIRED_CHAMBER_OF_HEART },
 							["sourceQuest"] = 56190,	-- Save Ebonhorn
 							["timeline"] = {
-								"added 8.2.5.31921",
+								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
-								"added 9.2",	-- Reported available again 2022-03-21
+								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 						}),
 					}),
@@ -1144,10 +1144,10 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						50300,	-- The Speaker's Call
 						50056,	-- The Speaker's Call
 					},
-					["timeline"] = { "added 7.3.5.25727", REMOVED_8_0_1 },
+					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["groups"] = {
 						ach(12071, {	-- Crucible's Promise
-							["timeline"] = { "added 7.3.5.25727", REMOVED_8_0_1 },
+							["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 						}),
 					},
 				}),
@@ -1218,14 +1218,14 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					["qg"] = 132255,	-- Master Mathias Shaw
 					["sourceQuest"] = 49976,	-- Gifts of the Fallen
 					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
-					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
+					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49982, {	-- Witness to the Wound (H)
 					["qg"] = 132254,	-- Nathanos Blightcaller
 					["sourceQuest"] = 50341,	-- A Recent Discovery
 					["coord"] = { 49.8, 75.6, ORGRIMMAR },
-					["timeline"] = { "added 7.3.5", REMOVED_8_0_1 },
+					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

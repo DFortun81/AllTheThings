@@ -4,7 +4,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(311, {	-- Scarlet Halls
 		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["maps"] = { 431, 432 },
 		["lvl"] = lvlsquish(21, 21, 10),
 		["groups"] = {
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 58632,	-- Armsmaster Harlan
 					["groups"] = {
 						i(23192, {	-- Tabard of the Scarlet Crusade
-							["timeline"] = { REMOVED_5_0_4, "added 5.3.0" },
+							["timeline"] = { REMOVED_5_0_4, ADDED_5_3_0 },
 						}),
 						i(88272),	-- The Gleaming Ravager
 						i(88273),	-- Armsmaster's Sealed Locket
@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(88270),	-- Lightblade Bracer
 						i(88269),	-- Scarlet Sandals
 						i(132550, {	-- Scarlet Chain Footpads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -107,19 +107,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["groups"] = {
 							ach(6684),	-- Humane Society
 							i(144190, {	-- Houndmaster's Compound Crossbow
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(143966, {	-- Canine Commander's Breastplate
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144191, {	-- Commanding Bracers
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144192, {	-- Hound Trainer's Gloves
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144177, {	-- Beastbinder Ring
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(81693, {	-- Houndmaster's Compound Crossbow
 								["timeline"] = { REMOVED_7_1_5 },
@@ -143,23 +143,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["groups"] = {
 							ach(6427),	-- Mosh Pit
 							i(23192, {	-- Tabard of the Scarlet Crusade
-								["timeline"] = { REMOVED_5_0_4, "added 5.3.0" },
+								["timeline"] = { REMOVED_5_0_4, ADDED_5_3_0 },
 							}),
 							i(23192),	-- Tabard of the Scarlet Crusade
 							i(144193, {	-- The Gleaming Ravager
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144182, {	-- Armsmaster's Sealed Locket
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144006, {	-- Harlan's Shoulder
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144194, {	-- Lightblade Bracer
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144007, {	-- Scarlet Sandals
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(81697, {	-- The Gleaming Ravager
 								["timeline"] = { REMOVED_7_1_5 },
@@ -188,37 +188,37 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
 							}),
 							i(144196, {	-- Mograine's Immaculate Might
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144195, {	-- Koegler's Ritual Knife
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144198, {	-- Melted Hypnotic Blade
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144178, {	-- Scorched Scarlet Key
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144179, {	-- Temperature-Sensing Necklace
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144009, {	-- Robes of Koegler
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144199, {	-- Vellum-Ripper Gloves
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144197, {	-- Bindburner Belt
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144010, {	-- Bradbury's Entropic Legguards
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144008, {	-- Pyretic Legguards
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 							i(144220, {	-- Vithrak, Gaze of the Deadman
-								["timeline"] = { "added 7.1.5.23360" },
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 
 							i(82814, {	-- Mograine's Immaculate Might

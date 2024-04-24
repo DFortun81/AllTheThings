@@ -740,7 +740,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131221, {	-- Marauding Cord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5346, {	-- Orcish Battle Bow
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -992,7 +992,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131227, {	-- Quilboar Linked Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5314, {	-- Boar Hunter's Cape
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -1055,7 +1055,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131324, {	-- Kranal's Chestplate
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131329, {	-- Hauberk of Fortune
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1383,7 +1383,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131295, {	-- Gorat's Spaulders of Satisfaction
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1489,7 +1489,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131220, {	-- Hands of Unfocused Rage
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5351, {	-- Bounty Hunter's Ring
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -1593,7 +1593,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131328, {	-- Ointment-Coated Handwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1782,7 +1782,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131223, {	-- Smart Sandals
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5343, {	-- Barkeeper's Cloak
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old reward, quest repurposed
@@ -1878,7 +1878,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131218, {	-- Cord of the Forgotten Pool
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1956,7 +1956,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131706, {	-- Slightly Dented Belt
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2019,7 +2019,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_1_3_0 },
 						}),
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 },
 						}),
 					}
 				}),
@@ -2037,7 +2037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(131710, {	-- Wild Rider's Mail Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(69222, {	-- Kadrak's Axe
 							["timeline"] = { ADDED_4_1_0 },
@@ -2110,7 +2110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131330, {	-- Uninsured Armguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2311,7 +2311,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131294, {	-- Battlefield Medic Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2423,7 +2423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131707, {	-- Dusty Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2673,7 +2673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(131708, {	-- Sludge Encrusted Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3005,7 +3005,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131222, {	-- Nozzlepot Legwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5326, {	-- Flaring Baton
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3063,7 +3063,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131224, {	-- Pigman Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5275, {	-- Binding Girdle
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3182,7 +3182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_1_0 },
 						}),
 						i(131709, {	-- Passenger Pantaloons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3226,7 +3226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131331, {	-- Silver-Trim Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3247,7 +3247,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131325, {	-- Boar Hunter's Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3302,7 +3302,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131310, {	-- Wolf Tender's Footwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3514,7 +3514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131219, {	-- Murderous Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3570,10 +3570,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131225, {	-- Gazlowe's Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131226, {	-- Retainer Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3593,7 +3593,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131332, {	-- Waptor Tweads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -4259,7 +4259,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(97821, {	-- Gahz'rooki (PET!)
-					["timeline"] = { "added 5.3.0.16758" },
+					["timeline"] = { ADDED_5_3_0 },
 					["crs"] = {
 						70997,	-- Hellscream Laborer
 						70999,	-- Kor'kron Marauder
@@ -4268,7 +4268,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5020, {	-- Kolkar Booty Key
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 					["crs"] = {
 						3394,	-- Barak Kodobane
 						3274,	-- Kolkar Pack Runner
@@ -4277,7 +4277,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(97990, {	-- Raptorhide Boxing Gloves (still drops but has no purpose)
-					["timeline"] = { "added 5.3.0.16767" },
+					["timeline"] = { ADDED_5_3_0 },
 				}),
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",

@@ -146,7 +146,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "Depleted-Kyparium Rocket",
-						["timeline"] = { "added 5.0.1.15699" },
+						["timeline"] = { ADDED_5_0_4 },
 						["recipeID"] = 127138,
 					},
 				},

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
 			["maps"] = { SANCTUM_OF_LIGHT },
@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["name"] = "Traveler Found",
 							["description"] = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
 							["sourceQuest"] = 43682,	-- Book Presented
-							["timeline"] = { "added 7.0.3.21570" },
+							["timeline"] = { ADDED_7_0_3 },
 							["qgs"] = {
 								11609,	-- Alexia Ironknife
 								11608,	-- Bardu Sharpeye

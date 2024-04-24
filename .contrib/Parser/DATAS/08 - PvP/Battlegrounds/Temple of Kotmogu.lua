@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(417, {	-- Temple of Kotmogu
 		["icon"] = "Interface\\Icons\\Achievement_battleground_templeofkotmogu",
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6981, {	-- Master of Temple of Kotmogu

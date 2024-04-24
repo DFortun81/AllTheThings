@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, {
 	m(PANDARIA, {
-		applyclassicphase(MOP_PHASE_ONE, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+		applyclassicphase(MOP_PHASE_ONE, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["lore"] = "The Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.",
 			["icon"] = "Interface\\Icons\\achievement_zone_jadeforest",
 			["maps"] = {
@@ -2142,7 +2142,7 @@ root(ROOTS.Zones, {
 					q(29547, {	-- The King's Command
 						["qg"] = 1750,	-- Grand Admiral Jes-Tereth
 						["coord"] = { 85.6, 32.8, STORMWIND_CITY },
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),

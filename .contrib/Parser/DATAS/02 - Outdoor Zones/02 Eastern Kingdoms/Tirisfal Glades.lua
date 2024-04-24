@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(131387, {	-- Abandoned Miner's Pants
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(11851),	-- Scavenger Tunic
 								i(11852),	-- Roamer's Leggings
 								i(131923, {	-- Scavenger Vest
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 85164 },	-- Elegant Scroll
 							},
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { MONK },
 						}),
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(6060),	-- Flax Bracers
 								i(2173),	-- Old Leather Belt
 								i(131605, {	-- Rusty Chain Belt
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -611,7 +611,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 63272,	-- Ting, Strong of Stomach
 							["sourceQuest"] = 31146,	-- Scribbled Scroll
 							["coord"] = { 53.0, 56.4, DEATHKNELL },
-							["timeline"] = { "added 5.0.1.15640", REMOVED_7_0_3 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { MONK },
 						}),
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156944, {	-- Worgen Training Stick
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1632,7 +1632,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131390, {	-- Mountaineer's Waistguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57144, {	-- Gallow's End Gauntlets
 							["timeline"] = { ADDED_4_0_3 },
@@ -1692,7 +1692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131392, {	-- Waistguard of Brill
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1778,10 +1778,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156938, {	-- Simmer's Cudgel
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(133700, {	-- Simmer's Dirk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57145, {	-- Simmer's Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -1931,7 +1931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131389, {	-- Duskbat Mail Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1986,7 +1986,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131393, {	-- Agamand Family Bracer
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2004,7 +2004,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131394, {	-- Treads of Brill
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2155,7 +2155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131388, {	-- Xavren's Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

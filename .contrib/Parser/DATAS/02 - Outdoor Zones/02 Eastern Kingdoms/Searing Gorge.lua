@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156936, {	-- Dark Iron Pike
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1331,13 +1331,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156937, {	-- Dark Iron Blackjack
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157009, {	-- Dark Iron Shank
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157010, {	-- Dark Iron Maul
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1645,11 +1645,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				o(266289, {	-- Time Lost Chest
 					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
 					["coord"] = { 37.0, 48.9, SEARING_GORGE },
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
 					["groups"] = {
 						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
@@ -1661,12 +1661,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(142359, {	-- Lava Oil
 					["coord"] = { 48.0, 42.3, SEARING_GORGE },
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cr"] = 47463,	-- Searing Flamewraith
 				}),
 				i(14476, {	-- Pattern: Cindercloth Gloves
 					-- Started dropping again in 8.2.  The new version (167887) is also available from Time-Lost Trader
-					["timeline"] = { REMOVED_4_0_1, "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, ADDED_8_2_0 },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },
@@ -1675,7 +1675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(14471, {	-- Pattern: Cindercloth Vest
 					-- Started dropping again in 8.2.  The new version (167886) is also available from Time-Lost Trader
-					["timeline"] = { REMOVED_4_0_1, "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, ADDED_8_2_0 },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },

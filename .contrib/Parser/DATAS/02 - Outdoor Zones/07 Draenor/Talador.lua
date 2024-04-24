@@ -262,7 +262,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 80.4, 25.4, TALADOR },
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(87125, {	-- Taralune <Grand Master Pet Tamer>
 						["coord"] = { 49.0, 80.4, TALADOR },
 					}),
@@ -2634,13 +2634,13 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(137663, {	-- Soft Foam Sword (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(104323, {	-- The Swineskin (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
 								["timeline"] = { ADDED_3_3_3 },

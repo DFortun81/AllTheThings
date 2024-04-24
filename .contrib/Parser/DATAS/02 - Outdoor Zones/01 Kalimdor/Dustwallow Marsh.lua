@@ -446,7 +446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131672, {	-- Chain Linked Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -506,10 +506,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131675, {	-- Overlord's Trophy Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156999, {	-- Mok'Morokk's Headcracker
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -592,7 +592,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131650, {	-- Grimsby's Chain Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -658,7 +658,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131666, {	-- Marshwarden's Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -774,7 +774,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131664, {	-- Grimtotem Earthbinder's Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57831, {	-- Direhorn Cinch
 							["timeline"] = { ADDED_4_0_3 },
@@ -933,7 +933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9518),	-- Mud's Crushers
 						i(9519),	-- Durtfeet Stompers
 						i(131651, {	-- Mud's Chain Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131673, {	-- Brooding Collar
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1102,7 +1102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131649, {	-- "Swamp Eye" Chain Sash
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5016),	-- Artisan's Trousers
 						i(9622),	-- Reedknot Ring
@@ -1199,7 +1199,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156976, {	-- Staff of Memory
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1354,7 +1354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131648, {	-- Frog Stompers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(6807),	-- Frog Leg Stew
 					},
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131676, {	-- Stonemaul Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1622,7 +1622,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156976, {	-- Staff of Memory
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1840,7 +1840,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(156977, {	-- Serrated Gladius
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2130,7 +2130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(131253, {	-- Archer's Chain Bracer
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2214,7 +2214,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131659, {	-- Swift Wind Shoulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57849, {	-- Seamonster Harpoon
 							["timeline"] = { ADDED_4_0_3 },
@@ -2433,7 +2433,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131674, {	-- Encarmine Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2513,7 +2513,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131657, {	-- Journeyman's Headguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57853, {	-- Proudmoore Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -2522,7 +2522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131658, {	-- Treads of the Skirmisher
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2759,7 +2759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131663, {	-- The Explorer's Coif
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3018,7 +3018,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131253, {	-- Archer's Chain Bracer
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3039,7 +3039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131662, {	-- Crested Chain Epaulets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3075,7 +3075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131671, {	-- Raptorhide Chain Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(33242, {	-- Raptorhide Legguards
 							["timeline"] = { ADDED_2_3_0 },
@@ -3214,10 +3214,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 77.6, 17.2, DUSTWALLOW_MARSH },
 					["groups"] = {
 						i(142265, {	-- Big Red Raygun (TOY!)
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142262, {	-- Electrified Key
-							["timeline"] = { "added 7.1.0.22731" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 					},
 				}),

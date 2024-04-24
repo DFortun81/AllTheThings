@@ -50,11 +50,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 			q(42758, {	-- You're Gonna Need A Bigger Boat!
 				["qg"] = 28048,	-- Dread Captain DeMeza <Scourge of the South Seas>
 				["coord"] = { 40.0, 72.6, THE_CAPE_OF_STRANGLETHORN },
-				["timeline"] = { "added 7.0.3.21570" },
+				["timeline"] = { ADDED_7_0_3 },
 				["isYearly"] = true,
 				["groups"] = {
 					i(138414, {	-- Emergency Pirate Outfit
-						["timeline"] = { "added 7.0.3.21570" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				},
 			}),
@@ -62,10 +62,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 		n(RARES, {
 			n(108715, {  -- Ol' Eary
 				["coord"] = { 37.8, 66.2, THE_CAPE_OF_STRANGLETHORN },
-				["timeline"] = { "added 7.0.3.21570" },
+				["timeline"] = { ADDED_7_0_3 },
 				["groups"] = {
 					i(138415, {	-- Slightly-Chewed Insult Book (TOY!)
-						["timeline"] = { "added 7.0.3.21570" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				},
 			}),
@@ -81,7 +81,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(116392, {	-- Big Bag of Booty
-						["timeline"] = { "added 6.0.2.18816" },
+						["timeline"] = { ADDED_6_0_2 },
 						["filterID"] = CONSUMABLES,	-- Changed from "Toy"
 					}),
 					i(208858, {	-- Highland Drake: Pirates' Day Armor (DM!)
@@ -89,18 +89,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 						["cost"] = 500000000,	-- 50k
 					}),
 					i(138400, {	-- Petey
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 						["filterID"] = CONSUMABLES,	-- Changed from nothing
 					}),
 				},
 			}),
 			n(122396, {	-- Edward Techt <Keeper of the Black>
 				["coord"] = { 39.6, 84.2, THE_CAPE_OF_STRANGLETHORN },
-				["timeline"] = { "added 7.2.5.23910" },
+				["timeline"] = { ADDED_7_2_5 },
 				["groups"] = {
 					i(150547, {	-- Jolly Roger (TOY!)
 						["description"] = "To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
-						["timeline"] = { "added 7.2.5.23910" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 				},
 			}),

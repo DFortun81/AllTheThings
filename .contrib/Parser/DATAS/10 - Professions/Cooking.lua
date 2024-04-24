@@ -979,7 +979,7 @@ profession(COOKING, {
 				-- #if AFTER WOD
 				applyclassicphase(WOD_PHASE_ONE, {
 					["name"] = "Fancy Darkmoon Feast",
-					["timeline"] = { "added 6.2.0.19890" },
+					["timeline"] = { ADDED_6_2_0 },
 					["recipeID"] = 185705,
 				}),
 				-- #endif
@@ -1066,7 +1066,7 @@ profession(COOKING, {
 				-- #if AFTER WOD
 				applyclassicphase(WOD_PHASE_ONE, {
 					["name"] = "Lemon Herb Filet",
-					["timeline"] = { "added 6.2.0.19890" },
+					["timeline"] = { ADDED_6_2_0 },
 					["recipeID"] = 185704,
 				}),
 				-- #endif
@@ -1210,7 +1210,7 @@ profession(COOKING, {
 				-- #if AFTER WOD
 				applyclassicphase(WOD_PHASE_ONE, {
 					["name"] = "Sugar-Crusted Fish Feast",
-					["timeline"] = { "added 6.2.0.19890" },
+					["timeline"] = { ADDED_6_2_0 },
 					["recipeID"] = 185708,
 				}),
 				-- #endif

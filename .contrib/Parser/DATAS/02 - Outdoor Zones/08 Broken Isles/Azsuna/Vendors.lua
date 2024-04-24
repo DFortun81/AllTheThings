@@ -106,11 +106,11 @@ root(ROOTS.Zones, {
 						}),
 						i(137777, {	-- Vantus Rune Technique: Spellblade Aluriel [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
-							["timeline"] = { "added 7.1.0" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(137781, {	-- Vantus Rune Technique: Star Augur Etraeus [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
-							["timeline"] = { "added 7.1.0" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(139603, {	-- Vault Patroller's Warboots
 							["cost"] = 10000000,	-- 1,000g
@@ -170,19 +170,19 @@ root(ROOTS.Zones, {
 						}),
 						i(137779, {	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
-							["timeline"] = { "added 7.1.0" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(137780, {	-- Vantus Rune Technique: Krosus [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
-							["timeline"] = { "added 7.1.0" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(137774, {	-- Vantus Rune Technique: Skorpyron [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
-							["timeline"] = { "added 7.1.0" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(137776, {	-- Vantus Rune Technique: Trilliax [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
-							["timeline"] = { "added 7.1.0" },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 					},
 				}),

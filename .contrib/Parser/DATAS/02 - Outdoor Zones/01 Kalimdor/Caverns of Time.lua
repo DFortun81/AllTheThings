@@ -193,14 +193,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				n(155944, {	-- Otela <Time-Lost Baubles>
 					["coord"] = { 42.4, 71.6, 74 },
-					["timeline"] = { "added 8.2.0.30918" },
+					["timeline"] = { ADDED_8_2_0 },
 					["groups"] = {
 						i(170739, {	-- Sunswarmed Sand
-							["timeline"] = { "added 8.2.0.30918" },
+							["timeline"] = { ADDED_8_2_0 },
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 10 }},
 						}),
 						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
-							["timeline"] = { "added 8.2.0.30918" },
+							["timeline"] = { ADDED_8_2_0 },
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 						}),
 					},

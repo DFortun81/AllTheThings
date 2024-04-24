@@ -146,7 +146,7 @@ VOLUNDS_FOLLY = createHeader({
 		cn = "沃伦德的愚行",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
 			["maps"] = { SKYHOLD },
@@ -347,13 +347,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(39192, {	-- The Forge of Odyn
 						["sourceQuest"] = 39530,	-- The Forgening
 						["provider"] = { "n", 96586 },	-- Master Smith Helgar
 						["coord"] = { 41.0, 37.1, SKYHOLD },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- Start Legion Zone
 					q(39214, {	-- The Eye of Odyn
@@ -596,13 +596,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
 						["coord"] = { 61.2, 27.6, SKYHOLD },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					q(45987, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45986,	-- An Urgent Warning
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["coord"] = { 59.7, 13.4, SKYHOLD },
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(46173, {	-- Tactical Planning
@@ -616,31 +616,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44849, {	-- Recruitment Drive
 						["sourceQuest"] = 46173,	-- Tactical Planning
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44850, {	-- Arming the Army
 						["sourceQuest"] = 44849,	-- Recruitment Drive
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45834, {	-- Stolen Souls
 						["sourceQuest"] = 44849,	-- Recruitment Drive
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45118, {	-- Helya's Horn
 						["sourceQuest"] = 44849,	-- Recruitment Drive
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45128, {	-- A Glorious Reunion
 						["sourceQuests"] = {
@@ -650,61 +650,61 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44889, {	-- Resource Management
 						["sourceQuest"] = 45128,	-- A Glorious Reunion
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45634, {	-- Kvaldir on Call
 						["sourceQuest"] = 44889,	-- Resource Management
 						["provider"] = { "n", 116858 },	-- Danica the Reclaimer
 						["coord"] = { 69.8, 34.7, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45648, {	-- Missing in Action: Lord Darius Crowley
 						["sourceQuest"] = 44889,	-- Resource Management
 						["provider"] = { "n", 116858 },	-- Danica the Reclaimer
 						["coord"] = { 69.8, 34.7, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45632, {	-- Missing in Action: Eitrigg
 						["sourceQuest"] = 44889,	-- Resource Management
 						["provider"] = { "n", 116858 },	-- Danica the Reclaimer
 						["coord"] = { 69.8, 34.7, BROKEN_SHORE },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45649, {	-- Mission: Search and Rescue (A)
 						["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
 						["provider"] = { "n", 117475 },	-- Lord Darius Crowley
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45647, {	-- Mission: Search and Rescue (H)
 						["sourceQuest"] = 45632,	-- Missing in Action: Eitrigg
 						["provider"] = { "n", 117471 },	-- Eitrigg
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45650, {	-- Operation Felrage (A)
 						["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
 						["provider"] = { "n", 117475 },	-- Lord Darius Crowley
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45633, {	-- Operation Felrage (H)
 						["sourceQuest"] = 45632,	-- Missing in Action: Eitrigg
 						["provider"] = { "n", 117471 },	-- Eitrigg
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 						["races"] = HORDE_ONLY,
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46267, {	-- Return of the Battlelord
 						["sourceQuests"] = {
@@ -716,9 +716,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 116858 },	-- Danica the Reclaimer
 						["coord"] = { 69.8, 34.7, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(45876, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Lord Darius Crowley
+					q(45876, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Lord Darius Crowley
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
 						["coord"] = { 59.9, 83.8, SKYHOLD },
@@ -727,7 +727,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					})),
-					q(45873, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Eitrigg
+					q(45873, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Eitrigg
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["provider"] = { "n", 117479 },	-- Eitrigg
 						["coord"] = { 59.9, 83.8, SKYHOLD },
@@ -743,9 +743,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 119527 },	-- Valarjar Warsinger
 						["coord"] = { 43.6, 63.1, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46207, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- The Trial of Rage
+					q(46207, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Trial of Rage
 						["sourceQuest"] = 46208,	-- A Godly Invitation
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
@@ -758,27 +758,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43888, {	-- Hitting the Books
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
-						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46142, {	-- Knowledge is Power
 						["sourceQuest"] = 43888,	-- Hitting the Books
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46155, {	-- Furthering Knowledge
 						["sourceQuest"] = 46142,	-- Knowledge is Power
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46778, {	-- Further Advancement
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["coord"] = { 59.7, 13.4, SKYHOLD },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					i(144436, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Lost Legend of Odyn
+					i(144436, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
 						["g"] = {
 							n(GREAT_ODYN_AND_THE_FIRELORD, { ["questID"] = 46223, }),
@@ -789,7 +789,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							n(THE_SEALING_OF_THE_HALLS_OF_VALOR, { ["questID"] = 46228, }),
 						}
 					})),
-					i(144437, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Lost Legend of the Valarjar
+					i(144437, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Lost Legend of the Valarjar
 						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior. (any spec)",
 						["crs"] = {
 							115732,	-- Jorvild the Trusted (highest drop chance)
@@ -809,7 +809,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(44222, {	-- The Might of the Val'kyr
 							["provider"] = { "n", 111774 },	-- Matilda Skoptidottir
 							["coord"] = { 72.6, 30.8, SKYHOLD },
-							["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+							["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 						}),
 					}),
 					gt(408, {	-- For Honor and Glory

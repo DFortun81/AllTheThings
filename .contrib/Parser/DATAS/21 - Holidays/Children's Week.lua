@@ -23,7 +23,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 });
 -- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
 local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
-	["timeline"] = { "added 6.0.1.18566" },
+	["timeline"] = { ADDED_6_0_2 },
 	["groups"] = {
 	},
 	["sym"] = {{"select","itemID",
@@ -39,31 +39,31 @@ local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	}},
 	--[[
 		i(103786, {	-- "Dapper Gentleman" Costume
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(103795, {	-- "Dread Pirate" Costume
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(103789, {	-- "Little Princess" Costume
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(103797, {	-- Big Pink Bow
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(92741, {	-- Flawless Battle-Stone
 			["timeline"] = { ADDED_5_1_0 },
 		}),
 		i(98112, {	-- Lesser Pet Treat
-			["timeline"] = { "added 5.3.0.16758" },
+			["timeline"] = { ADDED_5_3_0 },
 		}),
 		i(89906, {	-- Magical Mini-Treat
-			["timeline"] = { "added 5.0.4.15913" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		i(71153, {	-- Magical Pet Biscuit
 			["timeline"] = { ADDED_4_2_0 },
 		}),
 		i(98114, {	-- Pet Treat
-			["timeline"] = { "added 5.3.0.16758" },
+			["timeline"] = { ADDED_5_3_0 },
 		}),--]]
 });
 local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
@@ -99,16 +99,16 @@ local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 };
 local WARDEN_OF_THE_GROUPS = {
 	i(23007, {	-- Mr. Wiggles (PET!)
-		["timeline"] = { "added 1.11.1.5462" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 	i(23015, {	-- Whiskers the Rat (PET!)
-		["timeline"] = { "added 1.11.1.5462" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 	i(66073, {	-- Scooter the Snail (PET!)
 		["timeline"] = { ADDED_4_0_3 },
 	}),
 	i(23002, {	-- Speedy (PET!)
-		["timeline"] = { "added 1.11.1.5462" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
@@ -549,7 +549,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53861,	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 			},
 			["coord"] = { 36.25, 51.08, DRUSTVAR },	-- Birdfeather's Statue
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = { BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -628,7 +628,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 47.77, 39.37, BORALUS },	-- Path to Oprhan Matron Westerson
 				{ 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
@@ -672,7 +672,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 53.46, 84.91, DAZARALOR },	-- Entrance to Hall of Castes
 				{ 54.64, 84.61, DAZARALOR },	-- Caretaker Padae
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -775,7 +775,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53968,	-- The Shifting Pack
 			},
 			["coord"] = { 28.91, 88.76, VOLDUN },	-- The Golden Isle
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -925,7 +925,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 65.77, 45.01, 865 },	-- Path Starts to Pteroor Rise
 				{ 70.54, 49.11, 865 },	-- Pterror Rise
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				ZULDAZAR,
 				THE_GREAT_SEAL,	-- Dazar'alor
@@ -1010,7 +1010,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 			["coord"] = { 53.28, 15.25, STORMWIND_CITY },	-- Stormwind Embassy
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -1053,7 +1053,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53970,	-- The Sethrak Queen
 			},
 			["coord"] = { 54.64, 84.61, DAZARALOR },	-- Caretaker Padae
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -1073,7 +1073,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53864,	-- Shapeshifters
 			},
 			["coord"] = { 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
@@ -1110,7 +1110,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 46.32, 43.86, DRUSTVAR },	-- Continue the path to Ulfar's Den
 				{ 46.32, 44.53, DRUSTVAR },	-- Ulfar's Den
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = { BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1140,7 +1140,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
 			["coord"] = { 39.68, 78.68, ORGRIMMAR },	-- Orgimmar Embassy
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
 			},
@@ -1303,7 +1303,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 71.18, 49.19, NAZMIR },	-- Path Starts
 				{ 73.26, 53.42, NAZMIR },	-- The Frogmarsh
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -1336,7 +1336,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
 			["coord"] = { 42.47, 22.71, TIRAGARDE_SOUND },	-- Mountain Folk
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = { BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1377,7 +1377,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 27.02, 51.98, VOLDUN },	-- Path to Sanctuary of the Devoted
 				{ 26.77, 52.57, VOLDUN },	-- Sanctuary of the Devoted
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -1397,7 +1397,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 49.39, 31.22, ZULDAZAR },	-- Path Starts
 				{ 48.69, 31.76, ZULDAZAR },	-- Lair of Gonk
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -1431,7 +1431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
 			["coord"] = { 72.57, 49.94, STORMSONG_VALLEY },	-- Shrine of the Storm View
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = { BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1522,7 +1522,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
 			["coord"] = { 79.83, 82.51, TIRAGARDE_SOUND },	-- Meet with Pirates
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = { BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1709,9 +1709,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(55376, {	-- completing Hunting for Gold (53969)
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1 },
 	}),
 	q(55377, {	-- completing Hunting for Gold (53969)
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1 },
 	}),
 });

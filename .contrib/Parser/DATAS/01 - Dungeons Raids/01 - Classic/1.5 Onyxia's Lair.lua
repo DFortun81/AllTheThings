@@ -3,14 +3,14 @@
 -----------------------------------------------------
 local ADDED_WITH_RERELEASE = { ADDED_3_2_2 };
 local REMOVED_WITH_RERELEASE = {
-	"added 1.0.1",
+	ADDED_1_0_1,
 	-- #if ANYCLASSIC
 	REMOVED_10_0_0,	-- Blizzard added it back to Classic Wrath!
 	-- #else
 	REMOVED_3_2_2,
 	-- #endif
 };
-local REMOVED_WITH_CATA = { "added 1.0.1", REMOVED_4_0_3 };
+local REMOVED_WITH_CATA = { ADDED_1_0_1, REMOVED_4_0_3 };
 
 -- Helms were moved to Nefarian with 3.2.2
 local BLOODFANG_HOOD = i(16908);	-- Bloodfang Hood

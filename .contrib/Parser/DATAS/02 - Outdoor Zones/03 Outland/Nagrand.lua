@@ -1632,7 +1632,7 @@ root(ROOTS.Zones, {
 				-- #if AFTER LEGION
 				n(SPECIAL, {
 					n(121086, {	-- Shawn
-						["timeline"] = { "added 7.2.0.23530" },
+						["timeline"] = { ADDED_7_2_0 },
 						["coord"] = { 21.6, 53.4, NAGRAND },
 						["groups"] = {
 							i(147433),	-- Glowing Diamond Ring
@@ -1740,30 +1740,30 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(18072, {	-- Elementalist Sharvak <The Earthen Ring>
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 						["coord"] = { 60.6, 22.1, NAGRAND },
 						["groups"] = {
 							i(136934, {	-- Raging Elemental Stone (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(136935, {	-- Tadpole Cloudseeder (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(141059, {	-- Technique: Glyph of Flickering (RECIPE!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["requireSkill"] = INSCRIPTION,
 							}),
 							i(136938, {	-- Tome of Hex: Compy (CI!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(138490, {	-- Waterspeaker's Totem (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 						},

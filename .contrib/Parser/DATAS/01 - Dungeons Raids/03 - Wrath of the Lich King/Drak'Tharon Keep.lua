@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(35631),	-- Crystal Pendant of Warding
 						i(157558, {	-- Shoddily Stitched Shoulderguards
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37722),	-- Breastplate of Undeath (7.3.5 - Used to be only Heroic Mode)
@@ -297,7 +297,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37725),	-- Savage Wound Wrap (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
 						i(157561, {	-- Dino-Toothed Waistguard
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(35635),	-- Stable Master's Breeches
 						-- #if AFTER 7.3.5
@@ -381,7 +381,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if AFTER 7.3.5
 							i(35631),	-- Crystal Pendant of Warding (7.3.5 - Used to be only Normal Mode)
 							i(157558, {	-- Shoddily Stitched Shoulderguards
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #endif
 							i(37722),	-- Breastplate of Undeath
@@ -405,7 +405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37724),	-- Handler's Arm Strap
 							i(37725),	-- Savage Wound Wrap
 							i(157561, {	-- Dino-Toothed Waistguard
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #if AFTER 7.3.5
 							i(35635),	-- Stable Master's Breeches (7.3.5 - Used to be only Normal Mode)

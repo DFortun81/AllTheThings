@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131504, {	-- Troublesome Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131505, {	-- Worn Defias Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58922, {	-- Worn Defias Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -562,7 +562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131502, {	-- Sentinel Hill Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58912, {	-- Sentinel Hill Surcoat
 							["timeline"] = { ADDED_4_0_3 },
@@ -592,7 +592,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156935, {	-- Kobold Torch
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(58904, {	-- Wax Catcher
 							["timeline"] = { ADDED_4_0_3 },
@@ -620,7 +620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131497, {	-- Chewed Chain Cord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58915, {	-- Harvester Boots
 							["timeline"] = { ADDED_4_0_3 },
@@ -659,7 +659,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131503, {	-- Spothide Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -715,7 +715,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_1_3_0 },
 						}),
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -980,7 +980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156934, {	-- House Wrynn Gavel
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(58928, {	-- House Wrynn Halberd
 							["timeline"] = { ADDED_4_0_3 },
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131496, {	-- Boiled Chain Footpads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58909, {	-- Golden Sunshine Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -1812,13 +1812,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(115348, {	-- Feathered Cape
-							["timeline"] = { "added 6.0.1.18522" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(4454, {	-- Talon of Vultros
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(115349, {	-- Talon of Vultros
-							["timeline"] = { "added 6.0.1.18522" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),

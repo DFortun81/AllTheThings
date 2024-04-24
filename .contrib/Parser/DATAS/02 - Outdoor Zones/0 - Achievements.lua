@@ -125,7 +125,7 @@ root(ROOTS.Zones, {
 				title(98),	-- Ambassador %
 			}),
 		})),
-		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18471" }, }, {	-- An Awfully Big Adventure
+		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 }, }, {	-- An Awfully Big Adventure
 			["provider"] = { "i", 113216 },	-- Elekk Plushie
 			["groups"] = {
 				i(120121),	-- Trunks (PET!)
@@ -321,7 +321,7 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { ADDED_4_0_3 },
 		})),
-		ach(9924, bubbleDownSelf({ ["timeline"] = { "added 6.1.0" }, }, {	-- Field Photographer
+		ach(9924, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 }, }, {	-- Field Photographer
 			title(307),	-- Field Photographer <Name>
 			crit(27865),	-- Onyxia's Lair
 			crit(27863),	-- The Frozen Throne
@@ -409,7 +409,7 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { ADDED_4_0_3 },
 		})),
-		ach(13512, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" }, }, {	-- Master Calligrapher
+		ach(13512, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }, }, {	-- Master Calligrapher
 			crit(44853, {	-- Master of Calligraphy - Circle
 				["_quests"] = {
 					55340,	-- Calligraphy [A]
@@ -593,7 +593,7 @@ root(ROOTS.Zones, {
 				13294,	-- Loremaster of Zandalar (H)
 				14280,	-- Loremaster of Shadowlands
 			}},
-			["timeline"] = { "added 5.0.4.16016" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				title(93),		-- Loremaster <Name>
 				i(43300),		-- Loremaster's Colors

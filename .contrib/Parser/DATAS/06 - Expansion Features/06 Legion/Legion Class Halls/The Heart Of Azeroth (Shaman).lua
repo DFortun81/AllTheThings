@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
 			["maps"] = { THE_HEART_Of_AZEROTH },
@@ -229,7 +229,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40225 },	-- A Ring Reforged
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["coord"] = { 31.6, 76.2, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.0.3", REMOVED_8_0_1 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- Start Legion Zone
 					q(41510, {	-- Azeroth Needs You
@@ -571,13 +571,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 118427 },	-- Injured Earthcaller
 						["coord"] = { 31.0, 51.2, THE_HEART_Of_AZEROTH },
 						["isBreadcrumb"] = true,
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					q(45996, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45995,	-- An Urgent Warning
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.1.5", REMOVED_7_2_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					--
 					q(45652, {	-- A "Humble" Request
@@ -591,31 +591,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45706, {	-- The Power of Thousands
 						["sourceQuests"] = { 45652 },	-- A "Humble" Request
 						["provider"] = { "n", 117482 },	-- Magatha Grimtotem
 						["coord"] = { 35.4, 76.0, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45724, {	-- Snakes and Stones
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45723, {	-- The Crone's Wrath
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45725, {	-- Breaking Chains
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(44800, {	-- Against Magatha's Will
 						["sourceQuests"] = {
@@ -625,31 +625,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["maps"] = { THOUSAND_NEEDLES },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45763, {	-- Demonic Disruption
 						["sourceQuests"] = { 44800 },	-- Against Magatha's Will
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["coord"] = { 30.4, 51.8, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45765, {	-- Brothers and Sisters
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45971, {	-- Infernal Phenomena
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45767, {	-- Elemental Cores
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45883, {	-- The Firelord's Offense
 						["sourceQuests"] = {
@@ -659,21 +659,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45769, {	-- Conflagration
 						["sourceQuests"] = { 45883 },	-- The Firelord's Offense
 						["provider"] = { "n", 115492 },	-- Firelord Smolderon
 						["coord"] = { 54.6, 52.4, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46258, {	-- The Calm After the Storm
 						["sourceQuests"] = { 45769 },	-- Conflagration
 						["provider"] = { "n", 106519 },	-- Farseer Nobundo
 						["coord"] = { 30.4, 51.8, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46057, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Magatha Grimtotem
+					q(46057, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Magatha Grimtotem
 						["sourceQuests"] = { 46258 },	-- The Calm After the Storm
 						["provider"] = { "n", 120245 },	-- Magatha Grimtotem <Elder Crone>
 						["coord"] = { 34.2, 30.6, THE_HEART_Of_AZEROTH },
@@ -688,9 +688,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 117888 },	-- Orono
 						["coord"] = { 44.6, 61.6, BROKEN_SHORE },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
-					q(46792, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Gathering of the Storms
+					q(46792, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Gathering of the Storms
 						["sourceQuests"] = { 46791 },	-- Carried On the Wind
 						["provider"] = { "n", 106521 },	-- Consular Celestos
 						["coord"] = { 28.4, 45.0, THE_HEART_Of_AZEROTH },
@@ -703,19 +703,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43886, {	-- Speaking to the Wind
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
 						["coord"] = { 32.4, 49.4, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.0.3", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46147, {	-- Knowledge is Power
 						["sourceQuest"] = 43886,	-- Speaking to the Wind
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
 						["coord"] = { 32.4, 49.4, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46158, {	-- Furthering Knowledge
 						["sourceQuest"] = 46147,	-- Knowledge is Power
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
 						["coord"] = { 32.4, 49.4, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.1.5", REMOVED_7_3_0 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(44101, {	-- Supply Dropped
 						["provider"] = { "o", 254010 },	-- Earthen Ring Supplies
@@ -730,7 +730,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46057 },	-- Champion: Magatha Grimtotem
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 				}),
 				n(SPECIAL, {

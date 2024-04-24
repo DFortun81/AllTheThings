@@ -65,10 +65,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["rank"] = 5,
 		})),
 		ach(7380, {	-- Double Agent
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		ach(7382, {	-- Dynamic Duo
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		-- #if AFTER TBC
 		ach(889, {	-- Fast and Furious
@@ -105,7 +105,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["rank"] = 100000,
 		}),
 		ach(6753, {	-- Got My Mind On My Money [200000g]
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["rank"] = 200000,
 		}),
 		ach(891, {	-- Giddy Up!
@@ -143,7 +143,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 		})),
 		ach(7384, {	-- Quintessential Quintet
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		ach(621, {	-- Represent [TODO]
 			["timeline"] = { ADDED_3_0_2 },
@@ -167,7 +167,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["rank"] = 10,
 		}),
 		ach(7383, {	-- Terrific Trio
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
 			["timeline"] = { ADDED_3_0_2, "deleted 4.0.3" },
@@ -198,7 +198,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(38147),	-- Corrupted Band
 		i(38145),	-- Deathweave Bag
 	})),
-	cl(DEMONHUNTER, bubbleDownSelf({ ["timeline"] = { "added 7.0.1" }, }, {
+	cl(DEMONHUNTER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 }, }, {
 		i(112458),	-- Illidari Warglaive
 		i(129181),	-- Illidari Warglaive
 		i(112450),	-- Illidari Blindfold
@@ -273,7 +273,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157666),	-- Wildshifter Tunic
 			i(157673),	-- Wildshifter Bracers
 			i(157668),	-- Wildshifter Grips
@@ -428,7 +428,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157674),	-- Heartbonded Vest
 			i(157681),	-- Heartbonded Bracers
 			i(157676),	-- Heartbonded Gauntlets
@@ -439,7 +439,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157622),	-- Silverscope Longrifle
 		})),
 	}),
-	cl(MONK, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+	cl(MONK, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 		i(157690),	-- Ascetic's Vest
 		i(157697),	-- Ascetic's Cuffs
 		i(157692),	-- Ascetic's Handguards
@@ -591,19 +591,19 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(77509, {	-- Trainee's Cord
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(72020, {	-- Trainee's Leggings
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(72019, {	-- Trainee's Vest
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(77526, {	-- Trainee's Wristwraps
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 		}),
 		n(WEAPONS, {
@@ -613,7 +613,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157686),	-- Spellsculptor's Robe
 			i(157689),	-- Spellsculptor's Wristwraps
 			i(157683),	-- Spellsculptor's Handwraps
@@ -629,7 +629,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Dwarf Paladin.|r", -- Possibly as D.I.D too
 				["races"] = { DWARF },
 				["classes"] = { PALADIN },
-				["timeline"] = { "added 8.0.1.27326" }
+				["timeline"] = { ADDED_8_0_1 }
 			}),
 			mount(73629, {	-- Exarch's Elekk (MOUNT!)
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Draenei Paladin.|r",
@@ -774,7 +774,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(36),	-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157698),	-- Lightsoul Battleplate
 			i(157705),	-- Lightsoul Vambraces
 			i(157700),	-- Lightsoul Gauntlets
@@ -783,11 +783,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157699),	-- Lightsoul Sabatons
 			i(157631),	-- Maul of Smiting
 			mount(290608, {	-- Crusader's Direhorn (MOUNT!)
-				["timeline"] = { "added 8.1.5" },
+				["timeline"] = { ADDED_8_1_5 },
 				["races"] = { ZANDALARI },
 			}),
 			mount(270562, {	-- Darkforge Ram (MOUNT!)
-				["timeline"] = { "added 8.0.1" },
+				["timeline"] = { ADDED_8_0_1 },
 				["races"] = { DARKIRON },
 			}),
 			mount(363613, {	-- Lightforged Ruinstrider (MOUNT!)
@@ -924,19 +924,19 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(77509, {	-- Trainee's Cord
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(72020, {	-- Trainee's Leggings
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(72019, {	-- Trainee's Vest
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(77526, {	-- Trainee's Wristwraps
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { "added 5.0.1.15762" }
+				["timeline"] = { ADDED_5_0_4 }
 			}),
 		}),
 		n(WEAPONS, {
@@ -949,7 +949,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 }
 			}),
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157710),	-- Curate's Robe
 			i(157713),	-- Curate's Bindings
 			i(157707),	-- Curate's Gloves
@@ -1096,7 +1096,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_3_3_0 }
 			}),
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157714),	-- Nimblefinger Jerkin
 			i(157721),	-- Nimblefinger Bindings
 			i(157716),	-- Nimblefinger Gloves
@@ -1180,7 +1180,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(36),		-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157722),	-- Totem-Caller Tunic
 			i(157729),	-- Totem-Caller Armbands
 			i(157724),	-- Totem-Caller Gloves
@@ -1425,7 +1425,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(35),		-- Bent Staff
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157734),	-- Felburner's Robe
 			i(157737),	-- Felburner's Wristwraps
 			i(157731),	-- Felburner's Handwraps
@@ -1564,7 +1564,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(25),	-- Worn Shortsword
 			i(2362),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157738),	-- Warsinger's Breastplate
 			i(157745),	-- Warsinger's Vambraces
 			i(157740),	-- Warsinger's Gauntlets
@@ -1602,7 +1602,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(142504, {["timeline"] = {ADDED_7_1_0}}),	-- Hidden Tabard
 	}),
 	-- #endif
-	filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" }, }, {
+	filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {
 		ill(5387),	-- Agility (ILLUSION!)
 		ill(5861),	-- Beastslayer (ILLUSION!)
 		ill(5393),	-- Crusader (ILLUSION!)
@@ -1704,9 +1704,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #endif
 			-- #if ANYCLASSIC
 			-- CRIEVE NOTE: This was not available in Wrath Classic.
-			["timeline"] = { "added 1.11.0", REMOVED_3_0_2 },
+			["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2 },
 			-- #else
-			["timeline"] = { "added 1.11.0", REMOVED_7_3_5 },
+			["timeline"] = { ADDED_1_11_0, REMOVED_7_3_5 },
 			-- #endif
 		}),
 		i(52532, {	-- Worn Wood Chopper

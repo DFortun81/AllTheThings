@@ -1117,7 +1117,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12669,	-- So Far, So Bad
 					}),
 					q(39208, {	-- Zul'Drak
-						["timeline"] = { "added 6.2.0.19934", REMOVED_7_3_5 },	-- old quest from the adventure guide. Pretty sure this was removed (CRIEVE NOTE: Not sure what patch it was removed.)
+						["timeline"] = { ADDED_6_2_0, REMOVED_7_3_5 },	-- old quest from the adventure guide. Pretty sure this was removed (CRIEVE NOTE: Not sure what patch it was removed.)
 						["isBreadcrumb"] = true,
 					}),
 				}),

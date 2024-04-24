@@ -161,28 +161,28 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 				q(55510, {	-- No Mercy for the Merciless
 					["qg"] = 151795,	-- Commander Zanneth
 					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(55511, {	-- Slay them all!
 					["qg"] = 151611,	-- Commander Dardosh
 					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(55508, {	-- Victory in Wintergrasp (A)
 					["qg"] = 152003,	-- Tactical Officer Ahbramis
 					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(55509, {	-- Victory in Wintergrasp (H)
 					["qg"] = 152004,	-- Tactical Officer Kilrath
 					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),

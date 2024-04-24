@@ -254,7 +254,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["groups"] = {
 						i(36980),	-- Hewn Sparring Quarterstaff
 						i(157580, {	-- Spark of the Forge
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37814),	-- Iron Dwarf Smith Pauldrons (7.3.5 - Used to be only Heroic Mode)
@@ -285,7 +285,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(36986),	-- Kilt of Molten Golems
 						-- #if AFTER 7.3.5
 						i(157579, {	-- Slag-Stained Legplates
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37841),	-- Slag Footguards (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -368,7 +368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if AFTER 7.3.5
 							i(36980),	-- Hewn Sparring Quarterstaff (7.3.5 - Used to be only Normal Mode)
 							i(157580, {	-- Spark of the Forge
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #endif
 							i(37814),	-- Iron Dwarf Smith Pauldrons
@@ -398,7 +398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if AFTER 7.3.5
 							i(36986),	-- Kilt of Molten Golems (7.3.5 - Used to be only Normal Mode)
 							i(157579, {	-- Slag-Stained Legplates
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #endif
 							i(37841),	-- Slag Footguards

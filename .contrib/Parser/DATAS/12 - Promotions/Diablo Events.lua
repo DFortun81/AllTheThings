@@ -41,7 +41,7 @@ GREEDY_EMISSARY_EVENT = createHeader({
 });
 root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	n(DIABLO_TWENTIETH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-		["timeline"] = { "added 7.1.0.22908" },
+		["timeline"] = { ADDED_7_1_0 },
 		["maps"] = { DUSKWOOD },
 		["groups"] = {
 			n(ZONE_DROPS, {
@@ -84,7 +84,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 			}),
 		},
 	})),
-	applyevent(A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49741", REMOVED_10_1_0 } }, {
+	applyevent(A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 } }, {
 		-- Event begins on May 25, 2023, and ends on June 13, 2023.
 		n(ACHIEVEMENTS, {
 			ach(18258, {	--	Little Lord of Lies

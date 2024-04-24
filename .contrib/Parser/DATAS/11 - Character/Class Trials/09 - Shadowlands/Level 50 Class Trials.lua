@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.SL, bubbleDown({["timeline"] = { "added 9.1.5.", REMOVED_10_2_0 } }, {
+	expansion(EXPANSION.SL, bubbleDown({["timeline"] = { ADDED_9_1_5, REMOVED_10_2_0 } }, {
 		n(LEVEL_FIFTY_TRIAL, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]

@@ -574,7 +574,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
-							["timeline"] = { "added 7.0.3.21134" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

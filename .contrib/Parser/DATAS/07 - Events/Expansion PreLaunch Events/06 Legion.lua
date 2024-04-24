@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", REMOVED_7_0_3 } }, {
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3 } }, {
 	expansion(EXPANSION.LEGION, {
 		["lvl"] = 98,
 		["groups"] = {
@@ -227,7 +227,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 					["sourceQuestNumRequired"] = 1,
 					-- #if AFTER SHADOWLANDS
 					["description"] = "This is available to players choosing the Legion Timeline during Chromie Time.",
-					["timeline"] = { "added 7.0.3.22248", REMOVED_7_0_3, ADDED_9_0_1 },
+					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3, ADDED_9_0_1 },
 					-- TODO: confirm if this can somehow be picked up via Party Sync
 					["DisablePartySync"] = false,	-- false = "hasn't been verified yet"
 					-- #endif
@@ -285,7 +285,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 						{ 52.6, 57.6, ORGRIMMAR },
 						{ 41.2, 78.8, STORMWIND_CITY },
 					},
-					["timeline"] = { "added 7.0.3.22290" },
+					["timeline"] = { ADDED_7_0_3 },
 					["groups"] = {
 						i(136924),	-- Felbat Pup (PET!)
 						i(141604),	-- Glaive of the Fallen

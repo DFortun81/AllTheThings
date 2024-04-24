@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(24340),	-- Vandril's Hand Me Down Pants
 						i(28149),	-- Tranquillien Breeches
 						i(131251, {	-- Mix-Match Linked Pants
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23407),	-- Supple Cotton Bracers
 						i(23408),	-- Farstrider Bracers
 						i(131249, {	-- Farstrider Cuffs
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28142),	-- Farstrider's Belt
 						i(28143),	-- Rusted Plate Girdle
 						i(131244, {	-- Farstrider's Chain
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(23415)	-- Survival Knife
 					},
@@ -457,10 +457,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22997),	-- Ley-Keeper's Wand
 						i(22998),	-- Ghostclaw Leggings
 						i(131245, {	-- Scourge Lieutenant Breeches
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156942, {	-- Spiky Legbone
-							["timeline"] = { "added 7.3.5" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -532,7 +532,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23413),	-- Troll Kickers (Cloth)
 						i(23414),	-- Troll Kickers (Leather)
 						i(131248, {	-- Troll Kickers (Mail)
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -814,7 +814,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28144),	-- Troll Handler Gloves
 						i(28153),	-- Farstrider's Shield
 						i(131242, {	-- Farstrider's Chainmail
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -832,7 +832,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28157),	-- Black Leather Jerkin
 						i(28161),	-- Tranquillien	Plate Leggings
 						i(131246, {	-- Dark Chain Shirt
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22984),	-- Dawnblade
 						i(22995),	-- Sindorei Warblade
 						i(156941, {	-- Staff of Radiance
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1173,7 +1173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28159),	-- Undertaker's Gloves
 						i(28163),	-- Maltendis' Handguards
 						i(131247, {	-- Gravedigger's Grips
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1297,7 +1297,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23403),	-- Salvaged Plate Leggings
 						i(23404),	-- Padded Running Shoes
 						i(131241, {	-- Relinked Chain Boots
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1378,7 +1378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(132572, {	-- Deathstalker's Hauberk
 							["minReputation"] = { 922, REVERED },	-- Tranquillien, Revered.
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(22985, {	-- Suncrown Breastplate
 							["minReputation"] = { 922, REVERED },	-- Tranquillien, Revered.
@@ -1394,7 +1394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(132573, {	-- Tranquillen Pathfinder's Cinch
 							["minReputation"] = { 922, HONORED },	-- Tranquillien, Honored.
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(28164, {	-- Tranquillien Flamberge
 							["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
@@ -1410,7 +1410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(132571, {	-- Woodrunner's Footpads
 							["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

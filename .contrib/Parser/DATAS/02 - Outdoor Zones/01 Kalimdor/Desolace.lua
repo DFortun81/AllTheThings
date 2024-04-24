@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
 					-- #if BEFORE CATA
 					["minReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be Honored.
 					["maxReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
 					-- #if BEFORE CATA
 					["minReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be Honored.
 					["maxReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131344, {	-- Kodo Lead Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -585,7 +585,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131348, {	-- Lob Stompers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -669,7 +669,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131353, {	-- Windwhipped Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -711,7 +711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156968, {	-- Kolkar Polearm
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -737,7 +737,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131345, {	-- Rebellious Epaulets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55911, {	-- Stubborn Legguards
 							["timeline"] = { ADDED_4_0_3 },
@@ -892,7 +892,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131337, {	-- Avian Oiled Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131338, {	-- Earthhewn Helm
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55898, {	-- Rockgrab Crushers
 							["timeline"] = { ADDED_4_0_3 },
@@ -1351,7 +1351,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131352, {	-- Securing Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1384,7 +1384,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131233, {	-- Securing Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(16794, {	-- Gripsteel Wristguards
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131343, {	-- Thornwoven Epaulets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55901, {	-- Phytoresistant Helm
 							["timeline"] = { ADDED_4_0_3 },
@@ -1631,10 +1631,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131342, {	-- Crashing Water Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156967, {	-- Spinescale Hammer
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1764,7 +1764,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE MOP
 						i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
 							["timeline"] = {
-								"added 1.11.1.5462",
+								ADDED_1_11_1,
 								REMOVED_2_0_1
 							},
 						}),
@@ -1985,7 +1985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131231, {	-- Claimant Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55950, {	-- Treads of the Seeker
 							["timeline"] = { ADDED_4_0_3 },
@@ -2066,7 +2066,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131347, {	-- Messenger's Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2086,7 +2086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131350, {	-- Gleaming Link Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2107,7 +2107,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131335, {	-- Gleaming Link Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

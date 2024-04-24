@@ -42,11 +42,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				n(149806, {	-- A. Shady
 					["coord"] = { 34.2, 32.9, DEEPRUN_TRAM },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["groups"] = {
 						i(166805, {	-- Blood-Soaked Invitation
 							["cost"] = { { "g", 1000000 } },	-- 100g
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
 				}),

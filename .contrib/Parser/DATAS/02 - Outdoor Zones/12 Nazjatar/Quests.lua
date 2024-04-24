@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
+root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(QUESTS, {
 		--[[
 		56521 popped randomly. possibly a progress flag for 55663?
@@ -2610,7 +2610,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, { m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } },{
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, { m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },{
 --	LOOT QUESTS
 	q(57143),	-- looting an Eel Filet
 	q(57144),	-- looting Barnacled Bag of Goods

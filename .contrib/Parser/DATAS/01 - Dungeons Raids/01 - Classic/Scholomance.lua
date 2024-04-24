@@ -56,13 +56,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["altQuests"] = { 8258 },	-- The Darkreaver Menace (New)
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
-			["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
 			["groups"] = {
 				i(20134, {	-- Skyfury Helm
-					["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 				}),
 			},
 		})),
@@ -594,7 +594,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				7668,	-- The Darkreaver Menace (Original)
 			},
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
-			["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
@@ -604,7 +604,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
 				i(20134, {	-- Skyfury Helm
-					["timeline"] = { "added 1.7.0", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 				}),
 			},
 		})),
@@ -751,7 +751,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(12736, {	-- Frostwhisper's Embalming Fluid
 			["provider"] = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
 			["description"] = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
-			["timeline"] = { "added 1.11.1.5462", REMOVED_5_0_4, "added 10.2.5" }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
+			["timeline"] = { ADDED_1_11_1, REMOVED_5_0_4, ADDED_10_2_5 }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
 		}),
 	}),
 	n(ZONE_DROPS, {
@@ -765,31 +765,31 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			-- #if AFTER 4.0.3
 			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 			-- #endif
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 11582,	-- Scholomance Dark Summoner
 		}),
 		i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
 			-- #if AFTER 4.0.3
 			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 			-- #endif
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10499,	-- Spectral Researcher
 		}),
 		applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 		i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 			["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 			["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(206374, {	-- Invader's Scourgestone
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 			["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(13920, {	-- Healthy Dragon Scale
 			["description"] = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
@@ -798,43 +798,43 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		ignoreTimeline(i(20520)),	-- Dark Rune
 		i(12753, {	-- Skin of Shadow
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		ignoreTimeline(i(18702)),	-- Belt of the Ordained
 		i(16671, {	-- Bindings of Elements
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10478,	-- Splintered Skeleton
 		}),
 		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
 		ignoreTimeline(i(18697)),	-- Coldstone Slippers
 		i(16702, {	-- Dreadmist Belt
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
 		ignoreTimeline(i(18699)),	-- Icy Tomb Spaulders
 		ignoreTimeline(i(18701)),	-- Innervating Band
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["crs"] = {
 				10487,	-- Risen Protector
 				10486,	-- Risen Warrior
 			},
 		}),
 		i(16685, {	-- Magister's Belt
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		ignoreTimeline(i(18700)),	-- Malefic Bracers
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["crs"] = {
 				11284,	-- Dark Shade
 				10472,	-- Scholomance Occultist
@@ -843,11 +843,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		ignoreTimeline(i(18698)),	-- Tattered Leather Hood
 		i(16714, {	-- Wildheart Bracers
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10495,	-- Diseased Ghoul
 		}),
 		i(16716, {	-- Wildheart Belt
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["crs"] = {
 				11257,	-- Scholomance Handler
 				10500,	-- Spectral Teacher
@@ -879,7 +879,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(13957),	-- Gargoyle Slashers
 			i(13956),	-- Clutch of Andros
 			i(16734, {	-- Boots of Valor
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(13967),	-- Windreaver Greaves
 		},
@@ -901,7 +901,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		applyclassicphase(PHASE_FIVE, i(22394)),	-- Staff of Metanoia
 		i(18689),	-- Phantasmal Cloak
 		i(16701, {	-- Dreadmist Mantle
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(14548),	-- Royal Cap Spaulders
 		i(14543, {	-- Darkshade Gloves
@@ -917,14 +917,14 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	n(11622, {	-- Rattlegore
 		i(13873, {	-- Viewing Room Key
 			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(206371, {	-- Viewing Room Key
 			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(18782, {	-- Top Half of Advanced Armorsmithing: Volume II
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(14531),	-- Frightskull Shaft
 		i(14528),	-- Rattlecage Buckler
@@ -933,7 +933,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(14538),	-- Deadwalker Mantle
 		i(14537),	-- Corpselight Greaves
 		i(16711, {	-- Shadowcraft Boots
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 	}),
 	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
@@ -968,7 +968,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(18696),	-- Intricately Runed Shield
 		i(18695),	-- Spellbound Tome
 		i(16689, {	-- Magister's Mantle
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(13314),	-- Alanna's Embrace
 		i(14503),	-- Death's Clutch
@@ -1016,7 +1016,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(22332),	-- Blade of Necromancy
 			i(22333),	-- Hammer of Divine Might
 			i(22303, {	-- Ironweave Pants
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(22326),	-- Amalgam's Band
 			i(22331),	-- Band of the Steadfast Hero
@@ -1077,7 +1077,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	}),
 	n(10505, {	-- Instructor Malicia
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 	}),
 	n(11261, {	-- Doctor Theolen Krastinov <The Butcher>
@@ -1088,23 +1088,23 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_5_0_4 },
 		}),
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(14617),	-- Sawbones Shirt
 	}),
 	n(10901, {	-- Lorekeeper Polkelt
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 	}),
 	n(10507, {	-- The Ravenian
 		i(16716, {	-- Wildheart Belt
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 	}),
 	n(10504, {	-- Lord Alexei Barov
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 	}),
 	n(1853, {	-- Darkmaster Gandling
@@ -1127,31 +1127,31 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(13953),	-- Silent Fang
 			i(13964),	-- Witchblade
 			i(16677, {	-- Beaststalker's Cap
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16667, {	-- Coif of Elements
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16693, {	-- Devout Crown
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16698, {	-- Dreadmist Mask
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16731, {	-- Helm of Valor
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16727, {	-- Lightforge Helm
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16686, {	-- Magister's Crown
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16707, {	-- Shadowcraft Cap
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(16720, {	-- Wildheart Cowl
-				["timeline"] = { "added 1.11.1", REMOVED_4_0_3 },
+				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			}),
 			i(13944),	-- Tombstone Breastplate
 			i(13951),	-- Vigorsteel Vambraces
@@ -1233,7 +1233,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 		}),
 		q(31447, {	-- An End to the Suffering
 			["qg"] = 64562,	-- Talking Skull
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 Darkmaster Gandling slain
@@ -1243,7 +1243,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 		}),
 		q(31440, {	-- The Four Tomes
 			["qg"] = 64562,	-- Talking Skull
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["lvl"] = 38,
 		}),
 	})),
@@ -1285,7 +1285,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			58633,	-- Instructor Chillheart
 			58664,	-- Instructor Chillheart's Phylactery
 		},
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			i(88339),	-- Gravetouch Greatsword
 			i(88335),	-- Anarchist's Pendant
@@ -1296,7 +1296,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	}),
 	e(663, {	-- Jandice Barov
 		["creatureID"] = 59184,	-- Jandice Barov
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			i(88346),	-- Metanoia Shield
 			i(88345),	-- Barovian Ritual Hood
@@ -1307,7 +1307,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	}),
 	e(665, {	-- Rattlegore
 		["creatureID"] = 59153,
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			i(88344),	-- Goresoaked Headreaper
 			i(88341),	-- Necromantic Wand
@@ -1321,7 +1321,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	}),
 	e(666, {	-- Lilian Voss
 		["creatureID"] = 58722,
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			i(88351),	-- Soulburner Crown
 			i(88354),	-- Necklace of the Dark Blaze
@@ -1331,7 +1331,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 		},
 	}),
 	n(59613, {	-- Professor Slate <Potions Master>
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = bubbleDown({["ignoreBonus"] = true},{
 			i(85580, {	-- Empty Polyformic Acid Vial
 				["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
@@ -1345,11 +1345,11 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	}),
 	e(684, {	-- Darkmaster Gandling
 		["creatureID"] = 59080,
-		["timeline"] = { "added 5.0.4" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			ach(645),	-- Scholomance
 			ach(5054, {	-- Scholomance Guild Run
-				["timeline"] = { "added 5.0.4" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(88362),	-- Shoulderguards of Painful Lessons
 			i(88357),	-- Vigorsteel Spaulders
@@ -1378,7 +1378,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	})),
 }));
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
-	["timeline"] = { "added 5.0.4" },
+	["timeline"] = { ADDED_5_0_4 },
 	["lvl"] = 90,
 	["groups"] = {
 		n(QUESTS, sharedData({["modID"] = 0},{
@@ -1405,173 +1405,173 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				58633,	-- Instructor Chillheart
 				58664,	-- Instructor Chillheart's Phylactery
 			},
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(144201, {	-- Gravetouch Greatsword
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144180, {	-- Anarchist's Pendant
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(143967, {	-- Breastplate of Wracking Souls
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144200, {	-- Shadow Puppet Bracers
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144202, {	-- Icewrath Belt
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82822, {	-- Gravetouch Greatsword
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(81566, {	-- Anarchist's Pendant
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82821, {	-- Breastplate of Wracking Souls
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82820, {	-- Shadow Puppet Bracers
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82823, {	-- Icewrath Belt
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 			},
 		}),
 		e(663, {	-- Jandice Barov
 			["creatureID"] = 59184,	-- Jandice Barov
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6531),	-- Attention to Detail
 				i(144207, {	-- Metanoia Shield
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144029, {	-- Barovian Ritual Hood
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144208, {	-- Phantasmal Drape
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144012, {	-- Ghostwoven Legguards
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144013, {	-- Wraithplate Treads
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82847, {	-- Metanoia Shield
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82848, {	-- Barovian Ritual Hood
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82850, {	-- Phantasmal Drape
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82851, {	-- Ghostwoven Legguards
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82852, {	-- Wraithplate Treads
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 			},
 		}),
 		e(665, {	-- Rattlegore
 			["creatureID"] = 59153,
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6394),	-- Rattle No More
 				i(144011, {	-- Bone Golem Boots
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144204, {	-- Deadwalker Bracers
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144203, {	-- Goresoaked Headreaper
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144205, {	-- Necromantic Wand
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144206, {	-- Rattling Gloves
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				-- #if AFTER 7.1.5.23360
 				i(144015, {	-- Vigorsteel Spaulders
 					-- NOTE: WoWHead doesn't show any drops for this.
 					-- TODO: Find out if this was actually added.
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				-- #endif
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82824, {	-- Goresoaked Headreaper
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82826, {	-- Necromantic Wand
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82825, {	-- Deadwalker Bracers
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82827, {	-- Rattling Gloves
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82828, {	-- Bone Golem Boots
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 			},
 		}),
 		n(59369, {	-- Doctor Theolen Krastinov
 			["description"] = "This is a rare that is not always present.",
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6396),	-- Sanguinarian
 				i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
-					["timeline"] = { "added 5.0.4" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 			},
 		}),
 		e(666, {	-- Lilian Voss
 			["creatureID"] = 58722,
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(144030, {	-- Soulburner Crown
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144181, {	-- Necklace of the Dark Blaze
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(143968, {	-- Shivbreaker Vest
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144209, {	-- Dark Blaze Gauntlets
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144014, {	-- Leggings of Unleashed Anguish
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82853, {	-- Soulburner Crown
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(81567, {	-- Necklace of the Dark Blaze
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82855, {	-- Shivbreaker Vest
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82856, {	-- Dark Blaze Gauntlets
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82854, {	-- Leggings of Unleashed Anguish
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 			},
 		}),
 		n(59613, {	-- Professor Slate <Potions Master>
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = bubbleDown({["ignoreBonus"] = true},{
 				i(85580, {	-- Empty Polyformic Acid Vial
 					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
@@ -1585,69 +1585,69 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 		}),
 		e(684, {	-- Darkmaster Gandling
 			["creatureID"] = 59080,	-- Darkmaster Gandling
-			["timeline"] = { "added 5.0.4" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6762),	-- Heroic: Scholomance
 				ach(6771),	-- Heroic: Scholomance Guild Run
 				ach(6821),	-- School's Out Forever
 				ach(645),	-- Scholomance
 				ach(5054, {	-- Scholomance Guild Run
-					["timeline"] = { "added 5.0.4" },
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				i(144211, {	-- Headmaster's Will
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144016, {	-- Shoulderguards of Painful Lessons
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144015, {	-- Vigorsteel Spaulders
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144212, {	-- Gloves of Explosive Pain
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144210, {	-- Tombstone Gauntlets
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144213, {	-- Incineration Belt
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144161, {	-- Lessons of the Darkmaster
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144159, {	-- Price of Progress
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(144160, {	-- Searing Words
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				-- With Patch 7.1.5, Blizzard did a dumb and recreated all of the items from Heroic.
 				i(82859, {	-- Headmaster's Will
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82862, {	-- Shoulderguards of Painful Lessons
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82857, {	-- Vigorsteel Spaulders
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82860, {	-- Gloves of Explosive Pain
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82858, {	-- Tombstone Gauntlets
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(82861, {	-- Incineration Belt
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(81268, {	-- Lessons of the Darkmaster
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(81266, {	-- Price of Progress
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 				i(81267, {	-- Searing Words
-					["timeline"] = { "added 5.0.4", REMOVED_7_1_5 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 				}),
 			},
 		}),

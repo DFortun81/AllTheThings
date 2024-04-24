@@ -16,7 +16,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(20371, {	-- Murky (PET!)
-		["timeline"] = { "added 1.11.1.6692" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 
 	ach(412, {	-- Blizzcon 2007 - Murloc Costume
@@ -61,10 +61,10 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	ach(8793, {	-- Blizzcon 2013 - Murkalot
 		["provider"] = { "i", 106244 },	-- Murkalot (PET!)
-		["timeline"] = { "added 5.4.1.17481" },
+		["timeline"] = { ADDED_5_4_2 },
 	}),
 	i(106244, {	-- Murkalot (PET!)
-		["timeline"] = { "added 5.4.1.17481" },
+		["timeline"] = { ADDED_5_4_2 },
 	}),
 
 	ach(9763, {	-- Blizzcon 2014 - Grommloc
@@ -77,10 +77,10 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	ach(10322, {	-- Blizzcon 2015 - Murkidan
 		["provider"] = { "i", 128427 },	-- Murkidan (PET!)
-		["timeline"] = { "added 6.2.2.20426" },
+		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(128427, {	-- Murkidan (PET!)
-		["timeline"] = { "added 6.2.2.20395" },
+		["timeline"] = { ADDED_6_2_2 },
 	}),
 
 	ach(11294, {	-- Blizzcon 2016 - Murloc Battlemasters
@@ -88,13 +88,13 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			{ "i", 141894 },	-- Knight Captain Murky (PET!)
 			{ "i", 141895 },	-- Legionnaire Murky (PET!)
 		},
-		["timeline"] = { "added 7.2.0.23478" },
+		["timeline"] = { ADDED_7_2_0 },
 	}),
 	a(i(141894, {	-- Knight Captain Murky (PET!)
-		["timeline"] = { "added 7.1.0.22864" },
+		["timeline"] = { ADDED_7_1_0 },
 	})),
 	h(i(141895, {	-- Legionnaire Murky (PET!)
-		["timeline"] = { "added 7.1.0.22864" },
+		["timeline"] = { ADDED_7_1_0 },
 	})),
 
 	ach(11931, {	-- Blizzcon 2017 - Rides of War
@@ -102,7 +102,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			{ "i", 151617 },	-- Orgrimmar Interceptor (MOUNT!)
 			{ "i", 151618 },	-- Stormwind Skychaser (MOUNT!)
 		},
-		["timeline"] = { "added 7.3.2.25079" },
+		["timeline"] = { ADDED_7_3_2 },
 	}),
 	h(i(151617, {	-- Orgrimmar Interceptor (MOUNT!)
 		["timeline"] = { ADDED_7_3_0 },
@@ -116,86 +116,86 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			{ "i", 163986 },	-- Orgrimmar Hero's War Banner (TOY!)
 			{ "i", 163987 },	-- Stormwind Champion's War Banner (TOY!)
 		},
-		["timeline"] = { "added 8.1.0.28724" },
+		["timeline"] = { ADDED_8_1_0 },
 	}),
 	i(163986, {	-- Orgrimmar Hero's War Banner (TOY!)
-		["timeline"] = { "added 8.0.1.27843" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 		["races"] = HORDE_ONLY,
 		["f"] = TOYS,
 	}),
 	i(163987, {	-- Stormwind Champion's War Banner (TOY!)
-		["timeline"] = { "added 8.0.1.27843" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 		["races"] = ALLIANCE_ONLY,
 		["f"] = TOYS,
 	}),
 	i(163985, {	-- War Mantle of the Alliance
-		["timeline"] = { "added 8.0.1.27843" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 		["races"] = ALLIANCE_ONLY,
 		["filterID"] = CLOAKS,
 	}),
 	i(163984, {	-- War Mantle of the Horde
-		["timeline"] = { "added 8.0.1.27843" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 		["races"] = HORDE_ONLY,
 		["filterID"] = CLOAKS,
 	}),
 
 	-- Blizzcon 2019
 	ach(14027, {	-- Blizzcon 2019 - Battle for Mrrglroth
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 	}),
 	i(171341, {	-- Wooly Wendigo Pullover
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 	}),
 	i(171340, {	-- Wooly Wendigo Hood
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 	}),
 	i(171339, {	-- Wooly Wendigo Sweatpants
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 	}),
 	i(171338, {	-- Wooly Wendigo Slippers
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 	}),
 	i(171337, {	-- Wooly Wendigo Mittens
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 	}),
 	pet(2777, {	-- Gillvanas (PET!)
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 		["races"] = HORDE_ONLY,
 	}),
 	pet(2778, {	-- Finduin (PET!)
-		["timeline"] = { "added 8.2.5.32028" },
+		["timeline"] = { ADDED_8_2_5 },
 		["races"] = ALLIANCE_ONLY,
 	}),
 
 	-- Blizzconline 2021 "Celebration Collection" (Removed from store 21 Feb 2022)
 	mount(341821, {	-- Snowstorm (MOUNT!)
-		["timeline"] = { "added 9.0.2.37176", REMOVED_9_2_0 },
+		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
 	}),
 	pet(3053, {	-- Moon-Touched Netherwhelp (PET!)
-		["timeline"] = { "added 9.0.2.37176", REMOVED_9_2_0 },
+		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
 	}),
 	ach(14904, {	-- Netherwhelp Online
-		["timeline"] = { "added 9.0.2.37176", REMOVED_9_2_0 },
+		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
 	}),
 
 	-- Blizzcon 2023 Collection
 	mount(358072, {	-- Bound Blizzard (MOUNT!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Legendary Pack.",
-		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 	i(210042, {		-- Chilling Celebration Banner (TOY!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
-		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 	pet(3579, {		-- Ysergle The Dreamurk (PET!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
-		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 	ach(18250, {	-- Ysergle The Dreamurk
-		["timeline"] = { "added 10.1.7.51536", REMOVED_10_2_5 },
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = BLIZZARD_BALANCE,
 	}),
 })));
