@@ -1465,7 +1465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9079,	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
 					["coord"] = { 3.02, 47.81, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
