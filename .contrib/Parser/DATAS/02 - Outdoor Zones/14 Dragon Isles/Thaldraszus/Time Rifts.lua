@@ -458,9 +458,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 				}),
-				n(VENDORS, bubbleDown({
+				n(VENDORS, bubbleDownFiltered({
 					["timeline"] = { ADDED_10_1_5, REMOVED_10_2_6_SEASON_FOUR },	-- Blizzard currently broke these
-				},{
+				},FILTERFUNC_itemID,{
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = {

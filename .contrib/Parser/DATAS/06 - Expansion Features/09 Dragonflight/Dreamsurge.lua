@@ -162,9 +162,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		}),
-		n(VENDORS, bubbleDown({
+		n(VENDORS, bubbleDownFiltered({
 			["timeline"] = { ADDED_10_1_5, REMOVED_10_2_6_SEASON_FOUR },	-- Blizzard currently broke these
-		},{
+		},FILTERFUNC_itemID,{
 			n(210608, {	-- Celestine of the Harvest
 				["coords"] = {
 					{ 51.1, 43.4, THALDRASZUS },
