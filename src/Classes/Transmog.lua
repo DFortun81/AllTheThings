@@ -17,7 +17,6 @@ if not C_TransmogCollection then
 	app.AddSourceInformation = app.EmptyFunction;
 	app.BuildSourceInformationForPopout = app.EmptyFunction;
 	app.GetGroupSourceID = app.EmptyFunction
-	print("OI");
 
 	-- Extend the Filter Module to include ItemSource
 	app.Modules.Filter.Set.ItemSource = app.EmptyFunction;
