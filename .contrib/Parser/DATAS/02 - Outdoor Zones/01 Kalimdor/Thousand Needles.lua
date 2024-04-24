@@ -2625,10 +2625,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(1493, {	-- Heavy Marauder Scimitar
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 15.09.2023
 					["crs"] = {
-						-- #if BEFORE 4.0.3
-						4099,	-- Galak Marauder
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						40062,	-- Galak Mauler
+						-- #else
+						4099,	-- Galak Marauder
 						-- #endif
 					},
 					["coords"] = {

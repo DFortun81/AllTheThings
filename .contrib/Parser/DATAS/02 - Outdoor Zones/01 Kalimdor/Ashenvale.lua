@@ -3784,10 +3784,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif
 					["crs"] = {
-						-- #if BEFORE 4.0.3
-						3808,	-- Forsaken Dark Stalker
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						3928,	-- Rotting Slime
+						-- #else
+						3808,	-- Forsaken Dark Stalker
 						-- #endif
 					},
 					["coords"] = {
