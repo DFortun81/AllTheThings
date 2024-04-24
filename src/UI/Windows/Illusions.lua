@@ -1,4 +1,4 @@
-if C_TransmogCollection then
+if C_TransmogCollection and C_TransmogCollection.GetIllusions then
 -- App locals
 local appName, app = ...;
 local L = app.L;
