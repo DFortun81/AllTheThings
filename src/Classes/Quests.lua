@@ -712,6 +712,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		end
 	end
 end
+-- /run ATTC.CheckQuestInfo(12345,1)
 app.CheckQuestInfo = function(questID, isTest)
 	app.CheckInaccurateQuestInfo(Search("questID",questID), "test-show", isTest)
 end

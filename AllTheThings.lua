@@ -14744,7 +14744,7 @@ SlashCmdList.AllTheThings = function(cmd)
 		elseif cmd == "finder" then
 			app.SetCustomWindowParam("list", "type", "itemharvester");
 			app.SetCustomWindowParam("list", "harvesting", true);
-			app.SetCustomWindowParam("list", "limit", 207000);
+			app.SetCustomWindowParam("list", "limit", 225000);
 			app:GetWindow("list"):Toggle();
 			return true;
 		elseif cmd == "harvest_achievements" then
