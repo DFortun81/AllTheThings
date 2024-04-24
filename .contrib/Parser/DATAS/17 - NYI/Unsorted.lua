@@ -7506,7 +7506,6 @@ root(ROOTS.Unsorted, {
 					i(213089),	-- Antique Bronze Bullion
 					-- Unknown
 					i(215363),	-- Cache of Embers
-					i(215362),	-- Cache of Storms
 				}),
 			}),
 			filter(TOYS, {

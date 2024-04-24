@@ -340,6 +340,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								i(194090, {	-- Bakar Companion Color: White
 									["questID"] = 71047,
 								}),
+								i(215362, {	-- Cache of Storms
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+								}),
 								i(193360),	-- Centaur's Trophy Necklace
 								i(194095, {	-- Ohuna Companion Color: Sepia
 									["questID"] = 71052,
