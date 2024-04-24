@@ -1479,7 +1479,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { DIRE_MAUL },
+					["maps"] = {
+						DIRE_MAUL,
+						235,	-- Gordok Commons
+						236,	-- Capital Gardens
+						237,	-- Court of the Highborne
+						238,	-- Prison of Immol'Thar
+					},
 					["cost"] = {
 						{ "i", 21983, 1 },	-- Incomplete Banner of Provocation
 					},
@@ -1643,6 +1649,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
 					["maps"] = {
 						DIRE_MAUL,
+						235,	-- Gordok Commons
+						236,	-- Capital Gardens
+						237,	-- Court of the Highborne
+						238,	-- Prison of Immol'Thar
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
 						LBRS_SKITTERWEB_TUNNELS,
@@ -1949,7 +1959,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(9015, {	-- The Challenge
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
-					["maps"] = { DIRE_MAUL, BLACKROCK_DEPTHS },
+					["maps"] = {
+						BLACKROCK_DEPTHS,
+						DIRE_MAUL,
+						235,	-- Gordok Commons
+						236,	-- Capital Gardens
+						237,	-- Court of the Highborne
+						238,	-- Prison of Immol'Thar
+					},
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- Theldren's Team Defeated
@@ -1993,7 +2010,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8950, {	-- The Instigator's Enchantment
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8949,	-- Falrin's Vendetta
-					["maps"] = { DIRE_MAUL },
+					["maps"] = {
+						DIRE_MAUL,
+						235,	-- Gordok Commons
+						236,	-- Capital Gardens
+						237,	-- Court of the Highborne
+						238,	-- Prison of Immol'Thar
+					},
 					["cost"] = {
 						{ "i", 20520, 4 },	-- Dark Rune
 						{ "i", 14344, 8 },	-- Large Brilliant Shard
@@ -2036,7 +2059,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8967, {	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8963,	-- Components of Importance [WARLOCK, DRUID]
-					["maps"] = { BLACKROCK_MOUNTAIN, DIRE_MAUL },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						DIRE_MAUL,
+						239,	-- Warpwood Quarter
+					},
 					["classes"] = { WARLOCK, DRUID },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -2096,7 +2123,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				q(8990, {	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8985,	-- More Components of Importance [WARRIOR, ROGUE]
-					["maps"] = { BLACKROCK_MOUNTAIN, DIRE_MAUL },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						DIRE_MAUL,
+						239,	-- Warpwood Quarter
+					},
 					["classes"] = { WARRIOR, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
