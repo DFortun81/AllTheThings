@@ -277,7 +277,7 @@ profession(261, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Beast Trai
 		},
 		{
 			["recipeID"] = 26179,	-- Charge [Rank 4]
-			["timeline"] = { "created 1.0.1" },
+			["timeline"] = { CREATED_1_0_1 },
 			["rank"] = 4,
 			["lvl"] = 36,
 		},
@@ -830,13 +830,13 @@ profession(261, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Beast Trai
 		-- #if AFTER TBC
 		applyclassicphase(TBC_PHASE_ONE, {	-- No known training sources.
 			["recipeID"] = 35304,	-- Gore [Rank 5]
-			["timeline"] = { "created 2.0.1" },
+			["timeline"] = { CREATED_2_0_1 },
 			["rank"] = 5,
 			["lvl"] = 32,
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {	-- No known training sources.
 			["recipeID"] = 35305,	-- Gore [Rank 6]
-			["timeline"] = { "created 2.0.1" },
+			["timeline"] = { CREATED_2_0_1 },
 			["rank"] = 6,
 			["lvl"] = 40,
 		}),
@@ -968,7 +968,7 @@ profession(261, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Beast Trai
 		
 		{
 			["recipeID"] = 24844,	-- Lightning Breath [Rank 1]
-			["timeline"] = { "created 1.0.1", ADDED_2_0_1 },
+			["timeline"] = { CREATED_1_0_1, ADDED_2_0_1 },
 			-- #if AFTER TBC
 			["crs"] = {
 				20797,	-- Deviate Coiler Hatchling (Wind Serpent, 11, The Barrens)
@@ -1389,7 +1389,7 @@ profession(261, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Beast Trai
 		applyclassicphase(TBC_PHASE_ONE, {
 			["recipeID"] = 27063,	-- Thunderstomp [Rank 4]
 			["description"] = "No known sources, contact Crieve if you find one!",
-			["timeline"] = { "created 2.0.1" },
+			["timeline"] = { CREATED_2_0_1 },
 			["rank"] = 4,
 			["lvl"] = 60,
 		}),

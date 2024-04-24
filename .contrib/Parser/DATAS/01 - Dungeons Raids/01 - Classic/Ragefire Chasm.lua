@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 14540 },	-- Taragaman the Hungerer's Heart
 						}),
 						i(131614, {	-- Chasm Linked Pants
-							["timeline"] = { "created 7.0.3.22248" },
+							["timeline"] = { CREATED_7_0_3 },
 						}),
 						i(66031, {	-- Hide Vest of the Shaman
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -260,7 +260,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						i(131613, {	-- Scaled Vest of the Shaman
-							["timeline"] = { "created 7.0.3.22248" },
+							["timeline"] = { CREATED_7_0_3 },
 						}),
 						i(66040, {	-- Searing Belt
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },

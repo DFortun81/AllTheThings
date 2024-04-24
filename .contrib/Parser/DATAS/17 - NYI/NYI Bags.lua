@@ -27,25 +27,25 @@ root(ROOTS.NeverImplemented, filter(BAGS, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.1.0
-		expansion(EXPANSION.MOP, 1.0, bubbleDown({ ["timeline"] = { "created 5.1.0" } }, {
+		expansion(EXPANSION.MOP, 1.0, bubbleDown({ ["timeline"] = { CREATED_5_1_0 } }, {
 			i(92746),	-- Portable Refrigerator
 		})),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.2.2
-		expansion(EXPANSION.WOD, 2.2, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
+		expansion(EXPANSION.WOD, 2.2, bubbleDown({ ["timeline"] = { CREATED_6_2_2 } }, {
 			i(130943),	-- Reusable Tote Bag
 		})),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
+		expansion(EXPANSION.LEGION, 0.3, bubbleDown({ ["timeline"] = { CREATED_7_0_3 } }, {
 			i(130156),	-- Crane Bag
 		})),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.1.0
-		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { CREATED_8_1_0 } }, {
 			i(166699),	-- Desert Rucksack
 			i(166700),	-- Durable Sailor's Duffel
 		})),

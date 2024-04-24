@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				crit(49483, {	-- Warren Mongrel [This NPC has no info or comment on wowhead nor ATT... >.<]
 					-- ["_npcs"] = { 165973 },	-- NPC doesn't exist
-					["timeline"] = { "created 9.0.1" },
+					["timeline"] = { CREATED_9_0_1 },
 				}),
 				crit(49484, {	-- Cyrixia <The Willbreaker>
 					["_npcs"] = { 168693 },

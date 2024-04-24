@@ -1715,7 +1715,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Rough Bronze Bracers",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 2671,
 				},
 				{
@@ -1790,7 +1790,7 @@ profession(BLACKSMITHING, {
 				}),
 				{
 					["name"] = "Ironforge Gauntlets",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 8368,
 				},
 				applyclassicphase(PHASE_FIVE_CATCH_UP, {
@@ -1799,7 +1799,7 @@ profession(BLACKSMITHING, {
 				}),
 				{
 					["name"] = "Mithril Scale Gloves",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 9942,
 				},
 				{
@@ -1922,7 +1922,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Ironforge Chain",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 8366,
 				},
 				applyclassicphase(PHASE_FIVE_CATCH_UP, {
@@ -2267,7 +2267,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Bleakwood Hew",
-					["timeline"] = { "created 1.12.1.13287", "added 7.1.5" },
+					["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
 					["recipeID"] = 16965,
 				},
 				{
@@ -2276,7 +2276,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Blood Talon",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 16986,
 				},
 				-- #endif
@@ -2356,7 +2356,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Darkspear",
-					["timeline"] = { "created 1.12.1.13287", "added 7.1.5" },
+					["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
 					["recipeID"] = 16987,
 				},
 				{
@@ -2461,7 +2461,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Inlaid Thorium Hammer",
-					["timeline"] = { "created 1.12.1.13287" },
+					["timeline"] = { CREATED_1_12_1 },
 					["recipeID"] = 16967,
 				},
 				{
@@ -2475,7 +2475,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER 7.1.5
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Light Earthforged Blade",
-					["timeline"] = { "created 2.0.1.6180", "added 7.1.5" },
+					["timeline"] = { CREATED_2_0_1, "added 7.1.5" },
 					["recipeID"] = 36125,
 				}),
 				-- #endif
@@ -2524,7 +2524,7 @@ profession(BLACKSMITHING, {
 				-- #endif
 				{
 					["name"] = "Rune Edge",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 16980,
 				},
 				{
@@ -2580,7 +2580,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Thorium Greatsword",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 16960,
 				},
 				-- #if AFTER TBC

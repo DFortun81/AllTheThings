@@ -282,7 +282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(85575, {	-- Peacebringer's Staff
 									-- At some point this staff replaced the other one.
-									["timeline"] = { "created 5.0.1.15650", "added 7.3.5" },
+									["timeline"] = { CREATED_5_0_4, "added 7.3.5" },
 								}),
 								-- #endif
 							},

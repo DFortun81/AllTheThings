@@ -1579,7 +1579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(131232, {	-- Stormfire Gauntlets
-							["timeline"] = { "created 7.0.3.22248" },
+							["timeline"] = { CREATED_7_0_3 },
 						}),
 					},
 				}),

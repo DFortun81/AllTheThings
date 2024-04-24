@@ -1978,7 +1978,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Onyxia Scale Breastplate",
-					["timeline"] = { "created 1.12.1.13287" },
+					["timeline"] = { CREATED_1_12_1 },
 					["recipeID"] = 19106,
 				},
 				applyclassicphase(PHASE_SIX, {
@@ -2839,7 +2839,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nightscape Cloak",
-					["timeline"] = { "created 1.12.1.13287" },
+					["timeline"] = { CREATED_1_12_1 },
 					["recipeID"] = 10550,
 				},
 				{
@@ -6260,7 +6260,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Burnished Leather",
-					["timeline"] = { "created 6.0.1.18594" },	-- Never Implemented
+					["timeline"] = { CREATED_6_0_2 },	-- Never Implemented
 					["recipeID"] = 171713,
 				},
 				{
@@ -6551,7 +6551,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Small Football",
-					["timeline"] = { "created 6.0.1.18663" },	-- Never Implemented
+					["timeline"] = { CREATED_6_0_2 },	-- Never Implemented
 					["recipeID"] = 173416,
 				},
 			},

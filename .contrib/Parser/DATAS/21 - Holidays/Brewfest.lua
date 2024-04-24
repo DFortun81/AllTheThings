@@ -1256,7 +1256,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 48.0, 39.5, DUN_MOROGH },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
+				["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { ADDED_2_2_2 },
 				-- #endif
@@ -1289,7 +1289,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 45.0, 17.4, DUROTAR },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
+				["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { ADDED_2_2_2 },
 				-- #endif
@@ -1552,7 +1552,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 48.0, 39.5, DUN_MOROGH },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
+				["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { ADDED_2_2_2 },
 				-- #endif
@@ -1588,7 +1588,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["coord"] = { 45.0, 17.4, DUROTAR },
 				-- #endif
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.2.2", ADDED_3_0_2 },
+				["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },
 				-- #else
 				["timeline"] = { ADDED_2_2_2 },
 				-- #endif
@@ -2035,7 +2035,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(37571, {	-- "Brew of the Month" Club Membership Form (current)
-						["timeline"] = { "created 2.2.2", ADDED_3_0_2 },	-- NOTE: Not used in 2007
+						["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },	-- NOTE: Not used in 2007
 						["cost"] = BREWFEST_TOKEN_COST(200),
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -2221,7 +2221,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(37599, {	-- "Brew of the Month" Club Membership Form (current)
-						["timeline"] = { "created 2.2.2", ADDED_3_0_2 },	-- NOTE: Not used in 2007
+						["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },	-- NOTE: Not used in 2007
 						["cost"] = BREWFEST_TOKEN_COST(200),
 						["races"] = HORDE_ONLY,
 					}),

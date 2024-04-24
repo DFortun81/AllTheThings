@@ -42,7 +42,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.TBC, {
 		-- 2.4.0
-		expansion(EXPANSION.TBC, 4.0, bubbleDown({ ["timeline"] = { "created 2.4.0" } }, {
+		expansion(EXPANSION.TBC, 4.0, bubbleDown({ ["timeline"] = { CREATED_2_4_0 } }, {
 			i(34548),	-- Cache of the Shattered Sun
 			i(34544),	-- Essence of the Immortals
 			i(35728),	-- Greater Inscription of the Blade (arena realm only)
@@ -98,7 +98,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.1
-		expansion(EXPANSION.CATA, 0.1, bubbleDown({ ["timeline"] = { "created 4.0.1" } }, {
+		expansion(EXPANSION.CATA, 0.1, bubbleDown({ ["timeline"] = { CREATED_4_0_1 } }, {
 			i(42975),	-- Ace of Lords
 			i(42977),	-- Two of Lords
 			i(42978),	-- Three of Lords
@@ -112,7 +112,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.0.3
-		expansion(EXPANSION.CATA, 0.3, bubbleDown({ ["timeline"] = { "created 4.0.3" } }, {
+		expansion(EXPANSION.CATA, 0.3, bubbleDown({ ["timeline"] = { CREATED_4_0_3 } }, {
 			i(55217),	-- Aqua Transform
 			i(43254),	-- Essence Crystal
 			i(55216),	-- Fiery Transform
@@ -122,7 +122,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.2.0
-		expansion(EXPANSION.CATA, 2.0, bubbleDown({ ["timeline"] = { "created 4.2.0" } }, {
+		expansion(EXPANSION.CATA, 2.0, bubbleDown({ ["timeline"] = { CREATED_4_2_0 } }, {
 			i(71679),	-- Chest of the Fiery Conqueror
 			i(71686),	-- Chest of the Fiery Protector
 			i(71672),	-- Chest of the Fiery Vanquisher
@@ -135,7 +135,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, 3.0, bubbleDown({ ["timeline"] = { "created 4.3.0" } }, {
+		expansion(EXPANSION.CATA, 3.0, bubbleDown({ ["timeline"] = { CREATED_4_3_0 } }, {
 			i(78892),	-- Perfect Geode
 		})),
 
@@ -146,23 +146,23 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
+		expansion(EXPANSION.MOP, 0.1, bubbleDown({ ["timeline"] = { CREATED_5_0_4 } }, {
 			i(79907),	-- Spear of Xuen (Old Version)
 		})),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, 1.0, bubbleDown({ ["timeline"] = { "created 5.1.0" } }, {
+		expansion(EXPANSION.MOP, 1.0, bubbleDown({ ["timeline"] = { CREATED_5_1_0 } }, {
 			i(92563),	-- The Eye of the Storm
 		})),
 
 		-- 5.3.0
-		expansion(EXPANSION.MOP, 3.0, bubbleDown({ ["timeline"] = { "created 5.3.0" } }, {
+		expansion(EXPANSION.MOP, 3.0, bubbleDown({ ["timeline"] = { CREATED_5_3_0 } }, {
 			i(98001),	-- Saurok Collection
 			i(98005),	-- Saurok Collection
 		})),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, 4.0, bubbleDown({ ["timeline"] = { "created 5.4.0" } }, {
+		expansion(EXPANSION.MOP, 4.0, bubbleDown({ ["timeline"] = { CREATED_5_4_0 } }, {
 			i(103535),	-- Bulging Bag of Charms (was planned for asia store)
 		})),
 
@@ -180,7 +180,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+		expansion(EXPANSION.WOD, 0.1, bubbleDown({ ["timeline"] = { CREATED_6_0_2 } }, {
 			i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
 			i(107459),	-- Black Iron Fragment
 			i(108882),	-- Bloodmaul Blasting Charge
@@ -197,7 +197,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 6.1.0
-		expansion(EXPANSION.WOD, 1.0, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
+		expansion(EXPANSION.WOD, 1.0, bubbleDown({ ["timeline"] = { CREATED_6_1_0 } }, {
 			i(122419),	-- Scouting Missive: Gorian Proving Grounds
 			i(122420),	-- Scouting Missive: Gorian Proving Grounds
 		})),
@@ -211,7 +211,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
+		expansion(EXPANSION.LEGION, 0.3, bubbleDown({ ["timeline"] = { CREATED_7_0_3 } }, {
 			i(134824),	-- "Sir Pugsington" Costume
 			i(132118),	-- Aggramar's Blessing
 			i(129742),	-- Badge of Timewalking Justice
@@ -231,7 +231,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { CREATED_7_2_0 } }, {
 			n(SEASON_RUTHLESS, {
 				n(PVP_ELITE, {
 					i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
@@ -278,7 +278,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(159734),	-- Add Keystone Affix: Fortified
 			i(159730),	-- Add Keystone Affix: Tyrannical
 			i(159732),	-- Add Keystone Affix: Bursting
@@ -338,7 +338,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { CREATED_8_1_0 } }, {
 			i(165730),	-- Cache of Dazar'alor Treasures
 			i(165731),	-- Cache of Dazar'alor Treasures
 			i(165732),	-- Cache of Dazar'alor Treasures
@@ -355,12 +355,12 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, 1.5, bubbleDown({ ["timeline"] = { "created 8.1.5" } }, {
+		expansion(EXPANSION.BFA, 1.5, bubbleDown({ ["timeline"] = { CREATED_8_1_5 } }, {
 			i(167026),	-- Cache of Crucible Treasures
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
+		expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
 			i(168272),	-- [PH] Amathet Cache
 			i(170501),	-- [PH] Mogu Cache
 			i(169154),	-- [PH] N'Zoth Cache
@@ -374,7 +374,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, 2.5, bubbleDown({ ["timeline"] = { "created 8.2.5" } }, {
+		expansion(EXPANSION.BFA, 2.5, bubbleDown({ ["timeline"] = { CREATED_8_2_5 } }, {
 			i(170488),	-- [DNT] Torn Journal Page #7
 			i(170484),	-- [DNT] Torn Journal Page #14
 			i(170487),	-- [DNT] Torn Journal Page #23
@@ -383,7 +383,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, 3.0, bubbleDown({ ["timeline"] = { "created 8.3.0" } }, {
+		expansion(EXPANSION.BFA, 3.0, bubbleDown({ ["timeline"] = { CREATED_8_3_0 } }, {
 			i(174455),	-- Add Keystone Affix: Awakened
 			i(169293),	-- Coalescing Visions
 			i(174838),	-- Collapsed Fusion Core

@@ -767,7 +767,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10210,	-- A'dal
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
-					q(44863, bubbleDownSelf({ ["timeline"] = { "created 7.0.3", "added 7.1.5" } }, {	-- Clearing the Air
+					q(44863, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3, "added 7.1.5" } }, {	-- Clearing the Air
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 						["requireSkill"] = BLACKSMITHING,

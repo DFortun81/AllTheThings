@@ -196,7 +196,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.1
-			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_6_0_2} }, {
 				i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 				r(168851),	-- Miniature Flying Carpet
 				i(114872),	-- Pattern: Greater Hexweave Essence
@@ -207,14 +207,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {CREATED_7_0_3} }, {
 				i(137981),	-- Pattern: Silkweave Cloak
 				i(151746),	-- Pattern: Lightweave Breeches
 			})),
 		}),
 		expansion(EXPANSION.BFA, {
 			-- 8.0.1
-			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_8_0_1} }, {
 				i(162424),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
 				i(162770),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
 				i(162426),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
@@ -225,7 +225,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
 				i(183871),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 			})),
 		}),

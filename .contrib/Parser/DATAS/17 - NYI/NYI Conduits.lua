@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(CONDUITS, {
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+		expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(179000),	-- [PH] Potency Conduit - Death Knight - Blood - Potency Trait 1
 			i(179027),	-- [PH] Potency Conduit - Death Knight - Blood - Potency Trait 2
 			i(179028),	-- [PH] Flex Conduit - Death Knight - Blood - Flex Trait 1

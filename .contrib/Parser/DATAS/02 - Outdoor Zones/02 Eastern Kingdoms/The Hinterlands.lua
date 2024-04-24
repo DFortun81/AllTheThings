@@ -2069,7 +2069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(12258, {	-- Serpent Clasp Belt
-							["timeline"] = { "created 1.12.1.12941", ADDED_4_0_3 },
+							["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 							["isLimited"] = true,
 						}),
 					},

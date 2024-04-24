@@ -2009,10 +2009,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
+							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
+							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
 						}),
 					},
 				}),

@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7702, {	-- Kill 'Em With Sleep Deprivation
 					["qg"] = 14628,	-- Evonice Sootsmoker
 					["coord"] = { 38.4, 27.7, SEARING_GORGE },
-					["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_3_3_0, REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/20 Dark Iron Pillow
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 14635,	-- Sleepy Dark Iron Worker
 						}),
 						i(19129, {	-- Everglowing Robe
-							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
+							["timeline"] = { CREATED_1_12_1, ADDED_3_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -546,11 +546,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 179832 },	-- Pillamaster's Ornate Pillow
 						{ "n",  14636 },	-- Chambermaid Pillaclencher
 					},
-					["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_3_3_0, REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
-							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_3_3_0 },
 						}),
 					},
 				}),
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
-							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_3_3_0 },
 						}),
 					},
 				}),

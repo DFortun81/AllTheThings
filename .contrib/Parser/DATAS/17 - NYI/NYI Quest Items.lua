@@ -22,26 +22,26 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
-		expansion(EXPANSION.CATA, 0.3, bubbleDown({ ["timeline"] = { "created 4.0.3" } }, {
+		expansion(EXPANSION.CATA, 0.3, bubbleDown({ ["timeline"] = { CREATED_4_0_3 } }, {
 			i(45818),	-- Force Quest Phase 1
 			i(46056),	-- Force Quest Phase 2
 		})),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.2.0
-		expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { "created 5.2.0" } }, {
+		expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
 			i(93660),	-- Thunder-Laced Egg
 		})),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+		expansion(EXPANSION.WOD, 0.1, bubbleDown({ ["timeline"] = { CREATED_6_0_2 } }, {
 			i(109012),	-- Frostwolf Ancestral Totem
 		})),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { CREATED_7_2_0 } }, {
 			i(142362),	-- ZZZ OLD Fel-Etched Bone
 			i(142376),	-- ZZZ OLD Glowing Bloodthistle Petal
 			i(142371),	-- ZZZ OLD Inferno Stone
@@ -51,7 +51,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(157772),	-- A Royal Concern
 			i(157775),	-- A Royal Concern
 			i(157788),	-- Saurid Egg
@@ -59,17 +59,17 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { CREATED_8_1_0 } }, {
 			i(164764),	-- Trident Head
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, 1.5, bubbleDown({ ["timeline"] = { "created 8.1.5" } }, {
+		expansion(EXPANSION.BFA, 1.5, bubbleDown({ ["timeline"] = { CREATED_8_1_5 } }, {
 			i(164776),	-- Schematic: The Ub3r-Spanner
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
+		expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
 			i(169326),	-- Abyssal Shard
 			i(167652),	-- Blueprint: Hundred-Fathom Lure
 			i(168023),	-- DNT- Smashed Transport Relay

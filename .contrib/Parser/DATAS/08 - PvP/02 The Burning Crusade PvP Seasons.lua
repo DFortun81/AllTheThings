@@ -1115,7 +1115,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						-- #if AFTER 4.0.1.12941
 						i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { "created 2.0.1", ADDED_4_0_1, REMOVED_5_0_4, "added 6.0.1" },
+							["timeline"] = { CREATED_2_0_1, ADDED_4_0_1, REMOVED_5_0_4, "added 6.0.1" },
 						}),
 						-- #endif
 						i(32993, {	-- General's Ringmail Sabatons
@@ -3696,7 +3696,7 @@ root(ROOTS.NeverImplemented, {
 		-- #if BEFORE 4.0.1.12941
 		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 			["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-			["timeline"] = { "created 2.0.1", ADDED_4_0_1, REMOVED_5_0_4, "added 6.0.1" },
+			["timeline"] = { CREATED_2_0_1, ADDED_4_0_1, REMOVED_5_0_4, "added 6.0.1" },
 		}),
 		-- #endif
 	}),

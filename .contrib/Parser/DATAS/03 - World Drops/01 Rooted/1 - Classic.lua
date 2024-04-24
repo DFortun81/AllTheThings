@@ -226,7 +226,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 4.0.1.12941", "added 6.0.1", REMOVED_7_0_3 },
+			["timeline"] = { CREATED_4_0_1, "added 6.0.1", REMOVED_7_0_3 },
 		}),
 		i(14752),	-- Slayer's Cape
 		i(3972),	-- Smooth Cloak
@@ -1381,7 +1381,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.12.1.12941", "added 6.0.1", REMOVED_7_0_3 },
+			["timeline"] = { CREATED_1_12_1, "added 6.0.1", REMOVED_7_0_3 },
 		}),
 		i(13111),	-- Sandals of the Insurgent
 		i(14553),	-- Sash of Mercy
@@ -1651,7 +1651,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 4.0.1.12941", "added 6.0.1", REMOVED_7_0_3 },
+			["timeline"] = { CREATED_4_0_1, "added 6.0.1", REMOVED_7_0_3 },
 		}),
 		i(9758),	-- Cadet Belt
 		i(9759),	-- Cadet Boots
@@ -1721,7 +1721,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.12.1.12941", "added 6.0.1", REMOVED_7_0_3 },
+			["timeline"] = { CREATED_1_12_1, "added 6.0.1", REMOVED_7_0_3 },
 		}),
 		i(2649),	-- Flimsy Chain Belt
 		i(2650),	-- Flimsy Chain Boots
@@ -1800,7 +1800,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.12.1.12941", "added 6.0.1", REMOVED_7_0_3 },
+			["timeline"] = { CREATED_1_12_1, "added 6.0.1", REMOVED_7_0_3 },
 		}),
 		i(2245),	-- Helm of Narv
 		i(8308),	-- Hero's Band
@@ -3020,7 +3020,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15592),	-- Steadfast Buckler
 		-- #if BEFORE 8.2.0
 		i(7188, {	-- Stormwind Guard Shield
-			["timeline"] = { "created 1.12.1.12941", "added 8.2.0" },
+			["timeline"] = { CREATED_1_12_1, "added 8.2.0" },
 		}),
 		-- #endif
 		i(14852),	-- Sunscale Shield
@@ -3157,7 +3157,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.11.1.13287", "added 6.0.1", REMOVED_7_0_3 },
+			["timeline"] = { CREATED_1_11_1, "added 6.0.1", REMOVED_7_0_3 },
 		}),
 		i(12042),	-- Marsh Chain
 		i(13091),	-- Medallion of Grand Marshal Morris
@@ -3520,7 +3520,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
-				["timeline"]={ "created 1.12.1.6180", ADDED_2_0_1 },
+				["timeline"]={ CREATED_1_12_1, ADDED_2_0_1 },
 			}),
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
 			i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)

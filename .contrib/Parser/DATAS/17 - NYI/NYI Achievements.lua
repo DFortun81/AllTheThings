@@ -384,7 +384,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+		expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			ach(11234),	-- Class Hall Champions recruited
 			ach(11235),	-- Class Hall Troops recruited
 			ach(11236),	-- Class Hall Missions completed
@@ -392,23 +392,23 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			ach(11339),	-- Legion's Bane
 		})),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+		expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
 			ach(12107),	-- Season 3v3 victories on your current faction
 		})),
 
 		-- 7.3.2
-		expansion(EXPANSION.LEGION, 3.2, bubbleDownSelf({ ["timeline"] = { "created 7.3.2" } }, {
+		expansion(EXPANSION.LEGION, 3.2, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_2 } }, {
 			ach(12138),	-- Fierce Gladiator's Storm Dragon
 		})),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			ach(12598),	-- <Hidden> Kul Tiras Continent Achievement
 			ach(12554),	-- <Hidden> Lordaeron Scenario Launch
 			ach(12920),	-- A Tiny Heart
@@ -433,7 +433,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
+		expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 			ach(13318),	-- 100 Exalted Reputations
 			ach(13415),	-- Heroic: Crucible of Storms
 			ach(13432),	-- Mythic: Jadefire Masters
@@ -443,13 +443,13 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
+		expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
 			ach(13540),	-- Deaths from Battle for Wintergrasp
 			ach(13195),	-- Rumble Club
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+		expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 			ach(13721),	-- Diligent Ally
 			ach(13471),	-- Diversed Investments
 			ach(13515),	-- Freedom Run
@@ -457,7 +457,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
+		expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
 			ach(14025),	-- <new achievement>
 			ach(14116),	-- All Bridges Burned
 			ach(14121),	-- Daring Defender
@@ -480,7 +480,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			ach(14529),	-- <Hidden> Shadowlands Alt - Trigger Alt Progression
 			ach(14300),	-- Ardenweald Achieved \\ [PH] Ardenweald Zone Achievement
 			ach(14299),	-- Bastion Bested \\ [PH] Bastion Zone Achievement
@@ -556,22 +556,22 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
+		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 			ach(14838),	-- Champion of Connection
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			ach(15074),	-- <Hidden> Razorwing Eggs Returned
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
+		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 			ach(15326),	-- [DNT] Rating Test Achievement
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			ach(15219),	-- Automa
 			ach(15557),	-- Murkastrasza
 		})),

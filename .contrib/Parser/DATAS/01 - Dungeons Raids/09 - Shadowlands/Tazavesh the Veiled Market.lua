@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				q(64571, {	-- Tazavesh: Seek and Do Not Destroyer
 					["_drop"] = { "g" },
 					["timeline"] = {
-						"created 9.1.0.39226",
+						CREATED_9_1_0,
 					},
 				}),
 			}),

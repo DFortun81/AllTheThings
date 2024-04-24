@@ -3258,7 +3258,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Resolute Hessonite",
 					["recipeID"] = 73259,
-					["timeline"] = { "created 4.0.3" },
+					["timeline"] = { CREATED_4_0_3 },
 				},
 				{
 					["name"] = "Resolute Lava Coral",
@@ -3561,7 +3561,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Mystic Alicite",
 					["recipeID"] = 73233,
-					["timeline"] = { "created 4.0.3" },
+					["timeline"] = { CREATED_4_0_3 },
 				},
 				{
 					["name"] = "Mystic Amberjewel",
@@ -4712,7 +4712,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Taladite Crystal",
 					["recipeID"] = 170832,
-					["timeline"] = { "created 6.0.1.18566" },
+					["timeline"] = { CREATED_6_0_2 },
 				},
 				{
 					["name"] = "Taladite Crystal",

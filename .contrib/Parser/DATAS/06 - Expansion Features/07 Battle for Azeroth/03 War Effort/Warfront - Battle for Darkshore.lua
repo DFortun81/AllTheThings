@@ -108,7 +108,7 @@ root(ROOTS.ExpansionFeatures,
 								["description"] = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
 								["g"] = {
 									-- Alliance
-									i(164966, { ["timeline"] = { "created 8.1.0.28724" }}),	-- Glade Warden's Glaive
+									i(164966, { ["timeline"] = { CREATED_8_1_0 }}),	-- Glade Warden's Glaive
 									i(166898),	-- Sentinel's Blade
 									i(165628),	-- Sentinel's Branch
 									i(165637),	-- Sentinel's Bulwark

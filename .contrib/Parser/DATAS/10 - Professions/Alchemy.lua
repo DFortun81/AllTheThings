@@ -1155,7 +1155,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Holy Protection Potion",
-					["timeline"] = { "created 1.11.1.5462" },	-- Never Implemented
+					["timeline"] = { CREATED_1_11_1 },	-- Never Implemented
 					["recipeID"] = 17579,
 				},
 				{

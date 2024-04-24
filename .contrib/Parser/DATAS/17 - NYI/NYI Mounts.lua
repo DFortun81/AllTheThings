@@ -462,7 +462,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 6.2.1
-		expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = { "created 6.2.1" } }, {
+		expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_2 } }, {
 			mount(194046, {	-- Swift Spectral Rylak (MOUNT!)
 				["displayID"] = 65845,
 			}),

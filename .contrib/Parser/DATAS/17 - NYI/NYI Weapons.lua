@@ -908,10 +908,10 @@ root(ROOTS.NeverImplemented, {
 			i(150613),	-- Survivalist's Hunting Spear
 			i(146304),	-- Fel Titan Hammer
 			i(147374, {	-- Wooden Toy Shield [Alliance]
-				["timeline"] = { "created 7.3.0.24484" },
+				["timeline"] = { CREATED_7_3_0 },
 			}),
 			i(147377, {	-- Wooden Toy Shield [Horde]
-				["timeline"] = { "created 7.3.0.24484" },
+				["timeline"] = { CREATED_7_3_0 },
 			}),
 		}),
 		expansion(EXPANSION.BFA, {
@@ -967,7 +967,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			i(167998, {	-- Dark Iron Tankard
-				["timeline"] = { "created 8.1.5.29701" },
+				["timeline"] = { CREATED_8_1_5 },
 			}),
 			i(159538),	-- Coldscale Cudgel
 			i(159498),	-- Coldscale Pistol

@@ -1,6 +1,7 @@
 -------------------------
 --     CLASSIC WOW     --
 -------------------------
+CREATED_1_0_1 = "created 1.0.1";
 ADDED_1_4_0 = "added 1.4.0";
 REMOVED_1_2_0 = "removed 1.2.0";
 REMOVED_1_3_0 = "removed 1.3.0";
@@ -10,9 +11,20 @@ REMOVED_1_6_0 = "removed 1.6.0";
 REMOVED_1_7_0 = "removed 1.7.0";
 REMOVED_1_8_0 = "removed 1.8.0";
 REMOVED_1_9_3 = "removed 1.9.3";
+
+CREATED_1_10_0 = "created 1.10.0";
 REMOVED_1_10_0 = "removed 1.10.0";
+
+CREATED_1_11_0 = "created 1.11.0";
+REMOVED_1_11_0 = "removed 1.11.0";
+
+CREATED_1_11_1 = "created 1.11.1";
 REMOVED_1_11_1 = "removed 1.11.1";
+
 REMOVED_1_11_2 = "removed 1.11.2";
+
+CREATED_1_12_1 = "created 1.12.1";
+REMOVED_1_12_1 = "removed 1.12.1";
 
 --- CLASSIC TIMELINES ---
 
@@ -217,6 +229,7 @@ REMOVED_5_3_0 = "removed 5.3.0.16981";					-- Mists of Pandaria 5.3.0 Launch on 
 CREATED_5_4_0 = "created 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
 ADDED_5_4_0 = "added 5.4.0.17345";						-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
 REMOVED_5_4_0 = "removed 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
+CREATED_5_4_2 = "created 5.4.2";
 CREATED_5_4_7 = "created 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
 ADDED_5_4_7 = "added 5.4.7.17898";						-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
 REMOVED_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014

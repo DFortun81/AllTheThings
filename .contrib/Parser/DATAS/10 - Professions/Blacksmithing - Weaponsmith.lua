@@ -374,7 +374,7 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Bleakwood Hew",
-						["timeline"] = { "created 1.12.1.13287", "added 7.1.5" },
+						["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
 						["recipeID"] = 16965,
 						["requireSkill"] = 9787,
 					},
@@ -385,7 +385,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Blood Talon",
-						["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+						["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 						["recipeID"] = 16986,
 						["requireSkill"] = 9787,
 					},
@@ -401,7 +401,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Darkspear",
-						["timeline"] = { "created 1.12.1.13287", "added 7.1.5" },
+						["timeline"] = { CREATED_1_12_1, "added 7.1.5" },
 						["recipeID"] = 16987,
 						["requireSkill"] = 9787,
 					},
@@ -424,7 +424,7 @@ profession(BLACKSMITHING, {
 					-- #if BEFORE 7.1.5
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Earthforged Blade",
-						["timeline"] = { "created 2.0.1.6180", "added 7.1.5" },
+						["timeline"] = { CREATED_2_0_1, "added 7.1.5" },
 						["recipeID"] = 36125,
 						["requireSkill"] = 9787,
 					}),

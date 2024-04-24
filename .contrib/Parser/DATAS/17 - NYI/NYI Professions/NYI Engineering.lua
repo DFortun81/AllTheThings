@@ -279,7 +279,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.MOP, {
 			-- 5.2.0
-			expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
+			expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {CREATED_5_2_0} }, {
 				i(94894),	-- Schematic: Advanced Refrigeration Unit
 				i(97230),	-- Schematic: Jard's Peculiar Energy Source
 				i(94893),	-- Schematic: Pierre

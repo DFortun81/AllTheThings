@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(62250, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
-					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
+					["timeline"] = { CREATED_9_0_2, ADDED_10_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
 					["g"] = {
@@ -6328,7 +6328,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(4565),	-- Simple Dagger
 						i(38579, {	-- Venomous Tome
-							["timeline"] = { "created 2.4.2", ADDED_3_0_2 },
+							["timeline"] = { CREATED_2_4_2, ADDED_3_0_2 },
 							["isLimited"] = true,
 						}),
 					},
@@ -7005,7 +7005,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #if BEFORE WRATH
 root(ROOTS.NeverImplemented, {
 	i(38579, {	-- Venomous Tome
-		["timeline"] = { "created 2.4.2", ADDED_3_0_2 },
+		["timeline"] = { CREATED_2_4_2, ADDED_3_0_2 },
 	}),
 });
 -- #endif

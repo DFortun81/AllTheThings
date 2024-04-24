@@ -861,12 +861,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				-- #endif
-				["timeline"] = { "created 1.10.0", ADDED_2_0_1, REMOVED_4_3_0 },	-- This was not in WoW Classic.
+				["timeline"] = { CREATED_1_10_0, ADDED_2_0_1, REMOVED_4_3_0 },	-- This was not in WoW Classic.
 				["cost"] = { { "i", 19182, 40 } },	-- Tattered Darkmoon Faire Prize Ticket
 				["repeatable"] = true,
 				["groups"] = {
 					i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-						["timeline"] = { "created 1.10.0", ADDED_2_0_1 },	-- This was not in WoW Classic.
+						["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 },	-- This was not in WoW Classic.
 					}),
 				},
 			}),

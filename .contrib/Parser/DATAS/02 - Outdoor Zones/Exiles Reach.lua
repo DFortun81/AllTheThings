@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			["g"] = {
 				n(157300, {	-- Tunk
 					i(179362, {	-- Tunk's Backscratcher
-						["timeline"] = { "created 9.0.1.36216" }
+						["timeline"] = { CREATED_9_0_1 }
 					}),
 					i(178163),	-- Tunk's Shinguard
 					i(178167),	-- Tunk's Lil' Whomper

@@ -484,7 +484,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(62265, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
-					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
+					["timeline"] = { CREATED_9_0_2, ADDED_10_0_2 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
 					["g"] = {
@@ -4680,7 +4680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 					},
@@ -5047,7 +5047,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 					},
@@ -5298,7 +5298,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 					},

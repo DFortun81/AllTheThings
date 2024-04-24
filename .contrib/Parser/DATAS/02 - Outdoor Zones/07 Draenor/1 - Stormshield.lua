@@ -3665,10 +3665,10 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									["timeline"] = { REMOVED_10_0_5 },
 								}),
-								i(118608, { ["timeline"] = { "created 6.0.1.18738" }}),	-- Technique: Greater Weapon Crystal
-								i(120266, { ["timeline"] = { "created 6.0.2.18850" }}),	-- Technique: Greater Ensorcelled Tarot
-								i(122548, { ["timeline"] = { "created 6.1.0.19480" }}),	-- Technique: Powerful Ensorcelled Tarot
-								i(122553, { ["timeline"] = { "created 6.1.0.19480" }}),	-- Technique: Powerful Weapon Crystal
+								i(118608, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Weapon Crystal
+								i(120266, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Ensorcelled Tarot
+								i(122548, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Ensorcelled Tarot
+								i(122553, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Weapon Crystal
 							},
 						}),
 						n(85849, {	-- Kinkade Jakobs <Blueprints Trader>

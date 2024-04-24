@@ -323,7 +323,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			n(132052, {	-- Vol'Jim
 				["description"] = "It looks like this NPC didn't make it to live from beta.",
-				["timeline"] = { "created 8.0.1.26131" },
+				["timeline"] = { CREATED_8_0_1 },
 			}),
 			n(137176, {	-- Walter Ferrell
 				["questID"] = 51321,

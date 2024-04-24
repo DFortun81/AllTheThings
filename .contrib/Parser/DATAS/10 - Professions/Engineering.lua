@@ -1594,7 +1594,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Mobile Alarm",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 12900,
 				},
 				{
@@ -1634,7 +1634,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Steam Tonk Controller",
-					["timeline"] = { "created 1.10.0", ADDED_2_0_1 },
+					["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 },
 					["recipeID"] = 28327,
 				},
 				{
@@ -2206,7 +2206,7 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Blue Smoke Flare",
-					["timeline"] = { "created 2.0.1" },	-- Never Implemented :(
+					["timeline"] = { CREATED_2_0_1 },	-- Never Implemented :(
 					["recipeID"] = 30343,
 				},
 				{
@@ -2219,7 +2219,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Red Smoke Flare",
-					["timeline"] = { "created 2.0.1" },	-- Never Implemented :(
+					["timeline"] = { CREATED_2_0_1 },	-- Never Implemented :(
 					["recipeID"] = 30342,
 				},
 				{

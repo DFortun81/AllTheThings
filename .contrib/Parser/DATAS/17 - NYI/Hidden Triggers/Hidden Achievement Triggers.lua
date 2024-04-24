@@ -1858,7 +1858,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
 			ach(14340),	-- The Path Towards Ascension 1
 			ach(14342),	-- The Path Towards Ascension 3
 			ach(14343),	-- The Path Towards Ascension 5
@@ -2000,7 +2000,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = {"created 9.0.2"} }, {
+		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_2} }, {
 			-- 9.0.2.35854
 			ach(14807),	-- <Hidden> Completed Shadowlands Story (DNT) <Account>
 			ach(14811),	-- <Hidden> Shadowlands Alt - Launch Chromie if Shadowlands in Progress (DNT)
@@ -2047,7 +2047,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, 0.5, bubbleDownSelf({ ["timeline"] = {"created 9.0.5"} }, {
+		expansion(EXPANSION.SL, 0.5, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_5} }, {
 			ach(14933),	-- 9.0 - Covenant - Night Fae - Small Shape Selected
 			--
 			ach(15010),	-- Maw Tracking - Vendor - Items Unlocked - Apprehensive [DNT]
@@ -2071,7 +2071,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = {CREATED_9_1_0} }, {
 			ach(14934),	-- 9.1 Campaign - Quest Launch \\ 9.1 Campaign - Patch Quest Launch - Intro (RMV)
 			--
 			ach(14944),	-- Torghast Tracking 9.1 - Layer 9 Unlocked - Account [DNT]
@@ -2148,7 +2148,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = {"created 9.1.5"} }, {
+		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = {CREATED_9_1_5} }, {
 			ach(15395),	-- Fae's Giving [DNT]
 			ach(15242),	-- Renowned - Kyrian
 			ach(15243),	-- Renowned - Necrolords
@@ -2168,7 +2168,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = {"created 9.2.0"} }, {
+		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = {CREATED_9_2_0} }, {
 			ach(15559),	-- 9.2 ZM - Cypher System - Talent Unlocked - Aealic
 			ach(15560),	-- 9.2 ZM - Cypher System - Talent Unlocked - Dealic
 			ach(15561),	-- 9.2 ZM - Cypher System - Talent Unlocked - Trebalim
@@ -2260,7 +2260,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = {"created 9.2.5"} }, {
+		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = {CREATED_9_2_5} }, {
 			ach(15596),	-- Return to Lordaeron (Hidden Character Achievement)
 		})),
 	}),

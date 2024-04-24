@@ -708,7 +708,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 2.0.1", "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { CREATED_2_0_1, "added 6.0.1", REMOVED_7_0_3 },
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
@@ -730,7 +730,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 2.0.1", "added 6.0.1", REMOVED_7_0_3 },
+				["timeline"] = { CREATED_2_0_1, "added 6.0.1", REMOVED_7_0_3 },
 			}),
 			i(25160),	-- Vengeance Blade
 		}),

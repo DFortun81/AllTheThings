@@ -697,8 +697,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER CATA
 			i(30071, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Light Earthforged Blade
 			-- #endif
-			i(12769, {["timeline"] = {"created 1.11.0", ADDED_7_1_5}}),	-- Bleakwood Hew
-			i(12802, {["timeline"] = {"created 1.11.0", ADDED_7_1_5}}),	-- Darkspear
+			i(12769, {["timeline"] = {CREATED_1_11_0, ADDED_7_1_5}}),	-- Bleakwood Hew
+			i(12802, {["timeline"] = {CREATED_1_11_0, ADDED_7_1_5}}),	-- Darkspear
 		}),
 	}),
 	prof(COOKING, {
@@ -1246,7 +1246,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(211427)),	-- Soul Vessel
 			-- #endif
-			applyclassicphase(TBC_PHASE_ONE, i(22728, {["timeline"] = { "created 1.10.0", ADDED_2_0_1}})),	-- Steam Tonk Controller
+			applyclassicphase(TBC_PHASE_ONE, i(22728, {["timeline"] = { CREATED_1_10_0, ADDED_2_0_1}})),	-- Steam Tonk Controller
 			i(4366),	-- Target Dummy
 			i(15993),	-- Thorium Grenade
 			i(15997, {["timeline"] = {REMOVED_4_0_1}}),	-- Thorium Shells

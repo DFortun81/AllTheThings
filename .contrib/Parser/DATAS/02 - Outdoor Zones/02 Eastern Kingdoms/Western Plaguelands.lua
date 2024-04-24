@@ -2735,7 +2735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(1849, {	-- Dreadwhisper
 					["coord"] = { 64.0, 56.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				-- #if BEFORE CATA
 				n(1843, {  -- Foreman Jerris

@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 					i(159518),	-- Long Fang
 					i(160468, {	-- Longfang Paws
-						["timeline"] = { "created 8.0.1.26287" },
+						["timeline"] = { CREATED_8_0_1 },
 						["crs"] = { 127901 },	-- Henry Breakwater
 					}),
 				},

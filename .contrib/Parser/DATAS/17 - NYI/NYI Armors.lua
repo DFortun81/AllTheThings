@@ -55,13 +55,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(13812),	-- Ring of the Dawn
 			i(19065),	-- Emerald Circle
 			i(33959, {	-- Ring of Ghoulish Delight
-				["timeline"] = { "created 2.3.0.7521" },
+				["timeline"] = { CREATED_2_3_0 },
 			}),
 			i(33958, {	-- The Horseman's Signet Ring
-				["timeline"] = { "created 2.3.0.7521" },
+				["timeline"] = { CREATED_2_3_0 },
 			}),
 			i(33957, {	-- Witches Band
-				["timeline"] = { "created 2.3.0.7521" },
+				["timeline"] = { CREATED_2_3_0 },
 			}),
 			--
 			i(4988),	-- Burning Obsidian Band

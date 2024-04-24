@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			},
 		}),
 		q(66696, {	-- Tempting Fate: Fate of the Shadowlands
-			["timeline"] = { "created 9.2.7", ADDED_10_0_0, REMOVED_10_0_2_LAUNCH },
+			["timeline"] = { CREATED_9_2_7, ADDED_10_0_0, REMOVED_10_0_2_LAUNCH },
 			["isWorldQuest"] = true,
 			["maps"] = {
 				-- Castle Nathria

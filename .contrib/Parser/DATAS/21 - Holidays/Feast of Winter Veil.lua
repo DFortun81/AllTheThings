@@ -529,7 +529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 			["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
 			-- #if ANYCLASSIC
-			["timeline"] = { "created 2.4.3.8601", REMOVED_3_3_0 },
+			["timeline"] = { CREATED_2_4_3, REMOVED_3_3_0 },
 			-- #else
 			["timeline"] = { ADDED_2_4_3 },
 			-- #endif
@@ -1279,7 +1279,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["groups"] = {
 				i(37710, {	-- Crashin' Thrashin' Racer Controller (TOY!)
 					-- #if ANYCLASSIC
-					["timeline"] = { "created 2.4.3.8601", ADDED_3_0_2 },
+					["timeline"] = { CREATED_2_4_3, ADDED_3_0_2 },
 					-- #else
 					["timeline"] = { ADDED_2_4_3 },
 					-- #endif
@@ -2237,7 +2237,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 33.9, 68.1, IRONFORGE },
 				{ 52.9, 77.4, ORGRIMMAR },
 			},
-			["timeline"] = { "created 8.3.0", ADDED_9_0_1 },
+			["timeline"] = { CREATED_8_3_0, ADDED_9_0_1 },
 		}),
 	}),
 	n(TREASURES, {

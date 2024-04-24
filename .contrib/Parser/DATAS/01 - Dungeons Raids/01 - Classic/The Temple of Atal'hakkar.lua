@@ -62,19 +62,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 22444 },	-- Putrid Vine
 						}),
 						i(53560, {	-- Moonshadow Staff
-							["timeline"] = { "created 4.0.3" },
+							["timeline"] = { CREATED_4_0_3 },
 						}),
 						i(22458, {	-- Moonshadow Stave
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(53561, {	-- Thicket's Embrace
-							["timeline"] = { "created 4.0.3" },
+							["timeline"] = { CREATED_4_0_3 },
 						}),
 						i(22272, {	-- Forest's Embrace
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(53562, {	-- Grizzled Hide
-							["timeline"] = { "created 4.0.3" },
+							["timeline"] = { CREATED_4_0_3 },
 						}),
 						i(22274, {	-- Grizzled Pelt
 							["timeline"] = { REMOVED_4_0_3 },

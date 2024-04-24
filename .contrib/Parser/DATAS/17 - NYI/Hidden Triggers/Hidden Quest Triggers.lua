@@ -23,7 +23,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		--	QUESTING / LEVELING
 		-- #if BEFORE WRATH
 		-- This got repurposed into an actual quest with Cata.
-		q(8329, { ["timeline"] = { "created 2.0.1" }, }),-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
+		q(8329, { ["timeline"] = { CREATED_2_0_1 }, }),-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
 		-- #endif
 		q(11518),	-- Sunwell Daily Portal Flag
 		q(11522),	-- Triggers with Rediscovering Your Roots (11521)

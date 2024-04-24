@@ -704,7 +704,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = { "created 5.0.1" } }, {
+		expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 			q(30003, { ["name"] = "A Book By Its Cover", }),	-- A Book By Its Cover
 			q(30019, { ["name"] = "A Breach in the Wall", }),	-- A Breach in the Wall
 			q(30537, { ["name"] = "A Fizzy Fusion", }),	-- A Fizzy Fusion
@@ -909,7 +909,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 5.0.4
-		expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.0.4" } }, {
+		expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 			q(31940, { ["name"] = "Battle Pet Trainers: Pandaria", }),	-- Battle Pet Trainers: Pandaria
 			q(31988, { ["name"] = "Daily Selected Scenario", }),	-- Daily Selected Scenario
 			q(31968, { ["name"] = "Doubt Begins To Surface", }),	-- Doubt Begins To Surface
@@ -929,7 +929,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, 1.0, bubbleDownSelf({ ["timeline"] = {"created 5.1.0"} }, {
+		expansion(EXPANSION.MOP, 1.0, bubbleDownSelf({ ["timeline"] = {CREATED_5_1_0} }, {
 			q(32367, { ["name"] = "A Bit of Yak", }),	-- A Bit of Yak
 			q(32375, { ["name"] = "A Dash of That", }),	-- A Dash of That
 			q(32366, { ["name"] = "A Lick of Fire", }),	-- A Lick of Fire
@@ -960,7 +960,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
+		expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {CREATED_5_2_0} }, {
 			q(32475, { ["name"] = "A Spark of Life", }),	-- A Spark of Life
 			q(32727, { ["name"] = "Contributed to Server Percentage Daily Tracking Quest", }),	-- Contributed to Server Percentage Daily Tracking Quest
 			q(32566, { ["name"] = "DEBUG: Eligible for All Quests", }),	-- DEBUG: Eligible for All Quests
@@ -999,7 +999,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
+		expansion(EXPANSION.MOP, 4.0, bubbleDownSelf({ ["timeline"] = {CREATED_5_4_0} }, {
 			q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
 			q(33361, { ["name"] = "5.4 Raid - RRP - Boss 2 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 2 Legendary Quest
 			q(33362, { ["name"] = "5.4 Raid - RRP - Boss 3 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 3 Legendary Quest
@@ -1043,13 +1043,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 5.4.2
-		expansion(EXPANSION.MOP, 4.2, bubbleDownSelf({ ["timeline"] = {"created 5.4.2"} }, {
+		expansion(EXPANSION.MOP, 4.2, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_2 } }, {
 			q(33634, { ["name"] = "6.0 Invasion Opt-Out", }),	-- Maldo's Test Quest
 		})),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { "created 6.0.1" } }, {
+		expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			q(33772, { ["name"] = "6.0 Invasion Opt-Out", }),	-- 6.0 Invasion Opt-Out
 			q(34311, { ["name"] = "6.0 Invasion: Opted Out", }),	-- 6.0 Invasion: Opted Out
 			q(36211, { ["name"] = "6.0 Tanaan - Boots Bootstrap", }),	-- 6.0 Tanaan - Boots Bootstrap
@@ -1633,7 +1633,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 6.0.2
-		expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { "created 6.0.2" } }, {
+		expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			q(37598, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
 			q(37599, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
 			q(37600, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
@@ -1696,12 +1696,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 6.0.3
-		expansion(EXPANSION.WOD, 0.3, bubbleDownSelf({ ["timeline"] = { "created 6.0.3" } }, {
+		expansion(EXPANSION.WOD, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_3 } }, {
 			q(33466, { ["name"] = "Rally the Artificers", }),	-- Rally the Artificers
 		})),
 
 		-- 6.1.0
-		expansion(EXPANSION.WOD, 1.0, bubbleDownSelf({ ["timeline"] = { "created 6.1.0" } }, {
+		expansion(EXPANSION.WOD, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_1_0 } }, {
 			q(35256, { ["name"] = "A Heart Unbroken", }),	-- A Heart Unbroken
 			q(38204, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (A)
 			q(38205, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (H)
@@ -1738,7 +1738,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 6.2.0
-		expansion(EXPANSION.WOD, 2.0, bubbleDownSelf({ ["timeline"] = { "created 6.2.0" } }, {
+		expansion(EXPANSION.WOD, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
 			q(38592, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 			q(38594, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 			q(37888, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Solo", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
@@ -1786,7 +1786,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 6.2.1
-		expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = { "created 6.2.1" } }, {
+		expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_2 } }, {
 			q(39292, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
 			q(38260, { ["name"] = "Beachhead", }),	-- Beachhead
 			q(38575, { ["name"] = "Beachhead", }),	-- Beachhead
@@ -1799,7 +1799,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 6.2.2
-		expansion(EXPANSION.WOD, 2.2, bubbleDownSelf({ ["timeline"] = { "created 6.2.2" } }, {
+		expansion(EXPANSION.WOD, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_2 } }, {
 			q(35499, { ["name"] = "Blow up towers", }),	-- Blow up towers
 			q(39052, { ["name"] = "Blueprints Are Important", }),	-- Blueprints Are Important
 			q(33560, { ["name"] = "Light's Rest", }),	-- Light's Rest
@@ -1812,7 +1812,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 6.x.x
-		n(P6xx, bubbleDownSelf({ ["timeline"] = { "created 6.0.1" } }, {
+		n(P6xx, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			q(32785),
 			q(32786),
 			q(32787),
@@ -2065,7 +2065,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.1
-		expansion(EXPANSION.LEGION, 0.1, bubbleDownSelf({ ["timeline"] = { "created 7.0.1" } }, {
+		expansion(EXPANSION.LEGION, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			q(40103, { ["name"] = "7.0 ALPHA DK TEST QUEST", }),	-- 7.0 ALPHA DK TEST QUEST
 			q(39846, { ["name"] = "7.0 Dalaran - Treasure 001 - Burnt Cart", }),	-- 7.0 Dalaran - Treasure 001 - Burnt Cart
 			q(39507, { ["name"] = "7.0 Highmountain - Treasure 062 - Pinerock Basin", }),	-- 7.0 Highmountain - Treasure 062 - Pinerock Basin
@@ -2573,7 +2573,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+		expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			q(42374, { ["name"] = "7.0 Greeting Kits - Tracking Quest", }),	-- 7.0 Greeting Kits - Tracking Quest
 			q(42566, { ["name"] = "A Blaze of Starlight", }),	-- A Blaze of Starlight
 			q(40790, { ["name"] = "A Struggle Of Power", }),	-- A Struggle Of Power
@@ -2770,7 +2770,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.1.0
-		expansion(EXPANSION.LEGION, 1.0, bubbleDownSelf({ ["timeline"] = { "created 7.1.0" } }, {
+		expansion(EXPANSION.LEGION, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
 			q(45184, { ["name"] = "7.1 Class Hall - Special - PVP - PVP Repeated - Arena - Tracking Quest", }),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Arena - Tracking Quest
 			q(45183, { ["name"] = "7.1 Class Hall - Special - PVP - PVP Repeated - Ashran - Tracking Quest", }),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Ashran - Tracking Quest
 			q(45181, { ["name"] = "7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest", }),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest
@@ -2802,7 +2802,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.1.5
-		expansion(EXPANSION.LEGION, 1.5, bubbleDownSelf({ ["timeline"] = { "created 7.1.5" } }, {
+		expansion(EXPANSION.LEGION, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_7_1_5 } }, {
 			q(40631, { ["name"] = "Basking in Glory", }),	-- Basking in Glory
 			q(39770, { ["name"] = "Burn the Candle at Both Ends [NOT USED]", }),	-- Burn the Candle at Both Ends [NOT USED]
 			q(44941, { ["name"] = "Dances With Ravenbears (UNUSED)", }),	-- Dances With Ravenbears (UNUSED)
@@ -2821,7 +2821,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			q(45022, { ["name"] = "3+ Targets Chosen", }),	-- 3+ Targets Chosen
 			q(46955, { ["name"] = "Akazamzarak Silenced", }),	-- Akazamzarak Silenced
 			q(45054, { ["name"] = "Ancient Elven War Orders", }),	-- Ancient Elven War Orders
@@ -2994,7 +2994,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.2.5
-		expansion(EXPANSION.LEGION, 2.5, bubbleDownSelf({ ["timeline"] = { "created 7.2.5" } }, {
+		expansion(EXPANSION.LEGION, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_5 } }, {
 			q(43404, { ["name"] = "A Gathering for the Grand Master", }),	-- A Gathering for the Grand Master
 			q(45441, { ["name"] = "Adacic Grubs - REWORK", }),	-- Adacic Grubs - REWORK
 			q(47611, { ["name"] = "Betrayer Regalia", }),	-- Betrayer Regalia
@@ -3033,7 +3033,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+		expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
 			q(49193, { ["name"] = "A Pile of Intact Demon Eyes", }),	-- A Pile of Intact Demon Eyes
 			q(49194, { ["name"] = "Another Pile of Intact Demon Eyes", }),	-- Another Pile of Intact Demon Eyes
 			q(45036, { ["name"] = "Asgrim the Dreadkiller", }),	-- Asgrim the Dreadkiller
@@ -3141,7 +3141,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, 3.5, bubbleDownSelf({ ["timeline"] = { "created 7.3.5" } }, {
+		expansion(EXPANSION.LEGION, 3.5, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
 			q(50035, { ["name"] = "Bret Test - SQL", }),	-- Bret Test - SQL
 			q(50384, { ["name"] = "Doug Test - Completable Quest4", ["_drop"] = { "g" }, }),	-- Doug Test - Completable Quest4
 			q(50250, { ["name"] = "Posthaste", }),	-- Posthaste
@@ -3185,7 +3185,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.x.x
-		n(P7xx, bubbleDownSelf({ ["timeline"] = { "created 7.0.1" } }, {
+		n(P7xx, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			q(39286, { ["name"] = "A Gruesome Task", }),	-- A Gruesome Task
 			q(41044, { ["name"] = "Attack and Assail!", }),	-- Attack and Assail!
 			q(45631, { ["name"] = "Avocation of Antonidas", }),	-- Avocation of Antonidas
@@ -3231,7 +3231,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			q(53550),	-- A Change in Leadership
 			q(50882,{ ["_drop"] = { "g" },}),	-- All to Ash
 			q(52220),	-- Dragon Attack
@@ -4713,7 +4713,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
+		expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 			-- Unsorted
 			q(53987, {
 				["description"] = "Category: |cFFf09f26Horde War Campaign|r",
@@ -4830,7 +4830,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
+		expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
 			-- Unsorted
 			q(53787, {
 				["description"] = "Category: |cFFf09f26Engineering|r",
@@ -4914,7 +4914,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+		expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 			q(54048),	-- To Kill A Warden
 			q(56836),	-- The Eternal Palace: Master's Call
 			q(56837),	-- The Eternal Palace: Master's Call
@@ -5395,7 +5395,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, 2.5, bubbleDownSelf({ ["timeline"] = { "created 8.2.5" } }, {
+		expansion(EXPANSION.BFA, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
 			q(57377),	-- A Hand Offered
 			q(57850),	-- Storied Partnerships
 			q(57852),	-- Dungeon Adventure
@@ -5485,7 +5485,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
+		expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
 			q(58801),	-- Enter the Void
 			q(58904),	-- Shards of Corruption
 			q(57112),	-- Test Shared Quest
@@ -5704,7 +5704,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.3.7
-		expansion(EXPANSION.BFA, 3.7, bubbleDownSelf({ ["timeline"] = { "created 8.3.7" } }, {
+		expansion(EXPANSION.BFA, 3.7, bubbleDownSelf({ ["timeline"] = { CREATED_8_3_7 } }, {
 			-- Tools
 			-- 8.3.7.34872
 			q(59248),	--
@@ -5719,7 +5719,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.x.x
-		n(P8xx, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+		n(P8xx, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			q(54168, {
 				["description"] = "Category: |cFFf09f26Free T-Shirt Day|r",
 				["isDaily"] = 1,
@@ -5744,7 +5744,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			q(44498),	-- Winterhoof Cleansing
 			q(60362),	-- Blank
 			q(57766),	-- War with the Horde
@@ -6835,7 +6835,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
+		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 			q(62696),	-- A Call to Service
 			q(59598),	-- Good for the Soul
 			q(63061),	-- Helping Hand
@@ -6945,7 +6945,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, 0.5, bubbleDownSelf({ ["timeline"] = { "created 9.0.5" } }, {
+		expansion(EXPANSION.SL, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
 			-- Quest from Unsorted
 			-- Quest from WoW.Tools
 			-- 9.0.5.37503
@@ -6966,7 +6966,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			q(63420),
 			q(63430),
 			q(63431),
@@ -7123,7 +7123,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
+		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 			-- Quest from Unsorted
 			q(64996, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 			q(64997, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
@@ -7205,7 +7205,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			q(65152, { ["name"] = "A Hardened Bond", }),	-- A Hardened Bond
 			q(64649, { ["name"] = "A Mountain of Work to Do", }),	-- A Mountain of Work to Do
 			-- Quest from Unsorted
@@ -7405,7 +7405,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = { "created 9.2.5" } }, {
+		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
 			-- 9.2.5.42850
 			q(63505),	-- An Engraved Invitation	-- Ardenweald category
 			q(63506),	-- Mecha Gone	-- Ardenweald category, weird

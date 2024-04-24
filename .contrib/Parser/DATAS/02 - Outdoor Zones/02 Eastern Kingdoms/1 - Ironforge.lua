@@ -1518,7 +1518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { "created 1.12.1", ADDED_2_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
 						i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)

@@ -3998,10 +3998,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(10819, {	-- Baron Bloodbane
 					["coord"] = { 35.4, 21.2, EASTERN_PLAGUELANDS },
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 					["groups"] = {
 						i(16999, {	-- Royal Seal of Alexis
-							["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3, REMOVED_4_0_6 },
+							["timeline"] = { CREATED_1_12_1, ADDED_4_0_3, REMOVED_4_0_6 },
 						}),
 					},
 				}),
@@ -4022,7 +4022,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(10818, {	-- Death Knight Soulbearer
 					["coord"] = { 65.4, 24.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				n(10827, {	-- Deathspeaker Selendre <Cult of the Damned>
 					-- #if AFTER CATA
@@ -4078,7 +4078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.4, 11.6, EASTERN_PLAGUELANDS },
 						{ 27.8, 11.6, EASTERN_PLAGUELANDS },
 					},
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				n(50813, {	-- Fene-mal
 					["coord"] = { 49.6, 43.2, EASTERN_PLAGUELANDS },
