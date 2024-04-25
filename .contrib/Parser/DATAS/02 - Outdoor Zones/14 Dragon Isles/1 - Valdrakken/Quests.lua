@@ -339,6 +339,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 45.5, 55.9, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 				["g"] = {
+					i(212458),	-- Awakened Flightstone
 					i(211951),	-- Pouch of Whelpling's Awakened Crests
 				},
 			}),

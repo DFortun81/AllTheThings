@@ -1318,6 +1318,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(TAILORING, {
 		filter(MOUNT_EQUIPMENT, {
+			i(165739),	-- Rough-hooked Tidespray Linen
 			i(168427),	-- Saddlechute
 		}),
 		filter(BAGS, {

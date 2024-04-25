@@ -7141,7 +7141,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				------ Crests & Flightstones?? ------
-				i(212458),	-- Awakened Flightstone
 				i(217412),	-- Blackened Flightstone
 				i(212367),	-- Clutch of Wyrm's Awakened Crests
 				i(220203),	-- Clutch of Wyrm's Dreaming Crests
@@ -7253,7 +7252,6 @@ root(ROOTS.Unsorted, {
 				-- 10.2.6.53840
 				q(79001),	--
 				q(79002),	--
-				q(79003),	--
 				q(79031),	--
 				q(79032),	--
 				q(79033),	--
