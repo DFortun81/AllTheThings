@@ -1490,6 +1490,496 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 			})),
+			header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+				d(DIFFICULTY.RAID.LFR, {
+					["description"] = "",
+					["g"] = bubbleDown({ ["modID"] = 4 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = {{"select","itemID",
+								217221.004,	-- Casket of the Risen Nightmare
+								217224.004,	-- Greaves of the Risen Nightmare
+								217223.004,	-- Piercing Gaze of the Risen Nightmare
+								217225.004,	-- Skewers of the Risen Nightmare
+								217222.004,	-- Thorns of the Risen Nightmare
+							}},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = {{"select","itemID",
+								217226.004,	-- Screaming Torchfiend's Binding
+								217229.004,	-- Screaming Torchfiend's Blazewraps
+								217228.004,	-- Screaming Torchfiend's Burning Scowl
+								217227.004,	-- Screaming Torchfiend's Grasp
+								217230.004,	-- Screaming Torchfiend's Horned Memento
+							}},
+						}),
+						cl(DRUID, {
+							["sym"] = {{"select","itemID",
+								217193.004,	-- Bough of the Autumn Blaze
+								217191.004,	-- Chestroots of the Autumn Blaze
+								217192.004,	-- Handguards of the Autumn Blaze
+								217195.004,	-- Mantle of the Autumn Blaze
+								217194.004,	-- Pants of the Autumn Blaze
+							}},
+						}),
+						cl(EVOKER, {
+							["sym"] = {{"select","itemID",
+								217178.004,	-- Crown of the Awakened
+								217177.004,	-- Gauntlets of the Awakened
+								217176.004,	-- Hauberk of the Awakened
+								217179.004,	-- Legguards of the Awakened
+								217180.004,	-- Talons of the Awakened
+							}},
+						}),
+						cl(HUNTER, {
+							["sym"] = {{"select","itemID",
+								217181.004,	-- Stormwing Harrier's Cuirass
+								217184.004,	-- Stormwing Harrier's Greaves
+								217182.004,	-- Stormwing Harrier's Handguards
+								217185.004,	-- Stormwing Harrier's Pinions
+								217183.004,	-- Stormwing Harrier's Skullmask
+							}},
+						}),
+						cl(MAGE, {
+							["sym"] = {{"select","itemID",
+								217232.004,	-- Wayward Chronomancer's Chronocap
+								217231.004,	-- Wayward Chronomancer's Gloves
+								217234.004,	-- Wayward Chronomancer's Metronomes
+								217233.004,	-- Wayward Chronomancer's Pantaloons
+								217235.004,	-- Wayward Chronomancer's Patchwork
+							}},
+						}),
+						cl(MONK, {
+							["sym"] = {{"select","itemID",
+								217186.004,	-- Chestwrap of the Waking Fist
+								217188.004,	-- Gaze of the Waking Fist
+								217189.004,	-- Legguards of the Waking Fist
+								217190.004,	-- Mantle of the Waking Fist
+								217187.004,	-- Palms of the Waking Fist
+							}},
+						}),
+						cl(PALADIN, {
+							["sym"] = {{"select","itemID",
+								217196.004,	-- Heartfire Sentinel's Brigandine
+								217199.004,	-- Heartfire Sentinel's Faulds
+								217198.004,	-- Heartfire Sentinel's Forgehelm
+								217197.004,	-- Heartfire Sentinel's Protectors
+								217200.004,	-- Heartfire Sentinel's Steelwings
+							}},
+						}),
+						cl(PRIEST, {
+							["sym"] = {{"select","itemID",
+								217203.004,	-- Breeches of the Furnace Seraph
+								217205.004,	-- Command of the Furnace Seraph
+								217204.004,	-- Devotion of the Furnace Seraph
+								217201.004,	-- Grasp of the Furnace Seraph
+								217202.004,	-- Mask of the Furnace Seraph
+							}},
+						}),
+						cl(ROGUE, {
+							["sym"] = {{"select","itemID",
+								217206.004,	-- Lurking Specter's Brigandine
+								217207.004,	-- Lurking Specter's Handgrips
+								217210.004,	-- Lurking Specter's Shoulderblades
+								217209.004,	-- Lurking Specter's Tights
+								217208.004,	-- Lurking Specter's Visage
+							}},
+						}),
+						cl(SHAMAN, {
+							["sym"] = {{"select","itemID",
+								217240.004,	-- Greatwolf Outcast's Companions
+								217239.004,	-- Greatwolf Outcast's Fur-Lined Kilt
+								217237.004,	-- Greatwolf Outcast's Grips
+								217236.004,	-- Greatwolf Outcast's Harness
+								217238.004,	-- Greatwolf Outcast's Jaws
+							}},
+						}),
+						cl(WARLOCK, {
+							["sym"] = {{"select","itemID",
+								217214.004,	-- Amice of the Sinister Savant
+								217215.004,	-- Cursed Robes of the Sinister Savant
+								217212.004,	-- Grimhorns of the Sinister Savant
+								217211.004,	-- Grips of the Sinister Savant
+								217213.004,	-- Leggings of the Sinister Savant
+							}},
+						}),
+						cl(WARRIOR, {
+							["sym"] = {{"select","itemID",
+								217216.004,	-- Battlechest of the Onyx Crucible
+								217217.004,	-- Handguards of the Onyx Crucible
+								217219.004,	-- Legplates of the Onyx Crucible
+								217220.004,	-- Pauldrons of the Onyx Crucible
+								217218.004,	-- Thraexhelm of the Onyx Crucible
+							}},
+						}),
+					}),
+				}),
+				d(DIFFICULTY.RAID.NORMAL, {
+					["description"] = "",
+					["g"] = bubbleDown({ ["modID"] = 3 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = {{"select","itemID",
+								217221.003,	-- Casket of the Risen Nightmare
+								217224.003,	-- Greaves of the Risen Nightmare
+								217223.003,	-- Piercing Gaze of the Risen Nightmare
+								217225.003,	-- Skewers of the Risen Nightmare
+								217222.003,	-- Thorns of the Risen Nightmare
+							}},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = {{"select","itemID",
+								217226.003,	-- Screaming Torchfiend's Binding
+								217229.003,	-- Screaming Torchfiend's Blazewraps
+								217228.003,	-- Screaming Torchfiend's Burning Scowl
+								217227.003,	-- Screaming Torchfiend's Grasp
+								217230.003,	-- Screaming Torchfiend's Horned Memento
+							}},
+						}),
+						cl(DRUID, {
+							["sym"] = {{"select","itemID",
+								217193.003,	-- Bough of the Autumn Blaze
+								217191.003,	-- Chestroots of the Autumn Blaze
+								217192.003,	-- Handguards of the Autumn Blaze
+								217195.003,	-- Mantle of the Autumn Blaze
+								217194.003,	-- Pants of the Autumn Blaze
+							}},
+						}),
+						cl(EVOKER, {
+							["sym"] = {{"select","itemID",
+								217178.003,	-- Crown of the Awakened
+								217177.003,	-- Gauntlets of the Awakened
+								217176.003,	-- Hauberk of the Awakened
+								217179.003,	-- Legguards of the Awakened
+								217180.003,	-- Talons of the Awakened
+							}},
+						}),
+						cl(HUNTER, {
+							["sym"] = {{"select","itemID",
+								217181.003,	-- Stormwing Harrier's Cuirass
+								217184.003,	-- Stormwing Harrier's Greaves
+								217182.003,	-- Stormwing Harrier's Handguards
+								217185.003,	-- Stormwing Harrier's Pinions
+								217183.003,	-- Stormwing Harrier's Skullmask
+							}},
+						}),
+						cl(MAGE, {
+							["sym"] = {{"select","itemID",
+								217232.003,	-- Wayward Chronomancer's Chronocap
+								217231.003,	-- Wayward Chronomancer's Gloves
+								217234.003,	-- Wayward Chronomancer's Metronomes
+								217233.003,	-- Wayward Chronomancer's Pantaloons
+								217235.003,	-- Wayward Chronomancer's Patchwork
+							}},
+						}),
+						cl(MONK, {
+							["sym"] = {{"select","itemID",
+								217186.003,	-- Chestwrap of the Waking Fist
+								217188.003,	-- Gaze of the Waking Fist
+								217189.003,	-- Legguards of the Waking Fist
+								217190.003,	-- Mantle of the Waking Fist
+								217187.003,	-- Palms of the Waking Fist
+							}},
+						}),
+						cl(PALADIN, {
+							["sym"] = {{"select","itemID",
+								217196.003,	-- Heartfire Sentinel's Brigandine
+								217199.003,	-- Heartfire Sentinel's Faulds
+								217198.003,	-- Heartfire Sentinel's Forgehelm
+								217197.003,	-- Heartfire Sentinel's Protectors
+								217200.003,	-- Heartfire Sentinel's Steelwings
+							}},
+						}),
+						cl(PRIEST, {
+							["sym"] = {{"select","itemID",
+								217203.003,	-- Breeches of the Furnace Seraph
+								217205.003,	-- Command of the Furnace Seraph
+								217204.003,	-- Devotion of the Furnace Seraph
+								217201.003,	-- Grasp of the Furnace Seraph
+								217202.003,	-- Mask of the Furnace Seraph
+							}},
+						}),
+						cl(ROGUE, {
+							["sym"] = {{"select","itemID",
+								217206.003,	-- Lurking Specter's Brigandine
+								217207.003,	-- Lurking Specter's Handgrips
+								217210.003,	-- Lurking Specter's Shoulderblades
+								217209.003,	-- Lurking Specter's Tights
+								217208.003,	-- Lurking Specter's Visage
+							}},
+						}),
+						cl(SHAMAN, {
+							["sym"] = {{"select","itemID",
+								217240.003,	-- Greatwolf Outcast's Companions
+								217239.003,	-- Greatwolf Outcast's Fur-Lined Kilt
+								217237.003,	-- Greatwolf Outcast's Grips
+								217236.003,	-- Greatwolf Outcast's Harness
+								217238.003,	-- Greatwolf Outcast's Jaws
+							}},
+						}),
+						cl(WARLOCK, {
+							["sym"] = {{"select","itemID",
+								217214.003,	-- Amice of the Sinister Savant
+								217215.003,	-- Cursed Robes of the Sinister Savant
+								217212.003,	-- Grimhorns of the Sinister Savant
+								217211.003,	-- Grips of the Sinister Savant
+								217213.003,	-- Leggings of the Sinister Savant
+							}},
+						}),
+						cl(WARRIOR, {
+							["sym"] = {{"select","itemID",
+								217216.003,	-- Battlechest of the Onyx Crucible
+								217217.003,	-- Handguards of the Onyx Crucible
+								217219.003,	-- Legplates of the Onyx Crucible
+								217220.003,	-- Pauldrons of the Onyx Crucible
+								217218.003,	-- Thraexhelm of the Onyx Crucible
+							}},
+						}),
+					}),
+				}),
+				d(DIFFICULTY.RAID.HEROIC, {
+					["description"] = "",
+					["g"] = bubbleDown({ ["modID"] = 5 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = {{"select","itemID",
+								217221.005,	-- Casket of the Risen Nightmare
+								217224.005,	-- Greaves of the Risen Nightmare
+								217223.005,	-- Piercing Gaze of the Risen Nightmare
+								217225.005,	-- Skewers of the Risen Nightmare
+								217222.005,	-- Thorns of the Risen Nightmare
+							}},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = {{"select","itemID",
+								217226.005,	-- Screaming Torchfiend's Binding
+								217229.005,	-- Screaming Torchfiend's Blazewraps
+								217228.005,	-- Screaming Torchfiend's Burning Scowl
+								217227.005,	-- Screaming Torchfiend's Grasp
+								217230.005,	-- Screaming Torchfiend's Horned Memento
+							}},
+						}),
+						cl(DRUID, {
+							["sym"] = {{"select","itemID",
+								217193.005,	-- Bough of the Autumn Blaze
+								217191.005,	-- Chestroots of the Autumn Blaze
+								217192.005,	-- Handguards of the Autumn Blaze
+								217195.005,	-- Mantle of the Autumn Blaze
+								217194.005,	-- Pants of the Autumn Blaze
+							}},
+						}),
+						cl(EVOKER, {
+							["sym"] = {{"select","itemID",
+								217178.005,	-- Crown of the Awakened
+								217177.005,	-- Gauntlets of the Awakened
+								217176.005,	-- Hauberk of the Awakened
+								217179.005,	-- Legguards of the Awakened
+								217180.005,	-- Talons of the Awakened
+							}},
+						}),
+						cl(HUNTER, {
+							["sym"] = {{"select","itemID",
+								217181.005,	-- Stormwing Harrier's Cuirass
+								217184.005,	-- Stormwing Harrier's Greaves
+								217182.005,	-- Stormwing Harrier's Handguards
+								217185.005,	-- Stormwing Harrier's Pinions
+								217183.005,	-- Stormwing Harrier's Skullmask
+							}},
+						}),
+						cl(MAGE, {
+							["sym"] = {{"select","itemID",
+								217232.005,	-- Wayward Chronomancer's Chronocap
+								217231.005,	-- Wayward Chronomancer's Gloves
+								217234.005,	-- Wayward Chronomancer's Metronomes
+								217233.005,	-- Wayward Chronomancer's Pantaloons
+								217235.005,	-- Wayward Chronomancer's Patchwork
+							}},
+						}),
+						cl(MONK, {
+							["sym"] = {{"select","itemID",
+								217186.005,	-- Chestwrap of the Waking Fist
+								217188.005,	-- Gaze of the Waking Fist
+								217189.005,	-- Legguards of the Waking Fist
+								217190.005,	-- Mantle of the Waking Fist
+								217187.005,	-- Palms of the Waking Fist
+							}},
+						}),
+						cl(PALADIN, {
+							["sym"] = {{"select","itemID",
+								217196.005,	-- Heartfire Sentinel's Brigandine
+								217199.005,	-- Heartfire Sentinel's Faulds
+								217198.005,	-- Heartfire Sentinel's Forgehelm
+								217197.005,	-- Heartfire Sentinel's Protectors
+								217200.005,	-- Heartfire Sentinel's Steelwings
+							}},
+						}),
+						cl(PRIEST, {
+							["sym"] = {{"select","itemID",
+								217203.005,	-- Breeches of the Furnace Seraph
+								217205.005,	-- Command of the Furnace Seraph
+								217204.005,	-- Devotion of the Furnace Seraph
+								217201.005,	-- Grasp of the Furnace Seraph
+								217202.005,	-- Mask of the Furnace Seraph
+							}},
+						}),
+						cl(ROGUE, {
+							["sym"] = {{"select","itemID",
+								217206.005,	-- Lurking Specter's Brigandine
+								217207.005,	-- Lurking Specter's Handgrips
+								217210.005,	-- Lurking Specter's Shoulderblades
+								217209.005,	-- Lurking Specter's Tights
+								217208.005,	-- Lurking Specter's Visage
+							}},
+						}),
+						cl(SHAMAN, {
+							["sym"] = {{"select","itemID",
+								217240.005,	-- Greatwolf Outcast's Companions
+								217239.005,	-- Greatwolf Outcast's Fur-Lined Kilt
+								217237.005,	-- Greatwolf Outcast's Grips
+								217236.005,	-- Greatwolf Outcast's Harness
+								217238.005,	-- Greatwolf Outcast's Jaws
+							}},
+						}),
+						cl(WARLOCK, {
+							["sym"] = {{"select","itemID",
+								217214.005,	-- Amice of the Sinister Savant
+								217215.005,	-- Cursed Robes of the Sinister Savant
+								217212.005,	-- Grimhorns of the Sinister Savant
+								217211.005,	-- Grips of the Sinister Savant
+								217213.005,	-- Leggings of the Sinister Savant
+							}},
+						}),
+						cl(WARRIOR, {
+							["sym"] = {{"select","itemID",
+								217216.005,	-- Battlechest of the Onyx Crucible
+								217217.005,	-- Handguards of the Onyx Crucible
+								217219.005,	-- Legplates of the Onyx Crucible
+								217220.005,	-- Pauldrons of the Onyx Crucible
+								217218.005,	-- Thraexhelm of the Onyx Crucible
+							}},
+						}),
+					}),
+				}),
+				d(DIFFICULTY.RAID.MYTHIC, {
+					["description"] = "",
+					["g"] = bubbleDown({ ["modID"] = 6 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = {{"select","itemID",
+								217221.006,	-- Casket of the Risen Nightmare
+								217224.006,	-- Greaves of the Risen Nightmare
+								217223.006,	-- Piercing Gaze of the Risen Nightmare
+								217225.006,	-- Skewers of the Risen Nightmare
+								217222.006,	-- Thorns of the Risen Nightmare
+							}},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = {{"select","itemID",
+								217226.006,	-- Screaming Torchfiend's Binding
+								217229.006,	-- Screaming Torchfiend's Blazewraps
+								217228.006,	-- Screaming Torchfiend's Burning Scowl
+								217227.006,	-- Screaming Torchfiend's Grasp
+								217230.006,	-- Screaming Torchfiend's Horned Memento
+							}},
+						}),
+						cl(DRUID, {
+							["sym"] = {{"select","itemID",
+								217193.006,	-- Bough of the Autumn Blaze
+								217191.006,	-- Chestroots of the Autumn Blaze
+								217192.006,	-- Handguards of the Autumn Blaze
+								217195.006,	-- Mantle of the Autumn Blaze
+								217194.006,	-- Pants of the Autumn Blaze
+							}},
+						}),
+						cl(EVOKER, {
+							["sym"] = {{"select","itemID",
+								217178.006,	-- Crown of the Awakened
+								217177.006,	-- Gauntlets of the Awakened
+								217176.006,	-- Hauberk of the Awakened
+								217179.006,	-- Legguards of the Awakened
+								217180.006,	-- Talons of the Awakened
+							}},
+						}),
+						cl(HUNTER, {
+							["sym"] = {{"select","itemID",
+								217181.006,	-- Stormwing Harrier's Cuirass
+								217184.006,	-- Stormwing Harrier's Greaves
+								217182.006,	-- Stormwing Harrier's Handguards
+								217185.006,	-- Stormwing Harrier's Pinions
+								217183.006,	-- Stormwing Harrier's Skullmask
+							}},
+						}),
+						cl(MAGE, {
+							["sym"] = {{"select","itemID",
+								217232.006,	-- Wayward Chronomancer's Chronocap
+								217231.006,	-- Wayward Chronomancer's Gloves
+								217234.006,	-- Wayward Chronomancer's Metronomes
+								217233.006,	-- Wayward Chronomancer's Pantaloons
+								217235.006,	-- Wayward Chronomancer's Patchwork
+							}},
+						}),
+						cl(MONK, {
+							["sym"] = {{"select","itemID",
+								217186.006,	-- Chestwrap of the Waking Fist
+								217188.006,	-- Gaze of the Waking Fist
+								217189.006,	-- Legguards of the Waking Fist
+								217190.006,	-- Mantle of the Waking Fist
+								217187.006,	-- Palms of the Waking Fist
+							}},
+						}),
+						cl(PALADIN, {
+							["sym"] = {{"select","itemID",
+								217196.006,	-- Heartfire Sentinel's Brigandine
+								217199.006,	-- Heartfire Sentinel's Faulds
+								217198.006,	-- Heartfire Sentinel's Forgehelm
+								217197.006,	-- Heartfire Sentinel's Protectors
+								217200.006,	-- Heartfire Sentinel's Steelwings
+							}},
+						}),
+						cl(PRIEST, {
+							["sym"] = {{"select","itemID",
+								217203.006,	-- Breeches of the Furnace Seraph
+								217205.006,	-- Command of the Furnace Seraph
+								217204.006,	-- Devotion of the Furnace Seraph
+								217201.006,	-- Grasp of the Furnace Seraph
+								217202.006,	-- Mask of the Furnace Seraph
+							}},
+						}),
+						cl(ROGUE, {
+							["sym"] = {{"select","itemID",
+								217206.006,	-- Lurking Specter's Brigandine
+								217207.006,	-- Lurking Specter's Handgrips
+								217210.006,	-- Lurking Specter's Shoulderblades
+								217209.006,	-- Lurking Specter's Tights
+								217208.006,	-- Lurking Specter's Visage
+							}},
+						}),
+						cl(SHAMAN, {
+							["sym"] = {{"select","itemID",
+								217240.006,	-- Greatwolf Outcast's Companions
+								217239.006,	-- Greatwolf Outcast's Fur-Lined Kilt
+								217237.006,	-- Greatwolf Outcast's Grips
+								217236.006,	-- Greatwolf Outcast's Harness
+								217238.006,	-- Greatwolf Outcast's Jaws
+							}},
+						}),
+						cl(WARLOCK, {
+							["sym"] = {{"select","itemID",
+								217214.006,	-- Amice of the Sinister Savant
+								217215.006,	-- Cursed Robes of the Sinister Savant
+								217212.006,	-- Grimhorns of the Sinister Savant
+								217211.006,	-- Grips of the Sinister Savant
+								217213.006,	-- Leggings of the Sinister Savant
+							}},
+						}),
+						cl(WARRIOR, {
+							["sym"] = {{"select","itemID",
+								217216.006,	-- Battlechest of the Onyx Crucible
+								217217.006,	-- Handguards of the Onyx Crucible
+								217219.006,	-- Legplates of the Onyx Crucible
+								217220.006,	-- Pauldrons of the Onyx Crucible
+								217218.006,	-- Thraexhelm of the Onyx Crucible
+							}},
+						}),
+					}),
+				}),
+			})),
 			pvp(header(HEADERS.Achievement, SEASON_OBSIDIAN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
 					cl(DEATHKNIGHT, {
@@ -2194,6 +2684,197 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(207184),	-- Molten Vanguard's Greatboots
 							i(207177),	-- Molten Vanguard's Manacles
 							i(207176),	-- Molten Vanguard's Thermal Cape
+						}),
+					},
+				})),
+			}))),
+			pvp(header(HEADERS.Achievement, SEASON_DRACONIC_PVP, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
+					cl(DEATHKNIGHT, {
+						i(217221),	-- Casket of the Risen Nightmare
+						i(217224),	-- Greaves of the Risen Nightmare
+						i(217223),	-- Piercing Gaze of the Risen Nightmare
+						i(217225),	-- Skewers of the Risen Nightmare
+						i(217222),	-- Thorns of the Risen Nightmare
+					}),
+					cl(DEMONHUNTER, {
+						i(217226),	-- Screaming Torchfiend's Binding
+						i(217229),	-- Screaming Torchfiend's Blazewraps
+						i(217228),	-- Screaming Torchfiend's Burning Scowl
+						i(217227),	-- Screaming Torchfiend's Grasp
+						i(217230),	-- Screaming Torchfiend's Horned Memento
+					}),
+					cl(DRUID, {
+						i(217193),	-- Bough of the Autumn Blaze
+						i(217191),	-- Chestroots of the Autumn Blaze
+						i(217192),	-- Handguards of the Autumn Blaze
+						i(217195),	-- Mantle of the Autumn Blaze
+						i(217194),	-- Pants of the Autumn Blaze
+					}),
+					cl(EVOKER, {
+						i(217178),	-- Crown of the Awakened
+						i(217177),	-- Gauntlets of the Awakened
+						i(217176),	-- Hauberk of the Awakened
+						i(217179),	-- Legguards of the Awakened
+						i(217180),	-- Talons of the Awakened
+					}),
+					cl(HUNTER, {
+						i(217181),	-- Stormwing Harrier's Cuirass
+						i(217184),	-- Stormwing Harrier's Greaves
+						i(217182),	-- Stormwing Harrier's Handguards
+						i(217185),	-- Stormwing Harrier's Pinions
+						i(217183),	-- Stormwing Harrier's Skullmask
+					}),
+					cl(MAGE, {
+						i(217232),	-- Wayward Chronomancer's Chronocap
+						i(217231),	-- Wayward Chronomancer's Gloves
+						i(217234),	-- Wayward Chronomancer's Metronomes
+						i(217233),	-- Wayward Chronomancer's Pantaloons
+						i(217235),	-- Wayward Chronomancer's Patchwork
+					}),
+					cl(MONK, {
+						i(217186),	-- Chestwrap of the Waking Fist
+						i(217188),	-- Gaze of the Waking Fist
+						i(217189),	-- Legguards of the Waking Fist
+						i(217190),	-- Mantle of the Waking Fist
+						i(217187),	-- Palms of the Waking Fist
+					}),
+					cl(PALADIN, {
+						i(217196),	-- Heartfire Sentinel's Brigandine
+						i(217199),	-- Heartfire Sentinel's Faulds
+						i(217198),	-- Heartfire Sentinel's Forgehelm
+						i(217197),	-- Heartfire Sentinel's Protectors
+						i(217200),	-- Heartfire Sentinel's Steelwings
+					}),
+					cl(PRIEST, {
+						i(217203),	-- Breeches of the Furnace Seraph
+						i(217205),	-- Command of the Furnace Seraph
+						i(217204),	-- Devotion of the Furnace Seraph
+						i(217201),	-- Grasp of the Furnace Seraph
+						i(217202),	-- Mask of the Furnace Seraph
+					}),
+					cl(ROGUE, {
+						i(217206),	-- Lurking Specter's Brigandine
+						i(217207),	-- Lurking Specter's Handgrips
+						i(217210),	-- Lurking Specter's Shoulderblades
+						i(217209),	-- Lurking Specter's Tights
+						i(217208),	-- Lurking Specter's Visage
+					}),
+					cl(SHAMAN, {
+						i(217240),	-- Greatwolf Outcast's Companions
+						i(217239),	-- Greatwolf Outcast's Fur-Lined Kilt
+						i(217237),	-- Greatwolf Outcast's Grips
+						i(217236),	-- Greatwolf Outcast's Harness
+						i(217238),	-- Greatwolf Outcast's Jaws
+					}),
+					cl(WARLOCK, {
+						i(217214),	-- Amice of the Sinister Savant
+						i(217215),	-- Cursed Robes of the Sinister Savant
+						i(217212),	-- Grimhorns of the Sinister Savant
+						i(217211),	-- Grips of the Sinister Savant
+						i(217213),	-- Leggings of the Sinister Savant
+					}),
+					cl(WARRIOR, {
+						i(217216),	-- Battlechest of the Onyx Crucible
+						i(217217),	-- Handguards of the Onyx Crucible
+						i(217219),	-- Legplates of the Onyx Crucible
+						i(217220),	-- Pauldrons of the Onyx Crucible
+						i(217218),	-- Thraexhelm of the Onyx Crucible
+					}),
+				})),
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
+					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["groups"] = {
+						cl(DEATHKNIGHT, {
+							i(217221),	-- Casket of the Risen Nightmare
+							i(217224),	-- Greaves of the Risen Nightmare
+							i(217223),	-- Piercing Gaze of the Risen Nightmare
+							i(217225),	-- Skewers of the Risen Nightmare
+							i(217222),	-- Thorns of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(217226),	-- Screaming Torchfiend's Binding
+							i(217229),	-- Screaming Torchfiend's Blazewraps
+							i(217228),	-- Screaming Torchfiend's Burning Scowl
+							i(217227),	-- Screaming Torchfiend's Grasp
+							i(217230),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {
+							i(217193),	-- Bough of the Autumn Blaze
+							i(217191),	-- Chestroots of the Autumn Blaze
+							i(217192),	-- Handguards of the Autumn Blaze
+							i(217195),	-- Mantle of the Autumn Blaze
+							i(217194),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(217178),	-- Crown of the Awakened
+							i(217177),	-- Gauntlets of the Awakened
+							i(217176),	-- Hauberk of the Awakened
+							i(217179),	-- Legguards of the Awakened
+							i(217180),	-- Talons of the Awakened
+						}),
+						cl(HUNTER, {
+							i(217181),	-- Stormwing Harrier's Cuirass
+							i(217184),	-- Stormwing Harrier's Greaves
+							i(217182),	-- Stormwing Harrier's Handguards
+							i(217185),	-- Stormwing Harrier's Pinions
+							i(217183),	-- Stormwing Harrier's Skullmask
+						}),
+						cl(MAGE, {
+							i(217232),	-- Wayward Chronomancer's Chronocap
+							i(217231),	-- Wayward Chronomancer's Gloves
+							i(217234),	-- Wayward Chronomancer's Metronomes
+							i(217233),	-- Wayward Chronomancer's Pantaloons
+							i(217235),	-- Wayward Chronomancer's Patchwork
+						}),
+						cl(MONK, {
+							i(217186),	-- Chestwrap of the Waking Fist
+							i(217188),	-- Gaze of the Waking Fist
+							i(217189),	-- Legguards of the Waking Fist
+							i(217190),	-- Mantle of the Waking Fist
+							i(217187),	-- Palms of the Waking Fist
+						}),
+						cl(PALADIN, {
+							i(217196),	-- Heartfire Sentinel's Brigandine
+							i(217199),	-- Heartfire Sentinel's Faulds
+							i(217198),	-- Heartfire Sentinel's Forgehelm
+							i(217197),	-- Heartfire Sentinel's Protectors
+							i(217200),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(217203),	-- Breeches of the Furnace Seraph
+							i(217205),	-- Command of the Furnace Seraph
+							i(217204),	-- Devotion of the Furnace Seraph
+							i(217201),	-- Grasp of the Furnace Seraph
+							i(217202),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(217206),	-- Lurking Specter's Brigandine
+							i(217207),	-- Lurking Specter's Handgrips
+							i(217210),	-- Lurking Specter's Shoulderblades
+							i(217209),	-- Lurking Specter's Tights
+							i(217208),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(217240),	-- Greatwolf Outcast's Companions
+							i(217239),	-- Greatwolf Outcast's Fur-Lined Kilt
+							i(217237),	-- Greatwolf Outcast's Grips
+							i(217236),	-- Greatwolf Outcast's Harness
+							i(217238),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {
+							i(217214),	-- Amice of the Sinister Savant
+							i(217215),	-- Cursed Robes of the Sinister Savant
+							i(217212),	-- Grimhorns of the Sinister Savant
+							i(217211),	-- Grips of the Sinister Savant
+							i(217213),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(217216),	-- Battlechest of the Onyx Crucible
+							i(217217),	-- Handguards of the Onyx Crucible
+							i(217219),	-- Legplates of the Onyx Crucible
+							i(217220),	-- Pauldrons of the Onyx Crucible
+							i(217218),	-- Thraexhelm of the Onyx Crucible
 						}),
 					},
 				})),
