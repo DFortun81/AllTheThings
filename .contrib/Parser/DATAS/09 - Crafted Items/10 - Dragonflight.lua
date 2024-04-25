@@ -3059,6 +3059,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
 			FirstSkin(74225, 190986),	-- Skinning Battlehorn Pyrhus
+			FirstSkin(74217, 193177),	-- Skinning Beakers
 			FirstSkin(74174, 193168),	-- Skinning Biryuk
 			FirstSkin(74122, 197353),	-- Skinning Blisterhide
 			FirstSkin(74141, 190907),	-- Skinning Blitztusk (Grand Hunt)
