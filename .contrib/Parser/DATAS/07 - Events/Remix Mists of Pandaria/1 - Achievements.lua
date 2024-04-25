@@ -28,8 +28,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			title(551),	-- Timerunner (TITLE!)
 			i(208555),	-- Timerunner's Idol
 		}),
-		ach(40226, {	-- Realm First! Timerunner
-			title(539),	-- Mistrunner (TITLE!)
-		}),
+		-- TODO: Missing in latest PTR, confirm this has become NYI?
+		-- ach(40226, {	-- Realm First! Timerunner
+		-- 	title(539),	-- Mistrunner (TITLE!)
+		-- }),
 	}),
 }))));
