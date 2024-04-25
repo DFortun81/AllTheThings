@@ -2018,7 +2018,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/4 Intact Makrura Eye
 							["provider"] = { "i", 4887 },	-- Intact Makrura Eye
-							["cr"] = 3103,	-- Makrura Clacker
+							["crs"] = {
+								3103,	-- Makrura Clacker
+								3104,	-- Makrura Shellhide
+								3105,	-- Makrura Snapclaw
+								3141,	-- Makrura Elder
+							},
 						}),
 						objective(2, {	-- 0/8 Crawler Mucus
 							["provider"] = { "i", 4888 },	-- Crawler Mucus

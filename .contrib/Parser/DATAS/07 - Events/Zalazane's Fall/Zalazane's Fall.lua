@@ -75,7 +75,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 			}),
 			q(25470, {	-- Lady Of Da Tigers
 				["qg"] = 40184,	-- Vanira
-				["sourceQuest"] = 25446,	-- Frogs Away!
+				["sourceQuest"] = 25461,	-- Trollin' For Volunteers
 				["coord"] = { 57.5, 72.5, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -96,7 +96,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 			}),
 			q(25461, {	-- Trollin' For Volunteers
 				["qg"] = 40253,	-- Champion Uru'zin
-				["sourceQuest"] = 25480,	-- Dance Of De Spirits
+				["sourceQuest"] = 25446,	-- Frogs Away!
 				["coord"] = { 57.8, 73.0, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
