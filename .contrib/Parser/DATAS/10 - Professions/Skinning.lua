@@ -223,6 +223,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
 		["sourceQuest"] = 51575,	-- Lost But Not Forgotten
 		["description"] = "Requires 150 Zandalari Skinning to get the item.",
+		["timeline"] = { ADDED_8_0_1 },
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
@@ -232,6 +233,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		["provider"] = { "i", 161424 },	-- Ivory Handled Dagger
 		["sourceQuest"] = 52223,	-- Brinepinch
 		["description"] = "Requires 150 Kul Tiran Skinning to get the item.",
+		["timeline"] = { ADDED_8_0_1 },
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
