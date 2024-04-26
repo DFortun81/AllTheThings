@@ -122,7 +122,6 @@ local function HandleSequenceEvents(sequenceEvents)
 end
 
 app.HandleEvent = function(eventName, ...)
-	print("HandleEvent", eventName);
 	local sequenceEvents = EventSequence[eventName]
 	-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
 	-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
