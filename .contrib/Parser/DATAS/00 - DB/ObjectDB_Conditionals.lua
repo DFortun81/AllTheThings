@@ -12,6 +12,57 @@ researchEquipment.icon = [[~_.asset("Icon_PetFamily_Mechanical")]];
 -- Spirit of the Wolf
 ObjectDB[226469].text.en = [[~GetSpellInfo(154259)]];
 
+-- #if BEFORE WRATH
+ObjectDB[176344] = {
+	readable = "Document Chest",
+	icon = "Interface/Icons/inv_scroll_07",
+	model = 196976,
+	text = {
+		en = "Document Chest",
+		es = "Cofre de documentos",
+		de = "Dokumententruhe",
+		fr = "Coffre de documents",
+		it = "[Document Chest]",
+		pt = "Baú de Documentos",
+		ru = "Ящик с документами",
+		ko = "문서함",
+		cn = "文件箱",
+	},
+};
+ObjectDB[190483] = {
+	readable = "Document Chest",
+	icon = "Interface/Icons/inv_scroll_07",
+	model = 196976,
+	text = {
+		en = "Document Chest",
+		es = "Cofre de documentos",
+		de = "Dokumententruhe",
+		fr = "Coffre de documents",
+		it = "[Document Chest]",
+		pt = "Baú de Documentos",
+		ru = "Ящик с документами",
+		ko = "문서함",
+		cn = "文件箱",
+	},
+};
+ObjectDB[190484] = {
+	readable = "Document Chest",
+	icon = "Interface/Icons/inv_scroll_07",
+	model = 196976,
+	text = {
+		en = "Document Chest",
+		es = "Cofre de documentos",
+		de = "Dokumententruhe",
+		fr = "Coffre de documents",
+		it = "[Document Chest]",
+		pt = "Baú de Documentos",
+		ru = "Ящик с документами",
+		ko = "문서함",
+		cn = "文件箱",
+	},
+};
+-- #endif
+
 -- Altar of Naias (not in WoWHead's DB)
 ObjectDB[181636] = {
 	readable = "Altar of Naias",

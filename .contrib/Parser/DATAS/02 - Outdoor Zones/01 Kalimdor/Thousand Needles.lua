@@ -1079,22 +1079,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Secret Note #1
 							["providers"] = {
-								{ "i", 12765 },	-- Secret Note #1
-								{ "o", 176344 },	-- Document Chest
+								{ "i",  12765 },	-- Secret Note #1
+								{ "o", 176344 },	-- Document Chest #1
 							},
 							["coord"] = { 32, 33, THOUSAND_NEEDLES },
 						}),
 						objective(2, {	-- 0/1 Secret Note #2
 							["providers"] = {
-								{ "i", 12766 },	-- Secret Note #2
-								{ "o", 176344 },	-- Document Chest
+								{ "i",  12766 },	-- Secret Note #2
+								{ "o", 190483 },	-- Document Chest #2
 							},
 							["coord"] = { 34, 39, THOUSAND_NEEDLES },
 						}),
 						objective(3, {	-- 0/1 Secret Note #3
 							["providers"] = {
-								{ "i", 12768 },	-- Secret Note #3
-								{ "o", 176344 },	-- Document Chest
+								{ "i",  12768 },	-- Secret Note #3
+								{ "o", 190484 },	-- Document Chest #3
 							},
 							["coord"] = { 39, 41, THOUSAND_NEEDLES },
 						}),

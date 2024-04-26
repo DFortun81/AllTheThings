@@ -636,8 +636,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Soft-shelled Clam Meat
 							["providers"] = {
-								{ "i", 15924 },	-- Soft-shelled Clam Meat
-								{ "i", 15874 },	-- Soft-shelled Clam
+								{ "i",  15924 },	-- Soft-shelled Clam Meat
+								{ "i",  15874 },	-- Soft-shelled Clam
+								{ "o", 177784 },	-- Giant Softshell Clam
 							},
 							["cr"] = 12347,	-- Enraged Reef Crawler
 						}),
@@ -986,9 +987,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						objective(1, {	-- 0/1 Demon Box
-							["provider"] = { "i", 13542 },	-- Demon Box
+							["providers"] = {
+								{ "i",  13542 },	-- Demon Box
+								{ "i",  14523 },	-- Demon Pick
+								{ "o", 176581 },	-- Hand of Iruxos Crystal
+							},
 							["coord"] = { 55, 26.4, DESOLACE },
-							["cost"] = {{ "i", 14523, 1 }},	-- Demon Pick
 							["cr"] = 11876,	-- Demon Spirit
 						}),
 					},
