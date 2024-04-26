@@ -670,22 +670,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--	},
 					--}),
 					-- Trade Down
-					i(212367, {	-- Clutch of Wyrm's Dreaming Crests
-						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2811/2812
+					i(212367, {	-- Clutch of Wyrm's Awakened Crests
+						["cost"] = {{ "c", 2812, 15 }},	-- Aspect's Awakened Crests x15
 						["g"] = {
-							currency(2810),	-- Wyrm's Awakened Crest (or bugged and should be 2809)
+							currency(2809),	-- Wyrm's Awakened Crest
 						},
 					}),
-					i(211951, {	-- Pouch of Whelpling's Dreaming Crests
-						["cost"] = {{ "c", DRAKES_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2808/2807
+					i(211951, {	-- Pouch of Whelpling's Awakened Crests
+						["cost"] = {{ "c", 2807, 15 }},	-- Drake's Awakened Crests x15
 						["g"] = {
-							currency(2805),	-- Whelpling's Awakened Crest (or bugged and should be 2806)
+							currency(2806),	-- Whelpling's Awakened Crest
 						},
 					}),
-					i(211952, {	-- Satchel of Drake's Dreaming Crests
-						["cost"] = {{ "c", WYRMS_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2810/2809
+					i(211952, {	-- Satchel of Drake's Awakened Crests
+						["cost"] = {{ "c", 2809, 15 }},	-- Wyrm's Awakened Crests x15
 						["g"] = {
-							currency(2808),	-- Drake's Awakened Crest (or bugged and should be 2807)
+							currency(2807),	-- Drake's Awakened Crest
 						},
 					}),
 				},

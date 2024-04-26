@@ -7142,7 +7142,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				------ Crests & Flightstones?? ------
 				i(217412),	-- Blackened Flightstone
-				i(212367),	-- Clutch of Wyrm's Awakened Crests
 				i(220203),	-- Clutch of Wyrm's Dreaming Crests
 				i(217413),	-- Depleted Blackened Flightstone
 				i(217416),	-- Depleted Emerald Flightstone
@@ -7150,7 +7149,6 @@ root(ROOTS.Unsorted, {
 				i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
 				i(217420),	-- Large Pouch of Whelpling's Awakened Crests
 				i(220204),	-- Pouch of Whelpling's Dreaming Crests
-				i(211952),	-- Satchel of Drake's Awakened Crests
 				i(220205),	-- Satchel of Drake's Dreaming Crests
 				i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
 				i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
