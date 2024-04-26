@@ -7,6 +7,7 @@
 	<Script file="Battle Pets.lua"/>
 	<Script file="Bounty.lua"/>
 	<Script file="Breadcrumbs.lua"/>
+	<Script file="Class Quests.lua"/>
 	<Script file="Dailies.lua"/>
 	<Script file="Exploration.lua"/>
 	<Script file="Factions.lua"/>
