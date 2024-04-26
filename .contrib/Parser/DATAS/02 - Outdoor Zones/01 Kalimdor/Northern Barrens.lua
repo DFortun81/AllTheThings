@@ -2235,7 +2235,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Southsea Treasure
-							["provider"] = { "i", 7968 },	-- Southsea Treasure
+							["providers"] = {
+								{ "i",   7968 },	-- Southsea Treasure
+								{ "o", 123462 },	-- The Jewel of the Southsea
+							},
 							["coord"] = { 64.8, 45.4, THE_BARRENS },
 							["cr"] = 7168,	-- Polly
 						}),

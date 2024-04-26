@@ -1763,9 +1763,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2460, {	-- The Shattered Salute
 					["qg"] = 3401,	-- Shenthul
-					-- #if AFTER TBC
-					["sourceQuest"] = 10794,	-- Rogues of the Shattered Hand
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER TBC
+						10794,	-- Rogues of the Shattered Hand
+						-- #endif
+						2380,	-- To Orgrimmar!
+					},
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -2089,10 +2092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER TBC
 					["altQuests"] = { 10372 },	-- A Discreet Inquiry
 					-- #endif
-					["sourceQuests"] = {
-						2378,	-- Find the Shattered Hand
-						2380,	-- To Orgrimmar!
-					},
+					["sourceQuest"] = 2378,	-- Find the Shattered Hand
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
