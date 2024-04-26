@@ -5343,23 +5343,15 @@ app.events.ADDON_LOADED = function(addonName)
 	if handler then handler(); end
 end
 
-app:RegisterEvent("VARIABLES_LOADED");
-app.events.VARIABLES_LOADED = function()
-	app:StartATTCoroutine("Startup", function()
-		coroutine.yield();
-		
-		-- Execute the OnStartup handlers.
-		app.HandleEvent("OnStartup");
-		
-		-- Prepare the Sound Pack!
-		app.Audio:ReloadSoundPack();
+app.AddEventHandler("OnStartupDone", function()
+	-- Prepare the Sound Pack!
+	app.Audio:ReloadSoundPack();
 
-		-- Execute the OnReady handlers.
-		app.HandleEvent("OnReady");
-		
-		-- Mark that we're ready now!
-		app.IsReady = true;
-	end);
-end
+	-- Execute the OnReady handlers.
+	app.HandleEvent("OnReady");
+	
+	-- Mark that we're ready now!
+	app.IsReady = true;
+end);
 
 app.HandleEvent("OnLoad")
