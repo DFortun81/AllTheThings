@@ -3299,7 +3299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  16745 },	-- Warsong Axe Shipment
 								{ "o", 178204 },	-- Warsong Axe Shipment
 							},
-							["coord"] = { 66.5, 56.9, STRANGLETHORN_VALE },
+							["coord"] = { 25.6, 73.4, STRANGLETHORN_VALE },
 						}),
 						objective(3, {	-- 0/1 Warsong Oil
 							["providers"] = {
