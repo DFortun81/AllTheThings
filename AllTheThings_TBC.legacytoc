@@ -22,7 +22,7 @@ db\RaceDB.lua
 lib\Debugging.lua
 lib\Print.lua
 lib\EventRegistration.lua
-# lib\Runner.lua
+lib\Runner.lua
 lib\Colors.lua
 lib\Sort.lua
 lib\Table.lua
