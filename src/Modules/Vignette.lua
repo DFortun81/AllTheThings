@@ -47,7 +47,9 @@ if C_VignetteInfo then
 	local ReportedVignettes = {};
 	local function AlertForVignetteInfo(info)
 		local link = info.SearchType .. ":" .. info.ID;
+		app.SetSkipLevel(1)
 		local group = app.GetCachedSearchResults(app.SearchForLink, link);
+		app.SetSkipLevel(0)
 		if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and app.IsComplete(group) then return false; end
 		local progressText = group.progressText
 			or GetProgressColorText(group.progress or 0, group.total or 0)

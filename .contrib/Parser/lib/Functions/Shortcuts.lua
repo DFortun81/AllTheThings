@@ -1037,14 +1037,21 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 		-- include o as a separate array so we can list the shared contents/objects separately for easier data application
 		t = { g = appendAllGroups(t, o) };
 	end
+	t.type = "AsGenericObjectContainer"
 	if t.groups or t.g then
 		for i,group in ipairs(t.groups or t.g) do
 			-- first existing objectID value of the sub-groups will be used to show the localized name in-game instead of creating a new custom category as well
 			if group.objectID and not t.objectID then
 				-- is it really this simple
-				return struct("objectID", group.objectID, t);
+				t = struct("objectID", group.objectID, t);
+				break
 			end
 		end
+		-- Now we want the children of these generic groups to be 'special' since they require 'special' logic in the addon
+		for i,group in ipairs(t.groups or t.g) do
+			group.type = "AsSubGenericObject"
+		end
+		return t
 	end
 	print("Could not find a group with an objectID value");
 end
