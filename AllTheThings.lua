@@ -3691,6 +3691,13 @@ local function CleanTop(top, keephash)
 		end
 	end
 end
+local function GetThingSources(field, value)
+	if field == "achievementID" then
+		return SearchForField(field, value)
+	end
+	return app.SearchForLink(field..":"..value)
+end
+
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 app.BuildSourceParent = function(group)
 	-- only show sources for Things or specific of other types
@@ -3711,7 +3718,7 @@ app.BuildSourceParent = function(group)
 
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
-	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
+	local things = specificSource and { group } or GetThingSources(groupKey, keyValue)
 	-- app.PrintDebug("BuildSourceParent",group.hash,thingCheck,specificSource,keyValue,#things)
 	-- if app.Debugging then
 	-- 	local sourceGroup = {
