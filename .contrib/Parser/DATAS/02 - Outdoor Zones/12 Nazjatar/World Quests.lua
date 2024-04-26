@@ -9,7 +9,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(55664, {	-- A Blow to Morale
 				["races"] = HORDE_ONLY,
 			}),
-			q(56036),	-- A Steamy Situation
+			q(56036, {	-- A Steamy Situation
+				["g"] = {
+					i(168666),	-- Hefty Glimmershell (QI!)
+				},
+			}),
 			q(55970),	-- Attrition
 			q(55893),	-- Azanz, the Slitherblade
 			q(57334),	-- Cave of Murlocs
@@ -20,12 +24,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(55888),	-- Champion Qalina, Spear of Ice
 			q(55890),	-- Champion Vyz'olgo the Mind-Taker
 			q(56382),	-- Chomp
-			q(57353),	-- Deepcoil Cleansing
-			q(55973),	-- Deepcoil Experiments
+			q(57353, {	-- Deepcoil Cleansing
+				["g"] = {
+					i(171257),	-- Voidtinged Substance (QI!)
+				},
+			}),
+			q(55973, {	-- Deepcoil Experiments
+				["g"] = {
+					i(168634),	-- Telemancy Beacon (QI!)
+				},
+			}),
 			q(57338),	-- Depopulation Effort
 			q(56032),	-- Dirty Dozen
 			q(56386),	-- Elderspawn of Nalaada
-			q(57340),	-- Fathom Ray Feast
+			q(57340, {	-- Fathom Ray Feast
+				["g"] = {
+					i(171254),	-- Fathom Ray Meat (QI!)
+				},
+			}),
 			q(56391),	-- Frenzied Knifefang
 			q(55895),	-- Frozen Winds of Zhiela
 			q(56392),	-- Giant Opaline Conch
@@ -40,7 +56,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(56025),	-- Leylocked Chest
 			q(56388),	-- Mindshackle
 			q(57335),	-- Murloc Mayhem
-			q(57354),	-- Overdue
+			q(57354, {	-- Overdue
+				["g"] = {
+					i(171262),	-- Shirakess Grimoire (QI!)
+				},
+			}),
 			q(56385),	-- Pearlhusk Crawler
 			q(56381),	-- Prince Wiggletail
 			q(57336),	-- Putting the Past to Rest
@@ -97,13 +117,21 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56022),	-- Runelocked Chest
-			q(57331),	-- Salvage Operations
+			q(57331, {	-- Salvage Operations
+				["g"] = {
+					i(167079),	-- Battered Supplies (QI!)
+				},
+			}),
 			q(56384),	-- Shadowspike Lurker
 			q(56383),	-- Silence
 			q(55899),	-- Starseeker of the Shirakess
 			q(55897),	-- Szun, Breaker of Slaves
 			q(55898),	-- Tempest-Speaker Shalan'ali
-			q(57333),	-- Terrace Terrors
+			q(57333, {	-- Terrace Terrors
+				["g"] = {
+					i(171250),	-- Zanj'ir Armaments (QI!)
+				},
+			}),
 			q(56048),	-- The Drowned Oracles
 			q(55982),	-- The Lords of Water
 			q(55886),	-- The Zanj'ir Brutalizer

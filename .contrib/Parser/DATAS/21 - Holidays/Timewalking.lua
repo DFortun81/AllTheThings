@@ -2685,6 +2685,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_8_2_5 },
 				["g"] = {
+					i(172506),	-- Time-Locked Cinder (QI!)
 					i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
 						["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Chogath or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
 						["sym"] = {{"select","itemID",

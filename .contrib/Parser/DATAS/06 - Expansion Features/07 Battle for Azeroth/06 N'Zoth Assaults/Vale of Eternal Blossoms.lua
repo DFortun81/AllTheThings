@@ -54,12 +54,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 83.7, 27.1, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 156003 },	-- Lorewalker Cho
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(174197),	-- Loremaster's Notebook (QI!)
+							},
 						}),
 						q(58470, {	-- Corrupted Curiosities
 							["coord"] = { 83.7, 27.1, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 156003 },	-- Lorewalker Cho
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 							["g"] = {
+								i(174744),	-- Artifact of the Black Empire (QI!)
 								n(-851, {	-- Black Empire Cache placeholder
 									["coords"] = {
 										{ 52.7, 39.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- 57197
@@ -185,6 +189,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 83.7, 27.1, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 156003 },	-- Lorewalker Cho
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(174196),	-- Tome of Ancient Madness (QI!)
+							},
 						}),
 						q(58462, {	-- Windows to the Soul
 							["coord"] = { 83.8, 48.9, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -373,6 +380,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 43.8, 71.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 154677 },	-- Forgemaster Han <Repairs>
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(174747),	-- Mogu Armament (QI!)
+							},
 						}),
 						q(58479, {	-- Lightning Crashes
 							["coord"] = { 44.7, 73.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -414,6 +424,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 43.9, 71.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 154677 },	-- Forgemaster Han
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(172463),	-- Salvaged Mogu Armor (QI!)
+							},
 						}),
 						q(58740, {	-- Subjugated Serpents
 							["coord"] = { 38.4, 75.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -424,6 +437,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 44.7, 73.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(174210),	-- Anima Globule (QI!)
+							},
 						}),
 					})),
 					-- Common Items
@@ -615,6 +631,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["isWeekly"] = true,
 				["isWorldQuest"] = true,
 				["g"] = {
+					i(169888),	-- Ooze-covered Amber (QI!)
 					n(QUESTS, {
 						-- Assault questline
 						q(56574, {	-- Reflections in Amber
@@ -652,6 +669,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 43.8, 71.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 154677 },	-- Forgemaster Han <Repairs>
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(174762),	-- Amber Blade (QI!)
+							},
 						}),
 						q(58754, {	-- Champions of the Swarm
 							["coord"] = { 44.7, 73.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -692,6 +712,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 38.4, 75.1, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 158673 },	-- Kun Autumnlight
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(174763),	-- Golden Lotus Supplies (QI!)
+							},
 						}),
 						q(58762, {	-- Taken by the Swarm
 							["coord"] = { 38.4, 75.1, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -918,12 +941,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["coord"] = { 83.7, 27.1, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
 						["sourceQuest"] = 56538,	-- Clans of the Mogu
+						["g"] = {
+							i(170384),	-- Mogu Scouting Report (QI!)
+						},
 					}),
 					q(56540, {	-- Proof of Tenacity
 						["coord"] = { 44.7, 73.9, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						["g"] = {
+							i(170385),	-- Conqueror's Trophy (QI!)
 							-- Plate
 							i(173837),	-- Malignant Leviathan's Hauberk
 							i(173836),	-- Malignant Leviathan's Helm

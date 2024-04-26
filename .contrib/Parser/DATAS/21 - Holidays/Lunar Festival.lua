@@ -197,6 +197,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
+				i(170278),	-- Flower of Fortitude (QI!)
+				i(170279),	-- Flower of Sincerity (QI!)
+				i(170280),	-- Flower of Vigor (QI!)
 				i(170205, {	-- Crown of Boundless Courage
 					["timeline"] = { ADDED_8_3_0 },
 				}),
@@ -209,6 +212,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
+				i(170296),	-- Flower of Compassion (QI!)
+				i(170298),	-- Flower of Reflection (QI!)
+				i(170308),	-- Flower of Solemnity (QI!)
 				i(170207, {	-- Crown of Eternal Memorial
 					["timeline"] = { ADDED_8_3_0 },
 				}),
@@ -254,6 +260,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
+				i(170283),	-- Flower of Felicity (QI!)
+				i(170282),	-- Flower of Peace (QI!)
+				i(170281),	-- Flower of Wealth (QI!)
 				i(170206, {	-- Crown of Infinite Prosperity
 					["timeline"] = { ADDED_8_3_0 },
 				}),
@@ -443,6 +452,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
+			["g"] = {
+				i(170084),	-- Blessed Staff of Moonflowers (QI!)
+				i(170083),	-- Staff of Moonflowers (QI!)
+			},
 		}),
 		q(8876, {	-- Small Rockets
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>

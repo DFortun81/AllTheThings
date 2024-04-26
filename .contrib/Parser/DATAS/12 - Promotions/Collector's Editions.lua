@@ -458,6 +458,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
 						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
 						["groups"] = {
+							i(172954),	-- Echo of Mortality (QI!)
 							i(172075),	-- Eternal Traveler's Guise
 							i(172076),	-- Eternal Traveler's Spaulders
 							i(172078),	-- Eternal Traveler's Cloak

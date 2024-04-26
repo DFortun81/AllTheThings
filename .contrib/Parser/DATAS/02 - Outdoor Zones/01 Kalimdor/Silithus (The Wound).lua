@@ -110,6 +110,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								56260,	-- Unlocking the Power (H)
 							},
 							["g"] = {
+								i(169292),	-- Charged Scale of the Blue Aspect (QI!)
 								i(168614, {	-- Charged Scale of the Blue Aspect
 									["u"] = REMOVED_FROM_GAME,
 								}),
@@ -229,6 +230,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 57222,	-- Investigating the Halls
 							["cost"] = { { "i", 171219, 1 } },	-- Corrupt Black Dragonscales
 							["g"] = {
+								i(171219),	-- Corrupt Black Dragonscales (QI!)
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
 									["bonusID"] = 6272,	-- Rank 1 Appearence
 								}),
@@ -242,6 +244,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
+							},
+							["g"] = {
+								i(170483),	-- Torn Journal Page #16 (QI!)
 							},
 						}),
 						q(55407, {	-- Calming the Spine
@@ -290,6 +295,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["provider"] = { "n", 152385 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 17.5, 62.1, 1472 },	-- The Dragon's Spine
 							["sourceQuest"] = 55407,	-- Calming the Spine
+							["g"] = {
+								i(167830),	-- Petrified Ebony Scale (QI!)
+							},
 						}),
 						q(55395, {	-- Don't Close Your Eyes
 							["provider"] = { "n", 151704 },	-- Valithria Dreamwalker
@@ -312,6 +320,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.0, 72.2, REPAIRED_CHAMBER_OF_HEART },
 							["sourceQuest"] = 55618,	-- The Heart Forge
+							["g"] = {
+								i(168611),	-- Petrified Ebony Scale [Rank 1] (QI!)
+							},
 						}),
 						q(55520, {	-- Healing Nordrassil
 							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
@@ -331,6 +342,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								1476,	-- Twilight Highlands (Szenario)
 							},
 							["g"] = {
+								i(168280),	-- Lost Scale of the Scarlet Broodmother (QI!)
 								i(168613),	-- Tempered Scale of the Scarlet Broodmother
 							},
 						}),
@@ -435,6 +447,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 							["g"] = {
+								i(170490),	-- Torn Journal Page #58 (QI!)
 								i(170491),	-- Burnt Journal Page
 							},
 						}),
@@ -586,11 +599,17 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								REMOVED_8_3_0,	-- (removed with 8.3)
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
+							["g"] = {
+								i(169653),	-- Potion of Mental Clarity (QI!)
+							},
 						}),
 						q(55394, {	-- Shards of Emerald
 							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["coord"] = { 44.1, 30.7, 1471 },	-- Emerald Dreamway
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
+							["g"] = {
+								i(167802),	-- Emerald Shard (QI!)
+							},
 						}),
 						q(56186, {	-- Spies to the Left and Right
 							["provider"] = { "n", 152365 },	-- Kalecgos
@@ -603,6 +622,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
+							},
+							["g"] = {
+								i(170471),	-- Torn Journal Page #7 (QI!)
 							},
 						}),
 						q(57393, {	-- Stepping Through the Darkness (Rank 6)
@@ -689,6 +711,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 							["sourceQuest"] = 55397,	-- Before I Wake
 							["g"] = {
+								i(167831),	-- Emerald Shards (QI!)
+								i(167875),	-- Reforged Dreamglow Dragonscale (QI!)
 								i(168612),	-- Dreamglow Dragonscale
 							},
 						}),
@@ -712,6 +736,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
+							},
+							["g"] = {
+								i(170486),	-- Torn Journal Page #25 (QI!)
 							},
 						}),
 						q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
@@ -769,6 +796,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["maps"] = {
 								1475,	-- The Emerald Dream
 							},
+							["g"] = {
+								i(167831),	-- Emerald Shards (QI!)
+							},
 						}),
 						q(55752, {	-- We Stand United
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
@@ -776,6 +806,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["sourceQuest"] = 56401,	-- A Bolt from the Blue
 							["g"] = {
 								i(169768),	-- Heart of a Champion (TOY!)
+								i(169292),	-- Charged Scale of the Blue Aspect (QI!)
 							},
 						}),
 						q(58615, {	-- Whispers in the Dark
@@ -860,6 +891,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
+							},
+							["g"] = {
+								i(170493),	-- Wrathion's Journal (QI!)
 							},
 						}),
 					}),

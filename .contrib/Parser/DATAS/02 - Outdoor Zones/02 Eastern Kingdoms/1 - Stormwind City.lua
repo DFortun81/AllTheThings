@@ -2545,6 +2545,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 85.2, 32.5, STORMWIND_CITY },
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(175151),	-- Fearbreaker (QI!)
+					},
 				}),
 				q(26396, {	-- Return to Argus
 					["providers"] = {

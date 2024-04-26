@@ -880,6 +880,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 77.4, 14.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167041),	-- Coiled Current Culler (QI!)
+					i(167037),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+				},
 			}),
 			q(55031, {	-- It's Scrap Work... [H]
 				["description"] = "Requires 150 Zandalari Engineering.",
@@ -887,6 +891,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 45.1, 40.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167041),	-- Coiled Current Culler (QI!)
+					i(167037),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+				},
 			}),
 			q(53947, {	-- In the Dunes [A]
 				["sourceQuests"] = { 55028 },	-- It's Scrap Work... [A]
@@ -938,6 +946,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(166881),	-- Gryzix's Toolbox (QI!)
+				},
 			}),
 			q(53948, {	-- Vengeful Venture [A]
 				["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
@@ -945,6 +956,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164919),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(166886),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(164773),	-- Gryzix's Decoder (QI!)
+				},
 			}),
 			q(53833, {	-- Vengeful Venture [H]
 				["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
@@ -952,6 +968,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164919),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(166886),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(164773),	-- Gryzix's Decoder (QI!)
+				},
 			}),
 			q(53949, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [A]
 				["sourceQuests"] = { 53948 },	-- Vengeful Venture [A]

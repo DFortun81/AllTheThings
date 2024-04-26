@@ -213,6 +213,9 @@ root(ROOTS.Character, n(HERITAGE, {
 					["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
 					["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
 					["sourceQuest"] = 54581, -- Now With More Mechanical Fowl
+					["g"] = {
+						i(166584),	-- Broken Communication Device (QI!)
+					},
 				}),
 				q(54579, {	-- The Gnome Behind the Trogg
 					["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
@@ -276,7 +279,7 @@ root(ROOTS.Character, n(HERITAGE, {
 					["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
 					["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
 					["g"] = {
-						i(170538),	-- Mysterious Package
+						i(170538),	-- Mysterious Package (QI!)
 					},
 				}),
 				q(57047, {	-- A Simple Experiment
@@ -293,6 +296,9 @@ root(ROOTS.Character, n(HERITAGE, {
 					["provider"] = { "n", 156542 },	-- Crank Greasefuse
 					["coord"] = { 56.0, 78.2, 1532 },
 					["sourceQuest"] = 57048,	-- Shopping For Parts
+					["g"] = {
+						i(171089),	-- Unpaid Debt (QI!)
+					},
 				}),
 				q(57052, {	-- I've Got What You Need
 					["provider"] = { "n", 156542 },	-- Crank Greasefuse
@@ -303,11 +309,17 @@ root(ROOTS.Character, n(HERITAGE, {
 					["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 					["coord"] = { 58.7, 60.8, 1532 },
 					["sourceQuest"] = 57052,	-- I've Got What You Need
+					["g"] = {
+						i(171114),	-- X-52 Personnel Armor (QI!)
+					},
 				}),
 				q(57058, {	-- Fun With Landmines
 					["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 					["coord"] = { 58.7, 60.8, 1532 },
 					["sourceQuest"] = 57053,	-- Blunt Force Testing
+					["g"] = {
+						i(174059),	-- X-52 Personnel Armor (QI!)
+					},
 				}),
 				q(57059, {	-- Let's Rumble!
 					["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
@@ -534,6 +546,9 @@ root(ROOTS.Character, n(HERITAGE, {
 					["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
 					["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
 					["sourceQuest"] = 54762,	-- A Small Retreat
+					["g"] = {
+						i(166899),	-- Spiritwalker's Hallowed Vessel (QI!)
+					},
 				}),
 				q(54764, {	-- Storm in Bloodhoof
 					["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
@@ -544,6 +559,9 @@ root(ROOTS.Character, n(HERITAGE, {
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 58.3, 51.8, THUNDER_BLUFF },
 					["sourceQuest"] = 54764,	-- Storm in Bloodhoof
+					["g"] = {
+						i(167030),	-- Spiritwalker's Hallowed Vessel (QI!)
+					},
 				}),
 				q(54765, {	-- Thank Your Guide
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
@@ -641,11 +659,17 @@ root(ROOTS.Character, n(HERITAGE, {
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
 					["coord"] = { 18.1, 57.2, DUSKWOOD },
 					["sourceQuest"] = 54980, -- Bane of the Nightbane
+					["g"] = {
+						i(167032),	-- Elune's Grace (QI!)
+					},
 				}),
 				q(54982, {	-- The Spirit of the Hunter
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
 					["coord"] = { 18.1, 57.2, DUSKWOOD },
 					["sourceQuest"] = 54980, -- Bane of the Nightbane
+					["g"] = {
+						i(167031),	-- Bloodstained Fangs (QI!)
+					},
 				}),
 				q(54983, {	-- Waking a Dreamer
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw

@@ -1504,12 +1504,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 				["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(167039),	-- Tri-dimensional Coordinates (QI!)
+				},
 			}),
 			q(55632, {	-- You Must Be This Height (H)
 				["sourceQuests"] = { 55630 },	-- Let's Get It Started
 				["provider"] = { "n", 149809 },	-- Gazlowe
 				["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168218),	-- Tri-dimensional Coordinates (QI!)
+				},
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["lockCriteria"] = { 1, "lvl", 50 },

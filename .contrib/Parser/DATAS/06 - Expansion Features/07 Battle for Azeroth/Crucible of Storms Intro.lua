@@ -157,6 +157,9 @@ root(ROOTS.ExpansionFeatures, {
 				["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
 				["provider"] = { "n", 145396 },	-- Xal'atath
 				["coord"] = { 75.0, 77.7, TIRAGARDE_SOUND },
+				["g"] = {
+					i(165018),	-- Tempest Caller (QI!)
+				},
 			}),
 			q(54126, {	-- Twist the Knife
 				["races"] = ALLIANCE_ONLY,

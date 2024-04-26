@@ -378,6 +378,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
+				["g"] = {
+					i(168304),	-- Squeaky Raptor (QI!)
+				},
 			}),
 			q(55249, {	-- Away From the Herd
 			--	i never got this version of the quest, only 55244.  is this version unused or is there a specific set of circumstances under which it appears?
@@ -387,6 +390,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168304),	-- Squeaky Raptor (QI!)
+				},
 			}),
 			q(50412, {	-- Back to the Nest
 				["sourceQuests"] = { 50401 },	-- Fear of Falling
@@ -1407,6 +1413,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
 				["coord"] = { 68.3, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168325),	-- Direhorn Saddle (QI!)
+				},
 			}),
 			q(55462, {	-- The Wanderer's Call
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
@@ -1532,6 +1541,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 29.6, ZULDAZAR },
+				["g"] = {
+					i(168005),	-- Mature Direbloom Petal (QI!)
+				},
 			}),
 			q(51990, {	-- Wings for the Kraal
 				["sourceQuests"] = {

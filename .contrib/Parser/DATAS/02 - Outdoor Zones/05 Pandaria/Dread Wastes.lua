@@ -282,6 +282,7 @@ root(ROOTS.Zones, {
 							56575,	-- Once More Into Kor'vess
 						},
 						["groups"] = {
+							i(169866),	-- Corrupted Amber Chunk (QI!)
 							objective(1, {	-- 0/8 Corrupted Amber Chunk
 								["provider"] = { "i", 169866 },	-- Corrupted Amber Chunk (QI!)
 								["crs"] = {

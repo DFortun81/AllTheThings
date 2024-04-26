@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					152910,	-- Queen Azshara
 				},
 				["groups"] = {
-					i(169329),	-- Eternal Ornament
+					i(169329),	-- Eternal Ornament (QI!)
 					i(168625),	-- Vantus Rune Technique: The Eternal Palace [Rank 1] (RECIPE!)
 					i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
 					i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
@@ -362,11 +362,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 						["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-						["g"] = {	
+						["g"] = {
 							ach(13716),	-- Lactose Intolerant
 							i(169362),	-- Nameless Octopode (PET!)
 						},
-					}),			
+					}),
 					e(2361, {	-- Queen Azshara
 						["crs"] = { 152910 },	-- Queen Azshara
 						["g"] = {

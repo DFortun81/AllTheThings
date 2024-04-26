@@ -1539,6 +1539,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
 							["coord"] = { 50.4, 76.1, 1534 },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(171365),	-- Put on disguise (QI!)
+							},
 						}),
 						q(57149, {	-- Propaganda Takedown
 							["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1571,6 +1574,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
 							["coord"] = { 50, 91.3, 1534 },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(172203),	-- Cracked Hearthstone (QI!)
+							},
 						}),
 						q(57147, {	-- Not My Warchief
 							["altQuests"] = { 54109 },	-- Queen's Favor

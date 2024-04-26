@@ -400,6 +400,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						1571,	-- Uldum, Vision
 					},
 					["g"] = {
+						i(173810),	-- Darksight Potion (QI!)
 						i(174288, {	-- Breath of Everlasting Spirit (once a week)
 							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 						}),

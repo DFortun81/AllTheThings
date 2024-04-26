@@ -1660,6 +1660,7 @@ root(ROOTS.PVP, {
 					},
 					["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
 					["g"] = {
+						i(171198),	-- Quartermaster's Prize (QI!)
 						i(171095),			-- Warlord's Trophy
 					},
 				}),
@@ -2192,6 +2193,7 @@ root(ROOTS.PVP, {
 						{ 56.4, 25.8, BORALUS },
 					},
 					["g"] = {
+						i(172519),	-- Quartermaster's Note (QI!)
 						i(172895),	-- Warlord's Trophy
 					},
 				}),
