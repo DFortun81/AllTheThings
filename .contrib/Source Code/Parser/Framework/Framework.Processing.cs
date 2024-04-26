@@ -1,4 +1,4 @@
-﻿using ATT.DB;
+using ATT.DB;
 using ATT.DB.Types;
 using ATT.FieldTypes;
 using System;
@@ -1411,7 +1411,7 @@ namespace ATT
             // If Criteria doesn't have any timeline, enforce a default of 3.0.1
             if (!data.ContainsKey("timeline"))
             {
-                data["timeline"] = new List<object> { ADDED_3_0_2 };
+                data["timeline"] = new List<object> { "ADDED_3_0_2" };
                 LogDebugWarn($"Added default timeline 3.0.1 on Criteria {achID}:{criteriaID}");
             }
         }
