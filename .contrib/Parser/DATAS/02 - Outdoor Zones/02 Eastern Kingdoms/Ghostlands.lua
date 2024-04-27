@@ -1340,6 +1340,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						i(23923),	-- Amani Sacrificial Dagger
 						i(29518),	-- Amani Scimitar
+						i(25874, {	-- Large Throwing Knife
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
 					},
 				}),
 				o(184793, {	-- Primitive Chest
