@@ -11,7 +11,7 @@ app:CreateWindow("Class Specific Things", {
 		self.data = {
 			text = "Class Specific Things",
 			icon = app.asset("WindowIcon_RWP"), 
-			description = "This window shows you all of the class specific things for a selected class.",
+			description = "This window shows you all of the class specific things for all classes.",
 			visible = true, 
 			expanded = true,
 			back = 1,

@@ -27,6 +27,7 @@
 	<Script file="New With Patch.lua"/>
 	<Script file="Objects.lua"/>
 	<Script file="Quests.lua"/>
+	<Script file="Race Specific Things.lua"/>
 	<Script file="Raid Assistant.lua"/>
 	<Script file="Random.lua"/>
 	<Script file="Removed From Game.lua"/>
