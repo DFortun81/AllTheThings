@@ -6,7 +6,50 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(20001),		-- Elusive Foes: Timeless Isle
+				ach(20001, bubbleDown({ ["_noautomation"] = true, }, {	-- Elusive Foes: Timeless Isle
+					crit(65661, {	-- Spirit of Jadefire
+						["crs"] = { 72769 },
+					}),
+					crit(65662, {	-- Rattleskew
+						["crs"] = { 72048 },
+					}),
+					crit(65665, {	-- Cranegnasher
+						["crs"] = { 73854 },
+					}),
+					crit(65666, {	-- Spelurk
+						["crs"] = { 71864 },
+					}),
+					crit(65667, {	-- Cah Silentsky
+						["crs"] = { 73242 },
+					}),
+					crit(65668, {	-- Chelon
+						["crs"] = { 72045 },
+					}),
+					crit(65669, {	-- Karkanos
+						["crs"] = { 72193 },
+					}),
+					crit(65670, {	-- Zhu-Gon the Sour
+						["crs"] = { 71919 },
+					}),
+					crit(65671, {	-- Zesqua
+						["crs"] = { 72245 },
+					}),
+					crit(65672, {	-- Ra'sha
+						["crs"] = { 72909 },
+					}),
+					crit(65673, {	-- Emerald Gander
+						["crs"] = { 73158 },
+					}),
+					crit(65674, {	-- Great Turtle Furyshell
+						["crs"] = { 73161 },
+					}),
+					crit(65675, {	-- Leafmender
+						["crs"] = { 73277 },
+					}),
+					crit(65676, {	-- Ironfur Steelhorn
+						["crs"] = { 73160 },
+					}),
+				})),
 				ach(19922),		-- Emperor Shaohao
 				ach(19982, {	-- Hidden Treasures: Timeless Isle
 					crit(65819, {	-- Flameheart Shawl
@@ -50,7 +93,62 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20025,	-- Ordos
 					}},
 				}),
-				ach(20002);		-- Powerful Enemies: Timeless Isle
+				ach(20002, bubbleDown({ ["_noautomation"] = true, }, {	-- Powerful Enemies: Timeless Isle
+					crit(65642, {	-- Rockmoss
+						["crs"] = { 73157 },
+					}),
+					crit(65643, {	-- Cinderfall
+						["crs"] = { 73175 },
+					}),
+					crit(65644, {	-- Stinkbraid
+						["crs"] = { 73704 },
+					}),
+					crit(65645, {	-- Garnia
+						["crs"] = { 73282 },
+					}),
+					crit(65646, {	-- Tsavo'ka
+						["crs"] = { 72808 },
+					}),
+					crit(65647, {	-- Huolon
+						["crs"] = { 73167 },
+					}),
+					crit(65648, {	-- Monstrous Spineclaw
+						["crs"] = { 73166 },
+					}),
+					crit(65649, {	-- Bufo
+						["crs"] = { 72775 },
+					}),
+					crit(65650, {	-- Dread Ship Vazuvius
+						["crs"] = { 73281 },
+					}),
+					crit(65651, {	-- Golganarr
+						["crs"] = { 72970 },
+					}),
+					crit(65652, {	-- Imperial Python
+						["crs"] = { 73163 },
+					}),
+					crit(65653, {	-- Evermaw
+						["crs"] = { 73279 },
+					}),
+					crit(65655, {	-- Archiereus the Flame
+						["crs"] = { 73174 },
+					}),
+					crit(65656, {	-- Watcher Osu
+						["crs"] = { 73170 },
+					}),
+					crit(65657, {	-- Urdur the Cauterizer
+						["crs"] = { 73173 },
+					}),
+					crit(65658, {	-- Jakur of Ordon
+						["crs"] = { 73169 },
+					}),
+					crit(65659, {	-- Flintlord Gairan
+						["crs"] = { 73172 },
+					}),
+					crit(65660, {	-- Champion of the Black Flame
+						["crs"] = { 73171 },
+					}),
+				}));
 				ach(20003, {	-- Timeless Isle
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
