@@ -946,6 +946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["lvl"] = 30,
 					["groups"] = {
 						i(8408, {	-- Pattern: Wild Leather Cloak
@@ -2308,6 +2309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 4304, 10 }},	-- Thick Leather
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["lvl"] = 30,
 				},
 				{	-- Wild Leather Boots
@@ -2323,6 +2325,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8193, 2 },	-- Nightscape Pants
 						{ "i", 8197, 2 },	-- Nightscape Boots
@@ -2348,6 +2351,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8175, 2 },	-- Nightscape Tunic
 						{ "i", 8176, 2 },	-- Nightscape Headband
@@ -2373,6 +2377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8191, 2 },	-- Turtle Scale Helm
 						{ "i", 8198, 2 },	-- Turtle Scale Bracers
@@ -2398,6 +2403,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8173, 6 },	-- Thick Armor Kit
 						{ "i", 8153, 1 },	-- Wildvine
@@ -2422,6 +2428,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8189, 2 },	-- Turtle Scale Breastplate
 						{ "i", 8187, 2 },	-- Turtle Scale Gloves
