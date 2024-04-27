@@ -1272,7 +1272,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Captain Kelisendra's Cargo
-							["provider"] = { "i", 21771 },	-- Captain Kelisendra's Cargo
+							["providers"] = {
+								{ "i",  21771 },	-- Captain Kelisendra's Cargo
+								{ "o", 180917 },	-- Captain Kelisendra's Cargo
+							},
 							["crs"] = {
 								15670,	-- Grimscale Forager
 								15668,	-- Grimscale Murloc

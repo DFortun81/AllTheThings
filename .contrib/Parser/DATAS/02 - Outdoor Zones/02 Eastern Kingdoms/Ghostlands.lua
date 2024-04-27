@@ -285,7 +285,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9276, {	-- Attack on Zeb'Tela
 					["qg"] = 16463,	-- Farstrider Solanna
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -559,7 +562,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 				q(9157, {	-- Forgotten Rituals
 					["qg"] = 16201,	-- Geranis Whitemorn
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.2, 19.0, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -914,7 +920,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9214, {	-- Shadowpine Weaponry
 					["qg"] = 16220,	-- Captain Helios
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.3, 29.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -952,7 +961,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9274, {	-- Spirits of the Drowned
 					["qg"] = 16462,	-- Ranger Krenn'an
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.2, 29.7, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
