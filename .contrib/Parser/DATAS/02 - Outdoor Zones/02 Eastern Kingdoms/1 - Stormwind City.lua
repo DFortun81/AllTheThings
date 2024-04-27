@@ -1940,9 +1940,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/3 Filled Containment Coffer
 							["providers"] = {
-								{ "i", 7292 },	-- Filled Containment Coffer
-								{ "i", 7247 },	-- Chest of Containment Coffers
-								{ "i", 7308 },	-- Cantation of Manifestation
+								{ "i",   7292 },	-- Filled Containment Coffer
+								{ "o", 103574 },	-- Filled Containment Coffer
+								{ "i",   7247 },	-- Chest of Containment Coffers
+								{ "i",   7308 },	-- Cantation of Manifestation
 							},
 							["coords"] = {
 								-- #if AFTER WRATH
