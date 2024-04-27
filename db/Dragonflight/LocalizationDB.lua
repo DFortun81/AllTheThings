@@ -1027,6 +1027,7 @@ localize(L.HEADER_ICONS, {
 	[-1000869] = "132396",
 	[-1000870] = "135727",
 	[-1000872] = "2055032",
+	[-1000873] = "Interface/Icons/achievement_character_pandaren_female",
 	[-1000881] = _.asset("Category_Zones"),
 	[-1000883] = _.asset("Pet_Dungeon"),
 });

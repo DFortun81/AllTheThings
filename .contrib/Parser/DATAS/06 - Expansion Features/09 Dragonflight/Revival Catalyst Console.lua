@@ -1491,124 +1491,204 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			})),
 			header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+				-- There are new IDs only for "Tier Slots" in season 4 - main source in raid from tokens
+				-- "Off Slots" use old IDs of original items - main source in Catalyst of previous tiers/raids (new "Off Slot" IDs are NYI)
 				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = {{"select","itemID",
-								217221.004,	-- Casket of the Risen Nightmare
-								217224.004,	-- Greaves of the Risen Nightmare
-								217223.004,	-- Piercing Gaze of the Risen Nightmare
-								217225.004,	-- Skewers of the Risen Nightmare
-								217222.004,	-- Thorns of the Risen Nightmare
+								-- "Tier Slots"
+								modItemId(217221,4),	-- Casket of the Risen Nightmare
+								modItemId(217224,4),	-- Greaves of the Risen Nightmare
+								modItemId(217223,4),	-- Piercing Gaze of the Risen Nightmare
+								modItemId(217225,4),	-- Skewers of the Risen Nightmare
+								modItemId(217222,4),	-- Thorns of the Risen Nightmare
+								-- "Off Slots"
+								modItemId(207202,4),	-- Graveboots of the Risen Nightmare
+								modItemId(207197,4),	-- Seal of the Risen Nightmare
+								modItemId(207195,4),	-- Shroud of the Risen Nightmare
+								modItemId(207196,4),	-- Vambraces of the Risen Nightmare
 							}},
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = {{"select","itemID",
-								217226.004,	-- Screaming Torchfiend's Binding
-								217229.004,	-- Screaming Torchfiend's Blazewraps
-								217228.004,	-- Screaming Torchfiend's Burning Scowl
-								217227.004,	-- Screaming Torchfiend's Grasp
-								217230.004,	-- Screaming Torchfiend's Horned Memento
+								-- "Tier Slots"
+								modItemId(217226,4),	-- Screaming Torchfiend's Binding
+								modItemId(217229,4),	-- Screaming Torchfiend's Blazewraps
+								modItemId(217228,4),	-- Screaming Torchfiend's Burning Scowl
+								modItemId(217227,4),	-- Screaming Torchfiend's Grasp
+								modItemId(217230,4),	-- Screaming Torchfiend's Horned Memento
+								-- "Off Slots"
+								modItemId(207259,4),	-- Screaming Torchfiend's Armlets
+								modItemId(207260,4),	-- Screaming Torchfiend's Clasp
+								modItemId(207265,4),	-- Screaming Torchfiend's Clutches
+								modItemId(207258,4),	-- Screaming Torchfiend's Shawl
 							}},
 						}),
 						cl(DRUID, {
 							["sym"] = {{"select","itemID",
-								217193.004,	-- Bough of the Autumn Blaze
-								217191.004,	-- Chestroots of the Autumn Blaze
-								217192.004,	-- Handguards of the Autumn Blaze
-								217195.004,	-- Mantle of the Autumn Blaze
-								217194.004,	-- Pants of the Autumn Blaze
+								-- "Tier Slots"
+								modItemId(217193,4),	-- Bough of the Autumn Blaze
+								modItemId(217191,4),	-- Chestroots of the Autumn Blaze
+								modItemId(217192,4),	-- Handguards of the Autumn Blaze
+								modItemId(217195,4),	-- Mantle of the Autumn Blaze
+								modItemId(217194,4),	-- Pants of the Autumn Blaze
+								-- "Off Slots"
+								modItemId(202511,4),	-- Bands of the Autumn Blaze
+								modItemId(202510,4),	-- Foliage of the Autumn Blaze
+								modItemId(202512,4),	-- Garland of the Autumn Blaze
+								modItemId(202517,4),	-- Hooves of the Autumn Blaze
 							}},
 						}),
 						cl(EVOKER, {
 							["sym"] = {{"select","itemID",
-								217178.004,	-- Crown of the Awakened
-								217177.004,	-- Gauntlets of the Awakened
-								217176.004,	-- Hauberk of the Awakened
-								217179.004,	-- Legguards of the Awakened
-								217180.004,	-- Talons of the Awakened
+								-- "Tier Slots"
+								modItemId(217178,4),	-- Crown of the Awakened
+								modItemId(217177,4),	-- Gauntlets of the Awakened
+								modItemId(217176,4),	-- Hauberk of the Awakened
+								modItemId(217179,4),	-- Legguards of the Awakened
+								modItemId(217180,4),	-- Talons of the Awakened
+								-- "Off Slots"
+								modItemId(200385,4,451),	-- Bracers of the Awakened
+								modItemId(200384,4,451),	-- Chain of the Awakened
+								modItemId(200386,4,451),	-- Shroud of the Awakened
+								modItemId(200379,4,451),	-- Treads of the Awakened
 							}},
 						}),
 						cl(HUNTER, {
 							["sym"] = {{"select","itemID",
-								217181.004,	-- Stormwing Harrier's Cuirass
-								217184.004,	-- Stormwing Harrier's Greaves
-								217182.004,	-- Stormwing Harrier's Handguards
-								217185.004,	-- Stormwing Harrier's Pinions
-								217183.004,	-- Stormwing Harrier's Skullmask
+								-- "Tier Slots"
+								modItemId(217181,4),	-- Stormwing Harrier's Cuirass
+								modItemId(217184,4),	-- Stormwing Harrier's Greaves
+								modItemId(217182,4),	-- Stormwing Harrier's Handguards
+								modItemId(217185,4),	-- Stormwing Harrier's Pinions
+								modItemId(217183,4),	-- Stormwing Harrier's Skullmask
+								-- "Off Slots"
+								modItemId(200393,4,451),	-- Stormwing Harrier's Belt
+								modItemId(200395,4,451),	-- Stormwing Harrier's Plumage
+								modItemId(200388,4,451),	-- Stormwing Harrier's Sabatons
+								modItemId(200394,4,451),	-- Stormwing Harrier's Wristguards
 							}},
 						}),
 						cl(MAGE, {
 							["sym"] = {{"select","itemID",
-								217232.004,	-- Wayward Chronomancer's Chronocap
-								217231.004,	-- Wayward Chronomancer's Gloves
-								217234.004,	-- Wayward Chronomancer's Metronomes
-								217233.004,	-- Wayward Chronomancer's Pantaloons
-								217235.004,	-- Wayward Chronomancer's Patchwork
+								-- "Tier Slots"
+								modItemId(217232,4),	-- Wayward Chronomancer's Chronocap
+								modItemId(217231,4),	-- Wayward Chronomancer's Gloves
+								modItemId(217234,4),	-- Wayward Chronomancer's Metronomes
+								modItemId(217233,4),	-- Wayward Chronomancer's Pantaloons
+								modItemId(217235,4),	-- Wayward Chronomancer's Patchwork
+								-- "Off Slots"
+								modItemId(207286,4),	-- Wayward Chronomancer's Cuffs
+								modItemId(207285,4),	-- Wayward Chronomancer's Stole
+								modItemId(207292,4),	-- Wayward Chronomancer's Strapped Boots
+								modItemId(207287,4),	-- Wayward Chronomancer's Synchronous Belt
 							}},
 						}),
 						cl(MONK, {
 							["sym"] = {{"select","itemID",
-								217186.004,	-- Chestwrap of the Waking Fist
-								217188.004,	-- Gaze of the Waking Fist
-								217189.004,	-- Legguards of the Waking Fist
-								217190.004,	-- Mantle of the Waking Fist
-								217187.004,	-- Palms of the Waking Fist
+								-- "Tier Slots"
+								modItemId(217186,4),	-- Chestwrap of the Waking Fist
+								modItemId(217188,4),	-- Gaze of the Waking Fist
+								modItemId(217189,4),	-- Legguards of the Waking Fist
+								modItemId(217190,4),	-- Mantle of the Waking Fist
+								modItemId(217187,4),	-- Palms of the Waking Fist
+								-- "Off Slots"
+								modItemId(200367,4,451),	-- Cuffs of the Waking Fist
+								modItemId(200368,4,451),	-- Drape of the Waking Fist
+								modItemId(200361,4,451),	-- Gaiters of the Waking Fist
+								modItemId(200366,4,451),	-- Girdle of the Waking Fist
 							}},
 						}),
 						cl(PALADIN, {
 							["sym"] = {{"select","itemID",
-								217196.004,	-- Heartfire Sentinel's Brigandine
-								217199.004,	-- Heartfire Sentinel's Faulds
-								217198.004,	-- Heartfire Sentinel's Forgehelm
-								217197.004,	-- Heartfire Sentinel's Protectors
-								217200.004,	-- Heartfire Sentinel's Steelwings
+								-- "Tier Slots"
+								modItemId(217196,4),	-- Heartfire Sentinel's Brigandine
+								modItemId(217199,4),	-- Heartfire Sentinel's Faulds
+								modItemId(217198,4),	-- Heartfire Sentinel's Forgehelm
+								modItemId(217197,4),	-- Heartfire Sentinel's Protectors
+								modItemId(217200,4),	-- Heartfire Sentinel's Steelwings
+								-- "Off Slots"
+								modItemId(202448,4),	-- Heartfire Sentinel's Blessed Bindings
+								modItemId(202454,4),	-- Heartfire Sentinel's Greatboots
+								modItemId(202447,4),	-- Heartfire Sentinel's Pelerine
+								modItemId(202449,4),	-- Heartfire Sentinel's Waistguard
 							}},
 						}),
 						cl(PRIEST, {
 							["sym"] = {{"select","itemID",
-								217203.004,	-- Breeches of the Furnace Seraph
-								217205.004,	-- Command of the Furnace Seraph
-								217204.004,	-- Devotion of the Furnace Seraph
-								217201.004,	-- Grasp of the Furnace Seraph
-								217202.004,	-- Mask of the Furnace Seraph
+								-- "Tier Slots"
+								modItemId(217203,4),	-- Breeches of the Furnace Seraph
+								modItemId(217205,4),	-- Command of the Furnace Seraph
+								modItemId(217204,4),	-- Devotion of the Furnace Seraph
+								modItemId(217201,4),	-- Grasp of the Furnace Seraph
+								modItemId(217202,4),	-- Mask of the Furnace Seraph
+								-- "Off Slots"
+								modItemId(202538,4),	-- Cuffs of the Furnace Seraph
+								modItemId(202544,4),	-- Sabatons of the Furnace Seraph
+								modItemId(202539,4),	-- Sash of the Furnace Seraph
+								modItemId(202537,4),	-- Shroud of the Furnace Seraph
 							}},
 						}),
 						cl(ROGUE, {
 							["sym"] = {{"select","itemID",
-								217206.004,	-- Lurking Specter's Brigandine
-								217207.004,	-- Lurking Specter's Handgrips
-								217210.004,	-- Lurking Specter's Shoulderblades
-								217209.004,	-- Lurking Specter's Tights
-								217208.004,	-- Lurking Specter's Visage
+								-- "Tier Slots"
+								modItemId(217206,4),	-- Lurking Specter's Brigandine
+								modItemId(217207,4),	-- Lurking Specter's Handgrips
+								modItemId(217210,4),	-- Lurking Specter's Shoulderblades
+								modItemId(217209,4),	-- Lurking Specter's Tights
+								modItemId(217208,4),	-- Lurking Specter's Visage
+								-- "Off Slots"
+								modItemId(202493,4),	-- Lurking Specter's Armwraps
+								modItemId(202492,4),	-- Lurking Specter's Capelet
+								modItemId(202494,4),	-- Lurking Specter's Edgeband
+								modItemId(202499,4),	-- Lurking Specter's Tabi
 							}},
 						}),
 						cl(SHAMAN, {
 							["sym"] = {{"select","itemID",
-								217240.004,	-- Greatwolf Outcast's Companions
-								217239.004,	-- Greatwolf Outcast's Fur-Lined Kilt
-								217237.004,	-- Greatwolf Outcast's Grips
-								217236.004,	-- Greatwolf Outcast's Harness
-								217238.004,	-- Greatwolf Outcast's Jaws
+								-- "Tier Slots"
+								modItemId(217240,4),	-- Greatwolf Outcast's Companions
+								modItemId(217239,4),	-- Greatwolf Outcast's Fur-Lined Kilt
+								modItemId(217237,4),	-- Greatwolf Outcast's Grips
+								modItemId(217236,4),	-- Greatwolf Outcast's Harness
+								modItemId(217238,4),	-- Greatwolf Outcast's Jaws
+								-- "Off Slots"
+								modItemId(207204,4),	-- Greatwolf Outcast's Chainweave
+								modItemId(207211,4),	-- Greatwolf Outcast's Footpads
+								modItemId(207206,4),	-- Greatwolf Outcast's Sigil Belt
+								modItemId(207205,4),	-- Greatwolf Outcast's Wristguards
 							}},
 						}),
 						cl(WARLOCK, {
 							["sym"] = {{"select","itemID",
-								217214.004,	-- Amice of the Sinister Savant
-								217215.004,	-- Cursed Robes of the Sinister Savant
-								217212.004,	-- Grimhorns of the Sinister Savant
-								217211.004,	-- Grips of the Sinister Savant
-								217213.004,	-- Leggings of the Sinister Savant
+								-- "Tier Slots"
+								modItemId(217214,4),	-- Amice of the Sinister Savant
+								modItemId(217215,4),	-- Cursed Robes of the Sinister Savant
+								modItemId(217212,4),	-- Grimhorns of the Sinister Savant
+								modItemId(217211,4),	-- Grips of the Sinister Savant
+								modItemId(217213,4),	-- Leggings of the Sinister Savant
+								-- "Off Slots"
+								modItemId(202535,4),	-- Sandals of the Sinister Savant
+								modItemId(202528,4),	-- Shawl of the Sinister Savant
+								modItemId(202530,4),	-- Skullstrap of the Sinister Savant
+								modItemId(202529,4),	-- Wristwraps of the Sinister Savant
 							}},
 						}),
 						cl(WARRIOR, {
 							["sym"] = {{"select","itemID",
-								217216.004,	-- Battlechest of the Onyx Crucible
-								217217.004,	-- Handguards of the Onyx Crucible
-								217219.004,	-- Legplates of the Onyx Crucible
-								217220.004,	-- Pauldrons of the Onyx Crucible
-								217218.004,	-- Thraexhelm of the Onyx Crucible
+								-- "Tier Slots"
+								modItemId(217216,4),	-- Battlechest of the Onyx Crucible
+								modItemId(217217,4),	-- Handguards of the Onyx Crucible
+								modItemId(217219,4),	-- Legplates of the Onyx Crucible
+								modItemId(217220,4),	-- Pauldrons of the Onyx Crucible
+								modItemId(217218,4),	-- Thraexhelm of the Onyx Crucible
+								-- "Off Slots"
+								modItemId(202440,4),	-- Insignia of the Onyx Crucible
+								modItemId(202445,4),	-- Ironstriders of the Onyx Crucible
+								modItemId(202438,4),	-- Manteau of the Onyx Crucible
+								modItemId(202439,4),	-- Warbands of the Onyx Crucible
 							}},
 						}),
 					}),
@@ -1618,119 +1698,198 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["g"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = {{"select","itemID",
-								217221.003,	-- Casket of the Risen Nightmare
-								217224.003,	-- Greaves of the Risen Nightmare
-								217223.003,	-- Piercing Gaze of the Risen Nightmare
-								217225.003,	-- Skewers of the Risen Nightmare
-								217222.003,	-- Thorns of the Risen Nightmare
+								-- "Tier Slots"
+								modItemId(217221,4),
+								modItemId(217221,3),	-- Casket of the Risen Nightmare
+								modItemId(217224,3),	-- Greaves of the Risen Nightmare
+								modItemId(217223,3),	-- Piercing Gaze of the Risen Nightmare
+								modItemId(217225,3),	-- Skewers of the Risen Nightmare
+								modItemId(217222,3),	-- Thorns of the Risen Nightmare
+								-- "Off Slots"
+								modItemId(207202,3),	-- Graveboots of the Risen Nightmare
+								modItemId(207197,3),	-- Seal of the Risen Nightmare
+								modItemId(207195,3),	-- Shroud of the Risen Nightmare
+								modItemId(207196,3),	-- Vambraces of the Risen Nightmare
 							}},
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = {{"select","itemID",
-								217226.003,	-- Screaming Torchfiend's Binding
-								217229.003,	-- Screaming Torchfiend's Blazewraps
-								217228.003,	-- Screaming Torchfiend's Burning Scowl
-								217227.003,	-- Screaming Torchfiend's Grasp
-								217230.003,	-- Screaming Torchfiend's Horned Memento
+								-- "Tier Slots"
+								modItemId(217226,3),	-- Screaming Torchfiend's Binding
+								modItemId(217229,3),	-- Screaming Torchfiend's Blazewraps
+								modItemId(217228,3),	-- Screaming Torchfiend's Burning Scowl
+								modItemId(217227,3),	-- Screaming Torchfiend's Grasp
+								modItemId(217230,3),	-- Screaming Torchfiend's Horned Memento
+								-- "Off Slots"
+								modItemId(207259,3),	-- Screaming Torchfiend's Armlets
+								modItemId(207260,3),	-- Screaming Torchfiend's Clasp
+								modItemId(207265,3),	-- Screaming Torchfiend's Clutches
+								modItemId(207258,3),	-- Screaming Torchfiend's Shawl
 							}},
 						}),
 						cl(DRUID, {
 							["sym"] = {{"select","itemID",
-								217193.003,	-- Bough of the Autumn Blaze
-								217191.003,	-- Chestroots of the Autumn Blaze
-								217192.003,	-- Handguards of the Autumn Blaze
-								217195.003,	-- Mantle of the Autumn Blaze
-								217194.003,	-- Pants of the Autumn Blaze
+								-- "Tier Slots"
+								modItemId(217193,3),	-- Bough of the Autumn Blaze
+								modItemId(217191,3),	-- Chestroots of the Autumn Blaze
+								modItemId(217192,3),	-- Handguards of the Autumn Blaze
+								modItemId(217195,3),	-- Mantle of the Autumn Blaze
+								modItemId(217194,3),	-- Pants of the Autumn Blaze
+								-- "Off Slots"
+								modItemId(202511,3),	-- Bands of the Autumn Blaze
+								modItemId(202510,3),	-- Foliage of the Autumn Blaze
+								modItemId(202512,3),	-- Garland of the Autumn Blaze
+								modItemId(202517,3),	-- Hooves of the Autumn Blaze
 							}},
 						}),
 						cl(EVOKER, {
 							["sym"] = {{"select","itemID",
-								217178.003,	-- Crown of the Awakened
-								217177.003,	-- Gauntlets of the Awakened
-								217176.003,	-- Hauberk of the Awakened
-								217179.003,	-- Legguards of the Awakened
-								217180.003,	-- Talons of the Awakened
+								-- "Tier Slots"
+								modItemId(217178,3),	-- Crown of the Awakened
+								modItemId(217177,3),	-- Gauntlets of the Awakened
+								modItemId(217176,3),	-- Hauberk of the Awakened
+								modItemId(217179,3),	-- Legguards of the Awakened
+								modItemId(217180,3),	-- Talons of the Awakened
+								-- "Off Slots"
+								modItemId(200385,3),	-- Bracers of the Awakened
+								modItemId(200384,3),	-- Chain of the Awakened
+								modItemId(200386,3),	-- Shroud of the Awakened
+								modItemId(200379,3),	-- Treads of the Awakened
 							}},
 						}),
 						cl(HUNTER, {
 							["sym"] = {{"select","itemID",
-								217181.003,	-- Stormwing Harrier's Cuirass
-								217184.003,	-- Stormwing Harrier's Greaves
-								217182.003,	-- Stormwing Harrier's Handguards
-								217185.003,	-- Stormwing Harrier's Pinions
-								217183.003,	-- Stormwing Harrier's Skullmask
+								-- "Tier Slots"
+								modItemId(217181,3),	-- Stormwing Harrier's Cuirass
+								modItemId(217184,3),	-- Stormwing Harrier's Greaves
+								modItemId(217182,3),	-- Stormwing Harrier's Handguards
+								modItemId(217185,3),	-- Stormwing Harrier's Pinions
+								modItemId(217183,3),	-- Stormwing Harrier's Skullmask
+								-- "Off Slots"
+								modItemId(200393,3),	-- Stormwing Harrier's Belt
+								modItemId(200395,3),	-- Stormwing Harrier's Plumage
+								modItemId(200388,3),	-- Stormwing Harrier's Sabatons
+								modItemId(200394,3),	-- Stormwing Harrier's Wristguards
 							}},
 						}),
 						cl(MAGE, {
 							["sym"] = {{"select","itemID",
-								217232.003,	-- Wayward Chronomancer's Chronocap
-								217231.003,	-- Wayward Chronomancer's Gloves
-								217234.003,	-- Wayward Chronomancer's Metronomes
-								217233.003,	-- Wayward Chronomancer's Pantaloons
-								217235.003,	-- Wayward Chronomancer's Patchwork
+								-- "Tier Slots"
+								modItemId(217232,3),	-- Wayward Chronomancer's Chronocap
+								modItemId(217231,3),	-- Wayward Chronomancer's Gloves
+								modItemId(217234,3),	-- Wayward Chronomancer's Metronomes
+								modItemId(217233,3),	-- Wayward Chronomancer's Pantaloons
+								modItemId(217235,3),	-- Wayward Chronomancer's Patchwork
+								-- "Off Slots"
+								modItemId(207286,3),	-- Wayward Chronomancer's Cuffs
+								modItemId(207285,3),	-- Wayward Chronomancer's Stole
+								modItemId(207292,3),	-- Wayward Chronomancer's Strapped Boots
+								modItemId(207287,3),	-- Wayward Chronomancer's Synchronous Belt
 							}},
 						}),
 						cl(MONK, {
 							["sym"] = {{"select","itemID",
-								217186.003,	-- Chestwrap of the Waking Fist
-								217188.003,	-- Gaze of the Waking Fist
-								217189.003,	-- Legguards of the Waking Fist
-								217190.003,	-- Mantle of the Waking Fist
-								217187.003,	-- Palms of the Waking Fist
+								-- "Tier Slots"
+								modItemId(217186,3),	-- Chestwrap of the Waking Fist
+								modItemId(217188,3),	-- Gaze of the Waking Fist
+								modItemId(217189,3),	-- Legguards of the Waking Fist
+								modItemId(217190,3),	-- Mantle of the Waking Fist
+								modItemId(217187,3),	-- Palms of the Waking Fist
+								-- "Off Slots"
+								modItemId(200367,3),	-- Cuffs of the Waking Fist
+								modItemId(200368,3),	-- Drape of the Waking Fist
+								modItemId(200361,3),	-- Gaiters of the Waking Fist
+								modItemId(200366,3),	-- Girdle of the Waking Fist
 							}},
 						}),
 						cl(PALADIN, {
 							["sym"] = {{"select","itemID",
-								217196.003,	-- Heartfire Sentinel's Brigandine
-								217199.003,	-- Heartfire Sentinel's Faulds
-								217198.003,	-- Heartfire Sentinel's Forgehelm
-								217197.003,	-- Heartfire Sentinel's Protectors
-								217200.003,	-- Heartfire Sentinel's Steelwings
+								-- "Tier Slots"
+								modItemId(217196,3),	-- Heartfire Sentinel's Brigandine
+								modItemId(217199,3),	-- Heartfire Sentinel's Faulds
+								modItemId(217198,3),	-- Heartfire Sentinel's Forgehelm
+								modItemId(217197,3),	-- Heartfire Sentinel's Protectors
+								modItemId(217200,3),	-- Heartfire Sentinel's Steelwings
+								-- "Off Slots"
+								modItemId(202448,3),	-- Heartfire Sentinel's Blessed Bindings
+								modItemId(202454,3),	-- Heartfire Sentinel's Greatboots
+								modItemId(202447,3),	-- Heartfire Sentinel's Pelerine
+								modItemId(202449,3),	-- Heartfire Sentinel's Waistguard
 							}},
 						}),
 						cl(PRIEST, {
 							["sym"] = {{"select","itemID",
-								217203.003,	-- Breeches of the Furnace Seraph
-								217205.003,	-- Command of the Furnace Seraph
-								217204.003,	-- Devotion of the Furnace Seraph
-								217201.003,	-- Grasp of the Furnace Seraph
-								217202.003,	-- Mask of the Furnace Seraph
+								-- "Tier Slots"
+								modItemId(217203,3),	-- Breeches of the Furnace Seraph
+								modItemId(217205,3),	-- Command of the Furnace Seraph
+								modItemId(217204,3),	-- Devotion of the Furnace Seraph
+								modItemId(217201,3),	-- Grasp of the Furnace Seraph
+								modItemId(217202,3),	-- Mask of the Furnace Seraph
+								-- "Off Slots"
+								modItemId(202538,3),	-- Cuffs of the Furnace Seraph
+								modItemId(202544,3),	-- Sabatons of the Furnace Seraph
+								modItemId(202539,3),	-- Sash of the Furnace Seraph
+								modItemId(202537,3),	-- Shroud of the Furnace Seraph
 							}},
 						}),
 						cl(ROGUE, {
 							["sym"] = {{"select","itemID",
-								217206.003,	-- Lurking Specter's Brigandine
-								217207.003,	-- Lurking Specter's Handgrips
-								217210.003,	-- Lurking Specter's Shoulderblades
-								217209.003,	-- Lurking Specter's Tights
-								217208.003,	-- Lurking Specter's Visage
+								-- "Tier Slots"
+								modItemId(217206,3),	-- Lurking Specter's Brigandine
+								modItemId(217207,3),	-- Lurking Specter's Handgrips
+								modItemId(217210,3),	-- Lurking Specter's Shoulderblades
+								modItemId(217209,3),	-- Lurking Specter's Tights
+								modItemId(217208,3),	-- Lurking Specter's Visage
+								-- "Off Slots"
+								modItemId(202493,3),	-- Lurking Specter's Armwraps
+								modItemId(202492,3),	-- Lurking Specter's Capelet
+								modItemId(202494,3),	-- Lurking Specter's Edgeband
+								modItemId(202499,3),	-- Lurking Specter's Tabi
 							}},
 						}),
 						cl(SHAMAN, {
 							["sym"] = {{"select","itemID",
-								217240.003,	-- Greatwolf Outcast's Companions
-								217239.003,	-- Greatwolf Outcast's Fur-Lined Kilt
-								217237.003,	-- Greatwolf Outcast's Grips
-								217236.003,	-- Greatwolf Outcast's Harness
-								217238.003,	-- Greatwolf Outcast's Jaws
+								-- "Tier Slots"
+								modItemId(217240,3),	-- Greatwolf Outcast's Companions
+								modItemId(217239,3),	-- Greatwolf Outcast's Fur-Lined Kilt
+								modItemId(217237,3),	-- Greatwolf Outcast's Grips
+								modItemId(217236,3),	-- Greatwolf Outcast's Harness
+								modItemId(217238,3),	-- Greatwolf Outcast's Jaws
+								-- "Off Slots"
+								modItemId(207204,3),	-- Greatwolf Outcast's Chainweave
+								modItemId(207211,3),	-- Greatwolf Outcast's Footpads
+								modItemId(207206,3),	-- Greatwolf Outcast's Sigil Belt
+								modItemId(207205,3),	-- Greatwolf Outcast's Wristguards
 							}},
 						}),
 						cl(WARLOCK, {
 							["sym"] = {{"select","itemID",
-								217214.003,	-- Amice of the Sinister Savant
-								217215.003,	-- Cursed Robes of the Sinister Savant
-								217212.003,	-- Grimhorns of the Sinister Savant
-								217211.003,	-- Grips of the Sinister Savant
-								217213.003,	-- Leggings of the Sinister Savant
+								-- "Tier Slots"
+								modItemId(217214,3),	-- Amice of the Sinister Savant
+								modItemId(217215,3),	-- Cursed Robes of the Sinister Savant
+								modItemId(217212,3),	-- Grimhorns of the Sinister Savant
+								modItemId(217211,3),	-- Grips of the Sinister Savant
+								modItemId(217213,3),	-- Leggings of the Sinister Savant
+								-- "Off Slots"
+								modItemId(202535,3),	-- Sandals of the Sinister Savant
+								modItemId(202528,3),	-- Shawl of the Sinister Savant
+								modItemId(202530,3),	-- Skullstrap of the Sinister Savant
+								modItemId(202529,3),	-- Wristwraps of the Sinister Savant
 							}},
 						}),
 						cl(WARRIOR, {
 							["sym"] = {{"select","itemID",
-								217216.003,	-- Battlechest of the Onyx Crucible
-								217217.003,	-- Handguards of the Onyx Crucible
-								217219.003,	-- Legplates of the Onyx Crucible
-								217220.003,	-- Pauldrons of the Onyx Crucible
-								217218.003,	-- Thraexhelm of the Onyx Crucible
+								-- "Tier Slots"
+								modItemId(217216,3),	-- Battlechest of the Onyx Crucible
+								modItemId(217217,3),	-- Handguards of the Onyx Crucible
+								modItemId(217219,3),	-- Legplates of the Onyx Crucible
+								modItemId(217220,3),	-- Pauldrons of the Onyx Crucible
+								modItemId(217218,3),	-- Thraexhelm of the Onyx Crucible
+								-- "Off Slots"
+								modItemId(202440,3),	-- Insignia of the Onyx Crucible
+								modItemId(202445,3),	-- Ironstriders of the Onyx Crucible
+								modItemId(202438,3),	-- Manteau of the Onyx Crucible
+								modItemId(202439,3),	-- Warbands of the Onyx Crucible
 							}},
 						}),
 					}),
@@ -1740,119 +1899,197 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = {{"select","itemID",
-								217221.005,	-- Casket of the Risen Nightmare
-								217224.005,	-- Greaves of the Risen Nightmare
-								217223.005,	-- Piercing Gaze of the Risen Nightmare
-								217225.005,	-- Skewers of the Risen Nightmare
-								217222.005,	-- Thorns of the Risen Nightmare
+								-- "Tier Slots"
+								modItemId(217221,5),	-- Casket of the Risen Nightmare
+								modItemId(217224,5),	-- Greaves of the Risen Nightmare
+								modItemId(217223,5),	-- Piercing Gaze of the Risen Nightmare
+								modItemId(217225,5),	-- Skewers of the Risen Nightmare
+								modItemId(217222,5),	-- Thorns of the Risen Nightmare
+								-- "Off Slots"
+								modItemId(207202,5),	-- Graveboots of the Risen Nightmare
+								modItemId(207197,5),	-- Seal of the Risen Nightmare
+								modItemId(207195,5),	-- Shroud of the Risen Nightmare
+								modItemId(207196,5),	-- Vambraces of the Risen Nightmare
 							}},
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = {{"select","itemID",
-								217226.005,	-- Screaming Torchfiend's Binding
-								217229.005,	-- Screaming Torchfiend's Blazewraps
-								217228.005,	-- Screaming Torchfiend's Burning Scowl
-								217227.005,	-- Screaming Torchfiend's Grasp
-								217230.005,	-- Screaming Torchfiend's Horned Memento
+								-- "Tier Slots"
+								modItemId(217226,5),	-- Screaming Torchfiend's Binding
+								modItemId(217229,5),	-- Screaming Torchfiend's Blazewraps
+								modItemId(217228,5),	-- Screaming Torchfiend's Burning Scowl
+								modItemId(217227,5),	-- Screaming Torchfiend's Grasp
+								modItemId(217230,5),	-- Screaming Torchfiend's Horned Memento
+								-- "Off Slots"
+								modItemId(207259,5),	-- Screaming Torchfiend's Armlets
+								modItemId(207260,5),	-- Screaming Torchfiend's Clasp
+								modItemId(207265,5),	-- Screaming Torchfiend's Clutches
+								modItemId(207258,5),	-- Screaming Torchfiend's Shawl
 							}},
 						}),
 						cl(DRUID, {
 							["sym"] = {{"select","itemID",
-								217193.005,	-- Bough of the Autumn Blaze
-								217191.005,	-- Chestroots of the Autumn Blaze
-								217192.005,	-- Handguards of the Autumn Blaze
-								217195.005,	-- Mantle of the Autumn Blaze
-								217194.005,	-- Pants of the Autumn Blaze
+								-- "Tier Slots"
+								modItemId(217193,5),	-- Bough of the Autumn Blaze
+								modItemId(217191,5),	-- Chestroots of the Autumn Blaze
+								modItemId(217192,5),	-- Handguards of the Autumn Blaze
+								modItemId(217195,5),	-- Mantle of the Autumn Blaze
+								modItemId(217194,5),	-- Pants of the Autumn Blaze
+								-- "Off Slots"
+								modItemId(202511,5),	-- Bands of the Autumn Blaze
+								modItemId(202510,5),	-- Foliage of the Autumn Blaze
+								modItemId(202512,5),	-- Garland of the Autumn Blaze
+								modItemId(202517,5),	-- Hooves of the Autumn Blaze
 							}},
 						}),
 						cl(EVOKER, {
 							["sym"] = {{"select","itemID",
-								217178.005,	-- Crown of the Awakened
-								217177.005,	-- Gauntlets of the Awakened
-								217176.005,	-- Hauberk of the Awakened
-								217179.005,	-- Legguards of the Awakened
-								217180.005,	-- Talons of the Awakened
+								-- "Tier Slots"
+								modItemId(217178,5),	-- Crown of the Awakened
+								modItemId(217177,5),	-- Gauntlets of the Awakened
+								modItemId(217176,5),	-- Hauberk of the Awakened
+								modItemId(217179,5),	-- Legguards of the Awakened
+								modItemId(217180,5),	-- Talons of the Awakened
+								-- "Off Slots"
+								modItemId(200385,5,1),	-- Bracers of the Awakened
+								modItemId(200384,5,1),	-- Chain of the Awakened
+								modItemId(200386,5,1),	-- Shroud of the Awakened
+								modItemId(200379,5,1),	-- Treads of the Awakened
 							}},
 						}),
 						cl(HUNTER, {
 							["sym"] = {{"select","itemID",
-								217181.005,	-- Stormwing Harrier's Cuirass
-								217184.005,	-- Stormwing Harrier's Greaves
-								217182.005,	-- Stormwing Harrier's Handguards
-								217185.005,	-- Stormwing Harrier's Pinions
-								217183.005,	-- Stormwing Harrier's Skullmask
+								-- "Tier Slots"
+								modItemId(217181,5),	-- Stormwing Harrier's Cuirass
+								modItemId(217184,5),	-- Stormwing Harrier's Greaves
+								modItemId(217182,5),	-- Stormwing Harrier's Handguards
+								modItemId(217185,5),	-- Stormwing Harrier's Pinions
+								modItemId(217183,5),	-- Stormwing Harrier's Skullmask
+								-- "Off Slots"
+								modItemId(200393,5,1),	-- Stormwing Harrier's Belt
+								modItemId(200395,5,1),	-- Stormwing Harrier's Plumage
+								modItemId(200388,5,1),	-- Stormwing Harrier's Sabatons
+								modItemId(200394,5,1),	-- Stormwing Harrier's Wristguards
 							}},
 						}),
 						cl(MAGE, {
 							["sym"] = {{"select","itemID",
-								217232.005,	-- Wayward Chronomancer's Chronocap
-								217231.005,	-- Wayward Chronomancer's Gloves
-								217234.005,	-- Wayward Chronomancer's Metronomes
-								217233.005,	-- Wayward Chronomancer's Pantaloons
-								217235.005,	-- Wayward Chronomancer's Patchwork
+								-- "Tier Slots"
+								modItemId(217232,5),	-- Wayward Chronomancer's Chronocap
+								modItemId(217231,5),	-- Wayward Chronomancer's Gloves
+								modItemId(217234,5),	-- Wayward Chronomancer's Metronomes
+								modItemId(217233,5),	-- Wayward Chronomancer's Pantaloons
+								modItemId(217235,5),	-- Wayward Chronomancer's Patchwork
+								-- "Off Slots"
+								modItemId(207286,5),	-- Wayward Chronomancer's Cuffs
+								modItemId(207285,5),	-- Wayward Chronomancer's Stole
+								modItemId(207292,5),	-- Wayward Chronomancer's Strapped Boots
+								modItemId(207287,5),	-- Wayward Chronomancer's Synchronous Belt
 							}},
 						}),
 						cl(MONK, {
 							["sym"] = {{"select","itemID",
-								217186.005,	-- Chestwrap of the Waking Fist
-								217188.005,	-- Gaze of the Waking Fist
-								217189.005,	-- Legguards of the Waking Fist
-								217190.005,	-- Mantle of the Waking Fist
-								217187.005,	-- Palms of the Waking Fist
+								-- "Tier Slots"
+								modItemId(217186,5),	-- Chestwrap of the Waking Fist
+								modItemId(217188,5),	-- Gaze of the Waking Fist
+								modItemId(217189,5),	-- Legguards of the Waking Fist
+								modItemId(217190,5),	-- Mantle of the Waking Fist
+								modItemId(217187,5),	-- Palms of the Waking Fist
+								-- "Off Slots"
+								modItemId(200367,5,1),	-- Cuffs of the Waking Fist
+								modItemId(200368,5,1),	-- Drape of the Waking Fist
+								modItemId(200361,5,1),	-- Gaiters of the Waking Fist
+								modItemId(200366,5,1),	-- Girdle of the Waking Fist
 							}},
 						}),
 						cl(PALADIN, {
 							["sym"] = {{"select","itemID",
-								217196.005,	-- Heartfire Sentinel's Brigandine
-								217199.005,	-- Heartfire Sentinel's Faulds
-								217198.005,	-- Heartfire Sentinel's Forgehelm
-								217197.005,	-- Heartfire Sentinel's Protectors
-								217200.005,	-- Heartfire Sentinel's Steelwings
+								-- "Tier Slots"
+								modItemId(217196,5),	-- Heartfire Sentinel's Brigandine
+								modItemId(217199,5),	-- Heartfire Sentinel's Faulds
+								modItemId(217198,5),	-- Heartfire Sentinel's Forgehelm
+								modItemId(217197,5),	-- Heartfire Sentinel's Protectors
+								modItemId(217200,5),	-- Heartfire Sentinel's Steelwings
+								-- "Off Slots"
+								modItemId(202448,5),	-- Heartfire Sentinel's Blessed Bindings
+								modItemId(202454,5),	-- Heartfire Sentinel's Greatboots
+								modItemId(202447,5),	-- Heartfire Sentinel's Pelerine
+								modItemId(202449,5),	-- Heartfire Sentinel's Waistguard
 							}},
 						}),
 						cl(PRIEST, {
 							["sym"] = {{"select","itemID",
-								217203.005,	-- Breeches of the Furnace Seraph
-								217205.005,	-- Command of the Furnace Seraph
-								217204.005,	-- Devotion of the Furnace Seraph
-								217201.005,	-- Grasp of the Furnace Seraph
-								217202.005,	-- Mask of the Furnace Seraph
+								-- "Tier Slots"
+								modItemId(217203,5),	-- Breeches of the Furnace Seraph
+								modItemId(217205,5),	-- Command of the Furnace Seraph
+								modItemId(217204,5),	-- Devotion of the Furnace Seraph
+								modItemId(217201,5),	-- Grasp of the Furnace Seraph
+								modItemId(217202,5),	-- Mask of the Furnace Seraph
+								-- "Off Slots"
+								modItemId(202538,5),	-- Cuffs of the Furnace Seraph
+								modItemId(202544,5),	-- Sabatons of the Furnace Seraph
+								modItemId(202539,5),	-- Sash of the Furnace Seraph
+								modItemId(202537,5),	-- Shroud of the Furnace Seraph
 							}},
 						}),
 						cl(ROGUE, {
 							["sym"] = {{"select","itemID",
-								217206.005,	-- Lurking Specter's Brigandine
-								217207.005,	-- Lurking Specter's Handgrips
-								217210.005,	-- Lurking Specter's Shoulderblades
-								217209.005,	-- Lurking Specter's Tights
-								217208.005,	-- Lurking Specter's Visage
+								-- "Tier Slots"
+								modItemId(217206,5),	-- Lurking Specter's Brigandine
+								modItemId(217207,5),	-- Lurking Specter's Handgrips
+								modItemId(217210,5),	-- Lurking Specter's Shoulderblades
+								modItemId(217209,5),	-- Lurking Specter's Tights
+								modItemId(217208,5),	-- Lurking Specter's Visage
+								-- "Off Slots"
+								modItemId(202493,5),	-- Lurking Specter's Armwraps
+								modItemId(202492,5),	-- Lurking Specter's Capelet
+								modItemId(202494,5),	-- Lurking Specter's Edgeband
+								modItemId(202499,5),	-- Lurking Specter's Tabi
 							}},
 						}),
 						cl(SHAMAN, {
 							["sym"] = {{"select","itemID",
-								217240.005,	-- Greatwolf Outcast's Companions
-								217239.005,	-- Greatwolf Outcast's Fur-Lined Kilt
-								217237.005,	-- Greatwolf Outcast's Grips
-								217236.005,	-- Greatwolf Outcast's Harness
-								217238.005,	-- Greatwolf Outcast's Jaws
+								-- "Tier Slots"
+								modItemId(217240,5),	-- Greatwolf Outcast's Companions
+								modItemId(217239,5),	-- Greatwolf Outcast's Fur-Lined Kilt
+								modItemId(217237,5),	-- Greatwolf Outcast's Grips
+								modItemId(217236,5),	-- Greatwolf Outcast's Harness
+								modItemId(217238,5),	-- Greatwolf Outcast's Jaws
+								-- "Off Slots"
+								modItemId(207204,5),	-- Greatwolf Outcast's Chainweave
+								modItemId(207211,5),	-- Greatwolf Outcast's Footpads
+								modItemId(207206,5),	-- Greatwolf Outcast's Sigil Belt
+								modItemId(207205,5),	-- Greatwolf Outcast's Wristguards
 							}},
 						}),
 						cl(WARLOCK, {
 							["sym"] = {{"select","itemID",
-								217214.005,	-- Amice of the Sinister Savant
-								217215.005,	-- Cursed Robes of the Sinister Savant
-								217212.005,	-- Grimhorns of the Sinister Savant
-								217211.005,	-- Grips of the Sinister Savant
-								217213.005,	-- Leggings of the Sinister Savant
+								-- "Tier Slots"
+								modItemId(217214,5),	-- Amice of the Sinister Savant
+								modItemId(217215,5),	-- Cursed Robes of the Sinister Savant
+								modItemId(217212,5),	-- Grimhorns of the Sinister Savant
+								modItemId(217211,5),	-- Grips of the Sinister Savant
+								modItemId(217213,5),	-- Leggings of the Sinister Savant
+								-- "Off Slots"
+								modItemId(202535,5),	-- Sandals of the Sinister Savant
+								modItemId(202528,5),	-- Shawl of the Sinister Savant
+								modItemId(202530,5),	-- Skullstrap of the Sinister Savant
+								modItemId(202529,5),	-- Wristwraps of the Sinister Savant
 							}},
 						}),
 						cl(WARRIOR, {
 							["sym"] = {{"select","itemID",
-								217216.005,	-- Battlechest of the Onyx Crucible
-								217217.005,	-- Handguards of the Onyx Crucible
-								217219.005,	-- Legplates of the Onyx Crucible
-								217220.005,	-- Pauldrons of the Onyx Crucible
-								217218.005,	-- Thraexhelm of the Onyx Crucible
+								-- "Tier Slots"
+								modItemId(217216,5),	-- Battlechest of the Onyx Crucible
+								modItemId(217217,5),	-- Handguards of the Onyx Crucible
+								modItemId(217219,5),	-- Legplates of the Onyx Crucible
+								modItemId(217220,5),	-- Pauldrons of the Onyx Crucible
+								modItemId(217218,5),	-- Thraexhelm of the Onyx Crucible
+								-- "Off Slots"
+								modItemId(202440,5),	-- Insignia of the Onyx Crucible
+								modItemId(202445,5),	-- Ironstriders of the Onyx Crucible
+								modItemId(202438,5),	-- Manteau of the Onyx Crucible
+								modItemId(202439,5),	-- Warbands of the Onyx Crucible
 							}},
 						}),
 					}),
@@ -1862,119 +2099,197 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = {{"select","itemID",
-								217221.006,	-- Casket of the Risen Nightmare
-								217224.006,	-- Greaves of the Risen Nightmare
-								217223.006,	-- Piercing Gaze of the Risen Nightmare
-								217225.006,	-- Skewers of the Risen Nightmare
-								217222.006,	-- Thorns of the Risen Nightmare
+								-- "Tier Slots"
+								modItemId(217221,6),	-- Casket of the Risen Nightmare
+								modItemId(217224,6),	-- Greaves of the Risen Nightmare
+								modItemId(217223,6),	-- Piercing Gaze of the Risen Nightmare
+								modItemId(217225,6),	-- Skewers of the Risen Nightmare
+								modItemId(217222,6),	-- Thorns of the Risen Nightmare
+								-- "Off Slots"
+								modItemId(207202,6),	-- Graveboots of the Risen Nightmare
+								modItemId(207197,6),	-- Seal of the Risen Nightmare
+								modItemId(207195,6),	-- Shroud of the Risen Nightmare
+								modItemId(207196,6),	-- Vambraces of the Risen Nightmare
 							}},
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = {{"select","itemID",
-								217226.006,	-- Screaming Torchfiend's Binding
-								217229.006,	-- Screaming Torchfiend's Blazewraps
-								217228.006,	-- Screaming Torchfiend's Burning Scowl
-								217227.006,	-- Screaming Torchfiend's Grasp
-								217230.006,	-- Screaming Torchfiend's Horned Memento
+								-- "Tier Slots"
+								modItemId(217226,6),	-- Screaming Torchfiend's Binding
+								modItemId(217229,6),	-- Screaming Torchfiend's Blazewraps
+								modItemId(217228,6),	-- Screaming Torchfiend's Burning Scowl
+								modItemId(217227,6),	-- Screaming Torchfiend's Grasp
+								modItemId(217230,6),	-- Screaming Torchfiend's Horned Memento
+								-- "Off Slots"
+								modItemId(207259,6),	-- Screaming Torchfiend's Armlets
+								modItemId(207260,6),	-- Screaming Torchfiend's Clasp
+								modItemId(207265,6),	-- Screaming Torchfiend's Clutches
+								modItemId(207258,6),	-- Screaming Torchfiend's Shawl
 							}},
 						}),
 						cl(DRUID, {
 							["sym"] = {{"select","itemID",
-								217193.006,	-- Bough of the Autumn Blaze
-								217191.006,	-- Chestroots of the Autumn Blaze
-								217192.006,	-- Handguards of the Autumn Blaze
-								217195.006,	-- Mantle of the Autumn Blaze
-								217194.006,	-- Pants of the Autumn Blaze
+								-- "Tier Slots"
+								modItemId(217193,6),	-- Bough of the Autumn Blaze
+								modItemId(217191,6),	-- Chestroots of the Autumn Blaze
+								modItemId(217192,6),	-- Handguards of the Autumn Blaze
+								modItemId(217195,6),	-- Mantle of the Autumn Blaze
+								modItemId(217194,6),	-- Pants of the Autumn Blaze
+								-- "Off Slots"
+								modItemId(202511,6),	-- Bands of the Autumn Blaze
+								modItemId(202510,6),	-- Foliage of the Autumn Blaze
+								modItemId(202512,6),	-- Garland of the Autumn Blaze
+								modItemId(202517,6),	-- Hooves of the Autumn Blaze
 							}},
 						}),
 						cl(EVOKER, {
 							["sym"] = {{"select","itemID",
-								217178.006,	-- Crown of the Awakened
-								217177.006,	-- Gauntlets of the Awakened
-								217176.006,	-- Hauberk of the Awakened
-								217179.006,	-- Legguards of the Awakened
-								217180.006,	-- Talons of the Awakened
+								-- "Tier Slots"
+								modItemId(217178,6),	-- Crown of the Awakened
+								modItemId(217177,6),	-- Gauntlets of the Awakened
+								modItemId(217176,6),	-- Hauberk of the Awakened
+								modItemId(217179,6),	-- Legguards of the Awakened
+								modItemId(217180,6),	-- Talons of the Awakened
+								-- "Off Slots"
+								modItemId(200385,6,450),	-- Bracers of the Awakened
+								modItemId(200384,6,450),	-- Chain of the Awakened
+								modItemId(200386,6,450),	-- Shroud of the Awakened
+								modItemId(200379,6,450),	-- Treads of the Awakened
 							}},
 						}),
 						cl(HUNTER, {
 							["sym"] = {{"select","itemID",
-								217181.006,	-- Stormwing Harrier's Cuirass
-								217184.006,	-- Stormwing Harrier's Greaves
-								217182.006,	-- Stormwing Harrier's Handguards
-								217185.006,	-- Stormwing Harrier's Pinions
-								217183.006,	-- Stormwing Harrier's Skullmask
+								-- "Tier Slots"
+								modItemId(217181,6),	-- Stormwing Harrier's Cuirass
+								modItemId(217184,6),	-- Stormwing Harrier's Greaves
+								modItemId(217182,6),	-- Stormwing Harrier's Handguards
+								modItemId(217185,6),	-- Stormwing Harrier's Pinions
+								modItemId(217183,6),	-- Stormwing Harrier's Skullmask
+								-- "Off Slots"
+								modItemId(200393,6,450),	-- Stormwing Harrier's Belt
+								modItemId(200395,6,450),	-- Stormwing Harrier's Plumage
+								modItemId(200388,6,450),	-- Stormwing Harrier's Sabatons
+								modItemId(200394,6,450),	-- Stormwing Harrier's Wristguards
 							}},
 						}),
 						cl(MAGE, {
 							["sym"] = {{"select","itemID",
-								217232.006,	-- Wayward Chronomancer's Chronocap
-								217231.006,	-- Wayward Chronomancer's Gloves
-								217234.006,	-- Wayward Chronomancer's Metronomes
-								217233.006,	-- Wayward Chronomancer's Pantaloons
-								217235.006,	-- Wayward Chronomancer's Patchwork
+								-- "Tier Slots"
+								modItemId(217232,6),	-- Wayward Chronomancer's Chronocap
+								modItemId(217231,6),	-- Wayward Chronomancer's Gloves
+								modItemId(217234,6),	-- Wayward Chronomancer's Metronomes
+								modItemId(217233,6),	-- Wayward Chronomancer's Pantaloons
+								modItemId(217235,6),	-- Wayward Chronomancer's Patchwork
+								-- "Off Slots"
+								modItemId(207286,6),	-- Wayward Chronomancer's Cuffs
+								modItemId(207285,6),	-- Wayward Chronomancer's Stole
+								modItemId(207292,6),	-- Wayward Chronomancer's Strapped Boots
+								modItemId(207287,6),	-- Wayward Chronomancer's Synchronous Belt
 							}},
 						}),
 						cl(MONK, {
 							["sym"] = {{"select","itemID",
-								217186.006,	-- Chestwrap of the Waking Fist
-								217188.006,	-- Gaze of the Waking Fist
-								217189.006,	-- Legguards of the Waking Fist
-								217190.006,	-- Mantle of the Waking Fist
-								217187.006,	-- Palms of the Waking Fist
+								-- "Tier Slots"
+								modItemId(217186,6),	-- Chestwrap of the Waking Fist
+								modItemId(217188,6),	-- Gaze of the Waking Fist
+								modItemId(217189,6),	-- Legguards of the Waking Fist
+								modItemId(217190,6),	-- Mantle of the Waking Fist
+								modItemId(217187,6),	-- Palms of the Waking Fist
+								-- "Off Slots"
+								modItemId(200367,6,450),	-- Cuffs of the Waking Fist
+								modItemId(200368,6,450),	-- Drape of the Waking Fist
+								modItemId(200361,6,450),	-- Gaiters of the Waking Fist
+								modItemId(200366,6,450),	-- Girdle of the Waking Fist
 							}},
 						}),
 						cl(PALADIN, {
 							["sym"] = {{"select","itemID",
-								217196.006,	-- Heartfire Sentinel's Brigandine
-								217199.006,	-- Heartfire Sentinel's Faulds
-								217198.006,	-- Heartfire Sentinel's Forgehelm
-								217197.006,	-- Heartfire Sentinel's Protectors
-								217200.006,	-- Heartfire Sentinel's Steelwings
+								-- "Tier Slots"
+								modItemId(217196,6),	-- Heartfire Sentinel's Brigandine
+								modItemId(217199,6),	-- Heartfire Sentinel's Faulds
+								modItemId(217198,6),	-- Heartfire Sentinel's Forgehelm
+								modItemId(217197,6),	-- Heartfire Sentinel's Protectors
+								modItemId(217200,6),	-- Heartfire Sentinel's Steelwings
+								-- "Off Slots"
+								modItemId(202448,6),	-- Heartfire Sentinel's Blessed Bindings
+								modItemId(202454,6),	-- Heartfire Sentinel's Greatboots
+								modItemId(202447,6),	-- Heartfire Sentinel's Pelerine
+								modItemId(202449,6),	-- Heartfire Sentinel's Waistguard
 							}},
 						}),
 						cl(PRIEST, {
 							["sym"] = {{"select","itemID",
-								217203.006,	-- Breeches of the Furnace Seraph
-								217205.006,	-- Command of the Furnace Seraph
-								217204.006,	-- Devotion of the Furnace Seraph
-								217201.006,	-- Grasp of the Furnace Seraph
-								217202.006,	-- Mask of the Furnace Seraph
+								-- "Tier Slots"
+								modItemId(217203,6),	-- Breeches of the Furnace Seraph
+								modItemId(217205,6),	-- Command of the Furnace Seraph
+								modItemId(217204,6),	-- Devotion of the Furnace Seraph
+								modItemId(217201,6),	-- Grasp of the Furnace Seraph
+								modItemId(217202,6),	-- Mask of the Furnace Seraph
+								-- "Off Slots"
+								modItemId(202538,6),	-- Cuffs of the Furnace Seraph
+								modItemId(202544,6),	-- Sabatons of the Furnace Seraph
+								modItemId(202539,6),	-- Sash of the Furnace Seraph
+								modItemId(202537,6),	-- Shroud of the Furnace Seraph
 							}},
 						}),
 						cl(ROGUE, {
 							["sym"] = {{"select","itemID",
-								217206.006,	-- Lurking Specter's Brigandine
-								217207.006,	-- Lurking Specter's Handgrips
-								217210.006,	-- Lurking Specter's Shoulderblades
-								217209.006,	-- Lurking Specter's Tights
-								217208.006,	-- Lurking Specter's Visage
+								-- "Tier Slots"
+								modItemId(217206,6),	-- Lurking Specter's Brigandine
+								modItemId(217207,6),	-- Lurking Specter's Handgrips
+								modItemId(217210,6),	-- Lurking Specter's Shoulderblades
+								modItemId(217209,6),	-- Lurking Specter's Tights
+								modItemId(217208,6),	-- Lurking Specter's Visage
+								-- "Off Slots"
+								modItemId(202493,6),	-- Lurking Specter's Armwraps
+								modItemId(202492,6),	-- Lurking Specter's Capelet
+								modItemId(202494,6),	-- Lurking Specter's Edgeband
+								modItemId(202499,6),	-- Lurking Specter's Tabi
 							}},
 						}),
 						cl(SHAMAN, {
 							["sym"] = {{"select","itemID",
-								217240.006,	-- Greatwolf Outcast's Companions
-								217239.006,	-- Greatwolf Outcast's Fur-Lined Kilt
-								217237.006,	-- Greatwolf Outcast's Grips
-								217236.006,	-- Greatwolf Outcast's Harness
-								217238.006,	-- Greatwolf Outcast's Jaws
+								-- "Tier Slots"
+								modItemId(217240,6),	-- Greatwolf Outcast's Companions
+								modItemId(217239,6),	-- Greatwolf Outcast's Fur-Lined Kilt
+								modItemId(217237,6),	-- Greatwolf Outcast's Grips
+								modItemId(217236,6),	-- Greatwolf Outcast's Harness
+								modItemId(217238,6),	-- Greatwolf Outcast's Jaws
+								-- "Off Slots"
+								modItemId(207204,6),	-- Greatwolf Outcast's Chainweave
+								modItemId(207211,6),	-- Greatwolf Outcast's Footpads
+								modItemId(207206,6),	-- Greatwolf Outcast's Sigil Belt
+								modItemId(207205,6),	-- Greatwolf Outcast's Wristguards
 							}},
 						}),
 						cl(WARLOCK, {
 							["sym"] = {{"select","itemID",
-								217214.006,	-- Amice of the Sinister Savant
-								217215.006,	-- Cursed Robes of the Sinister Savant
-								217212.006,	-- Grimhorns of the Sinister Savant
-								217211.006,	-- Grips of the Sinister Savant
-								217213.006,	-- Leggings of the Sinister Savant
+								-- "Tier Slots"
+								modItemId(217214,6),	-- Amice of the Sinister Savant
+								modItemId(217215,6),	-- Cursed Robes of the Sinister Savant
+								modItemId(217212,6),	-- Grimhorns of the Sinister Savant
+								modItemId(217211,6),	-- Grips of the Sinister Savant
+								modItemId(217213,6),	-- Leggings of the Sinister Savant
+								-- "Off Slots"
+								modItemId(202535,6),	-- Sandals of the Sinister Savant
+								modItemId(202528,6),	-- Shawl of the Sinister Savant
+								modItemId(202530,6),	-- Skullstrap of the Sinister Savant
+								modItemId(202529,6),	-- Wristwraps of the Sinister Savant
 							}},
 						}),
 						cl(WARRIOR, {
 							["sym"] = {{"select","itemID",
-								217216.006,	-- Battlechest of the Onyx Crucible
-								217217.006,	-- Handguards of the Onyx Crucible
-								217219.006,	-- Legplates of the Onyx Crucible
-								217220.006,	-- Pauldrons of the Onyx Crucible
-								217218.006,	-- Thraexhelm of the Onyx Crucible
+								-- "Tier Slots"
+								modItemId(217216,6),	-- Battlechest of the Onyx Crucible
+								modItemId(217217,6),	-- Handguards of the Onyx Crucible
+								modItemId(217219,6),	-- Legplates of the Onyx Crucible
+								modItemId(217220,6),	-- Pauldrons of the Onyx Crucible
+								modItemId(217218,6),	-- Thraexhelm of the Onyx Crucible
+								-- "Off Slots"
+								modItemId(202440,6),	-- Insignia of the Onyx Crucible
+								modItemId(202445,6),	-- Ironstriders of the Onyx Crucible
+								modItemId(202438,6),	-- Manteau of the Onyx Crucible
+								modItemId(202439,6),	-- Warbands of the Onyx Crucible
 							}},
 						}),
 					}),
@@ -2689,6 +3004,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				})),
 			}))),
 			pvp(header(HEADERS.Achievement, SEASON_DRACONIC_PVP, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+				-- There are new IDs only for "Tier Slots" in season 4
+				-- "Off Slots" use old IDs of original items but have a new bonusID & sourceID
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
 					cl(DEATHKNIGHT, {
 						i(217221),	-- Casket of the Risen Nightmare
