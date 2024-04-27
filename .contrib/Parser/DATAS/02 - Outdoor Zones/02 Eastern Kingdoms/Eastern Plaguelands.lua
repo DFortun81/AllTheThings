@@ -1745,7 +1745,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6135, {	-- Duskwing, Oh How I Hate Thee...
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
-					["sourceQuest"] = 6133,	-- The Ranger Lord's Behest
+					["sourceQuests"] = {
+						6133,	-- The Ranger Lord's Behest
+						6022,	-- To Kill With Purpose
+						6042,	-- Un-Life's Little Annoyances
+					},
 					-- #if AFTER WRATH
 					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
 					-- #else
