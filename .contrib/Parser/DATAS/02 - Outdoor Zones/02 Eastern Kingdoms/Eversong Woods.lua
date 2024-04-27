@@ -1349,6 +1349,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "i", 21808 },	-- Arcane Core
 							["cr"] = 15638,	-- Arcane Patroller
 						}),
+						i(24241),	-- Green Chain Belt
+						i(23367),	-- Light Silk Robe
+						i(27552),	-- Soft Leather Vest
 						i(131237, {	-- Padded Chainmail
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1772,7 +1775,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Unstable Mana Crystal
-							["provider"] = { "i", 20743 },	-- Unstable Mana Crystal
+							["providers"] = {
+								{ "i",  20743 },	-- Unstable Mana Crystal
+								{ "o", 180600 },	-- Unstable Mana Crystal Crate
+							},
 						}),
 					},
 				}),
