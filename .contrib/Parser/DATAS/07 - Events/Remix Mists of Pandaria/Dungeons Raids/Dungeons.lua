@@ -3,7 +3,7 @@
 -----------------------------------------------------
 DUNGEONS = createHeader({
 	readable = "Dungeons",
-	--icon = "",
+	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Dungeons",
 	},

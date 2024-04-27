@@ -1,6 +1,6 @@
 REMIX_MOP = createHeader({
 	readable = "Remix: Mists of Pandaria",
-	--icon = ,
+	icon = "Interface\\Icons\\achievement_character_pandaren_female",
 	--eventID = EVENTS.,
 	--eventSchedule = {
 

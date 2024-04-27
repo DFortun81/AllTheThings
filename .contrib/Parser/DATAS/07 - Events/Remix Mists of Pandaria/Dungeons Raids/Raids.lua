@@ -3,7 +3,7 @@
 -----------------------------------------------------
 RAIDS = createHeader({
 	readable = "Raids",
-	--icon = "",
+	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Raids",
 	},

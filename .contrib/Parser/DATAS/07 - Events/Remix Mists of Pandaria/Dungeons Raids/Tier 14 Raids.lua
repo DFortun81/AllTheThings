@@ -3,7 +3,7 @@
 -----------------------------------------------------
 TIER_14_RAIDS = createHeader({
 	readable = "Tier 14 Raids",
-	--icon = "",
+	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Tier 14 Raids",
 	},
