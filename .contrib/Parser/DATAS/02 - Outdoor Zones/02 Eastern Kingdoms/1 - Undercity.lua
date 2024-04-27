@@ -609,20 +609,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/3 Filled Containment Coffer
-							["provider"] = { "i", 7292 },	-- Filled Containment Coffer
-							["coord"] = { 53.9, 73.2, UNDERCITY },
-							["cost"] = {
-								{ "i", 7247, 1 },	-- Chest of Containment Coffers
-								{ "i", 7308, 1 },	-- Cantation of Manifestation
+							["providers"] = {
+								{ "i", 7292 },	-- Filled Containment Coffer
+								{ "i", 7247 },	-- Chest of Containment Coffers
+								{ "i", 7308 },	-- Cantation of Manifestation
 							},
+							["coord"] = { 53.9, 73.2, UNDERCITY },
 							["cr"] = 6492,	-- Rift Spawn
 						}),
 						objective(2, {	-- 0/1 Chest of Containment Coffers
-							["provider"] = { "i", 7247 },	-- Chest of Containment Coffers
+							["providers"] = {
+								{ "i",   7247 },	-- Chest of Containment Coffers
+								{ "o", 105174 },	-- Chest of Containment Coffers
+							},
 							["coord"] = { 85.4, 10.2, UNDERCITY },
 						}),
 						objective(3, {	-- 0/1 Cantation of Manifestation
-							["provider"] = { "i", 7308 },	-- Cantation of Manifestation
+							["providers"] = {
+								{ "i",   7308 },	-- Cantation of Manifestation
+								{ "o", 105175 },	-- Cantation of Manifestation
+							},
 							["coord"] = { 85.4, 10.2, UNDERCITY },
 						}),
 					},
