@@ -1015,7 +1015,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Balnir Snapdragons
-							["provider"] = { "i", 7227 },	-- Balnir Snapdragons
+							["providers"] = {
+								{ "i",   7227 },	-- Balnir Snapdragons
+								{ "o", 102985 },	-- Balnir Snapdragons
+							},
 							["coord"] = { 77.4, 62.1, TIRISFAL_GLADES },
 						}),
 						i(7507, {	-- Arcane Orb

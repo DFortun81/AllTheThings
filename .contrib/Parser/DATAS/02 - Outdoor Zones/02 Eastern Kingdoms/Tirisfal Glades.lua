@@ -1335,17 +1335,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				q(431, {	-- Candles of Beckoning
-					["provider"] = { "o", 1586 },	-- Crate of Candles
-					["coord"] = { 68.1, 42, TIRISFAL_GLADES },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 5,
-					["groups"] = {
-						i(3080),	-- Candle of Beckoning
-					},
-				}),
 				q(24990, {	-- Darkhound Pounding
 					["qg"] = 10665,	-- Junior Apothecary Holland
 					["sourceQuests"] = {
@@ -1759,10 +1748,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
-						objective(1, {	-- 0/1 Lillith Nefara slain
-							["provider"] = { "n", 1946 },	-- Lillith Nefara
-							["cost"] = { { "i", 3080, 1 } },	-- Candle of Beckoning
+						q(431, {	-- Candles of Beckoning
+							["provider"] = { "o", 1586 },	-- Crate of Candles
+							["coord"] = { 68.1, 42, TIRISFAL_GLADES },
+							["timeline"] = { REMOVED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["lvl"] = 5,
+							["groups"] = {
+								i(3080),	-- Candle of Beckoning
+							},
+						}),
+						q(410, {	-- The Dormant Shade
+							["providers"] = {
+								{ "i", 3080 },	-- Candle of Beckoning
+								{ "o", 1557 },	-- Lillith's Dinner Table
+							},
 							["coord"] = { 66.6, 44.8, TIRISFAL_GLADES },
+							["timeline"] = { REMOVED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["lvl"] = 5,
+							["groups"] = {
+								objective(1, {	-- 0/1 Lillith Nefara slain
+									["questID"] = 409,	-- Proving Allegiance
+									["provider"] = { "n", 1946 },	-- Lillith Nefara
+									["coord"] = { 66.6, 44.8, TIRISFAL_GLADES },
+								}),
+							},
 						}),
 					},
 				}),
@@ -1932,15 +1945,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
-				}),
-				q(410, {	-- The Dormant Shade
-					["provider"] = { "o", 1557 },	-- Lillith's Dinner Table
-					["coord"] = { 66.6, 44.8, TIRISFAL_GLADES },
-					["cost"] = { { "i", 3080, 1 } },	-- Candle of Beckoning
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 5,
 				}),
 				q(408, {	-- The Family Crypt
 					["qg"] = 1499,	-- Magistrate Sevren

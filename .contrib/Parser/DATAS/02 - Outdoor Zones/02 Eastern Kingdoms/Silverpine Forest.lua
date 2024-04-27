@@ -316,7 +316,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Remedy of Arugal
-							["provider"] = { "i", 3155 },	-- Remedy of Arugal
+							["providers"] = {
+								{ "i", 3155 },	-- Remedy of Arugal
+								{ "o", 1571 },	-- Dusty Spellbooks
+							},
 							["coord"] = { 52.8, 28.4, SILVERPINE_FOREST },
 						}),
 					},

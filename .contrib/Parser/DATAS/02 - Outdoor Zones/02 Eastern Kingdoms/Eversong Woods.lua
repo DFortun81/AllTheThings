@@ -1077,8 +1077,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Eversong Ranger Blessed
-							["spellID"] = 1243,	-- Power Word: Fortitude
-							["cr"] = 15938,	-- Eversong Ranger
+							["provider"] = { "n", 15938 },	-- Eversong Ranger
 						}),
 						i(23924, {	-- Robes of Silvermoon
 							["timeline"] = { REMOVED_4_0_3 },
