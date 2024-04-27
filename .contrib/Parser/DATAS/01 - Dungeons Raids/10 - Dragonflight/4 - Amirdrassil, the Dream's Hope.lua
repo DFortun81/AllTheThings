@@ -739,31 +739,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19570, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Flames
 					crit(64986, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64987, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64988, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64989, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64990, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64991, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64992, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64993, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64994, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
 				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Flames
