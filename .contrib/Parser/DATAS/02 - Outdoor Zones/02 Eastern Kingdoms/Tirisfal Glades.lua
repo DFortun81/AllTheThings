@@ -1523,7 +1523,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/3 Gloom Weed
-							["provider"] = { "i", 12737 },	-- Gloom Weed
+							["providers"] = {
+								{ "i",  12737 },	-- Gloom Weed
+								{ "o", 175566 },	-- Gloom Weed
+							},
+							["coord"] = { 49.7, 54.9, TIRISFAL_GLADES },
 						}),
 					},
 				}),
