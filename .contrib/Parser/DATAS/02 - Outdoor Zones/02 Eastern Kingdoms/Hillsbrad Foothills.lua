@@ -1126,7 +1126,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(509, {	-- Elixir of Agony (1/5)
 					["qg"] = 2216,	-- Apothecary Lydon
+					-- #if BEFORE WRATH
 					["sourceQuest"] = 502,	-- Elixir of Pain (2/2)
+					-- #endif
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1227,7 +1229,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(501, {	-- Elixir of Pain (1/2)
 					["qg"] = 2216,	-- Apothecary Lydon
+					-- #if BEFORE WRATH
 					["sourceQuest"] = 499,	-- Elixir of Suffering (2/2)
+					-- #endif
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
