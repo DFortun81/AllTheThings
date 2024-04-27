@@ -191,10 +191,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5724, {	-- Returning the Lost Satchel
-					["qg"] = 11834,	-- Maur Grimtotem
+					["providers"] = {
+						{ "n", 11834 },	-- Maur Grimtotem
+						{ "i", 14381 },	-- Grimtotem Satchel
+					},
 					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14381, 1 } },	-- Grimtotem Satchel
+					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -404,9 +407,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(11517, {	-- Oggleflint <Ragefire Chieftain>
 				["timeline"] = { REMOVED_5_0_4 },
 				["groups"] = {
-					i(14381, {	-- Grimtotem Satchel
-						["description"] = "Found on the tauren corpse in front of this boss.",
-					}),
 					i(68194, {	-- Oggleflint's Inspirer
 						["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					}),

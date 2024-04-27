@@ -676,13 +676,13 @@ end
 MESSAGE_HANDLERS.char = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
 	local guid, lastPlayed = (":"):split(content[2]);
-	ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed), true);
+	ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed) or 0, true);
 end
 MESSAGE_HANDLERS.chars = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
 	for i=2,#content,1 do
 		local guid, lastPlayed = (":"):split(content[i]);
-		ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed), false);
+		ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed) or 0, false);
 	end
 end
 MESSAGE_HANDLERS.link = function(self, sender, content, responses)
