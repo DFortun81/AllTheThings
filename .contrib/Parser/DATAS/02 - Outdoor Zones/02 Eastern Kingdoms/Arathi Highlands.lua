@@ -325,7 +325,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(677, {	-- Call to Arms (1/3)
 					["qg"] = 2771,	-- Drum Fel
+					-- #if BEFORE WRATH
 					["sourceQuest"] = 676,	-- The Hammer May Fall
+					-- #endif
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
