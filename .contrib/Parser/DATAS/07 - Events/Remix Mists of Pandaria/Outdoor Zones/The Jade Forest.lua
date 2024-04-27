@@ -12,9 +12,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19883, {	-- Campaign: The Jade Forest [H]
 					["races"] = HORDE_ONLY,
 				}),
-				ach(19993, {	-- Elusive Foes: The Jade Forest
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(19993),		-- Elusive Foes: The Jade Forest
 				ach(20026, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Jade Forest
 					crit(65919),	-- Tian Monastery
 					crit(65920),	-- Dawn's Blossom
@@ -48,7 +46,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["_quests"] = { 31404 },
 					}),
 				}),
-				ach(20008),		-- Looking For Group: The Jade Forest
+				ach(20008, {	-- Looking For Group: The Jade Forest
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19923,	-- Greenstone Village
+						19893,	-- A Brewing Storm
+						19894,	-- Temple of the Jade Serpent
+					}},
+				}),
 				ach(19912),		-- Order of the Cloud Serpent
 				ach(19872, {	-- The Jade Forest
 					-- Meta Achievement

@@ -7,9 +7,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19884),		-- Campaign: Valley of the Four Winds
-				ach(19994, {	-- Elusive Foes: Valley of the Four Winds
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(19994),		-- Elusive Foes: Valley of the Four Winds
 				ach(20027, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Valley of the Four Winds
 					crit(65936),	-- Winds' Edge
 					crit(65937),	-- Dustback Gorge

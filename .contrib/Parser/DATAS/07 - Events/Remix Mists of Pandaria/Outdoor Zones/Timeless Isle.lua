@@ -6,9 +6,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(20001, {	-- Elusive Foes: Timeless Isle
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(20001),		-- Elusive Foes: Timeless Isle
 				ach(19922),		-- Emperor Shaohao
 				ach(19982, {	-- Hidden Treasures: Timeless Isle
 					crit(65819, {	-- Flameheart Shawl
@@ -52,9 +50,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20025,	-- Ordos
 					}},
 				}),
-				ach(20002, {	-- Powerful Enemies: Timeless Isle
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(20002);		-- Powerful Enemies: Timeless Isle
 				ach(20003, {	-- Timeless Isle
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

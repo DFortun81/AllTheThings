@@ -26,9 +26,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(220765),	-- Sha Corruption (ILLUSION!)
 					},
 				}),
-				ach(19998, {		-- Elusive Foes: Dread Wastes
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(19998),		-- Elusive Foes: Dread Wastes
 				ach(20031, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Dread Wastes
 					crit(65995),	-- Heart of Fear
 					crit(65996),	-- Klaxxi'vess

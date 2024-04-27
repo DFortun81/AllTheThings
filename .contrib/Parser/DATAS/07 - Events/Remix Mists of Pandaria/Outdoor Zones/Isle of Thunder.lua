@@ -44,9 +44,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["_quests"] = { 32277 },
 					}),
 				})),
-				ach(20000, {	-- Elusive Foes: Isle of Thunder
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(20000),		-- Elusive Foes: Isle of Thunder
 				ach(19880, {	-- Isle of Thunder
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

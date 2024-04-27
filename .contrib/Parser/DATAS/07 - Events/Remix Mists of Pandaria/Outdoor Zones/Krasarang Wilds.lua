@@ -16,12 +16,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19918, {	-- Dominance Offensive [H]
 					["races"] = HORDE_ONLY,
 				}),
-				ach(19995, {	-- Elusive Foes: Krasarang Wilds
-					["sym"] = {{ "achievement_criteria" }},
-				}),
-				ach(19999, {	-- Elusive Foes: Landfall
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(19995),		-- Elusive Foes: Krasarang Wilds
+				ach(19999),		-- Elusive Foes: Landfall
 				ach(20028, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Krasarang Wilds
 					crit(65954),	-- Anglers Wharf
 					crit(65955),	-- Cradle of Chi-Ji

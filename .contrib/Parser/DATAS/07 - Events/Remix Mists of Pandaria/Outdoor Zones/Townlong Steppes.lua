@@ -7,9 +7,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19889),		-- Campaign: Townlong Steppes
-				ach(19997, {	-- Elusive Foes: Townlong Steppes
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(19997),		-- Elusive Foes: Townlong Steppes
 				ach(20030, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Townlong Steppes
 					crit(65984),	-- Gao-Ran Battlefront
 					crit(65985),	-- Kri'vess

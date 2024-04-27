@@ -12,9 +12,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19888, {	-- Campaign: Kun-Lai Summit [H]
 					["races"] = HORDE_ONLY,
 				}),
-				ach(19996, {	-- Elusive Foes: Kun-Lai Summit
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(19996),		-- Elusive Foes: Kun-Lai Summit
 				ach(20029, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Kun-Lai Summit
 					crit(65970),	-- Binan Village
 					crit(65971),	-- Firebough Nook
