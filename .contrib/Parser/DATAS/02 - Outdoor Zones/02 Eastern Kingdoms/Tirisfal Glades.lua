@@ -162,7 +162,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 3,
 							["groups"] = {
 								objective(1, {	-- Samuel's Remains Buried
-									["provider"] = { "i", 16333 },	-- Samuel's Remains
+									["providers"] = {
+										{ "i",  16333 },	-- Samuel's Remains
+										{ "o", 178090 },	-- Marla's Grave
+									},
 									["coords"] = {
 										{ 36.6, 61.6, TIRISFAL_GLADES },
 										{ 31, 65, TIRISFAL_GLADES },
@@ -319,7 +322,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if BEFORE 4.0.3
 							["groups"] = {
 								objective(1, {	-- 0/6 Scavenged Goods
-									["provider"] = { "i", 11127 },	-- Scavenged Goods
+									["providers"] = {
+										{ "i",  11127 },	-- Scavenged Goods
+										{ "o", 164662 },	-- Equipment Boxes
+									},
 								}),
 								i(11848),	-- Flax Belt
 								i(11849),	-- Rustmetal Bracers
@@ -1444,7 +1450,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- 0/10 Tirisfal Pumpkin
-							["provider"] = { "i", 2846 },	-- Tirisfal Pumpkin
+							["providers"] = {
+								{ "i", 2846 },	-- Tirisfal Pumpkin
+								{ "o", 375 },	-- Tirisfal Pumpkin
+							},
+							["coord"] = { 35.5, 52.5, TIRISFAL_GLADES },
 						}),
 					},
 				}),
