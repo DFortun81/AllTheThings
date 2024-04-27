@@ -169,15 +169,8 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		local id = t[KEY];
 		-- character collected
 		if app.IsCached(CACHE, id) then return 1; end
-		-- factions can dynamically be collected since there's no 'on collected' event
-		if t.standing >= t.maxstanding then
-			-- Character Cache
-			app.SetCollected(t, CACHE, id, true, SETTING)
-			-- Account Cache handled by AccountRecalculate
-			return 1;
-		end
 		-- account-wide collected
-		if app.Settings.AccountWide[SETTING] and app.IsAccountCached(CACHE, id) then return 2; end
+		if app.IsAccountTracked(CACHE, id, SETTING) then return 2; end
 	end,
 	saved = app.IsClassic and function(t)
 		local factionID = t[KEY];
@@ -383,6 +376,26 @@ if app.IsRetail then
 		app.SetBatchCached(CACHE, none)
 		-- Account Cache (removals handled by Sync)
 		app.SetBatchAccountCached(CACHE, saved, 1)
+	end);
+	local function ScanForNewCollectedFactions()
+		-- app.PrintDebug("Scan uncollected factions")
+		local faction
+		local IsCached, SearchForObject = app.IsCached, app.SearchForObject
+		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+			if not IsCached(CACHE, id) then
+				-- app.PrintDebug("Check Uncached Faction",id)
+				faction = SearchForObject(KEY, id)
+				-- factions can dynamically be during the 'UPDATE_FACTION' event (thanks Blizzard not telling us which Faction got rep...)
+				if faction.standing >= faction.maxstanding then
+					-- Character Cache
+					app.SetCollected(faction, CACHE, id, true, SETTING)
+				end
+			end
+		end
+		-- app.PrintDebug("Scan uncollected factions:Done")
+	end
+	app.AddEventRegistration("UPDATE_FACTION", function()
+		app.CallbackHandlers.AfterCombatOrDelayedCallback(ScanForNewCollectedFactions, 2)
 	end);
 end
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
