@@ -1699,7 +1699,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						cl(DEATHKNIGHT, {
 							["sym"] = {{"select","itemID",
 								-- "Tier Slots"
-								modItemId(217221,4),
 								modItemId(217221,3),	-- Casket of the Risen Nightmare
 								modItemId(217224,3),	-- Greaves of the Risen Nightmare
 								modItemId(217223,3),	-- Piercing Gaze of the Risen Nightmare
