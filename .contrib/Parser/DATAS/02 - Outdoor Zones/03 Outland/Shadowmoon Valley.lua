@@ -1433,7 +1433,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11047, {	-- The Apprentice's Request
 						["qg"] = 23280,	-- Agadai
-						["coord"] = { 52.0, 54.4, NAGRAND },
+						["coord"] = { 52.0, 54.4, BLADES_EDGE_MOUNTAINS },
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
