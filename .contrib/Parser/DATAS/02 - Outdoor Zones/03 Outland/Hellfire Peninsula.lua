@@ -3636,3 +3636,4 @@ appendGroups({
 root(ROOTS.HiddenQuestTriggers, {
 	q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in quest 10124 & 10143
 });
+-- #endif
