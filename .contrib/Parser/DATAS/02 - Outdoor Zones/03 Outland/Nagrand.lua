@@ -969,31 +969,24 @@ root(ROOTS.Zones, {
 							i(25565),	-- Spaulders of the Ring
 						},
 					}),
-					q(9871, {	-- Murkblood Invaders (A)
-						["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
+					{
+						["allianceQuestData"] = q(9871, {	-- Murkblood Invaders (A)
+							["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (QI!)
+						}),
+						["hordeQuestData"] = q(9872, {	-- Murkblood Invaders (H)
+							["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (QI!)
+						}),
 						["coord"] = { 33.9, 58.0, NAGRAND },
 						["crs"] = { 18238 },	-- Murkblood Invader
-						["races"] = ALLIANCE_ONLY,
 						-- #if AFTER 9.0.2
 						-- confirmed on a lvl 53, no party sync
 						-- ["lockCriteria"] = { 1, "lvl", 50 },
 						-- #endif
+						-- Shadowbrooks - Discord report that evokers can get the quest at level 62?
 						-- #if AFTER 10.0.2
-						["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
+						-- ["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
 						-- #endif
-					}),
-					q(9872, {	-- Murkblood Invaders (H)
-						["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
-						["coord"] = { 33.9, 58.0, NAGRAND },
-						["crs"] = { 18238 },	-- Murkblood Invader
-						["races"] = HORDE_ONLY,
-						-- #if AFTER 9.0.2
-						-- ["lockCriteria"] = { 1, "lvl", 50 },
-						-- #endif
-						-- #if AFTER 10.0.2
-						["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
-						-- #endif
-					}),
+					},
 					q(9867, {	-- Murkblood Leaders..
 						["qg"] = 18068,	-- Farseer Margadesh <The Lightning Sons>
 						["coord"] = { 54.6, 39.8, NAGRAND },
