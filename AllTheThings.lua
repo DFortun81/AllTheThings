@@ -1011,15 +1011,19 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateFaction(t.factionID, t);
 		elseif t.heirloomID then
 			t = app.CreateHeirloom(t.heirloomID, t);
-		elseif t.itemID then
+		elseif t.itemID or t.modItemID then
+			local itemID, modID, bonusID = app.GetItemIDAndModID(t.modItemID or t.itemID)
+			t.itemID = itemID
+			t.modID = modID
+			t.bonusID = bonusID
 			if t.toyID then
-				t = app.CreateToy(t.itemID, t);
+				t = app.CreateToy(itemID, t);
 			elseif t.runeforgePowerID then
 				t = app.CreateRuneforgeLegendary(t.runeforgePowerID, t);
 			elseif t.conduitID then
 				t = app.CreateConduit(t.conduitID, t);
 			else
-				t = app.CreateItem(t.itemID, t);
+				t = app.CreateItem(itemID, t);
 			end
 		elseif t.npcID or t.creatureID then
 			t = app.CreateNPC(t.npcID or t.creatureID, t);
