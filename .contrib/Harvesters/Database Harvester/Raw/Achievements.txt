@@ -13663,6 +13663,8 @@
 40171@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
 40192@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
 40193@@@Into the Storm (copy)
+10.2.6.54358
+40315@@@[HIDDEN] Now THIS is Dragon Racing!
 10.2.7.54171
 17918@@@Undead Battler of Zaralek Cavern
 19871@@@Infinite Power

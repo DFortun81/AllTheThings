@@ -707,6 +707,8 @@
 544@@@Swashbuckler %s
 545@@@Buccaneer %s
 546@@@First Mate %s
+10.2.6.54358
+557@@@%s, Awakened Hero
 10.2.7.54171
 539@@@Mistrunner %s
 551@@@Timerunner %s
