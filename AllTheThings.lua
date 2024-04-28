@@ -1480,6 +1480,9 @@ app.RecreateObject = function(t)
 	return obj;
 end
 
+local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams
+	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams
+
 -- Symlink Lib
 do
 local select, tremove, unpack =
@@ -1530,6 +1533,11 @@ local ResolveFunctions = {
 		local Search = SearchForObject
 		for i=1,vals do
 			val = select(i, ...);
+			if field == "modItemID" then
+				-- this is really dumb but direct raw values don't 'always' properly match generated values...
+				-- but splitting the value apart and putting it back together searches accurately
+				val = GetGroupItemIDWithModID(nil, GetItemIDAndModID(val))
+			end
 			cache = Search(field, val, "field", true);
 			if cache and #cache > 0 then
 				ArrayAppend(searchResults, cache)
@@ -2339,9 +2347,6 @@ app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
-
-local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams
-	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams
 
 do
 local ContainsLimit, ContainsExceeded;

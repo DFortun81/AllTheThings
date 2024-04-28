@@ -1497,7 +1497,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217221,4),	-- Casket of the Risen Nightmare
 								modItemId(217224,4),	-- Greaves of the Risen Nightmare
@@ -1512,7 +1512,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217226,4),	-- Screaming Torchfiend's Binding
 								modItemId(217229,4),	-- Screaming Torchfiend's Blazewraps
@@ -1527,7 +1527,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DRUID, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217193,4),	-- Bough of the Autumn Blaze
 								modItemId(217191,4),	-- Chestroots of the Autumn Blaze
@@ -1542,7 +1542,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(EVOKER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217178,4),	-- Crown of the Awakened
 								modItemId(217177,4),	-- Gauntlets of the Awakened
@@ -1557,7 +1557,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(HUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217181,4),	-- Stormwing Harrier's Cuirass
 								modItemId(217184,4),	-- Stormwing Harrier's Greaves
@@ -1572,7 +1572,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MAGE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217232,4),	-- Wayward Chronomancer's Chronocap
 								modItemId(217231,4),	-- Wayward Chronomancer's Gloves
@@ -1587,7 +1587,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MONK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217186,4),	-- Chestwrap of the Waking Fist
 								modItemId(217188,4),	-- Gaze of the Waking Fist
@@ -1602,7 +1602,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PALADIN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217196,4),	-- Heartfire Sentinel's Brigandine
 								modItemId(217199,4),	-- Heartfire Sentinel's Faulds
@@ -1617,7 +1617,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PRIEST, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217203,4),	-- Breeches of the Furnace Seraph
 								modItemId(217205,4),	-- Command of the Furnace Seraph
@@ -1632,7 +1632,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(ROGUE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217206,4),	-- Lurking Specter's Brigandine
 								modItemId(217207,4),	-- Lurking Specter's Handgrips
@@ -1647,7 +1647,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(SHAMAN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217240,4),	-- Greatwolf Outcast's Companions
 								modItemId(217239,4),	-- Greatwolf Outcast's Fur-Lined Kilt
@@ -1662,7 +1662,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARLOCK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217214,4),	-- Amice of the Sinister Savant
 								modItemId(217215,4),	-- Cursed Robes of the Sinister Savant
@@ -1677,7 +1677,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARRIOR, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217216,4),	-- Battlechest of the Onyx Crucible
 								modItemId(217217,4),	-- Handguards of the Onyx Crucible
@@ -1697,7 +1697,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217221,3),	-- Casket of the Risen Nightmare
 								modItemId(217224,3),	-- Greaves of the Risen Nightmare
@@ -1712,7 +1712,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217226,3),	-- Screaming Torchfiend's Binding
 								modItemId(217229,3),	-- Screaming Torchfiend's Blazewraps
@@ -1727,7 +1727,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DRUID, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217193,3),	-- Bough of the Autumn Blaze
 								modItemId(217191,3),	-- Chestroots of the Autumn Blaze
@@ -1742,7 +1742,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(EVOKER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217178,3),	-- Crown of the Awakened
 								modItemId(217177,3),	-- Gauntlets of the Awakened
@@ -1757,7 +1757,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(HUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217181,3),	-- Stormwing Harrier's Cuirass
 								modItemId(217184,3),	-- Stormwing Harrier's Greaves
@@ -1772,7 +1772,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MAGE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217232,3),	-- Wayward Chronomancer's Chronocap
 								modItemId(217231,3),	-- Wayward Chronomancer's Gloves
@@ -1787,7 +1787,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MONK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217186,3),	-- Chestwrap of the Waking Fist
 								modItemId(217188,3),	-- Gaze of the Waking Fist
@@ -1802,7 +1802,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PALADIN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217196,3),	-- Heartfire Sentinel's Brigandine
 								modItemId(217199,3),	-- Heartfire Sentinel's Faulds
@@ -1817,7 +1817,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PRIEST, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217203,3),	-- Breeches of the Furnace Seraph
 								modItemId(217205,3),	-- Command of the Furnace Seraph
@@ -1832,7 +1832,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(ROGUE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217206,3),	-- Lurking Specter's Brigandine
 								modItemId(217207,3),	-- Lurking Specter's Handgrips
@@ -1847,7 +1847,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(SHAMAN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217240,3),	-- Greatwolf Outcast's Companions
 								modItemId(217239,3),	-- Greatwolf Outcast's Fur-Lined Kilt
@@ -1862,7 +1862,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARLOCK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217214,3),	-- Amice of the Sinister Savant
 								modItemId(217215,3),	-- Cursed Robes of the Sinister Savant
@@ -1877,7 +1877,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARRIOR, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217216,3),	-- Battlechest of the Onyx Crucible
 								modItemId(217217,3),	-- Handguards of the Onyx Crucible
@@ -1897,7 +1897,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217221,5),	-- Casket of the Risen Nightmare
 								modItemId(217224,5),	-- Greaves of the Risen Nightmare
@@ -1912,7 +1912,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217226,5),	-- Screaming Torchfiend's Binding
 								modItemId(217229,5),	-- Screaming Torchfiend's Blazewraps
@@ -1927,7 +1927,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DRUID, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217193,5),	-- Bough of the Autumn Blaze
 								modItemId(217191,5),	-- Chestroots of the Autumn Blaze
@@ -1942,7 +1942,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(EVOKER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217178,5),	-- Crown of the Awakened
 								modItemId(217177,5),	-- Gauntlets of the Awakened
@@ -1957,7 +1957,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(HUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217181,5),	-- Stormwing Harrier's Cuirass
 								modItemId(217184,5),	-- Stormwing Harrier's Greaves
@@ -1972,7 +1972,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MAGE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217232,5),	-- Wayward Chronomancer's Chronocap
 								modItemId(217231,5),	-- Wayward Chronomancer's Gloves
@@ -1987,7 +1987,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MONK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217186,5),	-- Chestwrap of the Waking Fist
 								modItemId(217188,5),	-- Gaze of the Waking Fist
@@ -2002,7 +2002,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PALADIN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217196,5),	-- Heartfire Sentinel's Brigandine
 								modItemId(217199,5),	-- Heartfire Sentinel's Faulds
@@ -2017,7 +2017,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PRIEST, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217203,5),	-- Breeches of the Furnace Seraph
 								modItemId(217205,5),	-- Command of the Furnace Seraph
@@ -2032,7 +2032,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(ROGUE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217206,5),	-- Lurking Specter's Brigandine
 								modItemId(217207,5),	-- Lurking Specter's Handgrips
@@ -2047,7 +2047,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(SHAMAN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217240,5),	-- Greatwolf Outcast's Companions
 								modItemId(217239,5),	-- Greatwolf Outcast's Fur-Lined Kilt
@@ -2062,7 +2062,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARLOCK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217214,5),	-- Amice of the Sinister Savant
 								modItemId(217215,5),	-- Cursed Robes of the Sinister Savant
@@ -2077,7 +2077,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARRIOR, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217216,5),	-- Battlechest of the Onyx Crucible
 								modItemId(217217,5),	-- Handguards of the Onyx Crucible
@@ -2097,7 +2097,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217221,6),	-- Casket of the Risen Nightmare
 								modItemId(217224,6),	-- Greaves of the Risen Nightmare
@@ -2112,7 +2112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217226,6),	-- Screaming Torchfiend's Binding
 								modItemId(217229,6),	-- Screaming Torchfiend's Blazewraps
@@ -2127,7 +2127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(DRUID, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217193,6),	-- Bough of the Autumn Blaze
 								modItemId(217191,6),	-- Chestroots of the Autumn Blaze
@@ -2142,7 +2142,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(EVOKER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217178,6),	-- Crown of the Awakened
 								modItemId(217177,6),	-- Gauntlets of the Awakened
@@ -2157,7 +2157,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(HUNTER, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217181,6),	-- Stormwing Harrier's Cuirass
 								modItemId(217184,6),	-- Stormwing Harrier's Greaves
@@ -2172,7 +2172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MAGE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217232,6),	-- Wayward Chronomancer's Chronocap
 								modItemId(217231,6),	-- Wayward Chronomancer's Gloves
@@ -2187,7 +2187,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(MONK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217186,6),	-- Chestwrap of the Waking Fist
 								modItemId(217188,6),	-- Gaze of the Waking Fist
@@ -2202,7 +2202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PALADIN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217196,6),	-- Heartfire Sentinel's Brigandine
 								modItemId(217199,6),	-- Heartfire Sentinel's Faulds
@@ -2217,7 +2217,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(PRIEST, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217203,6),	-- Breeches of the Furnace Seraph
 								modItemId(217205,6),	-- Command of the Furnace Seraph
@@ -2232,7 +2232,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(ROGUE, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217206,6),	-- Lurking Specter's Brigandine
 								modItemId(217207,6),	-- Lurking Specter's Handgrips
@@ -2247,7 +2247,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(SHAMAN, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217240,6),	-- Greatwolf Outcast's Companions
 								modItemId(217239,6),	-- Greatwolf Outcast's Fur-Lined Kilt
@@ -2262,7 +2262,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARLOCK, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217214,6),	-- Amice of the Sinister Savant
 								modItemId(217215,6),	-- Cursed Robes of the Sinister Savant
@@ -2277,7 +2277,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 						cl(WARRIOR, {
-							["sym"] = {{"select","itemID",
+							["sym"] = {{"select","modItemID",
 								-- "Tier Slots"
 								modItemId(217216,6),	-- Battlechest of the Onyx Crucible
 								modItemId(217217,6),	-- Handguards of the Onyx Crucible
