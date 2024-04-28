@@ -18,7 +18,7 @@ end
 local WindowButtons = {};
 local lastWindowButtonRow, lastWindowButtonDistance = child.separator or child, -8;
 local OnClickForWindowButton = function(self)
-	if SettingsPanel and SettingsPanel:IsShown() then SettingsPanel:Hide(); end
+	HideUIPanel(SettingsPanel);
 	local window = app:GetWindow(self.Suffix);
 	if window then window:Show(); end
 end;
