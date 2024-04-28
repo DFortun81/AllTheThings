@@ -102,7 +102,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5143,	-- Tribal Leatherworking
 				},
 				["coord"] = { 37.4, 65.4, AZSHARA },
-
+				["requireSkill"] = LEATHERWORKING,
+				["learnedAt"] = 240,
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
@@ -117,6 +118,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5148,	-- Tribal Leatherworking
 				},
 				["coord"] = { 62.6, 57.4, BADLANDS },
+				["requireSkill"] = LEATHERWORKING,
+				["learnedAt"] = 240,
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
@@ -131,6 +134,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5143,	-- Tribal Leatherworking
 				},
 				["coord"] = { 63.6, 76.0, SEARING_GORGE },
+				["requireSkill"] = LEATHERWORKING,
+				["learnedAt"] = 240,
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 7081, 2 },	-- Breath of Wind
@@ -146,6 +151,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5148,	-- Tribal Leatherworking
 				},
 				["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
+				["requireSkill"] = LEATHERWORKING,
+				["learnedAt"] = 240,
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 7081, 2 },	-- Breath of Wind
@@ -161,6 +168,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5144,	-- Elemental Leatherworking
 				},
 				["coord"] = { 89.4, 46.5, FERALAS },
+				["requireSkill"] = LEATHERWORKING,
+				["learnedAt"] = 240,
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 8214, 1 },	-- Wild Leather Helmet
@@ -174,6 +183,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					5146,	-- Elemental Leatherworking
 				},
 				["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+				["requireSkill"] = LEATHERWORKING,
+				["learnedAt"] = 240,
 				["races"] = HORDE_ONLY,
 				["cost"] = {
 					{ "i", 8214, 1 },	-- Wild Leather Helmet

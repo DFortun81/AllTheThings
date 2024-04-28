@@ -20,9 +20,9 @@ recipeDB[20222].learnedAt = 200;	-- Goblin Engineer
 -- No changes needed.
 
 -- Leatherworking
-recipeDB[10656].learnedAt = 200;	-- Dragonscale Leatherworking
-recipeDB[10658].learnedAt = 200;	-- Elemental Leatherworking
-recipeDB[10660].learnedAt = 200;	-- Tribal Leatherworking
+recipeDB[10656].learnedAt = 240;	-- Dragonscale Leatherworking
+recipeDB[10658].learnedAt = 240;	-- Elemental Leatherworking
+recipeDB[10660].learnedAt = 240;	-- Tribal Leatherworking
 recipeDB[429869].learnedAt = 150;	-- Void-Touched Leather Gauntlets
 recipeDB[429354].learnedAt = 150;	-- Void-Touched Leather Gloves
 
