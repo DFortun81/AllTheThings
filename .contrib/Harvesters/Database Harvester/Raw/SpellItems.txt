@@ -11853,6 +11853,8 @@
 7323@@@10FX - Weapon Enchant - Sha - All Weapons
 7465@@@Funeral Pyre
 7466@@@Bulwark of the Black Ox
+10.2.7.54366
+7246@@@Chi-Ji, the Red Crane
 11.0.0.54311
 7143@@@Rite of Sanctification
 7144@@@Rite of Adjuration

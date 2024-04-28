@@ -21033,6 +21033,8 @@
 224503@@@Exodar Artificer
 10.2.7.54295
 224674@@@Weaponmaster Li
+10.2.7.54366
+225354@@@Lil' Flameo
 11.0.0.54311
 192731@@@Arcane Missile
 204271@@@Abyssal Lurker
