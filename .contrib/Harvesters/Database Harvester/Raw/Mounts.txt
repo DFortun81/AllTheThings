@@ -1843,6 +1843,11 @@
 449140@@@[PH] Alliance Wolf Mount
 449141@@@[PH] Alliance Wolf Mount
 449142@@@[PH] Alliance Wolf Mount
+10.2.7.54295
+448849@@@Underlight Shorestalker
+448851@@@Underlight Corrupted Behemoth
+449126@@@Kor'kron Warsaber
+449140@@@Sentinel War Wolf
 11.0.0.54311
 405623@@@Armadillo Roller
 441313@@@Soar

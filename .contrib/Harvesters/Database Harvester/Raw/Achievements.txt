@@ -13851,6 +13851,8 @@
 40223@@@Timerunner
 40226@@@Realm First! Timerunner
 40227@@@Realm First! Mythic Garrosh
+10.2.7.54295
+19961@@@Mythic Remix: Siege of Orgrimmar
 11.0.0.54311
 12926@@@Artifact Power Earned by the Heart of Azeroth
 16633@@@<DNT> Maruuk Centaur Title Quest
@@ -13924,7 +13926,6 @@
 19776@@@Algarian Skinning 50 (DNT)
 19777@@@Algarian Skinning 75 (DNT)
 19778@@@Algarian Skinning 100 (DNT)
-19961@@@Mythic Remix: Siege of Orgrimmar
 20074@@@Dynamic Duo Complete (DNT)
 20077@@@Terrific Trio Complete (DNT)
 20078@@@Quintessential Quintet Complete (DNT)
