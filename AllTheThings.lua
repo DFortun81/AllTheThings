@@ -4397,7 +4397,7 @@ local function SearchForLink(link)
 		end
 		id = GetGroupItemIDWithModID(nil, id, id2, id3)
 	end
-	app.PrintDebug(#SearchForObject(KeyMaps[kind], id, nil, true))
+	-- app.PrintDebug(#SearchForObject(KeyMaps[kind], id, nil, true))
 	return SearchForObject(kind, id, nil, true), kind, id
 end
 app.SearchForLink = SearchForLink;

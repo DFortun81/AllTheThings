@@ -204,7 +204,8 @@ local PrintQuestInfo
 local ClassicDirtyQuests, RetailDirtyQuests = {}, {}
 local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
 local IgnoreErrorQuests = {}
-app.AddEventHandler("OnSavedVariablesAvailable", function()
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	OneTimeQuests = accountWideData.OneTimeQuests
 	local userignored = ATTAccountWideData.IGNORE_QUEST_PRINT
 	-- add user ignored to the list if any, don't save our hardcoded quests for everyone...
 	if userignored then
@@ -2176,9 +2177,6 @@ if app.IsRetail then
 	app.TryPopulateQuestRewards = TryPopulateQuestRewards;
 end
 
-app.AddEventHandler("OnStartup", function()
-	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
-end)
 app.CheckFollowupQuests = CheckFollowupQuests;
 app.CollectibleAsQuest = CollectibleAsQuest;
 app.CollectibleAsQuestOrAsLocked = CollectibleAsQuestOrAsLocked;
