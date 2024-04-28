@@ -2466,6 +2466,13 @@
 7487@@@+14 Damage and Healing Spells
 7488@@@+31 Healing Spells
 7489@@@+19 Damage and Healing Spells
+1.15.2.54332
+6971@@@Damaged Rune
+6973@@@Damaged Rune
+7087@@@Damaged Rune
+7491@@@Skull Bash
+7492@@@Lacerate
+7499@@@Light's Grace
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
