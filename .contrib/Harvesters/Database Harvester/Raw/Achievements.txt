@@ -14472,3 +14472,286 @@
 40296@@@Queen Ansurek kills (Normal Nerub-ar Palace)
 40297@@@Queen Ansurek kills (Heroic Nerub-ar Palace)
 40298@@@Queen Ansurek kills (Mythic Nerub-ar Palace)
+11.0.0.54361
+20255@@@Dornogal Drift: Bronze
+20256@@@Dornogal Drift: Silver
+20257@@@Dornogal Drift: Gold
+20258@@@Dornogal Drift Advanced: Bronze
+20259@@@Dornogal Drift Advanced: Silver
+20260@@@Dornogal Drift Advanced: Gold
+20261@@@Dornogal Drift Reverse: Bronze
+20262@@@Dornogal Drift Reverse: Silver
+20263@@@Dornogal Drift Reverse: Gold
+20264@@@Storm's Watch Survey: Bronze
+20265@@@Storm's Watch Survey: Silver
+20266@@@Storm's Watch Survey: Gold
+20267@@@Storm's Watch Survey Advanced: Bronze
+20268@@@Storm's Watch Survey Advanced: Silver
+20269@@@Storm's Watch Survey Advanced: Gold
+20270@@@Storm's Watch Survey Reverse: Bronze
+20271@@@Storm's Watch Survey Reverse: Silver
+20272@@@Storm's Watch Survey Reverse: Gold
+20273@@@Basin Bypass: Bronze
+20274@@@Basin Bypass: Silver
+20275@@@Basin Bypass: Gold
+20276@@@Basin Bypass Advanced: Bronze
+20277@@@Basin Bypass Advanced: Silver
+20278@@@Basin Bypass Advanced: Gold
+20279@@@Basin Bypass Reverse: Bronze
+20280@@@Basin Bypass Reverse: Silver
+20281@@@Basin Bypass Reverse: Gold
+20282@@@The Wold Ways: Bronze
+20283@@@The Wold Ways: Silver
+20284@@@The Wold Ways: Gold
+20285@@@The Wold Ways Advanced: Bronze
+20286@@@The Wold Ways Advanced: Silver
+20287@@@The Wold Ways Advanced: Gold
+20288@@@The Wold Ways Reverse: Bronze
+20289@@@The Wold Ways Reverse: Silver
+20290@@@The Wold Ways Reverse: Gold
+20291@@@Thunderhead Trail: Bronze
+20292@@@Thunderhead Trail: Silver
+20293@@@Thunderhead Trail: Gold
+20294@@@Thunderhead Trail Advanced: Bronze
+20295@@@Thunderhead Trail Advanced: Silver
+20296@@@Thunderhead Trail Advanced: Gold
+20297@@@Thunderhead Trail Reverse: Bronze
+20298@@@Thunderhead Trail Reverse: Silver
+20299@@@Thunderhead Trail Reverse: Gold
+20300@@@Orecreg's Doglegs: Bronze
+20301@@@Orecreg's Doglegs: Silver
+20302@@@Orecreg's Doglegs: Gold
+20303@@@Orecreg's Doglegs Advanced: Bronze
+20304@@@Orecreg's Doglegs Advanced: Silver
+20305@@@Orecreg's Doglegs Advanced: Gold
+20306@@@Orecreg's Doglegs Reverse: Bronze
+20307@@@Orecreg's Doglegs Reverse: Silver
+20308@@@Orecreg's Doglegs Reverse: Gold
+20309@@@Earthenworks Weave: Bronze
+20310@@@Earthenworks Weave: Silver
+20311@@@Earthenworks Weave: Gold
+20312@@@Earthenworks Weave Advanced: Bronze
+20313@@@Earthenworks Weave Advanced: Silver
+20314@@@Earthenworks Weave Advanced: Gold
+20315@@@Earthenworks Weave Reverse: Bronze
+20316@@@Earthenworks Weave Reverse: Silver
+20317@@@Earthenworks Weave Reverse: Gold
+20318@@@Ringing Deeps Ramble: Bronze
+20319@@@Ringing Deeps Ramble: Silver
+20320@@@Ringing Deeps Ramble: Gold
+20321@@@Ringing Deeps Ramble Advanced: Bronze
+20322@@@Ringing Deeps Ramble Advanced: Silver
+20323@@@Ringing Deeps Ramble Advanced: Gold
+20324@@@Ringing Deeps Ramble Reverse: Bronze
+20325@@@Ringing Deeps Ramble Reverse: Silver
+20326@@@Ringing Deeps Ramble Reverse: Gold
+20327@@@Chittering Concourse: Bronze
+20328@@@Chittering Concourse: Silver
+20329@@@Chittering Concourse: Gold
+20330@@@Chittering Concourse Advanced: Bronze
+20331@@@Chittering Concourse Advanced: Silver
+20332@@@Chittering Concourse Advanced: Gold
+20333@@@Chittering Concourse Reverse: Bronze
+20334@@@Chittering Concourse Reverse: Silver
+20335@@@Chittering Concourse Reverse: Gold
+20336@@@Cataract River Cruise: Bronze
+20337@@@Cataract River Cruise: Silver
+20338@@@Cataract River Cruise: Gold
+20339@@@Cataract River Cruise Advanced: Bronze
+20340@@@Cataract River Cruise Advanced: Silver
+20341@@@Cataract River Cruise Advanced: Gold
+20342@@@Cataract River Cruise Reverse: Bronze
+20343@@@Cataract River Cruise Reverse: Silver
+20344@@@Cataract River Cruise Reverse: Gold
+20345@@@Taelloch Twist: Bronze
+20346@@@Taelloch Twist: Silver
+20347@@@Taelloch Twist: Gold
+20348@@@Taelloch Twist Advanced: Bronze
+20349@@@Taelloch Twist Advanced: Silver
+20350@@@Taelloch Twist Advanced: Gold
+20351@@@Taelloch Twist Reverse: Bronze
+20352@@@Taelloch Twist Reverse: Silver
+20353@@@Taelloch Twist Reverse: Gold
+20354@@@Opportunity Point Amble: Bronze
+20355@@@Opportunity Point Amble: Silver
+20356@@@Opportunity Point Amble: Gold
+20357@@@Opportunity Point Amble Advanced: Bronze
+20358@@@Opportunity Point Amble Advanced: Silver
+20359@@@Opportunity Point Amble Advanced: Gold
+20360@@@Opportunity Point Amble Reverse: Bronze
+20361@@@Opportunity Point Amble Reverse: Silver
+20362@@@Opportunity Point Amble Reverse: Gold
+20363@@@Dunelle's Detour: Bronze
+20364@@@Dunelle's Detour: Silver
+20365@@@Dunelle's Detour: Gold
+20366@@@Dunelle's Detour Advanced: Bronze
+20367@@@Dunelle's Detour Advanced: Silver
+20368@@@Dunelle's Detour Advanced: Gold
+20369@@@Dunelle's Detour Reverse: Bronze
+20370@@@Dunelle's Detour Reverse: Silver
+20371@@@Dunelle's Detour Reverse: Gold
+20372@@@Tenir's Traversal: Bronze
+20373@@@Tenir's Traversal: Silver
+20374@@@Tenir's Traversal: Gold
+20375@@@Tenir's Traversal Advanced: Bronze
+20376@@@Tenir's Traversal Advanced: Silver
+20377@@@Tenir's Traversal Advanced: Gold
+20378@@@Tenir's Traversal Reverse: Bronze
+20379@@@Tenir's Traversal Reverse: Silver
+20380@@@Tenir's Traversal Reverse: Gold
+20381@@@Light's Redoubt Descent: Bronze
+20382@@@Light's Redoubt Descent: Silver
+20383@@@Light's Redoubt Descent: Gold
+20384@@@Light's Redoubt Descent Advanced: Bronze
+20385@@@Light's Redoubt Descent Advanced: Silver
+20386@@@Light's Redoubt Descent Advanced: Gold
+20387@@@Light's Redoubt Descent Reverse: Bronze
+20388@@@Light's Redoubt Descent Reverse: Silver
+20389@@@Light's Redoubt Descent Reverse: Gold
+20390@@@Stillstone Slalom: Bronze
+20391@@@Stillstone Slalom: Silver
+20392@@@Stillstone Slalom: Gold
+20393@@@Stillstone Slalom Advanced: Bronze
+20394@@@Stillstone Slalom Advanced: Silver
+20395@@@Stillstone Slalom Advanced: Gold
+20396@@@Stillstone Slalom Reverse: Bronze
+20397@@@Stillstone Slalom Reverse: Silver
+20398@@@Stillstone Slalom Reverse: Gold
+20399@@@Mereldar Meander: Bronze
+20400@@@Mereldar Meander: Silver
+20401@@@Mereldar Meander: Gold
+20402@@@Mereldar Meander Advanced: Bronze
+20403@@@Mereldar Meander Advanced: Silver
+20404@@@Mereldar Meander Advanced: Gold
+20405@@@Mereldar Meander Reverse: Bronze
+20406@@@Mereldar Meander Reverse: Silver
+20407@@@Mereldar Meander Reverse: Gold
+20408@@@Velhan's Venture: Bronze
+20409@@@Velhan's Venture: Silver
+20410@@@Velhan's Venture: Gold
+20411@@@Velhan's Venture Advanced: Bronze
+20412@@@Velhan's Venture Advanced: Silver
+20413@@@Velhan's Venture Advanced: Gold
+20414@@@Velhan's Venture Reverse: Bronze
+20415@@@Velhan's Venture Reverse: Silver
+20416@@@Velhan's Venture Reverse: Gold
+20419@@@City of Threads Twist: Bronze
+20420@@@City of Threads Twist: Silver
+20421@@@City of Threads Twist: Gold
+20422@@@City of Threads Twist Advanced: Bronze
+20423@@@City of Threads Twist Advanced: Silver
+20424@@@City of Threads Twist Advanced: Gold
+20425@@@City of Threads Twist Reverse: Bronze
+20426@@@City of Threads Twist Reverse: Silver
+20427@@@City of Threads Twist Reverse: Gold
+20429@@@Maddening Deep Dip: Bronze
+20430@@@Maddening Deep Dip: Silver
+20431@@@Maddening Deep Dip: Gold
+20432@@@Maddening Deep Dip Advanced: Bronze
+20433@@@Maddening Deep Dip Advanced: Silver
+20434@@@Maddening Deep Dip Advanced: Gold
+20435@@@Maddening Deep Dip Reverse: Bronze
+20436@@@Maddening Deep Dip Reverse: Silver
+20437@@@Maddening Deep Dip Reverse: Gold
+20439@@@The Weaver's Wing: Bronze
+20440@@@The Weaver's Wing: Silver
+20441@@@The Weaver's Wing: Gold
+20442@@@The Weaver's Wing Advanced: Bronze
+20443@@@The Weaver's Wing Advanced: Silver
+20444@@@The Weaver's Wing Advanced: Gold
+20445@@@The Weaver's Wing Reverse: Bronze
+20446@@@The Weaver's Wing Reverse: Silver
+20447@@@The Weaver's Wing Reverse: Gold
+20448@@@Rak-Ahat Rush: Bronze
+20449@@@Rak-Ahat Rush: Silver
+20450@@@Rak-Ahat Rush: Gold
+20451@@@Rak-Ahat Rush Advanced: Bronze
+20452@@@Rak-Ahat Rush Advanced: Silver
+20453@@@Rak-Ahat Rush Advanced: Gold
+20454@@@Rak-Ahat Rush Reverse: Bronze
+20455@@@Rak-Ahat Rush Reverse: Silver
+20456@@@Rak-Ahat Rush Reverse: Gold
+20457@@@Pit Plunge: Bronze
+20458@@@Pit Plunge: Silver
+20459@@@Pit Plunge: Gold
+20460@@@Pit Plunge Advanced: Bronze
+20461@@@Pit Plunge Advanced: Silver
+20462@@@Pit Plunge Advanced: Gold
+20463@@@Pit Plunge Reverse: Bronze
+20464@@@Pit Plunge Reverse: Silver
+20465@@@Pit Plunge Reverse: Gold
+20466@@@Siegehold Scuttle: Bronze
+20467@@@Siegehold Scuttle: Silver
+20468@@@Siegehold Scuttle: Gold
+20469@@@Siegehold Scuttle Advanced: Bronze
+20470@@@Siegehold Scuttle Advanced: Silver
+20471@@@Siegehold Scuttle Advanced: Gold
+20472@@@Siegehold Scuttle Reverse: Bronze
+20473@@@Siegehold Scuttle Reverse: Silver
+20474@@@Siegehold Scuttle Reverse: Gold
+40138@@@Algari Dungeoneer
+40139@@@Algari Dungeon Damage Dealer
+40140@@@Algari Dungeon Healer
+40141@@@Algari Dungeon Tank
+40247@@@The Skittering Battlements
+40248@@@Secrets of Nerub-ar Palace
+40249@@@A Queen's Fall
+40263@@@Would you still /love me if I was a worm...
+40305@@@Allied Races: Earthen (Hidden Character Achievement)
+40306@@@Allied Races: Earthen
+40307@@@Allied Races: Earthen Unlock Requirements
+40308@@@Beacon of Hope
+40309@@@Heritage of the Earthen
+40311@@@Sharing the Light
+40312@@@Starting the Flames
+40313@@@Igniting the Keyflames
+40314@@@Memories of a Worldsoul
+40316@@@Isle of Dorn: Bronze
+40317@@@Isle of Dorn: Silver
+40318@@@Isle of Dorn: Gold
+40319@@@Isle of Dorn Advanced: Bronze
+40320@@@Isle of Dorn Advanced: Silver
+40321@@@Isle of Dorn Advanced: Gold
+40322@@@Isle of Dorn Reverse: Bronze
+40323@@@Isle of Dorn Reverse: Silver
+40324@@@Isle of Dorn Reverse: Gold
+40325@@@The Ringing Deeps: Bronze
+40326@@@The Ringing Deeps: Silver
+40327@@@The Ringing Deeps: Gold
+40328@@@The Ringing Deeps Advanced: Bronze
+40329@@@The Ringing Deeps Advanced: Silver
+40330@@@The Ringing Deeps Advanced: Gold
+40331@@@The Ringing Deeps Reverse: Bronze
+40332@@@The Ringing Deeps Reverse: Silver
+40333@@@The Ringing Deeps Reverse: Gold
+40334@@@Hallowfall: Bronze
+40335@@@Hallowfall: Silver
+40336@@@Hallowfall: Gold
+40337@@@Hallowfall Advanced: Bronze
+40338@@@Hallowfall Advanced: Silver
+40339@@@Hallowfall Advanced: Gold
+40340@@@Hallowfall Reverse: Bronze
+40341@@@Hallowfall Reverse: Silver
+40342@@@Hallowfall Reverse: Gold
+40343@@@Azj-Kahet: Bronze
+40344@@@Azj-Kahet: Silver
+40345@@@Azj-Kahet: Gold
+40346@@@Azj-Kahet Advanced: Bronze
+40347@@@Azj-Kahet Advanced: Silver
+40348@@@Azj-Kahet Advanced: Gold
+40349@@@Azj-Kahet Reverse: Bronze
+40350@@@Azj-Kahet Reverse: Silver
+40351@@@Azj-Kahet Reverse: Gold
+40352@@@Khaz Algar Completionist: Bronze
+40353@@@Khaz Algar Completionist: Silver
+40354@@@Khaz Algar Completionist: Gold
+40360@@@Life on the Farm
+40361@@@Cinderbrew Meadery
+40363@@@Heroic: Cinderbrew Meadery
+40366@@@Mythic: Cinderbrew Meadery
+40370@@@Ara-Kara, City of Echoes
+40374@@@Heroic: Ara-Kara, City of Echoes
+40375@@@Mythic: Ara-Kara, City of Echoes
+40376@@@City of Threads
+40377@@@Heroic: City of Threads
+40379@@@Mythic: City of Threads

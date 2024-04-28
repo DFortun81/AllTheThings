@@ -1916,3 +1916,11 @@
 451488@@@[PH] NerubianWarbeastMount (Orange)
 451489@@@[PH] NerubianWarbeastMount (Dark)
 451491@@@[PH] NerubianWarbeastMount (White)
+11.0.0.54361
+447176@@@Cyan Glowmite
+449269@@@Crimson Mudnose
+449418@@@Shale Ramolith
+452768@@@[PH] NerubianBeetleLargeMount (Blue)
+452777@@@[PH] NerubianBeetleLargeMount (Green)
+452779@@@[PH] NerubianBeetleLargeMount (Tan)
+452780@@@[PH] NerubianBeetleLargeMount (Purple)

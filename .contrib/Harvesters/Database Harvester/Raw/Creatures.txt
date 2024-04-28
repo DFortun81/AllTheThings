@@ -21521,3 +21521,36 @@
 224530@@@Kill Credit
 224561@@@Fray
 224562@@@Buck
+11.0.0.54361
+214297@@@Burrowing Saboteur
+217838@@@Kal Smoulderbrow
+221545@@@[DNT] Rare 08 Stalker
+221958@@@[DNT] Rare 15 Stalker
+222319@@@Oop'lajax
+222775@@@Sandstone Mosswool
+222776@@@Lil' Moss Rosy
+222781@@@Sandstone Mosswool
+222782@@@Lil' Moss Rosy
+224716@@@Flash
+224717@@@Gale
+224718@@@Thundo
+224722@@@Flash
+224768@@@Thundo
+224770@@@Gale
+224786@@@Arathi Aeroknight
+224787@@@Arathi Aeroknight
+224821@@@Zev'kall
+224822@@@Siege Dominator
+224823@@@Flynn Fairwind
+224912@@@Kobyss Totem
+224937@@@Air Bubbles
+225188@@@Vaelisia Steelstrike
+225203@@@Nerubian Skitterling, Fighter
+225226@@@Arathi Stalwart
+225238@@@Dalaran Sewer Turtle
+225265@@@Necrotic Cauldron
+225277@@@Arathi Stalwart
+225293@@@Brinthe
+225361@@@Queen Ansurek
+225401@@@Wrapped Spool
+225404@@@[DNT] Rare 14 Vignette Holder

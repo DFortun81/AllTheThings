@@ -12099,3 +12099,8 @@
 7500@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7501@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7502@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.0.54361
+7503@@@Lightning Tether
+7504@@@Overclocked S.E.L.F.I.E. Camera
+7505@@@Earthen Delivery Drill
+7506@@@Heartseeking Health Injector
