@@ -517,7 +517,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 46,
 					["groups"] = {
 						objective(1, {	-- 0/10 Vessel of Tainted Blood
-							["provider"] = { "i", 19071 },	-- Vessel of Tainted Blood
+							["providers"] = {
+								{ "i",  19071 },	-- Vessel of Tainted Blood
+								{ "o", 179922 },	-- Vessel of Tainted Blood
+							},
 							["description"] = "Can be found all over Jintha'alor.",
 							["coord"] = { 65.2, 71.9, THE_HINTERLANDS },
 						}),
@@ -1311,11 +1314,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 46,
 					["groups"] = {
 						objective(1, {	-- 0/1 Huntsman Malkhor's Skull
-							["provider"] = { "i", 19069 },	-- Huntsman Malkhor's Skull
+							["providers"] = {
+								{ "i",  19069 },	-- Huntsman Malkhor's Skull
+								{ "o", 179915 },	-- Pile of Skulls
+							},
 							["coord"] = { 58.6, 64.9, THE_HINTERLANDS },
 						}),
 						objective(2, {	-- 0/1 Huntsman Malkhor's Bones
-							["provider"] = { "i", 19070 },	-- Huntsman Malkhor's Bones
+							["providers"] = {
+								{ "i",  19070 },	-- Huntsman Malkhor's Bones
+								{ "o", 179914 },	-- Pile of Bones
+							},
 							["coord"] = { 62.2, 75.5, THE_HINTERLANDS },
 						}),
 						i(19117, {	-- Laquered Wooden Plate Legplates
