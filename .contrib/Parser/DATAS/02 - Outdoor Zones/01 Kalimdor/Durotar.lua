@@ -1351,6 +1351,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						})),
 						-- #endif
+						q(5649, {	-- In Favor of Spirituality
+							["qg"] = 3707,	-- Ken'jai
+							["coord"] = { 42.4, 68.8, DUROTAR },
+							["timeline"] = { REMOVED_4_0_3 },
+							["classes"] = { PRIEST },
+							["races"] = { TROLL },
+							["lvl"] = 5
+						}),
 						q(25172, {	-- Invaders In Our Home
 							["qg"] = 3143,	-- Gornek
 							["sourceQuest"] = 25126,	-- Cutting Teeth
@@ -2536,14 +2544,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
-				}),
-				q(5649, {	-- In Favor of Spirituality
-					["qg"] = 3707,	-- Ken'jai
-					["coord"] = { 42.4, 68.8, DUROTAR },
-					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { PRIEST },
-					["races"] = { TROLL },
-					["lvl"] = 5
 				}),
 				q(29690, {	-- Into the Mists
 					["qg"] = 55054,	-- General Nazrim
