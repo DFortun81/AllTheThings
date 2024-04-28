@@ -7,9 +7,9 @@ local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFie
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
+	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, C_Spell.GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
@@ -27,9 +27,9 @@ local function RefreshSkills()
 			if not header and skillName then
 				local spellID = app.SpellNameToSpellID[skillName];
 				if spellID then
-					local spellName = C_Spell.GetSpellInfo(spellID);
+					local spellName = C_Spell_GetSpellName(spellID);
 					for skillID,sp in pairs(app.SkillIDToSpellID) do
-						if C_Spell.GetSpellInfo(sp) == spellName then
+						if C_Spell_GetSpellName(sp) == spellName then
 							spellID = sp;
 							break;
 						end
@@ -37,7 +37,7 @@ local function RefreshSkills()
 					activeSkills[spellID] = { skillRank, skillMaxRank };
 				else
 					for skillID,sp in pairs(app.SkillIDToSpellID) do
-						if C_Spell.GetSpellInfo(sp) == skillName then
+						if C_Spell_GetSpellName(sp) == skillName then
 							spellID = sp;
 							break;
 						end
@@ -161,9 +161,9 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				if craftSkillID ~= 0 then
-					local spellName = C_Spell.GetSpellInfo(craftSkillID);
+					local spellName = C_Spell_GetSpellName(craftSkillID);
 					for skillID,spellID in pairs(app.SkillIDToSpellID) do
-						if C_Spell.GetSpellInfo(spellID) == spellName then
+						if C_Spell_GetSpellName(spellID) == spellName then
 							craftSkillID = spellID;
 							break;
 						end
@@ -220,9 +220,9 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				if tradeSkillID ~= 0 then
-					local spellName = C_Spell.GetSpellInfo(tradeSkillID);
+					local spellName = C_Spell_GetSpellName(tradeSkillID);
 					for skillID,spellID in pairs(app.SkillIDToSpellID) do
-						if C_Spell.GetSpellInfo(spellID) == spellName then
+						if C_Spell_GetSpellName(spellID) == spellName then
 							tradeSkillID = spellID;
 							break;
 						end
@@ -482,8 +482,8 @@ app:CreateWindow("Tradeskills", {
 			end
 		end
 		handlers.NEW_RECIPE_LEARNED = newSpellLearned;
-		handlers.LEARNED_SPELL_IN_TAB = newSpellLearned;
-		self:RegisterEvent("LEARNED_SPELL_IN_TAB");
+		handlers.LEARNED_SPELL_IN_SKILL_LINE = newSpellLearned;
+		self:RegisterEvent("LEARNED_SPELL_IN_SKILL_LINE");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 
 		-- Default Update refreshes

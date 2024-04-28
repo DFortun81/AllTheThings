@@ -10,9 +10,9 @@ local pairs, select, rawget
 -- App locals
 local IsQuestFlaggedCompleted, SearchForFieldContainer, GetFixedItemSpecInfo = app.IsQuestFlaggedCompleted, app.SearchForFieldContainer, app.GetFixedItemSpecInfo
 
-local C_Spell_GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown, GetItemInfo
+local C_Spell_GetSpellInfo, C_Spell_GetSpellName, C_Spell_GetSpellTexture, C_Spell_GetSpellLink, IsSpellKnown, IsPlayerSpell, C_SpellBook_GetNumSpellBookSkillLines, C_SpellBook_GetSpellBookSkillLineInfo, IsSpellKnownOrOverridesKnown, GetItemInfo
 ---@diagnostic disable-next-line: deprecated
-	= C_Spell.GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown, ((C_Item and C_Item.GetItemInfo) or GetItemInfo)
+	= C_Spell.GetSpellInfo, C_Spell.GetSpellName, C_Spell.GetSpellTexture, C_Spell.GetSpellLink, IsSpellKnown, IsPlayerSpell, C_SpellBook.GetNumSpellBookSkillLines, C_SpellBook.GetSpellBookSkillLineInfo, IsSpellKnownOrOverridesKnown, ((C_Item and C_Item.GetItemInfo) or GetItemInfo)
 
 -- Consolidates some spell checking
 local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
@@ -37,7 +37,7 @@ local SpellNameToSpellID;
 local GetSpellName = function(spellID)
 	local spellName = SpellIDToSpellName[spellID];
 	if spellName then return spellName; end
-	spellName = C_Spell_GetSpellInfo(spellID);
+	spellName = C_Spell_GetSpellName(spellID);
 	if spellName and spellName ~= "" then
 		SpellIDToSpellName[spellID] = spellName;
 		SpellNameToSpellID[spellName] = spellID;
@@ -57,9 +57,9 @@ SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 		for specID,spellID in pairs(app.SpecializationSpellIDs) do
 			GetSpellName(spellID);
 		end
-		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), select(4, GetSpellTabInfo(1)), "", 1;
+		local numSpellTabs, offset, lastSpellName, currentSpellRank = C_SpellBook_GetNumSpellBookSkillLines(), select(4, C_SpellBook_GetSpellBookSkillLineInfo(1)), "", 1;
 		for spellTabIndex=2,numSpellTabs do
-			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
+			local numSpells = select(4, C_SpellBook_GetSpellBookSkillLineInfo(spellTabIndex));
 			for spellIndex=1,numSpells do
 				local spellName, _, _, _, _, _, spellID = C_Spell_GetSpellInfo(offset + spellIndex, BOOKTYPE_SPELL);
 				if spellName then
@@ -94,7 +94,7 @@ local SkillIcons = setmetatable({
 	if not key then return; end
 	local skillSpellID = app.SkillIDToSpellID[key];
 	if skillSpellID then
-		local _, icon = C_Spell_GetSpellInfo(skillSpellID);
+		local icon = C_Spell_GetSpellTexture(skillSpellID);
 		return icon;
 	end
 end
@@ -115,7 +115,7 @@ local function CacheInfo(t, field)
 		_t.name = name;
 		-- typically, the profession's spell icon will be a better representation of the spell if the spell is tied to a skill
 		_t.icon = SkillIcons[t.skillID] or icon;
-		local link = GetSpellLink(id);
+		local link = C_Spell_GetSpellLink(id);
 		_t.link = link;
 	end
 	-- track number of attempts to cache data for fallback to default values

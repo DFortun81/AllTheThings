@@ -7,9 +7,9 @@ local ipairs, pairs, rawset, rawget, math_floor, select, tonumber
 
 local C_MountJournal_GetMountInfoExtraByID,C_MountJournal_GetMountInfoByID,C_MountJournal_GetMountIDs
 	= C_MountJournal.GetMountInfoExtraByID,C_MountJournal.GetMountInfoByID,C_MountJournal.GetMountIDs
-local GetSpellLink,GetItemInfo,C_Spell_GetSpellInfo
+local C_Spell_GetSpellLink,GetItemInfo,C_Spell_GetSpellInfo
 ---@diagnostic disable-next-line: deprecated
-	= GetSpellLink,((C_Item and C_Item.GetItemInfo) or GetItemInfo),C_Spell.GetSpellInfo
+	= C_Spell.GetSpellLink,((C_Item and C_Item.GetItemInfo) or GetItemInfo), C_Spell.GetSpellInfo
 
 -- App locals
 local Colorize = app.Modules.Color.Colorize;
@@ -65,7 +65,7 @@ do
 				_t.link = itemLink;
 			end
 		else
-			_t.link = GetSpellLink(id);
+			_t.link = C_Spell_GetSpellLink(id);
 		end
 		-- track retries on caching mount info... some mounts just never return info
 		local retries = _t.retries or 0;
@@ -76,7 +76,7 @@ do
 			_t.text = _t.text or Colorize(name, app.Colors.Mount);
 			_t.name = _t.name or name;
 			_t.icon = _t.icon or 134400;	-- question mark
-			_t.link = GetSpellLink(id);
+			_t.link = C_Spell_GetSpellLink(id);
 		end
 		_t.retries = retries;
 		if field then return _t[field]; end

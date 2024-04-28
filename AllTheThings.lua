@@ -49,6 +49,8 @@ local GetItemInfo = _G.GetItemInfo;
 ---@diagnostic disable-next-line: deprecated
 local GetItemInfoInstant = _G.GetItemInfoInstant;
 local C_Spell_GetSpellInfo = C_Spell.GetSpellInfo;
+local C_Spell_GetSpellName = C_Spell.GetSpellName;
+local C_Spell_GetSpellTexture = C_Spell.GetSpellTexture;
 local InCombatLockdown = _G.InCombatLockdown;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
@@ -548,7 +550,7 @@ app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
 app.AddEventHandler("OnStartup", function()
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.professionName = function(spellID)
-		return C_Spell_GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
+		return C_Spell_GetSpellName(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
 	end;
 end);
 app.AddEventRegistration("SKILL_LINES_CHANGED", function()
@@ -6294,7 +6296,7 @@ end)();
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
-local GetSpellLink, C_Spell_GetSpellInfo = GetSpellLink, C_Spell.GetSpellInfo;
+local C_Spell_GetSpellLink =  C_Spell.GetSpellLink;
 local fields = {
 	["key"] = function(t)
 		return "questID";
@@ -6350,10 +6352,10 @@ local fields = {
 		return "questID";
 	end,
 	["icon"] = function(t)
-		return select(2, C_Spell_GetSpellInfo(t.spellID));
+		return C_Spell_GetSpellTexture(t.spellID);
 	end,
 	["link"] = function(t)
-		return GetSpellLink(t.spellID);
+		return C_Spell_GetSpellLink(t.spellID);
 	end,
 	["description"] = function(t)
 		if t.crs and #t.crs > 0 then
@@ -6760,7 +6762,7 @@ local fields = {
 		return t.spellID ~= 2366 and select(1, C_Spell_GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
 	["icon"] = function(t)
-		return select(2, C_Spell_GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+		return C_Spell_GetSpellTexture(t.spellID) or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
 	end,
 	["spellID"] = function(t)
 		return app.SkillIDToSpellID[t.professionID];
