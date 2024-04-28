@@ -211,7 +211,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Berard's Journal
-							["provider"] = { "i", 3255 },	-- Berard's Journal
+							["providers"] = {
+								{ "i", 3255 },	-- Berard's Journal
+								{ "o", 1594 },	-- Berard's Bookshelf
+							},
 							["coord"] = { 43.0, 73.3, SILVERPINE_FOREST },
 						}),
 					},
