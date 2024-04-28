@@ -636,10 +636,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Pitted Gold Band
-							["provider"] = { "i", 23717 },	-- Pitted Gold Band
+							["providers"] = {
+								{ "i", 23717 },	-- Pitted Gold Band
+								{ "o", 181665 }	-- Burial Chest
+							},
 							["description"] = "Use your lockpicking skill to open the Burial Chests.",
-							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 63.8, 28.9, GHOSTLANDS },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(23921, {	-- Bulging Sack of Silver
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1053,7 +1056,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
-							["provider"] = { "i", 30503 },	-- Archeologist's Shrunken Head
+							["providers"] = {
+								{ "i",  30503 },	-- Archeologist's Shrunken Head
+								{ "o", 184793 },	-- Primitive Chest
+							},
 							["description"] = "Use your lockpicking skill to open the Primitive Chests.",
 							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 75.6, 43.7, GHOSTLANDS },
