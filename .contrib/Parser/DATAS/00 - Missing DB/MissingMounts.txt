@@ -1,3 +1,7 @@
+4.4.0.54377
+mount(440915),	-- Auspicious Arborwyrm
+10.2.7.54366
+mount(453255),	-- Savage Ebony Battle Turtle
 11.0.0.54311
 mount(405623),	-- Armadillo Roller
 mount(441313),	-- Soar
@@ -10,7 +14,7 @@ mount(447156),	-- [PH] Firebee Mount (White Skin, White Saddle)
 mount(447160),	-- [PH] Firebee Mount (Red Skin, Dark Saddle)
 mount(447161),	-- [PH] Firefly2Mount (Yellow)
 mount(447173),	-- [PH] Firefly2Mount (Green)
-mount(447176),	-- [PH] Firefly2Mount (Blue)
+mount(447176),	-- Cyan Glowmite \\ [PH] Firefly2Mount (Blue)
 mount(447181),	-- [PH] Firefly2Mount (Purple)
 mount(447185),	-- [PH] FlyingNerubian2Mount (Green Body, Blue Saddle)
 mount(447189),	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
@@ -48,13 +52,13 @@ mount(449258),	-- [PH] MoleMount (Dark Skin, Black Saddle, Teeth Rodent, Nose St
 mount(449260),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449264),	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
 mount(449265),	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
-mount(449269),	-- [PH] MoleMountBasic (Light Skin, Red Saddle, Teeth Rodent, Nose Pointed)
+mount(449269),	-- Crimson Mudnose \\ [PH] MoleMountBasic (Light Skin, Red Saddle, Teeth Rodent, Nose Pointed)
 mount(449271),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449283),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
 mount(449325),	-- [PH] Vicious Flying Nerubian (Alliance)
 mount(449415),	-- [PH] Proto Ram Earthen (Grey Skin, Grand Horns, Gold Saddle)
 mount(449416),	-- [PH] Proto Ram Earthen (Black Skin, Grand Horns, Silver Saddle)
-mount(449418),	-- [PH] Proto Ram Earthen (Blue Skin, Grand Horns, Copper Saddle)
+mount(449418),	-- Shale Ramolith \\ [PH] Proto Ram Earthen (Blue Skin, Grand Horns, Copper Saddle)
 mount(449419),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
 mount(449421),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
 mount(449465),	-- [PH] Silver Armored Fel Bat Gladiator Mount
@@ -64,12 +68,21 @@ mount(451487),	-- [PH] NerubianWarbeastMount (Cyan)
 mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(451489),	-- [PH] NerubianWarbeastMount (Dark)
 mount(451491),	-- [PH] NerubianWarbeastMount (White)
+11.0.0.54361
+mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
+mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
+mount(452779),	-- [PH] NerubianBeetleLargeMount (Tan)
+mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)
 
 
 
 
 Missing in MountDB.lua
 
+4.4.0.54377
+mount(440915),	-- Auspicious Arborwyrm
+10.2.7.54366
+mount(453255),	-- Savage Ebony Battle Turtle
 11.0.0.54311
 mount(405623),	-- Armadillo Roller
 mount(441313),	-- Soar
@@ -82,7 +95,7 @@ mount(447156),	-- [PH] Firebee Mount (White Skin, White Saddle)
 mount(447160),	-- [PH] Firebee Mount (Red Skin, Dark Saddle)
 mount(447161),	-- [PH] Firefly2Mount (Yellow)
 mount(447173),	-- [PH] Firefly2Mount (Green)
-mount(447176),	-- [PH] Firefly2Mount (Blue)
+mount(447176),	-- Cyan Glowmite \\ [PH] Firefly2Mount (Blue)
 mount(447181),	-- [PH] Firefly2Mount (Purple)
 mount(447185),	-- [PH] FlyingNerubian2Mount (Green Body, Blue Saddle)
 mount(447189),	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
@@ -120,13 +133,13 @@ mount(449258),	-- [PH] MoleMount (Dark Skin, Black Saddle, Teeth Rodent, Nose St
 mount(449260),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449264),	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
 mount(449265),	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
-mount(449269),	-- [PH] MoleMountBasic (Light Skin, Red Saddle, Teeth Rodent, Nose Pointed)
+mount(449269),	-- Crimson Mudnose \\ [PH] MoleMountBasic (Light Skin, Red Saddle, Teeth Rodent, Nose Pointed)
 mount(449271),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449283),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
 mount(449325),	-- [PH] Vicious Flying Nerubian (Alliance)
 mount(449415),	-- [PH] Proto Ram Earthen (Grey Skin, Grand Horns, Gold Saddle)
 mount(449416),	-- [PH] Proto Ram Earthen (Black Skin, Grand Horns, Silver Saddle)
-mount(449418),	-- [PH] Proto Ram Earthen (Blue Skin, Grand Horns, Copper Saddle)
+mount(449418),	-- Shale Ramolith \\ [PH] Proto Ram Earthen (Blue Skin, Grand Horns, Copper Saddle)
 mount(449419),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
 mount(449421),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
 mount(449465),	-- [PH] Silver Armored Fel Bat Gladiator Mount
@@ -136,3 +149,8 @@ mount(451487),	-- [PH] NerubianWarbeastMount (Cyan)
 mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(451489),	-- [PH] NerubianWarbeastMount (Dark)
 mount(451491),	-- [PH] NerubianWarbeastMount (White)
+11.0.0.54361
+mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
+mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
+mount(452779),	-- [PH] NerubianBeetleLargeMount (Tan)
+mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)

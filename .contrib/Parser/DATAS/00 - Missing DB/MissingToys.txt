@@ -1,6 +1,6 @@
 11.0.0.54311
 i(211931),	-- Abyss Caller Horn
-i(212174),	-- The Warband Map to Everything Everywhere All At Once
+i(212174),	-- The Warband Map to Everywhere All At Once \\ The Warband Map to Everything Everywhere All At Once
 i(215145),	-- Remembrance Stone
 i(215147),	-- Beautification Iris
 i(216665),	-- Warband Bank Distance Inhibitor
@@ -9,6 +9,14 @@ i(218310),	-- Box of Puntables
 i(219387),	--
 i(221966),	-- Wormhole Generator: Khaz Algar
 i(223312),	-- Trusty Hat
+11.0.0.54361
+i(204405),	-- Stuffed Bear
+i(219403),	-- Stonebound Lantern \\ Stonebound Lantern [PH]
+i(221962),	-- Defective Escape Pod
+i(224251),	-- Memory Chord
+i(224552),	-- Cave Spelunker's Torch
+i(224554),	-- Silver Linin' Scepter
+i(224585),	-- Hanna's Locket
 
 
 
@@ -17,7 +25,7 @@ Missing in ToyDB.lua
 
 11.0.0.54311
 i(211931),	-- Abyss Caller Horn
-i(212174),	-- The Warband Map to Everything Everywhere All At Once
+i(212174),	-- The Warband Map to Everywhere All At Once \\ The Warband Map to Everything Everywhere All At Once
 i(215145),	-- Remembrance Stone
 i(215147),	-- Beautification Iris
 i(216665),	-- Warband Bank Distance Inhibitor
@@ -26,3 +34,11 @@ i(218310),	-- Box of Puntables
 i(219387),	--
 i(221966),	-- Wormhole Generator: Khaz Algar
 i(223312),	-- Trusty Hat
+11.0.0.54361
+i(204405),	-- Stuffed Bear
+i(219403),	-- Stonebound Lantern \\ Stonebound Lantern [PH]
+i(221962),	-- Defective Escape Pod
+i(224251),	-- Memory Chord
+i(224552),	-- Cave Spelunker's Torch
+i(224554),	-- Silver Linin' Scepter
+i(224585),	-- Hanna's Locket

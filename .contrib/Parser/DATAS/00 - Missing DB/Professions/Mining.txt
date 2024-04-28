@@ -36,6 +36,8 @@ r(442330),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 r(442331),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier3:20:20|a
 r(442332),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 r(442333),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.0.54361
+r(453381),	-- Erosion Polished Slate
 
 
 
@@ -80,3 +82,5 @@ r(442330),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 r(442331),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier3:20:20|a
 r(442332),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 r(442333),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.0.54361
+r(453381),	-- Erosion Polished Slate

@@ -300,7 +300,7 @@ r(447344),	-- Potion Bomb of Power
 r(447345),	-- Stasis Mine
 r(447346),	-- Gravity Mine
 r(447347),	-- Explosive Mine
-r(447348),	-- Tinker: Lightning  Tether
+r(447348),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
 r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 r(447350),	-- Tinker: Earthen Delivery Drill
 r(447351),	-- Tinker: Heartseeking Health Injector
@@ -326,6 +326,8 @@ r(447370),	-- Defective Escape Pod
 r(447371),	-- Malfunctioning Navigation Beacon
 r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
+11.0.0.54361
+r(447374),	-- Box o' Booms \\ PH Engineering Recipe
 
 
 
@@ -637,7 +639,7 @@ r(447344),	-- Potion Bomb of Power
 r(447345),	-- Stasis Mine
 r(447346),	-- Gravity Mine
 r(447347),	-- Explosive Mine
-r(447348),	-- Tinker: Lightning  Tether
+r(447348),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
 r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 r(447350),	-- Tinker: Earthen Delivery Drill
 r(447351),	-- Tinker: Heartseeking Health Injector
@@ -663,3 +665,5 @@ r(447370),	-- Defective Escape Pod
 r(447371),	-- Malfunctioning Navigation Beacon
 r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
+11.0.0.54361
+r(447374),	-- Box o' Booms \\ PH Engineering Recipe

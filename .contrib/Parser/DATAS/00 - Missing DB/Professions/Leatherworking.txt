@@ -1,3 +1,5 @@
+1.15.2.54332
+r(451706),	-- Screaming Chain Pauldrons
 11.0.0.54311
 r(423340),	-- Khaz Algar Leatherworking
 r(425142),	-- Recraft Equipment
@@ -95,6 +97,8 @@ r(444122),	-- Thunderous Drums
 
 Missing in Leatherworking.lua
 
+1.15.2.54332
+r(451706),	-- Screaming Chain Pauldrons
 11.0.0.54311
 r(423340),	-- Khaz Algar Leatherworking
 r(425142),	-- Recraft Equipment

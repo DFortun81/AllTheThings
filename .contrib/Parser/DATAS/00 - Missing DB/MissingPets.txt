@@ -1,3 +1,5 @@
+10.2.7.54366
+pet(4595),	-- Lil' Flameo
 11.0.0.54311
 pet(4450),	-- Remembered Riverpaw
 pet(4451),	-- Remembered Construct
@@ -16,7 +18,7 @@ pet(4465),	-- Vanilla
 pet(4466),	-- Argos
 pet(4467),	-- Hallowed Glowfly
 pet(4469),	-- Bop
-pet(4470),	-- Argent Scootlefish
+pet(4470),	-- Oop'lajax \\ Argent Scootlefish
 pet(4471),	-- Aubergine Scootlefish
 pet(4472),	-- Shadowbog Hopper
 pet(4473),	-- Spinner
@@ -66,8 +68,8 @@ pet(4521),	-- Subterranean Dartswog
 pet(4522),	-- Troglofrog
 pet(4524),	-- Starkstripe Hopper
 pet(4525),	-- Fragrant Stonelamb
-pet(4526),	-- Sandstone Protolamb
-pet(4527),	-- Rosewool Protolamb
+pet(4526),	-- Sandstone Mosswool \\ Sandstone Protolamb
+pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
 pet(4529),	-- Shale Mosswool
 pet(4530),	-- Loamy
@@ -112,12 +114,19 @@ pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
 pet(4586),	-- Brown Leafbug
+11.0.0.54361
+pet(4589),	-- Gale
+pet(4590),	-- Flash
+pet(4591),	-- Thundo
+pet(4594),	-- Dalaran Sewer Turtle
 
 
 
 
 Missing in PetDB.lua
 
+10.2.7.54366
+pet(4595),	-- Lil' Flameo
 11.0.0.54311
 pet(4450),	-- Remembered Riverpaw
 pet(4451),	-- Remembered Construct
@@ -136,7 +145,7 @@ pet(4465),	-- Vanilla
 pet(4466),	-- Argos
 pet(4467),	-- Hallowed Glowfly
 pet(4469),	-- Bop
-pet(4470),	-- Argent Scootlefish
+pet(4470),	-- Oop'lajax \\ Argent Scootlefish
 pet(4471),	-- Aubergine Scootlefish
 pet(4472),	-- Shadowbog Hopper
 pet(4473),	-- Spinner
@@ -186,8 +195,8 @@ pet(4521),	-- Subterranean Dartswog
 pet(4522),	-- Troglofrog
 pet(4524),	-- Starkstripe Hopper
 pet(4525),	-- Fragrant Stonelamb
-pet(4526),	-- Sandstone Protolamb
-pet(4527),	-- Rosewool Protolamb
+pet(4526),	-- Sandstone Mosswool \\ Sandstone Protolamb
+pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
 pet(4529),	-- Shale Mosswool
 pet(4530),	-- Loamy
@@ -232,3 +241,8 @@ pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
 pet(4586),	-- Brown Leafbug
+11.0.0.54361
+pet(4589),	-- Gale
+pet(4590),	-- Flash
+pet(4591),	-- Thundo
+pet(4594),	-- Dalaran Sewer Turtle
