@@ -11,6 +11,7 @@
 	<Script file="Dailies.lua"/>
 	<Script file="Exploration.lua"/>
 	<Script file="Factions.lua"/>
+	<Script file="Filter Specific Things.lua"/>
 	<Script file="Find.lua"/>
 	<Script file="Flight Paths.lua"/>
 	<Script file="Heirlooms.lua"/>
