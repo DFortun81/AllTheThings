@@ -800,7 +800,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tablet of Verga
-							["provider"] = { "i", 6535 },	-- Tablet of Verga
+							["providers"] = {
+								{ "i", 6535 },	-- Tablet of Verga
+								{ "o", 58595 },	-- Burning Blade Stash
+							},
 							["coord"] = { 51.6, 9.7, DUROTAR },
 						}),
 					},
