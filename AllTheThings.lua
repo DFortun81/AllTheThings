@@ -3258,6 +3258,7 @@ local function DetermineCraftedGroups(group, FillData)
 			-- app.PrintDebug("recipeID",recipeID);
 			-- item is BoP
 			if filterSkill then
+				-- TODO: think this needs to be 'recipeID'
 				recipe = SearchForObject("spellID",recipeID,"key");
 				if recipe then
 					-- Recipe can be recrafted, i.e. can be used in Crafting Order to another player with the Profession
@@ -4305,7 +4306,9 @@ local KeyMaps = setmetatable({
 	enchant = "spellID",
 	follower = "followerID",
 	garrfollower = "followerID",
-	i = "itemID",
+	i = "modItemID",
+	item = "modItemID",
+	itemid = "modItemID",
 	mount = "spellID",
 	mountid = "spellID",
 	n = "creatureID",
@@ -4329,6 +4332,7 @@ local function SearchForLink(link)
 	if link:match("item:") then
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = link:match("item[%-?%d:]+") or link;
+		-- TODO: itemString not used
 		if itemString then
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
 				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID = (":"):split(link);
@@ -4358,11 +4362,11 @@ local function SearchForLink(link)
 					end
 					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
 					if exactItemID ~= itemID then
-						_ = SearchForObject("itemID", exactItemID, nil, true);
+						_ = SearchForObject("modItemID", exactItemID, nil, true);
 						if #_ > 0 then return _; end
 					end
 					if modItemID ~= itemID then
-						_ = SearchForObject("itemID", modItemID, nil, true);
+						_ = SearchForObject("modItemID", modItemID, nil, true);
 						if #_ > 0 then return _; end
 					end
 					return SearchForObject("itemID", itemID, nil, true);
@@ -4371,7 +4375,7 @@ local function SearchForLink(link)
 		end
 	end
 
-	local kind, id = (":"):split(link);
+	local kind, id, id2, id3 = (":"):split(link);
 	kind = kind:lower();
 	if kind:sub(1,2) == "|c" then
 		kind = kind:sub(11);
@@ -4385,8 +4389,15 @@ local function SearchForLink(link)
 		return;
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
-	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">",#SearchForObject(KeyMaps[kind], id, nil, true))
+	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">")
 	kind = KeyMaps[kind]
+	if kind == "modItemID" then
+		if not id2 and not id3 then
+			id, id2, id3 = GetItemIDAndModID(id)
+		end
+		id = GetGroupItemIDWithModID(nil, id, id2, id3)
+	end
+	app.PrintDebug(#SearchForObject(KeyMaps[kind], id, nil, true))
 	return SearchForObject(kind, id, nil, true), kind, id
 end
 app.SearchForLink = SearchForLink;
@@ -10975,7 +10986,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		end
 		end)();
 		local function OpenMiniList(id, show)
-			-- print("OpenMiniList",id,show);
+			-- app.PrintDebug("OpenMiniList",id,show);
 			-- Determine whether or not to forcibly reshow the mini list.
 			local self = app:GetWindow("CurrentInstance");
 			if not self:IsVisible() then
@@ -12542,7 +12553,6 @@ customWindowUpdates.list = function(self, force, got)
 
 		local ObjectTypeFuncs = {
 			questID = GetPopulatedQuestObject,
-			-- new function to build from cache table
 		};
 		if CacheFields then
 			-- app.PrintDebug("OTF:Define",dataType)

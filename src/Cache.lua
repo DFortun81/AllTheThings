@@ -1,4 +1,4 @@
-do
+
 local _, app = ...;
 
 -- Global locals
@@ -712,6 +712,7 @@ if app.IsRetail then
 	fieldConverters.drakewatcherManuscriptID = fieldConverters.itemID;
 	fieldConverters.heirloomID = fieldConverters.itemID;
 	tinsert(postscripts, function()
+		if #cacheGroupForModItemID == 0 then return end
 		local modItemID
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
 		for _,group in ipairs(cacheGroupForModItemID) do
@@ -877,9 +878,18 @@ local function SearchForObject(field, id, require, allowMultiple)
 	-- * none - accept any object which is cached against the specific field value
 	-- allowMultiple - Whether to return multiple matching objects as an array (within the 'require' restriction)
 	local fcache, count
+	-- Direct search by modItemID means not to allow an itemID fallback in the search
+	-- however, base itemIDs are not cached by modItemID, so a modItemID search on a base itemID
+	-- should instead be considered as an itemID search
+	if field == "modItemID" then
+		local idBase = math_floor(id)
+		if idBase == id then
+			id = idBase
+			field = "itemID"
+		end
 	-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
-	-- match requirement accuracy
-	if field == "itemID" then
+	-- match requirement accuracy if possible, with fallback to base itemID
+	elseif field == "itemID" then
 		-- try searching by modItemID cache, any results are the EXACT id searched for
 		fcache = GetRawField("modItemID", id)
 		if fcache and #fcache > 0 then
@@ -896,8 +906,8 @@ local function SearchForObject(field, id, require, allowMultiple)
 		end
 	end
 	fcache = fcache or GetRawField(field, id)
-	count = fcache and #fcache;
-	if not count or count == 0 then
+	count = fcache and #fcache or 0;
+	if count == 0 then
 		-- app.PrintDebug("SFO",field,id,require,"0~")
 		return allowMultiple and app.EmptyTable or nil
 	end
@@ -1233,4 +1243,3 @@ app.VerifyCache = VerifyCache;
 app.VerifyRecursion = VerifyRecursion;
 -- this table is deleted once used
 app.__CacheQuestTriggers = QuestTriggers;
-end
