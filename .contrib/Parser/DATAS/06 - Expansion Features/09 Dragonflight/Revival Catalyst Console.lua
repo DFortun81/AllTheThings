@@ -3098,6 +3098,89 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(217218),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
+				-- I can't figure modID or bonusID this season for "Off Slots" - Darkal
+				--[[
+				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 7479 }, {	-- "Off Slots"
+					cl(DEATHKNIGHT, {
+						i(207202),	-- Graveboots of the Risen Nightmare
+						i(207197),	-- Seal of the Risen Nightmare
+						i(207195),	-- Shroud of the Risen Nightmare
+						i(207196),	-- Vambraces of the Risen Nightmare
+					}),
+					cl(DEMONHUNTER, {
+						i(207259),	-- Screaming Torchfiend's Armlets
+						i(207260),	-- Screaming Torchfiend's Clasp
+						i(207265),	-- Screaming Torchfiend's Clutches
+						i(207258),	-- Screaming Torchfiend's Shawl
+					}),
+					cl(DRUID, {
+						i(202511),	-- Bands of the Autumn Blaze
+						i(202510),	-- Foliage of the Autumn Blaze
+						i(202512),	-- Garland of the Autumn Blaze
+						i(202517),	-- Hooves of the Autumn Blaze
+					}),
+					cl(EVOKER, {
+						i(200385),	-- Bracers of the Awakened
+						i(200384),	-- Chain of the Awakened
+						i(200386),	-- Shroud of the Awakened
+						i(200379),	-- Treads of the Awakened
+					}),
+					cl(HUNTER, {
+						i(200393),	-- Stormwing Harrier's Belt
+						i(200395),	-- Stormwing Harrier's Plumage
+						i(200388),	-- Stormwing Harrier's Sabatons
+						i(200394),	-- Stormwing Harrier's Wristguards
+					}),
+					cl(MAGE, {
+						i(207286),	-- Wayward Chronomancer's Cuffs
+						i(207285),	-- Wayward Chronomancer's Stole
+						i(207292),	-- Wayward Chronomancer's Strapped Boots
+						i(207287),	-- Wayward Chronomancer's Synchronous Belt
+					}),
+					cl(MONK, {
+						i(200367),	-- Cuffs of the Waking Fist
+						i(200368),	-- Drape of the Waking Fist
+						i(200361),	-- Gaiters of the Waking Fist
+						i(200366),	-- Girdle of the Waking Fist
+					}),
+					cl(PALADIN, {
+						i(202448),	-- Heartfire Sentinel's Blessed Bindings
+						i(202454),	-- Heartfire Sentinel's Greatboots
+						i(202447),	-- Heartfire Sentinel's Pelerine
+						i(202449),	-- Heartfire Sentinel's Waistguard
+					}),
+					cl(PRIEST, {
+						i(202538),	-- Cuffs of the Furnace Seraph
+						i(202544),	-- Sabatons of the Furnace Seraph
+						i(202539),	-- Sash of the Furnace Seraph
+						i(202537),	-- Shroud of the Furnace Seraph
+					}),
+					cl(ROGUE, {
+						i(202493),	-- Lurking Specter's Armwraps
+						i(202492),	-- Lurking Specter's Capelet
+						i(202494),	-- Lurking Specter's Edgeband
+						i(202499),	-- Lurking Specter's Tabi
+					}),
+					cl(SHAMAN, {
+						i(207204),	-- Greatwolf Outcast's Chainweave
+						i(207211),	-- Greatwolf Outcast's Footpads
+						i(207206),	-- Greatwolf Outcast's Sigil Belt
+						i(207205),	-- Greatwolf Outcast's Wristguards
+					}),
+					cl(WARLOCK, {
+						i(202535),	-- Sandals of the Sinister Savant
+						i(202528),	-- Shawl of the Sinister Savant
+						i(202530),	-- Skullstrap of the Sinister Savant
+						i(202529),	-- Wristwraps of the Sinister Savant
+					}),
+					cl(WARRIOR, {
+						i(202440),	-- Insignia of the Onyx Crucible
+						i(202445),	-- Ironstriders of the Onyx Crucible
+						i(202438),	-- Manteau of the Onyx Crucible
+						i(202439),	-- Warbands of the Onyx Crucible
+					}),
+				})),
+				]]--
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
 					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
 					["groups"] = {
@@ -3194,6 +3277,92 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					},
 				})),
+				-- I can't figure modID or bonusID this season for "Off Slots" - Darkal
+				--[[
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
+					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["groups"] = {
+						cl(DEATHKNIGHT, {
+							i(207202),	-- Graveboots of the Risen Nightmare
+							i(207197),	-- Seal of the Risen Nightmare
+							i(207195),	-- Shroud of the Risen Nightmare
+							i(207196),	-- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259),	-- Screaming Torchfiend's Armlets
+							i(207260),	-- Screaming Torchfiend's Clasp
+							i(207265),	-- Screaming Torchfiend's Clutches
+							i(207258),	-- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(202511),	-- Bands of the Autumn Blaze
+							i(202510),	-- Foliage of the Autumn Blaze
+							i(202512),	-- Garland of the Autumn Blaze
+							i(202517),	-- Hooves of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(200385),	-- Bracers of the Awakened
+							i(200384),	-- Chain of the Awakened
+							i(200386),	-- Shroud of the Awakened
+							i(200379),	-- Treads of the Awakened
+						}),
+						cl(HUNTER, {
+							i(200393),	-- Stormwing Harrier's Belt
+							i(200395),	-- Stormwing Harrier's Plumage
+							i(200388),	-- Stormwing Harrier's Sabatons
+							i(200394),	-- Stormwing Harrier's Wristguards
+						}),
+						cl(MAGE, {
+							i(207286),	-- Wayward Chronomancer's Cuffs
+							i(207285),	-- Wayward Chronomancer's Stole
+							i(207292),	-- Wayward Chronomancer's Strapped Boots
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(200367),	-- Cuffs of the Waking Fist
+							i(200368),	-- Drape of the Waking Fist
+							i(200361),	-- Gaiters of the Waking Fist
+							i(200366),	-- Girdle of the Waking Fist
+						}),
+						cl(PALADIN, {
+							i(202448),	-- Heartfire Sentinel's Blessed Bindings
+							i(202454),	-- Heartfire Sentinel's Greatboots
+							i(202447),	-- Heartfire Sentinel's Pelerine
+							i(202449),	-- Heartfire Sentinel's Waistguard
+						}),
+						cl(PRIEST, {
+							i(202538),	-- Cuffs of the Furnace Seraph
+							i(202544),	-- Sabatons of the Furnace Seraph
+							i(202539),	-- Sash of the Furnace Seraph
+							i(202537),	-- Shroud of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(202493),	-- Lurking Specter's Armwraps
+							i(202492),	-- Lurking Specter's Capelet
+							i(202494),	-- Lurking Specter's Edgeband
+							i(202499),	-- Lurking Specter's Tabi
+						}),
+						cl(SHAMAN, {
+							i(207204),	-- Greatwolf Outcast's Chainweave
+							i(207211),	-- Greatwolf Outcast's Footpads
+							i(207206),	-- Greatwolf Outcast's Sigil Belt
+							i(207205),	-- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(202535),	-- Sandals of the Sinister Savant
+							i(202528),	-- Shawl of the Sinister Savant
+							i(202530),	-- Skullstrap of the Sinister Savant
+							i(202529),	-- Wristwraps of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible
+							i(202445),	-- Ironstriders of the Onyx Crucible
+							i(202438),	-- Manteau of the Onyx Crucible
+							i(202439),	-- Warbands of the Onyx Crucible
+						}),
+					},
+				})),
+				]]--
 			}))),
 			n(QUESTS, {
 				q(72360, {	-- Reviving the Machine
