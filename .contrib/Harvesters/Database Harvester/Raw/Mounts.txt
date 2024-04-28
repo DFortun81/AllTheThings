@@ -371,6 +371,8 @@
 110051@@@Heart of the Aspects
 113120@@@Feldrake
 121820@@@Obsidian Nightwing
+4.4.0.54377
+440915@@@Auspicious Arborwyrm
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild

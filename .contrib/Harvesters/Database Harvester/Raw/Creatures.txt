@@ -221,6 +221,8 @@
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
+4.4.0.54377
+211012@@@Cypress
 5.0.3.15882
 7395@@@Undercity Cockroach
 14143@@@Ar'lia
