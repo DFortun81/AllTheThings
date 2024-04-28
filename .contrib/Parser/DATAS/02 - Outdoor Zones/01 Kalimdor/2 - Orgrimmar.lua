@@ -1981,6 +1981,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(65610, {	-- Wish You Were Here
 					["qg"] = 3363,	-- Magar <Tailoring Trainer>
 					["sourceQuest"] = 65601,	-- Love Hurts
+					["altQuests"] = { 65593 },	-- Hearts of the Lovers
 					["coord"] = { 63.6, 50.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },

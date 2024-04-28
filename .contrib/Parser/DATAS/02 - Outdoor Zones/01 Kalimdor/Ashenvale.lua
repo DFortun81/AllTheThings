@@ -3270,19 +3270,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(6581, {	-- Warsong Saw Blades
-					["qg"] = 12724,	-- Pixel
-					["coord"] = { 73, 61.4, ASHENVALE },
-					["description"] = "This quest is repeatable, but only available when the quest \"Warsong Supplies\" (Quest #6571) is in your quest log.",
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4369, 1 }},	-- Deadly Blunderbuss
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 22,
-					["groups"] = {
-						i(16742),	-- Warsong Saw Blades
-					},
-				}),
 				q(6571, {	-- Warsong Supplies
 					["qg"] = 11820,	-- Locke Okarr
 					["coord"] = { 71.40, 67.64, ASHENVALE },
@@ -3291,8 +3278,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
-						objective(1, {	-- 0/1 Warsong Saw Blades
-							["provider"] = { "i", 16742 },	-- Warsong Saw Blades
+						q(6581, {	-- Warsong Saw Blades
+							["qg"] = 12724,	-- Pixel
+							["coord"] = { 73, 61.4, ASHENVALE },
+							["timeline"] = { REMOVED_4_0_3 },
+							["cost"] = {{ "i", 4369, 1 }},	-- Deadly Blunderbuss
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["lvl"] = 22,
+							["groups"] = {
+								objective(1, {	-- 0/1 Warsong Saw Blades
+									["questID"] = 6571,	-- Warsong Supplies
+									["provider"] = { "i", 16742 },	-- Warsong Saw Blades
+								}),
+							},
 						}),
 						objective(2, {	-- 0/1 Warsong Axe Shipment
 							["providers"] = {

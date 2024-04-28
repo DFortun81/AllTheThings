@@ -518,6 +518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if ANYCLASSIC
 				q(65593, {	-- Hearts of the Lovers
 					["qg"] = 5675,	-- Carendin Halgar
+					["altQuests"] = { 65610 },	-- Wish You Were Here
 					["coord"] = { 85, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
