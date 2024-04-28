@@ -3266,11 +3266,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Moldy Tome
-							["provider"] = { "i", 6931 },	-- Moldy Tome
+							["providers"] = {
+								{ "i", 6931 },	-- Moldy Tome
+								{ "o", 92013 },	-- Tome of the Cabal
+							},
 							["coord"] = { 27.8, 72.9, HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/1 Tattered Manuscript
-							["provider"] = { "i", 6997 },	-- Tattered Manuscript
+							["providers"] = {
+								{ "i", 6997 },	-- Tattered Manuscript
+								{ "o", 92423 },	-- Damaged Chest
+							},
 							["coord"] = { 43.5, 32.7, THOUSAND_NEEDLES },
 						}),
 					},
