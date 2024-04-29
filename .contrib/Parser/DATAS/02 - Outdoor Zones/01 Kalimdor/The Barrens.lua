@@ -1802,6 +1802,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 880,	-- Altered Beings
 					["coord"] = { 52.26, 31.92, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
