@@ -383,7 +383,7 @@ namespace ATT
                     // when sending a new request, slightly reduce the throttle
                     lock (ThrottleLock)
                     {
-                        API_ExpectedThrottle = Math.Max(10, API_ExpectedThrottle - 2);
+                        API_ExpectedThrottle = Math.Max(100, API_ExpectedThrottle - 2);
                     }
                 }
                 else
