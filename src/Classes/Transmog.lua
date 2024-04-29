@@ -147,6 +147,10 @@ app.DetermineItemLink = function(sourceID)
 		-- app.PrintTable(sourceInfo)
 		return link;
 	end
+	-- Cannot do this process until the base Item is loaded in the Client
+	if not GetItemInfo(link) then
+		return RETRIEVING_DATA
+	end
 	local checkID, found = GetSourceID(link);
 	if found and checkID == sourceID then return link; end
 
@@ -598,6 +602,15 @@ do
 		local link = app.DetermineItemLink(sourceID);
 		if not link then return; end
 		-- app.PrintDebug("GGLUS",sourceID,link)
+
+		if IsRetrieving(link) then
+			group.retries = (group.retries or 0) + 1
+			if group.retries > 10 then
+				return
+			end
+			app.FunctionRunner.Run(GenerateGroupLinkUsingSourceID, group)
+			return
+		end
 
 		app.ImportRawLink(group, link, true);
 
