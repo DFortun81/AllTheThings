@@ -355,7 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							q(1051, {	-- Vorrel's Revenge
 								["qg"] = 3981,	-- Vorrel Sengutz
 								["timeline"] = { REMOVED_4_0_3 },
-								["maps"] = { ALTERAC_MOUNTAINS },
+								["maps"] = { ALTERAC_MOUNTAINS, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 25,
 								["groups"] = {
