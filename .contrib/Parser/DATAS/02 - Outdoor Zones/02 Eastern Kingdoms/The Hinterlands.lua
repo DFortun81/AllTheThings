@@ -1550,7 +1550,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2936,	-- The Spider God
 					["coord"] = { 56, 74.6, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
