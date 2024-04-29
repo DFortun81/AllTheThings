@@ -169,12 +169,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(ZONE_DROPS, {
 				i(1454),	-- Axe of the Enforcer
 				i(3414),	-- Crested Scepter
-				i(16790, {	-- Damp Note
-					-- #if BEFORE 6.0.1.18322
-					["cr"] = 4802,	-- Blackfathom Tide Priestess
-					-- #endif
-					["races"] = HORDE_ONLY,
-				}),
 				i(3413),	-- Doomspike
 				i(2567),	-- Evocator's Blade
 				i(1481),	-- Grimclaw
@@ -200,8 +194,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
 					["provider"] = { "i", 16790 },	-- Damp Note
+					["sourceQuest"] = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
+					["description"] = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["cr"] = 4802,	-- Blackfathom Tide Priestess
 					["lvl"] = 17,
 				}),
 				q(6565, {	-- Allegiance to the Old Gods (2/2)

@@ -84,13 +84,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- Who Does Number Two Work For?
-							["provider"] = { "n", 15554 },	-- Number Two
-							["coord"] = { 65, 72, WINTERSPRING },
-							["cost"] = {
-								{ "i", 21041, 1 },	-- Bag of Gold
-								{ "i", 21039, 1 },	-- Narain's Turban
-								{ "i", 21040, 1 },	-- Narain's Robe
+							["providers"] = {
+								{ "n", 15554 },	-- Number Two
+								{ "i", 21041 },	-- Bag of Gold
+								{ "i", 21039 },	-- Narain's Turban
+								{ "i", 21040 },	-- Narain's Robe
 							},
+							["coord"] = { 65, 72, WINTERSPRING },
 						}),
 						i(21042, {	-- Narain's Special Kit
 							i(21037),	-- Crude Map
