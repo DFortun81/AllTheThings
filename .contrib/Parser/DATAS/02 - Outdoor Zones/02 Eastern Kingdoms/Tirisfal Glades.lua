@@ -1195,29 +1195,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Agamand Family Axe
 							["providers"] = {
-								{ "i", 7567 },	-- Agamand Family Axe
-								--{ "o", 105170 },	-- Agamand Weapon Rack
+								{ "i",   7567 },	-- Agamand Family Axe
+								{ "o", 105170 },	-- Agamand Weapon Rack
 							},
 							["coord"] = { 51.7, 25.7, TIRISFAL_GLADES },
 						}),
 						objective(2, {	-- 0/1 Agamand Family Dagger
 							["providers"] = {
-								{ "i", 7568 },	-- Agamand Family Dagger
-								--{ "o", 105172 },	-- Agamand Weapon Rack
+								{ "i",   7568 },	-- Agamand Family Dagger
+								{ "o", 105172 },	-- Agamand Weapon Rack
 							},
 							["coord"] = { 52.6, 26.9, TIRISFAL_GLADES },
 						}),
 						objective(3, {	-- 0/1 Agamand Family Mace
 							["providers"] = {
-								{ "i", 7569 },	-- Agamand Family Mace
-								--{ "o", 105171 },	-- Agamand Weapon Rack
+								{ "i",   7569 },	-- Agamand Family Mace
+								{ "o", 105171 },	-- Agamand Weapon Rack
 							},
 							["coord"] = { 51.9, 27.1, TIRISFAL_GLADES },
 						}),
 						objective(4, {	-- 0/1 Agamand Family Sword
 							["providers"] = {
-								{ "i", 7566 },	-- Agamand Family Sword
-								--{ "o", 105169 },	-- Agamand Weapon Rack
+								{ "i",   7566 },	-- Agamand Family Sword
+								{ "o", 105169 },	-- Agamand Weapon Rack
 							},
 							["coord"] = { 52.6, 25.9, TIRISFAL_GLADES },
 						}),

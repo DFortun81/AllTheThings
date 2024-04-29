@@ -201,7 +201,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/5 Serpentbloom
-								["provider"] = { "i", 5339 },	-- Serpentbloom
+								["providers"] = {
+									{ "i", 5339 },	-- Serpentbloom
+									{ "o", 13891 },	-- Serpentbloom
+								},
 							}),
 						},
 					}),
@@ -213,7 +216,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["lvl"] = 14,
 						["groups"] = {
 							objective(1, {	-- 0/10 Serpentbloom
-								["provider"] = { "i", 5339 },	-- Serpentbloom
+								["providers"] = {
+									{ "i", 5339 },	-- Serpentbloom
+									{ "o", 13891 },	-- Serpentbloom
+								},
 							}),
 							i(10919, {	-- Apothecary Gloves
 								["timeline"] = { REMOVED_4_0_3 },
