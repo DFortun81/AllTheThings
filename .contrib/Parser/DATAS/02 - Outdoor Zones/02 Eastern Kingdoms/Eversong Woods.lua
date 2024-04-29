@@ -1032,6 +1032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9673, {	-- Beast Training
 					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9485,	-- Taming the Beast (3/3)
 					["coord"] = { 60.3, 62.8, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
@@ -1517,6 +1518,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
+				q(9617, {	-- Seek the Farstriders
+					["qgs"] = {
+						16271,	-- Telenus <Pet Trainer>
+						16673,	-- Oninath <Hunter Trainer>
+					},
+					["coords"] = {
+						{ 48.0, 46.0, EVERSONG_WOODS },
+						{ 84.6, 26.6, SILVERMOON_CITY },
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+				}),
 				q(8892, {	-- Situation at Sunsail Anchorage
 					["qg"] = 15939,	-- Ranger Degolien
 					-- #if BEFORE LEGION
@@ -1595,6 +1610,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
+				}),
+				q(9484, {	-- Taming the Beast (1/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9617,	-- Seek the Farstriders
+					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Crazed Dragonhawk
+							["providers"] = {
+								{ "n", 15650 },	-- Crazed Dragonhawk
+								{ "i", 23697 },	-- Taming Rod
+							},
+						}),
+					},
+				}),
+				q(9486, {	-- Taming the Beast (2/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9484,	-- Taming the Beast (1/3)
+					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame an Elder Springpaw
+							["providers"] = {
+								{ "n", 15652 },	-- Elder Springpaw
+								{ "i", 23702 },	-- Taming Rod
+							},
+						}),
+					},
+				}),
+				q(9485, {	-- Taming the Beast (3/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9486,	-- Taming the Beast (2/3)
+					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Mistbat
+							["providers"] = {
+								{ "n", 16353 },	-- Mistbat
+								{ "i", 23703 },	-- Taming Rod
+							},
+						}),
+						-- #if BEFORE CATA
+						recipe(883),	-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
+						-- #endif
+					},
 				}),
 				q(8475, {	-- The Dead Scar
 					["qg"] = 15416,	-- Ranger Jaela
