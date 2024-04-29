@@ -458,7 +458,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["lvl"] = 29,
 								["groups"] = {
 									objective(1, {	-- 0/1 Compendium of the Fallen
-										["provider"] = { "i", 5535 },	-- Compendium of the Fallen
+										["providers"] = {
+											{ "i", 5535 },	-- Compendium of the Fallen
+											{ "o", 19283 },	-- Compendium of the Fallen
+										},
+										["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 									}),
 								},
 							}),
@@ -470,7 +474,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["lvl"] = 28,
 								["groups"] = {
 									objective(1, {	-- 0/1 Compendium of the Fallen
-										["provider"] = { "i", 5535 },	-- Compendium of the Fallen
+										["providers"] = {
+											{ "i", 5535 },	-- Compendium of the Fallen
+											{ "o", 19283 },	-- Compendium of the Fallen
+										},
+										["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 									}),
 									i(17508, {	-- Forcestone Buckler
 										["timeline"] = { REMOVED_4_0_3 },
@@ -499,7 +507,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["lvl"] = 28,
 								["groups"] = {
 									objective(1, {	-- 0/1 Mythology of the Titans
-										["provider"] = { "i", 5536 },	-- Mythology of the Titans
+										["providers"] = {
+											{ "i", 5536 },	-- Mythology of the Titans
+											{ "o", 19284 },	-- Mythology of the Titans
+										},
+										["description"] = "In the hallway with the benches immediately to your left upon entering it.",
 									}),
 									i(7746, {	-- Explorers' League Commendation
 										["timeline"] = { REMOVED_4_0_3 },
@@ -553,7 +565,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["lvl"] = 28,
 								["groups"] = {
 									objective(1, {	-- 0/1 Beginnings of the Undead Threat
-										["provider"] = { "i", 5861 },	-- Beginnings of the Undead Threat
+										["providers"] = {
+											{ "i", 5861 },	-- Beginnings of the Undead Threat
+											{ "o", 20726 },	-- Beginnings of the Undead Threat
+										},
+										["description"] = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",
 									}),
 								},
 							}),
@@ -603,15 +619,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["timeline"] = { REMOVED_5_0_4 },
 								}),
 							},
-						}),
-						i(5861, {	-- Beginnings of the Undead Threat
-							["description"] = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",
-						}),
-						i(5536, {	-- Mythology of the Titans
-							["description"] = "In the hallway with the benches immediately to your left upon entering it.",
-						}),
-						i(5535, {	-- Compendium of the Fallen
-							["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 						}),
 						n(6487, {	-- Arcanist Doan
 							["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
