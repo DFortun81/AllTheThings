@@ -48,7 +48,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Water Pitcher
-									["provider"] = { "i", 4755 },	-- Water Pitcher
+									["providers"] = {
+										{ "i", 4755 },	-- Water Pitcher
+										{ "o", 2907 },	-- Water Pitcher
+									},
 									["coord"] = { 50.2, 81.3, MULGORE },
 								}),
 							},

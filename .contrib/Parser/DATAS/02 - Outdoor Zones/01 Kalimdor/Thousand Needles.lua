@@ -263,9 +263,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 24,
 					["groups"] = {
 						objective(1, {	-- 0/1 Arikara Serpent Skin
-							["provider"] = { "i", 12925 },	-- Arikara Serpent Skin
+							["providers"] = {
+								{ "i",  12925 },	-- Arikara Serpent Skin
+								{ "o", 175944 },	-- Sacred Fire of Life
+								{ "i",  12785 },	-- Incendia Powder
+							},
 							["coord"] = { 37.7, 56.1, THOUSAND_NEEDLES },
-							["cost"] = {{ "i", 12785, 1 }},	-- Incendia Powder
 							["cr"] = 10882,	-- Arikara <Vengeance>
 						}),
 						i(15464, {	-- Brute Hammer
@@ -1726,7 +1729,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Grenka's Claw
-							["provider"] = { "i", 5843 },	-- Grenka's Claw
+							["providers"] = {
+								{ "i", 5843 },	-- Grenka's Claw
+								{ "o", 20447 },	-- Harpy Foodstuffs
+								{ "i", 5845 },	-- Flank of Meat
+							},
 							["coord"] = { 26, 55.4, THOUSAND_NEEDLES },
 							["cr"] = 4490,	-- Grenka Bloodscreech
 						}),
