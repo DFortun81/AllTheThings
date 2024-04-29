@@ -1173,7 +1173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { ASHENVALE },
 					["classes"] = { MAGE },
 					["races"] = { UNDEAD, TROLL },
-					["lvl"] = 15,
+					["lvl"] = 26,
 					["groups"] = {
 						objective(1, {	-- 0/12 Laughing Sister's Hair
 							["provider"] = { "i", 7270 },	-- Laughing Sister's Hair
