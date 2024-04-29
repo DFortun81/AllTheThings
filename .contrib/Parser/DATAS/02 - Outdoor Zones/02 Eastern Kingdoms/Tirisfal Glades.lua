@@ -1663,7 +1663,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
-					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
+					["provider"] = { "i", 46881 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["lockCriteria"] = { 1,
