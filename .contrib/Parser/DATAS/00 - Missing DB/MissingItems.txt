@@ -1402,7 +1402,6 @@ i(5829),	-- r-Sharp Beak \\ Razor-Sharp Beak \\ Razor-sharp Beak
 i(5833),	-- rium Ore \\ Indurium Ore
 i(5838),	-- Skin Scroll \\ Kodo Skin Scroll
 i(5839),	-- nal Page \\ Journal Page
-i(5845),	-- k of Meat \\ Flank of Meat
 i(5846),	-- an's Sealed Note \\ Korran's Sealed Note
 i(5849),	-- e of Crash Helmets \\ Crate of Crash Helmets
 i(5850),	-- rom's Sealed Note \\ Belgrom's Sealed Note
@@ -2428,7 +2427,6 @@ i(12762),	-- Secrecy of Plans
 i(12763),	-- Un'Goro Etherfruit
 i(12770),	-- u's Information \\ Bijou's Information
 i(12778),	-- Document Chest
-i(12785),	-- ndia Powder \\ Incendia Powder
 i(12789),	-- QATest Raid Buffs lvl 60 \\ Horn of Uber Buffing (test)
 i(12804),	-- rful Mojo \\ Powerful Mojo
 i(12813),	-- k of Mystery Goo \\ Flask of Mystery Goo
