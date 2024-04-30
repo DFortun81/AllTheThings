@@ -7129,7 +7129,6 @@ root(ROOTS.Unsorted, {
 				i(217031),	-- Gladiator's Battered Treads
 
 				------ Single Pieces ------
-				i(213635),	-- Checkered Pennant
 				i(213396),	-- Classic Midnight Tabard
 				i(213394),	-- Ebony Crown of the Red Rose
 				i(217375),	-- Frenzied Hat of the Crimson Seas
@@ -7305,7 +7304,6 @@ root(ROOTS.Unsorted, {
 				q(79464),	-- [DNT] Renown Reward 002
 				q(79465),	-- [DNT] Renown Reward 003
 				q(79466),	-- [DNT] Renown Reward 004
-				q(79702),	--
 				q(79988),	--
 				q(80171),	--
 				q(80172),	-- Ensemble: Gladiator's Battered Armor
@@ -7530,10 +7528,6 @@ root(ROOTS.Unsorted, {
 				q(78976),	--
 				q(79125),	--
 				q(79126),	--
-				q(79130),	--
-				q(79131),	--
-				q(79132),	--
-				q(79133),	--
 				q(79155),	--
 				q(79207),	--
 				q(79208),	--

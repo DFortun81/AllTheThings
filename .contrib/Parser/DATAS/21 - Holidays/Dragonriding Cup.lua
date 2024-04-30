@@ -752,7 +752,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 			}),
 		}))),
 		applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {					-- Kalimdor Cup
-			-- Returns Jan 9th 2025 (11.1.0?)
 			n(ACHIEVEMENTS, {
 				ach(17712, {	-- Kalimdor: Bronze
 					-- Meta Achievement
@@ -2569,32 +2568,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 			n(QUESTS, {
-				-- TODO: Intro quests
-				-- q(, {	-- The Northrend Cup Begins
-				-- 	["provider"] = { "n", 199261 },	-- Holiday Enthusiast
-				-- 	["coord"] = { 31.5, 67.1, VALDRAKKEN },
-				-- 	["isBreadcrumb"] = true,
-				-- }),
-				-- q(, {	-- The Northrend Cup Begins
-				-- 	["provider"] = { "n", 214031 },	-- Racing Enthusiast
-				-- 	["coord"] = {61.8, 75.1, STORMWIND_CITY },
-				-- 	["isBreadcrumb"] = true,
-				-- 	["races"] = ALLIANCE_ONLY,
-				-- }),
-				-- q(, {	-- The Northrend Cup Begins
-				-- 	["provider"] = { "n", 213769 },	-- Racing Enthusiast
-				-- 	["coord"] = { 52.8, 79.5, ORGRIMMAR },
-				-- 	["isBreadcrumb"] = true,
-				-- 	["races"] = HORDE_ONLY,
-				-- }),
-				-- q(, {	-- The Northrend Cup Circuit
-				-- 	["sourceQuests"] = { , ,  },	-- The Outland Cup Begins
-				-- 	["provider"] = { "n", 206737 },	-- Lord Andestrasz
-				-- 	["coord"] = { 26.9, 47.4, VALDRAKKEN },
-				-- 	["g"] = {
-				-- 		currency(RIDERS_OF_AZEROTH_BADGE),
-				-- 	},
-				-- }),
+				q(79131, {	-- The Northrend Cup Begins
+					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
+					["coord"] = { 31.5, 67.1, VALDRAKKEN },
+					["isBreadcrumb"] = true,
+				}),
+				q(79132, {	-- The Northrend Cup Begins
+					["provider"] = { "n", 214031 },	-- Racing Enthusiast
+					["coord"] = { 61.8, 75.1, STORMWIND_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(79133, {	-- The Northrend Cup Begins
+					["provider"] = { "n", 213769 },	-- Racing Enthusiast
+					["coord"] = { 52.8, 79.5, ORGRIMMAR },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(79130, {	-- The Northrend Cup Circuit
+					["sourceQuests"] = { 79131, 79132, 79133 },	-- The Outland Cup Begins
+					["provider"] = { "n", 206737 },	-- Lord Andestrasz
+					["coord"] = { 26.9, 47.4, VALDRAKKEN },
+					["g"] = {
+						currency(RIDERS_OF_AZEROTH_BADGE),
+					},
+				}),
 				-- TODO: Proivder ID, coords
 				dragonridingrace(78334, {	-- Blackriver Burble
 					--["provider"] = { "n",  },	-- Bronze Timekeeper
@@ -2925,29 +2923,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				n(206744, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
+						i(213635, {	-- Checkered Pennant
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
 						i(213585, {	-- Icy Drake Racer's Scarf
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
 						}),
 						i(213586, {	-- Icy Drake Racer's Boots
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(213587, {	-- Icy Drake Racer's Leggings
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(213588, {	-- Icy Drake Racer's Belt
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(213589, {	-- Icy Drake Racer's Handwraps
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(213590, {	-- Icy Drake Racer's Jersey
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(213591, {	-- Icy Drake Racer's Shoulderpads
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(213592, {	-- Icy Drake Racer's Helmet
-							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 					},
 				})),
