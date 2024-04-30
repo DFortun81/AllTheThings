@@ -2270,17 +2270,6 @@ root(ROOTS.Zones, {
 							{ 51.6, 64.0, SHADOWMOON_VALLEY },
 						},
 					}),
-					o(240622, {	-- Warden's Scroll Case
-						["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
-						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
-						["timeline"] = { ADDED_6_1_0 },
-						["modelScale"] = .5,
-						["groups"] = {
-							i(122228, {	-- Music Roll: The Black Temple
-								["timeline"] = { ADDED_6_1_0 },
-							}),
-						},
-					}),
 					i(140784, {	-- Fel Piston Stabilizer
 						["timeline"] = { ADDED_7_0_3 },
 						["crs"] = {
@@ -2297,6 +2286,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(TREASURES, {
+					o(240622, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Warden's Scroll Case
+						["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
+						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
+						["modelScale"] = .5,
+						["groups"] = {
+							i(122228), 	-- Music Roll: The Black Temple
+						},
+					})),
+				})
 			},
 		})),
 	})),

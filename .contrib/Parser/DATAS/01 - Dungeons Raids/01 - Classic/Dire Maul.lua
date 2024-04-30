@@ -1038,14 +1038,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(ZONE_DROPS, {
 				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
-					i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-						-- #if AFTER LEGION
-						["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-						-- #else
-						["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
-						["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-						-- #endif
-					}),
 					i(12662),	-- Demonic Rune
 					i(18640),	-- Happy Fun Rock
 					i(18333, {	-- Libram of Focus
@@ -1117,6 +1109,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 					i(18359, {	-- The Light and How to Swing It
 						["timeline"] = { REMOVED_4_0_3 },
+					}),
+				},
+			}),
+			n(TREASURES, {
+				["maps"] = ALL_DIREMAUL_MAPS,
+				["groups"] = {
+					o(179547, {	-- A Dusty Tome
+						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."--
+							-- #if AFTER LEGION
+							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+							-- #else
+							["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
+							["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+							-- #endif
+						}),
 					}),
 				},
 			}),
