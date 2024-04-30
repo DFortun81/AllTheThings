@@ -508,6 +508,16 @@ local function CollectUniqueAppearances()
 	-- app.PrintDebug("Unique Refresh")
 	local currentCharacterOnly = app.Settings:Get("MainOnly");
 	local ItemSourceFilter = app.ItemSourceFilter;
+	if not app.MaxSourceID then
+		-- app.PrintDebug("Initial Session Refresh")
+		local maxSourceID = 0;
+		for id,_ in pairs(SearchForFieldContainer("sourceID")) do
+			-- track the max sourceID so we can evaluate sources not in ATT as well
+			if id > maxSourceID then maxSourceID = id; end
+		end
+		app.MaxSourceID = maxSourceID;
+		-- app.PrintDebug("MaxSourceID",maxSourceID)
+	end
 	for sourceID=1,app.MaxSourceID do
 		-- for each known source
 		if AccountSources[sourceID] == 1 then
