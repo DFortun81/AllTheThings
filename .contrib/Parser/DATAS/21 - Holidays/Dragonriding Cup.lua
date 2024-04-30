@@ -2648,8 +2648,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(79272, {	-- Coldarra Climb
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 215825 },	-- Bronze Timekeeper
+					["coord"] = { 32.2, 24.0, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19665),	-- Coldarra Climb: Bronze
 						ach(19666),	-- Coldarra Climb: Silver
@@ -2657,8 +2657,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(79273, {	-- Coldarra Climb - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 215825 },	-- Bronze Timekeeper
+					["coord"] = { 32.2, 24.0, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19668),	-- Coldarra Climb Advanced: Bronze
 						ach(19669),	-- Coldarra Climb Advanced: Silver
@@ -2666,8 +2666,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(79274, {	-- Coldarra Climb - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 215825 },	-- Bronze Timekeeper
+					["coord"] = { 32.2, 24.0, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19671),	-- Coldarra Climb Reverse: Bronze
 						ach(19672),	-- Coldarra Climb Reverse: Silver
@@ -2756,8 +2756,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78608, {	-- Geothermal Jaunt
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 213086 },	-- Bronze Timekeeper
+					["coord"] = { 64.1, 15.4, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19647),	-- Geothermal Jaunt: Bronze
 						ach(19648),	-- Geothermal Jaunt: Silver
@@ -2765,8 +2765,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78609, {	-- Geothermal Jaunt - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 213086 },	-- Bronze Timekeeper
+					["coord"] = { 64.1, 15.4, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19650),	-- Geothermal Jaunt Advanced: Bronze
 						ach(19651),	-- Geothermal Jaunt Advanced: Silver
@@ -2774,8 +2774,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78610, {	-- Geothermal Jaunt - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 213086 },	-- Bronze Timekeeper
+					["coord"] = { 64.1, 15.4, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19653),	-- Geothermal Jaunt Reverse: Bronze
 						ach(19654),	-- Geothermal Jaunt Reverse: Silver
@@ -2783,8 +2783,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(79268, {	-- Gundrak Fast Track
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 215795 },	-- Bronze Timekeeper
+					["coord"] = { 83.6, 17.3, ZULDRAK },
 					["g"] = {
 						ach(19656),	-- Gundrak Fast Track: Bronze
 						ach(19657),	-- Gundrak Fast Track: Silver
@@ -2792,8 +2792,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(79269, {	-- Gundrak Fast Track - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 215795 },	-- Bronze Timekeeper
+					["coord"] = { 83.6, 17.3, ZULDRAK },
 					["g"] = {
 						ach(19659),	-- Gundrak Fast Track Advanced: Bronze
 						ach(19660),	-- Gundrak Fast Track Advanced: Silver
@@ -2801,8 +2801,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(79270, {	-- Gundrak Fast Track - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 215795 },	-- Bronze Timekeeper
+					["coord"] = { 83.6, 17.3, ZULDRAK },
 					["g"] = {
 						ach(19662),	-- Gundrak Fast Track Reverse: Bronze
 						ach(19663),	-- Gundrak Fast Track Reverse: Silver
@@ -2810,8 +2810,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78389, {	-- Makers Marathon
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212118 },	-- Bronze Timekeeper
+					["coord"] = { 46.9, 21.9, THE_STORM_PEAKS },
 					["g"] = {
 						ach(19600),	-- Makers Marathon: Bronze
 						ach(19601),	-- Makers Marathon: Silver
@@ -2819,8 +2819,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78390, {	-- Makers Marathon - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212118 },	-- Bronze Timekeeper
+					["coord"] = { 46.9, 21.9, THE_STORM_PEAKS },
 					["g"] = {
 						ach(19603),	-- Makers Marathon Advanced: Bronze
 						ach(19604),	-- Makers Marathon Advanced: Silver
@@ -2828,8 +2828,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78391, {	-- Makers Marathon - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212118 },	-- Bronze Timekeeper
+					["coord"] = { 46.9, 21.9, THE_STORM_PEAKS },
 					["g"] = {
 						ach(19606),	-- Makers Marathon Reverse: Bronze
 						ach(19607),	-- Makers Marathon Reverse: Silver
@@ -2891,8 +2891,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78346, {	-- Zul'Drak Zephyr
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212003 },	-- Bronze Timekeeper
+					["coord"] = { 40.1, 39.5, ZULDRAK },
 					["g"] = {
 						ach(19591),	-- Zul'Drak Zephyr: Bronze
 						ach(19592),	-- Zul'Drak Zephyr: Silver
@@ -2900,8 +2900,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78347, {	-- Zul'Drak Zephyr - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212003 },	-- Bronze Timekeeper
+					["coord"] = { 40.1, 39.5, ZULDRAK },
 					["g"] = {
 						ach(19594),	-- Zul'Drak Zephyr Advanced: Bronze
 						ach(19595),	-- Zul'Drak Zephyr Advanced: Silver
@@ -2909,8 +2909,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78349, {	-- Zul'Drak Zephyr - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212003 },	-- Bronze Timekeeper
+					["coord"] = { 40.1, 39.5, ZULDRAK },
 					["g"] = {
 						ach(19597),	-- Zul'Drak Zephyr Reverse: Bronze
 						ach(19598),	-- Zul'Drak Zephyr Reverse: Silver
