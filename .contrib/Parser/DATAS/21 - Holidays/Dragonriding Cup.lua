@@ -2593,10 +2593,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						currency(RIDERS_OF_AZEROTH_BADGE),
 					},
 				}),
-				-- TODO: Proivder ID, coords
 				dragonridingrace(78334, {	-- Blackriver Burble
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211940 },	-- Bronze Timekeeper
+					["coord"] = { 44.6, 43.3, GRIZZLY_HILLS },
 					["g"] = {
 						ach(19582),	-- Blackriver Burble: Bronze
 						ach(19583),	-- Blackriver Burble: Silver
@@ -2604,8 +2603,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78335, {	-- Blackriver Burble - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211940 },	-- Bronze Timekeeper
+					["coord"] = { 44.6, 43.3, GRIZZLY_HILLS },
 					["g"] = {
 						ach(19585),	-- Blackriver Burble Advanced: Bronze
 						ach(19586),	-- Blackriver Burble Advanced: Silver
@@ -2613,8 +2612,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78336, {	-- Blackriver Burble - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211940 },	-- Bronze Timekeeper
+					["coord"] = { 44.6, 43.3, GRIZZLY_HILLS },
 					["g"] = {
 						ach(19588),	-- Blackriver Burble Reverse: Bronze
 						ach(19589),	-- Blackriver Burble Reverse: Silver
@@ -2622,8 +2621,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78499, {	-- Citadel Sortie
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212418 },	-- Bronze Timekeeper
+					["coord"] = { 51.7, 91.0, ICECROWN },
 					["g"] = {
 						ach(19627),	-- Citadel Sortie: Bronze
 						ach(19628),	-- Citadel Sortie: Silver
@@ -2631,8 +2630,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78500, {	-- Citadel Sortie - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212418 },	-- Bronze Timekeeper
+					["coord"] = { 51.7, 91.0, ICECROWN },
 					["g"] = {
 						ach(19630),	-- Citadel Sortie Advanced: Bronze
 						ach(19631),	-- Citadel Sortie Advanced: Silver
@@ -2640,8 +2639,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78501, {	-- Citadel Sortie - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212418 },	-- Bronze Timekeeper
+					["coord"] = { 51.7, 91.0, ICECROWN },
 					["g"] = {
 						ach(19633),	-- Citadel Sortie Reverse: Bronze
 						ach(19634),	-- Citadel Sortie Reverse: Silver
@@ -2676,8 +2675,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78441, {	-- Crystalsong Crisis
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212193 },	-- Bronze Timekeeper
+					["coord"] = { 91.4, 70.6, CRYSTALSONG_FOREST },
 					["g"] = {
 						ach(19609),	-- Crystalsong Crisis: Bronze
 						ach(19610),	-- Crystalsong Crisis: Silver
@@ -2685,8 +2684,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78442, {	-- Crystalsong Crisis - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212193 },	-- Bronze Timekeeper
+					["coord"] = { 91.4, 70.6, CRYSTALSONG_FOREST },
 					["g"] = {
 						ach(19612),	-- Crystalsong Crisis Advanced: Bronze
 						ach(19613),	-- Crystalsong Crisis Advanced: Silver
@@ -2694,8 +2693,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78443, {	-- Crystalsong Crisis - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212193 },	-- Bronze Timekeeper
+					["coord"] = { 91.4, 70.6, CRYSTALSONG_FOREST },
 					["g"] = {
 						ach(19615),	-- Crystalsong Crisis Reverse: Bronze
 						ach(19616),	-- Crystalsong Crisis Reverse: Silver
@@ -2703,8 +2702,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78325, {	-- Daggercap Dart
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211886 },	-- Bronze Timekeeper
+					["coord"] = { 57.8, 49.2, HOWLING_FJORD },
 					["g"] = {
 						ach(19277),	-- Daggercap Dart: Bronze
 						ach(19278),	-- Daggercap Dart: Silver
@@ -2712,8 +2711,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78326, {	-- Daggercap Dart - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211886 },	-- Bronze Timekeeper
+					["coord"] = { 57.8, 49.2, HOWLING_FJORD },
 					["g"] = {
 						ach(19280),	-- Daggercap Dart Advanced: Bronze
 						ach(19281),	-- Daggercap Dart Advanced: Silver
@@ -2721,8 +2720,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78327, {	-- Daggercap Dart - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211886 },	-- Bronze Timekeeper
+					["coord"] = { 57.8, 49.2, HOWLING_FJORD },
 					["g"] = {
 						ach(19283),	-- Daggercap Dart Reverse: Bronze
 						ach(19284),	-- Daggercap Dart Reverse: Silver
@@ -2730,8 +2729,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78454, {	-- Dragonblight Dragon Flight
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212250 },	-- Bronze Timekeeper
+					["coord"] = { 62.3, 11.8, DRAGONBLIGHT },
 					["g"] = {
 						ach(19618),	-- Dragonblight Dragon Flight: Bronze
 						ach(19619),	-- Dragonblight Dragon Flight: Silver
@@ -2739,8 +2738,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78455, {	-- Dragonblight Dragon Flight - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212250 },	-- Bronze Timekeeper
+					["coord"] = { 62.3, 11.8, DRAGONBLIGHT },
 					["g"] = {
 						ach(19621),	-- Dragonblight Dragon Flight Advanced: Bronze
 						ach(19622),	-- Dragonblight Dragon Flight Advanced: Silver
@@ -2748,8 +2747,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78456, {	-- Dragonblight Dragon Flight - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212250 },	-- Bronze Timekeeper
+					["coord"] = { 62.3, 11.8, DRAGONBLIGHT },
 					["g"] = {
 						ach(19624),	-- Dragonblight Dragon Flight Reverse: Bronze
 						ach(19625),	-- Dragonblight Dragon Flight Reverse: Silver
@@ -2838,8 +2837,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78301, {	-- Scalawag Slither
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211762 },	-- Bronze Timekeeper
+					["coord"] = { 41.9, 67.9, HOWLING_FJORD },
 					["g"] = {
 						ach(19199),	-- Scalawag Slither: Bronze
 						ach(19200),	-- Scalawag Slither: Silver
@@ -2847,8 +2846,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78302, {	-- Scalawag Slither - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211762 },	-- Bronze Timekeeper
+					["coord"] = { 41.9, 67.9, HOWLING_FJORD },
 					["g"] = {
 						ach(19202),	-- Scalawag Slither Advanced: Bronze
 						ach(19203),	-- Scalawag Slither Advanced: Silver
@@ -2856,8 +2855,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78303, {	-- Scalawag Slither - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 211762 },	-- Bronze Timekeeper
+					["coord"] = { 41.9, 67.9, HOWLING_FJORD },
 					["g"] = {
 						ach(19205),	-- Scalawag Slither Reverse: Bronze
 						ach(19206),	-- Scalawag Slither Reverse: Silver
@@ -2865,8 +2864,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78558, {	-- Sholazar Spree
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212666 },	-- Bronze Timekeeper
+					["coord"] = { 79.4, 54.5, SHOLAZAR_BASIN },
 					["g"] = {
 						ach(19636),	-- Sholazar Spree: Bronze
 						ach(19637),	-- Sholazar Spree: Silver
@@ -2874,8 +2873,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78559, {	-- Sholazar Spree - Advanced
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212666 },	-- Bronze Timekeeper
+					["coord"] = { 79.4, 54.5, SHOLAZAR_BASIN },
 					["g"] = {
 						ach(19639),	-- Sholazar Spree Advanced: Bronze
 						ach(19640),	-- Sholazar Spree Advanced: Silver
@@ -2883,8 +2882,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 				dragonridingrace(78560, {	-- Sholazar Spree - Reverse
-					--["provider"] = { "n",  },	-- Bronze Timekeeper
-					--["coord"] = {  },
+					["provider"] = { "n", 212666 },	-- Bronze Timekeeper
+					["coord"] = { 79.4, 54.5, SHOLAZAR_BASIN },
 					["g"] = {
 						ach(19642),	-- Sholazar Spree Reverse: Bronze
 						ach(19643),	-- Sholazar Spree Reverse: Silver
