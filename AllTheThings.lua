@@ -4334,49 +4334,62 @@ local KeyMaps = setmetatable({
 }, { __index = function(t,key) return key:gsub("id", "ID") end})
 
 local function SearchForLink(link)
-	if link:match("item:") then
+	local itemString = link:match("item[%-?%d:]+")
+	if itemString then
 		-- Parse the link and get the itemID and bonus ids.
-		local itemString = link:match("item[%-?%d:]+") or link;
-		-- TODO: itemString not used
-		if itemString then
-			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
-				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID = (":"):split(link);
-			if itemID then
-				-- app.PrintDebug("SFL",itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
-				-- 	linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID)
-				itemID = tonumber(itemID) or 0;
-				-- Don't use SourceID for artifact searches since they contain many SourceIDs
-				local _, _, type = GetItemInfo(link)
-				-- app.PrintDebug(GetItemInfo(link))
-				local sourceID = type ~= 6 and app.GetSourceID(link);
-				if sourceID then
-					-- Search for the Source ID. (an appearance)
-					_ = SearchForObject("sourceID", sourceID, nil, true);
-					-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH SOURCE", link, itemID, sourceID, _ and #_);
-					return _;
-				else
-					-- Search for the Item ID. (an item without an appearance)
-					-- app.PrintDebug("SFL-exact",itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1)
-					local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1);
-					local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
-					-- Artifacts use a different modItemID
-					if type == 6 and bonusCount == "" and artifactID ~= "" then
-						exactItemID = app.GetArtifactModItemID(itemID, tonumber(artifactID), bonusID1 == 1)
-						modItemID = itemID
-						-- app.PrintDebug("artifact!",exactItemID)
+		-- app.PrintDebug(itemString)
+		local linkData = {(":"):split(itemString)}
+		-- app.PrintTable(linkData)
+		local itemID = linkData[2]
+		if itemID then
+			-- ref: https://warcraft.wiki.gg/wiki/ItemLink
+			-- indexes are shifted by 1 due to 'item' being the first index
+			itemID = tonumber(itemID) or 0;
+			local modID = tonumber(linkData[13]) or 0
+			local bonusCount = tonumber(linkData[14]) or 0
+			local bonusID1 = bonusCount > 0 and linkData[15] or 0
+			local itemModifierIndex = 15 + bonusCount
+			local itemModifierCount = tonumber(linkData[itemModifierIndex]) or 0
+			local artifactID
+			if itemModifierCount > 0 then
+				for i=itemModifierIndex + 1,itemModifierIndex + (2 * itemModifierCount),2 do
+					if linkData[i] == "8" then
+						artifactID = tonumber(linkData[i + 1])
+						break
 					end
-					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
-					if exactItemID ~= itemID then
-						_ = SearchForObject("modItemID", exactItemID, nil, true);
-						if #_ > 0 then return _; end
-					end
-					if modItemID ~= itemID then
-						_ = SearchForObject("modItemID", modItemID, nil, true);
-						if #_ > 0 then return _; end
-					end
-					return SearchForObject("itemID", itemID, nil, true);
 				end
 			end
+			-- Don't use SourceID for artifact searches since they contain many SourceIDs
+			local sourceID = not artifactID and app.GetSourceID(link);
+			if sourceID then
+				-- Search for the Source ID. (an appearance)
+				-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH SOURCE", link, itemID, sourceID);
+				return SearchForObject("sourceID", sourceID, nil, true);
+			end
+			-- Search for the Item ID. (an item without an appearance)
+			-- app.PrintDebug("SFL-exact",itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1)
+			local exactItemID
+			local modItemID
+			-- Artifacts use a different modItemID
+			if artifactID then
+				exactItemID = app.GetArtifactModItemID(itemID, artifactID, modID == 0)
+				modItemID = itemID
+				-- app.PrintDebug("artifact!",exactItemID)
+			else
+				exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1);
+				modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
+			end
+			-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
+			local search
+			if exactItemID ~= itemID then
+				search = SearchForObject("modItemID", exactItemID, nil, true);
+				if #search > 0 then return search; end
+			end
+			if modItemID ~= itemID then
+				search = SearchForObject("modItemID", modItemID, nil, true);
+				if #search > 0 then return search; end
+			end
+			return SearchForObject("itemID", itemID, nil, true);
 		end
 	end
 

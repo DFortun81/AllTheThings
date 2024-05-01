@@ -2757,7 +2757,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 				dragonridingrace(78608, {	-- Geothermal Jaunt
 					["provider"] = { "n", 213086 },	-- Bronze Timekeeper
-					["coord"] = { 64.1, 15.4, BOREAN_TUNDRA },
+					["coord"] = { 54.1, 15.4, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19647),	-- Geothermal Jaunt: Bronze
 						ach(19648),	-- Geothermal Jaunt: Silver
@@ -2766,7 +2766,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 				dragonridingrace(78609, {	-- Geothermal Jaunt - Advanced
 					["provider"] = { "n", 213086 },	-- Bronze Timekeeper
-					["coord"] = { 64.1, 15.4, BOREAN_TUNDRA },
+					["coord"] = { 54.1, 15.4, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19650),	-- Geothermal Jaunt Advanced: Bronze
 						ach(19651),	-- Geothermal Jaunt Advanced: Silver
@@ -2775,7 +2775,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 				dragonridingrace(78610, {	-- Geothermal Jaunt - Reverse
 					["provider"] = { "n", 213086 },	-- Bronze Timekeeper
-					["coord"] = { 64.1, 15.4, BOREAN_TUNDRA },
+					["coord"] = { 54.1, 15.4, BOREAN_TUNDRA },
 					["g"] = {
 						ach(19653),	-- Geothermal Jaunt Reverse: Bronze
 						ach(19654),	-- Geothermal Jaunt Reverse: Silver
