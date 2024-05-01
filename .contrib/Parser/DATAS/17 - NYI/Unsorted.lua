@@ -7958,7 +7958,6 @@ root(ROOTS.Unsorted, {
 				i(173896),	-- Portable Spy Kit
 				i(173355),	-- Pouch of Puffpetal Powder
 				i(183724),	-- Poxedskin Sample
-				i(177880),	-- Primordial Muck
 				i(176456),	-- Prisoner Cage Key
 				i(172453),	-- Prisoner Transfer Orders
 				i(181370),	-- Pristine Water
