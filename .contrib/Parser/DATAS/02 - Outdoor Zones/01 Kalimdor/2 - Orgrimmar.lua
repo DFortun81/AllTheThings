@@ -644,6 +644,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Windswept Balloon
+							["providers"] = {
+								{ "i",  71034 },	-- Windswept Balloon
+								{ "o", 209058 },	-- Windswept Balloon
+							},
+						}),
 						i(72045, {	-- Horde Balloon (PET!)
 							["timeline"] = { ADDED_4_2_0 },
 						}),

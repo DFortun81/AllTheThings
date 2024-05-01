@@ -984,6 +984,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Windswept Balloon
+							["providers"] = {
+								{ "i",  71034 },	-- Windswept Balloon
+								{ "o", 209242 },	-- Windswept Balloon
+							},
+						}),
 						i(72042, {	-- Alliance Balloon (PET!)
 							["timeline"] = { ADDED_4_2_0 },
 						}),
