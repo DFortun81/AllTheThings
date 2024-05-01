@@ -456,7 +456,7 @@ api.NextUpgrade = function(t)
 
 	-- '.up' is the modID.bonusID portion of the respective upgrade item
 	-- if no upgrade
-	local up = unlockBonusID / 10000
+	local up = unlockBonusID / 100000
 	-- if not up then
 	-- 	-- app.PrintDebug("no upgrade",t.modItemID)
 	-- 	-- t.isUpgraded = true;
@@ -475,7 +475,7 @@ api.NextUpgrade = function(t)
 
 	-- find or create the upgrade for cached reference
 	local upmodID = floor(up);
-	local upbonusID = floor((up - upmodID) * 10000 + 0.5);
+	local upbonusID = floor((up - upmodID) * 100000 + 0.5);
 	up = GetUpgrade(t, upmodID, upbonusID);
 	if not up then
 		-- app.PrintDebug("NU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
