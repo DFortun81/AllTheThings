@@ -4373,7 +4373,8 @@ local function SearchForLink(link)
 			-- Artifacts use a different modItemID
 			if artifactID then
 				exactItemID = app.GetArtifactModItemID(itemID, artifactID, modID == 0)
-				modItemID = itemID
+				-- fallback to non-offhand... still something about the links that makes some 2H artifacts weird
+				modItemID = app.GetArtifactModItemID(itemID, artifactID)
 				-- app.PrintDebug("artifact!",exactItemID)
 			else
 				exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1);
