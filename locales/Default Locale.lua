@@ -56,6 +56,9 @@ local L = setmetatable({
 	UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
 	UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 	
+	-- Tooltips
+	FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
+	
 	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
