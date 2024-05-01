@@ -333,21 +333,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13954,	-- The Dragon Queen
 			},
 			["timeline"] = { ADDED_3_0_2 },
-			-- #if AFTER 7.0.3.22290
-			["coords"] = {
-				{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-				{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
-			},
-			["crs"] = {
-				29478,	-- Jeppetto Joybuzz
-				96483,	-- Jeppetto Joybuzz
-			},
-			-- #else
-			["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-			["cr"] = 29478,	-- Jeppetto Joybuzz
-			-- #endif
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Throw Small Paper Zeppelin to Roo
+					["provider"] = { "i", 46693 },	-- Small Paper Zeppelin (QI!)
+					-- #if AFTER 7.0.3.22290
+					["coords"] = {
+						{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+						{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
+					},
+					["crs"] = {
+						29478,	-- Jeppetto Joybuzz
+						96483,	-- Jeppetto Joybuzz
+					},
+					-- #else
+					["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+					["cr"] = 29478,	-- Jeppetto Joybuzz
+					-- #endif
+				}),
+			},
 		}),
 		q(13938, {	-- A Trip To The Wonderworks [Neutral - Wolvar]
 			["providers"] = {
@@ -528,6 +533,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["sourceQuest"] = 13938,	-- A Trip To The Wonderworks
 			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 			["timeline"] = { ADDED_3_0_2 },
+			["cr"] = 34365,	-- Orphan Matron Aria
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 			["groups"] = {
@@ -972,9 +978,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["sourceQuests"] = {
-				13951,	-- Playmates!
+				13950,	-- Playmates! [Neutral - Oracles]
 				13929,	-- The Biggest Tree Ever!
-				13934,	-- The Bronze Dragonshrine
+				13933,	-- The Bronze Dragonshrine [Neutral - Oracles]
 			},
 			["coords"] = {
 				{ 40.01, 82.05, SHOLAZAR_BASIN },	-- Waygate Entrance
@@ -1250,9 +1256,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["sourceQuests"] = {
-				13951,	-- Playmates!
+				13950,	-- Playmates! [Neutral - Oracles]
 				13929,	-- The Biggest Tree Ever!
-				13934,	-- The Bronze Dragonshrine
+				13933,	-- The Bronze Dragonshrine [Neutral - Oracles]
 			},
 			["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 			["timeline"] = { ADDED_3_0_2 },
@@ -1267,8 +1273,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuests"] = {
 				13930,	-- Home Of The Bear-Men
-				13951,	-- Playmates!
-				13934,	-- The Bronze Dragonshrine
+				13951,	-- Playmates! [Neutral - Wolvar]
+				13934,	-- The Bronze Dragonshrine [Neutral - Wolvar]
 			},
 			["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 			["timeline"] = { ADDED_3_0_2 },
@@ -1320,8 +1326,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuests"] = {
 				13930,	-- Home Of The Bear-Men
-				13951,	-- Playmates!
-				13934,	-- The Bronze Dragonshrine
+				13951,	-- Playmates! [Neutral - Wolvar]
+				13934,	-- The Bronze Dragonshrine [Neutral - Wolvar]
 			},
 			["coord"] = { 27.11, 58.73, SHOLAZAR_BASIN },	-- Meet Hemest Nesingwary
 			["timeline"] = { ADDED_3_0_2 },
