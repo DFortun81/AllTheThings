@@ -10,3 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {		
+	-- q(80540, {["name"] = "Bullion Capped"}),	-- Triggered when Bullion Cap is met for the week
+})));

@@ -7308,7 +7308,6 @@ root(ROOTS.Unsorted, {
 				q(80171),	--
 				q(80172),	-- Ensemble: Gladiator's Battered Armor
 				q(80335),	--
-				q(80540),	--
 			}),
 		})),
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
