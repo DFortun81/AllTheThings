@@ -588,31 +588,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19567, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Shadows
 					crit(64957, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64958, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64959, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64960, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64961, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64962, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64963, {	-- Magmorax
-						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64964, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64965, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
 				ach(19568, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Shadows
