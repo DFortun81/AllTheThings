@@ -434,7 +434,7 @@ CREATED_10_2_7 = "created 10.2.7";						-- Dragonflight 10.2.7 Launch on
 ADDED_10_2_7 = "added 10.2.7";							-- Dragonflight 10.2.7 Launch on
 REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on
 
-REMOVED_PLUNDERSTORM = "removed 10.2.6.70000"			-- PlaceHolder Until we know
+REMOVED_PLUNDERSTORM = "removed 10.2.6.54499"			-- Plunderstorm Ended on April 30th, 2024
 REMOVED_REMIX = "removed 11.0.0";						-- PlaceHolder Until we know
 
 --------------------
