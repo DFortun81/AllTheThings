@@ -128,10 +128,10 @@ end);
 ShowRecipesCheckBox:SetATTTooltip("Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.");
 ShowRecipesCheckBox:SetPoint("TOPLEFT", ShowCraftedItemsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSpellRanksCheckBox = child:CreateCheckBox("Show Spell Ranks",
+local OnlyShowNonTrivialRecipesCheckBox = child:CreateCheckBox("Only Non-Trivial",
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:SpellRanks"));
-	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+	self:SetChecked(settings:GetTooltipSetting("Show:OnlyShowNonTrivialRecipes"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") or not settings:GetTooltipSetting("Show:Recipes") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -140,10 +140,10 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("Show:SpellRanks", self:GetChecked());
+	settings:SetTooltipSetting("Show:OnlyShowNonTrivialRecipes", self:GetChecked());
 end);
-ShowSpellRanksCheckBox:SetATTTooltip("Enable this option if you want to see the best spell rank of triviality for any unleveled related profession for a reagent in its tooltip.\n\nSpell Ranks of 'trivial' or lesser will not be displayed.\nWhile on Account or Debug Mode, this will show for all of your characters that you have cached in ATT.");
-ShowSpellRanksCheckBox:SetPoint("TOPLEFT", ShowRecipesCheckBox, "BOTTOMLEFT", 0, 4);
+OnlyShowNonTrivialRecipesCheckBox:SetATTTooltip("Enable this option if you only want to see non-trivial recipes in the recipe list.");
+OnlyShowNonTrivialRecipesCheckBox:SetPoint("TOPLEFT", ShowRecipesCheckBox, "BOTTOMLEFT", 8, 4);
 
 local ShowKnownByCheckBox = child:CreateCheckBox("Show Known By",
 function(self)
@@ -161,7 +161,8 @@ function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked());
 end);
 ShowKnownByCheckBox:SetATTTooltip("Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.");
-ShowKnownByCheckBox:SetPoint("TOPLEFT", ShowSpellRanksCheckBox, "BOTTOMLEFT", 0, 4);
+ShowKnownByCheckBox:SetPoint("TOP", OnlyShowNonTrivialRecipesCheckBox, "BOTTOM", 0, 4);
+ShowKnownByCheckBox:SetPoint("LEFT", ShowRecipesCheckBox, "LEFT", 0, 0);
 
 local ShowModelsCheckBox = child:CreateCheckBox("Show Model Preview",
 function(self)

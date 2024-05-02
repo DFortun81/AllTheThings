@@ -917,6 +917,29 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 		end
 	end
 end
+local function BuildReagentInfo(groups, entries, paramA, paramB, indent, layer)
+	for i,group in ipairs(groups) do
+		if app.RecursiveGroupRequirementsFilter(group) then
+			local o = { prefix = indent, group = group };
+			if group.u then
+				local condition = L["AVAILABILITY_CONDITIONS"][group.u];
+				if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
+					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]];
+				end
+			elseif group.e then
+				o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
+			end
+			if o.texture then
+				o.prefix = o.prefix:sub(4) .. "|T" .. o.texture .. ":0|t ";
+				o.texture = nil;
+			end
+			if group.count then
+				o.right = group.count .. "x";
+			end
+			tinsert(entries, o);
+		end
+	end
+end
 
 -- Search Caching
 local searchCache, working = {}, nil;
@@ -993,16 +1016,12 @@ local function SortByCommonBossDrops(a, b)
 	return not (a.headerID and a.headerID == app.HeaderConstants.COMMON_BOSS_DROPS) and b.headerID and b.headerID == app.HeaderConstants.COMMON_BOSS_DROPS;
 end
 local function SortByCraftTypeID(a, b)
-	if a.group.craftTypeID == b.group.craftTypeID then
-		if a.group.name then
-			if b.group.name then
-				return a.group.name <= b.group.name;
-			end
-			return true;
-		end
-		return false;
+	local craftTypeA = a.craftTypeID or 0;
+	local craftTypeB = b.craftTypeID or 0;
+	if craftTypeA == craftTypeB then
+		return (a.name or RETRIEVING_DATA) < (b.name or RETRIEVING_DATA);
 	end
-	return a.group.craftTypeID > b.group.craftTypeID;
+	return craftTypeA > craftTypeB;
 end
 
 ---@param method function
@@ -1032,7 +1051,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, tooltipInfo, crafted, recipes, mostAccessibleSource = false, {}, {}, {}, nil;
+	local working, tooltipInfo, mostAccessibleSource = false, {}, nil;
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -1223,27 +1242,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				tinsert(regroup, g);
 			end
 			group = regroup;
-		end
-	end
-
-	if itemID then
-		local reagentCache = app.GetDataSubMember("Reagents", itemID);
-		if reagentCache then
-			for spellID,count in pairs(reagentCache[1]) do
-				MergeClone(recipes, { ["spellID"] = spellID, ["collectible"] = false, ["count"] = count });
-			end
-			for craftedItemID,count in pairs(reagentCache[2]) do
-				MergeClone(crafted, { ["itemID"] = craftedItemID, ["count"] = count });
-				local searchResults = SearchForField("itemID", craftedItemID);
-				if #searchResults > 0 then
-					for i,o in ipairs(searchResults) do
-						if not o.itemID and o.cost then
-							-- Reagent for something that crafts a thing required for something else.
-							MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CloneClassInstance(o) } });
-						end
-					end
-				end
-			end
 		end
 	end
 
@@ -1517,113 +1515,98 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 		end
-
-		-- Crafted Items
-		if crafted and #crafted > 0 then
-			if app.Settings:GetTooltipSetting("Show:CraftedItems") then
-				local entries = {};
-				BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-				if #entries > 0 then
-					local left, right;
-					tinsert(tooltipInfo, { left = "Used to Craft:" });
-					if #entries < 25 then
-						app.Sort(entries, function(a, b)
-							if a.group.name then
-								if b.group.name then
-									return a.group.name <= b.group.name;
+		
+		if itemID then
+			local reagentCache = app.GetDataSubMember("Reagents", itemID);
+			if reagentCache then
+				-- Crafted Items
+				if app.Settings:GetTooltipSetting("Show:CraftedItems") then
+					local crafted = {};
+					for craftedItemID,count in pairs(reagentCache[2]) do
+						local item = app.CreateItem(craftedItemID);
+						item.count = count;
+						tinsert(crafted, item);
+					end
+					if #crafted > 0 then
+						local entries = {};
+						BuildReagentInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+						if #entries > 0 then
+							local left, right;
+							tinsert(tooltipInfo, { left = "Used to Craft:" });
+							if #entries < 25 then
+								app.Sort(entries, function(a, b)
+									if a.group.name then
+										if b.group.name then
+											return a.group.name <= b.group.name;
+										end
+										return true;
+									end
+									return false;
+								end);
+								for i,item in ipairs(entries) do
+									left = item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
-								return true;
-							end
-							return false;
-						end);
-						for i,item in ipairs(entries) do
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-						end
-					else
-						for i=1,math.min(25, #entries) do
-							local item = entries[i];
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-						end
-						local more = #entries - 25;
-						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
-					end
-				end
-			end
-		end
-
-		-- Recipes
-		if recipes and #recipes > 0 then
-			if app.Settings:GetTooltipSetting("Show:Recipes") then
-				local entries, left, right = {}, nil, nil;
-				BuildContainsInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-				if #entries > 0 then
-					tinsert(tooltipInfo, { left = "Used in Recipes:" });
-					if #entries < 25 then
-						app.Sort(entries, function(a, b)
-							if a and a.group.name then
-								if b and b.group.name then
-									return a.group.name <= b.group.name;
+							else
+								for i=1,math.min(25, #entries) do
+									local item = entries[i];
+									left = item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
-								return true;
+								local more = #entries - 25;
+								if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 							end
-							return false;
-						end);
-						for i,item in ipairs(entries) do
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 						end
-					else
-						for i=1,math.min(25, #entries) do
-							local item = entries[i];
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-						end
-						local more = #entries - 25;
-						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 					end
 				end
-			end
-			if app.Settings:GetTooltipSetting("Show:SpellRanks") then
-				local nonTrivialRecipes = {};
-				for _, o in pairs(recipes) do
-					local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
-					if craftTypeID and craftTypeID > 0 then
-						o.craftTypeID = craftTypeID;
-						tinsert(nonTrivialRecipes, o);
+
+				-- Recipes
+				if app.Settings:GetTooltipSetting("Show:Recipes") then
+					local recipes = {};
+					for spellID,count in pairs(reagentCache[1]) do
+						local spell = app.CreateSpell(spellID);
+						spell.count = count;
+						tinsert(recipes, spell);
 					end
-				end
-				local entries, left = {}, nil;
-				BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-				if #entries > 0 then
-					tinsert(tooltipInfo, { left = "Available Skill Ups:" });
-					if #entries < 25 then
-						app.Sort(entries, SortByCraftTypeID);
-						for _,item in ipairs(entries) do
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+					if #recipes > 0 then
+						if app.Settings:GetTooltipSetting("Show:OnlyShowNonTrivialRecipes") then
+							local nonTrivialRecipes = {};
+							for _, o in pairs(recipes) do
+								local craftTypeID = o.craftTypeID;
+								if craftTypeID and craftTypeID > 0 then
+									tinsert(nonTrivialRecipes, o);
+								end
+							end
+							recipes = nonTrivialRecipes;
 						end
-					else
-						for i=1,math.min(25, #entries) do
-							local item = entries[i];
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+						app.Sort(recipes, SortByCraftTypeID);
+						local entries, left = {}, nil;
+						BuildReagentInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+						if #entries > 0 then
+							tinsert(tooltipInfo, { left = "Used in Recipes:" });
+							if #entries < 25 then
+								for i,item in ipairs(entries) do
+									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+								end
+							else
+								for i=1,math.min(25, #entries) do
+									local item = entries[i];
+									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+								end
+								local more = #entries - 25;
+								if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
+							end
 						end
-						local more = #entries - 25;
-						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 					end
 				end
 			end
@@ -1632,24 +1615,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- If there was any informational text generated, then attach that info.
 	if #tooltipInfo > 0 then
-		local uniques, dupes, _ = {}, {}, nil;
-		for _,item in ipairs(tooltipInfo) do
-			_ = item.hash or item.left;
-			if not _ then
-				tinsert(uniques, item);
-			else
-				if item.right then _ = _ .. item.right; end
-				if not dupes[_] then
-					dupes[_] = true;
-					tinsert(uniques, item);
-				end
-			end
-		end
-
-		for i,item in ipairs(uniques) do
+		for i,item in ipairs(tooltipInfo) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
-		group.tooltipInfo = uniques;
+		group.tooltipInfo = tooltipInfo;
 	end
 
 	-- Cache the result depending on if there is more work to be done.
@@ -4085,14 +4054,15 @@ end)();
 
 -- Recipe & Spell Lib
 (function()
+local grey = RGBToHex(0.75, 0.75, 0.75);
 local craftColors = {
 	RGBToHex(0.25,0.75,0.25),
 	RGBToHex(1,1,0),
 	RGBToHex(1,0.5,0.25),
-	[0]=RGBToHex(0.5, 0.5, 0.5),
-};
+	[0]=grey,
+}
 local CraftTypeIDToColor = function(craftTypeID)
-	return craftColors[craftTypeID];
+	return craftColors[craftTypeID] or grey;
 end
 app.CraftTypeToCraftTypeID = function(craftType)
 	if craftType then
@@ -4226,7 +4196,10 @@ local nameFromSpellID = function(t)
 end;
 local spellFields = {
 	["text"] = function(t)
-		return t.craftTypeID and Colorize(t.name, CraftTypeIDToColor(t.craftTypeID)) or t.link;
+		return t.link;
+	end,
+	["craftText"] = function(t)
+		return Colorize(t.name, CraftTypeIDToColor(t.craftTypeID));
 	end,
 	["icon"] = function(t)
 		local icon = t.baseIcon;
@@ -4239,7 +4212,7 @@ local spellFields = {
 		return GetSpellDescription(t.spellID);
 	end,
 	["craftTypeID"] = function(t)
-		return app.CurrentCharacter.SpellRanks[t.spellID];
+		return app.CurrentCharacter.SpellRanks[t.spellID] or 0;
 	end,
 	["trackable"] = function(t)
 		return GetSpellCooldown(t.spellID) > 0;
