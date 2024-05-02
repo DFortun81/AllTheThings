@@ -301,7 +301,6 @@ local L = app.L;
 		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
 	-- Interface tab
-		--TODO: L.TOOLTIP_LABEL = "Tooltips";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
@@ -353,8 +352,6 @@ local L = app.L;
 		--TODO: L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		--TODO: L.PERCENTAGES_CHECKBOX = "Show Percentage Completion";
 		--TODO: L.PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-		--TODO: L.TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
-		--TODO: L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
 		--TODO: L.MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		--TODO: L.MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 		--TODO: L.MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
@@ -697,6 +694,9 @@ for key,value in pairs({
 		--TODO: CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Interface Page
+		--TODO: TOOLTIP_LABEL = "Tooltips";
+		--TODO: TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
+		--TODO: TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
 		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page

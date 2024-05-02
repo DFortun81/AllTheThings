@@ -386,8 +386,6 @@ for key, value in pairs({
 	["KEYBINDINGS_TEXT"] = "You can set keybindings for ATT in the game's options.";
 
 	-- Interface tab
-	["INTERFACE_PAGE"] = UIOPTIONS_MENU;
-	["TOOLTIP_LABEL"] = "Tooltips";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"] = "Tooltip Integrations";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 	["DISPLAY_IN_COMBAT_CHECKBOX"] = "In Combat";
@@ -403,10 +401,7 @@ for key, value in pairs({
 	["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
 	["ICON_ONLY_CHECKBOX"] = "Icon Only";
 	["ICON_ONLY_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...";
-	["DESCRIPTIONS"] = "Descriptions";
-	["LOCKOUTS"] = "Lockouts";
 	["RESETS"] = "Resets";
-	["LORE"] = "Lore";
 	["KNOWN_BY_CHECKBOX"] = "Known By";
 	["KNOWN_BY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
 	["COMPLETED_BY_CHECKBOX"] = "Completed By";
@@ -421,7 +416,6 @@ for key, value in pairs({
 	["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"] = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 	["ONLY_RELEVANT_CHECKBOX"] = "Only Relevant";
 	["ONLY_RELEVANT_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
-	["CLASSES"] = "Classes";
 	["SPEC_CHECKBOX"] = "Specializations";
 	["SPEC_CHECKBOX_TOOLTIP"] = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.";
 	["SUMMARIZE_CHECKBOX"] = "Summarize Things";
@@ -446,13 +440,16 @@ for key, value in pairs({
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
 	["PERCENTAGES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-	["TOOLTIP_HELP_CHECKBOX"] = "Show Tooltip Help";
-	["TOOLTIP_HELP_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
 	["MAIN_LIST_SLIDER_LABEL"] = "Main List Scale";
 	["MAIN_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 	["MINI_LIST_SLIDER_LABEL"] = "Mini Lists Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+	
 	["ADDITIONAL_LABEL"] = "Additional Information";
+	["DESCRIPTIONS"] = "Descriptions";
+	["LOCKOUTS"] = "Lockouts";
+	["LORE"] = "Lore";
+	["CLASSES"] = "Classes";
 
 	-- Features tab
 	["MINIMAP_LABEL"] = "Minimap Button";

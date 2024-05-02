@@ -313,7 +313,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 		end
 
 		-- If the item is a recipe, then show which characters know this recipe.
-		if reference.trackable and reference.filterID ~= 100 then
+		if reference.filterID ~= 100 then
 			for guid,character in pairs(ATTCharacterData) do
 				if character.Spells and character.Spells[id] then
 					tinsert(knownBy, character);

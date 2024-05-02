@@ -300,7 +300,6 @@ local L = app.L;
 		L.KEYBINDINGS_TEXT = "Vous pouvez définir les raccourcis clavier pour ATT dans les options du jeu.";
 
 	-- Interface tab
-		L.TOOLTIP_LABEL = "Infobulles";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Intégrations des infobulles";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 		L.DISPLAY_IN_COMBAT_CHECKBOX = "En combat";
@@ -352,8 +351,6 @@ local L = app.L;
 		--TODO: L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		L.PERCENTAGES_CHECKBOX = "Afficher le pourcentage de réalisation";
 		--TODO: L.PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-		L.TOOLTIP_HELP_CHECKBOX = "Afficher l’infobulle d’aide";
-		L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher les informations d’aide dans les infobulles des fenêtres d’ATT qui indiquent les différentes combinaisons de touches / clics pour les fonctionnalités des fenêtres d’ATT. Si vous connaissez déjà toutes les combinaisons de touches / clics, vous pouvez économiser de l’espace dans les infobulles et désactiver cette option.";
 		L.MAIN_LIST_SLIDER_LABEL = "Échelle de la liste principale";
 		L.MAIN_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle de la liste principale.\n\nDéfaut : 1";
 		L.MINI_LIST_SLIDER_LABEL = "Échelle de la mini-liste";
@@ -732,6 +729,9 @@ for key,value in pairs({
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activer ce paramètre pour afficher le contenu de %s même s’il n’est pas disponible pour le personnage actuel.";
 
 	-- Interface Page
+		TOOLTIP_LABEL = "Infobulles";
+		TOOLTIP_HELP_CHECKBOX = "Afficher l’infobulle d’aide";
+		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher les informations d’aide dans les infobulles des fenêtres d’ATT qui indiquent les différentes combinaisons de touches / clics pour les fonctionnalités des fenêtres d’ATT. Si vous connaissez déjà toutes les combinaisons de touches / clics, vous pouvez économiser de l’espace dans les infobulles et désactiver cette option.";
 		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page

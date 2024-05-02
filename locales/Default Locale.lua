@@ -268,6 +268,10 @@ L.SETTINGS_MENU = {
 		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
 	
 	-- Interface Page
+		INTERFACE_PAGE = UIOPTIONS_MENU;
+		TOOLTIP_LABEL = "Tooltips";
+		TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
+		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 	
 	-- Interface: Accessibility Page

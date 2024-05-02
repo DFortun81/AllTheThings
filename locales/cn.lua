@@ -303,7 +303,6 @@ local L = app.L;
 		L.KEYBINDINGS_TEXT = "可以在游戏选项中设置 ATT 的按键绑定。";
 
 	-- Interface tab
-		L.TOOLTIP_LABEL = "鼠标提示";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "启用鼠标提示";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在鼠标提示中查看 ATT 提供的信息，请启用此选项。这包括其他玩家发送的物品链接，在拍卖行、在地下城助手、在你的包里、在世界、在 NPC 等等。\n\n如果你关闭了这个功能，就会严重降低你快速判断是否需要击杀首领或学习外观的能力。\n\n我们建议你保持此设置。";
 		L.DISPLAY_IN_COMBAT_CHECKBOX = "在战斗中";
@@ -355,8 +354,6 @@ local L = app.L;
 		L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩余事物数量而不是总进度，请启用此选项。";
 		L.PERCENTAGES_CHECKBOX = "显示完成百分比";
 		L.PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比请启用此选项。\n\n按完成度对组进行着色不受影响。";
-		L.TOOLTIP_HELP_CHECKBOX = "显示鼠标提示帮助";
-		L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "如果你想在 ATT 窗口鼠标提示中看到帮助信息，即显示 ATT 窗口功能的各种键/点击组合，请启用此选项。\n如果你已经知道所有的键/点击组合，你可能希望节省工具提示空间并禁用此选项。";
 		L.MAIN_LIST_SLIDER_LABEL = "主列表缩放";
 		L.MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自定义主列表的缩放。\n\n默认：1';
 		L.MINI_LIST_SLIDER_LABEL = "小列表缩放";
@@ -757,6 +754,9 @@ for key,value in pairs({
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
 	-- Interface Page
+		TOOLTIP_LABEL = "鼠标提示";
+		TOOLTIP_HELP_CHECKBOX = "显示鼠标提示帮助";
+		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "如果你想在 ATT 窗口鼠标提示中看到帮助信息，即显示 ATT 窗口功能的各种键/点击组合，请启用此选项。\n如果你已经知道所有的键/点击组合，你可能希望节省工具提示空间并禁用此选项。";
 		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page
