@@ -123,6 +123,35 @@ local DefaultFields = {
     ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
+	["AccessibilityScore"] = function(t)
+		local score = 0;
+		if GetRelativeValue(t, "nmr") then
+			score = score + 20;
+		end
+		if GetRelativeValue(t, "nmc") then
+			score = score + 10;
+		end
+		if GetRelativeValue(t, "rwp") then
+			score = score + 5;
+		end
+		if GetRelativeValue(t, "e") then
+			score = score + 1;
+		end
+		local u = GetRelativeValue(t, "u");
+		if u then
+			if u < 3 then
+				score = score + 100;
+			elseif u < 4 then
+				score = score + 10;
+			else
+				score = score + 1;
+			end
+		end
+		score = score + (t.cost and 10000 or 0);
+		score = score + (t.distance or 99999);
+		t.AccessibilityScore = score;
+		return score;
+	end
 };
 
 if app.IsRetail then

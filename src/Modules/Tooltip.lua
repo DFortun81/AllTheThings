@@ -182,7 +182,7 @@ else
 				});
 			end
 			if #objects > 0 then
-				app.Sort(objects, app.SortDefaults.AccessibilityAndDistance);
+				app.Sort(objects, app.SortDefaults.Accessibility);
 				return objects[1].objectID;
 			end
 		end
