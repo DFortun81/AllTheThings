@@ -963,21 +963,22 @@ local function RowOnEnter(self)
 			end
 		end
 	end
-
-	if reference.g then
-		-- If we're at the Auction House
-		if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-			tinsert(tooltipInfo, {
-				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
-				r = 1, g = 1, b = 1,
-				wrap = true,
-			});
-		else
-			tinsert(tooltipInfo, {
-				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
-				r = 1, g = 1, b = 1,
-				wrap = true,
-			});
+	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
+		if reference.g then
+			-- If we're at the Auction House
+			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+				tinsert(tooltipInfo, {
+					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
+					r = 1, g = 1, b = 1,
+					wrap = true,
+				});
+			else
+				tinsert(tooltipInfo, {
+					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
+					r = 1, g = 1, b = 1,
+					wrap = true,
+				});
+			end
 		end
 	end
 	

@@ -170,6 +170,7 @@ local TooltipSettingsBase = {
 		["Show:Remaining"] = false,
 		["Show:Percentage"] = true,
 		["Show:OnlyShowNonTrivialRecipes"] = true,
+		["Show:TooltipHelp"] = true,
 		["SoftReserves"] = true,
 		["SoftReservePersistence"] = false,
 		["SourceLocations"] = true,
