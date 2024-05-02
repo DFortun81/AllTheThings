@@ -1594,41 +1594,36 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 			if app.Settings:GetTooltipSetting("Show:SpellRanks") then
-				if app.MODE_DEBUG_OR_ACCOUNT then
-					-- Show all characters
-				else
-					-- Show only the current character
-					local nonTrivialRecipes = {};
-					for _, o in pairs(recipes) do
-						local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
-						if craftTypeID and craftTypeID > 0 then
-							o.craftTypeID = craftTypeID;
-							tinsert(nonTrivialRecipes, o);
-						end
+				local nonTrivialRecipes = {};
+				for _, o in pairs(recipes) do
+					local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
+					if craftTypeID and craftTypeID > 0 then
+						o.craftTypeID = craftTypeID;
+						tinsert(nonTrivialRecipes, o);
 					end
-					local entries, left = {}, nil;
-					BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-					if #entries > 0 then
-						tinsert(tooltipInfo, { left = "Available Skill Ups:" });
-						if #entries < 25 then
-							app.Sort(entries, SortByCraftTypeID);
-							for _,item in ipairs(entries) do
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-							end
-						else
-							for i=1,math.min(25, #entries) do
-								local item = entries[i];
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-							end
-							local more = #entries - 25;
-							if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
+				end
+				local entries, left = {}, nil;
+				BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+				if #entries > 0 then
+					tinsert(tooltipInfo, { left = "Available Skill Ups:" });
+					if #entries < 25 then
+						app.Sort(entries, SortByCraftTypeID);
+						for _,item in ipairs(entries) do
+							left = item.group.text or RETRIEVING_DATA;
+							if IsRetrieving(left) then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 						end
+					else
+						for i=1,math.min(25, #entries) do
+							local item = entries[i];
+							left = item.group.text or RETRIEVING_DATA;
+							if IsRetrieving(left) then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+						end
+						local more = #entries - 25;
+						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 					end
 				end
 			end

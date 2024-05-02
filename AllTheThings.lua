@@ -7165,9 +7165,8 @@ end
 app.__CacheQuestTriggers = nil
 local function AssignDirectGroupOnUpdates()
 	local questRef;
-	local Search = SearchForObject;
 	for questID,func in pairs(DGU_Quests) do
-		questRef = Search("questID", questID);
+		questRef = SearchForObject("questID", questID);
 		if questRef then
 			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
 			questRef.DGUOnUpdate = func;
