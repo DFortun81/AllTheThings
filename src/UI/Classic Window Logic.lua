@@ -253,20 +253,28 @@ local function HasExpandedSubgroup(group)
 end
 app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 
+local IconPortraitTooltipExtraSettings = {
+	questID = "IconPortraitsForQuests",
+};
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local function SetPortraitIcon(self, data, x)
-	local displayID = CalculateRowDisplayID(data);
-	if displayID then
-		SetPortraitTextureFromDisplayID(self, type(displayID) == "number" and displayID or displayID[1]);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	elseif data.unit and not data.icon then
-		SetPortraitTexture(self, data.unit);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
+	if app.Settings:GetTooltipSetting("IconPortraits") then
+		local extraSetting = IconPortraitTooltipExtraSettings[data.key];
+		if not extraSetting or app.Settings:GetTooltipSetting(extraSetting) then
+			local displayID = CalculateRowDisplayID(data);
+			if displayID then
+				SetPortraitTextureFromDisplayID(self, type(displayID) == "number" and displayID or displayID[1]);
+				self:SetWidth(self:GetHeight());
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			elseif data.unit and not data.icon then
+				SetPortraitTexture(self, data.unit);
+				self:SetWidth(self:GetHeight());
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			end
+		end
 	end
 
 	-- Fallback to a traditional icon.

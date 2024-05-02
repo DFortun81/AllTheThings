@@ -7279,18 +7279,26 @@ local function AdjustRowIndent(row, indentAdjust)
 		row.Label:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
 	end
 end
+local IconPortraitTooltipExtraSettings = {
+	questID = "IconPortraitsForQuests",
+};
 local SetPortraitTexture, SetPortraitTextureFromDisplayID
 	= SetPortraitTexture, SetPortraitTextureFromCreatureDisplayID;
 local function SetPortraitIcon(self, data)
-	local displayID = GetDisplayID(data);
-	if displayID then
-		SetPortraitTextureFromDisplayID(self, displayID);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	elseif data.unit and not data.icon then
-		SetPortraitTexture(self, data.unit);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
+	if app.Settings:GetTooltipSetting("IconPortraits") then
+		local extraSetting = IconPortraitTooltipExtraSettings[data.key];
+		if not extraSetting or app.Settings:GetTooltipSetting(extraSetting) then
+			local displayID = GetDisplayID(data);
+			if displayID then
+				SetPortraitTextureFromDisplayID(self, displayID);
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			elseif data.unit and not data.icon then
+				SetPortraitTexture(self, data.unit);
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			end
+		end
 	end
 
 	-- Fallback to a traditional icon.

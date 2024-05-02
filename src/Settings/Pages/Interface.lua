@@ -294,6 +294,23 @@ end)
 checkboxProgressIconOnly:SetATTTooltip(L.ICON_ONLY_CHECKBOX_TOOLTIP)
 checkboxProgressIconOnly:AlignBelow(checkboxCollectionProgress, 1)
 
+local checkboxCompletedBy = child:CreateCheckBox(L.COMPLETED_BY_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
+end)
+checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
+checkboxCompletedBy:AlignBelow(checkboxProgressIconOnly, -1)
+
 local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"))
@@ -309,7 +326,7 @@ function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked())
 end)
 checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
-checkboxKnownBy:AlignBelow(checkboxProgressIconOnly, -1)
+checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
 function(self)
@@ -345,23 +362,6 @@ end)
 checkboxDropChances:SetATTTooltip(L.DROP_CHANCES_CHECKBOX_TOOLTIP)
 checkboxDropChances:AlignBelow(checkboxSpecializations)
 
-local checkboxModelPreview = child:CreateCheckBox(L.SHOW_MODELS_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Models"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Models", self:GetChecked())
-end)
-checkboxModelPreview:SetATTTooltip(L.SHOW_MODELS_CHECKBOX_TOOLTIP)
-checkboxModelPreview:AlignBelow(checkboxDropChances)
-
 local checkboxCurrencyCalculation = child:CreateCheckBox(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Currencies"))
@@ -377,7 +377,7 @@ function(self)
 	settings:SetTooltipSetting("Currencies", self:GetChecked())
 end)
 checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
-checkboxCurrencyCalculation:AlignBelow(checkboxModelPreview)
+checkboxCurrencyCalculation:AlignBelow(checkboxDropChances)
 
 local checkboxSharedAppearances = child:CreateCheckBox(L.SHARED_APPEARANCES_CHECKBOX,
 function(self)
@@ -430,23 +430,6 @@ end)
 checkboxOnlyRelevant:SetATTTooltip(L.ONLY_RELEVANT_CHECKBOX_TOOLTIP)
 checkboxOnlyRelevant:AlignBelow(checkboxOriginalSource)
 
-local checkboxCompletedBy = child:CreateCheckBox(L.COMPLETED_BY_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
-end)
-checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
-checkboxCompletedBy:AlignBelow(checkboxOnlyRelevant, -1)
-
 local checkboxSourceLocations = child:CreateCheckBox(L.SOURCE_LOCATIONS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"))
@@ -462,7 +445,7 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked())
 end)
 checkboxSourceLocations:SetATTTooltip(L.SOURCE_LOCATIONS_CHECKBOX_TOOLTIP)
-checkboxSourceLocations:AlignBelow(checkboxCompletedBy)
+checkboxSourceLocations:AlignBelow(checkboxOnlyRelevant, -1)
 
 local sliderSourceLocations = CreateFrame("Slider", "ATTsliderSourceLocations", child, "OptionsSliderTemplate")
 sliderSourceLocations:SetPoint("TOP", checkboxSourceLocations.Text, "BOTTOM", 0, -4)
@@ -587,7 +570,7 @@ checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
 
 -- Column 2
 local headerListBehavior = child:CreateHeaderLabel(L.BEHAVIOR_LABEL)
-headerListBehavior:SetPoint("TOPLEFT", headerTooltips, 320, 0)
+headerListBehavior:SetPoint("TOPLEFT", headerTooltips, 380, 0)
 
 local sliderMainListScale = CreateFrame("Slider", "ATTsliderMainListScale", child, "OptionsSliderTemplate")
 sliderMainListScale:SetPoint("TOPLEFT", headerListBehavior, "BOTTOMLEFT", 4, -15)
@@ -662,6 +645,45 @@ end)
 checkboxExpandDifficulty:SetATTTooltip(L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP)
 checkboxExpandDifficulty:AlignBelow(checkboxDoAdHocUpdates)
 
+local checkboxIconPortrait = child:CreateCheckBox(L.SHOW_ICON_PORTRAIT_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("IconPortraits"))
+end,
+function(self)
+	settings:SetTooltipSetting("IconPortraits", self:GetChecked());
+	app.HandleEvent("OnRenderDirty");
+end)
+checkboxIconPortrait:SetATTTooltip(L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP)
+checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty)
+
+local checkboxIconPortraitForQuests = child:CreateCheckBox(L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("IconPortraitsForQuests"))
+	if not settings:GetTooltipSetting("IconPortraits") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("IconPortraitsForQuests", self:GetChecked())
+	app.HandleEvent("OnRenderDirty");
+end)
+checkboxIconPortraitForQuests:SetATTTooltip(L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP)
+checkboxIconPortraitForQuests:AlignBelow(checkboxIconPortrait, 1)
+
+local checkboxModelPreview = child:CreateCheckBox(L.SHOW_MODELS_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Models"))
+end,
+function(self)
+	settings:SetTooltipSetting("Models", self:GetChecked())
+end)
+checkboxModelPreview:SetATTTooltip(L.SHOW_MODELS_CHECKBOX_TOOLTIP)
+checkboxModelPreview:AlignBelow(checkboxIconPortraitForQuests, -1)
+
 local checkboxShowCollectibleCostGroups = child:CreateCheckBox(L.CURRENCIES_IN_WQ_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
@@ -670,7 +692,7 @@ function(self)
 	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked())
 end)
 checkboxShowCollectibleCostGroups:SetATTTooltip(L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP)
-checkboxShowCollectibleCostGroups:AlignBelow(checkboxExpandDifficulty)
+checkboxShowCollectibleCostGroups:AlignBelow(checkboxModelPreview)
 
 local checkboxNestedNPCData = child:CreateCheckBox(L.NPC_DATA_NESTED_CHECKBOX,
 function(self)
