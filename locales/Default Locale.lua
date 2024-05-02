@@ -325,10 +325,19 @@ L.SETTINGS_MENU = {
 		SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		PERCENTAGES_CHECKBOX = "Show Percentage Completion";
 		PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
+		BEHAVIOR_LABEL = "List Behavior";
 		MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 		MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+		EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
+		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
+		DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
+		DYNAMIC_CATEGORY_SIMPLE = "Simple";
+		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
+		DYNAMIC_CATEGORY_NESTED = "Nested";
+		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
+		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 	
 	-- Interface: Accessibility Page

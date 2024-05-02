@@ -288,15 +288,6 @@ local L = app.L;
 		L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要查看小地图按钮，请启用此选项。使用此按钮可以快速访问主列表，显示总体收藏进度，并通过右键单击访问设置菜单。\n\n有些人不喜欢混乱。或者，你可以通过在聊天框中键入'/att'来访问主列表。从那里，你可以右键单击标题以进入设置菜单。";
 		--TODO: L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
 		--TODO: L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
-		L.EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
-		L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在进入地下城或团队副本时自动最小化小列表中未激活的难度标题，请启用此选项。\n\n比如：在普通难度地下城中最小化英雄标题。";
-		L.BEHAVIOR_LABEL = "列表行为";
-		L.DYNAMIC_CATEGORY_LABEL = "动态类别";
-		L.DYNAMIC_CATEGORY_SIMPLE = "简单";
-		L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "仅根据最高的类别生成动态类别。 ";
-		L.DYNAMIC_CATEGORY_NESTED = "嵌套";
-		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "根据它们的确切来源生成动态类别。这将导致在多个地方也有来源的事物重复。";
-		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000生成时应用|r";
 		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 		L.KEYBINDINGS_TEXT = "可以在游戏选项中设置 ATT 的按键绑定。";
 
@@ -752,10 +743,19 @@ for key,value in pairs({
 		SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩余事物数量而不是总进度，请启用此选项。";
 		PERCENTAGES_CHECKBOX = "显示完成百分比";
 		PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比请启用此选项。\n\n按完成度对组进行着色不受影响。";
+		BEHAVIOR_LABEL = "列表行为";
 		MAIN_LIST_SLIDER_LABEL = "主列表缩放";
 		MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自定义主列表的缩放。\n\n默认：1';
 		MINI_LIST_SLIDER_LABEL = "小列表缩放";
 		MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
+		EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
+		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在进入地下城或团队副本时自动最小化小列表中未激活的难度标题，请启用此选项。\n\n比如：在普通难度地下城中最小化英雄标题。";
+		DYNAMIC_CATEGORY_LABEL = "动态类别";
+		DYNAMIC_CATEGORY_SIMPLE = "简单";
+		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "仅根据最高的类别生成动态类别。 ";
+		DYNAMIC_CATEGORY_NESTED = "嵌套";
+		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "根据它们的确切来源生成动态类别。这将导致在多个地方也有来源的事物重复。";
+		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000生成时应用|r";
 		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page

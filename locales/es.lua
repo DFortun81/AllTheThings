@@ -286,15 +286,6 @@ local L = app.L;
 		--TODO: L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 		--TODO: L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
 		--TODO: L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
-		--TODO: L.EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
-		--TODO: L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
-		--TODO: L.BEHAVIOR_LABEL = "List Behavior";
-		--TODO: L.DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
-		--TODO: L.DYNAMIC_CATEGORY_SIMPLE = "Simple";
-		--TODO: L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
-		--TODO: L.DYNAMIC_CATEGORY_NESTED = "Nested";
-		--TODO: L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
-		--TODO: L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
 		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
@@ -703,10 +694,19 @@ for key,value in pairs({
 		--TODO: SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		--TODO: PERCENTAGES_CHECKBOX = "Show Percentage Completion";
 		--TODO: PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
+		--TODO: BEHAVIOR_LABEL = "List Behavior";
 		--TODO: MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		--TODO: MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 		--TODO: MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		--TODO: MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+		--TODO: EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
+		--TODO: EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
+		--TODO: DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
+		--TODO: DYNAMIC_CATEGORY_SIMPLE = "Simple";
+		--TODO: DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
+		--TODO: DYNAMIC_CATEGORY_NESTED = "Nested";
+		--TODO: DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
+		--TODO: DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
 		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page

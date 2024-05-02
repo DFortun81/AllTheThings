@@ -368,15 +368,7 @@ for key, value in pairs({
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 	["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
 	["WORLDMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
-	["EXPAND_DIFFICULTY_CHECKBOX"] = "Expand Current Difficulty";
-	["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
-	["BEHAVIOR_LABEL"] = "List Behavior";
-	["DYNAMIC_CATEGORY_LABEL"] = "Dynamic Categories";
-	["DYNAMIC_CATEGORY_SIMPLE"] = "Simple";
-	["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"] = "Generate Dynamic Categories based only on the very highest Category.";
-	["DYNAMIC_CATEGORY_NESTED"] = "Nested";
-	["DYNAMIC_CATEGORY_NESTED_TOOLTIP"] = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
-	["DYNAMIC_CATEGORY_TOOLTIP_NOTE"] = "\n\n|cffff0000Applied when Generated|r";
+	
 	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
 	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...
 	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
