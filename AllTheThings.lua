@@ -9600,7 +9600,7 @@ function app:GetDataCache()
 	}));
 
 	-- Create Dynamic Groups Button
-	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
+	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.SETTINGS_MENU.DYNAMIC_CATEGORY_LABEL), {
 		["icon"] = app.asset("Interface_CreateDynamic"),
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		-- ["OnClick"] = function(row, button)
