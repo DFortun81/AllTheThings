@@ -310,12 +310,22 @@ settings.Initialize = function(self)
 		GeneralSettingsBase.__index[accountWideThing] = true
 		settings.AccountWide[thing] = true
 	end
-
-	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
-	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
-	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
-	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
-	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"));
+	
+	if self.LocationsSlider then
+		self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
+		self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
+		self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
+		self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
+	else
+		self.sliderMaxTooltipTopLineLength:SetValue(self:GetTooltipSetting("MaxTooltipTopLineLength"))
+		self.sliderSummarizeThings:SetValue(self:GetTooltipSetting("ContainsCount") or 25)
+		self.sliderSourceLocations:SetValue(self:GetTooltipSetting("Locations") or 5)
+		self.sliderMainListScale:SetValue(self:GetTooltipSetting("MainListScale"))
+		self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
+		self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
+	end
+	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
+	
 	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
