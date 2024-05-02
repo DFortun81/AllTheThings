@@ -98,6 +98,10 @@ src\Classes\Title.lua
 src\Classes\Transmog.lua
 # src\Classes\CharacterUnlock.lua
 
+# Item Sub-Classes
+src\Classes\Toys.lua
+#src\Classes\Ensembles.lua
+
 # Expansion specific source files
 src\Expansions\Warlords.lua
 src\Expansions\Legion.lua
@@ -114,9 +118,6 @@ classic\ATT-Classic.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 src\UI\World Map Button.lua
-
-# Once Item Class is added above, move this there.
-src\Classes\Toys.lua
 
 # Window Logic Overhaul
 src\UI\Shared Window Logic.lua
