@@ -3296,6 +3296,7 @@ local keys = {
 [77974]="First Lock",
 [78912]="When donating to the Gala (daily)",
 [79104]="Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)",
+[80540]="Bullion Capped",
 [82543]="Increased Noble Flying Carpet Droprate (Daily Accountwide)"},
 ["SOURCE_NAMES"]={
 [90677]="Stormsteel Greatsword",

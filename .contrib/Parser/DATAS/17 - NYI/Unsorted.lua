@@ -7237,10 +7237,6 @@ root(ROOTS.Unsorted, {
 					i(217240),	-- Greatwolf Outcast's Companions
 				}),
 				--]]
-				filter(MISC, {
-					-- Unknown
-					i(215363),	-- Cache of Embers
-				}),
 			}),
 			filter(TOYS, {
 				i(218128),	-- Draconic Banner of the Aspects (TOY!)

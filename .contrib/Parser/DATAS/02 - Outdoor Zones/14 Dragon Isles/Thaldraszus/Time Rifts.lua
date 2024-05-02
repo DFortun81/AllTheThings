@@ -9,7 +9,9 @@ TIME_RIFTS = createHeader({
 	},
 });
 local DILATED_TIME_CAPSULE
--- #if BEFORE 10.2.0
+-- #if AFTER 10.2.6.54358
+DILATED_TIME_CAPSULE = 224298;
+-- #elseif BEFORE 10.2.0
 DILATED_TIME_CAPSULE = 207030;
 -- #else
 DILATED_TIME_CAPSULE = 209856;
@@ -399,10 +401,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
 								}),
 								i(209856, {	-- Dilated Time Capsule (10.2)
-									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 								}),
-								i(224298, {	-- Dilated Eon Canister (DF:S4)	-- unconfirmed from this, but likely
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+								i(224298, {	-- Dilated Eon Canister (DF:S4)
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 								}),
 								i(207002),	-- Encapsulated Destiny
 								i(207027),	-- Greater Encapsulated Destiny
@@ -410,6 +412,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									currency(PARACAUSAL_FLAKES),
 								}),
 								i(208952),	-- Soridormi's Letter of Commendation
+								i(215363, {	-- Cache of Embers
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+									-- probably need symlink
+								}),
 							}),
 						},
 					}),
@@ -630,9 +636,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					n(208548, {	-- Shi Everbreeze
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = bubbleDownFiltered({
-							-- #IF BEFORE 10.2.6
 							["cost"] = {{ "i", DILATED_TIME_CAPSULE, 1 }},
-							-- #ENDIF
 						},FILTERFUNC_itemID,{
 							filter(CLOTH, {
 								i(207602),	-- Anachronistic Bindings

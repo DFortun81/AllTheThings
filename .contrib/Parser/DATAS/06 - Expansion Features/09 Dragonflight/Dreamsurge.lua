@@ -17,7 +17,9 @@ local function DreamboundBOA(itemID, vendorItemID)
 end
 local DREAMSURGE_COALESCENCE = 207026;
 local DREAMSURGE_CHRYSALIS
--- #if BEFORE 10.2.0
+-- #if AFTER 10.2.6.54358
+DREAMSURGE_CHRYSALIS = 224297;
+-- #elseif BEFORE 10.2.0
 DREAMSURGE_CHRYSALIS = 208153;
 -- #else
 DREAMSURGE_CHRYSALIS = 210254;
@@ -291,9 +293,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
 				["g"] = bubbleDownFiltered({
-					-- #IF BEFORE 10.2.6
 					["cost"] = {{ "i", DREAMSURGE_CHRYSALIS, 1 }},
-					-- #ENDIF
 				},FILTERFUNC_itemID,{
 					n(BACK, {
 						i(209414),	-- Dreambound Drape

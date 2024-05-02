@@ -102,6 +102,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			})),
 			n(EVENT_COMPLETION, {
+				i(215363, {	-- Cache of Embers (TODO: I'm not sure if it is require any specific bags for it)
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+					-- probably need symlink
+				}),
 				i(205204),	-- Cataloged Shalewing (MOUNT!)
 				i(205026),	-- Devourer Lobstrok (PET!)
 				i(205369, {	-- Appreciative Researcher's Gift
