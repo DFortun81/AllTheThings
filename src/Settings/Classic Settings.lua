@@ -166,7 +166,6 @@ local TooltipSettingsBase = {
 		["Progress"] = true,
 		["ShowIconOnly"] = false,
 		["Show:CraftedItems"] = false,
-		["Show:OtherCharacterQuests"] = false,
 		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,
 		["Show:Percentage"] = true,

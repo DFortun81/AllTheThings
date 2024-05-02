@@ -1442,8 +1442,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if app.AddSourceInformation(group.sourceID, tooltipInfo, group, group) then
 		working = true;
 	end
-
-	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
+	
 	if app.Settings:GetTooltipSetting("SummarizeThings") then
 		-- Contents
 		if group.g and #group.g > 0 then
@@ -1461,28 +1460,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 						tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-
-						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
-							local incompletes = {};
-							for guid,character in pairs(ATTCharacterData) do
-								if not character.ignored and character.realm == realmName
-									and (not item.group.r or (character.factionID and item.group.r == character.factionID))
-									and (not item.group.races or (character.raceID and contains(item.group.races, character.raceID)))
-									and (not item.group.c or (character.classID and contains(item.group.c, character.classID)))
-									and (character.Quests and not character.Quests[item.group.questID]) then
-									incompletes[guid] = character;
-								end
-							end
-							local desc, j = "", 0;
-							for guid,character in pairs(incompletes) do
-								if j > 0 then desc = desc .. ", "; end
-								desc = desc .. (character.text or guid);
-								j = j + 1;
-							end
-							if j > 0 then
-								tinsert(tooltipInfo, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
-							end
-						end
 					end
 				else
 					for i=1,math.min(25, #entries) do
@@ -1493,22 +1470,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 						tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-
-						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
-							local incompletes = {};
-							for guid,character in pairs(ATTCharacterData) do
-								if not character.ignored and character.realm == realmName and character.Quests and not character.Quests[item.group.questID] then
-									incompletes[guid] = character;
-								end
-							end
-							local desc, j = "", 0;
-							for guid,character in pairs(incompletes) do
-								if j > 0 then desc = desc .. ", "; end
-								desc = desc .. (character.text or guid);
-								j = j + 1;
-							end
-							tinsert(tooltipInfo, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
-						end
 					end
 					local more = #entries - 25;
 					if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end

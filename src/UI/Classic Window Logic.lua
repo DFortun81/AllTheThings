@@ -897,35 +897,6 @@ local function RowOnEnter(self)
 		else tinsert(tooltipInfo, { left = "This can be completed multiple times.", wrap = true }); end
 	end
 
-	if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
-		if not reference.repeatable and app.Settings:GetTooltipSetting("Show:OtherCharacterQuests") then
-			local incompletes, realmName = {}, GetRealmName();
-			for guid,character in pairs(ATTCharacterData) do
-				if not character.ignored and character.realm == realmName
-					and (not reference.r or (character.factionID and reference.r == character.factionID))
-					and (not reference.races or (character.raceID and contains(reference.races, character.raceID)))
-					and (not reference.c or (character.classID and contains(reference.c, character.classID)))
-					and (character.Quests and not character.Quests[reference.questID]) then
-					incompletes[guid] = character;
-				end
-			end
-			incompletes[app.GUID] = nil;
-			local desc, j = "", 0;
-			for guid,character in pairs(incompletes) do
-				if j > 0 then desc = desc .. ", "; end
-				desc = desc .. (character.text or guid);
-				j = j + 1;
-			end
-			if j > 0 then
-				tinsert(tooltipInfo, {
-					left = "Incomplete on " .. desc:gsub("-" .. realmName, ""),
-					r = 1, g = 1, b = 1,
-					wrap = true,
-				});
-			end
-		end
-	end
-
 	-- Show Quest Prereqs
 	local isDebugMode = app.MODE_DEBUG;
 	if reference.sourceQuests and (isDebugMode or not reference.saved) then
