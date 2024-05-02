@@ -4253,17 +4253,18 @@ local function UpdateSearchResults(searchResults)
 	-- Update all the results within visible windows
 	local hashes = {};
 	local found = {};
-	local Update, UpdateCost, SearchForSpecificGroups = app.DirectGroupUpdate, app.UpdateCostGroup, app.SearchForSpecificGroups;
+	local UpdateCostGroup = app.UpdateCostGroup;
 	-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 	for _,result in ipairs(searchResults) do
 		hashes[result.hash] = true;
 		found[#found + 1] = result;
 		-- Make sure any cost data is updated for this specific group since it was updated
-		UpdateCost(result);
+		UpdateCostGroup(result);
 	end
 
 	-- loop through visible ATT windows and collect matching groups
 	-- app.PrintDebug("Checking Windows...")
+	local SearchForSpecificGroups = app.SearchForSpecificGroups;
 	for suffix,window in pairs(app.Windows) do
 		-- Collect matching groups from the updating groups from visible windows other than Main list
 		if window.Suffix ~= "Prime" and window:IsVisible() then
@@ -4276,8 +4277,9 @@ local function UpdateSearchResults(searchResults)
 
 	-- apply direct updates to all found groups
 	-- app.PrintDebug("Updating",#found,"groups")
+	local DirectGroupUpdate = app.DirectGroupUpdate;
 	for _,o in ipairs(found) do
-		Update(o, true);
+		DirectGroupUpdate(o, true);
 	end
 	app.WipeSearchCache();
 	-- app.PrintDebug("UpdateSearchResults Done")
