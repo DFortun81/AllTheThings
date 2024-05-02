@@ -370,8 +370,6 @@ for key, value in pairs({
 	["WORLDMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
 	["EXPAND_DIFFICULTY_CHECKBOX"] = "Expand Current Difficulty";
 	["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
-	["WARN_DIFFICULTY_CHECKBOX"] = "Warn Completed Difficulty";
-	["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.";
 	["BEHAVIOR_LABEL"] = "List Behavior";
 	["DYNAMIC_CATEGORY_LABEL"] = "Dynamic Categories";
 	["DYNAMIC_CATEGORY_SIMPLE"] = "Simple";
