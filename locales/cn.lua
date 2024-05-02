@@ -709,8 +709,6 @@ for key,value in pairs({
 		KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已知此配方的完整角色列表，请启用此选项。";
 		COMPLETED_BY_CHECKBOX = "已完成";
 		COMPLETED_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已完成任务的完整角色列表，请启用此选项。";
-		SHOW_MODELS_CHECKBOX = "模型预览";
-		SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标。\n\n此选项可帮助你识别稀有生物或商人的模样。因为这个原因你可能想保持这个开启。";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "货币计算";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项以显示收集物品所需的物品/货币的估计数量。\n\n对于不一次奖励所有可用内容的容器，估计将因此低于实际需要。";
 		SHARED_APPEARANCES_CHECKBOX = "共享外观";
@@ -750,6 +748,12 @@ for key,value in pairs({
 		MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
 		EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
 		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在进入地下城或团队副本时自动最小化小列表中未激活的难度标题，请启用此选项。\n\n比如：在普通难度地下城中最小化英雄标题。";
+		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
+		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On";
+		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "For Quests";
+		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On";
+		SHOW_MODELS_CHECKBOX = "模型预览";
+		SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标。\n\n此选项可帮助你识别稀有生物或商人的模样。因为这个原因你可能想保持这个开启。";
 		DYNAMIC_CATEGORY_LABEL = "动态类别";
 		DYNAMIC_CATEGORY_SIMPLE = "简单";
 		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "仅根据最高的类别生成动态类别。 ";

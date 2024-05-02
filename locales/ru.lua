@@ -689,8 +689,6 @@ for key,value in pairs({
 		KNOWN_BY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке полный список персонажей на всех серверах, которые изучили данный рецепт.";
 		COMPLETED_BY_CHECKBOX = "Выполнено";
 		COMPLETED_BY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке полный список персонажей на всех серверах, которые выполнили данное Задание.";
-		SHOW_MODELS_CHECKBOX = "Предпоказ";
-		SHOW_MODELS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке модель вместо иконки.\n\nДанная настройка может помочь идентифицировать Редкого монстра или Торговца по внешнему виду. Возможно, Вы захотите оставить опцию включенной по этой причине.";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Рассчет покупок";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке приблизительное количество Предметов/Валюты, необходимое для покупки Штучек.\n\nДля Контейнеров, которые не гарантируют получение всего содержимого за раз, оценка затрат будет ниже.";
 		SHARED_APPEARANCES_CHECKBOX = "Общие Облики";
@@ -730,6 +728,12 @@ for key,value in pairs({
 		MINI_LIST_SCALE_TOOLTIP = 'Используйте для изменения масштаба Мини и Других Списков.\n\nПо умолчанию: 1';
 		EXPAND_DIFFICULTY_CHECKBOX = "Развернуть Текущую Сложность";
 		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите автоматически минимизировать заголовки в мини списке, которые не активны, когда Вы входите в подземелье или рейд.\n\nПример: Минимизировать Героический заголовок, когда в Обычной сложности подземелья.";
+		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
+		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On";
+		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "For Quests";
+		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On";
+		SHOW_MODELS_CHECKBOX = "Предпоказ";
+		SHOW_MODELS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке модель вместо иконки.\n\nДанная настройка может помочь идентифицировать Редкого монстра или Торговца по внешнему виду. Возможно, Вы захотите оставить опцию включенной по этой причине.";
 		DYNAMIC_CATEGORY_LABEL = "Динамические Категории";
 		DYNAMIC_CATEGORY_SIMPLE = "Простые";
 		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Генерировать Динамические Категории только на основе самой общей Категории.";

@@ -294,91 +294,6 @@ end)
 checkboxProgressIconOnly:SetATTTooltip(L.ICON_ONLY_CHECKBOX_TOOLTIP)
 checkboxProgressIconOnly:AlignBelow(checkboxCollectionProgress, 1)
 
-local checkboxCompletedBy = child:CreateCheckBox(L.COMPLETED_BY_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
-end)
-checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
-checkboxCompletedBy:AlignBelow(checkboxProgressIconOnly, -1)
-
-local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("KnownBy"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("KnownBy", self:GetChecked())
-end)
-checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
-checkboxKnownBy:AlignBelow(checkboxCompletedBy)
-
-local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
-end)
-checkboxSpecializations:SetATTTooltip(L.SPEC_CHECKBOX_TOOLTIP)
-checkboxSpecializations:AlignBelow(checkboxKnownBy)
-
-local checkboxDropChances = child:CreateCheckBox(L.DROP_CHANCES_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("DropChances"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("DropChances", self:GetChecked())
-end)
-checkboxDropChances:SetATTTooltip(L.DROP_CHANCES_CHECKBOX_TOOLTIP)
-checkboxDropChances:AlignBelow(checkboxSpecializations)
-
-local checkboxCurrencyCalculation = child:CreateCheckBox(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Currencies"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Currencies", self:GetChecked())
-end)
-checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
-checkboxCurrencyCalculation:AlignBelow(checkboxDropChances)
-
 local checkboxSharedAppearances = child:CreateCheckBox(L.SHARED_APPEARANCES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"))
@@ -394,7 +309,7 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked())
 end)
 checkboxSharedAppearances:SetATTTooltip(L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP)
-checkboxSharedAppearances:AlignAfter(checkboxCollectionProgress, 20)
+checkboxSharedAppearances:AlignBelow(checkboxProgressIconOnly, -1)
 
 local checkboxOriginalSource = child:CreateCheckBox(L.INCLUDE_ORIGINAL_CHECKBOX,
 function(self)
@@ -567,6 +482,96 @@ function(self)
 end)
 checkboxAllowWrapping:SetATTTooltip(L.WITH_WRAPPING_CHECKBOX_TOOLTIP)
 checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
+
+
+
+
+
+
+local checkboxCompletedBy = child:CreateCheckBox(L.COMPLETED_BY_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
+end)
+checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
+checkboxCompletedBy:AlignAfter(checkboxCollectionProgress, 20)
+
+local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("KnownBy"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("KnownBy", self:GetChecked())
+end)
+checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
+checkboxKnownBy:AlignBelow(checkboxCompletedBy)
+
+local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
+end)
+checkboxSpecializations:SetATTTooltip(L.SPEC_CHECKBOX_TOOLTIP)
+checkboxSpecializations:AlignBelow(checkboxKnownBy)
+
+local checkboxDropChances = child:CreateCheckBox(L.DROP_CHANCES_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("DropChances"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("DropChances", self:GetChecked())
+end)
+checkboxDropChances:SetATTTooltip(L.DROP_CHANCES_CHECKBOX_TOOLTIP)
+checkboxDropChances:AlignBelow(checkboxSpecializations)
+
+local checkboxCurrencyCalculation = child:CreateCheckBox(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Currencies"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Currencies", self:GetChecked())
+end)
+checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
+checkboxCurrencyCalculation:AlignBelow(checkboxDropChances)
 
 -- Column 2
 local headerListBehavior = child:CreateHeaderLabel(L.BEHAVIOR_LABEL)
