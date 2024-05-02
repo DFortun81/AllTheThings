@@ -354,7 +354,7 @@ local function CheckExplorationForCurrentLocation()
 end
 app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
--- Event Handlering
+-- Event Handling
 app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
 app.events.MAP_EXPLORATION_UPDATED = CheckExplorationForCurrentLocation;
 app.events.UI_INFO_MESSAGE = function(messageID)
@@ -825,3 +825,158 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 		return true;
 	end
 end));
+
+-- Instance Event Handling
+local GetNumSavedInstances, GetServerTime, GetSavedInstanceInfo, GetSavedInstanceEncounterInfo, RequestRaidInfo
+	= GetNumSavedInstances, GetServerTime, GetSavedInstanceInfo, GetSavedInstanceEncounterInfo, RequestRaidInfo;
+local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
+local function RefreshSavesCallback()
+	-- While the player is still logging in, wait.
+	if not app.GUID then
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
+	end
+	
+	-- Make sure there's info available to check save data
+	local saves = GetNumSavedInstances();
+	if saves and saves < 1 then
+		-- While the player is still waiting for information, wait.
+		app.refreshingSaves = (app.refreshingSaves or 30) - 1;
+		if app.refreshingSaves <= 0 then
+			app.refreshingSaves = nil;
+			return;
+		end
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
+	end
+
+	-- Cache the lockouts across your account.
+	local serverTime = GetServerTime();
+
+	-- Check to make sure that the old instance data has expired
+	for guid,character in pairs(ATTCharacterData) do
+		local locks = character.Lockouts;
+		if locks then
+			for instanceID,instance in pairs(locks) do
+				local count = 0;
+				for difficulty,lock in pairs(instance) do
+					if type(lock) ~= "table" or type(lock.reset) ~= "number" or serverTime >= lock.reset then
+						-- Clean this up.
+						instance[difficulty] = nil;
+					else
+						count = count + 1;
+					end
+				end
+				if count == 0 then
+					-- Clean this up.
+					locks[instanceID] = nil;
+				end
+			end
+		end
+	end
+
+	-- Update Saved Instances
+	local myLockouts = app.CurrentCharacter.Lockouts;
+	for instanceIter=1,saves do
+		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters, encounterProgress, extendDisabled, savedInstanceID = GetSavedInstanceInfo(instanceIter);
+		if locked and savedInstanceID then
+			-- Cache the locks for this instance
+			difficulty = difficulty or 7;
+			reset = serverTime + reset;
+			local locks = myLockouts[savedInstanceID];
+			if not locks then
+				locks = {};
+				myLockouts[savedInstanceID] = locks;
+			end
+
+			-- Create the lock for this difficulty
+			local lock = locks[difficulty];
+			if not lock then
+				lock = { ["id"] = id, ["reset"] = reset, ["encounters"] = {}};
+				locks[difficulty] = lock;
+			else
+				lock.id = id;
+				lock.reset = reset;
+			end
+
+			-- If this is LFR, then don't share.
+			if difficulty == 7 or difficulty == 17 then
+				if #lock.encounters == 0 then
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+					end
+				else
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						if not lock.encounters[encounterIter] then
+							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							lock.encounters[encounterIter].isKilled = true;
+						end
+					end
+				end
+			else
+				-- Create the pseudo "shared" lock
+				local shared = locks.shared;
+				if not shared then
+					shared = {};
+					shared.id = id;
+					shared.reset = reset;
+					shared.encounters = {};
+					locks.shared = shared;
+
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+
+						-- Shared Encounter is always assigned if this is the first lock seen for this instance
+						tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+					end
+				else
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						if not lock.encounters[encounterIter] then
+							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							lock.encounters[encounterIter].isKilled = true;
+						end
+						if not shared.encounters[encounterIter] then
+							tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							shared.encounters[encounterIter].isKilled = true;
+						end
+					end
+				end
+			end
+		end
+	end
+
+	-- Mark that we're done now.
+	app.HandleEvent("OnSavesUpdated");
+end
+app.events.LOOT_CLOSED = function()
+	-- Once the loot window closes after killing a boss, THEN trigger the update.
+	app:UnregisterEvent("LOOT_CLOSED");
+	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
+	app:RegisterEvent("UPDATE_INSTANCE_INFO");
+	RequestRaidInfo();
+end
+app.events.UPDATE_INSTANCE_INFO = function()
+	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
+	AfterCombatCallback(RefreshSavesCallback);
+end
+app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
+app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
+	-- This is so that when you kill a boss, you can trigger
+	-- an automatic update of your saved instance cache.
+	-- (It does lag a little, but you can disable this if you want.)
+	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
+	-- print("BOSS_KILL", id, name, ...);
+	app:UnregisterEvent("LOOT_CLOSED");
+	app:RegisterEvent("LOOT_CLOSED");
+end);
