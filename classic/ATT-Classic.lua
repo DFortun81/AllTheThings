@@ -1210,6 +1210,21 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			break;
 		end
 	end
+	
+	-- Include Cost Sources
+	if #group == 0 and (paramA == "itemID" or paramA == "currencyID") then
+		local costGroups = SearchForField(paramA .. "AsCost", paramB);
+		if costGroups and #costGroups > 0 then
+			local regroup = {};
+			for i,g in ipairs(group) do
+				tinsert(regroup, g);
+			end
+			for i,g in ipairs(costGroups) do
+				tinsert(regroup, g);
+			end
+			group = regroup;
+		end
+	end
 
 	if itemID then
 		local reagentCache = app.GetDataSubMember("Reagents", itemID);
@@ -1343,20 +1358,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			group = CloneClassInstance({ [paramA] = paramB, key = paramA });
 			group.g = merged;
 		end
-		
-		-- Only need to build/update groups from the top level
-		if isTopLevelSearch and group.g then
-			group.total = 0;
-			group.progress = 0;
-			--AssignChildren(group);	-- Turning this off fixed a bug with objective tooltips.
-			app.UpdateGroups(group, group.g);
-			if group.collectible then
-				group.total = group.total + 1;
-				if group.collected then
-					group.progress = group.progress + 1;
-				end
-			end
-		end
 	end
 
 	if mostAccessibleSource then
@@ -1364,6 +1365,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		group.rwp = mostAccessibleSource.rwp;
 		group.e = mostAccessibleSource.e;
 		group.u = mostAccessibleSource.u;
+		group.f = mostAccessibleSource.f;
 	end
 
 	-- Resolve Cost
@@ -1411,6 +1413,20 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if #usedToBuy.g > 0 then
 				usedToBuy.text = "Currency For";
 				MergeObject(group.g, usedToBuy);
+			end
+		end
+	end
+		
+	-- Only need to build/update groups from the top level
+	if isTopLevelSearch and group.g then
+		group.total = 0;
+		group.progress = 0;
+		--AssignChildren(group);	-- Turning this off fixed a bug with objective tooltips.
+		app.UpdateGroups(group, group.g);
+		if group.collectible then
+			group.total = group.total + 1;
+			if group.collected then
+				group.progress = group.progress + 1;
 			end
 		end
 	end

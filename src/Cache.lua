@@ -178,11 +178,11 @@ local providerTypeConverters = {
 	["o"] = cacheObjectID,
 	["c"] = function(group, providerID)
 		CacheField(group, "currencyIDAsCost", providerID);
-		CacheField(group, "currencyID", providerID);
+		--CacheField(group, "currencyID", providerID);
 	end,
 	["i"] = function(group, providerID)
 		CacheField(group, "itemIDAsCost", providerID);
-		CacheField(group, "itemID", providerID);
+		--CacheField(group, "itemID", providerID);
 	end,
 	["g"] = function(group, providerID)
 		-- Do nothing, nothing to cache.
