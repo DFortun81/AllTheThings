@@ -340,7 +340,7 @@ settings.GetModeString = function(self)
 			end
 		end
 
-		if self:Get("Only:RWP") and self.Collectibles.Transmog then
+		if app.GameBuildVersion < 40000 and self:Get("Only:RWP") and self.Collectibles.Transmog then
 			mode = "RWP " .. mode;
 		end
 
