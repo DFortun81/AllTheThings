@@ -488,14 +488,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(71329, 376622);	-- Crimson Combatant's Draconium Pauldrons
 			FirstCraft(71325, 376623);	-- Crimson Combatant's Draconium Sabatons
 			FirstCraft(71330, 376624);	-- Crimson Combatant's Draconium Waistguard
-			--FirstCraft(XXXXX, 430082, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Armguards
-			--FirstCraft(XXXXX, 430083, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Breastplate
-			--FirstCraft(XXXXX, 430084, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Gauntlets
-			--FirstCraft(XXXXX, 430085, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Greaves
-			--FirstCraft(XXXXX, 430086, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Helm
-			--FirstCraft(XXXXX, 430087, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Pauldrons
-			--FirstCraft(XXXXX, 430088, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Sabatons
-			--FirstCraft(XXXXX, 430089, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Waistguard
+			FirstCraft(79065, 430082, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Armguards
+			FirstCraft(79058, 430083, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Breastplate
+			FirstCraft(79060, 430084, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Gauntlets
+			FirstCraft(79062, 430085, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Greaves
+			FirstCraft(79061, 430086, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Helm
+			FirstCraft(79063, 430087, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Pauldrons
+			FirstCraft(79059, 430088, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Sabatons
+			FirstCraft(79064, 430089, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Draconium Waistguard
 			FirstCraft(72489, 367611);	-- Explorer's Expert Clasp
 			FirstCraft(72562, 395879);	-- Explorer's Expert Gauntlets
 			FirstCraft(72494, 395881);	-- Explorer's Expert Greaves
@@ -1243,10 +1243,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Googles
 			FirstCraft(71444, 382391);	-- Battle-Ready Binoculars
 			FirstCraft(71448, 382385);	-- Deadline Deadeyes
-			--FirstCraft(XXXXX, 430093, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Cloth Goggles
-			--FirstCraft(XXXXX, 430094, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Leather Goggles
-			--FirstCraft(XXXXX, 430095, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Mail Goggles
-			--FirstCraft(XXXXX, 430096, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Plate Goggles
+			FirstCraft(79069, 430093, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Cloth Goggles
+			FirstCraft(79070, 430094, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Leather Goggles
+			FirstCraft(79071, 430095, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Mail Goggles
+			FirstCraft(79072, 430096, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Plate Goggles
 			FirstCraft(71441, 382388);	-- Lightweight Ocular Lenses
 			FirstCraft(71447, 382384);	-- Milestone Magnifiers
 			FirstCraft(75715, 409351, ADDED_10_1_0);	-- Obsidian Combatant's Cloth Goggles
@@ -1796,9 +1796,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74102, 400026, ADDED_10_0_5);	-- Crimson Combatant's Medallion
 			FirstCraft(74103, 400027, ADDED_10_0_5);	-- Crimson Combatant's Insignia of Alacrity
 			FirstCraft(74104, 400028, ADDED_10_0_5);	-- Crimson Combatant's Emblem
-			--FirstCraft(XXXXX, 430092, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Emblem
-			--FirstCraft(XXXXX, 430091, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Insignia of Alacrity
-			--FirstCraft(XXXXX, 430090, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Medallion
+			FirstCraft(79068, 430092, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Emblem
+			FirstCraft(79067, 430091, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Insignia of Alacrity
+			FirstCraft(79066, 430090, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Medallion
 			FirstCraft(71592, 383770);	-- Darkmoon Deck Box: Dance
 			FirstCraft(71591, 383325);	-- Darkmoon Deck Box: Inferno
 			FirstCraft(71590, 383767);	-- Darkmoon Deck Box: Rime
@@ -2320,8 +2320,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(72349, 394621);	-- Torc of Passed Time
 			FirstCraft(71608, 374495);	-- Crimson Combatant's Jeweled Amulet
 			FirstCraft(71609, 374496);	-- Crimson Combatant's Jeweled Signet
-			--FirstCraft(XXXXX, 430055, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Jeweled Amulet
-			--FirstCraft(XXXXX, 430056, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Jeweled Signet
+			FirstCraft(79031, 430055, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Jeweled Amulet
+			FirstCraft(79032, 430056, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Jeweled Signet
 			FirstCraft(74805, 403131, ADDED_10_1_0);	-- Obsidian Combatant's Jeweled Amulet
 			FirstCraft(74806, 403132, ADDED_10_1_0);	-- Obsidian Combatant's Jeweled Signet
 			FirstCraft(71607, 376233);	-- Band of New Beginnings
@@ -2761,22 +2761,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(71699, 375129);	-- Crimson Combatant's Resilient Shoulderpads
 			FirstCraft(71698, 375128);	-- Crimson Combatant's Resilient Trousers
 			FirstCraft(71701, 375132);	-- Crimson Combatant's Resilient Wristwraps
-			--FirstCraft(XXXXX, 430066, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Chainmail
-			--FirstCraft(XXXXX, 430065, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Cowl
-			--FirstCraft(XXXXX, 430071, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Cuffs
-			--FirstCraft(XXXXX, 430068, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Epaulets
-			--FirstCraft(XXXXX, 430069, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Gauntlets
-			--FirstCraft(XXXXX, 430072, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Girdle
-			--FirstCraft(XXXXX, 430067, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Leggings
-			--FirstCraft(XXXXX, 430070, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Treads
-			--FirstCraft(XXXXX, 430064, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Belt
-			--FirstCraft(XXXXX, 430062, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Boots
-			--FirstCraft(XXXXX, 430058, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Chestpiece
-			--FirstCraft(XXXXX, 430061, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Gloves
-			--FirstCraft(XXXXX, 430057, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Mask
-			--FirstCraft(XXXXX, 430060, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Shoulderpads
-			--FirstCraft(XXXXX, 430059, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Trousers
-			--FirstCraft(XXXXX, 430063, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Wristwraps
+			FirstCraft(79042, 430066, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Chainmail
+			FirstCraft(79043, 430065, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Cowl
+			FirstCraft(79048, 430071, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Cuffs
+			FirstCraft(79044, 430068, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Epaulets
+			FirstCraft(79047, 430069, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Gauntlets
+			FirstCraft(79045, 430072, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Girdle
+			FirstCraft(79046, 430067, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Leggings
+			FirstCraft(79041, 430070, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Adamant Treads
+			FirstCraft(79037, 430064, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Belt
+			FirstCraft(79033, 430062, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Boots
+			FirstCraft(79034, 430058, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Chestpiece
+			FirstCraft(79039, 430061, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Gloves
+			FirstCraft(79035, 430057, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Mask
+			FirstCraft(79036, 430060, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Shoulderpads
+			FirstCraft(79038, 430059, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Trousers
+			FirstCraft(79040, 430063, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Resilient Wristwraps
 			FirstCraft(71716, 375155);	-- Infurious Boots of Reprieve
 			FirstCraft(71717, 375156);	-- Infurious Chainhelm Protector
 			FirstCraft(71688, 375149);	-- Infurious Footwraps of Indemnity
@@ -3426,15 +3426,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(71811, 376525);	-- Crimson Combatant's Wildercloth Shoulderpads
 			FirstCraft(71807, 376521);	-- Crimson Combatant's Wildercloth Treads
 			FirstCraft(71806, 376520);	-- Crimson Combatant's Wildercloth Tunic
-			--FirstCraft(XXXXX, 430081, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Bands
-			--FirstCraft(XXXXX, 430073, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Cloak
-			--FirstCraft(XXXXX, 430076, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Gloves
-			--FirstCraft(XXXXX, 430077, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Hood
-			--FirstCraft(XXXXX, 430078, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Leggings
-			--FirstCraft(XXXXX, 430080, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Sash
-			--FirstCraft(XXXXX, 430079, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Shoulderpads
-			--FirstCraft(XXXXX, 430075, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Treads
-			--FirstCraft(XXXXX, 430074, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Tunic
+			FirstCraft(79052, 430081, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Bands
+			FirstCraft(79057, 430073, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Cloak
+			FirstCraft(79054, 430076, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Gloves
+			FirstCraft(79053, 430077, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Hood
+			FirstCraft(79049, 430078, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Leggings
+			FirstCraft(79056, 430080, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Sash
+			FirstCraft(79050, 430079, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Shoulderpads
+			FirstCraft(79051, 430075, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Treads
+			FirstCraft(79055, 430074, ADDED_10_2_6_SEASON_FOUR);	-- Draconic Combatant's Wildercloth Tunic
 			FirstCraft(74831, 403157, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Bands
 			FirstCraft(74823, 403149, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Cloak
 			FirstCraft(74826, 403152, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Gloves
