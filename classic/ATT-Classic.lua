@@ -4325,7 +4325,12 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 	local C_PetJournal = _G["C_PetJournal"];
 	-- Once the Pet Journal API is available, then all pets become account wide.
 	SetBattlePetCollected = function(t, speciesID, collected)
-		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
+		if collected then
+			return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
+		else
+			-- Stop turning it off, dumbass Blizzard API.
+			return app.IsAccountCached("BattlePets", speciesID);
+		end
 	end
 	speciesFields.icon = function(t)
 		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
