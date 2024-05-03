@@ -255,6 +255,11 @@ i(72233);	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Orange
 i(79769);	-- Demon Hunter's Aspect
 
 -----------------
+-- PATCH 4.4.0 --
+-----------------
+i(216893);	-- Goblin Town-in-a-Box
+
+-----------------
 -- PATCH 5.0.4 --
 -----------------
 i(86589);	-- Ai-Li's Skymirror

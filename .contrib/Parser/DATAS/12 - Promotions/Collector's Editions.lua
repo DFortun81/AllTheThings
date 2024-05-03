@@ -382,16 +382,46 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }, {
+	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {
 				mount(423869),	-- Avatar of Flame (MOUNT!)
 				i(209945),	-- Lil' Wrathion (PET!)
-
-				-- Later
-				-- Twilight's Hammer Regalia Transmog Set
-				-- Town-In-A-Box Starter Set Toy
+				
+				-- Twilight's Hammer Regalia Transmog Set (Added with Cataclysm)
+				i(224380, {	-- Twilight's Hammer Regalia Helmet
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224383, {	-- Twilight's Hammer Regalia Shoulders
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224382, {	-- Twilight's Hammer Regalia Robe
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224378, {	-- Twilight's Hammer Regalia Tunic
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224377, {	-- Twilight's Hammer Regalia Bracer
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224379, {	-- Twilight's Hammer Regalia Gloves
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224375, {	-- Twilight's Hammer Regalia Belt
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224381, {	-- Twilight's Hammer Regalia Kilt
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				i(224376, {	-- Twilight's Hammer Regalia Boots
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
+				
+				-- Town-In-A-Box Starter Set Toy (Added with Cataclysm)
+				i(216893, {	-- Goblin Town-in-a-Box
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
 			},
 		}),
 	})),
