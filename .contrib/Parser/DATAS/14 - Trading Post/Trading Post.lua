@@ -1847,7 +1847,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 600}},
 				}),
 				i(54069, {	-- Blazing Hippogryph (MOUNT!)
-					["cost"] = {{"c", TRADERS_TENDER, 600}},
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
 				}),
 				i(206976, {	-- Royal Swarmer (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 800}},
