@@ -113,7 +113,7 @@ if app.GameBuildVersion >= 90000 then
 					if not (customCollects.SL_COV_KYR or self:Get("CC:SL_COV_KYR"))
 						or not (customCollects.SL_COV_NEC or self:Get("CC:SL_COV_NEC"))
 						or not (customCollects.SL_COV_NFA or self:Get("CC:SL_COV_NFA"))
-						or not (customCollects.SL_COV_VEN or self:Get("CC:SL_COV_VEN"))) then
+						or not (customCollects.SL_COV_VEN or self:Get("CC:SL_COV_VEN")) then
 						return true;
 					end
 				end

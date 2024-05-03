@@ -372,6 +372,10 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 		end
 	end
 end
+if C_TransmogCollection and app.GameBuildVersion >= 40000 then
+	-- We no longer need to sync Transmog.
+	AccountWideDataHandlers.Transmog = app.EmptyFunction;
+end
 local function RecalculateAccountWideData()
 	for key,data in pairs(AccountWideData) do
 		AccountWideDataHandlers[key](data, key);
