@@ -3841,10 +3841,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { ELWYNN_FOREST },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
+						objective(1, {	-- 0/4 Violet Perch
+							["provider"] = { "i", 58899 },	-- Violet Perch
+							["coord"] = { 23.9, 59.8, ELWYNN_FOREST },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
