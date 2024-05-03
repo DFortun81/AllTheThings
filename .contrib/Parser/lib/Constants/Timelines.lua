@@ -1,62 +1,109 @@
 -------------------------
 --     CLASSIC WOW     --
 -------------------------
-CREATED_1_0_1 = "created 1.0.1";
-ADDED_1_0_1 = "added 1.0.1";
-
-ADDED_1_1_0 = "added 1.1.0";
-
-ADDED_1_2_0 = "added 1.2.0";
-REMOVED_1_2_0 = "removed 1.2.0";
-
-ADDED_1_12_1 = "added 1.12.1";
-
-ADDED_1_3_0 = "added 1.3.0";
-REMOVED_1_3_0 = "removed 1.3.0";
-
-ADDED_1_4_0 = "added 1.4.0";
-REMOVED_1_4_0 = "removed 1.4.0";
-
-ADDED_1_5_0 = "added 1.5.0";
-REMOVED_1_5_0 = "removed 1.5.0";
-
-REMOVED_1_6_0 = "removed 1.6.0";
-
-ADDED_1_7_0 = "added 1.7.0";
-REMOVED_1_7_0 = "removed 1.7.0";
-REMOVED_1_8_0 = "removed 1.8.0";
-REMOVED_1_9_3 = "removed 1.9.3";
-
-CREATED_1_10_0 = "created 1.10.0";
-REMOVED_1_10_0 = "removed 1.10.0";
-
-CREATED_1_11_0 = "created 1.11.0";
-ADDED_1_11_0 = "added 1.11.0";
-REMOVED_1_11_0 = "removed 1.11.0";
-
-CREATED_1_11_1 = "created 1.11.1";
-ADDED_1_11_1 = "added 1.11.1";
-REMOVED_1_11_1 = "removed 1.11.1";
-
-REMOVED_1_11_2 = "removed 1.11.2";
-
-CREATED_1_12_1 = "created 1.12.1";
-REMOVED_1_12_1 = "removed 1.12.1";
-
-ADDED_1_13_0 = "added 1.13.0";
-
+CREATED_1_0_1 = "created 1.0.1";					-- These are Beta??
+ADDED_1_0_1 = "added 1.0.1";					-- These are Beta??
+----
+CREATED_1_1_0 = "created 1.1.0.4044";					-- World of Warcraft Launch on November 23rd, 2004
+ADDED_1_1_0 = "added 1.1.0.4044";						-- World of Warcraft Launch on November 23rd, 2004
+REMOVED_1_1_0 = "removed 1.1.0.4044";					-- World of Warcraft Launch on November 23rd, 2004
+CREATED_1_2_0 = "created 1.2.0.4147";					-- World of Warcraft 1.2.0 Launch on December 18th, 2004
+ADDED_1_2_0 = "added 1.2.0.4147";						-- World of Warcraft 1.2.0 Launch on December 18th, 2004
+REMOVED_1_2_0 = "removed 1.2.0.4147";					-- World of Warcraft 1.2.0 Launch on December 18th, 2004
+CREATED_1_3_0 = "created 1.3.0.4284";					-- World of Warcraft 1.3.0 Launch on March 22nd, 2005
+ADDED_1_3_0 = "added 1.3.0.4284";						-- World of Warcraft 1.3.0 Launch on March 22nd, 2005
+REMOVED_1_3_0 = "removed 1.3.0.4284";					-- World of Warcraft 1.3.0 Launch on March 22nd, 2005
+CREATED_1_4_0 = "created 1.4.0.4341";					-- World of Warcraft 1.4.0 Launch on April 19th, 2005
+ADDED_1_4_0 = "added 1.4.0.4341";						-- World of Warcraft 1.4.0 Launch on April 19th, 2005
+REMOVED_1_4_0 = "removed 1.4.0.4341";					-- World of Warcraft 1.4.0 Launch on April 19th, 2005
+CREATED_1_5_0 = "created 1.5.0.4442";					-- World of Warcraft 1.5.0 Launch on June 7th, 2005
+ADDED_1_5_0 = "added 1.5.0.4442";						-- World of Warcraft 1.5.0 Launch on June 7th, 2005
+REMOVED_1_5_0 = "removed 1.5.0.4442";					-- World of Warcraft 1.5.0 Launch on June 7th, 2005
+CREATED_1_6_0 = "created 1.6.0.4500";					-- World of Warcraft 1.6.0 Launch on July 12th, 2005
+ADDED_1_6_0 = "added 1.6.0.4500";						-- World of Warcraft 1.6.0 Launch on July 12th, 2005
+REMOVED_1_6_0 = "removed 1.6.0.4500";					-- World of Warcraft 1.6.0 Launch on July 12th, 2005
+CREATED_1_7_0 = "created 1.7.0.4671";					-- World of Warcraft 1.7.0 Launch on September 13th, 2005
+ADDED_1_7_0 = "added 1.7.0.4671";						-- World of Warcraft 1.7.0 Launch on September 13th, 2005
+REMOVED_1_7_0 = "removed 1.7.0.4671";					-- World of Warcraft 1.7.0 Launch on September 13th, 2005
+CREATED_1_8_0 = "created 1.8.0.4735";					-- World of Warcraft 1.8.0 Launch on October 10th, 2005
+ADDED_1_8_0 = "added 1.8.0.4735";						-- World of Warcraft 1.8.0 Launch on October 10th, 2005
+REMOVED_1_8_0 = "removed 1.8.0.4735";					-- World of Warcraft 1.8.0 Launch on October 10th, 2005
+CREATED_1_9_0 = "created 1.9.0.4937";					-- World of Warcraft 1.9.0 Launch on January 3rd, 2006
+ADDED_1_9_0 = "added 1.9.0.4937";						-- World of Warcraft 1.9.0 Launch on January 3rd, 2006
+REMOVED_1_9_0 = "removed 1.9.0.4937";					-- World of Warcraft 1.9.0 Launch on January 3rd, 2006
+CREATED_1_9_3 = "created 1.9.3.5059";					-- World of Warcraft 1.9.3 Launch on February 7th, 2006
+ADDED_1_9_3 = "added 1.9.3.5059";						-- World of Warcraft 1.9.3 Launch on February 7th, 2006
+REMOVED_1_9_3 = "removed 1.9.3.5059";					-- World of Warcraft 1.9.3 Launch on February 7th, 2006
+CREATED_1_10_0 = "created 1.10.0.5195";					-- World of Warcraft 1.10.0 Launch on March 28th, 2006
+ADDED_1_10_0 = "added 1.10.0.5195";						-- World of Warcraft 1.10.0 Launch on March 28th, 2006
+REMOVED_1_10_0 = "removed 1.10.0.5195";					-- World of Warcraft 1.10.0 Launch on March 28th, 2006
+CREATED_1_11_0 = "created 1.11.0.5428";					-- World of Warcraft 1.11.0 Launch on June 19th, 2006
+ADDED_1_11_0 = "added 1.11.0.5428";						-- World of Warcraft 1.11.0 Launch on June 19th, 2006
+REMOVED_1_11_0 = "removed 1.11.0.5428";					-- World of Warcraft 1.11.0 Launch on June 19th, 2006
+CREATED_1_11_1 = "created 1.11.1.5462";					-- World of Warcraft 1.11.1 Launch on June 18th, 2006
+ADDED_1_11_1 = "added 1.11.1.5462";						-- World of Warcraft 1.11.1 Launch on June 18th, 2006
+REMOVED_1_11_1 = "removed 1.11.1.5462";					-- World of Warcraft 1.11.1 Launch on June 18th, 2006
+CREATED_1_11_2 = "created 1.11.2.5464";					-- World of Warcraft 1.11.2 Launch on July 11th, 2006
+ADDED_1_11_2 = "added 1.11.2.5464";						-- World of Warcraft 1.11.2 Launch on July 11th, 2006
+REMOVED_1_11_2 = "removed 1.11.2.5464";					-- World of Warcraft 1.11.2 Launch on July 11th, 2006
+CREATED_1_12_0 = "created 1.12.0.5595";					-- World of Warcraft 1.12.0 Launch on August 22nd, 2006
+ADDED_1_12_0 = "added 1.12.0.5595";						-- World of Warcraft 1.12.0 Launch on August 22nd, 2006
+REMOVED_1_12_0 = "removed 1.12.0.5595";					-- World of Warcraft 1.12.0 Launch on August 22nd, 2006
+CREATED_1_12_1 = "created 1.12.1.5875";					-- World of Warcraft 1.12.1 Launch on September 26th, 2006
+ADDED_1_12_1 = "added 1.12.1.5875";						-- World of Warcraft 1.12.1 Launch on September 26th, 2006
+REMOVED_1_12_1 = "removed 1.12.1.5875";					-- World of Warcraft 1.12.1 Launch on September 26th, 2006
 --- CLASSIC TIMELINES ---
-
+ADDED_1_13_0 = "added 1.13.0";	-- This is Beta..
+----
+CREATED_1_13_2 = "created 1.13.2.31650";					-- World of Warcraft Classic Launch on August 26th, 2019
+ADDED_1_13_2 = "added 1.13.2.31650";						-- World of Warcraft Classic Launch on August 26th, 2019
+REMOVED_1_13_2 = "removed 1.13.2.31650";					-- World of Warcraft Classic Launch on August 26th, 2019
+CREATED_1_13_3 = "created 1.13.3.32790";					-- World of Warcraft Classic 1.13.3 Launch on December 10th, 2019
+ADDED_1_13_3 = "added 1.13.3.32790";						-- World of Warcraft Classic 1.13.3 Launch on December 10th, 2019
+REMOVED_1_13_3 = "removed 1.13.3.32790";					-- World of Warcraft Classic 1.13.3 Launch on December 10th, 2019
+CREATED_1_13_4 = "created 1.13.4.33598";					-- World of Warcraft Classic 1.13.4 Launch on March 10th, 2020
+ADDED_1_13_4 = "added 1.13.4.33598";						-- World of Warcraft Classic 1.13.4 Launch on March 10th, 2020
+REMOVED_1_13_4 = "removed 1.13.4.33598";					-- World of Warcraft Classic 1.13.4 Launch on March 10th, 2020
+CREATED_1_13_5 = "created 1.13.5.35000";					-- World of Warcraft Classic 1.13.5 Launch on July 2nd, 2020
+ADDED_1_13_5 = "added 1.13.5.35000";						-- World of Warcraft Classic 1.13.5 Launch on July 2nd, 2020
+REMOVED_1_13_5 = "removed 1.13.5.35000";					-- World of Warcraft Classic 1.13.5 Launch on July 2nd, 2020
+CREATED_1_13_6 = "created 1.13.6.36714";					-- World of Warcraft Classic 1.13.6 Launch on December 1st, 2020
+ADDED_1_13_6 = "added 1.13.6.36714";						-- World of Warcraft Classic 1.13.6 Launch on December 1st, 2020
+REMOVED_1_13_6 = "removed 1.13.6.36714";					-- World of Warcraft Classic 1.13.6 Launch on December 1st, 2020
+CREATED_1_13_7 = "created 1.13.7.38363";					-- World of Warcraft Classic 1.13.7 Launch on April 20th, 2021
+ADDED_1_13_7 = "added 1.13.7.38363";						-- World of Warcraft Classic 1.13.7 Launch on April 20th, 2021
+REMOVED_1_13_7 = "removed 1.13.7.38363";					-- World of Warcraft Classic 1.13.7 Launch on April 20th, 2021
+--- CLASSIC ERA ---
+CREATED_1_14_0 = "created 1.14.0.40347";					-- World of Warcraft Classic 1.14.0 Launch on September 28th, 2021
+ADDED_1_14_0 = "added 1.14.0.40347";						-- World of Warcraft Classic 1.14.0 Launch on September 28th, 2021
+REMOVED_1_14_0 = "removed 1.14.0.40347";					-- World of Warcraft Classic 1.14.0 Launch on September 28th, 2021
 --- SEASON OF MASTERY ---
-ADDED_1_14_3 = "added 1.14.3";
-
+CREATED_1_14_1 = "created 1.14.1.40962";					-- World of Warcraft Classic 1.14.1 Launch on November 9th, 2021
+ADDED_1_14_1 = "added 1.14.1.40962";						-- World of Warcraft Classic 1.14.1 Launch on November 9th, 2021
+REMOVED_1_14_1 = "removed 1.14.1.40962";					-- World of Warcraft Classic 1.14.1 Launch on November 9th, 2021
+CREATED_1_14_2 = "created 1.14.2.42214";					-- World of Warcraft Classic 1.14.2 Launch on February 10th, 2022
+ADDED_1_14_2 = "added 1.14.2.42214";						-- World of Warcraft Classic 1.14.2 Launch on February 10th, 2022
+REMOVED_1_14_2 = "removed 1.14.2.42214";					-- World of Warcraft Classic 1.14.2 Launch on February 10th, 2022
+CREATED_1_14_3 = "created 1.14.3.43154";					-- World of Warcraft Classic 1.14.3 Launch on April 19th, 2022
+ADDED_1_14_3 = "added 1.14.3.43154";						-- World of Warcraft Classic 1.14.3 Launch on April 19th, 2022
+REMOVED_1_14_3 = "removed 1.14.3.43154";					-- World of Warcraft Classic 1.14.3 Launch on April 19th, 2022
+--- HARDCORE ---
+CREATED_1_14_4 = "created 1.14.3.51001";					-- World of Warcraft Classic 1.14.4 Launch on August 22th, 2023
+ADDED_1_14_4 = "added 1.14.3.51001";						-- World of Warcraft Classic 1.14.4 Launch on August 22th, 2023
+REMOVED_1_14_4 = "removed 1.14.3.51001";					-- World of Warcraft Classic 1.14.4 Launch on August 22th, 2023
 --- SEASON OF DISCOVERY ---
-ADDED_1_15_0 = "added 1.15.0";
-REMOVED_1_15_0 = "removed 1.15.0";
-ADDED_1_15_1 = "added 1.15.1";
-REMOVED_1_15_1 = "removed 1.15.1";
-ADDED_1_15_2 = "added 1.15.2";
+CREATED_1_15_0 = "created 1.15.0.52186";					-- World of Warcraft Classic 1.15.0 Launch on November 14th, 2023
+ADDED_1_15_0 = "added 1.15.0.52186";						-- World of Warcraft Classic 1.15.0 Launch on November 14th, 2023
+REMOVED_1_15_0 = "removed 1.15.0.52186";					-- World of Warcraft Classic 1.15.0 Launch on November 14th, 2023
+CREATED_1_15_1 = "created 1.15.1.53181";					-- World of Warcraft Classic 1.15.1 Launch on February 6th, 2024
+ADDED_1_15_1 = "added 1.15.1.53181";						-- World of Warcraft Classic 1.15.1 Launch on February 6th, 2024
+REMOVED_1_15_1 = "removed 1.15.1.53181";					-- World of Warcraft Classic 1.15.1 Launch on February 6th, 2024
+CREATED_1_15_2 = "created 1.15.2.54029";					-- World of Warcraft Classic 1.15.2 Launch on April 2nd, 2024
+ADDED_1_15_2 = "added 1.15.2.54029";						-- World of Warcraft Classic 1.15.2 Launch on April 2nd, 2024
+REMOVED_1_15_2 = "removed 1.15.2.54029";					-- World of Warcraft Classic 1.15.2 Launch on April 2nd, 2024
+CREATED_1_15_3 = "created 1.15.3";
 ADDED_1_15_3 = "added 1.15.3";
+REMOVED_1_15_3 = "removed 1.15.3";
 
 -------------------------
 -- THE BURNING CRUSADE --
@@ -238,7 +285,9 @@ CREATED_4_3_2 = "created 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 
 ADDED_4_3_2 = "added 4.3.2.15211";						-- Cataclysm 4.3.2 Launch on January 31st, 2012
 REMOVED_4_3_2 = "removed 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 31st, 2012
 --- CLASSIC TIMELINES ---
-
+CREATED_4_4_0 = "created 4.4.0.54481";					-- Cataclysm Classic 4.4.0/Pre-Patch Launch on April 30th, 2024
+ADDED_4_4_0 = "added 4.4.0.54481";						-- Cataclysm Classic 4.4.0/Pre-Patch Launch on April 30th, 2024
+REMOVED_4_4_0 = "removed 4.4.0.54481";					-- Cataclysm Classic 4.4.0/Pre-Patch Launch on April 30th, 2024
 
 -----------------------
 -- MISTS OF PANDARIA --
@@ -259,8 +308,9 @@ REMOVED_5_3_0 = "removed 5.3.0.16981";					-- Mists of Pandaria 5.3.0 Launch on 
 CREATED_5_4_0 = "created 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
 ADDED_5_4_0 = "added 5.4.0.17345";						-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
 REMOVED_5_4_0 = "removed 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
-CREATED_5_4_2 = "created 5.4.2.17658";
-ADDED_5_4_2 = "added 5.4.2.17658";
+CREATED_5_4_2 = "created 5.4.2.17658";					-- Mists of Pandaria 5.4.2 Launch on December 10th, 2013
+ADDED_5_4_2 = "added 5.4.2.17658";						-- Mists of Pandaria 5.4.2 Launch on December 10th, 2013
+REMOVED_5_4_2 = "removed 5.4.2.17658";					-- Mists of Pandaria 5.4.2 Launch on December 10th, 2013
 CREATED_5_4_7 = "created 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
 ADDED_5_4_7 = "added 5.4.7.17898";						-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
 REMOVED_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
@@ -430,11 +480,10 @@ REMOVED_10_2_6 = "removed 10.2.6.53840";				-- Dragonflight 10.2.6 Launch on Mar
 CREATED_10_2_6_SEASON_FOUR = "created 10.2.6.54358";	-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
 ADDED_10_2_6_SEASON_FOUR = "added 10.2.6.54358";		-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
 REMOVED_10_2_6_SEASON_FOUR = "removed 10.2.6.54358";	-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
-CREATED_10_2_7 = "created 10.2.7";						-- Dragonflight 10.2.7 Launch on
-ADDED_10_2_7 = "added 10.2.7";							-- Dragonflight 10.2.7 Launch on
-REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on
-
 REMOVED_PLUNDERSTORM = "removed 10.2.6.54499"			-- Plunderstorm Ended on April 30th, 2024
+CREATED_10_2_7 = "created 10.2.7";						-- Dragonflight 10.2.7 Launch on May 7th, 2024
+ADDED_10_2_7 = "added 10.2.7";							-- Dragonflight 10.2.7 Launch on May 7th, 2024
+REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on May 7th, 2024
 REMOVED_REMIX = "removed 11.0.0";						-- PlaceHolder Until we know
 
 --------------------
