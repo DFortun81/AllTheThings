@@ -1518,7 +1518,6 @@ i(0, 387948);		-- [PH] Wind Proto-Drake
 i(0, 351404);		-- PH Mammoth V2 Lava
 i(0, 385767);		-- PH White Slyvern
 i(0, 385771);		-- PH Yellow Slyvern
-i(192766, 349943);	-- Amber Skitterfly
 i(194722, 377849);	-- Carrier Yeti
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
@@ -1730,6 +1729,7 @@ i(211486, 0);		-- Winding Slitherdrake
 ------------------
 -- PATCH 10.2.6 --
 ------------------
+i(192766, 349943);	-- Amber Skitterfly
 i(198822, 385260);	-- Bestowed Ohuna Spotter
 i(211862, 376898);	-- Bestowed Ottuk Vanguard
 i(192765, 374071);	-- Bestowed Sandskimmer
