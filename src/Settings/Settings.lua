@@ -103,6 +103,23 @@ if app.GameBuildVersion >= 90000 then
 	-- In this version, also include Convenants
 	-- Returns true if something is being hidden/filtered and removing Insane status
 	settings.NonInsane = function(self)
+		-- Non-Account Mode with Covenants filtered
+		if not self:Get("AccountMode") then
+			local currentCharacter = app.CurrentCharacter;
+			if currentCharacter then
+				local customCollects = currentCharacter.CustomCollects;
+				if customCollects then
+					-- TODO: maybe track custom collect filters through a different Get method for easier logic
+					if not (customCollects.SL_COV_KYR or self:Get("CC:SL_COV_KYR"))
+						or not (customCollects.SL_COV_NEC or self:Get("CC:SL_COV_NEC"))
+						or not (customCollects.SL_COV_NFA or self:Get("CC:SL_COV_NFA"))
+						or not (customCollects.SL_COV_VEN or self:Get("CC:SL_COV_VEN"))) then
+						return true;
+					end
+				end
+			end
+		end
+		
 		return
 		-- Hiding BoE's
 		self:Get("Hide:BoEs")
@@ -116,13 +133,6 @@ if app.GameBuildVersion >= 90000 then
 		or self:Get("Show:OnlyActiveEvents")
 		-- Hiding quest rewards that aren't available to your current character
 		or not self:Get("Show:UnavailablePersonalLoot")
-		-- Non-Account Mode with Covenants filtered
-		or (not self:Get("AccountMode")
-			-- TODO: maybe track custom collect filters through a different Get method for easier logic
-			and (not (app.CurrentCharacter.CustomCollects.SL_COV_KYR or self:Get("CC:SL_COV_KYR"))
-				or not (app.CurrentCharacter.CustomCollects.SL_COV_NEC or self:Get("CC:SL_COV_NEC"))
-				or not (app.CurrentCharacter.CustomCollects.SL_COV_NFA or self:Get("CC:SL_COV_NFA"))
-				or not (app.CurrentCharacter.CustomCollects.SL_COV_VEN or self:Get("CC:SL_COV_VEN"))))
 	end
 else
 	-- Returns true if something is being hidden/filtered and removing Insane status
