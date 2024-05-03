@@ -485,10 +485,10 @@ settings.GetModeString = function(self)
 			mode = L.TITLE_UNIQUE_APPEARANCE .. mode
 		end
 	end
-	if self:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		mode = L.TITLE_DEBUG .. mode
 	else
-		if self:Get("AccountMode") then
+		if app.MODE_ACCOUNT then
 			if self:Get("FactionMode") then
 				local englishFaction = UnitFactionGroup("player")
 				if englishFaction == "Alliance" then
@@ -566,7 +566,7 @@ settings.GetModeString = function(self)
 	return mode
 end
 settings.GetShortModeString = function(self)
-	if self:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		return "D"
 	else
 		local things = {}
@@ -620,13 +620,13 @@ settings.GetShortModeString = function(self)
 			style = "R:" .. " " .. style
 		end
 		if self:Get("Completionist") then
-			if self:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				return style .. "AC"
 			else
 				return style .. "C"
 			end
 		else
-			if self:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				return style .. "AU"
 			elseif self:Get("MainOnly") then
 				return style .. "UM"
@@ -1183,7 +1183,7 @@ settings.SetFactionMode = function(self, factionMode)
 	self:UpdateMode(1);
 end
 settings.ToggleFactionMode = function(self)
-	self:ForceRefreshFromToggle();
+	self:ForceRefreshFromToggle()
 	self:SetFactionMode(not self:Get("FactionMode"));
 end
 settings.SetMainOnlyMode = function(self, mainOnly)
@@ -1202,7 +1202,7 @@ settings.SetCompletedThings = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleCompletedThings = function(self)
-	self:ForceRefreshFromToggle();
+	self:ForceRefreshFromToggle()
 	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 end
 settings.SetCompletedGroups = function(self, checked, skipRefresh)
@@ -1210,7 +1210,7 @@ settings.SetCompletedGroups = function(self, checked, skipRefresh)
 	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCompletedGroups = function(self)
-	self:ForceRefreshFromToggle();
+	self:ForceRefreshFromToggle()
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
 	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
 end
@@ -1219,7 +1219,7 @@ settings.SetCollectedThings = function(self, checked, skipRefresh)
 	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCollectedThings = function(self)
-	self:ForceRefreshFromToggle();
+	self:ForceRefreshFromToggle()
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
 	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
 end
@@ -1228,7 +1228,7 @@ settings.SetHideBOEItems = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleBOEItems = function(self)
-	self:ForceRefreshFromToggle();
+	self:ForceRefreshFromToggle()
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 end
 settings.SetLootMode = function(self, checked)
@@ -1236,6 +1236,7 @@ settings.SetLootMode = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleLootMode = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetLootMode(not self:Get("LootMode"));
 end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,

@@ -348,6 +348,7 @@ settings.GetModeString = function(self)
 			mode = "PvE " .. mode;
 		end
 
+		local solo = true
 		local keyPrefix, thingName, thingActive
 		local insaneTotalCount, insaneCount = 0, 0;
 		local totalThingCount, thingCount, things = 0, 0, {};
@@ -371,6 +372,9 @@ settings.GetModeString = function(self)
 				elseif self.RequiredForInsaneMode[thingName] then
 					insaneTotalCount = insaneTotalCount + 1;
 				end
+			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
+				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
+				solo = false
 			end
 		end
 		if thingCount == 0 then
@@ -380,15 +384,25 @@ settings.GetModeString = function(self)
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. " Only " .. mode;
 		elseif insaneCount == insaneTotalCount then
-			mode = "Insane " .. mode;
+			-- only insane if not hiding anything!
+			if settings:NonInsane() then
+				-- don't add insane :)
+			else
+				mode = "Insane " .. mode
+			end
 		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode["Transmog"] then
 			mode = "Some of the Things " .. mode
-		else
-			mode = "Normal " .. mode;
+		end
+		if solo then
+			mode = "Solo " .. mode
 		end
 	end
 	if self:Get("Filter:ByLevel") then
 		mode = "Level " .. app.Level .. " " .. mode;
+	end
+	-- Waiting on Refresh to properly show values
+	if self.NeedsRefresh then
+		mode = "After Refresh: " .. mode
 	end
 	return mode;
 end
@@ -878,6 +892,7 @@ settings.SetAccountMode = function(self, accountMode)
 	self:UpdateMode(1);
 end
 settings.ToggleAccountMode = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetAccountMode(not self:Get("AccountMode"));
 end
 settings.SetCompletionistMode = function(self, completionistMode)
@@ -896,9 +911,23 @@ settings.ToggleCompletionistMode = function(self)
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
+	if debugMode then
+		-- cache the current settings to re-apply after
+		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"))
+		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"))
+		settings:SetCompletedGroups(true, true)
+		settings:SetCollectedThings(true, true)
+		if not self:Get("Thing:Transmog") then
+			app.DoRefreshAppearanceSources = true
+		end
+	else
+		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true)
+		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true)
+	end
 	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetDebugMode(not self:Get("DebugMode"));
 end
 settings.SetFactionMode = function(self, factionMode)
@@ -906,14 +935,18 @@ settings.SetFactionMode = function(self, factionMode)
 	self:UpdateMode(1);
 end
 settings.ToggleFactionMode = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetFactionMode(not self:Get("FactionMode"));
 end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
 	self:Set("Show:CollectedThings", checked);
+	settings:Set("Cache:CompletedGroups", checked);
+	settings:Set("Cache:CollectedThings", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleCompletedThings = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 end
 settings.SetCompletedGroups = function(self, checked)
@@ -921,20 +954,25 @@ settings.SetCompletedGroups = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleCompletedGroups = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
+	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
 end
 settings.SetCollectedThings = function(self, checked)
 	self:Set("Show:CollectedThings", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleCollectedThings = function(self)
+	self:ForceRefreshFromToggle()
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
+	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleBOEItems = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 end
 settings.SetLootMode = function(self, checked)
@@ -942,6 +980,7 @@ settings.SetLootMode = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleLootMode = function(self)
+	self:ForceRefreshFromToggle()
 	self:SetLootMode(not self:Get("LootMode"));
 end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
@@ -968,6 +1007,7 @@ settings.SetThingTracking = function(self, force)
 		end
 	end
 end
+-- Updates various application settings and values based on toggled Settings, as well as the Mode name and Refreshes the Settings
 settings.UpdateMode = function(self, doRefresh)
 	local filterSet = app.Modules.Filter.Set;
 	if self:Get("Completionist") then
@@ -982,7 +1022,6 @@ settings.UpdateMode = function(self, doRefresh)
 	if self:Get("DebugMode") then
 		app.MODE_ACCOUNT = nil;
 		app.MODE_DEBUG = true;
-		
 		filterSet.Group()
 		filterSet.Unobtainable()
 		filterSet.Visible(true)
@@ -998,16 +1037,7 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.DefaultThing(not self:Get("Show:CollectedThings"))
 		filterSet.Trackable()
 
-		--settings:SetThingTracking("Debug")
-		local accountWideSettings = self.AccountWide;
-		for key,value in pairs(accountWideSettings) do
-			accountWideSettings[key] = true;
-		end
-
-		local collectibleSettings = self.Collectibles;
-		for key,value in pairs(collectibleSettings) do
-			collectibleSettings[key] = true;
-		end
+		settings:SetThingTracking("Debug");
 
 		-- Modules
 		app.Modules.PVPRanks.SetCollectible(true);
@@ -1098,12 +1128,12 @@ settings.UpdateMode = function(self, doRefresh)
 		filters[filterID] = state;
 	end
 	
-	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
+	if self:Get("Show:CompletedGroups") then
 		filterSet.CompletedGroups()
 	else
 		filterSet.CompletedGroups(true)
 	end
-	if self:Get("Show:CollectedThings") or self:Get("DebugMode") then
+	if self:Get("Show:CollectedThings") then
 		filterSet.CompletedThings()
 	else
 		filterSet.CompletedThings(true)
