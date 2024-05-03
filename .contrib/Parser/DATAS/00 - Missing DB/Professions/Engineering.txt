@@ -319,7 +319,7 @@ r(447363),	-- Energy Redistribution Beacon
 r(447364),	-- Irresistible Red Button
 r(447365),	-- Pausing Pylon
 r(447366),	-- Convincingly Realistic Jumper Cables
-r(447367),	-- Repair Bot
+r(447367),	-- Algari Repair Bot 11O \\ Repair Bot
 r(447368),	-- Portable Profession Possibility Projector
 r(447369),	-- Barrel of Fireworks
 r(447370),	-- Defective Escape Pod
@@ -658,7 +658,7 @@ r(447363),	-- Energy Redistribution Beacon
 r(447364),	-- Irresistible Red Button
 r(447365),	-- Pausing Pylon
 r(447366),	-- Convincingly Realistic Jumper Cables
-r(447367),	-- Repair Bot
+r(447367),	-- Algari Repair Bot 11O \\ Repair Bot
 r(447368),	-- Portable Profession Possibility Projector
 r(447369),	-- Barrel of Fireworks
 r(447370),	-- Defective Escape Pod

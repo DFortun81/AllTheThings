@@ -12,7 +12,7 @@ r(445324),	-- Enchanted Spearwood Wand
 r(445325),	-- Chant of Armored Leech \\ Chant of Leech
 r(445326),	-- Gleeful Glamour - Troll
 r(445327),	-- Illusory Adornment: Crystal
-r(445328),	-- Algarian Finesse
+r(445328),	-- Algari Finesse \\ Algarian Finesse
 r(445329),	-- Gleeful Glamour - Vulpera
 r(445330),	-- Chant of Armored Speed \\ Chant of Speed
 r(445331),	-- Authority of Air
@@ -22,7 +22,7 @@ r(445334),	-- Chant of Armored Avoidance \\ Chant of Avoidance
 r(445335),	-- Cavalry's March
 r(445336),	-- Authority of Storms
 r(445337),	-- Illusory Adornment: Shadow
-r(445338),	-- Algarian Mana Oil
+r(445338),	-- Algari Mana Oil \\ Algarian Mana Oil
 r(445339),	-- Authority of Radiant Power
 r(445340),	-- Glimmering Versatility
 r(445341),	-- Authority of the Depths
@@ -48,7 +48,7 @@ r(445360),	-- Illusory Adornment: Runes
 r(445361),	-- Runed Bismuth Rod
 r(445362),	-- Gleeful Glamour - Gnome
 r(445363),	-- Gleeful Glamour - Night Elf
-r(445364),	-- Algarian Deftness
+r(445364),	-- Algari Deftness \\ Algarian Deftness
 r(445365),	-- Gleeful Glamour - Pandaren
 r(445366),	-- Gleeful Glamour - Tauren
 r(445367),	-- Gleeful Glamour - Blood Elf
@@ -61,9 +61,9 @@ r(445374),	-- Whisper of Armored Leech \\ Whisper of Leech
 r(445375),	-- Radiant Mastery
 r(445376),	-- Whisper of Armored Speed \\ Whisper of Speed
 r(445377),	-- Gleeful Glamour - Highmountain Tauren
-r(445378),	-- Algarian Ingenuity
+r(445378),	-- Algari Ingenuity \\ Algarian Ingenuity
 r(445379),	-- Council's Guile
-r(445380),	-- Algarian Perception
+r(445380),	-- Algari Perception \\ Algarian Perception
 r(445381),	-- Glimmering Mastery
 r(445382),	-- Gleeful Glamour - Earthen
 r(445383),	-- Cursed Versatility
@@ -81,7 +81,7 @@ r(445394),	-- Cursed Critical Strike
 r(445395),	-- Concentration Concentrate
 r(445396),	-- Defender's March
 r(445397),	-- Gleeful Glamour - Worgen
-r(445398),	-- Algarian Resourcefulness
+r(445398),	-- Algari Resourcefulness \\ Algarian Resourcefulness
 r(445399),	-- Enchanted Weathered Harbinger Crest
 r(445400),	-- Gleeful Glamour - Dark Iron Dwarf
 r(445401),	-- Illusory Adornment: Radiance
@@ -108,7 +108,7 @@ r(445324),	-- Enchanted Spearwood Wand
 r(445325),	-- Chant of Armored Leech \\ Chant of Leech
 r(445326),	-- Gleeful Glamour - Troll
 r(445327),	-- Illusory Adornment: Crystal
-r(445328),	-- Algarian Finesse
+r(445328),	-- Algari Finesse \\ Algarian Finesse
 r(445329),	-- Gleeful Glamour - Vulpera
 r(445330),	-- Chant of Armored Speed \\ Chant of Speed
 r(445331),	-- Authority of Air
@@ -118,7 +118,7 @@ r(445334),	-- Chant of Armored Avoidance \\ Chant of Avoidance
 r(445335),	-- Cavalry's March
 r(445336),	-- Authority of Storms
 r(445337),	-- Illusory Adornment: Shadow
-r(445338),	-- Algarian Mana Oil
+r(445338),	-- Algari Mana Oil \\ Algarian Mana Oil
 r(445339),	-- Authority of Radiant Power
 r(445340),	-- Glimmering Versatility
 r(445341),	-- Authority of the Depths
@@ -144,7 +144,7 @@ r(445360),	-- Illusory Adornment: Runes
 r(445361),	-- Runed Bismuth Rod
 r(445362),	-- Gleeful Glamour - Gnome
 r(445363),	-- Gleeful Glamour - Night Elf
-r(445364),	-- Algarian Deftness
+r(445364),	-- Algari Deftness \\ Algarian Deftness
 r(445365),	-- Gleeful Glamour - Pandaren
 r(445366),	-- Gleeful Glamour - Tauren
 r(445367),	-- Gleeful Glamour - Blood Elf
@@ -157,9 +157,9 @@ r(445374),	-- Whisper of Armored Leech \\ Whisper of Leech
 r(445375),	-- Radiant Mastery
 r(445376),	-- Whisper of Armored Speed \\ Whisper of Speed
 r(445377),	-- Gleeful Glamour - Highmountain Tauren
-r(445378),	-- Algarian Ingenuity
+r(445378),	-- Algari Ingenuity \\ Algarian Ingenuity
 r(445379),	-- Council's Guile
-r(445380),	-- Algarian Perception
+r(445380),	-- Algari Perception \\ Algarian Perception
 r(445381),	-- Glimmering Mastery
 r(445382),	-- Gleeful Glamour - Earthen
 r(445383),	-- Cursed Versatility
@@ -177,7 +177,7 @@ r(445394),	-- Cursed Critical Strike
 r(445395),	-- Concentration Concentrate
 r(445396),	-- Defender's March
 r(445397),	-- Gleeful Glamour - Worgen
-r(445398),	-- Algarian Resourcefulness
+r(445398),	-- Algari Resourcefulness \\ Algarian Resourcefulness
 r(445399),	-- Enchanted Weathered Harbinger Crest
 r(445400),	-- Gleeful Glamour - Dark Iron Dwarf
 r(445401),	-- Illusory Adornment: Radiance

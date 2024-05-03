@@ -1,7 +1,7 @@
 11.0.0.54311
 faction(2569),	-- (11.0 Header) The War Within
 faction(2570),	-- Hallowfall Arathi
-faction(2579),	-- Delves: Season 1
+faction(2579),	-- zzOldDelves: Season 1 \\ Delves: Season 1
 faction(2580),	-- Test Faction Alpha
 faction(2590),	-- Council of Dornogal
 faction(2594),	-- The Assembly of the Deeps
@@ -23,7 +23,7 @@ faction(2635),	-- The Skeins
 faction(2637),	-- PLAYER, Earthen Alliance
 faction(2638),	-- PLAYER, Earthen Horde
 faction(2640),	-- Brann Bronzebeard
-faction(2644),	-- [DNT] Delves: Season 1 Renown Track
+faction(2644),	-- Delves: Season 1 \\ [DNT] Delves: Season 1 Renown Track
 faction(2645),	-- Earthen
 faction(2647),	-- The Vizier (Notoriety), Paragon
 faction(2648),	-- The Weaver (Notoriety), Paragon

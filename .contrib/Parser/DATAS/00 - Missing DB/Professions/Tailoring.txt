@@ -603,8 +603,8 @@ r(438895),	-- Vicious Competitor's Cloth Tunic
 r(438896),	-- Vicious Competitor's Cloth Sash
 r(438897),	-- Vicious Competitor's Cloth Cloak
 r(446926),	-- Unraveling
-r(446927),	-- Duskthread Bolt
-r(446928),	-- Dawnthread Bolt
+r(446927),	-- Duskcloth Bolt \\ Duskthread Bolt
+r(446928),	-- Dawnweave Bolt \\ Dawnthread Bolt
 r(446929),	-- Weavercloth Bolt
 r(446930),	-- Grips of the Woven Dawn
 r(446931),	-- Treads of the Woven Dawn
@@ -631,15 +631,15 @@ r(446951),	-- Vicious Combatant's Weavercloth Robe
 r(446952),	-- Vicious Combatant's Weavercloth Pants
 r(446953),	-- Vicious Combatant's Weavercloth Mantle
 r(446954),	-- Vicious Combatant's Weavercloth Gloves
-r(446955),	-- Weavercloth Slippers
-r(446956),	-- Weavercloth Cuffs
-r(446957),	-- Weavercloth Cord
-r(446958),	-- Weavercloth Cloak
-r(446959),	-- Weavercloth Hood
-r(446960),	-- Weavercloth Robe
-r(446961),	-- Weavercloth Leggings
-r(446962),	-- Weavercloth Mantle
-r(446963),	-- Weavercloth Gloves
+r(446955),	-- Pioneer's Cloth Slippers \\ Weavercloth Slippers
+r(446956),	-- Pioneer's Cloth Cuffs \\ Weavercloth Cuffs
+r(446957),	-- Pioneer's Cloth Cord \\ Weavercloth Cord
+r(446958),	-- Pioneer's Cloth Cloak \\ Weavercloth Cloak
+r(446959),	-- Pioneer's Cloth Hood \\ Weavercloth Hood
+r(446960),	-- Pioneer's Cloth Robe \\ Weavercloth Robe
+r(446961),	-- Pioneer's Perfected Leggings \\ Weavercloth Leggings
+r(446962),	-- Pioneer's Perfected Mantle \\ Weavercloth Mantle
+r(446963),	-- Pioneer's Perfected Gloves \\ Weavercloth Gloves
 r(446964),	-- Weavercloth Gardening Hat
 r(446965),	-- Weavercloth Fishing Cap
 r(446966),	-- Weavercloth Enchanter's Hat
@@ -679,6 +679,9 @@ r(446999),	-- Weavercloth Spellthread
 r(447000),	-- Sunset Spellthread
 r(447001),	-- Daybreak Spellthread
 r(447002),	-- Weavercloth Bandage
+11.0.0.54521
+r(454397),	-- Exquisite Weavercloth Bolt
+r(454431),	-- Exquisite Algari Satchel
 
 
 
@@ -1165,8 +1168,8 @@ r(438895),	-- Vicious Competitor's Cloth Tunic
 r(438896),	-- Vicious Competitor's Cloth Sash
 r(438897),	-- Vicious Competitor's Cloth Cloak
 r(446926),	-- Unraveling
-r(446927),	-- Duskthread Bolt
-r(446928),	-- Dawnthread Bolt
+r(446927),	-- Duskcloth Bolt \\ Duskthread Bolt
+r(446928),	-- Dawnweave Bolt \\ Dawnthread Bolt
 r(446929),	-- Weavercloth Bolt
 r(446930),	-- Grips of the Woven Dawn
 r(446931),	-- Treads of the Woven Dawn
@@ -1193,15 +1196,15 @@ r(446951),	-- Vicious Combatant's Weavercloth Robe
 r(446952),	-- Vicious Combatant's Weavercloth Pants
 r(446953),	-- Vicious Combatant's Weavercloth Mantle
 r(446954),	-- Vicious Combatant's Weavercloth Gloves
-r(446955),	-- Weavercloth Slippers
-r(446956),	-- Weavercloth Cuffs
-r(446957),	-- Weavercloth Cord
-r(446958),	-- Weavercloth Cloak
-r(446959),	-- Weavercloth Hood
-r(446960),	-- Weavercloth Robe
-r(446961),	-- Weavercloth Leggings
-r(446962),	-- Weavercloth Mantle
-r(446963),	-- Weavercloth Gloves
+r(446955),	-- Pioneer's Cloth Slippers \\ Weavercloth Slippers
+r(446956),	-- Pioneer's Cloth Cuffs \\ Weavercloth Cuffs
+r(446957),	-- Pioneer's Cloth Cord \\ Weavercloth Cord
+r(446958),	-- Pioneer's Cloth Cloak \\ Weavercloth Cloak
+r(446959),	-- Pioneer's Cloth Hood \\ Weavercloth Hood
+r(446960),	-- Pioneer's Cloth Robe \\ Weavercloth Robe
+r(446961),	-- Pioneer's Perfected Leggings \\ Weavercloth Leggings
+r(446962),	-- Pioneer's Perfected Mantle \\ Weavercloth Mantle
+r(446963),	-- Pioneer's Perfected Gloves \\ Weavercloth Gloves
 r(446964),	-- Weavercloth Gardening Hat
 r(446965),	-- Weavercloth Fishing Cap
 r(446966),	-- Weavercloth Enchanter's Hat
@@ -1241,3 +1244,6 @@ r(446999),	-- Weavercloth Spellthread
 r(447000),	-- Sunset Spellthread
 r(447001),	-- Daybreak Spellthread
 r(447002),	-- Weavercloth Bandage
+11.0.0.54521
+r(454397),	-- Exquisite Weavercloth Bolt
+r(454431),	-- Exquisite Algari Satchel

@@ -11,3 +11,6 @@ title(550),	-- High Explorer %s
 title(554),	-- Forged Warlord %s
 title(555),	-- Forged Marshall %s
 title(556),	-- Queenslayer %s \\ %s the [PH] TBD Title
+11.0.0.54521
+title(558),	-- Forged Gladiator %s
+title(559),	-- Forged Legend %s

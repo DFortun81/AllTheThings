@@ -2,12 +2,12 @@
 r(423321),	-- Khaz Algar Alchemy
 r(425137),	-- Recraft Equipment
 r(427174),	-- Wild Experimentation
-r(427185),	-- Algarian Alchemist Stone
+r(427185),	-- Algari Alchemist Stone \\ Algarian Alchemist Stone
 r(427214),	-- Neutralize Concoctions
 r(430315),	-- Thaumaturgy
 r(430345),	-- Meticulous Experimentation
-r(430590),	-- Algarian Healing Potion
-r(430591),	-- Algarian Mana Potion
+r(430590),	-- Algari Healing Potion \\ Algarian Healing Potion
+r(430591),	-- Algari Mana Potion \\ Algarian Mana Potion
 r(430592),	-- Cavedweller's Delight
 r(430593),	-- Slumbering Soul Serum
 r(430594),	-- Draught of Silent Footfalls
@@ -41,8 +41,8 @@ r(430622),	-- Ominous Call
 r(430623),	-- Ominous Gloom
 r(430624),	-- Gleaming Glory
 r(432204),	-- Harmonious Horticulture
-r(432962),	-- Algarian Flask Cauldron
-r(432963),	-- Algarian Potion Cauldron
+r(432962),	-- Algari Flask Cauldron \\ Algarian Flask Cauldron
+r(432963),	-- Algari Potion Cauldron \\ Algarian Potion Cauldron
 r(433087),	-- Formulated Courage
 r(433271),	--
 r(433604),	--
@@ -66,12 +66,12 @@ Missing in Alchemy.lua
 r(423321),	-- Khaz Algar Alchemy
 r(425137),	-- Recraft Equipment
 r(427174),	-- Wild Experimentation
-r(427185),	-- Algarian Alchemist Stone
+r(427185),	-- Algari Alchemist Stone \\ Algarian Alchemist Stone
 r(427214),	-- Neutralize Concoctions
 r(430315),	-- Thaumaturgy
 r(430345),	-- Meticulous Experimentation
-r(430590),	-- Algarian Healing Potion
-r(430591),	-- Algarian Mana Potion
+r(430590),	-- Algari Healing Potion \\ Algarian Healing Potion
+r(430591),	-- Algari Mana Potion \\ Algarian Mana Potion
 r(430592),	-- Cavedweller's Delight
 r(430593),	-- Slumbering Soul Serum
 r(430594),	-- Draught of Silent Footfalls
@@ -105,8 +105,8 @@ r(430622),	-- Ominous Call
 r(430623),	-- Ominous Gloom
 r(430624),	-- Gleaming Glory
 r(432204),	-- Harmonious Horticulture
-r(432962),	-- Algarian Flask Cauldron
-r(432963),	-- Algarian Potion Cauldron
+r(432962),	-- Algari Flask Cauldron \\ Algarian Flask Cauldron
+r(432963),	-- Algari Potion Cauldron \\ Algarian Potion Cauldron
 r(433087),	-- Formulated Courage
 r(433271),	--
 r(433604),	--

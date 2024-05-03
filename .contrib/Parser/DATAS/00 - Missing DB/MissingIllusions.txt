@@ -1,0 +1,10 @@
+11.0.0.54521
+ill(7521),	-- Holy Fire
+
+
+
+
+Missing in IllusionDB.lua
+
+11.0.0.54521
+ill(7521),	-- Holy Fire

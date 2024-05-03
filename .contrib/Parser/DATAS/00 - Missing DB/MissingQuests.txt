@@ -453,12 +453,8 @@ q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:
 q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials	 CATA:Searching for New Materials
 q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter	 CATA:Fortifying the Felhunter
 q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar	 CATA:Travel to Astranaar
-q(9484),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	 CATA:Taming the Beast
-q(9485),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	 CATA:Taming the Beast
-q(9486),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	 CATA:Taming the Beast
 q(9497),	-- Emblem of the Fel Horde	 TBC:Emblem of the Fel Horde	 WOTLK:Emblem of the Fel Horde	 CATA:Emblem of the Fel Horde
 q(9546),	-- Fulfilling a Promise
-q(9617),	-- Seek the Farstriders	 TBC:Seek the Farstriders	 WOTLK:Seek the Farstriders	 CATA:Seek the Farstriders
 q(9712),	-- The Thalassian Warhorse	 TBC:The Thalassian Warhorse	 WOTLK:The Thalassian Warhorse	 CATA:The Thalassian Warhorse
 q(9713),	-- Glowcap Harvesting Enabling Flag
 q(9767),	-- Know Your Enemy	 TBC:Know Your Enemy	 WOTLK:Know Your Enemy	 CATA:Know Your Enemy
@@ -1840,7 +1836,6 @@ q(82319),	--
 q(82353),	--
 q(82415),	--
 10.2.7.54295
-q(82741),	--
 q(82762),	-- PTR:Keeping a Close Tabard
 q(82833),	--
 q(82834),	--
@@ -4753,3 +4748,54 @@ q(83067),	--
 q(83068),	--
 q(83069),	--
 q(83070),	--
+11.0.0.54521
+q(83081),	--
+q(83082),	--
+q(83083),	--
+q(83084),	--
+q(83085),	--
+q(83086),	--
+q(83087),	--
+q(83092),	--
+q(83093),	--
+q(83094),	--
+q(83095),	--
+q(83097),	--
+q(83098),	--
+q(83099),	--
+q(83100),	--
+q(83101),	--
+q(83102),	--
+q(83103),	--
+q(83104),	--
+q(83105),	--
+q(83106),	--
+q(83107),	--
+q(83108),	--
+q(83111),	--
+q(83112),	--
+q(83131),	--
+q(83132),	--
+q(83133),	--
+q(83134),	--
+q(83135),	--
+q(83136),	--
+q(83152),	--
+q(83153),	--
+q(83154),	--
+q(83155),	--
+q(83156),	--
+q(83157),	--
+q(83158),	--
+q(83159),	--
+q(83160),	--
+q(83162),	--
+q(83164),	--
+q(83165),	--
+q(83166),	--
+q(83177),	--
+q(83178),	--
+q(83180),	--
+q(83181),	--
+q(83182),	--
+q(83193),	--

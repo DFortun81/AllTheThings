@@ -1,7 +1,5 @@
 4.4.0.54377
 mount(440915),	-- Auspicious Arborwyrm
-10.2.7.54366
-mount(453255),	-- Savage Ebony Battle Turtle
 11.0.0.54311
 mount(405623),	-- Armadillo Roller
 mount(441313),	-- Soar
@@ -41,9 +39,9 @@ mount(448682),	-- [PH] SpiderUnderground (Green)
 mount(448685),	-- [PH] SpiderUnderground (Blue)
 mount(448689),	-- [PH] SpiderUnderground (Yellow)
 mount(448934),	-- [PH] Shadow Elemental (Black)
-mount(448939),	-- [PH] Shadow Elemental (Gold)
+mount(448939),	-- Shackled Shadow \\ [PH] Shadow Elemental (Gold)
 mount(448941),	-- [PH] Shadow Elemental (Purple)
-mount(448978),	-- [PH] ArathiLynxMount (Red Fur, Red Armor)
+mount(448978),	-- Vermillion Imperial Lynx \\ [PH] ArathiLynxMount (Red Fur, Red Armor)
 mount(448979),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 mount(448980),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 mount(448981),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
@@ -73,6 +71,8 @@ mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
 mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
 mount(452779),	-- [PH] NerubianBeetleLargeMount (Tan)
 mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)
+11.0.0.54521
+mount(453785),	-- Earthen Judicator's Ramolith
 
 
 
@@ -81,8 +81,6 @@ Missing in MountDB.lua
 
 4.4.0.54377
 mount(440915),	-- Auspicious Arborwyrm
-10.2.7.54366
-mount(453255),	-- Savage Ebony Battle Turtle
 11.0.0.54311
 mount(405623),	-- Armadillo Roller
 mount(441313),	-- Soar
@@ -122,9 +120,9 @@ mount(448682),	-- [PH] SpiderUnderground (Green)
 mount(448685),	-- [PH] SpiderUnderground (Blue)
 mount(448689),	-- [PH] SpiderUnderground (Yellow)
 mount(448934),	-- [PH] Shadow Elemental (Black)
-mount(448939),	-- [PH] Shadow Elemental (Gold)
+mount(448939),	-- Shackled Shadow \\ [PH] Shadow Elemental (Gold)
 mount(448941),	-- [PH] Shadow Elemental (Purple)
-mount(448978),	-- [PH] ArathiLynxMount (Red Fur, Red Armor)
+mount(448978),	-- Vermillion Imperial Lynx \\ [PH] ArathiLynxMount (Red Fur, Red Armor)
 mount(448979),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 mount(448980),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 mount(448981),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
@@ -154,3 +152,5 @@ mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
 mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
 mount(452779),	-- [PH] NerubianBeetleLargeMount (Tan)
 mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)
+11.0.0.54521
+mount(453785),	-- Earthen Judicator's Ramolith

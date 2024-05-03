@@ -654,14 +654,14 @@ r(423338),	-- Khaz Algar Inscription
 r(425140),	-- Recraft Equipment
 r(441318),	-- Miner's Rune of Decyphering
 r(444181),	-- Khaz Algar Milling
-r(444182),	-- Algarian Treatise on Herbalism
-r(444183),	-- Algarian Treatise on Mining
-r(444184),	-- Algarian Treatise on Blacksmithing
-r(444185),	-- Algarian Treatise on Leatherworking
-r(444186),	-- Algarian Treatise on Tailoring
-r(444187),	-- Algarian Treatise on Alchemy
-r(444188),	-- Algarian Treatise on Enchanting
-r(444189),	-- Algarian Treatise on Jewelcrafting
+r(444182),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
+r(444183),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
+r(444184),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
+r(444185),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
+r(444186),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
+r(444187),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
+r(444188),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
+r(444189),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
 r(444190),	-- Codified Greenwood
 r(444191),	-- Boundless Cipher
 r(444192),	-- Darkmoon Sigil: Evolution
@@ -682,38 +682,40 @@ r(444206),	-- Hasty Alchemist's Mixing Rod
 r(444207),	-- Patient Alchemist's Mixing Rod
 r(444208),	-- Burnt Rolling Pin
 r(444209),	-- Inscribed Rolling Pin
-r(444210),	-- Algarian Missive of the Aurora
-r(444211),	-- Algarian Missive of the Feverflare
-r(444212),	-- Algarian Missive of the Fireflash
-r(444213),	-- Algarian Missive of the Harmonious
-r(444214),	-- Algarian Missive of the Peerless
-r(444215),	-- Algarian Missive of the Quickblade
+r(444210),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+r(444211),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+r(444212),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+r(444213),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+r(444214),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+r(444215),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
 r(444217),	-- Contract: Earthen
 r(444218),	-- Contract: Arathor
 r(444219),	-- Contract: Nerubian
 r(444220),	-- Contract: Artisan
-r(444221),	-- Sable Ink
+r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
-r(444223),	-- Algarian Treatise on Engineering
+r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
 r(444224),	-- Extraction: Evolve
 r(444225),	-- Extraction: Vivacity
 r(444226),	-- Extraction: Symbiosis
 r(444227),	-- Extraction: Shine
 r(444228),	-- Recraft Equipment
-r(444229),	-- Algarian Missive of Ingenuity
-r(444230),	-- Algarian Missive of Resourcefulness
-r(444231),	-- Algarian Missive of Multicraft
-r(444232),	-- Algarian Missive of Crafting Speed
-r(444233),	-- Algarian Missive of Finesse
-r(444234),	-- Algarian Missive of Perception
-r(444235),	-- Algarian Missive of Deftness
-r(444236),	-- Algarian Treatise on Skinning
+r(444229),	-- Algari Missive of Ingenuity \\ Algarian Missive of Ingenuity
+r(444230),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+r(444231),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+r(444232),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+r(444233),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+r(444234),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+r(444235),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+r(444236),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
 r(444336),	-- Vicious Competitor's Medallion
 r(444337),	-- Vicious Competitor's Insignia of Alacrity
 r(444338),	-- Vicious Competitor's Emblem
 r(445068),	-- Inquisitor's Greenwood Bow
 r(445069),	-- Vagabond's Alacrity
 r(445070),	-- Colors of the Wind
+11.0.0.54521
+r(447868),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription
 
 
 
@@ -731,14 +733,14 @@ r(423338),	-- Khaz Algar Inscription
 r(425140),	-- Recraft Equipment
 r(441318),	-- Miner's Rune of Decyphering
 r(444181),	-- Khaz Algar Milling
-r(444182),	-- Algarian Treatise on Herbalism
-r(444183),	-- Algarian Treatise on Mining
-r(444184),	-- Algarian Treatise on Blacksmithing
-r(444185),	-- Algarian Treatise on Leatherworking
-r(444186),	-- Algarian Treatise on Tailoring
-r(444187),	-- Algarian Treatise on Alchemy
-r(444188),	-- Algarian Treatise on Enchanting
-r(444189),	-- Algarian Treatise on Jewelcrafting
+r(444182),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
+r(444183),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
+r(444184),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
+r(444185),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
+r(444186),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
+r(444187),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
+r(444188),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
+r(444189),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
 r(444190),	-- Codified Greenwood
 r(444191),	-- Boundless Cipher
 r(444192),	-- Darkmoon Sigil: Evolution
@@ -759,35 +761,37 @@ r(444206),	-- Hasty Alchemist's Mixing Rod
 r(444207),	-- Patient Alchemist's Mixing Rod
 r(444208),	-- Burnt Rolling Pin
 r(444209),	-- Inscribed Rolling Pin
-r(444210),	-- Algarian Missive of the Aurora
-r(444211),	-- Algarian Missive of the Feverflare
-r(444212),	-- Algarian Missive of the Fireflash
-r(444213),	-- Algarian Missive of the Harmonious
-r(444214),	-- Algarian Missive of the Peerless
-r(444215),	-- Algarian Missive of the Quickblade
+r(444210),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+r(444211),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+r(444212),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+r(444213),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+r(444214),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+r(444215),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
 r(444217),	-- Contract: Earthen
 r(444218),	-- Contract: Arathor
 r(444219),	-- Contract: Nerubian
 r(444220),	-- Contract: Artisan
-r(444221),	-- Sable Ink
+r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
-r(444223),	-- Algarian Treatise on Engineering
+r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
 r(444224),	-- Extraction: Evolve
 r(444225),	-- Extraction: Vivacity
 r(444226),	-- Extraction: Symbiosis
 r(444227),	-- Extraction: Shine
 r(444228),	-- Recraft Equipment
-r(444229),	-- Algarian Missive of Ingenuity
-r(444230),	-- Algarian Missive of Resourcefulness
-r(444231),	-- Algarian Missive of Multicraft
-r(444232),	-- Algarian Missive of Crafting Speed
-r(444233),	-- Algarian Missive of Finesse
-r(444234),	-- Algarian Missive of Perception
-r(444235),	-- Algarian Missive of Deftness
-r(444236),	-- Algarian Treatise on Skinning
+r(444229),	-- Algari Missive of Ingenuity \\ Algarian Missive of Ingenuity
+r(444230),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+r(444231),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+r(444232),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+r(444233),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+r(444234),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+r(444235),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+r(444236),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
 r(444336),	-- Vicious Competitor's Medallion
 r(444337),	-- Vicious Competitor's Insignia of Alacrity
 r(444338),	-- Vicious Competitor's Emblem
 r(445068),	-- Inquisitor's Greenwood Bow
 r(445069),	-- Vagabond's Alacrity
 r(445070),	-- Colors of the Wind
+11.0.0.54521
+r(447868),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription

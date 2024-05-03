@@ -1,5 +1,3 @@
-10.2.7.54366
-pet(4595),	-- Lil' Flameo
 11.0.0.54311
 pet(4450),	-- Remembered Riverpaw
 pet(4451),	-- Remembered Construct
@@ -77,13 +75,13 @@ pet(4533),	-- Meek Bloodlasher
 pet(4534),	-- Nightfarm Growthling
 pet(4535),	-- Ghostcap Menace
 pet(4536),	-- Blightbud
-pet(4537),	-- Kobold Fist-Thrower
+pet(4537),	-- Chester \\ Kobold Fist-Thrower
 pet(4538),	-- Cobalt Ramolith
 pet(4539),	-- Granite Ramolith
 pet(4540),	-- Alabaster Stonecharger
 pet(4541),	-- Bedrock Stonecharger
 pet(4542),	-- Slim
-pet(4543),	-- Nightshade
+pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
 pet(4545),	-- Clay Stonecharger
 pet(4546),	-- Sandstone Ramolith
@@ -119,14 +117,16 @@ pet(4589),	-- Gale
 pet(4590),	-- Flash
 pet(4591),	-- Thundo
 pet(4594),	-- Dalaran Sewer Turtle
+11.0.0.54521
+pet(4596),	-- Faithful Dog
+pet(4597),	--
+pet(4598),	--
 
 
 
 
 Missing in PetDB.lua
 
-10.2.7.54366
-pet(4595),	-- Lil' Flameo
 11.0.0.54311
 pet(4450),	-- Remembered Riverpaw
 pet(4451),	-- Remembered Construct
@@ -204,13 +204,13 @@ pet(4533),	-- Meek Bloodlasher
 pet(4534),	-- Nightfarm Growthling
 pet(4535),	-- Ghostcap Menace
 pet(4536),	-- Blightbud
-pet(4537),	-- Kobold Fist-Thrower
+pet(4537),	-- Chester \\ Kobold Fist-Thrower
 pet(4538),	-- Cobalt Ramolith
 pet(4539),	-- Granite Ramolith
 pet(4540),	-- Alabaster Stonecharger
 pet(4541),	-- Bedrock Stonecharger
 pet(4542),	-- Slim
-pet(4543),	-- Nightshade
+pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
 pet(4545),	-- Clay Stonecharger
 pet(4546),	-- Sandstone Ramolith
@@ -246,3 +246,7 @@ pet(4589),	-- Gale
 pet(4590),	-- Flash
 pet(4591),	-- Thundo
 pet(4594),	-- Dalaran Sewer Turtle
+11.0.0.54521
+pet(4596),	-- Faithful Dog
+pet(4597),	--
+pet(4598),	--

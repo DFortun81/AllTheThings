@@ -22,8 +22,8 @@ r(450225),	-- Everforged Legplates
 r(450226),	-- Everforged Vambraces
 r(450227),	-- Everforged Pauldrons
 r(450228),	-- Everforged Gauntlets
-r(450229),	-- Everforged Shortblade
-r(450230),	-- Everforged Spellblade
+r(450229),	-- Everforged Stabber \\ Everforged Shortblade
+r(450230),	-- Everforged Dagger \\ Everforged Spellblade
 r(450231),	-- Everforged Longsword
 r(450232),	-- Everforged Warglaive
 r(450233),	-- Everforged Mace
@@ -36,8 +36,8 @@ r(450239),	-- Charged Halberd
 r(450240),	-- Charged Crusher
 r(450241),	-- Charged Invoker
 r(450242),	-- Charged Slicer
-r(450243),	-- Echoing Impact Seal
-r(450244),	-- Arathor Armor Patch
+r(450243),	-- Echoing Impact \\ Echoing Impact Seal
+r(450244),	-- Burning Binding \\ Arathor Armor Patch
 r(450245),	-- Crystal Gazer's Gauntlets
 r(450246),	-- Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
@@ -78,14 +78,16 @@ r(450281),	-- Artisan Blacksmith's Hammer
 r(450282),	-- Artisan Blacksmith's Toolbox
 r(450283),	-- Earthen Master's Arsenal
 r(450284),	-- Forged Framework
-r(450285),	-- Ironclaw Weapon Stone
-r(450286),	-- Reinforced Handle
-r(450287),	-- Seasoned Skillet
-r(450288),	-- Webbed Fishing Line
-r(450289),	-- Weighted Lure
+r(450285),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
+r(450286),	-- Ironclaw Razorstone \\ Reinforced Handle
+r(450287),	-- Ironclaw Weightstone \\ Seasoned Skillet
+r(450288),	-- Adjustable Framework \\ Webbed Fishing Line
+r(450289),	-- Tempered Framework \\ Weighted Lure
 r(450290),	-- Earthen Master's Hammer
 r(450291),	-- Coreforged Repair Hammer
 r(450292),	-- Coreforged Skeleton Key
+11.0.0.54521
+r(453727),	-- Everburning Ignition
 
 
 
@@ -116,8 +118,8 @@ r(450225),	-- Everforged Legplates
 r(450226),	-- Everforged Vambraces
 r(450227),	-- Everforged Pauldrons
 r(450228),	-- Everforged Gauntlets
-r(450229),	-- Everforged Shortblade
-r(450230),	-- Everforged Spellblade
+r(450229),	-- Everforged Stabber \\ Everforged Shortblade
+r(450230),	-- Everforged Dagger \\ Everforged Spellblade
 r(450231),	-- Everforged Longsword
 r(450232),	-- Everforged Warglaive
 r(450233),	-- Everforged Mace
@@ -130,8 +132,8 @@ r(450239),	-- Charged Halberd
 r(450240),	-- Charged Crusher
 r(450241),	-- Charged Invoker
 r(450242),	-- Charged Slicer
-r(450243),	-- Echoing Impact Seal
-r(450244),	-- Arathor Armor Patch
+r(450243),	-- Echoing Impact \\ Echoing Impact Seal
+r(450244),	-- Burning Binding \\ Arathor Armor Patch
 r(450245),	-- Crystal Gazer's Gauntlets
 r(450246),	-- Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
@@ -172,11 +174,13 @@ r(450281),	-- Artisan Blacksmith's Hammer
 r(450282),	-- Artisan Blacksmith's Toolbox
 r(450283),	-- Earthen Master's Arsenal
 r(450284),	-- Forged Framework
-r(450285),	-- Ironclaw Weapon Stone
-r(450286),	-- Reinforced Handle
-r(450287),	-- Seasoned Skillet
-r(450288),	-- Webbed Fishing Line
-r(450289),	-- Weighted Lure
+r(450285),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
+r(450286),	-- Ironclaw Razorstone \\ Reinforced Handle
+r(450287),	-- Ironclaw Weightstone \\ Seasoned Skillet
+r(450288),	-- Adjustable Framework \\ Webbed Fishing Line
+r(450289),	-- Tempered Framework \\ Weighted Lure
 r(450290),	-- Earthen Master's Hammer
 r(450291),	-- Coreforged Repair Hammer
 r(450292),	-- Coreforged Skeleton Key
+11.0.0.54521
+r(453727),	-- Everburning Ignition

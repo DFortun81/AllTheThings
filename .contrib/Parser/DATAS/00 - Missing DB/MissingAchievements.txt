@@ -4,11 +4,11 @@ ach(40315),	-- [HIDDEN] Now THIS is Dragon Racing!
 ach(40226),	-- Realm First! Timerunner
 11.0.0.54311
 ach(18830),	-- Level 2
-ach(19408),	-- Professional Algarian Master
+ach(19408),	-- Professional Algari Master \\ Professional Algarian Master
 ach(19409),	-- Working Underground
-ach(19410),	-- Algarian Master of All
-ach(19414),	-- Algarian Cook
-ach(19415),	-- Algarian Fisherman
+ach(19410),	-- Algari Master of All \\ Algarian Master of All
+ach(19414),	-- Algari Cook \\ Algarian Cook
+ach(19415),	-- Algari Fisherman \\ Algarian Fisherman
 ach(19459),	-- Level 80
 ach(19460),	-- Two Warband Mentors: The War Within
 ach(19467),	-- 1st level 80 on account (DNT)
@@ -22,57 +22,57 @@ ach(19476),	-- Four Warband Mentors: The War Within
 ach(19477),	-- Five Warband Mentors: The War Within
 ach(19489),	-- Class Connoisseur
 ach(19510),	-- Test - For PH - Multiple Characters Hitting Max Level (DNT)
-ach(19515),	-- Algarian Master of Many
+ach(19515),	-- Algari Master of Many \\ Algarian Master of Many
 ach(19552),	-- Vicious Saddle (39)
 ach(19559),	-- Azj-Kahet
 ach(19560),	-- The Ringing Deeps
-ach(19704),	-- Overflowing Algarian Flasks
+ach(19704),	-- Overflowing Algari Flasks \\ Overflowing Algarian Flasks
 ach(19705),	-- Test - For EHW - Account Wide Criteria Test (DNT)
-ach(19716),	-- Plentiful Algarian Potions
-ach(19735),	-- Algarian Alchemy 25 (DNT)
-ach(19736),	-- Algarian Alchemy 50 (DNT)
-ach(19737),	-- Algarian Alchemy 75 (DNT)
-ach(19738),	-- Algarian Alchemy 100 (DNT)
-ach(19739),	-- Algarian Blacksmithing 25 (DNT)
-ach(19740),	-- Algarian Blacksmithing 50 (DNT)
-ach(19741),	-- Algarian Blacksmithing 75 (DNT)
-ach(19742),	-- Algarian Blacksmithing 100 (DNT)
-ach(19743),	-- Algarian Enchanting 25 (DNT)
-ach(19744),	-- Algarian Enchanting 50 (DNT)
-ach(19745),	-- Algarian Enchanting 75 (DNT)
-ach(19746),	-- Algarian Enchanting 100 (DNT)
-ach(19747),	-- Algarian Engineering 25 (DNT)
-ach(19748),	-- Algarian Engineering 50 (DNT)
-ach(19749),	-- Algarian Engineering 75 (DNT)
-ach(19750),	-- Algarian Engineering 100 (DNT)
-ach(19751),	-- Algarian Inscription 25 (DNT)
-ach(19752),	-- Algarian Inscription 50 (DNT)
-ach(19753),	-- Algarian Inscription 75 (DNT)
-ach(19754),	-- Algarian Inscription 100 (DNT)
-ach(19755),	-- Algarian Jewelcrafting 25 (DNT)
-ach(19756),	-- Algarian Jewelcrafting 50 (DNT)
-ach(19757),	-- Algarian Jewelcrafting 75 (DNT)
-ach(19758),	-- Algarian Jewelcrafting 100 (DNT)
-ach(19759),	-- Algarian Leatherworking 25 (DNT)
-ach(19760),	-- Algarian Leatherworking 50 (DNT)
-ach(19761),	-- Algarian Leatherworking 75 (DNT)
-ach(19762),	-- Algarian Leatherworking 100 (DNT)
-ach(19763),	-- Algarian Tailoring 25 (DNT)
-ach(19764),	-- Algarian Tailoring 50 (DNT)
-ach(19765),	-- Algarian Tailoring 75 (DNT)
-ach(19766),	-- Algarian Tailoring 100 (DNT)
-ach(19767),	-- Algarian Herbalism 25 (DNT)
-ach(19768),	-- Algarian Herbalism 50 (DNT)
-ach(19769),	-- Algarian Herbalism 75 (DNT)
-ach(19770),	-- Algarian Herbalism 100 (DNT)
-ach(19771),	-- Algarian Mining 25 (DNT)
-ach(19772),	-- Algarian Mining 50 (DNT)
-ach(19773),	-- Algarian Mining 75 (DNT)
-ach(19774),	-- Algarian Mining 100 (DNT)
-ach(19775),	-- Algarian Skinning 25 (DNT)
-ach(19776),	-- Algarian Skinning 50 (DNT)
-ach(19777),	-- Algarian Skinning 75 (DNT)
-ach(19778),	-- Algarian Skinning 100 (DNT)
+ach(19716),	-- Plentiful Algari Potions \\ Plentiful Algarian Potions
+ach(19735),	-- Algari Alchemy 25 (DNT) \\ Algarian Alchemy 25 (DNT)
+ach(19736),	-- Algari Alchemy 50 (DNT) \\ Algarian Alchemy 50 (DNT)
+ach(19737),	-- Algari Alchemy 75 (DNT) \\ Algarian Alchemy 75 (DNT)
+ach(19738),	-- Algari Alchemy 100 (DNT) \\ Algarian Alchemy 100 (DNT)
+ach(19739),	-- Algari Blacksmithing 25 (DNT) \\ Algarian Blacksmithing 25 (DNT)
+ach(19740),	-- Algari Blacksmithing 50 (DNT) \\ Algarian Blacksmithing 50 (DNT)
+ach(19741),	-- Algari Blacksmithing 75 (DNT) \\ Algarian Blacksmithing 75 (DNT)
+ach(19742),	-- Algari Blacksmithing 100 (DNT) \\ Algarian Blacksmithing 100 (DNT)
+ach(19743),	-- Algari Enchanting 25 (DNT) \\ Algarian Enchanting 25 (DNT)
+ach(19744),	-- Algari Enchanting 50 (DNT) \\ Algarian Enchanting 50 (DNT)
+ach(19745),	-- Algari Enchanting 75 (DNT) \\ Algarian Enchanting 75 (DNT)
+ach(19746),	-- Algari Enchanting 100 (DNT) \\ Algarian Enchanting 100 (DNT)
+ach(19747),	-- Algari Engineering 25 (DNT) \\ Algarian Engineering 25 (DNT)
+ach(19748),	-- Algari Engineering 50 (DNT) \\ Algarian Engineering 50 (DNT)
+ach(19749),	-- Algari Engineering 75 (DNT) \\ Algarian Engineering 75 (DNT)
+ach(19750),	-- Algari Engineering 100 (DNT) \\ Algarian Engineering 100 (DNT)
+ach(19751),	-- Algari Inscription 25 (DNT) \\ Algarian Inscription 25 (DNT)
+ach(19752),	-- Algari Inscription 50 (DNT) \\ Algarian Inscription 50 (DNT)
+ach(19753),	-- Algari Inscription 75 (DNT) \\ Algarian Inscription 75 (DNT)
+ach(19754),	-- Algari Inscription 100 (DNT) \\ Algarian Inscription 100 (DNT)
+ach(19755),	-- Algari Jewelcrafting 25 (DNT) \\ Algarian Jewelcrafting 25 (DNT)
+ach(19756),	-- Algari Jewelcrafting 50 (DNT) \\ Algarian Jewelcrafting 50 (DNT)
+ach(19757),	-- Algari Jewelcrafting 75 (DNT) \\ Algarian Jewelcrafting 75 (DNT)
+ach(19758),	-- Algari Jewelcrafting 100 (DNT) \\ Algarian Jewelcrafting 100 (DNT)
+ach(19759),	-- Algari Leatherworking 25 (DNT) \\ Algarian Leatherworking 25 (DNT)
+ach(19760),	-- Algari Leatherworking 50 (DNT) \\ Algarian Leatherworking 50 (DNT)
+ach(19761),	-- Algari Leatherworking 75 (DNT) \\ Algarian Leatherworking 75 (DNT)
+ach(19762),	-- Algari Leatherworking 100 (DNT) \\ Algarian Leatherworking 100 (DNT)
+ach(19763),	-- Algari Tailoring 25 (DNT) \\ Algarian Tailoring 25 (DNT)
+ach(19764),	-- Algari Tailoring 50 (DNT) \\ Algarian Tailoring 50 (DNT)
+ach(19765),	-- Algari Tailoring 75 (DNT) \\ Algarian Tailoring 75 (DNT)
+ach(19766),	-- Algari Tailoring 100 (DNT) \\ Algarian Tailoring 100 (DNT)
+ach(19767),	-- Algari Herbalism 25 (DNT) \\ Algarian Herbalism 25 (DNT)
+ach(19768),	-- Algari Herbalism 50 (DNT) \\ Algarian Herbalism 50 (DNT)
+ach(19769),	-- Algari Herbalism 75 (DNT) \\ Algarian Herbalism 75 (DNT)
+ach(19770),	-- Algari Herbalism 100 (DNT) \\ Algarian Herbalism 100 (DNT)
+ach(19771),	-- Algari Mining 25 (DNT) \\ Algarian Mining 25 (DNT)
+ach(19772),	-- Algari Mining 50 (DNT) \\ Algarian Mining 50 (DNT)
+ach(19773),	-- Algari Mining 75 (DNT) \\ Algarian Mining 75 (DNT)
+ach(19774),	-- Algari Mining 100 (DNT) \\ Algarian Mining 100 (DNT)
+ach(19775),	-- Algari Skinning 25 (DNT) \\ Algarian Skinning 25 (DNT)
+ach(19776),	-- Algari Skinning 50 (DNT) \\ Algarian Skinning 50 (DNT)
+ach(19777),	-- Algari Skinning 75 (DNT) \\ Algarian Skinning 75 (DNT)
+ach(19778),	-- Algari Skinning 100 (DNT) \\ Algarian Skinning 100 (DNT)
 ach(20074),	-- Dynamic Duo Complete (DNT)
 ach(20077),	-- Terrific Trio Complete (DNT)
 ach(20078),	-- Quintessential Quintet Complete (DNT)
@@ -560,7 +560,7 @@ ach(40236),	-- Mythic: Ulgrax the Devourer
 ach(40237),	-- Mythic: The Bloodbound Horror
 ach(40238),	-- Mythic: Sikran, Captain of the Sureki
 ach(40239),	-- Mythic: Rasha'nan
-ach(40240),	-- Mythic: Eggtender Ovi'nax
+ach(40240),	-- Mythic: Broodtwister Ovi'nax \\ Mythic: Eggtender Ovi'nax
 ach(40241),	-- Mythic: Nexus-Princess Ky'veza
 ach(40242),	-- Mythic: The Silken Court
 ach(40243),	-- Mythic: Queen Ansurek
@@ -580,7 +580,7 @@ ach(40256),	-- Nerub-ar Palace Guild Run
 ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
 ach(40258),	-- Mythic: Queen Ansurek Guild Run
 ach(40259),	-- Hall of Fame: Queen Ansurek
-ach(40260),	-- [PH] Bloodbound Horror Achievement
+ach(40260),	-- You Can't See Me \\ [PH] Bloodbound Horror Achievement
 ach(40261),	-- [PH] Ulgrax the Devourer Achievement
 ach(40262),	-- [PH] Rasha'nan Achievement
 ach(40263),	-- Would you still /love me if I was a worm... \\ [PH] Eggtender Ovi'nax Achievement
@@ -603,10 +603,10 @@ ach(40279),	-- Rasha'nan kills (Raid Finder Nerub-ar Palace)
 ach(40280),	-- Rasha'nan kills (Normal Nerub-ar Palace)
 ach(40281),	-- Rasha'nan kills (Heroic Nerub-ar Palace)
 ach(40282),	-- Rasha'nan kills (Mythic Nerub-ar Palace)
-ach(40283),	-- Eggtender Ovi'nax kills (Raid Finder Nerub-ar Palace)
-ach(40284),	-- Eggtender Ovi'nax kills (Normal Nerub-ar Palace)
-ach(40285),	-- Eggtender Ovi'nax kills (Heroic Nerub-ar Palace)
-ach(40286),	-- Eggtender Ovi'nax kills (Mythic Nerub-ar Palace)
+ach(40283),	-- Broodtwister Ovi'nax kills (Raid Finder Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Raid Finder Nerub-ar Palace)
+ach(40284),	-- Broodtwister Ovi'nax kills (Normal Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Normal Nerub-ar Palace)
+ach(40285),	-- Broodtwister Ovi'nax kills (Heroic Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Heroic Nerub-ar Palace)
+ach(40286),	-- Broodtwister Ovi'nax kills (Mythic Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Mythic Nerub-ar Palace)
 ach(40287),	-- Nexus-Princess Ky'veza kills (Raid Finder Nerub-ar Palace)
 ach(40288),	-- Nexus-Princess Ky'veza kills (Normal Nerub-ar Palace)
 ach(40289),	-- Nexus-Princess Ky'veza kills (Heroic Nerub-ar Palace)
@@ -628,7 +628,7 @@ ach(40309),	-- Heritage of the Earthen
 ach(40311),	-- Sharing the Light
 ach(40312),	-- Starting the Flames
 ach(40313),	-- Igniting the Keyflames
-ach(40314),	-- Memories of a Worldsoul
+ach(40314),	-- Fragments of Memories \\ Memories of a Worldsoul
 ach(40316),	-- Isle of Dorn: Bronze
 ach(40317),	-- Isle of Dorn: Silver
 ach(40318),	-- Isle of Dorn: Gold
@@ -678,3 +678,26 @@ ach(40375),	-- Mythic: Ara-Kara, City of Echoes
 ach(40376),	-- City of Threads
 ach(40377),	-- Heroic: City of Threads
 ach(40379),	-- Mythic: City of Threads
+11.0.0.54521
+ach(40380),	-- Forged Gladiator: The War Within Season 1
+ach(40381),	-- Forged Legend: The War Within Season 1
+ach(40382),	-- Hunt the Harbinger
+ach(40383),	-- Hero of the Alliance: Forged
+ach(40384),	-- Hero of the Horde: Forged
+ach(40385),	-- Combatant I: The War Within Season 1
+ach(40386),	-- Combatant II: The War Within Season 1
+ach(40387),	-- Challenger I: The War Within Season 1
+ach(40388),	-- Challenger II: The War Within Season 1
+ach(40389),	-- Rival I: The War Within Season 1
+ach(40390),	-- Rival II: The War Within Season 1
+ach(40391),	-- Duelist: The War Within Season 1
+ach(40392),	-- Elite: The War Within Season 1
+ach(40393),	-- Gladiator: The War Within Season 1
+ach(40395),	-- Legend: The War Within Season 1
+ach(40396),	-- Forged Combatant
+ach(40397),	-- Forged Combatant
+ach(40398),	-- Forged Gladiator's Fel Bat
+ach(40427),	-- Darkflame Cleft
+ach(40428),	-- Heroic: Darkflame Cleft
+ach(40429),	-- Mythic: Darkflame Cleft
+ach(40430),	-- Khaz Algar Flight Master

@@ -3000,6 +3000,7 @@ i(16747),	-- en Lock \\ Broken Lock
 i(16748),	-- ed Lining \\ Padded Lining
 i(16783),	-- le of Reports \\ Bundle of Reports
 i(16785),	-- ro's Letter \\ Rokaro's Letter \\ Rexxar's Testament
+i(16790),	-- Damp Note
 i(16883),	-- Junkbox \\ Worn Junkbox
 i(16888),	-- Drakefire Amulet \\ Dull Drakefire Amulet
 i(16892),	-- er Soulstone \\ Lesser Soulstone
@@ -6305,9 +6306,6 @@ i(23672),	-- e of Red Snapper \\ Crate of Red Snapper
 i(23674),	-- Robotron Control Panel Key
 i(23675),	-- tron Control Unit \\ Robotron Control Unit
 i(23695),	-- herbeard's Map \\ Featherbeard's Map
-i(23697),	-- ng Rod \\ Taming Rod
-i(23702),	-- ng Rod \\ Taming Rod
-i(23703),	-- ng Rod \\ Taming Rod
 i(23704),	-- Eversong Port
 i(23711),	-- oire of Intercept (Rank 1) \\ Grimoire of Intercept (Rank 1)
 i(23729),	-- Horde Banner \\ Fel Horde Banner
@@ -12411,7 +12409,6 @@ i(46394),	-- Acolyte's Robe
 i(46395),	-- cky Rabbit's Foot \\ Unlucky Rabbit's Foot
 i(46396),	-- ar Orphan Whistle \\ Wolvar Orphan Whistle
 i(46397),	-- le Orphan Whistle \\ Oracle Orphan Whistle
-i(46693),	-- l Paper Zeppelin \\ Small Paper Zeppelin
 i(46740),	-- er Veil Gift \\ Winter Veil Gift
 i(46765),	-- War Fuel \\ Blue War Fuel
 i(46766),	-- War Fuel \\ Red War Fuel
@@ -12728,11 +12725,11 @@ i(201699),	-- Festering Emerald Drake
 i(202195),	-- Pure Stratholme Holy Water
 i(202269),	-- Bounty Satchel
 3.4.2.49311
-i(204385),	-- Glyph of Reckoning
+i(204385),	-- Charred Glyph \\ Glyph of Reckoning
 i(206272),	-- Holy Hand Grenade
 i(206392),	-- Tabard of the Sons of Hodir
 3.4.2.49442
-i(206580),	-- Glyph of Omen of Clarity
+i(206580),	-- Charred Glyph \\ Glyph of Omen of Clarity
 3.4.2.49563
 i(206684),	-- Runed Talon
 i(206685),	-- Tenacious Vine Staff
@@ -12806,7 +12803,7 @@ i(206755),	-- Ghrino Britches
 i(206756),	-- Ghrino Pauldrons
 i(206757),	-- Ghrino Bracers
 i(206759),	-- Essence or Dust
-i(206953),	-- Glyph of Shattering Throw
+i(206953),	-- Charred Glyph \\ Glyph of Shattering Throw
 3.4.2.49979
 i(208157),	-- Bounty Satchel
 3.4.3.51470
@@ -19330,7 +19327,6 @@ i(70976),	-- Art Template Plate Head - RaidDeathKnight_J - Frost
 i(70977),	-- Art Template Plate Legs - RaidDeathKnight_J - Frost
 i(70978),	-- Art Template Plate Shoulder - RaidDeathKnight_J - Frost
 i(70979),	-- Art Template Plate Wrist - RaidDeathKnight_J - Frost
-i(71034),	-- swept Balloon \\ Windswept Balloon
 i(71036),	-- Monster - 1h Mace Sulfuras (New, Fire Enchant)
 i(71055),	-- Monster - Baleroc Sword
 i(71057),	-- vered Crate \\ Recovered Crate
@@ -20535,6 +20531,8 @@ i(224452),	-- Teleport Scroll: Stormwind
 i(224458),	-- Teleport Scroll: Orgrimmar
 4.4.0.54377
 i(209877),	-- Cypress
+4.4.0.54500
+i(209878),	-- Azeroth Survival Kit
 7.3.0.24473
 i(71079),	-- Shimmering Lotus \\ mering Lotus
 i(72071),	-- Stolen Training Supplies \\ en Training Supplies
@@ -32671,19 +32669,6 @@ i(178012),	-- Spoiled Contaminant \\ TR: Versatile III - 20 Corruption \\ Preser
 i(178013),	-- Spoiled Contaminant \\ TR: Void Ritual I - 15 Corruption \\ Preserved Contaminant: Void Ritual
 i(178014),	-- Spoiled Contaminant \\ TR: Void Ritual II - 35 Corruption \\ Preserved Contaminant: Void Ritual
 i(178015),	-- Spoiled Contaminant \\ TR: Void Ritual III - 66 Corruption \\ Preserved Contaminant: Void Ritual
-10.2.7.54295
-i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor
-i(224270),	-- Tattered Technique: Certificate of Ownership
-i(224296),	-- Basket of Draconic Flowers
-i(224374),	-- Reins of the Thundering Ruby Cloud Serpent
-i(224407),	-- Bonus Experience
-i(224408),	-- Bonus Experience
-10.2.7.54366
-i(224459),	-- Tusks of Mannoroth
-i(224461),	-- Bones of Mannoroth
-i(224547),	-- Timewarped Pouch
-i(224574),	-- Savage Ebony Battle Turtle
-i(224576),	-- Lil' Flameo
 11.0.0.54311
 i(206134),	-- Potion of Healing
 i(206203),	-- Dauntless Draught
@@ -32701,7 +32686,7 @@ i(207104),	-- Morsel Sniffer Reins
 i(207390),	-- Delve Ring
 i(207591),	-- Spare Harvest Torch
 i(208670),	-- Arachnophobia Mode
-i(208948),	-- Club Chest Key
+i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
 i(208957),	-- Totem of the Southern Storm
 i(209431),	-- Fungal Scraper
 i(209788),	-- Dispersion Crystal
@@ -32742,7 +32727,7 @@ i(210810),	-- Arathor's Spear
 i(210813),	-- Wild Experimentation
 i(210814),	-- Artisan's Acuity
 i(210815),	-- Coreway Catalyst
-i(210816),	-- Algarian Alchemist Stone
+i(210816),	-- Algari Alchemist Stone \\ Algarian Alchemist Stone
 i(210826),	-- Harvestbot Repair Kit
 i(210828),	-- Dilution Solution
 i(210829),	-- Neutralize Concoctions
@@ -32919,7 +32904,7 @@ i(211776),	-- Damp Repair Kit
 i(211783),	-- Scrap of Weathered Fabric
 i(211796),	-- Thaumaturgy
 i(211797),	-- Expedition Map
-i(211801),	-- Poisonous Fungarian Helm [PH]
+i(211801),	-- Poisonous Shroom Cap \\ Poisonous Fungarian Helm [PH]
 i(211802),	-- Ominous Transmutagen
 i(211803),	-- Mercurial Transmutagen
 i(211804),	-- Volatile Transmutagen
@@ -32932,9 +32917,9 @@ i(211858),	-- Electrified Mosswool
 i(211861),	-- Umbral Eggplant
 i(211863),	-- Sizzling Magma Core
 i(211870),	-- Flynn's Blades
-i(211878),	-- Algarian Healing Potion
-i(211879),	-- Algarian Healing Potion
-i(211880),	-- Algarian Healing Potion
+i(211878),	-- Algari Healing Potion \\ Algarian Healing Potion
+i(211879),	-- Algari Healing Potion \\ Algarian Healing Potion
+i(211880),	-- Algari Healing Potion \\ Algarian Healing Potion
 i(211889),	-- 11.0 Poor Item Template - <Descriptor> Leather Cinch
 i(211890),	-- 11.0 Poor Item Template - <Descriptor> Leather Footwraps
 i(211891),	-- 11.0 Poor Item Template - <Descriptor> Leather Handwraps
@@ -33165,25 +33150,25 @@ i(212152),	-- 11.0 End Game Template <Descriptor> Choker
 i(212153),	-- Corrupted Shadowleaf Seed \\ Corrupted Shadowbloom Seed
 i(212158),	-- Broken Venom Flask
 i(212159),	-- Vial of Stinky Pheromones
-i(212162),	-- Angry Fungarian Helm [PH]
-i(212163),	-- Sleepy Fungarian Helm [PH]
-i(212164),	-- Shallow Kobyss Helm [PH]
-i(212165),	-- Deep Kobyss Helm [PH]
-i(212166),	-- Coral Kobyss Helm [PH]
-i(212167),	-- Candle Kobold Helm [PH]
-i(212168),	-- Cultlight Kobold Helm [PH]
-i(212169),	-- Candelabra Kobold Helm [PH]
-i(212170),	-- Bronzebeard Hat [PH]
-i(212171),	-- Xev'zikk's Spine
-i(212172),	-- Ajul'Nerub Backpiece [PH]
-i(212173),	-- Rulk'Nerub Backpiece [PH]
+i(212162),	-- Bitter Shroom Cap \\ Angry Fungarian Helm [PH]
+i(212163),	-- Soporific Shroom Cap \\ Sleepy Fungarian Helm [PH]
+i(212164),	-- Shallow Nautic Helm \\ Shallow Kobyss Helm [PH]
+i(212165),	-- Deep Nautic Helm \\ Deep Kobyss Helm [PH]
+i(212166),	-- Coral Nautic Helm \\ Coral Kobyss Helm [PH]
+i(212167),	-- Taken Candle \\ Candle Kobold Helm [PH]
+i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
+i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
+i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
+i(212171),	-- Zekvir's Raptorial Spine \\ Xev'zikk's Spine
+i(212172),	-- Ajul'Nerub Raptorial Spine \\ Ajul'Nerub Backpiece [PH]
+i(212173),	-- Rulk'Nerub Raptorial Spine \\ Rulk'Nerub Backpiece [PH]
 i(212174),	-- The Warband Map to Everywhere All At Once \\ The Warband Map to Everything Everywhere All At Once
 i(212176),	-- Pilfered Pearl
 i(212223),	-- Elemental Essence
 i(212224),	-- Titan Relics
-i(212239),	-- Algarian Mana Potion
-i(212240),	-- Algarian Mana Potion
-i(212241),	-- Algarian Mana Potion
+i(212239),	-- Algari Mana Potion \\ Algarian Mana Potion
+i(212240),	-- Algari Mana Potion \\ Algarian Mana Potion
+i(212241),	-- Algari Mana Potion \\ Algarian Mana Potion
 i(212242),	-- Cavedweller's Delight
 i(212243),	-- Cavedweller's Delight
 i(212244),	-- Cavedweller's Delight
@@ -33246,8 +33231,8 @@ i(212314),	-- Phial of Bountiful Seasons
 i(212315),	-- Phial of Bountiful Seasons
 i(212316),	-- Phial of Bountiful Seasons
 i(212317),	-- Recovered Tinderbox
-i(212318),	-- QA Algarian Healing Potion
-i(212319),	-- QA Algarian Mana Potion
+i(212318),	-- QA Algari Healing Potion \\ QA Algarian Healing Potion
+i(212319),	-- QA Algari Mana Potion \\ QA Algarian Mana Potion
 i(212320),	-- QA Cavedweller's Delight
 i(212321),	-- QA Slumbering Soul Serum
 i(212322),	-- QA Draught of Silent Footfalls
@@ -33272,7 +33257,7 @@ i(212388),	-- 11.0 Raid Template - Mace2H - Str - 2 Hand
 i(212389),	-- 11.0 Raid Template - Staff - Agi - 2 Hand
 i(212390),	-- 11.0 Raid Template - Guns - RangedRight
 i(212391),	-- 11.0 Raid Template - Warglaives - Weapon
-i(212392),	-- 11.0 Raid Template - Sword1H - Str -Weapon
+i(212392),	-- 11.0 Raid Template - Sword1H - Str - Weapon \\ 11.0 Raid Template - Sword1H - Str -Weapon
 i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
 i(212394),	-- 11.0 Raid Template - Dagger - Int - Weapon
 i(212395),	-- 11.0 Raid Template - Dagger - Agi - Weapon
@@ -33333,7 +33318,7 @@ i(212449),	-- Sik'ran's Shadow Arsenal
 i(212450),	-- Swarmlord's Authority
 i(212451),	-- Aberrant Spellforge
 i(212452),	-- Gruesome Syringe
-i(212453),	-- Gigantic Acid Gland
+i(212453),	-- Rasha'nan's Acid Gland \\ Gigantic Acid Gland
 i(212454),	-- Abyssal Effigy
 i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
 i(212456),	-- Void Reaper's Chime
@@ -33379,9 +33364,9 @@ i(212676),	-- Sunless Carapace
 i(212677),	-- Underground Cloth 01
 i(212678),	-- Underground Cloth 01
 i(212679),	-- Underground Cloth 01
-i(212719),	-- Algarian Flask Cauldron
-i(212720),	-- Algarian Flask Cauldron
-i(212721),	-- Algarian Flask Cauldron
+i(212719),	-- Algari Flask Cauldron \\ Algarian Flask Cauldron
+i(212720),	-- Algari Flask Cauldron \\ Algarian Flask Cauldron
+i(212721),	-- Algari Flask Cauldron \\ Algarian Flask Cauldron
 i(212725),	-- Fleeting Flask of Tempered Aggression
 i(212727),	-- Fleeting Flask of Tempered Aggression
 i(212728),	-- Fleeting Flask of Tempered Aggression
@@ -33400,23 +33385,23 @@ i(212741),	-- Fleeting Flask of Alchemical Chaos
 i(212745),	-- Fleeting Flask of Saving Graces
 i(212746),	-- Fleeting Flask of Saving Graces
 i(212747),	-- Fleeting Flask of Saving Graces
-i(212751),	-- Algarian Potion Cauldron
-i(212752),	-- Algarian Potion Cauldron
-i(212753),	-- Algarian Potion Cauldron
+i(212751),	-- Algari Potion Cauldron \\ Algarian Potion Cauldron
+i(212752),	-- Algari Potion Cauldron \\ Algarian Potion Cauldron
+i(212753),	-- Algari Potion Cauldron \\ Algarian Potion Cauldron
 i(212754),	-- Crystalforged Cauldron
 i(212755),	-- Remnant Satchel
 i(212775),	-- Fleeting Flask of Tempered Aggression
 i(212776),	-- Fleeting Flask of Tempered Aggression
 i(212777),	-- Fleeting Flask of Tempered Aggression
 i(212781),	-- Formulated Courage
-i(212868),	-- Delicious Ore
+i(212868),	-- Precious Ore \\ Delicious Ore
 i(212882),	-- Glittering Ore
-i(212942),	-- Fleeting Algarian Healing Potion
-i(212943),	-- Fleeting Algarian Healing Potion
-i(212944),	-- Fleeting Algarian Healing Potion
-i(212945),	-- Fleeting Algarian Mana Potion
-i(212946),	-- Fleeting Algarian Mana Potion
-i(212947),	-- Fleeting Algarian Mana Potion
+i(212942),	-- Fleeting Algari Healing Potion \\ Fleeting Algarian Healing Potion
+i(212943),	-- Fleeting Algari Healing Potion \\ Fleeting Algarian Healing Potion
+i(212944),	-- Fleeting Algari Healing Potion \\ Fleeting Algarian Healing Potion
+i(212945),	-- Fleeting Algari Mana Potion \\ Fleeting Algarian Mana Potion
+i(212946),	-- Fleeting Algari Mana Potion \\ Fleeting Algarian Mana Potion
+i(212947),	-- Fleeting Algari Mana Potion \\ Fleeting Algarian Mana Potion
 i(212948),	-- Fleeting Cavedweller's Delight
 i(212949),	-- Fleeting Cavedweller's Delight
 i(212950),	-- Fleeting Cavedweller's Delight
@@ -33777,9 +33762,9 @@ i(217707),	-- Imperfect Null Stone
 i(217709),	-- Sunless Shard
 i(217715),	-- Key Scroll
 i(217816),	-- Rehydated Fish
-i(217818),	-- Refine Algarian Hides
-i(217822),	-- Refine Algarian Leather
-i(217840),	-- Refine Algarian Chitin
+i(217818),	-- Refine Algari Hides \\ Refine Algarian Hides
+i(217822),	-- Refine Algari Leather \\ Refine Algarian Leather
+i(217840),	-- Refine Algari Chitin \\ Refine Algarian Chitin
 i(217847),	-- Everforged Hands
 i(217848),	-- Everforged Wrists
 i(217849),	-- Everforged Waist
@@ -35112,7 +35097,7 @@ i(219379),	-- Brax's Brass Knuckle
 i(219380),	-- Earthen Traveler's Shawl
 i(219381),	-- Fate Weaver
 i(219382),	-- Fateweaved Needle
-i(219383),	-- Earthen Traveler's Shawl 2
+i(219383),	-- Earthen Traveler's Cloak \\ Earthen Traveler's Shawl 2
 i(219384),	-- Tenir and the Order of Night
 i(219385),	-- Antiparalytic Serum
 i(219388),	-- Sacred Flame Torch
@@ -35176,7 +35161,7 @@ i(219463),	-- Earthen Traveler's Javelin
 i(219464),	-- Earthen Traveler's Boomstick
 i(219465),	-- Earthen Traveler's Crossbow
 i(219466),	-- Earthen Traveler's Chopper
-i(219467),	-- Earthen Traveler's Fist Weapon
+i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
 i(219468),	-- Mining Tools
 i(219469),	-- Fog Beast Tracker
 i(219470),	-- Spelunker's Leather Footpads
@@ -35278,17 +35263,17 @@ i(219615),	-- Vagabond's Post
 i(219616),	-- Inquisitor's Greenwood Bow
 i(219617),	-- Vagabond's Alacrity
 i(219618),	-- Colors of the Wind
-i(219621),	-- Algarian Treatise on Alchemy
-i(219622),	-- Algarian Treatise on Engineering
-i(219623),	-- Algarian Treatise on Blacksmithing
-i(219624),	-- Algarian Treatise on Enchanting
-i(219625),	-- Algarian Treatise on Herbalism
-i(219626),	-- Algarian Treatise on Inscription
-i(219627),	-- Algarian Treatise on Jewelcrafting
-i(219628),	-- Algarian Treatise on Leatherworking
-i(219629),	-- Algarian Treatise on Mining
-i(219630),	-- Algarian Treatise on Tailoring
-i(219631),	-- Algarian Treatise on Skinning
+i(219621),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
+i(219622),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
+i(219623),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
+i(219624),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
+i(219625),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
+i(219626),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription
+i(219627),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
+i(219628),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
+i(219629),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
+i(219630),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
+i(219631),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
 i(219632),	-- Scribe Water
 i(219633),	-- Vantus Rune: 11.0 Season 1 Raid
 i(219634),	-- Vantus Rune: 11.0 Season 1 Raid
@@ -35308,27 +35293,27 @@ i(219647),	-- Contract: 11.0 Artisan's Consortium
 i(219648),	-- Contract: Renown D
 i(219649),	-- Contract: Renown D
 i(219650),	-- Contract: Renown D
-i(219651),	-- Algarian Missive of Inspiration
-i(219652),	-- Algarian Missive of Inspiration
-i(219653),	-- Algarian Missive of Inspiration
-i(219654),	-- Algarian Missive of Resourcefulness
-i(219655),	-- Algarian Missive of Resourcefulness
-i(219656),	-- Algarian Missive of Resourcefulness
-i(219657),	-- Algarian Missive of Multicraft
-i(219658),	-- Algarian Missive of Multicraft
-i(219659),	-- Algarian Missive of Multicraft
-i(219660),	-- Algarian Missive of Crafting Speed
-i(219661),	-- Algarian Missive of Crafting Speed
-i(219662),	-- Algarian Missive of Crafting Speed
-i(219663),	-- Algarian Missive of Finesse
-i(219664),	-- Algarian Missive of Finesse
-i(219665),	-- Algarian Missive of Finesse
-i(219666),	-- Algarian Missive of Perception
-i(219667),	-- Algarian Missive of Perception
-i(219668),	-- Algarian Missive of Perception
-i(219669),	-- Algarian Missive of Deftness
-i(219670),	-- Algarian Missive of Deftness
-i(219671),	-- Algarian Missive of Deftness
+i(219651),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219652),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219653),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219654),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(219655),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(219656),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(219657),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(219658),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(219659),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(219660),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(219661),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(219662),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(219663),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(219664),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(219665),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(219666),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(219667),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(219668),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(219669),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(219670),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(219671),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
 i(219672),	-- Darkmoon Deck: Shine
 i(219673),	-- Darkmook Deck: Symbiosis
 i(219674),	-- Darkmoon Deck: Evolve
@@ -35377,9 +35362,9 @@ i(219716),	-- Fish Plate Stam Str
 i(219717),	-- Fish Plate Stam Agi
 i(219718),	-- Fish Plate Stam Int
 i(219719),	-- Feast
-i(219720),	-- Prepared Algarian Steak
-i(219721),	-- Prepared Algarian Filet
-i(219722),	-- Prepared Algarian Poultry
+i(219720),	-- Prepared Algari Steak \\ Prepared Algarian Steak
+i(219721),	-- Prepared Algari Filet \\ Prepared Algarian Filet
+i(219722),	-- Prepared Algari Poultry \\ Prepared Algarian Poultry
 i(219723),	-- Hearty Cooked Meat T1 A
 i(219724),	-- Hearty Cooked Meat T1 B
 i(219725),	-- Hearty Cooked Meat T1 C
@@ -35398,8 +35383,8 @@ i(219737),	-- Hearty Fish Plate Stam Str
 i(219738),	-- Hearty Fish Plate Stam Agi
 i(219739),	-- Hearty Fish Plate Stam Int
 i(219740),	-- Hearty Fish Plate Stam
-i(219741),	-- Algarian Mineral
-i(219742),	-- Algarian Spices
+i(219741),	-- Algari Mineral \\ Algarian Mineral
+i(219742),	-- Algari Spices \\ Algarian Spices
 i(219743),	-- Khaz Algar Olive (Vendor)
 i(219744),	-- Khaz Algar Vegetable
 i(219745),	-- Olive Oil
@@ -35412,14 +35397,14 @@ i(219751),	-- Congealed Cinderbrew Pauldrons
 i(219752),	-- Congealed Cinderbrew Battleboots
 i(219753),	-- Congealed Cinderbew Cinch
 i(219754),	-- Remembrance of the Fallen City
-i(219755),	-- Mead Speckled Pantaloons
-i(219756),	-- Mead Speckled Vest
-i(219757),	-- Mead Speckled Full Helm
-i(219758),	-- Mead Speckled Legguards
-i(219760),	-- Rubble Salvaged Slippers
-i(219761),	-- Rubble Salvaged Grips
-i(219762),	-- Rubble Salvaged Waistguard
-i(219763),	-- Rubble Salvaged Shoulderpads
+i(219755),	-- Mead-Speckled Pantaloons \\ Mead Speckled Pantaloons
+i(219756),	-- Mead-Speckled Vest \\ Mead Speckled Vest
+i(219757),	-- Mead-Speckled Full Helm \\ Mead Speckled Full Helm
+i(219758),	-- Mead-Speckled Legguards \\ Mead Speckled Legguards
+i(219760),	-- Rubble-Salvaged Slippers \\ Rubble Salvaged Slippers
+i(219761),	-- Rubble-Salvaged Grips \\ Rubble Salvaged Grips
+i(219762),	-- Rubble-Salvaged Waistguard \\ Rubble Salvaged Waistguard
+i(219763),	-- Rubble-Salvaged Shoulderpads \\ Rubble Salvaged Shoulderpads
 i(219764),	-- Luminescent Pearl Band
 i(219765),	-- Sparkling Pearl Ring
 i(219766),	-- Sporefused Hood
@@ -35457,48 +35442,48 @@ i(219813),	-- Tarnished Compass
 i(219814),	-- Rusted Torch
 i(219815),	-- Small Hilt
 i(219816),	-- Knotted Aviator Scarf
-i(219819),	-- Algarian Missive of the Fireflash
-i(219820),	-- Algarian Missive of the Fireflash
-i(219821),	-- Algarian Missive of the Fireflash
-i(219822),	-- Algarian Missive of the Feverflare
-i(219823),	-- Algarian Missive of the Feverflare
-i(219824),	-- Algarian Missive of the Feverflare
-i(219825),	-- Algarian Missive of the Aurora
-i(219826),	-- Algarian Missive of the Aurora
-i(219827),	-- Algarian Missive of the Aurora
-i(219828),	-- Algarian Missive of the Quickblade
-i(219829),	-- Algarian Missive of the Quickblade
-i(219830),	-- Algarian Missive of the Quickblade
-i(219831),	-- Algarian Missive of the Harmonious
-i(219832),	-- Algarian Missive of the Harmonious
-i(219833),	-- Algarian Missive of the Harmonious
-i(219834),	-- Algarian Missive of the Peerless
-i(219835),	-- Algarian Missive of the Peerless
-i(219836),	-- Algarian Missive of the Peerless
-i(219837),	-- Algarian Missive of Inspiration
-i(219838),	-- Algarian Missive of Inspiration
-i(219839),	-- Algarian Missive of Inspiration
-i(219840),	-- Algarian Missive of the Fireflash
-i(219841),	-- Algarian Missive of the Fireflash
-i(219842),	-- Algarian Missive of the Fireflash
-i(219843),	-- Algarian Missive of the Feverflare
-i(219844),	-- Algarian Missive of the Feverflare
-i(219845),	-- Algarian Missive of the Feverflare
-i(219846),	-- Algarian Missive of the Aurora
-i(219847),	-- Algarian Missive of the Aurora
-i(219848),	-- Algarian Missive of the Aurora
-i(219849),	-- Algarian Missive of the Quickblade
-i(219850),	-- Algarian Missive of the Quickblade
-i(219851),	-- Algarian Missive of the Quickblade
-i(219852),	-- Algarian Missive of the Harmonious
-i(219853),	-- Algarian Missive of the Harmonious
-i(219854),	-- Algarian Missive of the Harmonious
-i(219855),	-- Algarian Missive of the Peerless
-i(219856),	-- Algarian Missive of the Peerless
-i(219857),	-- Algarian Missive of the Peerless
-i(219858),	-- Algarian Missive of Inspiration
-i(219859),	-- Algarian Missive of Inspiration
-i(219860),	-- Algarian Missive of Inspiration
+i(219819),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(219820),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(219821),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(219822),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(219823),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(219824),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(219825),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(219826),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(219827),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(219828),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(219829),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(219830),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(219831),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(219832),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(219833),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(219834),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(219835),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(219836),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(219837),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219838),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219839),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219840),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(219841),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(219842),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(219843),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(219844),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(219845),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(219846),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(219847),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(219848),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(219849),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(219850),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(219851),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(219852),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(219853),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(219854),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(219855),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(219856),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(219857),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(219858),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219859),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(219860),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
 i(219861),	-- Gardener's Basket
 i(219862),	-- Hideseeker's Pack
 i(219863),	-- Hideseeker's Hat
@@ -35863,7 +35848,7 @@ i(220520),	-- Radiant Chord
 i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
 i(220756),	-- Flickering Torch \\ Fading Torch
 i(220767),	-- Triumphant Satchel of Carved Harbinger Crests \\ Triumphant Satchel of Carved Harbinger Crests (TODO: Fix Icon)
-i(220769),	-- Algarian Token of Merit
+i(220769),	-- Algari Token of Merit \\ Algarian Token of Merit
 i(220770),	-- Void-Scarred Stormhammer
 i(220771),	-- Hallowed Glowfly
 i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
@@ -35899,7 +35884,7 @@ i(220999),	-- Missing Page
 i(221000),	-- Nearly-empty Cask
 i(221001),	-- Cinderbrew Flask
 i(221022),	-- Cowboy Bee[DNT]
-i(221023),	-- Malfunctioning Cartel Communicator
+i(221023),	-- Malfunctioning Ethereum Module \\ Malfunctioning Cartel Communicator
 i(221031),	-- Nerubian Intelligence
 i(221032),	-- Voltaic Stormcaller
 i(221033),	-- Hyperactive Stormclaw
@@ -36071,7 +36056,7 @@ i(221204),	-- Spore Giant's Stompers
 i(221205),	-- Vest of the River
 i(221206),	-- Reinforced Chitin Chestpiece
 i(221207),	-- Denmother's Chestpiece
-i(221208),	-- Fel Assassin Tunic
+i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 i(221209),	-- Flame Trader's Gloves
 i(221210),	-- Grips of the Earth
 i(221211),	-- Grasp of the Shallows
@@ -36098,7 +36083,7 @@ i(221231),	-- Steam-Powered Wristwatch
 i(221232),	-- Polished Goblin Bling
 i(221233),	-- Deephunter's Bloody Hook
 i(221234),	-- Tidal Pendant
-i(221235),	-- Fel Soldier's Cloak
+i(221235),	-- Dark Agent's Cloak \\ Fel Soldier's Cloak
 i(221236),	-- Stormbreaker's Shield
 i(221237),	-- Lamentable Vagrant's Lantern
 i(221238),	-- Pillar of Constructs
@@ -36385,7 +36370,7 @@ i(221811),	-- Starkstripe Hopper
 i(221812),	-- Player Experience
 i(221813),	-- [PH] Vicious Flying Nerubian (Horde)
 i(221819),	-- Shadowbog Hopper
-i(221820),	-- Kobold Fist-Thrower
+i(221820),	-- Chester \\ Kobold Fist-Thrower
 i(221821),	-- Waxwick
 i(221848),	-- Tiberius
 i(221849),	-- Vanilla
@@ -36495,8 +36480,8 @@ i(221952),	-- Prototype: Convincingly Realistic Jumper Cables
 i(221953),	-- Convincingly Realistic Jumper Cables
 i(221954),	-- Convincingly Realistic Jumper Cables
 i(221955),	-- Convincingly Realistic Jumper Cables
-i(221956),	-- Prototype: Repair Bot
-i(221957),	-- Repair Bot
+i(221956),	-- Prototype: Algari Repair Bot 11O \\ Prototype: Repair Bot
+i(221957),	-- Algari Repair Bot 11O \\ Repair Bot
 i(221958),	-- Prototype: Portable Profession Possibility Projector
 i(221959),	-- Portable Profession Possibility Projector
 i(221960),	-- Prototype: Barrel of Fireworks
@@ -36636,15 +36621,15 @@ i(222105),	-- Queen's Lurefish
 i(222106),	-- Cursed Ghoulfish
 i(222107),	-- Kah, King of the Deeps
 i(222108),	-- Khaz Algar Milling
-i(222109),	-- Algarian Treatise on Alchemy
-i(222110),	-- Algarian Treatise on Tailoring
-i(222111),	-- Algarian Treatise on Inscription
-i(222112),	-- Algarian Treatise on Leatherworking
-i(222113),	-- Algarian Treatise on Enchanting
-i(222114),	-- Algarian Treatise on Jewelcrafting
-i(222115),	-- Algarian Treatise on Herbalism
-i(222116),	-- Algarian Treatise on Mining
-i(222117),	-- Algarian Treatise on Blacksmithing
+i(222109),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
+i(222110),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
+i(222111),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription
+i(222112),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
+i(222113),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
+i(222114),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
+i(222115),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
+i(222116),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
+i(222117),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
 i(222118),	-- Codified Greenwood
 i(222119),	-- Codified Greenwood
 i(222120),	-- Codified Greenwood
@@ -36669,24 +36654,24 @@ i(222138),	-- Hasty Alchemist's Mixing Rod
 i(222139),	-- Patient Alchemist's Mixing Rod
 i(222140),	-- Burnt Rolling Pin
 i(222141),	-- Inscribed Rolling Pin
-i(222142),	-- Algarian Missive of the Aurora
-i(222143),	-- Algarian Missive of the Aurora
-i(222144),	-- Algarian Missive of the Aurora
-i(222145),	-- Algarian Missive of the Feverflare
-i(222146),	-- Algarian Missive of the Feverflare
-i(222147),	-- Algarian Missive of the Feverflare
-i(222148),	-- Algarian Missive of the Fireflash
-i(222149),	-- Algarian Missive of the Fireflash
-i(222150),	-- Algarian Missive of the Fireflash
-i(222151),	-- Algarian Missive of the Harmonious
-i(222152),	-- Algarian Missive of the Harmonious
-i(222153),	-- Algarian Missive of the Harmonious
-i(222154),	-- Algarian Missive of the Peerless
-i(222155),	-- Algarian Missive of the Peerless
-i(222156),	-- Algarian Missive of the Peerless
-i(222157),	-- Algarian Missive of the Quickblade
-i(222158),	-- Algarian Missive of the Quickblade
-i(222159),	-- Algarian Missive of the Quickblade
+i(222142),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(222143),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(222144),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(222145),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(222146),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(222147),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(222148),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(222149),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(222150),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(222151),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(222152),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(222153),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(222154),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(222155),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(222156),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(222157),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(222158),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(222159),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
 i(222160),	-- Contract: Earthen
 i(222161),	-- Contract: Earthen
 i(222162),	-- Contract: Earthen
@@ -36711,35 +36696,35 @@ i(222180),	-- Apricate Ink
 i(222181),	-- Apricate Pigment
 i(222182),	-- Apricate Pigment
 i(222183),	-- Apricate Pigment
-i(222184),	-- Algarian Treatise on Engineering
+i(222184),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
 i(222185),	-- Extraction: Evolve
 i(222186),	-- Extraction: Vivacity
 i(222187),	-- Extraction: Symbiosis
 i(222188),	-- Extraction: Shine
-i(222189),	-- Algarian Missive of Inspiration
-i(222190),	-- Algarian Missive of Inspiration
-i(222191),	-- Algarian Missive of Inspiration
-i(222192),	-- Algarian Missive of Resourcefulness
-i(222193),	-- Algarian Missive of Resourcefulness
-i(222194),	-- Algarian Missive of Resourcefulness
-i(222195),	-- Algarian Missive of Multicraft
-i(222196),	-- Algarian Missive of Multicraft
-i(222197),	-- Algarian Missive of Multicraft
-i(222198),	-- Algarian Missive of Crafting Speed
-i(222199),	-- Algarian Missive of Crafting Speed
-i(222200),	-- Algarian Missive of Crafting Speed
-i(222201),	-- Algarian Missive of Finesse
-i(222202),	-- Algarian Missive of Finesse
-i(222203),	-- Algarian Missive of Finesse
-i(222204),	-- Algarian Missive of Perception
-i(222205),	-- Algarian Missive of Perception
-i(222206),	-- Algarian Missive of Perception
-i(222207),	-- Algarian Missive of Deftness
-i(222208),	-- Algarian Missive of Deftness
-i(222209),	-- Algarian Missive of Deftness
-i(222210),	-- Algarian Treatise on Skinning
-i(222211),	-- Algarian Treatise on Skinning
-i(222212),	-- Algarian Treatise on Skinning
+i(222189),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(222190),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(222191),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(222192),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(222193),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(222194),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(222195),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(222196),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(222197),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(222198),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(222199),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(222200),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(222201),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(222202),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(222203),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(222204),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(222205),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(222206),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(222207),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(222208),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(222209),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(222210),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
+i(222211),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
+i(222212),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
 i(222213),	-- Darkmoon Deck: Symbiosis
 i(222214),	-- Ace of Symbiosis
 i(222215),	-- Two of Symbiosis
@@ -36962,8 +36947,8 @@ i(222434),	-- Everforged Legplates
 i(222435),	-- Everforged Vambraces
 i(222436),	-- Everforged Pauldrons
 i(222437),	-- Everforged Gauntlets
-i(222438),	-- Everforged Shortblade
-i(222439),	-- Everforged Spellblade
+i(222438),	-- Everforged Stabber \\ Everforged Shortblade
+i(222439),	-- Everforged Dagger \\ Everforged Spellblade
 i(222440),	-- Everforged Longsword
 i(222441),	-- Everforged Warglaive
 i(222442),	-- Everforged Mace
@@ -36995,15 +36980,15 @@ i(222467),	-- Ironclaw Knuckles
 i(222468),	-- Ironclaw Great Mace
 i(222469),	-- Ironclaw Axe
 i(222470),	-- Ironclaw Great Axe
-i(222471),	-- Ironclaw Sabatons
-i(222472),	-- Ironclaw Breastplate
-i(222473),	-- Ironclaw Greatbelt
-i(222474),	-- Ironclaw Defender
-i(222475),	-- Ironclaw Helm
-i(222476),	-- Ironclaw Legplates
-i(222477),	-- Ironclaw Vambraces
-i(222478),	-- Ironclaw Pauldrons
-i(222479),	-- Ironclaw Gauntlets
+i(222471),	-- Dredger's Plate Sabatons \\ Ironclaw Sabatons
+i(222472),	-- Dredger's Developed Breastplate \\ Ironclaw Breastplate
+i(222473),	-- Dredger's Plate Greatbelt \\ Ironclaw Greatbelt
+i(222474),	-- Dredger's Developed Defender \\ Ironclaw Defender
+i(222475),	-- Dredger's Developed Helm \\ Ironclaw Helm
+i(222476),	-- Dredger's Developed Legplates \\ Ironclaw Legplates
+i(222477),	-- Dredger's Plate Vambraces \\ Ironclaw Vambraces
+i(222478),	-- Dredger's Developed Pauldrons \\ Ironclaw Pauldrons
+i(222479),	-- Dredger's Developed Gauntlets \\ Ironclaw Gauntlets
 i(222480),	-- Proficient Sickle
 i(222481),	-- Proficient Pickaxe
 i(222482),	-- Proficient Skinning Knife
@@ -37026,15 +37011,15 @@ i(222498),	-- Earthen Master's Arsenal
 i(222499),	-- Forged Framework
 i(222500),	-- Forged Framework
 i(222501),	-- Forged Framework
-i(222502),	-- Ironclaw Weapon Stone
-i(222503),	-- Ironclaw Weapon Stone
-i(222504),	-- Ironclaw Weapon Stone
-i(222505),	-- Reinforced Handle
-i(222506),	-- Reinforced Handle
-i(222507),	-- Reinforced Handle
-i(222508),	-- Seasoned Skillet
-i(222509),	-- Seasoned Skillet
-i(222510),	-- Seasoned Skillet
+i(222502),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
+i(222503),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
+i(222504),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
+i(222505),	-- Ironclaw Razorstone \\ Reinforced Handle
+i(222506),	-- Ironclaw Razorstone \\ Reinforced Handle
+i(222507),	-- Ironclaw Razorstone \\ Reinforced Handle
+i(222508),	-- Ironclaw Weightstone \\ Seasoned Skillet
+i(222509),	-- Ironclaw Weightstone \\ Seasoned Skillet
+i(222510),	-- Ironclaw Weightstone \\ Seasoned Skillet
 i(222511),	-- Webbed Fishing Line
 i(222512),	-- Webbed Fishing Line
 i(222513),	-- Webbed Fishing Line
@@ -37070,15 +37055,15 @@ i(222542),	-- Queen's Lurefish
 i(222543),	-- Cursed Ghoulfish
 i(222544),	-- Kah, King of the Deeps
 i(222545),	-- Khaz Algar Milling
-i(222546),	-- Algarian Treatise on Alchemy
-i(222547),	-- Algarian Treatise on Tailoring
-i(222548),	-- Algarian Treatise on Inscription
-i(222549),	-- Algarian Treatise on Leatherworking
-i(222550),	-- Algarian Treatise on Enchanting
-i(222551),	-- Algarian Treatise on Jewelcrafting
-i(222552),	-- Algarian Treatise on Herbalism
-i(222553),	-- Algarian Treatise on Mining
-i(222554),	-- Algarian Treatise on Blacksmithing
+i(222546),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
+i(222547),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
+i(222548),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription
+i(222549),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
+i(222550),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
+i(222551),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
+i(222552),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
+i(222553),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
+i(222554),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
 i(222555),	-- Codified Greenwood
 i(222556),	-- Codified Greenwood
 i(222557),	-- Codified Greenwood
@@ -37103,24 +37088,24 @@ i(222575),	-- Hasty Alchemist's Mixing Rod
 i(222576),	-- Patient Alchemist's Mixing Rod
 i(222577),	-- Burnt Rolling Pin
 i(222578),	-- Inscribed Rolling Pin
-i(222579),	-- Algarian Missive of the Aurora
-i(222580),	-- Algarian Missive of the Aurora
-i(222581),	-- Algarian Missive of the Aurora
-i(222582),	-- Algarian Missive of the Feverflare
-i(222583),	-- Algarian Missive of the Feverflare
-i(222584),	-- Algarian Missive of the Feverflare
-i(222585),	-- Algarian Missive of the Fireflash
-i(222586),	-- Algarian Missive of the Fireflash
-i(222587),	-- Algarian Missive of the Fireflash
-i(222588),	-- Algarian Missive of the Harmonious
-i(222589),	-- Algarian Missive of the Harmonious
-i(222590),	-- Algarian Missive of the Harmonious
-i(222591),	-- Algarian Missive of the Peerless
-i(222592),	-- Algarian Missive of the Peerless
-i(222593),	-- Algarian Missive of the Peerless
-i(222594),	-- Algarian Missive of the Quickblade
-i(222595),	-- Algarian Missive of the Quickblade
-i(222596),	-- Algarian Missive of the Quickblade
+i(222579),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(222580),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(222581),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
+i(222582),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(222583),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(222584),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
+i(222585),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(222586),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(222587),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
+i(222588),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(222589),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(222590),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
+i(222591),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(222592),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(222593),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
+i(222594),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(222595),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
+i(222596),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
 i(222597),	-- Contract: Earthen
 i(222598),	-- Contract: Earthen
 i(222599),	-- Contract: Earthen
@@ -37133,50 +37118,50 @@ i(222605),	-- Contract: Nerubian
 i(222606),	-- Contract: Artisan
 i(222607),	-- Contract: Artisan
 i(222608),	-- Contract: Artisan
-i(222609),	-- Sable Ink
-i(222610),	-- Sable Ink
-i(222611),	-- Sable Ink
-i(222612),	-- Sable Pigment
-i(222613),	-- Sable Pigment
-i(222614),	-- Sable Pigment
+i(222609),	-- Shadow Ink \\ Sable Ink
+i(222610),	-- Shadow Ink \\ Sable Ink
+i(222611),	-- Shadow Ink \\ Sable Ink
+i(222612),	-- Luredrop Pigment \\ Sable Pigment
+i(222613),	-- Luredrop Pigment \\ Sable Pigment
+i(222614),	-- Luredrop Pigment \\ Sable Pigment
 i(222615),	-- Apricate Ink
 i(222616),	-- Apricate Ink
 i(222617),	-- Apricate Ink
-i(222618),	-- Apricate Pigment
-i(222619),	-- Apricate Pigment
-i(222620),	-- Apricate Pigment
-i(222621),	-- Algarian Treatise on Engineering
+i(222618),	-- Nacreous Pigment \\ Apricate Pigment
+i(222619),	-- Nacreous Pigment \\ Apricate Pigment
+i(222620),	-- Nacreous Pigment \\ Apricate Pigment
+i(222621),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
 i(222622),	-- Extraction: Evolve
 i(222623),	-- Extraction: Vivacity
 i(222624),	-- Extraction: Symbiosis
 i(222625),	-- Extraction: Shine
-i(222626),	-- Algarian Missive of Inspiration
-i(222627),	-- Algarian Missive of Inspiration
-i(222628),	-- Algarian Missive of Inspiration
-i(222629),	-- Algarian Missive of Resourcefulness
-i(222630),	-- Algarian Missive of Resourcefulness
-i(222631),	-- Algarian Missive of Resourcefulness
-i(222632),	-- Algarian Missive of Multicraft
-i(222633),	-- Algarian Missive of Multicraft
-i(222634),	-- Algarian Missive of Multicraft
-i(222635),	-- Algarian Missive of Crafting Speed
-i(222636),	-- Algarian Missive of Crafting Speed
-i(222637),	-- Algarian Missive of Crafting Speed
-i(222638),	-- Algarian Missive of Finesse
-i(222639),	-- Algarian Missive of Finesse
-i(222640),	-- Algarian Missive of Finesse
-i(222641),	-- Algarian Missive of Perception
-i(222642),	-- Algarian Missive of Perception
-i(222643),	-- Algarian Missive of Perception
-i(222644),	-- Algarian Missive of Deftness
-i(222645),	-- Algarian Missive of Deftness
-i(222646),	-- Algarian Missive of Deftness
-i(222647),	-- Algarian Treatise on Skinning
-i(222648),	-- Algarian Treatise on Skinning
-i(222649),	-- Algarian Treatise on Skinning
-i(222650),	-- Inquisitor's Greenwood Bow
-i(222651),	-- Vagabond's Alacrity
-i(222652),	-- Colors of the Wind
+i(222626),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(222627),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(222628),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
+i(222629),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(222630),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(222631),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
+i(222632),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(222633),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(222634),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
+i(222635),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(222636),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(222637),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
+i(222638),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(222639),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(222640),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
+i(222641),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(222642),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(222643),	-- Algari Missive of Perception \\ Algarian Missive of Perception
+i(222644),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(222645),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(222646),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
+i(222647),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
+i(222648),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
+i(222649),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
+i(222650),	-- DNT Inquisitor's Greenwood Bow (Deprecated) \\ Inquisitor's Greenwood Bow
+i(222651),	-- DNT Vagabond's Alacrity (Deprecated) \\ Vagabond's Alacrity
+i(222652),	-- DNT Colors of the Wind (Deprecated) \\ Colors of the Wind
 i(222653),	-- Darkmoon Deck: Symbiosis
 i(222654),	-- Ace of Symbiosis
 i(222655),	-- Two of Symbiosis
@@ -37313,21 +37298,21 @@ i(222785),	-- zzold cooking recipe
 i(222786),	-- zzold cooking recipe
 i(222787),	-- zzold cooking recipe
 i(222788),	-- Unraveling
-i(222789),	-- Duskthread
-i(222790),	-- Duskthread
-i(222791),	-- Duskthread
-i(222792),	-- Dawnthread
-i(222793),	-- Dawnthread
-i(222794),	-- Dawnthread
-i(222795),	-- Weavercloth
-i(222796),	-- Weavercloth
-i(222797),	-- Weavercloth
-i(222798),	-- Duskthread Bolt
-i(222799),	-- Duskthread Bolt
-i(222800),	-- Duskthread Bolt
-i(222801),	-- Dawnthread Bolt
-i(222802),	-- Dawnthread Bolt
-i(222803),	-- Dawnthread Bolt
+i(222789),	-- Spool of Duskthread \\ Duskthread
+i(222790),	-- Spool of Duskthread \\ Duskthread
+i(222791),	-- Spool of Duskthread \\ Duskthread
+i(222792),	-- Spool of Dawnthread \\ Dawnthread
+i(222793),	-- Spool of Dawnthread \\ Dawnthread
+i(222794),	-- Spool of Dawnthread \\ Dawnthread
+i(222795),	-- Spool of Weaverthread \\ Weavercloth
+i(222796),	-- Spool of Weaverthread \\ Weavercloth
+i(222797),	-- Spool of Weaverthread \\ Weavercloth
+i(222798),	-- Duskweave Bolt \\ Duskthread Bolt
+i(222799),	-- Duskweave Bolt \\ Duskthread Bolt
+i(222800),	-- Duskweave Bolt \\ Duskthread Bolt
+i(222801),	-- Dawnweave Bolt \\ Dawnthread Bolt
+i(222802),	-- Dawnweave Bolt \\ Dawnthread Bolt
+i(222803),	-- Dawnweave Bolt \\ Dawnthread Bolt
 i(222804),	-- Weavercloth Bolt
 i(222805),	-- Weavercloth Bolt
 i(222806),	-- Weavercloth Bolt
@@ -37356,15 +37341,15 @@ i(222828),	-- Vicious Combatant's Weavercloth Robe
 i(222829),	-- Vicious Combatant's Weavercloth Pants
 i(222830),	-- Vicious Combatant's Weavercloth Mantle
 i(222831),	-- Vicious Combatant's Weavercloth Gloves
-i(222832),	-- Weavercloth Slippers
-i(222833),	-- Weavercloth Cuffs
-i(222834),	-- Weavercloth Cord
-i(222835),	-- Weavercloth Cloak
-i(222836),	-- Weavercloth Hood
-i(222837),	-- Weavercloth Robe
-i(222838),	-- Weavercloth Leggings
-i(222839),	-- Weavercloth Mantle
-i(222840),	-- Weavercloth Gloves
+i(222832),	-- Pioneer's Cloth Slippers \\ Weavercloth Slippers
+i(222833),	-- Pioneer's Cloth Cuffs \\ Weavercloth Cuffs
+i(222834),	-- Pioneer's Perfected Cord \\ Weavercloth Cord
+i(222835),	-- Pioneer's Perfected Cloak \\ Weavercloth Cloak
+i(222836),	-- Pioneer's Perfected Hood \\ Weavercloth Hood
+i(222837),	-- Pioneer's Cloth Robe \\ Weavercloth Robe
+i(222838),	-- Pioneer's Perfected Leggings \\ Weavercloth Leggings
+i(222839),	-- Pioneer's Perfected Mantle \\ Weavercloth Mantle
+i(222840),	-- Pioneer's Perfected Gloves \\ Weavercloth Gloves
 i(222841),	-- Weavercloth Gardening Hat
 i(222842),	-- Weavercloth Fishing Cap
 i(222843),	-- Weavercloth Enchanter's Hat
@@ -37378,9 +37363,9 @@ i(222850),	-- Artisan's Alchemist's Robe
 i(222851),	-- Artisan's Chef's Hat
 i(222852),	-- Venerated Robes of the Eclipse
 i(222853),	-- Weavercloth Bag
-i(222854),	-- Dawnthread Bag
+i(222854),	-- Dawnweave Bag \\ Dawnthread Bag
 i(222855),	-- Weavercloth Reagent Bag
-i(222856),	-- Duskthread Bag
+i(222856),	-- Duskweave Bag \\ Duskthread Bag
 i(222857),	-- Satchel of the Long Day
 i(222858),	-- Satchel of the Long Night
 i(222859),	-- Alchemy Bag
@@ -37456,7 +37441,7 @@ i(222970),	-- Fuzzy
 i(222971),	-- Bouncer
 i(222972),	-- Jump Jump
 i(222973),	-- Fringe
-i(222974),	-- Nightshade
+i(222974),	-- Sir Shady Mrgglton Junior \\ Nightshade
 i(222975),	-- Umbral Amalgam [DNT]
 i(222976),	-- Flame-Tempered Harpoon
 i(222977),	-- Scorched Junk
@@ -37536,16 +37521,16 @@ i(223061),	-- Technique: Inscribed Rolling Pin
 i(223062),	-- Technique: Contract: Earthen
 i(223063),	-- Technique: Contract: Arathor
 i(223064),	-- Technique: Contract: Nerubian
-i(223065),	-- Technique: Algarian Missive of Ingenuity
-i(223066),	-- Technique: Algarian Missive of Resourcefulness
-i(223067),	-- Technique: Algarian Missive of Multicraft
-i(223068),	-- Technique: Algarian Missive of Crafting Speed
-i(223069),	-- Technique: Algarian Missive of Finesse
-i(223070),	-- Technique: Algarian Missive of Perception
-i(223071),	-- Technique: Algarian Missive of Deftness
+i(223065),	-- Technique: Algari Missive of Ingenuity \\ Technique: Algarian Missive of Ingenuity
+i(223066),	-- Technique: Algari Missive of Resourcefulness \\ Technique: Algarian Missive of Resourcefulness
+i(223067),	-- Technique: Algari Missive of Multicraft \\ Technique: Algarian Missive of Multicraft
+i(223068),	-- Technique: Algari Missive of Crafting Speed \\ Technique: Algarian Missive of Crafting Speed
+i(223069),	-- Technique: Algari Missive of Finesse \\ Technique: Algarian Missive of Finesse
+i(223070),	-- Technique: Algari Missive of Perception \\ Technique: Algarian Missive of Perception
+i(223071),	-- Technique: Algari Missive of Deftness \\ Technique: Algarian Missive of Deftness
 i(223072),	-- Technique: Colors of the Wind [DEPRECATED] \\ Technique: Colors of the Wind
 i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
-i(223080),	-- Recipe: Algarian Alchemist Stone \\ Recipe: Everything Stew
+i(223080),	-- Recipe: Algari Alchemist Stone \\ Recipe: Algarian Alchemist Stone \\ Recipe: Everything Stew
 i(223082),	-- Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
 i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
 i(223084),	-- Design: Prismatic Null Stone \\ Pattern: Artisan Enchanter's Hat
@@ -37593,10 +37578,10 @@ i(223125),	-- Formula: Weapon Oil 3
 i(223126),	-- Formula: Enchant Chest - Stormrider's Agility
 i(223127),	-- Formula: Enchant Chest - Council's Intellect
 i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength
-i(223129),	-- Formula: Enchant Tool - Algarian Deftness
-i(223130),	-- Formula: Enchant Tool - Algarian Finesse
-i(223131),	-- Formula: Enchant Tool - Algarian Perception
-i(223132),	-- Formula: Enchant Tool - Algarian Resourcefulness
+i(223129),	-- Formula: Enchant Tool - Algari Deftness \\ Formula: Enchant Tool - Algarian Deftness
+i(223130),	-- Formula: Enchant Tool - Algari Finesse \\ Formula: Enchant Tool - Algarian Finesse
+i(223131),	-- Formula: Enchant Tool - Algari Perception \\ Formula: Enchant Tool - Algarian Perception
+i(223132),	-- Formula: Enchant Tool - Algari Resourcefulness \\ Formula: Enchant Tool - Algarian Resourcefulness
 i(223133),	-- Formula: Illusory Adornment: Crystal
 i(223134),	-- Formula: Illusory Adornment: Radiance
 i(223135),	-- Formula: Illusory Adornment: Shadow
@@ -37661,10 +37646,10 @@ i(223310),	-- Wristwraps of Fading Luminescence
 i(223311),	-- Armguards of Dimming Fluorescence
 i(223312),	-- Trusty Hat
 i(223313),	-- [PH] Shadow Elemental (Black)
-i(223314),	-- [PH] Shadow Elemental (Gold)
+i(223314),	-- Shackled Shadow \\ [PH] Shadow Elemental (Gold)
 i(223315),	-- [PH] Shadow Elemental (Purple)
 i(223316),	-- Trusty Hat
-i(223317),	-- [PH] ArathiLynxMount (Red Fur, Red Armor)
+i(223317),	-- Vermillion Imperial Lynx \\ [PH] ArathiLynxMount (Red Fur, Red Armor)
 i(223318),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 i(223319),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
@@ -37808,7 +37793,7 @@ i(223573),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
 i(223574),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
 i(223584),	-- Algari Scepter
 i(223585),	-- [PH] Algari Bladefist
-i(223586),	-- [PH] Gold Armored Fel Bat Gladiator Mount
+i(223586),	-- Forged Gladiator's Fel Bat \\ [PH] Gold Armored Fel Bat Gladiator Mount
 i(223587),	-- [PH] Silver Armored Fel Bat Gladiator Mount
 i(223588),	-- Algari Fighting Knife
 i(223616),	-- [PH] 11.0 PVP - Gladiator's Tabard
@@ -37881,21 +37866,21 @@ i(223689),	-- Enchant Chest - Oathsworn's Strength
 i(223690),	-- Enchant Chest - Crystalline Radiance
 i(223691),	-- Enchant Chest - Crystalline Radiance
 i(223692),	-- Enchant Chest - Crystalline Radiance
-i(223693),	-- Enchant Tool - Algarian Deftness
-i(223694),	-- Enchant Tool - Algarian Deftness
-i(223695),	-- Enchant Tool - Algarian Deftness
-i(223696),	-- Enchant Tool - Algarian Finesse
-i(223697),	-- Enchant Tool - Algarian Finesse
-i(223698),	-- Enchant Tool - Algarian Finesse
-i(223699),	-- Enchant Tool - Algarian Ingenuity
-i(223700),	-- Enchant Tool - Algarian Ingenuity
-i(223701),	-- Enchant Tool - Algarian Ingenuity
-i(223702),	-- Enchant Tool - Algarian Perception
-i(223703),	-- Enchant Tool - Algarian Perception
-i(223704),	-- Enchant Tool - Algarian Perception
-i(223705),	-- Enchant Tool - Algarian Resourcefulness
-i(223706),	-- Enchant Tool - Algarian Resourcefulness
-i(223707),	-- Enchant Tool - Algarian Resourcefulness
+i(223693),	-- Enchant Tool - Algari Deftness \\ Enchant Tool - Algarian Deftness
+i(223694),	-- Enchant Tool - Algari Deftness \\ Enchant Tool - Algarian Deftness
+i(223695),	-- Enchant Tool - Algari Deftness \\ Enchant Tool - Algarian Deftness
+i(223696),	-- Enchant Tool - Algari Finesse \\ Enchant Tool - Algarian Finesse
+i(223697),	-- Enchant Tool - Algari Finesse \\ Enchant Tool - Algarian Finesse
+i(223698),	-- Enchant Tool - Algari Finesse \\ Enchant Tool - Algarian Finesse
+i(223699),	-- Enchant Tool - Algari Ingenuity \\ Enchant Tool - Algarian Ingenuity
+i(223700),	-- Enchant Tool - Algari Ingenuity \\ Enchant Tool - Algarian Ingenuity
+i(223701),	-- Enchant Tool - Algari Ingenuity \\ Enchant Tool - Algarian Ingenuity
+i(223702),	-- Enchant Tool - Algari Perception \\ Enchant Tool - Algarian Perception
+i(223703),	-- Enchant Tool - Algari Perception \\ Enchant Tool - Algarian Perception
+i(223704),	-- Enchant Tool - Algari Perception \\ Enchant Tool - Algarian Perception
+i(223705),	-- Enchant Tool - Algari Resourcefulness \\ Enchant Tool - Algarian Resourcefulness
+i(223706),	-- Enchant Tool - Algari Resourcefulness \\ Enchant Tool - Algarian Resourcefulness
+i(223707),	-- Enchant Tool - Algari Resourcefulness \\ Enchant Tool - Algarian Resourcefulness
 i(223708),	-- Enchant Bracer - Whisper of Avoidance
 i(223709),	-- Enchant Bracer - Whisper of Avoidance
 i(223710),	-- Enchant Bracer - Whisper of Avoidance
@@ -38223,9 +38208,9 @@ i(224101),	-- Brown Leafbug
 i(224102),	-- Chunked Kobyss Innards
 i(224103),	-- Uncertain Kobyss Innards
 i(224104),	-- Flashfire Thurible
-i(224105),	-- Algarian Mana Oil
-i(224106),	-- Algarian Mana Oil
-i(224107),	-- Algarian Mana Oil
+i(224105),	-- Algari Mana Oil \\ Algarian Mana Oil
+i(224106),	-- Algari Mana Oil \\ Algarian Mana Oil
+i(224107),	-- Algari Mana Oil \\ Algarian Mana Oil
 i(224108),	-- Oil of Beladar's Grace
 i(224109),	-- Oil of Beladar's Grace
 i(224110),	-- Oil of Beladar's Grace
@@ -38391,10 +38376,10 @@ i(224442),	-- Weavercloth Bandage
 i(224449),	-- Fearbreaker's Echo
 i(224450),	-- Lil' Moss Rosy
 i(224451),	-- Triangulation Matrix
-i(224453),	-- Dalaran Cowl
-i(224454),	-- Dalaran Hood
-i(224455),	-- Dalaran Chestguard
-i(224456),	-- Dalaran Greaves
+i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
+i(224454),	-- City Guard's Mask \\ Dalaran Hood
+i(224455),	-- City Guard's Chainmail \\ Dalaran Chestguard
+i(224456),	-- City Guard's Greaves \\ Dalaran Greaves
 i(224457),	-- Lil Piggy
 i(224460),	-- The Lost Diary
 i(224462),	-- The Ear
@@ -38426,57 +38411,57 @@ i(224585),	-- Hanna's Locket
 i(224586),	-- Box o' Booms
 i(224587),	-- Box o' Booms
 i(224588),	-- Box o' Booms
-i(224589),	-- [PH] 11.0 - Cord
-i(224590),	-- [PH] Lightning-Scarred Cowl
-i(224591),	-- [PH] Stormrider's Cuffs
-i(224592),	-- [PH] The Fallen Queen's Band
-i(224593),	-- [PH] 11.0 - Signet
-i(224594),	-- [PH] Element-Attuned Pendant
-i(224595),	-- [PH] Light Boots of the Ringing Deeps
-i(224596),	-- [PH] Handwraps of the Weaver
-i(224597),	-- [PH] Algari Warden's Vestment
-i(224598),	-- [PH] 11.0 - Leggings
-i(224599),	-- [PH] Saboteur's Shoulderpads
-i(224600),	-- [PH] 11.0 - Waders
-i(224601),	-- [PH] Saboteur's Grips
-i(224602),	-- [PH] Algari Warden's Hood
-i(224603),	-- [PH] 11.0 - Breeches
-i(224604),	-- [PH] Sash of the Weaver
-i(224605),	-- [PH] Stormrider's Bindings
-i(224606),	-- [PH] Lightning-Scarred Vest
-i(224607),	-- [PH] Epaulets of the Ringing Deeps
-i(224608),	-- [PH] 11.0 - Chainmail
-i(224609),	-- [PH] Saboteur's Striders
-i(224610),	-- [PH] Grips of the Ringing Deeps
-i(224611),	-- [PH] Lightning-Scarred Coif
-i(224612),	-- [PH] Algari Warden's Greaves
-i(224613),	-- [PH] Shoulderguards of the Weaver
-i(224614),	-- [PH] 11.0 - Cinch
-i(224615),	-- [PH] Stormrider's Bracers
-i(224616),	-- [PH] Algari Warden's Helm
-i(224617),	-- [PH] 11.0 - Breastplate
-i(224618),	-- [PH] Sabatons of the Ringing Deeps
-i(224619),	-- [PH] 11.0 - Gauntlets
-i(224620),	-- [PH] Lightning-Scarred Legguards
-i(224621),	-- [PH] Mantle of the Weaver
-i(224622),	-- [PH] Saboteur's Girdle
-i(224623),	-- [PH] Stormrider's Armplates
-i(224624),	-- [PH] Drape of the Lamplighter
-i(224625),	-- [PH] Algari Spear
-i(224626),	-- [PH] Algari Heavy Staff
-i(224627),	-- [PH] Algari Rifle
-i(224628),	-- [PH] Algari Greatsword
-i(224629),	-- [PH] Algari Short Axe
-i(224630),	-- [PH] Algari Spellcleaver
-i(224631),	-- [PH] Algari Scepter
-i(224632),	-- [PH] Algari Fighting Knife
-i(224633),	-- [PH] Algari Heavy Axe
-i(224634),	-- [PH] Algari Mace
-i(224635),	-- [PH] Algari Shield
-i(224636),	-- [PH] Algari Dagger
-i(224637),	-- [PH] Algari Censer
-i(224638),	-- [PH] Algari Warglaive
-i(224639),	-- [PH] Algari Hatchet
+i(224589),	-- Deep-Dweller's Cincture \\ [PH] 11.0 - Cord
+i(224590),	-- Deep-Dweller's Cowl \\ [PH] Lightning-Scarred Cowl
+i(224591),	-- Deep-Dweller's Wraps \\ [PH] Stormrider's Cuffs
+i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
+i(224593),	-- Spinner's Circlet \\ [PH] 11.0 - Signet
+i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
+i(224595),	-- Deep-Dweller's Slippers \\ [PH] Light Boots of the Ringing Deeps
+i(224596),	-- Deep-Dweller's Mitts \\ [PH] Handwraps of the Weaver
+i(224597),	-- Deep-Dweller's Kaftan \\ [PH] Algari Warden's Vestment
+i(224598),	-- Deep-Dweller's Leggings \\ [PH] 11.0 - Leggings
+i(224599),	-- Deep-Dweller's Shoulderpads \\ [PH] Saboteur's Shoulderpads
+i(224600),	-- Underscout's Striders \\ [PH] 11.0 - Waders
+i(224601),	-- Underscout's Gloves \\ [PH] Saboteur's Grips
+i(224602),	-- Underscout's Cap \\ [PH] Algari Warden's Hood
+i(224603),	-- Underscout's Trousers \\ [PH] 11.0 - Breeches
+i(224604),	-- Underscout's Cord \\ [PH] Sash of the Weaver
+i(224605),	-- Underscout's Bracers \\ [PH] Stormrider's Bindings
+i(224606),	-- Underscout's Jerkin \\ [PH] Lightning-Scarred Vest
+i(224607),	-- Underscout's Shoulderguards \\ [PH] Epaulets of the Ringing Deeps
+i(224608),	-- Expeditionary Brigandine \\ [PH] 11.0 - Chainmail
+i(224609),	-- Expeditionary Boots \\ [PH] Saboteur's Striders
+i(224610),	-- Expeditionary Gauntlets \\ [PH] Grips of the Ringing Deeps
+i(224611),	-- Expeditionary Helm \\ [PH] Lightning-Scarred Coif
+i(224612),	-- Expeditionary Shinguards \\ [PH] Algari Warden's Greaves
+i(224613),	-- Expeditionary Epaulets \\ [PH] Shoulderguards of the Weaver
+i(224614),	-- Expeditionary Belt \\ [PH] 11.0 - Cinch
+i(224615),	-- Expeditionary Bracers \\ [PH] Stormrider's Bracers
+i(224616),	-- Stalwart Greathelm \\ [PH] Algari Warden's Helm
+i(224617),	-- Stalwart Breastplate \\ [PH] 11.0 - Breastplate
+i(224618),	-- Stalwart Sabatons \\ [PH] Sabatons of the Ringing Deeps
+i(224619),	-- Stalwart Handguards \\ [PH] 11.0 - Gauntlets
+i(224620),	-- Stalwart Faulds \\ [PH] Lightning-Scarred Legguards
+i(224621),	-- Stalwart Shoulder Scales \\ [PH] Mantle of the Weaver
+i(224622),	-- Stalward Girdle \\ [PH] Saboteur's Girdle
+i(224623),	-- Stalwart Cuffs \\ [PH] Stormrider's Armplates
+i(224624),	-- Spinner's Shawl \\ [PH] Drape of the Lamplighter
+i(224625),	-- Expeditionary Spear \\ [PH] Algari Spear
+i(224626),	-- Deep-Dweller's Staff \\ [PH] Algari Heavy Staff
+i(224627),	-- Arathi Arquebus \\ [PH] Algari Rifle
+i(224628),	-- Arathi Claymore \\ [PH] Algari Greatsword
+i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
+i(224630),	-- Deep-Dweller's Battleaxe \\ [PH] Algari Spellcleaver
+i(224631),	-- Deep-Dweller's Cudgel \\ [PH] Algari Scepter
+i(224632),	-- Underscout's Kukri \\ [PH] Algari Fighting Knife
+i(224633),	-- Arathi Greataxe \\ [PH] Algari Heavy Axe
+i(224634),	-- Arathi Mace \\ [PH] Algari Mace
+i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
+i(224636),	-- Deep-Dweller's Dirk \\ [PH] Algari Dagger
+i(224637),	-- Deep-Dweller's Orb \\ [PH] Algari Censer
+i(224638),	-- Underscout's Glaive \\ [PH] Algari Warglaive
+i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 i(224640),	-- Invent
 i(224644),	-- Lava-Forged Cogwheel
 i(224645),	-- [DNT] Renown Alchemy Knowledge
@@ -38545,3 +38530,78 @@ i(224710),	-- Ancient Forged Spellstaff
 i(224711),	-- Ancient Forged Curio
 i(224712),	-- Ancient Forged Shield
 i(224713),	-- Ancient Forged Glaive
+11.0.0.54521
+i(224642),	-- Firelight Ruby
+i(224643),	-- Pet-Sized Candle
+i(224646),	-- Coppers the Kobold
+i(224650),	-- Wax Sealed Pouch
+i(224716),	-- [PH] Skewered Slum Shark
+i(224717),	-- [PH] Ensemble: Cerulean Dredger
+i(224718),	-- [PH] Surface Tipper's Toes
+i(224719),	-- [PH] Evasive Angler's Treads
+i(224720),	-- [PH] Keen Angler's Eye
+i(224728),	-- [PH] Rollin' Barrel
+i(224729),	-- [PH] Slum Shark Tooth
+i(224730),	-- [PH] Derby Dashers
+i(224762),	-- Delver's Waterskin
+i(224763),	-- Design: Cubic Blasphemia
+i(224764),	-- Mosswool Thread
+i(224765),	-- Everburning Ignition
+i(224766),	-- Faithful Dog
+i(224767),	-- Giant Candle Parts
+i(224768),	-- Airship: Wing-Mounted Propeller
+i(224769),	-- Airship: Rotor Blades
+i(224770),	-- Airship: Front-Mounted Propeller
+i(224771),	-- Airship: Empennage
+i(224773),	-- Knicknack's Red Candle
+i(224774),	-- Knicknack's Potion Bottle
+i(224775),	-- Knicknack's Definitely Rubies
+i(224777),	-- Sureki Shadecaster
+i(224778),	-- Knicknack's Enbiggener
+i(224779),	-- Alhainr's Skull
+i(224780),	-- Toughened Thunderous Hide
+i(224781),	-- Abyssal Fur
+i(224782),	-- Razor Talon
+i(224783),	-- Sovereign Finery Chest
+i(224784),	-- Pinnacle Cache
+i(224786),	-- Skeleton King Outfit
+i(224791),	-- Golden Ruler Outfit
+i(224792),	-- Sanguine Aristocrat Outfit
+i(224799),	-- Nizrek's potion
+i(224800),	-- Orbinid Pigment
+i(224801),	-- Orbinid Pigment
+i(224802),	-- Orbinid Pigment
+i(224803),	-- Blossom Pigment
+i(224804),	-- Blossom Pigment
+i(224805),	-- Blossom Pigment
+i(224807),	-- Algari Skinning Notes
+i(224808),	-- Opal Ore
+i(224809),	-- Earthen Plumber's Pipe
+i(224810),	-- Woodworm Elixir
+i(224811),	-- Sugar Shrooms
+i(224813),	-- Big Cat Whistle
+i(224814),	-- Adventurer's Warbound Boots
+i(224815),	-- Charm Of The Flame
+i(224816),	-- Nerubian Almanac
+i(224817),	-- Algari Herbalism Notes
+i(224818),	-- Algari Mining Notes
+i(224822),	-- Scour Through Scrap
+i(224823),	-- Shredded Weavercloth
+i(224824),	-- Duskweave Scraps
+i(224826),	-- Dawnweave Scraps
+i(224828),	-- Weavercloth
+i(224831),	-- Cube of Infinite Inventions (PTR Only)
+i(224832),	-- Exquisite Weavercloth Bolt
+i(224833),	-- Exquisite Weavercloth Bolt
+i(224834),	-- Exquisite Weavercloth Bolt
+i(224835),	-- Deepgrove Roots
+i(224837),	-- Cursed Pickaxe
+i(224838),	-- Null Sliver
+i(224839),	-- Warbound Adventurer's Wrists
+i(224840),	-- Adventurer's Warbound Waist
+i(224841),	-- Adventurer's Warbound Shoulders
+i(224842),	-- Adventurer's Warbound Legs
+i(224843),	-- Adventurer's Warbound Headpiece
+i(224844),	-- Adventurer's Warbound Gloves
+i(224845),	-- Adventurer's Warbound Chestpiece
+i(224852),	-- Exquisite Algari Satchel

@@ -1105,9 +1105,9 @@ r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
 11.0.0.54311
 r(423339),	-- Khaz Algar Jewelcrafting
-r(434018),	-- Algarian Prospecting
+r(434018),	-- Algari Prospecting \\ Algarian Prospecting
 r(434019),	-- Recraft Equipment
-r(434020),	-- Algarian Crushing
+r(434020),	-- Algari Crushing \\ Algarian Crushing
 r(434536),	-- Solid Amber
 r(434537),	-- Deadly Amber
 r(434538),	-- Quick Amber
@@ -2290,9 +2290,9 @@ r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
 11.0.0.54311
 r(423339),	-- Khaz Algar Jewelcrafting
-r(434018),	-- Algarian Prospecting
+r(434018),	-- Algari Prospecting \\ Algarian Prospecting
 r(434019),	-- Recraft Equipment
-r(434020),	-- Algarian Crushing
+r(434020),	-- Algari Crushing \\ Algarian Crushing
 r(434536),	-- Solid Amber
 r(434537),	-- Deadly Amber
 r(434538),	-- Quick Amber
