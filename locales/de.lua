@@ -436,6 +436,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrison
@@ -479,6 +480,7 @@ for key,value in pairs({
 		[-10071] = "Visionen von N'Zoth",							-- Visions of N'Zoth
 })
 do a[key] = value; end
+end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
@@ -807,6 +809,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
@@ -816,3 +819,4 @@ for key,value in pairs({
 	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
 })
 do a[key] = value; end
+end

@@ -452,6 +452,8 @@ if GetLocale() == "zhTW" then
 	a["『帷幕市集』塔札維許"] = "塔札維許"	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 end
 
+
+if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrisons
@@ -525,6 +527,7 @@ if GetLocale() == "zhTW" then
 	a[-1101] = "洪荒風暴";												-- Primal Storms
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
+end
 end
 
 local a = L.SETTINGS_MENU;
@@ -857,6 +860,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 local a = L.AVAILABILITY_CONDITIONS;
 for key,value in pairs({
 	-- Arbitrary Filters
@@ -872,7 +876,9 @@ for key,value in pairs({
 	[45] = {1, "|CFFFF0000暴雪的拾取更改损坏了几件物品，使其无法获得。\n“绞肉机”奥戈姆，和奥杜尔英雄模式物品目前已损坏，需要修复。|r", "拾取损坏"},	--TODO: |CFFFF0000Blizzard's loot changes broke several items and made them unobtainable.|r
 })
 do a[key] = value; end
+end
 
+if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
@@ -881,3 +887,4 @@ for key,value in pairs({
 	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "只有角色 |cffff0000没有|r 获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
 })
 do a[key] = value; end
+end

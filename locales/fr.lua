@@ -47,7 +47,9 @@ local L = app.L;
 	L.HEIRLOOM_TEXT_DESC = "Indique si vous avez ou non déjà acquis ou acheté l’objet d’héritage.";
 	L.FAILED_ITEM_INFO = "Échec de l’acquisition des informations pour cet objet. Il se peut que l’objet soit pas valide ou qu’il n’ait pas encore été mis en cache sur votre serveur.";
 	L.HEIRLOOMS_UPGRADES_DESC = "Indique si vous avez ou non amélioré l’objet d’héritage à un certain niveau.\n\nBye bye votre Or.\n- Crieve";
+	if app.IsRetail then
 	L.MUSIC_ROLLS_AND_SELFIE_DESC = "Ils sont débloqués par personnage et ne sont actuellement pas partagés sur l’ensemble de votre compte. Si une personne de chez Blizzard lit ceci, ce serait vraiment bien si vous les rendiez "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..". Vous devez rafraîchir manuellement l’addon via "..SHIFT_KEY_TEXT.." + clic sur l’en-tête pour que ce soit détecté.";
+	end
 	L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\nVous devez d’abord débloquer les rouleaux de musique en accomplissant la quête À fond les basses ! dans votre garnison de fief pour pouvoir avoir cet objet.\n\nLes selfies nécessitent le jouet Appareil photo P.R.O.F.I.L.";
 	L.OPPOSITE_FACTION_EQ = "Équivalent de la faction opposée : ";
 	L.SELFIE_DESC = "Prenez un selfie en utilisant votre ";
@@ -443,6 +445,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Allied Races
@@ -503,6 +506,7 @@ for key,value in pairs({
 		[-10082] = "Zone perdue",									-- Lost Area
 })
 do a[key] = value; end
+end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
@@ -831,6 +835,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
@@ -840,3 +845,4 @@ for key,value in pairs({
 	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Seul un personnage |cffff0000n’ayant pas|r obtenu le |cffe6cc80"..GetSpellInfo(275825).."|r peut collecter ceci." },
 })
 do a[key] = value; end
+end

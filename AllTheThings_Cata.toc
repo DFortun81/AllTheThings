@@ -41,15 +41,15 @@ lib\Audio.lua
 # Load localization modules
 locales\Default Locale.lua
 # locales\en.lua
-# locales\es.lua
-# locales\de.lua
-# locales\fr.lua
-# locales\it.lua
-# locales\ko.lua
-# locales\pt.lua
-# locales\ru.lua
-# locales\cn.lua
 classic\locales.lua
+locales\es.lua
+locales\de.lua
+locales\fr.lua
+locales\it.lua
+locales\ko.lua
+locales\pt.lua
+locales\ru.lua
+locales\cn.lua
 
 # Search Cache
 src\Cache.lua

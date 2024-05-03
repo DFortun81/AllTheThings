@@ -42,12 +42,16 @@ local L = app.L;
 	--TODO: L.ARTIFACT_INTRO_REWARD = "Awarded for completing the introductory quest for this Artifact.";
 	--TODO: L.VISIT_FLIGHT_MASTER = "Visit the Flight Master to cache.";
 	--TODO: L.FLIGHT_PATHS_DESC = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
+	if app.IsRetail then
 	L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
+	end
 	--TODO: L.HEIRLOOM_TEXT = "Unlocked Heirloom";
 	--TODO: L.HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
 	--TODO: L.FAILED_ITEM_INFO = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
 	--TODO: L.HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
+	if app.IsRetail then
 	L.MUSIC_ROLLS_AND_SELFIE_DESC = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
+	end
 	--TODO: L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.\n\nSelfies require the S.E.L.F.I.E Toy.";
 	--TODO: L.OPPOSITE_FACTION_EQ = "Opposite faction equivalent: ";
 	--TODO: L.SELFIE_DESC = "Take a selfie using your ";
@@ -444,6 +448,8 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+
+if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Allied Races
@@ -470,6 +476,7 @@ for key,value in pairs({
 			[-5202] = "Equilibrio di potere",						-- Balance of Power
 })
 do a[key] = value; end
+end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
@@ -803,6 +810,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
@@ -812,3 +820,4 @@ for key,value in pairs({
 	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
 })
 do a[key] = value; end
+end

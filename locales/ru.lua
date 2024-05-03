@@ -435,6 +435,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrison
@@ -506,6 +507,7 @@ for key,value in pairs({
 		[-10082] = "Захваченная область",							-- Lost Area
 })
 do a[key] = value; end
+end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
@@ -834,6 +836,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+if app.IsRetail then
 local a = L.AVAILABILITY_CONDITIONS;
 for key,value in pairs({
 	[1] = {1, "|CFFFF0000Никогда не был доступен игрокам.|r", "Никогда Не Доступны"}, -- No Hope
@@ -864,3 +867,4 @@ for key,value in pairs({
 	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000Без|r Сердца Азерот", desc = "Только Персонаж |cffff0000без|r |cffe6cc80Сердца Азерот|r может собрать эти предметы." },
 })
 do a[key] = value; end
+end
