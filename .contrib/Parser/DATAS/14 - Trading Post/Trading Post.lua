@@ -1673,7 +1673,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6} }, {
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
 			n(MONTHLY_REWARD, {
 				i(210409),	-- Aura (PET!)
 			}),
@@ -1830,7 +1830,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
+		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 10.2.7.99999" } }, {
 			n(MONTHLY_REWARD, {
 				i(212613),	-- Wings of the Amber Monarch
 			}),
