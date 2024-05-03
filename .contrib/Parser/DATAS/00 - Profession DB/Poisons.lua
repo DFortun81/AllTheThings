@@ -17,8 +17,6 @@ i(0, 439500);	-- Sebacious Poison
 i(0, 6510);			-- Blinding Powder
 i(0, 3420);			-- Crippling Poison
 i(0, 3421);			-- Crippling Poison II
-i(0, 2818);			-- Deadly Poison
-i(0, 2823);			-- Deadly Poison
 i(0, 2835);			-- Deadly Poison
 i(0, 2837);			-- Deadly Poison II
 i(0, 11357);		-- Deadly Poison III

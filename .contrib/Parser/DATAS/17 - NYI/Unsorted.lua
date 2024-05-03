@@ -5555,7 +5555,6 @@ root(ROOTS.Unsorted, {
 			i(224152),	-- Recipe: Late Night Snack
 			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
 			i(224161),	-- Stormrider Flight Badge
-			i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor
 			i(224165),	-- [PH] Earthen Tabard
 			i(224166),	-- [PH] Earthen Tabard
 			i(224167),	-- [PH] Earthen Tabard
@@ -5592,6 +5591,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(BATTLE_PETS, {
 				i(221818),	-- Astral Emperor's Serpentling (PET!)
+				i(224576),	-- Lil' Flameo (PET!)
 				i(223499),	-- Lil' Manny (PET!)
 				i(223145),	-- Marrlok (PET!)
 				i(223339),	-- Trishi (PET!)
@@ -5862,6 +5862,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(221814),	-- Pearlescent Goblin Wave Shredder (MOUNT!) [Trading Post?]
+				i(224574),	-- Savage Ebony Battle Turtle (MOUNT!) [Trading Post?]
 				i(223471),	-- [PH] Alliance Wolf Mount Purple (MOUNT!)
 				i(223470),	-- [PH] Alliance Wolf Mount Red (MOUNT!)
 				i(223469),	-- [PH] Alliance Wolf Mount White (MOUNT!)
@@ -7100,6 +7101,15 @@ root(ROOTS.Unsorted, {
 				i(218112),	-- Colorful Beach Chair (TOY!) [Trading Post?]
 				i(220692),	-- X-treme Water Blaster Display (TOY!) [Trading Post?]
 			}),
+			i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
+			i(224270),	-- Tattered Technique: Certificate of Ownership
+			i(224296),	-- Basket of Draconic Flowers
+			i(224374),	-- Reins of the Thundering Ruby Cloud Serpent
+			i(224407),	-- Bonus Experience
+			i(224408),	-- Bonus Experience
+			i(224459),	-- Tusks of Mannoroth
+			i(224461),	-- Bones of Mannoroth
+			i(224547),	-- Timewarped Pouch
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			------ Next Check 10.2.7 ------

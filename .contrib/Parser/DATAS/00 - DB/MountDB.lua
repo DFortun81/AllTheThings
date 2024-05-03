@@ -1782,6 +1782,7 @@ i(221814, 447413);	-- Pearlescent Goblin Wave Shredder
 i(213626, 435153);	-- Purple Shado-Pan Riding Tiger
 i(213628, 435160);	-- Riverwalker Mushan
 i(213605, 435127);	-- Rose Riding Crane
+i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(213606, 435126);	-- Silver Riding Crane
 i(213582, 435084);	-- Sky Surfer
 i(213608, 435131);	-- Snowy Riding Goat

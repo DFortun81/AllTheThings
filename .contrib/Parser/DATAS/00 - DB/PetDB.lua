@@ -4083,6 +4083,7 @@ i(217043, 4436);	-- Pokee
 -- PATCH 10.2.7 --
 ------------------
 i(221818, 4580);	-- Astral Emperor's Serpentling
+i(224576, 4595);	-- Lil' Flameo
 i(223499, 4569);	-- Lil' Manny
 i(223145, 4548);	-- Marrlok
 i(221817, 4579);	-- Muskpaw Calf
