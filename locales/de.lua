@@ -296,8 +296,6 @@ local L = app.L;
 	-- Features tab
 		L.MINIMAP_LABEL = "Minimap Knopf";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
-		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
-		--TODO: L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 		L.SKIP_CUTSCENES_CHECKBOX = "Zwischensequenzen automatisch überspringen";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Aktiviere diese Option, wenn ATT automatisch alle Zwischensequenzen für Euch überspringen soll.";
 		L.AUTO_BOUNTY_CHECKBOX = "Preisgeld Liste automatisch öffnen";
@@ -697,6 +695,8 @@ for key,value in pairs({
 		--TODO: MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 		--TODO: MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		--TODO: MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+		--TODO: ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
+		--TODO: ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 		--TODO: EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
 		--TODO: EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
 		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";

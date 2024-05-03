@@ -300,8 +300,6 @@ local L = app.L;
 	-- Features tab
 		L.MINIMAP_LABEL = "小地图按钮";
 		L.MODULES_LABEL = "模块和小列表";
-		L.ADHOC_UPDATES_CHECKBOX = "使用临时窗口更新";
-		L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可见的 ATT 窗口请启用此选项。\n\n这可以大大减少加载时间并防止在某些情况下出现疯狂掉帧。";
 		L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让 ATT 代表你自动跳过所有场景动画请启用此选项。";
 		L.AUTO_BOUNTY_CHECKBOX = "自动打开奖励列表";
@@ -746,6 +744,8 @@ for key,value in pairs({
 		MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自定义主列表的缩放。\n\n默认：1';
 		MINI_LIST_SLIDER_LABEL = "小列表缩放";
 		MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
+		ADHOC_UPDATES_CHECKBOX = "使用临时窗口更新";
+		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可见的 ATT 窗口请启用此选项。\n\n这可以大大减少加载时间并防止在某些情况下出现疯狂掉帧。";
 		EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
 		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在进入地下城或团队副本时自动最小化小列表中未激活的难度标题，请启用此选项。\n\n比如：在普通难度地下城中最小化英雄标题。";
 		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
