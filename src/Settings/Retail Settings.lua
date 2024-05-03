@@ -478,7 +478,7 @@ settings.GetRawSettings = function(self, name)
 end
 settings.GetModeString = function(self)
 	local mode = L.MODE
-	if settings:Get("Thing:Transmog") or app.MODE_DEBUG then
+	if (settings:Get("Thing:Transmog") or app.MODE_DEBUG) and app.GameBuildVersion > 40000 then
 		if self:Get("Completionist") then
 			mode = L.TITLE_COMPLETIONIST .. mode
 		else

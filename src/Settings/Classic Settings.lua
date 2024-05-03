@@ -322,6 +322,13 @@ settings.GetRawSettings = function(self, name)
 end
 settings.GetModeString = function(self)
 	local mode = "Mode";
+	if (settings:Get("Thing:Transmog") or app.MODE_DEBUG) and app.GameBuildVersion > 40000 then
+		if self:Get("Completionist") then
+			mode = "Completionist " .. mode
+		else
+			mode = "Unique " .. mode
+		end
+	end
 	if app.MODE_DEBUG then
 		mode = "Debug " .. mode;
 	else
@@ -399,6 +406,26 @@ settings.GetPersonal = function(self, setting)
 end
 settings.GetTooltipSetting = function(self, setting)
 	return AllTheThingsSettings.Tooltips[setting];
+end
+
+local ModifierFuncs = {
+	["Shift"] = IsShiftKeyDown,
+	["Ctrl"] = IsControlKeyDown,
+	["Alt"] = IsAltKeyDown,
+	["Cmd"] = IsMetaKeyDown,
+}
+settings.GetTooltipSettingWithMod = function(self, setting)
+	-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
+	local v = AllTheThingsSettings.Tooltips[setting]
+	if not v then return v end
+	local k = AllTheThingsSettings.Tooltips[setting..":Mod"]
+	if k == "None" then
+		return v
+	end
+	local func = ModifierFuncs[k]
+	if func and func() then
+		return v
+	end
 end
 settings.GetValue = function(self, container, setting)
 	return RawSettings[container][setting]
@@ -917,11 +944,10 @@ end
 settings.ToggleLootMode = function(self)
 	self:SetLootMode(not self:Get("LootMode"));
 end
-settings.SetSourceLocations = function(self, checked)
-	self:SetTooltipSetting("SourceLocations", checked);
-end
-settings.ToggleSourceLocations = function(self)
-	self:SetSourceLocations(not self:GetTooltipSetting("SourceLocations"));
+-- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
+-- so force it always
+settings.ForceRefreshFromToggle = function(self)
+	self.ToggleRefresh = true;
 end
 -- Setup tracking for all Things based on the Settings value, or whether it is forcibly tracked or forced AccountWide
 settings.SetThingTracking = function(self, force)
@@ -1134,24 +1160,4 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RefreshDataCompletely("UpdateMode");
 	end
 	self:Refresh();
-end
-
-local ModifierFuncs = {
-	["Shift"] = IsShiftKeyDown,
-	["Ctrl"] = IsControlKeyDown,
-	["Alt"] = IsAltKeyDown,
-	["Cmd"] = IsMetaKeyDown,
-}
-settings.GetTooltipSettingWithMod = function(self, setting)
-	-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
-	local v = AllTheThingsSettings.Tooltips[setting]
-	if not v then return v end
-	local k = AllTheThingsSettings.Tooltips[setting..":Mod"]
-	if k == "None" then
-		return v
-	end
-	local func = ModifierFuncs[k]
-	if func and func() then
-		return v
-	end
 end
