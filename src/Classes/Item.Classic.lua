@@ -110,9 +110,6 @@ local isCollectibleTransmog = function(t)
 		end
 		local itemID = t.itemID;
 		if itemID and t.collectible ~= false then
-			--if t.rwp or (t.u and (t.u == 2 or t.u == 3 or t.u == 4)) then
-			--	print("Missing SourceID for RWP", itemID);
-			--end
 			t.missingSourceID = true;
 		end
 	end
@@ -150,13 +147,6 @@ local collectedAsTransmog = function(t)
 		end
 	end
 end;
-local isCollectibleTransmogField = function(t)
-	if t.collectibleAsCost then return true; end
-	if app.Settings.Collectibles.Transmog then
-		if app.Settings.OnlyRWP and not t.rwp then return false; end
-		return true;
-	end
-end
 local itemFields = {
 	["text"] = function(t)
 		return t.link;
@@ -198,13 +188,25 @@ local itemFields = {
 };
 app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 "AsTransmog", {
-	collectible = isCollectibleTransmogField,
+	collectible = app.GameBuildVersion >= 40000 and function(t)
+		if t.collectibleAsCost then return true; end
+		return app.Settings.Collectibles.Transmog;
+	end or function(t)
+		if t.collectibleAsCost then return true; end
+		if app.Settings.Collectibles.Transmog then
+			if app.Settings.OnlyRWP and not t.rwp then return false; end
+			return true;
+		end
+	end,
 	collected = function(t)
 		if t.collectedAsCost == false then
 			return;
 		end
 		return collectedAsTransmog(t);
 	end,
+	["description"] = app.GameBuildVersion > 40000 and function(t)
+		return "Blizzard isn't detecting white/grey quality transmogs as collectible, so for the meantime, send this item to an alt to hold on to until they fix it. If its soulbound and from a quest, you're probably okay to vendor it.";
+	end or nil,
 }, isCollectibleTransmog,
 "WithQuest", {
 	collectible = function(t)

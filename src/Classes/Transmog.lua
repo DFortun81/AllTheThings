@@ -655,7 +655,15 @@ do
 			return rawget(t, "itemID")
 		end,
 	});
-	app.CreateItemSource = function(sourceID, itemID, t)
+	app.CreateItemSource = app.GameBuildVersion < 50000 and function(sourceID, itemID, t)
+		if t and (not t.q or t.q < 2) then
+			t.sourceID = sourceID;
+			return app.CreateItem(itemID, t);
+		end
+		t = createItemWithAppearance(sourceID, t);
+		t.itemID = itemID;
+		return t;
+	end or function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		t.itemID = itemID;
 		return t;

@@ -630,13 +630,10 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 	end
 end
 if C_TransmogCollection and app.GameBuildVersion >= 40000 then
-	-- We no longer need to sync Transmog.
+	-- We no longer need to sync Transmog via Sources.
 	AccountWideDataHandlers.Sources = ignoreField;
-	AccountWideDataHandlers.Transmog = ignoreField;
 	deserializers.Sources = ignoreField;
-	deserializers.Transmog = ignoreField;
 	serializers.Sources = ignoreField;
-	serializers.Transmog = ignoreField;
 end
 
 -- Message Handlers
