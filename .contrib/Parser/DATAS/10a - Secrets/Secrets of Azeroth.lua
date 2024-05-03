@@ -22,6 +22,13 @@ COMMUNITY_CLUES_HEADER = createHeader({
 -- TODO:
 -- Fix temporary ObjectIDs with real ones if ever determined, and delete temp entries from ObjectDB.lua
 
+-- Little helper function to lock a lot of stuff in this file since blizz locked a lot of things account-wide
+local function OneTimeAccountLocked(questID, t)
+	t.DisablePartySync = true
+	t.lockCriteria = { 1, "questID", questID }
+	return t
+end
+
 root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	["description"] = "***Using Debug Mode is recommended.***\n",
 	["groups"] = {
@@ -367,6 +374,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					}),
 				},
 			}),
+			OneTimeAccountLocked(78202,	-- Unfinished Thinking Cap (Account-Wide Lock)
 			q(77237, {	-- Unfinished Thinking Cap
 				["provider"] = { "i", 207827 },	-- Unfinished Thinking Cap
 				["crs"] = 207697,	-- Fangli Hoot
@@ -377,7 +385,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["groups"] = {
 					i(206696),	-- Tricked-Out Thinking Cap (TOY!)
 				},
-			}),
+			})),
+			OneTimeAccountLocked(77513,	-- The Tricked-Out Thinking Cap (Account-Wide Lock)
 			q(76504, {	-- The Tricked-Out Thinking Cap
 				["provider"] = { "n", 207697 },	-- Fangli Hoot
 				["coords"] = {
@@ -390,7 +399,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["groups"] = {
 					i(206944),	-- A Clue: The Thinking Cap
 				},
-			}),
+			})),
 
 			-- Day 3 --
 			q(77276, {	-- An Inside Job?
@@ -407,13 +416,15 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 							i(208130),	-- Maruuk Burial Banner
 						},
 					}),
+					OneTimeAccountLocked(77521,	-- Preservationist Cleared (Account-Wide Lock)
 					q(77397, {
 						["name"] = "Talk with 'Appraiser' Sazsel Stickyfingers",
 						["coord"] = { 62.8, 72.8, VALDRAKKEN },
 						["cost"] = {{"i",208130,1}},	-- Maruuk Burial Banner
-					}),
+					})),
 				},
 			}),
+			OneTimeAccountLocked(77521,	-- Preservationist Cleared (Account-Wide Lock)
 			q(77277, {	-- Preservationist Cleared
 				["qg"] = 208620,	-- "Appraiser" Sazsel Stickyfingers
 				["coord"] = { 62.8, 72.8, VALDRAKKEN },
@@ -421,7 +432,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["groups"] = {
 					i(208130),	-- Maruuk Burial Banner
 				},
-			}),
+			})),
 
 			-- Day 4 --
 			q(77281, {	-- Securing an Artifact
@@ -432,18 +443,21 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["groups"] = {
 					i(208131),	-- Preservationist's Dispatch
 					-- ObjectID/QuestID correlation guessed
+					OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 					o(405510, {	-- Ancient Lever
 						["coord"] = { 56.6, 20.3, THE_WAKING_SHORES },
 						['questID'] = 77401,
-					}),
+					})),
+					OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 					o(405511, {	-- Ancient Lever
 						["coord"] = { 57.7, 23.8, THE_WAKING_SHORES },
 						['questID'] = 77402,
-					}),
+					})),
+					OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 					o(405512, {	-- Ancient Lever
 						["coord"] = { 57.0, 25.5, THE_WAKING_SHORES },
 						['questID'] = 77403,
-					}),
+					})),
 					o(405513, {	-- Torch of Pyrreth
 						["coord"] = { 54.5, 20.3, THE_WAKING_SHORES },
 						["sourceQuests"] = {
@@ -457,13 +471,15 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					}),
 				},
 			}),
+			OneTimeAccountLocked(78201,	-- Artifact Secured (Account-Wide Lock)
 			q(77282, {	-- Artifact Secured
 				["provider"] = { "i", 208135 },	-- Torch of Pyrreth
 				["coord"] = { 54.6, 20.4, THE_WAKING_SHORES },
 				["groups"] = {
 					i(208092),	-- Torch of Pyrreth (TOY!)
 				},
-			}),
+			})),
+			OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 			q(77263, {	-- The Torch of Pyrreth
 				["qg"] = 206864,	-- Preservationist Kathos
 				["coord"] = { 47.4, 48.1, VALDRAKKEN },
@@ -478,7 +494,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						},
 					}),
 				},
-			}),
+			})),
 
 			-- Day 5 --
 			q(77284, {	-- A Chilling Ascent
@@ -490,6 +506,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					i(208137),	-- The Clerk's Notes
 				},
 			}),
+			OneTimeAccountLocked(77523,	-- A Knowledgeable Descent (Account-Wide Lock)
 			q(77286, {	-- A Knowledgeable Descent
 				["providers"] = {
 					{ "o", 405523 },	-- Unveiled Tablet
@@ -499,7 +516,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["groups"] = {
 					i(208143),	-- Unveiled Tablet Rubbing
 				},
-			}),
+			})),
 
 			-- Day 6 --
 			q(77303, {	-- Idol Searching
@@ -508,26 +525,30 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["repeatable"] = true,
 				["groups"] = {
 					i(208144),	-- Preservationist's Dispatch Two
+					OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 					o(9000001, {	-- Ancient Incense Brazier
 						["coord"] = { 32.3, 67.9, OHNAHRAN_PLAINS },
 						["provider"] = {"i",208092},	-- Torch of Pyrreth
 						["questID"] = 77405,
-					}),
+					})),
+					OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 					o(9000002, {	-- Ancient Incense Brazier
 						["coord"] = { 31.0, 70.8, OHNAHRAN_PLAINS },
 						["provider"] = {"i",208092},	-- Torch of Pyrreth
 						["questID"] = 77406,
-					}),
+					})),
+					OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 					o(9000003, {	-- Ancient Incense Brazier
 						["coord"] = { 35.2, 65.7, OHNAHRAN_PLAINS },
 						["provider"] = {"i",208092},	-- Torch of Pyrreth
 						["questID"] = 77407,
-					}),
+					})),
+					OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 					o(9000004, {	-- Ancient Incense Brazier
 						["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
 						["provider"] = {"i",208092},	-- Torch of Pyrreth
 						["questID"] = 77404,
-					}),
+					})),
 					o(405546, {	-- Idol of Ohn'ahra
 						["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
 						["sourceQuests"] = {
@@ -542,18 +563,20 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					}),
 				},
 			}),
+			OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 			q(77304, {	-- An Idol in Hand
 				["provider"] = { "i", 208145 },	-- Idol of Ohn'ahra
 				["groups"] = {
 					i(207730),	-- Idol of Ohn'ahra (TOY!)
 				},
-			}),
+			})),
+			OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 			q(76456, {	-- Using the Idol
 				["qg"] = 206864,	-- Preservationist Kathos
 				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["sourceQuest"] = 77304,	-- An Idol in Hand
 				["description"] = "Use the Idol. It points towards objectives.",
-			}),
+			})),
 
 			-- Day 7 --
 			q(76509, {	-- Into the Sands
@@ -581,10 +604,10 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					}),
 				},
 			}),
+			OneTimeAccountLocked(76508,	-- Out of the Sands (Account-Wide Lock)
 			q(77305, {	-- Out of the Sands
 				["provider"] = { "i", 208146 },	-- Incomplete Tablet (QI)
-				--["sourceQuest"] = 76509,	-- Into the Sands
-			}),
+			})),
 
 			-- Day 8 --
 			q(77653, {	-- A Key Story
@@ -603,12 +626,13 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			o(408224, {	-- Hastily Scrawled Stone
 				["questID"] = 77972,
+				["provider"] = {"i",208092},	-- Torch of Pyrreth
 				["coord"] = { 63.4, 57.0, OHNAHRAN_PLAINS },
 			}),
+			OneTimeAccountLocked(77576,	-- A Titanic Mold (Account-Wide Lock)
 			q(77822, {	-- A Titanic Mold
 				["provider"] = { "i", 208827 },	-- Titan Key Mold
-				-- ["sourceQuest"] = 77653,	-- A Key Story
-			}),
+			})),
 
 			-- Day 9 --
 			q(77829, {	-- Reforging a Legend
@@ -645,9 +669,9 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					}),
 				},
 			}),
+			OneTimeAccountLocked(77577,	-- A Key To Reforg(ing) (Account-Wide Lock)
 			q(77831, {	-- A Key To Reforg(ing)
 				["qg"] = 210837,	-- Weaponsmith Koref
-				--["sourceQuest"] = 77829,	-- Reforging a Legend
 				["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
 				["cost"] = {
 					{"i",208835,50},	-- Rose Gold Dust (QI)
@@ -668,7 +692,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						i(209040),	-- Tyr's Titan Key
 					}),
 				},
-			}),
+			})),
 
 			-- Day 10 --
 			q(77865, {	-- A Proper Burial
@@ -688,36 +712,31 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["coord"] = { 81.3, 59.3, OHNAHRAN_PLAINS },
 						["cost"] = {{"i",209061,1}},	-- Ishtaar Rethon's Burial Banner
 					}),
+					OneTimeAccountLocked(77578,	-- Banner Stand (Account-Wide)
 					o(9000005, {	-- Aged Marker [#1]
 						["questID"] = 78025,
 						["coord"] = { 83.8, 48.4, OHNAHRAN_PLAINS },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
-					}),
+					})),
+					OneTimeAccountLocked(77578,	-- Banner Stand (Account-Wide)
 					o(9000006, {	-- Aged Marker [#2]
 						["questID"] = 78026,
 						["coord"] = { 78.6, 83.3, OHNAHRAN_PLAINS },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
-					}),
+					})),
+					OneTimeAccountLocked(77578,	-- Banner Stand (Account-Wide)
 					o(9000007, {	-- Aged Marker [#3]
 						["questID"] = 78027,
 						["coord"] = { 60.7, 63.4, OHNAHRAN_PLAINS },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
-					}),
+					})),
+					OneTimeAccountLocked(77578,	-- Banner Stand (Account-Wide)
 					o(9000008, {	-- Aged Marker [#4]
 						["questID"] = 78028,
 						["coord"] = { 31.6, 71.6, OHNAHRAN_PLAINS },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
-					}),
+					})),
+					OneTimeAccountLocked(77578,	-- Banner Stand (Account-Wide)
 					o(9000009, {	-- Aged Marker [#5]
 						["questID"] = 78029,	-- this marker triggered 78037 for me instead -Run
 						["coord"] = { 43.3, 48.0, OHNAHRAN_PLAINS },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 77578 },	-- Banner Stand
-					}),
+					})),
 					o(9000010, {	-- Banner Stand
 						["description"] = "In cave.",
 						["questID"] = 77578,
@@ -736,21 +755,24 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					i(208888),	-- Kirin Tor Contact's Note (QI!)
 					-- 1 object with name on WH... 408976
 					-- using Type-named HQTs to show the objects available to click
+					OneTimeAccountLocked(77579,	-- A Legacy of Secrets (Account-Wide Lock)
 					q(78050, {	-- Ancient Tome [#1]
 						["type"] = HEADERS.Object..":408976",
 						["provider"] = { "o", 408976 },	-- Ancient Tome
 						["coord"] = { 32.1, 49.3, KARAZHAN },
-					}),
+					})),
+					OneTimeAccountLocked(77579,	-- A Legacy of Secrets (Account-Wide Lock)
 					q(78051, {	-- Ancient Tome [#2]
 						["type"] = HEADERS.Object..":408976",
 						["provider"] = { "o", 408976 },	-- Ancient Tome
 						["coord"] = { 36.6, 37.1, KARAZHAN },
-					}),
+					})),
+					OneTimeAccountLocked(77579,	-- A Legacy of Secrets (Account-Wide Lock)
 					q(78052, {	-- Ancient Tome [#3]
 						["type"] = HEADERS.Object..":408976",
 						["provider"] = { "o", 408976 },	-- Ancient Tome
 						["coord"] = { 47.2, 64.4, KARAZHAN },
-					}),
+					})),
 					o(408980, {	--Tyr's Legacy
 						["description"] = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
 						["coord"] = { 33.1, 50.9, KARAZHAN },
@@ -760,10 +782,11 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					}),
 				},
 			}),
+			OneTimeAccountLocked(77579,	-- A Legacy of Secrets (Account-Wide Lock)
 			q(77908, {	-- A Legacy of Secrets
 				["provider"] = { "i", 208889 },
 				["description"] = "Quest takes place in Old Karazhan Raid",
-			}),
+			})),
 
 			-- Day 12 --
 			q(77928, {	-- They Are Always Listening
@@ -772,66 +795,46 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["repeatable"] = true,
 				["groups"] = {
 					i(208929),	-- Great Places to Visit in Valdrakken (QI!)
+					OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 					q(78053, {	-- Clicking on 'Auction House Bill of Sale' during day 12
 						["type"] = HEADERS.Object..":409012",
 						["provider"] = { "o", 409012 },	-- Auction House Bill of Sale
 						["coord"] = { 44.1, 60.3, VALDRAKKEN },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1,
-							"questID", 77934,	-- A Complete Inventory
-							"questID", 77953,	-- A Sphere in Danger
-						},
-					}),
+					})),
+					OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 					q(78054, {	-- Clicking on 'Void Storage Receipt' during day 12
 						["type"] = HEADERS.Object..":409016",
 						["provider"] = { "o", 409016 },	-- Void Storage Receipt
 						["coord"] = { 73.9, 57.4, VALDRAKKEN },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1,
-							"questID", 77934,	-- A Complete Inventory
-							"questID", 77953,	-- A Sphere in Danger
-						},
-					}),
+					})),
+					OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 					q(78055, {	-- Clicking on 'Garden Supply Receipt' during day 12
 						["type"] = HEADERS.Object..":409017",
 						["provider"] = { "o", 409017 },	-- Garden Supply Receipt
 						["coord"] = { 53.0, 28.4, VALDRAKKEN },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1,
-							"questID", 77934,	-- A Complete Inventory
-							"questID", 77953,	-- A Sphere in Danger
-						},
-					}),
+					})),
+					OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 					q(78056, {	-- Clicking on 'Researcher's Note' during day 12
 						["type"] = HEADERS.Object..":409018",
 						["provider"] = { "o", 409018 },	-- Researcher's Note
 						["coord"] = { 37.6, 37.1, VALDRAKKEN },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1,
-							"questID", 77934,	-- A Complete Inventory
-							"questID", 77953,	-- A Sphere in Danger
-						},
-					}),
+					})),
+					OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 					q(78057, {	-- Clicking on 'Hastily Scrawled Note' during day 12
 						["type"] = HEADERS.Object..":409019",
 						["provider"] = { "o", 409019 },	-- Hastily Scrawled Note
 						["coord"] = { 31.6, 70.2, VALDRAKKEN },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1,
-							"questID", 77934,	-- A Complete Inventory
-							"questID", 77953,	-- A Sphere in Danger
-						},
-					}),
+					})),
+					OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 					q(78058, {	-- Clicking on 'Note to Kritha' during day 12 (automatically accepted 'A Complete Inventory' (questID 77934)) / not for me!
 						["type"] = HEADERS.Object..":409020",
 						["provider"] = { "o", 409020 },	-- Note to Kritha
 						["coord"] = { 46.0, 41.4, VALDRAKKEN },
-						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 77934 },	-- A Complete Inventory
-					}),
+					})),
 					i(208936),	-- Compiled Report
 				},
 			}),
+			OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 			q(77934, {	-- A Complete Inventory
 				["provider"] = { "i", 208936 },	-- Compiled Report
 				["description"] = "Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",
@@ -844,7 +847,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					78058,	-- Note to Kritha
 				},
 				["coord"] = { 44.1, 60.2, VALDRAKKEN },
-			}),
+			})),
 
 			-- Day 13 --
 			q(77953, {	-- A Sphere in Danger
@@ -857,33 +860,36 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					o(409320, {	-- Buried Object
 						["coord"] = { 49.5, 79.7, THALDRASZUS },
 						["g"] = {
+							OneTimeAccountLocked(77520,	-- A Curious Orb (Account-Wide Lock)
 							q(78108, {	-- Using torch at (50.1, 80.9 Thaldraszus - in a cave)Eastern Cave
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 50.1, 80.9, THALDRASZUS },
-							}),
+							})),
 							i(209795),	--  Piece of the Orb of Rathmus (QI)
 						},
 					}),
 					o(409329, {	-- Buried Object
 						["coord"] = { 45.9, 79.7, THALDRASZUS },
 						["g"] = {
+							OneTimeAccountLocked(77520,	-- A Curious Orb (Account-Wide Lock)
 							q(78109, {	-- Using torch at (46.6 77.6 Thaldraszus - in a cave) Western Cave
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 46.6, 77.6, THALDRASZUS },
-							}),
+							})),
 							i(209797),	--  Piece of the Orb of Rathmus (QI)
 						},
 					}),
 					o(409333, {	-- Buried Object
 						["coord"] = { 50.1, 78.0, THALDRASZUS },
 						["g"] = {
+							OneTimeAccountLocked(77520,	-- A Curious Orb (Account-Wide Lock)
 							q(78111, {	-- Using torch at (48.6 76.3 Thaldraszus - in a cave) Northern Cave
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 48.6, 76.3, THALDRASZUS },
-							}),
+							})),
 							i(209799),	--  Piece of the Orb of Rathmus (QI)
 						},
 					}),
@@ -896,10 +902,11 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					}),
 				},
 			}),
+			OneTimeAccountLocked(77520,	-- A Curious Orb (Account-Wide Lock)
 			q(77954, {	-- A Curious Orb
 				["provider"] = { "i", 208944 },
 				["coord"] = { 47.4, 46.7, VALDRAKKEN },
-			}),
+			})),
 
 			-- Day 14 --
 			q(77957, {	-- A Treacherous Race
@@ -909,56 +916,67 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["repeatable"] = true,
 				["groups"] = {
 					i(208958),	-- Ancient Tyrhold Artifact Notes (QI!)
+					OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 					q(77974, {
 						["name"] = "First Lock",	-- not sure how else to name this trigger
 						["description"] = "Unlock the first lock by using your torch at all 8 Tyrhold staute.",
 						["groups"] = {
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77964, {	-- Orb #1
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 59.9, 61.0, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77960, {	-- Orb #2
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 57.1, 64.4, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77961, {	-- Orb #3
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 57.1, 62.9, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77962, {	-- Orb #4
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 57.9, 61.8, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77963, {	-- Orb #5
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 57.9, 60.5, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77965, {	-- Orb #6
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 58.0, 56.9, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77966, {	-- Orb #7
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 57.9, 56.0, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77967, {	-- Orb #8
 								["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 59.8, 56.4, THALDRASZUS },
-							}),
+							})),
 						},
-					}),
+					})),
+					OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 					q(77975, {	-- Receiving 'Tyr's Favor' buff (spellID 423792)
 						["type"] = HEADERS.Spell..":423792",
 						["coord"] = { 61.1, 58.7, THALDRASZUS },
-					}),
+					})),
+					OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 					q(77973, {
 						["name"] = "Third Lock",	-- not sure how else to name this trigger
 						["description"] = "Use your idol at each Ring/Room location to find Broken Urn's",
@@ -1025,6 +1043,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 							}),
 							-- 4 object with name on WH... 409166, 409191, 409192, 409193
 							-- using Type-named HQTs to show the objects available to click
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77968, {	-- Titan Power Relay [#1]
 								["type"] = HEADERS.Object..":409166",
 								["providers"] = {
@@ -1032,7 +1051,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 									{ "o", 409166 },	-- Titan Power Relay
 								},
 								["coord"] = { 59.3, 56.8, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77970, {	-- Titan Power Relay [#2]
 								["type"] = HEADERS.Object..":409166",
 								["providers"] = {
@@ -1040,7 +1060,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 									{ "o", 409166 },	-- Titan Power Relay
 								},
 								["coord"] = { 59.5, 60.6, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77971, {	-- Titan Power Relay [#3]
 								["type"] = HEADERS.Object..":409166",
 								["providers"] = {
@@ -1048,7 +1069,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 									{ "o", 409166 },	-- Titan Power Relay
 								},
 								["coord"] = { 61.0, 62.4, THALDRASZUS },
-							}),
+							})),
+							OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 							q(77969, {	-- Titan Power Relay [#4]
 								["type"] = HEADERS.Object..":409166",
 								["providers"] = {
@@ -1056,20 +1078,12 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 									{ "o", 409166 },	-- Titan Power Relay
 								},
 								["coord"] = { 61.0, 55.0, THALDRASZUS },
-							}),
-							-- -- Header with Quest and no-merge
-							-- potential alternate format, but requires 'nomerge' since the object referenced is identical for each group
-							-- or could use the different objectID's above and add more duplicate object names into the DB...
-							-- header(HEADERS.Object, 409166, {	-- Titan Power Relay [#4]
-							-- 	["nomerge"] = true,
-							-- 	["questID"] = 77969,
-							-- 	["provider"] = { "i", 208965 },	-- Titan Block Key
-							-- 	["coord"] = { 61.0, 55.0, THALDRASZUS },
-							-- }),
+							})),
 						},
-					}),
+					})),
 				},
 			}),
+			OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 			q(77977, {	-- An Ominous Artifact
 				["provider"] = { "o", 411936 },	-- Orb Location
 				["coord"] = { 60.2, 58.7, THALDRASZUS },
@@ -1089,7 +1103,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						},
 					}),
 				},
-			}),
+			})),
 		}),
 		n(COMMUNITY_CLUES_HEADER, {
 			header(HEADERS.Spell, 424082, {

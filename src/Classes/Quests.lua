@@ -1079,7 +1079,20 @@ local criteriaFuncs = {
         return lvl;
     end,
 
-    questID = IsQuestSaved,
+    questID = function(questID)
+		-- saved on this character to this quest
+		if IsQuestSaved(questID) then return true end
+		-- questID is saved in OneTimeQuests to another character
+		-- local otq = OneTimeQuests[questID]
+		if OneTimeQuests[questID] then return true end
+		-- hmmm not really sure we want to worry about chained locking...
+		-- could just add the chained requirements as possible locks for the base quest
+		-- known OTQ is unsaved, then leave
+		-- if otq == false then app.PrintDebug("otq:false",questID) return end
+		-- questID is itself Locked for this character
+		-- local q = Search(questID)
+		-- if q and q.locked then app.PrintDebug("locked",questID) return true end
+	end,
 	label_questID = L.LOCK_CRITERIA_QUEST_LABEL,
     text_questID = function(questID)
 		-- sometimes we can get nice names from non-server quests... so use their actual implementation
@@ -1293,7 +1306,6 @@ if IsQuestReplayable then
 		end
 		return IsQuestFlaggedCompleted(questID);
 	end;
-	criteriaFuncs.questID = IsQuestSaved;
 
 	-- Causes a group to remain visible if it is replayable, regardless of collection status
 	OnUpdateForPartySyncedQuest = function(data)
