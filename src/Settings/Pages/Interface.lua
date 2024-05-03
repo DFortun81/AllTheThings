@@ -294,6 +294,8 @@ end)
 checkboxProgressIconOnly:SetATTTooltip(L.ICON_ONLY_CHECKBOX_TOOLTIP)
 checkboxProgressIconOnly:AlignBelow(checkboxCollectionProgress, 1)
 
+local checkboxOnlyRelevant;
+if app.GameBuildVersion >= 40000 then
 local checkboxSharedAppearances = child:CreateCheckBox(L.SHARED_APPEARANCES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"))
@@ -328,7 +330,7 @@ end)
 checkboxOriginalSource:SetATTTooltip(L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP)
 checkboxOriginalSource:AlignBelow(checkboxSharedAppearances, 1)
 
-local checkboxOnlyRelevant = child:CreateCheckBox(L.ONLY_RELEVANT_CHECKBOX,
+checkboxOnlyRelevant = child:CreateCheckBox(L.ONLY_RELEVANT_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
@@ -344,6 +346,7 @@ function(self)
 end)
 checkboxOnlyRelevant:SetATTTooltip(L.ONLY_RELEVANT_CHECKBOX_TOOLTIP)
 checkboxOnlyRelevant:AlignBelow(checkboxOriginalSource)
+end
 
 local checkboxSourceLocations = child:CreateCheckBox(L.SOURCE_LOCATIONS_CHECKBOX,
 function(self)
@@ -360,7 +363,7 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked())
 end)
 checkboxSourceLocations:SetATTTooltip(L.SOURCE_LOCATIONS_CHECKBOX_TOOLTIP)
-checkboxSourceLocations:AlignBelow(checkboxOnlyRelevant, -1)
+checkboxSourceLocations:AlignBelow(checkboxOnlyRelevant or checkboxProgressIconOnly, -1)
 
 local sliderSourceLocations = CreateFrame("Slider", "ATTsliderSourceLocations", child, "OptionsSliderTemplate")
 sliderSourceLocations:SetPoint("TOP", checkboxSourceLocations.Text, "BOTTOM", 0, -4)
@@ -522,6 +525,7 @@ end)
 checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
+if app.IsRetail then	-- Not sure when the APIs needed for these features is added
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
@@ -572,6 +576,59 @@ function(self)
 end)
 checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
 checkboxCurrencyCalculation:AlignBelow(checkboxDropChances)
+else
+-- CRIEVE NOTE: This feature is kinda neat, but really only makes sense for Classic.
+local checkboxShowCraftedItems = child:CreateCheckBox(L.SHOW_CRAFTED_ITEMS_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:CraftedItems"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:CraftedItems", self:GetChecked());
+end)
+checkboxShowCraftedItems:SetATTTooltip(L.SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP)
+checkboxShowCraftedItems:AlignBelow(checkboxKnownBy)
+
+local checkboxShowRecipes = child:CreateCheckBox(L.SHOW_RECIPES_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Recipes"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Recipes", self:GetChecked());
+end)
+checkboxShowRecipes:SetATTTooltip(L.SHOW_RECIPES_CHECKBOX_TOOLTIP)
+checkboxShowRecipes:AlignBelow(checkboxShowCraftedItems)
+
+local checkboxOnlyShowNonTrivialRecipes = child:CreateCheckBox(L.SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:OnlyShowNonTrivialRecipes"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") or not settings:GetTooltipSetting("Show:Recipes") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:OnlyShowNonTrivialRecipes", self:GetChecked());
+end)
+checkboxOnlyShowNonTrivialRecipes:SetATTTooltip(L.SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP)
+checkboxOnlyShowNonTrivialRecipes:AlignBelow(checkboxShowRecipes, 1)
+end
 
 -- Column 2
 local headerListBehavior = child:CreateHeaderLabel(L.BEHAVIOR_LABEL)
@@ -629,7 +686,9 @@ sliderMiniListScale:SetScript("OnValueChanged", function(self, newValue)
 	end
 end)
 
-local checkboxDoAdHocUpdates = child:CreateCheckBox(L.ADHOC_UPDATES_CHECKBOX,
+local checkboxDoAdHocUpdates;
+if app.IsRetail then	-- CRIEVE NOTE: Classic Windows don't support this.
+checkboxDoAdHocUpdates = child:CreateCheckBox(L.ADHOC_UPDATES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"))
 end,
@@ -639,6 +698,7 @@ end)
 checkboxDoAdHocUpdates:SetATTTooltip(L.ADHOC_UPDATES_CHECKBOX_TOOLTIP)
 checkboxDoAdHocUpdates:SetPoint("LEFT", headerListBehavior, 0, 0)
 checkboxDoAdHocUpdates:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
+end
 
 local checkboxExpandDifficulty = child:CreateCheckBox(L.EXPAND_DIFFICULTY_CHECKBOX,
 function(self)
@@ -648,7 +708,12 @@ function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked())
 end)
 checkboxExpandDifficulty:SetATTTooltip(L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP)
-checkboxExpandDifficulty:AlignBelow(checkboxDoAdHocUpdates)
+if checkboxDoAdHocUpdates then
+	checkboxExpandDifficulty:AlignBelow(checkboxDoAdHocUpdates)
+else
+	checkboxExpandDifficulty:SetPoint("LEFT", headerListBehavior, 0, 0)
+	checkboxExpandDifficulty:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
+end
 
 local checkboxIconPortrait = child:CreateCheckBox(L.SHOW_ICON_PORTRAIT_CHECKBOX,
 function(self)
@@ -689,17 +754,19 @@ end)
 checkboxModelPreview:SetATTTooltip(L.SHOW_MODELS_CHECKBOX_TOOLTIP)
 checkboxModelPreview:AlignBelow(checkboxIconPortraitForQuests, -1)
 
-local checkboxShowCollectibleCostGroups = child:CreateCheckBox(L.FILL_DYNAMIC_QUESTS_CHECKBOX,
+local checkboxNestedQuestChains;
+if app.IsRetail then	-- CRIEVE NOTE: Classic Windows don't support this just yet.
+local checkboxFillDynamicQuests = child:CreateCheckBox(L.FILL_DYNAMIC_QUESTS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
 end,
 function(self)
 	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked())
 end)
-checkboxShowCollectibleCostGroups:SetATTTooltip(L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP)
-checkboxShowCollectibleCostGroups:AlignBelow(checkboxModelPreview)
+checkboxFillDynamicQuests:SetATTTooltip(L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP)
+checkboxFillDynamicQuests:AlignBelow(checkboxModelPreview)
 
-local checkboxNestedNPCData = child:CreateCheckBox(L.FILL_NPC_DATA_CHECKBOX,
+local checkboxFillNPCData = child:CreateCheckBox(L.FILL_NPC_DATA_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("NPCData:Nested"))
 end,
@@ -708,10 +775,10 @@ function(self)
 	-- requires re-building of minilist
 	app.LocationTrigger(true)
 end)
-checkboxNestedNPCData:SetATTTooltip(L.FILL_NPC_DATA_CHECKBOX_TOOLTIP)
-checkboxNestedNPCData:AlignBelow(checkboxShowCollectibleCostGroups)
+checkboxFillNPCData:SetATTTooltip(L.FILL_NPC_DATA_CHECKBOX_TOOLTIP)
+checkboxFillNPCData:AlignBelow(checkboxFillDynamicQuests)
 
-local checkboxNestedQuestChains = child:CreateCheckBox(L.NESTED_QUEST_CHAIN_CHECKBOX,
+checkboxNestedQuestChains = child:CreateCheckBox(L.NESTED_QUEST_CHAIN_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"))
 end,
@@ -719,7 +786,8 @@ function(self)
 	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked())
 end)
 checkboxNestedQuestChains:SetATTTooltip(L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP)
-checkboxNestedQuestChains:AlignBelow(checkboxNestedNPCData)
+checkboxNestedQuestChains:AlignBelow(checkboxFillNPCData)
+end
 
 local checkboxSortByProgress = child:CreateCheckBox(L.SORT_BY_PROGRESS_CHECKBOX,
 function(self)
@@ -729,7 +797,7 @@ function(self)
 	settings:SetTooltipSetting("Sort:Progress", self:GetChecked())
 end)
 checkboxSortByProgress:SetATTTooltip(L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP)
-checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains)
+checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains or checkboxModelPreview)
 
 local checkboxShowRemainingCount = child:CreateCheckBox(L.SHOW_REMAINING_CHECKBOX,
 function(self)
@@ -739,7 +807,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Show:Remaining", self:GetChecked())
 	app.Modules.Color.SetShowRemainingText(self:GetChecked());
-	app.HandleEvent("OnUpdateWindows")
+	app.HandleEvent("OnRenderDirty")
 end)
 checkboxShowRemainingCount:SetATTTooltip(L.SHOW_REMAINING_CHECKBOX_TOOLTIP)
 checkboxShowRemainingCount:AlignBelow(checkboxSortByProgress)
@@ -752,7 +820,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Show:Percentage", self:GetChecked())
 	app.Modules.Color.SetShowPercentageText(self:GetChecked());
-	app.HandleEvent("OnUpdateWindows")
+	app.HandleEvent("OnRenderDirty")
 end)
 checkboxShowPercentageCount:SetATTTooltip(L.PERCENTAGES_CHECKBOX_TOOLTIP)
 checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
@@ -782,7 +850,7 @@ sliderPercentagePrecision:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("Precision", newValue)
-	app.HandleEvent("OnUpdateWindows")
+	app.HandleEvent("OnRenderDirty")
 end)
 sliderPercentagePrecision.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Show:Percentage") then
@@ -794,6 +862,7 @@ sliderPercentagePrecision.OnRefresh = function(self)
 	end
 end
 
+if app.IsRetail then	-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
 -- Dynamic Category Toggles
 local textDynamicCategories = child:CreateTextLabel("|cffFFFFFF"..L.DYNAMIC_CATEGORY_LABEL)
 textDynamicCategories:SetPoint("LEFT", checkboxShowPercentageCount, "LEFT", 4, 0)
@@ -837,3 +906,4 @@ function(self)
 end)
 checkboxDynamicNested:AlignAfter(checkboxDynamicSimple)
 checkboxDynamicNested:SetATTTooltip(L.DYNAMIC_CATEGORY_NESTED_TOOLTIP..L.DYNAMIC_CATEGORY_TOOLTIP_NOTE)
+end

@@ -167,6 +167,7 @@ local TooltipSettingsBase = {
 		["Precision"] = 2,
 		["Progress"] = true,
 		["ShowIconOnly"] = false,
+		["SharedAppearances"] = true,
 		["Show:CraftedItems"] = false,
 		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,

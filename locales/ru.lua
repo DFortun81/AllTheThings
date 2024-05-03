@@ -677,6 +677,12 @@ for key,value in pairs({
 		KNOWN_BY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке полный список персонажей на всех серверах, которые изучили данный рецепт.";
 		COMPLETED_BY_CHECKBOX = "Выполнено";
 		COMPLETED_BY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке полный список персонажей на всех серверах, которые выполнили данное Задание.";
+		--TODO: SHOW_CRAFTED_ITEMS_CHECKBOX = "Show Crafted Items";
+		--TODO: SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the items that can be crafted by any of your characters for a reagent in its tooltip.";
+		--TODO: SHOW_RECIPES_CHECKBOX = "Show Recipes";
+		--TODO: SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
+		--TODO: SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX = "Only Non-Trivial";
+		--TODO: SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you only want to see non-trivial recipes in the recipe list.";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Рассчет покупок";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке приблизительное количество Предметов/Валюты, необходимое для покупки Штучек.\n\nДля Контейнеров, которые не гарантируют получение всего содержимого за раз, оценка затрат будет ниже.";
 		SHARED_APPEARANCES_CHECKBOX = "Общие Облики";
