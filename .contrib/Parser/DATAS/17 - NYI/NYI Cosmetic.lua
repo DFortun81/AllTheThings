@@ -97,9 +97,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190160),	-- Twisted Arcanum Trousers
 				i(190193),	-- Twisted Arcanum Tunic
 			}),
-			n(WEAPONS, {
-				i(190674),	-- Leaky Bucket
-			}),
 		})),
 
 		-- 10.0.5
@@ -109,7 +106,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190672),	-- Deathguard Acolyte's Cloak
 				i(189869),	-- Distinguished Warcloak
 				i(190068),	-- Emerald Drape
-				i(190201),	-- Sin'dorei Assassin's Shroud
 			}),
 			n(SETS, {
 				i(190575),	-- Ensemble: Chains of the Honored Valarjar
@@ -120,7 +116,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190435),	-- Highborne Scholar's Belt
 				i(190437),	-- Highborne Scholar's Collar
 				i(190787),	-- Highborne Scholar's Cuffs
-				i(190070),	-- Highborne Scholar's Gloves
 				i(190815),	-- Highborne Scholar's Leggings
 				i(190555),	-- Highborne Scholar's Robe
 				i(190868),	-- Highborne Scholar's Scrollmantle
@@ -203,7 +198,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(189883),	-- Lordaeron Sentry's Bulwark
 				i(189886),	-- Might of the Titanforged
 				i(190687),	-- Painted Warblade
-				i(190066),	-- Primeval Maul
 				i(190148),	-- Ravencrest's Razor
 				i(189872),	-- Shattered Krokul Edge
 				i(190079),	-- Smoldering Forgeblade
@@ -235,11 +229,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(SETS, {
 				i(200917),	-- Ensemble: Tidecaller's Chainmail
 
-				------ Vagabond's Brick Threads ------
-				i(206325),	-- Ensemble: Vagabond's Brick Threads
-				i(206281),	-- Vagabond's Brick Cape
-				i(206292),	-- Vagabond's Brick Hood
-
 				------ Vagabond's Cloudy Threads ------
 				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 				i(206284),	-- Vagabond's Cloudy Cape
@@ -264,11 +253,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206323),	-- Ensemble: Vagabond's Plum Threads
 				i(206279),	-- Vagabond's Plum Cape
 				i(206290),	-- Vagabond's Plum Hood
-
-				------ Wanderer's Brick Trappings ------
-				i(206336),	-- Ensemble: Wanderer's Brick Trappings
-				i(206314),	-- Wanderer's Brick Cloak
-				i(206303),	-- Wanderer's Brick Scarf
 
 				------ Wanderer's Cloudy Trappings ------
 				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
@@ -311,11 +295,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(211069),	-- Azure Treads of the Kalu'ak
 				i(210867),	-- Blademaster's Lively Stones
-				i(211071),	-- Lively Treads of the Kalu'ak
 				i(210999),	-- Ruby Faced Mobile Timepiece
 				i(211001),	-- Sapphire Faced Mobile Timepiece
 				i(210849),	-- Trader's Azure Sarong
-				i(210855),	-- Trader's Brick Sarong
 				i(210854),	-- Trader's Camo Sarong
 				i(210853),	-- Trader's Deep Sarong
 				i(210856),	-- Trader's Faded Sarong
@@ -343,14 +325,12 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190090),	-- Dessicated Bouquet
 				i(212627),	-- Dueler's Azure Shoulder Cape
-				i(212623),	-- Dueler's Brick Shoulder Cape
 				i(212622),	-- Dueler's Camo Shoulder Cape
 				i(212619),	-- Dueler's Carrot Shoulder Cape
 				i(212617),	-- Dueler's Crimson Shoulder Cape
 				i(212624),	-- Dueler's Deep Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
-				i(212628),	-- Dueler's Midnight Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
 				i(212615),	-- Dueler's Snowy Shoulder Cape
 				i(212614),	-- Dueler's Sunny Shoulder Cape
@@ -362,7 +342,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(212713),	-- Spring Reveler's Cornsilk Dress
 				i(212987),	-- Spring Reveler's Cornsilk Pants
 				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-				i(212613),	-- Wings of the Amber Monarch
 				i(212612),	-- Wings of the Amethyst Monarch
 				i(212610),	-- Wings of the Emerald Monarch
 				i(212611),	-- Wings of the Tourmaline Monarch
@@ -411,11 +390,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(213106),	-- Gladiator's Serrated Greatsword
 				i(190860),	-- Initiate's Bo
 				i(213077),	-- Lavender Bow-quet
-				i(213065),	-- Lavish Floral Edge
-				i(213068),	-- Lavish Floral Stalk
 				i(190822),	-- Mo'arg Enforcer's Halberd
 				i(213076),	-- Orchid Bow-quet
-				i(213062),	-- Paradise's Golden Axe
 				i(213063),	-- Paradise's Ruby Axe
 				i(213064),	-- Paradise's Violet Axe
 				i(213070),	-- Pristine Floral Stalk
@@ -427,10 +403,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190891),	-- Shabby Battleaxe
 				i(190903),	-- Soulburner Warscythe
 				i(190818),	-- Steamwheedle Artifact Extractor
-				i(213075),	-- Sunny Bow-quet
-				i(213071),	-- Sunny Floral Staff
 				i(213161),	-- Titan Thunderbow
-				i(190844),	-- Valarjar Champion's Greatsword
 				i(213067),	-- Violet Floral Edge
 				i(190902),	-- Will of the Titanforged
 				i(190889),	-- Woodsman's Hatchet

@@ -7103,9 +7103,6 @@ root(ROOTS.Unsorted, {
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			------ Next Check 10.2.7 ------
-			filter(BATTLE_PETS, {
-				i(217043),	-- Pokee (PET!)
-			}),
 			filter(COSMETIC, {
 				------ Dragonriding Cup ------
 				i(212686),	-- Azure Riders of Azeroth Tabard
@@ -7129,14 +7126,10 @@ root(ROOTS.Unsorted, {
 				i(217031),	-- Gladiator's Battered Treads
 
 				------ Single Pieces ------
-				i(213396),	-- Classic Midnight Tabard
-				i(213394),	-- Ebony Crown of the Red Rose
 				i(217375),	-- Frenzied Hat of the Crimson Seas
 				i(217373),	-- Frenzied Hat of the Dark Depths
 				i(217376),	-- Frenzied Hat of the Murky Waters
 				i(217374),	-- Frenzied Hat of the Shallows
-				i(213395),	-- Gloves of the Midnight Soiree
-				i(213393),	-- Guise of the Golden Masquerade
 			}),
 			filter(MISC, {
 				------ Crests & Flightstones?? ------
