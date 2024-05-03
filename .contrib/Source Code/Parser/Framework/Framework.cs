@@ -125,9 +125,9 @@ namespace ATT
             // Key-Value Pair   // Classic Release Version
             { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 15, 7, 22248 } },   // NOTE: Values for WoW-Classic
-            { "TBC", new int[] { 2, 5, 4, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 4, 5, 22248 } },      // NOTE: Values for Wrath-Classic
-            { "CATA", new int[] { 4, 3, 4, 15595 } },
+            { "TBC", new int[] { 2, 5, 5, 43638 } },        // NOTE: Values for TBC-Classic
+            { "WRATH", new int[] { 3, 4, 5, 51666 } },      // NOTE: Values for Wrath-Classic
+            { "CATA", new int[] { 4, 4, 5, 54481 } },
             { "MOP", new int[] { 5, 4, 8, 18224 } },
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },

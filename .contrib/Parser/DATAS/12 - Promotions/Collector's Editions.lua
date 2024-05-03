@@ -392,30 +392,39 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				-- Twilight's Hammer Regalia Transmog Set (Added with Cataclysm)
 				i(224380, {	-- Twilight's Hammer Regalia Helmet
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224383, {	-- Twilight's Hammer Regalia Shoulders
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224382, {	-- Twilight's Hammer Regalia Robe
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224378, {	-- Twilight's Hammer Regalia Tunic
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224377, {	-- Twilight's Hammer Regalia Bracer
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224379, {	-- Twilight's Hammer Regalia Gloves
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224375, {	-- Twilight's Hammer Regalia Belt
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224381, {	-- Twilight's Hammer Regalia Kilt
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				i(224376, {	-- Twilight's Hammer Regalia Boots
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["f"] = CLOTH,
 				}),
 				
 				-- Town-In-A-Box Starter Set Toy (Added with Cataclysm)
