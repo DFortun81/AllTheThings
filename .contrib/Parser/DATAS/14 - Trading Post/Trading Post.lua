@@ -1836,7 +1836,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(212613),	-- Wings of the Amber Monarch
 			}),
 			filter(BATTLE_PETS, {
-				i(217043, { -- Pokee
+				i(217043, { -- Pokee (PET!)
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
 				}),
 			}),
