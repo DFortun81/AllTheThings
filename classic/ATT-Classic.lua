@@ -4935,6 +4935,7 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Spells then accountWideData.Spells = {}; end
 		if not accountWideData.Titles then accountWideData.Titles = {}; end
 		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
+		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;
