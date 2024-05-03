@@ -165,7 +165,6 @@ for key,value in pairs({
 	["TOY_ID"] = "Toy ID";
 	["VISUAL_ID"] = "Visual ID";
 	["AND_MORE"] = "And %s more...";
-	["AND_OTHER_SOURCES"] = "And %s other sources...";
 	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
 	["SYM_ROW_SKIP_DESC"] = "Linked content is only displayed in the tooltip for this object.";
 	["ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO"] = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";

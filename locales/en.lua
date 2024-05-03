@@ -27,14 +27,14 @@ for key, value in pairs({
 	["FACTIONS"] = "Factions";
 	["COORDINATES"] = "Coordinates";
 	["AND_MORE"] = "And %s more...";
-	["AND_OTHER_SOURCES"] = "And %s other sources...";
+	
 	["PLAYER_COORDINATES"] = "Player Coordinates";
 	["NO_COORDINATES_FORMAT"] = "No known coordinates for %s";
 	["TOM_TOM_NOT_FOUND"] = "You must have TomTom installed to plot coordinates.";
 	["FLIGHT_PATHS"] = "Flight Paths";
 	["KNOWN_BY"] = "Known by %s";
 	["REQUIRES"] = "Requires";
-	["RACE_LOCKED"] = "Race Locked";
+	
 	["PLEASE_REPORT_MESSAGE"] = "Please report this to the ATT Discord in #retail-errors! Thanks!";
 	["REPORT_TIP"] = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
