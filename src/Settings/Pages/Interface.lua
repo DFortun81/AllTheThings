@@ -689,17 +689,17 @@ end)
 checkboxModelPreview:SetATTTooltip(L.SHOW_MODELS_CHECKBOX_TOOLTIP)
 checkboxModelPreview:AlignBelow(checkboxIconPortraitForQuests, -1)
 
-local checkboxShowCollectibleCostGroups = child:CreateCheckBox(L.CURRENCIES_IN_WQ_CHECKBOX,
+local checkboxShowCollectibleCostGroups = child:CreateCheckBox(L.FILL_DYNAMIC_QUESTS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
 end,
 function(self)
 	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked())
 end)
-checkboxShowCollectibleCostGroups:SetATTTooltip(L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP)
+checkboxShowCollectibleCostGroups:SetATTTooltip(L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP)
 checkboxShowCollectibleCostGroups:AlignBelow(checkboxModelPreview)
 
-local checkboxNestedNPCData = child:CreateCheckBox(L.NPC_DATA_NESTED_CHECKBOX,
+local checkboxNestedNPCData = child:CreateCheckBox(L.FILL_NPC_DATA_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("NPCData:Nested"))
 end,
@@ -708,17 +708,17 @@ function(self)
 	-- requires re-building of minilist
 	app.LocationTrigger(true)
 end)
-checkboxNestedNPCData:SetATTTooltip(L.NPC_DATA_NESTED_CHECKBOX_TOOLTIP)
+checkboxNestedNPCData:SetATTTooltip(L.FILL_NPC_DATA_CHECKBOX_TOOLTIP)
 checkboxNestedNPCData:AlignBelow(checkboxShowCollectibleCostGroups)
 
-local checkboxNestedQuestChains = child:CreateCheckBox(L.QUEST_CHAIN_NESTED_CHECKBOX,
+local checkboxNestedQuestChains = child:CreateCheckBox(L.NESTED_QUEST_CHAIN_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"))
 end,
 function(self)
 	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked())
 end)
-checkboxNestedQuestChains:SetATTTooltip(L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP)
+checkboxNestedQuestChains:SetATTTooltip(L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP)
 checkboxNestedQuestChains:AlignBelow(checkboxNestedNPCData)
 
 local checkboxSortByProgress = child:CreateCheckBox(L.SORT_BY_PROGRESS_CHECKBOX,
