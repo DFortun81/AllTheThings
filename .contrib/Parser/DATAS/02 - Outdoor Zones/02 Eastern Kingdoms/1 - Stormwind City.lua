@@ -1,13 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local COOKING_AWARD_GROUPS = {
-	-- #if AFTER 5.0.4
-	currency(81),	-- Epicurean's Award
-	-- #else
-	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
-	-- #endif
-};
+local COOKING_AWARD;
+-- #if AFTER 5.0.4
+COOKING_AWARD = currency(81);	-- Epicurean's Award
+-- #else
+COOKING_AWARD = currency(402);	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
+-- #endif
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -443,7 +442,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/5 Gigantic Catfish
+							["providers"] = {
+								{ "i",  57245 },	-- Gigantic Catfish
+								{ "o", 203800 },	-- Barrel of Canal Fish
+							},
+							["coord"] = { 56.8, 41.2, STORMWIND_CITY },
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(46275, {	-- A Kingdom's Heart
 					["qg"] = 119357,	-- Anduin Wrynn
@@ -1474,7 +1482,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/6 Canal Crab
+							["providers"] = {
+								{ "i", 57175 },	-- Canal Crab
+								{ "n", 42339 },	-- Canal Crab
+							},
+							["coord"] = { 47.8, 68.4, STORMWIND_CITY },
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(1701, {	-- Fire Hardened Mail
 					["providers"] = {
@@ -2449,7 +2466,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/4 Confectioners' Sugar
+							["providers"] = {
+								{ "i",  57246 },	-- Confectioners' Sugar
+								{ "o", 203801 },	-- Sack of Confectioner's Sugar
+							},
+							["coord"] = { 77.6, 53.2, STORMWIND_CITY },
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(334, {	-- Package for Thurman
 					["providers"] = {
@@ -2484,7 +2510,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/6 Stormwind Pumpkin
+							["providers"] = {
+								{ "i",  57137 },	-- Stormwind Pumpkin
+								{ "o", 203751 },	-- Stormwind Pumpkin
+							},
+							["coord"] = { 55.2, 11.4, STORMWIND_CITY },
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(1940, {	-- Pristine Spider Silk
 					["qg"] = 5694,	-- High Sorcerer Andromath
@@ -3105,7 +3140,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/12 Juicy Apple
+							["providers"] = {
+								{ "i",  57197 },	-- Juicy Apple
+								{ "o", 203762 },	-- Juicy Apple
+							},
+							["coord"] = { 55.5, 74.2, STORMWIND_CITY },
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(25157, {	-- The Latest Fashion!
 					["qg"] = 50480,	-- Isabel Jones
