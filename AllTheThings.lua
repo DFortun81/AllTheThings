@@ -8156,7 +8156,7 @@ local function RowOnClick(self, button)
 							for key,value in pairs(uniqueNames) do
 								tinsert(arr, key);
 							end
-							Auctionator.API.v1.MultiSearchExact(L.TITLE, arr);
+							Auctionator.API.v1.MultiSearch(L.TITLE, arr);
 							return;
 						elseif TSMAPI and TSMAPI.Auction then
 							-- This was the old, better, TSM API that made sense.

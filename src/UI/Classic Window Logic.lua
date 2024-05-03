@@ -686,7 +686,7 @@ local function RowOnClick(self, button)
 					for key,value in pairs(uniqueNames) do
 						tinsert(arr, key);
 					end
-					Auctionator.API.v1.MultiSearchExact(L["TITLE"], arr);
+					Auctionator.API.v1.MultiSearch(L["TITLE"], arr);
 					return;
 				end
 
