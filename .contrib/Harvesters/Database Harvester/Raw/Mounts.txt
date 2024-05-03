@@ -1924,3 +1924,7 @@
 452777@@@[PH] NerubianBeetleLargeMount (Green)
 452779@@@[PH] NerubianBeetleLargeMount (Tan)
 452780@@@[PH] NerubianBeetleLargeMount (Purple)
+11.0.0.54521
+448939@@@Shackled Shadow
+448978@@@Vermillion Imperial Lynx
+453785@@@Earthen Judicator's Ramolith

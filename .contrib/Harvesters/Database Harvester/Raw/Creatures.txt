@@ -21555,3 +21555,39 @@
 225361@@@Queen Ansurek
 225401@@@Wrapped Spool
 225404@@@[DNT] Rare 14 Vignette Holder
+11.0.0.54521
+210729@@@Decaying Shroom
+213108@@@General Steelstrike
+214371@@@General Steelstrike
+214376@@@General Steelstrike
+214941@@@Kaheti Overseer
+216373@@@Algari Flask Cauldron |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+216374@@@Algari Flask Cauldron |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+216375@@@Algari Flask Cauldron |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+216569@@@Algari Potion Cauldron |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+216570@@@Algari Potion Cauldron |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+216571@@@Algari Potion Cauldron |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+222883@@@Chester
+223135@@@Sir Shady Mrgglton Junior
+223268@@@General Steelstrike
+224154@@@General Steelstrike
+225188@@@General Steelstrike
+225404@@@Beledar's Spawn
+225493@@@Doomguard
+225495@@@Warsong Grunt
+225496@@@Warsong Grunt
+225497@@@Burning Candle
+225537@@@Faithful Dog
+225595@@@Dropbat
+225620@@@Hannan
+225621@@@Orweyna
+225629@@@Greenspeaker Na'layro
+225652@@@Generic Bunny
+225654@@@Boost
+225664@@@Boost
+225688@@@Generic Bunny
+225711@@@General Steelstrike
+225745@@@Vaelisia Steelstrike
+225807@@@Boost
+225813@@@Boost
+225825@@@Boost

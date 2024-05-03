@@ -12104,3 +12104,20 @@
 7504@@@Overclocked S.E.L.F.I.E. Camera
 7505@@@Earthen Delivery Drill
 7506@@@Heartseeking Health Injector
+11.0.0.54521
+7211@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algari gem color
+7212@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algari gem color
+7213@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algari gem color
+7214@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algari gem color
+7215@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algari gem color
+7216@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algari gem color
+7217@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algari gem color
+7218@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algari gem color
+7219@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algari gem color
+7251@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algari gem color socketed
+7252@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algari gem color socketed
+7253@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algari gem color socketed
+7493@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7494@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7495@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7521@@@Holy Fire

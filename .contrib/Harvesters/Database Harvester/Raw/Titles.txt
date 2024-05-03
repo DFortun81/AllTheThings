@@ -725,3 +725,6 @@
 556@@@%s the [PH] TBD Title
 11.0.0.54361
 556@@@Queenslayer %s
+11.0.0.54521
+558@@@Forged Gladiator %s
+559@@@Forged Legend %s

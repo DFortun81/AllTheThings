@@ -14755,3 +14755,84 @@
 40376@@@City of Threads
 40377@@@Heroic: City of Threads
 40379@@@Mythic: City of Threads
+11.0.0.54521
+19408@@@Professional Algari Master
+19410@@@Algari Master of All
+19414@@@Algari Cook
+19415@@@Algari Fisherman
+19515@@@Algari Master of Many
+19704@@@Overflowing Algari Flasks
+19716@@@Plentiful Algari Potions
+19735@@@Algari Alchemy 25 (DNT)
+19736@@@Algari Alchemy 50 (DNT)
+19737@@@Algari Alchemy 75 (DNT)
+19738@@@Algari Alchemy 100 (DNT)
+19739@@@Algari Blacksmithing 25 (DNT)
+19740@@@Algari Blacksmithing 50 (DNT)
+19741@@@Algari Blacksmithing 75 (DNT)
+19742@@@Algari Blacksmithing 100 (DNT)
+19743@@@Algari Enchanting 25 (DNT)
+19744@@@Algari Enchanting 50 (DNT)
+19745@@@Algari Enchanting 75 (DNT)
+19746@@@Algari Enchanting 100 (DNT)
+19747@@@Algari Engineering 25 (DNT)
+19748@@@Algari Engineering 50 (DNT)
+19749@@@Algari Engineering 75 (DNT)
+19750@@@Algari Engineering 100 (DNT)
+19751@@@Algari Inscription 25 (DNT)
+19752@@@Algari Inscription 50 (DNT)
+19753@@@Algari Inscription 75 (DNT)
+19754@@@Algari Inscription 100 (DNT)
+19755@@@Algari Jewelcrafting 25 (DNT)
+19756@@@Algari Jewelcrafting 50 (DNT)
+19757@@@Algari Jewelcrafting 75 (DNT)
+19758@@@Algari Jewelcrafting 100 (DNT)
+19759@@@Algari Leatherworking 25 (DNT)
+19760@@@Algari Leatherworking 50 (DNT)
+19761@@@Algari Leatherworking 75 (DNT)
+19762@@@Algari Leatherworking 100 (DNT)
+19763@@@Algari Tailoring 25 (DNT)
+19764@@@Algari Tailoring 50 (DNT)
+19765@@@Algari Tailoring 75 (DNT)
+19766@@@Algari Tailoring 100 (DNT)
+19767@@@Algari Herbalism 25 (DNT)
+19768@@@Algari Herbalism 50 (DNT)
+19769@@@Algari Herbalism 75 (DNT)
+19770@@@Algari Herbalism 100 (DNT)
+19771@@@Algari Mining 25 (DNT)
+19772@@@Algari Mining 50 (DNT)
+19773@@@Algari Mining 75 (DNT)
+19774@@@Algari Mining 100 (DNT)
+19775@@@Algari Skinning 25 (DNT)
+19776@@@Algari Skinning 50 (DNT)
+19777@@@Algari Skinning 75 (DNT)
+19778@@@Algari Skinning 100 (DNT)
+40240@@@Mythic: Broodtwister Ovi'nax
+40260@@@You Can't See Me
+40283@@@Broodtwister Ovi'nax kills (Raid Finder Nerub-ar Palace)
+40284@@@Broodtwister Ovi'nax kills (Normal Nerub-ar Palace)
+40285@@@Broodtwister Ovi'nax kills (Heroic Nerub-ar Palace)
+40286@@@Broodtwister Ovi'nax kills (Mythic Nerub-ar Palace)
+40314@@@Fragments of Memories
+40380@@@Forged Gladiator: The War Within Season 1
+40381@@@Forged Legend: The War Within Season 1
+40382@@@Hunt the Harbinger
+40383@@@Hero of the Alliance: Forged
+40384@@@Hero of the Horde: Forged
+40385@@@Combatant I: The War Within Season 1
+40386@@@Combatant II: The War Within Season 1
+40387@@@Challenger I: The War Within Season 1
+40388@@@Challenger II: The War Within Season 1
+40389@@@Rival I: The War Within Season 1
+40390@@@Rival II: The War Within Season 1
+40391@@@Duelist: The War Within Season 1
+40392@@@Elite: The War Within Season 1
+40393@@@Gladiator: The War Within Season 1
+40395@@@Legend: The War Within Season 1
+40396@@@Forged Combatant
+40397@@@Forged Combatant
+40398@@@Forged Gladiator's Fel Bat
+40427@@@Darkflame Cleft
+40428@@@Heroic: Darkflame Cleft
+40429@@@Mythic: Darkflame Cleft
+40430@@@Khaz Algar Flight Master
