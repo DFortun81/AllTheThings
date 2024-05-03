@@ -392,38 +392,47 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				-- Twilight's Hammer Regalia Transmog Set (Added with Cataclysm)
 				i(224380, {	-- Twilight's Hammer Regalia Helmet
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220352,
 					["f"] = CLOTH,
 				}),
 				i(224383, {	-- Twilight's Hammer Regalia Shoulders
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220355,
 					["f"] = CLOTH,
 				}),
 				i(224382, {	-- Twilight's Hammer Regalia Robe
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220354,
 					["f"] = CLOTH,
 				}),
 				i(224378, {	-- Twilight's Hammer Regalia Tunic
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220350,
 					["f"] = CLOTH,
 				}),
 				i(224377, {	-- Twilight's Hammer Regalia Bracer
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220349,
 					["f"] = CLOTH,
 				}),
 				i(224379, {	-- Twilight's Hammer Regalia Gloves
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220351,
 					["f"] = CLOTH,
 				}),
 				i(224375, {	-- Twilight's Hammer Regalia Belt
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220347,
 					["f"] = CLOTH,
 				}),
 				i(224381, {	-- Twilight's Hammer Regalia Kilt
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220353,
 					["f"] = CLOTH,
 				}),
 				i(224376, {	-- Twilight's Hammer Regalia Boots
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220348,
 					["f"] = CLOTH,
 				}),
 				
