@@ -2,64 +2,6 @@ local appName, app = ...;
 local L = app.L.SETTINGS_MENU;
 local settings = app.Settings;
 
-settings.AccountWide = {
-	Achievements = true,
-	BattlePets = true,
-	Deaths = true,
-	Exploration = true,
-	FlightPaths = true,
-	Heirlooms = true,
-	Illusions = true,
-	Mounts = true,
-	PVPRanks = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	Titles = true,
-	Toys = true,
-	Transmog = true,
-};
-settings.Collectibles = {
-	Achievements = true,
-	BattlePets = true,
-	Exploration = true,
-	FlightPaths = true,
-	Heirlooms = true,
-	Illusions = true,
-	Loot = true,
-	Mounts = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	Titles = true,
-	Toys = true,
-	Transmog = true,
-};
-settings.ForceAccountWide = {
-	BattlePets = true,
-	Heirlooms = true,
-	Illusions = true,
-	Mounts = true,
-	Toys = true,
-	Transmog = true,
-}
-settings.RequiredForInsaneMode = {
-	Achievements = true,
-	BattlePets = true,
-	Deaths = true,
-	Exploration = true,
-	FlightPaths = true,
-	Heirlooms = true,
-	Illusions = true,
-	Mounts = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	Titles = true,
-	Toys = true,
-	Transmog = app.GameBuildVersion >= 40000,
-}
-
 -- Settings Class
 local Things = {
 	"Achievements",
@@ -90,49 +32,73 @@ local Things = {
 local GeneralSettingsBase = {
 	__index = {
 		["AccountMode"] = false,
+		["Completionist"] = true,
+		["LootMode"] = false,
+		["MainOnly"] = false,
 		["DebugMode"] = false,
 		["FactionMode"] = false,
-		["AccountWide:Achievements"] = false,
+		["AccountWide:Achievements"] = app.GameBuildVersion >= 40000,
+		["AccountWide:AzeriteEssences"] = true,
 		["AccountWide:BattlePets"] = true,
+		["AccountWide:CharacterUnlocks"] = true,
+		["AccountWide:Conduits"] = true,
 		["AccountWide:Deaths"] = true,
 		["AccountWide:Exploration"] = false,
 		["AccountWide:FlightPaths"] = false,
+		["AccountWide:Followers"] = true,
 		["AccountWide:Heirlooms"] = true,
 		["AccountWide:Illusions"] = true,
 		["AccountWide:Mounts"] = true,
+		["AccountWide:MusicRollsAndSelfieFilters"] = true,
 		["AccountWide:PVPRanks"] = false,
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
-		["AccountWide:Reputations"] = false,
-		["AccountWide:Titles"] = false,
+		["AccountWide:Reputations"] = app.GameBuildVersion >= 40000,
+		["AccountWide:Titles"] = true,
 		["AccountWide:Toys"] = true,
 		["AccountWide:Transmog"] = true,
-		["Hide:PvP"] = false,
-		["DeathTracker"] = app.GameBuildVersion < 40000,
 		["Thing:Achievements"] = true,
+		["Thing:AzeriteEssences"] = app.GameBuildVersion >= 80000,
 		["Thing:BattlePets"] = true,
-		["Thing:Exploration"] = true,
+		["Thing:CharacterUnlocks"] = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
+		["Thing:Conduits"] = app.GameBuildVersion >= 100000,
+		["Thing:DrakewatcherManuscripts"] = app.GameBuildVersion >= 100000,
+		["Thing:Exploration"] = app.IsClassic,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
 		["Thing:FlightPaths"] = true,
+		["Thing:Followers"] = app.GameBuildVersion >= 60000,
 		["Thing:Heirlooms"] = true,
+		["Thing:HeirloomUpgrades"] = app.GameBuildVersion >= 60000,
 		["Thing:Illusions"] = true,
-		--["Thing:Loot"] = false,
 		["Thing:Mounts"] = true,
-		--["Thing:PVPRanks"] = false,
+		["Thing:MusicRollsAndSelfieFilters"] = app.GameBuildVersion >= 60000,
+		--["Thing:PVPRanks"] = app.GameBuildVersion < 20000,	-- CRIEVE NOTE: Maybe someday? Classic Era project.
 		["Thing:Quests"] = true,
 		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
+		["Thing:RuneforgeLegendaries"] = app.GameBuildVersion >= 90000,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = app.GameBuildVersion >= 40000,
+		["DeathTracker"] = app.GameBuildVersion < 40000,
 		["Only:RWP"] = app.GameBuildVersion < 40000,
 		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
 		["Show:OnlyActiveEvents"] = true,
+		["Show:PetBattles"] = true,
+		["Show:UnavailablePersonalLoot"] = true,
+		["Hide:PvP"] = false,
+		["Dynamic:Style"] = 1,
+		["CC:SL_COV_KYR"] = false,
+		["CC:SL_COV_VEN"] = false,
+		["CC:SL_COV_NFA"] = false,
+		["CC:SL_COV_NEC"] = false,
+		["Profile:ShowProfileLoadedMessage"] = true,
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["Window:UseClassForBorder"] = false,
+		["Window:CustomColors"] = {},	-- CRIEVE NOTE: Look into what this does, I'm not sure.
 	},
 };
 local FilterSettingsBase = {
@@ -171,8 +137,8 @@ local TooltipSettingsBase = {
 		["Show:CraftedItems"] = false,
 		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,
-		["Show:Percentage"] = true,
 		["Show:OnlyShowNonTrivialRecipes"] = true,
+		["Show:Percentage"] = true,
 		["Show:TooltipHelp"] = true,
 		["SoftReserves"] = true,
 		["SoftReservePersistence"] = false,
@@ -210,8 +176,8 @@ local TooltipSettingsBase = {
 		["requireEvent"] = true,
 		["requireSkill"] = true,
 		["providers"] = true,
-		["spellName"] = true,
 		["nextEvent"] = true,
+		["spellName"] = true,
 		["coords"] = true,
 		["parent"] = true,
 		["locks"] = true,
@@ -375,37 +341,43 @@ settings.GetModeString = function(self)
 			mode = "PvE " .. mode;
 		end
 
-		local things = {};
-		local thingCount = 0;
-		local totalThingCount = 0;
-		local excludes = {
-			["DeathTracker"] = true,
-			["Thing:QuestsLocked"] = true,
-		};
-		if not (C_TransmogCollection and C_TransmogCollection.GetIllusions) then
-			excludes["Thing:Illusions"] = true;
-		end
+		local keyPrefix, thingName, thingActive
+		local insaneTotalCount, insaneCount = 0, 0;
+		local totalThingCount, thingCount, things = 0, 0, {};
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			if key:sub(1, 6) == "Thing:" and not excludes[key] then
-				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
-					thingCount = thingCount + 1;
-					tinsert(things, key:sub(7));
+			keyPrefix = key:sub(1, 6);
+			if keyPrefix == "Thing:" then
+				totalThingCount = totalThingCount + 1
+				thingActive = settings:Get(key);
+				thingName = key:sub(7);
+				if thingActive then
+					-- Heirloom Upgrades only count when Heirlooms are enabled
+					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
+					if key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms") then
+						thingCount = thingCount + 1
+						table.insert(things, thingName)
+					end
+					if self.RequiredForInsaneMode[thingName] then
+						insaneTotalCount = insaneTotalCount + 1;
+						insaneCount = insaneCount + 1;
+					end
+				elseif self.RequiredForInsaneMode[thingName] then
+					insaneTotalCount = insaneTotalCount + 1;
 				end
 			end
 		end
 		if thingCount == 0 then
 			mode = "None of the Things " .. mode;
+		elseif thingCount == 1 then
+			mode = things[1] .. " Only " .. mode;
+		elseif thingCount == 2 then
+			mode = things[1] .. " + " .. things[2] .. " Only " .. mode;
+		elseif insaneCount == insaneTotalCount then
+			mode = "Insane " .. mode;
+		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode["Transmog"] then
+			mode = "Some of the Things " .. mode
 		else
-			if thingCount == 1 then
-				mode = things[1] .. " Only " .. mode;
-			elseif thingCount == 2 then
-				mode = things[1] .. " + " .. things[2] .. " Only " .. mode;
-			elseif thingCount == totalThingCount then
-				mode = "Insane " .. mode;
-			else
-				mode = "Normal " .. mode;
-			end
+			mode = "Normal " .. mode;
 		end
 	end
 	if self:Get("Filter:ByLevel") then
@@ -939,11 +911,11 @@ settings.ToggleBOEItems = function(self)
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 end
 settings.SetLootMode = function(self, checked)
-	self:Set("Thing:Loot", checked);
+	self:Set("LootMode", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleLootMode = function(self)
-	self:SetLootMode(not self:Get("Thing:Loot"));
+	self:SetLootMode(not self:Get("LootMode"));
 end
 settings.SetSourceLocations = function(self, checked)
 	self:SetTooltipSetting("SourceLocations", checked);
@@ -983,7 +955,7 @@ settings.UpdateMode = function(self, doRefresh)
 	end
 	if self:Get("DebugMode") then
 		app.MODE_ACCOUNT = nil;
-		app.MODE_DEBUG = true
+		app.MODE_DEBUG = true;
 		
 		filterSet.Group()
 		filterSet.Unobtainable()
@@ -1143,7 +1115,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.SkillLevel()
 	end
-	self.Collectibles.Loot = self:Get("Thing:Loot");
+	self.Collectibles.Loot = self:Get("LootMode");
 	
 	app:UnregisterEvent("GOSSIP_SHOW");
 	app:UnregisterEvent("TAXIMAP_OPENED");
@@ -1183,9 +1155,3 @@ settings.GetTooltipSettingWithMod = function(self, setting)
 		return v
 	end
 end
-
-app.AddEventHandler("OnPlayerLevelUp", function()
-	if settings:Get("Filter:ByLevel") then
-		app:RefreshDataCompletely("PLAYER_LEVEL_UP");
-	end
-end);

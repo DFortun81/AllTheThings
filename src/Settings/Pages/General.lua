@@ -162,7 +162,7 @@ checkboxFactionMode:AlignAfter(checkboxAccountMode)
 
 local checkboxLootMode = child:CreateCheckBox(L.LOOT_MODE,
 function(self)
-	self:SetChecked(settings:Get("Thing:Loot"));
+	self:SetChecked(settings:Get("LootMode"));
 	if app.MODE_DEBUG then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -298,9 +298,9 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 	end
 end
 
--- Illusions aren't in the game until Transmog is. (Still unknown if it'll come out with Cataclysm Classic or not)
+-- Illusions were added with the Transmog API during Legion
 local accwideCheckboxIllusions;
-if C_TransmogCollection then
+if C_TransmogCollection and app.GameBuildVersion >= 70000 then
 accwideCheckboxIllusions =
 child:CreateAccountWideCheckbox("ILLUSIONS", "Illusions")
 	:AlignBelow(accwideCheckboxHeirlooms or accwideCheckboxTransmog)
@@ -523,11 +523,22 @@ function(self)
 end)
 checkboxNoLevelFilter:SetATTTooltip(L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP)
 checkboxNoLevelFilter:AlignBelow(checkboxIgnoreUnboundFilters, -1)
-app.AddEventHandler("OnPlayerLevelUp", function()
-	if settings:Get("Filter:ByLevel") then
-		settings:Refresh();
-	end
-end);
+if app.IsClassic then
+	app.AddEventHandler("OnPlayerLevelUp", function()
+		if settings:Get("Filter:ByLevel") then
+			settings:Refresh();
+			
+			-- TODO: Investigate if this is necessary of if the above code handles that.
+			app:RefreshDataCompletely("PLAYER_LEVEL_UP");
+		end
+	end);
+else
+	app.AddEventHandler("OnPlayerLevelUp", function()
+		if settings:Get("Filter:ByLevel") then
+			settings:Refresh();
+		end
+	end);
+end
 
 local checkboxNoSkillLevelFilter;
 if app.GameBuildVersion < 20000 then

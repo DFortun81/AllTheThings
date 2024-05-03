@@ -2,80 +2,6 @@ local appName, app = ...;
 local L = app.L.SETTINGS_MENU;
 local settings = app.Settings;
 
-settings.AccountWide = setmetatable({
-	Achievements = true,
-	BattlePets = true,
-	Deaths = true,
-	Exploration = true,
-	FlightPaths = true,
-	Heirlooms = true,
-	Illusions = true,
-	Mounts = true,
-	PVPRanks = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	Titles = true,
-	Toys = true,
-	Transmog = true,
-}, { __index = function(t, key)
-	-- hopefully temporary...
-	-- GarrisonBuildings is captured in the cache, but tracked via Recipes...
-	-- would prefer they eventually become moved to CharacterUnlocks with special handling
-	if key == "GarrisonBuildings" then
-		return t.Recipes
-	end
-end})
-settings.Collectibles = {
-	Achievements = true,
-	BattlePets = true,
-	Exploration = true,
-	FlightPaths = true,
-	Heirlooms = true,
-	Illusions = true,
-	Loot = true,
-	Mounts = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	Titles = true,
-	Toys = true,
-	Transmog = true,
-};
-settings.ForceAccountWide = {
-	BattlePets = true,
-	DrakewatcherManuscripts = true,
-	Heirlooms = true,
-	Illusions = true,
-	Mounts = true,
-	RuneforgeLegendaries = true,
-	Toys = true,
-	Transmog = true,
-}
-settings.RequiredForInsaneMode = {
-	Achievements = true,
-	AzeriteEssences = true,
-	BattlePets = true,
-	CharacterUnlocks = true,
-	Conduits = true,
-	DrakewatcherManuscripts = true,
-	Exploration = false,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
-	FlightPaths = true,
-	Followers = true,
-	Heirlooms = true,
-	HeirloomUpgrades = true,
-	Illusions = true,
-	Mounts = true,
-	MusicRollsAndSelfieFilters = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	RuneforgeLegendaries = true,
-	Titles = true,
-	Toys = true,
-	Transmog = true,
-}
-
 -- Settings Class
 local Things = {
 	"Achievements",
@@ -105,58 +31,61 @@ local Things = {
 }
 local GeneralSettingsBase = {
 	__index = {
-		-- Forced Account-Wide
-		-- ["AccountWide:BattlePets"] = true,
-		-- ["AccountWide:DrakewatcherManuscripts"] = true,
-		-- ["AccountWide:Heirlooms"] = true,
-		-- ["AccountWide:Illusions"] = true,
-		-- ["AccountWide:Mounts"] = true,
-		-- ["AccountWide:RuneforgeLegendaries"] = true,
-		-- ["AccountWide:Toys"] = true,
-		-- ["AccountWide:Transmog"] = true,
-
 		["AccountMode"] = false,
 		["Completionist"] = true,
+		["LootMode"] = false,
 		["MainOnly"] = false,
 		["DebugMode"] = false,
 		["FactionMode"] = false,
-		["AccountWide:Achievements"] = true,
+		["AccountWide:Achievements"] = app.GameBuildVersion >= 40000,
 		["AccountWide:AzeriteEssences"] = true,
+		["AccountWide:BattlePets"] = true,
 		["AccountWide:CharacterUnlocks"] = true,
 		["AccountWide:Conduits"] = true,
-		["AccountWide:FlightPaths"] = true,
+		["AccountWide:Deaths"] = true,
+		["AccountWide:Exploration"] = false,
+		["AccountWide:FlightPaths"] = false,
 		["AccountWide:Followers"] = true,
+		["AccountWide:Heirlooms"] = true,
+		["AccountWide:Illusions"] = true,
+		["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRollsAndSelfieFilters"] = true,
-		["AccountWide:Quests"] = true,
+		["AccountWide:PVPRanks"] = false,
+		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
-		["AccountWide:Reputations"] = true,
+		["AccountWide:Reputations"] = app.GameBuildVersion >= 40000,
 		["AccountWide:Titles"] = true,
+		["AccountWide:Toys"] = true,
+		["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
-		["Thing:AzeriteEssences"] = true,
+		["Thing:AzeriteEssences"] = app.GameBuildVersion >= 80000,
 		["Thing:BattlePets"] = true,
-		["Thing:CharacterUnlocks"] = true,
-		["Thing:Conduits"] = true,
-		["Thing:DrakewatcherManuscripts"] = true,
-		["Thing:Exploration"] = false,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
+		["Thing:CharacterUnlocks"] = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
+		["Thing:Conduits"] = app.GameBuildVersion >= 100000,
+		["Thing:DrakewatcherManuscripts"] = app.GameBuildVersion >= 100000,
+		["Thing:Exploration"] = app.IsClassic,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
 		["Thing:FlightPaths"] = true,
-		["Thing:Followers"] = true,
+		["Thing:Followers"] = app.GameBuildVersion >= 60000,
 		["Thing:Heirlooms"] = true,
-		["Thing:HeirloomUpgrades"] = true,
+		["Thing:HeirloomUpgrades"] = app.GameBuildVersion >= 60000,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
-		["Thing:MusicRollsAndSelfieFilters"] = true,
+		["Thing:MusicRollsAndSelfieFilters"] = app.GameBuildVersion >= 60000,
+		--["Thing:PVPRanks"] = app.GameBuildVersion < 20000,	-- CRIEVE NOTE: Maybe someday? Classic Era project.
 		["Thing:Quests"] = true,
 		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
-		["Thing:RuneforgeLegendaries"] = true,
+		["Thing:RuneforgeLegendaries"] = app.GameBuildVersion >= 90000,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
-		["Thing:Transmog"] = true,
+		["Thing:Transmog"] = app.GameBuildVersion >= 40000,
+		["DeathTracker"] = app.GameBuildVersion < 40000,
+		["Only:RWP"] = app.GameBuildVersion < 40000,
+		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
 		["Show:OnlyActiveEvents"] = true,
-		["Skip:AutoRefresh"] = false,
 		["Show:PetBattles"] = true,
 		["Show:UnavailablePersonalLoot"] = true,
 		["Hide:PvP"] = false,
@@ -169,9 +98,9 @@ local GeneralSettingsBase = {
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["Window:UseClassForBorder"] = false,
-		["Window:CustomColors"] = {},
+		["Window:CustomColors"] = {},	-- CRIEVE NOTE: Look into what this does, I'm not sure.
 	},
-}
+};
 local FilterSettingsBase = {
 	__index = app.Presets[app.Class] or app.Presets.ALL,
 };
@@ -183,8 +112,8 @@ local TooltipSettingsBase = {
 		["Auto:Sync"] = true,
 		["Auto:AH"] = false,
 		["Celebrate"] = true,
-		["Screenshot"] = false,
 		["Channel"] = "Master",
+		["Screenshot"] = false,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Enabled:Mod"] = "None",
@@ -209,10 +138,15 @@ local TooltipSettingsBase = {
 		["Progress"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
+		["Show:CraftedItems"] = false,
+		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,
+		["Show:OnlyShowNonTrivialRecipes"] = true,
 		["Show:Percentage"] = true,
-		["UseMoreColors"] = true,
 		["Show:TooltipHelp"] = true,
+		["SoftReserves"] = true,
+		["SoftReservePersistence"] = false,
+		["UseMoreColors"] = true,
 		["Skip:Cutscenes"] = false,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
@@ -273,7 +207,7 @@ local TooltipSettingsBase = {
 		["r"] = true,
 		["u"] = true,
 	},
-}
+};
 local UnobtainableSettingsBase = {
 	__index = {
 		[1] = false,	-- Never Implemented
@@ -573,12 +507,10 @@ settings.GetModeString = function(self)
 			mode = app.ClassName .. " " .. mode
 		end
 
-		local things = {}
-		local thingCount = 0
-		local totalThingCount = 0
+		local solo = true
 		local keyPrefix, thingName, thingActive
 		local insaneTotalCount, insaneCount = 0, 0;
-		local solo = true
+		local totalThingCount, thingCount, things = 0, 0, {};
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			keyPrefix = key:sub(1, 6)
 			if keyPrefix == "Thing:" then
@@ -617,7 +549,7 @@ settings.GetModeString = function(self)
 			else
 				mode = L.TITLE_INSANE .. mode
 			end
-		elseif not settings:Get("Thing:Transmog") then
+		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode["Transmog"] then
 			mode = L.TITLE_SOME_THINGS .. mode
 		end
 		if solo then
@@ -703,30 +635,6 @@ settings.GetShortModeString = function(self)
 			end
 		end
 	end
-end
--- Returns true if something is being hidden/filtered and removing Insane status
-settings.NonInsane = function(self)
-	local ccs = app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects
-	return
-	-- Hiding BoE's
-	self:Get("Hide:BoEs")
-	-- Hiding PvP
-	or self:Get("Hide:PvP")
-	-- Hiding Higher Level Content
-	or self:Get("Filter:ByLevel")
-	-- Hiding Pet Battles
-	or not self:Get("Show:PetBattles")
-	-- Hiding any Seasonal content
-	or self:Get("Show:OnlyActiveEvents")
-	-- Hiding quest rewards that aren't available to your current character
-	or not self:Get("Show:UnavailablePersonalLoot")
-	-- Non-Account Mode with Covenants filtered
-	or (not self:Get("AccountMode")
-		-- TODO: maybe track custom collect filters through a different Get method for easier logic
-		and (not (ccs.SL_COV_KYR or self:Get("CC:SL_COV_KYR"))
-			or not (ccs.SL_COV_NEC or self:Get("CC:SL_COV_NEC"))
-			or not (ccs.SL_COV_NFA or self:Get("CC:SL_COV_NFA"))
-			or not (ccs.SL_COV_VEN or self:Get("CC:SL_COV_VEN"))))
 end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting]
@@ -1218,12 +1126,12 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 end
 
 settings.SetAccountMode = function(self, accountMode)
-	self:Set("AccountMode", accountMode)
-	self:UpdateMode(1)
+	self:Set("AccountMode", accountMode);
+	self:UpdateMode(1);
 end
 settings.ToggleAccountMode = function(self)
 	self:ForceRefreshFromToggle()
-	self:SetAccountMode(not self:Get("AccountMode"))
+	self:SetAccountMode(not self:Get("AccountMode"));
 	if self:Get("AccountMode") == true then
 		app.print(L["TITLE_ACCOUNT"]..L["MODE"].."|R "..L["ENABLED"]..".")
 	else
@@ -1245,7 +1153,7 @@ settings.ToggleCompletionistMode = function(self)
 	end
 end
 settings.SetDebugMode = function(self, debugMode)
-	self:Set("DebugMode", debugMode)
+	self:Set("DebugMode", debugMode);
 	if debugMode then
 		-- cache the current settings to re-apply after
 		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"))
@@ -1259,11 +1167,11 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true)
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true)
 	end
-	self:UpdateMode(1)
+	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
 	self:ForceRefreshFromToggle()
-	self:SetDebugMode(not self:Get("DebugMode"))
+	self:SetDebugMode(not self:Get("DebugMode"));
 	if self:Get("DebugMode") == true then
 		app.print(L["TITLE_DEBUG"]..L["MODE"].."|R "..L["ENABLED"]..".")
 	else
@@ -1271,69 +1179,69 @@ settings.ToggleDebugMode = function(self)
 	end
 end
 settings.SetFactionMode = function(self, factionMode)
-	self:Set("FactionMode", factionMode)
-	self:UpdateMode(1)
+	self:Set("FactionMode", factionMode);
+	self:UpdateMode(1);
 end
 settings.ToggleFactionMode = function(self)
-	self:ForceRefreshFromToggle()
-	self:SetFactionMode(not self:Get("FactionMode"))
+	self:ForceRefreshFromToggle();
+	self:SetFactionMode(not self:Get("FactionMode"));
 end
 settings.SetMainOnlyMode = function(self, mainOnly)
-	self:Set("MainOnly", mainOnly)
-	self:SetCompletionistMode(self:Get("Completionist"))
+	self:Set("MainOnly", mainOnly);
+	self:SetCompletionistMode(self:Get("Completionist"));
 end
 settings.ToggleMainOnlyMode = function(self)
-	self:ForceRefreshFromToggle()
-	self:SetMainOnlyMode(not self:Get("MainOnly"))
+	self:ForceRefreshFromToggle();
+	self:SetMainOnlyMode(not self:Get("MainOnly"));
 end
 settings.SetCompletedThings = function(self, checked)
-	self:Set("Show:CompletedGroups", checked)
-	self:Set("Show:CollectedThings", checked)
-	settings:Set("Cache:CompletedGroups", checked)
-	settings:Set("Cache:CollectedThings", checked)
-	self:UpdateMode(1)
+	self:Set("Show:CompletedGroups", checked);
+	self:Set("Show:CollectedThings", checked);
+	settings:Set("Cache:CompletedGroups", checked);
+	settings:Set("Cache:CollectedThings", checked);
+	self:UpdateMode(1);
 end
 settings.ToggleCompletedThings = function(self)
-	self:ForceRefreshFromToggle()
-	self:SetCompletedThings(not self:Get("Show:CompletedGroups"))
+	self:ForceRefreshFromToggle();
+	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 end
 settings.SetCompletedGroups = function(self, checked, skipRefresh)
-	self:Set("Show:CompletedGroups", checked)
-	self:UpdateMode(not skipRefresh)
+	self:Set("Show:CompletedGroups", checked);
+	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCompletedGroups = function(self)
-	self:ForceRefreshFromToggle()
-	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"))
-	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"))
+	self:ForceRefreshFromToggle();
+	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
+	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
 end
 settings.SetCollectedThings = function(self, checked, skipRefresh)
-	self:Set("Show:CollectedThings", checked)
-	self:UpdateMode(not skipRefresh)
+	self:Set("Show:CollectedThings", checked);
+	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCollectedThings = function(self)
-	self:ForceRefreshFromToggle()
-	settings:SetCollectedThings(not self:Get("Show:CollectedThings"))
-	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"))
+	self:ForceRefreshFromToggle();
+	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
+	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
 end
 settings.SetHideBOEItems = function(self, checked)
-	self:Set("Hide:BoEs", checked)
-	self:UpdateMode(1)
+	self:Set("Hide:BoEs", checked);
+	self:UpdateMode(1);
 end
 settings.ToggleBOEItems = function(self)
-	self:ForceRefreshFromToggle()
-	self:SetHideBOEItems(not self:Get("Hide:BoEs"))
+	self:ForceRefreshFromToggle();
+	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 end
 settings.SetLootMode = function(self, checked)
-	self:Set("Thing:Loot", checked);
+	self:Set("LootMode", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleLootMode = function(self)
-	self:SetLootMode(not self:Get("Thing:Loot"));
+	self:SetLootMode(not self:Get("LootMode"));
 end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
 -- so force it always
 settings.ForceRefreshFromToggle = function(self)
-	self.ToggleRefresh = true
+	self.ToggleRefresh = true;
 end
 -- Setup tracking for all Things based on the Settings value, or whether it is forcibly tracked or forced AccountWide
 settings.SetThingTracking = function(self, force)
@@ -1356,7 +1264,7 @@ settings.SetThingTracking = function(self, force)
 end
 -- Updates various application settings and values based on toggled Settings, as well as the Mode name and Refreshes the Settings
 settings.UpdateMode = function(self, doRefresh)
-	local filterSet = app.Modules.Filter.Set
+	local filterSet = app.Modules.Filter.Set;
 	if self:Get("Completionist") then
 		filterSet.ItemSource()
 	else
@@ -1384,7 +1292,7 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.DefaultThing(not self:Get("Show:CollectedThings"))
 		filterSet.Trackable()
 
-		settings:SetThingTracking("Debug")
+		settings:SetThingTracking("Debug");
 	else
 		app.MODE_DEBUG = nil;
 		filterSet.Visible(true)
@@ -1492,7 +1400,7 @@ settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
 		app:RegisterEvent("TAXIMAP_OPENED")
 	end
-	self.Collectibles.Loot = self:Get("Thing:Loot");
+	self.Collectibles.Loot = self:Get("LootMode");
 
 	-- refresh forced from toggle
 	if self.ToggleRefresh then
