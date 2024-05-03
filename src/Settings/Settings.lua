@@ -103,7 +103,6 @@ if app.GameBuildVersion >= 90000 then
 	-- In this version, also include Convenants
 	-- Returns true if something is being hidden/filtered and removing Insane status
 	settings.NonInsane = function(self)
-		local ccs = app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects
 		return
 		-- Hiding BoE's
 		self:Get("Hide:BoEs")
@@ -120,10 +119,10 @@ if app.GameBuildVersion >= 90000 then
 		-- Non-Account Mode with Covenants filtered
 		or (not self:Get("AccountMode")
 			-- TODO: maybe track custom collect filters through a different Get method for easier logic
-			and (not (ccs.SL_COV_KYR or self:Get("CC:SL_COV_KYR"))
-				or not (ccs.SL_COV_NEC or self:Get("CC:SL_COV_NEC"))
-				or not (ccs.SL_COV_NFA or self:Get("CC:SL_COV_NFA"))
-				or not (ccs.SL_COV_VEN or self:Get("CC:SL_COV_VEN"))))
+			and (not (app.CurrentCharacter.CustomCollects.SL_COV_KYR or self:Get("CC:SL_COV_KYR"))
+				or not (app.CurrentCharacter.CustomCollects.SL_COV_NEC or self:Get("CC:SL_COV_NEC"))
+				or not (app.CurrentCharacter.CustomCollects.SL_COV_NFA or self:Get("CC:SL_COV_NFA"))
+				or not (app.CurrentCharacter.CustomCollects.SL_COV_VEN or self:Get("CC:SL_COV_VEN"))))
 	end
 else
 	-- Returns true if something is being hidden/filtered and removing Insane status
