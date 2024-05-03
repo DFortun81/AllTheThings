@@ -5590,7 +5590,6 @@ root(ROOTS.Unsorted, {
 				i(217893),	-- Emerald Winglord's Chain
 			}),
 			filter(BATTLE_PETS, {
-				i(221818),	-- Astral Emperor's Serpentling (PET!)
 				i(224576),	-- Lil' Flameo (PET!)
 				i(223499),	-- Lil' Manny (PET!)
 				i(223145),	-- Marrlok (PET!)
@@ -5909,6 +5908,7 @@ root(ROOTS.Unsorted, {
 						i(220970),	-- Mindbender Shirt
 						i(220971),	-- Mistwalker's Shirt
 						i(220972),	-- Shaded Wood Vest
+
 						------ UNKNOWN SOURCES! ------
 						------ Breezebinder's Vestment (Purple) ------
 						i(213647),	-- Windwhisper Amice
@@ -6001,13 +6001,17 @@ root(ROOTS.Unsorted, {
 						i(220980),	-- Vest of the Dynast
 						i(214010),	-- Vestment of the Dynast
 						i(214003),	-- Wristwraps of the Dynast
-						i(220966),	-- Shirt of the Chronomancer
 
+
+						i(220966),	-- Shirt of the Chronomancer
 						i(220973),	-- Chronomancer Shirt
 						i(220974),	-- Chronomancer Vest
+
 						i(220975),	-- Sha-Skin Shirt
+
 						i(220976),	-- Shirt of the Thousandfold Hells
 						i(220977),	-- Vest of the Thousandfold Hells
+
 						i(220978),	-- Shirt of the Horned Nightmare
 
 
@@ -6032,12 +6036,17 @@ root(ROOTS.Unsorted, {
 						i(214081),	-- Farwatch Waistband
 						i(214082),	-- Farwatch Spaulders
 						i(214083),	-- Farwatch Legguards
+
+
 						i(220981),	-- Eternal Blossom Tunic
+
 						i(220982),	-- Vest of the Haunted Forest
 						i(220983),	-- Vest of the Haunted Forest
+
 						i(220984),	-- Tunic of the Shattered Vale
 						i(220985),	-- Vest of the Shattered Vale
 						i(220986),	-- Vest of the Shattered Vale
+
 						i(220987),	-- Fire-Charm Tunic
 						i(220988),	-- Fire-Charm Vestments
 						i(220989),	-- Fire-Charm Jacket
@@ -7341,7 +7350,6 @@ root(ROOTS.Unsorted, {
 				filter(FINGER_F, {
 					i(210257),	-- Bamboo Band
 					i(210256),	-- Cloud-Rider Seal
-					i(208487),	-- Timerunner's Ring
 				}),
 				filter(LEATHER, {
 					i(210315),	-- Mistveil Bindings
@@ -7380,12 +7388,9 @@ root(ROOTS.Unsorted, {
 					i(210310),	-- Dawnwatcher's Waistguard
 					i(210285),	-- Jade Guardian's Belt
 					i(210289),	-- Jade Guardian's Bracers
-					i(210267),	-- Jade Guardian's Chain Armor
 					i(210271),	-- Jade Guardian's Gauntlets
 					i(210273),	-- Jade Guardian's Helm
-					i(210277),	-- Jade Guardian's Leggings
 					i(210282),	-- Jade Guardian's Monnion
-					i(210269),	-- Jade Guardian's Sabatons
 					i(210615),	-- Reedstalker Boots
 					i(210614),	-- Reedstalker Chestguard
 					i(210620),	-- Reedstalker Girdle
@@ -7438,7 +7443,6 @@ root(ROOTS.Unsorted, {
 				}),
 				filter(TRINKET_F, {
 					i(208556),	-- Flicker Blossom
-					i(208554),	-- Timerunner's Beacon
 				}),
 				n(WEAPONS, {
 					i(210342),	-- Bataari Hacker
@@ -7488,13 +7492,13 @@ root(ROOTS.Unsorted, {
 				i(210901),	-- Timerunner's Leggings
 				i(210902),	-- Timerunner's Legguards
 				i(210900),	-- Timerunner's Legplates
-				i(210344),	-- Timerunner's Mace
+
 				i(210907),	-- Timerunner's Monnion
 				i(210905),	-- Timerunner's Pauldrons
 				i(210889),	-- Timerunner's Robe
 				i(210894),	-- Timerunner's Sabatons
 				i(210909),	-- Timerunner's Sash
-				i(210636),	-- Timerunner's Shield
+
 				i(210893),	-- Timerunner's Slippers
 				i(210904),	-- Timerunner's Spaulders
 				i(210339),	-- Timerunner's Staff

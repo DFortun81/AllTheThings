@@ -30,6 +30,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19951,	-- Heroic: Heart of Fear
 					19948,	-- Heroic: Mogu'shan Vaults
 				}},
+				["g"] = {
+					title(553),	-- <Name>, Claw of Eternus
+				},
 			}),
 		}),
 	}),

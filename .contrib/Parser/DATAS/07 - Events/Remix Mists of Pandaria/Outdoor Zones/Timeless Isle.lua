@@ -156,6 +156,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19970,	-- Tour Timeless Isle
 						19922,	-- Emperor Shaohao
 					}},
+					["g"] = {
+						i(221818),	-- Astral Emperor's Serpentling (PET!)
+					},
 				}),
 				ach(19970, {	-- Tour Timeless Isle
 					-- Meta Achievement

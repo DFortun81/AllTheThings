@@ -16,6 +16,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19944,	-- Secrets of Ragefire
 					19958,	-- Raid Finder: Siege of Orgrimmar
 				}},
+				["g"] = {
+					i(208554),	-- Timerunner's Beacon
+				},
 			}),
 			ach(20004, {	-- Heroic: Pandaria Scenarios
 				-- Meta Achievement
@@ -28,6 +31,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19937,	-- Heroic: Battle on the High Seas [H]
 					19935,	-- Heroic: Battle on the High Seas [A]
 				}},
+				["g"] = {
+					i(208487),	-- Timerunner's Ring
+				},
 			}),
 		}),
 		n(ARMOR, {

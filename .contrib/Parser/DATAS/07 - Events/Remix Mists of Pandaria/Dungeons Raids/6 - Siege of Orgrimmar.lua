@@ -159,6 +159,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				ach(19961, {	-- Mythic: Siege of Orgrimmar
+					title(552),	-- <Name>, Paragon of the Mists
 					crit(65803, {	-- Immerseus
 						["_encounter"] = { 852, DIFFICULTY.RAID.MYTHIC },
 					}),

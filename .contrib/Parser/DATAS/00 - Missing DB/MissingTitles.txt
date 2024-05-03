@@ -1,9 +1,5 @@
-10.2.6.54358
-title(557),	-- %s, Awakened Hero
 10.2.7.54171
 title(539),	-- Strategist %s \\ Mistrunner %s
-title(552),	-- %s, Paragon of the Mists
-title(553),	-- %s, Claw of Eternus
 11.0.0.54311
 title(548),	-- %s, the [PH] Hero
 title(549),	-- Immortal Spelunker %s

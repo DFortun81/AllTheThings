@@ -22,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				19565,	-- Heroic: Awakened Storms
 			}},
 			["g"] = {
-				-- title(),	-- Awakened Hero
+				title(557),	-- <Name>, Awakened Hero
 			},
 		})),
 		ach(19576, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakening the Dragonflight Raids
