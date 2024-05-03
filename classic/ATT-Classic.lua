@@ -1590,6 +1590,17 @@ app.GetCachedSearchResults = function(method, paramA, paramB, ...)
 	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);
 end
 
+-- Temporary functions to update the cache without breaking ATT.
+local function UpdateRawID(field, id)
+	app:RefreshDataQuietly("UpdateRawID", true);
+end
+app.UpdateRawID = UpdateRawID;
+-- Temporary functions to update the cache without breaking ATT.
+local function UpdateRawIDs(field, ids)
+	app:RefreshDataQuietly("UpdateRawIDs", true);
+end
+app.UpdateRawIDs = UpdateRawIDs;
+
 -- Item Information Lib
 local function SearchForLink(link)
 	if link:match("item") then
