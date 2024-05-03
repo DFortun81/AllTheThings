@@ -223,6 +223,76 @@
 40295@@@Blue Clockwork Rocket Bot
 4.4.0.54377
 211012@@@Cypress
+4.4.0.54500
+34278@@@Withers
+42177@@@Blue Mini Jouster
+42183@@@Gold Mini Jouster
+43800@@@Personal World Destroyer
+43916@@@De-Weaponized Mechanical Companion
+45128@@@Crawling Claw
+45247@@@Pebble
+45340@@@Fossilized Hatchling
+46896@@@Lil' Deathwing
+46898@@@Enchanted Lantern
+47944@@@Dark Phoenix Hatchling
+48107@@@Rustberg Gull
+48242@@@Armadillo Pup
+48609@@@Clockwork Gnome
+48641@@@Fox Kit
+48982@@@Tiny Shale Spider
+49586@@@Guild Page
+49587@@@Guild Herald
+49588@@@Guild Page
+49590@@@Guild Herald
+50468@@@Landro's Lil' XT
+50545@@@Magic Lamp
+50586@@@Mr. Grubbs
+50722@@@Elementium Geode
+51090@@@Singing Sunflower
+51122@@@Deathy
+51600@@@Lil' Ragnaros
+51601@@@Moonkin Hatchling
+51632@@@Tiny Flamefly
+51635@@@Scooter the Snail
+51649@@@Moonkin Hatchling
+52226@@@Panther Cub
+52343@@@Landro's Lichling
+52344@@@Nightsaber Cub
+52831@@@Winterspring Cub
+52894@@@Lashtail Hatchling
+53048@@@Legs
+53225@@@Pterrordax Hatchling
+53232@@@Voodoo Figurine
+53283@@@Guardian Cub
+53623@@@Cenarion Hatchling
+53658@@@Hyjal Bear Cub
+53661@@@Crimson Lasher
+53884@@@Feline Familiar
+54027@@@Lil' Tarecgosa
+54128@@@Creepy Crate
+54227@@@Nuts
+54374@@@Brilliant Kaliri
+54383@@@Purple Puffer
+54438@@@Murkablo
+54487@@@Darkmoon Turtle
+54491@@@Darkmoon Monkey
+54539@@@Alliance Balloon
+54541@@@Horde Balloon
+54730@@@Gregarious Grell
+54745@@@Sand Scarab
+55187@@@Darkmoon Balloon
+55215@@@Lumpy
+55356@@@Darkmoon Tonk
+55367@@@Darkmoon Zeppelin
+55386@@@Sea Pony
+55571@@@Lunar Lantern
+55574@@@Festival Lantern
+56031@@@Darkmoon Cub
+56082@@@Green Balloon
+56083@@@Yellow Balloon
+56266@@@Fetish Shaman
+58163@@@Soul of the Aspects
+59020@@@Eye of the Legion
 5.0.3.15882
 7395@@@Undercity Cockroach
 14143@@@Ar'lia
@@ -242,110 +312,41 @@
 29850@@@Lo'Gosh
 33532@@@Wolvar Orphan
 33533@@@Oracle Orphan
-34278@@@Withers
 38976@@@Worgen Dust Bunny
 39622@@@Spirit of Lo'Gosh
 39627@@@Spirit of Goldrinn
 40955@@@Goldrinn
-42177@@@Blue Mini Jouster
-42183@@@Gold Mini Jouster
-43800@@@Personal World Destroyer
-43916@@@De-Weaponized Mechanical Companion
 44413@@@Fathom-Stalker Azjentus
 44939@@@Crystalwing Stone Drake
-45128@@@Crawling Claw
-45247@@@Pebble
-45340@@@Fossilized Hatchling
-46896@@@Lil' Deathwing
-46898@@@Enchanted Lantern
 47169@@@Hardboiled Egg
-47944@@@Dark Phoenix Hatchling
-48107@@@Rustberg Gull
-48242@@@Armadillo Pup
 48376@@@Rumbling Rockling
 48377@@@Swirling Stormling
 48378@@@Whirling Waveling
-48609@@@Clockwork Gnome
-48641@@@Fox Kit
-48982@@@Tiny Shale Spider
 49373@@@Krazzworks Zeppelin
-49586@@@Guild Page
-49587@@@Guild Herald
-49588@@@Guild Page
-49590@@@Guild Herald
 50384@@@Landro's Lil' XT
-50468@@@Landro's Lil' XT
-50545@@@Magic Lamp
-50586@@@Mr. Grubbs
-50722@@@Elementium Geode
-51090@@@Singing Sunflower
-51122@@@Deathy
-51600@@@Lil' Ragnaros
-51601@@@Moonkin Hatchling
-51632@@@Tiny Flamefly
 51634@@@Bubbles
-51635@@@Scooter the Snail
 51636@@@Lizzy
-51649@@@Moonkin Hatchling
 51657@@@Bush Chicken
 51677@@@Winterspring Cub
-52226@@@Panther Cub
-52343@@@Landro's Lichling
-52344@@@Nightsaber Cub
 52367@@@Dragon Kite
 52697@@@Greedy Kobold
-52831@@@Winterspring Cub
-52894@@@Lashtail Hatchling
-53048@@@Legs
-53225@@@Pterrordax Hatchling
-53232@@@Voodoo Figurine
-53283@@@Guardian Cub
 53453@@@Green Balloon
 53454@@@Yellow Balloon
 53455@@@Horde Balloon
 53456@@@Alliance Balloon
-53623@@@Cenarion Hatchling
-53658@@@Hyjal Bear Cub
-53661@@@Crimson Lasher
 53828@@@Darren's Test NPC
-53884@@@Feline Familiar
-54027@@@Lil' Tarecgosa
-54128@@@Creepy Crate
 54223@@@Keg Pony
-54227@@@Nuts
 54359@@@Companion Combat Vehicle
-54374@@@Brilliant Kaliri
 54375@@@Player 1's Pet
 54376@@@Player 2's Pet
-54383@@@Purple Puffer
-54438@@@Murkablo
-54487@@@Darkmoon Turtle
-54491@@@Darkmoon Monkey
-54539@@@Alliance Balloon
-54541@@@Horde Balloon
-54730@@@Gregarious Grell
-54745@@@Sand Scarab
 54961@@@Lorewalker Cho
-55187@@@Darkmoon Balloon
-55215@@@Lumpy
 55242@@@Darren's Test NPC 2
 55279@@@Shan'ze Spiritbinder
-55356@@@Darkmoon Tonk
-55367@@@Darkmoon Zeppelin
-55386@@@Sea Pony
-55571@@@Lunar Lantern
-55574@@@Festival Lantern
 55768@@@Lorewalker Cho
-56031@@@Darkmoon Cub
-56082@@@Green Balloon
-56083@@@Yellow Balloon
-56266@@@Fetish Shaman
 56727@@@Pearlfin Tidestriker
 56728@@@Pearlfin Waveguard
 56779@@@Yu'lon
 56784@@@Fei
-58163@@@Soul of the Aspects
-59020@@@Eye of the Legion
 59216@@@PattyMack - WildBattlePet Test
 59702@@@Prairie Mouse
 59709@@@Darren's Test BattlePet 1
