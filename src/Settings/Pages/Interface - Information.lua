@@ -636,7 +636,7 @@ local InformationTypes = {
 			local awp = t.GetValue(t, reference);
 			if awp then
 				local formatter = L.WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT;
-				if awp >= app.GameBuildVersion then
+				if awp > app.GameBuildVersion then
 					-- Current build is before the awp.
 					local rwp = reference.rwp;
 					formatter = (rwp and rwp < awp and L.READDED_WITH_PATCH_CLASSIC_FORMAT) or L.ADDED_WITH_PATCH_CLASSIC_FORMAT;
