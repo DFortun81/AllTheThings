@@ -19,7 +19,7 @@ local AzeriteEssenceInfoCache = setmetatable({}, {
 	end
 })
 app.CreateAzeriteEssence = app.CreateClass("AzeriteEssence", KEY, {
-	["info"] = function(t)
+	info = function(t)
 		return AzeriteEssenceInfoCache[t[KEY]]
 	end,
 	collectible = function(t) return app.Settings.Collectibles[SETTING]; end,
@@ -34,21 +34,21 @@ app.CreateAzeriteEssence = app.CreateClass("AzeriteEssence", KEY, {
 		local acctRank = app.IsAccountTracked(CACHE, id, SETTING) or 0
 		if acctRank >= rank then return 2; end
 	end,
-	["lvl"] = function(t)
+	lvl = function(t)
 		return 50;
 	end,
-	["icon"] = function(t)
+	icon = function(t)
 		return t.info.icon or "Interface/ICONS/INV_Glowing Azerite Spire";
 	end,
-	["name"] = function(t)
+	name = function(t)
 		return t.info.name;
 	end,
-	["link"] = function(t)
+	link = function(t)
 		local link = C_AzeriteEssence_GetEssenceHyperlink(t.azeriteEssenceID, t.rank);
 		t.link = link;
 		return link;
 	end,
-	["rank"] = function(t)
+	rank = function(t)
 		return t.info.rank or 0;
 	end,
 });
