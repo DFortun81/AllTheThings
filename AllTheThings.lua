@@ -9325,30 +9325,32 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 
 -- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
-app.AddEventRegistration("PET_BATTLE_OPENING_START", function(...)
-	-- check for open ATT windows
-	for _,window in pairs(app.Windows) do
-		if window:IsVisible() then
-			if not app.PetBattleClosed then app.PetBattleClosed = {}; end
-			tinsert(app.PetBattleClosed, window);
-			window:Toggle();
-		end
-	end
-end)
+-- TODO: figure out why minilist doesn't re-show itself sometimes, then make auto-hiding of windows configurable in some way...
+-- app.AddEventRegistration("PET_BATTLE_OPENING_START", function(...)
+-- 	-- check for open ATT windows
+-- 	for _,window in pairs(app.Windows) do
+-- 		if window:IsVisible() then
+-- 			if not app.PetBattleClosed then app.PetBattleClosed = {}; end
+-- 			tinsert(app.PetBattleClosed, window);
+-- 			window:Toggle();
+-- 		end
+-- 	end
+-- end)
 -- this fires twice when pet battle ends
-app.AddEventRegistration("PET_BATTLE_CLOSE", function(...)
-	if app.PetBattleClosed then
-		for _,window in ipairs(app.PetBattleClosed) do
-			-- special open for Current Instance list
-			if window.Suffix == "CurrentInstance" then
-				DelayedCallback(app.ToggleMiniListForCurrentZone, 1);
-			else
-				window:Toggle();
-			end
-		end
-		app.PetBattleClosed = nil;
-	end
-end)
+-- app.AddEventRegistration("PET_BATTLE_CLOSE", function(...)
+-- 	-- app.PrintDebug("PET_BATTLE_CLOSE",app.PetBattleClosed and #app.PetBattleClosed)
+-- 	if app.PetBattleClosed then
+-- 		for _,window in ipairs(app.PetBattleClosed) do
+-- 			-- special open for Current Instance list
+-- 			if window.Suffix == "CurrentInstance" then
+-- 				DelayedCallback(app.ToggleMiniListForCurrentZone, 1);
+-- 			else
+-- 				window:Toggle();
+-- 			end
+-- 		end
+-- 		app.PetBattleClosed = nil;
+-- 	end
+-- end)
 
 -- When settings that affect the display of a window change, we want to redraw the windows.
 app.AddEventHandler("OnRenderDirty", RefreshWindows);
