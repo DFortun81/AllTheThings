@@ -39,11 +39,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								-- #endif
 							},
 						}),
-						o(179547, bubbleDownSelf({ ["maps"] = ALL_DIREMAUL_MAPS }, {	-- A Dusty Tome
-							i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-								["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-							}),
-						})),
 						q(43683, {	-- Traveler Found
 							["name"] = "Traveler Found",
 							["description"] = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
