@@ -1,13 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local COOKING_AWARD_GROUPS = {
-	-- #if AFTER 5.0.4
-	currency(81),	-- Epicurean's Award
-	-- #else
-	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
-	-- #endif
-};
+local COOKING_AWARD;
+-- #if AFTER 5.0.4
+COOKING_AWARD = currency(81);	-- Epicurean's Award
+-- #else
+COOKING_AWARD = currency(402);	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
+-- #endif
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DARNASSUS, {
 		["lore"] = "The atmosphere inside the city is quiet and tranquil. It does not have the feeling of confinement that one would feel in Stormwind or Ironforge, where the buildings are grouped close together. Darnassus is open to the sky, and the graceful bridges spanning the lake around which it is built set the buildings wide apart. The elegant bridges, beautiful groves, and leaf-covered pathways that dot the city's landscape are testaments to the night elves' reverence for nature. One of Darnassus's most notable structures is the stunning Temple of the Moon, the center of worship for High Priestess Tyrande Whisperwind and her Sisters of Elune. The prime reason why the city's population is so low is that it is isolated: Teldrassil is a small island away from the main mass of Azeroth, and the only way to gain access from another continent is to fly or sail to Rut'theran Village, a small settlement at the base of Teldrassil, and from there step into the glowing portal to the city proper. Darnassus is home to night elves of all vocations and remains a symbol of the night elves' rich culture and glorious history.",
@@ -300,7 +299,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/6 Practice Making Rice Flour
+							["provider"] = { "o", 208829 },	-- Rice Basket
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(26383, {	-- Breaking Waves of Change [NON-WORGEN]
 					["qg"] = 42936,	-- Sentinel Cordressa Briarbow
@@ -634,7 +638,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- Blessed Rice Cakes
+							["providers"] = {
+								{ "i",  69900 },	-- Blessed Rice Cakes
+								{ "o", 208818 },	-- Blessed Rice Cakes
+								{ "o", 208825 },	-- Shrine of the Ancestors
+							},
+							["coords"] = {
+								{ 43.5, 78.7, DARNASSUS },
+								{ 69.5, 40.5, DARNASSUS },
+							},
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				-- #if AFTER CATA
 				q(6343, {	-- Return to Nyoma [CATA+] / Return to Nessa
@@ -652,7 +669,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/5 Feed Ribs to Sentinels
+							["providers"] = {
+								{ "i", 69906 },	-- Delicious Ribs
+								{ "i", 69904 },	-- Uncooked Ribs
+							},
+							["coord"] = { 52.6, 35.8, DARNASSUS },
+							["cr"] = 4262,	-- Darnassus Sentinel
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(2520, {	-- Sathrah's Sacrifice
 					["qg"] = 7313,	-- Priestess A'moora
@@ -744,7 +771,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/10 Spice Bread
+							["provider"] = { "i", 30816 },	-- Spice Bread
+							["coord"] = { 49.6, 36.6, DARNASSUS },
+							["cr"] = 4223,	-- Fyldan <Cooking Supplies>
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				-- #if ANYCLASSIC
 				q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
@@ -892,7 +926,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/8 Buried Kimchi Jar
+							["providers"] = {
+								{ "i",  69898 },	-- Buried Kimchi Jar
+								{ "o", 208814 },	-- Buried Kimchi Jar
+							},
+							["coord"] = { 48.5, 34.0, DARNASSUS },
+						}),
+						COOKING_AWARD,
+					},
 				}),
 				q(1686, {	-- The Shade of Elura
 					["qg"] = 4088,	-- Elanaria
