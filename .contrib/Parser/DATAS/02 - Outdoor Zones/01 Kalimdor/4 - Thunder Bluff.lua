@@ -943,15 +943,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64917, {	-- Cape of Thunder Bluff
+							["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64918, {	-- Mantle of Thunder Bluff
+							["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64919, {	-- Shroud of Thunder Bluff
+							["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67534, {	-- Thunder Bluff Satchel
+							["minReputation"] = { 81, REVERED },	-- Thunder Bluff, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

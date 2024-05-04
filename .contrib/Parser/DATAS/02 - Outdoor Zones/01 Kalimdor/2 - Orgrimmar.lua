@@ -2566,15 +2566,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64912, {	-- Darkspear Cape
+							["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64911, {	-- Darkspear Mantle
+							["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64913, {	-- Darkspear Shroud
+							["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67536, {	-- Darkspear Satchel
+							["minReputation"] = { 530, REVERED },	-- Darkspear Trolls, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -2621,6 +2625,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(92070, {	-- Houjin Satchel
+							["minReputation"] = { 1352, REVERED },	-- Huojin Pandaren, Revered.
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 					},
@@ -2835,15 +2840,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64906, {	-- Bilgewater Cape
+							["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64905, {	-- Bilgewater Shroud
+							["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64907, {	-- Bilgewater Mantle
+							["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67525, {	-- Bilgewater Satchel
+							["minReputation"] = { 1133, REVERED },	-- Bilgewater Cartel, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -3125,15 +3134,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(48510, {	-- Kall Worthaton <Trike Dealer>
 					["coord"] = { 36.2, 86.6, ORGRIMMAR },
+					-- Available to Goblins without faction requirements.
+					["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. GOBLIN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62462, {
+						i(62462, {	-- Goblin Turbo-Trike (MOUNT!)
 							["timeline"] = { ADDED_4_0_3 },
-						}),	-- Goblin Turbo-Trike (MOUNT!)
-						i(62461, {
+						}),
+						i(62461, {	-- Goblin Trike (MOUNT!)
 							["timeline"] = { ADDED_4_0_3 },
-						}),	-- Goblin Trike (MOUNT!)
+						}),
 					},
 				}),
 				n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
@@ -4068,6 +4085,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 69.4, 12.4, ORGRIMMAR },
 						-- #endif
 					},
+					-- Available to Orcs without faction requirements.
+					["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. ORC .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(46099, {	-- Black Wolf (MOUNT!)
@@ -4704,15 +4729,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64908, {	-- Shroud of Orgrimmar
+							["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64909, {	-- Cape of Orgrimmar
+							["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64910, {	-- Mantle of Orgrimmar
+							["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67533, {	-- Orgrimmar Satchel
+							["minReputation"] = { FACTION_ORGRIMMAR, REVERED },	-- Orgrimmar, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -5185,6 +5214,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(66022, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 					["coord"] = { 69.8, 41.0, ORGRIMMAR },
+					-- Available to Huojin Pandaren without faction requirements.
+					["minReputation"] = { 1352, EXALTED },	-- Huojin Pandaren, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. PANDAREN_HORDE .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(91008, {	-- Black Dragon Turtle (MOUNT!) (PANDA)

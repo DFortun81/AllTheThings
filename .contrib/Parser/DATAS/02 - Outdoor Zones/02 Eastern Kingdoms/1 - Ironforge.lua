@@ -1428,19 +1428,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64899, {	-- Cape of Ironforge
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67528, {	-- Ironforge Satchel
-							["timeline"] = { ADDED_4_0_3 },
-						}),
 						i(45577, {	-- Ironforge Tabard
 							["timeline"] = { ADDED_3_1_0 },
 						}),
+						i(64899, {	-- Cape of Ironforge
+							["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 						i(64900, {	-- Mantle of Ironforge
+							["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64898, {	-- Shroud of Ironforge
+							["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(67528, {	-- Ironforge Satchel
+							["minReputation"] = { 47, REVERED },	-- Ironforge, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -1866,19 +1870,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64896, {	-- Cape of Gnomeregan
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67530, {	-- Gnomeregan Satchel
-							["timeline"] = { ADDED_4_0_3 },
-						}),
 						i(45578, {	-- Gnomeregan Tabard
 							["timeline"] = { ADDED_3_1_0 },
 						}),
+						i(64896, {	-- Cape of Gnomeregan
+							["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 						i(64895, {	-- Mantle of Gnomeregan
+							["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64897, {	-- Shroud of Gnomeregan
+							["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(67530, {	-- Gnomeregan Satchel
+							["minReputation"] = { 54, REVERED },	-- Gnomeregan Exiles, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

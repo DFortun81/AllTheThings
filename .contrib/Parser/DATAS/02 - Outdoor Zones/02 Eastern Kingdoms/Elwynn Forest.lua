@@ -3316,6 +3316,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(384, {	-- Katie Hunter <Horse Breeder>
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
+
+					-- Available to Humans without faction requirements.
+					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. HUMAN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5656),	-- Brown Horse (MOUNT!)

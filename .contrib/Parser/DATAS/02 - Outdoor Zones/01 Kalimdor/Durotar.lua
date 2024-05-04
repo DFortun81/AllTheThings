@@ -3951,6 +3951,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(7952, {	-- Zjolnir <Raptor Handler>
 					["coord"] = { 55.2, 75.6, DUROTAR },
+					-- Available to Trolls without faction requirements.
+					["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. TROLL .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(8588),	-- Emerald Raptor (MOUNT!)

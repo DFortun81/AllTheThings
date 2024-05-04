@@ -1952,6 +1952,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 8.6, 54.4, WETLANDS },
 					-- #endif
+
+					-- Available to Humans without faction requirements.
+					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. HUMAN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2411),	-- Black Stallion (MOUNT!)

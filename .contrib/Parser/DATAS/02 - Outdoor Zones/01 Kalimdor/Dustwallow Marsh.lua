@@ -3406,6 +3406,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4885, {	-- Gregor MacVince <Horse Breeder>
 					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH },
+
+					-- Available to Humans without faction requirements.
+					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. HUMAN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5656),	-- Brown Horse (MOUNT!)

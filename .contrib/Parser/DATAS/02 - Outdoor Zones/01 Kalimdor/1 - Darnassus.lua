@@ -81,6 +81,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				faction(1134, {	-- Gilneas
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+				}),
 			}),
 			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {
@@ -631,8 +636,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["_drop"] = { "g" },
 				}),
 				q(29314, {	-- Remembering the Ancestors
-					["qg"] = 4210,	-- Alegorn
-					["coord"] = { 50.0, 36.6, DARNASSUS },
+					["providers"] = {
+						{ "n",   4210 },	-- Alegorn
+						{ "o", 208825 },	-- Shrine of the Ancestors
+					},
+					["coords"] = {
+						{ 50.0, 36.6, DARNASSUS },
+						{ 69.5, 40.5, DARNASSUS },
+					},
 					["timeline"] = { ADDED_4_1_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
@@ -643,12 +654,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i",  69900 },	-- Blessed Rice Cakes
 								{ "o", 208818 },	-- Blessed Rice Cakes
-								{ "o", 208825 },	-- Shrine of the Ancestors
 							},
-							["coords"] = {
-								{ 43.5, 78.7, DARNASSUS },
-								{ 69.5, 40.5, DARNASSUS },
-							},
+							["coord"] = { 43.5, 78.7, DARNASSUS },
 						}),
 						COOKING_AWARD,
 					},
@@ -1186,6 +1193,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, DARNASSUS },
+					-- Available to Worgen without faction requirements.
+					["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. WORGEN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1476,6 +1491,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
+					-- Available to Night Elves without faction requirements.
+					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
@@ -1504,15 +1527,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64893, {	-- Cape of Gilneas
+							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64892, {	-- Mantle of Gilneas
+							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64894, {	-- Shroud of Gilneas
+							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67532, {	-- Gilnean Satchel
+							["minReputation"] = { 1134, REVERED },	-- Gilneas, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -1609,15 +1636,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64887, {	-- Cape of Darnassus
+							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64888, {	-- Mantle of Darnassus
+							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64886, {	-- Shroud of Darnassus
+							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67526, {	-- Darnassian Satchel
+							["minReputation"] = { 69, REVERED },	-- Darnassus, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

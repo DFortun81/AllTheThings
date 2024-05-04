@@ -54,10 +54,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 			}),
 			n(FACTIONS, {
-				faction(1134, {	-- Gilneas
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				faction(72, {	-- Stormwind
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
@@ -4257,6 +4253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(92071, {	-- Tushui Satchel
+							["minReputation"] = { 1353, REVERED },	-- Tushui Pandaren, Revered.
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						i(83079, {	-- Tushui Tabard
@@ -4623,6 +4620,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
+					-- Available to Worgen without faction requirements.
+					["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. WORGEN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(73838, {	-- Mountain Horse (MOUNT!)
@@ -4796,20 +4801,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(45574, {	-- Stormwind Tabard
+							["timeline"] = { ADDED_3_1_0 },
+						}),
 						i(64902, {	-- Cape of Stormwind
+							["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64901, {	-- Mantle of Stormwind
+							["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64903, {	-- Shroud of Stormwind
+							["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67531, {	-- Stormwind Satchel
+							["minReputation"] = { 72, REVERED },	-- Stormwind, Revered.
 							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(45574, {	-- Stormwind Tabard
-							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),
@@ -5814,6 +5823,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(43694, {	-- Katie Stokx <Horse Breeder>
 					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
+					-- Available to Humans without faction requirements.
+					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. HUMAN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -5951,6 +5968,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4730, {	-- Lelanai <Saber Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 55.0, 12.6, STORMWIND_CITY },
+					-- Available to Night Elves without faction requirements.
+					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
@@ -6247,15 +6272,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64893, {	-- Cape of Gilneas
+							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64892, {	-- Mantle of Gilneas
+							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64894, {	-- Shroud of Gilneas
+							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67532, {	-- Gilnean Satchel
+							["minReputation"] = { 1134, REVERED },	-- Gilneas, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -6402,15 +6431,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64887, {	-- Cape of Darnassus
+							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64888, {	-- Mantle of Darnassus
+							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64886, {	-- Shroud of Darnassus
+							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67526, {	-- Darnassian Satchel
+							["minReputation"] = { 69, REVERED },	-- Darnassus, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -6522,6 +6555,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(65068, {	-- Old Whitenose <Dragon Turtle Breeder>
 					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
+					-- Available to Tushui Pandaren without faction requirements.
+					["minReputation"] = { 1353, EXALTED },	-- Tushui Pandaren, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. PANDAREN_ALLIANCE .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

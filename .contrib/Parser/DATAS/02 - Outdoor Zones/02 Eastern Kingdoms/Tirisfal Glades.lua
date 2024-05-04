@@ -2658,6 +2658,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 59.8, 52.6, TIRISFAL_GLADES },
 					-- #endif
+					-- Available to Undead without faction requirements.
+					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. UNDEAD .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(46308, {	-- Black Skeletal Warhorse (MOUNT!)

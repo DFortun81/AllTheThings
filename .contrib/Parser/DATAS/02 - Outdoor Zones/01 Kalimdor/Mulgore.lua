@@ -1917,6 +1917,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 47.6, 58.4, MULGORE },
 					-- #endif
+					-- Available to Tauren without faction requirements.
+					["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. TAUREN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(15277),	-- Gray Kodo (MOUNT!)

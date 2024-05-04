@@ -1484,20 +1484,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(45583, {	-- Undercity Tabard
+							["timeline"] = { ADDED_3_1_0 },
+						}),
 						i(64921, {	-- Cape of Undercity
+							["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64922, {	-- Mantle of Undercity
+							["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64920, {	-- Shroud of Undercity
+							["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67529, {	-- Undercity Satchel
+							["minReputation"] = { 68, REVERED },	-- Undercity, Revered.
 							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(45583, {	-- Undercity Tabard
-							["timeline"] = { ADDED_3_1_0 },
 						}),
 					},
 				}),

@@ -484,11 +484,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64889),	-- Mantle of Exodar
-						i(64890),	-- Cape of Exodar
-						i(64891),	-- Shroud of Exodar
-						i(67527),	-- Exodar Satchel
-						i(45580),	-- Exodar Tabard
+						i(45580, {	-- Exodar Tabard
+							["timeline"] = { ADDED_3_1_0 },
+						}),
+						i(64889, {	-- Mantle of Exodar
+							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(64890, {	-- Cape of Exodar
+							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(64891, {	-- Shroud of Exodar
+							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(67527, {	-- Exodar Satchel
+							["minReputation"] = { 930, REVERED },	-- Exodar, Revered.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 					},
 				}),
 				n(16747, {	-- Mahri
@@ -580,6 +594,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
 					["coord"] = { 81.5, 51.4, THE_EXODAR },
+					-- Available to Draenei without faction requirements.
+					["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. DRAENEI .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(29745),	-- Great Blue Elekk (MOUNT!)

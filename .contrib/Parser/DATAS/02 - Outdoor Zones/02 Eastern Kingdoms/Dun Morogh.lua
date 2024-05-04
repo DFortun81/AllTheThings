@@ -4164,6 +4164,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 49.0, 48.0, DUN_MOROGH },
 					-- #endif
+
+					-- Available to Gnomes without faction requirements.
+					["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. GNOME .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8595),	-- Blue Mechanostrider (MOUNT!)
@@ -4204,6 +4213,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 63.4, 50.6, DUN_MOROGH },
 					-- #endif
+
+					-- Available to Dwarves without faction requirements.
+					["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. DWARF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5872),	-- Brown Ram (MOUNT!)
