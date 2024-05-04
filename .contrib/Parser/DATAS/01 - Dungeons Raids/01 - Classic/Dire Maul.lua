@@ -1112,21 +1112,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 				},
 			}),
-			n(TREASURES, {
-				["maps"] = ALL_DIREMAUL_MAPS,
-				["groups"] = {
-					o(179547, {	-- A Dusty Tome
-						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."--
-							-- #if AFTER LEGION
-							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-							-- #else
-							["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
-							["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-							-- #endif
-						}),
-					}),
-				},
-			}),
+			o(179547, bubbleDownSelf({ ["maps"] = ALL_DIREMAUL_MAPS }, {	-- A Dusty Tome
+				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+					-- #if BEFORE 7.0.3
+					["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
+					["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+					-- #else
+					["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+					-- #endif
+				}),
+			})),
 			DIREMAUL_SUBMAP(239, WARPWOOD_QUARTER, {	-- Warpwood Quarter (East)
 				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
 				["maps"] = WARPWOOD_QUARTER_MAPS,
