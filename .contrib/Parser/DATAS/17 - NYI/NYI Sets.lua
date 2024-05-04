@@ -8747,6 +8747,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- Newly added items for Dragonflight season 1
 			header(HEADERS.Achievement, SEASON_CRIMSON, {
 				-- Death Knight got only one item and Mage got nothing.
+				-- Season 1 appearances voted for season 4 (Evoker, Hunter, Monk) are implemented in Catalyst
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
 					cl(DEATHKNIGHT, {
 						-- NO ITEMS
@@ -8850,25 +8851,16 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(200359),	-- Lost Landcaller's Laena
 					}),
 					cl(EVOKER, {
-						i(200379),	-- Treads of the Awakened
-						i(200384),	-- Chain of the Awakened
-						i(200385),	-- Bracers of the Awakened
-						i(200386),	-- Shroud of the Awakened
+						-- Evoker is used in catalyst
 					}),
 					cl(HUNTER, {
-						i(200388),	-- Stormwing Harrier's Sabatons
-						i(200393),	-- Stormwing Harrier's Belt
-						i(200394),	-- Stormwing Harrier's Wristguards
-						i(200395),	-- Stormwing Harrier's Plumage
+						-- Hunter is used in catalyst
 					}),
 					cl(MAGE, {
 						-- NO ITEMS
 					}),
 					cl(MONK, {
-						i(200361),	-- Gaiters of the Waking Fist
-						i(200366),	-- Girdle of the Waking Fist
-						i(200367),	-- Cuffs of the Waking Fist
-						i(200368),	-- Drape of the Waking Fist
+						-- Monk is used in catalyst
 					}),
 					cl(PALADIN, {
 						i(200415),	-- Virtuous Silver Greatboots

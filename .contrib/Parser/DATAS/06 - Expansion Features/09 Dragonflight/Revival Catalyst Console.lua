@@ -3117,36 +3117,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(202512, {["bonusID"] = 7479}),	-- Garland of the Autumn Blaze
 						i(202517, {["bonusID"] = 7479}),	-- Hooves of the Autumn Blaze
 					}),
-					--[[
 					cl(EVOKER, {
-						i(200385),	-- Bracers of the Awakened
-						i(200384),	-- Chain of the Awakened
-						i(200386),	-- Shroud of the Awakened
-						i(200379),	-- Treads of the Awakened
+						i(200385, {["bonusID"] = 7479}),	-- Bracers of the Awakened
+						i(200384, {["bonusID"] = 7479}),	-- Chain of the Awakened
+						i(200386, {["bonusID"] = 7479}),	-- Shroud of the Awakened
+						i(200379, {["bonusID"] = 7479}),	-- Treads of the Awakened
 					}),
-					]]--
-					--[[
 					cl(HUNTER, {
-						i(200393),	-- Stormwing Harrier's Belt
-						i(200395),	-- Stormwing Harrier's Plumage
-						i(200388),	-- Stormwing Harrier's Sabatons
-						i(200394),	-- Stormwing Harrier's Wristguards
+						i(200393, {["bonusID"] = 7479}),	-- Stormwing Harrier's Belt
+						i(200395, {["bonusID"] = 7479}),	-- Stormwing Harrier's Plumage
+						i(200388, {["bonusID"] = 7479}),	-- Stormwing Harrier's Sabatons
+						i(200394, {["bonusID"] = 7479}),	-- Stormwing Harrier's Wristguards
 					}),
-					]]--
 					cl(MAGE, {
 						i(207286, {["modID"] = 8}),	-- Wayward Chronomancer's Cuffs
 						i(207285, {["modID"] = 8}),	-- Wayward Chronomancer's Stole
 						i(207292, {["modID"] = 8}),	-- Wayward Chronomancer's Strapped Boots
 						i(207287, {["modID"] = 8}),	-- Wayward Chronomancer's Synchronous Belt
 					}),
-					--[[
 					cl(MONK, {
-						i(200367),	-- Cuffs of the Waking Fist
-						i(200368),	-- Drape of the Waking Fist
-						i(200361),	-- Gaiters of the Waking Fist
-						i(200366),	-- Girdle of the Waking Fist
+						i(200367, {["bonusID"] = 7479}),	-- Cuffs of the Waking Fist
+						i(200368, {["bonusID"] = 7479}),	-- Drape of the Waking Fist
+						i(200361, {["bonusID"] = 7479}),	-- Gaiters of the Waking Fist
+						i(200366, {["bonusID"] = 7479}),	-- Girdle of the Waking Fist
 					}),
-					]]--
 					cl(PALADIN, {
 						i(202448, {["bonusID"] = 7479}),	-- Heartfire Sentinel's Blessed Bindings
 						i(202454, {["bonusID"] = 7479}),	-- Heartfire Sentinel's Greatboots
@@ -3280,7 +3274,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					},
 				})),
-				-- I can't figure modID or bonusID this season for "Off Slots" - Darkal
+				-- Unknown bonus or mod ID. Need to wait for confirmation - Darkal
 				--[[
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
 					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
