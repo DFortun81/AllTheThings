@@ -1767,16 +1767,28 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(29073, {	-- Make Haste to Orgrimmar!
-						["provider"] = { "o", 208317 },	-- Warchief's Command Board
+						["providers"] = {
+							{ "o", 208317 },	-- Warchief's Command Board
+							{ "i",  68809 },	-- Veteran's Hearthstone
+						},
+						-- #if BEFORE 6.2.0
+						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						-- #endif
 						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
 						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						["lvl"] = 80,
 					}),
 					q(29071, {	-- Make Haste to Stormwind!
-						["provider"] = { "o", 208316 },	-- Hero's Call Board
+						["providers"] = {
+							{ "o", 208316 },	-- Hero's Call Board
+							{ "i",  68808 },	-- Hero's Hearthstone
+						},
+						-- #if BEFORE 6.2.0
+						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						-- #endif
 						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
 						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						["lvl"] = 80,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24584, {	-- Malygos Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
