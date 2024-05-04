@@ -140,7 +140,7 @@ local DefaultFields = {
 		local u = GetRelativeValue(t, "u");
 		if u then
 			if u < 3 then
-				score = score + 100;
+				score = score + 100000;
 			elseif u < 4 then
 				score = score + 10;
 			else

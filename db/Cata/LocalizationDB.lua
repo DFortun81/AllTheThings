@@ -3737,7 +3737,7 @@ _.ObjectIcons = {
 	[210216] = "Interface/Icons/inv_crate_03",
 	[307277] = "Interface/Icons/inv_drink_11",
 	[307307] = "Interface/Icons/inv_cask_03",
-	[307330] = "Interface/Icons/inv_misc_crate01",
+	[307330] = "132761",
 	[100000001] = "135434",
 }
 _.ObjectModels = {

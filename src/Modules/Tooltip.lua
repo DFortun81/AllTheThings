@@ -175,11 +175,10 @@ else
 						end
 					end
 				end
-				tinsert(objects, {
+				tinsert(objects, setmetatable({
 					objectID = objectID,
-					parent = closestInstance,
 					distance = closestDistance
-				});
+				}, { __index = closestInstance }));
 			end
 			if #objects > 0 then
 				app.Sort(objects, app.SortDefaults.Accessibility);

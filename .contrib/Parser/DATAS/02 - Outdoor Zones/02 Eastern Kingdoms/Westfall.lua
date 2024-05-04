@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 1358 },	-- A Clue to Sander's Treasure
 					},
 					["sourceQuest"] = 26353,	-- Captain Sanders' Hidden Treasure (1/4)
-					["coord"] = { 25.9, 47.7, WESTFALL },
+					["coord"] = { 25.9, 47.75, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (3/4)
@@ -401,6 +401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203972 },	-- Fresh Dirt
 							},
 						}),
+						i(58933),	-- Westfall Mud Pie
 					},
 				}),
 				q(26271, {	-- Feeding the Hungry and the Hopeless
@@ -609,6 +610,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- Overloaded Harvest Golem enabled
 							["providers"] = {
 								{ "i", 57954 },	-- Harvest Watcher Heart
+								{ "n", 42381 },	-- Overloaded Harvest Golem
 								{ "n", 42601 },	-- Overloaded Harvest Golem
 							},
 						}),
@@ -1455,11 +1457,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Okra
 							["providers"] = {
-								{ "i", 57911 },	-- Okra
+								{ "i",  57911 },	-- Okra
 								{ "o", 203982 },	-- Okra
 							},
 							["coord"] = { 54.6, 33.6, WESTFALL },
-							["cr"] = 114,	-- Harvest Watcher
 						}),
 						objective(2, {	-- 0/6 Goretusk Flank
 							["provider"] = { "i", 57788 },	-- Goretusk Flank
