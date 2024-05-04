@@ -1230,21 +1230,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 	end
 	
-	-- Include Cost Sources
-	if #group == 0 and (paramA == "itemID" or paramA == "currencyID") then
-		local costGroups = SearchForField(paramA .. "AsCost", paramB);
-		if costGroups and #costGroups > 0 then
-			local regroup = {};
-			for i,g in ipairs(group) do
-				tinsert(regroup, g);
-			end
-			for i,g in ipairs(costGroups) do
-				tinsert(regroup, g);
-			end
-			group = regroup;
-		end
-	end
-
 	-- Create a list of sources
 	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
 		local temp, text, parent = {}, nil, nil;
@@ -1255,7 +1240,24 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		local FilterUnobtainable, FilterCharacter, FirstParent
 			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L["ABBREVIATIONS"];
-		for _,j in ipairs(group.g or group) do
+		
+		-- Include Cost Sources
+		local sourceGroups = group;
+		if #sourceGroups == 0 and (paramA == "itemID" or paramA == "currencyID") then
+			local costGroups = SearchForField(paramA .. "AsCost", paramB);
+			if costGroups and #costGroups > 0 then
+				local regroup = {};
+				for i,g in ipairs(sourceGroups) do
+					tinsert(regroup, g);
+				end
+				for i,g in ipairs(costGroups) do
+					tinsert(regroup, g);
+				end
+				sourceGroups = regroup;
+			end
+		end
+		
+		for _,j in ipairs(sourceGroups) do
 			parent = j.parent;
 			if parent and not FirstParent(j, "hideText") and parent.parent
 				and (showCompleted or not app.IsComplete(j))
