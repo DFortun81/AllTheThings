@@ -1294,6 +1294,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 32,	-- Rise of the Silithid (H)
 					["coord"] = { 55.2, 55.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { TANARIS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),

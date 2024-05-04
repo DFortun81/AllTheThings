@@ -200,11 +200,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
+					["maps"] = { TELDRASSIL },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- 0/6 Baby Octopus
+							["providers"] = {
+								{ "i", 69915 },	-- Baby Octopus
+								{ "n", 53522 },	-- Baby Octopus
+							},
+							["coord"] = { 57.0, 94.6, TELDRASSIL },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
@@ -223,11 +231,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
+					["maps"] = { TELDRASSIL },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- 0/8 Kaldorei Herring
+							["provider"] = { "i", 69987 },	-- Kaldorei Herring
+							["coord"] = { 56.7, 92.7, TELDRASSIL },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
@@ -315,6 +328,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 42936,	-- Sentinel Cordressa Briarbow
 					["coord"] = { 43.8, 76.2, DARNASSUS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TELDRASSIL, DARKSHORE },
 					["races"] = exclude(WORGEN, ALLIANCE_ONLY),
 					["isBreadcrumb"] = true,
 				}),
@@ -322,6 +336,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48736,	-- Genn Greymane
 					["coord"] = { 48.2, 14.6, DARNASSUS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TELDRASSIL, DARKSHORE },
 					["races"] = { WORGEN },
 					["isBreadcrumb"] = true,
 				}),
@@ -495,6 +510,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- 0/10 Teldrassil Clam
+							["providers"] = {
+								{ "i",  69910 },	-- Teldrassil Clam
+								{ "o", 208831 },	-- Teldrassil Clam
+							},
+							["coord"] = { 53.0, 90.6, TELDRASSIL },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
@@ -532,6 +554,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 162,	-- Rise of the Silithid (A)
 					["coord"] = { 42, 85.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -611,6 +634,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6344, {	-- Nessa Shadowsong / Reminders of Home [CATA+]
 					["qg"] = 4241,	-- Mydrannul
 					["coord"] = { 70.6, 45.3, DARNASSUS },
+					["maps"] = { TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
@@ -665,6 +689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40552,	-- Leora
 					["sourceQuest"] = 6342,	-- An Unexpected Gift [CATA+] / Flight to Auberdine
 					["coord"] = { 36.5, 47.8, DARNASSUS },
+					["maps"] = { TELDRASSIL },
 					["races"] = { NIGHTELF },
 				}),
 				-- #endif
@@ -865,6 +890,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- 0/5 Lake Whitefish
+							["provider"] = { "i", 69912 },	-- Lake Whitefish
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
@@ -879,7 +907,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/20 Sunscorched Shell
-							["provider"] = { "i", 6849 },	-- Sunscorched Shell
+							["providers"] = {
+								{ "i", 6849 },	-- Sunscorched Shell
+								{ "o", 89635 },	-- Sunscorched Shell
+							},
+							["coord"] = { 11.7, 37.1, THOUSAND_NEEDLES },
 						}),
 					},
 				}),
@@ -955,7 +987,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/8 Elunite Ore
-							["provider"] = { "i", 6808 },	-- Elunite Ore
+							["providers"] = {
+								{ "i", 6808 },	-- Elunite Ore
+								{ "o", 86492 },	-- Crate of Elunite
+							},
+							["coord"] = { 33.1, 46.3, DARKSHORE },
 						}),
 						objective(2, {	-- 0/1 Elura's Medallion
 							["provider"] = { "i", 6809 },	-- Elura's Medallion
@@ -973,6 +1009,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						i(69914, {	-- Giant Catfish
+							objective(1, {	-- 0/1 Aquinne's Moon Pendant
+								["questID"] = 29324,	-- The Sister's Pendant
+								["provider"] = { "i", 69913 },	-- Aquinne's Moon Pendant
+							}),
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
@@ -1021,9 +1063,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i", 5520 },	-- Velinde's Journal
 								{ "o", 19877 },	-- Velinde's Locker
+								{ "i", 5521 },	-- Velinde's Key
 							},
 							["coord"] = { 62.5, 83.1, DARNASSUS },
-							["cost"] = {{ "i", 5521, 1 }},	-- Velinde's Key
 						}),
 					},
 				}),
