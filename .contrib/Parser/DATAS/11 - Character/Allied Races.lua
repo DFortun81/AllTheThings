@@ -816,7 +816,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(164927),	-- Twilight Ore (QI!)
+					o(307836, {	-- Twilight Ore
+						i(164927),	-- Twilight Ore (QI!)
+					}),
 				},
 			}),
 			q(53895, {	-- Peon Promotions!
