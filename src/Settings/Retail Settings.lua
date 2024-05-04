@@ -98,7 +98,6 @@ local GeneralSettingsBase = {
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["Window:UseClassForBorder"] = false,
-		["Window:CustomColors"] = {},	-- CRIEVE NOTE: Look into what this does, I'm not sure.
 	},
 };
 local FilterSettingsBase = {
@@ -233,14 +232,12 @@ settings.Initialize = function(self)
 	end
 
 	-- Initialise custom colors, iterate so if app.Colors gets new colors they aren't lost
-	-- Don't think this needs to be global...
-	if not DefaultColors then
-		local originalDefaultColors = app.Colors;
-		DefaultColors = originalDefaultColors;
-		local colors = settings:Get("Window:CustomColors");
-		setmetatable(colors, { __index = DefaultColors });
-		app.Colors = colors;
-	end
+	local colors = settings:Get("Window:CustomColors") or {}
+	-- make sure the table reference is actually assigned back to be saved
+	settings:Set("Window:CustomColors",colors)
+	setmetatable(colors, { __index = app.Colors });
+	-- replace the direct table with a metatable of the original colors
+	app.Colors = colors;
 
 	-- Assign the preset filters for your character class as the default states
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {} end
