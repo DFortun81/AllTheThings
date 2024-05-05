@@ -23,7 +23,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				906,	-- Kickin' It Up a Notch
 				125,	-- Northrend Cook
 				1782,	-- Our Daily Bread [A]
-				-- #if AFTER 4.0.3
+				-- #if AFTER 5.0.4
 				1783,	-- Our Daily Bread [H]
 				-- #endif
 				1780,	-- Second That Emotion
@@ -32,7 +32,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				1779,	-- The Northrend Gourmet (45)
 				1800,	-- The Outland Gourmet
 			}},
-			-- #if BEFORE 4.0.3
+			-- #if BEFORE 5.0.4
 			["races"] = ALLIANCE_ONLY,
 			-- #endif
 			["groups"] = {
@@ -53,7 +53,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				1779,	-- The Northrend Gourmet (45)
 				1800,	-- The Outland Gourmet
 			}},
-			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(52),	-- Chef <Name>
