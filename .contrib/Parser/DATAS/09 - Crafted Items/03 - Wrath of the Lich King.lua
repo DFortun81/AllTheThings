@@ -109,24 +109,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64395),	-- Vrykul Rune Stick
 		currency(ARCH_CURRENCY_NERUBIAN, {
-			i(64481),	-- Blessing of the Old God (TOY!)
-			i(64479),	-- Ewer of Jormungar Blood
-			i(64477),	-- Gruesome Heart Box
-			i(64476),	-- Infested Ruby Ring
-			i(64482),	-- Puzzle Box of Yogg-Saron (TOY!)
-			i(64475),	-- Scepter of Nezar'Azret
-			i(64478),	-- Six-Clawed Cornice
-			i(64474),	-- Spidery Sundial
-			i(64480),	-- Vizier's Scrawled Streamer
+			["provider"] = { "o", 203078 },	-- Nerubian Archaeology Find
+			["groups"] = {
+				i(64481),	-- Blessing of the Old God (TOY!)
+				i(64479),	-- Ewer of Jormungar Blood
+				i(64477),	-- Gruesome Heart Box
+				i(64476),	-- Infested Ruby Ring
+				i(64482),	-- Puzzle Box of Yogg-Saron (TOY!)
+				i(64475),	-- Scepter of Nezar'Azret
+				i(64478),	-- Six-Clawed Cornice
+				i(64474),	-- Spidery Sundial
+				i(64480),	-- Vizier's Scrawled Streamer
+			},
 		}),
 		currency(ARCH_CURRENCY_VRYKUL, {
-			i(64464),	-- Fanged Cloak Pin
-			i(64462),	-- Flint Striker
-			i(64459),	-- Intricate Treasure Chest Key
-			i(64460),	-- Nifflevar Bearded Axe
-			i(64461),	-- Scramseax
-			i(64467),	-- Thorned Necklace
-			i(69775, {["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
+			["provider"] = { "o", 207189 },	-- Vrykul Archaeology Find
+			["groups"] = {
+				i(64464),	-- Fanged Cloak Pin
+				i(64462),	-- Flint Striker
+				i(64459),	-- Intricate Treasure Chest Key
+				i(64460),	-- Nifflevar Bearded Axe
+				i(64461),	-- Scramseax
+				i(64467),	-- Thorned Necklace
+				i(69775, {["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
+			},
 		}),
 	})),
 	prof(BLACKSMITHING, {

@@ -191,6 +191,8 @@ else
 				end
 				]]--
 				return objects[1].objectID;
+			elseif #o == 1 then
+				return o[1];
 			end
 		end
 	end

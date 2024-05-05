@@ -107,28 +107,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(64392),	-- Orc Blood Text
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		currency(ARCH_CURRENCY_DRAENEI, {
-			i(64440),	-- Anklet with Golden Bells
-			i(64456),	-- Arrival of the Naaru (TOY!)
-			i(64453),	-- Baroque Sword Scabbard
-			i(64442),	-- Carved Harp of Exotic Wood
-			i(64455),	-- Dignified Portrait
-			i(64454),	-- Fine Crystal Candelabra
-			i(64458),	-- Plated Elekk Goad
-			i(64444),	-- Scepter of the Nathrezim
-			i(64443),	-- Strange Silver Paperweight
-			i(64457),	-- The Last Relic of Argus
+			["provider"] = { "o", 207188 },	-- Draenei Archaeology Find
+			["groups"] = {
+				i(64440),	-- Anklet with Golden Bells
+				i(64456),	-- Arrival of the Naaru (TOY!)
+				i(64453),	-- Baroque Sword Scabbard
+				i(64442),	-- Carved Harp of Exotic Wood
+				i(64455),	-- Dignified Portrait
+				i(64454),	-- Fine Crystal Candelabra
+				i(64458),	-- Plated Elekk Goad
+				i(64444),	-- Scepter of the Nathrezim
+				i(64443),	-- Strange Silver Paperweight
+				i(64457),	-- The Last Relic of Argus
+			},
 		}),
 		currency(ARCH_CURRENCY_ORC, {
-			i(64436),	-- Fiendish Whip
-			i(64421),	-- Fierce Wolf Figurine
-			i(64418),	-- Gray Candle Stub
-			i(64644),	-- Headdress of the First Shaman
-			i(64417),	-- Maul of Stone Guard Mur'og
-			i(64419),	-- Rusted Steak Knife
-			i(64420),	-- Scepter of Nekros Skullcrusher
-			i(64438),	-- Skull Drinking Cup
-			i(64437),	-- Tile of Glazed Clay
-			i(64389),	-- Tiny Bronze Scorpion
+			["provider"] = { "o", 207187 },	-- Orc Archaeology Find
+			["groups"] = {
+				i(64436),	-- Fiendish Whip
+				i(64421),	-- Fierce Wolf Figurine
+				i(64418),	-- Gray Candle Stub
+				i(64644),	-- Headdress of the First Shaman
+				i(64417),	-- Maul of Stone Guard Mur'og
+				i(64419),	-- Rusted Steak Knife
+				i(64420),	-- Scepter of Nekros Skullcrusher
+				i(64438),	-- Skull Drinking Cup
+				i(64437),	-- Tile of Glazed Clay
+				i(64389),	-- Tiny Bronze Scorpion
+			},
 		}),
 	})),
 	prof(BLACKSMITHING, {
