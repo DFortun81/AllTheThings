@@ -6,41 +6,41 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(WORLD_QUESTS, {
-				q(42442, {	-- Fight Night: Amalia
+				petbattle(q(42442, {	-- Fight Night: Amalia
 					["isWorldQuest"] = true,
 					["filterID"] = BATTLE_PETS,
 					["lvl"] = 110,
-				}),
-				q(40299, {	-- Fight Night: Bodhi Sunwayver
+				})),
+				petbattle(q(40299, {	-- Fight Night: Bodhi Sunwayver
 					["isWorldQuest"] = true,
 					["filterID"] = BATTLE_PETS,
 					["lvl"] = 110,
-				}),
-				q(41881, {	-- Fight Night: Heliosus
+				})),
+				petbattle(q(41881, {	-- Fight Night: Heliosus
 					["isWorldQuest"] = true,
 					["filterID"] = BATTLE_PETS,
 					["lvl"] = 110,
-				}),
-				q(41886, {	-- Fight Night: Rats!
+				})),
+				petbattle(q(41886, {	-- Fight Night: Rats!
 					["isWorldQuest"] = true,
 					["filterID"] = BATTLE_PETS,
 					["lvl"] = 110,
-				}),
-				q(40298, {	-- Fight Night: Sir Galveston
+				})),
+				petbattle(q(40298, {	-- Fight Night: Sir Galveston
 					["isWorldQuest"] = true,
 					["filterID"] = BATTLE_PETS,
 					["lvl"] = 110,
-				}),
-				q(42062, {	-- Fight Night: Stitches Jr. Jr.
+				})),
+				petbattle(q(42062, {	-- Fight Night: Stitches Jr. Jr.
 					["isWorldQuest"] = true,
 					["filterID"] = BATTLE_PETS,
 					["lvl"] = 110,
-				}),
-				q(40277, {	-- Fight Night: Tiffany Nelson
+				})),
+				petbattle(q(40277, {	-- Fight Night: Tiffany Nelson
 					["isWorldQuest"] = true,
 					["filterID"] = BATTLE_PETS,
 					["lvl"] = 110,
-				}),
+				})),
 				prof(ALCHEMY, {
 					q(41662, {	-- Work Order: Ancient Rejuvenation Potions
 						["isWorldQuest"] = true,

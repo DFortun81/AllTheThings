@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 				q(41290, {	-- Aqueous Aethril
 					["requireSkill"] = HERBALISM,
 				}),
-				q(42165),	-- Azsuna Specimens
+				petbattle(q(42165)),	-- Azsuna Specimens
 				q(45069),	-- Barrels o' Fun
 				q(45203),	-- Battle for the Ruins (Invasion WQ)
 				q(44894),	-- Bloodgazer Swarm!
@@ -64,7 +64,7 @@ root(ROOTS.Zones, {
 				q(43072),	-- DANGER: The Whisperer
 				q(44194),	-- DANGER: Torrentius
 				q(43040),	-- DANGER: Valakar the Thirsty
-				q(42146),	-- Dazed and Confused and Adorable
+				petbattle(q(42146)),	-- Dazed and Confused and Adorable
 				q(44054),	-- Demonicide
 				q(42276),	-- Disgusting, but Useful
 				q(46169),	-- Dro'zek (Invasion WQ)
@@ -111,7 +111,7 @@ root(ROOTS.Zones, {
 				q(43804),	-- Hate the Hatecoil
 				q(42624),	-- Heads of the Fleet
 				q(44737),	-- Helarjar Landing: Grey Shoals
-				q(42154),	-- Help a Whelp
+				petbattle(q(42154)),	-- Help a Whelp
 				q(41611, {	-- Huge Cursed Queenfish
 					["requireSkill"] = FISHING,
 				}),
@@ -183,7 +183,7 @@ root(ROOTS.Zones, {
 				q(41324, {	-- Silky Prowler Fur
 					["requireSkill"] = SKINNING,
 				}),
-				q(42063),	-- Size Doesn't Matter
+				petbattle(q(42063)),	-- Size Doesn't Matter
 				q(41551, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
 				}),
@@ -212,12 +212,12 @@ root(ROOTS.Zones, {
 				q(44050),	-- The Felsworn Must Fall
 				q(43327),	-- The Magic of Flight
 				q(45134),	-- The Soul Harvesters (Invasion WQ)
-				q(42148),	-- The Wine's Gone Bad
+				petbattle(q(42148)),	-- The Wine's Gone Bad
 				q(42112),	-- The Withered Return
 				q(42018),	-- Those Beyond Redemption
 				q(42019),	-- Tip the Scales
 				q(42506),	-- Tomes of Yore
-				q(42159),	-- Training with the Nightwatchers
+				petbattle(q(42159)),	-- Training with the Nightwatchers
 				q(42511),	-- Twisted Souls
 				q(41322, {	-- Unscratched Hippogryph Scale
 					["requireSkill"] = SKINNING,

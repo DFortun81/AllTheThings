@@ -113,7 +113,7 @@ root(ROOTS.Zones, {
 					["requireSkill"] = FISHING,
 				}),
 				q(46185),	-- Iroxus (Invasion wq)
-				q(42064),	-- It's Illid... Wait.
+				petbattle(q(42064)),	-- It's Illid... Wait.
 				q(46186),	-- Ix'dreloth (Invasion WQ)
 				q(46187),	-- Larthogg (Invasion WQ)
 				q(43764),	-- Ley Race
@@ -160,7 +160,7 @@ root(ROOTS.Zones, {
 				q(40985),	-- Rimescale Naga Incursion: Highmountain
 				q(41025),	-- Rise of the Fallen
 				q(40966),	-- Ritualists in Our Midsts
-				q(41624),	-- Rocko Needs a Shave
+				petbattle(q(41624)),	-- Rocko Needs a Shave
 				q(41200, {	-- Rough Leystone Outcropping
 					["requireSkill"] = MINING,
 				}),
@@ -180,7 +180,7 @@ root(ROOTS.Zones, {
 				q(41550, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
 				}),
-				q(41687),	-- Snail Fight!
+				petbattle(q(41687)),	-- Snail Fight!
 				q(44892),	-- Snowfeather Swarm!
 				q(40920),	-- Stonebinder Bounty
 				q(41224),	-- Supplies Needed: Foxflower
@@ -194,8 +194,8 @@ root(ROOTS.Zones, {
 				}),
 				q(40896),	-- Threnody of Chieftains
 				q(44823),	-- Thunder Totem Cleanup Detail
-				q(40282),	-- Tiny Poacher, Tiny Animals
-				q(40280),	-- Training with Bredda
+				petbattle(q(40282)),	-- Tiny Poacher, Tiny Animals
+				petbattle(q(40280)),	-- Training with Bredda
 				q(46190),	-- Ulgrom (Invasion WQ)
 				q(41011),	-- Umbralshard Rituals
 				q(41428),	-- Unstable Portal
@@ -246,7 +246,7 @@ root(ROOTS.Zones, {
 				q(41252, {	-- Wild Northern Barracuda
 					["requireSkill"] = FISHING,
 				}),
-				q(41766),	-- Wildlife Protection Force
+				petbattle(q(41766)),	-- Wildlife Protection Force
 				q(41525, {	-- Wispy Foxflower
 					["requireSkill"] = HERBALISM,
 				}),

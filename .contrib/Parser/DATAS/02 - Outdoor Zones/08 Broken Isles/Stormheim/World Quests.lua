@@ -7,8 +7,8 @@ root(ROOTS.Zones, {
 		m(STORMHEIM, {
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
 				q(43964),	-- A Jarl's Feast
-				q(42067),	-- All Howl, No Bite
-				q(41948),	-- All Pets Go to Heaven
+				petbattle(q(42067)),	-- All Howl, No Bite
+				petbattle(q(41948)),	-- All Pets Go to Heaven
 				q(45439),	-- An Invasion of... Murlocs? (Invasion wq)
 				q(43951),	-- An Overdue Debt
 				q(41443, {	-- Ancient Leystone Deposits
@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 					ach(11476),		-- Saddle Sore
 				}),
 				q(45072),	-- Barrels o' Fun
-				q(41935),	-- Beasts of Burden
+				petbattle(q(41935)),	-- Beasts of Burden
 				q(46010),	-- Bonecrusher Korgolath (Invasion wq)
 				q(41534, {	-- Brambly Fjarnskaggl
 					["requireSkill"] = HERBALISM,
@@ -109,7 +109,7 @@ root(ROOTS.Zones, {
 					["requireSkill"] = FISHING,
 				}),
 				q(46015),	-- Idra'zuul (Invasion wq)
-				q(41944),	-- Jarrun's Ladder
+				petbattle(q(41944)),	-- Jarrun's Ladder
 				q(43769),	-- Ley Race
 				q(41505, {	-- Leystone Basilisks
 					["requireSkill"] = MINING,
@@ -131,13 +131,13 @@ root(ROOTS.Zones, {
 					["requireSkill"] = FISHING,
 				}),
 				q(46016),	-- Magdrezoth (Invasion wq)
-				q(40278),	-- My Beasts's Bidding
+				petbattle(q(40278)),	-- My Beasts's Bidding
 				q(44943, {	-- Now That's Just Clawful!
 					crit(34847, {	-- Now That's Just Clawful!
 						["achievementID"] = 11427,	-- No Shellfish Endeavor
 					}),
 				}),
-				q(41958),	-- Oh, Ominitron
+				petbattle(q(41958)),	-- Oh, Ominitron
 				q(43751, {	-- Oh, Ship! (A)
 					["races"] = ALLIANCE_ONLY,
 				}),

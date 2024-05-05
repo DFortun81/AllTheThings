@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(41700),	-- DANGER: Shalas'aman (rare wq)
 			q(43101),	-- DANGER: Witchdoctor Grgl-Brgl (rare wq)
 			q(41995),	-- Dark Corruption
-			q(41860),	-- Dealing with Satyrs
+			petbattle(q(41860)),	-- Dealing with Satyrs
 			q(44884),	-- Defense of Emerald Bay (Invasion WQ)
 			q(41291, {	-- Dreamleaf Cluster
 				["requireSkill"] = HERBALISM,
@@ -146,12 +146,12 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(41440, {	-- Magnificent Leystone Deposits
 				["requireSkill"] = MINING,
 			}),
-			q(41861),	-- Meet The Maw
+			petbattle(q(41861)),	-- Meet The Maw
 			q(41334, {	-- Musky Bear Hide
 				["requireSkill"] = SKINNING,
 			}),
 			q(45925),	-- Nez'val (Invasion wq)
-			q(41862),	-- Only Pets Can Prevent Forest Fires
+			petbattle(q(41862)),	-- Only Pets Can Prevent Forest Fires
 			q(42145),	-- Out of the Woodwork
 			q(41956),	-- Petrified Acolytes
 			q(41964),	-- Poisoned Waters
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(41260, {	-- Slab of Bacon
 				["requireSkill"] = COOKING,
 			}),
-			q(41855),	-- Stand Up to Bullies
+			petbattle(q(41855)),	-- Stand Up to Bullies
 			q(41441, {	-- Superior Leystone Deposits
 				["requireSkill"] = MINING,
 			}),
@@ -197,13 +197,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(46261),	-- The Taste of Corruption (Invasion WQ)
 			q(44759),	-- The Vale of Dread (Invasion WQ)
 			q(43303),	-- Time to Rumble!
-			q(40279, {	-- Training with Durian
+			petbattle(q(40279, {	-- Training with Durian
 				["coord"] = { 46.4, 36.9, VALSHARAH },
 				-- #IF BEFORE 10.2.5
 				-- Not sure when they fixed this but you can repeat the battle now :D
 				["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
 				-- #ENDIF
-			}),
+			})),
 			q(41992),	-- Twisted Ash
 			q(46766),	-- Ulgthax (Invasion wq)
 			q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(43784),	-- What a Nightmare
 			q(43759),	-- Where's the Reef?
 			q(43758),	-- Wherever I May Gloam
-			q(42190),	-- Wildlife Conservationist
+			petbattle(q(42190)),	-- Wildlife Conservationist
 			q(41652, {	-- Work Order: Deep Amber Loop
 				["requireSkill"] = JEWELCRAFTING,
 				["g"] = {
