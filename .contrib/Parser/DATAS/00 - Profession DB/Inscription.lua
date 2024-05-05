@@ -477,7 +477,7 @@ i(0, 64287);	--
 i(0, 58481);	-- Scroll of Agility VI
 i(0, 56999);	--
 i(0, 57716);	-- Snowfall Ink
-i(0, 64051);	-- Rituals of the Moon
+i(46108, 64051);	-- Rituals of the Moon
 i(0, 57247);	--
 i(0, 57264);	--
 i(0, 61119);	-- Master's Inscription of the Pinnacle

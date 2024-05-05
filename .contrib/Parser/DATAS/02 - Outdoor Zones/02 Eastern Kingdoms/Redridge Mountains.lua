@@ -310,14 +310,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Pile of Leaves
 							["providers"] = {
-								{ "i", 59152 },	-- Pile of Leaves
+								{ "i",  59152 },	-- Pile of Leaves
 								{ "o", 204424 },	-- Pile of Leaves
 							},
 							["coord"] = { 48.5, 64.5, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/5 Fox Poop
 							["providers"] = {
-								{ "i", 59153 },	-- Fox Poop
+								{ "i",  59153 },	-- Fox Poop
 								{ "o", 204425 },	-- Fox Poop
 							},
 							["coord"] = { 47.9, 67.8, REDRIDGE_MOUNTAINS },
@@ -669,6 +669,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.3, 40.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Keeshan's Riverboat Ride Complete
+							["provider"] = { "n", 43443 },	-- Keeshan's Riverboat
+							["coord"] = { 34.2, 45.6, REDRIDGE_MOUNTAINS },
+						}),
+					},
 				}),
 				q(26567, {	-- John J. Keeshan
 					["qg"] = 43221,	-- Colonel Troteman
@@ -959,7 +965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Prisoners of War Freed
 							["providers"] = {
-								{ "i", 60384 },	-- Bravo Company Field Kit
+								{ "i",  60384 },	-- Bravo Company Field Kit
 								{ "o", 204441 },	-- Blackrock Holding Pen
 								{ "o", 204442 },	-- Blackrock Holding Pen
 								{ "o", 204435 },	-- Blackrock Holding Pen
@@ -970,11 +976,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 69.0, 60.1, REDRIDGE_MOUNTAINS },
 							},
 						}),
-						objective(2, {	-- 0/1 Blackrock Holding Pen Key
-							["providers"] = {
-								{ "i", 59261 },	-- Blackrock Holding Pen Key
-								{ "o", 204437 },	-- Blackrock Key Pouch
-							},
+						i(59261, {	-- Blackrock Holding Pen Key
+							["provider"] = { "o", 204437 },	-- Blackrock Key Pouch
 							["coord"] = { 69.5, 76.5, REDRIDGE_MOUNTAINS },
 						}),
 					},
@@ -1219,6 +1222,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60685, {	-- Yowling Cloak
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(60731, {	-- Message Carrier
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

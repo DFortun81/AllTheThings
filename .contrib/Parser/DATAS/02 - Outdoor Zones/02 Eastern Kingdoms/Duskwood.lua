@@ -1715,7 +1715,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  59357 },	-- A Slashed Bundle of Letters
 								{ "o", 204462 },	-- Pile of Scraps
 							},
-							["coord"] = { 61.2, 40.4, DUSKWOOD },
+							["coord"] = { 61.22, 40.51, DUSKWOOD },
 						}),
 						i(60911, {	-- Archivist's Lighter
 							["timeline"] = { ADDED_4_0_3 },

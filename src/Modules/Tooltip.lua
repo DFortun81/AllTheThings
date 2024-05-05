@@ -175,13 +175,21 @@ else
 						end
 					end
 				end
-				tinsert(objects, setmetatable({
-					objectID = objectID,
-					distance = closestDistance
-				}, { __index = closestInstance }));
+				if closestInstance then
+					tinsert(objects, {
+						objectID = objectID,
+						distance = closestDistance,
+						AccessibilityScore = closestInstance.AccessibilityScore + closestDistance
+					});
+				end
 			end
 			if #objects > 0 then
 				app.Sort(objects, app.SortDefaults.Accessibility);
+				--[[
+				for i,o in ipairs(objects) do
+					print(i, o.objectID, o.AccessibilityScore);
+				end
+				]]--
 				return objects[1].objectID;
 			end
 		end

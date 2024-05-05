@@ -4219,7 +4219,7 @@ local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 		return select(5, GetItemInfoInstant(t.itemID)) or baseIconFromSpellID(t);
 	end,
 	link = function(t)
-		return select(2, GetItemInfo(t.itemID)) or RETRIEVING_DATA;
+		return select(2, GetItemInfo(t.itemID));
 	end,
 	name = function(t)
 		return GetItemInfo(t.itemID) or nameFromSpellID(t);
