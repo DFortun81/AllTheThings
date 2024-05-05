@@ -701,26 +701,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				n(206744, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
-						i(202280, {	-- Renewed Proto-Drake: Pronged Tail (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
 						i(203322, {	-- Winding Slitherdrake: Blonde Hair (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
 						i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203306, {	-- Winding Slitherdrake: Horned Brow (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203336, {	-- Winding Slitherdrake: Paired Horns (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203359, {	-- Winding Slitherdrake: Shark Finned Tail (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203355, {	-- Winding Slitherdrake: Yellow Scales (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 						}),
 						i(197615, {	-- Windborne Velocidrake: Teal Scales (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
@@ -1711,6 +1696,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				n(206744, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
+						i(196979, {	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(197128, {	-- Highland Drake: Curled Back Horns (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
 						i(202280, {	-- Renewed Proto-Drake: Pronged Tail (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
@@ -1731,6 +1722,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						}),
 						i(203355, {	-- Winding Slitherdrake: Yellow Scales (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+						}),
+						i(197619, {	-- Windborne Velocidrake: Hooked Snout (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
 						i(197615, {	-- Windborne Velocidrake: Teal Scales (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
@@ -2949,6 +2943,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						i(213592, {	-- Icy Drake Racer's Helmet
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
+						i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(197113, {	-- Highland Drake: Swept Spiked Head (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+						}),
+						i(197366, {	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(197605, {	-- Windborne Velocidrake: Curled Horns (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						-- These were never mentioned in the Blizzard articles but also exist on the vendor
+						i(197002, {	-- Cliffside Wylderdrake: Flared Cheek (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(207768, {	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(197124, {	-- Highland Drake: Swept Horns (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(202274, {	-- Renewed Proto-Drake: Plated Brow (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(197594, {	-- Windborne Velocidrake: Small Ears (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(203348, {	-- Winding Slitherdrake: Pointed Nose (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
 					},
 				})),
 			}),
@@ -2958,103 +2986,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				["description"] = "For each achievement in the Dragonriding Cup players earn one badge, with up to 9 badges available per race track by obtaining gold in all three courses.",
 			}),
 		}),
-		n(206744, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
-			["coord"] = { 27.2, 47.2, VALDRAKKEN },
-			["g"] = {
-				i(197002, {	-- Cliffside Wylderdrake: Flared Cheek (DM!)
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				}),
-				i(207768, {	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				}),
-				i(197124, {	-- Highland Drake: Swept Horns (DM!)
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				}),
-				i(202274, {	-- Renewed Proto-Drake: Plated Brow (DM!)
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				}),
-				i(197594, {	-- Windborne Velocidrake: Small Ears (DM!)
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				}),
-				i(203348, {	-- Winding Slitherdrake: Pointed Nose (DM!)
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				}),
-
-				-- TODO: Maybe later? Or different ones per cup? Leaving them here for now. Can be cleaned up in future when we know more.
-				-- i(196979, {	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(196978, {	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(196971, {	-- Cliffside Wylderdrake: Spiked Brow (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(196997, {	-- Cliffside Wylderdrake: Split Horns (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(207765, {	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(207778, {	-- Grotto Netherwing Drake: Double Finned Tail (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(207758, {	-- Grotto Netherwing Drake: Spiked Back (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197128, {	-- Highland Drake: Curled Back Horns (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197152, {	-- Highland Drake: Hooked Tail (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197113, {	-- Highland Drake: Swept Spiked Head (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197104, {	-- Highland Drake: Tapered Chin (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197366, {	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(202280, {	-- Renewed Proto-Drake: Pronged Tail (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197387, {	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197605, {	-- Windborne Velocidrake: Curled Horns (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(197619, {	-- Windborne Velocidrake: Hooked Snout (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(203361, {	-- Winding Slitherdrake: Finned Tip Tail (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(203343, {	-- Winding Slitherdrake: Hairy Jaw (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(203360, {	-- Winding Slitherdrake: Large Finned Tail (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(203333, {	-- Winding Slitherdrake: Short Horns (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(203317, {	-- Winding Slitherdrake: Small Finned Crest (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(203337, {	-- Winding Slitherdrake: Thorn Horns (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-				-- i(203342, {	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
-				-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-				-- }),
-			},
-		})),
 	},
 })));
 
