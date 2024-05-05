@@ -336,6 +336,7 @@ i(18518, 22927, nil, TRIBAL);	-- Hide of the Wild
 i(15760, 19086, nil, TRIBAL);	-- Ironfeather Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15735, 19062, nil, TRIBAL);	-- Ironfeather Shoulders
 i(15742, 19068, nil, TRIBAL);	-- Warbear Harness
+i(20253, 19068, nil, TRIBAL);	-- Warbear Harness
 i(15754, 19080, nil, TRIBAL);	-- Warbear Woolies [REMOVED: 1.11.1, See new version]
 i(20254, 19080, nil, TRIBAL);	-- Warbear Woolies
 -- #else
@@ -357,6 +358,7 @@ i(18518, 22927);	-- Hide of the Wild
 i(15760, 19086);	-- Ironfeather Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15735, 19062);	-- Ironfeather Shoulders
 i(15742, 19068);	-- Warbear Harness
+i(20253, 19068);	-- Warbear Harness
 i(15754, 19080);	-- Warbear Woolies [REMOVED: 1.11.1, See new version]
 i(20254, 19080);	-- Warbear Woolies
 -- #endif
