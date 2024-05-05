@@ -1571,67 +1571,67 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				n(199720, {	-- Glamora
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(209610, {	-- Verdant Gladiator's Tabard
+						elitepvp(i(209610, {	-- Verdant Gladiator's Tabard
 							["cost"] = { { "c", HONOR, 100 }, },
 						--	["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 						--	TODO: replace s3 tabard when it will be up
 						})),
 						n(WEAPONS, {
-							un(ELITE_PVP_REQUIREMENT, i(217353, {	-- Draconic Gladiator's Axe
+							elitepvp(i(217353, {	-- Draconic Gladiator's Axe
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217360, {	-- Draconic Gladiator's Axestaff
+							elitepvp(i(217360, {	-- Draconic Gladiator's Axestaff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217367, {	-- Draconic Gladiator's Bow
+							elitepvp(i(217367, {	-- Draconic Gladiator's Bow
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217365, {	-- Draconic Gladiator's Bulwark
+							elitepvp(i(217365, {	-- Draconic Gladiator's Bulwark
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217363, {	-- Draconic Gladiator's Censer
+							elitepvp(i(217363, {	-- Draconic Gladiator's Censer
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217366, {	-- Draconic Gladiator's Claws
+							elitepvp(i(217366, {	-- Draconic Gladiator's Claws
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217354, {	-- Draconic Gladiator's Dagger
+							elitepvp(i(217354, {	-- Draconic Gladiator's Dagger
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217359, {	-- Draconic Gladiator's Greatstaff
+							elitepvp(i(217359, {	-- Draconic Gladiator's Greatstaff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217368, {	-- Draconic Gladiator's Greatsword
+							elitepvp(i(217368, {	-- Draconic Gladiator's Greatsword
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217369, {	-- Draconic Gladiator's Pulverizer
+							elitepvp(i(217369, {	-- Draconic Gladiator's Pulverizer
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217361, {	-- Draconic Gladiator's Rifle
+							elitepvp(i(217361, {	-- Draconic Gladiator's Rifle
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217362, {	-- Draconic Gladiator's Scepter
+							elitepvp(i(217362, {	-- Draconic Gladiator's Scepter
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217357, {	-- Draconic Gladiator's Scythe
+							elitepvp(i(217357, {	-- Draconic Gladiator's Scythe
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217364, {	-- Draconic Gladiator's Shield
+							elitepvp(i(217364, {	-- Draconic Gladiator's Shield
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217371, {	-- Draconic Gladiator's Shotel
+							elitepvp(i(217371, {	-- Draconic Gladiator's Shotel
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217355, {	-- Draconic Gladiator's Sickle
+							elitepvp(i(217355, {	-- Draconic Gladiator's Sickle
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217358, {	-- Draconic Gladiator's Staff
+							elitepvp(i(217358, {	-- Draconic Gladiator's Staff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217370, {	-- Draconic Gladiator's Sword
+							elitepvp(i(217370, {	-- Draconic Gladiator's Sword
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(217356, {	-- Draconic Gladiator's Warglaive
+							elitepvp(i(217356, {	-- Draconic Gladiator's Warglaive
 								["cost"] = { { "i", MOH, 5 } },
 							})),
 						}),

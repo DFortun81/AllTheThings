@@ -2288,11 +2288,10 @@ root(ROOTS.Zones, {
 										{ "g", 50000000 },	-- 5,000g
 									},
 								}),
-								i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+								elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-									["u"] = ELITE_PVP_REQUIREMENT,
 									["timeline"] = { ADDED_6_0_2 },
-								}),
+								})),
 								n(WEAPONS, {
 									i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor

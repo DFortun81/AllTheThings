@@ -825,6 +825,12 @@ e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	end
 end
 -- #endif
+elitepvp = function(t)									-- Flag all nested content as requiring Elite PvP gameplay
+	return bubbleDown({
+		["pvp"] = true,
+		["u"] = ELITE_PVP_REQUIREMENT,					-- CRIEVE NOTE: This currently uses the same filter as our other filters. This should probably be changed to act like the PVP filter or make "pvp" a 2 or something.
+	}, t);
+end
 expansion = function(id, patch, t)							-- Create an EXPANSION Object
 	-- patch is optional
 	if not t then

@@ -64,12 +64,11 @@ end]];
 -- #endif
 root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, pvp(expansion(EXPANSION.WRATH, {
 	n(SEASON_DEADLY, {
-		n(ACHIEVEMENTS, bubbleDown({
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
-			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 				title(56),	-- Deadly Gladiator <Name>
@@ -82,7 +81,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11710, {["timeline"] = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
 			["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
@@ -1875,12 +1874,11 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		-- #endif
 	}),
 	applyclassicphase(WRATH_PHASE_TWO, n(SEASON_FURIOUS, {
-		n(ACHIEVEMENTS, bubbleDown({
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
-			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 				title(132),	-- Furious Gladiator <Name>
@@ -1893,7 +1891,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11711, {["timeline"] = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(69318, {	-- Kylo Kelwin <Furious Gladiator>
 			["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
@@ -2621,12 +2619,11 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		})),
 	})),
 	applyclassicphase(WRATH_PHASE_THREE, n(SEASON_RELENTLESS, {
-		n(ACHIEVEMENTS, bubbleDown({
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 			-- #endif
-			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
 				title(134),	-- Relentless Gladiator <Name>
@@ -2639,7 +2636,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11712, {["timeline"] = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
 			["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
@@ -3385,12 +3382,11 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		})),
 	})),
 	applyclassicphase(WRATH_PHASE_FOUR, n(SEASON_WRATHFUL, {
-		n(ACHIEVEMENTS, bubbleDown({
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_3_2, REMOVED_4_0_1 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
 			-- #endif
-			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 				title(142),	-- Wrathful Gladiator <Name>
@@ -3403,7 +3399,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11713, {["timeline"] = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
 			["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },

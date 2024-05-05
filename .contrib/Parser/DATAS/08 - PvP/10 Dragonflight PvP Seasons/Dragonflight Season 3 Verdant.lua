@@ -1572,67 +1572,67 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				n(199720, {	-- Glamora
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(205362, {	-- Obsidian Gladiator's Tabard
+						elitepvp(i(205362, {	-- Obsidian Gladiator's Tabard
 							["cost"] = { { "c", HONOR, 100 }, },
 						--	["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
 						--	Will be put later on vendor prolly
 						})),
 						n(WEAPONS, {
-							un(ELITE_PVP_REQUIREMENT, i(210502, {	-- Verdant Gladiator's Axe
+							elitepvp(i(210502, {	-- Verdant Gladiator's Axe
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210510, {	-- Verdant Gladiator's Axestaff
+							elitepvp(i(210510, {	-- Verdant Gladiator's Axestaff
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210517, {	-- Verdant Gladiator's Bow
+							elitepvp(i(210517, {	-- Verdant Gladiator's Bow
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210515, {	-- Verdant Gladiator's Bulwark
+							elitepvp(i(210515, {	-- Verdant Gladiator's Bulwark
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210513, {	-- Verdant Gladiator's Censer
+							elitepvp(i(210513, {	-- Verdant Gladiator's Censer
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210516, {	-- Verdant Gladiator's Claws
+							elitepvp(i(210516, {	-- Verdant Gladiator's Claws
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210503, {	-- Verdant Gladiator's Dagger
+							elitepvp(i(210503, {	-- Verdant Gladiator's Dagger
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210509, {	-- Verdant Gladiator's Greatstaff
+							elitepvp(i(210509, {	-- Verdant Gladiator's Greatstaff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210518, {	-- Verdant Gladiator's Greatsword
+							elitepvp(i(210518, {	-- Verdant Gladiator's Greatsword
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210519, {	-- Verdant Gladiator's Pulverizer
+							elitepvp(i(210519, {	-- Verdant Gladiator's Pulverizer
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210511, {	-- Verdant Gladiator's Rifle
+							elitepvp(i(210511, {	-- Verdant Gladiator's Rifle
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210512, {	-- Verdant Gladiator's Scepter
+							elitepvp(i(210512, {	-- Verdant Gladiator's Scepter
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210507, {	-- Verdant Gladiator's Scythe
+							elitepvp(i(210507, {	-- Verdant Gladiator's Scythe
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210514, {	-- Verdant Gladiator's Shield
+							elitepvp(i(210514, {	-- Verdant Gladiator's Shield
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210521, {	-- Verdant Gladiator's Shotel
+							elitepvp(i(210521, {	-- Verdant Gladiator's Shotel
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210504, {	-- Verdant Gladiator's Sickle
+							elitepvp(i(210504, {	-- Verdant Gladiator's Sickle
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210508, {	-- Verdant Gladiator's Staff
+							elitepvp(i(210508, {	-- Verdant Gladiator's Staff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210520, {	-- Verdant Gladiator's Sword
+							elitepvp(i(210520, {	-- Verdant Gladiator's Sword
 								-- ["cost"] = { { "i", MOH,  } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210506, {	-- Verdant Gladiator's Warglaive
+							elitepvp(i(210506, {	-- Verdant Gladiator's Warglaive
 								["cost"] = { { "i", MOH, 5 } },
 							})),
 						}),

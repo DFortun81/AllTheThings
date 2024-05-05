@@ -1311,12 +1311,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
-		n(ACHIEVEMENTS, bubbleDown({
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_2_1_2, REMOVED_2_3_0 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
 			-- #endif
-			["u"] = ELITE_PVP_REQUIREMENT,
 		}, {
 			ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 				title(37),	-- Merciless Gladiator <Name>
@@ -1329,7 +1328,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11707, {["timeline"] = {ADDED_7_2_0}}),	-- No Mercy (PvP Season 2)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 			["coord"] = { 33.0, 64.2, NETHERSTORM },
@@ -2041,12 +2040,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
-		n(ACHIEVEMENTS, bubbleDown({
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif
-			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 				title(40),	-- Vengeful Gladiator <Name>
@@ -2059,7 +2057,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11708, {["timeline"] = {ADDED_7_2_0}}),	-- With a Vengeance (PvP Season 3)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 			["coord"] = { 33.0, 64.2, NETHERSTORM },
@@ -2814,12 +2812,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
-		n(ACHIEVEMENTS, bubbleDown({
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
 			-- #if BEFORE 4.0.1
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
 			-- #endif
-			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 				title(49),	-- Brutal Gladiator <Name>
@@ -2832,7 +2829,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11709, {["timeline"] = {ADDED_7_2_0}}),	-- Tough Threads (PvP Season 4)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 			["coord"] = { 33.2, 64.0, NETHERSTORM },

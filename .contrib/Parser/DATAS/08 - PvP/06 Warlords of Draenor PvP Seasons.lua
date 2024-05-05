@@ -38,10 +38,9 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(9240, {	-- Duelist: Warlords of Draenor Season 1
-					i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-						["u"] = ELITE_PVP_REQUIREMENT,
+					elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 						["timeline"] = { ADDED_7_3_2 },
-					}),
+					})),
 				}),
 				ach(9239, {	-- Gladiator: Warlords of Draenor Season 1
 					i(128277),	-- Primal Gladiator's Felblood Gronnling
@@ -71,19 +70,17 @@ root(ROOTS.PVP, {
 				ach(9230, {	-- Hero of the Alliance: Primal
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
-						}),
+						})),
 					},
 				}),
 				ach(9231, {	-- Hero of the Horde: Primal
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
-						}),
+						})),
 					},
 				}),
 				ach(9238, {	-- Primal Combatant (Alliance) Warlords of Draenor Season 1
@@ -3246,10 +3243,9 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(10099, {	-- Duelist: Warlords of Draenor Season 2
-					i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-						["u"] = ELITE_PVP_REQUIREMENT,
+					elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 						["timeline"] = { ADDED_7_3_2 },
-					}),
+					})),
 				}),
 				ach(10098, {	-- Gladiator: Warlords of Draenor Season 2
 					i(128281),	-- Wild Gladiator's Felblood Gronnling
@@ -3279,19 +3275,17 @@ root(ROOTS.PVP, {
 				ach(10102, {	-- Hero of the Alliance: Wild
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
-						}),
+						})),
 					},
 				}),
 				ach(10103, {	-- Hero of the Horde: Wild
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
-						}),
+						})),
 					},
 				}),
 				ach(10100),	-- Rival: Warlords of Draenor Season 2
@@ -6510,10 +6504,9 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(10111, {	-- Duelist: Warlords of Draenor Season 3
-					i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-						["u"] = ELITE_PVP_REQUIREMENT,
+					elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 						["timeline"] = { ADDED_7_3_2 },
-					}),
+					})),
 				}),
 				ach(10110, {	-- Gladiator: Warlords of Draenor Season 3
 					i(128282),	-- Warmongering Gladiator's Felblood Gronnling (MOUNT!)
@@ -6543,19 +6536,17 @@ root(ROOTS.PVP, {
 				ach(10114, {	-- Hero of the Alliance: Warmongering
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
-						}),
+						})),
 					},
 				}),
 				ach(10115, {	-- Hero of the Horde: Warmongering
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
-						}),
+						})),
 					},
 				}),
 				ach(10112),	-- Rival: Warlords of Draenor Season 3

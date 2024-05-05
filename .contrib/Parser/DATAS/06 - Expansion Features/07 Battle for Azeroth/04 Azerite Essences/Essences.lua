@@ -127,7 +127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 				n(AZERITE_ESSENCE_RANK_4, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
-					un(ELITE_PVP_REQUIREMENT, az(32, 4, {	-- Conflict and Strife (Rank 4)
+					elitepvp(az(32, 4, {	-- Conflict and Strife (Rank 4)
 						["provider"] = { "i", 169899 },	-- Polished Skull Trophy
 					})),
 					az(27, 4, {	-- Memory of Lucid Dreams (Rank 4)

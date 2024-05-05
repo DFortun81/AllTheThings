@@ -19,7 +19,7 @@ local function MarkOfWHOOOWHATNow(t)
 	end
 	-- #endif
 	-- #if NOT ANYCLASSIC
-	if t.itemID then t.u = ELITE_PVP_REQUIREMENT; end
+	if t.itemID then elitepvp(t); end
 	-- #endif
 	return t;
 end

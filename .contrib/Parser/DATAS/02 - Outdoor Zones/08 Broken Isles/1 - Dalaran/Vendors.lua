@@ -2017,22 +2017,22 @@ root(ROOTS.Zones, {
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+						elitepvp(i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 						--i(139775),	-- Alliance Enthusiast (PET!)
 						--i(142379),	-- Dutiful Squire (PET!)
-						un(ELITE_PVP_REQUIREMENT, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
+						elitepvp(i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
+						elitepvp(i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
+						elitepvp(i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+						elitepvp(i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
+						elitepvp(i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
+						elitepvp(i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
+						elitepvp(i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
+						elitepvp(i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
+						elitepvp(i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
+						elitepvp(i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
 						n(PVP_ELITE, {	-- Season1+Season2
 							cl(DEATHKNIGHT, {
-								un(ELITE_PVP_REQUIREMENT, i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
+								elitepvp(i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2040,20 +2040,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136131)),	-- Vindictive Gladiator's Dreadcloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(136043)),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
-										un(ELITE_PVP_REQUIREMENT, i(136045)),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(136049)),	-- Vindictive Gladiator's Dreadplate Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(136046)),	-- Vindictive Gladiator's Dreadplate Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136047)),	-- Vindictive Gladiator's Dreadplate Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136044)),	-- Vindictive Gladiator's Dreadplate Sabatons (A)
-										un(ELITE_PVP_REQUIREMENT, i(136048)),	-- Vindictive Gladiator's Dreadplate Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136050)),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
+										elitepvp(i(136131)),	-- Vindictive Gladiator's Dreadcloak (A)
+										elitepvp(i(136043)),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
+										elitepvp(i(136045)),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
+										elitepvp(i(136049)),	-- Vindictive Gladiator's Dreadplate Girdle (A)
+										elitepvp(i(136046)),	-- Vindictive Gladiator's Dreadplate Helm (A)
+										elitepvp(i(136047)),	-- Vindictive Gladiator's Dreadplate Legguards (A)
+										elitepvp(i(136044)),	-- Vindictive Gladiator's Dreadplate Sabatons (A)
+										elitepvp(i(136048)),	-- Vindictive Gladiator's Dreadplate Shoulders (A)
+										elitepvp(i(136050)),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
 									},
 								})),
 							}),
 							cl(DEMONHUNTER, {
-								un(ELITE_PVP_REQUIREMENT, i(146270, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (A)
+								elitepvp(i(146270, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2061,20 +2061,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136895)),	-- Vindictive Gladiator's Demonthread Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(136317)),	-- Vindictive Gladiator's Felskin Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(136311)),	-- Vindictive Gladiator's Felskin Boots (A)
-										un(ELITE_PVP_REQUIREMENT, i(136312)),	-- Vindictive Gladiator's Felskin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(136313)),	-- Vindictive Gladiator's Felskin Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136314)),	-- Vindictive Gladiator's Felskin Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136316)),	-- Vindictive Gladiator's Felskin Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136315)),	-- Vindictive Gladiator's Felskin Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(136318)),	-- Vindictive Gladiator's Felskin Wristguards (A)
+										elitepvp(i(136895)),	-- Vindictive Gladiator's Demonthread Cloak (A)
+										elitepvp(i(136317)),	-- Vindictive Gladiator's Felskin Belt (A)
+										elitepvp(i(136311)),	-- Vindictive Gladiator's Felskin Boots (A)
+										elitepvp(i(136312)),	-- Vindictive Gladiator's Felskin Gloves (A)
+										elitepvp(i(136313)),	-- Vindictive Gladiator's Felskin Helm (A)
+										elitepvp(i(136314)),	-- Vindictive Gladiator's Felskin Legguards (A)
+										elitepvp(i(136316)),	-- Vindictive Gladiator's Felskin Spaulders (A)
+										elitepvp(i(136315)),	-- Vindictive Gladiator's Felskin Tunic (A)
+										elitepvp(i(136318)),	-- Vindictive Gladiator's Felskin Wristguards (A)
 									},
 								})),
 							}),
 							cl(DRUID, {
-								un(ELITE_PVP_REQUIREMENT, i(146228, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (A)
+								elitepvp(i(146228, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2082,20 +2082,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136057)),	-- Vindictive Gladiator's Dragonhide Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(136135)),	-- Vindictive Gladiator's Dragonhide Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(136052)),	-- Vindictive Gladiator's Dragonhide Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(136053)),	-- Vindictive Gladiator's Dragonhide Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136054)),	-- Vindictive Gladiator's Dragonhide Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136051)),	-- Vindictive Gladiator's Dragonhide Moccasins (A)
-										un(ELITE_PVP_REQUIREMENT, i(136055)),	-- Vindictive Gladiator's Dragonhide Robe (A)
-										un(ELITE_PVP_REQUIREMENT, i(136056)),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136058)),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
+										elitepvp(i(136057)),	-- Vindictive Gladiator's Dragonhide Belt (A)
+										elitepvp(i(136135)),	-- Vindictive Gladiator's Dragonhide Cloak (A)
+										elitepvp(i(136052)),	-- Vindictive Gladiator's Dragonhide Gloves (A)
+										elitepvp(i(136053)),	-- Vindictive Gladiator's Dragonhide Helm (A)
+										elitepvp(i(136054)),	-- Vindictive Gladiator's Dragonhide Legguards (A)
+										elitepvp(i(136051)),	-- Vindictive Gladiator's Dragonhide Moccasins (A)
+										elitepvp(i(136055)),	-- Vindictive Gladiator's Dragonhide Robe (A)
+										elitepvp(i(136056)),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
+										elitepvp(i(136058)),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
 									},
 								})),
 							}),
 							cl(HUNTER, {
-								un(ELITE_PVP_REQUIREMENT, i(146226, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor (A)
+								elitepvp(i(146226, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2103,20 +2103,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136066)),	-- Vindictive Gladiator's Chain Armband (A)
-										un(ELITE_PVP_REQUIREMENT, i(136059)),	-- Vindictive Gladiator's Chain Armor (A)
-										un(ELITE_PVP_REQUIREMENT, i(136065)),	-- Vindictive Gladiator's Chain Clasp (A)
-										un(ELITE_PVP_REQUIREMENT, i(136061)),	-- Vindictive Gladiator's Chain Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(136062)),	-- Vindictive Gladiator's Chain Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136063)),	-- Vindictive Gladiator's Chain Leggings (A)
-										un(ELITE_PVP_REQUIREMENT, i(136064)),	-- Vindictive Gladiator's Chain Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136060)),	-- Vindictive Gladiator's Chain Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(136139)),	-- Vindictive Gladiator's Drape of the Tracker (A)
+										elitepvp(i(136066)),	-- Vindictive Gladiator's Chain Armband (A)
+										elitepvp(i(136059)),	-- Vindictive Gladiator's Chain Armor (A)
+										elitepvp(i(136065)),	-- Vindictive Gladiator's Chain Clasp (A)
+										elitepvp(i(136061)),	-- Vindictive Gladiator's Chain Gauntlets (A)
+										elitepvp(i(136062)),	-- Vindictive Gladiator's Chain Helm (A)
+										elitepvp(i(136063)),	-- Vindictive Gladiator's Chain Leggings (A)
+										elitepvp(i(136064)),	-- Vindictive Gladiator's Chain Spaulders (A)
+										elitepvp(i(136060)),	-- Vindictive Gladiator's Chain Treads (A)
+										elitepvp(i(136139)),	-- Vindictive Gladiator's Drape of the Tracker (A)
 									},
 								})),
 							}),
 							cl(MAGE, {
-								un(ELITE_PVP_REQUIREMENT, i(146234, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (A)
+								elitepvp(i(146234, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2124,20 +2124,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136072)),	-- Vindictive Gladiator's Silk Amice (A)
-										un(ELITE_PVP_REQUIREMENT, i(136074)),	-- Vindictive Gladiator's Silk Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(136073)),	-- Vindictive Gladiator's Silk Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(136069)),	-- Vindictive Gladiator's Silk Cowl (A)
-										un(ELITE_PVP_REQUIREMENT, i(136068)),	-- Vindictive Gladiator's Silk Handguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136071)),	-- Vindictive Gladiator's Silk Robe (A)
-										un(ELITE_PVP_REQUIREMENT, i(136067)),	-- Vindictive Gladiator's Silk Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(136070)),	-- Vindictive Gladiator's Silk Trousers (A)
-										un(ELITE_PVP_REQUIREMENT, i(136132)),	-- Vindictive Gladiator's Silken Shawl (A)
+										elitepvp(i(136072)),	-- Vindictive Gladiator's Silk Amice (A)
+										elitepvp(i(136074)),	-- Vindictive Gladiator's Silk Bracers (A)
+										elitepvp(i(136073)),	-- Vindictive Gladiator's Silk Cord (A)
+										elitepvp(i(136069)),	-- Vindictive Gladiator's Silk Cowl (A)
+										elitepvp(i(136068)),	-- Vindictive Gladiator's Silk Handguards (A)
+										elitepvp(i(136071)),	-- Vindictive Gladiator's Silk Robe (A)
+										elitepvp(i(136067)),	-- Vindictive Gladiator's Silk Treads (A)
+										elitepvp(i(136070)),	-- Vindictive Gladiator's Silk Trousers (A)
+										elitepvp(i(136132)),	-- Vindictive Gladiator's Silken Shawl (A)
 									},
 								})),
 							}),
 							cl(MONK, {
-								un(ELITE_PVP_REQUIREMENT, i(146230, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (A)
+								elitepvp(i(146230, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2145,20 +2145,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136081)),	-- Vindictive Gladiator's Ironskin Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(136136)),	-- Vindictive Gladiator's Ironskin Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(136076)),	-- Vindictive Gladiator's Ironskin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(136077)),	-- Vindictive Gladiator's Ironskin Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136078)),	-- Vindictive Gladiator's Ironskin Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136075)),	-- Vindictive Gladiator's Ironskin Slippers (A)
-										un(ELITE_PVP_REQUIREMENT, i(136079)),	-- Vindictive Gladiator's Ironskin Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136080)),	-- Vindictive Gladiator's Ironskin Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(136082)),	-- Vindictive Gladiator's Ironskin Wristguards (A)
+										elitepvp(i(136081)),	-- Vindictive Gladiator's Ironskin Belt (A)
+										elitepvp(i(136136)),	-- Vindictive Gladiator's Ironskin Cloak (A)
+										elitepvp(i(136076)),	-- Vindictive Gladiator's Ironskin Gloves (A)
+										elitepvp(i(136077)),	-- Vindictive Gladiator's Ironskin Helm (A)
+										elitepvp(i(136078)),	-- Vindictive Gladiator's Ironskin Legguards (A)
+										elitepvp(i(136075)),	-- Vindictive Gladiator's Ironskin Slippers (A)
+										elitepvp(i(136079)),	-- Vindictive Gladiator's Ironskin Spaulders (A)
+										elitepvp(i(136080)),	-- Vindictive Gladiator's Ironskin Tunic (A)
+										elitepvp(i(136082)),	-- Vindictive Gladiator's Ironskin Wristguards (A)
 									},
 								})),
 							}),
 							cl(PALADIN, {
-								un(ELITE_PVP_REQUIREMENT, i(146222, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (A)
+								elitepvp(i(146222, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2166,20 +2166,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136140)),	-- Vindictive Gladiator's Greatcloak of Faith (A)
-										un(ELITE_PVP_REQUIREMENT, i(136083)),	-- Vindictive Gladiator's Scaled Battlerobe (A)
-										un(ELITE_PVP_REQUIREMENT, i(136085)),	-- Vindictive Gladiator's Scaled Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(136089)),	-- Vindictive Gladiator's Scaled Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(136086)),	-- Vindictive Gladiator's Scaled Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136087)),	-- Vindictive Gladiator's Scaled Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136084)),	-- Vindictive Gladiator's Scaled Sabatons (A)
-										un(ELITE_PVP_REQUIREMENT, i(136088)),	-- Vindictive Gladiator's Scaled Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136090)),	-- Vindictive Gladiator's Scaled Wristplates (A)
+										elitepvp(i(136140)),	-- Vindictive Gladiator's Greatcloak of Faith (A)
+										elitepvp(i(136083)),	-- Vindictive Gladiator's Scaled Battlerobe (A)
+										elitepvp(i(136085)),	-- Vindictive Gladiator's Scaled Gauntlets (A)
+										elitepvp(i(136089)),	-- Vindictive Gladiator's Scaled Girdle (A)
+										elitepvp(i(136086)),	-- Vindictive Gladiator's Scaled Helm (A)
+										elitepvp(i(136087)),	-- Vindictive Gladiator's Scaled Legguards (A)
+										elitepvp(i(136084)),	-- Vindictive Gladiator's Scaled Sabatons (A)
+										elitepvp(i(136088)),	-- Vindictive Gladiator's Scaled Shoulders (A)
+										elitepvp(i(136090)),	-- Vindictive Gladiator's Scaled Wristplates (A)
 									},
 								})),
 							}),
 							cl(PRIEST, {
-								un(ELITE_PVP_REQUIREMENT, i(146236, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (A)
+								elitepvp(i(146236, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2187,20 +2187,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136873)),	-- Vindictive Gladiator's Drape of Piety (A)
-										un(ELITE_PVP_REQUIREMENT, i(136098)),	-- Vindictive Gladiator's Satin Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(136097)),	-- Vindictive Gladiator's Satin Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(136092)),	-- Vindictive Gladiator's Satin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(136093)),	-- Vindictive Gladiator's Satin Hood (A)
-										un(ELITE_PVP_REQUIREMENT, i(136094)),	-- Vindictive Gladiator's Satin Leggings (A)
-										un(ELITE_PVP_REQUIREMENT, i(136096)),	-- Vindictive Gladiator's Satin Mantle (A)
-										un(ELITE_PVP_REQUIREMENT, i(136095)),	-- Vindictive Gladiator's Satin Robe (A)
-										un(ELITE_PVP_REQUIREMENT, i(136091)),	-- Vindictive Gladiator's Satin Treads (A)
+										elitepvp(i(136873)),	-- Vindictive Gladiator's Drape of Piety (A)
+										elitepvp(i(136098)),	-- Vindictive Gladiator's Satin Bracers (A)
+										elitepvp(i(136097)),	-- Vindictive Gladiator's Satin Cord (A)
+										elitepvp(i(136092)),	-- Vindictive Gladiator's Satin Gloves (A)
+										elitepvp(i(136093)),	-- Vindictive Gladiator's Satin Hood (A)
+										elitepvp(i(136094)),	-- Vindictive Gladiator's Satin Leggings (A)
+										elitepvp(i(136096)),	-- Vindictive Gladiator's Satin Mantle (A)
+										elitepvp(i(136095)),	-- Vindictive Gladiator's Satin Robe (A)
+										elitepvp(i(136091)),	-- Vindictive Gladiator's Satin Treads (A)
 									},
 								})),
 							}),
 							cl(ROGUE, {
-								un(ELITE_PVP_REQUIREMENT, i(146232, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (A)
+								elitepvp(i(146232, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2208,20 +2208,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136105)),	-- Vindictive Gladiator's Leather Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(136101)),	-- Vindictive Gladiator's Leather Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(136102)),	-- Vindictive Gladiator's Leather Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136103)),	-- Vindictive Gladiator's Leather Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136100)),	-- Vindictive Gladiator's Leather Slippers (A)
-										un(ELITE_PVP_REQUIREMENT, i(136104)),	-- Vindictive Gladiator's Leather Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136099)),	-- Vindictive Gladiator's Leather Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(136106)),	-- Vindictive Gladiator's Leather Wristguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136874)),	-- Vindictive Gladiator's Shadowcape (A)
+										elitepvp(i(136105)),	-- Vindictive Gladiator's Leather Belt (A)
+										elitepvp(i(136101)),	-- Vindictive Gladiator's Leather Gloves (A)
+										elitepvp(i(136102)),	-- Vindictive Gladiator's Leather Helm (A)
+										elitepvp(i(136103)),	-- Vindictive Gladiator's Leather Legguards (A)
+										elitepvp(i(136100)),	-- Vindictive Gladiator's Leather Slippers (A)
+										elitepvp(i(136104)),	-- Vindictive Gladiator's Leather Spaulders (A)
+										elitepvp(i(136099)),	-- Vindictive Gladiator's Leather Tunic (A)
+										elitepvp(i(136106)),	-- Vindictive Gladiator's Leather Wristguards (A)
+										elitepvp(i(136874)),	-- Vindictive Gladiator's Shadowcape (A)
 									},
 								})),
 							}),
 							cl(SHAMAN, {
-								un(ELITE_PVP_REQUIREMENT, i(146224, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor (A)
+								elitepvp(i(146224, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2229,20 +2229,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136114)),	-- Vindictive Gladiator's Ringmail Armband (A)
-										un(ELITE_PVP_REQUIREMENT, i(136107)),	-- Vindictive Gladiator's Ringmail Armor (A)
-										un(ELITE_PVP_REQUIREMENT, i(136108)),	-- Vindictive Gladiator's Ringmail Boots (A)
-										un(ELITE_PVP_REQUIREMENT, i(136113)),	-- Vindictive Gladiator's Ringmail Clasp (A)
-										un(ELITE_PVP_REQUIREMENT, i(136109)),	-- Vindictive Gladiator's Ringmail Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(136110)),	-- Vindictive Gladiator's Ringmail Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136111)),	-- Vindictive Gladiator's Ringmail Kilt (A)
-										un(ELITE_PVP_REQUIREMENT, i(136112)),	-- Vindictive Gladiator's Ringmail Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136875)),	-- Vindictive Gladiator's Totemic Cloak (A)
+										elitepvp(i(136114)),	-- Vindictive Gladiator's Ringmail Armband (A)
+										elitepvp(i(136107)),	-- Vindictive Gladiator's Ringmail Armor (A)
+										elitepvp(i(136108)),	-- Vindictive Gladiator's Ringmail Boots (A)
+										elitepvp(i(136113)),	-- Vindictive Gladiator's Ringmail Clasp (A)
+										elitepvp(i(136109)),	-- Vindictive Gladiator's Ringmail Gauntlets (A)
+										elitepvp(i(136110)),	-- Vindictive Gladiator's Ringmail Helm (A)
+										elitepvp(i(136111)),	-- Vindictive Gladiator's Ringmail Kilt (A)
+										elitepvp(i(136112)),	-- Vindictive Gladiator's Ringmail Spaulders (A)
+										elitepvp(i(136875)),	-- Vindictive Gladiator's Totemic Cloak (A)
 									},
 								})),
 							}),
 							cl(WARLOCK, {
-								un(ELITE_PVP_REQUIREMENT, i(146238, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (A)
+								elitepvp(i(146238, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2250,20 +2250,20 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136120)),	-- Vindictive Gladiator's Felweave Amice (A)
-										un(ELITE_PVP_REQUIREMENT, i(136122)),	-- Vindictive Gladiator's Felweave Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(136883)),	-- Vindictive Gladiator's Felweave Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(136121)),	-- Vindictive Gladiator's Felweave Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(136117)),	-- Vindictive Gladiator's Felweave Cowl (A)
-										un(ELITE_PVP_REQUIREMENT, i(136116)),	-- Vindictive Gladiator's Felweave Handguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136119)),	-- Vindictive Gladiator's Felweave Raiment (A)
-										un(ELITE_PVP_REQUIREMENT, i(136115)),	-- Vindictive Gladiator's Felweave Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(136118)),	-- Vindictive Gladiator's Felweave Trousers (A)
+										elitepvp(i(136120)),	-- Vindictive Gladiator's Felweave Amice (A)
+										elitepvp(i(136122)),	-- Vindictive Gladiator's Felweave Bracers (A)
+										elitepvp(i(136883)),	-- Vindictive Gladiator's Felweave Cloak (A)
+										elitepvp(i(136121)),	-- Vindictive Gladiator's Felweave Cord (A)
+										elitepvp(i(136117)),	-- Vindictive Gladiator's Felweave Cowl (A)
+										elitepvp(i(136116)),	-- Vindictive Gladiator's Felweave Handguards (A)
+										elitepvp(i(136119)),	-- Vindictive Gladiator's Felweave Raiment (A)
+										elitepvp(i(136115)),	-- Vindictive Gladiator's Felweave Treads (A)
+										elitepvp(i(136118)),	-- Vindictive Gladiator's Felweave Trousers (A)
 									},
 								})),
 							}),
 							cl(WARRIOR, {
-								un(ELITE_PVP_REQUIREMENT, i(146218, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor (A)
+								elitepvp(i(146218, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
@@ -2271,15 +2271,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136889)),	-- Vindictive Gladiator's Cloak of Battle (A)
-										un(ELITE_PVP_REQUIREMENT, i(136123)),	-- Vindictive Gladiator's Plate Chestpiece (A)
-										un(ELITE_PVP_REQUIREMENT, i(136125)),	-- Vindictive Gladiator's Plate Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(136129)),	-- Vindictive Gladiator's Plate Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(136126)),	-- Vindictive Gladiator's Plate Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(136127)),	-- Vindictive Gladiator's Plate Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(136128)),	-- Vindictive Gladiator's Plate Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(136124)),	-- Vindictive Gladiator's Plate Warboots (A)
-										un(ELITE_PVP_REQUIREMENT, i(136130)),	-- Vindictive Gladiator's Plate Wristplates (A)
+										elitepvp(i(136889)),	-- Vindictive Gladiator's Cloak of Battle (A)
+										elitepvp(i(136123)),	-- Vindictive Gladiator's Plate Chestpiece (A)
+										elitepvp(i(136125)),	-- Vindictive Gladiator's Plate Gauntlets (A)
+										elitepvp(i(136129)),	-- Vindictive Gladiator's Plate Girdle (A)
+										elitepvp(i(136126)),	-- Vindictive Gladiator's Plate Helm (A)
+										elitepvp(i(136127)),	-- Vindictive Gladiator's Plate Legguards (A)
+										elitepvp(i(136128)),	-- Vindictive Gladiator's Plate Shoulders (A)
+										elitepvp(i(136124)),	-- Vindictive Gladiator's Plate Warboots (A)
+										elitepvp(i(136130)),	-- Vindictive Gladiator's Plate Wristplates (A)
 									},
 								})),
 							}),
@@ -2294,15 +2294,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144780)),	-- Cruel Gladiator's Dreadcloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(144804)),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
-										un(ELITE_PVP_REQUIREMENT, i(144808)),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(144816)),	-- Cruel Gladiator's Dreadplate Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(144810)),	-- Cruel Gladiator's Dreadplate Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144812)),	-- Cruel Gladiator's Dreadplate Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144806)),	-- Cruel Gladiator's Dreadplate Sabatons (A)
-										un(ELITE_PVP_REQUIREMENT, i(144814)),	-- Cruel Gladiator's Dreadplate Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144818)),	-- Cruel Gladiator's Dreadplate Wristplates (A)
+										elitepvp(i(144780)),	-- Cruel Gladiator's Dreadcloak (A)
+										elitepvp(i(144804)),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
+										elitepvp(i(144808)),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
+										elitepvp(i(144816)),	-- Cruel Gladiator's Dreadplate Girdle (A)
+										elitepvp(i(144810)),	-- Cruel Gladiator's Dreadplate Helm (A)
+										elitepvp(i(144812)),	-- Cruel Gladiator's Dreadplate Legguards (A)
+										elitepvp(i(144806)),	-- Cruel Gladiator's Dreadplate Sabatons (A)
+										elitepvp(i(144814)),	-- Cruel Gladiator's Dreadplate Shoulders (A)
+										elitepvp(i(144818)),	-- Cruel Gladiator's Dreadplate Wristplates (A)
 									},
 								}),
 							}),
@@ -2315,15 +2315,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144782)),	-- Cruel Gladiator's Demonthread Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(144832)),	-- Cruel Gladiator's Felskin Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(144822)),	-- Cruel Gladiator's Felskin Boots (A)
-										un(ELITE_PVP_REQUIREMENT, i(144824)),	-- Cruel Gladiator's Felskin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(144826)),	-- Cruel Gladiator's Felskin Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144828)),	-- Cruel Gladiator's Felskin Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144830)),	-- Cruel Gladiator's Felskin Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144820)),	-- Cruel Gladiator's Felskin Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(144834)),	-- Cruel Gladiator's Felskin Wristguards (A)
+										elitepvp(i(144782)),	-- Cruel Gladiator's Demonthread Cloak (A)
+										elitepvp(i(144832)),	-- Cruel Gladiator's Felskin Belt (A)
+										elitepvp(i(144822)),	-- Cruel Gladiator's Felskin Boots (A)
+										elitepvp(i(144824)),	-- Cruel Gladiator's Felskin Gloves (A)
+										elitepvp(i(144826)),	-- Cruel Gladiator's Felskin Helm (A)
+										elitepvp(i(144828)),	-- Cruel Gladiator's Felskin Legguards (A)
+										elitepvp(i(144830)),	-- Cruel Gladiator's Felskin Spaulders (A)
+										elitepvp(i(144820)),	-- Cruel Gladiator's Felskin Tunic (A)
+										elitepvp(i(144834)),	-- Cruel Gladiator's Felskin Wristguards (A)
 									},
 								}),
 							}),
@@ -2336,15 +2336,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144848)),	-- Cruel Gladiator's Dragonhide Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(144784)),	-- Cruel Gladiator's Dragonhide Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(144840)),	-- Cruel Gladiator's Dragonhide Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(144842)),	-- Cruel Gladiator's Dragonhide Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144844)),	-- Cruel Gladiator's Dragonhide Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144838)),	-- Cruel Gladiator's Dragonhide Moccasins (A)
-										un(ELITE_PVP_REQUIREMENT, i(144836)),	-- Cruel Gladiator's Dragonhide Robe (A)
-										un(ELITE_PVP_REQUIREMENT, i(144846)),	-- Cruel Gladiator's Dragonhide Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144850)),	-- Cruel Gladiator's Dragonhide Wristguards (A)
+										elitepvp(i(144848)),	-- Cruel Gladiator's Dragonhide Belt (A)
+										elitepvp(i(144784)),	-- Cruel Gladiator's Dragonhide Cloak (A)
+										elitepvp(i(144840)),	-- Cruel Gladiator's Dragonhide Gloves (A)
+										elitepvp(i(144842)),	-- Cruel Gladiator's Dragonhide Helm (A)
+										elitepvp(i(144844)),	-- Cruel Gladiator's Dragonhide Legguards (A)
+										elitepvp(i(144838)),	-- Cruel Gladiator's Dragonhide Moccasins (A)
+										elitepvp(i(144836)),	-- Cruel Gladiator's Dragonhide Robe (A)
+										elitepvp(i(144846)),	-- Cruel Gladiator's Dragonhide Spaulders (A)
+										elitepvp(i(144850)),	-- Cruel Gladiator's Dragonhide Wristguards (A)
 									},
 								}),
 							}),
@@ -2357,15 +2357,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144866)),	-- Cruel Gladiator's Chain Armband (A)
-										un(ELITE_PVP_REQUIREMENT, i(144852)),	-- Cruel Gladiator's Chain Armor (A)
-										un(ELITE_PVP_REQUIREMENT, i(144864)),	-- Cruel Gladiator's Chain Clasp (A)
-										un(ELITE_PVP_REQUIREMENT, i(144856)),	-- Cruel Gladiator's Chain Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(144858)),	-- Cruel Gladiator's Chain Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144860)),	-- Cruel Gladiator's Chain Leggings (A)
-										un(ELITE_PVP_REQUIREMENT, i(144862)),	-- Cruel Gladiator's Chain Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144854)),	-- Cruel Gladiator's Chain Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(144786)),	-- Cruel Gladiator's Drape of the Tracker (A)
+										elitepvp(i(144866)),	-- Cruel Gladiator's Chain Armband (A)
+										elitepvp(i(144852)),	-- Cruel Gladiator's Chain Armor (A)
+										elitepvp(i(144864)),	-- Cruel Gladiator's Chain Clasp (A)
+										elitepvp(i(144856)),	-- Cruel Gladiator's Chain Gauntlets (A)
+										elitepvp(i(144858)),	-- Cruel Gladiator's Chain Helm (A)
+										elitepvp(i(144860)),	-- Cruel Gladiator's Chain Leggings (A)
+										elitepvp(i(144862)),	-- Cruel Gladiator's Chain Spaulders (A)
+										elitepvp(i(144854)),	-- Cruel Gladiator's Chain Treads (A)
+										elitepvp(i(144786)),	-- Cruel Gladiator's Drape of the Tracker (A)
 									},
 								}),
 							}),
@@ -2378,15 +2378,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144878)),	-- Cruel Gladiator's Silk Amice (A)
-										un(ELITE_PVP_REQUIREMENT, i(144882)),	-- Cruel Gladiator's Silk Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(144880)),	-- Cruel Gladiator's Silk Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(144872)),	-- Cruel Gladiator's Silk Cowl (A)
-										un(ELITE_PVP_REQUIREMENT, i(144870)),	-- Cruel Gladiator's Silk Handguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144876)),	-- Cruel Gladiator's Silk Robe (A)
-										un(ELITE_PVP_REQUIREMENT, i(144868)),	-- Cruel Gladiator's Silk Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(144874)),	-- Cruel Gladiator's Silk Trousers (A)
-										un(ELITE_PVP_REQUIREMENT, i(144788)),	-- Cruel Gladiator's Silken Shawl (A)
+										elitepvp(i(144878)),	-- Cruel Gladiator's Silk Amice (A)
+										elitepvp(i(144882)),	-- Cruel Gladiator's Silk Bracers (A)
+										elitepvp(i(144880)),	-- Cruel Gladiator's Silk Cord (A)
+										elitepvp(i(144872)),	-- Cruel Gladiator's Silk Cowl (A)
+										elitepvp(i(144870)),	-- Cruel Gladiator's Silk Handguards (A)
+										elitepvp(i(144876)),	-- Cruel Gladiator's Silk Robe (A)
+										elitepvp(i(144868)),	-- Cruel Gladiator's Silk Treads (A)
+										elitepvp(i(144874)),	-- Cruel Gladiator's Silk Trousers (A)
+										elitepvp(i(144788)),	-- Cruel Gladiator's Silken Shawl (A)
 									},
 								}),
 							}),
@@ -2399,15 +2399,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144896)),	-- Cruel Gladiator's Ironskin Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(144790)),	-- Cruel Gladiator's Ironskin Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(144886)),	-- Cruel Gladiator's Ironskin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(144888)),	-- Cruel Gladiator's Ironskin Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144890)),	-- Cruel Gladiator's Ironskin Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144884)),	-- Cruel Gladiator's Ironskin Slippers (A)
-										un(ELITE_PVP_REQUIREMENT, i(144892)),	-- Cruel Gladiator's Ironskin Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144894)),	-- Cruel Gladiator's Ironskin Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(144898)),	-- Cruel Gladiator's Ironskin Wristguards (A)
+										elitepvp(i(144896)),	-- Cruel Gladiator's Ironskin Belt (A)
+										elitepvp(i(144790)),	-- Cruel Gladiator's Ironskin Cloak (A)
+										elitepvp(i(144886)),	-- Cruel Gladiator's Ironskin Gloves (A)
+										elitepvp(i(144888)),	-- Cruel Gladiator's Ironskin Helm (A)
+										elitepvp(i(144890)),	-- Cruel Gladiator's Ironskin Legguards (A)
+										elitepvp(i(144884)),	-- Cruel Gladiator's Ironskin Slippers (A)
+										elitepvp(i(144892)),	-- Cruel Gladiator's Ironskin Spaulders (A)
+										elitepvp(i(144894)),	-- Cruel Gladiator's Ironskin Tunic (A)
+										elitepvp(i(144898)),	-- Cruel Gladiator's Ironskin Wristguards (A)
 									},
 								}),
 							}),
@@ -2420,15 +2420,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144792)),	-- Cruel Gladiator's Greatcloak of Faith (A)
-										un(ELITE_PVP_REQUIREMENT, i(144906)),	-- Cruel Gladiator's Scaled Breastplate (A)
-										un(ELITE_PVP_REQUIREMENT, i(144910)),	-- Cruel Gladiator's Scaled Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(144918)),	-- Cruel Gladiator's Scaled Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(144912)),	-- Cruel Gladiator's Scaled Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144914)),	-- Cruel Gladiator's Scaled Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144908)),	-- Cruel Gladiator's Scaled Sabatons (A)
-										un(ELITE_PVP_REQUIREMENT, i(144916)),	-- Cruel Gladiator's Scaled Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144920)),	-- Cruel Gladiator's Scaled Wristplates (A)
+										elitepvp(i(144792)),	-- Cruel Gladiator's Greatcloak of Faith (A)
+										elitepvp(i(144906)),	-- Cruel Gladiator's Scaled Breastplate (A)
+										elitepvp(i(144910)),	-- Cruel Gladiator's Scaled Gauntlets (A)
+										elitepvp(i(144918)),	-- Cruel Gladiator's Scaled Girdle (A)
+										elitepvp(i(144912)),	-- Cruel Gladiator's Scaled Helm (A)
+										elitepvp(i(144914)),	-- Cruel Gladiator's Scaled Legguards (A)
+										elitepvp(i(144908)),	-- Cruel Gladiator's Scaled Sabatons (A)
+										elitepvp(i(144916)),	-- Cruel Gladiator's Scaled Shoulders (A)
+										elitepvp(i(144920)),	-- Cruel Gladiator's Scaled Wristplates (A)
 									},
 								}),
 							}),
@@ -2441,15 +2441,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144794)),	-- Cruel Gladiator's Drape of Piety (A)
-										un(ELITE_PVP_REQUIREMENT, i(144936)),	-- Cruel Gladiator's Satin Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(144934)),	-- Cruel Gladiator's Satin Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(144924)),	-- Cruel Gladiator's Satin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(144926)),	-- Cruel Gladiator's Satin Hood (A)
-										un(ELITE_PVP_REQUIREMENT, i(144928)),	-- Cruel Gladiator's Satin Leggings (A)
-										un(ELITE_PVP_REQUIREMENT, i(144932)),	-- Cruel Gladiator's Satin Mantle (A)
-										un(ELITE_PVP_REQUIREMENT, i(144930)),	-- Cruel Gladiator's Satin Robe (A)
-										un(ELITE_PVP_REQUIREMENT, i(144922)),	-- Cruel Gladiator's Satin Treads (A)
+										elitepvp(i(144794)),	-- Cruel Gladiator's Drape of Piety (A)
+										elitepvp(i(144936)),	-- Cruel Gladiator's Satin Bracers (A)
+										elitepvp(i(144934)),	-- Cruel Gladiator's Satin Cord (A)
+										elitepvp(i(144924)),	-- Cruel Gladiator's Satin Gloves (A)
+										elitepvp(i(144926)),	-- Cruel Gladiator's Satin Hood (A)
+										elitepvp(i(144928)),	-- Cruel Gladiator's Satin Leggings (A)
+										elitepvp(i(144932)),	-- Cruel Gladiator's Satin Mantle (A)
+										elitepvp(i(144930)),	-- Cruel Gladiator's Satin Robe (A)
+										elitepvp(i(144922)),	-- Cruel Gladiator's Satin Treads (A)
 									},
 								}),
 							}),
@@ -2462,15 +2462,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144956)),	-- Cruel Gladiator's Leather Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(144948)),	-- Cruel Gladiator's Leather Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(144950)),	-- Cruel Gladiator's Leather Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144952)),	-- Cruel Gladiator's Leather Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144946)),	-- Cruel Gladiator's Leather Slippers (A)
-										un(ELITE_PVP_REQUIREMENT, i(144954)),	-- Cruel Gladiator's Leather Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144944)),	-- Cruel Gladiator's Leather Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(144958)),	-- Cruel Gladiator's Leather Wristguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(144796)),	-- Cruel Gladiator's Shadowcape (A)
+										elitepvp(i(144956)),	-- Cruel Gladiator's Leather Belt (A)
+										elitepvp(i(144948)),	-- Cruel Gladiator's Leather Gloves (A)
+										elitepvp(i(144950)),	-- Cruel Gladiator's Leather Helm (A)
+										elitepvp(i(144952)),	-- Cruel Gladiator's Leather Legguards (A)
+										elitepvp(i(144946)),	-- Cruel Gladiator's Leather Slippers (A)
+										elitepvp(i(144954)),	-- Cruel Gladiator's Leather Spaulders (A)
+										elitepvp(i(144944)),	-- Cruel Gladiator's Leather Tunic (A)
+										elitepvp(i(144958)),	-- Cruel Gladiator's Leather Wristguards (A)
+										elitepvp(i(144796)),	-- Cruel Gladiator's Shadowcape (A)
 									},
 								}),
 							}),
@@ -2483,15 +2483,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144974)),	-- Cruel Gladiator's Ringmail Armband (A)
-										un(ELITE_PVP_REQUIREMENT, i(144960)),	-- Cruel Gladiator's Ringmail Armor (A)
-										un(ELITE_PVP_REQUIREMENT, i(144962)),	-- Cruel Gladiator's Ringmail Boots (A)
-										un(ELITE_PVP_REQUIREMENT, i(144972)),	-- Cruel Gladiator's Ringmail Clasp (A)
-										un(ELITE_PVP_REQUIREMENT, i(144964)),	-- Cruel Gladiator's Ringmail Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(144966)),	-- Cruel Gladiator's Ringmail Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(144968)),	-- Cruel Gladiator's Ringmail Kilt (A)
-										un(ELITE_PVP_REQUIREMENT, i(144970)),	-- Cruel Gladiator's Ringmail Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(144798)),	-- Cruel Gladiator's Totemic Cloak (A)
+										elitepvp(i(144974)),	-- Cruel Gladiator's Ringmail Armband (A)
+										elitepvp(i(144960)),	-- Cruel Gladiator's Ringmail Armor (A)
+										elitepvp(i(144962)),	-- Cruel Gladiator's Ringmail Boots (A)
+										elitepvp(i(144972)),	-- Cruel Gladiator's Ringmail Clasp (A)
+										elitepvp(i(144964)),	-- Cruel Gladiator's Ringmail Gauntlets (A)
+										elitepvp(i(144966)),	-- Cruel Gladiator's Ringmail Helm (A)
+										elitepvp(i(144968)),	-- Cruel Gladiator's Ringmail Kilt (A)
+										elitepvp(i(144970)),	-- Cruel Gladiator's Ringmail Spaulders (A)
+										elitepvp(i(144798)),	-- Cruel Gladiator's Totemic Cloak (A)
 									},
 								}),
 							}),
@@ -2504,15 +2504,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(145004)),	-- Cruel Gladiator's Felweave Amice (A)
-										un(ELITE_PVP_REQUIREMENT, i(145008)),	-- Cruel Gladiator's Felweave Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(144800)),	-- Cruel Gladiator's Felweave Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(145006)),	-- Cruel Gladiator's Felweave Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(144998)),	-- Cruel Gladiator's Felweave Cowl (A)
-										un(ELITE_PVP_REQUIREMENT, i(144996)),	-- Cruel Gladiator's Felweave Handguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(145002)),	-- Cruel Gladiator's Felweave Raiment (A)
-										un(ELITE_PVP_REQUIREMENT, i(144994)),	-- Cruel Gladiator's Felweave Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(145000)),	-- Cruel Gladiator's Felweave Trousers (A)
+										elitepvp(i(145004)),	-- Cruel Gladiator's Felweave Amice (A)
+										elitepvp(i(145008)),	-- Cruel Gladiator's Felweave Bracers (A)
+										elitepvp(i(144800)),	-- Cruel Gladiator's Felweave Cloak (A)
+										elitepvp(i(145006)),	-- Cruel Gladiator's Felweave Cord (A)
+										elitepvp(i(144998)),	-- Cruel Gladiator's Felweave Cowl (A)
+										elitepvp(i(144996)),	-- Cruel Gladiator's Felweave Handguards (A)
+										elitepvp(i(145002)),	-- Cruel Gladiator's Felweave Raiment (A)
+										elitepvp(i(144994)),	-- Cruel Gladiator's Felweave Treads (A)
+										elitepvp(i(145000)),	-- Cruel Gladiator's Felweave Trousers (A)
 									},
 								}),
 							}),
@@ -2525,15 +2525,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144802)),	-- Cruel Gladiator's Cloak of Battle (A)
-										un(ELITE_PVP_REQUIREMENT, i(145010)),	-- Cruel Gladiator's Plate Chestpiece (A)
-										un(ELITE_PVP_REQUIREMENT, i(145014)),	-- Cruel Gladiator's Plate Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(145022)),	-- Cruel Gladiator's Plate Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(145016)),	-- Cruel Gladiator's Plate Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(145018)),	-- Cruel Gladiator's Plate Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(145020)),	-- Cruel Gladiator's Plate Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(145012)),	-- Cruel Gladiator's Plate Warboots (A)
-										un(ELITE_PVP_REQUIREMENT, i(145024)),	-- Cruel Gladiator's Plate Wristplates (A)
+										elitepvp(i(144802)),	-- Cruel Gladiator's Cloak of Battle (A)
+										elitepvp(i(145010)),	-- Cruel Gladiator's Plate Chestpiece (A)
+										elitepvp(i(145014)),	-- Cruel Gladiator's Plate Gauntlets (A)
+										elitepvp(i(145022)),	-- Cruel Gladiator's Plate Girdle (A)
+										elitepvp(i(145016)),	-- Cruel Gladiator's Plate Helm (A)
+										elitepvp(i(145018)),	-- Cruel Gladiator's Plate Legguards (A)
+										elitepvp(i(145020)),	-- Cruel Gladiator's Plate Shoulders (A)
+										elitepvp(i(145012)),	-- Cruel Gladiator's Plate Warboots (A)
+										elitepvp(i(145024)),	-- Cruel Gladiator's Plate Wristplates (A)
 									},
 								}),
 							}),
@@ -2549,15 +2549,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 6	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148155)),	-- Fierce Gladiator's Dreadcloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(148179)),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
-										un(ELITE_PVP_REQUIREMENT, i(148183)),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(148191)),	-- Fierce Gladiator's Dreadplate Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(148185)),	-- Fierce Gladiator's Dreadplate Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148187)),	-- Fierce Gladiator's Dreadplate Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148181)),	-- Fierce Gladiator's Dreadplate Sabatons (A)
-										un(ELITE_PVP_REQUIREMENT, i(148189)),	-- Fierce Gladiator's Dreadplate Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148193)),	-- Fierce Gladiator's Dreadplate Wristplates (A)
+										elitepvp(i(148155)),	-- Fierce Gladiator's Dreadcloak (A)
+										elitepvp(i(148179)),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
+										elitepvp(i(148183)),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
+										elitepvp(i(148191)),	-- Fierce Gladiator's Dreadplate Girdle (A)
+										elitepvp(i(148185)),	-- Fierce Gladiator's Dreadplate Helm (A)
+										elitepvp(i(148187)),	-- Fierce Gladiator's Dreadplate Legguards (A)
+										elitepvp(i(148181)),	-- Fierce Gladiator's Dreadplate Sabatons (A)
+										elitepvp(i(148189)),	-- Fierce Gladiator's Dreadplate Shoulders (A)
+										elitepvp(i(148193)),	-- Fierce Gladiator's Dreadplate Wristplates (A)
 									},
 								}),
 							}),
@@ -2571,15 +2571,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148157)),	-- Fierce Gladiator's Demonthread Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(148207)),	-- Fierce Gladiator's Felskin Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(148197)),	-- Fierce Gladiator's Felskin Boots (A)
-										un(ELITE_PVP_REQUIREMENT, i(148199)),	-- Fierce Gladiator's Felskin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(148201)),	-- Fierce Gladiator's Felskin Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148203)),	-- Fierce Gladiator's Felskin Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148205)),	-- Fierce Gladiator's Felskin Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148195)),	-- Fierce Gladiator's Felskin Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(148209)),	-- Fierce Gladiator's Felskin Wristguards (A)
+										elitepvp(i(148157)),	-- Fierce Gladiator's Demonthread Cloak (A)
+										elitepvp(i(148207)),	-- Fierce Gladiator's Felskin Belt (A)
+										elitepvp(i(148197)),	-- Fierce Gladiator's Felskin Boots (A)
+										elitepvp(i(148199)),	-- Fierce Gladiator's Felskin Gloves (A)
+										elitepvp(i(148201)),	-- Fierce Gladiator's Felskin Helm (A)
+										elitepvp(i(148203)),	-- Fierce Gladiator's Felskin Legguards (A)
+										elitepvp(i(148205)),	-- Fierce Gladiator's Felskin Spaulders (A)
+										elitepvp(i(148195)),	-- Fierce Gladiator's Felskin Tunic (A)
+										elitepvp(i(148209)),	-- Fierce Gladiator's Felskin Wristguards (A)
 									},
 								}),
 							}),
@@ -2593,15 +2593,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148223)),	-- Fierce Gladiator's Dragonhide Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(148159)),	-- Fierce Gladiator's Dragonhide Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(148215)),	-- Fierce Gladiator's Dragonhide Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(148217)),	-- Fierce Gladiator's Dragonhide Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148219)),	-- Fierce Gladiator's Dragonhide Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148213)),	-- Fierce Gladiator's Dragonhide Moccasins (A)
-										un(ELITE_PVP_REQUIREMENT, i(148221)),	-- Fierce Gladiator's Dragonhide Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148211)),	-- Fierce Gladiator's Dragonhide Vest (A)
-										un(ELITE_PVP_REQUIREMENT, i(148225)),	-- Fierce Gladiator's Dragonhide Wristguards (A)
+										elitepvp(i(148223)),	-- Fierce Gladiator's Dragonhide Belt (A)
+										elitepvp(i(148159)),	-- Fierce Gladiator's Dragonhide Cloak (A)
+										elitepvp(i(148215)),	-- Fierce Gladiator's Dragonhide Gloves (A)
+										elitepvp(i(148217)),	-- Fierce Gladiator's Dragonhide Helm (A)
+										elitepvp(i(148219)),	-- Fierce Gladiator's Dragonhide Legguards (A)
+										elitepvp(i(148213)),	-- Fierce Gladiator's Dragonhide Moccasins (A)
+										elitepvp(i(148221)),	-- Fierce Gladiator's Dragonhide Spaulders (A)
+										elitepvp(i(148211)),	-- Fierce Gladiator's Dragonhide Vest (A)
+										elitepvp(i(148225)),	-- Fierce Gladiator's Dragonhide Wristguards (A)
 									},
 								}),
 							}),
@@ -2615,15 +2615,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148241)),	-- Fierce Gladiator's Chain Armband (A)
-										un(ELITE_PVP_REQUIREMENT, i(148227)),	-- Fierce Gladiator's Chain Armor (A)
-										un(ELITE_PVP_REQUIREMENT, i(148239)),	-- Fierce Gladiator's Chain Clasp (A)
-										un(ELITE_PVP_REQUIREMENT, i(148231)),	-- Fierce Gladiator's Chain Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(148233)),	-- Fierce Gladiator's Chain Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148235)),	-- Fierce Gladiator's Chain Leggings (A)
-										un(ELITE_PVP_REQUIREMENT, i(148237)),	-- Fierce Gladiator's Chain Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148229)),	-- Fierce Gladiator's Chain Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(148161)),	-- Fierce Gladiator's Drape of the Tracker (A)
+										elitepvp(i(148241)),	-- Fierce Gladiator's Chain Armband (A)
+										elitepvp(i(148227)),	-- Fierce Gladiator's Chain Armor (A)
+										elitepvp(i(148239)),	-- Fierce Gladiator's Chain Clasp (A)
+										elitepvp(i(148231)),	-- Fierce Gladiator's Chain Gauntlets (A)
+										elitepvp(i(148233)),	-- Fierce Gladiator's Chain Helm (A)
+										elitepvp(i(148235)),	-- Fierce Gladiator's Chain Leggings (A)
+										elitepvp(i(148237)),	-- Fierce Gladiator's Chain Spaulders (A)
+										elitepvp(i(148229)),	-- Fierce Gladiator's Chain Treads (A)
+										elitepvp(i(148161)),	-- Fierce Gladiator's Drape of the Tracker (A)
 									},
 								}),
 							}),
@@ -2637,15 +2637,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 8	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148253)),	-- Fierce Gladiator's Silk Amice (A)
-										un(ELITE_PVP_REQUIREMENT, i(148257)),	-- Fierce Gladiator's Silk Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(148255)),	-- Fierce Gladiator's Silk Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(148247)),	-- Fierce Gladiator's Silk Cowl (A)
-										un(ELITE_PVP_REQUIREMENT, i(148245)),	-- Fierce Gladiator's Silk Handguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148243)),	-- Fierce Gladiator's Silk Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(148249)),	-- Fierce Gladiator's Silk Trousers (A)
-										un(ELITE_PVP_REQUIREMENT, i(148251)),	-- Fierce Gladiator's Silk Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(148163)),	-- Fierce Gladiator's Silken Shawl (A)
+										elitepvp(i(148253)),	-- Fierce Gladiator's Silk Amice (A)
+										elitepvp(i(148257)),	-- Fierce Gladiator's Silk Bracers (A)
+										elitepvp(i(148255)),	-- Fierce Gladiator's Silk Cord (A)
+										elitepvp(i(148247)),	-- Fierce Gladiator's Silk Cowl (A)
+										elitepvp(i(148245)),	-- Fierce Gladiator's Silk Handguards (A)
+										elitepvp(i(148243)),	-- Fierce Gladiator's Silk Treads (A)
+										elitepvp(i(148249)),	-- Fierce Gladiator's Silk Trousers (A)
+										elitepvp(i(148251)),	-- Fierce Gladiator's Silk Tunic (A)
+										elitepvp(i(148163)),	-- Fierce Gladiator's Silken Shawl (A)
 									},
 								}),
 							}),
@@ -2659,15 +2659,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148271)),	-- Fierce Gladiator's Ironskin Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(148165)),	-- Fierce Gladiator's Ironskin Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(148261)),	-- Fierce Gladiator's Ironskin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(148263)),	-- Fierce Gladiator's Ironskin Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148265)),	-- Fierce Gladiator's Ironskin Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148259)),	-- Fierce Gladiator's Ironskin Slippers (A)
-										un(ELITE_PVP_REQUIREMENT, i(148267)),	-- Fierce Gladiator's Ironskin Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148269)),	-- Fierce Gladiator's Ironskin Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(148273)),	-- Fierce Gladiator's Ironskin Wristguards (A)
+										elitepvp(i(148271)),	-- Fierce Gladiator's Ironskin Belt (A)
+										elitepvp(i(148165)),	-- Fierce Gladiator's Ironskin Cloak (A)
+										elitepvp(i(148261)),	-- Fierce Gladiator's Ironskin Gloves (A)
+										elitepvp(i(148263)),	-- Fierce Gladiator's Ironskin Helm (A)
+										elitepvp(i(148265)),	-- Fierce Gladiator's Ironskin Legguards (A)
+										elitepvp(i(148259)),	-- Fierce Gladiator's Ironskin Slippers (A)
+										elitepvp(i(148267)),	-- Fierce Gladiator's Ironskin Spaulders (A)
+										elitepvp(i(148269)),	-- Fierce Gladiator's Ironskin Tunic (A)
+										elitepvp(i(148273)),	-- Fierce Gladiator's Ironskin Wristguards (A)
 									},
 								}),
 							}),
@@ -2681,15 +2681,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 2	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148167)),	-- Fierce Gladiator's Greatcloak of Faith (A)
-										un(ELITE_PVP_REQUIREMENT, i(148281)),	-- Fierce Gladiator's Scaled Breastplate (A)
-										un(ELITE_PVP_REQUIREMENT, i(148285)),	-- Fierce Gladiator's Scaled Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(148293)),	-- Fierce Gladiator's Scaled Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(148287)),	-- Fierce Gladiator's Scaled Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148289)),	-- Fierce Gladiator's Scaled Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148283)),	-- Fierce Gladiator's Scaled Sabatons (A)
-										un(ELITE_PVP_REQUIREMENT, i(148291)),	-- Fierce Gladiator's Scaled Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148295)),	-- Fierce Gladiator's Scaled Wristplates (A)
+										elitepvp(i(148167)),	-- Fierce Gladiator's Greatcloak of Faith (A)
+										elitepvp(i(148281)),	-- Fierce Gladiator's Scaled Breastplate (A)
+										elitepvp(i(148285)),	-- Fierce Gladiator's Scaled Gauntlets (A)
+										elitepvp(i(148293)),	-- Fierce Gladiator's Scaled Girdle (A)
+										elitepvp(i(148287)),	-- Fierce Gladiator's Scaled Helm (A)
+										elitepvp(i(148289)),	-- Fierce Gladiator's Scaled Legguards (A)
+										elitepvp(i(148283)),	-- Fierce Gladiator's Scaled Sabatons (A)
+										elitepvp(i(148291)),	-- Fierce Gladiator's Scaled Shoulders (A)
+										elitepvp(i(148295)),	-- Fierce Gladiator's Scaled Wristplates (A)
 									},
 								}),
 							}),
@@ -2703,15 +2703,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 5	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148169)),	-- Fierce Gladiator's Drape of Piety (A)
-										un(ELITE_PVP_REQUIREMENT, i(148311)),	-- Fierce Gladiator's Satin Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(148309)),	-- Fierce Gladiator's Satin Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(148299)),	-- Fierce Gladiator's Satin Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(148301)),	-- Fierce Gladiator's Satin Hood (A)
-										un(ELITE_PVP_REQUIREMENT, i(148303)),	-- Fierce Gladiator's Satin Leggings (A)
-										un(ELITE_PVP_REQUIREMENT, i(148307)),	-- Fierce Gladiator's Satin Mantle (A)
-										un(ELITE_PVP_REQUIREMENT, i(148305)),	-- Fierce Gladiator's Satin Robe (A)
-										un(ELITE_PVP_REQUIREMENT, i(148297)),	-- Fierce Gladiator's Satin Treads (A)
+										elitepvp(i(148169)),	-- Fierce Gladiator's Drape of Piety (A)
+										elitepvp(i(148311)),	-- Fierce Gladiator's Satin Bracers (A)
+										elitepvp(i(148309)),	-- Fierce Gladiator's Satin Cord (A)
+										elitepvp(i(148299)),	-- Fierce Gladiator's Satin Gloves (A)
+										elitepvp(i(148301)),	-- Fierce Gladiator's Satin Hood (A)
+										elitepvp(i(148303)),	-- Fierce Gladiator's Satin Leggings (A)
+										elitepvp(i(148307)),	-- Fierce Gladiator's Satin Mantle (A)
+										elitepvp(i(148305)),	-- Fierce Gladiator's Satin Robe (A)
+										elitepvp(i(148297)),	-- Fierce Gladiator's Satin Treads (A)
 									},
 								}),
 							}),
@@ -2725,15 +2725,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 4	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148331)),	-- Fierce Gladiator's Leather Belt (A)
-										un(ELITE_PVP_REQUIREMENT, i(148323)),	-- Fierce Gladiator's Leather Gloves (A)
-										un(ELITE_PVP_REQUIREMENT, i(148325)),	-- Fierce Gladiator's Leather Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148327)),	-- Fierce Gladiator's Leather Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148321)),	-- Fierce Gladiator's Leather Slippers (A)
-										un(ELITE_PVP_REQUIREMENT, i(148329)),	-- Fierce Gladiator's Leather Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148319)),	-- Fierce Gladiator's Leather Tunic (A)
-										un(ELITE_PVP_REQUIREMENT, i(148333)),	-- Fierce Gladiator's Leather Wristguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148171)),	-- Fierce Gladiator's Shadowcape (A)
+										elitepvp(i(148331)),	-- Fierce Gladiator's Leather Belt (A)
+										elitepvp(i(148323)),	-- Fierce Gladiator's Leather Gloves (A)
+										elitepvp(i(148325)),	-- Fierce Gladiator's Leather Helm (A)
+										elitepvp(i(148327)),	-- Fierce Gladiator's Leather Legguards (A)
+										elitepvp(i(148321)),	-- Fierce Gladiator's Leather Slippers (A)
+										elitepvp(i(148329)),	-- Fierce Gladiator's Leather Spaulders (A)
+										elitepvp(i(148319)),	-- Fierce Gladiator's Leather Tunic (A)
+										elitepvp(i(148333)),	-- Fierce Gladiator's Leather Wristguards (A)
+										elitepvp(i(148171)),	-- Fierce Gladiator's Shadowcape (A)
 									},
 								}),
 							}),
@@ -2747,15 +2747,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148349)),	-- Fierce Gladiator's Ringmail Armband (A)
-										un(ELITE_PVP_REQUIREMENT, i(148335)),	-- Fierce Gladiator's Ringmail Armor (A)
-										un(ELITE_PVP_REQUIREMENT, i(148337)),	-- Fierce Gladiator's Ringmail Boots (A)
-										un(ELITE_PVP_REQUIREMENT, i(148347)),	-- Fierce Gladiator's Ringmail Clasp (A)
-										un(ELITE_PVP_REQUIREMENT, i(148339)),	-- Fierce Gladiator's Ringmail Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(148341)),	-- Fierce Gladiator's Ringmail Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148343)),	-- Fierce Gladiator's Ringmail Leggings (A)
-										un(ELITE_PVP_REQUIREMENT, i(148345)),	-- Fierce Gladiator's Ringmail Spaulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148173)),	-- Fierce Gladiator's Totemic Cloak (A)
+										elitepvp(i(148349)),	-- Fierce Gladiator's Ringmail Armband (A)
+										elitepvp(i(148335)),	-- Fierce Gladiator's Ringmail Armor (A)
+										elitepvp(i(148337)),	-- Fierce Gladiator's Ringmail Boots (A)
+										elitepvp(i(148347)),	-- Fierce Gladiator's Ringmail Clasp (A)
+										elitepvp(i(148339)),	-- Fierce Gladiator's Ringmail Gauntlets (A)
+										elitepvp(i(148341)),	-- Fierce Gladiator's Ringmail Helm (A)
+										elitepvp(i(148343)),	-- Fierce Gladiator's Ringmail Leggings (A)
+										elitepvp(i(148345)),	-- Fierce Gladiator's Ringmail Spaulders (A)
+										elitepvp(i(148173)),	-- Fierce Gladiator's Totemic Cloak (A)
 									},
 								}),
 							}),
@@ -2769,15 +2769,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 9	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148379)),	-- Fierce Gladiator's Felweave Amice (A)
-										un(ELITE_PVP_REQUIREMENT, i(148383)),	-- Fierce Gladiator's Felweave Bracers (A)
-										un(ELITE_PVP_REQUIREMENT, i(148175)),	-- Fierce Gladiator's Felweave Cloak (A)
-										un(ELITE_PVP_REQUIREMENT, i(148381)),	-- Fierce Gladiator's Felweave Cord (A)
-										un(ELITE_PVP_REQUIREMENT, i(148373)),	-- Fierce Gladiator's Felweave Cowl (A)
-										un(ELITE_PVP_REQUIREMENT, i(148371)),	-- Fierce Gladiator's Felweave Handguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148377)),	-- Fierce Gladiator's Felweave Raiment (A)
-										un(ELITE_PVP_REQUIREMENT, i(148369)),	-- Fierce Gladiator's Felweave Treads (A)
-										un(ELITE_PVP_REQUIREMENT, i(148375)),	-- Fierce Gladiator's Felweave Trousers (A)
+										elitepvp(i(148379)),	-- Fierce Gladiator's Felweave Amice (A)
+										elitepvp(i(148383)),	-- Fierce Gladiator's Felweave Bracers (A)
+										elitepvp(i(148175)),	-- Fierce Gladiator's Felweave Cloak (A)
+										elitepvp(i(148381)),	-- Fierce Gladiator's Felweave Cord (A)
+										elitepvp(i(148373)),	-- Fierce Gladiator's Felweave Cowl (A)
+										elitepvp(i(148371)),	-- Fierce Gladiator's Felweave Handguards (A)
+										elitepvp(i(148377)),	-- Fierce Gladiator's Felweave Raiment (A)
+										elitepvp(i(148369)),	-- Fierce Gladiator's Felweave Treads (A)
+										elitepvp(i(148375)),	-- Fierce Gladiator's Felweave Trousers (A)
 									},
 								}),
 							}),
@@ -2791,15 +2791,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 1	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148177)),	-- Fierce Gladiator's Cloak of Battle (A)
-										un(ELITE_PVP_REQUIREMENT, i(148385)),	-- Fierce Gladiator's Plate Chestpiece (A)
-										un(ELITE_PVP_REQUIREMENT, i(148389)),	-- Fierce Gladiator's Plate Gauntlets (A)
-										un(ELITE_PVP_REQUIREMENT, i(148397)),	-- Fierce Gladiator's Plate Girdle (A)
-										un(ELITE_PVP_REQUIREMENT, i(148391)),	-- Fierce Gladiator's Plate Helm (A)
-										un(ELITE_PVP_REQUIREMENT, i(148393)),	-- Fierce Gladiator's Plate Legguards (A)
-										un(ELITE_PVP_REQUIREMENT, i(148395)),	-- Fierce Gladiator's Plate Shoulders (A)
-										un(ELITE_PVP_REQUIREMENT, i(148387)),	-- Fierce Gladiator's Plate Warboots (A)
-										un(ELITE_PVP_REQUIREMENT, i(148399)),	-- Fierce Gladiator's Plate Wristplates (A)
+										elitepvp(i(148177)),	-- Fierce Gladiator's Cloak of Battle (A)
+										elitepvp(i(148385)),	-- Fierce Gladiator's Plate Chestpiece (A)
+										elitepvp(i(148389)),	-- Fierce Gladiator's Plate Gauntlets (A)
+										elitepvp(i(148397)),	-- Fierce Gladiator's Plate Girdle (A)
+										elitepvp(i(148391)),	-- Fierce Gladiator's Plate Helm (A)
+										elitepvp(i(148393)),	-- Fierce Gladiator's Plate Legguards (A)
+										elitepvp(i(148395)),	-- Fierce Gladiator's Plate Shoulders (A)
+										elitepvp(i(148387)),	-- Fierce Gladiator's Plate Warboots (A)
+										elitepvp(i(148399)),	-- Fierce Gladiator's Plate Wristplates (A)
 									},
 								}),
 							}),
@@ -5157,19 +5157,19 @@ root(ROOTS.Zones, {
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+						elitepvp(i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 					--	i(142380),	-- Dutiful Gruntling (PET!)
 					--	i(139776),	-- Horde Fanatic (PET!)
-						un(ELITE_PVP_REQUIREMENT, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147363)),	-- Ferocious Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149442)),	-- Fierce Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149450)),	-- Demonic Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149452)),	-- Demonic Gladiator's Cloak [Elite Rating]
+						elitepvp(i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
+						elitepvp(i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]
+						elitepvp(i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+						elitepvp(i(147363)),	-- Ferocious Gladiator's Cloak [Elite Rating]
+						elitepvp(i(149442)),	-- Fierce Gladiator's Tabard [Elite Rating]
+						elitepvp(i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
+						elitepvp(i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
+						elitepvp(i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
+						elitepvp(i(149450)),	-- Demonic Gladiator's Tabard [Elite Rating]
+						elitepvp(i(149452)),	-- Demonic Gladiator's Cloak [Elite Rating]
 						n(PVP_ELITE, {	-- Season1+Season2
 							cl(DEATHKNIGHT, {
 								i(146221, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (H)
@@ -5180,15 +5180,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(136156)),	-- Vindictive Gladiator's Dreadplate Chestpiece (H)
-										un(ELITE_PVP_REQUIREMENT, i(136158)),	-- Vindictive Gladiator's Dreadplate Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(136162)),	-- Vindictive Gladiator's Dreadplate Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(136159)),	-- Vindictive Gladiator's Dreadplate Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136160)),	-- Vindictive Gladiator's Dreadplate Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136157)),	-- Vindictive Gladiator's Dreadplate Sabatons (H)
-										un(ELITE_PVP_REQUIREMENT, i(136161)),	-- Vindictive Gladiator's Dreadplate Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136163)),	-- Vindictive Gladiator's Dreadplate Wristplates (H)
+										elitepvp(i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
+										elitepvp(i(136156)),	-- Vindictive Gladiator's Dreadplate Chestpiece (H)
+										elitepvp(i(136158)),	-- Vindictive Gladiator's Dreadplate Gauntlets (H)
+										elitepvp(i(136162)),	-- Vindictive Gladiator's Dreadplate Girdle (H)
+										elitepvp(i(136159)),	-- Vindictive Gladiator's Dreadplate Helm (H)
+										elitepvp(i(136160)),	-- Vindictive Gladiator's Dreadplate Legguards (H)
+										elitepvp(i(136157)),	-- Vindictive Gladiator's Dreadplate Sabatons (H)
+										elitepvp(i(136161)),	-- Vindictive Gladiator's Dreadplate Shoulders (H)
+										elitepvp(i(136163)),	-- Vindictive Gladiator's Dreadplate Wristplates (H)
 									},
 								}),
 							}),
@@ -5201,15 +5201,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136896)),	-- Vindictive Gladiator's Demonthread Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(136325)),	-- Vindictive Gladiator's Felskin Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(136319)),	-- Vindictive Gladiator's Felskin Boots (H)
-										un(ELITE_PVP_REQUIREMENT, i(136320)),	-- Vindictive Gladiator's Felskin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(136321)),	-- Vindictive Gladiator's Felskin Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136322)),	-- Vindictive Gladiator's Felskin Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136324)),	-- Vindictive Gladiator's Felskin Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136323)),	-- Vindictive Gladiator's Felskin Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(136326)),	-- Vindictive Gladiator's Felskin Wristguards (H)
+										elitepvp(i(136896)),	-- Vindictive Gladiator's Demonthread Cloak (H)
+										elitepvp(i(136325)),	-- Vindictive Gladiator's Felskin Belt (H)
+										elitepvp(i(136319)),	-- Vindictive Gladiator's Felskin Boots (H)
+										elitepvp(i(136320)),	-- Vindictive Gladiator's Felskin Gloves (H)
+										elitepvp(i(136321)),	-- Vindictive Gladiator's Felskin Helm (H)
+										elitepvp(i(136322)),	-- Vindictive Gladiator's Felskin Legguards (H)
+										elitepvp(i(136324)),	-- Vindictive Gladiator's Felskin Spaulders (H)
+										elitepvp(i(136323)),	-- Vindictive Gladiator's Felskin Tunic (H)
+										elitepvp(i(136326)),	-- Vindictive Gladiator's Felskin Wristguards (H)
 									},
 								}),
 							}),
@@ -5222,15 +5222,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136170)),	-- Vindictive Gladiator's Dragonhide Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(136248)),	-- Vindictive Gladiator's Dragonhide Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(136165)),	-- Vindictive Gladiator's Dragonhide Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(136166)),	-- Vindictive Gladiator's Dragonhide Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136167)),	-- Vindictive Gladiator's Dragonhide Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136164)),	-- Vindictive Gladiator's Dragonhide Moccasins (H)
-										un(ELITE_PVP_REQUIREMENT, i(136168)),	-- Vindictive Gladiator's Dragonhide Robe (H)
-										un(ELITE_PVP_REQUIREMENT, i(136169)),	-- Vindictive Gladiator's Dragonhide Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136171)),	-- Vindictive Gladiator's Dragonhide Wristguards (H)
+										elitepvp(i(136170)),	-- Vindictive Gladiator's Dragonhide Belt (H)
+										elitepvp(i(136248)),	-- Vindictive Gladiator's Dragonhide Cloak (H)
+										elitepvp(i(136165)),	-- Vindictive Gladiator's Dragonhide Gloves (H)
+										elitepvp(i(136166)),	-- Vindictive Gladiator's Dragonhide Helm (H)
+										elitepvp(i(136167)),	-- Vindictive Gladiator's Dragonhide Legguards (H)
+										elitepvp(i(136164)),	-- Vindictive Gladiator's Dragonhide Moccasins (H)
+										elitepvp(i(136168)),	-- Vindictive Gladiator's Dragonhide Robe (H)
+										elitepvp(i(136169)),	-- Vindictive Gladiator's Dragonhide Spaulders (H)
+										elitepvp(i(136171)),	-- Vindictive Gladiator's Dragonhide Wristguards (H)
 									},
 								}),
 							}),
@@ -5243,15 +5243,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136179)),	-- Vindictive Gladiator's Chain Armband (H)
-										un(ELITE_PVP_REQUIREMENT, i(136172)),	-- Vindictive Gladiator's Chain Armor (H)
-										un(ELITE_PVP_REQUIREMENT, i(136178)),	-- Vindictive Gladiator's Chain Clasp (H)
-										un(ELITE_PVP_REQUIREMENT, i(136174)),	-- Vindictive Gladiator's Chain Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(136175)),	-- Vindictive Gladiator's Chain Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136176)),	-- Vindictive Gladiator's Chain Leggings (H)
-										un(ELITE_PVP_REQUIREMENT, i(136177)),	-- Vindictive Gladiator's Chain Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136173)),	-- Vindictive Gladiator's Chain Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(136252)),	-- Vindictive Gladiator's Drape of the Tracker (H)
+										elitepvp(i(136179)),	-- Vindictive Gladiator's Chain Armband (H)
+										elitepvp(i(136172)),	-- Vindictive Gladiator's Chain Armor (H)
+										elitepvp(i(136178)),	-- Vindictive Gladiator's Chain Clasp (H)
+										elitepvp(i(136174)),	-- Vindictive Gladiator's Chain Gauntlets (H)
+										elitepvp(i(136175)),	-- Vindictive Gladiator's Chain Helm (H)
+										elitepvp(i(136176)),	-- Vindictive Gladiator's Chain Leggings (H)
+										elitepvp(i(136177)),	-- Vindictive Gladiator's Chain Spaulders (H)
+										elitepvp(i(136173)),	-- Vindictive Gladiator's Chain Treads (H)
+										elitepvp(i(136252)),	-- Vindictive Gladiator's Drape of the Tracker (H)
 									},
 								}),
 							}),
@@ -5264,15 +5264,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136185)),	-- Vindictive Gladiator's Silk Amice (H)
-										un(ELITE_PVP_REQUIREMENT, i(136187)),	-- Vindictive Gladiator's Silk Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(136186)),	-- Vindictive Gladiator's Silk Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(136182)),	-- Vindictive Gladiator's Silk Cowl (H)
-										un(ELITE_PVP_REQUIREMENT, i(136181)),	-- Vindictive Gladiator's Silk Handguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136184)),	-- Vindictive Gladiator's Silk Robe (H)
-										un(ELITE_PVP_REQUIREMENT, i(136180)),	-- Vindictive Gladiator's Silk Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(136183)),	-- Vindictive Gladiator's Silk Trousers (H)
-										un(ELITE_PVP_REQUIREMENT, i(136245)),	-- Vindictive Gladiator's Silken Shawl (H)
+										elitepvp(i(136185)),	-- Vindictive Gladiator's Silk Amice (H)
+										elitepvp(i(136187)),	-- Vindictive Gladiator's Silk Bracers (H)
+										elitepvp(i(136186)),	-- Vindictive Gladiator's Silk Cord (H)
+										elitepvp(i(136182)),	-- Vindictive Gladiator's Silk Cowl (H)
+										elitepvp(i(136181)),	-- Vindictive Gladiator's Silk Handguards (H)
+										elitepvp(i(136184)),	-- Vindictive Gladiator's Silk Robe (H)
+										elitepvp(i(136180)),	-- Vindictive Gladiator's Silk Treads (H)
+										elitepvp(i(136183)),	-- Vindictive Gladiator's Silk Trousers (H)
+										elitepvp(i(136245)),	-- Vindictive Gladiator's Silken Shawl (H)
 									},
 								}),
 							}),
@@ -5285,15 +5285,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136194)),	-- Vindictive Gladiator's Ironskin Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(136249)),	-- Vindictive Gladiator's Ironskin Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(136189)),	-- Vindictive Gladiator's Ironskin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(136190)),	-- Vindictive Gladiator's Ironskin Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136191)),	-- Vindictive Gladiator's Ironskin Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136188)),	-- Vindictive Gladiator's Ironskin Slippers (H)
-										un(ELITE_PVP_REQUIREMENT, i(136192)),	-- Vindictive Gladiator's Ironskin Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136193)),	-- Vindictive Gladiator's Ironskin Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(136195)),	-- Vindictive Gladiator's Ironskin Wristguards (H)
+										elitepvp(i(136194)),	-- Vindictive Gladiator's Ironskin Belt (H)
+										elitepvp(i(136249)),	-- Vindictive Gladiator's Ironskin Cloak (H)
+										elitepvp(i(136189)),	-- Vindictive Gladiator's Ironskin Gloves (H)
+										elitepvp(i(136190)),	-- Vindictive Gladiator's Ironskin Helm (H)
+										elitepvp(i(136191)),	-- Vindictive Gladiator's Ironskin Legguards (H)
+										elitepvp(i(136188)),	-- Vindictive Gladiator's Ironskin Slippers (H)
+										elitepvp(i(136192)),	-- Vindictive Gladiator's Ironskin Spaulders (H)
+										elitepvp(i(136193)),	-- Vindictive Gladiator's Ironskin Tunic (H)
+										elitepvp(i(136195)),	-- Vindictive Gladiator's Ironskin Wristguards (H)
 									},
 								}),
 							}),
@@ -5306,15 +5306,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136253)),	-- Vindictive Gladiator's Greatcloak of Faith (H)
-										un(ELITE_PVP_REQUIREMENT, i(136196)),	-- Vindictive Gladiator's Scaled Chestpiece (H)
-										un(ELITE_PVP_REQUIREMENT, i(136198)),	-- Vindictive Gladiator's Scaled Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(136202)),	-- Vindictive Gladiator's Scaled Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(136199)),	-- Vindictive Gladiator's Scaled Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136200)),	-- Vindictive Gladiator's Scaled Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136197)),	-- Vindictive Gladiator's Scaled Sabatons (H)
-										un(ELITE_PVP_REQUIREMENT, i(136201)),	-- Vindictive Gladiator's Scaled Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136203)),	-- Vindictive Gladiator's Scaled Wristplates (H)
+										elitepvp(i(136253)),	-- Vindictive Gladiator's Greatcloak of Faith (H)
+										elitepvp(i(136196)),	-- Vindictive Gladiator's Scaled Chestpiece (H)
+										elitepvp(i(136198)),	-- Vindictive Gladiator's Scaled Gauntlets (H)
+										elitepvp(i(136202)),	-- Vindictive Gladiator's Scaled Girdle (H)
+										elitepvp(i(136199)),	-- Vindictive Gladiator's Scaled Helm (H)
+										elitepvp(i(136200)),	-- Vindictive Gladiator's Scaled Legguards (H)
+										elitepvp(i(136197)),	-- Vindictive Gladiator's Scaled Sabatons (H)
+										elitepvp(i(136201)),	-- Vindictive Gladiator's Scaled Shoulders (H)
+										elitepvp(i(136203)),	-- Vindictive Gladiator's Scaled Wristplates (H)
 									},
 								}),
 							}),
@@ -5327,15 +5327,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136876)),	-- Vindictive Gladiator's Drape of Piety (H)
-										un(ELITE_PVP_REQUIREMENT, i(136211)),	-- Vindictive Gladiator's Satin Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(136210)),	-- Vindictive Gladiator's Satin Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(136205)),	-- Vindictive Gladiator's Satin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(136206)),	-- Vindictive Gladiator's Satin Hood (H)
-										un(ELITE_PVP_REQUIREMENT, i(136207)),	-- Vindictive Gladiator's Satin Leggings (H)
-										un(ELITE_PVP_REQUIREMENT, i(136209)),	-- Vindictive Gladiator's Satin Mantle (H)
-										un(ELITE_PVP_REQUIREMENT, i(136208)),	-- Vindictive Gladiator's Satin Robe (H)
-										un(ELITE_PVP_REQUIREMENT, i(136204)),	-- Vindictive Gladiator's Satin Treads (H)
+										elitepvp(i(136876)),	-- Vindictive Gladiator's Drape of Piety (H)
+										elitepvp(i(136211)),	-- Vindictive Gladiator's Satin Bracers (H)
+										elitepvp(i(136210)),	-- Vindictive Gladiator's Satin Cord (H)
+										elitepvp(i(136205)),	-- Vindictive Gladiator's Satin Gloves (H)
+										elitepvp(i(136206)),	-- Vindictive Gladiator's Satin Hood (H)
+										elitepvp(i(136207)),	-- Vindictive Gladiator's Satin Leggings (H)
+										elitepvp(i(136209)),	-- Vindictive Gladiator's Satin Mantle (H)
+										elitepvp(i(136208)),	-- Vindictive Gladiator's Satin Robe (H)
+										elitepvp(i(136204)),	-- Vindictive Gladiator's Satin Treads (H)
 									},
 								}),
 							}),
@@ -5348,15 +5348,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136218)),	-- Vindictive Gladiator's Leather Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(136214)),	-- Vindictive Gladiator's Leather Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(136215)),	-- Vindictive Gladiator's Leather Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136216)),	-- Vindictive Gladiator's Leather Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136213)),	-- Vindictive Gladiator's Leather Slippers (H)
-										un(ELITE_PVP_REQUIREMENT, i(136217)),	-- Vindictive Gladiator's Leather Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136212)),	-- Vindictive Gladiator's Leather Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(136219)),	-- Vindictive Gladiator's Leather Wristguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136877)),	-- Vindictive Gladiator's Shadowcape (H)
+										elitepvp(i(136218)),	-- Vindictive Gladiator's Leather Belt (H)
+										elitepvp(i(136214)),	-- Vindictive Gladiator's Leather Gloves (H)
+										elitepvp(i(136215)),	-- Vindictive Gladiator's Leather Helm (H)
+										elitepvp(i(136216)),	-- Vindictive Gladiator's Leather Legguards (H)
+										elitepvp(i(136213)),	-- Vindictive Gladiator's Leather Slippers (H)
+										elitepvp(i(136217)),	-- Vindictive Gladiator's Leather Spaulders (H)
+										elitepvp(i(136212)),	-- Vindictive Gladiator's Leather Tunic (H)
+										elitepvp(i(136219)),	-- Vindictive Gladiator's Leather Wristguards (H)
+										elitepvp(i(136877)),	-- Vindictive Gladiator's Shadowcape (H)
 									},
 								}),
 							}),
@@ -5369,15 +5369,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136227)),	-- Vindictive Gladiator's Ringmail Armband (H)
-										un(ELITE_PVP_REQUIREMENT, i(136220)),	-- Vindictive Gladiator's Ringmail Armor (H)
-										un(ELITE_PVP_REQUIREMENT, i(136221)),	-- Vindictive Gladiator's Ringmail Boots (H)
-										un(ELITE_PVP_REQUIREMENT, i(136226)),	-- Vindictive Gladiator's Ringmail Clasp (H)
-										un(ELITE_PVP_REQUIREMENT, i(136222)),	-- Vindictive Gladiator's Ringmail Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(136223)),	-- Vindictive Gladiator's Ringmail Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136224)),	-- Vindictive Gladiator's Ringmail Kilt (H)
-										un(ELITE_PVP_REQUIREMENT, i(136225)),	-- Vindictive Gladiator's Ringmail Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136878)),	-- Vindictive Gladiator's Totemic Cloak (H)
+										elitepvp(i(136227)),	-- Vindictive Gladiator's Ringmail Armband (H)
+										elitepvp(i(136220)),	-- Vindictive Gladiator's Ringmail Armor (H)
+										elitepvp(i(136221)),	-- Vindictive Gladiator's Ringmail Boots (H)
+										elitepvp(i(136226)),	-- Vindictive Gladiator's Ringmail Clasp (H)
+										elitepvp(i(136222)),	-- Vindictive Gladiator's Ringmail Gauntlets (H)
+										elitepvp(i(136223)),	-- Vindictive Gladiator's Ringmail Helm (H)
+										elitepvp(i(136224)),	-- Vindictive Gladiator's Ringmail Kilt (H)
+										elitepvp(i(136225)),	-- Vindictive Gladiator's Ringmail Spaulders (H)
+										elitepvp(i(136878)),	-- Vindictive Gladiator's Totemic Cloak (H)
 									},
 								}),
 							}),
@@ -5390,15 +5390,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136233)),	-- Vindictive Gladiator's Felweave Amice (H)
-										un(ELITE_PVP_REQUIREMENT, i(136235)),	-- Vindictive Gladiator's Felweave Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(136884)),	-- Vindictive Gladiator's Felweave Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(136234)),	-- Vindictive Gladiator's Felweave Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(136230)),	-- Vindictive Gladiator's Felweave Cowl (H)
-										un(ELITE_PVP_REQUIREMENT, i(136229)),	-- Vindictive Gladiator's Felweave Handguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136232)),	-- Vindictive Gladiator's Felweave Raiment (H)
-										un(ELITE_PVP_REQUIREMENT, i(136228)),	-- Vindictive Gladiator's Felweave Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(136231)),	-- Vindictive Gladiator's Felweave Trousers (H)
+										elitepvp(i(136233)),	-- Vindictive Gladiator's Felweave Amice (H)
+										elitepvp(i(136235)),	-- Vindictive Gladiator's Felweave Bracers (H)
+										elitepvp(i(136884)),	-- Vindictive Gladiator's Felweave Cloak (H)
+										elitepvp(i(136234)),	-- Vindictive Gladiator's Felweave Cord (H)
+										elitepvp(i(136230)),	-- Vindictive Gladiator's Felweave Cowl (H)
+										elitepvp(i(136229)),	-- Vindictive Gladiator's Felweave Handguards (H)
+										elitepvp(i(136232)),	-- Vindictive Gladiator's Felweave Raiment (H)
+										elitepvp(i(136228)),	-- Vindictive Gladiator's Felweave Treads (H)
+										elitepvp(i(136231)),	-- Vindictive Gladiator's Felweave Trousers (H)
 									},
 								}),
 							}),
@@ -5411,15 +5411,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 2
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(136890)),	-- Vindictive Gladiator's Cloak of Battle (H)
-										un(ELITE_PVP_REQUIREMENT, i(136236)),	-- Vindictive Gladiator's Plate Chestpiece (H)
-										un(ELITE_PVP_REQUIREMENT, i(136238)),	-- Vindictive Gladiator's Plate Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(136242)),	-- Vindictive Gladiator's Plate Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(136239)),	-- Vindictive Gladiator's Plate Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(136240)),	-- Vindictive Gladiator's Plate Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(136241)),	-- Vindictive Gladiator's Plate Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(136237)),	-- Vindictive Gladiator's Plate Warboots (H)
-										un(ELITE_PVP_REQUIREMENT, i(136243)),	-- Vindictive Gladiator's Plate Wristplates (H)
+										elitepvp(i(136890)),	-- Vindictive Gladiator's Cloak of Battle (H)
+										elitepvp(i(136236)),	-- Vindictive Gladiator's Plate Chestpiece (H)
+										elitepvp(i(136238)),	-- Vindictive Gladiator's Plate Gauntlets (H)
+										elitepvp(i(136242)),	-- Vindictive Gladiator's Plate Girdle (H)
+										elitepvp(i(136239)),	-- Vindictive Gladiator's Plate Helm (H)
+										elitepvp(i(136240)),	-- Vindictive Gladiator's Plate Legguards (H)
+										elitepvp(i(136241)),	-- Vindictive Gladiator's Plate Shoulders (H)
+										elitepvp(i(136237)),	-- Vindictive Gladiator's Plate Warboots (H)
+										elitepvp(i(136243)),	-- Vindictive Gladiator's Plate Wristplates (H)
 									},
 								}),
 							}),
@@ -5434,15 +5434,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 6	},	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144781)),	-- Cruel Gladiator's Dreadcloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(144805)),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
-										un(ELITE_PVP_REQUIREMENT, i(144809)),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(144817)),	-- Cruel Gladiator's Dreadplate Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(144811)),	-- Cruel Gladiator's Dreadplate Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144813)),	-- Cruel Gladiator's Dreadplate Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144807)),	-- Cruel Gladiator's Dreadplate Sabatons (H)
-										un(ELITE_PVP_REQUIREMENT, i(144815)),	-- Cruel Gladiator's Dreadplate Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144819)),	-- Cruel Gladiator's Dreadplate Wristplates (H)
+										elitepvp(i(144781)),	-- Cruel Gladiator's Dreadcloak (H)
+										elitepvp(i(144805)),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
+										elitepvp(i(144809)),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
+										elitepvp(i(144817)),	-- Cruel Gladiator's Dreadplate Girdle (H)
+										elitepvp(i(144811)),	-- Cruel Gladiator's Dreadplate Helm (H)
+										elitepvp(i(144813)),	-- Cruel Gladiator's Dreadplate Legguards (H)
+										elitepvp(i(144807)),	-- Cruel Gladiator's Dreadplate Sabatons (H)
+										elitepvp(i(144815)),	-- Cruel Gladiator's Dreadplate Shoulders (H)
+										elitepvp(i(144819)),	-- Cruel Gladiator's Dreadplate Wristplates (H)
 									},
 								}),
 							}),
@@ -5455,15 +5455,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144783)),	-- Cruel Gladiator's Demonthread Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(144833)),	-- Cruel Gladiator's Felskin Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(144823)),	-- Cruel Gladiator's Felskin Boots (H)
-										un(ELITE_PVP_REQUIREMENT, i(144825)),	-- Cruel Gladiator's Felskin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(144827)),	-- Cruel Gladiator's Felskin Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144829)),	-- Cruel Gladiator's Felskin Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144831)),	-- Cruel Gladiator's Felskin Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144821)),	-- Cruel Gladiator's Felskin Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(144835)),	-- Cruel Gladiator's Felskin Wristguards (H)
+										elitepvp(i(144783)),	-- Cruel Gladiator's Demonthread Cloak (H)
+										elitepvp(i(144833)),	-- Cruel Gladiator's Felskin Belt (H)
+										elitepvp(i(144823)),	-- Cruel Gladiator's Felskin Boots (H)
+										elitepvp(i(144825)),	-- Cruel Gladiator's Felskin Gloves (H)
+										elitepvp(i(144827)),	-- Cruel Gladiator's Felskin Helm (H)
+										elitepvp(i(144829)),	-- Cruel Gladiator's Felskin Legguards (H)
+										elitepvp(i(144831)),	-- Cruel Gladiator's Felskin Spaulders (H)
+										elitepvp(i(144821)),	-- Cruel Gladiator's Felskin Tunic (H)
+										elitepvp(i(144835)),	-- Cruel Gladiator's Felskin Wristguards (H)
 									},
 								}),
 							}),
@@ -5476,15 +5476,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144849)),	-- Cruel Gladiator's Dragonhide Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(144785)),	-- Cruel Gladiator's Dragonhide Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(144841)),	-- Cruel Gladiator's Dragonhide Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(144843)),	-- Cruel Gladiator's Dragonhide Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144845)),	-- Cruel Gladiator's Dragonhide Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144839)),	-- Cruel Gladiator's Dragonhide Moccasins (H)
-										un(ELITE_PVP_REQUIREMENT, i(144837)),	-- Cruel Gladiator's Dragonhide Robe (H)
-										un(ELITE_PVP_REQUIREMENT, i(144847)),	-- Cruel Gladiator's Dragonhide Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144851)),	-- Cruel Gladiator's Dragonhide Wristguards (H)
+										elitepvp(i(144849)),	-- Cruel Gladiator's Dragonhide Belt (H)
+										elitepvp(i(144785)),	-- Cruel Gladiator's Dragonhide Cloak (H)
+										elitepvp(i(144841)),	-- Cruel Gladiator's Dragonhide Gloves (H)
+										elitepvp(i(144843)),	-- Cruel Gladiator's Dragonhide Helm (H)
+										elitepvp(i(144845)),	-- Cruel Gladiator's Dragonhide Legguards (H)
+										elitepvp(i(144839)),	-- Cruel Gladiator's Dragonhide Moccasins (H)
+										elitepvp(i(144837)),	-- Cruel Gladiator's Dragonhide Robe (H)
+										elitepvp(i(144847)),	-- Cruel Gladiator's Dragonhide Spaulders (H)
+										elitepvp(i(144851)),	-- Cruel Gladiator's Dragonhide Wristguards (H)
 									},
 								}),
 							}),
@@ -5497,15 +5497,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144867)),	-- Cruel Gladiator's Chain Armband (H)
-										un(ELITE_PVP_REQUIREMENT, i(144853)),	-- Cruel Gladiator's Chain Armor (H)
-										un(ELITE_PVP_REQUIREMENT, i(144865)),	-- Cruel Gladiator's Chain Clasp (H)
-										un(ELITE_PVP_REQUIREMENT, i(144857)),	-- Cruel Gladiator's Chain Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(144859)),	-- Cruel Gladiator's Chain Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144861)),	-- Cruel Gladiator's Chain Leggings (H)
-										un(ELITE_PVP_REQUIREMENT, i(144863)),	-- Cruel Gladiator's Chain Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144855)),	-- Cruel Gladiator's Chain Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(144787)),	-- Cruel Gladiator's Drape of the Tracker (H)
+										elitepvp(i(144867)),	-- Cruel Gladiator's Chain Armband (H)
+										elitepvp(i(144853)),	-- Cruel Gladiator's Chain Armor (H)
+										elitepvp(i(144865)),	-- Cruel Gladiator's Chain Clasp (H)
+										elitepvp(i(144857)),	-- Cruel Gladiator's Chain Gauntlets (H)
+										elitepvp(i(144859)),	-- Cruel Gladiator's Chain Helm (H)
+										elitepvp(i(144861)),	-- Cruel Gladiator's Chain Leggings (H)
+										elitepvp(i(144863)),	-- Cruel Gladiator's Chain Spaulders (H)
+										elitepvp(i(144855)),	-- Cruel Gladiator's Chain Treads (H)
+										elitepvp(i(144787)),	-- Cruel Gladiator's Drape of the Tracker (H)
 									},
 								}),
 							}),
@@ -5518,15 +5518,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 8	},	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144879)),	-- Cruel Gladiator's Silk Amice (H)
-										un(ELITE_PVP_REQUIREMENT, i(144883)),	-- Cruel Gladiator's Silk Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(144881)),	-- Cruel Gladiator's Silk Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(144873)),	-- Cruel Gladiator's Silk Cowl (H)
-										un(ELITE_PVP_REQUIREMENT, i(144871)),	-- Cruel Gladiator's Silk Handguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144877)),	-- Cruel Gladiator's Silk Robe (H)
-										un(ELITE_PVP_REQUIREMENT, i(144869)),	-- Cruel Gladiator's Silk Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(144875)),	-- Cruel Gladiator's Silk Trousers (H)
-										un(ELITE_PVP_REQUIREMENT, i(144789)),	-- Cruel Gladiator's Silken Shawl (H)
+										elitepvp(i(144879)),	-- Cruel Gladiator's Silk Amice (H)
+										elitepvp(i(144883)),	-- Cruel Gladiator's Silk Bracers (H)
+										elitepvp(i(144881)),	-- Cruel Gladiator's Silk Cord (H)
+										elitepvp(i(144873)),	-- Cruel Gladiator's Silk Cowl (H)
+										elitepvp(i(144871)),	-- Cruel Gladiator's Silk Handguards (H)
+										elitepvp(i(144877)),	-- Cruel Gladiator's Silk Robe (H)
+										elitepvp(i(144869)),	-- Cruel Gladiator's Silk Treads (H)
+										elitepvp(i(144875)),	-- Cruel Gladiator's Silk Trousers (H)
+										elitepvp(i(144789)),	-- Cruel Gladiator's Silken Shawl (H)
 									},
 								}),
 							}),
@@ -5539,15 +5539,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144897)),	-- Cruel Gladiator's Ironskin Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(144791)),	-- Cruel Gladiator's Ironskin Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(144887)),	-- Cruel Gladiator's Ironskin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(144889)),	-- Cruel Gladiator's Ironskin Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144891)),	-- Cruel Gladiator's Ironskin Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144885)),	-- Cruel Gladiator's Ironskin Slippers (H)
-										un(ELITE_PVP_REQUIREMENT, i(144893)),	-- Cruel Gladiator's Ironskin Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144895)),	-- Cruel Gladiator's Ironskin Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(144899)),	-- Cruel Gladiator's Ironskin Wristguards (H)
+										elitepvp(i(144897)),	-- Cruel Gladiator's Ironskin Belt (H)
+										elitepvp(i(144791)),	-- Cruel Gladiator's Ironskin Cloak (H)
+										elitepvp(i(144887)),	-- Cruel Gladiator's Ironskin Gloves (H)
+										elitepvp(i(144889)),	-- Cruel Gladiator's Ironskin Helm (H)
+										elitepvp(i(144891)),	-- Cruel Gladiator's Ironskin Legguards (H)
+										elitepvp(i(144885)),	-- Cruel Gladiator's Ironskin Slippers (H)
+										elitepvp(i(144893)),	-- Cruel Gladiator's Ironskin Spaulders (H)
+										elitepvp(i(144895)),	-- Cruel Gladiator's Ironskin Tunic (H)
+										elitepvp(i(144899)),	-- Cruel Gladiator's Ironskin Wristguards (H)
 									},
 								}),
 							}),
@@ -5560,15 +5560,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 2	},	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144793)),	-- Cruel Gladiator's Greatcloak of Faith (H)
-										un(ELITE_PVP_REQUIREMENT, i(144907)),	-- Cruel Gladiator's Scaled Breastplate (H)
-										un(ELITE_PVP_REQUIREMENT, i(144911)),	-- Cruel Gladiator's Scaled Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(144919)),	-- Cruel Gladiator's Scaled Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(144913)),	-- Cruel Gladiator's Scaled Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144915)),	-- Cruel Gladiator's Scaled Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144909)),	-- Cruel Gladiator's Scaled Sabatons (H)
-										un(ELITE_PVP_REQUIREMENT, i(144917)),	-- Cruel Gladiator's Scaled Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144921)),	-- Cruel Gladiator's Scaled Wristplates (H)
+										elitepvp(i(144793)),	-- Cruel Gladiator's Greatcloak of Faith (H)
+										elitepvp(i(144907)),	-- Cruel Gladiator's Scaled Breastplate (H)
+										elitepvp(i(144911)),	-- Cruel Gladiator's Scaled Gauntlets (H)
+										elitepvp(i(144919)),	-- Cruel Gladiator's Scaled Girdle (H)
+										elitepvp(i(144913)),	-- Cruel Gladiator's Scaled Helm (H)
+										elitepvp(i(144915)),	-- Cruel Gladiator's Scaled Legguards (H)
+										elitepvp(i(144909)),	-- Cruel Gladiator's Scaled Sabatons (H)
+										elitepvp(i(144917)),	-- Cruel Gladiator's Scaled Shoulders (H)
+										elitepvp(i(144921)),	-- Cruel Gladiator's Scaled Wristplates (H)
 									},
 								}),
 							}),
@@ -5581,15 +5581,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 5	},	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144795)),	-- Cruel Gladiator's Drape of Piety (H)
-										un(ELITE_PVP_REQUIREMENT, i(144937)),	-- Cruel Gladiator's Satin Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(144935)),	-- Cruel Gladiator's Satin Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(144925)),	-- Cruel Gladiator's Satin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(144927)),	-- Cruel Gladiator's Satin Hood (H)
-										un(ELITE_PVP_REQUIREMENT, i(144929)),	-- Cruel Gladiator's Satin Leggings (H)
-										un(ELITE_PVP_REQUIREMENT, i(144933)),	-- Cruel Gladiator's Satin Mantle (H)
-										un(ELITE_PVP_REQUIREMENT, i(144931)),	-- Cruel Gladiator's Satin Robe (H)
-										un(ELITE_PVP_REQUIREMENT, i(144923)),	-- Cruel Gladiator's Satin Treads (H)
+										elitepvp(i(144795)),	-- Cruel Gladiator's Drape of Piety (H)
+										elitepvp(i(144937)),	-- Cruel Gladiator's Satin Bracers (H)
+										elitepvp(i(144935)),	-- Cruel Gladiator's Satin Cord (H)
+										elitepvp(i(144925)),	-- Cruel Gladiator's Satin Gloves (H)
+										elitepvp(i(144927)),	-- Cruel Gladiator's Satin Hood (H)
+										elitepvp(i(144929)),	-- Cruel Gladiator's Satin Leggings (H)
+										elitepvp(i(144933)),	-- Cruel Gladiator's Satin Mantle (H)
+										elitepvp(i(144931)),	-- Cruel Gladiator's Satin Robe (H)
+										elitepvp(i(144923)),	-- Cruel Gladiator's Satin Treads (H)
 									},
 								}),
 							}),
@@ -5602,15 +5602,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 4	},	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144957)),	-- Cruel Gladiator's Leather Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(144949)),	-- Cruel Gladiator's Leather Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(144951)),	-- Cruel Gladiator's Leather Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144953)),	-- Cruel Gladiator's Leather Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144947)),	-- Cruel Gladiator's Leather Slippers (H)
-										un(ELITE_PVP_REQUIREMENT, i(144955)),	-- Cruel Gladiator's Leather Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144945)),	-- Cruel Gladiator's Leather Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(144959)),	-- Cruel Gladiator's Leather Wristguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(144797)),	-- Cruel Gladiator's Shadowcape (H)
+										elitepvp(i(144957)),	-- Cruel Gladiator's Leather Belt (H)
+										elitepvp(i(144949)),	-- Cruel Gladiator's Leather Gloves (H)
+										elitepvp(i(144951)),	-- Cruel Gladiator's Leather Helm (H)
+										elitepvp(i(144953)),	-- Cruel Gladiator's Leather Legguards (H)
+										elitepvp(i(144947)),	-- Cruel Gladiator's Leather Slippers (H)
+										elitepvp(i(144955)),	-- Cruel Gladiator's Leather Spaulders (H)
+										elitepvp(i(144945)),	-- Cruel Gladiator's Leather Tunic (H)
+										elitepvp(i(144959)),	-- Cruel Gladiator's Leather Wristguards (H)
+										elitepvp(i(144797)),	-- Cruel Gladiator's Shadowcape (H)
 									},
 								}),
 							}),
@@ -5623,15 +5623,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144975)),	-- Cruel Gladiator's Ringmail Armband (H)
-										un(ELITE_PVP_REQUIREMENT, i(144961)),	-- Cruel Gladiator's Ringmail Armor (H)
-										un(ELITE_PVP_REQUIREMENT, i(144963)),	-- Cruel Gladiator's Ringmail Boots (H)
-										un(ELITE_PVP_REQUIREMENT, i(144973)),	-- Cruel Gladiator's Ringmail Clasp (H)
-										un(ELITE_PVP_REQUIREMENT, i(144965)),	-- Cruel Gladiator's Ringmail Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(144967)),	-- Cruel Gladiator's Ringmail Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(144969)),	-- Cruel Gladiator's Ringmail Kilt (H)
-										un(ELITE_PVP_REQUIREMENT, i(144971)),	-- Cruel Gladiator's Ringmail Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(144799)),	-- Cruel Gladiator's Totemic Cloak (H)
+										elitepvp(i(144975)),	-- Cruel Gladiator's Ringmail Armband (H)
+										elitepvp(i(144961)),	-- Cruel Gladiator's Ringmail Armor (H)
+										elitepvp(i(144963)),	-- Cruel Gladiator's Ringmail Boots (H)
+										elitepvp(i(144973)),	-- Cruel Gladiator's Ringmail Clasp (H)
+										elitepvp(i(144965)),	-- Cruel Gladiator's Ringmail Gauntlets (H)
+										elitepvp(i(144967)),	-- Cruel Gladiator's Ringmail Helm (H)
+										elitepvp(i(144969)),	-- Cruel Gladiator's Ringmail Kilt (H)
+										elitepvp(i(144971)),	-- Cruel Gladiator's Ringmail Spaulders (H)
+										elitepvp(i(144799)),	-- Cruel Gladiator's Totemic Cloak (H)
 									},
 								}),
 							}),
@@ -5644,15 +5644,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 9	},	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(145005)),	-- Cruel Gladiator's Felweave Amice (H)
-										un(ELITE_PVP_REQUIREMENT, i(145009)),	-- Cruel Gladiator's Felweave Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(144801)),	-- Cruel Gladiator's Felweave Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(145007)),	-- Cruel Gladiator's Felweave Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(144999)),	-- Cruel Gladiator's Felweave Cowl (H)
-										un(ELITE_PVP_REQUIREMENT, i(144997)),	-- Cruel Gladiator's Felweave Handguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(145003)),	-- Cruel Gladiator's Felweave Raiment (H)
-										un(ELITE_PVP_REQUIREMENT, i(144995)),	-- Cruel Gladiator's Felweave Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(145001)),	-- Cruel Gladiator's Felweave Trousers (H)
+										elitepvp(i(145005)),	-- Cruel Gladiator's Felweave Amice (H)
+										elitepvp(i(145009)),	-- Cruel Gladiator's Felweave Bracers (H)
+										elitepvp(i(144801)),	-- Cruel Gladiator's Felweave Cloak (H)
+										elitepvp(i(145007)),	-- Cruel Gladiator's Felweave Cord (H)
+										elitepvp(i(144999)),	-- Cruel Gladiator's Felweave Cowl (H)
+										elitepvp(i(144997)),	-- Cruel Gladiator's Felweave Handguards (H)
+										elitepvp(i(145003)),	-- Cruel Gladiator's Felweave Raiment (H)
+										elitepvp(i(144995)),	-- Cruel Gladiator's Felweave Treads (H)
+										elitepvp(i(145001)),	-- Cruel Gladiator's Felweave Trousers (H)
 									},
 								}),
 							}),
@@ -5665,15 +5665,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 1	},	-- Season 4
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(144803)),	-- Cruel Gladiator's Cloak of Battle (H)
-										un(ELITE_PVP_REQUIREMENT, i(145011)),	-- Cruel Gladiator's Plate Chestpiece (H)
-										un(ELITE_PVP_REQUIREMENT, i(145015)),	-- Cruel Gladiator's Plate Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(145023)),	-- Cruel Gladiator's Plate Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(145017)),	-- Cruel Gladiator's Plate Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(145019)),	-- Cruel Gladiator's Plate Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(145021)),	-- Cruel Gladiator's Plate Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(145013)),	-- Cruel Gladiator's Plate Warboots (H)
-										un(ELITE_PVP_REQUIREMENT, i(145025)),	-- Cruel Gladiator's Plate Wristplates (H)
+										elitepvp(i(144803)),	-- Cruel Gladiator's Cloak of Battle (H)
+										elitepvp(i(145011)),	-- Cruel Gladiator's Plate Chestpiece (H)
+										elitepvp(i(145015)),	-- Cruel Gladiator's Plate Gauntlets (H)
+										elitepvp(i(145023)),	-- Cruel Gladiator's Plate Girdle (H)
+										elitepvp(i(145017)),	-- Cruel Gladiator's Plate Helm (H)
+										elitepvp(i(145019)),	-- Cruel Gladiator's Plate Legguards (H)
+										elitepvp(i(145021)),	-- Cruel Gladiator's Plate Shoulders (H)
+										elitepvp(i(145013)),	-- Cruel Gladiator's Plate Warboots (H)
+										elitepvp(i(145025)),	-- Cruel Gladiator's Plate Wristplates (H)
 									},
 								}),
 							}),
@@ -5689,15 +5689,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148156)),	-- Fierce Gladiator's Dreadcloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(148180)),	-- Fierce Gladiator's Dreadplate Chestpiece (H)
-										un(ELITE_PVP_REQUIREMENT, i(148184)),	-- Fierce Gladiator's Dreadplate Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(148192)),	-- Fierce Gladiator's Dreadplate Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(148186)),	-- Fierce Gladiator's Dreadplate Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148188)),	-- Fierce Gladiator's Dreadplate Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148182)),	-- Fierce Gladiator's Dreadplate Sabatons (H)
-										un(ELITE_PVP_REQUIREMENT, i(148190)),	-- Fierce Gladiator's Dreadplate Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148194)),	-- Fierce Gladiator's Dreadplate Wristplates (H)
+										elitepvp(i(148156)),	-- Fierce Gladiator's Dreadcloak (H)
+										elitepvp(i(148180)),	-- Fierce Gladiator's Dreadplate Chestpiece (H)
+										elitepvp(i(148184)),	-- Fierce Gladiator's Dreadplate Gauntlets (H)
+										elitepvp(i(148192)),	-- Fierce Gladiator's Dreadplate Girdle (H)
+										elitepvp(i(148186)),	-- Fierce Gladiator's Dreadplate Helm (H)
+										elitepvp(i(148188)),	-- Fierce Gladiator's Dreadplate Legguards (H)
+										elitepvp(i(148182)),	-- Fierce Gladiator's Dreadplate Sabatons (H)
+										elitepvp(i(148190)),	-- Fierce Gladiator's Dreadplate Shoulders (H)
+										elitepvp(i(148194)),	-- Fierce Gladiator's Dreadplate Wristplates (H)
 									},
 								}),
 							}),
@@ -5711,15 +5711,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148158)),	-- Fierce Gladiator's Demonthread Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(148208)),	-- Fierce Gladiator's Felskin Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(148198)),	-- Fierce Gladiator's Felskin Boots (H)
-										un(ELITE_PVP_REQUIREMENT, i(148200)),	-- Fierce Gladiator's Felskin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(148202)),	-- Fierce Gladiator's Felskin Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148204)),	-- Fierce Gladiator's Felskin Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148206)),	-- Fierce Gladiator's Felskin Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148196)),	-- Fierce Gladiator's Felskin Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(148210)),	-- Fierce Gladiator's Felskin Wristguards (H)
+										elitepvp(i(148158)),	-- Fierce Gladiator's Demonthread Cloak (H)
+										elitepvp(i(148208)),	-- Fierce Gladiator's Felskin Belt (H)
+										elitepvp(i(148198)),	-- Fierce Gladiator's Felskin Boots (H)
+										elitepvp(i(148200)),	-- Fierce Gladiator's Felskin Gloves (H)
+										elitepvp(i(148202)),	-- Fierce Gladiator's Felskin Helm (H)
+										elitepvp(i(148204)),	-- Fierce Gladiator's Felskin Legguards (H)
+										elitepvp(i(148206)),	-- Fierce Gladiator's Felskin Spaulders (H)
+										elitepvp(i(148196)),	-- Fierce Gladiator's Felskin Tunic (H)
+										elitepvp(i(148210)),	-- Fierce Gladiator's Felskin Wristguards (H)
 									},
 								}),
 							}),
@@ -5733,15 +5733,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148224)),	-- Fierce Gladiator's Dragonhide Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(148160)),	-- Fierce Gladiator's Dragonhide Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(148216)),	-- Fierce Gladiator's Dragonhide Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(148218)),	-- Fierce Gladiator's Dragonhide Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148220)),	-- Fierce Gladiator's Dragonhide Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148214)),	-- Fierce Gladiator's Dragonhide Moccasins (H)
-										un(ELITE_PVP_REQUIREMENT, i(148222)),	-- Fierce Gladiator's Dragonhide Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148212)),	-- Fierce Gladiator's Dragonhide Vest (H)
-										un(ELITE_PVP_REQUIREMENT, i(148226)),	-- Fierce Gladiator's Dragonhide Wristguards (H)
+										elitepvp(i(148224)),	-- Fierce Gladiator's Dragonhide Belt (H)
+										elitepvp(i(148160)),	-- Fierce Gladiator's Dragonhide Cloak (H)
+										elitepvp(i(148216)),	-- Fierce Gladiator's Dragonhide Gloves (H)
+										elitepvp(i(148218)),	-- Fierce Gladiator's Dragonhide Helm (H)
+										elitepvp(i(148220)),	-- Fierce Gladiator's Dragonhide Legguards (H)
+										elitepvp(i(148214)),	-- Fierce Gladiator's Dragonhide Moccasins (H)
+										elitepvp(i(148222)),	-- Fierce Gladiator's Dragonhide Spaulders (H)
+										elitepvp(i(148212)),	-- Fierce Gladiator's Dragonhide Vest (H)
+										elitepvp(i(148226)),	-- Fierce Gladiator's Dragonhide Wristguards (H)
 									},
 								}),
 							}),
@@ -5755,15 +5755,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148242)),	-- Fierce Gladiator's Chain Armband (H)
-										un(ELITE_PVP_REQUIREMENT, i(148228)),	-- Fierce Gladiator's Chain Armor (H)
-										un(ELITE_PVP_REQUIREMENT, i(148240)),	-- Fierce Gladiator's Chain Clasp (H)
-										un(ELITE_PVP_REQUIREMENT, i(148232)),	-- Fierce Gladiator's Chain Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(148234)),	-- Fierce Gladiator's Chain Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148236)),	-- Fierce Gladiator's Chain Leggings (H)
-										un(ELITE_PVP_REQUIREMENT, i(148238)),	-- Fierce Gladiator's Chain Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148230)),	-- Fierce Gladiator's Chain Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(148162)),	-- Fierce Gladiator's Drape of the Tracker (H)
+										elitepvp(i(148242)),	-- Fierce Gladiator's Chain Armband (H)
+										elitepvp(i(148228)),	-- Fierce Gladiator's Chain Armor (H)
+										elitepvp(i(148240)),	-- Fierce Gladiator's Chain Clasp (H)
+										elitepvp(i(148232)),	-- Fierce Gladiator's Chain Gauntlets (H)
+										elitepvp(i(148234)),	-- Fierce Gladiator's Chain Helm (H)
+										elitepvp(i(148236)),	-- Fierce Gladiator's Chain Leggings (H)
+										elitepvp(i(148238)),	-- Fierce Gladiator's Chain Spaulders (H)
+										elitepvp(i(148230)),	-- Fierce Gladiator's Chain Treads (H)
+										elitepvp(i(148162)),	-- Fierce Gladiator's Drape of the Tracker (H)
 									},
 								}),
 							}),
@@ -5777,15 +5777,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, 8	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148254)),	-- Fierce Gladiator's Silk Amice (H)
-										un(ELITE_PVP_REQUIREMENT, i(148258)),	-- Fierce Gladiator's Silk Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(148256)),	-- Fierce Gladiator's Silk Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(148248)),	-- Fierce Gladiator's Silk Cowl (H)
-										un(ELITE_PVP_REQUIREMENT, i(148246)),	-- Fierce Gladiator's Silk Handguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148244)),	-- Fierce Gladiator's Silk Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(148250)),	-- Fierce Gladiator's Silk Trousers (H)
-										un(ELITE_PVP_REQUIREMENT, i(148252)),	-- Fierce Gladiator's Silk Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(148164)),	-- Fierce Gladiator's Silken Shawl (H)
+										elitepvp(i(148254)),	-- Fierce Gladiator's Silk Amice (H)
+										elitepvp(i(148258)),	-- Fierce Gladiator's Silk Bracers (H)
+										elitepvp(i(148256)),	-- Fierce Gladiator's Silk Cord (H)
+										elitepvp(i(148248)),	-- Fierce Gladiator's Silk Cowl (H)
+										elitepvp(i(148246)),	-- Fierce Gladiator's Silk Handguards (H)
+										elitepvp(i(148244)),	-- Fierce Gladiator's Silk Treads (H)
+										elitepvp(i(148250)),	-- Fierce Gladiator's Silk Trousers (H)
+										elitepvp(i(148252)),	-- Fierce Gladiator's Silk Tunic (H)
+										elitepvp(i(148164)),	-- Fierce Gladiator's Silken Shawl (H)
 									},
 								}),
 							}),
@@ -5799,15 +5799,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148272)),	-- Fierce Gladiator's Ironskin Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(148166)),	-- Fierce Gladiator's Ironskin Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(148262)),	-- Fierce Gladiator's Ironskin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(148264)),	-- Fierce Gladiator's Ironskin Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148266)),	-- Fierce Gladiator's Ironskin Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148260)),	-- Fierce Gladiator's Ironskin Slippers (H)
-										un(ELITE_PVP_REQUIREMENT, i(148268)),	-- Fierce Gladiator's Ironskin Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148270)),	-- Fierce Gladiator's Ironskin Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(148274)),	-- Fierce Gladiator's Ironskin Wristguards (H)
+										elitepvp(i(148272)),	-- Fierce Gladiator's Ironskin Belt (H)
+										elitepvp(i(148166)),	-- Fierce Gladiator's Ironskin Cloak (H)
+										elitepvp(i(148262)),	-- Fierce Gladiator's Ironskin Gloves (H)
+										elitepvp(i(148264)),	-- Fierce Gladiator's Ironskin Helm (H)
+										elitepvp(i(148266)),	-- Fierce Gladiator's Ironskin Legguards (H)
+										elitepvp(i(148260)),	-- Fierce Gladiator's Ironskin Slippers (H)
+										elitepvp(i(148268)),	-- Fierce Gladiator's Ironskin Spaulders (H)
+										elitepvp(i(148270)),	-- Fierce Gladiator's Ironskin Tunic (H)
+										elitepvp(i(148274)),	-- Fierce Gladiator's Ironskin Wristguards (H)
 									},
 								}),
 							}),
@@ -5821,15 +5821,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148168)),	-- Fierce Gladiator's Greatcloak of Faith (H)
-										un(ELITE_PVP_REQUIREMENT, i(148282)),	-- Fierce Gladiator's Scaled Breastplate (H)
-										un(ELITE_PVP_REQUIREMENT, i(148286)),	-- Fierce Gladiator's Scaled Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(148294)),	-- Fierce Gladiator's Scaled Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(148288)),	-- Fierce Gladiator's Scaled Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148290)),	-- Fierce Gladiator's Scaled Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148284)),	-- Fierce Gladiator's Scaled Sabatons (H)
-										un(ELITE_PVP_REQUIREMENT, i(148292)),	-- Fierce Gladiator's Scaled Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148296)),	-- Fierce Gladiator's Scaled Wristplates (H)
+										elitepvp(i(148168)),	-- Fierce Gladiator's Greatcloak of Faith (H)
+										elitepvp(i(148282)),	-- Fierce Gladiator's Scaled Breastplate (H)
+										elitepvp(i(148286)),	-- Fierce Gladiator's Scaled Gauntlets (H)
+										elitepvp(i(148294)),	-- Fierce Gladiator's Scaled Girdle (H)
+										elitepvp(i(148288)),	-- Fierce Gladiator's Scaled Helm (H)
+										elitepvp(i(148290)),	-- Fierce Gladiator's Scaled Legguards (H)
+										elitepvp(i(148284)),	-- Fierce Gladiator's Scaled Sabatons (H)
+										elitepvp(i(148292)),	-- Fierce Gladiator's Scaled Shoulders (H)
+										elitepvp(i(148296)),	-- Fierce Gladiator's Scaled Wristplates (H)
 									},
 								}),
 							}),
@@ -5843,15 +5843,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, 5	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148170)),	-- Fierce Gladiator's Drape of Piety (H)
-										un(ELITE_PVP_REQUIREMENT, i(148312)),	-- Fierce Gladiator's Satin Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(148310)),	-- Fierce Gladiator's Satin Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(148300)),	-- Fierce Gladiator's Satin Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(148302)),	-- Fierce Gladiator's Satin Hood (H)
-										un(ELITE_PVP_REQUIREMENT, i(148304)),	-- Fierce Gladiator's Satin Leggings (H)
-										un(ELITE_PVP_REQUIREMENT, i(148308)),	-- Fierce Gladiator's Satin Mantle (H)
-										un(ELITE_PVP_REQUIREMENT, i(148306)),	-- Fierce Gladiator's Satin Robe (H)
-										un(ELITE_PVP_REQUIREMENT, i(148298)),	-- Fierce Gladiator's Satin Treads (H)
+										elitepvp(i(148170)),	-- Fierce Gladiator's Drape of Piety (H)
+										elitepvp(i(148312)),	-- Fierce Gladiator's Satin Bracers (H)
+										elitepvp(i(148310)),	-- Fierce Gladiator's Satin Cord (H)
+										elitepvp(i(148300)),	-- Fierce Gladiator's Satin Gloves (H)
+										elitepvp(i(148302)),	-- Fierce Gladiator's Satin Hood (H)
+										elitepvp(i(148304)),	-- Fierce Gladiator's Satin Leggings (H)
+										elitepvp(i(148308)),	-- Fierce Gladiator's Satin Mantle (H)
+										elitepvp(i(148306)),	-- Fierce Gladiator's Satin Robe (H)
+										elitepvp(i(148298)),	-- Fierce Gladiator's Satin Treads (H)
 									},
 								}),
 							}),
@@ -5865,15 +5865,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148332)),	-- Fierce Gladiator's Leather Belt (H)
-										un(ELITE_PVP_REQUIREMENT, i(148324)),	-- Fierce Gladiator's Leather Gloves (H)
-										un(ELITE_PVP_REQUIREMENT, i(148326)),	-- Fierce Gladiator's Leather Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148328)),	-- Fierce Gladiator's Leather Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148322)),	-- Fierce Gladiator's Leather Slippers (H)
-										un(ELITE_PVP_REQUIREMENT, i(148330)),	-- Fierce Gladiator's Leather Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148320)),	-- Fierce Gladiator's Leather Tunic (H)
-										un(ELITE_PVP_REQUIREMENT, i(148334)),	-- Fierce Gladiator's Leather Wristguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148172)),	-- Fierce Gladiator's Shadowcape (H)
+										elitepvp(i(148332)),	-- Fierce Gladiator's Leather Belt (H)
+										elitepvp(i(148324)),	-- Fierce Gladiator's Leather Gloves (H)
+										elitepvp(i(148326)),	-- Fierce Gladiator's Leather Helm (H)
+										elitepvp(i(148328)),	-- Fierce Gladiator's Leather Legguards (H)
+										elitepvp(i(148322)),	-- Fierce Gladiator's Leather Slippers (H)
+										elitepvp(i(148330)),	-- Fierce Gladiator's Leather Spaulders (H)
+										elitepvp(i(148320)),	-- Fierce Gladiator's Leather Tunic (H)
+										elitepvp(i(148334)),	-- Fierce Gladiator's Leather Wristguards (H)
+										elitepvp(i(148172)),	-- Fierce Gladiator's Shadowcape (H)
 									},
 								}),
 							}),
@@ -5887,15 +5887,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148350)),	-- Fierce Gladiator's Ringmail Armband (H)
-										un(ELITE_PVP_REQUIREMENT, i(148336)),	-- Fierce Gladiator's Ringmail Armor (H)
-										un(ELITE_PVP_REQUIREMENT, i(148338)),	-- Fierce Gladiator's Ringmail Boots (H)
-										un(ELITE_PVP_REQUIREMENT, i(148348)),	-- Fierce Gladiator's Ringmail Clasp (H)
-										un(ELITE_PVP_REQUIREMENT, i(148340)),	-- Fierce Gladiator's Ringmail Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(148342)),	-- Fierce Gladiator's Ringmail Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148344)),	-- Fierce Gladiator's Ringmail Leggings (H)
-										un(ELITE_PVP_REQUIREMENT, i(148346)),	-- Fierce Gladiator's Ringmail Spaulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148174)),	-- Fierce Gladiator's Totemic Cloak (H)
+										elitepvp(i(148350)),	-- Fierce Gladiator's Ringmail Armband (H)
+										elitepvp(i(148336)),	-- Fierce Gladiator's Ringmail Armor (H)
+										elitepvp(i(148338)),	-- Fierce Gladiator's Ringmail Boots (H)
+										elitepvp(i(148348)),	-- Fierce Gladiator's Ringmail Clasp (H)
+										elitepvp(i(148340)),	-- Fierce Gladiator's Ringmail Gauntlets (H)
+										elitepvp(i(148342)),	-- Fierce Gladiator's Ringmail Helm (H)
+										elitepvp(i(148344)),	-- Fierce Gladiator's Ringmail Leggings (H)
+										elitepvp(i(148346)),	-- Fierce Gladiator's Ringmail Spaulders (H)
+										elitepvp(i(148174)),	-- Fierce Gladiator's Totemic Cloak (H)
 									},
 								}),
 							}),
@@ -5909,15 +5909,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, 9	},	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148380)),	-- Fierce Gladiator's Felweave Amice (H)
-										un(ELITE_PVP_REQUIREMENT, i(148384)),	-- Fierce Gladiator's Felweave Bracers (H)
-										un(ELITE_PVP_REQUIREMENT, i(148176)),	-- Fierce Gladiator's Felweave Cloak (H)
-										un(ELITE_PVP_REQUIREMENT, i(148382)),	-- Fierce Gladiator's Felweave Cord (H)
-										un(ELITE_PVP_REQUIREMENT, i(148374)),	-- Fierce Gladiator's Felweave Cowl (H)
-										un(ELITE_PVP_REQUIREMENT, i(148372)),	-- Fierce Gladiator's Felweave Handguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148378)),	-- Fierce Gladiator's Felweave Raiment (H)
-										un(ELITE_PVP_REQUIREMENT, i(148370)),	-- Fierce Gladiator's Felweave Treads (H)
-										un(ELITE_PVP_REQUIREMENT, i(148376)),	-- Fierce Gladiator's Felweave Trousers (H)
+										elitepvp(i(148380)),	-- Fierce Gladiator's Felweave Amice (H)
+										elitepvp(i(148384)),	-- Fierce Gladiator's Felweave Bracers (H)
+										elitepvp(i(148176)),	-- Fierce Gladiator's Felweave Cloak (H)
+										elitepvp(i(148382)),	-- Fierce Gladiator's Felweave Cord (H)
+										elitepvp(i(148374)),	-- Fierce Gladiator's Felweave Cowl (H)
+										elitepvp(i(148372)),	-- Fierce Gladiator's Felweave Handguards (H)
+										elitepvp(i(148378)),	-- Fierce Gladiator's Felweave Raiment (H)
+										elitepvp(i(148370)),	-- Fierce Gladiator's Felweave Treads (H)
+										elitepvp(i(148376)),	-- Fierce Gladiator's Felweave Trousers (H)
 									},
 								}),
 							}),
@@ -5931,15 +5931,15 @@ root(ROOTS.Zones, {
 										{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 7
 									},
 									["g"] = {
-										un(ELITE_PVP_REQUIREMENT, i(148178)),	-- Fierce Gladiator's Cloak of Battle (H)
-										un(ELITE_PVP_REQUIREMENT, i(148386)),	-- Fierce Gladiator's Plate Chestpiece (H)
-										un(ELITE_PVP_REQUIREMENT, i(148390)),	-- Fierce Gladiator's Plate Gauntlets (H)
-										un(ELITE_PVP_REQUIREMENT, i(148398)),	-- Fierce Gladiator's Plate Girdle (H)
-										un(ELITE_PVP_REQUIREMENT, i(148392)),	-- Fierce Gladiator's Plate Helm (H)
-										un(ELITE_PVP_REQUIREMENT, i(148394)),	-- Fierce Gladiator's Plate Legguards (H)
-										un(ELITE_PVP_REQUIREMENT, i(148396)),	-- Fierce Gladiator's Plate Shoulders (H)
-										un(ELITE_PVP_REQUIREMENT, i(148388)),	-- Fierce Gladiator's Plate Warboots (H)
-										un(ELITE_PVP_REQUIREMENT, i(148400)),	-- Fierce Gladiator's Plate Wristplates (H)
+										elitepvp(i(148178)),	-- Fierce Gladiator's Cloak of Battle (H)
+										elitepvp(i(148386)),	-- Fierce Gladiator's Plate Chestpiece (H)
+										elitepvp(i(148390)),	-- Fierce Gladiator's Plate Gauntlets (H)
+										elitepvp(i(148398)),	-- Fierce Gladiator's Plate Girdle (H)
+										elitepvp(i(148392)),	-- Fierce Gladiator's Plate Helm (H)
+										elitepvp(i(148394)),	-- Fierce Gladiator's Plate Legguards (H)
+										elitepvp(i(148396)),	-- Fierce Gladiator's Plate Shoulders (H)
+										elitepvp(i(148388)),	-- Fierce Gladiator's Plate Warboots (H)
+										elitepvp(i(148400)),	-- Fierce Gladiator's Plate Wristplates (H)
 									},
 								}),
 							}),

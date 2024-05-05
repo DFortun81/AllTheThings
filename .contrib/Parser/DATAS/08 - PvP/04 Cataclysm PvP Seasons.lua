@@ -433,9 +433,8 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_VICIOUS, {
-			n(ACHIEVEMENTS, bubbleDown({
+			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
-				["u"] = ELITE_PVP_REQUIREMENT,
 			}, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
 					["races"] = ALLIANCE_ONLY,
@@ -454,7 +453,7 @@ root(ROOTS.PVP, {
 					["description"] = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				ach(11714, {["timeline"] = {ADDED_7_2_0}}),	-- Viciously Vintage (PvP Season 9)
-			})),
+			}))),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
@@ -2138,9 +2137,8 @@ root(ROOTS.PVP, {
 			})),
 		}),
 		applyclassicphase(CATA_PHASE_THREE, n(SEASON_RUTHLESS, {
-			n(ACHIEVEMENTS, bubbleDown({
+			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
-				["u"] = ELITE_PVP_REQUIREMENT,
 			}, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
 					["races"] = ALLIANCE_ONLY,
@@ -2159,7 +2157,7 @@ root(ROOTS.PVP, {
 					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				ach(11715, {["timeline"] = {ADDED_7_2_0}}),	-- (Ruth)less is More (PvP Season 10)
-			})),
+			}))),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
 					i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
@@ -3516,9 +3514,8 @@ root(ROOTS.PVP, {
 			})),
 		})),
 		applyclassicphase(CATA_PHASE_FOUR, n(SEASON_CATACLYSMIC, {
-			n(ACHIEVEMENTS, bubbleDown({
+			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
-				["u"] = ELITE_PVP_REQUIREMENT,
 			}, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic
 					["races"] = ALLIANCE_ONLY,
@@ -3537,7 +3534,7 @@ root(ROOTS.PVP, {
 					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				ach(11716, {["timeline"] = {ADDED_7_2_0}}),	-- Cataclysmic Catwalk (PvP Season 11)
-			})),
+			}))),
 			n(PVP_HONOR, {
 				-- #if AFTER 7.2.0.23436
 				["description"] = "These items are only available from Ruthless Gladiator class ensembles.",

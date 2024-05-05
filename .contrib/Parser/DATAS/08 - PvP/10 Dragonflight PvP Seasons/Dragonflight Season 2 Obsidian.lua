@@ -1534,43 +1534,43 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				n(199720, {	-- Glamora
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(205362, {	-- Obsidian Gladiator's Tabard
+						elitepvp(i(205362, {	-- Obsidian Gladiator's Tabard
 							["cost"] = { { "c", HONOR, 100 }, },
 						--	["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
 						--	Will be put later on vendor prolly
 						})),
 						n(WEAPONS, {
-							un(ELITE_PVP_REQUIREMENT, i(206044, {	-- Obsidian Gladiator's Axe
+							elitepvp(i(206044, {	-- Obsidian Gladiator's Axe
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206154, {	-- Obsidian Gladiator's Bow
+							elitepvp(i(206154, {	-- Obsidian Gladiator's Bow
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206153, {	-- Obsidian Gladiator's Claws
+							elitepvp(i(206153, {	-- Obsidian Gladiator's Claws
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206137, {	-- Obsidian Gladiator's Dagger
+							elitepvp(i(206137, {	-- Obsidian Gladiator's Dagger
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206150, {	-- Obsidian Gladiator's Mace
+							elitepvp(i(206150, {	-- Obsidian Gladiator's Mace
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206147, {	-- Obsidian Gladiator's Polearm
+							elitepvp(i(206147, {	-- Obsidian Gladiator's Polearm
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206149, {	-- Obsidian Gladiator's Rifle
+							elitepvp(i(206149, {	-- Obsidian Gladiator's Rifle
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206151, {	-- Obsidian Gladiator's Rod
+							elitepvp(i(206151, {	-- Obsidian Gladiator's Rod
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206152, {	-- Obsidian Gladiator's Shield
+							elitepvp(i(206152, {	-- Obsidian Gladiator's Shield
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206148, {	-- Obsidian Gladiator's Staff
+							elitepvp(i(206148, {	-- Obsidian Gladiator's Staff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(206146, {	-- Obsidian Gladiator's Warglaive
+							elitepvp(i(206146, {	-- Obsidian Gladiator's Warglaive
 								["cost"] = { { "i", MOH, 5 } },
 							})),
 						}),

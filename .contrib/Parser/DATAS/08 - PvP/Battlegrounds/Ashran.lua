@@ -822,14 +822,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						})),
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
+						})),
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak
@@ -1393,14 +1391,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
-						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						})),
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
+						})),
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak
