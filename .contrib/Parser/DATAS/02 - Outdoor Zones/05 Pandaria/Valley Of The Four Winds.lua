@@ -1007,6 +1007,12 @@ root(ROOTS.Zones, {
 							["g"] = WAY_OF_THE_STEAMER,
 						}),
 					}),
+					prof(ENGINEERING, {
+						n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
+							["coord"] = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = MOP_ENGINEERING
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					prof(COOKING, {

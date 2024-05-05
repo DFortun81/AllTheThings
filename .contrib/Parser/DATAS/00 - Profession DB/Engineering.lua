@@ -396,6 +396,68 @@ i(71078, 100687);	-- Extreme-Impact Hole Puncher
 i(70177, 100587);	-- Flintlocke's Woodchucker
 
 -----------------
+-- PATCH 5.0.4 --
+-----------------
+--- TRAINER ---
+i(0, 110403);		-- Engineering (Zen Master)
+i(0, 127118);		-- Agile Retinal Armor
+i(0, 127136);		-- Big Game Hunter
+i(0, 127129);		-- Blingtron 4000
+i(0, 127119);		-- Camouflage Retinal Armor
+i(0, 127120);		-- Deadly Retinal Armor
+i(0, 127138);		-- Depleted-Kyparium Rocket
+i(0, 127121);		-- Energized Retinal Armor
+i(0, 131211);		-- Flashing Tinker's Gear
+i(0, 131212);		-- Fractured Tinker's Gear
+i(0, 127127);		-- G91 Landshark
+i(0, 127139);		-- Geosynchronous World Spinner
+i(0, 127113);		-- Ghost Iron Bolts
+i(0, 127134);		-- Ghost Iron Dragonling
+i(0, 127128);		-- Goblin Dragon Gun, Mark II
+i(0, 126392);		-- Goblin Glider
+i(0, 127114);		-- High-Explosive Gunpowder
+i(0, 109077);		-- Incendiary Fireworks Launcher [REMOVED: 6.0.2]
+i(0, 127117);		-- Lightweight Retinal Armor
+i(0, 127124);		-- Locksmith's Powderkeg
+i(0, 127137);		-- Long-Range Trillium Sniper
+i(0, 127115);		-- Lord Blastington's Scope of Doom
+i(0, 127135);		-- Mechanical Pandaren Dragonling
+i(0, 127116);		-- Mirror Scope
+i(0, 127130);		-- Mist-Piercing Goggles
+i(0, 131353);		-- Pandaria Fireworks
+i(0, 108789);		-- Phase Fingers [REMOVED: 6.0.2]
+i(0, 131213);		-- Precise Tinker's Gear
+i(0, 131214);		-- Quick Tinker's Gear
+i(0, 127123);		-- Reinforced Retinal Armor
+i(0, 131215);		-- Rigid Tinker's Gear
+i(0, 131216);		-- Smooth Tinker's Gear
+i(0, 131217);		-- Sparkling Tinker's Gear
+i(0, 127122);		-- Specialized Retinal Armor
+i(0, 131218);		-- Subtle Tinker's Gear
+i(0, 126731);		-- Synapse Springs [Rank 2] [REMOVED: 6.0.2]
+i(0, 127131);		-- Thermal Anvil
+i(0, 131563);		-- Tinker's Kit
+i(0, 109099);		-- Watergliding Jets
+i(0, 127132);		-- Wormhole Generator: Pandaria
+--- ITEM ---
+i(89996, 131256);	-- Autumn Flower Firework
+i(89994, 128260);	-- Celestial Firework
+i(89993, 128261);	-- Grand Celebration Firework
+i(89997, 131258);	-- Jade Blossom Firework
+i(89992, 128262);	-- Serpent's Heart Firework
+
+-----------------
+-- PATCH 5.4.0 --
+-----------------
+--- ITEM ---
+-- All from the same item
+i(0, 139197);		-- Advanced Refrigeration Unit
+i(0, 139176);		-- Jard's Peculiar Energy Source
+i(0, 139196);		-- Pierre
+i(0, 143714);		-- Rascal-Bot
+i(0, 139192);		-- Sky Golem
+
+-----------------
 -- PATCH 6.0.2 --
 -----------------
 --- NYI ---

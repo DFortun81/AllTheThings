@@ -301,6 +301,77 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(84410),	-- Safety Catch Removal Kit
 	}),
 }));
+MOP_ENGINEERING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	r(110403, {	-- Blacksmithing (Zen Master)
+		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 8,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264485, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Engineering
+	n(ARMOR, {
+		r(127118),	-- Agile Retinal Armor
+		r(127119),	-- Camouflage Retinal Armor
+		r(127120),	-- Deadly Retinal Armor
+		r(127121),	-- Energized Retinal Armor
+		r(127117),	-- Lightweight Retinal Armor
+		r(127130),	-- Mist-Piercing Goggles
+		r(127123),	-- Reinforced Retinal Armor
+		r(127122),	-- Specialized Retinal Armor
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(126392),	-- Goblin Glider
+		r(109077, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Incendiary Fireworks Launcher
+		r(108789, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Phase Fingers
+		r(126731, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Synapse Springs [Rank 2]
+		r(109099),	-- Watergliding Jets
+	}),
+	filter(BATTLE_PETS, {
+		r(127135),	-- Mechanical Pandaren Dragonling
+	}),
+	filter(GEMS, {
+		r(131211),	-- Flashing Tinker's Gear
+		r(131212),	-- Fractured Tinker's Gear
+		r(131213),	-- Precise Tinker's Gear
+		r(131214),	-- Quick Tinker's Gear
+		r(131215),	-- Rigid Tinker's Gear
+		r(131216),	-- Smooth Tinker's Gear
+		r(131217),	-- Sparkling Tinker's Gear
+		r(131218),	-- Subtle Tinker's Gear
+	}),
+	filter(MISC, {
+		r(127127),	-- G91 Landshark
+		r(127128),	-- Goblin Dragon Gun, Mark II
+		r(127124),	-- Locksmith's Powderkeg
+		r(131353),	-- Pandaria Fireworks
+		r(127131),	-- Thermal Anvil
+	}),
+	filter(MOUNTS, {
+		r(127138),	-- Depleted-Kyparium Rocket
+		r(127139),	-- Geosynchronous World Spinner
+	}),
+	filter(REAGENTS, {
+		r(127113),	-- Ghost Iron Bolts
+		r(127114),	-- High-Explosive Gunpowder
+		r(131563),	-- Tinker's Kit
+	}),
+	filter(TOYS, {
+		r(127129),	-- Blingtron 4000
+		r(127132),	-- Wormhole Generator: Pandaria
+	}),
+	filter(TRINKET_F, {
+		r(127134),	-- Ghost Iron Dragonling
+	}),
+	n(WEAPONS, {
+		r(127136),	-- Big Game Hunter
+		r(127137),	-- Long-Range Trillium Sniper
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(127115),	-- Lord Blastington's Scope of Doom
+		r(127116),	-- Mirror Scope
+	}),
+}));
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",

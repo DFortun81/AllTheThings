@@ -726,7 +726,6 @@ i(94293, 138643);	-- Green Primal Raptor
 i(94231, 138426);	-- Jade Primordial Direhorn
 i(95041, 139407);	-- Malevolent Gladiator's Cloud Serpent
 i(94291, 138641);	-- Red Primal Raptor
-i(95416, 134359);	-- Sky Golem
 i(94229, 138425);	-- Slate Primordial Direhorn
 i(93666, 136471);	-- Spawn of Horridon
 i(95057, 139442);	-- Thundering Cobalt Cloud Serpent
@@ -749,6 +748,7 @@ i(104253, 148417);	-- Kor'kron Juggernaut
 i(104246, 148396);	-- Kor'kron War Wolf
 i(104327, 148620);	-- Prideful Gladiator's Cloud Serpent
 i(103630, 30174);	-- Riding Turtle
+i(95416, 134359);	-- Sky Golem
 i(104208, 148392);	-- Spawn of Galakras
 i(102514, 146615);	-- Vicious Kaldorei Warsaber
 i(102533, 146622);	-- Vicious Skeletal Warhorse

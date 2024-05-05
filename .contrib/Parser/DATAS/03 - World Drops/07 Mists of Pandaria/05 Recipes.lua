@@ -15,25 +15,27 @@ root(ROOTS.WorldDrops, {
 				})),
 			}),
 			prof(ENGINEERING, {
-				i(100910, {	-- Schematic: Chief Engineer Jard's Journal
+				i(100910, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
 					["f"] = MISC,
 					["g"] = {
-						recipe(139197),	-- Advanced Refrigeration Unit
-						recipe(139176),	-- Jard's Peculiar Energy Source
-						recipe(139196),	-- Pierre
-						recipe(143714),	-- Rascal-Bot
-						recipe(139192),	-- Sky Golem
+						r(139197),	-- Advanced Refrigeration Unit
+						r(139176),	-- Jard's Peculiar Energy Source
+						r(139196),	-- Pierre
+						r(143714),	-- Rascal-Bot
+						r(139192),	-- Sky Golem
 					},
-				}),
+				})),
 				i(94847, {	-- Schematic: Chief Engineer Jard's Journal
 					["f"] = MISC,
 					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["_drop"] = { "g" },
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(32630, {	-- Chief Engineer Jard's Journal
 					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["provider"] = {"i",94847},	-- Schematic: Chief Engineer Jard's Journal
 					["_drop"] = { "g" },
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 			}),
 			prof(INSCRIPTION, {

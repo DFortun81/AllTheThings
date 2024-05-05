@@ -589,50 +589,75 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 	}),
 	prof(ENGINEERING, {
-		filter(MOUNTS, {
-			i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
-			i(87251),	-- Geosynchronous World Spinner (MOUNT!)
-			i(95416),	-- Sky Golem (MOUNT!)
+		n(ARMOR, {
+			i(77534),	-- Agile Retinal Armor
+			i(77535),	-- Camouflage Retinal Armor
+			i(77536),	-- Deadly Retinal Armor
+			i(77537),	-- Energized Retinal Armor
+			i(77533),	-- Lightweight Retinal Armor
+			i(87213),	-- Mist-Piercing Goggles
+			i(77539),	-- Reinforced Retinal Armor
+			i(77538),	-- Specialized Retinal Armor
 		}),
 		filter(BATTLE_PETS, {
 			i(87526),	-- Mechanical Pandaren Dragonling (PET!)
-			i(94903, {	-- Pierre (PET!)
-				["timeline"] = { ADDED_5_2_0 },
-			}),
-			i(100905, {	-- Rascal-Bot (PET!)
-				["timeline"] = { ADDED_5_4_0 },
-			}),
+			i(94903, {["timeline"] = {ADDED_5_4_0}}),	-- Pierre (PET!)
+			i(100905, {["timeline"] = {ADDED_5_4_0}}),	-- Rascal-Bot (PET!)
+		}),
+		filter(GEMS, {
+			i(77544),	-- Flashing Tinker's Gear
+			i(77547),	-- Fractured Tinker's Gear
+			i(77543),	-- Precise Tinker's Gear
+			i(77542),	-- Quick Tinker's Gear
+			i(77545),	-- Rigid Tinker's Gear
+			i(77541),	-- Smooth Tinker's Gear
+			i(77546),	-- Sparkling Tinker's Gear
+			i(77540),	-- Subtle Tinker's Gear
+		}),
+		flter(MISC, {
+			i(92747, {["timeline"] = {ADDED_5_4_0}}),	-- Advanced Refrigeration Unit
+			i(89893),	-- Autumn Flower Firework
+			i(88493),	-- Celestial Firework
+			i(77589),	-- G91 Landshark
+			i(86607),	-- Goblin Dragon Gun, Mark II
+			i(88491),	-- Grand Celebration Firework
+			i(89888),	-- Jade Blossom Firework
+			i(77532),	-- Locksmith's Powderkeg
+			i(87764),	-- Serpent's Heart Firework
+			i(87216),	-- Thermal Anvil
+		}),
+		filter(MOUNTS, {
+			i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
+			i(87251),	-- Geosynchronous World Spinner (MOUNT!)
+			i(95416, {["timeline"] = {ADDED_5_4_0}}),	-- Sky Golem (MOUNT!)
+		}),
+		i(89991, {  -- Pandaria Fireworks
+			i(89996),    -- Schematic: Autumn Flower Firework (RECIPE!)
+			i(89994),    -- Schematic: Celestial Firework (RECIPE!)
+			i(89993),    -- Schematic: Grand Celebration Firework (RECIPE!)
+			i(89997),    -- Schematic: Jade Blossom Firework (RECIPE!)
+			i(89992),    -- Schematic: Serpent's Heart Firework (RECIPE!)
+		}),
+		filter(REAGENTS, {
+			i(77467),	-- Ghost Iron Bolts
+			i(77468),	-- High-Explosive Gunpowder
+			i(94113, {["timeline"] = {ADDED_5_4_0}}),	-- Jard's Peculiar Energy Source
+			i(90146),	-- Tinker's Kit
 		}),
 		filter(TOYS, {
 			i(87214),	-- Blingtron 4000 (TOY!)
 			i(87215),	-- Wormhole Generator: Pandaria (TOY!)
 		}),
+		filter(TRINKET_F, {
+			i(77530),	-- Ghost Iron Dragonling
+		}),
 		n(WEAPONS, {
-			i(77527),	-- Big Game Hunter*
-			i(77528),	-- Long-Range Trillium Sniper*
+			i(77527),	-- Big Game Hunter
+			i(77528),	-- Long-Range Trillium Sniper
 		}),
-		n(ARMOR, {
-			-- Head
-			i(77534),	-- Agile Retinal Armor*
-			i(77535),	-- Camouflage Retinal Armor*
-			i(77536),	-- Deadly Retinal Armor*
-			i(77537),	-- Energized Retinal Armor*
-			i(77533),	-- Lightweight Retinal Armor*
-			i(87213),	-- Mist-Piercing Goggles*
-			i(77539),	-- Reinforced Retinal Armor*
-			i(77538),	-- Specialized Retinal Armor*
-			-- Trinkets
-			i(77530),	-- Ghost Iron Dragonling*
-		}),
-		filter(BAGS, {
-			i(92747),	-- Advanced Refrigeration Unit*
-		}),
-		i(89991, {  -- Pandaria Fireworks
-			i(89996),    -- Schematic: Autumn Flower Firework
-			i(89994),    -- Schematic: Celestial Firework
-			i(89993),    -- Schematic: Grand Celebration Firework
-			i(89997),    -- Schematic: Jade Blossom Firework
-			i(89992),    -- Schematic: Serpent's Heart Firework
+		n(WEAPON_ENCHANTMENTS, {
+			i(77529),	-- Lord Blastington's Scope of Doom
+			i(77531),	-- Mirror Scope
 		}),
 	}),
 	-- #if BEFORE 8.0.1

@@ -1941,7 +1941,6 @@ i(94835, 1202);		-- Ji-Kun Hatchling
 i(94125, 1177);		-- Living Sandling
 i(94210, 1198);		-- Mountain Panda
 i(100870, 217);		-- Murkimus the Gladiator [Murkimus' Tyrannical Spear]
-i(94903, 1204);		-- Pierre
 i(94025, 1176);		-- Red Panda
 i(94209, 1197);		-- Snowy Panda
 i(94152, 1183);		-- Son of Animus
@@ -2023,6 +2022,7 @@ i(104165, 1334);	-- Kovok
 i(103670, 1320);	-- Lil' Bling
 i(101570, 1276);	-- Moon Moon
 i(104166, 1335);	-- Ominous Flame
+i(94903, 1204);		-- Pierre
 i(100905, 1256);	-- Rascal-Bot
 i(104317, 1349);	-- Rotten Little Helper
 i(104159, 1328);	-- Ruby Droplet
