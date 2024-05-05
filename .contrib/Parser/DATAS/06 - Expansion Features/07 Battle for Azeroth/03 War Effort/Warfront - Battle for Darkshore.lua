@@ -579,10 +579,25 @@ root(ROOTS.ExpansionFeatures,
 						q(54840),	-- Agathe Wyrmwood
 						q(54825),	-- Alash'anir (A)
 						q(54823),	-- Aman (A)
-						q(54678),	-- Anything We Can Salvage (A)
+						q(54678, {	-- Anything We Can Salvage (A)
+							["groups"] = {
+								o_repeated({
+									i(166287),	-- Silver Dawning Salvage (QI!)
+									o(313446),	-- Silver Dawning Salvage
+									o(313447),	-- Silver Dawning Salvage
+									o(313448),	-- Silver Dawning Salvage
+								}),
+							},
+						}),
 						q(54821),	-- Athrikus Narassin (A)
 						q(54677),	-- Back to the Depths (A)
-						q(54856),	-- Bilgewater Bandits (A)
+						q(54856, {	-- Bilgewater Bandits (A)
+							["groups"] = {
+								o(316792, {	-- Pilfered Iron Ore
+									i(166475),	-- Pilfered Iron Ore (QI!)
+								}),
+							},
+						}),
 						q(54784),	-- Blackwood Liberation (A)
 						q(54837),	-- Burninator Mark V
 						q(54836),	-- Commander Drald (A)
