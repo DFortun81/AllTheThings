@@ -459,7 +459,8 @@ i(29218, 32503);	-- Netherfury Boots [A]
 i(25743, 32503);	-- Netherfury Boots [H]
 i(29219, 32502);	-- Netherfury Leggings [A]
 i(25742, 32502);	-- Netherfury Leggings [H]
-i(30444, 35530);	-- Reinforced Mining Bag
+i(30444, 35530);	-- Reinforced Mining Bag [A]
+i(29664, 35530);	-- Reinforced Mining Bag [H]
 i(25725, 32461);	-- Riding Crop
 i(29669, 35520);	-- Shadow Armor Kit [REMOVED: 5.0.4]
 i(25729, 32487);	-- Stylin' Adventure Hat
