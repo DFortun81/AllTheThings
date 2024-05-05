@@ -614,7 +614,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(77546),	-- Sparkling Tinker's Gear
 			i(77540),	-- Subtle Tinker's Gear
 		}),
-		flter(MISC, {
+		filter(MISC, {
 			i(92747, {["timeline"] = {ADDED_5_4_0}}),	-- Advanced Refrigeration Unit
 			i(89893),	-- Autumn Flower Firework
 			i(88493),	-- Celestial Firework
