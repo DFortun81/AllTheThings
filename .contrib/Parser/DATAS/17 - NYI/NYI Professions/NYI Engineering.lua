@@ -177,6 +177,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					r(161543),	-- Unknown
 					-- Without SpellID attached
 					i(120134),	-- Recipe: Secrets of Draenor Engineering
 				})),

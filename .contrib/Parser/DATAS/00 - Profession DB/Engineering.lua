@@ -174,7 +174,7 @@ i(18651, 23071);	-- Truesilver Transformer [TRAINER: 2.0.1]
 i(18658, 23082);	-- Ultra-Flash Shadow Reflector
 i(16052, 19819);	-- Voice Amplification Modulator
 -- Gnomish Engineering
-i(0, GNOMISH_ENGINEERING, nil, GNOMISH_ENGINEERING);	-- Gnomish Engineer
+i(0, 20219, nil, GNOMISH_ENGINEERING);	-- Gnomish Engineer
 i(18654, 23096, nil, GNOMISH_ENGINEERING);	-- Gnomish Alarm-o-Bot
 i(18661, 23129, nil, GNOMISH_ENGINEERING);	-- World Enlarger
 i(0, 12906, nil, GNOMISH_ENGINEERING);	-- Gnomish Battle Chicken
@@ -193,7 +193,7 @@ i(11827, 15633, nil, GNOMISH_ENGINEERING);	-- Lil' Smoky
 i(11827, 15633);	-- Lil' Smoky
 -- #endif
 -- Goblin Engineering
-i(0, GOBLIN_ENGINEERING, nil, GOBLIN_ENGINEERING);	-- Goblin Engineer
+i(0, 20222, nil, GOBLIN_ENGINEERING);	-- Goblin Engineer
 i(18653, 23078, nil, GOBLIN_ENGINEERING);	-- Goblin Jumper Cables XL
 i(0, 23486, nil, GOBLIN_ENGINEERING);	-- Dimensional Ripper - Everlook
 i(0, 12755, nil, GOBLIN_ENGINEERING);	-- Goblin Bomb Dispenser
@@ -572,6 +572,7 @@ i(100907, 0);		-- Schematic: Rascal-Bot
 -- PATCH 6.0.2 --
 -----------------
 --- NYI ---
+i(0, 161543);		-- Unknown
 i(120134, 0);		-- Secrets of Draenor Engineering
 
 -----------------

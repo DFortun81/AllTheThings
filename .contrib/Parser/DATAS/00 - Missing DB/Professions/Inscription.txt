@@ -320,7 +320,6 @@ r(61120),	-- Master's Inscription of the Storm
 r(61177),	-- Northrend Inscription Research
 r(61677),	-- Glyph of Frostfire
 r(62162),	-- Glyph of Focus
-r(64051),	-- Rituals of the Moon \\ Rituals of the New Moon
 r(64053),	-- Twilight Tome
 r(64246),	-- Glyph of Raptor Strike
 r(64247),	-- Glyph of Stoneclaw Totem
