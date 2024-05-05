@@ -11041,20 +11041,20 @@ customWindowUpdates.NWP = function(self)
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
 		end
-		if not self.initialized then
-			self.initialized = true;
-			self:SetData({
-				["text"] = L.NEW_WITH_PATCH,
-				["icon"] = app.asset("WindowIcon_RWP"),
-				["description"] = L.NEW_WITH_PATCH_TOOLTIP,
-				["visible"] = true,
-				["back"] = 1,
-				["g"] = app:BuildSearchResponse("awp", app.GameBuildVersion),
-			});
-			self:BuildData();
-			self.ExpandInfo = { Expand = true, Manual = true };
-		end
-		self:BaseUpdate(true);
+		self.initialized = true;
+		self:SetData({
+			["text"] = L.NEW_WITH_PATCH,
+			["icon"] = app.asset("WindowIcon_RWP"),
+			["description"] = L.NEW_WITH_PATCH_TOOLTIP,
+			["visible"] = true,
+			["back"] = 1,
+			["g"] = app:BuildSearchResponse("awp", app.GameBuildVersion),
+		});
+		self:BuildData();
+		self.ExpandInfo = { Expand = true, Manual = true };
+	end
+	if self:IsVisible() then
+		self:BaseUpdate(force);
 	end
 end;
 customWindowUpdates.Prime = function(self, ...)
@@ -11997,25 +11997,25 @@ customWindowUpdates.Random = function(self)
 		self:BaseUpdate(true);
 	end
 end;
-customWindowUpdates.RWP = function(self)
-	if self:IsVisible() then
+customWindowUpdates.RWP = function(self, force)
+	if not self.initialized then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
 		end
-		if not self.initialized then
-			self.initialized = true;
-			self:SetData({
-				["text"] = L.FUTURE_UNOBTAINABLE,
-				["icon"] = app.asset("WindowIcon_RWP"),
-				["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
-				["visible"] = true,
-				["back"] = 1,
-				["g"] = app:BuildSearchResponse("rwp"),
-			});
-			self:BuildData();
-			self.ExpandInfo = { Expand = true, Manual = true };
-		end
-		self:BaseUpdate(true);
+		self.initialized = true;
+		self:SetData({
+			["text"] = L.FUTURE_UNOBTAINABLE,
+			["icon"] = app.asset("WindowIcon_RWP"),
+			["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
+			["visible"] = true,
+			["back"] = 1,
+			["g"] = app:BuildSearchResponse("rwp"),
+		});
+		self:BuildData();
+		self.ExpandInfo = { Expand = true, Manual = true };
+	end
+	if self:IsVisible() then
+		self:BaseUpdate(force);
 	end
 end;
 customWindowUpdates.Sync = function(self)
