@@ -4312,7 +4312,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							["timeline"] = { ADDED_6_1_0 },
 							["sym"] = { { "fill" } },	-- simply fill this item
 						})),
-						champ(100, i(47179)),	-- Argent Charger (MOUNT!)
+						champ(100, i(47179, {	-- Argent Charger (MOUNT!)
+							["classes"] = { PALADIN },
+						})),
 						champ(15, i(46843)),	-- Argent Crusader's Banner (TOY!)
 						champ(50, i(46874)),	-- Argent Crusader's Tabard
 						champ(150, i(47541)),	-- Argent Pony Bridle
