@@ -373,12 +373,12 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73165),	-- Valiant Idol of Battle
 			i(73164),	-- Valiant Stone of Battle
 		}),
-		i(77956, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {	-- Spectral Mount Crate
+		bubbleDown({ ["u"] = BLIZZARD_BALANCE }, i(77956, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {	-- Spectral Mount Crate
 			["description"] = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
 			["groups"] = {
 				a(i(76889)),	-- Spectral Gryphon (MOUNT!)
 				h(i(76902)),	-- Spectral Wind Rider (MOUNT!)
 			},
-		})),
+		}))),
 	},
 }));
