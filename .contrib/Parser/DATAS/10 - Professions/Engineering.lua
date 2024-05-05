@@ -3249,6 +3249,9 @@ cacheRecipes(_.Professions);
 -- Item Recipe Database,
 local itemrecipe = function(name, itemID, spellID, phase, timeline)
 	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
+	-- #if AFTER CATA
+	o.requireSkill = ENGINEERING;
+	-- #endif
 	if type(phase) == "string" then
 		timeline = phase;
 		phase = nil;
