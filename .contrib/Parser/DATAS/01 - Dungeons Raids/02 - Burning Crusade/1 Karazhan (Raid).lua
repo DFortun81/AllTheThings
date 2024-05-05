@@ -712,7 +712,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					16152,	-- Attumen the Huntsman
 				},
 				["groups"] = {
-					i(23809),	-- Schematic: Stabilized Eternium Scope
+					i(23809),	-- Schematic: Stabilized Eternium Scope (RECIPE!)
 					ach(882, {	-- Fiery Warhorse's Reins
 						["provider"] = { "i", 30480 },	-- Fiery Warhorse's Reins
 						-- #if BEFORE WRATH

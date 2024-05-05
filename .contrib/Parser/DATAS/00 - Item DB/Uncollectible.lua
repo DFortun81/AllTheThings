@@ -17,7 +17,6 @@ i(5956);	-- Blacksmith Hammer
 i(85663);	-- Herbalist's Spade
 i(2901);	-- Mining Pick
 i(7005);	-- Skinning Knife
-i(23820);	-- Critter Enlarger
 i(139786);	-- Ancient Mana Crystal
 i(103644);	-- Blessed Bandage
 i(23123);	-- Blessed Wizard Oil

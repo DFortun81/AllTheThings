@@ -1169,12 +1169,12 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(22558),	-- Formula: Enchant Weapon - Spellsurge (RECIPE!)
 		}),
 		prof(ENGINEERING, {
-			i(23802),	-- Schematic: Ornate Khorium Rifle
-			i(23804),	-- Schematic: Power Amplification Goggles
-			i(23810),	-- Schematic: Crashin' Thrashin' Robot
-			i(23883),	-- Schematic: Healing Potion Injector (BoE version)
-			i(23884),	-- Schematic: Mana Potion Injector (BoE version)
-			i(25887),	-- Schematic: Purple Smoke Flare
+			i(23810),	-- Schematic: Crashin' Thrashin' Robot (RECIPE!)
+			i(23883),	-- Schematic: Healing Potion Injector (RECIPE!) [BoE]
+			i(23884),	-- Schematic: Mana Potion Injector (RECIPE!) [BoE]
+			i(23802),	-- Schematic: Ornate Khorium Rifle (RECIPE!)
+			i(23804),	-- Schematic: Power Amplification Goggles (RECIPE!)
+			i(25887),	-- Schematic: Purple Smoke Flare (RECIPE!)
 		}),
 		prof(JEWELCRAFTING, {
 			-- #if BEFORE CATA

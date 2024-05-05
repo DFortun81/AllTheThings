@@ -2046,11 +2046,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(21494, {	-- Smiles O'Byron <Engineer>
-						["requireSkill"] = 20219,	-- Gnomish Engineering
+						["requireSkill"] = GNOMISH_ENGINEERING,
 						["description"] = "Gnomish Engineers can speak to Smiles to learn the recipe.",
 						["coord"] = { 60.2, 65.2, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
-							recipe(36955),	-- Ultrasafe Transporter - Toshley's Station
+							r(36955),	-- Ultrasafe Transporter - Toshley's Station
 						},
 					}),
 					n(22099, {	-- Wyrmcult Provisioner
@@ -2597,7 +2597,7 @@ root(ROOTS.Zones, {
 						},
 						["cr"] = 19973,	-- Abyssal Flamebringer
 					}),
-					i(23800, {	-- Schematic: Felsteel Boomstick
+					i(23800, {	-- Schematic: Felsteel Boomstick (RECIPE!)
 						["coords"] = {
 							{ 73.4, 40.6, BLADES_EDGE_MOUNTAINS },
 							{ 73.8, 40.6, BLADES_EDGE_MOUNTAINS },
@@ -2607,7 +2607,7 @@ root(ROOTS.Zones, {
 						},
 						["cr"] = 19960,	-- Doomforge Engineer
 					}),
-					i(34114, {	-- Schematic: Field Repair Bot 110G
+					i(34114, {	-- Schematic: Field Repair Bot 110G (RECIPE!)
 						["coords"] = {
 							{ 27.6, 69.0, BLADES_EDGE_MOUNTAINS },
 							{ 29.0, 47.2, BLADES_EDGE_MOUNTAINS },
@@ -2618,6 +2618,7 @@ root(ROOTS.Zones, {
 							23385,	-- Gan'arg Analyzer
 							23386,	-- Gan'arg Analyzer (wh says "Simon Unit" drops it but these are the actual mobs)
 						},
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 				}),
 			},

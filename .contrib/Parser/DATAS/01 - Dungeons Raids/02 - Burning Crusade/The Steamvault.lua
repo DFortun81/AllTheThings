@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #if AFTER 7.3.5
 						i(27795),	-- Sash of Serpentra (7.3.5 - Moved from Warlord Kalithresh)
 						-- #endif
-						i(23887),	-- Schematic: Rocket Boots Xtreme
+						i(23887),	-- Schematic: Rocket Boots Xtreme (RECIPE!)
 						i(72574, {	-- Irradiated Gear
 							["timeline"] = { ADDED_4_3_0 },
 						}),
@@ -258,7 +258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #if AFTER 7.3.5
 							i(27795),	-- Sash of Serpentra (7.3.5 - Moved from Warlord Kalithresh)
 							-- #endif
-							i(23887),	-- Schematic: Rocket Boots Xtreme
+							i(23887),	-- Schematic: Rocket Boots Xtreme (RECIPE!)
 							i(72574, {	-- Irradiated Gear
 								["timeline"] = { ADDED_4_3_0 },
 							}),

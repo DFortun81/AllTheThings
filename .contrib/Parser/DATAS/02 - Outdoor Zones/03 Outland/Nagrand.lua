@@ -1838,7 +1838,7 @@ root(ROOTS.Zones, {
 							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
 							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
-							i(23874),	-- Schematic: Elemental Seaforium Charge
+							i(23874),	-- Schematic: Elemental Seaforium Charge (RECIPE!)
 							i(29118, {	-- Smuggler's Ammo Pouch
 								["timeline"] = { REMOVED_4_0_1 },
 							}),

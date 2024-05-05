@@ -110,7 +110,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28253),	-- Plasma Rat's Hyper-Scythe
 						i(28256),	-- Thoriumweave Cloak
 						i(28254),	-- Warp Engineer's Prismatic Chain
-						i(35582),	-- Schematic: Rocket Boots Xtreme Lite
+						i(35582, {	-- Schematic: Rocket Boots Xtreme Lite (RECIPE!)
+							["timeline"] = { ADDED_2_4_0 },
+						}),
 					},
 				}),
 				e(564, {	-- Nethermancer Sepethrea
@@ -207,7 +209,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28253),	-- Plasma Rat's Hyper-Scythe
 							i(28256),	-- Thoriumweave Cloak
 							i(28254),	-- Warp Engineer's Prismatic Chain
-							i(35582),	-- Schematic: Rocket Boots Xtreme Lite
+							i(35582, {	-- Schematic: Rocket Boots Xtreme Lite (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							}),
 						},
 					}),
 					e(564, {	-- Nethermancer Sepethrea

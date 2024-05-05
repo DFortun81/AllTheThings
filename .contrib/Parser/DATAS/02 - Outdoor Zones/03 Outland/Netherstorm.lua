@@ -1602,11 +1602,11 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_7_0_3 },
 					}),
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
-						["requireSkill"] = 20222,	-- Goblin Engineering
+						["requireSkill"] = GOBLIN_ENGINEERING,
 						["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
 						["coord"] = { 32.9, 63.7, NETHERSTORM },
 						["groups"] = {
-							recipe(36954),	-- Dimensional Ripper - Area 52
+							r(36954),	-- Dimensional Ripper - Area 52
 						},
 					}),
 					n(20242, {	-- Karaaz <Consortium Quartermaster>
@@ -1650,7 +1650,7 @@ root(ROOTS.Zones, {
 							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
 							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
-							i(23874),	-- Schematic: Elemental Seaforium Charge
+							i(23874),	-- Schematic: Elemental Seaforium Charge (RECIPE!)
 							i(29118, {	-- Smuggler's Ammo Pouch
 								["timeline"] = { REMOVED_4_0_1 },
 							}),
@@ -2122,10 +2122,11 @@ root(ROOTS.Zones, {
 					i(23610, {	-- Plans: Khorium Boots (RECIPE!)
 						["cr"] = 18873,	-- Disembodied Protector
 					}),
-					applyclassicphase(TBC_PHASE_TWO, i(33804, {	-- Schematic: Adamantite Arrow Maker
+					applyclassicphase(TBC_PHASE_TWO, i(33804, {	-- Schematic: Adamantite Arrow Maker (RECIPE!)
 						["cr"] = 19707,	-- Sunfury Archer
+						["timeline"] = { ADDED_2_3_0 },
 					})),
-					i(23808, {	-- Schematic: Khorium Scope
+					i(23808, {	-- Schematic: Khorium Scope (RECIPE!)
 						["cr"] = 20207,	-- Sunfury Bowman
 					}),
 				}),

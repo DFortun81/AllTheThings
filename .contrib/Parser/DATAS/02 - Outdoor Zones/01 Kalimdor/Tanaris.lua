@@ -2958,7 +2958,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(8126, {	-- Nixx Sprocketspring <Goblin Engineering Trainer>
 					["coord"] = { 52.2, 28.2, TANARIS },
-					["g"] = GOBLIN_ENGINEERING,
+					["g"] = ALL_GOBLIN_ENGINEERING,
 				}),
 			}),
 			n(QUESTS, {
@@ -5304,7 +5304,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14743, {	-- Jhordy Lapforge <Engineer>
-					["requireSkill"] = 20219,	-- Gnomish Engineering
+					["requireSkill"] = GNOMISH_ENGINEERING,
 					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
 					-- #if AFTER CATA
 					["coord"] = { 52.2, 27.8, TANARIS },
@@ -5312,7 +5312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.17, 27.88, TANARIS },
 					-- #endif
 					["groups"] = {
-						recipe(23489),	-- Ultrasafe Transporter - Gadgetzan
+						r(23489),	-- Ultrasafe Transporter - Gadgetzan
 					},
 				}),
 				n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>

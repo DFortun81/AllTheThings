@@ -121,8 +121,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					i(35296),	-- Plans: Adamantite Weapon Chain (RECIPE!)
 					i(35294),	-- Recipe: Elixir of Empowerment (RECIPE!)
 					i(35295),	-- Recipe: Haste Potion (BoP Version) (RECIPE!)
-					i(35310),	-- Schematic: Healing Potion Injector
-					i(35311),	-- Schematic: Mana Potion Injector
+					i(35310),	-- Schematic: Healing Potion Injector (RECIPE!) [BoP]
+					i(35311),	-- Schematic: Mana Potion Injector (RECIPE!) [BoP]
 				},
 			}),
 			n(ZONE_DROPS, {

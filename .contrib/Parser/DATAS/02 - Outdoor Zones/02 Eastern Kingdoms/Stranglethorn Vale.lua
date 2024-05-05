@@ -259,7 +259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(ENGINEERING, {
 					n(7406, {	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 						["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-						["g"] = GNOMISH_ENGINEERING,
+						["g"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
 				prof(LEATHERWORKING, {

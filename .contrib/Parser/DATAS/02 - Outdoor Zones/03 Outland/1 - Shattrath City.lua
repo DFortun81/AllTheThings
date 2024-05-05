@@ -2759,10 +2759,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.8, 69.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(23799, {	-- Schematic: Adamantite Rifle
+							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(32381, {	-- Schematic: Fused Wiring
+							i(32381, {	-- Schematic: Fused Wiring (RECIPE!)
 								["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 								["isLimited"] = true,
 							}),
@@ -2776,13 +2776,13 @@ root(ROOTS.Zones, {
 					n(18484, {	-- Wind Trader Lathrai
 						["coord"] = { 72.6, 31.6, SHATTRATH_CITY },
 						["groups"] = {
-							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine
+							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
 								["isLimited"] = true,
 							})),
-							i(23816, {	-- Schematic: Fel Iron Toolbox
+							i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23811, {	-- Schematic: White Smoke Flare
+							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

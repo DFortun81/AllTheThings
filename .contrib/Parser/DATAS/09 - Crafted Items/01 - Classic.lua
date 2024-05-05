@@ -1037,30 +1037,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 	prof(ENGINEERING, {
-		prof(20219, {	-- Gnomish Engineering
+		prof(GNOMISH_ENGINEERING, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			["groups"] = {
 				n(ARMOR, {
 					i(10545, {	-- Gnomish Goggles
 					-- #IF BEFORE 10.1.0
-						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+						["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
 					-- #ENDIF
 					}),
 				}),
 				-- #if BEFORE WRATH
 				filter(BATTLE_PETS, {
 					i(11826, {	-- Lil' Smoky (PET!)
-						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required, until Wrath)
+						["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required, until Wrath)
 					}),
 				}),
 				-- #endif
 				filter(MISC, {
 					i(18645),	-- Gnomish Alarm-o-Bot
 					i(10725, {	-- Gnomish Battle Chicken
-						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+						["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
 					}),
 					i(10645, {	-- Gnomish Death Ray
-						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+						["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
 					}),
 					i(10721),	-- Gnomish Harm Prevention Belt
 					i(10726),	-- Gnomish Mind Control Cap
@@ -1075,37 +1075,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				filter(TOYS, {
 					i(18986, {	-- Ultrasafe Transporter: Gadgetzan (TOY!)
-						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+						["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
 					}),
 					i(18660, {	-- World Enlarger (TOY!)
-						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+						["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
 					}),
 				}),
 			},
 		}),
-		prof(20222, {	-- Goblin Engineering
+		prof(GOBLIN_ENGINEERING, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
 			["groups"] = {
 				-- #if BEFORE WRATH
 				filter(BATTLE_PETS, {
 					i(11825, {	-- Pet Bombling (PET!)
-						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required, until Wrath)
+						["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required, until Wrath)
 					}),
 				}),
 				-- #endif
 				filter(MISC, {
 					i(10587, {	-- Goblin Bomb Dispenser
-						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+						["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 					}),
 					i(10543, {	-- Goblin Construction Helmet
-						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+						["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 					}),
 					i(10727, {	-- Goblin Dragon Gun
-						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+						["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 					}),
 					i(18587),	-- Goblin Jumper Cables XL
 					i(10542, {	-- Goblin Mining Helmet
-						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+						["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 					}),
 					i(10577),	-- Goblin Mortar
 					i(7189),	-- Goblin Rocket Boots
@@ -1120,7 +1120,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				filter(TOYS, {
 					i(18984, {	-- Dimensional Ripper - Everlook (TOY!)
-						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+						["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 					}),
 				}),
 			},
@@ -1263,6 +1263,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(16006),	-- Delicate Arcanite Converter
 			i(15992),	-- Dense Blasting Powder
+			applyclassicphase(TBC_PHASE_ONE, i(7191, {["timeline"] = {ADDED_2_1_0}})),	-- Fused Wiring
 			i(10558),	-- Gold Power Core
 			i(4389),	-- Gyrochronatom
 			i(4359),	-- Handful of Copper Bolts

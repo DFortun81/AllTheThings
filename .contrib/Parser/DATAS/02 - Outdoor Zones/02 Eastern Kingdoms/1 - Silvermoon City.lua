@@ -758,16 +758,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 75.8, 40.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(23799, {	-- Schematic: Adamantite Rifle
+						i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 							["isLimited"] = true,
 						}),
-						applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine
+						applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
 							["isLimited"] = true,
 						})),
-						i(23816, {	-- Schematic: Fel Iron Toolbox
+						i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23811, {	-- Schematic: White Smoke Flare
+						i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

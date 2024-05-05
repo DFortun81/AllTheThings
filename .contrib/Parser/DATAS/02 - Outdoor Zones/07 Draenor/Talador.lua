@@ -2707,30 +2707,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.6, 30.2, TALADOR },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(23799, {	-- Schematic: Adamantite Rifle
-								["requireSkill"] = ENGINEERING,
+							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23807, {	-- Schematic: Adamantite Scope
-								["requireSkill"] = ENGINEERING,
+							i(23807, {	-- Schematic: Adamantite Scope (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23803, {	-- Schematic: Cogspinner Goggles
-								["requireSkill"] = ENGINEERING,
+							i(23803, {	-- Schematic: Cogspinner Goggles (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23816, {	-- Schematic: Fel Iron Toolbox
-								["requireSkill"] = ENGINEERING,
+							i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
-								["requireSkill"] = ENGINEERING,
+							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 						},
 					}),

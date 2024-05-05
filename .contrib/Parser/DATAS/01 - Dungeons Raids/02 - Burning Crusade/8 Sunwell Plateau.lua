@@ -46,17 +46,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				i(35211),	-- Plans: Hard Khorium Battleplate (RECIPE!)
 				i(35210),	-- Plans: Sunblessed Breastplate (RECIPE!)
 				i(35208),	-- Plans: Sunblessed Gauntlets (RECIPE!)
-				i(35186),	-- Schematic: Annihilator Holo-Gogs
-				i(35196),	-- Schematic: Hard Khorium Goggles
-				i(35190),	-- Schematic: Hyper-Magnified Moon Specs
-				i(35187),	-- Schematic: Justicebringer 3000 Specs
-				i(35193),	-- Schematic: Lightning Etched Specs
-				i(35195),	-- Schematic: Mayhem Projection Goggles
-				i(35189),	-- Schematic: Powerheal 9000 Lens
-				i(35192),	-- Schematic: Primal-Attuned Goggles
-				i(35197),	-- Schematic: Quad Deathblow X44 Goggles
-				i(35194),	-- Schematic: Surestrike Goggles v3.0
-				i(35191),	-- Schematic: Wonderheal XT68 Shades
+				i(35186),	-- Schematic: Annihilator Holo-Gogs (RECIPE!)
+				i(35196),	-- Schematic: Hard Khorium Goggles (RECIPE!)
+				i(35190),	-- Schematic: Hyper-Magnified Moon Specs (RECIPE!)
+				i(35187),	-- Schematic: Justicebringer 3000 Specs (RECIPE!)
+				i(35193),	-- Schematic: Lightning Etched Specs (RECIPE!)
+				i(35195),	-- Schematic: Mayhem Projection Goggles (RECIPE!)
+				i(35189),	-- Schematic: Powerheal 9000 Lens (RECIPE!)
+				i(35192),	-- Schematic: Primal-Attuned Goggles (RECIPE!)
+				i(35197),	-- Schematic: Quad Deathblow X44 Goggles (RECIPE!)
+				i(35194),	-- Schematic: Surestrike Goggles v3.0 (RECIPE!)
+				i(35191),	-- Schematic: Wonderheal XT68 Shades (RECIPE!)
 				i(35273),	-- Study of Advanced Smelting (RECIPE!)
 				-- #if BEFORE MOP
 				i(34349, {	-- Blade of Life's Inevitability

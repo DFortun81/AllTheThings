@@ -11,6 +11,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(10585),	-- Goblin Radio
 				i(10719),	-- Mobile Alarm
 			}),
+			expansion(EXPANSION.TBC, {
+				-- 2.0.1
+				expansion(EXPANSION.TBC, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
+					i(23770),	-- Blue Smoke Flare
+					i(23820),	-- Critter Enlarger
+					i(23832),	-- Gnomish Tonk Controller
+					i(23831),	-- Goblin Tonk Controller
+					i(23840),	-- Remote Mail Terminal
+				})),
+			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
@@ -105,6 +115,18 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				r(12720),	-- Goblin "Boom" Box
 				r(12722),	-- Goblin Radio
 				r(12900),	-- Mobile Alarm
+			}),
+			expansion(EXPANSION.TBC, {
+				-- 2.0.1
+				expansion(EXPANSION.TBC, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
+					r(30573),	-- Gnomish Tonk Controller
+					r(30561),	-- Goblin Tonk Controller
+					-- With SpellID attached
+					i(23813),	-- Schematic: Blue Smoke Flare
+					i(23882),	-- Schematic: Critter Enlarger
+					i(23812),	-- Schematic: Red Smoke Flare
+					i(23885),	-- Schematic: Remote Mail Terminal
+				})),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
@@ -269,11 +291,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	}),
 	-- Needs Sorting
 	prof(ENGINEERING, {
-		expansion(EXPANSION.TBC, {
-			i(23813),	-- Schematic: Blue Smoke Flare [Removed in TBC Beta]
-			i(23882),	-- Schematic: Critter Enlarger [Removed in TBC Beta]
-			i(23812),	-- Schematic: Red Smoke Flare [Removed in TBC Beta]
-		}),
 		expansion(EXPANSION.WRATH, {
 			i(37589),	-- Hyper-Powered Mote Extractor
 		}),

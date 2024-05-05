@@ -2220,7 +2220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16050, {	-- Schematic: Delicate Arcanite Converter (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(32381, {	-- Schematic: Fused Wiring
+						i(32381, {	-- Schematic: Fused Wiring (RECIPE!)
 							["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 							-- #if BEFORE 5.0.4
 							["isLimited"] = true,
@@ -2251,14 +2251,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(14742, {	-- Zap Farflinger <Unbalanced Engineer>
 					["description"] = "Goblin Engineers can speak to Zap to learn the recipe.",
-					["requireSkill"] = 20222,	-- Goblin Engineering
+					["requireSkill"] = GOBLIN_ENGINEERING,
 					-- #if AFTER CATA
 					["coord"] = { 59.6, 49.8, WINTERSPRING },
 					-- #else
 					["coord"] = { 61.2, 37.6, WINTERSPRING },
 					-- #endif
 					["groups"] = {
-						recipe(23486),	-- Dimensional Ripper - Everlook
+						r(23486),	-- Dimensional Ripper - Everlook
 					},
 				}),
 			}),

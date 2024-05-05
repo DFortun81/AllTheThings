@@ -1613,7 +1613,7 @@ root(ROOTS.Zones, {
 								},
 								["coord"] = { 81.5, 40.2, ZANGARMARSH },
 							}),
-							i(23888),	-- Schematic: Zapthrottle Mote Extractor
+							i(23888),	-- Schematic: Zapthrottle Mote Extractor (RECIPE!)
 						},
 					}),
 					q(9769, {	-- There's No Explanation for Fashion
@@ -1971,10 +1971,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.4, 48.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
+							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23811, {	-- Schematic: White Smoke Flare
+							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2070,7 +2070,7 @@ root(ROOTS.Zones, {
 							i(22918),	-- Recipe: Transmute Primal Water to Air (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35342)),	-- Satin Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35408)),	-- Savage Plate Gauntlets
-							i(23814),	-- Schematic: Green Smoke Flare
+							i(23814),	-- Schematic: Green Smoke Flare (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35385)),	-- Seer's Linked Spaulders
 							applyclassicphase(TBC_PHASE_TWO, i(35387)),	-- Seer's Mail Gauntlets
 							applyclassicphase(TBC_PHASE_TWO, i(35394)),	-- Seer's Ringmail Legguards

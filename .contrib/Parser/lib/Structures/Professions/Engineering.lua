@@ -54,6 +54,8 @@ APPRENTICE_JOURNEYMAN_ENGINEERING = {
 	r(3978),	-- Standard Scope
 	r(3932),	-- Target Dummy
 	r(3942),	-- Whirring Bronze Gizmo
+
+	r(39895, {["timeline"] = {ADDED_5_0_4}}),	-- Fused Wiring
 };
 EXPERT_ARTISAN_ENGINEERING = {
 	r(4038, {	-- Engineering (Expert)
@@ -123,7 +125,7 @@ EXPERT_ARTISAN_ENGINEERING = {
 	r(23071, {["timeline"] = {ADDED_2_0_1}}),	-- Truesilver Transformer
 	r(12591),	-- Unstable Trigger
 };
-GNOMISH_ENGINEERING = {
+CLASSIC_GNOMISH_ENGINEERING = {
 	r(20219, {	-- Gnomish Engineer
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
@@ -139,7 +141,7 @@ GNOMISH_ENGINEERING = {
 	r(12899),	-- Gnomish Shrink Ray
 	r(12895),	-- Inlaid Mithril Cylinder Plans
 };
-GOBLIN_ENGINEERING = {
+CLASSIC_GOBLIN_ENGINEERING = {
 	r(20222, {	-- Goblin Engineer
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
@@ -160,6 +162,79 @@ GOBLIN_ENGINEERING = {
 CLASSIC_ENGINEERING = appendGroups(APPRENTICE_JOURNEYMAN_ENGINEERING,
 -- #if AFTER 2.1.0
 EXPERT_ARTISAN_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
+TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(30350, {	-- Engineering (Master)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
+		-- #endif
+		["rank"] = 5,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264479, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Engineering
+	n(ARMOR, {
+		applyclassicphase(TBC_PHASE_TWO, r(41317, {["timeline"] = {ADDED_2_1_0}})),	-- Deathblow X11 Goggles
+		applyclassicphase(TBC_PHASE_TWO, r(41320, {["timeline"] = {ADDED_2_1_0}})),	-- Destruction Holo-gogs
+		applyclassicphase(TBC_PHASE_TWO, r(40274, {["timeline"] = {ADDED_2_1_0}})),	-- Furious Gizmatic Goggles
+		applyclassicphase(TBC_PHASE_TWO, r(41315, {["timeline"] = {ADDED_2_1_0}})),	-- Gadgetstorm Goggles
+		applyclassicphase(TBC_PHASE_TWO, r(41311, {["timeline"] = {ADDED_2_1_0}})),	-- Justicebringer 2000 Specs
+		applyclassicphase(TBC_PHASE_TWO, r(41316, {["timeline"] = {ADDED_2_1_0}})),	-- Living Replicator Specs
+		applyclassicphase(TBC_PHASE_TWO, r(41319, {["timeline"] = {ADDED_2_1_0}})),	-- Magnified Moon Specs
+		applyclassicphase(TBC_PHASE_TWO, r(41321, {["timeline"] = {ADDED_2_1_0}})),	-- Powerheal 4000 Lens
+		applyclassicphase(TBC_PHASE_TWO, r(41314, {["timeline"] = {ADDED_2_1_0}})),	-- Surestrike Goggles v2.0
+		applyclassicphase(TBC_PHASE_TWO, r(41312, {["timeline"] = {ADDED_2_1_0}})),	-- Tankatronic Goggles
+		applyclassicphase(TBC_PHASE_TWO, r(41318, {["timeline"] = {ADDED_2_1_0}})),	-- Wonderheal XT40 Shades
+	}),
+	filter(MISC, {
+		r(30311),	-- Adamantite Grenade
+		r(30310),	-- Fel Iron Bomb
+		r(30346, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_1}}),	-- Fel Iron Shells
+		r(39973, {["timeline"] = {ADDED_2_1_0}}),	-- Frost Grenade
+	}),
+	filter(REAGENTS, {
+		r(30306),	-- Adamantite Frame
+		r(30303),	-- Elemental Blasting Powder
+		r(30304),	-- Fel Iron Casing
+		r(30309),	-- Felsteel Stabilizer
+		r(30305),	-- Handful of Fel Iron Bolts
+		r(30307),	-- Hardened Adamantite Tube
+		r(39971, {["timeline"] = {ADDED_2_1_0}}),	-- Icy Blasting Primers
+		r(30308),	-- Khorium Power Core
+	}),
+	n(WEAPONS, {
+		r(30312),	-- Fel Iron Musket
+		applyclassicphase(TBC_PHASE_TWO, r(41307, {["timeline"] = {ADDED_2_1_0}})),	-- Gyro-balanced Khorium Destroyer
+	}),
+}));
+TBC_GNOMISH_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(30575),	-- Gnomish Battle Goggles
+	r(30568),	-- Gnomish Flame Turret
+	r(30569),	-- Gnomish Poultryizer
+	r(30574),	-- Gnomish Power Goggles
+	r(30570),	-- Nigh-Invulnerability Belt
+}));
+TBC_GOBLIN_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(30565),	-- Foreman's Enchanted Helmet
+	r(30566),	-- Foreman's Reinforced Helmet
+	r(30563),	-- Goblin Rocket Launcher
+	r(30560),	-- Super Sapper Charge
+	r(30558),	-- The Bigger One
+}));
+ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_GNOMISH_ENGINEERING,
+-- #if AFTER 2.0.5
+TBC_GNOMISH_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
+ALL_GOBLIN_ENGINEERING = appendGroups(CLASSIC_GOBLIN_ENGINEERING,
+-- #if AFTER 2.0.5
+TBC_GOBLIN_ENGINEERING
 -- #else
 	{}
 -- #endif

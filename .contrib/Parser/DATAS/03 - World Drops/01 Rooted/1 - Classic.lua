@@ -3799,4 +3799,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(10301),	-- Pattern: White Bandit Mask
 		}),
 	}),
+	filter(REAGENTS, {
+		i(7191),	-- Fused Wiring
+	}),
 }));

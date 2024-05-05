@@ -166,9 +166,6 @@ root(ROOTS.Zones, {
 						["OnTooltip"] = OnTooltipForNetherwing,
 					})),
 				}),
-				prof(FISHING, {
-					i(34867),	-- Monstrous Felblood Snapper
-				}),
 				n(FLIGHT_PATHS, {
 					fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 						["cr"] = 19581,	-- Maddix <Flight Master>
@@ -193,21 +190,40 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				prof(HERBALISM, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32468)),	-- Netherdust Pollen
-				}),
-				prof(MINING, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32464)),	-- Nethercite Ore
-				}),
 				petbattles({
 					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
 						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 					}),
 				}),
-				prof(SKINNING, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32470)),	-- Nethermine Flayer Hide
+				n(PROFESSIONS, {
+					prof(ENGINEERING, {
+						["crs"] = {
+							24868,	-- Niobe Whizzlespark <Engineering Trainer>
+							25099,	-- Jonathan Garrett <Engineering Trainer>
+						},
+						["coords"] = {
+							{ 36.6, 55.0, SHADOWMOON_VALLEY },
+							{ 29.2, 28.6, SHADOWMOON_VALLEY },
+						},
+						["g"] = sharedData({ ["timeline"] = { ADDED_2_3_0 } }, {
+							r(44155),	-- Flying Machine
+							r(44157),	-- Turbo-Charged Flying Machine
+						}),
+					}),
+					prof(FISHING, {
+						i(34867),	-- Monstrous Felblood Snapper
+					}),
+					prof(HERBALISM, {
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32468)),	-- Netherdust Pollen
+					}),
+					prof(MINING, {
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32464)),	-- Nethercite Ore
+					}),
+					prof(SKINNING, {
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32470)),	-- Nethermine Flayer Hide
+					}),
 				}),
 				n(QUESTS, {
 					q(10642, {	-- A Ghost in the Machine
@@ -2047,7 +2063,7 @@ root(ROOTS.Zones, {
 							30758,	-- Aldor Guardian Rifle
 						}},
 						["groups"] = {
-							i(23807, {	-- Schematic: Adamantite Scope
+							i(23807, {	-- Schematic: Adamantite Scope (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2251,7 +2267,7 @@ root(ROOTS.Zones, {
 					i(22924, {	-- Recipe: Major Shadow Protection Potion (RECIPE!)
 						["crs"] = { 21302 },	-- Shadow Council Warlock
 					}),
-					i(23806, {	-- Schematic: Hyper-Vision Goggles
+					i(23806, {	-- Schematic: Hyper-Vision Goggles (RECIPE!)
 						["crs"] = { 19755 },	-- Mo'arg Weaponsmith
 					}),
 					i(32724, {	-- Sludge-Covered Object (The Great Murkblood Revolt)

@@ -442,6 +442,17 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_ENCHANTING,
 					}),
+					prof(ENGINEERING, {
+						["crs"] = {
+							18775,	-- Lebowski <Engineering Trainer> (A)
+							18752,	-- Zebig <Engineering Trainer> (H)
+						},
+						["coords"] = {
+							{ 55.6, 65.6, HELLFIRE_PENINSULA },
+							{ 54.8, 38.6, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_ENGINEERING,
+					}),
 					prof(HERBALISM, {
 						["crs"] = {
 							18776,	-- Rorelien <Herbalism Trainer> (A)
@@ -3296,10 +3307,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(23803, {	-- Schematic: Cogspinner Goggles
+							i(23803, {	-- Schematic: Cogspinner Goggles (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
+							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -3392,10 +3403,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.1, 81.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(23807, {	-- Schematic: Adamantite Scope
+							i(23807, {	-- Schematic: Adamantite Scope (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23803, {	-- Schematic: Cogspinner Goggles
+							i(23803, {	-- Schematic: Cogspinner Goggles (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
