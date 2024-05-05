@@ -203,8 +203,8 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 		end
 
-		-- Pre-Cata Known By types
-		if app.GameBuildVersion < 40000 then
+		-- Pre-MOP Known By types
+		if app.GameBuildVersion < 50000 then
 			id = reference.achievementID;
 			if id then
 				-- Prior to Cata, Achievements were not tracked account wide
@@ -224,7 +224,11 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				id = reference.sourceID;
 				for guid,character in pairs(ATTCharacterData) do
 					if character.Transmog and character.Transmog[id] then
-						knownByGUID[guid] = character;
+						if ATTAccountWideData.Sources and ATTAccountWideData.Sources[id] then
+							character.Transmog[id] = nil;
+						else
+							knownByGUID[guid] = character;
+						end
 					end
 				end
 				if app.GameBuildVersion < 30000 then
