@@ -69,6 +69,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
+			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 				title(56),	-- Deadly Gladiator <Name>
@@ -1879,6 +1880,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
+			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 				title(132),	-- Furious Gladiator <Name>
@@ -2624,6 +2626,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 			-- #endif
+			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
 				title(134),	-- Relentless Gladiator <Name>
@@ -3387,6 +3390,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
 			-- #endif
+			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 				title(142),	-- Wrathful Gladiator <Name>

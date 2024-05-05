@@ -433,7 +433,10 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_VICIOUS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({
+				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
+				["u"] = ELITE_PVP_REQUIREMENT,
+			}, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2135,7 +2138,10 @@ root(ROOTS.PVP, {
 			})),
 		}),
 		applyclassicphase(CATA_PHASE_THREE, n(SEASON_RUTHLESS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({
+				["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
+				["u"] = ELITE_PVP_REQUIREMENT,
+			}, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3510,7 +3516,10 @@ root(ROOTS.PVP, {
 			})),
 		})),
 		applyclassicphase(CATA_PHASE_FOUR, n(SEASON_CATACLYSMIC, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({
+				["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
+				["u"] = ELITE_PVP_REQUIREMENT,
+			}, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic
 					["races"] = ALLIANCE_ONLY,
 				}),

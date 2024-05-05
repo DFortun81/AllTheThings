@@ -1312,10 +1312,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
 		n(ACHIEVEMENTS, bubbleDown({
-				["timeline"] = { ADDED_2_1_2, REMOVED_2_3_0 },
-				-- #if BEFORE WRATH
-				["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
-				-- #endif
+			["timeline"] = { ADDED_2_1_2, REMOVED_2_3_0 },
+			-- #if BEFORE WRATH
+			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
+			-- #endif
+			["u"] = ELITE_PVP_REQUIREMENT,
 		}, {
 			ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 				title(37),	-- Merciless Gladiator <Name>
@@ -2045,6 +2046,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			-- #if BEFORE WRATH
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif
+			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 				title(40),	-- Vengeful Gladiator <Name>
@@ -2817,6 +2819,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			-- #if BEFORE 4.0.1
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
 			-- #endif
+			["u"] = ELITE_PVP_REQUIREMENT,
 		},{
 			ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 				title(49),	-- Brutal Gladiator <Name>
