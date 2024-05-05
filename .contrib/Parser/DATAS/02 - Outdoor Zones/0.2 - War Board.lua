@@ -444,10 +444,12 @@ root(ROOTS.Zones, {
 				["lvl"] = 98,
 			}),
 			q(39202, {	-- Hero's Call: Netherstorm!
+				["maps"] = { NETHERSTORM },
 				["isBreadcrumb"] = true,
 				["lvl"] = 67,
 			}),
 			q(28699, {	-- Hero's Call: Northern Stranglethorn!
+				["maps"] = { NORTHERN_STRANGLETHORN },
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
 			}),

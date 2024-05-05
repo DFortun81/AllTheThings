@@ -1617,9 +1617,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE 10.1.7
 				n(1944, {	-- Rot Hide Bruiser
-					-- Added to Tirisfall in 10.1.7
+					-- Moved to Tirisfall in 10.1.7
 					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {

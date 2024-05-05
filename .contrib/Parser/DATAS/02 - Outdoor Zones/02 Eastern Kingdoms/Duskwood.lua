@@ -189,6 +189,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "n", 576 },	-- Watcher Ladimore
 						{ "i", 2162 },	-- Sarah's Ring
+						{ "o", 61 },	-- A Weathered Grave
 					},
 					["sourceQuest"] = 229,	-- The Daughter Who Lived
 					["coord"] = { 73.6, 46.8, DUSKWOOD },
@@ -205,6 +206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "n", 576 },	-- Watcher Ladimore
 						{ "i", 2162 },	-- Sarah's Ring
+						{ "o", 61 },	-- A Weathered Grave
 					},
 					["sourceQuest"] = 26796,	-- The Daughter Who Lived
 					["coord"] = { 73.6, 46.8, DUSKWOOD },
