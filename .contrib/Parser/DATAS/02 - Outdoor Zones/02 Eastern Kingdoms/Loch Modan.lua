@@ -2202,7 +2202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE 10.1.7
 				-- Moved to Searing Gorge in 10.1.7
 				i(2274, {	-- Sapper's Gloves
 					["timeline"] = { REMOVED_4_0_3 },
