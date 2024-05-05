@@ -13,6 +13,8 @@
 12749@@@Mithril Mechanical Dragonling
 13166@@@Battle Chicken
 13258@@@Summon Goblin Bomb
+82207@@@Explosive Bolts
+105518@@@Open Box
 110955@@@Release Spirit
 256133@@@Potion of Specter Swiftness
 256134@@@Potion of Soul Purity

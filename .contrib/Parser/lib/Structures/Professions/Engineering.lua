@@ -239,6 +239,68 @@ TBC_GOBLIN_ENGINEERING
 	{}
 -- #endif
 );
+CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	r(82774, {	-- Blacksmithing (Illustrious)
+		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 7,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264483, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Engineering
+	n(ARMOR, {
+		r(81722),	-- Agile Bio-Optic Killshades
+		r(84406),	-- Authentic Jr. Engineer Goggles
+		r(81724),	-- Camouflage Bio-Optic Killshades
+		r(81716),	-- Deadly Bio-Optic Killshades
+		r(81720),	-- Energized Bio-Optic Killshades
+		r(81725),	-- Lightweight Bio-Optic Killshades
+		r(81714),	-- Reinforced Bio-Optic Killshades
+		r(81715),	-- Specialized Bio-Optic Killshades
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(82177, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Quickflip Deflection Plates
+		r(82175, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Synapse Springs
+		r(82180, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Tazik Shocker
+		r(82201, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Z50 Mana Gulper
+	}),
+	filter(BATTLE_PETS, {
+		r(84413),	-- De-Weaponized Mechanical Companion
+		r(84412),	-- Personal World Destroyer
+	}),
+	filter(MISC, {
+		r(95707),	-- Big Daddy
+		r(95703),	-- Electrostatic Condenser
+		r(84416),	-- Elementium Toolbox
+		r(84429),	-- Goblin Barbecue
+		r(84430),	-- Heat-Treated Spinning Lure
+		r(84411),	-- High-Powered Bolt Gun
+		r(84415),	-- Lure Master Tackle Box
+		r(84409),	-- Volatile Seaforium Blastpack
+	}),
+	filter(REAGENTS, {
+		r(94748),	-- Electrified Ether
+		r(84403),	-- Handful of Obsidium Bolts
+	}),
+	filter(TOYS, {
+		r(95705),	-- Gnomish Gravity Well
+		r(84421),	-- Loot-a-Rang
+	}),
+	filter(TRINKET_F, {
+		r(84418),	-- Elementium Dragonling
+	}),
+	n(WEAPONS, {
+		r(84420),	-- Finely-Tuned Throat Needler
+		r(84432),	-- Kickback 5000
+		r(84431),	-- Overpowered Chicken Splitter
+		r(84417),	-- Volatile Thunderstick
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(84428),	-- Gnomish X-Ray Scope
+		r(84408),	-- R19 Threatfinder
+		r(84410),	-- Safety Catch Removal Kit
+	}),
+}));
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",

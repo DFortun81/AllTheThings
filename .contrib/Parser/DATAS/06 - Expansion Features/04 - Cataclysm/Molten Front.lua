@@ -686,8 +686,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						i(70121),	-- Ricket's Gun Show
 						i(70144),	-- Ricket's Magnetic Fireball
 						i(70120),	-- Rickety Belt
-						i(71078),	-- Schematic: Extreme-Impact Hole Puncher
-						i(70177),	-- Schematic: Flintlocke's Woodchucker
+						i(71078),	-- Schematic: Extreme-Impact Hole Puncher (RECIPE!)
+						i(70177),	-- Schematic: Flintlocke's Woodchucker (RECIPE!)
 						i(70118),	-- Widow Clutches
 					},
 				}),

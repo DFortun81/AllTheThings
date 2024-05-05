@@ -203,7 +203,7 @@ r(109077),	--
 r(109099),	-- Watergliding Jets
 r(110403),	-- Engineering
 r(126392),	-- Goblin Glider
-r(126731),	--
+r(126731),	-- Synapse Springs [Rank 2]
 r(127113),	-- Ghost Iron Bolts
 r(127114),	-- High-Explosive Gunpowder
 r(127115),	-- Lord Blastington's Scope of Doom

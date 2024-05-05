@@ -189,7 +189,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = CLASSIC_ENGINEERING,
+						["groups"] = appendGroups(CLASSIC_ENGINEERING,
+							-- #if AFTER CATA
+							CATA_ENGINEERING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 				}),
 				prof(FIRST_AID, {
@@ -3362,7 +3368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 74, 30, STORMWIND_CITY },
 						-- #endif
 					},
-					["maps"] = { 
+					["maps"] = {
 						-- #if AFTER CATA
 						HILLSBRAD_FOOTHILLS,
 						-- #else

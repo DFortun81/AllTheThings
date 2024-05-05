@@ -337,49 +337,61 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ENGINEERING, {
-		filter(CONSUMABLES, {
-			i(59594),	-- Gnomish X-Ray Scope
-			i(60223),	-- High-Powered Bolt Gun
-			i(70139),	-- Flintlocke's Woodchucker
+		n(DISCOVERY, {
+			r(84425),	-- Cardboard Assassin
+			r(84427),	-- Grounded Plasma Shield
+			r(84424),	-- Invisibility Field
+			r(82200),	-- Spinal Healing Injector
 		}),
 		n(ARMOR, {
-			-- Head
-			i(59455),	-- Agile Bio-Optic Killshades*
+			i(59455),	-- Agile Bio-Optic Killshades
 			i(60222),	-- Authentic Jr. Engineer Goggles
-			i(59453),	-- Camouflage Bio-Optic Killshades*
-			i(59456),	-- Deadly Bio-Optic Killshades*
-			i(59458),	-- Energized Bio-Optic Killshades*
-			i(59449),	-- Lightweight Bio-Optic Killshades*
-			i(59359),	-- Reinforced Bio-Optic Killshades*
-			i(59448),	-- Specialized Bio-Optic Killshades*
-			-- Trinkets
-			i(60403),	-- Elementium Dragonling*
-		}),
-		filter(BAGS, {
-			i(60217),	-- Elementium Toolbox*
-			i(60218),	-- Lure Master Tackle Box*
-		}),
-		filter(CONSUMABLES, {
-			i(67494, {	-- Electrostatic Condenser
-				["collectible"] = false,
-			}),
-			i(59595),	-- R19 Threatfinder
-			i(59596),	-- Safety Catch Removal Kit
+			i(59453),	-- Camouflage Bio-Optic Killshades
+			i(59456),	-- Deadly Bio-Optic Killshades
+			i(59458),	-- Energized Bio-Optic Killshades
+			i(59449),	-- Lightweight Bio-Optic Killshades
+			i(59359),	-- Reinforced Bio-Optic Killshades
+			i(59448),	-- Specialized Bio-Optic Killshades
 		}),
 		filter(BATTLE_PETS, {
 			i(60216),	-- De-Weaponized Mechanical Companion (PET!)
 			i(59597),	-- Personal World Destroyer (PET!)
 		}),
+		filter(MISC, {
+			i(63396),	-- Big Daddy
+			i(67494, {	-- Electrostatic Condenser
+				["collectible"] = false,
+			}),
+			i(60217),	-- Elementium Toolbox
+			applyclassicphase(CATA_PHASE_THREE, i(70139, {["timeline"] = {ADDED_4_2_0}})),	-- Flintlocke's Woodchucker
+			i(60858),	-- Goblin Barbecue
+			i(68049),	-- Heat-Treated Spinning Lure
+			i(60223),	-- High-Powered Bolt Gun
+			i(60218),	-- Lure Master Tackle Box
+			i(60853),	-- Volatile Seaforium Blastpack
+		}),
+		filter(REAGENTS, {
+			i(67749),	-- Electrified Ether
+			i(60224),	-- Handful of Obsidium Bolts
+		}),
 		filter(TOYS, {
 			i(40727),	-- Gnomish Gravity Well (TOY!)
 			i(60854),	-- Loot-A-Rang (TOY!)
 		}),
+		filter(TRINKET_F, {
+			i(60403),	-- Elementium Dragonling
+		}),
 		n(WEAPONS, {
-			i(71077),	-- Extreme-Impact Hole Puncher*
-			i(59598),	-- Finely-Tuned Throat Needler*
-			i(59367),	-- Kickback 5000*
-			i(59364),	-- Overpowered Chicken Splitter*
-			i(59599),	-- Volatile Thunderstick*
+			applyclassicphase(CATA_PHASE_THREE, i(71077, {["timeline"] = {ADDED_4_2_0}})),	-- Extreme-Impact Hole Puncher
+			i(59598),	-- Finely-Tuned Throat Needler
+			i(59367),	-- Kickback 5000
+			i(59364),	-- Overpowered Chicken Splitter
+			i(59599),	-- Volatile Thunderstick
+		}),
+		n(WEAPON_ENCHANTMENTS, {
+			i(59594),	-- Gnomish X-Ray Scope
+			i(59595),	-- R19 Threatfinder
+			i(59596),	-- Safety Catch Removal Kit
 		}),
 	}),
 	-- #if BEFORE 8.0.1

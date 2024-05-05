@@ -333,6 +333,69 @@ i(35194, 46113);	-- Surestrike Goggles v3.0
 i(35191, 46106);	-- Wonderheal XT68 Shades
 
 -----------------
+-- PATCH 4.0.1 --
+-----------------
+--- NYI ---
+i(0, 84344);		-- Unknown
+i(0, 84407);		-- Unknown
+i(0, 84422);		-- Unknown
+i(0, 84423);		-- Unknown
+i(0, 84433);		-- Unknown
+i(0, 84434);		-- Unknown
+
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 82774);		-- Engineering (Illustrious)
+i(0, 81722);		-- Agile Bio-Optic Killshades
+i(0, 84406);		-- Authentic Jr. Engineer Goggles
+i(0, 95707);		-- Big Daddy
+i(0, 81724);		-- Camouflage Bio-Optic Killshades
+i(0, 81716);		-- Deadly Bio-Optic Killshades
+i(0, 84413);		-- De-Weaponized Mechanical Companion
+i(0, 94748);		-- Electrified Ether
+i(0, 95703);		-- Electrostatic Condenser
+i(0, 84418);		-- Elementium Dragonling
+i(0, 84416);		-- Elementium Toolbox
+i(0, 81720);		-- Energized Bio-Optic Killshades
+i(0, 84420);		-- Finely-Tuned Throat Needler
+i(0, 95705);		-- Gnomish Gravity Well
+i(0, 84428);		-- Gnomish X-Ray Scope
+i(0, 84429);		-- Goblin Barbecue
+i(0, 84403);		-- Handful of Obsidium Bolts
+i(0, 84430);		-- Heat-Treated Spinning Lure
+i(0, 84411);		-- High-Powered Bolt Gun
+i(0, 84432);		-- Kickback 5000
+i(0, 81725);		-- Lightweight Bio-Optic Killshades
+i(0, 84421);		-- Loot-a-Rang
+i(0, 84415);		-- Lure Master Tackle Box
+i(0, 84431);		-- Overpowered Chicken Splitter
+i(0, 84412);		-- Personal World Destroyer
+i(0, 82177);		-- Quickflip Deflection Plates [REMOVED: 6.0.2]
+i(0, 84408);		-- R19 Threatfinder
+i(0, 81714);		-- Reinforced Bio-Optic Killshades
+i(0, 84410);		-- Safety Catch Removal Kit
+i(0, 81715);		-- Specialized Bio-Optic Killshades
+i(0, 82175);		-- Synapse Springs [Rank 1] [REMOVED: 6.0.2]
+i(0, 82180);		-- Tazik Shocker [REMOVED: 6.0.2]
+i(0, 84409);		-- Volatile Seaforium Blastpack
+i(0, 84417);		-- Volatile Thunderstick
+i(0, 82201);		-- Z50 Mana Gulper [REMOVED: 5.0.4]
+--- DISCOVERY ---
+i(0, 84425);		-- Cardboard Assassin
+i(0, 84427);		-- Grounded Plasma Shield
+i(0, 84424);		-- Invisibility Field
+i(0, 82200);		-- Spinal Healing Injector
+
+-----------------
+-- PATCH 4.2.0 --
+-----------------
+--- ITEM ---
+i(71078, 100687);	-- Extreme-Impact Hole Puncher
+i(70177, 100587);	-- Flintlocke's Woodchucker
+
+-----------------
 -- PATCH 6.0.2 --
 -----------------
 --- NYI ---

@@ -128,6 +128,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(23885),	-- Schematic: Remote Mail Terminal
 				})),
 			}),
+			expansion(EXPANSION.CATA, {
+				-- 4.0.1
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+					r(84344),	-- Unknown
+					r(84407),	-- Unknown
+					r(84422),	-- Unknown
+					r(84423),	-- Unknown
+					r(84433),	-- Unknown
+					r(84434),	-- Unknown
+				})),
+			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {

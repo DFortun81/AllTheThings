@@ -206,7 +206,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(11017, {	-- Roxxik <Engineering Trainer>
 						["coord"] = { 56.8, 56.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_ENGINEERING,
+						["groups"] = appendGroups(CLASSIC_ENGINEERING,
+							-- #if AFTER CATA
+							CATA_ENGINEERING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 				}),
 				prof(FIRST_AID, {
