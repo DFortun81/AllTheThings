@@ -135,8 +135,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.WRATH, {
-				-- 3.0.1
-				expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_1 } }, {
+				-- 3.0.2
+				expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					r(49383),	-- Engineering
 					r(56273),	-- Wormhole: Gadgetzan
 					r(53280),	-- Unknown

@@ -333,7 +333,7 @@ i(35194, 46113);	-- Surestrike Goggles v3.0
 i(35191, 46106);	-- Wonderheal XT68 Shades
 
 -----------------
--- PATCH 3.0.1 --
+-- PATCH 3.0.2 --
 -----------------
 --- NYI ---
 i(0, 49383);		-- Engineering
