@@ -101,6 +101,7 @@ EXPERT_ARTISAN_ENGINEERING = {
 	r(12590),	-- Gyromatic Micro-Adjustor
 	r(12619),	-- Hi-Explosive Bomb
 	r(12596, {["timeline"] = {REMOVED_4_0_1}}),	-- Hi-Impact Mithril Slugs
+	r(63750, {["timeline"] = {ADDED_3_1_0}}),	-- High-powered Flashlight
 	r(3962),	-- Iron Grenade
 	r(3958),	-- Iron Strut
 	r(3939, {["timeline"] = {ADDED_4_1_0}}),	-- Lovingly Crafted Boomstick
@@ -225,22 +226,117 @@ TBC_GOBLIN_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timelin
 	r(30560),	-- Super Sapper Charge
 	r(30558),	-- The Bigger One
 }));
-ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_GNOMISH_ENGINEERING,
+CLASSIC_TBC_GNOMISH_ENGINEERING = appendGroups(CLASSIC_GNOMISH_ENGINEERING,
 -- #if AFTER 2.0.5
 TBC_GNOMISH_ENGINEERING
 -- #else
 	{}
 -- #endif
 );
-ALL_GOBLIN_ENGINEERING = appendGroups(CLASSIC_GOBLIN_ENGINEERING,
+CLASSIC_TBC_GOBLIN_ENGINEERING = appendGroups(CLASSIC_GOBLIN_ENGINEERING,
 -- #if AFTER 2.0.5
 TBC_GOBLIN_ENGINEERING
 -- #else
 	{}
 -- #endif
 );
+WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(51306, {	-- Engineering (Grand Master)
+		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 65,
+		-- #endif
+		["rank"] = 6,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264481, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Engineering
+	n(ARMOR, {
+		r(56480),	-- Armored Titanium Goggles
+		r(56483),	-- Charged Titanium Specs
+		r(56487),	-- Electroflux Sight Enhancers
+		r(56486),	-- Greensight Gogs
+		r(56465),	-- Mechanized Snow Goggles
+		r(61481),	-- Mechanized Snow Goggles
+		r(61482),	-- Mechanized Snow Goggles
+		r(61483),	-- Mechanized Snow Goggles
+		r(56574),	-- Truesight Ice Blinders
+		r(62271, {["timeline"] = {ADDED_3_0_8}}),	-- Unbreakable Healing Amplifiers
+		r(56484),	-- Visage Liquification Goggles
+		r(56481),	-- Weakness Spectralizers
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(54736),	-- EMP Generator[MoP+] \\ Personal Electromagnetic Pulse Generator[Wrath-MoP]
+		r(55002),	-- Flexweave Underlay
+		r(54793),	-- Frag Belt
+		r(54998, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Hand-Mounted Pyro Rocket
+		r(54999, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Hyperspeed Accelerators
+		r(67839, {["timeline"] = {ADDED_3_2_0}}),	-- Mind Amplification Dish
+		r(55016),	-- Nitro Boosts
+		r(63770, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Reticulated Armor Webbing
+		r(63765, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Springy Arachnoweave
+	}),
+	filter(MISC, {
+		r(56461),	-- Bladed Pickaxe
+		r(56468),	-- Box of Bombs
+		r(56460),	-- Cobalt Frag Bomb
+		r(56463),	-- Explosive Decoy
+		r(56462),	-- Gnomish Army Knife
+		r(67326, {["timeline"] = {ADDED_3_2_0}}),	-- Goblin Beam Welder
+		r(56459),	-- Hammer Pick
+		r(56476),	-- Healing Injector Kit
+		r(56474, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Mammoth Cutters
+		r(56477),	-- Mana Injector Kit
+		r(56475, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Saronite Razorheads
+	}),
+	filter(REAGENTS, {
+		r(56471),	-- Froststeel Tube
+		r(56349),	-- Handful of Cobalt Bolts
+		r(56464),	-- Overcharged Capacitor
+		r(53281),	-- Volatile Blasting Trigger
+	}),
+	filter(TOYS, {
+		r(56472),	-- MOLL-E
+		r(67920, {["timeline"] = {ADDED_3_2_0}}),	-- Wormhole Generator: Northrend
+	}),
+	filter(TRINKET_F, {
+		r(56469),	-- Gnomish Lightning Generator
+		r(56467),	-- Noise Machine
+		r(56466),	-- Sonic Booster
+	}),
+	n(WEAPONS, {
+		r(56479),	-- Armor Plated Combat Shotgun
+		r(54353),	-- Mark "S" Boomstick
+		r(60874),	-- Nesingwary 4000
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(61471),	-- Diamond-Cut Refractor Scope
+		r(56478),	-- Heartseeker Scope
+		r(56470),	-- Sun Scope
+	}),
+}));
+WRATH_GNOMISH_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(56473), -- Gnomish X-Ray Specs
+}));
+WRATH_GOBLIN_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(56514), -- Global Thermal Sapper Charge
+}));
+ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
+-- #if AFTER 3.0.3
+WRATH_GNOMISH_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
+ALL_GOBLIN_ENGINEERING = appendGroups(CLASSIC_TBC_GOBLIN_ENGINEERING,
+-- #if AFTER 3.0.3
+WRATH_GOBLIN_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
 CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-	r(82774, {	-- Blacksmithing (Illustrious)
+	r(82774, {	-- Engineering (Illustrious)
 		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
@@ -302,7 +398,7 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] =
 	}),
 }));
 MOP_ENGINEERING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	r(110403, {	-- Blacksmithing (Zen Master)
+	r(110403, {	-- Engineering (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
@@ -374,7 +470,7 @@ MOP_ENGINEERING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = {
 }));
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	["description"] = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
 	["filterID"] = MISC,
 	["g"] = {
 		r(158739, {	-- Engineering (Draenor Master)

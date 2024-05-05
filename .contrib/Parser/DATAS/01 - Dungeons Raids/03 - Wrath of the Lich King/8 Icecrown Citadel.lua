@@ -926,9 +926,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(52023, {	-- Plans: Iceblade Arrow
+					i(52023, {	-- Plans: Iceblade Arrow (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						["timeline"] = { DELETED_4_0_1 },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
@@ -942,9 +942,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(52022, {	-- Plans: Shatter Rounds
+					i(52022, {	-- Plans: Shatter Rounds (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						["timeline"] = { DELETED_4_0_1 },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>

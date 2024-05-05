@@ -4586,7 +4586,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
 					["coord"] = { 72.2, 20.8, ICECROWN },
 					["groups"] = {
-						i(23817, {	-- Schematic: Titanium Toolbox
+						i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

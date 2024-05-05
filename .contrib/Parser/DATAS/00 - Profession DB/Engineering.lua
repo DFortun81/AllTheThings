@@ -333,6 +333,106 @@ i(35194, 46113);	-- Surestrike Goggles v3.0
 i(35191, 46106);	-- Wonderheal XT68 Shades
 
 -----------------
+-- PATCH 3.0.1 --
+-----------------
+--- NYI ---
+i(0, 49383);		-- Engineering
+i(0, 56273);		-- Wormhole: Gadgetzan
+i(0, 53280);		-- Unknown
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 51306);		-- Engineering (Grand Master)
+i(0, 56479);		-- Armor Plated Combat Shotgun
+i(0, 56480);		-- Armored Titanium Goggles
+i(0, 56461);		-- Bladed Pickaxe
+i(0, 56468);		-- Box of Bombs
+i(0, 56483);		-- Charged Titanium Specs
+i(0, 56460);		-- Cobalt Frag Bomb
+i(0, 61471);		-- Diamond-Cut Refractor Scope
+i(0, 56487);		-- Electroflux Sight Enhancers
+i(0, 54736);		-- EMP Generator[MoP+] \\ Personal Electromagnetic Pulse Generator[Wrath-MoP]
+i(0, 56463);		-- Explosive Decoy
+i(0, 55002);		-- Flexweave Underlay
+i(0, 54793);		-- Frag Belt
+i(0, 56471);		-- Froststeel Tube
+i(0, 56462);		-- Gnomish Army Knife
+i(0, 56469);		-- Gnomish Lightning Generator
+i(0, 56486);		-- Greensight Gogs
+i(0, 56459);		-- Hammer Pick
+i(0, 56349);		-- Handful of Cobalt Bolts
+i(0, 54998);		-- Hand-Mounted Pyro Rocket [REMOVED: 6.0.2]
+i(0, 56476);		-- Healing Injector Kit
+i(0, 56478);		-- Heartseeker Scope
+i(0, 54999);		-- Hyperspeed Accelerators [REMOVED: 6.0.2]
+i(0, 56474);		-- Mammoth Cutters [REMOVED: 4.0.1]
+i(0, 56477);		-- Mana Injector Kit
+i(0, 54353);		-- Mark "S" Boomstick
+i(0, 56465);		-- Mechanized Snow Goggles
+i(0, 61481);		-- Mechanized Snow Goggles
+i(0, 61482);		-- Mechanized Snow Goggles
+i(0, 61483);		-- Mechanized Snow Goggles
+i(0, 56472);		-- MOLL-E
+i(0, 60874);		-- Nesingwary 4000
+i(0, 55016);		-- Nitro Boosts
+i(0, 56467);		-- Noise Machine
+i(0, 56464);		-- Overcharged Capacitor
+i(0, 63770);		-- Reticulated Armor Webbing [REMOVED: 6.0.2]
+i(0, 56475);		-- Saronite Razorheads [REMOVED: 4.0.1]
+i(0, 56466);		-- Sonic Booster
+i(0, 63765);		-- Springy Arachnoweave [REMOVED: 6.0.2]
+i(0, 56470);		-- Sun Scope
+i(0, 56574);		-- Truesight Ice Blinders
+i(0, 56484);		-- Visage Liquification Goggles
+i(0, 53281);		-- Volatile Blasting Trigger
+i(0, 56481);		-- Weakness Spectralizers
+--- ITEM ---
+i(44502, 60866);	-- Mechano-Hog
+i(44503, 60867);	-- Mekgineer's Chopper
+--- QUEST ---
+i(0, 55252);		-- Scrapbot Construction Kit
+-- Gnomish Engineering
+i(0, 56473, nil, GNOMISH_ENGINEERING);	-- Gnomish X-Ray Specs
+-- Goblin Engineering
+i(0, 56514, nil, GOBLIN_ENGINEERING);	-- Global Thermal Sapper Charge
+
+-----------------
+-- PATCH 3.0.8 --
+-----------------
+--- TRAINER ---
+i(0, 62271);		-- Unbreakable Healing Amplifiers
+--- ITEM ---
+i(23817, 30349);	-- Titanium Toolbox
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+--- TRAINER ---
+i(0, 63750);		-- High-powered Flashlight
+
+-----------------
+-- PATCH 3.2.0 --
+-----------------
+--- TRAINER ---
+i(0, 67326);		-- Goblin Beam Welder
+i(0, 67839);		-- Mind Amplification Dish
+i(0, 67920);		-- Wormhole Generator: Northrend
+--- ITEM ---
+i(49050, 68067);	-- Jeeves
+--- NYI ---
+i(0, 67790);		-- Dimensional Folder: K3
+
+-----------------
+-- PATCH 3.3.0 --
+-----------------
+-- Gnomish Engineering
+i(52023, 72953, nil, GNOMISH_ENGINEERING);	-- Iceblade Arrow [REMOVED: 4.0.1]
+-- Goblin Engineering
+i(52022, 72952, nil, GOBLIN_ENGINEERING);	-- Shatter Rounds [REMOVED: 4.0.1]
+
+-----------------
 -- PATCH 4.0.1 --
 -----------------
 --- NYI ---
@@ -447,6 +547,15 @@ i(89997, 131258);	-- Jade Blossom Firework
 i(89992, 128262);	-- Serpent's Heart Firework
 
 -----------------
+-- PATCH 5.2.0 --
+-----------------
+--- NYI ---
+i(94894, 0);		-- Schematic: Advanced Refrigeration Unit
+i(97230, 0);		-- Schematic: Jard's Peculiar Energy Source
+i(94893, 0);		-- Schematic: Pierre
+i(94880, 0);		-- Schematic: Sky Golem
+
+-----------------
 -- PATCH 5.4.0 --
 -----------------
 --- ITEM ---
@@ -456,6 +565,8 @@ i(0, 139176);		-- Jard's Peculiar Energy Source
 i(0, 139196);		-- Pierre
 i(0, 143714);		-- Rascal-Bot
 i(0, 139192);		-- Sky Golem
+--- NYI ---
+i(100907, 0);		-- Schematic: Rascal-Bot
 
 -----------------
 -- PATCH 6.0.2 --

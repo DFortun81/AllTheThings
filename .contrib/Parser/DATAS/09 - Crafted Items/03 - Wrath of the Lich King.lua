@@ -463,6 +463,62 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(ENGINEERING, {
+		prof(GNOMISH_ENGINEERING, {
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["groups"] = {
+				filter(TOYS, {
+					i(40895, {	-- Gnomish X-Ray Specs (TOY!)
+						["requireSkill"] = GNOMISH_ENGINEERING,
+					}),
+					applyclassicphase(WRATH_PHASE_FOUR, i(52021, {["timeline"] = {ADDED_3_3_0, REMOVED_4_0_1}})),	-- Iceblade Arrow
+				}),
+			},
+		}),
+		prof(GOBLIN_ENGINEERING, {
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["groups"] = {
+				filter(MISC, {
+					i(42641),	-- Global Thermal Sapper Charge
+					applyclassicphase(WRATH_PHASE_FOUR, i(52020, {["timeline"] = {ADDED_3_3_0, REMOVED_4_0_1}})),	-- Shatter Rounds
+				}),
+			},
+		}),
+		n(ARMOR, {
+			i(42549),	-- Armored Titanium Goggles
+			i(42552),	-- Charged Titanium Specs
+			i(42555),	-- Electroflux Sight Enhancers
+			i(42554),	-- Greensight Gogs
+			i(41112),	-- Mechanized Snow Goggles
+			i(44740),	-- Mechanized Snow Goggles
+			i(44741),	-- Mechanized Snow Goggles
+			i(44742),	-- Mechanized Snow Goggles
+			i(42551),	-- Truesight Ice Blinders
+			i(44949, {["timeline"] = {ADDED_3_0_8}}),	-- Unbreakable Healing Amplifiers
+			i(42553),	-- Visage Liquification Goggles
+			i(42550),	-- Weakness Spectralizers
+		}),
+		filter(MISC, {
+			i(40893),	-- Bladed Pickaxe
+			i(44951, {	-- Box of Bombs
+				i(41119),	-- Saronite Bomb
+			}),
+			i(40771),	-- Cobalt Frag Bomb
+			i(40536),	-- Explosive Decoy
+			i(40772),	-- Gnomish Army Knife
+			i(47828, {["timeline"] = {ADDED_3_2_0}}),	-- Goblin Beam Welder
+			i(40892),	-- Hammer Pick
+			i(37567),	-- Healing Injector Kit
+			-- #if NOT ANYCLASSIC
+			i(49040, {	-- Jeeves
+				["description"] = "This still isn't a toy... BLIZZARD.",
+			}),
+			-- #endif
+			i(41164, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Mammoth Cutters
+			i(42546),	-- Mana Injector Kit
+			i(41165, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Saronite Razorheads
+			i(40769),	-- Scrapbot Construction Kit
+			i(23775, {["timeline"] = {ADDED_3_0_8}}),	-- Titanium Toolbox
+		}),
 		filter(MOUNTS, {
 			ach(2097, {	-- Get to the Choppa! (Engineering)
 				["providers"] = {
@@ -476,61 +532,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(41508),	-- Mechano-Hog (MOUNT!)
 			i(44413),	-- Mekgineer's Chopper (MOUNT!)
 		}),
-		-- #if NOT ANYCLASSIC
-		filter(MISC, {
-			applyclassicphase(WRATH_PHASE_THREE, i(49040, {	-- Jeeves  (TOY!) [Why isn't this a toy?!]
-				["description"] = "This still isn't a toy... BLIZZARD.",
-			})),
+		filter(REAGENTS, {
+			i(39683),	-- Froststeel Tube
+			i(39681),	-- Handful of Cobalt Bolts
+			i(39682),	-- Overcharged Capacitor
+			i(39690),	-- Volatile Blasting Trigger
 		}),
-		-- #endif
 		filter(TOYS, {
-			i(40895),	-- Gnomish X-Ray Specs (TOY!)
+			i(40768),	-- MOLL-E (TOY!)
 			-- #if ANYCLASSIC
-			applyclassicphase(WRATH_PHASE_THREE, i(49040, {	-- Jeeves  (TOY!) [Why isn't this a toy?!]
+			applyclassicphase(WRATH_PHASE_THREE, i(49040, {	-- Jeeves [Why isn't this a toy?!]
 				["type"] = "toyID",
 				["f"] = TOYS,
 			})),
 			-- #endif
-			i(40768),	-- MOLL-E (TOY!)
-			-- #if BEFORE 4.0.1
-			i(40727, {	-- Personal Ejector Seat / Gnomish Gravity Well (TOY!)
-				["description"] = "This later becomes the Gnomish Gravity Well toy.",
-				["timeline"] = { CREATED_3_3_0, ADDED_4_0_1 },
-			}),
-			-- #endif
-			i(48933),	-- Wormhole Generator: Northrend (TOY!)
+			i(48933, {["timeline"] = {ADDED_3_2_0}}),	-- Wormhole Generator: Northrend (TOY!)
 		}),
-		category(755, {	-- Scopes
-			i(41146),	-- Sun Scope
-			i(41167),	-- Heartseeker Scope
+		filter(TRINKET_F, {
+			i(41121),	-- Gnomish Lightning Generator
+			i(40865),	-- Noise Machine
+			i(40767),	-- Sonic Booster
 		}),
 		n(WEAPONS, {
-			-- Guns
-			i(41168),	-- Armor Plated Combat Shotgun*
-			i(39688),	-- Mark "S" Boomstick*
-			i(44504),	-- Nesingwary 4000*
+			i(41168),	-- Armor Plated Combat Shotgun
+			i(39688),	-- Mark "S" Boomstick
+			i(44504),	-- Nesingwary 4000
 		}),
-		n(ARMOR, {
-			-- Head
-			i(42549),	-- Armored Titanium Goggles*
-			i(42552),	-- Charged Titanium Specs*
-			i(42555),	-- Electroflux Sight Enhancers*
-			i(42554),	-- Greensight Gogs*
-			i(41112),	-- Mechanized Snow Goggles*
-			i(44740),	-- Mechanized Snow Goggles*
-			i(44741),	-- Mechanized Snow Goggles*
-			i(44742),	-- Mechanized Snow Goggles*
-			i(42551),	-- Truesight Ice Blinders*
-			i(44949),	-- Unbreakable Healing Amplifiers*
-			i(42553),	-- Visage Liquification Goggles*
-			i(42550),	-- Weakness Spectralizers*
-			-- Trinket
-			i(41121),	-- Gnomish Lightning Generator*
-			i(40865),	-- Noise Machine*
-			i(40767),	-- Sonic Booster*
-		}),
-		filter(BAGS, {
-			i(23775),	-- Titanium Toolbox*
+		n(WEAPON_ENCHANTMENTS, {
+			i(44739),	-- Diamond-Cut Refractor Scope
+			i(41167),	-- Heartseeker Scope
+			i(41146),	-- Sun Scope
 		}),
 	}),
 	-- #if BEFORE 8.0.1

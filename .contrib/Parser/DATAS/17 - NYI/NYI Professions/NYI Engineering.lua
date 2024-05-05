@@ -21,6 +21,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(23840),	-- Remote Mail Terminal
 				})),
 			}),
+			expansion(EXPANSION.WRATH, {
+				-- 3.x.x
+				n(P3xx, {
+					i(37589),	-- Hyper-Powered Mote Extractor
+				}),
+			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
@@ -128,6 +134,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(23885),	-- Schematic: Remote Mail Terminal
 				})),
 			}),
+			expansion(EXPANSION.WRATH, {
+				-- 3.0.1
+				expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_1 } }, {
+					r(49383),	-- Engineering
+					r(56273),	-- Wormhole: Gadgetzan
+					r(53280),	-- Unknown
+				})),
+
+				-- 3.2.0
+				expansion(EXPANSION.WRATH, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
+					r(67790),	-- Dimensional Folder: K3
+				})),
+			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
 				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
@@ -137,6 +156,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(84423),	-- Unknown
 					r(84433),	-- Unknown
 					r(84434),	-- Unknown
+				})),
+			}),
+			expansion(EXPANSION.MOP, {
+				-- 5.2.0
+				expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+					-- Without SpellID attached
+					i(94894),	-- Schematic: Advanced Refrigeration Unit
+					i(97230),	-- Schematic: Jard's Peculiar Energy Source
+					i(94893),	-- Schematic: Pierre
+					i(94880),	-- Schematic: Sky Golem
+				})),
+
+				-- 5.4.0
+				expansion(EXPANSION.MOP, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+					-- Without SpellID attached
+					i(100907),	-- Schematic: Rascal-Bot
 				})),
 			}),
 			expansion(EXPANSION.WOD, {
@@ -298,22 +333,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(199415),	-- Schematic: Zapthrottle Soul Inhaler (RECIPE!)
 				})),
 			}),
-		}),
-	}),
-	-- Needs Sorting
-	prof(ENGINEERING, {
-		expansion(EXPANSION.WRATH, {
-			i(37589),	-- Hyper-Powered Mote Extractor
-		}),
-		expansion(EXPANSION.MOP, {
-			-- 5.2.0
-			expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {CREATED_5_2_0} }, {
-				i(94894),	-- Schematic: Advanced Refrigeration Unit
-				i(97230),	-- Schematic: Jard's Peculiar Energy Source
-				i(94893),	-- Schematic: Pierre
-				i(94880),	-- Schematic: Sky Golem
-			})),
-			i(100907),	-- Schematic: Rascal-Bot
 		}),
 	}),
 }));

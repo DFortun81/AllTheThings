@@ -57,7 +57,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		else
 			AddQuestTooltip(tooltipInfo, "Complete %s", t.spear);
 		end
-		
+
 		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
 		if viscousRep > 0 then
@@ -1367,7 +1367,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = ENGINEERING,
 						["sourceQuest"] = 12888,	-- SCRAP-E
 						["groups"] = {
-							recipe(55252),	-- Schematic: Scrapbot Construction Kit
+							r(55252),	-- Scrapbot Construction Kit
 						},
 					}),
 					q(13047, {	-- The Reckoning
@@ -1736,7 +1736,7 @@ root(ROOTS.Zones, {
 					i(44724),	-- Everfrost Chip
 					i(44725),	-- Everfrost Chip
 					i(42780),	-- Relics of Ulduar
-					i(49050, {	-- Schematic: Jeeves
+					i(49050, {	-- Schematic: Jeeves (RECIPE!)
 						["crs"] = { 29724 },	-- Library Guardian
 					}),
 					i(43573, {	-- Tears of Bitter Anguish

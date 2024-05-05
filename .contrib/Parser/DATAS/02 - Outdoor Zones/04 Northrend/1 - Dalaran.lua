@@ -1450,6 +1450,12 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_ENCHANTING,
 						}),
 					}),
+					prof(ENGINEERING, {
+						n(28697, {	-- Timofey Oshenko <Engineering Trainer>
+							["coord"] = { 38.8, 25.8, NORTHREND_DALARAN },
+							["groups"] = WRATH_ENGINEERING,
+						}),
+					}),
 					prof(FIRST_AID, {
 						n(28706, {	-- Olisarra the Kind <Bandage Trainer>
 							["coord"] = { 36.8, 37.0, NORTHREND_DALARAN },
@@ -3026,8 +3032,9 @@ root(ROOTS.Zones, {
 							i(136782, {	-- Fireworks Instruction Manual (CI!)
 								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
-							i(23817, {	-- Schematic: Titanium Toolbox
+							i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { ADDED_3_0_8 },
 							}),
 						},
 					}),

@@ -2284,7 +2284,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_3_0_8 },
 							}),
 							i(38457),	-- Sawed-Off Hand Cannon
-							i(44503),	-- Schematic: Mekgineer's Chopper
+							i(44503),	-- Schematic: Mekgineer's Chopper (RECIPE!)
 							i(38453),	-- Shield of the Lion-Hearted
 							i(38465),	-- Vanguard Soldier's Dagger
 						},
@@ -2311,7 +2311,7 @@ root(ROOTS.Zones, {
 							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
 								["timeline"] = { ADDED_3_0_8 },
 							}),
-							i(44502),	-- Schematic: Mechano-Hog
+							i(44502),	-- Schematic: Mechano-Hog (RECIPE!)
 							i(38456),	-- Sin'dorei Recurve Bow
 							i(38454),	-- Warsong Punisher
 							i(38461),	-- Warsong Shanker

@@ -1203,7 +1203,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4378),	-- Heavy Dynamite
 			i(10562),	-- Hi-Explosive Bomb
 			i(10512, {["timeline"] = {REMOVED_4_0_1}}),	-- Hi-Impact Mithril Slugs
-			i(45631, {["timeline"] = {REMOVED_3_1_0}}),	-- High-Powered Flashlight
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(215127)),	-- High-Yield Radiation Bomb
 			-- #endif
@@ -1288,6 +1287,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		filter(TRINKET_F, {
 			i(16022),	-- Arcanite Dragonling
+			applyclassicphase(WRATH_PHASE_ONE, i(45631, {["timeline"] = {ADDED_3_1_0}})),	-- High-Powered Flashlight
 			i(4396),	-- Mechanical Dragonling
 			i(10576),	-- Mithril Mechanical Dragonling
 		}),

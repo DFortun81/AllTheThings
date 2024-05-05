@@ -3048,7 +3048,7 @@ root(ROOTS.Zones, {
 						i(133671, {	-- Schematic: Semi-Automagic Cranial Cannon [Rank 1] (RECIPE!)
 							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
 						}),
-						i(23817, {	-- Schematic: Titanium Toolbox
+						i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(136631),	-- Surface-to-Infernal Rocket Launcher
