@@ -1137,7 +1137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Muddy Journal Pages
 							["providers"] = {
 								{ "i",    938 },	-- Muddy Journal Pages
-								{ "n", 204591 },	-- Muddy Journal Page
+								{ "o", 204591 },	-- Muddy Journal Page
 							},
 							["coord"] = { 73.7, 79.1, DUSKWOOD },
 						}),
