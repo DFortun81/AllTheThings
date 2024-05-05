@@ -1448,10 +1448,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 48017,	-- Infected Sludge Guard
 						}),
 						i(65713, {	-- Monstrous Shield
-							["timeline"] = { ADDED_7_0_3 },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(65673, {	-- Aberrant Vest
-							["timeline"] = { ADDED_7_0_3 },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(131692, {	-- Sludge Guard Mail Vest
 							["timeline"] = { ADDED_7_0_3 },
