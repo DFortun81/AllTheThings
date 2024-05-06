@@ -2778,6 +2778,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
 								["isLimited"] = true,
