@@ -487,6 +487,7 @@ namespace ATT
                     case "repeatable":
                     case "isBounty":
                     case "isLimited":
+                    case "isGuild":
                     case "isDaily":
                     case "isWeekly":
                     case "isMonthly":

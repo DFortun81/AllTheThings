@@ -441,6 +441,7 @@ local fieldConverters = {
 	["garrisonBuildingID"] = function(group, value)
 		CacheField(group, "garrisonBuildingID", value);
 	end,
+	["guildAchievementID"] = cacheAchievementID,
 	["headerID"] = cacheHeaderID,
 	["heirloomUnlockID"] = function(group, value)
 		CacheField(group, "heirloomUnlockID", value);

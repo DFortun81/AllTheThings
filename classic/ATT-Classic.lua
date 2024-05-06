@@ -2480,6 +2480,10 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		return -1;
 	end
 	app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields);
+	app.CreateGuildAchievement = app.ExtendClass("Achievement", "GuildAchievement", "guildAchievementID", {
+		collectible = app.ReturnFalse,
+		achievementID = function(t) return t.guildAchievementID; end,
+	});
 	app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteriaID", {
 		["achievementID"] = function(t)
 			return t.achID or t.criteriaParent.achievementID;
@@ -2573,6 +2577,10 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			return GetAchievementCriteriaInfo;
 		end;
 	}, (function(t) return t.criteriaID < 100; end));
+	app.CreateGuildAchievementCriteria = app.ExtendClass("AchievementCriteria", "GuildAchievementCriteria", "guildCriteriaID", {
+		collectible = app.ReturnFalse,
+		criteriaID = function(t) return t.guildCriteriaID; end,
+	});
 
 	local function CheckAchievementCollectionStatus(achievementID)
 		achievementID = tonumber(achievementID) or achievementID;

@@ -1088,6 +1088,10 @@ namespace ATT
                     {
                         return "isBounty";
                     }
+                case "isGuild":
+                    {
+                        return "isGuild";
+                    }
                 case "isRepeatable":
                 case "repeatable":
                     {

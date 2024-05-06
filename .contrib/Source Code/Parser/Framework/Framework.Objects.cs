@@ -1501,6 +1501,7 @@ end");
                         case "sourceQuests":
                         case "isBounty":
                         case "isLimited":
+                        case "isGuild":
                         case "isDaily":
                         case "isWeekly":
                         case "isMonthly":
@@ -1772,6 +1773,7 @@ end");
                     case "DisablePartySync":
                     case "isBounty":
                     case "isLimited":
+                    case "isGuild":
                     case "isDaily":
                     case "isWeekly":
                     case "isMonthly":

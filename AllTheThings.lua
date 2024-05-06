@@ -4907,6 +4907,12 @@ app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");
 app.CreateAchievement = function(id, t)
 	return setmetatable(constructor(id, t, "achID"), app.BaseAchievement);
 end
+app.CreateGuildAchievement = function(id, t)
+	-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
+	t = app.CreateAchievement(id, t);
+	t.collectible = false;
+	return t;
+end
 
 -- Achievement Category Lib
 local categoryFields = {
@@ -5109,6 +5115,12 @@ app.CreateAchievementCriteria = function(id, t, init)
 		GetParentAchievementInfo(t, "");
 		-- app.PrintDebug("CreateAchievementCriteria.Init",t.hash)
 	end
+	return t;
+end
+app.CreateGuildAchievementCriteria = function(id, t)
+	-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
+	t = app.CreateAchievementCriteria(id, t);
+	t.collectible = false;
 	return t;
 end
 

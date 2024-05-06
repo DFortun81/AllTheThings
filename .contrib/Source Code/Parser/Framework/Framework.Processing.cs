@@ -1517,7 +1517,8 @@ namespace ATT
             // Guild Achievements are not collectible
             if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
             {
-                data["collectible"] = false;
+                //data["collectible"] = false;  // This is now handled in the class.
+                data["isGuild"] = true;
 
                 // Make sure any Criteria which are listed under Guild Achievements are also forced non-collectible
                 if (data.TryGetValue("g", out List<object> g))
@@ -1528,7 +1529,8 @@ namespace ATT
                         {
                             if (groupData.ContainsKey("criteriaID"))
                             {
-                                groupData["collectible"] = false;
+                                //groupData["collectible"] = false;  // This is now handled in the class.
+                                groupData["isGuild"] = true;
                             }
                         }
                     }

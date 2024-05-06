@@ -82,10 +82,12 @@
     <Compile Include="Export\Export %28Shortcuts%29.cs" />
     <Compile Include="Export\Export %28Structures%29.cs" />
     <Compile Include="Export\Export.cs" />
+    <Compile Include="Export\Object Data\CriteriaData.cs" />
     <Compile Include="Export\Object Data\FactionQuestData.cs" />
     <Compile Include="Export\Object Data\HeirloomData.cs" />
     <Compile Include="Export\Object Data\ItemData.cs" />
     <Compile Include="Export\Object Data\ItemSourceData.cs" />
+    <Compile Include="Export\Object Data\AchievementData.cs" />
     <Compile Include="Export\Object Data\RecipeData.cs" />
     <Compile Include="Export\Object Data\MountData.cs" />
     <Compile Include="Export\Object Data\NPCData.cs" />
