@@ -12,11 +12,9 @@ local C_QuestLog_IsOnQuest, ipairs, setmetatable, rawget
 	= C_QuestLog.IsOnQuest, ipairs, setmetatable, rawget;
 
 local GenerateGroupsForGenericSubGroup = function(t)
-	local spg = t._g
-	if spg then return spg end
-
-	-- only load this if we're in a tooltip-level build
-	if app.GetSkipLevel() ~= 1 then return end
+	-- only load this if we're in a tooltip-level or new window build
+	if app.GetSkipLevel() < 1 then return end
+	if rawget(t,"parent") then return end
 
 	-- local parent = rawget(t,"parent")
 	-- local window = app.GetRelativeValue(t, "window")
@@ -26,9 +24,11 @@ local GenerateGroupsForGenericSubGroup = function(t)
 	-- 	"sp",sp and app:SearchLink(sp),
 	-- 	"w",window and window.Suffix)
 
+	local spg = t._g
+	if spg then return spg end
+
 	-- direct object which is a child of a 'generic object container' can instead show the generic parent object content
 	-- when the direct object is the root of a window/tooltip
-	if rawget(t,"parent") then return end
 	local sp = t.sourceParent
 	if not sp then app.PrintDebug("spg.sourceParent MISSING??",app:SearchLink(t)) return end
 	spg = {}
@@ -73,6 +73,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 	end,
 },
 "AsGenericObjectContainer", {
+	__ignoreCaching = app.ReturnTrue,
 	trackable = app.ReturnTrue,
 	repeatable = function(t)
 		for _,group in ipairs(t.g) do

@@ -11036,8 +11036,8 @@ customWindowUpdates.ItemFilter = function(self, force)
 		self:BaseUpdate(force);
 	end
 end;
-customWindowUpdates.NWP = function(self)
-	if self:IsVisible() then
+customWindowUpdates.NWP = function(self, force)
+	if not self.initialized then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
 		end

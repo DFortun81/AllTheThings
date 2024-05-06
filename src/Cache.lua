@@ -102,6 +102,7 @@ local cacheMapID = function(group, mapID)
 	return true
 end
 local cacheObjectID = function(group, objectID)
+	if group.__ignoreCaching then return end
 	CacheField(group, "objectID", objectID);
 end;
 local cacheQuestID = function(group, questID)
@@ -164,6 +165,7 @@ if app.Debugging and app.Version == "[Git]" then
 		CacheField(group, "headerID", headerID);
 	end
 	cacheObjectID = function(group, objectID)
+		if group.__ignoreCaching then return end
 		if not app.ObjectNames[objectID] then
 			print("Object Missing Name ", objectID);
 			app.ObjectNames[objectID] = "Object #" .. objectID;
