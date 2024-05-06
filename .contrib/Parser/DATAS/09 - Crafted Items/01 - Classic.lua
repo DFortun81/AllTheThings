@@ -1511,24 +1511,96 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 		}),
-		i(13888),	-- Darkclaw Lobster
-		i(6291),	-- Raw Brilliant Smallfish
-		i(6308),	-- Raw Bristle Whisker Catfish
-		i(13754),	-- Raw Glossy Mightfish
-		i(21153),	-- Raw Greater Sagefish
-		i(6317),	-- Raw Loch Frenzy
-		i(6289),	-- Raw Longjaw Mud Snapper
-		i(8365),	-- Raw Mithril Head Trout
-		i(13759),	-- Raw Nightfin Snapper
-		i(6361),	-- Raw Rainbow Fin Albacore
-		i(13758),	-- Raw Redgill
-		i(6362),	-- Raw Rockscale Cod
-		i(21071),	-- Raw Sagefish
-		i(6303),	-- Raw Slitherskin Mackerel
-		i(4603),	-- Raw Spotted Yellowtail
-		i(13756),	-- Raw Summer Bass
-		i(13760),	-- Raw Sunscale Salmon
-		i(13889),	-- Raw Whitescale Salmon
+		i(13888, {	-- Darkclaw Lobster
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open sea water in Swamp of Sorrows and Blasted Lands.",
+			-- #endif
+		}),
+		i(6291, {	-- Raw Brilliant Smallfish
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in all low level zones around Azeroth.",
+			-- #endif
+		}),
+		i(6308, {	-- Raw Bristle Whisker Catfish
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in all intermediate level zones around Azeroth.",
+			-- #endif
+		}),
+		i(13754, {	-- Raw Glossy Mightfish
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open sea water in Tanaris.",
+			-- #endif
+		}),
+		i(21153, {	-- Raw Greater Sagefish
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in all high level vanilla zones around Azeroth.",
+			-- #endif
+		}),
+		i(6317, {	-- Raw Loch Frenzy
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in The Loch in Loch Modan.",
+			-- #endif
+		}),
+		i(6289, {	-- Raw Longjaw Mud Snapper
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in all low level zones around Azeroth.",
+			-- #endif
+		}),
+		i(8365, {	-- Raw Mithril Head Trout
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in Desolace, Dustwallow Marsh, Eastern Plaguelands, Feralas, Moonglade, and Western Plaguelands.",
+			-- #endif
+		}),
+		i(13759, {	-- Raw Nightfin Snapper
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade. Can only be caught during night time: 18:00/6pm to 12:00/12pm server time.",
+			-- #endif
+		}),
+		i(6361, {	-- Raw Rainbow Fin Albacore
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open sea water in all low to intermediate level zones around Azeroth, except starting zones.",
+			-- #endif
+		}),
+		i(13758, {	-- Raw Redgill
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in all high level vanilla zones around Azeroth.",
+			-- #endif
+		}),
+		i(6362, {	-- Raw Rockscale Cod
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in all intermediate level zones around Azeroth.",
+			-- #endif
+		}),
+		i(21071, {	-- Raw Sagefish
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in all low to intermediate level zones around Azeroth, except starting zones.",
+			-- #endif
+		}),
+		i(6303, {	-- Raw Slitherskin Mackerel
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in any open waters in Azshara, Azuremyst Isle, Darkshore, Eversong Woods and Westfall.",
+			-- #endif
+		}),
+		i(4603, {	-- Raw Spotted Yellowtail
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open sea water in Azshara, Cape of Stranglethorn, Dustwallow Marsh and Tanaris.",
+			-- #endif
+		}),
+		i(13756, {	-- Raw Summer Bass
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 20th March to 22nd September.",
+			-- #endif
+		}),
+		i(13760, {	-- Raw Sunscale Salmon
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade. Can only be caught during day time: 06:00/6am to 00:00/12am server time.",
+			-- #endif
+		}),
+		i(13889, {	-- Raw Whitescale Salmon
+			-- #if AFTER 4.0.3
+			["description"] = "Can be caught in open inland waters in Blasted Lands, Un'Goro Crater and Winterspring.",
+			-- #endif
+		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
