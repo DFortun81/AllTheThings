@@ -1216,10 +1216,16 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 	
 	-- Find the most accessible version of the thing we're looking for.
+	if paramA == "spellID" and not itemID then
+		-- We want spells to have higher preference for the spell itself rather than the recipe.
+		for i,j in ipairs(group) do
+			if j.itemID then j.AccessibilityScore = j.AccessibilityScore + 100; end
+		end
+	end
 	app.Sort(group, app.SortDefaults.Accessibility);
 	--[[
 	for i,j in ipairs(group) do
-		print(i, j.text, j.AccessibilityScore);
+		print(i, j.key, j[j.key], j.text, j.AccessibilityScore);
 	end
 	]]--
 	for i,j in ipairs(group) do
