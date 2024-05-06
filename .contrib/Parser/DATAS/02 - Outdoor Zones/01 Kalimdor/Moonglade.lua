@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_7_2_5 },
 					["isYearly"] = true,
 					["groups"] = {
-						title(358, {	-- %s, Adventuring Instructor
+						title(358, {	-- <Name>, Adventuring Instructor
 							["timeline"] = { ADDED_7_2_5 },
 							["collectible"] = false,
 						}),

@@ -50,7 +50,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					i(210497),	-- Verdant Legend's Pennant (TOY!)
 				}),
 				ach(19131, {	-- Verdant Legend: Dragonflight Season 3
-					title(525),	-- Verdant Legend %s
+					title(525),	-- Verdant Legend <Name>
 				}),
 				-- Fashion
 				ach(19276),	-- Verdant Vogue

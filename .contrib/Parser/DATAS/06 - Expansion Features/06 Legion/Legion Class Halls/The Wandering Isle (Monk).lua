@@ -554,7 +554,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 						["g"] = {
-							title(329),	-- Grandmaster %s
+							title(329),	-- Grandmaster <Name>
 							i(139731),	-- Grandmaster's Tunic
 							i(142056),	-- Arcanum of the Order
 							i(142063),	-- Dusk of the Order

@@ -566,7 +566,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 714 },	-- Niskara (Scenario Map)
 						["g"] = {
-							title(62),	-- Battlelord %s
+							title(62),	-- Battlelord <Name>
 							i(139681),	-- Battlelord's Chest
 						},
 					}),

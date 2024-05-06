@@ -113,7 +113,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
 						["groups"] = {
-							title(99),	-- %s the Argent Champion
+							title(99),	-- <Name> the Argent Champion
 						},
 					}),
 					achWithRep(947, 1106),	-- The Argent Crusade

@@ -1316,7 +1316,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(11781, {	-- Mythic: Kil'jaeden
-							title(357),	-- %s the Darkener
+							title(357),	-- <Name> the Darkener
 						}),
 						ach(11784),	-- Mythic: Kil'jaeden Guild Run
 						i(147034),	-- Shadow-Scarred Headcover

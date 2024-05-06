@@ -126,7 +126,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}},
 			["g"] = {
 				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
-				title(377),	-- %s, Conqueror of Azeroth
+				title(377),	-- <Name>, Conqueror of Azeroth
 			},
 		})),
 		pvp(ach(12604, {	-- Conqueror of Azeroth (H)
@@ -145,7 +145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}},
 			["g"] = {
 				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
-				title(377),	-- %s, Conqueror of Azeroth
+				title(377),	-- <Name>, Conqueror of Azeroth
 			},
 		})),
 		un(BLACK_MARKET, ach(14183, {	-- Conspicuous Consumption

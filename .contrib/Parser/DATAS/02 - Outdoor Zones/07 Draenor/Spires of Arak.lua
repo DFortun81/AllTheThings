@@ -109,8 +109,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 37177,	-- Call of the Talon King
 						["g"] = {
 							--title_gendered(278, 279),	-- Talon King / Talon Queen
-							title_male(278),	-- Talon King %s
-							title_female(279),	-- Talon Queen %s
+							title_male(278),	-- Talon King <Name>
+							title_female(279),	-- Talon Queen <Name>
 							follower(224),	-- Talon Guard Kurekk
 						},
 					}),

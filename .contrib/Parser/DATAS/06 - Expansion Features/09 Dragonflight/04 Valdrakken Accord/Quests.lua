@@ -1034,7 +1034,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["g"] = {
 							i(197921),		-- Primal Infusion
 							spell(388978),	-- Ally of Dragons
-							title(474),		-- %s, Ally of Dragons (TITLE!)
+							title(474),		-- <Name>, Ally of Dragons (TITLE!)
 						},
 					}),
 					q(72704, {	-- Renown Supplies

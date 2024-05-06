@@ -102,7 +102,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(98),	-- Ambassador %
+				title(98),	-- Ambassador <Name>
 			}),
 		})),
 		applyclassicphase(PHASE_ONE, achWithReps(762, {	-- Ambassador of the Horde
@@ -122,7 +122,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(98),	-- Ambassador %
+				title(98),	-- Ambassador <Name>
 			}),
 		})),
 		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 }, }, {	-- An Awfully Big Adventure
@@ -529,7 +529,7 @@ root(ROOTS.Zones, {
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(48),	-- % the Diplomat
+				title(48),	-- <Name> the Diplomat
 			}),
 		})),
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { 941, 970, 576 }, {	-- The Diplomat
@@ -539,7 +539,7 @@ root(ROOTS.Zones, {
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(48),	-- % the Diplomat
+				title(48),	-- <Name> the Diplomat
 			}),
 		})),
 		ach(4958, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood

@@ -533,7 +533,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["maps"] = { 738 },	-- Firelands (Scenario Map)
 						["g"] = {
 							i(139698),	-- Farseer's Harness
-							title(336),	-- Farseer %s
+							title(336),	-- Farseer <Name>
 						},
 					}),
 					q(41744, {	-- Champion: Rehgar Earthfury

@@ -2813,7 +2813,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								applyclassicphase(WRATH_PHASE_ONE_REALM_FIRST, ach(1402, {	-- Realm First! Conqueror of Naxxramas
 									["timeline"] = { REMOVED_4_0_3 },
 									["groups"] = {
-										title(90, {	-- %, Conqueror of Naxxramas
+										title(90, {	-- <Name>, Conqueror of Naxxramas
 											["timeline"] = { REMOVED_4_0_3 },
 										}),
 									},

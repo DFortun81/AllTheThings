@@ -33,7 +33,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				ach(19503),		-- Draconic Gladiator's Drake
 				ach(19454, {	-- Draconic Gladiator: Dragonflight Season 4
-					title(534),	-- Draconic Gladiator %s
+					title(534),	-- Draconic Gladiator <Name>
 				}),
 				-- RBG
 				ach(19455, {	-- Hero of the Alliance: Draconic
@@ -50,7 +50,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					i(211869),	-- Draconic Legend's Pennant (TOY!)
 				}),
 				ach(19453, {	-- Draconic Legend: Dragonflight Season 4
-					title(535),	-- Draconic Legend %s
+					title(535),	-- Draconic Legend <Name>
 				}),
 				-- Fashion
 				ach(19276),	-- Verdant Vogue

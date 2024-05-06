@@ -532,7 +532,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 72.6, 25.8, BROKEN_SHORE },
 						["g"] = {
 							i(139690),	-- Breastplate of the Silver Hand
-							title(345),	-- Highlord %s
+							title(345),	-- Highlord <Name>
 						},
 					}),
 					q(43785, {	-- Champion: Arator the Redeemer

@@ -24,10 +24,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["description"] = "Requires Renown 40.",
 				}),
 				]]--
-				title_male(426, {	-- Baron %s
+				title_male(426, {	-- Baron <Name>
 					["description"] = "Requires Renown 40.",
 				}),
-				title_female(427, {	-- Baroness %s
+				title_female(427, {	-- Baroness <Name>
 					["description"] = "Requires Renown 40.",
 				}),
 				title(443, {	-- Sword of the Primus (TITLE!)

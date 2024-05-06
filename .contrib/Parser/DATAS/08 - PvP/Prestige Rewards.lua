@@ -81,7 +81,7 @@ root(ROOTS.PVP, pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- P
 			i(140228),	-- Prestigious Bronze Courser (MOUNT!)
 		}),
 		ach(11468, {	-- Alive for Five [5]
-			title(321),	-- The Honorable %s
+			title(321),	-- The Honorable <Name>
 		}),
 		ach(11469, {	-- The River Six [6]
 		--[[ no longer removed/related to prestige, based on honor levels, leaving in case the symlink needs to be used for something
@@ -105,7 +105,7 @@ root(ROOTS.PVP, pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- P
 			i(140233),	-- Prestigious Ivory Courser (MOUNT!)
 		}),
 		ach(11685, {	-- Decade of Dominance [10]
-			title(322),	-- %s, the Prestigious
+			title(322),	-- <Name>, the Prestigious
 		}),
 		ach(11686, {	-- These Go To Eleven [11]
 		--[[ no longer removed/related to prestige, based on honor levels, leaving in case the symlink needs to be used for something
@@ -125,7 +125,7 @@ root(ROOTS.PVP, pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- P
 			i(140408),	-- Prestigious Azure Courser (MOUNT!)
 		}),
 		ach(11689, {	-- Fourteen for the Team [14]
-			title(323),	-- %s, the Unrelenting
+			title(323),	-- <Name>, the Unrelenting
 		}),
 		ach(11690, {	-- When You're Fifteen [15]
 		--[[ no longer removed/related to prestige, based on honor levels, leaving in case the symlink needs to be used for something
@@ -145,13 +145,13 @@ root(ROOTS.PVP, pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- P
 			i(140232),	-- Prestigious Forest Courser (MOUNT!)
 		}),
 		ach(11693, {	-- Eighteen and Over [18]
-			title(354),	-- %s the Unstoppable Force
+			title(354),	-- <Name> the Unstoppable Force
 		}),
 		ach(12109, {	-- Twenty-One Arms Salute [21]
 			i(140230),	-- Prestigious Royal Courser (MOUNT!)
 		}),
 		ach(12180, {	-- Catching Twenty-Two [22]
-			title(325),	-- %s, Bound By Honor
+			title(325),	-- <Name>, Bound By Honor
 		}),
 		ach(12183, {	-- Prestige Quartermaster [25]
 			i(140407),	-- Prestigious Midnight Courser (MOUNT!)

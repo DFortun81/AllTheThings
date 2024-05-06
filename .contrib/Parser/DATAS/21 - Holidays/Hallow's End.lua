@@ -432,7 +432,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = ALLIANCE_ONLY,
 			-- #endif
 			["groups"] = {
-				title(92),	-- %s the Hallowed
+				title(92),	-- <Name> the Hallowed
 			},
 		}),
 		ach(1657, {	-- Hallowed Be Thy Name (H)
@@ -453,7 +453,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
-				title(92),	-- %s the Hallowed
+				title(92),	-- <Name> the Hallowed
 			},
 		}),
 		ach(10365, {	-- A Frightening Friend

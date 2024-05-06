@@ -65,12 +65,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				faction(FACTION_SABELLIAN, {
 					ach(16532),	-- Friends with Sabellian
 					ach(16760, {	-- The Obsidian Bloodline
-						title(483),	-- %s, Paragon of the Obsidian Brood
+						title(483),	-- <Name>, Paragon of the Obsidian Brood
 					}),
 				}),
 				faction(FACTION_WRATHION, {
 					ach(16494, {	-- Loyalty to the Prince
-						title(484),	-- %s, Agent of the Black Prince
+						title(484),	-- <Name>, Agent of the Black Prince
 					}),
 					ach(16536),	-- True Friends with Wrathion
 				}),
@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								{ "i", 202173, 20 },		-- 20x Magmote
 							},
 							["g"] = {
-								title(469, {	-- %s, the Worldbreaker
+								title(469, {	-- <Name>, the Worldbreaker
 									["collectible"] = false,
 								}),
 							},

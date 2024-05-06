@@ -655,7 +655,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["g"] = {
-							title(476),	-- %s of Iskaara
+							title(476),	-- <Name> of Iskaara
 						},
 					}),
 					q(72328, {	-- Out Ferocious, Armored Steeds
