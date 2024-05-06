@@ -216,7 +216,6 @@ sliderSummarizeThings:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("ContainsCount", newValue)
-	app.HandleEvent("OnUpdateWindows")
 end)
 sliderSummarizeThings.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
@@ -235,7 +234,7 @@ settings.sliderMaxTooltipTopLineLength = sliderMaxTooltipTopLineLength
 sliderMaxTooltipTopLineLength:SetOrientation('HORIZONTAL')
 sliderMaxTooltipTopLineLength:SetWidth(200)
 sliderMaxTooltipTopLineLength:SetHeight(20)
-sliderMaxTooltipTopLineLength:SetValueStep(1)
+sliderMaxTooltipTopLineLength:SetValueStep(10)
 sliderMaxTooltipTopLineLength:SetMinMaxValues(80, 1000)
 sliderMaxTooltipTopLineLength:SetObeyStepOnDrag(true)
 _G[sliderMaxTooltipTopLineLength:GetName() .. 'Low']:SetText('80')
@@ -388,7 +387,6 @@ sliderSourceLocations:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("Locations", newValue)
-	app.HandleEvent("OnUpdateWindows")
 end)
 sliderSourceLocations.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then

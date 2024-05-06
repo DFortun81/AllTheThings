@@ -2347,6 +2347,7 @@ app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
+app.AddEventHandler("OnSettingsRefreshed", app.WipeSearchCache);
 
 do
 local ContainsLimit, ContainsExceeded;
