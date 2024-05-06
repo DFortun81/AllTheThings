@@ -108,6 +108,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		currency(ARCH_CURRENCY_DRAENEI, {
 			["provider"] = { "o", 207188 },	-- Draenei Archaeology Find
+			["maps"] = {
+				HELLFIRE_PENINSULA,
+				NAGRAND,
+				NETHERSTORM,
+				SHADOWMOON_VALLEY,
+				TEROKKAR_FOREST,
+				ZANGARMARSH,
+			},
 			["groups"] = {
 				i(64440),	-- Anklet with Golden Bells
 				i(64456),	-- Arrival of the Naaru (TOY!)
@@ -123,6 +131,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 		currency(ARCH_CURRENCY_ORC, {
 			["provider"] = { "o", 207187 },	-- Orc Archaeology Find
+			["maps"] = {
+				HELLFIRE_PENINSULA,
+				NAGRAND,
+				SHADOWMOON_VALLEY,
+				TEROKKAR_FOREST,
+			},
 			["groups"] = {
 				i(64436),	-- Fiendish Whip
 				i(64421),	-- Fierce Wolf Figurine

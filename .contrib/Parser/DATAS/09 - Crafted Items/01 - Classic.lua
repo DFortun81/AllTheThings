@@ -158,6 +158,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(63128),	-- Troll Tablet
 		currency(ARCH_CURRENCY_DWARF, {
 			["provider"] = { "o", 204282 },	-- Dwarf Archaeology Find
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				BADLANDS,
+				BURNING_STEPPES,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				SEARING_GORGE,
+				SOUTHERN_BARRENS,
+				THE_HINTERLANDS,
+				TWILIGHT_HIGHLANDS,
+				WETLANDS,
+			},
 			["groups"] = {
 				i(63113),	-- Belt Buckle with Anvilmar Crest
 				i(64339),	-- Bodacious Door Knocker
@@ -194,6 +206,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		currency(ARCH_CURRENCY_FOSSIL, {
 			["provider"] = { "o", 206836 },	-- Fossil Archaeology Find
+			["maps"] = {
+				BLASTED_LANDS,
+				BURNING_STEPPES,
+				DESOLACE,
+				DUSKWOOD,
+				DUSTWALLOW_MARSH,
+				EASTERN_PLAGUELANDS,
+				HILLSBRAD_FOOTHILLS,
+				NORTHERN_STRANGLETHORN,
+				REDRIDGE_MOUNTAINS,
+				SOUTHERN_BARRENS,
+				STONETALON_MOUNTAINS,
+				SWAMP_OF_SORROWS,
+				TANARIS,
+				UNGORO_CRATER,
+				WESTERN_PLAGUELANDS,
+				WETLANDS,
+			},
 			["groups"] = {
 				i(69776, {["timeline"] = {ADDED_4_1_0}}),	-- Ancient Amber (TOY!)
 				i(64355),	-- Ancient Shark Jaws
@@ -216,6 +246,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		currency(ARCH_CURRENCY_NIGHTELF, {
 			["provider"] = { "o", 203071 },	-- Night Elf Archaeology Find
+			["maps"] = {
+				ASHENVALE,
+				AZSHARA,
+				BOREAN_TUNDRA,
+				CRYSTALSONG_FOREST,
+				DARKSHORE,
+				DESOLACE,
+				DIRE_MAUL,
+				DRAGONBLIGHT,
+				DUSKWOOD,
+				EASTERN_PLAGUELANDS,
+				FELWOOD,
+				FERALAS,
+				MOUNT_HYJAL,
+				SILITHUS,
+				SOUTHERN_BARRENS,
+				STONETALON_MOUNTAINS,
+				WINTERSPRING,
+			},
 			["groups"] = {
 				i(64646),	-- Bones of Transformation (TOY!)
 				i(64647),	-- Carcanet of the Hundred Magi
@@ -246,6 +295,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		currency(ARCH_CURRENCY_TROLL, {
 			["provider"] = { "o", 202655 },	-- Troll Archaeology Find
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				EASTERN_PLAGUELANDS,
+				GRIZZLY_HILLS,
+				NORTHERN_STRANGLETHORN,
+				SWAMP_OF_SORROWS,
+				TANARIS,
+				THE_CAPE_OF_STRANGLETHORN,
+				THE_HINTERLANDS,
+				ZULDRAK,
+			},
 			["groups"] = {
 				i(64348),	-- Atal'ai Scepter
 				i(64346),	-- Bracelet of Jade and Coins

@@ -110,6 +110,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(64395),	-- Vrykul Rune Stick
 		currency(ARCH_CURRENCY_NERUBIAN, {
 			["provider"] = { "o", 203078 },	-- Nerubian Archaeology Find
+			["maps"] = {
+				BOREAN_TUNDRA,
+				DRAGONFLIGHT,
+				EASTERN_PLAGUELANDS,
+				ICECROWN,
+				ZULDRAK,
+			},
 			["groups"] = {
 				i(64481),	-- Blessing of the Old God (TOY!)
 				i(64479),	-- Ewer of Jormungar Blood
@@ -124,6 +131,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		currency(ARCH_CURRENCY_VRYKUL, {
 			["provider"] = { "o", 207189 },	-- Vrykul Archaeology Find
+			["maps"] = {
+				HOWLING_FJORD,
+				GRIZZLY_HILLS,
+				ICECROWN,
+				THE_STORM_PEAKS,
+			},
 			["groups"] = {
 				i(64464),	-- Fanged Cloak Pin
 				i(64462),	-- Flint Striker

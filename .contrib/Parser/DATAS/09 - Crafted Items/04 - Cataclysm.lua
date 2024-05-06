@@ -74,6 +74,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(64397),	-- Tol'vir Hieroglyphic
 		currency(ARCH_CURRENCY_TOLVIR, {
 			["provider"] = { "o", 207190 },	-- Tol'vir Archaeology Find
+			["maps"] = { ULDUM },
 			["groups"] = {
 				i(64657, {	-- Canopic Jar
 					i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
