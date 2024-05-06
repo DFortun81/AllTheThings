@@ -199,13 +199,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					filter(MAIL, {
 						-- HUNTER
 						i(214578),	-- Saurok Stalker's Armbands
-						i(214602),	-- Saurok Stalker's Belt
-						i(214599),	-- Saurok Stalker's Boots
-						i(214596),	-- Saurok Stalker's Bracers
-						i(214593),	-- Saurok Stalker's Breastplate
-						i(214584),	-- Saurok Stalker's Chain
 						i(214579),	-- Saurok Stalker's Chestguard
-						i(214592),	-- Saurok Stalker's Footguards
+						i(214580),	-- Saurok Stalker's Sabatons
+						i(214582),	-- Saurok Stalker's Headguard
+						i(214583),	-- Saurok Stalker's Gloves
+						i(214584),	-- Saurok Stalker's Chain
+						i(214585),	-- Saurok Stalker's Pauldrons
+						i(214586),	-- Saurok Stalker's Legguards
 						-- SHAMAN
 						i(214675),	-- Belt of the Witch Doctor
 						i(214678),	-- Boots of the Witch Doctor
@@ -375,14 +375,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					filter(MAIL, {
 						-- HUNTER
-						i(214601),	-- Saurok Stalker's Gauntlets
+						i(214587),	-- Saurok Stalker's Legwraps
+						i(214588),	-- Saurok Stalker's Mantle
 						i(214589),	-- Saurok Stalker's Girdle
-						i(214583),	-- Saurok Stalker's Gloves
 						i(214590),	-- Saurok Stalker's Grips
-						i(214598),	-- Saurok Stalker's Hauberk
-						i(214582),	-- Saurok Stalker's Headguard
-						i(214600),	-- Saurok Stalker's Helm
 						i(214591),	-- Saurok Stalker's Helmet
+						i(214592),	-- Saurok Stalker's Footguards
+						i(214593),	-- Saurok Stalker's Breastplate
+						i(214594),	-- Saurok Stalker's Wristguards
 						-- SHAMAN
 						i(214664),	-- Armbands of the Witch Doctor
 						i(214659),	-- Chain of the Witch Doctor
@@ -545,14 +545,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					filter(MAIL, {
 						-- HUNTER
-						i(214604),	-- Saurok Stalker's Leggings
-						i(214586),	-- Saurok Stalker's Legguards
-						i(214587),	-- Saurok Stalker's Legwraps
-						i(214588),	-- Saurok Stalker's Mantle
-						i(214585),	-- Saurok Stalker's Pauldrons
-						i(214580),	-- Saurok Stalker's Sabatons
+						i(214596),	-- Saurok Stalker's Bracers
+						i(214598),	-- Saurok Stalker's Hauberk
+						i(214599),	-- Saurok Stalker's Boots
+						i(214600),	-- Saurok Stalker's Helm
+						i(214601),	-- Saurok Stalker's Gauntlets
+						i(214602),	-- Saurok Stalker's Belt
 						i(214603),	-- Saurok Stalker's Spaulders
-						i(214594),	-- Saurok Stalker's Wristguards
+						i(214604),	-- Saurok Stalker's Leggings
 						-- SHAMAN
 						i(214666),	-- Breastplate of the Witch Doctor
 						i(214667),	-- Footguards of the Witch Doctor
