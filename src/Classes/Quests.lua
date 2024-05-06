@@ -1175,7 +1175,10 @@ local function LockedAsQuest(t)
 	if cached ~= nil then return cached end
 	if not IsQuestFlaggedCompleted(questID) then
 		-- generic locked functionality based on lockCriteria
-		if IsGroupLocked(t) then return true; end
+		if IsGroupLocked(t) then
+			LockedQuestCache[questID] = true
+			return true;
+		end
 		-- if an alt-quest is completed, then this quest is locked
 		if t.altcollected then
 			LockedQuestCache[questID] = true
