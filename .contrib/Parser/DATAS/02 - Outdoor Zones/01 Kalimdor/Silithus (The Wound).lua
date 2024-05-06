@@ -1060,18 +1060,19 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								i(173291, {	-- Luminous Azerite Geode (Rank 4)
 									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 									["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
-									["u"] = REMOVED_FROM_GAME,
+									["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 								}),
 								i(173311, {	-- Resplendent Warden's Badge (Rank 4)
 									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 									["classes"] = TANKS,
 									["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
-									["u"] = REMOVED_FROM_GAME,
+									["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 								}),
 								i(168940, {	-- Ward of Unimaginable Brilliance (Rank 4)
 									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 									["classes"] = HEALERS,
-									["u"] = REMOVED_FROM_GAME,
+									["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
+									["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 								}),
 								i(174876, {	-- Gouged Eye of N'Zoth
 									["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos

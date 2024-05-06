@@ -502,8 +502,6 @@ for key,value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visions de N'Zoth",								-- Visions of N'Zoth
 		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
-		[-10081] = "Zone corrompue",								-- Corrupted Area
-		[-10082] = "Zone perdue",									-- Lost Area
 })
 do a[key] = value; end
 end
@@ -712,7 +710,7 @@ for key,value in pairs({
 		--TODO: FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		--TODO: WITH_WRAPPING_CHECKBOX = "Allow Wrapping",
 		--TODO: WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
-		
+
 		BEHAVIOR_LABEL = "Comportement de la liste";
 		MAIN_LIST_SLIDER_LABEL = "Échelle de la liste principale";
 		MAIN_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle de la liste principale.\n\nDéfaut : 1";

@@ -901,6 +901,36 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			-- #endif
 			["rank"] = 10,
 		}),
+		ach(9713, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Awake the Drakes
+			i(118676),		-- Emerald Drake (MOUNT!)
+			crit(26687, {	-- Azure Drake
+				["provider"] = { "i", 43952 }, -- Azure Drake
+			}),
+			crit(26683, {	-- Bronze Drake
+				["provider"] = { "i", 43951 }, -- Bronze Drake
+			}),
+			crit(26686, {	-- Black Drake
+				["provider"] = { "i", 43986 }, -- Black Drake
+			}),
+			crit(26688, {	-- Blazing Drake
+				["provider"] = { "i", 77067 }, -- Blazing Drake
+			}),
+			crit(26684, {	-- Blue Drake
+				["provider"] = { "i", 43953 }, -- Blue Drake
+			}),
+			crit(26690, {	-- Onyxian Drake
+				["provider"] = { "i", 49636 }, -- Onyxian Drake
+			}),
+			crit(26800, {	-- Purple Netherwing Drake
+				["provider"] = { "i", 32860 }, -- Purple Netherwing Drake
+			}),
+			crit(26685, {	-- Red Drake
+				["provider"] = { "i", 43955 }, -- Red Drake
+			}),
+			crit(26689, {	-- Twilight Drake
+				["provider"] = { "i", 43954 }, -- Twilight Drake
+			}),
+		})),
 	}),
 	-- #if AFTER 6.0.2
 	filter(TOYS, {

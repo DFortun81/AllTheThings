@@ -519,8 +519,6 @@ for key,value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "恩佐斯的幻象",										-- Visions of N'Zoth
 		[-10072] = "恩佐斯突袭",											-- N'Zoth Assault
-		[-10081] = "腐化区域",											-- Corrupted Area
-		[-10082] = "失落区域",											-- Lost Area
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
@@ -734,7 +732,7 @@ for key,value in pairs({
 		FOR_UNSORTED_CHECKBOX_TOOLTIP = "如果你想查看尚未完全输入数据库的来源位置，请启用此选项。";
 		WITH_WRAPPING_CHECKBOX = "允许换行";
 		WITH_WRAPPING_CHECKBOX_TOOLTIP = "启用此选项允许来源在鼠标提示中换行。\n这将确保鼠标提示不会超过必要的宽度，但不幸的是在许多情况下来源信息会变得更加难以阅读。";
-		
+
 		BEHAVIOR_LABEL = "列表行为";
 		MAIN_LIST_SLIDER_LABEL = "主列表缩放";
 		MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自定义主列表的缩放。\n\n默认：1';

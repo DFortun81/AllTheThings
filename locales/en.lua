@@ -27,14 +27,14 @@ for key, value in pairs({
 	["FACTIONS"] = "Factions";
 	["COORDINATES"] = "Coordinates";
 	["AND_MORE"] = "And %s more...";
-	
+
 	["PLAYER_COORDINATES"] = "Player Coordinates";
 	["NO_COORDINATES_FORMAT"] = "No known coordinates for %s";
 	["TOM_TOM_NOT_FOUND"] = "You must have TomTom installed to plot coordinates.";
 	["FLIGHT_PATHS"] = "Flight Paths";
 	["KNOWN_BY"] = "Known by %s";
 	["REQUIRES"] = "Requires";
-	
+
 	["PLEASE_REPORT_MESSAGE"] = "Please report this to the ATT Discord in #retail-errors! Thanks!";
 	["REPORT_TIP"] = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
@@ -366,7 +366,7 @@ for key, value in pairs({
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 	["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
 	["WORLDMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
-	
+
 	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
 	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...
 	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
@@ -782,12 +782,6 @@ for key, value in pairs({
 	-- 8.3
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- Vision of N'zotth
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
-		[-10073] = "Interface\\Icons\\spell_arcane_teleportorgrimmar",				-- Horrific Vision of Orgrimmar
-		[-10074] = "Interface\\Icons\\spell_arcane_teleportstormwind",				-- Horrific Vision of Stomrwind
-		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
-		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
-		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
-
 	-- NYI
 		[-11111] = app.asset("Category_TradingPost"),						-- Trading Post NYI
 	};
@@ -967,11 +961,6 @@ for key, value in pairs({
 	-- 8.3
 		[-10071] = "Visions of N'Zoth",
 		[-10072] = "N'Zoth Assault",
-		[-10073] = select(2, GetAchievementInfo(14063)),						-- Horrific Vision of Orgrimmar
-		[-10074] = select(2, GetAchievementInfo(14062)),						-- Horrific Vision of Stormwind
-		[-10080] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,				-- Horrific Visions
-		[-10081] = "Corrupted Area",
-		[-10082] = "Lost Area",
 
 	-- NYI
 		[-11111] = "TradingPost",												-- Trading Post NYI
