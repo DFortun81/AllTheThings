@@ -1514,6 +1514,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3192),	-- Short Bastard Sword
 						i(15933),	-- Simple Branch
 						i(6547),	-- Soldier's Gauntlets
+						-- Still available in some chests
+						i(4596),	-- Discolored Healing Potion
 					},
 				}),
 				n(14267, {  -- Emogg the Crusher

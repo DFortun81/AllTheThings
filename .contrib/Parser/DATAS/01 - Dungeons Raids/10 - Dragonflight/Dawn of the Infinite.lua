@@ -861,6 +861,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["provider"] = { "n", 205710 },	-- Chromie
 					["coord"] = { 62.2, 83.2, THALDRASZUS },
 					["g"] = {
+						-- Recieved if you already have the Toy
+						i(208417),	-- Chromie's Certificate of Temporal Tidiness
 						i(208415),	-- Stasis Sand (TOY!)
 					},
 				}),

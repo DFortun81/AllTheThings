@@ -1306,7 +1306,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.1.5
 		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
-			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208097),	-- Flamethrower
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(205259),	-- Order Soul
