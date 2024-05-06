@@ -931,17 +931,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(58983, {	-- Battle for Azeroth: Tides of War
-					["qg"] = 163219,	-- Captain Garrick
-					["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
-					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_9_0_1 },
-					["groups"] = {
-						i(178941),	-- Alliance Dog Tags,
-					}
-				}),
 				-- #endif
+				q(46727, {	-- Battle for Azeroth: Tides of War (BfA version)
+				["qgs"] = {
+					142930,	-- Halford Wyrmbane
+					-- #if AFTER 9.0.2
+					49748,	-- Hero's Herald
+					-- #endif
+				},
+				["coord"] = { 27.6, 21.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_8_0_1 },
+				["races"] = ALLIANCE_ONLY,
+			}),
 				q(1640, {	-- Beat Bartleby
 					["qg"] = 6090,	-- Bartleby
 					["sourceQuest"] = 1639,	-- Bartleby the Drunk
@@ -1820,46 +1821,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 				}),
-				-- #if BEFORE SHADOWLANDS
-				q(53370, {	-- Hour of Reckoning / Battle for Azeroth: Hour of Reckoning [SL+]
-					["qg"] = 144095,	-- Master Mathias Shaw
-					["description"] = "If this quest is not automatically offered, you can try picking it up from a War Board, or taking the boat from Stormwind to Boralus.",
-					["timeline"] = { ADDED_8_0_1 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(163542, {	-- Footman's Warmace
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163541, {	-- Longbow of the Hunt
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163539, {	-- Spear of the Hunt
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163537, {	-- Footman's Warhammer
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163534, {	-- Warmage's Spellblade
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163526, {	-- Footman's Handaxe
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163540, {	-- Footman's Boot Knife
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163538, {	-- Footman's Gladius
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163536, {	-- Warmage's Spire
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-						i(163533, {	-- Footman's Cleaver
-							["timeline"] = { ADDED_8_0_1 },
-						}),
-					},
-				}),
-				-- #endif
 				q(399, {	-- Humble Beginnings
 					["qg"] = 1646,	-- Baros Alexston <City Architect>
 					["coords"] = {
@@ -3314,17 +3275,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(46728, {	-- The Nation of Kul Tiras
 					["qg"] = 120756,	-- Anduin Wyrnn
-					["sourceQuest"] = 46727,	-- Tides of War
+					["sourceQuest"] = 46727,	-- Battle for Azeroth: Tides of War (BfA version)
 					["coord"] = { 85.0, 32.4, STORMWIND_CITY },
 					["timeline"] = { ADDED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59641, {	-- The Nation of Kul Tiras
-					["qg"] = 165395,	-- Anduin Wrynn
-					["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War
-					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_9_0_1 },
 				}),
 				q(27072, {	-- The Old Barracks
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
@@ -3854,17 +3808,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
-				q(46727, {	-- Tides of War
-					["qgs"] = {
-						142930,	-- Halford Wyrmbane
-						-- #if AFTER 9.0.2
-						49748,	-- Hero's Herald
-						-- #endif
-					},
-					["coord"] = { 27.6, 21.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_8_0_1 },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42782, {	-- To Be Prepared
 					["qg"] = 107934,	-- Recruiter Lee

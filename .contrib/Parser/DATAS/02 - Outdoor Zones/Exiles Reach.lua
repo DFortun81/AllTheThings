@@ -1031,6 +1031,24 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = ALLIANCE_ONLY,
 					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
+				q(58983, {	-- Battle for Azeroth: Tides of War (SL/new player version)
+					["qg"] = 163219,	-- Captain Garrick
+					["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
+					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_9_0_1 },
+					["groups"] = {
+						i(178941),	-- Alliance Dog Tags,
+					}
+				}),
+				q(59641, {	-- The Nation of Kul Tiras
+					["qg"] = 165395,	-- Anduin Wrynn
+					["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War (SL/new player version)
+					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_9_0_1 },
+				}),
 
 					-- Orgrimmar --
 				q(60343, {	-- Welcome to Orgrimmar
@@ -1147,7 +1165,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
-				q(60361, {	-- Battle for Azeroth: Mission Statement (SL version)
+				q(60361, {	-- Battle for Azeroth: Mission Statement (SL/new player version)
 					["sourceQuest"] = 60360,	-- An Urgent Meeting
 					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
 					["qg"] = 168431,	-- Warlord Breka Grimaxe

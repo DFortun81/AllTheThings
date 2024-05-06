@@ -632,6 +632,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				q(51443, {	-- Battle For Azeroth: Mission Statement (BfA version)
+					-- available to a level 47, pre-9.0 character during patch 9.0
+					["providers"] = {
+						{ "n", 140176 },	-- Nathanos Blightcaller
+						{ "n", 49750 },	-- Warchief's Herald
+					},
+				--[[ these SQs are no longer required, because the heart of azeroth is not mandatory to start bfa content.  you can pick 51443 up immediately
+					["sourceQuests"] = {
+						-- This quest was not completed for me, but 52428 was completed... maybe it's a breadcrumb technically?
+						53031,	-- The Speaker's Imperative
+						52428,	-- Infusing the Heart
+					},	--]]
+					["coords"] = {
+						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
+						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
+					},
+					["timeline"] = { ADDED_8_0_1 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(1508, {	-- Blind Cazul
 					["qg"] = 5909,	-- Cazul
 					["sourceQuests"] = {
@@ -1303,25 +1322,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { TANARIS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
-				}),
-				q(51443, {	-- Battle For Azeroth: Mission Statement (BfA version)
-					-- available to a level 47, pre-9.0 character during patch 9.0
-					["providers"] = {
-						{ "n", 140176 },	-- Nathanos Blightcaller
-						{ "n", 49750 },	-- Warchief's Herald
-					},
-				--[[ these SQs are no longer required, because the heart of azeroth is not mandatory to start bfa content.  you can pick 51443 up immediately
-					["sourceQuests"] = {
-						-- This quest was not completed for me, but 52428 was completed... maybe it's a breadcrumb technically?
-						53031,	-- The Speaker's Imperative
-						52428,	-- Infusing the Heart
-					},	--]]
-					["coords"] = {
-						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
-						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
-					},
-					["timeline"] = { ADDED_8_0_1 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(26803, {	-- Missing Reports
 					["qg"] = 3144,	-- Eitrigg
