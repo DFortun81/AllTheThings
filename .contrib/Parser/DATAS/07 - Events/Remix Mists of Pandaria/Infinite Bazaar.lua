@@ -703,6 +703,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214854),	-- Greatboots of the All-Consuming Maw
 							i(214855),	-- Armguards of the All-Consuming Maw
 							i(214856),	-- Chestguard of the All-Consuming Maw
+							-- NYI --
+							i(96197),	-- Breastplate of the All-Consuming Maw
+							i(96198),	-- Gauntlets of the All-Consuming Maw
+							i(96199),	-- Helmet of the All-Consuming Maw
+							i(96200),	-- Greaves of the All-Consuming Maw
+							i(96201),	-- Pauldrons of the All-Consuming Maw
+							i(96202),	-- Chestguard of the All-Consuming Maw
+							i(96203),	-- Handguards of the All-Consuming Maw
+							i(96204),	-- Faceguard of the All-Consuming Maw
+							i(96205),	-- Legguards of the All-Consuming Maw
+							i(96206),	-- Shoulderguards of the All-Consuming Maw
 						},
 					}),
 					i(215326, {	-- Ensemble: Battleplate of Cyclopean Dread (Normal)
@@ -745,6 +756,27 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214179),	-- Waistband of the Haunted Forest
 							i(214180),	-- Spaulders of the Haunted Forest
 							i(214181),	-- Legguards of the Haunted Forest
+							-- NYI --
+							i(96207),	-- Raiment of the Haunted Forest
+							i(96208),	-- Grips of the Haunted Forest
+							i(96209),	-- Headpiece of the Haunted Forest
+							i(96210),	-- Legguards of the Haunted Forest
+							i(96211),	-- Spaulders of the Haunted Forest
+							i(96212),	-- Handwraps of the Haunted Forest
+							i(96213),	-- Helm of the Haunted Forest
+							i(96214),	-- Legwraps of the Haunted Forest
+							i(96215),	-- Robes of the Haunted Forest
+							i(96216),	-- Mantle of the Haunted Forest
+							i(96217),	-- Gloves of the Haunted Forest
+							i(96218),	-- Cover of the Haunted Forest
+							i(96219),	-- Leggings of the Haunted Forest
+							i(96220),	-- Vestment of the Haunted Forest
+							i(96221),	-- Shoulderwraps of the Haunted Forest
+							i(96222),	-- Tunic of the Haunted Forest
+							i(96223),	-- Handguards of the Haunted Forest
+							i(96224),	-- Headguard of the Haunted Forest
+							i(96225),	-- Breeches of the Haunted Forest
+							i(96226),	-- Shoulderguards of the Haunted Forest
 						},
 					}),
 					i(215249, {	-- Ensemble: Vestments of the Shattered Vale (Normal)
@@ -787,6 +819,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214592),	-- Saurok Stalker's Footguards
 							i(214593),	-- Saurok Stalker's Breastplate
 							i(214594),	-- Saurok Stalker's Wristguards
+							-- NYI --
+							i(96254),	-- Saurok Stalker's Tunic
+							i(96255),	-- Saurok Stalker's Gloves
+							i(96256),	-- Saurok Stalker's Headguard
+							i(96257),	-- Saurok Stalker's Legguards
+							i(96258),	-- Saurok Stalker's Spaulders
 						},
 					}),
 					i(215294, {	-- Ensemble: Battlegear of the Unblinking Vigil (Normal)
@@ -829,6 +867,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213808),	-- Amice of the Chromatic Hydra
 							i(213809),	-- Belt of the Chromatic Hydra
 							i(213810),	-- Cuffs of the Chromatic Hydra
+							-- NYI --
+							i(96262),	-- Gloves of the Chromatic Hydra
+							i(96263),	-- Hood of the Chromatic Hydra
+							i(96264),	-- Leggings of the Chromatic Hydra
+							i(96265),	-- Robes of the Chromatic Hydra
+							i(96266),	-- Mantle of the Chromatic Hydra
 						},
 					}),
 					i(215197, {	-- Ensemble: Chronomancer Regalia (Normal)
@@ -871,6 +915,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214272),	-- Fire-Charm Footguards
 							i(214273),	-- Fire-Charm Vest
 							i(214274),	-- Fire-Charm Bindings
+							-- NYI --
+							i(96267),	-- Fire-Charm Tunic
+							i(96268),	-- Fire-Charm Grips
+							i(96269),	-- Fire-Charm Headpiece
+							i(96270),	-- Fire-Charm Leggings
+							i(96271),	-- Fire-Charm Spaulders
+							i(96272),	-- Fire-Charm Handwraps
+							i(96273),	-- Fire-Charm Helm
+							i(96274),	-- Fire-Charm Legwraps
+							i(96275),	-- Fire-Charm Vest
+							i(96276),	-- Fire-Charm Mantle
+							i(96277),	-- Fire-Charm Chestguard
+							i(96278),	-- Fire-Charm Gauntlets
+							i(96279),	-- Fire-Charm Crown
+							i(96280),	-- Fire-Charm Legguards
+							i(96281),	-- Fire-Charm Shoulderguards
 						},
 					}),
 					i(215258, {	-- Ensemble: Vestments of the Seven Sacred Seals (Normal)
@@ -913,6 +973,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214926),	-- Lightning Emperor's Grasp
 							i(214927),	-- Lightning Emperor's Shoulderguards
 							i(214928),	-- Lightning Emperor's Waistguard
+							-- NYI --
+							i(96282),	-- Lightning Emperor's Battleplate
+							i(96283),	-- Lightning Emperor's Gauntlets
+							i(96284),	-- Lightning Emperor's Helmet
+							i(96285),	-- Lightning Emperor's Legplates
+							i(96286),	-- Lightning Emperor's Pauldrons
+							i(96287),	-- Lightning Emperor's Breastplate
+							i(96288),	-- Lightning Emperor's Gloves
+							i(96289),	-- Lightning Emperor's Headguard
+							i(96290),	-- Lightning Emperor's Greaves
+							i(96291),	-- Lightning Emperor's Mantle
+							i(96292),	-- Lightning Emperor's Chestguard
+							i(96293),	-- Lightning Emperor's Handguards
+							i(96294),	-- Lightning Emperor's Faceguard
+							i(96295),	-- Lightning Emperor's Legguards
+							i(96296),	-- Lightning Emperor's Shoulderguards
 						},
 					}),
 					i(215337, {	-- Ensemble: Vestments of Winged Triumph (Normal)
@@ -955,6 +1031,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213880),	-- Handwraps of the Exorcist
 							i(213881),	-- Treads of the Exorcist
 							i(213882),	-- Raiment of the Exorcist
+							-- NYI --
+							i(96297),	-- Handwraps of the Exorcist
+							i(96298),	-- Cowl of the Exorcist
+							i(96299),	-- Legwraps of the Exorcist
+							i(96300),	-- Robes of the Exorcist
+							i(96301),	-- Mantle of the Exorcist
+							i(96302),	-- Gloves of the Exorcist
+							i(96303),	-- Hood of the Exorcist
+							i(96304),	-- Leggings of the Exorcist
+							i(96305),	-- Raiment of the Exorcist
+							i(96306),	-- Shoulderguards of the Exorcist
 						},
 					}),
 					i(215206, {	-- Ensemble: Regalia of Ternion Glory (Normal)
@@ -997,6 +1084,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214344),	-- Nine-Tailed Waistband
 							i(214345),	-- Nine-Tailed Spaulders
 							i(214346),	-- Nine-Tailed Legguards
+							-- NYI --
+							i(96307),	-- Nine-Tailed Tunic
+							i(96308),	-- Nine-Tailed Gloves
+							i(96309),	-- Nine-Tailed Helmet
+							i(96310),	-- Nine-Tailed Legguards
+							i(96311),	-- Nine-Tailed Spaulders
 						},
 					}),
 					i(215266, {	-- Ensemble: Barbed Assassin Battlegear (Normal)
@@ -1033,7 +1126,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215300, {	-- Ensemble: Regalia of the Witch Doctor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-						-- TODO: Symlink
 							i(214664),	-- Armbands of the Witch Doctor
 							i(214659),	-- Chain of the Witch Doctor
 							i(214660),	-- Gloves of the Witch Doctor
@@ -1043,6 +1135,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214663),	-- Robeguard of the Witch Doctor
 							i(214662),	-- Sabatons of the Witch Doctor
 							i(220992),	-- Shirt of the Witch Doctor
+							-- NYI --
+							i(96312),	-- Tunic of the Witch Doctor
+							i(96313),	-- Handwraps of the Witch Doctor
+							i(96314),	-- Faceguard of the Witch Doctor
+							i(96315),	-- Legwraps of the Witch Doctor
+							i(96316),	-- Mantle of the Witch Doctor
+							i(96317),	-- Cuirass of the Witch Doctor
+							i(96318),	-- Grips of the Witch Doctor
+							i(96319),	-- Helmet of the Witch Doctor
+							i(96320),	-- Legguards of the Witch Doctor
+							i(96321),	-- Spaulders of the Witch Doctor
+							i(96322),	-- Hauberk of the Witch Doctor
+							i(96323),	-- Gloves of the Witch Doctor
+							i(96324),	-- Headpiece of the Witch Doctor
+							i(96325),	-- Kilt of the Witch Doctor
+							i(96326),	-- Shoulderwraps of the Witch Doctor
 						},
 					}),
 					i(215303, {	-- Ensemble: Regalia of Celestial Harmony (Normal)
@@ -1085,6 +1193,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213952),	-- Amice of the Thousandfold Hells
 							i(213953),	-- Belt of the Thousandfold Hells
 							i(213954),	-- Cuffs of the Thousandfold Hells
+							-- NYI --
+							i(96353),	-- Gloves of the Thousandfold Hells
+							i(96354),	-- Hood of the Thousandfold Hells
+							i(96355),	-- Leggings of the Thousandfold Hells
+							i(96356),	-- Robes of the Thousandfold Hells
+							i(96357),	-- Mantle of the Thousandfold Hells
 						},
 					}),
 					i(215215, {	-- Ensemble: Regalia of the Horned Nightmare (Normal)
@@ -1127,6 +1241,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215006),	-- Grasp of the Last Mogu
 							i(215007),	-- Pauldrons of the Last Mogu
 							i(215008),	-- Girdle of the Last Mogu
+							-- NYI --
+							i(96358), -- Helmet of the Last Mogu
+							i(96359), -- Battleplate of the Last Mogu
+							i(96360), -- Gauntlets of the Last Mogu
+							i(96361), -- Legplates of the Last Mogu
+							i(96362), -- Pauldrons of the Last Mogu
+							i(96363), -- Chestguard of the Last Mogu
+							i(96364), -- Handguards of the Last Mogu
+							i(96365), -- Faceguard of the Last Mogu
+							i(96366), -- Legguards of the Last Mogu
+							i(96367), -- Shoulderguards of the Last Mogu
 						},
 					}),
 					i(215347, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Normal)
@@ -2517,6 +2642,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214862),	-- Girdle of the All-Consuming Maw
 							i(214863),	-- Pauldrons of the All-Consuming Maw
 							i(214864),	-- Legguards of the All-Consuming Maw
+							-- NYI --
+							i(96941),	-- Breastplate of the All-Consuming Maw
+							i(96942),	-- Gauntlets of the All-Consuming Maw
+							i(96943),	-- Helmet of the All-Consuming Maw
+							i(96944),	-- Greaves of the All-Consuming Maw
+							i(96945),	-- Pauldrons of the All-Consuming Maw
+							i(96946),	-- Chestguard of the All-Consuming Maw
+							i(96947),	-- Handguards of the All-Consuming Maw
+							i(96948),	-- Faceguard of the All-Consuming Maw
+							i(96949),	-- Legguards of the All-Consuming Maw
+							i(96950),	-- Shoulderguards of the All-Consuming Maw
 						},
 					}),
 					i(215328, {	-- Ensemble: Battleplate of Cyclopean Dread (Mythic)
@@ -2559,6 +2695,27 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214187),	-- Treads of the Haunted Forest
 							i(214188),	-- Jerkin of the Haunted Forest
 							i(214189),	-- Wraps of the Haunted Forest
+							-- NYI --
+							i(96951),	-- Raiment of the Haunted Forest
+							i(96952),	-- Grips of the Haunted Forest
+							i(96953),	-- Headpiece of the Haunted Forest
+							i(96954),	-- Legguards of the Haunted Forest
+							i(96955),	-- Spaulders of the Haunted Forest
+							i(96956),	-- Handwraps of the Haunted Forest
+							i(96957),	-- Helm of the Haunted Forest
+							i(96958),	-- Legwraps of the Haunted Forest
+							i(96959),	-- Robes of the Haunted Forest
+							i(96960),	-- Mantle of the Haunted Forest
+							i(96961),	-- Gloves of the Haunted Forest
+							i(96962),	-- Cover of the Haunted Forest
+							i(96963),	-- Leggings of the Haunted Forest
+							i(96964),	-- Vestment of the Haunted Forest
+							i(96965),	-- Shoulderwraps of the Haunted Forest
+							i(96966),	-- Tunic of the Haunted Forest
+							i(96967),	-- Handguards of the Haunted Forest
+							i(96968),	-- Headguard of the Haunted Forest
+							i(96969),	-- Breeches of the Haunted Forest
+							i(96970),	-- Shoulderguards of the Haunted Forest
 						},
 					}),
 					i(215248, {	-- Ensemble: Vestments of the Shattered Vale (Mythic)
@@ -2601,6 +2758,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214602),	-- Saurok Stalker's Belt
 							i(214603),	-- Saurok Stalker's Spaulders
 							i(214604),	-- Saurok Stalker's Leggings
+							-- NYI --
+							i(96998),	-- Saurok Stalker's Tunic
+							i(96999),	-- Saurok Stalker's Gloves
+							i(97000),	-- Saurok Stalker's Headguard
+							i(97001),	-- Saurok Stalker's Legguards
+							i(97002),	-- Saurok Stalker's Spaulders
 						},
 					}),
 					i(215296, {	-- Ensemble: Battlegear of the Unblinking Vigil (Mythic)
@@ -2643,6 +2806,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213816),	-- Mitts of the Chromatic Hydra
 							i(213817),	-- Slippers of the Chromatic Hydra
 							i(213818),	-- Vestment of the Chromatic Hydra
+							-- NYI --
+							i(97006),	-- Gloves of the Chromatic Hydra
+							i(97007),	-- Hood of the Chromatic Hydra
+							i(97008),	-- Leggings of the Chromatic Hydra
+							i(97009),	-- Robes of the Chromatic Hydra
+							i(97010),	-- Mantle of the Chromatic Hydra
 						},
 					}),
 					i(215195, {	-- Ensemble: Chronomancer Regalia (Mythic)
@@ -2685,6 +2854,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214280),	-- Fire-Charm Cinch
 							i(214281),	-- Fire-Charm Mantle
 							i(214282),	-- Fire-Charm Pants
+							-- NYI --
+							i(97011),	-- Fire-Charm Tunic
+							i(97012),	-- Fire-Charm Grips
+							i(97013),	-- Fire-Charm Headpiece
+							i(97014),	-- Fire-Charm Leggings
+							i(97015),	-- Fire-Charm Spaulders
+							i(97016),	-- Fire-Charm Handwraps
+							i(97017),	-- Fire-Charm Helm
+							i(97018),	-- Fire-Charm Legwraps
+							i(97019),	-- Fire-Charm Vest
+							i(97020),	-- Fire-Charm Mantle
+							i(97021),	-- Fire-Charm Chestguard
+							i(97022),	-- Fire-Charm Gauntlets
+							i(97023),	-- Fire-Charm Crown
+							i(97024),	-- Fire-Charm Legguards
+							i(97025),	-- Fire-Charm Shoulderguards
 						},
 					}),
 					i(215259, {	-- Ensemble: Vestments of the Seven Sacred Seals (Mythic)
@@ -2727,6 +2912,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214934),	-- Lightning Emperor's Legguards
 							i(214935),	-- Lightning Emperor's Bracers
 							i(214936),	-- Lightning Emperor's Sabatons
+							-- NYI --
+							i(97026),	-- Lightning Emperor's Battleplate
+							i(97027),	-- Lightning Emperor's Gauntlets
+							i(97028),	-- Lightning Emperor's Helmet
+							i(97029),	-- Lightning Emperor's Legplates
+							i(97030),	-- Lightning Emperor's Pauldrons
+							i(97031),	-- Lightning Emperor's Breastplate
+							i(97032),	-- Lightning Emperor's Gloves
+							i(97033),	-- Lightning Emperor's Headguard
+							i(97034),	-- Lightning Emperor's Greaves
+							i(97035),	-- Lightning Emperor's Mantle
+							i(97036),	-- Lightning Emperor's Chestguard
+							i(97037),	-- Lightning Emperor's Handguards
+							i(97038),	-- Lightning Emperor's Faceguard
+							i(97039),	-- Lightning Emperor's Legguards
+							i(97040),	-- Lightning Emperor's Shoulderguards
 						},
 					}),
 					i(215336, {	-- Ensemble: Vestments of Winged Triumph (Mythic)
@@ -2769,6 +2970,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213888),	-- Mantle of the Exorcist
 							i(213889),	-- Sash of the Exorcist
 							i(213890),	-- Wristwraps of the Exorcist
+							-- NYI --
+							i(97041),	-- Handwraps of the Exorcist
+							i(97042),	-- Cowl of the Exorcist
+							i(97043),	-- Legwraps of the Exorcist
+							i(97044),	-- Robes of the Exorcist
+							i(97045),	-- Mantle of the Exorcist
+							i(97046),	-- Gloves of the Exorcist
+							i(97047),	-- Hood of the Exorcist
+							i(97048),	-- Leggings of the Exorcist
+							i(97049),	-- Raiment of the Exorcist
+							i(97050),	-- Shoulderguards of the Exorcist
 						},
 					}),
 					i(215205, {	-- Ensemble: Regalia of Ternion Glory (Mythic)
@@ -2811,6 +3023,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214352),	-- Nine-Tailed Treads
 							i(214353),	-- Nine-Tailed Jerkin
 							i(214354),	-- Nine-Tailed Wraps
+							-- NYI --
+							i(97051),	-- Nine-Tailed Tunic
+							i(97052),	-- Nine-Tailed Gloves
+							i(97053),	-- Nine-Tailed Helmet
+							i(97054),	-- Nine-Tailed Legguards
+							i(97055),	-- Nine-Tailed Spaulders
 						},
 					}),
 					i(215268, {	-- Ensemble: Barbed Assassin Battlegear (Mythic)
@@ -2847,7 +3065,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215301, {	-- Ensemble: Regalia of the Witch Doctor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-						-- Contains Removed/NYI!
 							i(214666),	-- Breastplate of the Witch Doctor
 							i(214667),	-- Footguards of the Witch Doctor
 							i(214670),	-- Girdle of the Witch Doctor
@@ -2857,6 +3074,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214671),	-- Mantle of the Witch Doctor
 							i(220993),	-- Tunic of the Witch Doctor
 							i(214665),	-- Wristguards of the Witch Doctor
+							-- NYI --
+							i(97056),	-- Tunic of the Witch Doctor
+							i(97057),	-- Handwraps of the Witch Doctor
+							i(97058),	-- Faceguard of the Witch Doctor
+							i(97059),	-- Legwraps of the Witch Doctor
+							i(97060),	-- Mantle of the Witch Doctor
+							i(97061),	-- Cuirass of the Witch Doctor
+							i(97062),	-- Grips of the Witch Doctor
+							i(97063),	-- Helmet of the Witch Doctor
+							i(97064),	-- Legguards of the Witch Doctor
+							i(97065),	-- Spaulders of the Witch Doctor
+							i(97066),	-- Hauberk of the Witch Doctor
+							i(97067),	-- Gloves of the Witch Doctor
+							i(97068),	-- Headpiece of the Witch Doctor
+							i(97069),	-- Kilt of the Witch Doctor
+							i(97070),	-- Shoulderwraps of the Witch Doctor
 						},
 					}),
 					i(215305, {	-- Ensemble: Regalia of Celestial Harmony (Mythic)
@@ -2899,6 +3132,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213960),	-- Mitts of the Thousandfold Hells
 							i(213961),	-- Slippers of the Thousandfold Hells
 							i(213962),	-- Vestment of the Thousandfold Hells
+							-- NYI --
+							i(97097),	-- Gloves of the Thousandfold Hells
+							i(97098),	-- Hood of the Thousandfold Hells
+							i(97099),	-- Leggings of the Thousandfold Hells
+							i(97100),	-- Robes of the Thousandfold Hells
+							i(97101),	-- Mantle of the Thousandfold Hells
 						},
 					}),
 					i(215213, {	-- Ensemble: Regalia of the Horned Nightmare (Mythic)
@@ -2941,6 +3180,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215014),	-- Legplates of the Last Mogu
 							i(215015),	-- Vambraces of the Last Mogu
 							i(215016),	-- Warboots of the Last Mogu
+							-- NYI --
+							i(97102), -- Helmet of the Last Mogu
+							i(97103), -- Battleplate of the Last Mogu
+							i(97104), -- Gauntlets of the Last Mogu
+							i(97105), -- Legplates of the Last Mogu
+							i(97106), -- Pauldrons of the Last Mogu
+							i(97107), -- Chestguard of the Last Mogu
+							i(97108), -- Handguards of the Last Mogu
+							i(97109), -- Faceguard of the Last Mogu
+							i(97110), -- Legguards of the Last Mogu
+							i(97111), -- Shoulderguards of the Last Mogu
 						},
 					}),
 					i(215345, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Mythic)
