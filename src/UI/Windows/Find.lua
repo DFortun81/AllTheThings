@@ -3,6 +3,8 @@ local appName, app = ...;
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local rawset, tostring, GetItemInfoInstant, GetItemInfo
+	= rawset, tostring, GetItemInfoInstant, GetItemInfo;
 
 -- Uncomment this section to also harvest tooltip data.
 --[[
@@ -483,72 +485,148 @@ app:CreateWindow("ItemFinder", {
 	OnRebuild = function(self, ...)
 		if not self.data then
 			local HarvestedItemDatabase = {};
+			local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
 			local CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
-				collectible = app.ReturnFalse,
-				collected = app.ReturnTrue,
-			},
-			"AsPending", {
 				collectible = app.ReturnTrue,
 				collected = app.ReturnFalse,
 				text = function(t)
-					local link = t.link;
-					if link then
-						local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
-						itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
-							= GetItemInfo(link);
-						if itemName then
-							local spellName, spellID;
-							if classID == "Recipe" or classID == "Mount" then
-								spellName, spellID = GetItemSpell(t.itemID);
-								if spellName == "Learning" then spellID = nil; end	-- RIP.
+					if GetItemInfoInstant(t.itemID) then
+						local link = t.link;
+						if link then
+							local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
+							itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
+								= GetItemInfo(link);
+							if itemName then
+								local spellName, spellID;
+								if classID == "Recipe" or classID == "Mount" then
+									spellName, spellID = GetItemSpell(t.itemID);
+									if spellName == "Learning" then spellID = nil; end	-- RIP.
+								end
+								--setmetatable(t, t.conditions[2]);
+								local info = {
+									["name"] = itemName,
+									["itemID"] = t.itemID,
+									["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+									["class"] = classID,
+									["subclass"] = subclassID,
+									["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
+									["b"] = bindType,
+									["q"] = itemQuality,
+									["iLvl"] = itemLevel,
+									["spellID"] = spellID,
+								};
+								if itemMinLevel and itemMinLevel > 1 then
+									info.lvl = itemMinLevel;
+								end
+								if info.inventoryType == 0 then
+									info.inventoryType = nil;
+								end
+								if info.b and info.b ~= 1 then
+									info.b = nil;
+								end
+								if info.q and info.q < 1 then
+									info.q = nil;
+								end
+								if info.iLvl and info.iLvl < 2 then
+									info.iLvl = nil;
+								end
+								t.itemType = itemType;
+								t.itemSubType = itemSubType;
+								t.info = info;
+								t.retries = nil;
+								HarvestedItemDatabase[t.itemID] = info;
+								AllTheThingsAD.HarvestedItemDatabase = HarvestedItemDatabase;
+								if link then
+									ItemHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+									ItemHarvester:SetHyperlink(link);
+									local lineCount = ItemHarvester:NumLines();
+									local str = ATTCItemHarvesterTextLeft1:GetText();
+									if not IsRetrieving(str) and lineCount > 0 then
+										local requirements = {};
+										for index=2,lineCount,1 do
+											local line = _G["ATTCItemHarvesterTextLeft" .. index] or _G["ATTCItemHarvesterText" .. index];
+											if line then
+												local text = line:GetText();
+												if text then
+													if text:find("Classes: ") then
+														local classes = {};
+														local _,list = (":"):split(text);
+														for i,className in ipairs({(","):split(list)}) do
+															tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
+														end
+														if #classes > 0 then
+															info.classes = classes;
+														end
+													elseif text:find("Races: ") then
+														local races = {};
+														local _,list = (":"):split(text);
+														for i,raceName in ipairs({(","):split(list)}) do
+															tinsert(races, app.RaceDB[raceName:trim()]);
+														end
+														if #races > 0 then
+															info.races = races;
+														end
+													elseif text:find("Requires") and not text:find("Level") and not text:find("Riding") then
+														local c = text:sub(1, 1);
+														if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
+															text = text:trim():sub(9);
+															if text:find("-") then
+																info.minReputation = app.CreateFactionStandingFromText(text);
+															else
+																if text:find("%(") then
+																	if info.requireSkill then
+																		-- If non-specialization skill is already assigned, skip this part.
+																		text = nil;
+																	else
+																		text = ("("):split(text);
+																	end
+																end
+																if text then
+																	local spellName = text:trim();
+																	if spellName == "Herbalism" then spellName = "Herb Gathering"; end
+																	local spellID = app.SpellNameToSpellID[spellName];
+																	if spellID then
+																		local skillID = app.SpellIDToSkillID[spellID];
+																		if skillID then
+																			info.requireSkill = skillID;
+																		else
+																			print("Unknown Skill '" .. spellName .. "'");
+																			tinsert(requirements, spellName);
+																		end
+																	else
+																		print("Unknown Spell '" .. spellName .. "'");
+																		tinsert(requirements, spellName);
+																	end
+																end
+															end
+														end
+													end
+												end
+											end
+										end
+										if #requirements > 0 then
+											info.otherRequirements = requirements;
+										end
+										rawset(t, "text", link);
+										rawset(t, "collected", true);
+									end
+									ItemHarvester:Hide();
+									return link;
+								end
+								return link;
 							end
-							--setmetatable(t, t.conditions[2]);
-							local info = {
-								["name"] = itemName,
-								["itemID"] = t.itemID,
-								["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
-								["class"] = classID,
-								["subclass"] = subclassID,
-								["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
-								["b"] = bindType,
-								["q"] = itemQuality,
-								["iLvl"] = itemLevel,
-								["spellID"] = spellID,
-							};
-							if itemMinLevel and itemMinLevel > 1 then
-								info.lvl = itemMinLevel;
-							end
-							if info.inventoryType == 0 then
-								info.inventoryType = nil;
-							end
-							if info.b and info.b ~= 1 then
-								info.b = nil;
-							end
-							if info.q and info.q < 1 then
-								info.q = nil;
-							end
-							if info.iLvl and info.iLvl < 2 then
-								info.iLvl = nil;
-							end
-							t.itemType = itemType;
-							t.itemSubType = itemSubType;
-							t.info = info;
-							t.retries = nil;
-							HarvestedItemDatabase[t.itemID] = info;
-							AllTheThingsAD.HarvestedItemDatabase = HarvestedItemDatabase;
-							return link;
 						end
-					end
-					
-					t.retries = (t.retries or 0) + 1;
-					if t.retries > 30 then
+						
+						t.retries = (t.retries or 0) + 1;
+						if t.retries > 10 then
+							rawset(t, "collected", true);
+						end
+					else
 						rawset(t, "collected", true);
 					end
+					return tostring(t.itemID);
 				end,
-			},
-			function(t)
-				return #SearchForField("itemID", t.itemID) == 0;
-			end);
+			});
 			self.data = {
 				text = "Item Finder",
 				icon = app.asset("WindowIcon_RaidAssistant"),
@@ -558,7 +636,7 @@ app:CreateWindow("ItemFinder", {
 				progress = 0,
 				total = 0,
 				back = 1,
-				currentItemID = 230000,
+				currentItemID = 224298,
 				minimumItemID = 0,
 				g = { },
 				OnUpdate = function(header)
@@ -572,7 +650,7 @@ app:CreateWindow("ItemFinder", {
 								end
 							end
 						end
-						for count=#g,5000 do
+						for count=#g,100 do
 							local i = header.currentItemID - 1;
 							if i > header.minimumItemID then
 								header.currentItemID = i;
@@ -594,7 +672,7 @@ app:CreateWindow("ItemFinder", {
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 	end,
 	OnRefresh = function(self, ...)
-		self:DelayedUpdate();
+		self:DelayedCall("Update", 5);
 		return true;
 	end,
 });
@@ -671,7 +749,7 @@ app:CreateWindow("SpellFinder", {
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 	end,
 	OnRefresh = function(self, ...)
-		self:DelayedUpdate();
+		self:DelayedCall("Update", 5);
 		return true;
 	end,
 });
