@@ -267,7 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 					}),
 					n(152089, {	-- Thrall
-						["coords"] = { 48.8, 71.2, HORRIFIC_ORGRIMMAR },
+						["coord"] = { 48.8, 71.2, HORRIFIC_ORGRIMMAR },
 						["g"] = {
 							i(174646),	-- Void-Scarred Pup (PET!)
 						},
@@ -339,7 +339,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 					}),
 					n(152718, {	-- Alleria Windrunner
-						["coords"] = { 50.4, 47.6, HORRIFIC_STORMWIND },
+						["coord"] = { 50.4, 47.6, HORRIFIC_STORMWIND },
 						["g"] = {
 							i(174459),	-- Void-Scarred Cat (PET!)
 						},
