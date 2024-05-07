@@ -196,11 +196,9 @@ root(ROOTS.Character, n(createHeader({
 	n(FACTIONS, {
 		faction(1169, {	-- Guild
 			["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
-			-- #if NOT ANYCLASSIC
-			-- CRIEVE NOTE: This should be collectible. Not sure why this was marked like this in Retail, but I don't agree with this.
 			["collectible"] = false,
-			-- #endif
 		}),
+		faction(1168),	-- Guild
 	}),
 	n(VENDORS, {
 		["coords"] = {
