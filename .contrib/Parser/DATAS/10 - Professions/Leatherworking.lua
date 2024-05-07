@@ -3222,7 +3222,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Bracers of Shackled Souls",
-					-- #if AFTER WRATH
+					-- #if AFTER 3.0.3
 					["recipeID"] = 52733,
 					-- #else
 					["recipeID"] = 40000,
@@ -9402,7 +9402,7 @@ itemrecipe("Pattern: Cloak of Darkness", 33124, 42546, TBC_PHASE_THREE);
 itemrecipe("Pattern: Shadowprowler's Chestguard", 33205, 42731, TBC_PHASE_THREE);
 
 itemrecipe("Pattern: Boots of Shackled Souls", 32429, 39997, TBC_PHASE_THREE);
--- #if AFTER WRATH
+-- #if AFTER 3.0.3
 itemrecipe("Pattern: Bracers of Shackled Souls", 32430, 52733, TBC_PHASE_THREE);
 -- #else
 itemrecipe("Pattern: Bracers of Shackled Souls", 32430, 40000, TBC_PHASE_THREE);
