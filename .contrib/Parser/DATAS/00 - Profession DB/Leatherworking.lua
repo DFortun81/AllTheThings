@@ -697,6 +697,7 @@ i(0, 60651);	-- Virulent Spaulders
 i(0, 60669);	-- Wildscale Breastplate
 --- ITEM ---
 -- #if AFTER 3.0.3
+i(0, 40000);			-- Bracers of Shackled Souls [Multiple recipes uses this ID, See later one]
 i(32430, 52733);		-- Bracers of Shackled Souls [Multiple recipes uses this ID]
 -- #endif
 i(44511, 60645);	-- Dragonscale Ammo Pouch [REMOVED: 4.0.1]

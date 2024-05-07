@@ -179,7 +179,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					i(173288),	-- Overflowing Azerite Geode [Rank 1]
 					i(168936),	-- Ward of Unwavering Hope [Rank 1]
 					i(174461),	-- Anomalus (PET!)
-					i(174646),	-- Void-Scarred Pup (PET!)
 					i(174080),	-- Faceless Mask of the Long Night (QI!)
 					i(174287),	-- Sparks of Unwavering Strength
 					i(175054),	-- Melee Veterans Contract
@@ -267,6 +266,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 						}),
 					}),
+					n(152089, {	-- Thrall
+						["coords"] = { 48.8, 71.2, HORRIFIC_ORGRIMMAR },
+						["g"] = {
+							i(174646),	-- Void-Scarred Pup (PET!)
+						},
+					}),
 				},
 			}),
 			header(HEADERS.Achievement, 14062, {	-- Horrific Vision of Stormwind
@@ -332,6 +337,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								i(174081),	-- Faceless Mask of the Dark Imagination (QI!)
 							},
 						}),
+					}),
+					n(152718, {	-- Alleria Windrunner
+						["coords"] = { 50.4, 47.6, HORRIFIC_STORMWIND },
+						["g"] = {
+							i(174459),	-- Void-Scarred Cat (PET!)
+						},
 					}),
 				},
 			}),

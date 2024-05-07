@@ -16561,7 +16561,6 @@ i(63348),	-- in Gentleman's Magazine \\ Goblin Gentleman's Magazine
 i(63351),	-- et Dynasty Mallet \\ Tahret Dynasty Mallet
 i(63354),	-- ock Supplies \\ Warlock Supplies
 i(63358),	-- of the Callers \\ Horn of the Callers
-i(63359),	-- er of Cooperation \\ Banner of Cooperation
 i(63374),	-- um's Pants \\ Bahrum's Pants
 i(63376),	-- scream's Reach Battle Standard \\ Hellscream's Reach Battle Standard
 i(63377),	-- din's Wardens Battle Standard \\ Baradin's Wardens Battle Standard
@@ -16643,7 +16642,6 @@ i(64351),	-- Monster - Staff, Cataclysm C 01 Red
 i(64352),	-- rset Insignia \\ Neferset Insignia
 i(64353),	-- y Firewater Flask \\ Empty Firewater Flask
 i(64376),	-- ir's Pick \\ Gormir's Pick
-i(64399),	-- le Standard of Coordination \\ Battle Standard of Coordination
 i(64404),	-- Crystal Cluster \\ Ruby Crystal Cluster
 i(64405),	-- Essence of Memories
 i(64408),	-- efly Net \\ Flamefly Net
@@ -32397,11 +32395,6 @@ i(174063),	-- Titan Core \\ Corrupted Flesh Samples
 i(174064),	-- Titan Core \\ Corrupted Flesh Samples
 i(174065),	-- Titan Core \\ Corrupted Flesh Samples
 i(174071),	-- Sanguifang's Pulsating Canine
-i(174079),	-- Faceless Mask of the Pained
-i(174080),	-- Faceless Mask of the Long Night
-i(174081),	-- Faceless Mask of Dark Imagination
-i(174082),	-- Faceless Mask of the Daredevil
-i(174083),	-- Faceless Mask of the Burned Bridge
 i(174085),	-- Ring
 i(174086),	-- Ring
 i(174087),	-- Ring
@@ -32451,6 +32444,7 @@ i(174358),	-- Unopened Blackrock Supply Crate
 i(174360),	-- Shadowy Gem
 i(174383),	-- Ebony Stone
 8.3.0.32203
+i(174459),	-- Voidwoven Cat Collar
 i(174468),	-- Ring of Deceitful Rumors \\ Ring - PH
 i(174470),	-- Bound Sinew Ring \\ Ring - PH
 8.3.0.32272
