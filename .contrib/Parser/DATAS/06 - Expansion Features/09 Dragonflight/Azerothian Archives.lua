@@ -14,6 +14,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		["maps"] = {
 			THE_AZURE_SPAN,
 			THALDRASZUS,
+			2262,	-- Traitor's Rest
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
