@@ -252,18 +252,73 @@ WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264481, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Engineering
 	n(ARMOR, {
-		r(56480),	-- Armored Titanium Goggles
-		r(56483),	-- Charged Titanium Specs
-		r(56487),	-- Electroflux Sight Enhancers
-		r(56486),	-- Greensight Gogs
-		r(56465),	-- Mechanized Snow Goggles
-		r(61481),	-- Mechanized Snow Goggles
-		r(61482),	-- Mechanized Snow Goggles
-		r(61483),	-- Mechanized Snow Goggles
-		r(56574),	-- Truesight Ice Blinders
-		r(62271, {["timeline"] = {ADDED_3_0_8}}),	-- Unbreakable Healing Amplifiers
-		r(56484),	-- Visage Liquification Goggles
-		r(56481),	-- Weakness Spectralizers
+		r(56480, {	-- Armored Titanium Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		}),
+		r(56483, {	-- Charged Titanium Specs
+			-- #if BEFORE 7.3.0
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		}),
+		r(56487, {	-- Electroflux Sight Enhancers
+			-- #if BEFORE 7.3.0
+			["classes"] = {
+				-- #if AFTER CATA
+				-- CRIEVE NOTE: Not sure what patch this becomes available to hunters.
+				HUNTER,
+				-- #endif
+				SHAMAN,
+			},
+			-- #endif
+		}),
+		r(56486, {	-- Greensight Gogs
+			-- #if BEFORE 7.3.0
+			["classes"] = { DRUID },
+			-- #endif
+		}),
+		r(56465, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+			-- #endif
+		}),
+		r(61481, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+			-- #endif
+		}),
+		r(61482, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { HUNTER, SHAMAN },
+			-- #endif
+		}),
+		r(61483, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		}),
+		r(56574, {	-- Truesight Ice Blinders
+			-- #if BEFORE 7.3.0
+			["classes"] = { HUNTER, SHAMAN },
+			-- #endif
+		}),
+		r(62271, {	-- Unbreakable Healing Amplifiers
+			["timeline"] = {ADDED_3_0_8},
+			-- #if BEFORE 7.3.0
+			["classes"] = { PALADIN },
+			-- #endif
+		}),
+		r(56484, {	-- Visage Liquification Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+			-- #endif
+		}),
+		r(56481, {	-- Weakness Spectralizers
+			-- #if BEFORE 7.3.0
+			["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+			-- #endif
+		}),
 	}),
 	n(ARMOR_ENCHANTMENTS, {
 		r(54736),	-- EMP Generator[MoP+] \\ Personal Electromagnetic Pulse Generator[Wrath-MoP]
