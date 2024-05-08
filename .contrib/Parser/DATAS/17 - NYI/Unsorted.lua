@@ -5785,10 +5785,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				------ Grey ------
-				i(212346),	-- Failed Gurubashi Tribute
 				i(211768),	-- Hastily Scrawled Satyr Ravings
-				i(211695),	-- Jagged Crystallized Eye
-				i(212352),	-- Mosh'Ogg Totem
 
 				i(217010),	-- Fragmented Medallion of the Draenei
 				i(218130),	-- Adventurer's Footlocker

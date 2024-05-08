@@ -1758,7 +1758,10 @@ i(221779);	-- Bent Card
 ------------------
 -- PATCH 10.2.7 --
 ------------------
+i(212346);	-- Failed Gurubashi Tribute
 i(212345);	-- Hunted Hakkari Blood
+i(211695);	-- Jagged Crystallized Eye
+i(212352);	-- Mosh'Ogg Totem
 i(211694);	-- Oozing Felfang
 i(211692);	-- Tainted Patch of Hide
 i(212341);	-- Twice-Dead Tusk
