@@ -443,3 +443,8 @@ i(211868, 79112);	-- Winding Slitherdrake: Lunar Festival Armor
 i(224163, 82741);	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (might be 10.2.7)
 i(207776, 77147);	-- Grotto Netherwing Drake: Black Scales
 i(216710, 80014);	-- Highland Drake: Embodiment of the Draconic Gladiator
+
+------------------
+-- PATCH 10.2.7 --
+------------------
+i(213561, 79690);	-- Winding Slitherdrake: Void Scales
