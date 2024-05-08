@@ -224,9 +224,11 @@ root(ROOTS.Character, n(createHeader({
 		ach(9650, {	-- Challenge Warlords: Silver - Guild Edition
 			["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
+		-- #if NOT ANYCLASSIC
 		ach(5407, {	-- Realm First! Guild Level 25
 			["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 		}),
+		-- #endif
 		ach(6628, {	-- Realm First! Working as a Better Team
 			["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 		}),
@@ -384,12 +386,16 @@ root(ROOTS.Character, n(createHeader({
 					["minReputation"] = { FACTION_GUILD, EXALTED },
 				}),
 			})),
+			-- #if NOT ANYCLASSIC
 			ach(4943, {	-- Guild Level 5 // Guild Reputation: Neutral
+			-- #endif
 				i(62286, {	-- Guild Vault Voucher (7th Slot)
 					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 				}),
+			-- #if NOT ANYCLASSIC
 			}),
 			ach(4944, {	-- Guild Level 10 // Guild Reputation: Friendly
+			-- #endif
 				i(62040, {	-- Ancient Bloodmoon Cloak
 					["minReputation"] = { FACTION_GUILD, HONORED },
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
@@ -422,8 +428,10 @@ root(ROOTS.Character, n(createHeader({
 					["minReputation"] = { FACTION_GUILD, HONORED },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
+			-- #if NOT ANYCLASSIC
 			}),
 			ach(4945, {	-- Guild Level 15 // Guild Reputation: Honored
+			-- #endif
 				i(63206, {	-- Wrap of Unity [A]
 					["races"] = ALLIANCE_ONLY,
 					["minReputation"] = { FACTION_GUILD, HONORED },
@@ -432,8 +440,10 @@ root(ROOTS.Character, n(createHeader({
 					["races"] = HORDE_ONLY,
 					["minReputation"] = { FACTION_GUILD, HONORED },
 				}),
+			-- #if NOT ANYCLASSIC
 			}),
 			ach(4946, {	-- Guild Level 20 // Guild Reputation: Revered
+			-- #endif
 				i(69887, {	-- Burnished Helm of Might
 					["minReputation"] = { FACTION_GUILD, HONORED },
 					["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
@@ -494,19 +504,25 @@ root(ROOTS.Character, n(createHeader({
 					["minReputation"] = { FACTION_GUILD, HONORED },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
+			-- #if NOT ANYCLASSIC
 			}),
 			ach(4912, {	-- Guild Level 25 [A] // Guild Reputation: Exalted
+			-- #endif
 				i(62298, {	-- Golden King (MOUNT!)
 					["minReputation"] = { FACTION_GUILD, EXALTED },
 					["races"] = ALLIANCE_ONLY,
 				}),
+			-- #if NOT ANYCLASSIC
 			}),
 			ach(5492, {	-- Guild Level 25 [H] // Guild Reputation: Exalted
+			-- #endif
 				i(67107, {	-- Kor'kron Annihilator (MOUNT!)
 					["minReputation"] = { FACTION_GUILD, EXALTED },
 					["races"] = HORDE_ONLY,
 				}),
+			-- #if NOT ANYCLASSIC
 			}),
+			-- #endif
 			ach(6681, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Guild Pandaren Dungeon Hero
 				i(89190, {	-- Tailored Initiate's Shirt
 					["minReputation"] = { FACTION_GUILD, HONORED },
