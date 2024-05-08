@@ -88,8 +88,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, {
 		q(81654),	-- Triggered with completion of Quest 79009
-		q(80199),	-- Arsenal?
-		q(80450),	-- Arsenal?
+		q(80199),	-- Bow of the Ranger Captain
+		q(80450),	-- Arsenal: Voidtouched Weaponry
 		q(80021),	-- Triggered with completion of Quest 79021 / Achivement 40382
 	}),
 });
