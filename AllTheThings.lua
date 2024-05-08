@@ -13499,26 +13499,26 @@ app.LoadDebugger = function()
 				__merge = 1,
 			};
 			local function CleanObject(obj)
-				local clean = {};
-				if obj[1] then
-					for _,o in ipairs(obj) do
-						tinsert(clean, CleanObject(o));
+				if obj == nil then return end
+				if type(obj) == "table" then
+					local clean = {};
+					if obj[1] then
+						for _,o in ipairs(obj) do
+							clean[#clean + 1] = CleanObject(o)
+						end
+					else
+						for k,v in pairs(obj) do
+							if not CleanFields[k] then
+								clean[k] = CleanObject(v)
+							end
+						end
 					end
+					return clean
+				elseif type(obj) == "number" then
+					return obj
 				else
-					for k,v in pairs(obj) do
-						if not CleanFields[k] then
-							clean[k] = v;
-						end
-					end
-					if clean.g then
-						local g = {};
-						for _,o in ipairs(clean.g) do
-							tinsert(g, CleanObject(o));
-						end
-						clean.g = g;
-					end
+					return tostring(obj)
 				end
-				return clean;
 			end
 			local function InitDebuggerData()
 				if not self.rawData then
