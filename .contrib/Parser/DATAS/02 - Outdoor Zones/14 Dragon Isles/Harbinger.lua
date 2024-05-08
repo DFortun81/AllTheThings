@@ -5,6 +5,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 	n(QUESTS, {
 		q(79009, {	-- The Harbinger
 			-- Auto accepted when logging in
+			["groups"] = {
+				i(223988),  -- Dalaran Hearthstone (QI!)
+			},
 		}),
 		q(79010, {	-- Door to the Ren'dorei
 			["sourceQuests"] = { 79009 },	-- The Harbinger
