@@ -268,7 +268,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 
 				-- 10.2.6
 				expansion(EXPANSION.DF, 2.6, bubbleDown({ ["timeline"] = { CREATED_10_2_6 } }, {
-					-- With SpellID attached
+					-- Without SpellID attached
 					i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
 					i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest
 					i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
