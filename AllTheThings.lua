@@ -13496,7 +13496,7 @@ app.LoadDebugger = function()
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,
 				_coord = 1,
-				_merge = 1,
+				__merge = 1,
 			};
 			local function CleanObject(obj)
 				local clean = {};
