@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 29.5, 49.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
 				["g"] = {
-					i(210469),	-- Personal Tabard (COSMETIC?)
+					i(210469),	-- Personal Tabard
 				},
 			}),
 			q(82762, {	-- Keeping a Close Tabard
