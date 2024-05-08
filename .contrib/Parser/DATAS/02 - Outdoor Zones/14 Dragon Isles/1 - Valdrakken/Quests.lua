@@ -362,7 +362,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 29.5, 49.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
 				["g"] = {
-					i(224296),	-- Basket of Draconic Flowers (QI!)
+					i(224296, {	-- Basket of Draconic Flowers (QI!)
+						i(219283),	-- Obsidian Iris (QI!)
+						i(219285),	-- Azure Lily (QI!)
+						i(219287),	-- Time-Touched Daisy (QI!)
+						i(219288),	-- Viridian Bloom (QI!)
+						i(219290),	-- Ruby Blossom (QI!)
+					}),
 				},
 			}),
 			q(79514, {	-- Don't Threaten Me With a Good Time
