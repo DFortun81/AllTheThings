@@ -362,11 +362,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 29.5, 49.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
 				["g"] = {
-					i(219285),	-- Azure Lily (QI!)
-					i(219283),	-- Obsidian Iris (QI!)
-					i(219290),	-- Ruby Blossom (QI!)
-					i(219287),	-- Time-Touched Daisy (QI!)
-					i(219288),	-- Viridian Bloom (QI!)
+					i(224296),	-- Basket of Draconic Flowers (QI!)
 				},
 			}),
 			q(79514, {	-- Don't Threaten Me With a Good Time
@@ -386,8 +382,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 216950 },	-- Scalecommander Viridia
 				["coord"] = { 29.5, 49.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
+				["g"] = {
+					i(210469),	-- Personal Tabard (COSMETIC?)
+				},
 			}),
-			-- TODO: probably should fire hqt after this quest but on ptr character get dc during rp
+			q(82762, {	-- Keeping a Close Tabard
+				["sourceQuests"] = { 79513 },	-- Dragon Isles Adventuring: Being Yourself
+				["provider"] = { "n", 216946 },	-- Chromie
+				["coord"] = { 29.6, 49.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_7 },
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 194026 },	-- Azley
@@ -538,6 +542,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(79632, {["timeline"] = { ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Wrathion and Sabellian
 		q(79666, {["timeline"] = { ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Master Mathias Shaw
 		q(79668, {["timeline"] = { ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Scalecommander Emberthal
+		q(82833, {["timeline"] = { ADDED_10_2_7}}),	-- triggered after turn in questID 79513 (Dragon Isles Adventuring: Being Yourself)
 	}),
 }));
 

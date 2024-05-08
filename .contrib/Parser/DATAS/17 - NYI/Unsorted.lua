@@ -5597,8 +5597,6 @@ root(ROOTS.Unsorted, {
 				i(223474),	-- Worgli the Apprehensive (PET!)
 			}),
 			filter(COSMETIC, {
-				i(210469),	-- Personal Tabard
-
 				------ Troll Heritage ------
 				i(211446),	-- Ensemble: Heritage of the Darkspear
 				i(211438),	-- Darkspear Battlestraps
@@ -5872,6 +5870,11 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(QUEST_ITEMS, {
 				i(217349),	-- DEPRECATED - Arcane Dust
+				i(219283),	-- Obsidian Iris (QI!)
+				i(219285),	-- Azure Lily (QI!)
+				i(219287),	-- Time-Touched Daisy (QI!)
+				i(219288),	-- Viridian Bloom (QI!)
+				i(219290),	-- Ruby Blossom (QI!)
 			}),
 			n(SPECIAL, {	-- Timerunning
 				n(ARMOR, {
@@ -7087,7 +7090,6 @@ root(ROOTS.Unsorted, {
 			}),
 			i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
 			i(224270),	-- Tattered Technique: Certificate of Ownership
-			i(224296),	-- Basket of Draconic Flowers
 			i(224374),	-- Reins of the Thundering Ruby Cloud Serpent
 			i(224407),	-- Bonus Experience
 			i(224408),	-- Bonus Experience
