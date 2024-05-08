@@ -1401,11 +1401,16 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(208692),	-- Ancient Roottwined Tome
 			i(210441),	-- Behemoth's Feather
+			i(208840),	-- Concentrated Sophic Vellum
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
 			i(210326),	-- Cracked Medal of Conquest
 			i(210420),	-- Dream Wardens Insignia [Rare]
 			i(210419),	-- Dream Wardens Insignia [Uncommon]
 			i(210786),	-- Dreaming Whiskerfish
+			i(208597),	-- Eadweard's Notes
+			i(208887),	-- Erdan's Notes
+			i(210027),	-- Extracted Ashen Dust
+			i(210028),	-- Extracted Ashen Dust
 			i(210450),	-- Flaming Orb
 			i(208570),	-- Greater Verdant Crest of Honor
 			i(208566),	-- Greater Verdant Trophy of Conquest
@@ -1413,18 +1418,23 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(210687),	-- Ironfur Sample
 			i(208568),	-- Lesser Verdant Crest of Honor
 			i(208564),	-- Lesser Verdant Trophy of Conquest
+			i(209348),	-- Lydiara's Notes
 			i(210443),	-- Matchbook
 			i(208856),	-- Pocket Lint
 			i(211418),	-- Q'onzu Edict of Change
 			i(208690),	-- Roottwined Key
 			i(210726),	-- Ruby Flightstone
+			i(208839),	-- Rune of Adaptive Binding
 			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 			i(210040),	-- Set Keystone Map: Throne of the Tides
+			i(209350),	-- Shalasar's Notes on Sophic Magics
 			i(210442),	-- Sizzling Charcoal
 			i(208606),	-- Somnagora's Heart
 			i(210439),	-- Speck of Mana
 			i(210440),	-- Splendid Blossom
+			i(208782),	-- Symbiotic Glowspore Grip
+			i(210223),	-- Unstable Element
 			i(208569),	-- Verdant Crest of Honor
 			i(208565),	-- Verdant Trophy of Conquest
 			i(210438),	-- Wisp Dust
@@ -1476,6 +1486,16 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(216672),	-- The Ambush
 			i(216527),	-- Toxic Smackerel
 			i(212917),	-- Windstorm
+			------ Plunderstorm Valdrakken Vendor ------
+			i(220203),	-- Clutch of Wyrm's Dreaming Crests
+			i(217413),	-- Depleted Blackened Flightstone
+			i(217416),	-- Depleted Emerald Flightstone
+			i(217415),	-- Depleted Ruby Flightstone
+			i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
+			i(220204),	-- Pouch of Whelpling's Dreaming Crests
+			i(220205),	-- Satchel of Drake's Dreaming Crests
+			i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
+			i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
 		})),
 
 		-- 10.2.7

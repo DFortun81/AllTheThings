@@ -50,11 +50,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				["sourceQuests"] = { 80384 },	-- xx
 				["coord"] = { 46.5, 45.1, VALDRAKKEN },
 				["groups"] = {
-					i(217705),	-- Pirate's Booty
-					--
-					i(217411),	-- Blackened Flightstone
-					i(217419),	-- Large Satchel of Drake's Dreaming Crests
-					--i(210923),	-- Clutch of Wyrm's Dreaming Crests (unsure if need it here)
+					i(217411, {	-- Blackened Flightstone
+						["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
+					}),
+					i(217412, {	-- Blackened Flightstone
+						["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
+					}),
+					i(217419, {	-- Large Satchel of Drake's Dreaming Crests
+						["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
+					}),
+					i(217420, {	-- Large Pouch of Whelpling's Awakened Crests
+						["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
+					}),
+					i(217705, {	-- Pirate's Booty
+						["cost"] = 18	-- 18c
+					}),
 				},
 			}),
 		}),

@@ -402,7 +402,7 @@ i(206270);	-- Volcanic Equipment Chest
 -- PATCH 10.1.5 --
 ------------------
 i(206375);	-- Corruptor's Scourgestone
-i(208567);	-- Cracked Medal of Conquest
+i(208567);	-- Medal of Conquest (Season 2)
 i(206576);	-- Death's Bargaining Chip
 i(206617);	-- Desecrated Cloth Belt
 i(206619);	-- Desecrated Cloth Boots
@@ -494,3 +494,13 @@ i(205190);	-- Warcraft Rumble Welcome Letter [H]
 -- PATCH 10.2.0 --
 ------------------
 i(210423);	-- Dream Wardens Insignia [Epic 2.5k]
+i(212554);	-- Medal of Conquest (Season 3)
+i(210324);	-- Medal of Honor [A] (Season 3)
+i(210325);	-- Medal of Honor [H] (Season 3)
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+i(211773);	-- Medal of Conquest (Season 4)
+i(211770);	-- Medal of Honor [A] (Season 4)
+i(211771);	-- Medal of Honor [H] (Season 4)

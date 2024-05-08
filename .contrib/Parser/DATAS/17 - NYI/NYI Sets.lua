@@ -6469,6 +6469,12 @@ root(ROOTS.NeverImplemented, n(SETS, {
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+			n(CLASS_TRIAL, {
+				cl(DEATHKNIGHT, {
+					i(213580),	-- Heart-Lesion Helm
+					i(213581),	-- Heart-Lesion Helm
+				}),
+			}),
 			header(HEADERS.Item, 210468, {	-- Emerald Blossom Dreamstone
 				-- Actual items awarded by Emerald Blossom Dreamstone are commented out here
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {

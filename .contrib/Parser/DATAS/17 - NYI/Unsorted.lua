@@ -7089,33 +7089,10 @@ root(ROOTS.Unsorted, {
 				i(217374),	-- Frenzied Hat of the Shallows
 			}),
 			filter(MISC, {
-				------ Crests & Flightstones?? ------
-				i(217412),	-- Blackened Flightstone
-				i(220203),	-- Clutch of Wyrm's Dreaming Crests
-				i(217413),	-- Depleted Blackened Flightstone
-				i(217416),	-- Depleted Emerald Flightstone
-				i(217415),	-- Depleted Ruby Flightstone
-				i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
-				i(217420),	-- Large Pouch of Whelpling's Awakened Crests
-				i(220204),	-- Pouch of Whelpling's Dreaming Crests
-				i(220205),	-- Satchel of Drake's Dreaming Crests
-				i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
-				i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
+				------ Crests?? ------
 				i(212383),	-- Yawning Basket of Aspect's Awakened Crests
 				------ Unknown ------
 				i(212175),	-- Draconic Commendation
-			}),
-			n(PROFESSIONS, {
-				------ NYI?? ------
-				i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
-				i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest
-				i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
-			}),
-			n(PVP, {	-- SEASON 4 PvP
-				i(211770),	-- Medal of Honor
-				i(211771),	-- Medal of Honor
-				i(211772),	-- Glorious Medal of Honor
-				i(211773),	-- Medal of Conquest
 			}),
 			filter(TOYS, {
 				i(218128),	-- Draconic Banner of the Aspects (TOY!)
@@ -7356,13 +7333,9 @@ root(ROOTS.Unsorted, {
 				q(79125),	--
 				q(79126),	--
 				q(79155),	--
-				q(79207),	--
-				q(79208),	--
-				q(79209),	--
 				q(79210),	-- Ensemble: Sky Witch's Attire
-				q(79211),	--
 				q(79278),	--
-				q(79314),	--
+				q(79314),	-- Arsenal: Quel'Serrar Skyborn Blades
 				-- 10.2.5.52330
 				q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
 				q(79353),	--
@@ -7370,25 +7343,17 @@ root(ROOTS.Unsorted, {
 				q(79404),	--
 				q(79418),	--
 				-- 10.2.5.52432
-				q(79467),	--
 				q(79517),	-- Ensemble: Dark Ranger General's Kit
 				q(79537),	-- Jrz Test Currency Quest
 				q(79621),	--
 				-- 10.2.5.52554
 				q(79676),	--
-				-- 10.2.5.52902
-				q(79708),	--
-				q(79709),	--
 				-- 10.2.5.52968
 				q(77868),	--
 				q(77870),	--
 				q(77873),	--
 				q(78179),	--
 				q(79474),	--
-				q(80059),	--
-				q(80060),	--
-				q(80061),	--
-				q(80064),	--
 				q(80065),	-- Ensemble: Spring Reveler's Cornsilk Collection
 				q(80066),	-- Ensemble: Spring Reveler's Cornsilk Collection
 			}),
@@ -7397,19 +7362,6 @@ root(ROOTS.Unsorted, {
 			------ Next Check 10.2.7 ------
 			-- Class Trial [Darkal]
 			i(208878),	-- Adventurer's Footlocker
-			i(213580),	-- Heart-Lesion Helm
-			i(213581),	-- Heart-Lesion Helm
-			-- Fyralath [Darkal]
-			i(208597),	-- Eadweard's Notes
-			i(208782),	-- Symbiotic Glowspore Grip
-			i(208839),	-- Rune of Adaptive Binding
-			i(208840),	-- Concentrated Sophic Vellum
-			i(208887),	-- Erdan's Notes
-			i(209348),	-- Lydiara's Notes
-			i(209350),	-- Shalasar's Notes on Sophic Magics
-			i(210027),	-- Extracted Ashen Dust
-			i(210028),	-- Extracted Ashen Dust
-			i(210223),	-- Unstable Element
 			filter(MISC, {
 				------ Tame Hunter Pets ------
 				-- Check if These pop any QuestIDs we can source them properly
@@ -7559,8 +7511,6 @@ root(ROOTS.Unsorted, {
 				q(77993),	--
 				q(78001),	-- [DEPRECATED] 10.2 Enchanting
 				q(78004),	--
-				q(78012),	--
-				q(78013),	--
 				q(78122),	--
 			}),
 		})),

@@ -8701,6 +8701,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75369),	-- Use Your Coin!
 		})),
 
+		-- 10.2.0
+		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			q(78012),	-- Rune of Adaptive Binding
+			q(78013),	-- Concentrated Sophic Vellum
+		})),
+
 		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			q(80059),	-- Ensemble: Spring Reveler's Dandelion Collection
