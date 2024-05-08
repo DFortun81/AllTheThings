@@ -1103,7 +1103,7 @@ local criteriaFuncs = {
 		-- sometimes we can get nice names from non-server quests... so use their actual implementation
 		local questObject = app.SearchForObject("questID", questID, "field")
 		local questName
-		if questObject then questName = questObject.name end
+		if questObject then questName = app.TryColorizeName(questObject) end
         return ("[%d] %s"):format(questID, questName or RETRIEVING_DATA);
     end,
 

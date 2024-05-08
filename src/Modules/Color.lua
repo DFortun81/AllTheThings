@@ -237,6 +237,8 @@ app.TryColorizeName = function(group, name)
 		-- grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
 		elseif not app.CurrentCharacterFilters(group) then
 			return Colorize(name, colors.Unavailable);
+		elseif group.questID and app.AccountWideQuestsDB[group.questID] then
+			return Colorize(name, colors.Account)
 		end
 	end
 	return name;
