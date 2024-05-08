@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Faerin
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Shattered Remnants (QI!)
+					i(216669),	-- Shattered Remnants (QI!)
 				},
 			}),
 			q(xx, {	-- The Only Good Spider
@@ -44,8 +44,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Faerin
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Arathi Tinderbox (QI!)
-					i(),	-- Helm of Sina's Stalwarts
+					i(213191),	-- Arathi Tinderbox (QI!)
+					i(220108),	-- Helm of Sina's Stalwarts
 				},
 			}),
 			q(xx, {	-- Rally on the Dawnbreaker
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Faerin
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Keg of Black Powder (QI!)
+					i(213630),	-- Keg of Black Powder (QI!)
 				},
 			}),
 			q(xx, {	-- For Their Eyes Only
@@ -69,9 +69,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Great Kyron
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Sureki Shadecaster (QI!)
-					i(),	-- Sureki Shadecaster (QI!) // one item was with different word in description
-					i(),	-- Sureki Shadecaster (QI!) // so there could be 3 different itemIDs with same name
+					i(216658),	-- Sureki Shadecaster (QI!)
+					i(216659),	-- Sureki Shadecaster (QI!) // one item was with different word in description
+					i(216660),	-- Sureki Shadecaster (QI!) // so there could be 3 different itemIDs with same name
 				},
 			}),
 			q(xx, {	-- Zero out Xerosh
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
 					--	crit 'The Guilding Star' for achievement 'Hallowfall'
-					i(),	-- Tower-Keeper's Grips
+					i(220111),	-- Tower-Keeper's Grips
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
 			}),
@@ -115,8 +115,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Faerin
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Lamplighter's Torch (COSMETIC!) [but bind to Warbound]
-					i(),	-- Lamplighter's Unlit Torch (COSMETIC!) [but bind to Warbound]
+					i(220507),	-- Lamplighter's Torch (COSMETIC!) [but bind to Warbound]
+					i(220508),	-- Lamplighter's Unlit Torch (COSMETIC!) [but bind to Warbound]
 				},
 			}),
 			q(xx, {	-- Something FIshy
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
 					--	crit 'Gathering Shadows' for achievement 'Hallowfall'
-					i(),	-- Lamplighter's Epaulets
+					i(220125),	-- Lamplighter's Epaulets
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
 			}),
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- TODO: I didn't look.
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Flameguard's Band
+					i(220133),	-- Flameguard's Band
 				},
 			}),
 			q(xx, {	-- Consecrated Cleanup
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
 					-- crit 'Hope in Solidarity' for achievement 'Hallowfall'.
-					i(),	-- Breeches of the Reckoning's Vengeance
+					i(220129),	-- Breeches of the Reckoning's Vengeance
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
 			}),
@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- Some wierd fish side quest chain
 			q(xx, {	-- Gasping Plea
 				--["sourceQuests"] = { xx },	-- ??
-				["provider"] = { "i", xxx },	-- Gasping Fish (QI!)
+				["provider"] = { "i", 217352 },	-- Gasping Fish (QI!)
 				["coord"] = { x, y, HALLOWFALL },
 			}),
 			q(xx, {	-- Tidal Charms
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Peculiar Fish
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Sunless Shard (QI!)
+					i(217709),	-- Sunless Shard (QI!)
 				},
 			}),
 			q(xx, {	-- Voices from the Deep
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Peculiar Fish
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Rehydated Fish (QI!)
+					i(217816),	-- Rehydated Fish (QI!)
 				},
 			}),
 			-- End of fish quest chain
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Auralia Steelstrike
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Shacklefang Leafnose Meat (QI!)
+					i(222920),	-- Shacklefang Leafnose Meat (QI!)
 				},
 			}),
 			q(xx, {	-- Does Anyone Like Wasps?
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Auralia Steelstrike
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Tough Ivy Fiber (QI!)
+					i(222925),	-- Tough Ivy Fiber (QI!)
 				},
 			}),
 			q(xx, {	-- Underground Economics
@@ -338,9 +338,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- General Steelstrike
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Arathi Trade Goods (QI!)
-					i(),	-- Flame Touched Weaponry (QI!)
-					i(),	-- Tough Ivy Rope (QI!)
+					i(223638),	-- Arathi Trade Goods (QI!)
+					i(223889),	-- Flame Touched Weaponry (QI!)
+					i(223890),	-- Tough Ivy Rope (QI!)
 				},
 			}),
 			-- Orphan kid quest
@@ -349,7 +349,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Alyza Bowblaze
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- "Much Loved" Teddy Bear (QI!)
+					i(216604),	-- "Much Loved" Teddy Bear (QI!)
 				},
 			}),
 			q(xx, {	-- A Bloody Inheritance
@@ -357,10 +357,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Alyza Bowblaze
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Battered Helmet (QI!)
-					i(),	-- Dented Boots (QI!)
-					i(),	-- Resplendant Shield (QI!)
-					i(),	-- Salt-pitted Sword (QI!)
+					i(215446),	-- Battered Helmet (QI!)
+					i(216525),	-- Dented Boots (QI!)
+					i(216526),	-- Resplendant Shield (QI!)
+					i(216524),	-- Salt-pitted Sword (QI!)
 				},
 			}),
 			q(xx, {	-- Gutting the Pool
@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Alyza Bowblaze
 				--["coord"] = { x, y, HALLOWFALL },	-- follow player
 				["g"] = {
-					i(),	-- Sharpscale's Head (QI!)
+					i(217175),	-- Sharpscale's Head (QI!)
 				},
 			}),
 			q(xx, {	-- A Final Goodbye
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Baron Sybaestan Braunpyke
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Darkwater Tooth (QI!)
+					i(219211),	-- Darkwater Tooth (QI!)
 				},
 			}),
 			q(xx, {	-- Dreaded Dreadfang
@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Sister Etna Blayze
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Wasp Venom (QI!)
+					i(218113),	-- Wasp Venom (QI!)
 				},
 			}),
 			q(xx, {	-- Burning Reflections
@@ -469,7 +469,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Wenren Althal
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Arcane Suffused Organ (QI!)
+					i(217269),	-- Arcane Suffused Organ (QI!)
 				},
 			}),
 			q(xx, {	-- Arcane Experiments
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Wenren Althal
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Bent Arcane Focus (QI!)
+					i(221190),	-- Bent Arcane Focus (QI!)
 				},
 			}),
 			q(xx, {	-- Finding Justice
@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["sourceQuests"] = { xx },	-- Tricks of the Dark OR Fish Are Food, Not Friends
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Gasping Fish (QI!) // or could be also drop during Tricks of the Dark AND/OR Fish Are Food, Not Friends
+					i(217352),	-- Gasping Fish (QI!) // or could be also drop during Tricks of the Dark AND/OR Fish Are Food, Not Friends
 				},
 			}),
 			--
@@ -543,21 +543,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Murkshade (another providers is n: xx (Lost Cache))
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Murkshade Grips
+					i(223382),	-- Murkshade Grips
 				},
 			}),
 			q(xx, {	-- 
 				["provider"] = { "n", xxx },	-- The Perchfather
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Downy Clump (trash item, possible just rng)
+					i(220271),	-- Downy Clump (trash item, possible just rng)
 				},
 			}),
 			q(xx, {	-- 
 				["provider"] = { "n", xxx },	-- Strenght of Beledar
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Sharpened Digging Claws (trash item, possible just rng)
+					i(220266),	-- Sharpened Digging Claws (trash item, possible just rng)
 				},
 			}),
 			q(xx, {	-- 
@@ -578,15 +578,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", xxx },	-- Pride of Beledar
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Lance of Beledar's Pride (warbound)
-					i(),	-- Spiraled Horn (trash item, possible just rng)
+					i(223007),	-- Lance of Beledar's Pride (warbound)
+					i(220268),	-- Spiraled Horn (trash item, possible just rng)
 				},
 			}),
 			q(xx, {	-- 
 				["provider"] = { "n", xxx },	-- Sir Alastair Purefire
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- Righteous Path Treads (warbound)
+					i(221245),	-- Righteous Path Treads (warbound)
 				},
 			}),
 		}),
