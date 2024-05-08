@@ -1312,6 +1312,7 @@ i(170197);	-- Swarthy Warning Sign
 ------------------
 i(220777);	-- Cherry Blossom Trail
 i(218112);	-- Colorful Beach Chair
+i(210455);	-- Draenic Hologem
 i(217725);	-- Essence of Yu'lon
 i(217726);	-- Fortitude of Niuzao
 i(217723);	-- Fury of Xuen

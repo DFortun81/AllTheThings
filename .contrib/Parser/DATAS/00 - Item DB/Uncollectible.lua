@@ -1756,6 +1756,12 @@ i(213214);	-- Woven Lavareed Basket
 i(221779);	-- Bent Card
 
 ------------------
+-- PATCH 10.2.7 --
+------------------
+i(211694);	-- Oozing Felfang
+i(211692);	-- Tainted Patch of Hide
+
+------------------
 -- PATCH 11.0.1 --
 ------------------
 --i(220287);	-- Acid-Filled Sack

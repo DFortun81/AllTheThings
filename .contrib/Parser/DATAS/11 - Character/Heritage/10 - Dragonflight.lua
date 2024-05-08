@@ -568,6 +568,160 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			},
 		}));
+		race(DRAENEI, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { DRAENEI } }, {
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
+			["g"] = {
+				q(78068, {	-- An Artificer's Appeal
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78069, {	-- Reviving Tradition
+					["sourceQuests"] = { 78068 },	-- An Artificer's Appeal
+					["provider"] = { "n", 210340 },	-- Grand Artificer Romuul
+					["coord"] = { 54.8, 79.8, THE_EXODAR },
+					["g"] = {
+						o(408934, {	--	Artificing Tools
+							i(210167),	-- Empyrium Filament (QI!)
+						}),
+						o(420039, {	--	Artificing Tools
+							i(210168),	-- Hyperthermal Soldering Tool (QI!)
+						}),
+					},
+				}),
+				q(78070, {	-- Pressing Deadlines
+					["sourceQuests"] = { 78069 },	-- Reviving Tradition
+					["provider"] = { "n", 210340 },	-- Grand Artificer Romuul
+					["coord"] = { 54.8, 79.8, THE_EXODAR },
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78071, {	-- Rush Order
+					["sourceQuests"] = { 78070 },	-- Pressing Deadlines
+					["provider"] = { "n", 208494 },	-- High Artificer Ataanya
+					["coord"] = { 39.0, 46.9, SHATTRATH_CITY },
+					["g"] = {
+						i(210181),	-- Signed Work Orders (QI!)
+					},
+				}),
+				q(78072, {	-- An Old Wound
+					["sourceQuests"] = { 78071 },	-- Rush Order
+					["provider"] = { "n", 208496 },	-- Apprentice Beruun
+					["coord"] = { 37.9, 46.9, SHATTRATH_CITY },
+				}),
+				q(78073, {	-- Lingering Scars
+					["sourceQuests"] = { 78072 },	-- An Old Wound
+					["provider"] = { "n", 210578 },	-- Exarch Maladaar
+					["coord"] = { 37.5, 64.3, TEROKKAR_FOREST },
+				}),
+				q(78074, {	-- To See Clearly
+					["sourceQuests"] = { 78073 },	-- Lingering Scars
+					["provider"] = { "n", 210581 },	-- Exarch Maladaar
+					["coord"] = { 41.6, 61.6, TEROKKAR_FOREST },
+					["g"] = {
+						o(408954, {	--	Artificer's Lockbox
+							i(210189),	-- Exarch Hataaru's Artificing Lens (QI!)
+						}),
+					},
+				}),
+				q(78075, {	-- Moving Past
+					["sourceQuests"] = { 78074 },	-- To See Clearly
+					["provider"] = { "n", 210569 },	-- High Artificer Ataanya
+					["coord"] = { 39.1, 46.3, SHATTRATH_CITY },
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78076, {	-- Emergency Efforts
+					["sourceQuests"] = { 78075 },	-- Moving Past
+					["provider"] = { "n", 210563 },	-- Chieftain Hatuun
+					["coord"] = { 54.0, 76.6, THE_EXODAR },
+				}),
+				q(78077, {	-- Beneath the Skin
+					["sourceQuests"] = { 78076 },	-- Emergency Efforts
+					["provider"] = { "n", 210391 },	-- Chieftain Hatuun
+					["coord"] = { 51.9, 75.5, BLOODMYST_ISLE },
+					["g"] = {
+						i(210239),	-- Pitted Bones (QI!)
+					},
+				}),
+				q(78078, {	-- Assessing the Enemy
+					["sourceQuests"] = { 78076 },	-- Emergency Efforts
+					["provider"] = { "n", 210588 },	-- Arzaal
+					["coord"] = { 51.9, 75.7, BLOODMYST_ISLE },
+					["g"] = {
+						i(210238),	-- Satyr Totem (QI!)
+					},
+				}),
+				q(78079, {	-- Excision
+					["sourceQuests"] = {
+						78077,	-- Beneath the Skin
+						78078,	-- Assessing the Enemy
+					},
+					["provider"] = { "n", 210390 },	-- Prophet Velen
+					["coord"] = { 52.0, 75.6, BLOODMYST_ISLE },
+				}),
+				q(78080, {	-- At the Source
+					["sourceQuests"] = { 78079 },	-- Excision
+					["provider"] = { "n", 210598 },	-- Arzaal
+					["coord"] = { 42.2, 36.6, BLOODMYST_ISLE },
+				}),
+				q(78081, {	-- Pain Recedes
+					["sourceQuests"] = { 78080 },	-- At the Source
+					["provider"] = { "n", 210605 },	-- Proper Velen
+					["coord"] = { 41.5, 33.0, BLOODMYST_ISLE },
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78082, {	-- A Burden Shared
+					["sourceQuests"] = { 78081 },	-- Pain Recedes
+					["provider"] = { "n", 214021 },	-- Proper Velen
+					["coord"] = { 54.7, 80.7, THE_EXODAR },
+					["g"] = {
+						i(210586),	-- Akama's Memory Stone (QI!)
+						i(210578),	-- Arzaal's Memory Stone (QI!)
+						i(210577),	-- Ataanya's Memory Stone (QI!)
+						i(210579),	-- Boros's Memory Stone (QI!)
+						i(210575),	-- Hatuun's Memory Stone (QI!)
+						i(210581),	-- Ishanah's Memory Stone (QI!)
+						i(210584),	-- Naielle's Memory Stone (QI!)
+						i(210580),	-- Nobundo's Memory Stone (QI!)
+						i(210576),	-- Romuul's Memory Stone (QI!)
+						i(210538),	-- Velen's Memory Stone (QI!)
+					},
+				}),
+				q(78083, {	-- Our Path Forward
+					["sourceQuests"] = { 78082 },	-- A Burden Shared
+					["provider"] = { "n", 212387 },	-- Grand Anchorite Almonen
+					["coord"] = { 64.4, 87.3, THE_EXODAR },
+					["g"] = {
+						i(210455),	-- Draenic Hologem (TOY!)
+						i(211313, {	-- Ensemble: Heritage of the Draenei
+							i(211333),	-- Amethyst Bands of Telhamat	
+							i(211340),	-- Amethyst Chestplate of Telhamat
+							i(211338),	-- Amethyst Grips of Telhamat
+							i(211335),	-- Amethyst Sentinels of Telhamat
+							i(211334),	-- Dawnsteel Belt of Telhamat
+							i(211341),	-- Dawnsteel Casque of Telhamat
+							i(211339),	-- Dawnsteel Cleats of Telhamat
+							i(211337),	-- Dawnsteel Helm of Telhamat
+							i(211336),	-- Netherweave Legwraps of Telhamat
+							i(211309),	-- Sumptuous Legwraps of Lost Embaari
+							i(211306),	-- Taladite Bands of Lost Embaari
+							i(211305),	-- Taladite Chestplate of Lost Embaari
+							i(211311),	-- Taladite Grips of Lost Embaari
+							i(211308),	-- Taladite Sentinels of Lost Embaari
+							i(211307),	-- True Iron Belt of Lost Embaari
+							i(211342),	-- True Iron Casque of Lost Embaari
+							i(211312),	-- True Iron Cleats of Lost Embaari
+							i(211310),	-- True Iron Helm of Lost Embaari
+						}),
+					},
+				}),
+			},
+		}));
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
@@ -595,5 +749,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77796),	-- Choosing Angellene during 'Fear is Our Weapon' (questID 72860) (spellID 421083)
 		q(77797),	-- Choosing Emalora during 'Fear is Our Weapon' (questID 72860) (spellID 421086)
 		q(77798),	-- Choosing Margix during 'Fear is Our Weapon' (questID 72860) (spellID 421087)
+	})),
+	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }, {
+		q(78548),	-- Triggers after accepting 'An Artificer's Appeal' (questID 78068)
+		q(82162),	-- Stay a while and listen with Chieftain Hatuun / Prophet Velen during 'A Burden Shared' (questID 78082)
+		q(78841),	-- Ensemble: Heritage of the Draenei
+		q(78843),	-- Ensemble: Heritage of the Draenei
+		q(78844),	-- Ensemble: Heritage of the Draenei
+		q(78845),	-- Ensemble: Heritage of the Draenei
 	})),
 });

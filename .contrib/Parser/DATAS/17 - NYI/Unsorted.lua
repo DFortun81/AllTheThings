@@ -5599,29 +5599,6 @@ root(ROOTS.Unsorted, {
 			filter(COSMETIC, {
 				i(210469),	-- Personal Tabard
 
-				------ Draenei Heritage ------
-				i(211313),	-- Ensemble: Heritage of the Draenei
-				i(211333),	-- Amethyst Bands of Telhamat
-				i(211340),	-- Amethyst Chestplate of Telhamat
-				i(211338),	-- Amethyst Grips of Telhamat
-				i(211335),	-- Amethyst Sentinels of Telhamat
-				i(211334),	-- Dawnsteel Belt of Telhamat
-				i(211341),	-- Dawnsteel Casque of Telhamat
-				i(211339),	-- Dawnsteel Cleats of Telhamat
-				i(211337),	-- Dawnsteel Helm of Telhamat
-				i(211336),	-- Netherweave Legwraps of Telhamat
-				i(211309),	-- Sumptuous Legwraps of Lost Embaari
-				i(211306),	-- Taladite Bands of Lost Embaari
-				i(211305),	-- Taladite Chestplate of Lost Embaari
-				i(211311),	-- Taladite Grips of Lost Embaari
-				i(211308),	-- Taladite Sentinels of Lost Embaari
-				i(211307),	-- True Iron Belt of Lost Embaari
-				i(211342),	-- True Iron Casque of Lost Embaari
-				i(211312),	-- True Iron Cleats of Lost Embaari
-				i(211310),	-- True Iron Helm of Lost Embaari
-
-				i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
-
 				------ Troll Heritage ------
 				i(211446),	-- Ensemble: Heritage of the Darkspear
 				i(211438),	-- Darkspear Battlestraps
@@ -5843,8 +5820,6 @@ root(ROOTS.Unsorted, {
 				i(212345),	-- Hunted Hakkari Blood
 				i(211695),	-- Jagged Crystallized Eye
 				i(212352),	-- Mosh'Ogg Totem
-				i(211694),	-- Oozing Felfang
-				i(211692),	-- Tainted Patch of Hide
 				i(212341),	-- Twice-Dead Tusk
 				i(211798),	-- Un-Raised Bone Fragments
 
@@ -7464,22 +7439,6 @@ root(ROOTS.Unsorted, {
 				q(77905),	--
 				q(77906),	--
 				q(77907),	--
-				q(78068),	-- Q1 Breadcrumb to Exodar
-				q(78069),	--
-				q(78070),	--
-				q(78071),	--
-				q(78072),	--
-				q(78073),	--
-				q(78074),	--
-				q(78075),	--
-				q(78076),	--
-				q(78077),	--
-				q(78078),	--
-				q(78079),	--
-				q(78080),	--
-				q(78081),	--
-				q(78082),	--
-				q(78083),	--
 				q(78179),	--
 				q(79474),	--
 				q(80059),	--

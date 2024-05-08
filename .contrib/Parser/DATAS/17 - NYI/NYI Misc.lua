@@ -1477,5 +1477,10 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(216527),	-- Toxic Smackerel
 			i(212917),	-- Windstorm
 		})),
+
+		-- 10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
+		})),
 	}),
 }));
