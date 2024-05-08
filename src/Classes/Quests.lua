@@ -32,6 +32,7 @@ local RepeatableQuestIcon = app.asset("Interface_Questd");
 
 -- Module locals
 local OneTimeQuests
+local AccountWideLockedQuestsCache = {}
 
 -- Quest Name Lib
 local GetTitleForQuestID, GetQuestTimeLeftMinutes;
@@ -381,14 +382,18 @@ local function CollectibleAsLocked(t, locked)
 	and (locked or t.locked)
 	-- not a repeatable quest
 	and not t.repeatable
-	-- TODO: Not Locked by a OPA Quest...
 	and
 	(
-		-- debug/account mode
-		app.MODE_DEBUG_OR_ACCOUNT
-		or
-		-- available in party sync
-		not t.DisablePartySync
+		-- Not Locked by a OPA/AW Quest
+		not AccountWideLockedQuestsCache[t.questID]
+		and
+		(
+			-- debug/account mode
+			app.MODE_DEBUG_OR_ACCOUNT
+			or
+			-- available in party sync
+			not t.DisablePartySync
+		)
 	)
 end
 local function CollectibleAsQuestOrAsLocked(t)
@@ -1141,19 +1146,22 @@ local function IsGroupLocked(t)
 	local lockCriteria = t.lc;
 	if lockCriteria then
 		local criteriaRequired = lockCriteria[1];
-		local critKey, critFunc, nonQuestLock;
+		local critKey, critFunc, critVal, nonQuestLock;
 		for i=2,#lockCriteria,2 do
 			critKey = lockCriteria[i];
 			critFunc = criteriaFuncs[critKey];
 			if critFunc then
-				if critFunc(lockCriteria[i + 1]) then
-					if not nonQuestLock and critKey ~= "questID" then
+				critVal = lockCriteria[i + 1]
+				if critFunc(critVal) then
+					if critKey ~= "questID" then
 						nonQuestLock = true;
+					elseif app.AccountWideQuestsDB[critVal] then
+						-- this quest is locked by a completed AWQ, so we know it can't be completed on another character either
+						AccountWideLockedQuestsCache[t.questID] = true
 					end
 					criteriaRequired = criteriaRequired - 1;
 					if criteriaRequired <= 0 then
 						-- app.PrintDebug("Locked:",app:Linkify(t.questID, app.Colors.ChatLink, "search:questID:" .. t.questID),"=>",critKey,lockCriteria[i + 1])
-						LockedQuestCache[t.questID] = true
 						-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
 						if nonQuestLock then
 							-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))

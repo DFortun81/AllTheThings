@@ -73,6 +73,7 @@ db\Dragonflight\LocalizationDB.lua
 db\Dragonflight\en_auto.lua
 db\Presets.lua
 db\ReagentsDB.lua
+db\AccountWideQuestsDB.lua
 
 # Load object class templates
 src\Classes\base.lua
