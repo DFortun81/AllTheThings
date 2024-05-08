@@ -722,6 +722,148 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			},
 		}));
+		race(TROLL, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { TROLL } }, {
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Troll|r.",
+			["g"] = {
+				q(77869),	-- Return to the Echo Isles
+				q(77871, {	-- De Old Loa
+					["sourceQuests"] = { 77869 },	-- Return to the Echo Isles
+					["provider"] = { "n", 210092 },	-- Master Gadrin
+					["coord"] = { 61.4, 65.4, ECHO_ISLES },
+				}),
+				q(77874, {	-- De Loa of de Past
+					["sourceQuests"] = { 77871 },	-- De Old Loa
+					["provider"] = { "n", 214839 },	-- Rokhan
+					["coord"] = { 59.1, 65.6, ECHO_ISLES },
+				}),
+				q(77879, {	-- Stalking the Stalker
+					["sourceQuests"] = { 77874 },	-- De Loa of de Past
+					["provider"] = { "n", 210238 },	-- Rokhan
+					["coord"] = { 84.8, 40.2, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						i(211350),	-- Offering to Hakkar (QI!)
+					},
+				}),
+				q(77881, {	-- There is Another
+					["sourceQuests"] = { 77879 },	-- Stalking the Stalker
+					["provider"] = { "n", 209891 },	-- Kevo ya Siti
+					["coord"] = { 81.8, 48.1, NORTHERN_STRANGLETHORN },
+				}),
+				q(77880, {	-- Looking for Lukou
+					["sourceQuests"] = { 77881 },	-- There is Another
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 63.5, 41.3, NORTHERN_STRANGLETHORN },
+				}),
+				q(77877, {	-- One With the Loa
+					["sourceQuests"] = { 77880 },	-- Looking for Lukou
+					["provider"] = { "n", 222666 },	-- Kevo ya Siti
+					["coord"] = { 65.1, 47.7, NORTHERN_STRANGLETHORN },
+				}),
+				q(77882, {	-- Stolen But Not Forgotten
+					["sourceQuests"] = { 77877 },	-- One With the Loa
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						o(408767, {	-- Dusty Bag
+							i(210592),	-- Altar Fragment (QI!)
+						}),
+					},
+				}),
+				q(78875, {	-- The Unkillable
+					["sourceQuests"] = { 77877 },	-- One With the Loa
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						i(210593),	-- Lukou's Altar Centerpiece (QI!)
+					},
+				}),
+				q(77894, {	-- Heart of Lokou
+					["sourceQuests"] = {
+						77882,	-- Stolen But Not Forgotten
+						78875,	-- The Unkillable
+					},
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+				}),
+				q(77898, {	-- Honor and Tribute
+					["sourceQuests"] = { 77894 },	-- Heart of Lokou
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+				}),
+				q(77899, {	-- The Rush'kah
+					["sourceQuests"] = { 77898 },	-- Honor and Tribute
+					["provider"] = { "n", 210086 },	-- Witch Doctor Tzadah
+					["coord"] = { 59.1, 65.9, ECHO_ISLES },
+					["g"] = {
+						i(210830),	-- Finished Rush'kah Mask (QI!)
+					},
+				}),
+				q(77900, {	-- The Loa Trials
+					["sourceQuests"] = { 77899 },	-- The Rush'kah
+					["provider"] = { "n", 223215 },	-- Rokhan
+					["coord"] = { 60.1, 62.4, ECHO_ISLES },
+				}),
+				q(77901, {	-- Retraining the Trainees
+					["sourceQuests"] = { 77900 },	-- The Loa Trials
+					["provider"] = { "n", 210260 },	-- Kevo ya Siti
+					["coord"] = { 59.0, 66.3, ECHO_ISLES },
+					["g"] = {
+						i(211000),	-- Cunning Charm (QI!)
+					},
+				}),
+				q(77902, {	-- Ritual Recovery
+					["sourceQuests"] = { 77900 },	-- The Loa Trials
+					["provider"] = { "n", 205981 },	-- Lukou
+					["coord"] = { 58.4, 66.2, ECHO_ISLES },
+				}),
+				q(77903, {	-- De Power of Death
+					["sourceQuests"] = { 77900 },	-- The Loa Trials
+					["provider"] = { "n", 212784 },	-- Rokhan
+					["coord"] = { 58.5, 65.5, ECHO_ISLES },
+				}),
+				q(77905, {	-- Avatar of Mueh'zala
+					["sourceQuests"] = {
+						77901,	-- Retraining the Trainees
+						77902,	-- Ritual Recovery
+						77903,	-- De Power of Death
+					},
+					["provider"] = { "n", 213638 },	-- Rokhan
+					["coord"] = { 56.9, 56.4, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						i(211133),	-- Jani's Blessing (QI!)
+					},
+				}),
+				q(77906, {	-- De Darkspear Loa
+					["sourceQuests"] = { 77905 },	-- Avatar of Mueh'zala
+					["provider"] = { "n", 212782 },	-- Rokhan
+					["coord"] = { 58.5, 65.5, ECHO_ISLES },
+					["g"] = {
+						i(211446, {	-- Ensemble: Heritage of the Darkspear
+							i(211438),	-- Darkspear Battlestraps
+							i(218007),	-- Darkspear Battlestraps of the Horde
+							i(211441),	-- Darkspear Belt
+							i(218015),	-- Darkspear Belt of the Horde
+							i(211440),	-- Darkspear Bracers
+							i(218016),	-- Darkspear Bracers of the Horde
+							i(211437),	-- Darkspear Greaves
+							i(218010),	-- Darkspear Greaves of the Horde
+							i(211436),	-- Darkspear Grips
+							i(218011),	-- Darkspear Grips of the Horde
+							i(211434),	-- Darkspear Rush'kah
+							i(218012),	-- Darkspear Rush'kah of the Horde
+							i(211442),	-- Darkspear Shoulderguards
+							i(218014),	-- Darkspear Shoulderguards of the Horde
+							i(211439),	-- Darkspear Tusked Barrier
+							i(218009),	-- Darkspear Tusked Barrier of the Horde
+							i(211433),	-- Darkspear War-Skirt
+							i(218013),	-- Darkspear War-Skirt of the Horde
+							i(218119),	-- Kevo ya Siti's Mask of Cunning
+							i(218118),	-- Lukou's Mask of Regeneration
+						}),
+					},
+				}),
+			},
+		}));
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
@@ -757,5 +899,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(78843),	-- Ensemble: Heritage of the Draenei
 		q(78844),	-- Ensemble: Heritage of the Draenei
 		q(78845),	-- Ensemble: Heritage of the Draenei
+		q(78549),	-- Triggers after accepting 'Return to the Echo Isles' (questID 77869)
+		q(78913),	-- Ensemble: Heritage of the Darkspear
+		q(80503),	-- Ensemble: Heritage of the Darkspear
+		q(80542),	-- Ensemble: Heritage of the Darkspear
+		q(80543),	-- Ensemble: Heritage of the Darkspear
 	})),
 });

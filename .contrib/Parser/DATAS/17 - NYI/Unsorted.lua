@@ -5597,30 +5597,7 @@ root(ROOTS.Unsorted, {
 				i(223474),	-- Worgli the Apprehensive (PET!)
 			}),
 			filter(COSMETIC, {
-				------ Troll Heritage ------
-				i(211446),	-- Ensemble: Heritage of the Darkspear
-				i(211438),	-- Darkspear Battlestraps
-				i(211441),	-- Darkspear Belt
-				i(211440),	-- Darkspear Bracers
-				i(211437),	-- Darkspear Greaves
-				i(211436),	-- Darkspear Grips
-				i(211434),	-- Darkspear Rush'kah
-				i(211442),	-- Darkspear Shoulderguards
-				i(211439),	-- Darkspear Tusked Barrier
-				i(211433),	-- Darkspear War-Skirt
-
-				i(218007),	-- Darkspear Battlestraps of the Horde
-				i(218009),	-- Darkspear Tusked Barrier of the Horde
-				i(218010),	-- Darkspear Greaves of the Horde
-				i(218011),	-- Darkspear Grips of the Horde
-				i(218012),	-- Darkspear Rush'kah of the Horde
-				i(218013),	-- Darkspear War-Skirt of the Horde
-				i(218014),	-- Darkspear Shoulderguards of the Horde
-				i(218015),	-- Darkspear Belt of the Horde
-				i(218016),	-- Darkspear Bracers of the Horde
-
 				i(218105),	-- Loa's Blade-Blessing
-
 				i(220357),	-- Water Blaster B.L.
 				i(220655),	-- Water Blaster P.K.
 				i(220690),	-- Water Blaster P.R.
@@ -5815,11 +5792,8 @@ root(ROOTS.Unsorted, {
 				------ Grey ------
 				i(212346),	-- Failed Gurubashi Tribute
 				i(211768),	-- Hastily Scrawled Satyr Ravings
-				i(212345),	-- Hunted Hakkari Blood
 				i(211695),	-- Jagged Crystallized Eye
 				i(212352),	-- Mosh'Ogg Totem
-				i(212341),	-- Twice-Dead Tusk
-				i(211798),	-- Un-Raised Bone Fragments
 
 				i(217010),	-- Fragmented Medallion of the Draenei
 				i(218130),	-- Adventurer's Footlocker
@@ -7415,26 +7389,9 @@ root(ROOTS.Unsorted, {
 				q(79709),	--
 				-- 10.2.5.52968
 				q(77868),	--
-				q(77869),	--
 				q(77870),	--
-				q(77871),	--
 				q(77873),	--
-				q(77874),	--
-				q(77877),	--
-				q(77879),	--
-				q(77880),	--
-				q(77881),	--
-				q(77882),	--
-				q(77894),	--
-				q(77898),	--
-				q(77899),	--
-				q(77900),	--
-				q(77901),	--
-				q(77902),	--
-				q(77903),	--
 				q(77904),	--
-				q(77905),	--
-				q(77906),	--
 				q(77907),	--
 				q(78179),	--
 				q(79474),	--

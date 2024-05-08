@@ -1758,8 +1758,11 @@ i(221779);	-- Bent Card
 ------------------
 -- PATCH 10.2.7 --
 ------------------
+i(212345);	-- Hunted Hakkari Blood
 i(211694);	-- Oozing Felfang
 i(211692);	-- Tainted Patch of Hide
+i(212341);	-- Twice-Dead Tusk
+i(211798);	-- Un-Raised Bone Fragments
 
 ------------------
 -- PATCH 11.0.1 --
