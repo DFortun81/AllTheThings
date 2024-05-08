@@ -146,24 +146,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(92, {	-- Gelkis Clan Centaur
+					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+					-- #if AFTER CATA
+					-- #if ANYCLASSIC
+					-- CRIEVE NOTE: Blizzard included the rep update with Cata instead of making us wait until 8.0.1. :)
+					["sourceQuest"] = 14394,	-- Death to Agogridon
+					-- #else
 					-- #if AFTER 8.0.1
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
-					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
 					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-					-- #if BEFORE CATA
+					-- #endif
+					-- #else
 					["minReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be Honored.
 					["maxReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
 					-- #endif
 				}),
 				faction(93, {	-- Magram Clan Centaur
+					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+					-- #if AFTER CATA
+					-- #if ANYCLASSIC
+					-- CRIEVE NOTE: Blizzard included the rep update with Cata instead of making us wait until 8.0.1. :)
+					["sourceQuest"] = 14394,	-- Death to Agogridon
+					-- #else
 					-- #if AFTER 8.0.1
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
-					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
 					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-					-- #if BEFORE CATA
+					-- #endif
+					-- #else
 					["minReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be Honored.
 					["maxReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
