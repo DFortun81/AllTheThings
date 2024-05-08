@@ -5584,11 +5584,6 @@ root(ROOTS.Unsorted, {
 	}),
 	expansion(EXPANSION.DF, {
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
-			n(ARMOR, {
-				i(217891),	-- Cobalt Guardian's Cloak
-				i(217892),	-- Emerald Winglord's Shoulders
-				i(217893),	-- Emerald Winglord's Chain
-			}),
 			filter(BATTLE_PETS, {
 				i(224576),	-- Lil' Flameo (PET!)
 				i(223499),	-- Lil' Manny (PET!)

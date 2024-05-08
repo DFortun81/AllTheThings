@@ -299,6 +299,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							{ "c", ELEMENTAL_OVERFLOW, 5000 },
 						},
 					}),
+					i(217893, {	-- Emerald Winglord's Chain
+						["timeline"] = { ADDED_10_2_7 },
+						["cost"] = {
+							{ "c", ELEMENTAL_OVERFLOW, 2500 },
+						},
+					}),
+					i(217892, {	-- Emerald Winglord's Shoulders
+						["timeline"] = { ADDED_10_2_7 },
+						["cost"] = {
+							{ "c", ELEMENTAL_OVERFLOW, 2500 },
+						},
+					}),
 					i(204566, {	-- Journal of the Forbidden Reach
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 5000 },

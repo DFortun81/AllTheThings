@@ -251,6 +251,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
+							i(217891, {	-- Cobalt Guardian's Cloak
+								["timeline"] = { ADDED_10_2_7 },
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 100 },
+									{ "i", AWAKENED_FROST, 1 },
+								},
+							}),
 							i(199735, {	-- Cobalt Guardian's Cutlass
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 600 },
