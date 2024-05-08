@@ -13858,7 +13858,10 @@ app.LoadDebugger = function()
 					-- 	end
 					-- end
 
-					local info = { ["questID"] = questID, ["g"] = rawGroups };
+					local info = { ["questID"] = questID };
+					if #rawGroups > 0 then
+						info.g = rawGroups
+					end
 					info.name = app.GetQuestName(questID)
 					if e == "QUEST_DETAIL" then
 						local providers = {}
