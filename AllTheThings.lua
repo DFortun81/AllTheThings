@@ -13859,18 +13859,26 @@ app.LoadDebugger = function()
 					-- end
 
 					local info = { ["questID"] = questID, ["g"] = rawGroups };
-					local providers = {}
-					if questStartItemID and questStartItemID > 0 then tinsert(providers, { "i", questStartItemID }); end
-					if npc_id then
-						npc_id = tonumber(npc_id);
-						tinsert(providers, { type == "GameObject" and "o" or "n", npc_id })
-						local faction = UnitFactionGroup(npc);
-						if faction then
-							info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
+					info.name = app.GetQuestName(questID)
+					if e == "QUEST_DETAIL" then
+						local providers = {}
+						if questStartItemID and questStartItemID > 0 then tinsert(providers, { "i", questStartItemID }); end
+						if npc_id then
+							npc_id = tonumber(npc_id);
+							if type == "GameObject" then
+								tinsert(providers, { "o", npc_id })
+							else
+								info.qg = npc_id
+								info.qg_name = app.NPCNameFromID[npc_id]
+							end
+							local faction = UnitFactionGroup(npc);
+							if faction then
+								info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
+							end
 						end
-					end
-					if #providers > 0 then
-						info.providers = providers
+						if #providers > 0 then
+							info.providers = providers
+						end
 					end
 					AddObject(info);
 				-- Capture accepted quests which skip NPC dialog windows (addons, auto-accepted)
@@ -13878,6 +13886,7 @@ app.LoadDebugger = function()
 					local questID = ...
 					if questID then
 						local info = { ["questID"] = questID };
+						info.name = app.GetQuestName(questID)
 						AddObject(info);
 					end
 				-- Capture various personal/party loot received
