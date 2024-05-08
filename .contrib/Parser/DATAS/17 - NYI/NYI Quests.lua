@@ -8653,8 +8653,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			-- 10.1.7.50442
 			q(75938),	-- Test
-			q(77485),	--
-			q(77488),	--
+			q(77485),	-- Technoscrying: Back to Eadweard!
+			q(77488),	-- Excavation: Back to Eadweard!
 			q(77615),	--
 			q(77699),	--
 			q(77700),	--
@@ -8707,6 +8707,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(80060),	-- Ensemble: Spring Reveler's Dandelion Collection
 			q(80061),	-- Ensemble: Spring Reveler's Turquoise Collection
 			q(80064),	-- Ensemble: Spring Reveler's Turquoise Collection
+		})),
+
+		-- 10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			q(77904),	-- Treasures, Not Trash
+			q(77907),	-- Shadow Spear
 		})),
 	}),
 }));
