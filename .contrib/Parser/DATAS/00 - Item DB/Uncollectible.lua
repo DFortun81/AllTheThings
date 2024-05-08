@@ -1754,3 +1754,13 @@ i(213214);	-- Woven Lavareed Basket
 -- PATCH 10.2.6 --
 ------------------
 i(221779);	-- Bent Card
+
+------------------
+-- PATCH 11.0.1 --
+------------------
+--i(220287);	-- Acid-Filled Sack
+--i(220277);	-- Carapace Fragment
+--i(220244),	-- Oversized Claw
+--i(220251);	-- Pale Gills
+--i(220380);	-- Pickled Spiderling
+--i(220272);	-- Torn Manuscript Page
