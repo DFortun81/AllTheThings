@@ -99,5 +99,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(80199),	-- Bow of the Ranger Captain
 		q(80450),	-- Arsenal: Voidtouched Weaponry
 		q(80021),	-- Triggered with completion of Quest 79021 / Achivement 40382
+		q(80198),	-- Triggered with completion of Quest 79016
 	}),
 });
