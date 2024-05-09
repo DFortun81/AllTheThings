@@ -1603,7 +1603,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188893),	-- Mercurial Punisher's Breeches
 								i(188898),	-- Mercurial Punisher's Grips
 								i(188892),	-- Mercurial Punisher's Hood
-								i(188894),	-- Mercurial Punisher's Jerkin
+								--i(188894),	-- Mercurial Punisher's Jerkin [Blizzard forgot to make this item (sourceID)]
 								i(188896),	-- Mercurial Punisher's Shoulderpads
 								i(188895),	-- Mercurial Punisher's Wristguards
 								i(190470),	-- Cinch of Unity DH
