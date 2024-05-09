@@ -1132,6 +1132,7 @@ else
 
 					-- Normal item tooltip, not on the Toy Box.
 					AttachTooltipSearchResults(self, 1, SearchForLink, link);
+					if app.GameBuildVersion > 40000 then self:Show(); end
 					return true;
 				end
 
