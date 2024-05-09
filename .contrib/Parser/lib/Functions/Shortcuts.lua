@@ -494,6 +494,14 @@ siderealessence = function(cost, item)					-- Assign a Sidereal Essence (Defense
 	-- #endif
 	return item;
 end
+spiritshard = function(cost, item)						-- Assign a Chef's Award or Epicurean's Award cost to an item. (based on patch)
+	-- #if AFTER 8.0.1
+	applycost(item, { "c", 1704, cost });	-- Spirit Shard (currency)
+	-- #else
+	applycost(item, { "i", 28558, cost });	-- Spirit Shard (item)
+	-- #endif
+	return item;
+end
 vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
 	-- #if AFTER 5.4.0.17153
 	applycost(item, { "i", 103533, 1 });	-- Vicious Saddle
