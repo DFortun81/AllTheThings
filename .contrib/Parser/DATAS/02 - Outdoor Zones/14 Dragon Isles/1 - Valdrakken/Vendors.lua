@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217615),	-- Dream Raider's Azure Greathammer
 					i(217644),	-- Dream Raider's Azure Paws
 					i(217685),	-- Dream Raider's Azure Poleax
-					i(217635),	-- Dream Raider's Azure Razor
+					-- i(217635),	-- Dream Raider's Azure Razor (Not on Vendor)
 					i(217681),	-- Dream Raider's Azure Recurve
 					i(217640),	-- Dream Raider's Azure Rifle
 					i(217636),	-- Dream Raider's Azure Saber
@@ -422,7 +422,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217560),	-- Crucible Raider's Shadowed Claws
 					i(217552),	-- Crucible Raider's Shadowed Cleaver
 					i(217564),	-- Crucible Raider's Shadowed Control Rod
-					i(217566),	-- Crucible Raider's Shadowed Control Rod
 					i(217516),	-- Crucible Raider's Shadowed Cudgel
 					i(217548),	-- Crucible Raider's Shadowed Elderstaff
 					i(217524),	-- Crucible Raider's Shadowed Focus
@@ -558,6 +557,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217558),	-- Crucible Raider's Corrupted Cannon
 					i(217562),	-- Crucible Raider's Corrupted Claws
 					i(217554),	-- Crucible Raider's Corrupted Cleaver
+					i(217566),	-- Crucible Raider's Shadowed Control Rod (Blizzard screwed up the name of this item)
 					i(217518),	-- Crucible Raider's Corrupted Cudgel
 					i(217550),	-- Crucible Raider's Corrupted Elderstaff
 					i(217526),	-- Crucible Raider's Corrupted Focus

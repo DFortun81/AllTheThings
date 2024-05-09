@@ -1339,6 +1339,7 @@ i(194537);	-- Fiddle with Draconium Fabric Cutters
 i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(192693);	-- First Heads Horn
 i(202034);	-- Flame of Remembrance
+i(197861);	-- Fleeting Philosopher's Stone
 i(201427);	-- Fleeting Sands
 i(202063);	-- Flopping Tilapia
 i(192653);	-- Floppy Molten Ear

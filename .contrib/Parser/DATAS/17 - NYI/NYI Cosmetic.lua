@@ -409,5 +409,11 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190889),	-- Woodsman's Hatchet
 			}),
 		})),
+		-- 10.2.6
+		expansion(EXPANSION.DF, 2.6, bubbleDown({ ["timeline"] = { CREATED_10_2_6 } }, {
+			n(WEAPONS, {
+				i(217635),	-- Dream Raider's Azure Razor
+			}),
+		})),
 	}),
 }));
