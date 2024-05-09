@@ -10,47 +10,49 @@ local L = app.L;
 	--TODO: L.YOU_DID_IT = "YOU DID IT!";
 
 -- Big new chunk from AllTheThings.lua
-	--TODO: L.PROGRESS = "Progress";
-	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
-	--TODO: L.COLLECTED_STRING = " Collected";
+	L.PROGRESS = "Progresso";
+	L.TRACKING_PROGRESS = "Rastreando Progresso";
+	L.COLLECTED_STRING = " Coletado";
 	--TODO: L.PROVIDERS = "Provider(s)";
-	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
-	--TODO: L.CONTAINS = "Contains:";
-	--TODO: L.FACTIONS = "Factions";
-	--TODO: L.COORDINATES = "Coordinates";
+	L.COLLECTION_PROGRESS = "Progresso da Coleção";
+	L.CONTAINS = "Contém:";
+	L.FACTIONS = "Facções";
+	L.COORDINATES = "Coordenadas";
 	--TODO: L.AND_MORE = "And %s more...";
 	--TODO: L.AND_OTHER_SOURCES = "And %s other sources...";
-	--TODO: L.PLAYER_COORDINATES = "Player Coordinates";
-	--TODO: L.NO_COORDINATES_FORMAT = "No known coordinates for %s";
-	--TODO: L.TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
-	--TODO: L.FLIGHT_PATHS = "Flight Paths";
-	--TODO: L.KNOWN_BY = "Known by %s";
+	L.PLAYER_COORDINATES = "Coordenadas do Jogador";
+	L.NO_COORDINATES_FORMAT = "Sem coordenadas conhecidas para %s";
+	L.TOM_TOM_NOT_FOUND = "Você precisa ter TomTom instalado para exibir as coordenadas.";
+	L.FLIGHT_PATHS = "Pontos de voo";
+	L.KNOWN_BY = "Conhecido como %s";
 	L.REQUIRES = "Requer";
-	--TODO: L.RACE_LOCKED = "Race Locked";
-	--TODO: L.PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #retail-errors! Thanks!";
-	--TODO: L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
-	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
+	L.RACE_LOCKED = "Travado por raça";
+	L.PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #retail-errors! Thanks!";
+	L.PLEASE_REPORT_MESSAGE = "Por favor reporte isso no Discord do ATT em #retail-errors! Obrigado!";
+	L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C para copiar o texto completo do report para sua área de transferência)";
+	L.NOT_AVAILABLE_IN_PL = "Não disponível para saque (loot) pessoal.";
 	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
-	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
-	--TODO: L.COST = "Cost";
-	--TODO: L.COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
-	--TODO: L.COST_TOTAL = "Total Cost";
+	L.ITEM_GIVES_REP = "Concede reputação com '";
+	L.COST = "Custo";
+	L.COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
+	L.COST_DESC = "Aqui contém uma visão geral detalhada do que é necessário para obter ou comprar isso";
+	L.COST_TOTAL = "Custo total";
 	--TODO: L.COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
-	--TODO: L.SOURCES = "Source(s)";
-	--TODO: L.SOURCES_DESC = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
-	--TODO: L.WRONG_FACTION = "You might need to be on the other faction to view this.";
-	--TODO: L.ARTIFACT_INTRO_REWARD = "Awarded for completing the introductory quest for this Artifact.";
-	--TODO: L.VISIT_FLIGHT_MASTER = "Visit the Flight Master to cache.";
-	--TODO: L.FLIGHT_PATHS_DESC = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
+	L.SOURCES = "Fonte(s)";
+	L.SOURCES_DESC = "Mostra a Fonte dessa Cosia.\n\nParticularmente, um Vendedor específico/NPC, Quest, Boss, etc.";
+	L.WRONG_FACTION = "Você precisa ser de outra facção para visualizar isso.";
+	L.ARTIFACT_INTRO_REWARD = "Concedida por completar a missão introdutória para este Artefato.";
+	L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar.";
+	L.FLIGHT_PATHS_DESC = "Pontos de voo são registrados quando você fala com um mestre de voo em cada continente.\n  - Crieve";
 	if app.IsRetail then
 	L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
 	end
-	--TODO: L.HEIRLOOM_TEXT = "Unlocked Heirloom";
-	--TODO: L.HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
-	--TODO: L.FAILED_ITEM_INFO = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
-	--TODO: L.HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
+	L.HEIRLOOM_TEXT = "Herança Desbloqueada";
+	L.HEIRLOOM_TEXT_DESC = "Isso indica se já adquiriu ou não a Herança.";
+	L.FAILED_ITEM_INFO = "Falha ao adquirir informações sobre o item. O item pode ser inválido ou pode ainda não ter sido registrado em seu servidor.";
+	L.HEIRLOOMS_UPGRADES_DESC = "Isso indica se já atualizou ou não a herança para um certo nível.\n\nR.I.P. Gold.\n - Crieve";
 	if app.IsRetail then
-	L.MUSIC_ROLLS_AND_SELFIE_DESC = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
+	L.MUSIC_ROLLS_AND_SELFIE_DESC = "Estes são desbloqueados por personagem e não são atualmente compartilhados pela conta. Se alguém da Blizzard está lendo isso, seria muito interessante se fizesse isso "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".\n\nVocê precisa manualmente atualizar o addon apertando "..SHIFT_KEY_TEXT.." e clicando no cabeçalho para isso ser detectado.";	--TODO
 	end
 	--TODO: L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.\n\nSelfies require the S.E.L.F.I.E Toy.";
 	--TODO: L.OPPOSITE_FACTION_EQ = "Opposite faction equivalent: ";
@@ -267,35 +269,35 @@ local L = app.L;
 
 	-- General tab
 		-- Mode Title
-			--TODO: L.MODE = "Mode";
-			--TODO: L.TITLE_COMPLETIONIST = "Completionist ";
-			--TODO: L.TITLE_UNIQUE_APPEARANCE = "Unique ";
-			--TODO: L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
-			--TODO: L.TITLE_ACCOUNT = app.ccColors.Account .. "Account|R ";
-			--TODO: L.TITLE_MAIN_ONLY = " (Main Only)";
-			--TODO: L.TITLE_NONE_THINGS = "None of the Things ";
-			--TODO: L.TITLE_ONLY = " Only ";
-			--TODO: L.TITLE_INSANE = app.ccColors.Insane.."Insane|R ";
-			--TODO: L.TITLE_SOME_THINGS = "Some of the Things ";
-			--TODO: L.TITLE_LEVEL = "Level ";
-			--TODO: L.TITLE_SOLO = "Solo ";
-			--TODO: L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
+			L.MODE = "Modo";
+			L.TITLE_COMPLETIONIST = "Complecionista ";
+			L.TITLE_UNIQUE_APPEARANCE = "Única ";
+			-- L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
+			L.TITLE_ACCOUNT = app.ccColors.Account .. "Conta|R ";
+			L.TITLE_MAIN_ONLY = " (Apenas main)";
+			L.TITLE_NONE_THINGS = "Nenhuma das Coisas ";
+			L.TITLE_ONLY = " Apenas ";
+			L.TITLE_INSANE = app.ccColors.Insane.."Insano|R ";
+			L.TITLE_SOME_THINGS = "Alguams das Coisas ";
+			L.TITLE_LEVEL = "Nível ";
+			L.TITLE_SOLO = "Solo ";
+			-- L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
-		--TODO: L.MINIMAP_SLIDER = "Minimap Button Size";
-		--TODO: L.MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
-		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
-		--TODO: L.MINIMAP_BUTTON_CHECKBOX = "Show the Minimap Button";
-		--TODO: L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
-		--TODO: L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
-		--TODO: L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
-		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
-		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
+		L.MINIMAP_SLIDER = "Tamanho do botão do minimapa";
+		L.MINIMAP_SLIDER_TOOLTIP = 'Use isso para customizar o tamanho do Botão no Minimapa.\n\nPadrão: 36';
+		L.EXTRA_THINGS_LABEL = "Recursos Adicionais";
+		L.MINIMAP_BUTTON_CHECKBOX = "Mostrar Botão no Minimapa";
+		L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Ative essa opção se você deseja ver o botão no minimapa. Esse botão permite que acesse rapidamente a Lista Principal, mostre a Visão Geral do Progresso da Coleção e acessar as Configurações clicando com o botão direito.\n\nAlgumas pessoas não gostam de desordem. Alternativamente, você pode acessar essas informações digitando '/att' no chat. Dalí, você pode clicar com o botão direito no cabeçalho (AllTheThings na primeira linha) para acessar as configurações.";
+		L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
+		L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
+		L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
+		L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
 	-- Interface tab
-		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
-		--TODO: L.DESCRIPTIONS = "Descriptions";
-		--TODO: L.LORE = "Lore";
-		--TODO: L.CLASSES = "Classes";
+		L.ADDITIONAL_LABEL = "Informações Adicionais";
+		L.DESCRIPTIONS = "Descrições";
+		L.LORE = "História";
+		-- L.CLASSES = "Classes";
 
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";
