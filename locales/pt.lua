@@ -33,7 +33,6 @@ local L = app.L;
 	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	L.ITEM_GIVES_REP = "Concede reputação com '";
 	L.COST = "Custo";
-	L.COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
 	L.COST_DESC = "Aqui contém uma visão geral detalhada do que é necessário para obter ou comprar isso";
 	L.COST_TOTAL = "Custo total";
 	--TODO: L.COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
