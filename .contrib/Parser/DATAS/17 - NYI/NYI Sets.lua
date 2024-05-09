@@ -3938,7 +3938,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, {
+					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6898 }, {
+						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
 						i(188919),	-- Theurgic Starspeaker's Bracers
@@ -3948,7 +3949,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188926),	-- Theurgic Starspeaker's Sabatons
 						i(188927),	-- Theurgic Starspeaker's Shawl
 						i(188924),	-- Theurgic Starspeaker's Tassets
-					}),
+					})),
 					cl(WARLOCK, {
 						i(188885),	-- Bangles of the Demon Star
 						i(188883),	-- Boots of the Demon Star
@@ -4072,7 +4073,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, {
+					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6895 }, {
+						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
 						i(188919),	-- Theurgic Starspeaker's Bracers
@@ -4082,7 +4084,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188926),	-- Theurgic Starspeaker's Sabatons
 						i(188927),	-- Theurgic Starspeaker's Shawl
 						i(188924),	-- Theurgic Starspeaker's Tassets
-					}),
+					})),
 					cl(WARLOCK, {
 						i(188885),	-- Bangles of the Demon Star
 						i(188883),	-- Boots of the Demon Star
@@ -4206,7 +4208,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, {
+					cl(SHAMAN, bubbleDown({ ["bonusID"] = 8107 }, {
+						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
 						i(188919),	-- Theurgic Starspeaker's Bracers
@@ -4216,7 +4219,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188926),	-- Theurgic Starspeaker's Sabatons
 						i(188927),	-- Theurgic Starspeaker's Shawl
 						i(188924),	-- Theurgic Starspeaker's Tassets
-					}),
+					})),
 					cl(WARLOCK, {
 						i(188885),	-- Bangles of the Demon Star
 						i(188883),	-- Boots of the Demon Star
@@ -4474,7 +4477,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, {
+					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6894 }, {
+						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
 						i(188919),	-- Theurgic Starspeaker's Bracers
@@ -4484,7 +4488,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188926),	-- Theurgic Starspeaker's Sabatons
 						i(188927),	-- Theurgic Starspeaker's Shawl
 						i(188924),	-- Theurgic Starspeaker's Tassets
-					}),
+					})),
 					cl(WARLOCK, {
 						i(188885),	-- Bangles of the Demon Star
 						i(188883),	-- Boots of the Demon Star

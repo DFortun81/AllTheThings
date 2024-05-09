@@ -1572,7 +1572,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
 								i(188864),	-- Carapace of the First Eidolon
 								i(188866),	-- Chausses of the First Eidolon
-								i(188873),	-- Cloak of the First Eidolon
 								i(188863),	-- Gauntlets of the First Eidolon
 								i(188870),	-- Girdle of the First Eidolon
 								i(188865),	-- Greaves of the First Eidolon
@@ -1605,7 +1604,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188898),	-- Mercurial Punisher's Grips
 								i(188892),	-- Mercurial Punisher's Hood
 								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188900),	-- Mercurial Punisher's Mantle
 								i(188896),	-- Mercurial Punisher's Shoulderpads
 								i(188895),	-- Mercurial Punisher's Wristguards
 								i(190470),	-- Cinch of Unity DH
@@ -1635,7 +1633,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188847),	-- Headpiece of the Fixed Stars
 								i(188848),	-- Leggings of the Fixed Stars
 								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
 								i(190465),	-- Cinch of Unity Druid
 							}),
 						})),
@@ -1664,7 +1661,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								186836,
 							}),
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
-								i(188872),	-- Godstalker's Camouflage
 								i(188857),	-- Godstalker's Fauld
 								i(188861),	-- Godstalker's Gauntlets
 								i(188858),	-- Godstalker's Hauberk
@@ -1698,7 +1694,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188842),	-- Erudite Occultist's Leggings
 								i(188843),	-- Erudite Occultist's Mantle
 								i(188839),	-- Erudite Occultist's Robes
-								i(188846),	-- Erudite Occultist's Shroud
 								i(188838),	-- Erudite Occultist's Treads
 								i(190464),	-- Cord of Unity Mage
 							}),
@@ -1720,7 +1715,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188910),	-- Crown of the Grand Upwelling
 								i(188912),	-- Cuirass of the Grand Upwelling
 								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
 								i(188917),	-- Footwraps of the Grand Upwelling
 								i(188916),	-- Grips of the Grand Upwelling
 								i(188911),	-- Legguards of the Grand Upwelling
@@ -1747,7 +1741,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
 								i(188933),	-- Luminous Chevalier's Casque
-								i(188936),	-- Luminous Chevalier's Drape
 								i(188932),	-- Luminous Chevalier's Epaulets
 								i(188928),	-- Luminous Chevalier's Gauntlets
 								i(188935),	-- Luminous Chevalier's Girdle
@@ -1782,7 +1775,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188876),	-- Bracelets of the Empyrean
 								i(188879),	-- Capelet of the Empyrean
 								i(188881),	-- Caress of the Empyrean
-								i(188882),	-- Drape of the Empyrean
 								i(188875),	-- Habit of the Empyrean
 								i(188878),	-- Leggings of the Empyrean
 								i(188877),	-- Sash of the Empyrean
@@ -1806,7 +1798,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
 								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
 								i(188908),	-- Soulblade Footpads
 								i(188907),	-- Soulblade Grasps
 								i(188901),	-- Soulblade Guise
@@ -1839,7 +1830,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								186833,
 								186823,
 							}),
-							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+							["g"] = sharedData({ ["bonusID"] = 6896 }, {
+								-- Shaman has a different bonusID
 								i(188920),	-- Theurgic Starspeaker's Adornment
 								i(188921),	-- Theurgic Starspeaker's Belt
 								i(188919),	-- Theurgic Starspeaker's Bracers
@@ -1847,7 +1839,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188922),	-- Theurgic Starspeaker's Ringmail
 								i(188925),	-- Theurgic Starspeaker's Runebindings
 								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
 								i(188924),	-- Theurgic Starspeaker's Tassets
 								i(190473, {	-- Clasp of Unity Shaman
 									["bonusID"] = 6896
@@ -1876,7 +1867,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
 								i(188885),	-- Bangles of the Demon Star
 								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
 								i(188890),	-- Grasps of the Demon Star
 								i(188889),	-- Horns of the Demon Star
 								i(188887),	-- Leggings of the Demon Star
@@ -1903,7 +1893,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
 								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188945),	-- Favor of the Infinite Infantry
 								i(188942),	-- Gaze of the Infinite Infantry
 								i(188937),	-- Grasps of the Infinite Infantry
 								i(188944),	-- Greatbelt of the Infinite Infantry
@@ -1987,6 +1976,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, PLATE, 184311),
 						}),
+						i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
+							["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
+							["description"] = "|Cffff0000This Ensemble is currently broken and gives nothing when used.|r",
+							-- Marked as removed until Blizzard fixes this
+							["g"] = sharedData({ ["bonusID"] = 6894, ["u"] = REMOVED_FROM_GAME, }, {
+								i(188873, {["classes"] = DEATHKNIGHT}),	-- Cloak of the First Eidolon
+								i(188900, {["classes"] = DEMONHUNTER}),	-- Mercurial Punisher's Mantle
+								i(188871, {["classes"] = DRUID}),	-- Wrap of the Fixed Stars
+								i(188872, {["classes"] = HUNTER}),	-- Godstalker's Camouflage
+								i(188846, {["classes"] = MAGE}),	-- Erudite Occultist's Shroud
+								i(188918, {["classes"] = MONK}),	-- Drape of the Grand Upwelling
+								i(188936, {["classes"] = PALADIN}),	-- Luminous Chevalier's Drape
+								i(188882, {["classes"] = PRIEST}),	-- Drape of the Empyrean
+								i(188909, {["classes"] = ROGUE}),	-- Soulblade Cloak
+								i(188927, {["classes"] = SHAMAN, ["bonusID"] = 6896}),	-- Theurgic Starspeaker's Shawl
+								i(188891, {["classes"] = WARLOCK}),	-- Cape of the Demon Star
+								i(188945, {["classes"] = WARRIOR}),	-- Favor of the Infinite Infantry
+							}),
+						})),
 						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 							["g"] = {
