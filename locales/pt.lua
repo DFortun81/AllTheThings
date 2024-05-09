@@ -27,7 +27,6 @@ local L = app.L;
 	L.KNOWN_BY = "Conhecido como %s";
 	L.REQUIRES = "Requer";
 	L.RACE_LOCKED = "Travado por raça";
-	L.PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #retail-errors! Thanks!";
 	L.PLEASE_REPORT_MESSAGE = "Por favor reporte isso no Discord do ATT em #retail-errors! Obrigado!";
 	L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C para copiar o texto completo do report para sua área de transferência)";
 	L.NOT_AVAILABLE_IN_PL = "Não disponível para saque (loot) pessoal.";
