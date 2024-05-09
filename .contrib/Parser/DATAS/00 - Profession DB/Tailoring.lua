@@ -767,6 +767,93 @@ i(142333, 230047);	-- Feathered Luffa
 -- #endif
 
 -----------------
+-- PATCH 8.0.1 --
+-----------------
+i(0, 264616);	-- Tailoring
+i(0, 264618);	-- Outland Tailoring
+i(0, 264620);	-- Northrend Tailoring
+i(0, 264622);	-- Cataclysm Tailoring
+i(0, 264624);	-- Pandaria Tailoring
+i(0, 264626);	-- Draenor Tailoring
+i(0, 264628);	-- Legion Tailoring
+i(0, 264630);	-- Kul Tiran Tailoring
+i(0, 265815);	-- Zandalari Tailoring
+--- TRAINER ---
+i(0, 257134);	-- Battle Flag: Phalanx Defense [Rank 1]
+i(0, 257135);	-- Battle Flag: Phalanx Defense [Rank 2]
+i(0, 257137);	-- Battle Flag: Rallying Swiftness [Rank 1]
+i(0, 257138);	-- Battle Flag: Rallying Swiftness [Rank 2]
+i(0, 257131);	-- Battle Flag: Spirit of Freedom [Rank 1]
+i(0, 257132);	-- Battle Flag: Spirit of Freedom [Rank 2]
+i(0, 257125);	-- Deep Sea Bag [Rank 1]
+i(0, 257126);	-- Deep Sea Bag [Rank 2]
+i(0, 267202);	-- Deep Sea Bandage
+i(0, 279183);	-- Discreet Spellthread
+i(0, 257122);	-- Embroidered Deep Sea Breeches
+i(0, 257114);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 1]
+i(0, 257115);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 2]
+i(0, 257118);	-- Embroidered Deep Sea Gloves
+i(0, 272440);	-- Embroidered Deep Sea Satin
+i(0, 279184);	-- Feathery Spellthread
+i(0, 268983);	-- Hooked Deep Sea Net
+i(0, 269608);	-- Honorable Combatant's Satin Belt [Rank 1]
+i(0, 269599);	-- Honorable Combatant's Satin Boots [Rank 1]
+i(0, 269611);	-- Honorable Combatant's Satin Bracers [Rank 1]
+i(0, 269596);	-- Honorable Combatant's Satin Cloak [Rank 1]
+i(0, 269602);	-- Honorable Combatant's Satin Mittens [Rank 1]
+i(0, 269605);	-- Honorable Combatant's Satin Pants [Rank 1]
+i(0, 279182);	-- Resilient Spellthread
+i(0, 278414);	-- Rough-hooked Tidespray Linen
+i(0, 267201);	-- Tidespray Linen Bandage \\ Sun-Bleached Linen Bandage
+i(0, 257102);	-- Tidespray Linen Belt \\ Sun-Bleached Linen Belt
+i(0, 257103);	-- Tidespray Linen Bracers \\ Sun-Bleached Linen Bracers
+i(0, 257107);	-- Tidespray Linen Cloak \\ Tidespray Linen Cloak of Discretion \\ Sun-Bleached Linen Cloak of Discretion
+i(0, 257097);	-- Tidespray Linen Hood \\ Sun-Bleached Linen Hood
+i(0, 257096);	-- Tidespray Linen Mittens \\ Sun-Bleached Linen Mittens
+i(0, 268982);	-- Tidespray Linen Net \\ Sun-Bleached Linen Net
+i(0, 257099);	-- Tidespray Linen Pants \\ Sun-Bleached Linen Pants
+i(0, 257104);	-- Tidespray Linen Robe \\ Sun-Bleached Linen Robe
+i(0, 257095);	-- Tidespray Linen Sandals \\ Tidespray Linen Boots \\ Sun-Bleached Linen Boots
+i(0, 257101);	-- Tidespray Linen Spaulders \\ Sun-Bleached Linen Spaulders
+--- ITEM ---
+i(162444, 257136);	-- Battle Flag: Phalanx Defense [Rank 3]
+i(162445, 257139);	-- Battle Flag: Rallying Swiftness [Rank 3]
+i(162443, 257133);	-- Battle Flag: Spirit of Freedom [Rank 3]
+i(162421, 257127);	-- Deep Sea Bag [Rank 3] (A)
+i(162769, 257127);	-- Deep Sea Bag [Rank 3] (H)
+i(162510, 257124);	-- Emblazoned Deep Sea Breeches \\ Embroidered Deep Sea Breeches
+i(162508, 257121);	-- Emblazoned Deep Sea Gloves \\ Embroidered Deep Sea Gloves
+i(163027, 257128);	-- Embroidered Deep Sea Bag [Rank 1]
+i(163026, 257129);	-- Embroidered Deep Sea Bag [Rank 2]
+i(162422, 257130);	-- Embroidered Deep Sea Bag [Rank 3]
+i(162427, 257116);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 3] (A)
+i(162772, 257116);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 3] (H)
+i(162439, 269609);	-- Honorable Combatant's Satin Belt [Rank 2]
+i(162440, 269610);	-- Honorable Combatant's Satin Belt [Rank 3]
+i(162433, 269600);	-- Honorable Combatant's Satin Boots [Rank 2]
+i(162434, 269601);	-- Honorable Combatant's Satin Boots [Rank 3]
+i(162441, 269612);	-- Honorable Combatant's Satin Bracers [Rank 2]
+i(162442, 269613);	-- Honorable Combatant's Satin Bracers [Rank 3]
+i(162431, 269597);	-- Honorable Combatant's Satin Cloak [Rank 2]
+i(162432, 269598);	-- Honorable Combatant's Satin Cloak [Rank 3]
+i(162433, 269603);	-- Honorable Combatant's Satin Mittens [Rank 2]
+i(162436, 269604);	-- Honorable Combatant's Satin Mittens [Rank 3]
+i(162437, 269606);	-- Honorable Combatant's Satin Pants [Rank 2]
+i(162438, 269607);	-- Honorable Combatant's Satin Pants [Rank 3]
+i(162509, 257123);	-- Imbued Deep Sea Breeches \\ Embroidered Deep Sea Breeches
+i(162507, 257120);	-- Imbued Deep Sea Gloves \\ Embroidered Deep Sea Gloves
+--- NYI ---
+i(0, 257108);	-- Embroidered Deep Sea Cloak of Resilience
+i(0, 257109);	-- Embroidered Deep Sea Cloak of Resilience
+i(0, 257110);	-- Embroidered Deep Sea Cloak of Resilience
+i(0, 257111);	-- Embroidered Deep Sea Cloak of the Feather
+i(0, 257112);	-- Embroidered Deep Sea Cloak of the Feather
+i(0, 257113);	-- Embroidered Deep Sea Cloak of the Feather
+i(0, 257141);	-- Pet - Hot Air Balloon (DNT)
+i(0, 257105);	-- Tidespray Linen Cloak of Resilience \\ Sun-Bleached Linen Cloak of Resilience
+i(0, 257106);	-- Tidespray Linen Cloak of the Feather \\ Sun-Bleached Linen Cloak of the Feather
+
+-----------------
 -- PATCH 8.1.0 --
 -----------------
 --- TRAINER ---
