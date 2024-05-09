@@ -47,6 +47,7 @@ app:CreateWindow("Flight Paths", {
 						if not fps[i] then
 							local fp = app.CreateFlightPath(tonumber(i));
 							fps[i] = fp;
+							fp.u = 1;
 							fp.parent = data;
 							tinsert(g, fp);
 						end
