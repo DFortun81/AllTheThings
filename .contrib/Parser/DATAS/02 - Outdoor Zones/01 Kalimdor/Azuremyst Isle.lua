@@ -101,8 +101,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(4, 4, 1),
 						}),
 						q(9450, {	-- Call of Earth (2/3)
@@ -114,8 +114,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(4, 4, 1),
 							["groups"] = {
 								objective(1, {	-- 0/4 Restless Spirit of Earth slain
@@ -135,8 +135,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = 4,
 							-- #if BEFORE 4.0.3
 							["groups"] = {
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { MAGE },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9294, {	-- Healing the Lake
@@ -192,8 +192,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { HUNTER },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9303, {	-- Inoculation [Original]
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9290, {	-- Mage Training
@@ -253,13 +253,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { MAGE },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(31172, {	-- Monk Training
-							["races"] = { DRAENEI },
 							["classes"] = { MONK },
+							["races"] = { DRAENEI },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(9287, {	-- Paladin Training
@@ -270,8 +270,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { PALADIN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9291, {	-- Priest Training
@@ -282,8 +282,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { PRIEST },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(26969, {	-- Primal Strike
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { SHAMAN },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9280, {	-- Replenishing the Healing Crystals
@@ -368,8 +368,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9305, {	-- Spare Parts
@@ -436,7 +436,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(10303, {	-- The Blood Elves
@@ -486,7 +486,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9309, {	-- The Missing Scout
@@ -577,8 +577,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { WARRIOR },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9293, {	-- What Must Be Done...
@@ -616,7 +616,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 					}),
