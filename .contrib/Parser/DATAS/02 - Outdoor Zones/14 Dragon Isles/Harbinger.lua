@@ -84,6 +84,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 			},
 		}),
 	}),
+	n(HIDDEN_QUESTS, {
+		q(72059, {	-- Stay awhile and listen: Locus-Walker
+			["name"] = "Stay awhile and listen: Locus-Walker",
+			["sourceQuests"] = { 79010 },	-- Door to the Ren'dorei
+			["provider"] = { "n", 126773 },	-- Locus-Walker
+			["coord"] = { 29.7, 27.1, 971 },	-- Telegrus Rift
+		}),
+	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, {
