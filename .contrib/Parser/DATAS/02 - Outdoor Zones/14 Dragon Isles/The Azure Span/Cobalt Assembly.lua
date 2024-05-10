@@ -252,6 +252,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(217891, {	-- Cobalt Guardian's Cloak
+								["description"] = "Must be a Mail class to learn.",
 								["timeline"] = { ADDED_10_2_7 },
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 100 },

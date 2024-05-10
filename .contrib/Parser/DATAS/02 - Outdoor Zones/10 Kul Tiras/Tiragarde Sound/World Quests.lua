@@ -151,6 +151,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51284, {	-- Falcon Hunt
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(152643),	-- Bola Launcher (QI!)
+				},
 			}),
 			q(54129, {	-- First Mate Malone (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
