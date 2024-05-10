@@ -143,8 +143,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/20 Withered Tusk
 							["provider"] = { "i", 60756 },	-- Withered Tusk
 							["crs"] = {
-								74411,	-- Death's Head Necrolyte
-								74478,	-- Death's Head Shadowmender
+								7334,	-- Battle Boar Horror
+								7335,	-- Death's Head Geomancer
+								7337,	-- Death's Head Necromancer
+								7334,	-- Withered Battle Boar
+								7329,	-- Withered Quilguard
+								7328,	-- Wiethered Reaver
+								7332,	-- Withered Spearhide
+								7327,	-- Withered Warrior
 							},
 						}),
 					},
@@ -154,15 +160,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n",   8516 },	-- Belnistrasz
 						{ "o", 152097 },	-- Belnistrasz's Brazier
 					},
-					["sourceQuests"] = {	
-						-- #if AFTER 4.0.3
-						27019,	-- Scourge of the Downs (After Cataclysm)
-						-- #else
-						3523,	-- Scourge of the Downs (Before Cataclysm)
-						-- #endif
-					},
-					["timeline"] = { REMOVED_6_0_2 },
+					["sourceQuest"] = 3523,	-- Scourge of the Downs (Before Cataclysm)
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 32,
+					-- #if BEFORE 4.0.3
+					["groups"] = {
+						i(10710, {	-- Dragonclaw Ring
+							["timeline"] = { REMOVED_6_0_2 },
+						}),
+					},
+					-- #endif
+				}),
+				q(27022, {	-- Extinguishing the Idol (After Cataclysm)
+					["providers"] = {
+						{ "n",   8516 },	-- Belnistrasz
+						{ "o", 152097 },	-- Belnistrasz's Brazier
+					},
+					["sourceQuest"] = 27019,	-- Scourge of the Downs (After Cataclysm)
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
 						i(10710, {	-- Dragonclaw Ring
 							["timeline"] = { REMOVED_6_0_2 },
@@ -215,7 +231,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 10682 },	-- Belnistrasz's Oathstone
 					},
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					["lvl"] = 32,
+					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				q(27009, {	-- The Coldbringer
 					["qg"] = 44837,	-- Koristrasza
@@ -300,6 +316,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7356, {	-- Plaguemaw the Rotting
+				["sourceQuests"] = {
+					3525,	-- Extinguishing the Idol (Before Cataclysm)
+					27022,	-- Extinguishing the Idol (After Cataclysm)
+				},
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10766),	-- Plaguerot Sprig
