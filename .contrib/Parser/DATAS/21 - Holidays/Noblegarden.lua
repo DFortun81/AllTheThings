@@ -361,7 +361,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	n(RARES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 }, }, {
 		n(213665, {	-- Daetan Swiftplume
-			["questID"] = 73192,	-- Feathered Fiend (A)
 			["providers"] = {
 				{ "n", 216836 },	-- Golden Egg
 				{ "n", 219936 },	-- [DNT] Vignette
@@ -369,7 +368,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 30.3, 91.4, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["groups"] = {
 				i(210594, {	-- Noblegarden Trinket (QI!)
 					["races"] = ALLIANCE_ONLY,

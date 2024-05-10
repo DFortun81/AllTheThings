@@ -115,6 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(205289, {	-- Crimson Equipment Chest
 							["timeline"] = { ADDED_10_0_7, REMOVED_10_1_0 },
+							["cost"] = {{ "c", CONQUEST, 375 }},
 						}),
 						i(206200, {	-- Obsidian Equipment Chest
 							["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
