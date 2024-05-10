@@ -1503,7 +1503,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_3_1_0 },
 					["OnUpdate"] = [[function(t)
 						if not t.collected and t.collectible then
-							t.collectible = GetItemCount(45858, true) == 0;
+							t.collectible = C_Item.GetItemCount(45858, true) == 0;
 						end
 					end]],
 					["requireSkill"] = FISHING,

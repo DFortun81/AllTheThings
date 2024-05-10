@@ -21,7 +21,7 @@ for filterID,filterData in pairs({
 		text = {
 			-- #if AFTER LEGION
 			-- TODO: Check when this was changed from Bucklers
-			en = [[~GetItemSubClassInfo(4,5)]],
+			en = [[~C_Item.GetItemSubClassInfo(4,5)]],
 			-- #else
 			en = "Cosmetic",
 			-- #endif
@@ -34,7 +34,7 @@ for filterID,filterData in pairs({
 		text = {
 			-- #if AFTER LEGION
 			-- TODO: Check when this was added
-			en = [[~GetItemSubClassInfo(8,3)]],
+			en = [[~C_Item.GetItemSubClassInfo(8,3)]],
 			-- #else
 			en = [[~INVTYPE_CLOAK]],	-- This actually says "Back", there isn't a great alternative.
 			-- #endif
@@ -45,7 +45,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_cloth_21",
 		constant = "CLOTH",
 		text = {
-			en = [[~GetItemSubClassInfo(4,1)]],
+			en = [[~C_Item.GetItemSubClassInfo(4,1)]],
 		},
 	},
 	[5] = {
@@ -53,7 +53,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_leather_09",
 		constant = "LEATHER",
 		text = {
-			en = [[~GetItemSubClassInfo(4,2)]],
+			en = [[~C_Item.GetItemSubClassInfo(4,2)]],
 		},
 	},
 	[6] = {
@@ -61,7 +61,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_chain_05",
 		constant = "MAIL",
 		text = {
-			en = [[~GetItemSubClassInfo(4,3)]],
+			en = [[~C_Item.GetItemSubClassInfo(4,3)]],
 		},
 	},
 	[7] = {
@@ -69,7 +69,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_plate01",
 		constant = "PLATE",
 		text = {
-			en = [[~GetItemSubClassInfo(4,4)]],
+			en = [[~C_Item.GetItemSubClassInfo(4,4)]],
 		},
 	},
 	[8] = {
@@ -77,7 +77,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_shield_06",
 		constant = "SHIELDS",
 		text = {
-			en = [[~GetItemSubClassInfo(4,6)]],
+			en = [[~C_Item.GetItemSubClassInfo(4,6)]],
 		},
 	},
 	[9] = {
@@ -96,7 +96,7 @@ for filterID,filterData in pairs({
 			en = [[~INVTYPE_BODY]],
 		},
 	},
-	
+
 	-- Special Weapon Types
 	[11] = {
 		readable = "Artifacts",
@@ -111,14 +111,14 @@ for filterID,filterData in pairs({
 			cn = "神器",
 		},
 	},
-	
+
 	-- Weapon Types
 	[20] = {
 		readable = "Daggers",
 		icon = "Interface/Icons/inv_weapon_shortblade_01",
 		constant = "DAGGERS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,15)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,15)]],
 		},
 	},
 	[21] = {
@@ -126,7 +126,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_axe_17",
 		constant = "ONE_HANDED_AXES",
 		text = {
-			en = [[~GetItemSubClassInfo(2,0)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,0)]],
 		},
 	},
 	[22] = {
@@ -134,7 +134,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_axe_09",
 		constant = "TWO_HANDED_AXES",
 		text = {
-			en = [[~GetItemSubClassInfo(2,1)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,1)]],
 		},
 	},
 	[23] = {
@@ -142,7 +142,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_mace_02",
 		constant = "ONE_HANDED_MACES",
 		text = {
-			en = [[~GetItemSubClassInfo(2,4)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,4)]],
 		},
 	},
 	[24] = {
@@ -150,7 +150,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_hammer_16",
 		constant = "TWO_HANDED_MACES",
 		text = {
-			en = [[~GetItemSubClassInfo(2,5)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,5)]],
 		},
 	},
 	[25] = {
@@ -158,7 +158,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_sword_04",
 		constant = "ONE_HANDED_SWORDS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,7)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,7)]],
 		},
 	},
 	[26] = {
@@ -166,7 +166,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_sword_07",
 		constant = "TWO_HANDED_SWORDS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,8)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,8)]],
 		},
 	},
 	[27] = {
@@ -174,7 +174,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_wand_02",
 		constant = "WANDS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,19)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,19)]],
 		},
 	},
 	[28] = {
@@ -182,7 +182,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_staff_27",
 		constant = "STAVES",
 		text = {
-			en = [[~GetItemSubClassInfo(2,10)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,10)]],
 		},
 	},
 	[29] = {
@@ -190,7 +190,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_spear_04",
 		constant = "POLEARMS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,6)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,6)]],
 		},
 	},
 	[30] = {
@@ -198,7 +198,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_spear_01",
 		--constant = "SPEARS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,17)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,17)]],
 		},
 	},
 	[31] = {
@@ -206,7 +206,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_rifle_01",
 		constant = "GUNS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,3)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,3)]],
 		},
 	},
 	[32] = {
@@ -214,7 +214,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_bow_05",
 		constant = "BOWS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,2)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,2)]],
 		},
 	},
 	[33] = {
@@ -222,7 +222,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_crossbow_01",
 		constant = "CROSSBOWS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,18)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,18)]],
 		},
 	},
 	[34] = {
@@ -230,7 +230,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_monsterclaw_02",
 		constant = "FIST_WEAPONS",
 		text = {
-			en = [[~GetItemSubClassInfo(2,13)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,13)]],
 		},
 	},
 	[35] = {
@@ -243,7 +243,7 @@ for filterID,filterData in pairs({
 		constant = "WARGLAIVES",
 		text = {
 			-- #if AFTER LEGION
-			en = [[~GetItemSubClassInfo(2,9)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,9)]],
 			-- #else
 			en = "Warglaives",
 			-- #endif
@@ -257,7 +257,7 @@ for filterID,filterData in pairs({
 			-- #if AFTER WRATH
 			en = [[~INVTYPE_THROWN]],
 			-- #else
-			en = [[~GetItemSubClassInfo(2,16)]],
+			en = [[~C_Item.GetItemSubClassInfo(2,16)]],
 			-- #endif
 		},
 	},
@@ -269,7 +269,7 @@ for filterID,filterData in pairs({
 			en = [[~INVTYPE_AMMO]],
 		},
 	},
-	
+
 	-- Accessories
 	[50] = {
 		readable = "Miscellaneous",
@@ -313,7 +313,7 @@ for filterID,filterData in pairs({
 		constant = "RELIC",
 		text = {
 			-- #if AFTER LEGION
-			en = [[~GetItemSubClassInfo(3,11)]],
+			en = [[~C_Item.GetItemSubClassInfo(3,11)]],
 			-- #else
 			en = [[~INVTYPE_RELIC]],
 			-- #endif
@@ -339,7 +339,7 @@ for filterID,filterData in pairs({
 		icon = [[~_.asset("Interface_Zone_drop")]],
 		constant = "REAGENTS",
 		text = {
-			en = [[~GetItemClassInfo(5)]],
+			en = [[~C_Item.GetItemClassInfo(5)]],
 		},
 	},
 	[57] = {
@@ -394,10 +394,10 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_gem_ruby_02",
 		constant = "GEMS",
 		text = {
-			en = [[~GetItemClassInfo(3)]],
+			en = [[~C_Item.GetItemClassInfo(3)]],
 		},
 	},
-	
+
 	-- Other Types
 	[100] = {
 		readable = "Mounts",
@@ -489,7 +489,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/Inv_glyph_minorwarrior",
 		constant = "GLYPHS",
 		text = {
-			en = [[~GetItemClassInfo(16)]],
+			en = [[~C_Item.GetItemClassInfo(16)]],
 		},
 	},
 	[112] = {
@@ -518,7 +518,7 @@ for filterID,filterData in pairs({
 		constant = "MOUNT_EQUIPMENT",
 		text = {
 			-- #if AFTER 8.2.0
-			en = [[~GetItemSubClassInfo(13,0)]],
+			en = [[~C_Item.GetItemSubClassInfo(13,0)]],
 			-- #else
 			en = "Mount Equipment",
 			-- #endif

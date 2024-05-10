@@ -1240,7 +1240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #if AFTER 4.0.3
 						-- This init function unmarks the removed from game flag for folks with the brazier.
 						["OnInit"] = [[function(t)
-							if GetItemCount(22057, true) > 0 then
+							if C_Item.GetItemCount(22057, true) > 0 then
 								t.u = nil;
 								for i,o in ipairs(t.g) do
 									if o.u and o.u == 11 then

@@ -10,8 +10,8 @@ local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFla
 -- Global locals
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tostring, tremove
 	= ipairs, pairs, rawset, rawget, tinsert, math.floor, select, tonumber, tostring, tremove
-local GetItemCount, GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
-	= GetItemCount, GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
+local C_Item_GetItemCount, C_Item_GetItemInfo, C_Item_GetItemInfoInstant, C_Item_GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
+	= C_Item.GetItemCount, C_Item.GetItemInfo, C_Item.GetItemInfoInstant, C_Item.GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
 
 -- Class locals
 
@@ -32,11 +32,11 @@ local function FilterSpecs(specs)
 end
 local GetFixedItemSpecInfo = function(itemID)
 	if itemID then
-		local specs = GetItemSpecInfo(itemID);
+		local specs = C_Item_GetItemSpecInfo(itemID);
 		if not specs or #specs < 1 then
 			specs = {};
 			-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
-			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
+			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = C_Item_GetItemInfo(itemID);
 			-- only Armor items
 			if itemClassID and itemClassID == 4 then
 				-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
@@ -249,7 +249,7 @@ local function HandleItemRetries(t)
 end
 -- Consolidated function to cache available Item information
 local function RawSetItemInfoFromLink(t, link)
-	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
+	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = C_Item_GetItemInfo(link);
 	if link then
 		--[[ -- Debug Prints
 		local _t, id = cache.GetCached(t);
@@ -317,7 +317,7 @@ local function default_link(t)
 	return UNKNOWN;
 end
 local function default_icon(t)
-	return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+	return t.itemID and select(5, C_Item_GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 end
 local function default_specs(t)
 	return GetFixedItemSpecInfo(t.itemID);
@@ -483,13 +483,13 @@ local BaseCostItem = app.BaseObjectFields({
 	end,
 	-- progress is how many of the cost item your character has anywhere
 	["progress"] = function(t)
-		return GetItemCount(t.itemID, true, nil, true) or 0;
+		return C_Item_GetItemCount(t.itemID, true, nil, true) or 0;
 	end,
 	["collectible"] = app.ReturnFalse,
 	["trackable"] = app.ReturnTrue,
 	-- show a check when it is has matching quantity in your bags
 	["saved"] = function(t)
-		return GetItemCount(t.itemID) >= t.total;
+		return C_Item_GetItemCount(t.itemID) >= t.total;
 	end,
 	-- hide any irrelevant wrapped fields of a cost item
 	["g"] = app.EmptyFunction,

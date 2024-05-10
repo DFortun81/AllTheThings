@@ -7,7 +7,7 @@ RELICS = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER LEGION
-		en = [[~GetItemSubClassInfo(3,11)]],
+		en = [[~C_Item.GetItemSubClassInfo(3,11)]],
 		-- #else
 		en = "Relics",
 		-- #endif

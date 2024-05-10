@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							end]],
 							["OnInit"] = [[function(t)
 								t.otherItemID = 185693;
-								t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+								t.GetItemCount = function(t) return C_Item.GetItemCount(t.itemID, true) + C_Item.GetItemCount(t.otherItemID, true); end
 								return t;
 							end]],
 							-- #endif

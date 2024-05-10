@@ -411,7 +411,7 @@
         "min",
         "GetSpellRank",
         "GetLocale",
-        "GetItemSubClassInfo",
+        "C_Item.GetItemSubClassInfo",
         "GetItemClassInfo",
         "GetCategoryInfo",
         "PlaySound",

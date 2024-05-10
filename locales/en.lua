@@ -604,7 +604,7 @@ for key, value in pairs({
 	["UPGRADE_ICON"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
 	["UPGRADE_TEXT"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
 	["REAGENT_ICON"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t";
-	["REAGENT_TEXT"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
+	["REAGENT_TEXT"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..C_Item.GetItemClassInfo(5).."|r";
 
 	-- These are solely used to condense the length of Source strings within Tooltips
 	["ABBREVIATIONS"] = {

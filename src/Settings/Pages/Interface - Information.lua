@@ -8,7 +8,7 @@ local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
-local GetRealmName, GetItemInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName = GetRealmName, GetItemInfo, C_Spell.GetSpellInfo, C_Spell.GetSpellName
+local GetRealmName, C_Item_GetItemInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName = GetRealmName, C_Item.GetItemInfo, C_Spell.GetSpellInfo, C_Spell.GetSpellName
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -78,7 +78,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	itemName = function(itemID, reference)
-		local name = select(2, GetItemInfo(itemID));
+		local name = select(2, C_Item_GetItemInfo(itemID));
 		if IsRetrieving(name) then
 			reference.working = true
 			name = "Item: " .. RETRIEVING_DATA;
@@ -90,7 +90,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	itemNameAndIcon = function(itemID, reference)
-		local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
+		local _,name,_,_,_,_,_,_,_,icon = C_Item_GetItemInfo(itemID);
 		if IsRetrieving(name) then
 			reference.working = true
 			name = "Item: " .. RETRIEVING_DATA;
@@ -260,7 +260,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				local currentCharacter = knownByGUID[app.GUID];
 				if currentCharacter then
 					local text = currentCharacter.text or "???";
-					local count = GetItemCount(itemID, true);
+					local count = C_Item.GetItemCount(itemID, true);
 					if count and count > 1 then
 						text = text .. " (x" .. count .. ")";
 					end
@@ -918,7 +918,7 @@ settings.CreateInformationType("LinkSourceID", {
 	Process = function(t, data, tooltipInfo)
 		local link, source = data.link or data.silentLink, data.sourceID;
 		if not link then return; end
-		local itemName = GetItemInfo(link)
+		local itemName = C_Item_GetItemInfo(link)
 		-- If it doesn't, the source ID will need to be harvested.
 		local sourceID, success = app.GetSourceID(link);
 		-- app.PrintDebug("SourceIDs",data.modItemID,source,sourceID,success,link)
@@ -926,7 +926,7 @@ settings.CreateInformationType("LinkSourceID", {
 			-- only save the source if it is different than what we already have, or being forced
 			if not source or source < 1 or source ~= sourceID then
 				-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
-				-- print(GetItemInfo(text))
+				-- print(C_Item_GetItemInfo(text))
 				app.SaveHarvestSource(data);
 			end
 		end

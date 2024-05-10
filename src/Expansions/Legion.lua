@@ -16,7 +16,7 @@ local pairs, select, math_floor
 	= pairs, select, math.floor;
 local L, ColorizeRGB = app.L, app.Modules.Color.ColorizeRGB;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
-local GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem;
+local C_Item_GetDetailedItemLevelInfo, C_Item_GetItemInfo, IsArtifactRelicItem = C_Item.GetDetailedItemLevelInfo, C_Item.GetItemInfo, IsArtifactRelicItem;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
 local ATTAccountWideData, ATTAccountWideDataArtifacts
@@ -108,10 +108,10 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 		if itemID then
 			-- 1 -> Off-Hand Appearance
 			-- 2 -> Main-Hand Appearance
-			-- return select(2, GetItemInfo(("item:%d::::::::%d:::11:::8:%d:"):format(itemID, app.Level, t.artifactID)));
+			-- return select(2, C_Item_GetItemInfo(("item:%d::::::::%d:::11:::8:%d:"):format(itemID, app.Level, t.artifactID)));
 			local link = ("item:%d::::::::%d:::11::%d:8:%d:"):format(math_floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
 			-- app.PrintDebug("Artifact link",t.artifactID,itemID,link);
-			local link = select(2, GetItemInfo(link));
+			local link = select(2, C_Item_GetItemInfo(link));
 			if not link then return end
 			t.silentLink = link;
 			return link;
@@ -152,7 +152,7 @@ app.AddArtifactRelicInformation = function(itemID, rawlink, info, group)
 		-- If the item is a relic, then let's compare against equipped relics.
 		if CurrentArtifactRelicItemLevels then
 			local progress, total = 0, 0;
-			local relicItemLevel = select(1, GetDetailedItemLevelInfo(rawlink)) or 0;
+			local relicItemLevel = select(1, C_Item_GetDetailedItemLevelInfo(rawlink)) or 0;
 			local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
 			for relicID,artifactData in pairs(CurrentArtifactRelicItemLevels) do
 				local infoString;
@@ -173,7 +173,7 @@ app.AddArtifactRelicInformation = function(itemID, rawlink, info, group)
 					end
 				end
 				if infoString then
-					local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(relicID);
+					local _, link, _, _, _, _, _, _, _, icon = C_Item_GetItemInfo(relicID);
 					tinsert(info, 1, {
 						left = link and ("   " .. ((icon and ("|T" .. icon .. ":0|t ") or "") .. link)) or RETRIEVING_DATA,
 						right = L.ITEM_LEVEL .. " " .. infoString,
@@ -425,7 +425,7 @@ app.events.ARTIFACT_UPDATE = function(...)
 				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
 				myArtifactData[relicSlotIndex] = {
 					["relicType"] = relicType,
-					["iLvl"] = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
+					["iLvl"] = relicLink and select(1, C_Item_GetDetailedItemLevelInfo(relicLink)) or 0,
 				};
 			end
 		end

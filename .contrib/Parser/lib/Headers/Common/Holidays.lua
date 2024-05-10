@@ -7,7 +7,7 @@ HOLIDAYS = createHeader({
 		-- #if ANYCLASSIC
 		en = "Holiday",
 		-- #else
-		en = [[~GetItemSubClassInfo(15,3)]],
+		en = [[~C_Item.GetItemSubClassInfo(15,3)]],
 		-- #endif
 	},
 	description = {

@@ -7,9 +7,9 @@ local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFie
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
+	C_Item_GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, C_Spell.GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+	C_Item.GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, C_Spell.GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
@@ -197,11 +197,11 @@ app:CreateWindow("Tradeskills", {
 								---@diagnostic disable-next-line: undefined-field
 								GameTooltip.SetCraftSpell(ATTCNPCHarvester, craftIndex);
 								local link, craftedItemID = select(2, ATTCNPCHarvester:GetItem());
-								if link then craftedItemID = GetItemInfoInstant(link); end
+								if link then craftedItemID = C_Item_GetItemInfoInstant(link); end
 
 								-- Cache the Reagents used to make this item.
 								for i=1,GetCraftNumReagents(craftIndex) do
-									local itemID = GetItemInfoInstant(GetCraftReagentItemLink(craftIndex, i));
+									local itemID = C_Item_GetItemInfoInstant(GetCraftReagentItemLink(craftIndex, i));
 									if itemID then
 										-- Make sure a cache table exists for this item.
 										local _, _, reagentCount = GetCraftReagentInfo(craftIndex, i);
@@ -256,10 +256,10 @@ app:CreateWindow("Tradeskills", {
 							-- Cache the Reagents used to make this item.
 							local tradeSkillItemLink = GetTradeSkillItemLink(skillIndex);
 							if tradeSkillItemLink then
-								local craftedItemID = GetItemInfoInstant(tradeSkillItemLink);
+								local craftedItemID = C_Item_GetItemInfoInstant(tradeSkillItemLink);
 								for i=1,GetTradeSkillNumReagents(skillIndex) do
 									local reagentCount = select(3, GetTradeSkillReagentInfo(skillIndex, i));
-									local itemID = GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
+									local itemID = C_Item_GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
 
 									-- Make sure a cache table exists for this item.
 									-- Index 1: The Recipe Skill IDs

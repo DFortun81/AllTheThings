@@ -111,11 +111,11 @@ app:CreateWindow("ItemFinder", {
 					if link then
 						local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
 						itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
-							= GetItemInfo(link);
+							= C_Item.GetItemInfo(link);
 						if itemName then
 							local spellName, spellID;
 							if classID == "Recipe" or classID == "Mount" then
-								spellName, spellID = GetItemSpell(t.itemID);
+								spellName, spellID = C_Item.GetItemSpell(t.itemID);
 								if spellName == "Learning" then spellID = nil; end	-- RIP.
 							end
 							--setmetatable(t, t.conditions[2]);
@@ -155,7 +155,7 @@ app:CreateWindow("ItemFinder", {
 							return link;
 						end
 					end
-					
+
 					t.retries = (t.retries or 0) + 1;
 					if t.retries > 30 then
 						rawset(t, "collected", true);
@@ -231,7 +231,7 @@ app:CreateWindow("SpellFinder", {
 					if link and link ~= "" and link ~= " " then
 						return link;
 					end
-					
+
 					t.retries = (t.retries or 0) + 1;
 					if t.retries > 30 then
 						rawset(t, "collected", true);

@@ -910,7 +910,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if AFTER 10.1.5
 						-- This init function unmarks the removed from game flag for folks with the brazier.
 						["OnInit"] = [[function(t)
-							if GetItemCount(22057, true) > 0 then
+							if C_Item.GetItemCount(22057, true) > 0 then
 								t.u = nil;
 								for i,o in ipairs(t.g) do
 									if o.u and o.u == 11 then
