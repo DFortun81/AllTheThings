@@ -687,6 +687,7 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
+local HexToARGB = app.Modules.Color.HexToARGB
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
@@ -701,13 +702,17 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 			local tooltipInfo = group.tooltipInfo
 			-- TODO: comment in once all tooltip logic is hooked via information types
 			-- If we need to generate tooltip-only content for this group then do that now
-			-- if group.needsTooltipContent then
-			-- 	if not tooltipInfo then
-			-- 		tooltipInfo = {}
-			-- 		group.tooltipInfo = tooltipInfo
-			-- 	end
-			-- 	group.needsTooltipContent = nil
+			-- if not tooltipInfo then
+			-- 	tooltipInfo = {}
+			-- 	group.tooltipInfo = tooltipInfo
 			-- 	app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+
+			-- 	-- Some tooltip items might be added using a color instead of argb, so we have to convert them... TODO maybe clean up
+			-- 	if #tooltipInfo > 0 then
+			-- 		for i,item in ipairs(tooltipInfo) do
+			-- 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color) end
+			-- 		end
+			-- 	end
 			-- end
 
 			-- If there was info text generated for this search result, then display that first.
