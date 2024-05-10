@@ -3,8 +3,10 @@
 ---------------------------------------------
 -- Simple function for First Craft tracking Quests
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
-local function FirstCraft(questID, recipeID, added)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.Spell..":"..recipeID };
+local function FirstCraft(questID, recipeID, added, t)
+	t = t or {}
+	t.questID = questID
+	t.type = HEADERS.Spell..":"..recipeID
 	if added then
 		t.timeline = { added };
 	end
