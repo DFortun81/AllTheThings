@@ -21036,6 +21036,139 @@
 224674@@@Weaponmaster Li
 10.2.7.54366
 225354@@@Lil' Flameo
+10.2.7.54601
+210086@@@Witch Doctor Tzadah
+210345@@@Exodar Worker
+210347@@@Tishamaat Celebrant
+210563@@@Chieftain Hatuun
+210583@@@Shattrath Victim
+212078@@@Echo of Vol'jin
+212119@@@Shattrath Crystalsmith
+212202@@@Prophet Velen
+212203@@@Chieftain Hatuun
+212204@@@Arzaal
+212210@@@Eranthi
+212211@@@Tronaar
+212342@@@Vindicator Boros
+212343@@@Farseer Nobundo
+212344@@@High Priestess Ishanah
+212345@@@Jadaar
+212346@@@Vindicator Kuros
+212347@@@Exarch Naielle
+212348@@@Vindicator Aesom
+212349@@@Akama
+212350@@@Ph'el Oman
+212358@@@Soultender Nemuraan
+212381@@@Elder Kuruti
+212382@@@Asric
+212384@@@Reluun
+212385@@@Tishad
+212386@@@Apprentice Beruun
+212387@@@Grand Anchorite Almonen
+212388@@@Captain Fareeya
+212402@@@Prophet Velen
+212404@@@Chieftain Hatuun
+212784@@@Rokhan
+213352@@@Chieftain Hatuun
+213604@@@High Vindicator
+213670@@@Bwonsamdi
+213803@@@Draenei Spirit
+213996@@@Prophet Velen
+214021@@@Prophet Velen
+214046@@@Valunei
+214047@@@Elementalist Janai
+214048@@@Earthcaller Yevaa
+214062@@@???
+214080@@@Kothaar
+214128@@@Image of Lukou
+214192@@@Amaan the Wise
+214193@@@Arechron
+214194@@@Corki
+214616@@@Corrupted Memory of Turalyon
+214700@@@Void Aspirant
+215244@@@Orc Invader
+215330@@@Injured Traveler
+215332@@@Azuremyst Anchorite
+215631@@@Felspreader [DNT]
+215634@@@Prophet Velen
+215635@@@Arzaal
+215636@@@Chieftain Hatuun
+215797@@@Image of Lukou
+215892@@@Grand Artificer Romuul
+216023@@@Witch Doctor Tzadah
+216024@@@Rokhan
+216026@@@Kevo ya Siti
+216027@@@Lukou
+216089@@@Krokul Visitor
+216090@@@Tamed Marsuul
+216091@@@Tabaanu
+216095@@@Draenei Child
+216097@@@Off-Duty Vindicator
+216158@@@Alleria Windrunner
+216159@@@Locus-Walker
+216181@@@Draenei Spirit
+216348@@@Meraas
+216377@@@Krokul Ridgestalker
+216382@@@Latanu the Pale
+216389@@@Aronen
+216390@@@Deiza Plaguehorn
+216391@@@Vaelen the Flayed
+216392@@@Setaal Darkmender
+216396@@@Devout Vindicator
+216398@@@Pious Anchorite
+216418@@@Val'zuun
+216421@@@Tamed Panthara
+216426@@@High Chief Stillpine
+216427@@@Stillpine the Younger
+216428@@@Exarch Menelaous
+216430@@@Rangari Tracker
+216433@@@Assistant Artificer
+217811@@@Jani
+217840@@@Bwonsamdi
+217843@@@Master Gadrin
+218633@@@Arzaal
+218634@@@High Artificer Ataanya
+218636@@@Chieftain Hatuun
+218637@@@Grand Artificer Romuul
+218639@@@Prophet Velen
+221386@@@Aspiring Farseer
+221387@@@Farseer Nobundo
+221418@@@Amaan the Wise
+221650@@@Void Aspirant
+221662@@@Chieftain Hatuun
+221808@@@Nambria
+222657@@@Kevo ya Siti
+222666@@@Kevo ya Siti
+223215@@@Rokhan
+223356@@@Bwemba
+223504@@@Tishamaat Celebrant
+223505@@@Relaxing Augari
+223511@@@Atharuun
+223519@@@Zuronar
+223523@@@Amaan the Younger
+223531@@@Valwar
+223566@@@Grand Anchorite Almonen
+223567@@@High Priestess Ishanah
+223579@@@Eliza
+223580@@@Ella
+223616@@@Soulspeaker Niir
+223619@@@Tishamaat Celebrant
+223620@@@Tishamaat Celebrant
+223621@@@Tishamaat Celebrant
+223622@@@Tishamaat Celebrant
+223623@@@Tishamaat Celebrant
+223624@@@Tishamaat Celebrant
+223625@@@Tishamaat Celebrant
+223626@@@Tishamaat Celebrant
+223627@@@Tishamaat Celebrant
+223628@@@Tishamaat Celebrant
+223629@@@Tishamaat Celebrant
+223630@@@Tishamaat Celebrant
+223631@@@Tishamaat Celebrant
+223632@@@Tishamaat Celebrant
+223633@@@Tishamaat Celebrant
+223634@@@Tishamaat Celebrant
+223699@@@Tishamaat Celebrant
 11.0.0.54311
 192731@@@Arcane Missile
 204271@@@Abyssal Lurker
