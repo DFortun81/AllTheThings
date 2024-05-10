@@ -1053,7 +1053,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
-					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {	-- A Glowing Memento
+					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_11_0_1_LAUNCH } }, {	-- A Glowing Memento
 						["provider"] = { "i", 211375 },	-- Everglowing Ember
 						["g"] = {
 							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
