@@ -698,8 +698,20 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 				tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
 			end
 
+			local tooltipInfo = group.tooltipInfo
+			-- TODO: comment in once all tooltip logic is hooked via information types
+			-- If we need to generate tooltip-only content for this group then do that now
+			-- if group.needsTooltipContent then
+			-- 	if not tooltipInfo then
+			-- 		tooltipInfo = {}
+			-- 		group.tooltipInfo = tooltipInfo
+			-- 	end
+			-- 	group.needsTooltipContent = nil
+			-- 	app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+			-- end
+
 			-- If there was info text generated for this search result, then display that first.
-			AttachTooltipInformation(tooltip, group.tooltipInfo);
+			AttachTooltipInformation(tooltip, tooltipInfo);
 		end
 	else
 		print(status, group);
