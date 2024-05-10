@@ -135,6 +135,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
+				q(27029, {	-- Cure the Scourge
+					["qg"] = 44837,	-- Koristrasza
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["lvl"] = lvlsquish(40, 40, 15),
+					["groups"] = {
+						objective(1, {	-- 0/20 Withered Tusk
+							["provider"] = { "i", 60756 },	-- Withered Tusk
+							["crs"] = {
+								74411,	-- Death's Head Necrolyte
+								74478,	-- Death's Head Shadowmender
+							},
+						}),
+					},
+				}),
 				q(3525, {	-- Extinguishing the Idol
 					["providers"] = {
 						{ "n",   8516 },	-- Belnistrasz
@@ -174,7 +188,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27024, {	-- Partners in Crime
 					["qg"] = 44837,	-- Koristrasza
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					["lvl"] = lvlsquish(35, 35, 15),
+					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glutton slain
 							["provider"] = { "n", 8567 },	-- Glutton
@@ -210,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						27062,	-- Looming Threat [Horde]
 					},
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					["lvl"] = lvlsquish(35, 35, 15),
+					["lvl"] = lvlsquish(42, 42, 15),
 					-- #if BEFORE 6.0.1.18322
 					["groups"] = {
 						objective(1, {	-- 0/1 Amnennar the Coldbringer slain
