@@ -200,7 +200,6 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 		group.rawlink = rawlink;
 		-- importing a rawlink will clear any cached upgrade info for the group
 		group._up = nil;
-		group.up = nil;
 		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = (":"):split(rawlink);
 		if linkItemID then
 			-- app.PrintDebug("IRL+",rawlink,linkItemID,modID,bonusCount,bonusID1);
