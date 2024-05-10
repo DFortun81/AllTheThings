@@ -377,7 +377,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		n(218738, {	-- Daetan Swiftplume
-			["questID"] = 79558,	-- Feathered Fiend (H)
 			["providers"] = {
 				{ "n", 218736 },	-- Golden Egg
 				{ "n", 219936 },	-- [DNT] Vignette
@@ -385,7 +384,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 44.4, 35.1, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["groups"] = {
 				i(216932, {	-- Noblegarden Trinket (QI!)
 					["races"] = HORDE_ONLY,

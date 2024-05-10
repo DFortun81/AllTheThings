@@ -3,12 +3,18 @@
 ---------------------------------------------
 -- Simple function for First Craft tracking Quests
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
-local function FirstCraft(questID, recipeID, added, t)
-	t = t or {}
+local function FirstCraft(questID, recipeID, added, removed)
+	local t = {}
 	t.questID = questID
 	t.type = HEADERS.Spell..":"..recipeID
 	if added then
 		t.timeline = { added };
+	end
+	if removed then
+		if not added then
+			error("Cannot have removed FirstCraft without added")
+		end
+		t.timeline[#t.timeline + 1] = removed
 	end
 	return t;
 end
@@ -965,14 +971,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74310, 400809, ADDED_10_0_7);	-- Glowing Crystal Bookmark
 			-- Infusions of Power
 			FirstCraft(79002, 429947, ADDED_10_2_6_SEASON_FOUR);		-- Enchanted Aspect's Awakened Crest
-			FirstCraft(76543, 414989, ADDED_10_2_0);	-- Enchanted Aspect's Dreaming Crest
-			FirstCraft(75316, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
+			FirstCraft(76543, 414989, ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR);	-- Enchanted Aspect's Dreaming Crest
+			FirstCraft(75316, 406418, ADDED_10_1_0, REMOVED_10_2_0);	-- Enchanted Aspect's Shadowflame Crest
 			FirstCraft(79003, 429948, ADDED_10_2_6_SEASON_FOUR);		-- Enchanted Whelpling's Awakened Crest
-			FirstCraft(76541, 414985, ADDED_10_2_0);	-- Enchanted Whelpling's Dreaming Crest
-			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
+			FirstCraft(76541, 414985, ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR);	-- Enchanted Whelpling's Dreaming Crest
+			FirstCraft(75256, 406108, ADDED_10_1_0, REMOVED_10_2_0);	-- Enchanted Whelpling's Shadowflame Crest
 			FirstCraft(79001, 429945, ADDED_10_2_6_SEASON_FOUR);		-- Enchanted Wyrm's Awakened Crest
-			FirstCraft(76542, 414988, ADDED_10_2_0);	-- Enchanted Wyrm's Dreaming Crest
-			FirstCraft(75315, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
+			FirstCraft(76542, 414988, ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR);	-- Enchanted Wyrm's Dreaming Crest
+			FirstCraft(75315, 406413, ADDED_10_1_0, REMOVED_10_2_0);	-- Enchanted Wyrm's Shadowflame Crest
 			FirstCraft(75235, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
 			-- Legendary
 			FirstCraft(78011, 422338, ADDED_10_2_0);	-- Shalasar's Sophic Vellum

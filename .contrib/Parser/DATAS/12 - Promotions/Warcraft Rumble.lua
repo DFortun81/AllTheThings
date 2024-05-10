@@ -293,7 +293,6 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 root(ROOTS.HiddenQuestTriggers, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 	-- TODO: these are real quests, probably in different cities/locations?
 	q(75709),   -- Find a Rumble Coin
-	q(75711),   -- Find a Rumble Coin
 	q(75712),   -- Warcraft Rumble Minis: New Look!
 	q(75713),   -- Warcraft Rumble Minis: New Look!
 

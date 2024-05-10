@@ -7115,9 +7115,7 @@ root(ROOTS.Unsorted, {
 				q(79465),	-- [DNT] Renown Reward 003
 				q(79466),	-- [DNT] Renown Reward 004
 				q(79988),	--
-				q(80171),	--
 				q(80172),	-- Ensemble: Gladiator's Battered Armor
-				q(80335),	--
 			}),
 		})),
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
@@ -7388,7 +7386,6 @@ root(ROOTS.Unsorted, {
 				q(76466),	--
 				q(76467),	--
 				q(76468),	--
-				q(76543),	--
 				q(77101),	-- Ingredient Quest Template
 				q(77161),	--
 				q(77162),	--
@@ -7467,7 +7464,6 @@ root(ROOTS.Unsorted, {
 				q(78420),	--
 				q(78432),	--
 				q(78433),	--
-				q(78445),	--
 				q(78554),	--
 				q(78576),	--
 				q(78577),	--
