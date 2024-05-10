@@ -13853,6 +13853,8 @@
 40227@@@Realm First! Mythic Garrosh
 10.2.7.54295
 19961@@@Mythic Remix: Siege of Orgrimmar
+10.2.7.54630
+40382@@@Hunt the Harbinger
 11.0.0.54311
 12926@@@Artifact Power Earned by the Heart of Azeroth
 16633@@@<DNT> Maruuk Centaur Title Quest
@@ -14816,7 +14818,6 @@
 40314@@@Fragments of Memories
 40380@@@Forged Gladiator: The War Within Season 1
 40381@@@Forged Legend: The War Within Season 1
-40382@@@Hunt the Harbinger
 40383@@@Hero of the Alliance: Forged
 40384@@@Hero of the Horde: Forged
 40385@@@Combatant I: The War Within Season 1

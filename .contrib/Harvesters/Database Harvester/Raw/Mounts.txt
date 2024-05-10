@@ -1850,6 +1850,8 @@
 449140@@@Sentinel War Wolf
 10.2.7.54366
 453255@@@Savage Ebony Battle Turtle
+10.2.7.54630
+349943@@@Amber Skitterfly
 11.0.0.54311
 405623@@@Armadillo Roller
 441313@@@Soar
