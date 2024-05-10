@@ -1656,6 +1656,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
+				i(62916, {	-- Dark Iron Bullet
+					["timeline"] = { ADDED_4_0_3 },
+					["crs"] = {
+						8338,	-- Dark Iron Marksman
+						8566,	-- Dark Iron Lookout
+					},
+					["description"] = "In addition to being looted, this item can also be passively obtained by being attacked by said mobs. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",
+				}),
 				i(18944, {	-- Incendosaur Scale
 					["cr"] = 9318,	-- Incendosaur
 				}),
