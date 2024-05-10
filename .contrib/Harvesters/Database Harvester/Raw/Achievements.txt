@@ -14837,3 +14837,34 @@
 40428@@@Heroic: Darkflame Cleft
 40429@@@Mythic: Darkflame Cleft
 40430@@@Khaz Algar Flight Master
+11.0.0.54605
+40222@@@Echoes of Danger
+40261@@@Slimy Yet Satisfying
+40266@@@Missed 'Em by That Much
+40431@@@Hunting the Hunter
+40432@@@Nemesis (Solo)
+40433@@@Hunting the Hunter (Solo)
+40434@@@Treasures of the Isle of Dorn
+40435@@@Adventurer of the Isle of Dorn
+40436@@@You're Getting a Delve!
+40437@@@Delver of the Depths
+40438@@@Glory of the Delver
+40445@@@[NYI] Spore Sweeper
+40446@@@[NYI] I TAKE Candle!
+40447@@@Delver of the Depths II
+40448@@@Delver of the Depths III
+40449@@@Delver of the Depths IV
+40450@@@Companion Level 20
+40451@@@Companion Level 30
+40452@@@[NYI] Kobyss Challenge
+40453@@@[NYI] Nerubian Challenge
+40454@@@[NYI] Order of Night Challenge
+40455@@@Companion Level 10
+40456@@@Companion Level 40
+40457@@@Companion Level 50
+40458@@@Rare Within
+40459@@@[PH] Delver's Dirigible
+40460@@@10 Delves Completed
+40461@@@Companion Level 60
+40462@@@50 Delves Completed
+40463@@@100 Delves Completed

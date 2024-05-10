@@ -2717,3 +2717,5 @@
 2962@@@Gundargaz, The Ringing Deeps
 2963@@@Shadowvein Point, The Ringing Deeps
 2964@@@Quest Path 9786: 11.0 Z2 - Campaign - Ch 3 - Dark Iron From Above - Boss Flyover - (LWB)
+11.0.0.54605
+2967@@@Quest Path 9870: 11.0 Raid - Nerubian - Zone - Thread Elevator - 04 Taxi Path 01 - TJS

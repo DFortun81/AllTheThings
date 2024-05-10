@@ -1930,3 +1930,11 @@
 448939@@@Shackled Shadow
 448978@@@Vermillion Imperial Lynx
 453785@@@Earthen Judicator's Ramolith
+11.0.0.54605
+447185@@@Aquamarine Swarmite
+447405@@@Vicious Flying Nerubian
+447957@@@Ferocious Jawcrawler
+449264@@@Wick
+449325@@@Vicious Flying Nerubian
+449415@@@Slatestone Ramolith
+449466@@@Forged Gladiator's Fel Bat

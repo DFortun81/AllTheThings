@@ -21724,3 +21724,14 @@
 225807@@@Boost
 225813@@@Boost
 225825@@@Boost
+11.0.0.54605
+222590@@@Violet Sporbit
+223744@@@Snuffling
+225897@@@Anduin Wrynn
+225902@@@Vicious Skyrazor
+226025@@@Dead Arathi
+226044@@@Dead Ritualist
+226099@@@Faerin Lothar
+226125@@@Mind Slurp
+226199@@@Rainbow Trout
+226219@@@Water Stalker [DNT]

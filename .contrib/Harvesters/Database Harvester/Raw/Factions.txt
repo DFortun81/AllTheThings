@@ -1066,3 +1066,8 @@
 11.0.0.54521
 2579@@@zzOldDelves: Season 1
 2644@@@Delves: Season 1
+11.0.0.54605
+2601@@@The Weaver
+2605@@@The General
+2607@@@The Vizier
+2610@@@Azj-Kaheti Nerubian (Always Hostile) (Hidden)

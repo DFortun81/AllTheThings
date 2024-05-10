@@ -12121,3 +12121,8 @@
 7494@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7495@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier3:20:20|a
 7521@@@Holy Fire
+11.0.0.54605
+7522@@@Refurbished Alarm-O-Turret
+7523@@@Refurbished Plane Displacer
+7524@@@Refurbished Supercollide-O-Tron
+7525@@@Refurbished Shadowflame Rockets
