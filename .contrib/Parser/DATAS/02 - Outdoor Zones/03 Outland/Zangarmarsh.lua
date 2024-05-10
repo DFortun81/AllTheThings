@@ -1373,10 +1373,6 @@ root(ROOTS.Zones, {
 									18133,	-- Marshlight Bleeder
 								},
 							}),
-							i(25530),	-- Helm of Natural Purity
-							i(31661),	-- Leesa'oh's Wristbands
-							i(25534),	-- Marsh Survivalist's Belt
-							i(25525),	-- Zangar Epaulets
 						},
 					}),
 					q(9841, {	-- Stinging the Stingers
