@@ -22,20 +22,20 @@ r(447318),	-- Blasting Bracers
 r(447319),	-- Venting Vambraces
 r(447320),	-- Whirring Wristwraps
 r(447321),	-- Clanking Cuffs
-r(447322),	-- Tailoring Tool T1 [DNT]
-r(447323),	-- Tailoring Tool T2 [DNT]
-r(447324),	-- Engineering Helm T1 [DNT]
-r(447325),	-- Engineering Helm T2 [DNT]
-r(447326),	-- Fishing Tool T1 [DNT]
-r(447327),	-- Fishing Tool T2 [DNT]
-r(447328),	-- Jewelcrafting Tool T1 [DNT]
-r(447329),	-- Jewelcrafting Tool T2 [DNT]
-r(447330),	-- Mining Helmet T1 [DNT]
-r(447331),	-- Mining Hlmet T2 [DNT]
-r(447332),	-- Engineering Tool T1 [DNT]
-r(447333),	-- Engineering Tool T2 [DNT]
-r(447334),	-- Mining Backpack T1 [DNT]
-r(447335),	-- Mining Backpack T2 [DNT]
+r(447322),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
+r(447323),	-- Spring-Loaded Aqirite Fabric Cutters \\ Tailoring Tool T2 [DNT]
+r(447324),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
+r(447325),	-- Aqirite Brainwave Projector \\ Engineering Helm T2 [DNT]
+r(447326),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
+r(447327),	-- Aqirite Fisherfriend \\ Fishing Tool T2 [DNT]
+r(447328),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
+r(447329),	-- Lapidary's Aqirite Clamps \\ Jewelcrafting Tool T2 [DNT]
+r(447330),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
+r(447331),	-- Aqirite Miner's Headgear \\ Mining Hlmet T2 [DNT]
+r(447332),	-- Bismuth Fueled Samophlange \\ Engineering Tool T1 [DNT]
+r(447333),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
+r(447334),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
+r(447335),	-- Miner's Aqirite Hoard \\ Mining Backpack T2 [DNT]
 r(447336),	-- Handful of Bismuth Bolts
 r(447337),	-- Whimsical Wiring
 r(447338),	-- Gyrating Gear
@@ -58,7 +58,7 @@ r(447354),	-- Overclocked Cogwheel
 r(447355),	-- Impeccable Cogwheel
 r(447356),	-- Adjustable Cogwheel
 r(447357),	-- Recalibrated Safety Switch
-r(447358),	-- Blame Redistribution Device
+r(447358),	-- Blame Redirection Device \\ Blame Redistribution Device
 r(447359),	-- Overclocked Circuit Board
 r(447360),	-- Complicated Fuse Box
 r(447361),	-- Pouch of Pocket Grenades
@@ -71,7 +71,7 @@ r(447367),	-- Algari Repair Bot 11O \\ Repair Bot
 r(447368),	-- Portable Profession Possibility Projector
 r(447369),	-- Barrel of Fireworks
 r(447370),	-- Defective Escape Pod
-r(447371),	-- Malfunctioning Navigation Beacon
+r(447371),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
 11.0.0.54361
@@ -106,20 +106,20 @@ r(447318),	-- Blasting Bracers
 r(447319),	-- Venting Vambraces
 r(447320),	-- Whirring Wristwraps
 r(447321),	-- Clanking Cuffs
-r(447322),	-- Tailoring Tool T1 [DNT]
-r(447323),	-- Tailoring Tool T2 [DNT]
-r(447324),	-- Engineering Helm T1 [DNT]
-r(447325),	-- Engineering Helm T2 [DNT]
-r(447326),	-- Fishing Tool T1 [DNT]
-r(447327),	-- Fishing Tool T2 [DNT]
-r(447328),	-- Jewelcrafting Tool T1 [DNT]
-r(447329),	-- Jewelcrafting Tool T2 [DNT]
-r(447330),	-- Mining Helmet T1 [DNT]
-r(447331),	-- Mining Hlmet T2 [DNT]
-r(447332),	-- Engineering Tool T1 [DNT]
-r(447333),	-- Engineering Tool T2 [DNT]
-r(447334),	-- Mining Backpack T1 [DNT]
-r(447335),	-- Mining Backpack T2 [DNT]
+r(447322),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
+r(447323),	-- Spring-Loaded Aqirite Fabric Cutters \\ Tailoring Tool T2 [DNT]
+r(447324),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
+r(447325),	-- Aqirite Brainwave Projector \\ Engineering Helm T2 [DNT]
+r(447326),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
+r(447327),	-- Aqirite Fisherfriend \\ Fishing Tool T2 [DNT]
+r(447328),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
+r(447329),	-- Lapidary's Aqirite Clamps \\ Jewelcrafting Tool T2 [DNT]
+r(447330),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
+r(447331),	-- Aqirite Miner's Headgear \\ Mining Hlmet T2 [DNT]
+r(447332),	-- Bismuth Fueled Samophlange \\ Engineering Tool T1 [DNT]
+r(447333),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
+r(447334),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
+r(447335),	-- Miner's Aqirite Hoard \\ Mining Backpack T2 [DNT]
 r(447336),	-- Handful of Bismuth Bolts
 r(447337),	-- Whimsical Wiring
 r(447338),	-- Gyrating Gear
@@ -142,7 +142,7 @@ r(447354),	-- Overclocked Cogwheel
 r(447355),	-- Impeccable Cogwheel
 r(447356),	-- Adjustable Cogwheel
 r(447357),	-- Recalibrated Safety Switch
-r(447358),	-- Blame Redistribution Device
+r(447358),	-- Blame Redirection Device \\ Blame Redistribution Device
 r(447359),	-- Overclocked Circuit Board
 r(447360),	-- Complicated Fuse Box
 r(447361),	-- Pouch of Pocket Grenades
@@ -155,7 +155,7 @@ r(447367),	-- Algari Repair Bot 11O \\ Repair Bot
 r(447368),	-- Portable Profession Possibility Projector
 r(447369),	-- Barrel of Fireworks
 r(447370),	-- Defective Escape Pod
-r(447371),	-- Malfunctioning Navigation Beacon
+r(447371),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
 11.0.0.54361

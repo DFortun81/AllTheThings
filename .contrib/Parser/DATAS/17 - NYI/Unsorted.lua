@@ -7057,6 +7057,23 @@ root(ROOTS.Unsorted, {
 			i(224459),	-- Tusks of Mannoroth
 			i(224461),	-- Bones of Mannoroth
 			i(224547),	-- Timewarped Pouch
+
+			i(210582),	-- Jadaar's Memory Stone
+			i(210583),	-- Kuros's Memory Stone
+			i(210585),	-- Aesom's Memory Stone
+			i(210587),	-- Nemuraan's Memory Stone
+			i(210588),	-- Oman's Memory Stone
+			i(210591),	-- Tishamaat Memory Stones
+			i(210881),	-- Cunning Charm
+			i(213530),	-- Entropic Crystal
+			i(213531),	-- Nether Sands
+			i(213532),	-- Void Rune
+			i(213537),	-- Void Tendril
+			i(213540),	-- Ghostly Motes
+			i(217016),	-- Fragmented Medallion of the Darkspear
+			i(219904),	-- Romuul's Controllable Shoulderplate
+			i(221266),	-- Precious Belonging [DNT]
+			i(225064),	-- Breezebinder's Shirt
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			------ Next Check 10.2.7 ------

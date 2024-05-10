@@ -1148,11 +1148,11 @@ r(435333),	-- Captured Starlight
 r(435334),	-- Magnificent Jeweler's Setting
 r(435335),	-- Apply Socket
 r(435336),	-- Vicious Jeweler's Setting
-r(435337),	-- Amber Prism
-r(435338),	-- Emerald Prism
-r(435339),	-- Ruby Prism
-r(435369),	-- Onyx Prism
-r(435370),	-- Sapphire Prism
+r(435337),	-- Algari Amber Prism \\ Amber Prism
+r(435338),	-- Algari Emerald Prism \\ Emerald Prism
+r(435339),	-- Algari Ruby Prism \\ Ruby Prism
+r(435369),	-- Algari Onyx Prism \\ Onyx Prism
+r(435370),	-- Algari Sapphire Prism \\ Sapphire Prism
 r(435371),	-- Jewelcrafting T1 Helm
 r(435372),	-- Jewelcrafting T2 Helm
 r(435373),	-- Enchanting T1 Focus
@@ -2333,11 +2333,11 @@ r(435333),	-- Captured Starlight
 r(435334),	-- Magnificent Jeweler's Setting
 r(435335),	-- Apply Socket
 r(435336),	-- Vicious Jeweler's Setting
-r(435337),	-- Amber Prism
-r(435338),	-- Emerald Prism
-r(435339),	-- Ruby Prism
-r(435369),	-- Onyx Prism
-r(435370),	-- Sapphire Prism
+r(435337),	-- Algari Amber Prism \\ Amber Prism
+r(435338),	-- Algari Emerald Prism \\ Emerald Prism
+r(435339),	-- Algari Ruby Prism \\ Ruby Prism
+r(435369),	-- Algari Onyx Prism \\ Onyx Prism
+r(435370),	-- Algari Sapphire Prism \\ Sapphire Prism
 r(435371),	-- Jewelcrafting T1 Helm
 r(435372),	-- Jewelcrafting T2 Helm
 r(435373),	-- Enchanting T1 Focus

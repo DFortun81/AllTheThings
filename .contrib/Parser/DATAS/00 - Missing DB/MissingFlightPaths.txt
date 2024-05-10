@@ -30,3 +30,5 @@ fp(2955),	-- Quest Path 9706: 11.0 Z2 - Max Level - CH3 - Q2 - Pipe Ingress 1 Ta
 fp(2962),	-- Gundargaz, The Ringing Deeps
 fp(2963),	-- Shadowvein Point, The Ringing Deeps
 fp(2964),	-- Quest Path 9786: 11.0 Z2 - Campaign - Ch 3 - Dark Iron From Above - Boss Flyover - (LWB)
+11.0.0.54605
+fp(2967),	-- Quest Path 9870: 11.0 Raid - Nerubian - Zone - Thread Elevator - 04 Taxi Path 01 - TJS

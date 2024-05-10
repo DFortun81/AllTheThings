@@ -38,7 +38,7 @@ r(450241),	-- Charged Invoker
 r(450242),	-- Charged Slicer
 r(450243),	-- Echoing Impact \\ Echoing Impact Seal
 r(450244),	-- Burning Binding \\ Arathor Armor Patch
-r(450245),	-- Crystal Gazer's Gauntlets
+r(450245),	-- Sanctified Steps \\ Crystal Gazer's Gauntlets
 r(450246),	-- Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
 r(450248),	-- Entangling Cutlass
@@ -134,7 +134,7 @@ r(450241),	-- Charged Invoker
 r(450242),	-- Charged Slicer
 r(450243),	-- Echoing Impact \\ Echoing Impact Seal
 r(450244),	-- Burning Binding \\ Arathor Armor Patch
-r(450245),	-- Crystal Gazer's Gauntlets
+r(450245),	-- Sanctified Steps \\ Crystal Gazer's Gauntlets
 r(450246),	-- Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
 r(450248),	-- Entangling Cutlass

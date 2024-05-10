@@ -550,7 +550,7 @@ ach(40217),	-- Battleground Blitzer
 ach(40219),	-- Battleground Blitzest
 ach(40220),	-- Setting Records
 ach(40221),	-- Battleground Blitz Master
-ach(40222),	-- Echos of Danger
+ach(40222),	-- Echoes of Danger \\ Echos of Danger
 ach(40231),	-- The War Within Pathfinder [NYI]
 ach(40232),	-- Glory of the Nerub-ar Raider
 ach(40233),	-- Strategist: The War Within Season 1
@@ -581,12 +581,12 @@ ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
 ach(40258),	-- Mythic: Queen Ansurek Guild Run
 ach(40259),	-- Hall of Fame: Queen Ansurek
 ach(40260),	-- You Can't See Me \\ [PH] Bloodbound Horror Achievement
-ach(40261),	-- [PH] Ulgrax the Devourer Achievement
+ach(40261),	-- Slimy Yet Satisfying \\ [PH] Ulgrax the Devourer Achievement
 ach(40262),	-- [PH] Rasha'nan Achievement
 ach(40263),	-- Would you still /love me if I was a worm... \\ [PH] Eggtender Ovi'nax Achievement
 ach(40264),	-- [PH] Nexus-Princess Ky'veza Achievement
 ach(40265),	-- [PH] The Silken Court Achievement
-ach(40266),	-- [PH] Queen Ansurek Achievement
+ach(40266),	-- Missed 'Em by That Much \\ [PH] Queen Ansurek Achievement
 ach(40267),	-- Ulgrax the Devourer kills (Raid Finder Nerub-ar Palace)
 ach(40268),	-- Ulgrax the Devourer kills (Normal Nerub-ar Palace)
 ach(40269),	-- Ulgrax the Devourer kills (Heroic Nerub-ar Palace)
@@ -681,7 +681,6 @@ ach(40379),	-- Mythic: City of Threads
 11.0.0.54521
 ach(40380),	-- Forged Gladiator: The War Within Season 1
 ach(40381),	-- Forged Legend: The War Within Season 1
-ach(40382),	-- Hunt the Harbinger
 ach(40383),	-- Hero of the Alliance: Forged
 ach(40384),	-- Hero of the Horde: Forged
 ach(40385),	-- Combatant I: The War Within Season 1
@@ -701,3 +700,31 @@ ach(40427),	-- Darkflame Cleft
 ach(40428),	-- Heroic: Darkflame Cleft
 ach(40429),	-- Mythic: Darkflame Cleft
 ach(40430),	-- Khaz Algar Flight Master
+11.0.0.54605
+ach(40431),	-- Hunting the Hunter
+ach(40432),	-- Nemesis (Solo)
+ach(40433),	-- Hunting the Hunter (Solo)
+ach(40434),	-- Treasures of the Isle of Dorn
+ach(40435),	-- Adventurer of the Isle of Dorn
+ach(40436),	-- You're Getting a Delve!
+ach(40437),	-- Delver of the Depths
+ach(40438),	-- Glory of the Delver
+ach(40445),	-- [NYI] Spore Sweeper
+ach(40446),	-- [NYI] I TAKE Candle!
+ach(40447),	-- Delver of the Depths II
+ach(40448),	-- Delver of the Depths III
+ach(40449),	-- Delver of the Depths IV
+ach(40450),	-- Companion Level 20
+ach(40451),	-- Companion Level 30
+ach(40452),	-- [NYI] Kobyss Challenge
+ach(40453),	-- [NYI] Nerubian Challenge
+ach(40454),	-- [NYI] Order of Night Challenge
+ach(40455),	-- Companion Level 10
+ach(40456),	-- Companion Level 40
+ach(40457),	-- Companion Level 50
+ach(40458),	-- Rare Within
+ach(40459),	-- [PH] Delver's Dirigible
+ach(40460),	-- 10 Delves Completed
+ach(40461),	-- Companion Level 60
+ach(40462),	-- 50 Delves Completed
+ach(40463),	-- 100 Delves Completed

@@ -7,7 +7,7 @@ r(444788),	-- Nibbling Minnow
 r(444789),	-- Whispering Stargazer
 r(444790),	-- Goldengill Trout
 r(444791),	-- Specular Rainbowfish
-r(444792),	-- Quiet River Bass
+r(444792),	-- Dilly-Dally Dace \\ Quiet River Bass
 r(444793),	-- Dornish Pike
 r(444794),	-- Roaring Anglerseeker
 r(444795),	-- Arathor Hammerfish
@@ -34,7 +34,7 @@ r(444788),	-- Nibbling Minnow
 r(444789),	-- Whispering Stargazer
 r(444790),	-- Goldengill Trout
 r(444791),	-- Specular Rainbowfish
-r(444792),	-- Quiet River Bass
+r(444792),	-- Dilly-Dally Dace \\ Quiet River Bass
 r(444793),	-- Dornish Pike
 r(444794),	-- Roaring Anglerseeker
 r(444795),	-- Arathor Hammerfish

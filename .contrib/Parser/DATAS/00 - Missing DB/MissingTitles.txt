@@ -10,3 +10,5 @@ title(556),	-- Queenslayer %s \\ %s the [PH] TBD Title
 11.0.0.54521
 title(558),	-- Forged Gladiator %s
 title(559),	-- Forged Legend %s
+11.0.0.54605
+title(560),	-- %s Ascension Breaker

@@ -694,10 +694,10 @@ r(444220),	-- Contract: Artisan
 r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
 r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
-r(444224),	-- Extraction: Evolve
-r(444225),	-- Extraction: Vivacity
-r(444226),	-- Extraction: Symbiosis
-r(444227),	-- Extraction: Shine
+r(444224),	-- Transcribe: Evolution \\ Extraction: Evolve
+r(444225),	-- Transcribe: Vivacity \\ Extraction: Vivacity
+r(444226),	-- Transcribe: Symbiosis \\ Extraction: Symbiosis
+r(444227),	-- Transcribe: Radiance \\ Extraction: Shine
 r(444228),	-- Recraft Equipment
 r(444229),	-- Algari Missive of Ingenuity \\ Algarian Missive of Ingenuity
 r(444230),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
@@ -773,10 +773,10 @@ r(444220),	-- Contract: Artisan
 r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
 r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
-r(444224),	-- Extraction: Evolve
-r(444225),	-- Extraction: Vivacity
-r(444226),	-- Extraction: Symbiosis
-r(444227),	-- Extraction: Shine
+r(444224),	-- Transcribe: Evolution \\ Extraction: Evolve
+r(444225),	-- Transcribe: Vivacity \\ Extraction: Vivacity
+r(444226),	-- Transcribe: Symbiosis \\ Extraction: Symbiosis
+r(444227),	-- Transcribe: Radiance \\ Extraction: Shine
 r(444228),	-- Recraft Equipment
 r(444229),	-- Algari Missive of Ingenuity \\ Algarian Missive of Ingenuity
 r(444230),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness

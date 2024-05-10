@@ -47,7 +47,7 @@ pet(4502),	-- Kaheti Bull Worm
 pet(4503),	-- Sporbit
 pet(4504),	-- Sporbit
 pet(4505),	-- Sporbit
-pet(4506),	-- Sporbit
+pet(4506),	-- Violet Sporbit \\ Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
@@ -121,6 +121,8 @@ pet(4594),	-- Dalaran Sewer Turtle
 pet(4596),	-- Faithful Dog
 pet(4597),	--
 pet(4598),	--
+11.0.0.54605
+pet(4599),	-- Mind Slurp
 
 
 
@@ -176,7 +178,7 @@ pet(4502),	-- Kaheti Bull Worm
 pet(4503),	-- Sporbit
 pet(4504),	-- Sporbit
 pet(4505),	-- Sporbit
-pet(4506),	-- Sporbit
+pet(4506),	-- Violet Sporbit \\ Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
@@ -250,3 +252,5 @@ pet(4594),	-- Dalaran Sewer Turtle
 pet(4596),	-- Faithful Dog
 pet(4597),	--
 pet(4598),	--
+11.0.0.54605
+pet(4599),	-- Mind Slurp
