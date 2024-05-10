@@ -2325,6 +2325,7 @@ end	-- Symlink Lib
 
 
 -- Search Results Lib
+do
 local searchCache, working = {}, nil;
 app.GetCachedData = function(cacheKey, method, ...)
 	if IsRetrieving(cacheKey) then return; end
@@ -2348,6 +2349,7 @@ app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
 app.AddEventHandler("OnSettingsRefreshed", app.WipeSearchCache);
+end
 
 do
 local ContainsLimit, ContainsExceeded;
@@ -3376,7 +3378,7 @@ local function DetermineNPCDrops(group, FillData)
 				-- app.PrintDebug("FillNPC.Diff",group.hash,difficultyID)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups, npcDiff;
-				for _,npcGroup in pairs(npcGroups) do
+				for _,npcGroup in ipairs(npcGroups) do
 					if npcGroup.hash ~= group.hash then
 						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
 						-- app.PrintDebug("DropCheck",npcGroup.hash,"=>",headerID)
@@ -3396,7 +3398,7 @@ local function DetermineNPCDrops(group, FillData)
 			else
 				-- app.PrintDebug("FillNPC",group.hash)
 				local headerID, groups;
-				for _,npcGroup in pairs(npcGroups) do
+				for _,npcGroup in ipairs(npcGroups) do
 					if npcGroup.hash ~= group.hash then
 						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
 						-- app.PrintDebug("DropCheck",npcGroup.hash,"=>",headerID)
